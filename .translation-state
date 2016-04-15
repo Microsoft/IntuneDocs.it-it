@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "999b0ef4680b1aec9fd94e01a835239779079c74",
+  "LastProcessedCommit": "bd37170376e19fcc84dbf40fbdef3c755af98a34",
   "LastTranslatedCommit": null,
   "Items": {
     "69b88e15bc21632deba50fff9cc06cf9e9bb8413": {
@@ -1988,8 +1988,8 @@
         "migrated-03-14\\Topic\\Manage-Internet-access-using-managed-browser-policies.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.it-it\\master\\manage-internet-access-using-managed-browser-policies.cfbbb12a455aecd490c0caa0f746302b3c79eefc.it-it.xlf",
-      "HandoffFileCommit": "42841e983a7ba6c9d3fe89e80ecef6f002b69e4c",
-      "HandoffDateTime": "2016-04-15T17:15:16.1121415Z",
+      "HandoffFileCommit": "84152b843ba9eaba9c051a40c4eb27213dbc4763",
+      "HandoffDateTime": "2016-04-15T20:12:47.1392619Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
@@ -17383,8 +17383,8 @@
         "migrated-03-14\\Topic\\Troubleshoot-email-profiles-in-Microsoft-Intune.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.it-it\\master\\troubleshoot-email-profiles-in-microsoft-intune.24364295c35e77fe4bbf8aeacc80469728fbcc88.it-it.xlf",
-      "HandoffFileCommit": "42841e983a7ba6c9d3fe89e80ecef6f002b69e4c",
-      "HandoffDateTime": "2016-04-15T17:15:16.1121415Z",
+      "HandoffFileCommit": "84152b843ba9eaba9c051a40c4eb27213dbc4763",
+      "HandoffDateTime": "2016-04-15T20:12:47.1392619Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
@@ -24278,8 +24278,8 @@
         "InTuneDocs\\zDeletedTopics\\introduction-to-microsoft-intune-old.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.it-it\\master\\introduction-to-microsoft-intune.207766a0a8a320d45af71c3792d9a6fc6a4bfab7.it-it.xlf",
-      "HandoffFileCommit": "42841e983a7ba6c9d3fe89e80ecef6f002b69e4c",
-      "HandoffDateTime": "2016-04-15T17:15:16.1121415Z",
+      "HandoffFileCommit": "84152b843ba9eaba9c051a40c4eb27213dbc4763",
+      "HandoffDateTime": "2016-04-15T20:12:47.1392619Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
@@ -44055,8 +44055,8 @@
         "InTuneDocs\\zDeletedTopics\\TOC-old.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.it-it\\master\\TOC.d669f1ddce84ce475f1caaaba10ea2dad4bca1c5.it-it.xlf",
-      "HandoffFileCommit": "42841e983a7ba6c9d3fe89e80ecef6f002b69e4c",
-      "HandoffDateTime": "2016-04-15T17:15:16.1121415Z",
+      "HandoffFileCommit": "84152b843ba9eaba9c051a40c4eb27213dbc4763",
+      "HandoffDateTime": "2016-04-15T20:12:47.1392619Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
@@ -57316,8 +57316,8 @@
         "InTuneDocs\\GetStarted\\get-started-with-a-paid-subscription-to-microsoft-intune.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.it-it\\master\\get-started-with-a-paid-subscription-to-microsoft-intune.ba831aeba0a2ec2e4c339413fe71c5f1da7355d8.it-it.xlf",
-      "HandoffFileCommit": "42841e983a7ba6c9d3fe89e80ecef6f002b69e4c",
-      "HandoffDateTime": "2016-04-15T17:15:16.1121415Z",
+      "HandoffFileCommit": "84152b843ba9eaba9c051a40c4eb27213dbc4763",
+      "HandoffDateTime": "2016-04-15T20:12:47.1392619Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
@@ -61216,7 +61216,8 @@
       "DependencyFrom": null,
       "TokenReference": null,
       "FilePathList": [
-        "InTuneDocs\\PlanDesign\\whats-coming-in-intune.md"
+        "InTuneDocs\\PlanDesign\\whats-coming-in-intune.md",
+        "InTuneDocs\\DeployUse\\whats-coming-in-intune.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.it-it\\master\\whats-coming-in-intune.00ffe8f06d2519132172cbd749e875d03cc55ae3.it-it.xlf",
       "HandoffFileCommit": "f8d1ba46e1c2bbdbaf9e79fd5dbee1a60159d070",
@@ -71612,8 +71613,8 @@
         "InTuneDocs\\Understand\\introduction-to-microsoft-intune.md"
       ],
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.it-it\\master\\introduction-to-microsoft-intune.207766a0a8a320d45af71c3792d9a6fc6a4bfab7.it-it.xlf",
-      "HandoffFileCommit": "d06c30bc049529d55f658e1b27608a0f4bf356d5",
-      "HandoffDateTime": "2016-04-14T21:12:49.0762157Z",
+      "HandoffFileCommit": "84152b843ba9eaba9c051a40c4eb27213dbc4763",
+      "HandoffDateTime": "2016-04-15T20:12:47.1392619Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
@@ -74455,6 +74456,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.it-it\\master\\common-ways-to-use-intune.83099fc3e4530a1275648f414a67e67caff97d81.it-it.xlf",
       "HandoffFileCommit": "480d443bb7f0d6b098ec9247b542859b128c05c4",
       "HandoffDateTime": "2016-04-15T18:13:45.0381637Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "9d72dcab5c6f06eff2a4d10e85ca773cf818dce6": {
+      "FileHash": "9d72dcab5c6f06eff2a4d10e85ca773cf818dce6",
+      "SourceFileCommit": "bd37170376e19fcc84dbf40fbdef3c755af98a34",
+      "SourceFilePath": "InTuneDocs\\dougs-sandbox.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "InTuneDocs\\dougs-sandbox.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\IntuneDocs-pr.it-it\\master\\dougs-sandbox.57b11e6accef9d660b5f661dbc129d329f214ad0.it-it.xlf",
+      "HandoffFileCommit": "84152b843ba9eaba9c051a40c4eb27213dbc4763",
+      "HandoffDateTime": "2016-04-15T20:12:47.1392619Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
