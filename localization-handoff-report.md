@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\GetStarted\rollout-phases-for-microsoft-intune-deployment.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b56a835440cbb1dd08fe85c690d958ca3c2df71c/InTuneDocs/GetStarted/rollout-phases-for-microsoft-intune-deployment.md) | HandedOffSuccess | [Details](#4cb51facc6faca8ceca2c3662b23d0761b12c0f7552)
+ [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4475c10a51e4361a1dfc35df69f4ef81c0d316d3/InTuneDocs/index.md) | HandedOffSuccess | [Details](#740d76280545e77eddd35972aeeb6e41e56c61e0683)
 
 ## Item Details
-##### <a name='4cb51facc6faca8ceca2c3662b23d0761b12c0f7552'></a> Source: [InTuneDocs\GetStarted\rollout-phases-for-microsoft-intune-deployment.md](https://github.com/Microsoft/IntuneDocs-pr/blob/b56a835440cbb1dd08fe85c690d958ca3c2df71c/InTuneDocs/GetStarted/rollout-phases-for-microsoft-intune-deployment.md)
+##### <a name='740d76280545e77eddd35972aeeb6e41e56c61e0683'></a> Source: [InTuneDocs\index.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4475c10a51e4361a1dfc35df69f4ef81c0d316d3/InTuneDocs/index.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [rollout-phases-for-microsoft-intune-deployment.cd8b54a5b606042a0ab563726ef422d6119352b1.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/684751c4f202d64c7fb71277b699c71e075e764e/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/rollout-phases-for-microsoft-intune-deployment.cd8b54a5b606042a0ab563726ef422d6119352b1.it-it.xlf)
-* Handoff Datetime: 2016-04-19 02:03:23
+* Handoff File: [index.404579aeff405d27d9820f60e5e015fb7352d33a.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/e39f0b784371164296bc1b92e195700e3bb13050/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/index.404579aeff405d27d9820f60e5e015fb7352d33a.it-it.xlf)
+* Handoff Datetime: 2016-04-19 10:15:18
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
