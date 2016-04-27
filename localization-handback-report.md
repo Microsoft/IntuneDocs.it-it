@@ -1,11 +1,52 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 3
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/firstref_vista.md) | InSyncHandedBackSuccess | [Details](#13ff460ac519f9cd49ce1cf25a819cea78e2772f589)
+ [migrated-03-14\Token\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1b8b2f01312af1b1a6175c0228bd3d3ae81e5b1e/migrated-03-14/Token/firstref_vista.md) | InSyncHandedBackSuccess | [Details](#13ff460ac519f9cd49ce1cf25a819cea78e2772f1634)
+ [zDeletedTopics\Company-Portal-Frequently-Asked-Questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d651ce9b5b3efca6cef45bb3a10c40f66b15e030/zDeletedTopics/Company-Portal-Frequently-Asked-Questions.md) | InSyncHandedBackSuccess | [Details](#90220a778c5009edc35e404cf624d265ba7d4c3c1969)
 
 ## Item Details
+##### <a name='13ff460ac519f9cd49ce1cf25a819cea78e2772f589'></a> Source: [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/firstref_vista.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/db3116cb9ab82c28289125bd3209589a735173aa/InTuneDocs/includes/firstref_vista.md)
+* Handoff File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/3a31ff5a4688cd239a0ae504a7a0351fefea7897/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.it-it.xlf)
+* Handoff Datetime: 2016-03-04 18:51:17
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/1eb1b8d91fa7bb382ba0d147954cc0cb3378c51a/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.it-it.xlf)
+* Handback Datetime: 2016-04-27 16:40:47
+* [Back to Top](#report-top)
+
+##### <a name='13ff460ac519f9cd49ce1cf25a819cea78e2772f1634'></a> Source: [migrated-03-14\Token\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1b8b2f01312af1b1a6175c0228bd3d3ae81e5b1e/migrated-03-14/Token/firstref_vista.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\includes\firstref_vista.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/db3116cb9ab82c28289125bd3209589a735173aa/InTuneDocs/includes/firstref_vista.md)
+* Handoff File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/3a31ff5a4688cd239a0ae504a7a0351fefea7897/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.it-it.xlf)
+* Handoff Datetime: 2016-03-04 18:51:17
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/1eb1b8d91fa7bb382ba0d147954cc0cb3378c51a/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/firstref_vista.37ce0362d7ab9ad808153363f90ce79e03f3df51.it-it.xlf)
+* Handback Datetime: 2016-04-27 16:40:47
+* [Back to Top](#report-top)
+
+##### <a name='90220a778c5009edc35e404cf624d265ba7d4c3c1969'></a> Source: [zDeletedTopics\Company-Portal-Frequently-Asked-Questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/d651ce9b5b3efca6cef45bb3a10c40f66b15e030/zDeletedTopics/Company-Portal-Frequently-Asked-Questions.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [zDeletedTopics\Company-Portal-Frequently-Asked-Questions.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/db3116cb9ab82c28289125bd3209589a735173aa/zDeletedTopics/Company-Portal-Frequently-Asked-Questions.md)
+* Handoff File: [Company-Portal-Frequently-Asked-Questions.77bde8f488e757870e6f302191451239718c7ab4.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/5b5000859a46c8f0f86f52717de75a4727bf5cfa/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/Company-Portal-Frequently-Asked-Questions.77bde8f488e757870e6f302191451239718c7ab4.it-it.xlf)
+* Handoff Datetime: 2016-04-21 20:36:35
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [Company-Portal-Frequently-Asked-Questions.77bde8f488e757870e6f302191451239718c7ab4.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/1eb1b8d91fa7bb382ba0d147954cc0cb3378c51a/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/Company-Portal-Frequently-Asked-Questions.77bde8f488e757870e6f302191451239718c7ab4.it-it.xlf)
+* Handback Datetime: 2016-04-27 16:40:47
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
