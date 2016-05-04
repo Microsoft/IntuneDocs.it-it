@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [migrated-03-14\Topic\Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md) | InSyncHandedBackSuccess | [Details](#15a1211ec83158d1a77c92411100bff572ff9a7a1812)
 
 ## Item Details
+##### <a name='15a1211ec83158d1a77c92411100bff572ff9a7a1812'></a> Source: [migrated-03-14\Topic\Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md](https://github.com/Microsoft/IntuneDocs-pr/blob/109448161b2c13bc2c5ef6ea43b01b4a84dc0853/migrated-03-14/Topic/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/2a9e62f4543ebadebfbeb6dbad5569ae0863d7d1/InTuneDocs/DeployUse/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+* Handoff File: [Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/88dc914535ef475c2dc6490b137f979635ddc897/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.it-it.xlf)
+* Handoff Datetime: 2016-04-22 17:19:31
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: [Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/706b497b5097380cc3225da642457bf8d8a53c62/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/Specify-corporate-owned-devices-with-international-mobile-equipment-identity--IMEI--numbers.3e26db1e2b0def80e322716c94c1f95b9a20afd6.it-it.xlf)
+* Handback Datetime: 2016-05-04 03:39:47
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
