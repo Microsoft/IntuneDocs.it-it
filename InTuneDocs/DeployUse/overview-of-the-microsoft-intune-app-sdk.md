@@ -1,13 +1,30 @@
 ---
-title: Panoramica di Microsoft Intune App SDK
-ms.custom: na
-ms.reviewer: na
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
+# required metadata
+
+title: Panoramica di Microsoft Intune App SDK | Microsoft Intune
+description:
+keywords:
 author: Msmbaldwin
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: ef1751bb-3a2f-4662-a922-38c076869eb3
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: jeffgilb
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
+
 ---
+
 # Panoramica di Microsoft Intune App SDK
 Intune App SDK è disponibile per la piattaforma iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune. Un altro obiettivo è quello di ridurre la quantità di modifiche al codice necessarie per lo sviluppatore. La maggior parte delle funzionalità SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che richiedono la partecipazione dell'app. 
 
@@ -36,7 +53,7 @@ Gli amministratori IT possono imporre l'uso di un browser gestito quando vengono
 Gli amministratori IT possono applicare un criterio PIN quando viene avviata un'app gestita da Intune. Questo criterio consente di verificare che gli utenti finali che hanno registrato i propri dispositivi in Microsoft Intune siano le stesse persone che stanno avviando le app. Quando gli utenti finali configurano il PIN, Intune App SDK usa Azure Active Directory per verificare le credenziali degli utenti finali a fronte delle credenziali di registrazione del dispositivo. 
 
 ## Richiedere agli utenti di immettere le credenziali prima di avviare le app
-Gli amministratori IT possono richiedere agli utenti finali di immettere le proprie credenziali per avviare un'app gestita da Intune. Intune App SDK usa Azure Active Directory per fornire un'esperienza Single Sign-On, in cui le credenziali vengono immesse una sola volta e riutilizzate per gli accessi successivi. È anche supportata l'autenticazione di soluzioni di gestione delle identità [federata con Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx). 
+Gli amministratori IT possono richiedere agli utenti finali di immettere le proprie credenziali per avviare un'app gestita da Intune. Intune App SDK usa Azure Active Directory per fornire un'esperienza Single Sign-On, in cui le credenziali vengono immesse una sola volta e riutilizzate per gli accessi successivi. Supporta inoltre l'autenticazione di soluzioni di gestione delle identità [federata con Azure Active Directory](https://msdn.microsoft.com/en-us/library/azure/jj679342.aspx).. 
 
 ## Verificare la conformità e l'integrità dei dispositivi
 Gli amministratori IT possono controllare l'integrità del dispositivo e la sua conformità ai criteri aziendali prima che gli utenti finali accedano alle app gestite da Intune. Nella piattaforma iOS questo criterio controlla se il dispositivo è jailbroken. Nella piattaforma Android questo criterio controlla se il dispositivo è rooted.  
@@ -44,6 +61,6 @@ Gli amministratori IT possono controllare l'integrità del dispositivo e la sua 
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO1-->
 
 
