@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\using-your-android-device-with-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2c0f356aefc8c3e14e75ba4be752a6f7ce19e760/InTuneDocs/EndUser/using-your-android-device-with-intune.md) | InSyncHandedBackSuccess | [Details](#94348e8e2062af15768ef31dbd43b94956e94476448)
 
 ## Item Details
-##### <a name='94348e8e2062af15768ef31dbd43b94956e94476448'></a> Source: [InTuneDocs\EndUser\using-your-android-device-with-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2c0f356aefc8c3e14e75ba4be752a6f7ce19e760/InTuneDocs/EndUser/using-your-android-device-with-intune.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\using-your-android-device-with-intune.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/990391a7fa07694b7dcc8b560b52b5acff8a16b9/InTuneDocs/EndUser/using-your-android-device-with-intune.md)
-* Handoff File: [using-your-android-device-with-intune.d0bf975631e9ed2d4324af0aadc8c70b25d9b88a.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/e8a08ea6490ed2044636fe530aeb3c312fae5cfe/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/using-your-android-device-with-intune.d0bf975631e9ed2d4324af0aadc8c70b25d9b88a.it-it.xlf)
-* Handoff Datetime: 2016-05-18 19:08:25
-* Handoff Reason: Include
-* Archive File: [using-your-android-device-with-intune.d0bf975631e9ed2d4324af0aadc8c70b25d9b88a.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/84ed360c1e53d27b87d53330d650fcdd7eceece3/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/using-your-android-device-with-intune.d0bf975631e9ed2d4324af0aadc8c70b25d9b88a.it-it.xlf)
-* Archive Datetime: 2016-06-02 02:32:59
-* Handback File: [using-your-android-device-with-intune.d0bf975631e9ed2d4324af0aadc8c70b25d9b88a.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/e5afd67b307d723bd50e6f496ecaac4c52add466/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/using-your-android-device-with-intune.d0bf975631e9ed2d4324af0aadc8c70b25d9b88a.it-it.xlf)
-* Handback Datetime: 2016-06-03 00:31:04
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
