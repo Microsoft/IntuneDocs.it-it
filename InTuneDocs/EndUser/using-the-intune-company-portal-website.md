@@ -52,9 +52,9 @@ Sul **sito Web del portale aziendale** è possibile eseguire la maggior parte de
 
 - [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Uso del dispositivo Android con Intune](using-your-windows-device-with-intune.md)
+- [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

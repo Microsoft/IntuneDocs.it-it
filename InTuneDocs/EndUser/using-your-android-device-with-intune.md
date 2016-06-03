@@ -63,11 +63,12 @@ Le informazioni contenute in questa sezione consentono la risoluzione di problem
 - [Inviare gli errori di registrazione all'amministratore IT](send-enrollment-errors-to-your-it-administrator-android.md)</br>
 - [Il dispositivo non ha la versione minima richiesta del sistema operativo](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
 - [Il dispositivo non è conforme alla versione massima del sistema operativo](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
-- [Il dispositivo è rooted e non è possibile connettersi](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Manca un certificato necessario per il dispositivo](your-device-is-missing-a-required-certificate-android.md)
+- [Il dispositivo è rooted e non è possibile connettersi](your-device-is-rooted-and-you-cant-connect-android.md)</br>
+- [Manca un certificato necessario per il dispositivo](your-device-is-missing-a-required-certificate-android.md)</br>
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=May16_HO3-->
 
 
