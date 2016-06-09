@@ -18,7 +18,7 @@ ms.assetid: df53feab-4f5e-46ae-b1e8-9adb048711e5
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,6 +32,6 @@ Per migliorare i propri prodotti e servizi, Microsoft raccoglie automaticamente 
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 
