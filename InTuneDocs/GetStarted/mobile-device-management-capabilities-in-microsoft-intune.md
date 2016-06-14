@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Funzionalità di gestione dei PC Windows in Microsoft Intune | Microsoft Intune
+title: Funzionalità di gestione dei dispositivi mobili | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,12 +66,13 @@ Tutte le attività di gestione, inventario, distribuzione di app, provisioning e
 
 |Funzionalità|Dettagli|Altre informazioni|
 |--------------|-----------|--------------------|
-|Inventario e creazione di report|Trovare informazioni sui dispositivi gestiti e il software che usano.<br /><br />È possibile filtrare questi report in diversi modi, ad esempio in base alla piattaforma del dispositivo e alla conformità del dispositivo agli standard aziendali.|[Comprendere le operazioni di Microsoft Intune con l'uso dei report](/intune/understand-explore/understand-microsoft-intune-operations-by-using-reports)|
+|Inventario e creazione di report|Trovare informazioni sui dispositivi gestiti e il software che usano.|[Informazioni sui dispositivi con inventario in Microsoft Intune](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+
 
 ### Vedere anche
-[Funzionalità di gestione dei PC Windows in Microsoft Intune](/intune/understand-explore/windows-pc-management-capabilities-in-microsoft-intune)
+[Funzionalità di gestione dei PC Windows in Microsoft Intune](./windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

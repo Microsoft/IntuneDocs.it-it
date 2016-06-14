@@ -15,7 +15,7 @@ ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -32,11 +32,11 @@ Se si sta provando a registrare un dispositivo iOS o Mac OS X in Intune e viene 
 
 1. Toccare il dispositivo se è presente nell'elenco. Se il dispositivo non è presente nell'elenco, toccare **Nuovo dispositivo**.
 2. Toccare **Continua**.
-3. Immettere gli ultimi quattro caratteri del numero di serie del dispositivo per verificare che il dispositivo sia stato registrato in Intune. Per trovare il numero di serie, vedere [Come trovare il numero di serie del dispositivo?](how-do-i-find-the-serial-number-on-my-device-ios.md).
+3. Immettere gli ultimi quattro caratteri del numero di serie del dispositivo per verificare che il dispositivo sia stato registrato in Intune. Per trovare il numero di serie, vedere [Come trovare il numero di serie del dispositivo?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 
 ### Vedere anche
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

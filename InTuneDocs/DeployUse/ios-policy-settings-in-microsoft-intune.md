@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Impostazioni dei criteri di iOS in Microsoft Intune | Microsoft Intune
+title: Impostazioni dei criteri di iOS | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -38,7 +38,7 @@ Usare i **criteri di configurazione generali iOS** di Microsoft Intune per confi
 -   **App conformi e non conformi**: specificare un elenco di app conformi oppure non conformi nella società. Nei dispositivi Android e iOS è possibile usare il **Report app non conformi** per visualizzare la conformità delle app specificate nell'elenco rispetto a quelle installate dagli utenti (ma senza impedire effettivamente l'installazione dell'app).
 
 > [!TIP]
-> È possibile configurare i termini e le condizioni per essere sicuri che gli utenti siano informati del fatto che le app installate nel dispositivo, incluse quelle personali, verranno valutate e che le app non conformi verranno bloccate o segnalate come non conformi. Gli utenti dovranno quindi accettare questi termini e condizioni prima di poter registrare il dispositivo e usare il Portale aziendale per ottenere le app. Per altre informazioni sull'uso di termini e condizioni, vedere [Impostazioni dei criteri relativi a termini e condizioni in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md)..
+> È possibile configurare i termini e le condizioni per essere sicuri che gli utenti siano informati del fatto che le app installate nel dispositivo, incluse quelle personali, verranno valutate e che le app non conformi verranno bloccate o segnalate come non conformi. Gli utenti dovranno quindi accettare questi termini e condizioni prima di poter registrare il dispositivo e usare il Portale aziendale per ottenere le app. Per altre informazioni sull'uso di termini e condizioni, vedere [Impostazioni dei criteri relativi a termini e condizioni in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Se l'impostazione desiderata non viene visualizzata in questo argomento, è possibile crearla usando i criteri personalizzati iOS che consentono di importare le impostazioni create tramite lo [strumento Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Per altre informazioni, vedere **Impostazioni dei criteri personalizzati** più avanti in questo argomento.
 
@@ -122,7 +122,7 @@ Se l'impostazione desiderata non viene visualizzata in questo argomento, è poss
 |Nome impostazione|Dettagli|iOS|
 |----------------|-------|
 |**Consenti roaming vocale**|Consente il roaming vocale quando il dispositivo è su una rete cellulare.|sì|
-|**Consenti dati in roaming**|Consente il roaming dei dati quando il dispositivo è su una rete cellulare.|sì|
+|**Consenti dati in roaming**|Consentire il roaming dei dati quando il dispositivo si trova su una rete cellulare.|sì|
 |**Consenti recupero in background globale durante il roaming**|Consente al dispositivo di recuperare dati come la posta elettronica durante il roaming su una rete cellulare.|Sì|
 
 ### Impostazioni delle funzionalità del dispositivo - Funzionalità
@@ -135,7 +135,7 @@ Se l'impostazione desiderata non viene visualizzata in questo argomento, è poss
 
 
 ### Impostazioni per le app conformi e non conformi
-Nell'elenco **App conformi &amp; App non conformi** specificare un elenco di app conformi o non conformi usando le informazioni seguenti:
+Nell'elenco **app conformi &amp; e non conformi** specificare un elenco di app conformi o non conformi usando le informazioni seguenti:
 
 > [!NOTE]
 > Un singolo criterio può contenere solo un elenco di app conformi o non conformi. Non è possibile specificare entrambi nello stesso criterio.
@@ -160,7 +160,7 @@ Nell'elenco **App conformi &amp; App non conformi** specificare un elenco di app
 |**Consenti commutatore suoneria**|Abilita o disabilita la suoneria nel dispositivo.|
 |**Consenti pulsante riattivazione sospensione schermo**|Abilita o disabilita il pulsante di riattivazione sospensione dello schermo del dispositivo.|
 |**Consenti blocco automatico**|Abilita o disabilita il blocco automatico del dispositivo.|
-|**Abilita audio mono**|Abilita o disabilita l'impostazione di accesso facilitato **Audio mono**..|
+|**Abilita audio mono**|Abilita o disabilita l'impostazione di accesso facilitato **Audio mono**.|
 |**Abilita voice over**|Abilita o disabilita l'impostazione di accesso facilitato **Voice over** per la lettura a voce alta del testo sullo schermo del dispositivo.|
 |**Abilita regolazioni voice over**|Abilita o disabilita le regolazioni del voice over che consentono di modificare la funzione Voice Over, ad esempio la velocità con cui viene letto il testo visualizzato sullo schermo.|
 |**Abilita zoom**|Abilita o disabilita l'impostazione di accessibilità **Zoom** che consente di usare le funzionalità di tocco per ingrandire la visualizzazione del dispositivo.|
@@ -170,8 +170,7 @@ Nell'elenco **App conformi &amp; App non conformi** specificare un elenco di app
 |**Abilita tocco per l'accesso facilitato**|Abilita o disabilita l'impostazione di accessibilità **Tocco per accesso facilitato** che consente agli utenti di eseguire sullo schermo movimenti che potrebbero essere difficili da eseguire.|
 |**Abilita regolazioni del tocco per l'accesso facilitato**|Abilita o disabilita le regolazioni del tocco per l'accesso facilitato che consentono di modificare la funzione Tocco per accesso facilitato.|
 |**Abilita selezione comandi vocali**|Abilita o disabilita l'impostazione di accessibilità **Leggi selezione** che consente di leggere a voce alta il testo selezionato.|
-> [!NOTE]
-> Le note seguenti sono valide per le impostazioni della modalità tutto schermo per i dispositivi iOS:
+> [!NOTE] Le note seguenti sono valide per le impostazioni della modalità tutto schermo per i dispositivi iOS:
 > 
 > -   Prima di poter configurare un dispositivo iOS per la modalità schermo intero, è necessario utilizzare il [strumento Configurator Apple](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) o gestione di registrazione dei dispositivi per inserire il dispositivo in modalità supervisionata. Per ulteriori informazioni sullo strumento Apple dello strumento di configurazione, vedere la documentazione di Apple.
 > -   Se l'app per iOS viene installata dopo aver distribuito i criteri di configurazione, il dispositivo non passerà alla modalità tutto schermo finché non viene riavviato.
@@ -183,9 +182,9 @@ Usare **Report app non conformi** per visualizzare la conformità delle app cons
 
 ##### Per eseguire il report app non conformi
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com), fare clic su **Report** &gt; **Report app non conformi**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Report** &gt; **Report app non conformi**.
 
-2.  Selezionare i gruppi di dispositivi da controllare, scegliere se verificare la presenza di app conformi, di app non conformi o di entrambe, quindi fare clic su **Visualizza report**..
+2.  Selezionare i gruppi di dispositivi da controllare, scegliere se verificare la presenza di app conformi, di app non conformi o di entrambi, quindi fare clic su **Visualizza report**.
 
 #### Come specificare gli URL negli App Store
 Per specificare un URL dell'app nell'elenco delle app conformi e non conformi o nell'opzione **Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo** (solo iOS), usare uno dei formati seguenti:
@@ -194,10 +193,9 @@ Usando un motore di ricerca, individuare l'app da usare nell'App Store iTunes e 
 
 Copiare l'URL della pagina e usarlo per la configurazione dell'elenco delle app conformo o non conformi o dell'app da eseguire in modalità a tutto schermo.
 
-**Esempio:** cercare **Microsoft Word per iPad**. L'URL da usare sarà **https://itunes.apple.com/it/app/microsoft-word-for-ipad/id586447913?mt=8**..
+**Esempio:** cercare **Microsoft Word per iPad**. L'URL usato sarà **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE]
-> È possibile usare anche il software iTunes per trovare l'app e il comando **Copia collegamento** per ottenere l'URL dell'app.
+> [!NOTE] È anche possibile usare il software iTunes per trovare l'app e quindi il comando **Copia collegamento** per ottenere l'URL dell'app.
 
 
 ## Impostazioni di criteri personalizzati
@@ -232,6 +230,6 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

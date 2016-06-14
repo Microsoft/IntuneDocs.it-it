@@ -29,11 +29,11 @@ ms.suite: ems
 
 Il ciclo di vita di un'app di Intune inizia quando si aggiunge l'app e termina, dopo alcuni passaggi intermedi, quando si rimuove l'app.
 
-![Il ciclo di vita dell'app](./media/applifecycle_nobg.png "the Intune app lifecycle")
+![Il ciclo di vita dell'app](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## Aggiunta
 
-Il primo passaggio della distribuzione di app è aggiungere a Intune le app che si prevede di gestire e distribuire. Sebbene sia possibile usare molti tipi diversi di app, le procedure di base sono le stesse. Intune consente di aggiungere app sia per i [dispositivi registrati](add-apps-for-mobile-devices-in-microsoft-intune.md), sia per i [PC Windows gestiti con il software client Intune](add-apps-for-windows-pcs-in-microsoft-intune.md)..
+Il primo passaggio della distribuzione di app è aggiungere a Intune le app che si prevede di gestire e distribuire. Sebbene sia possibile usare molti tipi diversi di app, le procedure di base sono le stesse. Intune consente di aggiungere app sia per i [dispositivi registrati](add-apps-for-mobile-devices-in-microsoft-intune.md) sia per i [PC Windows gestiti con il software client Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
 ## Distribuisci
 
@@ -56,6 +56,6 @@ Intune offre molti modi per proteggere i dati nelle app. I metodi principali son
 È probabile che le app distribuite a un certo punto diventino obsolete e vadano rimosse. Intune semplifica la procedura di [ritiro delle app dal servizio](retire-apps-using-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,26 +37,26 @@ Questo errore si verifica quando l'opzione **Consenti l'invio di messaggi di pos
 
 ### Soluzione Intune
 
-1.  Aprire la console di amministrazione di Microsoft Intune, selezionare il carico di lavoro **Criteri**&gt; **Criteri di configurazione**.
+1.  Aprire la console di amministrazione di Microsoft Intune, selezionare il carico di lavoro **Criterio** &gt; **Criteri di configurazione**.
 
-2.  Selezionare il profilo di posta elettronica e fare clic su **Modifica**.
+2.  Selezionare il profilo di posta elettronica e scegliere **Modifica**.
 
 3.  Selezionare **Consenti l'invio di messaggi di posta elettronica da applicazioni di terze parti**.
 
 ### Configuration Manager integrato con la soluzione Intune
 
-1.  Nella console di Configuration Manager fare clic su &gt; **Asset e conformità**..
+1.  Nella console di Configuration Manager fare clic su &gt;**Asset e conformità**.
 
-2.  Espandere **Panoramica** -&gt; **Impostazioni di conformità** -&gt; **Accesso risorse aziendali** e selezionare **Profili di posta elettronica**.
+2.  Espandere **Panoramica** -&gt; **Impostazioni di conformità** -&gt;**Accesso risorse aziendali** e selezionare **Profili di posta elettronica**.
 
 3.  Fare clic con il tasto destro del mouse sul profilo di posta elettronica e aprire **Proprietà**.
 
-4.  Nella scheda **Impostazioni di sincronizzazione** selezionare **Consenti l'invio di messaggi di posta elettronica da applicazioni di terze parti**.
+4.  Nella scheda **Impostazioni di sincronizzazione** selezionare **Consenti di inviare messaggi di posta elettronica da applicazioni di terze parti**.
 
 ## Passaggi successivi
-Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

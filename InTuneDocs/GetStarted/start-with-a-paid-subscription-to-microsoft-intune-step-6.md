@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 # Creare i criteri e pubblicare un'app
-I criteri di Intune specificano impostazioni che consentono di controllare le impostazioni di sicurezza dei dispositivi mobili, di eseguire la manutenzione delle impostazioni di Windows Firewall ed Endpoint Protection per i computer, nonché di distribuire applicazioni. Per altre informazioni, vedere [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) e [Proteggere i PC Windows con Endpoint Protection per Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
+I criteri di Intune specificano impostazioni che consentono di controllare le impostazioni di sicurezza dei dispositivi mobili, di eseguire la manutenzione delle impostazioni di Windows Firewall ed Endpoint Protection per i computer, nonché di distribuire applicazioni. Per altre informazioni, vedere [Manage settings and features on your devices with Microsoft Intune policies](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) (Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune) e [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) (Proteggere i PC Windows con Endpoint Protection per Microsoft Intune).
 
-Con Intune è possibile eseguire due tipi di installazioni delle app. La prima è un' **installazione richiesta**, con cui l'app viene distribuita automaticamente nei computer gestiti. L'altra è un' **installazione disponibile**, con cui l'app o un collegamento all'app viene distribuito nel portale aziendale di Intune consentendo agli utenti di scegliere se installarla nei computer o nei dispositivi mobili.
+Con Intune è possibile eseguire due tipi di installazioni delle app. La prima è un' **installazione richiesta**, con cui l'app viene distribuita automaticamente nei computer gestiti. L'altra è un'**installazione disponibile** che distribuisce l'app, o un link all'app, al portale aziendale di Intune in modo che gli utenti possano scegliere se installarla sul computer o su dispositivi mobili.
 
 <!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
 
@@ -51,7 +51,7 @@ La procedura seguente consente di impostare un criterio di configurazione per di
 
 3.  Nell'elenco **Attività** della pagina **Panoramica criteri** scegliere **Aggiungi criterio**.
 
-4.  Nell'elenco dei criteri espandere la piattaforma per cui creare un criterio, quindi selezionare**Configurazione generale** > **Creare e distribuire criteri con le impostazioni consigliate** > **Crea criterio**.
+4.  Nell'elenco dei criteri espandere la piattaforma per cui creare un criterio, quindi scegliere **Configurazione generale** > **Creare e distribuire criteri con le impostazioni consigliate** > **Crea criterio**.
 
 5.  Quando viene richiesto di **Selezionare i gruppi a cui si desidera distribuire questo criterio**, scegliere **Intune Users** (Utenti Intune) (il gruppo creato durante il passaggio precedente) dall'elenco dei gruppi disponibili e scegliere **Aggiungi** > **OK**.
 
@@ -63,10 +63,9 @@ I criteri vengono visualizzati nell'elenco dei criteri di configurazione e risul
 
     ![admin-console-apps-workspace](./media/apps.png)
 
-    > [!NOTE]
-    > Quando si avvia **Autore del software Intune** per la prima volta, si verifica un breve ritardo dovuto all'installazione dell'applicazione.
+    > [!NOTE] Quando si avvia **Autore del software Microsoft Intune** per la prima volta, si verifica un breve ritardo dovuto all'installazione dell'applicazione.
 
-2.  Esaminare l'avviso di sicurezza e scegliere **Esegui**..
+2.  Leggere l'avviso di sicurezza e scegliere **Esegui**.
 
 3.  Nella pagina **Prima di iniziare** fare clic su **Avanti**.
 
@@ -80,7 +79,7 @@ I criteri vengono visualizzati nell'elenco dei criteri di configurazione e risul
 
     -   **Windows Phone 8 o Windows Phone 8.1:**  [http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51](http://www.windowsphone.com/en-us/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51)
 
-6.  Nella pagina **Descrizione software** fornire le informazioni sul software che si vuole vengano visualizzate per gli utenti nel portale aziendale e quindi scegliere **Avanti**. Sono disponibili le impostazioni seguenti (l'esempio si riferisce a Skype):
+6.  Nella pagina **Descrizione software** specificare le informazioni sul software che si vuole vengano visualizzate dagli utenti nel portale aziendale e quindi scegliere **Avanti**. Sono disponibili le impostazioni seguenti (l'esempio si riferisce a Skype):
 
     -   **Autore:** immettere il nome dell'autore, ovvero "Microsoft"
 
@@ -90,7 +89,7 @@ I criteri vengono visualizzati nell'elenco dei criteri di configurazione e risul
 
     -   **Categoria:** selezionare la categoria che meglio si adatta a questo software, ad esempio **Collaborazione**
 
-    -   **Visualizzare questo elemento come app in evidenza ed evidenziarlo nel Portale aziendale:** selezionare questa opzione per visualizzare chiaramente l'app Portale aziendale nei dispositivi mobili.
+    -   **Visualizzare questo elemento come app in evidenza ed evidenziarlo nel Portale aziendale:** selezionare questa opzione per visualizzare chiaramente l'app nel portale aziendale nei dispositivi mobili.
 
     -   **Icona:** scegliere se associare un'icona al software. La dimensione massima per l'icona facoltativa è 250 x 250 pixel e la dimensione consigliata è di 32 x 32 pixel.
 
@@ -98,13 +97,13 @@ I criteri vengono visualizzati nell'elenco dei criteri di configurazione e risul
 
 8.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **App** > **App** > **Skype** > **Gestisci distribuzione**.
 
-9. Nella pagina **Seleziona gruppi** scegliere **Intune Users** (Utenti Intune) per distribuire il software sul gruppo di utenti specifico e quindi selezionare **Aggiungi** > **Avanti**.
+9. Nella pagina **Seleziona gruppi** scegliere **Intune Users** (Utenti Intune) per distribuire il software al gruppo di utenti specifico e quindi scegliere **Aggiungi** > **Avanti**.
 
 10. Nella pagina **Azione di distribuzione** selezionare **Installazione disponibile** dalla colonna **Approvazione** per il proprio gruppo.
 
 11. Scegliere **Fine**.
 
-L'applicazione Skype è ora disponibile per l'installazione sui dispositivi mobili dal portale aziendale, ma prima è necessario installare il software [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] su computer e dispositivi mobili.
+L'applicazione Skype è ora disponibile per l'installazione sui dispositivi mobili dal Portale aziendale, ma prima è necessario installare il software [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] su computer e dispositivi mobili.
 
 
 ### Passaggi successivi
@@ -112,9 +111,9 @@ A questo punto, Passaggio 6 della *Guida introduttiva di Intune* completato.
 
 >[!div class="step-by-step"]
 
->[&larr; **Organizzare utenti e dispositivi**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**Personalizzare il portale aziendale** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
+>[&larr; **Organizzare utenti e dispositivi**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)[**Personalizzare il Portale aziendale** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

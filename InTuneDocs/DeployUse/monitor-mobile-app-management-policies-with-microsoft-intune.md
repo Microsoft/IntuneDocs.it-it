@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Monitorare i criteri di gestione delle app per dispositivi mobili con Microsoft Intune
-Dopo aver configurato un criterio MAM e averlo applicato agli utenti, è possibile monitorare lo stato di conformità nel portale di Azure. Il portale di Azure include informazioni sugli utenti interessati dai criteri, sullo stato di conformità e su eventuali problemi che potrebbero riscontrare gli utenti finali.
+Dopo aver configurato un criterio MAM e averlo applicato agli utenti, è possibile monitorare lo stato di conformità nel [portale di Azure](https://portal.azure.com). Il portale di Azure include informazioni sugli utenti interessati dai criteri, sullo stato di conformità e su eventuali problemi che potrebbero riscontrare gli utenti finali.
 ## Visualizzazione di riepilogo
 Nel pannello **Gestione di applicazioni mobili di Intune** è possibile visualizzare un riepilogo dello stato di conformità, come descritto di seguito:
 
@@ -39,7 +39,7 @@ Nel pannello **Gestione di applicazioni mobili di Intune** è possibile visualiz
 
 -   **NESSUN CRITERIO:** numero di utenti che usano le app associate ai criteri, ma non sono interessati dai criteri.  È consigliabile aggiungere questi utenti ai criteri.
 
-- **Utenti contrassegnati:** numero di utenti che riscontrano problemi. Al momento sono indicati come **utenti contrassegnati** solo gli utenti con dispositivi jailbroken..
+- **Utenti contrassegnati:** numero di utenti che riscontrano problemi. Al momento in **Utenti contrassegnati** appaiono solo gli utenti con dispositivi jailbroken.
 
 
 ## Visualizzazione dettagliata
@@ -77,6 +77,6 @@ Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a 
 [Esperienza utente finale con app con MAM abilitato](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

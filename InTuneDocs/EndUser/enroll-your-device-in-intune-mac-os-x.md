@@ -15,7 +15,7 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -45,7 +45,7 @@ Per registrare il dispositivo Mac OS X:
 
     ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
 
-4.  Nella finestra di dialogo per **installare il profilo di gestione** toccare **Installa**. Se viene visualizzata una finestra di dialogo in cui viene chiesto di immettere le credenziali, immettere il nome utente e la password e quindi toccare **Continua** &gt; **Installa**.
+4.  Nella finestra di dialogo per **installare il profilo di gestione** toccare **Installa**. Se viene visualizzata una finestra di dialogo in cui viene richiesto di immettere le credenziali, immettere il nome utente e la password e quindi toccare **Continua** &gt; **Installa**.
 
     ![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
 
@@ -56,6 +56,6 @@ Per registrare il dispositivo Mac OS X:
 ### Vedere anche
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

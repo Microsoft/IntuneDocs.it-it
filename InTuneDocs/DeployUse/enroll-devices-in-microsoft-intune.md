@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Registrare i dispositivi in Microsoft Intune | Microsoft Intune
+title: Registrare i dispositivi | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -27,6 +27,12 @@ ms.suite: ems
 
 # Registrare i dispositivi per la gestione in Intune
 La Gestione dei dispositivi mobili di Microsoft Intune (MDM) usa la registrazione per gestire i dispositivi e consentire l'accesso alle risorse. Il modo di registrazione dei dispositivi varia a seconda del tipo di dispositivo in uso, della proprietà e del livello di gestione necessario. Per i dispositivi BYOD e di proprietà dell'azienda è necessario un processo di registrazione. Le aziende che usano Exchange ActiveSync, locale oppure ospitato nel cloud, possono abilitare una gestione semplificata senza necessità di registrazione. I PC Windows possono essere gestiti tramite il software client di Intune.
+
+###  Piattaforme per dispositivi supportate
+
+Intune può gestire le piattaforme dei dispositivi seguenti:
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## Abilitare la registrazione dei dispositivi  
  La registrazione consente agli utenti di accedere a risorse aziendali dai dispositivi personali e all'amministratore di verificare che tali dispositivi siano conformi ai criteri di protezione delle risorse aziendali. È il modo migliore per abilitare gli scenari BYOD con Intune. L'amministratore deve abilitare la registrazione nella console di Intune. È possibile che sia necessario creare una relazione di trust con il dispositivo e assegnare licenze agli utenti. Il dispositivo viene registrato quindi registrato, generalmente dopo che gli utenti immettono le proprie credenziali aziendali o dell'istituto di istruzione. A questo punto il dispositivo riceve i criteri di Intune e può accedere alle risorse.
@@ -58,6 +64,6 @@ I computer gestiti con il software client di Intune non possono essere cancellat
 [Gestire i PC Windows con Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

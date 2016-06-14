@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,8 +53,7 @@ Nella schermata seguente è possibile visualizzare due chiari esempi:
 
 ![Criteri dei dispositivi Intune](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE]
-> Tenere presente che quando due criteri con livelli di restrizione diversi vengono applicati allo stesso dispositivo o utente, viene di fatto applicato il criterio più restrittivo.
+> [!NOTE] Tenere presente che quando due criteri con livelli di restrizione diversi vengono applicati allo stesso dispositivo o utente, viene di fatto applicato il criterio più restrittivo.
 
 ## Intervalli di aggiornamento dei criteri
 I criteri vengono aggiornati a intervalli regolari. In generale, i criteri dovrebbero essere registrati nei dispositivi entro 15 minuti dall'applicazione di una modifica. Ecco altri dettagli sugli intervalli regolari per l'aggiornamento dei criteri:
@@ -72,12 +71,11 @@ Per i dispositivi Windows non MDM, gli errori dei criteri nel file policyplatfor
 
 ### Per risolvere i problemi relativi al Controllo dell'account utente
 
-1.  Ritirare il computer come descritto in [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Ritirare dispositivi dalla gestione di Microsoft Intune)..
+1.  Ritirare il computer come descritto in [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Ritirare dispositivi dalla gestione di Microsoft Intune).
 
 2.  Attendere 20 minuti che il software client venga rimosso.
 
-    > [!NOTE]
-    > Non provare a rimuovere il client da Programmi e funzionalità.
+    > [!NOTE] Non provare a rimuovere il client da Programmi e funzionalità.
 
 3.  Nel menu Start digitare **Controllo account utente** per aprire le impostazioni di Controllo dell'account utente.
 
@@ -102,8 +100,8 @@ Per risolvere questo problema, allineare l'ora del sistema locale il più possib
 I dispositivi Windows Phone e Windows RT non consentono che la sicurezza dei criteri di sicurezza impostati tramite MDM o EAS venga ridotta dopo averli configurati. Ad esempio, si imposta un **numero minimo di caratteri per la password** su 8 che poi si tenta di ridurre a 4. I criteri più restrittivi sono già stati applicati al dispositivo.
 
 A seconda della piattaforma del dispositivo, se si vogliono modificare i criteri a un valore meno sicuro può essere necessario reimpostare i criteri di sicurezza.
-Ad esempio, in Windows RT, sul desktop scorrere verso destra per aprire la barra **Accessi** e fare clic su **Impostazioni** &gt; **Pannello di controllo**.  Selezionare l'applet **Account utente** .
-Nella parte inferiore del menu di navigazione a sinistra è disponibile un collegamento **Reimposta criteri di sicurezza** . Selezionare tale collegamento e quindi fare clic sul pulsante **Reimposta criteri** .
+Ad esempio, in Windows RT, sul desktop scorrere verso destra per aprire la barra **Accessi** e scegliere **Impostazioni** &gt; **Pannello di controllo**.  Selezionare l'applet **Account utente** .
+Nella parte inferiore del menu di navigazione a sinistra è disponibile un collegamento **Reimposta criteri di sicurezza** . Selezionare tale collegamento e scegliere il pulsante **Reimposta criteri**.
 È possibile che altri dispositivi MDM, ad esempio Android, Windows Phone 8.1 e versione successiva e iOS, debbano essere ritirati e registrati nuovamente al servizio per consentire all'utente di applicare criteri meno restrittivi.
 
 ## I dispositivi Android non impongono modifiche ai criteri di sicurezza senza l'accettazione dell'utente finale
@@ -115,9 +113,9 @@ Android MDM non consente al servizio di forzare le modifiche dei criteri inizial
 **Risoluzione:** nell'[interfaccia di amministrazione di Office 365](https://portal.office.com/) rimuovere i caratteri speciali dal nome della società e salvare le informazioni aziendali.
 
 ### Passaggi successivi
-Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

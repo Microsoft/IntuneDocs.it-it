@@ -15,7 +15,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 
 # optional metadata
 
-ROBOTS: noindex,nofollow
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -30,14 +30,14 @@ Per riconnettersi al lavoro, è necessario impostare il timeout della password n
 
 1.  In **Impostazioni** nel dispositivo fare clic su **Sicurezza** &gt; **Blocca automaticamente**, che corrisponde a **Blocca telefono dopo** in alcuni dispositivi.
 
-    Se l'opzione **Blocca automaticamente** (** Blocca telefono dopo** in alcuni dispositivi) non è visualizzata, verificare di aver impostato una password valida in **Impostazioni** &gt; **Blocco schermo** &gt; **Password**.
+    Se l'opzione **Blocca automaticamente** (**Blocca telefono dopo** in alcuni dispositivi) non è visualizzata, verificare di aver impostato una password valida in **Impostazioni** &gt; **Blocco schermo** &gt; **Password**.
 
 2.  Specificare il valore di timeout della password.
 
-3.  Verificare che il dispositivo sia registrato in Intune seguendo le istruzioni riportate in [Registrare il dispositivo in Intune](http://go.microsoft.com/fwlink/?LinkId=519071).
+3.  Verificare che il dispositivo sia registrato in Intune seguendo le istruzioni riportate in [Enroll your device to use it at work (Registrare il dispositivo per usarlo per il lavoro)](http://go.microsoft.com/fwlink/?LinkId=519071).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -15,7 +15,7 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -39,7 +39,7 @@ Quando si accede ai dati aziendali in un'app gestita, viene visualizzato un mess
 ### Come si ottengono le app gestite?
 Le app gestite possono essere installate in due modi:
 
--   Quando il dispositivo viene registrato in Microsoft Intune, è possibile installare l'app dall'app Portale aziendale o dal sito Web del portale aziendale oppure l'installazione nel dispositivo può essere eseguita dall'amministratore IT. Per altre informazioni sulla registrazione, vedere [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) (Registrare il dispositivo iOS in Intune) o [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Registrare il dispositivo Mac OS X in Intune).
+-   Quando il dispositivo viene registrato in Microsoft Intune, è possibile installare l'app dall'app Portale aziendale o dal sito Web del portale aziendale oppure l'installazione nel dispositivo può essere eseguita dall'amministratore IT. Per informazioni sulla registrazione, vedere [Registrare il dispositivo iOS in Intune](enroll-your-device-in-intune-ios.md) o [Registrare il dispositivo Mac OS X in Intune](enroll-your-device-in-intune-mac-os-x.md).
 
 -   L'app viene installata dall'App Store, quindi l'utente accede con l'account utente aziendale gestito da Intune.
 
@@ -81,6 +81,6 @@ Per altre informazioni sulle app gestite nel dispositivo contattare l'amministra
 ### Vedere anche
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

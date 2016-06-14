@@ -45,7 +45,7 @@ Il messaggio chiede agli utenti di consentire l'invio del numero di telefono e d
 > [!NOTE]
 > **L'app Portale aziendale non effettua o gestisce mai chiamate telefoniche.** Il testo del messaggio è controllato da Google e non può essere modificato.
 
-Per visualizzare la pagina **Hardware**, accedere a **Gruppi** > **Tutti i dispositivi mobili** > ** Dispositivi**. Selezionare il dispositivo dell'utente e passare a **Visualizza proprietà** > **Hardware**.
+Per visualizzare la pagina **Hardware**, accedere a **Gruppi** > **Tutti i dispositivi mobili** > **Dispositivi**. Selezionare il dispositivo dell'utente e passare a **Visualizza proprietà** > **Hardware**.
 
 ### Cosa succede se gli utenti consentono o non consentono l'accesso
 Se gli utenti consentono l'accesso, il numero di telefono e il codice IMEI del dispositivo verranno visualizzati nella pagina Hardware nella console di amministrazione.
@@ -55,7 +55,7 @@ Se gli utenti non consentono l'accesso, possono continuare a usare l'app Portale
 Se gli utenti consentono l'accesso e in seguito lo negano, il messaggio verrà visualizzato all'accesso successivo all'app Portale aziendale dopo la registrazione.</br></br>Se si decide di consentire l'accesso in un secondo momento, passare a **Impostazioni** > **App** > **Portale aziendale** > **Autorizzazioni** > **Telefono** e quindi attivare l'autorizzazione.
 
 ### Dove trovare altre informazioni a riguardo
-[Accedere all'app Portale aziendale](/Intune/EndUser/sign-in-to-the-company-portal-app-android)
+Passaggio 5 in [Registrare il dispositivo Android in Intune](/Intune/EndUser/enroll-your-device-in-intune-android)
 
 ## Consentire a Portale aziendale di accedere a foto, elementi multimediali e file nel dispositivo?
 
@@ -83,6 +83,6 @@ Al secondo accesso all'app Portale aziendale dopo aver negato l'accesso, nel mes
 [Informazioni sull'uso di Intune per gli utenti finali](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

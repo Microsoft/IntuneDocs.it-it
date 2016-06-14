@@ -48,20 +48,23 @@ Intune supporta la creazione di profili VPN che usano i tipi di connessione segu
 
 
 
-Tipo di connessione |iOS e Mac OS X  |Android  |Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop e Mobile |
----------|---------|---------|---------|---------|---------
-Cisco AnyConnect |Sì |Sì   |No    |     No    |No  |No    | Sì, (URI OMA, solo dispositivi mobili)|     
-Pulse Secure |Sì  |Sì |Sì   |No  |Sì  |Sì| Sì|        
-F5 Edge Client |Sì |Sì |Sì |No  |Sì  |   Sì |  Sì|   
-Dell SonicWALL Mobile Connect |Sì |Sì |Sì |No  |Sì |Sì |Sì|         
-VPN CheckPoint Mobile |Sì |Sì |Sì |Sì |Sì|Sì|Sì|
-
-
+Tipo di connessione |iOS e Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop e Mobile |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+Cisco AnyConnect|Sì |Sì   |No    |     No    |No  |No    | Sì, (URI OMA, solo dispositivi mobili)|     
+Pulse Secure|Sì  |Sì |Sì   |No  |Sì  |Sì| Sì|        
+F5 Edge Client|Sì |Sì |Sì |No  |Sì  |   Sì |  Sì|   
+Dell SonicWALL Mobile Connect|Sì |Sì |Sì |No  |Sì |Sì |Sì|         
+VPN CheckPoint Mobile|Sì |Sì |Sì |Sì |Sì|Sì|Sì|
+Microsoft SSL (SSTP)|No |No |No |No |No|No|No|
+Microsoft Automatico|No |No |No |No |No|No|sì|
+IKEv2|No |No |No |No |No|No|sì|
+PPTP|No |No |No |No |No|No|sì|
+L2TP|No |No |No |No |No|No|sì|
 
 
 > [!IMPORTANT] Prima di usare i profili VPN distribuiti in un dispositivo, è necessario installare l'app VPN applicabile per il profilo È possibile usare le informazioni nell'argomento [Distribuire le app in dispositivi mobili in Microsoft Intune](deploy-apps-in-microsoft-intune.md) per distribuire l'app applicabile tramite Intune.  
 
- Per informazioni su come creare profili VPN personalizzati usando le impostazioni URI, vedere [Configurazioni personalizzate per i profili VPN](custom-configurations-for-vpn-profiles.md).     
+ Per informazioni su come creare profili VPN personalizzati usando le impostazioni URI, vedere [Custom configurations for VPN profiles (Configurazioni personalizzate per i profili VPN)](custom-configurations-for-vpn-profiles.md).     
 
 ## Come vengono protetti i profili VPN
 
@@ -81,7 +84,7 @@ Per eseguire l'autenticazione al server VPN, l'utente deve fornire nome utente e
 
 ## Creare un profilo VPN
 
-1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri > Aggiungi criterio**..
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri > Aggiungi criterio**.
 2. Selezionare un modello per il nuovo criterio espandendo il tipo di dispositivo interessato, quindi scegliere il profilo VPN per il dispositivo:
     * **Profilo VPN (Android 4 e versioni successive)**
     * **Profilo VPN (iOS 7.1 e versioni successive)**
@@ -110,7 +113,7 @@ Nome impostazione  |Altre informazioni
 **Ruolo**| Specificare il nome del ruolo utente che ha accesso a questa connessione. Un ruolo utente consente di definire le impostazioni personali e le opzioni, oltre ad abilitare o disabilitare alcune funzionalità di accesso. Questa opzione viene visualizzata solo quando il tipo di connessione è **Pulse Secure**.
 **Area di autenticazione**|Specificare il nome dell'area di autenticazione da usare. Un'area di autenticazione è un raggruppamento di risorse di autenticazione usate dal tipo di connessione Pulse Secure. Questa opzione viene visualizzata solo quando il tipo di connessione è **Pulse Secure**.
 **Gruppo o dominio di accesso**|Specificare il nome del gruppo di accesso o di dominio a cui connettersi. Questa opzione viene visualizzata solo quando il tipo di connessione è **Dell SonicWALL Mobile Connect**.
-**Impronta digitale**|Specificare una stringa, ad esempio "Codice impronta digitale Contoso", che verrà usata per verificare l'attendibilitàò del server VPN. Un'impronta digitale può essere inviata al client in modo da informarlo che può considerare attendibile un server che presenta la stessa impronta digitale durante la connessione. Se il dispositivo non ha ancora l'impronta digitale, richiederà all'utente di considerare attendibile il server VPN usato per la connessione durante la visualizzazione dell'impronta digitale (l'utente verifica manualmente l'impronta digitale e fa clic su **Attendibilità** per connettersi). Questa opzione viene visualizzata solo quando il tipo di connessione è **VPN CheckPoint Mobile**.
+**Impronta digitale**|Specificare una stringa, ad esempio "Codice impronta digitale Contoso", che verrà usata per verificare l'attendibilitàò del server VPN. Un'impronta digitale può essere inviata al client in modo da informarlo che può considerare attendibile un server che presenta la stessa impronta digitale durante la connessione. Se il dispositivo non ha ancora l'impronta digitale, verrà richiesto all'utente di considerare attendibile il server VPN a cui si sta connettendo e verrà visualizzata l'impronta digitale. L'utente verifica manualmente l'impronta digitale e sceglie **Attendibilità** per connettersi. Questa opzione viene visualizzata solo quando il tipo di connessione è **VPN CheckPoint Mobile**.
 **Per VPN app**|Selezionare questa opzione se si vuole associare questa connessione VPN a un'app Mac OS X in modo da aprire la connessione quando si esegue l'app. Quando si distribuisce il software, è possibile associare il profilo VPN a un'app. Per altre informazioni, vedere [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Distribuire app in Microsoft Intune)
 **Rileva automaticamente impostazioni proxy** (solo per iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1)|Se il server VPN richiede un server proxy per la connessione, specificare se si vuole che i dispositivi rilevino automaticamente le impostazioni di connessione. Per altre informazioni, vedere la documentazione di Windows Server.
 **Usa script di configurazione automatica** (solo per iOS, Mac OS X, Windows 8.1 e Windows Phone 8.1)|Se il server VPN richiede un server proxy per la connessione, specificare se si vuole usare uno script di configurazione automatica per definire le impostazioni e quindi specificare l'URL del file contenente le impostazioni. Per altre informazioni, vedere la documentazione di Windows Server.
@@ -131,6 +134,8 @@ Nome impostazione  |Altre informazioni
 **App associate**     | È possibile fornire un elenco di app che useranno automaticamente la connessione VPN. Il tipo di app determinerà l'identificatore dell'app. Per le app universali specificare il nome della famiglia di pacchetti e per le app desktop specificare il percorso dell'app.          
 
 
+> [!IMPORTANT] È consigliabile proteggere tutti gli elenchi delle app compilate da usare per la configurazione della VPN per app. Se un utente non autorizzato modifica l'elenco e l'elenco viene importato nell'elenco della VPN per app, si autorizzano potenzialmente le app che non dovrebbero essere autorizzate ad accedere alla VPN. Un modo per proteggere gli elenchi delle app consiste nell'usare un elenco di controllo di accesso (ACL).
+
 Di seguito è riportato un esempio di quando è possibile usare le impostazioni dei limiti aziendali. Se si vuole abilitare la connessione VPN solo per il desktop remoto, si creerà una regola del traffico di rete che consente il traffico per il numero di protocollo 27 sulla porta esterna 3996. Nessun altro tipo di traffico userà la connessione VPN.
 
 Definire le route nei limiti aziendali è utile quando il tipo di connessione VPN non consente di definire il modo in cui viene gestito il traffico nello split tunneling. In tal caso, usare **Route** per elencare le route che useranno la connessione VPN.
@@ -139,23 +144,26 @@ Definire le route nei limiti aziendali è utile quando il tipo di connessione VP
 
 Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell'area di lavoro **Criteri** .
 
-## Distribuire il criterio
+## Distribuire i criteri
 
-1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire e quindi fare clic su **Gestisci distribuzione**.
+1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi scegliere **Gestisci distribuzione**.
 
 2.  Nella finestra di dialogo **Gestisci distribuzione** :
 
-    -   **Per distribuire il criterio**, selezionare uno o più gruppi in cui si vuole distribuire il criterio, quindi fare clic su **Aggiungi** &gt; **OK**.
+    -   **Per distribuire il criterio**, selezionare uno o più gruppi a cui si vuole distribuire il criterio, quindi scegliere **Aggiungi** &gt; **OK**.
 
-    -   **Per chiudere la finestra di dialogo senza distribuire il criterio**, fare clic su **Annulla**.
+    -   **Per chiudere la finestra di dialogo senza distribuirlo**, scegliere **Annulla**.
 
 
 Al termine della distribuzione, il nome della connessione VPN specificato verrà visualizzato nell'elenco delle connessioni VPN nel dispositivo.
 
 Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** dell'area di lavoro **Criteri** consentono di identificare i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene visualizzato anche nell'area di lavoro Dashboard.
 
+### Vedere anche
+[Custom configurations for VPN profiles (Configurazioni personalizzate per i profili VPN)](Custom-configurations-for-VPN-profiles.md)
+[Per-app VPN for Android Pulse Secure (VPN per app per Pulse Secure per Android)](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO5-->
 
 

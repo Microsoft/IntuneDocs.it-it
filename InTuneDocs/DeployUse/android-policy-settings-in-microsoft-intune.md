@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Impostazioni dei criteri di configurazione di Android in Microsoft Intune | Microsoft Intune
+title: Impostazioni dei criteri di configurazione di Android e Samsung KNOX | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -25,7 +25,7 @@ ms.suite: ems
 
 ---
 
-# Impostazioni dei criteri di Android in Microsoft Intune
+# Impostazioni dei criteri di Android e Samsung KNOX in Microsoft Intune
 
 ## Criteri di configurazione generale
 
@@ -38,7 +38,7 @@ Usare i **criteri di configurazione generali di Android** di Microsoft Intune pe
 -   **App conformi e non conformi**: specificare un elenco di app conformi oppure non conformi nella società. Nei dispositivi Android e iOS è possibile usare il **Report app non conformi** per visualizzare la conformità delle app specificate nell'elenco rispetto a quelle installate dagli utenti (ma senza impedire effettivamente l'installazione dell'app).
 
 > [!TIP]
-> È possibile configurare i termini e le condizioni per essere sicuri che gli utenti siano informati del fatto che le app installate nel dispositivo, incluse quelle personali, verranno valutate e che le app non conformi verranno bloccate o segnalate come non conformi. Gli utenti dovranno quindi accettare questi termini e condizioni prima di poter registrare il dispositivo e usare il Portale aziendale per ottenere le app. Per altre informazioni sull'uso di termini e condizioni, vedere [Terms and condition policy settings in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md) (Impostazioni dei criteri relativi a termini e condizioni in Microsoft Intune)..
+> È possibile configurare i termini e le condizioni per essere sicuri che gli utenti siano informati del fatto che le app installate nel dispositivo, incluse quelle personali, verranno valutate e che le app non conformi verranno bloccate o segnalate come non conformi. Gli utenti dovranno quindi accettare questi termini e condizioni prima di poter registrare il dispositivo e usare il Portale aziendale per ottenere le app. Per altre informazioni sull'uso di termini e condizioni, vedere [Terms and condition policy settings in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md) (Impostazioni dei criteri relativi a termini e condizioni in Microsoft Intune).
 
 Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è possibile crearla con un criterio personalizzato Android che consenta di usare le impostazioni URI OMA per controllare il dispositivo. Per altre informazioni, vedere **Impostazioni di criteri personalizzati** più avanti in questo argomento.
 
@@ -150,7 +150,7 @@ Specificare le impostazioni seguenti per i **dispositivi Samsung KNOX**:
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
-|**Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo**|Fare clic su **Sfoglia**, quindi selezionare l'app gestita o un'app da uno Store che potrà essere eseguita quando il dispositivo è in modalità tutto schermo. Non sarà possibile eseguire altre applicazioni nel dispositivo.<br /><br />Per informazioni, vedere Come specificare gli URL negli App Store, più avanti in questo argomento.|
+|**Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo**|Fare clic su **Sfoglia**, quindi selezionare l'app gestita di cui consentire l'esecuzione quando il dispositivo è in modalità tutto schermo. Le app specificate come collegamento allo store non sono attualmente supportate. Non sarà possibile eseguire altre applicazioni nel dispositivo.|
 |**Consenti pulsanti volume**|Abilita o disabilita l'uso dei pulsanti del volume nel dispositivo.|
 |**Consenti pulsante riattivazione sospensione schermo**|Abilita o disabilita il pulsante di riattivazione sospensione dello schermo del dispositivo.|
 
@@ -161,23 +161,23 @@ Usare **Report app non conformi** per visualizzare la conformità delle app cons
 
 ###### Per eseguire il report app non conformi
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com), fare clic su **Report** &gt; **Report app non conformi**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Report** &gt; **Report app non conformi**.
 
-2.  Selezionare i gruppi di dispositivi da controllare, scegliere se verificare la presenza di app conformi, di app non conformi o di entrambe, quindi fare clic su **Visualizza report**..
+2.  Selezionare i gruppi di dispositivi da controllare, scegliere se verificare la presenza di app conformi, di app non conformi o di entrambi, quindi fare clic su **Visualizza report**.
 
 #### Come specificare gli URL negli App Store
-Per specificare un URL dell'app nell'elenco delle app conformi e non conformi o nell'opzione **Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo** (solo iOS), usare uno dei formati seguenti:
+Per specificare un URL app nell'elenco di applicazioni conformi e non conformi, utilizzare il formato seguente:
 
 Nella [sezione delle app di Google Play](https://play.google.com/store/apps), cercare l'app da usare.
 
 Aprire la pagina di installazione per l'app e copiare l'URL negli Appunti. A questo punto l'URL può essere usato in entrambi gli elenchi di app conformi e non conformi.
 
-**Esempio**: cercare Microsoft Office Mobile in Google Play. L'URL usato sarà **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**..
+**Esempio**: cercare Microsoft Office Mobile in Google Play. L'URL usato sarà **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ## Impostazioni di criteri personalizzati
 Usare i **Criteri di configurazione personalizzati Android** di Microsoft Intune per distribuire le impostazioni OMA-URI (Open Mobile Alliance Uniform Resource Identifier) che è possibile usare per controllare le funzionalità nei dispositivi Android. Si tratta di impostazioni standard che molti produttori di dispositivi mobili usano per controllare le funzionalità del dispositivo.
 
-Questa funzionalità consente di distribuire le impostazioni Android non configurabili con i criteri di Intune. Per informazioni sulle impostazioni configurabili con questi criteri, vedere [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune)..
+Questa funzionalità consente di distribuire le impostazioni Android non configurabili con i criteri di Intune. Per informazioni sulle impostazioni che è possibile configurare con questi criteri, vedere [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune).
 
 > [!NOTE]
 > I criteri personalizzati Android attualmente supportano la configurazione di impostazioni Wi-Fi solo per dispositivi Android che includono una chiave precondivisa. Per altre informazioni vedere Configurare un profilo Wi-Fi personalizzato con una chiave precondivisa, più avanti in questo argomento.
@@ -195,7 +195,7 @@ Questa funzionalità consente di distribuire le impostazioni Android non configu
     |--------|--------------------|
     |**Nome impostazione**|Immettere un nome univoco per l'impostazione OMA URI per identificarla nell'elenco delle impostazioni.|
     |**Descrizione dell'impostazione**|Fornire una descrizione che offra una panoramica dell'impostazione e altre informazioni rilevanti per individuarla.|
-    |**Tipo di dati**|Selezionare il tipo di data in cui si specificherà questa impostazione OMA URI. Scegliere tra **Stringa, Stringa (XML), Data e ora, Intero, Virgola mobile** o **Booleano**..|
+    |**Tipo di dati**|Selezionare il tipo di data in cui si specificherà questa impostazione OMA URI. Scegliere tra **Stringa, Stringa (XML), Data e ora, Intero, Virgola mobile** o **Booleano**.|
     |**OMA-URI (con distinzione tra maiuscole e minuscole)**|Specificare l'impostazione OMA-URI per cui si desidera fornire un'impostazione.|
     |**Valore**|Specificare il valore da associare all'impostazione OMA-URI specificata in precedenza.|
 
@@ -212,7 +212,7 @@ Sebbene Intune supporti profili Wi-Fi per i dispositivi Android, questa funziona
 |----------------|--------------------|
 |**Nome impostazione**|Specificare un nome di preferenza per l'impostazione.|
 |**Descrizione dell'impostazione**|Specificare una descrizione per l’impostazione.|
-|**Tipo di dati**|Selezionare **Stringa (XML)**..|
+|**Tipo di dati**|Selezionare **Stringa (XML)**.|
 |**URI OMA**|Immettere: ./Vendor/MSFT/WiFi/Profile/*&lt;your Wi-Fi profile&gt;*/Settings|
 
 3.  In **Valore** copiare e incollare il codice XML seguente:
@@ -258,6 +258,6 @@ Sebbene Intune supporti profili Wi-Fi per i dispositivi Android, questa funziona
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

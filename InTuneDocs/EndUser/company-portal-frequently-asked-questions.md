@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Domande frequenti sul Portale aziendale | Microsoft Intune
+title: Informazioni sul portale aziendale | Microsoft Intune
 description:
 keywords:
 author: Staciebarker
@@ -15,7 +15,7 @@ ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 
 # optional metadata
 
-#ROBOTS:
+#ROBOTS: noindex,nofollow
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -25,80 +25,85 @@ ms.suite: ems
 
 ---
 
-# Domande frequenti sul Portale aziendale
+# Informazioni sul portale aziendale
 
+## Che cos'è il portale aziendale e a cosa serve?
+Il portale aziendale di Microsoft Intune consente di accedere ai dati e alle app aziendali o dell'istituto di istruzione. È possibile accedere al portale aziendale in due modi diversi:
 
+- Installando l'app Portale aziendale nel dispositivo. In genere è possibile scaricare l'app Portale aziendale dall'archivio applicazioni del dispositivo, ma anche l'amministratore IT può installare l'app con metodi diversi.
+- Visitando il [sito Web Portale aziendale](http://portal.manage.microsoft.com) impostato dall'amministratore IT. 
 
-## Che cos'è il Portale aziendale?
-Il Portale aziendale è l'interfaccia dell'azienda che consente di gestire i computer e i dispositivi aziendali o gestire i propri computer o dispositivi personali che si sceglie di usare al lavoro.  Il Portale aziendale può essere un sito Web a cui si accede o un'app da installare sul dispositivo.
+Esistono alcune lievi differenze tra l'app Portale aziendale e il sito Web Portale aziendale, ma in ognuno è possibile eseguire la maggior parte delle attività che è possibile eseguire nell'altro. Ecco alcuni esempi:
 
-## Che cosa si può fare con il Portale aziendale?
-Dopo aver aggiunto un computer o dispositivo al Portale aziendale, è possibile trovare le app da installare, gestire gli altri dispositivi aggiunti e trovare le informazioni di contatto dell'amministratore IT.
+- Registrare i dispositivi
+- Visualizzare lo stato dei dispositivi
+- Scaricare le app rese disponibili dalla società o dall'istituto di istruzione
+- Rinominare il dispositivo
+- Reimpostare il PIN o la password
+- Contattare il reparto IT per richiedere assistenza
+
+Per scoprire quali operazioni è possibile eseguire nel sito Web Portale aziendale rispetto all'app Portale aziendale nel dispositivo, scegliere uno dei collegamenti seguenti:
+
+> [!div class="op_single_selector"]
+- [Android](using-your-android-device-with-intune.md)
+- [iOS e Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Windows](using-your-windows-device-with-intune.md)
+- [Sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
 ## Che cosa succede quando si aggiunge un computer o dispositivo al Portale aziendale?
-Quando si aggiunge un computer o un dispositivo al Portale aziendale, a seconda del dispositivo è possibile che venga installato un software o scaricata un'app.  Vengono inoltre concesse all'amministratore IT le autorizzazioni per gestire il dispositivo e proteggere le informazioni aziendali sul dispositivo.  
+Quando si aggiunge un computer o un dispositivo al Portale aziendale, a seconda del dispositivo è possibile che venga installato un software o scaricata un'app.  Vengono inoltre concesse all'amministratore IT le autorizzazioni per gestire il dispositivo e proteggere le informazioni aziendali sul dispositivo.
+
+Per informazioni su ciò che l'amministratore IT può e non può visualizzare nei dispositivi degli utenti, usare il collegamento che corrisponde al tipo di dispositivo:
+
+> [!div class="op_single_selector"]
+- [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [iOS e Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## Quali tipi di computer o dispositivi è possibile aggiungere al Portale aziendale?
 
--   Windows 10 Mobile
-
--   Windows 10 Desktop
-
--   Windows Phone 8.1
-
--   Windows 8.1
-
--   Dispositivi Windows RT
-
--   Windows Phone 8
-
 -   iPhone, iPad e Mac OS X
 
--   Dispositivi Android
+-   Dispositivi mobili Android
 
-## App Portale aziendale non supportata
-Questa versione del Portale aziendale non può più essere usata. Per continuare, installare l'app **Portale aziendale** da Windows Store.
+-   Dispositivi Windows
+    -   Windows 10 Mobile
+    -   Windows 10 Desktop
+    -   Windows Phone 8.1
+    -   Windows 8.1
+    -   Dispositivi Windows RT
+    -   Windows Phone 8
+    -   iPhone, iPad e Mac OS X
+    -   Dispositivi mobili Android
+
 
 ## È possibile rimuovere un computer o un dispositivo dal Portale aziendale?
-Sì, è possibile rimuovere o reimpostare un computer o un dispositivo dal Portale aziendale.  Esiste una differenza tra **rimuovere** e **reimpostare**:
+Sì, è possibile rimuovere o reimpostare un computer o un dispositivo dal Portale aziendale. Esiste una differenza tra **rimuovere** e **reimpostare**:
 
--   Quando si rimuove un computer o un dispositivo, non sarà più possibile accedere al Portale aziendale con tale dispositivo e alcuni dati aziendali al suo interno potrebbero essere rimossi.
+Quando si *rimuove* un computer o dispositivo, si annulla la registrazione del dispositivo in Intune. Dopo l'annullamento della registrazione non è più possibile accedere al Portale aziendale con tale dispositivo e alcuni dati aziendali all'interno di quest'ultimo potrebbero essere rimossi. Per informazioni su come rimuovere il dispositivo dal Portale aziendale, scegliere uno dei collegamenti seguenti:
 
--   Quando si reimposta un computer o un dispositivo, il Portale aziendale tenta di reimpostare le impostazioni predefinite del dispositivo.  Questo potrebbe rimuovere tutti i dati, sia aziendali che personali.
+> [!div class="op_single_selector"]
+- [Android](unenroll-your-device-from-intune-android.md)
+- [iOS e Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [Windows](unenroll-your-device-from-intune-windows.md)
+
+Quando si *reimposta* un computer o un dispositivo, il Portale aziendale tenta di reimpostare le impostazioni predefinite del dispositivo stesso. La reimpostazione del dispositivo rimuove tutti i dati personali e aziendali dal dispositivo stesso. Se si smarrisce il dispositivo, è possibile reimpostarlo anche in remoto dal sito Web Portale aziendale.
+
+Per informazioni su come reimpostare il dispositivo, scegliere uno dei collegamenti seguenti:
+
+> [!div class="op_single_selector"]
+- [Android](reset-erase-your-lost-or-stolen-device-android.md)
+- [iOS e Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
+- [Reimpostare un dispositivo dal sito Web del portale aziendale](reset-your-device-cpwebsite.md)
 
 ## Non vengono visualizzati tutti i dispositivi nel Portale aziendale
 Per vedere un dispositivo, è necessario aggiungerlo al Portale aziendale. Individuare il Portale aziendale come indicato dall'amministratore e seguire le istruzioni per il dispositivo. Inoltre, non saranno più visualizzati i dispositivi di proprietà e gestiti dall'azienda.
 
-## Si deve installare una nuova versione del Portale aziendale
-Se la versione del Portale aziendale non è più supportata o se è disponibile una nuova versione del Portale aziendale, seguire le procedure riportate di seguito per aggiornare il dispositivo.
-
-### Per aggiornare il dispositivo Windows
-
-1.  Accedere a Windows Store e cercare il **Portale aziendale**..
-
-2.  Seguire le istruzioni di installazione.
-
-    > [!NOTE]
-    > Se non si riesce ad accedere a Windows Store, contattare l'amministratore.
-
-### Per aggiornare il dispositivo iOS
-
-Quando sarà disponibile una nuova versione del Portale aziendale, si riceverà un avviso dall'App Store di Apple. Per aggiornare il dispositivo, seguire le istruzioni riportate nell'avviso.
-
-## Viene visualizzato un errore che indica che il computer è già registrato
-Ciò significa che il computer è già stato aggiunto al Portale aziendale, ma non è ancora collegato all'account utente. Seguire questa procedura per collegare il computer al proprio account utente e completare il processo.
-
-### Per collegare il computer
-
-1.  Nel computer da collegare al proprio account fare clic sul pulsante **Start** , quindi scegliere **Microsoft Intune Center**..
-
-2.  Aprire il Portale aziendale.
-
-3.  Seguire le istruzioni per collegare il computer al proprio account utente.
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

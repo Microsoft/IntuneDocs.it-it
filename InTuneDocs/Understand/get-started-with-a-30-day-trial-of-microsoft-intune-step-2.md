@@ -37,7 +37,7 @@ La console di amministrazione di Intune può essere usata per visualizzare le in
 ## Aggiungere singoli account utente
 Usare i passaggi seguenti per creare altri account utente nel tenant di valutazione. Ricordare che ogni account utente aggiunto viene considerato come un'unità nel computo delle 100 licenze disponibili nella versione di valutazione gratuita di Intune.
 
-1.  Nell'[interfaccia di amministrazione di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) scegliere **Aggiungi utenti** &gt; **Nuovo**&gt; **Utente** per avviare la procedura guidata **Nuovi utenti**.
+1.  Nell'[interfaccia di amministrazione di Office 365](http://go.microsoft.com/fwlink/?LinkID=787455) scegliere **Aggiungi utenti** &gt; **Nuovo**&gt; **Utente** per avviare la procedura guidata **Nuovi utenti**.
 
 2.  Nella pagina **Dettagli** completare i campi richiesti.
 
@@ -51,14 +51,14 @@ Usare i passaggi seguenti per creare altri account utente nel tenant di valutazi
 
 7.  Quando il nuovo utente viene visualizzato nell'interfaccia di amministrazione di Office 365, verificare che sia stato creato correttamente:
 
-    1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) fare clic su **Amministrazione** &gt; **Portale aziendale**, quindi scorrere fino alla parte inferiore della schermata. Copiare l'URL indicato nel **portale aziendale di Intune**.
+    1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **Amministrazione** &gt; **Portale aziendale**, quindi scorrere fino alla parte inferiore della schermata. Copiare l'URL indicato nel **Portale aziendale di Intune**.
 
-    2.  Aprire una nuova finestra del browser in modalità di privacy (in Internet Explorer fare clic su **Strumenti** &gt; **InPrivate Browsing**) oppure aprire una nuova finestra in un altro dispositivo e accedere all'URL copiato nel passaggio precedente. Quando gli utenti accedono per la prima volta, devono specificare una nuova password per l'account.
+    2.  Aprire una nuova finestra del browser in modalità di privacy (in Internet Explorer scegliere **Strumenti** &gt; **InPrivate Browsing**) oppure aprire una nuova finestra in un altro dispositivo e accedere all'URL copiato nel passaggio precedente. Quando gli utenti accedono per la prima volta, devono specificare una nuova password per l'account.
 
 ## Aggiungi utenti in blocco
-Per aggiungere utenti in blocco a Intune, usare la procedura guidata **Aggiunta utenti in blocco** per caricare un file con valori separati da virgola (csv) contenente i dati utente. I collegamenti nella procedura guidata consentono di scaricare un modello vuoto e un file CSV di esempio. La prima riga del file CSV deve contenere, nell'ordine corretto, tutte le etichette di colonna per i dati utente. Quindi, per ogni utente nel file con estensione csv, è necessario includere il **nome utente** (ad esempio **bob@contoso.com**) e un **nome visualizzato** (ad esempio **Bob Kelly**).).
+Per aggiungere utenti in blocco a Intune, usare la procedura guidata **Aggiunta utenti in blocco** per caricare un file con valori separati da virgola (csv) contenente i dati utente. I collegamenti nella procedura guidata consentono di scaricare un modello vuoto e un file CSV di esempio. La prima riga del file CSV deve contenere, nell'ordine corretto, tutte le etichette di colonna per i dati utente. Quindi, per ciascun utente nel file CSV è necessario includere il **nome utente** (ad esempio **bob@contoso.com**) e un **nome visualizzato** (ad esempio **Bob Kelly**).
 
-1.  Nell'[interfaccia di amministrazione di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) scegliere **Utenti** &gt; **Nuovo**.
+1.  Nell'[interfaccia di amministrazione di Office 365](http://go.microsoft.com/fwlink/?LinkID=787455) scegliere **Utenti** &gt; **Nuovo**.
 
 2.  Fare clic su **Aggiungi in blocco** per avviare la procedura guidata Aggiunta utenti in blocco.
 
@@ -84,6 +84,6 @@ A questo punto, il passaggio 2 della procedura di *valutazione di Microsoft Intu
 >[&larr; **Iscriversi per una valutazione**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Creare gruppi** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

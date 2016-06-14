@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Classificare i dispositivi con il mapping del gruppo di dispositivi in Microsoft Intune | Microsoft Intune
+title: Classificare i dispositivi con il mapping del gruppo di dispositivi | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -45,9 +45,9 @@ Alcuni esempi di categorie:
 È possibile configurare tutte le categorie desiderate.
 
 ## Come configurare il mapping dei gruppi di dispositivi
-1. Per ogni categoria di dispositivi da usare, creare un gruppo di dispositivi Intune. Per informazioni su come creare gruppi, vedere [Usare i gruppi per gestire utenti e dispositivi con Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+1. Per ogni categoria di dispositivi da usare, creare un gruppo di dispositivi Intune. Per informazioni su come creare gruppi, vedere [Create groups to manage users and devices with Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md) (Creare gruppi per gestire utenti e dispositivi con Microsoft Intune).
 2. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Amministrazione**.
-3. Nell'aerea di lavoro **Amministrazione** espandere **Gestione dei dispositivi mobili** e quindi fare clic su **Mapping del gruppo di dispositivi**.
+3. Nell'area di lavoro **Amministrazione** espandere **Gestione dei dispositivi mobili**, quindi fare clic su **Mapping del gruppo di dispositivi**.
 4. Nella pagina **Mapping del gruppo di dispositivi** attivare il mapping del gruppo dei dispositivi.
 5. Fare clic su **Aggiungi** per creare una nuova regola di mapping.
 6. Nella finestra di dialogo **Aggiungi una regola di mapping del gruppo di dispositivi** inserire il nome della categoria da creare e nell'elenco a discesa scegliere la raccolta di dispositivi a cui si vuole eseguire il mapping della categoria. Al termine, fare clic su **Aggiungi**.
@@ -58,6 +58,6 @@ Da questo momento agli utenti che registrano i loro dispositivi viene visualizza
 ### Vedere anche
 [Usare i gruppi per gestire utenti e dispositivi con Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

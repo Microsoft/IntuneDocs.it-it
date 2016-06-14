@@ -49,25 +49,25 @@ Prima di iniziare, è necessario ottenere un token VPP da Apple e caricarlo nell
 
 ## Per ottenere e caricare un token VPP di Apple
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com), fare clic su **Amministrazione** &gt; **iOS e Mac OS X** &gt;  **Volume Purchase Program**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Amministrazione** &gt; **iOS e Mac OS X** &gt; **Volume Purchase Program**.
 
 2.  Fare clic sul collegamento **Account VPP di Apple** e, se non è già stato fatto, registrarsi al Volume Purchase Program per aziende. Dopo aver completato l'iscrizione, scaricare il token VPP di Apple per l'account.
 
-3.  Nella pagina **Gestisci Volume Purchase Program (VPP) di Apple** della console di Intune fare clic su **Carica un token VPP**..
+3.  Nella pagina **Gestisci Volume Purchase Program (VPP) di Apple** della console di Intune fare clic su **Carica un token VPP**.
 
-4.  Nella finestra di dialogo **Carica un token VPP** immettere o incollare il nome del token VPP e il proprio ID Apple, quindi fare clic su **Carica**..
+4.  Nella finestra di dialogo **Carica il token VPP** immettere o incollare il nome del token VPP e il proprio ID Apple, quindi fare clic su **Carica**.
 
 5.  Nella finestra di dialogo di avviso fare clic sulla casella di controllo per indicare di aver compreso che in seguito non sarà possibile passare a un account VPP diverso e quindi fare clic su **Sì**.
 
 Nella pagina **Volume Purchase Program** è ora possibile visualizzare le informazioni sul token VPP di Apple, incluse le date dell'ultimo aggiornamento, di scadenza e dell'ultima sincronizzazione con Intune.
 
-È possibile sincronizzare i dati mantenuti da Apple con Intune in qualsiasi momento facendo clic su **Sincronizza**..
+È possibile sincronizzare i dati archiviati da Apple con Intune in qualsiasi momento facendo clic su **Sincronizza**.
 
-## Per caricare e distribuire un'app acquistata con Volume Purchase Program
+## Per distribuire un'app acquistata tramite Volume Purchase Program
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **App** &gt; **Software gestito** &gt; **App acquistate con Volume Purchase Program**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **App** &gt; **Software gestito** &gt; **App acquistate con Volume Purchase Program**. Questo elenco visualizza tutte le applicazioni che sono state sincronizzate dal servizio VPP di Apple.
 
-2.  Seguire le istruzioni presenti nell'argomento [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) per completare il caricamento, la creazione e la distribuzione dell'app.
+2.  Scegliere l'app da distribuire, fare clic su **Gestisci distribuzione**, quindi usare le istruzioni specificate nell'argomento [Distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md) per completare il caricamento, la creazione e la distribuzione dell'app.
 
 Quando si distribuisce l'app come **Installazione richiesta**, ogni utente che installa l'app usa una licenza.
 
@@ -75,22 +75,20 @@ Per revocare una licenza, è necessario modificare l'azione di distribuzione spe
 
 La prima volta che un utente con un dispositivo idoneo tenta di installare un'app VPP gli viene richiesto di partecipare al programma Volume Purchase Program di Apple. È necessario completare questo passaggio per poter proseguire l'installazione dell'app.
 
-> [!TIP]
-> Osservare la colonna **VPP Terms Status** per visualizzare lo stato dei accettazione per ogni utente a cui è stata distribuita l'app.
+> [!TIP] Osservare la colonna **Stato delle condizioni per l’utilizzo di VPP** per visualizzare lo stato di accettazione per ogni utente a cui è stata distribuita l'app.
 
 Se non ci sono altre licenze disponibili, la distribuzione avrà esito negativo.
 
 ## Per monitorare le app VPP di Apple
-È possibile monitorare quali app VPP sono state distribuite e quante licenze sono state usate nell'area di lavoro **App**, nel nodo **Software gestito** &gt; **App acquistate con Volume Purchase Program**.
+Per monitorare quali app VPP sono state distribuite e quante licenze sono in uso, è possibile usare l'area di lavoro **App** nel nodo **Software gestito** &gt; **App acquistate con Volume Purchase Program**.
 
-> [!TIP]
-> È anche possibile usare **Filtri** per esaminare lo stato di ogni installazione di app.
+> [!TIP] È anche possibile usare **Filtri** per esaminare lo stato dell'installazione di ogni app.
 
 ### Vedere anche
-[Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
+[Distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

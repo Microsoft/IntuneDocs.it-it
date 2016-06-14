@@ -42,7 +42,8 @@ Le informazioni contenute in questa sezione consentono di installare il Portale 
 Le informazioni contenute in questa sezione illustrano le azioni che è possibile eseguire dopo aver registrato il dispositivo Windows in Intune.
 
 - [Crittografare il dispositivo](encrypt-your-device-windows.md)</br>
-- [Ripristinare (cancellare) un dispositivo smarrito o rubato](reset-erase-your-lost-or-stolen-device-windows.md)</br>
+- [Impostare o modificare la password](set-or-change-your-password-windows.md)</br>
+- [Ripristinare un dispositivo smarrito o rubato](reset-erase-your-lost-or-stolen-device-windows.md)</br>
 - [Annullare la registrazione del dispositivo in Intune](unenroll-your-device-from-intune-windows.md)</br>
 - [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)</br>
 - [Cosa succede se si reimposta il dispositivo personale con il Portale aziendale?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)</br>
@@ -54,7 +55,7 @@ Le informazioni contenute in questa sezione illustrano le azioni che è possibil
 Le informazioni contenute in questa sezione consentono la risoluzione di problemi che si potrebbero verificare quando il dispositivo Windows viene registrato in Intune.
 
 - [Il dispositivo non ha la versione minima richiesta del sistema operativo](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)</br>
-- [Il dispositivo non è conforme alla versione massima del sistema operativo](device-doesnt-comply with-maximum-operating-system-version-windows.md)</br>
+- [Il dispositivo non è conforme alla versione massima del sistema operativo](device-doesnt-comply-with-maximum-operating-system-version-windows.md)</br>
 - [BitLocker non è abilitato nel dispositivo](device-doesnt-have-bitlocker-enabled-windows.md)</br>
 - [Device doesn't have antimalware software enabled (Non sono abilitati software antimalware nel dispositivo)](device-doesnt-have-antimalware-software-enabled-windows.md)</br>
 - [Avvio protetto non è abilitato nel dispositivo](device-doesnt-have-secure-boot-enabled-windows.md)</br>
@@ -63,6 +64,6 @@ Le informazioni contenute in questa sezione consentono la risoluzione di problem
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Cosa succede se si annulla la registrazione del dispositivo da Intune?
 
-Quando si disinstalla l'app Portale aziendale dal dispositivo, viene anche annullata la registrazione del dispositivo da Intune. Per altre informazioni su ciò che accade, usare il collegamento che corrisponde al tipo di dispositivo in uso.
+Quando si disinstalla l'app Portale aziendale dal dispositivo, viene anche annullata la registrazione del dispositivo da Intune. Per altre informazioni su ciò che accade, usare il collegamento incluso nella sezione precedente "In questo articolo" corrispondente al tipo di dispositivo in uso.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 o Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -43,8 +43,7 @@ Quando si disinstalla l'app Portale aziendale dal dispositivo, viene anche annul
 
 -   Il software Intune Endpoint Protection verrà rimosso dal computer. Se nel computer è installato un altro software di protezione da virus che è disabilitato, sarà possibile abilitarlo di nuovo dopo aver rimosso Intune Endpoint Protection. Controllare il computer dopo che è stato rimosso dal Portale aziendale.
 
-    > [!IMPORTANT]
-    > Se l'altro software di protezione da virus non viene riabilitato o non sono installati altri software di protezione da virus, il computer potrebbe essere vulnerabile a virus e malware.
+    > [!IMPORTANT] Se l'altro software di protezione da virus non viene riabilitato o non sono installati altri software di protezione da virus, il computer potrebbe essere vulnerabile a virus e malware.
 
 -   Non saranno più applicabili le impostazioni che sono state modificate nel dispositivo quando è stato aggiunto, ad esempio la disattivazione della fotocamera.
 
@@ -97,6 +96,6 @@ Quando si rimuove il dispositivo Windows RT, si verifica quanto segue:
 ### Vedere anche
 [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Informazioni sui dispositivi con inventario in Microsoft Intune | Microsoft Intune
+title: Informazioni sui dispositivi con inventario | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,8 +66,7 @@ Per visualizzare l'inventario raccolto dai dispositivi mobili, eseguire i [Repor
 |**Crittografia abilitata**|Tutti i dispositivi|
 
 ## Inventario raccolto da PC Windows
-> [!IMPORTANT]
-> Questa sezione si applica solo ai PC Windows che eseguono il software client di PC Windows con Intune.
+> [!IMPORTANT] Questa sezione si applica solo ai PC Windows che eseguono il software client per PC Windows di Intune.
 
 Per visualizzare l'inventario raccolto dai PC Windows, eseguire [Report inventario computer](understand-microsoft-intune-operations-by-using-reports.md). Intune raccoglie l'inventario seguente dai PC Windows:
 
@@ -113,11 +112,12 @@ Per visualizzare l'inventario raccolto dai PC Windows, eseguire [Report inventar
 
 -   **Ultimo aggiornamento**
 
-### Vedere anche
-[Monitoraggio e report con Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+<!-- this section below belongs in the planning journey
+### See Also
+[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+-->
 
 
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

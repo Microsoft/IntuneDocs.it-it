@@ -29,10 +29,9 @@ ms.suite: ems
 # Configurare la gestione di Windows Phone e Windows 10 Mobile con Microsoft Intune
 Prima di poter gestire dispositivi Windows 10 Mobile o Windows Phone con Microsoft Intune, questi devono essere in grado di comunicare con Intune. Per semplificare l'operazione, è possibile creare un record DNS in modo che gli utenti non debbano immettere l'indirizzo del server. La procedura descritta di seguito illustra come semplificare la registrazione per gli utenti.  
 
-Per la maggior parte degli scenari, gli utenti possono installare l'app Portale aziendale da Windows Store. Se si gestiscono i dispositivi Windows Phone 8.0 o per distribuire il Portale aziendale nei dispositivi Windows Phone, è necessario anche scaricare e firmare l'app Portale aziendale. Vedere l'articolo relativo alla [configurazione della gestione di Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
+Per la maggior parte degli scenari, gli utenti possono installare l'app Portale aziendale da Windows Store. Se si gestiscono i dispositivi Windows Phone 8.0 o per distribuire il Portale aziendale nei dispositivi Windows Phone, è necessario anche scaricare e firmare l'app Portale aziendale. Vedere [Set up device management for Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md) (Configurazione della gestione di Windows Phone 8.0).
 
-1.  **Configurare Intune**
-    Se non è stato già fatto, preparare la gestione di dispositivi mobili (MDM) [impostando l'autorità di gestione di dispositivi mobili](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority), ad esempio **Microsoft Intune**, e configurando MDM.
+1.  **Configurare Intune** Se non è stato già fatto, preparare la gestione dei dispositivi mobili [impostando l'autorità di gestione dei dispositivi mobili](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) come **Microsoft Intune** e configurando MDM.
 
 2.  **Impostare un alias DNS per l'indirizzo del server di registrazione** (facoltativo)
 
@@ -51,7 +50,7 @@ Per la maggior parte degli scenari, gli utenti possono installare l'app Portale 
 
       **EnterpriseRegistration.windows.net**: supporta i dispositivi Windows 8.1 e Windows 10 Mobile che verranno registrati con Azure Active Directory tramite account aziendale o dell'istituto di istruzione
 
-    2.  Nella [console di amministrazione di Intune](http://manage.microsoft.com), fare clic su **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **Windows Phone**.
+    2.  Nella [console di amministrazione di Intune](http://manage.microsoft.com) fare clic su **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **Windows Phone**.
 
       ![Configurare la gestione dei dispositivi mobili per la finestra di dialogo Windows](../media/windows-device-enrollment.png)
 
@@ -59,9 +58,9 @@ Per la maggior parte degli scenari, gli utenti possono installare l'app Portale 
 
 
 
-Non è necessario alcun intervento aggiuntivo a meno che non venga distribuito il Portale aziendale nei dispositivi.  I passaggi 2, 3 e 4 nella console di amministrazione possono essere tranquillamente ignorati.
+Non è necessario alcun intervento aggiuntivo a meno che non venga distribuito il Portale aziendale nei dispositivi.  I passaggi 2 e 3 nella console di amministrazione possono essere ignorati.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

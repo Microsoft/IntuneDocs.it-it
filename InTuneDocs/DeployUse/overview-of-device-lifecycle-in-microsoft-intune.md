@@ -29,12 +29,12 @@ ms.suite: ems
 
 Il ciclo di vita del dispositivo Intune inizia con la registrazione iniziale di un dispositivo e quindi si snoda in vari passaggi che si concludono quando il dispositivo non è più necessario.
 
-![Ciclo di vita del dispositivo](./media/devicelifecycle_nobg.png "the Intune device lifecycle")
+![Ciclo di vita del dispositivo](./media/device-lifecycle.png "the Intune device lifecycle")
 
 ## Registrazione
-Le odierne strategie di gestione dei dispositivi mobili (MDM) riguardano una vasta gamma di telefoni, tablet e PC (iOS, Android, Windows e Mac OS X). Se è necessario essere in grado di gestire il dispositivo, come nel caso dei dispositivi aziendali, il primo passaggio consiste nella [registrazione del dispositivo](enroll-devices-in-microsoft-intune.md). È possibile gestire anche i PC Windows registrandoli con Intune (MDM) oppure [installando il software client di Intune](manage-windows-pcs-with-microsoft-intune.md)..
+Le odierne strategie di gestione dei dispositivi mobili (MDM) riguardano una vasta gamma di telefoni, tablet e PC (iOS, Android, Windows e Mac OS X). Se è necessario essere in grado di gestire il dispositivo, come nel caso dei dispositivi aziendali, il primo passaggio consiste nella [registrazione del dispositivo](enroll-devices-in-microsoft-intune.md). È anche possibile gestire i PC Windows registrandoli con Intune (MDM) oppure [installando il software client Intune](manage-windows-pcs-with-microsoft-intune.md).
 
-## Configurazione
+## Configura
 La registrazione dei dispositivi costituisce il primo passaggio. Per poter usufruire di tutte le offerte di Intune e verificare che i dispositivi siano protetti e conformi agli standard aziendali, è possibile scegliere tra una vasta gamma di **criteri** che consentono di configurare quasi ogni aspetto correlato al funzionamento dei dispositivi gestiti. Gli utenti devono, ad esempio, usare una password per i dispositivi che contengono dati aziendali? È possibile impostare questo requisito. È disponibile una Wi-Fi aziendale? È possibile configurarla automaticamente. Di seguito sono descritti i tipi di opzioni di configurazione disponibili:
 
 - [**Criteri di configurazione**](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md): questi criteri consentono di configurare il funzionamento delle caratteristiche e delle funzionalità dei dispositivi gestiti. Ad esempio, può essere necessario usare una password in Windows Phone o disabilitare l'uso della fotocamera su iPhone.
@@ -51,6 +51,6 @@ Al giorno d'oggi, la protezione dei dispositivi da accessi non autorizzati è un
 Quando un dispositivo viene smarrito o rubato, è necessario sostituirlo. Oppure quando gli utenti si spostano in un altro posto è in genere il caso di [ritirare o cancellare](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) il dispositivo. Esistono diversi modi per eseguire questa operazione dal ripristino del dispositivo, alla rimozione dalla gestione o alla cancellazione dei dati aziendali che contiene.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

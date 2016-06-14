@@ -27,15 +27,14 @@ ms.suite: ems
 
 # Portale aziendale di Microsoft Intune
 
-Prima di configurare [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], leggere questo argomento e gli altri requisiti elencati in [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+Prima di configurare [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] leggere questo argomento e gli altri requisiti elencati in [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 Il Portale aziendale di Intune è uno strumento che consente agli utenti l'accesso ai dati e alle app aziendali. Il Portale aziendale è disponibile in due forme:
 
--   **App Portale aziendale**: un'applicazione disponibile nei dispositivi gestiti con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Altre informazioni sull'app Portale aziendale per [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
-e [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
+-   **App Portale aziendale**: un'applicazione disponibile nei dispositivi gestiti con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Altre informazioni sulle app Portale aziendale per [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) e [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **Sito Web del portale aziendale**: sito Web che consente l'accesso da un [browser supportato](supported-web-browsers.md). L'URL è [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). Altre informazioni su questo sito Web nell'articolo [Uso del sito Web del Portale aziendale di Intune](/Intune/EndUser/using-the-intune-company-portal-website).
+- **Sito Web del portale aziendale**: sito Web che consente l'accesso da un [browser supportato](supported-web-browsers.md). L'URL è [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). Altre informazioni su questo sito Web nell'articolo [Uso del sito Web del Portale aziendale di Intune](/Intune/EndUser/using-the-intune-company-portal-website).
 
 Alcune attività che gli utenti possono eseguire nel Portale aziendale sono:
 
@@ -59,6 +58,6 @@ Prima che un utente possa accedere al Portale aziendale, all'account corrisponde
 [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

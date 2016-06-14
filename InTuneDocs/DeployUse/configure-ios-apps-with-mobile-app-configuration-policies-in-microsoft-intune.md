@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune | Microsoft Intune
+title: Configurare le app iOS con i criteri di configurazione delle app mobili | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -42,13 +42,12 @@ I criteri di configurazione delle app mobili permettono di evitare questi proble
 
 Questi criteri non vengono distribuiti direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi distribuita. Le impostazioni dei criteri vengono usate ogni volta che l'app ne esegue la ricerca (in genere, alla prima esecuzione).
 
-> [!TIP]
-> Questo tipo di criteri è attualmente disponibile solo per i dispositivi che eseguono iOS 7.1 e versioni successive e supporta i tipi di installazione di app seguenti:
+> [!TIP] Questo tipo di criteri è attualmente disponibile solo per i dispositivi che eseguono iOS 7.1 e versioni successive e supporta i tipi di installazione di app seguenti:
 > 
 > -   **App iOS gestita dall'App Store**
 > -   **Pacchetto app per iOS**
 > 
-> Per altre informazioni sui tipi di installazione delle app, vedere [Distribuire app con Microsoft Intune](deploy-apps.md).
+> Per altre informazioni sui tipi di installazione delle app, vedere [Distribuire le app con Microsoft Intune](deploy-apps.md)
 
 ## Configurare un criterio di configurazione delle app mobili
 
@@ -63,8 +62,7 @@ Questi criteri non vengono distribuiti direttamente agli utenti e ai dispositivi
 
 4.  Nella sezione **Criterio di configurazione delle app per dispositivi mobili** della pagina immettere o incollare un elenco di proprietà XML contenente le impostazioni di configurazione delle app desiderate.
 
-    > [!TIP]
-    > Per altre informazioni sugli elenchi di proprietà XML, vedere l'articolo relativo agli [elenchi di proprietà XML](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) nella libreria degli sviluppatori iOS.
+    > [!TIP] Per altre informazioni sugli elenchi di proprietà XML, vedere [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Informazioni sugli elenchi di proprietà XML) nella iOS Developer Library.
     > 
     > Il formato dell'elenco di proprietà XML varia a seconda dell'app da configurare. Per altre informazioni sul formato esatto da usare, contattare il fornitore dell'app.
     > 
@@ -72,8 +70,8 @@ Questi criteri non vengono distribuiti direttamente agli utenti e ai dispositivi
     > 
     > &lt;integer&gt;
     > &lt;real&gt;
-    > &lt;stringa&gt;
-    > &lt;matrice&gt;
+    > &lt;string&gt;
+    > &lt;array&gt;
     > &lt;dict&gt;
     > &lt;true /&gt; o &lt;false /&gt;
     > 
@@ -81,15 +79,7 @@ Questi criteri non vengono distribuiti direttamente agli utenti e ai dispositivi
     >
         > Intune supporta anche i tipi di token seguenti nell'elenco di proprietà:
     >    
-    > \{\{userprincipalname\}\} - (Esempio: **John@contoso.com**)
-    > \{\{mail\}\} - (Esempio: **John@contoso.com**)
-    > \{\{partialupn\}\} - (Esempio: **John**)
-    > \{\{accountid\}\} - (Esempio: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-    > \{\{deviceid\}\} - (Esempio: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-    > \{\{userid\}\} - (Esempio: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-    > \{\{username\}\} - (Esempio: **John Doe**)
-    > \{\{serialnumber\}\} - (Esempio: **F4KN99ZUG5V2**) per i dispositivi iOS
-    > \{\{serialnumberlast4digits\}\} - (Esempio: **G5V2**) per i dispositivi iOS
+    > \{\{userprincipalname\}\} - (esempio: **John@contoso.com**) \{\{mail\}\} - (esempio: **John@contoso.com**) \{\{partialupn\}\} - (esempio: **John**) \{\{accountid\}\} - (esempio: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**) \{\{deviceid\}\} - (esempio: **b9841cd9-9843-405f-be28-b2265c59ef97**) \{\{userid\}\} - (esempio: **3ec2c00f-b125-4519-acf0-302ac3761822**) \{\{username\}\} - (esempio: **John Doe**) \{\{serialnumber\}\} - (esempio: **F4KN99ZUG5V2**) per dispositivi iOS \{\{serialnumberlast4digits\}\} - (esempio: **G5V2**) per dispositivi iOS
 >
 > I caratteri \{\{ e \}\} vengono usati solo dai tipi di token e non devono essere usati per altri scopi.
 
@@ -114,8 +104,7 @@ Continuare quindi a distribuire e monitorare la distribuzione dell'app come di c
 
 Quando l'app distribuita viene eseguita in un dispositivo, verrà eseguita con le impostazioni configurate nel criterio di configurazione delle app mobili.
 
-> [!TIP]
-> Se uno o più criteri di configurazione delle app sono in conflitto, nessun criterio viene applicato e il conflitto viene riportato nel **Dashboard** della console di amministrazione di Intune.
+> [!TIP] Se uno o più criteri di configurazione delle app sono in conflitto, nessun criterio viene applicato e il conflitto viene riportato nel **Dashboard** della console di amministrazione di Intune
 
 ## Formato di esempio per file XML di configurazione delle app per dispositivi mobili
 
@@ -150,6 +139,6 @@ Quando si crea un file di configurazione delle app per dispositivi mobili, è po
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

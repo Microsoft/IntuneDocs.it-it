@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Requisiti dell'infrastruttura di rete per Microsoft Intune
-Prima di configurare Microsoft Intune, leggere questo argomento e i requisiti indicati nelle [informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+Prima di configurare Microsoft Intune leggere questo argomento e gli altri requisiti indicati in [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 Questo argomento descrive i requisiti che consentono all'infrastruttura di rete di passare le comunicazioni tra i dispositivi gestiti e usati per gestire la sottoscrizione a Intune e i siti Web su Internet usati dal servizio basato sul cloud.
 
@@ -169,20 +169,10 @@ Per gestire i computer protetti da un server proxy, occorre ricordare quanto seg
 È anche possibile usare un server proxy che memorizza il contenuto nella cache per [ridurre la larghezza di banda di rete](network-bandwidth-use.md) usata dai client di Intune.
 
 
-
-## Requisiti per Service to Service Connector
-Service to Service Connector supporta solo Exchange basato su cloud e non presenta requisiti per l'infrastruttura locale.
-
-Per usare questo connettore devono essere soddisfatti i seguenti requisiti:
-
--   Si deve disporre di una sottoscrizione di Office 365 con un tenant Exchange Server 2013. Se il tenant è Exchange Server 2013, il connettore supporta Exchange Server 2010 nello stesso ambiente.
-
--   L'account utente usato per installare On-Premises Connector deve essere un amministratore tenant per Intune e un amministratore nel tenant di Exchange con una licenza per usare Exchange Server 2013.
-
 ### Vedere anche
 [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

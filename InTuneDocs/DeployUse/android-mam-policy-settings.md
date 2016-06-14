@@ -61,10 +61,11 @@ Il termine **App gestite da criteri** viene usato per indicare le app che sono c
 
   Per i dispositivi non registrati in Intune, i collegamenti Web delle app gestite da criteri vengono aperti nell'app Managed Browser solo usando i criteri di gestione delle app mobili.
 
-  Se si usa Intune per gestire i dispositivi, vedere [Gestire l'accesso a Internet usando i criteri di Managed Browser con Microsoft Intune](manage-internet-access-using-managed-browser-policies.md)..
+  Se si usa Intune per gestire i dispositivi, vedere [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md) (Gestire l'accesso a Internet usando criteri di Managed Browser con Microsoft Intune).
 
     **Valore predefinito = Sì**
 - **Crittografa dati app**: scegliere **Sì** per abilitare la crittografia. Quando quest'impostazione è abilitata, per le app associate ai criteri di gestione delle app mobili, la crittografia viene offerta da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O file. Il contenuto nell'archivio del dispositivo è sempre crittografato.
+  >[!NOTE] Il metodo di crittografia non è conforme agli standard FIPS 140-2.
 
   **Valore predefinito = Sì**
 
@@ -75,12 +76,13 @@ Il termine **App gestite da criteri** viene usato per indicare le app che sono c
 ##  Impostazioni dei criteri di accesso di Android
 Il termine **App gestite da criteri** viene usato per indicare le app che sono configurate con criteri MAM
 
-- **Richiedi PIN semplice per l'accesso:** scegliere **Sì** per richiedere un PIN per l'uso di app gestite da criteri. All'utente viene richiesto di impostare questo numero alla prima esecuzione dell'app in un contesto aziendale.
+- **Richiedi PIN per l'accesso:** scegliere **Sì** per richiedere un PIN per l'uso di app gestite da criteri. All'utente viene richiesto di impostare questo numero alla prima esecuzione dell'app in un contesto aziendale.
 
  **Valore predefinito = Sì**
-- **Numero di tentativi prima della reimpostazione del PIN:** specificare il numero di tentativi di immissione del PIN che è possibile effettuare prima che all'utente venga richiesto di reimpostare il PIN.
 
- **Non esiste alcun valore predefinito per questa impostazione.**
+ -  **Consenti PIN semplice:** specificare se consentire agli utenti di usare sequenze PIN semplici, come 1234 o 1111. **Valore predefinito = Sì**.
+ - **Lunghezza PIN**: specificare il numero minimo di cifre in un PIN. **Valore predefinito = 4**
+ - **Numero di tentativi prima della reimpostazione del PIN:** specificare il numero di tentativi di immissione del PIN che è possibile effettuare prima che all'utente venga richiesto di reimpostare il PIN. **Non esiste alcun valore predefinito per questa impostazione.**
 - **Richiedi credenziali aziendali per l'accesso**: scegliere **Sì** per richiedere l'identificazione con credenziali aziendali invece di un codice PIN per accedere all'app.  Se questa opzione è impostata su **Sì**, ha la priorità sulle richieste di PIN o ID tocco.  All'utente verrà richiesto di fornire le credenziali aziendali.
 
   **Valore predefinito = No**
@@ -98,6 +100,6 @@ Il termine **App gestite da criteri** viene usato per indicare le app che sono c
 - **Blocca acquisizione schermo e Assistente per Android (Android 6 Marshmallow o versione successiva):** scegliere **Sì** per bloccare le funzionalità di acquisizione schermo e dell'**Assistente per Android** del dispositivo quando si usa l'app.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

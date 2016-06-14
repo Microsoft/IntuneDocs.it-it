@@ -26,22 +26,60 @@ ms.suite: ems
 ---
 
 # Versioni precedenti di Intune
+
+## Aprile 2016
+Tutte queste funzionalità sono supportate anche per i clienti ibridi (Configuration Manager con Intune).
+### Gestione delle app
+- **Conformità utente MAM.**
+È ora possibile visualizzare lo [stato](monitor-mobile-app-management-policies-with-Microsoft-Intune.md) dei criteri di gestione delle applicazioni per ogni utente del tenant Azure Active Directory (AAD). Sono inclusi:
+   - Dispositivi
+   - App sul dispositivo
+
+   Valori di stato:
+
+   **Archiviato**: indica che il criterio è stato distribuito all'utente, l'app è stata usata nel contesto di lavoro e ha ricevuto correttamente i criteri.
+
+    **Non archiviato**: indica che il criterio è stato distribuito all'utente, ma da quel momento l'app non è mai stata usata nel contesto di lavoro.
+
+
+- **MAM controlla per impedire la sincronizzazione dei contatti di Outlook (Android).**
+È disponibile una nuova impostazione per la [gestione delle applicazioni per dispositivi mobili](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) senza registrazione del dispositivo. Questa impostazione consente di impedire a un'applicazione di sincronizzare i contatti con la rubrica nativa nei dispositivi Android. Quando l'impostazione è abilitata, le applicazioni di destinazione non possono più salvare i contatti nella rubrica nativa. Quando l'impostazione è disabilitata, le applicazioni di destinazione possono salvare i contatti nella rubrica nativa. Quando [si cancella un dispositivo o un'app da remoto](wipe-managed-company-app-data-with-Microsoft-Intune.md), tutti i contatti che sono già stati salvati nella rubrica nativa vengono rimossi. Questa nuova impostazione è supportata inizialmente dall'applicazione Outlook sui dispositivi Android.
+
+### Gestione dei dispositivi
+- **Identificazione del numero di telefono per i dispositivi aziendali.** I telefoni classificati come "aziendali" sono ora identificati con il loro numero di telefono completo quando, per esempio, si esegue un report inventario dei dispositivi mobili. I numeri di telefono BYOD continuano a essere mascherati con **** mostrando solo le ultime 4 cifre.
+
+
+### Aggiornamenti del Portale aziendale
+Gli utenti di **app del Portale aziendale Android** che non hanno registrato il loro dispositivo in Intune e non hanno il certificato corretto installato non potranno accedere all'app del Portale aziendale Android e vedranno il messaggio "Non è possibile accedere. Manca un certificato necessario per il dispositivo". Il messaggio include il collegamento “Risoluzione del problema” che gli utenti possono usare per vedere le istruzioni per l'installazione del certificato. Per i passaggi che gli utenti finali devono eseguire per risolvere il problema vedere [Manca un certificato necessario per il dispositivo](https://technet.microsoft.com/library/mt502762.aspx#BKMK_andr_cert_missing).
+
+**App Portale aziendale iOS** È stato aggiunto il supporto per l'azione di scorrimento per aggiornare il contenuto della schermata iniziale, che include le app e i dispositivi elencati e le informazioni di contatto IT. L'azione di scorrimento per l'aggiornamento non controlla la conformità o le informazioni sui criteri, cosa che si può fare selezionando il riquadro per il dispositivo corrente e toccando il pulsante **Sincronizza**.
+
+**App Portale aziendale per Windows 10 Mobile e Windows Phone 8.1** Il processo di installazione delle app line-of-business è stato migliorato. Se l'installazione delle app richiede molto tempo, gli utenti possono sincronizzare manualmente il dispositivo per forzare la ripresa del processo di sincronizzazione. Per le istruzioni per l'utente finale, vedere [Sincronizzare il dispositivo manualmente per velocizzare l'installazione delle app](https://technet.microsoft.com/library/mt427782.aspx#BKMK_win10m_wp81_sync_manually).
+
+**Sito Web Portale aziendale** Durante l'installazione delle app line-of-business, gli utenti di Windows 10 Mobile e Windows Phone 8.1 vedranno ora i seguenti stati nuovi, che specificano maggiori dettagli sullo stato della loro installazione:
+
+* **In attesa della sincronizzazione del dispositivo**: l'utente ha toccato “Installa” e il dispositivo ora tenta di sincronizzarsi con l'infrastruttura Intune. La sincronizzazione è necessaria per poter completare l'installazione. Il messaggio "In attesa della sincronizzazione del dispositivo" è anche un collegamento che gli utenti possono toccare per vedere le [istruzioni](https://technet.microsoft.com/library/mt590895.aspx#BKMK_iwp_sync_manually) per sincronizzare manualmente il dispositivo con Intune, se il processo di sincronizzazione impiega troppo tempo o si blocca.
+* **Download in corso**: la richiesta di download dell'utente è in fase di elaborazione e il dispositivo sta scaricando e installando l'app.
+
+Prima dell'aggiunta di questi stati, gli utenti potevano essere confusi se l'installazione di un'app impiegava molto tempo, poiché vedevano solo lo stato "Installazione in corso", che poteva rimanere visualizzata sullo schermo per ore. Grazie all'aggiunta dei nuovi stati gli utenti, invece di chiamare il supporto, possono ora toccare il collegamento "In attesa della sincronizzazione del dispositivo" e seguire le istruzioni per forzare la ripresa del processo di sincronizzazione.
+
+
 ## Marzo 2016
 ### Novità a partire dal 29 marzo 2016
 Fatta eccezione per l'aggiornamento dei criteri di configurazione generale di Windows 10, tutte le funzionalità della versione del 29 marzo 2016 sono supportate anche per i clienti ibridi (Configuration Manager con Intune). Il supporto ibrido per l'aggiornamento dei criteri di configurazione generale di Windows 10 sarà presto disponibile. Tenere presente che alcune di queste funzionalità richiedono l'ultima versione di Configuration Manager.
 
 ### Gestione delle app
-- **MAM controlla per impedire la sincronizzazione dei contatti di Outlook (iOS).** È disponibile una nuova impostazione per la gestione delle applicazioni mobili senza registrazione del dispositivo. Questa impostazione consente di impedire a un'applicazione di sincronizzare i contatti con la rubrica nativa nei dispositivi iOS. Quando l'impostazione è abilitata, l'applicazione non potrà più salvare i contatti nella rubrica nativa. Quando l'impostazione è disabilitata, l'applicazione potrà salvare i contatti nella rubrica nativa. Quando si cancella un dispositivo in modo selettivo, tutti i contatti che sono già stati salvati nella rubrica nativa vengono rimossi. Questa nuova impostazione è supportata dall'applicazione Outlook sui dispositivi iOS. Per informazioni dettagliate su questa e altre impostazioni, vedere l'argomento relativo alla [creazione e distribuzione di criteri MAM](https://technet.microsoft.com/en-us/library/dn292747.aspx)..
+- **MAM controlla per impedire la sincronizzazione dei contatti di Outlook (iOS).** È disponibile una nuova impostazione per la gestione delle applicazioni mobili senza registrazione del dispositivo. Questa impostazione consente di impedire a un'applicazione di sincronizzare i contatti con la rubrica nativa nei dispositivi iOS. Quando l'impostazione è abilitata, l'applicazione non potrà più salvare i contatti nella rubrica nativa. Quando l'impostazione è disabilitata, l'applicazione potrà salvare i contatti nella rubrica nativa. Quando si cancella un dispositivo in modo selettivo, tutti i contatti che sono già stati salvati nella rubrica nativa vengono rimossi. Questa nuova impostazione è supportata dall'applicazione Outlook sui dispositivi iOS. Per informazioni dettagliate su questa e altre impostazioni, vedere [Creare e distribuire i criteri MAM](https://technet.microsoft.com/en-us/library/dn292747.aspx).
 
 ### Controllo di accesso
-- **Skype for Business Online supporta l'accesso condizionale.** È possibile impostare un criterio di accesso condizionale per Skype for Business Online in modo che sia accessibile solo da dispositivi iOS e Android gestiti e conformi. Agli utenti finali che tentano di accedere all'applicazione per dispositivi mobili Skype for Business in iOS e Android sarà chiesto di registrarsi con Intune e di risolvere eventuali problemi di non conformità per poter completare l'accesso. Per informazioni dettagliate, vedere l'argomento relativo alla [gestione dell'accesso a Skype for Business Online](https://technet.microsoft.com/en-us/library/mt695297.aspx)..
+- **Skype for Business Online supporta l'accesso condizionale.** È possibile impostare un criterio di accesso condizionale per Skype for Business Online in modo che sia accessibile solo da dispositivi iOS e Android gestiti e conformi. Agli utenti finali che tentano di accedere all'applicazione per dispositivi mobili Skype for Business in iOS e Android sarà chiesto di registrarsi con Intune e di risolvere eventuali problemi di non conformità per poter completare l'accesso. Per informazioni dettagliate, vedere [Gestione dell'accesso a Skype for Business Online](https://technet.microsoft.com/en-us/library/mt695297.aspx).
 
 ### Gestione dei dispositivi
-- **Supporto Intune per iOS 9.3.** Lunedì 21 marzo Apple ha annunciato la disponibilità di iOS 9.3. Microsoft ha dedicato il massimo impegno ad assicurare la compatibilità di Microsoft Intune con la versione più recente del sistema operativo mobile di Apple ed [è lieta di annunciare che Intune supporta la gestione dei dispositivi iOS 9.3](https://blogs.technet.microsoft.com/microsoftintune/2016/03/23/microsoft-intune-provides-support-for-ios-9-3/)..
+- **Supporto Intune per iOS 9.3.** Lunedì 21 marzo Apple ha annunciato la disponibilità di iOS 9.3. Microsoft ha dedicato il massimo impegno a garantire la compatibilità di Microsoft Intune con la versione più recente del sistema operativo mobile di Apple ed [è lieta di annunciare che Intune supporta la gestione dei dispositivi iOS 9.3](https://blogs.technet.microsoft.com/microsoftintune/2016/03/23/microsoft-intune-provides-support-for-ios-9-3/).
 
   Tutte le funzionalità Intune esistenti attualmente disponibili per la gestione dei dispositivi iOS continueranno a funzionare senza problemi quando gli utenti aggiorneranno i dispositivi a iOS 9.3. Inoltre, iOS 9.3 è oggi supportato anche per i clienti ibridi (Configuration Manager con Intune).
 
-- **I criteri di configurazione generale di Windows 10 includono ora impostazioni per la gestione di Windows Defender su PC Windows 10 registrati.** Per informazioni dettagliate, vedere [Impostazioni di criteri di configurazione di Windows 10 in Microsoft Intune](https://technet.microsoft.com/en-us/library/mt404697.aspx)..
+- **I criteri di configurazione generale di Windows 10 includono ora impostazioni per la gestione di Windows Defender su PC Windows 10 registrati.** Per informazioni dettagliate vedere [Impostazioni di criteri di configurazione di Windows 10 in Microsoft Intune](https://technet.microsoft.com/en-us/library/mt404697.aspx).
 
 
 ### Portale aziendale
@@ -65,8 +103,7 @@ Fatta eccezione per l'aggiornamento dei criteri di configurazione generale di Wi
 
 ### Gestione delle app
 
-- **Sfruttare i vantaggi della gestione "Open-In" di iOS per i dispositivi registrati in una soluzione MDM di terze parti**
-È possibile usare il proprio fornitore di gestione di dispositivi mobili (MDM) di terze parti per sfruttare i vantaggi della gestione "Open-In" di iOS. È possibile impostare le restrizioni nelle impostazioni del profilo di configurazione e distribuire l'app usando le istruzioni riportate nell'argomento relativo alla [gestione del trasferimento di dati tra app iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
+- **Vantaggi della gestione "Open-In" di iOS per dispositivi registrati in una soluzione MDM di terze parti** È possibile usare il proprio fornitore di gestione dei dispositivi mobili di terze parti (MDM) per godere dei vantaggi della gestione "Open-In"di iOS. È possibile impostare le restrizioni nelle impostazioni del profilo di configurazione e distribuire l'app usando le istruzioni in [Gestire il trasferimento di dati tra app iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
      Questo approccio presenta due vantaggi principali:
 
@@ -74,32 +111,25 @@ Fatta eccezione per l'aggiornamento dei criteri di configurazione generale di Wi
 
      2. I profili di posta elettronica gestiti e altre app gestite distribuite con una soluzione MDM di terze parti possono condividere file e dati con le app che hanno criteri MAM di Intune.
 
-- **Gestire l'app Microsoft Outlook con i criteri MAM per i dispositivi non registrati in Intune**
-È ora possibile gestire l'app Microsoft Outlook su dispositivi che non sono registrati in Intune con i criteri di gestione delle applicazioni mobili di Intune. L'app Microsoft Outlook aggiornata con le funzionalità MAM è disponibile per i dispositivi [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) e [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook). Usare le istruzioni nell'argomento [Creare e distribuire i criteri di gestione delle app per dispositivi mobili](https://technet.microsoft.com/library/mt627829.aspx) per creare un criterio MAM.  
+- **Gestire l'app Microsoft Outlook con criteri MAM per dispositivi non registrati in Intune** Ora è possibile gestire l'app Microsoft Outlook su dispositivi non registrati in Intune con i criteri di gestione delle applicazioni mobili di Intune. L'app Microsoft Outlook aggiornata con le funzionalità MAM è disponibile per i dispositivi [iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) e [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook). Usare le istruzioni nell'argomento [Creare e distribuire i criteri di gestione delle app per dispositivi mobili](https://technet.microsoft.com/library/mt627829.aspx) per creare un criterio MAM.  
 
 
-- **I criteri di configurazione di app per dispositivi mobili consentono una maggiore flessibilità quando si specificano i dettagli dell'utente per le app iOS**
-È possibile fornire le impostazioni utente necessarie a un'app iOS quando viene aperta. Ad esempio, è possibile specificare una porta di rete o un nome utente. Per informazioni dettagliate, vedere [Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)..
+- **I criteri di configurazione delle app per dispositivi mobili offrono più flessibilità per specificare i dettagli utente per le app iOS** È possibile specificare le impostazioni utente che possono risultare necessarie a un'app iOS quando viene aperta. Ad esempio, è possibile specificare una porta di rete o un nome utente. Per informazioni dettagliate vedere [Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).
 
 
-- **Distribuire Adobe Reader per Microsoft Intune nei dispositivi iOS gestiti da Intune nell'organizzazione**
-L'app Adobe Reader per iOS può ora essere gestita nei dispositivi registrati con i criteri di gestione delle applicazioni mobili di Intune.
+- **Distribuire Adobe Reader per Microsoft Intune nei dispositivi iOS aziendali gestiti da Intune** Ora è possibile gestire l'app Adobe Reader iOS su dispositivi registrati con i criteri di gestione delle applicazioni mobili di Intune.
 
-- **Assicurarsi che le clip Web distribuite vengano aperte in Managed Browser**
-È possibile distribuire le clip Web specificate che possono essere aperte solo con Managed Browser in dispositivi iOS e Android. Ad esempio, se si distribuiscono i collegamenti alle risorse aziendali con il portale aziendale, quando gli utenti accedono ai collegamenti li aprono direttamente in Managed Browser, dove possono essere protetti con i criteri MAM. Per informazioni dettagliate, vedere [Distribuire le app](deploy-apps.md)..
+- **Verificare che le clip Web distribuite vengano aperte in Managed Browser** È possibile distribuire clip Web specifiche che possono essere aperte solo con Managed Browser nei dispositivi iOS e Android. Ad esempio, se si distribuiscono i collegamenti alle risorse aziendali con il portale aziendale, quando gli utenti accedono ai collegamenti li aprono direttamente in Managed Browser, dove possono essere protetti con i criteri MAM. Per informazioni dettagliate vedere [Distribuire le app](deploy-apps.md).
 
 
-- **Trovare, gestire e distribuire le app di Windows Store per le aziende per i dispositivi Windows 10 dalla console di amministrazione di Intune**
-In Intune è disponibile il supporto per Windows Store per le aziende che consente di trovare, gestire e distribuire le app nei dispositivi Windows 10 gestiti. Windows Store per le aziende consente di gestire il processo di distribuzione e monitoraggio di queste app dalla console di amministrazione di Intune, la stessa console usata per gestire le altre app. In particolare, Windows Store per le aziende gestisce i contenuti e le licenze delle app con licenze online. Per informazioni dettagliate, vedere [Gestire le app acquistate in Windows Store per le aziende](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)..
+- **Trovare, gestire e distribuire app Windows Store for Business per dispositivi Windows 10 dalla console di amministrazione di Intune** In Intune è disponibile il supporto per Windows Store for Business, che consente di trovare, gestire e distribuire app ai dispositivi Windows 10 gestiti. Windows Store per le aziende consente di gestire il processo di distribuzione e monitoraggio di queste app dalla console di amministrazione di Intune, la stessa console usata per gestire le altre app. In particolare, Windows Store per le aziende gestisce i contenuti e le licenze delle app con licenze online. Per informazioni dettagliate vedere [Gestire le app acquistate in Windows Store for Business](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md).
 
 
 ### Gestione dei dispositivi
-- **Distribuzione di certificati PFX per i dispositivi iOS**
-Gli amministratori di Intune possono creare e distribuire i certificati PFX di iOS per il Wi-Fi, la posta elettronica e l'autenticazione VPN nei dispositivi iOS. Questa funzionalità è già disponibile per i dispositivi Android e Windows 10. Per informazioni dettagliate, vedere [Abilitare l'accesso alle risorse aziendali usando i profili certificato](secure-resource-access-with-certificate-profiles.md)..
+- **Distribuzione di certificati PFX per dispositivi iOS** Gli amministratori di Intune possono creare e distribuire certificati PFX di iOS per Wi-Fi, posta elettronica e autenticazione VPN nei dispositivi iOS. Questa funzionalità è già disponibile per i dispositivi Android e Windows 10. Per informazioni dettagliate vedere [Abilitare l'accesso alle risorse aziendali usando i profili certificato](secure-resource-access-with-certificate-profiles.md).
 
 
-- **Applicare app e criteri ai diversi gruppi di dispositivi in base alla selezione della categoria utente**
-A questo punto, gli amministratori di Intune possono definire le categorie di dispositivi personalizzate che gli utenti possono selezionare durante la registrazione. Ad esempio, gli amministratori possono consentire agli utenti di specificare se il dispositivo che stanno registrando viene usato per operazioni relative a "Registratore di cassa", "Camion per le consegne" o "Inventario". La selezione della categoria comporta l'inserimento del dispositivo come membro di un gruppo di dispositivi di Intune, che può essere usato per la distribuzione di diverse app e criteri al dispositivo registrato. Per informazioni dettagliate, vedere [Classificare i dispositivi con il mapping del gruppo di dispositivi](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)..
+- **Applicare app e criteri a gruppi di dispositivi diversi in base alla selezione di categorie utente** Gli amministratori di Intune possono ora definire categorie di dispositivi personalizzate selezionabili dagli utenti durante la registrazione. Ad esempio, gli amministratori possono consentire agli utenti di specificare se il dispositivo che stanno registrando viene usato per operazioni relative a "Registratore di cassa", "Camion per le consegne" o "Inventario". La selezione della categoria comporta l'inserimento del dispositivo come membro di un gruppo di dispositivi di Intune, che può essere usato per la distribuzione di diverse app e criteri al dispositivo registrato. Per informazioni dettagliate vedere [Classificare i dispositivi con il mapping del gruppo di dispositivi](categorize-devices-with-device-group-mapping-in-microsoft-intune.md).
 
 ### Modifiche e aggiornamenti del portale aziendale Microsoft
 In questa versione sono state apportate le modifiche seguenti al portale aziendale.
@@ -137,8 +167,7 @@ In questa versione sono state apportate le modifiche seguenti al portale azienda
 ## Gennaio 2016
 
 ### Sfruttare le funzionalità di Windows 10
-* **Accesso condizionale con il servizio di attestazione dell'integrità**
-Gli amministratori possono ora visualizzare lo stato di attestazione dell'integrità dei dispositivi Windows 10 nella console di amministrazione di Intune. L'attestazione dell'integrità dei dispositivi consente all'amministratore di assicurare che i computer client dispongano di configurazioni attendibili di BIOS, TPM e software di avvio. Per supportare l'attestazione dell'integrità dei dispositivi, i dispositivi client devono eseguire Windows 10 con TPM 2 abilitato. L'attestazione dell'integrità dei dispositivi visualizza il numero di dispositivi abilitati per ognuno degli elementi seguenti:
+* **Accesso condizionale con il servizio di attestazione dell'integrità** Gli amministratori possono ora visualizzare lo stato di attestazione dell'integrità dei dispositivi Windows 10 nella console di amministrazione di Intune. L'attestazione dell'integrità dei dispositivi consente all'amministratore di assicurare che i computer client dispongano di configurazioni attendibili di BIOS, TPM e software di avvio. Per supportare l'attestazione dell'integrità dei dispositivi, i dispositivi client devono eseguire Windows 10 con TPM 2 abilitato. L'attestazione dell'integrità dei dispositivi visualizza il numero di dispositivi abilitati per ognuno degli elementi seguenti:
     * Antimalware ad esecuzione anticipata
     * BitLocker
     * Avvio protetto
@@ -146,14 +175,11 @@ Gli amministratori possono ora visualizzare lo stato di attestazione dell'integr
 
     Per altre informazioni sull'attestazione dell'integrità del dispositivo, sui punti dati raccolti e sul report di attestazione dell'integrità, leggere [Gestire i criteri di conformità del dispositivo per Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md). L'articolo relativo al [servizio HAS](https://msdn.microsoft.com/en-us/library/dn934876.aspx) ne illustra le caratteristiche in modo approfondito.
 
-* **Gestione criteri e certificati di Microsoft Passport for Work per Windows 10**
-Con Intune è possibile [eseguire l'integrazione con Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md), un metodo di accesso alternativo per Windows 10 che usa Active Directory o un account Azure Active Directory per sostituire una password, una smart card o una smart card virtuale. Passport consente di eseguire l'accesso usando un movimento dell'utente, anziché una password. Un movimento dell'utente può essere un PIN semplice, l'autenticazione biometrica come Windows Hello o un dispositivo esterno come un lettore di impronte digitali.
+* **Criteri Passport for Work e gestione dei certificati in Windows 10** Con Intune è possibile [eseguire l'integrazione con Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md), un metodo di accesso alternativo per Windows 10 che usa Active Directory o un account Azure Active Directory per sostituire una password, una smart card o una smart card virtuale. Passport consente di eseguire l'accesso usando un movimento dell'utente, anziché una password. Un movimento dell'utente può essere un PIN semplice, l'autenticazione biometrica come Windows Hello o un dispositivo esterno come un lettore di impronte digitali.
 
-* **VPN per app specifiche**
-È possibile selezionare app che si connettono automaticamente alla rete aziendale tramite VPN. Creare l'elenco di app quando si configura il profilo VPN, come descritto in Consentire agli utenti di connettersi al proprio lavoro tramite profili VPN con Microsoft Intune.
+* **VPN per app specifiche** È possibile selezionare app che si connettono automaticamente alla rete aziendale tramite VPN. Creare l'elenco di app quando si configura il profilo VPN, come descritto in Consentire agli utenti di connettersi al proprio lavoro tramite profili VPN con Microsoft Intune.
 
-* **Supporto di Cancellazione completa di Windows 10**
-È ora possibile eseguire una cancellazione remota completa nei dispositivi desktop Windows 10 registrati in Intune con la console di amministrazione di Intune. La cancellazione completa di Windows 10 esegue un ripristino delle impostazioni predefinite del dispositivo.
+* **Supporto della cancellazione completa di Windows 10** È ora possibile eseguire una cancellazione remota completa nei dispositivi desktop Windows 10 registrati in Intune con la console di amministrazione di Intune. La cancellazione completa di Windows 10 esegue un ripristino delle impostazioni predefinite del dispositivo.
 
 
 ### Aggiornamento di Volume Purchase Program (VPP) di Apple
@@ -188,7 +214,7 @@ Per informazioni dettagliate su questi due messaggi vedere le tabelle seguenti.
 
 Testo del messaggio  |Consentire a Portale aziendale di effettuare e gestire chiamate telefoniche?  
 ---------|---------
-Significato del messaggio     |  Consente l'invio del numero di telefono e del codice IMEI del dispositivo dell'utente al servizio Intune e la relativa visualizzazione nella console di amministrazione nella pagina Hardware.   </br></br>**NOTA: l'app Portale aziendale non effettua o gestisce mai chiamate telefoniche.** Il testo del messaggio è controllato da Google e non può essere modificato. </br></br>Per visualizzare la pagina **Hardware**, accedere a **Gruppi** > **Tutti i dispositivi mobili** > **Dispositivi**. Selezionare il dispositivo dell'utente e passare a **Visualizza proprietà** > **Hardware**..    
+Significato del messaggio     |  Consente l'invio del numero di telefono e del codice IMEI del dispositivo dell'utente al servizio Intune e la relativa visualizzazione nella console di amministrazione nella pagina Hardware.   </br></br>**NOTA: l'app Portale aziendale non effettua o gestisce mai chiamate telefoniche.** Il testo del messaggio è controllato da Google e non può essere modificato. </br></br>Per visualizzare la pagina **Hardware**, accedere a **Gruppi** > **Tutti i dispositivi mobili** > **Dispositivi**. Selezionare il dispositivo dell'utente e passare a **Visualizza proprietà** > **Hardware**.    
 Dove e quando viene visualizzato il messaggio  | Il messaggio viene visualizzato quando l'utente accede per la prima volta all'app Portale aziendale per iniziare la registrazione del dispositivo.|         
 Cosa accade se gli utenti consentono l'accesso  |  Il numero di telefono e il codice IMEI del dispositivo verranno visualizzati nella pagina Hardware nella console di amministrazione. |         
 Cosa accade se gli utenti negano l'accesso     | Possono continuare a usare l'app Portale aziendale e registrare il dispositivo, ma il numero di telefono e il codice IMEI del loro dispositivo non compariranno nella pagina Hardware nella console di amministrazione.       </br></br> Al secondo accesso all'app Portale aziendale dopo aver negato l'accesso, nel messaggio sarà visualizzata la casella di controllo **Non visualizzare più questo messaggio** che gli utenti potranno selezionare per evitare di visualizzare di nuovo il messaggio.</br></br>Se gli utenti consentono l'accesso e in seguito lo negano, il messaggio verrà visualizzato al successivo accesso all'app Portale aziendale dopo la registrazione.</br></br>Se si decide di consentire l'accesso in un secondo momento, passare a **Impostazioni** > **App** > **Portale aziendale** > **Autorizzazioni** > **Telefono** e quindi attivare l'autorizzazione.
@@ -205,7 +231,7 @@ Altre informazioni     |  Per gli utenti: [Inviare i log dei dati di diagnostica
 
 **App del portale aziendale iOS**
 * Gli utenti possono ora usare Microsoft Outlook o altre app di posta elettronica per inviare i log di diagnostica all'amministratore IT. In precedenza, era possibile usare solo l'app nativa.
-* Il supporto è stato migliorato per i dispositivi del programma di registrazione dispositivi (DEP) di Apple e per i dispositivi registrati dall'azienda. Per informazioni dettagliate, vedere [Viene richiesto di identificare il dispositivo durante il tentativo di registrazione](https://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_id_your_device)..
+* Il supporto è stato migliorato per i dispositivi del programma di registrazione dispositivi (DEP) di Apple e per i dispositivi registrati dall'azienda. Per informazioni dettagliate, vedere [Viene richiesto di identificare il dispositivo durante il tentativo di registrazione](https://technet.microsoft.com/library/mt598622.aspx#BKMK_ios_id_your_device).
 * Nell'elenco dei dispositivi registrati dell'utente viene ora visualizzato un segno di spunta verde accanto al dispositivo attualmente in uso. Prima dell'aggiunta del segno di spunta, non era possibile per gli utenti stabilire quale dispositivo registrato stavano usando.
 
 **App Portale aziendale Windows**
@@ -231,34 +257,29 @@ Di seguito sono evidenziate e ulteriormente illustrate alcune funzionalità MAM 
 * I dati aziendali possono essere condivisi (**Taglia/Copia/Incolla**) tra le app aziendali, impedendo la condivisione dei dati aziendali in app personali. Per altre informazioni, leggere [Protezione dei dati delle app con i criteri MAM](https://technet.microsoft.com/library/mt627825.aspx). Questo scenario di esempio, [Uso dell'app Microsoft Word per attività professionali e personali](https://technet.microsoft.com/library/mt627827.aspx), illustra come impedire la condivisione di dati aziendali nelle app personali.
 * Criteri chiave di prevenzione della perdita di dati, come PIN per app, controlli salvataggio con nome e condivisione di dati gestiti tra app. Per vedere un elenco di tutti i criteri, leggere [Creare e distribuire i criteri di gestione delle app mobili con Microsoft Intune](https://technet.microsoft.com/library/mt627829.aspx).
 * Word, Excel, PowerPoint, Outlook, OneNote e OneDrive for Business sono tutti dotati di queste nuove funzionalità e possono essere gestiti con o senza la registrazione del dispositivo. Le funzionalità di protezione dalla perdita di dati sono incorporate in modo nativo nelle app Office standard nell'Apple Store o in Google Play Store e non richiedono il wrapping o il sideload delle app.
-* Per informazioni su come iniziare, vedere [Introduzione ai criteri di gestione delle app mobili nel portale di Azure](https://technet.microsoft.com/library/mt627830.aspx). Per informazioni su come configurare e distribuire i criteri di gestione di applicazioni mobili, vedere [Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](https://technet.microsoft.com/library/mt627829.aspx)..
+* Per informazioni su come iniziare, vedere [Introduzione ai criteri di gestione delle app mobili nel portale di Azure](https://technet.microsoft.com/library/mt627830.aspx). Per informazioni su come configurare e distribuire i criteri di gestione di applicazioni mobili, vedere [Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](https://technet.microsoft.com/library/mt627829.aspx).
 * Quando gli utenti finali si autenticano nell'app con le proprie credenziali aziendali, le funzionalità di protezione da perdita di dati vengono configurate automaticamente. L'argomento [Esperienza dell'utente finale per le app associate ai criteri di gestione delle app per dispositivi mobili di Microsoft Intune](https://technet.microsoft.com/library/mt627827.aspx) contiene alcuni scenari di esempio di accesso a OneDrive nei dispositivi iOS e Android.
 * Funziona nei dispositivi iOS e Android.
 
 L'elenco delle [app Microsoft che è possibile usare con i criteri di gestione delle applicazioni mobili di Microsoft Intune](https://technet.microsoft.com/library/dn708489.aspx) è stato aggiornato con le app più recenti.
 
 ### Gestione dei dispositivi
- **Gestione dei dispositivi Mac OS X**
-Con Intune, è ora possibile registrare e gestire i dispositivi Mac OS X. Con i dispositivi Mac OS X è possibile eseguire le operazioni seguenti:
-* Registrare i dispositivi da gestire in Intune. Vedere [Configurare la gestione dei dispositivi iOS con Microsoft Intune](https://technet.microsoft.com/library/dn408185.aspx)..
-* Controllare le impostazioni del dispositivo con un criterio di configurazione generale. Vedere [Impostazioni dei criteri di configurazione di Mac OS X in Microsoft Intune](https://technet.microsoft.com/library/mt627823.aspx)..
-* Distribuire le impostazioni di Mac OS X create con Apple Configurator. Vedere [Impostazioni dei criteri personalizzati di Mac OS X in Microsoft Intune](https://technet.microsoft.com/library/mt627820.aspx)..
-* Raccogliere l'inventario hardware e software dai dispositivi Mac OS X. Vedere [Informazioni sui dispositivi con inventario in Microsoft Intune](https://technet.microsoft.com/library/jj733634.aspx)..
-* Eseguire nuovi report che mostrino i dettagli sui dispositivi Mac OS X gestiti. Vedere [Comprendere le operazioni di Microsoft Intune con l'uso dei report](https://technet.microsoft.com/library/dn646977.aspx)..
+ **Gestione dei dispositivi Mac OS X** Con Intune ora è possibile registrare e gestire i dispositivi Mac OS X. Con i dispositivi Mac OS X è possibile eseguire le operazioni seguenti:
+* Registrare i dispositivi da gestire in Intune. Vedere [Configurare la gestione dei dispositivi iOS con Microsoft Intune](https://technet.microsoft.com/library/dn408185.aspx).
+* Controllare le impostazioni del dispositivo con un criterio di configurazione generale. Vedere [Impostazioni dei criteri di configurazione di Mac OS X in Microsoft Intune](https://technet.microsoft.com/library/mt627823.aspx).
+* Distribuire le impostazioni di Mac OS X create con Apple Configurator. Vedere [Impostazioni dei criteri personalizzati di Mac OS X in Microsoft Intune](https://technet.microsoft.com/library/mt627820.aspx).
+* Raccogliere l'inventario hardware e software dai dispositivi Mac OS X. Vedere [Informazioni sui dispositivi con inventario in Microsoft Intune](https://technet.microsoft.com/library/jj733634.aspx).
+* Eseguire nuovi report che mostrino i dettagli sui dispositivi Mac OS X gestiti. Vedere [Comprendere le operazioni di Microsoft Intune con l'uso dei report](https://technet.microsoft.com/library/dn646977.aspx).
 
-**Nuove impostazioni del browser Edge per i dispositivi Windows 10**
-Sono state aggiunte nuove impostazioni ai criteri di configurazione generale di Windows 10 che consentono di gestire le impostazioni e le funzionalità del browser Microsoft Edge. Vedere [Impostazioni di criteri di configurazione di Windows 10 in Microsoft Intune](https://technet.microsoft.com/library/mt404697.aspx)..
+**Nuove impostazioni del browser Edge per i dispositivi Windows 10** Sono state aggiunte ai criteri di configurazione generale di Windows 10 nuove impostazioni che consentono di gestire le impostazioni e le funzionalità del browser Microsoft Edge. Vedere [Impostazioni di criteri di configurazione di Windows 10 in Microsoft Intune](https://technet.microsoft.com/library/mt404697.aspx).
 
-**Profili di posta elettronica**
-È stato aggiunto un nuovo criterio di profili di posta elettronica per i dispositivi Windows 10 Desktop e Windows 10 Mobile. Vedere [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](https://technet.microsoft.com/library/dn646984.aspx)..
+**Profili di posta elettronica** È stato aggiunto un nuovo criterio dei profili di posta elettronica per i dispositivi Windows 10 Desktop e Windows 10 Mobile. Vedere [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](https://technet.microsoft.com/library/dn646984.aspx).
 
-**Nuove impostazioni dei criteri di conformità**
-Sono state aggiunte le seguenti nuove impostazioni dei criteri di sicurezza e di sistema all'elenco dei criteri di conformità:
-* Per accertarsi che nei dispositivi con Windows 8.1 o versioni successive che accedono alle risorse aziendali siano installati gli ultimi aggiornamenti, usare l'impostazione **Richiedi aggiornamenti automatici**. È anche possibile specificare il tipo di aggiornamenti da installare automaticamente, contrassegnandoli tutti come importanti o consigliati. Per l'elenco completo delle impostazioni dei criteri di conformità, vedere [Gestire criteri di conformità del dispositivo per Microsoft Intune](https://technet.microsoft.com/library/dn705843.aspx)..
+**Nuove impostazioni dei criteri di conformità** Sono state aggiunte le seguenti nuove impostazioni di sicurezza e dei criteri di sistema all'elenco dei criteri di conformità:
+* Per accertarsi che nei dispositivi con Windows 8.1 o versioni successive che accedono alle risorse aziendali siano installati gli ultimi aggiornamenti, usare l'impostazione **Richiedi aggiornamenti automatici**. È anche possibile specificare il tipo di aggiornamenti da installare automaticamente, contrassegnandoli tutti come importanti o consigliati. Per l'elenco completo delle impostazioni dei criteri di conformità, vedere [Gestire criteri di conformità del dispositivo per Microsoft Intune](https://technet.microsoft.com/library/dn705843.aspx).
 * La nuova impostazione **Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività** combinata all'impostazione **Minuti di inattività prima che venga richiesta la password** esistente consente di creare un'impostazione di conformità che richiede all'utente finale di immettere una password per usare un dispositivo che è rimasto inattivo per un determinato periodo di tempo.
 
-**Nuove opzioni di criteri di accesso condizionale**
-È possibile applicare criteri di accesso condizionale a **tutti gli utenti** nei criteri di accesso condizionale nuovi o esistenti. A tutti gli utenti con licenza per Intune e Office 365 verrà richiesto di registrare i propri dispositivi e, se la piattaforma del dispositivo non è supportata da Intune, l'accesso è bloccato per le applicazioni client che usano [l'accesso basato sull'autenticazione di Active Directory (autenticazione moderna)](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/)..
+**Nuove opzioni dei criteri di accesso condizionale** È possibile applicare criteri di accesso condizionale a **tutti gli utenti** nei criteri di accesso condizionale nuovi o esistenti. A tutti gli utenti con licenza per Intune e Office 365 verrà richiesto di registrare i propri dispositivi e, se la piattaforma del dispositivo non è supportata da Intune, l'accesso è bloccato per le applicazioni client che usano [l'accesso basato sull'autenticazione di Active Directory (autenticazione moderna)](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/).
 
 È anche possibile specificare che venga applicato il criterio di accesso condizionale a **tutte le piattaforme**.  Tutte le applicazioni client che usano l'[accesso basato sull'autenticazione di Active Directory (autenticazione moderna)](https://blogs.office.com/2014/11/12/office-2013-updated-authentication-enabling-multi-factor-authentication-saml-identity-providers/) sono soggette ai criteri di accesso condizionale e, se la piattaforma non è supportata da Intune, verranno bloccate.
 
@@ -267,9 +288,9 @@ In questa versione sono state apportate le seguenti modifiche alle app del porta
 
 * **Android**: è stata aggiunta una schermata di benvenuto all'app del portale aziendale Android per aiutare gli utenti a comprenderne lo scopo. Questa schermata mira a ridurre i download dell'app da parte degli utenti le cui le aziende non sono sottoscrittori Intune.
 
-* **iOS**: Intune supporta ora la registrazione di dispositivi Mac OS X con il [sito Web del portale aziendale](https://portal.manage.microsoft.com). Per istruzioni, vedere [Registrare il dispositivo Mac OS X in Intune](https://technet.microsoft.com/library/mt598622.aspx)..
+* **iOS**: Intune supporta ora la registrazione di dispositivi Mac OS X con il [sito Web del portale aziendale](https://portal.manage.microsoft.com). Per istruzioni, vedere [Registrare il dispositivo Mac OS X in Intune](https://technet.microsoft.com/library/mt598622.aspx).
 
-* **Sito Web del portale aziendale**: gli utenti che hanno registrato il dispositivo in Intune possono ora reimpostare il passcode con l'opzione **Reimposta passcode** nel sito Web del portale aziendale. In precedenza, solo gli amministratori IT potevano ripristinare i passcode degli utenti. L'opzione Reimposta passcode non è supportata nei dispositivi Windows 8.1 e Windows RT e viene visualizzata solo quando i dispositivi sono registrati in una soluzione di gestione dei dispositivi mobili (MDM) o in MDM con Exchange ActiveSync. Per istruzioni per gli utenti, vedere [Reimpostare il passcode](https://technet.microsoft.com/library/mt590895.aspx)..
+* **Sito Web del portale aziendale**: gli utenti che hanno registrato il dispositivo in Intune possono ora reimpostare il passcode con l'opzione **Reimposta passcode** nel sito Web del portale aziendale. In precedenza, solo gli amministratori IT potevano ripristinare i passcode degli utenti. L'opzione Reimposta passcode non è supportata nei dispositivi Windows 8.1 e Windows RT e viene visualizzata solo quando i dispositivi sono registrati in una soluzione di gestione dei dispositivi mobili (MDM) o in MDM con Exchange ActiveSync. Per istruzioni per gli utenti, vedere [Reimpostare il passcode](https://technet.microsoft.com/library/mt590895.aspx).
 
 ### Modifiche alle licenze degli amministratori globali
 Nel mese di ottobre, è stato annunciato che gli amministratori globali (noti anche come amministratori tenant) potevano continuare a eseguire attività di ordinaria amministrazione senza una licenza separata di Intune o Enterprise Mobility Suite (EMS). Tuttavia, se gli amministratori globali vogliono usare il servizio, ad esempio per registrare il proprio dispositivo, un dispositivo aziendale oppure usare il portale aziendale di Intune, avranno bisogno di una licenza Intune o EMS, esattamente come qualsiasi altro utente. Di seguito sono riportati alcuni dettagli aggiuntivi.
@@ -279,7 +300,7 @@ Nel mese di ottobre, è stato annunciato che gli amministratori globali (noti an
     * scaricare il software distribuito da un amministratore globale all'organizzazione
     * trovare i collegamenti pubblicati dall'amministratore globale per informazioni su come contattare il reparto IT
 
-    [Altre informazioni sul portale aziendale](https://technet.microsoft.com/library/dn646966.aspx#BKMK_CompanyPortal) e su [come personalizzare il portale aziendale](https://technet.microsoft.com/library/dn646983.aspx#BKMK_ConfigureCompanyPortal)..
+    [Altre informazioni sul portale aziendale](https://technet.microsoft.com/library/dn646966.aspx#BKMK_CompanyPortal) e su [come personalizzare il portale aziendale](https://technet.microsoft.com/library/dn646983.aspx#BKMK_ConfigureCompanyPortal).
 * La persona che effettua l'iscrizione per l'acquisto di Intune o EMS per conto di un'organizzazione diventa automaticamente il primo amministratore globale nel tenant. Quest'autunno, Intune ha iniziato ad assegnare automaticamente una licenza di Intune o EMS al primissimo amministratore globale, come parte del passaggio al [portale di Office 365](http://portal.office.com/) e la disattivazione del [Portale per gli account di Intune](http://account.manage.microsoft.com/). Tutti gli altri amministratori globali aggiunti possono continuare a usare l'amministrazione quotidiana senza una licenza separata di Intune o EMS. Agire da utente finale e registrare il dispositivo personale (o aziendale) o scaricare software dal portale aziendale comporterà la necessità di una licenza, esattamente come qualsiasi altro utente.
 * La modifica verrà gradualmente implementata a partire da gennaio 2016.
 * Per i Partner Microsoft, questa modifica non dovrebbe incidere sulla possibilità di amministrare il servizio per conto dei clienti. Per le attività dell'utente finale, un utente dovrà avere una licenza Intune o EMS per poter registrare un dispositivo e accedere al software o scaricarlo dal portale aziendale.
@@ -288,7 +309,7 @@ In caso di domande su questa modifica, è possibile contattare il team di suppor
 * [Canali di supporto di Microsoft Intune](https://technet.microsoft.com/library/jj839713.aspx)
 * [Supporto della community](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)
 
-Per commenti generali su Microsoft Intune, tra cui la creazione di richieste di modifica del design (DCR, Design Change Request) o di bug, visitare l'apposito [sito per i commenti degli utenti di Intune](https://microsoftintune.uservoice.com/)..
+Per commenti generali su Microsoft Intune, tra cui la creazione di richieste di modifica del design (DCR, Design Change Request) o di bug, visitare l'apposito [sito per i commenti degli utenti di Intune](https://microsoftintune.uservoice.com/).
 
 
 ### Novità nella documentazione di Intune - Novembre 2015
@@ -315,7 +336,7 @@ Per commenti generali su Microsoft Intune, tra cui la creazione di richieste di 
 ## Ottobre 2015
 
 ### Aggiornamenti all'accesso condizionale per Exchange locale
-**È ora possibile consentire l'accesso alla posta elettronica di Exchange Active Sync per i dispositivi conformi registrati in Intune quando la regola globale di Exchange è impostata su blocco o quarantena**. Fino ad ora, per consentire l'accesso alla posta elettronica nei dispositivi registrati e conformi era necessario impostare la regola globale di Exchange predefinita su **Consenti**..
+**È ora possibile consentire l'accesso alla posta elettronica di Exchange Active Sync per i dispositivi conformi registrati in Intune quando la regola globale di Exchange è impostata su blocco o quarantena** Fino ad ora, per consentire l'accesso alla posta elettronica nei dispositivi registrati e conformi era necessario impostare la regola globale di Exchange predefinita su **Consenti**.
 
 Grazie a questo aggiornamento del servizio, tale impostazione non è più un requisito per l'accesso condizionale. Se l'ambiente Exchange richiede che la regola globale predefinita sia impostata su **Blocco/Quarantena**, è sufficiente selezionare la casella di controllo **Override regola predefinita** nella pagina dei criteri di Exchange locale per l'accesso condizionale. L'argomento [ Gestire l'accesso alla posta elettronica con Microsoft Intune](https://technet.microsoft.com/library/dn705841.aspx) include informazioni dettagliate sulle regole e le notifiche risultanti per l'utente finale.
 
@@ -325,13 +346,11 @@ Grazie a questo aggiornamento del servizio, tale impostazione non è più un req
 
 **iOS** Non è più possibile creare nuove distribuzioni di app nei dispositivi iOS che eseguono una versione precedente a iOS 7.1. Tutte le distribuzioni nei dispositivi che eseguono una versione precedente a iOS 7.1 continueranno a funzionare e ad essere gestite da Intune.
 
-**Windows 10** Intune supporta ora la distribuzione a Windows 10 Universal con il tipo di programma di installazione software **Pacchetto app Windows**. Per informazioni dettagliate e requisiti, vedere [Introduzione alla distribuzione dell'app in Microsoft Intune](http://technet.microsoft.com/en-US/library/dn646955.aspx)..
+**Windows 10** Intune supporta ora la distribuzione a Windows 10 Universal con il tipo di programma di installazione software **Pacchetto app Windows**. Per informazioni dettagliate e requisiti vedere [Introduzione alla distribuzione dell'app in Microsoft Intune](http://technet.microsoft.com/en-US/library/dn646955.aspx).
 
 
 ### Modifiche e aggiornamenti alle app del Portale aziendale Microsoft
-In questa versione sono state apportate le seguenti modifiche alle app del portale aziendale:
-**iOS**
-All'app Portale aziendale sono stati aggiunti nuovi pulsanti per semplificare l'invio di log di diagnostica agli amministratori IT da parte degli utenti:
+In questa versione sono state apportate le seguenti modifiche alle app del portale aziendale: **iOS** Sono stati aggiunti nuovi pulsanti all'app Portale aziendale per rendere più facile agli utenti l'invio di log di diagnostica agli amministratori IT:
 
 |Nome pulsante|Posizione di visualizzazione|
 |------------|---------------|
@@ -344,6 +363,6 @@ All'app Portale aziendale sono stati aggiunti nuovi pulsanti per semplificare l'
 >[&larr; **Novità in Intune**](whats-new-in-microsoft-intune.md)    
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

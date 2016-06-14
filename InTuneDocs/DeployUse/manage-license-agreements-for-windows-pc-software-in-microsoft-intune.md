@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Gestire i contratti di licenza del software per PC Windows in Microsoft Intune | Microsoft Intune
+title: Gestire i contratti di licenza del software per PC Windows | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -45,15 +45,14 @@ Nell'area di lavoro **Licenze** della console di amministrazione di Intune è po
 
 È anche possibile creare report con i dati relativi al numero di installazioni e di licenze dei titoli software. I report licenze sono utili per valutare la situazione complessiva delle licenze relative al software Microsoft e non Microsoft.
 
-> [!TIP]
-> L'area di lavoro **Licenze** non viene visualizzata nella console di amministrazione finché non si gestisce almeno un PC Windows con il client per PC Windows di Intune.
+> [!TIP] L'area di lavoro **Licenze** non viene visualizzata nella console di amministrazione finché non si gestisce almeno un PC Windows con il client per PC Windows di Intune.
 
 ## Aggiungere contratti multilicenza Microsoft
-I contratti multilicenza per Intune offrono informazioni sulle licenze per il software acquistato tramite contratti multilicenza Microsoft. È possibile aggiungere contratti multilicenza Microsoft a Intune specificando coppie di numeri di contratto. I numeri di contratto o di autorizzazione devono corrispondere ai numeri di licenza o di registrazione corretti. Le coppie di numeri di contratto si ottengono dal [Centro servizi per contratti multilicenza (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842) al momento dell'acquisto dei contratti di licenza..
+I contratti multilicenza per Intune offrono informazioni sulle licenze per il software acquistato tramite contratti multilicenza Microsoft. È possibile aggiungere contratti multilicenza Microsoft a Intune specificando coppie di numeri di contratto. I numeri di contratto o di autorizzazione devono corrispondere ai numeri di licenza o di registrazione corretti. Le coppie dei numeri di contratto si ottengono da [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)al momento dell'acquisto dei contratti di licenza.
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx) fare clic su **Licenze**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx)fare clic su **Licenze**.
 
-2.  Nella pagina **Aggiungi contratti**, in **Scegli tipo di contratto** selezionare **Contratto multilicenza**.
+2.  Nella pagina **Aggiungi contratti** selezionare **Contratto multilicenza**in **Scegli tipo di contratto**.
 
 3.  Nella sezione **Aggiungi dettagli contratto** scegliere una delle opzioni seguenti:
 
@@ -77,9 +76,9 @@ I contratti multilicenza per Intune offrono informazioni sulle licenze per il so
 
         -   **Clienti Open Value:** *Numero di contratto*, *ripetere il numero di contratto*, *nome contratto*
 
-        -   **Clienti Open:** *Numero autorizzazione*, *numero di licenza correlato*, *nome contratto*
+        -   **Clienti Open:** *Numero autorizzazione*, *relativo numero di licenza*, *nome contratto*
 
-        -   **Clienti Select ed Enterprise:** *Numero di contratto*, *numero di registrazione correlato*, *nome contratto*
+        -   **Clienti Select ed Enterprise:** *Numero di contratto*, *relativo numero di registrazione*, *nome contratto*
 
         Quando si aggiungono nuovi contratti, il modulo **Aggiungi contratti** richiede di selezionare questo file.
 
@@ -97,8 +96,7 @@ I contratti multilicenza per Intune offrono informazioni sulle licenze per il so
 
         -   **Numero licenza/registrazione/cliente**: immettere il numero di licenza/registrazione/cliente della coppia di licenze.
 
-        > [!NOTE]
-        > Se si aggiungono diverse coppie di numeri di contratto, in Intune viene creato un contratto con il nome specificato, in cui rientreranno tutte le coppie aggiunte in precedenza.
+        > [!NOTE] Se si aggiungono diverse coppie di numeri di contratto, in Intune viene creato un contratto con il nome specificato, che include tutte le coppie aggiunte in precedenza.
 
     È possibile fare clic sul segno **+** per aggiungere un'altra coppia di numeri di contratto o sul segno **-** per rimuovere una coppia di numeri di contratto già immessa.
 
@@ -114,10 +112,9 @@ I contratti multilicenza per Intune offrono informazioni sulle licenze per il so
 
 Verrà aperta la visualizzazione **Tutti i contratti** e Intune si connetterà al Centro servizi per contratti multilicenza per convalidare le coppie di numeri di contratto specificate.
 
-Per aggiornare le informazioni sui contratti multilicenza dopo aver aggiunto i contratti di licenza in Intune, fare clic su **Aggiorna** nella pagina **Panoramica licenze**. Questa azione recupera le informazioni sulle licenze correnti dal [Centro servizi per contratti multilicenza (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
+Per aggiornare le informazioni sui contratti multilicenza dopo aver aggiunto i contratti di licenza in Intune, fare clic su **Aggiorna** nella pagina **Panoramica licenze**. Questa azione recupera le informazioni sulle licenze correnti da [Microsoft Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
 
-> [!IMPORTANT]
-> Finché non vengono aggiornate le informazioni sui contratti multilicenza, è possibile che le informazioni dell'elenco di contratti siano diverse da quelle della pagina **Panoramica contratti** .
+> [!IMPORTANT] Finché non vengono aggiornate le informazioni sui contratti multilicenza, è possibile che le informazioni dell'elenco di contratti siano diverse da quelle della pagina **Panoramica contratti**.
 
 Dopo aver aggiornato le informazioni sui contratti multilicenza, è possibile confrontare le informazioni sulle licenze con il software Microsoft rilevato nell'area di lavoro **App** . È anche possibile eseguire i report sulle licenze seguenti:
 
@@ -125,8 +122,7 @@ Dopo aver aggiornato le informazioni sui contratti multilicenza, è possibile co
 
 -   **Report installazione licenza**: consente di determinare se la copertura del contratto di licenza è sufficiente.
 
-> [!NOTE]
-> Il **Titolo prodotto** visualizzato per tutti i contratti multilicenza Microsoft è **Non disponibile**.
+> [!NOTE] Il **Titolo prodotto** visualizzato per tutti i contratti multilicenza Microsoft è **Non disponibile**.
 
 ## Aggiungere e modificare altri contratti di licenza software
 È anche possibile aggiungere altri tipi di contratti di licenza a Intune oltre ai contratti multilicenza Microsoft. Questi contratti possono essere relativi a software non Microsoft oppure a software Microsoft acquistato presso un rivenditore.
@@ -136,7 +132,7 @@ Dopo aver aggiornato le informazioni sui contratti multilicenza, è possibile co
 
 ### Per aggiungere altri contratti software
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx) fare clic su **Licenze**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx)fare clic su **Licenze**.
 
 2.  Fare clic su **Aggiungi contratti** nella sezione **Altri contratti di licenza software** .
 
@@ -182,12 +178,12 @@ Viene visualizzato l'elenco **Tutti i contratti** .
 |Creare un gruppo di licenze|Nella pagina **Panoramica** dell'area di lavoro **Licenze** scegliere **Crea gruppo di licenze** dal menu **Attività** . **Nota:** è possibile creare un massimo di 500 gruppi di licenze.|
 |Rinominare un gruppo di licenze|Nell'area di lavoro **Licenze** scegliere un gruppo di licenze e quindi scegliere **Modifica gruppo di licenze** dal menu **Attività** .|
 |Eliminare un gruppo di licenze|Nell'area di lavoro **Licenze** scegliere un gruppo di licenze e quindi scegliere **Elimina gruppo di licenze** dal menu **Attività** . **Suggerimento:** tutte le licenze nel gruppo eliminato verranno spostate nel gruppo di licenze **Contratti non assegnati**.|
-|Eliminare un contratto di licenza|Nell'area di lavoro **Licenze** scegliere un contratto e quindi fare clic su **Elimina**. **Suggerimento:** dopo aver eliminato i contratti multilicenza, per aggiornare le informazioni sulle licenze, fare clic su **Aggiorna** nella pagina **Panoramica licenze** o sulla scheda **Generale** per un gruppo di licenze specifico.|
+|Eliminare un contratto di licenza|Nell'area di lavoro **Licenze** scegliere un contratto e quindi fare clic su **Elimina**. **Suggerimento:** dopo aver eliminato i contratti multilicenza, per aggiornare le informazioni sulle licenze fare clic su **Aggiorna** nella pagina **Panoramica licenze** della scheda **Generale** per un gruppo di licenze specifico.|
 
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

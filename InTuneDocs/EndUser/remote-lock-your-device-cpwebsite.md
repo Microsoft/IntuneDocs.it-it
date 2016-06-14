@@ -46,11 +46,11 @@ Per usare Blocco remoto per bloccare il dispositivo:
 
 1.  Nel [sito Web del portale aziendale](http://portal.manage.microsoft.com) toccare il nome del dispositivo da bloccare.
 
-2.  Toccare **Blocco remoto**..
+2.  Toccare **Blocco remoto**.
 
     Dopo aver toccato **Blocco remoto** viene visualizzato lo stato "Blocco remoto in sospeso".  Quando Blocco remoto ha esito positivo, lo stato passa a "Blocco remoto riuscito."
 
-    Lo stato viene visualizzato in tre posizioni:
+    Lo stato del blocco remoto viene visualizzato in tre posizioni:
 
     * L'area delle notifiche del sito Web. 
     * La pagina dei dettagli del dispositivo.
@@ -64,6 +64,6 @@ Per usare Blocco remoto per bloccare il dispositivo:
 ### Vedere anche
 [Uso del sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

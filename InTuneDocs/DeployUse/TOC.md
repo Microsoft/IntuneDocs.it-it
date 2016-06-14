@@ -30,7 +30,7 @@
 
 ### [Gestire impostazioni e funzionalità nei dispositivi con criteri](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [Impostazioni iOS](ios-policy-settings-in-microsoft-intune.md)
-#### [Impostazioni Android](android-policy-settings-in-microsoft-intune.md)
+#### [Impostazioni Android e Samsung KNOX](android-policy-settings-in-microsoft-intune.md)
 #### [Impostazioni Windows 8 e Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Impostazioni Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Impostazioni Windows 10 Desktop e Mobile](windows-10-policy-settings-in-microsoft-intune.md)
@@ -106,6 +106,7 @@
 ### [Preparare le app linea di business per MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 #### [Eseguire il wrapping delle app iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 #### [Eseguire il wrapping delle app Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+#### [Applicazioni line-of-business nei dispositivi non gestiti da Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Usare l'SDK per scrivere un'app](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
@@ -120,9 +121,11 @@
 
 ## [Novità](whats-new-in-microsoft-intune.md)
 
+# [Sviluppare e personalizzare le app](/intune/develop/intune-app-sdk)
+
 # [Risolvere i problemi](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

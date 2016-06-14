@@ -38,13 +38,13 @@ Usare Microsoft Intune App SDK per consentire a Intune di gestire alcune funzion
 
 Per usare l'SDK, è necessario accedere al codice sorgente dell'app, ma è possibile abilitare la maggior parte delle funzionalità SDK senza dover modificare il comportamento dell'app.
 
-Per una descrizione dell'SDK, vedere la pagina sulla [panoramica](https://msdn.microsoft.com/en-us/library/mt627767.aspx). Per iniziare a usare Intune App SDK, vedere [Introduzione a Microsoft Intune App SDK](https://msdn.microsoft.com/library/mt627766.aspx).
+Per una panoramica dell'SDK, vedere la pagina di [panoramica](/intune/develop/intune-app-sdk). Per iniziare a usare Intune App SDK, vedere [Introduzione a Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started)
 
 ### Vedere anche
 [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

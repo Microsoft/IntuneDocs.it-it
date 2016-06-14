@@ -1,5 +1,5 @@
 ---
-title: Distribuire app in Microsoft Intune | Microsoft Intune
+title: Distribuire le app | Microsoft Intune
 ms.custom: na
 ms.reviewer: na
 ms.service: microsoft-intune
@@ -19,9 +19,9 @@ In questa procedura l'app verrà distribuita a dispositivi o utenti selezionati.
 
 ### Per distribuire un'app
 
-1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **App** &gt; **App** per visualizzare l'elenco di app gestite.
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **App** &gt; **App** per visualizzare l'elenco delle app gestite.
 
-2.  Selezionare l'app da distribuire, quindi fare clic su **Gestisci distribuzione**..
+2.  Selezionare l'app da distribuire, quindi fare clic su **Gestisci distribuzione**.
 
 3.  Nella finestra di dialogo *&lt;nome app&gt;* scegliere prima di tutto i gruppi di utenti o di dispositivi in cui si vuole distribuire l'app nella pagina **Seleziona gruppi**.
 
@@ -39,7 +39,7 @@ In questa procedura l'app verrà distribuita a dispositivi o utenti selezionati.
     [Vedere quali app Microsoft sono compatibili con i criteri di gestione delle applicazioni mobili.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Se l'app da distribuire è compatibile con i profili VPN di Intune, verrà visualizzata la pagina **Profilo VPN**. In questa pagina è possibile scegliere di associare le app iOS a un profilo VPN già distribuito. La connessione VPN verrà aperta automaticamente all'avvio dell'app. Per rendere disponibile un profilo VPN, l'impostazione del profilo **VPN per app** deve essere abilitata.
- Per informazioni su come configurare i profili VPN, incluso il supporto per associare i profili alle app, vedere [Consentire agli utenti di connettersi al proprio lavoro tramite profili VPN con Microsoft Intune](vpn-connections-in-microsoft-intune.md)..
+ Per informazioni su come configurare i profili VPN, incluso il supporto per associare i profili alle app, vedere [VPN connections in Microsoft Intune](vpn-connections-in-microsoft-intune.md) (Connessioni VPN in Microsoft Intune).
 
 ## Esempio
 
@@ -52,9 +52,9 @@ Se l'app è stata distribuita come **Richiesta**, l'utente viene avvisato quando
 
 ## Passaggi successivi
 
-Dopo aver distribuito un'app, si può monitorarne l'avanzamento. Per altre informazioni, vedere [Monitorare le app in Microsoft Intune](monitor-apps-in-microsoft-intune.md).
+Dopo aver distribuito un'app, si può monitorarne l'avanzamento. Per altre informazioni, vedere [Monitor app deployments in Microsoft Intune](monitor-apps-in-microsoft-intune.md) (Monitoraggio delle distribuzioni di app in Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

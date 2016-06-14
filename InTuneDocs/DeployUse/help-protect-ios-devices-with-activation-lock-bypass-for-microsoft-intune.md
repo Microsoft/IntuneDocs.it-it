@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Proteggere i dispositivi iOS con il bypass di Blocco attivazione per Microsoft Intune | Microsoft Intune
+title: Proteggere i dispositivi iOS con il bypass del blocco attivazione | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -49,7 +49,7 @@ Per facilitare la soluzione di questi problemi, Apple ha introdotto il bypass di
 > Nella modalità supervisionata per i dispositivi iOS è possibile usare lo strumento Apple Configurator per bloccare un dispositivo e limitarne la funzionalità per specifici scopi aziendali. Questa modalità è in genere usata solo per dispositivi di proprietà dell'azienda.
 
 ## Come gestire Blocco attivazione in Intune
-Intune può richiedere lo stato di Blocco attivazione per dispositivi supervisionati e non supervisionati che eseguono iOS 7.1 e versioni successive. Per i dispositivi con supervisione, Intune può recuperare il codice del bypass del blocco attivazione e inviarlo direttamente al dispositivo. Se il dispositivo è stato cancellato, è possibile accedervi direttamente usando il codice come nome utente e immettendo una password vuota.
+Intune può richiedere lo stato di Blocco attivazione per dispositivi supervisionati e non supervisionati che eseguono iOS 7.1 e versioni successive. Solo per i dispositivi con supervisione, Intune può recuperare il codice del bypass del blocco attivazione e inviarlo direttamente al dispositivo. Se il dispositivo è stato cancellato, è possibile accedervi direttamente usando il codice come nome utente e immettendo una password vuota.
 
 **I vantaggi aziendali di questo approccio sono i seguenti**:
 
@@ -89,10 +89,10 @@ Intune può richiedere lo stato di Blocco attivazione per dispositivi supervisio
     Se si seleziona un dispositivo nel nodo **Tutti i dispositivi di proprietà dell'azienda** e Blocco attivazione è abilitato per il dispositivo, verrà visualizzato anche il codice bypass. Questo codice può essere usato per inviare manualmente un bypass di Blocco attivazione.
 
 ### Vedere anche
-[Disattivare i dispositivi](retire-devices-from-microsoft-intune-management.md)
-[Protezione dei dispositivi con blocco remoto o reimpostazione passcode](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
+[Retire devices (Ritirare i dispositivi)](retire-devices-from-microsoft-intune-management.md)
+[Help protect your devices with remote lock and passcode reset (Proteggere i dispositivi con blocco remoto e reimpostazione del passcode)](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

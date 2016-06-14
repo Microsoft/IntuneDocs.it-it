@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Impostazioni dei criteri di Windows in Microsoft Intune | Microsoft Intune
+title: Impostazioni dei criteri di Windows | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -26,7 +26,13 @@ ms.suite: ems
 ---
 
 # Impostazioni dei criteri di Windows in Microsoft Intune
-Usare i **criteri di configurazione generale per Windows** di Microsoft Intune per configurare le impostazioni per i dispositivi Windows 8 e Windows 8.1 registrati:
+Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versioni successive)** di Microsoft Intune per configurare le impostazioni per i dispositivi Windows 8 e Windows 8.1 registrati:
+
+## Impostazioni di applicabilità
+
+|Nome impostazione|Dettagli|
+|----------------|----------------------------------|
+|**Applica tutte le configurazioni a Windows 10**|Consente di applicare le impostazioni di questi criteri ai dispositivi Windows 10, oltre ai dispositivi Windows 8 e Windows 8.1.|
 
 ## Impostazioni di sicurezza
 
@@ -47,7 +53,7 @@ Usare i **criteri di configurazione generale per Windows** di Microsoft Intune p
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Richiedi crittografia sui dispositivi mobili**<sup>1</sup>|Richiede la crittografia dei file nel dispositivo.<br>Per i dispositivi Windows Phone 8, è necessario impostare l'opzione su **Sì**.|Sì|No|
+|**Richiedi crittografia sui dispositivi mobili**<sup>1</sup>|Richiede la crittografia dei file nel dispositivo.<br>Per i dispositivi Windows Phone 8, è necessario impostare su **Sì**.|Sì|No|
 <sup>1</sup> Informazioni aggiuntive per i dispositivi che eseguono Windows 8.1
 
 -   Per applicare la crittografia su dispositivi che eseguono Windows 8.1, è necessario installare il [dicembre 2014 MDM aggiornamento del client per Windows](http://support.microsoft.com/kb/3013816) su ogni dispositivo.
@@ -119,6 +125,6 @@ Usare i **criteri di configurazione generale per Windows** di Microsoft Intune p
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

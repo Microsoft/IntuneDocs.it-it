@@ -27,13 +27,12 @@ ms.suite: ems
 
 # Browser Web supportati da Microsoft Intune
 
-Prima di configurare Intune, leggere questo argomento e gli altri requisiti elencati in [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+Prima di configurare Intune, leggere questo argomento e gli altri requisiti elencati in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md) (Informazioni preliminari per l'uso di Microsoft Intune).
 
 |Funzionalità di Intune |Browser supportati|
 |---------|---------|
 |Console di amministrazione di Intune     |  Internet Explorer 10 o versione successiva<br /><br />Google Chrome (versioni precedenti alla versione 42)<br /><br />Mozilla Firefox <br /><br />**Nota:** al momento, Edge non è supportato per la console di amministrazione.                      
-|Portale per gli account di Intune     | Internet Explorer 10 o versione successiva<br /><br />Google Chrome <br /><br />Mozilla Firefox<br /><br />**Nota:** se si usa il portale di amministrazione di Office 365, che sostituisce il portale per gli account di Intune, vedere la sezione seguente "Portale di amministrazione di Office 365" per un elenco di browser.    
-|Portale di amministrazione di Office 365     |Internet Explorer 10 o versione successiva<br /><br />Google Chrome<br /><br />Mozilla Firefox <br /><br />Microsoft Edge  |
+|Portale di amministrazione di Office 365     |Tutti i browser  |
 |Sito Web del portale aziendale     |**Nei dispositivi mobili:** usare il Web browser predefinito per ogni piattaforma supportata   <br /><br />**Nei PC Windows:** Internet Explorer 10 o versione successiva oppure Microsoft Edge<br /><br />**In Mac OS X 10.9 o versioni successive:** Apple Safari    |
 
 
@@ -43,6 +42,6 @@ Prima di configurare Intune, leggere questo argomento e gli altri requisiti elen
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

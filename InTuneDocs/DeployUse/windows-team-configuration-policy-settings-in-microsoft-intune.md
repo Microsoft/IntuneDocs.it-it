@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Impostazioni dei criteri di configurazione di Windows Team in Microsoft Intune | Microsoft Intune
+title: Impostazioni dei criteri di configurazione di Windows Team| Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -44,6 +44,6 @@ Usare i **criteri di configurazione generale di Windows 10 Team** di Microsoft I
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

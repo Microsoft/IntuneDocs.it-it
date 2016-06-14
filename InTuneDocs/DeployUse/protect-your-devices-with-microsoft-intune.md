@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Proteggere i dispositivi con Microsoft Intune | Microsoft Intune
+title: Proteggere i dispositivi | Microsoft Intune
 description:
 keywords:
 author: Robstackmsft
@@ -41,9 +41,9 @@ Poiché il primo passaggio nella protezione dei dati aziendali nei dispositivi m
 Con Intune è possibile eseguire l'integrazione con [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md), un metodo di accesso alternativo per Windows 10 e versioni successive che usa Active Directory o un account Azure Active Directory per sostituire una password, una smart card o una smart card virtuale.
 
 ## Proteggere i PC Windows gestiti con il client di Intune
-Intune continua a supportare i criteri di sicurezza per i PC Windows non registrati ma gestiti con il software per client computer di Intune. Per scoprire come questi criteri consentono di proteggere i PC Windows, vedere l'articolo relativo all'[uso dei criteri per proteggere i PC Windows che eseguono il software client di Intune](policies-to-protect-windows-pcs-in-microsoft-intune.md)..
+Intune continua a supportare i criteri di sicurezza per i PC Windows non registrati ma gestiti con il software per client computer di Intune. Per scoprire come questi criteri aiutano a proteggere i PC Windows, vedere l'articolo [Usare i criteri per proteggere i PC Windows che eseguono il software client di Intune](policies-to-protect-windows-pcs-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

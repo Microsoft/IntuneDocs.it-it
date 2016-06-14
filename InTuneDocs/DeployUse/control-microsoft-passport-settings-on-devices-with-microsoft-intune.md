@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Controllare le impostazioni di Microsoft Passport nei dispositivi con Microsoft Intune | Microsoft Intune
+title: Controllare le impostazioni di Microsoft Passport nei dispositivi | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -34,11 +34,11 @@ Intune si integra con Passport for Work in due modi:
 
 -   È possibile usare i criteri di Intune per controllare i movimenti che gli utenti possono usare o meno per l'accesso.
 
--   È possibile archiviare i certificati di autenticazione nel provider di archiviazione chiavi (KSP) di Passport for Work. Per altre informazioni, vedere [Proteggere l'accesso alle risorse con i profili certificato in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).
+-   È possibile archiviare i certificati di autenticazione nel provider di archiviazione chiavi (KSP) di Passport for Work. Per altre informazioni, vedere [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md) (Proteggere l'accesso alle risorse con i profili certificato in Microsoft Intune).
 
 ## Per creare i criteri di Passport for Work
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **Windows** &gt; **Passport for Work** per aprire la pagina Passport for Work, come illustrato di seguito.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Amministrazione**&gt;**Gestione dei dispositivi mobili**&gt;**Windows**&gt;**Passport for Work** per aprire la pagina Passport for Work, come illustrato di seguito.
 
     ![Pagina Passport for Work](../media/passport.png)
 
@@ -47,7 +47,7 @@ Intune si integra con Passport for Work in due modi:
     - **Abilita Passport for Work nei dispositivi registrati**: selezionare questa impostazione per configurare le impostazioni di Passport for Work in tutti i dispositivi Windows 10.
     - **Non configurato**: selezionare questa impostazione se non si vuole usare Intune per controllare le impostazioni di Passport for Work. Eventuali impostazioni di Passport for Work presenti nei dispositivi Windows 10 non verranno modificate. Tutte le altre impostazioni nella schermata sono disabilitate.
 3.  Se si seleziona **Abilita Passport for Work nei dispositivi registrati**, configurare le impostazioni obbligatorie che verranno applicate a tutti i dispositivi Windows 10 e Windows 10 Mobile registrati.
-3.  Al termine fare clic su **Salva**..
+3.  Al termine, fare clic su **Salva**.
 
 ## Passport for Work: impostazioni del PIN
 
@@ -57,8 +57,7 @@ Intune si integra con Passport for Work in due modi:
     - **Consentito**: gli utenti possono usare il tipo di carattere nel proprio PIN, ma non è obbligatorio.
     - **Obbligatorio**: gli utenti devono includere almeno uno dei tipi di carattere nel PIN. Ad esempio, di solito si richiede almeno una lettera maiuscola e un carattere speciale.
     - **Non consentito** (impostazione predefinita): gli utenti non devono usare questi tipi di carattere nel PIN. Questo è il comportamento anche nel caso in cui l'impostazione non sia configurata.
-    > [!TIP]
-    > I caratteri speciali includono: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP] I caratteri speciali sono: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **Scadenza PIN (giorni)**: è consigliabile specificare un periodo di scadenza dopo il quale gli utenti finali devono modificare il PIN. L'impostazione predefinita è 41 giorni. 
 - **Ricorda cronologia PIN**: usare questa impostazione per limitare il riutilizzo dei PIN usati in precedenza. Per impostazione predefinita gli ultimi 5 PIN non possono essere nuovamente usati.
 
@@ -80,6 +79,6 @@ Per altre informazioni su Microsoft Passport, vedere [la guida](https://technet.
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

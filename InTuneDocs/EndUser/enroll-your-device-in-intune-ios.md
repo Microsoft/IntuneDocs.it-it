@@ -15,7 +15,7 @@ ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -35,9 +35,9 @@ Se si sta registrando un dispositivo Mac OS X, vedere [Registrare il dispositivo
 
 **Per registrare il dispositivo iOS:**
 
-1.  Seguire la procedura in [Installare e accedere all'app Portale aziendale di Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md)..
+1.  Seguire la procedura in [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md) (Installare e accedere all'app Portale aziendale di Intune).
 
-2. Nella pagina **Company Access Setup** (Configurazione accesso aziendale) toccare **Inizia**..
+2. Nella pagina **Configurazione dell'accesso aziendale** toccare **Inizia**.
 
     ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png) 
 
@@ -45,11 +45,11 @@ Se si sta registrando un dispositivo Mac OS X, vedere [Registrare il dispositivo
 
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png) 
 
-4. Esaminare l'elenco dei dati che l'amministratore IT può o meno visualizzare sul dispositivo registrato e quindi toccare **Continua**.
+4. Esaminare l'elenco dei dati che l'amministratore IT può o meno visualizzare nel dispositivo registrato e toccare **Continua**
 
     ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png) 
 
-5.  Nella schermata **Operazioni successive** leggere cosa accade durante la registrazione e quindi toccare **Registra**.
+5.  Nella schermata **Operazioni successive** leggere cosa accade durante la registrazione, quindi toccare **Registra**.
 
     ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png) 
 
@@ -79,7 +79,7 @@ Se si sta registrando un dispositivo Mac OS X, vedere [Registrare il dispositivo
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png) 
 
-12. Nella schermata **Company Access Setup** (Configurazione accesso aziendale) toccare **Continua**. Se l'amministratore IT ha impostato altri requisiti di sicurezza, ad esempio la necessità di impostare una password, seguire le istruzioni visualizzate fino a soddisfare tutti i requisiti di conformità, tornare alla schermata Company Access Setup (Configurazione accesso aziendale) e quindi toccare **Continua**.
+12. Nella schermata **Company Access Setup** (Configurazione accesso aziendale) toccare **Continua**. Se l'amministratore IT ha impostato altri requisiti di sicurezza, ad esempio la necessità di impostare una password, seguire le istruzioni visualizzate fino a soddisfare tutti i requisiti di conformità, tornare alla schermata Configurazione dell'accesso aziendale e quindi toccare **Continua**
 
     ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png) 
 
@@ -96,6 +96,6 @@ Il dispositivo è ora registrato in Intune e si riapre l'app Portale aziendale.
 ### Vedere anche
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

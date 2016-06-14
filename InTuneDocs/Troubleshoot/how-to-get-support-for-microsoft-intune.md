@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,14 +37,13 @@ Per risolvere i problemi relativi a Intune autonomamente, vedere [Suggerimenti g
 
 2.  Sotto l'intestazione **Crea una richiesta di assistenza** selezionare la categoria del problema per cui si vuole aprire un ticket:
 
-    -   Per problemi relativi alla fatturazione e alle licenze, selezionare le **informazioni sul prodotto e sulla fatturazione**.
+    -   Per problemi relativi alla fatturazione e alle licenze, selezionare la sezione con le **informazioni sul prodotto e sulla fatturazione**.
 
     -   Per tutti gli altri problemi di Intune, selezionare **Gestione dei dispositivi mobili**. Questa opzione riguarda anche Office 365 MDM e System Center Configuration Manager con Intune.
 
-    > [!NOTE]
-    > Può essere necessario fare clic su **altro** nella parte inferiore dell'elenco per visualizzare tutte le categorie.
+    > [!NOTE] Può essere necessario fare clic su **altro** nella parte inferiore dell'elenco per visualizzare tutte le categorie.
 
-3.  Nella pagina per l'**identificazione del problema** selezionare la **funzionalità** e il **sintomo** per cui si richiede assistenza. Il sistema chiede di specificare un **riepilogo** e i **dettagli del problema**.
+3.  Nella pagina per l'**identificazione del problema** selezionare la **funzionalità** e il **sintomo** per cui si richiede assistenza. Viene richiesto di fornire un **riepilogo** e i **dettagli** del problema.
 
 4.  Nella pagina dei **suggerimenti** sono disponibili collegamenti a contenuti che possono aiutare a risolvere il problema autonomamente.  Se il problema persiste, fare clic sul pulsante per **continuare** nella parte inferiore della pagina per inviare la richiesta di servizio.
 
@@ -148,6 +147,6 @@ Ruolo di Microsoft:
 [Domande frequenti per Microsoft Intune](/intune/understand-explore/frequently-asked-questions-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

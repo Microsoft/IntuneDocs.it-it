@@ -30,7 +30,7 @@ Usare le informazioni in questa sezione per risolvere i problemi degli aggiornam
 
 Se queste informazioni non consentono di risolvere il problema, vedere [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md) per trovare altri modi per ottenere assistenza.
 
-La tabella seguente elenca i codici di errore dell'**agente di aggiornamento** di Intune. Se non è possibile trovare un codice errore specifico in questa tabella, vedere [Windows Update Agent Result Codes](http://go.microsoft.com/fwlink/?LinkID=221542) (Codici di risultato dell'Agente di Windows Update).
+La tabella seguente elenca i codici di errore dell'**agente di aggiornamento** di Intune. Se non è possibile trovare un codice errore specifico in questa tabella, vedere [Codici di risultato dell'Agente di Windows Update](http://go.microsoft.com/fwlink/?LinkID=221542).
 
 |Codice errore|Nome simbolico|Altre informazioni|
 |--------------|-----------------|--------------------|
@@ -250,7 +250,7 @@ La tabella seguente elenca i codici di errore dell'**agente di aggiornamento** d
 - Registrano un uso elevato della CPU.
 - L'installazione delle applicazioni tramite il portale di Intune è lenta. 
 - Microsoft Intune Center genera l'errore seguente: *Errore durante l'aggiornamento del computer. Errore: codice 0x800705b4*.
-- Nel campo relativo allo stato in Console di amministrazione di Intune > Gruppi > Tutti i dispositivi viene visualizzato: *Uno o più agenti installati nel computer presentano errori. Le informazioni relative al computer potrebbero non essere accurate o aggiornate.*.
+- Nel campo relativo allo stato in Console di amministrazione di Intune > Gruppi > Tutti i dispositivi viene visualizzato: *Uno o più agenti installati nel computer presentano errori. Le informazioni relative al computer potrebbero non essere accurate o aggiornate*.
 
 Questo problema può verificarsi se gli aggiornamenti sostituiti (aggiornamenti che sono stati sostituiti da un altro aggiornamento) non sono stati rifiutati per un lungo periodo. Durante determinati processi, ad esempio l'installazione di un'applicazione, Windows controlla tutti gli aggiornamenti sostituiti in sequenza in modo che gli aggiornamenti e i relativi successori possano essere mappati correttamente. Se l'elenco degli aggiornamenti sostituiti aumenta in modo eccessivo, questa attività di controllo può determinare un uso elevato della CPU a causa del carico di elaborazione e del tempo necessario. Il problema interessa principalmente i client che eseguono Windows 7 dato il grande numero di aggiornamenti sostituiti disponibili per questo sistema operativo. I sistemi operativi Windows 8 e versioni successive non dispongono di altrettanti aggiornamenti sostituiti e, pertanto, non sono soggetti al problema.
 
@@ -264,10 +264,10 @@ Questo problema può verificarsi se gli aggiornamenti sostituiti (aggiornamenti 
 Se si esegue Windows 7, assicurarsi anche di avere installato l'aggiornamento seguente:[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265) (3050265 Client di Windows Update per Windows 7: giugno 2015).
 
 ### Passaggi successivi
-Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

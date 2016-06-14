@@ -6,7 +6,7 @@ description:
 keywords:
 author: nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.suite: ems
 Dopo aver distribuito Microsoft Intune, potrebbero verificarsi problemi relativi alla configurazione o ai client. Le risorse seguenti possono aiutare a individuare la causa dei problemi e a risolverli.
 
 > [!NOTE]
-> Per creare una richiesta di supporto o per visualizzarne una esistente, fare clic [qui](https://portal.office.com/admin/default.aspx) per visitare l'interfaccia di amministrazione di Office 365. Per altre informazioni sulle opzioni di supporto tecnico, vedere [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
+> Per creare una richiesta di supporto o visualizzare una richiesta esistente, [visitare l'interfaccia di amministrazione di Office 365](https://portal.office.com/admin/default.aspx). Per altre informazioni sulle opzioni di supporto, vedere [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 ## Definire il problema
 
 -   Qual è il comportamento?
@@ -45,6 +45,8 @@ Dopo aver distribuito Microsoft Intune, potrebbero verificarsi problemi relativi
 -   Con quale frequenza si verifica questo problema e si tratta di un problema sporadico o coerente?
 
 -   È possibile che si verifichi un problema di autenticazione per l'utente? Se è possibile, verificare se l'utente può accedere ad altri servizi che usano Azure Active Directory. Vedere anche se l'utente può accedere da un altro dispositivo.
+
+-   È stato controllato lo stato del servizio? È possibile monitorare l'integrità dei servizi Intune nel [portale di gestione di Office 365](https://portal.office.com/Admin/Default.aspx). Scegliere **Integrità dei servizi** nel riquadro a sinistra. 
 
 ## Raccogliere i dati disponibili
 
@@ -64,7 +66,7 @@ Dopo aver distribuito Microsoft Intune, potrebbero verificarsi problemi relativi
 
 -   È possibile aprire una richiesta di supporto. Il supporto tecnico di Intune potrà fornire un'assistenza migliore se è stato definito il problema e se sono stati raccolti i dati disponibili.
 
-    Per creare una richiesta di supporto, fare clic [qui](https://portal.office.com/admin/default.aspx) per visitare l'interfaccia di amministrazione di Office 365. Per altre informazioni sulle opzioni di supporto tecnico, vedere [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
+    per creare una richiesta di supporto [visitare l'interfaccia di amministrazione di Office 365](https://portal.office.com/admin/default.aspx). Per altre informazioni sulle opzioni di supporto, vedere [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 ## Risorse della community
 È possibile trovare altre informazioni utili in queste risorse della community:
@@ -77,8 +79,8 @@ Dopo aver distribuito Microsoft Intune, potrebbero verificarsi problemi relativi
 
 -   [Forum su Intune](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-## Passaggi successivi
-Gli argomenti elencati di seguito illustrano la risoluzione dei problemi per problemi specifici. Se tali informazioni non risultano utili, contattare il supporto Microsoft come descritto in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
+### Passaggi successivi
+Gli argomenti elencati di seguito illustrano la risoluzione dei problemi per problemi specifici. Se tali informazioni non risultano utili, contattare il supporto tecnico Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 
@@ -93,9 +95,8 @@ Gli argomenti elencati di seguito illustrano la risoluzione dei problemi per pro
 [Risolvere i problemi di installazione client in Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Risolvere i problemi degli aggiornamenti software in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-g
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

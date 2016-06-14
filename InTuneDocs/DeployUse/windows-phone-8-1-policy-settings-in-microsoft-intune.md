@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Impostazioni dei criteri di Windows Phone 8.1 in Microsoft Intune | Microsoft Intune
+title: Impostazioni dei criteri di Windows Phone 8.1 | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -29,11 +29,17 @@ ms.suite: ems
 
 ## Impostazioni di configurazione generale
 
-Usare il **criterio di configurazione generale per Windows Phone** di Microsoft Intune per configurare le impostazioni seguenti per i dispositivi Windows Phone 8.1:
+Usare i **criteri di configurazione generale per Windows Phone (Windows Phone 8.1 e versioni successive)** di Microsoft Intune per configurare le impostazioni seguenti per i dispositivi Windows Phone 8.1:
 
 -   **Impostazioni di sicurezza del dispositivo mobile** : scegliere da un elenco di impostazioni predefinite che permettono di controllare una gamma di funzionalità e caratteristiche nel dispositivo.
 
 -   **App conformi e non conformi**: specificare un elenco di app conformi oppure non conformi nella società. Dispositivi Windows Phone possono bloccare o consentire l'installazione di queste applicazioni.
+
+### Impostazioni di applicabilità
+
+|Nome impostazione|Dettagli|
+|----------------|----------------------------------|
+|**Applica tutte le configurazioni a Windows 10**|Consente di applicare le impostazioni di questi criteri ai dispositivi Windows 10 Mobile, oltre ai dispositivi Windows Phone 8.1.|
 
 ### Impostazioni della password
 
@@ -54,7 +60,7 @@ Usare il **criterio di configurazione generale per Windows Phone** di Microsoft 
 
 |Nome impostazione|Dettagli|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Richiedi crittografia sui dispositivi mobili**|Richiede che i dati sui dispositivi mobili supportati siano crittografati.<br>Per i dispositivi Windows Phone 8, è necessario impostare l'opzione su **Sì**.|sì|Sì|
+|**Richiedi crittografia sui dispositivi mobili**|Richiede che i dati sui dispositivi mobili supportati siano crittografati.<br>Per i dispositivi Windows Phone 8, è necessario impostare su **Sì**.|sì|Sì|
 
 ### Impostazioni di sistema
 
@@ -108,7 +114,7 @@ Usare il **criterio di configurazione generale per Windows Phone** di Microsoft 
 |**Consenti copia e incolla**|Consente le funzionalità copia e incolla nel dispositivo.|No|Sì|
 
 ### Impostazioni per le app conformi e non conformi
-Nell'elenco delle **app conformi e &amp;non conformi** specificare un elenco di app conformi o non conformi usando le informazioni seguenti:
+Nell'elenco **app conformi &amp; e non conformi** specificare un elenco di app conformi o non conformi usando le informazioni seguenti:
 
 > [!NOTE]
 > Un singolo criterio può contenere solo un elenco di app conformi o non conformi. Non è possibile specificare entrambi nello stesso criterio.
@@ -121,8 +127,7 @@ Nell'elenco delle **app conformi e &amp;non conformi** specificare un elenco di 
 |**Importa app**|Importa un elenco di app specificate in un file con valori delimitati da virgole. Per il file usare il formato nome applicazione, autore, URL.|
 |**Modifica**|Consente di modificare il nome, l'autore e l'URL dell'app selezionata.|
 |**Eliminazione**|Elimina l'app selezionata dall'elenco.|
-> [!IMPORTANT]
-> Se si specifica un elenco di applicazioni consentite per i dispositivi Windows Phone 8.1, è necessario aggiungere l'app portale aziendale a questo elenco, altrimenti verrà bloccato.
+> [!IMPORTANT] Se si specifica un elenco di applicazioni consentite per i dispositivi Windows Phone 8.1, è necessario aggiungere l'app Portale aziendale a questo elenco, altrimenti verrà bloccata.
 
 
 ### Informazioni di riferimento per le app conformi e non conformi
@@ -141,7 +146,7 @@ Usare i **criteri di configurazione personalizzati per Windows Phone** di Micros
 
 Questa funzionalità consente di distribuire le impostazioni di Windows Phone che non possono essere configurate con i criteri di configurazione generale di Intune. Per informazioni sulle impostazioni che è possibile configurare con questi criteri, vedere [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-Per informazioni sulla creazione di impostazioni OMA URI per i dispositivi Windows Phone, vedere la [documentazione relativa al protocollo Windows Phone 8.1 MDM](http://technet.microsoft.com/library/dn499787.aspx)..
+Per informazioni sulla creazione di impostazioni di OMA URI per i dispositivi Windows Phone, vedere la [documentazione relativa al protocollo Windows Phone 8.1 MDM](http://technet.microsoft.com/library/dn499787.aspx).
 
 ### Impostazioni generali
 
@@ -169,6 +174,6 @@ Nella finestra di dialogo **Aggiungi o modifica impostazione URI OMA** specifica
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

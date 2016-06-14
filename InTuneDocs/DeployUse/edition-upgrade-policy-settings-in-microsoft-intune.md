@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Impostazioni dei criteri di aggiornamento dell'edizione Windows in Microsoft Intune | Microsoft Intune
+title: Impostazioni dei criteri di aggiornamento dell'edizione Windows | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -44,11 +44,11 @@ Prima di iniziare l'aggiornamento dei dispositivi alla versione più recente, è
 |**Descrizione**|Immettere facoltativamente una descrizione per i criteri che consenta di identificarli nella console di Intune.
 |**Edizione di aggiornamento**|Dall'elenco a discesa selezionare la versione di Windows 10 Desktop, Windows 10 Holographic o Windows 10 Mobile a cui aggiornare i dispositivi specificati.
 |**Codice Product Key**|Specificare il codice Product Key ottenuto da Microsoft che può essere usato per aggiornare tutti i dispositivi Desktop Windows 10 di destinazione.<br>Dopo aver creato criteri che contengono un codice Product Key, non è possibile modificare il codice Product Key in un secondo momento, perché il codice viene nascosto per motivi di sicurezza. Per modificare il codice Product Key, è necessario immettere nuovamente l'intero codice.
-|**File di licenza**|Fare clic su **Sfoglia** per selezionare il file di licenza ottenuto da Microsoft che contiene informazioni sulla licenza per l'edizione Windows Holographic alla quale si vogliono aggiornare i dispositivi di destinazione.
+|**File di licenza**|Fare clic su **Sfoglia** per selezionare il file di licenza ottenuto da Microsoft che contiene informazioni sulla licenza per l'edizione Windows Holographic o Windows 10 Mobile alla quale si vogliono aggiornare i dispositivi di destinazione.
 
 ### Vedere anche
 [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

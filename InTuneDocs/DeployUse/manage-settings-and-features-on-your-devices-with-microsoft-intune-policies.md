@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune | Microsoft Intune
+title: Gestire impostazioni e funzionalità nei dispositivi con i criteri | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -35,15 +35,15 @@ I criteri di Intune rientrano nelle seguenti categorie. La categoria usata influ
 
 - **Criteri di configurazione:** usati comunemente per gestire le impostazioni di sicurezza e le funzionalità dei dispositivi. Usare le informazioni in questo argomento per informazioni su come creare e distribuire tali criteri e per approfondire la conoscenza delle impostazioni disponibili.
 - **Criteri di conformità dei dispositivi:** definiscono le regole e le impostazioni a cui un dispositivo si deve adeguare per essere considerato conforme ai criteri di accesso condizionale. È anche possibile usare tali criteri per monitorare e correggere la conformità dei dispositivi indipendentemente dall'accesso condizionale.
-Per informazioni dettagliate, vedere [Criteri di conformità dei dispositivi in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)..
+Per informazioni dettagliate vedere [Criteri di conformità dei dispositivi in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Criteri di accesso condizionale:** questi criteri consentono di proteggere la posta elettronica e altri servizi in base alle condizioni specificate dall'utente.
-Per informazioni dettagliate, vedere [Restrict access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Limitare l'accesso alla posta elettronica e ai servizi di O365 con Microsoft Intune).
-- **Criteri di registrazione dei dispositivi aziendali:** per informazioni sui criteri di registrazione dei dispositivi aziendali, vedere [Configurare la gestione di iOS e Mac con Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
+Per informazioni dettagliate vedere [Limitare l'accesso alla posta elettronica e ai servizi di Office 365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+- **Criteri di registrazione dei dispositivi aziendali**: per informazioni sui criteri di registrazione dei dispositivi aziendali, vedere [Configurare la gestione di iOS e Mac con Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md).
 - **Criteri di accesso alle risorse:** i criteri di questo gruppo interagiscono per consentire agli utenti di accedere ai file e alle risorse necessarie per svolgere le attività, ovunque si trovino.
-Per informazioni dettagliate, vedere [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md) (Abilitare l'accesso alle risorse aziendali con Microsoft Intune).
+Per informazioni dettagliate vedere [Abilitare l'accesso alle risorse aziendali con Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
 
-Per l'elenco completo dei criteri di Intune, vedere [Informazioni di riferimento sui criteri di Microsoft Intune](microsoft-intune-policy-reference.md).
+Per l'elenco completo dei criteri di Intune vedere [Informazioni di riferimento sui criteri di Microsoft Intune](microsoft-intune-policy-reference.md).
 
 
 
@@ -54,8 +54,7 @@ Per l'elenco completo dei criteri di Intune, vedere [Informazioni di riferimento
 
 2.  Scegliere il criterio desiderato e scegliere di usare le impostazioni consigliate per il criterio (se disponibili; è possibile modificare queste impostazioni successivamente) o di creare un criterio personalizzato con le proprie impostazioni.
 
-    > [!TIP]
-    > Per suggerimenti sulla scelta dei criteri corretti, vedere [Informazioni di riferimento sui criteri di Microsoft Intune](microsoft-intune-policy-reference.md).
+    > [!TIP] Per suggerimenti sulla scelta dei criteri corretti vedere [Informazioni di riferimento sui criteri di Microsoft Intune](microsoft-intune-policy-reference.md).
 
 3.  Quando si è pronti, fare clic su **Crea criterio**.
 
@@ -90,11 +89,11 @@ Dopo avere creato un criterio, è possibile distribuirlo in uno o più gruppi di
 
 ## Distribuire un criterio di configurazione
 
-1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi fare clic su **Gestisci distribuzione**..
+1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi fare clic su **Gestisci distribuzione**.
 
 2.  Nella finestra di dialogo **Gestisci distribuzione** :
 
-    -   **Per distribuire il criterio**, selezionare uno o più gruppi ai quali si vuole distribuire il criterio, quindi fare clic su **Aggiungi** &gt; **OK**.
+    -   **Per distribuire il criterio**: selezionare uno o più gruppi in cui si vuole distribuire il criterio, quindi fare clic su **Aggiungi** &gt; **OK**.
 
     -   **Per chiudere la finestra di dialogo senza distribuire il criterio**, fare clic su **Annulla**.
 
@@ -116,11 +115,11 @@ Quando si seleziona un criterio distribuito, è possibile visualizzare altre inf
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/)fare clic su **Gruppi**, quindi selezionare un gruppo di dispositivi.
 
-2.  Selezionare i dispositivi per i quali si vogliono aggiornare i criteri, quindi fare clic su **Attività remote** &gt; **Aggiorna criteri**.
+2.  Selezionare i dispositivi di cui aggiornare i criteri, quindi fare clic su **Attività remote** &gt; **Aggiorna criteri**.
 
 3.  Fare clic su **Attività remote** nell'angolo inferiore destro della console di amministrazione di Intune per verificare lo stato delle attività.
 
-## Informazioni di riferimento per i criteri di Intune
+## Domande frequenti sui criteri Intune
 
 ### Quanto tempo è necessario ai dispositivi mobili per ottenere i criteri o le app dopo la distribuzione?
 Quando viene distribuito un criterio o un'app, Intune prova immediatamente a inviare una notifica al dispositivo per avvisarlo di contattare il servizio Intune per controllare la disponibilità di aggiornamenti. Tale operazione richiede in genere meno di 5 minuti.
@@ -132,7 +131,8 @@ In questo caso, il dispositivo otterrà il criterio al successivo controllo pian
 - iOS: ogni 6 ore
 - Android: ogni 8 ore
 - Windows Phone: ogni 8 ore
-- PC Windows registrati come dispositivi: ogni 24 ore
+- Dispositivi Windows RT registrati: ogni 24 ore
+- PC Windows 8.1 e Windows 10 registrati come dispositivi: ogni 8 ore
 
 Se il dispositivo è stato appena registrato, la frequenza di controllo sarà più maggiore come segue:
 
@@ -172,7 +172,7 @@ Intune non valuta il payload dei file di configurazione Apple o del criterio per
 
 Pertanto, quando si distribuisce un criterio personalizzato, verificare che le impostazioni configurate non siano in conflitto con i criteri di conformità o di configurazione oppure con altri criteri personalizzati. Nel caso di un criterio personalizzato con impostazioni in conflitto, l'ordine in cui le impostazioni vengono applicate sarà casuale.
 
-### Cosa succede quando un criterio viene eliminato o non è più applicabile
+### Cosa succede quando un criterio viene eliminato o non è più applicabile?
 Quando si elimina un criterio o si rimuove un dispositivo da un gruppo in cui è stato distribuito un criterio, il criterio e le impostazioni vengono rimossi dal dispositivo in base alle seguenti tabelle:
 
 #### dispositivi registrati
@@ -214,15 +214,15 @@ Quando si elimina un criterio o si rimuove un dispositivo da un gruppo in cui è
 
 #### PC Windows che eseguono il software client Intune
 
-- **Impostazioni di Endpoint Protection**: vengono ripristinati i valori consigliati delle impostazioni. L'unica eccezione a questa regola è l'impostazione **Partecipa a Microsoft Active Protection Service** , il cui valore predefinito è **No**. Per informazioni dettagliate, vedere [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Proteggere i PC Windows con Endpoint Protection per Microsoft Intune).
-- **Impostazioni degli aggiornamenti software**: le impostazioni vengono ripristinate allo stato predefinito per il sistema operativo. Per informazioni dettagliate, vedere [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune).
+- **Impostazioni di Endpoint Protection**: vengono ripristinati i valori consigliati delle impostazioni. L'unica eccezione a questa regola è l'impostazione **Partecipa a Microsoft Active Protection Service** , il cui valore predefinito è **No**. Per informazioni dettagliate, vedere [Proteggere i PC Windows con Endpoint Protection per Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- **Impostazioni degli aggiornamenti software**: le impostazioni vengono ripristinate allo stato predefinito per il sistema operativo. Per informazioni dettagliate, vedere [Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 - **Impostazioni di Microsoft Intune Center**: tutte le informazioni di contatto per il supporto configurate dal criterio vengono eliminate dai computer.
-- **Impostazioni di Windows Firewall**: le impostazioni vengono ripristinate allo stato predefinito per il sistema operativo del computer. Per informazioni dettagliate, vedere [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Proteggere i PC Windows con Endpoint Protection per Microsoft Intune).
+- **Impostazioni di Windows Firewall**: le impostazioni vengono ripristinate allo stato predefinito per il sistema operativo del computer. Per informazioni dettagliate, vedere [Proteggere i PC Windows con Endpoint Protection per Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

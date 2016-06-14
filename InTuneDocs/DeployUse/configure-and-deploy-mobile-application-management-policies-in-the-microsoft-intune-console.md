@@ -34,18 +34,17 @@ I criteri di gestione delle applicazioni mobili supportano:
 
 -   Dispositivi che eseguono iOS 7 e versioni successive
 
-> [!TIP]
-> I criteri di gestione delle applicazioni mobili supportano i dispositivi registrati con Intune.
-> 
-> Per informazioni su come creare i criteri di gestione delle app per i dispositivi non gestiti da Intune, vedere [Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+> [!TIP] I criteri di gestione delle applicazioni mobili supportano i dispositivi registrati con Intune.
+>
+> Per informazioni su come creare criteri di gestione delle app per i dispositivi non gestiti da Intune, vedere [Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune).
 
 A differenza degli altri criteri di Intune, i criteri di gestione delle applicazioni mobili non vengono distribuiti direttamente ma, al contrario, è possibile associare i criteri all'app che si vuole limitare. Le impostazioni specificate diventeranno effettive quando l'app viene distribuita e installata nei dispositivi.
 
 Per applicare restrizioni a un'app, questa deve includere Microsoft App Software Development Kit (SDK). Esistono due metodi per ottenere questo tipo di app:
 
--   **Usare un'app gestita da criteri**: include App SDK. Per aggiungere questo tipo di applicazione, è possibile specificare un collegamento all'app da un archivio di app, ad esempio l'iTunes store o Google Play. Non sono richieste ulteriori elaborazioni per questo tipo di app. Vedere un elenco delle [app che si possono usare con i criteri di gestione delle applicazioni di Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+-   **Usare un'app gestita da criteri**: include App SDK. Per aggiungere questo tipo di applicazione, è possibile specificare un collegamento all'app da un archivio di app, ad esempio l'iTunes store o Google Play. Non sono richieste ulteriori elaborazioni per questo tipo di app. Vedere l'elenco delle [app che è possibile usare con i criteri di gestione delle applicazioni mobili di Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
--   **Usare un'app di cui è stato eseguito il wrapping**: app che sono state riassemblate per includere App SDK usando lo **strumento di wrapping delle app di Microsoft Intune**. Questo strumento viene in genere usato per elaborare le app aziendali create internamente. Non può essere usato per elaborare le app state scaricate dall'App Store. Vedere [Preparare le app iOS per la gestione delle applicazioni mobili con lo strumento per la disposizione testo delle app di Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Preparare le app Android per la gestione delle applicazioni mobili con lo strumento per la disposizione testo delle app di Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Usare un'app di cui è stato eseguito il wrapping**: app che sono state riassemblate per includere App SDK usando lo **strumento di wrapping delle app di Microsoft Intune**. Questo strumento viene in genere usato per elaborare le app aziendali create internamente. Non può essere usato per elaborare le app state scaricate dall'App Store. Vedere [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app iOS per la gestione delle applicazioni mobili con lo strumento per la disposizione testo delle app di Microsoft Intune) e [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app Android per la gestione delle applicazioni mobili con lo strumento per la disposizione testo delle app di Microsoft Intune).
 
 Alcune app gestite, ad esempio l'app Outlook per iOS e Android supportano **più identità**. Ciò significa che Intune si applica solo le impostazioni di gestione di account aziendali o dati nell'applicazione.
 
@@ -57,8 +56,7 @@ Ad esempio, utilizzando Outlook app:
 
 -   L'account aziendale usato deve essere lo stesso account specificato durante la registrazione del dispositivo con Intune.
 
-> [!TIP]
-> Se si usa Intune con Configuration Manager, vedere [Come controllare le app usando i criteri di gestione delle applicazioni mobili in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
+> [!TIP] Se si usa Intune con Configuration Manager, vedere [Come controllare le app usando i criteri di gestione delle applicazioni mobili in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
 ## Creare e distribuire un'app con criterio di gestione delle applicazioni mobili
 
@@ -87,7 +85,7 @@ Quando si pubblica un'app gestita, le procedure possono essere diverse a seconda
 
 #### Per pubblicare un'app gestita da criteri
 
-1.  Quando si è pronti per caricare l'app nello spazio di archiviazione cloud, seguire le istruzioni in [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+1.  Quando si è pronti per caricare l'app nello spazio di archiviazione cloud, seguire le istruzioni in [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
 
 2.  Per le app iOS, selezionare **App iOS gestita dall'App Store**in **Selezionare il modo in cui questo software viene fornito ai dispositivi**.
 
@@ -101,9 +99,9 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
 
 #### Per pubblicare un'app elaborata con lo strumento di wrapping delle app di Microsoft Intune
 
-1.  Quando si è pronti per caricare l'app nello spazio di archiviazione cloud, seguire le istruzioni in [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+1.  Quando si è pronti per caricare l'app nello spazio di archiviazione cloud, seguire le istruzioni in [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
 
-2.  Selezionare **Programma di installazione software** in **Selezionare il modo in cui questo software viene fornito ai dispositivi**.
+2.  Selezionare **Programma di installazione software**in **Selezionare il modo in cui questo software viene fornito ai dispositivi**.
 
 3.  Selezionare **Pacchetto app iOS (file &#42;.ipa)** in **Selezionare il tipo di file del programma di installazione software**.
 
@@ -121,7 +119,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
 
     -   **Criteri di gestione per applicazioni mobili (iOS 7 e versioni successive)**
 
-    È possibile usare le impostazioni consigliate o personalizzare le impostazioni. For altri dettagli, vedere [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+    È possibile usare le impostazioni consigliate o personalizzare le impostazioni. Per i dettagli vedere [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune).
 
 3.  Configurare le seguenti impostazioni come necessario: Le opzioni possono variare a seconda del tipo di dispositivo per il quale si sta configurando il criterio.
 
@@ -141,7 +139,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
     |**Richiedi la conformità del dispositivo ai criteri aziendali per l'accesso**|Consente l'uso dell'app solo se il dispositivo non è jailbroken o rooted.|
     |**Controlla di nuovo i requisiti di accesso dopo (minuti)**|Nel campo **Timeout** specificare il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app dopo l'avvio.|
     |**Periodo di prova offline**|Se il dispositivo è offline specificare il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app.|
-    |**Crittografa dati app**|Specifica che tutti i dati associati a questa app verranno crittografati, compresi i dati archiviati esternamente come, ad esempio, i dati delle schede SD.<br /><br />**Crittografia per iOS**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, i dati vengono crittografati a riposo usando la crittografia a livello di dispositivo fornita dal sistema operativo. Ciò viene abilitato tramite i criteri PIN del dispositivo che devono essere impostati dall'amministratore IT. Quando viene richiesto un PIN, i dati verranno crittografati in base alle impostazioni nei criteri di gestione delle applicazioni mobili. Come indicato nella documentazione di Apple [i moduli usati da iOS 7 sono conformi agli standard FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Crittografia per Android**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, la crittografia viene fornita da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O dei file in base all'impostazione nei criteri di gestione delle applicazioni mobili. Le app gestite su Android usano la crittografia AES-128 in modalità CBC con le librerie di crittografia della piattaforma. Il metodo di crittografia non è conforme agli standard FIPS 140-2. Il contenuto nell'archivio del dispositivo verrà sempre crittografato.|
+    |**Crittografa dati app**|Specifica che tutti i dati associati a questa app verranno crittografati, compresi i dati archiviati esternamente come, ad esempio, i dati delle schede SD.<br /><br />**Crittografia per iOS**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, i dati vengono crittografati a riposo usando la crittografia a livello di dispositivo fornita dal sistema operativo. Ciò viene abilitato tramite i criteri PIN del dispositivo che devono essere impostati dall'amministratore IT. Quando viene richiesto un PIN, i dati verranno crittografati in base alle impostazioni nei criteri di gestione delle applicazioni mobili. Come indicato nella documentazione di Apple [i moduli utilizzati dal iOS 7 sono FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Crittografia per Android**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, la crittografia viene fornita da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O file.  Il contenuto nell'archivio del dispositivo verrà sempre crittografato. Il metodo di crittografia non è conforme agli standard FIPS 140-2.|
     |**Blocca acquisizione schermo** (solo per dispositivi Android)|Specifica che le funzionalità di acquisizione schermo del dispositivo vengono bloccate quando si usa questa app.|
 
 4.  Al termine, fare clic su **Salva criterio**.
@@ -151,11 +149,10 @@ Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell
 ## **Passaggio 4:** Associare l'app con i criteri di gestione delle applicazioni mobili e quindi distribuirla
 Distribuire l'app assicurandosi di selezionare i criteri di gestione delle applicazioni mobili nella pagina **Gestione delle app mobili** per associare i criteri all'app.
 
-Per informazioni dettagliate, vedere [Distribuire le app in Microsoft Intune](deploy-apps.md).
+Per i dettagli vedere [Distribuire app in Microsoft Intune](deploy-apps.md).
 
-> [!IMPORTANT]
-> Per i dispositivi che eseguono sistemi operativi precedenti a iOS 7.1, i criteri associati non verranno rimossi quando si disinstalla l'app.
-> 
+> [!IMPORTANT] Per i dispositivi che eseguono sistemi operativi precedenti a iOS 7.1, i criteri associati non verranno rimossi quando si disinstalla l'app.
+>
 > Se viene annullata la registrazione del dispositivo da Intune, i criteri non verranno rimossi dalle app. Tutte le app a cui erano stati applicati i criteri conserveranno le impostazioni dei criteri anche dopo la disinstallazione e reinstallazione dell'app.
 
 ### Cosa fare quando un'app è già stata distribuita nei dispositivi
@@ -165,8 +162,7 @@ In questo caso, è necessario chiedere all'utente di disinstallare manualmente l
 
 Tuttavia, per i dispositivi che eseguono iOS 9 e versioni successive, Intune chiederà automaticamente all'utente l'autorizzazione ad assumere la gestione dell'app esistente. Se l'utente accetta, l'app verrà gestita da Intune e verranno inoltre applicati tutti i criteri di gestione delle applicazione mobili associati all'app.
 
-> [!TIP]
-> Se il dispositivo è in modalità di supervisione, Intune assumerà la gestione dell'app esistente senza chiedere agli utenti l'autorizzazione.
+> [!TIP] Se il dispositivo è in modalità di supervisione, Intune assumerà la gestione dell'app esistente senza chiedere l'autorizzazione all'utente.
 
 ## **Passaggio 5:** Monitorare la distribuzione dell'app.
 Dopo aver creato e distribuito un'app associata ai criterio di gestione delle applicazioni mobili, usare le procedure seguenti per monitorare l'app e risolvere eventuali conflitti di criteri.
@@ -201,9 +197,6 @@ Nei casi in cui il dispositivo o l'utente riceva due criteri in conflitto, si ap
 -   Se al dispositivo non è stato ancora distribuito alcun criterio e vengono distribuite due impostazioni in conflitto, viene usata l'impostazione predefinita del dispositivo.
 
 
-
-
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

@@ -28,14 +28,14 @@ ms.suite: ems
 # Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune
 I criteri MAM (Mobile app management, Gestione delle app mobili) possono essere adottati in applicazioni eseguite su dispositivi gestiti o non gestiti da Intune. Per una descrizione più dettagliata del funzionamento dei criteri MAM e degli scenari supportati dai criteri MAM di Intune, leggere l'argomento [Proteggere i dati delle app con i criteri MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-In questo argomento viene descritto il processo di creazione di un criterio MAM nel **portale di Azure**. Il criterio MAM creato nel portale di Azure è supportato per tutti gli scenari di gestione delle app mobili:
+In questo argomento viene descritto il processo di creazione di un criterio MAM nel **portale di Azure**. Il portale di Azure è la nuova console di amministrazione per la creazione di criteri MAM. È consigliabile usare questo portale per creare criteri MAM. Il portale di Azure supporta gli scenari MAM seguenti:
 - Dispositivi registrati in Intune
 - Dispositivi gestiti da una soluzione MDM di terze parti
 - Dispositivi non gestiti da nessuna soluzione MDM (BYOD).
 
-Se si sta usando la **console di amministrazione di Intune** per la gestione dei dispositivi, è possibile creare un criterio MAM che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) stessa..
+Se si sta usando la **console di amministrazione di Intune** per la gestione dei dispositivi, è possibile creare un criterio MAM che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) stessa.
 >[!IMPORTANT]
-> È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Il portale di Azure è la nuova console di amministrazione per la creazione dei criteri MAM.
+> È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Il portale di Azure è la nuova console di amministrazione per la creazione dei criteri MAM. Se si creano criteri MAM sia nella console di amministrazione di Intune che nel portale di Azure, i criteri di quest'ultimo vengono applicati alle app e distribuiti agli utenti.
 
 Per visualizzare un elenco di impostazioni dei criteri supportate nelle piattaforme iOS e Android, selezionare una delle seguenti voci:
 
@@ -49,14 +49,13 @@ Prima di creare un criterio MAM, vedere le informazioni su [prerequisiti e suppo
 
     ![Schermata del pannello Gestione di applicazioni mobili di Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP]
-    > Se si usa il portale di Azure per la prima volta, leggere [Portale di Azure per i criteri MAM di Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) per acquisire familiarità con il portale.
+    > [!TIP] Se è la prima volta che si usa il portale di Azure, leggere prima [Portale di Azure per i criteri MAM di Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) per acquisire familiarità con il portale.
 
 2.  Nel pannello **Impostazioni** scegliere **Criteri per le app**.  Verrà visualizzato il pannello **Criteri per le app** in cui sarà possibile creare nuovi criteri e modificare i criteri esistenti.
 
     ![Schermata del pannello Criteri per le app con un elenco di criteri esistenti](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
 
-3.  Scegliere **Aggiungi criteri**..
+3.  Scegliere **Aggiungi criteri**.
 
     ![Schermata del pannello Criteri per le app con l'opzione Aggiungi criteri evidenziata ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -66,8 +65,7 @@ Prima di creare un criterio MAM, vedere le informazioni su [prerequisiti e suppo
 
 5.  Scegliere **App** per aprire il **pannello App** che contiene l'elenco delle app disponibili. È possibile selezionare una o più app dall'elenco che si vuole associare il criterio che si sta creando. Dopo aver selezionato le app, scegliere il pulsante **Seleziona** nella parte inferiore del pannello **App** per salvare la selezione.
 
-    > [!IMPORTANT]
-    > È necessario selezionare almeno un'app per creare un criterio.
+    > [!IMPORTANT] Per creare un criterio è necessario selezionare almeno un'app.
 
 6.  Nel pannello **Aggiungi criteri** scegliere **Configurare le impostazioni necessarie** per aprire il pannello delle impostazioni dei criteri.
 
@@ -169,6 +167,6 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 [End user experience for MAM enabled apps (Esperienza utente finale con app nelle quali è abilitato MAM)](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

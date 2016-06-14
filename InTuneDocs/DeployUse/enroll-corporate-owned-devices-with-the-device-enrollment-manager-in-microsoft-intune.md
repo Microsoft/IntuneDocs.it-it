@@ -36,15 +36,21 @@ Le organizzazioni possono usare Intune per gestire un numero elevato di disposit
 
 -   Configurare l'accesso ai dati aziendali
 
-Usare l'account di gestione dei dispositivi solo per i dispositivi che non riceveranno un messaggio di posta elettronica o non effettueranno l'accesso come utente specifico. I dispositivi gestiti con un account di gestione dei dispositivi non possono essere configurati con accesso condizionale, poiché sono anche scenari per utente. Il gestore del negozio non può reimpostare il dispositivo dal portale aziendale.
 
-**Esempi di scenario con manager di registrazione dispositivi:**
- un ristorante vuole adottare tablet POS per il personale di sala e monitor per gli ordini per il personale di cucina. I dipendenti non hanno quindi bisogno di accedere a dati aziendali o di effettuare l'accesso come utente. L'amministratore di Intune crea un account di manager di registrazione dispositivi e registra i dispositivi di proprietà dell'azienda con tale account. In alternativa, l'amministratore potrebbe concedere le credenziali di manager di registrazione dispositivi a un responsabile del ristorante, per consentirgli di registrare e gestire i dispositivi.
+**Esempi di scenario con un manager di registrazione dispositivi:** Un ristorante vuole adottare tablet POS per il personale di sala e il monitoraggio degli ordini per il personale di cucina. I dipendenti non hanno quindi bisogno di accedere a dati aziendali o di effettuare l'accesso come utente. L'amministratore di Intune crea un account di manager di registrazione dispositivi e registra i dispositivi di proprietà dell'azienda con tale account. In alternativa, l'amministratore potrebbe concedere le credenziali di manager di registrazione dispositivi a un responsabile del ristorante, per consentirgli di registrare e gestire i dispositivi.
 
 L'amministratore o il manager può quindi distribuire app specifiche del ruolo nei dispositivi del ristorante. Un amministratore può inoltre selezionare il dispositivo nella console di Intune e ritirarlo dalla gestione dei dispositivi mobili con la console di amministrazione.
 
+I dispositivi registrati con l'account di un manager di registrazione di dispositivi presentano le restrizioni seguenti:
+  - Nessun utente specifico. Tutti i dispositivi sono "senza utente". Pertanto, nessun accesso alla posta elettronica o ai dati aziendali, anche se la VPN, ad esempio, può comunque consentire l'accesso ai dati alle app dei dispositivi
+  - Nessun accesso condizionale. Questi infatti sono scenari per utente
+  - Nessuna reimpostazione dei dispositivi dal portale aziendale
+  - Nessuna app Apple VPP (Volume Purchase Program) a causa della necessità di un ID Apple per utente per la gestione delle app
+  - Non è possibile neanche la registrazione ad Apple Configurator o a un programma di registrazione di dispositivi di Apple (dispositivi iOS)
+
 > [!NOTE]
 > Gli account utente di manager di registrazione dispositivi con più di 20 dispositivi registrati potrebbero riscontrare problemi nell'uso dell'app Portale aziendale. Per distribuire le app aziendali ai dispositivi gestiti con il manager di registrazione dispositivi, distribuire l'app Portale aziendale come **Installazione richiesta** all'account utente del manager di registrazione dispositivi.
+> Per consentire prestazioni migliori, se si visualizza l'app Portale aziendale in un dispositivo manager di registrazione dispositivi, vengono visualizzati solo i dispositivi locali e solo se il dispositivo è stato registrato tramite l'app Portale aziendale. La gestione remota di altri dispositivi manager di registrazione dispositivi è possibile solo dalla console di Intune.
 
 ## Creare account del manager di registrazione dispositivi
 Gli account manager di registrazione dispositivi sono account utente con l'autorizzazione per registrare un numero elevato di dispositivi di proprietà dell'azienda. Solo gli utenti presenti nella console di Intune possono essere manager di registrazione dispositivi.
@@ -53,7 +59,7 @@ Gli account manager di registrazione dispositivi sono account utente con l'autor
 
 1.  Passare al [portale per gli account di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=698854) ed eseguire l'accesso con l'account amministratore.
 
-2.  Fare clic su **Aggiungi utente**..
+2.  Fare clic su **Aggiungi**.
 
 3.  Verificare che sia elencato l'account utente che sarà un manager di registrazione dispositivi. In caso contrario, per aggiungere l'utente fare clic su **Nuovo** e completare il processo di aggiunta utente. È necessaria una licenza di sottoscrizione per ciascun utente che accede al servizio e il *manager di registrazione dispositivi* non può essere un amministratore di Intune. Determinare se è necessario aggiungere altre licenze prima di usare questa funzionalità.
 
@@ -90,6 +96,6 @@ L'eliminazione di un manager di registrazione dispositivi non influisce sui disp
 -   La relazione dell'account del manager di registrazione dispositivi per eliminato con i dispositivi registrati resta valida, ma non è possibile registrare ulteriori dispositivi
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

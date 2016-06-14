@@ -48,12 +48,11 @@ I criteri di Gestione per applicazioni mobili (MAM) si applicano solo quando le 
 
     ![Schermata dell'app OneDrive con richiesta d'inserimento di un PIN](../media/AppManagement/iOS_AppPINPrompt.png)
 
-5.  Dopo aver impostato e confermato il PIN, sarà possibile accedere ai file in **OneDrive for Business**..
+5.  Dopo aver impostato e confermato il PIN, sarà possibile accedere ai file in **OneDrive for Business**.
 
     ![Schermata con il percorso del file aperto e l'elenco dei file esistenti](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > [!NOTE]
-    > Quando si modifica un criterio distribuito, le modifiche verranno applicate alla successiva apertura dell'applicazione.
+    > [!NOTE] Quando si modifica un criterio distribuito, le modifiche verranno applicate alla successiva apertura dell'applicazione.
 
 ##  Accesso a OneDrive in un dispositivo Android
 
@@ -106,13 +105,13 @@ Per questo scenario di esempio viene usato Microsoft Word.
 
     ![Schermata di una frase digitata in un documento di Word](../media/AppManagement/iOS_WordCreateCompanyDoc.PNG)
 
-5.  Aprire il documento che è stato salvato nel percorso di lavoro.  Copiare il testo, aprire l'account personale di **Facebook** e provare a incollare il testo copiato.  Si noterà che non è possibile incollare il contenuto nel nuovo post di Facebook. L'opzione Incolla non è disattivata, ma non accade nulla quando si seleziona **Incolla**..
+5.  Aprire il documento che è stato salvato nel percorso di lavoro.  Copiare il testo, aprire l'account personale di **Facebook** e provare a incollare il testo copiato.  Si noterà che non è possibile incollare il contenuto nel nuovo post di Facebook. L'opzione Incolla non è disattivata, ma non accade nulla quando si preme **Incolla**.
 
     ![Schermata delle opzioni di taglia, copia e incolla](../media/AppManagement/iOS_WordCopyCompany.png)
 
     ![Schermata che illustra l'impossibilità di incollare i dati nel post di Facebook](../media/AppManagement/iOS_FacebookPasteCompany.png)
 
-6.  Ripetere ora i passaggi 2 e 3 per creare un altro documento nuovo, digitare una frase a scelta e, anziché salvarla nel percorso di lavoro, salvarla nel percorso personale, ad esempio **OneDrive - Personale**..
+6.  Ripetere ora i passaggi 2 e 3 per creare un altro documento nuovo, digitare una frase a scelta e, anziché salvarla nel percorso di lavoro, salvarla nel percorso personale, ad esempio **OneDrive - Personale**.
 
     ![Schermata delle opzioni di taglia, copia e incolla con la frase selezionata da copiare](../media/AppManagement/iOS_WordCopyPersonal.png)
 
@@ -134,27 +133,35 @@ Per le app **OneDrive e Outlook**, è possibile usare un solo account aziendale.
 
 Per capire meglio come vengono gestiti gli account utente multipli, leggere lo scenario di esempio riportato sotto.
 
-L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri MAM. L'**Azienda X** distribuisce i criteri MAM **prima dell'** **Azienda Y**. L'account associato all'**Azienda X** otterrà i criteri MAM, a differenza dell'account associato all'Azienda Y. Se si vuole che l'account utente associato all'Azienda Y sia gestito con i criteri MAM, è necessario rimuovere l'utente associato all'Azienda X.
+L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri MAM. L'**Azienda X** distribuisce i criteri MAM **prima dell'****Azienda Y**. L'account associato all'**Azienda X** otterrà i criteri MAM, a differenza dell'account associato all'Azienda Y. Se si vuole che l'account utente associato all'Azienda Y sia gestito con i criteri MAM, è necessario rimuovere l'utente associato all'Azienda X.
 ### Aggiunta di un secondo account
 #### iOS
-Se si usa un dispositivo iOS, quando si prova ad aggiungere un secondo account aziendale sullo stesso dispositivo, verrà visualizzato un messaggio di blocco.  Verrà visualizzata anche un'opzione per rimuovere l'account esistente e aggiungerne uno nuovo. È possibile rimuovere l'account facendo clic su **Sì**..
+Se si usa un dispositivo iOS, quando si prova ad aggiungere un secondo account aziendale sullo stesso dispositivo, verrà visualizzato un messaggio di blocco.  Verrà visualizzata anche un'opzione per rimuovere l'account esistente e aggiungerne uno nuovo. È possibile farlo facendo clic su **Sì**.
 
 ![Schermata della finestra di dialogo con il messaggio di blocco e le opzioni Sì e No](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
-Se si usa un dispositivo Android, verrà visualizzato un messaggio di blocco con le istruzioni necessarie per rimuovere l'account esistente e aggiungerne uno nuovo.  Nei dispositivi Android, per rimuovere l'account esistente, passare a **Impostazioni &gt; Generale &gt; Gestione applicazioni &gt;Portale aziendale e selezionare "Cancella dati"**.
+Se si usa un dispositivo Android, verrà visualizzato un messaggio di blocco con le istruzioni necessarie per rimuovere l'account esistente e aggiungerne uno nuovo.  Nei dispositivi Android per rimuovere l'account esistente, passare a **Impostazioni &gt; Generali &gt; Applicazioni &gt;Portale aziendale e selezionare "Cancella dati"**
 
 ![Schermata del messaggio di errore con le istruzioni per rimuovere l'account](../media/AppManagement/Android_SwitchUser.png)
 
 ##  Visualizzazione di file multimediali con l'app di condivisione file Rights Management
-Per visualizzare file AV, PDF e di immagine su dispositivi Android, usare l'[app di condivisione file Microsoft Rights Management (RMS)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
+Per visualizzare file AV, PDF e di immagine in dispositivi Android, usare l'[app RMS (Microsoft Rights Management) sharing](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
 Scaricare questa app da Google Play Store.  Dopo aver installato l'app nel dispositivo, avviare l'applicazione ed eseguire l'autenticazione con le credenziali aziendali. Sarà ora possibile visualizzare file protetti e non protetti da altre app gestite da criteri.
+
+**Dispositivi Android non registrati in Intune**
+
+Prima di usare l'app RMS sharing per visualizzare i file di altre app gestite da Intune, avviare l'app RMS ed eseguire l'autenticazione con l'account aziendale.  Quando si effettua l'accesso, viene visualizzato il messaggio seguente **solo se non si dispone di una licenza RMS**:
+
+**Autenticazione riuscita. È ora possibile visualizzare i file aziendali, ma l'organizzazione non è configurata per consentire la protezione dei file. Per informazioni dettagliate, contattare l'amministratore IT.**
+
+Questo non impedisce l'uso dell'app RMS sharing per visualizzare i file aziendali. È comunque possibile aprire e visualizzare i file aziendali da altre app gestite da Intune. I criteri MAM sono ancora validi.  Il significato del messaggio è che non sarà possibile applicare le funzionalità di protezione aggiuntiva offerte dall'app RMS.  Per aggiungere protezione ai file è necessaria una licenza per RMS. Per altre informazioni sulle funzionalità di protezione dei file di RMS, vedere [Protect a file on a device (protect in-place) by using the Rights Management sharing application](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) (Proteggere un file in un dispositivo (protezione sul posto) tramite l'applicazione Rights Management sharing) e [Protect a file that you share by email by using the Rights Management sharing application](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email) (Proteggere un file condiviso tramite l'applicazione Rights Management sharing).
 
 
 ### Vedere anche
 [Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

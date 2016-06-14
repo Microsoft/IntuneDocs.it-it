@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Impostazioni dei criteri di sicurezza dei dispositivi mobili in Microsoft Intune | Microsoft Intune
+title: Impostazioni dei criteri di sicurezza dei dispositivi mobili | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -72,7 +72,7 @@ Quando si imposta la distribuzione di un criterio relativo alla lunghezza della 
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Richiedi crittografia sul dispositivo mobile**<sup>1</sup><br /><br />Per i dispositivi Windows Phone 8, impostare su **Sì**..<br /><br />Per abilitare la crittografia su dispositivi iOS, abilitare l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**..|Sì|No|Sì|No|Sì|
+|**Richiedi crittografia sul dispositivo mobile**<sup>1</sup><br /><br />Per i dispositivi Windows Phone 8, è necessario impostare su **Sì**.<br /><br />Per abilitare la crittografia su dispositivi iOS, abilitare l'impostazione **richiedono una password per sbloccare i dispositivi mobili**.|Sì|No|Sì|No|Sì|
 |**Richiedi crittografia sulle schede di memoria**<br /><br />Si applica ai dispositivi che sono anche gestiti da Exchange ActiveSync.|n/d|n/d|n/d (le app e i dati associati vengono crittografati automaticamente)|n/d|Sì|
 Informazioni aggiuntive per i dispositivi che eseguono Windows 8.1
 
@@ -217,6 +217,6 @@ Informazioni aggiuntive per i dispositivi che eseguono Windows 8.1
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -29,7 +29,7 @@ ms.suite: ems
 È possibile consentire alle app di usare i criteri di gestione delle applicazioni mobili tramite lo strumento di wrapping delle app di Intune o Intune App SDK. In questo articolo vengono fornite informazioni su questi due metodi e su quando usarli.
 
 ## Strumento di wrapping delle app di Intune
-Lo strumento di wrapping delle app viene usato principalmente per le app line-of-business (LOB) interne. Lo strumento è un'applicazione della riga di comando che crea un wrapper per l'app, consentendo quindi all'app di essere gestita dai criteri di gestione delle applicazioni mobili di Intune. Non è necessario il codice sorgente per usare lo strumento, ma sono necessarie le credenziali di firma.  Per altre informazioni sulle credenziali di firma, vedere il [blog di Intune](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx). Per la documentazione dello strumento per la disposizione testo per app, vedere gli articolo relativi allo [strumento per la disposizione testo per app Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e allo [strumento per la disposizione testo per app iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)..
+Lo strumento di wrapping delle app viene usato principalmente per le app line-of-business (LOB) interne. Lo strumento è un'applicazione della riga di comando che crea un wrapper per l'app, consentendo quindi all'app di essere gestita dai criteri di gestione delle applicazioni mobili di Intune. Non è necessario il codice sorgente per usare lo strumento, ma sono necessarie le credenziali di firma.  Per altre informazioni sulle credenziali di firma, vedere il [blog di Intune](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx). Per la documentazione dello strumento per la disposizione testo per app, vedere [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune) e [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune).
 
 Lo strumento di wrapping delle app non supporta le app nell'App o Play Store né le funzionalità che richiedono un'integrazione del tempo di sviluppo (vedere la tabella di confronto delle funzionalità seguente).
 
@@ -38,13 +38,12 @@ Lo strumento di wrapping delle app non supporta le app nell'App o Play Store né
 ## Intune App SDK
 App SDK è progettato principalmente per i clienti che hanno le app nell'App o Play Store e che vogliono poter gestire le app con Intune. Tuttavia, qualsiasi app può sfruttare l'integrazione dell'SDK, anche se si tratta di un'app LOB.
 
-Per integrare l'SDK, è necessario accedere al codice sorgente dell'app. Per istruzioni sull'integrazione dell'SDK, vedere [Microsoft Intune App SDK](https://msdn.microsoft.com/library/mt627769.aspx)..
+Per altre informazioni sull'SDK, vedere la [panoramica](/intune/develop/intune-app-sdk). Per un'introduzione all'SDK, vedere [Introduzione a Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started)
 
 ## Confronto delle funzionalità
 Questa tabella elenca le impostazioni che è possibile usare per App SDK e per lo strumento di wrapping delle app.
 
-> [!NOTE]
-> Lo strumento per la disposizione testo per app può essere usato con la versione autonoma di Intune o Intune con Configuration Manager.
+> [!NOTE] Lo strumento per la disposizione testo per app può essere usato con la versione autonoma di Intune o con Intune con Configuration Manager.
 
 |Funzionalità|App SDK|Strumento di wrapping delle app|
 |-----------|---------------------|-----------|
@@ -74,6 +73,6 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 [Usare l'SDK per abilitare le app per la gestione delle applicazioni per dispositivi mobili](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

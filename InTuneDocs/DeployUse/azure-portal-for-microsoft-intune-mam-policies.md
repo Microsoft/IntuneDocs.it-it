@@ -30,13 +30,13 @@ ms.suite: ems
 Il **portale di Azure** consente di creare e gestire i criteri di gestione delle app per dispositivi mobili.
 
 Il portale di Azure supporta la creazione di criteri MAM per:
-- App in esecuzione su dispositivi **registrati e gestiti da Intune**.
+- App in esecuzione in dispositivi **registrati e gestiti da Intune**.
 - App in esecuzione su dispositivi **non registrati** in qualsiasi soluzione MDM.
-- App in esecuzione su dispositivi **registrati in una soluzione MDM di terzi**..
+- App in esecuzione in dispositivi **registrati in una soluzione MDM di terze parti**.
 
-Se si sta usando la **console di amministrazione di Intune** per la gestione dei dispositivi, è possibile creare un criterio MAM che supporti le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) stessa..
+Se si sta usando la **console di amministrazione di Intune** per la gestione dei dispositivi, è possibile creare un criterio MAM che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) stessa.
 >[!IMPORTANT]
-> È possibile che nella Console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Il portale di Azure è la nuova console di amministrazione per la creazione dei criteri MAM.
+> È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Il portale di Azure è la nuova console di amministrazione per la creazione di criteri MAM. Se si creano criteri MAM sia nella console di amministrazione di Intune che nel portale di Azure, i criteri di quest'ultimo vengono applicati alle app e distribuiti agli utenti.
 
 ## Accedere al portale di Azure e personalizzare la pagina iniziale
 
@@ -48,9 +48,9 @@ Se si sta usando la **console di amministrazione di Intune** per la gestione dei
 
     ![Schermata del dashboard del portale di Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  Nel menu **Sfoglia** individuare **Intune**.![Schermata del menu Sfoglia con Intune evidenziato](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
+3.  Nel menu **Sfoglia** individuare **Intune**![Screenshot del menu Sfoglia con Intune evidenziato](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  Fare clic su **Intune > Gestione di applicazioni mobili di Intune > Impostazioni**..
+4.  Fare clic su **Intune > Gestione di applicazioni mobili di Intune > Impostazioni**.
 
     ![Schermata del pannello Gestione di applicazioni mobili di Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
@@ -64,6 +64,6 @@ Se si sta usando la **console di amministrazione di Intune** per la gestione dei
 [Preparazione alla configurazione dei criteri di gestione delle app per dispositivi mobili](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

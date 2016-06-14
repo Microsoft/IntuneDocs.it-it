@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Impostazione dei criteri di Exchange ActiveSync in Microsoft Intune | Microsoft Intune
+title: Impostazioni dei criteri di Exchange ActiveSync | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -47,7 +47,7 @@ Usare i criteri di **Exchange ActiveSync** di Microsoft Intune per configurare l
 
 |Nome impostazione|Dettagli|
 |----------------|
-|**Richiedi crittografia sul dispositivo mobile**<sup>1</sup>|Richiede la crittografia dei dati nel dispositivo, quando è supportata.<br>Per i dispositivi Windows Phone 8, è necessario impostare l'opzione su **Sì**.<br /><br />Per abilitare la crittografia sui dispositivi iOS, abilitare l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**.|
+|**Richiedi crittografia sul dispositivo mobile**<sup>1</sup>|Richiede la crittografia dei dati nel dispositivo, quando è supportata.<br>Per i dispositivi Windows Phone 8, è necessario impostare su **Sì**.<br /><br />Per abilitare la crittografia su dispositivi iOS, abilitare l'impostazione **richiedono una password per sbloccare i dispositivi mobili**.|
 |**Richiedi crittografia sulle schede di memoria**|Richiede la crittografia dei dati presenti nella risorsa di archiviazione esterna, ad esempio una scheda SD (su dispositivi supportati).
 <sup>1</sup> Altre informazioni per i dispositivi che eseguono Windows 8.1
 
@@ -86,6 +86,6 @@ Usare i criteri di **Exchange ActiveSync** di Microsoft Intune per configurare l
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

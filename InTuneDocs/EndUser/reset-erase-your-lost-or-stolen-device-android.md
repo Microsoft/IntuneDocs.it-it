@@ -28,12 +28,11 @@ ms.suite: ems
 
 # Ripristinare un dispositivo smarrito o rubato
 
-Se il telefono viene smarrito o rubato, è possibile ripristinare le impostazioni predefinite nel sito Web o nell'app Portale aziendale. Per istruzioni sull'uso dell'app Portale aziendale, seguire questa procedura o guardare il [video](http://aka.ms/ly1x17). Per [ripristinare un dispositivo è possibile usare anche il sito Web del portale aziendale](reset-your-device-cpwebsite.md)..
+Se il telefono Android viene smarrito o rubato, è possibile ripristinare le impostazioni predefinite nel sito Web o nell'app Portale aziendale. Per istruzioni sull'uso dell'app Portale aziendale, seguire questa procedura o guardare il [video](http://aka.ms/ly1x17). È possibile anche [ripristinare un dispositivo usando il sito Web del Portale aziendale](reset-your-device-cpwebsite.md).
 
-Per altre informazioni, vedere l'articolo relativo a [cosa avviene se si ripristina un dispositivo con il Portale aziendale](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)..
+Per altre informazioni sul ripristino dei dispositivi, vedere [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md) (Cosa succede se si ripristina un dispositivo del Portale aziendale).
 
-> [!WARNING] 
-> Il ripristino delle impostazioni predefinite di un dispositivo implica la rimozione dei dati personali e di lavoro dal dispositivo stesso.
+> [!WARNING] Il ripristino delle impostazioni predefinite di un dispositivo implica la rimozione dei dati personali e di lavoro dal dispositivo stesso.
 
 1.  Nel browser aprire il [sito Web del portale aziendale](http://portal.manage.microsoft.com) ed eseguire l'accesso con l'account aziendale.
 
@@ -48,6 +47,6 @@ Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere all'am
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

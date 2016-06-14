@@ -28,16 +28,19 @@ ms.suite: ems
 
 # Cosa succede se si reimposta il dispositivo personale con il Portale aziendale?
 
-Quando si usa il Portale aziendale per reimpostare il dispositivo Android, alcune app e impostazioni nel dispositivo potrebbero essere eliminate, inclusi alcuni dati personali. Le conseguenze nei singoli dispositivi dipendono dal tipo di dispositivo e da come viene usato, come descritto nella tabella seguente.
+Quando si usa il portale aziendale per reimpostare il dispositivo Android, tutte le applicazioni, le impostazioni e i dati personali vengono eliminati e vengono ripristinate le impostazioni predefinite di fabbrica del dispositivo.
 
-|Configurazione e gestione del dispositivo|Tipo di dispositivo|
-|---------------------------------------|---------------|
-|L'amministratore IT gestisce il dispositivo mobile|Quando si reimposta il dispositivo Android, il dispositivo non sarà più visualizzato nel Portale aziendale e verranno eliminati l'account di posta elettronica aziendale e i messaggi di posta elettronica non salvati.|
-|Il dispositivo può accedere solo alla posta elettronica aziendale|Quando si reimposta il dispositivo Android, il dispositivo non sarà più visualizzato nel Portale aziendale e il Portale aziendale proverà a ripristinare le impostazioni predefinite del dispositivo. Tutti i dati e le impostazioni personali verranno rimossi.|
+Se si usa un dispositivo Samsung Knox, è possibile eseguire una "cancellazione selettiva" scegliendo l'opzione di **rimozione del dispositivo** dal portale aziendale. La cancellazione selettiva rimuove soltanto gli elementi seguenti:
+
+- Applicazioni aziendali rese disponibili dall'amministratore IT
+- Posta elettronica, VPN e WiFi
+- Capacità degli amministratori IT di applicare determinate impostazioni
+
+
 
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

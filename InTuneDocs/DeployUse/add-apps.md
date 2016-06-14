@@ -29,11 +29,11 @@ ms.suite: ems
 Prima di iniziare la distribuzione di app con Microsoft Intune, prendersi il tempo necessario per acquisire familiarità con i concetti introdotti in questo argomento. Queste considerazioni consentono di comprendere quali app è possibile distribuire in quale piattaforma e i prerequisiti da rispettare prima di procedere.
 
 ## Tipi di app che è possibile distribuire con Intune
-È possibile distribuire app in tutti i tipi di dispositivi supportati da Intune. A seconda del tipo di app da distribuire, il processo e i dispositivi supportati variano. Usare la tabella seguente per comprendere che cosa è possibile distribuire.
+È possibile distribuire app in tutti i tipi di dispositivi supportati da Intune. A seconda del tipo di app da distribuire, il processo e i dispositivi supportati variano. Usare le informazioni seguenti per comprendere che cosa è possibile distribuire.
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**
-- Questo tipo di app deve supportare l'installazione invisibile all'utente senza input dell'utente. La documentazione dell'app deve includere le opzioni della riga di comando rilevanti per installare automaticamente l'app, ad esempio, **/q**).
+- Questo tipo di app deve supportare l'installazione invisibile all'utente senza input dell'utente. La documentazione dell'app deve includere le opzioni della riga di comando rilevanti per l'installazione automatica dell'app, ad esempio, **/q**. È disponibile [qui](https://support.microsoft.com/en-us/kb/227091) un elenco di opzioni della riga di comando comuni.
 - Le cartelle e i file aggiuntivi richiesti dal programma di installazione dell'app devono essere disponibili nel percorso specificato per i file di installazione dell'app.
 - Nella maggior parte dei casi, i file di Windows Installer (.msi) e Windows Installer Patch (.msp) non richiedono alcun argomento della riga di comando per essere installati da Intune. Verificare la documentazione dell'app. Se sono necessari argomenti di riga di comando, essi devono essere inseriti come coppia Nome=Valore (ad esempio TRANSFORMS=custom_transform.mst).
 
@@ -49,7 +49,7 @@ Questo tipo di app viene caricato nello spazio di memorizzazione cloud.
 
 Questo tipo di app viene caricato nello spazio di memorizzazione cloud.
 
-Attualmente, gli utenti finali non può installare applicazioni aziendale da app portale aziendale di Intune per iOS. Si tratta di restrizioni per le applicazioni che vengono pubblicate in App Store iOS (vedere [linee guida di revisione di App Store](https://developer.apple.com/app-store/review/guidelines/)). Gli utenti possono accedere alle app aziendali, incluse le app gestite di App Store e i pacchetti dell'app line-of-business, avviando l'app Portale aziendale sul dispositivo e toccando il riquadro App aziendali. In questo modo si apre il browser e gli utenti vengono reindirizzati al portale Web Intune.
+Attualmente gli utenti finali non possono installare applicazioni aziendali direttamente dall'app Portale aziendale di Intune per iOS. Si tratta di restrizioni per le applicazioni che vengono pubblicate in App Store iOS (vedere [linee guida di revisione di App Store](https://developer.apple.com/app-store/review/guidelines/)). Gli utenti possono accedere alle app aziendali, incluse le app gestite di App Store e i pacchetti dell'app line-of-business, avviando l'app Portale aziendale sul dispositivo e toccando il riquadro App aziendali. In questo modo si apre il browser e gli utenti vengono reindirizzati al portale Web Intune.
 
 ### **Pacchetto app Windows Phone (&#42;.xap, .appx, .appxbundle)**
 - Per distribuire le app serve un certificato di firma codice mobile aziendale. Per altre informazioni vedere [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) (Configurare la gestione dei dispositivi Windows Phone con Microsoft Intune).
@@ -81,8 +81,7 @@ Viene usato quando sono disponibili i seguenti elementi:
 Le app basate su collegamenti esterni non sono archiviate nello spazio di archiviazione nel cloud Intune.
 ### **App iOS gestita dall'App Store**
 Consente di gestire e distribuire app iOS gratuite dall'App Store. Consente inoltre di associare i [criteri di gestione delle applicazioni mobili](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) con [app compatibili](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) e controllarne lo stato nella console di amministrazione.<br /><br />Le app iOS gestite non vengono archiviate nello spazio di memorizzazione cloud di Intune.
-> [!TIP]
-> Le opzioni per i dispositivi mobili non sono disponibili finché non si [imposta l'autorità di gestione dei dispositivi mobili](get-ready-to-enroll-devices-in-microsoft-intune.md) su Intune.
+> [!TIP] Le opzioni per i dispositivi mobili non sono disponibili finché non si [imposta l'autorità di gestione dei dispositivi mobili](get-ready-to-enroll-devices-in-microsoft-intune.md) in Intune.
 
 ## Supporto per app della piattaforma UWP (Universal Windows Platform)
 Nei dispositivi Windows 10 non è necessario disporre di una chiave di trasferimento locale per installare le app line-of-business. Tuttavia, la chiave del Registro di sistema **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** deve avere un valore pari a **1** per abilitare il sideload.
@@ -95,8 +94,8 @@ Nei dispositivi Windows 10 Mobile, è possibile usare un certificato di firma co
 
 ## Passaggi successivi 
 
-In seguito sarà necessario aggiungere le app nella console di Intune prima di distribuirle. È possibile aggiungere app sia per i [dispositivi registrati](add-apps-for-mobile-devices-in-microsoft-intune.md) che per i [PC Windows gestiti con il software client Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
+In seguito sarà necessario aggiungere le app nella console di Intune prima di distribuirle. È possibile aggiungere app sia per i [dispositivi registrati](add-apps-for-mobile-devices-in-microsoft-intune.md) che per i [PC Windows gestiti con il software client di Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

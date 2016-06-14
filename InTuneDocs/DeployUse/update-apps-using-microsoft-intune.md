@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Aggiornare le app con Microsoft Intune | Microsoft Intune
+title: Aggiornare le app | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -35,11 +35,11 @@ Quando viene rilasciata una nuova versione di un'app che è stata distribuita, I
 > Quando si distribuisce un'app con un'azione di distribuzione **Installazione richiesta** e successivamente si modifica l'azione di distribuzione in **Installazione disponibile**, gli aggiornamenti dell'app non vengono installati automaticamente nei dispositivi in cui l'app è stata installata prima di apportare la modifica alla distribuzione. Per risolvere questo problema, è possibile eseguire le operazioni seguenti:
 > 
 > -   L'utente del dispositivo può andare nel portale aziendale, selezionare l'app installata e fare clic su **Installa**.
-> -   Modificare l'azione di distribuzione in **Disinstalla** e, dopo aver disinstallato l'app, distribuirla nuovamente con un'azione di distribuzione **Installazione disponibile**.
+> -   Modificare l'azione di distribuzione in **Disinstalla**e, una volta disinstallata l'app, distribuirla nuovamente con un'azione di distribuzione **Installazione disponibile**.
 
 ### Per aggiornare un'app
 
-1.  Nella [console di amministrazione Microsoft Intune](https://manage.microsoft.com) fare clic su **App** &gt; **App**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **App** &gt; **App**.
 
 2.  Dall'elenco **App** selezionare l'app da aggiornare e quindi fare clic su **Modifica**.
 
@@ -53,6 +53,6 @@ Quando i dispositivi verificano successivamente la disponibilità di app, l'app 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

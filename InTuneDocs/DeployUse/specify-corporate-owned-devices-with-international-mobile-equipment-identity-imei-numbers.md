@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 # Specificare i dispositivi aziendali con i numeri IMEI (International Mobile Equipment Identity)
-Microsoft Intune consente agli amministratori di importare i numeri IMEI (International Mobile Equipment Identity) per le piattaforme per dispositivi mobili dotate di un numero IMEI per identificare i dispositivi mobili aziendali. Una volta registrati in Intune, i dispositivi con numeri IMEI importati vengono contrassegnati come aziendali, che possono essere usati per l'applicazione di criteri diversi da quelli applicati ai dispositivi personali.
+Microsoft Intune consente agli amministratori di importare i numeri IMEI (International Mobile Equipment Identity) per le piattaforme per dispositivi mobili dotate di un numero IMEI per identificare i dispositivi mobili aziendali. Una volta registrati in Intune, i dispositivi con numeri IMEI importati possono essere visualizzati in **Gruppi** > **Panoramica** > **Tutti i dispositivi** > **Dispositivi aziendali preregistrati** > **Per IMEI (tutte le piattaforme)**.
 
-1. Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com), andare a **Gruppi** &gt; **Tutti i dispositivi** &gt; **Dispositivi aziendali preregistrati** &gt; **Per IMEI (tutte le piattaforme)**, quindi fare clic su **Aggiungi dispositivi...**. È possibile aggiungere dispositivi in due modi:
+1. Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) scegliere **Gruppi** &gt; **Tutti i dispositivi** &gt; **Tutti i dispositivi aziendali preregistrati** &gt; ** Per IMEI (tutte le piattaforme)**, quindi scegliere **Aggiungi dispositivi....**. È possibile aggiungere dispositivi in due modi:
 
     -   **Caricare un file CSV contenente i numeri di serie**: creare un elenco delimitato da virgole (CSV) composto da due colonne senza intestazione e limitato a 5 MB o 5000 dispositivi per ogni file CSV.
 
@@ -47,13 +47,13 @@ Microsoft Intune consente agli amministratori di importare i numeri IMEI (Intern
 
    I *dettagli* sono per uso amministrativo in modo da poter identificare il numero IMEI associato a un dispositivo. Queste informazioni non vengono inviate al dispositivo, ma verranno visualizzate nella console di Intune.
 
-2.   Fare clic su **Avanti**.
-3.  Nel riquadro **Verifica dispositivi** è possibile verificare i numeri IMEI dei dispositivi importati. È anche possibile decidere se sovrascrivere i **Dettagli** per i numeri IMEI da reimportare. È possibile deselezionare la casella di controllo **Sovrascrivi** per mantenere i dettagli correnti. Fare clic su **Fine** per importare i numeri IMEI.
+2.   Scegliere **Avanti**.
+3.  Nel riquadro **Verifica dispositivi** è possibile verificare i numeri IMEI dei dispositivi importati. È anche possibile decidere se sovrascrivere i **Dettagli** per i numeri IMEI da reimportare. È possibile deselezionare la casella di controllo **Sovrascrivi** per mantenere i dettagli correnti. Scegliere **Fine** per importare i numeri IMEI.
 4.  I numeri IMEI e le descrizioni vengono aggiunti all'elenco **Per IMEI (tutte le piattaforme)**.
 
 Quando il dispositivo con tale numero IMEI viene registrato, in genere quando un utente installa l'app Portale aziendale e completa il processo di registrazione, il dispositivo verrà contrassegnato come aziendale e verrà visualizzato come registrato nel gruppo **Dispositivi IMEI**.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO5-->
 
 
