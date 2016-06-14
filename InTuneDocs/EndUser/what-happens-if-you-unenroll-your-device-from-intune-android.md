@@ -30,13 +30,15 @@ ms.suite: ems
 
 Quando si annulla la registrazione del dispositivo Android da Intune:
 
+-   Se si annulla la registrazione del dispositivo da Intune significa che l'amministratore IT non gestisce più il dispositivo. 
+
+-   Si perderà l'accesso ai dati e alle risorse aziendali.
+
 -   Il dispositivo non verrà più visualizzato nel portale aziendale.
 
 -   Non sarà più possibile installare app dal portale aziendale.
 
 -   Non saranno più valide le impostazioni che sono state modificate nel dispositivo quando è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza.
-
--   Dal dispositivo potrebbe non essere più possibile accedere ad alcune risorse della società, quali condivisioni di file o siti Web interni.
 
 Se il dispositivo è configurato solo per ricevere posta elettronica aziendale e la registrazione del dispositivo viene annullata, il dispositivo non sarà più visualizzato nel portale aziendale. 
 
@@ -45,6 +47,6 @@ Per istruzioni su come annullare la registrazione, vedere [Annullare la registra
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

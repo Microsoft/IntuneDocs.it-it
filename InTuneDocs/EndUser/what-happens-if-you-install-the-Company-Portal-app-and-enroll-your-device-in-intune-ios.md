@@ -15,7 +15,7 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -98,11 +98,11 @@ Quando il dispositivo è registrato, l'amministratore IT può:
 
 -   Abilitare o disabilitare la sincronizzazione automatica dei file in modalità roaming sul dispositivo. Se la sincronizzazione automatica dei file è consentita, potrebbero essere state sostenute spese per il roaming.
 
-Per la procedura di registrazione del dispositivo, vedere [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) (Registrare il dispositivo iOS in Intune) o [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Registrare il dispositivo Mac OS X in Intune).
+Per la procedura di registrazione del dispositivo, vedere [Enroll your iOS device in Intune (Registrare il dispositivo iOS in Intune)](enroll-your-device-in-intune-ios.md) o [Enroll your Mac OS X device in Intune (Registrare il dispositivo Mac OS X in Intune)](enroll-your-device-in-intune-mac-os-x.md).
 
 ### Vedere anche
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 
