@@ -1,11 +1,42 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-windows.md) | OutofSyncHandedBackSuccess | [Details](#f0108b884439aac9661c9f36f85b47d80209d155464)
+ [InTuneDocs\GetStarted\what-to-know-before-you-start-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/65769fade08dea34b3e788628e578d58f90389f3/InTuneDocs/GetStarted/what-to-know-before-you-start-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#2456d1f378ade046e5e0df9630544fe99342360d534)
 
 ## Item Details
+##### <a name='f0108b884439aac9661c9f36f85b47d80209d155464'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr/blob/1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/dde6c1820d7ce0364c0756834f8c7bb6a9c97997/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.it-it.xlf)
+* Handoff Datetime: 2016-06-10 22:37:09
+* Handoff Reason: Include
+* Archive File: [what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/b09ce110623bba279fe55a0fd3ee47f9652cd3b8/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.it-it.xlf)
+* Archive Datetime: 2016-06-16 01:40:26
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\EndUser\what-happens-if-you-unenroll-your-device-from-intune-windows.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/2094fb5c0560083ae69bf9c4bc876ac1ab6659e9/InTuneDocs/EndUser/what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+* Current Handback File: [what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/263dccd46c34de47eb38e9ea457bfe675fba98fa/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/what-happens-if-you-unenroll-your-device-from-intune-windows.a19c13b1e17f77a473e5acc0fbc7565d8c9fb210.it-it.xlf)
+* Current Handback Datetime: 2016-06-16 19:39:04
+* [Back to Top](#report-top)
+
+##### <a name='2456d1f378ade046e5e0df9630544fe99342360d534'></a> Source: [InTuneDocs\GetStarted\what-to-know-before-you-start-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/65769fade08dea34b3e788628e578d58f90389f3/InTuneDocs/GetStarted/what-to-know-before-you-start-microsoft-intune.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\GetStarted\what-to-know-before-you-start-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/2094fb5c0560083ae69bf9c4bc876ac1ab6659e9/InTuneDocs/GetStarted/what-to-know-before-you-start-microsoft-intune.md)
+* Handoff File: [what-to-know-before-you-start-microsoft-intune.24d82c89a4b193da88b10ec405ee2804463faa78.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/3c1496308f9ff48423dec574f0a8435920b6b6fb/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/what-to-know-before-you-start-microsoft-intune.24d82c89a4b193da88b10ec405ee2804463faa78.it-it.xlf)
+* Handoff Datetime: 2016-06-08 20:35:41
+* Handoff Reason: Include
+* Archive File: [what-to-know-before-you-start-microsoft-intune.24d82c89a4b193da88b10ec405ee2804463faa78.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/367ed074918b76fbe68e8a08deb9f2ed14b80cbe/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/what-to-know-before-you-start-microsoft-intune.24d82c89a4b193da88b10ec405ee2804463faa78.it-it.xlf)
+* Archive Datetime: 2016-06-09 02:11:27
+* Handback File: [what-to-know-before-you-start-microsoft-intune.24d82c89a4b193da88b10ec405ee2804463faa78.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/263dccd46c34de47eb38e9ea457bfe675fba98fa/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/what-to-know-before-you-start-microsoft-intune.24d82c89a4b193da88b10ec405ee2804463faa78.it-it.xlf)
+* Handback Datetime: 2016-06-16 19:39:04
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
