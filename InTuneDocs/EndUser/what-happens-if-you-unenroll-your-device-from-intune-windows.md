@@ -18,7 +18,7 @@ ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Cosa succede se si annulla la registrazione del dispositivo da Intune?
 
-Quando si disinstalla l'app Portale aziendale dal dispositivo, viene anche annullata la registrazione del dispositivo da Intune. Per altre informazioni su ciò che accade, usare il collegamento incluso nella sezione precedente "In questo articolo" corrispondente al tipo di dispositivo in uso.
+Quando si disinstalla l'app Portale aziendale dal dispositivo, viene anche annullata la registrazione del dispositivo da Intune. Per altre informazioni su ciò che accade, usare il collegamento indicato nella sezione "Contenuto dell'articolo" corrispondente al tipo di dispositivo in uso.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 o Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -92,10 +92,11 @@ Quando si rimuove il dispositivo Windows RT, si verifica quanto segue:
 
 -   Non saranno più valide le impostazioni che sono state modificate nel dispositivo quando è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza.
 
+In caso di domande, se non si trovano le informazioni di contatto dell'amministratore IT, vedere se sono indicate nel [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 ### Vedere anche
 [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 
