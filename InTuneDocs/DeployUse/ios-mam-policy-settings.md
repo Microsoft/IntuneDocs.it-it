@@ -18,7 +18,7 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -93,7 +93,7 @@ Il termine **App gestite da criteri** viene usato per indicare le app che sono c
 - **Richiedi PIN per l'accesso:** scegliere **Sì** per richiedere un PIN per l'uso di app gestite da criteri. All'utente viene richiesto di impostare questo numero alla prima esecuzione dell'app in un contesto aziendale.
 
   **Valore predefinito = Sì**
-    -  **Allow simple PIN** (Consenti PIN semplice): specificare se consentire agli utenti di usare sequenze PIN semplici, come 1234 o 1111. **Valore predefinito = Sì**
+    -  **Consenti PIN semplice:** specificare se consentire agli utenti di usare sequenze PIN semplici, come 1234 o 1111. **Valore predefinito = Sì**.
     - **Lunghezza PIN**: specificare il numero minimo di cifre in un PIN. **Valore predefinito = 4**
     - **Numero di tentativi prima della reimpostazione del PIN:** specificare il numero di tentativi di immissione del PIN che è possibile effettuare prima che all'utente venga richiesto di reimpostare il PIN.
   **Non c'è un valore predefinito per questa impostazione**.
@@ -117,6 +117,6 @@ Nei dispositivi iOS è possibile consentire all'utente di identificarsi con l'im
   **Valore predefinito = 90 giorni**
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 
