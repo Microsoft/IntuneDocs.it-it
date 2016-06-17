@@ -18,7 +18,7 @@ ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,16 +30,16 @@ Esiste già un account di posta elettronica della società. Per continuare a con
 
 1.  In **impostazioni** sul dispositivo, rimuovere la connessione impostata in precedenza per la posta elettronica aziendale.
 
-    Ad esempio, su un dispositivo iOS, toccare **Impostazioni** &gt; **Posta, contatti, calendari**. Selezionare l'account di posta elettronica aziendale e quindi fare clic su **Elimina**..
+    Ad esempio, su un dispositivo iOS, toccare **Impostazioni** &gt; **Posta elettronica, Contatti, Calendario**. Selezionare l'account di posta elettronica di lavoro e quindi fare clic su **eliminare**.
 
-2.  Aprire l'app del portale aziendale nel dispositivo e toccare **Controlla conformità**..
+2.  Aprire l'app portale aziendale nel dispositivo e toccare **controllo conformità**.
 
 3.  Attendere qualche istante nuove impostazioni di posta elettronica da applicare automaticamente il dispositivo.
 
-Se dopo un periodo di tempo non sono presenti nuove impostazioni di posta elettronica, rivolgersi all'amministratore IT.
+Se dopo un periodo di tempo non vengono visualizzate nuove impostazioni di posta elettronica, rivolgersi all'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

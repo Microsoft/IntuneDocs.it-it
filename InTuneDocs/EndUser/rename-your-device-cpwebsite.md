@@ -18,7 +18,7 @@ ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,15 +34,17 @@ Per rinominare il dispositivo:
 
 1.  Aprire il [sito Web del portale aziendale](http://portal.manage.microsoft.com) e toccare il dispositivo di cui si vuole modificare il nome.
 
-2.  Toccare **Rinomina**..
+2.  Toccare **Rinomina**.
 
     ![rename-device](./media/iwp-1-tap-reset-passcode.png)
 
 3.  Nella casella in cui viene visualizzato il nome del dispositivo corrente, digitare il nuovo nome per il dispositivo e quindi toccare il pulsante **Rinomina**. Il dispositivo viene ora visualizzato con il nuovo nome.
 
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 ### Vedere anche
 [Uso del sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Sync your device manually (Sincronizzare il dispositivo manualmente)
-Se l'installazione dell'app sta richiedendo troppo tempo, attenersi alle seguenti istruzioni per sincronizzare manualmente il dispositivo Windows e accelerare il processo. Sono supportate solo le versioni elencate. Usare il collegamento, incluso nella sezione precedente "In questo articolo", corrispondente al tipo di dispositivo che si possiede:
+Se l'installazione dell'app sta richiedendo troppo tempo, attenersi alle seguenti istruzioni per sincronizzare manualmente il dispositivo Windows e accelerare il processo. Sono supportate solo le versioni elencate. Usare uno dei collegamenti inclusi nella sezione precedente "Contenuto dell'articolo", scegliendo quello corrispondente al tipo di dispositivo in uso:
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
@@ -97,11 +97,12 @@ Sincronizzare manualmente il dispositivo Windows Phone 8.1 per accelerare un'ins
     
    Nella parte superiore dello schermo viene visualizzato il messaggio "We're synching your account" (Sincronizzazione account in corso) fino al termine della sincronizzazione del dispositivo.
 
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 ### Vedere anche
 [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

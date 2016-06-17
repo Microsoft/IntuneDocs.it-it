@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -64,23 +64,12 @@ Di seguito sono riportati alcuni esempi di opzioni che l'amministratore IT può 
 
 -   Requisiti di crittografia dati
 
-Di seguito sono riportate alcune app comuni che il reparto IT potrebbe gestire:
 
--   Browser web gestito
-
--   Visualizzatore di immagini gestite
-
--   Visualizzatore PDF gestito
-
--   Windows Media player AV gestito
-
--   Microsoft Word, Excel, PowerPoint
-
-Per altre informazioni sulle app gestite nel dispositivo contattare l'amministratore IT.
+Per altre informazioni sulle app gestite nel dispositivo contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 ### Vedere anche
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

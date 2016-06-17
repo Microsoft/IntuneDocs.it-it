@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/04/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,9 +40,11 @@ Portale aziendale è un'app da installare nel proprio dispositivo iOS per avere 
 
     Se si accede all'app Portale aziendale per la prima volta e l'azienda o l'istituto di istruzione usa Intune, verrà richiesto di registrare il dispositivo in Intune. Per eseguire la registrazione, vedere [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) (Registrare il dispositivo iOS in Intune) o [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Registrare il dispositivo Mac OS X in Intune).
 
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 ### Vedere anche
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

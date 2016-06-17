@@ -18,7 +18,7 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: esmich
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,22 +33,24 @@ L'amministratore IT può impostare più di un requisito per il passcode. Ad esem
 
 In caso di problemi per l'impostazione di un passcode che soddisfi tutti i requisiti, contattare l'amministratore IT per assistenza.
 
-## Per reimpostare il passcode:
+## Per impostare il passcode:
 
 1. Toccare **Impostazioni** > **ID tocco e Passcode**.
-2. Dal menu **ID tocco e Passcode** toccare **Attiva passcode**.
+2. Nel menu **ID tocco e Passcode** toccare **Attiva passcode**.
 3. Immettere un nuovo passcode che soddisfi i requisiti dell'amministratore IT, quindi immetterlo nuovamente per la verifica.
 
 ## Per modificare il passcode:
 
 1. Toccare **Impostazioni** > **ID tocco e Passcode**.
-2. Immettere il passcode. Verrà visualizzato il menu ID tocco e Passcode.
+2. Immettere il passcode. Viene visualizzato il menu ID tocco e Passcode.
 2. Toccare **Cambia passcode** e immettere la password precedente.
 3. Immettere un nuovo passcode che soddisfi i requisiti dell'amministratore IT, quindi immetterlo nuovamente per la verifica.
+
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 ### Vedere anche
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

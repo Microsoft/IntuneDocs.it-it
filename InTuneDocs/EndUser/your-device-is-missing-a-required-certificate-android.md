@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,7 +33,7 @@ Se il dispositivo Android non è registrato in Intune e manca un certificato sol
 
 Per risolvere questo problema e ottenere il certificato richiesto:
 
-1.  In un browser passare alla [pagina del certificato Digicert](https://www.digicert.com/digicert-root-certificates.htm)..
+1.  In un browser passare alla [pagina del certificato Digicert](https://www.digicert.com/digicert-root-certificates.htm).
 
 2.  Individuare e scaricare il certificato radice Baltimore CyberTrust (https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt).
 
@@ -41,7 +41,7 @@ Per risolvere questo problema e ottenere il certificato richiesto:
 
 4.  Nella finestra relativa all'**assegnazione di un nome al certificato**, accettare il nome del certificato predefinito.
 
-5. Verificare che l'opzione **Uso delle credenziali** sia impostata su **Usate per VPN e app** e quindi fare clic su **OK**..
+5. Verificare che l'uso delle **credenziali** sia impostato su **VPN e app**, quindi fare clic su **OK**.
 
     ![andr-cert-install-add-cert-name](./media/andr-cert_install-2-add_cert_name.png)
 
@@ -49,6 +49,8 @@ Per risolvere questo problema e ottenere il certificato richiesto:
 
 7. Aprire nuovamente l'app Portale aziendale. Accedere all'app Portale aziendale. Per assistenza, contattare l'amministratore IT.
 
-<!--HONumber=May16_HO1-->
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO2-->
 
 

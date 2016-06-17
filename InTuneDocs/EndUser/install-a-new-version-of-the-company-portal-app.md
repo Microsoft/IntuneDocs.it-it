@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -19,7 +19,7 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,6 +46,9 @@ Quando sarà disponibile una nuova versione del Portale aziendale, si riceverà 
 
     > [!NOTE] Se non si riesce ad accedere a Windows Store, contattare l'amministratore IT.
 
+
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 Per informazioni su altre attività eseguibili con il dispositivo, usare il collegamento corrispondente al tipo di dispositivo:
 
 - [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)</br>
@@ -54,6 +57,6 @@ Per informazioni su altre attività eseguibili con il dispositivo, usare il coll
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

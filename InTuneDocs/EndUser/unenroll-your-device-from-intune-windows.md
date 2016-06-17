@@ -18,7 +18,7 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,9 +28,9 @@ ms.suite: ems
 
 # Annullare la registrazione del dispositivo in Intune
 
-Se è stata eseguita la registrazione in Intune, ma non si vuole più usare il dispositivo Windows per le attività aziendali o scolastiche e non è più necessario l'accesso alla posta elettronica, alle app o ad altre risorse dell'azienda o dell'istituto di istruzione, annullare la registrazione del dispositivo. Dopo aver annullato la registrazione del dispositivo in Intune, non sarà più possibile accedere a tali risorse. Per altre informazioni su cosa accade quando viene annullata la registrazione del dispositivo, vedere [What happens if you unenroll your device from Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md) (Cosa succede se si annulla la registrazione del dispositivo da Intune?).
+Se è stata eseguita la registrazione in Intune, ma non si vuole più usare il dispositivo Windows per le attività aziendali o scolastiche e non è più necessario l'accesso alla posta elettronica, alle app o ad altre risorse dell'azienda o dell'istituto di istruzione, annullare la registrazione del dispositivo. Dopo aver annullato la registrazione del dispositivo in Intune, non sarà più possibile accedere a tali risorse. Per altre informazioni su cosa accade quando viene annullata la registrazione del dispositivo, vedere [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 
-Per annullare la registrazione del dispositivo, usare il collegamento corrispondente al tipo di dispositivo in uso illustrato nella sezione precedente "In questo articolo":
+Per annullare la registrazione del dispositivo, usare il collegamento corrispondente al tipo di dispositivo in uso illustrato nella sezione precedente "Contenuto dell'articolo":
 
 -   [Annullare la registrazione di un dispositivo Windows 10](#unenroll-your-windows-10-device)
 -   [Annullare la registrazione di un computer Windows 8.1](#unenroll-your-windows-8-1-computer)
@@ -66,9 +66,11 @@ Per annullare la registrazione del dispositivo, usare il collegamento corrispond
 
 4.  Nella finestra di dialogo **Elimina account** toccare **Elimina**.
 
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 ### Vedere anche
 [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

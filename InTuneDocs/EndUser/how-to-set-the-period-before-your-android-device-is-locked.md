@@ -18,7 +18,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,8 +36,8 @@ Per riconnettersi al lavoro, è necessario impostare il timeout della password n
 
 3.  Verificare che il dispositivo sia registrato in Intune seguendo le istruzioni riportate in [Enroll your device to use it at work (Registrare il dispositivo per usarlo per il lavoro)](http://go.microsoft.com/fwlink/?LinkId=519071).
 
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 
