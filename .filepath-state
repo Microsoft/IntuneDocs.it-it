@@ -266,15 +266,6 @@
   "c089b36676feb4caa7064738d6ef4b709139ab49": [
     "InTuneDocs\\EndUser\\how-to-reconnect-a-compromised-android-device.md"
   ],
-  "bb6f27e97b136dd22d3fe2ca65d26e61669f034c": [
-    "InTuneDocs\\EndUser\\how-to-reconnect-a-compromised-android-device.md"
-  ],
-  "a74a714bd556ac45597483c894c70e3a0ef4921c": [
-    "InTuneDocs\\EndUser\\how-to-reconnect-a-compromised-android-device.md"
-  ],
-  "e6267a7107008472855a47d122777da2c97ce361": [
-    "InTuneDocs\\EndUser\\how-to-reconnect-a-compromised-android-device.md"
-  ],
   "4b83e426e440928fea5308223764716a4ee77456": [
     "InTuneDocs\\EndUser\\how-to-reconnect-a-compromised-ios-device.md"
   ],
@@ -923,15 +914,6 @@
     "InTuneDocs\\EndUser\\using-your-windows-device-with-intune.md"
   ],
   "90891c2d0e5e8ae75e888dc4c26a056493bf594c": [
-    "InTuneDocs\\EndUser\\Wait-while-your-device-is-being-evaluated.md"
-  ],
-  "46caff89835b1886d3bc535254e36206e82b12b5": [
-    "InTuneDocs\\EndUser\\Wait-while-your-device-is-being-evaluated.md"
-  ],
-  "a76686d39ad4581842bf3f88c2d577b861c512b6": [
-    "InTuneDocs\\EndUser\\Wait-while-your-device-is-being-evaluated.md"
-  ],
-  "bd9e33fbcb0b562e11b9579fe8479dd93b78bb7d": [
     "InTuneDocs\\EndUser\\Wait-while-your-device-is-being-evaluated.md"
   ],
   "aa62528e588b0579669ab8d115766efd72e6f9b2": [
@@ -1717,25 +1699,7 @@
   "db9755013320f11bd58fa94275274ad6ba2b5e9a": [
     "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-android.md"
   ],
-  "243834817aee1f2d6e04b2490772afbddda9543b": [
-    "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-android.md"
-  ],
-  "a5b4f5f18b15ba4e22129190f93ae97a14e71949": [
-    "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-android.md"
-  ],
-  "cdb80ef04e4f96a9b99e6f3d627af0979de7ffcd": [
-    "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-android.md"
-  ],
   "abcb7dbe4f3423fcba108a7ea0c4b2efa295c970": [
-    "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md"
-  ],
-  "ca26ab0620c48895b94b20c5fc43eb6432edd9e4": [
-    "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md"
-  ],
-  "74c9eb9ef5caa7540d7de0694b1634813cc7a564": [
-    "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md"
-  ],
-  "ed733100f1dc56d3e89c77cb2a07ea265676e526": [
     "InTuneDocs\\EndUser\\unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md"
   ],
   "4dbb4d5d7151a6a579e00c2c4034a811f2357774": [
@@ -2194,12 +2158,6 @@
   "25d293e4821bfcfb364c1eca0297252885989e64": [
     "InTuneDocs\\DeployUse\\manage-corporate-owned-devices.md"
   ],
-  "271446485e01d7e89b6438ead4e9f484ad63703b": [
-    "InTuneDocs\\DeployUse\\manage-corporate-owned-devices.md"
-  ],
-  "bfe9ff488a272d2f68769bfa374fff7a52a6cca6": [
-    "InTuneDocs\\DeployUse\\manage-corporate-owned-devices.md"
-  ],
   "1e00d5fb315cac297294a74496d2a4342051f945": [
     "InTuneDocs\\media\\passport.png"
   ],
@@ -2532,15 +2490,6 @@
     "InTuneDocs\\DeployUse\\windows-phone-8-1-policy-settings-in-microsoft-intune.md"
   ],
   "7e5d48d35e8216bac2fae8e2f9a1ba82d3493acc": [
-    "InTuneDocs\\EndUser\\remote-lock-your-device-cpwebsite.md"
-  ],
-  "d0f5ff47a075812a2bc4a616a444f42a14fb61d1": [
-    "InTuneDocs\\EndUser\\remote-lock-your-device-cpwebsite.md"
-  ],
-  "ed52b87253eb9bc7ea92cbb9265f48ef00b0788e": [
-    "InTuneDocs\\EndUser\\remote-lock-your-device-cpwebsite.md"
-  ],
-  "67d005fc75397f5cf24693c953e69460c1f470a3": [
     "InTuneDocs\\EndUser\\remote-lock-your-device-cpwebsite.md"
   ],
   "dd8452cee145f3ecd885c4fb91698a3683252318": [
@@ -2933,15 +2882,6 @@
   "3cb6b8236afc227df9df34848cb81bcbe82a612e": [
     "InTuneDocs\\EndUser\\sync-your-device-manually-ios.md"
   ],
-  "9ec3eea8e710eb8cb9e90ac2e5c43bd628f7cb5e": [
-    "InTuneDocs\\EndUser\\sync-your-device-manually-ios.md"
-  ],
-  "3a4304922d0c63c2d09f14e853b8a66fd5119731": [
-    "InTuneDocs\\EndUser\\sync-your-device-manually-ios.md"
-  ],
-  "e6dcaa7752a00e713f2e89c3a5433202b40df5e4": [
-    "InTuneDocs\\EndUser\\sync-your-device-manually-ios.md"
-  ],
   "0396c31e4ee120e82bf667065b49d5d36ed7fd05": [
     "InTuneDocs\\media\\30-day-trial-walkthrus\\30day-cfg-pol-53-devc-enrolled-ok.png"
   ],
@@ -3054,18 +2994,6 @@
     "InTuneDocs\\EndUser\\install-a-new-version-of-the-company-portal-app.md"
   ],
   "cf6a7a005aaf703f2dfc20b89236056dff84e137": [
-    "InTuneDocs\\EndUser\\password-does-not-meet-it-administrator-requirements.md"
-  ],
-  "e22fe3d41f93788f0b4d0f3e639d046f4dff1171": [
-    "InTuneDocs\\EndUser\\password-does-not-meet-it-administrator-requirements.md"
-  ],
-  "1666680101a6a683e80db5eb5b64db041bc37afb": [
-    "InTuneDocs\\EndUser\\password-does-not-meet-it-administrator-requirements.md"
-  ],
-  "6597fcc8f20f91c967d9bb6e0c4c298d93fe2f3a": [
-    "InTuneDocs\\EndUser\\password-does-not-meet-it-administrator-requirements.md"
-  ],
-  "91735a64c640338fa9ea50b9d97601910d922e60": [
     "InTuneDocs\\EndUser\\password-does-not-meet-it-administrator-requirements.md"
   ],
   "51def9dc80043bbf5a71578fb44cae9259fd48b1": [
