@@ -18,7 +18,7 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Annullare la registrazione del dispositivo in Intune
 
-Dopo aver annullato la registrazione del dispositivo Android in Intune, non sarà più possibile accedere alle risorse aziendali.  Per altre informazioni su cosa accade quando viene annullata la registrazione, vedere [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
+Dopo aver annullato la registrazione del dispositivo Android in Intune, non sarà più possibile accedere alle risorse aziendali.  Per altre informazioni su cosa accade quando viene annullata la registrazione, vedere [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 
 Per annullare la registrazione del dispositivo da Intune e disinstallare l'app Portale aziendale, seguire questi passaggi o guardare il [video](http://aka.ms/gyq2du):
 
@@ -46,10 +46,11 @@ Per annullare la registrazione del dispositivo da Intune e disinstallare l'app P
 
     ![android-aziendale-portale-annullare la registrazione-avviso](./media/andr-3-warning-about-remove.png)
 
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
