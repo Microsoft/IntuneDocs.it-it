@@ -79,17 +79,16 @@ Di seguito è riportato un elenco delle operazioni da eseguire per avviare la fa
 
 -   Identificare i gruppi per i quali potrebbero essere necessarie comunicazioni e formazione mirate.
 
--   Personalizzare le comunicazioni via posta elettronica, aggiornare il sito Intranet
-    Identificare il proprietario attuale per l'aggiornamento di comunicazioni e risorse.
+-   Personalizzare le comunicazioni tramite posta elettronica, aggiornare il sito Intranet, identificare il proprietario in corso per l'aggiornamento di comunicazioni/risorse.
 
 -   Descrivere i metodi di formazione che verranno adottati.
 
 -   Creare un elenco di controllo preliminare e una guida alla registrazione per gli utenti.
     Usare questi manuali dell'utente come punto di partenza:
-    -  [Registrare il dispositivo Windows in Intune](/intune/enduser/enroll-your-device-in-intune-windows]
-    -  [Registrare il dispositivo Android in Intune](/intune/enduser/enroll-your-device-in-intune-android]
-    -  [Registrare il dispositivo iOS in Intune](/intune/enduser/enroll-your-device-in-intune-ios]
-    -  [Registrare il dispositivo Mac OS X in Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x]
+    -  [Registrare il dispositivo Windows in Intune](/intune/enduser/enroll-your-device-in-intune-windows)
+    -  [Registrare il dispositivo Android in Intune](/intune/enduser/enroll-your-device-in-intune-android)
+    -  [Registrare il dispositivo iOS in Intune](/intune/enduser/enroll-your-device-in-intune-ios)
+    -  [Registrare il dispositivo Mac OS X in Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
 
 -   Definire un processo per l'aggiornamento dei materiali di formazione in base alle esigenze.
 
@@ -114,6 +113,6 @@ Ecco alcuni problemi che si possono verificare durante la fase di **implementazi
 [Operazioni e manutenzione](operations-and-maintenance.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

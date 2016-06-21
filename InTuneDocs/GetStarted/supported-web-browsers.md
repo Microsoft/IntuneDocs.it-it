@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,12 +27,12 @@ ms.suite: ems
 
 # Browser Web supportati da Microsoft Intune
 
-Prima di configurare Intune, leggere questo argomento e gli altri requisiti elencati in [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md) (Informazioni preliminari per l'uso di Microsoft Intune).
+Prima di configurare Intune, leggere questo argomento e gli altri requisiti elencati nelle [informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 |Funzionalità di Intune |Browser supportati|
 |---------|---------|
-|Console di amministrazione di Intune     |  Internet Explorer 10 o versione successiva<br /><br />Google Chrome (versioni precedenti alla versione 42)<br /><br />Mozilla Firefox <br /><br />**Nota:** al momento, Edge non è supportato per la console di amministrazione.                      
-|Portale di amministrazione di Office 365     |Tutti i browser  |
+|Console di amministrazione di Intune     |  Internet Explorer 10 o versione successiva<br /><br />Google Chrome (versioni precedenti alla versione 42)<br /><br />Mozilla Firefox <br /><br />**Nota:** Microsoft Edge e i browser per dispositivi mobili non sono supportati per la console di amministrazione.                      
+|Portale di amministrazione di Office 365     |Tutti i browser, inclusi i browser per dispositivi mobili e i browser gestiti  |
 |Sito Web del portale aziendale     |**Nei dispositivi mobili:** usare il Web browser predefinito per ogni piattaforma supportata   <br /><br />**Nei PC Windows:** Internet Explorer 10 o versione successiva oppure Microsoft Edge<br /><br />**In Mac OS X 10.9 o versioni successive:** Apple Safari    |
 
 
@@ -42,6 +42,6 @@ Prima di configurare Intune, leggere questo argomento e gli altri requisiti elen
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO3-->
 
 

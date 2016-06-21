@@ -4,7 +4,7 @@
 title: Pianificare i gruppi di utenti e dispositivi | Microsoft Intune
 description:
 keywords:
-author: SanchuSa
+author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
@@ -40,7 +40,7 @@ I gruppi in Intune offrono una grande flessibilità per la gestione di utenti e 
 
 La visualizzazione predefinita del nodo Gruppi nella console di amministrazione di Intune è la seguente:
 
-![Schermata della visualizzazione predefinita del nodo Gruppi nella console di Intune](/intune/media/Group-planning/Intune_Planning_Groups_Default_small.png)
+![Schermata della visualizzazione predefinita del nodo Gruppi nella console di Intune](/intune/media/Intune_Planning_Groups_Default_small.png)
 
 I criteri vengono distribuiti nei gruppi, quindi la gerarchia dei gruppi rappresenta una delle più importanti considerazioni sulla progettazione. È anche importante sapere che un gruppo padre non può essere modificato dopo aver creato il gruppo, quindi la struttura del gruppo è di vitale importanza dal momento in cui si inizia a usare il servizio Intune. Di seguito vengono descritte alcune delle procedure consigliate per la progettazione di una gerarchia di gruppi in base alle proprie esigenze organizzative.
 
@@ -92,7 +92,7 @@ I criteri vengono distribuiti nei gruppi, quindi la gerarchia dei gruppi rappres
 
     * Il gruppo **Utenti laptop** è un membro del gruppo di sicurezza **Utenti approvati** .
 
-    * Viene creato un gruppo in Intune che usa una query di appartenenza dinamica che include i membri del gruppo **Utenti approvati**. Il risultato è che il gruppo utenti di Intune include **Pat**..
+    * Viene creato un gruppo in Intune che usa una query di appartenenza dinamica che include i membri del gruppo **Utenti approvati**. Il risultato è che il gruppo utenti di Intune include **Pat**.
 
 > [!TIP]
 > Quando si creano gruppi, considerare la modalità di applicazione dei criteri. Ad esempio, si potrebbe disporre di criteri specifici per i sistemi operativi per dispositivi e i criteri specifici per ruoli diversi all'interno dell'organizzazione o nelle unità organizzative che sono già state definite nell’Active Directory. Alcuni considerano utile disporre di gruppi di dispositivi specifici di Windows, iOS e Android, nonché gruppi di utenti per ogni ruolo dell'organizzazione.
@@ -131,22 +131,22 @@ Se l'organizzazione consente ai dipendenti di usare i propri dispositivi durante
 
 Nel caso di dispositivi BYOD o di una combinazione dei due scenari, assicurarsi di pianificare i criteri che non violano le normative locali in materia di privacy. Creare un gruppo padre per tutti gli utenti che porteranno i propri dispositivi. Questo gruppo può quindi essere usato per applicare i criteri che sono applicabili a tutti gli utenti in questa categoria.
 
-![Schermata della creazione di un gruppo padre BYOD](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_small.png)
+![Schermata della creazione di un gruppo padre BYOD](/intune/media/Intune_Planning_Groups_BYOD_small.png)
 
 Analogamente, è possibile creare un gruppo per gli utenti CO dell'organizzazione:
 
-![Schermata di gruppi di utenti di pari livello per BYOD e CO](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+![Schermata di gruppi di utenti di pari livello per BYOD e CO](/intune/media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
 <!---START HERE--->
 
 ### Gruppi per aree geografiche
 Se l'organizzazione necessita di criteri per aree specifiche, è possibile creare gruppi in base all'area geografica. È possibile basare tali criteri sui gruppi regionali già creati in Active Directory (AD) e sincronizzarli in Azure AD. È anche possibile crearli direttamente in Azure AD.
 
-Questi screenshot mostrano come creare gruppi di Intune in base ai gruppi sincronizzati da AD locale. In questi esempi si presuppone che esista un gruppo di sicurezza di AD denominato **Gruppo utenti USA**..
+Questi screenshot mostrano come creare gruppi di Intune in base ai gruppi sincronizzati da AD locale. In questi esempi si presuppone che esista un gruppo di sicurezza di AD denominato **Gruppo utenti USA**.
 
 1. Prima di tutto, fornire le informazioni generali.
 
-    ![Schermata dell'area Modifica gruppo](/intune/media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
+![Schermata dell'area Modifica gruppo](/intune/media/Intune_Planning_Groups_AD_General_small.png)
 
 In Criteri di appartenenza, selezionare **Gruppo utenti USA**, sincronizzato da AD, come gruppo di sicurezza da usare nelle regole di appartenenza.
 
@@ -158,8 +158,7 @@ Verificare i dati e quindi fare clic su **Fine** per completare la creazione del
 
 Nel nostro esempio, abbiamo creato anche un gruppo Medio Oriente e Asia, MEA.
 
-> [!NOTE]
-> Se l'appartenenza al gruppo non viene popolata in base all'appartenenza ai gruppi di sicurezza, controllare di avere licenze Intune assegnate a tali membri.
+> [!NOTE] Se l'appartenenza al gruppo non viene popolata in base all'appartenenza ai gruppi di sicurezza, controllare di avere assegnato licenze Intune a tali membri.
 
 ### Gruppi per hardware specifico
 Se l'organizzazione necessita di criteri applicabili a tipi di hardware specifici, è possibile creare gruppi in base a questo requisito. È possibile basare i criteri su gruppi specifici già creati in AD locale e sincronizzarli in Azure AD. È anche possibile crearli direttamente in Azure AD. In questo esempio, **Gruppo utenti USA** viene usato come gruppo padre del gruppo **Utenti di portatili**.
@@ -168,15 +167,14 @@ Se l'organizzazione necessita di criteri applicabili a tipi di hardware specific
 
 A questo punto, la gerarchia di gruppi dovrebbe essere visualizzata come illustrato di seguito. Come si può vedere, ora ci sono membri all'interno del gruppo Intune **Laptop Users**. Tutti i criteri applicati a questo gruppo verranno ora applicati agli utenti di portatili BYOD dall'area degli Stati Uniti.
 
-![Visualizzazione del gruppo Utenti portatili](/intune/media/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+![Visualizzazione del gruppo Utenti portatili](/intune/media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### Gruppi per sistemi operativi specifici
 Se l'organizzazione necessita di criteri applicabili a sistemi operativi specifici, ad esempio Android, iOS o Windows, è possibile creare gruppi in base a questo requisito. Come negli esempi precedenti, è possibile basare i criteri su gruppi specifici per il sistema operativo già creati in AD locale e sincronizzarli in Azure AD. È anche possibile crearli direttamente in Azure AD.
 
 Seguendo lo stesso metodo degli esempi precedenti, è possibile creare gruppi in base agli utenti <!--devices?--> usando piattaforme del sistema operativo specifiche.
 
-> [!NOTE]
-> Se gli utenti usano più piattaforme mobili/sistemi operativi e non hanno un metodo automatico per classificare gli utenti come utenti di Android, utenti di iOS o utenti di Windows, è possibile applicare i criteri a livello di dispositivo, consentendo una maggiore flessibilità nell'applicazione di criteri specifici del sistema operativo.
+> [!NOTE] Se gli utenti usano più piattaforme mobili/sistemi operativi e non hanno un metodo automatico per classificare gli utenti come utenti di Android, utenti di iOS o utenti di Windows, è possibile applicare i criteri a livello di dispositivo, consentendo una maggiore flessibilità nell'applicazione di criteri specifici del sistema operativo.
 >
 > Non è possibile eseguire il provisioning dei gruppi in modo dinamico in base al sistema operativo del dispositivo. Eseguire questa operazione usando i gruppi di sicurezza di AD o AAD.
 
@@ -208,8 +206,7 @@ Continuare a creare gruppi di dispositivi, fino a quando non si avrà una gerarc
 ## Gerarchie di gruppi e convenzioni di denominazione
 Per semplificare la gestione dei criteri è consigliabile assegnare a ogni criterio un nome in base allo scopo, alla piattaforma e all'ambito a cui viene applicato. Questo standard di denominazione deve seguire la struttura dei gruppi creati in preparazione per l'applicazione dei criteri.
 
-Ad esempio, per un criterio Android che viene applicato a tutti i dispositivi mobili Android aziendali a livello dell'area degli Stati Uniti, il criterio può essere denominato
-**CO_US_Mob_Android_General**.
+Ad esempio, per un criterio Android che viene applicato a tutti i dispositivi mobili Android aziendali a livello dell'area degli Stati Uniti, il criterio può essere denominato **CO_US_Mob_Android_General**.
 
 ![Creare criteri per Android](/intune/media/Intune_planning_policy_android_small.png)
 
@@ -221,6 +218,6 @@ Questa modalità di assegnazione di nomi ai criteri consentirà di identificare 
 [Creare i gruppi](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

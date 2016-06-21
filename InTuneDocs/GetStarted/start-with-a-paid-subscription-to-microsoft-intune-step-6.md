@@ -53,7 +53,7 @@ La procedura seguente consente di impostare un criterio di configurazione per di
 
 4.  Nell'elenco dei criteri espandere la piattaforma per cui creare un criterio, quindi scegliere **Configurazione generale** > **Creare e distribuire criteri con le impostazioni consigliate** > **Crea criterio**.
 
-5.  Quando viene richiesto di **Selezionare i gruppi a cui si desidera distribuire questo criterio**, scegliere **Intune Users** (Utenti Intune) (il gruppo creato durante il passaggio precedente) dall'elenco dei gruppi disponibili e scegliere **Aggiungi** > **OK**.
+5.  Quando viene visualizzata la richiesta **Selezionare i gruppi a cui si desidera distribuire questo criterio**, scegliere un gruppo dall'elenco dei gruppi disponibili e selezionare **Aggiungi** > **OK**.
 
 I criteri vengono visualizzati nell'elenco dei criteri di configurazione e risultano distribuiti al gruppo **Intune Users** (Utenti Intune). Fare doppio clic sul criterio per visualizzare le relative impostazioni.
 
@@ -114,6 +114,6 @@ A questo punto, Passaggio 6 della *Guida introduttiva di Intune* completato.
 >[&larr; **Organizzare utenti e dispositivi**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)[**Personalizzare il Portale aziendale** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 
