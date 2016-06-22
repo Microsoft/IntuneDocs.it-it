@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Quando si installa l'app Portale aziendale e si registra il dispositivo Android 
 
 -   Ripristinare le impostazioni di fabbrica del telefono se questo viene smarrito o rubato
 
-Quando si aggiunge il dispositivo Android, vengono concesse all'amministratore IT le autorizzazioni per accedere al dispositivo. Tali autorizzazioni consentono di:
+Quando si registra il dispositivo Android, vengono concesse all'amministratore IT le autorizzazioni per accedere al dispositivo. Tali autorizzazioni consentono di:
 
 -   Ripristinare le impostazioni predefinite del dispositivo. Questa operazione è utile se il dispositivo viene smarrito o rubato.
 
@@ -60,9 +60,11 @@ Quando si aggiunge il dispositivo Android, vengono concesse all'amministratore I
 
     -   Invio degli aggiornamenti dell'inventario delle app aziendali (questi aggiornamenti non contengono informazioni personali).
 
+Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

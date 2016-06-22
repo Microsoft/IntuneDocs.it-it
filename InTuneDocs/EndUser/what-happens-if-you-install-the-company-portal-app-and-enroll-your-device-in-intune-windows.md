@@ -18,7 +18,7 @@ ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune?
 
-Per informazioni su cosa succede quando si installa l'app Portale aziendale e si registra il dispositivo, usare il collegamento visualizzato nella sezione "Contenuto dell'articolo" per il dispositivo in uso. Per informazioni sui dispositivi Windows 10, vedere [questa pagina](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Per informazioni su cosa accade quando si installa l'app Portale aziendale e si registra il dispositivo, usare il collegamento visualizzato nella sezione "Contenuto dell'articolo" per il dispositivo in uso. Per informazioni sui dispositivi Windows 10, vedere [questa pagina](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
 ## Windows 8.1 e Windows RT
 Quando si installa l'app Portale aziendale e si registra il proprio dispositivo Windows 8.1 Enterprise o Professional o Windows RT in Intune, è possibile usare tale app per:
@@ -125,10 +125,12 @@ Quando si aggiunge un computer:
 
 -   L'amministratore IT può applicare i criteri del computer. Ad esempio, potrebbe essere necessario impostare una password o un PIN che bloccherà il computer o eliminerà tutti i dati dal disco rigido del computer dopo troppi tentativi di accesso con password errata.
 
+Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 ### Vedere anche
 [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

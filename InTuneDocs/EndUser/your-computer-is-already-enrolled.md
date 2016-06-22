@@ -18,7 +18,7 @@ ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Il computer è già iscritto
 
-Se viene visualizzato un errore in cui viene comunicato che il computer è già registrato, significa che il computer è già stato aggiunto al Portale aziendale ma non è ancora collegato all'account utente. Seguire questa procedura per collegare il computer al proprio account utente e completare il processo.
+Se viene visualizzato un errore in cui viene comunicato che il computer è già registrato, significa che il computer è già stato aggiunto al portale aziendale ma non è ancora collegato all'account utente. Seguire questa procedura per collegare il computer al proprio account utente e completare il processo.  
 
 Per collegare il computer:
 
@@ -38,8 +38,10 @@ Per collegare il computer:
 
 3.  Seguire le istruzioni per collegare il computer al proprio account utente.
 
+Se si vuole annullare la registrazione del dispositivo, usare le istruzioni relative al tipo di dispositivo in uso: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) o [Windows](unenroll-your-device-from-intune-windows.md).
 
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,21 +32,21 @@ Se il telefono Android viene smarrito o rubato, è possibile ripristinare le imp
 
 Per altre informazioni sul ripristino dei dispositivi, vedere [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md) (Cosa succede se si ripristina un dispositivo del Portale aziendale).
 
-> [!WARNING] Il ripristino delle impostazioni predefinite di un dispositivo implica la rimozione dei dati personali e di lavoro dal dispositivo stesso.
+> [!WARNING] Il ripristino delle impostazioni predefinite di un dispositivo implica la rimozione dei dati personali e di lavoro o di studio dal dispositivo stesso.
 
-1.  Nel browser aprire il [sito Web del portale aziendale](http://portal.manage.microsoft.com) ed eseguire l'accesso con l'account aziendale.
+1.  Nel browser aprire il [sito Web del portale aziendale](http://portal.manage.microsoft.com) ed eseguire l'accesso con l'account aziendale o dell'istituto di istruzione.
 
 2.  Toccare **Dispositivi personali** e selezionare il nome del dispositivo smarrito o rubato.
 
 3.  Fare clic su **Reimposta** &gt; **Reimposta**.
 
-Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere all'amministratore IT di eseguire questa operazione.
+Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere all'amministratore IT di eseguire questa operazione. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

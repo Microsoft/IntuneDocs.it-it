@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/25/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,11 +36,11 @@ Se si usa un dispositivo Samsung Knox, è possibile eseguire una "cancellazione 
 - Posta elettronica, VPN e WiFi
 - Capacità degli amministratori IT di applicare determinate impostazioni
 
-
+Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,9 +44,11 @@ Se il dispositivo è configurato solo per ricevere posta elettronica aziendale e
 
 Per istruzioni su come annullare la registrazione, vedere [Annullare la registrazione del dispositivo da Intune con l'app Portale aziendale](unenroll-your-device-from-intune-android.md).
 
+Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

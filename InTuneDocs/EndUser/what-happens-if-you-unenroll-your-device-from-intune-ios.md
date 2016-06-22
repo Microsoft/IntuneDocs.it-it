@@ -18,7 +18,7 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,9 +46,11 @@ Quando si annulla la registrazione del dispositivo iOS da Intune:
 
 Per istruzioni su come annullare la registrazione, vedere [Annullare la registrazione del dispositivo da Intune](unenroll-your-device-from-intune-ios.md).
 
+Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 ### Vedere anche
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

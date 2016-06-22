@@ -18,7 +18,7 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -31,7 +31,7 @@ Usare le impostazioni dei criteri indicate nell'argomento come aiuto per configu
 
 ## Impostazioni dei criteri di configurazione generali
 
-Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 10 per configurare le impostazioni generali per dispositivi registrati Windows 10 Desktop e Windows 10 Mobile:
+Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 10 per configurare le impostazioni generali per dispositivi registrati Windows 10 Desktop e Mobile. Questi criteri non possono essere usati quando si gestiscono i PC Windows 10 con il software client di Intune.
 
 
 ### Password
@@ -177,7 +177,7 @@ Tutte le impostazioni sono solo per Windows 10 Desktop.
 
 |Nome impostazione|Dettagli|
 |----------------|---------------|
-|**Consenti aggiornamenti automatici**|Abilitare questa impostazione per consentire gli aggiornamenti automatici, quindi configurare una delle impostazioni seguenti per controllare il comportamento di aggiornamento:<br /><br />**Notifica download**<br /><br />**Installa automaticamente durante la manutenzione**<br /><br />**Installa e riavvia automaticamente durante la manutenzione**<br /><br />**Installa e riavvia automaticamente all'ora pianificata** **Nota:** quando è selezionata questa opzione è possibile configurare anche le impostazioni seguenti:  **Elimina la notifica per l'utente finale** e **Definire il giorno di installazione per gli aggiornamenti pianificati**.<br>(Solo Windows 10 Desktop)|
+|**Consenti aggiornamenti automatici**|Abilitare questa impostazione per consentire gli aggiornamenti automatici, quindi configurare una delle impostazioni seguenti per controllare il comportamento di aggiornamento:<br /><br />**Notifica download**<br /><br />**Installa automaticamente durante la manutenzione**<br /><br />**Installa e riavvia automaticamente durante la manutenzione**<br /><br />**Installa e riavvia automaticamente all'ora pianificata** **Nota:** quando è selezionata questa opzione è possibile configurare anche le impostazioni seguenti: **Elimina la notifica per l'utente finale** e **Definire il giorno di installazione per gli aggiornamenti pianificati**.<br>(Solo Windows 10 Desktop)|
 
 ## Impostazioni di criteri personalizzati
 Usare i **criteri di configurazione personalizzati** di Microsoft Intune per Windows 10 e Windows 10 Mobile per distribuire le impostazioni URI OMA (Open Mobile Alliance Uniform Resource Identifier) che possono essere usate per controllare le funzionalità nei dispositivi Windows 10 e Windows 10 Mobile. Si tratta di impostazioni standard che molti produttori di dispositivi mobili usano per controllare le funzionalità del dispositivo.
@@ -235,7 +235,7 @@ Tutti i dispositivi devono essere registrati con Intune per poter usare i criter
 |**Experience/AllowScreenCapture**<br>(solo Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Experience/AllowScreenCapture<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0** : non consentito<br>**1**: consentito (impostazione predefinita)|
 |**Experience/AllowTaskSwitcher**<br>(solo Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Experience/AllowTaskSwitcher<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0** : non consentito<br>**1**: consentito (impostazione predefinita)|
 |**Experience/AllowVoiceRecording**<br>(solo Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Experience/AllowVoiceRecording<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0** : non consentito<br>**1**: consentito (impostazione predefinita)|
-|**Experience/AllowSyncMySettings**<br>(solo Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0** : non consentire il roaming<br>**1**: consentire il roaming (impostazione predefinita)|
+|**Experience/AllowSyncMySettings**<br>(solo Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Experience/AllowSyncMySettings<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0** : non consentire il roaming<br>**1**: consenti il roaming (impostazione predefinita)|
 |**Experience/AllowManualMDMUnenrollment**<br>(Desktop e Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Experience/AllowManualMDMUnenrollment<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0** : non consentito<br>**1**: consentito (impostazione predefinita)|
 |**Accounts/AllowMicrosoftAccountConnection**<br>(Desktop e Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Accounts/AllowMicrosoftAccountConnection<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0** : non consentito<br>**1**: consentito (impostazione predefinita)|
 |**Accounts/AllowAddingNonMicrosoftAccountsManually**<br>(Desktop e Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Accounts/AllowAddingNonMicrosoftAccountsManually<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0** : non consentito<br>**1**: consentito (impostazione predefinita)|
@@ -332,6 +332,6 @@ Tutti i dispositivi devono essere registrati con Intune per poter usare i criter
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,9 +42,11 @@ Quando si usa il Portale aziendale per ripristinare il dispositivo iPhone o iPad
 
 -   L'account di posta elettronica aziendale e i messaggi di posta elettronica non salvati verranno eliminati.
 
+Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 ### Vedere anche
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,7 +39,7 @@ Quando si accede ai dati aziendali in un'app gestita, viene visualizzato un mess
 ## Come si ottengono le app gestite?
 Le app gestite possono essere installate in due modi:
 
--   Quando il dispositivo viene registrato in Microsoft Intune, è possibile installare l'app dall'app Portale aziendale o dal sito Web del portale aziendale oppure l'installazione nel dispositivo può essere eseguita dall'amministratore IT. Per altre informazioni sulla registrazione, vedere [Enroll your device in Intune](enroll-your-device-in-Intune-android.md)(Registrare il dispositivo in Intune).
+-   Quando il dispositivo viene registrato in Microsoft Intune, è possibile installare l'app dall'app Portale aziendale o dal sito Web del portale aziendale oppure l'installazione nel dispositivo può essere eseguita dall'amministratore IT. Per altre informazioni sulla registrazione, vedere [Registrare il dispositivo in Intune](enroll-your-device-in-Intune-android.md).
 
 -   L'app viene installata da Play Store, quindi l'utente accede con l'account utente aziendale gestito da Intune.
 
@@ -66,22 +66,22 @@ Di seguito sono riportati alcuni esempi di opzioni che l'amministratore IT può 
 
 Di seguito sono riportate alcune app comuni che il reparto IT potrebbe gestire:
 
--   Browser web gestito
+-   Intune Managed Browser
 
--   Visualizzatore di immagini gestite
+-   Visualizzatore di immagini di Intune
 
--   Visualizzatore PDF gestito
+-   Visualizzatore PDF di Intune
 
--   Windows Media player AV gestito
+-   Lettore AV di Intune
 
 -   Microsoft Word, Excel, PowerPoint
 
-Per altre informazioni sulle app gestite nel dispositivo contattare l'amministratore IT.
+Per altre informazioni sulle app gestite nel dispositivo contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
