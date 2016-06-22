@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: "Limitare l'accesso alla posta elettronica: scenari di esempio | Microsoft Intune"
+title: Limitare l'accesso alla posta elettronica: scenari di esempio | Microsoft Intune
 description:
 keywords:
 author: karthikaraman
@@ -18,7 +18,7 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,7 +35,7 @@ ms.suite: ems
 
 A tale scopo, configurare i criteri di accesso condizionale per Exchange Online con le impostazioni seguenti:
 
--   Selezionare **Abilitare i criteri di accesso condizionale**..
+-   Selezionare **Abilitare i criteri di accesso condizionale**.
 
 - Selezionare le piattaforme a cui si desidera consentire l'accesso da app con l'autenticazione moderna.
 - Per le app di Exchange ActiveSync, selezionare **Blocca i dispositivi non conformi sulle piattaforme supportate da Microsoft Intune** e **Blocca tutti gli altri dispositivi sulle piattaforme non supportate da Microsoft Intune**.
@@ -70,7 +70,7 @@ Il flusso seguente viene usato per decidere quali dispositivi possono accedere a
 ## I dispositivi Android non possono accedere a Exchange locale
 ### Requisiti dello scenario
 - A tutti i dispositivi Android deve essere impedito l'accesso a Exchange.
-- Tutti gli altri dispositivi supportati possono accedere a Exchange se sono gestiti da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Tutti gli altri dispositivi supportati possono accedere a Exchange perché sono gestiti da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 A tale scopo, configurare i criteri di accesso condizionale per Exchange locale con le impostazioni seguenti:
 
@@ -86,6 +86,6 @@ Il flusso seguente viene usato per decidere quali dispositivi possono accedere a
 ![Flusso di accesso dei dispositivi](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

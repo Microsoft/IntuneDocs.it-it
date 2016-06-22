@@ -18,7 +18,7 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,16 +39,16 @@ Quando un utente prova a connettersi a un file usando un'app supportata, come On
 >[!IMPORTANT]
 >L'accesso condizionale per i PC e i dispositivi Windows 10 Mobile con app che usano l'autenticazione moderna non è attualmente disponibile per tutti i clienti di Intune. Se si usano già queste funzionalità, non è necessario intraprendere alcuna azione ed è possibile continuare a usarle.
 
->Se non sono stati creati criteri di accesso condizionale per PC o dispositivi Windows 10 Mobile con app che usano l'autenticazione moderna e si desidera eseguire questa operazione, è necessario inviare una richiesta.  Per altre informazioni sui problemi noti e su come ottenere l'accesso a questa funzionalità, consultare il [sito di Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472)..
+>Se non sono stati creati criteri di accesso condizionale per PC o dispositivi Windows 10 Mobile con app che usano l'autenticazione moderna e si desidera eseguire questa operazione, è necessario inviare una richiesta.  Per altre informazioni sui problemi noti e su come ottenere l'accesso a questa funzionalità, consultare il [sito di Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
 
 **Prima** di configurare i criteri di accesso condizionale per SharePoint Online è necessario:
 - Avere una **sottoscrizione a SharePoint Online** e gli utenti devono avere una licenza per SharePoint Online.
-- Avere una sottoscrizione di **Enterprise Mobility Suite** o **Azure Active Directory Premium**..
+- Avere una sottoscrizione di **Enterprise Mobility Suite** o **Azure Active Directory Premium**.
 
   Per connettersi ai file richiesti, il dispositivo deve:
 -   Essere **registrato** con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] o un PC aggiunto a un dominio.
 
--   **Essere registrato** in Azure Active Directory. Ciò avviene automaticamente quando il dispositivo viene registrato con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]).
+-   **Essere registrato** in Azure Active Directory. Questo avviene automaticamente quando il dispositivo viene registrato con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 
 -   Essere compatibile con i criteri di conformità di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] distribuiti
@@ -78,7 +78,7 @@ Il servizio AAD DRS verrà attivato automaticamente per i clienti di Intune e Of
   - Se i criteri sono impostati in modo da richiedere l'aggiunta a un dominio o la conformità e il PC non soddisfa questi requisiti, viene visualizzato un messaggio contenente istruzioni su come installare l'app Portale aziendale ed eseguire la registrazione.
 -    [L'autenticazione moderna di Office 365 deve essere abilitata](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) ed è necessario disporre di tutti gli aggiornamenti di Office più recenti.
 
-    L'autenticazione moderna consente l'accesso basato su Active Directory Authentication Library (ADAL) ai client Windows con Office 2013 e offre migliori opzioni di sicurezza, come l'**autenticazione a più fattori** e l'**autenticazione basata sui certificati**..
+    L'autenticazione moderna consente l'accesso basato su Active Directory Authentication Library (ADAL) ai client Windows con Office 2013 e offre migliori opzioni di sicurezza, come l'**autenticazione a più fattori** e l'**autenticazione basata sui certificati**.
 
 
 ## Configurare l'accesso condizionale per SharePoint Online
@@ -97,25 +97,23 @@ Se un utente si trova in entrambi i gruppi, sarà esentato dai criteri.
 ### Passaggio 2: Configurare e distribuire i criteri di conformità
 Se questa operazione non è ancora stata eseguita, creare e distribuire i criteri di conformità agli utenti a cui saranno destinati i criteri di SharePoint Online.
 
-> [!NOTE]
-> Mentre i criteri di conformità vengono distribuiti nei gruppi di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], i criteri di accesso condizionale sono destinati ai gruppi di sicurezza di Azure Active Directory.
+> [!NOTE] Mentre i criteri di conformità vengono distribuiti nei gruppi di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], i criteri di accesso condizionale sono destinati ai gruppi di sicurezza di Azure Active Directory.
 
-Per informazioni dettagliate su come configurare i criteri di conformità, vedere [Creare i criteri di conformità](create-a-device-compliance-policy-in-microsoft-intune.md)..
+Per informazioni dettagliate su come configurare i criteri di conformità, vedere [Creare i criteri di conformità](create-a-device-compliance-policy-in-microsoft-intune.md).
 
-> [!IMPORTANT]
-> Se i criteri di conformità non sono stati distribuiti, i dispositivi verranno considerati conformi.
+> [!IMPORTANT] Se i criteri di conformità non sono stati distribuiti, i dispositivi verranno considerati conformi.
 
-Quando si è pronti, continuare con il **Passaggio 3**..
+Quando si è pronti, continuare con il **Passaggio 3**.
 
 ### Passaggio 3: Configurare i criteri di SharePoint Online
 A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e conformi possano accedere a SharePoint Online. Questi criteri verranno archiviati in Azure Active Directory.
 
 #### <a name="bkmk_spopolicy"></a>
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** > **Accesso condizionale** > **Criteri di SharePoint Online**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** > **Accesso condizionale** > **Criteri di SharePoint Online**.
 ![Schermata della pagina dei criteri di SharePoint Online](../media/IntuneSASharePointOnlineCAPolicy.png)
 
-2.  Selezionare **Abilitare i criteri di accesso condizionale**..
+2.  Selezionare **Abilita criteri di accesso condizionale per SharePoint Online**.
 
 3.  In **Accesso all'applicazione** è possibile scegliere di applicare i criteri di accesso condizionale a:
 
@@ -123,7 +121,7 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
 
         Tutti i dispositivi usati per accedere a **SharePoint Online** devono essere registrati in Intune e devono essere conformi ai criteri.  Qualsiasi applicazione client che usa l'**autenticazione moderna** è soggetta ai criteri di accesso condizionale. Se la piattaforma non è attualmente supportata da Intune, l'accesso a **SharePoint Online** è bloccato.
         >[!TIP]
-        >Se l'accesso condizionale per PC non è già in uso, è possibile che questa opzione non venga visualizzata.  Usare le **piattaforme specifiche**. L'accesso condizionale per i PC non è attualmente disponibile per tutti i clienti di Intune.   Per altre informazioni sui problemi noti e su come ottenere l'accesso a questa funzionalità, consultare il [sito di Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472)..
+        >Se l'accesso condizionale per PC non è già in uso, è possibile che questa opzione non venga visualizzata.  Usare le **piattaforme specifiche**. L'accesso condizionale per i PC non è attualmente disponibile per tutti i clienti di Intune.   Per altre informazioni sui problemi noti e su come ottenere l'accesso a questa funzionalità, consultare il [sito di Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
 
     -   **Piattaforme specifiche**
 
@@ -141,7 +139,7 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
 
 5.  Facoltativamente, in **Gruppi esentati**fare clic su **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
 
-6.  Al termine, fare clic su **Salva**..
+6.  Al termine, fare clic su **Salva**.
 
 Non è necessario distribuire i criteri di accesso condizionale perché diventano immediatamente effettivi.
 
@@ -160,6 +158,6 @@ Selezionare un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Di
 [Limitare l'accesso alla posta elettronica e ai servizi di Office 365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

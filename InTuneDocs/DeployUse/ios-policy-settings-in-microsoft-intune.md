@@ -18,7 +18,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -99,7 +99,7 @@ Se l'impostazione desiderata non viene visualizzata in questo argomento, è poss
 |**Consenti archivio applicazioni**|Consente al dispositivo di accedere all'App Store.|sì|
 |**Richiedi una password per accedere all'archivio applicazioni**|Sì|
 |**Consenti acquisti in-app**|Consente gli acquisti online dall'interno di un'app in esecuzione.|Sì|
-|**Consenti documenti gestiti in altre app non gestite**|Consente di visualizzare documenti aziendali in qualsiasi app.|OS 7.1 e versioni successive|
+|**Consenti documenti gestiti in altre app non gestite**|Consente di visualizzare documenti aziendali in qualsiasi app.<br>**Esempio:** si vuole impedire agli utenti il salvataggio di file dall'app OneDrive in Dropbox. Disabilitare questa impostazione. Dopo aver ricevuto i criteri (ad esempio dopo un riavvio), il dispositivo non consentirà più il salvataggio.|iOS 7.1 e versioni successive|
 |**Consenti documenti non gestiti in altre app gestite**|Consente di visualizzare qualsiasi documento nelle app aziendali gestite.|iOS 7.1 e versioni successive|
 |**Consenti videoconferenza**|Consente l'uso di applicazioni di videoconferenza come Facetime sul dispositivo.|Sì|
 |**Consenti contenuti per adulti nell'archivio multimediale**|Consente al dispositivo di accedere ai contenuti dell'archivio classificati come per adulti.|Sì|
@@ -153,7 +153,7 @@ Nell'elenco **app conformi &amp; e non conformi** specificare un elenco di app c
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
-|**Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo**|Fare clic su **Sfoglia**, quindi specificare l'app gestita o un'app da uno Store che potrà essere eseguita quando il dispositivo è in modalità tutto schermo. Non sarà consentito eseguire altri applicazioni sul dispositivo. Per altre informazioni, vedere **Come specificare gli URL negli App Store** più avanti in questo argomento.|
+|**Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo**|Scegliere **Sfoglia**, quindi specificare l'app gestita o un'app di uno Store che potrà essere eseguita quando il dispositivo è in modalità tutto schermo. Non sarà consentito eseguire altri applicazioni sul dispositivo. Per altre informazioni, vedere **Come specificare gli URL negli App Store** più avanti in questo argomento.|
 |**Consenti tocco**|Abilita o disabilita il touchscreen nel dispositivo.|
 |**Consenti rotazione schermo**|Abilita o disabilita la modifica dell'orientamento dello schermo quando si ruota il dispositivo.|
 |**Consenti pulsanti volume**|Abilita o disabilita l'uso dei pulsanti del volume nel dispositivo.|
@@ -182,9 +182,9 @@ Usare **Report app non conformi** per visualizzare la conformità delle app cons
 
 ##### Per eseguire il report app non conformi
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Report** &gt; **Report app non conformi**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Report** &gt; **Report app non conformi**.
 
-2.  Selezionare i gruppi di dispositivi da controllare, scegliere se verificare la presenza di app conformi, di app non conformi o di entrambi, quindi fare clic su **Visualizza report**.
+2.  Selezionare i gruppi di dispositivi da controllare, scegliere se verificare la presenza di app conformi, di app non conformi o di entrambi i tipi di app, quindi scegliere **Visualizza report**.
 
 #### Come specificare gli URL negli App Store
 Per specificare un URL dell'app nell'elenco delle app conformi e non conformi o nell'opzione **Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo** (solo iOS), usare uno dei formati seguenti:
@@ -222,7 +222,7 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 |Nome impostazione|Dettagli|
     |----------------|--------------------|
 |**Nome del profilo di configurazione personalizzato (visualizzato agli utenti)**|Specificare il nome con cui il criterio verrà visualizzato nel dispositivo e nei report dei criteri di Intune.|
-|**File del profilo di configurazione**|Fare clic su **Importa**, quindi selezionare il profilo di configurazione creato usando lo strumento Apple Configurator. **Nota:** Assicurarsi che le impostazioni esportate dallo strumento Apple Configurator siano compatibili con la versione di iOS sui dispositivi su cui vengono distribuiti i criteri personalizzati iOS. Per informazioni sulla risoluzione delle impostazioni incompatibili, cercare **Configuration Profile Reference** e **Mobile Device Management Protocol Reference** nel sito Web di [Apple Developer](https://developer.apple.com/).|
+|**File del profilo di configurazione**|Scegliere **Importa**, quindi selezionare il profilo di configurazione creato usando lo strumento Apple Configurator. **Nota:** Assicurarsi che le impostazioni esportate dallo strumento Apple Configurator siano compatibili con la versione di iOS sui dispositivi su cui vengono distribuiti i criteri personalizzati iOS. Per informazioni sulla risoluzione delle impostazioni incompatibili, cercare **Configuration Profile Reference** e **Mobile Device Management Protocol Reference** nel sito Web di [Apple Developer](https://developer.apple.com/).|
     |**Dettagli del profilo di configurazione**|Visualizza il codice XML per il profilo di configurazione importato.|
 
 ### Vedere anche
@@ -230,6 +230,6 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

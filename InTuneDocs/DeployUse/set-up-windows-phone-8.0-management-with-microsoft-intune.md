@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Configurare la gestione di Windows Phone 8.0 con Microsoft Intune | Microsoft Intune
+title: Impostare la gestione di Windows Phone 8.0 | Microsoft Intune
 description:
 keywords:
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,6 +28,8 @@ ms.suite: ems
 # Configurare la gestione del dispositivo per Windows Phone 8.0
 
 Windows Phone 8.0 richiede un certificato Symantec per installare l'app Portale aziendale di Intune e per consentire la gestione del dispositivo. È necessario un certificato anche per firmare applicazioni line-of-business. L'argomento seguente si riferisce solo a Windows Phone 8.0. Per gestire i dispositivi Windows Phone 8.1 o versioni successive, compresi i dispositivi Windows 10 Mobile, vedere [Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) (Impostare la gestione di Windows Phone e Windows 10 Mobile con Microsoft Intune).
+
+> [!IMPORTANT] A partire da settembre 2016 l'app Portale aziendale per Windows 8.0 e Windows Phone 8.0 non sarà più disponibile per il download.
 
 -   **Windows Phone 8**: Certificato richiesto
 -   **Windows Phone 8.1 e Windows 10 Mobile** richiedono un certificato solo se:
@@ -184,6 +186,6 @@ I requisiti di installazione per la gestione dei dispositivi mobili Windows Phon
     > -   Se è necessario installare le app con sideload ed eseguire la registrazione e la ricezione del file ssp.xap nei dispositivi Windows Phone 8.0, creare una nuova distribuzione software del file ssp.xap e distribuirlo con l'azione **disinstalla** . I dispositivi Windows Phone 8.0 non supportano l'installazione o la disinstallazione forzata delle app, quindi ignoreranno la distribuzione. I dispositivi Windows Phone 8.1 supportano l'azione di disinstallazione e rimuoveranno il file ssp.xap.
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

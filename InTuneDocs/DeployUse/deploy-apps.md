@@ -18,7 +18,7 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,7 +44,7 @@ Le regole seguenti si applicano all'acquisto di altro spazio di archiviazione ne
 
 -   È necessario un abbonamento a pagamento attivo per acquistare ulteriore memoria.
 
--   Solo gli amministratori della fatturazione o gli amministratori globali di Microsoft Online Services possono acquistare spazio di archiviazione aggiuntivo tramite il portale per gli account di Intune. Per aggiungere, eliminare o gestire gli amministratori, è necessario essere un amministratore globale e accedere al portale per gli account di Intune.
+-   Solo gli amministratori della fatturazione o gli amministratori globali di Microsoft Online Services possono acquistare spazio di archiviazione aggiuntivo tramite il portale di gestione di Office 365. Per aggiungere, eliminare o gestire gli amministratori, è necessario essere un amministratore globale e accedere al portale di gestione di Office 365.
 
 -   Per i clienti dei contratti multilicenza che hanno acquistato Intune o il componente aggiuntivo di Microsoft Intune attraverso il contratto aziendale, contattare il Microsoft Account Manager o il Microsoft Partner per informazioni sui prezzi e per acquistare memoria aggiuntiva.
 
@@ -105,6 +105,6 @@ Quando un dispositivo riceve due distribuzioni con la stessa azione di distribuz
 
 Informazioni su come [distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

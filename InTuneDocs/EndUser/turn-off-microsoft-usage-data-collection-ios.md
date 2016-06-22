@@ -32,9 +32,11 @@ Per migliorare i propri prodotti e servizi, Microsoft raccoglie automaticamente 
 
 È possibile disattivare la raccolta dei dati sul dispositivo iOS tramite l'impostazione **Dati di utilizzo** nell'app Portale aziendale. Gli amministratori IT non hanno alcun controllo sulla raccolta dei dati e non possono modificare la selezione di questa impostazione.
 
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto, vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 ### Vedere anche
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

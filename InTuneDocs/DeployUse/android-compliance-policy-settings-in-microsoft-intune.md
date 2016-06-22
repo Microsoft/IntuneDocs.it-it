@@ -18,7 +18,7 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -37,8 +37,7 @@ Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 
 ## Impostazioni di sicurezza del sistema
 ### Password
-- **Richiedi una password per sbloccare i dispositivi mobili:** impostare l'opzione su **Sì** per richiedere agli utenti di immettere una password
-  per poter accedere al dispositivo.
+- **Richiedi una password per sbloccare i dispositivi mobili:** impostare l'opzione su **Sì** per richiedere agli utenti di immettere una password per poter accedere al dispositivo.
 
 -  **Lunghezza minima password**: specificare il numero minimo di cifre o caratteri che la password dell'utente deve contenere.
 
@@ -52,39 +51,28 @@ Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 
 - **Minuti di inattività prima che venga richiesta la password:** specifica il tempo di inattività prima che l'utente debba immettere nuovamente la password.
 
-- **Scadenza password (giorni):** selezionare il numero di giorni che mancano alla scadenza della password attuale,
-  quando l'utente deve creare una nuova password.
+- **Scadenza password (giorni):** selezionare il numero di giorni che mancano alla scadenza della password attuale, quando l'utente deve creare una nuova password.
 
-- **Ricorda cronologia password:** usare questa impostazione insieme a **Impedisci riutilizzo delle password precedenti** per impedire all'utente di
-  creare password già usate in precedenza.
+- **Ricorda cronologia password:** usare questa impostazione insieme a **Impedisci riutilizzo delle password precedenti** per impedire all'utente di creare password già usate in precedenza.
 
-- **Impedisci riutilizzo delle password precedenti:** se si seleziona **Ricorda cronologia password**, specificare il
-  numero di password usate in precedenza che non è possibile tornare a usare.
+- **Impedisci riutilizzo delle password precedenti:** se l'opzione **Ricorda cronologia password** è selezionata, specificare il numero di password usate in precedenza che non è possibile riutilizzare.
 
-- **Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività:**
-  Questa impostazione deve essere usata insieme all'impostazione **Minuti di inattività prima che venga richiesta la password**. Agli utenti finali viene richiesto di immettere una password per accedere a un dispositivo che è rimasto inattivo per il tempo specificato nell'impostazione
-  **Minuti di inattività prima che venga richiesta la password**.
+- **Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività:** questa impostazione deve essere usata insieme all'impostazione **Minuti di inattività prima che venga richiesta la password**. Agli utenti finali viene richiesto di immettere una password per accedere a un dispositivo che è rimasto inattivo per il tempo specificato nell'impostazione **Minuti di inattività prima che venga richiesta la password**.
 
-### Encryption
-- **Richiedi crittografia sul dispositivo mobile:** impostare questa opzione su **Sì** per richiedere che il dispositivo sia
-  crittografato per la connessione alle risorse. I dispositivi sono
-  crittografati quando si configura l'impostazione **Richiedi una password per
-  sbloccare i dispositivi mobili**.
+### Crittografia
+- **Richiedi crittografia sul dispositivo mobile:** impostare questa opzione su **Sì** per richiedere che i dispositivi vengano crittografati per la connessione alle risorse. I dispositivi vengono crittografati quando si configura l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**.
 
 ## Impostazioni dell'integrità dei dispositivi
 
-- **Il dispositivo non deve essere jailbroken o rooted**: se si attiva questa impostazione,
-  i dispositivi jailbroken verranno valutati come non conformi.
+- **Il dispositivo non deve essere jailbroken o rooted:** se si abilita questa impostazione, i dispositivi jailbroken verranno valutati come non conformi.
 
 ## Impostazioni delle proprietà dei dispositivi
-- **Versione minima richiesta del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo,
-  viene segnalato come non conforme.
+- **Minimum OS required** (Versione minima richiesta del sistema operativo): quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme.
   Viene visualizzato un collegamento a informazioni per eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e dopo l'aggiornamento potrà accedere alle risorse aziendali.
 
-- **Versione massima richiesta del sistema operativo:** quando un dispositivo usa una versione del
-  sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali risulta bloccato e l'utente deve contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
+- **Maximum OS version allowed** (Versione massima consentita del sistema operativo): quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali risulterà bloccato e l'utente dovrà contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

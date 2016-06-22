@@ -18,7 +18,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,8 +41,7 @@ I criteri MAM supportano le app in esecuzione in:
 
 -   **Dispositivi gestiti e registrati in una soluzione di gestione dei dispositivi mobili di terze parti**.   I dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dell'azienda.
 
-  > [!NOTE]
-  > I criteri di gestione delle app per dispositivi mobili non devono essere usati con soluzioni di gestione delle app per dispositivi mobili o di contenitore protetto di terze parti.
+  > [!NOTE] I criteri di gestione delle app per dispositivi mobili non devono essere usati con soluzioni di gestione delle app per dispositivi mobili o di contenitore protetto di terze parti.
 
 -   **Dispositivi non gestiti**.  I dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dei dipendenti non gestiti o registrati in Intune o altre soluzioni MDM.
 
@@ -64,6 +63,7 @@ L'uso di soluzioni MDM con criteri MAM comporta vantaggi aggiuntivi e le aziende
 
 -   Android 4 o versioni successive
 
+I dispositivi Windows non sono attualmente supportati.
 ##  Protezione dei dati delle app con i criteri MAM
 
 ####  App senza criteri MAM:
@@ -77,8 +77,7 @@ Quando le app vengono usate senza restrizioni, può crearsi una commistione di d
 ![Immagine che mostra come proteggere i dati aziendali quando vengono applicati criteri MAM ](../media/Apps_with_mobile_app_policies.png)
 
 È possibile usare i criteri MAM per impedire il salvataggio dei dati aziendali nell'archiviazione locale del dispositivo e limitare lo spostamento dei dati in altre app non protette dai criteri MAM. Le impostazioni dei criteri MAM includono:
-- Criteri di rilocazione dei dati, ad esempio
- **Impedisci Salva con nome**, **Limita le operazioni taglia, copia e incolla**.
+- Criteri di rilocazione dei dati, ad esempio **Impedisci Salva con nome** e **Limita le operazioni taglia, copia e incolla**.
 - Impostazioni dei criteri di accesso, ad esempio **Richiedi PIN semplice per l'accesso**, **Blocca l'esecuzione delle app gestite nei dispositivi jailbroken o rooted**.
 
 ### Protezione dei dati con criteri MAM nei dispositivi gestiti da una soluzione MDM:
@@ -138,6 +137,6 @@ Tutte le app di Office per dispositivi mobili supportano più identità.
 [Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

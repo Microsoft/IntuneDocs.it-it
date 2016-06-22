@@ -18,7 +18,7 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,28 +46,29 @@ Prima di iniziare, è necessario ottenere un token VPP da Apple e caricarlo nell
 * Per impostazione predefinita, Intune esegue la sincronizzazione con il servizio VPP di Apple due volte al giorno. Tuttavia, è possibile avviare una sincronizzazione manuale in qualsiasi momento.
 * Dopo avere importato il token VPP in Intune, non importare lo stesso token in un'altra soluzione di gestione di dispositivi. Questo potrebbe infatti causare la perdita di record relativi agli utenti e alle assegnazioni di licenze.
 * Prima di iniziare a usare VPP iOS con Intune, rimuovere tutti gli account utente VPP esistenti creati con altri fornitori MDM. Intune non sincronizzerà tali account utente in Intune come misura di protezione. Intune sincronizza solo i dati dal servizio VPP di Apple creati da Intune stesso. 
+* Non è possibile distribuire app VPP per iOS su dispositivi registrati mediante il protocollo DEP (Device Enrollment Protocol).
 
 ## Per ottenere e caricare un token VPP di Apple
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Amministrazione** &gt; **iOS e Mac OS X** &gt; **Volume Purchase Program**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Amministrazione** &gt; **iOS e Mac OS X** &gt; **Volume Purchase Program**.
 
-2.  Fare clic sul collegamento **Account VPP di Apple** e, se non è già stato fatto, registrarsi al Volume Purchase Program per aziende. Dopo aver completato l'iscrizione, scaricare il token VPP di Apple per l'account.
+2.  Scegliere il collegamento **Account VPP di Apple** e, se non è già stato fatto, registrarsi al Volume Purchase Program per aziende. Dopo aver completato l'iscrizione, scaricare il token VPP di Apple per l'account.
 
-3.  Nella pagina **Gestisci Volume Purchase Program (VPP) di Apple** della console di Intune fare clic su **Carica un token VPP**.
+3.  Nella pagina **Gestisci Volume Purchase Program (VPP) di Apple** della console di Intune scegliere **Carica un token VPP**.
 
-4.  Nella finestra di dialogo **Carica il token VPP** immettere o incollare il nome del token VPP e il proprio ID Apple, quindi fare clic su **Carica**.
+4.  Nella finestra di dialogo **Carica un token VPP** immettere o incollare il nome del token VPP e il proprio ID Apple, quindi scegliere **Carica**.
 
-5.  Nella finestra di dialogo di avviso fare clic sulla casella di controllo per indicare di aver compreso che in seguito non sarà possibile passare a un account VPP diverso e quindi fare clic su **Sì**.
+5.  Nella finestra di dialogo di avviso scegliere la casella di controllo per indicare di aver compreso che in seguito non sarà possibile passare a un account VPP diverso e quindi scegliere **Sì**.
 
 Nella pagina **Volume Purchase Program** è ora possibile visualizzare le informazioni sul token VPP di Apple, incluse le date dell'ultimo aggiornamento, di scadenza e dell'ultima sincronizzazione con Intune.
 
-È possibile sincronizzare i dati archiviati da Apple con Intune in qualsiasi momento facendo clic su **Sincronizza**.
+È possibile sincronizzare i dati archiviati da Apple con Intune in qualsiasi momento scegliendo **Sincronizza**.
 
 ## Per distribuire un'app acquistata tramite Volume Purchase Program
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **App** &gt; **Software gestito** &gt; **App acquistate con Volume Purchase Program**. Questo elenco visualizza tutte le applicazioni che sono state sincronizzate dal servizio VPP di Apple.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **App** &gt; **Software gestito** &gt; **App acquistate con Volume Purchase Program**. Questo elenco visualizza tutte le applicazioni che sono state sincronizzate dal servizio VPP di Apple.
 
-2.  Scegliere l'app da distribuire, fare clic su **Gestisci distribuzione**, quindi usare le istruzioni specificate nell'argomento [Distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md) per completare il caricamento, la creazione e la distribuzione dell'app.
+2.  Scegliere l'app da distribuire, scegliere **Gestisci distribuzione**, quindi usare le istruzioni specificate nell'argomento [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Distribuire app in Microsoft Intune) per completare il caricamento, la creazione e la distribuzione dell'app.
 
 Quando si distribuisce l'app come **Installazione richiesta**, ogni utente che installa l'app usa una licenza.
 
@@ -89,6 +90,6 @@ Per monitorare quali app VPP sono state distribuite e quante licenze sono in uso
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

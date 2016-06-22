@@ -18,7 +18,7 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Quando un utente di destinazione tenta di usare Skype for Business Online sul pr
 
 **Prima** di configurare i criteri di accesso condizionale per Skype for Business Online è necessario:
 - Avere una **sottoscrizione di Skype for Business Online** e assegnare la licenza di Skype for Business agli utenti.
-- Avere una sottoscrizione di **Enterprise Mobility Suite** o **Azure Active Directory Premium**..
+- Avere una sottoscrizione di **Enterprise Mobility Suite** o **Azure Active Directory Premium**.
 -   **Abilitare l'autenticazione moderna** per Skype for Business Online. Accedere a Microsoft Connect e riempire [questo modulo](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) per la registrazione al programma dell'autenticazione moderna.
 -  Tutti gli utenti finali devono usare **Skype for Business Online**. Se si ha una distribuzione con Skype for Business Online e Skype for Business locale, i criteri di accesso condizionale non verranno applicati agli utenti finali.
 
@@ -73,26 +73,24 @@ Prima di iniziare configurare i gruppi di sicurezza di Azure Active Directory pe
 Se un utente si trova in entrambi i gruppi, sarà esentato dai criteri.
 
 ### Passaggio 2: Configurare e distribuire i criteri di conformità
-[Creare](create-a-device-compliance-policy-in-microsoft-intune.md) e [distribuire](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) i criteri di conformità a tutti i dispositivi interessati dai criteri, ossia tutti i dispositivi usati dagli utenti nei **Gruppi di destinazione**..
+[Creare](create-a-device-compliance-policy-in-microsoft-intune.md) e [distribuire](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) i criteri di conformità a tutti i dispositivi interessati dai criteri, ossia tutti i dispositivi usati dagli utenti nei **Gruppi di destinazione**.
 
-> [!NOTE]
-> Mentre i criteri di conformità vengono distribuiti nei gruppi di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], i criteri di accesso condizionale sono destinati ai gruppi di sicurezza di Azure Active Directory.
+> [!NOTE] Mentre i criteri di conformità vengono distribuiti nei gruppi di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], i criteri di accesso condizionale sono destinati ai gruppi di sicurezza di Azure Active Directory.
 
 
-> [!IMPORTANT]
-> Se i criteri di conformità non sono stati distribuiti, i dispositivi verranno considerati conformi.
+> [!IMPORTANT] Se i criteri di conformità non sono stati distribuiti, i dispositivi verranno considerati conformi.
 
-Quando si è pronti, continuare con il **Passaggio 3**..
+Quando si è pronti, continuare con il **Passaggio 3**.
 
 ### Passaggio 3: Configurare i criteri di Skype for Business Online
 A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e conformi possano accedere a Skype for Business Online. Questi criteri verranno archiviati in Azure Active Directory.
 
 ####
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** > **Accesso condizionale** > **Criteri di Skype for Business Online**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** > **Accesso condizionale** > **Criteri di Skype for Business Online**.
 
 ![Schermata della pagine dei criteri di accesso condizionale per Skype for Business Online](./media/conditional_access_SFBPolicy.png)
 
-2.  Selezionare **Abilitare i criteri di accesso condizionale**..
+2.  Selezionare **Abilitare i criteri di accesso condizionale**.
 
 3.  In **Accesso all'applicazione** è possibile scegliere di applicare i criteri di accesso condizionale a:
 
@@ -104,7 +102,7 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
 
 5.  Facoltativamente, in **Gruppi esentati**fare clic su **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
 
-6.  Al termine, fare clic su **Salva**..
+6.  Al termine, fare clic su **Salva**.
 
 L'accesso condizionale per Skype for Business Online è stato configurato. Non è necessario distribuire i criteri di accesso condizionale perché diventano immediatamente effettivi.
 
@@ -121,6 +119,6 @@ Selezionare un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Di
 * **Dispositivi conformi e registrati con AAD**: si tratta dei dispositivi che possono accedere a Skype for Business Online.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

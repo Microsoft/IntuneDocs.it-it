@@ -18,7 +18,7 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -138,8 +138,8 @@ Nell'elenco **app conformi &amp; e non conformi** specificare un elenco di app c
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
-|**Segnala la mancata conformità quando gli utenti installano le app elencate**|Elenca le app che non sono gestite da Intune e che gli utenti non sono autorizzati a installare ed eseguire.|
-|**Non segnalare la mancata conformità quando gli utenti installano le app elencate**|Elenca le app che gli utenti sono autorizzati a installare. Per garantire la conformità, non installare app che non sono elencate. Le app gestite da Intune sono automaticamente consentite.|
+|**Segnala la mancata conformità quando gli utenti installano le app elencate**|Elenca le app che non sono gestite da Intune e che gli utenti non sono autorizzati a installare ed eseguire. Se gli utenti installano una di queste app, tale app verrà registrata nel Report app non conformi.|
+|**Non segnalare la mancata conformità quando gli utenti installano le app elencate**|Elenca le app che si vuole vengano consentite nell'azienda. Per garantire la conformità, gli utenti non devono installare app non elencate. Le app gestite da Intune sono automaticamente consentite.|
 |**Aggiunta**|Aggiunge un'app all'elenco selezionato. Specificare un nome desiderato, facoltativamente l'autore dell'app e l'URL dell'app nell'App Store.<br /><br />Per informazioni, vedere Come specificare gli URL negli App Store, più avanti in questo argomento.|
 |**Importa app**|Importa un elenco di app specificate in un file con valori delimitati da virgole. Per il file usare il formato nome applicazione, autore, URL.|
 |**Modifica**|Consente di modificare il nome, l'autore e l'URL dell'app selezionata.|
@@ -150,7 +150,7 @@ Specificare le impostazioni seguenti per i **dispositivi Samsung KNOX**:
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
-|**Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo**|Fare clic su **Sfoglia**, quindi selezionare l'app gestita di cui consentire l'esecuzione quando il dispositivo è in modalità tutto schermo. Le app specificate come collegamento allo store non sono attualmente supportate. Non sarà possibile eseguire altre applicazioni nel dispositivo.|
+|**Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo**|Scegliere **Sfoglia**, quindi selezionare l'app gestita di cui consentire l'esecuzione quando il dispositivo è in modalità tutto schermo. Le app specificate come collegamento allo store non sono attualmente supportate. Non sarà possibile eseguire altre applicazioni nel dispositivo.|
 |**Consenti pulsanti volume**|Abilita o disabilita l'uso dei pulsanti del volume nel dispositivo.|
 |**Consenti pulsante riattivazione sospensione schermo**|Abilita o disabilita il pulsante di riattivazione sospensione dello schermo del dispositivo.|
 
@@ -161,9 +161,9 @@ Usare **Report app non conformi** per visualizzare la conformità delle app cons
 
 ###### Per eseguire il report app non conformi
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Report** &gt; **Report app non conformi**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Report** &gt; **Report app non conformi**.
 
-2.  Selezionare i gruppi di dispositivi da controllare, scegliere se verificare la presenza di app conformi, di app non conformi o di entrambi, quindi fare clic su **Visualizza report**.
+2.  Selezionare i gruppi di dispositivi da controllare, scegliere se verificare la presenza di app conformi, di app non conformi o di entrambi i tipi di app, quindi scegliere **Visualizza report**.
 
 #### Come specificare gli URL negli App Store
 Per specificare un URL app nell'elenco di applicazioni conformi e non conformi, utilizzare il formato seguente:
@@ -177,10 +177,9 @@ Aprire la pagina di installazione per l'app e copiare l'URL negli Appunti. A que
 ## Impostazioni di criteri personalizzati
 Usare i **Criteri di configurazione personalizzati Android** di Microsoft Intune per distribuire le impostazioni OMA-URI (Open Mobile Alliance Uniform Resource Identifier) che è possibile usare per controllare le funzionalità nei dispositivi Android. Si tratta di impostazioni standard che molti produttori di dispositivi mobili usano per controllare le funzionalità del dispositivo.
 
-Questa funzionalità consente di distribuire le impostazioni Android non configurabili con i criteri di Intune. Per informazioni sulle impostazioni che è possibile configurare con questi criteri, vedere [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune).
+Questa funzionalità consente di distribuire le impostazioni Android non configurabili con i criteri di Intune.
 
-> [!NOTE]
-> I criteri personalizzati Android attualmente supportano la configurazione di impostazioni Wi-Fi solo per dispositivi Android che includono una chiave precondivisa. Per altre informazioni vedere Configurare un profilo Wi-Fi personalizzato con una chiave precondivisa, più avanti in questo argomento.
+> [!NOTE] I criteri personalizzati Android attualmente supportano la configurazione di impostazioni Wi-Fi solo per dispositivi Android che includono una chiave precondivisa.
 
 ### Impostazioni generali
 
@@ -258,6 +257,6 @@ Sebbene Intune supporti profili Wi-Fi per i dispositivi Android, questa funziona
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

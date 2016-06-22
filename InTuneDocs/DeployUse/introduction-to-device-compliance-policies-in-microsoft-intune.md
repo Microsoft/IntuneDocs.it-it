@@ -18,7 +18,7 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,7 +30,7 @@ ms.suite: ems
 Per proteggere i dati aziendali è necessario assicurarsi che i dispositivi usati per accedere alle app e ai dati rispettino alcune regole, come l'uso di un PIN per l'accesso al dispositivo e la crittografia dei dati archiviati nel dispositivo stesso. Un set di regole di questo tipo è detto criterio di conformità.
 
 ## Come usare i criteri di conformità
-È possibile usare i criteri di conformità con i criteri di accesso condizionale, per limitare l'accesso ai soli dispositivi che soddisfano le regole dei criteri di conformità. Per informazioni su come usare insieme i due tipi di criteri, vedere l'articolo [Restrict access to email and O365 services (Limitare l'accesso alla posta elettronica e ai servizi di Office 365)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+È possibile usare i criteri di conformità con i criteri di accesso condizionale per consentire l'accesso soltanto ai dispositivi che soddisfano le regole dei criteri di conformità per l'accesso alla posta elettronica e ad altri servizi. Per informazioni su come usare insieme i due tipi di criteri, vedere l'articolo [Restrict access to email and O365 services (Limitare l'accesso alla posta elettronica e ai servizi di Office 365)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 È anche possibile usare i criteri di conformità indipendentemente dall'accesso condizionale. In tal caso i dispositivi vengono valutati e segnalati in base allo stato di conformità. Ad esempio può risultare utile segnalare il numero di dispositivi non crittografati o i dispositivi jailbroken o rooted. Tuttavia, quando i criteri di conformità vengono usati in modo indipendente, non vengono applicate limitazioni per l'accesso alle risorse aziendali.
 
@@ -67,6 +67,6 @@ Nella tabella seguente sono elencati i tipi di dispositivi supportati dai criter
 [Restrict access to email and O365 services (Limitare l'accesso alla posta elettronica e ai servizi di Office 365)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,6 +46,7 @@ Se si usa la **console di amministrazione di Intune** per la gestione dei dispos
 
 - Android 4 o versioni successive
 
+I dispositivi Windows non sono attualmente supportati.
 ##  App supportate
 * **App Microsoft:** queste app includono Intune App SDK e non richiedono alcuna elaborazione aggiuntiva per l'applicazione dei criteri MAM.
 Per visualizzare l'elenco completo delle app Microsoft supportate, passare alla [raccolta di applicazioni per dispositivi mobili di Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) nella pagina dei partner di Microsoft Intune. Fare clic sull'app per visualizzare gli scenari e le piattaforme supportate e per verificare se l'app supporta identità multiple.
@@ -123,6 +124,6 @@ Gli **amministratori globali** hanno accesso al [portale di Azure](https://porta
 [Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

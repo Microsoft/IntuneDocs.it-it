@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -50,17 +50,17 @@ Per l'elenco completo dei criteri di Intune vedere [Informazioni di riferimento 
 
 ## Creare un criterio di configurazione
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) fare clic su **Criteri** &gt; **Criteri di configurazione** &gt; **Aggiungi**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Criteri** &gt; **Criteri di configurazione** &gt; **Aggiungi**.
 
 2.  Scegliere il criterio desiderato e scegliere di usare le impostazioni consigliate per il criterio (se disponibili; è possibile modificare queste impostazioni successivamente) o di creare un criterio personalizzato con le proprie impostazioni.
 
     > [!TIP] Per suggerimenti sulla scelta dei criteri corretti vedere [Informazioni di riferimento sui criteri di Microsoft Intune](microsoft-intune-policy-reference.md).
 
-3.  Quando si è pronti, fare clic su **Crea criterio**.
+3.  Quando si è pronti, scegliere **Crea criterio**.
 
 4.  Nella schermata **Crea criterio** configurare un nome e una descrizione facoltativa per il criterio.
 
-5.  Configurare le impostazioni necessarie dei criteri, quindi fare clic su **Salva criterio**.
+5.  Configurare le impostazioni necessarie dei criteri, quindi scegliere **Salva criterio**.
 
     Se serve assistenza per le impostazioni dei criteri, scegliere il tipo di criteri dall'elenco seguente:
 
@@ -76,7 +76,7 @@ Per l'elenco completo dei criteri di Intune vedere [Informazioni di riferimento 
     - [Impostazioni per i criteri relativi a termini e condizioni](terms-and-condition-policy-settings-in-microsoft-intune.md)
     - [Impostazioni generali per i dispositivi mobili (legacy)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-4.  Nella finestra di dialogo di conferma, fare clic su **Sì** per distribuire subito il criterio oppure fare clic su **No** per creare il criterio senza distribuirlo.
+4.  Nella finestra di dialogo di conferma scegliere **Sì** per distribuire subito il criterio oppure scegliere **No** per creare il criterio senza distribuirlo.
 
 È possibile visualizzare e modificare il nuovo criterio esplorando le sezioni per ciascun tipo di criterio nell'area di lavoro **Criteri** .
 
@@ -89,35 +89,26 @@ Dopo avere creato un criterio, è possibile distribuirlo in uno o più gruppi di
 
 ## Distribuire un criterio di configurazione
 
-1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi fare clic su **Gestisci distribuzione**.
+1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi scegliere **Gestisci distribuzione**.
 
 2.  Nella finestra di dialogo **Gestisci distribuzione** :
 
-    -   **Per distribuire il criterio**: selezionare uno o più gruppi in cui si vuole distribuire il criterio, quindi fare clic su **Aggiungi** &gt; **OK**.
+    -   **Per distribuire il criterio**, selezionare uno o più gruppi a cui si vuole distribuire il criterio, quindi scegliere **Aggiungi** &gt; **OK**.
 
-    -   **Per chiudere la finestra di dialogo senza distribuire il criterio**, fare clic su **Annulla**.
+    -   **Per chiudere la finestra di dialogo senza distribuirlo**, scegliere **Annulla**.
 
 Quando si seleziona un criterio distribuito, è possibile visualizzare altre informazioni sulla distribuzione nella parte inferiore dell'elenco di criteri.
 
 ## Gestire i criteri
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/), fare clic su **Criteri**, quindi individuare e selezionare i criteri da gestire.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Criteri**, quindi individuare e selezionare i criteri da gestire.
 
 2.  Selezionare una delle azioni seguenti:
 
 - **Modifica**: apre le proprietà del criterio selezionato per consentire di apportare modifiche.
 - **Elimina**: elimina il criterio selezionato.<br>Quando si elimina un criterio, il criterio viene rimosso da tutti i gruppi a cui è stato distribuito.
-- **Gestisci distribuzione**: selezionare il gruppo in cui si vuole distribuire il criterio e fare clic su **Aggiungi**.
+- **Gestisci distribuzione**: selezionare il gruppo in cui si vuole distribuire il criterio e scegliere **Aggiungi**.
 
-## Attività per i criteri di Intune
-
-### Per aggiornare i criteri in un dispositivo (si applica solo ai PC Windows che eseguono il software client di Intune)
-
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/)fare clic su **Gruppi**, quindi selezionare un gruppo di dispositivi.
-
-2.  Selezionare i dispositivi di cui aggiornare i criteri, quindi fare clic su **Attività remote** &gt; **Aggiorna criteri**.
-
-3.  Fare clic su **Attività remote** nell'angolo inferiore destro della console di amministrazione di Intune per verificare lo stato delle attività.
 
 ## Domande frequenti sui criteri Intune
 
@@ -187,25 +178,7 @@ Quando si elimina un criterio o si rimuove un dispositivo da un gruppo in cui è
         - Tipo di password richiesto
         - Scadenza password (giorni)
         - Ricorda cronologia password
-        - Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo
-        - Minuti di inattività prima che venga richiesta la password
-        - Tipo di password richiesto - numero minimo di set di caratteri
-        - Consenti dispositivo foto/video
-        - Richiedi crittografia sui dispositivi mobili
-        - Consenti archivi rimovibili
-        - Consenti browser Web
-        - Consenti archivio applicazioni
-        - Consenti acquisizione schermo
-        - Consenti georilevazione
-        - Consenti account Microsoft
-        - Consenti copia e incolla
-        - Consenti tethering Wi-Fi
-        - Consenti connessione automatica agli hotspot Wi-Fi gratuiti
-        - Consenti creazione report degli hotspot Wi-Fi
-        - Consenti ripristino impostazioni predefinite
-        - Consenti Bluetooth
-        - Consenti NFC
-        - Consenti Wi-Fi
+        - Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo - Minuti di inattività prima che venga richiesta la password - Tipo di password richiesto - Numero minimo di set di caratteri - Consenti dispositivo foto/video - Richiedi crittografia sui dispositivi mobili - Consenti archivi rimovibili - Consenti browser Web - Consenti archivio applicazioni - Consenti acquisizione schermo - Consenti georilevazione - Consenti account Microsoft - Consenti copia e incolla - Consenti tethering Wi-Fi - Consenti connessione automatica agli hotspot Wi-Fi gratuiti - Consenti creazione report degli hotspot Wi-Fi - Consenti ripristino impostazioni predefinite - Consenti Bluetooth - Consenti NFC - Consenti Wi-Fi
     
     - **iOS**: vengono rimosse tutte le impostazioni, ad eccezione di:
         - Consenti roaming vocale
@@ -220,9 +193,16 @@ Quando si elimina un criterio o si rimuove un dispositivo da un gruppo in cui è
 - **Impostazioni di Windows Firewall**: le impostazioni vengono ripristinate allo stato predefinito per il sistema operativo del computer. Per informazioni dettagliate, vedere [Proteggere i PC Windows con Endpoint Protection per Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
 
 
+### Come aggiornare i criteri in un dispositivo (si applica solo ai PC Windows che eseguono il software client di Intune)
+
+1.  In qualsiasi gruppo di dispositivi selezionare i dispositivi di cui aggiornare i criteri e quindi scegliere **Attività remote** &gt; **Aggiorna criteri**.
+2.  Scegliere **Attività remote** nell'angolo inferiore destro della console di amministrazione di Intune per verificare lo stato delle attività.
+
+### Dove è possibile trovare contenuti sulla risoluzione dei problemi?
+
+Vedere [Troubleshoot policies in Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md) (Risolvere i problemi relativi ai criteri in Microsoft Intune).
 
 
-
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,11 @@ Quando il dispositivo Android è registrato in Intune, è possibile usare l'impo
 
 Per attivare o disattivare la **registrazione dettagliata**, accedere all'app Portale aziendale usando le credenziali aziendali o dell'istituto di istruzione, toccare **Impostazioni** e quindi toccare il pulsante di attivazione/disattivazione accanto all'impostazione **Registrazione dettagliata**.
 
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto, vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

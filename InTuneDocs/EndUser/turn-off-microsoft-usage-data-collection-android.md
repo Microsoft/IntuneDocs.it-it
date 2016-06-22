@@ -29,9 +29,11 @@ ms.suite: ems
 # Disattivare la raccolta dati di utilizzo di Microsoft
 Per migliorare i propri prodotti e servizi, Microsoft raccoglie automaticamente dati anonimi sulle prestazioni e sull'affidabilità dell'app Portale aziendale e sulle relative modalità d'uso. È possibile disattivare la raccolta dei dati sul dispositivo Android tramite l'impostazione **Dati di utilizzo** nell'app Portale aziendale. Gli amministratori IT non hanno alcun controllo sulla raccolta dei dati e non possono modificare la selezione di questa impostazione.
 
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto, vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

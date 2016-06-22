@@ -18,7 +18,7 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ Per rimuovere selettivamente i dati delle app aziendali, creare una richiesta di
 
     ![Schermata del pannello Gestione di applicazioni mobili di Intune con il riquadro Riepilogo](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  Scegliere **Nuove richieste di cancellazione dati**..
+2.  Scegliere **Nuova richiesta di cancellazione dati**.
 
     ![Schermata del pannello Nuova richiesta di cancellazione dati](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
@@ -66,6 +66,6 @@ Il pannello **Gestione di applicazioni mobili di Intune** contiene un report di 
 [Uso del portale di Azure](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

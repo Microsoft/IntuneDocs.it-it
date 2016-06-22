@@ -18,7 +18,7 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,11 +40,15 @@ I criteri di gestione delle applicazioni mobili supportano:
 
 A differenza degli altri criteri di Intune, i criteri di gestione delle applicazioni mobili non vengono distribuiti direttamente ma, al contrario, è possibile associare i criteri all'app che si vuole limitare. Le impostazioni specificate diventeranno effettive quando l'app viene distribuita e installata nei dispositivi.
 
-Per applicare restrizioni a un'app, questa deve includere Microsoft App Software Development Kit (SDK). Esistono due metodi per ottenere questo tipo di app:
+Per applicare restrizioni a un'app, questa deve includere Microsoft Intune App SDK. Esistono tre metodi per ottenere questo tipo di app:
 
 -   **Usare un'app gestita da criteri**: include App SDK. Per aggiungere questo tipo di applicazione, è possibile specificare un collegamento all'app da un archivio di app, ad esempio l'iTunes store o Google Play. Non sono richieste ulteriori elaborazioni per questo tipo di app. Vedere l'elenco delle [app che è possibile usare con i criteri di gestione delle applicazioni mobili di Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
 -   **Usare un'app di cui è stato eseguito il wrapping**: app che sono state riassemblate per includere App SDK usando lo **strumento di wrapping delle app di Microsoft Intune**. Questo strumento viene in genere usato per elaborare le app aziendali create internamente. Non può essere usato per elaborare le app state scaricate dall'App Store. Vedere [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app iOS per la gestione delle applicazioni mobili con lo strumento per la disposizione testo delle app di Microsoft Intune) e [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app Android per la gestione delle applicazioni mobili con lo strumento per la disposizione testo delle app di Microsoft Intune).
+
+- **Sviluppare una propria applicazione che includa Intune App SDK**: Intune App SDK consente di integrare funzionalità di gestione delle app in un'app in fase di sviluppo. Per altre informazioni, vedere [Intune App SDK Overview](/develop/intune-app-sdk) (Panoramica di Intune App SDK).
+
+Per informazioni sulla scelta tra lo strumento di wrapping delle app e Intune App SDK, vedere [Decide how to prepare apps for mobile application management with Microsoft Intune](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) (Decidere come preparare app per la gestione di applicazioni mobili con Microsoft Intune).
 
 Alcune app gestite, ad esempio l'app Outlook per iOS e Android supportano **più identità**. Ciò significa che Intune si applica solo le impostazioni di gestione di account aziendali o dati nell'applicazione.
 
@@ -60,7 +64,7 @@ Ad esempio, utilizzando Outlook app:
 
 ## Creare e distribuire un'app con criterio di gestione delle applicazioni mobili
 
--   **Passaggio 1:** Ottenere il collegamento a un'app gestita da criteri o creare un'app di cui è stato eseguito il wrapping.
+-   **Passaggio 1:** Ottenere il collegamento a un'app gestita da criteri, creare un'app sottoposta a wrapping o usare Intune App SDK per sviluppare un'app abilitata per MAM.
 
 -   **Passaggio 2:** Pubblicare l'app nello spazio di archiviazione cloud.
 
@@ -70,15 +74,12 @@ Ad esempio, utilizzando Outlook app:
 
 -   **Passaggio 5:** Monitorare la distribuzione dell'app.
 
-## **Passaggio 1:** Ottenere il collegamento a un'app gestita da criteri o creare un'app di cui è stata eseguita la disposizione testo.
+## **Passaggio 1:** Ottenere il collegamento a un'app gestita da criteri, creare un'app sottoposta a wrapping o usare Intune App SDK per sviluppare un'app abilitata per MAM.
 
--   **Per ottenere un collegamento a un'app gestita da criteri**: nell'App Store trovare e prendere nota dell'URL dell'app gestita da criteri che si vuole distribuire.
+-   **Per ottenere un collegamento a un'app gestita da criteri in un App Store**: nell'App Store trovare e prendere nota dell'URL dell'app gestita da criteri che si vuole distribuire.
 
     Ad esempio, l'URL dell'app Microsoft Word per iPad è **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**
 
--   **Per creare un'app di cui è stata eseguita la disposizione testo:** usare le informazioni negli argomenti [Preparare le app iOS per la gestione delle applicazioni mobili con lo strumento per la disposizione testo delle app di Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Preparare le app Android per la gestione delle applicazioni mobili con lo strumento per la disposizione testo delle app di Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
-
-    Lo strumento crea un'app elaborata che verrà usata quando si pubblica l'app nello spazio di archiviazione cloud.
 
 ## **Passaggio 2:** Pubblicare l'app nello spazio di archiviazione cloud
 Quando si pubblica un'app gestita, le procedure possono essere diverse a seconda che l'app sia gestita tramite criteri o elaborata con lo strumento di wrapping delle app di Microsoft Intune per iOS.
@@ -111,7 +112,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
 
 ## **Passaggio 3:** Creare criteri di gestione delle applicazioni mobili
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** &gt; **Panoramica** &gt; **Aggiungi criterio**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Panoramica** &gt; **Aggiungi criterio**.
 
 2.  Configurare e distribuire uno dei seguenti criteri **Software** in base al tipo di dispositivo per cui si desidera configurare le app:
 
@@ -142,7 +143,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
     |**Crittografa dati app**|Specifica che tutti i dati associati a questa app verranno crittografati, compresi i dati archiviati esternamente come, ad esempio, i dati delle schede SD.<br /><br />**Crittografia per iOS**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, i dati vengono crittografati a riposo usando la crittografia a livello di dispositivo fornita dal sistema operativo. Ciò viene abilitato tramite i criteri PIN del dispositivo che devono essere impostati dall'amministratore IT. Quando viene richiesto un PIN, i dati verranno crittografati in base alle impostazioni nei criteri di gestione delle applicazioni mobili. Come indicato nella documentazione di Apple [i moduli utilizzati dal iOS 7 sono FIPS 140-2 certified](http://support.apple.com/en-us/HT202739).<br /><br />**Crittografia per Android**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, la crittografia viene fornita da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O file.  Il contenuto nell'archivio del dispositivo verrà sempre crittografato. Il metodo di crittografia non è conforme agli standard FIPS 140-2.|
     |**Blocca acquisizione schermo** (solo per dispositivi Android)|Specifica che le funzionalità di acquisizione schermo del dispositivo vengono bloccate quando si usa questa app.|
 
-4.  Al termine, fare clic su **Salva criterio**.
+4.  Al termine, scegliere **Salva criterio**.
 
 Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell'area di lavoro **Criteri** .
 
@@ -169,15 +170,15 @@ Dopo aver creato e distribuito un'app associata ai criterio di gestione delle ap
 
 #### Per visualizzare lo stato della distribuzione
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Gruppi** &gt; **Panoramica**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Gruppi** &gt; **Panoramica**.
 
 2.  Eseguire uno dei passaggi seguenti:
 
-    -   Fare clic su **Tutti gli utenti**, quindi fare doppio clic sull'utente di cui si vuole esaminare i dispositivi. Nella pagina **Proprietà utente** fare clic su **Dispositivi**, quindi fare doppio clic sul dispositivo da esaminare.
+    -   Scegliere **Tutti gli utenti**, quindi fare doppio clic sull'utente di cui si vogliono esaminare i dispositivi. Nella pagina **Proprietà utente** scegliere **Dispositivi**, quindi fare doppio clic sul dispositivo da esaminare.
 
-    -   Fare clic su **Tutti i dispositivi** &gt; **Tutti i dispositivi mobili**. Nella pagina **Proprietà gruppo dispositivi** fare clic su **Dispositivi**, quindi fare doppio clic sul dispositivo da esaminare.
+    -   Scegliere **Tutti i dispositivi** &gt; **Tutti i dispositivi mobili**. Nella pagina **Proprietà gruppo dispositivi** scegliere **Dispositivi**, quindi fare doppio clic sul dispositivo da esaminare.
 
-3.  Nella pagina **Proprietà del dispositivo mobile** fare clic su **Criteri** per visualizzare un elenco dei criteri di gestione delle applicazioni mobili che sono stati distribuiti nel dispositivo.
+3.  Nella pagina **Proprietà del dispositivo mobile** scegliere **Criteri** per visualizzare un elenco dei criteri di gestione delle applicazioni mobili che sono stati distribuiti nel dispositivo.
 
 4.  Selezionare i criteri di gestione delle applicazioni mobili di cui si vuole visualizzare lo stato. È possibile visualizzare i dettagli dei criteri nel riquadro inferiore ed espandere il relativo nodo per visualizzarne le impostazioni.
 
@@ -197,6 +198,6 @@ Nei casi in cui il dispositivo o l'utente riceva due criteri in conflitto, si ap
 -   Se al dispositivo non è stato ancora distribuito alcun criterio e vengono distribuite due impostazioni in conflitto, viene usata l'impostazione predefinita del dispositivo.
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ Un flusso di accesso condizionale tipico:
 ![Immagine che illustra gli aspetti tenuti in considerazione per determinare se a un dispositivo è consentito o meno l'accesso a un servizio](./media/ConditionalAccess4.png)
 
 ## Come configurare l'accesso condizionale?
-Usare l'accesso condizionale per gestire l'accesso a Microsoft **Exchange locale**, **Exchange Online**, **Exchange Online dedicato**, **SharePoint Online** e **Skype for Business Online**..
+Usare l'accesso condizionale per gestire l'accesso a Microsoft **Exchange locale**, **Exchange Online**, **Exchange Online dedicato**, **SharePoint Online** e **Skype for Business Online**.
 
 Per impostare l'accesso condizionale, configurare i criteri di conformità del dispositivo e i criteri di accesso condizionale.
 
@@ -69,6 +69,6 @@ A differenza degli altri criteri di Intune, i criteri di accesso condizionale no
   - [Creare criteri di accesso condizionale per Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

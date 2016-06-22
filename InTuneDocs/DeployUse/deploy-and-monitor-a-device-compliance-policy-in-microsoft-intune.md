@@ -18,7 +18,7 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,12 +29,11 @@ ms.suite: ems
 ## Distribuire i criteri di conformità
 Distribuire i criteri di conformità [creati](create-a-device-compliance-policy-in-microsoft-intune.md) a uno o più gruppi di utenti o dispositivi nella propria organizzazione.
 
-1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi scegliere **Gestisci distribuzione**..
+1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi scegliere **Gestisci distribuzione**.
 ![Schermata della pagina dei criteri di conformità con l'opzione di menu Gestisci distribuzione nella parte superiore](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
-2.  Nella finestra di dialogo **Gestisci distribuzione** selezionare uno o più gruppi in cui si vuole distribuire il criterio, quindi scegliere **Aggiungi > OK**..
-![Schermata della finestra di dialogo Gestisci distribuzione](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png)
-È possibile distribuire i criteri di conformità per gli utenti e/o i dispositivi. Usare i gruppi di Active Directory che sono già stati creati e sincronizzati con Intune oppure creare manualmente questi gruppi nella console di Intune. Per altre informazioni su come distribuire i criteri, vedere [Distribuire un criterio di configurazione](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+2.  Nella finestra di dialogo **Gestisci distribuzione** selezionare uno o più gruppi in cui si vuole distribuire il criterio, quindi scegliere **Aggiungi > OK**.
+![Schermata della finestra di dialogo Gestisci distribuzione](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png). È possibile distribuire i criteri di conformità per gli utenti e/o i dispositivi. Usare i gruppi di Active Directory che sono già stati creati e sincronizzati con Intune oppure creare manualmente questi gruppi nella console di Intune. Per altre informazioni su come distribuire i criteri, vedere [Deploy a configuration policy](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Distribuire un criterio di configurazione).
 
 Usare il riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** dell'area di lavoro **Criteri** per identificare i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene inoltre visualizzato nell'area di lavoro **Dashboard** .
 
@@ -51,18 +50,18 @@ Possono verificarsi conflitti se vengono applicati più criteri di Intune a un d
 
 #### Per visualizzare i dispositivi non conformi ai criteri di conformità
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Gruppi > Tutti i dispositivi**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Gruppi > Tutti i dispositivi**.
 
 2.  Fare doppio clic sul nome di un dispositivo nell'elenco di dispositivi.
 
 3.  Scegliere la scheda **Criteri** per visualizzare un elenco di criteri per il dispositivo.
 
-4.  Dall'elenco a discesa **Filtri** selezionare **Non è conforme ai criteri di conformità**..
+4.  Dall'elenco a discesa **Filtri** selezionare **Non è conforme ai criteri di conformità**.
 ![Schermata che mostra l'elenco delle opzioni nell'elenco dei filtri](./media/intune-sa-3e-view-device-noncompliance.png)
 
 #### Per visualizzare i report di attestazione dell'integrità
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Report**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Report**.
 
 2.  Nella pagina **Report di attestazione dell'integrità - Creare un nuovo report** è possibile visualizzare un report con tutti i dati di attestazione dell'integrità di Windows 10 raccolti da Intune. È anche possibile creare un report con un subset di dati usando i filtri. I filtri possono basarsi sul tipo di dispositivo, sul sistema operativo o solo su un subset di punti dati.
 
@@ -77,6 +76,6 @@ Possono verificarsi conflitti se vengono applicati più criteri di Intune a un d
 [Introduzione ai criteri di conformità del dispositivo in Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

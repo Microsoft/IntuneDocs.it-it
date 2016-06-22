@@ -1,25 +1,25 @@
 ---
 # required metadata
 
-title: [Proteggere app e dati line-of-business su dispositivi non registrati | Microsoft Intune]
+title: Proteggere app e dati line-of-business su dispositivi non registrati | Microsoft Intune
 description:
 keywords:
-author: [karthikaraman]
-manager: [jeffgilb]
+author: karthikaraman
+manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
 ms.service:
 ms.technology:
-ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
+ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [joglocke]
-#ms.suite: ems
+ms.reviewer: joglocke
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -52,6 +52,11 @@ Per associare l'app line-of-business con i criteri MAM è necessario aggiungere 
 
 ## Passaggio 3: Applicare i criteri MAM
 Dopo aver caricato nel servizio i metadati dell'app, questa appare nell'elenco delle app.  È ora possibile [creare un nuovo criterio o modificare un criterio esistente](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) e applicarlo alla riga dell'app line-of-business aggiunta nel passaggio 2.
+
+>[!IMPORTANT]
+>È necessario assegnare il criterio MAM agli utenti che useranno l'applicazione sottoposta a wrapping.  Gli utenti a cui non è stato distribuito questo criterio non potranno usare l'app.
+
+
   ![Schermata del pannello App di destinazione con la nuova app line-of-business](../media/mam-azure-portal-lob-on-targeted-app-list.png)
 ## Passaggio 4: Distribuire l'app.
 È possibile distribuire app agli utenti finali nei modi seguenti:
@@ -75,6 +80,6 @@ Per la modifica di dettagli come il nome o l'identificatore bundle dell'app è n
   Le app vengono rimosse dall'elenco di app line-of-business e dall'elenco delle app di destinazione nel criterio MAM.
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

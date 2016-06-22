@@ -18,7 +18,7 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,24 +39,16 @@ Le impostazioni elencate in questa sezione sono supportate in Windows Phone 8.1 
 
 ## Impostazioni di sicurezza del sistema
 ### Password
-- **Richiedi una password per sbloccare i dispositivi mobili:**    impostare l'opzione su **Sì** per richiedere agli utenti di immettere una password
-  per poter accedere al dispositivo.
+- **Richiedi una password per sbloccare i dispositivi mobili:** impostare l'opzione su **Sì** per richiedere agli utenti di immettere una password per poter accedere al dispositivo.
 
-- **Consenti password semplici:**    Impostare l'opzione
-   su **Sì** per consentire agli utenti di creare password semplici
-   come "**1234**" o "**1111**".
+- **Consenti password semplici:** impostare l'opzione su **Sì** per consentire agli utenti di creare password semplici come '**1234**' o '**1111**' 
 
--  **Lunghezza minima password:**
-  specifica il numero minimo di cifre o caratteri che
-  la password dell'utente deve contenere.
-- **Tipo di password richiesto:** specifica se gli utenti devono creare
-una password **alfanumerica** o **numerica**.
+-  **Lunghezza minima password**: specificare il numero minimo di cifre o caratteri che la password dell'utente deve contenere.
+- **Tipo di password richiesto:** specificare se gli utenti devono creare una password **alfanumerica** o **numerica**.
 
   Per i dispositivi che eseguono Windows e prevedono l'accesso con un account Microsoft, i criteri di conformità non eseguono correttamente la convalida se la lunghezza minima della password è maggiore di otto caratteri e il numero minimo di set di caratteri è maggiore di due.
 
-- **Numero minimo di set di caratteri:** se l'opzione **Tipo di password richiesto** è impostata su
-**alfanumerico**, questa impostazione specifica il numero minimo di
-set di caratteri che la password deve contenere. I quattro set di caratteri sono:
+- **Numero minimo di set di caratteri:** se **Tipo di password richiesto** è impostato su **Alfanumerico**, questa impostazione specifica il numero minimo di set di caratteri che la password deve contenere. I quattro set di caratteri sono:
   -   Lettere minuscole
   -   Lettere maiuscole
   -   Simboli
@@ -65,22 +57,18 @@ set di caratteri che la password deve contenere. I quattro set di caratteri sono
   Se per questa impostazione viene usato un numero più alto, gli utenti dovranno creare password più complesse. Per i dispositivi che eseguono Windows e prevedono l'accesso con un account Microsoft, i criteri di conformità non eseguono correttamente la convalida se la lunghezza minima della password è maggiore di otto caratteri e il numero minimo di set di caratteri è maggiore di due.
 - **Minuti di inattività prima che venga richiesta la password:** specifica il tempo di inattività prima che l'utente debba immettere nuovamente la password.
 
-- **Scadenza password (giorni):** selezionare il numero di giorni che mancano alla scadenza della password attuale,
-  quando l'utente deve creare una nuova password.
+- **Scadenza password (giorni):** selezionare il numero di giorni che mancano alla scadenza della password attuale, quando l'utente deve creare una nuova password.
 
-- **Ricorda cronologia password:** usare questa impostazione insieme a **Impedisci riutilizzo delle password precedenti** per impedire all'utente di
-  creare password già usate precedentemente.
+- **Ricorda cronologia password:** usare questa impostazione insieme a **Impedisci riutilizzo delle password precedenti** per impedire all'utente di creare password già usate in precedenza.
 
-- **Impedisci riutilizzo delle password precedenti:** se si seleziona **Ricorda cronologia password**, specificare il
-  numero di password usate in precedenza che non è possibile riutilizzare.
+- **Impedisci riutilizzo delle password precedenti:** se l'opzione **Ricorda cronologia password** è selezionata, specificare il numero di password usate in precedenza che non è possibile riutilizzare.
 - **Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività:** questa impostazione deve essere usata insieme all'impostazione **Minuti di inattività prima che venga richiesta la password**. Agli utenti finali viene richiesto di immettere una password per accedere a un dispositivo che è rimasto inattivo per il tempo specificato nell'impostazione **Minuti di inattività prima che venga richiesta la password**.
 
   **Questa impostazione si applica solo ai dispositivi Windows 10 Mobile.**
-### Encryption
-- **Richiedi crittografia sui dispositivi mobili:** impostare questa opzione su **Sì** per richiedere che il dispositivo sia
-  crittografato per la connessione alle risorse.
+### Crittografia
+- **Richiedi crittografia sul dispositivo mobile:** impostare questa opzione su **Sì** per richiedere che il dispositivo sia crittografato per la connessione alle risorse.
 
-## Impostazioni dello stato dei dispositivi
+## Impostazioni dell'integrità dei dispositivi
 - **Richiedi che i dispositivi siano segnalati come integri:** è possibile impostare una regola per richiedere che i dispositivi **Windows 10 Mobile** vengano segnalati come integri nei criteri di conformità nuovi o esistenti.  Se questa impostazione è abilitata, i dispositivi Windows 10 vengono valutati tramite il servizio di attestazione dell'integrità in base ai punti dati seguenti:
   -  **Abilitazione della funzionalità BitLocker:** se la funzionalità BitLocker è attiva, il dispositivo è in grado di proteggere i dati archiviati nell'unità da accessi non autorizzati, quando il sistema è spento o passa allo stato di ibernazione. Crittografia unità BitLocker di Windows crittografa tutti i dati archiviati nel volume del sistema operativo Windows. BitLocker usa il TPM per proteggere il sistema operativo Windows e i dati utente e consente di garantire che un computer non venga manomesso anche se viene perso, rubato o lasciato incustodito. Se il computer è dotato di un TPM compatibile, BitLocker usa il TPM per bloccare le chiavi di crittografia che proteggono i dati. Di conseguenza, non è possibile accedere alle chiavi finché il TPM non ha verificato lo stato del computer.
   -  **Abilitazione della funzionalità Integrità del codice:** l'integrità del codice è una funzionalità che verifica l'integrità di un driver o di un file di sistema ogni volta che viene caricato in memoria. L'integrità del codice rileva se un driver o un file di sistema non firmato viene caricato nel kernel o se un file di sistema è stato modificato da software dannoso eseguito da un account utente con privilegi di amministratore.
@@ -88,12 +76,10 @@ set di caratteri che la password deve contenere. I quattro set di caratteri sono
 
   Per informazioni su come funziona il servizio di attestazione dell'integrità, vedere l'articolo relativo al [CSP per l'attestazione dell'integrità](https://msdn.microsoft.com/library/dn934876.aspx).
 ##  Impostazioni delle proprietà dei dispositivi
-- **Versione minima richiesta del sistema operativo:** quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo,
-    viene segnalato come non conforme.
-    Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e dopo l'aggiornamento potrà accedere alle risorse aziendali.
+- **Minimum OS required** (Versione minima richiesta del sistema operativo): quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme.
+    Viene visualizzato un collegamento a informazioni per eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e dopo l'aggiornamento potrà accedere alle risorse aziendali.
 
-- **Versione massima consentita del sistema operativo:** quando un dispositivo usa una versione del
-    sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali risulterà bloccato e l'utente dovrà contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
+- **Maximum OS version allowed** (Versione massima consentita del sistema operativo): quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali risulterà bloccato e l'utente dovrà contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
 
 
 ## Impostazioni dei criteri di conformità dei PC Windows
@@ -159,6 +145,6 @@ Per trovare la versione del sistema operativo da usare per le impostazioni **Ver
 > ![CA_Win10OSVersion](./media/ca_win10-os-version.png)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

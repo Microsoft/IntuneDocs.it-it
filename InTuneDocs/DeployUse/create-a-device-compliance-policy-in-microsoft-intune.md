@@ -18,7 +18,7 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,7 +41,7 @@ Nella pagina **Crea criterio** abilitare le impostazioni richieste:
 ![Schermata della scheda Generale della pagina Crea criterio ](./media/intune-sa-3b-create-policy.png)
 
 ##  Passaggio 3: Salvare i criteri
-Al termine, scegliere **Salva criterio**..
+Al termine, scegliere **Salva criterio**.
 
 È possibile scegliere di distribuire i criteri subito dopo il salvataggio o in un secondo momento. Il nuovo criterio viene visualizzato nel nodo **Criteri di conformità** dell'area di lavoro **Criteri**.
 
@@ -84,6 +84,6 @@ Per altre informazioni sulle impostazioni di conformità supportate in ogni piat
 [Introduction to device compliance policies (Introduzione ai criteri di conformità del dispositivo)](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

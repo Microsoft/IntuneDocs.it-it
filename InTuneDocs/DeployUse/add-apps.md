@@ -18,7 +18,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -84,7 +84,7 @@ Consente di gestire e distribuire app iOS gratuite dall'App Store. Consente inol
 > [!TIP] Le opzioni per i dispositivi mobili non sono disponibili finché non si [imposta l'autorità di gestione dei dispositivi mobili](get-ready-to-enroll-devices-in-microsoft-intune.md) in Intune.
 
 ## Supporto per app della piattaforma UWP (Universal Windows Platform)
-Nei dispositivi Windows 10 non è necessario disporre di una chiave di trasferimento locale per installare le app line-of-business. Tuttavia, la chiave del Registro di sistema **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** deve avere un valore pari a **1** per abilitare il sideload.
+Nei PC Windows 10 non è necessario disporre di una chiave di trasferimento locale per installare le app line-of-business. Tuttavia, la chiave del Registro di sistema **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** deve avere un valore pari a **1** per abilitare il sideload.
 
 Se la chiave del Registro di sistema non è configurata, Intune imposterà automaticamente questo valore su**1** la prima volta che si distribuisce un'app nel dispositivo. Se questo valore è stato impostato su **0**, Intune non può modificare automaticamente il valore e la distribuzione delle app line-of-business avrà esito negativo.
 
@@ -96,6 +96,6 @@ Nei dispositivi Windows 10 Mobile, è possibile usare un certificato di firma co
 
 In seguito sarà necessario aggiungere le app nella console di Intune prima di distribuirle. È possibile aggiungere app sia per i [dispositivi registrati](add-apps-for-mobile-devices-in-microsoft-intune.md) che per i [PC Windows gestiti con il software client di Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 
