@@ -4339,9 +4339,9 @@
 * Archive Datetime: 2016-06-16 01:40:26
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\restrict-email-access-example-scenarios.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/515dfd70679437e93fce75e5e98e5f5973c70c2e/InTuneDocs/DeployUse/restrict-email-access-example-scenarios.md)
-* Current Handback File: [restrict-email-access-example-scenarios.864d5c5f75fe174593dadf9ad193d7a2fa2efc21.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/7d7a7b26a82a9208e5f25cfa973990e91ba34234/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/restrict-email-access-example-scenarios.864d5c5f75fe174593dadf9ad193d7a2fa2efc21.it-it.xlf)
-* Current Handback Datetime: 2016-05-27 00:19:43
+* Current Target File: [InTuneDocs\DeployUse\restrict-email-access-example-scenarios.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/566ffb806868649e547a0c2ea17606b887e744ee/InTuneDocs/DeployUse/restrict-email-access-example-scenarios.md)
+* Current Handback File: [restrict-email-access-example-scenarios.864d5c5f75fe174593dadf9ad193d7a2fa2efc21.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/40c8a41782d41fdbb03701923efd61b69c669687/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/restrict-email-access-example-scenarios.864d5c5f75fe174593dadf9ad193d7a2fa2efc21.it-it.xlf)
+* Current Handback Datetime: 2016-06-22 08:49:48
 * [Back to Top](#report-top)
 
 ##### <a name='16f9ab5651999458728f1e0ae91526bb3f3555d5236'></a> Source: [InTuneDocs\DeployUse\retire-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/retire-apps.md)
@@ -5291,50 +5291,50 @@
 
 ##### <a name='8291a96487ee84ce0214d7054236941c3cf37a6d304'></a> Source: [InTuneDocs\EndUser\how-to-encrypt-your-windows-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-encrypt-your-windows-device.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\how-to-encrypt-your-windows-device.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/cd3c87a276c94acae98e095215f78ac056e9b75b/InTuneDocs/EndUser/how-to-encrypt-your-windows-device.md)
+* Target File: [InTuneDocs\EndUser\how-to-encrypt-your-windows-device.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/566ffb806868649e547a0c2ea17606b887e744ee/InTuneDocs/EndUser/how-to-encrypt-your-windows-device.md)
 * Handoff File: [how-to-encrypt-your-windows-device.814dd6aedce31481d6795284d96c32a4fa24a65a.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/8f340e4b8c7a5d60ced4e87c2812605713706358/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/how-to-encrypt-your-windows-device.814dd6aedce31481d6795284d96c32a4fa24a65a.it-it.xlf)
 * Handoff Datetime: 2016-06-09 16:50:40
 * Handoff Reason: Include
 * Archive File: [how-to-encrypt-your-windows-device.814dd6aedce31481d6795284d96c32a4fa24a65a.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/b09ce110623bba279fe55a0fd3ee47f9652cd3b8/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/how-to-encrypt-your-windows-device.814dd6aedce31481d6795284d96c32a4fa24a65a.it-it.xlf)
 * Archive Datetime: 2016-06-16 01:40:26
-* Handback File: [how-to-encrypt-your-windows-device.814dd6aedce31481d6795284d96c32a4fa24a65a.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/a31c75458efbfcc050e0039cd7121049354216af/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/how-to-encrypt-your-windows-device.814dd6aedce31481d6795284d96c32a4fa24a65a.it-it.xlf)
-* Handback Datetime: 2016-06-17 12:25:48
+* Handback File: [how-to-encrypt-your-windows-device.814dd6aedce31481d6795284d96c32a4fa24a65a.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/40c8a41782d41fdbb03701923efd61b69c669687/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/how-to-encrypt-your-windows-device.814dd6aedce31481d6795284d96c32a4fa24a65a.it-it.xlf)
+* Handback Datetime: 2016-06-22 08:49:48
 * [Back to Top](#report-top)
 
 ##### <a name='c089b36676feb4caa7064738d6ef4b709139ab49305'></a> Source: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-android-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-reconnect-a-compromised-android-device.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-android-device.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/3d3d6747250a9605fbc4df8e554935ff6ed39249/InTuneDocs/EndUser/how-to-reconnect-a-compromised-android-device.md)
+* Target File: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-android-device.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/566ffb806868649e547a0c2ea17606b887e744ee/InTuneDocs/EndUser/how-to-reconnect-a-compromised-android-device.md)
 * Handoff File: [how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/8f340e4b8c7a5d60ced4e87c2812605713706358/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.it-it.xlf)
 * Handoff Datetime: 2016-06-09 16:50:40
 * Handoff Reason: Include
 * Archive File: [how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/b09ce110623bba279fe55a0fd3ee47f9652cd3b8/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.it-it.xlf)
 * Archive Datetime: 2016-06-16 01:40:26
-* Handback File: [how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/17fa471acbce24c9a6a11ae35bb468b3c0e737c3/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.it-it.xlf)
-* Handback Datetime: 2016-06-17 12:08:03
+* Handback File: [how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/40c8a41782d41fdbb03701923efd61b69c669687/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/how-to-reconnect-a-compromised-android-device.ce662fdb7474f5ec2d57b25b0f0f347567f67088.it-it.xlf)
+* Handback Datetime: 2016-06-22 08:49:48
 * [Back to Top](#report-top)
 
 ##### <a name='4b83e426e440928fea5308223764716a4ee77456306'></a> Source: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-ios-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-reconnect-a-compromised-ios-device.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-ios-device.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/cd3c87a276c94acae98e095215f78ac056e9b75b/InTuneDocs/EndUser/how-to-reconnect-a-compromised-ios-device.md)
+* Target File: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-ios-device.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/566ffb806868649e547a0c2ea17606b887e744ee/InTuneDocs/EndUser/how-to-reconnect-a-compromised-ios-device.md)
 * Handoff File: [how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/8f340e4b8c7a5d60ced4e87c2812605713706358/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf)
 * Handoff Datetime: 2016-06-09 16:50:40
 * Handoff Reason: Include
 * Archive File: [how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/b09ce110623bba279fe55a0fd3ee47f9652cd3b8/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf)
 * Archive Datetime: 2016-06-16 01:40:26
-* Handback File: [how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/a31c75458efbfcc050e0039cd7121049354216af/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf)
-* Handback Datetime: 2016-06-17 12:25:48
+* Handback File: [how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/40c8a41782d41fdbb03701923efd61b69c669687/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf)
+* Handback Datetime: 2016-06-22 08:49:48
 * [Back to Top](#report-top)
 
 ##### <a name='00fca8673ff1b52535fb6c06a02b38b7879f204f307'></a> Source: [InTuneDocs\EndUser\how-to-set-the-period-before-your-android-device-is-locked.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-set-the-period-before-your-android-device-is-locked.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\how-to-set-the-period-before-your-android-device-is-locked.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/cd3c87a276c94acae98e095215f78ac056e9b75b/InTuneDocs/EndUser/how-to-set-the-period-before-your-android-device-is-locked.md)
+* Target File: [InTuneDocs\EndUser\how-to-set-the-period-before-your-android-device-is-locked.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/566ffb806868649e547a0c2ea17606b887e744ee/InTuneDocs/EndUser/how-to-set-the-period-before-your-android-device-is-locked.md)
 * Handoff File: [how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/8f340e4b8c7a5d60ced4e87c2812605713706358/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf)
 * Handoff Datetime: 2016-06-09 16:50:40
 * Handoff Reason: Include
 * Archive File: [how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/b09ce110623bba279fe55a0fd3ee47f9652cd3b8/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf)
 * Archive Datetime: 2016-06-16 01:40:26
-* Handback File: [how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/a31c75458efbfcc050e0039cd7121049354216af/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf)
-* Handback Datetime: 2016-06-17 12:25:48
+* Handback File: [how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/40c8a41782d41fdbb03701923efd61b69c669687/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf)
+* Handback Datetime: 2016-06-22 08:49:48
 * [Back to Top](#report-top)
 
 ##### <a name='d59ee373d4b5b90442bdf0a282cf37e76c013e44309'></a> Source: [InTuneDocs\EndUser\install-and-sign-in-to-the-intune-company-portal-app-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/install-and-sign-in-to-the-intune-company-portal-app-ios.md)
