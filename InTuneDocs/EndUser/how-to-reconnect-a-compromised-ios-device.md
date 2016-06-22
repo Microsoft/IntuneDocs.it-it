@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Procedura: Riconnettere un dispositivo iOS compromesso | Microsoft Intune
+title: "Procedura: Riconnettere un dispositivo iOS compromesso | Microsoft Intune"
 description:
 keywords:
 author: staciebarker

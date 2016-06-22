@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Procedura: Crittografare un dispositivo Windows| Microsoft Intune
+title: "Procedura: Crittografare un dispositivo Windows| Microsoft Intune"
 description:
 keywords:
 author: Staciebarker

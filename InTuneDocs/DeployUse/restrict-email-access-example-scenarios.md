@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Limitare l'accesso alla posta elettronica: scenari di esempio | Microsoft Intune
+title: "Limitare l'accesso alla posta elettronica: scenari di esempio | Microsoft Intune"
 description:
 keywords:
 author: karthikaraman
