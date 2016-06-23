@@ -200,9 +200,9 @@ Quando si elimina un criterio o si rimuove un dispositivo da un gruppo in cui è
 
 ### Dove è possibile trovare contenuti sulla risoluzione dei problemi?
 
-Vedere [Troubleshoot policies in Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md) (Risolvere i problemi relativi ai criteri in Microsoft Intune).
+Vedere [Troubleshoot policies in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune) (Risolvere i problemi relativi ai criteri in Microsoft Intune).
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
