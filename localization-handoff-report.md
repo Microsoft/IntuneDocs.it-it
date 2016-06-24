@@ -6,22 +6,22 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\EndUser\you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5cdae8e292cffd9e4c74a6eda9cec23fcba25179/InTuneDocs/EndUser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md) | OutofSyncHandedBackSuccess | [Details](#f976240484b79d08f273ac79a79fb911aae06c7a474)
+ [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.experimental.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8ec8c952a4d1762dddb15f274367088fea8b9687/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.experimental.md) | OutofSyncHandedBackSuccess | [Details](#ad43197047734eee6d18481a9c6694b6f0b381cf260)
 
 ## Item Details
-##### <a name='f976240484b79d08f273ac79a79fb911aae06c7a474'></a> Source: [InTuneDocs\EndUser\you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5cdae8e292cffd9e4c74a6eda9cec23fcba25179/InTuneDocs/EndUser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
+##### <a name='ad43197047734eee6d18481a9c6694b6f0b381cf260'></a> Source: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.experimental.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8ec8c952a4d1762dddb15f274367088fea8b9687/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.experimental.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/82c56fb100140fb1a83324aa37cc3d8fd2653102/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.it-it.xlf)
-* Handoff Datetime: 2016-06-24 16:56:16
+* Handoff File: [whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/03ce62b845ea866a488acfc6aea3435996d21608/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.it-it.xlf)
+* Handoff Datetime: 2016-06-24 18:49:02
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\EndUser\you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/98f381a3a93d9afe8d581b7842c163dd8de8d7c0/InTuneDocs/EndUser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
-* Current Handback File: [you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/e3a8355254c8c9abe013c24c5cab0df1f4225864/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.it-it.xlf)
-* Current Handback Datetime: 2016-06-22 13:31:29
+* Current Target File: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.experimental.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/c1eab315e043107ab5acf84c3f6a550631da0f11/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.experimental.md)
+* Current Handback File: [whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/3c81257654bde3a37087cf4c4cb5cc4f9146754e/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.it-it.xlf)
+* Current Handback Datetime: 2016-06-14 01:55:41
 * [Back to Top](#report-top)
 
 
