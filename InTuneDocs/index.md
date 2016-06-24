@@ -21,7 +21,7 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
     <section id="hero-content">
       <h1>Documentazione di Microsoft Intune</h1>
       <h2>Informazioni su come distribuire e utilizzare Microsoft Intune, un servizio per la gestione di applicazioni e dispositivi mobili.</h2>
-      <h3>Gestire Intune con Configuration Manager? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">Vedere la documentazione di Configuration Manager &rarr;</a></h3>
+      <h3>Gestire Intune con Configuration Manager? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Vedere la documentazione di Configuration Manager &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Contenuti in primo piano</h2>
@@ -280,6 +280,6 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 </article>
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 
