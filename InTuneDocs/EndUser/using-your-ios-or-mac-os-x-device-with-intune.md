@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Uso del dispositivo iOS o Mac OS X con Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ROBOTS: 
+ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 98ba0968653ceaf13ab5422468040f8e2ce50422
+ms.openlocfilehash: 2273b5a9782a4e9e69f525555a10242a38c6efda
+
 
 ---
 
@@ -66,6 +60,7 @@ Le informazioni contenute in questa sezione consentono la risoluzione di problem
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO1-->
 
 

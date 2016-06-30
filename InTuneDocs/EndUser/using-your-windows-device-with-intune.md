@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Uso del dispositivo Windows con Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 98ba0968653ceaf13ab5422468040f8e2ce50422
+ms.openlocfilehash: 214bef6c6b04d6b92db71e28928ea62ae843c16a
+
 
 ---
 
@@ -64,6 +57,7 @@ Le informazioni contenute in questa sezione consentono la risoluzione di problem
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO1-->
 
 
