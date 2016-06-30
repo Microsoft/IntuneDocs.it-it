@@ -44,31 +44,13 @@
   "cb3d955f5cb92bf47e9c0092c9f3eca0fba9c868": [
     "InTuneDocs\\EndUser\\company-portal-app-not-supported.md"
   ],
-  "9d8511584da1af4b5770ff5ddbe5382777415387": [
-    "InTuneDocs\\EndUser\\company-portal-app-not-supported.md"
-  ],
-  "8989cf61dc359f6a89b42624cf5a5aa8deac8be4": [
-    "InTuneDocs\\EndUser\\company-portal-app-not-supported.md"
-  ],
-  "003210b7b282114ee3b8aef81ae7f9bddd2585ca": [
-    "InTuneDocs\\EndUser\\company-portal-app-not-supported.md"
-  ],
   "56edeafa9221b3574ceaba269891dfb92df44408": [
-    "InTuneDocs\\EndUser\\company-portal-frequently-asked-questions.md"
-  ],
-  "990ce4c7f4d8cfdb9f02716d2544355c0f0b0f5b": [
-    "InTuneDocs\\EndUser\\company-portal-frequently-asked-questions.md"
-  ],
-  "05dc37621c5eb08a89e752f4ad4fbe09b7a8da6e": [
     "InTuneDocs\\EndUser\\company-portal-frequently-asked-questions.md"
   ],
   "de00d31ab32916f29a111c93b39a578f82524f80": [
     "InTuneDocs\\Troubleshoot\\contact-assisted-phone-support-for-microsoft-intune.md"
   ],
   "222b9aac19993f184ff68800a00f8d9df8b36237": [
-    "InTuneDocs\\DeployUse\\common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md"
-  ],
-  "bd36ee9c1c6080abda869a525335b272d1932994": [
     "InTuneDocs\\DeployUse\\common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md"
   ],
   "d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18": [
@@ -910,16 +892,10 @@
   "2273b5a9782a4e9e69f525555a10242a38c6efda": [
     "InTuneDocs\\EndUser\\using-your-ios-or-mac-os-x-device-with-intune.md"
   ],
-  "0f42c6cbb338398cd0a852d4da2dd31cc827c368": [
-    "InTuneDocs\\EndUser\\using-your-ios-or-mac-os-x-device-with-intune.md"
-  ],
   "f5170f9230812e4c4606dac5258cde1da6b99089": [
     "InTuneDocs\\EndUser\\using-your-windows-device-with-intune.md"
   ],
   "214bef6c6b04d6b92db71e28928ea62ae843c16a": [
-    "InTuneDocs\\EndUser\\using-your-windows-device-with-intune.md"
-  ],
-  "ca4032d9f359ba67293ff0326445974f544fb178": [
     "InTuneDocs\\EndUser\\using-your-windows-device-with-intune.md"
   ],
   "90891c2d0e5e8ae75e888dc4c26a056493bf594c": [
@@ -1333,73 +1309,19 @@
   "902d8a8962bcadbe9fb10845bb80023781cb8b3c": [
     "InTuneDocs\\EndUser\\device-doesnt-comply-with-maximum-operating-system-version-android.md"
   ],
-  "f875ffbfd2095e614f79338e3a973b7d30124fba": [
-    "InTuneDocs\\EndUser\\device-doesnt-comply-with-maximum-operating-system-version-android.md"
-  ],
-  "13d2975103e9b3d37d797257388a10661ae8e6eb": [
-    "InTuneDocs\\EndUser\\device-doesnt-comply-with-maximum-operating-system-version-android.md"
-  ],
-  "41586d94b1cab7698faab3303d9caf2050ae7781": [
-    "InTuneDocs\\EndUser\\device-doesnt-comply-with-maximum-operating-system-version-android.md"
-  ],
   "6d1d1a382b8b10426f73fba3c579765dbf6f4af3": [
-    "InTuneDocs\\EndUser\\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md"
-  ],
-  "b2cf61c37e3d260e166c763e99763f984c69648b": [
-    "InTuneDocs\\EndUser\\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md"
-  ],
-  "3286ff522d0ef519840060add7a3eb5b1da45490": [
-    "InTuneDocs\\EndUser\\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md"
-  ],
-  "fdc95e2ec0c4b47e0f953b4390de86fa4e04546d": [
     "InTuneDocs\\EndUser\\device-doesnt-comply-with-the-maximum-operating-system-version-ios.md"
   ],
   "2c8250c6001b8d06e973268057c3457e6f21c95b": [
     "InTuneDocs\\EndUser\\device-doesnt-have-antimalware-software-enabled-windows.md"
   ],
-  "1caeee78911786f398a4374d221d5c9a7333983b": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-antimalware-software-enabled-windows.md"
-  ],
-  "31f562652d4c865a3f533cec05bf0214dda40c2e": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-antimalware-software-enabled-windows.md"
-  ],
-  "95adc931dacebdc2c2f6281ac6e467998f0be0b0": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-antimalware-software-enabled-windows.md"
-  ],
   "dcc3872c4237023c80324ee3dca927e5095b87be": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-bitlocker-enabled-windows.md"
-  ],
-  "a1977342c0c00201c31938e19d96487e87976f89": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-bitlocker-enabled-windows.md"
-  ],
-  "149ef1bf9754c07c561730ff0aac5fb6e2a235a9": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-bitlocker-enabled-windows.md"
-  ],
-  "573aa214f375959bb669faa56763741c4df664d2": [
     "InTuneDocs\\EndUser\\device-doesnt-have-bitlocker-enabled-windows.md"
   ],
   "793a3eb17aaa5e04c27a31302d93bfc46ff71cac": [
     "InTuneDocs\\EndUser\\device-doesnt-have-code-integrity-enabled-windows.md"
   ],
-  "ca238e65fbc8ae002725cb95242fd95d5f3c737f": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-code-integrity-enabled-windows.md"
-  ],
-  "94eed434d364141c12b2edcf24e207cbae4feab2": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-code-integrity-enabled-windows.md"
-  ],
-  "1681d2a9a5cdcad958bcdb827f565f7c044c220f": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-code-integrity-enabled-windows.md"
-  ],
   "e4c2066c0acb1c410ad420ebd5918535b72a5559": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-secure-boot-enabled-windows.md"
-  ],
-  "7ce12560d1a9459380848b0d16540f8a1f3370fb": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-secure-boot-enabled-windows.md"
-  ],
-  "588b518e76c4a24acc19120b32793211fa85cc37": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-secure-boot-enabled-windows.md"
-  ],
-  "a3c7e0807207972311d717efe77569aef0260141": [
     "InTuneDocs\\EndUser\\device-doesnt-have-secure-boot-enabled-windows.md"
   ],
   "620078cdd6a6d918153ab5a9813a14406c11acb4": [
@@ -1408,49 +1330,13 @@
   "b42d1b78961590f44100a90f99b53bef514fa6fd": [
     "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-ios.md"
   ],
-  "38c97816d09b10aedd3d54aa6066dd45b5b572c2": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-ios.md"
-  ],
-  "749c0be37f1dc76a75398551fe1435523677af34": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-ios.md"
-  ],
-  "0a7fafc645d926aeb09ecce52f261f2ccdfa413d": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-ios.md"
-  ],
   "12e559f51419da6c3edfa7af1d8b0f09c99e4caa": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-windows.md"
-  ],
-  "3c5cfe728708e730970b17d3d0acd9d33c1fbba8": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-windows.md"
-  ],
-  "48114b86b45cf1b4a80e1d8f2b133cf6caa9d177": [
-    "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-windows.md"
-  ],
-  "44a5c8b1019ab2edf9810ca4b0be7a2d87d6931b": [
     "InTuneDocs\\EndUser\\device-doesnt-have-the-required-minimum-operating-system-version-windows.md"
   ],
   "22e9071171d2dc63562e94cabe2abdec3b2bd85e": [
     "InTuneDocs\\EndUser\\encrypt-your-device-android.md"
   ],
-  "c7626bad72024575868a1d00c361cd9d60e5daf0": [
-    "InTuneDocs\\EndUser\\encrypt-your-device-android.md"
-  ],
-  "f25123fc86ce90148ff0a198f6c4deb1d4aa22d0": [
-    "InTuneDocs\\EndUser\\encrypt-your-device-android.md"
-  ],
-  "656bc3b8766582eddb5de765f923cdfc98bfb812": [
-    "InTuneDocs\\EndUser\\encrypt-your-device-android.md"
-  ],
   "aeeb607e54a207792e1cc8c16ee2ecd25a553e34": [
-    "InTuneDocs\\EndUser\\encrypt-your-device-windows.md"
-  ],
-  "7e58854e235bf8b77ef50377cb243fab750a8ea9": [
-    "InTuneDocs\\EndUser\\encrypt-your-device-windows.md"
-  ],
-  "b1a65565321e9c26f18464351864bac71afb1901": [
-    "InTuneDocs\\EndUser\\encrypt-your-device-windows.md"
-  ],
-  "1816bc5005ef4ac91acc5aa4dd8ea66de9588385": [
     "InTuneDocs\\EndUser\\encrypt-your-device-windows.md"
   ],
   "76cc1a43e09039285be76858155ef22f7b41cf9b": [
@@ -1459,31 +1345,10 @@
   "305308aa94a7650df8b44710025620906714421b": [
     "InTuneDocs\\EndUser\\enroll-your-device-in-intune-ios.md"
   ],
-  "f92c9ba0e0003664a3d015c284af0104d4218c98": [
-    "InTuneDocs\\EndUser\\enroll-your-device-in-intune-ios.md"
-  ],
-  "f83cae03ec5ab54cc7b8e23a40f05f5a2f5f56cc": [
-    "InTuneDocs\\EndUser\\enroll-your-device-in-intune-ios.md"
-  ],
-  "9c7c52f3d20b493886b23e44cadb400d306c1e6f": [
-    "InTuneDocs\\EndUser\\enroll-your-device-in-intune-ios.md"
-  ],
   "b85d2ac62ca313f0740c68ff6d85918ff7bcd55a": [
     "InTuneDocs\\EndUser\\enroll-your-device-in-intune-mac-os-x.md"
   ],
-  "ecb0e65219f78f48814abbffebf67b340c2960a5": [
-    "InTuneDocs\\EndUser\\enroll-your-device-in-intune-mac-os-x.md"
-  ],
-  "6b173b76d6991ee888bc397c08897e22f8ee8870": [
-    "InTuneDocs\\EndUser\\enroll-your-device-in-intune-mac-os-x.md"
-  ],
-  "8772fcbabd29e423d3624fe1779726c871cd1c36": [
-    "InTuneDocs\\EndUser\\enroll-your-device-in-intune-mac-os-x.md"
-  ],
   "e343905f7359e310bc5b171feb3311adf8b4012f": [
-    "InTuneDocs\\EndUser\\enroll-your-device-in-intune-windows.md"
-  ],
-  "2cabd20ec5533aeb56c2b2d6febdb98ec4c52567": [
     "InTuneDocs\\EndUser\\enroll-your-device-in-intune-windows.md"
   ],
   "afd6c6c12c76f5bf8f561f062df65a625cc19a3d": [
@@ -1595,9 +1460,6 @@
     "InTuneDocs\\EndUser\\what-happens-if-you-unenroll-your-device-from-intune-windows.md"
   ],
   "9f377cf9293c9697a59c736b07a82bca09728e14": [
-    "InTuneDocs\\EndUser\\you-get-an-error-while-using-the-company-portal-app-ios.md"
-  ],
-  "ab307676bc85cc8c32ca850174de76081ef377ec": [
     "InTuneDocs\\EndUser\\you-get-an-error-while-using-the-company-portal-app-ios.md"
   ],
   "c94414ee28e8fa808ba08a5c97624d3d9b95fecb": [
@@ -1762,9 +1624,6 @@
   "815e36569e17bde750b49c7d7b10744a9b614635": [
     "InTuneDocs\\GetStarted\\microsoft-intune-company-portal.md"
   ],
-  "f3583c87c1d0f5eba666a74ce6511079b43364b1": [
-    "InTuneDocs\\GetStarted\\microsoft-intune-company-portal.md"
-  ],
   "b551aca6994780591dabe042420d5f23d98b218b": [
     "InTuneDocs\\GetStarted\\network-infrastructure-requirements-for-microsoft-intune.md"
   ],
@@ -1801,12 +1660,6 @@
   "b55cf263611d6e90805cad9985eb8a5e7ebeb4a0": [
     "InTuneDocs\\DeployUse\\vpn-connections-in-microsoft-intune.md"
   ],
-  "476f4bad0c16f75a68cf713146d8ccccf799c280": [
-    "InTuneDocs\\DeployUse\\vpn-connections-in-microsoft-intune.md"
-  ],
-  "d35f165e222d119d2df3ab2b5ffc99bb3fc44624": [
-    "InTuneDocs\\DeployUse\\vpn-connections-in-microsoft-intune.md"
-  ],
   "1282ec1214a2c499166299a0a13b0bd3bfc7f3b2": [
     "InTuneDocs\\DeployUse\\wi-fi-connections-in-microsoft-intune.md"
   ],
@@ -1835,12 +1688,6 @@
     "InTuneDocs\\DeployUse\\wipe-for-exchange-managed-mobile-devices.md"
   ],
   "86d3b7894eca70454fa82393c4d06eab5a99246f": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "8290f261cc1b3da07042d9db651a8c06b3e7b782": [
-    "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
-  ],
-  "4e20553cc4d3ec7804b41b6a1294bb76018102e0": [
     "InTuneDocs\\DeployUse\\get-ready-to-enroll-devices-in-microsoft-intune.md"
   ],
   "6cab0bacd9157323e342662609de8c9f20550d78": [
@@ -1932,9 +1779,6 @@
     "InTuneDocs\\DeployUse\\monitor-apps-in-microsoft-intune.md"
   ],
   "893e896fc52e6e883fcd151db2c47030113502a2": [
-    "InTuneDocs\\DeployUse\\what-to-tell-your-end-users-about-using-microsoft-intune.md"
-  ],
-  "b469138625ba29ccbaa2edc797872f9e812dbad3": [
     "InTuneDocs\\DeployUse\\what-to-tell-your-end-users-about-using-microsoft-intune.md"
   ],
   "288560dc07d7ae93fa017917b45c71a88d089d31": [
@@ -2153,15 +1997,6 @@
   "2fc13272848bd70d4ebed2750c550f7a5eb13508": [
     "InTuneDocs\\EndUser\\sync-your-device-manually-cpwebsite.md"
   ],
-  "a2e15340726c43ca2996d27a3389cd8523838531": [
-    "InTuneDocs\\EndUser\\sync-your-device-manually-cpwebsite.md"
-  ],
-  "71cbea053cf0516f19225a234147bbb1d39270de": [
-    "InTuneDocs\\EndUser\\sync-your-device-manually-cpwebsite.md"
-  ],
-  "a44483e4ec4b12ca45dad8a85afa4aa9ae75248e": [
-    "InTuneDocs\\EndUser\\sync-your-device-manually-cpwebsite.md"
-  ],
   "fbe46abe0b13e8972a5e9fa09566dff0c09b9939": [
     "InTuneDocs\\EndUser\\sync-your-device-manually-windows.md"
   ],
@@ -2207,9 +2042,6 @@
   "dd8452cee145f3ecd885c4fb91698a3683252318": [
     "InTuneDocs\\EndUser\\send-errors-to-your-it-admin-ios.md"
   ],
-  "ab4508d60d65a0bac2cf5865e38a67eb565e7b2e": [
-    "InTuneDocs\\EndUser\\send-errors-to-your-it-admin-ios.md"
-  ],
   "c06f1fc1168b0dde515eaa82d15095ec4d73d1cf": [
     "InTuneDocs\\DeployUse\\retire-devices-from-microsoft-intune-management.md"
   ],
@@ -2249,61 +2081,16 @@
   "47341626bceaa5d4ad0775c3d22d80985ce699cc": [
     "InTuneDocs\\EndUser\\enroll-your-rt-windows.md"
   ],
-  "e1d63e4631cc468bd4b696b5dfe25c1164c019db": [
-    "InTuneDocs\\EndUser\\enroll-your-rt-windows.md"
-  ],
-  "9bd4e80cfc4a7ac69d1aeabdce25f9c1f6bf2071": [
-    "InTuneDocs\\EndUser\\enroll-your-rt-windows.md"
-  ],
-  "6f8cc6d3690609df03e4efa40339ec59e4746a67": [
-    "InTuneDocs\\EndUser\\enroll-your-rt-windows.md"
-  ],
   "543f0acd6fb3691ba31e9da6fec49b3f30f67613": [
-    "InTuneDocs\\EndUser\\enroll-your-w10-phone-or-w10-pc-windows.md"
-  ],
-  "6f5aa30efff3e62b89e18c35ed17d05b75813826": [
-    "InTuneDocs\\EndUser\\enroll-your-w10-phone-or-w10-pc-windows.md"
-  ],
-  "167aa517f99d01efbb0408074d2e103e3ec5ae1f": [
-    "InTuneDocs\\EndUser\\enroll-your-w10-phone-or-w10-pc-windows.md"
-  ],
-  "c581ccf3633a9445e7a58ea2fda8b0d61f884fb0": [
     "InTuneDocs\\EndUser\\enroll-your-w10-phone-or-w10-pc-windows.md"
   ],
   "6607ea6c355e0ec767e514ac0097789b83c5d8c7": [
     "InTuneDocs\\EndUser\\enroll-your-w81-or-rt81-windows.md"
   ],
-  "43a2c99ec40f0e1544712f936717c114dd230cbb": [
-    "InTuneDocs\\EndUser\\enroll-your-w81-or-rt81-windows.md"
-  ],
-  "236387d36b0b4b6de1382a29d2481bc3b8ab1445": [
-    "InTuneDocs\\EndUser\\enroll-your-w81-or-rt81-windows.md"
-  ],
-  "527c6267f394cabfd1af3bfdc5fa1d90a63f44f7": [
-    "InTuneDocs\\EndUser\\enroll-your-w81-or-rt81-windows.md"
-  ],
   "cc427327897084d6366ade896f7d760603d86eb7": [
     "InTuneDocs\\EndUser\\enroll-your-wp81-windows.md"
   ],
-  "b5caecca0c930b15ce3e90ab930516f68b41910e": [
-    "InTuneDocs\\EndUser\\enroll-your-wp81-windows.md"
-  ],
-  "eca516132f0a75d45d7bffbc31a5e129983b3020": [
-    "InTuneDocs\\EndUser\\enroll-your-wp81-windows.md"
-  ],
-  "c29cc0f9b4e0cae5b1deea9393247787f9c6ed85": [
-    "InTuneDocs\\EndUser\\enroll-your-wp81-windows.md"
-  ],
   "21e904766d1621b2182de8adde8142f5f7ad8e26": [
-    "InTuneDocs\\EndUser\\enroll-your-wp8-windows.md"
-  ],
-  "4782ddfdea4ac4b1fdfc64451540ebf4cf525006": [
-    "InTuneDocs\\EndUser\\enroll-your-wp8-windows.md"
-  ],
-  "d1867d49dd0201eb92bc358247f21071c8418bb3": [
-    "InTuneDocs\\EndUser\\enroll-your-wp8-windows.md"
-  ],
-  "5a391383fec76e7602c7e9ccc047dec7eb5362e1": [
     "InTuneDocs\\EndUser\\enroll-your-wp8-windows.md"
   ],
   "b8284a6060e8bd5dc51a9f1c41448d3c69fca5e3": [
