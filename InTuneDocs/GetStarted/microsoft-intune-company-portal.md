@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 65769fade08dea34b3e788628e578d58f90389f3
 ms.openlocfilehash: 815e36569e17bde750b49c7d7b10744a9b614635
 
@@ -52,6 +53,6 @@ Prima che un utente possa accedere al Portale aziendale, all'account corrisponde
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 
