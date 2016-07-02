@@ -1,33 +1,26 @@
 ---
-# required metadata
-
 title: Portale aziendale di Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 65769fade08dea34b3e788628e578d58f90389f3
+ms.openlocfilehash: 815e36569e17bde750b49c7d7b10744a9b614635
+
 
 ---
 
 # Portale aziendale di Microsoft Intune
 
-Prima di configurare [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] leggere questo argomento e gli altri requisiti elencati in [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+Prima di configurare Intune, leggere questo argomento e gli altri requisiti elencati in [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 Il Portale aziendale di Intune è uno strumento che consente agli utenti l'accesso ai dati e alle app aziendali. Il Portale aziendale è disponibile in due forme:
 
@@ -58,6 +51,7 @@ Prima che un utente possa accedere al Portale aziendale, all'account corrisponde
 [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO2-->
 
 

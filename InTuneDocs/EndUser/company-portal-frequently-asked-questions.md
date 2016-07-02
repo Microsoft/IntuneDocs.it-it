@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Informazioni sul portale aziendale | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-
-# optional metadata
-
-#ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 56edeafa9221b3574ceaba269891dfb92df44408
+
 
 ---
 
@@ -100,10 +93,15 @@ Per informazioni su come reimpostare il dispositivo, scegliere uno dei collegame
 ## Non vengono visualizzati tutti i dispositivi nel Portale aziendale
 Per vedere un dispositivo, è necessario aggiungerlo al Portale aziendale. Individuare il Portale aziendale come indicato dall'amministratore e seguire le istruzioni per il dispositivo. Inoltre, non saranno più visualizzati i dispositivi di proprietà e gestiti dall'azienda.
 
+## Per informazioni, contattare l'amministratore IT
+Per assistenza, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+
+
+<!--HONumber=Jun16_HO2-->
 
 
