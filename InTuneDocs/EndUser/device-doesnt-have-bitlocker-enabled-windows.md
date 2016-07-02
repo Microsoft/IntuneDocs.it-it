@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
 ms.reviewer: chrisgre
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
 ms.openlocfilehash: dcc3872c4237023c80324ee3dca927e5095b87be
 
@@ -27,6 +28,6 @@ L'organizzazione richiede l'abilitazione di BitLocker, ovvero un software che co
 [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

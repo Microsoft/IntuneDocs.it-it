@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 83f029c97cf34b6c96c6b2ef16cc65ab839c1d55
 ms.openlocfilehash: 893e896fc52e6e883fcd151db2c47030113502a2
 
@@ -60,6 +61,6 @@ Per aiutare gli utenti a risolvere i problemi che potrebbero riscontrare usando 
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jul16_HO1-->
 
 

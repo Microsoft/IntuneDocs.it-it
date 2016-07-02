@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Pianificare i gruppi di utenti e dispositivi | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
+ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+
 
 ---
 
@@ -158,7 +152,8 @@ Verificare i dati e quindi fare clic su **Fine** per completare la creazione del
 
 Nel nostro esempio, abbiamo creato anche un gruppo Medio Oriente e Asia, MEA.
 
-> [!NOTE] Se l'appartenenza al gruppo non viene popolata in base all'appartenenza ai gruppi di sicurezza, controllare di avere assegnato licenze Intune a tali membri.
+> [!NOTE]
+> Se l'appartenenza al gruppo non viene popolata in base all'appartenenza ai gruppi di sicurezza, controllare di avere licenze Intune assegnate a tali membri.
 
 ### Gruppi per hardware specifico
 Se l'organizzazione necessita di criteri applicabili a tipi di hardware specifici, è possibile creare gruppi in base a questo requisito. È possibile basare i criteri su gruppi specifici già creati in AD locale e sincronizzarli in Azure AD. È anche possibile crearli direttamente in Azure AD. In questo esempio, **Gruppo utenti USA** viene usato come gruppo padre del gruppo **Utenti di portatili**.
@@ -174,7 +169,8 @@ Se l'organizzazione necessita di criteri applicabili a sistemi operativi specifi
 
 Seguendo lo stesso metodo degli esempi precedenti, è possibile creare gruppi in base agli utenti <!--devices?--> usando piattaforme del sistema operativo specifiche.
 
-> [!NOTE] Se gli utenti usano più piattaforme mobili/sistemi operativi e non hanno un metodo automatico per classificare gli utenti come utenti di Android, utenti di iOS o utenti di Windows, è possibile applicare i criteri a livello di dispositivo, consentendo una maggiore flessibilità nell'applicazione di criteri specifici del sistema operativo.
+> [!NOTE]
+> Se gli utenti usano più piattaforme mobili/sistemi operativi e non hanno un metodo automatico per classificare gli utenti come utenti di Android, utenti di iOS o utenti di Windows, è possibile applicare i criteri a livello di dispositivo, consentendo una maggiore flessibilità nell'applicazione di criteri specifici del sistema operativo.
 >
 > Non è possibile eseguire il provisioning dei gruppi in modo dinamico in base al sistema operativo del dispositivo. Eseguire questa operazione usando i gruppi di sicurezza di AD o AAD.
 
@@ -218,6 +214,7 @@ Questa modalità di assegnazione di nomi ai criteri consentirà di identificare 
 [Creare i gruppi](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
