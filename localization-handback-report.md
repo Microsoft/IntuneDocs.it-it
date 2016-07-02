@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\PlanDesign\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5cd5425af051a5221518c603ef2bc99797f950ad/InTuneDocs/PlanDesign/TOC.md) | InSyncHandedBackSuccess | [Details](#53e9a439f245a6c6561c6330da53fbf943abc8fb1143)
+ [InTuneDocs\Troubleshoot\troubleshoot-endpoint-protection-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c22ddd554928b394e14742b8ba7d583d390d1c44/InTuneDocs/Troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#0f4d8c49eb87ef94a1ddfdebd7dcd40c41b9a5a01161)
 
 ## Item Details
+##### <a name='53e9a439f245a6c6561c6330da53fbf943abc8fb1143'></a> Source: [InTuneDocs\PlanDesign\TOC.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5cd5425af051a5221518c603ef2bc99797f950ad/InTuneDocs/PlanDesign/TOC.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\PlanDesign\TOC.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/09d8d4e00a68f0a6e6ff7d078b36e39c4e7cb235/InTuneDocs/PlanDesign/TOC.md)
+* Handoff File: [TOC.d0ab1e477a90594f65e42b7c1cb6be18c260ea26.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/75d0ebe5f075eb0cc6043449270caf4483563f1a/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/TOC.d0ab1e477a90594f65e42b7c1cb6be18c260ea26.it-it.xlf)
+* Handoff Datetime: 2016-06-20 18:57:52
+* Handoff Reason: Include
+* Archive File: [TOC.d0ab1e477a90594f65e42b7c1cb6be18c260ea26.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/1782b02b8d539a4df1456fdc5afe6ed09a574d3a/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/TOC.d0ab1e477a90594f65e42b7c1cb6be18c260ea26.it-it.xlf)
+* Archive Datetime: 2016-07-02 01:12:33
+* Handback File: [TOC.d0ab1e477a90594f65e42b7c1cb6be18c260ea26.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/d4cee037ea49bee29439b77ea7b46e10da7b10aa/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/TOC.d0ab1e477a90594f65e42b7c1cb6be18c260ea26.it-it.xlf)
+* Handback Datetime: 2016-07-02 14:47:38
+* [Back to Top](#report-top)
+
+##### <a name='0f4d8c49eb87ef94a1ddfdebd7dcd40c41b9a5a01161'></a> Source: [InTuneDocs\Troubleshoot\troubleshoot-endpoint-protection-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/c22ddd554928b394e14742b8ba7d583d390d1c44/InTuneDocs/Troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\Troubleshoot\troubleshoot-endpoint-protection-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/09d8d4e00a68f0a6e6ff7d078b36e39c4e7cb235/InTuneDocs/Troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
+* Handoff File: [troubleshoot-endpoint-protection-in-microsoft-intune.86fd395a98852eed43174b804b6b57543890b80d.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/bb8bb5b55c525daadcbc67df00caac1cd0effccf/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/troubleshoot-endpoint-protection-in-microsoft-intune.86fd395a98852eed43174b804b6b57543890b80d.it-it.xlf)
+* Handoff Datetime: 2016-06-27 11:01:18
+* Handoff Reason: Include
+* Archive File: [troubleshoot-endpoint-protection-in-microsoft-intune.86fd395a98852eed43174b804b6b57543890b80d.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/1782b02b8d539a4df1456fdc5afe6ed09a574d3a/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/troubleshoot-endpoint-protection-in-microsoft-intune.86fd395a98852eed43174b804b6b57543890b80d.it-it.xlf)
+* Archive Datetime: 2016-07-02 01:12:33
+* Handback File: [troubleshoot-endpoint-protection-in-microsoft-intune.86fd395a98852eed43174b804b6b57543890b80d.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/d4cee037ea49bee29439b77ea7b46e10da7b10aa/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/troubleshoot-endpoint-protection-in-microsoft-intune.86fd395a98852eed43174b804b6b57543890b80d.it-it.xlf)
+* Handback Datetime: 2016-07-02 14:47:38
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
