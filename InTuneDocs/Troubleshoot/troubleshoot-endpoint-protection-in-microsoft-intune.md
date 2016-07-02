@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Risolvere i problemi di Endpoint Protection | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
+ms.openlocfilehash: 0f4d8c49eb87ef94a1ddfdebd7dcd40c41b9a5a0
+
 
 ---
 
@@ -51,9 +45,10 @@ In questa sezione vengono descritte le possibili cause e soluzioni per gli error
 |**È in esecuzione un'altra applicazione Endpoint Protection**|È in esecuzione un'altra applicazione Endpoint Protection e il computer è integro.|Per impostazione predefinita, se Intune rileva che è stata installata un'altra applicazione Endpoint Protection, Endpoint Protection si disabilita automaticamente. Se Intune non rileva alcuna altra applicazione endpoint, Endpoint Protection rimane abilitato. Per altre informazioni, vedere [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) (Proteggere i PC Windows con Endpoint Protection per Microsoft Intune).|
 
 ### Passaggi successivi
-Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
+Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
