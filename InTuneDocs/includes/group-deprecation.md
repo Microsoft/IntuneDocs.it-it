@@ -6,6 +6,6 @@
 >È possibile definire l'assegnazione di gruppi di dispositivi dinamici in Azure Active Directory in base al nome del profilo di registrazione aziendale. Questo processo assicura che i dispositivi pre-assegnati a un gruppo di dispositivi verranno registrati automaticamente in tale gruppo con le app e i criteri distribuiti. A breve verranno pubblicati maggiori dettagli.
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 
