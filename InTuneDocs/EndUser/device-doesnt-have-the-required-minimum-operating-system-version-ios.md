@@ -13,6 +13,7 @@ ms.assetid: ab3242d9-1063-4356-a3ac-6f0d8fe379e4
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
 ms.openlocfilehash: b42d1b78961590f44100a90f99b53bef514fa6fd
 
@@ -30,6 +31,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

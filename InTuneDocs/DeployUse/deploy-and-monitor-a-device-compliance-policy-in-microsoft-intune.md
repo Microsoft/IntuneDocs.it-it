@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Distribuire e monitorare i criteri di conformità in Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Distribuire e monitorare i criteri di conformità in Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
+
 
 ---
 
@@ -76,6 +70,7 @@ Possono verificarsi conflitti se vengono applicati più criteri di Intune a un d
 [Introduzione ai criteri di conformità del dispositivo in Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

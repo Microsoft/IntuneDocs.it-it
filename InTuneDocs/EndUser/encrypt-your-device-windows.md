@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 ms.reviewer: priyar
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
 ms.openlocfilehash: aeeb607e54a207792e1cc8c16ee2ecd25a553e34
 
@@ -36,6 +37,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 
