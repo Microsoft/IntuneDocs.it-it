@@ -4362,7 +4362,7 @@
 * Archive File: [restrict-email-access-example-scenarios.864d5c5f75fe174593dadf9ad193d7a2fa2efc21.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/1782b02b8d539a4df1456fdc5afe6ed09a574d3a/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/restrict-email-access-example-scenarios.864d5c5f75fe174593dadf9ad193d7a2fa2efc21.it-it.xlf)
 * Archive Datetime: 2016-07-02 01:12:33
 * Handback File: [restrict-email-access-example-scenarios.864d5c5f75fe174593dadf9ad193d7a2fa2efc21.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/e3a8355254c8c9abe013c24c5cab0df1f4225864/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/restrict-email-access-example-scenarios.864d5c5f75fe174593dadf9ad193d7a2fa2efc21.it-it.xlf)
-* Handback Datetime: 2016-07-03 05:25:45
+* Handback Datetime: 2016-07-03 07:25:47
 * Handback Error: [handback_transform_failed](#962840a608a7b228d5f2519ea566d996bb4e21a4233handback_transform_failed)
 * [Back to Top](#report-top)
 
@@ -5281,7 +5281,7 @@
 * Archive File: [how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/1782b02b8d539a4df1456fdc5afe6ed09a574d3a/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf)
 * Archive Datetime: 2016-07-02 01:12:33
 * Handback File: [how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/40c8a41782d41fdbb03701923efd61b69c669687/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf)
-* Handback Datetime: 2016-07-03 05:25:45
+* Handback Datetime: 2016-07-03 07:25:47
 * Handback Error: [handback_transform_failed](#00fca8673ff1b52535fb6c06a02b38b7879f204f306handback_transform_failed)
 * [Back to Top](#report-top)
 
