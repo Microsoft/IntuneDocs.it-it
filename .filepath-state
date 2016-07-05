@@ -1144,9 +1144,6 @@
   "135fa1a2fe339c2a7d071bd6c844be0466754f66": [
     "InTuneDocs\\media\\AppManagement\\iOS_AppPINPrompt.png"
   ],
-  "4e604d7b70b728e57979112bc5e596c43c2b5814": [
-    "InTuneDocs\\media\\AppManagement\\iOS_AppPINPrompt.png"
-  ],
   "324064e6e4172486b8a30a18cd63d20e7151e0c8": [
     "InTuneDocs\\media\\AppManagement\\iOS_AppRestartforMAM.png"
   ],
@@ -2109,9 +2106,6 @@
     "InTuneDocs\\DeployUse\\overview-of-device-lifecycle-in-microsoft-intune.md"
   ],
   "d331fa9c9cd16ec05782efb1e47ac44692cb0d9f": [
-    "InTuneDocs\\DeployUse\\media\\app-lifecycle.png"
-  ],
-  "7b378232f6a41ddac861ccf2973ab6ab17180b86": [
     "InTuneDocs\\DeployUse\\media\\app-lifecycle.png"
   ],
   "b0c8f6406b62e93d7452847c928898ea15dcd928": [
