@@ -1,15 +1,13 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 4
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [InTuneDocs\EndUser\how-to-reconnect-a-compromised-ios-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-reconnect-a-compromised-ios-device.md) | InSyncHandedBackSuccess | [Details](#4b83e426e440928fea5308223764716a4ee77456305)
  [InTuneDocs\EndUser\how-to-set-the-period-before-your-android-device-is-locked.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-set-the-period-before-your-android-device-is-locked.md) | InSyncHandedBackSuccess | [Details](#00fca8673ff1b52535fb6c06a02b38b7879f204f306)
- [InTuneDocs\EndUser\install-a-new-version-of-the-company-portal-app.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/install-a-new-version-of-the-company-portal-app.md) | InSyncHandedBackSuccess | [Details](#29d409f272800e0c5ccaf71494b5e98d1edaae4e307)
- [InTuneDocs\EndUser\using-the-intune-company-portal-website.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/using-the-intune-company-portal-website.md) | InSyncHandedBackSuccess | [Details](#79e8d7da83997dc9c89b95097ca50493af1f9f6b448)
 
 ## Item Details
 ##### <a name='4b83e426e440928fea5308223764716a4ee77456305'></a> Source: [InTuneDocs\EndUser\how-to-reconnect-a-compromised-ios-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/how-to-reconnect-a-compromised-ios-device.md)
@@ -21,7 +19,7 @@
 * Archive File: [how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/1782b02b8d539a4df1456fdc5afe6ed09a574d3a/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf)
 * Archive Datetime: 2016-07-02 01:12:33
 * Handback File: [how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/40c8a41782d41fdbb03701923efd61b69c669687/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/how-to-reconnect-a-compromised-ios-device.d6774909e341fc43c8f93d16968edc0dbdfa9070.it-it.xlf)
-* Handback Datetime: 2016-07-05 00:38:17
+* Handback Datetime: 2016-07-05 01:26:41
 * Handback Error: [handback_transform_failed](#4b83e426e440928fea5308223764716a4ee77456305handback_transform_failed)
 * [Back to Top](#report-top)
 
@@ -34,32 +32,8 @@
 * Archive File: [how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/1782b02b8d539a4df1456fdc5afe6ed09a574d3a/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf)
 * Archive Datetime: 2016-07-02 01:12:33
 * Handback File: [how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/40c8a41782d41fdbb03701923efd61b69c669687/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/how-to-set-the-period-before-your-android-device-is-locked.d343204b629142728acbc9b9c6982a8c812cbbf1.it-it.xlf)
-* Handback Datetime: 2016-07-05 00:38:17
+* Handback Datetime: 2016-07-05 01:26:41
 * Handback Error: [handback_transform_failed](#00fca8673ff1b52535fb6c06a02b38b7879f204f306handback_transform_failed)
-* [Back to Top](#report-top)
-
-##### <a name='29d409f272800e0c5ccaf71494b5e98d1edaae4e307'></a> Source: [InTuneDocs\EndUser\install-a-new-version-of-the-company-portal-app.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/install-a-new-version-of-the-company-portal-app.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\install-a-new-version-of-the-company-portal-app.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/eaa535e2937bed605ef247c787b9be45d9b16d51/InTuneDocs/EndUser/install-a-new-version-of-the-company-portal-app.md)
-* Handoff File: [install-a-new-version-of-the-company-portal-app.cd7e62e3bb2f58ce38e6486582b748ce07bae5a7.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/bb8bb5b55c525daadcbc67df00caac1cd0effccf/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/install-a-new-version-of-the-company-portal-app.cd7e62e3bb2f58ce38e6486582b748ce07bae5a7.it-it.xlf)
-* Handoff Datetime: 2016-06-27 11:01:18
-* Handoff Reason: Include
-* Archive File: [install-a-new-version-of-the-company-portal-app.cd7e62e3bb2f58ce38e6486582b748ce07bae5a7.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/1782b02b8d539a4df1456fdc5afe6ed09a574d3a/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/install-a-new-version-of-the-company-portal-app.cd7e62e3bb2f58ce38e6486582b748ce07bae5a7.it-it.xlf)
-* Archive Datetime: 2016-07-02 01:12:33
-* Handback File: [install-a-new-version-of-the-company-portal-app.cd7e62e3bb2f58ce38e6486582b748ce07bae5a7.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/fce5cb00dfccef9b720d6a1eb0c9c29a90cf50b8/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/install-a-new-version-of-the-company-portal-app.cd7e62e3bb2f58ce38e6486582b748ce07bae5a7.it-it.xlf)
-* Handback Datetime: 2016-07-05 00:38:17
-* [Back to Top](#report-top)
-
-##### <a name='79e8d7da83997dc9c89b95097ca50493af1f9f6b448'></a> Source: [InTuneDocs\EndUser\using-the-intune-company-portal-website.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e52ebdd62ca68f1d9226def654961075400184a8/InTuneDocs/EndUser/using-the-intune-company-portal-website.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\using-the-intune-company-portal-website.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/eaa535e2937bed605ef247c787b9be45d9b16d51/InTuneDocs/EndUser/using-the-intune-company-portal-website.md)
-* Handoff File: [using-the-intune-company-portal-website.b45d670e30421325a9f360ba3073969a2d6dfff8.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/bb8bb5b55c525daadcbc67df00caac1cd0effccf/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/using-the-intune-company-portal-website.b45d670e30421325a9f360ba3073969a2d6dfff8.it-it.xlf)
-* Handoff Datetime: 2016-06-27 11:01:18
-* Handoff Reason: Include
-* Archive File: [using-the-intune-company-portal-website.b45d670e30421325a9f360ba3073969a2d6dfff8.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/1782b02b8d539a4df1456fdc5afe6ed09a574d3a/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/using-the-intune-company-portal-website.b45d670e30421325a9f360ba3073969a2d6dfff8.it-it.xlf)
-* Archive Datetime: 2016-07-02 01:12:33
-* Handback File: [using-the-intune-company-portal-website.b45d670e30421325a9f360ba3073969a2d6dfff8.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/fce5cb00dfccef9b720d6a1eb0c9c29a90cf50b8/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/using-the-intune-company-portal-website.b45d670e30421325a9f360ba3073969a2d6dfff8.it-it.xlf)
-* Handback Datetime: 2016-07-05 00:38:17
 * [Back to Top](#report-top)
 
 
