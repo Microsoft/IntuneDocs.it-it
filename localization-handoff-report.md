@@ -6,22 +6,22 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5c1ebdf41f54e28727328ba30f1b45f6775c39ef/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#74733f7dd3928f5469113138de3d1e93d022116e259)
+ [InTuneDocs\DeployUse\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e493ca6ecbae80c8833845d96da0489bf38e5c45/InTuneDocs/DeployUse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) | OutofSyncHandedBackSuccess | [Details](#ff319c2a5e279263d438e5d0133873f49ec7652871)
 
 ## Item Details
-##### <a name='74733f7dd3928f5469113138de3d1e93d022116e259'></a> Source: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5c1ebdf41f54e28727328ba30f1b45f6775c39ef/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.md)
+##### <a name='ff319c2a5e279263d438e5d0133873f49ec7652871'></a> Source: [InTuneDocs\DeployUse\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e493ca6ecbae80c8833845d96da0489bf38e5c45/InTuneDocs/DeployUse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/78e4990ca6b7c659c8d20debfef74aea47c82a95/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.it-it.xlf)
-* Handoff Datetime: 2016-07-08 19:31:54
+* Handoff File: [manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/0e0a1ac6383e2caa594ce3c66605429350ad021d/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.it-it.xlf)
+* Handoff Datetime: 2016-07-08 21:25:36
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/c1eab315e043107ab5acf84c3f6a550631da0f11/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.md)
-* Current Handback File: [whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/3c81257654bde3a37087cf4c4cb5cc4f9146754e/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/whats-new-in-microsoft-intune.452e6578fe554fac5c29ad3c9d38e8fb790666f5.it-it.xlf)
-* Current Handback Datetime: 2016-06-14 01:55:41
+* Current Target File: [InTuneDocs\DeployUse\manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/3f64482df101c4f1b23229d14d9ee6c959e61fab/InTuneDocs/DeployUse/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+* Current Handback File: [manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/2af377673c81dc2f603ebfce9cb033fca7e68f57/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.f83522d5b6f3927d6adda4d8f6edd45ffc1a57f9.it-it.xlf)
+* Current Handback Datetime: 2016-06-23 10:14:39
 * [Back to Top](#report-top)
 
 
