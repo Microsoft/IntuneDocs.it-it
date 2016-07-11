@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Impostazioni dei criteri MAM per iOS | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+
 
 ---
 
@@ -83,7 +77,7 @@ Il termine **App gestite da criteri** viene usato per indicare le app che sono c
   Quando si abilita questa impostazione, l'utente finale deve configurare e usare un PIN per accedere al dispositivo.  Se non è presente il PIN le app non vengono avviate e all'utente finale viene richiesto di impostare un PIN con il messaggio "L'azienda ha richiesto l'abilitazione di un PIN del dispositivo per poter accedere a questa applicazione".
 
   **Valore predefinito = l'opzione Crittografia non è selezionata.**
-- **Sincronizzazione contatti disattivata:** scegliere **Sì** per impedire la sincronizzazione delle informazioni di contatto nell'app Rubrica nativa sul dispositivo. Se si sceglie **No**, l'app salverà le informazioni di contatto nell'app Rubrica nativa sul dispositivo.
+- **Disable contact sync (Disabilita sincronizzazione contatti):** scegliere **Sì** per impedire la sincronizzazione delle informazioni di contatto nell'app Rubrica nativa nel dispositivo. Se si sceglie **No**, l'app salverà le informazioni di contatto nell'app Rubrica nativa sul dispositivo.
 
   Quando si esegue una cancellazione selettiva per rimuovere dati aziendali, i contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. Attualmente questa opzione è disponibile solo per l'app **Microsoft Outlook**.
 
@@ -117,6 +111,7 @@ Nei dispositivi iOS è possibile consentire all'utente di identificarsi con l'im
   **Valore predefinito = 90 giorni**
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Gestione del servizio DEP di Apple per i dispositivi iOS con Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
+ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+
 
 ---
 
@@ -59,6 +53,12 @@ Per registrare i dispositivi iOS di proprietà dell'azienda con DEP, è necessar
       - **Richiedi affinità utente**: il dispositivo può essere associato a un utente durante la configurazione iniziale e potrebbe quindi accedere ai dati aziendali e alla posta elettronica con questo nome utente.  **Affinità utente** deve essere configurata per i dispositivi gestiti tramite DEP che appartengono agli utenti e devono usare il portale aziendale (ad esempio per installare app).
       - **Nessuna affinità utente**: il dispositivo non è associato a un utente. Usare questa associazione per i dispositivi che eseguono attività senza accedere ai dati utente locali. Le app che richiedono l'associazione utente, inclusa l'app del portale aziendale usata per installare le app line-of-business, non funzioneranno.
 
+    È anche possibile **assegnare dispositivi ai gruppi seguenti**. Fare clic su **Select... (Seleziona...)** per scegliere un gruppo.
+
+    >[!Important]
+    >Le assegnazioni di gruppo passeranno da Intune ad Azure Active Directory. [Altre informazioni](#changes-to-intune-group-assignments)
+
+
     Quindi abilitare **Configura le impostazioni del programma di registrazione dispositivi per questo criterio** per supportare il programma di registrazione dispositivi.
 
       ![Riquadro di Assistente configurazione](../media/pol-sa-corp-enroll.png)
@@ -78,8 +78,16 @@ Per registrare i dispositivi iOS di proprietà dell'azienda con DEP, è necessar
         - **Servizi di posizione**: se l'opzione è abilitata, Assistente configurazione richiede il servizio al momento dell'attivazione.
         - **Ripristina**: se l'opzione è abilitata, Assistente configurazione richiede il backup in iCloud durante l'attivazione.
         - **ID Apple**: necessario per il download delle app da iOS App Store, incluse le app installate da Intune. Se l'opzione è abilitata, quando Intune prova a installare un'applicazione senza ID, iOS richiede agli utenti un ID Apple.
-        - **Termini e condizioni**: se l'opzione è abilitata, Assistente configurazione richiede agli utenti di accettare i termini e le condizioni di Apple durante l'attivazione. - **ID tocco**: se l'opzione è abilitata, Assistente configurazione richiede questo servizio durante l'attivazione. - **Apple Pay**: se l'opzione è abilitata, Assistente configurazione richiede questo servizio durante l'attivazione. - **Zoom**: se l'opzione è abilitata, Assistente configurazione richiede questo servizio durante l'attivazione. - **Siri**: se l'opzione è abilitata, Assistente configurazione richiede questo servizio durante l'attivazione. - **Invia i dati di diagnostica ad Apple**: se l'opzione è abilitata, Assistente configurazione richiede questo servizio durante l'attivazione. -  **Abilita la gestione di Apple Configurator**: impostare l'opzione su **Non consentire** per impedire la sincronizzazione dei file con iTunes o la gestione tramite Apple Configurator. Microsoft consiglia di impostare questa opzione su **Non consentire**, di esportare le altre configurazioni da Apple Configurator, quindi di eseguire la distribuzione come profilo di configurazione iOS personalizzato, anziché di usare questa impostazione per consentire la distribuzione manuale con o senza un certificato.
-        - **Non consentire**: impedisce al dispositivo di comunicare tramite USB (disattiva l'associazione). - **Consenti**: consente al dispositivo di comunicare tramite la connessione USB con qualsiasi PC o Mac. - **Richiedi certificato**: consente l'associazione a un Mac con un certificato importato nel profilo di registrazione.
+        - **Terms and Conditions** (Termini e condizioni): se l'opzione è abilitata, Assistente configurazione richiede di accettare i termini e condizioni Apple durante l'attivazione.
+        - **ID tocco**: se l'opzione è abilitata, Assistente configurazione richiede questo servizio durante l'attivazione.
+        - **Apple Pay**: se l'opzione è abilitata, Assistente configurazione richiede questo servizio durante l'attivazione.
+        - **Zoom**: se l'opzione è abilitata, Assistente configurazione richiede questo servizio durante l'attivazione.
+        - **Siri**: se l'opzione è abilitata, Assistente configurazione richiede questo servizio durante l'attivazione.
+        - **Invia i dati di diagnostica ad Apple**: se l'opzione è abilitata, Assistente configurazione richiede questo servizio durante l'attivazione.
+     -  **Abilita la gestione di Apple Configurator**: se impostata su **Non consentire**, evita la sincronizzazione di file con iTunes o la gestione tramite Apple Configurator. Microsoft consiglia di impostare questa opzione su **Non consentire**, di esportare le altre configurazioni da Apple Configurator, quindi di eseguire la distribuzione come profilo di configurazione iOS personalizzato, anziché di usare questa impostazione per consentire la distribuzione manuale con o senza un certificato.
+        - **Non consentire**: impedisce al dispositivo di comunicare tramite USB (disattiva l'associazione).
+        - **Consenti**: consente al dispositivo di comunicare tramite la connessione USB con qualsiasi PC o Mac.
+        - **Richiedi certificato**: consente l'associazione a un Mac con un certificato importato nel profilo di registrazione.
 
 6.  **Assegnare i dispositivi DEP per la gestione** Andare al [portale del programma di registrazione dispositivi (DEP)](https://deploy.apple.com) (https://deploy.apple.com) e accedere con l'ID Apple aziendale. Scegliere **Deployment Program** (Programma di distribuzione) &gt; **Programma di registrazione dispositivi** &gt; **Gestisci dispositivi**. Specificare come **scegliere i dispositivi**, fornire le informazioni sul dispositivo e specificare i dettagli in base al **Numero di serie**del dispositivo, al **Numero dell'ordine**o **caricando un file CSV**. Quindi selezionare **Assign to Server** (Assegna al server), selezionare il &lt;ServerName&gt; (NomeServer) specificato per Microsoft Intune e fare clic su **OK**.
 
@@ -91,12 +99,15 @@ Per registrare i dispositivi iOS di proprietà dell'azienda con DEP, è necessar
 
 8.  **Distribuire i dispositivi agli utenti** Ora è possibile distribuire i dispositivi di proprietà dell'azienda agli utenti. Quando un dispositivo iOS viene attivato, viene registrato per la gestione con Intune.
 
+## Modifiche alle assegnazioni di gruppo di Intune
 
+A partire dal mese di settembre la gestione dei gruppi di dispositivi passerà ad Azure Active Directory. Dopo la transizione ai gruppi di Azure Active Directory le assegnazioni di gruppo non saranno più incluse nelle opzioni del **profilo di registrazione aziendale**. Poiché questa modifica verrà implementata nel corso di diversi mesi, potrebbe non essere visibile immediatamente. A breve verranno pubblicati maggiori dettagli.
 
 ### Vedere anche
 [Prepararsi alla registrazione dei dispositivi](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

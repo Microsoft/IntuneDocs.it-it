@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Risolvere i problemi di installazione client | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c8409d58e3e7a1038e4d030d88a9ffe7d29bc1b6
+ms.openlocfilehash: 78fa086f2e7e6c836aa74acb303d9a6564ed0993
+
 
 ---
 
@@ -32,7 +26,7 @@ Usare le seguenti informazioni per risolvere i problemi di installazione del cli
 
 -   Se nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) non vengono visualizzati avvisi relativi alla distribuzione del software client per il computer, verificare la connettività Internet e la configurazione proxy del computer e assicurarsi che il computer sia in grado di comunicare con l'URL del servizio, [https://manage.microsoft.com](https://manage.microsoft.com/). Quindi, riprovare l'installazione del software client.
 
--   È possibile attivare l'invio di un messaggio di posta elettronica a destinatari selezionati quando viene emesso un avviso di errore della distribuzione del software client configurando una regola di notifica nell'area di lavoro **Amministrazione** . Per altre informazioni, vedere [Get notified by Microsoft Intune alerts](/intune/deploy-use/get-notified-by-microsoft-intune-alerts) (Ricevere notifiche tramite gli avvisi di Microsoft Intune).
+-   È possibile attivare l'invio di un messaggio di posta elettronica a destinatari selezionati quando viene emesso un avviso di errore della distribuzione del software client configurando una regola di notifica nell'area di lavoro **Amministrazione** . Per altre informazioni, vedere [Ricevere notifiche tramite gli avvisi di Microsoft Intune](/intune/deploy-use/get-notified-by-alerts).
 
 -   Intune visualizza l'avviso critico **Errore distribuzione software client** se la distribuzione del software client ha esito negativo. L'avviso viene visualizzato nella pagina **Panoramica sistema** e nelle pagine **Avvisi** della [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/). Ecco come controllare gli avvisi:
 
@@ -56,23 +50,23 @@ Usare le seguenti informazioni per risolvere i problemi di installazione del cli
 
 ## Il download del pacchetto di registrazione per il computer ha esito negativo
 **Problema:** durante il tentativo di registrazione di un computer si verifica quanto segue:
--  Il download del pacchetto di registrazione ha esito negativo 
+-  Il download del pacchetto di registrazione ha esito negativo
 -  La finestra di dialogo del download viene visualizzata ma si verifica il timeout
 
 **Risoluzione:** nel browser in uso per il download, per il periodo di esecuzione del download, verificare che siano abilitati i download e che i file crittografati possono essere salvati sul disco locale.
 
 ## L'installazione del client si blocca e visualizza il codice di errore 0x80040154
 **Problema:**
- 
+
 -  L'installazione del client si blocca durante la registrazione
 
--  Impossibile registrare il dispositivo 
+-  Impossibile registrare il dispositivo
 
 -  Errore 0x80040154 in WindowsUpdate.log
 
 L'errore potrebbe dipendere dall'assenza di aggiornamenti software critici sul PC.
 
-**Soluzione:** Verificare che i criteri di aggiornamento del software consentano di installare gli aggiornamenti critici, come descritto in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune) 
+**Soluzione:** Verificare che i criteri di aggiornamento del software consentano di installare gli aggiornamenti critici, come descritto in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune)
 
 
 ## Errori relativi a criteri di Microsoft Intune in policyplatform.log
@@ -84,7 +78,8 @@ Per i dispositivi Windows non MDM, gli errori dei criteri nel file policyplatfor
 
 2.  Attendere 20 minuti che il software client venga rimosso.
 
-    > [!NOTE] Non provare a rimuovere il client da Programmi e funzionalità.
+    > [!NOTE]
+    > Non provare a rimuovere il client da Programmi e funzionalità.
 
 3.  Nel menu Start digitare **Controllo account utente** per aprire le impostazioni di Controllo dell'account utente.
 
@@ -127,9 +122,10 @@ Nella tabella riportata di seguito vengono descritti i codici di errore visualiz
 Se i problemi di installazione persistono, contattare il supporto tecnico, come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md). È necessario avere a disposizione il log di registrazione del computer client (disponibile in % *programfiles*% \Microsoft\OnlineManagement\Logs\Enrollment.log e in %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log), oltre al log di Windows Update (%*windir*%\windowsupdate.log) per mostrarli ai tecnici del supporto.
 
 ### Passaggi successivi
-Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
+Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

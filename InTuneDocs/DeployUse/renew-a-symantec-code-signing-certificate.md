@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Rinnovare un certificato di firma codice aziendale Symantec da usare con Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
+
 
 ---
 
@@ -41,9 +35,9 @@ Il certificato Symantec usato per gestire alcuni dispositivi mobili Windows e Wi
 
 ## Come installare il certificato aggiornato per Windows Phone 8.0
 
-1.  Scaricare e firmare il Portale aziendale di Windows Phone più recente: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)..
+1.  Scaricare e firmare il Portale aziendale di Windows Phone più recente: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  Aprire la Console di amministrazione di Intune ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) e passare a **Amministratore**, **Gestione dei dispositivi mobili** &gt; **Windows Phone** e fare clic su **Carica app firmata**..
+2.  Aprire la console di amministrazione di Intune ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)), passare ad **Amministrazione**, **Gestione dei dispositivi mobili** &gt; **Windows Phone** e fare clic su **Carica app firmata**.
 
 3.  Caricare il portale aziendale appena firmato. Saranno necessari il file SSP.xap appena firmato e il nuovo file PFX ricevuto da Symantec oppure il token di registrazione dell'applicazione creato con questo nuovo file PFX.
 
@@ -55,9 +49,9 @@ La specifica di un file SSP.xap firmato attualmente è l'unico modo per fornire 
 
 ## Come installare il certificato aggiornato per i dispositivi Windows Phone 8.1 e versioni successive
 
-1.  Scaricare e firmare il Portale aziendale di Windows Phone più recente dall'Area download alla pagina seguente: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)..
+1.  Scaricare e firmare il Portale aziendale di Windows Phone più recente dall’Area download alla pagina seguente: [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060).
 
-2.  Aprire la Console di amministrazione di Intune ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) e passare a **Amministratore** &gt; **Gestione dei dispositivi mobili** &gt; **Windows Phone** e fare clic su **Carica app firmata**..
+2.  Aprire la [console di amministrazione di Intune](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com), passare ad **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **Windows Phone** e fare clic su **Carica app firmata**.
 
 3.  Caricare il portale aziendale appena firmato. Saranno necessari il file SSP.xap appena firmato e il nuovo file PFX ricevuto da Symantec oppure il token di registrazione dell'applicazione creato con questo nuovo file PFX.
 
@@ -67,10 +61,11 @@ La specifica di un file SSP.xap firmato attualmente è l'unico modo per fornire 
 
 
 ### Vedere anche
-[Impostare la gestione di Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
-[Impostare la gestione di Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+[Configurare la gestione del dispositivo per Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
+[Configurare la gestione di Windows Phone e Windows 10 Mobile con Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

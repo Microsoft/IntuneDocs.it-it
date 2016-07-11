@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Impostazioni dei criteri di Mac OS X | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: bbbb666fdc34a82d247d760d156d48c5ac72374c
+
 
 ---
 
@@ -67,7 +60,8 @@ Nell'**Elenco app conformi &amp; non conformi per Mac OS X** abilitare **Imposta
 |**Importa app**|Importa un elenco di app specificate in un file con valori delimitati da virgole. Nel file usare il formato nome app, editore, ID bundle dell'app.|
 |**Modifica**|Consente di modificare il nome, l'editore e l'ID bundle dell'app selezionata.|
 |**Eliminazione**|Elimina l'app selezionata dall'elenco.|
-> [!TIP] Per altre informazioni sui report di Intune, vedere [Comprendere le operazioni di Microsoft Intune con l'uso dei report](understand-microsoft-intune-operations-by-using-reports.md).
+> [!TIP]
+> Per altre informazioni sui report di Intune, vedere [Comprendere le operazioni di Microsoft Intune con l'uso dei report](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Quando un dispositivo Mac OS X è in modalità di sospensione, criteri e profili non possono essere recapitati né può esserne effettuato l'inventario. Di conseguenza, la console di Intune potrebbe visualizzare temporaneamente lo stato **Impostazioni criteri errate** fino alla successiva riattivazione del dispositivo dalla modalità sospensione.
@@ -105,7 +99,7 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 |Nome impostazione|Dettagli|
     |----------------|--------------------|
     |**Nome del profilo di configurazione personalizzato (visualizzato agli utenti)**|Specificare il nome con cui il criterio verrà visualizzato nel dispositivo e nei report dei criteri di Intune.|
-    |**File del profilo di configurazione**|Fare clic su **Importa**, quindi selezionare il profilo di configurazione creato usando lo strumento Apple Configurator. **Suggerimento:** vedere [Come creare un file del profilo di configurazione](#BKMK_Prof) in questo argomento per informazioni sulla creazione del profilo di configurazione.|
+    |**File del profilo di configurazione**|Fare clic su **Importa**, quindi selezionare il profilo di configurazione creato usando lo strumento Apple Configurator. **Suggerimento:** vedere **Come creare un file del profilo di configurazione** in questo argomento per informazioni sulla creazione del profilo di configurazione.|
     |**Dettagli del profilo di configurazione**|Visualizza il codice XML per il profilo di configurazione importato.|
 
 
@@ -126,6 +120,7 @@ Il file del profilo di configurazione usato dai criteri personalizzati può esse
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

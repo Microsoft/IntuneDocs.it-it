@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Impostazioni dei criteri relativi termini e condizioni in Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 8079ca5abcedbe024fb6347e02c7cf61ae541a30
+
 
 ---
 
@@ -58,7 +52,7 @@ ms.suite: ems
 
 2.  Nell'elenco **Criteri di termini e condizioni** selezionare il criterio da distribuire, quindi fare clic su **Gestisci distribuzione**.
 
-3.  Nella finestra di dialogo **Gestisci distribuzione** selezionare i gruppi di utenti a cui distribuire i criteri e fare clic su **OK**..
+3.  Nella finestra di dialogo **Gestisci distribuzione** selezionare i gruppi di utenti a cui distribuire i criteri e fare clic su **OK**.
 
     Quando gli utenti di destinazione accedono al portale aziendale, Intune visualizza i termini e le condizioni che sono state distribuite. Gli utenti devono accettare questi termini prima di poter accedere alle risorse aziendali.
 
@@ -85,6 +79,7 @@ Quando si modifica un criterio esistente relativo a termini e condizioni, è pos
 [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,33 +1,27 @@
 ---
-# required metadata
-
 title: Uso della larghezza di banda di rete in Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12
+
 
 ---
 
-# Uso della larghezza di banda di rete in Intune
+# Uso della larghezza di banda di rete di Intune
 
-Prima di configurare [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], leggere questo argomento e gli altri requisiti indicati nelle [informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)..
+Prima di configurare [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] leggere questo argomento e gli altri requisiti elencati in [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
 
 Usare le informazioni nelle sezioni riportate di seguito per pianificare il traffico di rete per i client [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)].
 
@@ -83,15 +77,16 @@ Per altre informazioni su BITS e sui computer Windows, vedere [Servizio trasferi
 
 -   [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)]
 
-Per poter essere usato, BranchCache deve essere abilitato nel computer client, che deve essere configurato per la **modalità Cache distribuita**..
+Per usarlo nel computer client, BranchCache deve essere abilitato e configurato per la **modalità cache distribuita**.
 
 Per impostazione predefinita, BranchCache e la modalità Cache distribuita sono abilitate nel computer quando viene installato il client di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Tuttavia, se è presente un Criterio di gruppo che disattiva BranchCache, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] non sostituisce quel criterio e l'opzione BranchCache resterà disabilitata nel computer.
 
-Se si usa BranchCache, è necessario comunicarlo agli altri amministratori nell'organizzazione che gestiscono i Criteri di gruppo e i criteri firewall di [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] per assicurarsi che non distribuiscano criteri che disabilitano BranchCache o le eccezioni Firewall. Per altre informazioni su BranchCache, vedere [Panoramica di BranchCache](http://technet.microsoft.com/library/hh831696.aspx)..
+Se si usa BranchCache, è necessario comunicarlo agli altri amministratori nell'organizzazione che gestiscono i Criteri di gruppo e i criteri firewall di [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] per assicurarsi che non distribuiscano criteri che disabilitano BranchCache o le eccezioni Firewall. Per altre informazioni su BranchCache, vedere [Panoramica di BranchCache](http://technet.microsoft.com/library/hh831696.aspx).
 
 ### Vedere anche
 [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

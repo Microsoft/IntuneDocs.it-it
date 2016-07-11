@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Usare gruppi per gestire utenti e dispositivi | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cc64e51499908d08823429871cda91dfb0078b1e
+ms.openlocfilehash: a1f6dfc7629481403c40a1ce927b588f67e5fa74
+
 
 ---
 
@@ -101,7 +95,7 @@ Le visualizzazioni di gruppi filtrati consentono di personalizzare la visualizza
 
 -   Si vuole che per ogni amministratore IT vengano visualizzati solo i gruppi di dispositivi e utenti pertinenti.
 
-È possibile configurare le visualizzazioni di gruppi filtrati per gli amministratori del servizio nella console di amministrazione di Intune. Per informazioni dettagliate, vedere [Informazioni preliminari per la configurazione di Microsoft Intune](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
+È possibile configurare le visualizzazioni di gruppi filtrati per gli amministratori del servizio nella console di amministrazione di Intune. Per informazioni dettagliate, vedere [Informazioni preliminari per l'uso di Microsoft Intune](/intune/get-started/what-to-know-before-you-start-microsoft-intune).
 
 Dopo la configurazione delle visualizzazioni di gruppi filtrati per un amministratore del servizio, quest'ultimo:
 
@@ -125,7 +119,7 @@ Dopo la configurazione delle visualizzazioni di gruppi filtrati per un amministr
 
 1.  Nella console di amministrazione di Microsoft Intune scegliere **Amministrazione** &gt; **Gestione amministratori** &gt; **Amministratori del servizio**.
 
-2.  Selezionare l'amministratore del servizio per il quale filtrare i gruppi e quindi fare clic su **Gestisci gruppi**..
+2.  Selezionare l'amministratore del servizio per il quale filtrare i gruppi e quindi fare clic su **Gestisci gruppi**.
 
 3.  Nella finestra di dialogo **Seleziona i gruppi visualizzabili dall'amministratore del servizio** aggiungere i gruppi cui l'amministratore del servizio selezionato potrà accedere e quindi fare clic su **OK**.
 
@@ -141,7 +135,7 @@ Dopo aver creato i gruppi, si continuerà a gestirli in base alle esigenze dell'
 ## Passaggi successivi
 
 ### Controllare la progettazione
-Dopo aver impostato i gruppi e criteri, controllare le implicazioni pratiche di progettazione esaminando il **Valore previsto** e lo **Stato**.
+Dopo aver impostato i gruppi e i criteri, controllare le implicazioni pratiche di progettazione esaminando il **Valore previsto** e lo **Stato**.
 
 1. Selezionare qualsiasi dispositivo da un gruppo di dispositivi e visualizzare le categorie di informazioni nella parte superiore della schermata.
 2. Selezionare **criteri** . Verrà visualizzato qualcosa di simile a questa schermata delle impostazioni di criteri di un dispositivo Android.
@@ -158,6 +152,7 @@ Ogni criterio dispone di un **previsto valore** e **stato**. Il valore previsto 
 > Tenere presente che quando due criteri con livelli di restrizione diversi vengono applicati allo stesso dispositivo o utente, viene di fatto applicato il criterio più restrittivo.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

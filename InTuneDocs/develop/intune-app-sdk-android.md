@@ -1,38 +1,32 @@
 ---
-# required metadata
-
 title: Manuale dello sviluppatore di Microsoft Intune App SDK per Android | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
+ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+
 
 ---
 
 # Guida a Microsoft Intune App SDK per sviluppatori di Android
 
-> [!NOTE] può essere utile leggere prima la [panoramica di Intune App SDK](intune-app-sdk.md), che visualizza le attuali funzionalità dell'SDK e descrive come preparare l'integrazione in ogni piattaforma supportata. 
+> [!NOTE]
+> Può essere utile leggere prima [Panoramica di Intune App SDK](intune-app-sdk.md), che illustra le attuali funzionalità dell'SDK e descrive come preparare l'integrazione in ogni piattaforma supportata. 
 
 # Contenuto dell'SDK 
 
-Intune App SDK per Android è una libreria Android standard senza dipendenze esterne. 
-L'SDK è costituito da:  
+Intune App SDK per Android è una libreria Android standard senza dipendenze esterne. L'SDK è costituito da:  
 
 * **`Microsoft.Intune MAM.SDK.jar`**: interfacce necessarie per abilitare MAM in un'app, nonché l'interoperabilità con l'app Portale aziendale di Microsoft. Le app devono specificare questo file come riferimento alla libreria Android.
 
@@ -370,6 +364,7 @@ Intune SDK mantiene il contratto fornito dall'API Android, ma è possibile che v
 * Evitare un uso ambiguo di qualsiasi API. Ad esempio, `Activity.startActivityForResult/onActivityResult` senza il controllo di requestCode provocherà un comportamento anomalo.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

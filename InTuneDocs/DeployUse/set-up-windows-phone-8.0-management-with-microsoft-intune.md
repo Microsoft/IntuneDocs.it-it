@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Impostare la gestione di Windows Phone 8.0 | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 06/09/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: eed5855f3e27460146703ddf40fd935229a974e5
+ms.openlocfilehash: 02f9b7c7abe2daf942299015bfdfb052755ec2de
+
 
 ---
 
@@ -29,7 +23,8 @@ ms.suite: ems
 
 Windows Phone 8.0 richiede un certificato Symantec per installare l'app Portale aziendale di Intune e per consentire la gestione del dispositivo. È necessario un certificato anche per firmare applicazioni line-of-business. L'argomento seguente si riferisce solo a Windows Phone 8.0. Per gestire i dispositivi Windows Phone 8.1 o versioni successive, compresi i dispositivi Windows 10 Mobile, vedere [Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) (Impostare la gestione di Windows Phone e Windows 10 Mobile con Microsoft Intune).
 
-> [!IMPORTANT] A partire da settembre 2016 l'app Portale aziendale per Windows 8.0 e Windows Phone 8.0 non sarà più disponibile per il download.
+> [!IMPORTANT]
+> A partire da settembre 2016 l'app Portale aziendale per Windows 8.0 e Windows Phone 8.0 non sarà più disponibile per il download.
 
 -   **Windows Phone 8**: Certificato richiesto
 -   **Windows Phone 8.1 e Windows 10 Mobile** richiedono un certificato solo se:
@@ -41,7 +36,8 @@ Windows Phone 8.0 richiede un certificato Symantec per installare l'app Portale 
 
 ![Diagramma dei requisiti relativi ai certificati](../media/wpcertreqs.png)
 
-  > [!IMPORTANT] Il certificato Symantec usato per gestire alcuni dispositivi mobili Windows e Windows Phone [deve essere rinnovato periodicamente](renew-a-symantec-code-signing-certificate.md).
+  > [!IMPORTANT]
+  > Il certificato Symantec usato per gestire alcuni dispositivi mobili Windows e Windows Phone [deve essere rinnovato periodicamente](renew-a-symantec-code-signing-certificate.md).
 
 I requisiti di installazione per la gestione dei dispositivi mobili Windows Phone variano a seconda della modalità di gestione dei dispositivi.  L'impostazione di due CNAME nella registrazione DNS della società semplifica la registrazione. Se gli utenti devono scaricare l'app Portale aziendale dallo Store, dopo aver configurato le impostazioni DNS è sufficiente impostare Portale aziendale e indicare agli utenti come effettuare la registrazione.  Per Windows Phone 8.0 o Windows Phone 8.1 in cui verrà distribuito il Portale aziendale, è necessario un certificato Symantec per firmare il codice dell'app.
 
@@ -186,6 +182,7 @@ I requisiti di installazione per la gestione dei dispositivi mobili Windows Phon
     > -   Se è necessario installare le app con sideload ed eseguire la registrazione e la ricezione del file ssp.xap nei dispositivi Windows Phone 8.0, creare una nuova distribuzione software del file ssp.xap e distribuirlo con l'azione **disinstalla** . I dispositivi Windows Phone 8.0 non supportano l'installazione o la disinstallazione forzata delle app, quindi ignoreranno la distribuzione. I dispositivi Windows Phone 8.1 supportano l'azione di disinstallazione e rimuoveranno il file ssp.xap.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

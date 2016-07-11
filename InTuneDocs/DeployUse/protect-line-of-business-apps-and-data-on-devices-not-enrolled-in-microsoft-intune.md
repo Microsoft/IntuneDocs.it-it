@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Proteggere app e dati line-of-business su dispositivi non registrati | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+
 
 ---
 
@@ -64,7 +57,7 @@ Dopo aver caricato nel servizio i metadati dell'app, questa appare nell'elenco d
 * Per i dispositivi non gestiti da una soluzione MDM occorre una soluzione personalizzata. Gli utenti finali dovranno scaricare e installare l'app sul loro dispositivo.
 
 ## Modifica dei metadati
-Per la modifica di dettagli come il nome o l'identificatore bundle dell'app è necessario [rimuovere l'app](#remove-apps) e quindi [aggiungerla](#add-the-app) con i nuovi metadati.
+Per la modifica di dettagli dell'app come il nome o l'identificatore bundle è necessario [rimuovere l'app](#remove-apps) e quindi [aggiungerla](#step-2-add-the-app) con i nuovi metadati.
 
 ##  Rimuovere app
 È possibile rimuovere un'app line-of-business dall'elenco di app.  L'app viene rimossa dall'elenco e l'associazione ai criteri MAM viene eliminata, ma l'app non viene rimossa o disinstallata dal dispositivo dell'utente finale.  
@@ -80,6 +73,7 @@ Per la modifica di dettagli come il nome o l'identificatore bundle dell'app è n
   Le app vengono rimosse dall'elenco di app line-of-business e dall'elenco delle app di destinazione nel criterio MAM.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,34 +1,28 @@
 ---
-# required metadata
-
 title: Implementazione dei criteri | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+
 
 ---
 
 # Implementazione dei criteri
 Questo argomento fornisce consigli specifici per un'implementazione graduale dei criteri in Microsoft Intune. Questo approccio si applica ai primi criteri applicati in una nuova distribuzione di Intune o ai criteri aggiunti a una distribuzione esistente.
 
-Per informazioni generali sulle fasi di implementazione, vedere l'articolo relativo alle [fasi di implementazione per la distribuzione di Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md)..
+Per informazioni generali sulle fasi di implementazione, vedere [Fasi dell'implementazione di Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md).
 
 ### Fasi dell'implementazione dei criteri
 Le fasi dell'implementazione dei criteri sono:
@@ -37,7 +31,7 @@ Le fasi dell'implementazione dei criteri sono:
 
 -   Modello di verifica
 
--   Fase pilota
+-   Distribuzione pilota
 
 -   Implementazione nell'organizzazione
 
@@ -61,7 +55,7 @@ Definire l'ambito della distribuzione di criteri di Intune:
 ## Modello di verifica
 Nella fase del modello di verifica è possibile testare la distribuzione dei criteri in un ambiente di laboratorio su dispositivi e utenti configurati esclusivamente a scopo di test.
 
--   È importante che il personale del supporto tecnico partecipi a questa fase per individuare eventuali problemi che possono verificarsi durante la distribuzione pilota e di produzione. Per informazioni relative alla risoluzione dei problemi, vedere l'articolo relativo alla [risoluzione dei problemi dei criteri in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)..
+-   È importante che il personale del supporto tecnico partecipi a questa fase per individuare eventuali problemi che possono verificarsi durante la distribuzione pilota e di produzione. Per informazioni relative alla risoluzione dei problemi, vedere [Risolvere i problemi relativi ai criteri in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 -   A questo punto del processo è necessario sviluppare piani di comunicazione per gli utenti pilota e di produzione. Il piano deve includere almeno i comportamenti del dispositivo che verranno modificati e il momento in cui avverrà la modifica, lo scopo aziendale della modifica e che cosa fare se il personale IT o gli utenti incontrano problemi, fornendo sia informazioni di supporto autonomo sia indicazioni per contattare il supporto tecnico.
 
@@ -102,6 +96,7 @@ Durante la fase pilota i criteri verranno distribuiti a un piccolo gruppo di ute
 [Risolvere i problemi relativi ai criteri in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

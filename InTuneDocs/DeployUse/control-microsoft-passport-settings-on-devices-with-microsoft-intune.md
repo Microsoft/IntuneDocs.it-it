@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Controllare le impostazioni di Microsoft Passport nei dispositivi | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+
 
 ---
 
@@ -57,7 +51,8 @@ Intune si integra con Passport for Work in due modi:
     - **Consentito**: gli utenti possono usare il tipo di carattere nel proprio PIN, ma non è obbligatorio.
     - **Obbligatorio**: gli utenti devono includere almeno uno dei tipi di carattere nel PIN. Ad esempio, di solito si richiede almeno una lettera maiuscola e un carattere speciale.
     - **Non consentito** (impostazione predefinita): gli utenti non devono usare questi tipi di carattere nel PIN. Questo è il comportamento anche nel caso in cui l'impostazione non sia configurata.
-    > [!TIP] I caratteri speciali sono: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    > [!TIP]
+    > I caratteri speciali sono: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **Scadenza PIN (giorni)**: è consigliabile specificare un periodo di scadenza dopo il quale gli utenti finali devono modificare il PIN. L'impostazione predefinita è 41 giorni. 
 - **Ricorda cronologia PIN**: usare questa impostazione per limitare il riutilizzo dei PIN usati in precedenza. Per impostazione predefinita gli ultimi 5 PIN non possono essere nuovamente usati.
 
@@ -79,6 +74,7 @@ Per altre informazioni su Microsoft Passport, vedere [la guida](https://technet.
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

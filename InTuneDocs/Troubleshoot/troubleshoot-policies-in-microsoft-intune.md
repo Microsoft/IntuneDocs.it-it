@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Risolvere i problemi relativi ai criteri | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
+ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+
 
 ---
 
@@ -58,7 +51,7 @@ Nella schermata seguente è possibile visualizzare due chiari esempi:
 ## Intervalli di aggiornamento dei criteri
 I criteri vengono aggiornati a intervalli regolari. In generale, i criteri dovrebbero essere registrati nei dispositivi entro 15 minuti dall'applicazione di una modifica. Ecco altri dettagli sugli intervalli regolari per l'aggiornamento dei criteri:
 
--   **Dispositivo Windows registrato per MDM**: viene generato da un'attività pianificata alle 15.00 ora locale sul dispositivo e si verifica ogni giorno.
+-   **Dispositivi Windows registrati per MDM**: i criteri vengono aggiornati ogni 8 ore per i dispositivi Windows 8.1 e Windows 10 e ogni 24 ore per i dispositivi Windows RT.
 
 -   **Windows Phone**: i criteri vengono aggiornati ogni 8 ore. Può essere imposto da un aggiornamento nel Portale aziendale, in **Impostazioni**.
 
@@ -113,9 +106,10 @@ Android MDM non consente al servizio di forzare le modifiche dei criteri inizial
 **Risoluzione:** nell'[interfaccia di amministrazione di Office 365](https://portal.office.com/) rimuovere i caratteri speciali dal nome della società e salvare le informazioni aziendali.
 
 ### Passaggi successivi
-Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
+Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 

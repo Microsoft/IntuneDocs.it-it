@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Personalizzare le visualizzazioni della console per i ruoli di amministratore | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 52a77e50b3dde24ba270766d4472bdd6176cc415
+
 
 ---
 
@@ -30,9 +24,9 @@ ms.suite: ems
 
 ## Come creare una visualizzazione personalizzata
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Amministrazione** &gt; **Amministratori dei servizi**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Amministrazione**&gt;**Amministratori dei servizi**.
 
-2.  Nell'elenco degli amministratori dei servizi scegliere l'utente di cui si vuole modificare la designazione e fare clic su **Gestisci accesso**..
+2.  Nell'elenco degli amministratori dei servizi scegliere l'utente di cui si vuole modificare la designazione e fare clic su **Gestisci accesso**.
 
 3.  Nella finestra di dialogo **Gestisci accesso** , scegliere il livello di accesso che si desidera assegnare l'utente selezionato. È possibile scegliere tra:
 
@@ -44,7 +38,7 @@ ms.suite: ems
 
     **Supporto tecnico - Nodo Gruppi** limita le attività che l'amministratore può eseguire a quanto segue:
 
-    -   Visualizzare elenchi di utenti e dispositivi. L'amministratore non può usare filtri per modificare la visualizzazione. È possibile tuttavia usare filtri di gruppo per modificare quello che l'amministratore può visualizzare. Per altre informazioni, vedere [Usare i gruppi per gestire utenti e dispositivi con Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)..
+    -   Visualizzare elenchi di utenti e dispositivi. L'amministratore non può usare filtri per modificare la visualizzazione. È possibile tuttavia usare filtri di gruppo per modificare quello che l'amministratore può visualizzare. Per altre informazioni, vedere [Creare gruppi per gestire utenti e dispositivi con Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
     -   Stampare l'elenco di utenti e dispositivi.
 
@@ -73,6 +67,7 @@ ms.suite: ems
 Il livello di accesso designato viene assegnato all'amministratore configurato quando apre la console di amministrazione di Intune.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

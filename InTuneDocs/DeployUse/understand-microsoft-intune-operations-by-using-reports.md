@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Comprendere le operazioni con l'uso dei report | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 617f1cd42de49f0c8675bd450591a390af674e73
+ms.openlocfilehash: b8af36cef1bcb9077d0ab611a14fb88c0f458ece
+
 
 ---
 
@@ -41,10 +34,11 @@ I report di Intune forniscono informazioni su software, hardware e licenze softw
 |**Report inventario dispositivi mobili**|Visualizza le informazioni sui dispositivi mobili nell'organizzazione. È possibile filtrare le informazioni visualizzate in base ai gruppi, se il dispositivo è jailbroken o rooted e in base al sistema operativo.|
 |**Report acquisto licenza**|Visualizza i titoli di tutto il software concesso in licenza ai gruppi di licenze selezionati, in base ai rispettivi contratti di licenza. Se le informazioni sulle licenze software non sono state aggiornate per più di 24 ore, vengono aggiornate quando si crea un report licenze. Il report licenze non è una prova di conformità contrattuale né un calcolo esatto dei titoli di software usati. ma solo uno strumento che agevola le decisioni aziendali relative alle licenze. Intune potrebbe non rilevare alcuni prodotti che possono avere un Contratto multilicenza Microsoft. I filtri disponibili sono:<br /><br />**Tutti i contratti** consente di visualizzare tutti i prodotti con contratto di licenza gestiti da Intune.<br /><br />**Contratti multilicenza** per visualizzare solo i prodotti software del Centro servizi per contratti multilicenza.<br /><br />**Altri contratti di licenza software** per visualizzare i contratti software gestiti al di fuori del Centro servizi per contratti multilicenza.|
 |**Report installazione licenza**|Confrontare il software installato nei computer dell'organizzazione con l'attuale copertura del contratto di licenza secondo il Centro servizi per contratti multilicenza. I filtri includono:<br /><br />**Tutti i contratti** consente di visualizzare tutti i prodotti con contratto di licenza gestiti da Intune.<br /><br />**Contratti multilicenza** per visualizzare solo i prodotti software del Centro servizi per contratti multilicenza.<br /><br />**Altri contratti di licenza software** per visualizzare i contratti software gestiti al di fuori del Centro servizi per contratti multilicenza.|
-|**Report termini e condizioni**|Mostra se gli utenti hanno accettato i termini e le condizioni distribuiti e la versione accettata. È possibile specificare fino a 10 utenti di cui mostrare l'accettazione di tutti i termini e le condizioni distribuiti o mostrare lo stato di accettazione di termini e condizioni distribuiti specifici.|
+|**Report termini e condizioni**|Indica se gli utenti hanno accettato i termini e le condizioni distribuiti e quale versione è stata accettata. È possibile specificare fino a 10 utenti di cui mostrare l'accettazione di tutti i termini e le condizioni distribuiti o mostrare lo stato di accettazione di termini e condizioni distribuiti specifici.|
 |**Report app non conformi**|Mostra le informazioni sugli utenti che hanno installato app presenti negli elenchi di app conformi e non conformi. Usare questo report per individuare gli utenti e i dispositivi non conformi con i criteri della società relativi alle app.|
-|**Report conformità certificato**|Mostra i certificati rilasciati a utenti e dispositivi tramite SCEP o PKCS #12 (.PFX). Usare questo report per individuare i certificati rilasciati, scaduti e revocati.|
-|**Report cronologia dispositivo**|Mostra un log cronologico di azioni di disattivazione, cancellazione ed eliminazione. Usare questo report per vedere chi ha avviato le azioni sui dispositivi in passato.|
+|**Report conformità certificato**|Indica quali sono i certificati rilasciati a utenti e dispositivi tramite SCEP o PKCS #12 (.PFX). Usare questo report per individuare i certificati rilasciati, scaduti e revocati.|
+|**Report cronologia dispositivo**|Visualizza un log cronologico di azioni di disattivazione, cancellazione ed eliminazione. Usare questo report per vedere chi ha avviato le azioni sui dispositivi in passato.|
+|**Report di attestazione dell'integrità**|Indica l'integrità dei dispositivi mobili.|
 |**Report sull'hardware Mac OS X**|Visualizza i dettagli sull'hardware per tutti i dispositivi Mac OS X registrati nei gruppi selezionati. Per informazioni sull'inventario hardware raccolto da questi dispositivi, vedere [Informazioni sui dispositivi con inventario in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Report sul software Mac OS X**|Visualizza il software installato in tutti i dispositivi Mac OS X nei gruppi selezionati. Nel report sono elencati il nome del software (come ID bundle), il nome abbreviato (o descrittivo), la versione e il numero di dispositivi in cui è installato il software.|
 
@@ -69,11 +63,12 @@ Inoltre, i report supportano le seguenti operazioni:
 |**Carica**|Nella pagina **Crea nuovo report** fare clic su **Carica** per recuperare i gruppi di parametri report precedentemente salvati.|
 |**Eliminazione**|Nell'area di lavoro **Report** selezionare il tipo di report desiderato, fare clic su **Carica**e quindi, nell'elenco di report, fare clic sull'icona di eliminazione (x) accanto al report.|
 
-## Vedere anche
+### Vedere anche
 [Monitoraggio e report con Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 

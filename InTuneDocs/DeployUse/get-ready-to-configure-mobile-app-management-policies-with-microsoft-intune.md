@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Preparazione alla configurazione dei criteri di gestione delle app per dispositivi mobili | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 6a989482e9c3c35c1f377e0b32bf04beb89e60a3
+ms.openlocfilehash: da4020eb71432f9bccb52909272d027da64ee47c
+
 
 ---
 
@@ -36,6 +29,8 @@ Il portale di Azure è la nuova console di amministrazione per la creazione di c
 Se non si ha familiarità con l'uso del portale di Azure, leggere l'argomento [Azure portal for Microsoft Intune MAM policies (Portale di Azure per i criteri MAM di Microsoft Intune)](azure-portal-for-microsoft-intune-mam-policies.md) per una breve panoramica.
 
 Se si usa la **console di amministrazione di Intune** per la gestione dei dispositivi, è possibile creare criteri MAM che supportano le app per i dispositivi registrati in Intune usando la **console di amministrazione di Intune**, ma è consigliabile usare il portale di Azure anche per i dispositivi registrati in Intune. Per istruzioni su come creare criteri MAM usando la console di amministrazione di Intune, fare clic [qui](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
+I criteri MAM creati nella console di amministrazione di Intune non possono essere importati nel portale di Azure.  Nel portale di Azure i criteri MAM devono essere creati di nuovo.
 
 >[!IMPORTANT]
 > È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Se si creano criteri MAM sia nella console di amministrazione di Intune che nel portale di Azure, i criteri di quest'ultimo vengono applicati alle app e distribuiti agli utenti.
@@ -62,7 +57,7 @@ Per visualizzare l'elenco completo delle app Microsoft supportate, passare alla 
 -   Avere una sottoscrizione **Office 365 (O365)**, necessaria per le operazioni seguenti:
   - Applicare i criteri MAM alle app con supporto di più identità.
   - Creare account aziendali di SharePoint Online ed Exchange Online. Exchange locale e SharePoint locale non sono supportati.
--    **Abilitare l'autenticazione moderna** per **Skype for Business Online**. Accedere a Microsoft Connect e riempire [questo modulo](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) per la registrazione al programma dell'autenticazione moderna.
+-    [Abilitare l'autenticazione moderna](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md) per **Skype for Business Online**.
 
 
 - Usare **Azure Active Directory (Azure AD)** per creare utenti. Azure AD autentica l'utente quando l'utente finale avvia l'app e immette le credenziali aziendali.
@@ -124,6 +119,7 @@ Gli **amministratori globali** hanno accesso al [portale di Azure](https://porta
 [Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

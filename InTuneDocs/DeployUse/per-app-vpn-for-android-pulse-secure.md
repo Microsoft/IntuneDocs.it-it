@@ -1,27 +1,18 @@
 ---
-# required metadata
-
-title: [Profilo VPN app per Android con Pulse Secure | Microsoft Intune]
-description:
-keywords:
-author: [nbigman]
-manager: [jeffgilb]
+title: Profilo VPN app per Android con Pulse Secure | Microsoft Intune
+description: 
+keywords: 
+author: nbigman
+manager: jeffgilb
 ms.date: 05/08/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
+ms.sourcegitcommit: 40e5602a4675bd92a85001827fb43426c41ed1e3
+ms.openlocfilehash: fc58e71a9b2279200dee2630aab7dbab727ea128
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -35,7 +26,7 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 2. Selezionare un modello per il nuovo criterio espandendo **Android**, quindi scegliere **Profilo VPN (Android 4 e versioni successive)**.
 
 3. Nel modello, in **Tipo di connessione** scegliere **Pulse Secure**.
-4. Completare e salvare il profilo VPN. Per altri dettagli sui profili VPN vedere [Profili VPN](Help%20users%20connect%20to%20their%20work%20using%20VPN%20profiles%20with%20Microsoft%20Intune.md).
+4. Completare e salvare il profilo VPN. Per altri dettagli sui profili VPN vedere [Connessioni VPN in Microsoft Intune](vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
 Prendere nota del nome del profilo VPN per usarlo nel passaggio successivo. Ad esempio **MyAppVpnProfile**.
@@ -82,6 +73,7 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

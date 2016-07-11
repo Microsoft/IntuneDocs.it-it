@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Funzionalità di accessibilità | Microsoft Intune
-description:
-keywords:
+title: "Funzionalità di accessibilità | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: d34e754e3815b43f4b5b74d24711cf55aacfc757
+
 
 ---
 
@@ -48,11 +42,12 @@ Oltre alle funzionalità e agli strumenti di accessibilità disponibili in Micro
 |Comprimere l'elenco in un menu|ALT + Freccia SU|
 |Passare al gruppo di applicazioni successivo|Freccia SU|
 |Visualizzare le azioni disponibili per un dispositivo selezionato|Freccia DESTRA|
-> I portali di [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] sono esplorabili tramite le normali scelte rapide da tastiera di Internet Explorer.
+> [!NOTE]
+> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] I portali sono esplorabili tramite i normali tasti di scelta rapida di Internet Explorer.
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

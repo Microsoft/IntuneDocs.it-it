@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Distribuire le app | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e6b995118e66fd146a68b49ce4decdcbd1fe3572
+ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
+
 
 ---
 
@@ -29,32 +22,6 @@ ms.suite: ems
 
 Questo argomento illustra alcuni dei concetti che è necessario comprendere prima di iniziare a distribuire le app con Microsoft Intune.
 
-## Autore del software Intune
-**Autore del software Microsoft Intune** viene avviato quando si aggiungono o si modificano le app dalla console di amministrazione di Microsoft Intune. In Autore del software selezionare e configurare un tipo di installazione software che caricherà le app (programmi per computer o app per dispositivi mobili) da archiviare nell'archiviazione cloud di Intune oppure specificare un collegamento a uno store online o a un'applicazione Web.
-
-### Requisiti
-Prima di iniziare a usare Autore del software Microsoft Intune, è necessario installare la versione completa di [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). Dopo l'installazione, potrebbe essere necessario riavviare il computer per consentire la corretta apertura di Autore del software.
-
-## Spazio di archiviazione nel cloud
-Tutte le app distribuite con il tipo di installazione del programma di installazione software devono essere compresse e caricate nell'archiviazione cloud di Microsoft Intune. Una sottoscrizione di valutazione di Intune comprende 2 gigabyte (GB) di archiviazione nel cloud per l'archiviazione delle app gestite e degli aggiornamenti. Una sottoscrizione a pagamento comprende 20 GB, con l'opzione per l'acquisto di altro spazio di archiviazione.
-
-È possibile visualizzare la quantità di spazio usato e acquistare altro spazio di archiviazione nel nodo **Uso memoria** dell'area di lavoro **Amministratore**.
-
-Le regole seguenti si applicano all'acquisto di altro spazio di archiviazione nel cloud per Intune:
-
--   È necessario un abbonamento a pagamento attivo per acquistare ulteriore memoria.
-
--   Solo gli amministratori della fatturazione o gli amministratori globali di Microsoft Online Services possono acquistare spazio di archiviazione aggiuntivo tramite il portale di gestione di Office 365. Per aggiungere, eliminare o gestire gli amministratori, è necessario essere un amministratore globale e accedere al portale di gestione di Office 365.
-
--   Per i clienti dei contratti multilicenza che hanno acquistato Intune o il componente aggiuntivo di Microsoft Intune attraverso il contratto aziendale, contattare il Microsoft Account Manager o il Microsoft Partner per informazioni sui prezzi e per acquistare memoria aggiuntiva.
-
-#### Requisiti di spazio di archiviazione nel cloud
-
--   Tutti i file associati a un'app devono essere nella stessa posizione ed essere accessibili da Intune.
-
--   Le dimensioni massime dei file caricati sono di 2GB.
-
--   Per caricare i file è necessario avere una connessione Internet la cui velocità minima è pari a 768 kbps.
 
 ## Azioni di distribuzione dell'app
 Quando si distribuiscono le app, è possibile scegliere una delle seguenti azioni di distribuzione:
@@ -62,8 +29,6 @@ Quando si distribuiscono le app, è possibile scegliere una delle seguenti azion
 -   **Installazione richiesta**: l'app viene installata nel dispositivo senza alcun intervento da parte dell'utente finale.
 
     > [!TIP] Per i dispositivi iOS non in modalità di supervisione e per tutti i dispositivi Android l'utente deve accettare l'offerta per l'app prima di installare l'app.
-    >
-    > Non è più possibile creare nuove distribuzioni di app nei dispositivi iOS che eseguono sistemi operativi precedenti a iOS 7.1. Tutte le distribuzioni di app esistenti nei dispositivi che eseguono un sistema operativo precedente a iOS 7.1 continueranno a funzionare e ad essere gestite da Intune.
     > 
     >  Se un utente finale disinstalla un'app distribuita come obbligatoria, Intune reinstallerà automaticamente l'app dopo il ciclo di inventario successivo. In genere l'inventario viene eseguito ogni 7 giorni.
 
@@ -94,17 +59,17 @@ Quando un dispositivo riceve due distribuzioni con la stessa azione di distribuz
 
 -   Le distribuzioni eseguite in un gruppo di dispositivi hanno la precedenza rispetto a quelle eseguite in un gruppo di utenti. Tuttavia, se un'applicazione viene distribuita in un gruppo di utenti con un'azione di distribuzione di **disponibile** e la stessa applicazione viene distribuita in un gruppo di dispositivi con un'azione di distribuzione di **non applicabile**, l'applicazione verrà reso disponibile nel portale aziendale agli utenti di installare.
 
--   Lo scopo dell'amministratore IT ha priorità rispetto a quello dell'utente.
-
 -   Un'azione di installazione ha la precedenza rispetto a un'azione di disinstallazione.
 
--   Se un dispositivo riceve sia un'installazione richiesta che un'installazione disponibile, le azioni vengono combinate (l'app è sia richiesta che disponibile).
+-   Se un dispositivo riceve sia un'installazione obbligatoria che una disponibile, le azioni vengono combinate e l'app è sia obbligatoria che disponibile. In altre parole, l'utente finale può installarla dal portale aziendale prima che inizi l'installazione obbligatoria.
 
 
 ## Passaggi successivi
 
 Informazioni su come [distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO3-->
 
 

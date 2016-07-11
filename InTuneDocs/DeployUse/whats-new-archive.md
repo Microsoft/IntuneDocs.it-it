@@ -1,40 +1,33 @@
 ---
-# required metadata
-
-title: Archivio novità | Microsoft Intune
-description:
-keywords:
+title: "Archivio novità | Microsoft Intune"
+description: 
+keywords: 
 author: Lindavr
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 051d06afb0f29f2a97c1f06dc1102138e5f2be8f
+
 
 ---
 
 
 ## Settembre 2015
 ### Aggiornamenti per la gestione di dispositivi mobili e app
-**Tutte le funzionalità di gestione iOS per Intune supportano ora iOS 9**
-Per informazioni dettagliate sulle funzionalità di gestione di iOS 9, vedere questo [post di blog](http://blogs.technet.com/b/microsoftintune/archive/2015/09/09/day-zero-support-for-ios-9-with-intune.aspx).
+**Tutte le funzionalità di gestione iOS per Intune ora supportano iOS 9** Per informazioni dettagliate sulle funzionalità di gestione di iOS 9, vedere [questo post di blog](http://blogs.technet.com/b/microsoftintune/archive/2015/09/09/day-zero-support-for-ios-9-with-intune.aspx).
 
-**Nuovi criteri di configurazione di app per dispositivi mobili per iOS**
-Usare i nuovi criteri di configurazione di app per dispositivi mobili per specificare automaticamente le impostazioni che possono essere utili a un'app per iOS quando viene eseguita. Ad esempio, è possibile specificare una porta di rete o un nome utente. Per informazioni dettagliate, vedere [Configurare le app con i criteri di configurazione delle app per dispositivi mobili in Microsoft Intune](https://technet.microsoft.com/library/mt481447.aspx).
+**Nuovi criteri di configurazione di app per dispositivi mobili per iOS** Usare i nuovi criteri di configurazione di app per dispositivi mobili per specificare automaticamente le impostazioni che possono essere utili a un'app per iOS quando viene eseguita. Ad esempio, è possibile specificare una porta di rete o un nome utente. Per informazioni dettagliate, vedere [Configurare le app con i criteri di configurazione delle app per dispositivi mobili in Microsoft Intune](https://technet.microsoft.com/library/mt481447.aspx).
 
-**Gestione delle app più semplice per gli utenti iOS 9**
+**Gestione di app semplificata per gli utenti di iOS 9**
  In questa versione è possibile fare in modo che le app già distribuite vengano gestite da Intune per gli utenti di iOS 9. Per le versioni precedenti di iOS, quando si distribuisce un'app e sul dispositivo è già installata una versione non gestita dell'applicazione, è necessario chiedere all'utente di disinstallare manualmente l'app prima che sia possibile installare le app gestite con Intune.
 
  Tuttavia, a partire da questa release di Intune, è possibile richiedere agli utenti dei dispositivi iOS 9 di consentire che Intune si occupi della gestione dell'app e applichi tutti i criteri di gestione delle applicazioni mobili pertinenti.
@@ -115,6 +108,7 @@ The following changes have been made to the company portal apps in this release.
 Microsoft automatically collects anonymous data about the performance and use of the company portal to improve Microsoft products and services. End users can turn off data collection by using the Usage Data setting on their device, but administrators have no control over the data collection and cannot change the end user’s selection for this setting.--->
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

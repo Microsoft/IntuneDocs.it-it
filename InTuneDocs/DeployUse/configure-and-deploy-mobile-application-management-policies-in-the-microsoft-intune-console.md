@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Configurare e distribuire i criteri di gestione delle applicazioni mobili nella console di Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+
 
 ---
 
@@ -34,7 +28,8 @@ I criteri di gestione delle applicazioni mobili supportano:
 
 -   Dispositivi che eseguono iOS 7 e versioni successive
 
-> [!TIP] I criteri di gestione delle applicazioni mobili supportano i dispositivi registrati con Intune.
+> [!TIP]
+> I criteri di gestione delle applicazioni mobili supportano i dispositivi registrati con Intune.
 >
 > Per informazioni su come creare criteri di gestione delle app per i dispositivi non gestiti da Intune, vedere [Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune).
 
@@ -46,9 +41,9 @@ Per applicare restrizioni a un'app, questa deve includere Microsoft Intune App S
 
 -   **Usare un'app di cui è stato eseguito il wrapping**: app che sono state riassemblate per includere App SDK usando lo **strumento di wrapping delle app di Microsoft Intune**. Questo strumento viene in genere usato per elaborare le app aziendali create internamente. Non può essere usato per elaborare le app state scaricate dall'App Store. Vedere [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app iOS per la gestione delle applicazioni mobili con lo strumento per la disposizione testo delle app di Microsoft Intune) e [Prepare Android apps for mobile application management with the Microsoft Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app Android per la gestione delle applicazioni mobili con lo strumento per la disposizione testo delle app di Microsoft Intune).
 
-- **Sviluppare una propria applicazione che includa Intune App SDK**: Intune App SDK consente di integrare funzionalità di gestione delle app in un'app in fase di sviluppo. Per altre informazioni, vedere [Intune App SDK Overview](/develop/intune-app-sdk) (Panoramica di Intune App SDK).
+- **Sviluppare una propria applicazione che includa Intune App SDK**: Intune App SDK consente di integrare funzionalità di gestione delle app in un'app in fase di sviluppo. Per altre informazioni, vedere [Panoramica di Intune App SDK Overview](/intune/develop/intune-app-sdk)
 
-Per informazioni sulla scelta tra lo strumento di wrapping delle app e Intune App SDK, vedere [Decide how to prepare apps for mobile application management with Microsoft Intune](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) (Decidere come preparare app per la gestione di applicazioni mobili con Microsoft Intune).
+Per informazioni sulla scelta tra lo strumento di wrapping delle app e Intune App SDK, vedere [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 Alcune app gestite, ad esempio l'app Outlook per iOS e Android supportano **più identità**. Ciò significa che Intune si applica solo le impostazioni di gestione di account aziendali o dati nell'applicazione.
 
@@ -60,7 +55,8 @@ Ad esempio, utilizzando Outlook app:
 
 -   L'account aziendale usato deve essere lo stesso account specificato durante la registrazione del dispositivo con Intune.
 
-> [!TIP] Se si usa Intune con Configuration Manager, vedere [Come controllare le app usando i criteri di gestione delle applicazioni mobili in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
+> [!TIP]
+> Se si usa Intune con Configuration Manager, vedere [Come controllare le app usando i criteri di gestione delle applicazioni mobili in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
 ## Creare e distribuire un'app con criterio di gestione delle applicazioni mobili
 
@@ -152,7 +148,8 @@ Distribuire l'app assicurandosi di selezionare i criteri di gestione delle appli
 
 Per i dettagli vedere [Distribuire app in Microsoft Intune](deploy-apps.md).
 
-> [!IMPORTANT] Per i dispositivi che eseguono sistemi operativi precedenti a iOS 7.1, i criteri associati non verranno rimossi quando si disinstalla l'app.
+> [!IMPORTANT]
+> Per i dispositivi che eseguono sistemi operativi precedenti a iOS 7.1, i criteri associati non verranno rimossi quando si disinstalla l'app.
 >
 > Se viene annullata la registrazione del dispositivo da Intune, i criteri non verranno rimossi dalle app. Tutte le app a cui erano stati applicati i criteri conserveranno le impostazioni dei criteri anche dopo la disinstallazione e reinstallazione dell'app.
 
@@ -163,7 +160,8 @@ In questo caso, è necessario chiedere all'utente di disinstallare manualmente l
 
 Tuttavia, per i dispositivi che eseguono iOS 9 e versioni successive, Intune chiederà automaticamente all'utente l'autorizzazione ad assumere la gestione dell'app esistente. Se l'utente accetta, l'app verrà gestita da Intune e verranno inoltre applicati tutti i criteri di gestione delle applicazione mobili associati all'app.
 
-> [!TIP] Se il dispositivo è in modalità di supervisione, Intune assumerà la gestione dell'app esistente senza chiedere l'autorizzazione all'utente.
+> [!TIP]
+> Se il dispositivo è in modalità di supervisione, Intune assumerà la gestione dell'app esistente senza chiedere agli utenti l'autorizzazione.
 
 ## **Passaggio 5:** Monitorare la distribuzione dell'app.
 Dopo aver creato e distribuito un'app associata ai criterio di gestione delle applicazioni mobili, usare le procedure seguenti per monitorare l'app e risolvere eventuali conflitti di criteri.
@@ -198,6 +196,7 @@ Nei casi in cui il dispositivo o l'utente riceva due criteri in conflitto, si ap
 -   Se al dispositivo non è stato ancora distribuito alcun criterio e vengono distribuite due impostazioni in conflitto, viene usata l'impostazione predefinita del dispositivo.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

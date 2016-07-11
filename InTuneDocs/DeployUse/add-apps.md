@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Aggiungere app | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f85e91b985d9d30c71dff9e0d910293354fc40b7
+ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
+
 
 ---
 
@@ -83,6 +76,32 @@ Le app basate su collegamenti esterni non sono archiviate nello spazio di archiv
 Consente di gestire e distribuire app iOS gratuite dall'App Store. Consente inoltre di associare i [criteri di gestione delle applicazioni mobili](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) con [app compatibili](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) e controllarne lo stato nella console di amministrazione.<br /><br />Le app iOS gestite non vengono archiviate nello spazio di memorizzazione cloud di Intune.
 > [!TIP] Le opzioni per i dispositivi mobili non sono disponibili finché non si [imposta l'autorità di gestione dei dispositivi mobili](get-ready-to-enroll-devices-in-microsoft-intune.md) in Intune.
 
+## Autore del software Intune
+**Autore del software Microsoft Intune** viene avviato quando si aggiungono o si modificano le app dalla console di amministrazione di Microsoft Intune. In Autore del software selezionare e configurare un tipo di installazione software che caricherà le app (programmi per computer o app per dispositivi mobili) da archiviare nell'archiviazione cloud di Intune oppure specificare un collegamento a uno store online o a un'applicazione Web.
+
+### Requisiti
+Prima di iniziare a usare Autore del software Microsoft Intune, è necessario installare la versione completa di [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). Dopo l'installazione, potrebbe essere necessario riavviare il computer per consentire la corretta apertura di Autore del software.
+
+## Spazio di archiviazione nel cloud
+Tutte le app create con il tipo di installazione del programma di installazione software, ad esempio una linea di app aziendali, vengono compresse e caricate nelle risorse di archiviazione cloud di Microsoft Intune. Una sottoscrizione di valutazione di Intune comprende 2 gigabyte (GB) di archiviazione nel cloud per l'archiviazione delle app gestite e degli aggiornamenti. Una sottoscrizione a pagamento comprende 20 GB, con l'opzione per l'acquisto di altro spazio di archiviazione.
+
+È possibile visualizzare la quantità di spazio usato e acquistare altro spazio di archiviazione nel nodo **Uso memoria** dell'area di lavoro **Amministratore**.
+
+Le regole seguenti si applicano all'acquisto di altro spazio di archiviazione nel cloud per Intune:
+
+-   È necessario un abbonamento a pagamento attivo per acquistare ulteriore memoria.
+
+-   Solo gli amministratori della fatturazione o gli amministratori globali di Microsoft Online Services possono acquistare spazio di archiviazione aggiuntivo tramite il portale di gestione di Office 365. Per aggiungere, eliminare o gestire gli amministratori, è necessario essere un amministratore globale e accedere al portale di gestione di Office 365.
+
+-   Per i clienti dei contratti multilicenza che hanno acquistato Intune o il componente aggiuntivo di Microsoft Intune attraverso il contratto aziendale, contattare il Microsoft Account Manager o il Microsoft Partner per informazioni sui prezzi e per acquistare memoria aggiuntiva.
+
+#### Requisiti di spazio di archiviazione nel cloud
+
+-   Verificare che tutti i file di installazione dell'app siano nella stessa cartella.
+
+-   Le dimensioni massime dei file caricati sono di 2 GB.
+
+
 ## Supporto per app della piattaforma UWP (Universal Windows Platform)
 Nei PC Windows 10 non è necessario disporre di una chiave di trasferimento locale per installare le app line-of-business. Tuttavia, la chiave del Registro di sistema **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** deve avere un valore pari a **1** per abilitare il sideload.
 
@@ -96,6 +115,8 @@ Nei dispositivi Windows 10 Mobile, è possibile usare un certificato di firma co
 
 In seguito sarà necessario aggiungere le app nella console di Intune prima di distribuirle. È possibile aggiungere app sia per i [dispositivi registrati](add-apps-for-mobile-devices-in-microsoft-intune.md) che per i [PC Windows gestiti con il software client di Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO3-->
 
 

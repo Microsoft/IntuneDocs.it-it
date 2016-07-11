@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Definizione dell'ambito | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9218b1f58032c07eddf84f04a667e2c56b5463ed
+ms.openlocfilehash: cf9b8bf9a07e4d5a29637fe52a0bfb6e0191478e
+
 
 ---
 
@@ -63,6 +57,14 @@ Questa sezione offre indicazioni sulle attività specifiche da eseguire in quest
 ### Pianificazione
 
 La maggior parte dell'impegno durante la fase di definizione dell'ambito ruota intorno alla pianificazione e alla preparazione. Quando si definisce l'ambito del progetto, è necessario tenere in considerazione i problemi di ordine tecnico e organizzativo, nonché la situazione corrente degli utenti e il tipo di cambiamento richiesto. È quindi opportuno avere chiaro in mente il quadro generale e l'obiettivo finale e definire quindi obiettivi specifici in fasi successive per tenere traccia del cambiamento.
+
+
+ > [!NOTE]
+ > 
+ > Quando si lavora sull'ambito del progetto, possono essere utili questi modelli:
+ > > - [Modello decisionale Intune o Intune con Configuration Manager](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+ > - [Modello di pianificazione per app mobili](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+>- [Modello di pianificazione generale di gestione dei dispositivi](https://gallery.technet.microsoft.com/General-device-management-334c3792)
 
 ### Supporto tecnico
 Affinché il personale di un'organizzazione possa trarre vantaggio da un'esperienza Intune produttiva, è necessario che il supporto tecnico sia adeguatamente preparato. Nel momento in cui si definisce l'ambito del progetto, è necessario considerare il ruolo giocato dal supporto tecnico in ogni fase nonché le risorse necessarie per garantire che il personale del supporto sia in grado di fornire assistenza agli utenti finali.
@@ -110,6 +112,7 @@ Ecco alcuni problemi che si possono verificare durante la fase di **definizione 
 [Modello di verifica](proof-of-concept.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

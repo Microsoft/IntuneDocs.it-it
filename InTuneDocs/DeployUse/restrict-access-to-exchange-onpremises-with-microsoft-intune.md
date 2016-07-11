@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Limitare l'accesso alla posta elettronica per Exchange locale e l'ambiente legacy Exchange Online dedicato | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 6bc85a0291fa62069ba6a0f63fdd9306db3c4195
+
 
 ---
 
@@ -75,7 +69,8 @@ L'immagine seguente illustra il flusso usato dai criteri di accesso condizionale
 -   App di posta elettronica nativa in iOS
 
 -   App di posta elettronica nativa in Android versione 4 o successiva
-> [!NOTE] L'app di Microsoft Outlook per Android e iOS non è supportata.
+> [!NOTE]
+> L'app Microsoft Outlook per Android e iOS non è supportata.
 
 ## Supporto per PC
 
@@ -104,7 +99,8 @@ L'applicazione **Posta elettronica** in Windows 8 e versioni successive (se regi
 >Se si intende bloccare tutti i dispositivi prima di concedere l'accesso alla posta elettronica, selezionare la regola per il blocco dell'accesso o la quarantena. La regola predefinita verrà applicata a tutti i tipi di dispositivo, quindi avrà effetto anche sui tipi configurati come eccezioni di piattaforma e che non sono supportati da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
   - **Notifica utente:** oltre al messaggio di posta elettronica di notifica inviato da Exchange, Intune invia un messaggio di posta elettronica che contiene i passaggi per sbloccare il dispositivo. È possibile modificare il messaggio predefinito per personalizzarlo in base alle proprie esigenze. Poiché il messaggio di posta elettronica di notifica di Intune contenente le istruzioni per la correzione viene recapitato alla cassetta postale di Exchange dell'utente, nel caso in cui il dispositivo dell'utente venga bloccato prima della ricezione del messaggio di posta elettronica, è possibile usare un dispositivo sbloccato o un altro metodo per accedere a Exchange e visualizzare il messaggio. Questa opzione è utile soprattutto quando la **regola predefinita** è impostata per il blocco o la quarantena.  In questo caso, l'utente finale dovrà passare al relativo archivio app, scaricare l'app Portale aziendale Microsoft e registrare il dispositivo. Questa opzione è disponibile per i dispositivi iOS, Windows e Samsung KNOX.  Per i dispositivi che non eseguono Samsung KNOX, è necessario inviare il messaggio di posta elettronica di quarantena a un account di posta elettronica alternativo, che quindi l'utente finale dovrà copiare nel dispositivo bloccato per completare la procedura di registrazione e conformità.
-  > [!NOTE] Affinché Exchange possa inviare il messaggio di posta elettronica di notifica, è necessario specificare l'account che verrà usato per inviare tale messaggio.
+  > [!NOTE]
+  > Affinché Exchange sia in grado di inviare il messaggio di posta elettronica di notifica, è necessario specificare l'account che verrà usato per inviare tale messaggio.
   >
   > Per informazioni dettagliate, vedere [Install the Intune on-premises Exchange Connector](intune-on-premises-exchange-connector.md) (Installare On-premises Exchange Connector).
 
@@ -126,6 +122,7 @@ L'applicazione **Posta elettronica** in Windows 8 e versioni successive (se regi
 [Limitare l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

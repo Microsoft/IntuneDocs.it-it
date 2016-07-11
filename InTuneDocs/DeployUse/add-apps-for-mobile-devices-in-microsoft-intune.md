@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Aggiungere app per dispositivi mobili | Microsoft Intune
-description:
-keywords:
+title: Aggiungere app per dispositivi registrati | Microsoft Intune
+description: "Prima di distribuire un'app è necessario aggiungerla a Intune. L'app sarà quindi disponibile nella console di Intune, in cui è possibile distribuirla e gestirla."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 795843f012434e1a50cd6abab05b6af2c811cf3e
+
 
 ---
 
-# Aggiungere app per dispositivi mobili in Microsoft Intune
+# Aggiungere app per dispositivi registrati in Intune
 
-Usare le informazioni in questo argomento per informazioni su come aggiungere app a Intune prima di distribuirle.
+Prima di distribuire o gestire un'app è necessario aggiungerla a Microsoft Intune. In questo argomento viene illustrato come aggiungere app per dispositivi registrati.
 
 
 > [!IMPORTANT]
@@ -36,14 +29,15 @@ Usare le informazioni in questo argomento per informazioni su come aggiungere ap
 ## Aggiungere l'app
 Usare l'Autore del software Intune per configurare le proprietà dell'app e, se necessario, caricarla nello spazio di archiviazione cloud usando la procedura seguente:
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **App** &gt; **Aggiungi app** per avviare l'autore del software Intune.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **App** &gt; **Aggiungi app** per avviare l'autore del software Intune.
 
-    > [!TIP] Per avviare questa funzionalità, potrebbe essere necessario immettere il nome utente e la password di Intune.
+    > [!TIP]
+    > Per avviare questa funzionalità, potrebbe essere necessario immettere il nome utente e la password di Intune.
 
 2.  Nella pagina **Installazione software** dell'autore del software, scegliere una delle opzioni seguenti per **Selezionare il modo in cui questo software viene fornito ai dispositivi**:
     - **Programma di installazione software**, per le applicazioni con l'estensione **msi** o **exe** specificare:
         - **Selezionare il tipo di file del programma di installazione software**: indica il tipo di software che si vuole distribuire. Ad esempio, per installare un'app iOS scegliere **Pacchetto app iOS (file &#42;.ipa)**.
-        - **Specificare il percorso dei file di installazione software**: immettere il percorso dei file di installazione o fare clic su **Sfoglia** per selezionare il percorso da un elenco.
+        - **Specificare il percorso dei file di installazione software**: immettere il percorso dei file di installazione o scegliere **Sfoglia** per selezionare il percorso da un elenco.
         - **Includi sottocartelle e file aggiuntivi dalla stessa cartella**: soltanto per il tipo di file **Windows Installer**.<br>Alcuni software che usano Windows Installer richiedono file di supporto, che in genere si trovano nella stessa cartella dei file di installazione. Selezionare questa opzione se si vogliono distribuire anche questi file.<br>Questo tipo di installazione usa parte dello spazio di archiviazione cloud.
 
   -   **Collegamento esterno** per le app da creare specificando un collegamento a un app store, specificare:
@@ -64,7 +58,8 @@ Usare l'Autore del software Intune per configurare le proprietà dell'app e, se 
 
 3.  Nella pagina **Descrizione software** configurare gli elementi seguenti:
 
-    > [!TIP] In base al tipo di programma di installazione in uso, è possibile che alcuni valori siano stati immessi automaticamente.
+    > [!TIP]
+    > A seconda del tipo di programma di installazione in uso, è possibile che alcuni valori siano stati immessi automaticamente.
 
     - **Autore**: immettere il nome dell'autore dell'app.
     - **Nome**: immettere il nome dell'app che verrà visualizzato nel portale aziendale.<br>Assicurarsi che tutti i nomi di app usati siano univoci. Se il nome di un'app è usato due volte, solo una delle due app verrà visualizzata agli utenti nel portale aziendale.
@@ -81,13 +76,14 @@ Usare l'Autore del software Intune per configurare le proprietà dell'app e, se 
 
 4.  Nella pagina **Requisiti** selezionare i requisiti che devono essere soddisfatti prima di poter avviare l'installazione dell'app in un dispositivo. Ad esempio, per un pacchetto di app per iOS è possibile selezionare la versione minima di iOS necessaria e il tipo di dispositivo deve essere simile a un iPhone o un iPad.
 
-    > [!TIP] La pagina **Requisiti** non viene visualizzata per tutti i tipi di app.
+    > [!TIP]
+    > La pagina **Requisiti** non viene visualizzata per tutti i tipi di app.
 
 5.  Quando si sceglie il tipo di file **Windows Installer**, vengono visualizzate altre pagine della procedura guidata. Questo tipo di file viene usato quando si distribuisce il software a computer con Windows 10 o versioni successive registrati con Intune.
 
-6.  Nella pagina **Riepilogo** verificare le informazioni specificate. Al termine, fare clic su **Carica**.
+6.  Nella pagina **Riepilogo** verificare le informazioni specificate. Al termine, scegliere **Carica**.
 
-7.  Fare clic su **Chiudi** per completare la procedura.
+7.  Scegliere **Chiudi** per completare la procedura.
 
 L'app viene visualizzata nel nodo **App** dell'area di lavoro **App**.
 
@@ -106,6 +102,7 @@ Il passaggio successivo alla creazione di un'app è la sua distribuzione. Per al
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

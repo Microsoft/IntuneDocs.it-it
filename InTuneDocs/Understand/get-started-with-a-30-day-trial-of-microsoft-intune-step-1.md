@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Iscriversi per una valutazione di 30 giorni di Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fe1587bead9e4cd350f5ffcf925fe04afd824ea0
+ms.openlocfilehash: f97b619d2b82556685cf0e247700d1fd8c8d4369
+
 
 ---
 
@@ -41,11 +35,11 @@ Prima di iscriversi o accedere a Intune, è opportuno verificare:
 
 |Iscriversi per ottenere un NUOVO account in presenza di una delle condizioni seguenti:|Accedere con l'account AZIENDALE o dell'ISTITUTO DI ISTRUZIONE se:|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**Non si dispone di un account aziendale o dell'istituto di istruzione.** Si tratta dell'account che viene fornito quando si sottoscrive un contratto multilicenza con Microsoft o si effettua la sottoscrizione a Office 365. Se l'organizzazione non ha sottoscritto un contratto Enterprise o un contratto multilicenza Microsoft equivalente (oppure ha un account Office 365), non si dispone di un account Microsoft Online Services che è possibile usare per accedere a Microsoft Online Services.<br /><br />**Si intende eliminare il tenant di Intune alla scadenza dei 30 giorni di valutazione.** È consigliabile effettuare l'iscrizione per un nuovo account se si usa la sottoscrizione gratuita a Intune solo a scopo di valutazione e si intende ripetere la configurazione del servizio Intune e il provisioning dei dispositivi al termine del periodo di prova. Si tratta dell'opzione consigliata se si prevede di usare Intune con System Center 2012 Configuration Manager.<br /><br />Se si esegue l'iscrizione per un nuovo account, non è più possibile usare successivamente un account aziendale o dell'istituto di istruzione già esistente per gestire l'account, oppure aggiungerlo ai contratti multilicenza esistenti.|**Si dispone di un account aziendale o dell'istituto di istruzione specificato da un contratto multilicenza o da una sottoscrizione Office 365 e si usa questa versione di prova per valutare Intune.**<br /><br />Se si configura Intune in un account esistente, è consigliabile rileggere [Choose how to manage devices](choose-how-to-manage-devices.md) (Scegliere come gestire i dispositivi) prima di continuare con questa procedura.|
+|**Non si dispone di un account aziendale o dell'istituto di istruzione.** Si tratta dell'account che viene fornito quando si sottoscrive un contratto multilicenza con Microsoft o si effettua la sottoscrizione a Office 365. Se l'organizzazione non ha sottoscritto un contratto Enterprise o un contratto multilicenza Microsoft equivalente (oppure ha un account Office 365), non si dispone di un account Microsoft Online Services che è possibile usare per accedere a Microsoft Online Services.<br /><br />**Si intende eliminare il tenant di Intune alla scadenza dei 30 giorni di valutazione.** È consigliabile effettuare l'iscrizione per un nuovo account se si usa la sottoscrizione gratuita a Intune solo a scopo di valutazione e si intende ripetere la configurazione del servizio Intune e il provisioning dei dispositivi al termine del periodo di prova. Si tratta dell'opzione consigliata se si prevede di usare Intune con System Center 2012 Configuration Manager.<br /><br />Se si esegue l'iscrizione per un nuovo account, non è più possibile usare successivamente un account aziendale o dell'istituto di istruzione già esistente per gestire l'account, oppure aggiungerlo ai contratti multilicenza esistenti.|**Si dispone di un account aziendale o dell'istituto di istruzione specificato da un contratto multilicenza o da una sottoscrizione Office 365 e si usa questa versione di prova per valutare Intune.**<br /><br />Se si configura Intune per un account esistente, è consigliabile leggere [Scegliere come gestire i dispositivi](/intune/get-started/choose-how-to-manage-devices) prima di continuare con questa procedura.|
 
 ## Iscriversi o accedere a Intune
 
-1.  Per prima cosa, [fare clic qui per visitare la pagina di iscrizione di Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+1.  Per prima cosa [fare clic qui per visitare la pagina di iscrizione di Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
 2.  Nella pagina **Iscrizione** sono disponibili due opzioni:
 
@@ -63,9 +57,10 @@ A questo punto, il passaggio 1 della procedura di *valutazione di Microsoft Intu
 
 >[!div class="step-by-step"]
 
->[&larr; **Introduzione**](.\get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Aggiungi utenti** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
+>[&larr; **Introduzione**](get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**Aggiungi utenti** &rarr;](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 
