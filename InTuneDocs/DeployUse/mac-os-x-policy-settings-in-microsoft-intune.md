@@ -121,6 +121,6 @@ Il file del profilo di configurazione usato dai criteri personalizzati può esse
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
