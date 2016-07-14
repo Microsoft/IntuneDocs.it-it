@@ -46,6 +46,7 @@ Nella schermata seguente è possibile visualizzare due chiari esempi:
 
 ![Criteri dei dispositivi Intune](../media/Intune-Device-Policy-v.2.jpg)
 
+> [!NOTE]
 > [!NOTE] Tenere presente che quando due criteri con livelli di restrizione diversi vengono applicati allo stesso dispositivo o utente, viene di fatto applicato il criterio più restrittivo.
 
 ## Intervalli di aggiornamento dei criteri
@@ -68,6 +69,7 @@ Per i dispositivi Windows non MDM, gli errori dei criteri nel file policyplatfor
 
 2.  Attendere 20 minuti che il software client venga rimosso.
 
+    > [!NOTE]
     > [!NOTE] Non provare a rimuovere il client da Programmi e funzionalità.
 
 3.  Nel menu Start digitare **Controllo account utente** per aprire le impostazioni di Controllo dell'account utente.
@@ -110,6 +112,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

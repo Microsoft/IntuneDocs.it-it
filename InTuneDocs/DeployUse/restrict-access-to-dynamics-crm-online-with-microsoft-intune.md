@@ -54,8 +54,10 @@ Se un utente si trova in entrambi i gruppi, sarà esentato dai criteri.
 ### Passaggio 2: Configurare e distribuire i criteri di conformità
 [Creare](create-a-device-compliance-policy-in-microsoft-intune.md) e [distribuire](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) i criteri di conformità a tutti i dispositivi interessati dai criteri, ossia tutti i dispositivi usati dagli utenti nei Gruppi di destinazione.
 
+> [!NOTE]
 > [!NOTE] Mentre i criteri di conformità vengono distribuiti nei gruppi di Microsoft Intune, i criteri di accesso condizionale sono destinati ai gruppi di sicurezza di Azure Active Directory.
 
+> [!IMPORTANT]
 > [!IMPORTANT] Se i criteri di conformità non sono stati distribuiti, i dispositivi verranno considerati conformi.
 
 Quando si è pronti, continuare con il Passaggio 3.
@@ -94,6 +96,6 @@ Selezionare un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Di
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

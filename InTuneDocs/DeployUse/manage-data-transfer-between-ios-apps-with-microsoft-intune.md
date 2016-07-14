@@ -74,6 +74,6 @@ Questa configurazione è necessaria per i dispositivi gestiti da una soluzione M
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
