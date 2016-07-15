@@ -2333,9 +2333,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\manage-volume-purchased-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/fee8b9bc1203d90416a1cbfbc3f73994f5a3caa2/InTuneDocs/DeployUse/manage-volume-purchased-apps-in-microsoft-intune.md)
-* Current Handback File: [manage-volume-purchased-apps-in-microsoft-intune.06bd52c572fe69cef96b5cc2df67949249b54aa7.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/a8582a559ac78d8fc66db60e03aab4b91d77d78e/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/manage-volume-purchased-apps-in-microsoft-intune.06bd52c572fe69cef96b5cc2df67949249b54aa7.it-it.xlf)
-* Current Handback Datetime: 2016-07-02 09:53:34
+* Current Target File: [InTuneDocs\DeployUse\manage-volume-purchased-apps-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/63af6e231dd33f8a86a7216689ddc525e39c003d/InTuneDocs/DeployUse/manage-volume-purchased-apps-in-microsoft-intune.md)
+* Current Handback File: [manage-volume-purchased-apps-in-microsoft-intune.06bd52c572fe69cef96b5cc2df67949249b54aa7.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/566d02df8a2c9dadc0cc3fc24dd530fa40a45652/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/manage-volume-purchased-apps-in-microsoft-intune.06bd52c572fe69cef96b5cc2df67949249b54aa7.it-it.xlf)
+* Current Handback Datetime: 2016-07-15 02:16:45
 * [Back to Top](#report-top)
 
 ##### <a name='d22714f7b6eda1632892785568463fc5bafce8d073'></a> Source: [InTuneDocs\DeployUse\manage-windows-pcs-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/e09381bbcf073baa67a431546059272e629b5423/InTuneDocs/DeployUse/manage-windows-pcs-with-microsoft-intune.md)
@@ -8560,9 +8560,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\GetStarted\windows-pc-management-capabilities-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/e6aae09fc6ec87d3d16f7070ec23244b5fba800c/InTuneDocs/GetStarted/windows-pc-management-capabilities-in-microsoft-intune.md)
-* Current Handback File: [windows-pc-management-capabilities-in-microsoft-intune.5d72362a97c85e296cfd1356fddc5f1e46b2226a.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/d6c5f4c6823a81951631766bc5ddc90791f3661e/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/windows-pc-management-capabilities-in-microsoft-intune.5d72362a97c85e296cfd1356fddc5f1e46b2226a.it-it.xlf)
-* Current Handback Datetime: 2016-07-11 20:24:59
+* Current Target File: [InTuneDocs\GetStarted\windows-pc-management-capabilities-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/63af6e231dd33f8a86a7216689ddc525e39c003d/InTuneDocs/GetStarted/windows-pc-management-capabilities-in-microsoft-intune.md)
+* Current Handback File: [windows-pc-management-capabilities-in-microsoft-intune.5d72362a97c85e296cfd1356fddc5f1e46b2226a.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/566d02df8a2c9dadc0cc3fc24dd530fa40a45652/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/windows-pc-management-capabilities-in-microsoft-intune.5d72362a97c85e296cfd1356fddc5f1e46b2226a.it-it.xlf)
+* Current Handback Datetime: 2016-07-15 02:16:45
 * [Back to Top](#report-top)
 
 ##### <a name='1f04ca268c5fc8669102a61ce243d107f7f2cce5542'></a> Source: [InTuneDocs\includes\accessibility1.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/accessibility1.md)
@@ -9290,14 +9290,14 @@
 
 ##### <a name='d9fdbbe0d10fcd31299c021749df2ea6dc55d199602'></a> Source: [InTuneDocs\includes\Intune-feedback-footer.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/Intune-feedback-footer.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\Intune-feedback-footer.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/e6aae09fc6ec87d3d16f7070ec23244b5fba800c/InTuneDocs/includes/Intune-feedback-footer.md)
+* Target File: [InTuneDocs\includes\Intune-feedback-footer.md](https://github.com/Microsoft/IntuneDocs-pr.it-it/blob/63af6e231dd33f8a86a7216689ddc525e39c003d/InTuneDocs/includes/Intune-feedback-footer.md)
 * Handoff File: [Intune-feedback-footer.6580943518725335d66e2348211621034020e145.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/bb8bb5b55c525daadcbc67df00caac1cd0effccf/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/Intune-feedback-footer.6580943518725335d66e2348211621034020e145.it-it.xlf)
 * Handoff Datetime: 2016-06-27 11:01:18
 * Handoff Reason: Include
 * Archive File: [Intune-feedback-footer.6580943518725335d66e2348211621034020e145.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/1782b02b8d539a4df1456fdc5afe6ed09a574d3a/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/archive/Intune-feedback-footer.6580943518725335d66e2348211621034020e145.it-it.xlf)
 * Archive Datetime: 2016-07-02 01:12:33
-* Handback File: [Intune-feedback-footer.6580943518725335d66e2348211621034020e145.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/d6c5f4c6823a81951631766bc5ddc90791f3661e/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/Intune-feedback-footer.6580943518725335d66e2348211621034020e145.it-it.xlf)
-* Handback Datetime: 2016-07-11 20:24:59
+* Handback File: [Intune-feedback-footer.6580943518725335d66e2348211621034020e145.it-it.xlf](https://github.com/Microsoft/EM.handback/blob/566d02df8a2c9dadc0cc3fc24dd530fa40a45652/ol-handback/Microsoft/IntuneDocs-pr.it-it/master/Intune-feedback-footer.6580943518725335d66e2348211621034020e145.it-it.xlf)
+* Handback Datetime: 2016-07-15 02:16:45
 * [Back to Top](#report-top)
 
 ##### <a name='7541052b56e8a04bca42cc6721a4f92814f8db96603'></a> Source: [InTuneDocs\includes\longhornshort.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/longhornshort.md)
