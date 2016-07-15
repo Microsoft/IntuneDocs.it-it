@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\EndUser\how-to-encrypt-your-windows-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/how-to-encrypt-your-windows-device.md) | HandedBackFailed | [Details](#7dae811f0085a9907c5939b66fa2431e64ab51e1299)
 
 ## Item Details
-##### <a name='7dae811f0085a9907c5939b66fa2431e64ab51e1299'></a> Source: [InTuneDocs\EndUser\how-to-encrypt-your-windows-device.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ea35d0222f33a0babb8bdc4fb30f0f5a405214a2/InTuneDocs/EndUser/how-to-encrypt-your-windows-device.md)
-* Status: HandedBackFailed
-* Target File: 
-* Handoff File: [how-to-encrypt-your-windows-device.814dd6aedce31481d6795284d96c32a4fa24a65a.it-it.xlf](https://github.com/Microsoft/EM.handoff/blob/da3d0677c4d7d0312a83b1bb9049189c091099e1/ol-handoff/Microsoft/IntuneDocs-pr.it-it/master/how-to-encrypt-your-windows-device.814dd6aedce31481d6795284d96c32a4fa24a65a.it-it.xlf)
-* Handoff Datetime: 2016-07-13 21:42:40
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
