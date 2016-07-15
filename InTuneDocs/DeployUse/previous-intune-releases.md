@@ -420,10 +420,10 @@ In questa versione sono state apportate le seguenti modifiche alle app del porta
 
 >[!div class="step-by-step"]
 
->[&larr; **Novità in Intune**](whats-new-in-microsoft-intune.md)    
+>[&larr; **[!div class="step-by-step"]**](whats-new-in-microsoft-intune.md)    
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO1-->
 
 

@@ -33,6 +33,6 @@ Questi dispositivi e PC possono essere gestiti anche se non sono stati aggiunti 
 [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 
