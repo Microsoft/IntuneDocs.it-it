@@ -28,6 +28,7 @@ Quando si distribuiscono le app, è possibile scegliere una delle seguenti azion
 
 -   **Installazione richiesta**: l'app viene installata nel dispositivo senza alcun intervento da parte dell'utente finale.
 
+    > [!TIP]
     > [!TIP] Per i dispositivi iOS non in modalità di supervisione e per tutti i dispositivi Android l'utente deve accettare l'offerta per l'app prima di installare l'app.
     > 
     >  Se un utente finale disinstalla un'app distribuita come obbligatoria, Intune reinstallerà automaticamente l'app dopo il ciclo di inventario successivo. In genere l'inventario viene eseguito ogni 7 giorni.
@@ -52,6 +53,7 @@ Quando si distribuiscono le app, è possibile scegliere una delle seguenti azion
 |Collegamento esterno (distribuito in un gruppo di dispositivi)|No|No|No|No|
 |App iOS gestita dall'App Store (distribuita in un gruppo di utenti)|Sì|Sì|Sì|Sì|
 |App iOS gestita dall'App Store (distribuita in un gruppo di dispositivi)|Sì|No|Sì|sì|
+> [!TIP]
 > [!TIP] Quando si distribuiscono le app, se si selezionano gruppi sia di utenti che di dispositivi, è possibile distribuire l'app soltanto come **Installazione disponibile**.
 
 ## Conflitti di distribuzione
@@ -70,6 +72,6 @@ Informazioni su come [distribuire app in Microsoft Intune](deploy-apps-in-micros
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
