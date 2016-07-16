@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Panoramica dei cicli di vita del dispositivo e dell'app | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d83f8ea2fa116ca6f1dbf96370c837ca6581d0b
+ms.openlocfilehash: d1912736361a9fa74a8827be367227336ee800eb
+
 
 ---
 
@@ -36,6 +30,7 @@ Ai fini della gestione, tutti i dispositivi hanno un ciclo di vita, dalla regist
 Analogamente, le app usate hanno un proprio [ciclo di vita dell'app](overview-of-app-lifecycle-in-microsoft-intune.md) che include vari passaggi, dall'aggiunta di un'app a Intune fino alla rimozione quando non sono più necessarie.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

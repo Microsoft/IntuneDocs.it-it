@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Configurare la gestione dei dispositivi Windows con Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
+ms.openlocfilehash: c18445385e8361cf01948b583f08e992658a8762
+
 
 ---
 
@@ -39,20 +33,21 @@ La creazione di DNS CNAME consente agli utenti di connettersi e registrarsi in I
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 ora|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 ora|
 
-    DNS record changes might take up to 72 hours to propagate. You cannot verify the DNS change in Intune until the DNS record propagates.
+    La propagazione delle modifiche ai record DNS potrebbe richiedere fino a 72 ore. È impossibile verificare la modifica DNS in Intune fino a quando il record DNS non sia stato propagato.
 
-    **EnterpriseEnrollment-s.manage.microsoft.com** – Supports a redirect to the Intune service with domain recognition from the email’s domain name
+    **EnterpriseEnrollment-s.manage.microsoft.com**: supporta un reindirizzamento al servizio Intune con riconoscimento del dominio dal nome di dominio del messaggio di posta elettronica
 
-    **EnterpriseRegistration.windows.net** – Supports Windows 8.1 and Windows 10 Mobile devices that will register with Azure Active Directory using their work or school account
+    **EnterpriseRegistration.windows.net**: supporta i dispositivi Windows 8.1 e Windows 10 Mobile che verranno registrati con Azure Active Directory tramite account aziendale o dell'istituto di istruzione
 
-  2.  Nella [console di amministrazione di Intune](http://manage.microsoft.com), fare clic su **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **Windows**.
+  2.  Nella [console di amministrazione di Intune](http://manage.microsoft.com) fare clic su **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **Windows**.
   ![Finestra di dialogo della gestione dei dispositivi Windows](../media/enroll-intune-winenr.png)
-  3.  Digitare l'URL del dominio verificato del sito Web aziendale nella casella **Specificare un nome di dominio verificato** e fare clic su **Verifica il rilevamento automatico**.
+  3.  Digitare l'URL del dominio verificato del sito Web della società nella casella **Specificare un nome di dominio verificato** e fare clic su **Verifica il rilevamento automatico**.
 
 ### Vedere anche
 [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

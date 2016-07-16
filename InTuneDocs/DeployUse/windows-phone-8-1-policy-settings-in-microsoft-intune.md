@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Impostazioni dei criteri di Windows Phone 8.1 | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
+ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
+
 
 ---
 
@@ -127,7 +121,8 @@ Nell'elenco **app conformi &amp; e non conformi** specificare un elenco di app c
 |**Importa app**|Importa un elenco di app specificate in un file con valori delimitati da virgole. Per il file usare il formato nome applicazione, autore, URL.|
 |**Modifica**|Consente di modificare il nome, l'autore e l'URL dell'app selezionata.|
 |**Eliminazione**|Elimina l'app selezionata dall'elenco.|
-> [!IMPORTANT] Se si specifica un elenco di applicazioni consentite per i dispositivi Windows Phone 8.1, è necessario aggiungere l'app Portale aziendale a questo elenco, altrimenti verrà bloccata.
+> [!IMPORTANT]
+> Se si specifica un elenco di applicazioni consentite per i dispositivi Windows Phone 8.1, è necessario aggiungere l'app portale aziendale a questo elenco, altrimenti verrà bloccato.
 
 
 ### Informazioni di riferimento per le app conformi e non conformi
@@ -174,6 +169,7 @@ Nella finestra di dialogo **Aggiungi o modifica impostazione URI OMA** specifica
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

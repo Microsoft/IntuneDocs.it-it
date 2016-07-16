@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
 ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
 
@@ -41,7 +42,8 @@ Questa autorità definisce il servizio di gestione con le autorizzazioni per la 
 
 Il Portale aziendale di Intune è il punto in cui gli utenti possono accedere ai dati aziendali ed eseguire attività comuni quali la registrazione dei dispositivi, l'installazione di app e la ricerca delle informazioni di assistenza del reparto IT.
 
-> [!TIP] Quando si personalizza il portale aziendale, le configurazioni vengono applicate sia al sito Web che alle app Portale aziendale.
+> [!TIP]
+> Quando si personalizza il portale aziendale, le configurazioni vengono applicate sia al sito Web che alle app Portale aziendale.
 
 La personalizzazione del portale aziendale consente di offrire agli utenti finali un'esperienza familiare e utile. A tale scopo, accedere alla [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) come amministratore tenant o del servizio, scegliere **Amministrazione** &gt; **Portale aziendale** e configurare le impostazioni del Portale aziendale.
 
@@ -107,6 +109,6 @@ Dopo aver impostato l'autorità MDM, è necessario impostare la gestione dei dis
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jul16_HO1-->
 
 

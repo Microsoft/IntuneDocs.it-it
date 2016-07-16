@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 95abe7b12e68755f3c95f91888efd3e85c057119
 ms.openlocfilehash: b55cf263611d6e90805cad9985eb8a5e7ebeb4a0
 
@@ -159,6 +160,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

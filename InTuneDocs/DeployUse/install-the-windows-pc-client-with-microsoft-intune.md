@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Installare il client PC Windows con Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
+ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+
 
 ---
 
@@ -46,7 +40,7 @@ Quindi usare uno o più dei seguenti metodi per installare il client:
 
 -   [Installare il software client Microsoft Intune come parte di un'immagine](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
-Se non è più necessario gestire un computer con Intune, è possibile disattivarlo. Durante l'operazione verrà rimosso dal computer anche il software client. Per altre informazioni, vedere [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) (Attività comuni di gestione di PC Windows con client di Microsoft Intune).
+Se non è più necessario gestire un computer con Intune, è possibile disattivarlo. Durante l'operazione verrà rimosso dal computer anche il software client. Per altre informazioni, vedere [Attività comuni di gestione di PC Windows con client di Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 ### Per scaricare il software client
 
@@ -104,11 +98,11 @@ Gli utenti possono registrare autonomamente i propri computer tramite il portale
 
 2.  Fare clic su **Aggiungi dispositivo**.
 
-3.  Fare clic sul pulsante **Scarica software**, quindi scegliere **Esegui**.
+3.  Fare clic sul pulsante **Scarica software** , quindi scegliere **Esegui**.
 
 4.  Fare clic su **Avanti** per avviare l'installazione guidata di Microsoft Intune.
 
-5.  Quando l'installazione guidata è stata completata, fare clic su **Fine**..
+5.  Quando l'installazione guidata è stata completata, fare clic su **Fine**.
 
 ### Installare il software client Microsoft Intune come parte di un'immagine
 Il software client di Intune può essere distribuito nei computer come parte di un'immagine del sistema operativo usando la seguente procedura di esempio come base:
@@ -155,7 +149,7 @@ Usare una delle seguenti procedure per controllare e convalidare la distribuzion
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) fare clic su **Report** &gt; **Report inventario computer**.
 
-2.  Nella pagina **Crea nuovo report** lasciare i valori predefiniti in tutti i campi, a meno che non si voglia applicare i filtri, e fare clic su **Visualizza report**.
+2.  Nella pagina **Crea nuovo report** lasciare i valori predefiniti in tutti i campi (a meno che non si desideri applicare i filtri) e fare clic su **Visualizza report**.
 
 3.  In una nuova finestra viene aperta la pagina **Report inventario computer** che consente di visualizzare tutti i computer che sono stati registrati in Intune.
 
@@ -167,6 +161,7 @@ Usare una delle seguenti procedure per controllare e convalidare la distribuzion
 [Gestire i PC Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

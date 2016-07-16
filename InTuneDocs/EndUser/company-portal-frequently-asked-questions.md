@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
 ms.openlocfilehash: 56edeafa9221b3574ceaba269891dfb92df44408
 
@@ -102,6 +103,6 @@ Per assistenza, contattare l'amministratore IT. Per informazioni sul contatto ve
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

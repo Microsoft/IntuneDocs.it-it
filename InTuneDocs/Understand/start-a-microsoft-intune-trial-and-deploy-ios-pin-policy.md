@@ -1,32 +1,26 @@
 ---
-# required metadata
-
 title: Avviare una versione di valutazione di Microsoft Intune e distribuire criteri PIN di iOS | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
+ms.openlocfilehash: 6787d0c35621b2bc94bfe376dfd1669e9dfe46db
+
 
 ---
 
 # Avviare una versione di valutazione di Microsoft Intune e distribuire criteri PIN di iOS
-Queste istruzioni dettagliate permettono di installare una versione di valutazione di Intune e configurare un criterio PIN per i dispositivi iOS. Per un elenco di altre comuni attività di valutazione di Intune da poter provare, vedere l'articolo relativo alle [attività comuni di valutazione di Microsoft Intune](common-microsoft-intune-evaluation-tasks.md).
+Queste istruzioni dettagliate permettono di installare una versione di valutazione di Intune e configurare un criterio PIN per i dispositivi iOS. Per un elenco di altre comuni attività di valutazione di Intune da provare, vedere [Attività comuni di valutazione di Intune](common-microsoft-intune-evaluation-tasks.md).
 
 
 
@@ -46,7 +40,7 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
     ![Avviare InPrivate Browsing](../media/30-day-trial-walkthrus/30day-start-trial-1-InPrivate.png)
 
-2.  Andare al [portale di registrazione di Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1), fornire le informazioni richieste e fare clic su **Avanti**.
+2.  Passare al [portale di iscrizione a Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1), fornire le informazioni richieste e fare clic su **Avanti**.
 
     ![Registrarsi per un account](../media/30-day-trial-walkthrus/30day-start-trial-2-abt-you.png)
 
@@ -58,7 +52,7 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
     ![Convalidare i dettagli](../media/30-day-trial-walkthrus/30day-start-trial-4-textme.png)
 
-5.  Salvare le informazioni visualizzate sullo schermo, quindi fare clic su **Pronto per iniziare...**.
+5.  Salvare le informazioni visualizzate sullo schermo e quindi fare clic su **È possibile continuare**.
 
     ![Continuare](../media/30-day-trial-walkthrus/30day-start-trial-5-ReadyToGo.png)
 
@@ -80,7 +74,7 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
     3.  Deselezionare la casella di controllo **Chiedere all'utente di cambiare la password al primo accesso**.
 
-    4.  Fare clic su **Crea**.
+    4.  Scegliere **Crea**.
 
     ![Creare un nuovo account utente](../media/30-day-trial-walkthrus/30day-crt-user-8-add-user-info.png)
 
@@ -126,19 +120,19 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
         ![Accedere al portale Apple Push Certificates](../media/30-day-trial-walkthrus/30day-cfg-pol-17-id-passw-signin.png)
 
-    6.  Fare clic su **Create a Certificate** (Crea un certificato).
+    6.  Fare clic su **Create a Certificate**.
 
         ![Creare un certificato APN](../media/30-day-trial-walkthrus/30day-cfg-pol-18-create-cert.png)
 
-    7.  Leggere le condizioni per l'utilizzo di Apple, selezionare la casella di controllo e fare clic su **Accept** (Accetta).
+    7.  Leggere le Condizioni per l'utilizzo di Apple, selezionare la casella di controllo e fare clic su **Accept**.
 
         ![Accettare le condizioni](../media/30-day-trial-walkthrus/30day-cfg-pol-19-TOU.png)
 
-    8.  Fare clic su **Browse** (Sfoglia).
+    8.  Fare clic su **Browse**.
 
         ![Individuare la posizione in cui è stato salvato il certificato](../media/30-day-trial-walkthrus/30day-cfg-pol-20-browse.png)
 
-    9. Selezionare il file con estensione csr salvato prima e fare clic su **Apri**.
+    9. Selezionare il file CSR salvato in precedenza e fare clic su **Open**.
 
         ![Aprire il certificato](../media/30-day-trial-walkthrus/30day-cfg-pol-21-CSRfile-open.png)
 
@@ -146,31 +140,31 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
         ![Caricare il certificato](../media/30-day-trial-walkthrus/30day-cfg-pol-22-upld-reqst.png)
 
-    11. Quando viene richiesto di scaricare un file con estensione json, fare clic su **Salva con nome**.
+    11. Quando viene richiesto di sovrascrivere un file JSON, fare clic su **Save**.
 
         ![Salvare il file con estensione json](../media/30-day-trial-walkthrus/30day-cfg-pol-23-json-saveas.png)
 
-    12. Specificare un percorso per il file con estensione json e fare clic su **Salva**.
+    12. Specificare un percorso per il file JSON e fare clic su **Save**.
 
         ![Specificare dove salvare il file con estensione json](../media/30-day-trial-walkthrus/30day-cfg-pol-24-json-save-loc.png)
 
-        Se la pagina non viene reindirizzata automaticamente dopo alcuni secondi, fare clic su **Cancel** (Annulla).
+        Se la pagina non reindirizza automaticamente dopo alcuni secondi, fare clic su **Cancel**.
 
         ![Annullare se la pagina non viene reindirizzata](../media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png)
 
-    13. Per recuperare il file del certificato appena creato, fare clic su **Download** (Scarica).
+    13. Per recuperare il file del certificato appena creato, fare clic su **Download**.
 
         ![Scaricare il certificato](../media/30-day-trial-walkthrus/30day-cfg-pol-26-dwnld-retrv-cert.png)
 
-    14. Quando viene richiesto di scaricare un file con estensione pem, fare clic su **Salva con nome**.
+    14. Quando viene richiesto di scaricare un file PEM, fare clic su **Save**.
 
         ![Scaricare il file con estensione pem](../media/30-day-trial-walkthrus/30day-cfg-pol-27-pem-saveas.png)
 
-    15. Specificare un percorso per il file con estensione pem e fare clic su **Salva**.
+    15. Specificare un percorso per il file PEM e fare clic su **Save**.
 
         ![Salvare il file con estensione pem](../media/30-day-trial-walkthrus/30day-cfg-pol-28-pem-save-loc.png)
 
-    16. Tornare alla scheda della console di gestione di Intune e fare clic su **Carica il certificato APNs**.
+    16. Tornare alla scheda della Console di gestione di Intune e fare clic sui **Carica il certificato APNs**.
 
         ![Caricare il certificato APN](../media/30-day-trial-walkthrus/30day-cfg-pol-29-upld-cert.png)
 
@@ -178,7 +172,7 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
         ![Immettere l'ID Apple](../media/30-day-trial-walkthrus/30day-cfg-pol-30-app-id-browse.png)
 
-    18. Selezionare il file con estensione pem appena salvato e fare clic su **Apri**.
+    18. Selezionare il file PEM appena salvato e fare clic su **Apri**.
 
         ![Aprire il file con estensione pem](../media/30-day-trial-walkthrus/30day-cfg-pol-31-sel-pem-open.png)
 
@@ -192,7 +186,7 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
 3.  Creare un gruppo di utenti test per la definizione dei criteri:
 
-    1.  Nel riquadro di sinistra, fare clic su **Gruppi**.
+    1.  Nel riquadro di sinistra fare clic su **Gruppi**.
 
         ![Aprire Gruppi](../media/30-day-trial-walkthrus/30day-cfg-pol-34-clk-groups.png)
 
@@ -200,7 +194,7 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
         ![Creare un gruppo](../media/30-day-trial-walkthrus/30day-cfg-pol-35-crt-group.png)
 
-    3.  Specificare un nome gruppo, selezionare **Tutti gli utenti** come gruppo padre e fare clic su **Avanti**.
+    3.  Specificare un nome di gruppo, selezionare **Tutti gli utenti** come gruppo padre e fare clic su **Avanti**.
 
         ![Selezionare Tutti gli utenti come gruppo padre](../media/30-day-trial-walkthrus/30day-cfg-pol-36-name-group.png)
 
@@ -210,7 +204,7 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
 4.  Creare un criterio PIN iOS e definire la destinazione per il gruppo di utenti test:
 
-    1.  Nel riquadro di sinistra, fare clic su **Criteri**.
+    1.  Nel riquadro di sinistra fare clic su **Criteri**.
 
         ![Aprire l'area di lavoro Criteri](../media/30-day-trial-walkthrus/30day-cfg-pol-38-clk-policy.png)
 
@@ -230,7 +224,7 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
         ![Distribuire i criteri](../media/30-day-trial-walkthrus/30day-cfg-pol-42-yes-deploy-pol.png)
 
-    6.  Fare clic sul gruppo utenti creato prima, quindi su **Aggiungi** e successivamente su **OK**.
+    6.  Fare clic sul gruppo utente creato in precedenza, fare clic su **Aggiungi** e fare clic su **OK**.
 
         ![Selezionare il gruppo per i criteri](../media/30-day-trial-walkthrus/30day-cfg-pol-43-add-pol-to-grp.png)
 
@@ -244,7 +238,7 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
     ![Installare il portale aziendale](../media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.png)
 
-2.  Immettere nome e password dell'account utente test e toccare **Accedi**.
+2.  Immettere il nome e la password dell'account utente test e toccare **Accedi**.
 
     ![Immettere le credenziali](../media/30-day-trial-walkthrus/30day-cfg-pol-46-cportal-signin.png)
 
@@ -252,19 +246,19 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 
     ![Avviare la registrazione](../media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.jpg)
 
-4.  Nella schermata **Installa profilo**, toccare **Installa**.
+4.  Nella schermata **Installa profilo** toccare **Installa**.
 
     ![Installare un profilo](../media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.jpg)
 
-5.  Nella finestra di dialogo **Installa profilo**, toccare **Installa**.
+5.  Nella finestra di dialogo **Installa profilo** toccare **Installa**.
 
     ![Continuare l'installazione del profilo](../media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg)
 
-6.  Nella schermata **Avviso**, toccare **Installa**.
+6.  Nella schermata **Avviso** toccare **Installa**.
 
     ![Accettare il messaggio di avviso](../media/30-day-trial-walkthrus/30day-cfg-pol-50-warning-install-3.png)
 
-7.  Nella finestra di dialogo **Gestione remota**, toccare **Attendibilità**.
+7.  Nella finestra di dialogo **Gestione remota** toccare **Attendibilità**.
 
     ![Attendibilità gestione remota](../media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg)
 
@@ -290,6 +284,7 @@ Queste istruzioni dettagliate permettono di installare una versione di valutazio
 [Guida alla valutazione di Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

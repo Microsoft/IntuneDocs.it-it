@@ -1,31 +1,24 @@
 ---
-# required metadata
-
 title: Limitare l'accesso alla posta elettronica e ai servizi di Office 365 | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
+ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+
 
 ---
 
-# Limitare l'accesso alla posta elettronica e ai servizi di Office 365 con Microsoft Intune
+# Limitare l'accesso alla posta elettronica, a Office 365 e ad altri servizi con Microsoft Intune
 È possibile limitare l'accesso alla posta elettronica aziendale e ai servizi di Office 365 con l'accesso condizionale di Intune. L'accesso condizionale di Intune consente di assicurarsi che l'accesso alla posta elettronica aziendale e ai servizi di Office 365 sia limitato ai dispositivi conformi alle regole definite.
 ## Come funziona l'accesso condizionale?
 Le impostazioni dei criteri di conformità vengono usate per valutare la conformità del dispositivo. I criteri di accesso condizionale usano la versione di valutazione per limitare o consentire l'accesso a un servizio specifico. Quando i criteri di accesso condizionale vengono usati in combinazione con i criteri di conformità, solo i dispositivi conformi possono accedere al servizio.
@@ -37,7 +30,7 @@ Se i dispositivi non soddisfano le condizioni definite nei criteri, l'utente fin
 
 Un flusso di accesso condizionale tipico:
 
-![Immagine che illustra gli aspetti tenuti in considerazione per determinare se a un dispositivo è consentito o meno l'accesso a un servizio](./media/ConditionalAccess4.png)
+![Immagine che illustra gli aspetti tenuti in considerazione per determinare se a un dispositivo è consentito o meno l'accesso a un servizio](../media/ConditionalAccess4.png)
 
 ## Come configurare l'accesso condizionale?
 Usare l'accesso condizionale per gestire l'accesso a Microsoft **Exchange locale**, **Exchange Online**, **Exchange Online dedicato**, **SharePoint Online** e **Skype for Business Online**.
@@ -67,8 +60,10 @@ A differenza degli altri criteri di Intune, i criteri di accesso condizionale no
   - [Creare criteri di accesso condizionale per l'ambiente legacy Exchange Online dedicato](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Creare criteri di accesso condizionale per SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Creare criteri di accesso condizionale per Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [Creare criteri di accesso condizionale per Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

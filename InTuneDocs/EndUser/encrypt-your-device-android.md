@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 39bcea03cad061e5b84e073cc5affcdd14fc6015
 ms.openlocfilehash: 22e9071171d2dc63562e94cabe2abdec3b2bd85e
 
@@ -47,6 +48,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jul16_HO1-->
 
 

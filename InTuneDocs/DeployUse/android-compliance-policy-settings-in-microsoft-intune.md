@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Impostazioni dei criteri di conformità per i dispositivi Android | Microsoft Intune
-description:
-keywords:
+title: "Impostazioni dei criteri di conformità per i dispositivi Android | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
+ms.openlocfilehash: dd3369cf59ea972f1ecc4953881ddbbede9a99c8
+
 
 ---
 
@@ -73,6 +66,7 @@ Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 - **Maximum OS version allowed** (Versione massima consentita del sistema operativo): quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali risulterà bloccato e l'utente dovrà contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,5 +1,4 @@
-**Impostare termini e condizioni**
-È possibile pubblicare i termini e le condizioni che verranno visualizzati dagli utenti la prima volta che usano il portale aziendale da qualsiasi dispositivo, indipendentemente dal fatto che il dispositivo sia già registrato. Per accedere al portale, gli utenti dovranno accettare tali termini. Quando si aggiornano in modo significativo i termini e le condizioni e si vuole che gli utenti li visualizzino e li accettino, è possibile contrassegnarli come nuova versione, in modo che gli utenti debbano eseguire la stessa procedura quando accedono successivamente al portale.
+**Impostare termini e condizioni** È possibile pubblicare i termini e le condizioni che verranno visualizzati dagli utenti la prima volta che usano il portale aziendale da qualsiasi dispositivo, indipendentemente dal fatto che il dispositivo sia già registrato. Per accedere al portale, gli utenti dovranno accettare tali termini. Quando si aggiornano in modo significativo i termini e le condizioni e si vuole che gli utenti li visualizzino e li accettino, è possibile contrassegnarli come nuova versione, in modo che gli utenti debbano eseguire la stessa procedura quando accedono successivamente al portale.
 
 Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) fare clic su **Portale aziendale** &gt; **Termini e condizioni**.
 
@@ -17,6 +16,6 @@ Specificare le impostazioni seguenti:
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,38 +1,30 @@
 ---
-# required metadata
-
 title: Gestire l'accesso a Internet usando criteri di Managed Browser| Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 2df44199ecd904dcfb6774a942244338c1384186
+ms.openlocfilehash: c4462af584d54225084159dfa35f5e1d07c36397
+
 
 ---
 
 # Gestire l'accesso a Internet utilizzando criteri di browser gestiti con Microsoft Intune.
 Managed Browser è un'applicazione Web browser che è possibile distribuire nell'organizzazione tramite Microsoft Intune. Un criterio di browser gestito consente di configurare un elenco Consenti o Blocca che limita i siti web che gli utenti del browser gestiti possono visitare.
 
-Poiché questa applicazione è un'applicazione gestita, è inoltre possibile applicare criteri di gestione delle applicazioni per dispositivi mobili per l'applicazione, ad esempio il controllo consente di acquisire l'utilizzo di Taglia, copia e Incolla, impedendo la schermata e inoltre garantire che i collegamenti al contenuto che gli utenti fanno clic solo aprire in altre gestito app. Per informazioni dettagliate, vedere l[Configurare e distribuire i criteri di gestione delle applicazioni mobili nella console di Microsoft Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Poiché questa applicazione è un'applicazione gestita, è inoltre possibile applicare criteri di gestione delle applicazioni per dispositivi mobili per l'applicazione, ad esempio il controllo consente di acquisire l'utilizzo di Taglia, copia e Incolla, impedendo la schermata e inoltre garantire che i collegamenti al contenuto che gli utenti fanno clic solo aprire in altre gestito app. Per informazioni dettagliate, vedere [Configurare e distribuire i criteri di gestione delle applicazioni mobili nella console di Microsoft Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 > [!IMPORTANT]
->Se gli utenti installano Managed Browser dall'Archivio applicazioni e questo non è gestito da Intune, si applica il comportamento seguente:
-iOS: l'app Managed Browser può essere usata come Web browser di base, ma alcune funzionalità non saranno disponibili e non riusciranno ad accedere ai dati di altre app gestite da Intune.
+>Se il browser gestito viene installato dall'app store e non è gestito da Intune, si applica il seguente comportamento: iOS: l'app Managed Browser può essere usata come Web browser di base, ma alcune funzionalità non sono disponibili e l'app non è in grado di accedere ai dati di altre app gestite da Intune.
 Android: l'app Managed Browser non può essere usata.
 Se gli utenti installano Managed Browser autonomamente in un dispositivo iOS con una versione precedente a iOS 9, non verrà gestito da alcun criterio creato. Per assicurarsi che il browser viene gestito da Intune, è necessario disinstallare l'applicazione prima di poter distribuire loro come un'applicazione gestita. Nelle versioni iOS 9 e successive, se l'utente installa autonomamente Managed Browser, verrà richiesto di renderlo gestito per criterio.
 
@@ -64,7 +56,7 @@ Intune Managed Browser supporta l'apertura di contenuti Web di [partner delle ap
     |**Descrizione**|Fornire una descrizione di carattere generale sul criterio di conformità dei browser gestiti e altre informazioni rilevanti per consentirne l'individuazione.|
     |**Consentire che un elenco Consenti o un elenco di blocchi per limitare gli URL possano aprire il Browser gestiti**|Selezionare una delle opzioni seguenti:<br /><br />**Consenti al browser gestito di aprire solo gli URL elencati di seguito**: specificare un elenco di URL che è possibile aprire in Managed Browser.<br /><br />**Non consentire al browser gestito di aprire gli URL elencati di seguito **: specificare un elenco di URL di cui bloccare l'apertura in Managed Browser. **Nota:** non è possibile includere URL consentiti e bloccati nello stesso criterio di Managed Browser.<br />Per altre informazioni sui formati di URL che è possibile specificare, vedere **Formato dell'URL per URL consentiti e bloccati** in questo argomento.|
 
-4.  Al termine, fare clic su **Salva criterio**..
+4.  Al termine, fare clic su **Salva criterio**.
 
 Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell'area di lavoro **Criteri** .
 
@@ -76,7 +68,7 @@ Dopo aver creato il criterio di browser gestiti, è possibile creare una distrib
 
 Distribuire l'applicazione, assicurarsi di selezionare i criteri di browser gestiti nella **gestione di App Mobile** pagina per associare il criterio con l'applicazione.
 
-Per altre informazioni su come distribuire le app, vedere [Distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md)..
+Per altre informazioni su come distribuire le app, vedere [Distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
 ## Sicurezza e privacy per lo strumento di wrapping delle app
 
@@ -108,7 +100,7 @@ Utilizzare le seguenti informazioni per ulteriori informazioni sui formati conse
 
     -   Porta 443 per https
 
-    Uso dei caratteri jolly per il numero di porta non supportato, ad esempio, **http://www.contoso.com:*;** e **http://www.contoso.com: /*;**
+    Uso dei caratteri jolly per il numero di porta non supportato, ad esempio,**http&colon;//www&period;contoso&period;com:*;** o **http&colon;//www&period;contoso&period;com: /*;**
 
 -   Per ulteriori informazioni sui modelli consentiti che è possibile utilizzare quando si specificano gli URL, utilizzare la tabella seguente:
 
@@ -157,6 +149,7 @@ Se distribuiti diversi criteri browser gestito a un dispositivo e si verifica un
 -   Se un dispositivo ha già ricevuto un criterio di browser gestiti e un secondo criterio è distribuito con le impostazioni in conflitto, le impostazioni originali rimangono sul dispositivo. Utilizzare il nodo **conflitti tra criteri** dei **criteri** nell’area di lavoro per visualizzare i conflitti.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

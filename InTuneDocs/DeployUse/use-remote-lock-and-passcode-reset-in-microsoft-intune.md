@@ -1,25 +1,19 @@
 ---
 title: Usare blocco remoto e reimpostazione passcode | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+translationtype: Human Translation
+ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
+ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 ---
 # Protezione dei dispositivi con blocco remoto e reimpostazione passcode
 Microsoft Intune include funzionalità per il blocco remoto e la reimpostazione del passcode.
@@ -73,10 +67,11 @@ Se un utente dimentica il passcode, è possibile aiutarlo rimuovendo il passcode
 
 
 ### Vedere anche
-[Retire devices (Ritirare i dispositivi)](retire-devices-from-microsoft-intune-management.md)
-[Windows Selective Wipe for Device Data Management (Cancellazione selettiva Windows per la gestione dei dati dei dispositivi)](http://technet.microsoft.com/library/dn486874.aspx)
+[Ritirare i dispositivi](retire-devices-from-microsoft-intune-management.md)
+[Argomento relativo alla cancellazione selettiva di Windows per la gestione dei dati dei dispositivi](http://technet.microsoft.com/library/dn486874.aspx)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

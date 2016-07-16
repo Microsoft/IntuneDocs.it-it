@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 4ac887f3-52e1-41f0-97fe-21985e0573ab
 ms.reviewer: priyar
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
 ms.openlocfilehash: 21e904766d1621b2182de8adde8142f5f7ad8e26
 
@@ -43,6 +44,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

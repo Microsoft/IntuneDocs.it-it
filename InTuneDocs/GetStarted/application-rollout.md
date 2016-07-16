@@ -1,32 +1,26 @@
 ---
-# required metadata
-
 title: Implementazione di applicazioni | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+
 
 ---
 
 # Implementazione di applicazioni
-Questo argomento contiene consigli specifici per un'implementazione graduale delle app in Microsoft Intune. Per informazioni generali sulle fasi di implementazione, vedere [Rollout phases for Microsoft Intune deployment](rollout-phases-for-microsoft-intune-deployment.md) (Fasi di implementazione per la distribuzione di Microsoft Intune)..
+Questo argomento contiene consigli specifici per un'implementazione graduale delle app in Microsoft Intune. Per informazioni generali sulle fasi di implementazione, vedere [Fasi dell'implementazione di Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md).
 
 ### Fasi dell'implementazione di app
 Le fasi dell'implementazione di app sono le seguenti:
@@ -48,18 +42,21 @@ Considerare quanto segue:
 
 -   L'idoneità dell'app per gli utenti e i dispositivi (tutti i sistemi operativi che verranno probabilmente usati).
 
--   Verificare che il programma di installazione scelto per l'app sia supportato dalla distribuzione di app di Intune, come descritto in  [Aggiungere app con Microsoft Intune](/intune/deploy-use/add-apps).
+-   Verificare che il programma di installazione scelto per l'app sia supportato dalla distribuzione di app di Intune, come descritto in [Aggiungere app con Microsoft Intune](/intune/deploy-use/add-apps).
 
--   Assicurarsi che siano installati i prerequisiti di distribuzione dell'applicazione. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
+-   Assicurarsi che siano installati i prerequisiti di distribuzione dell'applicazione. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->.
 
 -   Controllare che il tipo di app sia supportato da Intune.
 
--   Verificare che vi sia sufficiente spazio di archiviazione nel cloud per il caricamento dell'applicazione. L'articolo [Aggiungere app con Microsoft Intune](/intune/deploy-use/add-apps) riporta le istruzioni per l'acquisto di spazio di archiviazione aggiuntivo..
+-   Verificare che vi sia sufficiente spazio di archiviazione nel cloud per il caricamento dell'applicazione. L'articolo [Aggiungere app con Microsoft Intune](/intune/deploy-use/add-apps) riporta le istruzioni per l'acquisto di spazio di archiviazione aggiuntivo.
+
+> [!NOTE]           
+> È possibile scaricare questo [modello di pianificazione per app mobili](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59) per semplificare il processo di distribuzione.
 
 ## Modello di verifica
 Nella fase del modello di verifica è possibile testare la distribuzione dell'app in un ambiente di laboratorio su dispositivi e utenti configurati esclusivamente a scopo di test.
 
--   È importante che il personale del supporto tecnico partecipi a questa fase per individuare eventuali problemi che possono verificarsi durante la distribuzione pilota e di produzione. Per informazioni relative alla risoluzione dei problemi, vedere l'articolo [Troubleshoot app deployment problems in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune) (Risoluzione dei problemi di distribuzione delle app in Microsoft Intune)..
+-   È importante che il personale del supporto tecnico partecipi a questa fase per individuare eventuali problemi che possono verificarsi durante la distribuzione pilota e di produzione. Per informazioni relative alla risoluzione dei problemi, vedere l'articolo [Risorse che consentono di risolvere i problemi di distribuzione dell'app in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune).
 
 -   A questo punto del processo è necessario sviluppare piani di comunicazione per gli utenti pilota e di produzione. Il piano deve includere almeno quale app verrà distribuita, come e quando gli utenti la riceveranno, lo scopo aziendale della distribuzione e che cosa in caso di problemi, fornendo sia informazioni di supporto autonomo sia indicazioni per contattare il supporto tecnico.
 
@@ -97,6 +94,7 @@ Durante la fase pilota l'app verrà distribuita a un piccolo gruppo di utenti e 
 [Risorse che consentono di risolvere i problemi di distribuzione dell'app in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

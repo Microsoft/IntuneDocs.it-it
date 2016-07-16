@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Proteggere app e dati | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+
 
 ---
 
@@ -56,6 +50,7 @@ In app come quelle di Microsoft Office App SDK è integrato. Per l'elenco comple
 Oltre a limitare lo spostamento dei dati, se un dispositivo viene smarrito o rubato o se l'utente non lavora più nell'azienda, è possibile [cancellare selettivamente i dati aziendali](wipe-managed-company-app-data-with-microsoft-intune.md), lasciando solo quelli personali.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

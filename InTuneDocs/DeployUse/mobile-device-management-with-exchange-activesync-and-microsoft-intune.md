@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Gestione dei dispositivi mobili con Exchange ActiveSync e Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d24395786daa7aec103ec754895868a75983e099
+
 
 ---
 
@@ -41,7 +35,7 @@ Exchange Connector consente di gestire la distribuzione di Exchange nella consol
 -   [Configurare il connettore Intune Service to Service per Exchange ospitato](intune-service-to-service-exchange-connector.md)
 
 ## Applicare i criteri per i dispositivi mobili gestiti da Exchange
-Le impostazioni dei criteri possono essere applicate con la console di Intune. Per informazioni, vedere [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Per l'elenco delle impostazioni di criteri e delle funzionalità di Exchange ActiveSync supportate da dispositivi mobili specifici, vedere [Exchange ActiveSync Client Comparison Table (Tabella di confronto dei client di Exchange ActiveSync)](http://go.microsoft.com/fwlink/?LinkId=247270)..
+Le impostazioni dei criteri possono essere applicate con la console di Intune. Per informazioni, vedere [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Per l'elenco delle impostazioni di criteri e delle funzionalità di Exchange ActiveSync supportate da dispositivi mobili specifici, vedere [Exchange ActiveSync Client Comparison Table (Tabella di confronto dei client di Exchange ActiveSync)](http://go.microsoft.com/fwlink/?LinkId=247270).
 
 > [!NOTE]
 > Dopo aver connesso Intune a un ambiente Microsoft Exchange, i criteri EAS per tutti gli utenti gestiti mediante Intune verranno reimpostati ai criteri predefiniti correnti nel server Microsoft Exchange, salvo se in Intune sono definiti criteri più specifici.
@@ -50,6 +44,7 @@ Le impostazioni dei criteri possono essere applicate con la console di Intune. P
 Infine è possibile [cancellare i dati aziendali da dispositivi mobili gestiti da EAS](wipe-for-exchange-managed-mobile-devices.md) quando i dispositivi non sono più in uso o in caso di smarrimento o furto.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
 ms.reviewer: mamoriss
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 98ba0968653ceaf13ab5422468040f8e2ce50422
 ms.openlocfilehash: 2fc13272848bd70d4ebed2750c550f7a5eb13508
 
@@ -32,6 +33,6 @@ Se l'installazione dell'app sta richiedendo troppo tempo, è possibile provare a
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jul16_HO1-->
 
 

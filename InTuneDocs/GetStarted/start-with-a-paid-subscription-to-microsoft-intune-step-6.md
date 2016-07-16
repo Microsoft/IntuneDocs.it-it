@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Creare i criteri e pubblicare un'app | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
+ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+
 
 ---
 
@@ -63,7 +57,8 @@ I criteri vengono visualizzati nell'elenco dei criteri di configurazione e risul
 
     ![admin-console-apps-workspace](./media/apps.png)
 
-    > [!NOTE] Quando si avvia **Autore del software Microsoft Intune** per la prima volta, si verifica un breve ritardo dovuto all'installazione dell'applicazione.
+    > [!NOTE]
+    > Quando si avvia **Autore del software Intune** per la prima volta, si verifica un breve ritardo dovuto all'installazione dell'applicazione.
 
 2.  Leggere l'avviso di sicurezza e scegliere **Esegui**.
 
@@ -114,6 +109,7 @@ A questo punto, Passaggio 6 della *Guida introduttiva di Intune* completato.
 >[&larr; **Organizzare utenti e dispositivi**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)[**Personalizzare il Portale aziendale** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

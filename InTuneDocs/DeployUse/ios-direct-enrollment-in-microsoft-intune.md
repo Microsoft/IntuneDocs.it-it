@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Registrazione diretta per i dispositivi iOS | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
+ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+
 
 ---
 
@@ -46,6 +40,8 @@ Intune supporta la registrazione di dispositivi iOS di proprietà dell'azienda c
 
         -   **Pre-assegnazione al gruppo di dispositivi**: tutti i dispositivi distribuiti con questo profilo apparterranno inizialmente a questo gruppo. È possibile riassegnare i dispositivi dopo la registrazione.
 
+        >[!Important]
+        >Le assegnazioni di gruppo passeranno da Intune ad Azure Active Directory. [Altre informazioni](http://go.microsoft.com/fwlink/?LinkID=787064)
     3.  Scegliere **Salva profilo** per aggiungere il profilo.
 
 5.  **Esportare un profilo come file con estensione mobileconfig per la distribuzione nei dispositivi iOS**. Selezionare il profilo di dispositivo creato. Scegliere **Esporta** nella barra delle attività. Scegliere **Scarica il profilo** e salvare il file con estensione mobileconfig scaricato.
@@ -89,6 +85,7 @@ Intune supporta la registrazione di dispositivi iOS di proprietà dell'azienda c
 [Prepararsi alla registrazione dei dispositivi](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

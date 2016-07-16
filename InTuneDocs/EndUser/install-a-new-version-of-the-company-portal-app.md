@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Installare una nuova versione dell'app Portale aziendale | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/30/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 29d409f272800e0c5ccaf71494b5e98d1edaae4e
 
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: priyar
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -44,7 +35,8 @@ Quando sarà disponibile una nuova versione del Portale aziendale, si riceverà 
 
 2.  Seguire le istruzioni di installazione.
 
-    > [!NOTE] Se non si riesce ad accedere a Windows Store, contattare l'amministratore IT.
+    > [!NOTE]
+    > Se non si riesce ad accedere a Windows Store, contattare l'amministratore IT.
 
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
@@ -57,6 +49,7 @@ Per informazioni su altre attività eseguibili con il dispositivo, usare il coll
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

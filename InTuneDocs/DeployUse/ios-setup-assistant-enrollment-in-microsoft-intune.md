@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Registrazione di Assistente configurazione per i dispositivi iOS con Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
+ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+
 
 ---
 
@@ -67,6 +61,9 @@ Con Apple Configurator è possibile ripristinare le impostazioni predefinite dei
             -   **Nessuna affinità utente**: il dispositivo non ha utenti. Usare questa associazione per i dispositivi che eseguono attività senza accedere ai dati utente locali. Le app che richiedono l'associazione utente sono disabilitate o non funzioneranno.
 
         -   **Pre-assegnazione al gruppo di dispositivi**: tutti i dispositivi distribuiti con questo profilo apparterranno inizialmente a questo gruppo. È possibile riassegnare i dispositivi dopo la registrazione.
+
+        >[!Important]
+        >Le assegnazioni di gruppo passeranno da Intune ad Azure Active Directory. [Altre informazioni](http://go.microsoft.com/fwlink/?LinkID=787064)
 
           -  **Programma di registrazione del dispositivo**: il programma di registrazione dispositivo di Apple (DEP) non può essere usato con la registrazione di Assistente configurazione. Verificare che sia impostato su **Disattivato**.
 
@@ -155,6 +152,7 @@ Con Apple Configurator è possibile ripristinare le impostazioni predefinite dei
 [Prepararsi alla registrazione dei dispositivi](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

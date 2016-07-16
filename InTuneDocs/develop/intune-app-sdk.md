@@ -1,33 +1,26 @@
 ---
-# required metadata
-
 title: Vantaggi di Intune App SDK | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 3abf566831348de11f718370d6267e3ff4355bfb
+
 
 ---
 
 # Panoramica di Intune App SDK
-Intune App SDK è disponibile per la piattaforma iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune. Un altro obiettivo è quello di ridurre la quantità di modifiche al codice necessarie per lo sviluppatore. La maggior parte delle funzionalità SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che richiedono la partecipazione dell'app. 
-Dopo avere abilitato l'app, gli amministratori IT possono distribuire i criteri alle app gestite da Intune e sfruttare queste funzionalità per proteggere i dati aziendali.
+Intune App SDK è disponibile per la piattaforma iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune. Un altro obiettivo è quello di ridurre la quantità di modifiche al codice necessarie per lo sviluppatore. La maggior parte delle funzionalità SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che richiedono la partecipazione dell'app. Dopo avere abilitato l'app, gli amministratori IT possono distribuire i criteri alle app gestite da Intune e sfruttare queste funzionalità per proteggere i dati aziendali.
 
 ## Funzionalità comuni
 
@@ -77,6 +70,7 @@ La gestione delle app senza la registrazione del dispositivo consente al servizi
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

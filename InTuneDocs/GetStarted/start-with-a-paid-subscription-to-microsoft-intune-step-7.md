@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Personalizzare il portale aziendale | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 45f574a975c94338c4543c0cdbc3aef549030601
+
 
 ---
 
@@ -32,7 +26,7 @@ Il [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] è il punto in c
 > [!TIP]
 > Quando si personalizza il portale aziendale, le configurazioni vengono applicate sia al sito Web che alle app Portale aziendale.
 
-La personalizzazione del portale aziendale consente di offrire agli utenti finali un'esperienza familiare e utile. A tale scopo, accedere alla [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) come amministratore tenant o del servizio, scegliere **Amministratore** &gt; **Portale aziendale** e configurare le impostazioni del portale aziendale.
+La personalizzazione del portale aziendale consente di offrire agli utenti finali un'esperienza familiare e utile. A tale scopo, accedere alla [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) come amministratore tenant o del servizio, scegliere **Amministrazione** &gt; **Portale aziendale** e configurare le impostazioni del Portale aziendale.
 
 ![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png)
 
@@ -69,12 +63,13 @@ Il sito di assistenza viene visualizzato agli utenti nel portale aziendale in mo
 Una volta salvate le modifiche, è possibile usare i collegamenti riportati in fondo alla pagina **Portale aziendale** della console di amministrazione per visualizzare il sito Web del portale aziendale. Questi collegamenti non possono essere modificati. Quando un utente esegue l'accesso, questi collegamenti visualizzano le sottoscrizioni nel portale aziendale.
 
 ### Passaggi successivi
-A questo punto, Passaggio 7 della *Guida introduttiva di Intune* completato.
+A questo punto, il passaggio 7 della *Guida introduttiva a Intune* è stato completato.
 >[!div class="step-by-step"]
 
->[&larr; **Creare criteri e applicazioni**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Registrare dispositivi** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
+>[&larr;**Creare criteri e applicazioni**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Registrare dispositivi** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

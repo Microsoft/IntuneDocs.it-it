@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Impostazioni dei criteri di Windows 10 | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
+ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+
 
 ---
 
@@ -168,6 +161,7 @@ Tutte le impostazioni sono solo per Windows 10 Desktop.
 |**Intervallo di aggiornamento della firma**|Specifica l'intervallo secondo il quale Defender controllerà i nuovi file di firma.|
 |**Consenti protezione cloud**|Consente o blocca la ricezione di informazioni sull'attività del malware da parte di Microsoft Active Protection Service dai dispositivi gestiti. Queste informazioni vengono usate per migliorare il servizio in futuro.|
 |**Richiedi invio dei campioni agli utenti**|Controlla se i file che potrebbero richiedere ulteriore analisi da parte di Microsoft per determinare se sono dannosi vengono inviati automaticamente a Microsoft.|
+|**Rilevamento di applicazioni potenzialmente indesiderate**|Questa impostazione può essere usata per proteggere i computer desktop Windows registrati da eventuale software in esecuzione classificato da Windows Defender come potenzialmente indesiderato. È possibile ottenere protezione da tali applicazioni in esecuzione o usare la modalità di controllo per rilevare l'installazione di un'applicazione potenzialmente indesiderata.|
 |**File e cartelle da escludere quando si esegue un'analisi o si usa la protezione in tempo reale**|Aggiungere uno o più file e cartelle come **C:\Percorso** o **%ProgramFiles%\Percorso\nomefile.exe** all'elenco delle estensioni. Questi file e cartelle non saranno inclusi nelle analisi in tempo reale o pianificate.|
 |**Estensioni di file da escludere durante l'esecuzione di un'analisi o l'utilizzo della protezione in tempo reale**|Aggiungere uno o più estensioni di file come **jpg** o **txt** all'elenco delle esclusioni. I file con queste estensioni non saranno inclusi nelle analisi in tempo reale o pianificate.|
 |**Processi da escludere durante l'esecuzione di un'analisi o l'utilizzo della protezione in tempo reale**|Aggiungere uno o più processi del tipo **.exe**, **.com** o **.scr** all'elenco delle esclusioni. Questi processi non saranno inclusi nelle analisi in tempo reale o pianificate.| 
@@ -332,6 +326,7 @@ Tutti i dispositivi devono essere registrati con Intune per poter usare i criter
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

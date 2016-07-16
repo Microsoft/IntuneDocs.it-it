@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Regole di accesso Exchange per dispositivi mobili gestiti con Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+
 
 ---
 
@@ -45,7 +39,7 @@ Nella procedura riportata di seguito viene descritto come creare una regola pers
 
 ## Creare una regola di accesso predefinita
 
-1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) &gt; **Criteri** &gt; **Regole di accesso a Exchange per dispositivi mobili**.
+1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com)&gt;**Criteri**&gt;**Regole di accesso Exchange per dispositivi mobili**.
 
 2.  Nell'elenco **Regola predefinita** selezionare la regola di accesso da applicare a tutti i dispositivi mobili a cui non si applica una regola o un'esenzione personale. Scegliere **Salva**.
 
@@ -53,11 +47,12 @@ Nella procedura riportata di seguito viene descritto come creare una regola pers
 
 ## Creare una regola di accesso personalizzata
 
-1. Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) &gt; **Criteri** &gt; **Regole di accesso a Exchange per dispositivi mobili**.
+1. Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com)&gt;**Criteri**&gt;**Regole di accesso Exchange per dispositivi mobili**.
 
 2.  Nell'elenco **Regole personalizzate** fare clic su **Aggiungi regola** e creare una regola personalizzata. Scegliere **Salva**.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

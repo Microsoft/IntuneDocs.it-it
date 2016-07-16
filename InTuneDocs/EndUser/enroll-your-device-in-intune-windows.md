@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: d217ddcf-4908-4047-97a1-716bd433a13c
 ms.reviewer: priyar
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 98ba0968653ceaf13ab5422468040f8e2ce50422
 ms.openlocfilehash: e343905f7359e310bc5b171feb3311adf8b4012f
 
@@ -38,6 +39,6 @@ Per eseguire la registrazione, usare il collegamento corrispondente al dispositi
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jul16_HO1-->
 
 

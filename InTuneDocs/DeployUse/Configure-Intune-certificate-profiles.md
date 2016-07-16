@@ -1,36 +1,28 @@
 ---
-# required metadata
-
 title: Configurare i profili certificato | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ee6b3607688cb02be7316b83e10424dfbea9746b
+ms.openlocfilehash: 8343abe8861468bbba27272aa1f3569390cb826b
+
 
 ---
 
 # Configurare i profili certificato di Intune
-Dopo aver configurato l'infrastruttura e i certificati, come descritto in [Configurare l'infrastruttura di certificazione](configure-certificate-infrastructure.md), è possibile configurare i profili di certificato:
+Dopo aver configurato l'infrastruttura e i certificati come descritto in [Configurare l'infrastruttura di certificazione per SCEP](configure-certificate-infrastructure-for-scep.md) o [Configurare l'infrastruttura di certificazione](configure-certificate-infrastructure-for-pfx.md), è possibile configurare i profili certificato:
 
-**Attività 1:** esportare il certificato CA radice attendibile
-**Attività 2:** creare profili di certificato CA attendibili
-**Attività 3:** una delle due attività seguenti:
+**Attività 1**: esportare il certificato CA radice attendibile **Attività 2**: creare profili certificato CA attendibili **Attività 3**: scegliere una delle alternative seguenti:
 
 Creare profili certificato SCEP
 
@@ -134,11 +126,11 @@ I profili di certificato vengono installati solo nei dispositivi applicabili in 
 
 I profili di certificato si distribuiscono allo stesso modo degli altri criteri per Intune:
 
-1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire e quindi fare clic su **Gestisci distribuzione**.
+1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi fare clic su **Gestisci distribuzione**.
 
 2.  Nella finestra di dialogo **Gestisci distribuzione** :
 
-    -   **Per distribuire il criterio**, selezionare uno o più gruppi ai quali si vuole distribuire il criterio, quindi fare clic su **Aggiungi** &gt; **OK**.
+    -   **Per distribuire il criterio**: selezionare uno o più gruppi in cui si vuole distribuire il criterio, quindi fare clic su **Aggiungi** &gt; **OK**.
 
     -   **Per chiudere la finestra di dialogo senza distribuire il criterio**, fare clic su **Annulla**.
 
@@ -152,6 +144,7 @@ Quando si seleziona un criterio distribuito, è possibile visualizzare altre inf
 -  [Connessioni VPN in Microsoft Intune](vpn-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
