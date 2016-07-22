@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Connessioni VPN | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 95abe7b12e68755f3c95f91888efd3e85c057119
+ms.openlocfilehash: b55cf263611d6e90805cad9985eb8a5e7ebeb4a0
+
 
 ---
 
@@ -48,23 +42,24 @@ Intune supporta la creazione di profili VPN che usano i tipi di connessione segu
 
 
 
-Tipo di connessione |iOS e Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1  |Windows 10 Desktop e Mobile |
-----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+Tipo di connessione |iOS e Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Sì |Sì   |No    |     No    |No  |No    | Sì, (URI OMA, solo dispositivi mobili)|     
 Pulse Secure|Sì  |Sì |Sì   |No  |Sì  |Sì| Sì|        
 F5 Edge Client|Sì |Sì |Sì |No  |Sì  |   Sì |  Sì|   
 Dell SonicWALL Mobile Connect|Sì |Sì |Sì |No  |Sì |Sì |Sì|         
 VPN CheckPoint Mobile|Sì |Sì |Sì |Sì |Sì|Sì|Sì|
-Microsoft SSL (SSTP)|No |No |No |No |No|No|No|
-Microsoft Automatico|No |No |No |No |No|No|sì|
-IKEv2|No |No |No |No |No|No|sì|
-PPTP|No |No |No |No |No|No|sì|
-L2TP|No |No |No |No |No|No|sì|
+Microsoft SSL (SSTP)|No |No |No |No |No|No|VPNv1 URI OMA*|
+Microsoft Automatico|No |No |No |No |No|Sì (URI OMA)|sì|
+IKEv2|Profilo personalizzato iOS|No |No |No |No|Sì (URI OMA)|sì|
+PPTP|Profilo personalizzato iOS|No |No |No |No|No|Sì|
+L2TP|Profilo personalizzato iOS|No |No |No |No|Sì (URI OMA)|Sì|
 
+\* Senza impostazioni aggiuntive che sono altrimenti disponibili per Windows 10.
 
 > [!IMPORTANT] Prima di usare i profili VPN distribuiti in un dispositivo, è necessario installare l'app VPN applicabile per il profilo È possibile usare le informazioni nell'argomento [Distribuire le app in dispositivi mobili in Microsoft Intune](deploy-apps-in-microsoft-intune.md) per distribuire l'app applicabile tramite Intune.  
 
- Per informazioni su come creare profili VPN personalizzati usando le impostazioni URI, vedere [Custom configurations for VPN profiles (Configurazioni personalizzate per i profili VPN)](custom-configurations-for-vpn-profiles.md).     
+ Per informazioni su come creare profili VPN personalizzati usando le impostazioni URI, vedere il documento relativo alle [configurazioni personalizzate per i profili VPN](custom-configurations-for-vpn-profiles.md).     
 
 ## Come vengono protetti i profili VPN
 
@@ -76,7 +71,7 @@ Quando si crea il profilo VPN, è possibile scegliere un profilo certificato SCE
 
 Questo profilo, noto come certificato di identità, viene usato per eseguire l'autenticazione in base a un profilo certificato attendibile (o certificato radice) creato per stabilire che il dispositivo dell'utente è autorizzato a connettersi. Il certificato attendibile viene distribuito nel computer che esegue l'autenticazione della connessione VPN, in genere il server VPN.
 
-Per altre informazioni su come creare e usare i profili di certificato in Intune, vedere [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteggere l'accesso alle risorse con i profili certificato).
+Per altre informazioni su come creare e usare i profili di certificato in Intune, vedere il documento relativo alla [protezione dell'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).
 
 ### Nome utente e password
 
@@ -161,9 +156,10 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 ### Vedere anche
 [Custom configurations for VPN profiles (Configurazioni personalizzate per i profili VPN)](Custom-configurations-for-VPN-profiles.md)
-[Per-app VPN for Android Pulse Secure (VPN per app per Pulse Secure per Android)](per-app-vpn-for-android-pulse-secure.md)
+[Per-app VPN for Android Pulse Secure (VPN per app in Pulse Secure per Android)](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jul16_HO1-->
 
 

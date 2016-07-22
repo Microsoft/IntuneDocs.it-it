@@ -1,34 +1,27 @@
 ---
-# required metadata
-
 title: Aggiornamenti software per PC Windows | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: d650eea62be0c00c414b51ed5c49310c5175acd7
+
 
 ---
 
 # Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune
 Microsoft Intune consente di proteggere i computer gestiti in diversi modi, ad esempio con la gestione degli aggiornamenti software, che consente di mantenere i computer aggiornati installando rapidamente le patch e gli aggiornamenti software più recenti.
 
-Se il client Intune non è ancora stato installato nei computer, vedere [Installare il client PC Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md)..
+Se il client Intune non è ancora stato installato nei computer, vedere [Install the Windows PC client with Microsoft Intune (Installare il client PC Windows con Microsoft Intune)](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Quando sono disponibili nuovi aggiornamenti da Microsoft Update applicabili ai computer gestiti oppure è stato creato un aggiornamento di terze parti, nella pagina **Panoramica** dell'area di lavoro **Aggiornamenti** viene visualizzata una notifica. Dopo aver scelto il collegamento della notifica è possibile eseguire varie operazioni, ad esempio visualizzare altre informazioni sull'aggiornamento, accettare o rifiutare l'aggiornamento e visualizzare i computer in cui verrà installato, se approvato.
 
@@ -44,9 +37,9 @@ Prima di iniziare a creare e approvare degli aggiornamenti software, configurare
 
 ### Per configurare le impostazioni dei criteri di aggiornamento
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Criteri** &gt; **Panoramica** &gt; **Aggiungi criterio**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Criteri** &gt; **Panoramica** &gt; **Aggiungi criterio**.
 
-2.  Configurare e distribuire un criterio di **Impostazioni agente di Microsoft Intune** per le impostazioni di aggiornamento. È possibile usare le impostazioni consigliate o personalizzare le impostazioni. Per altre informazioni su come creare e distribuire i criteri, vedere [Attività comuni di gestione di PC Windows con client di Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)..
+2.  Configurare e distribuire un criterio di **Impostazioni agente di Microsoft Intune** per le impostazioni di aggiornamento. È possibile usare le impostazioni consigliate o personalizzare le impostazioni. Per altre informazioni su come creare e distribuire i criteri, vedere [Attività comuni di gestione di PC Windows con client di Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 La tabella seguente mostra i valori che possono essere configurati nei criteri e i valori consigliati che vengono usati se i criteri non vengono personalizzati. È possibile trovare queste impostazioni nella sezione **Aggiornamenti** .
 
@@ -73,7 +66,7 @@ Usare le due procedure seguenti per usare gli aggiornamenti software:
 
 ### Configurare le categorie di prodotti e le classificazioni degli aggiornamenti che si desidera rendere disponibili ai computer gestiti
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Amministrazione** &gt; **Aggiornamenti**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Amministrazione**&gt;**Aggiornamenti**.
 
 2.  Nella pagina **Impostazioni servizio: aggiornamenti** , nell'elenco **Categoria prodotto** , selezionare le categorie di aggiornamenti da rendere disponibili per i computer. Si noti che gli aggiornamenti più comuni sono selezionati per impostazione predefinita.
 
@@ -86,9 +79,9 @@ Usare le due procedure seguenti per usare gli aggiornamenti software:
 
 ### Per configurare le regole di approvazione automatica degli aggiornamenti software
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Amministrazione** &gt; **Aggiornamenti**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Amministrazione**&gt;**Aggiornamenti**.
 
-2.  Nella sezione **Regole di approvazione automatica** della pagina **Impostazioni server: aggiornamenti** scegliere **Nuovo**..
+2.  Nella sezione **Regole di approvazione automatica** della pagina **Impostazioni server: aggiornamenti** scegliere **Nuovo**.
 
 3.  Nella pagina **Generale** della procedura guidata Crea regola di approvazione automatica, digitare il nome della nuova regola di approvazione automatica ed eventualmente una descrizione.
 
@@ -98,16 +91,16 @@ Usare le due procedure seguenti per usare gli aggiornamenti software:
 
 6.  Nella pagina **Distribuzione** , eseguire le seguenti operazioni:
 
-    -   Selezionare un gruppo di computer a cui distribuire la nuova regola, quindi scegliere **Aggiungi**..
+    -   Selezionare il gruppo di computer a cui distribuire la nuova regola, quindi scegliere **Aggiungi**.
 
     -   Per specificare una scadenza di installazione degli aggiornamenti, selezionare la casella di controllo **Imporre una scadenza per l'installazione di questi aggiornamenti** , quindi selezionare la scadenza dell'installazione nell'elenco **Scadenza dell'installazione** .
 
         > [!NOTE]
         > Se si specifica una scadenza di installazione, potrebbe essere necessario riavviare il computer gestito una o più volte dopo che l'intervallo di scadenza è trascorso.
 
-    -   Al termine, scegliere **Avanti**..
+    -   Al termine, scegliere **Avanti**.
 
-7.  Nella pagina **Riepilogo** , esaminare i parametri per la nuova regola, quindi scegliere **Fine**..
+7.  Nella pagina **Riepilogo** rivedere le impostazioni della nuova regola, quindi scegliere **Fine**.
 
 La nuova regola viene mostrata nella sezione **Regole di approvazione automatica** della pagina **Impostazioni servizio: aggiornamenti** .
 
@@ -117,15 +110,15 @@ La nuova regola viene mostrata nella sezione **Regole di approvazione automatica
 
 ### Per modificare, eseguire o eliminare una regola di approvazione automatica degli aggiornamenti
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Amministrazione** &gt; **Aggiornamenti**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Amministrazione**&gt;**Aggiornamenti**.
 
 2.  Nella sezione **Regole di approvazione automatica** , selezionare una regola e quindi eseguire una delle seguenti operazioni:
 
-    -   Per modificare la regola scegliere **Modifica**, quindi modificare i parametri della regola nella **Creazione guidata regola di approvazione automatica aggiornamenti**..
+    -   Per modificare la regola, scegliere **Modifica**, quindi modificare i parametri della regola nella **procedura guidata Aggiorna regola di approvazione automatica**.
 
-    -   Per eseguire la regola scegliere **Esegui selezione**..
+    -   Per eseguire la regola scegliere **Esegui selezione**.
 
-    -   Per eliminare la regola scegliere **Elimina**..
+    -   Per eliminare la regola scegliere **Elimina**.
 
         > [!NOTE]
         > L'eliminazione di una regola non influisce sugli aggiornamenti precedenti approvati da tale regola eliminata.
@@ -135,7 +128,7 @@ La nuova regola viene mostrata nella sezione **Regole di approvazione automatica
 
 ### Per caricare e configurare un aggiornamento di terze parti
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Aggiornamenti** &gt; **Panoramica** &gt; **Carica**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Aggiornamenti** &gt; **Panoramica** &gt; **Carica**.
 
 2.  Nella pagina **File di aggiornamento** scegliere **Sfoglia** per selezionare i file di installazione necessari per installare il pacchetto di aggiornamento. Il file potrebbe essere un file di Windows Installer (MSI), un file di correzione di Windows Installer (MSP) o un file di programma con estensione EXE. È inoltre possibile includere qualsiasi file o cartelle aggiuntivi presenti nella stessa cartella del file di installazione.
 
@@ -158,7 +151,7 @@ La nuova regola viene mostrata nella sezione **Regole di approvazione automatica
 
     -   **Chiave del Registro di sistema esistente**
 
-6.  Specificare qualsiasi altra informazione necessaria per configurare la regola di rilevamento, ad esempio il nome e il percorso di un file, il codice prodotto Windows Installer o la chiave del Registro di sistema, quindi scegliere **Avanti**..
+6.  Specificare qualsiasi altra informazione necessaria per configurare la regola di rilevamento, ad esempio il nome e il percorso di un file, il codice prodotto Windows Installer o una chiave del Registro di sistema, quindi scegliere **Avanti**.
 
 7.  Nella pagina **Prerequisiti** della procedura guidata, specificare il software da installare prima che possa essere installato l'aggiornamento. È possibile specificare **Nessuno** e selezionare un pacchetto software che è già stato aggiunto a Intune ed è gestito da Intune stesso. Oppure è possibile specificare una delle seguenti regole per descrivere il software:
 
@@ -168,9 +161,9 @@ La nuova regola viene mostrata nella sezione **Regole di approvazione automatica
 
     -   **Chiave del Registro di sistema esistente**
 
-8.  Specificare qualsiasi altra informazione necessaria per configurare la regola di rilevamento, ad esempio il nome e il percorso di un file, il codice prodotto Windows Installer o la chiave del Registro di sistema, quindi scegliere **Avanti**..
+8.  Specificare qualsiasi altra informazione necessaria per configurare la regola di rilevamento, ad esempio il nome e il percorso di un file, il codice prodotto Windows Installer o una chiave del Registro di sistema, quindi scegliere **Avanti**.
 
-9. Nella pagina **Argomenti della riga di comando** della procedura guidata, è possibile aggiungere eventuali altre proprietà di installazione alla riga di comando di installazione per modificare il comportamento del file di installazione. Ad esempio, alcuni software supportano la proprietà **/q** per abilitare l'installazione invisibile all'utente. Per altre informazioni sugli argomenti della riga di comando supportati, vedere la documentazione del proprio pacchetto software. Specificare gli argomenti della riga di comando necessari, quindi scegliere **Avanti**..
+9. Nella pagina **Argomenti della riga di comando** della procedura guidata, è possibile aggiungere eventuali altre proprietà di installazione alla riga di comando di installazione per modificare il comportamento del file di installazione. Ad esempio, alcuni software supportano la proprietà **/q** per abilitare l'installazione invisibile all'utente. Per altre informazioni sugli argomenti della riga di comando supportati, vedere la documentazione del proprio pacchetto software. Specificare eventuali argomenti della riga di comando necessari, quindi scegliere **Avanti**.
 
     > [!NOTE]
     > Se l'aggiornamento non supporta la modalità di installazione invisibile all'utente, non sarà possibile installarlo tramite Intune.
@@ -185,7 +178,7 @@ La nuova regola viene mostrata nella sezione **Regole di approvazione automatica
 11. Eventuali codici restituiti non presenti nell'elenco rappresentano errori.
 Alcuni aggiornamenti usano interpretazioni non standard per i codici restituiti. In questo caso, è possibile specificare interpretazioni proprie del codice restituito.
 
-12. Specificare o modificare i codici restituiti necessari, quindi scegliere **Avanti**..
+12. Specificare o modificare i codici restituiti necessari, quindi scegliere **Avanti**.
 
 13. Nella pagina **Riepilogo** della procedura guidata, esaminare le azioni che verranno eseguite, quindi scegliere **Carica** per completare la procedura guidata.
 
@@ -204,23 +197,23 @@ Quando si seleziona un aggiornamento dall'elenco, sono disponibili ulteriori com
 |--------|--------------------|
 |**Visualizzare le proprietà**|Visualizza informazioni dettagliate sull'aggiornamento, incluso il numero di computer a cui è applicabile.|
 |**Modifica**|Solo per gli aggiornamenti non Microsoft. Consente di modificare le proprietà dell'aggiornamento.|
-|**Approva**|Approva l'aggiornamento selezionato e consente di configurare i gruppi a cui sarà distribuito. Per altre informazioni, vedere la procedura [Per approvare gli aggiornamenti](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md#BKMK_Approve) in questo argomento.|
+|**Approva**|Approva l'aggiornamento selezionato e consente di configurare i gruppi a cui sarà distribuito. Per altre informazioni, vedere la procedura **Per approvare gli aggiornamenti** in questo argomento.|
 |**Rifiuto**|Rimuove tutte le approvazioni precedenti per l'aggiornamento e nasconde l'aggiornamento dalle visualizzazioni predefinite. Inoltre, l'opzione rimuove tutti i dati di report per l'aggiornamento.<br /><br />Se si desidera individuare un aggiornamento rifiutato in un secondo tempo, impostare il filtro su **Rifiutato** nella pagina **Tutti gli aggiornamenti**. È possibile quindi approvare questo aggiornamento come obbligatorio.<br /><br />Se un aggiornamento è stato rifiutato perché è scaduto in Microsoft Update, l'aggiornamento non può essere approvato nella console di amministrazione di Intune.<br /><br />Se si elimina un criterio Aggiornamenti distribuito nei computer, le impostazioni del criterio Aggiornamenti vengono reimpostate sullo stato predefinito per il sistema operativo installato nei computer.|
 |**Eliminazione**|Solo per gli aggiornamenti non Microsoft. Elimina l'aggiornamento selezionato.|
 |**Carica**|Avvia la procedura guidata **Caricamento aggiornamento** che consente di caricare gli aggiornamenti non Microsoft da distribuire.|
 
 ### Per approvare gli aggiornamenti
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Aggiornamenti** &gt; **Panoramica** &gt; **Nuovi aggiornamenti da approvare**..
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Aggiornamenti** &gt; **Panoramica** &gt; **Nuovi aggiornamenti da approvare**.
 
-    Nell'area di lavoro **Aggiornamenti**, scegliere **Panoramica** &gt; **Nuovi aggiornamenti da approvare**..
+    Nell'area di lavoro **Aggiornamenti** scegliere **Panoramica** &gt; **Nuovi aggiornamenti da approvare**.
 
     > [!NOTE]
     > Il collegamento **Nuovi aggiornamenti da approvare** verrà visualizzato nell'area **Stato aggiornamento** solo se è presente almeno un computer gestito per il quale è necessario approvare un aggiornamento.
 
 2.  Selezionare un aggiornamento, esaminarne le proprietà nella parte inferiore della pagina per confermare che si vuole approvare l'aggiornamento, quindi scegliere **Approva**. È possibile selezionare più aggiornamenti tenendo premuto **CTRL** mentre si selezionano i singoli elementi.
 
-3.  Nella pagina **Seleziona gruppi**, selezionare un gruppo a cui si vogliono distribuire gli aggiornamenti, quindi scegliere **Aggiungi**. Dopo aver specificato i gruppi, scegliere **Avanti**..
+3.  Nella pagina **Seleziona gruppi**, selezionare un gruppo a cui si vogliono distribuire gli aggiornamenti, quindi scegliere **Aggiungi**. Dopo aver specificato i gruppi scegliere **Avanti**.
 
 4.  Nella pagina **Azione di distribuzione** attenersi alla seguente procedura per ciascun gruppo nell'elenco:
 
@@ -259,6 +252,7 @@ Quando si seleziona un aggiornamento dall'elenco, sono disponibili ulteriori com
 [Policies to protect Windows PCs (Criteri per la protezione dei PC Windows)](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

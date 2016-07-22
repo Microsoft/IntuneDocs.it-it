@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Esperienza dell'utente finale con app MAM | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
+ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+
 
 ---
 
@@ -41,6 +34,7 @@ I criteri di Gestione per applicazioni mobili (MAM) si applicano solo quando le 
     ![Schermata della pagina di accesso a O365](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  Dopo la corretta autenticazione delle credenziali in Azure AD, verranno applicati i criteri MAM e richiesto di riavviare l'app **OneDrive** .
+  >[NOTA!] La finestra di dialogo Riavvio richiesto viene visualizzata solo per i dispositivi non registrati in Intune.
 
     ![Schermata della finestra di dialogo di riavvio necessario](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -52,6 +46,7 @@ I criteri di Gestione per applicazioni mobili (MAM) si applicano solo quando le 
 
     ![Schermata con il percorso del file aperto e l'elenco dei file esistenti](../media/AppManagement/iOS_OneDriveSuccess.png)
 
+    > [!NOTE]
     > [!NOTE] Quando si modifica un criterio distribuito, le modifiche verranno applicate alla successiva apertura dell'applicazione.
 
 ##  Accesso a OneDrive in un dispositivo Android
@@ -79,7 +74,7 @@ I criteri di Gestione per applicazioni mobili (MAM) si applicano solo quando le 
 
     ![Schermata dell'app Portale aziendale](../media/AppManagement/Android_CompanyPortalInstall.png)
 
-5.  Dopo aver completato l'installazione, fare clic su **Accetta** per accettare le condizioni.
+5.  Dopo aver completato l'installazione, scegliere **Accetta** per accettare le condizioni.
 
 6.  L'app **OneDrive** viene avviata automaticamente.
 
@@ -136,7 +131,7 @@ Per capire meglio come vengono gestiti gli account utente multipli, leggere lo s
 L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri MAM. L'**Azienda X** distribuisce i criteri MAM **prima dell'****Azienda Y**. L'account associato all'**Azienda X** otterrà i criteri MAM, a differenza dell'account associato all'Azienda Y. Se si vuole che l'account utente associato all'Azienda Y sia gestito con i criteri MAM, è necessario rimuovere l'utente associato all'Azienda X.
 ### Aggiunta di un secondo account
 #### iOS
-Se si usa un dispositivo iOS, quando si prova ad aggiungere un secondo account aziendale sullo stesso dispositivo, verrà visualizzato un messaggio di blocco.  Verrà visualizzata anche un'opzione per rimuovere l'account esistente e aggiungerne uno nuovo. È possibile farlo facendo clic su **Sì**.
+Se si usa un dispositivo iOS, quando si prova ad aggiungere un secondo account aziendale sullo stesso dispositivo, verrà visualizzato un messaggio di blocco.  Verrà visualizzata anche un'opzione per rimuovere l'account esistente e aggiungerne uno nuovo. È possibile farlo scegliendo **Sì**.
 
 ![Schermata della finestra di dialogo con il messaggio di blocco e le opzioni Sì e No](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
@@ -149,6 +144,18 @@ Per visualizzare file AV, PDF e di immagine in dispositivi Android, usare l'[app
 
 Scaricare questa app da Google Play Store.  Dopo aver installato l'app nel dispositivo, avviare l'applicazione ed eseguire l'autenticazione con le credenziali aziendali. Sarà ora possibile visualizzare file protetti e non protetti da altre app gestite da criteri.
 
+Sono supportati i tipi di file seguenti:
+
+* **Audio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (Enhanced AAC+), AAC ELD (Enhanced Low Delay AAC), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
+* **Video:** H.263, H.264 AVC, MPEG-4 SP, VP8.
+* **Immagine:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
+* PDF, PPDF
+
+------------
+|**pfile**|**text**|
+|----|----|
+|Il formato pfile è un formato "wrapper" generico per i file protetti che incapsula il contenuto crittografato e le licenze RMS e può essere usato per proteggere qualsiasi tipo di file.|I file di testo, ad esempio i file XML, CSV e così via, possono essere aperti nell'app anche se sono protetti. Tipi di file: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+---------------
 **Dispositivi Android non registrati in Intune**
 
 Prima di usare l'app RMS sharing per visualizzare i file di altre app gestite da Intune, avviare l'app RMS ed eseguire l'autenticazione con l'account aziendale.  Quando si effettua l'accesso, viene visualizzato il messaggio seguente **solo se non si dispone di una licenza RMS**:
@@ -162,6 +169,7 @@ Questo non impedisce l'uso dell'app RMS sharing per visualizzare i file aziendal
 [Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

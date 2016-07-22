@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Panoramica del ciclo di vita del dispositivo | Microsoft Intune
-description:
-keywords:
+title: Panoramica del ciclo di vita del software MDM | Microsoft Intune
+description: Informazioni su come Intune consente di gestire i dispositivi per tutto il loro ciclo di vita dalla registrazione e dalla configurazione al ritiro finale.
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 751025aa71ef41564100ea57ac0d1fe60619e214
+
 
 ---
 
 # Panoramica del ciclo di vita di gestione dei dispositivi mobili (MDM)
 
-Il ciclo di vita del dispositivo Intune inizia con la registrazione iniziale di un dispositivo e quindi si snoda in vari passaggi che si concludono quando il dispositivo non è più necessario.
+Tutti i dispositivi gestiti hanno ciò che viene definito un *ciclo di vita*. Intune può essere utile per gestire il ciclo di vita del dispositivo dalla registrazione al ritiro del dispositivo stesso quando non è più necessario:
 
 ![Ciclo di vita del dispositivo](./media/device-lifecycle.png "the Intune device lifecycle")
 
@@ -51,6 +44,7 @@ Al giorno d'oggi, la protezione dei dispositivi da accessi non autorizzati è un
 Quando un dispositivo viene smarrito o rubato, è necessario sostituirlo. Oppure quando gli utenti si spostano in un altro posto è in genere il caso di [ritirare o cancellare](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) il dispositivo. Esistono diversi modi per eseguire questa operazione dal ripristino del dispositivo, alla rimozione dalla gestione o alla cancellazione dei dati aziendali che contiene.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

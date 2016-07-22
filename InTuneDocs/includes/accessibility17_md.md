@@ -1,5 +1,5 @@
-Per altre informazioni su come la tecnologia per l'accessibilità ai computer aiuta gli utenti disabili, visitare il [sito Web Microsoft dedicato all'accessibilità](http://go.microsoft.com/fwlink/?LinkId=8431).
+Per altre informazioni su come la tecnologia di accessibilità per i computer consente di aiutare gli utenti disabili, visitare il sito Web [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

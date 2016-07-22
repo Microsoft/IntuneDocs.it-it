@@ -1,27 +1,22 @@
 ---
-# required metadata
-
 title: Gestire gli avvisi | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+
 
 ---
 
@@ -91,27 +86,28 @@ Gli avvisi contrassegnati come chiusi vengono eliminati definitivamente dopo 90 
 
 1.  Nella console di amministrazione di Intune eseguire una delle operazioni seguenti:
 
-    1.  **Per chiudere un avviso dall'elenco Avvisi**: fare clic su **Avvisi &gt; Tutti gli avvisi**. Selezionare un avviso e quindi fare clic su **Chiudi avviso**..
+    1.  **Per chiudere un avviso dall'elenco Avvisi**: fare clic su **Avvisi &gt; Tutti gli avvisi**. Selezionare un avviso e quindi fare clic su **Chiudi avviso**.
 
-    2.  **Per chiudere un avviso per un dispositivo specifico**: fare clic su **Gruppi &gt; Tutti i dispositivi**. Selezionare un dispositivo e fare clic su **Visualizza proprietà**. Quindi, nella scheda **Avvisi** selezionare un avviso e fare clic su **Chiudi avviso**..
+    2.  **Per chiudere un avviso per un dispositivo specifico**: fare clic su **Gruppi &gt; Tutti i dispositivi**. Selezionare un dispositivo e fare clic su **Visualizza proprietà**. Quindi, nella scheda **Avvisi** selezionare un avviso e fare clic su **Chiudi avviso**.
 
     3.  **Per chiudere un avviso in bacheca**: fare clic su **Panoramica sistema**. Fare clic sulla **X** accanto all'avviso in bacheca.
 
 #### Per visualizzare e riattivare gli avvisi chiusi
 
-1.  Nella console di amministrazione di Intune fare clic su **Avvisi &gt; Tutti gli avvisi**..
+1.  Nella console di amministrazione di Intune fare clic su **Avvisi &gt; Tutti gli avvisi**.
 
-2.  Nell'elenco **Filtri** fare clic su **Chiuso**..
+2.  Nell'elenco **Filtri** fare clic su **Chiuso**.
 
     Nel riquadro dell'elenco di gestione vengono visualizzati il nome e le informazioni aggiuntive relative agli avvisi. I dettagli relativi all'avviso selezionato vengono visualizzati nel riquadro di anteprima.
 
-3.  Per riattivare l'avviso selezionato, fare clic su **Riattiva avviso**..
+3.  Per riattivare l'avviso selezionato, fare clic su **Riattiva avviso**.
 
 ### Vedere anche
-[Ricevere notifiche tramite gli avvisi di Microsoft Intune](get-notified-by-microsoft-intune-alerts.md)
+[Ricevere notifiche tramite gli avvisi di Microsoft Intune](get-notified-by-alerts.md)
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

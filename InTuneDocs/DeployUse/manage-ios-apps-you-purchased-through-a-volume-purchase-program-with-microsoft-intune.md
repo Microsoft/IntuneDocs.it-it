@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Gestire le app iOS acquistate tramite Volume Purchase Program| Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ Per revocare una licenza, è necessario modificare l'azione di distribuzione spe
 
 La prima volta che un utente con un dispositivo idoneo tenta di installare un'app VPP gli viene richiesto di partecipare al programma Volume Purchase Program di Apple. È necessario completare questo passaggio per poter proseguire l'installazione dell'app.
 
-> [!TIP] Osservare la colonna **Stato delle condizioni per l’utilizzo di VPP** per visualizzare lo stato di accettazione per ogni utente a cui è stata distribuita l'app.
+> [!TIP]
+> Osservare la colonna **VPP Terms Status** per visualizzare lo stato dei accettazione per ogni utente a cui è stata distribuita l'app.
 
 Se non ci sono altre licenze disponibili, la distribuzione avrà esito negativo.
 
 ## Per monitorare le app VPP di Apple
 Per monitorare quali app VPP sono state distribuite e quante licenze sono in uso, è possibile usare l'area di lavoro **App** nel nodo **Software gestito** &gt; **App acquistate con Volume Purchase Program**.
 
-> [!TIP] È anche possibile usare **Filtri** per esaminare lo stato dell'installazione di ogni app.
+> [!TIP]
+> È anche possibile usare **Filtri** per esaminare lo stato di ogni installazione di app.
 
 ### Vedere anche
 [Distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

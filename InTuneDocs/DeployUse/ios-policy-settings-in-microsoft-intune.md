@@ -1,37 +1,33 @@
 ---
-# required metadata
-
 title: Impostazioni dei criteri di iOS | Microsoft Intune
-description:
-keywords:
+description: "Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi iOS gestiti con Intune."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9a492a16605130743b943f6aa49d1d633eb97d4
+ms.openlocfilehash: 3292df922eeb53108f2b34d4113b0b6c5a114564
+
 
 ---
 
 # Impostazioni dei criteri di iOS in Microsoft Intune
 
+Intune offre una gamma di impostazioni generali incorporate che è possibile configurare nei dispositivi iOS. È anche possibile usare lo strumento Apple Configurator per creare impostazioni personalizzate non disponibili in Intune.
+
 ## Impostazioni dei criteri di configurazione generali
 
 Usare i **criteri di configurazione generali iOS** di Microsoft Intune per configurare:
 
--   **Impostazioni di sicurezza del dispositivo mobile** : scegliere da un elenco di impostazioni predefinite che permettono di controllare una gamma di funzionalità e caratteristiche nel dispositivo.
+-   **Impostazioni generali e di sicurezza del dispositivo**: scegliere da un elenco di impostazioni predefinite che consentono di controllare una gamma di funzionalità e caratteristiche nel dispositivo.
 
 -   **Modalità tutto schermo**: bloccare un dispositivo per consentire solo l'uso di determinate funzionalità. Ad esempio, è possibile consentire a un dispositivo di eseguire solo un'app gestita specificata o disabilitare i pulsanti del volume in un dispositivo. Queste impostazioni potrebbero essere usate per un modello demo di un dispositivo o per un dispositivo dedicato all'esecuzione di una sola funzione, ad esempio un dispositivo POS.
 
@@ -47,8 +43,8 @@ Se l'impostazione desiderata non viene visualizzata in questo argomento, è poss
 |Nome impostazione|Dettagli|iOS|
 |----------------|-------|
 |**Richiedi una password per sbloccare i dispositivi mobili**|Specifica se gli utenti devono inserire una password per accedere ai loro dispositivi.|Sì|
-|**Tipo di password richiesto**|Specifica il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.|Sì|
-|**Tipo di password richiesto - Numero minimo di set di caratteri**|Sono disponibili quattro set di caratteri, lettere minuscole, lettere maiuscole, numeri e simboli. Questa impostazione specifica quanti set di caratteri diversi è necessario includere nella password. Per i dispositivi iOS specifica invece il numero di simboli che è necessario includere nella password.|Sì|
+|**Tipo di password richiesto**|Specifica il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.|sì|
+|**Tipo di password richiesto - Numero minimo di set di caratteri**|Specifica il numero di simboli, ad esempio **#** o **@**, che è necessario includere nella password.|sì|
 |**Lunghezza minima password**|Specifica il numero minimo di caratteri per la password.|sì|
 |**Consenti password semplici**|Consente l'uso di password semplici come "0000" e "1234".|sì|
 |**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|Cancella il dispositivo se questo numero di tentativi di accesso ha esito negativo.|sì|
@@ -77,7 +73,7 @@ Se l'impostazione desiderata non viene visualizzata in questo argomento, è poss
 |Nome impostazione|Dettagli|iOS|
 |----------------|-------|
 |**Consenti backup su iCloud**|Consente all'utente di eseguire il backup del dispositivo su iCloud.|Sì|
-|**Consenti sincronizzazione documenti su iCloud**|Consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud.Sì|
+|**Consenti sincronizzazione documenti su iCloud**|Consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud.|sì|
 |**Consenti sincronizzazione streaming foto su iCloud**|Consente la sincronizzazione delle foto del dispositivo su iCloud.|sì|
 |**Richiedi backup crittografato**|Richiede la crittografia di tutti i backup del dispositivo.|sì|
 
@@ -97,7 +93,7 @@ Se l'impostazione desiderata non viene visualizzata in questo argomento, è poss
 |Nome impostazione|Dettagli|iOS|
 |----------------|-------|
 |**Consenti archivio applicazioni**|Consente al dispositivo di accedere all'App Store.|sì|
-|**Richiedi una password per accedere all'archivio applicazioni**|Sì|
+|**Richiedi una password per accedere all'archivio applicazioni**|Richiede all'utente di immettere la password prima di visitare l'App Store.|Sì|
 |**Consenti acquisti in-app**|Consente gli acquisti online dall'interno di un'app in esecuzione.|Sì|
 |**Consenti documenti gestiti in altre app non gestite**|Consente di visualizzare documenti aziendali in qualsiasi app.<br>**Esempio:** si vuole impedire agli utenti il salvataggio di file dall'app OneDrive in Dropbox. Disabilitare questa impostazione. Dopo aver ricevuto i criteri (ad esempio dopo un riavvio), il dispositivo non consentirà più il salvataggio.|iOS 7.1 e versioni successive|
 |**Consenti documenti non gestiti in altre app gestite**|Consente di visualizzare qualsiasi documento nelle app aziendali gestite.|iOS 7.1 e versioni successive|
@@ -170,7 +166,8 @@ Nell'elenco **app conformi &amp; e non conformi** specificare un elenco di app c
 |**Abilita tocco per l'accesso facilitato**|Abilita o disabilita l'impostazione di accessibilità **Tocco per accesso facilitato** che consente agli utenti di eseguire sullo schermo movimenti che potrebbero essere difficili da eseguire.|
 |**Abilita regolazioni del tocco per l'accesso facilitato**|Abilita o disabilita le regolazioni del tocco per l'accesso facilitato che consentono di modificare la funzione Tocco per accesso facilitato.|
 |**Abilita selezione comandi vocali**|Abilita o disabilita l'impostazione di accessibilità **Leggi selezione** che consente di leggere a voce alta il testo selezionato.|
-> [!NOTE] Le note seguenti sono valide per le impostazioni della modalità tutto schermo per i dispositivi iOS:
+> [!NOTE]
+> Le note seguenti sono valide per le impostazioni della modalità tutto schermo per i dispositivi iOS:
 > 
 > -   Prima di poter configurare un dispositivo iOS per la modalità schermo intero, è necessario utilizzare il [strumento Configurator Apple](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) o gestione di registrazione dei dispositivi per inserire il dispositivo in modalità supervisionata. Per ulteriori informazioni sullo strumento Apple dello strumento di configurazione, vedere la documentazione di Apple.
 > -   Se l'app per iOS viene installata dopo aver distribuito i criteri di configurazione, il dispositivo non passerà alla modalità tutto schermo finché non viene riavviato.
@@ -195,7 +192,8 @@ Copiare l'URL della pagina e usarlo per la configurazione dell'elenco delle app 
 
 **Esempio:** cercare **Microsoft Word per iPad**. L'URL usato sarà **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE] È anche possibile usare il software iTunes per trovare l'app e quindi il comando **Copia collegamento** per ottenere l'URL dell'app.
+> [!NOTE]
+> È possibile usare anche il software iTunes per trovare l'app e il comando **Copia collegamento** per ottenere l'URL dell'app.
 
 
 ## Impostazioni di criteri personalizzati
@@ -230,6 +228,7 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

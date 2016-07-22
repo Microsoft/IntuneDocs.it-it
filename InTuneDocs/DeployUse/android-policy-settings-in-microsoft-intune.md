@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Impostazioni dei criteri di configurazione di Android e Samsung KNOX | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
+ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+
 
 ---
 
@@ -55,6 +49,7 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 |**Ricorda cronologia password** – **Impedisci riutilizzo delle password precedenti**|Impedisce il riutilizzo delle password usate in precedenza.|Sì|Sì|
 |**Qualità password**|Selezionare il livello di complessità delle password necessario e indicare se possono essere usati anche dispositivi biometrici.|Sì|Sì|
 |**Consenti sblocco delle impronte digitali**|Consente di sbloccare il dispositivo con un'impronta digitale.|No|Sì|
+|**Consenti Smart Lock e altri agenti di attendibilità**<br>(Android 5 e versioni successive)|Consente di controllare la funzionalità Smart Lock nei dispositivi Android compatibili. Questa funzionalità del telefono, talvolta nota anche come agenti di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se il dispositivo si trova in una posizione attendibile, ad esempio quando è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. È possibile usare questa impostazione per impedire agli utenti finali di configurare Smart Lock.|sì|No|
 
 ### Impostazioni di crittografia
 
@@ -73,7 +68,7 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 
 ### Impostazioni cloud - Documenti e dati
 
-|Nome impostazione|Dettagli|Android e Samsung KNOX|Android 4.0+|
+|Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
 |----------------|----------------------------|----------------|
 |**Consenti backup di Google**|Consente l'uso del backup di Google.|No|Sì|
 
@@ -95,7 +90,7 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 
 ### Impostazioni dell'applicazione - App
 
-|Nome impostazione|Android 4.0+|Samsung KNOX|
+|Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
 |**Consenti archivio Google Play**|Consente all'utente di accedere a Google Play Store sul dispositivo.|No|Sì|
 
@@ -179,7 +174,8 @@ Usare i **Criteri di configurazione personalizzati Android** di Microsoft Intune
 
 Questa funzionalità consente di distribuire le impostazioni Android non configurabili con i criteri di Intune.
 
-> [!NOTE] I criteri personalizzati Android attualmente supportano la configurazione di impostazioni Wi-Fi solo per dispositivi Android che includono una chiave precondivisa.
+> [!NOTE]
+> I criteri personalizzati Android attualmente supportano la configurazione di impostazioni Wi-Fi solo per dispositivi Android che includono una chiave precondivisa.
 
 ### Impostazioni generali
 
@@ -257,6 +253,7 @@ Sebbene Intune supporti profili Wi-Fi per i dispositivi Android, questa funziona
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

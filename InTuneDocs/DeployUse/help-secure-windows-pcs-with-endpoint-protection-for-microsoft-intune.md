@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Endpoint Protection per PC Windows | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: muhosabe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9b96e6c49ec9122961588156d77bf94cdbccd787
+ms.openlocfilehash: b1b1cc90672903ac0336151373272b5e20e56165
+
 
 ---
 
@@ -52,7 +46,8 @@ Per passare dall'applicazione di protezione degli endpoint corrente a Microsoft 
 
     -   Tramite la rimozione manuale dell'applicazione Endpoint Protection di terze parti.
 
-> [!NOTE] Intune non eseguirà automaticamente la disinstallazione delle applicazioni di protezione degli endpoint di terze parti.
+> [!NOTE]
+> Intune non eseguirà automaticamente la disinstallazione delle applicazioni di protezione degli endopoint di terze parti.
 
 ## Come configurare Microsoft Intune Endpoint Protection
 Attenersi alla procedura seguente per configurare Endpoint Protection per Microsoft Intune.
@@ -162,7 +157,8 @@ Per visualizzare lo stato di un'attività remota, fare clic sul collegamento **A
   - **Visualizza proprietà**: apre una pagina con altre informazioni sul malware selezionato.
   - **Informazioni sul malware**: apre un argomento di Microsoft Malware Protection Center che contiene altre informazioni sul malware.
 
-> [!IMPORTANT] L'area di lavoro **Protezione** non viene visualizzata nella console di amministrazione finché non si installa il client e si gestisce almeno un client del computer.
+> [!IMPORTANT]
+> L'area di lavoro **Protezione** non viene visualizzata nella console di amministrazione finché non si installa il client e si gestisce almeno un client del computer.
 
   ![Monitorare Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
@@ -181,7 +177,7 @@ Intune consente di eseguire un'analisi completa o rapida del malware usando Endp
 1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) passare a **Gruppi** > **Panoramica** > **Tutti i dispositivi** > **Tutti i computer** e selezionare il computer che si vuole impostare come destinazione.
 
 2. Fare clic sull'elenco a discesa **Attività remote** e selezionare l'attività. Attività da eseguire sul computer remoto.
-![Eseguire un'analisi del malware remota](../media/ep_sa_malwarescan.png)
+
 
 
 
@@ -192,6 +188,7 @@ Per altre informazioni e supporto, vedere [Troubleshoot Endpoint Protection in M
 [Policies to protect Windows PCs (Criteri per la protezione dei PC Windows)](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

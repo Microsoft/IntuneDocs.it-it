@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Gestire i contratti di licenza del software per PC Windows | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 575b8525b8b99d06358a911b8deb24ee5de48fe1
+
 
 ---
 
@@ -45,7 +39,8 @@ Nell'area di lavoro **Licenze** della console di amministrazione di Intune è po
 
 È anche possibile creare report con i dati relativi al numero di installazioni e di licenze dei titoli software. I report licenze sono utili per valutare la situazione complessiva delle licenze relative al software Microsoft e non Microsoft.
 
-> [!TIP] L'area di lavoro **Licenze** non viene visualizzata nella console di amministrazione finché non si gestisce almeno un PC Windows con il client per PC Windows di Intune.
+> [!TIP]
+> L'area di lavoro **Licenze** non viene visualizzata nella console di amministrazione finché non si gestisce almeno un PC Windows con il client per PC Windows di Intune.
 
 ## Aggiungere contratti multilicenza Microsoft
 I contratti multilicenza per Intune offrono informazioni sulle licenze per il software acquistato tramite contratti multilicenza Microsoft. È possibile aggiungere contratti multilicenza Microsoft a Intune specificando coppie di numeri di contratto. I numeri di contratto o di autorizzazione devono corrispondere ai numeri di licenza o di registrazione corretti. Le coppie dei numeri di contratto si ottengono da [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)al momento dell'acquisto dei contratti di licenza.
@@ -96,7 +91,8 @@ I contratti multilicenza per Intune offrono informazioni sulle licenze per il so
 
         -   **Numero licenza/registrazione/cliente**: immettere il numero di licenza/registrazione/cliente della coppia di licenze.
 
-        > [!NOTE] Se si aggiungono diverse coppie di numeri di contratto, in Intune viene creato un contratto con il nome specificato, che include tutte le coppie aggiunte in precedenza.
+        > [!NOTE]
+        > Se si aggiungono diverse coppie di numeri di contratto, in Intune viene creato un contratto con il nome specificato, in cui rientreranno tutte le coppie aggiunte in precedenza.
 
     È possibile fare clic sul segno **+** per aggiungere un'altra coppia di numeri di contratto o sul segno **-** per rimuovere una coppia di numeri di contratto già immessa.
 
@@ -114,7 +110,8 @@ Verrà aperta la visualizzazione **Tutti i contratti** e Intune si connetterà a
 
 Per aggiornare le informazioni sui contratti multilicenza dopo aver aggiunto i contratti di licenza in Intune, fare clic su **Aggiorna** nella pagina **Panoramica licenze**. Questa azione recupera le informazioni sulle licenze correnti da [Microsoft Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
 
-> [!IMPORTANT] Finché non vengono aggiornate le informazioni sui contratti multilicenza, è possibile che le informazioni dell'elenco di contratti siano diverse da quelle della pagina **Panoramica contratti**.
+> [!IMPORTANT]
+> Finché non vengono aggiornate le informazioni sui contratti multilicenza, è possibile che le informazioni dell'elenco di contratti siano diverse da quelle della pagina **Panoramica contratti** .
 
 Dopo aver aggiornato le informazioni sui contratti multilicenza, è possibile confrontare le informazioni sulle licenze con il software Microsoft rilevato nell'area di lavoro **App** . È anche possibile eseguire i report sulle licenze seguenti:
 
@@ -122,7 +119,8 @@ Dopo aver aggiornato le informazioni sui contratti multilicenza, è possibile co
 
 -   **Report installazione licenza**: consente di determinare se la copertura del contratto di licenza è sufficiente.
 
-> [!NOTE] Il **Titolo prodotto** visualizzato per tutti i contratti multilicenza Microsoft è **Non disponibile**.
+> [!NOTE]
+> Il **Titolo prodotto** visualizzato per tutti i contratti multilicenza Microsoft è **Non disponibile**.
 
 ## Aggiungere e modificare altri contratti di licenza software
 È anche possibile aggiungere altri tipi di contratti di licenza a Intune oltre ai contratti multilicenza Microsoft. Questi contratti possono essere relativi a software non Microsoft oppure a software Microsoft acquistato presso un rivenditore.
@@ -184,6 +182,7 @@ Viene visualizzato l'elenco **Tutti i contratti** .
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

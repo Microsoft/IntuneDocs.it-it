@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Creare e distribuire criteri MAM | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
+ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+
 
 ---
 
@@ -34,6 +27,8 @@ In questo argomento viene descritto il processo di creazione di un criterio MAM 
 - Dispositivi non gestiti da nessuna soluzione MDM (BYOD).
 
 Se si sta usando la **console di amministrazione di Intune** per la gestione dei dispositivi, è possibile creare un criterio MAM che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) stessa.
+I criteri MAM creati nella console di amministrazione di Intune non possono essere importati nel portale di Azure.  Nel portale di Azure i criteri MAM devono essere creati di nuovo.
+
 >[!IMPORTANT]
 > È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Il portale di Azure è la nuova console di amministrazione per la creazione dei criteri MAM. Se si creano criteri MAM sia nella console di amministrazione di Intune che nel portale di Azure, i criteri di quest'ultimo vengono applicati alle app e distribuiti agli utenti.
 
@@ -49,7 +44,8 @@ Prima di creare un criterio MAM, vedere le informazioni su [prerequisiti e suppo
 
     ![Schermata del pannello Gestione di applicazioni mobili di Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP] Se è la prima volta che si usa il portale di Azure, leggere prima [Portale di Azure per i criteri MAM di Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) per acquisire familiarità con il portale.
+    > [!TIP]
+    > Se si usa il portale di Azure per la prima volta, leggere [Portale di Azure per i criteri MAM di Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) per acquisire familiarità con il portale.
 
 2.  Nel pannello **Impostazioni** scegliere **Criteri per le app**.  Verrà visualizzato il pannello **Criteri per le app** in cui sarà possibile creare nuovi criteri e modificare i criteri esistenti.
 
@@ -65,7 +61,8 @@ Prima di creare un criterio MAM, vedere le informazioni su [prerequisiti e suppo
 
 5.  Scegliere **App** per aprire il **pannello App** che contiene l'elenco delle app disponibili. È possibile selezionare una o più app dall'elenco che si vuole associare il criterio che si sta creando. Dopo aver selezionato le app, scegliere il pulsante **Seleziona** nella parte inferiore del pannello **App** per salvare la selezione.
 
-    > [!IMPORTANT] Per creare un criterio è necessario selezionare almeno un'app.
+    > [!IMPORTANT]
+    > È necessario selezionare almeno un'app per creare un criterio.
 
 6.  Nel pannello **Aggiungi criteri** scegliere **Configurare le impostazioni necessarie** per aprire il pannello delle impostazioni dei criteri.
 
@@ -108,7 +105,8 @@ Dopo aver creato un criterio come descritto nella procedura precedente, non verr
 
 Solo gli utenti a cui sono state assegnate licenze di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] saranno interessati dai criteri.  Gli utenti che appartengono al gruppo di sicurezza selezionato e ai quali non è stata assegnata una licenza di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] non saranno interessati dai criteri.
 
-Se si usa Intune con Configuration Manager per gestire i dispositivi Android e iOS, il criterio viene applicato solo agli utenti inclusi direttamente nel gruppo selezionato.  I membri dei gruppi figlio annidati all'interno del gruppo selezionato non saranno interessati.
+>[!IMPORTANT]
+> Se si usa Intune con Configuration Manager per gestire i dispositivi Android e iOS, il criterio viene applicato solo agli utenti inclusi direttamente nel gruppo selezionato.  I membri dei gruppi figlio annidati all'interno del gruppo selezionato non saranno interessati.
 
 Gli utenti finali possono scaricare le app dall'Apple Store o da Google Play. Per una procedura dettagliata che visualizza come MAM protegge i dati aziendali sul dispositivo, vedere [Esperienza utente finale con app nelle quali è abilitato MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md).
 
@@ -167,6 +165,7 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 [End user experience for MAM enabled apps (Esperienza utente finale con app nelle quali è abilitato MAM)](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

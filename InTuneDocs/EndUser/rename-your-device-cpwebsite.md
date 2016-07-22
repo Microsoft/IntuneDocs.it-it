@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Rinominare il dispositivo dal sito Web del portale aziendale | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 301fdc58dbe827fa21ba7a76457ff5584bd2ff69
+
 
 ---
 
@@ -45,6 +38,7 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 ### Vedere anche
 [Uso del sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

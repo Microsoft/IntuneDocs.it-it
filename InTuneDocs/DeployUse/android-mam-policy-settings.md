@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Impostazioni dei criteri MAM per Android | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+
 
 ---
 
@@ -65,11 +59,12 @@ Il termine **App gestite da criteri** viene usato per indicare le app che sono c
 
     **Valore predefinito = Sì**
 - **Crittografa dati app**: scegliere **Sì** per abilitare la crittografia. Quando quest'impostazione è abilitata, per le app associate ai criteri di gestione delle app mobili, la crittografia viene offerta da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O file. Il contenuto nell'archivio del dispositivo è sempre crittografato.
-  >[!NOTE] Il metodo di crittografia non è conforme agli standard FIPS 140-2.
+  >[!NOTE]
+  >Il metodo di crittografia non è conforme agli standard FIPS 140-2
 
   **Valore predefinito = Sì**
 
-- **Sincronizzazione contatti disattivata:** scegliere **Sì** per impedire la sincronizzazione delle informazioni di contatto nell'app Rubrica nativa sul dispositivo. Se si sceglie **No**, l'app salverà le informazioni di contatto nell'app Rubrica nativa sul dispositivo.<br/>Quando si esegue una cancellazione selettiva per rimuovere dati aziendali, i contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. Attualmente questa opzione è disponibile solo per l'app **Microsoft Outlook**.
+- **Disable contact sync (Disabilita sincronizzazione contatti):** scegliere **Sì** per impedire la sincronizzazione delle informazioni di contatto nell'app Rubrica nativa nel dispositivo. Se si sceglie **No**, l'app salverà le informazioni di contatto nell'app Rubrica nativa sul dispositivo.<br/>Quando si esegue una cancellazione selettiva per rimuovere dati aziendali, i contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. Attualmente questa opzione è disponibile solo per l'app **Microsoft Outlook**.
 
   **Valore predefinito = Sì**
 
@@ -100,6 +95,7 @@ Il termine **App gestite da criteri** viene usato per indicare le app che sono c
 - **Blocca acquisizione schermo e Assistente per Android (Android 6 Marshmallow o versione successiva):** scegliere **Sì** per bloccare le funzionalità di acquisizione schermo e dell'**Assistente per Android** del dispositivo quando si usa l'app.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

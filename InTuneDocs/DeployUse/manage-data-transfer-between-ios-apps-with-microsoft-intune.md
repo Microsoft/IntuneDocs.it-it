@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Gestire il trasferimento di dati tra app iOS | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
+ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+
 
 ---
 
@@ -51,9 +44,9 @@ Per assicurarsi che le app distribuite mediante la soluzione MDM di terze parti 
 Questa configurazione è necessaria per i dispositivi gestiti da una soluzione MDM di terze parti. La procedura descritta di seguito illustra il flusso generale di implementazione dell'impostazione UPN e l'esperienza dell'utente finale risultante:
 
 
-1.  Configurare i criteri di gestione delle app mobili per la piattaforma iOS. Configurare le impostazioni dei criteri secondo i requisiti aziendali e selezionare le app che devono rispettare questi criteri.
+1.  Nel portale di Azure [configurare i criteri di gestione delle app mobili](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) per la piattaforma iOS. Configurare le impostazioni dei criteri secondo i requisiti aziendali e selezionare le app che devono rispettare questi criteri.
 
-2.  Distribuire le app e il profilo di posta elettronica che si vuole gestire mediante la soluzione MDM di terze parti usando l'impostazione descritta nei passaggi 3 e 4.
+2.  Distribuire le app e il profilo di posta elettronica che si vuole gestire **tramite la soluzione MDM di terze parti** usando l'impostazione descritta nei passaggi 3 e 4.
 
 3.  Distribuire l'app con le impostazioni di configurazione seguenti: key=IntuneMAMUPN, Value=<nomeutente@azienda.com> [esempio: 'IntuneMAMUPN', 'jondoe@microsoft.com']
 
@@ -80,6 +73,7 @@ Questa configurazione è necessaria per i dispositivi gestiti da una soluzione M
 [Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

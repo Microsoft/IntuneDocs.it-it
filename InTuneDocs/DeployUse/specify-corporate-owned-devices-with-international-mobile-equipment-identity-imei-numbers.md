@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Specificare i dispositivi aziendali con i numeri IMEI (International Mobile Equipment Identity) | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 398d93d4e2317d00a2f9d5f89966aaec3b942504
+ms.openlocfilehash: af4b87eb8082ee5ff11cd2d42b788ad17b334bcb
+
 
 ---
 
@@ -39,8 +32,8 @@ Microsoft Intune consente agli amministratori di importare i numeri IMEI (Intern
         Il file con estensione CSV quando viene visualizzato in un editor di testo viene visualizzato come:
 
         ```
-        AA-BBBBBB-CCCCCC-D,PO 1234
-        AA-BBBBBB-CCCCCC-E,PO 1234
+        AABBBBBBCCCCCCD,PO 1234
+        AABBBBBBCCCCCCE,PO 1234
         ```
 
     -   **Aggiungere manualmente i dettagli dispositivo**: immettere il numero IMEI e i dettagli per un massimo di cinque dispositivi.
@@ -54,6 +47,7 @@ Microsoft Intune consente agli amministratori di importare i numeri IMEI (Intern
 Quando il dispositivo con tale numero IMEI viene registrato, in genere quando un utente installa l'app Portale aziendale e completa il processo di registrazione, il dispositivo verrà contrassegnato come aziendale e verrà visualizzato come registrato nel gruppo **Dispositivi IMEI**.
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jul16_HO1-->
 
 

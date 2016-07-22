@@ -1,33 +1,27 @@
 ---
-# required metadata
-
 title: Creare i criteri e pubblicare un'app per gli utenti della valutazione| Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: 658806c07ea78a327819376c1b47af53ac51f0f9
+
 
 ---
 
 
 # Creare i criteri e pubblicare un'app per gli utenti della valutazione
-I criteri di Intune specificano impostazioni che consentono di controllare le configurazioni di sicurezza dei dispositivi mobili, di eseguire la manutenzione delle impostazioni di Windows Firewall e Endpoint Protection per i computer, nonché di distribuire applicazioni. Se si intende usare Intune per dispositivi che dopo la valutazione verranno configurati per la produzione, è essenziale seguire le istruzioni in [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) (Gestire impostazioni e funzionalità dei dispositivi con criteri di Microsoft Intune) e [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) (Proteggere i computer Windows con Endpoint Protection per Microsoft Intune).
+I criteri di Intune specificano impostazioni che consentono di controllare le impostazioni di sicurezza dei dispositivi mobili, di eseguire la manutenzione delle impostazioni di Windows Firewall ed Endpoint Protection per i computer, nonché di distribuire applicazioni. Se si intende usare Intune per dispositivi che dopo la valutazione verranno configurati per la produzione, è essenziale seguire le istruzioni in [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) e [Proteggere i PC Windows con Endpoint Protection per Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 Con Intune è possibile eseguire due tipi di installazioni delle app. La prima è un' **installazione richiesta**, con cui l'app viene distribuita automaticamente nei computer gestiti. L'altra è un'**installazione disponibile** che distribuisce l'app, o un link all'app, al portale aziendale di Intune in modo che gli utenti possano scegliere se installarla sul computer o su dispositivi mobili.
 
@@ -43,26 +37,26 @@ In questa procedura verrà impostato un criterio di configurazione per dispositi
 
 3.  Nell'elenco **Attività** della pagina **Panoramica criteri** scegliere **Aggiungi criterio**.
 
-4.  Nell'elenco dei criteri espandere la piattaforma per cui creare un criterio, quindi selezionare **Configurazione generale**, scegliere **Creare e distribuire criteri con le impostazioni consigliate** e infine fare clic su **Crea criterio**.
+4.  Nell'elenco dei criteri espandere la piattaforma per cui si vuole creare un criterio, selezionare **Configurazione generale**, scegliere **Creare e distribuire criteri con le impostazioni consigliate** e infine fare clic su **Crea criterio**.
 
-5.  Al prompt **Selezionare i gruppi a cui si desidera distribuire questo criterio**, selezionare **Utenti di valutazione personali** nell'elenco, quindi fare clic su **Aggiungi** &gt; **OK**.
+5.  Al prompt **Selezionare i gruppi a cui si vuole distribuire questo criterio** selezionare **Utenti di valutazione personali** nell'elenco, quindi fare clic su **Aggiungi**&gt;**OK**.
 
 I criteri vengono visualizzati nell'elenco dei criteri di configurazione e risultano distribuiti al gruppo **Utenti di valutazione personali** . Fare doppio clic sul criterio per visualizzare le relative impostazioni.
 
 ## Pubblicare l'app Skype per dispositivi mobili
 
-1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere l’icona **App** e quindi selezionare **App** &gt; **Aggiungi app**. Se richiesto, immettere le proprie credenziali Intune.
+1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere l'icona **App** e quindi selezionare **App**&gt;**Aggiungi app**. Se richiesto, immettere le proprie credenziali Intune.
 
     > [!NOTE]
     > Quando si avvia **Autore del software Intune** per la prima volta, si verifica un breve ritardo dovuto all'installazione dell'applicazione.
 
-2.  Verificare l'avviso di sicurezza e scegliere **Esegui**.
+2.  Leggere l'avviso di sicurezza e scegliere **Esegui**.
 
 3.  Nella pagina **Prima di iniziare** fare clic su **Avanti**.
 
-4.  Nella pagina **Installazione software** selezionare **Collegamento esterno** in **Selezionare il modo in cui questo software viene fornito ai dispositivi**.
+4.  Nella pagina **Installazione software** selezionare **Collegamento esterno**in **Selezionare il modo in cui questo software viene fornito ai dispositivi**.
 
-5.  Immettere il collegamento esterno per il software in **Specificare l'URL** e quindi scegliere **Avanti**. Assicurarsi di fare precedere l'URL da **https://**. Per l'app Skype usare il collegamento seguente corrispondente alla piattaforma per dispositivi mobili usata:
+5.  Accedere al collegamento esterno per il software in **Specificare l'URL** e quindi scegliere **Avanti**. Assicurarsi di fare precedere l'URL da **https://**. Per l'app Skype usare il collegamento seguente corrispondente alla piattaforma per dispositivi mobili usata:
 
     -   **iOS:** [https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8](https://itunes.apple.com/us/app/skype-for-iphone/id304878510?mt%3D8)
 
@@ -88,7 +82,7 @@ I criteri vengono visualizzati nell'elenco dei criteri di configurazione e risul
 
 8.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **App** &gt; **App** &gt; **Skype** &gt; **Gestisci distribuzione**.
 
-9. Nella pagina **Seleziona gruppi** selezionare **Utenti di valutazione personali** per distribuire il software a quel gruppo di utenti, quindi fare clic su **Aggiungi** &gt; **Avanti**.
+9. Nella pagina **Seleziona gruppi** selezionare **Utenti di valutazione personali** per distribuire il software a questo gruppo di utenti, quindi fare clic su **Aggiungi**&gt;**Avanti**.
 
 10. Nella pagina **Azione di distribuzione** selezionare **Installazione disponibile** dalla colonna **Approvazione** per il proprio gruppo.
 
@@ -101,9 +95,10 @@ A questo punto, il passaggio 4 della procedura di *valutazione di Microsoft Intu
 
 >[!div class="step-by-step"]
 
->[&larr; **Creare gruppi**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Registrare i dispositivi** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
+>[&larr; **Creare gruppi**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Registrare dispositivi** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

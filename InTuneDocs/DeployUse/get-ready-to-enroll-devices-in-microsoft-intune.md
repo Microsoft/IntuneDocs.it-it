@@ -1,34 +1,28 @@
 ---
-# required metadata
-
 title: Prepararsi alla registrazione dei dispositivi | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
+ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
+
 
 ---
 
 # Prepararsi alla registrazione dei dispositivi in Microsoft Intune
 Per consentire ai dipendenti di registrare i dispositivi mobili, inclusi i dispositivi [Android](set-up-android-management-with-microsoft-intune.md), [iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) e i [PC Windows](set-up-windows-device-management-with-microsoft-intune.md), in Intune è necessario abilitare la registrazione dei dispositivi. Per consentire la registrazione è necessario impostare un'autorità di gestione dei dispositivi mobili, configurare il portale aziendale di Intune, assegnare le licenze e abilitare la registrazione per la piattaforma del dispositivo.
 
-## <a name="BKMK_Set_MDM_Authority"></a>Impostare l'autorità di gestione dei dispositivi mobili
+## Impostare l'autorità di gestione dei dispositivi mobili
 Questa autorità definisce il servizio di gestione con le autorizzazioni per la gestione di un set di dispositivi. L'autorità di gestione di dispositivi mobili (MDM) prevede due opzioni: l'uso di Intune da solo e l'uso di Configuration Manager con Intune. Se Configuration Manager è impostato come autorità di gestione, non è possibile usare altri servizi per la gestione dei dispositivi mobili.
 
 >[!IMPORTANT]
@@ -45,11 +39,18 @@ Questa autorità definisce il servizio di gestione con le autorizzazioni per la 
 3.  Intune richiede di confermare che si vuole usare Intune come autorità di gestione dei dispositivi mobili. Selezionare la casella e quindi scegliere **Sì** per usare Microsoft Intune per la gestione dei dispositivi mobili.
 
 ## Configurare il Portale aziendale di Intune
+
+Il Portale aziendale di Intune è il punto in cui gli utenti possono accedere ai dati aziendali ed eseguire attività comuni quali la registrazione dei dispositivi, l'installazione di app e la ricerca delle informazioni di assistenza del reparto IT.
+
+> [!TIP]
+> Quando si personalizza il portale aziendale, le configurazioni vengono applicate sia al sito Web che alle app Portale aziendale.
+
 La personalizzazione del portale aziendale consente di offrire agli utenti finali un'esperienza familiare e utile. A tale scopo, accedere alla [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) come amministratore tenant o del servizio, scegliere **Amministrazione** &gt; **Portale aziendale** e configurare le impostazioni del Portale aziendale.
 
-![admin-console-admin-workspace-comp-portal-settings](../media/cp_setup.png)
+![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
 #### Informazioni di contatto e informativa sulla privacy della società
+
 Il nome dell'azienda viene visualizzato come titolo del portale aziendale. I dettagli e le informazioni di contatto vengono visualizzati agli utenti nella schermata Contatta l'IT del portale aziendale. L'informativa sulla privacy viene visualizzata quando un utente fa clic sul relativo collegamento.
 
 |Nome del campo|Lunghezza massima|Altre informazioni|
@@ -69,7 +70,9 @@ Il sito di assistenza viene visualizzato agli utenti nel portale aziendale in mo
     |URL sito Web del supporto tecnico|150|Se si dispone di un sito Web di supporto che si desidera venga usato dagli utenti, è necessario specificare qui l'URL. Il formato dell'URL deve essere https://www.contoso.com. Se non si specifica un URL, non verrà visualizzato alcun valore nella pagina **Contatta l'IT** del portale aziendale.|
     |Nome sito Web|40|Questo è il nome descrittivo visualizzato per l'URL del sito Web del supporto tecnico. Se si specifica solo un URL del sito Web e nessun nome descrittivo, nella pagina **Contatta l'IT** del portale aziendale verrà visualizzato **Vai al sito Web IT**.|
 
-## Personalizzazione del branding aziendale
+
+#### Personalizzazione del branding aziendale
+
 È possibile personalizzare il portale aziendale con logo, nome dell'azienda, colore del tema e sfondo.
 
 |Nome del campo|Altre informazioni|
@@ -81,13 +84,11 @@ Il sito di assistenza viene visualizzato agli utenti nel portale aziendale in mo
 
 Una volta salvate le modifiche, è possibile usare i collegamenti riportati in fondo alla pagina **Portale aziendale** della console di amministrazione per visualizzare il sito Web del portale aziendale. Questi collegamenti non possono essere modificati. Quando un utente esegue l'accesso, questi collegamenti visualizzano le sottoscrizioni nel portale aziendale.
 
-
-
 ## Assegnare una licenza utente di Intune
 
-Usare il **[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]** per aggiungere manualmente gli utenti basati su cloud e assegnare licenze ad account utente basati su cloud e account sincronizzati da Active Directory locale ad Azure AD.
+Usare il **portale di gestione di Office 365** per aggiungere manualmente gli utenti basati su cloud e assegnare licenze ad account utente basati su cloud e account sincronizzati da Active Directory locale ad Azure AD.
 
-1.  Accedere al [portale per gli account Intune](https://portal.office.com/Admin/Default.aspx) usando le credenziali di amministratore tenant.
+1.  Accedere al [portale di gestione di Office 365](https://portal.office.com/Admin/Default.aspx) usando le credenziali di amministratore tenant.
 
 2.  Selezionare l'account utente a cui si desidera assegnare la licenza e la licenza utente di Intune, quindi abilitare la casella di controllo **Microsoft Intune** nelle proprietà dell'account utente.
 
@@ -107,6 +108,7 @@ Dopo aver impostato l'autorità MDM, è necessario impostare la gestione dei dis
  - [Specificare i dispositivi di proprietà dell'azienda con i numeri IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) per registrare i dispositivi e i criteri di destinazione
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

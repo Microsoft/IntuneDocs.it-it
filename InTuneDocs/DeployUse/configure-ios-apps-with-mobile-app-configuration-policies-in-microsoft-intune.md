@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Configurare le app iOS con i criteri di configurazione delle app mobili | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: a1b2fb7f2938939725465a18efb594dda91d16bd
+
 
 ---
 
@@ -42,7 +36,8 @@ I criteri di configurazione delle app mobili permettono di evitare questi proble
 
 Questi criteri non vengono distribuiti direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi distribuita. Le impostazioni dei criteri vengono usate ogni volta che l'app ne esegue la ricerca (in genere, alla prima esecuzione).
 
-> [!TIP] Questo tipo di criteri è attualmente disponibile solo per i dispositivi che eseguono iOS 7.1 e versioni successive e supporta i tipi di installazione di app seguenti:
+> [!TIP]
+> Questo tipo di criteri è attualmente disponibile solo per i dispositivi che eseguono iOS 7.1 e versioni successive e supporta i tipi di installazione di app seguenti:
 > 
 > -   **App iOS gestita dall'App Store**
 > -   **Pacchetto app per iOS**
@@ -62,7 +57,8 @@ Questi criteri non vengono distribuiti direttamente agli utenti e ai dispositivi
 
 4.  Nella sezione **Criterio di configurazione delle app per dispositivi mobili** della pagina immettere o incollare un elenco di proprietà XML contenente le impostazioni di configurazione delle app desiderate.
 
-    > [!TIP] Per altre informazioni sugli elenchi di proprietà XML, vedere [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Informazioni sugli elenchi di proprietà XML) nella iOS Developer Library.
+    > [!TIP]
+    > Per altre informazioni sugli elenchi di proprietà XML, vedere l'articolo relativo agli [elenchi di proprietà XML](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) nella libreria degli sviluppatori iOS.
     > 
     > Il formato dell'elenco di proprietà XML varia a seconda dell'app da configurare. Per altre informazioni sul formato esatto da usare, contattare il fornitore dell'app.
     > 
@@ -104,7 +100,8 @@ Continuare quindi a distribuire e monitorare la distribuzione dell'app come di c
 
 Quando l'app distribuita viene eseguita in un dispositivo, verrà eseguita con le impostazioni configurate nel criterio di configurazione delle app mobili.
 
-> [!TIP] Se uno o più criteri di configurazione delle app sono in conflitto, nessun criterio viene applicato e il conflitto viene riportato nel **Dashboard** della console di amministrazione di Intune
+> [!TIP]
+> Se uno o più criteri di configurazione delle app sono in conflitto, non viene applicato alcun criterio e il conflitto viene segnalato nel **Dashboard** della console di amministrazione di Intune.
 
 ## Formato di esempio per file XML di configurazione delle app per dispositivi mobili
 
@@ -139,6 +136,7 @@ Quando si crea un file di configurazione delle app per dispositivi mobili, è po
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

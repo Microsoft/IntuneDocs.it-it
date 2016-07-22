@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Configurazioni personalizzate per i profili VPN | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d5c48a4cead6250864f5b10444d99d062441bd99
+ms.openlocfilehash: 7e7c50552b5a61804e759a7ec5443029d4bd4584
+
 
 ---
 
@@ -50,7 +44,8 @@ ms.suite: ems
 
 Quando si seleziona un criterio distribuito, è possibile visualizzare altre informazioni sulla distribuzione nella parte inferiore dell'elenco di criteri.
 
-##Esempio di impostazioni URI per la configurazione personalizzata di un profilo VPN Di seguito sono riportate voci di esempio di valori URI per la creazione di una configurazione personalizzata in una VPN di una società fittizia denominata Contoso. Per altre informazioni quali il tipo di dati per ogni voce, vedere [CSP (Configuration Service Provider) VPNv2](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
+##Esempio di impostazioni URI per la configurazione personalizzata di un profilo VPN
+Di seguito sono riportate voci di esempio per valori URI, per la creazione di una configurazione personalizzata in una VPN di un'azienda fittizia denominata Contoso. Per altre informazioni quali il tipo di dati per ogni voce, vedere [CSP (Configuration Service Provider) VPNv2](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
 
 VPN nativa di Contoso (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -116,6 +111,7 @@ Esempi:
 (Connessioni VPN in Microsoft Intune)[vpn-connections-in-microsoft-intune.md]
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

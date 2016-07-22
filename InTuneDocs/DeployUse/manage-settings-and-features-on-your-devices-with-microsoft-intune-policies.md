@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Gestire impostazioni e funzionalità nei dispositivi con i criteri | Microsoft Intune
-description:
-keywords:
+title: "Gestire impostazioni e funzionalità nei dispositivi con i criteri | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: ab570d551189ec71b54081229b93d7b4ce8d58d5
+
 
 ---
 
@@ -54,7 +48,8 @@ Per l'elenco completo dei criteri di Intune vedere [Informazioni di riferimento 
 
 2.  Scegliere il criterio desiderato e scegliere di usare le impostazioni consigliate per il criterio (se disponibili; è possibile modificare queste impostazioni successivamente) o di creare un criterio personalizzato con le proprie impostazioni.
 
-    > [!TIP] Per suggerimenti sulla scelta dei criteri corretti vedere [Informazioni di riferimento sui criteri di Microsoft Intune](microsoft-intune-policy-reference.md).
+    > [!TIP]
+    > Per suggerimenti sulla scelta dei criteri corretti vedere [Informazioni di riferimento sui criteri di Microsoft Intune](microsoft-intune-policy-reference.md).
 
 3.  Quando si è pronti, scegliere **Crea criterio**.
 
@@ -119,7 +114,7 @@ Se dopo l'invio della prima notifica il dispositivo non contatta il servizio per
 
 In questo caso, il dispositivo otterrà il criterio al successivo controllo pianificato con il servizio Intune come indicato di seguito:
 
-- iOS: ogni 6 ore
+- iOS e Mac OS X: ogni 6 ore
 - Android: ogni 8 ore
 - Windows Phone: ogni 8 ore
 - Dispositivi Windows RT registrati: ogni 24 ore
@@ -127,10 +122,10 @@ In questo caso, il dispositivo otterrà il criterio al successivo controllo pian
 
 Se il dispositivo è stato appena registrato, la frequenza di controllo sarà più maggiore come segue:
 
-- iOS: ogni 15 minuti per 6 ore e quindi ogni 6 ore
+- iOS e Mac OS X: ogni 15 minuti per 6 ore e quindi ogni 6 ore
 - Android: ogni 3 minuti per 15 minuti, quindi ogni 15 minuti per 2 ore e infine ogni 8 ore
 - Windows Phone: ogni 5 minuti per 15 minuti, quindi ogni 15 minuti per 2 ore e infine ogni 8 ore
-- PC Windows registrati come dispositivi: ogni 3 minuti per 30 minuti e quindi ogni 24 ore
+- PC Windows registrati come dispositivi: ogni 3 minuti per 30 minuti e quindi ogni 8 ore
 
 In qualsiasi momento gli utenti possono anche avviare l'app Portale aziendale e sincronizzare il dispositivo per controllare immediatamente la disponibilità di criteri.
 
@@ -149,7 +144,7 @@ Altre modifiche, ad esempio un aggiornamento delle informazioni di contatto nel 
 
 -   L'impostazione di un criterio di conformità più restrittivo viene applicata se valutata rispetto alla stessa impostazione in un criterio di conformità diverso
 
--   L'impostazione di un criterio di configurazione più restrittivo viene applicata se valutata rispetto alla stessa impostazione in un criterio di configurazione diverso
+-   Se un'impostazione dei criteri di configurazione è in conflitto con un'impostazione di un altro criterio di configurazione, il conflitto viene visualizzato nella console di Intune. Tali conflitti devono essere risolti manualmente.
 
 ### Cosa accade quando i criteri di gestione delle applicazioni mobili (MAM) sono in conflitto tra loro? Quale verrà applicato all'app?
 I valori in conflitto sono le impostazioni più restrittive disponibili in un criterio di gestione delle applicazioni mobili, ad eccezione dei campi di immissione numerici (come il numero di tentativi di immissione del PIN prima della reimpostazione)  che verranno impostati sugli stessi valori configurati durante la creazione di un criterio MAM nella console usando l'opzione delle impostazioni consigliate.
@@ -178,7 +173,25 @@ Quando si elimina un criterio o si rimuove un dispositivo da un gruppo in cui è
         - Tipo di password richiesto
         - Scadenza password (giorni)
         - Ricorda cronologia password
-        - Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo - Minuti di inattività prima che venga richiesta la password - Tipo di password richiesto - Numero minimo di set di caratteri - Consenti dispositivo foto/video - Richiedi crittografia sui dispositivi mobili - Consenti archivi rimovibili - Consenti browser Web - Consenti archivio applicazioni - Consenti acquisizione schermo - Consenti georilevazione - Consenti account Microsoft - Consenti copia e incolla - Consenti tethering Wi-Fi - Consenti connessione automatica agli hotspot Wi-Fi gratuiti - Consenti creazione report degli hotspot Wi-Fi - Consenti ripristino impostazioni predefinite - Consenti Bluetooth - Consenti NFC - Consenti Wi-Fi
+        - Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo
+        - Minuti di inattività prima che venga richiesta la password
+        - Tipo di password richiesto - numero minimo di set di caratteri
+        - Consenti dispositivo foto/video
+        - Richiedi crittografia sui dispositivi mobili
+        - Consenti archivi rimovibili
+        - Consenti browser Web
+        - Consenti archivio applicazioni
+        - Consenti acquisizione schermo
+        - Consenti georilevazione
+        - Consenti account Microsoft
+        - Consenti copia e incolla
+        - Consenti tethering Wi-Fi
+        - Consenti connessione automatica agli hotspot Wi-Fi gratuiti
+        - Consenti creazione report degli hotspot Wi-Fi
+        - Consenti ripristino impostazioni predefinite
+        - Consenti Bluetooth
+        - Consenti NFC
+        - Consenti Wi-Fi
     
     - **iOS**: vengono rimosse tutte le impostazioni, ad eccezione di:
         - Consenti roaming vocale
@@ -200,9 +213,10 @@ Quando si elimina un criterio o si rimuove un dispositivo da un gruppo in cui è
 
 ### Dove è possibile trovare contenuti sulla risoluzione dei problemi?
 
-Vedere [Troubleshoot policies in Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune) (Risolvere i problemi relativi ai criteri in Microsoft Intune).
+Vedere [Risolvere i problemi relativi ai criteri in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

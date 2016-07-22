@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Metodi comuni per l'uso di Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9cb6894cefad1da14332f9994fdf45fe2d1e9b9c
+ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
+
 
 ---
 
@@ -67,11 +61,12 @@ I task worker usano sempre più le tecnologie mobili.  Ad esempio, oggi è norma
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## Abilitare i dipendenti per l'accesso protetto a Office 365 da un chiosco pubblico non gestito
-Talvolta i dipendenti devono usare dispositivi, app o browser che non è possibile gestire, ad esempio i computer pubblici disponibili presso le fiere e gli hotel. In questi casi è opportuno consentire ai dipendenti di accedere alla posta elettronica aziendale? Con Intune ed Enterprise Mobility Suite <!--you have choices. The--> la risposta può essere semplicemente "no" limitando l'accesso alla posta elettronica dei dispositivi gestiti dall'organizzazione.  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  Ciò assicura che i dipendenti fortemente autenticati non lascino accidentalmente i dati aziendali su computer non attendibili.
+Talvolta i dipendenti devono usare dispositivi, app o browser che non è possibile gestire, ad esempio i computer pubblici disponibili presso le fiere e gli hotel. In questi casi è opportuno consentire ai dipendenti di accedere alla posta elettronica aziendale? Con Intune ed Enterprise Mobility Suite, <!--you have choices. The--> la risposta può essere semplicemente "no". È sufficiente limitare l'accesso alla posta elettronica dei dispositivi gestiti dall'organizzazione.  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  Ciò assicura che i dipendenti fortemente autenticati non lascino accidentalmente i dati aziendali su computer non attendibili.
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

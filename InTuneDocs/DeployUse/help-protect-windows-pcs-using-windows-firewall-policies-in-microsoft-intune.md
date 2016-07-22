@@ -1,34 +1,28 @@
 ---
-# required metadata
-
 title: Criteri firewall per PC Windows | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+
 
 ---
 
 # Proteggere i PC Windows con criteri di Windows Firewall in Microsoft Intune
 Microsoft Intune consente di proteggere i PC Windows gestiti usando il client Intune in diversi modi, ad esempio usando criteri che consentono di configurare Windows Firewall sui PC.
 
-Se il client Intune per PC Windows non è ancora stato installato sui computer, vedere [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) (Installare il client PC Windows con Microsoft Intune).
+Se il client Intune per PC Windows non è ancora stato installato nei computer, vedere [Installare il client PC Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Usare le informazioni delle sezioni seguenti per configurare, distribuire e monitorare i criteri di Windows Firewall sui PC Windows.
 
@@ -36,7 +30,7 @@ Usare le informazioni delle sezioni seguenti per configurare, distribuire e moni
 I criteri di Windows Firewall consentono di creare e distribuire le impostazioni che controllano Windows Firewall nei PC gestiti. Non è possibile gestire le eccezioni personalizzate per Windows Firewall e queste impostazioni non influenzano i firewall di terze parti.
 
 > [!NOTE]
-> Se i criteri di Microsoft Intune e Criteri di gruppo sono configurati per gestire le stesse impostazioni nel PC, le impostazioni di Criteri di gruppo sostituiscono i criteri di Microsoft Intune. Per informazioni su come evitare i conflitti tra criteri di Intune e Criteri di gruppo, vedere [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md) (Risolvere i conflitti tra i criteri di oggetto Criteri di gruppo e Microsoft Intune).
+> Se i criteri di Microsoft Intune e Criteri di gruppo sono configurati per gestire le stesse impostazioni nel PC, le impostazioni di Criteri di gruppo sostituiscono i criteri di Microsoft Intune. Per informazioni su come evitare i conflitti tra criteri di Intune e Criteri di gruppo, vedere [Risolvere i conflitti di criteri tra Microsoft Intune e gli oggetti Criteri di gruppo](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
 > Se si vogliono distribuire le impostazioni di Windows Firewall nei computer che eseguono Windows Vista, è necessario innanzitutto installare l' [hotfix KB971800](http://support2.microsoft.com/kb/971800) in tali computer.
 
@@ -48,9 +42,9 @@ I criteri di Windows Firewall consentono di creare e distribuire le impostazioni
 
 ## Configurare un criterio di Windows Firewall
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) fare clic su **Criteri** &gt; **Aggiungi criterio**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Criteri** &gt; **Aggiungi criterio**.
 
-2.  Configurare e distribuire un criterio delle **Impostazioni di Windows Firewall** . È possibile usare le impostazioni consigliate o personalizzare le impostazioni. Per altre informazioni su come creare e distribuire i criteri, vedere [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) (Attività comuni di gestione di PC Windows con il client di Microsoft Intune).
+2.  Configurare e distribuire un criterio delle **Impostazioni di Windows Firewall** . È possibile usare le impostazioni consigliate o personalizzare le impostazioni. Per altre informazioni su come creare e distribuire i criteri, vedere [Attività comuni di gestione di PC Windows con client di Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     La sezione seguente illustra i valori che possono essere configurati nei criteri e i valori predefiniti che vengono usati se i criteri non vengono personalizzati.
 
@@ -124,6 +118,7 @@ Dopo aver configurato i valori di base precedenti, è possibile configurare le e
 [Policies to protect Windows PCs (Criteri per la protezione dei PC Windows)](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
