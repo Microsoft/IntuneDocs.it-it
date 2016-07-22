@@ -1,6 +1,5 @@
 # [Comprendere ed esplorare](/intune/understand-explore/introduction-to-microsoft-intune)
 # [Introduzione](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
-# [Pianificare e progettare](ways-to-do-enterprise-mobility.md)
 <!--- ## [Migrate to Intune](migrating-to-intune.md)
 ### [Set up Intune](migrating-to-intune-step-one.md)
 ### [Configure Intune](migrating-to-intune-step-two.md)
@@ -21,6 +20,6 @@
 # [Risolvere i problemi](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

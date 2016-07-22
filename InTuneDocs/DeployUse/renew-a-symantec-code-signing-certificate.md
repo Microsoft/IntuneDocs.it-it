@@ -66,6 +66,6 @@ La specifica di un file SSP.xap firmato attualmente è l'unico modo per fornire 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

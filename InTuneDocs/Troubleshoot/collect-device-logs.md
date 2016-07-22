@@ -46,6 +46,6 @@ Per il portale aziendale di Windows i log si trovano in *%localappdata%\Packages
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

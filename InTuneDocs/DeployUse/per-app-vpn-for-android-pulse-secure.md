@@ -1,17 +1,20 @@
 ---
 title: Profilo VPN app per Android con Pulse Secure | Microsoft Intune
-description: 
+description: "È possibile creare un profilo VPN per app specifiche per i dispositivi Android gestiti da Intune."
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 05/08/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
-ms.sourcegitcommit: 40e5602a4675bd92a85001827fb43426c41ed1e3
-ms.openlocfilehash: fc58e71a9b2279200dee2630aab7dbab727ea128
+ms.reviewer: chrisbal
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 9e3dd7c0c176cacadc7e041bbda5fade11215c27
+ms.openlocfilehash: 8f8dad237a6b8de51acd869913faa487a5faeda1
 
 
 ---
@@ -74,6 +77,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

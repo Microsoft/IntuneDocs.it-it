@@ -71,6 +71,6 @@ La gestione delle app senza la registrazione del dispositivo consente al servizi
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

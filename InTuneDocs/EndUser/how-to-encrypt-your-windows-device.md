@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: "Procedura: Crittografare un dispositivo Windows| Microsoft Intune"
-description:
-keywords:
+title: 'Procedura: Crittografare un dispositivo Windows| Microsoft Intune'
+description: 
+keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 05/30/2016
+manager: arob98
+ms.date: 6/15/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
+ms.openlocfilehash: 8c3369d760444e222f65573e52e2d23ba61e1d72
+
 
 ---
 
@@ -39,6 +34,7 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 
