@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Trovare un nome della famiglia di pacchetti (PFN) per VPN per app |Microsoft Intune|
-description:
-keywords:
+title: Trovare un nome della famiglia di pacchetti (PFN) per VPN per app | Microsoft Intune
+description: Trovare un nome della famiglia di pacchetti per configurare una VPN per app.
+keywords: 
 author: nbigman
-manager: [ALIAS]
-ms.date: 05/10/2016
+manager: Arob98
+ms.date: 07/20/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
+ms.reviewer: tycast
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 9a049127d79098bfb8992055a0a8b20fbfafd8c9
+ms.openlocfilehash: 980611a6c1fafdbc990f30d3144766abc97e632b
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -91,6 +85,7 @@ In Edge verranno visualizzate le informazioni desiderate. In Internet Explorer f
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jul16_HO3-->
 
 

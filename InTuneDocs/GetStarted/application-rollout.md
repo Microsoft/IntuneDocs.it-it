@@ -1,6 +1,6 @@
 ---
 title: Implementazione di applicazioni | Microsoft Intune
-description: 
+description: Suggerimenti per un'implementazione graduale delle app in Microsoft Intune.
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+ms.sourcegitcommit: 2427768c0ca73d20140462946ba2984b7999d864
+ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
 
 
 ---
@@ -44,7 +44,7 @@ Considerare quanto segue:
 
 -   Verificare che il programma di installazione scelto per l'app sia supportato dalla distribuzione di app di Intune, come descritto in [Aggiungere app con Microsoft Intune](/intune/deploy-use/add-apps).
 
--   Assicurarsi che siano installati i prerequisiti di distribuzione dell'applicazione. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->.
+-   Assicurarsi che siano installati i prerequisiti di distribuzione dell'applicazione. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).--->
 
 -   Controllare che il tipo di app sia supportato da Intune.
 
@@ -95,6 +95,6 @@ Durante la fase pilota l'app verrà distribuita a un piccolo gruppo di utenti e 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

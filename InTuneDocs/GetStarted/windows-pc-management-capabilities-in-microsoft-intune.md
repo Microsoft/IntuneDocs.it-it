@@ -1,10 +1,10 @@
 ---
 title: "Funzionalità di gestione dei PC Windows | Microsoft Intune"
-description: 
+description: "Informazioni sulle funzionalità di Intune per gestire i PC Windows con il software client di Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
-ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 28eebfc49eeff6b070ac32a7d2c4bbec59a527b9
 
 
 ---
@@ -74,6 +74,6 @@ Di seguito sono elencati i requisiti software per installare il client PC Intune
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

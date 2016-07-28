@@ -1,30 +1,26 @@
 ---
 title: Configurare l'infrastruttura di certificazione per PFX | Microsoft Intune
-description:
-keywords:
+description: Creare e distribuire profili certificato con estensione pfx.
+keywords: 
 author: nbigman
-manager: jeffgilb
+manager: Arob98
 ms.date: 05/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: 
+ms.reviewer: vinaybha
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: f654dba31198115851feeeec90f04b8ad767e549
+
 
 
 ---
 # Configurare l'infrastruttura di certificazione
-Questo argomento descrive cosa è necessario per creare e distribuire i profili di certificato.
+Questo argomento descrive cosa è necessario per creare e distribuire i profili certificato con estensione pfx.
 
 Per eseguire qualsiasi autenticazione basata su certificati all'interno dell'azienda, è necessaria un'autorità di certificazione dell'organizzazione.
 
@@ -51,7 +47,7 @@ Per usare i profili di certificato PFX, oltre all'autorità di certificazione de
  > [!NOTE]           
 > -    Il server che ospita WAP [deve installare un aggiornamento](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) che abilita il supporto per gli URL lunghi usati dal servizio Registrazione dispositivi di rete. Questo aggiornamento è incluso nell' [aggiornamento cumulativo di dicembre 2014](http://support.microsoft.com/kb/3013769)oppure può essere scaricato singolarmente da [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  Il server che ospita WAP deve avere un certificato SSL che corrisponde al nome pubblicato ai client esterni e riconosciuto come attendibile dal server NDES. Questi certificati consentono al server WAP di chiudere la connessione SSL dai client e creare una nuova connessione SSL nel server NDES.
-Per informazioni sui certificati per WAP, vedere la sezione sulla **pianificazione dei certificati** in [Pianificazione della pubblicazione di applicazioni mediante il proxy applicazione Web](https://technet.microsoft.com/library/dn383650.aspx). Per informazioni generali sui server proxy applicazione Web, vedere [Utilizzo di proxy applicazione Web](http://technet.microsoft.com/library/dn584113.aspx)
+    Per informazioni sui certificati per WAP, vedere la sezione sulla **pianificazione dei certificati** in [Pianificazione della pubblicazione di applicazioni mediante il proxy applicazione Web](https://technet.microsoft.com/library/dn383650.aspx). Per informazioni generali sui server WAP (Web Application Proxy, proxy di applicazioni Web), vedere [Utilizzo di Proxy applicazione Web](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
 ### Certificati e modelli
@@ -82,12 +78,14 @@ In questa attività verrà pubblicato il modello di certificato
 
     -   Nella scheda **Estensioni** verificare che la **descrizione dei criteri dell'applicazione** includa **Autenticazione client**.
 
-        > [!IMPORTANT] Per i modelli di certificato iOS e Mac OS X, nella scheda **Estensioni** modificare **Utilizzo chiavi** e verificare che l'opzione **Firma come prova dell'origine** non sia selezionata.
+        > [!IMPORTANT]
+        > Per i modelli di certificato iOS e Mac OS X, nella scheda **Estensioni** modificare **Utilizzo chiavi** e verificare che **Firma come prova dell'origine** non sia selezionato.
 
 
 3.  Esaminare il **periodo di validità** nella scheda **Generale** del modello. Per impostazione predefinita, Intune usa il valore configurato nel modello. Tuttavia, è possibile configurare la CA per consentire al richiedente di specificare un valore diverso, che è poi possibile impostare dalla console di amministrazione di Intune. Per usare sempre il valore nel modello, ignorare il resto del passaggio.
 
-    > [!IMPORTANT] Le piattaforme iOS e Mac OS X usano sempre il valore impostato nel modello, indipendentemente da altre configurazioni.
+    > [!IMPORTANT]
+    > Le piattaforme iOS e Mac OS X usano sempre il valore impostato nel modello, indipendentemente da altre configurazioni.
 
     Per configurare la CA in modo che consenta al richiedente di specificare il periodo di validità, eseguire questi comandi nella CA:
 
@@ -105,7 +103,7 @@ In questa attività verrà pubblicato il modello di certificato
 
 5.  Nel computer della CA assicurarsi che il computer che ospita Connettore di certificati di Intune abbia l'autorizzazione di registrazione per poter accedere al modello usato nella creazione del profilo PFX. Impostare l'autorizzazione nella scheda **Sicurezza** delle proprietà del computer della CA.
 
-### Attività 4: Abilitare, installare e configurare Connettore di certificati di Intune
+### Attività 2: abilitare, installare e configurare il Connettore di certificati di Intune
 In questa attività sarà possibile:
 
 Scaricare, installare e configurare Connettore di certificati
@@ -124,7 +122,7 @@ Scaricare, installare e configurare Connettore di certificati
 
 2.  Al termine del download, eseguire il programma di installazione scaricato (**ndesconnectorssetup.exe**):
 
-  Eseguire il programma di installazione nel computer che può connettersi all'autorità di certificazione. Scegliere l'opzione di distribuzione PFX, quindi fare clic su Installa. Al termine dell'installazione, procedere alla creazione di un profilo certificato come descritto in [Configure Intune certificate profiles](configure-intune-certificate-profiles.md) (Configurare i profili certificato di Intune).
+  Eseguire il programma di installazione nel computer che può connettersi all'autorità di certificazione. Scegliere l'opzione di distribuzione PFX, quindi fare clic su Installa. Al termine dell'installazione, procedere alla creazione di un profilo certificato come descritto in [Configure certificate profiles](configure-intune-certificate-profiles.md) (Configurare i profili certificato).
 
    <!-- Not sure about step 3 below -->
 
@@ -134,7 +132,8 @@ Scaricare, installare e configurare Connettore di certificati
 
 4.  Al termine della procedura guidata, prima di chiuderla, fare clic su **Avvia l'interfaccia utente di Connettore di certificati**.
 
-    > [!TIP] Se si chiude la procedura guidata prima di avviare l'interfaccia utente di Connettore di certificati, è possibile riaprirla con il comando seguente:
+    > [!TIP]
+    > Se si chiude la procedura guidata prima di avviare l'interfaccia utente di Connettore di certificati, è possibile riaprirla con il comando seguente:
     >
     > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -148,16 +147,17 @@ Scaricare, installare e configurare Connettore di certificati
 
     Ora è possibile chiudere l'interfaccia utente di Connettore di certificati.
 
-6.  Aprire il prompt dei comandi e digitare **services.msc**, quindi premere **Invio**, fare clic con il pulsante destro del mouse su **Servizio Intune Connector** e scegliere **Riavvia**
+6.  Aprire il prompt dei comandi e digitare **services.msc**, quindi premere **Invio**, fare clic con il pulsante destro del mouse su **Servizio Intune Connector** e scegliere **Riavvia**.
 
 Per confermare che il servizio sia in esecuzione, aprire un browser e immettere il seguente URL, che deve restituire un errore **403** :
 
 **http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
 ### Passaggi successivi
-A questo punto è possibile configurare i profili certificato come descritto in [Configure Intune certificate profiles](Configure-Intune-certificate-profiles.md) (Configurare i profili certificato di Intune).
+A questo punto è possibile configurare i profili certificato come descritto in [Configure certificate profiles](Configure-Intune-certificate-profiles.md) (Configurare i profili certificato).
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,27 +1,27 @@
 ---
-title: Informazioni di riferimento sui criteri di Microsoft Intune | Microsoft Intune
-description: 
+title: Informazioni di riferimento sui criteri di configurazione | Microsoft Intune
+description: "Usare le informazioni in questo argomento per decidere più facilmente quali criteri di Microsoft Intune è necessario usare per gestire i dispositivi."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 3d9e03a3c89af72caeaa9c9c47426f331adb0fca
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: cce19141ef25a8cca785d6ae80d1fe03ab352a8e
 
 
 ---
 
 # Informazioni di riferimento sui criteri di Microsoft Intune
 
-Usare le informazioni in questo argomento per decidere più facilmente quali criteri di Microsoft Intune è necessario usare per gestire i dispositivi.
+Usare le informazioni in questo argomento per decidere più facilmente quali criteri di configurazione di Microsoft Intune è necessario usare per gestire i dispositivi.
 
 > [!TIP]
 > Per informazioni più dettagliate su come usare i criteri, vedere [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
@@ -47,11 +47,14 @@ Usare le informazioni in questo argomento per decidere più facilmente quali cri
 |**Configurazione personalizzata (iOS 7.1 e versioni successive)**|Distribuire i profili di configurazione ai dispositivi iOS creati usando lo strumento Apple Configurator. Questo criterio è utile quando l'impostazione necessaria non è disponibile nei criteri di configurazione.<br /><br />Per informazioni dettagliate, vedere [Impostazioni dei criteri di iOS in Microsoft Intune](ios-policy-settings-in-microsoft-intune.md).|
 |**Profilo di posta elettronica (iOS 7.1 e versioni successive)**|Creare, distribuire e monitorare le impostazioni di posta elettronica di Exchange ActiveSync in dispositivi gestiti. In questo modo, gli utenti possono accedere alla posta elettronica aziendale dai dispositivi personali senza alcuna configurazione.<br /><br />Per informazioni dettagliate, vedere [Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Configurazione generale (iOS 7.1 e versioni successive)**|Configurare le impostazioni funzionali e di sicurezza del dispositivo mobile.<br />-   Specificare le app conformi o non conformi e segnalare quando vengono usate.<br />Configurare la modalità a tutto schermo che blocca i dispositivi per permettere il funzionamento solo di determinate funzionalità. Ad esempio, consentire al dispositivo di eseguire una sola app o disabilitare i pulsanti del volume.<br /><br />Per informazioni dettagliate, vedere [Impostazioni dei criteri di iOS in Microsoft Intune](ios-policy-settings-in-microsoft-intune.md).|
+|**Criteri di configurazione delle app per dispositivi mobili (iOS 7.1 e versioni successive)**|Usare i criteri di configurazione delle app mobili per specificare automaticamente le impostazioni che potrebbero essere necessarie quando l'utente esegue un'app iOS.<br /><br />Per informazioni dettagliate vedere [Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
+|**Criteri del profilo di provisioning per dispositivi mobili (iOS 7.1 e versioni successive)**|Nelle app mobili line-of-business per Apple iOS sono inclusi un profilo di provisioning e un codice firmato con un certificato. Quando si esegue l'app in un dispositivo iOS, iOS conferma l'integrità dell'app e impone i criteri definiti dal profilo di provisioning.<br><br>La durata del certificato di firma dell'organizzazione usato in genere è di 3 anni. Tuttavia, il profilo di provisioning scade dopo un anno. Usare questi criteri per distribuire in modo proattivo un nuovo criterio del profilo di provisioning ai dispositivi con app prossime alla scadenza finché il certificato è ancora valido.<br><br>Per informazioni dettagliate, vedere [Usare i criteri del profilo di provisioning per dispositivi mobili iOS per impedire la scadenza delle app](ios-mobile-app-provisioning-profiles.md).|
+|**Profilo di certificato PKCS #12 (.PFX) (iOS 7.1 e versioni successive)**|Usare questo profilo per creare e distribuire le impostazioni PFX per le richieste di certificato del dispositivo.<br /><br />Per informazioni dettagliate, vedere [Proteggere l'accesso alle risorse con i profili certificato in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Profilo certificato SCEP (iOS 7.1 e versioni successive)**|Consente di configurare un certificato Simple Certificate Enrollment Protocol (SCEP) che può essere usato con un certificato attendibile di dispositivo mobile per autenticare i dispositivi mobili e consentire loro l'accesso a risorse di rete, quali quelle configurate da profili Wi-Fi e VPN.<br /><br />Per informazioni dettagliate, vedere [Proteggere l'accesso alle risorse con i profili certificato in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Profilo certificato attendibile (iOS 7.1 e versioni successive)**|Consente di configurare un certificato attendibile di dispositivo mobile che può essere usato per autenticare i dispositivi mobili e consentire loro l'accesso a risorse di rete, quali quelle configurate da profili VPN e Wi-Fi.<br /><br />Per informazioni dettagliate, vedere [Proteggere l'accesso alle risorse con i profili certificato in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Profilo VPN (iOS 7.1 e versioni successive)**|Consente di configurare e distribuire le impostazioni che permettono agli utenti di accedere in modo sicuro alla rete aziendale dal proprio dispositivo mobile. La distribuzione di queste impostazioni consente di ridurre al minimo le operazioni che l'utente finale deve eseguire per connettersi al proprio lavoro.<br /><br />Per informazioni dettagliate, vedere [Connessioni VPN in Microsoft Intune](vpn-connections-in-microsoft-intune.md).|
 |**Profilo Wi-Fi (iOS 7.1 e versioni successive)**|Consente di configurare e distribuire le impostazioni di rete wireless agli utenti dell'organizzazione. La distribuzione di queste impostazioni consente di ridurre al minimo le operazioni che l'utente finale deve eseguire per connettersi alla rete wireless.<br /><br />Per informazioni dettagliate, vedere [Connessioni Wi-Fi in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md).|
-|**Criteri di configurazione delle app per dispositivi mobili (iOS 7.1 e versioni successive)**|Usare i criteri di configurazione delle app mobili per specificare automaticamente le impostazioni che potrebbero essere necessarie quando l'utente esegue un'app iOS.<br /><br />Per informazioni dettagliate vedere [Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
+
 
 ## Criteri di configurazione di Mac OS X
 
@@ -82,6 +85,8 @@ Si applica solo a Windows Phone e ai dispositivi Windows registrati.
 |**Profilo certificato attendibile (Windows 8.1 e versioni successive)**<br /><br />**Profilo certificato attendibile (Windows Phone 8.1 e versioni successive)**|Consente di configurare un certificato attendibile di dispositivo mobile che può essere usato per autenticare i dispositivi mobili e consentire loro l'accesso a risorse di rete, quali quelle configurate da profili VPN e Wi-Fi.<br /><br />Per informazioni dettagliate, vedere [Proteggere l'accesso alle risorse con i profili certificato in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Profilo VPN (Windows 10 Desktop e Mobile e versioni successive)**<br /><br />**Profilo VPN (Windows 8.1 e versioni successive)**<br /><br />**Profilo VPN (Windows Phone 8.1 e versioni successive)**|Consente di configurare e distribuire le impostazioni che permettono agli utenti di accedere in modo sicuro alla rete aziendale dal proprio dispositivo mobile. La distribuzione di queste impostazioni consente di ridurre al minimo le operazioni che l'utente finale deve eseguire per connettersi al proprio lavoro.<br /><br />Per informazioni dettagliate, vedere [Connessioni VPN in Microsoft Intune](vpn-connections-in-microsoft-intune.md).|
 |**Importazione Wi-Fi**|Importare e distribuire le configurazioni Wi-Fi di Windows precedentemente esportate in un file.<br /><br />Per informazioni dettagliate, vedere [Connessioni Wi-Fi in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md).|
+|**Windows Information Protection**<br>(precedentemente noto come Protezione dei dati aziendali)|Con l'aumento dei dispositivi personali nell'organizzazione, aumenta anche il rischio di perdita accidentale dei dati tramite app e servizi, ad esempio posta elettronica, social media e cloud pubblico, non controllati dall'organizzazione. Ad esempio, quando un dipendente invia le immagini di progettazione più recenti dal proprio account di posta elettronica personale, copia e incolla le informazioni su un prodotto in un tweet o salva il report di una vendita in corso nella propria area di archiviazione nel cloud pubblico.<br><br>Windows Information Protection offre protezione da questa potenziale perdita di dati senza interferire con l'esperienza del dipendente. Consente inoltre di proteggere le app e i dati aziendali da perdite di dati accidentali su dispositivi di proprietà dell'azienda e dispositivi personali che i dipendenti portano a lavoro senza richiedere modifiche per l'ambiente o altre app.<br><br>Questi criteri di Intune gestiscono l'elenco di app protette da Windows Information Protection, i percorsi di rete aziendali, il livello di protezione e le impostazioni di crittografia.<br><br>Per altre informazioni, vedere [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-edp) (Proteggere i dati aziendali tramite Windows Information Protection).|
+
 
 ## Criteri software
 
@@ -129,7 +134,6 @@ Si applica solo a Windows Phone e ai dispositivi Windows registrati.
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

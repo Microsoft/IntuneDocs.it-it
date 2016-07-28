@@ -1,9 +1,9 @@
 ---
 title: Uso del dispositivo iOS o Mac OS X con Intune | Microsoft Intune
-description: 
+description: "Elenco di collegamenti alle attività che è possibile eseguire sul dispositivo mobile iOS o Mac OS X quando viene registrato in Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: bf298bace896a666d1f2992f2921ebf5a15f05f7
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
 
 
 ---
@@ -50,7 +50,7 @@ Le informazioni contenute in questa sezione illustrano le azioni che è possibil
 
 Le informazioni contenute in questa sezione consentono la risoluzione di problemi che si potrebbero verificare quando il dispositivo iOS viene registrato in Intune.
 
-- [Procedura: Riconnettere un dispositivo iOS compromesso](how-to-reconnect-a-compromised-ios-device)
+- [Procedura: Riconnettere un dispositivo iOS compromesso](how-to-reconnect-a-compromised-ios-device.md)
 - [Send errors to your IT admin (Inviare gli errori all'amministratore IT)](send-errors-to-your-it-admin-ios.md)
 - [Si verifica un errore durante l'utilizzo dell'app Portale aziendale](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Si verificano errori durante la registrazione del dispositivo in Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
@@ -63,6 +63,6 @@ Le informazioni contenute in questa sezione consentono la risoluzione di problem
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

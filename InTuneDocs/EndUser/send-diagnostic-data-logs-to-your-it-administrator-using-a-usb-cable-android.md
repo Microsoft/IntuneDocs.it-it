@@ -3,18 +3,19 @@ title: Inviare i log dei dati di diagnostica all'amministratore IT tramite un ca
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 7ad4f4b726f093a14663fc5c4dbadf5603965075
+ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
+ms.openlocfilehash: b1bec5b968c0fa3a86e08801d9802ba443cf01d6
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: 7ad4f4b726f093a14663fc5c4dbadf5603965075
 
 # Inviare i log dei dati di diagnostica all'amministratore IT tramite un cavo USB
 
-Se si usa un computer anziché un dispositivo mobile e si vogliono inviare i log di dati dal dispositivo mobile per aiutare l'amministratore IT a individuare e risolvere il problema, seguire questa procedura:
+Se si vuole inviare il log dei dati all'amministratore IT per ottenere assistenza, è possibile inviare i log tramite un computer e un cavo USB anziché inviare i log dal dispositivo mobile. Ecco come:
 
 1.  Prima di iniziare, verificare di avere l'indirizzo di posta elettronica dell'amministratore IT. In genere è indicato nel sito Web del portale aziendale o nell'app Portale aziendale.
 
@@ -38,6 +39,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

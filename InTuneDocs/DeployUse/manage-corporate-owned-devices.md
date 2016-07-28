@@ -1,10 +1,10 @@
 ---
 title: "Gestire i dispositivi di proprietà dell'azienda | Microsoft Intune"
-description: 
+description: "Introdurre i dispositivi di proprietà dell'azienda nella gestione in diversi modi, a seconda del dispositivo, della modalità in cui è stato acquistato e delle esigenze dell'organizzazione."
 keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 69cf07aa0747448e0ef3384b5b5132e0e76aed45
-ms.openlocfilehash: e07053b9b26afacc03e45f2cb104eda6088a1e05
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: 6cf620a96b39540c8b7ca618936af1367971bb8f
 
 
 ---
@@ -32,13 +32,27 @@ Le organizzazioni possono usare Intune per gestire un numero elevato di disposit
 
 [Registrare i dispositivi di proprietà dell'azienda con il manager di registrazione dispositivi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 
-## International Mobile Equipment Identity (IMEI)
-I numeri IMEI (International Mobile Equipment Identity) univoci costituiscono una proprietà di dispositivo diffusa per molti produttori di dispositivi mobili. Gli amministratori Intune possono importare numeri IMEI per i dispositivi di proprietà della società. Quando il dispositivo passa alla gestione con Intune, può essere contrassegnato come dispositivo di proprietà dell'azienda ed essere soggetto a criteri appropriati.
+## Registrare desktop Windows 10 di proprietà dell'azienda
+
+Se l'organizzazione ha Azure Active Directory Premium (AADP) o Enterprise Management Suite (EMS), è possibile [eseguire la registrazione a Windows 10 Enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) e i dispositivi vengono contrassegnati automaticamente come "proprietà dell'azienda" quando gli utenti aggiungono il proprio account aziendale o dell'istituto di istruzione.
+
+## Identificare i dispositivi di proprietà dell'azienda
+
+I dispositivi di proprietà dell'azienda sono elencati come **Aziendale** in **Proprietà** negli elenchi di dispositivi. I dispositivi di proprietà dell'azienda possono essere identificati nei modi seguenti:
+
+ - [Registrati con manager di registrazione dispositivi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+ - Registrati con il [programma di registrazione di dispositivi](ios-device-enrollment-program-in-microsoft-intune.md) Apple o [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md)
+ - [Pre-dichiarare i dispositivi con numeri IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+ - [Registrazione di dispositivi Windows 10 con Azure Active Directory/Enterprise Management Suite](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+
+### International Mobile Equipment Identity (IMEI)
+
+I numeri IMEI (International Mobile Equipment Identity) univoci costituiscono una proprietà di dispositivo diffusa per molti produttori di dispositivi mobili. Gli amministratori Intune possono importare numeri IMEI per i dispositivi di proprietà della società. Quando il dispositivo passa alla gestione con Intune, viene contrassegnato come dispositivo di proprietà dell'azienda.
 
 [Specificare i dispositivi aziendali con i numeri IMEI (International Mobile Equipment Identity)](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

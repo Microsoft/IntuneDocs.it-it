@@ -1,6 +1,6 @@
 ---
 title: Limitare l'accesso alla posta elettronica a Dynamics CRM Online | Microsoft Intune
-description: 
+description: Proteggere e controllare l'accesso a Dynamics CRM Online con l'accesso condizionale.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 89e522a99687fc9b6e82db9f721858d17afdce6a
-ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: cbcf2c8d923524b8a1993140fbec0234740075ae
 
 
 ---
@@ -55,10 +56,10 @@ Se un utente si trova in entrambi i gruppi, sarà esentato dai criteri.
 [Creare](create-a-device-compliance-policy-in-microsoft-intune.md) e [distribuire](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) i criteri di conformità a tutti i dispositivi interessati dai criteri, ossia tutti i dispositivi usati dagli utenti nei Gruppi di destinazione.
 
 > [!NOTE]
-> [!NOTE] Mentre i criteri di conformità vengono distribuiti nei gruppi di Microsoft Intune, i criteri di accesso condizionale sono destinati ai gruppi di sicurezza di Azure Active Directory.
+> Mentre i criteri di conformità vengono distribuiti nei gruppi di Microsoft Intune, i criteri di accesso condizionale sono assegnati ai gruppi di sicurezza di Azure Active Directory.
 
 > [!IMPORTANT]
-> [!IMPORTANT] Se i criteri di conformità non sono stati distribuiti, i dispositivi verranno considerati conformi.
+> Se i criteri di conformità non sono stati distribuiti, i dispositivi verranno considerati conformi.
 
 Quando si è pronti, continuare con il Passaggio 3.
 ### Passaggio 3: Configurare i criteri di Dynamics CRM
@@ -96,6 +97,6 @@ Selezionare un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Di
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

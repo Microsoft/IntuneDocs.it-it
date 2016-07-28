@@ -1,10 +1,10 @@
 ---
-title: "Distribuire e monitorare i criteri di conformità in Microsoft Intune | Microsoft Intune"
-description: 
+title: "Distribuire e monitorare i criteri di conformità | Microsoft Intune"
+description: "Usare le istruzioni dettagliate in questo argomento per distribuire e monitorare i criteri di conformità del dispositivo."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 42d326dbe937724141213dacc133aefe5020a61d
 
 
 ---
@@ -31,7 +31,8 @@ Distribuire i criteri di conformità [creati](create-a-device-compliance-policy-
 
 Usare il riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** dell'area di lavoro **Criteri** per identificare i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene inoltre visualizzato nell'area di lavoro **Dashboard** .
 
-> [!IMPORTANT]Se non sono stati distribuiti i criteri di conformità e abilitati i criteri di accesso condizionale di Exchange, a tutti i dispositivi di destinazione verrà consentito l’accesso.
+> [!IMPORTANT]
+> Se non sono stati distribuiti i criteri di conformità e abilitati i criteri di accesso condizionale di Exchange, a tutti i dispositivi di destinazione verrà consentito l’accesso.
 
 ## Come vengono risolti i conflitti di criteri in Intune
 Possono verificarsi conflitti se vengono applicati più criteri di Intune a un dispositivo. Se le impostazioni dei criteri si sovrappongono, Intune risolve eventuali conflitti in base alle regole seguenti:
@@ -71,6 +72,6 @@ Possono verificarsi conflitti se vengono applicati più criteri di Intune a un d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

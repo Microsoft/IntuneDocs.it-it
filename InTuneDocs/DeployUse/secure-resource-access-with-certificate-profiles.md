@@ -1,10 +1,10 @@
 ---
-title: Abilitare l'accesso alle risorse aziendali usando i profili certificato | Microsoft Intune
-description: 
+title: Profili certificato per l'accesso alle risorse | Microsoft Intune
+description: Protezione VPN, Wi-Fi e di accesso alla posta elettronica con un certificato installato su ogni dispositivo dell'utente.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: Arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
-ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c8158b6a54347f6bec1008142eed44daca8946d0
 
 
 ---
@@ -47,7 +47,7 @@ Usare il **profilo certificato SCEP** per:
 > -    Se non è presente un'autorità di certificazione globale (enterprise), è necessario crearla.
 >- Se, in base alle piattaforme dei dispositivi, si decide di usare il profilo Simplified Certificate Enrollment Protocol (SCEP), è necessario anche configurare un del servizio Registrazione dispositivi di rete (NDES).
 >-  Se si prevede di usare i profili SCEP o PFX, è necessario scaricare e configurare Connettore di certificati di Microsoft Intune.
-> La configurazione di tutti questi elementi è descritta nell'argomento [Configurare l'infrastruttura di certificazione](configure-certificate-infrastructure.md).
+> La configurazione di tutti questi elementi viene descritta in [Configurare l'infrastruttura di certificazione per SCEP](configure-certificate-infrastructure-for-scep.md) e [Configure certificate infrastructure for PFX](configure-certificate-infrastructure-for-pfx.md) (Configurare l'infrastruttura di certificazione per PFX).
 
 ### Passaggi successivi
 - [Configurare l'infrastruttura di certificazione per SCEP](configure-certificate-infrastructure-for-scep.md)
@@ -56,6 +56,6 @@ Usare il **profilo certificato SCEP** per:
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

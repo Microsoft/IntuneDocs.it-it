@@ -1,10 +1,10 @@
 ---
 title: Impostazioni dei criteri di Windows 10 | Microsoft Intune
-description: 
+description: Usare le impostazioni dei criteri indicate nell'argomento come aiuto per configurare le impostazioni personalizzate integrate per dispositivi registrati Windows 10 Desktop e Windows 10 Mobile.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +12,24 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 01356d08257cf381d1a981f749702800c173de33
+ms.openlocfilehash: 08336c56f4e099c8cd0a0152364824455cae0f03
 
 
 ---
 
 # Impostazioni dei criteri di Windows 10 in Microsoft Intune
 
-Usare le impostazioni dei criteri indicate nell'argomento come aiuto per configurare le impostazioni per dispositivi registrati Windows 10 Desktop e Windows 10 Mobile.
+Usare le impostazioni dei criteri indicate nell'argomento per configurare le impostazioni personalizzate integrate per dispositivi registrati Windows 10 Desktop e Windows 10 Mobile.
+
+> [!IMPORTANT]
+> È possibile gestire i PC Windows 10 in due modi: registrandoli o installando il software client per PC di Intune. Ciascun metodo offre diverse funzionalità. Per altre informazioni, vedere [Scegliere come gestire i dispositivi](/intune/get-started/choose-how-to-manage-devices).
+> Quando si gestiscono i PC Windows 10 con il software client per PC di Intune, non è possibile usare i criteri e le impostazioni descritte in questo argomento. Per applicare queste impostazioni, i dispositivi Windows 10 devono essere registrati con Intune.
 
 ## Impostazioni dei criteri di configurazione generali
 
-Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 10 per configurare le impostazioni generali per dispositivi registrati Windows 10 Desktop e Mobile. Questi criteri non possono essere usati quando si gestiscono i PC Windows 10 con il software client di Intune.
+Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 10 per configurare le impostazioni generali per dispositivi registrati Windows 10 Desktop e Mobile. 
 
 
 ### Password
@@ -161,7 +166,7 @@ Tutte le impostazioni sono solo per Windows 10 Desktop.
 |**Intervallo di aggiornamento della firma**|Specifica l'intervallo secondo il quale Defender controllerà i nuovi file di firma.|
 |**Consenti protezione cloud**|Consente o blocca la ricezione di informazioni sull'attività del malware da parte di Microsoft Active Protection Service dai dispositivi gestiti. Queste informazioni vengono usate per migliorare il servizio in futuro.|
 |**Richiedi invio dei campioni agli utenti**|Controlla se i file che potrebbero richiedere ulteriore analisi da parte di Microsoft per determinare se sono dannosi vengono inviati automaticamente a Microsoft.|
-|**Rilevamento di applicazioni potenzialmente indesiderate**|Questa impostazione può essere usata per proteggere i computer desktop Windows registrati da eventuale software in esecuzione classificato da Windows Defender come potenzialmente indesiderato. È possibile ottenere protezione da tali applicazioni in esecuzione o usare la modalità di controllo per rilevare l'installazione di un'applicazione potenzialmente indesiderata.|
+|**Rilevamento di applicazioni potenzialmente indesiderate**|Questa impostazione può essere usata per proteggere i dispositivi desktop Windows registrati da eventuale software in esecuzione classificato da Windows Defender come potenzialmente indesiderato. È possibile ottenere protezione da tali applicazioni in esecuzione o usare la modalità di controllo per rilevare l'installazione di un'applicazione potenzialmente indesiderata.|
 |**File e cartelle da escludere quando si esegue un'analisi o si usa la protezione in tempo reale**|Aggiungere uno o più file e cartelle come **C:\Percorso** o **%ProgramFiles%\Percorso\nomefile.exe** all'elenco delle estensioni. Questi file e cartelle non saranno inclusi nelle analisi in tempo reale o pianificate.|
 |**Estensioni di file da escludere durante l'esecuzione di un'analisi o l'utilizzo della protezione in tempo reale**|Aggiungere uno o più estensioni di file come **jpg** o **txt** all'elenco delle esclusioni. I file con queste estensioni non saranno inclusi nelle analisi in tempo reale o pianificate.|
 |**Processi da escludere durante l'esecuzione di un'analisi o l'utilizzo della protezione in tempo reale**|Aggiungere uno o più processi del tipo **.exe**, **.com** o **.scr** all'elenco delle esclusioni. Questi processi non saranno inclusi nelle analisi in tempo reale o pianificate.| 
@@ -327,6 +332,6 @@ Tutti i dispositivi devono essere registrati con Intune per poter usare i criter
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "Creare criteri di conformità dei dispositivi in Microsoft Intune | Microsoft Intune"
-description: 
+title: "Creare criteri di conformità dei dispositivi | Microsoft Intune"
+description: "Creare criteri di conformità per consentire ai dispositivi mobili e ai PC in uso di accedere ai dati della società."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 67d9b0e0231b8165500f6995d5c058fb5c3f2df1
 
 
 ---
@@ -32,12 +32,20 @@ Nella pagina **Crea criterio** abilitare le impostazioni richieste:
   -   Impostazioni di protezione del sistema come la password e la crittografia
   -   Impostazioni di integrità del dispositivo, ad esempio se il dispositivo è jailbroken oppure se viene segnalato come integro dal servizio di attestazione dell'integrità di Windows.
   -   Impostazioni delle proprietà del dispositivo, come la versione minima del sistema operativo richiesta o la versione massima del sistema operativo consentita.
-![Schermata della scheda Generale della pagina Crea criterio ](./media/intune-sa-3b-create-policy.png)
+![Scheda Generale della pagina Crea criterio ](./media/intune-sa-3b-create-policy.png)
+
 
 ##  Passaggio 3: Salvare i criteri
 Al termine, scegliere **Salva criterio**.
 
 È possibile scegliere di distribuire i criteri subito dopo il salvataggio o in un secondo momento. Il nuovo criterio viene visualizzato nel nodo **Criteri di conformità** dell'area di lavoro **Criteri**.
+
+##  Passaggio 4: Impostare il periodo di validità dello stato di conformità
+Per specificare l'intervallo di tempo in cui il dispositivo deve eseguire l'archiviazione prima di essere considerato non conforme, passare alle impostazioni dei criteri di conformità e aggiornare l'intervallo.  Per impostazione predefinita, questo intervallo è impostato su 30 giorni.
+
+![opzione delle impostazioni dei criteri di conformità nella barra dei menu dei criteri](../media/mdm-compliance-policy-settings.png)
+
+![finestra di dialogo dei criteri di conformità](../media/mdm-ca-compliance-status-validity-period.png)
 
 ## Impostazioni dei criteri supportate
 La tabella seguente include le impostazioni dei criteri di conformità e le piattaforme nelle quali sono supportate.
@@ -79,6 +87,6 @@ Per altre informazioni sulle impostazioni di conformità supportate in ogni piat
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

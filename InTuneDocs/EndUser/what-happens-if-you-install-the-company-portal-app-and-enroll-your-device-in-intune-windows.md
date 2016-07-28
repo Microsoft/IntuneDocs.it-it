@@ -1,123 +1,86 @@
 ---
-title: Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune? | Microsoft Intune
+title: Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows in Intune? | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/8/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: e2da1f39d0cfe05bb0ea1c149c91e5ff82312c01
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 25d2708dbc514717affa54cba195e5fef7d602ba
 
 
 ---
 
 
-# Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune?
+# Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows in Intune?
 
-Per informazioni su cosa accade quando si installa l'app Portale aziendale e si registra il dispositivo, usare il collegamento visualizzato nella sezione "Contenuto dell'articolo" per il dispositivo in uso. Per informazioni sui dispositivi Windows 10, vedere [questa pagina](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Quando si installa l'app Portale aziendale e la si usa per registrare un dispositivo Windows o Windows Phone, si abilita l'amministratore IT per la gestione del dispositivo in modo da proteggere i dati dell'azienda o dell'istituto di istruzione, come descritto di seguito per i dispositivi precedenti a Windows 10. Per informazioni sui dispositivi Windows 10, vedere [questa pagina](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
-## Windows 8.1 e Windows RT
-Quando si installa l'app Portale aziendale e si registra il proprio dispositivo Windows 8.1 Enterprise o Professional o Windows RT in Intune, è possibile usare tale app per:
-
--   Accedere alla rete aziendale e ai file della posta elettronica e di lavoro
-
--   Ottenere app aziendali dal Portale aziendale
-
--   Configurare automaticamente l'account di posta elettronica aziendale
-
--   Ripristinare le impostazioni di fabbrica del telefono se questo viene smarrito o rubato
-
-Per la procedura di registrazione, vedere [Registrare il dispositivo Windows in Intune](enroll-your-device-in-intune-windows.md). Per informazioni sui dettagli del dispositivo visibili all'amministratore IT, vedere [Quali sono i dettagli visibili all'amministratore IT quando si registra il dispositivo in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
-
-Quando si aggiunge un computer:
-
--   Verrà installato software nel computer per consentire all'amministratore IT di gestire il computer e all'utente di accedere alle risorse della società, come app e informazioni sul supporto. L'amministratore IT può aggiornare automaticamente il software.
-
--   Intune Endpoint Protection può essere installato nel computer. Questo software controlla la presenza di virus e malware.
-
--   L'amministratore IT può eseguire un inventario di tutti i software installati nel computer, compresi quelli installati personalmente dall'utente.
-
--   È possibile richiedere di accettare i termini e le condizioni.
-
--   L'amministratore IT può raccogliere o eliminare dati dal disco rigido del computer. L'amministratore IT può inoltre eliminare l'intero disco rigido.
-
--   L'amministratore IT può installare applicazioni e aggiornamenti nel computer.
-
--   L'amministratore IT può applicare i criteri del computer. Ad esempio, potrebbe essere necessario impostare una password o un PIN che bloccherà il computer o eliminerà tutti i dati dal disco rigido del computer dopo troppi tentativi di accesso con password errata.
-
-## Windows Phone 8.1 e Windows Phone 8
-Quando si installa l'app Portale aziendale e si registra il proprio dispositivo Windows Phone 8.1 o Windows Phone 8 in Intune, è possibile usare tale app per:
+## Che cosa avviene a tutti i dispositivi Windows dopo l'iscrizione?
+Quando si registra il dispositivo Windows o Windows Phone in Intune, è possibile:
 
 -   Accedere alla rete aziendale e ai file della posta elettronica e di lavoro
 
--   Ottenere app aziendali dal Portale aziendale
+-   Ottenere le app aziendali dal sito Web del portale aziendale (per Windows 7 e Vista, è possibile ottenere app aziendali solo dal sito Web del portale aziendale)
 
--   Configurare automaticamente l'account di posta elettronica aziendale
+-   Configurare automaticamente l'account di posta elettronica aziendale o dell'istituto di istruzione
 
 -   Ripristinare le impostazioni di fabbrica del telefono se questo viene smarrito o rubato
 
-Per la procedura di registrazione, vedere [Registrare il dispositivo Windows in Intune](enroll-your-device-in-intune-windows.md). Per informazioni sui dettagli del dispositivo visibili all'amministratore IT, vedere [Quali sono i dettagli visibili all'amministratore IT quando si registra il dispositivo in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
-
-Quando si aggiunge il dispositivo Windows Phone, vengono concesse all'amministratore IT le autorizzazioni per accedere al dispositivo. Tali autorizzazioni consentono di:
+Quando si registra un dispositivo, vengono concesse all'amministratore IT le autorizzazioni per eseguire le operazioni seguenti:
 
 -   Ripristinare le impostazioni predefinite del dispositivo. Questa operazione è utile se il dispositivo viene smarrito o rubato.
 
 -   Rimuovere tutti i dati correlati alla società e le app aziendali installate. Impostazioni e dati personali non vengono rimossi.
 
--   Potrebbe essere necessario impostare una password o un PIN, che bloccherà il dispositivo, ripristinerà le impostazioni predefinite o eliminerà i dati dopo troppi tentativi di accesso con password errata.
+-   L'amministratore IT può eseguire un inventario di tutti i software installati nel computer, compresi quelli installati personalmente dall'utente.
 
--   Forzare la crittografia di tutti i dati nel dispositivo. Questa operazione consente di proteggere i dati se il dispositivo viene smarrito o rubato.
+-   Può essere necessario impostare una password o un PIN, che bloccherà il dispositivo, ripristinerà le impostazioni predefinite o eliminerà i dati dopo troppi tentativi di accesso con password errata.
+
+-   Può essere necessaria la crittografia dei dati nel dispositivo, che consente di proteggere i dati se il dispositivo viene smarrito o rubato.
 
 -   Richiedere di accettare i termini e le condizioni.
 
+-   L'amministratore IT può applicare i criteri del computer. Ad esempio, potrebbe essere necessario impostare una password o un PIN che bloccherà il computer o eliminerà tutti i dati dal disco rigido del computer dopo troppi tentativi di accesso con password errata.
+
 -   Disabilitare la scheda SD.
 
--   Installare gli aggiornamenti delle app sul dispositivo. Questo si applica solo agli aggiornamenti. L'amministratore IT non può forzare l'installazione di nuove app nel dispositivo, ma l'utente può scegliere di installare le app presenti nel portale aziendale.
+## Che cosa accade a tutti i PC Windows dopo l'iscrizione?
 
--   Dopo aver aggiunto il dispositivo al portale dell'azienda, ogni 8 ore circa verranno eseguite le operazioni seguenti:
+-  Verrà installato software nel computer per consentire all'amministratore IT di gestire il computer e all'utente di accedere alle risorse della società, come app e informazioni sul supporto. L'amministratore IT può aggiornare automaticamente il software.
 
-    -   Download degli aggiornamenti di criteri o app resi disponibili dall'amministratore IT.
+-  Intune Endpoint Protection può essere installato nel computer. Questo software controlla la presenza di virus e malware.
 
-    -   Invio degli aggiornamenti dell'inventario hardware.
+-  L'amministratore IT può eseguire un inventario di tutti i software installati nel computer, compresi quelli installati personalmente dall'utente.
 
-    -   Invio degli aggiornamenti dell'inventario delle app aziendali.
+-  È possibile richiedere di accettare i termini e le condizioni.
 
-## Windows 7 e Vista
-Quando si installa l'app Portale aziendale e si registra il proprio dispositivo Windows 7 o Vista in Intune, è possibile usare tale app per:
+-  L'amministratore IT può raccogliere o eliminare dati dal disco rigido del computer. L'amministratore IT può inoltre eliminare l'intero disco rigido.
 
--   Accedere alla rete aziendale e ai file della posta elettronica e di lavoro
+-  L'amministratore IT può installare applicazioni e aggiornamenti nel computer.
 
--   Ottenere app aziendali dal Portale aziendale
+-  L'amministratore IT può applicare i criteri del computer. Ad esempio, può essere necessario impostare una password o un PIN che bloccherà il computer o eliminerà tutti i dati dal disco rigido del computer dopo troppi tentativi di accesso con password errata.
 
--   Configurare automaticamente l'account di posta elettronica aziendale
 
--   Ripristinare le impostazioni di fabbrica del telefono se questo viene smarrito o rubato
+## Che cosa accade ogni otto ore dopo la registrazione del dispositivo?
+Ogni otto ore circa, i dispositivi registrati eseguono le operazioni seguenti:
 
-Per informazioni sui dettagli del dispositivo visibili all'amministratore IT, vedere [Quali sono i dettagli visibili all'amministratore IT quando si registra il dispositivo in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+-   Download degli aggiornamenti di criteri o app resi disponibili dall'amministratore IT.
 
-Quando si aggiunge un computer:
+-   Invio degli aggiornamenti dell'inventario hardware.
 
--   Verrà installato software nel computer per consentire all'amministratore IT di gestire il computer e all'utente di accedere alle risorse della società, come app e informazioni sul supporto. L'amministratore IT può aggiornare automaticamente il software.
+-   Invio degli aggiornamenti dell'inventario delle app aziendali.
 
--   Intune Endpoint Protection può essere installato nel computer. Questo software controlla la presenza di virus e malware.
-
--   L'amministratore IT può eseguire un inventario di tutti i software installati nel computer, compresi quelli installati personalmente dall'utente.
-
--   È possibile richiedere di accettare i termini e le condizioni.
-
--   L'amministratore IT può raccogliere o eliminare dati dal disco rigido del computer. L'amministratore IT può inoltre eliminare l'intero disco rigido.
-
--   L'amministratore IT può installare applicazioni e aggiornamenti nel computer.
-
--   L'amministratore IT può applicare i criteri del computer. Ad esempio, potrebbe essere necessario impostare una password o un PIN che bloccherà il computer o eliminerà tutti i dati dal disco rigido del computer dopo troppi tentativi di accesso con password errata.
+Per la procedura di registrazione, vedere [Registrare il dispositivo Windows in Intune](enroll-your-device-in-intune-windows.md). Per informazioni sui dettagli del dispositivo visibili all'amministratore IT, vedere [Quali sono i dettagli visibili all'amministratore IT quando si registra il dispositivo in Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
@@ -126,6 +89,6 @@ Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

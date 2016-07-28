@@ -1,6 +1,6 @@
 ---
 title: Portale di Azure per i criteri MAM | Microsoft Intune
-description: 
+description: Creare criteri di gestione delle app mobili con il portale di Azure. I criteri creati possono essere applicati ai dispositivi con o senza registrazione in Intune.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 519bde55966d88f516553d509af60e34a6af62a9
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
 
 
 ---
@@ -28,8 +28,10 @@ Il portale di Azure supporta la creazione di criteri MAM per:
 - App in esecuzione su dispositivi **non registrati** in qualsiasi soluzione MDM.
 - App in esecuzione in dispositivi **registrati in una soluzione MDM di terze parti**.
 
-Se si sta usando la **console di amministrazione di Intune** per la gestione dei dispositivi, è possibile creare un criterio MAM che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) stessa.
 >[!IMPORTANT]
+
+> Se si sta usando la console di amministrazione di Intune per la gestione dei dispositivi, è possibile creare un criterio MAM che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) stessa.
+
 > È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Il portale di Azure è la nuova console di amministrazione per la creazione di criteri MAM. Se si creano criteri MAM sia nella console di amministrazione di Intune che nel portale di Azure, i criteri di quest'ultimo vengono applicati alle app e distribuiti agli utenti.
 
 ## Accedere al portale di Azure e personalizzare la pagina iniziale
@@ -59,6 +61,6 @@ Se si sta usando la **console di amministrazione di Intune** per la gestione dei
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

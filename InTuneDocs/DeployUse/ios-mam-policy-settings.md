@@ -1,10 +1,10 @@
 ---
 title: Impostazioni dei criteri MAM per iOS | Microsoft Intune
-description: 
+description: Questo argomento descrive le impostazioni dei criteri di gestione delle app mobili per i dispositivi iOS.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+ms.sourcegitcommit: 09bf7d1343580f7688671bf94d83f40f0a3405c5
+ms.openlocfilehash: e0db92b6ecf7a552589ea805f6507ca59e6554b1
 
 
 ---
@@ -37,6 +37,8 @@ Il termine **App gestite da criteri** viene usato per indicare le app che sono c
   - **Nessuna**: non consente il trasferimento a nessuna app, incluse le altre app gestite da criteri.
 
   Inoltre, se si imposta l'opzione su **App gestite da criteri** o **Nessuna**, la funzionalità di iOS 9 che consente a Ricerca Spotlight di cercare i dati nelle app verrà bloccata.
+
+  **Questa impostazione non controlla l'uso della funzionalità Apri in nei dispositivi mobili. Per gestire Apri in, vedere [qui](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.
 
   **Valore predefinito = App gestite da criteri**
 
@@ -112,6 +114,6 @@ Nei dispositivi iOS è possibile consentire all'utente di identificarsi con l'im
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: Distribuire le app | Microsoft Intune
-description: 
+title: Come distribuire le app | Microsoft Intune
+description: Usare le informazioni in questo argomento per distribuire le app con Microsoft Intune.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
-ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+ms.sourcegitcommit: 5ef1d2d69acfeea9670324f580d33b191001ffa9
+ms.openlocfilehash: 8ab2517a11ecb6ae5395814472dfbb3e83da132b
 
 ---
 # Distribuire app in Microsoft Intune
 
-Usare le informazioni in questo argomento per distribuire le app in Microsoft Intune.
+Usare le informazioni in questo argomento per distribuire le app con Microsoft Intune.
 
 
 ## Distribuzione di un'app
-In questa procedura l'app verrà distribuita a dispositivi o utenti selezionati.
+In questa procedura l'app verrà distribuita a gruppi selezionati di dispositivi o utenti.
 
 ### Per distribuire un'app
 
@@ -52,11 +52,11 @@ In questa procedura l'app verrà distribuita a dispositivi o utenti selezionati.
 ## Esempio
 
 In questo esempio l'app è stata distribuita come **Disponibile** a un dispositivo iOS.
-L'app verrà visualizzata nel portale aziendale sul dispositivo dell'utente da cui potrà essere installata. Ad esempio, in questo screenshot l'app Bing per iOS è stata distribuita con il tipo di installazione **Collegamento esterno** con un'icona personalizzata ed è stata selezionate l'opzione **Visualizzare questo elemento come app in evidenza ed evidenziarlo nel Portale aziendale**.
-    ![App disponibile iOS](./media/available-install-on-iOS.png)
+L'app verrà visualizzata nel portale aziendale sul dispositivo dell'utente da cui potrà essere installata. Ad esempio, in questo screenshot l'app Bing per iOS è stata distribuita con il tipo di installazione **Collegamento esterno** con un'icona personalizzata ed è stata selezionate l'opzione **Visualizzare questo elemento come app in evidenza ed evidenziarlo nel Portale aziendale**.  
+![App disponibile iOS](./media/available-install-on-iOS.png)
 
-Se l'app è stata distribuita come **Richiesta**, l'utente viene avvisato quando è possibile iniziare l'installazione di un'app. Ad esempio, in questo screenshot l'app Cartelle di lavoro per iOS è stata distribuita con il tipo di installazione **App iOS gestita dall'App Store**.
-    ![App obbligatoria iOS](./media/iOS-Required-install.PNG)
+Se l'app è stata distribuita come **Richiesta**, l'utente viene avvisato quando è possibile iniziare l'installazione di un'app. Ad esempio, in questo screenshot l'app Cartelle di lavoro per iOS è stata distribuita con il tipo di installazione **App iOS gestita dall'App Store**.  
+![App obbligatoria iOS](./media/iOS-Required-install.PNG)
 
 ## Passaggi successivi
 
@@ -64,6 +64,6 @@ Dopo aver distribuito un'app, si può monitorarne l'avanzamento. Per altre infor
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: Annullare la registrazione del dispositivo da Intune se sono state rifiutate le Condizioni per l'utilizzo | Microsoft Intune
-description: 
+description: "Descrive come annullare la registrazione di un dispositivo Android da Intune se sono state rifiutate le Condizioni per l'utilizzo e non è possibile accedere all'app Portale aziendale"
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: abcb7dbe4f3423fcba108a7ea0c4b2efa295c970
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 06e2fa597e9e4143d17e817daee7eeac8eb46bf7
 
 
 ---
@@ -38,12 +38,13 @@ Per annullare la registrazione del dispositivo da Intune e disinstallare l'app P
 
     Ora è possibile disinstallare l'app Portale aziendale.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT (per le informazioni di contatto, controllare il [sito Web del portale aziendale](http://portal.manage.microsoft.com)) o scrivere al team Microsoft Android all'indirizzo wintunedroidfbk@microsoft.com.
+
 
 ### Vedere anche
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

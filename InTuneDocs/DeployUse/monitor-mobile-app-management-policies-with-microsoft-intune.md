@@ -1,10 +1,10 @@
 ---
-title: Monitorare i criteri di gestione delle app per dispositivi mobili con Microsoft Intune | Microsoft Intune
-description: 
+title: Monitorare i criteri MAM con Microsoft Intune | Microsoft Intune
+description: Vedere quanti utenti dispongono di criteri. Per altre informazioni dettagliate, eseguire il drill down.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 99b50bd040bbbdfa3ad7937d7703700526c9c4d5
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 1efbecc33e33e5e4864bcc2417ebed1e8a5b5826
 
 
 ---
@@ -49,6 +49,9 @@ Per accedere alla visualizzazione dettagliata del riepilogo, fare clic sul riqua
 
   Se l'app è contrassegnata come **non archiviata**, significa che il criterio è stato distribuito all'utente e che l'app a partire da quel momento non è mai stata usata nel contesto aziendale.
 
+>[!NOTE]
+> Se per l'utente cercato non è stato distribuito il criterio MAM, verrà visualizzato un messaggio che informa che l'utente non è assegnato ad alcun criterio dell'app.
+
 Per visualizzare i report generati per un utente, seguire questa procedura:
 
 **Passaggio 1:**  per selezionare un utente, fare clic sul riquadro Riepilogo o scegliere l'opzione **SEGNALAZIONE APP PER UTENTE** nel pannello **Impostazioni** come illustrato di seguito:
@@ -72,6 +75,6 @@ Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

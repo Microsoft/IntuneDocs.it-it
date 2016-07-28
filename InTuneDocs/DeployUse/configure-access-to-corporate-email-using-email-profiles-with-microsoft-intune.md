@@ -1,10 +1,10 @@
 ---
-title: Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica | Microsoft Intune
-description: 
+title: Posta elettronica aziendale con i profili di posta elettronica | Microsoft Intune
+description: "È possibile usare le impostazioni del profilo di posta elettronica per configurare le impostazioni di accesso alla posta elettronica per client di posta elettronica specifici sui dispositivi mobili."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: Arob98
+ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
-ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
+ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
 
 
 ---
@@ -24,7 +24,7 @@ Nel sistema operativo di molte piattaforme per dispositivi mobili è incluso un 
 
 Per una maggiore prevenzione sulla perdita dei dati (DLP, Data Loss Prevention), scegliere [Accesso condizionale](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) che controlla l'accesso alla posta elettronica degli utenti di qualsiasi client di posta elettronica, incluso client nativi di posta elettronica.
 
-È possibile usare le impostazioni del profilo di posta elettronica per configurare le impostazioni di accesso alla posta elettronica per client di posta elettronica specifici sui dispositivi mobili.   Nel sistema operativo della maggior parte delle piattaforme per dispositivi mobili è incluso un client di posta elettronica *nativo*.  Nelle piattaforme supportate è possibile configurare i client di posta elettronica nativi con Microsoft Intune per consentire agli utenti di accedere alla loro posta elettronica aziendale da dispositivi personali senza alcuna installazione.  
+È possibile usare le impostazioni del profilo di posta elettronica per configurare le impostazioni di accesso alla posta elettronica per client di posta elettronica specifici sui dispositivi mobili. Nel sistema operativo della maggior parte delle piattaforme per dispositivi mobili è incluso un client di posta elettronica *nativo*.  Nelle piattaforme supportate è possibile configurare i client di posta elettronica nativi con Microsoft Intune per consentire agli utenti di accedere alla loro posta elettronica aziendale da dispositivi personali senza alcuna installazione.  
 
 Gli amministratori IT o gli utenti possono anche scegliere di installare client di posta elettronica alternativi, ad esempio Microsoft Outlook per Android o iOS.  Questi client di posta elettronica potrebbero non supportare i profili di posta elettronica e non possono essere configurati usando profili di posta elettronica di Microsoft Intune.  
 
@@ -111,6 +111,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

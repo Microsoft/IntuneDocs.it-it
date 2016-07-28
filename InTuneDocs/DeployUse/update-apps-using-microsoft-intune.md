@@ -1,10 +1,10 @@
 ---
 title: Aggiornare le app | Microsoft Intune
-description: 
+description: "Usare le informazioni in questo argomento per comprendere come aggiornare le app quando è richiesta una nuova versione."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 0581d1476fba5bedcdd4446df20f8f92b151f41b
-ms.openlocfilehash: 9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: bb077902e33d6ab18dea33a6ab2d1ff9a70ce937
 
 
 ---
@@ -23,6 +24,16 @@ Microsoft Intune consente di gestire gli aggiornamenti delle app. Usare le infor
 
 ## Come aggiornare le app
 Quando viene rilasciata una nuova versione di un'app che è stata distribuita, Intune consente di aggiornare e distribuire la versione più recente dell'app. È possibile sostituire una distribuzione solo con una versione più recente della stessa app (usando lo stesso identificatore). Non è possibile usare gli aggiornamenti dell'app per aggiornare una distribuzione con un pacchetto dell'app diverso.
+
+### Identificatori app
+Identificatore app è una proprietà che identifica in modo univoco un'app. Non è possibile installare più copie di un'app con lo stesso identificatore. Ad esempio:
+
+- **iOS**: ID aggregazione (ad esempio: com.microsoft.excel)
+- **Android**: ID pacchetto (ad esempio: com.microsoft.excel)
+- **Windows Phone**: (programma di installazione xap), usare ID prodotto (GUID)
+- **Windows**: (appx/appxbundle), usare il nome completo del pacchetto
+
+
 
 > [!IMPORTANT]
 > Quando si distribuisce un'app con un'azione di distribuzione **Installazione richiesta** e successivamente si modifica l'azione di distribuzione in **Installazione disponibile**, gli aggiornamenti dell'app non vengono installati automaticamente nei dispositivi in cui l'app è stata installata prima di apportare la modifica alla distribuzione. Per risolvere questo problema, è possibile eseguire le operazioni seguenti:
@@ -49,6 +60,6 @@ Per le app distribuite come collegamento a un archivio, l'aggiornamento viene ge
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

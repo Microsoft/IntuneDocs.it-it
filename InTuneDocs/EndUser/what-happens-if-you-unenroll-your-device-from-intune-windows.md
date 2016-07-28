@@ -1,26 +1,27 @@
 ---
-title: Cosa succede se si annulla la registrazione del dispositivo da Intune? | Microsoft Intune
+title: Che cosa avviene se si annulla la registrazione del dispositivo Windows da Intune? | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
-ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 38dc295f3b1d591d97c651c948b3cdacbba5b0d4
 
 
 ---
 
 
-# Cosa succede se si annulla la registrazione del dispositivo da Intune?
+# Che cosa avviene se si annulla la registrazione del dispositivo Windows da Intune?
 
 Per altre informazioni su ciò che accade, usare il collegamento indicato nella sezione "Contenuto dell'articolo" corrispondente al tipo di dispositivo in uso.
 
@@ -93,6 +94,6 @@ Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto 
 [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

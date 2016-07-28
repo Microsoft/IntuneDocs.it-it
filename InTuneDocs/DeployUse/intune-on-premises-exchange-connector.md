@@ -1,19 +1,20 @@
 ---
-title: Installare Microsoft Intune Exchange Connector per Exchange locale | Microsoft Intune
-description: 
+title: Exchange Connector per EAS locale | Microsoft Intune
+description: Usare lo strumento Connector per consentire la comunicazione tra la console di amministrazione di Intune ed Exchange Server locale per Exchange ActiveSync MDM.
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 
 
 ---
@@ -36,7 +37,6 @@ Nella tabella seguente vengono riportati i requisiti per il computer in cui è i
 |Software aggiuntivo|Nel computer che ospita il connettore deve essere presente un'installazione completa di Microsoft .NET Framework 4 e Windows PowerShell 2.0.|
 |Rete|Il computer in cui si installa il connettore deve essere in un dominio con una relazione di trust con il dominio che ospita l'istanza di Exchange Server.<br /><br />Il computer deve essere configurato per poter accedere al servizio Intune attraverso firewall e server proxy sulle porte 80 e 443. I domini usati da Intune includono manage.microsoft.com, &#42;manage.microsoft.com e &#42;.manage.microsoft.com.|
 |Exchange ospitato configurato e in esecuzione|Per altre informazioni, vedere [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx). |
-|Impostare l'autorità di gestione dei dispositivi mobili su Intune|[Impostare l'autorità per i dispositivi mobili su Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Requisiti dei cmdlet di Exchange
 
@@ -58,16 +58,14 @@ Nella tabella seguente vengono riportati i requisiti per il computer in cui è i
 
 ## Scaricare il pacchetto di installazione di On-premises Exchange Connector
 
-1. In un sistema operativo supportato da On-premises Exchange Connector aprire la [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) con un account utente che è un amministratore tenant per Exchange e dispone di licenza per l'uso di Exchange Server.
+1. In un sistema operativo Windows Server supportato da On-premises Exchange Connector aprire la [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) con un account utente che è un amministratore tenant per Exchange e dispone di una licenza per l'uso di Exchange Server.
 ![Aprire Configura connessione Exchange](../media/ExchangeConnector.gif)
 
-2.  Nel riquadro dei collegamenti alle aree di lavoro scegliere **AMMINISTRAZIONE**.
+2.  Nel riquadro dei collegamenti alle aree di lavoro scegliere **Amministrazione**, **Gestione dei dispositivi mobili** > **Microsoft Exchange** e quindi scegliere **Configura connessione Exchange**.
 
-3.  Nel riquadro di spostamento espandere **Microsoft Exchange** in **Gestione dei dispositivi mobili**, quindi scegliere **Configura connessione Exchange**.
+3.  Nella pagina **Configura connessione Exchange** scegliere **Scarica On-Premises Connector**.
 
-4.  Nella pagina **Configura connessione Exchange** scegliere **Scarica On-Premises Connector**.
-
-5.  On-premises Exchange Connector è contenuto in una cartella compressa (zip) che può essere aperta o salvata. Nella finestra di dialogo **Download del file** scegliere **Salva** per archiviare la cartella compressa in una posizione protetta.
+4.  On-premises Exchange Connector è contenuto in una cartella compressa (zip) che può essere aperta o salvata. Nella finestra di dialogo **Download del file** scegliere **Salva** per archiviare la cartella compressa in una posizione protetta.
 
 > [!IMPORTANT]
 > Non rinominare o spostare file all'interno della cartella di On-premises Exchange Connector. Se si sposta o si rinomina il contenuto della cartella l'installazione verrà interrotta.
@@ -133,6 +131,6 @@ Dopo aver configurato correttamente Exchange Connector, è possibile visualizzar
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: Impostazioni dei criteri di configurazione di Android e Samsung KNOX | Microsoft Intune
-description: 
+title: Impostazioni dei criteri di Android e Samsung KNOX | Microsoft Intune
+description: "Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi Android gestiti con Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,15 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
-ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: e983f4ac4e396a30db19e5a0d487ac0f9c25ff14
 
 
 ---
 
 # Impostazioni dei criteri di Android e Samsung KNOX in Microsoft Intune
+
+Intune offre una gamma di impostazioni generali integrate che è possibile configurare nei dispositivi Android. È anche possibile specificare i valori OMA-URI per creare impostazioni personalizzate non disponibili in Intune.
 
 ## Criteri di configurazione generale
 
@@ -254,6 +256,6 @@ Sebbene Intune supporti profili Wi-Fi per i dispositivi Android, questa funziona
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

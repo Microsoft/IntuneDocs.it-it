@@ -13,8 +13,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa4dc77c66a34d9d50b83d072ed5e03674b4d293
-ms.openlocfilehash: bfb82684d8c4347297c3ed8659cc44e70ad4706c
+ms.sourcegitcommit: 06f144693fe4e535b2ed423c95f5431e391f316f
+ms.openlocfilehash: 077f35afc5084b0381fd330236e45d62e1242484
 
 
 ---
@@ -29,6 +29,9 @@ Come con i dispositivi, a un certo punto è preferibile o necessario [ritirare l
 
 
 La **cancellazione completa** ripristina le impostazioni predefinite di un dispositivo rimuovendo tutti i dati e le impostazioni dell'azienda e dell'utente. Il dispositivo verrà rimosso da Intune. La cancellazione completa è utile per la reimpostazione di un dispositivo prima di consegnarlo a un nuovo utente o nei casi in cui il dispositivo è stato smarrito o rubato.  **Prestare attenzione alla selezione della cancellazione completa. Non sarà possibile recuperare i dati nel dispositivo**.
+
+> [!Warning]
+> I dispositivi Windows 10 RTM (ossia precedenti a Windows 10 versione 1511) con meno di 4 GB di RAM possono diventare inaccessibili se cancellati. Per accedere a un dispositivo Windows 10 che non risponde più, è possibile avviare il dispositivo da un'unità USB o trovare una soluzione simile.
 
 ## Cancellazione selettiva
 
@@ -55,7 +58,7 @@ La **cancellazione selettiva** rimuove i dati aziendali, compresi i dati sulla g
 |App Google Play non gestite|Le app e i dati rimangono installati|Le app e i dati rimangono installati|
 |App line-of-business non gestite|Le app e i dati rimangono installati|Le app vengono disinstallate e, di conseguenza, i dati locali delle app vengono rimossi. Non vengono rimossi i dati esterni all'app, ad esempio quelli presenti sulla scheda SD.|
 |App Google Play gestite|I dati dell'app vengono rimossi. L'app non viene rimossa. I dati protetti dalla crittografia MAM all'esterno dell'app (scheda SD e così via) restano crittografati e sono inutilizzabili, ma non vengono rimossi.|I dati dell'app vengono rimossi. L'app non viene rimossa. I dati protetti dalla crittografia MAM all'esterno dell'app (scheda SD e così via) restano crittografati, ma non vengono rimossi.|
-|App line-of-business gestite|I dati dell'app vengono rimossi. L'app non viene rimossa. I dati protetti dalla crittografia MAM all'esterno dell'app (scheda SD e così via) restano crittografati e sono inutilizzabili, ma non vengono rimossi.|I dati dell'app vengono rimossi. L'app non viene rimossa. I dati protetti dalla crittografia MAM all'esterno dell'app (scheda SD e così via) restano crittografati, ma non vengono rimossi.|
+|App line-of-business gestite|I dati dell'app vengono rimossi. L'app non viene rimossa. I dati protetti dalla crittografia MAM all'esterno dell'app (scheda SD e così via) restano crittografati e sono inutilizzabili, ma non vengono rimossi.|I dati dell'app vengono rimossi. L'app non viene rimossa. I dati protetti dalla crittografia MAM all'esterno dell'app (scheda SD e così via) restano crittografati e sono inutilizzabili, ma non vengono rimossi.|
 |Impostazioni|Le configurazioni dei criteri di Intune non vengono più applicate e gli utenti possono modificare le impostazioni.|Le configurazioni dei criteri di Intune non vengono più applicate e gli utenti possono modificare le impostazioni.|
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso|Rimosso|
 |Impostazioni del profilo certificato|Certificati revocati, ma non rimossi.|Certificati rimossi e revocati.|
@@ -139,6 +142,6 @@ Per ottenere un report dei dispositivi che sono stati disattivati, cancellati o 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

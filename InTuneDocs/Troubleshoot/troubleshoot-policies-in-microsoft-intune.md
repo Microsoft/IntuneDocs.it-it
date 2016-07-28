@@ -1,6 +1,6 @@
 ---
 title: Risolvere i problemi relativi ai criteri | Microsoft Intune
-description: 
+description: Risolvere i problemi di configurazione dei criteri.
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
-ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+translationtype: Human Translation
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 64518fc58a97c0d5060d909b60df565c19498389
 
 
 ---
@@ -47,7 +48,7 @@ Nella schermata seguente è possibile visualizzare due chiari esempi:
 ![Criteri dei dispositivi Intune](../media/Intune-Device-Policy-v.2.jpg)
 
 > [!NOTE]
-> [!NOTE] Tenere presente che quando due criteri con livelli di restrizione diversi vengono applicati allo stesso dispositivo o utente, viene di fatto applicato il criterio più restrittivo.
+> Tenere presente che quando due criteri con livelli di restrizione diversi vengono applicati allo stesso dispositivo o utente, viene di fatto applicato il criterio più restrittivo.
 
 ## Intervalli di aggiornamento dei criteri
 I criteri vengono aggiornati a intervalli regolari. In generale, i criteri dovrebbero essere registrati nei dispositivi entro 15 minuti dall'applicazione di una modifica. Ecco altri dettagli sugli intervalli regolari per l'aggiornamento dei criteri:
@@ -70,7 +71,7 @@ Per i dispositivi Windows non MDM, gli errori dei criteri nel file policyplatfor
 2.  Attendere 20 minuti che il software client venga rimosso.
 
     > [!NOTE]
-    > [!NOTE] Non provare a rimuovere il client da Programmi e funzionalità.
+    > Non provare a rimuovere il client da Programmi e funzionalità.
 
 3.  Nel menu Start digitare **Controllo account utente** per aprire le impostazioni di Controllo dell'account utente.
 
@@ -112,6 +113,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

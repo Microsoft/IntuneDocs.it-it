@@ -3,18 +3,19 @@ title: Installare la rete privata virtuale (VPN) dell'azienda | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
+ROBOTS: noindex,nofollow
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: d4c0e05002b3d6f2785b401159c2872d93313524
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 73fee953e10336fe659e271b49d96a518b2730aa
 
 
 ---
@@ -28,7 +29,9 @@ Se l'amministratore IT ha configurato un'applicazione VPN per consentire la conn
 
 2.  In **Play Store** fare clic su **INSTALLA** e seguire le istruzioni per installare l'app.
 
-3.  Toccare **Installa il profilo VPN aziendale** e seguire le istruzioni per accettare e attivare l'app.
+3.  Toccare **Install corporate VPN profile** (Installa il profilo VPN aziendale) e seguire le istruzioni. I passaggi di installazione possono essere leggermente diversi, a seconda del provider VPN usato dalla società.
+
+
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
@@ -36,6 +39,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

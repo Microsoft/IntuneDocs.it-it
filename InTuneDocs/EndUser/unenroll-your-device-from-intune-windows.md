@@ -1,9 +1,9 @@
 ---
-title: Annullare la registrazione del dispositivo in Intune | Microsoft Intune
-description: 
+title: Annullare la registrazione del dispositivo Windows da Intune | Microsoft Intune
+description: Descrive come annullare la registrazione di un dispositivo Windows da Intune
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: c323aed2b4fbac831ae4919c8145b7253eb97ace
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: e510d9800fde2f1f10c583da273dc28739044009
 
 
 ---
 
 
-# Annullare la registrazione del dispositivo in Intune
+# Annullare la registrazione del dispositivo Windows da Intune
 
 Se è stata eseguita la registrazione in Intune, ma non si vuole più usare il dispositivo Windows per le attività aziendali o scolastiche e non è più necessario l'accesso alla posta elettronica, alle app o ad altre risorse dell'azienda o dell'istituto di istruzione, annullare la registrazione del dispositivo. Dopo aver annullato la registrazione del dispositivo in Intune, non sarà più possibile accedere a tali risorse. Per altre informazioni su cosa accade quando viene annullata la registrazione del dispositivo, vedere [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 
@@ -66,6 +66,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

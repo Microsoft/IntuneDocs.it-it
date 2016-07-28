@@ -1,9 +1,9 @@
 ---
-title: Integrazione di Intune con prodotti e servizi cloud Microsoft | Microsoft Intune
-description: 
+title: Integrazione di Intune con servizi cloud Microsoft | Microsoft Intune
+description: Integrazione di Intune con prodotti e servizi cloud Microsoft e altri prodotti Microsoft
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: e58b295bf89e200c7c986902c9b4408d23e67c64
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: e20293f431e0a9ff385f82276d25e71d460230de
 
 
 ---
@@ -42,6 +42,6 @@ Per altre informazioni, vedere [Gestire i dispositivi mobili con Configuration M
 [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

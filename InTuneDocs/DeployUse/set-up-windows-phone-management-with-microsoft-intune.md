@@ -1,6 +1,6 @@
 ---
 title: Configurare la gestione di Windows 10 Mobile e Windows Phone con Microsoft Intune | Microsoft Intune
-description: 
+description: Abilitare la gestione di dispositivi mobili (MDM) per i dispositivi Windows 10 Mobile o Windows Phone con Microsoft Intune.
 keywords: 
 author: NathBarn
 manager: jeffgilb
@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
-ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
+ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
+ms.openlocfilehash: d1bba612d9f613dde33f71790e2c3b2d6b33fe88
 
 
 ---
@@ -29,7 +29,7 @@ Per la maggior parte degli scenari, gli utenti possono installare l'app Portale 
 
 2.  **Impostare un alias DNS per l'indirizzo del server di registrazione** (facoltativo)
 
-    La creazione di un alias DNS (tipo di record CNAME) consente agli utenti di registrare facilmente i propri dispositivi. Se non viene creato un alias DNS, gli utenti devono
+    La creazione di un alias DNS (tipo di record CNAME) consente agli utenti di registrare facilmente i propri dispositivi. Anche se la voce DNS CNAME è facoltativa per la registrazione dei dispositivi Windows, è consigliabile creare uno o più record quando necessario, in modo da semplificare le operazioni durante il processo di registrazione dei dispositivi Windows. Se non si trova alcun record CNAME, all'utente viene richiesto di immettere manualmente il nome del server MDM.
 
   1.  Creare record di risorse DNS **CNAME** per il dominio aziendale. Ad esempio, se il sito Web della società è contoso.com, si creerà un CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a manage.microsoft.com. Se è presente più di un dominio verificato, creare un record CNAME per ciascun dominio. I record di risorse CNAME devono contenere le informazioni seguenti:
 
@@ -56,6 +56,6 @@ Non è necessario alcun intervento aggiuntivo a meno che non venga distribuito i
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

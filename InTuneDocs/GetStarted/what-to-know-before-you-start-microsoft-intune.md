@@ -1,9 +1,9 @@
 ---
 title: Informazioni preliminari per l'uso di Microsoft Intune | Microsoft Intune
-description: 
+description: Pagina con collegamenti ai prerequisiti e ai requisiti di Intune
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/08/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 09caaa76d08f99b0d455d291fbd4002289f2f11c
-ms.openlocfilehash: fe2ebc32005d04e92b93fd817981aa2a632c2288
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 77de74a7847557893c5489492ef049b324b2f137
 
 
 ---
@@ -30,7 +30,7 @@ Prima di iniziare la configurazione di Microsoft Intune, esaminare tutti i requi
 - [Portale aziendale di Microsoft Intune](microsoft-intune-company-portal.md)
 - [Integrazione di Intune con prodotti e servizi cloud Microsoft](integration-with-cloud-services.md)
 - [Uso della larghezza di banda di rete di Intune](network-bandwidth-use.md)
-- [Gestione di domini personalizzati con Microsoft Intune](domain-names-for-microsoft-intune.md)
+- [Nomi di dominio personalizzati con Microsoft Intune](domain-names-for-microsoft-intune.md)
 
 
 Prima di usare Intune, è consigliabile esaminare anche le [funzionalità di gestione dei dispositivi mobili di Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune). Se si proviene da una sottoscrizione di valutazione, è possibile convertirla in una completa. Vedere [Come acquistare Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
@@ -42,6 +42,6 @@ Prima di usare Intune, è consigliabile esaminare anche le [funzionalità di ges
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

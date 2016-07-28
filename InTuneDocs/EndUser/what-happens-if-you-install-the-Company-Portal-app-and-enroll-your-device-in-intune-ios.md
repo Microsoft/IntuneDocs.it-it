@@ -1,27 +1,27 @@
 ---
-title: Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune? | Microsoft Intune
+title: Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo iOS o Mac OS X in Intune? | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: f07eaf82a3bd8fc7fb47032642b30850fcbbb30d
 
 
 ---
 
 
-# Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune?
+# Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo iOS o Mac OS X in Intune?
 
 Quando si installa l'app Portale aziendale e si registra il dispositivo iOS o Mac OS X in Intune, è possibile usare tale app per:
 
@@ -29,9 +29,9 @@ Quando si installa l'app Portale aziendale e si registra il dispositivo iOS o Ma
 
 -   Ottenere app aziendali dal Portale aziendale
 
--   Configurare automaticamente l'account di posta elettronica aziendale
+-   Ripristinare in remoto le impostazioni predefinite del telefono se questo viene smarrito o rubato
 
--   Ripristinare le impostazioni di fabbrica del telefono se questo viene smarrito o rubato
+-   Configurare automaticamente l'account di posta elettronica aziendale
 
 Quando si registra il dispositivo in Intune, si concedono all'amministratore IT le autorizzazioni per gestire il dispositivo e proteggere le informazioni aziendali presenti nel dispositivo.
 
@@ -64,8 +64,6 @@ Quando si registra il dispositivo in Intune, si concedono all'amministratore IT 
 -   Owner
 
 -   Nome dispositivo
-
--   Produttore
 
 Quando il dispositivo è registrato, l'amministratore IT può:
 
@@ -101,6 +99,6 @@ Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto 
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

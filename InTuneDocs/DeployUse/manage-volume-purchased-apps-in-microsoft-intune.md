@@ -1,20 +1,20 @@
 ---
 title: Gestione delle app acquistate tramite Volume Purchase Program| Microsoft Intune
-description: 
+description: Informazioni su come usare Intune per gestire le app acquistate tramite Volume Purchase Program dall'App Store.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 0b8da55b81040fd20e8234303ac4da384de954d8
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 1a4cd495ab9636dcd4bc030db663df320209e0f1
 
 
 ---
@@ -38,6 +38,6 @@ Per informazioni su come gestire le app concesse in licenza da ognuno degli Stor
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

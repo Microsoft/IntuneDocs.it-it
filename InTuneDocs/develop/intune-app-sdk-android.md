@@ -13,8 +13,8 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
-ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+ms.sourcegitcommit: 51f7734e2acced469ec3520d74a8079dac8223f2
+ms.openlocfilehash: bcb62e9c99c1f5a5b53ada688ef39a59674dea04
 
 
 ---
@@ -220,7 +220,7 @@ In alcuni casi, un metodo disponibile nella classe Android è stato contrassegna
 
 # Protezione dei dati di backup 
 
-A partire da Android Marshmallow (API 23), Android offre ora due modi in cui un'app può eseguire il backup dei dati. Queste opzioni sono disponibili per l'uso nell'app e richiedono diversi passaggi per garantire l'applicazione corretta della protezione dati MAM. È possibile esaminare la tabella di seguito per una rapida panoramica delle azioni corrispondenti necessarie per il corretto comportamento di protezione dati.  Altre informazioni sul backup di Android sono disponibili nella [guida al backup dei dati per sviluppatori di Android](http://developer.android.com/guide/topics/data/backup.html.). 
+A partire da Android Marshmallow (API 23), Android offre ora due modi in cui un'app può eseguire il backup dei dati. Queste opzioni sono disponibili per l'uso nell'app e richiedono diversi passaggi per garantire l'applicazione corretta della protezione dati MAM. È possibile esaminare la tabella di seguito per una rapida panoramica delle azioni corrispondenti necessarie per il corretto comportamento di protezione dati.  Altre informazioni sul backup di Android sono disponibili nella [guida al backup dei dati per sviluppatori di Android](http://developer.android.com/guide/topics/data/backup.html). 
 
 ## Backup completo automatico
 
@@ -365,6 +365,6 @@ Intune SDK mantiene il contratto fornito dall'API Android, ma è possibile che v
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

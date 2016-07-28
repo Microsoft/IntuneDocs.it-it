@@ -1,9 +1,9 @@
 ---
 title: Creare i criteri e pubblicare un'app | Microsoft Intune
-description: 
+description: Illustra come creare criteri e pubblicare un'app di esempio per la sottoscrizione di Intune
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
-ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: d079452cb41ca8b37c292d75a606eb72ba5304df
 
 
 ---
@@ -23,11 +23,6 @@ ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
 I criteri di Intune specificano impostazioni che consentono di controllare le impostazioni di sicurezza dei dispositivi mobili, di eseguire la manutenzione delle impostazioni di Windows Firewall ed Endpoint Protection per i computer, nonché di distribuire applicazioni. Per altre informazioni, vedere [Manage settings and features on your devices with Microsoft Intune policies](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) (Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune) e [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) (Proteggere i PC Windows con Endpoint Protection per Microsoft Intune).
 
 Con Intune è possibile eseguire due tipi di installazioni delle app. La prima è un' **installazione richiesta**, con cui l'app viene distribuita automaticamente nei computer gestiti. L'altra è un'**installazione disponibile** che distribuisce l'app, o un link all'app, al portale aziendale di Intune in modo che gli utenti possano scegliere se installarla sul computer o su dispositivi mobili.
-
-<!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
-
-Before using Intune to deploy apps, make sure that you have the appropriate licenses to publish, distribute, and use the app. The Licenses workspace lets you add and manage license agreement information for apps or software purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can then create license reports that display managed license usage information throughout your company to stay informed of license usage activity.
--->
 
 La procedura seguente consente di impostare un criterio di configurazione per dispositivi mobili e un criterio firewall per PC Windows. Verrà anche configurato Skype come installazione disponibile per i dispositivi mobili dopo che sono stati registrati.
 
@@ -46,6 +41,10 @@ La procedura seguente consente di impostare un criterio di configurazione per di
 3.  Nell'elenco **Attività** della pagina **Panoramica criteri** scegliere **Aggiungi criterio**.
 
 4.  Nell'elenco dei criteri espandere la piattaforma per cui creare un criterio, quindi scegliere **Configurazione generale** > **Creare e distribuire criteri con le impostazioni consigliate** > **Crea criterio**.
+
+> [!NOTE]
+> Non sono disponibili impostazioni consigliate per i criteri di configurazione del dispositivo, perché è possibile selezionare più opzioni. È necessario creare criteri di configurazione del dispositivo personalizzati.
+
 
 5.  Quando viene visualizzata la richiesta **Selezionare i gruppi a cui si desidera distribuire questo criterio**, scegliere un gruppo dall'elenco dei gruppi disponibili e selezionare **Aggiungi** > **OK**.
 
@@ -110,6 +109,6 @@ A questo punto, Passaggio 6 della *Guida introduttiva di Intune* completato.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

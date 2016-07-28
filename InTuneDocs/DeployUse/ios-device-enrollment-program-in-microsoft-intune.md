@@ -1,10 +1,10 @@
 ---
-title: Gestione del servizio DEP di Apple per i dispositivi iOS con Microsoft Intune | Microsoft Intune
-description: 
+title: Gestione del servizio DEP di Apple per i dispositivi iOS | Microsoft Intune
+description: "Distribuire un profilo di registrazione che registra in modalità wireless i dispositivi iOS acquistati tramite il programma di registrazione dispositivi (DEP) per gestire i dispositivi Apple."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: c63badfcbc736476f17b39e09ef189eb4d2c08ef
 
 
 ---
@@ -55,9 +55,7 @@ Per registrare i dispositivi iOS di proprietà dell'azienda con DEP, è necessar
 
     È anche possibile **assegnare dispositivi ai gruppi seguenti**. Fare clic su **Select... (Seleziona...)** per scegliere un gruppo.
 
-    >[!Important]
-    >Le assegnazioni di gruppo passeranno da Intune ad Azure Active Directory. [Altre informazioni](#changes-to-intune-group-assignments)
-
+    [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
     Quindi abilitare **Configura le impostazioni del programma di registrazione dispositivi per questo criterio** per supportare il programma di registrazione dispositivi.
 
@@ -101,13 +99,13 @@ Per registrare i dispositivi iOS di proprietà dell'azienda con DEP, è necessar
 
 ## Modifiche alle assegnazioni di gruppo di Intune
 
-A partire dal mese di settembre la gestione dei gruppi di dispositivi passerà ad Azure Active Directory. Dopo la transizione ai gruppi di Azure Active Directory le assegnazioni di gruppo non saranno più incluse nelle opzioni del **profilo di registrazione aziendale**. Poiché questa modifica verrà implementata nel corso di diversi mesi, potrebbe non essere visibile immediatamente. A breve verranno pubblicati maggiori dettagli.
+A partire dal mese di settembre la gestione dei gruppi di dispositivi passerà ad Azure Active Directory. Dopo la transizione ai gruppi di Azure Active Directory le assegnazioni di gruppo non saranno più incluse nelle opzioni del **profilo di registrazione aziendale**. Poiché questa modifica verrà implementata nel corso di diversi mesi, potrebbe non essere visibile immediatamente. È possibile definire l'assegnazione di gruppi di dispositivi dinamici in Azure Active Directory in base al nome del profilo di registrazione aziendale. Questo processo assicura che i dispositivi pre-assegnati a un gruppo di dispositivi verranno registrati automaticamente in tale gruppo con le app e i criteri distribuiti. [Altre informazioni sui gruppi di Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### Vedere anche
 [Prepararsi alla registrazione dei dispositivi](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,28 +1,26 @@
 ---
 title: Configurare la gestione dei dispositivi iOS e Mac con Microsoft Intune
-description: 
+description: Abilitare la gestione di dispositivi mobili (MDM) per dispositivi iOS, inclusi iPad e iPhone, e dispositivi Mac OS X con Microsoft Intune.
 keywords: 
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb44d53c87bec1b6892bf49a65f3df684199ed08
-ms.openlocfilehash: 9766b6e64259d809b04e6f6004c25ed88ad72659
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f393f2f34658d9c4c341f1c961e9dd527fcec4b1
 
 
 ---
 
 # Configurare la gestione dei dispositivi iOS e Mac
-Con Microsoft Intune è possibile abilitare la registrazione di dispositivi iOS e Mac OS X BYOD (Bring Your Own Device) per concedere l'accesso alla posta elettronica e alle app aziendali agli utenti di iPhone, iPad e Mac. Una volta registrati, gli utenti possono installare l'app Portale aziendale di Intune e assegnare i criteri ai dispositivi mediante la console di amministrazione di Intune.
-
-Prima di poter gestire dispositivi iOS con Intune, questi devono essere in grado di comunicare con Intune. Apple richiede una relazione di trust con Intune stabilita tramite l'importazione di un certificato Apple Push Notification Service (APNs).
+Gestione Intune dei dispositivi iPad, iPhone e Mac OS X e accesso alla posta elettronica aziendale e alle app. Affinché Intune gestisca i dispositivi iOS e Mac, è necessario un dispositivo Apple Push Notification Service. Dopo aver aggiunto il certificato a Intune, gli utenti possono installare l'app Portale aziendale per registrare i propri dispositivi. In alternativa, l'amministratore può configurare la [gestione dei dispositivi iOS di proprietà dell'azienda](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Configurare Intune**<br>
     Se non è stato già fatto, preparare la gestione di dispositivi mobili (MDM) [impostando l'autorità di gestione di dispositivi mobili](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority), ad esempio **Microsoft Intune**, e configurando MDM.
@@ -50,6 +48,6 @@ Se l'azienda o l'organizzazione acquista dispositivi iOS per gli utenti, i dispo
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

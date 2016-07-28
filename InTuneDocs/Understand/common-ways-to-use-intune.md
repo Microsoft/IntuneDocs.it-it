@@ -1,9 +1,9 @@
 ---
 title: Metodi comuni per l'uso di Intune | Microsoft Intune
-description: 
+description: "Elenca sei delle attività più comuni che Intune esegue per conto degli utenti"
 keywords: 
 author: jeffgilb
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9cb6894cefad1da14332f9994fdf45fe2d1e9b9c
-ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 3defa4b8f78e854532d32c66a17f0ed18d36cec7
 
 
 ---
@@ -23,7 +23,8 @@ ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
 
 Prima di approfondire le attività di implementazione è importante allineare agli obiettivi aziendali gli utenti della società interessati dalla mobilità aziendale.  Questo è importante sia quando la mobilità aziendale rappresenta una novità, sia quando si esegue la migrazione da un altro prodotto.  Le esigenze connesse alla mobilità aziendale si evolvono in modo dinamico e l'approccio adottato da Microsoft per soddisfare queste esigenze in alcuni casi può essere diverso da quello di altre soluzioni sul mercato.  Il modo migliore per conformarsi agli obiettivi aziendali è esprimere ciò che si vuole ottenere attraverso scenari da implementare per dipendenti, partner e personale IT.  Di seguito sono descritti brevemente i 6 scenari più comuni, tutti basati su Intune, e per ogni scenario sono indicati i collegamenti alle informazioni sulla pianificazione e la distribuzione.
 
->[!NOTE] Si vuole sapere come Microsoft IT usa Intune per consentire ai dipendenti Microsoft di accedere alle risorse aziendali sui propri dispositivi mobili proteggendo allo stesso tempo i dati della società? [Leggere questo case study tecnico](https://www.microsoft.com/itshowcase/Article/Content/588) per vedere in dettaglio in che modo Microsoft IT usa Intune e altri servizi per gestire identità, dispositivi, applicazioni e dati.  
+>[!NOTE]
+>Si vuole sapere come Microsoft IT usa Intune per consentire ai dipendenti Microsoft di accedere alle risorse aziendali sui propri dispositivi mobili proteggendo allo stesso tempo i dati della società? [Leggere questo case study tecnico](https://www.microsoft.com/itshowcase/Article/Content/588) per vedere in dettaglio in che modo Microsoft IT usa Intune e altri servizi per gestire identità, dispositivi, applicazioni e dati.  
 
 ## Protezione di dati e messaggi di posta elettronica a livello locale in modo da consentire l'accesso sicuro dai dispositivi mobili
 La maggior parte delle strategie di mobilità aziendale inizia con un piano che consenta l'accesso sicuro alla posta elettronica da Internet ai dipendenti che usano dispositivi mobili. Molte organizzazioni usano ancora server dati e applicazioni locali, come Microsoft Exchange, ospitati nella propria rete aziendale. Intune ed Enterprise Mobility Suite (EMS) offrono un'esclusiva soluzione di accesso condizionale integrata per Exchange Server, che garantisce che nessuna app per dispositivi mobili sia in grado di accedere alla posta elettronica finché il dispositivo è registrato con Intune, senza richiedere la distribuzione di un altro computer gateway al margine della rete aziendale.
@@ -67,6 +68,6 @@ Talvolta i dipendenti devono usare dispositivi, app o browser che non è possibi
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

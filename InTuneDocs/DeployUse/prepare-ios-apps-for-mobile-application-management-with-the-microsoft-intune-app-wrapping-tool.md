@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Preparare le app per iOS per la gestione con lo strumento per la disposizione testo per app | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
+title: Eseguire la disposizione testo delle app iOS con lo strumento per la disposizione testo per app | Microsoft Intune
+description: Usare le informazioni in questo argomento per informazioni su come eseguire la disposizione testo per app iOS senza modificare il codice dell'app stessa. Preparare le app in modo da applicare i criteri di gestione delle app mobili.
+keywords: 
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
+
 
 ---
 
@@ -30,14 +24,14 @@ Usare lo **strumento per la disposizione testo per app di Microsoft Intune per i
 
 Lo strumento è un'applicazione da riga di comando di Mac OS che crea un 'wrapper' intorno a un'app. Dopo l'elaborazione è possibile modificare la funzionalità dell'app usando i [criteri di gestione dell'applicazione per dispositivi mobili](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) configurati.
 
-Per scaricare lo strumento, vedere l'articolo relativo allo [strumento per la disposizione testo per app di Microsoft Intune per iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218)..
+Per scaricare lo strumento, vedere la pagina per il download dello [strumento per la disposizione testo per app di Microsoft Intune per iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Passaggio 1: Soddisfare i prerequisiti per l'uso dello strumento per la disposizione testo per app
 
 |Requisito|Altre informazioni|
 |---------------|--------------------------------|
 |Sistema operativo e set di strumenti supportati|È necessario eseguire lo strumento di wrapping delle app in un computer Mac che esegue OS X 10.8.5 o versioni successive, con il set di strumenti XCode versione 5 o versioni successive.|
-|Certificato di firma e profilo di provisioning|È necessario avere un certificato di firma e un profilo di provisioning Apple. Vedere la [documentazione per sviluppatori Apple](https://developer.apple.com/)..|
+|Certificato di firma e profilo di provisioning|È necessario avere un certificato di firma e un profilo di provisioning Apple. Vedere la [documentazione per sviluppatori Apple](https://developer.apple.com/).|
 |Elaborazione di un'app con lo strumento per la disposizione testo per app|Le app devono essere sviluppate e firmate dalla società o da un fornitore di software indipendente (ISV). Non è possibile usare questo strumento per elaborare le app dell'Apple Store. L'app deve essere scritta per iOS 7.0 o versioni successive. Il formato delle app deve essere PIE (Position Independent Executable). Per altre informazioni sul formato PIE, vedere la documentazione per sviluppatori di Apple. Il formao dell'estensione dell'app deve essere **.app** o **.ipa**.|
 |App che lo strumento per la disposizione testo non è in grado di elaborare|App crittografate, non firmate e con attributi di file estesi.|
 |App che usano Azure Active Directory Library (ADAL)|Se l'app usa ADAL, deve includere una versione ADAL superiore o uguale a 1.0.2 e lo sviluppatore deve concedere accesso app alla risorsa di gestione delle applicazioni per dispositivi mobili Intune.<br /><br />Per informazioni dettagliate sull'uso di ADAL, vedere [Informazioni per le app che usano Azure Active Directory Library](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) in questo articolo.|
@@ -47,7 +41,7 @@ Per scaricare lo strumento, vedere l'articolo relativo allo [strumento per la di
 
 1.  Dalla pagina dello **strumento per la disposizione testo per app di Microsoft Intune per iOS** nell'[Area download Microsoft](https://www.microsoft.com/download/details.aspx?id=45218), scaricare il file di installazione dello strumento in un computer Mac.
 
-2.  Nel computer Mac fare doppio clic sul file di installazione **Microsoft Intune App Wrapping Tool for iOS.dmg**..
+2.  Nel computer Mac fare doppio clic sul file di installazione **Microsoft Intune App Wrapping Tool for iOS.dmg**.
 
 3.  Fare clic su **Accetto** per accettare il contratto di licenza con l'utente finale. Il programma di installazione verrà montato e visualizzato nel computer Mac.
 
@@ -59,7 +53,7 @@ Per scaricare lo strumento, vedere l'articolo relativo allo [strumento per la di
 
 1.  Nel computer Mac, aprire una finestra Terminale e spostarsi nella cartella in cui è stato salvato il file. Poiché il file eseguibile si trova all'interno del pacchetto, è necessario eseguire il comando come segue:
 ```
-    ./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
     > [!NOTE]
     > Some parameters are optional as shown in the table below.
@@ -126,7 +120,7 @@ Le app di cui è stato eseguito il wrapping tramite lo strumento di wrapping del
 
 1.  Riprodurre il problema eseguendo l'app.
 
-2.  Raccogliere l'output della console seguendo le istruzioni di Apple fornite nell'articolo relativo al [debug delle app iOS distribuite](https://developer.apple.com/library/ios/qa/qa1747/_index.html)..
+2.  Raccogliere l'output della console seguendo le istruzioni di Apple fornite nell'articolo relativo al [debug delle app iOS distribuite](https://developer.apple.com/library/ios/qa/qa1747/_index.html).
 
 3.  Filtrare i log salvati per l'output delle restrizioni dell'app immettendo lo script seguente nella console:
 
@@ -149,7 +143,7 @@ Per le app che usano ADAL, devono verificarsi le condizioni seguenti:
 
 -   L'app deve includere una versione ADAL superiore o uguale alla versione 1.0.2
 
--   Lo sviluppatore deve concedere all'app l'accesso alla risorsa di gestione delle applicazioni per dispositivi mobili di Intune, come descritto in [Passaggi da seguire per le app che usano ADAL](#steps-to-follow-for-apps-that-use-adal)..
+-   Lo sviluppatore deve concedere all'app l'accesso alla risorsa di gestione delle applicazioni per mobili di Intune, come descritto in [Passaggi da seguire per le app che usano ADAL](#steps-to-follow-for-apps-that-use-adal).
 
 ### Panoramica degli identificatori che è necessario ottenere
 Le app che usano ADAL devono essere registrate tramite il portale di gestione di Azure per ottenere due identificatori univoci per le app:
@@ -170,9 +164,9 @@ Le app che usano ADAL devono essere registrate tramite il portale di gestione di
 
     2.  Fare clic su **Registrazione applicazione LOB esistente** in Azure Active Directory.
 
-    3.  Nella sezione per la configurazione scegliere **Configura l'accesso ad API Web di altre applicazioni**..
+    3.  Nella sezione di configurazione scegliere **Configura l'accesso ad API Web di altre applicazioni**.
 
-    4.  Nella sezione **Autorizzazioni per altre applicazioni** scegliere **Gestione di applicazioni mobili Intune** dal primo elenco a discesa..
+    4.  Nella sezione **Autorizzazioni per altre applicazioni** scegliere **Gestione di applicazioni mobili Intune** dal primo elenco a discesa.
 
         Ora è possibile usare l'ID client dell'app nello strumento per la disposizione testo per app. L'ID client dell'app è disponibile nel portale di gestione di Azure Active Directory, come descritto nella sezione [Panoramica degli identificatori che è necessario ottenere](#overview-of-identifiers-you-need-to-get).
 
@@ -199,7 +193,7 @@ Le app che usano ADAL devono essere registrate tramite il portale di gestione di
 -   Se si forniscono l'ID client e l'URI di reindirizzamento dell'applicazione client, si evitano richieste di accesso doppie. Questo ID client deve essere registrato per accedere all'ID risorsa Gestione di applicazioni mobili [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]nel Dashboard di AAD. In caso contrario, si verificherà un errore di accesso quando viene eseguita l'app.
 
 ## Impostazione dei diritti delle app
-Prima di eseguire la disposizione testo per l'app, è possibile assegnare **diritti** per concedere all'app autorizzazioni e funzionalità aggiuntive superiori alle operazioni normalmente eseguibili da un'app.  Durante la firma del codice viene usato un **file dei diritti** per specificare le autorizzazioni speciali all'interno dell'app, ad esempio l'accesso a un portachiavi condiviso. I servizi di app specifici, denominati **funzionalità**, sono abilitati all'interno di Xcode durante lo sviluppo delle app. Una volta abilitate, le funzionalità vengono riportate nel file dei diritti. Per altre informazioni su funzionalità e diritti, vedere l'articolo relativo all'[aggiunta di funzionalità](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) nella libreria per gli sviluppatori iOS. Per un elenco completo delle funzionalità supportate, vedere [Funzionalità supportate](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html)..
+Prima di eseguire la disposizione testo per l'app, è possibile assegnare **diritti** per concedere all'app autorizzazioni e funzionalità aggiuntive superiori alle operazioni normalmente eseguibili da un'app.  Durante la firma del codice viene usato un **file dei diritti** per specificare le autorizzazioni speciali all'interno dell'app, ad esempio l'accesso a un portachiavi condiviso. I servizi di app specifici, denominati **funzionalità**, sono abilitati all'interno di Xcode durante lo sviluppo delle app. Una volta abilitate, le funzionalità vengono riportate nel file dei diritti. Per altre informazioni su funzionalità e diritti, vedere l'articolo relativo all'[aggiunta di funzionalità](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) nella libreria per gli sviluppatori iOS. Per un elenco completo delle funzionalità supportate, vedere [Funzionalità supportate](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
 
 ### Funzionalità supportate per lo strumento per la disposizione testo per app per iOS
 
@@ -211,7 +205,7 @@ Prima di eseguire la disposizione testo per l'app, è possibile assegnare **diri
 |Acquisto in-app|L'acquisto in-app incorpora uno store direttamente nell'app, in quanto consente di connettersi allo store ed elaborare in modo sicuro i pagamenti eseguiti dall'utente. È possibile usare l'acquisto in-app per riscuotere pagamenti per funzionalità avanzate o contenuti aggiuntivi utilizzabili dall'app.||
 |Condivisione di portachiavi|L'attivazione della condivisione di portachiavi consente all'app di condividere le password nel portachiavi con altre app sviluppate dal team.|Quando si usa la condivisione di portachiavi, usare la notazione DNS inversa:<br /><br />*com.companyName.KeychainGroup*|
 |VPN personale|Abilitare la VPN personale per consentire all'app di creare e controllare una configurazione VPN di sistema personalizzata usando il framework di estensione di rete.||
-|Notifiche push|Il servizio Apple Push Notification (APN) consente a un'app che non è in esecuzione in primo piano di notificare all'utente la disponibilità di informazioni.|Per consentire il funzionamento delle notifiche push, è necessario usare un profilo di provisioning specifico dell'app.<br /><br />Seguire i passaggi indicati nella [documentazione per sviluppatori Apple](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)..|
+|Notifiche push|Il servizio Apple Push Notification (APN) consente a un'app che non è in esecuzione in primo piano di notificare all'utente la disponibilità di informazioni.|Per consentire il funzionamento delle notifiche push, è necessario usare un profilo di provisioning specifico dell'app.<br /><br />Seguire i passaggi indicati nella [documentazione per sviluppatori Apple](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html).|
 |Configurazione degli accessori wireless|L'abilitazione della configurazione degli accessori wireless aggiunge il framework degli accessori esterni al progetto e consente all'app di configurare accessori MFi Wi-Fi.||
 
 ### Passaggi per abilitare i diritti
@@ -230,7 +224,7 @@ Prima di eseguire la disposizione testo per l'app, è possibile assegnare **diri
 
     1.  Accedere all'area membri degli sviluppatori Apple.
 
-    2.  Creare un profilo di provisioning per l'app. Per istruzioni, vedere l'articolo relativo a [come ottenere i prerequisiti per lo strumento per la disposizione testo per app di Intune per iOS](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx)..
+    2.  Creare un profilo di provisioning per l'app. Per istruzioni, vedere [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Come ottenere i prerequisiti per lo strumento per la disposizione testo per app di Intune per iOS).
 
     3.  Nel profilo di provisioning abilitare gli stessi diritti dell'app. È necessario indicare gli stessi ID specificati durante lo sviluppo dell'app.
 
@@ -271,7 +265,7 @@ Per rivedere i diritti esistenti di un'app firmata e di un profilo di provisioni
 Questo comando rimuove tutte le funzionalità abilitate nell'app che non sono presenti nel file dei diritti. Se si rimuovono le funzionalità usate dall'app si possono verificare interruzioni dell'app. È possibile rimuovere le funzionalità mancanti se si dispone di un'app prodotta dal fornitore che ha tutte le funzionalità per impostazione predefinita.
 
 ```
-./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
 ## Sicurezza e privacy per lo strumento di wrapping delle app
@@ -297,6 +291,7 @@ Quando si usa lo strumento di wrapping delle app, adottare le procedure consigli
 - [Usare l'SDK per abilitare le app per la gestione delle applicazioni per dispositivi mobili](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO3-->
 
 

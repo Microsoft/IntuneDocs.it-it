@@ -1,6 +1,6 @@
 ---
 title: Creare e distribuire criteri MAM | Microsoft Intune
-description: 
+description: Usare le istruzioni dettagliate in questo argomento per creare e distribuire i criteri di gestione delle app mobili.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,24 +12,27 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
-ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
-ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+translationtype: Human Translation
+ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
+ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
 
 
 ---
 
 # Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune
-I criteri MAM (Mobile app management, Gestione delle app mobili) possono essere adottati in applicazioni eseguite su dispositivi gestiti o non gestiti da Intune. Per una descrizione più dettagliata del funzionamento dei criteri MAM e degli scenari supportati dai criteri MAM di Intune, leggere l'argomento [Proteggere i dati delle app con i criteri MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+I criteri MAM (Mobile app management, Gestione delle app mobili) possono essere adottati in applicazioni eseguite su dispositivi gestiti o non gestiti da Intune. Per una descrizione più dettagliata del funzionamento dei criteri MAM e degli scenari supportati dai criteri MAM di Intune, leggere l'argomento [Proteggere i dati delle app usando i criteri di gestione delle app per dispositivi mobili](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 In questo argomento viene descritto il processo di creazione di un criterio MAM nel **portale di Azure**. Il portale di Azure è la nuova console di amministrazione per la creazione di criteri MAM. È consigliabile usare questo portale per creare criteri MAM. Il portale di Azure supporta gli scenari MAM seguenti:
 - Dispositivi registrati in Intune
 - Dispositivi gestiti da una soluzione MDM di terze parti
 - Dispositivi non gestiti da nessuna soluzione MDM (BYOD).
 
-Se si sta usando la **console di amministrazione di Intune** per la gestione dei dispositivi, è possibile creare un criterio MAM che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) stessa.
+>[!IMPORTANT]
+
+> Se si sta usando la **console di amministrazione di Intune** per la gestione dei dispositivi, è possibile creare un criterio MAM che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) stessa.
 I criteri MAM creati nella console di amministrazione di Intune non possono essere importati nel portale di Azure.  Nel portale di Azure i criteri MAM devono essere creati di nuovo.
 
->[!IMPORTANT]
+
 > È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Il portale di Azure è la nuova console di amministrazione per la creazione dei criteri MAM. Se si creano criteri MAM sia nella console di amministrazione di Intune che nel portale di Azure, i criteri di quest'ultimo vengono applicati alle app e distribuiti agli utenti.
 
 Per visualizzare un elenco di impostazioni dei criteri supportate nelle piattaforme iOS e Android, selezionare una delle seguenti voci:
@@ -155,8 +158,8 @@ Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale dovr�
 Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Android, selezionare una delle seguenti voci:
 
 > [!div class="op_single_selector"]
-  - [Criteri iOS](ios-mam-policy-settings.md)
-  - [Criteri Android](android-mam-policy-settings.md)
+- [Criteri iOS](ios-mam-policy-settings.md)
+- [Criteri Android](android-mam-policy-settings.md)
 
 ## Passaggi successivi
 [Monitor compliance and user status (Monitorare la conformità e lo stato utente)](monitor-mobile-app-management-policies-with-microsoft-intune.md)
@@ -166,6 +169,6 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

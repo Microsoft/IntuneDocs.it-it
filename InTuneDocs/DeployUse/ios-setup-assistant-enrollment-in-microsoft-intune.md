@@ -1,10 +1,10 @@
 ---
-title: Registrazione di Assistente configurazione per i dispositivi iOS con Microsoft Intune | Microsoft Intune
-description: 
+title: Registrare i dispositivi iOS con Assistente di configurazione | Microsoft Intune
+description: "Registrare i dispositivi iOS di proprietà dell'azienda con lo strumento Apple Configurator per ripristinare le impostazioni predefinite del dispositivo e prepararlo all'esecuzione di Assistente di configurazione."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
-ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+ms.sourcegitcommit: 26ac7d52c0ad3e37e517b60d448a94849c0f4b30
+ms.openlocfilehash: f36217aa5e691ea22c891c08d1d5b886726f0a9a
 
 
 ---
@@ -27,6 +27,7 @@ Intune supporta la registrazione di dispositivi iOS di proprietà dell'azienda c
 Con Apple Configurator è possibile ripristinare le impostazioni predefinite dei dispositivi iOS in modo da prepararli per poter essere configurati dal nuovo utente del dispositivo.  Per questo metodo è necessario connettere tramite USB il dispositivo iOS a un computer Mac per configurare la registrazione aziendale e si presuppone l'uso di Apple Configurator 2.0. La maggior parte degli scenari richiede che i criteri applicati al dispositivo iOS includano *Affinità utente* per abilitare l'app Portale aziendale di Microsoft Intune.
 
 **Prerequisiti**
+* [Abilitazione della registrazione di iOS](set-up-ios-and-mac-management-with-microsoft-intune.md) tramite l'installazione di un certificato Apple Push Notification Service
 * Accesso fisico ai dispositivi iOS - La configurazione dei dispositivi deve essere annullata (ripristino impostazioni predefinite) senza password di protezione
 * Numeri di serie del dispositivo - [Come ottenere un numero di serie iOS](https://support.apple.com/en-us/HT204308)
 * Cavi di connessione USB
@@ -36,8 +37,6 @@ Con Apple Configurator è possibile ripristinare le impostazioni predefinite dei
 1.  **Creare il gruppo di dispositivi mobili** (facoltativo). Se l'azienda richiede l'uso di gruppi di dispositivi mobili per gestire i dispositivi, creare tali gruppi. [Usare i gruppi per gestire utenti e dispositivi con Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
 2.  **Creare un profilo per dispositivi**. Un profilo di registrazione dispositivi consente di definire le impostazioni applicate a un gruppo di dispositivi. Se non lo si è ancora fatto, creare un profilo di registrazione dispositivi per i dispositivi iOS registrati tramite Apple Configurator.
-
-    ###### Per creare un profilo
 
     1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) passare a **Criteri** &gt; **Dispositivi di proprietà dell'azienda** e quindi scegliere **Aggiungi**.
 
@@ -62,8 +61,7 @@ Con Apple Configurator è possibile ripristinare le impostazioni predefinite dei
 
         -   **Pre-assegnazione al gruppo di dispositivi**: tutti i dispositivi distribuiti con questo profilo apparterranno inizialmente a questo gruppo. È possibile riassegnare i dispositivi dopo la registrazione.
 
-        >[!Important]
-        >Le assegnazioni di gruppo passeranno da Intune ad Azure Active Directory. [Altre informazioni](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
           -  **Programma di registrazione del dispositivo**: il programma di registrazione dispositivo di Apple (DEP) non può essere usato con la registrazione di Assistente configurazione. Verificare che sia impostato su **Disattivato**.
 
@@ -153,6 +151,6 @@ Con Apple Configurator è possibile ripristinare le impostazioni predefinite dei
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

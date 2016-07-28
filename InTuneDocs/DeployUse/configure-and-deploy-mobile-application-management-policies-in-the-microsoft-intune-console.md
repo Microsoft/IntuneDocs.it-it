@@ -1,10 +1,10 @@
 ---
-title: Configurare e distribuire i criteri di gestione delle applicazioni mobili nella console di Microsoft Intune | Microsoft Intune
-description: 
+title: Configurare i criteri MAM nella console di Intune | Microsoft Intune
+description: "I criteri di gestione delle applicazioni mobili in Microsoft Intune consentono di modificare la funzionalità delle app distribuite per adeguarle ai criteri aziendali di conformità e sicurezza."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
+ms.openlocfilehash: df75c3512091dff55ace65ef6106dc2cbc503bd2
 
 
 ---
@@ -126,7 +126,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
     |**Descrizione**|Specificare una descrizione per i criteri (facoltativo).|
     |**Limitare il contenuto Web per la visualizzazione in Managed Browser dell'azienda**|Quando questa impostazione è abilitata, tutti i collegamenti nell'app verranno aperti in Managed Browser. Per usare questa opzione, è necessario avere distribuito l'app nei dispositivi.|
     |**Impedisci backup in Android** o **Impedisci backup in iTunes e iCloud**|Disabilita il backup delle informazioni presenti nell'app.|
-    |**Consenti all'app di trasferire i dati ad altre app**|Specifica le app a cui questa app può inviare dati. È possibile scegliere di non consentire il trasferimento dei dati alle app, di trasferire i dati solo alle altre app gestite oppure di consentire il trasferimento a qualsiasi app. Questa impostazione non controlla l'uso della funzionalità **Apri in** nei dispositivi mobili.<br /><br />Ad esempio, se non si consente il trasferimento dei dati, questo viene limitato in servizi come la messaggistica SMS, l'assegnazione di immagini ai contatti e la pubblicazione di post su Facebook o Twitter.<br /><br />Nei dispositivi iOS, per impedire il trasferimento di documenti tra app gestite e non gestite, è necessario anche configurare e distribuire un criterio di sicurezza dei dispositivi mobili che disabilita l'impostazione **Consenti documenti gestiti in altre app non gestite**. Se si sceglie il trasferimento dei dati solo ad altre app gestite, i visualizzatori di file PDF e di immagini di Intune (se distribuiti) verranno usati per aprire il contenuto dei tipi associati.<br /><br />Inoltre, se si imposta l'opzione su **App gestite da criteri** o **Nessuna**, la funzionalità di iOS 9 che consente a Ricerca Spotlight di cercare i dati nelle app verrà bloccata.|
+    |**Consenti all'app di trasferire i dati ad altre app**|Specifica le app a cui questa app può inviare dati. È possibile scegliere di non consentire il trasferimento dei dati alle app, di trasferire i dati solo alle altre app gestite oppure di consentire il trasferimento a qualsiasi app. Questa impostazione non controlla l'uso della funzionalità **Apri in** nei dispositivi mobili.<br /><br />Ad esempio, se non si consente il trasferimento dei dati, questo viene limitato in servizi come la messaggistica SMS, l'assegnazione di immagini ai contatti e la pubblicazione di post su Facebook o Twitter.<br /><br />Nei dispositivi iOS, per impedire il trasferimento di documenti tra app gestite e non gestite, è necessario anche configurare e distribuire un criterio di sicurezza dei dispositivi mobili che disabilita l'impostazione **Consenti documenti gestiti in altre app non gestite**. Se si sceglie il trasferimento dei dati solo ad altre app gestite, i visualizzatori di file PDF e di immagini di Intune (se distribuiti) verranno usati per aprire il contenuto dei tipi associati.<br /><br />Inoltre, se si imposta l'opzione su **App gestite da criteri** o **Nessuna**, la funzionalità di iOS 9 che consente a Ricerca Spotlight di cercare i dati nelle app verrà bloccata.<br><br>**Questa impostazione non controlla l'uso della funzionalità Apri in nei dispositivi mobili. Per gestire Apri in, vedere [qui](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.|
     |**Consenti all'app di ricevere i dati da altre app**|Specifica le app da cui questa app può ricevere dati. È possibile scegliere di non consentire il trasferimento dei dati dalle app, di trasferire i dati solo da altre app gestite oppure di consentire il trasferimento da qualsiasi app.<br /><br />I dati verranno considerati come dati aziendali e protetti dai criteri per le app iOS che supportano più identità dove Intune applica solo le impostazioni di gestione agli account aziendali o ai dati nell'app, per un dispositivo registrato a cui sono applicati criteri di gestione delle applicazioni mobili, quando un utente accede ai dati da un'app che non è gestita da criteri di gestione delle applicazioni mobili.|
     |**Impedisci "Salva con nome"**|Disabilita l'uso dell'opzione **Salva con nome** per salvare i dati in posizioni di archiviazione cloud personali (ad esempio OneDrive Personal o Dropbox) in tutte le app che usano questi criteri.|
     |**Limita le operazioni taglia, copia e incolla con le altre app**|Specifica come è possibile usare le operazioni taglia, copia e incolla con l'app. È possibile scegliere tra:<br /><br />**Bloccato**: non consente le operazioni taglia, copia e incolla tra questa app e altre app.<br /><br />**App gestite da criteri**: consente le operazioni taglia, copia e incolla solo tra questa app e altre app gestite.<br /><br />**App gestite da criteri con Incolla in**: consente di incollare i dati tagliati o copiati da questa app solo in altre app gestite. I dati tagliati o copiati da qualsiasi app possono essere incollati in questa app.<br /><br />**Qualsiasi app**: nessuna restrizione per le operazioni taglia, copia e incolla in o da questa app.<br /><br />Per copiare o incollare i dati tra app gestite, in entrambe le app deve essere configurata l'impostazione **App gestite da criteri** o **App gestite da criteri con Incolla in**.|
@@ -197,6 +197,6 @@ Nei casi in cui il dispositivo o l'utente riceva due criteri in conflitto, si ap
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

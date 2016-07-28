@@ -1,6 +1,6 @@
 ---
 title: Esperienza dell'utente finale con app MAM | Microsoft Intune
-description: 
+description: "Questo argomento descrive cosa accade quando l'app è gestita dai criteri di gestione delle app mobili."
 keywords: 
 author: karthikaraman
 manager: jeffgilb
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
-ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
-ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+translationtype: Human Translation
+ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
+ms.openlocfilehash: e43dea5630975165ea7468836a8b0328f0656030
 
 
 ---
@@ -46,7 +47,8 @@ I criteri di Gestione per applicazioni mobili (MAM) si applicano solo quando le 
 
     ![Schermata con il percorso del file aperto e l'elenco dei file esistenti](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > [!NOTE] Quando si modifica un criterio distribuito, le modifiche verranno applicate alla successiva apertura dell'applicazione.
+    > [!NOTE]
+    > Quando si modifica un criterio distribuito, le modifiche verranno applicate alla successiva apertura dell'applicazione.
 
 ##  Accesso a OneDrive in un dispositivo Android
 
@@ -169,6 +171,6 @@ Questo non impedisce l'uso dell'app RMS sharing per visualizzare i file aziendal
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO3-->
 
 

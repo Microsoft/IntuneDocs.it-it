@@ -1,10 +1,10 @@
 ---
 title: "Funzionalità di gestione dei dispositivi mobili | Microsoft Intune"
-description: 
+description: Leggere questo argomento per scoprire in che modo Intune consente di gestire i dispositivi mobili registrati con il servizio.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+ms.sourcegitcommit: 23054b2f02d11ca19cd0902ebc1e6fdcf499d1f1
+ms.openlocfilehash: 8f44256fe249c60df8e910858516a25463c8e875
 
 
 ---
@@ -42,7 +42,8 @@ Tutte le attività di gestione, inventario, distribuzione di app, provisioning e
 |Gestione e distribuzione delle app|Offre una serie di strumenti che consentono di gestire le app mobili in tutte le fasi del ciclo di vita, inclusa la distribuzione di app da file di installazione e App Store, il monitoraggio dettagliato dello stato delle app e la rimozione delle app.|[Distribuire app in Microsoft Intune](/intune/deploy-use/deploy-apps)|
 |Applicazioni conformi e non conformi|Consente di specificare elenchi di app conformi (che gli utenti sono autorizzati a installare) e di app non conformi (che non possono essere installate dagli utenti).|[Impostazioni dei criteri di iOS in Microsoft Intune](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 |Gestione per applicazioni mobili|Configurare limitazioni per le applicazioni mediante la gestione di applicazioni mobili sia per i dispositivi gestiti con Intune sia per quelli non gestiti con Intune. Limitando operazioni quali copia/incolla, backup esterno dei dati e trasferimento dei dati tra le app si aumenta la sicurezza dei dati aziendali.|[Configurare e distribuire criteri di gestione delle applicazioni mobili nella console di Microsoft Intune](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)<br><br>[Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)<br /><br />[Preparare le app per iOS per la gestione delle applicazioni mobili con lo strumento di wrapping delle app di Microsoft Intune](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)<br /><br />[Preparare l'App per Android per la gestione di applicazioni per dispositivi mobili con lo strumento Microsoft Intune App esegue il Wrapping](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
-|Configurazione delle app per dispositivi mobili|Usare i criteri di configurazione delle app per dispositivi mobili per specificare impostazioni per app iOS che potrebbero essere necessarie quando l'utente esegue l'app. Ad esempio, un'app potrebbe richiedere all'utente di specificare un numero di porta o informazioni di accesso. Ciò può semplificare la configurazione dell'app e ridurre il numero di chiamate all'help desk.|[Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|Configurazione delle app mobili iOS|Usare i criteri di configurazione delle app per dispositivi mobili per specificare impostazioni per app iOS che potrebbero essere necessarie quando l'utente esegue l'app. Ad esempio, un'app potrebbe richiedere all'utente di specificare un numero di porta o informazioni di accesso. Ciò può semplificare la configurazione dell'app e ridurre il numero di chiamate all'help desk.|[Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|Profili di provisioning delle app mobili iOS|Intune offre gli strumenti necessari per distribuire in modo proattivo i profili di provisioning alle app iOS prossime alla scadenza.|[Usare i criteri del profilo di provisioning per dispositivi mobili iOS per impedire la scadenza delle app](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Managed Browser|Dopo aver distribuito Managed Browser agli utenti, è possibile configurare i criteri di Managed Browser per controllare i siti Web che gli utenti possono visitare. Inoltre, è possibile applicare i criteri di gestione delle applicazioni mobili a Managed Browser.|[Gestire l'accesso a Internet utilizzando criteri di browser gestiti con Microsoft Intune.](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
 |Microsoft Passport|Con Intune è possibile eseguire l'integrazione con Microsoft Passport for Work, un metodo di accesso alternativo per Windows 10 che usa Active Directory o un account Azure Active Directory per sostituire una password, una smart card o una smart card virtuale.|[Controllare le impostazioni di Microsoft Passport nei dispositivi con Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 
@@ -68,6 +69,6 @@ Tutte le attività di gestione, inventario, distribuzione di app, provisioning e
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

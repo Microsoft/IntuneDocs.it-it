@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Proteggere i dispositivi | Microsoft Intune
-description:
-keywords:
+description: Informazioni su alcuni dei metodi che consentono a Intune di proteggere i dispositivi da accessi non autorizzati e altre minacce.
+keywords: 
 author: Robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 53201c36e7a210c1c62d3ed3183093ed8e63dc53
+
 
 ---
 
@@ -40,10 +34,14 @@ Poiché il primo passaggio nella protezione dei dati aziendali nei dispositivi m
 ## Controllare le impostazioni di Microsoft Passport nei dispositivi Windows
 Con Intune è possibile eseguire l'integrazione con [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md), un metodo di accesso alternativo per Windows 10 e versioni successive che usa Active Directory o un account Azure Active Directory per sostituire una password, una smart card o una smart card virtuale.
 
+## Eseguire il bypass del blocco attivazione su dispositivi iOS
+Il blocco attivazione è una funzionalità che consente di proteggere i dispositivi degli utenti richiedendo l'ID Apple e la password prima di qualsiasi operazione di cancellazione o riattivazione del dispositivo. Tuttavia questo può causare problemi, ad esempio se l'utente lascia l'azienda senza rimuovere il blocco. [Il bypass del blocco attivazione iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) consente di rimuovere il blocco dai dispositivi iOS supervisionati e di riallocarli o di cancellarne il contenuto.
+
 ## Proteggere i PC Windows gestiti con il client di Intune
 Intune continua a supportare i criteri di sicurezza per i PC Windows non registrati ma gestiti con il software per client computer di Intune. Per scoprire come questi criteri aiutano a proteggere i PC Windows, vedere l'articolo [Usare i criteri per proteggere i PC Windows che eseguono il software client di Intune](policies-to-protect-windows-pcs-in-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

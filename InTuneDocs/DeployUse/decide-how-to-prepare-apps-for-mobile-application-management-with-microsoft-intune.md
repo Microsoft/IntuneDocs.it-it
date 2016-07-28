@@ -1,10 +1,10 @@
 ---
-title: Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune | Microsoft Intune
-description: 
+title: Preparare le app per la gestione di applicazioni mobili | Microsoft Intune
+description: "Le informazioni contenute in questo argomento consentono di stabilire quando è necessario usare lo strumento per la disposizione testo per app e l'SDK dell'app per abilitare le app line-of-business personalizzate per l'uso dei criteri di gestione delle app mobili."
 keywords: 
-author: Staciebarker
+author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 986d864a3169fa3b094241a3522e3f25b7bfe349
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: 4a15279bb4460c88412ede6c8678deea72a3629f
 
 
 ---
@@ -68,6 +69,6 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

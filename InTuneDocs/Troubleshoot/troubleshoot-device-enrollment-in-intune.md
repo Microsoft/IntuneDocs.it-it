@@ -1,6 +1,6 @@
 ---
 title: Risolvere i problemi di registrazione dei dispositivi | Microsoft Intune
-description: 
+description: Suggerimenti per la risoluzione dei problemi di registrazione dei dispositivi.
 keywords: 
 author: Nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d12a31eb0727f7ca0c460049ac6fffb314daf70e
-ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
 
 
 ---
@@ -160,8 +160,29 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 
 2.  Verificare che il dispositivo non sia già registrato con un altro provider MDM o che non sia già installato un profilo di gestione.
 
-
 4.  Verificare che Chrome per Android sia configurato come browser predefinito e che i cookie siano abilitati.
+
+### Problemi relativi ai certificati di Android
+
+**Problema**: l'utente riceve il messaggio seguente nel dispositivo: *Non è possibile accedere perché un certificato necessario non è presente nel dispositivo.*
+
+**Risoluzione**: 
+
+- L'utente può recuperare il certificato mancante seguendo [queste istruzioni](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
+- Se l'utente non è in grado di recuperare il certificato, è possibile che manchino i certificati intermedi nel server ADFS. I certificati intermedi sono richiesti da Android per considerare attendibile il server. 
+
+È possibile importare i certificati nell'archivio intermedio nel server ADFS o nei proxy come indicato di seguito:
+
+1.  Nel server ADFS avviare **Microsoft Management Console** e aggiungere lo snap-in Certificati per l'**account Computer**. 
+5.  Trovare il certificato usato dal servizio ADFS e visualizzare il relativo certificato padre.
+6.  Copiare il certificato padre e incollarlo in **Computer\Autorità di certificazione intermedie\Certificati**.
+7.  Copiare i certificati ADFS, ADFS Decrypting e ADFS Signing, e incollarli nell'archivio personale per il servizio ADFS.
+8.  Riavviare i server ADFS.
+
+L'utente può ora accedere al Portale aziendale nel dispositivo Android.
+
+
+
 ## Problemi di iOS
 ### Installazione profilo non riuscita
 **Problema**: in un dispositivo iOS un messaggio indica che **si è verificato un errore di installazione del profilo**.
@@ -285,6 +306,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: Proteggere i dati delle app usando i criteri di gestione delle app per dispositivi mobili | Microsoft Intune
-description: 
+title: Proteggere i dati delle app usando i criteri MAM | Microsoft Intune
+description: Questo argomento illustra in che modo i criteri di gestione di app mobili consentono di proteggere i dati aziendali, impedire la perdita di dati e mantenere separate le informazioni personali e di lavoro.
 keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+ms.sourcegitcommit: ce0bc5d1256e96e04e5d59420baed2117cb4854d
+ms.openlocfilehash: 0ba8e40b06452002f33b09b37e399c62da54c352
 
 
 ---
@@ -24,21 +24,21 @@ ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
 ## Protezione dei dati delle app
 I dipendenti usano dispositivi mobili per le attività personali e aziendali.  Pur assicurandosi della produttività dei dipendenti, è auspicabile prevenire anche la perdita di dati, sia intenzionale sia non intenzionale.  Inoltre, può essere utile proteggere i dati aziendali accessibili con dispositivi anche nel caso in cui vengano gestiti dall'utente.
 
-Per proteggere i dati aziendali, è possibile usare i criteri di gestione delle app per dispositivi mobili (MAM) di Intune. Dal momento che i criteri MAM di Intune possono essere usati in modo indipendente da qualsiasi soluzione di gestione dei dispositivi mobili (MDM), è possibile usarli per proteggere i dati aziendali con o senza la registrazione di dispositivi in una soluzione di gestione dei dispositivi. Implementando i **criteri a livello di app** è possibile limitare l'accesso alle risorse aziendali e mantenere i dati all'interno del reparto IT.
+Per proteggere i dati aziendali, è possibile usare i criteri di gestione delle app per dispositivi mobili (MAM) di Intune. Dal momento che i criteri MAM di Intune possono essere usati **in modo indipendente da qualsiasi soluzione di gestione di dispositivi mobili (MDM)**, è possibile usarli per proteggere i dati aziendali con o senza la registrazione di dispositivi in una soluzione di gestione dei dispositivi. Implementando i **criteri a livello di app** è possibile limitare l'accesso alle risorse aziendali e mantenere i dati all'interno del reparto IT.
 
-I criteri MAM supportano le app in esecuzione in:
-> [!IMPORTANT]
-> È possibile creare criteri di gestione delle app per dispositivi mobili per le app di Office per dispositivi mobili che si connettono ai servizi di Office 365. I criteri MAM non sono supportati per le app che si connettono ai servizi locali di Exchange o SharePoint.
+I criteri MAM possono essere configurati per app in esecuzione su dispositivi con le caratteristiche seguenti:
 
+- **Registrati in Microsoft Intune:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dell'azienda.
 
-- **Dispositivi gestiti e registrati in Microsoft Intune**. I dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dell'azienda.
-
--   **Dispositivi gestiti e registrati in una soluzione di gestione dei dispositivi mobili di terze parti**.   I dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dell'azienda.
+-   **Registrati in una soluzione di gestione di dispositivi mobili di terze parti:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dell'azienda.
 
   > [!NOTE]
   > I criteri di gestione delle app per dispositivi mobili non devono essere usati con soluzioni di gestione delle app per dispositivi mobili o di contenitore protetto di terze parti.
 
--   **Dispositivi non gestiti**.  I dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dei dipendenti non gestiti o registrati in Intune o altre soluzioni MDM.
+-   **Non registrati in alcuna soluzione di gestione di dispositivi mobili:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dei dipendenti non gestiti o registrati in Intune o altre soluzioni MDM.
+
+> [!IMPORTANT]
+> È possibile creare criteri di gestione delle app per dispositivi mobili per le app di Office per dispositivi mobili che si connettono ai servizi di Office 365. I criteri MAM non sono supportati per le app che si connettono ai servizi locali di Exchange, Skype for Business o SharePoint.
 
 **I vantaggi più rilevanti dell'uso dei criteri MAM sono i seguenti:**
 
@@ -133,6 +133,6 @@ Tutte le app di Office per dispositivi mobili supportano più identità.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

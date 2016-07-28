@@ -1,10 +1,10 @@
 ---
 title: Distribuire le app | Microsoft Intune
-description: 
+description: "Questo argomento illustra i concetti che è necessario comprendere prima di iniziare a distribuire le app con Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: e6b995118e66fd146a68b49ce4decdcbd1fe3572
-ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
+translationtype: Human Translation
+ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
+ms.openlocfilehash: 84f19cd198a2367abb0267071bd73ce8ac6d7d05
 
 
 ---
@@ -29,7 +30,7 @@ Quando si distribuiscono le app, è possibile scegliere una delle seguenti azion
 -   **Installazione richiesta**: l'app viene installata nel dispositivo senza alcun intervento da parte dell'utente finale.
 
     > [!TIP]
-    > [!TIP] Per i dispositivi iOS non in modalità di supervisione e per tutti i dispositivi Android l'utente deve accettare l'offerta per l'app prima di installare l'app.
+    > Per i dispositivi iOS non in modalità di supervisione e per tutti i dispositivi Android, l'utente deve accettare l'offerta per l'app prima di installarla.
     > 
     >  Se un utente finale disinstalla un'app distribuita come obbligatoria, Intune reinstallerà automaticamente l'app dopo il ciclo di inventario successivo. In genere l'inventario viene eseguito ogni 7 giorni.
 
@@ -54,7 +55,7 @@ Quando si distribuiscono le app, è possibile scegliere una delle seguenti azion
 |App iOS gestita dall'App Store (distribuita in un gruppo di utenti)|Sì|Sì|Sì|Sì|
 |App iOS gestita dall'App Store (distribuita in un gruppo di dispositivi)|Sì|No|Sì|sì|
 > [!TIP]
-> [!TIP] Quando si distribuiscono le app, se si selezionano gruppi sia di utenti che di dispositivi, è possibile distribuire l'app soltanto come **Installazione disponibile**.
+> Quando si distribuiscono le app, se si selezionano gruppi sia di utenti che di dispositivi, è possibile distribuire l'app soltanto come **Installazione disponibile**.
 
 ## Conflitti di distribuzione
 Quando un dispositivo riceve due distribuzioni con la stessa azione di distribuzione, si applicano le regole seguenti:
@@ -72,6 +73,6 @@ Informazioni su come [distribuire app in Microsoft Intune](deploy-apps-in-micros
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

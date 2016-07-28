@@ -1,20 +1,20 @@
 ---
-title: Configurare Microsoft Intune Exchange Connector per Exchange ospitato | Microsoft Intune
-description: 
+title: Exchange Connector per Exchange ospitato | Microsoft Intune
+description: Connettere Intune al servizio di Office 365 Exchange per supportare la gestione di dispositivi mobili (MDM) di Exchange ActiveSync.
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
-ms.openlocfilehash: 6cfc532cba2f53034c4c3ef0c2df3d6c1e6e7841
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 63697222f024169d9450b9f4fea8c666353e72cc
 
 
 ---
@@ -58,12 +58,12 @@ Service to Service Connector viene configurato e sincronizzato automaticamente c
 
 ## Convalidare la connessione a Exchange
 
-Dopo aver configurato Exchange Connector, nella console di amministrazione di Intune scegliere l'area di lavoro **AMMINISTRAZIONE**, passare a **Gestione dei dispositivi mobili** > **Microsoft Exchange** e verificare che i dettagli specificati siano visualizzati in **Informazioni sulla connessione Exchange**.
+Dopo aver configurato Exchange Connector, nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) scegliere **Amministrazione** e passare a **Gestione dei dispositivi mobili** > **Microsoft Exchange** e verificare che i dettagli specificati siano visualizzati in **Informazioni sulla connessione Exchange**.
 
 È inoltre possibile verificare la data e ora dell'ultimo tentativo di sincronizzazione riuscito.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

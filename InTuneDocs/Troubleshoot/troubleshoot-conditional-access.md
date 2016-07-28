@@ -1,6 +1,6 @@
 ---
 title: Risoluzione dei problemi di accesso condizionale | Microsoft Intune
-description: 
+description: Operazioni da eseguire quando gli utenti non riescono ad accedere alle risorse usando l'accesso condizionale di Intune.
 keywords: 
 author: nbigman
 manager: jeffgilb
@@ -13,8 +13,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f79d2890c450a803bfb84ffa3c12b0de58a158c
-ms.openlocfilehash: 373b9bf9794840f999d5e5b21fc411ff621a23e1
+ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
+ms.openlocfilehash: 21ae91f0d2866b621d9353929bab6d41d95dc8cc
 
 
 ---
@@ -86,6 +86,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -1,9 +1,9 @@
 ---
-title: Configurare l'accesso alla posta elettronica per i dispositivi iOS con Microsoft Intune | Microsoft Intune
-description: 
+title: Configurare l'accesso alla posta elettronica per i dispositivi iOS | Microsoft Intune
+description: Configurare l'accesso alla posta elettronica per i dispositivi iOS con Intune
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
-ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 3b6bb8602ddc7a1f75a0c21ffc4fb6327673d38d
 
 
 ---
@@ -40,7 +40,7 @@ Con un profilo di posta elettronica è possibile automatizzare l'accesso alla po
 Per questa procedura verrà usato il server Exchange ospitato fornito con la sottoscrizione a una versione di valutazione.
 1. Nella console di Intune, fare clic su **Criteri**, quindi su **Aggiungi criterio**.
 ![<add-policy>](./media/Email-Walkthrough/Email-Walkthrough-1.png)
-2. Nella finestra di dialogo **Crea un nuovo criterio**, espandere **iOS**, selezionare **Profilo di posta elettronica**, quindi fare clic su **Crea criterio**.
+2. Nella finestra di dialogo **Crea un nuovo criterio**, espandere **iOS**, selezionare **Profilo di posta elettronica**, quindi fare clic su **Crea criterio**.  
 ![<ios-email-profile-policy>](./media/Email-Walkthrough/Email-Walkthrough-2.png)
 3. Nella pagina Crea criterio, immettere un nome per il criterio, ad esempio **Profilo di posta elettronica iOS - password utente**, insieme a una descrizione. Se si dispone di più profili di posta elettronica per diversi tipi di dispositivo e metodi di autenticazione, è possibile usare il nome per indicare la funzione del profilo.
 4. Immettere il nome host di Exchange. Dal momento che si sta usando il server Exchange ospitato in Azure, come nome host basta inserire: **outlook.office365.com**
@@ -51,21 +51,23 @@ Per questa procedura verrà usato il server Exchange ospitato fornito con la sot
 8. Fare clic su **Salva criterio**.
 9. Verrà visualizzata una finestra di dialogo per chiedere se si desidera distribuire subito il criterio. Fare clic su **Sì**.
 ![<deploy-policy-now-dialog>](./media/Email-Walkthrough/Email-Walkthrough-4.png)
-10. Nella finestra successiva selezionare il gruppo utenti in cui si vuole distribuire il profilo di posta elettronica, fare clic su **Aggiungi** e quindi su **OK**.
-![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png) Dopo che si è fatto clic su **OK** il criterio inizierà a passare ai dispositivi registrati dopo uno o due minuti.
+10. Nella finestra successiva selezionare il gruppo utenti in cui si vuole distribuire il profilo di posta elettronica, fare clic su **Aggiungi** e quindi su **OK**.  
+![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)  
+Dopo aver fatto clic su **OK**, il criterio inizierà a passare ai dispositivi registrati in uno o due minuti.
 
 ## Procedura per verificare che il profilo sia stato applicato correttamente
 
 Per verificare che il profilo sia stato applicato, è necessario accedere a uno dei dispositivi in cui è stato distribuito il profilo di posta elettronica.
 1. Nel dispositivo iOS, aprire l'app di posta elettronica.
-L'app richiederà nome utente e password di posta elettronica dell'utente.
+L'app richiederà nome utente e password di posta elettronica dell'utente.  
 ![<verify-policy-add-password>](./media/Email-Walkthrough/Email-Walkthrough-6.png)
 2. Immettere nome utente e password per l'account di posta elettronica di Exchange dell'utente, quindi toccare **OK**.
  L'app di posta elettronica aprirà l'account di Exchange e la posta elettronica inizierà a sincronizzarsi al dispositivo.
 ![<exchange-account-opens>](./media/Email-Walkthrough/Email-Walkthrough-7.png)
 3. Selezionare le impostazioni dell'account per l'app di posta elettronica e verificare che il nome dell'account corrisponda a quello immesso nel profilo di posta elettronica, ad esempio **Posta elettronica Contoso**, e che le impostazioni di sincronizzazione siano corrette.
 ![<check-account-settings>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
-![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png) Nel caso in cui il profilo di posta elettronica non sia stato applicato automaticamente al dispositivo, è possibile applicare i criteri manualmente tramite l'app Portale aziendale nel dispositivo stesso.
+![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png)  
+  Nel caso in cui il profilo di posta elettronica non sia stato applicato automaticamente al dispositivo, è possibile applicare i criteri manualmente tramite l'app Portale aziendale nel dispositivo.
 1. Aprire l'app Portale aziendale.
 2. Toccare **I miei dispositivi**.
 3. Toccare il nome del dispositivo.
@@ -78,6 +80,6 @@ L'app richiederà nome utente e password di posta elettronica dell'utente.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

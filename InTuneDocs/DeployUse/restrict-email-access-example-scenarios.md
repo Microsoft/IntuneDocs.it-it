@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: "Limitare l'accesso alla posta elettronica: scenari di esempio | Microsoft Intune"
-description:
-keywords:
+title: 'Limitare l''accesso alla posta elettronica: scenari di esempio | Microsoft Intune'
+description: "Alcuni scenari di esempio e informazioni su come è possibile implementarli con l'accesso condizionale."
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: bef94f44767347bcdb944eadf63ce673ffc1b7f3
+
 
 ---
 
@@ -86,6 +80,7 @@ Il flusso seguente viene usato per decidere quali dispositivi possono accedere a
 ![Flusso di accesso dei dispositivi](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO3-->
 
 

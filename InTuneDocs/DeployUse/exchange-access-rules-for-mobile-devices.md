@@ -1,26 +1,26 @@
 ---
-title: Regole di accesso Exchange per dispositivi mobili gestiti con Microsoft Intune | Microsoft Intune
-description: 
+title: Regole di accesso a Exchange per dispositivi mobili | Microsoft Intune
+description: Le regole di accesso a Exchange ActiveSync per la gestione di dispositivi mobili determinano il livello di accesso a Exchange per tali dispositivi.
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: f69c086333e359f7d1bf202a8d13667779bd3c86
 
 
 ---
 
-# Regole di accesso Exchange per dispositivi mobili
-Le regole di accesso Exchange per i dispositivi mobili determinano il livello di accesso a Exchange per tali dispositivi. Queste impostazioni interessano tutti i dispositivi mobili, inclusi quelli non registrati in Microsoft Intune. È possibile iniziare definendo una **Regola predefinita** che verrà applicata a tutti i dispositivi mobili a cui non è applicata una regola personalizzata. Nella tabella seguente vengono descritti i livelli di accesso gestiti da Exchange ActiveSync:
+# Regole di accesso a Exchange per dispositivi mobili
+Le regole di accesso Exchange per i dispositivi mobili determinano il livello di accesso a Exchange ActiveSync per tali dispositivi. Queste impostazioni interessano tutti i dispositivi mobili, inclusi quelli non registrati in Microsoft Intune. È possibile iniziare definendo una **Regola predefinita** che verrà applicata a tutti i dispositivi mobili a cui non è applicata una regola personalizzata. Nella tabella seguente vengono descritti i livelli di accesso gestiti da Exchange ActiveSync:
 
 |Livello di accesso|Descrizione|
 |----------------|---------------|
@@ -53,6 +53,6 @@ Nella procedura riportata di seguito viene descritto come creare una regola pers
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

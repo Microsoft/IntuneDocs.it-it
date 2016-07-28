@@ -1,9 +1,9 @@
 ---
 title: Uso del sito Web del Portale aziendale di Intune | Microsoft Intune
-description: 
+description: "Descrive il sito Web del portale aziendale e fornisce i collegamenti alle procedure per attività che è possibile eseguire nel sito Web"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 79e8d7da83997dc9c89b95097ca50493af1f9f6b
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 118a25b6ebb156c4ed642fee8802ef6a54582f8e
 
 
 ---
@@ -49,6 +50,6 @@ Sul **sito Web del portale aziendale** è possibile eseguire la maggior parte de
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
