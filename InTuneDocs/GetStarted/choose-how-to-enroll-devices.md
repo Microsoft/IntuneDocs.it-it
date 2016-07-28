@@ -11,93 +11,52 @@ ms.service:
 ms.technology: 
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 translationtype: Human Translation
-ms.sourcegitcommit: f1dc713099c982d6e32c87b814dd3f55b1656eda
-ms.openlocfilehash: 5668a4d8a6cce15446201926b03d71ede174a299
+ms.sourcegitcommit: d1206cd49e92618eef79f35885b3e8be08e03925
+ms.openlocfilehash: 2126dc2647e2ec7a09971ef86b00439f2b59c36b
 
 
 ---
 
 # Scegliere come registrare i dispositivi mobili
 
-La registrazione dei dispositivi mobili è il processo che consente la gestione di smartphone, tablet e PC da parte di Microsoft Intune. L'amministratore ha il compito di determinare qual è il modo migliore per registrare i dispositivi in base ai seguenti elementi:
-
- -  Proprietà (dispositivi personali e di proprietà della società)
- -  Utilizzo (condiviso o personale)
- -  Piattaforma (iOS, Android, Windows Phone, PC Windows, PC Mac): selezionata dal metodo di registrazione
-
 Le risposte alle domande seguenti consentono di determinare il metodo di registrazione migliore per i dispositivi gestiti.
 
 ## **I dipendenti portano al lavoro i propri dispositivi o usano quelli dell'organizzazione?**
 
-  **Dispositivi di proprietà dell'utente**, nota anche come registrazione BYOD (Bring your own device), consente agli utenti di registrare i propri dispositivi per accedere alle risorse aziendali come posta elettronica, app aziendali, dati aziendali e supporto. **Dispositivi di proprietà della società** (COD) vengono forniti dall'organizzazione ai propri dipendenti per soddisfare un'esigenza aziendale.
-  > [!div class="button"]
-  [Registrazione BYOD >](#byod-device-enrollment)   [Registrazione COD >](#cod-device-enrollment)
+  - **Dispositivi di proprietà degli utenti** - Registrazione BYOD (Bring your own device)
+  - **Dispositivi di proprietà dell'azienda** -Registrazione COD
 
-### Registrazione dispositivo BYOD
-
-Con la registrazione BYOD è necessario che gli utenti installino l'app Portale aziendale nei propri dispositivi. Gli utenti possono quindi avviare l'app ed eseguire la registrazione specificando le credenziali aziendali o dell'istituto di istruzione. Se Intune trova una licenza per tali credenziali, il dispositivo viene aggiunto alla console di amministrazione di Intune e riceve i criteri di Intune, concedendo l'accesso alle risorse della società.
-
-**Selezionare il tipo di dispositivo:**
 > [!div class="button"]
-[Android](..deploy-use/set-up-android-management-with-microsoft-intune) [iOS e Mac](..deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile e Windows Phone](..deploy-use/set-up-windows-phone-management-with-microsoft-intune) [PC Windows](..deploy-use/set-up-windows-device-management-with-microsoft-intune)
+[Registrazione BYOD >](#what-byod-devices-can-your-users-enroll)   [Registrazione COD >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
+## **Quali dispositivi BYOD possono essere registrati dagli utenti?**
 
-### Registrazione dispositivo COD
-
-I dispositivi di proprietà della società (COD, Company-Owned Device) possono essere registrati a nome di un utente specifico o possono essere condivisi.  **Dispositivi condivisi**: questi dispositivi non hanno un singolo utente e non sono in genere configurati per accedere alla posta elettronica. Gli esempi includono i dispositivi in modalità tutto schermo oppure orientati alle attività prelevati da un pool in base alle esigenze e quindi restituiti. I metodi di registrazione consigliati dipendono dalla piattaforma dei dispositivi. **Dispositivi dedicati**: i dispositivi rilasciati a singoli utenti devono essere registrati come risorse della società consentendo allo stesso tempo agli utenti di accedere alla posta elettronica e ai dati come se fossero dispositivi personalizzati. I metodi di registrazione consigliati dipendono dalla piattaforma dei dispositivi. [Domanda successiva...](Are your company-owned devices shared or do they have dedicated users?)
+> [!div class="button"]
+[Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile e Windows Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [PC Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 ## **I dispositivi di proprietà della società sono condivisi o sono usati da utenti dedicati?**
 
 > [!div class="button"]
-[Condiviso >](#Shared-company-owned-devices)   [Dedicato >](..deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+[Condiviso >](#what-operating-system-are-your-shared-devices-running)   [Dedicato >](#how-will-you-manage-dedicated-ios-devices)
 
 
-### Dispositivi condivisi di proprietà della società
-
-Questi dispositivi non hanno un singolo utente e non sono in genere configurati per accedere alla posta elettronica. Gli esempi includono i dispositivi in modalità tutto schermo oppure orientati alle attività prelevati da un pool in base alle esigenze e quindi restituiti. I metodi di registrazione consigliati dipendono dalla piattaforma dei dispositivi.
-
-  - **Dispositivi Windows e Android**: un *manager di registrazione dispositivi* è un account di Intune che può essere usato per registrare molti dispositivi condivisi con l'app del portale aziendale.
-  > [!div class="button"]
-  [Windows >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#shared-ios-device-enrollment)
-
-### Registrazione dei dispositivi iOS condivisi
-
-Il metodo di registrazione preferito per i dispositivi iOS condivisi di proprietà della società dipende dalla modalità in cui i dispositivi sono stati acquistati e gestiti:
-
-  - **Programma di registrazione dispositivi (DEP) di Apple**: i dispositivi iOS acquistati o gestiti con questo programma possono essere associati a un profilo di registrazione. Quando un utente accende il proprio dispositivo per la prima volta, il dispositivo scarica il profilo DEP ed esegue la registrazione con quel profilo
-  - **Apple Configurator in un computer Mac**: Apple Configurator è un'applicazione di Apple che viene eseguita in un computer Mac. È possibile collegare un dispositivo iOS al Mac con un cavo USB per installare un profilo di registrazione nel dispositivo. Per ripristinare le impostazioni di fabbrica dei dispositivi per registrarli, usare la registrazione di Assistente configurazione. Se non si vuole riportare i dispositivi alle impostazioni di fabbrica, usare la registrazione diretta.
-  - **Nessuna delle precedenti**: se non è possibile o non si vuole usare i metodi di registrazione DEP o Apple Configurator di Apple, usare il manager di registrazione dispositivi di Intune.
-
-  **Scegliere:**
-    > [!div class="button"]
-     [Registrazione DEP >](../deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Mac >](../deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Registrazione diretta >](../deploy-use/ios-direct-enrollment-in-microsoft-intune)  
+## **Quale sistema operativo viene eseguito dai dispositivi condivisi?**
 
   > [!div class="button"]
-    [Registrazione DEM >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-**Singoli utenti**: i dispositivi di proprietà della società rilasciati a singoli utenti devono essere registrati come risorse aziendali consentendo allo stesso tempo agli utenti di accedere alla posta elettronica e ai dati come se fossero dispositivi personali. I metodi di registrazione consigliati dipendono dalla piattaforma dei dispositivi.
+## **Come vengono gestiti i dispositivi iOS condivisi?**
 
-  - **Dispositivi Windows e Android**: importando i numeri di identità internazionale apparecchiature mobili (IMEI) dei dispositivi di proprietà della società è possibile contrassegnarli come dispositivi di proprietà della società in Intune. Gli utenti possono quindi registrare i propri dispositivi come dispositivo personali installando il portale aziendale per accedere a risorse aziendali come posta elettronica, applicazioni e dati.
   > [!div class="button"]
-  [Tag con IMEI >](../deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+  [Registrazione Programma di registrazione dispositivi iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Registrazione diretta iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [Registrazione Manager di registrazione dispositivi >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
-  - **Dispositivi iOS**: i dispositivi iOS condivisi possono essere gestiti in tre modi.  **Come si registrano i dispositivi iOS condivisi?**
+## **Come vengono gestiti i dispositivi iOS dedicati?**
 
-    - **Programma di registrazione dispositivi (DEP) di Apple**: i dispositivi iOS acquistati o gestiti con questo programma possono essere associati a un profilo di registrazione. Quando un utente accende il proprio dispositivo per la prima volta, il dispositivo scarica il profilo DEP ed esegue la registrazione in base al profilo.
-    > [!div class="button"]
-    [Registrazione DEP](../deploy-use/ios-device-enrollment-program-in-microsoft-intune).
-
-    - **Apple Configurator in un Mac**: Apple Configurator è un'applicazione di Apple che viene eseguita in un computer Mac. È possibile collegare un dispositivo iOS al Mac con un cavo USB per installare un profilo di registrazione nel dispositivo. Per ripristinare le impostazioni di fabbrica dei dispositivi per registrarli, usare la registrazione di Assistente configurazione.
-
-    Se non si vuole riportare i dispositivi alle impostazioni di fabbrica, usare la registrazione diretta.
-    Usare la registrazione di Assistente configurazione per ripristinare le impostazioni di fabbrica dei dispositivi per registrarli.
-    > [!div class="button"][iOS Setup Assistant enrollment](../deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [!div class="button"][iOS direct enrollment](../deploy-use/ios-direct-enrollment-in-microsoft-intune).
-
-    - **Nessuna delle precedenti**: se non è possibile o non si vuole usare i metodi di registrazione DEP o Apple Configurator di Apple, importando i numeri di identità internazionale apparecchiature mobili (IMEI) dei dispositivi di proprietà della società è possibile contrassegnarli come dispositivi di proprietà della società in Intune. Gli utenti possono quindi registrare i propri dispositivi come dispositivo personali installando il portale aziendale per accedere a risorse aziendali come posta elettronica, applicazioni e dati.
-    > [!div class="button"][Tag devices with IMEI numbers](../deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+  > [!div class="button"]
+  [Tag con IMEI >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers) [Programma di registrazione dispositivi iOS](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Assistente configurazione iOS](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Tag con IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

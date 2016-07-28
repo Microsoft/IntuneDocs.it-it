@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
+ms.sourcegitcommit: 4a7c6d8f4e47f050888e9fcf5edfa586c4a24065
+ms.openlocfilehash: 502a08c1bf49057220917d929a8ffe0b98d3de2a
 
 
 ---
@@ -69,7 +69,7 @@ I dispositivi mobili con sistemi operativi come iOS, Android e Windows Phone dev
 ## Gestione di Exchange ActiveSync
 È anche possibile gestire i dispositivi con Exchange ActiveSync. A tale scopo è necessario installare On-Premises Connector o usare Service to Service Connector incorporato per connettersi a Exchange Server.
 
-Per altre informazioni sui requisiti hardware e software per l'installazione di On-Premises Connector, vedere [Requisiti per On-Premises Connector](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connect).
+Per altre informazioni sui requisiti hardware e software per l'installazione di On-Premises Connector, vedere [Requirements for the On-Premises Connector](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector) (Requisiti per On-Premises Connector).
 
 Per informazioni sull'uso di On-Premises Connector o di Service to Service Connector con Exchange, vedere [Gestione dei dispositivi mobili con Exchange ActiveSync e Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
@@ -80,6 +80,6 @@ Si sono apprese alcune funzionalità che è possibile usare per la registrazione
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

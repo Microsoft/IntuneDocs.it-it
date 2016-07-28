@@ -1,10 +1,10 @@
 ---
 title: Proteggere app e dati | Microsoft Intune
 description: 
-keywords: 
+keywords: "Questo argomento illustra le varie funzionalità e caratteristiche disponibili in Intune per proteggere le app e i dati aziendali."
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
+ms.openlocfilehash: c4ee5b25bd737c357e58db6420e69beabf66a74d
 
 
 ---
@@ -39,7 +39,9 @@ La protezione dell'accesso alle risorse aziendali è solo il primo passaggio per
 - Proteggere l'accesso alle app richiedendo PIN/passcode o credenziali aziendali.
 - Aprire tutti i collegamenti Web all'interno di Intune Managed Browser.
 
-Questi set di regole sono denominati [criteri di gestione delle app per dispositivi mobili (MAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  I criteri MAM possono essere adottati in app eseguite su dispositivi gestiti o non gestiti dall'utente.  È possibile proteggere i dati aziendali tramite criteri MAM applicati a dispositivi registrati in Intune, dispositivi registrati e gestiti da una soluzione MDM di terze parti o dispositivi che non possono essere gestiti dall'utente, ad esempio i dispositivi di proprietà del dipendente.
+Questi set di regole sono denominati [criteri di gestione delle app per dispositivi mobili (MAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  I criteri MAM possono essere adottati in app eseguite su dispositivi gestiti o non gestiti dall'utente.  
+
+È possibile proteggere i dati aziendali tramite criteri MAM applicati a dispositivi **registrati in Intune**, dispositivi **registrati e gestiti da una soluzione MDM di terze parti** o dispositivi che **non sono registrati in alcuna soluzione MDM**, ad esempio i dispositivi di proprietà del dipendente.
 
 Per associare un'app a un criterio MAM, l'app deve incorporare Microsoft Intune App SDK o usare lo strumento per la disposizione testo per app.
 
@@ -51,6 +53,6 @@ Oltre a limitare lo spostamento dei dati, se un dispositivo viene smarrito o rub
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
