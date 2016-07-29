@@ -3,7 +3,7 @@ title: Proteggere app e dati | Microsoft Intune
 description: 
 keywords: "Questo argomento illustra le varie funzionalità e caratteristiche disponibili in Intune per proteggere le app e i dati aziendali."
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: c4ee5b25bd737c357e58db6420e69beabf66a74d
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: f60541c2e9284ea795c5e9811ef2663113af57cb
 
 
 ---
@@ -53,6 +53,6 @@ Oltre a limitare lo spostamento dei dati, se un dispositivo viene smarrito o rub
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: Crittografare il dispositivo | Microsoft Intune
 description: Descrive come crittografare un dispositivo Android
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/07/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
 
 
 ---
@@ -24,9 +24,9 @@ ms.openlocfilehash: a69d4c3432867e3b4a808d71645d6a976a9f1c2e
 
 Se la società o l'organizzazione consente di accedere a file, posta elettronica o dati aziendali solo dopo aver crittografato il dispositivo Android, seguire questa procedura. Potrebbe essere necessario impostare un PIN o una password prima di crittografare il dispositivo, se richiesto dall'amministratore IT.
 
-Un telefono di cui si annulla la registrazione rimarrà crittografato. 
+Un telefono di cui si annulla la registrazione rimarrà crittografato.
 
-1.  Assicurarsi che per il dispositivo sia stato impostato un PIN o una password per il blocco dello schermo. 
+1.  Assicurarsi che per il dispositivo sia stato impostato un PIN o una password per il blocco dello schermo.
 
 2.  In **Impostazioni**, fare clic su **Sicurezza** &gt; **Crittografa telefono**.
     In alcuni telefoni è necessario fare clic su **Memoria** &gt; **Crittografia memoria** o **Memoria** &gt; **Schermata di blocco e Sicurezza** &gt; **Altre impostazioni di sicurezza** per trovare l'opzione "Crittografia".
@@ -47,7 +47,6 @@ Serve ancora assistenza? Contattare l'amministratore IT (per le informazioni di 
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

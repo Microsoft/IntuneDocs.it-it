@@ -3,7 +3,7 @@ title: Informazioni di riferimento sui criteri di configurazione | Microsoft Int
 description: "Usare le informazioni in questo argomento per decidere più facilmente quali criteri di Microsoft Intune è necessario usare per gestire i dispositivi."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: cce19141ef25a8cca785d6ae80d1fe03ab352a8e
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 50bfa96a334f2253550e1344179dc99b8ac68817
 
 
 ---
@@ -48,7 +48,7 @@ Usare le informazioni in questo argomento per decidere più facilmente quali cri
 |**Profilo di posta elettronica (iOS 7.1 e versioni successive)**|Creare, distribuire e monitorare le impostazioni di posta elettronica di Exchange ActiveSync in dispositivi gestiti. In questo modo, gli utenti possono accedere alla posta elettronica aziendale dai dispositivi personali senza alcuna configurazione.<br /><br />Per informazioni dettagliate, vedere [Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Configurazione generale (iOS 7.1 e versioni successive)**|Configurare le impostazioni funzionali e di sicurezza del dispositivo mobile.<br />-   Specificare le app conformi o non conformi e segnalare quando vengono usate.<br />Configurare la modalità a tutto schermo che blocca i dispositivi per permettere il funzionamento solo di determinate funzionalità. Ad esempio, consentire al dispositivo di eseguire una sola app o disabilitare i pulsanti del volume.<br /><br />Per informazioni dettagliate, vedere [Impostazioni dei criteri di iOS in Microsoft Intune](ios-policy-settings-in-microsoft-intune.md).|
 |**Criteri di configurazione delle app per dispositivi mobili (iOS 7.1 e versioni successive)**|Usare i criteri di configurazione delle app mobili per specificare automaticamente le impostazioni che potrebbero essere necessarie quando l'utente esegue un'app iOS.<br /><br />Per informazioni dettagliate vedere [Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md).|
-|**Criteri del profilo di provisioning per dispositivi mobili (iOS 7.1 e versioni successive)**|Nelle app mobili line-of-business per Apple iOS sono inclusi un profilo di provisioning e un codice firmato con un certificato. Quando si esegue l'app in un dispositivo iOS, iOS conferma l'integrità dell'app e impone i criteri definiti dal profilo di provisioning.<br><br>La durata del certificato di firma dell'organizzazione usato in genere è di 3 anni. Tuttavia, il profilo di provisioning scade dopo un anno. Usare questi criteri per distribuire in modo proattivo un nuovo criterio del profilo di provisioning ai dispositivi con app prossime alla scadenza finché il certificato è ancora valido.<br><br>Per informazioni dettagliate, vedere [Usare i criteri del profilo di provisioning per dispositivi mobili iOS per impedire la scadenza delle app](ios-mobile-app-provisioning-profiles.md).|
+|**Criteri del profilo di provisioning per dispositivi mobili (iOS 7.1 e versioni successive)**|Nelle app mobili line-of-business per Apple iOS sono inclusi un profilo di provisioning e un codice firmato con un certificato. Quando si esegue l'app in un dispositivo iOS, iOS conferma l'integrità dell'app e impone i criteri definiti dal profilo di provisioning.<br><br>La durata del certificato di firma dell'organizzazione usato per firmare le app in genere è di 3 anni. Tuttavia, il profilo di provisioning scade dopo un anno. Usare questi criteri per distribuire in modo proattivo un nuovo criterio del profilo di provisioning ai dispositivi con app prossime alla scadenza finché il certificato è ancora valido.<br><br>Per informazioni dettagliate, vedere [Usare i criteri del profilo di provisioning per dispositivi mobili iOS per impedire la scadenza delle app](ios-mobile-app-provisioning-profiles.md).|
 |**Profilo di certificato PKCS #12 (.PFX) (iOS 7.1 e versioni successive)**|Usare questo profilo per creare e distribuire le impostazioni PFX per le richieste di certificato del dispositivo.<br /><br />Per informazioni dettagliate, vedere [Proteggere l'accesso alle risorse con i profili certificato in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Profilo certificato SCEP (iOS 7.1 e versioni successive)**|Consente di configurare un certificato Simple Certificate Enrollment Protocol (SCEP) che può essere usato con un certificato attendibile di dispositivo mobile per autenticare i dispositivi mobili e consentire loro l'accesso a risorse di rete, quali quelle configurate da profili Wi-Fi e VPN.<br /><br />Per informazioni dettagliate, vedere [Proteggere l'accesso alle risorse con i profili certificato in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
 |**Profilo certificato attendibile (iOS 7.1 e versioni successive)**|Consente di configurare un certificato attendibile di dispositivo mobile che può essere usato per autenticare i dispositivi mobili e consentire loro l'accesso a risorse di rete, quali quelle configurate da profili VPN e Wi-Fi.<br /><br />Per informazioni dettagliate, vedere [Proteggere l'accesso alle risorse con i profili certificato in Microsoft Intune](secure-resource-access-with-certificate-profiles.md).|
@@ -134,6 +134,6 @@ Si applica solo a Windows Phone e ai dispositivi Windows registrati.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

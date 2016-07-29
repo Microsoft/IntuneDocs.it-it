@@ -3,7 +3,7 @@ title: Registrare il dispositivo Mac OS X in Intune | Microsoft Intune
 description: Descrive come registrare un dispositivo MAc OS X in Intune
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 04380c2adf65f76a786da51509db24d773ac30f1
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 9e3c351591f496fbc7be3fefdc320af9caaae726
 
 
 ---
@@ -34,19 +34,19 @@ Per registrare il dispositivo Mac OS X:
 
 2.  Toccare **Il dispositivo non è registrato oppure il Portale aziendale non riesce a identificarlo**.
 
-    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png) 
+    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png)
 
 3.  Toccare **Installa** per iniziare la registrazione del dispositivo.
 
-    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
+    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png)
 
 4.  Nella finestra di dialogo per **installare il profilo di gestione** toccare **Installa**. Se viene visualizzata una finestra di dialogo in cui viene richiesto di immettere le credenziali, immettere il nome utente e la password e quindi toccare **Continua** &gt; **Installa**.
 
-    ![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
+    ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
     Al termine della registrazione, verrà visualizzata una pagina con il profilo di gestione che mostra che il profilo è stato verificato.
 
-    ![management-profile-verified](./media/4-macosx-enroll-done.png) 
+    ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
@@ -54,6 +54,7 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

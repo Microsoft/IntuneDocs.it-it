@@ -3,7 +3,7 @@ title: Manca un certificato necessario per il dispositivo | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 61dda32b55e108b340923f4ff2a86163da2971dc
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 220d877763352e62c4057494b69633356ef081c6
 
 
 ---
@@ -74,7 +74,7 @@ Per risolvere questo problema e ottenere il certificato richiesto, è necessario
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. Nella finestra di dialogo **Certificato** fare clic sulla scheda **Percorso certificazione** e quindi identificare il certificato che è necessario ottenere da Internet. Il nome del certificato necessario sarà nella stessa posizione di quello evidenziato nella schermata di esempio precedente. 
+5. Nella finestra di dialogo **Certificato** fare clic sulla scheda **Percorso certificazione** e quindi identificare il certificato che è necessario ottenere da Internet. Il nome del certificato necessario sarà nella stessa posizione di quello evidenziato nella schermata di esempio precedente.
 
 ### Scaricare e installare il certificato mancante nel dispositivo mobile Android
 
@@ -94,12 +94,13 @@ Per risolvere questo problema e ottenere il certificato richiesto, è necessario
 
 7. Aprire nuovamente l'app Portale aziendale. Accedere all'app Portale aziendale. Per assistenza, contattare l'amministratore IT.
 
-Se viene visualizzato nuovamente il messaggio "Certificato mancante" illustrato in precedenza e sono già stati seguiti i passaggi precedenti, è probabile che l'amministratore IT debba installare un altro certificato. Contattare l'amministratore IT e fornirgli questo [collegamento](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), che contiene i passaggi per risolvere il problema. 
+Se viene visualizzato nuovamente il messaggio "Certificato mancante" illustrato in precedenza e sono già stati seguiti i passaggi precedenti, è probabile che l'amministratore IT debba installare un altro certificato. Contattare l'amministratore IT e fornirgli questo [collegamento](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), che contiene i passaggi per risolvere il problema.
 
 ### Vedere anche
 [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

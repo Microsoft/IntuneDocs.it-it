@@ -3,7 +3,7 @@ title: Risorse che consentono di risolvere i problemi di distribuzione dell'app 
 description: Questo argomento consente di risolvere i problemi di distribuzione dell'app in Microsoft Intune.
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 2aef2df385cd17a0f261789c735282f4985cb442
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 46cb56da1623e0de9103ce3fa60465d5d367c974
 
 
 ---
@@ -81,7 +81,7 @@ Se queste informazioni non consentono di risolvere il problema, vedere [Come ott
 
 ### Errore: Autore inesistente
 Usare **Aggiungi altro contratto software** per aggiungere un contratto di licenza di terze parti. Tentare di aggiungere l'autore dalla pagina **Altri contratti di licenza software**. La pagina fornisce un elenco contenente gli autori esistenti in ordine alfabetico.
-Immettendo l'autore mancante viene visualizzato l'errore **Autore inesistente**. 
+Immettendo l'autore mancante viene visualizzato l'errore **Autore inesistente**.
 
 Si tratta di un problema di progettazione. Intune offre la funzionalità di rilevamento delle licenza solo per i software più conosciuti. Intune necessita che almeno 4 account separati segnalino il software prima di renderlo disponibile come scelta nel carico di lavoro delle licenze.
 
@@ -105,6 +105,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

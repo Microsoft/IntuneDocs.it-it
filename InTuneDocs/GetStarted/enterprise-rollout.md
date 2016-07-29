@@ -3,8 +3,8 @@ title: Implementazione nell'organizzazione | Microsoft Intune
 description: Suggerimenti per la fase di implementazione di una distribuzione di Intune.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 65506ec3b4d903672e2259be567c07402ee29f31
+ms.sourcegitcommit: 0fff944e180bda99d70caafebe4ae69b6bd05b1b
+ms.openlocfilehash: aae62850d35aab6908cae2841988822911989a40
 
 
 ---
@@ -73,7 +73,9 @@ Di seguito è riportato un elenco delle operazioni da eseguire per avviare la fa
 
 -   Identificare i gruppi per i quali potrebbero essere necessarie comunicazioni e formazione mirate.
 
--   Personalizzare le comunicazioni tramite posta elettronica, aggiornare il sito Intranet, identificare il proprietario in corso per l'aggiornamento di comunicazioni/risorse.
+-   Personalizzare le comunicazioni via posta elettronica, aggiornare il sito Intranet
+
+-   Identificare il proprietario attuale per l'aggiornamento di comunicazioni e risorse.
 
 -   Descrivere i metodi di formazione che verranno adottati.
 
@@ -108,6 +110,6 @@ Ecco alcuni problemi che si possono verificare durante la fase di **implementazi
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

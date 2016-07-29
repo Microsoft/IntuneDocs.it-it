@@ -3,7 +3,7 @@ title: Che cosa avviene se si annulla la registrazione del dispositivo Android d
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 3bb5d0dd3fbb48a2645922b550b2ffff295bec59
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 55bb03075da7fab06196857c1d5e5a95befc248d
 
 Quando si annulla la registrazione del dispositivo Android da Intune:
 
--   Se si annulla la registrazione del dispositivo da Intune significa che l'amministratore IT non gestisce più il dispositivo. 
+-   Se si annulla la registrazione del dispositivo da Intune significa che l'amministratore IT non gestisce più il dispositivo.
 
 -   Si perderà l'accesso ai dati e alle risorse aziendali.
 
@@ -35,7 +35,7 @@ Quando si annulla la registrazione del dispositivo Android da Intune:
 
 -   Non saranno più valide le impostazioni che sono state modificate nel dispositivo quando è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza.
 
-Se il dispositivo è configurato solo per ricevere posta elettronica aziendale e la registrazione del dispositivo viene annullata, il dispositivo non sarà più visualizzato nel portale aziendale. 
+Se il dispositivo è configurato solo per ricevere posta elettronica aziendale e la registrazione del dispositivo viene annullata, il dispositivo non sarà più visualizzato nel portale aziendale.
 
 Per istruzioni su come annullare la registrazione, vedere [Annullare la registrazione del dispositivo da Intune con l'app Portale aziendale](unenroll-your-device-from-intune-android.md).
 
@@ -46,6 +46,7 @@ Serve assistenza? Contattare l'amministratore IT (per le informazioni di contatt
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

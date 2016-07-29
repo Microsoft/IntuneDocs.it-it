@@ -3,7 +3,7 @@ title: Note sulla versione di Microsoft Intune | Microsoft Intune
 description: Note sulla versione di Intune
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: b7643ccb64185adb1eb4326a19d56814d8667462
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: d4961042d3fbd1d6467fa784db5adef6ed5f7f1f
 
 
 ---
@@ -91,6 +91,6 @@ La console di amministrazione di Intune e Admin Console e le app mobili per l'ut
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

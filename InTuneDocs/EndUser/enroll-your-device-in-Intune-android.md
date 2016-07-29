@@ -3,8 +3,8 @@ title: Registrare il dispositivo Android in Intune | Microsoft Intune
 description: Descrive come registrare un dispositivo Android in Intune
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: d979334c792ba604fe142c62b17f1af4f9e69db7
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
 
 
 ---
@@ -44,7 +44,27 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  Se si usa Android 6.0 o versione successiva, eseguire questo passaggio. In caso contrario, andare al passaggio successivo. 
+5.  Accedere all'app Portale aziendale usando l'account e la password aziendale o dell'istituto di istruzione e quindi toccare **Accedi**.
+
+    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+
+6.  Nella schermata **Configurazione dell'accesso aziendale** toccare **INIZIA**.
+
+    ![Schermata di configurazione dell'accesso aziendale](./media/and-enroll-4a-comp-access-setup.png)
+
+7.  Nella schermata **Perché registrare il dispositivo?** leggere le informazioni sulle operazioni che possono essere eseguite durante la registrazione del dispositivo e quindi toccare **CONTINUA**.
+
+    ![Schermata Perché registrare il dispositivo?](./media/and-enroll-4b-why-enroll.png)
+
+8.  Esaminare l'elenco dei dati che l'amministratore IT può o meno visualizzare e quindi toccare **CONTINUA**.
+
+    ![Impostazioni di privacy](./media/and-enroll-4c-we-care-privacy.png)
+
+9.  Nella schermata **Operazioni successive** leggere cosa accade durante la registrazione, quindi toccare **REGISTRA**.
+
+    ![Operazioni successive](./media/and-enroll-4d-what-comes-next.png)
+
+10.  Se si usa Android 6.0 o versione successiva, eseguire questo passaggio. In caso contrario, andare al passaggio successivo.
 
     Se l'amministratore IT ha configurato determinati criteri, saranno visualizzati i messaggi seguenti:
     -   **Consentire a Portale aziendale di effettuare e gestire chiamate telefoniche?**
@@ -62,26 +82,6 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
     Se viene visualizzato questo messaggio, toccare **CONSENTI**. È consigliabile scegliere questa opzione perché **Microsoft non può mai accedere ai contatti**. Il testo del messaggio è controllato da Google, quindi Microsoft non può modificarlo. Quando si concede l'accesso, si consente solo all'app Portale aziendale di creare, usare e gestire il proprio account aziendale.
 
     Se si nega l'accesso, il messaggio viene visualizzato di nuovo la volta successiva che si tocca **Invia dati**. È tuttavia possibile disattivare la visualizzazione futura dei messaggi selezionando la casella di controllo **Non visualizzare più questo messaggio**. Se si decide successivamente di consentire l'accesso, andare a **Impostazioni** &gt; **App** &gt; **Portale aziendale** &gt; **Autorizzazioni** &gt; **Archiviazione**, quindi attivare l'autorizzazione.
-
-6.  Accedere all'app Portale aziendale usando l'account e la password aziendale o dell'istituto di istruzione e quindi toccare **Accedi**.
-
-    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
-
-7.  Nella schermata **Configurazione dell'accesso aziendale** toccare **INIZIA**.
-
-    ![Schermata di configurazione dell'accesso aziendale](./media/and-enroll-4a-comp-access-setup.png)
-
-8.  Nella schermata **Perché registrare il dispositivo?** leggere le informazioni sulle operazioni che possono essere eseguite durante la registrazione del dispositivo e quindi toccare **CONTINUA**.
-
-    ![Schermata Perché registrare il dispositivo?](./media/and-enroll-4b-why-enroll.png)
-
-9.  Esaminare l'elenco dei dati che l'amministratore IT può o meno visualizzare e quindi toccare **CONTINUA**.
-
-    ![Impostazioni di privacy](./media/and-enroll-4c-we-care-privacy.png)
-
-10.  Nella schermata **Operazioni successive** leggere cosa accade durante la registrazione, quindi toccare **REGISTRA**.
-
-    ![Operazioni successive](./media/and-enroll-4d-what-comes-next.png)
 
 11.  Nella schermata relativa all'**attivazione dell'amministratore del dispositivo** toccare **Attiva**.
 
@@ -123,6 +123,6 @@ Serve ancora assistenza? Contattare l'amministratore IT (per le informazioni di 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: Limitare l'accesso a SharePoint Online | Microsoft Intune
 description: Proteggere e controllare l'accesso ai dati aziendali in SharePoint Online con accesso condizionale.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 334eb869ddbc67767a6e9ed6711bd9135ceb558b
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 54f5e95fc8992ee3a68fd7063bff7cdb90c308bb
 
 
 ---
@@ -189,6 +189,6 @@ Selezionare un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Di
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

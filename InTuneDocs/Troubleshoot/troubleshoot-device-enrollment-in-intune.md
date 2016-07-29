@@ -3,7 +3,7 @@ title: Risolvere i problemi di registrazione dei dispositivi | Microsoft Intune
 description: Suggerimenti per la risoluzione dei problemi di registrazione dei dispositivi.
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 4c728b4fbb68d64d4e06845eca08b1b2d8d1a92a
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: e10ef68d97127b848a7d624ba40d219ffed3d06d
 
 
 ---
@@ -144,7 +144,7 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 **Risoluzione:** nell'[interfaccia di amministrazione di Office 365](https://portal.office.com/) rimuovere i caratteri speciali dal nome della società e salvare le informazioni aziendali.
 
 ### Non è possibile accedere o registrare dispositivi quando si dispone di più domini verificati
-**Problema:** quando si aggiunge un secondo dominio verificato ad AD FS, gli utenti con il suffisso del nome principale (UPN) dell'utente del secondo dominio potrebbero non essere in grado di accedere ai portali o di registrare dispositivi. 
+**Problema:** quando si aggiunge un secondo dominio verificato ad AD FS, gli utenti con il suffisso del nome principale (UPN) dell'utente del secondo dominio potrebbero non essere in grado di accedere ai portali o di registrare dispositivi.
 
 
 **Risoluzione:** i clienti di Microsoft Office 365 che usano l'accesso Single Sign-On (SSO) tramite AD FS 2.0 e dispongono di più domini di primo livello per i suffissi UPN degli utenti all'interno dell'organizzazione (ad esempio, @contoso.com o @fabrikam.com) devono distribuire un'istanza separata del Servizio federativo AD FS 2.0 per ogni suffisso.  È ora disponibile il [rollup per AD FS 2.0](http://support.microsoft.com/kb/2607496) che interagisce con l'opzione **SupportMultipleDomain** per consentire al server AD FS di supportare questo scenario senza richiedere altri server AD FS 2.0. Per altre informazioni, vedere [questo blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
@@ -166,14 +166,14 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 
 **Problema**: l'utente riceve il messaggio seguente nel dispositivo: *Non è possibile accedere perché un certificato necessario non è presente nel dispositivo.*
 
-**Risoluzione**: 
+**Risoluzione**:
 
 - L'utente può recuperare il certificato mancante seguendo [queste istruzioni](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
-- Se l'utente non è in grado di recuperare il certificato, è possibile che manchino i certificati intermedi nel server ADFS. I certificati intermedi sono richiesti da Android per considerare attendibile il server. 
+- Se l'utente non è in grado di recuperare il certificato, è possibile che manchino i certificati intermedi nel server ADFS. I certificati intermedi sono richiesti da Android per considerare attendibile il server.
 
 È possibile importare i certificati nell'archivio intermedio nel server ADFS o nei proxy come indicato di seguito:
 
-1.  Nel server ADFS avviare **Microsoft Management Console** e aggiungere lo snap-in Certificati per l'**account Computer**. 
+1.  Nel server ADFS avviare **Microsoft Management Console** e aggiungere lo snap-in Certificati per l'**account Computer**.
 5.  Trovare il certificato usato dal servizio ADFS e visualizzare il relativo certificato padre.
 6.  Copiare il certificato padre e incollarlo in **Computer\Autorità di certificazione intermedie\Certificati**.
 7.  Copiare i certificati ADFS, ADFS Decrypting e ADFS Signing, e incollarli nell'archivio personale per il servizio ADFS.
@@ -200,34 +200,34 @@ L'utente può ora accedere al Portale aziendale nel dispositivo Android.
 ### Il dispositivo iOS registrato non viene visualizzato nella console quando si usa System Center Configuration Manager con Intune
 **Problema:** l'utente registra il dispositivo iOS, ma non viene visualizzato nella console di amministrazione di Configuration Manager. Il dispositivo non indica che è stato registrato. Cause possibili:
 
-- È possibile che il connettore Intune sia stato registrato in un account e poi registrato in un altro account. 
+- È possibile che il connettore Intune sia stato registrato in un account e poi registrato in un altro account.
 - È possibile che il certificato MDM sia stato scaricato da un account e usato con un altro account.
 
 
 **Risoluzione:** attenersi alla procedura seguente:
 
-1. Disabilitare iOS all'interno di Connettore Windows Intune. 
+1. Disabilitare iOS all'interno di Connettore Windows Intune.
     1. Fare clic con il pulsante destro del mouse sull'abbonamento di Intune e selezionare **Proprietà**.
     1. Nella scheda "iOS", deselezionare l'opzione "Abilita registrazione iOS".
 
 
 
 1. In SQL, attenersi alla procedura seguente nel database CAS
-  
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-    1. delete from MDMPolicy where PolicyType = 7 
+
+    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+    1. delete from MDMPolicy where PolicyType = 7
     1. delete from MDMPolicyAssignment where PolicyType = 7
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%' 
-    1. delete from MDMPolicy where PolicyType = 11 
-    1. delete from MDMPolicyAssignment where PolicyType = 11 
+    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
+    1. delete from MDMPolicy where PolicyType = 11
+    1. delete from MDMPolicyAssignment where PolicyType = 11
     1. DELETE Drs_Signals
-1. Riavviare il servizio SMS Executive o riavviare il server CM 
+1. Riavviare il servizio SMS Executive o riavviare il server CM
 
 
 
 1. Ottenere un nuovo certificato APN e caricarlo: fare doppio clic sulla sottoscrizione Intune nel riquadro a sinistra di Configuration Manager. Selezionare **Crea richiesta certificato per servizio APN** e seguire le istruzioni.
 ## Problemi durante l'uso di System Center Configuration Manager con Intune
-### I dispositivi mobili scompaiono 
+### I dispositivi mobili scompaiono
 **Problema:** dopo la registrazione in Configuration Manager, il dispositivo mobile viene eliminato dalla raccolta, ma conserva il profilo di gestione ed è elencato nel gateway CSS.
 
 **Risoluzione**: questo problema può verificarsi perché è presente un processo personalizzato che rimuove i dispositivi non aggiunti a un dominio oppure perché l'utente ha ritirato il dispositivo dalla sottoscrizione. Per convalidare e verificare quale processo o account utente ha rimosso il dispositivo dalla console di Configuration Manager, attenersi alla procedura seguente.
@@ -256,22 +256,22 @@ Nella sezione relativa agli [errori che si verificano durante la registrazione d
 
 ### The machine is already enrolled (Il computer è già registrato) - Errore hr 0x8007064c
 **Problema:** la registrazione ha esito negativo e genera l'errore **The machine is already enrolled** (Il computer è già registrato). Il log di registrazione visualizza l'errore **hr 0x8007064c**.
-  
+
 È possibile che sia dovuto al fatto che il computer è stato registrato in precedenza oppure è stata registrata l'immagine clonata di un computer. Il certificato dell'account precedente è ancora presente nel computer.
 
 
 
-**Risoluzione:** 
+**Risoluzione:**
 
-1. Dal menu **Start** scegliere **Esegui** -> **MMC**. 
+1. Dal menu **Start** scegliere **Esegui** -> **MMC**.
 1. **File** -> **Aggiungi o rimuovi snap-in**.
 1. Fare doppio clic su **Certificati**, scegliere **Account del computer**, **Avanti** e selezionare **Computer locale**.
-1. Fare doppio clic su **Certificati (computer locale)** e scegliere **Certificati personali**. 
+1. Fare doppio clic su **Certificati (computer locale)** e scegliere **Certificati personali**.
 1. Cercare il certificato Intune rilasciato da Sc_Online_Issuing ed eliminarlo se presente
 1. Se esistente, eliminare la chiave di registro seguente: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e tutte le sottochiavi.
-1. Tentare nuovamente la registrazione. 
-1. Se il computer non può essere ancora registrato, cercare ed eliminare questa chiave, se esistente: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Tentare nuovamente la registrazione. 
+1. Tentare nuovamente la registrazione.
+1. Se il computer non può essere ancora registrato, cercare ed eliminare questa chiave, se esistente: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Tentare nuovamente la registrazione.
 
     > [!IMPORTANT]
     > Questa sezione, metodo o attività contiene procedure che spiegano come modificare il Registro di sistema. L'errata modifica del Registro di sistema può tuttavia causare problemi gravi. Verificare quindi di attenersi attentamente alla procedura. Per una maggiore protezione, eseguire il backup del Registro di sistema prima di modificarlo. In caso di problemi, sarà quindi possibile ripristinare il Registro di sistema.
@@ -306,6 +306,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

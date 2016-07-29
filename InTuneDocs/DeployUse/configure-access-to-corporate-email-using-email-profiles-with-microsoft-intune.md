@@ -3,7 +3,7 @@ title: Posta elettronica aziendale con i profili di posta elettronica | Microsof
 description: "È possibile usare le impostazioni del profilo di posta elettronica per configurare le impostazioni di accesso alla posta elettronica per client di posta elettronica specifici sui dispositivi mobili."
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: c7a3ca7b0390a001624871342c9aa04802be27ff
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
 
 
 ---
@@ -82,7 +82,7 @@ La password non è contenuta nel profilo di posta elettronica, quindi l'utente d
     |**Numero di giorni di messaggi di posta elettronica da sincronizzare**|Il numero di giorni di posta elettronica che si vuole sincronizzare o selezionare **Illimitata** per sincronizzare tutta la posta elettronica disponibile.|
     |**Pianificazione sincronizzazione** (Samsung KNOX, Windows Phone 8 e versioni successive, Windows 10)|Selezionare la pianificazione in base a cui i dispositivi sincronizzeranno i dati dal server di Exchange. È anche possibile selezionare **Quando arrivano i messaggi**, per sincronizzare i dati non appena arrivano, oppure **Manuale**, per consentire all'utente del dispositivo di avviare la sincronizzazione.|
     |**Usa SSL**|Consente di usare la comunicazione Secure Sockets Layer (SSL) durante l'invio di messaggi di posta elettronica, la ricezione di messaggi di posta elettronica e la comunicazione con il server Exchange.<br /><br />Per i dispositivi che eseguono Samsung KNOX 4.0 o versioni successive, è necessario esportare il certificato SSL di Exchange Server e distribuirlo come profilo di certificato attendibile Android in Intune. Intune non supporta l'accesso a questo certificato se è stato installato in Exchange Server con altre procedure.|
-    |**Tipo di contenuti da sincronizzare**|Selezionare i tipi di contenuto da sincronizzare nei dispositivi.| 
+    |**Tipo di contenuti da sincronizzare**|Selezionare i tipi di contenuto da sincronizzare nei dispositivi.|
     |**Consenti di inviare i messaggi di posta elettronica dalle applicazioni di terze parti** (solo iOS)|Consente all'utente di selezionare questo profilo come account predefinito per l'invio di posta elettronica e consente ad applicazioni di terze parti di aprire posta elettronica nella relativa app nativa, ad esempio per allegare file ai messaggi.|
 
     > [!IMPORTANT]
@@ -109,8 +109,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

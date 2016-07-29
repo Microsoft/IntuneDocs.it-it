@@ -3,7 +3,7 @@ title: Viene richiesta la disattivazione delle origini sconosciute | Microsoft I
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: eeb9888d803a53c2f17d88cdb3f010cf14c9b18d
-ms.openlocfilehash: 0a4bf23b547a4f02db663049b84e77365509aeaf
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 61910d5571e143b12af7b44895d80575cb9e4a70
 
 
 ---
 
 # Viene richiesta la disattivazione delle origini sconosciute
 
-Se viene visualizzato un messaggio che indica che l'installazione da origini sconosciute deve essere disabilitata, è necessario passare a **Impostazioni** > **Sicurezza** (in alcuni dispositivi **Lock screen and security** (Schermata di blocco e sicurezza) e disattivare **Origini sconosciute**. 
+Se viene visualizzato un messaggio che indica che l'installazione da origini sconosciute deve essere disabilitata, è necessario passare a **Impostazioni** > **Sicurezza** (in alcuni dispositivi **Lock screen and security** (Schermata di blocco e sicurezza) e disattivare **Origini sconosciute**.
 
 L'amministratore IT richiede la disattivazione di questa impostazione per proteggere i dati aziendali nel dispositivo Android. Quando l'opzione **Origini sconosciute** è attivata, consente di installare applicazioni da origini sconosciute e questo può costituire un rischio per la sicurezza.
 
@@ -33,6 +33,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

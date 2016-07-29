@@ -3,7 +3,7 @@ title: Risolvere i problemi relativi ai profili di posta elettronica | Microsoft
 description: Problemi relativi ai profili di posta elettronica e procedure di risoluzione.
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: c695f39f128cf5ebee14b885b89ebe9833009ae9
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 9b699229489be2f09ea4c7a80e1e80f6ec7b106e
 
 
 ---
@@ -52,6 +52,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

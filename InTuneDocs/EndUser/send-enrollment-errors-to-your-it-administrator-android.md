@@ -3,7 +3,7 @@ title: Inviare gli errori di registrazione all'amministratore IT | Microsoft Int
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: d0a81ec5aeb2dac4d7647586f8179715d0b2ba7a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: c5d928e0c0b7fa207c4b9cc078973401006f9d33
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: d0a81ec5aeb2dac4d7647586f8179715d0b2ba7a
 
 # Inviare gli errori di registrazione all'amministratore IT
 
-Se si verifica un errore quando si cerca di registrare il dispositivo Android in Intune, è possibile ripetere il tentativo toccando **Riprova** oppure inviare all'amministratore IT le informazioni sull'errore in un messaggio di posta elettronica toccando **Invia informazioni**. 
+Se si verifica un errore quando si cerca di registrare il dispositivo Android in Intune, è possibile ripetere il tentativo toccando **Riprova** oppure inviare all'amministratore IT le informazioni sull'errore in un messaggio di posta elettronica toccando **Invia informazioni**.
 
 Verrà creato automaticamente un messaggio di posta elettronica indirizzato all'amministratore IT e contenente i log necessari per risolvere il problema relativo al dispositivo.
 
@@ -36,6 +36,7 @@ Esistono diversi modi per inviare i log dei dati del dispositivo all'amministrat
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

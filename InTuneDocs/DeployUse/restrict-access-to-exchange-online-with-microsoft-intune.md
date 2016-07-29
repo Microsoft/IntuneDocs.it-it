@@ -3,7 +3,7 @@ title: Limitare l'accesso alla posta elettronica a Exchange Online | Microsoft I
 description: Proteggere e controllare l'accesso alla posta elettronica aziendale in Exchange Online con accesso condizionale.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: arob98
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: cc9f9578aecc63557cb5bc64288344a8145ff80b
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 5030e74215960189bf35632bd6966b411d2e6a66
 
 
 ---
@@ -260,6 +260,6 @@ Nel dashboard di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sceglier
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
