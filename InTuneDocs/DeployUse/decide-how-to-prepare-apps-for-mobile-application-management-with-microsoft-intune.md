@@ -3,7 +3,7 @@ title: Preparare le app per la gestione di applicazioni mobili | Microsoft Intun
 description: "Le informazioni contenute in questo argomento consentono di stabilire quando è necessario usare lo strumento per la disposizione testo per app e l'SDK dell'app per abilitare le app line-of-business personalizzate per l'uso dei criteri di gestione delle app mobili."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 4a15279bb4460c88412ede6c8678deea72a3629f
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: d2d11cc8bed7575b2fe818c9aa5b2359a62a77e0
 
 
 ---
@@ -69,6 +69,6 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

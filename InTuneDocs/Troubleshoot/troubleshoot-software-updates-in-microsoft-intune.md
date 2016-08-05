@@ -2,9 +2,9 @@
 title: Risolvere i problemi degli aggiornamenti software | Microsoft Intune
 description: Risolvere i problemi degli aggiornamenti software in Microsoft Intune.
 keywords: 
-author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+author: robstack
+manager: angrobe
+ms.date: 08/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: b5e561b17f385d828fbd34658e4c30ac62ab0ea3
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: fd490bf3e745e8d0020299dc9be78bb7288edb0d
 
 
 ---
@@ -244,7 +244,7 @@ La tabella seguente elenca i codici di errore dell'**agente di aggiornamento** d
 **Problema**: è possibile che si verifichi una situazione in cui i client Microsoft Intune riscontrano uno o più dei sintomi seguenti:
 - Interrompono improvvisamente le segnalazioni alla console di amministrazione di Microsoft.  
 - Registrano un uso elevato della CPU.
-- L'installazione delle applicazioni tramite il portale di Intune è lenta. 
+- L'installazione delle applicazioni tramite il portale di Intune è lenta.
 - Microsoft Intune Center genera l'errore seguente: *Errore durante l'aggiornamento del computer. Errore: codice 0x800705b4*.
 - Nel campo relativo allo stato in Console di amministrazione di Intune > Gruppi > Tutti i dispositivi viene visualizzato: *Uno o più agenti installati nel computer presentano errori. Le informazioni relative al computer potrebbero non essere accurate o aggiornate*.
 
@@ -254,7 +254,7 @@ Questo problema può verificarsi se gli aggiornamenti sostituiti (aggiornamenti 
 1. Accedere alla [console di amministrazione di Intune](https://manage.microsoft.com).
 2. Selezionare **Aggiornamenti** > **Tutti gli aggiornamenti**.
 3. Usare l'opzione filtro sulla barra degli strumenti superiore per filtrare per aggiornamenti sostituiti.
-4. Rifiutare tutti gli aggiornamenti sostituiti applicabili a Windows 7 o alle applicazioni (ad esempio, Microsoft Office) che sono state installate nei client interessati. 
+4. Rifiutare tutti gli aggiornamenti sostituiti applicabili a Windows 7 o alle applicazioni (ad esempio, Microsoft Office) che sono state installate nei client interessati.
 5. Riavviare i client.
 
 Se si esegue Windows 7, assicurarsi anche di avere installato l'aggiornamento seguente:[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265) (3050265 Client di Windows Update per Windows 7: giugno 2015).
@@ -264,7 +264,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

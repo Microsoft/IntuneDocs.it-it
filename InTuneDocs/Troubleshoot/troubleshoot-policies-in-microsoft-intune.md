@@ -2,19 +2,19 @@
 title: Risolvere i problemi relativi ai criteri | Microsoft Intune
 description: Risolvere i problemi di configurazione dei criteri.
 keywords: 
-author: Nbigman
+author: robstack
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 06468bd7d6cdcf84da269c8132b37240ef1f2197
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
 
 
 ---
@@ -77,10 +77,6 @@ Per i dispositivi Windows non MDM, gli errori dei criteri nel file policyplatfor
 
 4.  Spostare il dispositivo di scorrimento di notifica sull'impostazione predefinita.
 
-## Errore 0x87D1FDE8 per il dispositivo KNOX
-**Problema**: dopo la creazione e la distribuzione di un profilo di posta elettronica di Exchange Active Sync per Samsung KNOX per vari dispositivi Android, viene restituito l'errore **0x87D1FDE8** o **correzione non riuscita** in Proprietà dispositivo &gt; scheda Criteri.
-
-Verificare la configurazione del profilo EAS per Samsung KNOX e i criteri di origine. L'opzione di sincronizzazione Samsung Notes non è più supportata e non dovrebbe essere selezionata nel profilo. Assicurarsi che i dispositivi abbiano avuto un tempo sufficiente per elaborare i criteri, fino a 24 ore.
 
 ## Avviso: Il salvataggio delle regole di accesso in Exchange non è riuscito
 **Problema**: viene visualizzato l'avviso **Il salvataggio delle regole di accesso in Exchange non è riuscito**  nella console di amministrazione.
@@ -113,6 +109,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

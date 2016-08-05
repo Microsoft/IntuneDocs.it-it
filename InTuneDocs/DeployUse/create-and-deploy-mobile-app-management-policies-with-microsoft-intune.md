@@ -3,8 +3,8 @@ title: Creare e distribuire criteri MAM | Microsoft Intune
 description: Usare le istruzioni dettagliate in questo argomento per creare e distribuire i criteri di gestione delle app mobili.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c3fe3f55b625754eac44d245d7c5065514af25c
-ms.openlocfilehash: 4eb126a89249e796944786bfe0274366fc8982c4
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
 
 
 ---
@@ -50,24 +50,20 @@ Prima di creare un criterio MAM, vedere le informazioni su [prerequisiti e suppo
     > [!TIP]
     > Se si usa il portale di Azure per la prima volta, leggere [Portale di Azure per i criteri MAM di Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) per acquisire familiarità con il portale.
 
-2.  Nel pannello **Impostazioni** scegliere **Criteri per le app**.  Verrà visualizzato il pannello **Criteri per le app** in cui sarà possibile creare nuovi criteri e modificare i criteri esistenti.
-
-    ![Schermata del pannello Criteri per le app con un elenco di criteri esistenti](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
-
-3.  Scegliere **Aggiungi criteri**.
+2.  Nel pannello **Impostazioni** scegliere **Criteri per le app**.  Verrà visualizzato il pannello **Criteri per le app** in cui sarà possibile creare nuovi criteri e modificare i criteri esistenti. Scegliere **Aggiungi criteri**.
 
     ![Schermata del pannello Criteri per le app con l'opzione Aggiungi criteri evidenziata ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
-4.  Digitare un nome per il criterio, aggiungere una breve descrizione e selezionare il tipo di piattaforma per creare un criterio per iOS e Android.  È possibile creare più criteri per ogni piattaforma.
+3.  Digitare un nome per il criterio, aggiungere una breve descrizione e selezionare il tipo di piattaforma per creare un criterio per iOS e Android.  È possibile creare più criteri per ogni piattaforma.
 
     ![Schermata del pannello Aggiungi criteri](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
-5.  Scegliere **App** per aprire il **pannello App** che contiene l'elenco delle app disponibili. È possibile selezionare una o più app dall'elenco che si vuole associare il criterio che si sta creando. Dopo aver selezionato le app, scegliere il pulsante **Seleziona** nella parte inferiore del pannello **App** per salvare la selezione.
+4.  Scegliere **App** per aprire il **pannello App** che contiene l'elenco delle app disponibili. È possibile selezionare una o più app dall'elenco che si vuole associare il criterio che si sta creando. Dopo aver selezionato le app, scegliere il pulsante **Seleziona** nella parte inferiore del pannello **App** per salvare la selezione.
 
     > [!IMPORTANT]
     > È necessario selezionare almeno un'app per creare un criterio.
 
-6.  Nel pannello **Aggiungi criteri** scegliere **Configurare le impostazioni necessarie** per aprire il pannello delle impostazioni dei criteri.
+5.  Nel pannello **Aggiungi criteri** scegliere **Configurare le impostazioni necessarie** per aprire il pannello delle impostazioni dei criteri.
 
     Esistono due categorie di impostazioni dei criteri: **Rilocazione dati** e **Accesso**.  I criteri di rilocazione dati sono applicabili allo spostamento dei dati da e verso le app, mentre i criteri di accesso determinano il modo in cui l'utente finale accede alle applicazioni in un contesto aziendale.
     In questa introduzione le impostazioni dei criteri hanno valori predefiniti.  Non è necessario apportare modifiche se i valori predefiniti soddisfano i requisiti.
@@ -77,11 +73,11 @@ Prima di creare un criterio MAM, vedere le informazioni su [prerequisiti e suppo
 
     ![Schermata del pannello delle impostazioni insieme al pannello Aggiungi criteri](../media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
-7.  Scegliere **OK** per salvare la configurazione.  Viene di nuovo visualizzato il pannello **Aggiungi un criterio** . Scegliere **Crea** per creare i criteri e salvare le impostazioni.
+6.  Scegliere **OK** per salvare la configurazione.  Viene di nuovo visualizzato il pannello **Aggiungi un criterio** . Scegliere **Crea** per creare i criteri e salvare le impostazioni.
 
     ![Schermata del pannello Aggiungi criteri con le opzioni App e Impostazioni configurate](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-    ![Schermata del pannello Criteri per le app con la notifica di aggiunta criteri ](../media/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
+
 
 Dopo aver creato un criterio come descritto nella procedura precedente, non verrà distribuito a tutti gli utenti.  Per distribuire il criterio, usare la procedura descritta di seguito.
 
@@ -169,6 +165,6 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

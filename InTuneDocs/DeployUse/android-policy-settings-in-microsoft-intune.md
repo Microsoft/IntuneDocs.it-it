@@ -1,10 +1,11 @@
 ---
+
 title: Impostazioni dei criteri di Android e Samsung KNOX | Microsoft Intune
 description: "Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi Android gestiti con Intune."
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,45 +14,45 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: e983f4ac4e396a30db19e5a0d487ac0f9c25ff14
+ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
+ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
 
 
 ---
 
 # Impostazioni dei criteri di Android e Samsung KNOX in Microsoft Intune
 
-Intune offre una gamma di impostazioni generali integrate che è possibile configurare nei dispositivi Android. È anche possibile specificare i valori OMA-URI per creare impostazioni personalizzate non disponibili in Intune.
+Intune offre una gamma di impostazioni generali integrate che è possibile configurare nei dispositivi Android. È anche possibile specificare i valori OMA-URI (Open Mobile Alliance Uniform Resource Identifier) per creare impostazioni personalizzate non disponibili in Intune.
 
 ## Criteri di configurazione generale
 
-Usare i **criteri di configurazione generali di Android** di Microsoft Intune per configurare le impostazioni di:
+Usare i **criteri di configurazione generale Android** di Intune per configurare le impostazioni per quanto indicato di seguito:
 
--   **Impostazioni di sicurezza del dispositivo mobile** : scegliere da un elenco di impostazioni predefinite che permettono di controllare una gamma di funzionalità e caratteristiche nel dispositivo.
+-   **Impostazioni di sicurezza del dispositivo mobile**: scegliere da un elenco di impostazioni predefinite che consentono di controllare una gamma di funzionalità e caratteristiche nel dispositivo.
 
 -   **Modalità tutto schermo** (solo per dispositivi Samsung KNOX): bloccare un dispositivo per consentire solo il funzionamento di determinate funzionalità. Ad esempio, è possibile consentire a un dispositivo di eseguire solo un'app gestita specificata o disabilitare i pulsanti del volume in un dispositivo. Queste impostazioni potrebbero essere usate per un modello demo di un dispositivo o per un dispositivo dedicato all'esecuzione di una sola funzione, ad esempio un dispositivo POS.
 
--   **App conformi e non conformi**: specificare un elenco di app conformi oppure non conformi nella società. Nei dispositivi Android e iOS è possibile usare il **Report app non conformi** per visualizzare la conformità delle app specificate nell'elenco rispetto a quelle installate dagli utenti (ma senza impedire effettivamente l'installazione dell'app).
+-   **App conformi e non conformi**: specificare un elenco di app conformi oppure non conformi nella società. Nei dispositivi Android e iOS è possibile usare il **Report app non conformi** per visualizzare la conformità delle app specificate nell'elenco rispetto a quelle installate dagli utenti. Il report non può impedire effettivamente l'installazione dell'applicazione.
 
 > [!TIP]
-> È possibile configurare i termini e le condizioni per essere sicuri che gli utenti siano informati del fatto che le app installate nel dispositivo, incluse quelle personali, verranno valutate e che le app non conformi verranno bloccate o segnalate come non conformi. Gli utenti dovranno quindi accettare questi termini e condizioni prima di poter registrare il dispositivo e usare il Portale aziendale per ottenere le app. Per altre informazioni sull'uso di termini e condizioni, vedere [Terms and condition policy settings in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md) (Impostazioni dei criteri relativi a termini e condizioni in Microsoft Intune).
+> È possibile configurare i termini e le condizioni in modo da assicurare agli utenti che tutte le app installate nei loro dispositivi, incluse quelle personali, verranno valutate e che le app non conformi verranno bloccate o segnalate come non conformi. Gli utenti dovranno quindi accettare questi termini e condizioni prima di poter registrare il dispositivo e usare il Portale aziendale per ottenere le app. Per altre informazioni sull'uso di termini e condizioni, vedere [Terms and condition policy settings in Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md) (Impostazioni dei criteri relativi a termini e condizioni in Microsoft Intune).
 
-Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è possibile crearla con un criterio personalizzato Android che consenta di usare le impostazioni URI OMA per controllare il dispositivo. Per altre informazioni, vedere **Impostazioni di criteri personalizzati** più avanti in questo argomento.
+Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è possibile crearla con un criterio personalizzato Android che consenta di usare le impostazioni URI OMA per controllare il dispositivo. Per altre informazioni, vedere [Impostazioni dei criteri personalizzati](#custom-policy-settings) più avanti in questo argomento.
 
 ### Impostazioni della password
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
 |----------------|-|----------------|----------------|
-|**Richiedi una password per sbloccare i dispositivi mobili**|Richiede una password nei dispositivi supportati.|Sì|Sì|
-|**Lunghezza minima password**|La lunghezza minima della password.|Sì|Sì|
-|**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|Cancella il dispositivo se questo numero di tentativi di accesso ha esito negativo.|Sì|Sì|
-|**Minuti di inattività prima dello spegnimento dello schermo**|Specifica il numero di minuti prima dello spegnimento dello schermo del dispositivo.|Sì|Sì|
-|**Scadenza password (giorni)**|Il numero di giorni prima che sia necessario modificare una password.|Sì|Sì|
-|**Ricorda cronologia password**|Ricorda le password usate in precedenza.|Sì|Sì|
-|**Ricorda cronologia password** – **Impedisci riutilizzo delle password precedenti**|Impedisce il riutilizzo delle password usate in precedenza.|Sì|Sì|
-|**Qualità password**|Selezionare il livello di complessità delle password necessario e indicare se possono essere usati anche dispositivi biometrici.|Sì|Sì|
+|**Richiedi una password per sbloccare i dispositivi mobili**|Specifica la richiesta di una password nei dispositivi supportati.|sì|Sì|
+|**Lunghezza minima password**|Specifica la lunghezza minima della password.|sì|Sì|
+|**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|Specifica il numero di errori di accesso consentiti prima della cancellazione del dispositivo.|sì|Sì|
+|**Minuti di inattività prima dello spegnimento dello schermo**|Specifica il numero di minuti di inattività prima dello spegnimento dello schermo del dispositivo.|sì|Sì|
+|**Scadenza password (giorni)**|Specifica il numero di giorni prima che sia necessario modificare una password.|sì|Sì|
+|**Ricorda cronologia password**|Specifica il numero di password usate in precedenza che è necessario ricordare.|Sì|Sì|
+|**Ricorda cronologia password** - **Impedisci riutilizzo delle password precedenti**|Impedisce il riutilizzo delle password precedenti.|sì|Sì|
+|**Qualità password**|Specifica il livello richiesto di complessità delle password e indica se è possibile usare dispositivi biometrici.|sì|Sì|
 |**Consenti sblocco delle impronte digitali**|Consente di sbloccare il dispositivo con un'impronta digitale.|No|Sì|
-|**Consenti Smart Lock e altri agenti di attendibilità**<br>(Android 5 e versioni successive)|Consente di controllare la funzionalità Smart Lock nei dispositivi Android compatibili. Questa funzionalità del telefono, talvolta nota anche come agenti di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se il dispositivo si trova in una posizione attendibile, ad esempio quando è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. È possibile usare questa impostazione per impedire agli utenti finali di configurare Smart Lock.|sì|No|
+|**Consenti Smart Lock e altri agenti di attendibilità**<br>(Android 5 e versioni successive)|Consente di controllare la funzionalità Smart Lock nei dispositivi Android compatibili. Questa funzionalità del telefono, talvolta nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se quest'ultimo si trova in una posizione attendibile, ad esempio quando è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. È possibile usare questa impostazione per impedire agli utenti di configurare Smart Lock.|sì|No|
 
 ### Impostazioni di crittografia
 
@@ -66,7 +67,7 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 |----------------|----------------|----------------|
 |**Consenti acquisizione schermo**|Consente all'utente di acquisire il contenuto della schermata come immagine.|No|Sì|
 |**Consenti invio dati di diagnostica**|Consente al dispositivo di inviare informazioni di diagnostica a Google.|No|Sì|
-|**Consenti ripristino impostazioni predefinite**|Consente all'utente di eseguire il ripristino delle impostazioni di fabbrica del dispositivo.|No|Sì|
+|**Consenti ripristino impostazioni predefinite**|Consente all'utente di eseguire il ripristino delle impostazioni di fabbrica del dispositivo.|No|sì|
 
 ### Impostazioni cloud - Documenti e dati
 
@@ -84,7 +85,7 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Consenti browser Web**|Specifica se è consentito l'uso del Web browser nel dispositivo.|No|Sì|
+|**Consenti browser Web**|Specifica se è consentito l'uso del Web browser predefinito nel dispositivo.|No|Sì|
 |**Consenti riempimento automatico**|Consente di usare la funzione di riempimento automatico del Web browser.|No|Sì|
 |**Consenti blocco popup**|Consente di usare un blocco popup nel Web browser.|No|Sì|
 |**Consenti cookie**|Consente l'uso dei cookie nel Web browser del dispositivo.|No|Sì|
@@ -113,9 +114,9 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Consenti roaming vocale**|Consente il roaming vocale quando il dispositivo è su una rete cellulare.|No|Sì|
-|**Consenti dati in roaming**|Consentire il roaming dei dati quando il dispositivo si trova su una rete cellulare.|No|Sì|
-|**Consenti messaggi SMS/MMS**|Consente di usare messaggi SMS e MMS sul dispositivo.|No|Sì|
+|**Consenti roaming vocale**|Consente il roaming vocale quando il dispositivo si trova in una rete cellulare.|No|Sì|
+|**Consenti dati in roaming**|Consente il roaming dati quando il dispositivo si trova in una rete cellulare.|No|Sì|
+|**Consenti messaggi SMS/MMS**|Consente l'uso di messaggi SMS e MMS sul dispositivo.|No|Sì|
 
 ### Impostazioni delle funzionalità del dispositivo - Funzionalità
 
@@ -123,12 +124,12 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 |----------------|----------------|----------------|
 |**Consenti assistente vocale**|Consente di usare il software di Assistente vocale sul dispositivo.|No|Sì|
 |**Consenti composizione vocale**|Attiva o disattiva la funzionalità di composizione vocale sul dispositivo.|No|Sì|
-|**Consenti copia e incolla**|Consente le funzionalità copia e incolla nel dispositivo.|No|Sì|
-|**Consenti condivisione degli Appunti tra applicazioni**|Usare gli Appunti per copiare e incollare tra app.|No|Sì|
-|**Consenti YouTube**|Consente di usare YouTube nel dispositivo.|No|Sì|
+|**Consenti copia e incolla**|Consente le funzioni Copia e Incolla nel dispositivo.|No|Sì|
+|**Consenti condivisione degli Appunti tra applicazioni**|Consente l'uso degli Appunti per copiare e incollare dati tra app.|No|Sì|
+|**Consenti YouTube**|Consente l'uso di YouTube sul dispositivo.|No|Sì|
 
 ### Impostazioni per le app conformi e non conformi
-Nell'elenco **app conformi &amp; e non conformi** specificare un elenco di app conformi o non conformi usando le informazioni seguenti:
+Nell'elenco **App conformi &amp; Non conformi** specificare un elenco di app conformi o non conformi usando le informazioni seguenti:
 
 > [!NOTE]
 > Un singolo criterio può contenere solo un elenco di app conformi o non conformi. Non è possibile specificare entrambi nello stesso criterio.
@@ -136,9 +137,9 @@ Nell'elenco **app conformi &amp; e non conformi** specificare un elenco di app c
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
 |**Segnala la mancata conformità quando gli utenti installano le app elencate**|Elenca le app che non sono gestite da Intune e che gli utenti non sono autorizzati a installare ed eseguire. Se gli utenti installano una di queste app, tale app verrà registrata nel Report app non conformi.|
-|**Non segnalare la mancata conformità quando gli utenti installano le app elencate**|Elenca le app che si vuole vengano consentite nell'azienda. Per garantire la conformità, gli utenti non devono installare app non elencate. Le app gestite da Intune sono automaticamente consentite.|
-|**Aggiunta**|Aggiunge un'app all'elenco selezionato. Specificare un nome desiderato, facoltativamente l'autore dell'app e l'URL dell'app nell'App Store.<br /><br />Per informazioni, vedere Come specificare gli URL negli App Store, più avanti in questo argomento.|
-|**Importa app**|Importa un elenco di app specificate in un file con valori delimitati da virgole. Per il file usare il formato nome applicazione, autore, URL.|
+|**Non segnalare la mancata conformità quando gli utenti installano le app elencate**|Elenca le app di cui si vuole consentire l'uso. Per garantire la conformità, gli utenti non devono installare app non elencate. Le app gestite da Intune sono automaticamente consentite.|
+|**Aggiunta**|Aggiunge un'app all'elenco selezionato. Specificare il nome, l'autore (facoltativo) e l'URL dell'app nell'App Store.<br /><br />Per altre informazioni, vedere [Specificare gli URL negli App Store](#specify-urls-to-app-stores) più avanti in questo argomento.|
+|**Importa app**|Importa un elenco di app specificate in un file con valori separati da virgola. Nel file usare il formato, il nome dell'applicazione, l'autore e l'URL dell'app.|
 |**Modifica**|Consente di modificare il nome, l'autore e l'URL dell'app selezionata.|
 |**Eliminazione**|Elimina l'app selezionata dall'elenco.|
 
@@ -147,7 +148,7 @@ Specificare le impostazioni seguenti per i **dispositivi Samsung KNOX**:
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
-|**Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo**|Scegliere **Sfoglia**, quindi selezionare l'app gestita di cui consentire l'esecuzione quando il dispositivo è in modalità tutto schermo. Le app specificate come collegamento allo store non sono attualmente supportate. Non sarà possibile eseguire altre applicazioni nel dispositivo.|
+|**Selezionare un'app gestita che può essere eseguita quando il dispositivo è in modalità tutto schermo.**|Scegliere **Sfoglia** e quindi selezionare l'app gestita che può essere eseguita quando il dispositivo è in modalità tutto schermo. Le app specificate come collegamento allo store non sono attualmente supportate. Non sarà possibile eseguire altre applicazioni nel dispositivo.|
 |**Consenti pulsanti volume**|Abilita o disabilita l'uso dei pulsanti del volume nel dispositivo.|
 |**Consenti pulsante riattivazione sospensione schermo**|Abilita o disabilita il pulsante di riattivazione sospensione dello schermo del dispositivo.|
 
@@ -160,19 +161,19 @@ Usare **Report app non conformi** per visualizzare la conformità delle app cons
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Report** &gt; **Report app non conformi**.
 
-2.  Selezionare i gruppi di dispositivi da controllare, scegliere se verificare la presenza di app conformi, di app non conformi o di entrambi i tipi di app, quindi scegliere **Visualizza report**.
+2.  Selezionare i gruppi di dispositivi da controllare. Indicare quindi se si vuole verificare la presenza di app conformi o non conformi oppure di entrambi i tipi. Al termine, scegliere **Visualizza report**.
 
-#### Come specificare gli URL negli App Store
-Per specificare un URL app nell'elenco di applicazioni conformi e non conformi, utilizzare il formato seguente:
+#### Specificare gli URL negli App Store
+Per specificare un URL di app nell'elenco di app conformi e non conformi, seguire questa procedura:
 
 Nella [sezione delle app di Google Play](https://play.google.com/store/apps), cercare l'app da usare.
 
-Aprire la pagina di installazione per l'app e copiare l'URL negli Appunti. A questo punto l'URL può essere usato in entrambi gli elenchi di app conformi e non conformi.
+Aprire la pagina di installazione relativa all'app e copiare l'URL negli Appunti. A questo punto l'URL può essere usato in entrambi gli elenchi di app conformi e non conformi.
 
-**Esempio**: cercare Microsoft Office Mobile in Google Play. L'URL usato sarà **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Esempio: Cercare Microsoft Office Mobile in Google Play. L'URL usato sarà **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ## Impostazioni di criteri personalizzati
-Usare i **Criteri di configurazione personalizzati Android** di Microsoft Intune per distribuire le impostazioni OMA-URI (Open Mobile Alliance Uniform Resource Identifier) che è possibile usare per controllare le funzionalità nei dispositivi Android. Si tratta di impostazioni standard che molti produttori di dispositivi mobili usano per controllare le funzionalità del dispositivo.
+Usare i **Criteri di configurazione personalizzati Android** di Microsoft Intune per distribuire le impostazioni OMA-URI che è possibile usare per controllare le funzionalità nei dispositivi Android. Si tratta di impostazioni standard che molti produttori di dispositivi mobili usano per controllare le funzionalità del dispositivo.
 
 Questa funzionalità consente di distribuire le impostazioni Android non configurabili con i criteri di Intune.
 
@@ -192,70 +193,20 @@ Questa funzionalità consente di distribuire le impostazioni Android non configu
     |--------|--------------------|
     |**Nome impostazione**|Immettere un nome univoco per l'impostazione OMA URI per identificarla nell'elenco delle impostazioni.|
     |**Descrizione dell'impostazione**|Fornire una descrizione che offra una panoramica dell'impostazione e altre informazioni rilevanti per individuarla.|
-    |**Tipo di dati**|Selezionare il tipo di data in cui si specificherà questa impostazione OMA URI. Scegliere tra **Stringa, Stringa (XML), Data e ora, Intero, Virgola mobile** o **Booleano**.|
+    |**Tipo di dati**|Selezionare il tipo di dati in cui verrà specificata questa impostazione OMA URI. Scegliere tra **Stringa, Stringa (XML), Data e ora, Intero, Virgola mobile** o **Booleano**.|
     |**OMA-URI (con distinzione tra maiuscole e minuscole)**|Specificare l'impostazione OMA-URI per cui si desidera fornire un'impostazione.|
     |**Valore**|Specificare il valore da associare all'impostazione OMA-URI specificata in precedenza.|
 
-### Esempio: Configurare un profilo Wi-Fi personalizzato con una chiave precondivisa
-Sebbene Intune supporti profili Wi-Fi per i dispositivi Android, questa funzionalità non supporta attualmente l'inclusione di una chiave precondivisa nella configurazione. In questo esempio, verrà illustrato come creare un criterio personalizzato Android che crea un profilo Wi-Fi con una chiave precondivisa sul dispositivo Android.
+### Esempi
 
-#### Per creare un profilo Wi-Fi con una chiave precondivisa
-
-1.  Assicurarsi che gli utenti usino la versione più recente dell'app [Portale aziendale di Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) per Android.
-
-2.  Creare un criterio personalizzato Android e aggiungere le impostazioni seguenti:
-
-|Nome impostazione|Dettagli|
-|----------------|--------------------|
-|**Nome impostazione**|Specificare un nome di preferenza per l'impostazione.|
-|**Descrizione dell'impostazione**|Specificare una descrizione per l’impostazione.|
-|**Tipo di dati**|Selezionare **Stringa (XML)**.|
-|**URI OMA**|Immettere: ./Vendor/MSFT/WiFi/Profile/*&lt;your Wi-Fi profile&gt;*/Settings|
-
-3.  In **Valore** copiare e incollare il codice XML seguente:
-
-    ```
-    <!--
-    WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile 
-                    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-                    <WEP password> = Password to connect to the network
-    -->
-    <WLANProfile 
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <name><SSID of wifi profile></name>
-        </SSID>
-      </SSIDConfig>
-      <connectionType>ESS</connectionType>
-      <MSM>
-        <security>
-          <authEncryption>
-            <authentication>open</authentication>
-            <encryption>WEP</encryption>
-            <useOneX>false</useOneX>
-          </authEncryption>
-          <sharedKey>
-            <keyType>networkKey</keyType>
-            <protected>false</protected>
-            <keyMaterial><WEP password></keyMaterial>
-          </sharedKey>
-          <keyIndex>0</keyIndex>
-        </security>
-      </MSM>
-    </WLANProfile>
-    ```
-
-4.  Al termine, salvare il criterio e distribuirlo ai dispositivi Android necessari. Nell'elenco di connessioni del dispositivo verrà visualizzato il nuovo profilo Wi-Fi.
+- [Creare un profilo Wi-Fi con una chiave precondivisa](pre-shared-key-wi-fi-profile.md)
+- [Usare criteri personalizzati per creare un profilo VPN per app per dispositivi Android](per-app-vpn-for-android-pulse-secure.md)
 
 ### Vedere anche
 [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

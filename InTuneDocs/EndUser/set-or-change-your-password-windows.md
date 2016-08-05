@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 791d9e4d5817acfa8b11b1f5ed570df5e38718d7
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 0bfb636b68aa691234b51264d261888322dba11c
 
 
 ---
@@ -26,19 +26,19 @@ L'amministratore IT può impostare più di un requisito per la password. Ad esem
 
 In caso di problemi per l'impostazione di una password che soddisfi tutti i requisiti, contattare l'amministratore IT per assistenza.
 
-## Per impostare la password in un dispositivo Windows Phone 8 o 8.1:
-
-1. Dalla schermata **home**, toccare **Impostazioni**, quindi selezionare **Schermata di blocco**.
-2. Scorrere verso il basso fino a **Password** e far scorrere la barra **Password** fino a **Sì**.
-3. Immettere la nuova password nel campo **Nuova password**, quindi digitarla nuovamente nel campo **Conferma la password**.
-4. Toccare **Fatto**.
-
 ## Per modificare la password in un dispositivo Windows Phone 8 o 8.1:
 
 1. Dalla schermata **home**, toccare **Impostazioni**, quindi selezionare **Schermata di blocco**.
 2. Scorrere verso il basso fino a **Password**, toccare **cambia la password**.
 3. Immettere la password corrente nel campo **Password attuale**.
 4. Immettere la nuova password nel campo **Nuova password**, quindi digitarla nuovamente nel campo **Conferma la password**.
+4. Toccare **Fatto**.
+
+## Per impostare la password in un dispositivo Windows Phone 8 o 8.1:
+
+1. Dalla schermata **home**, toccare **Impostazioni**, quindi selezionare **Schermata di blocco**.
+2. Scorrere verso il basso fino a **Password** e far scorrere la barra **Password** fino a **Sì**.
+3. Immettere la nuova password nel campo **Nuova password**, quindi digitarla nuovamente nel campo **Conferma la password**.
 4. Toccare **Fatto**.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
@@ -48,6 +48,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

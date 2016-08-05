@@ -3,8 +3,8 @@ title: Portale di Azure per i criteri MAM | Microsoft Intune
 description: Creare criteri di gestione delle app mobili con il portale di Azure. I criteri creati possono essere applicati ai dispositivi con o senza registrazione in Intune.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: c466a854474c1c5ba3270f848caa51edcd5b6856
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 1ddb7a30a6f23a3f3d754bd18975c50f32662578
 
 
 ---
@@ -40,13 +40,13 @@ Il portale di Azure supporta la creazione di criteri MAM per:
 
     ![Schermata della pagina di accesso al portale di Azure](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
-2.  Dopo l'accesso verrà visualizzato il **Dashboard**. La pagina **Dashboard** viene visualizzata con un set di riquadri predefiniti che è possibile rimuovere e può essere personalizzata con nuovi riquadri.
+2.  Dopo l'accesso verrà visualizzato il **Dashboard**. La pagina **Dashboard** può essere personalizzata.
 
     ![Schermata del dashboard del portale di Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
 3.  Nel menu **Sfoglia** individuare **Intune**![Screenshot del menu Sfoglia con Intune evidenziato](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
 
-4.  Fare clic su **Intune > Gestione di applicazioni mobili di Intune > Impostazioni**.
+4.  Scegliere **Intune > Gestione di applicazioni mobili di Intune > Impostazioni**.
 
     ![Schermata del pannello Gestione di applicazioni mobili di Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
@@ -61,6 +61,6 @@ Il portale di Azure supporta la creazione di criteri MAM per:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

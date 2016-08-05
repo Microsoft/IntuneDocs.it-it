@@ -3,7 +3,7 @@ title: "Impostazioni dei criteri di conformità per i dispositivi Android | Micr
 description: "Questo argomento descrive le impostazioni dei criteri di conformità per i dispositivi Android."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: 38763f73ebb3e6d629c2e7ea43ad34514a8b3ad5
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: f99158924b83254efedb8663b9d6175a6b6775b1
 
 
 ---
@@ -56,9 +56,17 @@ Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 ### Crittografia
 - **Richiedi crittografia sul dispositivo mobile:** impostare questa opzione su **Sì** per richiedere che i dispositivi vengano crittografati per la connessione alle risorse. I dispositivi vengono crittografati quando si configura l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**.
 
-## Impostazioni dell'integrità dei dispositivi
+## Impostazioni di integrità e sicurezza dei dispositivi
 
 - **Il dispositivo non deve essere jailbroken o rooted:** se si abilita questa impostazione, i dispositivi jailbroken verranno valutati come non conformi.
+- **Richiedi che i dispositivi impediscano l'installazione di app da origini sconosciute (Android 4.0 o versione successiva)**: per bloccare i dispositivi con le opzioni **Sicurezza > Origini sconosciute** selezionate, abilitare questa impostazione e specificare **Sì**.  
+>[!IMPORTANT]
+>Le applicazioni di cui si esegue il sideload richiedono l'abilitazione dell'impostazione **Origini sconosciute**.  È necessario applicare questo criterio di conformità solo se non si esegue il sideload di app Android nei dispositivi.
+
+- **Richiedi la disabilitazione del debug USB (Android 4.2 o versione successiva)**: questa impostazione indica se è necessario rilevare o meno l'abilitazione del debug USB nel dispositivo.
+- **Richiedi l'abilitazione dell'opzione "Cerca minacce per la sicurezza nel dispositivo" nei dispositivi (Android 4.2-4.4)**: questa impostazione specifica che la funzionalità **Verifica app** è abilitata nel dispositivo.
+- **Livello minimo di patch di protezione per Android (Android 6.0 o versione successiva)**: usare questa impostazione per specificare il livello minimo di patch per Android.  I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere specificata nel formato: AAAA-MM-GG.
+
 
 ## Impostazioni delle proprietà dei dispositivi
 - **Minimum OS required** (Versione minima richiesta del sistema operativo): quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme.
@@ -68,6 +76,6 @@ Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

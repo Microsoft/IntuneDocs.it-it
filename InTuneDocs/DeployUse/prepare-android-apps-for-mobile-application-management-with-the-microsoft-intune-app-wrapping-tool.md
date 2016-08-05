@@ -3,7 +3,7 @@ title: Eseguire la disposizione testo delle app Android con lo strumento per la 
 description: Usare le informazioni in questo argomento per informazioni su come eseguire la disposizione testo per app Android senza modificare il codice dell'app stessa. Preparare le app in modo da applicare i criteri di gestione delle app mobili.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/06/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 76ee04237d54b4c171df74e8c134f003bbc32966
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
 
 
 ---
@@ -175,6 +175,6 @@ Tenere presente quanto segue quando si esegue il wrapping dell'app:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

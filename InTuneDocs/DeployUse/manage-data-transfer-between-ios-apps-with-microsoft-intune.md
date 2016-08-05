@@ -3,7 +3,7 @@ title: Gestire il trasferimento di dati tra app iOS | Microsoft Intune
 description: "Usare questo argomento per comprendere come è possibile usare la funzionalità Apri in di iOS e i criteri di gestione delle app mobili per gestire i trasferimenti di dati tra le app."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 52ddcb22b27443b42a365a84f1769e90f1e9e8a0
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
 
 
 ---
@@ -75,6 +75,6 @@ Questa configurazione è necessaria per i dispositivi gestiti da una soluzione M
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 
