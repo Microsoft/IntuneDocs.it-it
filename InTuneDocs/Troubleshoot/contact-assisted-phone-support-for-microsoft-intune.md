@@ -69,7 +69,7 @@ ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 |Liechtenstein|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 CET (UTC +1)|Francese&#42;, tedesco&#42;, italiano&#42;, inglese|0800000300|0227614114|
 |Lituania|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 EET (UTC +2)|Lituano&#42;, inglese|880030960||
 |Lussemburgo|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 CET (UTC +1)|Francese&#42;, tedesco&#42;, inglese|80021094|24871510|
-|Macedonia|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 CET (UTC +1)|Inglese|0800-94288<br /><br />Passaggio 1: Comporre il numero di telefono<br /><br />Passaggio 2: Immettere il numero 001<br /><br />Passaggio 3: Immettere il numero 877-663-5075||
+|Repubblica di Macedonia|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 CET (UTC +1)|Inglese|0800-94288<br /><br />Passaggio 1: Comporre il numero di telefono<br /><br />Passaggio 2: Immettere il numero 001<br /><br />Passaggio 3: Immettere il numero 877-663-5075||
 |Malaysia|24 x 7|Lunedì-venerdì<br /><br />09.00 – 18.00 MYT (UTC +8)|Bahasa&#42;, malese&#42;, inglese|1800 220030|362074606|
 |Malta|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 CET (UTC +1)|Inglese|0 80062231||
 |Messico|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 CST (UTC +6)|Spagnolo&#42;, inglese|01-8005630605|55473856567|

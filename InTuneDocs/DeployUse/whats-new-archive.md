@@ -145,7 +145,7 @@ Per commenti generali su Microsoft Intune, tra cui la creazione di richieste di 
 * [Cancellare i dati dell'app aziendale gestita con Microsoft Intune](https://technet.microsoft.com/library/mt627826.aspx): come è possibile rimuovere i dati dall'app aziendale.
 
 **Contenuto aggiornato**
-* [Impostazioni di criteri di configurazione di Windows 10 in Microsoft Intune](https://technet.microsoft.com/library/mt404697.aspx): aggiunte le nuove impostazioni del browser Edge.
+* [Impostazioni di criteri di configurazione di Windows 10 in Microsoft Intune](https://technet.microsoft.com/library/mt404697.aspx): aggiunte le nuove impostazioni del browser Microsoft Edge.
 * [Configurare la gestione dei dispositivi iOS con Microsoft Intune](http://technet.microsoft.com/library/dn408185.aspx): aggiunte informazioni su come registrare i dispositivi Mac OS X.
 * [Informazioni sui dispositivi con inventario in Microsoft Intune](https://technet.microsoft.com/library/jj733634.aspx): aggiunte informazioni sull'inventario raccolto dai dispositivi Mac OS X. Aggiornato anche l'argomento con le ultime informazioni per tutte le piattaforme per dispositivi.
 * [Comprendere le operazioni di Microsoft Intune con l'uso dei report](https://technet.microsoft.com/library/dn646977.aspx): aggiunte informazioni sui due nuovi report usati per visualizzare informazioni sui dispositivi Mac OS X gestiti.
