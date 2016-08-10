@@ -3,7 +3,7 @@ title: Profilo VPN app per Android con Pulse Secure | Microsoft Intune
 description: "È possibile creare un profilo VPN per app specifiche per i dispositivi Android gestiti da Intune."
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,15 +13,20 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e3dd7c0c176cacadc7e041bbda5fade11215c27
-ms.openlocfilehash: 8f8dad237a6b8de51acd869913faa487a5faeda1
+ms.sourcegitcommit: 52d9d2ad912de7bc775cde2c40c8de27a09ba2af
+ms.openlocfilehash: d37630d2aaf4a260acf98a57aa2d38c95711f12b
 
 
 ---
 
 # Usare criteri personalizzati per creare un profilo VPN per app per dispositivi Android
 
-È possibile creare un profilo VPN per app specifiche per i dispositivi Android gestiti da Intune. Prima si crea un profilo VPN che usa il tipo di connessione Pulse Secure, quindi si definiscono criteri di configurazione personalizzati per associare il profilo ad app specifiche. Dopo aver distribuito i criteri ai gruppi di utenti o dispositivi Android, quando si apre una delle app specificate su quei dispositivi viene attivata una connessione VPN per l'app. 
+È possibile creare un profilo VPN per app specifiche per i dispositivi Android gestiti da Intune. Prima si crea un profilo VPN che usa il tipo di connessione Pulse Secure, quindi si definiscono criteri di configurazione personalizzati per associare il profilo ad app specifiche. Dopo aver distribuito i criteri ai gruppi di utenti o dispositivi Android, quando si apre una delle app specificate su quei dispositivi viene attivata una connessione VPN per l'app.
+
+> [NOTA]
+> 
+> Per questo profilo è supportato solo il tipo di connessione Pulse Secure.
+
 
 ### Passaggio 1: Creare un profilo VPN
 
@@ -33,9 +38,9 @@ ms.openlocfilehash: 8f8dad237a6b8de51acd869913faa487a5faeda1
 
 > [!NOTE]
 Prendere nota del nome del profilo VPN per usarlo nel passaggio successivo. Ad esempio **MyAppVpnProfile**.
-   
+
 ### Passaggio 2: Creare criteri di configurazione personalizzati
-    
+
    1. Nella console di amministrazione di Intune scegliere **Criteri** -> **Aggiungi criterio** -> **Android** -> **Configurazione personalizzata** -> **Crea criterio**.
    2. Specificare un nome per il criterio.
    3. In **Impostazioni URI OMA** fare clic su **Aggiungi**.
@@ -43,23 +48,23 @@ Prendere nota del nome del profilo VPN per usarlo nel passaggio successivo. Ad e
    5. In **Tipo di dati** specificare **Stringa**.
    6. In **URI OMA** specificare la seguente stringa: **./Vendor/MSFT/VPN/Profile/*nome*/PackageList** dove *nome* è il nome del profilo VPN annotato nel Passaggio 1. Con il nome di esempio, citato in precedenza la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
    7.   In **Valore** aggiungere un elenco separato da punti e virgola dei pacchetti che devono essere associati al profilo.  Ad esempio, se si vuole che Excel e il browser Google Chrome usino la connessione VPN digitare: **com.microsoft.office.excel;com.android.chrome**.
-  
 
-   ![Esempio di criteri personalizzati VPN per app Android](..\media\android_per_app_vpn_oma_uri.png) 
+
+   ![Esempio di criteri personalizzati VPN per app Android](..\media\android_per_app_vpn_oma_uri.png)
 #### Impostare l'elenco di app come Blacklist o Whitelist (facoltativo)
 È possibile specificare un elenco di app che *non* saranno autorizzate a usare la connessione VPN usando il valore **BLACKLIST**.  Tutte le app non incluse nell'elenco si connetteranno tramite VPN.
 
 In alternativa è possibile specificare che *solo* determinate app potranno usare la connessione VPN usando il valore **WHITELIST**.
- 
+
 
 1.  In Impostazioni URI OMA fare clic su **Aggiungi**.
 2.  Specificare un nome per l'impostazione.
 3.  In **Tipo di dati** specificare **Stringa**.
 4.  In **URI OMA** specificare la seguente stringa: **./Vendor/MSFT/VPN/Profile/*nome*/Mode** dove *nome* è il nome del profilo VPN annotato nel Passaggio 1. Con il nome di esempio citato in precedenza la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
-5.  In **Valore** immettere **BLACKLIST** o **WHITELIST**. 
+5.  In **Valore** immettere **BLACKLIST** o **WHITELIST**.
 
 
-   
+
 ### Passaggio 3: Distribuire entrambi i criteri
 
 È necessario distribuire *entrambi* i criteri agli *stessi* gruppi di Intune.
@@ -76,7 +81,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "Novità | Microsoft Intune"
 description: "Questo articolo presenta le novità di questo mese e delle versioni precedenti di Microsoft Intune"
 keywords: 
 author: Lindavr
-manager: jeffgilb
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b8bff8951c8ced7656f007787d614fd277401fd0
-ms.openlocfilehash: 35612b07cf18d8038af51cdfac5146b9e8a876fc
+ms.sourcegitcommit: b93c6fe16e598c6f4b0d87981de8655f3de9c8d3
+ms.openlocfilehash: 051f2994c59b2886a81a50d7c72f51627064bc6a
 
 
 ---
@@ -22,8 +22,17 @@ ms.openlocfilehash: 35612b07cf18d8038af51cdfac5146b9e8a876fc
 # Novità di Microsoft Intune
 Di seguito sono illustrate le novità di questa versione di Microsoft Intune, oltre alle prossime modifiche che si consiglia di pianificare e a informazioni sulle versioni precedenti.
 
-Le seguenti modifiche di Intune sono in fase di sviluppo. Tutte queste funzionalità saranno supportate per le distribuzioni ibride dei clienti (Configuration Manager con Intune). Per altre informazioni sulle nuove funzionalità ibride, vedere la [pagina Novità per le funzionalità ibride](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
+Tutte queste funzionalità saranno supportate per le distribuzioni ibride dei clienti (Configuration Manager con Intune). Per altre informazioni sulle nuove funzionalità ibride, vedere la [pagina Novità per le funzionalità ibride](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 
+## Agosto 2016
+## Aggiornamenti del portale aziendale
+
+### Android
+- **App Portale aziendale Android**<br/>
+L'app Portale aziendale per Android fornisce supporto immediato (Day 0) per l'imminente sistema operativo Android 7.0 per dispositivi mobili.  
+
+- **Rimozione di Google della funzionalità di reimpostazione remota del passcode nei dispositivi Android 7.0**<br/>
+Nei dispositivi Android 7.0 gli amministratori IT di Intune e gli utenti finali non potranno reimpostare in modalità remota il passcode del dispositivo perché Google ha rimosso questa funzionalità per i dispositivi Android 7.0. Per le versioni precedenti ad Android 7.0, gli amministratori IT potranno ancora reimpostare in remoto il passcode di un utente e gli utenti finali potranno ancora reimpostare i passcode dal sito Web del portale aziendale.
 
 ## Luglio 2016
 ## Gestione delle app
@@ -41,7 +50,9 @@ Il componente Xamarin SDK per app Intune consente di abilitare le funzionalità 
 Intune ha aumentato il limite massimo di registrazione dei dispositivi configurabili da 5 a 15 dispositivi per utente.
 <!---TFS 1289896 --->
 
-
+### Integrazione di TeamViewer per PC Windows che eseguono il software client Intune
+L'integrazione di [TeamViewer](https://www.teamviewer.com) per PC Windows che eseguono il client di Intune consente di avviare sessioni di assistenza remota con PC Windows per supportare i reparti Help Desk dell'utente finale. Sono inclusi Windows 7, 8, 8.1 e Windows 10. Per informazioni dettagliate, vedere [Attività comuni di gestione di PC Windows con client di Microsoft Intune](intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).
+<!---TFS 1284856--->
 
 ## Aggiornamenti del portale aziendale
 ### Sito Web del portale aziendale
@@ -93,7 +104,7 @@ Oltre alle modifiche apportate alla gestione dei gruppi, verranno deprecate le f
 Maggiori informazioni sulle modalità di migrazione di questi elementi deprecati verranno rilasciate nel mese di agosto.
 
 ### Aggiunta di "Notifiche" al Portale aziendale per Android
-Nel mese di agosto verrà rilasciato un aggiornamento del Portale aziendale per Android che presenterà una nuova icona delle **notifiche** nella home page. Toccando l'icona si avrà accesso alla pagina delle **notifiche** in cui l'utente finale visualizzerà tutti gli elementi che richiedono attenzione nell'app Portale aziendale, ad esempio la non conformità del dispositivo, l'aggiornamento della registrazione e l'attivazione della registrazione. Se si usa l'app Portale aziendale per iOS, è già possibile visualizzare l'esperienza delle notifiche. Con l'introduzione della pagina **Notifiche**, non verrà visualizzata la pagina **Configurazione dell'accesso aziendale** ogni volta che si avvia o si riprende l'esecuzione del Portale aziendale per Android, purché il dispositivo sia già registrato. Molti utenti hanno creato materiale sussidiario per gli utenti finali ed è consigliabile dare tempestiva comunicazione a Microsoft nel caso possa essere necessario aggiornare tale materiale o le relative schermate. Aggiornare la documentazione in modo che rifletta le future modifiche nell'esperienza. Per le schermate aggiornate, visitare https://aka.ms/androidcpupdate.  
+Nel mese di settembre verrà rilasciato un aggiornamento del portale aziendale per Android che presenterà una nuova icona delle **notifiche** nella home page. Toccando l'icona si avrà accesso alla pagina delle **notifiche** in cui l'utente finale visualizzerà tutti gli elementi che richiedono attenzione nell'app Portale aziendale, ad esempio la non conformità del dispositivo, l'aggiornamento della registrazione e l'attivazione della registrazione. Se si usa l'app Portale aziendale per iOS, è già possibile visualizzare l'esperienza delle notifiche. Con l'introduzione della pagina **Notifiche**, non verrà visualizzata la pagina **Configurazione dell'accesso aziendale** ogni volta che si avvia o si riprende l'esecuzione del Portale aziendale per Android, purché il dispositivo sia già registrato. Molti utenti hanno creato materiale sussidiario per gli utenti finali ed è consigliabile dare tempestiva comunicazione a Microsoft nel caso possa essere necessario aggiornare tale materiale o le relative schermate. Aggiornare la documentazione in modo che rifletta le future modifiche nell'esperienza. Per le schermate aggiornate, visitare https://aka.ms/androidcpupdate.  
 
 
 
@@ -147,6 +158,6 @@ Per vedere cosa è stato rilasciato in Intune negli ultimi sei mesi, leggere l'a
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

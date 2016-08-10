@@ -1,10 +1,10 @@
 ---
-title: Configurare la gestione di Windows 10 Mobile e Windows Phone con Microsoft Intune | Microsoft Intune
+title: Configurare la gestione di Windows Phone e Windows 10 Mobile | Microsoft Intune
 description: Abilitare la gestione di dispositivi mobili (MDM) per i dispositivi Windows 10 Mobile o Windows Phone con Microsoft Intune.
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
-ms.openlocfilehash: d1bba612d9f613dde33f71790e2c3b2d6b33fe88
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: 344f1cf4367deb12288f9c361e043d345f9846bb
 
 
 ---
 
 
 # Configurare la gestione di Windows Phone e Windows 10 Mobile con Microsoft Intune
+Per informazioni su come configurare il dispositivo Windows, vedere [qui](../enduser/using-your-windows-device-with-intune.md).
+
 Prima di poter gestire dispositivi Windows 10 Mobile o Windows Phone con Microsoft Intune, questi devono essere in grado di comunicare con Intune. Per semplificare l'operazione, è possibile creare un record DNS in modo che gli utenti non debbano immettere l'indirizzo del server. La procedura descritta di seguito illustra come semplificare la registrazione per gli utenti.  
 
 Per la maggior parte degli scenari, gli utenti possono installare l'app Portale aziendale da Windows Store. Se si gestiscono i dispositivi Windows Phone 8.0 o per distribuire il Portale aziendale nei dispositivi Windows Phone, è necessario anche scaricare e firmare l'app Portale aziendale. Vedere [Set up device management for Windows Phone 8.0](set-up-windows-phone-8.0-management-with-microsoft-intune.md) (Configurazione della gestione di Windows Phone 8.0).
@@ -50,12 +52,16 @@ Per la maggior parte degli scenari, gli utenti possono installare l'app Portale 
 
     3.  Digitare l'URL del dominio verificato del sito Web aziendale nella casella **Specificare un nome di dominio verificato** e fare clic su **Verifica il rilevamento automatico**.
 
+    4.  Gli utenti dovranno sapere come registrare i propri dispositivi e cosa aspettarsi una volta che vengono introdotti nella gestione.
+        - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Uso del dispositivo Windows con Intune](../enduser/using-your-windows-device-with-intune.md)
+
 
 
 Non è necessario alcun intervento aggiuntivo a meno che non venga distribuito il Portale aziendale nei dispositivi.  I passaggi 2 e 3 nella console di amministrazione possono essere ignorati.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

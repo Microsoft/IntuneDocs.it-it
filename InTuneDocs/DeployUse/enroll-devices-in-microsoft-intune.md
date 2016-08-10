@@ -1,9 +1,9 @@
 ---
 title: Registrare i dispositivi | Microsoft Intune
-description: La Gestione dei dispositivi mobili di Microsoft Intune (MDM) usa la registrazione per gestire i dispositivi e consentire l'accesso alle risorse.
+description: Gestione dei dispositivi mobili (MDM) usa la registrazione per gestire i dispositivi e consentire l'accesso alle risorse.
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: d128b9c9f0c9eda70abed058afeb665377047f66
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: 15f4af1f870d619f4fd51e88d1aef91b0b45e66d
 
 
 ---
@@ -89,7 +89,7 @@ Specifica se il metodo di registrazione supporta "Affinità utente", che connett
   - Accesso condizionale ai dati aziendali e della posta elettronica
   - App Portale aziendale
 
-[Affinità utente](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#enrollment-of-company-owned-ios-devices-with-user-affinity) ([Tornare alla tabella](#overview-of-device-enrollment-methods))
+[Affinità utente](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices) ([Tornare alla tabella](#overview-of-device-enrollment-methods))
 
 ### Blocco
 Specifica se il dispositivo può essere bloccato per impedire all'utente di rimuovere i criteri di Intune, scollegando il dispositivo dalla gestione. Per i dispositivi iOS, il blocco del dispositivo può essere eseguito solo in modalità Supervisionato.
@@ -124,6 +124,6 @@ I computer gestiti con il software client di Intune non possono essere cancellat
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

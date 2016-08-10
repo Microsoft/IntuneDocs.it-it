@@ -13,8 +13,8 @@ ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 4080e98333662b3e27de4be2da6425d65abb367d
+ms.sourcegitcommit: c671610b9c56d8b92d126d9902cce9c8c689ed63
+ms.openlocfilehash: 5f92ecf7d2590150c5341d81a1a976c71518e2fd
 
 
 ---
@@ -135,6 +135,7 @@ Nella tabella seguente sono elencati i domini e i servizi a cui accede il client
 |status.manage.microsoft.com|80 e 443|157.55.99.170
 |swda01.manage.microsoft.com<br>swda02.manage.microsoft.com<br>swdb01.manage.microsoft.com<br>swdb02.manage.microsoft.com<br>swdc01.manage.microsoft.com<br>swdc02.manage.microsoft.com|80 e 443|93.184.215.200
 |*.microsoftonline-p.com|80 e 443||
+|has.spserv.microsoft.com<br>Obbligatorio per il servizio di attestazione dell'integrità del dispositivo|443||
 |*.microsoftonline-p.net|80 e 443||
 |*.portal.office.com|80 e 443||
 |*.spynet2.microsoft.com|443||
@@ -168,6 +169,6 @@ Per gestire i computer protetti da un server proxy, occorre ricordare quanto seg
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

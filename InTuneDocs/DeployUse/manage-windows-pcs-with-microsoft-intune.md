@@ -1,33 +1,33 @@
 ---
-title: Gestire i PC Windows con il client per PC di Intune | Microsoft Intune
-description: 
+title: Gestire i PC Windows con il client Intune | Microsoft Intune
+description: Gestire i PC Windows installando il software client di Intune.
 keywords: 
 author: nathbarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e09381bbcf073baa67a431546059272e629b5423
-ms.openlocfilehash: d22714f7b6eda1632892785568463fc5bafce8d0
+ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
+ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
 
 
 ---
 
 # Gestire i PC Windows con il software client per PC di Intune
-Invece di [registrare i PC Windows come dispositivi mobili](set-up-windows-device-management-with-microsoft-intune.md), è possibile gestire i PC Windows installando il software client di Intune. 
+Invece di [registrare i PC Windows come dispositivi mobili](set-up-windows-device-management-with-microsoft-intune.md), è possibile gestire i PC Windows installando il software client di Intune.
 
 Intune gestisce PC Windows tramite criteri in modo analogo a Oggetti Criteri di gruppo di Servizi di dominio Active Directory di Windows Server. Se si gestiscono computer appartenenti a un dominio di Active Directory con Intune, è necessario [assicurarsi che i criteri di Intune non siano in conflitto con Oggetti Criteri di gruppo](resolve-gpo-and-microsoft-intune-policy-conflicts.md) attivati per l'organizzazione.
 
 Mentre il client di Intune supporta [criteri che consentono di proteggere i PC](policies-to-protect-windows-pcs-in-microsoft-intune.md) mediante la gestione degli aggiornamenti software, di Windows Firewall e di Endpoint Protection, i PC gestiti con il client di Intune non possono essere assegnati ad altri criteri di Intune.
 
 > [!NOTE]
-> I dispositivi che eseguono Windows 8.1 possono essere gestiti con il client di Intune o possono essere registrati come dispositivi mobili. Le informazioni riportate di seguito si applicano ai computer che eseguono il client di Intune. L'installazione del client per PC di Intune e la registrazione del dispositivo Windows per la gestione di dispositivi mobili non sono supportate.
+> I dispositivi che eseguono Windows 8.1 o versioni successive possono essere gestiti con il client di Intune o possono essere registrati come dispositivi mobili. Le informazioni riportate di seguito si applicano ai computer che eseguono il client di Intune. L'installazione del client per PC di Intune e la registrazione del dispositivo Windows per la gestione di dispositivi mobili non sono supportate.
 
 ## Requisiti per la gestione del client per PC di Intune
 
@@ -86,6 +86,6 @@ L'agente client di Intune viene eseguito in genere in modalità non interattiva 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

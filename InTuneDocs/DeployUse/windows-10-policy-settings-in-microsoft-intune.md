@@ -4,7 +4,7 @@ description: Usare le impostazioni dei criteri indicate nell'argomento come aiut
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
+ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
+ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 ---
@@ -45,7 +45,6 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 |**Scadenza password (giorni)**|Specifica l'intervallo di tempo dopo il quale è necessario modificare la password del dispositivo.|
 |**Ricorda cronologia password**|Specifica se si vuole impedire all'utente finale di creare password già usate in precedenza.|
 |**Ricorda cronologia password** - **Impedisci riutilizzo delle password precedenti**|Specifica il numero di password usate in precedenza che il dispositivo deve ricordare.|
-|**Consenti password grafica e PIN**|Consente di usare movimenti semplici su un'immagine o un semplice PIN per effettuare l'accesso.<br>(Solo Windows 10 Desktop)|
 |**Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività**|Se abilitata, l'utente deve inserire una password per sbloccare il dispositivo dallo stato inattivo.<br>(Solo Windows 10 Mobile)|
 
 ### Crittografia
@@ -71,14 +70,6 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 |**Consenti account Microsoft**|Consente all'utente di associare un account Microsoft con il dispositivo.|
 |**Consenti aggiunta manuale di account non Microsoft**|Consente all'utente di aggiungere account di posta elettronica al dispositivo che non sono associati con un account Microsoft.|
 |**Consenti sincronizzazione delle impostazioni per gli account Microsoft**|Consente che le impostazioni del dispositivo e delle app associate con un account Microsoft vengano sincronizzate fra i dispositivi.|
-
-### Impostazioni di posta elettronica
-
-|Nome impostazione|Dettagli|
-|----------------|----------------------|---------------------|
-|**Rendi l'account Microsoft facoltativo nell'applicazione Windows Mail**|Configura l'opzione in modo da rimuovere il requisito per un account Microsoft in Windows Mail.<br>Solo Windows 10 Desktop|
-
-
 
 ### Microsoft Edge
 
@@ -127,7 +118,6 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 |**Consenti Bluetooth**|Consente l'uso delle capacità Bluetooth sul dispositivo.|
 |**Consenti modalità individuabile Bluetooth**|Consente che il dispositivo sia scoperto da altri dispositivi con la funzione Bluetooth attivata.|
 |**Consenti annunci con Bluetooth**|Consente ai dispositivi di ricevere annunci tramite Bluetooth.|
-|**Consenti modalità di connessione Bluetooth**|**Importante:** questa impostazione non è più supportata in Windows 10 e verrà rimossa in futuro.|
 |**Consenti ripristino del telefono**|Controlla se l'utente può ripristinare le impostazioni predefinite nel dispositivo.|
 |**Consenti connessione USB**|Controlla se i dispositivi possono accedere a dispositivi di archiviazione esterni mediante una connessione USB.|
 |**Consenti modalità AntiTheft**|Consente di configurare l'abilitazione della modalità Antitheft di Windows.|
@@ -177,6 +167,7 @@ Tutte le impostazioni sono solo per Windows 10 Desktop.
 |Nome impostazione|Dettagli|
 |----------------|---------------|
 |**Consenti aggiornamenti automatici**|Abilitare questa impostazione per consentire gli aggiornamenti automatici, quindi configurare una delle impostazioni seguenti per controllare il comportamento di aggiornamento:<br /><br />**Notifica download**<br /><br />**Installa automaticamente durante la manutenzione**<br /><br />**Installa e riavvia automaticamente durante la manutenzione**<br /><br />**Installa e riavvia automaticamente all'ora pianificata** **Nota:** quando è selezionata questa opzione è possibile configurare anche le impostazioni seguenti: **Elimina la notifica per l'utente finale** e **Definire il giorno di installazione per gli aggiornamenti pianificati**.<br>(Solo Windows 10 Desktop)|
+|**Consenti funzionalità di versioni non definitive**|Consente a Microsoft di distribuire le impostazioni e le funzionalità della versione non definitiva nei dispositivi Windows 10. È possibile consentire l'installazione delle sole impostazioni oppure di tutte le impostazioni e le funzionalità della versione non definitiva.|
 
 ## Impostazioni di criteri personalizzati
 Usare i **criteri di configurazione personalizzati** di Microsoft Intune per Windows 10 e Windows 10 Mobile per distribuire le impostazioni URI OMA (Open Mobile Alliance Uniform Resource Identifier) che possono essere usate per controllare le funzionalità nei dispositivi Windows 10 e Windows 10 Mobile. Si tratta di impostazioni standard che molti produttori di dispositivi mobili usano per controllare le funzionalità del dispositivo.
@@ -332,6 +323,6 @@ Tutti i dispositivi devono essere registrati con Intune per poter usare i criter
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

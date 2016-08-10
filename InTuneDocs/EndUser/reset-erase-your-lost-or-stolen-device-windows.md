@@ -3,8 +3,8 @@ title: Ripristinare (eliminare) un dispositivo Windows smarrito o rubato | Micro
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: dec9fd3d2711513b4a99ca4bec586f72402cb619
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 083dd1a11e291ff0d92b1bfa3ec61033f26f3d4b
 
 
 ---
@@ -34,7 +34,7 @@ Se un telefono registrato in Intune viene smarrito o rubato, è possibile ripris
 
 2.  Selezionare il dispositivo smarrito o rubato in **Dispositivi personali**.
 
-3.  Toccare **Reimposta** &gt; **Reimposta**.
+3.  Toccare l'icona di **reimpostazione**, quindi toccare **Reimposta**.
 
 Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere all'amministratore IT di eseguire questa operazione. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
@@ -42,6 +42,7 @@ Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere all'am
 [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO1-->
 
 

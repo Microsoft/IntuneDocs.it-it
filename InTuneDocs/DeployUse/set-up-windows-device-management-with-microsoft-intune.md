@@ -3,8 +3,8 @@ title: Configurare la gestione dei dispositivi Windows con Microsoft Intune | Mi
 description: Abilitare la gestione di dispositivi mobili (MDM) per i PC Windows, inclusi i dispositivi Windows 10, con Microsoft Intune.
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,15 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
-ms.openlocfilehash: 710e34f8f97377bf57a398f74773788df3794654
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: fae2aa496ec38d9ddc2cb6800bed10ccb32fd154
 
 
 ---
 
 # Configurare la gestione dei dispositivi Windows
+Per informazioni su come configurare il dispositivo Windows, vedere [qui](../enduser/using-your-windows-device-with-intune.md).
+
 Con Intune è possibile abilitare la registrazione di dispositivi PC Windows BYOD (Bring Your Own Device) per concedere l'accesso alla posta elettronica e alle app aziendali. Usato con Azure Active Directory, offre anche un modo veloce e no-touch per gestire i nuovi dispositivi Windows 10 e ottenere l'accesso alle risorse aziendali senza dover ricreare l'immagine del computer. Dopo la registrazione, gli utenti possono accedere mentre ai dispositivi possono essere assegnati criteri, app e impostazioni mediante la console di amministrazione di Intune. È anche possibile [configurare la gestione di Windows Phone con Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) o [gestire i computer con software client di Intune](manage-windows-pcs-with-microsoft-intune.md) tramite il client Intune.
 
 La creazione di DNS CNAME consente agli utenti di connettersi e registrarsi in Intune senza immettere un nome server.
@@ -43,13 +45,18 @@ La creazione di DNS CNAME consente agli utenti di connettersi e registrarsi in I
 
   2.  Nella [console di amministrazione di Intune](http://manage.microsoft.com) fare clic su **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **Windows**.
   ![Finestra di dialogo della gestione dei dispositivi Windows](../media/enroll-intune-winenr.png)
-  3.  Digitare l'URL del dominio verificato del sito Web della società nella casella **Specificare un nome di dominio verificato** e fare clic su **Verifica il rilevamento automatico**.
+
+  3.  Digitare l'URL del dominio verificato del sito Web aziendale nella casella **Specificare un nome di dominio verificato** e fare clic su **Verifica il rilevamento automatico**.
+
+  4.  Gli utenti dovranno sapere come registrare i propri dispositivi e cosa aspettarsi una volta che vengono introdotti nella gestione.
+      - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+      - [Uso del dispositivo Windows con Intune](../enduser/using-your-windows-device-with-intune.md)
 
 ### Vedere anche
 [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

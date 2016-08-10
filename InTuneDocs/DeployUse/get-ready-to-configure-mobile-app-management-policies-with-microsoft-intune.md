@@ -3,8 +3,8 @@ title: Prepararsi alla configurazione dei criteri MAM | Microsoft Intune
 description: "Questo argomento descrive i prerequisiti e la modalità di configurazione degli utenti per poter creare i criteri di gestione di app mobili."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: ca84a9ce4a1a418c1107f11dbb66cf64362a77f5
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: aeaa64124384a71126eeca7339416b80d395d07d
 
 
 ---
@@ -58,7 +58,7 @@ Per visualizzare l'elenco completo delle app Microsoft supportate, passare alla 
 -   Avere una sottoscrizione Office 365, necessaria per le operazioni seguenti:
   - Applicare criteri MAM alle app con supporto per più identità.
   - Creare account aziendali di SharePoint Online ed Exchange Online. Exchange locale e SharePoint locale non sono supportati.
--   Configurazione di Skype for Business Online per l'autenticazione moderna. Per altre informazioni, vedere [Abilitare l'autenticazione moderna](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md).
+-   Configurazione di Skype for Business Online per l'autenticazione moderna. Per altre informazioni, vedere [Enable modern authentication (Abilitare l'autenticazione moderna)](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) per creare utenti. Azure AD esegue l'autenticazione quando gli utenti aprono l'app e immettono le credenziali di lavoro.
@@ -79,11 +79,13 @@ Per visualizzare l'elenco completo delle app Microsoft supportate, passare alla 
 
     ![Pagina Utenti attivi nel portale di Office](../media/AppManagement/OfficePortal_AddUsers.png)
 
+    ![Pagina Modifica utente nel portale di Office](../media/AppManagement/OfficePortal_AssignLicenses.png)
+
 4.  Per consentire a un utente di accedere al portale di Office, al portale di Azure AD e al portale di Azure, assegnare all'utente il ruolo **Amministratore globale**.
 
     ![Pagina per la modifica dei ruoli utente nel portale di Office](../media/AppManagement/OfficePortal_AddRoletoUser.png)
 
-5.  I criteri MAM vengono distribuiti ai gruppi di utenti in Azure Active Directory. Per creare i gruppi di utenti per i criteri MAM, accedere alla pagina **Gruppi** nel portale di Office e fare clic sull'icona **+** per creare un nuovo gruppo di sicurezza.  Digitare un nome e una descrizione e quindi fare clic su **Crea**. Dopo aver creato il gruppo, è possibile aggiungere utenti al gruppo facendo clic su **Modifica appartenenza**. Il gruppo di sicurezza viene creato in Azure Active Directory.
+5.  I criteri MAM vengono distribuiti ai gruppi di utenti in Azure Active Directory. Per creare i gruppi di utenti per i criteri MAM, accedere alla pagina **Gruppi** nel portale di Office e scegliere l'icona **Aggiungi gruppo** nel menu superiore per creare un nuovo gruppo di sicurezza.  Digitare un nome e una descrizione e quindi fare clic su **Crea**. Dopo aver creato il gruppo, è possibile aggiungere utenti al gruppo facendo clic su **Modifica appartenenza**. Il gruppo di sicurezza viene creato in Azure Active Directory.
 
     ![Pagina dei gruppi di sicurezza nel portale di Office](../media/AppManagement/OfficePortal_CreateGroups.png)
 
@@ -123,6 +125,6 @@ Gli amministratori globali hanno accesso al [portale di Azure](https://portal.az
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

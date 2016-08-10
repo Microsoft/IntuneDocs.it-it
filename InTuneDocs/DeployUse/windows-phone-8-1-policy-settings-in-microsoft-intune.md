@@ -4,7 +4,7 @@ description: "Intune offre una gamma di impostazioni generali incorporate che è
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 04fca72cd426ee4718e100cb2633ca2c967b4c05
+ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
+ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
 
 
 ---
@@ -107,13 +107,13 @@ Usare i **criteri di configurazione generale per Windows Phone (Windows Phone 8.
 
 |Nome impostazione|Dettagli|Windows Phone 8|Windows Phone 8.1|
 |----------------|-----------------------------------------|
-|**Consenti copia e incolla**|Consente le funzionalità copia e incolla nel dispositivo.|No|Sì|
+|**Consenti copia e incolla**|Consente le funzionalità copia e incolla nel dispositivo.|No|sì|
 
-### Impostazioni per le app conformi e non conformi
-Nell'elenco **app conformi &amp; e non conformi** specificare un elenco di app conformi o non conformi usando le informazioni seguenti:
+### Impostazioni per le app consentite e bloccate
+In **Elenco app consentite e bloccate** specificare un elenco di app da consentire o bloccare usando le informazioni seguenti:
 
 > [!NOTE]
-> Un singolo criterio può contenere solo un elenco di app conformi o non conformi. Non è possibile specificare entrambi nello stesso criterio.
+> Un singolo criterio può contenere solo un elenco di app consentite o bloccate. Non è possibile specificare entrambi nello stesso criterio.
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
@@ -127,14 +127,14 @@ Nell'elenco **app conformi &amp; e non conformi** specificare un elenco di app c
 > Se si specifica un elenco di applicazioni consentite per i dispositivi Windows Phone 8.1, è necessario aggiungere l'app portale aziendale a questo elenco, altrimenti verrà bloccato.
 
 
-### Informazioni di riferimento per le app conformi e non conformi
+### Informazioni di riferimento per le app consentite e bloccate
 
 #### Come specificare gli URL negli App Store
-Per specificare un URL app nell'elenco di applicazioni conformi e non conformi, utilizzare il formato seguente:
+Per specificare un URL app nell'elenco di app consentite e bloccate, usare il formato seguente:
 
 Dal [App + giochi per Windows Phone](http://www.windowsphone.com/en-us/store/overview) pagina, cercare l'applicazione che si desidera utilizzare.
 
-Aprire la pagina dell'app e copiare l'URL negli Appunti. A questo punto l'URL può essere usato in entrambi gli elenchi di app conformi e non conformi.
+Aprire la pagina dell'app e copiare l'URL negli Appunti. A questo punto l'URL può essere usato in entrambi gli elenchi di app consentite o bloccate.
 
 **Esempio:** Cercare per l'app Skype in Store. L'URL usato sarà **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
@@ -172,6 +172,6 @@ Nella finestra di dialogo **Aggiungi o modifica impostazione URI OMA** specifica
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

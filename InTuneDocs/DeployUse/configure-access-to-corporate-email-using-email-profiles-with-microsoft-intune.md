@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: cddc1a68b14520774555416dcd496a06a0f89385
 
 
 ---
@@ -36,6 +36,18 @@ Gli amministratori IT o gli utenti possono anche scegliere di installare client 
 
 
 Oltre a configurare un account di posta elettronica sul dispositivo, è possibile configurare le impostazioni di sincronizzazione, ad esempio la quantità di posta elettronica da sincronizzare e, a seconda del tipo di dispositivo, i tipi di contenuto per la sincronizzazione.
+>[!NOTE]
+>
+>Se l'utente ha installato un profilo di posta elettronica prima di eseguire il provisioning di un profilo con Intune, il risultato della distribuzione del profilo di posta elettronica di Intune dipende dalla piattaforma del dispositivo:
+
+>-**iOS**: Intune rileva un profilo di posta elettronica esistente duplicato in base all'indirizzo di posta elettronica e al nome host. Il profilo di posta elettronica duplicato creato dall'utente bloccherà la distribuzione di un profilo creato dall'amministratore di Intune. Si tratta di un problema comune poiché gli utenti di iOS in genere creano un profilo di posta elettronica e poi eseguono la registrazione. Il portale aziendale informerà l'utente che non è conforme perché il profilo di posta elettronica è stato configurato manualmente e richiederà la rimozione del profilo. L'utente deve rimuovere il proprio profilo di posta elettronica per consentire la distribuzione del profilo di Intune. Per evitare il problema, indicare agli utenti di eseguire la registrazione prima di installare un profilo di posta elettronica e di consentire a Intune di distribuirlo.
+
+>-**Windows**: Intune rileva un profilo di posta elettronica esistente duplicato in base all'indirizzo di posta elettronica e al nome host. Intune sovrascriverà il profilo di posta elettronica esistente creato dall'utente.
+
+>-**Samsung KNOX**: Intune identifica un account di posta elettronica duplicato in base all'indirizzo di posta elettronica e lo sovrascrive con il profilo di Intune. Se l'utente configura questo account, verrà sovrascritto nuovamente dal profilo di Intune. Questa operazione potrebbe confondere l'utente la cui configurazione dell'account viene sovrascritta.
+
+>Samsung KNOX non usa il nome host per identificare il profilo, quindi si consiglia di creare più profili di posta elettronica da distribuire nello stesso indirizzo di posta elettronica di host diversi perché questi verranno sovrascritti.
+    
 
 ## Proteggere i profili di posta elettronica
 È possibile proteggere i profili di posta elettronica usando uno dei due metodi seguenti:
@@ -109,6 +121,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

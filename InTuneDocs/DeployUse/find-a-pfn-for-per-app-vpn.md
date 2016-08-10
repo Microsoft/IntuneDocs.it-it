@@ -3,7 +3,7 @@ title: Trovare un nome della famiglia di pacchetti (PFN) per VPN per app | Micro
 description: Trovare un nome della famiglia di pacchetti per configurare una VPN per app.
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -13,17 +13,17 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a049127d79098bfb8992055a0a8b20fbfafd8c9
-ms.openlocfilehash: 980611a6c1fafdbc990f30d3144766abc97e632b
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 026bb4c8bf90bbe1af93513df46f0ec21f82509b
 
 
 ---
 
-# Trovare un nome della famiglia di prodotti (PFN) per la configurazione VPN per app
+# Trovare un nome della famiglia di pacchetti (PFN) per la configurazione VPN per app
 
 È possibile trovare un PFN per configurare una VPN per app in due modi diversi.
 
-## Trovare un PFN di un'app installata in un computer Windows 10 
+## Trovare un PFN di un'app installata in un computer Windows 10
 
 Se l'app in uso è già installata in un computer Windows 10, è possibile usare il cmdlet di PowerShell [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) per ottenere il PFN.
 
@@ -74,7 +74,7 @@ Di seguito sono visualizzate le informazioni recuperate per OneNote:
 4.  In un'altra scheda, incollare l'URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata` sostituendo `<app id>` con l'ID app ricavato da https://www.microsoft.com/it-it/store/apps, ovvero la serie di lettere nella parte finale dell'URL del passaggio 3. Nell'esempio relativo a OneNote, si incollerà: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
 In Edge verranno visualizzate le informazioni desiderate. In Internet Explorer fare clic su **Apri** per visualizzare le informazioni. Il valore PFN è indicato nella prima riga. Di seguito sono riportati i risultati dell'esempio:
- 
+
 
 `{`
 `  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",`
@@ -85,7 +85,6 @@ In Edge verranno visualizzate le informazioni desiderate. In Internet Explorer f
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

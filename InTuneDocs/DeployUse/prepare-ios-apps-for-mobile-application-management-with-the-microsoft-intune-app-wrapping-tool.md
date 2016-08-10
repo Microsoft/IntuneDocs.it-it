@@ -3,8 +3,8 @@ title: Eseguire la disposizione testo delle app iOS con lo strumento per la disp
 description: Usare le informazioni in questo argomento per informazioni su come eseguire la disposizione testo per app iOS senza modificare il codice dell'app stessa. Preparare le app in modo da applicare i criteri di gestione delle app mobili.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 05/11/2016
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 754c026832b980d3a1cd406e9ab3146585b87b46
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 
 ---
@@ -27,12 +27,13 @@ Lo strumento è un'applicazione da riga di comando di Mac OS che crea un 'wrappe
 Per scaricare lo strumento, vedere la pagina per il download dello [strumento per la disposizione testo per app di Microsoft Intune per iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Passaggio 1: Soddisfare i prerequisiti per l'uso dello strumento per la disposizione testo per app
+Leggere [questo post di blog](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) per altre informazioni sui prerequisiti e su come impostarli.
 
 |Requisito|Altre informazioni|
 |---------------|--------------------------------|
 |Sistema operativo e set di strumenti supportati|È necessario eseguire lo strumento di wrapping delle app in un computer Mac che esegue OS X 10.8.5 o versioni successive, con il set di strumenti XCode versione 5 o versioni successive.|
 |Certificato di firma e profilo di provisioning|È necessario avere un certificato di firma e un profilo di provisioning Apple. Vedere la [documentazione per sviluppatori Apple](https://developer.apple.com/).|
-|Elaborazione di un'app con lo strumento per la disposizione testo per app|Le app devono essere sviluppate e firmate dalla società o da un fornitore di software indipendente (ISV). Non è possibile usare questo strumento per elaborare le app dell'Apple Store. L'app deve essere scritta per iOS 7.0 o versioni successive. Il formato delle app deve essere PIE (Position Independent Executable). Per altre informazioni sul formato PIE, vedere la documentazione per sviluppatori di Apple. Il formao dell'estensione dell'app deve essere **.app** o **.ipa**.|
+|Elaborazione di un'app con lo strumento per la disposizione testo per app|Le app devono essere sviluppate e firmate dalla società o da un fornitore di software indipendente (ISV). Non è possibile usare questo strumento per elaborare le app dell'Apple Store. L'app deve essere scritta per iOS 7.1 o versioni successive. Il formato delle app deve essere PIE (Position Independent Executable). Per altre informazioni sul formato PIE, vedere la documentazione per sviluppatori di Apple. Il formao dell'estensione dell'app deve essere **.app** o **.ipa**.|
 |App che lo strumento per la disposizione testo non è in grado di elaborare|App crittografate, non firmate e con attributi di file estesi.|
 |App che usano Azure Active Directory Library (ADAL)|Se l'app usa ADAL, deve includere una versione ADAL superiore o uguale a 1.0.2 e lo sviluppatore deve concedere accesso app alla risorsa di gestione delle applicazioni per dispositivi mobili Intune.<br /><br />Per informazioni dettagliate sull'uso di ADAL, vedere [Informazioni per le app che usano Azure Active Directory Library](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) in questo articolo.|
 |Impostazione dei diritti per l'app|È necessario impostare diritti per concedere all'app autorizzazioni e funzionalità aggiuntive oltre a quelle generalmente concesse, prima di eseguire il wrapping dell'app. Per istruzioni, vedere [Impostazione dei diritti delle app](#setting-app-entitlements).|
@@ -292,6 +293,6 @@ Quando si usa lo strumento di wrapping delle app, adottare le procedure consigli
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

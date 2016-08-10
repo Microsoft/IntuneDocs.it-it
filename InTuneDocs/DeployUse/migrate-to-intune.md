@@ -13,8 +13,8 @@ ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
+ms.sourcegitcommit: 317b8cc277eb8dffc1cb29739f3f78cfa3241602
+ms.openlocfilehash: c6bd34c910f56e7dfad142034ef6fd7a027cd2c4
 
 
 ---
@@ -44,7 +44,7 @@ Prima della registrazione in Intune, è necessario annullare la registrazione de
 
 ## Registrazione dei dispositivi in Intune
 
-Gli utenti per i quali è pianificata la migrazione devono registrarsi immediatamente in Intune per riottenere o evitare di perdere l'accesso alle risorse aziendali, alla posta elettronica e alle applicazioni. Se l'accesso condizionale è configurato e gli utenti tentano di connettersi alla posta elettronica prima di registrarsi in Intune, l'accesso verrà bloccato e gli utenti riceveranno un messaggio di posta elettronica di registrazione. Questo messaggio di posta elettronica contiene le istruzioni per la registrazione del dispositivo in Intune.  In alternativa, gli utenti possono registrarsi in Intune tramite l'app del portale aziendale di Intune o in modo nativo tramite il sistema operativo in Windows 8.1 e Windows 10 Mobile. Fare riferimento a [Informazioni sull'uso di Microsoft Intune per gli utenti finali](what-to-tell-your-end-users-about-using-microsoft-intune.md) per altre indicazioni sulla procedura di registrazione a seconda della piattaforma.
+Gli utenti per i quali è pianificata la migrazione devono registrarsi immediatamente in Intune per riottenere o evitare di perdere l'accesso alle risorse aziendali, alla posta elettronica e alle applicazioni. Se l'accesso condizionale è configurato e gli utenti cercano di connettersi alla posta elettronica prima di registrarsi in Intune, l'accesso verrà bloccato e gli utenti riceveranno un messaggio di posta elettronica di registrazione. Questo messaggio di posta elettronica contiene le istruzioni per la registrazione del dispositivo in Intune.  In alternativa, gli utenti possono registrarsi in Intune tramite l'app del portale aziendale di Intune o in modo nativo tramite il sistema operativo in Windows 8.1 e Windows 10 Mobile. Fare riferimento a [Informazioni sull'uso di Microsoft Intune per gli utenti finali](what-to-tell-your-end-users-about-using-microsoft-intune.md) per altre indicazioni sulla procedura di registrazione a seconda della piattaforma.
 
 ## Configurare l'accesso condizionale di Intune (facoltativo)
 
@@ -73,6 +73,6 @@ Per scaricare una copia della versione integrale della guida, visitare la raccol
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

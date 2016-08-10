@@ -4,17 +4,17 @@ description: Problemi relativi ai profili di posta elettronica e procedure di ri
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 9b699229489be2f09ea4c7a80e1e80f6ec7b106e
+ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
+ms.openlocfilehash: 79076b65fe85adeaffd5435915cb5eca2a15413f
 
 
 ---
@@ -47,11 +47,29 @@ Questo errore si verifica quando l'opzione **Consenti l'invio di messaggi di pos
 
 4.  Nella scheda **Impostazioni di sincronizzazione** selezionare **Consenti di inviare messaggi di posta elettronica da applicazioni di terze parti**.
 
+
+## Nel dispositivo è già installato un profilo di posta elettronica
+
+Se l'utente ha installato un profilo di posta elettronica prima di eseguire il provisioning di un profilo con Intune, il risultato della distribuzione del profilo di posta elettronica di Intune dipende dalla piattaforma del dispositivo:
+
+-**iOS**: Intune rileva un profilo di posta elettronica esistente duplicato in base all'indirizzo di posta elettronica e al nome host. Il profilo di posta elettronica duplicato creato dall'utente bloccherà la distribuzione di un profilo creato dall'amministratore di Intune. Si tratta di un problema comune poiché gli utenti di iOS in genere creano un profilo di posta elettronica e poi eseguono la registrazione. Il portale aziendale informerà l'utente che non è conforme perché il profilo di posta elettronica è stato configurato manualmente e richiederà la rimozione del profilo. L'utente deve rimuovere il proprio profilo di posta elettronica per consentire la distribuzione del profilo di Intune. Per evitare il problema, indicare agli utenti di eseguire la registrazione prima di installare un profilo di posta elettronica e di consentire a Intune di distribuirlo.
+
+-**Windows**: Intune rileva un profilo di posta elettronica esistente duplicato in base all'indirizzo di posta elettronica e al nome host. Intune sovrascriverà il profilo di posta elettronica esistente creato dall'utente.
+
+-**Samsung KNOX**: Intune identifica un account di posta elettronica duplicato in base all'indirizzo di posta elettronica e lo sovrascrive con il profilo di Intune. Se l'utente configura questo account, verrà sovrascritto nuovamente dal profilo di Intune. Questa operazione potrebbe confondere l'utente la cui configurazione dell'account viene sovrascritta.
+
+Samsung KNOX non usa il nome host per identificare il profilo, quindi si consiglia di creare più profili di posta elettronica da distribuire nello stesso indirizzo di posta elettronica di host diversi perché questi verranno sovrascritti.
+
+## Errore 0x87D1FDE8 per il dispositivo KNOX
+**Problema**: dopo la creazione e la distribuzione di un profilo di posta elettronica di Exchange Active Sync per Samsung KNOX per vari dispositivi Android, viene restituito l'errore **0x87D1FDE8** o **correzione non riuscita** in Proprietà dispositivo &gt; scheda Criteri.
+
+Verificare la configurazione del profilo EAS per Samsung KNOX e i criteri di origine. L'opzione di sincronizzazione Samsung Notes non è più supportata e non dovrebbe essere selezionata nel profilo. Assicurarsi che i dispositivi abbiano avuto un tempo sufficiente per elaborare i criteri, fino a 24 ore.
+
 ## Passaggi successivi
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

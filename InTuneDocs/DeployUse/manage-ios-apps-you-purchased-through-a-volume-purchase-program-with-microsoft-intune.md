@@ -3,8 +3,8 @@ title: Gestire le app iOS acquistate tramite Volume Purchase Program| Microsoft 
 description: "Usare Intune per la gestione delle app acquistate tramite Volume Purchase Program da Apple importando le informazioni di licenza dall'App Store, verificando il numero di licenze usate e impedendo l'installazione di più copie dell'app rispetto a quelle possedute."
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/13/2016
+manager: angrobe
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: 6e179ce99dbda518dbefcaab6f502cc24498d7a3
+ms.sourcegitcommit: c64fb33893027d0000cae4cc3d9c3ed28cc38901
+ms.openlocfilehash: 5db23913601973630a4d013aae86cf26af337c4b
 
 
 ---
@@ -64,6 +64,9 @@ Nella pagina **Volume Purchase Program** è ora possibile visualizzare le inform
 
 2.  Scegliere l'app da distribuire, scegliere **Gestisci distribuzione**, quindi usare le istruzioni specificate nell'argomento [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Distribuire app in Microsoft Intune) per completare il caricamento, la creazione e la distribuzione dell'app.
 
+> [!TIP]
+> È necessario scegliere un'azione di distribuzione **Obbligatoria**. Le installazioni disponibili non sono attualmente supportate.
+
 Quando si distribuisce l'app come **Installazione richiesta**, ogni utente che installa l'app usa una licenza.
 
 Per revocare una licenza, è necessario modificare l'azione di distribuzione specificando **Disinstalla**. La licenza verrà revocata al termine della disinstallazione dell'app.
@@ -87,6 +90,6 @@ Per monitorare quali app VPP sono state distribuite e quante licenze sono in uso
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 
