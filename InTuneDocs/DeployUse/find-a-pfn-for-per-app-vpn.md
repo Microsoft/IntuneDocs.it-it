@@ -73,7 +73,7 @@ Di seguito sono visualizzate le informazioni recuperate per OneNote:
 `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
 4.  In un'altra scheda, incollare l'URL `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata` sostituendo `<app id>` con l'ID app ricavato da https://www.microsoft.com/it-it/store/apps, ovvero la serie di lettere nella parte finale dell'URL del passaggio 3. Nell'esempio relativo a OneNote, si incollerà: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
-In Edge verranno visualizzate le informazioni desiderate. In Internet Explorer fare clic su **Apri** per visualizzare le informazioni. Il valore PFN è indicato nella prima riga. Di seguito sono riportati i risultati dell'esempio:
+In Microsoft Edge verranno visualizzate le informazioni desiderate. In Internet Explorer fare clic su **Apri** per visualizzare le informazioni. Il valore PFN è indicato nella prima riga. Di seguito sono riportati i risultati dell'esempio:
 
 
 `{`
