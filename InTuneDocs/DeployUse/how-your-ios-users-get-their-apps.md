@@ -3,7 +3,7 @@ title: "Modalità di recupero delle app per gli utenti di iOS | Microsoft Intune
 description: Metodi per rendere disponibili le app iOS per gli utenti finali
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: cce64fef4a7e6d81024794ab3f535e907e501bd8
+ms.sourcegitcommit: 6dbb6012389d8058c2d9b1c46b4ae8c2418a6130
+ms.openlocfilehash: 30ebdfa1729df81a3b4a4a90b71aadacf373bb2d
 
 
 ---
@@ -22,11 +22,11 @@ ms.openlocfilehash: cce64fef4a7e6d81024794ab3f535e907e501bd8
 
 # Modalità di recupero delle app per gli utenti di iOS
 
-Usare queste informazioni per comprendere come e dove gli utenti possono ottenere le app che vengono distribuite tramite Microsoft Intune. 
+Usare queste informazioni per comprendere come e dove gli utenti possono ottenere le app che vengono distribuite tramite Microsoft Intune.
 
 **App richieste**: app richieste dall'amministratore che vengono installate nel dispositivo con un coinvolgimento minimo dell'utente, a seconda della piattaforma.
 
-**App richieste**: app che vengono messe a disposizione nell'elenco dell'app Portale aziendale e che un utente può scegliere di installare a propria discrezione.
+**App disponibili**: app che vengono messe a disposizione nell'elenco delle app del Portale aziendale e che un utente può scegliere di installare a propria discrezione.
 
 **App gestite**: app che possono essere gestite tramite criteri e che sono state "integrate" in Intune o che sono state compilate con l'SDK della gestione di applicazioni mobili (MAM) di Intune. Queste app possono essere gestite da Intune ed è possibile applicarvi criteri dell'applicazione.
 
@@ -37,6 +37,7 @@ Usare queste informazioni per comprendere come e dove gli utenti possono ottener
 [Modalità di recupero delle app per gli utenti di Windows](how-your-windows-users-get-their-apps.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO1-->
 
 

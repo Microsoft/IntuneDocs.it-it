@@ -2,9 +2,9 @@
 title: "Altre opzioni e funzionalità aggiuntive per le valutazioni di Intune | Microsoft Intune"
 description: "Descrive avvisi, notifiche e report, oltre a funzionalità generali di Intune che è necessario conoscere quando si esegue l'iscrizione per una valutazione gratuita di 30 giorni di Intune"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: lindavr
+manager: angrobe
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 30ed78b967d8669999f59046d610eca6c78260a1
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: ae624aed9ea09467c212e0bf16fef72bfef1956d
 
 
 ---
@@ -58,6 +58,6 @@ A questo punto, la procedura di *valutazione di Microsoft Intune* è stato compl
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

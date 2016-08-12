@@ -13,14 +13,14 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9788bbb368337fab4002cd0f0bcb28c0e23e8d1
-ms.openlocfilehash: 09b52621e53f0d758ded7c3951909fb88cf67e36
+ms.sourcegitcommit: ed64b7cb3b0658846bce1ec8a5aefe7bdc715508
+ms.openlocfilehash: 2dc3f1dca06cdd5f8547ea51ace2c0f1f291a6e0
 
 
 ---
 
 # Gestire le licenze di Intune
-Perché gli utenti possano accedere al servizio Intune o registrare dispositivi nella gestione, è innanzitutto necessario assegnare ad ogni utente una licenza per la sottoscrizione di Intune tramite il [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Dopo l'assegnazione della licenza, i nomi degli utenti verranno visualizzati nella console di amministrazione di Intune. A questo punto, gli utenti possono registrare fino a quindici dispositivi.
+Perché gli utenti possano accedere al servizio Intune o registrare dispositivi nella gestione, è innanzitutto necessario assegnare ad ogni utente una licenza per la sottoscrizione di Intune tramite il [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Dopo l'assegnazione della licenza, i nomi degli utenti verranno visualizzati nella console di amministrazione di Intune. Gli utenti possono quindi registrare fino a cinque dispositivi.
 
 Le organizzazioni che usano Enterprise Mobility Suite (EMS) di Microsoft potrebbero contenere utenti che necessitano solo di Azure Active Directory Premium o dei servizi di Intune nel pacchetto EMS. È possibile assegnare un servizio o un sottoinsieme di servizi usando i [cmdlet di PowerShell per Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx). Per altre informazioni, vedere [Manage Intune licenses using PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md) (Gestire le licenze Intune tramite PowerShell).
 
@@ -90,6 +90,6 @@ A questo punto, il passaggio 4 della *Guida introduttiva a Intune* è stato comp
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
