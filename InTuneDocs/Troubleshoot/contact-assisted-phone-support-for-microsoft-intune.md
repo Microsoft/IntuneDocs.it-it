@@ -30,7 +30,7 @@ ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 |Australia|24 x 7|Lunedì-venerdì<br /><br />09.00 - 18.00 EDT (UTC +11)|Inglese|1800 197503|02 82239959|
 |Austria|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 CET (UTC +1)|Tedesco&#42;, inglese|800080650|1206091578|
 |Azerbaigian|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 MSK (UTC +4)|Russo&#42;, inglese||01 24 37 35 55<br /><br />Passaggio 1: Selezionare l'opzione 9<br /><br />Passaggio 2: Immettere il codice - 7706|
-|Bahrein|24 x 7|Domenica-giovedì<br /><br />09.00 – 19.00 AST (UTC - 2)|Inglese|800 81 250||
+|Regno del Bahrein|24 x 7|Domenica-giovedì<br /><br />09.00 – 19.00 AST (UTC - 2)|Inglese|800 81 250||
 |Belarus|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 MSK (UTC +4)|Russo&#42;, inglese|8 820 0071 0003<br /><br />Passaggio 1: Selezionare l'opzione - 9<br /><br />Passaggio 2: Immettere il codice - 7707||
 |Belgio|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 CET (UTC +1)|Olandese&#42;, francese&#42;, inglese|80081174|022008884|
 |Brasile|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 BRT (UTC -2)|Portoghese (Brasile)&#42;, inglese|08007621146|1147001999|
@@ -87,7 +87,7 @@ ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 |Filippine|24 x 7|Lunedì-venerdì<br /><br />9:00 – 17:00 (UTC +7)|Inglese|1800 14410625||
 |Polonia|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 CET (UTC +1)|Polacco&#42;, inglese|800702320|0223060517|
 |Portogallo|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 GMT (UTC)|Portoghese&#42;, inglese|800 208 745|213665030|
-|Portorico|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 AST (UTC -4)|Spagnolo&#42;, inglese|800-865-9408||
+|Stato Libero Associato di Porto Rico|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 AST (UTC -4)|Spagnolo&#42;, inglese|800-865-9408||
 |Qatar|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 AST (UTC - 3)|Inglese|+974 4 411 9418<br /><br />Passaggio 1: Selezionare 2 per la lingua inglese<br /><br />Passaggio 2: Selezionare 9 per l'accesso speciale<br /><br />Passaggio 3: Immettere il codice - 7700||
 |Repubblica di Corea|24 x 7|Lunedì-venerdì<br /><br />09.00 – 18.00 KST (UTC +9)|Coreano&#42;, inglese|080-495-0880|234831937|
 |Romania|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 EET (UTC +2)|Romeno&#42;, inglese|0800896956|372741961|
