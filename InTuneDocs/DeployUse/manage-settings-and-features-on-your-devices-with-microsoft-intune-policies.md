@@ -3,7 +3,7 @@ title: Gestire le impostazioni dei dispositivi con i criteri | Microsoft Intune
 description: "Usare Intune per creare e distribuire i criteri per il controllo delle impostazioni e delle funzionalità nei dispositivi registrati gestiti dall'utente."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1850e89830de61ccdeb81cb6ee9cc0f0c1d237a
-ms.openlocfilehash: 661a8807076da4c67f3e55e82dfc8824071c6352
+ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
+ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
 
 
 ---
@@ -28,7 +28,7 @@ I criteri di Intune rientrano nelle seguenti categorie. La categoria usata influ
 
 
 - **Criteri di configurazione:** usati comunemente per gestire le impostazioni di sicurezza e le funzionalità dei dispositivi. Usare le informazioni in questo argomento per informazioni su come creare e distribuire tali criteri e per approfondire la conoscenza delle impostazioni disponibili.
-- **Criteri di conformità dei dispositivi:** definiscono le regole e le impostazioni a cui un dispositivo si deve adeguare per essere considerato conforme ai criteri di accesso condizionale. È anche possibile usare tali criteri per monitorare e correggere la conformità dei dispositivi indipendentemente dall'accesso condizionale.
+- **Criteri di conformità dei dispositivi:** definiscono le regole e le impostazioni a cui un dispositivo si deve adeguare per essere considerato conforme ai criteri di accesso condizionale. È anche possibile usare questi criteri per monitorare e correggere la conformità dei dispositivi indipendentemente dall'accesso condizionale.
 Per informazioni dettagliate vedere [Criteri di conformità dei dispositivi in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).
 - **Criteri di accesso condizionale:** consentono di proteggere la posta elettronica e altri servizi in base alle condizioni specificate dall'utente.
 Per informazioni dettagliate vedere [Limitare l'accesso alla posta elettronica e ai servizi di Office 365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
@@ -108,7 +108,7 @@ Quando si seleziona un criterio distribuito, è possibile visualizzare altre inf
 ## Domande frequenti sui criteri Intune
 
 ### Quanto tempo è necessario ai dispositivi mobili per ottenere i criteri o le app dopo la distribuzione?
-Quando viene distribuito un criterio o un'app, Intune prova immediatamente a inviare una notifica al dispositivo per avvisarlo di contattare il servizio Intune per controllare la disponibilità di aggiornamenti. Tale operazione richiede in genere meno di 5 minuti.
+Quando viene distribuito un criterio o un'app, Intune prova immediatamente a inviare una notifica al dispositivo per avvisarlo di contattare il servizio Intune per controllare la disponibilità di aggiornamenti. Questa operazione richiede in genere meno di 5 minuti.
 
 Se dopo l'invio della prima notifica il dispositivo non contatta il servizio per ottenere il criterio, Intune esegue altri tre tentativi.  Se il dispositivo è offline, ad esempio è spento o non è connesso a una rete, può non ricevere le notifiche. In questo caso, il dispositivo otterrà il criterio al successivo controllo pianificato con il servizio Intune, come indicato di seguito:
 
@@ -128,7 +128,7 @@ Se il dispositivo è stato appena registrato, la frequenza di controllo sarà ma
 In qualsiasi momento gli utenti possono anche aprire l'app Portale aziendale e sincronizzare il dispositivo per controllare immediatamente la disponibilità di criteri.
 
 ### Quali azioni fanno sì che Intune invii immediatamente una notifica a un dispositivo?
-I dispositivi contattano Intune per controllare la disponibilità di criteri quando ricevono una notifica che lo richiede o durante un controllo regolarmente pianificato.  Quando a un dispositivo o a un utente viene destinata un'azione specifica di cancellazione dati, blocco, reimpostazione del passcode, distribuzione di app, distribuzione del profilo (Wi-Fi, VPN, posta elettronica e così via) o distribuzione di criteri, Intune proverà immediatamente a inviare una notifica al dispositivo per avvisarlo di contattare il servizio Intune per ricevere tali aggiornamenti.
+I dispositivi contattano Intune quando ricevono una notifica che lo richiede o durante un controllo regolarmente pianificato.  Quando a un dispositivo o a un utente viene destinata un'azione specifica di cancellazione dati, blocco, reimpostazione del passcode, distribuzione di app, distribuzione del profilo (Wi-Fi, VPN, posta elettronica e così via) o distribuzione di criteri, Intune proverà immediatamente a inviare una notifica al dispositivo per avvisarlo di contattare il servizio Intune per ricevere tali aggiornamenti.
 
 Altre modifiche, ad esempio un aggiornamento delle informazioni di contatto nel portale aziendale, non comportano una notifica immediata ai dispositivi.
 
@@ -152,7 +152,7 @@ I conflitti si verificano quando due impostazioni dei criteri sono uguali.  Ad e
 Se un criterio viene distribuito nell'app e quindi applicato, e poi viene distribuito un secondo criterio, il primo criterio avrà la precedenza e rimarrà applicato, mentre il secondo risulterà in conflitto. Se entrambi i criteri vengono applicati contemporaneamente, ovvero non esiste un criterio precedente, saranno entrambi in conflitto. Le impostazioni in conflitto verranno impostate sui valori più restrittivi.
 
 ### Cosa accade quando sono in conflitto i criteri personalizzati iOS?
-Intune non valuta il payload dei file di configurazione Apple o del criterio personalizzato URI OMA, ma funge semplicemente da meccanismo di recapito.
+Intune non valuta il payload dei file di configurazione Apple o del criterio personalizzato URI OMA (Open Mobile Alliance Uniform Resource Identifier), ma funge semplicemente da meccanismo di recapito.
 
 Quando si distribuisce un criterio personalizzato, verificare che le impostazioni configurate non siano in conflitto con i criteri di conformità, di configurazione o con altri criteri personalizzati. Nel caso di un criterio personalizzato con impostazioni in conflitto, l'ordine in cui le impostazioni vengono applicate sarà casuale.
 
@@ -215,6 +215,6 @@ Vedere [Risolvere i problemi relativi ai criteri in Microsoft Intune](/intune/tr
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

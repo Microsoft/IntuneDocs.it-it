@@ -2,9 +2,9 @@
 title: Passaggi successivi al completamento della valutazione di Intune | Microsoft Intune
 description: Informazioni relative a sottoscrizioni e licenze dopo aver impostato la valutazione gratuita di 30 giorni di Intune
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: 3edd1821f910f9c2ea9e8324a3ac08e373ec7b0a
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
 
 
 ---
@@ -30,10 +30,10 @@ La versione di valutazione gratuita di Intune può essere convertita in una sott
 
 -   **Enterprise Agreement** (&gt; 250 utenti): il programma di licenza migliore per le organizzazioni con più di 250 utenti. Il contratto EA offre la flessibilità di scegliere tra software in locale e servizi online per soddisfare al meglio le esigenze e ottimizzare la tecnologia. Per altre informazioni, contattare l'Account Manager designato da Microsoft o il rivenditore locale Microsoft oppure visitare la pagina del [sito Volume Licensing dedicata al contratto Enterprise Agreement](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx).
 
--   **Programma Sottoscrizione Online** (&lt; 250 utenti): il programma di [contratti multilicenza Online Services](http://www.microsoft.com/licensing/online-services/default.aspx) è pensato appositamente per le organizzazioni con meno di 250 utenti. Usare questo programma per eseguire la sottoscrizione, gestire e distribuire i servizi di Intune.
+-   **Online Subscription Program** (&lt; 250 utenti): il programma di [contratti multilicenza di Online Services](http://www.microsoft.com/licensing/online-services/default.aspx) è pensato appositamente per le organizzazioni con meno di 250 utenti. Usare questo programma per eseguire la sottoscrizione, gestire e distribuire i servizi di Intune.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6ddb0fda0e818b09d274276076fd6310d29b99cb
-ms.openlocfilehash: 8ce6b10478927177e5d6d8de0677cf06bed00f08
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
 
 
 ---
@@ -119,7 +119,7 @@ Se un computer non è in grado di connettersi a Intune, viene visualizzato un me
 
 Quando si ritira un computer:
 
--   Il computer viene rimosso dall'inventario di Intune e la licenza associata al computer viene resa disponibile per essere riusata.
+-   Il computer viene rimosso dall'inventario e dalla gestione di Intune e la licenza associata al computer viene resa disponibile per essere riusata. Ritira/cancella dati rimuove il client del software Intune ma non rimuove le app o i dati dal computer.
 
 -   Lo stato del computer non viene più visualizzato nella console di Intune.
 

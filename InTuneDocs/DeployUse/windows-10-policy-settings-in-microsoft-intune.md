@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
-ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
+ms.sourcegitcommit: 0178bba517b0fc9e02ba67e6f3aba7a8a0ee445f
+ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 
 ---
@@ -32,7 +32,7 @@ Usare le impostazioni dei criteri indicate nell'argomento per configurare le imp
 Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 10 per configurare le impostazioni generali per dispositivi registrati Windows 10 Desktop e Mobile. 
 
 
-### Password
+## - Password
 
 |Nome impostazione|Dettagli|
 |----------------|----------------------|
@@ -47,13 +47,13 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 |**Ricorda cronologia password** - **Impedisci riutilizzo delle password precedenti**|Specifica il numero di password usate in precedenza che il dispositivo deve ricordare.|
 |**Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività**|Se abilitata, l'utente deve inserire una password per sbloccare il dispositivo dallo stato inattivo.<br>(Solo Windows 10 Mobile)|
 
-### Crittografia
+## - Crittografia
 
 |Nome impostazione|Dettagli|
 |----------------|----------------------|
 |**Richiedi crittografia sui dispositivi mobili**|Abilita la crittografia sui dispositivi di destinazione.<br>(Solo Windows 10 Mobile)|
 
-### Sistema
+## - Sistema
 
 |Nome impostazione|Dettagli|
 |----------------|----------------------|
@@ -63,7 +63,7 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 |**Consenti l'invio di dati di utilizzo e di diagnostica a Microsoft**|Determina la quantità di dati diagnostici e di utilizzo che vengono inviati a Microsoft dai dispositivi.<br><br>**No** - Non vengono inviati dati a Microsoft<br>**Base** - Il dispositivo invia solo informazioni limitate a Microsoft<br>**Avanzati** -Invia dati di diagnostica avanzati a Microsoft<br>**Completi (scelta consigliata)** -Invia gli stessi dati di **Avanzati**, più dati aggiuntivi sullo stato del dispositivo|
 
 
-### Account e sincronizzazione
+## - Account e sincronizzazione
 
 |Nome impostazione|Dettagli|
 |----------------|----------------------|---------------------|
@@ -71,7 +71,7 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 |**Consenti aggiunta manuale di account non Microsoft**|Consente all'utente di aggiungere account di posta elettronica al dispositivo che non sono associati con un account Microsoft.|
 |**Consenti sincronizzazione delle impostazioni per gli account Microsoft**|Consente che le impostazioni del dispositivo e delle app associate con un account Microsoft vengano sincronizzate fra i dispositivi.|
 
-### Microsoft Edge
+## - Microsoft Edge
 
 |Nome impostazione|Dettagli|
 |----------------|----------------------|
@@ -87,7 +87,7 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 |**Consenti strumento per la gestione delle password**|Abilita o disabilita la funzione di gestione password di Edge.|
 |**Posizione elenco siti modalità Enterprise**|Specifica dove trovare l'elenco di siti Web che verranno aperti in modalità Enterprise. L'elenco non è modificabile dagli utenti.<br>(Solo Windows 10 Desktop)|
 
-### App
+## - App
 
 |Nome impostazione|Dettagli|
 |----------------|----------------------|---------------------|
@@ -95,7 +95,7 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 
 
 
-### Cellulare
+## - Cellulare
 
 |Nome impostazione|Dettagli|
 |----------------|----------------------|---------------------|
@@ -103,7 +103,7 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 |**Consenti VPN su rete cellulare**|Controlla se il dispositivo può accedere a connessioni VPN quando è collegato a una rete cellulare.|
 |**Consenti roaming VPN su rete cellulare**|Controlla se il dispositivo può accedere a connessioni VPN quando è in roaming su una rete cellulare.|
 
-### Hardware
+## - Hardware
 
 |Nome impostazione|Dettagli|
 |----------------|----------------------|
@@ -122,7 +122,7 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 |**Consenti connessione USB**|Controlla se i dispositivi possono accedere a dispositivi di archiviazione esterni mediante una connessione USB.|
 |**Consenti modalità AntiTheft**|Consente di configurare l'abilitazione della modalità Antitheft di Windows.|
 
-### Caratteristiche
+## - Funzionalità
 
 |Nome impostazione|Dettagli|
 |----------------|----------------------|---------------------|
@@ -131,7 +131,7 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 |**Consenti Cortana**|Abilita o disabilita l'assistente vocale Cortana.|
 |**Consenti notifiche del Centro operativo**|Abilita o disabilita le notifiche del Centro operativo sulla schermata di blocco del dispositivo.<br>(Solo Windows 10 Mobile)|
 
-### Defender
+## - Windows Defender
 
 Tutte le impostazioni sono solo per Windows 10 Desktop.
 
@@ -162,7 +162,7 @@ Tutte le impostazioni sono solo per Windows 10 Desktop.
 |**Processi da escludere durante l'esecuzione di un'analisi o l'utilizzo della protezione in tempo reale**|Aggiungere uno o più processi del tipo **.exe**, **.com** o **.scr** all'elenco delle esclusioni. Questi processi non saranno inclusi nelle analisi in tempo reale o pianificate.| 
 
 
-### Impostazioni relative agli aggiornamenti
+## - Aggiornamenti
 
 |Nome impostazione|Dettagli|
 |----------------|---------------|
@@ -176,14 +176,14 @@ Questa funzionalità consente di distribuire le impostazioni di Windows 10 che n
 
 
 
-### Impostazioni generali dei criteri personalizzati
+## - Generale
 
 |Nome impostazione|Dettagli|
     |----------------|--------------------|
     |**Nome**|Immettere un nome univoco per il criterio che consenta di identificarlo nella console di Intune.|
     |**Descrizione**|Fornire una descrizione di carattere generale sul criterio di conformità e altre informazioni rilevanti per consentirne l'individuazione.|
 
-### Impostazioni URI OMA dei criteri personalizzati
+## - Impostazioni URI OMA
 
 |Nome impostazione|Dettagli|
     |--------|--------------------|
@@ -194,12 +194,12 @@ Questa funzionalità consente di distribuire le impostazioni di Windows 10 che n
     |**Valore**|Specificare il valore da associare all'impostazione OMA-URI specificata in precedenza.|
 
 
-## Impostazioni URI personalizzate per i dispositivi Windows 10
+## Impostazioni URI di Windows 10
 In questo argomento sono elencate le impostazioni che è possibile configurare per i dispositivi Windows 10 e Windows 10 Mobile nei **criteri personalizzati di Windows 10** di Microsoft Intune.
 
 Tutti i dispositivi devono essere registrati con Intune per poter usare i criteri URI personalizzati di Windows.
 
-### Impostazioni URI dei criteri
+## - Criteri
 
 |Nome criteri|Dettagli|
 |---------------|------------|-----------|
@@ -272,7 +272,7 @@ Tutti i dispositivi devono essere registrati con Intune per poter usare i criter
 |**Update/DeferUpgradePeriod**<br>(Desktop e Mobile)|**Descrizione:** criterio per rinviare gli aggiornamenti delle funzionalità per un massimo di 8 mesi<br /><br />**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0**: applica immediatamente gli aggiornamenti (impostazione predefinita)<br>**1**-**8**: numero di mesi di rinvio degli aggiornamenti delle funzionalità.<br /><br />Per altre informazioni, vedere:<br>[Introduzione alla manutenzione di Windows 10](https://technet.microsoft.com/library/mt598226.aspx)<br>[Piano per la distribuzione di Windows 10](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>(Desktop e Mobile)|**Descrizione:** consente a un computer CBB di non ricevere più gli aggiornamenti per 5 settimane. Usare questo criterio in caso di problemi con un aggiornamento.<br /><br />**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0**: applica immediatamente gli aggiornamenti (impostazione predefinita)<br>**1**: sospendi gli aggiornamenti (scade dopo 5 settimane)|
 
-### Impostazioni URI di Windows Defender
+## - Windows Defender
 
 |Nome criteri|Dettagli|
 |---------------|-----------|
@@ -302,7 +302,7 @@ Tutti i dispositivi devono essere registrati con Intune per poter usare i criter
 |**ExcludedPaths**<br>(solo Desktop)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Tipo di dati:** stringa<br /><br />**Valori consentiti:**<br /><br />*&lt;elenco di percorsi separati da punto e virgola&gt;*<br /><br />Esempio: **c:\test;c:\test1.exe**<br /><br />**Valore predefinito:** nessun percorso viene escluso|
 |**ExcludedProcesses**<br>(solo Desktop)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Tipo di dati:** stringa<br /><br />**Valori consentiti:**<br>*&lt;elenco di percorsi separati da punto e virgola&gt;*<br>Esempio: **c:\test.exe;c:\test1.exe**<br>**Valore predefinito:** nessun processo viene escluso|
 
-### Impostazioni URI del browser Edge
+## - Browser Edge
 
 |Nome criteri|Dettagli|
 |---------------|------------|-----------|
@@ -323,6 +323,6 @@ Tutti i dispositivi devono essere registrati con Intune per poter usare i criter
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -1,37 +1,67 @@
 ---
 title: Usare la cancellazione remota per proteggere i dati | Microsoft Intune
-description: 
+description: "Intune offre funzionalità di cancellazione selettiva e completa per rimuovere i dati aziendali riservati e impedire l'accesso a numerose risorse aziendali."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
-ms.reviewer: jeffgilb
+ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06f144693fe4e535b2ed423c95f5431e391f316f
-ms.openlocfilehash: 077f35afc5084b0381fd330236e45d62e1242484
+ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
+ms.openlocfilehash: a09c9b55d7906ab792bda90b172a36b3656ed6dd
 
 
 ---
 
 # Proteggere i dati con la cancellazione selettiva o completa tramite Microsoft Intune
-Come con i dispositivi, a un certo punto è preferibile o necessario [ritirare le applicazioni](retire-apps-using-microsoft-intune.md) distribuite su PC e dispositivi mobili in quanto non più necessarie. Si potrebbe anche voler rimuovere dati aziendali dal dispositivo. A tale scopo, Intune offre funzionalità di cancellazione completa e selettiva. Poiché i dispositivi mobili possono memorizzare dati aziendali riservati e garantire l'accesso a numerose risorse aziendali, è possibile eseguire un comando di cancellazione remota da Intune per cancellare il contenuto di un dispositivo perso o rubato. Gli utenti possono inviare un comando di cancellazione remota dei dati del dispositivo anche da Intune su dispositivi privati registrati in Intune.
+Se un dispositivo non è più necessario, viene ridestinato o è stato smarrito, è possibile cancellare app e dati dai dispositivi gestiti con Intune. A tale scopo, Intune offre funzionalità di cancellazione completa e selettiva. Gli utenti possono inviare un comando di cancellazione remota dei dati del dispositivo anche dal portale aziendale di Intune nei dispositivi privati registrati in Intune.
 
   > [!NOTE]
-  > Questo argomento riguarda solo la cancellazione dei dispositivi gestiti da Intune. Anche il [portale di anteprima di Azure](https://portal.azure.com) può essere usato per [cancellare i dati aziendali dalle app](wipe-managed-company-app-data-with-microsoft-intune.md)
+  > Questo argomento riguarda solo la cancellazione dei dispositivi gestiti con la gestione dei dispositivi mobili di Intune. Anche il [portale di anteprima di Azure](https://portal.azure.com) può essere usato per [cancellare i dati aziendali dalle app](wipe-managed-company-app-data-with-microsoft-intune.md) È anche possibile [ritirare i computer gestiti con il software client di Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
 
 ## Cancellazione completa
 
-
 La **cancellazione completa** ripristina le impostazioni predefinite di un dispositivo rimuovendo tutti i dati e le impostazioni dell'azienda e dell'utente. Il dispositivo verrà rimosso da Intune. La cancellazione completa è utile per la reimpostazione di un dispositivo prima di consegnarlo a un nuovo utente o nei casi in cui il dispositivo è stato smarrito o rubato.  **Prestare attenzione alla selezione della cancellazione completa. Non sarà possibile recuperare i dati nel dispositivo**.
+
 
 > [!Warning]
 > I dispositivi Windows 10 RTM (ossia precedenti a Windows 10 versione 1511) con meno di 4 GB di RAM possono diventare inaccessibili se cancellati. Per accedere a un dispositivo Windows 10 che non risponde più, è possibile avviare il dispositivo da un'unità USB o trovare una soluzione simile.
+
+### Cancellare un dispositivo in modalità remota dalla console di amministrazione di Intune
+
+1.  Selezionare i dispositivi da cancellare. Possono essere cercati per utente o per dispositivo.
+
+    -   **Utente:**
+
+        1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **Gruppi**&gt;**Tutti gli utenti**
+
+        2.  Scegliere il nome dell'utente il cui dispositivo mobile deve essere cancellato. Scegliere **Visualizza proprietà**
+
+        3.  Nella pagina **Proprietà** relativa all'utente scegliere **Dispositivi**, quindi il nome del dispositivo mobile di cui cancellare i dati. Usare CTRL+clic per selezionare più dispositivi.
+
+    -   **Dispositivo:**
+
+        1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **Gruppi**&gt;**Tutti i dispositivi mobili**
+
+      ![Avvio di un'operazione di ritiro o di cancellazione](../media/dev-sa-wipe.png)
+
+        2.  Scegliere **Dispositivi**, quindi il nome del dispositivo mobile di cui cancellare i dati. Usare CTRL+clic per selezionare più dispositivi.
+
+2.  Scegliere **Disattiva/Cancella**.
+
+3.  Verrà visualizzato un messaggio in cui si richiede di confermare il ritiro del dispositivo.
+
+    -   Per eseguire una **cancellazione selettiva** che rimuove solo le app e i dati aziendali, scegliere **Sì**.
+
+    -   Per eseguire una **cancellazione completa** che cancella tutte le app e i dati e ripristina le impostazioni predefinite del dispositivo, selezionare **Cancellazione del dispositivo prima della disattivazione**. Questa azione si applica a tutte le piattaforme tranne Windows 8.1. **Non è possibile ripristinare i dati rimossi con una cancellazione completa**.
+
+Se il dispositivo è acceso e connesso, un comando di cancellazione non richiede più di 15 minuti per propagarsi a tutti i tipi di dispositivo.
 
 ## Cancellazione selettiva
 
@@ -78,36 +108,6 @@ La **cancellazione selettiva** rimuove i dati aziendali, compresi i dati sulla g
 |Posta elettronica|Rimuove le applicazioni di posta elettronica abilitate per EFS, tra cui i messaggi e gli allegati dell'applicazione Windows Mail.|Non supportato|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|Rimuove le applicazioni di posta elettronica abilitate per EFS, tra cui i messaggi e gli allegati dell'applicazione Windows Mail. Rimuove gli account di posta elettronica di cui Intune ha effettuato il provisioning.|
 |Separazione di Azure Active Directory (AAD)|No|No|Record AAD rimosso|Non applicabile. Windows 10 non supporta la cancellazione selettiva per dispositivi appartenenti ad Azure Active Directory|
 
-### Cancellare un dispositivo in modalità remota dalla console di amministrazione di Intune
-
-1.  Selezionare i dispositivi da cancellare. Possono essere cercati per utente o per dispositivo.
-
-    -   **Utente:**
-
-        1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **Gruppi**&gt;**Tutti gli utenti**
-
-        2.  Scegliere il nome dell'utente il cui dispositivo mobile deve essere cancellato. Scegliere **Visualizza proprietà**
-
-        3.  Nella pagina **Proprietà** relativa all'utente scegliere **Dispositivi**, quindi il nome del dispositivo mobile di cui cancellare i dati. Usare CTRL+clic per selezionare più dispositivi.
-
-    -   **Dispositivo:**
-
-        1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **Gruppi**&gt;**Tutti i dispositivi mobili**
-
-      ![Avvio di un'operazione di ritiro o di cancellazione](../media/dev-sa-wipe.png)
-
-        2.  Scegliere **Dispositivi**, quindi il nome del dispositivo mobile di cui cancellare i dati. Usare CTRL+clic per selezionare più dispositivi.
-
-2.  Scegliere **Disattiva/Cancella**.
-
-3.  Verrà visualizzato un messaggio in cui si richiede di confermare il ritiro del dispositivo.
-
-    -   Per eseguire una **cancellazione selettiva** che rimuove solo le app e i dati aziendali, scegliere **Sì**.
-
-    -   Per eseguire una **cancellazione completa** che cancella tutte le app e i dati e ripristina le impostazioni predefinite del dispositivo, selezionare **Cancellazione del dispositivo prima della disattivazione**. Questa azione si applica a tutte le piattaforme tranne Windows 8.1. **Non è possibile ripristinare i dati rimossi con una cancellazione completa**.
-
-Sono necessari meno di 15 minuti per propagare la cancellazione in tutti i tipi di dispositivo.
-
 ## Cancellare contenuti abilitati per Encryption File System (EFS)
 La cancellazione selettiva dei contenuti crittografati con EFS è supportata da Windows 8.1 e Windows RT 8.1. Quanto descritto di seguito si applica alla cancellazione selettiva di contenuti abilitati EFS:
 
@@ -142,6 +142,6 @@ Per ottenere un report dei dispositivi che sono stati disattivati, cancellati o 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: Scegliere come gestire i dispositivi | Microsoft Intune
-description: 
+description: Informazioni sui diversi modi per registrare e gestire i dispositivi.
 keywords: 
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+author: robstackmsft
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a7c6d8f4e47f050888e9fcf5edfa586c4a24065
-ms.openlocfilehash: 502a08c1bf49057220917d929a8ffe0b98d3de2a
+ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
+ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
 
 
 ---
@@ -42,7 +42,7 @@ I dispositivi mobili con sistemi operativi come iOS, Android e Windows Phone dev
 |**Descrizione**|Dispositivo personale registrato tramite Microsoft Intune|Dispositivo di proprietà dell'azienda per utente singolo|Dispositivo di proprietà dell'azienda gestito con un account di gestione condiviso da più utenti|Dispositivo di proprietà dell'azienda senza utente associato e usato da molti utenti.|
 |**Utente del dispositivo**|Owner|Utente assegnato|Nessun account utente specifico|Nessun utente specifico|
 |**Utente che effettua la registrazione**|Owner|Amministratore|Gestione dispositivi|Qualsiasi utente|
-|**Utente che annulla la registrazione**|Proprietario o amministratore|Amministratore|Amministratore|Amministratore|
+|**Utente che annulla la registrazione**|Proprietario o amministratore|Piattaforma |Amministratore o utente|Amministratore o utente|
 |**Utente che può reimpostare**|Proprietario o amministratore|Amministratore|Amministratore|Amministratore|
 
 <div class="alert alert-tip">
@@ -80,6 +80,6 @@ Si sono apprese alcune funzionalità che è possibile usare per la registrazione
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

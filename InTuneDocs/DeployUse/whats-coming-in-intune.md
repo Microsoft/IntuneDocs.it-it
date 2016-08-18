@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f941fad998c6c0e07437c8f476df55325a4741b
-ms.openlocfilehash: dd7bd41188cee812aafc8c439f703fa4abd42858
+ms.sourcegitcommit: f02d8791bbca65a4bfda69e61e9e22c8124c436b
+ms.openlocfilehash: 09fb5dac0276b4da49795539f40dbde15cd69bf5
 
 
 ---
@@ -30,7 +30,7 @@ Le seguenti modifiche di Intune sono in fase di sviluppo. Tutte queste funzional
 
 ## Gestione delle app
 ### App nascoste e mostrate per iOS 9.3
-Per i dispositivi che eseguono iOS 9.3 o versioni successive sarà possibile usare gli elenchi di app nascoste e mostrate nei criteri di configurazione generale di iOS per:
+Per i dispositivi supervisionati che eseguono iOS 9.3 o versioni successive sarà possibile usare gli elenchi di app nascoste e visualizzate nei criteri di configurazione generale di iOS per:
 - Specificare un elenco di app nascoste agli utenti. Gli utenti non possono visualizzare o avviare queste app.
 - Specificare un elenco di app che gli utenti possono visualizzare e avviare. Non è possibile visualizzare o avviare altre app.
 
@@ -50,7 +50,7 @@ Queste impostazioni possono essere usate solo dai dispositivi che eseguono Samsu
 ### Nuove app compatibili con i criteri di gestione di applicazioni mobili (MAM)
 L'applicazione di Yammer per [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) e [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) sarà compatibile con i [criteri di gestione di applicazioni mobili di Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) a prescindere che il dispositivo sia o meno registrato.
 
-Per un elenco completo di app partner compatibili, vedere il sito dei [partner delle app di Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-partners).
+Per un elenco completo di app MAM compatibili, vedere il sito dei [partner che forniscono applicazioni per Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners).
 <!--- TFS 1252335 & 1252336--->
 
 ## Gestione dei dispositivi
@@ -114,7 +114,7 @@ Con il rilascio della nuova app di condivisione RMS, nel mese di agosto 2016 ver
 - Visualizzatore PDF di Intune
 - Visualizzatore immagini di Intune per Android disponibile in Google Play
 
-Anziché usare le app visualizzatore di Intune, è consigliabile usare la nuova app Rights Management (condivisione RMS) per Android che consente di distribuire un'unica app anziché tre app separate per visualizzare in sicurezza i file aziendali sui dispositivi Android. Sono disponibili altre informazioni sull'app di condivisione RMS con collegamento alla documentazione.
+Anziché usare le app visualizzatore di Intune, è consigliabile usare la nuova app Rights Management (condivisione RMS) per Android che consente di distribuire un'unica app anziché tre app separate per visualizzare in sicurezza i file aziendali sui dispositivi Android. Altre informazioni sulle [app RMS sharing](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app).
 <!--- goes in 1608 What's New--->
 
 
@@ -123,6 +123,6 @@ Per informazioni dettagliate sugli ultimi sviluppi, vedere [Novità di Microsoft
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

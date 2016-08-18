@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
-ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
+ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
+ms.openlocfilehash: 768dd08ad838b621f18a24747618ef1e37c5c804
 
 
 ---
@@ -55,7 +55,7 @@ Il nome dell'azienda viene visualizzato come titolo del portale aziendale. I det
 
 |Nome campo|Lunghezza massima|Altre informazioni|
     |----------|------------------------|----------------|
-    |Nome società|40|È il nome che verrà visualizzato come titolo del portale aziendale.|
+    |Nome società|40|È il nome che verrà visualizzato come titolo del portale aziendale. **Nota**: solo caratteri alfanumerici. Questo campo non supporta i caratteri speciali.|
     |Nome contatto del reparto IT|40|Questo nome viene visualizzato nella pagina **Contatta l'IT**.|
     |Numero di telefono del reparto IT|20|Questo numero di contatto viene visualizzato nella pagina **Contatta l'IT**.|
     |Indirizzo di posta elettronica del reparto IT|40|Questo indirizzo di contatto viene visualizzato nella pagina **Contatta l'IT**. È necessario immettere un indirizzo di posta elettronica valido nel formato **alias@nomedominio.com**.|
@@ -109,6 +109,6 @@ Dopo aver configurato l'autorità MDM, è necessario impostare la gestione dei d
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

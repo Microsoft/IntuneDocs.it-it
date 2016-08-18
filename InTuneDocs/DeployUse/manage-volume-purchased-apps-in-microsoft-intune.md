@@ -3,7 +3,7 @@ title: Gestione delle app acquistate tramite Volume Purchase Program| Microsoft 
 description: Informazioni su come usare Intune per gestire le app acquistate tramite Volume Purchase Program dall'App Store.
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 1a4cd495ab9636dcd4bc030db663df320209e0f1
+ms.sourcegitcommit: 533163d58b3d5f838074c31832ea5500aaef36c2
+ms.openlocfilehash: 9735708dc636f015e259eb4a852ddd57b90f1b92
 
 
 ---
@@ -23,11 +23,11 @@ ms.openlocfilehash: 1a4cd495ab9636dcd4bc030db663df320209e0f1
 
 Alcuni App Store consentono di acquistare più licenze per un'app da eseguire nell'azienda. In questo modo, è possibile ridurre il carico amministrativo associato al monitoraggio di più copie delle app acquistate.
 
-Microsoft Intune semplifica la gestione delle app acquistate con questo programma importando le informazioni di licenza dall'App Store, verificando il numero di licenze usate e impedendo l'installazione di più copie di un'app rispetto a quelle possedute.
+Microsoft Intune semplifica la gestione delle app acquistate con questo programma importando le informazioni di licenza dall'App Store, verificando il numero di licenze usate e impedendo l'installazione di più copie dell'app rispetto a quelle possedute.
 
 ## Quali tipi di app è possibile gestire?
 
-Intune attualmente consente di gestire le applicazioni acquistate tramite contratti multilicenza dall'App Store di iOS e da Windows Store per le aziende.
+Intune attualmente consente di gestire le app acquistate con contratti multilicenza dall'App Store di iOS e da Windows Store per le aziende.
 Per informazioni su come gestire le app concesse in licenza da ognuno degli Store, scegliere uno degli argomenti seguenti:
 
 - [Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune (Gestire le app iOS acquistate tramite Volume Purchase Program con Microsoft Intune)](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -35,9 +35,6 @@ Per informazioni su come gestire le app concesse in licenza da ognuno degli Stor
 
 
 
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO1-->
 
 

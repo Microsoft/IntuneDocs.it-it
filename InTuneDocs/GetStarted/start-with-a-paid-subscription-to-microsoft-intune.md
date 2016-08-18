@@ -13,8 +13,8 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: d10bb6ce48ba000154d117b2481690a198d25e49
+ms.sourcegitcommit: 13ff2feb5918725306ebee96cdbf8e5212066ddc
+ms.openlocfilehash: c8984d37296fc79eb67b5604ab735b1be47d4e11
 
 
 ---
@@ -26,7 +26,7 @@ Questa guida introduttiva illustra la procedura di configurazione di una sottosc
 >[!NOTE]
 >Questo articolo è incentrato sulla configurazione di Intune come un servizio autonomo. In alternativa, se attualmente si usa Microsoft System Center Configuration Manager per gestire computer e server, è possibile [estendere Configuration Manager per gestire i dispositivi mobili](https://technet.microsoft.com/library/jj884158.aspx). A tale scopo, connettersi a Intune con Configuration Manager in una distribuzione di gestione dei dispositivi mobili ibrida.
 
-La procedura descritta in questa guida introduttiva condivide molti passaggi presenti nella [guida di valutazione di Intune](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). Tuttavia, al termine della valutazione e quando tutto è pronto per iniziare a gestire i dispositivi mobili, è necessario soddisfare alcuni requisiti aggiuntivi:
+Questa guida introduttiva comprende molti dei passaggi presenti anche nella [guida di valutazione di Intune](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). Tuttavia, al termine della valutazione e quando tutto è pronto per iniziare a gestire i dispositivi mobili, è necessario soddisfare alcuni requisiti aggiuntivi:
 
 -   Sincronizzare gli account Active Directory locali con Intune e Azure Active Directory
 
@@ -75,6 +75,6 @@ Se si gestiscono i dispositivi iOS o Windows Phone con Intune, sono necessari ce
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

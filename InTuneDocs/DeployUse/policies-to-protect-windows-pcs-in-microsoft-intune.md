@@ -3,7 +3,7 @@ title: Criteri per la protezione dei PC Windows | Microsoft Intune
 description: Usare questi criteri per garantire la sicurezza dei PC Windows quando sono gestiti dal software client di Intune.
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,15 +13,15 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: d9a818f0be1f1b6fc1639cb705876c298d1570b4
+ms.sourcegitcommit: 321a19c38a4b69f5d16f10f054dd517b696b44eb
+ms.openlocfilehash: e649db8209f6c3c99af3353188fb8ebf463d922f
 
 
 ---
 
 # Usare i criteri per proteggere i PC Windows che eseguono il software client di Intune
 
-Microsoft Intune offre tre criteri che è possibile usare per garantire la sicurezza dei PC Windows quando sono gestiti dal [software client di Intune](manage-windows-pcs-with-microsoft-intune.md). 
+Microsoft Intune offre tre criteri che è possibile usare per garantire la sicurezza dei PC Windows gestiti dal [software client di Intune](manage-windows-pcs-with-microsoft-intune.md).
 
 
 ## Aggiornamenti software
@@ -30,11 +30,11 @@ Intune consente di [mantenere aggiornati i PC Windows gestiti](keep-windows-pcs-
 
 ## Windows Firewall
 
-Windows Firewall consente di mantenere lontani pirati informatici, malware e altre minacce dai PC Windows. Intune consente di [gestire le impostazioni e le funzionalità di Windows Firewall](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) su tutti i PC gestiti.
+Windows Firewall consente di mantenere lontani pirati informatici, malware e altre minacce dai PC Windows. Intune consente di [gestire le impostazioni e le funzionalità di Windows Firewall](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) in tutti i PC gestiti.
 
 ## Endpoint Protection
 
-Come amministratore IT, [mantenere i PC Windows gestiti privi di virus e malware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) è una delle priorità più importanti. Intune integra Endpoint Protection per fornire una protezione in tempo reale contro le minacce malware, per mantenere le definizioni malware aggiornate e per analizzare automaticamente i computer. Endpoint Protection fornisce inoltre strumenti che consentono di gestire e monitorare gli attacchi malware.
+Come amministratore IT, [mantenere i PC Windows gestiti privi di virus e malware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) è una delle priorità più importanti. Intune integra Endpoint Protection per fornire una protezione in tempo reale contro le minacce malware, per mantenere le definizioni malware aggiornate e per analizzare automaticamente i computer. Endpoint Protection offre anche strumenti che consentono di gestire e monitorare gli attacchi malware.
 
 
 
@@ -43,7 +43,6 @@ Come amministratore IT, [mantenere i PC Windows gestiti privi di virus e malware
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

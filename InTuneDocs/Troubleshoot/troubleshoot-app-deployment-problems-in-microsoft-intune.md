@@ -2,7 +2,7 @@
 title: Risorse che consentono di risolvere i problemi di distribuzione dell'app in Microsoft Intune | Microsoft Intune
 description: Questo argomento consente di risolvere i problemi di distribuzione dell'app in Microsoft Intune.
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,29 +13,24 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
+ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 
 
 ---
 
 # Risorse che consentono di risolvere i problemi di distribuzione dell'app in Microsoft Intune
-Questo argomento consente di risolvere i problemi di distribuzione dell'app in Microsoft Intune.
+Se si verificano problemi durante la distribuzione e la gestione di app con Intune, iniziare da qui. Questo argomento descrive alcuni problemi comuni e le relative soluzioni.
 
-Se queste informazioni non consentono di risolvere il problema, vedere [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md) per trovare altri modi per ottenere assistenza.
+## Problemi comuni relativi alla distribuzione delle app
 
+### Gli utenti non riescono ad accedere al portale aziendale di Intune
 
-## Problemi di distribuzione dell'app più comuni
+1.  Verificare l'account utente esista e che sia abilitato nel [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-### Se non è possibile accedere al portale aziendale di Microsoft Intune
+3.  Nel [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) verificare che il nome utente immesso per accedere a Intune sia corretto e che abbia il formato: **nome@dominio.com**. Se l'utente sta immettendo una password errata, chiedergli di reimpostarla.
 
-1.  Verificare se l'account è esistente o disabilitato nel [Portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-2.  Verificare che sia stato eseguito il provisioning del proprio account nel [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  Nel [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) verificare che il nome utente e la password siano corretti per accedere a Intune e che siano nel formato: **nome@dominio.com**.
-
-### Se le informazioni di Contatta l'IT non sono presenti nel Portale aziendale
+### Le informazioni di Contatta l'IT non sono presenti nel portale aziendale
 
 1.  Nella console di amministrazione di Intune fare clic su **Amministrazione** &gt; **Portale aziendale**.
 
@@ -105,6 +100,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

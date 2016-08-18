@@ -3,8 +3,8 @@ title: Uso del dispositivo iOS o Mac OS X con Intune | Microsoft Intune
 description: "Elenco di collegamenti alle attività che è possibile eseguire sul dispositivo mobile iOS o Mac OS X quando viene registrato in Intune"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 6c3d8b3a64d98357b7aac2a9f000ca33125c1858
+ms.sourcegitcommit: 5c11b33ef2986ef3a88823c34900663a7f8195ac
+ms.openlocfilehash: d40620c3b4384e178af9c84bae85bcb09b4ffeee
 
 
 ---
 
-# Using your iOS or Mac OS X device with Intune
+# Uso del dispositivo iOS o Mac OS con Intune
 
-I passaggi seguenti illustrano le attività da eseguire nel dispositivo iOS o Mac OS X quando l'azienda usa Microsoft Intune.
+Questo articolo contiene collegamenti a tutte le attività che gli utenti finali possono eseguire sui dispositivi gestiti da Intune. Gli amministratori IT possono usare queste informazioni per vedere i passaggi che seguono gli utenti per svolgere un'ampia gamma di attività, raggruppate in categorie: 
+- Installazione dell'app Portale aziendale e registrazione in Intune 
+- Attività di gestione di post-registrazione
+- Problemi di conformità
 
 ## Installazione dell'app Portale aziendale e registrazione in Intune
 
-Le informazioni contenute in questa sezione consentono di installare il Portale aziendale di Intune e di registrare dispositivi iOS.
+Le informazioni contenute in questa sezione consentono di installare il portale aziendale di Intune e di registrare dispositivi iOS.
 
 - [Installare e accedere all'app Portale aziendale di Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Registrare il dispositivo iOS in Intune](enroll-your-device-in-intune-ios.md)
@@ -48,7 +51,7 @@ Le informazioni contenute in questa sezione illustrano le azioni che è possibil
 
 ## Risoluzione dei problemi relativi al dispositivo
 
-Le informazioni contenute in questa sezione consentono la risoluzione di problemi che si potrebbero verificare quando il dispositivo iOS viene registrato in Intune.
+Le informazioni contenute in questa sezione consentono di risolvere i problemi che si potrebbero verificare quando il dispositivo iOS viene registrato in Intune.
 
 - [Procedura: Riconnettere un dispositivo iOS compromesso](how-to-reconnect-a-compromised-ios-device.md)
 - [Send errors to your IT admin (Inviare gli errori all'amministratore IT)](send-errors-to-your-it-admin-ios.md)
@@ -61,8 +64,6 @@ Le informazioni contenute in questa sezione consentono la risoluzione di problem
 
 
 
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 
