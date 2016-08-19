@@ -75,16 +75,16 @@ Usare i **criteri di configurazione generale** di Microsoft Intune per Windows 1
 
 |Nome impostazione|Dettagli|
 |----------------|----------------------|
-|**Consenti browser Web**|Consente l'uso del browser Web Edge sul dispositivo.<br>(Solo Windows 10 Mobile)|
+|**Consenti browser Web**|Consente l’uso del browser Web Microsoft Edge sul dispositivo.<br>(Solo Windows 10 Mobile)|
 |**Consenti suggerimenti di ricerca nella barra degli indirizzi**|Consente al motore di ricerca di suggerire siti mentre si digita la frase di ricerca.|
 |**Consenti l'invio di traffico Intranet a Internet Explorer**|Consente agli utenti di aprire siti Web sulla Intranet in Internet Explorer.<br>(Solo Windows 10 Desktop)|
-|**Consenti Do Not Track**|Configura il browser Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.|
+|**Consenti Do Not Track**|Configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.|
 |**Attiva SmartScreen**|Abilita l'impostazione SmartScreen del browser sui dispositivi.|
-|**Consenti scripting**|Consente di eseguire script, ad esempio JavaScript, nel browser Edge.|
+|**Consenti scripting**|Consente di eseguire script, ad esempio JavaScript, nel browser Microsoft Edge.|
 |**Consenti popup**|Attiva o disattiva il blocco popup del browser.<br>(Solo Windows 10 Desktop)|
 |**Consenti cookie**|Consente o disattiva i cookie.|
 |**Consenti riempimento automatico**|Consente all'utente di modificare le impostazioni di completamento automatico nel browser.<br>(Solo Windows 10 Desktop)|
-|**Consenti strumento per la gestione delle password**|Abilita o disabilita la funzione di gestione password di Edge.|
+|**Consenti strumento per la gestione delle password**|Abilita o disabilita la funzione di gestione password di Microsoft Edge.|
 |**Posizione elenco siti modalità Enterprise**|Specifica dove trovare l'elenco di siti Web che verranno aperti in modalità Enterprise. L'elenco non è modificabile dagli utenti.<br>(Solo Windows 10 Desktop)|
 
 ## - App
@@ -308,7 +308,7 @@ Tutti i dispositivi devono essere registrati con Intune per poter usare i criter
 |---------------|------------|-----------|
 |**Allow Browser**<br>(solo Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Browser/AllowBrowser<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0**: l'esplorazione è disattivata<br>**1**: l'esplorazione è attivata (impostazione predefinita)|
 |**AllowSearchSuggestionsinAddressBar**<br>(Desktop e Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Browser/AllowSearchSuggestionsinAddressBar<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0**: non visualizza i suggerimenti di ricerca<br>**1**: visualizza i suggerimenti di ricerca (impostazione predefinita)|
-|**SendIntranetTraffictoInternetExplorer**<br>(solo Desktop)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0**: disabilitato, apre i siti Intranet nel browser Edge (impostazione predefinita)<br>**1**: abilitato, apre i siti Intranet in Internet Explorer.|
+|**SendIntranetTraffictoInternetExplorer**<br>(solo Desktop)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Browser/SendIntranetTraffictoInternetExplorer<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0**:  disabilitato, apre i siti Intranet nel browser Microsoft Edge (impostazione predefinita)<br>**1**: abilitato, apre i siti Intranet in Internet Explorer.|
 |**Allow Do Not Track**<br>(Desktop e Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Browser/AllowDoNotTrack<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0**: disabilitato, DNT non inviato (impostazione predefinita)<br>**1**: abilitato, DNT inviato|
 |**Configure SmartScreen**<br>(Desktop e Mobile)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Browser/AllowSmartScreen<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0**: non consentito<br>**1**: consentito (impostazione predefinita)|
 |**Allow Pop-ups**<br>(solo Desktop)|**Percorso URI completo:** ./Vendor/MSFT/Policy/Config/Browser/AllowPopups<br /><br />**Tipo di dati:** Integer<br /><br />**Valori consentiti:**<br>**0**: blocca i popup (impostazione predefinita)<br>**1**: consente i popup|
