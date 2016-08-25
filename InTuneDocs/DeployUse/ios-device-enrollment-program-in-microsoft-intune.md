@@ -13,8 +13,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
-ms.openlocfilehash: c63badfcbc736476f17b39e09ef189eb4d2c08ef
+ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
+ms.openlocfilehash: affcca7ea406ea8a9d60f29add4385998b0ae29d
 
 
 ---
@@ -99,13 +99,13 @@ Per registrare i dispositivi iOS di proprietà dell'azienda con DEP, è necessar
 
 ## Modifiche alle assegnazioni di gruppo di Intune
 
-A partire dal mese di settembre la gestione dei gruppi di dispositivi passerà ad Azure Active Directory. Dopo la transizione ai gruppi di Azure Active Directory le assegnazioni di gruppo non saranno più incluse nelle opzioni del **profilo di registrazione aziendale**. Poiché questa modifica verrà implementata nel corso di diversi mesi, potrebbe non essere visibile immediatamente. È possibile definire l'assegnazione di gruppi di dispositivi dinamici in Azure Active Directory in base al nome del profilo di registrazione aziendale. Questo processo assicura che i dispositivi pre-assegnati a un gruppo di dispositivi verranno registrati automaticamente in tale gruppo con le app e i criteri distribuiti. [Altre informazioni sui gruppi di Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+A partire dal mese di ottobre la gestione dei gruppi di dispositivi passerà ad Azure Active Directory. Dopo la transizione ai gruppi di Azure Active Directory le assegnazioni di gruppo non saranno più incluse nelle opzioni del **profilo di registrazione aziendale**. Poiché questa modifica verrà implementata nel corso di diversi mesi, potrebbe non essere visibile immediatamente. Dopo il passaggio al nuovo portale, è possibile definire le assegnazioni di gruppi di dispositivi dinamici in base ai nomi dei profili di registrazione aziendali. Questo processo assicura che i dispositivi pre-assegnati a un gruppo di dispositivi verranno registrati automaticamente in tale gruppo con le app e i criteri distribuiti. [Altre informazioni sui gruppi di Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### Vedere anche
 [Prepararsi alla registrazione dei dispositivi](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

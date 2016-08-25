@@ -3,18 +3,18 @@ title: Configurazioni personalizzate per i profili VPN | Microsoft Intune
 description: Usare configurazioni personalizzate per creare profili VPN in Intune.
 keywords: 
 author: Nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: b61a4c90cfed9922df151a6c1ac93e276db18623
+ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
+ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
 
 
 ---
@@ -24,28 +24,28 @@ ms.openlocfilehash: b61a4c90cfed9922df151a6c1ac93e276db18623
 ## Creare una configurazione personalizzata
 È possibile usare configurazioni personalizzate per creare profili VPN in Intune. Per creare una configurazione personalizzata:
 
-   1. Nella console di amministrazione di Intune scegliere **Criteri** -> **Aggiungi criterio** -> *<Expand platform>* -> **Configurazione personalizzata** -> **Crea criterio**.
+   1. Nella console di amministrazione di Intune scegliere **Criteri** > **Aggiungi criterio** > *<Expand platform>* > **Configurazione personalizzata** > **Crea criterio**.
    2. Specificare un nome per il criterio.
-   3. Per ogni impostazione URI, fare clic su **Aggiungi** e specificare le informazioni richieste. Ad esempio:
+   3. Per ogni impostazione URI scegliere **Aggiungi** e specificare le informazioni richieste. Ad esempio:
 
    ![Finestra di dialogo Configurazione personalizzata per il profilo VPN](./media/Intune_Add_VPN_URI.png)
 
-   4.  Dopo aver immesso tutte le impostazioni URI, fare clic su **Salva criterio**, quindi distribuire i criteri.
+   4.  Dopo aver immesso tutte le impostazioni URI, scegliere **Salva criterio** e quindi distribuire i criteri.
 
 ## Distribuire un criterio di configurazione
 
-1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi fare clic su **Gestisci distribuzione**.
+1.  Nell'area di lavoro **Criteri** scegliere il criterio che si vuole distribuire e quindi fare clic su **Gestisci distribuzione**.
 
 2.  Nella finestra di dialogo **Gestisci distribuzione** :
 
-    -   **Per distribuire il criterio**: selezionare uno o più gruppi in cui si vuole distribuire il criterio, quindi fare clic su **Aggiungi** &gt; **OK**.
+    -   **Per distribuire il criterio**: scegliere uno o più gruppi a cui si vuole distribuire il criterio e quindi fare clic su **Aggiungi** &gt; **OK**.
 
-    -   **Per chiudere la finestra di dialogo senza distribuire il criterio**, fare clic su **Annulla**.
+    -   **Per chiudere la finestra di dialogo senza distribuirlo**, scegliere **Annulla**.
 
-Quando si seleziona un criterio distribuito, è possibile visualizzare altre informazioni sulla distribuzione nella parte inferiore dell'elenco di criteri.
+Quando si sceglie un criterio distribuito, è possibile visualizzare altre informazioni sulla distribuzione nella parte inferiore dell'elenco dei criteri.
 
 ##Esempio di impostazioni URI per la configurazione personalizzata di un profilo VPN
-Di seguito sono riportate voci di esempio per valori URI, per la creazione di una configurazione personalizzata in una VPN di un'azienda fittizia denominata Contoso. Per altre informazioni quali il tipo di dati per ogni voce, vedere [CSP (Configuration Service Provider) VPNv2](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)
+Di seguito sono riportate voci di esempio per valori URI, per la creazione di una configurazione personalizzata in una VPN di un'azienda fittizia denominata Contoso. Per altre informazioni, quali il tipo di dati per ogni voce, vedere [CSP (Configuration Service Provider) VPNv2](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 VPN nativa di Contoso (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -83,22 +83,22 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-Per eventuali domande su come usare queste impostazioni o per altre informazioni sulla loro funzione, i clienti possono fare riferimento alla documentazione CSP (Configuration Service Provider): https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
+Per eventuali domande su come usare queste impostazioni o per altre informazioni sulla loro funzione, i clienti possono fare riferimento alla documentazione CSP (Configuration Service Provider): https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## Impostazioni URI per VPN Android per singole app in PulseSecure
-### URI PERSONALIZZATO PER L'ELENCO PACCHETTI 
+### URI PERSONALIZZATO PER L'ELENCO PACCHETTI
 -  Tipo di dati = stringa
--  URI OMA = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList 
+-  URI OMA = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
 -  Valore = elenco di pacchetti separati da delimitatore.
    - Delimitatori: punto e virgola (;), due punti (:), virgola (,), barra verticale (|)
 
-Esempi: 
+Esempi:
 - com.Android.Chrome
 - com.android.chrome;com.android.browser
 
 ### URI PERSONALIZZATO PER LA MODALITÀ (FACOLTATIVO)
 - Tipo di dati = stringa
-- URI OMA = ./Vendor/MSFT/VPN/Profile/NAME/Mode 
+- URI OMA = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
 > Note
 > - Usare lo stesso *nome* assegnato al profilo personalizzato
@@ -112,6 +112,6 @@ Esempi:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

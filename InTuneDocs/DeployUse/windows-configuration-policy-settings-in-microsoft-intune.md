@@ -13,14 +13,14 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 809c8dc87e9b7c2f27e8015a55606e376c5319ab
+ms.sourcegitcommit: 7fdfe64a18fe359ee4b3b4507ef4108ad65ab573
+ms.openlocfilehash: 3102e4637c61bbae002fb30947acd1f82204ac93
 
 
 ---
 
 # Impostazioni dei criteri di Windows in Microsoft Intune
-Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versioni successive)** di Microsoft Intune per configurare le impostazioni seguenti per i dispositivi Windows 8 e Windows 8.1 registrati:
+Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versione successiva)** di Microsoft Intune per configurare le impostazioni seguenti per i dispositivi Windows 8 e Windows 8.1 registrati:
 
 ## Impostazioni di applicabilità
 
@@ -32,16 +32,16 @@ Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versioni 
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Tipo di password richiesto**|Specifica il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.|Sì|Sì|
-|**Tipo di password richiesto - Numero minimo di set di caratteri**|Sono disponibili quattro set di caratteri, lettere minuscole, lettere maiuscole, numeri e simboli. L'impostazione specifica quanti set di caratteri diversi è necessario includere nella password. Per i dispositivi iOS specifica invece il numero di simboli che è necessario includere nella password.|sì|sì|
-|**Lunghezza minima password**<sup>1</sup>|Configura la lunghezza minima richiesta (in caratteri) per la password nei dispositivi.|Sì|Sì|
-|**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|Cancella il dispositivo se l'accesso non riesce per il numero di volte indicato.|Sì|Sì|
-|**Minuti di inattività prima dello spegnimento dello schermo**|Scegliere il numero di minuti per cui un dispositivo deve rimanere inattivo prima che sia necessaria una password per sbloccarlo.| Sì|Sì|
+|**Tipo di password richiesto**|Specifica il tipo di password richiesto, ad esempio alfanumerico o solo numerico.|sì|Sì|
+|**Tipo di password richiesto - Numero minimo di set di caratteri**|Specifica quanti set di caratteri diversi è necessario includere nella password. Sono disponibili quattro set di caratteri, lettere minuscole, lettere maiuscole, numeri e simboli. Per i dispositivi iOS, questa impostazione specifica invece il numero di simboli che è necessario includere nella password.|sì|sì|
+|**Lunghezza minima password**<sup>1</sup>|Configura la lunghezza minima richiesta (in caratteri) della password.|sì|Sì|
+|**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|Cancella il dispositivo dopo il numero di tentativi di accesso non riusciti specificato.|sì|Sì|
+|**Minuti di inattività prima dello spegnimento dello schermo**|Specifica il numero di minuti per cui un dispositivo deve rimanere inattivo prima che sia necessaria una password per sbloccarlo.| sì|Sì|
 |**Scadenza password (giorni)**|Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.|Sì|Sì|
 |**Ricorda cronologia password**|Specifica se l'utente può configurare password usate in precedenza.|Sì|Sì|
 |**Ricorda cronologia password** – **Impedisci riutilizzo delle password precedenti**|Specifica il numero di password usate in precedenza che il dispositivo deve ricordare.|Sì|Sì|
-|**Consenti password grafica e PIN**|Consente l'uso di una password grafica e PIN nel dispositivo. Una password grafica consente all'utente di eseguire l'accesso mediante movimenti su un'immagine. Un PIN consente all'utente di eseguire l'accesso velocemente con un codice di 4 cifre.|Sì|Sì|
-<sup>1</sup> Quando si imposta la distribuzione di un criterio relativo alla lunghezza della password per dispositivi che eseguono Windows RT, gli utenti saranno costretti a reimpostare la password, anche se la password corrente è conforme ai requisiti dei criteri.
+|**Consenti password grafica e PIN**|Consente l'uso di una password grafica e del PIN. Una password grafica consente all'utente di accedere mediante movimenti su un'immagine. Un PIN consente all'utente di eseguire velocemente l'accesso con un codice di 4 cifre.|sì|sì|
+<sup>1</sup> Quando si distribuisce un criterio relativo alla lunghezza della password per dispositivi che eseguono Windows RT, gli utenti saranno costretti a reimpostare la password, anche se la password corrente è conforme ai requisiti dei criteri.
 
 ## Impostazioni di crittografia
 
@@ -52,65 +52,65 @@ Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versioni 
 
 -   Per applicare la crittografia su dispositivi che eseguono Windows 8.1, è necessario installare il [dicembre 2014 MDM aggiornamento del client per Windows](http://support.microsoft.com/kb/3013816) su ogni dispositivo.
 
--   Se si abilita questa impostazione per i dispositivi Windows 8.1, tutti gli utenti del dispositivo devono avere un Account Microsoft.
+-   Se si abilita questa impostazione per i dispositivi Windows 8.1, tutti gli utenti del dispositivo devono avere un account Microsoft.
 
 -   Per la crittografia funzioni, il dispositivo deve soddisfare Microsoft [InstantGo](http://blogs.windows.com/bloggingwindows/2014/06/19/instantgo-a-better-way-to-sleep/) requisiti di certificazione hardware.
 
--   Quando si applica la crittografia in un dispositivo, la chiave di ripristino è accessibile solo da utenti Account Microsoft, accessibili dal proprio account OneDrive. È possibile ripristinare la chiave per conto dell'utente.
+-   Quando si applica la crittografia in un dispositivo, è possibile visualizzare la chiave di ripristino solo dall'account Microsoft dell'utente, a cui è possibile accedere dall'account OneDrive di quest'ultimo. È possibile ripristinare la chiave per conto dell'utente.
 
 ## Impostazioni per il malware
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Richiedi firewall di rete**|Richiedere che Windows Firewall sia attivato.|Sì|No|
-|**Attiva SmartScreen**|Richiedere l'uso di Windows SmartScreen nei dispositivi.|Sì|No|
+|**Richiedi firewall di rete**|È necessario che Windows Firewall sia attivato.|sì|No|
+|**Attiva SmartScreen**|Richiede l'uso di Windows SmartScreen nei dispositivi.|sì|No|
 
 ## Impostazioni di sistema
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Richiedi aggiornamenti automatici**|Attivare l'impostazione per gli aggiornamenti automatici nei dispositivi.|Sì|No|
-|**Richiedi aggiornamenti automatici: classificazione minima degli aggiornamenti per l'installazione automatico.**|Scegliere la classificazione degli aggiornamenti verrà installato automaticamente:<br /><br />-   **Importante**: installa tutti gli aggiornamenti classificati come importanti.<br />-   **Consigliato**: installa tutti gli aggiornamenti classificati come importanti o consigliati.|Sì|No|
-|**Controllo dell'account utente**|Richiedere l'uso di Controllo dell'account utente nei dispositivi.|Sì|No|
-|**Consenti invio dati di diagnostica**|Consentire al dispositivo di inviare informazioni di diagnostica a Microsoft.|Sì|No|
+|**Richiedi aggiornamenti automatici**|Attiva l'impostazione per gli aggiornamenti automatici nei dispositivi.|sì|No|
+|**Richiedi aggiornamenti automatici: classificazione minima degli aggiornamenti per l'installazione automatico.**|Consente di scegliere la classificazione degli aggiornamenti che verranno installati automaticamente:<br /><br />-   **Importante**: installa tutti gli aggiornamenti classificati come importanti.<br />-   **Consigliato**: installa tutti gli aggiornamenti classificati come importanti o consigliati.|sì|No|
+|**Controllo dell'account utente**|Richiede l'uso di Controllo dell'account utente nei dispositivi.|sì|No|
+|**Consenti invio dati di diagnostica**|Consente al dispositivo di inviare informazioni di diagnostica a Microsoft.|sì|No|
 
 
 ## Impostazioni cloud - Documenti e dati
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**URL cartelle di lavoro**|Imposta l'URL della cartella di lavoro per consentire la sincronizzazione dei documenti tra i dispositivi|Sì|No|
+|**URL cartelle di lavoro**|Imposta l'URL della cartella di lavoro per consentire la sincronizzazione dei documenti tra i dispositivi.|sì|No|
 
 ## Impostazioni di posta elettronica
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Rendi l'account Microsoft facoltativo nell'applicazione Windows Mail**|Consente di accedere all'applicazione Windows Mail senza disporre di un account Microsoft.|Sì|No|
+|**Rendi l'account Microsoft facoltativo nell'applicazione Windows Mail**|Consente di accedere all'applicazione Windows Mail senza disporre di un account Microsoft.|sì|No|
 
 ## Impostazioni dell'applicazione - Browser
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Consenti riempimento automatico**|L’utente può modificare le impostazioni di completamento automatico nel browser.|Sì|No|
+|**Consenti riempimento automatico**|Consente agli utenti di modificare le impostazioni di completamento automatico nel browser.|sì|No|
 |**Consenti blocco popup**|Attiva o disattiva il blocco popup del browser.|Sì|No|
-|**Consenti plug-in**|L’utente può aggiungere plug-in a Internet Explorer.|sì|No|
-|**Consenti scripting**|Il browser può eseguire script, ad esempio gli script ActiveX.|Sì|No|
-|**Consenti avviso illeciti**|Attiva o disattiva gli avvisi di potenziali siti Web fraudolenti.|Sì|No|
-|**Consenti immissione di una singola parola nel sito Intranet**|Consente l'uso di una singola parola per reindirizzare Internet Explorer e un sito Web, ad esempio Bing.|Sì|No|
+|**Consenti plug-in**|Consente agli utenti di aggiungere plug-in a Internet Explorer.|sì|No|
+|**Consenti scripting**|Consente al browser di eseguire script, ad esempio script di Active X.|sì|No|
+|**Consenti avviso illeciti**|Attiva o disattiva gli avvisi di potenziali siti Web fraudolenti.|sì|No|
+|**Consenti immissione di una singola parola nel sito Intranet**|Consente l'uso di una singola parola per reindirizzare Internet Explorer e un sito Web, ad esempio Bing.|sì|No|
 |**Consenti rilevamento automatico della rete Intranet**|Aiuta a configurare la sicurezza dei siti Intranet in Internet Explorer.|sì|No|
-|**Livello di protezione per Internet**|Impostare il livello di protezione di Internet Explorer per i siti Internet.|Sì|No|
-|**Livello di protezione per Intranet**|Impostare il livello di protezione di Internet Explorer per i siti Intranet.|sì|No|
-|**Livello di protezione per siti attendibili**|Configurare il livello di protezione per l'area siti attendibili.|Sì|No|
-|**Livello di protezione per siti con restrizioni**|Configurare il livello di protezione per l'area siti con restrizioni.|sì|No|
-|**Invia l'intestazione DNT (Do Not Track)**|In Internet Explorer inviare un'intestazione DNT (Do Not Track) ai siti visitati.|Sì|No|
-|**Consenti accesso menu modalità Enterprise**|Consente agli utenti di accedere alle opzioni di menu della modalità Enterprise da Internet Explorer.<br>Se l'opzione è selezionata, è possibile anche specificare una **Posizione report di registrazione** contenente un URL a un report che mostra i siti Web per cui gli utenti hanno attivato l'accesso in modalità Enterprise.|sì|No|
-|**Posizione elenco siti modalità Enterprise**|Specificare il percorso dell'elenco di siti Web che useranno la modalità Enterprise quando è attiva.|Sì|No|
+|**Livello di protezione per Internet**|Consente di impostare il livello di sicurezza di Internet Explorer per i siti Internet.|sì|No|
+|**Livello di protezione per Intranet**|Consente di impostare il livello di sicurezza di Internet Explorer per i siti Intranet.|sì|No|
+|**Livello di protezione per siti attendibili**|Configura il livello di sicurezza per l'area siti attendibili.|sì|No|
+|**Livello di protezione per siti con restrizioni**|Configura il livello di sicurezza per l'area siti con restrizioni.|sì|No|
+|**Invia l'intestazione DNT (Do Not Track)**|Invia un'intestazione DNT (Do Not Track) ai siti visitati in Internet Explorer.|sì|No|
+|**Consenti accesso menu modalità Enterprise**|Consente agli utenti di accedere alle opzioni di menu della modalità Enterprise da Internet Explorer.<br>Se si seleziona questa opzione, è possibile anche specificare una **Posizione report di registrazione** contenente un URL a un report che mostra i siti Web per cui gli utenti hanno attivato l'accesso in modalità Enterprise.|sì|No|
+|**Posizione elenco siti modalità Enterprise**|Specifica il percorso dell'elenco di siti Web che useranno la modalità Enterprise quando è attiva.|sì|No|
 
 ## Impostazioni delle funzionalità del dispositivo - Cellulare
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
 |----------------|----------------------------------|--------------|
-|**Consenti dati in roaming**|Consentire il roaming dei dati quando il dispositivo si trova su una rete cellulare.|Sì|No|
+|**Consenti dati in roaming**|Abilita il roaming dati quando il dispositivo si trova in una rete cellulare.|sì|No|
 
 
 
@@ -119,7 +119,6 @@ Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versioni 
 
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

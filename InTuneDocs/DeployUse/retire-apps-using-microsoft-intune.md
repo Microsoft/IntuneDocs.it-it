@@ -13,15 +13,15 @@ ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: fca1e1becb36bec2310c905ea8f65263c303b2c2
+ms.sourcegitcommit: 06f5c027a73f0980c62310a24c038d8629aefd49
+ms.openlocfilehash: 81edb231be0cfd31fd39c031ef0d13240f9e7cf7
 
 
 ---
 
 # Ritirare le app con Microsoft Intune
 
-Per ritirare un'app, è sufficiente disinstallarla. Quando si distribuiscono e si gestiscono le app con Intune, il processo di disinstallazione dell'app è uguale sia per dispositivi mobili che per PC Windows. Per il corretto completamento di questa procedura l'app deve supportare la disinstallazione.
+Per ritirare un'app, è sufficiente disinstallarla. Quando si distribuiscono e si gestiscono le app con Intune, il processo di disinstallazione dell'app è uguale sia per dispositivi mobili che per PC Windows. Per il corretto completamento di questa procedura, l'app deve supportare il processo di disinstallazione.
 
 ## Disinstallare un'app
 
@@ -38,6 +38,6 @@ L'app verrà disinstallata la volta successiva che il dispositivo o il computer 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

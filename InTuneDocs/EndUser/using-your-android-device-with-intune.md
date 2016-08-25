@@ -3,8 +3,8 @@ title: Uso del dispositivo Android con Intune | Microsoft Intune
 description: "Elenco di collegamenti alle attività che è possibile eseguire sul dispositivo mobile Android quando viene registrato in Intune"
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 
 ---
@@ -22,7 +22,11 @@ ms.openlocfilehash: e0ff9b0b1c31e0037f34e223ff26c2b111c5a0aa
 
 # Uso del dispositivo Android con Intune
 
-I passaggi seguenti illustrano le attività da eseguire nel dispositivo Android quando l'azienda usa Microsoft Intune.
+Questo articolo contiene collegamenti a tutte le attività che gli utenti finali possono eseguire sui dispositivi gestiti da Intune. Gli amministratori IT possono usare queste informazioni per vedere i passaggi che seguono gli utenti per svolgere un'ampia gamma di attività, raggruppate in categorie: 
+
+- Installazione dell'app Portale aziendale e registrazione in Intune 
+- Attività di gestione di post-registrazione
+- Problemi di conformità
 
 ## Installazione dell'app Portale aziendale e registrazione in Intune
 
@@ -67,9 +71,6 @@ Le informazioni contenute in questa sezione consentono di risolvere i problemi c
 
 
 
-
-
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

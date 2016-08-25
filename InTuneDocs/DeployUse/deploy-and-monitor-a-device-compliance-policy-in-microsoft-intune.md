@@ -13,21 +13,21 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
+ms.sourcegitcommit: 711e650086d7528f26d9ba7b447ecb0185faff23
+ms.openlocfilehash: 8658df1fb9932fb2cab984a13557aad684569df5
 
 
 ---
 
 # Distribuire e monitorare i criteri di conformità di un dispositivo in Microsoft Intune
 ## Distribuire i criteri di conformità
-Distribuire i criteri di conformità [creati](create-a-device-compliance-policy-in-microsoft-intune.md) a uno o più gruppi di utenti o dispositivi nella propria organizzazione.
+Distribuire i criteri di conformità [creati](create-a-device-compliance-policy-in-microsoft-intune.md) a uno o più gruppi di utenti nell'organizzazione. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata sui dispositivi dell’utente.
 
 1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi scegliere **Gestisci distribuzione**.
 ![Schermata della pagina dei criteri di conformità con l'opzione di menu Gestisci distribuzione nella parte superiore](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  Nella finestra di dialogo **Gestisci distribuzione** selezionare uno o più gruppi in cui si vuole distribuire il criterio, quindi scegliere **Aggiungi > OK**.
-![Schermata della finestra di dialogo Gestisci distribuzione](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png). È possibile distribuire i criteri di conformità per gli utenti e/o i dispositivi. Usare i gruppi di Active Directory che sono già stati creati e sincronizzati con Intune oppure creare manualmente questi gruppi nella console di Intune. Per altre informazioni su come distribuire i criteri, vedere [Deploy a configuration policy](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Distribuire un criterio di configurazione).
+![Schermata della finestra di dialogo Gestisci distribuzione](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png). È possibile distribuire criteri di conformità agli utenti. Usare i gruppi di Active Directory che sono già stati creati e sincronizzati con Intune oppure creare manualmente questi gruppi nella console di Intune. Per altre informazioni su come distribuire i criteri, vedere [Deploy a configuration policy](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Distribuire un criterio di configurazione).
 
 Usare il riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** dell'area di lavoro **Criteri** per identificare i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene inoltre visualizzato nell'area di lavoro **Dashboard** .
 
@@ -64,7 +64,7 @@ Possono verificarsi conflitti se vengono applicati più criteri di Intune a un d
 ## Passaggi successivi
 È ora possibile usare i criteri di conformità con i criteri di accesso condizionale per controllare l'accesso ai servizi nell'organizzazione.
 
-[Limitare l'accesso alla posta elettronica e ai servizi di Office 365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[Restrict access to email and O365 services (Limitare l'accesso alla posta elettronica e ai servizi di Office 365)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 ### Vedere anche
@@ -72,6 +72,6 @@ Possono verificarsi conflitti se vengono applicati più criteri di Intune a un d
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

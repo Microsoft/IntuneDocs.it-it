@@ -3,8 +3,8 @@ title: Reimpostare il passcode del dispositivo dal sito Web del portale aziendal
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
+ms.sourcegitcommit: fd74fcdb26827b94d894b28d9d7f48e62420b14a
+ms.openlocfilehash: 8f7b33a7e3cf73caee62eaa696fed8b7f65f28dc
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 20121bca1075d40d43e8bba371212d03edd06945
 
 Se il PIN o la password di un dispositivo registrati in Intune viene smarrita, è possibile usare il [sito Web del portale aziendale](http://portal.manage.microsoft.com) per reimpostarla. Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati in Intune e per svolgere la maggior parte delle attività eseguibili tramite l'app Portale aziendale.
 
-> [!NOTE] 
+> [!NOTE]
 > È possibile che il pulsante Reimposta passcode non venga visualizzato nel sito Web del portale aziendale. Ciò dipende da come l'amministratore IT ha configurato Intune. La reimpostazione del passcode non è supportato nei dispositivi Windows 8.1 e Windows RT.
 
 Per reimpostare il passcode:
@@ -34,7 +34,7 @@ Per reimpostare il passcode:
 
 2.  Toccare **Reimposta passcode**.
 
-    ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
+    ![resetp-passcode-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  Toccare **Disconnetti** e quindi accedere con le credenziali aziendali o dell'istituto di istruzione. È necessario eseguire l'accesso entro cinque minuti.
 
@@ -64,6 +64,7 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 [Uso del sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO3-->
 
 

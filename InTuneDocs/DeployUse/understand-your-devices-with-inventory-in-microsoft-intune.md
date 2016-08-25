@@ -1,10 +1,10 @@
 ---
 title: Informazioni sui dispositivi con inventario | Microsoft Intune
-description: uso di Intune per visualizzare informazioni sull'hardware dei dispositivi gestiti.
+description: Usare Intune per visualizzare informazioni sull'hardware dei dispositivi gestiti.
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/13/2016
+manager: angrobe
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 669e096735ae7123123873dad8982abf2c4c38d6
+ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
+ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
 
 
 ---
@@ -42,10 +42,10 @@ Per visualizzare l'inventario raccolto dai dispositivi mobili, eseguire i [Repor
 |**ID Exchange ActiveSync**|Tutti i dispositivi|
 |**Dispositivo jailbroken o rooted**|Solo dispositivi iOS e Android|
 |**ID univoco del dispositivo**|Tutti i dispositivi eccetto Exchange ActiveSync|
-|**Numero di serie**|Dispositivi iOS, Mac OS X, Android, Windows 8.1, Windows 10|
-|**Spazio di archiviazione totale**|Dispositivi iOS, Mac OS X, Windows 8.1, Windows 10|
-|**Spazio di archiviazione disponibile**|Dispositivi iOS, Mac OS X, Windows 8.1, Windows 10|
-|**Numero di telefono**<br>I telefoni classificati come "aziendali" sono ora identificati con il loro numero di telefono completo quando, per esempio, si esegue un report inventario dei dispositivi mobili. I numeri di telefono BYOD continuano a essere mascherati con &#42;, mostrando solo le ultime 4 cifre.|Dispositivi iOS, Android e Windows Phone|
+|**Numero di serie**|Dispositivi iOS, Mac OS X, Android, Windows 8.1 e Windows 10|
+|**Spazio di archiviazione totale**|Dispositivi iOS, Mac OS X, Windows 8.1 e Windows 10|
+|**Spazio di archiviazione disponibile**|Dispositivi iOS, Mac OS X, Windows 8.1 e Windows 10|
+|**Numero di telefono**<br>I telefoni classificati come "aziendali" sono ora identificati con il loro numero di telefono completo quando, ad esempio, si esegue un report inventario dei dispositivi mobili. I numeri di telefono BYOD continuano a essere mascherati con &#42;, mostrando solo le ultime quattro cifre.|Dispositivi iOS, Android e Windows Phone|
 |**IMEI**|Dispositivi Exchange ActiveSync, iOS, Android e Windows Phone|
 |**MEID**<br>Identificativo di apparecchiatura mobile|Solo dispositivi iOS|
 |**MAC Wi-Fi**|Tutti i dispositivi eccetto Exchange ActiveSync|
@@ -114,6 +114,6 @@ Per visualizzare l'inventario raccolto dai PC Windows, eseguire [Report inventar
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

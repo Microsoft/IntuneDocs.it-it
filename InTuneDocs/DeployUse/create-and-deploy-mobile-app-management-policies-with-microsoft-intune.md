@@ -13,8 +13,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 1782d200ed26473414fbc40f554c84cb5d017d44
+ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
+ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
 
 
 ---
@@ -28,12 +28,16 @@ In questo argomento viene descritto il processo di creazione di un criterio MAM 
 - Dispositivi non gestiti da nessuna soluzione MDM (BYOD).
 
 >[!IMPORTANT]
+Se si sta usando la **console di amministrazione di Intune** per gestire i dispositivi, tenere presente quanto segue:
 
-> Se si sta usando la **console di amministrazione di Intune** per la gestione dei dispositivi, è possibile creare un criterio MAM che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) stessa.
-I criteri MAM creati nella console di amministrazione di Intune non possono essere importati nel portale di Azure.  Nel portale di Azure i criteri MAM devono essere creati di nuovo.
+> * È possibile creare un criterio MAM che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+> * I criteri MAM creati nella console di amministrazione di Intune non possono essere importati nel portale di Azure.  Nel portale di Azure i criteri MAM devono essere creati di nuovo.
 
+> * È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Il portale di Azure è la nuova console di amministrazione per la creazione dei criteri MAM.
 
-> È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Il portale di Azure è la nuova console di amministrazione per la creazione dei criteri MAM. Se si creano criteri MAM sia nella console di amministrazione di Intune che nel portale di Azure, i criteri di quest'ultimo vengono applicati alle app e distribuiti agli utenti.
+> * Per distribuire app gestite, è necessario creare un criterio MAM nella console di amministrazione di Intune. In questo caso, può essere necessario creare criteri MAM sia nella console di amministrazione di Intune che nel portale di Azure: nella console di amministrazione di Intune per verificare la possibilità di distribuire app gestite, nel portale di Azure perché è la nuova console di amministrazione contenente tutte le impostazioni dei criteri MAM.
+
+> * Se si creano criteri MAM sia nella console di amministrazione di Intune che nel portale di Azure, alle app vengono applicati i criteri creati in quest'ultimo.
 
 Per visualizzare un elenco di impostazioni dei criteri supportate nelle piattaforme iOS e Android, selezionare una delle seguenti voci:
 
@@ -165,6 +169,6 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

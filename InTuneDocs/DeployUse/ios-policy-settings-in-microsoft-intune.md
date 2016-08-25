@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc5ff023b5d29ded999c7e49c5e7c2aee8a23bba
-ms.openlocfilehash: e71cc1e8e2cb0f46507ff63d962f3d477acfb72e
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
 
 
 ---
@@ -233,6 +233,77 @@ Nei dispositivi che eseguono iOS 7.1 e versioni successive in modalità di super
 |**Consenti all'utente di installare profili di configurazione e certificati**|Consente all'utente di installare profili di configurazione e certificati.|
 |**Consenti l'uso dell'app Messages sul dispositivo**|Consenti l'uso dell'app Messages per inviare messaggi di testo.|
 
+### Mostrare o nascondere app
+
+Usare **Elenco di app nascoste e mostrate** per controllare quanto riportato di seguito su dispositivi supervisionati che eseguono iOS 9.3 o versione successiva:
+
+- Specificare un elenco di app nascoste agli utenti. Gli utenti non possono visualizzare o avviare queste app.
+- Specificare un elenco di app che gli utenti possono visualizzare e avviare. Non è possibile visualizzare o avviare altre app.
+
+
+#### Come creare un elenco di app nascoste o mostrate
+
+Specificare le impostazioni seguenti:
+
+|Nome impostazione|Dettagli|
+|-|-|
+|**Elenco di app nascoste e mostrate**|Abilitare questa impostazione se si vuole creare un elenco di app nascoste o mostrate.|
+|**Nascondi le app elencate dagli utenti**|Selezionare questa opzione se si vuole creare un elenco di app che verranno nascoste agli utenti.|
+|**Mostra solo le app elencate agli utenti**|Selezionare questa opzione se si vuole creare un elenco di app visualizzate agli utenti.<br>Quando si crea questo tipo di elenco, tutte le altre app, ad eccezione di **Impostazioni** e **Telefono** (per iPhone), vengono nascoste.<br>È inoltre necessario aggiungere all'elenco il portale aziendale e qualsiasi app distribuita e gestita con Intune.|
+|**Aggiunta**|Aggiunge un'app all'elenco selezionato.<br>Per quanto riguarda l'elenco delle app nascoste, è necessario specificare **Nome**, **Autore** e **URL app o ID bundle** di ciascuna app che si vuole nascondere.<br>Per quanto riguarda l'elenco delle app mostrate, è possibile scegliere l'opzione **Selezionare un'app gestita**, che fornisce un elenco delle app gestite con Intune, oppure scegliere l'opzione Selezionare un'app dello Store. È quindi necessario specificare **Nome**, **Autore** e **URL app o ID bundle** di ciascuna app che si vuole visualizzare.|
+|**Importa app**|Importa un elenco di app specificate in un file con valori delimitati da virgole. Per il file usare il formato nome applicazione, autore, URL.|
+|**Modifica**|Consente di modificare il nome, l'autore e l'URL dell'app selezionata.|
+|**Eliminazione**|Elimina l'app selezionata dall'elenco.|
+
+#### Informazioni per app iOS incorporate
+
+Usare le informazioni riportate in questo elenco per identificare il nome, l'autore e l'ID bundle delle app iOS incorporate che si vogliono mostrare o nascondere. Se si vogliono mostrare o nascondere tutte le app dell'elenco, è possibile copiare i dati riportati di seguito in un file di testo con estensione **csv** e quindi usare l'opzione **Importa app** per importare tutte le app contemporaneamente.
+
+```
+App Store,Apple,com.apple.AppStore
+Calculator,Apple,com.apple.calculator
+Calendar,Apple,com.apple.mobilecal
+Camera,Apple,com.apple.camera
+Clock,Apple,com.apple.mobiletimer
+Compass,Apple,com.apple.compass
+Contacts,Apple,com.apple.MobileAddressBook
+FaceTime,Apple,com.apple.facetime
+Find Friends,Apple,com.apple.mobileme.fmf1
+Find iPhone,Apple,com.apple.mobileme.fmip1
+Game Center,Apple,com.apple.gamecenter
+GarageBand,Apple,com.apple.mobilegarageband
+Health,Apple,com.apple.Health
+iBooks,Apple,com.apple.iBooks
+iTunes Store,Apple,com.apple.MobileStore
+iTunes U,Apple,com.apple.itunesu
+Keynote,Apple,com.apple.Keynote
+Mail,Apple,com.apple.mobilemail
+Maps,Apple,com.apple.Maps
+Messages,Apple,com.apple.MobileSMS
+Music,Apple,com.apple.Music
+News,Apple,com.apple.news
+Notes,Apple,com.apple.mobilenotes
+Numbers,Apple,com.apple.Numbers
+Pages,Apple,com.apple.Pages
+Photo Booth,Apple,com.apple.Photo-Booth
+Photos,Apple,com.apple.mobileslideshow
+Podcasts,Apple,com.apple.podcasts
+Reminders,Apple,com.apple.reminders
+Safari,Apple,com.apple.mobilesafari
+Settings,Apple,com.apple.Preferences
+Stocks,Apple,com.apple.stocks
+Tips,Apple,com.apple.tips
+Videos,Apple,com.apple.videos
+VoiceMemos,Apple,com.apple.VoiceMemos
+Wallet,Apple,com.apple.Passbook
+Watch,Apple,com.apple.Bridge
+Weather,Apple,com.apple.weather
+
+
+```
+
+
+
 
 ## Impostazioni di criteri personalizzati
 
@@ -266,6 +337,6 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 
