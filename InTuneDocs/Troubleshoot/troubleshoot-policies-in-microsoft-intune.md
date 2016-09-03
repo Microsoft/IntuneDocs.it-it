@@ -4,7 +4,7 @@ description: Risolvere i problemi di configurazione dei criteri.
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
-ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
+ms.sourcegitcommit: 1f133d31311706365888cf33ceb4c4412deec333
+ms.openlocfilehash: a8afc681b8b12e1e760dea3f784e4beac4697242
 
 
 ---
@@ -46,17 +46,6 @@ Nella schermata seguente è possibile visualizzare due chiari esempi:
 
 > [!NOTE]
 > Tenere presente che quando due criteri con livelli di restrizione diversi vengono applicati allo stesso dispositivo o utente, viene di fatto applicato il criterio più restrittivo.
-
-## Intervalli di aggiornamento dei criteri
-I criteri vengono aggiornati a intervalli regolari. In generale, i criteri dovrebbero essere registrati nei dispositivi entro 15 minuti dall'applicazione di una modifica. Ecco altri dettagli sugli intervalli regolari per l'aggiornamento dei criteri:
-
--   **Dispositivi Windows registrati per MDM**: i criteri vengono aggiornati ogni 8 ore per i dispositivi Windows 8.1 e Windows 10 e ogni 24 ore per i dispositivi Windows RT.
-
--   **Windows Phone**: i criteri vengono aggiornati ogni 8 ore. Può essere imposto da un aggiornamento nel Portale aziendale, in **Impostazioni**.
-
--   **iOS**: i criteri vengono aggiornati una volta al giorno con un intervallo di tempo casuale. Può essere imposto anche aprendo il Portale aziendale, selezionando il dispositivo e facendo clic su **Sincronizza**.
-
--   **Android**: i criteri vengono aggiornati una volta al giorno con un intervallo di tempo casuale. Può essere imposto anche aprendo il Portale aziendale, selezionando il dispositivo e facendo clic su **Sincronizza**.
 
 ## Errori relativi a criteri di Microsoft Intune in policyplatform.log
 Per i dispositivi Windows non MDM, gli errori dei criteri nel file policyplatform.log potrebbero derivare da impostazioni non predefinite nel Controllo dell'account utente di Windows sul dispositivo. Alcune impostazioni non predefinite del Controllo dell'account utente possono influire sulle installazioni client di Microsoft Intune e sull'esecuzione dei criteri.
@@ -93,9 +82,6 @@ Ad esempio, in Windows RT, sul desktop scorrere verso destra per aprire la barra
 Nella parte inferiore del menu di navigazione a sinistra è disponibile un collegamento **Reimposta criteri di sicurezza** . Selezionare tale collegamento e scegliere il pulsante **Reimposta criteri**.
 È possibile che altri dispositivi MDM, ad esempio Android, Windows Phone 8.1 e versione successiva e iOS, debbano essere ritirati e registrati nuovamente al servizio per consentire all'utente di applicare criteri meno restrittivi.
 
-## I dispositivi Android non impongono modifiche ai criteri di sicurezza senza l'accettazione dell'utente finale
-Android MDM non consente al servizio di forzare le modifiche dei criteri iniziali sui dispositivi, diversamente da altre piattaforme. Questa condizione è dovuta a funzionalità di Android e non è correlata al servizio Intune. I dispositivi Android richiederanno all'utente finale, tramite la finestra di notifica, di modificare i criteri correlati (ad esempio password, crittografia e così via).  L'utente finale deve rispondere alla richiesta e, dopo l'accettazione, i criteri vengono applicati.
-
 ## Non è possibile creare criteri o registrare client se il nome della società contiene caratteri speciali
 **Problema:** non è possibile creare criteri o registrare client.
 
@@ -106,6 +92,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

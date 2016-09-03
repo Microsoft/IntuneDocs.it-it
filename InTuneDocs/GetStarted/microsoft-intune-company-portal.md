@@ -2,8 +2,8 @@
 title: Portale aziendale di Microsoft Intune | Microsoft Intune
 description: configurazione del Portale aziendale di Intune
 keywords: 
-author: Staciebarker
-manager: arob98
+author: barlanmsft
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: b7c8cc22f744449ce83084be88cfb4547e28779b
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: b6dc2a6b9f8464bb6accbbc5163700a6d7da1fdb
 
 
 ---
@@ -28,7 +28,7 @@ Il Portale aziendale di Intune è uno strumento che consente agli utenti l'acces
 -   **App Portale aziendale**: un'applicazione disponibile nei dispositivi gestiti con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Altre informazioni sulle app Portale aziendale per [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) e [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **Sito Web del portale aziendale**: sito Web che consente l'accesso da un [browser supportato](supported-web-browsers.md). L'URL è [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). Altre informazioni su questo sito Web nell'articolo [Uso del sito Web del Portale aziendale di Intune](/Intune/EndUser/using-the-intune-company-portal-website).
+- **Il sito Web del portale aziendale**: un sito Web, accessibile da un [browser supportato](supported-web-browsers.md), che consente agli utenti di eseguire la maggior parte delle attività eseguibili dall'app Portale aziendale specifica della piattaforma in uso. L'URL è [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Altre informazioni su questo sito Web nell'articolo [Uso del sito Web del Portale aziendale di Intune](/Intune/EndUser/using-the-intune-company-portal-website).
 
 Alcune attività che gli utenti possono eseguire nel Portale aziendale sono:
 
@@ -53,6 +53,6 @@ Prima che un utente possa accedere al Portale aziendale, all'account corrisponde
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

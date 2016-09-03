@@ -3,19 +3,19 @@ title: Bloccare in remoto un dispositivo dal sito Web del portale aziendale | Mi
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 48681950f23aaf4ce13418699fd80a5914f13e89
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 19369b8914eee60eececd3e749eae12891cd1a2e
 
 
 ---
@@ -43,15 +43,19 @@ Per usare Blocco remoto per bloccare il dispositivo:
 
 2.  Toccare **Blocco remoto**.
 
+    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+
+3.  Leggere il messaggio di avviso, visualizzato per segnalare che si sta per bloccare il dispositivo, e quindi toccare **Blocco remoto** per consentire al sito Web del portale aziendale di provare a bloccare il dispositivo.
+
     Dopo aver toccato **Blocco remoto** viene visualizzato lo stato "Blocco remoto in sospeso".  Quando Blocco remoto ha esito positivo, lo stato passa a "Blocco remoto riuscito."
 
     Lo stato del blocco remoto viene visualizzato in tre posizioni:
 
-    * L'area delle notifiche del sito Web. 
+    * L'area delle notifiche del sito Web.
     * La pagina dei dettagli del dispositivo.
     * Il riquadro contenente il nome del dispositivo nella sezione Dispositivi personali della pagina.
 
-    Se viene visualizzata la notifica "Blocco remoto non riuscito", attendere qualche minuto e quindi tentare nuovamente di bloccare il dispositivo. Dopo aver toccato il pulsante per riprovare, lo stato diventa nuovamente "Blocco remoto in sospeso". 
+    Se viene visualizzata la notifica "Blocco remoto non riuscito", attendere qualche minuto e quindi tentare nuovamente di bloccare il dispositivo. Dopo aver toccato il pulsante per riprovare, lo stato diventa nuovamente "Blocco remoto in sospeso".
 
     Se il tentativo ha esito negativo, contattare l'amministratore IT per ricevere assistenza. Se il dispositivo viene ritrovato e si vuole rimuovere il blocco dopo aver usato Blocco remoto, immettere il passcode.
 
@@ -61,6 +65,7 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 [Uso del sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

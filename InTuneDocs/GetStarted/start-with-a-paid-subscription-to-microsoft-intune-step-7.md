@@ -2,7 +2,7 @@
 title: Personalizzare il portale aziendale | Microsoft Intune
 description: Illustra come personalizzare il portale aziendale per la sottoscrizione di Intune
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: b7288cff2e589faac32b9d2a80655079d9490590
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: f43888e2ae923afec6c4ffbd4472fd8f36968472
 
 
 ---
@@ -33,7 +33,7 @@ La personalizzazione del portale aziendale consente di offrire agli utenti final
 ## Informazioni di contatto e informativa sulla privacy della società
 Il nome dell'azienda viene visualizzato come titolo del portale aziendale. I dettagli e le informazioni di contatto vengono visualizzati agli utenti nella schermata Contatta l'IT del portale aziendale. L'informativa sulla privacy viene visualizzata quando un utente fa clic sul relativo collegamento.
 
-|Nome del campo|Lunghezza massima|Altre informazioni|
+|Nome campo|Lunghezza massima|Altre informazioni|
     |----------|------------------------|----------------|
     |Nome società|40|È il nome che verrà visualizzato come titolo del portale aziendale.|
     |Nome contatto del reparto IT|40|Questo nome viene visualizzato nella pagina **Contatta l'IT**.|
@@ -70,6 +70,6 @@ A questo punto, il passaggio 7 della *Guida introduttiva a Intune* è stato comp
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

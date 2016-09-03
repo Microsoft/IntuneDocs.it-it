@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 92a8d06d-0ecb-4912-898b-993e8eaf4e58
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: acb8d018b23753ad0a414d0222468caad3284325
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: e8b6da8348f9c4d8ba1b85687510388cd40eac8a
 
 
 ---
@@ -36,10 +36,10 @@ La tabella seguente elenca gli errori che potrebbero verificarsi durante la regi
 |MdmAuthorityNotDefined|L'amministratore IT deve configurare la modalità di gestione dei dispositivi mobili usata in azienda.<br /><br />Contattare gli amministratori IT segnalando di aver ricevuto il messaggio **MdmAuthorityNotDefined** durante il tentativo di registrazione del dispositivo mobile. Comunicare all'amministratore di consultare questa tabella per trovare la risoluzione.|L'autorità di gestione dei dispositivi mobili non è stata designata in Intune.<br /><br />Rivedere il primo punto della sezione "Passaggio 6: Registrare dispositivi mobili e installare un'app" in [Iniziare con una versione di valutazione gratuita di 30 giorni di Microsoft Intune](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).|
 
 ### Vedere anche
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Uso del dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

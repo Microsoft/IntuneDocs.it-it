@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 1e50e4fed60806f2021c426951b5a52155551043
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 85a036fd910bb91bf8f0728ca2aa486189471ac6
 
 
 ---
@@ -33,10 +33,10 @@ Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo i
 
 
 ### Vedere anche
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Uso del dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
