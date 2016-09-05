@@ -3,19 +3,19 @@ title: Ripristinare (eliminare) un dispositivo Android smarrito o rubato | Micro
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 05/31/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 9797eb4b7b18527d13fc1f0a9cbcc900d76dc54f
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: fbdaf27865a715a7ae9efb68390fc21a5dcd17c5
 
 
 ---
@@ -27,12 +27,12 @@ Se un telefono registrato in Intune viene smarrito o rubato, è possibile ripris
 
 Per altre informazioni sul ripristino dei dispositivi, vedere [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md) (Cosa succede se si ripristina un dispositivo del Portale aziendale).
 
-> [!WARNING] 
+> [!WARNING]
 > Il ripristino delle impostazioni predefinite di un dispositivo implica la rimozione sia dei dati personali che dei dati di lavoro o di studio dal dispositivo stesso.
 
 ## Per reimpostare un dispositivo dall'app Portale aziendale
 
-1.  Nel browser aprire il [sito Web del portale aziendale](http://portal.manage.microsoft.com) ed eseguire l'accesso con l'account aziendale o dell'istituto di istruzione.
+1.  Da un altro dispositivo registrato, aprire l'app Portale aziendale e accedere con l'account aziendale o dell'istituto di istruzione.
 
 2.  Toccare **Dispositivi personali** e selezionare il nome del dispositivo smarrito o rubato.
 
@@ -42,7 +42,7 @@ Per altre informazioni sul ripristino dei dispositivi, vedere [What happens if y
 
 È possibile seguire questa procedura o guardare questo video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=K-Vi7lNfaMk&feature=youtu.be" frameborder="0" allowfullscreen></iframe> 
+<iframe width="675" height="379" src="https://www.youtube.com/embed/6e73o7f8gxE" frameborder="0" allowfullscreen></iframe>
 
 1.  Nel browser aprire il [sito Web del portale aziendale](http://portal.manage.microsoft.com) e accedere all'account aziendale.
 
@@ -57,7 +57,6 @@ Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere all'am
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

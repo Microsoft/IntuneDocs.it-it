@@ -3,19 +3,19 @@ title: Account di posta elettronica aziendale esistente trovato | Microsoft Intu
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: cca55c987b42894547977d94bd549342b4ca4bd8
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 3fd4b6dbac9b3ad41ed0aedba7fecfb117193d50
 
 
 ---
@@ -27,7 +27,7 @@ Esiste già un account di posta elettronica della società. Per continuare a con
 
     Ad esempio, su un dispositivo iOS, toccare **Impostazioni** &gt; **Posta elettronica, Contatti, Calendario**. Selezionare l'account di posta elettronica di lavoro e quindi fare clic su **eliminare**.
 
-2.  Aprire l'app portale aziendale nel dispositivo e toccare **controllo conformità**.
+2.  Aprire l'app Portale aziendale nel dispositivo e toccare **Controlla conformità**.
 
 3.  Attendere qualche istante nuove impostazioni di posta elettronica da applicare automaticamente il dispositivo.
 
@@ -35,7 +35,6 @@ Se dopo un periodo di tempo non vengono visualizzate nuove impostazioni di posta
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

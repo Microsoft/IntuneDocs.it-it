@@ -4,7 +4,7 @@ description: "Usare Intune per creare e distribuire i criteri per il controllo d
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
-ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
+ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
+ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
 
 
 ---
@@ -132,9 +132,6 @@ I dispositivi contattano Intune quando ricevono una notifica che lo richiede o d
 
 Altre modifiche, ad esempio un aggiornamento delle informazioni di contatto nel portale aziendale, non comportano una notifica immediata ai dispositivi.
 
-> [!TIP]
-> Quando un criterio contenente le impostazioni viene distribuito in un dispositivo Android, all'utente viene richiesto di intervenire per conformarsi ai criteri. Le nuove impostazioni saranno effettive solo quando l'utente avrà effettuato questa operazione o il dispositivo verrà riavviato.
-
 ### Se vengono distribuiti più criteri per lo stesso utente o dispositivo, come si fa a sapere quali impostazioni verranno applicate?
 Quando vengono distribuiti due o più criteri per lo stesso utente o dispositivo, la valutazione dell'impostazione che verrà applicata si verifica a livello di singola impostazione:
 
@@ -215,6 +212,6 @@ Vedere [Risolvere i problemi relativi ai criteri in Microsoft Intune](/intune/tr
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

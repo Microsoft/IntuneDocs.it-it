@@ -3,15 +3,17 @@ title: Il dispositivo non soddisfa la patch di protezione minima | Microsoft Int
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-ms.sourcegitcommit: b76c04545b9b26a0e2470b95a3f5ac0a81b07817
-ms.openlocfilehash: a4788340b36c7d04ff1a62844aea7dba06079a2b
+ROBOTS: NOINDEX,NOFOLLOW
+translationtype: Human Translation
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 83fd5ebdabe092c46cb17aee5cc5c603386b1b70
 
 
 ---
@@ -30,7 +32,7 @@ La posizione del livello attuale della patch di protezione può essere diversa, 
 
 **Per installare la patch di protezione richiesta:**
 
-- Dispositivi non Samsung Knox: passare a **Impostazioni** > **Informazioni** > **Aggiornamenti software**. 
+- Dispositivi non Samsung Knox: passare a **Impostazioni** > **Informazioni** > **Aggiornamenti software**.
 
 - Dispositivi Samsung Knox: passare a **Impostazioni** > **Aggiornamenti del sistema** > **Check for new system update** (Controlla nuovi aggiornamenti del sistema).
 
@@ -41,6 +43,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

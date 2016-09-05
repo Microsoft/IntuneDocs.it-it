@@ -3,26 +3,26 @@ title: Viene richiesta la disattivazione del debug USB | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: eb3c46be463a355c920b4a5b5960464d2ab11f91
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: e84f29754dfb06ccb40fa364d0b8b3dc9bce04f9
 
 
 ---
 
 # Viene richiesta la disattivazione del debug USB
 
-Se viene visualizzato un messaggio che richiede la disabilitazione del debug USB, è necessario passare a **Impostazioni** > **Opzioni per gli sviluppatori** e disattivare il **debug USB**. 
+Se viene visualizzato un messaggio che richiede la disabilitazione del debug USB, è necessario passare a **Impostazioni** > **Opzioni per gli sviluppatori** e disattivare il **debug USB**.
 
-L'amministratore IT richiede la disattivazione di questa impostazione per proteggere i dati aziendali nel dispositivo Android. 
+L'amministratore IT richiede la disattivazione di questa impostazione per proteggere i dati aziendali nel dispositivo Android.
 
 Se il **debug USB** è attivato, i dati presenti nel dispositivo saranno meno protetti quando è connesso un dispositivo USB.
 
@@ -35,6 +35,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

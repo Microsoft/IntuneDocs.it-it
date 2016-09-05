@@ -2,8 +2,8 @@
 title: Account amministrativi, siti Web e autorizzazioni | Microsoft Intune
 description: Account amministrativi, autorizzazioni e siti Web
 keywords: 
-author: Staciebarker
-manager: arob98
+author: barlanmsft
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,15 +13,15 @@ ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 88bd3f329a6b0d137f8cf02f5221263b64a33141
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 017de4d0cc65c00129a45f140eebea11a61154af
 
 
 ---
 
 # Account amministrativi, siti Web e autorizzazioni in Microsoft Intune
 
-Prima di configurare Microsoft Intune leggere questo argomento e gli altri requisiti indicati in [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md).
+Prima di configurare Microsoft Intune leggere questo argomento e gli altri requisiti indicati in [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 Per amministrare Intune occorre usare:
 - Due tipi di account amministratore
@@ -94,6 +94,6 @@ Altre informazioni sull'[aggiunta di utenti alla sottoscrizione ](start-with-a-p
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

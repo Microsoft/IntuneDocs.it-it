@@ -3,19 +3,19 @@ title: "Il dispositivo iOS non è conforme alla versione massima del sistema ope
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ada223d7-2a80-4415-bd85-5bdf9eca7ace
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 2ba74d847eb30b26016b2f1559b5dbedc7d964b5
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 0ad952f8d887d7ee728193f555e247e9ef810c30
 
 
 ---
@@ -26,10 +26,10 @@ ms.openlocfilehash: 2ba74d847eb30b26016b2f1559b5dbedc7d964b5
 Il dispositivo iOS non è conforme ai criteri dell'amministratore IT per la versione massima del sistema operativo. Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 ### Vedere anche
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Uso del dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

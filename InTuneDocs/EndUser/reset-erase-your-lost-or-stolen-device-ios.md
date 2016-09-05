@@ -3,19 +3,19 @@ title: Ripristinare (eliminare) un dispositivo iOS smarrito o rubato | Microsoft
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 05/09/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 9ab65b409bbb2168e3457050202d6e88db0472d2
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 192c61fb06a8af4c40e228aafbd383fd21142c57
 
 
 ---
@@ -30,7 +30,7 @@ Se un telefono registrato in Intune viene smarrito o rubato, è possibile ripris
 
 ## Per ripristinare un dispositivo con l'app Portale aziendale
 
-1.  Nel browser aprire il Portale aziendale dell'azienda ed eseguire l'accesso con l'account aziendale.
+1.  Da un altro dispositivo registrato, aprire l'app Portale aziendale e accedere con l'account aziendale o dell'istituto di istruzione.
 
 2.  Selezionare il dispositivo smarrito o rubato in **Dispositivi personali**.
 
@@ -40,7 +40,7 @@ Se un telefono registrato in Intune viene smarrito o rubato, è possibile ripris
 
 È possibile seguire questa procedura o guardare questo video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/watch?v=6UFtBrBWUUI&feature=youtu.be" frameborder="0" allowfullscreen></iframe>
+<iframe width="675" height="379" src="https://www.youtube.com/embed/3rrXe8XmtgU" frameborder="0" allowfullscreen></iframe>
 
 1.  Nel [Sito Web del portale aziendale](http://portal.manage.microsoft.com) selezionare il dispositivo da cancellare.
 
@@ -49,9 +49,10 @@ Se un telefono registrato in Intune viene smarrito o rubato, è possibile ripris
 Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere all'amministratore IT di eseguire questa operazione. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 ### Vedere anche
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Uso del dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 
