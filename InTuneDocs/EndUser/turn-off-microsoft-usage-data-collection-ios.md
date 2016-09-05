@@ -3,19 +3,19 @@ title: Disattivare la raccolta dati di utilizzo di Microsoft per iOS | Microsoft
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 07/20/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c017a666bf208e02c1db8f1137281435217fc5e6
-ms.openlocfilehash: 6e43167afc58e9c8592bf53c090b788c381fbf4f
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: cecb9c936c077efe2390faccdd53f4b06d7f9094
 
 
 ---
@@ -23,16 +23,19 @@ ms.openlocfilehash: 6e43167afc58e9c8592bf53c090b788c381fbf4f
 
 # Disattivare la raccolta dati di utilizzo di Microsoft
 
-Per migliorare i propri prodotti e servizi, Microsoft raccoglie automaticamente dati anonimi sulle prestazioni e sull'affidabilità dell'app Portale aziendale e sulle relative modalità d'uso. 
+Per migliorare i propri prodotti e servizi, Microsoft raccoglie automaticamente dati anonimi sulle prestazioni e sull'affidabilità dell'app Portale aziendale e sulle relative modalità d'uso.
 
-È possibile disattivare la raccolta dei dati sul dispositivo iOS tramite l'impostazione **Dati di utilizzo** nell'app Portale aziendale. Gli amministratori IT non hanno alcun controllo sulla raccolta dei dati e non possono modificare la selezione di questa impostazione.
+Per disattivare la raccolta dei dati di utilizzo nel dispositivo iOS, andare a **Impostazioni**, toccare **Portale aziendale** e quindi disattivare l'impostazione **Dati di utilizzo**.
+
+Gli amministratori IT non hanno alcun controllo sulla raccolta dei dati e non possono modificare la selezione di questa impostazione.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 ### Vedere anche
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+[Uso del dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

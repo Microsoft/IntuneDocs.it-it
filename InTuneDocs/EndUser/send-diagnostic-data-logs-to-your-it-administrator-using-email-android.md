@@ -3,19 +3,19 @@ title: Inviare i log dei dati di diagnostica all'amministratore IT tramite posta
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 30d325a9f5b920176ed5f4c9ce003564dcc6d3b5
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 7e90141f08cf029a005aad1ae0501fc1962eb958
 
 
 ---
@@ -31,13 +31,13 @@ Per attivare la registrazione dettagliata:
 
 2.  Toccare **Menu** &gt; **Impostazioni**.
 
-    > [!NOTE] 
+    > [!NOTE]
     > **Menu** può essere un pulsante software o hardware, a seconda del tipo di dispositivo Android in uso.
 
 3.  In **Dati di diagnostica** toccare **Invia dati**.
 
     > [!NOTE]
-    > **Solo se si usano dispositivi Android 6.0 o versioni successive:** quando si tocca **Invia dati**, viene visualizzato un messaggio che chiede se **consentire al portale aziendale di accedere a foto, supporti e file nel dispositivo**. 
+    > **Solo se si usano dispositivi Android 6.0 o versioni successive:** quando si tocca **Invia dati**, viene visualizzato un messaggio che chiede se **consentire al portale aziendale di accedere a foto, supporti e file nel dispositivo**.
 
     Questo messaggio è fuorviante perché **Microsoft non accede mai a foto, supporti o file nel dispositivo.** Il testo del messaggio è controllato da Google, quindi Microsoft non può modificarlo.  Quando si consente l'accesso, il dispositivo può solo scrivere i log di dati nella scheda SD del dispositivo, da dove possono essere spostati con un cavo USB.
 
@@ -50,6 +50,7 @@ Per attivare la registrazione dettagliata:
 [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

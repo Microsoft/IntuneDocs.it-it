@@ -1,35 +1,34 @@
 ---
-# required metadata
-
-title: Stato di conformità del dispositivo sconosciuto | Microsoft Intune
-description:
-keywords:
+title: "Stato di conformità del dispositivo sconosciuto | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 06/06/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 796297c4-02a1-4d7a-aec1-bae63727ffd3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 94c038ac756119e3a373280234219f03c6eba901
+
 
 ---
 
 
 # Stato di conformità del dispositivo sconosciuto
 
-Se il dispositivo visualizza il messaggio "Stato di conformità sconosciuto", Intune sta tentando di verificare che il dispositivo sia conforme ai criteri aziendali. Durante l'esecuzione della verifica potrebbe essere impedito l'accesso alle risorse aziendali, ad esempio alla posta elettronica. Attendere alcuni minuti la conclusione della verifica della conformità e quindi provare nuovamente ad accedere alle risorse aziendali. Se non è ancora possibile accedere alle risorse aziendali, contattare l'amministratore IT.
+Se il dispositivo visualizza il messaggio "Stato di conformità sconosciuto", Intune sta tentando di verificare che il dispositivo sia conforme ai criteri aziendali. Durante l'esecuzione della verifica potrebbe essere impedito l'accesso alle risorse aziendali, ad esempio alla posta elettronica. Attendere alcuni minuti la conclusione della verifica della conformità e quindi provare nuovamente ad accedere alle risorse aziendali.
 
-<!--HONumber=May16_HO2-->
+Se non è ancora possibile accedere alle risorse aziendali, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
+
+
+<!--HONumber=Aug16_HO4-->
 
 

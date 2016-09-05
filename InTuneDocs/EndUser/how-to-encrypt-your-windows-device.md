@@ -3,19 +3,19 @@ title: 'Procedura: Crittografare un dispositivo Windows| Microsoft Intune'
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 6/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: 8c3369d760444e222f65573e52e2d23ba61e1d72
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 7418330fe3eac4936843eff38cf713cdcb6f64f4
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 8c3369d760444e222f65573e52e2d23ba61e1d72
 
 Per proteggere i dati aziendali o dell'istituto di istruzione, è possibile che l'amministratore IT debba crittografare il dispositivo Windows. Un dispositivo Windows Phone registrato verrà crittografato automaticamente se è necessaria la crittografia.
 
-Se si dispone di un dispositivo desktop, seguire le istruzioni seguenti per crittografarlo. 
+Se si dispone di un dispositivo desktop, seguire le istruzioni seguenti per crittografarlo.
 
 1.  Cercare e quindi avviare l'app **Gestione BitLocker**.
 
@@ -34,7 +34,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
