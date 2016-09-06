@@ -4,7 +4,7 @@ description: Collegamenti a informazioni da condividere con gli utenti finali
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: e904f7e7e91d86359a0fd818032833caa382edcc
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 
 
 ---
@@ -33,10 +33,12 @@ Assicurarsi di includere le informazioni di contatto dell'amministratore IT quan
 
 ## Collegamenti utili per gli utenti finali sulle attività comuni
 
-Fornire agli utenti i seguenti collegamenti di guida per gli utenti finali quando cercano informazioni sull'uso di Intune nei loro dispositivi. Questi collegamenti mostreranno agli utenti i passaggi per installare l'app Portale aziendale, registrare i dispositivi, ottenere applicazioni gestite, risolvere i problemi e altro ancora.
+Se gli utenti registrati necessitano di assistenza per l'uso di Intune, in genere visualizzano un collegamento nel sito Web del portale aziendale o nell'app Portale aziendale che punta a un articolo specifico con i passaggi per risolvere il problema o completare l'attività. Ad esempio, se gli utenti Android visualizzano un messaggio che informa che un certificato obbligatorio risulta mancante, possono toccare un collegamento "Risoluzione del problema" per passare a un articolo con i passaggi su come ottenere il certificato. 
+
+I collegamenti seguenti sono per gli amministratori IT. Queste pagine contengono collegamenti a tutti gli articoli che vengono inviati agli utenti dal sito Web del portale aziendale o dall'app Portale aziendale. Il collegamento è suddiviso in sezioni: installazione dell'app Portale aziendale e registrazione di Intune; attività che gli utenti possono eseguire sui propri dispositivi, ad esempio l'uso di app gestite e la sincronizzazione manuale dei dispositivi; e risoluzione dei problemi.
 
 - [Uso del dispositivo Android con Intune](/Intune/EndUser/using-your-android-device-with-intune)
-- [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+- [Uso del dispositivo iOS o Mac OS con Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
 - [Uso del dispositivo Windows con Intune](/Intune/EndUser/using-your-windows-device-with-intune)
 - [Uso del sito Web del portale aziendale](/Intune/EndUser/using-the-intune-company-portal-website)
 
@@ -59,8 +61,10 @@ Per vedere in che modo gli utenti finali recuperano le loro app, scegliere fra l
 
 Per aiutare gli utenti a risolvere i problemi che potrebbero riscontrare usando il portale aziendale, è possibile esaminare l'[elenco dei messaggi che possono essere visualizzati nel portale aziendale](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
+Se si vuole che in questo articolo vengano trattate altre informazioni, aggiungere eventuali suggerimenti alla casella di commento nella parte inferiore di questo argomento. Grazie!
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO4-->
 
 

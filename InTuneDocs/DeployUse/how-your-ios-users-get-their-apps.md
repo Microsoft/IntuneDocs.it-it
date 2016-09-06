@@ -4,7 +4,7 @@ description: Metodi per rendere disponibili le app iOS per gli utenti finali
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6dbb6012389d8058c2d9b1c46b4ae8c2418a6130
-ms.openlocfilehash: 30ebdfa1729df81a3b4a4a90b71aadacf373bb2d
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
 
 
 ---
@@ -32,12 +32,23 @@ Usare queste informazioni per comprendere come e dove gli utenti possono ottener
 
 **App non gestite**: app che possono essere gestite tramite criteri e che non sono state integrate in Intune o che non incorporano l'SDK del software MAM di Intune. Non è possibile applicare i criteri dell'applicazione a queste app.
 
+Le restrizioni di Apple impediscono alle app dell'app store line-of-business e gestite di essere elencate nell'app Portale aziendale, quindi gli utenti devono visitare visualizzazioni diverse per trovare le proprie app. Le app per ogni riquadro visualizzato nella pagina App dell'app Portale aziendale sono disponibili come indicato di seguito:
+
+- Il riquadro **App aziendali** punta all'elenco delle app nella scheda **TUTTE** del [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
+- Il riquadro **Altre app** attualmente punta a una vista, all'interno dell'app Portale aziendale, che elenca tutte le app che Apple consente all'app Portale aziendale di visualizzare. Sono incluse tutte le app ad eccezione di quelle dell'app store line-of-business e gestite.
+
+- Il riquadro **Categorie** attualmente punta a una vista, all'interno dell'app Portale aziendale, che elenca le categorie delle app.
+
+    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
+
+
 ###Vedere anche
 [Modalità di recupero delle app per gli utenti di Android](how-your-android-users-get-their-apps.md)</br>
 [Modalità di recupero delle app per gli utenti di Windows](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

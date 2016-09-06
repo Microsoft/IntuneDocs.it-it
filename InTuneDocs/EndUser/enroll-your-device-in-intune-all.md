@@ -1,6 +1,6 @@
 ---
 title: Registrare il dispositivo in Intune | Microsoft Intune
-description: Fornisce i collegamenti alle procedure su come registrare vari dispositivi in Intune
+description: Fornisce collegamenti a informazioni su come registrare vari dispositivi in Intune
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -11,8 +11,8 @@ ms.service:
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: ded795ec0547e80398b6f01dee612c3eb157d155
+ms.sourcegitcommit: fc18b9f1caf9f0e6c6b1c8d21d95f42a0c40c507
+ms.openlocfilehash: 8d3cc70379fdba7c7e3f6c0c82bc6bfb7b534b2c
 
 
 ---
@@ -30,11 +30,11 @@ Per visualizzare le istruzioni per la registrazione, usare il collegamento che c
 
 ### Vedere anche
 - [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)</br>
-- [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
+- [Uso del dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
 - [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

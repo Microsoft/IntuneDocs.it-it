@@ -1,5 +1,5 @@
 ---
-title: Gestire i PC Windows con il client Intune | Microsoft Intune
+title: Gestire i PC con il software client | Microsoft Intune
 description: Gestire i PC Windows installando il software client di Intune.
 keywords: 
 author: nathbarn
@@ -13,18 +13,18 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
-ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: f264dc3740ce9b117fcc01c39792904a2dc6e7ab
 
 
 ---
 
 # Gestire i PC Windows con il software client per PC di Intune
-Invece di [registrare i PC Windows come dispositivi mobili](set-up-windows-device-management-with-microsoft-intune.md), è possibile gestire i PC Windows installando il software client di Intune.
+Invece di [registrare i PC Windows come dispositivi mobili](set-up-windows-device-management-with-microsoft-intune.md), è possibile registrare e gestire i PC Windows installando il software client di Intune.
 
 Intune gestisce PC Windows tramite criteri in modo analogo a Oggetti Criteri di gruppo di Servizi di dominio Active Directory di Windows Server. Se si gestiscono computer appartenenti a un dominio di Active Directory con Intune, è necessario [assicurarsi che i criteri di Intune non siano in conflitto con Oggetti Criteri di gruppo](resolve-gpo-and-microsoft-intune-policy-conflicts.md) attivati per l'organizzazione.
 
-Mentre il client di Intune supporta [criteri che consentono di proteggere i PC](policies-to-protect-windows-pcs-in-microsoft-intune.md) mediante la gestione degli aggiornamenti software, di Windows Firewall e di Endpoint Protection, i PC gestiti con il client di Intune non possono essere assegnati ad altri criteri di Intune.
+Mentre il client software di Intune supporta le [funzionalità di gestione che consentono di proteggere i PC](policies-to-protect-windows-pcs-in-microsoft-intune.md) mediante la gestione degli aggiornamenti software, di Windows Firewall e di Endpoint Protection, i PC gestiti con il client di Intune non possono essere assegnati ad altri criteri di Intune, incluse le impostazioni dei criteri di **Windows** specifiche della gestione dei dispositivi mobili.
 
 > [!NOTE]
 > I dispositivi che eseguono Windows 8.1 o versioni successive possono essere gestiti con il client di Intune o possono essere registrati come dispositivi mobili. Le informazioni riportate di seguito si applicano ai computer che eseguono il client di Intune. L'installazione del client per PC di Intune e la registrazione del dispositivo Windows per la gestione di dispositivi mobili non sono supportate.
@@ -51,13 +51,15 @@ Mentre il client di Intune supporta [criteri che consentono di proteggere i PC](
 ## Installare il client computer di Intune
 Il software client di Intune può essere installato in uno dei modi seguenti:
 
--   È possibile [distribuire manualmente il software client di Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). In questo tipo di distribuzione, un amministratore scarica il software client di Intune e lo installa manualmente in ogni computer.
+-  È possibile [distribuire manualmente il software client di Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). In questo tipo di distribuzione, un amministratore scarica il software client di Intune e lo installa manualmente in ogni computer.
 
   Per scaricare il software client di Intune, aprire la [console di amministrazione di Intune](https://manage.microsoft.com), scegliere **Amministrazione** > **Download software client** e quindi fare clic su **Scarica software client**.
 
--   È possibile usare gli stessi file scaricati per installare manualmente il client Intune e [distribuirlo in computer appartenenti a un dominio tramite oggetti Criteri di gruppo di Active Directory](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
+-  Usare gli stessi file scaricati per installare manualmente il software client di Intune e [distribuirlo in computer appartenenti a un dominio tramite oggetti Criteri di gruppo di Active Directory](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
 
--   È anche possibile, infine, distribuire il software client di Intune nei computer nell'ambito di una [distribuzione del sistema operativo](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
+-  Distribuire il software client di Intune nei computer durante la [distribuzione di un sistema operativo](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
+
+-  Inviare istruzioni agli utenti con l'URL per il portale aziendale di Intune, [https://portal.manage.microsoft.com](http://go.microsoft.com/fwlink/?LinkId=825632). Quando gli utenti aprono il portale aziendale, viene loro richiesto di registrare i propri PC scaricando ed eseguendo il software client di Intune.
 
 ## Gestione di computer con il client computer di Intune
 Dopo l'installazione, il software client di Intune consente di usare diverse funzionalità di gestione dei computer tra cui: [gestione delle applicazioni](deploy-apps-in-microsoft-intune.md), Endpoint Protection, inventario hardware e software, controllo remoto (tramite richieste di assistenza remota), aggiornamenti software e creazione di report per le impostazioni di conformità.
@@ -69,6 +71,8 @@ Diverse attività di gestione dei computer abilitata dal client computer vengono
 -   Configurazione delle [impostazioni di aggiornamento software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) per i computer gestiti per la ricerca e il download degli aggiornamenti software richiesti.
 
 -   Protezione dei computer gestiti da minacce potenziali e software dannoso tramite la gestione del [monitoraggio in tempo reale e di Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+
+![Modello di criteri per PC Windows](../media/pc_policy_template.png)
 
 Oltre alle azioni dell'agente client di Intune eseguite localmente nei singoli computer, è anche possibile usare la console di amministrazione di Intune per eseguire altre [attività comuni di gestione dei computer](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) nei PC Windows in cui è installato il client per:
 
@@ -86,6 +90,6 @@ L'agente client di Intune viene eseguito in genere in modalità non interattiva 
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 
