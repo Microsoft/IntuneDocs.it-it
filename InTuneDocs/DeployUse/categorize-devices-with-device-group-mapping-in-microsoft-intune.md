@@ -3,8 +3,8 @@ title: Classificare i dispositivi con il mapping del gruppo di dispositivi | Mic
 description: "Usare il mapping del gruppo di dispositivi di Microsoft Intune per raggruppare i dispositivi in categorie specifiche in modo da renderne più facile la gestione."
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/11/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: sumitp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: c721df29fd71963feb151af71eea9ee7ebc2d3e4
+ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
+ms.openlocfilehash: 7b1c6f0e380c03d048686462682fc1cee85b7cfa
 
 
 ---
@@ -53,6 +53,6 @@ Da questo momento agli utenti che registrano i loro dispositivi viene visualizza
 [Usare i gruppi per gestire utenti e dispositivi con Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

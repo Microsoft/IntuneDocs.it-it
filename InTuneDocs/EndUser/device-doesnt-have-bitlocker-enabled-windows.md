@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 44b9d572956250da916fb72afdddc8a90860025a
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 7dad0f9ffc9a45f32ae3d399f00f6a688138997b
 
 
 ---
@@ -25,11 +25,10 @@ ms.openlocfilehash: 44b9d572956250da916fb72afdddc8a90860025a
 
 L'organizzazione richiede l'abilitazione di BitLocker, ovvero un software che consente di crittografare l'unità e di proteggere i dati. Per istruzioni su come abilitare BitLocker nei dispositivi Windows 10, vedere l'articolo relativo all'[abilitazione di BitLocker nei dispositivi Windows 10](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d). Per altre informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
-### Vedere anche
-[Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

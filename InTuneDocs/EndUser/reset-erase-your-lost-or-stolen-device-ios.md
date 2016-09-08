@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 192c61fb06a8af4c40e228aafbd383fd21142c57
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: dea55b5624781dfc835aec3b2fedcd34c57903cc
 
 
 ---
@@ -48,11 +48,10 @@ Se un telefono registrato in Intune viene smarrito o rubato, è possibile ripris
 
 Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere all'amministratore IT di eseguire questa operazione. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
-### Vedere anche
-[Uso del dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

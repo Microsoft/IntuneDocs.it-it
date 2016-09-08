@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ebd5c89b661c8852874f0c7ab83009a945eb7801
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: fb347fac40d201f94d1b8847ba72b0bd31dd6e23
 
 
 ---
@@ -48,14 +48,10 @@ Per aggiornare l'app Portale aziendale:
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
-Per informazioni su altre attività eseguibili con il dispositivo, usare il collegamento corrispondente al tipo di dispositivo:
-
-- [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)</br>
-- [Uso del dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
-- [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 
