@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 1809f619173ca57868cfd2b8466e6e2bcf05f0c7
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 870d735644f08e3eca8c72bca2b156947d798cb5
 
 
 ---
@@ -57,14 +57,14 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 ### Impostazioni di crittografia
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Richiedi crittografia sui dispositivi mobili**|Richiede la crittografia dei file sul dispositivo mobile.|Sì|Sì|
 |**Richiedi crittografia sulle schede di memoria**|Specifica se la scheda di memoria del dispositivo deve essere crittografata.|No|Sì|
 
 ### Impostazioni di sistema
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Consenti acquisizione schermo**|Consente all'utente di acquisire il contenuto della schermata come immagine.|No|Sì|
 |**Consenti invio dati di diagnostica**|Consente al dispositivo di inviare informazioni di diagnostica a Google.|No|Sì|
 |**Consenti ripristino impostazioni predefinite**|Consente all'utente di eseguire il ripristino delle impostazioni di fabbrica del dispositivo.|No|sì|
@@ -72,19 +72,19 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 ### Impostazioni cloud - Documenti e dati
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
-|----------------|----------------------------|----------------|
+|----------------|----|------------------------|----------------|
 |**Consenti backup di Google**|Consente l'uso del backup di Google.|No|Sì|
 
 ### Impostazioni cloud - Account e sincronizzazione
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Consenti sincronizzazione automatica dell'account Google**|Consente la sincronizzazione automatica delle impostazioni dell'account Google.|No|Sì|
 
 ### Impostazioni dell'applicazione - Browser
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Consenti browser Web**|Specifica se è consentito l'uso del Web browser predefinito nel dispositivo.|No|Sì|
 |**Consenti riempimento automatico**|Consente di usare la funzione di riempimento automatico del Web browser.|No|Sì|
 |**Consenti blocco popup**|Consente di usare un blocco popup nel Web browser.|No|Sì|
@@ -94,13 +94,13 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 ### Impostazioni dell'applicazione - App
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Consenti archivio Google Play**|Consente all'utente di accedere a Google Play Store sul dispositivo.|No|Sì|
 
 ### Impostazioni delle funzionalità del dispositivo - Hardware
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Consenti dispositivo foto/video**|Consente l'uso della fotocamera del dispositivo.|Sì|Sì|
 |**Consenti archivi rimovibili**|Consente al dispositivo di usare archivi rimovibili, ad esempio una scheda SD.|No|Sì|
 |**Consenti Wi-Fi**|Consente di usare le funzionalità Wi-Fi del dispositivo.|No|Sì|
@@ -113,7 +113,7 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 ### Impostazioni delle funzionalità del dispositivo - Cellulare
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Consenti roaming vocale**|Consente il roaming vocale quando il dispositivo si trova in una rete cellulare.|No|Sì|
 |**Consenti dati in roaming**|Consente il roaming dati quando il dispositivo si trova in una rete cellulare.|No|Sì|
 |**Consenti messaggi SMS/MMS**|Consente l'uso di messaggi SMS e MMS sul dispositivo.|No|Sì|
@@ -121,7 +121,7 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 ### Impostazioni delle funzionalità del dispositivo - Funzionalità
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Consenti assistente vocale**|Consente di usare il software di Assistente vocale sul dispositivo.|No|Sì|
 |**Consenti composizione vocale**|Attiva o disattiva la funzionalità di composizione vocale sul dispositivo.|No|Sì|
 |**Consenti copia e incolla**|Consente le funzioni Copia e Incolla nel dispositivo.|No|Sì|
@@ -208,6 +208,6 @@ Questa funzionalità consente di distribuire le impostazioni Android non configu
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7fdfe64a18fe359ee4b3b4507ef4108ad65ab573
-ms.openlocfilehash: 3102e4637c61bbae002fb30947acd1f82204ac93
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 6b2d805561067d2dc0de70d93c45622a951e5981
 
 
 ---
@@ -31,7 +31,7 @@ Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versione 
 ## Impostazioni di sicurezza
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**Tipo di password richiesto**|Specifica il tipo di password richiesto, ad esempio alfanumerico o solo numerico.|sì|Sì|
 |**Tipo di password richiesto - Numero minimo di set di caratteri**|Specifica quanti set di caratteri diversi è necessario includere nella password. Sono disponibili quattro set di caratteri, lettere minuscole, lettere maiuscole, numeri e simboli. Per i dispositivi iOS, questa impostazione specifica invece il numero di simboli che è necessario includere nella password.|sì|sì|
 |**Lunghezza minima password**<sup>1</sup>|Configura la lunghezza minima richiesta (in caratteri) della password.|sì|Sì|
@@ -46,7 +46,7 @@ Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versione 
 ## Impostazioni di crittografia
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Richiedi crittografia sui dispositivi mobili**<sup>1</sup>|Richiede la crittografia dei file nel dispositivo.<br>Per i dispositivi Windows Phone 8, è necessario impostare su **Sì**.|Sì|No|
 <sup>1</sup> Informazioni aggiuntive per i dispositivi che eseguono Windows 8.1
 
@@ -61,14 +61,14 @@ Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versione 
 ## Impostazioni per il malware
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Richiedi firewall di rete**|È necessario che Windows Firewall sia attivato.|sì|No|
 |**Attiva SmartScreen**|Richiede l'uso di Windows SmartScreen nei dispositivi.|sì|No|
 
 ## Impostazioni di sistema
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-------|---------------------------|--------------|
 |**Richiedi aggiornamenti automatici**|Attiva l'impostazione per gli aggiornamenti automatici nei dispositivi.|sì|No|
 |**Richiedi aggiornamenti automatici: classificazione minima degli aggiornamenti per l'installazione automatico.**|Consente di scegliere la classificazione degli aggiornamenti che verranno installati automaticamente:<br /><br />-   **Importante**: installa tutti gli aggiornamenti classificati come importanti.<br />-   **Consigliato**: installa tutti gli aggiornamenti classificati come importanti o consigliati.|sì|No|
 |**Controllo dell'account utente**|Richiede l'uso di Controllo dell'account utente nei dispositivi.|sì|No|
@@ -78,19 +78,19 @@ Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versione 
 ## Impostazioni cloud - Documenti e dati
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|------|----------------------------|--------------|
 |**URL cartelle di lavoro**|Imposta l'URL della cartella di lavoro per consentire la sincronizzazione dei documenti tra i dispositivi.|sì|No|
 
 ## Impostazioni di posta elettronica
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Rendi l'account Microsoft facoltativo nell'applicazione Windows Mail**|Consente di accedere all'applicazione Windows Mail senza disporre di un account Microsoft.|sì|No|
 
 ## Impostazioni dell'applicazione - Browser
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|-----|-----------------------------|--------------|
 |**Consenti riempimento automatico**|Consente agli utenti di modificare le impostazioni di completamento automatico nel browser.|sì|No|
 |**Consenti blocco popup**|Attiva o disattiva il blocco popup del browser.|Sì|No|
 |**Consenti plug-in**|Consente agli utenti di aggiungere plug-in a Internet Explorer.|sì|No|
@@ -109,7 +109,7 @@ Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versione 
 ## Impostazioni delle funzionalità del dispositivo - Cellulare
 
 |Nome impostazione|Dettagli|Windows 8.1 e Windows RT 8.1|Windows RT|
-|----------------|----------------------------------|--------------|
+|----------------|----|------------------------------|--------------|
 |**Consenti dati in roaming**|Abilita il roaming dati quando il dispositivo si trova in una rete cellulare.|sì|No|
 
 
@@ -119,6 +119,6 @@ Usare i **criteri di configurazione generale di Windows (Windows 8.1 e versione 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
+ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
+ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 
 ---
@@ -35,7 +35,7 @@ Nella tabella seguente sono elencati i tipi di dispositivi supportati dai criter
 --------------
 
 |Impostazione di criteri| Windows 8.1 e versioni successive| Windows Phone 8.1 e versioni successive| iOS 6.0 e versioni successive|Android 4.0 e versioni successive<br/>Samsung KNOX Standard 4.0 e versioni successive|
-|-----|----|----|----|
+|-----|----|----|----|----|
 |**Configurazione di PIN o password** |Corretto|Corretto|Corretto|In quarantena|
 |**Crittografia dispositivo**|N/D|Corretto|Corretto (impostando il PIN)|In quarantena|
 |**Dispositivo jailbroken o rooted**|N/D|N/D|In quarantena (non è un'impostazione)|In quarantena (non è un'impostazione)|
@@ -62,6 +62,6 @@ Nella tabella seguente sono elencati i tipi di dispositivi supportati dai criter
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
-ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
+ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
+ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
 
 
 ---
@@ -60,7 +60,10 @@ b. Scegliere l'icona del blocco &gt;  **Ulteriori informazioni**.
 
 
 2. Dall'interno della console ISE importare il certificato di Intune, ovvero il file esportato, nell'archivio dei **certificati attendibili**.
+
+
 ### Ottenere da ISE un certificato autofirmato 
+
 1.  Nella console ISE passare ad **Amministrazione** > **Certificati** > **Certificati di sistema** > **Genera certificato autofirmato**.  
 2.       Esportare il certificato autofirmato.
 3. Modificare il certificato esportato in un editor di testo: [comment]: <> I'd rather not put a period at the end of these two statements, I think it could be confusing.
@@ -147,6 +150,6 @@ Quando l'utente sceglie di eseguire la registrazione, viene reindirizzato al pro
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 
