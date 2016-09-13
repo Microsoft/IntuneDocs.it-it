@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 6740962e55b1232330c6fab43ce1250a54e3a97b
 
 
 ---
@@ -96,11 +96,10 @@ Per risolvere questo problema e ottenere il certificato richiesto, è necessario
 
 Se viene visualizzato nuovamente il messaggio "Certificato mancante" illustrato in precedenza e sono già stati seguiti i passaggi precedenti, è probabile che l'amministratore IT debba installare un altro certificato. Contattare l'amministratore IT e fornirgli questo [collegamento](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), che contiene i passaggi per risolvere il problema.
 
-### Vedere anche
-[Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

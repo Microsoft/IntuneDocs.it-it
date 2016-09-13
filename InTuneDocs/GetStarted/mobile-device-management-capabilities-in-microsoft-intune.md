@@ -1,10 +1,10 @@
 ---
-title: "Funzionalità di gestione dei dispositivi mobili | Microsoft Intune"
-description: Leggere questo argomento per scoprire in che modo Intune consente di gestire i dispositivi mobili registrati con il servizio.
+title: "Funzionalità di gestione dei dispositivi registrati | Microsoft Intune"
+description: Leggere questo argomento per scoprire in che modo Intune consente di gestire i dispositivi registrati.
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2ef264e963f689bb5a47a795170e0b9915848eec
-ms.openlocfilehash: efe86b7fd56603de2b910a8ec76b6de91db3b698
+ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
+ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
 
 
 ---
-# Funzionalità di gestione dei dispositivi mobili di Microsoft Intune
+# Funzionalità di gestione dei dispositivi registrati di Microsoft Intune
 
 Microsoft Intune consente di gestire una gamma di dispositivi *registrandoli* nel servizio. È possibile registrare autonomamente alcuni tipi di dispositivi. In alternativa, gli utenti possono usare l'app *portale aziendale*. Questo consente loro di eseguire una serie di operazioni, ad esempio cercare e installare app, verificare la conformità del dispositivo ai criteri aziendali e contattare il supporto IT.
 
@@ -70,6 +70,6 @@ Tutte le attività di gestione, inventario, distribuzione di app, provisioning e
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

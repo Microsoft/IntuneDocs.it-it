@@ -4,7 +4,7 @@ description: "Usare i criteri di Exchange ActiveSync di Intune per configurare l
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72e6bcd3fd480c1ed8558fefd3958b4bbf3184c2
-ms.openlocfilehash: 39a844db56edf18f25996c1aaf52223ac80f8071
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 9a481e1ce7815a0411651fc724e3fc2f5d374eac
 
 
 ---
@@ -26,7 +26,7 @@ Usare i criteri di **Exchange ActiveSync** di Microsoft Intune per configurare l
 ## Impostazioni della password
 
 |Nome impostazione|Dettagli
-|----------------|
+|----------------|---|
 |**Richiedi una password per sbloccare i dispositivi mobili**|Specifica se i dispositivi devono essere bloccati usando una password.<br>Non applicabile ai dispositivi che eseguono Windows RT.|
 |**Tipo di password richiesto**|Specifica il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.|
 |**Lunghezza minima password**|Specifica il numero minimo di caratteri richiesti per la password del dispositivo.|
@@ -40,7 +40,7 @@ Usare i criteri di **Exchange ActiveSync** di Microsoft Intune per configurare l
 ## Impostazioni di crittografia
 
 |Nome impostazione|Dettagli|
-|----------------|
+|----------------|---|
 |**Richiedi crittografia sul dispositivo mobile**<sup>1</sup>|Richiede la crittografia dei dati nel dispositivo, quando è supportata.<br><br>Per i dispositivi Windows Phone 8, è necessario impostare su **Sì**.<br /><br />Per abilitare la crittografia nei dispositivi iOS, abilitare l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**.|
 |**Richiedi crittografia sulle schede di memoria**|Richiede la crittografia dei dati presenti nella risorsa di archiviazione esterna, ad esempio una scheda SD (nei dispositivi supportati).
 <sup>1</sup> Altre informazioni per i dispositivi che eseguono Windows 8.1
@@ -56,7 +56,7 @@ Usare i criteri di **Exchange ActiveSync** di Microsoft Intune per configurare l
 ## Impostazioni di posta elettronica
 
 |Nome impostazione|Dettagli
-|----------------|
+|----------------|---|
 |**Consentire agli utenti di scaricare gli allegati di posta elettronica.**|Specifica se gli allegati di posta elettronica possono essere scaricati sul dispositivo.|
 |**Periodo di sincronizzazione della posta elettronica.**|Specifica il numero di giorni in cui i messaggi ricevuti verranno sincronizzati con il dispositivo.
 |**Consentire ai dispositivi mobili che non supportano completamente le impostazioni di Exchange ActiveSync per la sincronizzazione con Exchange**|Specifica se consentire a Exchange di accedere ai dispositivi che non supportano una o più impostazioni di Exchange ActiveSync.
@@ -64,13 +64,13 @@ Usare i criteri di **Exchange ActiveSync** di Microsoft Intune per configurare l
 ## Impostazioni del browser
 
 |Nome impostazione|Dettagli
-|----------------|-
+|----------------|---|
 |**Consenti browser Web**|Specifica se è consentito l'uso del Web browser nel dispositivo.<br>Opzione non disponibile per Windows RT o Windows Phone.
 
 ## Impostazioni hardware
 
 |Nome impostazione|Dettagli
-|----------------|
+|----------------|---|
 |**Consenti dispositivo foto/video**|Specifica se è consentito l'uso della fotocamera del dispositivo.<br>Opzione non disponibile per Windows RT o Windows Phone.
 
 
@@ -80,6 +80,6 @@ Usare i criteri di **Exchange ActiveSync** di Microsoft Intune per configurare l
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

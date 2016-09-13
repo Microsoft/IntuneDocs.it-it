@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f02d8791bbca65a4bfda69e61e9e22c8124c436b
-ms.openlocfilehash: 09fb5dac0276b4da49795539f40dbde15cd69bf5
+ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
+ms.openlocfilehash: 7f84ad1566431a7a72897750fadbc90cb56ec5ce
 
 
 ---
@@ -87,6 +87,18 @@ Il sito Web del portale aziendale consentirà agli utenti finali di toccare un n
 ### Aggiunta di "Notifiche" al Portale aziendale per Android
 Nel mese di settembre verrà rilasciato un aggiornamento del portale aziendale per Android che presenterà una nuova icona delle **notifiche** nella home page. Toccando l'icona si avrà accesso alla pagina delle **notifiche** in cui l'utente finale visualizzerà tutti gli elementi che richiedono attenzione nell'app Portale aziendale, ad esempio la non conformità del dispositivo, l'aggiornamento della registrazione e l'attivazione della registrazione. Se si usa l'app Portale aziendale per iOS, è già possibile visualizzare l'esperienza delle notifiche. Con l'introduzione della pagina **Notifiche**, non verrà visualizzata la pagina **Configurazione dell'accesso aziendale** ogni volta che si avvia o si riprende l'esecuzione del Portale aziendale per Android, purché il dispositivo sia già registrato. Molti utenti hanno creato materiale sussidiario per gli utenti finali ed è consigliabile dare tempestiva comunicazione a Microsoft nel caso possa essere necessario aggiornare tale materiale o le relative schermate. Aggiornare la documentazione in modo che rifletta le future modifiche nell'esperienza. Per gli screenshot aggiornati, visitare https://aka.ms/androidcpupdate.  
 
+### Miglioramenti della modalità di recupero delle app per gli utenti finali di iOS
+Le modifiche seguenti verranno apportate nel mese di settembre ai riquadri delle app nell'app Portale aziendale in modo che iOS indirizzi gli utenti con visualizzazioni diverse per tutte le app in un'unica posizione, il sito Web del portale aziendale. Attualmente, le restrizioni di Apple impediscono alle app dell'app store line-of-business e gestite di essere elencate nell'app Portale aziendale e richiedono agli utenti di visitare visualizzazioni diverse per trovare le proprie app.
+
+- Il riquadro **App aziendali** attualmente fa riferimento a un elenco di tutte le app nella scheda TUTTE del sito Web del portale aziendale e continuerà a funzionare allo stesso modo. Il nome del riquadro verrà modificato in **Tutte le app**.
+- Il riquadro **Altre app** attualmente punta a una vista, all'interno dell'app Portale aziendale, che elenca tutte le app che Apple consente all'app Portale aziendale di visualizzare. Il nome del riquadro verrà modificato in **App in evidenza** e toccandolo gli utenti verranno indirizzati alla scheda IN EVIDENZA del sito Web del portale aziendale.
+-  Il riquadro **Categorie** attualmente punta a una vista, all'interno dell'app Portale aziendale, che elenca le categorie delle app. Il nome del riquadro non verrà modificato, ma ora punterà alla scheda CATEGORIE del sito Web del portale aziendale.
+È possibile trovare [qui](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186) le schermate aggiornate.
+<!---TFS 1317133--->
+
+### Chiedere conferma per installare l'app Managed Browser per iOS se i professionisti IT impostano tale requisito per un'app
+Nella versione di settembre dell'app Portale aziendale per iOS, se è stata configurata l'apertura di una clip Web solo nel browser gestito e il browser gestito non è installato in un dispositivo, l'app Portale aziendale sul dispositivo chiederà all'utente di installare il browser gestito prima di poter installare la clip Web. 
+<!---TFS 1228570--->
 
 ## Deprecazione del servizio
 ### Le app del portale aziendale per Windows 8 e Windows Phone 8 verranno deprecate a partire da settembre 2016
@@ -123,6 +135,6 @@ Per informazioni dettagliate sugli ultimi sviluppi, vedere [Novità di Microsoft
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

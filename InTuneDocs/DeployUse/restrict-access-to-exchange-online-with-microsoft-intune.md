@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
 
 
 ---
@@ -29,7 +29,7 @@ Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'ar
 >[!IMPORTANT]
 >L'accesso condizionale per i PC e i dispositivi Windows 10 Mobile con app che usano l'autenticazione moderna non è attualmente disponibile per tutti i clienti di Intune. Se si usano già queste funzionalità, non è necessario intraprendere alcuna azione ed è possibile continuare a usarle.
 
->Se non sono stati creati criteri di accesso condizionale per PC o dispositivi Windows 10 Mobile con app che usano l'autenticazione moderna e si desidera eseguire questa operazione, è necessario inviare una richiesta.  Per altre informazioni sui problemi noti e su come ottenere l'accesso a questa funzionalità, consultare il [sito di Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+>Se non sono stati creati criteri di accesso condizionale per PC o Windows 10 Mobile per le app che usano l'autenticazione moderna e si vuole eseguire questa operazione, iscriversi per l'anteprima pubblica di Azure Active Directory che include l'accesso condizionale basato su dispositivi per i dispositivi gestiti di Intune o per i PC Windows aggiunti al dominio. Per altre informazioni, leggere [questo post di blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).  
 
 **Prima** di configurare l'accesso condizionale, è necessario:
 
@@ -196,7 +196,7 @@ Solo i gruppi che sono considerati come destinazione dei criteri di accesso cond
         * Piattaforme non supportate come Mac OS.  Tuttavia, le app che usano l'autenticazione moderna da queste piattaforme verranno comunque bloccate.
 
         >[!TIP]
-           Se l'accesso condizionale per PC non è già in uso, è possibile che questa opzione non venga visualizzata.  Usare le **piattaforme specifiche**. L'accesso condizionale per i PC non è attualmente disponibile per tutti i clienti di Intune.   Per altre informazioni sui problemi noti e su come ottenere l'accesso a questa funzionalità, consultare il [sito di Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+           Se l'accesso condizionale per PC non è già in uso, è possibile che questa opzione non venga visualizzata.  Usare le **piattaforme specifiche**. L'accesso condizionale per i PC non è attualmente disponibile per tutti i clienti di Intune.   [In questo post di blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) sono disponibili altre informazioni su come accedere a questa funzionalità.
 
     -   **Piattaforme specifiche**
 
@@ -260,6 +260,6 @@ Nel dashboard di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sceglier
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

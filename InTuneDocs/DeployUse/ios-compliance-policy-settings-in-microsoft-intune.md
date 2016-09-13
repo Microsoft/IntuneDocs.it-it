@@ -3,8 +3,8 @@ title: "Impostazioni dei criteri di conformità per i dispositivi iOS | Microsof
 description: 
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
-ms.openlocfilehash: 591023ea08b669ca69e8cac45e37b5fb2689ddcd
+ms.sourcegitcommit: 6b6a5e2435a3cdffeaf27b0045dee9b8263cdc7a
+ms.openlocfilehash: 1e2dc1e94870bb53143bee62ccc9696a28285987
 
 
 ---
@@ -68,18 +68,18 @@ Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 
      Per dettagli sui profili di posta elettronica, vedere [Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
-## Impostazioni dell'integrità dei dispositivi
+## Impostazioni dello stato dei dispositivi
 
 - **Il dispositivo non deve essere jailbroken o rooted:** se si abilita questa impostazione, i dispositivi jailbroken non risultano conformi.
 
 ##  Proprietà dispositivo
 - **Minimum OS required** (Versione minima richiesta del sistema operativo): quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme.
-Viene visualizzato un collegamento a informazioni per eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e dopo l'aggiornamento potrà accedere alle risorse aziendali.
+Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e dopo l'aggiornamento potrà accedere alle risorse aziendali.
 
 - **Maximum OS version allowed** (Versione massima consentita del sistema operativo): quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali risulterà bloccato e l'utente dovrà contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
