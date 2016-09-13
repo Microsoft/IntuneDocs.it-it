@@ -3,8 +3,8 @@ title: Personalizzare le visualizzazioni della console per i ruoli di amministra
 description: Usare questo argomento per filtrare la visualizzazione della console di amministrazione di Intune per consentire agli amministratori di visualizzare solo gli elementi necessari per il proprio ruolo.
 keywords: 
 author: robstackmsft
-manager: arob98
-ms.date: 07/19/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: 132648f4c4d13983b169fa8497deae9787fe6db5
+ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
+ms.openlocfilehash: a17f207db4cf8fe0fd53348be464a367d9a8b0a4
 
 
 ---
 
 # Personalizzare le visualizzazioni della console di Intune in base ai ruoli di amministratore
-È possibile filtrare la visualizzazione della console di amministrazione di Microsoft Intune per consentire gli amministratori di visualizzare solo gli elementi necessari per il proprio ruolo. Ad esempio, è possibile consentire solo agli operatori della console di amministrazione di aggiornare le definizioni malware o reimpostare il passcode su dispositivi. Questa operazione viene eseguita usando il set di impostazioni **designazioni** che è possibile assegnare a utenti specifici. Quando gli utenti accedono alla console di amministrazione, vengono visualizzati solo gli elementi specifici di loro designazione.
+È possibile filtrare la visualizzazione della console di amministrazione di Microsoft Intune per consentire gli amministratori di visualizzare solo gli elementi necessari per il proprio ruolo. Ad esempio, è possibile consentire solo agli operatori della console di amministrazione di aggiornare le definizioni malware o reimpostare il passcode su dispositivi. Questa operazione viene eseguita usando il set di impostazioni **designazioni** che è possibile assegnare a utenti specifici. Quando gli utenti accedono alla console di amministrazione, possono vedere solo gli elementi specifici di loro designazione.
 
-## Come creare una visualizzazione personalizzata
+## Per creare una visualizzazione personalizzata
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Amministrazione**&gt;**Amministratori dei servizi**.
 
@@ -60,14 +60,14 @@ ms.openlocfilehash: 132648f4c4d13983b169fa8497deae9787fe6db5
 
         -   Aggiornare l'inventario
 
-        -   Blocco remoto un dispositivo
+        -   Bloccare un dispositivo in modalità remota
 
-        -   Reimpostazione del passcode
+        -   Reimpostare un passcode
 
 Il livello di accesso designato viene assegnato all'amministratore configurato quando apre la console di amministrazione di Intune.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -13,15 +13,22 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 
 ---
 
 # Ritirare i dispositivi dalla gestione di Intune
 
-Indipendentemente dal fatto che un dispositivo sia personale o aziendale, arriva un momento in cui è necessario rimuoverlo dalla gestione in Intune. Il ritiro di un dispositivo è relativamente semplice. È possibile eseguire una cancellazione selettiva o una cancellazione completa nei dispositivi gestiti come dispositivi mobili. È anche possibile ritirare i PC gestiti con il software client di Intune.
+Indipendentemente dal fatto che un dispositivo sia personale o aziendale, arriva un momento in cui è necessario rimuoverlo dalla gestione in Intune. Può essere necessario ritirare un dispositivo per diversi motivi:
+
+-   L'utente lascia la società in modo pianificato (abbandono "gestito")
+-   L'utente lascia la società improvvisamente (licenziamento, dimissioni e così via)
+-   Il dispositivo viene perso
+-   Il dispositivo viene riutilizzato (passaggio a un altro utente, riutilizzo per altri scopi e così via)
+
+È possibile eseguire una cancellazione selettiva o una cancellazione completa nei dispositivi gestiti come dispositivi mobili oppure è possibile bloccare un dispositivo e reimpostarne la password. Cancellando il dispositivo, la sottoscrizione dell'utente viene liberata per l'aggiunta di un altro dispositivo. È inoltre possibile ritirare i PC gestiti con il software client di Intune.
 
 ## Cancellare i dati e le app dai dispositivi
 Sia la cancellazione selettiva sia quella completa rimuovono il dispositivo dalla gestione di Intune rimuovendo i relativi criteri e il portale aziendale. Il dispositivo non dispone quindi più delle credenziali necessarie per accedere alle risorse aziendali, ad esempio Microsoft SharePoint, posta elettronica o Office 365.
@@ -62,6 +69,6 @@ In alcuni casi è il dispositivo stesso ad aver raggiunto il termine della vita 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

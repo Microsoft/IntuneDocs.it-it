@@ -13,11 +13,15 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
-ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
+ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
+ms.openlocfilehash: b13e2ff2f4822d71ef8cff9d835e32b99cb3e4ab
 
 
 ---
+# Usare gruppi per gestire utenti e dispositivi in Microsoft Intune
+
+Questo argomento descrive come creare gruppi in Intune. Fornisce inoltre informazioni su come verrà modificata la gestione dei gruppi nei prossimi mesi. Per informazioni sull'approccio *corrente* alla gestione dei gruppi, vedere [Creare gruppi per gestire utenti e dispositivi con Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in questo argomento.
+
 ## Avviso sui miglioramenti che verranno apportati alle funzionalità di amministrazione per i gruppi
 
 Sulla base dei feedback degli utenti in cui venivano richieste funzionalità di raggruppamento e assegnazione in Enterprise Mobility e Enterprise Security, Microsoft ha deciso di convertire i gruppi di Intune in gruppi di sicurezza basati su Azure Active Directory. In questo modo la gestione dei gruppi verrà unificata in Intune e Azure Active Directory (Azure AD). Questa nuova esperienza consentirà di evitare la duplicazione dei gruppi tra i servizi e offrirà estendibilità tramite PowerShell e Graph. 
@@ -72,7 +76,7 @@ Anche se l'esperienza di raggruppamento registrerà dei miglioramenti, alcune fu
 -  Se sono presenti amministratori che non dispongono delle autorizzazioni per la creazione di gruppi in Azure AD, chiedere all'amministratore di Azure AD di aggiungerli al ruolo di **amministratore del servizio di Intune** di Azure AD.
 
 
-# Creare gruppi per gestire utenti e dispositivi con Microsoft Intune
+## Creare gruppi per gestire utenti e dispositivi con Microsoft Intune
 
 Questa sezione descrive come creare gruppi di Intune nella console di amministrazione di Intune.
 
@@ -208,6 +212,6 @@ Ogni criterio dispone di un **previsto valore** e **stato**. Il valore previsto 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

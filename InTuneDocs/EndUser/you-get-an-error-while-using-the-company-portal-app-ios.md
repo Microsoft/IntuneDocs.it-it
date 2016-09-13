@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 85a036fd910bb91bf8f0728ca2aa486189471ac6
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 481f9570f4c1cf30bfb7be9beef2681fa5fc84f7
 
 
 ---
@@ -32,11 +32,10 @@ Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo i
 -   Agitando il dispositivo mentre è attiva l'app Portale aziendale e quindi toccando **Posta elettronica** quando viene visualizzato l'avviso di diagnostica. Se l'avviso non viene visualizzato quando si agita il dispositivo, aprire **Impostazioni** &gt; **Portale aziendale** e verificare che l'opzione **Movimento di agitazione** sia selezionata.
 
 
-### Vedere anche
-[Uso del dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 
