@@ -9,8 +9,9 @@
 ## [Registrare i dispositivi](enroll-devices-in-microsoft-intune.md)
 ### [Prepararsi alla registrazione dei dispositivi su Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 #### [Gestione di iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile e Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+#### [Gestione per Android](set-up-android-management-with-microsoft-intune.md)
 #### [Gestione dei dispositivi Windows ](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows 10 Mobile e Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Gestire i dispositivi di proprietà dell'azienda](manage-corporate-owned-devices.md)
 #### [Registrare i dispositivi iOS di proprietà dell'azienda](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Registrazione di Assistente configurazione iOS](ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -107,6 +108,7 @@
 #### [Creare e distribuire i criteri MAM](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Criteri MAM per Android](android-mam-policy-settings.md)
 #### [Criteri MAM per iOS](ios-mam-policy-settings.md)
+#### [Convalidare i criteri MAM](validate-mobile-application-management.md)
 #### [Monitorare la conformità ai criteri](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Gestire il trasferimento di dati tra app iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [Esperienza utente finale](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
@@ -135,6 +137,6 @@
 # [Risolvere i problemi](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 

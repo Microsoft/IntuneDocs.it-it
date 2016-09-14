@@ -4,7 +4,7 @@ description: "Creare criteri per il controllo delle impostazioni e delle funzion
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
+ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
+ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
 
 
 ---
@@ -81,6 +81,8 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 |**Richiedi backup crittografato**|Richiede la crittografia di tutti i backup del dispositivo.|
 |**Consenti alle app gestite di sincronizzare i dati in iCloud**|Consentire alle app gestite con Intune di sincronizzare i dati con l'account iCloud dell'utente.|
 |**Consenti a Handoff di continuare le attività in un altro dispositivo**|Consentire all'utente di proseguire il lavoro iniziato in un dispositivo iOS in un altro dispositivo iOS o Mac OS X.|
+|**Consenti la condivisione di foto con iCloud**|Consentire l'uso della funzionalità di streaming foto condiviso iOS.|
+|**Consenti la raccolta di foto con iCloud**|Consentire all'utente di archiviare le foto in iCloud. Se disabilitata, eventuali foto già archiviate in iCloud verranno rimosse.|
 
 ### Impostazioni dell'applicazione per il browser
 Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
@@ -99,14 +101,14 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
-|**Consenti archivio applicazioni**|Consentire al dispositivo di accedere all'App Store.|
+|**Consenti l'installazione di app**|Consentire al dispositivo di accedere all'App Store e installare le app.|
 |**Richiedi una password per accedere all'archivio applicazioni**|Richiedere all'utente di immettere la password prima di visitare l'App Store.|
 |**Consenti acquisti in-app**|Consente gli acquisti online dall'interno di un'app in esecuzione.|
 |**Consenti documenti gestiti in altre app non gestite**|Consente di visualizzare documenti aziendali in qualsiasi app.<br>**Esempio:** si vuole impedire agli utenti il salvataggio di file dall'app OneDrive a Dropbox. Disabilitare questa impostazione. Dopo aver ricevuto i criteri, ad esempio dopo un riavvio, il dispositivo non consentirà più il salvataggio.|
 |**Consenti documenti non gestiti in altre app gestite**|Consente di visualizzare qualsiasi documento nelle app aziendali gestite.|
 |**Consenti videoconferenza**|Consentire l'uso di applicazioni di videoconferenza come Facetime sul dispositivo.|
-|**Consenti contenuti per adulti nell'archivio multimediale**|Consente al dispositivo di accedere ai contenuti dell'archivio classificati come per adulti.|
-|**Consenti all'utente di scaricare contenuti da iBook Store contrassegnati come 'Erotici'**|Consentire all'utente di scaricare libri della categoria "Erotici".|
+|**Consenti all'utente di considerare attendibili nuovi autori di app aziendali**|Consentire all'utente di scegliere di considerare attendibili le app che non sono state scaricate dall'App Store.|
+
 
 ### Impostazioni dell'applicazione per i giochi
 Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
@@ -116,12 +118,23 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 |**Consenti l'aggiunta di amici al Game Center**|Consente all'utente di aggiungere amici in Game Center.|
 |**Consenti modalità di gioco multiplayer**|Consente all'utente di partecipare a giochi multiplayer sul dispositivo.|
 
+### Impostazioni dell'applicazione per i contenuti multimediali
+Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+
+|Nome impostazione|Dettagli|
+|----------------|-------|
+|**Area classificazioni**|Selezionare un'area, quindi selezionare la classificazione massima che gli utenti possono scaricare per **film**, **show televisivi** e **app**.|
+|**Consenti contenuti per adulti nell'archivio multimediale**|Consente al dispositivo di accedere ai contenuti dell'archivio classificati come per adulti.|
+|**Consenti all'utente di scaricare contenuti da iBook Store contrassegnati come 'Erotici'**|Consentire all'utente di scaricare libri della categoria "Erotici".|
+
+
 ### Impostazioni delle funzionalità del dispositivo per l'hardware
 Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
 |**Consenti dispositivo foto/video**|Specificare se è consentito l'uso della fotocamera del dispositivo.|
+|**Forza gli Apple Watch associati a usare il rilevamento del polso**|Se abilitata, l'Apple Watch non visualizza notifiche se non è indossato.|
 |**Richiedi una password di associazione per le richieste AirPlay in uscita**|Richiedere una password di associazione quando l'utente usa AirPlay per trasmettere i contenuti ad altri dispositivi di Apple.|
 
 ### Impostazioni delle funzionalità del dispositivo per il cellulare
@@ -141,6 +154,7 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 |**Consenti Siri**|Consente l'uso dell'assistente vocale Siri sul dispositivo.|
 |**Consenti Siri quando il dispositivo è bloccato**|Consente l'uso dell'assistente vocale Siri quando il dispositivo è bloccato.|
 |**Consenti composizione vocale**|Consente l'uso della funzionalità di composizione vocale sul dispositivo.|
+|**Non consentire AirDrop dalle app gestite**|Impedisce alle app gestite di inviare dati tramite AirDrop.|
 
 
 ### Impostazioni per le app conformi e non conformi
@@ -214,24 +228,55 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 |----------------|--------------------|
 |**Consenti blocco attivazione quando il dispositivo è in modalità di supervisione**|Abilitare il blocco attivazione su dispositivi iOS con supervisione.|
 
-### Supervisione
+### Impostazioni della modalità di supervisione
 Nei dispositivi che eseguono iOS 7.1 e versioni successive in modalità di supervisione possono essere configurate le impostazioni seguenti.
+
+### Impostazioni della modalità di supervisione per restrizioni del dispositivo
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
 |**Consenti la modifica dell'account**|Consente all'utente di modificare le impostazioni dell'account, ad esempio le configurazioni di posta elettronica.|
-|**Consenti AirDrop**|Consentire l'uso della funzionalità AirDrop per scambiare contenuti con i dispositivi presenti nelle vicinanze.|
 |**Consenti le modifiche alle impostazioni dell'utilizzo della rete dati dell'app**|Consente all'utente di controllare le app che possono usare la rete dati.|
-|**Consenti a Siri di eseguire query sul contenuto generato dall'utente da Internet**|Consentire a Siri di accedere ai siti Web per rispondere alle domande.|
-|**Consenti l'accesso all'iBooks Store**|Consente all'utente di selezionare e acquistare libri all'iBooks Store.|
-|**Consenti modifiche alle impostazioni dell'app Find My Friends**|Consente all'utente di modificare le impostazioni dell'app Find My Friend.|
 |**Consenti l'uso dell'opzione di cancellazione di tutti i contenuti e tutte le impostazioni sul dispositivo**|Consentire all'utente di usare l'opzione per cancellare tutti i contenuti e tutte le impostazioni sul dispositivo.|
 |**Consenti all'utente di abilitare restrizioni nelle impostazioni del dispositivo**|Consentire all'utente di configurare restrizioni, come il controllo genitori, sul dispositivo.|
-|**Consenti alla ricerca Spotlight di restituire risultati da Internet**|Consentire alla ricerca Spotlight di connettersi a Internet per visualizzare altri risultati.|
-|**Consenti Game Center**|Consente l'uso dell'app Game Center.|
-|**Consenti l'associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS**|Consentire l'associazione di host in modo che l'amministratore possa controllare a quali dispositivi può essere associato un dispositivo iOS 7.|
+|**Consenti l'associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS**|Consentire l'associazione di host in modo che l'amministratore possa controllare a quali dispositivi può essere associato un dispositivo iOS.|
 |**Consenti all'utente di installare profili di configurazione e certificati**|Consente all'utente di installare profili di configurazione e certificati.|
+|**Consenti la modifica del nome dispositivo**|Consentire all'utente di modificare il nome del dispositivo.|
+|**Consenti la modifica del passcode**|Consentire l'aggiunta, la modifica o la rimozione della password del dispositivo.|
+|**Consenti l'associazione di Apple Watch**|Consentire al dispositivo di associare un Apple Watch.|
+|**Consenti la modifica delle impostazioni di notifica**|Consentire all'utente di modificare le impostazioni di notifica del dispositivo.|
+|**Consenti la modifica dello sfondo**|Consentire all'utente di modificare lo sfondo del dispositivo.|
+
+### Impostazioni della modalità supervisione per restrizioni delle funzionalità
+
+|Nome impostazione|Dettagli|
+|----------------|--------------------|
+|**Consenti AirDrop**|Consentire l'uso della funzionalità AirDrop per scambiare contenuti con i dispositivi presenti nelle vicinanze.|
+|**Consenti a Siri di eseguire query sul contenuto generato dall'utente da Internet**|Consentire a Siri di accedere ai siti Web per rispondere alle domande.|
+|**Usa il filtro di Siri per le espressioni volgari**|Impedire a Siri di usare espressioni volgari.|
+|**Consenti alla ricerca Spotlight di restituire risultati da Internet**|Consentire alla ricerca Spotlight di connettersi a Internet per visualizzare altri risultati.|
+|**Consenti la ricerca della definizione delle parole**|Consentire la funzionalità di iOS che permette di evidenziare una parola e cercarne la definizione.|
+|**Consenti le tastiere predittive**|Consentire l'uso di tastiere predittive che suggeriscono all'utente i termini desiderati.|
+|**Consenti la correzione automatica**|Consentire al dispositivo di correggere automaticamente le parole errate.|
+|**Consenti il controllo ortografico tastiera**|Consentire al dispositivo di eseguire il controllo ortografico.|
+|**Consenti tasti di scelta rapida**|Consentire l'uso dei tasti di scelta rapida.|
+
+### Impostazioni della modalità supervisione per restrizioni dell'app
+
+|Nome impostazione|Dettagli|
+|----------------|--------------------|
+|**Consenti la modifica delle impostazioni di attendibilità delle app aziendali**||
+|**Consentire l'installazione di app esclusivamente tramite la configurazione di Apple e iTunes**||
+|**Consenti i download automatici delle app**||
+|**Consenti modifiche alle impostazioni dell'app Find My Friends**|Consente all'utente di modificare le impostazioni dell'app Find My Friend.|
+|**Consenti l'accesso all'iBooks Store**|Consente all'utente di selezionare e acquistare libri all'iBooks Store.|
 |**Consenti l'uso dell'app Messages sul dispositivo**|Consenti l'uso dell'app Messages per inviare messaggi di testo.|
+|**Consenti l'uso di podcast**|Consentire l'uso delle app di podcast.|
+|**Consenti l'uso del servizio Music**|Consentire l'uso dell'app Music di Apple.|
+|**Consenti il servizio iTunes Radio**|Consentire l'uso dell'app iTunes Radio.|
+|**Consenti Apple News**|Consentire l'uso dell'app Apple News.|
+|**Consenti Game Center**|Consente l'uso dell'app Game Center.|
+
 
 ### Mostrare o nascondere app
 
@@ -337,6 +382,6 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

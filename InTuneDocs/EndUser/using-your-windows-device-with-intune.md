@@ -13,22 +13,22 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
+ms.sourcegitcommit: d0cc50bb5d79f4840afee7984cf3f58f6dd26dac
+ms.openlocfilehash: 8832235ffdc8cd0b5b3eec244315711cfa59e069
 
 
 ---
 
 # Uso del dispositivo Windows con Intune
 
-Questo articolo contiene collegamenti a tutte le attività che gli utenti finali possono eseguire sui dispositivi gestiti da Intune. Gli amministratori IT possono usare queste informazioni per vedere i passaggi che seguono gli utenti per svolgere un'ampia gamma di attività, raggruppate in categorie: 
-- Installazione dell'app Portale aziendale e registrazione in Intune 
+Questo articolo contiene collegamenti a tutte le attività che gli utenti possono eseguire sui dispositivi gestiti da Intune. Gli amministratori IT possono usare queste informazioni per vedere i passaggi che gli utenti devono seguire per svolgere un'ampia gamma di attività, raggruppate in categorie come indicato di seguito:
+- Installazione dell'app Portale aziendale e registrazione in Intune
 - Attività di gestione di post-registrazione
 - Problemi di conformità
 
 ## Installazione dell'app Portale aziendale e registrazione in Intune
 
-Le informazioni contenute in questa sezione consentono di installare il Portale aziendale di Intune e di registrare dispositivi Windows.
+Le informazioni contenute in questa sezione consentono di installare il portale aziendale di Intune e di registrare dispositivi Windows.
 
 - [Registrare il dispositivo Windows in Intune](enroll-your-device-in-intune-windows.md)
 - [Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
@@ -47,9 +47,9 @@ Le informazioni contenute in questa sezione illustrano le azioni che è possibil
 - [Disattivare la raccolta dati di utilizzo di Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 - [Sync your device manually (Sincronizzare il dispositivo manualmente)](sync-your-device-manually-windows.md)
 
-## Risoluzione dei problemi relativi al dispositivo
+## Come risolvere i problemi relativi al dispositivo
 
-Le informazioni contenute in questa sezione consentono la risoluzione di problemi che si potrebbero verificare quando il dispositivo Windows viene registrato in Intune.
+Le informazioni contenute in questa sezione consentono di risolvere i problemi che si possono verificare quando il dispositivo Windows viene registrato in Intune.
 
 - [Il dispositivo non ha la versione minima richiesta del sistema operativo](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
 - [Il dispositivo non è conforme alla versione massima del sistema operativo](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
@@ -60,6 +60,6 @@ Le informazioni contenute in questa sezione consentono la risoluzione di problem
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 
