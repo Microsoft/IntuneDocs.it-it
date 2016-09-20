@@ -1,5 +1,5 @@
 
-  - Apple iOS 7.1 e versioni successive
+  - Apple iOS 8.0 e versioni successive
   - Google Android 4.0 e versioni successive (incluso Samsung KNOX SDK 4.0 e versioni successive)
   - Windows Phone 8.0 e versioni successive
   - Windows RT e Windows 8.1 RT
