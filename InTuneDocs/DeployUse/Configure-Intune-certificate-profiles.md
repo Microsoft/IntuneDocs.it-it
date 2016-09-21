@@ -4,7 +4,7 @@ description: Informazioni su come creare un profilo certificato di Intune.
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
+ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 
 
 ---
@@ -48,15 +48,9 @@ Il certificato viene importato quando si configura un profilo certificato attend
 
     Altre informazioni: [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Specificare le informazioni richieste per configurare le impostazioni del profilo certificato attendibile per Android, iOS, Mac OS X, Windows 8.1 o Windows Phone 8.1.
-
-    - Nell'impostazione **File di certificato** importare il certificato CA radice attendibile (file con estensione cer) esportato dalla CA emittente. L'impostazione **Archivio di destinazione** si applica esclusivamente ai dispositivi che eseguono Windows 8.1 e versioni successive e solo se il dispositivo ha più di un archivio di certificati.
-    -  In **Formato nome soggetto** selezionare **Personalizzato** per immettere un formato personalizzato del nome soggetto.  
-        Le due variabili attualmente supportate per il nome personalizzato sono `Common Name (CN)` ed `Email (E)`. Usando una combinazione di queste variabili e stringhe statiche, è possibile creare un formato di nome soggetto personalizzato simile al seguente:  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        In questo esempio l'amministratore ha creato un formato di nome soggetto che, oltre alle variabili `CN` ed `E`, usa stringhe per i valori Unità organizzativa, Organizzazione, Località, Stato e Paese. La [funzione CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) elenca le stringhe supportate.  
+3.  Specificare le informazioni richieste per configurare le impostazioni del profilo certificato attendibile per Android, iOS, Mac OS X, Windows 8.1 o Windows Phone 8.1. 
+4.  Nell'impostazione **File di certificato** importare il certificato CA radice attendibile (file con estensione cer) esportato dalla CA emittente. L'impostazione **Archivio di destinazione** si applica esclusivamente ai dispositivi che eseguono Windows 8.1 e versioni successive e solo se il dispositivo ha più di un archivio di certificati.
+    
 4.  Scegliere **Salva criterio**.
 
 Il nuovo criterio verrà visualizzato nell'area di lavoro **Criteri**. È ora possibile distribuirlo.
@@ -79,7 +73,7 @@ Dopo aver creato un profilo certificato CA attendibile, creare i profili certifi
 3.  Seguire le istruzioni nella pagina di configurazione del profilo per configurare le impostazioni del profilo di certificato SCEP.
     > [!NOTE]
     >
-    > In **Formato nome soggetto** selezionare **Personalizzato** per immettere un formato personalizzato del nome soggetto.
+    > In **Formato del nome soggetto** selezionare **Personalizzato** per immettere un formato personalizzato del nome soggetto (solo nei profili iOS).
     >
     > Le due variabili attualmente supportate per il nome personalizzato sono `Common Name (CN)` ed `Email (E)`. Usando una combinazione di queste variabili e stringhe statiche, è possibile creare un formato di nome soggetto personalizzato simile al seguente:
 
@@ -136,6 +130,6 @@ Comprendere, successivamente, come usare i certificati per proteggere i profili 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -4,7 +4,7 @@ description: Questo argomento consente di risolvere i problemi di distribuzione 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
-ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
+ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
+ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
 
 
 ---
@@ -22,49 +22,7 @@ ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 # Risorse che consentono di risolvere i problemi di distribuzione dell'app in Microsoft Intune
 Se si verificano problemi durante la distribuzione e la gestione di app con Intune, iniziare da qui. Questo argomento descrive alcuni problemi comuni e le relative soluzioni.
 
-## Problemi comuni relativi alla distribuzione delle app
-
-### Le informazioni di Contatta l'IT non sono presenti nel portale aziendale
-
-1.  Nella console di amministrazione di Intune fare clic su **Amministrazione** &gt; **Portale aziendale**.
-
-2.  Impostare i dettagli di **Contatta l'IT** .
-
-### Se non sono visualizzate app specifiche nell'elenco
-
-1.  Verificare di stare controllando l'elenco delle app di un utente o un dispositivo a cui è stata distribuita l'app.
-
-2.  Verificare che il dispositivo soddisfi i requisiti per l'app.
-
-### Se viene visualizzato un errore durante il download di un'app
-
-1.  Verificare che non siano in esecuzione download simultanei per ogni utente. Ogni utente può scaricare un'app alla volta.
-
-2.  Assicurarsi che non vi siano troppi download simultanei per ogni account. Attendere qualche minuto e riprovare.
-
-3.  Se si riceve un messaggio nativo di iOS che afferma che non è possibile eseguire l'installazione, che l'installazione è stata annullata o che è necessario riprovare, ciò può essere causato da una condizione di traffico elevato. Attendere qualche minuto e riprovare.
-
-4.  Se l'indicatore di stato del download dell'app per iOS indica che l'operazione è completata ma l'installazione non riesce, è possibile che l'errore sia nei file dell'app specificati.
-
-
-### Se l'app è bloccata sullo stato "in corso" durante il caricamento
-
-1.  Durante il caricamento di un'app, vengono aggiunti prima i metadati, seguiti dal pacchetto dell'app. Una volta caricati i metadati, l'app verrà visualizzata con stato "in corso". Se l'app rimane "in corso" per un periodo insolitamente lungo, eliminare l'app e caricarla di nuovo.
-
-2.  Assicurarsi di non gestire la distribuzione dell'app mentre lo stato è "in corso".
-
-### Se si verifica un errore durante l'installazione di un'app per iOS
-
-1.  Assicurarsi che il firewall dell'organizzazione consenta l'accesso ai siti Web di provisioning e certificazione Apple.
-
-2.  Per altre informazioni, consultare la documentazione per sviluppatori di Apple.
-
-### Se le app gestite non inviano informazioni sullo stato di installazione
-
-Lo stato di installazione non viene raccolto per le installazioni delle app gestite prima dell'aggiornamento del servizio Microsoft Intune di novembre 2014. Per i dispositivi con app gestite installate prima di questo aggiornamento del servizio aggiornare ogni distribuzione dell'app associata con l'azione di distribuzione appropriata, ad esempio **Installazione disponibile**. Ogni dispositivo aggiornerà l'app durante il controllo automatico per le app disponibili. Per altre informazioni, vedere [Update apps using Microsoft Intune](/intune/deploy-use/update-apps-using-microsoft-intune) (Aggiornare le app con Microsoft Intune).
-
-## <a name="BKMK_SoftDistErrorCodes"></a>Codici di errore di distribuzione dell'app
-Nella tabella seguente sono elencati gli errori più comuni che possono verificarsi durante la distribuzione dell'app Intune, oltre alle cause più probabili e alle possibili soluzioni.
+## Codici di errore di distribuzione dell'app comuni
 
 |Codice errore|Possibile problema|Soluzione suggerita|
 |--------------|--------------------|------------------------|
@@ -79,6 +37,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

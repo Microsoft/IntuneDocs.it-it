@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
-ms.openlocfilehash: 1f6a4b3988dbebce23a59b4ba14c79cd28cf6882
+ms.sourcegitcommit: c636efee82331d6feac75153b872526f7af7c882
+ms.openlocfilehash: 814312b0ac6055ffff2efad2ddbdaa8664f84fde
 
 
 ---
@@ -29,6 +29,21 @@ Tutte queste funzionalità saranno supportate per le distribuzioni ibride dei cl
 >Post di blog: Ensuring mobile devices are up to date using Microsoft Intune (Verifica dell'aggiornamento dei dispositivi mobili con Microsoft Intune)<br>
 >Dopo le recenti infezioni da malware "Trident" sui dispositivi iOS, è stato pubblicato un nuovo post di blog, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) (Verifica dell'aggiornamento dei dispositivi mobili con Microsoft Intune) che descrive come usare Intune per la protezione e l'aggiornamento dei dispositivi.
 
+## Settembre 2016
+
+## Aggiornamenti del portale aziendale
+### Android
+
+**Aggiunta di "Notifiche" al portale aziendale per Android**
+
+È stata aggiunta una nuova icona Notifiche al portale aziendale per Android nella home page. Toccando l'icona si accede alla pagina Notifiche in cui gli utenti finali possono visualizzare tutti gli elementi che richiedono attenzione nell'app Portale aziendale, ad esempio la non conformità del dispositivo, l'aggiornamento della registrazione e l'attivazione della registrazione. L'app del portale aziendale iOS dispone già di questa funzionalità delle notifiche. Con la nuova pagina Notifiche, all'utente non verrà visualizzata la pagina Configurazione dell'accesso aziendale ogni volta che avvia o riprende l'esecuzione del portale aziendale, a condizione che il dispositivo sia già registrato. Se si crea una propria guida per l'utente, aggiornare la documentazione per riportare questa modifica. Gli screenshot aggiornati sono disponibili [qui](https://aka.ms/androidcpupdate).  
+<!---TFS 1095560--->
+
+### Windows
+**È stato aggiunto un pulsante Feedback all'app del portale aziendale di Windows Phone 8.1**
+
+L'app del portale aziendale di Windows Phone 8.1 consente agli utenti di inviare feedback relativi all'app con il nuovo pulsante Invia il feedback. Per visualizzare il pulsante, gli utenti toccano il menu "tre punti" nella parte inferiore destra della schermata dell'app del portale aziendale e quindi toccano **Invia il feedback**. I feedback raccolti in modo anonimo consentiranno a Microsoft di migliorare l'esperienza dell'app del portale aziendale per gli utenti.
+<!---TFS 1317806--->
 
 ## Agosto 2016
 ## Gestione delle app
@@ -87,6 +102,10 @@ L'app Managed Browser di Microsoft Intune per iOS è stata aggiornata per il sup
 <!---TFS 1313253 checked--->
 
 ## Sviluppi futuri
+
+### Supporto di iOS 10
+Intune include il supporto completo di iOS 10. Altre informazioni saranno disponibili in seguito al rilascio pubblico di iOS 10.
+
 ### Transizione dai gruppi di Intune ai gruppi di Azure Active Directory a partire dal mese di settembre 2016
 Intune sta creando una nuova esperienza di gestione dei gruppi che usa i gruppi di sicurezza di Azure Active Directory (AAD) come gruppi di utenti e dispositivi in Intune. Questi gruppi verranno usati per la gestione dei gruppi, la distribuzione dei criteri e la distribuzione dei profili **con l'introduzione del nuovo portale di amministrazione di Intune basato su Azure**.
 
@@ -158,6 +177,6 @@ Per vedere cosa è stato rilasciato in Intune negli ultimi sei mesi, leggere l'a
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
