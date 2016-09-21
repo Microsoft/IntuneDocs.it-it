@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
-ms.openlocfilehash: a753ecfa08adcd27049c70889c50e10618ecddba
+ms.sourcegitcommit: c636efee82331d6feac75153b872526f7af7c882
+ms.openlocfilehash: 814312b0ac6055ffff2efad2ddbdaa8664f84fde
 
 
 ---
@@ -24,6 +24,26 @@ Di seguito sono illustrate le novità di questa versione di Microsoft Intune, ol
 
 Tutte queste funzionalità saranno supportate per le distribuzioni ibride dei clienti (Configuration Manager con Intune). Per altre informazioni sulle nuove funzionalità ibride, vedere la [pagina Novità per le funzionalità ibride](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
+
+>[!IMPORTANT] 
+>Post di blog: Ensuring mobile devices are up to date using Microsoft Intune (Verifica dell'aggiornamento dei dispositivi mobili con Microsoft Intune)<br>
+>Dopo le recenti infezioni da malware "Trident" sui dispositivi iOS, è stato pubblicato un nuovo post di blog, [Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/) (Verifica dell'aggiornamento dei dispositivi mobili con Microsoft Intune) che descrive come usare Intune per la protezione e l'aggiornamento dei dispositivi.
+
+## Settembre 2016
+
+## Aggiornamenti del portale aziendale
+### Android
+
+**Aggiunta di "Notifiche" al portale aziendale per Android**
+
+È stata aggiunta una nuova icona Notifiche al portale aziendale per Android nella home page. Toccando l'icona si accede alla pagina Notifiche in cui gli utenti finali possono visualizzare tutti gli elementi che richiedono attenzione nell'app Portale aziendale, ad esempio la non conformità del dispositivo, l'aggiornamento della registrazione e l'attivazione della registrazione. L'app del portale aziendale iOS dispone già di questa funzionalità delle notifiche. Con la nuova pagina Notifiche, all'utente non verrà visualizzata la pagina Configurazione dell'accesso aziendale ogni volta che avvia o riprende l'esecuzione del portale aziendale, a condizione che il dispositivo sia già registrato. Se si crea una propria guida per l'utente, aggiornare la documentazione per riportare questa modifica. Gli screenshot aggiornati sono disponibili [qui](https://aka.ms/androidcpupdate).  
+<!---TFS 1095560--->
+
+### Windows
+**È stato aggiunto un pulsante Feedback all'app del portale aziendale di Windows Phone 8.1**
+
+L'app del portale aziendale di Windows Phone 8.1 consente agli utenti di inviare feedback relativi all'app con il nuovo pulsante Invia il feedback. Per visualizzare il pulsante, gli utenti toccano il menu "tre punti" nella parte inferiore destra della schermata dell'app del portale aziendale e quindi toccano **Invia il feedback**. I feedback raccolti in modo anonimo consentiranno a Microsoft di migliorare l'esperienza dell'app del portale aziendale per gli utenti.
+<!---TFS 1317806--->
 
 ## Agosto 2016
 ## Gestione delle app
@@ -82,6 +102,10 @@ L'app Managed Browser di Microsoft Intune per iOS è stata aggiornata per il sup
 <!---TFS 1313253 checked--->
 
 ## Sviluppi futuri
+
+### Supporto di iOS 10
+Intune include il supporto completo di iOS 10. Altre informazioni saranno disponibili in seguito al rilascio pubblico di iOS 10.
+
 ### Transizione dai gruppi di Intune ai gruppi di Azure Active Directory a partire dal mese di settembre 2016
 Intune sta creando una nuova esperienza di gestione dei gruppi che usa i gruppi di sicurezza di Azure Active Directory (AAD) come gruppi di utenti e dispositivi in Intune. Questi gruppi verranno usati per la gestione dei gruppi, la distribuzione dei criteri e la distribuzione dei profili **con l'introduzione del nuovo portale di amministrazione di Intune basato su Azure**.
 
@@ -122,8 +146,8 @@ Da settembre, tutti gli utenti dell'app del portale aziendale di Microsoft Intun
 Nel mese di agosto Intune rilascerà un'app aggiornata di Managed Browser di Microsoft Intune per iOS che supporterà solo i dispositivi che eseguono iOS 8.0 o versione successiva. I dispositivi iOS 7.1 saranno ancora in grado di usare l'app Managed Browser esistente, tuttavia è consigliabile invitare gli utenti a eseguire l'aggiornamento a iOS 8.0 o versione successiva per accedere a Managed Browser e sfruttare i vantaggi delle nuove funzionalità.  
 <!---TFS 1313253--->
 
-- **Le app del portale aziendale per Windows 8 e Windows Phone 8 verranno deprecate a partire da settembre 2016** <br/>
-Da settembre 2016, Microsoft Intune terminerà il supporto per le app del portale aziendale di Microsoft Intune per le piattaforme Windows Phone 8 e Windows 8. Aggiornare i dispositivi a Windows 8.1 e Windows Phone 8.1 e usare le app del portale aziendale per Windows Phone 8.1 e Windows 8.1 corrispondenti per continuare a distribuire le app a tali dispositivi.
+- **Le app del portale aziendale per Windows 8 e Windows Phone 8 verranno deprecate** <br/>
+A partire da ottobre 2016, il supporto di Microsoft Intune per le app del portale aziendale di Windows Phone 8 e Windows 8 verrà deprecato. Verrà anche deprecato il supporto di Microsoft Intune per la piattaforma Windows Phone 8. Di conseguenza, non sarà possibile registrare o aggiornare i dispositivi Windows Phone 8. È possibile continuare a gestire i dispositivi Windows Phone 8 e Windows 8 che sono già registrati. Aggiornare i dispositivi Windows Phone 8 e Windows 8 a Windows 8.1 e Windows Phone 8.1 e usare le app del portale aziendale per Windows Phone 8.1 e Windows 8.1 corrispondenti per continuare a distribuire le app a tali dispositivi senza interruzioni.
 <!---TFS 1255391--->
 
 <!--- - **Custom Group Targeting of Notification Rules Removal.**<br/>
@@ -153,6 +177,6 @@ Per vedere cosa è stato rilasciato in Intune negli ultimi sei mesi, leggere l'a
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

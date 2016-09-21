@@ -4,7 +4,7 @@ description: "Usare le informazioni in questo argomento per decidere più facilm
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a8d2702037b7b96b454078e991dea429143e733
-ms.openlocfilehash: aa081dd17c0067082e314ac45d2a52792f66b8d6
+ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
+ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 
 ---
 
-# Informazioni di riferimento sui criteri di Microsoft Intune
+# Informazioni di riferimento sui criteri di configurazione di Microsoft Intune
 
 Usare le informazioni in questo argomento per decidere più facilmente quali criteri di configurazione di Microsoft Intune è necessario usare per gestire i dispositivi.
 
@@ -74,7 +74,7 @@ Si applica solo a Windows Phone e ai dispositivi Windows registrati.
 |---------------|------------------------|
 |**Configurazione personalizzata (Windows 10 Desktop e Mobile e versioni successive)**|Distribuire impostazioni URI OMA che possono essere usate per controllare le funzionalità del dispositivo. Questo criterio è utile quando l'impostazione necessaria non è disponibile nei criteri di configurazione.<br />    Per informazioni dettagliate, vedere [Impostazioni dei criteri di Windows 10 in Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Configurazione personalizzata (Windows Phone 8.1 e versioni successive)**|Distribuire impostazioni URI OMA che possono essere usate per controllare le funzionalità del dispositivo. Questo criterio è utile quando l'impostazione necessaria non è disponibile nei criteri di configurazione.<br /><br />Per informazioni dettagliate, vedere [Impostazioni dei criteri di Windows Phone 8.1 in Microsoft Intune](windows-phone-8-1-policy-settings-in-microsoft-intune.md).|
-|**Criteri di aggiornamento edizione (Windows 10 Desktop e versioni successive)**<br><br>**Criteri di aggiornamento edizione (Windows 10 Holographic e versioni successive)**|Configurare e distribuire criteri contenenti informazioni sulla licenza o sul codice Product Key usato per aggiornare i dispositivi Windows 10 a una versione più recente.<br><br>Per informazioni dettagliate, vedere [Impostazioni dei criteri di aggiornamento dell'edizione Windows in Microsoft Intune](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
+|**Criteri di aggiornamento edizione (Windows 10 Desktop e versioni successive)**<br><br>**Criteri di aggiornamento edizione (Windows 10 Holographic e versioni successive)**<br><br>**Criteri di aggiornamento edizione (Windows 10 Mobile e versione successiva)**|Configurare e distribuire criteri contenenti informazioni sulla licenza o sul codice Product Key usato per aggiornare i dispositivi Windows 10 a una versione più recente.<br><br>Per informazioni dettagliate, vedere [Impostazioni dei criteri di aggiornamento dell'edizione Windows in Microsoft Intune](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
 |**Profilo di posta elettronica (Windows Phone 8 e versioni successive)**<br /><br />**Profilo di posta elettronica (Windows 10 Desktop e Mobile e versioni successive)**|Creare, distribuire e monitorare le impostazioni di posta elettronica di Exchange ActiveSync in dispositivi gestiti. In questo modo, gli utenti possono accedere alla posta elettronica aziendale dai dispositivi personali senza alcuna configurazione.<br /><br />Per informazioni dettagliate, vedere [Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Configurazione generale (Windows 10 Desktop e Mobile e versioni successive)**|Configurare le impostazioni funzionali e di sicurezza del dispositivo mobile per i dispositivi Windows 10 Desktop e Mobile registrati.<br /><br />Per informazioni dettagliate, vedere [Impostazioni dei criteri di Windows 10 in Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Configurazione generale (Windows 10 Team e versioni successive)**|Configurare la sicurezza dei dispositivi e le impostazioni funzionali per i dispositivi Windows 10 Team registrati (ad esempio, un dispositivo Surface Hub).<br /><br />Per informazioni dettagliate, vedere [Impostazioni dei criteri di configurazione di Windows Team in Microsoft Intune](windows-team-configuration-policy-settings-in-microsoft-intune.md).|
@@ -104,25 +104,7 @@ Si applica solo a Windows Phone e ai dispositivi Windows registrati.
 > [!IMPORTANT]
 Microsoft Intune include ora **criteri di configurazione** distinti per ogni piattaforma del dispositivo e tali criteri includono le impostazioni più aggiornate che è possibile usare. È possibile continuare a usare i criteri di sicurezza del dispositivo mobile. Tutte le distribuzioni esistenti continueranno a funzionare, ma è consigliabile pianificare la migrazione ai nuovi criteri di configurazione non appena possibile.<br />Per informazioni dettagliate, vedere [Impostazioni dei criteri di sicurezza dei dispositivi mobili in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).|
 
-## Accesso condizionale e criteri di conformità
-
-### Accesso condizionale
-
-|Nome criteri|Quando usarli|
-|---------------|------------------------|
-|**Criteri di Exchange Online**<br /><br />**Criteri di Exchange locale**|Gestire l'accesso alla posta elettronica di Microsoft Exchange dai dispositivi non gestiti da Intune o non conformi ai criteri di conformità creati.<br /><br />Per informazioni dettagliate, vedere [Limitare l'accesso alla posta elettronica per Exchange Online e il nuovo ambiente Exchange Online dedicato](restrict-access-to-exchange-online-with-microsoft-intune.md).|
-|**Criteri di SharePoint Online**|Gestire l'accesso a SharePoint Online dai dispositivi non gestiti da Intune o non conformi ai criteri di conformità creati.<br /><br />Per informazioni dettagliate, vedere [Limitare l'accesso a SharePoint Online con Microsoft Intune](restrict-access-to-sharepoint-online-with-microsoft-intune.md).|
-|**Skype for Business**|Gestire l'accesso a Skype for Business dai dispositivi non gestiti da Intune o non conformi ai criteri di conformità creati.<br /><br />Per informazioni dettagliate, vedere [Limitare l'accesso a Skype for Business Online con Microsoft Intune](restrict-access-to-skype-for-business-online-with-microsoft-intune.md).|
-> [!NOTE]
-> Non distribuire i criteri di accesso condizionale a utenti e dispositivi. Configurare invece i criteri necessari, che verranno applicati a tutti i gruppi di destinazione indicati nei criteri.
-
-### Criteri di conformità
-
-|Nome criteri|Quando usarli|
-|---------------|------------------------|
-|**Criteri di conformità**|Definire il livello di conformità per i dispositivi e quindi segnalare quelli non conformi. Questi criteri vengono usati con l'accesso condizionale per facilitare la valutazione dei dispositivi che dovranno essere bloccati dai servizi.<br /><br />Per informazioni dettagliate vedere [Criteri di conformità dei dispositivi in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md).|
-
-## Gestione dei PC Windows
+## Criteri per i computer Windows gestiti dal client software di Intune
 
 |Nome criteri|Quando usarli|
 |---------------|------------------------|
@@ -136,6 +118,6 @@ Microsoft Intune include ora **criteri di configurazione** distinti per ogni pia
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

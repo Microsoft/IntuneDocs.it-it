@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
 
 
 ---
@@ -23,7 +23,9 @@ ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
 
 # Sincronizzare il dispositivo manualmente usando il sito Web del portale aziendale
 
-Se l'installazione dell'app sta richiedendo troppo tempo, è possibile provare a eseguire la sincronizzazione del dispositivo manualmente per accelerare il processo. Attenersi alle istruzioni riportate di seguito, corrispondenti al tipo di dispositivo o alla versione di Windows in uso. La sincronizzazione del dispositivo per accelerare il processo di installazione delle app funziona solo per le versioni elencate di seguito.
+Se l'installazione dell'app o altre attività stanno richiedendo troppo tempo, è possibile provare a eseguire la sincronizzazione del dispositivo manualmente per accelerare l'installazione o l'attività. Attenersi alle istruzioni seguenti corrispondenti al dispositivo in uso. 
+
+La funzionalità di sincronizzazione funziona solo per le versioni elencate di seguito.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -32,6 +34,6 @@ Se l'installazione dell'app sta richiedendo troppo tempo, è possibile provare a
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

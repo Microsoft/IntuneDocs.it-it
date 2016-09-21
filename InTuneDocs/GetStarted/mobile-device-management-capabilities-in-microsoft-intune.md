@@ -4,17 +4,17 @@ description: Leggere questo argomento per scoprire in che modo Intune consente d
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/23/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
-ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
+ms.sourcegitcommit: ff6bfdc079e00f8a39cc532d1f6f9049aa6a32c8
+ms.openlocfilehash: 10dfecd41e68440a4c27aa7358dbbc88b6106001
 
 
 ---
@@ -46,7 +46,8 @@ Tutte le attività di gestione, inventario, distribuzione di app, provisioning e
 |Configurazione delle app mobili iOS|Usa i criteri di configurazione delle app per dispositivi mobili per specificare impostazioni per app iOS che pssono essere necessarie quando l'utente esegue l'app. Ad esempio, un'app può richiedere all'utente di specificare un numero di porta o informazioni di accesso. Questo può semplificare la configurazione dell'app e ridurre il numero di chiamate all'help desk.|[Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |Profili di provisioning delle app mobili iOS|Consente di distribuire in modo proattivo i profili di provisioning alle app iOS prossime alla scadenza. |[Usare i criteri del profilo di provisioning per dispositivi mobili iOS per impedire la scadenza delle app](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Managed Browser|Configura i criteri di Managed Browser per controllare i siti Web che gli utenti possono visitare. Inoltre, è possibile applicare i criteri di gestione delle applicazioni mobili a Managed Browser.|[Gestire l'accesso a Internet utilizzando criteri di browser gestiti con Microsoft Intune.](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
-|Microsoft Passport|Consente di eseguire l'integrazione con Microsoft Passport for Work, un metodo di accesso alternativo per Windows 10 che usa un'istanza locale di Active Directory o Azure Active Directory per sostituire password, smart card o smart card virtuali.|[Controllare le impostazioni di Microsoft Passport nei dispositivi con Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Windows Hello for Business|Consente di eseguire l'integrazione con Windows Hello for Business, un metodo di accesso alternativo per Windows 10 che usa un'istanza locale di Active Directory o Azure Active Directory per sostituire password, smart card o smart card virtuali.|[Controllare le impostazioni di Microsoft Passport nei dispositivi con Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|App acquistate con Volume Purchase Program|Semplifica la gestione delle app acquistate con Volume Purchase Program importando le informazioni di licenza dall'App Store, verificando il numero di licenze usate e impedendo l'installazione di più copie dell'app rispetto a quelle possedute.|[Gestione delle app acquistate tramite Volume Purchase Program con Microsoft Intune](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
 ## Accesso alle risorse aziendali
 
@@ -70,6 +71,6 @@ Tutte le attività di gestione, inventario, distribuzione di app, provisioning e
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

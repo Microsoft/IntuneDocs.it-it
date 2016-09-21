@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
+ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 
 
 ---
@@ -22,15 +22,15 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # Uso del dispositivo Android con Intune
 
-Questo articolo contiene collegamenti a tutte le attività che gli utenti finali possono eseguire sui dispositivi gestiti da Intune. Gli amministratori IT possono usare queste informazioni per vedere i passaggi che seguono gli utenti per svolgere un'ampia gamma di attività, raggruppate in categorie: 
+Questo articolo contiene collegamenti a tutte le attività che gli utenti finali possono eseguire sui dispositivi gestiti da Intune. Gli amministratori IT possono usare queste informazioni per vedere i passaggi che gli utenti devono seguire per svolgere un'ampia gamma di attività, raggruppate nelle categorie seguenti:
 
-- Installazione dell'app Portale aziendale e registrazione in Intune 
+- Installazione dell'app Portale aziendale e registrazione in Intune
 - Attività di gestione di post-registrazione
 - Problemi di conformità
 
 ## Installazione dell'app Portale aziendale e registrazione in Intune
 
-Le informazioni contenute in questa sezione consentono di installare il Portale aziendale di Intune e di registrare dispositivi Android.
+Le informazioni contenute in questa sezione consentono di installare il portale aziendale di Intune e di registrare dispositivi Android.
 
 - [Registrare il dispositivo in Intune](enroll-your-device-in-Intune-android.md)
 - [Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
@@ -71,6 +71,6 @@ Le informazioni contenute in questa sezione consentono di risolvere i problemi c
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 
