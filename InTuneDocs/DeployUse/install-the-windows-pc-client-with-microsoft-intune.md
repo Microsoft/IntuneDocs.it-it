@@ -13,38 +13,27 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
-ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 8ceeca6735267ab66ab14e72570ace3dc8a9b524
 
 
 ---
 
-# Installare il client PC Windows con Microsoft Intune
-Usare questa guida per far gestire i computer Windows dal software client di Microsoft Intune.
+# Installare il client software di Intune nei PC Windows
+È possibile registrare i PC Windows installando il software client di Intune. Il software client di Intune può essere installato nei modi seguenti:
 
-## Prima di iniziare
-Prima di iniziare l'installazione del software client di Intune, leggere l'argomento [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md) (Risolvere i conflitti di criteri tra Microsoft Intune e gli oggetti Criteri di gruppo) per conoscere i requisiti per installare correttamente il client, quindi tornare a queste istruzioni.
+- Installazione manuale
+- Installazione con Criteri di gruppo
+- Inclusione in un'immagine disco
+- Installazione da parte dell'utente
 
-## Installare il client
-Usare che questa procedura per installare il client:
+## Download del software client di Intune
 
--   [Per scaricare il software client](#to-download-the-client-software)
-
-Quindi usare uno o più dei seguenti metodi per installare il client:
-
--   [Per distribuire manualmente il software client](#to-manually-deploy-the-client-software)
-
--   [Per distribuire automaticamente il software client usando Criteri di gruppo](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [Installare il software client Microsoft Intune come parte di un'immagine](#install-the-microsoft-intune-client-software-as-part-of-an-image)
-
-Se non è più necessario gestire un computer con Intune, è possibile disattivarlo. Durante l'operazione verrà rimosso dal computer anche il software client. Per altre informazioni, vedere [Attività comuni di gestione di PC Windows con client di Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
-
-### Per scaricare il software client
+Tutti i metodi, ad eccezione di quello in cui l'utente installa il software client di Intune autonomamente, rendono necessario il download del software per poterlo distribuire.
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) fare clic su **Amministrazione** &gt; **Download software client**
 
-  ![Scaricare il client PC Intune](./media/pc-SA-client-download.png)
+  ![Scaricare il client PC Intune](../media/pc-sa-client-download.png)
 
 2.  Nella pagina **Download software client** fare clic su **Scarica software client** e salvare il pacchetto **Microsoft_Intune_Setup.zip** che contiene il software in un percorso sicuro nella rete.
 
@@ -56,14 +45,14 @@ Se non è più necessario gestire un computer con Intune, è possibile disattiva
     > [!IMPORTANT]
     > Non rinominare o rimuovere il file **ACCOUNTCERT** estratto, altrimenti l'installazione del software client non riuscirà.
 
-### Per distribuire manualmente il software client
+## Distribuzione manuale
 
 1.  Nel computer individuare la cartella che contiene i file di installazione del software client, quindi eseguire **Microsoft_Intune_Setup.exe** per installare il software client.
 
     > [!NOTE]
     > Lo stato dell'installazione viene visualizzato quando si passa il mouse sull'icona nella barra delle applicazioni del computer client.
 
-### Per distribuire automaticamente il software client usando Criteri di gruppo
+## Distribuzione con Criteri di gruppo
 
 1.  Nella cartella che contiene i file **Microsoft_Intune_Setup.exe** e **MicrosoftIntune.accountcert** eseguire questo comando per estrarre i programmi di installazione basati su Windows Installer per i computer a 32 e 64 bit:
 
@@ -80,7 +69,7 @@ Se non è più necessario gestire un computer con Intune, è possibile disattiva
 
     Per altre informazioni sull'utilizzo di Criteri di gruppo per distribuire automaticamente il software, vedere la documentazione di Windows Server.
 
-### Installare il software client Microsoft Intune come parte di un'immagine
+## Installazione come parte di un'immagine
 Il software client di Intune può essere distribuito nei computer come parte di un'immagine del sistema operativo usando la seguente procedura di esempio come base:
 
 1.  Copiare i file di installazione client **Microsoft_Intune_Setup.exe** e **MicrosoftIntune.accountcert** nella cartella **%Systemdrive%\Temp\Microsoft_Intune_Setup** del computer di riferimento.
@@ -109,6 +98,12 @@ Dopo aver riavviato il computer di destinazione una volta eseguito il programma 
 L'attività di registrazione automatica, eseguita al successivo orario pianificato, verifica l'esistenza del valore del Registro di sistema **WindowsIntuneEnrollPending** e tenta di registrare il PC di destinazione in Intune. Se il tentativo non riesce a causa di un errore, la registrazione verrà ripetuta al momento della successiva esecuzione dell'attività. I tentativi continuano per un periodo di un mese.
 
 L'attività di registrazione automatica, il valore del Registro di sistema **WindowsIntuneEnrollPending** e il certificato dell'account vengono eliminati dal computer di destinazione al completamento della registrazione o dopo un mese.
+
+## Registrazione automatica da parte dell'utente
+
+Gli utenti possono installare il software client di Intune passando a [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com). Se il portale Web rileva che il dispositivo è un PC Windows, verrà chiesto di registrare il PC scaricando il client software di Intune. Dopo il download, gli utenti possono installare il software per la gestione dei PC.
+
+![Portale di Intune che richiede di scaricare il client software di Intune](../media/software-client-download.png)
 
 ## Controllare e convalidare la distribuzione del client
 Usare una delle seguenti procedure per controllare e convalidare la distribuzione del client.
@@ -139,6 +134,6 @@ Usare una delle seguenti procedure per controllare e convalidare la distribuzion
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

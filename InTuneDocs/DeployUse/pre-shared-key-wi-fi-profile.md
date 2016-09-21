@@ -3,7 +3,7 @@ title: Wi-Fi tramite PSK | Microsoft Intune
 description: Usare la configurazione personalizzata per creare un profilo Wi-Fi con una chiave precondivisa.
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: afdd0c3569c0c294a9bef47755de2d9e77e7507d
+ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
+ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
 
 
 
@@ -22,14 +22,14 @@ ms.openlocfilehash: afdd0c3569c0c294a9bef47755de2d9e77e7507d
 # Creare un profilo Wi-Fi con una chiave precondivisa
 Di seguito viene illustrato come usare la **configurazione personalizzata** di Intune per creare un profilo Wi-Fi con una chiave precondivisa. Questo argomento include anche un esempio di come creare un profilo Wi-Fi basato su EAP.
 
-Nota:
+> [!NOTE]
 -   Può risultare più semplice copiare il codice da un computer che si connette alla rete, come descritto di seguito.
 - Per Android, è possibile scegliere di usare lo script [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornito da Johnathon Biersack.
 -   È possibile aggiungere più reti e chiavi aggiungendo altre impostazioni URI OMA.
--  Per iOS, usare lo strumento Apple Configurator in una stazione Mac per configurare il profilo. In alternativa, usare lo script [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornito da Johnathon Biersack.
+-  Per iOS, usare Apple Configurator in una stazione Mac per impostare il profilo. In alternativa, usare lo script [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornito da Johnathon Biersack.
 
 
-1.  Per creare un profilo Wi-Fi con una chiave precondivisa per Android o Windows o un profilo Wi-Fi basato su EAP, quando si crea un criterio scegliere **Configurazione personalizzata** per tale piattaforma del dispositivo, anziché un profilo Wi-Fi.
+1.  Per creare un profilo Wi-Fi con una chiave precondivisa per Android o Windows o un profilo Wi-Fi basato su EAP, quando si crea un criterio scegliere **Configurazione personalizzata** per tale piattaforma del dispositivo anziché un profilo Wi-Fi.
 
 2.  Specificare un nome e una descrizione
 3.  Aggiungere una nuova impostazione URI OMA:
@@ -40,15 +40,27 @@ Nota:
 
    c.   **Tipo di dati**: impostare su "String(XML)"
 
-   d.   **URI OMA**: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.   **OMA-URI**:
 
-Nota: assicurarsi di includere il carattere punto (.) all'inizio.
+    - **Per Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+    - **err Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-SSID è l'identificatore del set di servizi per cui si stanno creando i criteri. Ad esempio:
-`./Vendor/MSFT/Wi-Fi/Profile/Hotspot-1/Settings`
+    > [!NOTE]
+Assicurarsi di includere il carattere punto (.) all'inizio.
 
-  e.    Campo del valore: posizione in cui si incolla il codice XML. Di seguito è presentato un esempio. Ogni valore deve essere adattato alle impostazioni di rete. Vedere la sezione relativa ai commenti del codice per alcuni puntatori.
+    SSID è l'identificatore del set di servizi per cui si stanno creando i criteri. Ad esempio:
+    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
+  e. **Campo valore** è la posizione in cui si incolla il codice XML. Di seguito è presentato un esempio. Ogni valore deve essere adattato alle impostazioni di rete. Vedere la sezione relativa ai commenti del codice per alcuni puntatori.
+4. Scegliere **OK**, salvare e distribuire i criteri.
+
+    > [!NOTE]
+Questi criteri possono essere distribuiti solo a gruppi di utenti.
+
+Alla successiva verifica da parte del dispositivo, verranno applicati i criteri e verrà creato un profilo Wi-Fi nel dispositivo. Il dispositivo sarà in grado di connettersi automaticamente alla rete.
+## Profilo Wi-Fi Windows o Android
+
+Di seguito è riportato un esempio di codice XML per un profilo Wi-Fi Windows o Android:
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -170,33 +182,31 @@ Di seguito è riportato un esempio di codice XML per un profilo Wi-Fi basato su 
       </MSM>
     </WLANProfile>
 
-4.  Fare clic su OK, quindi salvare e distribuire il criterio.
-NOTA: questo criterio può essere distribuito solo ai gruppi di utenti.
-
-Alla successiva verifica da parte del dispositivo, verranno applicati i criteri e verrà creato un profilo Wi-Fi nel dispositivo. Il dispositivo sarà in grado di connettersi automaticamente alla rete.
 ## Creare il file XML da una connessione Wi-Fi esistente
 È possibile creare il file XML da una connessione Wi-Fi esistente:
-1.     In un computer connesso alla rete wireless o che ha eseguito recentemente la connessione a tale rete, aprire la cartella seguente: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}. È consigliabile usare un computer che non si è connesso a molte reti wireless, in quanto sarà necessario eseguire una ricerca in ogni profilo per trovare quella più adatta.
+1. In un computer connesso alla rete wireless o che ha eseguito recentemente la connessione a tale rete, aprire la cartella seguente: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
+
+    È consigliabile usare un computer che non si è connesso a molte reti wireless, in quanto sarà necessario eseguire una ricerca in ogni profilo per trovare quella più adatta.
 3.     Cercare nei file XML per individuare quello con il nome corretto.
 4.     Dopo aver individuato il file XML corretto, copiare e incollare il codice XML nel campo Dati della pagina delle impostazioni URI OMA.
 
 ## Distribuire i criteri
 
-1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi fare clic su **Gestisci distribuzione**.
+1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire e quindi scegliere **Gestisci distribuzione**.
 
 2.  Nella finestra di dialogo **Gestisci distribuzione** :
 
-    -   **Per distribuire il criterio**: selezionare uno o più gruppi in cui si vuole distribuire il criterio, quindi fare clic su **Aggiungi** &gt; **OK**.
+    -   **Per distribuire il criterio**, selezionare uno o più gruppi a cui lo si vuole distribuire e quindi scegliere **Aggiungi** &gt; **OK**.
 
-    -   **Per chiudere la finestra di dialogo senza distribuire il criterio**, fare clic su **Annulla**.
+    -   **Per chiudere la finestra di dialogo senza distribuirlo**, scegliere **Annulla**.
 
-Quando si seleziona un criterio distribuito, è possibile visualizzare altre informazioni sulla distribuzione nella parte inferiore dell'elenco di criteri.
+Quando si seleziona un criterio distribuito, è possibile visualizzare altre informazioni sulla distribuzione nella parte inferiore dell'elenco dei criteri.
 
 ### Vedere anche
 [Connessioni Wi-Fi in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

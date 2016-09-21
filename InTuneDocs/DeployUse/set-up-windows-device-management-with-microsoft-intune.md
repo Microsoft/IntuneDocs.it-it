@@ -4,7 +4,7 @@ description: Abilitare la gestione di dispositivi mobili (MDM) per i PC Windows,
 keywords: 
 author: NathBarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,42 +13,49 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
-ms.openlocfilehash: fae2aa496ec38d9ddc2cb6800bed10ccb32fd154
+ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
+ms.openlocfilehash: 9b063c1e6b1ff5dcab16fce958ede49303284b18
 
 
 ---
 
 # Configurare la gestione dei dispositivi Windows
-Per informazioni su come configurare il dispositivo Windows, vedere [qui](../enduser/using-your-windows-device-with-intune.md).
 
-Con Intune è possibile abilitare la registrazione di dispositivi PC Windows BYOD (Bring Your Own Device) per concedere l'accesso alla posta elettronica e alle app aziendali. Usato con Azure Active Directory, offre anche un modo veloce e no-touch per gestire i nuovi dispositivi Windows 10 e ottenere l'accesso alle risorse aziendali senza dover ricreare l'immagine del computer. Dopo la registrazione, gli utenti possono accedere mentre ai dispositivi possono essere assegnati criteri, app e impostazioni mediante la console di amministrazione di Intune. È anche possibile [configurare la gestione di Windows Phone con Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) o [gestire i computer con software client di Intune](manage-windows-pcs-with-microsoft-intune.md) tramite il client Intune.
+In qualità di amministratore di Intune, è possibile abilitare la registrazione e la gestione per i PC Windows in due modi:
 
-La creazione di DNS CNAME consente agli utenti di connettersi e registrarsi in Intune senza immettere un nome server.
+- **[Registrazione automatica con Azure AD](#azure-active-directory-enrollment)**: gli utenti Windows 10 e Windows 10 Mobile registrano i propri dispositivi aggiungendo un account aziendale o dell'istituto di istruzione al dispositivo
+- **[Registrazione con il portale aziendale](#company-portal-app-enrollment)**: i dispositivi Windows 8.1 e versione successiva vengono registrati scaricando e installando l'app del portale aziendale e quindi immettendo le credenziali dell'account aziendale o dell'istituto di istruzione nell'app.
 
-### Configurare la gestione dei dispositivi Windows
+[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-  1.  Creare record di risorse DNS **CNAME** per il dominio aziendale. Ad esempio, se il sito Web aziendale è contoso.com, si creerà un CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a EnterpriseEnrollment-s.manage.microsoft.com. Anche se la voce DNS CNAME è facoltativa per la registrazione dei dispositivi Windows, è consigliabile creare uno o più record quando necessario, in modo da semplificare le operazioni durante il processo di registrazione dei dispositivi Windows. Se non si trova alcun record CNAME, all'utente viene richiesto di immettere manualmente il nome del server MDM.
+## Configurare la registrazione dell' app del portale aziendale
+È possibile consentire agli utenti di registrare i propri dispositivi mediante l'installazione e la registrazione dei dispositivi con l'app del portale aziendale di Intune. La creazione di DNS CNAME consente agli utenti di connettersi e registrarsi in Intune senza immettere un nome server.
 
-  Se è presente più di un dominio verificato, creare un record CNAME per ciascun dominio. Il record di risorse CNAME deve contenere le informazioni seguenti:
+1. **Configurare Intune**<br>
+Se non è stato già fatto, preparare la gestione di dispositivi mobili (MDM) [impostando l'autorità di gestione di dispositivi mobili](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority), ad esempio **Microsoft Intune**, e configurando MDM.
+
+2. **Creare record CNAME** (facoltativo)<br>Creare record di risorse DNS **CNAME** per il dominio aziendale per semplificare la registrazione. Anche se la creazione di record DNS CNAME è facoltativa, la creazione di record CNAME semplifica la registrazione per gli utenti. Se non viene trovato alcun record CNAME per la registrazione, agli utenti viene richiesto di immettere manualmente il nome del server MDM `https://manage.microsoft.com`.  Il record di risorse CNAME deve contenere le informazioni seguenti:
 
   |TYPE|Nome host|Punta a|TTL|
   |--------|-------------|-------------|-------|
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 ora|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 ora|
 
-  La propagazione delle modifiche ai record DNS potrebbe richiedere fino a 72 ore. È impossibile verificare la modifica DNS in Intune fino a quando il record DNS non sia stato propagato.
+  `EnterpriseEnrollment-s.manage.microsoft.com` : supporta un reindirizzamento al servizio Intune con riconoscimento del dominio dal nome di dominio del messaggio di posta elettronica
 
-  **EnterpriseEnrollment-s.manage.microsoft.com**: supporta un reindirizzamento al servizio Intune con riconoscimento del dominio dal nome di dominio del messaggio di posta elettronica
+  `EnterpriseRegistration.windows.net` : supporta i dispositivi Windows 8.1 e Windows 10 Mobile che verranno registrati con Azure Active Directory tramite account aziendale o dell'istituto di istruzione
 
-  **EnterpriseRegistration.windows.net**: supporta i dispositivi Windows 8.1 e Windows 10 Mobile che verranno registrati con Azure Active Directory tramite account aziendale o dell'istituto di istruzione
+  Se la società usa più domini per le credenziali dell'utente, creare record CNAME per ciascun dominio.
 
-  2.  Nella [console di amministrazione di Intune](http://manage.microsoft.com) fare clic su **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **Windows**.
+  Ad esempio, se il sito Web aziendale è contoso.com, si creerà un CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a EnterpriseEnrollment-s.manage.microsoft.com. La propagazione delle modifiche ai record DNS potrebbe richiedere fino a 72 ore. È impossibile verificare la modifica DNS in Intune fino a quando il record DNS non sia stato propagato.
+
+3.  **Verificare i record CNAME**<br>Nella [console di amministrazione di Intune](http://manage.microsoft.com) fare clic su **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **Windows**. Digitare l'URL del dominio verificato del sito Web aziendale nella casella **Specificare un nome di dominio verificato** e fare clic su **Verifica il rilevamento automatico**.
+
   ![Finestra di dialogo della gestione dei dispositivi Windows](../media/enroll-intune-winenr.png)
 
-  3.  Digitare l'URL del dominio verificato del sito Web aziendale nella casella **Specificare un nome di dominio verificato** e fare clic su **Verifica il rilevamento automatico**.
+4.  **Passaggi facoltativi**<br>Il passaggio **Aggiungi chiave di sideload** non è necessario per Windows 10. Il passaggio **Caricare il certificato di firma codice** è necessario solo se si prevede di distribuire le app line-of-business ai dispositivi non disponibili da Windows Store. [Altre informazioni](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
 
-  4.  Gli utenti dovranno sapere come registrare i propri dispositivi e cosa aspettarsi una volta che vengono introdotti nella gestione.
+6.  **Informare gli utenti**<br>È necessario informare gli utenti riguardo la modalità di registrazione dei dispositivi e riguardo cosa aspettarsi una volta che questi vengono introdotti nella gestione:
       - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [Uso del dispositivo Windows con Intune](../enduser/using-your-windows-device-with-intune.md)
 
@@ -57,6 +64,6 @@ La creazione di DNS CNAME consente agli utenti di connettersi e registrarsi in I
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO5-->
 
 

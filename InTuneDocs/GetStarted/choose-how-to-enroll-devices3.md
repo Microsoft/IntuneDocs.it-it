@@ -13,8 +13,8 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: e1fe6b167b7d46f03472833bc1c3c19030f47bce
-ms.openlocfilehash: 498e1a68c2c87e57851e229d55e5054060affa81
+ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
+ms.openlocfilehash: 43bbb8590738182a26efcbeead1e59eff9e5f20d
 
 
 ---
@@ -25,7 +25,7 @@ Le risposte alla serie di domande seguente consentono di determinare il metodo d
 ## **I dispositivi di proprietà della società sono condivisi o sono usati da utenti dedicati?**
 
 > [!div class="button"]
-[Condiviso >](choose-how-to-enroll-devices4.md)   [Dedicato >](choose-how-to-enroll-devices6.md)
+[Condiviso >](choose-how-to-enroll-devices4.md)<br>[Dedicato >](choose-how-to-enroll-devices6.md)
 
 - **Dispositivi di proprietà della società condivisi**: questi dispositivi non hanno un singolo utente e non sono in genere configurati per accedere alla posta elettronica. Gli esempi includono i dispositivi chiosco o orientati alle attività prelevati da un pool in base alle esigenze e quindi restituiti. I metodi di registrazione consigliati dipendono dalla piattaforma dei dispositivi.
 
@@ -36,6 +36,6 @@ Le risposte alla serie di domande seguente consentono di determinare il metodo d
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

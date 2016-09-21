@@ -14,16 +14,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
+ms.sourcegitcommit: 20101b6c65bcab413441e16b3ac6a08a982e6a28
+ms.openlocfilehash: 3794a610996f5001e52f4d19d4cdafd849de3455
 
 
 ---
 
 # Uso del dispositivo iOS o Mac OS con Intune
 
-Questo articolo contiene collegamenti a tutte le attività che gli utenti finali possono eseguire sui dispositivi gestiti da Intune. Gli amministratori IT possono usare queste informazioni per vedere i passaggi che seguono gli utenti per svolgere un'ampia gamma di attività, raggruppate in categorie: 
-- Installazione dell'app Portale aziendale e registrazione in Intune 
+Questo articolo contiene collegamenti a tutte le attività che gli utenti finali possono eseguire sui dispositivi gestiti da Intune. Gli amministratori IT possono usare queste informazioni per vedere i passaggi che gli utenti devono seguire per svolgere un'ampia gamma di attività, raggruppate nelle categorie seguenti:
+- Installazione dell'app Portale aziendale e registrazione in Intune
 - Attività di gestione di post-registrazione
 - Problemi di conformità
 
@@ -64,6 +64,6 @@ Le informazioni contenute in questa sezione consentono di risolvere i problemi c
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

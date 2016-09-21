@@ -1,35 +1,37 @@
 ---
 title: Usare blocco remoto e reimpostazione passcode | Microsoft Intune
-description: 
+description: "Intune include funzionalità per il blocco remoto e la reimpostazione del passcode."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
-ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
 
 ---
 # Protezione dei dispositivi con blocco remoto e reimpostazione passcode
 Microsoft Intune include funzionalità per il blocco remoto e la reimpostazione del passcode.
 
 ## Bloccare un dispositivo in modalità remota
-Se un utente perde il dispositivo, è possibile bloccare il dispositivo in modalità remota. Nella tabella seguente è illustrato il funzionamento del blocco remoto su diverse piattaforme per dispositivi mobili.
+Se un utente perde il dispositivo, è possibile bloccare il dispositivo in modalità remota. Nella tabella seguente è illustrato il funzionamento del blocco remoto su diverse piattaforme per dispositivi mobili. Blocco remoto non è supportato
 
 |Piattaforma|Blocco remoto|
 |------------|---------------|
 |iOS|Supportato|
 |Android|Supportato|
-|Windows 10 Mobile|Supportato|
+|Windows 10 e Windows 10 Mobile|Supportato|
 |Windows Phone 8 e Windows Phone 8.1|Supportato|
 |Windows RT 8.1 e Windows RT|Funzionalità supportata se l'utente corrente del dispositivo è lo stesso utente che ha registrato il dispositivo.|
 |Windows 8.1|Funzionalità supportata se l'utente corrente del dispositivo è lo stesso utente che ha registrato il dispositivo.|
 
+Blocco remoto non è supportato per i PC Windows registrati con il client software di Intune.
 
 ### Per bloccare un dispositivo mobile in modalità remota tramite la console di Intune
 
@@ -52,7 +54,9 @@ Se un utente dimentica il passcode, è possibile aiutarlo rimuovendo il passcode
 |Windows 10 Mobile|Supportato|
 |Windows Phone 8 e Windows Phone 8.1|Supportato|
 |Windows RT 8.1 e Windows RT|Funzionalità non supportata|
-|Windows 8.1|Non supportato|
+|Windows 8.1|Funzionalità non supportata|
+
+Reimpostazione passcode non è supportato per i PC Windows registrati con il client software di Intune.
 
 ### Per reimpostare un passcode
 
@@ -72,6 +76,6 @@ Se un utente dimentica il passcode, è possibile aiutarlo rimuovendo il passcode
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

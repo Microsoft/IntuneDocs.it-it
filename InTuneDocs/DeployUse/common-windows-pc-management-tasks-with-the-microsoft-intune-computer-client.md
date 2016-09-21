@@ -1,6 +1,6 @@
 ---
 title: "Attività comuni di gestione di PC Windows | Microsoft Intune"
-description: "Per informazioni sulla gestione dei computer che eseguono il software client per PC di Intune, leggere le attività descritte in questo argomento."
+description: "Per informazioni sulla gestione dei PC Windows che eseguono il client software di Intune, leggere le attività descritte in questo argomento."
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# Attività comuni di gestione di PC Windows con client di Microsoft Intune
-Per informazioni sulla gestione dei computer che eseguono il software client per PC di Intune, leggere le attività descritte in questo argomento. Se il client Intune non è ancora stato installato nei computer, vedere [Installare il client PC Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+# Attività comuni di gestione di PC Windows con il client software di Intune
+Per informazioni sulla gestione dei computer che eseguono il software client di Intune, leggere le attività descritte in questo argomento. Se il client non è ancora stato installato nei computer, vedere [Installare il client software di Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
 ## Usare i criteri per semplificare la gestione dei PC
-### Gestire Windows Firewall
-L'utilizzo di criteri consente di semplificare l'amministrazione delle impostazioni di Windows Firewall sui computer gestiti. Per i dettagli, vedere [Proteggere i PC Windows con criteri di Windows Firewall in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+
+I PC Windows che eseguono il client software di Intune possono essere gestiti mediante i criteri **Gestione Computer** di Intune.
+
+![Modello di criteri per PC Windows](../media/pc_policy_template.png)
 
 ### Gestire Microsoft Intune Center
-Microsoft Intune Center consente agli utenti di:
+Gli utenti visualizzano il client software di Intune come **Microsoft Intune Center**. Microsoft Intune Center consente agli utenti di:
 
 -   Ottenere applicazioni dal portale aziendale.
 
@@ -49,11 +51,14 @@ Microsoft Intune Center viene installato su tutti i computer gestiti. È possibi
 |**URL sito Web**|L'URL del sito Web di supporto.<br /><br />Lunghezza massima: 150 caratteri|
 |**Note**|Una nota che viene visualizzata agli utenti.<br /><br />Lunghezza massima: 120 caratteri|
 
-### Gestire le impostazioni degli aggiornamenti software
-Usare criteri per configurare le impostazioni usate dai computer gestiti per cercare e scaricare gli aggiornamenti software di Microsoft e di terze parti. Per altre informazioni, vedere [Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+## Impostazioni degli aggiornamenti software
+Usare criteri per configurare le impostazioni usate dai computer gestiti per cercare e scaricare gli aggiornamenti software di Microsoft e di terze parti. Questi aggiornamenti non includono aggiornamenti del sistema operativo (ad esempio, l'aggiornamento da Windows 7 a Windows 10 o gli aggiornamenti da una versione di Windows 10 a una versione successiva). Per altre informazioni, vedere [Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
-### Gestire le impostazioni di Endpoint Protection
+### Impostazioni di Endpoint Protection
 Usare criteri per configurare le impostazioni per Endpoint Protection da distribuire successivamente ai computer gestiti. I criteri includono le analisi pianificate e le azioni da intraprendere quando viene rilevato malware. Per altre informazioni, vedere [Proteggere i PC Windows con Endpoint Protection per Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+
+## Impostazioni di Windows Firewall
+L'utilizzo di criteri consente di semplificare l'amministrazione delle impostazioni di Windows Firewall sui computer gestiti. Per i dettagli, vedere [Proteggere i PC Windows con criteri di Windows Firewall in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
 ## Visualizzare l'inventario hardware e software
 Intune raccoglie informazioni dettagliate sull'hardware e sul software dei computer gestiti. Le informazioni delle seguenti procedure consentono di:
@@ -113,17 +118,17 @@ Intune raccoglie informazioni dettagliate sull'hardware e sul software dei compu
 
 2.  Selezionare i dispositivi da ritirare, quindi scegliere **Disattiva/Cancella**.
 
-Per registrare nuovamente un computer in Intune, reinstallare il software client nel computer seguendo la procedura descritta nell'argomento [Installare il client PC Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
+Per registrare nuovamente un computer in Intune, reinstallare il client software nel PC seguendo la procedura descritta in [Installare il client PC Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Se un computer non è in grado di connettersi a Intune, viene visualizzato un messaggio nell'area di lavoro **Dashboard** .
 
 Quando si ritira un computer:
 
--   Il computer viene rimosso dall'inventario e dalla gestione di Intune e la licenza associata al computer viene resa disponibile per essere riusata. Ritira/cancella dati rimuove il client del software Intune ma non rimuove le app o i dati dal computer.
+-   Il computer viene rimosso dall'inventario e dalla gestione di Intune e la licenza associata al computer viene resa disponibile per essere riusata. Ritira/cancella dati rimuove il client del software Intune ma non rimuove le app o i dati dal computer. Il ritiro non esegue una cancellazione completa nel computer.
 
 -   Lo stato del computer non viene più visualizzato nella console di Intune.
 
--   Intune rimuove il software client dal computer. Se un computer non è connesso al servizio Intune, il software client verrà rimosso alla successiva connessione.
+-   Intune rimuove il client software dal computer. Se il computer non è connesso al servizio Intune, il client software verrà rimosso alla successiva connessione.
 
 -   Microsoft Intune Endpoint Protection viene rimosso dal computer. Se nel computer è installata un'altra applicazione Endpoint che è disabilitata, sarà possibile abilitarla di nuovo dopo aver rimosso Microsoft Intune Endpoint Protection per garantire che i computer siano protetti.
 
@@ -160,9 +165,9 @@ Prima di distribuire software a un utente, è necessario collegare l'utente a un
 > [!TIP]
 > Per limitare la capacità di collegamento degli utenti finali ai computer, abilitare l'opzione **Limita la capacità utente di collegarsi ai computer** nei criteri **Impostazioni agente di Microsoft Intune**.
 
-## Richiedere e fornire assistenza remota per PC Windows che usano il software client di Intune
+## Richiedere e fornire assistenza remota per i PC Windows
 
-Microsoft Intune può usare il software [TeamViewer](https://www.teamviewer.com) per consentire agli utenti di PC che eseguono il software client di Intune di ottenere assistenza remota da parte dell'utente. Quando un utente richiede assistenza a Microsoft Intune Center, si riceve un avviso, si può accettare la richiesta e quindi fornire assistenza.
+Microsoft Intune può usare il software [TeamViewer](https://www.teamviewer.com), acquistato separatamente, per consentire agli utenti di PC che eseguono il client software di Intune di ottenere assistenza remota da parte dell'utente. Quando un utente richiede assistenza a Microsoft Intune Center, si riceve un avviso, si può accettare la richiesta e quindi fornire assistenza.
 Questa funzionalità sostituisce la funzionalità Assistenza remota Windows presente in Intune.
 
 
@@ -211,6 +216,6 @@ Dal menu**Azioni** della finestra di **TeamViewer**, scegliere **Termina session
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 

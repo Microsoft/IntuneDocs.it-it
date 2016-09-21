@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: e2493f93c08aaf7c10c47a0835de498349799e28
+ms.sourcegitcommit: f3ca61178e64feea30e8783f9a2471303dd68378
+ms.openlocfilehash: 191ff1347d31c9361a80d8a581ee90a03d02061c
 
 
 ---
@@ -39,6 +39,6 @@ La tabella seguente elenca gli errori che potrebbero verificarsi durante la regi
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

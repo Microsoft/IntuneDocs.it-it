@@ -4,7 +4,7 @@ description: Usare Intune per visualizzare informazioni sull'hardware dei dispos
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/17/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,15 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df4e0bc8a818f22d6f7327f9f1348f67882e0c49
-ms.openlocfilehash: 80b157c021099513854b8ffc1fe09cd2922ee0c2
+ms.sourcegitcommit: 18ef1ca18244b202a35fc8fc23fc994105b7b47e
+ms.openlocfilehash: ff55533499494488cd4cd692c6e36fe547ade3e4
 
 
 ---
 
 # Informazioni sui dispositivi con inventario in Microsoft Intune
 Microsoft Intune consente di visualizzare l'inventario dei dispositivi registrati e dei PC Windows che eseguono il software client di Intune.
+Intune in genere raccoglie l'inventario dei dispositivi gestiti ogni 7 giorni. Per questo motivo, può esserci un ritardo prima che i report mostrino i risultati delle eventuali ultime modifiche ai dispositivi, ad esempio, una modifica al nome del dispositivo o allo spazio di archiviazione gratuito.
 
 ## Inventario raccolto dai dispositivi registrati
 Per visualizzare l'inventario raccolto dai dispositivi mobili, eseguire i [Report inventario dispositivi mobili](understand-microsoft-intune-operations-by-using-reports.md). Intune raccoglie l'inventario seguente dai dispositivi registrati:
@@ -114,6 +115,6 @@ Per visualizzare l'inventario raccolto dai PC Windows, eseguire [Report inventar
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
