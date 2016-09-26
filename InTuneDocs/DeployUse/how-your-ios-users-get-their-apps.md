@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
 
 
 ---
@@ -32,15 +32,15 @@ Usare queste informazioni per comprendere come e dove gli utenti possono ottener
 
 **App non gestite**: app che possono essere gestite tramite criteri e che non sono state integrate in Intune o che non incorporano l'SDK del software MAM di Intune. Non è possibile applicare i criteri dell'applicazione a queste app.
 
-Le restrizioni di Apple impediscono alle app dell'app store line-of-business e gestite di essere elencate nell'app Portale aziendale, quindi gli utenti devono visitare visualizzazioni diverse per trovare le proprie app. Le app per ogni riquadro visualizzato nella pagina App dell'app Portale aziendale sono disponibili come indicato di seguito:
+Le restrizioni di Apple impediscono alle app line-of-business e alle app di App Store gestite di essere elencate nell'app Portale aziendale. Per risolvere questo problema, i riquadri delle app nell'app Portale aziendale per iOS indirizzano gli utenti a visualizzazioni diverse per tutte le app in un'unica posizione, il sito Web del portale aziendale, come segue:
 
-- Il riquadro **App aziendali** punta all'elenco delle app nella scheda **TUTTE** del [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+- Il riquadro **App aziendali** indirizzava in precedenza a un elenco di tutte le app nella scheda TUTTE del [sito Web del portale aziendale](http://portal.manage.microsoft.com) e continuerà a funzionare allo stesso modo. Il nome del riquadro è diventato **Tutte le app**.
 
-- Il riquadro **Altre app** attualmente punta a una vista, all'interno dell'app Portale aziendale, che elenca tutte le app che Apple consente all'app Portale aziendale di visualizzare. Sono incluse tutte le app ad eccezione di quelle dell'app store line-of-business e gestite.
+- Il riquadro **Altre app** indirizzava in precedenza a una visualizzazione, all'interno dell'app Portale aziendale, che elenca tutte le app che Apple consente di visualizzare all'app Portale aziendale. Il nome del riquadro è diventato **App in evidenza** e toccandolo gli utenti verranno indirizzati alla scheda IN EVIDENZA del sito Web del portale aziendale.
 
-- Il riquadro **Categorie** attualmente punta a una vista, all'interno dell'app Portale aziendale, che elenca le categorie delle app.
+-  Il riquadro **Categorie** indirizzava in precedenza a una visualizzazione, all'interno dell'app Portale aziendale, che elenca le categorie di app. Il nome del riquadro non è cambiato, ma ora punta alla scheda CATEGORIE del sito Web del portale aziendale.
+È possibile trovare [qui](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186) le schermate aggiornate.
 
-    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
 
 
 ###Vedere anche
@@ -49,6 +49,6 @@ Le restrizioni di Apple impediscono alle app dell'app store line-of-business e g
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

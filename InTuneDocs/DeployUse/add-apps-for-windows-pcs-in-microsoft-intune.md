@@ -1,5 +1,5 @@
 ---
-title: Aggiungere app sui PC Windows | Microsoft Intune
+title: Aggiungere app per i PC Windows che eseguono il software client di Intune| Microsoft Intune
 description: Usare le informazioni in questo argomento per scoprire come aggiungere app a Intune prima di distribuirle.
 keywords: 
 author: robstackmsft
@@ -13,18 +13,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 24767de9ad5a1f0ebe6f713018098a5dd692466e
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
 
 
 ---
 
-# Aggiungere app sui PC Windows in Microsoft Intune
+# Aggiungere app per i PC Windows che eseguono il software client di Intune
 
 Usare le informazioni in questo argomento per informazioni su come aggiungere app a Intune prima di distribuirle.
 
 > [!IMPORTANT]
-> Le informazioni fornite in questo argomento semplificano l'aggiunta di app nei computer Windows gestiti usando il software client del computer con Intune. Per aggiungere app per computer Windows e altri dispositivi mobili registrati, vedere [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+> Le informazioni fornite in questo argomento semplificano l'aggiunta di app nei PC Windows gestiti usando il software client di Intune. Per aggiungere app per computer Windows e altri dispositivi mobili registrati, vedere [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 
 ## Aggiungere l'app
@@ -90,6 +90,6 @@ Il passaggio successivo alla creazione di un'app è la distribuzione. Per altre 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

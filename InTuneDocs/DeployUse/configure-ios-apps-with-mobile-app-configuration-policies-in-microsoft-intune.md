@@ -4,7 +4,7 @@ description: Usare i criteri di configurazione delle app mobili in Intune per sp
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 917761ab6be2ccd94f32e7d2f12c0ed18d335d41
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: 9b70517251c6225afee719c7e3380c584785251b
 
 
 ---
@@ -37,7 +37,7 @@ I criteri di configurazione delle app mobili permettono di evitare questi proble
 Questi criteri non vengono distribuiti direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi distribuita. Le impostazioni dei criteri vengono usate ogni volta che l'app ne esegue la ricerca (in genere, alla prima esecuzione).
 
 > [!TIP]
-> Questo tipo di criteri è attualmente disponibile solo per i dispositivi che eseguono iOS 7.1 e versioni successive. Supporta i tipi di installazione di app seguenti:
+> Questo tipo di criteri è attualmente disponibile solo per i dispositivi che eseguono iOS 8.0 e versioni successive. Supporta i tipi di installazione di app seguenti:
 >
 > -   **App iOS gestita dall'App Store**
 > -   **Pacchetto app per iOS**
@@ -139,6 +139,6 @@ Quando si crea un file di configurazione di app per dispositivi mobili, è possi
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

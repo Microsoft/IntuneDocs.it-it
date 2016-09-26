@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 310a1160d105a80623742ce4e2dc046c670bc167
-ms.openlocfilehash: d597cd13bd2254a9303769e2f5d5519c739f0aaf
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
 
 
 ---
@@ -40,7 +40,7 @@ Si immagini, ad esempio, di installare una nuova rete Wi-Fi denominata **Contoso
 
 -   Android 4.0 e versioni successive
 
--   iOS 7.1 e versioni successive
+-   iOS 8.0 e versioni successive
 
 -   Mac OS X 10.9 e versioni successive
 
@@ -52,7 +52,7 @@ Per i dispositivi che eseguono Windows 8.1 o Windows 10 Desktop o Mobile, è pos
 
     -   Profilo Wi-Fi (Android 4 e versioni successive)
 
-    -   Profilo Wi-Fi (iOS 7.1 e versioni successive)
+    -   Profilo Wi-Fi (iOS 8.0 e versioni successive)
 
     -   Profilo Wi-Fi (Mac OS X 10.9 e versioni successive)
 
@@ -173,6 +173,6 @@ Per informazioni sulla creazione di un profilo Wi-Fi con una chiave precondivisa
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

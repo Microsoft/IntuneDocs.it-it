@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 
 ---
@@ -31,7 +31,7 @@ Gli amministratori IT o gli utenti possono anche scegliere di installare client 
 È possibile usare i profili di posta elettronica per configurare il client di posta elettronica nativo nei tipi di dispositivi seguenti:
 -   Windows Phone 8 e versioni successive
 -   Windows 10 (desktop), Windows 10 Mobile e versioni successive
--   iOS 7.1 e versioni successive
+-   iOS 8.0 e versioni successive
 -   Samsung KNOX Standard 4.0 e versioni successive
 
 Oltre a configurare un account di posta elettronica sul dispositivo, è possibile impostare il numero di messaggi di posta elettronica da sincronizzare. A seconda del tipo di dispositivo, è possibile impostare anche i tipi di contenuto da sincronizzare.
@@ -71,7 +71,7 @@ Poiché la password non è contenuta nel profilo di posta elettronica, l'utente 
 
     -   **Profilo di posta elettronica per Samsung KNOX Standard (4.0 e versioni successive)**
 
-    -   **Profilo di posta elettronica (iOS 7.1 e versioni successive)**
+    -   **Profilo di posta elettronica (iOS 8.0 e versioni successive)**
 
     -   **Profilo di posta elettronica (Windows Phone 8 e versioni successive)**
 
@@ -122,6 +122,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 
