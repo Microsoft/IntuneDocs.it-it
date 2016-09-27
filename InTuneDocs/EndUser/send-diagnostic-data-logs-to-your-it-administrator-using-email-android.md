@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 09/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 9446df0381a2b2a1a6322f8f59523ce78406f25a
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
 
 
 ---
@@ -25,29 +25,20 @@ ms.openlocfilehash: 9446df0381a2b2a1a6322f8f59523ce78406f25a
 
 Se si verifica un errore nel dispositivo Android mentre si usano le app aziendali o dell'istituto di istruzione o quando è attiva l'app Portale aziendale, è possibile inviare i log dei dati di diagnostica per aiutare l'amministratore IT a individuare e risolvere l'errore. Per includere tutti i dettagli nei log, in modo che sia più semplice per l'amministratore IT individuare il problema, attivare la registrazione dettagliata. Per altre informazioni, vedere l'articolo relativo alla [registrazione dettagliata](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-Per attivare la registrazione dettagliata:
+Per inviare i log all'amministratore IT tramite posta elettronica:
 
 1.  Aprire l'app Portale aziendale.
 
-2.  Toccare **Menu** &gt; **Impostazioni**.
+2.  Toccare **Menu** &gt;  **Guida e commenti **.
 
     > [!NOTE]
     > **Menu** può essere un pulsante software o hardware, a seconda del tipo di dispositivo Android in uso.
 
-3.  In **Dati di diagnostica** toccare **Invia dati**.
+3.  In **Guida** toccare **Richiedi assistenza**.
 
-    > [!NOTE]
-    > **Solo se si usano dispositivi Android 6.0 o versioni successive:** quando si tocca **Invia dati**, viene visualizzato un messaggio che chiede se **consentire al portale aziendale di accedere a foto, supporti e file nel dispositivo**.
-
-    Questo messaggio è fuorviante perché **Microsoft non accede mai a foto, supporti o file nel dispositivo.** Il testo del messaggio è controllato da Google, quindi Microsoft non può modificarlo.  Quando si consente l'accesso, il dispositivo può solo scrivere i log di dati nella scheda SD del dispositivo, da dove possono essere spostati con un cavo USB.
-
-    Se si nega l'accesso, il messaggio viene visualizzato di nuovo la volta successiva che si tocca **Invia dati**, ma è possibile disattivare la ricezione di altri messaggi toccando la casella di controllo **Non visualizzare più questo messaggio**.  Se si decide successivamente di consentire l'accesso, andare a **Impostazioni** &gt; **App** &gt; **Portale aziendale** &gt; **Autorizzazioni** &gt; **Archiviazione**, quindi attivare l'autorizzazione.
-
-4.  Seguire le istruzioni per scegliere un'app di posta elettronica da usare per inviare i log all'amministratore IT. L'app creerà un messaggio di posta elettronica preindirizzato con tutti i log allegati.
+Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 
