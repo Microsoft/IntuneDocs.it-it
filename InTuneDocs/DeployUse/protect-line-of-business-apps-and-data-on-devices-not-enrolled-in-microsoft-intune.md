@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
+ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
+ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
 
 
 ---
@@ -27,7 +27,7 @@ Questo argomento elenca i passaggi per l'applicazione dei criteri MAM alle app a
 ##  Passaggio 1: Preparare l'app.
 Prima di applicare i criteri MAM a un'app è necessario eseguire il wrapping dell'app con lo strumento di wrapping delle app di Microsoft Intune.  Le istruzioni per l'installazione e l'uso dello strumento di wrapping delle app sono incluse nel download.  
 >[!IMPORTANT]  
->Questa versione dello strumento di wrapping dell'app, che supporta i dispositivi non registrati in Intune, sarà disponibile in anteprima privata nelle prossime settimane. Se si vuole partecipare inviare un messaggio di posta elettronica all'indirizzo msintuneappsdk@microsoft.com per altre informazioni.
+>Questa versione dello strumento di wrapping delle app, che supporta i dispositivi non registrati in Intune, è disponibile in anteprima pubblica. Per partecipare all'anteprima pubblica, è possibile scaricare lo strumento da [questa pagina di GitHub](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) per iOS e da [questo sito GitHub](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) per Android.
 
 ## Passaggio 2: Aggiungere l'app.
 
@@ -75,6 +75,6 @@ Per la modifica di dettagli dell'app come il nome o l'identificatore bundle è n
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

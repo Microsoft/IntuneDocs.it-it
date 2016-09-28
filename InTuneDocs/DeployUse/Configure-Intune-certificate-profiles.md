@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
-ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,7 +41,7 @@ Il certificato viene importato quando si configura un profilo certificato attend
 1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Aggiungi criterio**.
 2.  Aggiungere uno di questi tipi di criteri:
     - **Android &gt; Profilo di certificato attendibile (Android 4 e versioni successive)**
-    - **iOS &gt; Profilo di certificato attendibile (iOS 7.1 e versioni successive)**
+    - **iOS &gt; Profilo di certificato attendibile (iOS 8.0 e versioni successive)**
     - **Mac OS X &gt; Profilo di certificato attendibile (Mac OS X 10.9 e versioni successive)**
     - **Windows &gt; Profilo di certificato attendibile (Windows 8.1 e versioni successive)**
     - **Windows &gt; Profilo di certificato attendibile (Windows Phone 8.1 e versioni successive)**
@@ -63,7 +63,7 @@ Dopo aver creato un profilo certificato CA attendibile, creare i profili certifi
 1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Aggiungi criterio**.
 2.  Aggiungere uno di questi tipi di criteri:
     - **Android &gt; Profilo di certificato SCEP (Android 4 e versioni successive)**
-    - **iOS &gt; Profilo di certificato SCEP (iOS 7.1 e versioni successive)**
+    - **iOS &gt; Profilo di certificato SCEP (iOS 8.0 e versioni successive)**
     - **Mac OS X &gt; Profilo di certificato SCEP (Mac OS X 10.9 e versioni successive)**
     - **Windows &gt; Profilo di certificato SCEP (Windows 8.1 e versioni successive)**
     - **Windows &gt; Profilo di certificato SCEP (Windows Phone 8.1 e versioni successive)**
@@ -92,7 +92,7 @@ Il nuovo criterio verrà visualizzato nell'area di lavoro **Criteri**. È ora po
   - **Android &gt; Profilo certificato PFX (Android 4 e versione successiva)**
   - **Windows &gt; Profilo certificato PKCS #12 (PFX) (Windows 10 e versione successiva)**
   - **Windows &gt; Profilo certificato PKCS #12 (PFX) (Windows Phone 10 e versione successiva)**
-  - **iOS > Profilo di certificato PKCS #12 (PFX) (iOS 7.1 e versioni successive)**    
+  - **iOS > Profilo di certificato PKCS #12 (PFX) (iOS 8.0 e versioni successive)**    
     Altre informazioni: [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Immettere le informazioni richieste nel modulo Criteri.
 4.  Scegliere **Salva criterio**.
@@ -130,6 +130,6 @@ Comprendere, successivamente, come usare i certificati per proteggere i profili 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -4,7 +4,7 @@ description: "Informazioni sulle funzionalità di Intune per gestire i PC Window
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/25/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
-ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
+ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
+ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 
 ---
@@ -22,16 +22,16 @@ ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
 # Funzionalità di gestione di PC Windows quando si usa il client software di Intune
 Nella maggior parte dei casi i dispositivi vengono registrati con Microsoft Intune che offre un maggior numero di funzionalità. Tuttavia è possibile anche gestire i PC usando il client software di Intune che fornisce le funzionalità seguenti:
 
--   **Gestione aggiornamenti software**: è possibile mantenere aggiornati i computer e stabilire quando applicare gli aggiornamenti.
+-   **[Gestione aggiornamenti software](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)**: è possibile mantenere aggiornati i PC e stabilire quando applicare gli aggiornamenti.
 
--   **Criteri di Windows Firewall**: questa funzionalità garantisce che in nessun computer usato nell'azienda Windows Firewall sia inattivo o configurato in modo non corretto.
+-   **[Criteri di Windows Firewall](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)**: questa funzionalità garantisce che in nessun PC usato nell'azienda Windows Firewall sia inattivo o configurato in modo non corretto.
 
--   **Protezione antimalware**: Intune include Endpoint Protection, che consente di proteggere i computer dal malware.
+-   **[Protezione antimalware](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)**: Intune include Endpoint Protection, che consente di proteggere i PC dal malware.
 
--   **Assistenza remota**: Intune consente agli utenti di contattare il personale tecnico IT, che può fornire assistenza usando la funzionalità Desktop remoto inclusa con Intune (è necessario installare il software TeamViewer).
+-   **[Assistenza remota](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )**: Intune consente agli utenti di contattare il personale tecnico IT, che può fornire assistenza usando la funzionalità Desktop remoto inclusa in Intune (è necessario installare il software TeamViewer).
 
--   **Gestione delle licenze software:** è possibile tenere traccia del numero di licenze software disponibili e di quante licenze disponibili sono in uso.
--   **Distribuzione di app**: è possibile distribuire software ai PC gestiti. Alcune funzionalità di gestione di app non sono disponibili quando si gestiscono PC con il client software.
+-   **[Gestione delle licenze software](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)**: è possibile tenere traccia del numero di licenze software disponibili e di quante licenze disponibili sono in uso.
+-   **[Distribuzione di app](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)**: è possibile distribuire software nei PC gestiti. Alcune funzionalità di gestione di app non sono disponibili quando si gestiscono PC con il client software.
 
 
 Intune supporta l'installazione del client software su un massimo di 7000 dispositivi Windows.
@@ -74,6 +74,6 @@ Di seguito sono riportati i requisiti software minimi per l'installazione del cl
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
