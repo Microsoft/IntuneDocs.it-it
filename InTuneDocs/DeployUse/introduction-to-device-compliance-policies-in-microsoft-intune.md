@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
-ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
+ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
+ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 ---
@@ -32,9 +32,9 @@ I criteri di conformità vengono distribuiti agli utenti. Quando un criterio di 
 
 Nella tabella seguente sono elencati i tipi di dispositivi supportati dai criteri di conformità e il modo in cui le impostazioni di non conformità vengono gestite quando i criteri vengono usati con i criteri di accesso condizionale.
 
---------------
+-----------------------------
 
-|Impostazione di criteri| Windows 8.1 e versioni successive| Windows Phone 8.1 e versioni successive| iOS 6.0 e versioni successive|Android 4.0 e versioni successive<br/>Samsung KNOX Standard 4.0 e versioni successive|
+|Impostazione di criteri| Windows 8.1 e versioni successive| Windows Phone 8.1 e versioni successive| iOS 8.0 e versioni successive|Android 4.0 e versioni successive<br/>Samsung KNOX Standard 4.0 e versioni successive|
 |-----|----|----|----|----|
 |**Configurazione di PIN o password** |Corretto|Corretto|Corretto|In quarantena|
 |**Crittografia dispositivo**|N/D|Corretto|Corretto (impostando il PIN)|In quarantena|
@@ -43,7 +43,9 @@ Nella tabella seguente sono elencati i tipi di dispositivi supportati dai criter
 |**Versione minima del sistema operativo**|In quarantena|In quarantena|In quarantena|In quarantena|
 |**Versione massima del sistema operativo**|In quarantena| In quarantena| In quarantena| In quarantena|
 |**Attestazione dell'integrità di Windows**|Windows 10 e Windows 10 Mobile vengono messi in quarantena.<br /><br />L'impostazione non è applicabile a Windows 8.1|N/D|N/D|N/D|
---------------
+
+------------------------------
+
 **Corretto** = la conformità viene forzata dal sistema operativo del dispositivo (ad esempio, l'utente è obbligato a impostare un PIN).  Non si presenta mai un caso in cui l'impostazione non è conforme.
 
 **In quarantena** = il sistema operativo del dispositivo non forza la conformità (ad esempio, i dispositivi Android non impongono la crittografia del dispositivo all'utente). Quando il dispositivo non è compatibile, vengono eseguite le azioni seguenti:
@@ -62,6 +64,6 @@ Nella tabella seguente sono elencati i tipi di dispositivi supportati dai criter
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

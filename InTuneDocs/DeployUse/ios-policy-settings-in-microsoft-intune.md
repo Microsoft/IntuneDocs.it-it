@@ -4,7 +4,7 @@ description: "Creare criteri per il controllo delle impostazioni e delle funzion
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/30/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
-ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
+ms.sourcegitcommit: cd5930995a6da130fedcb6d89851460e6f0614eb
+ms.openlocfilehash: 24540a74ce98adbf3f908cbea401328f027867ca
 
 
 ---
@@ -39,7 +39,7 @@ Usare i **criteri di configurazione generali iOS** di Microsoft Intune per confi
 Se l'impostazione che si sta cercando non viene visualizzata in questo argomento, è possibile crearla usando i criteri personalizzati iOS che consentono di importare le impostazioni create usando lo [strumento Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Per altre informazioni, vedere "Impostazioni di criteri personalizzati" più avanti in questo argomento.
 
 ### Impostazioni di sicurezza
-Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
@@ -58,7 +58,7 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 <sup>1</sup> Nei dispositivi iOS, se le impostazioni **Minuti di inattività prima dello spegnimento dello schermo** e **Minuti di inattività prima che venga richiesta la password** sono configurate, vengono applicate in sequenza. Ad esempio, se si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo 5 minuti e il dispositivo viene bloccato dopo altri 5 minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio, il dispositivo viene bloccato 5 minuti dopo che l'utente spegne lo schermo.
 
 ### Impostazioni di sistema
-Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
@@ -71,7 +71,7 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 |**Consenti passbook durante il blocco**|Consente all'utente di accedere all'app Passbook mentre il dispositivo è bloccato.|
 
 ### Impostazioni cloud per documenti e dati
-Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
@@ -85,7 +85,7 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 |**Consenti la raccolta di foto con iCloud**|Consentire all'utente di archiviare le foto in iCloud. Se disabilitata, eventuali foto già archiviate in iCloud verranno rimosse.|
 
 ### Impostazioni dell'applicazione per il browser
-Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
@@ -97,7 +97,7 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 |**Consenti avviso illeciti**|Consentire gli avvisi di illeciti nel browser.|
 
 ### Impostazioni dell'applicazione per le app
-Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
@@ -111,7 +111,7 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 
 
 ### Impostazioni dell'applicazione per i giochi
-Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
@@ -119,7 +119,7 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 |**Consenti modalità di gioco multiplayer**|Consente all'utente di partecipare a giochi multiplayer sul dispositivo.|
 
 ### Impostazioni dell'applicazione per i contenuti multimediali
-Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
@@ -129,7 +129,7 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 
 
 ### Impostazioni delle funzionalità del dispositivo per l'hardware
-Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
@@ -138,7 +138,7 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 |**Richiedi una password di associazione per le richieste AirPlay in uscita**|Richiedere una password di associazione quando l'utente usa AirPlay per trasmettere i contenuti ad altri dispositivi di Apple.|
 
 ### Impostazioni delle funzionalità del dispositivo per il cellulare
-Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
@@ -147,7 +147,7 @@ Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
 |**Consenti recupero in background globale durante il roaming**|Consente al dispositivo di recuperare dati come la posta elettronica durante il roaming su una rete cellulare.|
 
 ### Impostazioni delle funzionalità del dispositivo per le funzionalità
-Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|-------|
@@ -196,7 +196,7 @@ Nell'elenco **App conformi &amp; non conformi** specificare un elenco di app con
 > [!NOTE]
 > Le note seguenti sono valide per le impostazioni della modalità tutto schermo per i dispositivi iOS:
 >
-> -   Prima di poter configurare un dispositivo iOS per la modalità tutto schermo, è necessario usare lo [strumento Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) o il manager di registrazione dispositivi per inserire il dispositivo in modalità di supervisione. Per altre informazioni sullo strumento Apple Configurator, vedere la documentazione di Apple.
+> -   Prima di poter configurare un dispositivo iOS per la modalità tutto schermo, è necessario usare lo [strumento Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) o il [programma di registrazione dispositivi di Apple](ios-device-enrollment-program-in-microsoft-intune) per inserire il dispositivo in modalità di supervisione. Per altre informazioni sullo strumento Apple Configurator, vedere la documentazione di Apple.
 > -   Se l'app per iOS specificata viene installata dopo aver distribuito i criteri di configurazione, il dispositivo non passerà alla modalità tutto schermo finché non viene riavviato.
 
 ### Informazioni di riferimento per le app conformi e non conformi
@@ -222,14 +222,14 @@ Per specificare un URL dell'app nell'elenco delle app conformi e non conformi o 
 > È possibile usare anche il software iTunes per trovare l'app e il comando **Copia collegamento** per ottenere l'URL dell'app.
 
 ### Impostazioni di registrazione
-Tutte le impostazioni si applicano a iOS 7.1 e versioni successive.
+Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
 |**Consenti blocco attivazione quando il dispositivo è in modalità di supervisione**|Abilitare il blocco attivazione su dispositivi iOS con supervisione.|
 
 ### Impostazioni della modalità di supervisione
-Nei dispositivi che eseguono iOS 7.1 e versioni successive in modalità di supervisione possono essere configurate le impostazioni seguenti.
+Nei dispositivi che eseguono iOS 8.0 e versioni successive in modalità di supervisione possono essere configurate le impostazioni seguenti.
 
 ### Impostazioni della modalità di supervisione per restrizioni del dispositivo
 
@@ -265,9 +265,9 @@ Nei dispositivi che eseguono iOS 7.1 e versioni successive in modalità di super
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
-|**Consenti la modifica delle impostazioni di attendibilità delle app aziendali**||
-|**Consentire l'installazione di app esclusivamente tramite la configurazione di Apple e iTunes**||
-|**Consenti i download automatici delle app**||
+|**Consenti la modifica delle impostazioni di attendibilità delle app aziendali**|Consente agli utenti di modificare le impostazioni di attendibilità per le app aziendali.|
+|**Consentire l'installazione di app esclusivamente tramite la configurazione di Apple e iTunes**|Abilita o disabilita App Store dalla schermata iniziale del dispositivo. Gli utenti possono comunque usare iTunes o lo strumento Apple Configurator per installare e aggiornare le app.|
+|**Consenti i download automatici delle app**|Consente di scaricare automaticamente nel dispositivo le app acquistate in altri dispositivi. Questa impostazione non influisce sugli aggiornamenti delle app.|
 |**Consenti modifiche alle impostazioni dell'app Find My Friends**|Consente all'utente di modificare le impostazioni dell'app Find My Friend.|
 |**Consenti l'accesso all'iBooks Store**|Consente all'utente di selezionare e acquistare libri all'iBooks Store.|
 |**Consenti l'uso dell'app Messages sul dispositivo**|Consenti l'uso dell'app Messages per inviare messaggi di testo.|
@@ -382,6 +382,6 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

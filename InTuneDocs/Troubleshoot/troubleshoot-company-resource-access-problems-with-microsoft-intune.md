@@ -4,7 +4,7 @@ description: Codici di errore e di stato in questo argomento per risolvere i pro
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
+ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
+ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 ---
@@ -33,7 +33,7 @@ Se queste informazioni non consentono di risolvere il problema, vedere [Come ott
 |30 (APP_CI_ENFORCEMENT_ERROR_RETRIEVING_CONTENT)|Recupero del contenuto|Causa probabile: Lo stato del processo 30 indica che il download utente di un'app non è riuscito.<br /><br />Le cause probabili potrebbero essere:<br /><br />Il dispositivo ha perso la connettività Internet mentre il download era in corso.<br /><br />Il certificato emesso per il dispositivo al momento della registrazione potrebbe essere scaduto.<br /><br />Attenuazione:<br /><br />Avviare le applicazioni aziendali dal Pannello di controllo sul dispositivo per verificare che il certificato del dispositivo non sia scaduto. Se scaduto, sarà necessario registrare nuovamente il dispositivo.<br /><br />Verificare che il dispositivo sia connesso a Internet e provare a richiedere nuovamente l'applicazione.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Download del contenuto completato||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Installazione in corso||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|InstallazioneSi è verificato un errore|L'installazione dell'app non è riuscita dopo il download.<br /><br />Il certificato di firma del codice con cui è stata firmata l'app non è presente nel dispositivo.<br /><br />Una dipendenza del framework da cui dipende l'applicazione non è stata trovata nel dispositivo.<br /><br />Assicurarsi che il certificato di firma del codice con cui è stata firmata l'applicazione sia presente nel dispositivo e verificare con l'amministratore che tale certificato sia destinato a tutti i dispositivi Windows RT registrati nell'organizzazione.<br /><br />Nel caso in cui l'errore di installazione sia dovuto a una dipendenza del framework mancante, l'amministratore dovrà pubblicare nuovamente l'applicazione assemblando il framework insieme al pacchetto dell'applicazione.<br /><br />Il pacchetto dell'applicazione scaricato non è un pacchetto valido, potrebbe essere danneggiato o potrebbe non essere compatibile con la versione del sistema operativo del dispositivo.|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Si è verificato un errore di installazione|L'installazione dell'app non è riuscita dopo il download.<br /><br />Il certificato di firma del codice con cui è stata firmata l'app non è presente nel dispositivo.<br /><br />Una dipendenza del framework da cui dipende l'applicazione non è stata trovata nel dispositivo.<br /><br />Assicurarsi che il certificato di firma del codice con cui è stata firmata l'applicazione sia presente nel dispositivo e verificare con l'amministratore che tale certificato sia destinato a tutti i dispositivi Windows RT registrati nell'organizzazione.<br /><br />Nel caso in cui l'errore di installazione sia dovuto a una dipendenza del framework mancante, l'amministratore dovrà pubblicare nuovamente l'applicazione assemblando il framework insieme al pacchetto dell'applicazione.<br /><br />Il pacchetto dell'applicazione scaricato non è un pacchetto valido, potrebbe essere danneggiato o potrebbe non essere compatibile con la versione del sistema operativo del dispositivo.|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|Installazione riuscita||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Disinstallazione in corso||
 |90 (APP_CI_ENFORCEMENT_ERROR)|Si è verificato un errore di disinstallazione||
@@ -127,7 +127,7 @@ Se queste informazioni non consentono di risolvere il problema, vedere [Come ott
 |-2016314112|0x87D17D00|22000: Utilizzo della chiave non valido|
 |-2016315105|0x87D1791F|21007: Impossibile verificare l'account|
 |-2016315106|0x87D1791E|21006: Impossibile decrittografare il certificato|
-|-2016315107|0x87D1791D|21005: Account non univoco|
+|-2016315107|0x87D1791D|21005: account non univoco (il profilo di posta elettronica esiste già nel dispositivo)|
 |-2016315108|0x87D1791C|21004: Impossibile creare l'account|
 |-2016315109|0x87D1791B|21003: Nessun nome host|
 |-2016315110|0x87D1791A|21002: Impossibile conformarsi con il criterio di crittografia dal server|
@@ -372,6 +372,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ff2d245586d4803aab62ffb51ac21bdb8e3669
-ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
 
 
 ---
@@ -25,7 +25,7 @@ Quando si concede agli utenti l'accesso alle risorse aziendali tramite profili V
 1. Assicurarsi che sia implementata l'infrastruttura di certificazione corretta, come descritto in [Configurare l'infrastruttura di certificazione per SCEP](configure-certificate-infrastructure-for-scep.md) e [Configurare l'infrastruttura di certificazione](configure-certificate-infrastructure-for-pfx.md).
 
 2. Installare un certificato radice o un certificato dell'autorità di certificazione (CA) intermedio in ogni dispositivo, in modo che il dispositivo riconosca la legittimità dell'autorità di certificazione. A tale scopo, creare e distribuire un **profilo certificato attendibile**. Quando si distribuisce questo profilo, i dispositivi da gestire con Intune richiederanno e riceveranno il certificato radice. È necessario creare un profilo separato per ogni piattaforma. Il **profilo certificato attendibile** è disponibile per le piattaforme:
- -  iOS 7.1 e versioni successive
+ -  iOS 8.0 e versioni successive
  -  Mac OS X 10.9 e versioni successive
  -  Android 4.0 e versioni successive
  -  Windows 8.1 e versioni successive
@@ -33,7 +33,7 @@ Quando si concede agli utenti l'accesso alle risorse aziendali tramite profili V
 
 3. Creare i profili certificato in modo che i dispositivi richiedano un certificato da usare per l'autenticazione dell'accesso a VPN, Wi-Fi e posta elettronica, come descritto in [Configure Intune certificate profiles](configure-intune-certificate-profiles.md) (Configurare i profili certificato di Intune). È possibile creare e distribuire un **profilo certificato PKCS #12 (.PFX)** *o* un **profilo certificato SCEP** per i dispositivi in esecuzione su queste piattaforme:
 
-  -  iOS 7.1 e versioni successive
+  -  iOS 8.0 e versioni successive
   -  Android 4.0 e versioni successive
   -  Windows 10 (per dispositivi desktop e mobili) e versioni successive
 
@@ -56,6 +56,6 @@ Quando si concede agli utenti l'accesso alle risorse aziendali tramite profili V
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
