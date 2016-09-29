@@ -66,8 +66,9 @@
 ## [Retire devices (Ritirare i dispositivi)](retire-devices-from-microsoft-intune-management.md)
 
 ## [Aggiungere app](add-apps.md)
-### [Aggiungere app sui dispositivi mobili](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Aggiungere app sui PC Windows](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [Aggiungere app per dispositivi registrati](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Aggiungere app per PC client di Intune](add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [Gestire i contratti di licenza per PC client di Intune](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Distribuire le app](deploy-apps.md)
 ### [Distribuire app su dispositivi e PC Windows](deploy-apps-in-microsoft-intune.md)
 ### [Eseguire il monitoraggio delle app](monitor-apps-in-microsoft-intune.md)
@@ -101,6 +102,11 @@
 #### [Limitare l'accesso alla posta elettronica: esempi](restrict-email-access-example-scenarios.md)
 
 ### [Limitare l'accesso alle reti (Cisco ISE)](restrict-access-to-networks.md)
+### [Limitare l'accesso in base al rischio per dispositivi, rete e applicazioni](restrict-access-based-on-device-network-app-risk.md)
+#### [Configurare Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+#### [Abilitare Lookout in Intune](enable-lookout-mtp-connection-in-intune.md)
+#### [Distribuire Lookout per le app di lavoro](configure-and-deploy-lookout-for-work-apps.md)
+#### [Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [Proteggere i dati delle app con MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Portale di Azure per i criteri MAM](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -137,6 +143,6 @@
 # [Risolvere i problemi](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
