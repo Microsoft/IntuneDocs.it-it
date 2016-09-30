@@ -13,8 +13,8 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 93c05ecd0154bb637f421dcc5d7ee56ff8d3ab2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c4b1e5d3bb8b949096f7d15ddbbf0d1540485d0d
 
 
 ---
@@ -46,7 +46,7 @@ Le app basate su collegamenti esterni non sono archiviate nello spazio di archiv
 È possibile usare app iOS gestite per gestire e distribuire app iOS gratuite dall'App Store. È anche possibile usare app iOS gestite per associare i [criteri di gestione delle applicazioni mobili](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) con [app compatibili](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) e controllarne lo stato nella console di amministrazione.<br /><br />Le app iOS gestite non vengono archiviate nello spazio di memorizzazione cloud di Intune.
 
 > [!TIP]
-> Le opzioni per i dispositivi mobili non sono disponibili finché non si [imposta l'autorità MDM](get-ready-to-enroll-devices-in-microsoft-intune.md) su Intune.
+> Le opzioni per i dispositivi mobili non sono disponibili finché non si [imposta l'autorità MDM](prerequisites-for-enrollment.md) su Intune.
 
 ## Autore del software Intune
 L'autore del software Microsoft Intune viene avviato quando si aggiungono o si modificano le app dalla console di amministrazione di Intune. Dall'autore del software è possibile selezionare e configurare un tipo di programma di installazione che eseguirà una delle operazioni seguenti:
@@ -82,6 +82,6 @@ Sarà necessario aggiungere le app nella console di Intune prima di distribuirle
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

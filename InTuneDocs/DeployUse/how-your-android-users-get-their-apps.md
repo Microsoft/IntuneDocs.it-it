@@ -3,7 +3,7 @@ title: "Modalità di recupero delle app per gli utenti di Android | Microsoft In
 description: Metodi per rendere disponibili le app Android per gli utenti finali
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 43b7eb3378d9977b9d19196c91a812d9411752b9
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
 
 
 ---
@@ -25,7 +25,7 @@ Usare queste informazioni per comprendere come e dove gli utenti Android possono
 
 ## Dispositivi Android nativi (non Samsung KNOX)
 
-| Tipo di app | App line-of-business | App di Play Store  |
+| Tipo di App | App line-of-business | App di Play Store  |
 | ------------- |-------------| -----|
 | App disponibili      | Toccare **Installa** nel portale aziendale. Viene visualizzata una notifica, che è possibile toccare per avviare l'installazione. Al termine dell'installazione, la notifica viene rimossa. | Toccare l'app nel portale aziendale per essere reindirizzati a una pagina dell'app in Play Store, in cui è possibile avviare l'installazione.|
 | Required apps      | Viene visualizzata una notifica che non è possibile chiudere, indicante la necessità di installare un'app. Toccare la notifica per avviare l'installazione. Al termine dell'installazione, la notifica viene rimossa.    | Viene visualizzata una notifica che non è possibile chiudere, indicante la necessità di installare un'app. Toccare la notifica per essere reindirizzati a una pagina dell'app in Play Store, in cui è possibile avviare l'installazione. Al termine dell'installazione, la notifica viene rimossa. |
@@ -45,11 +45,13 @@ Le app possono essere gestite o non gestite, come descritto di seguito. Il proce
 
 ### Vedere anche
 [Aggiungere app con Microsoft Intune](/intune/deploy-use/add-apps)
+
 [Modalità di recupero delle app per gli utenti di iOS](how-your-ios-users-get-their-apps.md)
+
 [Modalità di recupero delle app per gli utenti di Windows](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 
