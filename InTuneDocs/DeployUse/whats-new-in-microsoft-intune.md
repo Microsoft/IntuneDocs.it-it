@@ -2,9 +2,9 @@
 title: "Novità | Microsoft Intune"
 description: "Questo articolo presenta le novità di questo mese e delle versioni precedenti di Microsoft Intune"
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03a5dd14b854fedf7e2cb5b949580960a0eab9de
-ms.openlocfilehash: 1d09e5a0adb3ecfa8f2d64f668ea7ff16bdf31fa
+ms.sourcegitcommit: 5b3256852431efb83fb2cc9fa067dd3f4a68a050
+ms.openlocfilehash: cef0a26204a22c95d2b639500246e435fcf7f9f7
 
 
 ---
@@ -72,6 +72,11 @@ Agli utenti finali dei dispositivi non conformi verrà richiesto di eseguire la 
 È stata aggiunta una nuova icona Notifiche al portale aziendale per Android nella home page. Toccando l'icona si accede alla pagina Notifiche in cui gli utenti finali possono visualizzare tutti gli elementi che richiedono attenzione nell'app Portale aziendale, ad esempio la non conformità del dispositivo, l'aggiornamento della registrazione e l'attivazione della registrazione. L'app del portale aziendale iOS dispone già di questa funzionalità delle notifiche. Con la nuova pagina Notifiche, all'utente non verrà visualizzata la pagina Configurazione dell'accesso aziendale ogni volta che avvia o riprende l'esecuzione del portale aziendale, a condizione che il dispositivo sia già registrato. Se si crea una propria guida per l'utente, aggiornare la documentazione per riportare questa modifica. Gli screenshot aggiornati sono disponibili [qui](https://aka.ms/androidcpupdate).  
 <!---TFS 1095560--->
 
+**Commenti e suggerimenti nel portale aziendale per Android**</br>
+Al menu del portale aziendale per Android è stato aggiunto un nuovo elemento. Toccando **Help & Feedback** (Guida e commenti e suggerimenti) vengono visualizzate tre azioni:
+* Usare **Get Help** (Ottieni aiuto) per segnalare al reparto IT problemi relativi al portale aziendale. Il reparto IT crea un messaggio di posta elettronica usando il client di posta elettronica dell'utente e vi allega i log del portale aziendale. **Get Help** (Ottieni aiuto) sostituisce la funzionalità **Invia dati** della pagina **Impostazioni**.
+* Usare **Invia suggerimenti** per fornire commenti e suggerimenti al team del portale aziendale.
+* Usare **Valuta questa app** per lasciare una valutazione o una recensione in Google Play sull'app del portale aziendale.
 
 ### iOS
 **Modifiche al supporto per l'app Portale aziendale per iOS**<br/>
@@ -88,7 +93,7 @@ Le modifiche seguenti sono state apportate ai riquadri delle app nell'app Portal
 <!---TFS 1317133--->
 
 **Chiedere conferma per installare l'app Managed Browser per iOS se i professionisti IT impostano tale requisito per un'app**<br/>
-Se è stata configurata l'apertura di una clip Web solo nell'app Managed Browser e questa non è installata in un dispositivo, l'app Portale aziendale sul dispositivo chiederà all'utente di installare il browser gestito prima di poter installare la clip Web. 
+Se è stata configurata l'apertura di una clip Web solo nell'app Managed Browser e questa non è installata in un dispositivo, l'app Portale aziendale sul dispositivo chiederà all'utente di installare il browser gestito prima di poter installare la clip Web.
 <!---TFS 1228570--->
 
 ### Windows
@@ -141,6 +146,6 @@ Per vedere cosa è stato rilasciato in Intune negli ultimi sei mesi, leggere l'a
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
