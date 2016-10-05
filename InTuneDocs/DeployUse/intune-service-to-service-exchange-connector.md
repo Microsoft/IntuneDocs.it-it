@@ -13,8 +13,8 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 1aabf820170483eacc83bec5e2b275e84dc07ffd
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: a6438bb3ca21e5c46dca5ebe69266fd9bce9a4b8
 
 
 ---
@@ -29,7 +29,7 @@ Usare queste informazioni per connettere Microsoft Intune ed Exchange Online opp
 |Requisito|Altre informazioni|
 |---------------|--------------------|
 |Exchange Online configurato e in esecuzione|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|Autorità di gestione dei dispositivi mobili| [Impostare l'autorità di gestione dei dispositivi mobili su Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
+|Autorità di gestione dei dispositivi mobili| [Impostare l'autorità di gestione dei dispositivi mobili su Microsoft Intune](prerequisites-for-enrollment.md#set-mobile-device-management-authority)|
 |Versione di Microsoft Exchange|Exchange Online o il nuovo servizio Exchange Online dedicato|
 |Configurare la sincronizzazione di Active Directory|Prima di poter usare Intune Connector è necessario [configurare la sincronizzazione di Active Directory](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), in modo che gli utenti e i gruppi di sicurezza locali siano sincronizzati con l'istanza di Azure Active Directory.|
 
@@ -64,6 +64,6 @@ Dopo aver configurato Exchange Connector, nella [console di amministrazione di M
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 
