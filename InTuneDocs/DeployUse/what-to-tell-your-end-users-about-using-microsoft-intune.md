@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e07685a26329b7374d9fe50d64bf9e4699c03180
-ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: 40a641d807c3ad73079a5d2e130b00c2065da6cb
 
 
 ---
@@ -23,19 +23,16 @@ ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
 
 # Informazioni sull'uso di Microsoft Intune per gli utenti finali
 
-Usare questi collegamenti e informazioni per:
-
-- Conoscere le procedure che gli utenti devono svolgere per eseguire diverse attività in Intune.
-- Fornire informazioni agli utenti sul completamento delle attività e la risoluzione dei problemi che possono incontrare usando Intune.
+Usare queste informazioni e questi collegamenti per conoscere le procedure che gli utenti finali devono svolgere per eseguire diverse attività in Intune.
 
 Assicurarsi di includere le informazioni di contatto dell'amministratore IT quando si [personalizza il portale aziendale](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7) in modo tale che gli utenti possano richiedere l'assistenza necessaria.
 
 
-## Collegamenti utili per gli utenti finali sulle attività comuni
+## Modalità in cui gli utenti finali possono trovare informazioni sulle procedure e sulla risoluzione dei problemi
 
-Se gli utenti registrati necessitano di assistenza per l'uso di Intune, in genere visualizzano un collegamento nel sito Web del portale aziendale o nell'app Portale aziendale che punta a un articolo specifico con i passaggi per risolvere il problema o completare l'attività. Ad esempio, se gli utenti Android visualizzano un messaggio che informa che un certificato obbligatorio risulta mancante, possono toccare un collegamento "Risoluzione del problema" per passare a un articolo con i passaggi su come ottenere il certificato. 
+Il sito Web del portale aziendale e l'app del portale aziendale mostrano agli utenti registrati un collegamento di tipo "Altre informazioni" o "Risoluzione del problema" che indirizza a istruzioni su come risolvere il problema o completare l'attività. Ad esempio, se gli utenti Android visualizzano un messaggio nell'app del portale aziendale Android che informa gli utenti che un certificato obbligatorio risulta mancante, questi possono toccare un collegamento "Risoluzione del problema" per passare a un articolo con i passaggi su come ottenere il certificato. 
 
-I collegamenti seguenti sono per gli amministratori IT. Queste pagine contengono collegamenti a tutti gli articoli che vengono inviati agli utenti dal sito Web del portale aziendale o dall'app Portale aziendale. Il collegamento è suddiviso in sezioni: installazione dell'app Portale aziendale e registrazione di Intune; attività che gli utenti possono eseguire sui propri dispositivi, ad esempio l'uso di app gestite e la sincronizzazione manuale dei dispositivi; e risoluzione dei problemi.
+Usare i collegamenti seguenti per vedere i passaggi a cui vengono inviati gli utenti dal sito Web o dall'app del portale aziendale. I collegamenti sono suddivisi in sezioni nell'installazione dell'app del portale aziendale e nella registrazione di Intune: attività generali che gli utenti possono eseguire sui propri dispositivi e risoluzione dei problemi.
 
 - [Uso del dispositivo Android con Intune](/Intune/EndUser/using-your-android-device-with-intune)
 - [Uso del dispositivo iOS o Mac OS con Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -43,12 +40,11 @@ I collegamenti seguenti sono per gli amministratori IT. Queste pagine contengono
 - [Uso del sito Web del portale aziendale](/Intune/EndUser/using-the-intune-company-portal-website)
 
 
-## Guide e modelli di registrazione che possono essere personalizzati per gli utenti
+## Guida di registrazione che è possibile personalizzare per gli utenti
 
-- [Modello di registrazione dell'utente finale di Intune personalizzabile per amministratori IT](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a): documento di Word personalizzabile con passaggi dettagliati e schermate della registrazione dell'utente finale per dispositivi iOS, Mac OS X e Android. È possibile usare questo documento così com'è o personalizzare le istruzioni prima di fornire il documento agli utenti finali.</br></br>
-- [Documento personalizzabile di due pagine con passaggi e video incorporati su registrazione, annullamento della registrazione, recupero di app e altro](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c#content): documento che può essere personalizzato e consegnato agli utenti finali. Contiene sezioni su come registrare dispositivi Android, iOS e Windows, recuperare app, annullare la registrazione, cosa fare se si perde il dispositivo e cosa i professionisti IT possono e non possono vedere nel dispositivo.
+È possibile usare questo [modello di registrazione personalizzabile degli utenti finali di Intune per gli amministratori IT](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) per creare le proprie istruzioni di registrazione destinate agli utenti finali. Questo documento di Word contiene schermate e passaggi dettagliati di registrazione dell'utente finale per dispositivi iOS, Android e Mac OS X. 
 
-##Modalità di recupero delle app per gli utenti finali
+## Modalità di recupero delle app per gli utenti finali
 
 Per vedere in che modo gli utenti finali recuperano le loro app, scegliere fra le seguenti opzioni della piattaforma del dispositivo:
 
@@ -63,6 +59,6 @@ Se si vuole che in questo articolo vengano trattate altre informazioni, aggiunge
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa05027e1785bb27a607aa9e31b685107a84f63f
-ms.openlocfilehash: 3de68238515a2584b6f1a5785e13688097468415
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: c074dd8850aef8cec79a9362222c3678d679bf4f
 
 
 ---
@@ -22,18 +22,18 @@ ms.openlocfilehash: 3de68238515a2584b6f1a5785e13688097468415
 # Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità
 Intune con la protezione dalle minacce per i dispositivi mobili Lookout offre la possibilità di rilevare le minacce per dispositivi mobili ed eseguire una valutazione dei rischi nel dispositivo. È possibile creare una regola dei criteri di conformità che includa la valutazione dei rischi per determinare se il dispositivo è conforme. È quindi possibile usare i criteri di accesso condizionale per consentire o bloccare l'accesso a Exchange, SharePoint e altri servizi in base alla conformità del dispositivo.
 
-Per fare in modo che il rilevamento delle minacce Lookout MTP influenzi i criteri di conformità per il dispositivo:
+Per fare in modo che il rilevamento delle minacce del dispositivo Lookout influenzi i criteri di conformità per il dispositivo:
 
 * È necessario abilitare la regola **Protezione dalle minacce per il dispositivo** nei criteri di conformità.
 
 * La pagina **Stato di Lookout** nella **console di amministrazione di Intune** deve indicare **Attivo**. Vedere l'argomento [Abilitare la connessione a Lookout MTP nella console di amministrazione Intune](enable-lookout-mtp-connection-in-intune.md) per altri dettagli e istruzioni su come attivare l'integrazione di Lookout.
 
 
-Prima di creare la regola di protezione dalle minacce per il dispositivo nei criteri di conformità, è consigliabile [configurare la sottoscrizione con Lookout MTP](set-up-your-subscription-with-lookout-mtp.md), [abilitare la connessione a Lookout in Intune](enable-lookout-mtp-connection-in-intune.md) e [configurare l'app Lookout for Work](configure-and-deploy-lookout-for-work-apps.md). La regola di conformità viene applicata solo dopo il completamento della configurazione.
+Prima di creare la regola di protezione dalle minacce per il dispositivo nei criteri di conformità, è consigliabile [configurare la sottoscrizione con la protezione dalle minacce per il dispositivo di Lookout](set-up-your-subscription-with-lookout-mtp.md), [abilitare la connessione a Lookout in Intune](enable-lookout-mtp-connection-in-intune.md) e [configurare l'app Lookout for Work](configure-and-deploy-lookout-for-work-apps.md). La regola di conformità viene applicata solo dopo il completamento della configurazione.
 
 Per abilitare la regola di protezione dalle minacce per il dispositivo, è possibile usare criteri di conformità esistenti o crearne di nuovi.
 
-Nell'ambito della configurazione di Lookout MTP, nella [console di Lookout MTP](https://aad.lookout.com) è stato creato un criterio per la classificazione delle varie minacce in base ai livelli alto, medio e basso. Nei criteri di conformità di Intune si userà il livello di minaccia per impostare il livello di minaccia massimo consentito.
+Nell'ambito della configurazione della protezione dalle minacce per il dispositivo di Lookout, nella [console di Lookout](https://aad.lookout.com) è stato creato un criterio per la classificazione delle varie minacce in base ai livelli alto, medio e basso. Nei criteri di conformità di Intune si userà il livello di minaccia per impostare il livello di minaccia massimo consentito.
 
 Nella pagina **Criteri di conformità** della **console di amministrazione di Intune** passare a **Integrità del dispositivo** e abilitare la regola **Protezione dalle minacce per il dispositivo** tramite l'opzione di alternanza. Selezionare quindi il livello di minaccia massimo consentito tra uno dei seguenti:
 * **Nessuno (protetto)**: questo è il livello più sicuro e  indica che il dispositivo non può avere minacce.  Se viene trovato un livello di minaccia, il dispositivo viene valutato come non conforme.  
@@ -61,6 +61,6 @@ Se si creano criteri di accesso condizionale per Office 365 e altri servizi, vie
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

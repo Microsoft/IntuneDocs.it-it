@@ -4,7 +4,7 @@ description: Questo argomento consente di risolvere i problemi di distribuzione 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
-ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
+ms.sourcegitcommit: 30d42bc4ee38a45895320eebd665fe8f5a0cb4ee
+ms.openlocfilehash: 0db3e6a39bd0d30231c339cb4501ce25059e4657
 
 
 ---
@@ -32,11 +32,23 @@ Se si verificano problemi durante la distribuzione e la gestione di app con Intu
 |0x80073CFB|Il pacchetto fornito è già installato, pertanto la reinstallazione del pacchetto è stata bloccata|Questo errore può verificarsi se si installa un pacchetto che non è identico al pacchetto già installato. Verificare che anche la firma digitale faccia parte del pacchetto. Quando un pacchetto viene ricompilato o firmato di nuovo, nel confronto bit per bit tale pacchetto non è più identico a quello installato in precedenza. Per questo problema sono disponibili due soluzioni:<br /><br />-   Incrementare il numero di versione dell'app, quindi ricompilare e firmare nuovamente il pacchetto.<br />-   Rimuovere il pacchetto precedente per ogni utente del sistema prima di installare quello nuovo.|
 |0x87D1041C|L'installazione dell'applicazione è stata completata ma non viene rilevata l'applicazione.|- L'app è stata distribuita da Intune e successivamente disinstallata (possibilmente dall'utente finale). Chiedere all'utente di reinstallare l'app dal portale aziendale. Le app necessarie verranno reinstallate automaticamente al successivo accesso del dispositivo.|
 
+## Risoluzione dei problemi delle app da Windows Store
+
+Le informazioni nell'argomento [Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (Risoluzione dei problemi relativi a pacchetti, distribuzioni e query delle app di Windows Store) consentono di risolvere i problemi comuni riscontrabili durante l'installazione di app da Windows Store, tramite Intune o altri mezzi.
+
+## Risoluzione dei problemi relativi alla distribuzione di app a PC gestiti dal client software di Intune
+Per risolvere i problemi relativi alla distribuzione di app a PC gestiti dal client software di Intune, è possibile esaminare i file di log seguenti:
+- %ProgramFiles%\Microsoft\OnlineManagement\Logs folder
+- %ProgramFiles%\Microsoft\OnlineManagement\Updates\ReportingEvents.log
+
+Inoltre, se è necessario aprire un caso di supporto per Intune, può essere utile anche inviare questi log a Microsoft.
+
+
 ### Passaggi successivi
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

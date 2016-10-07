@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
-ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: 61c4cb00fba3352f6898ec41b6d07834da4ec63d
 
 
 ---
@@ -44,11 +44,12 @@ Le restrizioni di Apple impediscono alle app line-of-business e alle app di App 
 
 
 ###Vedere anche
-[Modalità di recupero delle app per gli utenti di Android](how-your-android-users-get-their-apps.md)</br>
+[Modalità di recupero delle app per gli utenti di Android](how-your-android-users-get-their-apps.md)
+
 [Modalità di recupero delle app per gli utenti di Windows](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 

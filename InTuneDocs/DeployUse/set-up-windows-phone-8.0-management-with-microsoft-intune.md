@@ -3,8 +3,8 @@ title: Impostare la gestione di Windows Phone 8.0 | Microsoft Intune
 description: Abilitare la gestione di dispositivi mobili (MDM) per i dispositivi Windows Phone 8.0 con Microsoft Intune.
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 06/09/2016
+manager: angrobe
+ms.date: 07/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f336cf52cbecd93cb7b2850560327e6024302e0
-ms.openlocfilehash: 9f0c2493c5e852419b037eacd3bf2ce798fecd0a
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 
 
 ---
@@ -42,7 +42,7 @@ Windows Phone 8.0 richiede un certificato Symantec per installare l'app Portale 
 I requisiti di installazione per la gestione dei dispositivi mobili Windows Phone variano a seconda della modalità di gestione dei dispositivi.  L'impostazione di due CNAME nella registrazione DNS della società semplifica la registrazione. Se gli utenti devono scaricare l'app Portale aziendale dallo Store, dopo aver configurato le impostazioni DNS è sufficiente impostare Portale aziendale e indicare agli utenti come effettuare la registrazione.  Per Windows Phone 8.0 o Windows Phone 8.1 in cui verrà distribuito il Portale aziendale, è necessario un certificato Symantec per firmare il codice dell'app.
 
 ## Configurare i requisiti di installazione per abilitare la gestione di Windows Phone
-1.  **Configurare Intune** Se non è ancora stato fatto, preparare la gestione del dispositivo mobile [impostando l'autorità di gestione del dispositivo mobile](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) su **Microsoft Intune** e configurando MDM.
+1.  **Configurare Intune** Se non è stato già fatto, preparare la gestione dei dispositivi mobili [impostando l'autorità di gestione dei dispositivi mobili](prerequisites-for-enrollment.md#set-mobile-device-management-authority) come **Microsoft Intune** e configurando la gestione dei dispositivi mobili.
 
 2.  **Impostare un alias DNS per l'indirizzo del server di registrazione** (facoltativo)
 
@@ -183,6 +183,6 @@ I requisiti di installazione per la gestione dei dispositivi mobili Windows Phon
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

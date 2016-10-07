@@ -13,21 +13,27 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
-ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
+ms.sourcegitcommit: ffe11b4eb4b0f4c2ffdc831cad9deb30d7180809
+ms.openlocfilehash: 94de65185af64052226985f2c65c7b8a18e2f829
 
 
 ---
 
 # Proteggere app e dati line-of-business su dispositivi non registrati
 
-I criteri di gestione delle app per dispositivi mobili (MAM) aiutano a proteggere i dati aziendali limitando gli spostamenti dei dati come le operazioni di copia e incolla o impedendo agli utenti di salvare documenti aziendali in un percorso personale.   Prima di applicare i criteri MAM alle applicazioni line-of-business per iOS e Android è necessario eseguire il wrapping dell'app con lo strumento di wrapping delle app di Microsoft Intune.  Il wrapping dell’app è il processo di applicazione di un livello di gestione a un'app per dispositivi mobili senza alcuna modifica dell'applicazione sottostante.  Dopo aver eseguito il wrapping è possibile applicare i criteri MAM all'app e distribuirla agli utenti finali.  
+I criteri di gestione delle app mobili consentono di proteggere i dati aziendali limitando le azioni che possono causare la perdita dei dati aziendali e applicando i requisiti di accesso ai dati, ad esempio il PIN dell'app. Prima di applicare i criteri di gestione delle applicazioni mobili alle app line-of-business per iOS e Android, è necessario eseguire il wrapping dell'app con lo strumento di wrapping delle app di Microsoft Intune.  Il wrapping dell’app è il processo di applicazione di un livello di gestione a un'app per dispositivi mobili senza alcuna modifica dell'applicazione sottostante.  Dopo aver eseguito il wrapping è possibile applicare i criteri MAM all'app e distribuirla agli utenti finali.  
 
-Questo argomento elenca i passaggi per l'applicazione dei criteri MAM alle app a cui si accede su **dispositivi di proprietà degli utenti e non gestiti** e dispositivi gestiti da **soluzioni di gestione dei dispositivi mobili (MDM) di terze parti**.  Per preparare le app line-of-business eseguite su **dispositivi registrati in Intune**, vedere [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+Questo argomento elenca i passaggi per l'applicazione dei criteri MAM alle app a cui si accede su **dispositivi di proprietà degli utenti e non gestiti** e dispositivi gestiti da **soluzioni di gestione dei dispositivi mobili (MDM) di terze parti**.  Per preparare le app line-of-business eseguite su **dispositivi registrati in gestione dei dispositivi mobili di Intune**, vedere [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+
+
 ##  Passaggio 1: Preparare l'app.
-Prima di applicare i criteri MAM a un'app è necessario eseguire il wrapping dell'app con lo strumento di wrapping delle app di Microsoft Intune.  Le istruzioni per l'installazione e l'uso dello strumento di wrapping delle app sono incluse nel download.  
+Prima di applicare i criteri MAM a un'app è necessario eseguire il wrapping dell'app con lo strumento di wrapping delle app di Microsoft Intune.  Per istruzioni su come scaricare e usare lo strumento di wrapping delle app, vedere le pagine seguenti:
+
+- [Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 
+- [Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+
 >[!IMPORTANT]  
->Questa versione dello strumento di wrapping delle app, che supporta i dispositivi non registrati in Intune, è disponibile in anteprima pubblica. Per partecipare all'anteprima pubblica, è possibile scaricare lo strumento da [questa pagina di GitHub](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) per iOS e da [questo sito GitHub](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) per Android.
+>Questa versione dello strumento di wrapping delle app, che supporta i dispositivi non registrati in Intune, è disponibile in iOS e nella versione di anteprima pubblica di Android. È possibile scaricare lo strumento da [questo repository GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) per iOS e da [questo repository GitHub](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) per Android.
 
 ## Passaggio 2: Aggiungere l'app.
 
@@ -75,6 +81,6 @@ Per la modifica di dettagli dell'app come il nome o l'identificatore bundle è n
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -13,14 +13,14 @@ ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1334500471d2aea5e8c58a3219c755bfd9953424
-ms.openlocfilehash: 4ae7d6c571f69c0cc51dc15355e50325afb88694
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: 2052aca24baa752bc4fad3bd7a75f8efa109e9e9
 
 
 ---
 
 # Abilitare la connessione a Lookout MTP nella console di amministrazione Intune
-Questo argomento illustra come abilitare la connessione a Lookout MTP in Intune. Prima di eseguire questo passaggio, è necessario avere già configurato Intune Connector nella console di Lookout MTP.  Se non è già stato fatto, eseguire i passaggi descritti in [Configurare la sottoscrizione con Lookout MTP](set-up-your-subscription-with-lookout-mtp.md).
+Questo argomento illustra come abilitare la connessione a Lookout MTP in Intune. Prima di eseguire questo passaggio, è necessario avere già configurato Intune Connector nella console di Lookout.  Se non è già stato fatto, eseguire i passaggi descritti in [Configurare la sottoscrizione con Lookout MTP](set-up-your-subscription-with-lookout-mtp.md).
 
 Per abilitare la connessione a Lookout MTP in Intune, nella pagina **Amministrazione** nella [console di amministrazione Microsoft Intune](https://manage.microsoft.com) scegliere **Integrazione con un servizio di terze parti**. Scegliere **Stato di Lookout** e abilitare **Sincronizzazione con MTP** usando l'interruttore.
 
@@ -35,6 +35,6 @@ Per abilitare la connessione a Lookout MTP in Intune, nella pagina **Amministraz
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

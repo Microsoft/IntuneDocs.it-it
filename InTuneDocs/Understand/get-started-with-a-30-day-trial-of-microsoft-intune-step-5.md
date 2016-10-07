@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: dc767abc733457d975b61b96e21781952f79c6f9
+ms.openlocfilehash: fb99e78261b678ef776f992d5abfd2ba0555d4da
 
 
 ---
@@ -58,7 +58,7 @@ Se viene richiesto un **indirizzo server**, immettere "manage.microsoft.com".
 ## Installare l'applicazione distribuita in precedenza
 Aprire l'app Portale aziendale nel dispositivo mobile, scegliere **App** e quindi installare **Microsoft Skype**.
 
-Per altre informazioni sulla gestione dei dispositivi mobili con Intune, vedere [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+Per altre informazioni sulla gestione dei dispositivi mobili con Intune, vedere [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](/Intune/deploy-use/prerequisites-for-enrollment).
 
 ### Passaggi successivi
 A questo punto, il passaggio 5 della procedura di *valutazione di Microsoft Intune* è stato completato.
@@ -69,6 +69,6 @@ A questo punto, il passaggio 5 della procedura di *valutazione di Microsoft Intu
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 
