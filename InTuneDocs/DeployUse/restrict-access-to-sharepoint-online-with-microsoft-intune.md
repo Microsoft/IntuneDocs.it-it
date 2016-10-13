@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
-ms.openlocfilehash: ba7e7e19966ce3ad582c8a520b7c9174dba76bf5
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
 
 
 ---
@@ -35,7 +35,8 @@ Quando un utente prova a connettersi a un file usando un'app supportata, come On
 
 **Prima** di configurare i criteri di accesso condizionale per SharePoint Online è necessario:
 - Avere una **sottoscrizione a SharePoint Online** e gli utenti devono avere una licenza per SharePoint Online.
-- Avere una **sottoscrizione di Azure Active Directory Premium**. Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). La **sottoscrizione di Enterprise Mobility Suite + Security** include sottoscrizioni di Intune e Azure Active Directory Premium. Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility Suite](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing).
+- Avere una **sottoscrizione di Enterprise Mobility + Security o una sottoscrizione di Azure Active Directory Premium** e gli utenti devono essere licenziatari di EMS o Azure AD. Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+
 
   Per connettersi ai file richiesti, il dispositivo deve:
 -   Essere **registrato** con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] o un PC aggiunto a un dominio.
@@ -193,6 +194,6 @@ Selezionare un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Di
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

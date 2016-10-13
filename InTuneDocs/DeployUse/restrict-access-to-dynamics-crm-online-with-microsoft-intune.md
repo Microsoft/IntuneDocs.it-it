@@ -13,8 +13,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
-ms.openlocfilehash: e82452abd00cf7a06ac501ed4e16bdab423697bd
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 233b7cad41fbd35e0fef615737fc41f8a49db35e
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: e82452abd00cf7a06ac501ed4e16bdab423697bd
 
 Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Limitare l'accesso alla posta elettronica, a Office 365 e ad altri servizi con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
-[!IMPORTANT] Per distribuire l'accesso condizionale è necessario disporre di sottoscrizioni di Intune e Azure Active Directory Premium.  Per altre informazioni su Azure Active Directory Premium, vedere la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). La sottoscrizione di **Enterprise Mobility Suite + Security** include sottoscrizioni di Intune e Azure Active Directory Premium. Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility Suite](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing).
+[!IMPORTANT] Per distribuire l'accesso condizionale è necessario disporre di sottoscrizioni di Intune e Azure Active Directory Premium e gli utenti devono essere licenziatari per entrambi i prodotti. La **sottoscrizione di Enterprise Mobility + Security (EMS)** include sottoscrizioni di Intune e Azure Active Directory Premium. Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Se non si dispone della sottoscrizione di EMS, è possibile ottenere una sottoscrizione per Azure Active Directory Premium. Vedere la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
 
 Quando un utente di destinazione tenta di usare l'app Dynamics CRM sul proprio dispositivo, si verifica quanto segue:
 
@@ -99,6 +99,6 @@ Selezionare un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Di
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

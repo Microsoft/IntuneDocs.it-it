@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fbe37aa081f850224ce4ee76f66e154c6001c9c
-ms.openlocfilehash: 480a7a60b484f28b621c4c135713a65953f46f41
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ Questo argomento descrive come creare gruppi in Intune. Fornisce inoltre informa
 
 >[!IMPORTANT]
 >
->Se si apre l'area di lavoro Gruppi nel portale di Intune ed è disponibile un collegamento al portale di Azure Active Directory (Azure AD), questo indica che è già in uso il *nuovo* approccio alla gestione dei gruppi in Intune basato sui gruppi di sicurezza di Azure AD, descritto in [Avviso sui miglioramenti che verranno apportati alle funzionalità di amministrazione per i gruppi](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Fare clic sul collegamento al portale di Azure AD per creare e gestire i gruppi. 
+>Se si apre l'area di lavoro Gruppi nel portale di Intune ed è disponibile un collegamento al portale di Azure Active Directory (Azure AD), questo indica che è già in uso il *nuovo* approccio alla gestione dei gruppi in Intune basato sui gruppi di sicurezza di Azure AD, descritto in [Avviso sui miglioramenti che verranno apportati alle funzionalità di amministrazione per i gruppi](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Fare clic sul collegamento al portale di Azure AD per creare e gestire i gruppi.
+>
+>![Schermata del collegamento alla gestione dei gruppi in Azure](../media/groups-link-azure.png) 
 >
 >Se non è disponibile il collegamento al portale di Azure AD, si sta ancora usando l'approccio *corrente* alla gestione dei gruppi, descritto in [Creare gruppi per gestire utenti e dispositivi con Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in questo argomento.
 
@@ -202,6 +204,6 @@ Ogni criterio dispone di un **previsto valore** e **stato**. Il valore previsto 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

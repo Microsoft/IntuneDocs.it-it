@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
-ms.openlocfilehash: ee57650e1613030b4b22963890cf648b514e0db3
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 
 ---
@@ -31,7 +31,7 @@ Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'ar
 
 -   Avere una **sottoscrizione a Office 365 che include Exchange Online (ad esempio E3)** e gli utenti devono avere una licenza per Exchange Online.
 
-- Avere una **sottoscrizione di Azure Active Directory Premium**. Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). La sottoscrizione di **Enterprise Mobility Suite + Security** include sottoscrizioni di Intune e Azure Active Directory Premium. Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility Suite](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing).
+- Avere una **sottoscrizione di Enterprise Mobility + Security o una sottoscrizione di Azure Active Directory Premium** e gli utenti devono essere licenziatari di EMS o Azure AD. Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  Può essere opportuno configurare l'opzione facoltativa **Microsoft Intune Service to Service Connector** che connette [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] a Microsoft Exchange Online e consente di gestire le informazioni sui dispositivi tramite la console di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Non è necessario usare il connettore per i criteri di conformità o i criteri di accesso condizionale, ma è obbligatorio eseguire i report per valutare l'impatto dell'accesso condizionale.
 
@@ -263,6 +263,6 @@ Nel dashboard di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sceglier
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 
