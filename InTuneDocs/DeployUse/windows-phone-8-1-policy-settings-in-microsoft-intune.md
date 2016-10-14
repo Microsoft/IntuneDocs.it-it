@@ -4,7 +4,7 @@ description: "Intune offre una gamma di impostazioni generali incorporate che è
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/30/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
-ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 3c9c75e5e9e19574a5b4525688103dc95e3d6b9b
 
 
 ---
@@ -39,75 +39,75 @@ Usare i **criteri di configurazione generale per Windows Phone (Windows Phone 8.
 
 ### Impostazioni della password
 
-|Nome impostazione|Dettagli|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Richiedi una password per sbloccare i dispositivi mobili**|Specifica se gli utenti devono inserire una password per accedere ai loro dispositivi.|sì|Sì|
-|**Tipo di password richiesto**|Specifica il tipo di password che verrà richiesto, ad esempio alfanumerico o solo numerico.|sì|Sì|
-|**Tipo di password richiesto - Numero minimo di set di caratteri**|Specifica quanti set di caratteri diversi è necessario includere nella password. Sono disponibili quattro set di caratteri: lettere minuscole, lettere maiuscole, numeri e simboli. Per i dispositivi iOS specifica invece il numero di simboli che è necessario includere nella password.|sì|Sì|
-|**Lunghezza minima password**|Specifica il numero minimo di caratteri complessi richiesti per la password.|sì|Sì|
-|**Consenti password semplici**|Specifica la possibilità di usare password semplici, ad esempio '0000' e '1234'.|sì|Sì|
-|**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|Specifica il numero di tentativi di immissione di una password errata ripetuti prima che il dispositivo venga cancellato.|sì|sì|
-|**Minuti di inattività prima dello spegnimento dello schermo**|Specifica per quanto tempo un dispositivo deve rimanere inattivo prima che lo schermo venga bloccato automaticamente.|Sì|Sì|
+|Nome impostazione|Dettagli|
+|----------------|------|
+|**Richiedi una password per sbloccare i dispositivi mobili**|Specifica se gli utenti devono inserire una password per accedere ai loro dispositivi.|
+|**Tipo di password richiesto**|Specifica il tipo di password che verrà richiesto, ad esempio alfanumerico o solo numerico.|
+|**Tipo di password richiesto - Numero minimo di set di caratteri**|Specifica quanti set di caratteri diversi è necessario includere nella password. Sono disponibili quattro set di caratteri: lettere minuscole, lettere maiuscole, numeri e simboli. Per i dispositivi iOS specifica invece il numero di simboli che è necessario includere nella password.|
+|**Lunghezza minima password**|Specifica il numero minimo di caratteri complessi richiesti per la password.|
+|**Consenti password semplici**|Specifica la possibilità di usare password semplici, ad esempio '0000' e '1234'.|
+|**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|Specifica il numero di tentativi di immissione di una password errata ripetuti prima che il dispositivo venga cancellato.|
+|**Minuti di inattività prima dello spegnimento dello schermo**|Specifica per quanto tempo un dispositivo deve rimanere inattivo prima che lo schermo venga bloccato automaticamente.|
 |**Scadenza password (giorni)**|Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.|Sì|Sì|
-|**Ricorda cronologia password**|Specifica se vengono ricordate le password precedenti per impedire che l'utente le usi di nuovo.|sì|Sì|
-|**Ricorda cronologia password** – **Impedisci riutilizzo delle password precedenti**|Specifica quante password utilizzate in precedenza vengono ricordate.|Sì|Sì|
+|**Ricorda cronologia password**|Specifica se vengono ricordate le password precedenti per impedire che l'utente le usi di nuovo.|
+|**Ricorda cronologia password** – **Impedisci riutilizzo delle password precedenti**|Specifica quante password utilizzate in precedenza vengono ricordate.|
 
 ### Impostazioni di crittografia
 
-|Nome impostazione|Dettagli|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|------|-----------------------------|
-|**Richiedi crittografia sui dispositivi mobili**|Richiede che i dati presenti nei dispositivi mobili supportati siano crittografati.<br>Per i dispositivi Windows Phone 8, è necessario impostare su **Sì**.|sì|Sì|
+|Nome impostazione|Dettagli|
+|----------------|------|
+|**Richiedi crittografia sui dispositivi mobili**|Richiede che i dati presenti nei dispositivi mobili supportati siano crittografati.|
 
 ### Impostazioni di sistema
 
-|Nome impostazione|Dettagli|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**Consenti acquisizione schermo**|Consente all'utente di acquisire il contenuto della schermata come file di immagine.|No|Sì|
-|**Consenti invio dati di diagnostica**|Consente al dispositivo di inviare informazioni di diagnostica a Microsoft.|No|Sì|
+|Nome impostazione|Dettagli|
+|----------------|-----|
+|**Consenti acquisizione schermo**|Consente all'utente di acquisire il contenuto della schermata come file di immagine.|
+|**Consenti invio dati di diagnostica**|Consente al dispositivo di inviare informazioni di diagnostica a Microsoft.|
 
 ### Impostazioni cloud - Account e sincronizzazione
 
-|Nome impostazione|Dettagli|Windows Phone 8|Windows Phone 8.1|
-|----------------|------|-----|------------------------------|
-|**Consenti account Microsoft**|Consente il collegamento di un account Microsoft al dispositivo.|No|Sì|
+|Nome impostazione|Dettagli|
+|----------------|------|
+|**Consenti account Microsoft**|Consente il collegamento di un account Microsoft al dispositivo.|
 
 ### Impostazioni di posta elettronica
 
-|Nome impostazione|Dettagli|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Consenti account di posta elettronica personalizzati**|Consente al dispositivo di connettersi ad account di posta elettronica non Microsoft.|No|Sì|
+|Nome impostazione|Dettagli|
+|----------------|-----|
+|**Consenti account di posta elettronica personalizzati**|Consente al dispositivo di connettersi ad account di posta elettronica non Microsoft.|
 
 ### Impostazioni dell'applicazione - Browser
 
-|Nome impostazione|Dettagli|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|-----|-------------------------------|
-|**Consenti browser Web**|Abilita o blocca il Web browser incorporato nei dispositivi.|No|Sì|
+|Nome impostazione|Dettagli|
+|----------------|-----|
+|**Consenti browser Web**|Abilita o blocca il Web browser incorporato nei dispositivi.|
 
 ### Impostazioni dell'applicazione - App
 
-|Nome impostazione|Dettagli|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|------|------------------------------|
-|**Consenti archivio applicazioni**|Consente all'utente di connettersi all'App Store dal dispositivo.|No|Sì|
+|Nome impostazione|Dettagli|
+|----------------|-----|
+|**Consenti archivio applicazioni**|Consente all'utente di connettersi all'App Store dal dispositivo.|
 
 ### Impostazioni delle funzionalità del dispositivo - Hardware
 
-|Nome impostazione|Dettagli|Windows Phone 8|Windows Phone 8.1|
-|----------------|-----|----|--------------------------------|
-|**Consenti dispositivo foto/video**|Abilita o blocca la fotocamera del dispositivo.|No|Sì|
-|**Consenti archivi rimovibili**|Consente al dispositivo di usare unità di archiviazione rimovibili, ad esempio schede SD.|sì|Sì|
-|**Consenti Wi-Fi**|Abilita o disabilita la funzione Wi-Fi del dispositivo.|No|Sì|
-|**Consenti tethering Wi-Fi**|Abilita l'uso del tethering Wi-Fi nel dispositivo.|No|Sì
-|**Consenti connessione automatica agli hotspot Wi-Fi gratuiti**|Consente al dispositivo di connettersi automaticamente agli hotspot Wi-Fi gratuiti e accettare automaticamente le condizioni per l'uso.|No|sì|
-|**Consenti creazione report degli hotspot Wi-Fi**|Invia informazioni sulle connessioni Wi-Fi per individuare connessioni nelle vicinanze.|No|Sì|
-|**Consenti georilevazione**|Consente al dispositivo di usare le informazioni sulla posizione geografica.|No|Sì|
-|**Consenti NFC**|Consente operazioni che usano NFC (Near Field Communication).|No|Sì|
-|**Consenti Bluetooth**|Abilita o disabilita la funzione Bluetooth del dispositivo.|No|Sì|
+|Nome impostazione|Dettagli|
+|----------------|-----|
+|**Consenti dispositivo foto/video**|Abilita o blocca la fotocamera del dispositivo.|
+|**Consenti archivi rimovibili**|Consente al dispositivo di usare unità di archiviazione rimovibili, ad esempio schede SD.|
+|**Consenti Wi-Fi**|Abilita o disabilita la funzione Wi-Fi del dispositivo.|
+|**Consenti tethering Wi-Fi**|Abilita l'uso del tethering Wi-Fi nel dispositivo.|
+|**Consenti connessione automatica agli hotspot Wi-Fi gratuiti**|Consente al dispositivo di connettersi automaticamente agli hotspot Wi-Fi gratuiti e accettare automaticamente le condizioni per l'uso.|
+|**Consenti creazione report degli hotspot Wi-Fi**|Invia informazioni sulle connessioni Wi-Fi per individuare connessioni nelle vicinanze.|
+|**Consenti georilevazione**|Consente al dispositivo di usare le informazioni sulla posizione geografica.|
+|**Consenti NFC**|Consente operazioni che usano NFC (Near Field Communication).|
+|**Consenti Bluetooth**|Abilita o disabilita la funzione Bluetooth del dispositivo.|
 
 ### Impostazioni delle funzionalità del dispositivo - Funzionalità
 
-|Nome impostazione|Dettagli|Windows Phone 8|Windows Phone 8.1|
-|----------------|----|------|-------------------------------|
-|**Consenti copia e incolla**|Abilita le funzionalità copia e incolla nel dispositivo.|No|sì|
+|Nome impostazione|Dettagli|
+|----------------|----|
+|**Consenti copia e incolla**|Abilita le funzionalità copia e incolla nel dispositivo.|
 
 ### Impostazioni per le app consentite e bloccate
 In **Elenco app consentite e bloccate** specificare un elenco di app da consentite o bloccare usando le informazioni seguenti:
@@ -171,6 +171,6 @@ Nella finestra di dialogo **Aggiungi o modifica impostazione URI OMA** specifica
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
