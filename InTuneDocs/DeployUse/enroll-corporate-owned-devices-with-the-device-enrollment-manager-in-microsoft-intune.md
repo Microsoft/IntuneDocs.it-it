@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e332bbf9aa8f6543950eba7e1fd734b3fb4b1edb
-ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 ---
@@ -44,7 +44,7 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
   - Nessuna possibilità di reimpostazione dei dispositivi dal portale aziendale.
   - Visualizzazione del solo dispositivo locale nell'app o nel sito Web del portale aziendale.
   - Nessuna possibilità di usare app Apple VPP (Volume Purchase Program) a causa della necessità di un ID Apple per utente per la gestione delle app.
-  - Nessuna possibilità di eseguire la registrazione ad Apple Configurator o a un programma di registrazione di dispositivi di Apple (dispositivi iOS).
+  - (iOS) Nessuna possibilità di iscrizione ad Apple Configurator o al programma di registrazione dispositivi di Apple (DEP), ma possibilità di registrare i dispositivi gestiti da DEP o da Apple Configurator senza affinità utente.
 
 > [!NOTE]
 > Per distribuire le app aziendali ai dispositivi gestiti con il manager di registrazione dispositivi, distribuire l'app Portale aziendale come **Installazione richiesta** all'account utente del manager di registrazione dispositivi.
@@ -95,6 +95,6 @@ L'eliminazione di un manager di registrazione dispositivi non influisce sui disp
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
