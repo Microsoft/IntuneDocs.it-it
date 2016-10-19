@@ -1,6 +1,6 @@
 ---
 title: Registrare i dispositivi mobili della valutazione | Microsoft Intune
-description: Come registrare dispositivi mobili e installare un'app quando si esegue l'iscrizione per una valutazione gratuita di 30 giorni di Intune
+description: Come registrare dispositivi mobili e installare un&quot;app quando si esegue l&quot;iscrizione per una valutazione gratuita di 30 giorni di Intune
 keywords: 
 author: lindavr
 manager: angrobe
@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
 
 
 ---
@@ -49,16 +49,10 @@ Installare l'app **Portale aziendale di Intune** di Microsoft Corporation, dispo
 ### Windows Phone 8.1
 Gli utenti installano l'app **Portale aziendale** di Microsoft Corporation, disponibile in Windows Phone Store e accedono con le credenziali utente di Intune aggiunte in precedenza.  Visualizzare i **dispositivi registrati** per aggiungere il dispositivo.
 
- ### Windows Phone 8.0
- Gli utenti fanno clic su **Impostazioni di sistema**&gt;**App aziendali** e accedono con le credenziali utente di Intune aggiunte in precedenza. L'app Portale aziendale viene distribuita nel telefono dell’utente.
-
-Se viene richiesto un **indirizzo server**, immettere "manage.microsoft.com".
-
-
 ## Installare l'applicazione distribuita in precedenza
 Aprire l'app Portale aziendale nel dispositivo mobile, scegliere **App** e quindi installare **Microsoft Skype**.
 
-Per altre informazioni sulla gestione dei dispositivi mobili con Intune, vedere [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+Per altre informazioni sulla gestione dei dispositivi mobili con Intune, vedere [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](/Intune/deploy-use/prerequisites-for-enrollment).
 
 ### Passaggi successivi
 A questo punto, il passaggio 5 della procedura di *valutazione di Microsoft Intune* è stato completato.
@@ -69,6 +63,6 @@ A questo punto, il passaggio 5 della procedura di *valutazione di Microsoft Intu
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

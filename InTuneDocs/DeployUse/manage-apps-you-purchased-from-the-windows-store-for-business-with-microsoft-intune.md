@@ -13,8 +13,8 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d40ec3b5b7c5c4ee2cfd48a95ada0dadcaa80be4
-ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
 
 
 ---
@@ -28,7 +28,7 @@ In [Windows Store per le aziende](https://www.microsoft.com/business-store) è p
 
 ## Prima di iniziare
 Prima di iniziare la sincronizzazione e la distribuzione di app da Windows Store per le aziende, leggere attentamente le informazioni seguenti:
-* È necessario configurare Intune come autorità di gestione dei dispositivi mobili dell'organizzazione. Per altre informazioni, vedere [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md).
+* È necessario configurare Intune come autorità di gestione dei dispositivi mobili dell'organizzazione. Per altre informazioni, vedere [Prerequisiti per la registrazione dei dispositivi in Microsoft Intune](prerequisites-for-enrollment.md).
 * È necessario ottenere un account registrandosi in Windows Store per le aziende.
 * Dopo che un account di Windows Store per le aziende è stato associato a Intune, non è possibile passare a un altro account in futuro.
 * Le app acquistate dallo Store non possono essere aggiunte o eliminate manualmente da Intune. ma possono solo essere sincronizzate con Windows Store per le aziende.
@@ -77,6 +77,6 @@ Quando si distribuisce un'app di Windows Store per le aziende, viene usata una l
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

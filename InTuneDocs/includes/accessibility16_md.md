@@ -1,5 +1,5 @@
 Il Servizio Supporto Tecnico Clienti Microsoft è soggetto alle tariffe, ai termini e alle condizioni in essere al momento dell'uso del servizio.
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70f9fb5580b114fe1ba14a1bd05de58467d5cd00
-ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
+ms.sourcegitcommit: df1b58d5ce94c985e71f3afbe228dba9438040dc
+ms.openlocfilehash: d79c498fd775ee9b3d59761fec2fe6ebba116d6d
 
 
 ---
@@ -23,26 +23,30 @@ ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
 È possibile consentire alle app di usare i criteri di gestione delle applicazioni mobili (MAM, Mobile Application Management) tramite lo strumento di wrapping delle app di Intune o Intune App SDK. In questo articolo vengono fornite informazioni su questi due metodi e su quando usarli.
 
 ## Strumento di wrapping delle app di Intune
-Lo strumento di wrapping delle app viene usato principalmente per le app line-of-business (LOB) interne. Lo strumento è un'applicazione della riga di comando che crea un wrapper per l'app, consentendo quindi all'app di essere gestita dai criteri di gestione delle applicazioni mobili di Intune. Non è necessario il codice sorgente per usare lo strumento, ma sono necessarie le credenziali di firma.  Per altre informazioni sulle credenziali di firma, vedere il [blog di Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Per la documentazione dello strumento per la disposizione testo per app, vedere [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune) e [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune).
+Lo strumento di wrapping delle app viene usato principalmente per le app line-of-business (LOB) interne. Lo strumento è un'applicazione della riga di comando che crea un wrapper per l'app, consentendo quindi all'app di essere gestita dai criteri di gestione delle applicazioni mobili di Intune. 
 
-Lo strumento di wrapping delle app non supporta le app nell'App o Play Store né le funzionalità che richiedono un'integrazione del tempo di sviluppo (vedere la tabella di confronto delle funzionalità seguente).
+Non è necessario il codice sorgente per usare lo strumento, ma sono necessarie le credenziali di firma.  Per altre informazioni sulle credenziali di firma, vedere il [blog di Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Per la documentazione dello strumento per la disposizione testo per app, vedere [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune) e [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) (Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune).
+
+Lo strumento di wrapping delle app **non** supporta le app nell'App Store Apple o in Google Play Store né alcune funzionalità che richiedono un'integrazione dello sviluppatore (vedere la tabella di confronto delle funzionalità seguente).
 
 È consigliabile usare lo strumento di wrapping delle app, anziché l'SDK, se l'app è già stato scritta o se il codice sorgente non è disponibile.
 
-**Lo strumento di wrapping delle app per MAM nei dispositivi non registrati in Intune è attualmente supportato in anteprima pubblica. Per altre informazioni, vedere l'argomento [Proteggere le app line-of-business in dispositivi non registrati in Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)**.
+**Per altre informazioni sullo strumento di wrapping delle app per la gestione delle applicazioni mobili sui dispositivi non registrati in Intune, vedere [Proteggere app e dati line-of-business su dispositivi non registrati in Microsoft Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)**.
 
-### Piattaforme supportate
+### Piattaforme di sviluppo delle app supportate
 
 |**Strumento di wrapping delle app** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |sì|sì|
 |**Android**| No |sì|
+
 ## Intune App SDK
-App SDK è progettato principalmente per i clienti che hanno le app nell'App o Play Store e che vogliono poter gestire le app con Intune. Tuttavia, qualsiasi app può sfruttare l'integrazione dell'SDK, anche se si tratta di un'app LOB.
+App SDK è progettato principalmente per i clienti che hanno le app nell'App Store Apple o in Google Play Store e che vogliono poter gestire le app con Intune. Tuttavia, qualsiasi app può sfruttare l'integrazione dell'SDK, anche se si tratta di un'app line-of-business.
 
 Per altre informazioni sull'SDK, vedere la [panoramica](/intune/develop/intune-app-sdk). Per un'introduzione all'SDK, vedere [Introduzione a Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started)
 
-### Piattaforme supportate
+### Piattaforme di sviluppo delle app supportate
+
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
 |**iOS**|Sì - usare il componente Intune App SDK Xamarin|Sì - usare il plug-in Intune App SDK Cordova|
@@ -75,6 +79,7 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 |Cancellazione selettiva <br></br>**Nota:** per iOS, quando viene rimosso il profilo di gestione, viene rimossa anche l'app.|X||
 |Impedire "Salva con nome" |X||
 |Supportare più identità|X||
+|Supportare la gestione delle applicazioni mobili senza registrazione del dispositivo|X|X|
 ### Vedere anche
 
 [Strumento per la disposizione testo per app Adroid](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
@@ -83,6 +88,6 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 
 ---
@@ -39,13 +39,13 @@ Quando si registra il dispositivo Android, vengono concesse all'amministratore I
 
 -   Rimuovere tutti i dati correlati alla società. Impostazioni e dati personali non vengono rimossi.
 
--   Potrebbe essere necessario impostare una password o un PIN, che bloccherà il dispositivo, ripristinerà le impostazioni predefinite o eliminerà i dati dopo troppi tentativi di accesso con password errata.
+-   Impostare requisiti per il dispositivo, ad esempio richiedere una password del dispositivo o un PIN per proteggere i dati aziendali. L'amministratore IT può anche limitare il numero di immissioni di una password errata e impedire l'accesso al dispositivo se tale numero viene superato.
 
 -   Richiedere di accettare i termini e le condizioni.
 
--   Attivare o disattivare la fotocamera del dispositivo.
+-   Disabilitare la fotocamera (solo su dispositivi Samsung Knox, non su dispositivi Nexus) per impedire lo scatto di foto a materiali di lavoro riservati che non vanno condivisi.
 
--   Forzare la crittografia di tutti i dati sul dispositivo, inclusi i dati aziendali e personali. Questa operazione consente di proteggere i dati se il dispositivo viene smarrito o rubato.
+-   Richiedere la crittografia di tutti i dati del dispositivo per proteggere i dati se il dispositivo viene smarrito o rubato.
 
 -   Dopo aver aggiunto il dispositivo al portale aziendale, ogni 8 ore circa verranno eseguite le operazioni seguenti:
 
@@ -58,11 +58,8 @@ Quando si registra il dispositivo Android, vengono concesse all'amministratore I
 Serve assistenza? Contattare l'amministratore IT (per le informazioni di contatto, controllare il [sito Web del portale aziendale](http://portal.manage.microsoft.com)) o scrivere al team Microsoft Android all'indirizzo wintunedroidfbk@microsoft.com.
 
 
-### Vedere anche
-[Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

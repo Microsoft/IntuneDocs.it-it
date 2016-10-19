@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
-ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
+ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
+ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
 
 ---
@@ -39,9 +39,9 @@ Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di insta
 
     ![aprire Lookout for Work e toccare Activate](./media/lookout-activate-button-android.png)
 
-4. Toccare **Sign in with a work account** e immettere l'account usato per accedere all'e-mail di lavoro o scuola e ai file.
+4. Toccare **Accedi con Azure Active Directory** e immettere l'account usato per accedere alla posta elettronica e ai file aziendali o dell'istituto di istruzione.
 
-    ![accedere con l'account di lavoro o scuola](./media/lookout-sign-in-android.png)
+    ![accedere con l'account di lavoro o scuola](./media/lookout-sign-in-azure-android.png)
 
 5. Selezionare l'account usato per accedere all'e-mail e ai file di lavoro o scuola e quindi toccare **ADD ACCOUNT**.
 
@@ -78,6 +78,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 translationtype: Human Translation
-ms.sourcegitcommit: 52d9301f6297065f752cea1dd19024efb11f0730
-ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
+ms.sourcegitcommit: 0736b5f24065f55d8fbd312395e4bb7226ebf619
+ms.openlocfilehash: 5b6253d3d4c969b6947d83b5c8695a484f8c1d27
 
 
 ---
@@ -24,10 +24,10 @@ ms.openlocfilehash: a92334871301523c33f7453038df3ae0fc1fd1a4
 Questo argomento fornisce informazioni sulla verifica di eventuali problemi dopo la configurazione dei criteri di gestione delle applicazioni mobili (MAM). Queste indicazioni si applicano ai criteri MAM nel portale di Azure.
 
 ### Verifica dei sintomi
-Difficilmente gli utenti segnalano problemi poiché MAM è uno strumento di protezione dei dati. Se si verificasse un problema con la configurazione di MAM l'utente avrebbe accesso senza restrizioni, come avverrebbe se MAM non fosse installato, e non si renderebbe conto della presenza di un problema. Per questo motivo che è consigliabile convalidare la configurazione di MAM provando i criteri di gestione delle applicazioni mobili con un piccolo gruppo di utenti che possono testare deliberatamente le restrizioni MAM. 
+Difficilmente gli utenti segnalano problemi poiché MAM è uno strumento di protezione dei dati. Se si verificasse un problema con la configurazione di MAM l'utente avrebbe accesso senza restrizioni, come avverrebbe se MAM non fosse installato, e non si renderebbe conto della presenza di un problema. Per questo motivo che è consigliabile convalidare la configurazione di MAM provando i criteri di gestione delle applicazioni mobili con un piccolo gruppo di utenti che possono testare deliberatamente le restrizioni MAM.
 
 
-### Elementi da controllare 
+### Elementi da controllare
 
 Se la verifica mostra che il comportamento dei criteri di gestione delle applicazioni mobili non è come previsto, è consigliabile verificare quanto segue:
 
@@ -40,7 +40,7 @@ Se la verifica mostra che il comportamento dei criteri di gestione delle applica
 
 2. Scegliere un utente dall'elenco oppure cercare e selezionare un utente, quindi scegliere **Seleziona utente**. Nella parte superiore della colonna **Segnalazione app** verrà visualizzato se l'utente ha la licenza per MAM. Di seguito, verrà visualizzato se l'utente ha la licenza per Office 365 e lo stato dell'app per tutti i dispositivi dell'utente.
 
-![Stato dell'app per MAM](..\media\ts-mam-use-apps.png) 
+![Stato dell'app per MAM](..\media\ts-mam-user-apps.png) 
 
 ### Operazioni da eseguire
 Di seguito sono descritte le azioni da eseguire in base allo stato dell'utente:
@@ -57,6 +57,6 @@ Di seguito sono descritte le azioni da eseguire in base allo stato dell'utente:
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

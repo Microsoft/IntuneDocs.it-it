@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
-ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: a853eb4de5528b3ca219ca844a9df4f3b5ad9224
 
 
 ---
@@ -29,6 +29,7 @@ Per proteggere i dati aziendali è necessario assicurarsi che i dispositivi usat
 È anche possibile usare i criteri di conformità indipendentemente dall'accesso condizionale. In tal caso i dispositivi vengono valutati e segnalati in base allo stato di conformità. Ad esempio può risultare utile segnalare il numero di dispositivi non crittografati o i dispositivi jailbroken o rooted. Tuttavia, quando i criteri di conformità vengono usati in modo indipendente, non vengono applicate limitazioni per l'accesso alle risorse aziendali.
 
 I criteri di conformità vengono distribuiti agli utenti. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata sui dispositivi dell’utente.
+Per informazioni sul tempo necessario ai dispositivi mobili per ottenere un criterio dopo la distribuzione, vedere [Gestire impostazioni e funzionalità nei dispositivi](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
 
 Nella tabella seguente sono elencati i tipi di dispositivi supportati dai criteri di conformità e il modo in cui le impostazioni di non conformità vengono gestite quando i criteri vengono usati con i criteri di accesso condizionale.
 
@@ -64,6 +65,6 @@ Nella tabella seguente sono elencati i tipi di dispositivi supportati dai criter
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 
