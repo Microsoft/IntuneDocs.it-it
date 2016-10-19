@@ -4,7 +4,7 @@ description: "I criteri di gestione delle applicazioni mobili in Microsoft Intun
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b1d92786bd9f4d4893dd19c3116dcd5a047744ea
-ms.openlocfilehash: af9d8dd7830efe28aa5c994a2b5ec2bdcd4cc3cb
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
 
 
 ---
@@ -26,7 +26,7 @@ I criteri di gestione delle applicazioni mobili supportano:
 
 -   Dispositivi che eseguono Android 4 e versioni successive
 
--   Dispositivi che eseguono iOS 7 e versioni successive
+-   Dispositivi che eseguono iOS 8.0 e versioni successive.
 
 > [!TIP]
 > I criteri di gestione delle applicazioni mobili supportano i dispositivi registrati con Intune.
@@ -112,7 +112,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
 
     -   **Criteri di gestione per applicazioni mobili (Android 4 e versioni successive)**
 
-    -   **Criteri di gestione per applicazioni mobili (iOS 7 e versioni successive)**
+    -   **Criteri di gestione di applicazioni mobili (iOS 8.0 e versioni successive)**
 
     È possibile usare le impostazioni consigliate o personalizzare le impostazioni. Per i dettagli vedere [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune).
 
@@ -134,7 +134,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
     |**Richiedi la conformità del dispositivo ai criteri aziendali per l'accesso**|Questa impostazione consente l'uso dell'app solo se il dispositivo non è jailbroken o rooted.|
     |**Controlla di nuovo i requisiti di accesso dopo (minuti)**|Nel campo **Timeout** specificare il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app dopo l'apertura.|
     |**Periodo di prova offline**|Se il dispositivo è offline specificare il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app.|
-    |**Crittografa dati app**|Questa impostazione specifica che tutti i dati associati all'app verranno crittografati. Sono inclusi i dati archiviati esternamente, ad esempio i dati delle schede SD.<br /><br />**Crittografia per iOS**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, i dati vengono crittografati a riposo mediante la crittografia a livello di dispositivo fornita dal sistema operativo. Questo viene abilitato tramite i criteri PIN del dispositivo impostati dall'amministratore IT. Quando viene richiesto un PIN, i dati verranno crittografati in base alle impostazioni nei criteri di gestione delle applicazioni mobili. Come indicato nella documentazione di Apple, [i moduli usati da iOS 7 sono dotati di certificazione FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Crittografia per Android**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, la crittografia viene fornita da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O file.  Il contenuto nell'archivio del dispositivo verrà sempre crittografato. Il metodo di crittografia non è conforme agli standard FIPS 140-2.|
+    |**Crittografa dati app**|Questa impostazione specifica che tutti i dati associati all'app verranno crittografati. Sono inclusi i dati archiviati esternamente, ad esempio i dati delle schede SD.<br /><br />**Crittografia per iOS**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, i dati vengono crittografati a riposo mediante la crittografia a livello di dispositivo fornita dal sistema operativo. Questo viene abilitato tramite i criteri PIN del dispositivo impostati dall'amministratore IT. Quando viene richiesto un PIN, i dati verranno crittografati in base alle impostazioni nei criteri di gestione delle applicazioni mobili. Come indicato nella documentazione di Apple, [i moduli usati da iOS sono dotati di certificazione FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Crittografia per Android**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, la crittografia viene fornita da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O file.  Il contenuto nell'archivio del dispositivo verrà sempre crittografato. Il metodo di crittografia non è conforme agli standard FIPS 140-2.|
     |**Blocca acquisizione schermo** (solo per dispositivi Android)|Questa impostazione specifica che le funzionalità di acquisizione schermo del dispositivo vengono bloccate quando un utente usa l'app.|
     
 4. Al termine, scegliere **Salva criterio**.
@@ -147,8 +147,6 @@ Verificare di selezionare i criteri di gestione delle applicazioni mobili nella 
 Per i dettagli vedere [Distribuire app in Microsoft Intune](deploy-apps.md).
 
 > [!IMPORTANT]
-> Per i dispositivi che eseguono sistemi operativi precedenti a iOS 7.1, i criteri associati non verranno rimossi quando si disinstalla l'app.
->
 > Se viene annullata la registrazione del dispositivo da Intune, i criteri non vengono rimossi dalle app. Nelle app con i criteri applicati verranno mantenute le impostazioni di questi ultimi anche dopo che l'app è stata disinstallata e reinstallata.
 
 ### Cosa fare quando un'app è già stata distribuita nei dispositivi
@@ -195,6 +193,6 @@ Nei casi in cui il dispositivo o l'utente riceva due criteri in conflitto, si ap
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

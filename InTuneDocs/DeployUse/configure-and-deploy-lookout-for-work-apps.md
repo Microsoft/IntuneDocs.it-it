@@ -12,8 +12,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4d05b9ba7249e4068d21480b1c9db342277757e
-ms.openlocfilehash: 687a102ccb34cb7acfaab1e8a1d4b67cb54b9e92
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: 46a6b836e344c9cf876d633f868753a49c0cd440
 
 
 ---
@@ -37,9 +37,9 @@ Quando si fa clic su **App** nella console di amministrazione di Intune, l'elenc
 
 **Per distribuire l'app agli utenti**, è possibile selezionare l'app Lookout for Work nella schermata precedente e fare clic su **Gestisci distribuzione**.
 
-È necessario selezionare gli stessi utenti aggiunti tramite l'opzione Enrollment Management (Gestione della registrazione) nella console di Lookout MTP.  Vedere il passaggio 3 nella sezione [Configurare la sottoscrizione con Lookout MTP](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) per informazioni sull'aggiunta di gruppi di utenti a Lookout MTP.
+È necessario selezionare gli stessi utenti aggiunti tramite l'opzione Enrollment Management (Gestione della registrazione) nella console di Lookout.  Per informazioni sull'aggiunta di gruppi di utenti a Lookout MTP, vedere il passaggio 3 nella sezione [Configurare la sottoscrizione con la protezione dalle minacce per il dispositivo di Lookout](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp).
 >[!IMPORTANT]
-> La procedura guidata per la distribuzione dell'app di Intune non riconosce i gruppi utenti di Azure AD e usa i gruppi utenti di Intune. È quindi necessario creare un gruppo utenti di Intune basato sul gruppo utenti di Azure AD registrato nella console di Lookout MTP, come descritto in [questo](plan-your-user-and-device-groups.md) argomento.
+> La procedura guidata per la distribuzione dell'app di Intune non riconosce i gruppi utenti di Azure AD e usa i gruppi utenti di Intune. È quindi necessario creare un gruppo utenti di Intune basato sul gruppo utenti di Azure AD registrato nella console di Lookout, come descritto in [questo](plan-your-user-and-device-groups.md) argomento.
 
 Scegliere l'opzione **Installazione richiesta** per richiedere l'installazione dell'app Lookout nel dispositivo dell'utente.
 
@@ -57,6 +57,6 @@ Quando l'utente apre Lookout for Work nel dispositivo viene richiesto di attivar
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

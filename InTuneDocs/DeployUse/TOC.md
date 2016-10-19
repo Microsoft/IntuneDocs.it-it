@@ -2,12 +2,13 @@
 # [Introduzione](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
+# [Novità](/intune/whats-new/whats-new-in-microsoft-intune)
 # [Distribuire e usare](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [Panoramica dei cicli di vita del dispositivo e dell'app](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [Ciclo di vita del dispositivo](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [Ciclo di vita dell'app](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [Registrare i dispositivi](enroll-devices-in-microsoft-intune.md)
-### [Prepararsi alla registrazione dei dispositivi su Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### [Prerequisiti per la gestione dei dispositivi mobili](prerequisites-for-enrollment.md)
 #### [Gestione di iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Gestione per Android](set-up-android-management-with-microsoft-intune.md)
 #### [Gestione dei dispositivi Windows ](set-up-windows-device-management-with-microsoft-intune.md)
@@ -103,7 +104,7 @@
 
 ### [Limitare l'accesso alle reti (Cisco ISE)](restrict-access-to-networks.md)
 ### [Limitare l'accesso in base al rischio per dispositivi, rete e applicazioni](restrict-access-based-on-device-network-app-risk.md)
-#### [Configurare Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+#### [Configurare la di protezione dalle minacce per il dispositivo di Lookout](set-up-your-subscription-with-lookout-mtp.md)
 #### [Abilitare Lookout in Intune](enable-lookout-mtp-connection-in-intune.md)
 #### [Distribuire Lookout per le app di lavoro](configure-and-deploy-lookout-for-work-apps.md)
 #### [Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità](enable-device-threat-protection-rule-in-compliance-policy.md)
@@ -134,15 +135,11 @@
 
 ## [Informazioni per gli utenti finali](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
-## [Eseguire la migrazione a Intune](migrate-to-intune.md)
-
-## [Novità](whats-new-in-microsoft-intune.md)
-
 # [Sviluppare e personalizzare le app](/intune/develop/intune-app-sdk)
 
 # [Risolvere i problemi](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

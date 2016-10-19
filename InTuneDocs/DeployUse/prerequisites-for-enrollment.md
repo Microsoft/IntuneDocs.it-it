@@ -13,16 +13,30 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 91385bdbe4aa4252311db106c04de7d04df5109c
-ms.openlocfilehash: 5e94e4efa5a3ecb055ce416c3ee8dd21e56bad65
+ms.sourcegitcommit: 381216889519b45f989db90ac5e12b8e3adcadf1
+ms.openlocfilehash: 378a6b290ccb83de28e73b17d8f02f77504dafd5
 
 
 ---
 
 # Prerequisiti per la gestione dei dispositivi mobili in Intune
-Per consentire ai dipendenti di registrare i dispositivi mobili, inclusi i dispositivi [Android](set-up-android-management-with-microsoft-intune.md), [iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) e i [PC Windows](set-up-windows-device-management-with-microsoft-intune.md) con Intune o per gestire i dispositivi di proprietà dell'azienda, è necessario abilitare la registrazione dei dispositivi. Per consentire la registrazione, è necessario impostare un'autorità di gestione di dispositivi mobili (MDM), configurare il Portale aziendale di Intune, assegnare le licenze e abilitare la registrazione per la piattaforma del dispositivo.
+È possibile consentire ai dipendenti di registrare i propri dispositivi mobili con Intune mediante la procedura seguente. Questi stessi passaggi sono necessari per gestire i dispositivi di proprietà dell'azienda.
 
-## Impostare l'autorità di gestione dei dispositivi mobili
+|Passaggi|Dettagli|  
+|-----------|-------------|  
+|**Passaggio 1:** [dipendenze della registrazione del dispositivo](#step-1-device-enrollment-dependencies)|Assicurarsi che il nome di dominio personalizzato sia configurato e che la comunicazione di rete sia predisposta|  
+|**Passaggio 2:** [impostare l'autorità di gestione del dispositivo](#step-2-set-mobile-device-management-authority)|L'autorità di gestione dei dispositivi mobili definisce il servizio assegnato ai dispositivi|
+|**Passaggio 3:** [configurare il portale aziendale di Intune](#step-3-configure-the-intune-company-portal)|Configurare le impostazioni utente per l'app del portale aziendale|  
+|**Passaggio 4:** [assegnare le licenze utente di Intune](#step-4-assign-intune-user-licenses)|Assegnare le licenze Intune agli utenti in modo che possano registrare i dispositivi|
+|**Passaggio 5:** [impostare la gestione dei dispositivi](#step-5-set-up-device-management)|Abilitare le impostazioni specifiche della piattaforma per la gestione di Windows e iOS. Per i dispositivi Android non è necessaria alcuna configurazione aggiuntiva.|
+
+## Passaggio 1: dipendenze della registrazione del dispositivo
+
+Prima di abilitare la registrazione dei dispositivi mobili, assicurarsi di aver eseguito le operazioni seguenti:
+- [Esaminare le porte e gli URL di rete richiesti](../get-started/network-infrastructure-requirements-for-microsoft-intune)
+- [Aggiungere e verificare il nome di dominio](../get-started/domain-names-for-microsoft-intune)
+
+## Passaggio 2: impostare l'autorità di gestione dei dispositivi mobili
 Questa autorità definisce il servizio di gestione autorizzato a gestire un set di dispositivi. L'autorità di gestione di dispositivi mobili (MDM) prevede due opzioni: l'uso di Intune da solo e l'uso di Configuration Manager con Intune. Se Configuration Manager è impostato come autorità di gestione, non è possibile usare altri servizi per la gestione dei dispositivi mobili.
 
 >[!IMPORTANT]
@@ -38,7 +52,7 @@ Questa autorità definisce il servizio di gestione autorizzato a gestire un set 
 
 3.  Intune richiede di confermare che si vuole usare Intune come autorità di gestione dei dispositivi mobili. Selezionare la casella di controllo e quindi scegliere **Sì** per usare Microsoft Intune per la gestione dei dispositivi mobili.
 
-## Configurare il Portale aziendale di Intune
+## Passaggio 3: configurare il portale aziendale di Intune
 
 Il Portale aziendale di Intune è il punto in cui gli utenti possono accedere ai dati aziendali ed eseguire attività comuni quali la registrazione dei dispositivi, l'installazione di app e la ricerca delle informazioni di assistenza del reparto IT.
 
@@ -79,14 +93,14 @@ Il sito di assistenza viene visualizzato agli utenti nel portale aziendale in mo
     |----------|----------------|
     |Colore del tema|Selezionare un colore del tema da applicare al portale aziendale.|
     |Includere il logo aziendale|Quando si attiva questa opzione, è possibile caricare il logo aziendale da visualizzare nel portale aziendale. È possibile caricare due loghi: uno che verrà visualizzato quando lo sfondo del portale è bianco e uno che verrà visualizzato quando lo sfondo del portale aziendale usa il colore del tema selezionato. Ogni logo deve essere un file con estensione jpg o png, avere una risoluzione massima di 400x100 pixel e una dimensione massima di 750 KB.|
-    |Scegliere uno sfondo per l'app Portale aziendale di [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)]|Questa impostazione influisce sullo sfondo solo per l'app Portale aziendale di [!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)].|
+    |Scegliere uno sfondo per l'app portale aziendale|Questa impostazione influisce solo sullo sfondo dell'app portale aziendale.|
 
 
 Dopo aver salvato le modifiche, è possibile usare i collegamenti riportati in fondo alla pagina **Portale aziendale** della console di amministrazione per visualizzare il sito Web del Portale aziendale. Questi collegamenti non possono essere modificati. Quando un utente esegue l'accesso, questi collegamenti visualizzano le sottoscrizioni nel portale aziendale.
 
-## Assegnare una licenza utente di Intune
+## Passaggio 4: assegnare le licenze utente di Intune
 
-Usare il **portale di gestione di Office 365** per aggiungere manualmente gli utenti basati su cloud e assegnare licenze sia ad account utente basati su cloud sia ad account sincronizzati da Active Directory locale a Azure Active Directory (Azure AD).
+Usare il **portale di gestione di Office 365** per aggiungere manualmente gli utenti basati su cloud e assegnare licenze sia ad account utente basati su cloud sia ad account sincronizzati da Active Directory locale a Azure Active Directory (Azure AD). È possibile [sincronizzare gli utenti locali con Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
 
 1.  Accedere al [portale di gestione di Office 365](https://portal.office.com/Admin/Default.aspx) usando le credenziali di amministratore tenant.
 
@@ -94,7 +108,14 @@ Usare il **portale di gestione di Office 365** per aggiungere manualmente gli ut
 
 3.  L'account utente verrà ora aggiunto al gruppo di utenti di Microsoft Intune, che concede le autorizzazioni per usare il servizio e registrare i dispositivi per la gestione.
 
-## Impostare la gestione dei dispositivi
+### Per sincronizzare gli utenti locali con Azure AD
+
+1. [Aggiungere il suffisso UPN](https://technet.microsoft.com/en-us/library/cc772007.aspx) per il dominio personalizzato in Active Directory locale.
+2. Impostare il nuovo suffisso UPN per gli utenti locali da importare.
+3. Eseguire la [sincronizzazione di Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) per integrare gli utenti locali con Azure AD.
+4. Dopo la sincronizzazione delle informazioni degli account utente è possibile assegnare licenze di Microsoft Intune usando il [portale di gestione di Office 365](https://portal.office.com/Admin/Default.aspx).
+
+## Passaggio 5: impostare la gestione dei dispositivi
 Dopo aver configurato l'autorità MDM, è necessario impostare la gestione dei dispositivi per i sistemi operativi che l'organizzazione vuole supportare. I passaggi necessari per configurare la gestione dei dispositivi variano a seconda del sistema operativo. Ad esempio, per il sistema operativo Android non è necessario eseguire alcuna operazione nella console di amministrazione di Intune. Windows e iOS invece richiedono una relazione di trust tra i dispositivi e Intune per consentire la gestione.
 
 Configurare la gestione per le piattaforme seguenti:
@@ -109,6 +130,6 @@ Configurare la gestione per le piattaforme seguenti:
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -4,7 +4,7 @@ description: Creare e gestire gruppi usando l'area di lavoro Gruppi.
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c474810f8d3c7db4784c38c45c85c83b647860b
-ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ Questo argomento descrive come creare gruppi in Intune. Fornisce inoltre informa
 
 >[!IMPORTANT]
 >
->Se si apre l'area di lavoro Gruppi nel portale di Intune ed è disponibile un collegamento al portale di Azure Active Directory (Azure AD), questo indica che è già in uso il *nuovo* approccio alla gestione dei gruppi in Intune basato sui gruppi di sicurezza di Azure AD, descritto in [Avviso sui miglioramenti che verranno apportati alle funzionalità di amministrazione per i gruppi](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Fare clic sul collegamento al portale di Azure AD per creare e gestire i gruppi. Per scoprire come utilizzare i gruppi di sicurezza di Azure AD, vedere [Gestione dell'accesso alle risorse con i gruppi di Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
+>Se si apre l'area di lavoro Gruppi nel portale di Intune ed è disponibile un collegamento al portale di Azure Active Directory (Azure AD), questo indica che è già in uso il *nuovo* approccio alla gestione dei gruppi in Intune basato sui gruppi di sicurezza di Azure AD, descritto in [Avviso sui miglioramenti che verranno apportati alle funzionalità di amministrazione per i gruppi](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Fare clic sul collegamento al portale di Azure AD per creare e gestire i gruppi.
+>
+>![Schermata del collegamento alla gestione dei gruppi in Azure](../media/groups-link-azure.png) 
 >
 >Se non è disponibile il collegamento al portale di Azure AD, si sta ancora usando l'approccio *corrente* alla gestione dei gruppi, descritto in [Creare gruppi per gestire utenti e dispositivi con Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in questo argomento.
 
@@ -42,7 +44,7 @@ Questa modifica non ha effetti immediati, ma ecco gli sviluppi futuri previsti:
 
 
 ### Come e quando sarà possibile eseguire la migrazione ai nuovi gruppi?
-La migrazione dei clienti di Intune correnti verrà eseguita in un certo lasso di tempo. Microsoft sta finalizzando la pianificazione della migrazione. Questo argomento verrà aggiornato tra qualche settimana per fornire ulteriori dettagli. Invieremo notifica ai clienti prima della migrazione. Per domande e chiarimenti sulla migrazione, contattare il team addetto all'indirizzo <intunegrps@microsoft.com>.
+La migrazione dei clienti di Intune correnti verrà eseguita in un certo lasso di tempo. Microsoft sta finalizzando la pianificazione della migrazione. Questo argomento verrà aggiornato tra qualche settimana per fornire ulteriori dettagli. Invieremo notifica ai clienti prima della migrazione. Per domande e chiarimenti sulla migrazione, contattare il team addetto all'indirizzo [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com). Per informazioni dettagliate sulla modalità in cui verrà eseguita la migrazione dei gruppi, vedere [Migrazione ai gruppi di Azure Active Directory](migrating-groups-to-azure-active-directory.md).
 
 ### Cosa accade ai gruppi di utenti e dispositivi esistenti?
  Verrà eseguita la migrazione dei gruppi di utenti e dispositivi creati dagli utenti in Intune a gruppi di sicurezza di Azure AD. Verrà eseguita la migrazione dei gruppi di Intune predefiniti, ad esempio il gruppo Tutti gli utenti, solo se al momento della migrazione sono usati in distribuzioni. La migrazione può rivelarsi più complessa per particolari gruppi. Se sono necessari passaggi aggiuntivi per la migrazione all'interno di specifiche organizzazioni, Microsoft provvederà a inviare una notifica.
@@ -202,6 +204,6 @@ Ogni criterio dispone di un **previsto valore** e **stato**. Il valore previsto 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

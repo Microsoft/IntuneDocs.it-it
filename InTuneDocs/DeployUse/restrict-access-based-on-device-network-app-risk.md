@@ -1,5 +1,5 @@
 ---
-title: Limitare l'accesso con la protezione dalle minacce per dispositivi mobili | Microsoft Intune
+title: Limitare l'accesso con la protezione dalle minacce per il dispositivo | Microsoft Intune
 description: Limitare l'accesso alle risorse aziendali in base al rischio per dispositivi, rete e applicazioni.
 keywords: 
 author: karthikaraman
@@ -13,24 +13,24 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c3cf5e6b32ad24d4972fd147331dda7d2d43e8c6
-ms.openlocfilehash: d4eadb73aac14a375f41c434a4303a885bfbae64
+ms.sourcegitcommit: 550fbbf94f46eee23e77ebf7f9177148882f28e2
+ms.openlocfilehash: 758e4408fa7119ed4ebb82e98b850be5b1f318b4
 
 
 ---
 
 # Limitare l'accesso alle risorse aziendali in base al rischio per dispositivi, rete e applicazioni
-È possibile controllare l'accesso dai dispositivi mobili alle risorse aziendali, in base alla valutazione dei rischi condotta da Lookout, una soluzione di protezione dalle minacce per dispositivi mobili (MTP, Mobile Threat Protection) integrata in Microsoft Intune. Il rischio si basa su dati di telemetria raccolti dal servizio Lookout MTP dai dispositivi per le vulnerabilità del sistema operativo, le app dannose installate e i profili di rete. In base alla valutazione dei rischi è quindi possibile configurare criteri di accesso condizionale in Intune e consentire o bloccare i dispositivi determinati come non conformi in seguito al rilevamento di minacce in tali dispositivi.  Questa soluzione è attualmente supportata solo per i dispositivi **Android** che eseguono la versione **4.1 e successive** e sono registrati in Microsoft Intune.  
+È possibile controllare l'accesso dai dispositivi mobili alle risorse aziendali, in base alla valutazione dei rischi condotta da Lookout, una soluzione di protezione dalle minacce per il dispositivo integrata in Microsoft Intune. Il rischio si basa su dati di telemetria raccolti dal servizio Lookout dai dispositivi per le vulnerabilità del sistema operativo, le app dannose installate e i profili di rete. In base alla valutazione dei rischi è quindi possibile configurare criteri di accesso condizionale in Intune e consentire o bloccare i dispositivi determinati come non conformi in seguito al rilevamento di minacce in tali dispositivi.  Questa soluzione è attualmente supportata solo per i dispositivi **Android** che eseguono la versione **4.1 e successive** e sono registrati in Microsoft Intune.  Per informazioni sulle piattaforme e i linguaggi supportati da Lookout, vedere questo [articolo](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
 ## Quale problema risolve questa soluzione?
 Le aziende e le organizzazioni hanno l'esigenza di proteggere i dati sensibili da minacce emergenti che includono minacce fisiche, minacce basate su app e sulla rete, oltre a vulnerabilità del sistema operativo.
 
 Tradizionalmente, le aziende e le organizzazioni hanno adottato una posizione attiva per la protezione dei PC da attacchi dannosi. L'area dei dispositivi mobili è relativamente nuova e spesso senza protezione. Sebbene le piattaforme mobili includano la protezione predefinita del sistema operativo grazie a tecniche come l'isolamento delle app e store online controllati per le app dei consumatori, queste piattaforme continuano a essere vulnerabili ad attacchi sofisticati. Dato che i dispositivi mobili sono sempre più spesso usati dai dipendenti per il lavoro e devono avere accesso a informazioni che possono essere sensibili e preziose, questi dispositivi devono essere protetti da un'ampia gamma di attacchi sofisticati.
 
-Intune offre la possibilità di controllare l'accesso alle risorse e ai dati aziendali in base alla valutazione dei rischi offerta da soluzioni MTP come Lookout.
+Intune offre la possibilità di controllare l'accesso alle risorse e ai dati aziendali in base alla valutazione dei rischi offerta dalle soluzioni di protezione dalle minacce per il dispositivo come Lookout.
 
-## In che modo la protezione dalle minacce per dispositivi mobili di Intune e Lookout può tutelare le risorse aziendali?
-L'app Lookout per dispositivi mobili (Lookout for Work), eseguita nei dispositivi mobili, consente di acquisire dati di telemetria per il file system, lo stack di rete, il dispositivo e le applicazioni (se disponibili) e di inviarli al servizio cloud Lookout MTP per il calcolo del livello di rischio aggregato del dispositivo per le minacce per dispositivi mobili. È anche possibile modificare la classificazione del livello di rischio per le minacce nella console di MTP in base alle proprie esigenze.  
-I criteri di conformità in Intune includono ora una nuova regola per la protezione dalle minacce per dispositivi mobili di Lookout, basata sulla valutazione dei rischi di Lookout MTP. Quando questa regola è abilitata, Microsoft Intune valuta la conformità del dispositivo in base ai criteri abilitati.
+## In che modo la protezione dalle minacce per il dispositivo di Intune e Lookout può tutelare le risorse aziendali?
+L'app Lookout per dispositivi mobili (Lookout for Work), eseguita nei dispositivi mobili, consente di acquisire dati di telemetria per il file system, lo stack di rete, il dispositivo e le applicazioni (se disponibili) e di inviarli al servizio cloud per la protezione dalle minacce per il dispositivo di Lookout per il calcolo del livello di rischio aggregato del dispositivo per le minacce per dispositivi mobili. È anche possibile modificare la classificazione del livello di rischio per le minacce nella console di Lookout in base alle proprie esigenze.  
+I criteri di conformità in Intune includono ora una nuova regola per la protezione dalle minacce per il dispositivo di Lookout, basata sulla valutazione dei rischi delle minacce per il dispositivo di Lookout. Quando questa regola è abilitata, Microsoft Intune valuta la conformità del dispositivo in base ai criteri abilitati.
 
 Se il dispositivo risulta non conforme ai criteri, è possibile bloccare l'accesso a risorse come Exchange Online e SharePoint Online tramite criteri di accesso condizionale. In seguito al blocco dell'accesso, gli utenti ricevono istruzioni per la risoluzione del problema e per ottenere l'accesso alle risorse aziendali. Questa procedura dettagliata viene avviata tramite l'app Lookout for Work.
 
@@ -80,6 +80,6 @@ Ecco i passaggi principali per l'implementazione di questa soluzione:
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

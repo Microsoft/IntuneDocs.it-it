@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: b5ecb5b4c7629b04c679995b5788ee307bac79f0
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 
 ---
@@ -75,7 +75,7 @@ Quando il dispositivo è registrato, l'amministratore IT può:
 
 -   Richiedere di accettare i termini e le condizioni.
 
--   Attivare o disattivare la fotocamera del dispositivo.
+-   Abilitare o disabilitare la fotocamera sul dispositivo per impedire lo scatto di foto di dati riservati dell'azienda.
 
 -   Abilitare o disabilitare l'esplorazione Web sul dispositivo.
 
@@ -91,12 +91,10 @@ Quando il dispositivo è registrato, l'amministratore IT può:
 
 -   Abilitare o disabilitare la sincronizzazione automatica dei file in modalità roaming sul dispositivo. Se la sincronizzazione automatica dei file è consentita, potrebbero essere state sostenute spese per il roaming.
 
-Per la procedura di registrazione del dispositivo, vedere la sezione relativa alla [registrazione dei dispositivi iOS in Intune](enroll-your-device-in-intune-ios.md) o alla [registrazione dei dispositivi Mac OS X in Intune](enroll-your-device-in-intune-mac-os-x.md).
-
 Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

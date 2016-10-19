@@ -4,7 +4,7 @@ description: "Creare criteri di conformità per consentire ai dispositivi mobili
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
+ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
+ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
 
 
 ---
@@ -53,24 +53,24 @@ La tabella seguente include le impostazioni dei criteri di conformità e le piat
 -------------
 |Impostazioni|iOS|Android|Windows|
 |-----|----|-----|-----|
-|Richiedi una password per sbloccare i dispositivi mobili|iOS 6 e versioni successive|Android 4.0 e versioni successive <br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8 e versioni successive|
-|Consenti password semplici|iOS 6 e versioni successive|Non supportato|Windows Phone 8 e versioni successive|
-|Lunghezza minima password|iOS 6 e versioni successive| Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive| Windows Phone 8 e versioni successive<br>Windows 8.1|
-|Tipo di password richiesto|iOS 6 e versioni successive|Non disponibile|Windows Phone 8 e versioni successive <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
-|Numero minimo di set di caratteri|iOS 6 e versioni successive|Non disponibile|Windows Phone 8 e versioni successive <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Richiedi una password per sbloccare i dispositivi mobili|iOS 6 e versioni successive|Android 4.0 e versioni successive <br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8.1 e versioni successive|
+|Consenti password semplici|iOS 6 e versioni successive|Non supportato|Windows Phone 8.1 e versioni successive|
+|Lunghezza minima password|iOS 6 e versioni successive| Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive| Windows Phone 8.1 e versioni successive<br>Windows 8.1|
+|Tipo di password richiesto|iOS 6 e versioni successive|Non disponibile|Windows Phone 8.1 e versioni successive <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Numero minimo di set di caratteri|iOS 6 e versioni successive|Non disponibile|Windows Phone 8.1 e versioni successive <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Qualità password|Non disponibile|Android 4.0 e versioni successive <br>Samsung KNOX Standard 4.0 e versioni successive|Non disponibile|
-|Minuti di inattività prima che venga richiesta la password|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8 e versioni successive<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
-|Scadenza password (giorni)|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8 e versioni successive<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
-|Ricorda cronologia password|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8 e versioni successive<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
-|Impedisci riutilizzo delle password precedenti|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8 e versioni successive<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
+|Minuti di inattività prima che venga richiesta la password|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8.1 e versioni successive<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
+|Scadenza password (giorni)|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8.1 e versioni successive<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
+|Ricorda cronologia password|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8.1 e versioni successive<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
+|Impedisci riutilizzo delle password precedenti|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8.1 e versioni successive<br>Windows RT e Windows RT 8.1<br>Windows 8.1|
 |Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività| Non disponibile| Non disponibile|Windows 10 Mobile|
-|Richiedi crittografia sui dispositivi mobili|Non applicabile|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8 e versioni successive<br> Windows 8.1|
+|Richiedi crittografia sui dispositivi mobili|Non applicabile|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8.1 e versioni successive<br> Windows 8.1|
 |Richiedi che i dispositivi siano riportati come integri| Non disponibile| Non disponibile|Windows <br>Windows 10 Mobile|
 |Il dispositivo non deve essere jailbroken o rooted|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Non disponibile|
 |L'account di posta elettronica deve essere gestito da Intune|iOS 6 e versioni successive|Non disponibile| Non disponibile|
 |Selezionare il profilo di posta elettronica che deve essere gestito da Intune|iOS 6 e versioni successive|Non disponibile| Non disponibile|
-|Versione minima richiesta del sistema operativo|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive| Windows Phone 8 e versioni successive<br>Windows 8.1|
-|Versione massima consentita del sistema operativo|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8 e versioni successive<br>Windows 8.1|
+|Versione minima richiesta del sistema operativo|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive| Windows Phone 8.1 e versioni successive<br>Windows 8.1|
+|Versione massima consentita del sistema operativo|iOS 6 e versioni successive|Android 4.0 e versioni successive<br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8.1 e versioni successive<br>Windows 8.1|
 
 Per altre informazioni sulle impostazioni di conformità supportate in ogni piattaforma, selezionare una delle seguenti voci:
 > [!div class="op_single_selector"]
@@ -87,6 +87,6 @@ Per altre informazioni sulle impostazioni di conformità supportate in ogni piat
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
