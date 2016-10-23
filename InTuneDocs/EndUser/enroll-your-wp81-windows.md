@@ -13,8 +13,8 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
 
 
 ---
@@ -36,7 +36,7 @@ Installare l'app Portale aziendale nel dispositivo:
 
 1.  Toccare **Start** &gt; **Store**.
 
-2.  Toccare **Cerca** e digitare **portale aziendale**.
+2.  Toccare **Cerca** e quindi digitare **portale aziendale**.
 
 3.  Nell'elenco dei risultati toccare **Portale aziendale**.
 
@@ -66,7 +66,7 @@ Registrare il dispositivo:
 
     ![Schermata delle impostazioni della rete aziendale](./media/WP81-enroll-3-workplace-add-acct.png)
 
-7.  Immettere le informazioni aggiuntive richieste e quindi toccare **accedi** per completare la registrazione. L'account aziendale dovrebbe essere elencati nella pagina **Impostazioni** &gt; **Area di lavoro**.
+7.  Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione. L'account aziendale dovrebbe essere elencati nella pagina **Impostazioni** &gt; **Area di lavoro**.
 
     ![Schermata di aggiunta account](./media/WP81-enroll-4-account-added.png)
 
@@ -76,9 +76,9 @@ Registrare il dispositivo:
 
 2.  Toccare **aggiungi account** e quindi accedere con l'account aziendale.
 
-3.  Immettere le informazioni aggiuntive richieste e quindi toccare **accedi** per completare la registrazione.
+3.  Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione.
 
-4.  Se viene richiesto di installare l'app aziendale o Hub, verificare che la casella corrispondente sia selezionata e quindi toccare **fine**.
+4.  Se viene richiesto di installare l'app aziendale o Hub, verificare che la casella corrispondente sia selezionata e toccare **fine**.
 
 Se l'amministratore IT ha configurato l'app Portale aziendale in modo che venga installata durante la registrazione, questa app verrà visualizzata nell'elenco delle app.
 
@@ -86,7 +86,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

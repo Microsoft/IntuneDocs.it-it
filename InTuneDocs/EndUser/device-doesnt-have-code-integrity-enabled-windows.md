@@ -1,5 +1,5 @@
 ---
-title: "L'integrità del codice non è abilitata nel dispositivo | Microsoft Intune"
+title: "L&quot;integrità del codice non è abilitata nel dispositivo | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 00bd999dc8d49b2f01e0eb52a8fa28600f050246
+ms.sourcegitcommit: 85cdfd1aac6fdf738754539c746aee8e5d045ae9
+ms.openlocfilehash: 60e29209718ca206ae96ccc2df330650e2f93c1d
 
 
 ---
@@ -23,20 +23,18 @@ ms.openlocfilehash: 00bd999dc8d49b2f01e0eb52a8fa28600f050246
 
 # L'integrità del codice non è abilitata nel dispositivo
 
-L'organizzazione richiede l'abilitazione dell'integrità del codice di Windows, ovvero una funzionalità che controlla i driver e file di sistema nel dispositivo per assicurarsi che siano sicuri.
+L'organizzazione richiede l'abilitazione della funzionalità di integrità del codice di Windows. Questa funzionalità controlla che i driver e i file di sistema nel dispositivo siano sicuri.
 
 Per abilitare l'integrità del codice di Windows, abilitare la funzionalità Avvio protetto. La funzionalità Integrità del codice verrà quindi attivata automaticamente.
 
 L'abilitazione dell'avvio protetto è un'attività avanzata. Se si usa un dispositivo mobile, contattare l'amministratore IT per assistenza.
 
-Se si usa un PC, è possibile contattare l'amministratore IT o vedere la sezione "Per riabilitare l'avvio protetto" nella pagina [Disabilitazione dell'avvio protetto](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) per provare ad abilitare l'avvio protetto senza l'aiuto dell'amministratore IT.
+Se si usa un PC, è possibile contattare l'amministratore IT. Altrimenti vedere la sezione "Per riabilitare l'avvio protetto" nella pagina [Disabilitazione dell'avvio protetto](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) per provare ad abilitare l'avvio protetto senza l'aiuto dell'amministratore IT.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

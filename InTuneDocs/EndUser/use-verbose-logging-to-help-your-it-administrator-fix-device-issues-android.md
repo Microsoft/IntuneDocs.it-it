@@ -1,6 +1,6 @@
 ---
-title: Usare la registrazione dettagliata per aiutare l'amministratore IT a risolvere i problemi dei dispositivi | Microsoft Intune
-description: 
+title: Usare la registrazione dettagliata per aiutare l&quot;amministratore IT a risolvere i problemi dei dispositivi | Microsoft Intune
+description: Aiutare l&quot;amministratore IT a risolvere i problemi dei dispositivi mediante la registrazione dettagliata
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 9f430cb1a64d982083eb9fc3c467aa51c255455c
+ms.sourcegitcommit: 828e3d65659e3a75a3a798e614504cba5d3a28cc
+ms.openlocfilehash: 203c1170f8072d64447125b3e6cf5c3b238bccee
 
 
 ---
@@ -23,15 +23,14 @@ ms.openlocfilehash: 9f430cb1a64d982083eb9fc3c467aa51c255455c
 
 # Usare la registrazione dettagliata per aiutare l'amministratore IT a risolvere i problemi dei dispositivi
 
-Quando il dispositivo Android è registrato in Intune, è possibile usare l'impostazione **Registrazione dettagliata** per fare in modo che l'app Portale aziendale e le app gestite da Intune registrino log dettagliati sugli eventi del dispositivo. Questi log aiutano l'amministratore IT a risolvere i problemi che possono verificarsi quando si usa il portale aziendale o un'app gestita da Intune. La registrazione dettagliata è abilitata sul dispositivo per impostazione predefinita e i log inviati all'amministratore IT comprendono l'indirizzo di posta elettronica dell'utente.
+Quando il dispositivo Android è registrato in Intune, è possibile usare la *registrazione dettagliata* per fare in modo che l'app Portale aziendale e le app gestite da Intune registrino log dettagliati sugli eventi del dispositivo. Questi log aiutano l'amministratore IT a risolvere i problemi che possono verificarsi quando si usa il portale aziendale o un'app gestita da Intune. La registrazione dettagliata è abilitata sul dispositivo per impostazione predefinita e i log inviati all'amministratore IT comprendono l'indirizzo di posta elettronica dell'utente.
 
-Per attivare o disattivare la **registrazione dettagliata**, accedere all'app Portale aziendale usando le credenziali aziendali o dell'istituto di istruzione, toccare **Impostazioni** e quindi toccare il pulsante di attivazione/disattivazione accanto all'impostazione **Registrazione dettagliata**.
+Per attivare o disattivare la registrazione dettagliata, accedere all'app Portale aziendale usando le credenziali aziendali o dell'istituto di istruzione, toccare **Impostazioni** e quindi toccare il pulsante di attivazione/disattivazione accanto a **Registrazione dettagliata**.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

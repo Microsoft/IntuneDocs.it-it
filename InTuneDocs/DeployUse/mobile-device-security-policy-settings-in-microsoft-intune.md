@@ -1,10 +1,10 @@
 ---
 title: Impostazioni dei criteri di sicurezza dei dispositivi mobili | Microsoft Intune
-description: "Usare Intune per configurare una vasta gamma di impostazioni che è possibile distribuire in dispositivi gestiti nell'organizzazione."
+description: "Usare Intune per configurare una vasta gamma di impostazioni che è possibile distribuire in dispositivi gestiti nell&quot;organizzazione."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
-ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 279b2fbcbdc7bace99d99eca5bc766972dcea3b8
 
 
 
@@ -40,6 +40,7 @@ I criteri di sicurezza per i dispositivi mobili di Intune consentono di configur
 
 > [!NOTE]
 > Alcune impostazioni non sono valide per alcuni dispositivi. Vedere le tabelle seguenti per un elenco completo delle impostazioni che è possibile configurare.
+> A partire da ottobre 2016, il supporto di Microsoft Intune per le app del portale aziendale di Windows 8 verrà deprecato. Verrà anche deprecato il supporto di Microsoft Intune per le piattaforme Windows Phone 8 e WinRT. Di conseguenza, non sarà possibile registrare o aggiornare dispositivi Windows Phone 8 o WinRT. È possibile continuare a gestire i dispositivi Windows Phone 8, WinRT e Windows 8 che sono già registrati. Aggiornare i dispositivi Windows Phone 8 e Windows 8 a Windows 8.1 e Windows Phone 8.1 e usare le app del portale aziendale per Windows Phone 8.1 e Windows 8.1 corrispondenti per continuare a distribuire le app a tali dispositivi senza interruzioni.
 
 ## Impostazioni di sicurezza
 
@@ -212,6 +213,6 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

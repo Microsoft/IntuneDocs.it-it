@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 ---
 
 # Account di posta elettronica aziendale esistente trovato
-Esiste già un account di posta elettronica della società. Per continuare a connettersi per la posta elettronica aziendale, è necessario attenersi alla seguente procedura per consentire all'amministratore IT di impostare correttamente e gestire il proprio account:
+Esiste già un account di posta elettronica della società. Per continuare a connettersi alla posta elettronica aziendale, seguire questa procedura seguente per consentire all'amministratore IT di impostare correttamente e gestire il proprio account:
 
 1.  In **impostazioni** sul dispositivo, rimuovere la connessione impostata in precedenza per la posta elettronica aziendale.
 
@@ -35,6 +35,6 @@ Se dopo un periodo di tempo non vengono visualizzate nuove impostazioni di posta
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

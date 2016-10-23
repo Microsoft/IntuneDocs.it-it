@@ -1,5 +1,5 @@
 ---
-title: "Il dispositivo Windows non è conforme alla versione massima del sistema operativo | Microsoft Intune"
+title: "Il dispositivo Windows non è conforme all&quot;impostazione per la versione massima del sistema operativo | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
@@ -14,20 +14,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 0a83e44f95ad1619cd0eff94d70c3dcc81852acb
+ms.sourcegitcommit: 964f39fa7a3971f37777e93f7cddd75367e6c026
+ms.openlocfilehash: edd9aa9b7c2dabbc90bb3777f855478c703c7882
 
 
 ---
 
 
-# Il dispositivo Windows non è conforme alla versione massima del sistema operativo
+# Il dispositivo Windows non è conforme all'impostazione per l'ultima versione del sistema operativo
 
-L'amministratore IT ha impostato una versione massima del sistema operativo che si può avere sul dispositivo Windows, ma il dispositivo non è conforme all'impostazione. Per sapere qual è il sistema operativo massimo consentito per il dispositivo, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
-
+L'amministratore IT ha impostato l'ultima versione del sistema operativo possibile sul dispositivo Windows, ma il dispositivo non è conforme all'impostazione. Per sapere qual è l'ultimo sistema operativo consentito per il dispositivo, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO2-->
+
+<!--HONumber=Oct16_HO2-->
 
 

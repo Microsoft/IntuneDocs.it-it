@@ -13,15 +13,15 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
-ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
+ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
+ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
 
 
 ---
 
 
 # Modalità di recupero delle app per gli utenti di Android
-Usare queste informazioni per comprendere come e dove gli utenti Android possono ottenere le app che vengono distribuite tramite Microsoft Intune. Le informazioni possono essere diverse per i dispositivi Android nativi rispetto ai dispositivi Samsung Knox.
+Usare queste informazioni per comprendere come e dove gli utenti Android possono ottenere le app che vengono distribuite tramite Microsoft Intune. Le informazioni possono essere diverse a seconda del tipo di dispositivo, ad esempio dispositivi Android nativi o dispositivi Samsung Knox.
 
 ## Dispositivi Android nativi (non Samsung KNOX)
 
@@ -39,9 +39,9 @@ Usare queste informazioni per comprendere come e dove gli utenti Android possono
 
 Le app possono essere gestite o non gestite, come descritto di seguito. Il processo per rendere le app gestite è lo stesso per tutti i tipi di dispositivi Android.
 
-**App gestite**: app che possono essere gestite tramite criteri e che sono state "integrate" in Intune o che sono state compilate con l'SDK della gestione di applicazioni mobili (MAM) di Intune. Queste app possono essere gestite da Intune ed è possibile applicarvi criteri dell'applicazione.
+**App gestite**: queste app possono essere gestite tramite criteri. Sono state integrate in Intune o sono state compilate con l'SDK (Software Development Kit) della gestione delle applicazioni mobili di Intune (MAM). Queste app possono essere gestite da Intune ed è possibile applicarvi criteri dell'applicazione.
 
-**App non gestite**: app che possono essere gestite tramite criteri e che non sono state integrate in Intune o che non incorporano l'SDK del software MAM di Intune. Non è possibile applicare i criteri dell'applicazione a queste app.
+**App non gestite**: queste app non possono essere gestite tramite criteri. Non sono state integrate in Intune o non comprendono l'SDK della gestione delle applicazioni mobili di Intune. Non è possibile applicare i criteri dell'applicazione a queste app.
 
 ### Vedere anche
 [Aggiungere app con Microsoft Intune](/intune/deploy-use/add-apps)
@@ -52,6 +52,6 @@ Le app possono essere gestite o non gestite, come descritto di seguito. Il proce
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

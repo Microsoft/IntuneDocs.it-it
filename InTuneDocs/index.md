@@ -3,19 +3,19 @@ experimental: true
 experiment_id: lindavr-hubpage-20160925
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-title: Documentazione di Intune - Documentazione MDM | Documenti Microsoft
+title: Documentazione di Intune |Documentazione di Microsoft
 description: Documentazione tecnica di Microsoft Intune - Gestione di applicazioni e dispositivi mobili
-keywords: documentazione di Intune, documentazione MDM, documentazione di gestione di dispositivi mobili, documentazione di gestione di applicazioni e dispositivi mobili
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+keywords: documentazione Intune, gestione di app, gestione dispositivi, documentazione MDM, documentazione MAM
+author: arob98
+manager: angrobe
+ms.date: 10/07/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
+ms.sourcegitcommit: 63317c16082b1fb2764bd698c97fa1d435f58dfe
+ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
 
 
 ---
@@ -24,20 +24,20 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
     <section id="hero-content">
       <h1>Documentazione di Intune</h1>
       <h2>Informazioni su come distribuire e utilizzare Microsoft Intune, un servizio per la gestione di applicazioni e dispositivi mobili.</h2>
-      <h3>Gestire Intune con Configuration Manager? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Vedere la documentazione di Configuration Manager &rarr;</a></h3>
+      <h3>Gestire Intune con Configuration Manager <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Altre informazioni sulla gestione dei dispositivi mobili ibridi &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Contenuti in primo piano</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Introduzione a Microsoft Intune</a></li>
-          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Scenari comuni basati su Intune</a></li>
-          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Guida introduttiva a Intune</a></li>
+          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">Quali sono le novità?</a></li>
+          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Metodi comuni per l'uso di Intune</a></li>
+          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Proteggere i dati dell'app</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Panoramica dei cicli di vita del dispositivo e dell'app</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Proteggere i dati dell'app</a></li>
-          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Informazioni su Intune per gli utenti finali</a></li>
+          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Proteggere l'accesso alle risorse aziendali</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-ios">Guida a Microsoft Intune App SDK per sviluppatori iOS</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-android">Guida a Microsoft Intune App SDK per sviluppatori di Android</a></li>
         </ul>
       </div>
     </section>
@@ -284,6 +284,6 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

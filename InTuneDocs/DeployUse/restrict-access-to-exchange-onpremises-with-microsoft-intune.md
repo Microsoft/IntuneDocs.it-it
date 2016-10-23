@@ -1,10 +1,10 @@
 ---
-title: Limitare l'accesso alla posta elettronica a Exchange On-premises | Microsoft Intune
-description: Proteggere e controllare l'accesso alla posta elettronica aziendale in Exchange On-premises con accesso condizionale.
+title: Limitare l&quot;accesso alla posta elettronica a Exchange On-premises | Microsoft Intune
+description: Proteggere e controllare l&quot;accesso alla posta elettronica aziendale in Exchange On-premises con accesso condizionale.
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 651e352161f8d0e1e4a9a0cb1944ebb5f7003e0e
-ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 
 ---
@@ -64,17 +64,19 @@ L'immagine seguente illustra il flusso usato dai criteri di accesso condizionale
 -   Se il dispositivo non è conforme, viene visualizzato un messaggio che indirizza l'utente al sito Web del portale aziendale o all'app Portale aziendale di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dove sono disponibili informazioni sul problema e su come risolverlo.
 
 ## Supporto per dispositivi mobili
--   Windows Phone 8 e versioni successive
+-   Windows Phone 8.1 e versioni successive
 
 -   App di posta elettronica nativa in iOS
 
--   Client di posta EAS, ad esempio Gmail in Android 4 o versione successiva
+-   Client di posta EAS, ad esempio Gmail in Android 4 o versione successiva.
+- Client di posta EAS **Dispositivi Android for Work:** nei dispositivi Android for Work sono supportate solo le app **Gmail** e **Nine Work** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni in Android for Work, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work. È anche necessario distribuire tali applicazioni come installazioni obbligatorie. 
+
 > [!NOTE]
 > L'app Microsoft Outlook per Android e iOS non è supportata.
 
 ## Supporto per PC
 
-L'applicazione **Posta elettronica** in Windows 8 e versioni successive (se registrata con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
+L'applicazione **Mail** in Windows 8.1 e versioni successive (se registrata con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
 ##  Configurare i criteri di accesso condizionale
 
@@ -123,6 +125,6 @@ L'applicazione **Posta elettronica** in Windows 8 e versioni successive (se regi
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

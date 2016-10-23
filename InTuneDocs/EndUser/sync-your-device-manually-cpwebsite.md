@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
+ms.sourcegitcommit: 6d53602bf4d767341924c4c4af8edae0d376a149
+ms.openlocfilehash: c49aa7e21f002110155e883894d211266ddbcb6c
 
 
 ---
@@ -23,9 +23,9 @@ ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
 
 # Sincronizzare il dispositivo manualmente usando il sito Web del portale aziendale
 
-Se l'installazione dell'app o altre attività stanno richiedendo troppo tempo, è possibile provare a eseguire la sincronizzazione del dispositivo manualmente per accelerare l'installazione o l'attività. Attenersi alle istruzioni seguenti corrispondenti al dispositivo in uso. 
+Se l'installazione dell'app o altre attività stanno richiedendo troppo tempo, è possibile provare a eseguire la sincronizzazione del dispositivo manualmente. La sincronizzazione manuale può essere utile per velocizzare l'installazione o l'attività.
 
-La funzionalità di sincronizzazione funziona solo per le versioni elencate di seguito.
+La funzionalità di sincronizzazione funziona solo per le seguenti versioni. Attenersi alle istruzioni corrispondenti al dispositivo in uso.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -34,6 +34,6 @@ La funzionalità di sincronizzazione funziona solo per le versioni elencate di s
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

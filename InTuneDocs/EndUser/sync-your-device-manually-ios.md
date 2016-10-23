@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 54633d57fc1898c70abf1f37cff08e2dd553e5a1
+ms.sourcegitcommit: 3aadcc1acccb5cf54ce4a452a2c639175fccd81b
+ms.openlocfilehash: f012f980015214769bae3b960b9ae4398463c111
 
 
 ---
@@ -23,17 +23,17 @@ ms.openlocfilehash: 54633d57fc1898c70abf1f37cff08e2dd553e5a1
 
 # Sincronizzare il dispositivo manualmente
 
-Se l'installazione dell'app sta richiedendo troppo tempo, attenersi alle seguenti istruzioni per sincronizzare manualmente il dispositivo iOS e accelerare il processo. La funzionalità di sincronizzazione si applica solo ai dispositivi iOS, non a Mac OS X.
+Se l'installazione dell'app sta richiedendo troppo tempo, attenersi alle seguenti istruzioni per sincronizzare manualmente il dispositivo iOS. La sincronizzazione manuale può essere utile per velocizzare l'installazione. La funzionalità di sincronizzazione si applica solo ai dispositivi iOS, non a Mac OS X.
 
 1. Aprire l'app Portale aziendale su iOS.
 
-2. Nella sezione **Dispositivi personali** toccare il dispositivo attualmente in uso. Si tratta del dispositivo più a sinistra che presenta il segno di spunta.
+2. Nella sezione **Dispositivi personali** scegliere il dispositivo attualmente in uso. Si tratta del dispositivo più a sinistra che presenta il segno di spunta.
 
-    ![ios-sync-1-comp-portal-apps](./media/ios-sync-1-comp-portal-apps.png)
+    ![Schermo del dispositivo con la sezione Dispositivi personali](./media/ios-sync-1-comp-portal-apps.png)
 
-3.  Toccare il pulsante **Sincronizza** situato in basso a destra nella schermata.
+3.  Scegliere il pulsante **Sincronizza** in basso a destra nella schermata.
 
-    ![ios-sync-2-sync-button](./media/ios-sync-2-sync-button.png)
+    ![Dettagli del dispositivo con il pulsante Sincronizza](./media/ios-sync-2-sync-button.png)
 
 Sullo schermo viene visualizzato un cerchio rotante fino al completamento della sincronizzazione.
 
@@ -41,7 +41,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
