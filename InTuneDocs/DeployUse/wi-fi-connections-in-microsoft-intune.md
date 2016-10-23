@@ -4,7 +4,7 @@ description: Usare i profili Wi-Fi per consentire agli utenti di connettersi all
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
 
 
 ---
@@ -29,7 +29,7 @@ Si immagini, ad esempio, di installare una nuova rete Wi-Fi denominata **Contoso
 
 1.   Creare un profilo Wi-Fi che contiene le impostazioni necessarie per connettersi alla rete wireless **Contoso Wi-Fi**.
 
-2. Distribuire il profilo al gruppo di utenti con dispositivi iOS.
+2.   Distribuire il profilo al gruppo di utenti con dispositivi iOS.
 
 3.   Gli utenti visualizzeranno la nuova rete **Contoso Wi-Fi** nell'elenco delle reti wireless e potranno facilmente connettersi a tale rete.
 
@@ -39,6 +39,8 @@ Si immagini, ad esempio, di installare una nuova rete Wi-Fi denominata **Contoso
 È possibile distribuire i profili Wi-Fi nelle piattaforme seguenti:
 
 -   Android 4.0 e versioni successive
+
+-   Android for Work   
 
 -   iOS 8.0 e versioni successive
 
@@ -52,10 +54,13 @@ Per i dispositivi che eseguono Windows 8.1 o Windows 10 Desktop o Mobile, è pos
 
     -   Profilo Wi-Fi (Android 4 e versioni successive)
 
+    -   Profilo Wi-Fi (Android for Work)
+
     -   Profilo Wi-Fi (iOS 8.0 e versioni successive)
 
     -   Profilo Wi-Fi (Mac OS X 10.9 e versioni successive)
-
+    
+    
     Non esistono impostazioni consigliate per questo tipo di criteri. È necessario creare un criterio personalizzato.
 
 3.  Specificare un nome e una descrizione per il profilo.
@@ -173,6 +178,6 @@ Per informazioni sulla creazione di un profilo Wi-Fi con una chiave precondivisa
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

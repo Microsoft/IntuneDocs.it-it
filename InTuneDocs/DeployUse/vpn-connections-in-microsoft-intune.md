@@ -1,10 +1,10 @@
 ---
 title: Connessioni VPN | Microsoft Intune
-description: Usare i profili VPN per distribuire le impostazioni VPN agli utenti e ai dispositivi dell'organizzazione.
+description: Usare i profili VPN per distribuire le impostazioni VPN agli utenti e ai dispositivi dell&quot;organizzazione.
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,22 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 957edcf6910dd15f15ab5020773233c6a6ba0ea7
-ms.openlocfilehash: fb5fbbe50295d3fc26f3cd4def4f40898bb6ffd2
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
 
 
 ---
 
 # Connessioni VPN in Microsoft Intune
- È possibile usare le reti private virtuali (VPN) per offrire agli utenti accesso remoto sicuro alla rete aziendale. Gli utenti remoti possono lavorare come se i dispositivi fossero fisicamente connessi alla rete. I dispositivi usano un profilo di connessione VPN per stabilire una connessione con il server VPN. Usare i *profili VPN* in Microsoft Intune per distribuire le impostazioni VPN agli utenti e ai dispositivi dell'organizzazione. La distribuzione di queste impostazioni consente di ridurre al minimo le operazioni che l'utente finale deve eseguire per connettersi alle risorse nella rete aziendale.
+
+Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla rete aziendale. I dispositivi usano un *profilo di connessione VPN* per stabilire una connessione con il server VPN. Usare i *profili VPN* in Microsoft Intune per distribuire le impostazioni VPN agli utenti e ai dispositivi dell'organizzazione in modo che possano connettersi in modo facile e sicuro alla rete. 
 
 Si supponga, ad esempio, di voler effettuare il provisioning di tutti i dispositivi iOS con le impostazioni necessarie per connettersi a una condivisione file nella rete aziendale. Creare un profilo VPN contenente le impostazioni necessarie per connettersi alla rete aziendale e quindi distribuire tale profilo a tutti gli utenti che usano dispositivi iOS. Gli utenti visualizzano la connessione VPN nell'elenco delle reti disponibili e possono connettersi con la massima facilità.
 
 I profili VPN consentono di configurare i tipi di dispositivo seguenti:
 
 * Dispositivi che eseguono Android 4 e versioni successive
+* Dispositivi Android for Work
 * Dispositivi che eseguono iOS 8.0 e versione successiva
 * Dispositivi che eseguono Mac OS X 10.9 e versioni successive
 * Dispositivi registrati che eseguono Windows 8.1 e versioni successive
@@ -70,9 +72,7 @@ I profili VPN possono usare numerosi tipi di connessione e protocolli diversi di
 
 ### Certificati
 
-Quando si crea il profilo VPN, è possibile scegliere un profilo certificato SCEP o PFX creato precedentemente in Intune.
-
-Questo metodo è noto come certificato di identità. Viene usato per eseguire l'autenticazione in base a un profilo certificato attendibile (o certificato radice) creato per stabilire che il dispositivo dell'utente è autorizzato a connettersi. Il certificato attendibile viene distribuito nel computer che esegue l'autenticazione della connessione VPN, in genere il server VPN.
+Quando si crea il profilo VPN, è possibile scegliere un profilo certificato SCEP o PFX creato precedentemente in Intune. Questo metodo è noto come certificato di identità. Viene usato per eseguire l'autenticazione in base a un profilo certificato attendibile (o *certificato radice*) creato per stabilire che il dispositivo dell'utente è autorizzato a connettersi. Il certificato attendibile viene distribuito nel computer che esegue l'autenticazione della connessione VPN, in genere il server VPN.
 
 Per altre informazioni su come creare e usare i profili di certificato in Intune, vedere il documento relativo alla [protezione dell'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).
 
@@ -85,6 +85,7 @@ Per eseguire l'autenticazione al server VPN, l'utente deve specificare nome uten
 1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** > **Aggiungi criterio**.
 2. Selezionare un modello per il nuovo criterio espandendo il tipo di dispositivo pertinente e quindi scegliere il profilo VPN per il dispositivo:
     * **Profilo VPN (Android 4 e versioni successive)**
+    * **Profilo VPN (Android for Work)**
     * **Profilo VPN (iOS 8.0 e versione successiva)**
     * **Profilo VPN (Mac OS X 10.9 e versioni successive)**
     * **Profilo VPN (Windows 8.1 e versioni successive)**
@@ -92,6 +93,9 @@ Per eseguire l'autenticazione al server VPN, l'utente deve specificare nome uten
     * **Profilo VPN (Windows 10 Desktop e Mobile e versioni successive)**
 
  È possibile creare e distribuire soltanto criteri personalizzati dei profili VPN. Le impostazioni consigliate non sono disponibili.
+
+> [!Note]
+> Un profilo VPN per i dispositivi Android for Work abilita una connessione VPN solo per le app installate nel profilo di lavoro del dispositivo.
 
 3. Usare la tabella seguente per configurare le impostazioni del profilo VPN:
 
@@ -192,6 +196,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

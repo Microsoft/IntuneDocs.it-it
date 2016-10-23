@@ -1,5 +1,5 @@
 ---
-title: Quali sono i dettagli visibili all'amministratore IT quando si registra il dispositivo in Intune? | Microsoft Intune
+title: Quali sono i dettagli visibili all&quot;amministratore IT quando si registra il dispositivo in Intune? | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 2631541ea974769308aea30d2b37a3a79c22db99
+ms.sourcegitcommit: f69d2b222e9409a79dae07fd77f29c46876f11cb
+ms.openlocfilehash: 38a8a92581a990c321c6c57bfaa5a506733eb1b4
 
 
 ---
@@ -57,12 +57,10 @@ Quando si registra il dispositivo Windows in Intune, si concedono all'amministra
 
 -   Produttore
 
-Per altre informazioni, leggere [qui](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows).
+Per altre informazioni, vedere [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows) (Cosa accade quando si installa l'app Portale aziendale e si registra il dispositivo in Intune)
 
 
 
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

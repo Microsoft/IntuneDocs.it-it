@@ -21,7 +21,7 @@ La registrazione automatica consente agli utenti di registrare dispositivi e PC 
 
 5. Specificare gli URL per Intune:
 
-  - **URL di registrazione MDM**: usare `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc` per l'URL di registrazione MDM.
+  - **URL di registrazione MDM**: usare il valore predefinito.
   - **URL delle condizioni di utilizzo MDM**: usare il valore predefinito. Questo URL consente di visualizzare le condizioni di utilizzo per gli utenti durante la registrazione dei dispositivi.
   - **URL di conformità MDM**: usare il valore predefinito. Se viene rilevato un dispositivo non conforme, con questo URL viene visualizzato un messaggio di **accesso negato**. L'URL punta a una pagina che consente agli utenti di comprendere perché il dispositivo non è conforme ai criteri e come è possibile ristabilirne la conformità.
 
@@ -34,6 +34,6 @@ La registrazione automatica consente agli utenti di registrare dispositivi e PC 
 7. Scegliere **Salva**.
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
