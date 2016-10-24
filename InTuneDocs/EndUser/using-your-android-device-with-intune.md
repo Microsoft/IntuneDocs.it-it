@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 43b43aa82aa69bea95d6d521193bd32c53e881fe
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
 
 
 ---
@@ -33,6 +33,7 @@ Questo articolo contiene collegamenti a tutte le attività che gli utenti finali
 Le informazioni contenute in questa sezione consentono di installare il portale aziendale di Intune e di registrare dispositivi Android.
 
 - [Registrare il dispositivo in Intune](enroll-your-device-in-Intune-android.md)
+- [Create a work profile and enroll your device in Intune (Creare un profilo di lavoro e registrare il dispositivo in Intune)](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Operazioni che è possibile eseguire quando il dispositivo è registrato in Intune
@@ -73,6 +74,6 @@ Le informazioni contenute in questa sezione consentono di risolvere i problemi c
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
+ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
+ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
 
 
 ---
@@ -37,7 +37,7 @@ A differenza degli altri criteri di Intune, i criteri di gestione delle applicaz
 
 Per applicare restrizioni a un'app, questa deve includere Microsoft Intune App SDK. Esistono tre metodi per ottenere questo tipo di app:
 
--   **Usare un'app gestita da criteri**. Un'app gestita da criteri include App SDK. Per aggiungere questo tipo di applicazione, è possibile specificare un collegamento all'app da un archivio di app, ad esempio l'iTunes store o Google Play. Non sono richieste ulteriori elaborazioni per questo tipo di app. Per altre informazioni, vedere l'elenco delle [app che è possibile usare con i criteri di gestione delle applicazioni mobili di Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+-   **Usare un'app gestita da criteri**. Un'app gestita da criteri include App SDK. Per aggiungere questo tipo di applicazione, è possibile specificare un collegamento all'app da un archivio di app, ad esempio l'iTunes store o Google Play. Non sono richieste ulteriori elaborazioni per questo tipo di app. Per altre informazioni, vedere l'elenco delle [app che è possibile usare con i criteri di gestione delle applicazioni mobili di Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
 
 -   **Usare un'app di cui è stato eseguito il wrapping**. Un'app di cui è stato eseguito il wrapping è un'app che è stata riassemblata in modo da includere App SDK usando lo strumento di wrapping delle app di Microsoft Intune. Questo strumento viene in genere usato per elaborare le app aziendali create internamente. Non può essere usato per elaborare app scaricate dall'App Store. Per altre informazioni, vedere [Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -136,7 +136,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
     |**Periodo di prova offline**|Se il dispositivo è offline specificare il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app.|
     |**Crittografa dati app**|Questa impostazione specifica che tutti i dati associati all'app verranno crittografati. Sono inclusi i dati archiviati esternamente, ad esempio i dati delle schede SD.<br /><br />**Crittografia per iOS**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, i dati vengono crittografati a riposo mediante la crittografia a livello di dispositivo fornita dal sistema operativo. Questo viene abilitato tramite i criteri PIN del dispositivo impostati dall'amministratore IT. Quando viene richiesto un PIN, i dati verranno crittografati in base alle impostazioni nei criteri di gestione delle applicazioni mobili. Come indicato nella documentazione di Apple, [i moduli usati da iOS sono dotati di certificazione FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Crittografia per Android**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, la crittografia viene fornita da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O file.  Il contenuto nell'archivio del dispositivo verrà sempre crittografato. Il metodo di crittografia non è conforme agli standard FIPS 140-2.|
     |**Blocca acquisizione schermo** (solo per dispositivi Android)|Questa impostazione specifica che le funzionalità di acquisizione schermo del dispositivo vengono bloccate quando un utente usa l'app.|
-    
+
 4. Al termine, scegliere **Salva criterio**.
 
 Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell'area di lavoro **Criteri**.
@@ -193,6 +193,6 @@ Nei casi in cui il dispositivo o l'utente riceva due criteri in conflitto, si ap
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

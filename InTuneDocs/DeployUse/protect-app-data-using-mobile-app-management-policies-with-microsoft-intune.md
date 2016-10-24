@@ -13,13 +13,13 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 
 
 ---
 
-# Proteggere i dati delle app usando i criteri di gestione delle app per dispositivi mobili con Microsoft Intune
+# Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune
 
 ## Protezione dei dati delle app
 I dipendenti usano dispositivi mobili per le attività personali e aziendali.  Pur assicurandosi della produttività dei dipendenti, è auspicabile prevenire anche la perdita di dati, sia intenzionale sia non intenzionale.  Inoltre, può essere utile proteggere i dati aziendali accessibili con dispositivi anche nel caso in cui vengano gestiti dall'utente.
@@ -122,8 +122,6 @@ Le app che supportano identità multiple offrono la possibilità di usare accoun
 
 Ad esempio, quando l'utente finale avvia l'app OneDrive usando il proprio account aziendale, non può spostare i file in un percorso di archiviazione personale. Tuttavia, quando l'utente finale usa OneDrive con il proprio account personale, può copiare e spostare i dati da OneDrive senza restrizioni.  
 
-Per una spiegazione dettagliata dell'esperienza d'uso delle app associate ai criteri MAM e su come le app con supporto per identità multiple abilitano l'applicazione dei criteri MAM solo nel contesto aziendale, leggere la sezione relativa all'[uso delle applicazioni con il supporto di identità multiple](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support).
-
 Tutte le app di Office per dispositivi mobili supportano più identità.
 
 ##  Passaggi successivi
@@ -133,6 +131,6 @@ Tutte le app di Office per dispositivi mobili supportano più identità.
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
