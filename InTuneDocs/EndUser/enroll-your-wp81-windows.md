@@ -3,6 +3,7 @@ title: Registrare il dispositivo Windows Phone 8.1 in Intune | Microsoft Intune
 description: Descrive come registrare un dispositivo Windows Phone 8.1 in Intune
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

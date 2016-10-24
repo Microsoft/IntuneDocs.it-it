@@ -3,6 +3,7 @@ title: "Creare criteri di conformità dei dispositivi | Microsoft Intune"
 description: "Creare criteri di conformità per consentire ai dispositivi mobili e ai PC in uso di accedere ai dati della società."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

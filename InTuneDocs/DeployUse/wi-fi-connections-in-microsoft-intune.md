@@ -3,6 +3,7 @@ title: Connessioni Wi-Fi | Microsoft Intune
 description: Usare i profili Wi-Fi per consentire agli utenti di connettersi alle reti Wi-Fi.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

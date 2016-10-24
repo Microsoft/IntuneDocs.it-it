@@ -1,8 +1,9 @@
 ---
 title: Gestire le app iOS acquistate tramite Volume Purchase Program| Microsoft Intune
-description: "Usare Intune per la gestione delle app acquistate con Volume Purchase Program da Apple importando le informazioni di licenza dall'App Store, verificando il numero di licenze usate e impedendo l'installazione di più copie dell'app rispetto a quelle possedute."
+description: "Usare Intune per la gestione delle app acquistate con Volume Purchase Program da Apple importando le informazioni di licenza dall&quot;App Store, verificando il numero di licenze usate e impedendo l&quot;installazione di più copie dell&quot;app rispetto a quelle possedute."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/01/2016
 ms.topic: article

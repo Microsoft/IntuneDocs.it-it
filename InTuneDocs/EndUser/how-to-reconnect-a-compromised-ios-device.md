@@ -3,6 +3,7 @@ title: 'Procedura: Riconnettere un dispositivo iOS compromesso | Microsoft Intun
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

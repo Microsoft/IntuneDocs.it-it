@@ -3,6 +3,7 @@ title: "Modalità di recupero delle app per gli utenti di Windows | Microsoft In
 description: Metodi per mettere a disposizione degli utenti le app Windows
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

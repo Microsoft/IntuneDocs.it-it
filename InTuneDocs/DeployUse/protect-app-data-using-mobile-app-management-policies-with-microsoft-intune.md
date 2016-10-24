@@ -3,6 +3,7 @@ title: Proteggere i dati delle app usando i criteri MAM | Microsoft Intune
 description: Questo argomento illustra in che modo i criteri di gestione di app mobili consentono di proteggere i dati aziendali, impedire la perdita di dati e mantenere separate le informazioni personali e di lavoro.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

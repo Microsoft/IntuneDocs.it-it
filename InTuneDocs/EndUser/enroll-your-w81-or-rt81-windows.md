@@ -3,6 +3,7 @@ title: Registrare il dispositivo Windows 8.1 o Windows RT 8.1 | Microsoft Intune
 description: Descrive come registrare un dispositivo Windows 8.1 o Windows RT 8.1 in Intune
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

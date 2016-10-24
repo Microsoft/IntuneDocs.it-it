@@ -3,6 +3,7 @@ title: Limitare l&quot;accesso alla posta elettronica a Exchange On-premises | M
 description: Proteggere e controllare l&quot;accesso alla posta elettronica aziendale in Exchange On-premises con accesso condizionale.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Configurare i criteri MAM nella console di Intune | Microsoft Intune
 description: "I criteri di gestione delle applicazioni mobili in Microsoft Intune consentono di modificare la funzionalità delle app distribuite per allinearle ai criteri aziendali di conformità e sicurezza."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

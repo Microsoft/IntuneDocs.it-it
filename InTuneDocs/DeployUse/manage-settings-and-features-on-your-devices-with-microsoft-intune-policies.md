@@ -3,6 +3,7 @@ title: Gestire le impostazioni dei dispositivi con i criteri | Microsoft Intune
 description: "Usare Intune per creare e distribuire i criteri per il controllo delle impostazioni e delle funzionalità nei dispositivi registrati gestiti dall&quot;utente."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

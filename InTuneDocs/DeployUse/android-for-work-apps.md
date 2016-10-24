@@ -3,6 +3,7 @@ title: Distribuire app a dispositivi Android for Work | Microsoft Intune
 description: Usare questo argomento per sincronizzare e quindi distribuire app ai dispositivi Android for Work da Google Play for Work.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

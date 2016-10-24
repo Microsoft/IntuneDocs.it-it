@@ -3,6 +3,7 @@ title: "Modalità di recupero delle app per gli utenti di Android | Microsoft In
 description: Metodi per rendere disponibili le app Android per gli utenti finali
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Informazioni di riferimento sui criteri di configurazione | Microsoft Int
 description: "Usare le informazioni in questo argomento per decidere più facilmente quali criteri di Microsoft Intune è necessario usare per gestire i dispositivi."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Il dispositivo iOS non è conforme alla versione massima del sistema ope
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

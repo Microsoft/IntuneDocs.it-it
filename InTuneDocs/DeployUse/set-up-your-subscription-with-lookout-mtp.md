@@ -3,6 +3,7 @@ title: Configurare la sottoscrizione con Lookout | Microsoft Intune
 description: Questo argomento include informazioni dettagliate su come configurare la protezione dalle minacce per il dispositivo di Lookout.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

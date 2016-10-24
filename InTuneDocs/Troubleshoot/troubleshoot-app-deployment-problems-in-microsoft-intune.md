@@ -3,6 +3,7 @@ title: Risorse che consentono di risolvere i problemi di distribuzione dell&quot
 description: Questo argomento consente di risolvere i problemi di distribuzione dell&quot;app in Microsoft Intune.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/27/2016
 ms.topic: article

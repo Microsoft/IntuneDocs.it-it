@@ -3,6 +3,7 @@ title: Abilitare l&quot;accesso alle risorse aziendali | Microsoft Intune
 description: I profili Wi-Fi, VPN e di posta elettronica interagiscono per consentire agli utenti di accedere ai file e alle risorse necessari.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

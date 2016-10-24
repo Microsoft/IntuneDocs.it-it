@@ -3,6 +3,7 @@ title: Informazioni sull&quot;uso di Microsoft Intune per gli utenti finali | Mi
 description: Collegamenti a informazioni da condividere con gli utenti finali
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: get-started-article

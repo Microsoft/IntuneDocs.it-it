@@ -4,6 +4,7 @@ title: Impostazioni dei criteri di Android for Work | Microsoft Intune
 description: "Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi Android for Work gestiti con Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

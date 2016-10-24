@@ -3,6 +3,7 @@ title: Registrare il dispositivo iOS in Intune | Microsoft Intune
 description: Descrive come registrare un dispositivo iOS in Intune
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

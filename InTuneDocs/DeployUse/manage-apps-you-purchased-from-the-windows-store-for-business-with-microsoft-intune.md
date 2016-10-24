@@ -3,6 +3,7 @@ title: Gestire Windows Store per le app aziendali | Microsoft Intune
 description: Connettere Microsoft Intune a Windows Store per le aziende se si vuole gestire e distribuire app acquistate con Volume Purchase Program dalla console di Intune
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

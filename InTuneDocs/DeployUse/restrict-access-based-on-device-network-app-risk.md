@@ -3,6 +3,7 @@ title: Limitare l&quot;accesso con la protezione dalle minacce per il dispositiv
 description: Limitare l&quot;accesso alle risorse aziendali in base al rischio per dispositivi, rete e applicazioni.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

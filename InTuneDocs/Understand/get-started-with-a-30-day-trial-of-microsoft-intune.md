@@ -3,6 +3,7 @@ title: Guida alla valutazione di Intune | Microsoft Intune
 description: Introduzione e prerequisiti su come configurare una valutazione gratuita di 30 giorni di Intune
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

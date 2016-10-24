@@ -3,6 +3,7 @@ title: 'Procedura: Impostare il periodo prima che il dispositivo Android venga b
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

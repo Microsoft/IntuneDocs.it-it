@@ -3,6 +3,7 @@ title: Impostazioni dei criteri MAM per iOS | Microsoft Intune
 description: Questo argomento descrive le impostazioni dei criteri di gestione delle app mobili per i dispositivi iOS.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

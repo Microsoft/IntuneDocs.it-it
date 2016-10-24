@@ -3,6 +3,7 @@ title: Risolvere i problemi di registrazione dei dispositivi | Microsoft Intune
 description: Suggerimenti per la risoluzione dei problemi di registrazione dei dispositivi.
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article

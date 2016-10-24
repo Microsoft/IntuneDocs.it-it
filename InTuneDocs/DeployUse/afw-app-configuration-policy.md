@@ -3,6 +3,7 @@ title: Usare i criteri di configurazione delle app per dispositivi mobili Androi
 description: Usare i criteri di configurazione delle app per dispositivi mobili in Intune per specificare le impostazioni che possono essere richieste quando gli utenti eseguono un&quot;app Android for Work.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

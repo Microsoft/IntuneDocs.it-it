@@ -3,6 +3,7 @@ title: Inviare gli errori all&quot;amministratore IT | Microsoft Intune
 description: Inviare gli errori all&quot;amministratore
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

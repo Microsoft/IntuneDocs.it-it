@@ -3,6 +3,7 @@ title: Classificare i dispositivi con il mapping del gruppo di dispositivi | Mic
 description: "Usare il mapping del gruppo di dispositivi di Microsoft Intune per raggruppare i dispositivi in categorie specifiche in modo da renderne più facile la gestione."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

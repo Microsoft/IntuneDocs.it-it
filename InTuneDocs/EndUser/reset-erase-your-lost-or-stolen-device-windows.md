@@ -3,6 +3,7 @@ title: Ripristinare (eliminare) un dispositivo Windows smarrito o rubato | Micro
 description: Reimpostare un dispositivo Windows perso o rubato
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

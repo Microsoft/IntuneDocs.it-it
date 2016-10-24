@@ -3,6 +3,7 @@ title: Impostazioni dei criteri di sicurezza dei dispositivi mobili | Microsoft 
 description: "Usare Intune per configurare una vasta gamma di impostazioni che è possibile distribuire in dispositivi gestiti nell&quot;organizzazione."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

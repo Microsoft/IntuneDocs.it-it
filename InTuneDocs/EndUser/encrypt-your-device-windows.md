@@ -3,6 +3,7 @@ title: Crittografare il dispositivo Windows| Microsoft Intune
 description: Descrive come crittografare un dispositivo Windows
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

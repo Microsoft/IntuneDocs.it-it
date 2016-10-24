@@ -3,6 +3,7 @@ title: Note sulla versione di Microsoft Intune | Microsoft Intune
 description: Note sulla versione di Intune
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

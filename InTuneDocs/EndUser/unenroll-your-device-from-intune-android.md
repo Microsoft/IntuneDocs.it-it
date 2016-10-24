@@ -3,6 +3,7 @@ title: Annullare la registrazione di un dispositivo Android da Intune | Microsof
 description: Descrive come annullare la registrazione di un dispositivo Android da Intune
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

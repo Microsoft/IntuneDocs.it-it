@@ -3,6 +3,7 @@ title: "Impostazioni dei criteri di conformità per Android for Work | Microsoft
 description: "Questo argomento descrive le impostazioni dei criteri di conformità per i dispositivi Android compatibili con Android for Work."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

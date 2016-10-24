@@ -3,6 +3,7 @@ title: Configurare la gestione di Android for Work | Microsoft Intune
 description: Abilitare la gestione di dispositivi mobili (MDM) per i dispositivi Android for Work con Microsoft Intune.
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

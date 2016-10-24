@@ -3,6 +3,7 @@ title: Risolvere i problemi di accesso alle risorse aziendali | Microsoft Intune
 description: Codici di errore e di stato in questo argomento per risolvere i problemi di accesso alle risorse.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

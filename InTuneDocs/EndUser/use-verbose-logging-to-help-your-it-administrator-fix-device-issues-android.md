@@ -3,6 +3,7 @@ title: Usare la registrazione dettagliata per aiutare l&quot;amministratore IT a
 description: Aiutare l&quot;amministratore IT a risolvere i problemi dei dispositivi mediante la registrazione dettagliata
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

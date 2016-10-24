@@ -3,6 +3,7 @@ title: Inviare i registri dei dati di diagnostica all&quot;amministratore IT tra
 description: Inviare i registri di dati tramite posta elettronica in un dispositivo Android
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

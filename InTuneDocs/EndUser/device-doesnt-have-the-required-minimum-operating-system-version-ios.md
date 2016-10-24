@@ -3,6 +3,7 @@ title: Il dispositivo iOS non ha la versione minima richiesta del sistema operat
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

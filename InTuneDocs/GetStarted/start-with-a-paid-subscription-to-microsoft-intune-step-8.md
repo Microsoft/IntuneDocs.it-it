@@ -3,6 +3,7 @@ title: Registrare dispositivi mobili e installare un&quot;app | Microsoft Intune
 description: Illustra come registrare i dispositivi mobili e installare un&quot;app su un dispositivo registrato in Intune
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

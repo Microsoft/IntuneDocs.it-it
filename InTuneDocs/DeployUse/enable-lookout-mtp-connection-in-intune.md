@@ -3,6 +3,7 @@ title: Abilitare Lookout MTP in Intune | Microsoft Intune
 description: Abilitare la protezione dalle minacce per i dispositivi mobili Lookout nella console di amministrazione Intune.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

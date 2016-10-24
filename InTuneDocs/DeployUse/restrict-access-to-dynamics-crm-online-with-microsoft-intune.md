@@ -1,8 +1,9 @@
 ---
-title: Limitare l'accesso alla posta elettronica a Dynamics CRM Online | Microsoft Intune
-description: Proteggere e controllare l'accesso a Dynamics CRM Online con l'accesso condizionale.
+title: Limitare l&quot;accesso alla posta elettronica a Dynamics CRM Online | Microsoft Intune
+description: Proteggere e controllare l&quot;accesso a Dynamics CRM Online con l&quot;accesso condizionale.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

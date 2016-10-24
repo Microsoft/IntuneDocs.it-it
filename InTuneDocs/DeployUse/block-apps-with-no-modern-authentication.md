@@ -3,6 +3,7 @@ title: Bloccare le app non provviste di autenticazione moderna | Microsoft Intun
 description: 
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

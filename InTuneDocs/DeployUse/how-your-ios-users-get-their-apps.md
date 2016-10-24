@@ -3,6 +3,7 @@ title: "Modalità di recupero delle app per gli utenti di iOS | Microsoft Intune
 description: Metodi per rendere disponibili le app iOS per gli utenti finali
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

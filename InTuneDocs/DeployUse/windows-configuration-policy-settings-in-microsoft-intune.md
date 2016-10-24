@@ -3,6 +3,7 @@ title: Impostazioni dei criteri di Windows | Microsoft Intune
 description: Usare i criteri di configurazione generale di Windows (Windows 8.1 e versioni successive) di Intune per configurare le impostazioni per i dispositivi Windows 8 e Windows 8.1 registrati.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

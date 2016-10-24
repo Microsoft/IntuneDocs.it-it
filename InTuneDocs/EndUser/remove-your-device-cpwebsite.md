@@ -3,6 +3,7 @@ title: Rimuovere il dispositivo dal portale aziendale | Microsoft Intune
 description: Rimuovere un dispositivo dal portale aziendale
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

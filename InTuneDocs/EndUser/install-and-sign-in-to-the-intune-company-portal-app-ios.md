@@ -3,6 +3,7 @@ title: Installare e accedere all&quot;app Portale aziendale di Intune | Microsof
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

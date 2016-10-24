@@ -3,6 +3,7 @@ title: Impostare o modificare il passcode | Microsoft Intune
 description: Impostare o modificare il passcode
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

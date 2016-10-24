@@ -3,6 +3,7 @@ title: Limitare l&quot;accesso alla posta elettronica a Exchange Online | Micros
 description: Proteggere e controllare l&quot;accesso alla posta elettronica aziendale in Exchange Online con accesso condizionale.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

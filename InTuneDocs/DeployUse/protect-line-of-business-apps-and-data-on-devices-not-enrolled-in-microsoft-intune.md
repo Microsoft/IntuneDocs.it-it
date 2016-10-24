@@ -3,6 +3,7 @@ title: Proteggere le app line-of-business in dispositivi non registrati | Micros
 description: Questo argomento illustra come preparare le app line-of-business in modo da applicare i criteri di gestione di app mobili che consentono di evitare la perdita di dati.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

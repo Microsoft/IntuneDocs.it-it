@@ -3,6 +3,7 @@ title: Inviare gli errori di registrazione all&quot;amministratore IT | Microsof
 description: Inviare gli errori di registrazione all&quot;amministratore
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

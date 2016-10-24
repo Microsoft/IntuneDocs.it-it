@@ -3,6 +3,7 @@ title: Usare gruppi per gestire utenti e dispositivi | Microsoft Intune
 description: Creare e gestire gruppi usando l&quot;area di lavoro Gruppi.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article
