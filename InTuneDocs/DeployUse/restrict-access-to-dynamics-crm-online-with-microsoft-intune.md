@@ -1,10 +1,11 @@
 ---
-title: Limitare l'accesso alla posta elettronica a Dynamics CRM Online | Microsoft Intune
-description: Proteggere e controllare l'accesso a Dynamics CRM Online con l'accesso condizionale.
+title: Limitare l&quot;accesso alla posta elettronica a Dynamics CRM Online | Microsoft Intune
+description: Proteggere e controllare l&quot;accesso a Dynamics CRM Online con l&quot;accesso condizionale.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -26,7 +27,7 @@ ms.openlocfilehash: 233b7cad41fbd35e0fef615737fc41f8a49db35e
 
 Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Limitare l'accesso alla posta elettronica, a Office 365 e ad altri servizi con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
-[!IMPORTANT] Per distribuire l'accesso condizionale è necessario disporre di sottoscrizioni di Intune e Azure Active Directory Premium e gli utenti devono essere licenziatari per entrambi i prodotti. La **sottoscrizione di Enterprise Mobility + Security (EMS)** include sottoscrizioni di Intune e Azure Active Directory Premium. Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Se non si dispone della sottoscrizione di EMS, è possibile ottenere una sottoscrizione per Azure Active Directory Premium. Vedere la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
+[!IMPORTANT] Per distribuire l'accesso condizionale è necessario disporre di sottoscrizioni di Intune e Azure Active Directory Premium e gli utenti devono essere licenziatari per entrambi i prodotti. La **sottoscrizione di Enterprise Mobility + Security (EMS)** include sottoscrizioni di Intune e Azure Active Directory Premium. Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Se non si dispone della sottoscrizione di EMS, è possibile ottenere una sottoscrizione per Azure Active Directory Premium. Vedere la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 Quando un utente di destinazione tenta di usare l'app Dynamics CRM sul proprio dispositivo, si verifica quanto segue:
 

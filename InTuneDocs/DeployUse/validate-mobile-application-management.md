@@ -1,9 +1,10 @@
 ---
 title:
 - Convalidare la configurazione di MAM | Microsoft Intune
-description: "Questo argomento descrive com'è possibile verificare e convalidare se i criteri di gestione delle applicazioni mobili (MAM) sono configurati correttamente e funzionano come previsto."
+description: "Questo argomento descrive com&quot;è possibile verificare e convalidare se i criteri di gestione delle applicazioni mobili (MAM) sono configurati correttamente e funzionano come previsto."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article

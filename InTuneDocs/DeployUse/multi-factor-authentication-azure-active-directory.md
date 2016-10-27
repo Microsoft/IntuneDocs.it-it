@@ -1,8 +1,9 @@
 ---
 title: "Autenticazione a più fattori con Azure | Microsoft Intune"
-description: "Come richiedere l'autenticazione a più fattori in Azure AD per la registrazione del dispositivo."
+description: "Come richiedere l&quot;autenticazione a più fattori in Azure AD per la registrazione del dispositivo."
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article

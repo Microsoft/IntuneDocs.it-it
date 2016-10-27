@@ -3,6 +3,7 @@ title: Descrizione del servizio | Microsoft Intune
 description: "Intune è un servizio basato su cloud che consente di gestire i PC Windows e i dispositivi mobili iOS, Mac OS X, Android e Windows."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

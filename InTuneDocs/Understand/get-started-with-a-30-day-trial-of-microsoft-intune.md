@@ -3,6 +3,7 @@ title: Guida alla valutazione di Intune | Microsoft Intune
 description: Introduzione e prerequisiti su come configurare una valutazione gratuita di 30 giorni di Intune
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 
 
 ---
@@ -37,12 +38,12 @@ Prima di iniziare a usare Intune, è necessario:
 
 -   Se è disponibile un account Microsoft Online Services, sono necessarie le credenziali di amministratore per l'account. Le credenziali di amministratore tenant non sono necessarie se non si dispone di un account di questo tipo oppure si vuole usare questo tenant di Intune solo per una valutazione.
 
--   Se si intende gestire dispositivi iOS o Windows Phone con la versione di valutazione di Intune, sono necessari certificati, o chiavi, e account per recuperare i certificati (vedere la tabella seguente). Con i dispositivi Android non sono necessari certificati aggiuntivi.
+-   Se si intende gestire dispositivi iOS o Windows Phone 8.1 con la versione di valutazione di Intune, sono necessari certificati, o chiavi, e account per recuperare i certificati. Vedere la tabella seguente. Con i dispositivi Android non sono necessari certificati aggiuntivi.
 
     |Piattaforma|Requisiti relativi ai certificati|Altre informazioni|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 e Windows Phone 8 |Non è necessario alcun certificato per gli utenti di Windows Phone 8.1 che installano l'app Portale aziendale dallo Store. È richiesto un certificato Symantec per gli utenti di Windows Phone 8.0 oppure per usare Intune per distribuire l'app Portale aziendale in dispositivi Windows Phone 8.1.|Questa guida presuppone che gli utenti scarichino l'app Portale aziendale dallo Store in un dispositivo Windows Phone 8.1 o di una versione successiva. Per informazioni sul supporto di Windows Phone 8.0, vedere [Configurare la gestione di Windows Phone e Windows 10 Mobile con Microsoft Intune](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune).|
-    |Dispositivi Windows 10, Windows RT 8.1, Windows RT o Windows 8.1|Non sono previsti requisiti del certificato per registrare i dispositivi Windows RT e Windows.|[Installare il client PC Windows con Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
+    |Windows Phone 8.1 |Non è necessario alcun certificato per gli utenti di Windows Phone 8.1 che installano l'app Portale aziendale dallo Store. |Questa guida presuppone che gli utenti scarichino l'app Portale aziendale dallo Store in un dispositivo Windows Phone 8.1 o di una versione successiva. |
+    |Dispositivi Windows 10, Windows RT 8.1 o Windows 8.1|Non sono previsti requisiti del certificato per registrare i dispositivi Windows RT e Windows.|[Installare il client PC Windows con Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
     |iOS 7.1 o versione successiva|Ottenere un certificato per il servizio Apple Push Notification.|Richiedere ad Apple un certificato Apple Push Notification Service come descritto in [Configurare la gestione dei dispositivi iOS e Mac](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
 ## Passaggi per completare una valutazione di 30 giorni di Intune
@@ -66,6 +67,6 @@ Ora è possibile avviare la sottoscrizione per la valutazione di 30 giorni.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

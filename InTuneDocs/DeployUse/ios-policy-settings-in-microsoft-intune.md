@@ -3,6 +3,7 @@ title: Impostazioni dei criteri di iOS | Microsoft Intune
 description: "Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi iOS gestiti con Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -382,6 +383,6 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

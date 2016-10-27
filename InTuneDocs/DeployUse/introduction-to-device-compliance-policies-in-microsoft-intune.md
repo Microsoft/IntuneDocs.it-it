@@ -3,6 +3,7 @@ title: "Criteri di conformità dei dispositivi | Microsoft Intune"
 description: "Questo argomento illustra i concetti necessari per comprendere cosa sono e come funzionano i criteri di conformità del dispositivo."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

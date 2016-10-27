@@ -1,8 +1,9 @@
 ---
 title: Risolvere i problemi di integrazione di Lookout | Microsoft Intune
-description: Questo argomento descrive la risoluzione dei problemi che si verificano comunemente con l'integrazione di Lookout
+description: Questo argomento descrive la risoluzione dei problemi che si verificano comunemente con l&quot;integrazione di Lookout
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

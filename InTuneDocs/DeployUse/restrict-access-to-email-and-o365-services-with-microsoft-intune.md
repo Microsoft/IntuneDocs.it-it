@@ -1,8 +1,9 @@
 ---
-title: Limitare l'accesso alla posta elettronica e ai servizi di Office 365 | Microsoft Intune
-description: Questo argomento descrive come usare l'accesso condizionale per consentire solo ai dispositivi conformi di accedere alla posta elettronica e ai dati aziendali in SharePoint Online e altri servizi.
+title: Limitare l&quot;accesso alla posta elettronica e ai servizi di Office 365 | Microsoft Intune
+description: Questo argomento descrive come usare l&quot;accesso condizionale per consentire solo ai dispositivi conformi di accedere alla posta elettronica e ai dati aziendali in SharePoint Online e altri servizi.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

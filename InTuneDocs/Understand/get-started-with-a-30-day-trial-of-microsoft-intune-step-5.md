@@ -3,6 +3,7 @@ title: Registrare i dispositivi mobili della valutazione | Microsoft Intune
 description: Come registrare dispositivi mobili e installare un&quot;app quando si esegue l&quot;iscrizione per una valutazione gratuita di 30 giorni di Intune
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

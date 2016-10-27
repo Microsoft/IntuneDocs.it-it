@@ -1,10 +1,11 @@
 ---
 title: Gestire le impostazioni dei dispositivi con i criteri | Microsoft Intune
-description: "Usare Intune per creare e distribuire i criteri per il controllo delle impostazioni e delle funzionalità nei dispositivi registrati gestiti dall'utente."
+description: "Usare Intune per creare e distribuire i criteri per il controllo delle impostazioni e delle funzionalità nei dispositivi registrati gestiti dall&quot;utente."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
 
 
 ---
@@ -61,6 +62,7 @@ Per l'elenco completo dei criteri di Intune vedere [Informazioni di riferimento 
 
     - [Impostazioni per i dispositivi iOS](ios-policy-settings-in-microsoft-intune.md)
     - [Impostazioni per i dispositivi Android](android-policy-settings-in-microsoft-intune.md)
+    - [Impostazioni per i dispositivi Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Impostazioni per i dispositivi Windows 8 e Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Impostazioni per i dispositivi Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Impostazioni per i dispositivi Windows 10 Desktop e mobili](windows-10-policy-settings-in-microsoft-intune.md)
@@ -115,7 +117,6 @@ Se dopo l'invio della prima notifica il dispositivo non contatta il servizio per
 - iOS e Mac OS X: ogni 6 ore.
 - Android: ogni 8 ore.
 - Windows Phone: ogni 8 ore.
-- Dispositivi Windows RT registrati: ogni 24 ore.
 - PC Windows 8.1 e Windows 10 registrati come dispositivi: ogni 8 ore.
 
 Se il dispositivo è stato appena registrato, la frequenza di controllo sarà maggiore, come indicato di seguito:
@@ -212,6 +213,6 @@ Vedere [Risolvere i problemi relativi ai criteri in Microsoft Intune](/intune/tr
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: Informazioni sul portale aziendale | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 78d0ff0d282cc91cb361dbb324a03778548dcf45
+ms.sourcegitcommit: 1a1975bb10d4a35f6ab52d724405f77300c40feb
+ms.openlocfilehash: f0c50a7a028fdc17acaad4e0498aaabfb58987a8
 
 
 ---
@@ -23,12 +24,12 @@ ms.openlocfilehash: 78d0ff0d282cc91cb361dbb324a03778548dcf45
 # Informazioni sul portale aziendale
 
 ## Che cos'è il portale aziendale e a cosa serve?
-Il portale aziendale di Microsoft Intune consente di accedere ai dati e alle app aziendali o dell'istituto di istruzione. È possibile accedere al portale aziendale in due modi diversi:
+Il portale aziendale di Microsoft Intune consente di accedere ai dati e alle app della società o dell'istituto di istruzione. È possibile accedere al portale aziendale in due modi diversi:
 
-- Installando l'app Portale aziendale nel dispositivo. In genere è possibile scaricare l'app Portale aziendale dall'archivio applicazioni del dispositivo, ma anche l'amministratore IT può installare l'app con metodi diversi.
-- Visitando il [sito Web Portale aziendale](http://portal.manage.microsoft.com) impostato dall'amministratore IT.
+- Installando l'app Portale aziendale nel dispositivo. In genere è possibile scaricare l'app Portale aziendale dall'App Store del dispositivo, ma anche l'amministratore IT può installare l'app.
+- Visitando il [sito Web del portale aziendale](http://portal.manage.microsoft.com) impostato dall'amministratore IT.
 
-Esistono alcune lievi differenze tra l'app Portale aziendale e il sito Web Portale aziendale, ma in ognuno è possibile eseguire la maggior parte delle attività che è possibile eseguire nell'altro. Ecco alcuni esempi:
+Esistono alcune lievi differenze tra l'app Portale aziendale e il sito Web del portale aziendale, ma la maggior parte delle attività può essere eseguita su entrambi. Di seguito sono riportate alcune attività eseguibili:
 
 - Registrare i dispositivi
 - Visualizzare lo stato dei dispositivi
@@ -37,7 +38,7 @@ Esistono alcune lievi differenze tra l'app Portale aziendale e il sito Web Porta
 - Reimpostare il PIN o la password
 - Contattare il reparto IT per richiedere assistenza
 
-Per scoprire quali operazioni è possibile eseguire nel sito Web Portale aziendale rispetto all'app Portale aziendale nel dispositivo, scegliere uno dei collegamenti seguenti:
+Per scoprire quali operazioni è possibile eseguire nel sito Web del portale aziendale rispetto a quelle eseguibili nell'app Portale aziendale del dispositivo, scegliere uno dei collegamenti seguenti:
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
@@ -45,7 +46,7 @@ Per scoprire quali operazioni è possibile eseguire nel sito Web Portale azienda
 - [Windows](using-your-windows-device-with-intune.md)
 - [Sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
-## Che cosa succede quando si aggiunge un computer o dispositivo al Portale aziendale?
+## Che cosa succede quando si aggiunge un computer o un dispositivo al Portale aziendale?
 Quando si aggiunge un computer o un dispositivo al Portale aziendale, a seconda del dispositivo è possibile che venga installato un software o scaricata un'app.  Vengono inoltre concesse all'amministratore IT le autorizzazioni per gestire il dispositivo e proteggere le informazioni aziendali sul dispositivo.
 
 Per informazioni su ciò che l'amministratore IT può e non può visualizzare nei dispositivi degli utenti, usare il collegamento che corrisponde al tipo di dispositivo:
@@ -57,7 +58,7 @@ Per informazioni su ciò che l'amministratore IT può e non può visualizzare ne
 
 ## Quali tipi di computer o dispositivi è possibile aggiungere al Portale aziendale?
 
--   iPhone, iPad e Mac OS X
+-   Dispositivi iPhone, iPad e Mac OS X
 
 -   Dispositivi mobili Android
 
@@ -66,14 +67,12 @@ Per informazioni su ciò che l'amministratore IT può e non può visualizzare ne
     -   Windows 10 Desktop
     -   Windows Phone 8.1
     -   Windows 8.1
-    -   Dispositivi Windows RT
-    -   Windows Phone 8
     -   iPhone, iPad e Mac OS X
     -   Dispositivi mobili Android
 
 
 ## È possibile rimuovere un computer o un dispositivo dal Portale aziendale?
-Sì, è possibile rimuovere o reimpostare un computer o un dispositivo dal Portale aziendale. Esiste una differenza tra **rimuovere** e **reimpostare**:
+È possibile rimuovere o reimpostare un computer o un dispositivo dal Portale aziendale. Esiste una differenza tra **rimuovere** e **reimpostare**.
 
 Quando si *rimuove* un computer o dispositivo, si annulla la registrazione del dispositivo in Intune. Dopo l'annullamento della registrazione non è più possibile accedere al Portale aziendale con tale dispositivo e alcuni dati aziendali all'interno di quest'ultimo potrebbero essere rimossi. Per informazioni su come rimuovere il dispositivo dal Portale aziendale, scegliere uno dei collegamenti seguenti:
 
@@ -92,14 +91,14 @@ Per informazioni su come reimpostare il dispositivo, scegliere uno dei collegame
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Reimpostare un dispositivo dal sito Web del portale aziendale](reset-your-device-cpwebsite.md)
 
-## Non vengono visualizzati tutti i dispositivi nel Portale aziendale
-Per vedere un dispositivo, è necessario aggiungerlo al Portale aziendale. Individuare il Portale aziendale come indicato dall'amministratore e seguire le istruzioni per il dispositivo. Inoltre, non saranno più visualizzati i dispositivi di proprietà e gestiti dall'azienda.
+## Nel Portale aziendale non vengono visualizzati tutti i dispositivi
+Per essere visibile, un dispositivo deve essere in primo luogo aggiunto al Portale aziendale. Accedere al Portale aziendale come indicato dall'amministratore e seguire la procedura per il dispositivo. Inoltre, non saranno più visualizzati i dispositivi di proprietà e gestiti dall'azienda.
 
 ## Per informazioni, contattare l'amministratore IT
 Per assistenza, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

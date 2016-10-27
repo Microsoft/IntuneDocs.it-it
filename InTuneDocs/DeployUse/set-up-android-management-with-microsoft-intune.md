@@ -3,6 +3,7 @@ title: Configurare la gestione per Android | Microsoft Intune
 description: Abilitare la gestione di dispositivi mobili (MDM) per i dispositivi Android e KNOX con Microsoft Intune.
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article

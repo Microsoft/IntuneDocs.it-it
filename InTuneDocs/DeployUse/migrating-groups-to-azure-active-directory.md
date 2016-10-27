@@ -3,16 +3,17 @@ title: Migrazione ai gruppi di Azure Active Directory | Microsoft Intune
 description: Informazioni sulla migrazione di gruppi da Intune ad Azure AD
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 translationtype: Human Translation
-ms.sourcegitcommit: d7a1da3b9e1e6ce3e2034cc5e8e1926a671276b8
-ms.openlocfilehash: f7aa05f4a569392be60522437508fdb78f56c55c
+ms.sourcegitcommit: d92c9ffe42b36770a32c28941de3c402aec9dd68
+ms.openlocfilehash: 08bcc258f64e6385ae6fa648ddb8f2b5fe68942e
 
 
 ---
@@ -21,10 +22,8 @@ ms.openlocfilehash: f7aa05f4a569392be60522437508fdb78f56c55c
     
 Sulla base dei commenti e dei suggerimenti degli utenti in cui venivano richieste funzionalità di raggruppamento e assegnazione in Enterprise Mobility + Security, Microsoft ha deciso di convertire i gruppi di Intune in gruppi di sicurezza basati su Azure Active Directory. In questo modo la gestione dei gruppi verrà unificata in Intune e Azure Active Directory (Azure AD). Questa nuova esperienza consentirà di evitare la duplicazione dei gruppi tra i servizi e offrirà estendibilità tramite PowerShell e Graph. 
 
-A partire da novembre i clienti esistenti di Intune verranno migrati alla nuova esperienza di gestione dei gruppi basata su Azure AD. I gruppi di utenti e dispositivi di Intune verranno migrati a gruppi di sicurezza di Azure AD. Microsoft non inizierà la migrazione senza prima aver ridotto al minimo l'impatto sulle attività quotidiane degli utenti. Non è previsto alcun impatto sugli utenti finali. Gli utenti riceveranno una notifica prima della migrazione del loro account.
-
 ### Come e quando sarà possibile eseguire la migrazione ai nuovi gruppi?
-La migrazione dei clienti correnti verrà eseguita in un certo lasso di tempo. Microsoft sta finalizzando il programma di migrazione. Questo argomento verrà aggiornato tra qualche settimana e verranno forniti ulteriori dettagli. Prima della migrazione, gli utenti riceveranno una notifica. Per domande e chiarimenti sulla migrazione, contattare il team addetto all'indirizzo [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+La migrazione dei clienti correnti avverrà in certo lasso di tempo, non prima di dicembre 2016. Prima della migrazione, i gruppi riceveranno una notifica. Per domande e chiarimenti sulla migrazione, contattare il team addetto all'indirizzo [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 ### Quali saranno le nuove funzionalità disponibili?
 Di seguito sono indicate le nuove funzionalità che verranno introdotte: 
@@ -116,6 +115,6 @@ Quando viene eseguita la migrazione delle funzionalità di Intune al portale di 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

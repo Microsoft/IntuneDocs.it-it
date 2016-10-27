@@ -3,6 +3,7 @@ title: Eseguire la disposizione testo delle app iOS con lo strumento per la disp
 description: Usare le informazioni in questo argomento per informazioni su come eseguire la disposizione testo per app iOS senza modificare il codice dell&quot;app stessa. Preparare le app in modo da applicare i criteri di gestione delle app mobili.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

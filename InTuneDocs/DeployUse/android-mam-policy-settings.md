@@ -4,7 +4,7 @@ description: Questo argomento descrive le impostazioni dei criteri di gestione d
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
+ms.sourcegitcommit: 7313854dc9cee26412ed4759e570f0aecc5f156b
+ms.openlocfilehash: e8b1ccca0c905ccdefd5c4a97b78561c6edb7908
 
 
 ---
@@ -67,6 +67,9 @@ Il termine **App gestite da criteri** viene usato per indicare le app che sono c
 - **Disable contact sync (Disabilita sincronizzazione contatti):** scegliere **Sì** per impedire la sincronizzazione delle informazioni di contatto nell'app Rubrica nativa nel dispositivo. Se si sceglie **No**, l'app salverà le informazioni di contatto nell'app Rubrica nativa sul dispositivo.<br/>Quando si esegue una cancellazione selettiva per rimuovere dati aziendali, i contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. Attualmente questa opzione è disponibile solo per l'app **Microsoft Outlook**.
 
   **Valore predefinito = Sì**
+- **Disable printing:** (Disabilita stampa) scegliere **Sì** per impedire la stampa dei dati aziendali dalle app associate a criteri di gestione delle app per dispositivi mobili.
+
+  **Valore predefinito - Sì**
 
 ##  Impostazioni dei criteri di accesso di Android
 Il termine **App gestite da criteri** viene usato per indicare le app che sono configurate con criteri MAM
@@ -96,6 +99,6 @@ Il termine **App gestite da criteri** viene usato per indicare le app che sono c
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

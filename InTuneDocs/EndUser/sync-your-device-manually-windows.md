@@ -14,15 +14,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: afe5beb508796244b914d6b0bae59eaa571e9c3a
+ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
+ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
 
 
 ---
 
 
 # Sincronizzare il dispositivo Windows manualmente
-Se l'installazione dell'app sta richiedendo troppo tempo, attenersi alle seguenti istruzioni per sincronizzare manualmente il dispositivo Windows e accelerare il processo. Sono supportate solo le versioni elencate. Usare uno dei collegamenti inclusi nella sezione precedente "Contenuto dell'articolo", scegliendo quello corrispondente al tipo di dispositivo in uso:
+Se l'installazione dell'app sta richiedendo troppo tempo, è possibile provare a eseguire la sincronizzazione manuale del dispositivo Windows. La sincronizzazione manuale può essere utile per velocizzare l'installazione.
+
+Sono supportate solo le versioni seguenti. Attenersi alle istruzioni corrispondenti al tipo di dispositivo in uso.
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
@@ -34,44 +36,44 @@ Sincronizzare manualmente il dispositivo Windows 10 Mobile per accelerare un'ins
 
 1. Accedere a **Tutte le app** > **Impostazioni** > **Account**.
 
-    ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
+    ![Scelta di Account nella schermata Impostazioni](./media/win10m-sync-1-settings-accounts.png)
 
-2. Toccare **Accesso società**.
+2. Scegliere **Accesso società**.
 
-    ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
+    ![Scelta di Accesso società come tipo di account](./media/win10m-sync-2-work-access.png)
 
-3. In **Enroll in to device management** (Registrazione nella gestione dei dispositivi) toccare il nome della società come illustrato di seguito.
+3. In **Registrati per la gestione dispositivi** scegliere il nome della società.
 
-    ![win10m-sync-3-tap-comp-name](./media/win10m-sync-3-tap-comp-name.png)
+    ![Scelta del nome della società per la gestione dei dispositivi](./media/win10m-sync-3-tap-comp-name.png)
 
-4. Toccare l'icona **Sincronizza**.
+4. Scegliere l'icona **Sincronizza**.
 
-    ![win10m-sync-4-tap-sync](./media/win10m-sync-4-tap-sync.png)
+    ![Scelta dell'icona Sincronizza.](./media/win10m-sync-4-tap-sync.png)
 
-    Nella parte superiore dello schermo viene visualizzato il messaggio "We're synching your account" (Sincronizzazione account in corso). Il pulsante Sincronizza rimane grigio fino al completamento della sincronizzazione del dispositivo.
+    Nella parte superiore dello schermo viene visualizzato il messaggio "We're synching your account" (Sincronizzazione account in corso). Il pulsante **Sincronizza** resta disattivato fino al completamento della sincronizzazione del dispositivo.
 
 ## Windows 10 Desktop
 Sincronizzare manualmente il dispositivo Windows 10 Desktop per accelerare un'installazione lenta:
 
-1. Selezionare il pulsante **Start**, come illustrato di seguito, quindi scegliere **Impostazioni**.
+1. Scegliere **Start** e quindi scegliere **Impostazioni**.
 
-    ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
+    ![Il pulsante Start](./media/win10pc-sync-1-start-button.png)
 
-2. Nella pagina **Impostazioni** selezionare **Account**.
+2. Nella pagina **Impostazioni** scegliere **Account**.
 
-    ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
+    ![Scelta di Account nella pagina Impostazioni](./media/win10pc-sync-2-settings-accounts.png)
 
-3. Nella pagina **Account** selezionare **Accesso società**.
+3. Nella pagina **Account** scegliere **Accesso società**.
 
-    ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
+    ![Scelta di Accesso società come tipo di account](./media/win10pc-sync-3-work-access.png)
 
-4. Nella sezione **Enroll in to device management** (Registrazione nella gestione dei dispositivi) fare clic sul nome della società, come illustrato nell'evidenziazione blu in basso.
+4. Nella sezione **Registrati per la gestione dispositivi** fare clic sul nome della società, come illustrato nell'evidenziazione blu in basso.
 
-    ![win10pc-sync-4-tap-com-name](./media/win10pc-sync-4-tap-com-name.png)
+    ![Scelta del nome della società per la gestione dei dispositivi](./media/win10pc-sync-4-tap-com-name.png)
 
-5. Selezionare il pulsante **Sincronizza**.
+5. Scegliere il pulsante **Sincronizza**.
 
-    ![win10pc-sync-5-tap-sync](./media/win10pc-sync-5-tap-sync.png)
+    ![Scelta del pulsante Sincronizza](./media/win10pc-sync-5-tap-sync.png)
 
    Il pulsante diventa inattivo fino al completamento della sincronizzazione.
 
@@ -80,15 +82,15 @@ Sincronizzare manualmente il dispositivo Windows Phone 8.1 per accelerare un'ins
 
 1. Accedere a **Tutte le app** > **Impostazioni** > **azienda**.
 
-    ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
+    ![Elenco di impostazioni](./media/wp81-1-sync-settings-workplace.png)
 
-2. Toccare il nome della società, come indicato nell'evidenziazione blu in basso.
+2. Scegliere il nome della propria società.
 
-    ![wp81-2-sync-tap-compname](./media/wp81-2-sync-tap-compname.png)
+    ![Scelta del nome della società per l'account aziendale](./media/wp81-2-sync-tap-compname.png)
 
-3. Toccare l'icona **Sincronizza**.
+3. Scegliere l'icona **Sincronizza**.
 
-    ![wp81-3-sync-tap-sync-button](./media/wp81-3-sync-tap-sync-button.png)
+    ![Scelta dell'icona Sincronizza.](./media/wp81-3-sync-tap-sync-button.png)
 
    Nella parte superiore dello schermo viene visualizzato il messaggio "We're synching your account" (Sincronizzazione account in corso) fino al termine della sincronizzazione del dispositivo.
 
@@ -96,8 +98,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

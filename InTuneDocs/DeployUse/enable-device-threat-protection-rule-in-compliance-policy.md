@@ -3,6 +3,7 @@ title: "Abilitare la regola di protezione del dispositivo nei criteri di conform
 description: "Abilitare la regola di protezione dalle minacce per i dispositivi mobili nei criteri di conformità del dispositivo."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
