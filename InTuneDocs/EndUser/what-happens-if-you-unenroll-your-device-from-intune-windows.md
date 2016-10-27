@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: ebd1300c490f3d69110a5f1920fd25d1dc5cb850
 
 
 ---
@@ -23,11 +23,7 @@ ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
 
 # Che cosa avviene se si annulla la registrazione del dispositivo Windows da Intune?
 
-Per altre informazioni su ciò che accade, usare il collegamento indicato nella sezione "Contenuto dell'articolo" corrispondente al tipo di dispositivo in uso.
-
-- [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
-- [Windows 10, Windows 8.1 o Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
-- [Windows RT che esegue Windows 8.1 o Windows RT](#windows-rt-running-windows-8-1-or-windows-rt)
+Usare i collegamenti sul lato destro della pagina in "Contenuto di questo articolo" per trovare informazioni sul tipo di dispositivo in uso.
 
 
 ## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
@@ -55,7 +51,7 @@ Inoltre, per Windows 8.1:
 
 -   Dal dispositivo potrebbe non essere più possibile accedere ad alcune risorse della società, quali condivisioni di file o siti Web interni.
 
-## Windows 10 Mobile, Windows Phone 8.1 o Windows Phone 8
+## Windows 10 Mobile e Windows Phone 8.1
 
 -   L'app Portale aziendale viene disinstallata dal dispositivo, il che significa che il dispositivo non sarà più visualizzato nel Portale aziendale e non sarà possibile installare le app dall'app Portale aziendale o dal sito Web del Portale aziendale.
 
@@ -66,7 +62,7 @@ Inoltre, per Windows 8.1:
     > [!IMPORTANT]
     > L'unica eccezione sono i criteri di crittografia che saranno ancora validi. Se i criteri aziendali richiedevano la crittografia del dispositivo Windows Phone, l'unico modo per decrittografare il dispositivo è di reimpostare il telefono usando il menu **Impostazioni** del dispositivo Windows Phone.
 
-## Windows RT che esegue Windows 8.1 o Windows RT
+## Windows RT che esegue Windows 8.1
 
 -   L'app Portale aziendale viene disinstallata dal dispositivo, il che significa che il dispositivo non sarà più visualizzato nel Portale aziendale e non sarà possibile installare le app dal Portale aziendale.
 
@@ -93,6 +89,6 @@ Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -1,10 +1,11 @@
 ---
-title: Limitare l'accesso a Skype for Business Online | Microsoft Intune
-description: Proteggere e controllare l'accesso a Skype for Business Online con accesso condizionale.
+title: Limitare l&quot;accesso a Skype for Business Online | Microsoft Intune
+description: Proteggere e controllare l&quot;accesso a Skype for Business Online con accesso condizionale.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -32,7 +33,7 @@ Quando un utente di destinazione tenta di usare Skype for Business Online sul pr
 
 **Prima** di configurare i criteri di accesso condizionale per Skype for Business Online è necessario:
 - Avere una **sottoscrizione di Skype for Business Online** e assegnare la licenza di Skype for Business agli utenti.
-- Avere una **sottoscrizione di Enterprise Mobility + Security o una sottoscrizione di Azure Active Directory Premium** e gli utenti devono essere licenziatari di EMS o Azure AD. Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
+- Avere una **sottoscrizione di Enterprise Mobility + Security o una sottoscrizione di Azure Active Directory Premium** e gli utenti devono essere licenziatari di EMS o Azure AD. Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -   [Abilitare l'autenticazione moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) per Skype for Business Online.
 -  Tutti gli utenti finali devono usare **Skype for Business Online**. Se si ha una distribuzione con Skype for Business Online e Skype for Business locale, i criteri di accesso condizionale non verranno applicati agli utenti finali.

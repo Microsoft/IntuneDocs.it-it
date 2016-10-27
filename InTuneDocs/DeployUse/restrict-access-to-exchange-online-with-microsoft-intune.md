@@ -1,8 +1,9 @@
 ---
-title: Limitare l'accesso alla posta elettronica a Exchange Online | Microsoft Intune
-description: Proteggere e controllare l'accesso alla posta elettronica aziendale in Exchange Online con accesso condizionale.
+title: Limitare l&quot;accesso alla posta elettronica a Exchange Online | Microsoft Intune
+description: Proteggere e controllare l&quot;accesso alla posta elettronica aziendale in Exchange Online con accesso condizionale.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 ---
@@ -64,7 +65,7 @@ L'immagine seguente illustra il flusso usato dai criteri di accesso condizionale
 ## Supporto per dispositivi mobili
 È possibile limitare l'accesso per la posta elettronica a Exchange Online da **Outlook** e altre **app che usano l'autenticazione moderna**:
 
-- Android 4.0 e versioni successive, Samsung Knox Standard 4.0 e versioni successive
+- Android 4.0 e versioni successive, Samsung Knox Standard 4.0 e versioni successive e Android for Work
 - iOS 8.0 e versioni successive
 - Windows Phone 8.1 e versioni successive
 
@@ -225,6 +226,9 @@ Solo i gruppi che sono considerati come destinazione dei criteri di accesso cond
 
 5.  In **App Exchange ActiveSync** è possibile scegliere di bloccare i dispositivi non conformi dall'accesso a Exchange Online. È anche possibile scegliere se consentire o bloccare l'accesso alla posta elettronica quando il dispositivo non esegue una piattaforma supportata. Le piattaforme supportate includono Android, iOS, Windows e Windows Phone.
 
+ App Exchange Active Sync **dispositivi Android for Work**:
+ -  Nei dispositivi Android for Work sono supportate solo le app **Gmail**e **Nine Work** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni nei dispositivi Android for Work, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work. È anche necessario distribuire tale profilo come installazione **obbligatoria**. 
+
 6.  In **Gruppi di destinazione**selezionare i gruppi di sicurezza di Active Directory degli utenti ai quali applicare i criteri. È possibile scegliere come destinazione tutti gli utenti o un elenco di gruppi di utenti selezionato.
 ![Schermata della pagina dei criteri di accesso condizionale di Exchange Online che illustra le opzioni dei gruppi di destinazione e di esenzione](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
@@ -263,6 +267,6 @@ Nel dashboard di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sceglier
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

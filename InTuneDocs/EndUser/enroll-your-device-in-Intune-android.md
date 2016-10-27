@@ -2,7 +2,8 @@
 title: Registrare il dispositivo Android in Intune | Microsoft Intune
 description: Descrive come registrare un dispositivo Android in Intune
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 47f9654af126d0e83890f797c321100f40ae497b
-ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
 
 
 ---
@@ -22,11 +23,11 @@ ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
 
 # Registrare il dispositivo Android in Intune
 
-Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile registrare il dispositivo Android per poter accedere a posta elettronica, file e altre risorse aziendali. La registrazione dei dispositivi consente al reparto IT di gestire e proteggere le risorse di aziende o istituti di istruzione, offrendo al tempo stesso la possibilità di scegliere il dispositivo più adatto per svolgere il proprio lavoro. Per altre informazioni sulla registrazione, vedere [What happens when I install and Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) (Che cosa succede quando si installa l'app Portale aziendale e si registra il dispositivo?).
+Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile registrare il dispositivo Android per poter accedere a posta elettronica, file e altre risorse aziendali. La registrazione dei dispositivi consente al reparto IT di gestire e proteggere le risorse aziendali o dell'istituto di istruzione, offrendo al tempo stesso la possibilità di scegliere il dispositivo più adatto per svolgere il proprio lavoro. Per altre informazioni sulla registrazione, vedere [What happens when I install and Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) (Che cosa succede quando si installa l'app Portale aziendale e si registra il dispositivo?).
 
-Queste istruzioni sono valide per la registrazione di dispositivi Android Samsung Knox e Android nativi, esclusi i dispositivi Samsung Knox. Per sapere se il dispositivo è di tipo Samsung Knox, andare in **Impostazioni** &gt; **Informazioni sul dispositivo**. Se non viene visualizzata la versione Knox, significa che il dispositivo è un dispositivo Android nativo.
+Queste istruzioni sono valide per la registrazione di dispositivi Android Samsung Knox e Android nativi, esclusi i dispositivi Samsung Knox. Per sapere se il dispositivo è di tipo Samsung Knox, andare in **Impostazioni** &gt; **Info dispositivo**. Se non viene visualizzata la versione Knox, significa che il dispositivo è un dispositivo Android nativo.
 
-Prima o dopo la registrazione potrebbe essere necessario scegliere la categoria che descrive meglio come viene usato il dispositivo. L'amministratore IT usa questa categoria per determinare a quali app ha accesso l'utente.
+Prima o dopo la registrazione potrebbe essere necessario scegliere la categoria che descrive meglio come viene usato il dispositivo. Questa categoria consente all'amministratore IT di controllare le app a cui è possibile accedere.
 
 Se si verifica un errore durante la registrazione del dispositivo in Intune, è possibile [inviare gli errori di registrazione all'amministratore IT](send-enrollment-errors-to-your-it-administrator-android.md).
 
@@ -44,7 +45,7 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  Accedere all'app Portale aziendale usando l'account e la password aziendale o dell'istituto di istruzione e quindi toccare **Accedi**.
+5.  Accedere all'app Portale aziendale usando l'account e la password aziendali o dell'istituto di istruzione e toccare **Accedi**.
 
     ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
@@ -56,7 +57,7 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
     ![Schermata Perché registrare il dispositivo?](./media/and-enroll-4b-why-enroll.png)
 
-8.  Esaminare l'elenco dei dati che l'amministratore IT può o meno visualizzare e quindi toccare **CONTINUA**.
+8.  Rivedere cosa può e non può visualizzare l'amministratore IT nel dispositivo e toccare **CONTINUA**.
 
     ![Impostazioni di privacy](./media/and-enroll-4c-we-care-privacy.png)
 
@@ -69,19 +70,19 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
     Se l'amministratore IT ha configurato determinati criteri, saranno visualizzati i messaggi seguenti:
     -   **Consentire a Portale aziendale di effettuare e gestire chiamate telefoniche?**
 
-    ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
+        ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    Se viene visualizzato questo messaggio, toccare **CONSENTI**. È consigliabile scegliere questa opzione perché **Microsoft non effettua né gestisce mai le chiamate telefoniche**. Il testo del messaggio è controllato da Google, quindi Microsoft non può modificarlo. Quando si consente l'accesso, si consente in effetti al dispositivo di inviare il numero IMEI del dispositivo a Intune. Il codice IMEI è un numero, simile a un numero di serie, che identifica in modo univoco un dispositivo mobile.
+    Se viene visualizzato questo messaggio, toccare **CONSENTI**. È consigliabile scegliere questa opzione perché **Microsoft non effettua né gestisce le chiamate telefoniche**. Il testo del messaggio è controllato da Google, quindi Microsoft non può modificarlo. Quando si consente l'accesso, il dispositivo può inviare il codice IMEI (International Mobile Station Equipment Identity) a Intune. Il codice IMEI è un numero, simile a un numero di serie, che identifica in modo univoco un dispositivo mobile.
 
-    Se si nega l'accesso, il messaggio viene visualizzato di nuovo all'accesso successivo al portale aziendale, ma è possibile disattivare la ricezione di altri messaggi toccando la casella di controllo **Non visualizzare più questo messaggio**.  Se si decide successivamente di consentire l'accesso, andare a **Impostazioni** &gt; **App** &gt; **Portale aziendale** &gt; **Autorizzazioni** &gt; **Telefono**, quindi attivare l'autorizzazione.
+    Se si nega l'accesso, il messaggio sarà di nuovo visualizzato quando si accederà di nuovo al Portale aziendale. È tuttavia possibile disattivare la visualizzazione futura dei messaggi selezionando la casella **Non visualizzare più questo messaggio**. Se si decide successivamente di consentire l'accesso, andare a **Impostazioni** &gt; **App** &gt; **Portale aziendale** &gt; **Autorizzazioni** &gt; **Telefono**, quindi attivare l'autorizzazione.
 
     -   **Allow Company Portal to access your contacts? (Consenti al Portale aziendale l'accesso ai contatti?)**
 
-    ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
+        ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
     Se viene visualizzato questo messaggio, toccare **CONSENTI**. È consigliabile scegliere questa opzione perché **Microsoft non può mai accedere ai contatti**. Il testo del messaggio è controllato da Google, quindi Microsoft non può modificarlo. Quando si concede l'accesso, si consente solo all'app Portale aziendale di creare, usare e gestire il proprio account aziendale.
 
-    Se si nega l'accesso, il messaggio viene visualizzato di nuovo all'accesso successivo al portale aziendale, ma è possibile disattivare la ricezione di altri messaggi toccando la casella di controllo **Non visualizzare più questo messaggio**.  Se si decide successivamente di consentire l'accesso, andare a **Impostazioni** &gt; **App** &gt; **Portale aziendale** &gt; **Autorizzazioni** &gt; **Telefono**, quindi attivare l'autorizzazione.
+    Se si nega l'accesso, il messaggio sarà di nuovo visualizzato quando si accederà di nuovo al Portale aziendale. È tuttavia possibile disattivare la visualizzazione futura dei messaggi selezionando la casella **Non visualizzare più questo messaggio**. Se si decide successivamente di consentire l'accesso, andare a **Impostazioni** &gt; **App** &gt; **Portale aziendale** &gt; **Autorizzazioni** &gt; **Telefono**, quindi attivare l'autorizzazione.
 
 11.  Nella schermata relativa all'**attivazione dell'amministratore del dispositivo** toccare **Attiva**.
 
@@ -99,7 +100,7 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
     ![Schermata di registrazione in corso del dispositivo](./media/and-enroll-8-device-enrolling.png)
 
-14. Quando viene visualizzata la schermata **Configurazione dell'accesso aziendale** toccare **CONTINUA**. Se viene visualizzato un messaggio che indica che il dispositivo non è conforme, seguire le istruzioni per risolvere il problema e quindi toccare **CONTINUA**.
+14. Quando viene visualizzata la schermata **Configurazione dell'accesso aziendale** toccare **CONTINUA**. Se viene visualizzato un messaggio che indica che il dispositivo non è conforme, seguire le istruzioni per risolvere il problema e toccare **CONTINUA**.
 
     ![Schermata di configurazione dell'accesso aziendale](./media/and-enroll-9-comp-access-setup.png)  
 
@@ -107,15 +108,12 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
     ![Schermata di configurazione dell'accesso aziendale completata](./media/and-enroll-10-comp-access-setup-complete.png)
 
-Prima di installare app aziendali, andare in **Impostazioni** &gt; **Sicurezza** e attivare **Origini sconosciute**. Se non si attiva questa opzione prima di installare le app, viene visualizzato un messaggio che indica che l'installazione è bloccata per motivi di sicurezza che impediscono di installare nel dispositivo app ottenute da origini sconosciute. È possibile toccare **Impostazioni** nella finestra di dialogo di errore per visualizzare l'opzione **Origini sconosciute**.
+Prima di installare app aziendali, andare in **Impostazioni**&gt;**Sicurezza** e attivare **Origini sconosciute**. Se non si attiva questa opzione prima di installare le app, viene visualizzato un messaggio che indica che l'installazione è bloccata. per motivi di sicurezza che impediscono di installare nel dispositivo app ottenute da origini sconosciute. È possibile toccare **Impostazioni** nella finestra di dialogo di errore per visualizzare l'opzione **Origini sconosciute**.
 
-Serve ancora assistenza? Contattare l'amministratore IT (per le informazioni di contatto, controllare il [sito Web del portale aziendale](http://portal.manage.microsoft.com)) o scrivere al team Microsoft Android all'indirizzo wintunedroidfbk@microsoft.com.
-
-
+Serve ancora assistenza? Contattare l'amministratore IT (accedere al [sito Web del portale aziendale](http://portal.manage.microsoft.com) per informazioni sui contatti) oppure scrivere al team Microsoft Android all'indirizzo wintunedroidfbk@microsoft.com.
 
 
 
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

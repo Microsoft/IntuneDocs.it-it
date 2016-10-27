@@ -1,8 +1,9 @@
 ---
 title: Controllare le impostazioni di Windows Hello for Business nei dispositivi | Microsoft Intune
-description: Informazioni sull'integrazione tra Intune e Windows Hello for Business, un metodo di accesso alternativo che usa Active Directory o un account Azure Active Directory per sostituire una password, una smart card o una smart card virtuale.
+description: Informazioni sull&quot;integrazione tra Intune e Windows Hello for Business, un metodo di accesso alternativo che usa Active Directory o un account Azure Active Directory per sostituire una password, una smart card o una smart card virtuale.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/20/2016
 ms.topic: article

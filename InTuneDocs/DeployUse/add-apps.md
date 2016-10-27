@@ -3,6 +3,7 @@ title: Aggiungere app | Microsoft Intune
 description: "Prima di iniziare la distribuzione di app con Intune, prendersi il tempo necessario per acquisire familiarità con i concetti introdotti in questo argomento."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

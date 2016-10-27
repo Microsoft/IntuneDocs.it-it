@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 82a6a97dec78ad6e12fa5f8ccecae90a5bcc1e53
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 1b9401a01a8621ebc03102757b0c839702e48f06
 
 
 ---
@@ -26,7 +26,7 @@ L'amministratore IT può impostare più di un requisito per la password. Ad esem
 
 In caso di problemi per l'impostazione di una password che soddisfi tutti i requisiti, contattare l'amministratore IT per assistenza.
 
-## Per modificare la password in un dispositivo Windows Phone 8 o 8.1:
+## Per modificare la password in un dispositivo Windows Phone 8.1:
 
 1. Dalla schermata **home**, toccare **Impostazioni**, quindi selezionare **Schermata di blocco**.
 2. Scorrere verso il basso fino a **Password**, toccare **cambia la password**.
@@ -34,7 +34,7 @@ In caso di problemi per l'impostazione di una password che soddisfi tutti i requ
 4. Immettere la nuova password nel campo **Nuova password**, quindi digitarla nuovamente nel campo **Conferma la password**.
 4. Toccare **Fatto**.
 
-## Per impostare la password in un dispositivo Windows Phone 8 o 8.1:
+## Per impostare la password in un dispositivo Windows Phone 8.1:
 
 1. Dalla schermata **home**, toccare **Impostazioni**, quindi selezionare **Schermata di blocco**.
 2. Scorrere verso il basso fino a **Password** e far scorrere la barra **Password** fino a **Sì**.
@@ -47,6 +47,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

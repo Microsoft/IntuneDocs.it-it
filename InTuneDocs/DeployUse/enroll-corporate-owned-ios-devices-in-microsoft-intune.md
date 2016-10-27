@@ -1,8 +1,9 @@
 ---
-title: "Registrare i dispositivi iOS di proprietà dell'azienda | Microsoft Intune"
-description: "Registrazione di dispositivi iOS di proprietà dell'azienda usando il programma di registrazione dispositivi di Apple o Apple Configurator"
+title: "Registrare i dispositivi iOS di proprietà dell&quot;azienda | Microsoft Intune"
+description: "Registrazione di dispositivi iOS di proprietà dell&quot;azienda usando il programma di registrazione dispositivi di Apple o Apple Configurator"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/07/2016
 ms.topic: article

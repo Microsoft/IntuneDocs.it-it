@@ -3,8 +3,9 @@ title: Impostazioni dei criteri MAM per iOS | Microsoft Intune
 description: Questo argomento descrive le impostazioni dei criteri di gestione delle app mobili per i dispositivi iOS.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+ms.sourcegitcommit: 3f6e500ef942e0f0e89ffd9ddb4889384f296e16
+ms.openlocfilehash: 36d21aee42c8a4812b1ed9623be2da3e65442bff
 
 
 ---
@@ -84,6 +85,11 @@ Il termine **App gestite da criteri** viene usato per indicare le app che sono c
   Quando si esegue una cancellazione selettiva per rimuovere dati aziendali, i contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. Attualmente questa opzione è disponibile solo per l'app **Microsoft Outlook**.
 
   **Valore predefinito = Sì**
+  
+- **Disable printing:** (Disabilita stampa) scegliere **Sì** per impedire la stampa dei dati aziendali dalle app associate a criteri MAM.
+
+    **Valore predefinito = Sì**
+
 ##  Impostazioni dei criteri di accesso di iOS
 Il termine **App gestite da criteri** viene usato per indicare le app che sono configurate con criteri MAM.
 - **Richiedi PIN per l'accesso:** scegliere **Sì** per richiedere un PIN per l'uso di app gestite da criteri. All'utente viene richiesto di impostare questo numero alla prima esecuzione dell'app in un contesto aziendale.
@@ -114,6 +120,6 @@ Nei dispositivi iOS è possibile consentire all'utente di identificarsi con l'im
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

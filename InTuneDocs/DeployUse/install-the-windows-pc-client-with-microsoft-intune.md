@@ -3,6 +3,7 @@ title: Installare il software client per PC | Microsoft Intune
 description: Usare questa guida per far gestire i computer Windows dal software client di Microsoft Intune.
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article

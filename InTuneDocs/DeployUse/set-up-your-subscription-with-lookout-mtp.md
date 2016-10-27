@@ -3,6 +3,7 @@ title: Configurare la sottoscrizione con Lookout | Microsoft Intune
 description: Questo argomento include informazioni dettagliate su come configurare la protezione dalle minacce per il dispositivo di Lookout.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c334b96134040fd124c348c6f2a4b2e5c85886a
-ms.openlocfilehash: d56d9b62a7df3a17b38b7ac01881245c079dc6d4
+ms.sourcegitcommit: de65f43ac83b25fa2dd1dacd2a7807668c2b6e9a
+ms.openlocfilehash: fa3230e1faf24bdbbd7e84a211ca95c1fd0fadfd
 
 
 ---
@@ -63,7 +64,7 @@ I passaggi successivi descrivono le attività da eseguire per completare la conf
 
 ### Passaggio 2: Configurare Intune Connector
 
-1.  Nella console di Lookout passare al modulo **System** (Sistema), scegliere la scheda **Connectors** (Connettori) e quindi selezionare **Intune**.
+1.  Nella console di Lookout, nel modulo **System** (Sistema), scegliere la scheda **Connectors** (Connettori) e quindi selezionare **Intune**.
 
   ![screeenshot della console di Lookout con la scheda Connectors (Connettori) aperta e l'opzione Intune evidenziata](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
@@ -77,6 +78,7 @@ Nella sezione **Enrollment Management** (Gestione della registrazione) definire 
 Per iniziare con i gruppi di registrazione, definire innanzitutto un gruppo di sicurezza di Azure AD che rappresenta un primo set di utenti valido da registrare nella protezione dalle minacce per il dispositivo di Lookout. Dopo aver creato il gruppo in Azure AD, nella console di Lookout passare alla sezione **Enrollement Management** (Gestione della registrazione) e aggiungere il valore per **Display Name** (Nome visualizzato) relativo al gruppo di sicurezza di Azure AD per la registrazione.
 
 Quando un utente è in un gruppo di registrazione, tutti i dispositivi di tale utente identificati e supportati in Azure AD vengono registrati e sono idonei per l'attivazione nella protezione dalle minacce per il dispositivo di Lookout.  Alla prima apertura dell'app Lookout for Work nel dispositivo supportato, il dispositivo viene attivato in Lookout.
+
 ![screenshot della pagina di registrazione di Intune Connector](../media/mtp/lookout-mtp-enrollment.png)
 
 La procedura consigliata prevede l'uso dell'incremento predefinito (5 minuti) per verificare la presenza di nuovi dispositivi.
@@ -97,11 +99,16 @@ Nella sezione **Error Management** (Gestione degli errori) immettere l'indirizzo
 
 ![screenshot della pagina di gestione degli errori di Intune Connector](../media/mtp/lookout-mtp-connector-error-notifications.png)
 
-### Passaggio 6: Configurare le notifiche tramite posta elettronica
-Per ricevere avvisi tramite posta elettronica per le minacce, accedere alla [console di Lookout](https://aad.lookout.com) con l'account utente che deve ricevere le notifiche. Nella scheda **Preferences** (Preferenze) del modulo **System** (Sistema) scegliere le notifiche desiderate e impostarle su **ON** (Attivato). Salvare le modifiche.
+### Passaggio 6. Configurare le impostazioni di registrazione
+Nel modulo **System** (Sistema), nella pagina **Connectors** (Connettori), specificare il numero di giorni dopo i quali un dispositivo deve essere considerato disconnesso.  I dispositivi disconnessi sono considerati non conformi. L'accesso alle applicazioni aziendali tramite questi dispositivi in base ai criteri di accesso condizionale di Intune è bloccato. È possibile specificare un valore compreso tra 1 e 90 giorni.
+
+![](../media/mtp/lookout-console-enrollment-settings.png)
+
+### Passaggio 7: Configurare le notifiche tramite posta elettronica
+Per ricevere avvisi relativi alle minacce tramite posta elettronica, accedere alla [console di Lookout](https://aad.lookout.com) con l'account utente che deve ricevere le notifiche. Nella scheda **Preferences** (Preferenze) del modulo **System** (Sistema) scegliere le notifiche desiderate e impostarle su **ON** (Attivato). Salvare le modifiche.
 
 ![screenshot della pagina delle preferenze con l'account utente visualizzato](../media/mtp/lookout-mtp-email-notifications.png) Se non si vogliono più ricevere notifiche tramite posta elettronica, impostare le notifiche su **OFF** (Disattivato) e salvare le modifiche.
-### Passaggio 7: Configurare la classificazione delle minacce
+### Passaggio 8: Configurare la classificazione delle minacce
 La protezione dalle minacce per il dispositivo di Lookout usa vari tipi di classificazione per le minacce per i dispositivi mobili. Alle [classificazioni delle minacce di Lookout](http://personal.support.lookout.com/hc/en-us/articles/114094130693) sono associati livelli di rischio predefiniti. che possono essere modificati in qualsiasi momento per adattarli ai requisiti aziendali.
 
 ![screenshot della pagina dei criteri con minacce e classificazioni](../media/mtp/lookout-mtp-threat-classification.png)
@@ -116,6 +123,6 @@ Dopo aver completato la configurazione, la protezione dalle minacce per il dispo
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

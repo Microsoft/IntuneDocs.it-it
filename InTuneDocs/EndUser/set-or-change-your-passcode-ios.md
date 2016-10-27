@@ -1,8 +1,9 @@
 ---
 title: Impostare o modificare il passcode | Microsoft Intune
-description: 
+description: Impostare o modificare il passcode
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -12,8 +13,8 @@ ms.technology:
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: cb508a92db99533502914f1b5dba69b956838d1e
+ms.sourcegitcommit: 596534a5ca50d274472451014db4404b4a5bf2d5
+ms.openlocfilehash: 7273fb674123647e977a25bf9745aa05de7286e7
 
 
 ---
@@ -22,20 +23,20 @@ ms.openlocfilehash: cb508a92db99533502914f1b5dba69b956838d1e
 
 Se il dispositivo iOS non è conforme ai criteri di passcode dell'amministratore IT, viene visualizzato un messaggio che descrive brevemente il problema e vengono illustrate le procedure necessarie per far sì che il passcode soddisfi i requisiti.
 
-L'amministratore IT può impostare più di un requisito per il passcode. Ad esempio, può essere necessario che il passcode contenga un certo numero di caratteri, un insieme di numeri e lettere e così via. Poiché potrebbe essere impostato più di un requisito, queste istruzioni possono illustrare solo come impostare o modificare il passcode. Non viene illustrata ogni possibile combinazione di requisiti.
+L'amministratore IT può impostare più requisiti per il passcode. Ad esempio, può essere necessario che il passcode contenga un certo numero di caratteri, un insieme di numeri, lettere e caratteri, e così via. Poiché potrebbero essere impostati più requisiti, queste istruzioni possono illustrare solo come impostare o modificare il passcode. Non viene illustrata ogni possibile combinazione di requisiti.
 
-In caso di problemi per l'impostazione di un passcode che soddisfi tutti i requisiti, contattare l'amministratore IT per assistenza.
+In caso di problemi per l'impostazione di un passcode che soddisfi i requisiti, contattare l'amministratore IT.
 
-## Per impostare il passcode:
+## Impostare il passcode##
 
 1. Toccare **Impostazioni** > **ID tocco e Passcode**.
-2. Nel menu **ID tocco e Passcode** toccare **Attiva passcode**.
+2. Nel menu **Touch ID e codice** toccare **Attiva codice**.
 3. Immettere un nuovo passcode che soddisfi i requisiti dell'amministratore IT, quindi immetterlo nuovamente per la verifica.
 
-## Per modificare il passcode:
+## Modificare il passcode##
 
 1. Toccare **Impostazioni** > **ID tocco e Passcode**.
-2. Immettere il passcode. Viene visualizzato il menu ID tocco e Passcode.
+2. Immettere il passcode. Si apre il menu **Touch ID e codice**.
 2. Toccare **Cambia passcode** e immettere la password precedente.
 3. Immettere un nuovo passcode che soddisfi i requisiti dell'amministratore IT, quindi immetterlo nuovamente per la verifica.
 
@@ -43,7 +44,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

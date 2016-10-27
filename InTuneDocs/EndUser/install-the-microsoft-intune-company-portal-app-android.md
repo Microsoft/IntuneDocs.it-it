@@ -1,8 +1,9 @@
 ---
-title: Installare l'app Portale aziendale di Microsoft Intune | Microsoft Intune
+title: Installare l&quot;app Portale aziendale di Microsoft Intune | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

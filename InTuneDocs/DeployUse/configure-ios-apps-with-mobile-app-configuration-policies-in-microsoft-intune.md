@@ -1,8 +1,9 @@
 ---
 title: Usare i criteri di configurazione delle app mobili iOS | Microsoft Intune
-description: Usare i criteri di configurazione delle app mobili in Intune per specificare le impostazioni che possono essere richieste quando gli utenti eseguono un'app iOS.
+description: Usare i criteri di configurazione delle app mobili in Intune per specificare le impostazioni che possono essere richieste quando gli utenti eseguono un&quot;app iOS.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

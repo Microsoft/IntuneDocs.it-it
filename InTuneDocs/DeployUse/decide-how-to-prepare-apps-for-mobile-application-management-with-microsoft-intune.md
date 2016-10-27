@@ -1,8 +1,9 @@
 ---
 title: Preparare le app per la gestione di applicazioni mobili | Microsoft Intune
-description: "Le informazioni contenute in questo argomento consentono di stabilire quando è necessario usare lo strumento per la disposizione testo per app e l'SDK dell'app per abilitare le app line-of-business personalizzate per l'uso dei criteri di gestione delle app mobili."
+description: "Le informazioni contenute in questo argomento consentono di stabilire quando è necessario usare lo strumento per la disposizione testo per app e l&quot;SDK dell&quot;app per abilitare le app line-of-business personalizzate per l&quot;uso dei criteri di gestione delle app mobili."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
