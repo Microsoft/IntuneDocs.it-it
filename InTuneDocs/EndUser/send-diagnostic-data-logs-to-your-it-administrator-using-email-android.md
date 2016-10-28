@@ -2,8 +2,8 @@
 title: Inviare i registri dei dati di diagnostica all&quot;amministratore IT tramite posta elettronica | Microsoft Intune
 description: Inviare i registri di dati tramite posta elettronica in un dispositivo Android
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 ---
 
 
-# Inviare i log dei dati di diagnostica all'amministratore IT tramite posta elettronica
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-email"></a>Inviare i log dei dati di diagnostica all'amministratore IT tramite posta elettronica
 
 Se si verifica un errore nel dispositivo Android mentre si usano le app aziendali o dell'istituto di istruzione o quando è attiva l'app Portale aziendale, è possibile inviare i registri dei dati di diagnostica per aiutare l'amministratore IT a diagnosticare l'errore. Per includere tutti i dettagli nei registri, in modo che sia più semplice per l'amministratore IT individuare il problema, attivare la registrazione dettagliata. Per altre informazioni sulla registrazione dettagliata, vedere [Usare la registrazione dettagliata per aiutare l'amministratore IT a risolvere i problemi dei dispositivi](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
