@@ -2,8 +2,8 @@
 title: Registrazione diretta per i dispositivi iOS | Microsoft Intune
 description: "Usare lo strumento Apple Configurator per registrare direttamente i dispositivi iOS di proprietà dell&quot;azienda con un criterio predefinito mediante connessione USB a un computer Mac."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article
@@ -20,7 +20,7 @@ ms.openlocfilehash: 9526ac2eb902198597ba811c5d957d69e1b991c6
 
 ---
 
-# Registrare direttamente i dispositivi iOS con Apple Configurator
+# <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>Registrare direttamente i dispositivi iOS con Apple Configurator
 Intune supporta la registrazione di dispositivi iOS di proprietà dell'azienda con lo strumento [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) in esecuzione in un computer Mac. Questo processo non ripristina le impostazioni predefinite del dispositivo e lo registra con un criterio predefinito. Questo metodo è destinato ai dispositivi con **nessuna affinità utente** e richiede la connessione USB del dispositivo iOS a un computer Mac per configurare la registrazione aziendale.
 
 Durante la registrazione diretta dei dispositivi iOS, è possibile registrare un dispositivo senza acquisire il numero di serie del dispositivo. È anche possibile denominare il dispositivo per scopi di identificazione prima che Intune acquisisca il nome del dispositivo durante la registrazione. L'app Portale aziendale non è supportata per i dispositivi con registrazione diretta. In queste istruzioni si presuppone l'uso di Apple Configurator 2.0 in un computer Mac.
