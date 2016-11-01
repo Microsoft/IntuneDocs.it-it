@@ -1,10 +1,11 @@
 ---
-title: Viene richiesta l'attivazione della ricerca di minacce per la sicurezza nel dispositivo | Microsoft Intune
+title: Viene richiesta l&quot;attivazione della ricerca di minacce per la sicurezza nel dispositivo | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,13 +13,13 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: fca4172091a74e5c2bdb09f273f6319c12d907ab
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: ad02abb58a5cf2ec1a131e3abda474da46b81f02
 
 
 ---
 
-# Viene richiesta l'attivazione della ricerca di minacce per la sicurezza nel dispositivo
+# <a name="you-are-asked-to-turn-on-scan-device-for-security-threats"></a>Viene richiesta l'attivazione della ricerca di minacce per la sicurezza nel dispositivo
 
  Se un messaggio richiede di eseguire un'analisi del dispositivo per verificare la presenza di minacce per la sicurezza, è necessario passare a **Impostazioni** > **Google** > **Sicurezza** e quindi attivare **Cerca minacce per la sicurezza nel dispositivo**.
 
@@ -28,8 +29,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

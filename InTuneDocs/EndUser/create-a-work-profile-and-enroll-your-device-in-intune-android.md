@@ -2,7 +2,8 @@
 title: Creare un profilo di lavoro e registrare il dispositivo in Intune | Microsoft Intune
 description: Descrive come crittografare un dispositivo Android
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29eb7c7fb17eb640eefb0cb4a58834d5e3d77591
-ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
 
 ---
 
 
-# Creare un profilo di lavoro e registrare il dispositivo in Intune
+# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Create a work profile and enroll your device in Intune (Creare un profilo di lavoro e registrare il dispositivo in Intune)
 
-Un profilo di lavoro viene impostato sul dispositivo per consentire l'accesso alla posta aziendale o dell'istituto di istruzione, ad app e file. Sono disponibili anche i dettagli su [ciò che la creazione di un profilo di lavoro comporta](what-happens-when-you-create-a-work-profile-android.md).
+La registrazione del dispositivo Android consente di accedere a posta elettronica, app e dati aziendali. Come parte della registrazione, è possibile impostare un profilo di lavoro, che separa i dati personali che si trovano sul dispositivo dai dati aziendali. L'amministratore IT può gestire solo il profilo aziendale, che contiene i dati di lavoro. L'amministratore IT non può gestire i dati personali sul dispositivo. Altri dettagli sono disponibili in [Cosa accade quando si crea un profilo di lavoro](what-happens-when-you-create-a-work-profile-android.md).
 
 Per creare un profilo di lavoro:
 
@@ -56,11 +57,11 @@ Per creare un profilo di lavoro:
 
     Verranno visualizzati alcuni messaggi riguardanti la configurazione del profilo di lavoro e la registrazione del dispositivo.
 
-8. Nella schermata **Operazione quasi completata** toccare l'icona dell'app Portale aziendale con badge.
+8. Nella schermata **Operazione quasi completata** attendere alcuni secondi finché non viene aperta l'app Portale aziendale.
 
     ![Toccare l'app Portale aziendale con badge](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
-9. Nella **schermata iniziale** del Portale aziendale Android toccare **Accedi** e accedere con l'account aziendale o dell'istituto di istruzione.
+9. Nella **schermata iniziale** del Portale aziendale per Android toccare **Accedi** e accedere con lo stesso account aziendale o dell'istituto di istruzione usato per accedere precedentemente in questo processo.
 
 10. Nella schermata **Configurazione dell'accesso aziendale** è possibile notare che il profilo di lavoro è stato configurato. A questo punto toccare **CONTINUA**.
 
@@ -72,11 +73,11 @@ Per creare un profilo di lavoro:
 
     ![In Configurazione dell'accesso aziendale è possibile notare che il profilo di lavoro e la registrazione sono completi](./media/andr-afw-company-access-setup-green-checks.png)
 
-12. Nella schermata **Configurazione dell'accesso aziendale completato** toccare **FINE**.
+12. Nella schermata **Configurazione dell'accesso aziendale completato** toccare **FINE**. Potrebbe essere necessario completare altri passaggi se l'amministratore IT ha aggiunto altri requisiti.
 
     ![Configurazione dell'accesso aziendale completato](./media/andr-afw-company-access-setup-complete.png)
 
-    Accedere a Play Store for Work per ottenere le app aziendali.
+    È possibile ora ottenere app aziendali da Play Store for work.
 
     ![Pagina delle app in Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 

@@ -1,5 +1,5 @@
 ---
-title: "È necessario risolvere una minaccia rilevata da Lookout for Work nel dispositivo Android | Microsoft Intune"
+title: "È necessario risolvere una minaccia rilevata da Lookout for Work nel dispositivo iOS | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
@@ -10,20 +10,20 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
+ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
 ms.sourcegitcommit: c5b1be5043b5e0ad2774d9214a3e09ccd8d9d991
-ms.openlocfilehash: aae9d4666ab356bb6d3c5e929d311c53ea065485
+ms.openlocfilehash: 88b6a7107efb04accac4e7028e04a5505d8c865b
 
 
 ---
 
 # <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>È necessario risolvere una minaccia trovata da Lookout for Work
 
-Lookout for Work ha rilevato una potenziale minaccia nel dispositivo ed è necessario risolvere il problema per riottenere accesso alla posta elettronica, alle app e ai file aziendali o dell'istituto di istruzione. Il messaggio visualizzato potrebbe essere simile al seguente:
+Lookout for Work ha rilevato una potenziale minaccia nel dispositivo ed è necessario risolvere il problema per riottenere accesso alla posta elettronica, alle app e ai file aziendali o dell'istituto di istruzione. Il messaggio visualizzato potrebbe essere simile al seguente: 
 
-![Lookout for Work ha rilevato una minaccia nel dispositivo](./media/lookout-threat-found-android.png)
+![Messaggio di non conformità da Lookout for Work](./media/ios-lfw-noncompliant-in-ssp.png)
 
 Per risolvere il problema, aprire l'app Lookout for Work e seguire le istruzioni visualizzate nell'app.
 
@@ -39,9 +39,11 @@ Toccare il collegamento **portale di gestione dei dispositivi** per passare al [
 
 Se è stata installata un'app che Lookout for Work considera una minaccia, verrà visualizzata una schermata simile alla seguente:
 
-![Esempio di messaggio di avviso virus di Lookout for Work](./media/lookout-virus-alert-android.png)
+![Esempio di messaggio di avviso virus di Lookout for Work](./media/ios-lfw-threat-example.png)
 
-Dopo aver disinstallato l'app, si riottiene subito accesso alla posta elettronica e ai dati aziendali. Se si ignora la richiesta di disinstallare l'app, si perderà l'accesso alla posta elettronica e ai dati fino a quando l'app non verrà disinstallata.
+In questo caso, toccare il nome dell'applicazione visualizzato nella parte superiore dello schermo e seguire le istruzioni per rimuovere la minaccia.
+
+Dopo aver disinstallato l'app, si ottiene nuovamente l'accesso alla posta elettronica e agli altri dati aziendali o dell'istituto di istruzione sin da subito. Se si ignora la richiesta di disinstallare l'app, si perderà l'accesso alla posta elettronica e ai dati aziendali fino a quando l'app non verrà disinstallata.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
