@@ -3,7 +3,7 @@ title: Viene richiesta la disattivazione delle origini sconosciute | Microsoft I
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article

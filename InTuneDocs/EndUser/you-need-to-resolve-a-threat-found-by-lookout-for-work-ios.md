@@ -3,7 +3,7 @@ title: "È necessario risolvere una minaccia rilevata da Lookout for Work nel di
 description: 
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article

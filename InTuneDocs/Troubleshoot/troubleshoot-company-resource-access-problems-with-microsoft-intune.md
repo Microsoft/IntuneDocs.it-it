@@ -2,8 +2,8 @@
 title: Risolvere i problemi di accesso alle risorse aziendali | Microsoft Intune
 description: Codici di errore e di stato in questo argomento per risolvere i problemi di accesso alle risorse.
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -44,7 +44,7 @@ Se queste informazioni non consentono di risolvere il problema, vedere [Come ott
 |130 (APP_CI_ENFORCEMENT_ERROR)|Installazione della licenza MSADP non riuscita||
 |Nessuno stato (APP_CI_ENFORCEMENT_UNKNOWN)|n/d|Lo stato è attualmente sconosciuto.|
 
-## <a name="company-resource-access-(common-errors)"></a>Accesso alle risorse aziendali (errori comuni)
+## <a name="company-resource-access-common-errors"></a>Accesso alle risorse aziendali (errori comuni)
 
 |Codice di stato|Codice di errore esadecimale|Messaggio di errore|
 |---------------|--------------------------|-----------------|

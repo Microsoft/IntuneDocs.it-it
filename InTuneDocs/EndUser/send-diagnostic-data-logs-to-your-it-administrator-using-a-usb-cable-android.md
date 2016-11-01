@@ -3,7 +3,7 @@ title: Inviare i registri dei dati di diagnostica all&quot;amministratore IT tra
 description: Inviare i registri di dati tramite un cavo USB
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

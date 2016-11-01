@@ -3,7 +3,7 @@ title: Creare un profilo di lavoro e registrare il dispositivo in Intune | Micro
 description: Descrive come crittografare un dispositivo Android
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
