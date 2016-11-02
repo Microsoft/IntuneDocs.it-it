@@ -13,8 +13,8 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba9ba203c9ec173dafd1d6f9e4828d4a8a51e1ef
-ms.openlocfilehash: 136dd127c5e0f1784746b973ebc5594573f07925
+ms.sourcegitcommit: ed1008c786285821c608a8404805c6615c60507f
+ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 
 ---
@@ -31,44 +31,60 @@ Questa guida descrive i passaggi principali necessari per abilitare la gestione 
 
 **Se l'app è interna all'azienda e non viene resa disponibile a un app store pubblico**:
 
-**Non è necessario** registrare l'app. Per le app line-of-business interne, l'amministratore IT distribuirà l'app internamente usando Microsoft Intune. Intune rileverà che l'app è stata creata con l'SDK e consentirà all'amministratore IT di applicare le impostazioni dei criteri di gestione delle applicazioni mobili. È possibile passare alla sezione [Abilitare un'app mobile iOS e Android per MAM con l'SDK](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk).
+**Non è necessario** registrare l'app. Per le app line-of-business interne, l'amministratore IT distribuirà l'app internamente. Intune rileverà che l'app è stata creata con l'SDK e consentirà all'amministratore IT di applicare le impostazioni dei criteri MAM. È possibile passare alla sezione [Abilitare un'app mobile iOS e Android per MAM con l'SDK](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk).
 
 **Se l'applicazione verrà rilasciata a un app store pubblico, ad esempio l'App Store Apple o Google Play**: 
 
-**È necessario** innanzitutto registrare l'app con Microsoft Intune e accettare le condizioni di registrazione. Dopo la registrazione, gli amministratori IT possono applicare le impostazioni dei criteri di gestione delle applicazioni mobili di Intune all'app abilitata, che verrà elencata come partner di app di Intune. Fino alla conclusione della registrazione e all'avvenuta conferma da parte del team di Microsoft Intune, gli amministratori di Intune non potranno applicare i criteri di gestione delle applicazioni mobili al collegamento diretto dell'app. Microsoft aggiungerà l'app anche alla propria [pagina partner di Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners), in cui verrà visualizzata l'icona dell'app per mostrare il supporto dei criteri di gestione delle applicazioni mobili di Microsoft Intune.
+**È necessario** innanzitutto registrare l'app con Microsoft Intune e accettare le condizioni di registrazione. Dopo la registrazione, gli amministratori IT possono applicare le impostazioni dei criteri di gestione delle applicazioni mobili di Intune all'app abilitata, che verrà elencata come partner di app di Intune. Fino alla conclusione della registrazione e all'avvenuta conferma da parte del team di Microsoft Intune, gli amministratori di Intune non potranno applicare i criteri di gestione delle applicazioni mobili al collegamento diretto dell'app. Microsoft aggiungerà l'app anche alla propria [pagina partner di Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps), in cui verrà visualizzata l'icona dell'app per mostrare il supporto dei criteri di gestione delle applicazioni mobili di Microsoft Intune.
 
-Per avviare il processo di registrazione, **esaminare e firmare** il [contratto per i partner di Microsoft Intune](https://connect.microsoft.com/ConfigurationManagervnext/Survey/Survey.aspx?SurveyID=17806). In questo contratto sono indicate le condizioni che la società deve accettare per poter diventare partner di app di Microsoft Intune. Per visualizzare il documento, è necessario eseguire l'accesso. Il contratto è reperibile nel sito Microsoft Connect per Intune App SDK, nella scheda Sondaggi, oppure qui. Verrà anche chiesto di specificare il nome dell'app, il nome della società, nonché il collegamento diretto all'app per l'app store di Google o iTunes.
+Per avviare il processo di registrazione, riempire il **[questionario per partner di app di Microsoft Intune](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)**. 
 
-![Microsoft Connect](../media/microsoft-connect.png)
+Microsoft userà gli indirizzi di posta elettronica specificati nelle risposte al questionario per contattare gli utenti e continuare il processo di registrazione. Lo stesso indirizzo verrà usato anche per contattare l'utente per eventuali chiarimenti.
 
-L'indirizzo di posta elettronica della registrazione verrà usato per confermare la ricezione e completare il processo di registrazione. Lo stesso indirizzo verrà usato anche per contattare l'utente per eventuali chiarimenti.
+> [!NOTE]
+> Tutte le informazioni raccolte nel modulo precedente e nella corrispondenza tramite posta elettronica con il team di Microsoft Intune rispetteranno l'[Informativa sulla privacy Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx).
 
 **Cosa accade durante il processo di registrazione**: 
 
-dopo l'invio del modulo, si verrà contattati da Microsoft all'indirizzo di posta elettronica fornito per la registrazione per confermare la ricezione o per richiedere altre informazioni per completare la registrazione. Si verrà contattati anche al termine della registrazione dell'app in Microsoft Intune e quando l'app è disponibile sul sito dei partner di Microsoft Intune. Una volta confermata la ricezione delle informazioni, il collegamento diretto dell'app verrà incluso nel successivo aggiornamento mensile del servizio Intune. Ad esempio, se le informazioni di registrazione vengono completate nel mese di luglio, il collegamento diretto dell'app sarà supportato a metà agosto. Se in futuro il collegamento diretto all'app store dovesse cambiare, sarà necessario registrare nuovamente l'app. È necessario anche comunicare se l'app viene aggiornata con una nuova versione di Intune App SDK.
+1. dopo l'invio del modulo, si verrà contattati da Microsoft all'indirizzo di posta elettronica specificato nella registrazione per confermare la ricezione o per richiedere altre informazioni necessarie al completamento della registrazione. 
+2. Dopo che il team di Intune ha ricevuto tutte le informazioni necessarie, verrà inviato il contratto per i partner di app di Microsoft Intune da firmare. In questo contratto sono indicate le condizioni che la società deve accettare per poter diventare partner di app di Microsoft Intune. 
+3. Sarà inviata una conferma quando l'app è registrata correttamente con il servizio di Microsoft Intune e quando l'app è disponibile sul sito dei [partner di Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). 
+4. Infine, verrà aggiunto un collegamento diretto dell'app al prossimo aggiornamento mensile dei servizi di Intune. Ad esempio, se le informazioni di registrazione vengono completate nel mese di luglio, il collegamento diretto dell'app sarà supportato a metà agosto. 
 
-**Nota**: tutte le informazioni raccolte nel modulo precedente e nella corrispondenza tramite posta elettronica con il team di Intune rispetteranno l' [Informativa sulla privacy Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx).
+Se il collegamento diretto all'app store dovesse cambiare, sarà necessario registrare di nuovo l'app. È necessario anche comunicare se l'app viene aggiornata con una nuova versione di Intune App SDK.
+
+
 
 ## Scaricare i file SDK
 
-Gli SDK dell'app di Intune per iOS e Android sono ospitati in un account Microsoft GitHub. I repository pubblici riportati di seguito contengono rispettivamente i file SDK per iOS e Android:
+I file di Intune App SDK per iOS e Android nativi sono ospitati in un account Microsoft GitHub. I repository pubblici riportati di seguito contengono rispettivamente i file SDK per iOS e Android:
 
 * [Intune App SDK per iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Intune App SDK per Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
+**Se l'app è basata su Xamarin o Cordova, usare gli strumenti di sviluppo seguenti**:
+
+* [Componente Xamarin per Intune App SDK](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Plug-in Cordova per Intune App SDK](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
+
 Si consiglia di registrarsi per un account GitHub utile per eseguire operazioni di biforcazione ed estrazione dal repository. GitHub consente agli sviluppatori di comunicare con il team del prodotto Microsoft, aprire problemi e ricevere risposte rapide, visualizzare le note sulla versione e fornire commenti e suggerimenti a Microsoft. Per domande relative all'account e ai repository GitHub, contattare msintuneappsdk@microsoft.com.
+
+
+
+
 
 ## Abilitare un'app per dispositivi mobili iOS e Android per MAM con l'SDK
 
-Per integrare Intune App SDK nell'app per iOS, è necessario quanto segue: 
+Per integrare Intune App SDK nell'app nativa per iOS, vedere: 
 
 * **[Manuale dello sviluppatore di Microsoft Intune App SDK per iOS](intune-app-sdk-ios.md)**: questo documento descrive in dettaglio come abilitare l'app per dispositivi mobili iOS con Intune App SDK. 
 
 
-Per integrare Intune App SDK nell'app per Android, è necessario quanto segue:
+Per integrare Intune App SDK nell'app per Android, vedere:
 
 * **[Manuale dello sviluppatore di Microsoft Intune App SDK per Android](intune-app-sdk-android.md)**: questo documento descrive in dettaglio come abilitare l'app per dispositivi mobili Android con Intune App SDK. 
 
+La documentazione per il componente Xamarin di Intune App SDK e il plug-in Cordova per Intune App SDK si trova nei rispettivi repository di GitHub. 
 
 
 ## Configurazione della telemetria per l'app
@@ -96,6 +112,6 @@ Dopo aver completato i passaggi necessari per integrare l'app per iOS o Android 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

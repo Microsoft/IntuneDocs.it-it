@@ -2,8 +2,8 @@
 title: Risolvere i problemi di accesso alle risorse aziendali | Microsoft Intune
 description: Codici di errore e di stato in questo argomento per risolvere i problemi di accesso alle risorse.
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
@@ -20,12 +20,12 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 
 ---
 
-# Risolvere i problemi di accesso alle risorse aziendali con Microsoft Intune
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Risolvere i problemi di accesso alle risorse aziendali con Microsoft Intune
 Usare i codici di errore e stato di questo argomento per risolvere i problemi quando un'azione di Microsoft Intune restituisce un codice di errore.
 
 Se queste informazioni non consentono di risolvere il problema, vedere [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md) per trovare altri modi per ottenere assistenza.
 
-## Codici di stato per dispositivi Windows gestiti da MDM
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>Codici di stato per dispositivi Windows gestiti da MDM
 
 |Codice di stato|Messaggio di errore|Operazioni da eseguire|
 |---------------|-----------------|--------------|
@@ -44,7 +44,7 @@ Se queste informazioni non consentono di risolvere il problema, vedere [Come ott
 |130 (APP_CI_ENFORCEMENT_ERROR)|Installazione della licenza MSADP non riuscita||
 |Nessuno stato (APP_CI_ENFORCEMENT_UNKNOWN)|n/d|Lo stato è attualmente sconosciuto.|
 
-## Accesso alle risorse aziendali (errori comuni)
+## <a name="company-resource-access-common-errors"></a>Accesso alle risorse aziendali (errori comuni)
 
 |Codice di stato|Codice di errore esadecimale|Messaggio di errore|
 |---------------|--------------------------|-----------------|
@@ -73,7 +73,7 @@ Se queste informazioni non consentono di risolvere il problema, vedere [Come ott
 |-2016341111|0x87D11389|Il dispositivo iOS ha restituito uno stato Inattivo imprevisto|
 |-2016341112|0x87D11388|Il dispositivo iOS è attualmente occupato|
 
-## Errori restituiti da dispositivi iOS
+## <a name="errors-returned-by-ios-devices"></a>Errori restituiti da dispositivi iOS
 
 |Codice di stato|Codice di errore esadecimale|Messaggio di errore|
 |---------------|--------------------------|-----------------|
@@ -283,7 +283,7 @@ Se queste informazioni non consentono di risolvere il problema, vedere [Come ott
 |-2016335111|0x87D12AF9|1001: Versione profilo non supportata|
 |-2016335112|0x87D12AF8|1000: Formato profilo non valido|
 
-## Codici di risposta OMA
+## <a name="oma-response-codes"></a>Codici di risposta OMA
 
 |Codice di stato|Codice di errore esadecimale|Messaggio di errore|
 |---------------|--------------------------|-----------------|
@@ -368,7 +368,7 @@ Se queste informazioni non consentono di risolvere il problema, vedere [Come ott
 |-2016345912|0x87D100C8|Il comando SyncML è stato completato correttamente.|
 |-2016346011|0x87D10065|Il comando specificato SyncML è in fase di esecuzione ma non è stato ancora completato.|
 
-### Passaggi successivi
+### <a name="next-steps"></a>Passaggi successivi
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
