@@ -3,8 +3,9 @@ title: Configurare i profili certificato | Microsoft Intune
 description: Informazioni su come creare un profilo certificato di Intune.
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 3f657e6a49fb83faddf9c139985369f27656b4bd
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 
 ---
@@ -63,6 +64,11 @@ Il certificato viene importato quando si configura un profilo certificato attend
 4.  Scegliere **Salva criterio**.
 
 Il nuovo criterio verrà visualizzato nell'area di lavoro **Criteri**. È ora possibile distribuirlo.
+
+> [!NOTE]
+>
+> I dispositivi Android e Android for Work visualizzano un avviso che indica che altri produttori hanno installato un certificato attendibile.
+    
 
 ## **Attività 3**: creare profili certificato SCEP o PFX
 Dopo aver creato un profilo certificato CA attendibile, creare i profili certificato SCEP o PFX per ogni piattaforma che si vuole usare. Quando si crea un profilo certificato SCEP, è necessario specificare un profilo certificato attendibile per la stessa piattaforma. In questo modo, i due profili certificato risultano collegati, anche se è ancora necessario distribuirli separatamente.

@@ -3,6 +3,7 @@ title: Creare e distribuire criteri MAM | Microsoft Intune
 description: Usare le istruzioni dettagliate in questo argomento per creare e distribuire i criteri di gestione delle app mobili.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
-ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e5befdd4925f88d41c454d9c1c36eaf02fdb598d
 
 
 ---
@@ -111,8 +112,9 @@ Solo gli utenti a cui sono state assegnate licenze di [!INCLUDE[wit_nextref](../
 >[!IMPORTANT]
 > Se si usa Intune con Configuration Manager per gestire i dispositivi Android e iOS, il criterio viene applicato solo agli utenti inclusi direttamente nel gruppo selezionato.  I membri dei gruppi figlio annidati all'interno del gruppo selezionato non saranno interessati.
 
-Gli utenti finali possono scaricare le app dall'Apple Store o da Google Play. Per una procedura dettagliata che visualizza come MAM protegge i dati aziendali sul dispositivo, vedere [Esperienza utente finale con app nelle quali è abilitato MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md).
-
+Gli utenti finali possono scaricare le app dall'Apple Store o da Google Play. Per altre informazioni, vedere:
+* [Aspettative dalla gestione dell'app per Android con criteri MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Aspettative dalla gestione dell'app per iOS con criteri MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 ##  Modificare i criteri esistenti
 È possibile modificare criteri esistenti e applicarli agli utenti di destinazione. Tuttavia, quando si modificano criteri esistenti, gli utenti che hanno già effettuato l'accesso alle app non vedranno le modifiche per un intervallo di tempo di 8 ore.
 
@@ -165,10 +167,11 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 [Monitor compliance and user status (Monitorare la conformità e lo stato utente)](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### Vedere anche
-[End user experience for MAM enabled apps (Esperienza utente finale con app nelle quali è abilitato MAM)](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [Aspettative dalla gestione dell'app per Android con criteri MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Aspettative dalla gestione dell'app per iOS con criteri MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

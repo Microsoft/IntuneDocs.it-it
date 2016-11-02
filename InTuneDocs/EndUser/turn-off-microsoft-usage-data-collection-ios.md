@@ -2,7 +2,7 @@
 title: Disattivare la raccolta dati di utilizzo di Microsoft per iOS | Microsoft Intune
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
 ---
 
 
-# Disattivare la raccolta dati di utilizzo di Microsoft
+# <a name="turn-off-microsoft-usage-data-collection"></a>Disattivare la raccolta dati di utilizzo di Microsoft
 
 Per migliorare i propri prodotti e servizi, Microsoft raccoglie automaticamente dati anonimi sulle prestazioni e sull'affidabilità dell'app Portale aziendale e sulle relative modalità d'uso.
 

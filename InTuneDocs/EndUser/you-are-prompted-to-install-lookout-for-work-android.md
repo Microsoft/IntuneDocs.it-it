@@ -3,8 +3,9 @@ title: Viene richiesto di installare Lookout for Work nel dispositivo Android | 
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,15 +13,17 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
-ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
+ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
+ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
 
 
 ---
 
 # Richiesta di installare Lookout for Work
 
-Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di installare l'app Lookout for Work che consente di proteggere il dispositivo con la ricerca di potenziali minacce alla protezione.
+Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di installare l'app Lookout for Work che consente di proteggere il dispositivo tramite la ricerca di potenziali minacce alla protezione.
+
+Se si verificano problemi con l'installazione, attenersi alla procedura di risoluzione dei problemi alla fine di questo argomento.
 
 
 **Eseguire le operazioni seguenti:**
@@ -35,11 +38,11 @@ Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di insta
 
     ![toccare Accetta per consentire a Lookout for Work di accedere al dispositivo](./media/lookout-accept-store-permissions-android.png)
 
-3. Aprire Lookout for Work e toccare **Activate**.
+3. Aprire Lookout for Work e toccare **ACTIVATE**.
 
     ![aprire Lookout for Work e toccare Activate](./media/lookout-activate-button-android.png)
 
-4. Toccare **Accedi con Azure Active Directory** e immettere l'account usato per accedere alla posta elettronica e ai file aziendali o dell'istituto di istruzione.
+4. Toccare **Sign in with Azure Active Directory** (Accedi con Azure Active Directory) e immettere l'account usato per accedere alla posta elettronica e ai file aziendali o dell'istituto di istruzione.
 
     ![accedere con l'account di lavoro o scuola](./media/lookout-sign-in-azure-android.png)
 
@@ -51,13 +54,13 @@ Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di insta
 
     ![toccare Accept per autorizzare Lookout for Work a leggere il profilo](./media/lookout-needs-permission-to-view-profile-android.png)
 
-    Viene visualizzata una schermata che mostra la connessione di Lookout for Work a Lookout Security Cloud.
+    Viene visualizzata una schermata che indica che Lookout for Work si sta connettendo a Lookout Security Cloud.
 
 7. Rivedere le informazioni sulla protezione del dispositivo offerta da Lookout e quindi toccare **OK**.
 
     ![rivedere le informazioni sulla protezione del dispositivo offerta da Lookout for Work](./media/lookout-how-it-protects-your-device-android.png)
 
-    Quando viene visualizzata la schermata seguente, significa che Lookout è stato installato ed è connesso.
+    Quando viene visualizzata la schermata seguente, significa che Lookout for Work è stato installato ed è connesso.
 
     ![si è ora connessi a Lookout for Work](./media/lookout-you-are-now-connected-android.png)
 
@@ -69,15 +72,16 @@ Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di insta
 
     ![il dispositivo è ora conforme ai criteri di sicurezza](./media/lookout-device-now-compliant-android.png)
 
-    Se Lookout for Work trova una minaccia alla protezione nel dispositivo, verranno visualizzate le istruzioni per la risoluzione del problema.
+    Se Lookout for Work rileva una minaccia alla protezione nel dispositivo, verranno visualizzate le istruzioni per la risoluzione del problema.
+
+**Se l'installazione non riesce**
+
+Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso, provare a installare manualmente Lookout for Work da Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

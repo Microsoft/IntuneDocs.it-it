@@ -2,9 +2,10 @@
 title: Crittografare il dispositivo | Microsoft Intune
 description: Descrive come crittografare un dispositivo Android
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 690c94c970a97057a65f3f3d5aafa86c235c6df0
-ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
+ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
+ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
 
 
 ---
@@ -28,7 +29,7 @@ Un telefono di cui si annulla la registrazione rimarrà crittografato.
 
 1.  Assicurarsi che per il dispositivo sia stato impostato un PIN o una password per il blocco dello schermo.
 
-2.  In **Impostazioni**, fare clic su **Sicurezza** &gt; **Crittografa telefono**.
+2.  In **Impostazioni**, scegliere **Sicurezza** &gt; **Crittografa telefono**.
     In alcuni telefoni è necessario fare clic su **Memoria** &gt; **Crittografia memoria** o **Memoria** &gt; **Schermata di blocco e Sicurezza** &gt; **Altre impostazioni di sicurezza** per trovare l'opzione "Crittografia".
 
 3.  Seguire le istruzioni visualizzate. Durante la crittografia il dispositivo potrebbe essere riavviato più volte.
@@ -40,30 +41,26 @@ Un telefono di cui si annulla la registrazione rimarrà crittografato.
 - Un messaggio informa che è necessario crittografare il dispositivo.
 - Si verificano errori quando si prova a usare l'app Portale aziendale.
 
-**Possibili soluzioni**: 
+**Possibili soluzioni**
 
-1. Verificare che il dispositivo sia carico e collegato.
+- Verificare che il dispositivo sia carico e collegato.
+- Assicurarsi di aver impostato un PIN o una password nel dispositivo.
+- Se il PIN o la password sono già impostati nel dispositivo, provare i passaggi seguenti che l'amministratore IT potrebbe richiedere per rendere più sicuro il dispositivo. I nomi dei menu visualizzati potrebbero essere leggermente diversi da quelli riportati nelle procedure, a seconda del tipo di dispositivo Android in uso.
 
-2. Assicurarsi di aver impostato un PIN o una password nel dispositivo.
+    1. Toccare **Impostazioni** > **Sicurezza** > **Blocco schermo**. Confermare il PIN o la password corrente.
 
-3. Se il PIN o la password sono già impostati nel dispositivo, provare i passaggi seguenti che l'amministratore IT potrebbe richiedere per rendere più sicuro il dispositivo. I nomi di menu visualizzati potrebbero essere leggermente diversi da quelli riportati nei passaggi, a seconda del tipo di dispositivo Android in uso.
+    2. In **Selezione blocco schermo** scegliere il tipo di blocco schermo da usare.
 
-    a. Toccare **Impostazioni** > **Sicurezza** > **Blocco schermo**. Confermare il PIN o la password corrente.
+    3. Nella schermata di **avvio protetto** toccare **Richiedi PIN per avviare il dispositivo**, quindi toccare **Continua**.
 
-    b. In **Selezione blocco schermo** scegliere il tipo di blocco schermo da usare.
+    4. Scegliere un PIN, ad esempio quello immesso in precedenza, e toccare **Conferma PIN**.
 
-    c. Nella schermata di **avvio protetto** toccare **Richiedi PIN per avviare il dispositivo**, quindi toccare **Continua**.
+    5. Aprire l'app Portale aziendale, selezionare il dispositivo e toccare **Controlla conformità**.
 
-    d. Scegliere un PIN, ad esempio quello immesso in precedenza, e toccare **Conferma PIN**.
-
-    e. Aprire l'app Portale aziendale, selezionare il dispositivo e toccare **Controlla conformità**.
-
-Serve ancora assistenza? Contattare l'amministratore IT (per le informazioni di contatto, controllare il [sito Web del portale aziendale](http://portal.manage.microsoft.com)) o scrivere al team Microsoft Android all'indirizzo wintunedroidfbk@microsoft.com.
+Serve ancora assistenza? Contattare l'amministratore IT (accedere al [sito Web del portale aziendale](http://portal.manage.microsoft.com) per informazioni sui contatti) oppure scrivere al team Microsoft Android all'indirizzo wintunedroidfbk@microsoft.com.
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

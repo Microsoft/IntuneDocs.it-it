@@ -2,7 +2,7 @@
 title: Inviare gli errori all&quot;amministratore IT | Microsoft Intune
 description: Inviare gli errori all&quot;amministratore
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
@@ -22,7 +22,7 @@ ms.openlocfilehash: c7ddd516273360d42426d05528f7846f144c6667
 ---
 
 
-# Inviare gli errori all'amministratore IT
+# <a name="send-errors-to-your-it-admin"></a>Inviare gli errori all'amministratore IT
 
 Se si verificano errori nel dispositivo iOS quando si usa l'app Portale aziendale, è possibile inviare informazioni per consentire all'amministratore IT di risolvere il problema. È possibile inviare informazioni sugli errori in modi diversi:
 

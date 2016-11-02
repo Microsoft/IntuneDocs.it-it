@@ -3,6 +3,7 @@ title: "Il computer è già registrato | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: f61840073cdb6a41c98e20bb5e1457e22f02d5bb
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: cf382c1c6633f8483059bc52146a66f26438e817
 
 
 ---
@@ -23,22 +24,22 @@ ms.openlocfilehash: f61840073cdb6a41c98e20bb5e1457e22f02d5bb
 
 # Il computer è già iscritto
 
-Se viene visualizzato un errore in cui viene comunicato che il computer è già registrato, significa che il computer è già stato aggiunto al portale aziendale ma non è ancora collegato all'account utente. Seguire questa procedura per collegare il computer al proprio account utente e completare il processo.  
+Se si riceve un errore in cui viene specificato che il computer è già registrato, vuol dire che il computer è già stato aggiunto al portale aziendale, ma non è ancora collegato all'account utente. Seguire questa procedura per collegare il computer al proprio account utente e completare il processo.  
 
 Per collegare il computer:
 
-1.  Nel computer da collegare al proprio account fare clic sul pulsante **Start** , quindi scegliere **Microsoft Intune Center**.
+1.  Nel computer da collegare al proprio account fare clic su **Start** e scegliere **Microsoft Intune Center**.
 
 2.  Aprire il Portale aziendale.
 
 3.  Seguire le istruzioni per collegare il computer al proprio account utente.
 
-Se si vuole annullare la registrazione del dispositivo, usare le istruzioni relative al tipo di dispositivo in uso: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) o [Windows](unenroll-your-device-from-intune-windows.md).
+Se si vuole annullare la registrazione del dispositivo, seguire le istruzioni relative al tipo di dispositivo in uso: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) o [Windows](unenroll-your-device-from-intune-windows.md).
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

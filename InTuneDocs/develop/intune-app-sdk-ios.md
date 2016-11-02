@@ -13,8 +13,8 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 975708b5204ab83108a9174083bb87dfeb04a063
-ms.openlocfilehash: 52ad28686fa279a7ec251d073283c3554d1c81fc
+ms.sourcegitcommit: 6b998728b3db60d10cadbcd34b5412fa76cb586f
+ms.openlocfilehash: ddc47ef5846bf448cf0de1e57b527e8ec4c562cc
 
 
 ---
@@ -415,6 +415,32 @@ Il valore restituito da questo metodo indicherà all'SDK se l'applicazione gesti
  - Se viene restituito true, l'applicazione si occuperà della gestione del riavvio.   
  - Se viene restituito false, l'SDK riavvierà l'applicazione.  L'SDK visualizzerà immediatamente una finestra di dialogo che informa l'utente della necessità di riavviare l'applicazione. 
 
+#Implementazione dei controlli di salvataggio
+
+Intune consente agli amministratori IT di selezionare il percorso di archiviazione in cui possono essere salvati i dati di un’app gestita. Le app possono eseguire una query in Intune App SDK per i percorsi di archiviazione consentiti tramite l’API **isSaveToAllowedForLocation**.
+
+Prima di salvare i dati gestiti in un’archiviazione cloud o in percorsi in locale, le app devono usare l’API **isSaveToAllowedForLocation** per verificare se l’amministratore IT ha consentito il salvataggio di dati in quel percorso.
+
+Quando si usa l’API **isSaveToAllowedForLocation**, le app devono passare l’UPN usato per il percorso di archiviazione, se disponibile.
+
+##Percorsi supportati
+
+L’API **isSaveToAllowedForLocation** specifica delle costanti per verificare i percorsi seguenti:
+
+* IntuneMAMSaveLocationOther 
+* IntuneMAMSaveLocationOneDriveForBusiness 
+* IntuneMAMSaveLocationSharePoint 
+* IntuneMAMSaveLocationBox 
+* IntuneMAMSaveLocationDropbox 
+* IntuneMAMSaveLocationGoogleDrive 
+* IntuneMAMSaveLocationLocalDrive 
+
+Le app devono usare le costanti nell’API **isSaveToAllowedForLocation** per verificare se i dati possano essere salvati in percorsi considerati "gestiti", come ad esempio OneDrive for Business, o "personali". L'API deve essere usata anche quando l'app non riesce a determinare se un percorso è "gestito" o "personale". 
+
+Quando un percorso è noto come "personale", le app usano il valore **IntuneMAMSaveLocationOther**. 
+
+La costante **IntuneMAMSaveLocationLocalDrive** deve essere usata quando l'app salva i dati in qualsiasi percorso nel dispositivo locale.
+
 
 
 # Configurare le impostazioni di Intune App SDK
@@ -497,7 +523,7 @@ Si noti che un'identità viene semplicemente definita come stringa. Le identità
 Un'identità è semplicemente costituita dal nome utente di un account (ad esempio, utente@contoso.com). Gli sviluppatori possono impostare l'identità dell'app nei livelli seguenti: 
 
 * **Identità del processo**: l'identità del processo imposta l'identità a livello di processo e viene usata principalmente per applicazioni a identità singola. Questa identità influisce su operazioni, file e interfaccia utente.
-* **Identità dell'interfaccia utente**: determina quali criteri vengono applicati alle operazioni dell'interfaccia utente nel thread principale, ad esempio taglia/copia/incolla, PIN, autenticazione, condivisione dati e così via. L'identità dell'interfaccia utente non influisce sulle operazioni di file (crittografia, backup e così via). 
+* **Identità dell'interfaccia utente**: determina quali criteri vengono applicati alle operazioni dell'interfaccia utente nel thread principale, ad esempio taglia/copia/incolla, PIN, autenticazione, condivisione dati e così via. L'identità dell'interfaccia utente non influisce sulle operazioni di file (crittografia, backup e così via).
 * **Identità del thread**: l'identità del thread influisce sui criteri applicati al thread corrente. Influisce su tutte le operazioni, i file e l'interfaccia utente.
 
 L'app deve impostare l'identità in modo appropriato, indipendentemente dal fatto che l'utente sia gestito.
@@ -523,9 +549,12 @@ Se l'app crea file che contengono dati di utenti gestiti e non gestiti, l'app de
  
 Se l'app contiene un'estensione di condivisione, il proprietario dell'elemento condiviso può essere recuperato tramite il metodo `protectionInfoForItemProvider` in `IntuneMAMDataProtectionManager`. Se l'elemento condiviso è un file, l'SDK gestirà l'impostazione del proprietario del file. Se l'elemento condiviso è costituito da dati, l'app deve impostare il proprietario del file se questi dati vengono salvati in un file e richiamare l'API `setUIPolicyIdentity` (come descritto di seguito) prima di visualizzare i dati nell'interfaccia utente.
  
-#Abilitazione di identità multiple
+##Abilitazione di identità multiple
  
-Per impostazione predefinita, le app sono considerate a identità singola e l'identità del processo è impostata sull'utente registrato dall'SDK. Per abilitare il supporto per le identità multiple, è necessario aggiungere al dizionario IntuneMAMSettings nel file Info.plist delle app un'impostazione booleana con nome 'MultiIdentity' e valore 'Sì'. Quando vengono abilitate le identità multiple, l'identità del processo, l'identità dell'interfaccia utente e le identità del thread verranno impostate su nil e spetterà all'app impostarle in modo appropriato.
+Per impostazione predefinita, le app sono considerate a identità singola e l'SDK è imposta l'identità del processo sull'utente registrato. Per abilitare il supporto per le identità multiple, è necessario aggiungere al dizionario **IntuneMAMSettings** in Info.plist delle app un'impostazione booleana con nome `MultiIdentity` e valore "Yes". 
+
+> [!NOTE]
+> Quando vengono abilitate le identità multiple, l'identità del processo, l'identità dell'interfaccia utente e le identità del thread verranno impostate su nil. Spetta all'app impostarle in modo appropriato.
 
  
 ##Passaggio da un'identità all'altra
@@ -628,6 +657,6 @@ Se l'app usa la **build framework** di Intune App SDK, prima di inviare l'app al
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
