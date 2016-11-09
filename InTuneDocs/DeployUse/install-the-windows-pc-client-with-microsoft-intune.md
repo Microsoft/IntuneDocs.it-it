@@ -14,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eba2421fb929d21eb36c273eb6cb43a06ac03cb4
-ms.openlocfilehash: ed92874cce2877d31d83a619ec8ffb63a57cd5c3
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
 
 
 ---
@@ -106,7 +106,7 @@ L'attività di registrazione automatica, il valore del Registro di sistema **Win
 
 ## <a name="instruct-users-to-selfenroll"></a>Istruire gli utenti per la registrazione automatica
 
-Gli utenti possono installare il software client Intune visitando il [sito Web del portale aziendale](http://portal..manage.microsoft.com). Se il portale Web rileva che il dispositivo è un PC Windows, verrà chiesto agli utenti di registrare il PC scaricando il client software di Intune. Dopo il download del software, gli utenti possono installarlo per attivare la gestione dei PC.
+Gli utenti possono installare il software client Intune visitando il [sito Web del portale aziendale](http://portal.manage.microsoft.com). Se il portale Web rileva che il dispositivo è un PC Windows, verrà chiesto agli utenti di registrare il PC scaricando il client software di Intune. Dopo il download del software, gli utenti possono installarlo per attivare la gestione dei PC.
 
 ![Portale di Intune che richiede di scaricare il client software di Intune](../media/software-client-download.png)
 
