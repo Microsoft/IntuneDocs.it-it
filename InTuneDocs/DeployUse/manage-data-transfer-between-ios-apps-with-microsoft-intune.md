@@ -3,6 +3,7 @@ title: Gestire il trasferimento di dati tra app iOS | Microsoft Intune
 description: "Usare questo argomento per comprendere come è possibile usare la funzionalità Apri in di iOS e i criteri di gestione delle app mobili per gestire i trasferimenti di dati tra le app."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 
 ---
 
-# Gestire il trasferimento di dati tra app iOS con Microsoft Intune
-## Gestire le app iOS
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gestire il trasferimento di dati tra app iOS con Microsoft Intune
+## <a name="manage-ios-apps"></a>Gestire le app iOS
 La protezione dei dati aziendali prevede anche che ci si assicuri che i trasferimenti di file siano limitati alle app gestite dall'utente.  È possibile gestire le app iOS nei modi seguenti:
 
 -   Evitare perdite di dati aziendali tramite la configurazione di criteri MAM per le app, a cui si farà riferimento con il termine app **gestite da criteri**.
@@ -28,7 +29,7 @@ La protezione dei dati aziendali prevede anche che ci si assicuri che i trasferi
 -   È anche possibile distribuire e gestire le app tramite il **canale MDM**.  Ciò richiede che i dispositivi vengono registrati nella soluzione MDM. Possono essere app **gestite da criteri** o altre app gestite.
 
 La funzionalità di **gestione Open In** per i dispositivi iOS consente i trasferimenti di file solo tra le app distribuite tramite il **canale MDM**. Le restrizioni della gestione Open In sono definite nelle impostazioni di configurazione e distribuite tramite la soluzione MDM.  Quando l'utente installa l'app distribuita, vengono applicate le restrizioni impostate.
-##  Uso di software MAM con le app iOS
+##  <a name="using-mam-with-ios-apps"></a>Uso di software MAM con le app iOS
 I criteri di gestione di applicazioni mobili (MAM) possono essere usati con la funzionalità di **gestione Open In** di iOS per proteggere i dati aziendali nei modi seguenti:
 
 -   **Dispositivi di proprietà dei dipendenti non gestiti da soluzioni MDM:** è possibile impostare i criteri MAM su **Allow app to transfer data to only managed apps** (Consenti all'app di trasferire i dati solo alle app gestite). Quando l'utente finale apre un file protetto in un'app non gestita da criteri, il file è illeggibile.
@@ -41,7 +42,7 @@ Per assicurarsi che le app distribuite mediante la soluzione MDM di terze parti 
 > [!IMPORTANT]
 > L'impostazione UPN dell'utente è obbligatoria solo per le app distribuite nei dispositivi gestiti da una soluzione MDM di terze parti.  Per i dispositivi gestiti da Intune questa impostazione non è obbligatoria.
 
-## Configurare l'impostazione UPN dell'utente
+## <a name="configure-user-upn-setting"></a>Configurare l'impostazione UPN dell'utente
 Questa configurazione è necessaria per i dispositivi gestiti da una soluzione MDM di terze parti. La procedura descritta di seguito illustra il flusso generale di implementazione dell'impostazione UPN e l'esperienza dell'utente finale risultante:
 
 
@@ -49,11 +50,11 @@ Questa configurazione è necessaria per i dispositivi gestiti da una soluzione M
 
 2.  Distribuire le app e il profilo di posta elettronica che si vuole gestire **tramite la soluzione MDM di terze parti** usando l'impostazione descritta nei passaggi 3 e 4.
 
-3.  Distribuire l'app con le impostazioni di configurazione seguenti: key=IntuneMAMUPN, Value=<nomeutente@azienda.com> [esempio: 'IntuneMAMUPN', 'jondoe@microsoft.com']
+3.  Distribuire l'app con le impostazioni di configurazione seguenti: key=IntuneMAMUPN, Value=<username@company.com> [esempio: 'IntuneMAMUPN', ‘jondoe@microsoft.com’]
 
 4.  Distribuire i criteri di gestione Open In nei dispositivi registrati.
 
-### Esempio di esperienza utente finale
+### <a name="example-end-user-experience"></a>Esempio di esperienza utente finale
 
 1.  L'utente finale installa l'app di Microsoft Word nel dispositivo.
 
@@ -70,11 +71,11 @@ Questa configurazione è necessaria per i dispositivi gestiti da una soluzione M
 
 6.  A questo punto il trasferimento dei dati avrà esito positivo e il documento viene contrassegnato come identità aziendale nell'app. I dati, poi, vengono trattati in un contesto aziendale e le impostazioni dei criteri vengono applicate di conseguenza.
 
-### Vedere anche
+### <a name="see-also"></a>Vedere anche
 [Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -1,10 +1,11 @@
 ---
-title: Limitare l'accesso alle reti con Cisco ISE | Microsoft Intune
+title: Limitare l&quot;accesso alle reti con Cisco ISE | Microsoft Intune
 description: Usare ISE Cisco con Intune in modo che i dispositivi vengano registrati in Intune e siano conformi ai relativi criteri prima di accedere a Wi-Fi e VPN controllati da Cisco ISE.
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,23 +14,23 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecaf92b327538e3da4df268e4c67c73af262b731
-ms.openlocfilehash: fa73c5e2b4e6737377acd206807399b31df37364
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: a29473cb0931c01143614116ce0e99a579f35923
 
 
 ---
 
-# Uso di Cisco ISE con Microsoft Intune
+# <a name="using-cisco-ise-with-microsoft-intune"></a>Uso di Cisco ISE con Microsoft Intune
 L'integrazione di Intune con Cisco ISE (Identity Services Engine) consente di creare criteri di rete nell'ambiente ISE usando lo stato di conformità e registrazione dei dispositivi di Intune. È possibile usare questi criteri per verificare che l'accesso alla rete aziendale sia limitato ai dispositivi gestiti da Intune e conformi ai criteri di Intune.
 
-## Procedura di configurazione
+## <a name="configuration-steps"></a>Procedura di configurazione
 
 Per abilitare l'integrazione, non è necessario eseguire installazioni nel tenant di Intune. Sarà necessario concedere al server Cisco ISE l'autorizzazione ad accedere al tenant di Intune. Al termine di questa operazione, il resto dell'installazione viene eseguita nel server Cisco ISE. Questo articolo illustra come concedere al server ISE le autorizzazioni necessarie per accedere al tenant di Intune.
 
-### Passaggio 1: Gestire i certificati
+### <a name="step-1-manage-the-certificates"></a>Passaggio 1: Gestire i certificati
 Esportare il certificato dalla console di Azure Active Directory (Azure AD) e quindi importarlo nell'archivio dei certificati attendibili della console ISE:
 
-#### Internet Explorer 11
+#### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
    a. Eseguire Internet Explorer come amministratore e accedere alla console di Azure AD.
@@ -46,7 +47,7 @@ Esportare il certificato dalla console di Azure Active Directory (Azure AD) e qu
 
    g. Dall'interno della console ISE importare il certificato di Intune, ovvero il file esportato, nell'archivio dei **certificati attendibili**.
 
-#### Safari
+#### <a name="safari"></a>Safari
 
  a. Accedere alla console di Azure AD.
 
@@ -63,7 +64,7 @@ b. Scegliere l'icona del blocco &gt;  **Ulteriori informazioni**.
 > Controllare la data di scadenza del certificato, poiché sarà necessario esportare e importare un nuovo certificato quando questo scade.
 
 
-### Ottenere da ISE un certificato autofirmato 
+### <a name="obtain-a-selfsigned-cert-from-ise"></a>Ottenere da ISE un certificato autofirmato 
 
 1.  Nella console ISE passare ad **Amministrazione** > **Certificati** > **Certificati di sistema** > **Genera certificato autofirmato**.  
 2.       Esportare il certificato autofirmato.
@@ -74,7 +75,7 @@ b. Scegliere l'icona del blocco &gt;  **Ulteriori informazioni**.
 Verificare che tutto il testo sia una singola riga
 
 
-### Passaggio 2: Creare un'app per ISE nel tenant di Azure AD
+### <a name="step-2-create-an-app-for-ise-in-your-azure-ad-tenant"></a>Passaggio 2: Creare un'app per ISE nel tenant di Azure AD
 1. Nella console di Azure AD scegliere **Applicazioni** > **Aggiungi applicazione** > **Aggiungi un'applicazione che l'organizzazione sta sviluppando**.
 2. Specificare un nome e un URL per l'app. L'URL può essere il sito Web aziendale.
 3. Scaricare il manifesto dell'app (file JSON).
@@ -98,17 +99,11 @@ Verificare che tutto il testo sia una singola riga
 |Endpoint del token OAuth 2.0|URL emittente di token|
 |Aggiornare il codice con l'ID client|ID client|
 
-### Passaggio 4: Caricare il certificato autofirmato da ISE nell'app ISE creata in Azure AD
+### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Passaggio 4: Caricare il certificato autofirmato da ISE nell'app ISE creata in Azure AD
 1.     Ottenere il valore e l'identificazione personale del certificato con codifica base64 da un file di certificato pubblico X.509 con estensione cer. In questo esempio viene usato PowerShell:
    
       
-    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
-     `$cer.Import(“mycer.cer”)`
-      `$bin = $cer.GetRawCertData()`
-      `$base64Value = [System.Convert]::ToBase64String($bin)`
-      `$bin = $cer.GetCertHash()`
-      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
-      `$keyid = [System.Guid]::NewGuid().ToString()`
+      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
  
     Archiviare i valori di $base64Thumbprint, $base64Value e $keyid, da usare nel passaggio successivo.
 2.       Caricare il certificato tramite il file manifesto. Accedere al [portale di gestione di Azure](https://manage.windowsazure.com).
@@ -117,27 +112,20 @@ Verificare che tutto il testo sia una singola riga
 5.      Sostituire la proprietà vuota "KeyCredentials": [], con il codice JSON seguente.  Il tipo complesso KeyCredentials è documentato in [Informazioni di riferimento su entità e tipi complessi](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType).
 
  
-    `“keyCredentials“: [`
-    `{`
-     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
-     `“keyId“: “$keyid_from_above“,`
-     `“type”: “AsymmetricX509Cert”,`
-     `“usage”: “Verify”,`
-     `“value”:  “$base64Value_from_above”`
-     `}2. `
-     `], `
+    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
+     ], 
  
 Ad esempio:
  
-    `“keyCredentials“: [`
-    `{`
-    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
-    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
-    `“type”: “AsymmetricX509Cert”,`
-    `“usage”: “Verify”,`
-    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
-    `}`
-    `],`
+    “keyCredentials“: [
+    {
+    “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
+    “keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,
+    “type”: “AsymmetricX509Cert”,
+    “usage”: “Verify”,
+    “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
+    }
+    ],
  
 6.      Salvare la modifica nel file manifesto dell'applicazione.
 7.      Caricare il file manifesto dell'applicazione modificato tramite il portale di gestione di Azure.
@@ -148,7 +136,7 @@ Ad esempio:
 > KeyCredentials è una raccolta, quindi è possibile caricare più certificati X.509 per esigenze di rollover o eliminare più certificati in casi di compromissione.
 
 
-### Passaggio 4: Configurare le impostazioni ISE
+### <a name="step-4-configure-ise-settings"></a>Passaggio 4: Configurare le impostazioni ISE
 Nella console di amministrazione ISE indicare questi valori:
   - **Tipo di server**: Mobile Device Manager
   - **Tipo di autenticazione**: OAuth, credenziali del client
@@ -159,7 +147,7 @@ Nella console di amministrazione ISE indicare questi valori:
 
 
 
-## Informazioni condivise tra il tenant di Intune e il server Cisco ISE
+## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Informazioni condivise tra il tenant di Intune e il server Cisco ISE
 Questa tabella elenca le informazioni condivise tra il tenant di Intune e il server Cisco ISE per i dispositivi gestiti da Intune.
 
 |Proprietà|  Descrizione|
@@ -178,7 +166,7 @@ Questa tabella elenca le informazioni condivise tra il tenant di Intune e il ser
 |lastContactTimeUtc|Data e ora in cui il dispositivo ha eseguito l'ultima archiviazione con il servizio di gestione di Intune.
 
 
-## Esperienza utente
+## <a name="user-experience"></a>Esperienza utente
 
 Quando un utente tenta di accedere alle risorse usando un dispositivo non registrato, riceve una richiesta simile alla seguente:
 
@@ -194,12 +182,12 @@ Quando l'utente sceglie di eseguire la registrazione, viene reindirizzato al pro
 È anche disponibile un [set scaricabile di istruzioni per la registrazione](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) che consente di creare indicazioni personalizzate per l'esperienza utente.
 
 
-### Vedere anche
+### <a name="see-also"></a>Vedere anche
 
 [Cisco Identity Services Engine Administrator Guide, Release 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
