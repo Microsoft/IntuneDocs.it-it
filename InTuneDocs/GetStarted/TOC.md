@@ -17,7 +17,7 @@
 
 ## [Eseguire la migrazione a Intune](migrate-to-intune.md)
 
-## [Guida introduttiva a Intune](start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Guida introduttiva](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Accedere a Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configurare un nome di dominio personalizzato](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [Sincronizzare AD e aggiungere utenti](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
@@ -27,6 +27,13 @@
 ### [Personalizzare il portale aziendale](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [Registrare dispositivi mobili e installare un'app](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Attività successive alla configurazione](post-configuration-tasks.md)
+
+## [Guide rapide](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Guida rapida: Impedire la divulgazione di dati aziendali da app di Office 365 per dispositivi mobili](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Guida rapida: Proteggere i dati aziendali con la crittografia dei dati](protect-data-encryption.md)
+### [Guida rapida: Pubblicare app per dispositivi mobili per gli utenti](publish-mobile-apps-to-users.md)
+### [Guida rapida: Semplificare la configurazione della posta elettronica nei dispositivi mobili](simplify-email-configuration-on-mobile-devices.md)
+### [Guida rapida: Proteggere i PC Windows dalle minacce malware](protect-pcs-against-malware-threats.md)
 
 ## [Fasi di implementazione per le distribuzioni di Intune](rollout-phases-for-microsoft-intune-deployment.md)
 ### [Ambito del progetto](project-scope.md)
@@ -42,6 +49,6 @@
 # [Risolvere i problemi](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 
