@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 3422d47a5759e22a512cf6de8578d774ad3bb8cd
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
 
 
 ---
@@ -100,7 +100,7 @@ Per altre informazioni, vedere [Gestione dei dispositivi mobili con Exchange Act
 
  - Compilare relazioni su inventari software e hardware
  - Installare applicazioni desktop, ad esempio file con estensione msi ed exe
- - Impostazioni del firewall
+ - Gestire le impostazioni del firewall
 
 I PC gestiti con il software del client di Intune non possono essere completamente cancellati, anche se è disponibile la cancellazione selettiva. I PC gestiti con il software del client di Intune non possono sfruttare le numerose funzionalità di gestione di Intune, ad esempio l'accesso condizionale, le impostazioni VPN e Wi-Fi o la distribuzione di certificati e le configurazioni di posta elettronica.
 
@@ -119,6 +119,6 @@ Intune può gestire le piattaforme dei dispositivi seguenti:
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
