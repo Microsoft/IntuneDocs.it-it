@@ -2,8 +2,8 @@
 title: "Il computer è già registrato | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: cf382c1c6633f8483059bc52146a66f26438e817
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: f1ef3603c074e0f746fc7126f85a6ab55095042e
 
 
 ---
 
 
-# Il computer è già iscritto
+# <a name="your-computer-is-already-enrolled"></a>Il computer è già iscritto
 
 Se si riceve un errore in cui viene specificato che il computer è già registrato, vuol dire che il computer è già stato aggiunto al portale aziendale, ma non è ancora collegato all'account utente. Seguire questa procedura per collegare il computer al proprio account utente e completare il processo.  
 
@@ -40,6 +40,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

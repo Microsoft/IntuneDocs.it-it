@@ -1,9 +1,10 @@
 ---
-title: Panoramica dei cicli di vita del dispositivo e dell'app | Microsoft Intune
-description: Panoramica dei cicli di vita del dispositivo e dell'app con Intune.
+title: Panoramica dei cicli di vita del dispositivo e dell&quot;app | Microsoft Intune
+description: Panoramica dei cicli di vita del dispositivo e dell&quot;app con Intune.
 keywords: 
 author: robstackmsft
-manager: arob98
+ms.author: robstack
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +14,8 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: a87df3551d0758a3db8eb622db32fdcb60e4fd0e
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: ef687c39e5f1433b9b1991273dd3e537032ce1a2
 
 
 ---
@@ -31,6 +32,6 @@ Analogamente, le app usate hanno un proprio [ciclo di vita dell'app](overview-of
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

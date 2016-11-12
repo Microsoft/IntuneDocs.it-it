@@ -1,10 +1,11 @@
 ---
 title: Implementazione di applicazioni | Microsoft Intune
-description: Suggerimenti per un'implementazione graduale delle app in Microsoft Intune.
+description: Suggerimenti per un&quot;implementazione graduale delle app in Microsoft Intune.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2427768c0ca73d20140462946ba2984b7999d864
-ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: aea7c235ad643a2a03ac7b3ea68c6b8c717bcd48
 
 
 ---
@@ -95,6 +96,6 @@ Durante la fase pilota l'app verrà distribuita a un piccolo gruppo di utenti e 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

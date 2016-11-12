@@ -2,9 +2,10 @@
 title: Risolvere i problemi di registrazione dei dispositivi Windows 10 | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 8/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: ecd84b62d34e22a72da87995ff0d62dad5e5a9ed
 
 
 ---
 
-# Risolvere i problemi di registrazione dei dispositivi Windows 10
+# <a name="troubleshoot-your-windows-10-device-enrollment"></a>Risolvere i problemi di registrazione dei dispositivi Windows 10
 Se è stata seguita la procedura descritta in [Registrare il dispositivo Windows 10 Mobile o Windows 10 Desktop in Intune](enroll-your-w10-phone-or-w10-pc-windows.md), ma non è ancora possibile accedere alla posta elettronica e ai file dell'azienda o dell'istituto di istruzione, provare a eseguire i passaggi di risoluzione dei problemi seguenti.
 
 1.  Esaminare le due schermate seguenti e trovare quella simile a quanto viene visualizzato sul dispositivo. Seguire i passaggi corrispondenti alla schermata visualizzata sul dispositivo.
@@ -33,7 +34,7 @@ Se è stata seguita la procedura descritta in [Registrare il dispositivo Windows
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## Passaggi di risoluzione dei problemi da seguire se si visualizza Access work or school (Accesso azienda o istituto di istruzione)
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Passaggi di risoluzione dei problemi da seguire se si visualizza Access work or school (Accesso azienda o istituto di istruzione)
 
 1.  Se è stata eseguita la procedura sopra descritta, ma non è tuttavia possibile accedere alla posta elettronica e ai file dell'azienda o dell'istituto di istruzione, tornare alla schermata **Access work or school** (Accesso azienda o istituto di istruzione).
 
@@ -45,7 +46,7 @@ Se è stata seguita la procedura descritta in [Registrare il dispositivo Windows
 
     - Se non si visualizzano le informazioni di connessione illustrate in precedenza o si visualizzano, ma mancano alcune opzioni, toccare **Connetti** e quindi accedere con le credenziali aziendali o dell'istituto di istruzione. A questo punto l'utente è connesso.
 
-## Passaggi di risoluzione dei problemi da seguire se si visualizza Il tuo account
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Passaggi di risoluzione dei problemi da seguire se si visualizza Il tuo account
 
 Se è stata eseguita la procedura sopra descritta, ma non è tuttavia possibile accedere alla posta elettronica, ai file e ad altri dati dell'azienda o dell'istituto di istruzione, tornare alla schermata **Account** e toccare **Accesso società**.
 
@@ -57,6 +58,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

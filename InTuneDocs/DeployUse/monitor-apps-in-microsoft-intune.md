@@ -3,8 +3,9 @@ title: Monitoraggio delle distribuzioni di app | Microsoft Intune
 description: Informazioni su come monitorare le app distribuite con Intune.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +14,19 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3412150f96f81937b6ea471d4a27ac42da875f8
-ms.openlocfilehash: a0fd24b430cce49cf7d3ba395341ed07912b9404
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 06a50371715a89961231b5810180ac459f05229e
 
 
 ---
 
 
-# Monitoraggio delle distribuzioni di app in Microsoft Intune
+# <a name="monitor-app-deployments-in-microsoft-intune"></a>Monitoraggio delle distribuzioni di app in Microsoft Intune
 
-## Monitorare la distribuzione di un'app
-È possibile visualizzare le app gestite e lo stato di tutte le distribuzioni nella console di amministrazione di Intune.
+## <a name="monitor-an-app-deployment"></a>Monitorare la distribuzione di un'app
+È possibile visualizzare le app gestite e lo stato di tutte le distribuzioni nella console di amministrazione di Intune. <!---App status is displayed in real-time. You don't have to wait for the device to check-in before you can see this.--->
 
-### Per visualizzare le app gestite e il relativo stato
+### <a name="to-view-apps-that-you-manage-and-their-status"></a>Per visualizzare le app gestite e il relativo stato
 Nell'area di lavoro **App** selezionare il nodo **App**, quindi scegliere **App**.
 
 Viene visualizzato l'elenco di app gestite. È possibile scegliere una qualsiasi app per visualizzare lo stato di installazione nel riquadro inferiore delle finestre della console. Per visualizzare altri dettagli, scegliere questo stato. Ad esempio, se lo stato è **1 utente dispone di questo software**, si può fare clic sul messaggio per visualizzare il nome dell'utente.
@@ -37,7 +38,7 @@ Viene visualizzato l'elenco di app gestite. È possibile scegliere una qualsiasi
 
 Inoltre, l'area di lavoro **Dashboard** include anche una panoramica dello stato delle app. Se si fa clic su un punto qualsiasi della panoramica, verrà visualizzato l'elenco di app.
 
-## Per visualizzare informazioni più dettagliate su un'app
+## <a name="to-view-more-detailed-information-about-an-app"></a>Per visualizzare informazioni più dettagliate su un'app
 Nell'elenco di app selezionare un'app e quindi scegliere **Visualizza proprietà**.
 
 Nella pagina **Proprietà software** dell'app scegliere una di queste schede: **Generale**, che contiene informazioni generali sull'app e sul relativo stato di installazione, **Dispositivi**, che indica i dispositivi su cui è installata una distribuzione di destinazione dell'app e **Utenti**, che indica gli utenti che hanno eseguito correttamente l'installazione di una distribuzione di destinazione dell'app nei propri dispositivi.
@@ -46,6 +47,6 @@ Come illustrato in precedenza, è possibile usare l'elenco a discesa **Filtri** 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 
