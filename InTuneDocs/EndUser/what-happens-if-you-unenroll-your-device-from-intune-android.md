@@ -3,6 +3,7 @@ title: Che cosa avviene se si annulla la registrazione del dispositivo Android d
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
+ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
+ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
 
 
 ---
@@ -25,25 +26,24 @@ ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
 
 Quando si annulla la registrazione del dispositivo Android da Intune:
 
--   Se si annulla la registrazione del dispositivo da Intune significa che l'amministratore IT non gestisce più il dispositivo.
+-   L'amministratore IT non gestisce più il dispositivo.
 
--   Si perderà l'accesso ai dati e alle risorse aziendali.
+-   Si perde l'accesso ai dati e alle risorse aziendali.
 
--   Il dispositivo non verrà più visualizzato nel portale aziendale.
+-   Il dispositivo non verrà più visualizzato nel Portale aziendale.
 
 -   Non sarà più possibile installare app dal portale aziendale.
 
--   Non saranno più valide le impostazioni che sono state modificate nel dispositivo quando è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza.
+-   Non saranno più valide le impostazioni modificate nel dispositivo quando questo è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza.
 
 Se il dispositivo è configurato solo per ricevere posta elettronica aziendale e la registrazione del dispositivo viene annullata, il dispositivo non sarà più visualizzato nel portale aziendale.
 
 Per istruzioni su come annullare la registrazione, vedere [Annullare la registrazione del dispositivo da Intune con l'app Portale aziendale](unenroll-your-device-from-intune-android.md).
 
-Serve assistenza? Contattare l'amministratore IT (per le informazioni di contatto, controllare il [sito Web del portale aziendale](http://portal.manage.microsoft.com)) o scrivere al team Microsoft Android all'indirizzo wintunedroidfbk@microsoft.com.
+Serve assistenza? Contattare l'amministratore IT (accedere al [sito Web del portale aziendale](http://portal.manage.microsoft.com) per informazioni sui contatti) oppure scrivere al team Microsoft Android all'indirizzo wintunedroidfbk@microsoft.com.
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

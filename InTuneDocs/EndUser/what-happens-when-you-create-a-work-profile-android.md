@@ -2,7 +2,8 @@
 title: Cosa accade quando si crea un profilo di lavoro | Microsoft Intune
 description: Descrive come crittografare un dispositivo Android
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: ad24422cd2708eb4fa59bb96d9f39b7a6444219b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
 
 
 ---
 
 
-# Cosa accade quando si crea un profilo di lavoro
+# <a name="what-happens-when-you-create-a-work-profile"></a>Cosa accade quando si crea un profilo di lavoro
 
-Un profilo di lavoro viene impostato sul dispositivo per consentire l'accesso alla posta aziendale o dell'istituto di istruzione, ad app e file.
+Un profilo di lavoro viene impostato nel dispositivo per mantenere la posta elettronica, le app e i file aziendali o dell'istituto di istruzione separati dai dati personali.
 
 Quando si crea un profilo di lavoro:
 
-- L'amministratore IT può gestire solo le app, le impostazioni e le configurazioni nel dispositivo correlate al lavoro e non le app o i dati personali.
+- L'amministratore IT può gestire solo la posta elettronica, le app, le impostazioni e i dati del dispositivo correlati al lavoro e non le app o i dati personali.
 
 - Le app correlate al lavoro vengono scaricate da Play Store for Work. Per scaricare app personali si continua a usare Google Play. L'amministratore IT non può visualizzare o gestire le app personali.
 

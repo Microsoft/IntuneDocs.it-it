@@ -3,6 +3,7 @@ title: Che cosa avviene se si reimposta un dispositivo Windows con l&quot;app Po
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b597e3557ec2c5661490b417e1d0459eb4e8b477
+ms.sourcegitcommit: bdb221d9c52231d31511b29cbdc69985bc0da5b2
+ms.openlocfilehash: 1cc7e4ad5abee16a0e06780b37c23903d196a018
 
 
 ---
@@ -27,16 +28,14 @@ Quando si usa l'app Portale aziendale o il [sito Web del portale aziendale](rese
 
 |Configurazione e gestione del dispositivo|Tipo di dispositivo|
 |---------------------------------------|---------------|
-|L'amministratore IT gestisce il dispositivo mobile|**Windows 10 e Windows Phone 8.1**</br>Il dispositivo non sarà più visualizzato nel portale aziendale e il portale aziendale proverà a ripristinare le impostazioni predefinite del dispositivo. I dati, le app e le impostazioni personali verranno rimossi. <br /><br />**Windows 10 Mobile**: l'unico modo per annullare la registrazione del dispositivo è reimpostarlo.|
-|Il dispositivo può accedere solo alla posta elettronica aziendale|**Windows Phone 8.1**<br />Il dispositivo non sarà più visualizzato nel portale aziendale e verranno eliminati l'account di posta elettronica aziendale e i messaggi di posta elettronica non salvati.<br /><br />**Computer Windows 7 o Windows Vista**<br />Non è possibile reimpostare un computer che esegue Windows 7 o versioni precedenti che viene usato solo per la posta elettronica.<br /><br />**Computer Windows 8.1 e Windows 8**<br />Il dispositivo non sarà più visualizzato nel portale aziendale e verranno eliminati l'account di posta elettronica aziendale e i messaggi di posta elettronica non salvati.|
-|PC e portatili|**Computer Windows 8.1 e Windows 8**<br />Non è possibile reimpostare un computer che esegue Windows 8 o Windows 8.1 a meno che non sia usato solo per la posta elettronica.<br /><br />**Computer Windows 7 o Windows Vista**<br />Non è possibile reimpostare un computer che esegue Windows 7 o versioni precedenti.|
+|L'amministratore IT gestisce il dispositivo mobile|**Windows 10 e Windows Phone 8.1**</br>Il dispositivo non sarà più visualizzato nel portale aziendale e il portale aziendale proverà a ripristinare le impostazioni predefinite del dispositivo. I dati, le app e le impostazioni personali verranno rimossi. <br /><br />**Windows 10 Mobile**</br>L'unico modo per annullare la registrazione del dispositivo è reimpostarlo.|
+|Il dispositivo può accedere solo alla posta elettronica aziendale|**Windows Phone 8.1**<br />Il dispositivo non sarà più visualizzato nel portale aziendale e verranno eliminati l'account di posta elettronica aziendale e i messaggi di posta elettronica non salvati.<br /><br />**Windows 7 o Windows Vista**<br />Non è possibile reimpostare un computer che esegue Windows 7 o versioni precedenti che viene usato solo per la posta elettronica.<br /><br />**Windows 8.1 e Windows 8**<br />Il dispositivo non sarà più visualizzato nel portale aziendale e verranno eliminati l'account di posta elettronica aziendale e i messaggi di posta elettronica non salvati.|
+|PC e portatili|**Windows 8.1 e Windows 8**<br />Non è possibile reimpostare un computer che esegue Windows 8 o Windows 8.1 a meno che non sia usato solo per la posta elettronica.<br /><br />**Windows 7 o Windows Vista**<br />Non è possibile reimpostare un computer che esegue Windows 7 o versioni precedenti.|
 
 Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

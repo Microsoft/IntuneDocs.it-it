@@ -1,10 +1,11 @@
 ---
 title: Ripristinare dispositivi iOS gestiti da Intune da backup | Microsoft Intune
 description: Offrire indicazioni agli utenti finali su come registrare nuovamente i propri dispositivi dopo il ripristino da backup.
-keywords: 
+keywords: ripristino, gestito, iOS
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 612b0954a81de1ee8d4a1e96c7440239437dec14
-ms.openlocfilehash: 5fc4423f8fd0c5829be5fe6c96949e126991e430
+ms.sourcegitcommit: e6bb539c87c4a13a490ba98c016d814bea5c7bbc
+ms.openlocfilehash: 6395e50b3e4c06e7363acc136b5ed9eb2ef75abd
 
 
 ---
@@ -37,8 +38,18 @@ Se il backup viene ripristinato in un dispositivo diverso, lo stato della regist
 > [!TIP]
 > Un esempio di comunicazione per gli utenti potrebbe essere il seguente: Per registrarsi nel nuovo dispositivo, verificare che la versione dell'app Portale aziendale corrisponda alla versione 2.1.22 o successiva. Per controllare la versione, aprire l'app Portale aziendale, toccare il pulsante Menu in alto a destra e quindi toccare Info. Se è installata una versione precedente, chiudere l'app Portale aziendale e aprire App Store. Toccare il pulsante Aggiornamenti nell'angolo inferiore destro, quindi toccare il pulsante Aggiorna accanto alla voce Portale aziendale nell'elenco. Al termine dell'aggiornamento, avviare l'app Portale aziendale e [registrare il dispositivo iOS in Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
 
+## Risoluzione dei problemi noti di ripristino
+
+Gli utenti potrebbero riscontrare alcune difficoltà in caso di ripristino del dispositivo e di avvio dell'app Portale aziendale se usano ancora la versione 2.1.21 o precedente di quest'ultima. È possibile risolvere queste difficoltà attenendosi alla procedura appropriata per la situazione dell'utente.
+
+### Per gli utenti che usano solo il nuovo dispositivo
+Avviare l'app Portale aziendale e annullare la registrazione selezionando il riquadro del dispositivo corrente e toccando il pulsante __Rimuovi__. Dopo la rimozione attenersi alla procedura di registrazione standard per [registrare un dispositivo iOS in Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
+
+### Per gli utenti che usano sia il dispositivo precedente che quello nuovo
+Cancellare i cookie da Safari toccando __Impostazioni__ > __Safari__ > __Cancella dati siti web e cronologia__. Dopo la cancellazione, disinstallare e reinstallare l'app Portale aziendale e quindi seguire la procedura di registrazione standard per [registrare un dispositivo iOS in Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Oct16_HO3-->
 
 

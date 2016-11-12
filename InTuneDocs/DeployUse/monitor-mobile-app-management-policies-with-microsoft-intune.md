@@ -3,8 +3,9 @@ title: Monitorare i criteri MAM con Microsoft Intune | Microsoft Intune
 description: Vedere quanti utenti dispongono di criteri. Per altre informazioni dettagliate, eseguire il drill down.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 07/06/2016
+ms.author: karaman
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c72c8e1a764af73ba4d421ca6637ee91ab7bca0a
-ms.openlocfilehash: 1efbecc33e33e5e4864bcc2417ebed1e8a5b5826
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: bc68a13b8d5694908cd00e5e615f81f6e15cfe22
 
 
 ---
@@ -71,10 +72,11 @@ Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a 
 ### Vedere anche
 [Gestire il trasferimento di dati tra app iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-[Esperienza utente finale con app con MAM abilitato](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [Aspettative dalla gestione dell'app per Android con criteri MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Aspettative dalla gestione dell'app per iOS con criteri MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 
