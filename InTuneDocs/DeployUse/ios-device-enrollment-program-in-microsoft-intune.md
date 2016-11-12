@@ -116,6 +116,6 @@ A partire dal mese di novembre la gestione dei gruppi di dispositivi passerà ad
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
