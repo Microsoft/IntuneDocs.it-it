@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3ba40ad3a8c5eaba684d589c7526435ba87d0390
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 4718d61f9d76a903ffc1820c77fc755d1ca1707b
 
 
 ---
 
-# Cancellare i dati dell'app aziendale gestita con Microsoft Intune
+# <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>Cancellare i dati dell'app aziendale gestita con Microsoft Intune
 Quando un dispositivo viene smarrito o rubato, o se il dipendente lascia l'azienda, è necessario assicurarsi di rimuovere dal dispositivo i dati delle app aziendali. Tuttavia, potrebbe non essere necessario rimuovere i dati personali sul dispositivo, soprattutto se si tratta di un dispositivo di proprietà del dipendente.
 
 Per rimuovere selettivamente i dati delle app aziendali, creare una richiesta di cancellazione attenendosi alla procedura descritta in questa sezione, **Creare una richiesta di cancellazione**, nel presente argomento.  Una volta completata la richiesta, i dati aziendali verranno rimossi dall'app alla successiva esecuzione dell'applicazione nel dispositivo.
@@ -29,7 +29,7 @@ Per rimuovere selettivamente i dati delle app aziendali, creare una richiesta di
 
 
 
-## Creare una richiesta di cancellazione
+## <a name="create-a-wipe-request"></a>Creare una richiesta di cancellazione
 
 1.  Nel pannello **Gestione di applicazioni mobili di Intune** scegliere il riquadro **Richieste di cancellazione dati** .
 
@@ -48,20 +48,24 @@ Per rimuovere selettivamente i dati delle app aziendali, creare una richiesta di
 
 ![Schermata del riquadro relativo alle richieste di cancellazione ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
-## Monitorare le richieste di cancellazione dati
+## <a name="monitor-your-wipe-requests"></a>Monitorare le richieste di cancellazione dati
 Il pannello **Gestione di applicazioni mobili di Intune** contiene un report di riepilogo per il riquadro **Richiesta di cancellazione dati** .  Visualizza lo stato generale e include il numero di richieste in sospeso e gli errori. È possibile ottenere altre informazioni seguendo i passaggi descritti di seguito:
 
 1.  Nel pannello **Gestione di applicazioni mobili di Intune** scegliere il riquadro **Richiesta di cancellazione dati** per aprire il pannello **Richiesta di cancellazione dati** .
 
 2.  Nel pannello **Richiesta di cancellazione dati** è possibile visualizzare l'elenco delle richieste raggruppate in base agli utenti.  Poiché il sistema crea una richiesta di cancellazione dati per ciascuna applicazione protetta in esecuzione nel dispositivo, è possibile visualizzare più richieste per un utente.  Lo stato indica se una richiesta di cancellazione dati è ancora **in sospeso**, **non riuscita**o **completata**.
 
-### Vedere anche
-[Proteggere i dati delle app usando i criteri di gestione delle app per dispositivi mobili ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+L'utente deve aprire l'app affinché venga eseguita la cancellazione dati e l'operazione può richiedere fino a 30 minuti dopo la richiesta. 
+
+Le cancellazioni dati con stato in sospeso rimangono visualizzate fino all'eliminazione manuale.  Per eliminare manualmente una richiesta di cancellazione dati, fare clic con il pulsante destro del mouse e scegliere Elimina.
+
+### <a name="see-also"></a>Vedere anche
+[Proteggere i dati delle app usando i criteri di gestione delle app mobili](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Uso del portale di Azure](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

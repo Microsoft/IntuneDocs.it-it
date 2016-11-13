@@ -8,19 +8,19 @@ manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
-ms.openlocfilehash: c074dd8850aef8cec79a9362222c3678d679bf4f
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: ec287d49910a72c22122f45a01850bcbd3a7d203
 
 
 ---
 
-# Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità
+# <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità
 Intune con la protezione dalle minacce per i dispositivi mobili Lookout offre la possibilità di rilevare le minacce per dispositivi mobili ed eseguire una valutazione dei rischi nel dispositivo. È possibile creare una regola dei criteri di conformità che includa la valutazione dei rischi per determinare se il dispositivo è conforme. È quindi possibile usare i criteri di accesso condizionale per consentire o bloccare l'accesso a Exchange, SharePoint e altri servizi in base alla conformità del dispositivo.
 
 Per fare in modo che il rilevamento delle minacce del dispositivo Lookout influenzi i criteri di conformità per il dispositivo:
@@ -52,7 +52,7 @@ Se si creano criteri di accesso condizionale per Office 365 e altri servizi, vie
 
 ![screenshot della pagina dei dispositivi nella console di amministrazione Intune che mostra lo stato di conformità di un dispositivo](../media/mtp/mtp-device-status-intune-console.png)
 
-## Passaggi successivi
+## <a name="next-steps"></a>Passaggi successivi
 * Creare criteri di accesso condizionale
   * [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   * [Exchange locale](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
@@ -62,6 +62,6 @@ Se si creano criteri di accesso condizionale per Office 365 e altri servizi, vie
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
