@@ -5,38 +5,38 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffe11b4eb4b0f4c2ffdc831cad9deb30d7180809
-ms.openlocfilehash: 94de65185af64052226985f2c65c7b8a18e2f829
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: bc5d1b429157e6a6b24f4eb319be50b635466317
 
 
 ---
 
-# Proteggere app e dati line-of-business su dispositivi non registrati
+# <a name="protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune"></a>Proteggere app e dati line-of-business su dispositivi non registrati
 
 I criteri di gestione delle app mobili consentono di proteggere i dati aziendali limitando le azioni che possono causare la perdita dei dati aziendali e applicando i requisiti di accesso ai dati, ad esempio il PIN dell'app. Prima di applicare i criteri di gestione delle applicazioni mobili alle app line-of-business per iOS e Android, è necessario eseguire il wrapping dell'app con lo strumento di wrapping delle app di Microsoft Intune.  Il wrapping dell’app è il processo di applicazione di un livello di gestione a un'app per dispositivi mobili senza alcuna modifica dell'applicazione sottostante.  Dopo aver eseguito il wrapping è possibile applicare i criteri MAM all'app e distribuirla agli utenti finali.  
 
 Questo argomento elenca i passaggi per l'applicazione dei criteri MAM alle app a cui si accede su **dispositivi di proprietà degli utenti e non gestiti** e dispositivi gestiti da **soluzioni di gestione dei dispositivi mobili (MDM) di terze parti**.  Per preparare le app line-of-business eseguite su **dispositivi registrati in gestione dei dispositivi mobili di Intune**, vedere [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 
-##  Passaggio 1: Preparare l'app.
+##  <a name="step-1-prepare-the-app"></a>Passaggio 1: Preparare l'app.
 Prima di applicare i criteri MAM a un'app è necessario eseguire il wrapping dell'app con lo strumento di wrapping delle app di Microsoft Intune.  Per istruzioni su come scaricare e usare lo strumento di wrapping delle app, vedere le pagine seguenti:
 
-- [Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 
-- [Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+- [Preparare le app per iOS per la gestione delle app mobili con lo strumento di wrapping delle app di Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
+- [Preparare le app per Android per la gestione delle app mobili con lo strumento di wrapping delle app di Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
 
 >[!IMPORTANT]  
 >Questa versione dello strumento di wrapping delle app, che supporta i dispositivi non registrati in Intune, è disponibile in iOS e nella versione di anteprima pubblica di Android. È possibile scaricare lo strumento da [questo repository GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) per iOS e da [questo repository GitHub](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) per Android.
 
-## Passaggio 2: Aggiungere l'app.
+## <a name="step-2-add-the-app"></a>Passaggio 2: Aggiungere l'app.
 
 Per associare l'app line-of-business con i criteri MAM è necessario aggiungere i dettagli dell'app alla sottoscrizione/tenant Intune con la seguente procedura:
 
@@ -49,9 +49,9 @@ Per associare l'app line-of-business con i criteri MAM è necessario aggiungere 
   ![Schermata del pannello App line-of-business con il pulsante Aggiungi app personalizzata nella parte superiore](../media/mam-azure-portal-add-lob-app-action.png)
 3.  Specificare il nome dell'app, l'identificatore del bundle nel campo Identificatore dell'app e la piattaforma (iOS o Android).
 
-  ![Schermata del pannello Aggiungi app personalizzata ](../media/mam-azure-portal-add-app-details.png) Questo passaggio crea una voce elenco unica per l'app.  L'app viene anche visualizzata nell'elenco App di destinazione di un criterio MAM del tenant, come descritto nel passaggio successivo.
+  ![Screenshot del pannello Aggiungi app personalizzata ](../media/mam-azure-portal-add-app-details.png) Questo passaggio crea una voce unica per l'app.  L'app viene anche visualizzata nell'elenco App di destinazione di un criterio MAM del tenant, come descritto nel passaggio successivo.
 
-## Passaggio 3: Applicare i criteri MAM
+## <a name="step-3-apply-mam-policies"></a>Passaggio 3: Applicare i criteri MAM
 Dopo aver caricato nel servizio i metadati dell'app, questa appare nell'elenco delle app.  È ora possibile [creare un nuovo criterio o modificare un criterio esistente](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) e applicarlo alla riga dell'app line-of-business aggiunta nel passaggio 2.
 
 >[!IMPORTANT]
@@ -59,15 +59,15 @@ Dopo aver caricato nel servizio i metadati dell'app, questa appare nell'elenco d
 
 
   ![Schermata del pannello App di destinazione con la nuova app line-of-business](../media/mam-azure-portal-lob-on-targeted-app-list.png)
-## Passaggio 4: Distribuire l'app.
+## <a name="step-4-distribute-the-app"></a>Passaggio 4: Distribuire l'app.
 È possibile distribuire app agli utenti finali nei modi seguenti:
 * Per i dispositivi registrati in una soluzione MDM di terze parti è possibile distribuire le app con la soluzione MDM.
 * Per i dispositivi non gestiti da una soluzione MDM occorre una soluzione personalizzata. Gli utenti finali dovranno scaricare e installare l'app sul loro dispositivo.
 
-## Modifica dei metadati
+## <a name="changing-the-metadata"></a>Modifica dei metadati
 Per la modifica di dettagli dell'app come il nome o l'identificatore bundle è necessario [rimuovere l'app](#remove-apps) e quindi [aggiungerla](#step-2-add-the-app) con i nuovi metadati.
 
-##  Rimuovere app
+##  <a name="remove-apps"></a>Rimuovere app
 È possibile rimuovere un'app line-of-business dall'elenco di app.  L'app viene rimossa dall'elenco e l'associazione ai criteri MAM viene eliminata, ma l'app non viene rimossa o disinstallata dal dispositivo dell'utente finale.  
 
 1.  Nel [portale Azure](https://portal.azure.com/), andare a **Gestione di applicazioni mobili di Intune > Impostazioni**.  Nel pannello **Impostazioni** scegliere **Line-of-business** per aprire l'elenco delle app esistenti.  
@@ -82,6 +82,6 @@ Per la modifica di dettagli dell'app come il nome o l'identificatore bundle è n
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

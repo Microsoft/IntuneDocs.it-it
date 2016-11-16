@@ -3,8 +3,9 @@ title: Fase pilota | Microsoft Intune
 description: Suggerimenti per la fase pilota di una distribuzione di Intune.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 14e55841-37f1-472c-9678-a1ba847cb331
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: cdaa159ba46036e966a3a4585192599908d7cec9
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 813b03f5d172749076723f60d4cfe0b6c50a261c
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: cdaa159ba46036e966a3a4585192599908d7cec9
 # Distribuzione pilota
 La fase pilota è la possibilità di testare l'implementazione tecnica, il piano di comunicazione e i piani di formazione e supporto in un ambiente di produzione di dimensioni ridotte.
 
-## Perché questa fase è importante?
+## è importante assicurarne l'efficienza.
 L'esecuzione di una fase pilota consente di visualizzare eventuali problemi tecnici che gli utenti possono incontrare e di gestirli prima dell'implementazione completa del prodotto nell'organizzazione. Questa fase consente inoltre di convalidare l'esperienza utente e di apportare modifiche per garantire un'implementazione più efficace. Con un'attenta pianificazione e la definizione di metriche corrette, chiare e concise il team di progetto e gli utenti possono essere preparati a un'esperienza positiva e all'eventuale implementazione.
 Per individuare l'ambito e definire la fase pilota dell'implementazione, è consigliabile consultare le domande preliminari.
 
@@ -108,6 +109,6 @@ Ecco alcuni problemi che si possono verificare durante la fase **pilota**.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

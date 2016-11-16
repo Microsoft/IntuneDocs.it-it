@@ -1,8 +1,9 @@
 ---
-title: Annullare la registrazione del dispositivo da Intune se sono state rifiutate le Condizioni per l'utilizzo | Microsoft Intune
-description: "Descrive come annullare la registrazione di un dispositivo Android da Intune se sono state rifiutate le Condizioni per l'utilizzo e non è possibile accedere all'app Portale aziendale"
+title: Unenroll your device from Intune if you declined "Terms of Use" | Microsoft Intune
+description: "Descrive come annullare la registrazione di un dispositivo Android da Intune se sono state rifiutate le Condizioni per l&quot;utilizzo e non è possibile accedere all&quot;app Portale aziendale"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,18 +14,18 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 373b349a6a43e79d83ce44a8c1670410ca17c6cf
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: 4f5088bc645fed0451885078f5ab0dcd04a33d81
 
 
 ---
 
 
-# Annullare la registrazione del dispositivo da Intune se sono state rifiutate le Condizioni per l'utilizzo
+# Annullare la registrazione del dispositivo da Intune se sono state rifiutate le "Condizioni per l'utilizzo"
 
-Il modo migliore per annullare la registrazione del dispositivo Android è accettare le Condizioni per l'utilizzo, accedere all'app Portale aziendale e quindi usare [queste istruzioni](unenroll-your-device-from-intune-android.md) per annullare la registrazione. Tuttavia, se le Condizioni per l'utilizzo sono state rifiutate durante il tentativo di accesso all'app Portale aziendale, non saranno consentiti altri tentativi di accesso all'app Portale aziendale e, pertanto, sarà necessario usare queste istruzioni "alternative" per annullare la registrazione del dispositivo.
+Il modo migliore per annullare la registrazione del dispositivo Android è accettare le Condizioni per l'utilizzo, accedere all'app Portale aziendale e quindi usare [queste istruzioni](unenroll-your-device-from-intune-android.md) per annullare la registrazione. Tuttavia, se le Condizioni per l'utilizzo sono state rifiutate durante il tentativo di accesso all'app Portale aziendale, non saranno consentiti altri tentativi di accesso all'app Portale aziendale. In questo caso è necessario usare queste istruzioni "alternative" per annullare la registrazione del dispositivo.
 
-Quando si disinstalla l'app Portale aziendale, viene anche annullata la registrazione del dispositivo da Intune, quindi il dispositivo non potrà più accedere alle risorse aziendali.  Per altre informazioni su cosa accade quando viene annullata la registrazione, vedere [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
+Quando si disinstalla l'app Portale aziendale, viene anche annullata la registrazione del dispositivo da Intune. Il dispositivo non sarà più in grado di accedere alle risorse aziendali. Per altre informazioni su cosa accade quando viene annullata la registrazione, vedere [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 
 Prima di disinstallare l'app Portale aziendale, è necessario passare all'impostazione **Device Administrators** e disattivare **Portale aziendale**. La procedura può variare leggermente a seconda del dispositivo Android in uso.
 
@@ -34,15 +35,14 @@ Per annullare la registrazione del dispositivo da Intune e disinstallare l'app P
 
     Al termine di questo passaggio la registrazione del dispositivo verrà immediatamente annullata.
 
-2.  Deselezionare la casella di controllo accanto a **Portale aziendale** o disattivare il portale.
+2.  Deselezionare la casella accanto a **Portale aziendale** o disattivare il portale.
 
     Ora è possibile disinstallare l'app Portale aziendale.
 
-Serve ancora assistenza? Contattare l'amministratore IT (per le informazioni di contatto, controllare il [sito Web del portale aziendale](http://portal.manage.microsoft.com)) o scrivere al team Microsoft Android all'indirizzo wintunedroidfbk@microsoft.com.
+Serve ancora assistenza? Contattare l'amministratore IT (accedere al [sito Web del portale aziendale](http://portal.manage.microsoft.com) per informazioni sui contatti) oppure scrivere al team Microsoft Android all'indirizzo wintunedroidfbk@microsoft.com.
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

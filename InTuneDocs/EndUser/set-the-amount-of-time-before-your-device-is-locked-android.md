@@ -1,10 +1,11 @@
 ---
-title: Impostare l'intervallo prima che il dispositivo venga bloccato | Microsoft Intune
+title: Impostare l&quot;intervallo prima che il dispositivo venga bloccato | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 952c99399c7eaaf9a36e7528bb1b5b70852d8e3e
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 471c30b4849c77cd73d0e3189cb640586e35c34a
 
 
 ---
 
 
-# Impostare l'intervallo prima che il dispositivo venga bloccato
+# <a name="set-the-amount-of-time-before-your-device-is-locked"></a>Impostare l'intervallo prima che il dispositivo venga bloccato
 
 Per rendere più sicuri i dati sul dispositivo Android, l'amministratore IT può impostare un criterio che richiede di impostare l'intervallo in cui il dispositivo può rimanere inattivo prima che venga bloccato automaticamente. Per impostare l'intervallo prima che il dispositivo venga bloccato, seguire questa procedura.
 
@@ -35,6 +36,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

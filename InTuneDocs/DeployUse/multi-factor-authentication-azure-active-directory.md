@@ -2,8 +2,8 @@
 title: "Autenticazione a più fattori con Azure | Microsoft Intune"
 description: "Come richiedere l&quot;autenticazione a più fattori in Azure AD per la registrazione del dispositivo."
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -19,7 +19,7 @@ ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 ---
 
-# Autenticazione a più fattori per Microsoft Intune
+# <a name="multifactor-authentication-for-microsoft-intune"></a>Autenticazione a più fattori per Microsoft Intune
 
 Intune integra l'autenticazione a più fattori (MFA) di Azure AD per la registrazione del dispositivo per consentire di proteggere le risorse aziendali. Per questo tipo di autenticazione sono necessari altri fattori di autenticazione, ad esempio l'autenticazione di testo, oltre a nomi utente e password. Tale autenticazione è supportata per iOS, Android, Windows 8.1 o versione successiva o Windows Phone 8.1 o dispositivi successivi.
 
@@ -27,7 +27,7 @@ Intune integra l'autenticazione a più fattori (MFA) di Azure AD per la registra
 >
 > Nelle versioni precedenti di Configuration Manager (precedenti alla versione 1610), viene visualizzata l'impostazione relativa all'autenticazione a più fattori nella console di amministrazione. Non tentare di configurare l'autenticazione a più fattori nella console di amministrazione di Configuration Manager in quanto non funzionerà. Configurare l'autenticazione a più fattori come descritto in questo argomento.
 
-### Configurare Intune per la richiesta dell'autenticazione a più fattori alla registrazione del dispositivo
+### <a name="configuring-intune-to-require-multifactor-authentication-at-device-enrollment"></a>Configurare Intune per la richiesta dell'autenticazione a più fattori alla registrazione del dispositivo
 Per richiedere l'autenticazione a più fattori alla registrazione del dispositivo, seguire questa procedura:
 
 1. Accedere al [portale di Microsoft Azure](https://manage.windowsazure.com) con le credenziali di amministratore.

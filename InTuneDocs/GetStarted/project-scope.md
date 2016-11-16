@@ -1,10 +1,11 @@
 ---
-title: Definizione dell'ambito | Microsoft Intune
-description: Suggerimenti per la fase dell'ambito del progetto di una distribuzione di Intune.
+title: Definizione dell&quot;ambito | Microsoft Intune
+description: Suggerimenti per la fase dell&quot;ambito del progetto di una distribuzione di Intune.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 8bd547eb70f1b933a9dee578a9f843b4cbdd7b57
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 500d97e79471ce78434729457bc4c6b82e23aa1e
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 8bd547eb70f1b933a9dee578a9f843b4cbdd7b57
 Nella fase di definizione dell'ambito vengono stabiliti gli obiettivi, le tempistiche e le metriche di successo, vengono definiti i fattori chiave della conformità organizzativa, viene costituito il team di progetto e vengono avviate le operazioni preliminari per tutte le fasi dell'implementazione di Microsoft Intune nell'organizzazione in modo da garantire un'esperienza ottimale per gli utenti.
 È necessario investire il tempo e l'impegno adeguati per definire obiettivi a lungo termine affinché il piano rifletta tutte le procedure necessarie al raggiungimento di questi obiettivi. Anche se è sempre possibile ottimizzare la strategia in corso di svolgimento, disporre di un piano di conformità completo strettamente allineato con la distribuzione tecnica di base è fondamentale per il successo complessivo.
 
-## Perché questa fase è importante?
+## è importante assicurarne l'efficienza.
 La gestione delle modifiche rappresenta sempre l'ostacolo principale nell'implementazione di nuove tecnologie. L'introduzione di un cambiamento positivo implica un'attenta pianificazione, a partire dalla primissima comunicazione in merito a come verrà modificata l'esperienza dell'utente all'inizio e durante tutto il ciclo di adozione. L'utilizzo è il punto di partenza per definire l'impatto complessivo dell'investimento e gli utenti finali rappresentano la chiave per ottenere un utilizzo di successo.
 Per individuare l'ambito e definire la fase di implementazione del progetto, è consigliabile consultare le domande preliminari.
 
@@ -60,7 +61,7 @@ La maggior parte dell'impegno durante la fase di definizione dell'ambito ruota i
 
 
  > [!NOTE]
- > 
+ >
  > Quando si lavora sull'ambito del progetto, possono essere utili questi modelli:
  > > - [Modello decisionale Intune o Intune con Configuration Manager](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
  > - [Modello di pianificazione per app mobili](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
@@ -113,6 +114,6 @@ Ecco alcuni problemi che si possono verificare durante la fase di **definizione 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

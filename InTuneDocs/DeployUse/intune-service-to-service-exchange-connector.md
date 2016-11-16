@@ -2,7 +2,8 @@
 title: Exchange Connector per Exchange Online | Microsoft Intune
 description: Connettere Intune al servizio di Office 365 Exchange per supportare la gestione di dispositivi mobili (MDM) di Exchange ActiveSync.
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,29 +14,29 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: a6438bb3ca21e5c46dca5ebe69266fd9bce9a4b8
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 4cee7aa4ee650f21c2ab6f9123976b2149141812
 
 
 ---
 
-# Configurare Intune Service to Service Connector per Exchange Online
+# <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Configurare Intune Service to Service Connector per Exchange Online
 
-Usare queste informazioni per connettere Microsoft Intune ed Exchange Online oppure il nuovo servizio Exchange Online dedicato. Per determinare se la configurazione dell'ambiente Exchange Online dedicato è **nuova** o **legacy**, contattare l'account manager. Intune supporta solo una connessione con Exchange Connector di qualsiasi tipo per ogni sottoscrizione.
+Usare queste informazioni per connettere Microsoft Intune ed Exchange Online oppure il nuovo servizio Exchange Online dedicato. Per determinare se la configurazione dell'ambiente Exchange Online dedicato è la versione **nuova** o **legacy**, contattare l'account manager. Intune supporta solo una connessione con Exchange Connector di qualsiasi tipo per ogni sottoscrizione.
 
-## Requisiti per Service to Service Connector
-**Service to Service Connector** supporta solo Exchange Online o il nuovo ambiente Exchange Online dedicato e non presenta requisiti per l'infrastruttura locale.
+## <a name="service-to-service-connector-requirements"></a>Requisiti per Service to Service Connector
+**Service to Service Connector** supporta solo Exchange Online o l'ambiente Exchange Online dedicato e non presenta requisiti per l'infrastruttura locale.
 
 |Requisito|Altre informazioni|
 |---------------|--------------------|
 |Exchange Online configurato e in esecuzione|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |Autorità di gestione dei dispositivi mobili| [Impostare l'autorità di gestione dei dispositivi mobili su Microsoft Intune](prerequisites-for-enrollment.md#set-mobile-device-management-authority)|
 |Versione di Microsoft Exchange|Exchange Online o il nuovo servizio Exchange Online dedicato|
-|Configurare la sincronizzazione di Active Directory|Prima di poter usare Intune Connector è necessario [configurare la sincronizzazione di Active Directory](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), in modo che gli utenti e i gruppi di sicurezza locali siano sincronizzati con l'istanza di Azure Active Directory.|
+|Sincronizzazione di Active Directory|Prima di poter usare Intune Connector è necessario [configurare la sincronizzazione di Active Directory](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3), in modo che gli utenti e i gruppi di sicurezza locali siano sincronizzati con l'istanza di Azure Active Directory.|
 
-### Requisiti dei cmdlet di Exchange
+### <a name="exchange-cmdlet-requirements"></a>Requisiti dei cmdlet di Exchange
 
-È anche necessario creare un account utente di Exchange Online, che viene usato da Intune Exchange Connector. L'account deve avere autorizzazioni per l'uso della console di amministrazione di Intune e per l'esecuzione dei cmdlet Exchange di Windows PowerShell obbligatori elencati di seguito.
+È anche necessario creare un account utente di Exchange Online, che viene usato da Intune Exchange Connector. L'account deve avere autorizzazioni per l'uso della console di amministrazione di Intune e per l'esecuzione dei seguenti cmdlet Exchange di Windows PowerShell obbligatori:
 
  - Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
  - Get-MobileDeviceMailboxPolicy, Set-MobileDeviceMailboxPolicy, New-MobileDeviceMailboxPolicy, Remove-MobileDeviceMailboxPolicy
@@ -44,26 +45,26 @@ Usare queste informazioni per connettere Microsoft Intune ed Exchange Online opp
  - Get-MobileDevice
  - Get-ActiveSyncDeviceClass
 
-## Configurare Service to Service Connector
+## <a name="set-up-the-service-to-service-connector"></a>Configurare Service to Service Connector
 
-1. Aprire la [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) con un account utente con diritti di amministratore di Exchange e autorizzazioni per i cmdlet [sopra elencati](#exchange-cmdlet-requirements). Microsoft Intune usa l'indirizzo di posta elettronica dell'utente attualmente connesso per configurare la connessione.
+1. Aprire la [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) con un account utente provvisto di diritti di amministratore di Exchange e autorizzazioni per i cmdlet [elencati in precedenza](#exchange-cmdlet-requirements). Microsoft Intune usa l'indirizzo di posta elettronica dell'utente attualmente connesso per configurare la connessione.
 
-2.  Nel riquadro dei collegamenti alle aree di lavoro scegliere **AMMINISTRAZIONE**, quindi scegliere **Gestione dei dispositivi mobili** > **Microsoft Exchange** > **Configura connessione Exchange**.
+2.  Nel riquadro dei collegamenti alle aree di lavoro scegliere **AMMINISTRAZIONE**>**Gestione dei dispositivi mobili** > **Microsoft Exchange** > **Configura connessione Exchange**.
 ![Configurare la pagina Service to Service Connector](../media/intunesa5cservicetoserviceconnector.png)
 
 3.  Nella pagina **Configura connessione Exchange** scegliere **Configura Service to Service Connector**.
 
 
-Service to Service Connector viene configurato e sincronizzato automaticamente con Exchange Online o il nuovo ambiente Exchange Online dedicato.
+Service to Service Connector viene configurato automaticamente e sincronizzato con Exchange Online o con il nuovo ambiente Exchange Online dedicato.
 
-## Convalidare la connessione a Exchange
+## <a name="validate-your-exchange-connection"></a>Convalidare la connessione a Exchange
 
-Dopo aver configurato Exchange Connector, nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) scegliere **Amministrazione** e passare a **Gestione dei dispositivi mobili** > **Microsoft Exchange** e verificare che i dettagli specificati siano visualizzati in **Informazioni sulla connessione Exchange**.
+Dopo aver configurato correttamente Exchange Connector, accedere alla [console di amministrazione di Microsoft Intune](http://manage.microsoft.com). Scegliere **Amministrazione**> **Gestione dei dispositivi mobili** > **Microsoft Exchange**. Verificare che i dettagli specificati appaiano in **Informazioni sulla connessione Exchange**.
 
 È inoltre possibile verificare la data e ora dell'ultimo tentativo di sincronizzazione riuscito.
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

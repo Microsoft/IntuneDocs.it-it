@@ -3,6 +3,7 @@ title: Come distribuire le app | Microsoft Intune
 description: Usare le informazioni in questo argomento per distribuire le app con Microsoft Intune.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b6a5e2435a3cdffeaf27b0045dee9b8263cdc7a
-ms.openlocfilehash: 1e6e0656fb3da0d77dab10736e7b1607d77e6335
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 6ae7bd35157da261d0627f70933fe2a808f9e677
 
 ---
 # Distribuire app in Microsoft Intune
@@ -66,6 +67,6 @@ Dopo aver distribuito un'app, è possibile monitorarne l'avanzamento. Per altre 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

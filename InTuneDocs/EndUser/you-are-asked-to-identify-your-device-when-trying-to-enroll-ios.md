@@ -2,10 +2,10 @@
 title: Viene richiesto di identificare il dispositivo durante il tentativo di registrazione | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 852c02fabee7ec3551e34f92c5f9e44402d31ecb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
 
 
 ---
 
 
-# Viene richiesto di identificare il dispositivo durante il tentativo di registrazione
+# <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>Viene richiesto di identificare il dispositivo durante il tentativo di registrazione
 
 Se si sta provando a registrare un dispositivo iOS o Mac OS X in Intune e viene visualizzata una schermata che richiede di identificare il dispositivo, significa che almeno uno dei dispositivi è già stato registrato e assegnato al proprio account con un metodo diverso dall'app Portale aziendale. Per il corretto funzionamento dell'app Portale aziendale, è necessario indicare se il dispositivo in uso è già stato registrato in Intune.
 
@@ -34,6 +34,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

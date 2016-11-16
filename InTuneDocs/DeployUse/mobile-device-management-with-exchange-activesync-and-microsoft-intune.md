@@ -3,6 +3,7 @@ title: Gestione dei dispositivi con Exchange ActiveSync | Microsoft Intune
 description: Gestire i dispositivi mobili con la gestione di Exchange ActiveSync (EAS) usando Exchange Connector
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 9518381dfd967b8cbf8d01bf834d8148d2c2501b
+ms.sourcegitcommit: d5d5345dc6ef022e385a33ccc19b19cc022af2d5
+ms.openlocfilehash: c67ad198c1693f84c9e00d15da00a131f7d0af87
 
 
 ---
 
 # Gestione dei dispositivi mobili con Exchange ActiveSync e Microsoft Intune
-Per la gestione diretta dei dispositivi mobili con Microsoft Intune, i dispositivi devono essere [registrati in Intune](prerequisites-for-enrollment.md). In alternativa, gli amministratori possono abilitare una soluzione di gestione più limitata che usa la gestione di Exchange ActiveSync (EAS) con Exchange Connector. È possibile gestire i dispositivi con server Exchange locali o con Exchange Online usando Office 365. Intune supporta solo una connessione con Exchange Connector di qualsiasi tipo per ogni sottoscrizione.
+Per la gestione diretta dei dispositivi mobili con Microsoft Intune, i dispositivi devono essere [registrati in Intune](prerequisites-for-enrollment.md). In alternativa, gli amministratori possono abilitare una soluzione di gestione più limitata che usa la gestione di Exchange ActiveSync (EAS) con Exchange Connector. È possibile gestire i dispositivi con server Exchange locali o con Exchange Online usando Office 365. Per ogni sottoscrizione Intune supporta una sola connessione con Exchange Connector di qualsiasi tipo.
 
 ## Regole di accesso a Exchange per dispositivi mobili ##
 
@@ -36,7 +37,7 @@ Exchange Connector consente di gestire la distribuzione di Exchange nella consol
 
 
 ## Applicare i criteri per i dispositivi mobili gestiti da Exchange
-La console di Intune può essere usata per gestire [le impostazioni dei criteri EAS](exchange-activesync-policy-settings-in-microsoft-intune.md) e [limitare l'accesso alle risorse aziendali](restrict-access-to-email-and-o365-services-with-microsoft-intune.md). Per l'elenco delle impostazioni di criteri e delle funzionalità di Exchange ActiveSync supportate da dispositivi mobili specifici, vedere [Exchange ActiveSync Client Comparison Table (Tabella di confronto dei client di Exchange ActiveSync)](http://go.microsoft.com/fwlink/?LinkId=247270).
+La console di Intune può essere usata per gestire [le impostazioni dei criteri EAS](exchange-activesync-policy-settings-in-microsoft-intune.md) e [limitare l'accesso alle risorse aziendali](restrict-access-to-email-and-o365-services-with-microsoft-intune.md). Per l'elenco delle impostazioni di criteri e delle funzionalità di Exchange ActiveSync supportate da dispositivi mobili specifici, vedere [Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270) (Tabella di confronto dei client di Exchange ActiveSync).
 
 > [!NOTE]
 > Dopo aver connesso Intune a un ambiente Microsoft Exchange, i criteri EAS per tutti gli utenti gestiti mediante Intune verranno reimpostati ai criteri predefiniti correnti nel server Microsoft Exchange, salvo se in Intune sono definiti criteri più specifici.
@@ -46,6 +47,6 @@ Infine è possibile [cancellare i dati aziendali da dispositivi mobili gestiti d
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

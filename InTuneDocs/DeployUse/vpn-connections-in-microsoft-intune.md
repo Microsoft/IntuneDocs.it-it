@@ -3,8 +3,9 @@ title: Connessioni VPN | Microsoft Intune
 description: Usare i profili VPN per distribuire le impostazioni VPN agli utenti e ai dispositivi dell&quot;organizzazione.
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 188cb3890da83332431743445959bba73e7f2484
 
 
 ---
@@ -44,20 +45,20 @@ Intune supporta la creazione di profili VPN che usano i tipi di connessione segu
 
 
 
-Tipo di connessione |iOS e Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
+Tipo di connessione |iOS e Mac OS X  |Android e Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|Sì |Sì   |No    |     No    |No  |No    | Sì, (URI OMA, solo dispositivi mobili)|     
-Cisco (IPsec)|sì |No   |No  |  No|No  |No | No|
-Citrix|sì |No   |No  |  No|No  |No | No|
-Pulse Secure|Sì  |Sì |Sì   |No  |Sì  |Sì| Sì|        
-F5 Edge Client|Sì |Sì |Sì |No  |Sì  |   Sì |  Sì|   
-Dell SonicWALL Mobile Connect|Sì |Sì |Sì |No  |Sì |Sì |Sì|         
-VPN CheckPoint Mobile|Sì |Sì |Sì |Sì |Sì|Sì|Sì|
-Microsoft SSL (SSTP)|No |No |No |No |No|No|VPNv1 URI OMA*|
-Microsoft Automatico|No |No |No |No |No|Sì (URI OMA)|sì|
-IKEv2|Profilo personalizzato iOS|No |No |No |No|Sì (URI OMA)|sì|
-PPTP|Profilo personalizzato iOS|No |No |No |No|No|Sì|
-L2TP|Profilo personalizzato iOS|No |No |No |No|Sì (URI OMA)|Sì|
+Cisco AnyConnect|Sì |Sì   |No    |No  |No    | Sì, (URI OMA, solo dispositivi mobili)|     
+Cisco (IPsec)|sì |No   |No  |No  |No | No|
+Citrix|sì |No   |No  |No  |No | No|
+Pulse Secure|Sì  |Sì |Sì   |Sì  |Sì| Sì|        
+F5 Edge Client|Sì |Sì |Sì |Sì  |   Sì |  Sì|   
+Dell SonicWALL Mobile Connect|Sì |Sì |Sì |Sì |Sì |Sì|         
+VPN CheckPoint Mobile|Sì |Sì |Sì |Sì|Sì|Sì|
+Microsoft SSL (SSTP)|No |No |No |No|No|VPNv1 URI OMA*|
+Microsoft Automatico|No |No |No |No|Sì (URI OMA)|sì|
+IKEv2|Profilo personalizzato iOS|No |No |No|Sì (URI OMA)|sì|
+PPTP|Profilo personalizzato iOS|No |No |No|No|Sì|
+L2TP|Profilo personalizzato iOS|No |No |No|Sì (URI OMA)|Sì|
 
 \* Senza impostazioni aggiuntive che sono altrimenti disponibili per Windows 10.
 
@@ -96,6 +97,8 @@ Per eseguire l'autenticazione al server VPN, l'utente deve specificare nome uten
 
 > [!Note]
 > Un profilo VPN per i dispositivi Android for Work abilita una connessione VPN solo per le app installate nel profilo di lavoro del dispositivo.
+>
+> Alcuni tipi di connessione VPN supportano la funzione VPN per app per i dispositivi Android for Work per i dispositivi di lavoro e per l'abilitazione della funzione VPN per app per le app distribuite tramite Intune.  
 
 3. Usare la tabella seguente per configurare le impostazioni del profilo VPN:
 

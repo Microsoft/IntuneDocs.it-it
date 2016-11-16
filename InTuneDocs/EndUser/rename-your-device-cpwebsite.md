@@ -2,8 +2,8 @@
 title: Rinominare il dispositivo dal sito Web del portale aziendale | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 905d29289f621bcfd4c7faccb119adcf5ce9ef63
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a7a5faffc77d1b55bcb0216f0c87aeba2e12bda7
 
 
 ---
 
 
-# Rinominare il dispositivo dal sito Web del portale aziendale
+# <a name="rename-your-device-from-the-company-portal-website"></a>Rinominare il dispositivo dal sito Web del portale aziendale
 
 Se si decide di rinominare il dispositivo, è possibile farlo in modalità remota dal [sito Web del portale aziendale](http://portal.manage.microsoft.com). Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati in Intune e per svolgere la maggior parte delle attività eseguibili tramite l'app Portale aziendale.
 
@@ -40,6 +40,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

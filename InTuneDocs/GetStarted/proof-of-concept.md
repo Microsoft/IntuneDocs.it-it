@@ -3,8 +3,9 @@ title: Modello di verifica | Microsoft Intune
 description: Suggerimenti per la fase del modello di verifica di una distribuzione di Intune.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 57f6d51a3f1e05a7edd260b0923d099510114a9f
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 5b19835e7f726e23d402bbab408796cad9028bd0
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: 57f6d51a3f1e05a7edd260b0923d099510114a9f
 # Modello di verifica (PoC)
 Nella fase del modello di verifica è necessario definire se la distribuzione è in grado di soddisfare i requisiti aziendali. Questa fase prevede una topologia semplice progettata per convalidare specifici scenari tecnici.  La distribuzione deve essere eseguita in un ambiente di test e non deve coinvolgere gli utenti dell'ambiente di produzione.
 
-## Perché questa fase è importante?
+## è importante assicurarne l'efficienza.
 Un modello di verifica è importante per comprendere la fattibilità della distribuzione prima del passaggio agli utenti della fase pilota. Deve essere considerata un esperimento su scala ridotta da cui si apprenderà il funzionamento di Microsoft Intune nell'ambiente in uso. Deve inoltre consentire di convalidare scenari specifici prima di investire nelle risorse necessarie per una fase pilota. Gli aspetti appresi nel modello di verifica devono influenzare la progettazione della fase pilota e di produzione.
 Per individuare l'ambito e definire la fase del modello di verifica, è consigliabile consultare le domande preliminari.
 
@@ -74,10 +75,10 @@ Ecco alcuni problemi che si possono verificare durante la fase del **modello di 
     **Soluzione:** collaborare con i team responsabili della sponsorizzazione, della rete e degli utenti per comprendere i requisiti di una soluzione di gestione client.
 
 ### Passaggi successivi
-[Fase pilota](pilot.md)
+[Distribuzione pilota](pilot.md)
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

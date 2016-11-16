@@ -1,8 +1,9 @@
 ---
-title: Gestire l'accesso Web con il browser gestito | Microsoft Intune
-description: Distribuire l'applicazione Managed Browser per limitare l'esplorazione del Web e il trasferimento dei dati Web ad altre app.
+title: Gestire l&quot;accesso Web con il browser gestito | Microsoft Intune
+description: Distribuire l&quot;applicazione Managed Browser per limitare l&quot;esplorazione del Web e il trasferimento dei dati Web ad altre app.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: d4d05508e44fe0864ce6dabf0864f6ed67109a7c
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: a85aa3ce78425f2e00479ab0e48338e5eef8aec3
 
 
 ---
@@ -154,6 +155,6 @@ Se distribuiti diversi criteri browser gestito a un dispositivo e si verifica un
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

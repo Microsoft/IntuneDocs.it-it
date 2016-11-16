@@ -3,6 +3,7 @@ title: Uso del sito Web del Portale aziendale di Intune | Microsoft Intune
 description: "Descrive il sito Web del portale aziendale e fornisce i collegamenti alle procedure per attività che è possibile eseguire nel sito Web"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: f44f4785f768e6fea8532199b28d3621248e2dd4
+ms.sourcegitcommit: d69ae68d704a7a4178c43cb1239b27d132221f5a
+ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
 
 
 ---
@@ -36,13 +37,13 @@ Il [sito Web del portale aziendale](http://portal.manage.microsoft.com) è una p
 
 -   [Sync your device manually to speed up slow app installations (Sincronizzare il dispositivo manualmente per accelerare le installazioni di app lente)](sync-your-device-manually-cpwebsite.md)
 
--   Trovare le informazioni di contatto dell'amministratore IT, se configurate dall'amministratore IT.
+-   Trovare le informazioni di contatto dell'amministratore IT, se configurate dall'amministratore IT
 
 -   Visualizzare i dettagli sul dispositivo, ad esempio se è conforme ai criteri della società o dell'istituto di istruzione
 
 -   Gestire in remoto il PC (opzione disponibile solo per i PC)
 
-Sul **sito Web del portale aziendale** è possibile eseguire la maggior parte delle attività eseguibili usando l' **app Portale aziendale** installata nel dispositivo. Per altre informazioni sull'app Portale aziendale, sulla registrazione di un dispositivo in Intune e altro ancora toccare il collegamento corrispondente al tipo di dispositivo in uso:
+Sul **sito Web del portale aziendale** è possibile eseguire la maggior parte delle attività eseguibili usando l' **app Portale aziendale** installata nel dispositivo. Per altre informazioni sull'app Portale aziendale, su come registrare un dispositivo in Intune e su altro ancora, toccare il collegamento corrispondente al tipo di dispositivo in uso:
 
 - [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
 - [Uso del dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
@@ -50,6 +51,6 @@ Sul **sito Web del portale aziendale** è possibile eseguire la maggior parte de
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

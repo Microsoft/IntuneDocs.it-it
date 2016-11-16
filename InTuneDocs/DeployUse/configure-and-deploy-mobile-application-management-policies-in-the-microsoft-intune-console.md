@@ -14,13 +14,13 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
 
 
 ---
 
-# Configurare e distribuire criteri di gestione delle applicazioni mobili nella console di Microsoft Intune
+# <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurare e distribuire criteri di gestione delle applicazioni mobili nella console di Microsoft Intune
 I criteri di gestione delle applicazioni mobili (MAM, Mobile Application Management) in Microsoft Intune consentono di modificare la funzionalità delle app distribuite per allinearle ai criteri aziendali di conformità e sicurezza. Ad esempio, è possibile limitare le operazioni Taglia, Copia e Incolla in un'app gestita oppure configurare un'app per aprire tutti i collegamenti Web in Managed Browser.
 
 I criteri di gestione delle applicazioni mobili supportano:
@@ -59,7 +59,7 @@ Ad esempio, utilizzando Outlook app:
 > [!TIP]
 > Se si usa Intune con Configuration Manager, vedere [Come controllare le app usando i criteri di gestione delle applicazioni mobili in Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
-## Creare e distribuire un'app con criterio di gestione delle applicazioni mobili
+## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>Creare e distribuire un'app con criterio di gestione delle applicazioni mobili
 
 -   **Passaggio 1:** Ottenere il collegamento a un'app gestita da criteri, creare un'app sottoposta a wrapping o usare Intune App SDK per sviluppare un'app abilitata per MAM.
 
@@ -71,15 +71,15 @@ Ad esempio, utilizzando Outlook app:
 
 -   **Passaggio 5:** Monitorare la distribuzione dell'app.
 
-## Passaggio 1: Ottenere il collegamento a un'app gestita da criteri, creare un'app sottoposta a wrapping o usare Intune App SDK per sviluppare un'app abilitata per MAM
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Passaggio 1: Ottenere il collegamento a un'app gestita da criteri, creare un'app sottoposta a wrapping o usare Intune App SDK per sviluppare un'app abilitata per MAM
 
 Nell'App Store trovare e prendere nota dell'URL dell'app gestita da criteri che si vuole distribuire. Ad esempio, l'URL dell'app Microsoft Word per iPad è **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 
-## Passaggio 2: Pubblicare l'app nello spazio di archiviazione cloud
+## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>Passaggio 2: Pubblicare l'app nello spazio di archiviazione cloud
 Quando si pubblica un'app gestita, le procedure possono essere diverse a seconda che l'app sia gestita tramite criteri o elaborata con lo strumento di wrapping delle app di Microsoft Intune per iOS.
 
-#### Per pubblicare un'app gestita da criteri
+#### <a name="to-publish-a-policy-managed-app"></a>Per pubblicare un'app gestita da criteri
 
 1.  Quando si è pronti per caricare l'app nello spazio di archiviazione cloud, seguire le istruzioni in [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
 
@@ -93,7 +93,7 @@ Dopo aver completato il caricamento, verrà visualizzato **Sì** per **Criteri d
 
 Dopo avere verificato il corretto caricamento dell'app, continuare con il passaggio 3.
 
-#### Per pubblicare un'app elaborata con lo strumento di wrapping delle app di Microsoft Intune
+#### <a name="to-publish-an-app-that-was-processed-through-the-microsoft-intune-app-wrapping-tool"></a>Per pubblicare un'app elaborata con lo strumento di wrapping delle app di Microsoft Intune
 
 1.  Quando si è pronti per caricare l'app nello spazio di archiviazione cloud, seguire le istruzioni in [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
 
@@ -105,7 +105,7 @@ Dopo aver completato il caricamento, verrà visualizzato **Sì** per **Criteri d
 
 Dopo avere verificato il corretto caricamento dell'app, continuare con il passaggio 3.
 
-## Passaggio 3: Creare criteri di gestione delle applicazioni mobili
+## <a name="step-3-create-a-mobile-application-management-policy"></a>Passaggio 3: Creare criteri di gestione delle applicazioni mobili
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Panoramica** &gt; **Aggiungi criterio**.
 
@@ -142,7 +142,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
 
 Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell'area di lavoro **Criteri**.
 
-## Passaggio 4: Associare l'app ai criteri di gestione delle applicazioni mobili e quindi distribuirla
+## <a name="step-4-associate-the-app-with-a-mobile-application-management-policy-and-then-deploy-the-app"></a>Passaggio 4: Associare l'app ai criteri di gestione delle applicazioni mobili e quindi distribuirla
 Verificare di selezionare i criteri di gestione delle applicazioni mobili nella pagina **Gestione delle app mobili** della finestra di dialogo **Gestisci distribuzione** per associare i criteri all'app.
 
 Per i dettagli vedere [Distribuire app in Microsoft Intune](deploy-apps.md).
@@ -150,7 +150,7 @@ Per i dettagli vedere [Distribuire app in Microsoft Intune](deploy-apps.md).
 > [!IMPORTANT]
 > Se viene annullata la registrazione del dispositivo da Intune, i criteri non vengono rimossi dalle app. Nelle app con i criteri applicati verranno mantenute le impostazioni di questi ultimi anche dopo che l'app è stata disinstallata e reinstallata.
 
-### Cosa fare quando un'app è già stata distribuita nei dispositivi
+### <a name="what-to-do-when-an-app-is-already-deployed-on-devices"></a>Cosa fare quando un'app è già stata distribuita nei dispositivi
 Possono verificarsi situazioni in cui si distribuisce un'app e un utente o un dispositivo ha già una versione non gestita dell'app installata. Ad esempio, è possibile che un utente abbia installato Microsoft Word dall'App Store.
 
 In questo caso, è necessario chiedere all'utente di disinstallare manualmente la versione non gestita in modo da poter installare la versione gestita che è stata configurata.
@@ -160,10 +160,10 @@ Tuttavia, per i dispositivi che eseguono iOS 9 e versioni successive, Intune chi
 > [!TIP]
 > Se il dispositivo è in modalità di supervisione, Intune assumerà la gestione dell'app esistente senza chiedere l'autorizzazione dell'utente.
 
-## Passaggio 5: Monitorare la distribuzione dell'app
+## <a name="step-5-monitor-the-app-deployment"></a>Passaggio 5: Monitorare la distribuzione dell'app
 Dopo aver creato e distribuito un'app associata ai criteri di gestione delle applicazioni mobili, usare la procedura seguente per monitorare l'app e risolvere eventuali conflitti di criteri.
 
-#### Per visualizzare lo stato della distribuzione
+#### <a name="to-view-the-status-of-the-deployment"></a>Per visualizzare lo stato della distribuzione
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Gruppi** &gt; **Panoramica**.
 
@@ -181,7 +181,7 @@ Dopo aver creato e distribuito un'app associata ai criteri di gestione delle app
 
 6.  Dopo aver identificato un conflitto, è possibile modificare le impostazioni dei criteri in conflitto per usare la stessa impostazione o distribuire un solo criterio per l'app e l'utente.
 
-### Come vengono risolti i conflitti di criteri
+### <a name="how-policy-conflicts-are-resolved"></a>Come vengono risolti i conflitti di criteri
 Quando si verifica un conflitto dei criteri di gestione delle applicazioni mobili nella prima distribuzione all'utente o al dispositivo, il valore di impostazione specifico in conflitto verrà rimosso dai criteri distribuiti all'app. L'app userà un valore in conflitto incorporato.
 
 Se nelle successive distribuzioni all'utente o al dispositivo si verifica un conflitto dei criteri di gestione delle applicazioni mobili, il valore di impostazione specifico in conflitto non verrà aggiornato nei criteri distribuiti all'app. L'app userà il valore esistente per tale impostazione.
@@ -194,6 +194,6 @@ Nei casi in cui il dispositivo o l'utente riceva due criteri in conflitto, si ap
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

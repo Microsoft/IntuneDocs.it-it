@@ -3,6 +3,7 @@ title: Impostare la gestione di Windows Phone 8.0 | Microsoft Intune
 description: Abilitare la gestione di dispositivi mobili (MDM) per i dispositivi Windows Phone 8.0 con Microsoft Intune.
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/09/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
+ms.sourcegitcommit: 067b46c4e537f6def75142411a6d6b60a63cd642
+ms.openlocfilehash: 32d1272d1e125c8a1a5b9f7c6291fb4acf14ea6e
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 Windows Phone 8.0 richiede un certificato Symantec per installare l'app Portale aziendale di Intune e per consentire la gestione del dispositivo. È necessario un certificato anche per firmare applicazioni line-of-business. L'argomento seguente si riferisce solo a Windows Phone 8.0. Per gestire i dispositivi Windows Phone 8.1 o versioni successive, compresi i dispositivi Windows 10 Mobile, vedere [Set up Windows Phone and Windows 10 Mobile management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) (Impostare la gestione di Windows Phone e Windows 10 Mobile con Microsoft Intune).
 
 > [!IMPORTANT]
-> A partire da settembre 2016 l'app Portale aziendale per Windows 8.0 e Windows Phone 8.0 non sarà più disponibile per il download.
+> A partire da settembre 2016, l'app Portale aziendale per Windows Phone 8 e Windows 8 non è più disponibile per il download.
 
 -   **Windows Phone 8**: Certificato richiesto
 -   **Windows Phone 8.1 e Windows 10 Mobile** richiedono un certificato solo se:
@@ -183,6 +184,6 @@ I requisiti di installazione per la gestione dei dispositivi mobili Windows Phon
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

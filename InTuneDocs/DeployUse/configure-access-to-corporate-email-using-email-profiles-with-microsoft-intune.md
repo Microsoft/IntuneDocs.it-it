@@ -2,8 +2,8 @@
 title: Posta elettronica aziendale con i profili di posta elettronica | Microsoft Intune
 description: "È possibile usare le impostazioni del profilo di posta elettronica per configurare le impostazioni di accesso alla posta elettronica per client di posta elettronica specifici sui dispositivi mobili."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f8767f191df76e8f166767c51fff357b251bbd4
-ms.openlocfilehash: f736c408f5a4ece65eeef35fb8d1be9a9b29c1b1
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
 
 
 ---
 
-# Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune
+# <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Nel sistema operativo di molte piattaforme per dispositivi mobili è incluso un client di posta elettronica nativo. Questo argomento descrive come impostare alcuni di questi client usando profili di posta elettronica.
 
 È possibile usare le impostazioni del profilo di posta elettronica per configurare le impostazioni di accesso alla posta elettronica per client di posta specifici sui dispositivi mobili. Nelle piattaforme supportate è possibile impostare i client di posta elettronica nativi con Microsoft Intune per consentire agli utenti di accedere alla posta elettronica aziendale da dispositivi personali senza alcuna configurazione aggiuntiva.
@@ -56,20 +59,20 @@ Oltre a configurare un account di posta elettronica sul dispositivo, è possibil
 >**Android for Work**: il profilo di Intune è applicabile solo ad app di posta elettronica specifiche nel profilo di lavoro del dispositivo. Non ha effetti sulla configurazione della posta elettronica nel profilo utente del dispositivo.
 
 
-## Proteggere i profili di posta elettronica
+## <a name="secure-email-profiles"></a>Proteggere i profili di posta elettronica
 È possibile proteggere i profili di posta elettronica mediante un certificato o una password.
 
-### Certificati
+### <a name="certificates"></a>Certificati
 Quando si crea il profilo di posta elettronica, si sceglie un profilo di certificato creato in precedenza in Intune. Questo profilo, noto come certificato di identità, viene usato per eseguire l'autenticazione in base a un profilo di certificato attendibile (o certificato radice) per stabilire se il dispositivo dell'utente è autorizzato alla connessione. Il certificato attendibile viene distribuito al computer che autentica la connessione alla posta elettronica che è in genere il server di posta elettronica nativo.
 
 Per altre informazioni su come creare e usare i profili di certificato in Intune, vedere [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteggere l'accesso alle risorse con i profili certificato).
 
-### Nome utente e password
+### <a name="user-name-and-password"></a>Nome utente e password
 L'utente esegue l'autenticazione al server di posta elettronica nativo specificando nome utente e password.
 
 Poiché la password non è contenuta nel profilo di posta elettronica, l'utente deve specificarla quando si connette alla posta elettronica.
 
-### Creare un profilo di posta elettronica
+### <a name="create-an-email-profile"></a>Creare un profilo di posta elettronica
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Aggiungi criterio**.
 
@@ -117,7 +120,7 @@ Poiché la password non è contenuta nel profilo di posta elettronica, l'utente 
 
 Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell'area di lavoro **Criteri** .
 
-## Distribuire i criteri
+## <a name="deploy-the-policy"></a>Distribuire i criteri
 
 1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire e quindi scegliere **Gestisci distribuzione**.
 
@@ -135,6 +138,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
