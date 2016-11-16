@@ -1,10 +1,10 @@
 ---
 title: Risoluzione dei problemi di accesso condizionale | Microsoft Intune
-description: Operazioni da eseguire quando gli utenti non riescono ad accedere alle risorse usando l'accesso condizionale di Intune.
+description: Operazioni da eseguire quando gli utenti non riescono ad accedere alle risorse usando l&quot;accesso condizionale di Intune.
 keywords: 
 author: karaman
 manager: angrobe
-ms.date: 07/24/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,37 +13,37 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
 
 
 ---
 
-# Risolvere i problemi di accesso condizionale
+# <a name="troubleshoot-conditional-access"></a>Risolvere i problemi di accesso condizionale
 
 In genere, un utente che tenta di accedere alla posta elettronica o a SharePoint riceve una richiesta di registrazione. La richiesta indirizza l'utente al portale aziendale.
 
 Questo argomento descrive le operazioni da eseguire quando gli utenti non riescono ad accedere alle risorse usando l'accesso condizionale di Intune.
 
 
-## Nozioni di base per il corretto funzionamento dell'accesso condizionale
+## <a name="the-basics-for-success-in-conditional-access"></a>Nozioni di base per il corretto funzionamento dell'accesso condizionale
 
 Per garantire il funzionamento dell'accesso condizionale, devono essere soddisfatte le condizioni seguenti:
 
 -   Il dispositivo deve essere gestito da Intune.
 -   Il dispositivo deve essere registrato con Azure Active Directory (AAD). In condizioni normali questa registrazione viene eseguita automaticamente durante la registrazione di Intune.
 -   Il dispositivo deve essere conforme ai criteri di conformità di Intune, sia per il dispositivo sia per l'utente del dispositivo.  Se non sono presenti criteri di conformità, è sufficiente la registrazione di Intune.
--   È necessario attivare Exchange ActiveSync sul dispositivo se l'utente recupera la posta usando il client di posta elettronica nativo del dispositivo anziché Outlook.     Tale attivazione avviene automaticamente per iOS, Windows Phone e dispositivi Android/KNOX.
+-   È necessario attivare Exchange ActiveSync sul dispositivo se l'utente recupera la posta usando il client di posta elettronica nativo del dispositivo anziché Outlook.     Tale attivazione avviene automaticamente per i dispositivi iOS, Windows Phone e Android/KNOX Standard.
 -   Intune Exchange Connector deve essere configurato correttamente. Per altre informazioni, vedere [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) (Risoluzione dei problemi di Exchange Connector in Microsoft Intune).
 
 Queste condizioni possono essere visualizzate per ogni dispositivo nel portale di gestione di Azure e nel report inventario dispositivi.
 
-## Problemi di registrazione
+## <a name="enrollment-issues"></a>Problemi di registrazione
 
  -  Il dispositivo non è registrato, quindi la registrazione risolverà il problema.
  -  L'utente ha registrato il dispositivo, ma l'aggiunta all'area di lavoro non è riuscita. L'utente deve aggiornare la registrazione dal portale aziendale.
 
-## Problemi di conformità
+## <a name="compliance-issues"></a>Problemi di conformità
 
  -  Il dispositivo non è conforme ai criteri di Intune. Problemi comuni sono i requisiti di crittografia e password. L'utente verrà reindirizzato al portale aziendale, in cui può configurare il dispositivo in modo che sia conforme.
  -  La registrazione delle informazioni di conformità per un dispositivo può richiedere tempo. Attendere qualche minuto e riprovare.
@@ -53,23 +53,23 @@ Queste condizioni possono essere visualizzate per ogni dispositivo nel portale d
 
         In genere, i dispositivi rimangono bloccati in questo stato perché si verificano problemi di connessione al servizio o perché la sincronizzazione richiede molto tempo.  Se il problema persiste con diverse configurazioni di rete (cellulare, Wi-Fi, VPN), con il riavvio del dispositivo e dopo aver verificato l'aggiornamento del provider di servizi condivisi sul dispositivo, contattare il Supporto tecnico Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
-## Problemi relativi ai criteri
+## <a name="policy-issues"></a>Problemi relativi ai criteri
 
 Quando si crea un criterio di conformità e lo si collega a un criterio di posta elettronica, entrambi i criteri devono essere distribuiti allo stesso utente, occorre quindi prestare attenzione quando si stabilisce quali criteri verranno distribuiti e a quali gruppi. Agli utenti per i quali viene applicato un solo criterio probabilmente risulterà che i dispositivi in uso non sono conformi.
 
 
-## Problemi relativi a Exchange ActiveSync
+## <a name="exchange-activesync-issues"></a>Problemi relativi a Exchange ActiveSync
 
-### Un dispositivo Android conforme riceve un avviso di quarantena
+### <a name="compliant-android-device-gets-quarantine-notice"></a>Un dispositivo Android conforme riceve un avviso di quarantena
 - Un dispositivo Android registrato e conforme può comunque ricevere un avviso di quarantena quando tenta di accedere alle risorse aziendali. Prima di scegliere il collegamento **Inizio**, l'utente deve verificare che il portale aziendale non fosse aperto quando ha tentato di accedere alle risorse. Gli utenti devono chiudere il portale aziendale, tentare nuovamente di accedere alle risorse e quindi scegliere il collegamento **Inizio**.
 
-### Un dispositivo ritirato continua a disporre dei diritti di accesso
+### <a name="retired-device-continues-to-have-access"></a>Un dispositivo ritirato continua a disporre dei diritti di accesso
 - Quando si usa Exchange Online, un dispositivo ritirato può continuare a disporre dei diritti di accesso per diverse ore dopo il ritiro. Questo avviene perché Exchange memorizza nella cache i diritti di accesso per 6 ore. Prendere in considerazione altri metodi di protezione dei dati nei dispositivi ritirati in questo scenario.
 
-### Il dispositivo è conforme e registrato con AAD ma risulta ancora bloccato
+### <a name="device-is-compliant-and-registered-with-aad-but-still-blocked"></a>Il dispositivo è conforme e registrato con AAD ma risulta ancora bloccato
 - In alcuni casi, il provisioning dell'ID di Exchange ActiveSync (EASID) a AAD viene ritardato. Una causa comune di questo problema è la limitazione, quindi attendere qualche minuto e riprovare.
 
-### Dispositivo bloccato
+### <a name="device-blocked"></a>Dispositivo bloccato
 
 Un dispositivo può essere bloccato da accesso condizionale senza che venga inviato un messaggio di posta elettronica di attivazione.
 
@@ -79,7 +79,7 @@ Un dispositivo può essere bloccato da accesso condizionale senza che venga invi
 - Controllare la presenza di attività sendemail nei log di Exchange Connector e verificare l'eventuale presenza di errori. Un esempio del comando da cercare è InviaMessaggioPostaElettronica inviato dall'account di notifica a PostaElettronicaUtente.
 - Prima di bloccare il dispositivo, Exchange Connector invia il messaggio di posta elettronica di attivazione. Se il dispositivo è offline, potrebbe non ricevere questo messaggio. Controllare se il client di posta elettronica del dispositivo recupera i messaggi di posta elettronica tramite Push anziché Poll. La perdita del messaggio da parte dell'utente potrebbe infatti dipendere anche da questa impostazione. Passare a Poll per vedere se il dispositivo riceve il messaggio di posta elettronica.
 
-## Dispositivo non conforme non bloccato
+## <a name="noncompliant-device-not-blocked"></a>Dispositivo non conforme non bloccato
 
 Nel caso di un dispositivo che non è conforme ma che continua a disporre dei diritti di accesso, procedere come segue.
 
@@ -89,10 +89,10 @@ Nel caso di un dispositivo che non è conforme ma che continua a disporre dei di
     - Usare il cmdlet PowerShell seguente per visualizzare un elenco di tutti i dispositivi mobili relativi a una cassetta postale: "Get-ActiveSyncDeviceStatistics -mailbox mbx'. Se il dispositivo non è incluso nell'elenco, non dispone dei diritti di accesso a Exchange.
     - Se il dispositivo è incluso nell'elenco, usare il cmdlet Get-CASmailbox -identity:’upn’ | fl per ottenere informazioni dettagliate sullo stato di accesso del dispositivo e passare tali informazioni al Supporto tecnico Microsoft.
 
-## Operazioni preliminari all'apertura di un ticket di supporto
+## <a name="before-you-open-a-support-ticket"></a>Operazioni preliminari all'apertura di un ticket di supporto
 Se le procedure descritte non consentono di risolvere il problema riscontrato, potrebbe essere necessario fornire alcune informazioni al Supporto tecnico Microsoft, ad esempio i log delle cassette postali OWA o i log di Exchange Connector.
 
-### Raccolta dei log delle cassette postali OWA
+### <a name="collecting-owa-mailbox-logs"></a>Raccolta dei log delle cassette postali OWA
 
 1. Accedere a OWA e scegliere il simbolo delle impostazioni (ingranaggio) accanto al nome nell'angolo superiore destro.
 2. Scegliere **Opzioni**.
@@ -104,15 +104,15 @@ Se le procedure descritte non consentono di risolvere il problema riscontrato, p
 8. Attendere uno o due minuti e tornare all'elenco dei telefoni in OWA. Verificare che il proprio telefono sia selezionato nell'elenco e quindi scegliere **Recupera il log** dal menu principale.
 9. Si dovrebbe ricevere un messaggio di posta elettronica dal proprio indirizzo con un allegato. Quando si apre un ticket di supporto, indicare il contenuto del messaggio al supporto Microsoft.
 
-### Log di Exchange Connector
+### <a name="exchange-connector-logs"></a>Log di Exchange Connector
 
-#### Informazioni generali sui log
+#### <a name="general-log-information"></a>Informazioni generali sui log
 Per visualizzare i log di Exchange Connector, usare lo strumento Visualizzatore di tracce dei servizi (https://msdn.microsoft.com/it-it/library/ms732023(v=vs.110).aspx'). Per questo strumento è necessario scaricare l'SDK di Windows Server.
 
 >[!NOTE]
 >I log si trovano in C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Sono contenuti in una serie di 30 file di log che inizia da *Connector0.log* e termina con *Connector29.log*. Il rollover da un log all'altro avviene nel momento in cui si accumulano 10 MB di dati in un log. Dopo aver generato il log Connector29, il meccanismo riparte dal log Connector0, sovrascrivendo i file di log precedenti.
 
-#### Individuazione dei log di sincronizzazione
+#### <a name="locating-sync-logs"></a>Individuazione dei log di sincronizzazione
 
 -    Per individuare una sincronizzazione completa nei log, è necessario cercare **full sync** (sincronizzazione completa). L'inizio di una sincronizzazione completa è contrassegnato dal testo seguente:
 
@@ -124,10 +124,10 @@ Per visualizzare i log di Exchange Connector, usare lo strumento Visualizzatore 
 
 -   Individuare una sincronizzazione rapida (delta) nei log eseguendo la ricerca di **quick sync** (sincronizzazione rapida).
 
-##### Eccezioni in Get next command (Recupera comando successivo)
+##### <a name="exceptions-in-get-next-command"></a>Eccezioni in Get next command (Recupera comando successivo)
 Verificare nei log di Exchange Connector l'eventuale presenza di eccezioni in **Get next command** (Recupera comando successivo) e comunicarne il contenuto al Supporto tecnico Microsoft.
 
-#### Registrazione dettagliata
+#### <a name="verbose-logging"></a>Registrazione dettagliata
 
 Per abilitare la registrazione dettagliata:
 
@@ -153,11 +153,11 @@ Per abilitare la registrazione dettagliata:
 
 
 
-### Passaggi successivi
+### <a name="next-steps"></a>Passaggi successivi
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

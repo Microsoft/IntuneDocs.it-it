@@ -1,9 +1,10 @@
 ---
 title: Aggiornamenti software per PC Windows | Microsoft Intune
-description: "Intune consente di tenere aggiornati i computer garantendo l'installazione veloce delle patch e degli aggiornamenti software più recenti."
+description: "Intune consente di tenere aggiornati i computer garantendo l&quot;installazione veloce delle patch e degli aggiornamenti software più recenti."
 keywords: 
 author: robstackmsft
-manager: arob98
+ms.author: robstack
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +14,8 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: bea1a090cf71129b34064378922a4c23f19e3cc7
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 6878d8a4e95280cfd8a919efa4c2f1651ca14024
 
 
 ---
@@ -254,6 +255,6 @@ Quando si seleziona un aggiornamento dall'elenco, sono disponibili ulteriori com
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

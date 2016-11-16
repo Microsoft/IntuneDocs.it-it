@@ -2,9 +2,10 @@
 title: Usare le app gestite nel dispositivo Android | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 9bfa154c73252c33535b8a38a6853acaa2c2d4ed
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b9764ec0b728ebce48c14fed9e3bb052a43b85fb
 
 
 ---
 
 
-# Usare le app gestite nel dispositivo Android
+# <a name="use-managed-apps-on-your-android-device"></a>Usare le app gestite nel dispositivo Android
 
-Le app gestite sono app che l'amministratore IT può configurare per proteggere i dati aziendali ai quali è possibile accedere nell'app. Quando si accede ai dati aziendali in un'app gestita su un dispositivo Android, è possibile notare che il funzionamento dell'app è leggermente diverso rispetto a quello previsto. Ad esempio, potrebbero non essere consentite le operazioni di copia e incolla dei dati aziendali protetti oppure il salvataggio dei dati in determinati percorsi.
+Le app gestite sono app che l'amministratore IT può configurare per proteggere i dati aziendali ai quali è possibile accedere dall'app stessa. Quando si accede ai dati aziendali da un'app gestita in un dispositivo Android, è possibile notare che il funzionamento dell'app è leggermente diverso rispetto a quello previsto. Ad esempio, potrebbero non essere consentite le operazioni di copia e incolla dei dati aziendali protetti oppure il salvataggio dei dati in determinati percorsi.
 
 Diverse app gestite possono anche interagire tra loro nel dispositivo per consentire di eseguire le attività giornaliere mantenendo protetti i dati aziendali. Ad esempio, se si apre un file aziendale in un'app gestita che richiede un'altra app gestita per visualizzare il file, questa seconda app viene aperta automaticamente. Se un'app necessaria non è disponibile, alcune azioni, come l'apertura di un documento o l'accesso a un collegamento Web in un documento gestito, potrebbero non essere disponibili.
 
@@ -31,15 +32,15 @@ Quando si accede ai dati aziendali in un'app gestita, viene visualizzato un mess
 
 ![Aprire-gestite-app-messaggio](./media/managed-apps-message.png)
 
-## Come si ottengono le app gestite?
+## <a name="how-do-i-get-managed-apps"></a>Come si ottengono le app gestite?
 Le app gestite possono essere installate in due modi:
 
 -   Quando il dispositivo viene registrato in Microsoft Intune, è possibile installare l'app dall'app Portale aziendale o dal sito Web del portale aziendale oppure l'installazione nel dispositivo può essere eseguita dall'amministratore IT. Per altre informazioni sulla registrazione, vedere [Registrare il dispositivo in Intune](enroll-your-device-in-Intune-android.md).
 
--   L'app viene installata da Play Store, quindi l'utente accede con l'account utente aziendale gestito da Intune.
+-   L'app viene installata da Play Store e quindi l'utente accede con l'account utente aziendale gestito da Intune.
 
-## Cosa può gestire l'amministratore IT in un'app?
-Di seguito sono riportati alcuni esempi di opzioni che l'amministratore IT può gestire in un'app e che possono influenzare le interazioni con i dati aziendali nel dispositivo:
+## <a name="what-can-my-it-admin-manage-in-an-app"></a>Cosa può gestire l'amministratore IT in un'app?
+Di seguito sono riportati alcuni esempi di opzioni che l'amministratore IT può gestire in un'app e che possono influire sulle interazioni con i dati aziendali nel dispositivo:
 
 -   Accesso a specifici siti Web
 
@@ -69,14 +70,12 @@ Di seguito sono riportate alcune app comuni che il reparto IT potrebbe gestire:
 
 -   Lettore AV di Intune
 
--   Microsoft Word, Excel, PowerPoint
+-   Microsoft Word, Excel e PowerPoint
 
 Per altre informazioni sulle app gestite nel dispositivo contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

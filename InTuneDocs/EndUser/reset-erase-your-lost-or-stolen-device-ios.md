@@ -2,10 +2,10 @@
 title: Ripristinare (eliminare) un dispositivo iOS smarrito o rubato | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 705c70b034378113a29003891f465a0e88186c69
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 586eb09811bf52cecf93dd51d1de76b2287b80ea
 
 
 ---
 
 
-# Ripristinare (eliminare) un dispositivo iOS smarrito o rubato
+# <a name="reset-erase-your-lost-or-stolen-ios-device"></a>Ripristinare (eliminare) un dispositivo iOS smarrito o rubato
 
 Se un telefono registrato in Intune viene smarrito o rubato, è possibile ripristinarne le impostazioni predefinite mediante l'app Portale aziendale da un altro dispositivo o il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 > [!WARNING]
 > Il ripristino delle impostazioni predefinite di un dispositivo implica la rimozione dei dati personali e di lavoro dal dispositivo stesso. Per altre informazioni sul ripristino dei dispositivi, vedere [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md) (Cosa succede se si ripristina un dispositivo del Portale aziendale).
 
-## Per ripristinare un dispositivo con l'app Portale aziendale
+## <a name="to-reset-your-device-using-the-company-portal-app"></a>Per ripristinare un dispositivo con l'app Portale aziendale
 
 1.  Da un altro dispositivo registrato, aprire l'app Portale aziendale e accedere con l'account aziendale o dell'istituto di istruzione.
 
@@ -37,7 +37,7 @@ Se un telefono registrato in Intune viene smarrito o rubato, è possibile ripris
 
 3.  Toccare **Reimposta** &gt; **Reimposta**.
 
-## Per ripristinare un dispositivo con il sito Web del portale aziendale
+## <a name="to-reset-your-device-using-the-company-portal-website"></a>Per ripristinare un dispositivo con il sito Web del portale aziendale
 
 È possibile seguire questa procedura o guardare questo video:
 
@@ -51,8 +51,6 @@ Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere all'am
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

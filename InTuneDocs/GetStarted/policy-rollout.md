@@ -1,10 +1,11 @@
 ---
 title: Implementazione dei criteri | Microsoft Intune
-description: Suggerimenti per un'implementazione graduale dei criteri in Microsoft Intune.
+description: Suggerimenti per un&quot;implementazione graduale dei criteri in Microsoft Intune.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: bab43006d4f142f34ecbb69487acb8b63151ee61
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 0a363ed242f5968f3fb84b558cfa134e243a22ff
 
 
 ---
@@ -27,7 +28,7 @@ Per informazioni generali sulle fasi di implementazione, vedere [Fasi dell'imple
 ### Fasi dell'implementazione dei criteri
 Le fasi dell'implementazione dei criteri sono:
 
--   Definizione dell'ambito
+-   Ambito del progetto
 
 -   Modello di verifica
 
@@ -37,7 +38,7 @@ Le fasi dell'implementazione dei criteri sono:
 
 -   Operazioni e manutenzione
 
-## Definizione dell'ambito
+## Ambito del progetto
 Definire l'ambito della distribuzione di criteri di Intune:
 
 -   Per una nuova implementazione, è necessario definire tutti i comportamenti desiderati del dispositivo e i requisiti di sicurezza da creare con il set di criteri.
@@ -97,6 +98,6 @@ Durante la fase pilota i criteri verranno distribuiti a un piccolo gruppo di ute
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

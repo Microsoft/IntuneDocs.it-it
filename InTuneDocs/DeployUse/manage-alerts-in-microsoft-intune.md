@@ -1,10 +1,11 @@
 ---
 title: Gestire gli avvisi | Microsoft Intune
-description: "Usare l'area di lavoro Avvisi di Intune per valutare l'integrità generale dei dispositivi nell'organizzazione."
+description: "Usare l&quot;area di lavoro Avvisi di Intune per valutare l&quot;integrità generale dei dispositivi nell&quot;organizzazione."
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,26 +15,26 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed8b7e42bd7c6f3839cc93cc3efcdd3241e88e2a
-ms.openlocfilehash: f254c1a486305e54305392b9688c563b8be93237
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 3bbeafbe78148d038b7673ee8c1abfd5bc6c5f87
 
 
 ---
 
-# Gestire gli avvisi in Microsoft Intune
+# <a name="manage-alerts-in-microsoft-intune"></a>Gestire gli avvisi in Microsoft Intune
 Usare l'area di lavoro **Avvisi** nella console di amministrazione di Intune per valutare l'integrità generale dei dispositivi nell'organizzazione e identificare i problemi.
 
-## Visualizzare gli avvisi attivi
+## <a name="view-active-alerts"></a>Visualizzare gli avvisi attivi
 
 Vedere le informazioni generali e i dati di riepilogo sugli avvisi attivi.
 
-#### Per visualizzare gli avvisi attivi
+#### <a name="to-view-active-alerts"></a>Per visualizzare gli avvisi attivi
 
 Nella console di amministrazione di Intune eseguire una delle serie di passaggi seguenti:
 
 -  **Per visualizzare informazioni generali sugli avvisi**, inclusi i tre avvisi principali e il numero totale di avvisi attivi, scegliere **Panoramica sistema**. Scegliere i collegamenti presenti in questi avvisi per visualizzare informazioni più dettagliate.
 
--  **Per visualizzare i dati di riepilogo degli avvisi**, Scegliere **Avvisi** > **Panoramica**. Nella pagina **Panoramica avvisi** è possibile visualizzare un riepilogo degli avvisi nell'area **Riepilogo del tipo di avviso**. Gli avvisi critici vengono elencati per primi. Scegliere i collegamenti presenti in questi avvisi per visualizzare informazioni più dettagliate.
+-  **Per visualizzare i dati di riepilogo degli avvisi**, scegliere **Avvisi** > **Panoramica**. Nella pagina **Panoramica avvisi** è possibile visualizzare un riepilogo degli avvisi nell'area **Riepilogo del tipo di avviso**. Gli avvisi critici vengono elencati per primi. Scegliere i collegamenti presenti in questi avvisi per visualizzare informazioni più dettagliate.
 
         > [!NOTE]
         > In some cases, an alert type might appear more than once in the **Alerts Type Summary** list.
@@ -55,10 +56,10 @@ Nella console di amministrazione di Intune eseguire una delle serie di passaggi 
 
     -   **Gravità**. Questa colonna indica la gravità dell'avviso.
 
-## Visualizzazione degli avvisi in bacheca
-Gli avvisi in bacheca forniscono importanti annunci di servizio, ad esempio un aggiornamento, un intervento di manutenzione programmato o un'interruzione imminente.
+## <a name="view-notice-board-alerts"></a>Visualizzazione degli avvisi in bacheca
+Gli avvisi in bacheca forniscono importanti annunci di servizio, ad esempio un aggiornamento di sistema in arrivo, un intervento di manutenzione programmato o lo stato di un'interruzione.
 
-#### Per visualizzare e gestire gli avvisi in bacheca
+#### <a name="to-view-and-manage-notice-board-alerts"></a>Per visualizzare e gestire gli avvisi in bacheca
 
 1.  Nella console di amministrazione di Intune scegliere **Panoramica sistema**.
 
@@ -66,10 +67,10 @@ Gli avvisi in bacheca forniscono importanti annunci di servizio, ad esempio un a
 
 3.  Se si vuole esportare un avviso in bacheca in un file con valori delimitati da virgole (con estensione csv) o in un file HTML, scegliere **Avvisi** > **Tutti gli avvisi** >    **Notifiche**. Selezionare una notifica, scegliere l'icona **Esporta elenco** e seguire le istruzioni visualizzate.
 
-## Esaminare lo stato del sistema Intune
+## <a name="review-intune-system-status"></a>Esaminare lo stato del sistema Intune
 Nell'area di lavoro **Panoramica sistema** vengono visualizzati i riepiloghi **Stato sistema** per le categorie Endpoint Protection, Aggiornamenti, Integrità agente, Criteri e Software, che consentono di individuare i problemi e assegnare la priorità a quelli che richiedono attenzione immediata. I messaggi di errore generati quando si verifica un'interruzione del sistema contengono un collegamento al riepilogo **Stato del servizio**. Il riepilogo **Stato del servizio** visualizza i dettagli relativi al problema in ogni posizione, oltre a indicare quando è stato eseguito l'ultimo aggiornamento.
 
-#### Per visualizzare lo stato della sottoscrizione
+#### <a name="to-view-the-status-of-your-subscription"></a>Per visualizzare lo stato della sottoscrizione
 
 1.  Nella console di amministrazione di Intune scegliere **Panoramica sistema**.
 
@@ -77,7 +78,7 @@ Nell'area di lavoro **Panoramica sistema** vengono visualizzati i riepiloghi **S
 
   Molti degli elementi sono collegati, così che è possibile visualizzare altre informazioni. Ad esempio, quando si seleziona il numero di istanze in **Endpoint Protection**, viene visualizzata l'area di lavoro **Endpoint Protection** contenente l'elenco del malware rilevato. Quando si seleziona il numero di dispositivi, viene visualizzata l'area di lavoro **Gruppi**, contenente l'elenco dei dispositivi in cui è stato rilevato malware.
 
-## Chiudere e riattivare gli avvisi
+## <a name="close-and-reactivate-alerts"></a>Chiudere e riattivare gli avvisi
 Gli avvisi di Intune restano attivi fino a quando non si verifica uno degli eventi seguenti:
 
 -   Il problema per il quale è stato generato l'avviso viene risolto.
@@ -88,17 +89,17 @@ Gli avvisi di Intune restano attivi fino a quando non si verifica uno degli even
 
 Gli avvisi contrassegnati come chiusi vengono eliminati definitivamente dopo 90 giorni.
 
-#### Per chiudere manualmente un avviso
+#### <a name="to-manually-close-an-alert"></a>Per chiudere manualmente un avviso
 
 Nella console di amministrazione di Intune eseguire una delle serie di passaggi seguenti:
 
 - **Per chiudere un avviso dall'elenco Avvisi**, scegliere **Avvisi** > **Tutti gli avvisi**. Selezionare un avviso e quindi scegliere **Chiudi avviso**.
 
-- **Per chiudere un avviso per un dispositivo specifico**, scegliere **Gruppi** > **All devices** (Tutti i dispositivi). Selezionare un dispositivo e scegliere **Visualizza proprietà**. Nella scheda **Avvisi** selezionare quindi un avviso e scegliere **Chiudi avviso**.
+- **Per chiudere un avviso per un dispositivo specifico**, scegliere **Gruppi** > **Tutti i dispositivi**. Selezionare un dispositivo e scegliere **Visualizza proprietà**. Nella scheda **Avvisi** selezionare quindi un avviso e scegliere **Chiudi avviso**.
 
 - **Per chiudere un avviso in bacheca**, scegliere **Panoramica sistema**. Fare clic sulla **X** accanto all'avviso in bacheca.
 
-#### Per visualizzare e riattivare gli avvisi chiusi
+#### <a name="to-view-and-reactivate-closed-alerts"></a>Per visualizzare e riattivare gli avvisi chiusi
 
 1.  Nella console di amministrazione di Intune scegliere **Avvisi** > **Tutti gli avvisi**.
 
@@ -108,11 +109,11 @@ Nella console di amministrazione di Intune eseguire una delle serie di passaggi 
 
 3.  Per riattivare l'avviso selezionato, scegliere **Riattiva avviso**.
 
-### Vedere anche
+### <a name="see-also"></a>Vedere anche
 [Ricevere notifiche tramite gli avvisi di Microsoft Intune](../deploy-use/get-notified-by-alerts.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

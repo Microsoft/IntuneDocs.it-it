@@ -14,13 +14,13 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dd7a51b5ba176c8c7b593d2d7a3e5cfabd72a1e6
-ms.openlocfilehash: 77ce4cca5f85f1847e599a6151411bfc12afbc8b
+ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
+ms.openlocfilehash: 3b8a263a45690c9bb213128b592e1ef9788cacd8
 
 
 ---
 
-# Proteggere app e dati con Microsoft Intune
+# <a name="protect-apps-and-data-with-microsoft-intune"></a>Proteggere app e dati con Microsoft Intune
 
 
 Intune protegge i dati aziendali tra più livelli di tecnologia.  A livello di identità, l'accesso condizionale protegge l'accesso ai servizi consentendo solo l'accesso da dispositivi conformi e gestiti.  A livello di applicazione client, la gestione di app per dispositivi mobili (MAM) consente di proteggere la perdita dei dati impedendo lo spostamento dei dati in app non protette o percorsi di archiviazione di dati e cancellando i dati quando un dispositivo viene smarrito o rubato.  Questi due livelli di protezione devono essere usati insieme in modo da proteggere i dati mantenendo i dipendenti mobili produttivi.
@@ -46,7 +46,7 @@ Questi set di regole sono denominati [criteri di gestione delle app per disposit
 
 Per associare un'app a un criterio MAM, l'app deve incorporare Microsoft Intune App SDK o usare lo strumento per la disposizione testo per app.
 
-In app come quelle di Microsoft Office App SDK è integrato. Per l'elenco completo delle app supportate, consultare la [raccolta di applicazioni per dispositivi mobili di Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) nella pagina dei partner dell'applicazione Microsoft Intune. Scegliere l'app per visualizzare gli scenari e le piattaforme supportate e per verificare se l'app supporta identità multiple.
+In app come quelle di Microsoft Office App SDK è integrato. Per l'elenco completo delle app supportate, consultare la [raccolta di applicazioni per dispositivi mobili di Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) nella pagina dei partner dell'applicazione Microsoft Intune. Scegliere l'app per visualizzare gli scenari e le piattaforme supportate e per verificare se l'app supporta identità multiple.
 
 È anche possibile [abilitare le app line-of-business personalizzate](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) da usare con i criteri MAM.
 
@@ -54,6 +54,6 @@ Oltre a limitare lo spostamento dei dati, se un dispositivo viene smarrito o rub
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,8 +2,8 @@
 title: Rimuovere il dispositivo dal portale aziendale | Microsoft Intune
 description: Rimuovere un dispositivo dal portale aziendale
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a0f3e42568634a4c5369919ad4feaf1be4b941e
-ms.openlocfilehash: 4c0186214893e9a056e331e7ec081dbdbee3a71e
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a4cd1655098d2df2b3d095ff0906762d1f0561e5
 
 
 ---
 
 
-# Rimuovere il dispositivo dal Portale aziendale
+# <a name="remove-your-device-from-the-company-portal"></a>Rimuovere il dispositivo dal Portale aziendale
 
 Se non si vuole più far gestire il dispositivo da Intune e dall'amministratore IT, è possibile rimuoverlo dal portale aziendale usando il [sito Web del portale aziendale](http://portal.manage.microsoft.com). Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati in Intune. Nel sito Web del portale aziendale è possibile eseguire la maggior parte delle attività disponibili nell'app Portale aziendale.
 
@@ -40,10 +40,10 @@ Per rimuovere il dispositivo:
 
 Il dispositivo è stato rimosso.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per trovare le informazioni di contatto dell'amministratore, vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

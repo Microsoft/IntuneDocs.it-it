@@ -3,8 +3,9 @@ title: Sincronizzare il dispositivo Windows manualmente | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
-ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
+ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
+ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
 
 ---
@@ -53,7 +54,7 @@ Sincronizzare manualmente il dispositivo Windows 10 Mobile per accelerare un'ins
     Nella parte superiore dello schermo viene visualizzato il messaggio "We're synching your account" (Sincronizzazione account in corso). Il pulsante **Sincronizza** resta disattivato fino al completamento della sincronizzazione del dispositivo.
 
 ## Windows 10 Desktop
-Sincronizzare manualmente il dispositivo Windows 10 Desktop per accelerare un'installazione lenta:
+Esistono più versioni di Windows 10, quindi esistono sono due procedure distinte. Per determinare quale procedura eseguire, esaminare gli screenshot e quindi eseguire la procedura con un aspetto simile a quanto visualizzato sul dispositivo. 
 
 1. Scegliere **Start** e quindi scegliere **Impostazioni**.
 
@@ -63,15 +64,46 @@ Sincronizzare manualmente il dispositivo Windows 10 Desktop per accelerare un'in
 
     ![Scelta di Account nella pagina Impostazioni](./media/win10pc-sync-2-settings-accounts.png)
 
-3. Nella pagina **Account** scegliere **Accesso società**.
+3. Esaminare le due schermate seguenti e trovare quella simile a quanto viene visualizzato sul dispositivo. Seguire i passaggi corrispondenti alla schermata visualizzata sul dispositivo.
+
+    Se si visualizza questa schermata, in cui compare "Accedi all'azienda o all'istituto di istruzione", attenersi alle istruzioni in [Passaggi da seguire se si visualizza Accedi all'azienda o all'istituto di istruzione](#steps-to-follow-if-you-see-access-work-or-school).
+
+    ![Passaggi di sincronizzazione da seguire se si visualizza Accedi all'azienda o all'istituto di istruzione](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+    Se si visualizza questa schermata, in cui compare "Accesso società", seguire i passaggi in [Passaggi da seguire se si visualizza Accesso società](#steps-to-follow-if-you-see-your-account).
+
+    ![Scelta di Accesso società come tipo di account](./media/win10pc-sync-3-work-access.png) 
+
+### Passaggi da seguire se si visualizza Accedi all'azienda o all'istituto di istruzione
+
+1. Nella pagina **Account** scegliere **Accedi all'azienda o all'istituto di istruzione**.
+
+    ![Scegliere Accedi all'azienda o all'istituto di istruzione.](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+2. Scegliere l'account aziendale o dell'istituto di istruzione. A seconda della configurazione eseguita dall'amministratore IT, è possibile che vengano visualizzati due account simili all'esempio illustrato di seguito. Accanto a un account è visibile l'icona Sincronia file e accanto all'altro è presente il logo Microsoft. 
+
+    - Se è visualizzato l'account con Sincronia file, selezionarlo e cercare il pulsante **Informazioni** sotto di esso. 
+    - Se è visualizzato solo l'account con il logo Microsoft, selezionarlo e cercare il pulsante **Informazioni** sotto di esso.
+
+    ![Scegliere il nome dell'account accanto a Sincronia file o al logo Microsoft](./media/win10pc-rs1-sync-info-button.png)
+
+3. Scegliere il pulsante **Info**. Verrà visualizzata una finestra di dialogo simile all'esempio illustrato di seguito.
+
+    ![Scegliere il nome dell'account accanto a Sincronia file o al logo Microsoft](./media/win10pc-rs1-sync-button.png)
+
+4. Scegliere il pulsante **Sincronizza**. Il dispositivo verrà sincronizzato con Intune.
+
+### Passaggi da seguire se si visualizza Accesso società
+    
+1. Nella pagina **Account** scegliere **Accesso società**.
 
     ![Scelta di Accesso società come tipo di account](./media/win10pc-sync-3-work-access.png)
 
-4. Nella sezione **Registrati per la gestione dispositivi** fare clic sul nome della società, come illustrato nell'evidenziazione blu in basso.
+2. Nella sezione **Registrati per la gestione dispositivi** fare clic sul nome della società, come illustrato nell'evidenziazione blu in basso.
 
     ![Scelta del nome della società per la gestione dei dispositivi](./media/win10pc-sync-4-tap-com-name.png)
 
-5. Scegliere il pulsante **Sincronizza**.
+3. Scegliere il pulsante **Sincronizza**.
 
     ![Scelta del pulsante Sincronizza](./media/win10pc-sync-5-tap-sync.png)
 
@@ -98,6 +130,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

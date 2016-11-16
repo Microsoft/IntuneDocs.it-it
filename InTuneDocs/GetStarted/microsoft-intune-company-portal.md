@@ -3,18 +3,19 @@ title: Portale aziendale di Microsoft Intune | Microsoft Intune
 description: configurazione del Portale aziendale di Intune
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jeffgilb
+ms.reviewer: jve
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 7c9fceaae077907480d4c207d56f654d168248a1
+ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
+ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
 
 
 ---
@@ -48,11 +49,18 @@ Alcune attività che gli utenti possono eseguire nel Portale aziendale sono:
 
 Prima che un utente possa accedere al Portale aziendale, all'account corrispondente deve essere concessa una licenza per l'uso di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e lo stato di accesso dell'account deve corrispondere a **Consentito**. Altre informazioni sull'[aggiunta di utenti](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) e sull'[assegnazione delle licenze per la sottoscrizione](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). È anche possibile [personalizzare il sito Web del Portale aziendale](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) con il logo della società, le Condizioni d'uso e altro ancora. Gli utenti accedono al sito Web del Portale aziendale passando al sito Web e connettendosi con l'account aziendale o dell'istituto di istruzione.
 
+> [!NOTE]
+> L'app Portale aziendale non è ancora disponibile in alcuni paesi.
+
+> __iOS__: l'app Portale aziendale per iOS è pubblicata in [tutte le aree disponibili](https://go.microsoft.com/fwlink/?linkid=831284) per Apple iOS App Store.
+
+> __Android__: l'app Portale aziendale per Android Antigua e Barbuda, Aruba, Benin, Burkina Faso, Cambogia, Cina, Cuba, Gabon, Guinea-Bissau, Haiti, Iran, Laos, Mali, Mozambico, Myanmar (Burma), Antille Olandesi, Niger, Papua Nuova Guinea, Sudan, Togo. Per questi paesi una soluzione alternativa consiste nel [trasferire localmente la versione per Android dell'app Portale aziendale](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
+
 ### Vedere anche
 [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

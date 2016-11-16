@@ -2,8 +2,8 @@
 title: Disattivare la raccolta dati di utilizzo di Microsoft per Windows | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: e8558df80e36c15ab740f919eee98af9ab00b508
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 461b46e1c14767127969d582448b672487da4b32
 
 
 ---
 
 
-# Disattivare la raccolta dati di utilizzo di Microsoft
+# <a name="turn-off-microsoft-usage-data-collection"></a>Disattivare la raccolta dati di utilizzo di Microsoft
 
 Per migliorare i propri prodotti e servizi, Microsoft raccoglie automaticamente dati anonimi sulle prestazioni e sull'affidabilità dell'app Portale aziendale e sulle relative modalità d'uso.
 
@@ -34,6 +34,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

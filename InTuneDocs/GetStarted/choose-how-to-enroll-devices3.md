@@ -3,6 +3,7 @@ title: Scegliere come registrare i dispositivi mobili | Microsoft Intune
 description: Decidere come registrare i dispositivi mobili in Intune rispondendo ad alcune semplici domande
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
-ms.openlocfilehash: 43bbb8590738182a26efcbeead1e59eff9e5f20d
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 679a9c5a008bd94796b8aefe71c7da04174fc6e5
 
 
 ---
@@ -25,7 +26,9 @@ Le risposte alla serie di domande seguente consentono di determinare il metodo d
 ## **I dispositivi di proprietà della società sono condivisi o sono usati da utenti dedicati?**
 
 > [!div class="button"]
-[Condiviso >](choose-how-to-enroll-devices4.md)<br>[Dedicato >](choose-how-to-enroll-devices6.md)
+[Condiviso >](choose-how-to-enroll-devices4.md)
+> [!div class="button"]
+[Dedicato >](choose-how-to-enroll-devices6.md)
 
 - **Dispositivi di proprietà della società condivisi**: questi dispositivi non hanno un singolo utente e non sono in genere configurati per accedere alla posta elettronica. Gli esempi includono i dispositivi chiosco o orientati alle attività prelevati da un pool in base alle esigenze e quindi restituiti. I metodi di registrazione consigliati dipendono dalla piattaforma dei dispositivi.
 
@@ -36,6 +39,6 @@ Le risposte alla serie di domande seguente consentono di determinare il metodo d
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

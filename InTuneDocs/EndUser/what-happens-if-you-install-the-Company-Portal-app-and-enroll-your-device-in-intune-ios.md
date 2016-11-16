@@ -1,10 +1,11 @@
 ---
-title: Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo iOS o Mac OS X in Intune? | Microsoft Intune
+title: Che cosa avviene quando si installa l&quot;app Portale aziendale e si registra il dispositivo iOS o Mac OS X in Intune? | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 ---
@@ -25,15 +26,15 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 Quando si installa l'app Portale aziendale e si registra il dispositivo iOS o Mac OS X in Intune, è possibile usare tale app per:
 
--   Accedere alla rete aziendale e ai file della posta elettronica e di lavoro
+-   Accedere alla rete aziendale e ai file della posta elettronica e di lavoro.
 
--   Ottenere app aziendali dal Portale aziendale
+-   Ottenere app aziendali dal portale aziendale.
 
--   Ripristinare in remoto le impostazioni predefinite del telefono se questo viene smarrito o rubato
+-   Ripristinare in remoto le impostazioni predefinite del telefono se questo viene smarrito o rubato.
 
--   Configurare automaticamente l'account di posta elettronica aziendale
+-   Configurare automaticamente l'account di posta elettronica aziendale.
 
-Quando si registra il dispositivo in Intune, si concedono all'amministratore IT le autorizzazioni per gestire il dispositivo e proteggere le informazioni aziendali presenti nel dispositivo.
+Quando si registra il dispositivo in Intune, si concedono all'amministratore IT le autorizzazioni per gestire il dispositivo e proteggere le informazioni aziendali presenti all'interno di esso.
 
 **Elementi non visibili all'IT**
 
@@ -85,16 +86,16 @@ Quando il dispositivo è registrato, l'amministratore IT può:
 
 -   Abilitare o disabilitare lo streaming foto su iCloud.
 
--   Abilitare o disabilitare il roaming dei dati sul dispositivo. Se il roaming dei dati è consentito, potrebbero essere state sostenute spese per il roaming.
+-   Abilitare o disabilitare il roaming dei dati sul dispositivo. Se sono consentiti i dati in roaming, si potrebbero subire addebiti per questo servizio.
 
--   Abilitare o disabilitare il roaming voce sul dispositivo. Se il roaming voce è consentito, potrebbero essere state sostenute spese per il roaming.
+-   Abilitare o disabilitare il roaming voce sul dispositivo. Se sono consentite le chiamate in roaming, si potrebbero subire addebiti per questo servizio.
 
--   Abilitare o disabilitare la sincronizzazione automatica dei file in modalità roaming sul dispositivo. Se la sincronizzazione automatica dei file è consentita, potrebbero essere state sostenute spese per il roaming.
+-   Abilitare o disabilitare la sincronizzazione automatica dei file in modalità roaming sul dispositivo. Se è consentita la sincronizzazione automatica dei file, si potrebbero subire addebiti per questo servizio.
 
-Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Per eventuali domande, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

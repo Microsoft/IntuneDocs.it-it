@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,7 +20,10 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 ---
 
-# Configurare le app Android for Work con i criteri di configurazione delle app per dispositivi mobili in Microsoft Intune
+# <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configurare le app Android for Work con i criteri di configurazione delle app per dispositivi mobili in Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Usare i criteri di configurazione delle app mobili in Microsoft Intune per specificare le impostazioni che possono essere richieste quando gli utenti eseguono un'app iOS. Ad esempio, un'app può richiedere agli utenti di specificare quanto segue:
 
 -   Un numero di porta personalizzato.
@@ -37,7 +40,7 @@ Per usare i criteri di configurazione delle app, è necessario che lo sviluppato
 
 I criteri di configurazione delle app vengono distribuiti agli stessi utenti a cui è stata distribuita l'app da configurare. Le impostazioni dei criteri verranno usate ogni volta che viene eseguita l'app.
 
-## Configurare un criterio di configurazione delle app mobili
+## <a name="configure-a-mobile-app-configuration-policy"></a>Configurare un criterio di configurazione delle app mobili
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Panoramica** &gt; **Aggiungi criterio**.
 
@@ -61,7 +64,7 @@ I criteri di configurazione delle app vengono distribuiti agli stessi utenti a c
 Il nuovo criterio verrà visualizzato nel nodo **Criteri di configurazione** .
 
 
-## Distribuire i criteri di configurazione delle app
+## <a name="deploy-the-app-configuration-policy"></a>Distribuire i criteri di configurazione delle app
 Dopo aver creato i criteri di configurazione delle app per dispositivi mobili, è necessario distribuirli agli stessi utenti a cui si distribuisce l'app a cui verranno applicate le impostazioni.
 
 Per informazioni su come distribuire i criteri, vedere [Distribuire un criterio di configurazione](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)
@@ -72,10 +75,6 @@ Quando l'app distribuita viene eseguita in un dispositivo, verrà eseguita con l
 
 > [!TIP]
 > Distribuire solo un criterio di configurazione dell'app per ogni app a un utente.
-
-
-
-
 
 
 
