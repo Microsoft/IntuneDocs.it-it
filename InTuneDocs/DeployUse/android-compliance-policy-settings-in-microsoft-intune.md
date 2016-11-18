@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,25 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e24de6814d9e01c64768f425e961a7822f4b27a1
-ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 2fd4d3c7cb92e27a01090fdec85e02db4010f859
 
 
 ---
 
 
-# Impostazioni dei criteri di conformità per i dispositivi Android in Microsoft Intune
+# <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Impostazioni dei criteri di conformità per i dispositivi Android in Microsoft Intune
 
-Le impostazioni dei criteri descritte in questo argomento si applicano ai dispositivi che eseguono Android 4.0 e versioni successive oppure Samsung KNOX 4.0 e versioni successive.
+Le impostazioni dei criteri descritte in questo argomento si applicano ai dispositivi che eseguono Android 4.0 e versioni successive oppure Samsung KNOX Standard 4.0 e versioni successive.
 
 Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
-> [!div class="op_single_selector"]
+> [!div class = "op_single_selector"]
+- [Impostazioni dei criteri di conformità per i dispositivi Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 - [Impostazioni dei criteri di conformità per i dispositivi iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Impostazioni dei criteri di conformità per i dispositivi Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Impostazioni di sicurezza del sistema
-### Password
+## <a name="system-security-settings"></a>Impostazioni di sicurezza del sistema
+### <a name="password"></a>Password
 - **Richiedi una password per sbloccare i dispositivi mobili:** impostare l'opzione su **Sì** per richiedere agli utenti di immettere una password prima di poter accedere al dispositivo.
 
 -  **Lunghezza minima password**: specifica il numero minimo di cifre o caratteri per la password dell'utente.
@@ -55,10 +56,10 @@ Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 
 - **Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività:** questa impostazione deve essere usata insieme all'impostazione **Minuti di inattività prima che venga richiesta la password**. Agli utenti viene richiesto di immettere una password per accedere a un dispositivo che è rimasto inattivo per il tempo specificato nell'impostazione **Minuti di inattività prima che venga richiesta la password**.
 
-### Crittografia
+### <a name="encryption"></a>Crittografia
 - **Richiedi crittografia sul dispositivo mobile:** impostare questa opzione su **Sì** per richiedere che i dispositivi vengano crittografati per la connessione alle risorse. I dispositivi vengono crittografati se si sceglie l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**.
 
-## Impostazioni di integrità e sicurezza dei dispositivi
+## <a name="device-health-and-security-settings"></a>Impostazioni di integrità e sicurezza dei dispositivi
 
 - **Il dispositivo non deve essere jailbroken o rooted:** se si abilita questa impostazione, i dispositivi jailbroken vengono considerati come non conformi.
 - **Richiedi che i dispositivi impediscano l'installazione di app da origini sconosciute (Android 4.0 o versione successiva)**: per bloccare i dispositivi che hanno le opzioni **Sicurezza** > **Origini sconosciute** abilitate sul dispositivo, selezionare questa impostazione e specificare **Sì**.  
@@ -77,7 +78,7 @@ Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 
   Per altre informazioni dettagliate, vedere [Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità](enable-device-threat-protection-rule-in-compliance-policy.md).
 
-## Impostazioni delle proprietà dei dispositivi
+## <a name="device-property-settings"></a>Impostazioni delle proprietà dei dispositivi
 - **Versione minima del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme.
   Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo per poter accedere alle risorse aziendali.
 
@@ -85,6 +86,6 @@ Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

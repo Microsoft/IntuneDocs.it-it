@@ -1,10 +1,11 @@
 ---
-title: Informazioni preliminari per l'uso di Microsoft Intune | Microsoft Intune
-description: Pagina con collegamenti ai prerequisiti e ai requisiti di Intune
+title: Informazioni preliminari per l&quot;uso di Microsoft Intune | Microsoft Intune
+description: Collegamenti ai prerequisiti e ai requisiti di Intune
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +14,15 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: d236a084caa3f82cb22d1f47583f1a0417e86d81
+ms.sourcegitcommit: 1ed86339103f165092776ec94b50c5a02d054236
+ms.openlocfilehash: 7a5ff0f021b487f4586ca3199c6db2cb0ada3930
 
 
 ---
 
-# Informazioni preliminari per l'uso di Microsoft Intune
+# <a name="what-to-know-before-you-start-microsoft-intune"></a>Informazioni preliminari per l'uso di Microsoft Intune
 
-Prima di iniziare la configurazione di Microsoft Intune, esaminare tutti i requisiti riportati di seguito:
+Prima di iniziare la configurazione di Microsoft Intune, esaminare i requisiti seguenti:
 
 - [Dispositivi mobili e computer supportati](supported-mobile-devices-and-computers.md)
 - [Web browser supportati da Intune](supported-web-browsers.md)
@@ -37,6 +38,6 @@ Prima di usare Intune, è consigliabile esaminare anche le [funzionalità di ges
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
