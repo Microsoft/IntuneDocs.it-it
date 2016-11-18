@@ -5,22 +5,22 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/23/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 translationtype: Human Translation
-ms.sourcegitcommit: 030db4b1520a4f06756c0feac69de352aab6f473
-ms.openlocfilehash: 1dba9553c97e9e02fd4b080915756f4f23ed8635
+ms.sourcegitcommit: 0c6c9d44e6a328b4bfb3827f54ac35b83e3c7aac
+ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 
 
 ---
 
-# Glossario di Microsoft Intune
+# <a name="microsoft-intune-glossary"></a>Glossario di Microsoft Intune
 
-## A
+## <a name="a"></a>A
 
 |||
 |-|-|
@@ -29,12 +29,12 @@ ms.openlocfilehash: 1dba9553c97e9e02fd4b080915756f4f23ed8635
 |Installazione disponibile|Quando si distribuisce un'app con questa azione, l'app viene visualizzata nel portale aziendale e gli utenti possono [installarla su richiesta](/intune/deploy-use/deploy-apps).|
 |Portale di Azure|Presto verrà introdotta una nuova console per Intune. Al momento, è possibile usare il portale di Azure per creare i [criteri di gestione delle applicazioni mobili di Intune](/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies) per i dispositivi.|
 
-## B
+## <a name="b"></a>B
 |||
 |-|-|
 |BYOD|[Bring your own device](/intune/get-started/choose-how-to-enroll-devices1). Gli utenti possono installare l'app del portale aziendale di Intune nel dispositivo ed eseguire la registrazione per accedere alle risorse della società come posta elettronica, applicazioni aziendali, dati aziendali e supporto.| 
 
-## C
+## <a name="c"></a>C
 |||
 |-|-|
 |Profilo certificato|Usare questo tipo di criteri per [proteggere l'accesso alle risorse aziendali](/intune/deploy-use/secure-resource-access-with-certificate-profiles) con certificati quando si usano profili Wi-Fi, VPN o di posta elettronica.|
@@ -46,7 +46,7 @@ ms.openlocfilehash: 1dba9553c97e9e02fd4b080915756f4f23ed8635
 |Accesso condizionale|[Consente l'accesso alla posta elettronica aziendale, a Office 365 e ad altri servizi](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) solo dai dispositivi conformi alle regole impostate.|
 |Criteri personalizzati|[Questi criteri vengono usati](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) quando i criteri di configurazione generali non contengono un'impostazione integrata in grado di soddisfare le proprie esigenze. È possibile usare un criterio personalizzato per creare un'impostazione simile ad Apple Configurator o URI OMA.|
 
-## D
+## <a name="d"></a>D
 |||
 |-|-|
 |Distribuzione|Azione di invio di un'app o un criterio a un dispositivo o a un utente gestito.|
@@ -54,7 +54,7 @@ ms.openlocfilehash: 1dba9553c97e9e02fd4b080915756f4f23ed8635
 |Manager di registrazione dispositivi|Le organizzazioni possono usare Intune per gestire un numero elevato di dispositivi mobili con un singolo account utente. L'account del [manager di registrazione dispositivi](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) è un account speciale di Intune che consente di registrare fino a 1000 dispositivi.|
 |Mapping del gruppo di dispositivi|Consente di [aggiungere automaticamente i dispositivi ai gruppi](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) in base a una categoria di dispositivi (ad esempio, "Personale" o "Vendite") che l'utente o l'utente finale può assegnare al dispositivo.|
 
-## E
+## <a name="e"></a>E
 |||
 |-|-|
 |Profilo di posta elettronica|Questi criteri possono essere usati per definire le [impostazioni di accesso alla posta elettronica](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) per client di posta elettronica specifici nei dispositivi mobili, riducendo al minimo le configurazioni che l'utente finale deve eseguire.|
@@ -62,22 +62,22 @@ ms.openlocfilehash: 1dba9553c97e9e02fd4b080915756f4f23ed8635
 |Utente finale|[Utenti di dispositivi quali telefoni cellulari e PC](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) che è possibile gestire tramite Intune.|
 |Registrazione|Microsoft Intune usa la [registrazione](/intune/deploy-use/enroll-devices-in-microsoft-intune) per gestire i dispositivi e consentire l'accesso alle risorse.|
 
-## F
+## <a name="f"></a>F
 |||
 |-|-|
 |FastTrack|[Servizio Microsoft](https://technet.microsoft.com/library/mt228265.aspx) per gli utenti di Intune con 150 licenze in un piano idoneo. Con questo servizio, gli esperti Microsoft collaboreranno con l'utente per l'uso e l'esecuzione di Intune.|
 
-## G
+## <a name="g"></a>G
 |||
 |-|-|
 |Gruppi|I gruppi consentono di [raccogliere insieme logicamente gli utenti o i dispositivi](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune). Ad esempio, è possibile creare un gruppo di tutti i PC Windows. È quindi possibile distribuire le app e i criteri a tali gruppi.|
 
-## H
+## <a name="h"></a>H
 |||
 |-|-|
 |Strategia ibrida|Configurazione in cui è possibile gestire i dispositivi registrati con Intune [tramite la console di System Center Configuration Manager](/intune/get-started/integration-with-cloud-services).|
 
-## I
+## <a name="i"></a>I
 |||
 |-|-|
 |Console di amministrazione di Intune|Console corrente che viene usata per la maggior parte delle operazioni di gestione di Intune.|
@@ -85,12 +85,12 @@ ms.openlocfilehash: 1dba9553c97e9e02fd4b080915756f4f23ed8635
 |Autore del software Intune|Strumento che consente di [definire le app da distribuire e di caricarle nello spazio di archiviazione cloud](/intune/deploy-use/add-apps).|
 |Argomento|Consente di visualizzare l'[hardware e il software installato](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) nei dispositivi gestiti.|
 
-## K
+## <a name="k"></a>K
 |||
 |-|-|
 |Modalità tutto schermo|Configurata come parte di un [criterio di configurazione generale](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies), questa modalità consente di bloccare i dispositivi. Ad esempio, è possibile configurare un dispositivo di vendita al dettaglio per consentire solo l'esecuzione di un'app.|
 
-## M
+## <a name="m"></a>M
 |||
 |-|-|
 |Managed Browser|[Applicazione per Web browser](/intune/deploy-use/manage-internet-access-using-managed-browser-policies) che è possibile distribuire nell'organizzazione usando Microsoft Intune. Un criterio di Managed Browser consente di configurare un elenco Consenti o Blocca che limita i siti Web che gli utenti di Managed Browser possono visitare.|
@@ -100,19 +100,19 @@ ms.openlocfilehash: 1dba9553c97e9e02fd4b080915756f4f23ed8635
 |Criteri di provisioning di app mobili|Criterio di iOS che consente di verificare che i [profili di provisioning](/intune/deploy-use/ios-mobile-app-provisioning-profiles) delle app per iOS distribuiti non scadano.|
 |Criteri di configurazione delle app mobili|Criterio di iOS usato per [fornire impostazioni ad app per iOS compatibili](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) quando vengono eseguite, ad esempio, un nome della società o un indirizzo del server.|
 
-## O
+## <a name="o"></a>O
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Protocollo di gestione di dispositivi standard di settore usato da molti produttori di hardware per abilitare il controllo delle funzionalità dei dispositivi mobili e dei PC.|
 |URI OMA|Open Mobile Alliance Uniform Resource Identifier. Consente di identificare le impostazioni di singoli dispositivi conformi allo standard OMA-DM. Molte di queste impostazioni possono essere usate nei [criteri personalizzati di Intune](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) quando non è disponibile alcuna impostazione predefinita in grado di soddisfare le proprie esigenze.|
 
-## P
+## <a name="p"></a>P
 |||
 |-|-|
 |Criteri|[Pacchetto di informazioni](/intune/deploy-use/microsoft-intune-policy-reference) inviato da Intune a un dispositivo. Ad esempio, è possibile distribuire al dispositivo le impostazioni di sicurezza o le informazioni di conformità del dispositivo.|
 |Reimpostazione del passcode|Funzionalità di Intune che consente di forzare l'utente finale a [reimpostare il passcode](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) sui dispositivi supportati.|
 
-## R
+## <a name="r"></a>R
 |||
 |-|-|
 |Blocco remoto|Funzionalità di Intune che consente di [bloccare i dispositivi supportati](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune), anche se non si è in possesso del dispositivo.|
@@ -120,24 +120,26 @@ ms.openlocfilehash: 1dba9553c97e9e02fd4b080915756f4f23ed8635
 |Installazione richiesta|Quando si distribuisce un'app con questa azione, l'app viene installata nel dispositivo [senza alcun intervento da parte dell'utente](/intune/deploy-use/deploy-apps) (sebbene per alcune piattaforme è possibile che l'utente finale possa dover accettare l'installazione).|
 |Requisiti|[Operazione di distribuzione dell'app](/en-us/intune/deploy-use/add-apps) che consente di selezionare i requisiti che devono essere soddisfatti in un dispositivo prima dell'installazione dell'app. Ad esempio, può essere necessario specificare la versione del sistema operativo iOS da installare prima dell'installazione dell'app.|
 
-## S
+## <a name="s"></a>S
 |||
 |-|-|
 |Cancellazione selettiva|La [cancellazione selettiva](/intune/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune) rimuove solo i dati aziendali, compresi i dati di gestione delle applicazioni mobili, ove applicabile, le impostazioni e i profili di posta elettronica da un dispositivo. La cancellazione selettiva lascia i dati personali dell'utente sul dispositivo.|
+|Sottoscrizione|Il contratto immesso consente di accedere a un tenant di Intune.|
 
-## T
+## <a name="t"></a>T
 |||
 |-|-|
 |TeamViewer|Applicazione di terze parti che funziona con Intune per fornire [funzionalità di assistenza remota](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-for-windows-pcs) per i PC Windows gestiti con il client software di Intune.|
+|Tenant|Una singola istanza del servizio Intune a cui è possibile accedere con una sottoscrizione.|
 |Termini e condizioni|Tipo di criteri distribuiti agli utenti che contengono informazioni che gli utenti devono [leggere e accettare](/intune/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) prima di poter usare il portale aziendale per registrare e accedere al proprio lavoro.|
 
-## V
+## <a name="v"></a>V
 |||
 |-|-|
 |App acquistate con Volume Purchase Program|Alcuni App Store consentono di acquistare più licenze per un'app da eseguire nell'azienda. Intune semplifica la gestione delle app [acquistate con questo programma](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune) importando le informazioni di licenza dall'App Store, verificando il numero di licenze usate e impedendo l'installazione di più copie dell'app rispetto a quelle possedute.|
 |Profilo VPN|Criteri che distribuiscono le [impostazioni VPN](/intune/deploy-use/vpn-connections-in-microsoft-intune) ai dispositivi gestiti, riducendo al minimo le configurazioni da parte dell'utente.|
 
-## W
+## <a name="w"></a>W
 |||
 |-|-|
 |Profilo Wi-Fi|Criteri che distribuiscono le [impostazioni di rete wireless](/intune/deploy-use/wi-fi-connections-in-microsoft-intune) ai dispositivi per consentire agli utenti di connettersi alla rete aziendale senza la necessità di conoscere o configurare le impostazioni.
@@ -147,6 +149,6 @@ ms.openlocfilehash: 1dba9553c97e9e02fd4b080915756f4f23ed8635
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 
