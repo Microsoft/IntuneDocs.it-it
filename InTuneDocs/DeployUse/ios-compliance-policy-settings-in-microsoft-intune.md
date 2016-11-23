@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,73 +14,74 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: 4fcfcb5a9a48dd4051c0f2652f3fb589e3ff73a8
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 37f8d9a2d3057df4f7e8d105e48d75edd6d77dc4
 
 
 ---
 
 
-# Impostazioni dei criteri di conformità per i dispositivi iOS in Microsoft Intune
+# <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Impostazioni dei criteri di conformità per i dispositivi iOS in Microsoft Intune
 
 Le impostazioni dei criteri descritte in questo argomento si applicano ai dispositivi che eseguono iOS 8.0 e versioni successive.
 
 Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 > [!div class="op_single_selector"]
 - [Impostazioni dei criteri di conformità per i dispositivi Android](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Impostazioni dei criteri di conformità per i dispositivi Android for Work](afw-compliance-policy-settings-in-microsoft-intune)
 - [Impostazioni dei criteri di conformità per i dispositivi Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## Impostazioni di sicurezza del sistema
-### Password
-- **Richiedi una password per sbloccare i dispositivi mobili:** impostare l'opzione su **Sì** per richiedere agli utenti di immettere una password per poter accedere al dispositivo. I dispositivi iOS che usano la password vengono crittografati.
+## <a name="system-security-settings"></a>Impostazioni di sicurezza del sistema
+### <a name="password"></a>Password
+- **Richiedi una password per sbloccare i dispositivi mobili:** impostare l'opzione su **Sì** per consentire a un utente di immettere una password per poter accedere al dispositivo. I dispositivi iOS che usano una password vengono crittografati.
 
-- **Consenti password semplici:** impostare l'opzione su **Sì** per consentire agli utenti di creare password semplici come '**1234**' o '**1111**' 
+- **Consenti password semplici**: impostare questa opzione su **Sì** per consentire all'utente di creare una password semplice come **1234** o **1111**.
 
--  **Lunghezza minima password**: specificare il numero minimo di cifre o caratteri che la password dell'utente deve contenere.
-- **Tipo di password richiesto:** specificare se gli utenti devono creare una password **alfanumerica** o **numerica**.
+-  **Lunghezza minima password**: specifica il numero minimo di cifre o caratteri per la password dell'utente.
 
-- **Numero minimo di set di caratteri:** se **Tipo di password richiesto** è impostato su **Alfanumerico**, usare questa impostazione per specificare il numero minimo di set di caratteri che la password deve contenere. I quattro set di caratteri sono:
+- **Tipo di password richiesto:** specificare se l'utente deve creare una password di tipo **Alfanumerico** o **Numerico**.
+
+- **Numero minimo di set di caratteri:** se **Tipo di password richiesto** è impostato su **Alfanumerico**, usare questa impostazione per specificare il numero minimo di set di caratteri che la password deve avere. I quattro set di caratteri sono:
   -   Lettere minuscole
   -   Lettere maiuscole
   -   Simboli
   -   Numeri
 
-  Se per questa impostazione viene usato un numero più alto, gli utenti dovranno creare password più complesse.
+  Se si imposta un numero maggiore, l'utente dovrà creare una password più complessa.
 
   Per i dispositivi iOS, questa impostazione si riferisce al numero di caratteri speciali (ad esempio **!**, **#**, **&amp;**) che è necessario includere nella password.
-- **Minuti di inattività prima che venga richiesta la password:** specifica il tempo di inattività prima che l'utente debba immettere nuovamente la password.
 
-- **Scadenza password (giorni):** selezionare il numero di giorni che mancano alla scadenza della password attuale, quando l'utente deve creare una nuova password.
+- **Minuti di inattività prima che venga richiesta la password**: specifica il tempo di inattività prima che l'utente debba immettere di nuovo la password.
 
-- **Ricorda cronologia password:** usare questa impostazione insieme a **Impedisci riutilizzo delle password precedenti** per impedire all'utente di creare password già usate in precedenza.
+- **Scadenza password (giorni):** selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
 
-- **Impedisci riutilizzo delle password precedenti:** se l'opzione **Ricorda cronologia password** è selezionata, specificare il numero di password usate in precedenza che non è possibile riutilizzare.
+- **Ricorda cronologia password**: usare questa impostazione insieme a **Impedisci riutilizzo delle password precedenti** per impedire all'utente di creare password già usate in precedenza.
 
-- **Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività:** questa impostazione deve essere usata insieme all'impostazione **Minuti di inattività prima che venga richiesta la password**. Agli utenti finali viene richiesto di immettere una password per accedere a un dispositivo che è rimasto inattivo per il tempo specificato nell'impostazione **Minuti di inattività prima che venga richiesta la password**.
+- **Impedisci riutilizzo delle password precedenti:** se l'opzione **Ricorda cronologia password** è selezionata, specifica il numero di password usate in precedenza che non è possibile usare di nuovo.
 
-### Profilo di posta elettronica
-- **L'account di posta elettronica deve essere gestito da Intune:** se questa opzione è impostata su **Sì**, il dispositivo deve usare il profilo di posta elettronica distribuito al dispositivo stesso. Il dispositivo è considerato non conforme nelle seguenti situazioni:
-  - Il profilo di posta elettronica deve essere distribuito anche al gruppo di utenti al quale appartiene l'utente oggetto della verifica di conformità; in caso contrario i dispositivi degli utenti verranno considerati non conformi.
-  - Il dispositivo viene segnalato come non conforme se l'utente ha già configurato un account di posta elettronica nel dispositivo che corrisponde al profilo di posta elettronica di Intune distribuito al dispositivo stesso. Intune non può sovrascrivere il profilo con provisioning dell'utente, quindi non può gestirlo. Per garantire la conformità è necessario rimuovere le impostazioni di posta elettronica esistenti, quindi installare il profilo di posta elettronica gestito da Intune.
+- **Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività**: questa impostazione deve essere usata insieme all'impostazione **Minuti di inattività prima che venga richiesta la password**. Agli utenti viene richiesto di immettere una password per accedere a un dispositivo che è rimasto inattivo per il tempo specificato nell'impostazione **Minuti di inattività prima che venga richiesta la password**.
 
+### <a name="email-profile"></a>Profilo di posta elettronica
+- **L'account di posta elettronica deve essere gestito da Intune**: se questa opzione è impostata su **Sì**, il dispositivo deve usare il profilo di posta elettronica distribuito al dispositivo stesso. Il dispositivo è considerato non conforme nelle seguenti situazioni:
+  - Il profilo di posta elettronica viene distribuito a un gruppo di utenti diverso dal gruppo di utenti a cui sono destinati i criteri di conformità.
+  - L'utente ha già configurato un account di posta elettronica nel dispositivo che corrisponde al profilo di posta elettronica di Intune distribuito nel dispositivo. Intune non può sovrascrivere il profilo con provisioning dell'utente, quindi non può gestirlo. Per garantire la conformità, l'utente deve rimuovere le impostazioni di posta elettronica esistenti. Intune potrà quindi installare il profilo di posta elettronica.
 
-- **Selezionare il profilo di posta elettronica che deve essere gestito da Intune:**
-   se è stata selezionata l'opzione **L'account di posta elettronica deve essere gestito da Intune**, scegliere **Seleziona** per specificare il profilo di posta elettronica di Intune. Il profilo di posta elettronica deve essere presente nel dispositivo.
+- **Selezionare il profilo di posta elettronica che deve essere gestito da Intune**: se è stata selezionata l'impostazione **L'account di posta elettronica deve essere gestito da Intune**, scegliere **Seleziona** per specificare il profilo di posta elettronica di Intune. Il profilo di posta elettronica deve essere presente nel dispositivo.
 
      Per dettagli sui profili di posta elettronica, vedere [Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
-## Impostazioni dello stato dei dispositivi
+## <a name="device-health-settings"></a>Impostazioni dello stato dei dispositivi
 
-- **Il dispositivo non deve essere jailbroken o rooted:** se si abilita questa impostazione, i dispositivi jailbroken non risultano conformi.
+- **Il dispositivo non deve essere jailbroken o rooted**: se si abilita questa impostazione, i dispositivi jailbroken non risultano conformi.
 
-##  Proprietà dispositivo
-- **Minimum OS required** (Versione minima richiesta del sistema operativo): quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme.
-Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e dopo l'aggiornamento potrà accedere alle risorse aziendali.
+##  <a name="device-properties"></a>Proprietà dispositivo
+- **Versione minima del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme.
+Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente può scegliere di aggiornare il dispositivo. In seguito, potrà accedere alle risorse aziendali.
 
-- **Maximum OS version allowed** (Versione massima consentita del sistema operativo): quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali risulterà bloccato e l'utente dovrà contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
+- **Versione massima del sistema operativo**: quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali è bloccato e l'utente deve contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
