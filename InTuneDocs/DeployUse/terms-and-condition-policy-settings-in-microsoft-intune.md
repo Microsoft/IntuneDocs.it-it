@@ -2,8 +2,8 @@
 title: Impostazioni dei criteri relativi termini e condizioni | Microsoft Intune
 description: "È possibile distribuire termini e condizioni di Intune a gruppi di utenti per spiegare in che modo la registrazione, l&quot;accesso alle risorse di lavoro e l&quot;uso dell&quot;app Portale aziendale influiscono su dispositivi e utenti."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70fcc08a5619892387aaf8223e9a74661d9c90f6
-ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
 
 
 ---
 
-# Impostazioni dei criteri relativi termini e condizioni in Microsoft Intune
+# <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri relativi termini e condizioni in Microsoft Intune
 È possibile distribuire termini e condizioni di Intune a gruppi di utenti per spiegare in che modo la registrazione, l'accesso alle risorse di lavoro e l'uso dell'app Portale aziendale influiscono su dispositivi e utenti. Gli utenti dovranno quindi accettare i termini e le condizioni prima di poter usare il portale aziendale per registrare le app e accedere al lavoro.
 
 È possibile creare e distribuire più criteri contenenti termini e condizioni diversi. È anche possibile creare versioni degli stessi termini e condizioni in lingue diverse e distribuirle ai gruppi appropriati.
 
-## Creare un criterio relativo a termini e condizioni
+## <a name="create-a-terms-and-conditions-policy"></a>Creare un criterio relativo a termini e condizioni
 
 1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
 
@@ -47,7 +47,7 @@ ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
 
 4.  Al termine, fare clic su **Salva**. Il nuovo criterio viene visualizzato nel nodo **Termini e condizioni** dell'area di lavoro **Criteri**.
 
-## Distribuire un criterio relativo a termini e condizioni
+## <a name="deploy-a-terms-and-conditions-policy"></a>Distribuire un criterio relativo a termini e condizioni
 
 1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
 
@@ -57,16 +57,16 @@ ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
 
     Quando gli utenti di destinazione accedono al portale aziendale, Intune visualizza i termini e le condizioni che sono state distribuite. Gli utenti devono accettare questi termini prima di poter accedere alle risorse aziendali.
 
-## Monitorare un criterio relativo a termini e condizioni
+## <a name="monitor-a-terms-and-conditions-policy"></a>Monitorare un criterio relativo a termini e condizioni
 
 1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
 
 2.  Nella finestra **Crea nuovo report** fare clic su **Visualizza report**. Verrà aperto un report che elencherà in dettaglio gli utenti che hanno accettato i termini e le condizioni distribuite.
 
-### Aggiornamenti e controllo della versione per termini e condizioni
+### <a name="updates-and-version-control-for-terms-and-conditions"></a>Aggiornamenti e controllo della versione per termini e condizioni
 Quando si modifica un criterio esistente relativo a termini e condizioni, è possibile scegliere il comportamento durante la distribuzione del criterio. Usare la procedura seguente per aggiornare i criteri esistenti relativi a termini e condizioni.
 
-## Gestire più versioni di termini e condizioni
+## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Gestire più versioni di termini e condizioni
 
 1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
 
@@ -76,11 +76,11 @@ Quando si modifica un criterio esistente relativo a termini e condizioni, è pos
 
     È consigliabile incrementare il numero di versione e richiedere l'accettazione ogni volta che si apportano modifiche significative ai criteri relativi a termini e condizioni. Non modificare il numero di versione corrente se, ad esempio, si correggono errori di digitazione o si modifica la formattazione.
 
-### Vedere anche
+### <a name="see-also"></a>Vedere anche
 [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
