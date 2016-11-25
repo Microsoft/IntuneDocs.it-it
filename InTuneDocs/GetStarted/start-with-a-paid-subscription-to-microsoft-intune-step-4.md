@@ -1,11 +1,11 @@
 ---
 title: Gestire le licenze di Intune | Microsoft Intune
-description: Illustra come assegnare licenze agli utenti per la sottoscrizione di Intune
+description: Assegnare licenze agli utenti per la sottoscrizione di Intune
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f86fe2710318209a2a4373beea1590c5343cbf4c
-ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: 325373a19de96265d3605ef22e633eb60e6be2b3
 
 
 ---
 
-# Gestire le licenze di Intune
+# <a name="manage-intune-licenses"></a>Gestire le licenze di Intune
 Prima che gli utenti possano accedere per usare il servizio Intune o registrare i propri dispositivi nella gestione, è necessario innanzitutto assegnare a ogni utente una licenza per la sottoscrizione di Intune usando il [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
 Le organizzazioni che usano Microsoft Enterprise Mobility Suite + Security (EMS) possono contenere utenti che necessitano solo di Azure Active Directory Premium o dei servizi di Intune nel pacchetto EMS. È possibile assegnare un servizio o un sottoinsieme di servizi tramite i [cmdlet di PowerShell per Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx). Per altre informazioni, vedere [Manage Intune licenses using PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md) (Gestire le licenze Intune tramite PowerShell).
 
-## Come vengono assegnate le licenze di Intune
+## <a name="how-intune-licenses-are-assigned"></a>Come vengono assegnate le licenze di Intune
 Quando gli account utente vengono sincronizzati da Active Directory locale o aggiunti manualmente alla sottoscrizione per i servizi cloud tramite il [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), a essi non viene assegnata automaticamente una licenza di Intune. In un secondo momento, un amministratore tenant di Intune dovrà modificare l'account utente per assegnare una licenza all'utente dal portale di Office 365.
 
 Quando la propria sottoscrizione condivide Azure AD con altri servizi cloud associati alla sottoscrizione, l'utente ottiene accesso anche agli utenti aggiunti a quei servizi. Questi utenti non dispongono di una licenza per [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] finché non ne viene assegnata una a ciascuno di loro.
@@ -33,7 +33,7 @@ Quando la propria sottoscrizione condivide Azure AD con altri servizi cloud asso
 > [!TIP]
 > Se l'opzione per assegnare o revocare una licenza di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] è disabilitata, è probabile che la sottoscrizione includa opzioni multilicenza, come quelle disponibili quando si usa [Enterprise Mobility Suite + Security](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx). Per informazioni su come assegnare o revocare le licenze, vedere la documentazione per le proprie opzioni di licenza.
 
-## Assegnare una licenza utente di Intune
+## <a name="assign-an-intune-user-license"></a>Assegnare una licenza utente di Intune
 
 Usare il [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) per aggiungere manualmente gli utenti basati su cloud e assegnare licenze sia ad account utente basati su cloud che ad account sincronizzati con Azure AD da Active Directory locale.
 
@@ -43,9 +43,10 @@ Usare il [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854
 
 3.  L'account utente dispone ora delle autorizzazioni necessarie per usare il servizio e registrare dispositivi nella gestione.
 
-> [!NOTE] Gli utenti verranno visualizzati nella console dopo aver registrato un dispositivo. 
+> [!NOTE]
+> Gli utenti verranno visualizzati nella console dopo aver registrato un dispositivo.
 
-### Usare PowerShell per gestire in modo selettivo le licenze utente di EMS
+### <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Usare PowerShell per gestire in modo selettivo le licenze utente di EMS
 Le organizzazioni che usano Microsoft Enterprise Mobility Suite + Security (precedentemente noto come Enterprise Mobility Suite) possono contenere utenti che necessitano solo di Azure Active Directory Premium o dei servizi di Intune nel pacchetto EMS. È possibile assegnare un servizio o un sottoinsieme di servizi tramite i [cmdlet di PowerShell per Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
 
 Per assegnare in modo selettivo le licenze utente per i servizi EMS, aprire PowerShell come amministratore su un computer dotato del [Modulo di Azure Active Directory per Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule). È possibile installare PowerShell su un computer locale o su un server ADFS.
@@ -85,7 +86,7 @@ Verificare con:
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
-### Passaggi successivi
+### <a name="next-steps"></a>Passaggi successivi
 A questo punto, il passaggio 4 della *Guida introduttiva a Intune* è stato completato.
 >[!div class="step-by-step"]
 
@@ -93,6 +94,6 @@ A questo punto, il passaggio 4 della *Guida introduttiva a Intune* è stato comp
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

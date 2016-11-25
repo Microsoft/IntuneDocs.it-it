@@ -1,5 +1,5 @@
 # [Comprendere ed esplorare](/intune/understand-explore/introduction-to-microsoft-intune)
-# [Introduzione](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Introduzione](/intune/get-started/get-started)
 # [Novità](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Distribuire e usare](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
@@ -7,6 +7,6 @@
 # [Risolvere i problemi](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

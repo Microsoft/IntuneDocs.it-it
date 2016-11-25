@@ -1,11 +1,11 @@
 ---
 title: Gestire le licenze di Intune tramite PowerShell | Microsoft Intune
-description: Gestire le licenze Intune tramite PowerShell
+description: Gestire le licenze Intune con PowerShell
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f99159079002b9e44dd1ba328b0f2fc079770d8
-ms.openlocfilehash: 9a3e28cad00f99035b18182a33c24bcb714cca19
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 8f0786bc821c4a93e5f1ff4bf3d693dd6d59ca8e
 
 
 ---
 
-# Gestire le licenze Intune tramite PowerShell
+# <a name="manage-intune-licenses-using-powershell"></a>Gestire le licenze Intune tramite PowerShell
 Perché gli utenti possano accedere al servizio Intune o registrare i propri dispositivi nella gestione, è necessario assegnare loro una licenza per la sottoscrizione di Intune, come descritto nell'articolo relativo alla [gestione delle licenze Intune](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Tuttavia, le organizzazioni che usano Microsoft Enterprise Mobility Suite + Security possono avere utenti che necessitano solo di Azure Active Directory Premium o dei servizi di Intune nel pacchetto EMS. È possibile assegnare un servizio o un sottoinsieme di servizi tramite i [cmdlet di PowerShell per Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
 
 Per assegnare in modo selettivo le licenze utente per i servizi EMS, aprire PowerShell come amministratore su un computer dotato del [Modulo di Azure Active Directory per Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule). È possibile installare PowerShell su un computer locale o su un server ADFS.
@@ -60,7 +60,7 @@ Verificare con:
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
-### Passaggi successivi
+### <a name="next-steps"></a>Passaggi successivi
 A questo punto, il passaggio 4 della *Guida introduttiva a Intune* è stato completato.
 >[!div class="step-by-step"]
 
@@ -68,6 +68,6 @@ A questo punto, il passaggio 4 della *Guida introduttiva a Intune* è stato comp
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
