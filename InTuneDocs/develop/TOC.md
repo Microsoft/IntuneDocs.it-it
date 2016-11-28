@@ -5,11 +5,13 @@
 # [Sviluppare e personalizzare le app](intune-app-sdk.md)
 ## [Panoramica di Microsoft Intune App SDK](intune-app-sdk.md)
 ## [Introduzione a Microsoft Intune App SDK](intune-app-sdk-get-started.md)
-## [Guida a Microsoft Intune App SDK per sviluppatori iOS](intune-app-sdk-ios.md)
-## [Guida a Microsoft Intune App SDK per sviluppatori di Android](intune-app-sdk-android.md)
+## [Manuale dello sviluppatore di Intune App SDK per iOS](intune-app-sdk-ios.md)
+## [Manuale dello sviluppatore di Intune App SDK per Android](intune-app-sdk-android.md)
+## [Plug-in Cordova per Intune App SDK](intune-app-sdk-cordova.md)
+## [Componente Xamarin per Intune App SDK](intune-app-sdk-xamarin.md)
 # [Risolvere i problemi](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

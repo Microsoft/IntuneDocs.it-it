@@ -3,6 +3,7 @@ title: Passaggi successivi al completamento della valutazione di Intune | Micros
 description: Informazioni relative a sottoscrizioni e licenze dopo aver impostato la valutazione gratuita di 30 giorni di Intune
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,14 +14,14 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: ea0e43d93a3e388d55329142292595a8b3b3dbd2
 
 
 ---
 
-# Passaggi successivi al completamento della valutazione di Intune
-Se si acquistano almeno 150 licenze per Microsoft Intune in un piano idoneo, è possibile utilizzare "FastTrack Center Benefit", un servizio mediante il quale gli specialisti Microsoft collaborano con gli utenti per preparare l’ambiente per Intune. Vedere [FastTrack Center Benefit per Enterprise Mobility Suite (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
+# <a name="next-steps-after-your-intune-evaluation-is-completed"></a>Passaggi successivi al completamento della valutazione di Intune
+Se si acquistano almeno 150 licenze per Microsoft Intune in un piano idoneo, è possibile utilizzare "FastTrack Center Benefit", un servizio mediante il quale gli specialisti Microsoft collaborano con gli utenti per preparare l’ambiente per Intune. Vedere [FastTrack Center Benefit per Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
 
 La versione di valutazione gratuita di Intune può essere convertita in una sottoscrizione a pagamento usando le procedure seguenti:
 
@@ -34,6 +35,6 @@ La versione di valutazione gratuita di Intune può essere convertita in una sott
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -8,18 +8,18 @@ manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 02aed5f84340f7d64681e27f1e4312f7f927a6c1
 
 
 ---
 
-# Scegliere come registrare i dispositivi mobili
+# <a name="choose-how-to-enroll-mobile-devices"></a>Scegliere come registrare i dispositivi mobili
 
 La registrazione dei dispositivi mobili è il processo che consente la gestione di smartphone, tablet e PC da parte di Microsoft Intune. L'amministratore ha il compito di determinare qual è il modo migliore per registrare i dispositivi in base ai seguenti elementi:
 
@@ -29,7 +29,7 @@ La registrazione dei dispositivi mobili è il processo che consente la gestione 
 
 Le risposte alle domande seguenti consentono di determinare il metodo di registrazione migliore per i dispositivi gestiti.
 
-## **I dipendenti portano al lavoro i propri dispositivi o usano quelli dell'organizzazione?**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**I dipendenti portano al lavoro i propri dispositivi o usano quelli dell'organizzazione?**
 
   - **Dispositivi di proprietà degli utenti** (BYOD, Bring your own device): gli utenti possono installare l'app del portale aziendale di Intune sul dispositivo ed eseguire la registrazione, per accedere alle risorse della società come posta elettronica, applicazioni aziendali, dati aziendali e supporto.  
 
@@ -38,12 +38,12 @@ Le risposte alle domande seguenti consentono di determinare il metodo di registr
 > [!div class="button"]
 [Registrazione BYOD >](#what-byod-devices-can-your-users-enroll)   [Registrazione COD >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **Quali dispositivi BYOD possono essere registrati dagli utenti?**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**Quali dispositivi BYOD possono essere registrati dagli utenti?**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile e Windows Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [PC Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **I dispositivi di proprietà della società sono condivisi o sono usati da utenti dedicati?**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**I dispositivi di proprietà della società sono condivisi o sono usati da utenti dedicati?**
 
 - **Dispositivi di proprietà della società condivisi**: questi dispositivi non hanno un singolo utente e non sono in genere configurati per accedere alla posta elettronica. Gli esempi includono i dispositivi chiosco o orientati alle attività prelevati da un pool in base alle esigenze e quindi restituiti. I metodi di registrazione consigliati dipendono dalla piattaforma dei dispositivi.
 
@@ -53,12 +53,12 @@ Le risposte alle domande seguenti consentono di determinare il metodo di registr
 [Condiviso >](#what-operating-system-are-your-shared-devices-running)   [Dedicato >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **Quale sistema operativo viene eseguito dai dispositivi condivisi?**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**Quale sistema operativo viene eseguito dai dispositivi condivisi?**
 
   > [!div class="button"]
   [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **Come vengono gestiti i dispositivi iOS condivisi?**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**Come vengono gestiti i dispositivi iOS condivisi?**
 
 - **Programma di registrazione dispositivi (DEP) di Apple**: i dispositivi iOS acquistati o gestiti con questo programma possono essere associati a un profilo di registrazione. Quando un utente accende il proprio dispositivo per la prima volta, il dispositivo scarica il profilo DEP ed esegue la registrazione con quel profilo
 
@@ -69,7 +69,7 @@ Le risposte alle domande seguenti consentono di determinare il metodo di registr
   > [!div class="button"]
   [Registrazione Programma di registrazione dispositivi iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Registrazione diretta iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [Registrazione Manager di registrazione dispositivi >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
-## **Come vengono gestiti i dispositivi iOS dedicati?**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**Come vengono gestiti i dispositivi iOS dedicati?**
 
 È possibile registrare i dispositivi di proprietà dell'azienda con utenti dedicati nei modi seguenti:
 
@@ -84,6 +84,6 @@ Le risposte alle domande seguenti consentono di determinare il metodo di registr
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

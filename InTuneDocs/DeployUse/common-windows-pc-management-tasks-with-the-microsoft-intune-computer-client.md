@@ -2,7 +2,8 @@
 title: "Attività comuni di gestione di PC Windows | Microsoft Intune"
 description: "Per informazioni sulla gestione dei PC Windows che eseguono il client software di Intune, leggere le attività descritte in questo argomento."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/04/2016
 ms.topic: article
@@ -13,23 +14,23 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
+ms.sourcegitcommit: cf6b4c0fbc8a739f205173f39093ce5550cb8321
+ms.openlocfilehash: 075ed3f7d8b5f8283b7936c1c89d20081a9264a6
 
 
 ---
 
-# Attività comuni di gestione di PC Windows con il client software di Intune
+# <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Attività comuni di gestione di PC Windows con il client software di Intune
 Per informazioni sulla gestione dei computer che eseguono il software client di Intune, leggere le attività descritte in questo argomento. Se il client non è ancora stato installato nei computer, vedere [Installare il client software di Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
-## Usare i criteri per semplificare la gestione dei PC
+## <a name="use-policies-to-simplify-pc-management"></a>Usare i criteri per semplificare la gestione dei PC
 
 I PC Windows che eseguono il client software di Intune possono essere gestiti mediante i criteri **Gestione Computer** di Intune.
 
 ![Modello di criteri per PC Windows](../media/pc_policy_template.png)
 
-### Gestire Microsoft Intune Center
+### <a name="manage-the-microsoft-intune-center"></a>Gestire Microsoft Intune Center
 Gli utenti visualizzano il client software di Intune come **Microsoft Intune Center**. Microsoft Intune Center consente agli utenti di:
 
 -   Ottenere applicazioni dal portale aziendale.
@@ -44,23 +45,22 @@ Microsoft Intune Center viene installato su tutti i computer gestiti. È possibi
 
 |Impostazione criterio|Dettagli|
 |------------------|--------------------|
-|**Nome**|Il nome dell'amministratore che gestisce il computer.<br /><br />Lunghezza massima: 40 caratteri|
-|**Numero di telefono**|Il numero di telefono dell'amministratore che gestisce il computer.<br /><br />Lunghezza massima: 20 caratteri|
-|**Indirizzo di posta elettronica**|L'indirizzo di posta elettronica dell'amministratore che gestisce il computer.<br /><br />Lunghezza massima: 40 caratteri|
-|**Nome sito Web**|Il nome del sito Web di supporto per gli utenti.<br /><br />Lunghezza massima: 40 caratteri|
-|**URL sito Web**|L'URL del sito Web di supporto.<br /><br />Lunghezza massima: 150 caratteri|
-|**Note**|Una nota che viene visualizzata agli utenti.<br /><br />Lunghezza massima: 120 caratteri|
+|**Nome**|Il nome dell'amministratore che gestisce il computer.<br />Lunghezza massima: 40 caratteri|
+|**Numero di telefono**|Il numero di telefono dell'amministratore che gestisce il computer.<br />Lunghezza massima: 20 caratteri|
+|**Indirizzo di posta elettronica**|L'indirizzo di posta elettronica dell'amministratore che gestisce il computer.<br />Lunghezza massima: 40 caratteri|
+|**Nome sito Web**|Il nome del sito Web di supporto per gli utenti.<br />>Lunghezza massima: 40 caratteri|
+|**URL sito Web**|L'URL del sito Web di supporto.<br />Lunghezza massima: 150 caratteri|
+|**Note**|Una nota che viene visualizzata agli utenti.<br />Lunghezza massima: 120 caratteri|
 
-## Impostazioni degli aggiornamenti software
-Usare criteri per configurare le impostazioni usate dai computer gestiti per cercare e scaricare gli aggiornamenti software di Microsoft e di terze parti. Questi aggiornamenti non includono aggiornamenti del sistema operativo (ad esempio, l'aggiornamento da Windows 7 a Windows 10 o gli aggiornamenti da una versione di Windows 10 a una versione successiva). Per altre informazioni, vedere [Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+Vedere le risorse seguenti per informazioni sui criteri e le impostazioni che è possibile configurare per i PC Windows:
 
-### Impostazioni di Endpoint Protection
-Usare criteri per configurare le impostazioni per Endpoint Protection da distribuire successivamente ai computer gestiti. I criteri includono le analisi pianificate e le azioni da intraprendere quando viene rilevato malware. Per altre informazioni, vedere [Proteggere i PC Windows con Endpoint Protection per Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- [Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md). Questi criteri determinano che i computer gestiti cerchino e scarichino gli aggiornamenti software di Microsoft e di terze parti. Questi aggiornamenti non includono gli aggiornamenti del sistema operativo (ad esempio, l'aggiornamento da Windows 7 a Windows 10 o gli aggiornamenti da una versione di Windows 10 a una versione successiva).
 
-## Impostazioni di Windows Firewall
-L'utilizzo di criteri consente di semplificare l'amministrazione delle impostazioni di Windows Firewall sui computer gestiti. Per i dettagli, vedere [Proteggere i PC Windows con criteri di Windows Firewall in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+- [Proteggere i PC Windows con Endpoint Protection per Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md). Queste impostazioni includono le analisi pianificate e le azioni da intraprendere quando viene rilevato il malware.
 
-## Visualizzare l'inventario hardware e software
+- [Proteggere i PC Windows con criteri di Windows Firewall in Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md). Questi criteri semplificano l'amministrazione delle impostazioni di Windows Firewall sui computer gestiti.
+
+## <a name="view-hardware-and-software-inventory"></a>Visualizzare l'inventario hardware e software
 Intune raccoglie informazioni dettagliate sull'hardware e sul software dei computer gestiti. Le informazioni delle seguenti procedure consentono di:
 
 -   Creare un report che elenca le informazioni sulle funzionalità hardware dei computer.
@@ -69,7 +69,7 @@ Intune raccoglie informazioni dettagliate sull'hardware e sul software dei compu
 
 -   Aggiornare un inventario di computer per garantire che i dati nel report sia correnti.
 
-### Visualizzare le informazioni sui computer
+### <a name="to-display-information-about-your-computers"></a>Visualizzare le informazioni sui computer
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Report** &gt; **Report inventario computer**.
 
@@ -79,7 +79,7 @@ Intune raccoglie informazioni dettagliate sull'hardware e sul software dei compu
 
     È possibile ordinare il report in base a qualsiasi colonna, ad esempio **Nome**, **Tipo di chassis** o **Produttore** selezionando l'intestazione della colonna.
 
-### Per visualizzare il software installato nei computer
+### <a name="to-display-software-installed-on-your-computers"></a>Per visualizzare il software installato nei computer
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Report** &gt; **Report software rilevato**.
 
@@ -89,7 +89,7 @@ Intune raccoglie informazioni dettagliate sull'hardware e sul software dei compu
 
     È possibile ordinare il report in base a qualsiasi colonna, ad esempio **Nome**, **Autore** o **Categoria** selezionando ogni intestazione di colonna. È possibile espandere gli aggiornamenti nell'elenco per visualizzare maggiori dettagli, ad esempio i computer in cui gli aggiornamenti sono installati, scegliendo la freccia direzionale accanto alla voce dell'elenco.
 
-### Per aggiornare l'inventario dei computer per accertarsi che sia aggiornato
+### <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>Per aggiornare l'inventario dei computer per accertarsi che sia aggiornato
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** &gt; **Tutti i dispositivi** oppure un altro gruppo che contiene il computer di cui si vuole aggiornare l'inventario.
 
@@ -102,7 +102,7 @@ Intune raccoglie informazioni dettagliate sull'hardware e sul software dei compu
     Nella finestra di dialogo **Stato attività** sono elencate le attività remote correnti, il relativo stato, il nome del dispositivo e gli eventuali errori segnalati, nonché un collegamento per consultare le informazioni sulla risoluzione dei problemi.
 
 
-## Riavviare in remoto un PC Windows
+## <a name="remotely-restart-a-windows-pc"></a>Riavviare in remoto un PC Windows
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** &gt; **Tutti i dispositivi** oppure un altro gruppo che contiene il computer da riavviare.
 
@@ -112,7 +112,7 @@ Intune raccoglie informazioni dettagliate sull'hardware e sul software dei compu
 
 4.  Nella finestra di dialogo **Stato attività** , rivedere le attività remote correnti, il relativo stato, il nome del dispositivo e gli eventuali errori segnalati.
 
-## Ritirare un computer
+## <a name="retire-a-computer"></a>Ritirare un computer
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** &gt; **Tutti i dispositivi** oppure un altro gruppo che contiene il computer da ritirare.
 
@@ -143,10 +143,10 @@ Quando si ritira un computer:
 
     Qualora non fosse possibile disinstallare il client, vedere [Risolvere i problemi di Endpoint Protection](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) per altre informazioni.
 
-## Gestire il collegamento utente-dispositivo
+## <a name="manage-user-device-linking"></a>Gestire il collegamento utente-dispositivo
 Prima di distribuire software a un utente, è necessario collegare l'utente a un computer. È possibile collegare un utente a più computer, ma ogni computer può essere collegato a un solo utente. Gli utenti vengono automaticamente collegati a qualsiasi computer che registrano in Intune usando il portale aziendale.
 
-### Per collegare un utente a un computer
+### <a name="to-link-a-user-to-a-computer"></a>Per collegare un utente a un computer
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** &gt; **Tutti i dispositivi** oppure un altro gruppo che contiene il computer da collegare a un utente.
 
@@ -165,13 +165,13 @@ Prima di distribuire software a un utente, è necessario collegare l'utente a un
 > [!TIP]
 > Per limitare la capacità di collegamento degli utenti finali ai computer, abilitare l'opzione **Limita la capacità utente di collegarsi ai computer** nei criteri **Impostazioni agente di Microsoft Intune**.
 
-## Richiedere e fornire assistenza remota per i PC Windows
+## <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Richiedere e fornire assistenza remota per i PC Windows
 
 Microsoft Intune può usare il software [TeamViewer](https://www.teamviewer.com), acquistato separatamente, per consentire agli utenti di PC che eseguono il client software di Intune di ottenere assistenza remota da parte dell'utente. Quando un utente richiede assistenza a Microsoft Intune Center, si riceve un avviso, si può accettare la richiesta e quindi fornire assistenza.
 Questa funzionalità sostituisce la funzionalità Assistenza remota Windows presente in Intune.
 
 
-### Prima di iniziare
+### <a name="before-you-start"></a>Prima di iniziare
 
 Prima di stabilire la connessione e di rispondere alle richieste di assistenza remota, è necessario verificare che siano soddisfatti i prerequisiti seguenti:
 
@@ -179,7 +179,7 @@ Prima di stabilire la connessione e di rispondere alle richieste di assistenza r
 - I PC Windows da amministrare devono essere [gestiti dal client PC Windows](manage-windows-pcs-with-microsoft-intune.md)
 - È possibile amministrare tutti i sistemi operativi per PC Windows supportati da Intune.
 
-### Configurare TeamViewer Connector
+### <a name="configure-the-teamviewer-connector"></a>Configurare TeamViewer Connector
 
 1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Amministrazione**.
 2. Nell'area di lavoro **Amministrazione** scegliere **TeamViewer**.
@@ -190,7 +190,7 @@ Prima di stabilire la connessione e di rispondere alle richieste di assistenza r
 7. Nella console di Intune verificare che **TeamViewer Connector** sia visualizzato come **Abilitato**.
 
 
-### Aprire una richiesta di assistenza remota (utente finale)
+### <a name="open-a-remote-assistance-request-end-user"></a>Aprire una richiesta di assistenza remota (utente finale)
 
 1. In un PC Windows client aprire **Microsoft Intune Center**.
 2. In **Assistenza remota** scegliere **Richiedi assistenza remota**.
@@ -198,7 +198,7 @@ Prima di stabilire la connessione e di rispondere alle richieste di assistenza r
 4. Viene visualizzato un messaggio che chiede l'autorizzazione a controllare il PC. Per continuare è necessario accettare questo messaggio.
 5. Durante la sessione di assistenza remota l'utente vede una finestra che mostra la connessione in corso. Se si chiude questa finestra, la sessione remota termina.
 
-### Rispondere a una richiesta di assistenza remota
+### <a name="respond-to-a-remote-assistance-request"></a>Rispondere a una richiesta di assistenza remota
 
 1. Quando un utente invia una richiesta di assistenza remota, è possibile visualizzare quest'ultima nell'area di lavoro **Avvisi**, in **Monitoraggio** > **Assistenza remota**. Ad esempio:
 > ![Screenshot di una richiesta di assistenza remota](./media/team-viewer.png)
@@ -210,12 +210,12 @@ Prima di stabilire la connessione e di rispondere alle richieste di assistenza r
 
 Durante una sessione di assistenza remota è possibile usare tutti i comandi di TeamViewer disponibili per controllare il computer remoto. Per informazioni su questi comandi, scaricare la [Guida sul controllo remoto](http://www.teamviewer.com/en/support/documents/) dal sito Web TeamViewer.
 
-### Chiudere la sessione di Assistenza remota
+### <a name="close-the-remote-assistance-session"></a>Chiudere la sessione di Assistenza remota
 
 Dal menu**Azioni** della finestra di **TeamViewer**, scegliere **Termina sessione**.
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

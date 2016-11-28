@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
-ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: fc484be99d0956e707f96c0c285b2750754f746c
 
 
 ---
 
-# Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune
+# <a name="protect-app-data-using-mobile-app-management-policies-with-microsoft-intune"></a>Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune
 
-## Protezione dei dati delle app
+## <a name="how-you-can-protect-app-data"></a>Protezione dei dati delle app
 I dipendenti usano dispositivi mobili per le attività personali e aziendali.  Pur assicurandosi della produttività dei dipendenti, è auspicabile prevenire anche la perdita di dati, sia intenzionale sia non intenzionale.  Inoltre, può essere utile proteggere i dati aziendali accessibili con dispositivi anche nel caso in cui vengano gestiti dall'utente.
 
 Per proteggere i dati aziendali, è possibile usare i criteri di gestione delle app per dispositivi mobili (MAM) di Intune. Dal momento che i criteri MAM di Intune possono essere usati **in modo indipendente da qualsiasi soluzione di gestione di dispositivi mobili (MDM)**, è possibile usarli per proteggere i dati aziendali con o senza la registrazione di dispositivi in una soluzione di gestione dei dispositivi. Implementando i **criteri a livello di app** è possibile limitare l'accesso alle risorse aziendali e mantenere i dati all'interno del reparto IT.
@@ -54,21 +54,21 @@ L'uso di soluzioni MDM con criteri MAM comporta vantaggi aggiuntivi e le aziende
 - **I criteri MAM garantiscono che le misure di sicurezza a livello di app siano presenti**. Ad esempio, è possibile richiedere un PIN per aprire un'app in un contesto aziendale, o per condividere i dati tra app o per impedire che i dati dell'app aziendale vengano salvati in un percorso di archiviazione personale.
 
 
-### I criteri MAM sono attualmente supportati in:
+### <a name="mam-polices-are-currently-supported-on"></a>I criteri MAM sono attualmente supportati in:
 -   iOS 8.1 o versioni successive
 
 -   Android 4 o versioni successive
 
 I dispositivi Windows non sono attualmente supportati.
-##  Protezione dei dati delle app con i criteri MAM
+##  <a name="how-mam-policies-protect-app-data"></a>Protezione dei dati delle app con i criteri MAM
 
-####  App senza criteri MAM:
+####  <a name="apps-without-mam-policies"></a>App senza criteri MAM:
 
 ![Immagine che mostra lo spostamento dei dati tra le app quando non sono presenti criteri MAM](../media/Apps_without_MAM_policies.png)
 
 Quando le app vengono usate senza restrizioni, può crearsi una commistione di dati aziendali e personali.  I dati aziendali potrebbero finire in percorsi come l'archivio personale o essere trasferiti alle app esterne al proprio ambito, causando la perdita di dati. Le frecce nel diagramma indicano lo spostamento senza restrizioni dei dati tra le app (aziendali e personali) e i percorsi di archiviazione.
 
-### Protezione dei dati con i criteri MAM:
+### <a name="data-protection-with-mam-policies"></a>Protezione dei dati con i criteri MAM:
 
 ![Immagine che mostra come proteggere i dati aziendali quando vengono applicati criteri MAM ](../media/Apps_with_mobile_app_policies.png)
 
@@ -76,7 +76,7 @@ Quando le app vengono usate senza restrizioni, può crearsi una commistione di d
 - Criteri di rilocazione dei dati, ad esempio **Impedisci Salva con nome** e **Limita le operazioni taglia, copia e incolla**.
 - Impostazioni dei criteri di accesso, ad esempio **Richiedi PIN semplice per l'accesso**, **Blocca l'esecuzione delle app gestite nei dispositivi jailbroken o rooted**.
 
-### Protezione dei dati con criteri MAM nei dispositivi gestiti da una soluzione MDM:
+### <a name="data-protection-with-mam-policies-on-devices-managed-by-a-mdm-solution"></a>Protezione dei dati con criteri MAM nei dispositivi gestiti da una soluzione MDM:
 
 ![Immagine che mostra il funzionamento dei criteri MAM sui dispositivi BYOD](../media/MAM_BYOD_November.png)
 
@@ -101,7 +101,7 @@ La soluzione MDM:
 -   Cancellano i dati aziendali dalle app senza rimuoverle dal dispositivo
 
 
-### Protezione dei dati con i criteri MAM per dispositivi senza registrazione
+### <a name="data-protection-with-mam-policies-for-devices-without-enrollment"></a>Protezione dei dati con i criteri MAM per dispositivi senza registrazione
 
 ![Immagine che mostra il funzionamento dei criteri MAM nei dispositivi gestiti](../media/MAM_ManagedDevices_November.png)
 
@@ -117,7 +117,7 @@ Esistono tuttavia alcune limitazioni da tenere in considerazione, ad esempio:
 -   Non è possibile eseguire il provisioning delle impostazioni Wi-FI e VPN aziendali in questi dispositivi.
 
 
-## Supporto per identità multiple
+## <a name="multi-identity"></a>Supporto per identità multiple
 
 Le app che supportano identità multiple offrono la possibilità di usare account differenti, aziendale e personale, per accedere alle stesse app mentre i criteri MAM vengono applicati quando le app vengono usate nel contesto aziendale.  
 
@@ -125,13 +125,13 @@ Ad esempio, quando l'utente finale avvia l'app OneDrive usando il proprio accoun
 
 Tutte le app di Office per dispositivi mobili supportano più identità.
 
-##  Passaggi successivi
+##  <a name="next-steps"></a>Passaggi successivi
 [Preparazione alla configurazione dei criteri di gestione delle app per dispositivi mobili](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

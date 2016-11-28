@@ -8,10 +8,10 @@
 # [Risolvere i problemi](general-troubleshooting-tips-for-microsoft-intune.md)
 ## [Come ottenere supporto](how-to-get-support-for-microsoft-intune.md)
 ## [Risolvere i problemi di Endpoint Protection](Troubleshoot-Endpoint-Protection-in-microsoft-intune.md)
-## [Risorse per risolvere i problemi di accesso alle risorse aziendali con Microsoft Intune](Troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
-## [Risorse che consentono di risolvere i problemi di distribuzione dell'app](Troubleshoot-app-deployment-problems-in-microsoft-intune.md)
+## [Risolvere i problemi di accesso alle risorse aziendali](Troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
+## [Risolvere i problemi di distribuzione delle app](Troubleshoot-app-deployment-problems-in-microsoft-intune.md)
 ## [Risolvere i problemi di registrazione dei dispositivi](troubleshoot-device-enrollment-in-intune.md)
-## [Criteri di risoluzione dei problemi](Troubleshoot-policies-in-microsoft-intune.md)
+## [Risolvere i problemi relativi ai criteri](Troubleshoot-policies-in-microsoft-intune.md)
 ## [Risolvere i problemi di installazione del client](Troubleshoot-client-setup-in-microsoft-intune.md)
 ## [Risolvere i problemi degli aggiornamenti software](Troubleshoot-software-updates-in-microsoft-intune.md)
 ## [Risolvere i problemi dei profili di posta elettronica](Troubleshoot-email-profiles-in-microsoft-intune.md)
@@ -23,6 +23,6 @@
 ## [Risolvere i problemi di integrazione di Lookout](troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

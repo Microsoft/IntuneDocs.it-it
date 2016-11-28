@@ -2,10 +2,10 @@
 title: Connessioni VPN | Microsoft Intune
 description: Usare i profili VPN per distribuire le impostazioni VPN agli utenti e ai dispositivi dell&quot;organizzazione.
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 10/14/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
-ms.openlocfilehash: 188cb3890da83332431743445959bba73e7f2484
+ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
+ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
 
 
 ---
 
-# Connessioni VPN in Microsoft Intune
+# <a name="vpn-connections-in-microsoft-intune"></a>Connessioni VPN in Microsoft Intune
 
-Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla rete aziendale. I dispositivi usano un *profilo di connessione VPN* per stabilire una connessione con il server VPN. Usare i *profili VPN* in Microsoft Intune per distribuire le impostazioni VPN agli utenti e ai dispositivi dell'organizzazione in modo che possano connettersi in modo facile e sicuro alla rete. 
+Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla rete aziendale. I dispositivi usano un *profilo di connessione VPN* per stabilire una connessione con il server VPN. Usare i *profili VPN* in Microsoft Intune per distribuire le impostazioni VPN agli utenti e ai dispositivi dell'organizzazione in modo che possano connettersi in modo facile e sicuro alla rete.
 
 Si supponga, ad esempio, di voler effettuare il provisioning di tutti i dispositivi iOS con le impostazioni necessarie per connettersi a una condivisione file nella rete aziendale. Creare un profilo VPN contenente le impostazioni necessarie per connettersi alla rete aziendale e quindi distribuire tale profilo a tutti gli utenti che usano dispositivi iOS. Gli utenti visualizzano la connessione VPN nell'elenco delle reti disponibili e possono connettersi con la massima facilità.
 
@@ -38,7 +38,9 @@ I profili VPN consentono di configurare i tipi di dispositivo seguenti:
 
 Le opzioni di configurazione del profilo VPN variano a seconda del tipo di dispositivo selezionato.
 
-## Tipi di connessione VPN
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
+## <a name="vpn-connection-types"></a>Tipi di connessione VPN
 
 Intune supporta la creazione di profili VPN che usano i tipi di connessione seguenti:
 
@@ -48,7 +50,7 @@ Intune supporta la creazione di profili VPN che usano i tipi di connessione segu
 Tipo di connessione |iOS e Mac OS X  |Android e Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop e Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|Sì |Sì   |No    |No  |No    | Sì, (URI OMA, solo dispositivi mobili)|     
-Cisco (IPsec)|sì |No   |No  |No  |No | No|
+Cisco (IPsec)|sì |Sì   |No  |No  |No | No|
 Citrix|sì |No   |No  |No  |No | No|
 Pulse Secure|Sì  |Sì |Sì   |Sì  |Sì| Sì|        
 F5 Edge Client|Sì |Sì |Sì |Sì  |   Sì |  Sì|   
@@ -58,7 +60,7 @@ Microsoft SSL (SSTP)|No |No |No |No|No|VPNv1 URI OMA*|
 Microsoft Automatico|No |No |No |No|Sì (URI OMA)|sì|
 IKEv2|Profilo personalizzato iOS|No |No |No|Sì (URI OMA)|sì|
 PPTP|Profilo personalizzato iOS|No |No |No|No|Sì|
-L2TP|Profilo personalizzato iOS|No |No |No|Sì (URI OMA)|Sì|
+L2TP|Profilo personalizzato iOS|No |No |No|Sì (URI OMA)|sì|
 
 \* Senza impostazioni aggiuntive che sono altrimenti disponibili per Windows 10.
 
@@ -67,27 +69,27 @@ L2TP|Profilo personalizzato iOS|No |No |No|Sì (URI OMA)|Sì|
 
  Per informazioni su come creare profili VPN personalizzati usando le impostazioni URI, vedere [Configurazioni personalizzate per i profili VPN](custom-configurations-for-vpn-profiles.md).     
 
-## Metodi per la protezione dei profili VPN
+## <a name="methods-of-securing-vpn-profiles"></a>Metodi per la protezione dei profili VPN
 
 I profili VPN possono usare numerosi tipi di connessione e protocolli diversi di produttori diversi. Queste connessioni vengono in genere protette mediante uno dei due metodi seguenti.
 
-### Certificati
+### <a name="certificates"></a>Certificati
 
 Quando si crea il profilo VPN, è possibile scegliere un profilo certificato SCEP o PFX creato precedentemente in Intune. Questo metodo è noto come certificato di identità. Viene usato per eseguire l'autenticazione in base a un profilo certificato attendibile (o *certificato radice*) creato per stabilire che il dispositivo dell'utente è autorizzato a connettersi. Il certificato attendibile viene distribuito nel computer che esegue l'autenticazione della connessione VPN, in genere il server VPN.
 
 Per altre informazioni su come creare e usare i profili di certificato in Intune, vedere il documento relativo alla [protezione dell'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).
 
-### Nome utente e password
+### <a name="user-name-and-password"></a>Nome utente e password
 
 Per eseguire l'autenticazione al server VPN, l'utente deve specificare nome utente e password.
 
-## Creare un profilo VPN
+## <a name="create-a-vpn-profile"></a>Creare un profilo VPN
 
 1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** > **Aggiungi criterio**.
 2. Selezionare un modello per il nuovo criterio espandendo il tipo di dispositivo pertinente e quindi scegliere il profilo VPN per il dispositivo:
     * **Profilo VPN (Android 4 e versioni successive)**
     * **Profilo VPN (Android for Work)**
-    * **Profilo VPN (iOS 8.0 e versione successiva)**
+    * **Profilo VPN (iOS 8.0 e versioni successive)**
     * **Profilo VPN (Mac OS X 10.9 e versioni successive)**
     * **Profilo VPN (Windows 8.1 e versioni successive)**
     * **Profilo VPN (Windows Phone 8.1 e versioni successive)**
@@ -107,16 +109,16 @@ Nome impostazione  |Altre informazioni
 **Nome**     |Immettere un nome univoco per il profilo VPN che consenta di identificarlo nella console di Intune.         
 **Descrizione**     |Fornire una descrizione di carattere generale sul profilo VPN e altre informazioni rilevanti per consentirne l'individuazione.         
 **Nome connessione VPN (visualizzato agli utenti)**     |Specificare un nome per il profilo VPN. Si tratta del nome visualizzato agli utenti nell'elenco delle connessioni VPN disponibili nei dispositivi.         
-**Tipo di connessione**     |  Selezionare uno dei seguenti tipi di connessione da usare nel profilo VPN: **Cisco AnyConnect** (non disponibile per Windows 8.1 o Windows Phone 8.1), **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **VPN CheckPoint Mobile**.
+**Tipo di connessione**     |  Selezionare uno dei tipi di connessione seguenti da usare nel profilo VPN: **Cisco AnyConnect** (non disponibile per Windows 8.1 o Windows Phone 8.1), **Pulse Secure**, **Citrix**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect**, **VPN CheckPoint Mobile**.
 **Descrizione server VPN**     | Specificare una descrizione per il server VPN a cui si connetteranno i dispositivi. Esempio: **Server VPN di Contoso**. Se il tipo di connessione è **F5 Edge Client**, usare il campo **Elenco server** per specificare un elenco di descrizioni e indirizzi IP di server.
-**Indirizzo IP o FQDN del server**    |Specificare l'indirizzo IP o il nome di dominio completo del server VPN a cui si connetteranno i dispositivi. Esempi: **192.168.1.1**, **vpn.contoso.com**.  Se il tipo di connessione è **F5 Edge Client**, usare il campo **Elenco server** per specificare un elenco di descrizioni e indirizzi IP di server.         |         
+**Indirizzo IP o FQDN server**    |Specificare l'indirizzo IP o il nome di dominio completo del server VPN a cui si connetteranno i dispositivi. Esempi: **192.168.1.1**, **vpn.contoso.com**.  Se il tipo di connessione è **F5 Edge Client**, usare il campo **Elenco server** per specificare un elenco di descrizioni e indirizzi IP di server.         |         
 **Elenco server**     |Fare clic su **Aggiungi** per aggiungere un nuovo server VPN da usare per la connessione VPN. È inoltre possibile specificare il server predefinito per la connessione. Questa opzione viene visualizzata solo quando il tipo di connessione è **F5 Edge Client**.         
 **Invia tutto il traffico di rete tramite la connessione VPN**     |Se si seleziona questa opzione, tutto il traffico di rete verrà inviato tramite la connessione VPN. Se non si seleziona questa opzione, il client negozierà in modo dinamico le route per lo split tunneling al momento della connessione al server VPN di terze parti. Solo le connessioni alla rete aziendale vengono inviate tramite un tunnel VPN. Il tunneling VPN non viene usato quando si esegue la connessione alle risorse su Internet.
 **Metodo di autenticazione**| Selezionare il metodo di autenticazione usato dalla connessione VPN: **Certificati** oppure **Nome utente e password**. L'impostazione **Nome utente e password** non è disponibile per il tipo di connessione Cisco AnyConnect. L'opzione **Metodo di autenticazione** non è disponibile per Windows 8.1.
 **Memorizza le credenziali utente a ogni accesso**|selezionare questa opzione per garantire che le credenziali utente vengano memorizzate in modo che l'utente non debba immetterle ogni volta che viene stabilita una connessione.
 **Selezionare un certificato client per l'autenticazione client (certificato di identità)**|Selezionare il certificato SCEP client creato in precedenza e che verrà usato per autenticare la connessione VPN. Per altre informazioni su come usare i profili di certificato in Intune, vedere [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteggere l'accesso alle risorse con profili di certificato) Questa opzione viene visualizzata solo quando il metodo di autenticazione è **Certificati**.
-**Ruolo**| Specificare il nome del ruolo utente che ha accesso a questa connessione. Un ruolo utente consente di definire le opzioni e le impostazioni personali, oltre ad abilitare o disabilitare alcune funzionalità di accesso. Questa opzione viene visualizzata solo quando il tipo di connessione è **Pulse Secure**.
-**Area di autenticazione**|Specificare il nome dell'area di autenticazione da usare. Un'area di autenticazione è un raggruppamento di risorse di autenticazione usate dal tipo di connessione Pulse Secure. Questa opzione viene visualizzata solo quando il tipo di connessione è **Pulse Secure**.
+**Ruolo**| Specificare il nome del ruolo utente che ha accesso a questa connessione. Un ruolo utente consente di definire le opzioni e le impostazioni personali, oltre ad abilitare o disabilitare alcune funzionalità di accesso. Questa opzione viene visualizzata solo quando il tipo di connessione è **Pulse Secure** o **Citrix**.
+**Area di autenticazione**|Specificare il nome dell'area di autenticazione da usare. Un'area di autenticazione è un raggruppamento di risorse di autenticazione usate dal tipo di connessione Pulse Secure o Citrix. Questa opzione viene visualizzata solo quando il tipo di connessione è **Pulse Secure** o **Citrix**.
 **Gruppo o dominio di accesso**|Specificare il nome del gruppo di accesso o di dominio a cui connettersi. Questa opzione viene visualizzata solo quando il tipo di connessione è **Dell SonicWALL Mobile Connect**.
 **Impronta digitale**|Specificare una stringa, ad esempio "Codice impronta digitale Contoso", che verrà usata per verificare l'attendibilità del server VPN. È possibile inviare un'impronta digitale al client per indicargli di considerare attendibile qualsiasi server che presenta la stessa impronta digitale durante la connessione. Se il dispositivo non ha ancora l'impronta digitale, richiederà all'utente di considerare attendibile il server VPN usato per la connessione durante la visualizzazione dell'impronta digitale. L'utente verifica manualmente l'impronta digitale e sceglie **Attendibilità** per connettersi. Questa opzione viene visualizzata solo quando il tipo di connessione è **VPN CheckPoint Mobile**.
 **Per VPN app**|Selezionare questa opzione se si vuole associare questa connessione VPN a un'app iOS o Mac OS X in modo da aprire la connessione quando si esegue l'app. Quando si distribuisce il software, è possibile associare il profilo VPN a un'app. Per altre informazioni vedere [Distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
@@ -151,22 +153,22 @@ Definire le route nei limiti aziendali è utile quando il tipo di connessione VP
 
 Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell'area di lavoro **Criteri**.
 
-### Connessione VPN su richiesta per dispositivi iOS
+### <a name="on-demand-vpn-for-ios-devices"></a>Connessione VPN su richiesta per dispositivi iOS
 È possibile configurare la connessione VPN su richiesta per i dispositivi iOS 8.0 e versioni successive.
 
 > [!NOTE]
 >  
 > Non è possibile usare la connessione VPN per app e VPN su richiesta nello stesso criterio.
- 
-1. Nella pagina di configurazione dei criteri, trovare **Regole su richiesta per questa connessione VPN**. Le colonne sono denominate **Corrispondenza**, la condizione verificata dalle regole, e **Azione**, l'azione che il criterio attiverà quando la condizione verrà soddisfatta. 
+
+1. Nella pagina di configurazione dei criteri, trovare **Regole su richiesta per questa connessione VPN**. Le colonne sono denominate **Corrispondenza**, la condizione verificata dalle regole, e **Azione**, l'azione che il criterio attiverà quando la condizione verrà soddisfatta.
 2. Scegliere **Aggiungi** per creare una regola. Nella regola è possibile impostare due tipi di corrispondenze. È possibile configurare solo uno di questi tipi per ogni regola.
-  - **SSID**, che fanno riferimento alle reti wireless. 
+  - **SSID**, che fanno riferimento alle reti wireless.
   - **Domini di ricerca DNS**, che sono...  È possibile usare nomi di dominio completo, ad esempio *team. corp.contoso.com*, oppure usare domini quali *contoso.com*, che è equivalente all'uso di * *.contoso.com*.
 3. Facoltativo: specificare un probe della stringa dell'URL, ovvero un URL che viene usato come test. Se il dispositivo in cui è installato il profilo è in grado di accedere a tale URL senza il reindirizzamento, verrà stabilita la connessione VPN e il dispositivo si connetterà all'URL di destinazione. L'utente non visualizzerà il sito del probe della stringa dell'URL. Un esempio di probe della stringa dell'URL è l'indirizzo di un server Web di controllo che verifica la conformità del dispositivo prima della connessione VPN. Un'altra possibilità è che l'URL verifichi la capacità della rete VPN di connettersi a un sito, prima di connettere il dispositivo all'URL di destinazione tramite VPN.
 4. Scegliere una delle azioni seguenti:
   - **Connessione**
   - **Valuta la connessione**, che presenta tre impostazioni. a. **Azione del dominio**: scegliere **Connetti se necessario** o **Non connettere mai**
-    . b. **Elenco di domini separati da virgole**: configurarla solo se si sceglie **Azione del dominio** **Connetti se necessario** 
+    . b. **Elenco di domini separati da virgole**: configurarla solo se si sceglie **Azione del dominio** **Connetti se necessario**
     . c. **Probe della stringa dell'URL necessario**: un URL HTTP o HTTPS (consigliato), ad esempio *https://vpntestprobe.contoso.com*. La regola verificherà se esiste una risposta da questo indirizzo. In caso contrario e se **Azione del dominio** è **Connetti se necessario**, la connessione VPN verrà attivata.
      > [!TIP]
      >
@@ -174,10 +176,10 @@ Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell
   - **Ignorato**: questo non comporta alcuna modifica nella connettività VPN. Se la connessione VPN è stabilita, lasciarla invariata. In caso contrario, non stabilirla. Ad esempio, è possibile che si disponga di una regola che si connette alla rete VPN per tutti i siti Web aziendali interni, ma si vuole che uno di quei siti interni sia accessibile solo quando il dispositivo è attualmente connesso alla rete aziendale. In tal caso, è consigliabile creare una regola che ignori tale sito.
   - **Disconnetti**: disconnettere i dispositivi dalla rete VPN quando le condizioni vengono soddisfatte. Ad esempio, è possibile elencare le reti wireless aziendali nel campo **SSID** e creare una regola che consente di disconnettere i dispositivi dalla rete VPN quando si connettono a una di tali reti.
 
-Le regole specifiche del dominio vengono valutate prima delle regole di tutti i domini. 
+Le regole specifiche del dominio vengono valutate prima delle regole di tutti i domini.
 
 
-## Distribuire i criteri
+## <a name="deploy-the-policy"></a>Distribuire i criteri
 
 1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire e quindi scegliere **Gestisci distribuzione**.
 
@@ -192,13 +194,13 @@ Al termine della distribuzione, il nome della connessione VPN specificato verrà
 
 Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** dell'area di lavoro **Criteri** consentono di identificare i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene visualizzato anche nell'area di lavoro Dashboard.
 
-### Vedere anche
+### <a name="see-also"></a>Vedere anche
 [Configurazioni personalizzate per i profili VPN](Custom-configurations-for-VPN-profiles.md)
 
-[Usare criteri personalizzati per creare un profilo VPN per app per dispositivi Android](per-app-vpn-for-android-pulse-secure.md)
+[Profilo VPN per app per Android con Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 
