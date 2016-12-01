@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
-ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
+ms.sourcegitcommit: 07f18c0011624f760f4d1db05cf954551dee3a85
+ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
 
 
 ---
 
-# Limitare l'accesso alla posta elettronica per Exchange Online e il nuovo ambiente Exchange Online dedicato
+# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Limitare l'accesso alla posta elettronica per Exchange Online e il nuovo ambiente Exchange Online dedicato
 
 Se si dispone di un ambiente Exchange Online dedicato ed è necessario definire se si trova nell'ambiente di configurazione nuovo o legacy, contattare l'account manager.
 
@@ -62,12 +62,14 @@ L'immagine seguente illustra il flusso usato dai criteri di accesso condizionale
 
 ![Immagine che illustra gli aspetti tenuti in considerazione per determinare se a un dispositivo è consentito o meno l'accesso](../media/ConditionalAccess8-1.png)
 
-## Supporto per dispositivi mobili
+## <a name="support-for-mobile-devices"></a>Supporto per dispositivi mobili
 È possibile limitare l'accesso per la posta elettronica a Exchange Online da **Outlook** e altre **app che usano l'autenticazione moderna**:
 
 - Android 4.0 e versioni successive, Samsung Knox Standard 4.0 e versioni successive e Android for Work
 - iOS 8.0 e versioni successive
 - Windows Phone 8.1 e versioni successive
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Con l'**autenticazione moderna**, i client Microsoft Office possono usare l'accesso basato su Active Directory Authentication Library (ADAL).
 
@@ -79,11 +81,11 @@ Configurare le regole delle attestazioni ADFS per bloccare i protocolli di auten
 
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS e Android)
+* Managed Browser (iOS e Android 5.0 e versioni successive)
 
 **I browser non supportati verranno bloccati**.
 
-**L'app OWA per iOS e Android può essere modificata in modo da evitare l'uso dell'autenticazione moderna e non è supportata.  L'accesso dall'applicazione OWA deve essere bloccato tramite le regole delle attestazioni di AD FS.**
+**L'app OWA per iOS e Android può essere modificata in modo da evitare l'uso dell'autenticazione moderna e non è supportata.  L'accesso dall'app OWA deve essere bloccato tramite le regole delle attestazioni di AD FS.**
 
 
 È possibile limitare l'accesso per la posta elettronica a Exchange dal **client di posta elettronica Exchange ActiveSync** integrato sulle piattaforme seguenti:
@@ -94,7 +96,7 @@ Configurare le regole delle attestazioni ADFS per bloccare i protocolli di auten
 
 - Windows Phone 8.1 e versioni successive
 
-## Supporto per PC
+## <a name="support-for-pcs"></a>Supporto per PC
 
 È possibile configurare l'accesso condizionale per i PC che eseguono le applicazioni desktop di Office al fine di accedere a **Exchange Online** e **SharePoint Online** , se i PC soddisfano i requisiti seguenti:
 
@@ -118,25 +120,25 @@ Configurare le regole delle attestazioni ADFS per bloccare i protocolli di auten
 
 -   Configurare le regole delle attestazioni AD FS per bloccare i protocolli di autenticazione non moderni. Istruzioni dettagliate sono descritte nello scenario 3: [Bloccare completamente l'accesso a Office 365, ad eccezione delle applicazioni basate su browser](https://technet.microsoft.com/library/dn592182.aspx).
 
-## Configurare l'accesso condizionale
-### Passaggio 1: Configurare e distribuire i criteri di conformità
+## <a name="configure-conditional-access"></a>Configurare l'accesso condizionale
+### <a name="step-1-configure-and-deploy-a-compliance-policy"></a>Passaggio 1: Configurare e distribuire i criteri di conformità
 Assicurarsi di [creare](create-a-device-compliance-policy-in-microsoft-intune.md) e [distribuire](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) i criteri di conformità ai gruppi di utenti che riceveranno anche i criteri di accesso condizionale.
 
 
 > [!IMPORTANT]
 > Se i criteri di conformità non sono stati distribuiti, i dispositivi verranno considerati conformi e verrà loro consentito l'accesso a Exchange.
 
-### Passaggio 2: Valutare l'effetto dei criteri di accesso condizionale
+### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>Passaggio 2: Valutare l'effetto dei criteri di accesso condizionale
 È possibile usare i **Report inventario dispositivi mobili** per individuare i dispositivi che non potranno accedere a Exchange dopo aver configurato i criteri di accesso condizionale.
 
 A tale scopo, configurare una connessione tra [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ed Exchange usando [Microsoft Intune Service to Service Connector](intune-service-to-service-exchange-connector.md).
 1.  Accedere a **Report -> Report inventario dispositivi mobili**.
-![Schermata della pagina Report inventario dispositivi mobili](../media/IntuneSA2bMobileDeviceInventoryReport.png)
+![Screenshot della pagina Report inventario dispositivi mobili](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
 2.  Nei parametri del report selezionare il gruppo [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] da valutare e, se necessario, le piattaforme del dispositivo a cui applicare i criteri.
 3.  Dopo aver selezionato i criteri che soddisfano le esigenze dell'organizzazione, scegliere **Visualizza report**.
 Il Visualizzatore report verrà aperto in una nuova finestra.
-![Schermata di un report inventario dispositivi mobili di esempio](../media/IntuneSA2cViewReport.PNG)
+![Screenshot di un report inventario dispositivi mobili di esempio](../media/IntuneSA2cViewReport.PNG)
 
 Dopo aver eseguito il report, esaminare le quattro colonne seguenti per determinare se un utente verrà bloccato:
 
@@ -161,7 +163,7 @@ L'accesso ad Exchange da parte dei dispositivi che appartengono a un gruppo di d
 ----------------------
 È possibile esportare il contenuto del report e usare la colonna **Indirizzo di posta elettronica** per informare gli utenti che verranno bloccati.
 
-### Passaggio 3: Configurare i gruppi di utenti per i criteri di accesso condizionale.
+### <a name="step-3-configure-user-groups-for-the-conditional-access-policy"></a>Passaggio 3: Configurare i gruppi di utenti per i criteri di accesso condizionale.
 I criteri di accesso condizionale sono destinati a diversi gruppi di utenti di sicurezza di Azure Active Directory. È anche possibile escludere alcuni gruppi di utenti da questi criteri.  Quando a un utente viene destinato un criterio, ogni dispositivo in uso deve essere conforme per accedere alla posta elettronica.
 
 È possibile configurare questi gruppi nel **centro di amministrazione di Office 365**o nel **portale per gli account di Intune**.
@@ -176,14 +178,14 @@ Se un utente si trova in entrambi i gruppi, sarà esentato dai criteri.
 
 Solo i gruppi che sono considerati come destinazione dei criteri di accesso condizionale vengono valutati.
 
-### Passaggio 4: Configurare i criteri di accesso condizionale
+### <a name="step-4-configure-the-conditional-access-policy"></a>Passaggio 4: Configurare i criteri di accesso condizionale
 
 >[!NOTE]
 > È inoltre possibile creare criteri di accesso condizionale nella console di gestione di Azure AD. La console di gestione di Azure AD consente di creare i criteri di accesso condizionale del dispositivo Intune (definiti come **criteri di accesso condizionale basato su dispositivo** in Azure AD) oltre ad altri criteri di accesso condizionale come l'autenticazione a più fattori.  È inoltre possibile impostare i criteri di accesso condizionale per app aziendali di terze parti come Salesforce e Box supportate da Azure AD. Per altre informazioni dettagliate, vedere [Come impostare criteri di accesso condizionale basato su dispositivo di Azure Active Directory per controllare gli accessi delle applicazioni connesse ad Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** > **Accesso condizionale** > **Criteri di Exchange Online**.
-![Schermata della pagine dei criteri di accesso condizionale per Exchange Online](../media/mdm-ca-exo-policy-configuration.png)
+
 
 2.  Nella pagina **Criteri di Exchange Online** selezionare **Abilita criteri di accesso condizionale per Exchange Online**.
 
@@ -214,11 +216,11 @@ Solo i gruppi che sono considerati come destinazione dei criteri di accesso cond
   3.    Premere il pulsante **Abilita l'accesso al browser**.
   4.    Nel browser Chrome disconnettersi da Office 365 e riavviare Chrome.
 
-  Nelle piattaforme **iOS e Android**, per identificare il dispositivo usato per accedere al servizio, Azure Active Directory emetterà un certificato TLS (Transport Layer Security) per il dispositivo.  Il dispositivo visualizza il certificato richiedendo all'utente finale la selezione del certificato, come illustrato nelle schermate riportate di seguito. L'utente finale deve selezionare il certificato per poter continuare a usare il browser.
+  Nelle piattaforme **iOS e Android**, per identificare il dispositivo usato per accedere al servizio, Azure Active Directory emetterà un certificato TLS (Transport Layer Security) per il dispositivo.  Il dispositivo visualizza il certificato richiedendo all'utente finale la selezione del certificato, come illustrato nelle schermate riportate di seguito. Per continuare a usare il browser è necessario che l'utente finale selezioni il certificato.
 
   **iOS**
 
-  ![schermata del messaggio di richiesta del certificato in un ipad](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![schermata del messaggio di richiesta del certificato in un iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
@@ -227,10 +229,10 @@ Solo i gruppi che sono considerati come destinazione dei criteri di accesso cond
 5.  In **App Exchange ActiveSync** è possibile scegliere di bloccare i dispositivi non conformi dall'accesso a Exchange Online. È anche possibile scegliere se consentire o bloccare l'accesso alla posta elettronica quando il dispositivo non esegue una piattaforma supportata. Le piattaforme supportate includono Android, iOS, Windows e Windows Phone.
 
  App Exchange Active Sync **dispositivi Android for Work**:
- -  Nei dispositivi Android for Work sono supportate solo le app **Gmail**e **Nine Work** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni nei dispositivi Android for Work, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work. È anche necessario distribuire tale profilo come installazione **obbligatoria**. 
+ -  Nei dispositivi Android for Work sono supportate solo le app **Gmail**e **Nine Work** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni nei dispositivi Android for Work, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work. È anche necessario distribuire tale profilo come installazione **obbligatoria**.
 
 6.  In **Gruppi di destinazione**selezionare i gruppi di sicurezza di Active Directory degli utenti ai quali applicare i criteri. È possibile scegliere come destinazione tutti gli utenti o un elenco di gruppi di utenti selezionato.
-![Schermata della pagina dei criteri di accesso condizionale di Exchange Online che illustra le opzioni dei gruppi di destinazione e di esenzione](../media/IntuneSA5eTargetedExemptedGroups.PNG)
+![Screenshot della pagina dei criteri di accesso condizionale di Exchange Online che illustra le opzioni dei gruppi di destinazione e di esenzione](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
     > Per gli utenti inclusi nei **Gruppi di destinazione** i criteri di Intune sostituiranno le regole e i criteri di Exchange.
     >
@@ -251,22 +253,22 @@ Solo i gruppi che sono considerati come destinazione dei criteri di accesso cond
 
 -   Se l'utente annulla la registrazione del dispositivo, la posta elettronica viene bloccata dopo circa 6 ore.
 
-**Per vedere alcuni scenari di esempio sulla configurazione dei criteri di accesso condizionale per limitare l'accesso dei dispositivi, vedere [Restrict access to email with Microsoft Intune: Example scenarios](restrict-email-access-example-scenarios.md) (Limitare l'accesso alla posta elettronica: scenari di esempio).**
+**Per vedere alcuni scenari di esempio sulla configurazione dei criteri di accesso condizionale per limitare l'accesso dei dispositivi, vedere gli [scenari di esempio di limitazione dell'accesso alla posta elettronica](restrict-email-access-example-scenarios.md).**
 
-## Monitorare i criteri di conformità e di accesso condizionale
+## <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorare i criteri di conformità e di accesso condizionale
 
-#### Per visualizzare i dispositivi bloccati da Exchange
+#### <a name="to-view-devices-that-are-blocked-from-exchange"></a>Per visualizzare i dispositivi bloccati da Exchange
 
 Nel dashboard di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] scegliere il riquadro **Dispositivi bloccati da Exchange** per visualizzare il numero di dispositivi bloccati e i collegamenti ad altre informazioni.
-![Schermata del dashboard di Intune che illustra il numero di dispositivi che non possono accedere a Exchange](../media/IntuneSA6BlockedDevices.PNG)
+![Screenshot del dashboard di Intune che mostra il numero di dispositivi che non possono accedere a Exchange](../media/IntuneSA6BlockedDevices.PNG)
 
-## Passaggi successivi
+## <a name="next-steps"></a>Passaggi successivi
 [Limitare l'accesso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [Limitare l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

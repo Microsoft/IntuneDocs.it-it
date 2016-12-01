@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3d01ec8c2b848b4fa1e507ec9e7a31125badf30e
+ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
+ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
 
 
 ---
 
-# Informazioni sui dispositivi con inventario in Microsoft Intune
+# <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Informazioni sui dispositivi con inventario in Microsoft Intune
 Microsoft Intune consente di visualizzare l'inventario dei dispositivi registrati e dei PC Windows che eseguono il software client di Intune.
 Intune in genere raccoglie l'inventario dei dispositivi gestiti ogni 7 giorni. Per questo motivo, può esserci un ritardo prima che i report mostrino i risultati delle eventuali ultime modifiche ai dispositivi, ad esempio, una modifica al nome del dispositivo o allo spazio di archiviazione gratuito.
 
-## Inventario raccolto dai dispositivi registrati
+## <a name="whats-collected-from-enrolled-devices"></a>Inventario raccolto dai dispositivi registrati
 Per visualizzare l'inventario raccolto dai dispositivi mobili, eseguire i [Report inventario dispositivi mobili](understand-microsoft-intune-operations-by-using-reports.md). Intune raccoglie l'inventario seguente dai dispositivi registrati:
 
 |Proprietà|Raccolta da|
@@ -40,13 +40,13 @@ Per visualizzare l'inventario raccolto dai dispositivi mobili, eseguire i [Repor
 |**ID di attivazione EAS**|Tutti i dispositivi tranne Mac OS X|
 |**Ora di attivazione EAS**|Tutti i dispositivi tranne Mac OS X|
 |**Stato gestione**|Tutti i dispositivi|
-|**Indirizzo E-mail**|Tutti i dispositivi|
+|**Indirizzo di posta elettronica**|Tutti i dispositivi|
 |**ID Exchange ActiveSync**|Tutti i dispositivi|
 |**Dispositivo jailbroken o rooted**|Solo dispositivi iOS e Android|
 |**ID univoco del dispositivo**|Tutti i dispositivi eccetto Exchange ActiveSync|
-|**Numero di serie**|Dispositivi iOS, Mac OS X, Android, Windows 8.1 e Windows 10|
-|**Spazio di archiviazione totale**|Dispositivi iOS, Mac OS X, Windows 8.1 e Windows 10|
-|**Spazio di archiviazione disponibile**|Dispositivi iOS, Mac OS X, Windows 8.1 e Windows 10|
+|**Numero di serie**|Dispositivi desktop con iOS, Mac OS X, Android, Windows 8.1 e Windows 10|
+|**Spazio di archiviazione totale**|Dispositivi desktop e mobili con iOS, Mac OS X, Windows 8.1 e Windows 10|
+|**Spazio di archiviazione disponibile**|Dispositivi desktop con iOS, Mac OS X, Windows 8.1 e Windows 10|
 |**Numero di telefono**<br>I telefoni classificati come "aziendali" sono ora identificati con il loro numero di telefono completo quando, ad esempio, si esegue un report inventario dei dispositivi mobili. I numeri di telefono BYOD continuano a essere mascherati con &#42;, mostrando solo le ultime quattro cifre.|Dispositivi iOS, Android e Windows Phone|
 |**IMEI**|Dispositivi Exchange ActiveSync, iOS, Android e Windows Phone|
 |**MEID**<br>Identificativo di apparecchiatura mobile|Solo dispositivi iOS|
@@ -61,7 +61,7 @@ Per visualizzare l'inventario raccolto dai dispositivi mobili, eseguire i [Repor
 |**Blocco attivazione abilitato**|Solo dispositivi iOS|
 |**Crittografia abilitata**|Tutti i dispositivi|
 
-## Inventario raccolto da PC Windows
+## <a name="whats-collected-from-windows-pcs"></a>Inventario raccolto da PC Windows
 > [!IMPORTANT]
 > Questa sezione si applica solo ai PC Windows che eseguono il software client di PC Windows con Intune.
 
@@ -116,6 +116,6 @@ Per visualizzare l'inventario raccolto dai PC Windows, eseguire [Report inventar
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

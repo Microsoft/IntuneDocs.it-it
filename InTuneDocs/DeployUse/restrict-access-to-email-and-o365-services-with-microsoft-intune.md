@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/29/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
-ms.openlocfilehash: 6e11d71265f01ae31ab3124a46aaa544ad2f453a
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: 68fc47ba9f63f2ba05abae1f0e5ae5c6b3dca463
 
 
 ---
 
-# Limitare l'accesso alla posta elettronica, a Office 365 e ad altri servizi con Microsoft Intune
+# <a name="restrict-access-to-email-o365-and-other-services-with-microsoft-intune"></a>Limitare l'accesso alla posta elettronica, a Office 365 e ad altri servizi con Microsoft Intune
 È possibile limitare l'accesso alla posta elettronica aziendale e ai servizi di Office 365 con l'accesso condizionale di Intune. L'accesso condizionale di Intune consente di assicurarsi che l'accesso alla posta elettronica aziendale e ai servizi di Office 365 sia limitato ai dispositivi conformi alle regole definite.
-## Come funziona l'accesso condizionale?
+## <a name="how-does-conditional-access-work"></a>Come funziona l'accesso condizionale?
 Le impostazioni dei criteri di conformità vengono usate per valutare la conformità del dispositivo. I criteri di accesso condizionale usano la versione di valutazione per limitare o consentire l'accesso a un servizio specifico. Quando i criteri di accesso condizionale vengono usati in combinazione con i criteri di conformità, solo i dispositivi conformi possono accedere al servizio. I criteri di conformità e di accesso condizionale vengono distribuiti all'utente. Di qualsiasi dispositivo usato dall'utente per accedere ai servizi viene verificata la conformità ai criteri.
 
 Tenere presente che l'utente che usa il dispositivo deve disporre di criteri di conformità distribuiti, in modo che venga valutata la conformità del dispositivo.
@@ -34,7 +34,7 @@ Un flusso di accesso condizionale tipico:
 
 ![Immagine che illustra gli aspetti tenuti in considerazione per determinare se a un dispositivo è consentito o meno l'accesso a un servizio](../media/ConditionalAccess4.png)
 
-## Come configurare l'accesso condizionale?
+## <a name="how-to-configure-conditional-access"></a>Come configurare l'accesso condizionale?
 Usare l'accesso condizionale per gestire l'accesso a Microsoft **Exchange locale**, **Exchange Online**, **Exchange Online dedicato**, **SharePoint Online** e **Skype for Business Online**.
 
 Per impostare l'accesso condizionale, configurare i criteri di conformità del dispositivo e i criteri di accesso condizionale.
@@ -49,7 +49,7 @@ I criteri di conformità includono impostazioni quali passcode e crittografia e 
 A differenza degli altri criteri di Intune, i criteri di accesso condizionale non vengono distribuiti. Dopo aver configurato i criteri e aver selezionato gli utenti che devono disporre di criteri, questi vengono applicati a tutti gli utenti destinatari. Per poter accedere alle risorse, un utente di destinazione in un criterio deve usare solo dispositivi conformi.
 
 
-## Passaggi successivi
+## <a name="next-steps"></a>Passaggi successivi
 1. [Informazioni sui criteri di conformità del dispositivo e sul relativo funzionamento ](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 2. [Creare i criteri di conformità](create-a-device-compliance-policy-in-microsoft-intune.md)
@@ -66,6 +66,6 @@ A differenza degli altri criteri di Intune, i criteri di accesso condizionale no
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

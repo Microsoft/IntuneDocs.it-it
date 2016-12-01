@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
+ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
+ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
 
 
 ---
@@ -100,7 +100,7 @@ Poiché la password non è contenuta nel profilo di posta elettronica, l'utente 
     |**Descrizione**|Descrizione che consente di identificare il profilo.|
     |**Host**|Nome host del server aziendale che ospita il servizio di posta elettronica nativo.|
     |**Nome account**|Nome dell'account di posta elettronica visualizzato nei dispositivi degli utenti.|
-    |**Nome utente**|Modalità con cui viene ottenuto il nome utente per l'account di posta elettronica. Selezionare **Nome utente** per un server Exchange locale o **Nome entità utente** per Office 365.|
+    |**Nome utente**|Si tratta dell'attributo in Active Directory (AD) o AD Azure che verrà usato per generare il nome utente per questo profilo di posta elettronica. Selezionare Indirizzo SMTP primario, ad esempio *user1@contoso.com* o Nome entità utente, ad esempio *utente1* o *user1@contoso.com*.|
     |**Indirizzo di posta elettronica**|Modalità di generazione dell'indirizzo di posta elettronica per l'utente in ogni dispositivo. Selezionare **Indirizzo SMTP primario** per accedere a Exchange con l'indirizzo SMTP primario o **Nome entità utente** per usare il nome completo dell'entità come indirizzo di posta elettronica.|
     |**Metodo di autenticazione** (Android for Work, Samsung KNOX e iOS)|Selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione usato dal profilo di posta elettronica.|
     |**Selezionare un certificato client per l'autenticazione client (certificato di identità)** (Android for Work, Samsung KNOX e iOS)|Selezionare il certificato SCEP client creato in precedenza che verrà usato per autenticare la connessione di Exchange. Per altre informazioni su come usare i profili di certificato in Intune, vedere [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteggere l'accesso alle risorse con profili certificato). Questa opzione viene visualizzata solo quando il metodo di autenticazione è **Certificati**.|
@@ -138,6 +138,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
