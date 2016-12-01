@@ -1,8 +1,9 @@
 ---
 title: Registrare con il manager di registrazione dispositivi | Microsoft Intune
-description: "L'account del manager di registrazione dispositivi consente di gestire un numero elevato di dispositivi mobili condivisi e di proprietà dell'azienda con un unico account utente."
+description: "L&quot;account del manager di registrazione dispositivi consente di gestire un numero elevato di dispositivi mobili condivisi e di proprietà dell&quot;azienda con un unico account utente."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: fd289e355aca46eb0abe55edf09ebe5e030bcc63
 
 
 ---
 
 
-# Registrare i dispositivi di proprietà dell'azienda con il manager di registrazione dispositivi in Microsoft Intune
-Le organizzazioni possono usare Intune per gestire un numero elevato di dispositivi mobili con un singolo account utente. L'account del *manager di registrazione dispositivi* è un account speciale di Intune che consente di registrare fino a 1000 dispositivi. Si consiglia di usare i dispositivi registrati tramite tale account come dispositivi condivisi piuttosto che come dispositivi personali ("BYOD"). Gli utenti non saranno in grado, ad esempio, di usare le app di posta elettronica "native".
+# <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Registrare i dispositivi di proprietà dell'azienda con il manager di registrazione dispositivi in Microsoft Intune
+Le organizzazioni possono usare Intune per gestire un numero elevato di dispositivi mobili con un singolo account utente. L'account del *manager di registrazione dispositivi* è un account speciale di Intune che consente di registrare fino a 1000 dispositivi. Ogni dispositivo registrato usa una singola licenza. Si consiglia di usare i dispositivi registrati tramite tale account come dispositivi condivisi piuttosto che come dispositivi personali ("BYOD"). Gli utenti non saranno in grado, ad esempio, di usare le app di posta elettronica "native".
 
 È, ad esempio, possibile assegnare un account utente di manager di registrazione dispositivi a un gestore del negozio o a un supervisore per consentire l'esecuzione delle operazioni seguenti:
 
@@ -50,10 +51,10 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
 > Per distribuire le app aziendali ai dispositivi gestiti con il manager di registrazione dispositivi, distribuire l'app Portale aziendale come **Installazione richiesta** all'account utente del manager di registrazione dispositivi.
 > Per consentire prestazioni migliori, se si visualizza l'app Portale aziendale in un dispositivo DEM, viene visualizzato solo il dispositivo locale. La gestione remota di altri dispositivi DEM è possibile solo dalla console di amministrazione di Intune.
 
-## Creare account del manager di registrazione dispositivi
+## <a name="create-device-enrollment-manager-accounts"></a>Creare account del manager di registrazione dispositivi
 Gli account manager di registrazione dispositivi sono account utente con l'autorizzazione per registrare un numero elevato di dispositivi di proprietà dell'azienda. Solo gli utenti presenti nella console di Intune possono essere manager di registrazione dispositivi.
 
-#### Aggiungere un manager di registrazione dispositivi a Intune
+#### <a name="add-a-device-enrollment-manager-to-intune"></a>Aggiungere un manager di registrazione dispositivi a Intune
 
 1.  Passare al [portale per gli account di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=698854) ed eseguire l'accesso con l'account amministratore.
 
@@ -71,7 +72,7 @@ Gli account manager di registrazione dispositivi sono account utente con l'autor
 
 8.  Il manager di registrazione dispositivi ora può registrare i dispositivi mobili usando la stessa procedura usata da un utente finale per uno scenario BYOD nel portale aziendale.
 
-## Eliminare un manager di registrazione dispositivi da Intune
+## <a name="delete-a-device-enrollment-manager-from-intune"></a>Eliminare un manager di registrazione dispositivi da Intune
 
 1.  Accedere al [portale di amministrazione di Microsoft Intune](http://manage.microsoft.com) con le credenziali di amministratore.
 
@@ -95,6 +96,6 @@ L'eliminazione di un manager di registrazione dispositivi non influisce sui disp
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

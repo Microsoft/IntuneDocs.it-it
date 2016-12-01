@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 
 
 ---
@@ -64,6 +64,25 @@ La **cancellazione completa** ripristina le impostazioni predefinite di un dispo
 
 Se il dispositivo è acceso e connesso, un comando di cancellazione non richiede più di 15 minuti per propagarsi a tutti i tipi di dispositivo.
 
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Per eliminare i dispositivi nel portale di Azure Active Directory
+
+1.  Accedere a [http://aka.ms/accessaad](http://aka.ms/accessaad) oppure fare clic su** Amministrazione** &gt; **Azure AD** da [https://portal.office.com](https://portal.office.com).
+
+2.  Accedere con l'ID organizzazione usando il collegamento sul lato sinistro della pagina.
+
+3.  Creare una sottoscrizione di Azure, se non se ne possiede una. Se si dispone di un account a pagamento, questa operazione non richiede l'uso di una carta di credito né un pagamento. Fare clic sul collegamento per l'abbonamento relativo alla **registrazione gratuita di Azure Active Directory**.
+
+4.  Selezionare **Active Directory** e quindi l'organizzazione.
+
+5.  Selezionare la scheda **Utenti** .
+
+6.  Selezionare l'utente di cui si desidera eliminare i dispositivi.
+
+7.  Scegliere **Dispositivi**.
+
+8.  Rimuovere i dispositivi nel modo opportuno, ad esempio quelli che non sono più in uso o quelli con definizioni errate.
+
+
 ## <a name="selective-wipe"></a>Cancellazione selettiva
 
 La **cancellazione selettiva** rimuove i dati aziendali, compresi i dati sulla gestione delle app mobili (MAM), ove applicabile, le impostazioni e i profili di posta elettronica da un dispositivo. La cancellazione selettiva lascia i dati personali dell'utente sul dispositivo. Il dispositivo verrà rimosso da Intune. Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto sui dati che rimangono nel dispositivo dopo una cancellazione selettiva. (Le tabelle sono organizzate in base alla piattaforma.)
@@ -95,7 +114,7 @@ La **cancellazione selettiva** rimuove i dati aziendali, compresi i dati sulla g
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso.|Rimosso.|
 |Impostazioni del profilo certificato|Certificati revocati, ma non rimossi.|Certificati rimossi e revocati.|
 |Agente di gestione|Il privilegio di amministratore del dispositivo viene revocato.|Il privilegio di amministratore del dispositivo viene revocato.|
-|Posta elettronica|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per Android vengono rimossi.|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato. Se Microsoft Exchange è ospitato in locale, i profili di posta elettronica e i messaggi di posta elettronica memorizzati nella cache non vengono rimossi.|
+|Posta elettronica|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per Android vengono rimossi.|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|
 |Outlook|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|
 |Separazione di Azure Active Directory (AAD)|Il record AAD viene rimosso.|Il record AAD viene rimosso.|
 |Contatti | I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. <br /> <br />Attualmente è supportata solo l'app Outlook.|I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. <br /> <br />Attualmente è supportata solo l'app Outlook.
@@ -111,7 +130,7 @@ La **cancellazione selettiva** rimuove i dati aziendali, compresi i dati sulla g
 |Posta elettronica|Rimuove le applicazioni di posta elettronica abilitate per EFS, tra cui i messaggi e gli allegati dell'applicazione Posta di Windows.|Non supportata.|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|Rimuove le applicazioni di posta elettronica abilitate per EFS, tra cui i messaggi e gli allegati dell'applicazione Posta di Windows. Rimuove gli account di posta elettronica di cui Intune ha effettuato il provisioning.</br>**Eccezione**: se Exchange è ospitato in locale, gli account di posta elettronica non vengono rimossi.|
 |Separazione di Azure Active Directory (AAD)|No.|No.|Il record AAD viene rimosso.|Non applicabile. Windows 10 non supporta la cancellazione selettiva per dispositivi appartenenti ad Azure Active Directory.|
 
-## <a name="wipe-encryption-file-system-efsenabled-content"></a>Cancellare contenuti abilitati per Encryption File System (EFS)
+## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Cancellare contenuti abilitati per Encryption File System (EFS)
 La cancellazione selettiva dei contenuti crittografati con EFS è supportata da Windows 8.1 e Windows RT 8.1. I punti seguenti sono validi per una cancellazione selettiva di contenuti abilitati per EFS:
 
 -   Solo le app e i dati protetti da EFS che usano lo stesso dominio Internet come account di Intune vengono cancellati in modo selettivo. Per altre informazioni, vedere l'argomento relativo alla [cancellazione selettiva di Windows per la gestione dei dati dei dispositivi](http://technet.microsoft.com/library/dn486874.aspx).
@@ -146,6 +165,6 @@ Questo report mostra anche chi ha eseguito l'azione.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

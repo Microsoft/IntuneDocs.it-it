@@ -14,46 +14,46 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
-ms.openlocfilehash: 4718d61f9d76a903ffc1820c77fc755d1ca1707b
+ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
+ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
 
 
 ---
 
 # <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>Cancellare i dati dell'app aziendale gestita con Microsoft Intune
-Quando un dispositivo viene smarrito o rubato, o se il dipendente lascia l'azienda, è necessario assicurarsi di rimuovere dal dispositivo i dati delle app aziendali. Tuttavia, potrebbe non essere necessario rimuovere i dati personali sul dispositivo, soprattutto se si tratta di un dispositivo di proprietà del dipendente.
+Quando un dispositivo viene smarrito o rubato, o se il dipendente lascia l'azienda, è necessario assicurarsi di rimuovere dal dispositivo i dati delle app aziendali. Ma potrebbe essere necessario non rimuovere i dati personali sul dispositivo, soprattutto se si tratta di un dispositivo di proprietà del dipendente.
 
-Per rimuovere selettivamente i dati delle app aziendali, creare una richiesta di cancellazione attenendosi alla procedura descritta in questa sezione, **Creare una richiesta di cancellazione**, nel presente argomento.  Una volta completata la richiesta, i dati aziendali verranno rimossi dall'app alla successiva esecuzione dell'applicazione nel dispositivo.
+Per rimuovere selettivamente i dati delle app aziendali, creare una richiesta di cancellazione attenendosi alla procedura descritta in questo argomento. Al termine della richiesta, i dati aziendali verranno rimossi dall'app alla successiva esecuzione dell'app nel dispositivo.
 >[!NOTE]
-> I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. Attualmente questa opzione è disponibile solo per l'app Microsoft Outlook.
+> I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. Attualmente, questa opzione è disponibile solo per l'app Microsoft Outlook.
 
 
 
 ## <a name="create-a-wipe-request"></a>Creare una richiesta di cancellazione
 
-1.  Nel pannello **Gestione di applicazioni mobili di Intune** scegliere il riquadro **Richieste di cancellazione dati** .
+1.  Nel pannello **Gestione di applicazioni mobili di Intune** scegliere il riquadro **Richieste di cancellazione dati**.
 
-    ![Schermata del pannello Gestione di applicazioni mobili di Intune con il riquadro Riepilogo](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
+    ![Schermata del pannello Gestione di applicazioni mobili di Intune con i riquadri Riepilogo](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  Scegliere **Nuova richiesta di cancellazione dati**.
+2.  Scegliere **Nuova richiesta di cancellazione dati**. Verrà aperto il pannello **Nuova richiesta di cancellazione dati**.
 
     ![Schermata del pannello Nuova richiesta di cancellazione dati](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
-3.  Nel pannello **Nuova richiesta di cancellazione dati** scegliere **Utente** per aprire il pannello **Utente** e selezionare l'utente di cui cancellare i dati dell'app.
+3.  Scegliere **Utente** per aprire il pannello **Utente** e selezionare l'utente di cui cancellare i dati dell'app.
 
 4.  Scegliere **Dispositivo**.  Si apre il pannello **Dispositivo** che elenca tutti i dispositivi associati all'utente selezionato.  Selezionare il dispositivo da cancellare.
 
-5.  Si torna al riquadro **Nuova richiesta di cancellazione dati**. Scegliere **OK** per eseguire una richiesta di cancellazione. Il servizio crea e tiene traccia di una richiesta di cancellazione dati separata per ogni app protetta nel dispositivo.
+5.  Verrà visualizzato nuovamente il riquadro **Nuova richiesta di cancellazione dati**. Scegliere **OK** per eseguire una richiesta di cancellazione. Il servizio crea e tiene traccia di una richiesta di cancellazione dati separata per ogni app protetta nel dispositivo.
 
 
 ![Schermata del riquadro relativo alle richieste di cancellazione ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
 ## <a name="monitor-your-wipe-requests"></a>Monitorare le richieste di cancellazione dati
-Il pannello **Gestione di applicazioni mobili di Intune** contiene un report di riepilogo per il riquadro **Richiesta di cancellazione dati** .  Visualizza lo stato generale e include il numero di richieste in sospeso e gli errori. È possibile ottenere altre informazioni seguendo i passaggi descritti di seguito:
+Il pannello **Gestione di applicazioni mobili di Intune** contiene un report di riepilogo per il riquadro **Richiesta di cancellazione dati** .  Mostra lo stato generale e include il numero di richieste in sospeso e gli errori. È possibile ottenere altre informazioni seguendo i passaggi seguenti:
 
 1.  Nel pannello **Gestione di applicazioni mobili di Intune** scegliere il riquadro **Richiesta di cancellazione dati** per aprire il pannello **Richiesta di cancellazione dati** .
 
-2.  Nel pannello **Richiesta di cancellazione dati** è possibile visualizzare l'elenco delle richieste raggruppate in base agli utenti.  Poiché il sistema crea una richiesta di cancellazione dati per ciascuna applicazione protetta in esecuzione nel dispositivo, è possibile visualizzare più richieste per un utente.  Lo stato indica se una richiesta di cancellazione dati è ancora **in sospeso**, **non riuscita**o **completata**.
+2.  Nel pannello **Richiesta di cancellazione dati** è possibile visualizzare l'elenco delle richieste raggruppate in base agli utenti. Dal momento che il sistema crea una richiesta di cancellazione dati per ciascuna applicazione protetta in esecuzione nel dispositivo, è possibile visualizzare più richieste per un utente. Lo stato indica se una richiesta di cancellazione dati è **in sospeso**, **non riuscita** o **completata**.
 
 L'utente deve aprire l'app affinché venga eseguita la cancellazione dati e l'operazione può richiedere fino a 30 minuti dopo la richiesta. 
 
@@ -66,6 +66,6 @@ Le cancellazioni dati con stato in sospeso rimangono visualizzate fino all'elimi
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

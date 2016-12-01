@@ -5,25 +5,25 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 2c14071f5fb1a3604b897d6b2f81797d40bedc6d
-ms.openlocfilehash: 1fd8495811e2cbcf4761707f2d1b705e49a240c6
+ms.sourcegitcommit: a563105aafb447c6e009cca09645e630709ff72d
+ms.openlocfilehash: 143f77bde09648a233ff09e9740668191a50cb1e
 
 
 ---
 
-# Scegliere come registrare i dispositivi mobili
+# <a name="choose-how-to-enroll-mobile-devices"></a>Scegliere come registrare i dispositivi mobili
 
 Le risposte alle domande seguenti consentono di determinare il metodo migliore di registrazione per i dispositivi gestiti.
 
-## **I dipendenti usano i propri dispositivi o quelli dell'organizzazione?**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**I dipendenti portano al lavoro i propri dispositivi o usano quelli dell'organizzazione?**
 
   - **Dispositivi di proprietà degli utenti** - Registrazione BYOD (Bring your own device)
   - **Dispositivi di proprietà dell'azienda** -Registrazione COD
@@ -33,26 +33,26 @@ Le risposte alle domande seguenti consentono di determinare il metodo migliore d
 > [!div class="button"]
 [Registrazione COD >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **Quali dispositivi BYOD possono essere registrati dagli utenti?**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**Quali dispositivi BYOD possono essere registrati dagli utenti?**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile e Windows Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [PC Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **I dispositivi di proprietà della società sono condivisi o usati da utenti dedicati?**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**I dispositivi di proprietà della società sono condivisi o sono usati da utenti dedicati?**
 
 > [!div class="button"]
 [Condiviso >](#what-operating-system-are-your-shared-devices-running)   [Dedicato >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **Quale sistema operativo viene eseguito dai dispositivi condivisi?**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**Quale sistema operativo viene eseguito dai dispositivi condivisi?**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **Come vengono gestiti i dispositivi iOS condivisi?**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**Come vengono gestiti i dispositivi iOS condivisi?**
 
-  > [!div class="button"]
-  [Registrazione Programma di registrazione dispositivi iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Registrazione diretta iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune) [Registrazione Manager di registrazione dispositivi >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+> [!div class="button"]
+[Registrazione Programma di registrazione dispositivi iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Registrazione diretta iOS >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune) [Registrazione Manager di registrazione dispositivi >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Programma di registrazione dispositivi (DEP) di Apple**: i dispositivi iOS acquistati o gestiti con il programma DEP possono essere associati a un profilo di registrazione. Quando un utente avvia il proprio dispositivo per la prima volta, il dispositivo scarica il profilo DEP ed esegue la registrazione con quel profilo.
 
@@ -60,10 +60,10 @@ Le risposte alle domande seguenti consentono di determinare il metodo migliore d
 
   - **Manager di registrazione dispositivi (Intune)**: DEM (Device Enrollment Manager, Manager di registrazione dispositivi) di Intune consente a un manager o a un amministratore di registrare vari dispositivi mobili con un account utente singolo. Questi dispositivi non possono avere utenti dedicati (affinità utente) e devono registrarsi installando e accedendo tramite l'app Portale aziendale.
 
-## **Come vengono gestiti i dispositivi iOS dedicati?**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**Come vengono gestiti i dispositivi iOS dedicati?**
 
-  > [!div class="button"]
-   [DEP iOS](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Assistente configurazione di iOS](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Tag con IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+> [!div class="button"]
+[DEP iOS](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Assistente configurazione di iOS](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Tag con IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   È possibile registrare i dispositivi di proprietà dell'azienda con utenti dedicati nei modi seguenti:
 
@@ -75,6 +75,6 @@ Le risposte alle domande seguenti consentono di determinare il metodo migliore d
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -14,13 +14,13 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 1bc39e7e91b1511ffb99e92e569df0a7153cc06f
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
 
 
 ---
 
-# <a name="enroll-corporateowned-device-enrollment-program-ios-devices"></a>Registrare i dispositivi IOS di proprietà dell'azienda usando il programma di registrazione dispositivi (DEP)
+# <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Registrare i dispositivi IOS di proprietà dell'azienda usando il programma di registrazione dispositivi (DEP)
 Microsoft Intune può distribuire un profilo di registrazione che registra in modalità wireless i dispositivi iOS acquistati tramite il programma di registrazione dispositivi (DEP). Il pacchetto di registrazione può includere opzioni di Assistente configurazione per il dispositivo. La registrazione dei dispositivi registrati tramite DEP non può essere annullata dagli utenti.
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Gestione del servizio DEP di Apple per i dispositivi iOS con Microsoft Intune
@@ -56,7 +56,7 @@ Per registrare i dispositivi iOS di proprietà dell'azienda con DEP, è necessar
     Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) passare a **Criteri** &gt; **Registrazione di dispositivi aziendali** e scegliere **Aggiungi**.
 
     Specificare le informazioni **generali** includendo **Nome** e **Descrizione** e indicare se i dispositivi assegnati al profilo hanno affinità utente o appartengono a un gruppo.
-      - **Richiedi affinità utente**: il dispositivo deve essere associato a un utente durante la configurazione iniziale per poter accedere ai dati aziendali e alla posta elettronica con il nome utente. **Affinità utente** deve essere configurata per i dispositivi gestiti tramite DEP che appartengono a utenti che devono usare il portale aziendale, ad esempio per installare app.</br> **Nota:** i dispositivi DEP con affinità utente non possono supportare l'autenticazione a più fattori.
+      - **Richiedi affinità utente**: il dispositivo deve essere associato a un utente durante la configurazione iniziale per poter accedere ai dati aziendali e alla posta elettronica con il nome utente. **Affinità utente** deve essere configurata per i dispositivi gestiti tramite DEP che appartengono a utenti che devono usare il portale aziendale, ad esempio per installare app. L'autenticazione a più fattori non funziona durante la registrazione nei dispositivi DEP con affinità utente. Dopo la registrazione, l'autenticazione a più fattori funziona come previsto in questi dispositivi. 
 
       > [!NOTE]
       > DEP con affinità utente richiede un endpoint misto/nome utente WS-Trust 1.3 per essere abilitato a richiedere token utente.
@@ -116,6 +116,6 @@ A partire dal mese di novembre la gestione dei gruppi di dispositivi passerà ad
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

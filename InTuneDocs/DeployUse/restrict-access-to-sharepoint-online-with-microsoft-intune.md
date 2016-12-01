@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
 
 
 ---
 
-# Limitare l'accesso a SharePoint Online con Microsoft Intune
+# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Limitare l'accesso a SharePoint Online con Microsoft Intune
 Usare l'accesso condizionale di [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] per controllare l'accesso ai file in SharePoint Online.
 L'accesso condizionale è costituito da due componenti:
 - Criteri di conformità che il dispositivo deve soddisfare per essere considerato conforme.
@@ -55,12 +55,12 @@ Se non viene soddisfatta una condizione, viene visualizzato uno dei due messaggi
 
 -   Se il dispositivo non è conforme, viene visualizzato un messaggio che indirizza l'utente al sito Web del portale aziendale di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dove sono disponibili informazioni sul problema e su come risolverlo.
 
-**L'accesso condizionale viene applicato in tutti i siti di SharePoint e la condivisione esterna è bloccata**
+**L'accesso condizionale non si applica alla condivisione esterna**. Per informazioni su come impedire la condivisione esterna nel tenant o in una raccolta siti, vedere [Gestire la condivisione esterna per l'ambiente di SharePoint](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
 
 >[!NOTE]
 >Se si abilita l'accesso condizionale per SharePoint Online, è consigliabile disabilitare il dominio nell'elenco come descritto nell'argomento [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
 
-## Supporto per dispositivi mobili
+## <a name="support-for-mobile-devices"></a>Supporto per dispositivi mobili
 - iOS 8.0 e versioni successive
 - Android 4.0 e versioni successive, Samsung Knox Standard 4.0 o versioni successive
 - Windows Phone 8.1 e versioni successive
@@ -68,11 +68,11 @@ Se non viene soddisfatta una condizione, viene visualizzato uno dei due messaggi
 È possibile limitare l'accesso a SharePoint Online quando si accede da un browser da dispositivi **iOS** e **Android**.  L'accesso verrà consentito solo dai browser supportati su dispositivi conformi:
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS e Android)
+* Managed Browser (iOS e Android 5.0 e versioni successive)
 
 **I browser non supportati verranno bloccati**.
 
-## Supporto per PC
+## <a name="support-for-pcs"></a>Supporto per PC
 - Windows 8.1 e versioni successive (se registrato con Intune)
 - Windows 7.0, Windows 8.1 o Windows 10 (se aggiunto a un dominio)
 > [!NOTE]
@@ -92,9 +92,9 @@ Il servizio AAD DRS verrà attivato automaticamente per i clienti di Intune e Of
     L'autenticazione moderna consente l'accesso basato su Active Directory Authentication Library (ADAL) ai client Windows con Office 2013 e offre migliori opzioni di sicurezza, come l'**autenticazione a più fattori** e l'**autenticazione basata sui certificati**.
 
 
-## Configurare l'accesso condizionale per SharePoint Online
+## <a name="configure-conditional-access-for-sharepoint-online"></a>Configurare l'accesso condizionale per SharePoint Online
 
-### Passaggio 1: Configurare i gruppi di sicurezza di Active Directory
+### <a name="step-1-configure-active-directory-security-groups"></a>Passaggio 1: Configurare i gruppi di sicurezza di Active Directory
 Prima di iniziare configurare i gruppi di sicurezza di Azure Active Directory per i criteri di accesso condizionale. È possibile configurare questi gruppi nel **centro di amministrazione di Office 365**o nel **portale per gli account di Intune**. Questi gruppi verranno usati per destinare o escludere gli utenti dai criteri. Per poter accedere alle risorse, un utente di destinazione in un criterio deve usare solo dispositivi conformi.
 
 In un criterio di SharePoint Online è possibile specificare due tipi di gruppi:
@@ -105,7 +105,7 @@ In un criterio di SharePoint Online è possibile specificare due tipi di gruppi:
 
 Se un utente si trova in entrambi i gruppi, sarà esentato dai criteri.
 
-### Passaggio 2: Configurare e distribuire i criteri di conformità
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>Passaggio 2: Configurare e distribuire i criteri di conformità
 Se questa operazione non è ancora stata eseguita, creare e distribuire i criteri di conformità agli utenti a cui saranno destinati i criteri di SharePoint Online.
 
 > [!NOTE]
@@ -118,7 +118,7 @@ Per informazioni dettagliate su come configurare i criteri di conformità, veder
 
 Quando si è pronti, continuare con il **Passaggio 3**.
 
-### Passaggio 3: Configurare i criteri di SharePoint Online
+### <a name="step-3-configure-the-sharepoint-online-policy"></a>Passaggio 3: Configurare i criteri di SharePoint Online
 A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e conformi possano accedere a SharePoint Online. Questi criteri verranno archiviati in Azure Active Directory.
 
 #### <a name="bkmk_spopolicy"></a>
@@ -162,11 +162,11 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
   3.    Premere il pulsante **Abilita l'accesso al browser**.
   4.  Nel browser Chrome disconnettersi da Office 365 e riavviare Chrome.
 
-  Nelle piattaforme **iOS e Android**, per identificare il dispositivo usato per accedere al servizio, Azure Active Directory emetterà un certificato TLS (Transport Layer Security) per il dispositivo.  Il dispositivo visualizza il certificato richiedendo all'utente finale la selezione del certificato, come illustrato nelle schermate riportate di seguito. L'utente finale deve selezionare il certificato per poter continuare a usare il browser.
+  Nelle piattaforme **iOS e Android**, per identificare il dispositivo usato per accedere al servizio, Azure Active Directory emetterà un certificato TLS (Transport Layer Security) per il dispositivo.  Il dispositivo visualizza il certificato richiedendo all'utente finale la selezione del certificato, come illustrato nelle schermate riportate di seguito. Per continuare a usare il browser è necessario che l'utente finale selezioni il certificato.
 
   **iOS**
 
-  ![schermata del messaggio di richiesta del certificato in un ipad](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![schermata del messaggio di richiesta del certificato in un iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
@@ -179,7 +179,7 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
 
 Non è necessario distribuire i criteri di accesso condizionale perché diventano immediatamente effettivi.
 
-### Passaggio 4: Monitorare i criteri di conformità e di accesso condizionale
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>Passaggio 4: Monitorare i criteri di conformità e di accesso condizionale
 Nell'area di lavoro **Gruppi** è possibile visualizzare lo stato dei dispositivi.
 
 Selezionare un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Dispositivi** selezionare uno dei **filtri**seguenti:
@@ -190,11 +190,11 @@ Selezionare un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Di
 
 -   **Dispositivi conformi e registrati con AAD** : si tratta dei dispositivi che possono accedere a SharePoint Online.
 
-### Vedere anche
+### <a name="see-also"></a>Vedere anche
 [Limitare l'accesso alla posta elettronica e ai servizi di Office 365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

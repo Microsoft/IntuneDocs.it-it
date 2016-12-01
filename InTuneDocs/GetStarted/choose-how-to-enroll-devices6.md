@@ -5,25 +5,25 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 55377981cfcf1f7c9a0de7c9dbcd8fc80417d1e2
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 7859266f639e148a032b6dd44d9313733aaa0269
 
 
 ---
-# Scegliere come registrare i dispositivi mobili
+# <a name="choose-how-to-enroll-mobile-devices"></a>Scegliere come registrare i dispositivi mobili
 
 Le risposte alla serie di domande seguente consentono di determinare il metodo di registrazione migliore per i dispositivi gestiti.
 
-## **Come vengono gestiti i dispositivi dedicati di proprietà dell'azienda?**
+## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**Come vengono gestiti i dispositivi dedicati di proprietà dell'azienda?**
 
   > [!div class="button"]
 [Programma di registrazione dispositivi iOS >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
@@ -45,6 +45,6 @@ Le risposte alla serie di domande seguente consentono di determinare il metodo d
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

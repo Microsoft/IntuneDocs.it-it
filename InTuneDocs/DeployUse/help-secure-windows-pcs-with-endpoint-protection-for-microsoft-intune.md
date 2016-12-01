@@ -2,7 +2,8 @@
 title: Endpoint Protection per PC Windows | Microsoft Intune
 description: Proteggere i computer gestiti con Endpoint Protection, che fornisce protezione in tempo reale contro minacce malware.
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/25/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a7d2c59332f2454694ecf58449a3b75a12027dfe
-ms.openlocfilehash: 5d662cab67c879a1f8bd5dbaf8e0461bf35b6e42
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: f960ac0671e3003a8b16f5e270c54a4e353516b6
 
 
 ---
 
-# Proteggere i PC Windows con Endpoint Protection per Microsoft Intune
+# <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Proteggere i PC Windows con Endpoint Protection per Microsoft Intune
 Microsoft Intune consente di proteggere i computer gestiti con Endpoint Protection che offre protezione in tempo reale contro potenziali minacce di tipo malware, mantenendo aggiornate le definizioni dei malware ed eseguendo analisi automatiche dei computer. Endpoint Protection offre anche strumenti che consentono di gestire e monitorare gli attacchi malware.
 
 Se il client Intune non è ancora stato installato nei computer, vedere [Install the Windows PC client with Microsoft Intune (Installare il client PC Windows con Microsoft Intune)](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Usare le informazioni delle sezioni seguenti per configurare, distribuire e monitorare Endpoint Protection.
 
-## Quando usare Endpoint Protection
+## <a name="choose-when-to-use-endpoint-protection"></a>Quando usare Endpoint Protection
 Come amministratore IT, mantenere i computer gestiti privi di virus e malware è una delle priorità più importanti. Prima di distribuire Intune ai PC Windows aziendali, è necessario decidere come proteggerli selezionando una delle opzioni seguenti e configurando le impostazioni dei criteri associate:
 
 |Per:|Impostazioni dei criteri di Endpoint Protection|Altre informazioni|
@@ -49,7 +50,7 @@ Per passare dall'applicazione di protezione degli endpoint corrente a Microsoft 
 > [!NOTE]
 > Intune non eseguirà automaticamente la disinstallazione delle applicazioni di protezione degli endopoint di terze parti.
 
-## Configurare Microsoft Intune Endpoint Protection
+## <a name="configure-microsoft-intune-endpoint-protection"></a>Configurare Microsoft Intune Endpoint Protection
 Attenersi alla procedura seguente per configurare Endpoint Protection per Microsoft Intune.
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) fare clic su **Criteri** > **Aggiungi criterio**.
@@ -62,7 +63,7 @@ Attenersi alla procedura seguente per configurare Endpoint Protection per Micros
 
 È possibile visualizzare i criteri di Endpoint Protection distribuiti nella pagina **Tutti i criteri** dell'area di lavoro **Criteri**.
 
-## Specificare le impostazioni del servizio Endpoint Protection
+## <a name="specify-endpoint-protection-service-settings"></a>Specificare le impostazioni del servizio Endpoint Protection
 
 |Impostazione criterio|Dettagli|
 |------------------|--------------------|
@@ -77,7 +78,7 @@ Se si impostano i valori dei criteri per le opzioni **Installa Endpoint Protecti
 
   Microsoft Security Essentials avvisa l'utente con la funzionalità di protezione in tempo reale quando minacce potenziali, ad esempio virus e spyware, stanno per essere installate o eseguite nel PC. Nel momento in cui ciò si verifica, viene visualizzato un messaggio nell'area di notifica sul lato destro della barra delle applicazioni.
 
-### Specificare le impostazioni di protezione in tempo reale
+### <a name="specify-real-time-protection-settings"></a>Specificare le impostazioni di protezione in tempo reale
 
 |Impostazione criterio|Dettagli|
 |------------------|--------------------|
@@ -90,7 +91,7 @@ Se si impostano i valori dei criteri per le opzioni **Installa Endpoint Protecti
 
   ![Impostazioni in tempo reale per Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 
-### Specificare le impostazioni di pianificazione dell'analisi
+### <a name="specify-scan-schedule-settings"></a>Specificare le impostazioni di pianificazione dell'analisi
 
 |Impostazione criterio|Altre informazioni|
 |------------------|--------------------|
@@ -99,7 +100,7 @@ Se si impostano i valori dei criteri per le opzioni **Installa Endpoint Protecti
 |**Pianifica un'analisi completa**|Consente di configurare un'analisi completa di tutti i file e di tutte le risorse nei dischi rigidi locali dei computer locali. A seconda del numero di file e risorse da analizzare, questa analisi potrebbe richiedere tempo e influire sulle prestazioni del computer.<br /><br />Impostazione consigliata: **No**|
 |**Esegui un'analisi completa se sono state saltate due analisi complete consecutive**|Configura Endpoint Protection per eseguire automaticamente un'analisi completa dei computer che hanno saltato l'analisi per due volte consecutive.<br /><br />Valore consigliato: Non configurata|
 
-### Specificare le impostazioni per le opzioni di analisi
+### <a name="specify-scan-options-settings"></a>Specificare le impostazioni per le opzioni di analisi
 
 |Impostazione criterio|Dettagli|
 |------------------|--------------------|
@@ -114,32 +115,32 @@ Se si impostano i valori dei criteri per le opzioni **Installa Endpoint Protecti
 |**Analizza unità rimovibili**|Impostare su **Sì** per configurare Endpoint Protection in modo che esegua la scansione alla ricerca di malware e software indesiderato nel contenuto delle unità rimovibili, ad esempio le unità flash USB, durante l'esecuzione di un'analisi completa dei computer.<br /><br />Impostazione consigliata: **Sì**|
 |**Limita utilizzo CPU durante un'analisi a**|Impostare la percentuale massima di utilizzo della CPU durante le analisi pianificate dei computer. È possibile impostare questo valore da 1 a 100%.<br /><br />Impostazione consigliata: **50%**|
 
-### Scegliere le impostazioni delle azioni predefinite
+### <a name="choose-default-actions-settings"></a>Scegliere le impostazioni delle azioni predefinite
 
 L'impostazione **Scegliere l'azione eseguita da Endpoint Protection sul malware con i seguenti livelli di attenzione** specifica l'azione predefinita eseguita da Endpoint Protection quando viene rilevato malware di vari livelli di attenzione. Per ogni livello di attenzione, è possibile rimuovere il malware, metterlo in quarantena o intraprendere le azioni consigliate di Microsoft.
 
 Valore consigliato: **Azione consigliata** che consente a Endpoint Protection di consigliare l'azione.   
 
-### Decidere se scegliere le impostazioni per escludere file e cartelle
+### <a name="decide-whether-to-choose-the-excluded-files-and-folders-settings"></a>Decidere se scegliere le impostazioni per escludere file e cartelle
 
 L'impostazione **File e cartelle da escludere durante l'esecuzione di un'analisi o l'utilizzo della protezione in tempo reale** consente di escludere cartelle o file specifici durante un'analisi o quando si usa la protezione in tempo reale nei computer.
 
-### Decidere se scegliere le impostazioni per escludere processi
+### <a name="decide-whether-to-choose-the-excluded-processes-settings"></a>Decidere se scegliere le impostazioni per escludere processi
 
 L'impostazione **Processi da escludere quando si esegue un'analisi o si usa la protezione in tempo reale** consente di escludere processi specifici quando si esegue un'analisi o si usa la protezione in tempo reale nei computer. È possibile escludere solo i file con le estensioni seguenti: **exe**, **com** o **scr**.
 
-### Decidere se scegliere le impostazioni per escludere tipi di file
+### <a name="decide-whether-to-choose-the-excluded-file-types-settings"></a>Decidere se scegliere le impostazioni per escludere tipi di file
 
 L'impostazione **Estensioni di file da escludere durante l'esecuzione di un'analisi o l'utilizzo della protezione in tempo reale** consente di escludere estensioni di file specifiche quando si esegue un'analisi o si usa la protezione in tempo reale nei computer.
 
-### Specificare le impostazioni di Microsoft Active Protection Service
+### <a name="specify-microsoft-active-protection-service-settings"></a>Specificare le impostazioni di Microsoft Active Protection Service
 Microsoft Active Protection Service è una comunità online che fornisce informazioni utili per decidere come rispondere a potenziali rischi. La comunità contribuisce inoltre ad arrestare la diffusione di nuove infezioni di malware. È possibile abilitare **Partecipa a Microsoft Active Protection Service** selezionando **Sì** e quindi specificando il **Livello di appartenenza**:
   - **Base**: invia a Microsoft informazioni di base sul malware rilevato. Le informazioni includono la provenienza del software, le azioni applicate dall'utente o automaticamente da Endpoint Protection e l'eventuale riuscita di tali azioni.
   - **Avanzato**: invia a Microsoft altre informazioni su malware, spyware e software potenzialmente indesiderato. Le informazioni includeranno il percorso del software, i nomi dei file, il funzionamento del software e gli effetti sul computer.
 
 È possibile anche attivare l'opzione **Ricevi definizioni dinamiche in base ai report di Microsoft Active Protection Service**.
 
-## Scegliere le attività di gestione per Endpoint Protection
+## <a name="choose-management-tasks-for-endpoint-protection"></a>Scegliere le attività di gestione per Endpoint Protection
 Le attività seguenti consentono di eseguire varie operazioni di gestione sui computer gestiti che eseguono Endpoint Protection:
  - Aggiorna definizioni malware
   - Console di Intune: dall'area di lavoro **Gruppi** selezionare i computer da aggiornare. Scegliere **Attività remote** &gt; **Aggiorna definizioni malware**.
@@ -150,7 +151,7 @@ Le attività seguenti consentono di eseguire varie operazioni di gestione sui co
 
 Per visualizzare lo stato di un'attività remota, scegliere il collegamento **Attività remote** nell'angolo inferiore destro della console di Intune. La finestra di dialogo **Stato attività in remoto** elenca le attività remote correnti, il relativo stato, il nome del dispositivo e gli eventuali errori segnalati. Include inoltre un collegamento a informazioni per la risoluzione dei problemi, se appropriato.
 
-## Monitorare Endpoint Protection
+## <a name="monitor-endpoint-protection"></a>Monitorare Endpoint Protection
 È possibile monitorare lo stato del malware nei computer usando l'area di lavoro **Protezione** della [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/). Quest'area di lavoro contiene due pagine:
  - **Panoramica Endpoint Protection**: visualizza i problemi importanti come collegamenti che è possibile scegliere per accedere ad altre informazioni. I problemi che potrebbero essere visualizzati includono:
   - **Istanze di malware che richiedono completamento**: fare clic sul collegamento per visualizzare un elenco di problemi malware, incluse le azioni da intraprendere per risolverli. È possibile esplorare ulteriormente questo elenco per visualizzare i computer interessati.
@@ -166,7 +167,7 @@ Per visualizzare lo stato di un'attività remota, scegliere il collegamento **At
 
   ![Monitorare Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
-### Come visualizzare recenti percorsi di rilevamento di malware nel computer.
+### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Come visualizzare recenti percorsi di rilevamento di malware nel computer.
 Intune consente di visualizzare i percorsi per fino a 10 istanze di malware rilevate più di recente in un dispositivo. Il **recente rilevamento percorso** è disabilitato per impostazione predefinita. Per abilitare questa visualizzazione:
 
 1.  Nella [console di amministrazione Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** > **Tutti i dispositivi** > **Malware**.
@@ -175,7 +176,7 @@ Intune consente di visualizzare i percorsi per fino a 10 istanze di malware rile
 
 3.  Selezionare la casella di controllo **Percorsi di rilevamento recenti** nell'elenco. Viene visualizza la colonna **Percorsi di rilevamento recenti** che riporta fino a 10 delle istanze di malware monitorate più di recente nel dispositivo.
 
-## Eseguire un'analisi del malware o aggiornare le definizioni di malware in un computer
+## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Eseguire un'analisi del malware o aggiornare le definizioni di malware in un computer
 Intune consente di eseguire un'analisi completa o veloce del malware usando Endpoint Protection o Windows Defender in un PC gestito in remoto in cui è installato il client Intune.
 
 1. Nella [console di amministrazione Microsoft Intune](https://manage.microsoft.com/) passare a **Gruppi** > **Panoramica** > **Tutti i dispositivi** > **Tutti i computer** e quindi selezionare il computer di destinazione.
@@ -185,14 +186,14 @@ Intune consente di eseguire un'analisi completa o veloce del malware usando Endp
 
 
 
-## Ulteriore assistenza?
+## <a name="need-more-help"></a>Ulteriore assistenza?
 Per altre informazioni e supporto, vedere [Troubleshoot Endpoint Protection in Microsoft Intune (Risoluzione dei problemi di Endpoint Protection in Microsoft Intune)](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
-### Vedere anche
-[Policies to protect Windows PCs (Criteri per la protezione dei PC Windows)](policies-to-protect-windows-pcs-in-microsoft-intune.md)
+### <a name="see-also"></a>Vedere anche
+[Criteri per la protezione dei PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

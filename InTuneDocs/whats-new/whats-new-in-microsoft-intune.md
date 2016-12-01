@@ -5,110 +5,82 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
-ms.reviewer: mamoriss
+ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 503719953031bf5079b2bf5bc84a0497d708f79a
-ms.openlocfilehash: 730809e0841a248b90f5fe157f2c6338bfd32b2d
+ms.sourcegitcommit: 8e88c14ad77d8fe1b4c0fe2e7676d126e6288146
+ms.openlocfilehash: bcd77b751c2059131558e1cbfeebd4d3f71086e5
 
 
 ---
-# Novità di Microsoft Intune -- Ottobre 2016
+# <a name="whats-new-in-microsoft-intune---november-2016"></a>Novità di Microsoft Intune - Novembre 2016
 Di seguito sono illustrate le novità di questa versione di Microsoft Intune, oltre alle prossime modifiche che si consiglia di pianificare e a informazioni sulle versioni precedenti.
 
 Tutte queste funzionalità saranno supportate per le distribuzioni ibride dei clienti (Configuration Manager con Intune). Per altre informazioni sulle nuove funzionalità ibride, vedere la [pagina Novità per le funzionalità ibride](https://technet.microsoft.com/library/mt718155.aspx).
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
 
-## Novità
+## <a name="new-capabilities"></a>Nuove funzionalità
 
-### Accesso condizionale per la gestione di applicazioni mobili
-Sarà possibile limitare l'accesso a Exchange Online in modo che l'accesso possa essere eseguito solo da app che supportano i criteri di gestione delle applicazioni mobili di Intune, ad esempio Outlook. [Questa nuova funzionalità](/intune/deploy-use/allow-policy-managed-apps-access-to-o365) si abbina perfettamente con i criteri di gestione delle app per dispositivi mobili di Intune perché è possibile bloccare l'accesso ai client di posta predefiniti o ad altre app che non sono state configurate con i criteri di gestione delle app per dispositivi mobili di Intune. In questo modo gli utenti accedono ai dati dell'organizzazione con app che possono essere protette con MAM Intune. Per un'introduzione alla gestione delle app per dispositivi mobili Intune, visitare il portale di Azure. Cercare la nuova sezione Accesso condizionale nel pannello "Impostazioni".
+<!--### View App States for All Platforms in Real Time
+App installation status is now shown in real-time in the console. When you previously deployed an app, you had to wait for a targeted device to report back before the app install status was displayed in the Intune console.
 
-### Accesso condizionale per i PC Windows
-È ora possibile creare criteri di accesso condizionale tramite la console di amministrazione di Intune per impedire l'accesso a [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) e [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) ai PC Windows. È inoltre possibile creare criteri di accesso condizionale per bloccare l'accesso alle applicazioni universali e desktop di Office.
+### Streamline iOS App Management for your End Users
+Intune can now automatically take over management of the previously installed app and no end user action is required.
 
-### Supporto di Android for Work
-Intune ora è incluso nel programma Android for Work. L'implementazione del supporto delle funzionalità Android for Work in Intune sarà avviata questo mese.
-[Leggere l'annuncio Microsoft relativo al supporto di Android for Work in Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
+Previously, if the end user of an enrolled iOS device installed an app from the App Store before you deployed that same app with a deployment action of __Available__, then the end user had to:
 
-Gli argomenti seguenti relativi a Intune seguenti sono nuovi o aggiornati con le informazioni su Android for Work:
+1. Open the __Company Portal__.
+2. Select the app.
+3. Tap __Install__ to enable Intune to take over management of the app.-->
 
-Per i professionisti IT:
-- [Set up Android for Work (Impostare Android for Work)](/intune/deploy-use/set-up-android-for-work)
-<!--- [Nathan Bigman's resource access topics]()-->
-- [Limitare l'accesso alla posta elettronica per Exchange Online e il nuovo ambiente Exchange Online dedicato](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
-- [Limitare l'accesso alla posta elettronica per Exchange locale e l'ambiente legacy Exchange Online dedicato con Intune](/intune/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
-- [Android for Work compliance policy settings (Impostazioni dei criteri di conformità di Android for Work)](/intune/deploy-use/afw-compliance-policy-settings-in-microsoft-intune)
-- [How to deploy Android for Work apps (Come distribuire le app Android for Work)](/intune/deploy-use/android-for-work-apps)
-- [Configurare le app Android for Work con i criteri di configurazione delle app per dispositivi mobili](/intune/deploy-use/afw-app-configuration-policy)
-- [Impostazioni dei criteri di Android for Work](/intune/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
+<!--### New Microsoft Intune Company Portal App for Windows 10 Devices
+Microsoft is releasing a new Intune Company Portal for Windows 10 devices. This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike - while still enabling all the same functionality that they are using today.
 
-Per gli utenti finali:
-- [Cosa accade quando si crea un profilo di lavoro](/intune/enduser/what-happens-when-you-create-a-work-profile-android)
-- [Create a work profile and enroll your device in Intune (Creare un profilo di lavoro e registrare il dispositivo in Intune)](/intune/enduser/create-a-work-profile-and-enroll-your-device-in-intune-android)
+The new app will also allow users to leverage additional platform features like single sign-on and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store. It will also be available for sideloading.-->
 
-### Integrazione di Lookout per proteggere i dispositivi iOS
-A ottobre Microsoft prevede di integrare la soluzione di protezione dalle minacce per dispositivi mobili Lookout per proteggere i dispositivi mobili iOS grazie al rilevamento di malware, app rischiose e altro ancora. La soluzione Lookout consente di determinare il livello di minaccia, che è configurabile. È possibile creare una regola dei criteri di conformità in Intune per determinare la conformità del dispositivo in base alla valutazione del rischio da parte di Lookout. Con i criteri di accesso condizionale è possibile consentire o bloccare l'accesso alle risorse aziendali in base allo stato di conformità del dispositivo.
+<!--### Support for Windows Store for Business Apps Being Deployed as Available
+You can now deploy apps you synchronized from the Windows Store for Business (WSfB) with a deployment action of __Available__ or __Required__. After syncing WSfB apps into Intune, administrators will be able to target those apps as available installs to groups of users. End users will see the deployed WSfB apps as available for install in the Universal Company Portal, where they can choose whether they would like to acquire the apps.
 
-Agli utenti finali con dispositivi iOS non conformi verrà richiesto di eseguire la registrazione e di installare l'applicazione Lookout for Work, attivare l'app e correggere le minacce segnalate nell'applicazione Lookout for Work per ottenere l'accesso ai dati aziendali. Vedere le informazioni su come [Configurare e distribuire l'app Lookout for Work](/intune/deploy-use/configure-and-deploy-lookout-for-work-apps).
-<!--TFS 1319493-->
+### Conditional Access for MAM with SharePoint Online
 
-<!--### New Microsoft Intune Company Portal available for Windows 10 devices
-Microsoft is releasing a new [Microsoft Intune Company Portal for Windows 10 devices](https://go.microsoft.com/fwlink/?linkid=830663). This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today.
+You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint online.  You can get started in Intune mobile app management via the Azure portal. Look for the  Conditional Access section in the “Settings” blade which now includes the option for SharePoint online.-->
 
-The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store.-->
+> [!IMPORTANT]
 
-### Strumento per la disposizione testo per app di Intune
-È possibile consentire alle app di usare i criteri di gestione del app per dispositivi mobili di Intune tramite lo strumento per la disposizione testo per app di Intune. È ora disponibile il supporto per i criteri di gestione delle app per dispositivi mobili di Intune che non richiede la registrazione del dispositivo.
+> __Aggiornamento di Intune e Android for Work__
 
-### Gestire la stampa dalle app gestite con criteri di gestione delle app per dispositivi mobili
-Ora è possibile impedire la stampa di dati aziendali dalle app che includono criteri di gestione delle app per dispositivi mobili. Questa impostazione è disponibile nel [portale di Azure](/Intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) ed è supportata in dispositivi [iOS](/Intune/deploy-use/ios-mam-policy-settings) e [Android](/Intune/deploy-use/android-mam-policy-settings).
-<!--TFS 1014328-->
+> Se da una parte è possibile distribuire app Android for Work con un'azione di __Richiesto__, un'app può essere distribuita solo come __Disponibile__ se i gruppi di Intune sono stati migrati alla nuova esperienza dei gruppi di Azure AD.
 
-## Notifiche
+### <a name="intune-app-sdk-for-cordova-plugin-now-supports-mam-without-enrollment"></a>Il plug-in Cordova per Intune App SDK attualmente supporta la gestione di applicazioni mobili senza registrazione
+Gli sviluppatori di app possono ora usare il plug-in Cordova per Intune App SDK per abilitare funzionalità di gestione di applicazioni mobili senza registrazione del dispositivo nelle proprie app basate su Cordova per iOS e Android. Il plug-in Cordova per Intune App SDK è disponibile [qui](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam).
 
-### Compatibilità di Android Samsung KNOX con Intune
-Alcuni modelli di telefoni Samsung Galaxy Ace non possono essere gestiti da Intune come dispositivi Samsung KNOX. Quando verranno registrati con Intune, questi dispositivi verranno invece gestiti come dispositivi Android standard.
+### <a name="intune-app-sdk-xamarin-component-now-supports-mam-without-enrollment"></a>Il componente Xamarin per Intune App SDK attualmente supporta la gestione di applicazioni mobili senza registrazione
+Gli sviluppatori di app possono ora usare il componente Xamarin per Intune App SDK per abilitare funzionalità di gestione di applicazioni mobili senza registrazione del dispositivo nelle proprie app basate su Xamarin per iOS e Android. Il componente Xamarin per Intune App SDK è disponibile [qui](https://github.com/msintuneappsdk/intune-app-sdk-xamarin).
 
-I numeri di modello interessati sono:
+## <a name="notices"></a>Notifiche
 
-* SM-G313HU
-* SM-G313HY
-* SM-G313M
-* SM-G313MY
-* SM-G313U
+### <a name="symantec-signing-certificate-no-longer-requires-signed-windows-phone-8-company-portal-for-upload"></a>Il certificato di firma Symantec non richiede più un'app Portale aziendale di Windows Phone 8 firmata per il caricamento
+Per il caricamento del certificato di firma Symantec non è più necessaria un'app Portale aziendale di Windows Phone 8 firmata. Il certificato può essere caricato in modo indipendente.
 
-Non sono richieste altre azioni da parte dell'amministratore o degli utenti. Per altre informazioni, visitare il sito Web [Samsung KNOX](https://www.samsungknox.com).
+## <a name="deprecations"></a>Elementi deprecati
 
-### L'app Portale aziendale per Windows 8 è deprecata e il supporto per le piattaforme Windows Phone 8 e Windows RT sarà deprecato
-A partire da ottobre 2016, il supporto di Microsoft Intune per il portale aziendale di Windows Phone 8 verrà deprecato. Verrà anche deprecato il supporto di Microsoft Intune per le piattaforme Windows Phone 8 e Windows RT. Di conseguenza, non sarà possibile registrare o aggiornare dispositivi Windows Phone 8 o Windows RT.
+### <a name="support-for-the-windows-phone-8-company-portal"></a>Supporto per l'app Portale aziendale di Windows Phone 8
+Il supporto per il portale aziendale di Windows Phone 8 sarà deprecato. Il supporto per le piattaforme Windows Phone 8 e WinRT è stato deprecato a ottobre 2016. Il supporto per il portale aziendale di Windows 8 è stato deprecato a ottobre 2016.
 
-È possibile continuare a gestire i dispositivi Windows Phone 8, Windows RT e Windows 8 che sono già registrati. Aggiornare i dispositivi Windows Phone 8 e Windows 8 a Windows 8.1 e Windows Phone 8.1 e usare le app del portale aziendale per Windows Phone 8.1 e Windows 8.1 corrispondenti per continuare a distribuire le app a tali dispositivi senza interruzioni.
 
-A partire da novembre 2016, il supporto per il portale aziendale di Windows Phone 8 verrà deprecato.
-<!--TFS 1255391-->
-
-## Sviluppi futuri
-
-### Nuovo Portale aziendale di Microsoft Intune disponibile per dispositivi Windows 10
-Microsoft sta rilasciando un nuovo Portale aziendale di Microsoft Intune per dispositivi Windows 10. Questa app, che sfrutta il nuovo formato universale di Windows 10, offrirà un'esperienza utente aggiornata all'interno dell'app ed esperienze identiche in tutti i dispositivi Windows 10, sia PC che mobili, senza variazioni alle funzionalità già in uso.
-
-La nuova app consentirà anche agli utenti di sfruttare altre funzionalità della piattaforma come Single Sign-On (SSO) e l'autenticazione basata su certificato nei dispositivi Windows 10. L'app verrà resa disponibile come aggiornamento delle installazioni del portale aziendale di Windows 8.1 e del portale aziendale di Windows Phone 8.1 da Windows Store. Per altre informazioni, vedere [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
-<!--TFS 1016502-->
-
-### Vedere anche
+### <a name="see-also"></a>Vedere anche
 * [Blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Guida di orientamento a Cloud Platform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
-* [Versioni precedenti di Intune](previous-intune-releases.md)
+* [Versioni precedenti di Intune](whats-new-archive.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 
