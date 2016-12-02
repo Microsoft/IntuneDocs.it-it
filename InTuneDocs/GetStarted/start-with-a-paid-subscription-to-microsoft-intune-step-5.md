@@ -14,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
-ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
+ms.sourcegitcommit: dcca68485db7e2c206077ce457081fdbf5cccea4
+ms.openlocfilehash: 92c59bd8061648cedaf31e50c5c599a96302a50f
 
 
 ---
@@ -31,7 +31,7 @@ I gruppi di Intune offrono una grande flessibilità per la gestione di dispositi
 
 >[!IMPORTANT]
 >
->Se si apre l'area di lavoro Gruppi nel portale di Intune e viene visualizzata l'indicazione **I gruppi utenti di Intune vengono ora gestiti come gruppi in Azure Active Directory** con un collegamento al portale di Azure Active Directory, questo indica che è già in uso il *nuovo* approccio alla gestione dei gruppi in Intune basato sui gruppi di sicurezza di Azure AD. Per informazioni su come creare i gruppi, vedere [Gestione dei gruppi in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups).
+>Se si apre l'area di lavoro Gruppi nel portale di Intune e viene visualizzata l'indicazione **I gruppi utenti di Intune vengono ora gestiti come gruppi in Azure Active Directory** con un collegamento al portale di Azure Active Directory, questo indica che è già in uso il *nuovo* approccio alla gestione dei gruppi in Intune basato sui gruppi di sicurezza di Azure AD. Per informazioni su come creare i gruppi, vedere [Gestione dei gruppi in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
 >
 >Se non viene visualizzato il collegamento al portale di Azure AD, questa è un'indicazione che è ancora in uso il portale di Intune per la gestione dei gruppi.
 
@@ -89,6 +89,6 @@ A questo punto, il passaggio 5 della *Guida introduttiva a Intune* è stato comp
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

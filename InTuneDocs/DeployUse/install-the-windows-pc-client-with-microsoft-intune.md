@@ -3,8 +3,7 @@
 title: Installare il software client per PC | Microsoft Intune
 description: Usare questa guida per far gestire i computer Windows dal software client di Microsoft Intune.
 keywords: 
-author: NathBarn
-manager: arob98
+author: staciebarker
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +13,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
-ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
+ms.sourcegitcommit: 103e7065d1e2c3281f8f04808ee2546d3c7e2b53
+ms.openlocfilehash: 32af8a615453b8c72e704f40dcdf0de6fbf10907
 
 
 ---
@@ -104,7 +103,7 @@ L'attività di registrazione automatica, eseguita al successivo orario pianifica
 
 L'attività di registrazione automatica, il valore del Registro di sistema **WindowsIntuneEnrollPending** e il certificato dell'account vengono eliminati dal computer di destinazione al completamento della registrazione o dopo un mese, a seconda di quale condizione si verifica per prima.
 
-## <a name="instruct-users-to-selfenroll"></a>Istruire gli utenti per la registrazione automatica
+## <a name="instruct-users-to-self-enroll"></a>Istruire gli utenti per la registrazione automatica
 
 Gli utenti possono installare il software client Intune visitando il [sito Web del portale aziendale](http://portal.manage.microsoft.com). Se il portale Web rileva che il dispositivo è un PC Windows, verrà chiesto agli utenti di registrare il PC scaricando il client software di Intune. Dopo il download del software, gli utenti possono installarlo per attivare la gestione dei PC.
 
@@ -139,6 +138,6 @@ Usare una delle seguenti procedure per controllare e convalidare la distribuzion
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO5-->
 
 

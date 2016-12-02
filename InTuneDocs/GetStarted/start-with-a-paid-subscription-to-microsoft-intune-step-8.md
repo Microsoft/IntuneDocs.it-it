@@ -14,8 +14,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
-ms.openlocfilehash: ca6e016927da1de6604b0c6a2924702ec90c9fab
+ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
+ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
 
 
 ---
@@ -43,7 +43,7 @@ La registrazione deve essere abilitata per i dispositivi iOS, Mac e Android for 
 
 Abilitare la registrazione dei dispositivi per la piattaforma del dispositivo da gestire. I requisiti variano a seconda della piattaforma:
 
--  [iOS e macOS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS e macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
 -  [PC Windows](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Windows 10 Mobile e Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -66,6 +66,6 @@ A questo punto, Ultimo passaggio della *Guida introduttiva di Intune* completato
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 
