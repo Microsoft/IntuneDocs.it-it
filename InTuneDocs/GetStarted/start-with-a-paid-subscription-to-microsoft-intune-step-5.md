@@ -1,10 +1,11 @@
 ---
 title: Creare gruppi per organizzare utenti e dispositivi | Microsoft Intune
-description: Illustra come creare utenti e gruppi per la sottoscrizione di Intune
+description: Creare utenti e gruppi per la sottoscrizione di Intune
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +14,28 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 3b2f896ea6c3e66924dbd8b35fcddcccd0b65ca6
+ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
+ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
 
 
 ---
 
 
-# Creazione di gruppi per organizzare utenti e dispositivi
+# <a name="create-groups-to-organize-users-and-devices"></a>Creazione di gruppi per organizzare utenti e dispositivi
 I gruppi di Intune offrono una grande flessibilità per la gestione di dispositivi e utenti. È possibile configurare gruppi in base alle esigenze dell'organizzazione, ad esempio per località geografica, reparto o caratteristiche dell'hardware, e usarli per eseguire una vasta gamma di attività amministrative, dalla distribuzione di criteri per un set di utenti alla distribuzione di applicazioni a un set di dispositivi.
+
+## <a name="group-management-moving-to-azure-ad"></a>Migrazione della gestione dei gruppi ad Azure AD
+
+**A partire da novembre 2016** i nuovi account gestiranno i gruppi di utenti e dispositivi nel portale di Azure Active Directory (AD). A dicembre 2016 il team di prodotto Intune inizierà la migrazione dei clienti esistenti alla nuova esperienza di gestione dei gruppi basata su Azure AD. Tutti i gruppi di utenti e dispositivi verranno migrati a gruppi di sicurezza di Azure AD. Microsoft non inizierà la migrazione senza prima aver ridotto al minimo l'impatto sulle attività quotidiane degli utenti e fino a quando non sarà previsto alcun impatto sugli utenti finali. Verrà inoltre inviata notifica prima della migrazione degli account.
+
+
+>[!IMPORTANT]
+>
+>Se si apre l'area di lavoro Gruppi nel portale di Intune e viene visualizzata l'indicazione **I gruppi utenti di Intune vengono ora gestiti come gruppi in Azure Active Directory** con un collegamento al portale di Azure Active Directory, questo indica che è già in uso il *nuovo* approccio alla gestione dei gruppi in Intune basato sui gruppi di sicurezza di Azure AD. Per informazioni su come creare i gruppi, vedere [Gestione dei gruppi in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups).
+>
+>Se non viene visualizzato il collegamento al portale di Azure AD, questa è un'indicazione che è ancora in uso il portale di Intune per la gestione dei gruppi.
+
+## <a name="group-management-in-the-intune-portal"></a>Gestione dei gruppi nel portale di Intune
 
 Sia i gruppi di utenti e che i gruppi di dispositivi vengono creati nell'area di lavoro Gruppi della console di amministrazione di Intune.
 
@@ -32,7 +46,7 @@ Sia i gruppi di utenti e che i gruppi di dispositivi vengono creati nell'area di
 > Per altre informazioni sull'uso dei gruppi, vedere [Creare gruppi per gestire utenti e dispositivi con Microsoft Intune](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 
-## Creare un gruppo di dispositivi
+## <a name="create-a-device-group"></a>Creare un gruppo di dispositivi
 I gruppi di dispositivi consentono di distribuire app e aggiornamenti, nonché di configurare altre funzionalità. È ad esempio possibile eseguire le operazioni seguenti per configurare un gruppo denominato "Dispositivi personali":
 
 1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **Gruppi** > **Panoramica** > **Crea gruppo**.
@@ -47,7 +61,7 @@ I gruppi di dispositivi consentono di distribuire app e aggiornamenti, nonché d
 
 Per trovare il gruppo appena creato, andare nell'elenco **Gruppi** nell'area di lavoro **Gruppi** in **Tutti i dispositivi**. Da qui è possibile inoltre modificare o eliminare il gruppo.
 
-## Creare un gruppo di utenti
+## <a name="create-a-user-group"></a>Creare un gruppo di utenti
 I gruppi di utenti consentono di distribuire criteri software e per dispositivi. È ad esempio possibile eseguire le operazioni seguenti per configurare un gruppo denominato "Utenti di Intune":
 
 1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **Gruppi** > **Panoramica** > **Crea gruppo**.
@@ -66,7 +80,7 @@ Per trovare il gruppo appena creato, andare nell'elenco **Gruppi** nell'area di 
 
 
 
-### Passaggi successivi
+### <a name="next-steps"></a>Passaggi successivi
 A questo punto, il passaggio 5 della *Guida introduttiva a Intune* è stato completato.
 
 >[!div class="step-by-step"]
@@ -75,6 +89,6 @@ A questo punto, il passaggio 5 della *Guida introduttiva a Intune* è stato comp
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

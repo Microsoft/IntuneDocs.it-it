@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
+ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
+ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Protezione dei dispositivi con blocco remoto e reimpostazione passcode
@@ -25,6 +25,7 @@ Se un utente perde un dispositivo, è possibile bloccare il dispositivo in modal
 
 |Piattaforma|Blocco remoto|
 |------------|---------------|
+|macOS|Non supportato|
 |iOS|Supportato|
 |Android|Supportato|
 |Windows 10 e Windows 10 Mobile|Supportato|
@@ -50,12 +51,14 @@ Se un utente dimentica un passcode, è possibile aiutarlo rimuovendo il passcode
 
 |Piattaforma|Reimpostazione del passcode|
 |------------|------------------|
+|macOS|Non supportato|
 |iOS|Funzionalità supportata per cancellare il passcode da un dispositivo. Non implica la creazione di un nuovo passcode temporaneo.|
 |Android|Supportato nelle versioni precedenti alla 7.0. Crea un passcode temporaneo.|
 |Windows 10 Mobile|Supportato|
 |Windows Phone 8 e Windows Phone 8.1|Supportato|
-|Windows RT 8.1 e Windows RT|Funzionalità non supportata|
+|Windows RT 8.1|Funzionalità non supportata|
 |Windows 8.1|Funzionalità non supportata|
+|Windows 10 Desktop|Funzionalità non supportata|
 
 Reimpostazione passcode non è supportato per i PC Windows registrati con il client software di Intune.
 
@@ -76,6 +79,6 @@ Reimpostazione passcode non è supportato per i PC Windows registrati con il cli
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

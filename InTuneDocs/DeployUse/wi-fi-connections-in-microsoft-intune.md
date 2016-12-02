@@ -2,8 +2,8 @@
 title: Connessioni Wi-Fi | Microsoft Intune
 description: Usare i profili Wi-Fi per consentire agli utenti di connettersi alle reti Wi-Fi.
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article
@@ -14,19 +14,19 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
+ms.sourcegitcommit: df3f5bd6f44b9de8c4f24a82c7f4e000f08aac5a
+ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
 
 
 ---
 
-# Configurare i dispositivi per connettersi alle reti Wi-Fi aziendali
+# <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Configurare i dispositivi per connettersi alle reti Wi-Fi aziendali
 
 Usare i profili Wi-Fi in di Microsoft Intune per distribuire le impostazioni di rete wireless agli utenti e ai dispositivi dell'organizzazione. Quando si distribuisce un profilo Wi-Fi, gli utenti hanno accesso alla rete Wi-Fi aziendale senza doverla configurare.
 
 Si immagini, ad esempio, di installare una nuova rete Wi-Fi denominata **Contoso Wi-Fi** e di voler configurare tutti i dispositivi iOS in modo che si connettano alla rete. Questa è la procedura:
 
-![Riepilogo del processo del profilo Wi-Fi](..\media\wi-fi-process-diagram.png) 
+![Riepilogo del processo del profilo Wi-Fi](..\media\wi-fi-process-diagram.png)
 
 1.   Creare un profilo Wi-Fi che contiene le impostazioni necessarie per connettersi alla rete wireless **Contoso Wi-Fi**.
 
@@ -35,7 +35,7 @@ Si immagini, ad esempio, di installare una nuova rete Wi-Fi denominata **Contoso
 3.   Gli utenti visualizzeranno la nuova rete **Contoso Wi-Fi** nell'elenco delle reti wireless e potranno facilmente connettersi a tale rete.
 
 
-## Come creare un profilo Wi-Fi
+## <a name="create-a-wi-fi-profile"></a>Creare un profilo Wi-Fi
 
 È possibile distribuire i profili Wi-Fi nelle piattaforme seguenti:
 
@@ -47,11 +47,13 @@ Si immagini, ad esempio, di installare una nuova rete Wi-Fi denominata **Contoso
 
 -   Mac OS X 10.9 e versioni successive
 
-Per i dispositivi che eseguono Windows 8.1 o Windows 10 Desktop o Mobile, è possibile importare un profilo di configurazione Wi-Fi precedentemente esportato in un file. Per informazioni dettagliate, vedere [Esportare o impostare un profilo di configurazione Wi-Fi per i dispositivi Windows](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
+Per i dispositivi che eseguono i sistemi operativi Windows 8.1 o Windows 10 Desktop o Mobile, è possibile importare un profilo di configurazione Wi-Fi precedentemente esportato in un file. Per informazioni dettagliate, vedere [Esportare o importare un profilo di configurazione Wi-Fi per i dispositivi Windows](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** &gt; **Aggiungi criterio**.
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
-2.  Selezionare uno dei seguenti tipi di criteri, quindi fare clic su **Crea criterio**:
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Aggiungi criterio**.
+
+2.  Selezionare uno dei tipi di criteri seguenti e quindi scegliere **Crea criterio**:
 
     -   Profilo Wi-Fi (Android 4 e versioni successive)
 
@@ -60,46 +62,46 @@ Per i dispositivi che eseguono Windows 8.1 o Windows 10 Desktop o Mobile, è pos
     -   Profilo Wi-Fi (iOS 8.0 e versioni successive)
 
     -   Profilo Wi-Fi (Mac OS X 10.9 e versioni successive)
-    
-    
-    Non esistono impostazioni consigliate per questo tipo di criteri. È necessario creare un criterio personalizzato.
+
+
+Non esistono impostazioni consigliate per questo tipo di criteri. È necessario creare un criterio personalizzato.
 
 3.  Specificare un nome e una descrizione per il profilo.
 
 4. Specificare i valori delle **connessioni di rete**.
- - **SSID (Service Set Identifier)**: gli utenti visualizzano il nome di rete, non l'identificatore SSID.
+ - **SSID (Service Set Identifier)**: selezionare questa opzione se si vuole che gli utenti visualizzino il nome di rete e non l'identificatore SSID.
  - **Connetti quando la rete non sta trasmettendo il nome (SSID)**: selezionare questa opzione per consentire ai dispositivi di connettersi alla rete quando non è visibile nell'elenco delle reti (perché è nascosta e non sta trasmettendo il nome).
- 
-5. Configurare le **Impostazioni di sicurezza** per la piattaforma selezionata. Le impostazioni disponibili dipendono dai tipi di sicurezza selezionati e sono descritte in [Impostazioni di sicurezza](#security-settings).
 
-6. (Solo iOS e MAC OS X) Configurare le **impostazioni proxy**
+5. Configurare le **Impostazioni di sicurezza** per la piattaforma selezionata. Le impostazioni disponibili dipendono dal tipo di sicurezza selezionato. Le opzioni sono descritte in [Impostazioni di sicurezza](#security-settings).
 
-    |Nome impostazione|Altre informazioni|Usare quando:|
+6. Configurare le **impostazioni proxy** (solo iOS e MAC OS X).
+
+    |Nome impostazione|Altre informazioni|Quando utilizzarlo|
     |----------------|-------------------|-------------|
     |**Impostazioni proxy per questa connessione Wi-Fi**|Scegliere il tipo di impostazioni proxy:<br /><br />-   **Nessuno** (valore predefinito)<br />-   **Manuale**: consente di specificare manualmente l'URL e il numero di porta del server proxy.<br />-   **Automatico**: consente di usare un file di configurazione per configurare il server proxy.|Sempre|
-    |**Indirizzo server proxy** e **Numero porta**|Specificare l'URL e il numero di porta del server proxy.|**Impostazioni proxy per questa connessione Wi-Fi** è impostato su **Manuale**.|
-    |**URL server proxy**|Specificare l'URL del file contenente le impostazioni del server proxy.|**Impostazioni proxy per questa connessione Wi-Fi** è impostato su **Automatico**.|
+    |**Indirizzo server proxy** e **Numero porta**|Specificare l'URL e il numero di porta del server proxy.|Se l'opzione **Impostazioni proxy per questa connessione Wi-Fi** è impostata su **Manuale**.|
+    |**URL server proxy**|Specificare l'URL del file che contiene le impostazioni del server proxy.|Se l'opzione **Impostazioni proxy per questa connessione Wi-Fi** è impostata su **Automatico**.|
 
 7.  Salvare il profilo Wi-Fi
 
 Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell'area di lavoro **Criteri**. Per informazioni sulla distribuzione del profilo, vedere **Passaggi successivi**.
 
-## Esportare o impostare un profilo di configurazione Wi-Fi per i dispositivi Windows
- 
-Per i dispositivi che eseguono Windows 8.1 o Windows 10 Desktop o Mobile, è possibile importare un profilo di configurazione Wi-Fi precedentemente esportato in un file. 
+## <a name="export-or-import-a-wi-fi-configuration-profile-for-windows-devices"></a>Esportare o importare un profilo di configurazione Wi-Fi per i dispositivi Windows
 
-### Esportare un profilo Wi-Fi
-In Windows è possibile usare l'utilità **netsh wlan** per esportare un profilo Wi-Fi esistente in un file XML leggibile da Intune. In un computer Windows in cui è già installato il profilo Wi-Fi necessario, attenersi alla procedura seguente.
+Per i dispositivi che eseguono i sistemi operativi Windows 8.1 o Windows 10 Desktop o Mobile, è possibile importare un profilo di configurazione Wi-Fi precedentemente esportato in un file.
 
-1.  Creare una cartella locale per i profili Wi-Fi esportati, ad esempio c:\WiFi
+### <a name="export-a-wi-fi-profile"></a>Esportare un profilo Wi-Fi
+In Windows è possibile usare l'utilità **netsh wlan** per esportare un profilo Wi-Fi esistente in un file XML leggibile da Intune. In un computer Windows in cui è già installato il profilo Wi-Fi necessario, attenersi alla procedura seguente:
+
+1.  Creare una cartella locale per i profili Wi-Fi esportati. Ad esempio, creare una cartella denominata **c:\WiFi.**
 
 2.  Aprire un prompt dei comandi come amministratore.
 
-3.  Eseguire il comando `netsh wlan show profiles` e prendere nota del nome del profilo da esportare.  In questo esempio, il nome del profilo è *WiFiName*.
+3.  Eseguire il comando `netsh wlan show profiles` e prendere nota del nome del profilo da esportare.  In questo esempio, il nome del profilo è **WiFiName**.
 
-4.  Eseguire questo comando: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Verrà creato un file di profilo Wi-Fi denominato "Wi-Fi-WiFiName.xml" nella cartella di destinazione.
+4.  Eseguire questo comando: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Viene creato un file di profilo Wi-Fi denominato **Wi-Fi-WiFiName.xml** nella cartella di destinazione.
 
-### Importare un profilo Wi-Fi
+### <a name="import-a-wi-fi-profile"></a>Importare un profilo Wi-Fi
 Usare **Criteri di importazione Wi-Fi di Windows** per importare un set di impostazioni Wi-Fi che è quindi possibile distribuire ai gruppi di utenti o dispositivi necessari.
 
 
@@ -107,7 +109,7 @@ Usare **Criteri di importazione Wi-Fi di Windows** per importare un set di impos
 
 2.  Configurare un criterio di tipo **Windows** &gt; **Importazione Wi-Fi (Windows 8.1 e versioni successive)**.
 
-    Questo criterio può essere applicato ai dispositivi desktop e mobili con Windows 8.1 e Windows 10.
+    Questo criterio può essere applicato ai dispositivi che eseguono i sistemi operativi Windows 8.1 e Windows 10 Desktop e Mobile.
 
     È possibile solo creare e distribuire criteri di importazione Wi-Fi di Windows *personalizzati*. Le impostazioni consigliate non sono disponibili.
 
@@ -122,63 +124,63 @@ Usare **Criteri di importazione Wi-Fi di Windows** per importare un set di impos
 
     |Nome impostazione|Altre informazioni|
     |----------------|--------------------|
-    |**File del profilo di configurazione**|Fare clic su **Importa** per selezionare il file XML contenente le impostazioni del profilo Wi-Fi da importare in Intune.|
-    |**Nome del profilo di configurazione personalizzato (visualizzato agli utenti)**|Visualizza il nome del profilo di configurazione Wi-Fi come verrà visualizzato dagli utenti sul dispositivo.|
-    |**Dettagli del profilo di configurazione**|Visualizza il codice XML per il profilo di configurazione selezionato.|
+    |**File del profilo di configurazione**|Scegliere **Importa** per selezionare il file XML che contiene le impostazioni del profilo Wi-Fi da importare in Intune.|
+    |**Nome del profilo di configurazione personalizzato (visualizzato agli utenti)**|Scegliere come visualizzare il nome del profilo di configurazione Wi-Fi per gli utenti nel dispositivo.|
+    |**Dettagli del profilo di configurazione**|Scegliere come visualizzare il codice XML per il profilo di configurazione selezionato.|
 
-5.  Al termine, fare clic su **Salva criterio**.
+5.  Al termine, scegliere **Salva criterio**.
 
 6.  Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell'area di lavoro **Criteri** .
 
-## Distribuire il profilo
+## <a name="deploy-the-profile"></a>Distribuire il profilo
 
-Un profilo è un tipo di criterio, pertanto per distribuirlo è possibile usare l'area di lavoro Criteri.
+Dato che un profilo è un tipo di criterio, per distribuirlo viene usata l'area di lavoro **Criteri**.
 
-1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi fare clic su **Gestisci distribuzione**.
+1.  Nell'area di lavoro **Criteri** selezionare il criterio che si vuole distribuire, quindi scegliere **Gestisci distribuzione**.
 
 2.  Nella finestra di dialogo **Gestisci distribuzione** :
 
-    -   **Per distribuire il criterio**: selezionare uno o più gruppi in cui si vuole distribuire il criterio, quindi fare clic su **Aggiungi** &gt; **OK**.
+    -   **Per distribuire il criterio**, selezionare uno o più gruppi in cui si vuole distribuire il criterio e quindi scegliere **Aggiungi** &gt; **OK**.
 
     -   **Per chiudere la finestra di dialogo senza distribuire il criterio**, fare clic su **Annulla**.
 
 
-Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** dell'area di lavoro **Criteri** consentono di identificare i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene visualizzato anche nell'area di lavoro Dashboard.
+Nella pagina **Panoramica** dell'area di lavoro **Criteri** sono visualizzati i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene visualizzato anche nell'area di lavoro Dashboard.
 
-## Impostazioni di sicurezza
-Queste tabelle contengono dettagli per le impostazioni di sicurezza disponibili per i profili Wi-Fi Android, iOS e Mac OS X. 
+## <a name="security-settings"></a>Impostazioni di sicurezza
+Queste tabelle contengono dettagli per le impostazioni di sicurezza disponibili per i profili Wi-Fi Android, iOS e Mac OS X.
 
-### Impostazioni di sicurezza per i dispositivi Android
+### <a name="security-settings-for-android-devices"></a>Impostazioni di sicurezza per i dispositivi Android
 
-  |Nome impostazione|Altre informazioni|Usare quando:|
+  |Nome impostazione|Altre informazioni|Quando utilizzarlo|
 |----------------|--------------------|-------------|
 |**Tipo di sicurezza**|Selezionare il protocollo di sicurezza per la rete wireless:<br /><br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **Nessuna autenticazione (aperto)** se la rete non è protetta.|Sempre|
-|**Tipo EAP**|Scegliere il tipo di protocollo EAP (Extensible Authentication Protocol) usato per autenticare le connessioni wireless protette:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|Viene selezionato il tipo di sicurezza **WPA-Enterprise/WPA2-Enterprise**.|
-|**Selezionare i certificati radice per la convalida server**|Fare clic su **Seleziona**, quindi scegliere il profilo del certificato radice attendibile usato per autenticare la connessione. **Importante:** per la creazione del profilo del certificato radice attendibile, vedere [Proteggere l'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).|Viene selezionato qualsiasi **Tipo EAP** .|
-|**Metodo di autenticazione**|Selezionare il metodo di autenticazione per la connessione:<br /><br />-   **Certificati** per specificare il certificato client<br />-   **Nome utente e password** per specificare un metodo diverso per l'autenticazione|**Tipo EAP** è impostato su **PEAP** o **EAP-TTLS**.|
+|**Tipo EAP**|Scegliere il tipo di protocollo EAP (Extensible Authentication Protocol) usato per autenticare le connessioni wireless protette:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|Se si seleziona il tipo di sicurezza **WPA-Enterprise/WPA2-Enterprise**.|
+|**Selezionare i certificati radice per la convalida server**|Scegliere **Seleziona** e quindi scegliere il profilo del certificato radice trusted usato per autenticare la connessione. Per altre informazioni sulla creazione del profilo del certificato radice trusted, vedere [Proteggere l'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).|Se si seleziona un qualsiasi **tipo EAP**.|
+|**Metodo di autenticazione**|Selezionare il metodo di autenticazione usato per la connessione:<br /><br />-   **Certificati** per specificare il certificato client<br />-   **Nome utente e password** per specificare un metodo diverso per l'autenticazione|**Tipo EAP** è impostato su **PEAP** o **EAP-TTLS**.|
 |**Selezionare un metodo non EAP per l'autenticazione (identità interna)**|Selezionare la modalità di autenticazione della connessione:<br /><br />-   **Nessuno**<br />-   **Password Authentication Protocol (PAP)**<br />-   **Challenge Handshake Authentication Protocol (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP versione 2 (MS-CHAP v2)**<br /><br />Le opzioni disponibili dipendono dal tipo EAP selezionato.| **Metodo di autenticazione** è impostato su **Nome utente e password**.|
-|**Abilita privacy dell'identità (identità esterna)**|Specificare il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.|**Tipo EAP** è impostato su **PEAP** o **EAP-TTLS**.|
-|**Selezionare un certificato client per l'autenticazione client (certificato di identità)**|Fare clic su **Seleziona**, quindi scegliere il profilo certificato SCEP usato per autenticare la connessione. **Importante:** per la creazione del profilo certificato SCEP, vedere [Proteggere l'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).|Il tipo di sicurezza è **WPA-Enterprise/WPA2-Enterprise** e viene selezionato qualsiasi **Tipo EAP**.|
+|**Abilita privacy dell'identità (identità esterna)**|Specificare il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.|Se **Tipo EAP** è **PEAP** o **EAP-TTLS**.|
+|**Selezionare un certificato client per l'autenticazione client (certificato di identità)**|Scegliere **Seleziona** e quindi scegliere il profilo del certificato SCEP usato per autenticare la connessione. Per altre informazioni sulla creazione di un profilo del certificato SCEP, vedere [Proteggere l'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).|Se il tipo di sicurezza è **WPA-Enterprise/WPA2-Enterprise** e viene selezionato un qualsiasi **tipo EAP**.|
 
-### Impostazioni di sicurezza per i dispositivi iOS e Mac OS X
+### <a name="security-settings-for-ios-and-mac-os-x-devices"></a>Impostazioni di sicurezza per i dispositivi iOS e Mac OS X
 
-  |Nome impostazione|Altre informazioni|Usare quando:|
+  |Nome impostazione|Altre informazioni|Quando utilizzarlo|
 |----------------|--------------------|-------------|
 |**Tipo di sicurezza**|Selezionare il protocollo di sicurezza di rete wireless:<br /><br />-   **WPA-Personal/WPA2-Personal**<br />-   **WPA-Enterprise/WPA2-Enterprise**<br />-   **WEP**<br />-   **Nessuna autenticazione (aperto)** se la rete non è protetta.|Sempre|
-|**Tipo EAP**|Scegliere il tipo di protocollo EAP (Extensible Authentication Protocol) usato per autenticare le connessioni wireless protette:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-FAST**<br />-   **LEAP**<br />-   **EAP-SIM**|Viene selezionato il tipo di sicurezza **WPA-Enterprise/WPA2-Enterprise**.|
-|**Nomi di certificati del server attendibili**|Selezionare il profilo del certificato radice attendibile usato per autenticare la connessione. **Importante:** per la creazione del profilo del certificato radice attendibile, vedere [Proteggere l'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).|Viene selezionato un tipo EAP, ovvero **EAP-TLS**, **PEAP**, **EAP-TTLS** o **EAP-FAST**.|
-|**Usa Protected Access Credential (PAC)**|Selezionare questa opzione per usare credenziali di accesso protetto per stabilire un tunnel autenticato tra il client e il server di autenticazione. Se presente, verrà usato un file PAC esistente.|**Tipo EAP** è impostato su **EAP-FAST**.|
-|**Esegui provisioning di PAC**|Consente di eseguire il provisioning del file PAC nei dispositivi.<br /><br />Quando viene usata questa opzione, è possibile anche selezionare **Esegui provisioning anonimo di PAC** per garantire che il provisioning del file PAC venga eseguito senza effettuare l'autenticazione del server.|Viene selezionato**Usa Protected Access Credential (PAC)** .|
-|**Metodo di autenticazione**|Selezionare il metodo di autenticazione usato per la connessione:<br /><br /><ul><li>**Certificati** per specificare il certificato client</li><li>**Nome utente e password** per specificare uno dei seguenti metodi non EAP per l'autenticazione (noto anche come identità interna):<br /><br /><ul><li>**Nessuno**</li><li>**Password Authentication Protocol (PAP)**</li><li>**Challenge Handshake Authentication Protocol (CHAP)**</li><li>**Microsoft CHAP (MS-CHAP)**</li><li>**Microsoft CHAP versione 2 (MS-CHAP v2)**</li><li>**EAP-TLS**</li></ul></li></ul>|**Tipo EAP** è impostato su **PEAP** o **EAP-TTLS**.|
-|**Selezionare un certificato client per l'autenticazione client (certificato di identità)**|Selezionare il profilo certificato SCEP usato per autenticare la connessione. **Importante:** per la creazione del profilo certificato SCEP, vedere [Proteggere l'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).|Il tipo di sicurezza viene impostato su **WPA-Enterprise/WPA2-Enterprise** e **Tipo EAP** viene impostato su **EAP-TLS**, **PEAP** o **EAP-TTLS**.|
-|**Abilita privacy dell'identità (identità esterna)**|Specificare il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore.<br /><br />Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.|**Tipo EAP** è impostato su **PEAP**, **EAP-TTLS** o **EAP-FAST**.|
+|**Tipo EAP**|Scegliere il tipo di protocollo EAP (Extensible Authentication Protocol) usato per autenticare le connessioni wireless protette:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TLS**<br />-   **EAP-AST**<br />-   **LEAP**<br />-   **EAP-SIM**|Se viene selezionato il tipo di sicurezza **WPA-Enterprise/WPA2-Enterprise**.|
+|**Nomi di certificati del server attendibili**|Selezionare il profilo del certificato radice trusted usato per autenticare la connessione. Per altre informazioni sulla creazione del profilo del certificato radice trusted, vedere [Proteggere l'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).|Se viene selezionato un tipo EAP, ovvero **EAP-TLS**, **PEAP**, **EAP-TTLS** o **EAP-FAST**.|
+|**Usa Protected Access Credential (PAC)**|Selezionare questa opzione per usare credenziali di accesso protetto per stabilire un tunnel autenticato tra il client e il server di autenticazione. Se presente, verrà usato un file PAC esistente.|Se **Tipo EAP** è **EAP-FAST**.|
+|**Esegui provisioning di PAC**|Consente di configurare il file PAC nei dispositivi.<br /><br />Quando viene usata questa opzione, è possibile anche selezionare **Esegui provisioning anonimo di PAC** per garantire che il file PAC venga configurato senza effettuare l'autenticazione del server.|Se viene selezionato**Usa Protected Access Credential (PAC)** .|
+|**Metodo di autenticazione**|Selezionare il metodo di autenticazione usato per la connessione:<br /><br /><ul><li>**Certificati** per specificare il certificato client</li><li>**Nome utente e password** per specificare uno dei seguenti metodi non EAP per l'autenticazione (noto anche come identità interna):<br /><br /><ul><li>**Nessuno**</li><li>**Password Authentication Protocol (PAP)**</li><li>**Challenge Heshake Authentication Protocol (CHAP)**</li><li>**Microsoft CHAP (MS-CHAP)**</li><li>**Microsoft CHAP versione 2 (MS-CHAP v2)**</li><li>**EAP-TLS**</li></ul></li></ul>|Se **Tipo EAP** è **PEAP** o **EAP-TTLS**.|
+|**Selezionare un certificato client per l'autenticazione client (certificato di identità)**|Selezionare il profilo del certificato SCEP usato per autenticare la connessione. Per altre informazioni sulla creazione di un profilo del certificato SCEP, vedere [Proteggere l'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).|Se il tipo di sicurezza è **WPA-Enterprise/WPA2-Enterprise** e **Tipo EAP** è **EAP-TLS**, **PEAP** o **EAP-TTLS**.|
+|**Abilita privacy dell'identità (identità esterna)**|Specificare il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore.<br /><br />Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.|Se **Tipo EAP** è **PEAP**, **EAP-TTLS** o **EAP-FAST**.|
 
 
-### Vedere anche
-Per informazioni sulla creazione di un profilo Wi-Fi con una chiave precondivisa, vedere [Pre-shared key Wi-Fi profile (Profilo Wi-Fi con chiave precondivisa)](pre-shared-key-wi-fi-profile.md)
+### <a name="see-also"></a>Vedere anche
+Per informazioni sulla creazione di un profilo Wi-Fi con una chiave precondivisa, vedere [Creare un profilo Wi-Fi con una chiave precondivisa](pre-shared-key-wi-fi-profile.md).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

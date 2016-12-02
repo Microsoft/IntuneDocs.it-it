@@ -14,60 +14,64 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b25c7d7063ce586bb1cd960534f3e2ed57f6aec4
-ms.openlocfilehash: f70a32cf7db4d46f15cdef85e111a8857a1a0215
+ms.sourcegitcommit: ba4ace8106e83f3579cbaf98dcea8ef240a202a9
+ms.openlocfilehash: d150c97197e11d4a81727dca5ddd8eb1310aa193
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune
 
-Usare lo strumento di wrapping delle app di Microsoft Intune per iOS per modificare il comportamento delle app iOS interne limitandone le funzionalità senza modificarne il codice.
+Usare lo strumento di wrapping delle app di Microsoft Intune per iOS per modificare il comportamento delle app iOS interne abilitando le funzionalità di protezione delle app di Intune senza modificare il codice dell'app stessa.
 
-Lo strumento è un'applicazione da riga di comando di macOS che crea un wrapper intorno a un'app. Dopo l'elaborazione è possibile modificare la funzionalità dell'app usando i [criteri di gestione delle applicazioni mobili](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) configurati.
+Lo strumento è un'applicazione da riga di comando di macOS che crea un wrapper intorno a un'app. Dopo l'elaborazione è possibile modificare la funzionalità dell'app usando i [criteri di gestione delle applicazioni mobili](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) di Intune distribuiti dall'amministratore IT.
 
-Per scaricare lo strumento, vedere [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) (Strumento di wrapping delle app di Microsoft Intune per iOS).
+Per scaricare lo strumento, vedere [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) (Strumento di wrapping delle app di Microsoft Intune per iOS) in GitHub.
 
 
 
-## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>Soddisfare i prerequisiti per l'uso dello strumento di wrapping delle app
-Vedere [Skype for Business Online: Enable your tenant for modern authentication (Skype per Business Online: abilitazione del tenant per l'autenticazione moderna)](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) per altre informazioni sui prerequisiti e su come impostarli.
+## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Soddisfare i prerequisiti per lo strumento di wrapping delle app
+Per altre informazioni su come ottenere i prerequisiti, vedere il post di blog [How to obtain prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Come ottenere i prerequisiti per lo strumento di wrapping delle app di Intune per iOS).
 
 |Requisito|Altre informazioni|
 |---------------|--------------------------------|
-|Sistema operativo e set di strumenti supportati|È necessario eseguire lo strumento di wrapping delle app in un computer macOS con OS X 10.8.5 o versioni successive e con il set di strumenti XCode versione 5 o successive.|
-|Certificato di firma e profilo di provisioning|È necessario avere un certificato di firma e un profilo di provisioning Apple. Vedere la [documentazione per sviluppatori Apple](https://developer.apple.com/).|
-|Elaborazione di un'app con lo strumento per la disposizione testo per app|Le app devono essere sviluppate e firmate dalla società o da un fornitore di software indipendente (ISV). Non è possibile usare questo strumento per elaborare le app dell'Apple Store. L'app deve essere scritta per iOS 8.0 o versioni successive. Il formato delle app deve essere PIE (Position Independent Executable). Per altre informazioni sul formato PIE, vedere la documentazione per sviluppatori di Apple. L'estensione dell'app deve essere infine **app** o **ipa**.|
-|App che lo strumento non è in grado di elaborare|App crittografate, non firmate e con attributi di file estesi.|
+|Sistema operativo e set di strumenti supportati | È necessario eseguire lo strumento di wrapping delle app in un computer macOS con OS X 10.8.5 o versioni successive e con il set di strumenti XCode versione 5 o successive.|
+|Certificato di firma e profilo di provisioning | È necessario avere un certificato di firma e un profilo di provisioning Apple. Vedere la [documentazione per sviluppatori Apple](https://developer.apple.com/).|
+|Elaborazione di un'app con lo strumento per la disposizione testo per app  |Le app devono essere sviluppate e firmate dalla società o da un fornitore di software indipendente (ISV). Non è possibile usare questo strumento per elaborare le app dell'Apple Store. L'app deve essere scritta per iOS 8.0 o versioni successive. Il formato delle app deve essere PIE (Position Independent Executable). Per altre informazioni sul formato PIE, vedere la documentazione per sviluppatori di Apple. L'estensione dell'app deve essere infine **app** o **ipa**.|
+|App che lo strumento non è in grado di elaborare | App crittografate, non firmate e con attributi di file estesi.|
 |Impostazione dei diritti per l'app|Prima di eseguire il wrapping dell'app è necessario impostare diritti per concedere all'app autorizzazioni e funzionalità aggiuntive oltre a quelle generalmente concesse. Per istruzioni, vedere [Impostazione dei diritti delle app](#setting-app-entitlements).|
 
 ## <a name="install-the-app-wrapping-tool"></a>Installare lo strumento di wrapping delle app
 
-1.  Scaricare i file per lo strumento di wrapping delle app dal repository Microsoft Intune App Wrapping Tool for iOS [ospitato in GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios), in un computer macOS.
+1.  Scaricare i file per lo strumento di wrapping delle app da [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) in un computer macOS.
 
 2.  Fare doppio clic su **Microsoft Intune App Wrapping Tool for iOS.dmg**. Verrà visualizzata una finestra con il Contratto di licenza con l'utente finale (EULA). Leggere attentamente il documento.
 
 3. Scegliere **Accetto** per accettare il contratto di licenza e procedere al montaggio del pacchetto nel computer.
 
-4.  Aprire IntuneMAMPackager e salvare i file in una cartella locale nel computer macOS in uso. È ora possibile eseguire lo strumento di wrapping delle app.
+4.  Aprire la cartella **IntuneMAMPackager** e salvarne il contenuto nel computer macOS. È ora possibile eseguire lo strumento di wrapping delle app.
 
 ## <a name="run-the-app-wrapping-tool"></a>Eseguire lo strumento di wrapping delle app
-* Aprire un terminale e passare alla cartella in cui sono stati salvati i file dello strumento di wrapping delle app. Lo strumento eseguibile è denominato IntuneMAMPackager e si trova in IntuneMAMPackager/Contents/MacOS. Eseguire il comando come segue:
 
-    ```
+### <a name="use-terminal"></a>Usare il terminale
+
+Aprire il programma Terminale macOS e passare alla cartella in cui sono stati salvati i file dello strumento di wrapping delle app. Lo strumento eseguibile è denominato IntuneMAMPackager e si trova in IntuneMAMPackager/Contents/MacOS. Eseguire il comando come segue:
+
+```
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+```
 
-    ```
+> [!NOTE]
+> Alcuni parametri sono facoltativi, come illustrato nella tabella seguente.
 
-    > [!NOTE]
-    > Alcuni parametri sono facoltativi, come illustrato nella tabella seguente.
+**Esempio:** il comando di esempio seguente esegue lo strumento di wrapping delle app sull'app denominata MyApp.ipa. Per firmare l'app di cui è stato eseguito il wrapping vengono specificati e usati un profilo di provisioning e l'hash SHA-1 del certificato di firma. L'app di output (MyApp_Wrapped.ipa) viene creata e archiviata nella cartella Desktop dell'utente.
 
-    **Esempio:** il comando di esempio seguente esegue lo strumento di wrapping delle app per l'app denominata MyApp.ipa. Vengono specificati un profilo di provisioning e l'hash SHA-1. L'app elaborata (MyApp_Wrapped.ipa) viene creata e archiviata nella cartella Desktop dell'utente.
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
+```
 
-    ```
-    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true
-    ```
-    Con lo strumento di wrapping delle app è possibile usare le proprietà della riga di comando seguenti:
+### <a name="command-line-parameters"></a>Parametri della riga di comando
+Con lo strumento di wrapping delle app è possibile usare i parametri della riga di comando seguenti:
 
 |Proprietà|Modo d'uso|
 |---------------|--------------------------------|
@@ -103,20 +107,20 @@ Nella cartella IntuneMAMPackager/Contents/MacOS aprire `Parameters.plist`, un mo
 
 Eseguire IntuneMAMPackager con il file plist come unico argomento:
 
-```
+```bash
 ./IntuneMAMPackager –f Parameters.plist
 ```
 
-* Al termine dell'elaborazione verrà visualizzato un messaggio che indica che il wrapping dell'applicazione è stato completato.
+### <a name="post-wrapping"></a>Dopo il wrapping
 
-    Se si verifica un errore, vedere [Messaggi di errore](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#error-messages) per altre informazioni.
+Al termine del processo di wrapping verrà visualizzato un messaggio simile al seguente: "Wrapping dell'applicazione completato". Se si verifica un errore, vedere [Messaggi di errore](#error-messages-and-log-files) per altre informazioni.
 
-*   L'app di cui è stato eseguito il wrapping viene salvata nella cartella di output specificata in precedenza. È ora possibile caricare l'app in [wit_nextref](../includes/wit_nextref_md.md) e associarla ai criteri di gestione delle applicazioni per dispositivi mobili.
+L'app di cui è stato eseguito il wrapping viene salvata nella cartella di output specificata in precedenza. È ora possibile caricare l'app nella console di amministrazione di Intune e associarla ai criteri di gestione di applicazioni mobili.
 
-    > [!IMPORTANT]
-    > Quando si carica un'app con wrapper è possibile provare a eseguire l'aggiornamento di una versione precedente (con wrapper o nativa) se tale versione era già stata distribuita a Intune. In caso di errore, caricare l'app come nuova app ed eliminare la versione precedente.
+> [!IMPORTANT]
+> Quando si carica un'app con wrapper è possibile provare a eseguire l'aggiornamento di una versione precedente (con wrapper o nativa) se tale versione era già stata distribuita a Intune. In caso di errore, caricare l'app come nuova app ed eliminare la versione precedente.
 
-    È ora possibile distribuire l'app ai gruppi [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e l'app verrà eseguita nel dispositivo con le restrizioni specificate.
+È ora possibile distribuire l'app ai gruppi di utenti e assegnare i criteri di protezione delle app all'app. L'app verrà eseguita nel dispositivo con i criteri di protezione delle app specificati.
 
 ## <a name="error-messages-and-log-files"></a>Messaggi di errore e file di log
 Usare le informazioni seguenti per risolvere i problemi dello strumento per la disposizione testo per app.
@@ -166,13 +170,13 @@ Le app di cui è stato eseguito il wrapping tramite lo strumento di wrapping del
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Certificato, profilo di provisioning e requisiti di autenticazione
 
-Lo strumento di wrapping delle app include alcuni requisiti che devono essere soddisfatti per garantire la completa funzionalità.
+Lo strumento di wrapping delle app per iOS include alcuni requisiti che devono essere soddisfatti per garantire la completa funzionalità.
 
 |Requisito|Dettagli|
 |---------------|-----------|
-|Profilo di provisioning|Verificare che il profilo di provisioning sia valido prima di includerlo. Lo strumento di wrapping delle app non controlla se il profilo di provisioning è scaduto durante l'elaborazione di un'app iOS. Se viene specificato un profilo di provisioning scaduto, lo strumento di wrapping delle app includerà il profilo di provisioning scaduto e il problema si scoprirà solo durante l'installazione dell'app nel dispositivo iOS, che non riuscirà.|
-|Certificato|Verificare che il certificato sia valido prima di specificarlo. Lo strumento non verifica se un certificato è scaduto durante l'elaborazione delle app iOS. Se viene fornito l'hash per un certificato scaduto, lo strumento elaborerà e firmerà l'app, ma l'installazione nei dispositivi non riuscirà.<br /><br />Verificare che il certificato fornito per la firma dell'applicazione in pacchetto abbia una corrispondenza nel profilo di provisioning. Lo strumento non verifica se il profilo di provisioning ha una corrispondenza per il certificato fornito per la firma dell'applicazione con wrapper.|
-|Autenticazione|Per usare la crittografia, è necessario che il dispositivo disponga di un PIN. Se si tocca la barra di stato nei dispositivi in cui è stata distribuita un'app di cui è stato eseguito il wrapping, verrà richiesta di nuovo l'autenticazione con [wit_nextref](../includes/wit_nextref_md.md). I criteri predefiniti per un'app con wrapper prevedono l'*autenticazione al riavvio*. iOS gestisce qualsiasi notifica esterna, come una chiamata telefonica, chiudendo e riavviando l'app.
+|Profilo di provisioning iOS|Verificare che il profilo di provisioning sia valido prima di includerlo. Lo strumento di wrapping delle app non controlla se il profilo di provisioning è scaduto durante l'elaborazione di un'app iOS. Se viene specificato un profilo di provisioning scaduto, lo strumento di wrapping delle app includerà il profilo di provisioning scaduto e il problema si scoprirà solo durante l'installazione dell'app nel dispositivo iOS, che non riuscirà.|
+|Certificato di firma iOS|Assicurarsi che il certificato di firma sia valido prima di specificarlo. Lo strumento non verifica se un certificato è scaduto durante l'elaborazione delle app iOS. Se viene fornito l'hash per un certificato scaduto, lo strumento elaborerà e firmerà l'app, ma l'installazione nei dispositivi non riuscirà.<br /><br />Verificare che il certificato fornito per la firma dell'app di cui è stato eseguito il wrapping abbia una corrispondenza nel profilo di provisioning. Lo strumento non verifica se il profilo di provisioning ha una corrispondenza per il certificato fornito per la firma dell'applicazione con wrapper.|
+|Autenticazione|Per usare la crittografia, è necessario che il dispositivo disponga di un PIN. Se si tocca la barra di stato nei dispositivi in cui è stata distribuita un'app di cui è stato eseguito il wrapping, verrà richiesto di eseguire di nuovo l'accesso con un account aziendale o dell'istituto di istruzione. I criteri predefiniti per un'app con wrapper prevedono l'*autenticazione al riavvio*. iOS gestisce qualsiasi notifica esterna, come una chiamata telefonica, chiudendo e riavviando l'app.
 
 
 ## <a name="setting-app-entitlements"></a>Impostazione dei diritti delle app
@@ -195,27 +199,27 @@ Prima di eseguire il wrapping dell'app, è possibile assegnare *diritti* per con
 
 1.  Abilitare le funzionalità nell'app:
 
-    1.  In Xcode passare alla destinazione dell'app e fare clic su **Capabilities** (Funzionalità).
+    a.  In Xcode passare alla destinazione dell'app e fare clic su **Capabilities** (Funzionalità).
 
-    2.  Attivare le funzionalità appropriate. Per informazioni dettagliate su ogni funzionalità e su come determinare i valori corretti, vedere l'articolo relativo all'[aggiunta di funzionalità](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) nella libreria per sviluppatori iOS.
+    b.  Attivare le funzionalità appropriate. Per informazioni dettagliate su ogni funzionalità e su come determinare i valori corretti, vedere l'articolo relativo all'[aggiunta di funzionalità](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) nella libreria per sviluppatori iOS.
 
-    3.  Prendere nota di eventuali ID creati durante il processo.
+    c.  Prendere nota di eventuali ID creati durante il processo.
 
-    4.  Creare e firmare l'app di cui eseguire il wrapping.
+    d.  Creare e firmare l'app di cui eseguire il wrapping.
 
 2.  Abilitare i diritti nel profilo di provisioning:
 
-    1.  Accedere all'area membri degli sviluppatori Apple.
+    a.  Accedere all'area membri degli sviluppatori Apple.
 
-    2.  Creare un profilo di provisioning per l'app. Per istruzioni, vedere [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Come ottenere i prerequisiti per lo strumento per la disposizione testo per app di Intune per iOS).
+    b.  Creare un profilo di provisioning per l'app. Per istruzioni, vedere [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Come ottenere i prerequisiti per lo strumento per la disposizione testo per app di Intune per iOS).
 
-    3.  Nel profilo di provisioning abilitare gli stessi diritti dell'app. È necessario indicare gli stessi ID specificati durante lo sviluppo dell'app.
+    c.  Nel profilo di provisioning abilitare gli stessi diritti dell'app. È necessario indicare gli stessi ID specificati durante lo sviluppo dell'app.
 
-    4.  Completare la configurazione guidata del profilo di provisioning e scaricare il file.
+    d.  Completare la configurazione guidata del profilo di provisioning e scaricare il file.
 
 3.  Assicurarsi di aver soddisfatto tutti i prerequisiti e quindi eseguire il wrapping dell'app.
 
-### <a name="troubleshooting-common-errors-with-entitlements"></a>Risoluzione di problemi comuni relativi ai diritti
+### <a name="troubleshoot-common-errors-with-entitlements"></a>Risoluzione di problemi comuni relativi ai diritti
 Se lo strumento di wrapping delle app per iOS visualizza un errore relativo ai diritti, provare le procedure seguenti per la risoluzione dei problemi.
 
 |Problema|Causa|Risoluzione|
@@ -223,7 +227,7 @@ Se lo strumento di wrapping delle app per iOS visualizza un errore relativo ai d
 |Impossibile analizzare i diritti generati dall'applicazione di input.|Lo strumento per la disposizione testo per app non è in grado di leggere il file dei diritti che è stato estratto dall'app. Il file dei diritti potrebbe non essere nel formato corretto.|Esaminare il file dei diritti per l'app. Le istruzioni seguenti spiegano come eseguire questa operazione. Quando si esamina il file dei diritti, verificare se sono presenti errori di sintassi. Il file deve essere in formato XML.|
 |I diritti non sono presenti nel profilo di provisioning (sono elencati i diritti mancanti). Ricreare il pacchetto dell'app con un profilo di provisioning a cui sono assegnati tali diritti.|I diritti abilitati nel profilo di provisioning e le funzionalità abilitate nell'app non corrispondono. Questa mancata corrispondenza vale anche per gli ID associati a particolari funzionalità, ad esempio gruppi di app, accesso al portachiavi e così via.|In genere è possibile creare un nuovo profilo di provisioning che abilita le stesse funzionalità dell'app. In caso di mancata corrispondenza tra gli ID del profilo e dell'app, lo strumento per la disposizione testo per app sostituirà gli ID, se è in grado di eseguire l'operazione. Se questo errore viene ancora visualizzato dopo aver creato un nuovo profilo di provisioning, è possibile provare a rimuovere i diritti dall'app usando il parametro -e (vedere la sezione Uso del parametro -e per rimuovere diritti da un'app).|
 
-### <a name="finding-the-existing-entitlements-of-a-signed-app"></a>Trovare i diritti esistenti di un'app firmata
+### <a name="find-the-existing-entitlements-of-a-signed-app"></a>Trovare i diritti esistenti di un'app firmata
 Per rivedere i diritti esistenti di un'app firmata e di un profilo di provisioning:
 
 1.  Trovare il file con estensione IPA e modificare l'estensione in ZIP.
@@ -254,7 +258,7 @@ Quando si usa lo strumento di wrapping delle app, adottare le procedure consigli
 
 -   Il certificato di firma, il profilo di provisioning e l'app line-of-business specificati devono risiedere nello stesso computer macOS usato per eseguire lo strumento di wrapping delle app. Se i file si trovano in un percorso UNC, assicurarsi che siano accessibili dal computer macOS. Il percorso deve essere protetto tramite firma IPsec o SMB.
 
-    L'applicazione di cui è stato eseguito il wrapping importata nella console di [wit_nextref](../includes/wit_nextref_md.md) deve risiedere nello stesso computer in cui viene eseguito lo strumento. Se il file si trova in un percorso UNC, assicurarsi che sia accessibile dal computer che esegue la console di [wit_nextref](../includes/wit_nextref_md.md). Il percorso deve essere protetto tramite firma IPsec o SMB.
+    L'applicazione di cui è stato eseguito il wrapping importata nella console di amministrazione deve trovarsi nello stesso computer in cui viene eseguito lo strumento. Se il file si trova in un percorso UNC, assicurarsi che sia accessibile dal computer che esegue la console di amministrazione. Il percorso deve essere protetto tramite firma IPsec o SMB.
 
 -   L'ambiente in cui lo strumento di wrapping delle app viene scaricato dal repository GitHub deve essere protetto tramite firma IPSec o SMB.
 
@@ -273,6 +277,6 @@ Quando si usa lo strumento di wrapping delle app, adottare le procedure consigli
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

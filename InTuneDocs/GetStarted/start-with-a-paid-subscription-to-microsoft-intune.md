@@ -1,80 +1,55 @@
 ---
-title: Guida introduttiva a Intune | Microsoft Intune
+title: Introduzione | Microsoft Intune
 description: Requisiti e prerequisiti per iniziare a usare la sottoscrizione di Intune
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: aecd5f76e234835c38bf47d8de7e13034d683998
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 7fceadbfcca319dfd928ec6226de27f2189beee7
 
 
 ---
 
 
-# Guida introduttiva a Intune
-Questa guida introduttiva illustra la procedura di configurazione di una sottoscrizione a pagamento di Microsoft Intune per gestire in modo rapido e semplice i dispositivi mobili e i PC Windows usati dall'organizzazione. È possibile seguire tutti i passaggi nell'ordine o ignorare quelli che non si applicano a un ambiente specifico o alle esigenze aziendali.
+# <a name="intune-quick-start-guide"></a>Guida introduttiva a Intune
+Questa guida contiene informazioni introduttive sull'uso della sottoscrizione a pagamento di Microsoft Intune per gestire i dispositivi mobili e i PC Windows. È possibile seguire tutti i passaggi nell'ordine o ignorare quelli che non si applicano a un ambiente specifico o alle esigenze aziendali. Se si vuole provare Intune, vedere la [Guida alla valutazione di Intune](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).  
 
->[!NOTE]
->Questo articolo è incentrato sulla configurazione di Intune come un servizio autonomo. In alternativa, se attualmente si usa Microsoft System Center Configuration Manager per gestire computer e server, è possibile [estendere Configuration Manager per gestire i dispositivi mobili](https://technet.microsoft.com/library/jj884158.aspx). A tale scopo, connettersi a Intune con Configuration Manager in una distribuzione di gestione dei dispositivi mobili ibrida.
-
-Questa guida introduttiva comprende molti dei passaggi presenti anche nella [guida di valutazione di Intune](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune). Tuttavia, al termine della valutazione e quando tutto è pronto per iniziare a gestire i dispositivi mobili, è necessario soddisfare alcuni requisiti aggiuntivi:
-
--   Sincronizzare gli account Active Directory locali con Intune e Azure Active Directory
-
--   Aggiornare i record del dominio pubblico e dei servizi DNS con il registrar
-
--   Personalizzare le funzionalità di Intune per l'uso in produzione
+Se attualmente si usa Microsoft System Center Configuration Manager per gestire computer e server, è possibile [estendere Configuration Manager per gestire i dispositivi mobili](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 >[!TIP]
->Se si acquistano almeno 150 licenze per Microsoft Intune in un piano idoneo, è possibile usare *FastTrack Center Benefit*, un servizio mediante il quale gli specialisti Microsoft collaborano con gli utenti per preparare l'ambiente per Intune. Vedere [FastTrack Center Benefit per Intune](https://technet.microsoft.com/library/mt228265.aspx).
+>Se si acquistano almeno 150 licenze per Intune in un piano idoneo, è possibile usare *FastTrack Center Benefit*, un servizio mediante il quale gli specialisti Microsoft collaborano con gli utenti per preparare l'ambiente per Intune. Vedere [FastTrack Center Benefit per Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
 
+## <a name="checklist"></a>Elenco di controllo
 
-## Prima di iniziare
-Questa guida è utile nel momento in cui si avvia una sottoscrizione a pagamento e quando è possibile distribuire Intune nonché apportare modifiche all'infrastruttura di rete esistente. Queste attività vanno dalle semplici operazioni di aggiunta o aggiornamento dei record DNS interni ed esterni fino alla sincronizzazione degli account utente Active Directory con Azure Active Directory. Indipendentemente dalla combinazione scelta di funzionalità di gestione di Intune dei dispositivi mobili, è necessario pianificare attentamente l'interazione di Intune con i componenti e i servizi di rete esistenti. In particolare, è necessario controllare gli aspetti seguenti:
+| Passaggi | Stato  |
+| ------------- |-------------|
+| 1  | [Prerequisiti](what-to-know-before-you-start-microsoft-intune.md) |
+| 2 |  [Accedere a Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)     |  
+| 3 | [Configurare un nome di dominio personalizzato](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  |
+| 4 | [Sincronizzare AD e aggiungere utenti](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)  |
+| 5 | [Gestire le licenze di Intune](start-with-a-paid-subscription-to-microsoft-intune-step-4.md) |
+| 6 | [Organizzare utenti e dispositivi](start-with-a-paid-subscription-to-microsoft-intune-step-5.md) |
+| 7 | [Creare i criteri e pubblicare un'app](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) |
+| 8 | [Personalizzare il portale aziendale](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) |
+| 9 | [Registrare dispositivi mobili e installare un'app](start-with-a-paid-subscription-to-microsoft-intune-step-8.md) |
+|10 | [Passaggi successivi](post-configuration-tasks.md) |
 
--   **Gestione dell'identità utente**: per la maggior parte delle organizzazioni di medie e grandi dimensioni, la soluzione migliore e più conveniente per gestire l'identità utente con Intune è la connessione dei servizi di directory esistenti a Intune tramite Azure Active Directory. Questo vale in particolare se si usano già altri servizi cloud Microsoft, come Office 365 o Exchange Online. La sincronizzazione degli account utente esistenti con [Microsoft Azure Active Directory Connect](https://www.microsoft.com/download/details.aspx?id=47594) consente di connettere in modo semplice e rapido l'istanza locale di Active Directory ad Azure Active Directory e di configurare un'esperienza di autenticazione Single Sign-On per gli utenti.
-
--   **Impatto sul DNS**: se si vuole usare il proprio nome di dominio anziché il dominio onmicrosoft.com predefinito ottenuto al momento della prima registrazione a Intune, saranno necessari alcuni aggiornamenti dei record DNS pubblici. Gli aggiornamenti dei record DNS sono necessari per consentire ai dispositivi mobili di individuare il servizio di Intune e garantire il corretto funzionamento di quello di gestione relativo alla propria sottoscrizione per la gestione di tutti i dispositivi in uso da parte dell'organizzazione.
-
-## Tenere a portata di mano gli elementi seguenti
-Per iniziare Quando si inizia a usare la sottoscrizione a pagamento di Intune sono necessari gli elementi seguenti:
-
-### Un dispositivo con web browser abilitato per Silverlight
-Questo dispositivo è necessario per accedere alla console di amministrazione di Intune in cui gestire i dispositivi, le app e i criteri. Sarà necessario anche un Web browser per accedere al portale aziendale di Intune basato sul Web quando non si esegue l'accesso all'app Portale aziendale da un dispositivo mobile. Per semplificare l'operazione, è possibile usare l'impostazione della "modalità di privacy" nello stesso browser usato per l'amministrazione di Intune. Ad esempio, in Internet Explorer è possibile fare clic su **Strumenti**&gt;**InPrivate Browsing**.
-
->[!TIP]
->A causa di questo requisito, il browser Microsoft Edge non è supportato per accedere alla console di amministrazione di Intune.
-
-
-### Certificati per i dispositivi mobili
-Se si gestiscono i dispositivi iOS o Windows Phone con Intune, sono necessari certificati e account per recuperare tali certificati. Per gestire i dispositivi Android non sono necessari certificati aggiuntivi.
-
-- Non è necessario alcun certificato per gli utenti di **Windows Phone 8.1** che installano l'app Portale aziendale dallo Store. È richiesto tuttavia un [certificato di firma codice Symantec](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do) per **Windows Phone 8.0** o per usare Intune allo scopo di distribuire l'app Portale aziendale in dispositivi Windows Phone 8.1.
-
->[!NOTE]
->Questa guida introduttiva presuppone che gli utenti scarichino l'app Portale aziendale dallo Store in un dispositivo Windows Phone 8.1 o versioni successive. Per informazioni sul supporto di Windows Phone 8.0, vedere [Configurare la gestione del dispositivo per Windows Phone 8.0](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune).
-
-- Non sono previsti requisiti di certificato per **PC Windows** o **dispositivi Windows RT** durante la registrazione dei PC Windows come dispositivi o l'[installazione del client di PC Windows per Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).
-
-- Per i dispositivi **iOS** o **Mac OS X** è necessario richiedere un certificato Apple Push Notification Service di Apple, come descritto nel passaggio 3 di [Configurare la gestione dei dispositivi iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
-
-## Passaggi successivi
-È ora di iniziare con la guida introduttiva di Intune!
 
 >[!div class="step-by-step"]
-[**Accedere a Intune** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
+[**prerequisiti** &rarr;](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 
