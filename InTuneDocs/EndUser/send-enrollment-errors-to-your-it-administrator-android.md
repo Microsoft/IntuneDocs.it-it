@@ -2,10 +2,10 @@
 title: Inviare gli errori di registrazione all&quot;amministratore IT | Microsoft Intune
 description: Inviare gli errori di registrazione all&quot;amministratore
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c10f9548c00972a018e742601586f6e03e1a05cc
-ms.openlocfilehash: 93f4d2c93f17146a704031dae0d35cfde077b384
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 57e5707ab651dd18f1d83730b03ae0267de25e34
 
 
 ---
 
 
-# Inviare gli errori di registrazione all'amministratore IT
+# <a name="send-enrollment-errors-to-your-it-admin"></a>Inviare gli errori di registrazione all'amministratore IT
 
 Se si verifica un errore durante la registrazione del dispositivo Android in Intune, è possibile provare a rieseguirla toccando **Riprova**. È anche possibile inviare tramite posta elettronica le informazioni sull'errore all'amministratore IT toccando **Invia informazioni**.
 
-Se si tocca **Invia informazioni**viene creato automaticamente un messaggio di posta elettronica indirizzato all'amministratore IT e contenente i log necessari a quest'ultimo per risolvere il problema relativo al dispositivo.
+Quando si tocca **Invia informazioni** viene creato automaticamente un messaggio di posta elettronica. Il messaggio di posta elettronica viene indirizzato all'amministratore IT e contiene i log necessari per risolvere il problema relativo al dispositivo.
 
 Esistono diversi modi per inviare i registri dei dati del dispositivo all'amministratore IT per ricevere assistenza in caso di errori:
 
@@ -35,6 +35,6 @@ Esistono diversi modi per inviare i registri dei dati del dispositivo all'ammini
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

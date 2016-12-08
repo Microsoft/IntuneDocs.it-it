@@ -2,10 +2,10 @@
 title: Che cosa avviene se si reimposta un dispositivo Windows con l&quot;app Portale aziendale? | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bdb221d9c52231d31511b29cbdc69985bc0da5b2
-ms.openlocfilehash: 1cc7e4ad5abee16a0e06780b37c23903d196a018
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 99b625800c31259012f337eb344facd6bad47f75
 
 
 ---
 
 
-# Che cosa avviene se si reimposta un dispositivo Windows con l'app Portale aziendale?
+# <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Che cosa avviene se si reimposta un dispositivo Windows con l'app Portale aziendale?
 
 Quando si usa l'app Portale aziendale o il [sito Web del portale aziendale](reset-your-device-cpwebsite.md) per reimpostare il dispositivo Windows, vengono ripristinate le impostazioni di fabbrica del dispositivo e vengono eliminate app, impostazioni e dati, inclusi i dati personali. Le conseguenze nei singoli dispositivi dipendono dal tipo di dispositivo e da come viene usato, come descritto nella tabella seguente. Per istruzioni su come reimpostare il dispositivo perso o rubato, vedere [Ripristinare (cancellare) un dispositivo smarrito o rubato](reset-erase-your-lost-or-stolen-device-windows.md).
 
@@ -36,6 +36,6 @@ Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

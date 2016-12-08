@@ -2,10 +2,10 @@
 title: Che cosa avviene se si reimposta un dispositivo iOS con l&quot;app Portale aziendale? | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 71e1e0b31f917d62f4591501709261d87fcd9f30
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 1ec1c17d7ae18c227427fdd708b9fe76a0f552be
 
 
 ---
 
 
-# Che cosa avviene se si reimposta un dispositivo iOS con l'app Portale aziendale?
+# <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Che cosa avviene se si reimposta un dispositivo iOS con l'app Portale aziendale?
 
 Quando si usa il Portale aziendale per ripristinare il dispositivo iPhone o iPad, alcune app e impostazioni nel dispositivo potrebbero essere eliminate, inclusi alcuni dati personali. Le conseguenze nei singoli dispositivi dipendono dal modo in cui viene usato il dispositivo, come descritto negli elenchi seguenti.
 
@@ -44,6 +44,6 @@ Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
