@@ -2,7 +2,7 @@
 title: Richiesta di installare Lookout for Work nel dispositivo iOS | Microsoft Intune
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: 03eee971fe74b73983111549338b13bf4068a85c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
 
 
 ---
 
-# Richiesta di installare Lookout for Work nel dispositivo iOS
+# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>Richiesta di installare Lookout for Work nel dispositivo iOS
 
 Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di installare l'app Lookout for Work che consente di proteggere il dispositivo con la ricerca di potenziali minacce alla protezione. È possibile che vengano visualizzate istruzioni diverse sul dispositivo, a seconda di come l'amministratore IT ha configurato Lookout for Work.
 
@@ -55,6 +55,6 @@ Talvolta le installazioni possono avere esito negativo a causa di problemi tecni
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
