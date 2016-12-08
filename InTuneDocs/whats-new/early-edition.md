@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 11/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f287a0ad082fa20a2e84abbf8f5585117aae6f57
-ms.openlocfilehash: e604b8809bd444d9069d449a6c691a8444296623
+ms.sourcegitcommit: 6dd584397451d38be86fa0780efff435ffb9b2af
+ms.openlocfilehash: d70ebf87bc930f853741ddc0d572d2174c636dac
 
 
 ---
@@ -51,6 +51,13 @@ Stiamo iniziando a presentare in anteprima l'integrazione con i servizi di gesti
 ### <a name="conditional-access-for-mam-with-sharepoint-online---vso-679339--"></a>Accesso condizionale per MAM con SharePoint Online <!--VSO 679339-->
 È possibile impedire l'accesso a SharePoint Online alle app non supportate dai criteri di gestione delle app mobili (MAM) di Intune.  È possibile iniziare a usare le funzionalità di gestione delle app mobili di Intune nel portale di Azure. Individuare la sezione __Accesso condizionale__ nel pannello __Impostazioni__ che includerà l'opzione per SharePoint Online. Questa funzionalità verrà fornita separatamente rispetto al resto del rilascio del servizio.
 
+### <a name="ability-to-restrict-intune-mobile-device-enrollment"></a>Possibilità di limitare la registrazione di dispositivi mobili Intune
+Intune aggiunge nuove limitazioni di registrazione che consentono di controllare quali piattaforme per dispositivi mobili sono autorizzate alla registrazione. Intune separa le piattaforme per dispositivi mobili iOS, macOS, Android, Windows e Windows Mobile. 
+* È possibile limitare la registrazione di macOS e Windows 8.1 o versioni successive come piattaforme per dispositivi mobili. 
+* La limitazione della registrazione di dispositivi mobili non limita la registrazione di agenti PC. 
+* Solo per iOS: è disponibile un'altra opzione che consente di bloccare la registrazione dei dispositivi personali. Intune contrassegna tutti i nuovi dispositivi come personali, a meno che l'amministratore IT non esegua un'operazione per contrassegnarli come aziendali, come spiegato in [questo articolo](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+
+
 ## <a name="notices"></a>Notifiche
 
 ### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>Trasferimento di Multi-Factor Authentication per la registrazione nel portale di Azure <!--VSO 750545-->
@@ -82,6 +89,6 @@ Per informazioni dettagliate sugli ultimi sviluppi, vedere [Novità di Microsoft
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
