@@ -1,11 +1,11 @@
 ---
 title: Uso del dispositivo Android con Intune | Microsoft Intune
-description: "Elenco di collegamenti alle attività che è possibile eseguire sul dispositivo mobile Android quando viene registrato in Intune"
+description: "Elenco di collegamenti alle attività che gli utenti finali possono eseguire nel loro dispositivo mobile Android quando viene registrato in Intune"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
 
 
 ---
 
 
-# Uso del dispositivo Android con Intune
+# <a name="using-your-android-device-with-intune"></a>Uso del dispositivo Android con Intune
 
 Questo articolo contiene collegamenti a tutte le attività che gli utenti finali possono eseguire sui dispositivi gestiti da Intune. Gli amministratori IT possono usare queste informazioni per vedere i passaggi che gli utenti devono seguire per svolgere un'ampia gamma di attività, raggruppate nelle categorie seguenti:
 
@@ -29,32 +29,32 @@ Questo articolo contiene collegamenti a tutte le attività che gli utenti finali
 - Attività di gestione di post-registrazione
 - Problemi di conformità
 
-## Installazione dell'app Portale aziendale e registrazione in Intune
+## <a name="company-portal-app-installation-and-intune-enrollment"></a>Installazione dell'app Portale aziendale e registrazione in Intune
 
-Le informazioni contenute in questa sezione consentono di installare il portale aziendale di Intune e di registrare dispositivi Android.
+Le informazioni contenute in questa sezione consentono agli utenti di installare il portale aziendale di Intune e di registrare dispositivi Android.
 
 - [Registrare il dispositivo in Intune](enroll-your-device-in-Intune-android.md)
-- [Create a work profile and enroll your device in Intune (Creare un profilo di lavoro e registrare il dispositivo in Intune)](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+- [Creare un profilo di lavoro e registrare il dispositivo in Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## Operazioni che è possibile eseguire quando il dispositivo è registrato in Intune
+## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Operazioni che gli utenti possono eseguire quando il loro dispositivo è registrato in Intune
 
-Le informazioni contenute in questa sezione illustrano le azioni che è possibile eseguire dopo aver registrato il dispositivo Android in Intune.
+Le informazioni contenute in questa sezione illustrano le azioni che gli utenti finali possono eseguire dopo aver registrato il dispositivo Android in Intune.
 
 - [Usare le app gestite nel dispositivo](use-managed-apps-on-your-device-android.md)
 - [Crittografare il dispositivo](encrypt-your-device-android.md)
 - [Impostare il PIN o la password](set-your-pin-or-password-android.md)
 - [Installare la rete privata virtuale (VPN) dell'azienda](install-your-companys-virtual-private-network-VPN-android.md)
 - [Impostare l'intervallo prima che il dispositivo venga bloccato](set-the-amount-of-time-before-your-device-is-locked-android.md)
-- [Ripristinare un dispositivo smarrito o rubato](reset-erase-your-lost-or-stolen-device-android.md)
+- [Ripristinare (cancellare) un dispositivo smarrito o rubato](reset-erase-your-lost-or-stolen-device-android.md)
 - [Disattivare la raccolta dati di utilizzo di Microsoft](turn-off-microsoft-usage-data-collection-android.md)
 - [Annullare la registrazione del dispositivo in Intune](unenroll-your-device-from-intune-android.md)
 - [Annullare la registrazione del dispositivo se sono state rifiutate le Condizioni per l'utilizzo](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
-- [What happens if you reset your Android device using the Company Portal app? (Cosa avviene se si reimposta un dispositivo Android con l'app Portale aziendale?)](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+- [Che cosa avviene se si reimposta un dispositivo Android con l'app Portale aziendale?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
-## Risoluzione dei problemi relativi al dispositivo
+## <a name="steps-to-fix-device-and-compliance-issues"></a>Procedure per risolvere i problemi del dispositivo e di conformità
 
 Le informazioni contenute in questa sezione consentono di risolvere i problemi che si possono verificare quando il dispositivo Android viene registrato in Intune.
 
@@ -68,13 +68,13 @@ Le informazioni contenute in questa sezione consentono di risolvere i problemi c
 - [Manca un certificato necessario per il dispositivo](your-device-is-missing-a-required-certificate-android.md)
 - [Viene richiesta la disattivazione delle origini sconosciute](you-are-asked-to-turn-off-unknown-sources-android.md)
 - [Viene richiesta la disattivazione del debug USB](you-are-asked-to-turn-off-usb-debugging-android.md)
-- [Viene richiesta l'attivazione dell'analisi del dispositivo per verificare la presenza di minacce per la sicurezza](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Viene richiesta l'attivazione della ricerca di minacce per la sicurezza nel dispositivo](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
 - [Il dispositivo non soddisfa la patch di protezione minima](your-device-does-not-meet-the-minimum-security-patch-android.md)
 - [Viene richiesto di installare Lookout for Work nel dispositivo Android](you-are-prompted-to-install-lookout-for-work-android.md)
 - [È necessario risolvere una minaccia rilevata da Lookout for Work nel dispositivo Android](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

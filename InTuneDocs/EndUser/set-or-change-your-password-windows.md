@@ -1,11 +1,11 @@
 ---
-title: Impostare o modificare il passcode | Microsoft Intune
+title: Impostare o modificare la password | Microsoft Intune
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,20 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 56f2cd4b92a383bc801cfb02ffde3d092f059d44
+ms.sourcegitcommit: 6a5bf59f3ef25df590625033fca4c114c3ace62f
+ms.openlocfilehash: 9a2f435220b9b2d4304f78e30cf152a4bb2af0c6
 
 
 ---
 
-# <a name="set-or-change-your-passcode"></a>Impostare o modificare il passcode
+# <a name="make-your-device-safer-with-the-right-password"></a>Aumentare la sicurezza del dispositivo impostando la password corretta
+
+L'accesso alle risorse aziendali, ad esempio la posta elettronica e i documenti, è un'operazione che gli utenti devono eseguire ogni giorno usando i propri dispositivi Windows. Le organizzazioni vogliono avere la certezza che i dispositivi degli utenti siano in grado di eseguire queste attività in modo sicuro. Un modo per garantire l'accesso sicuro alle risorse è imporre ai dispositivi l'uso di una password.
 
 Se il dispositivo Windows non è conforme ai criteri di password dell'amministratore IT, viene visualizzato un messaggio che descrive brevemente il problema e illustra le procedure necessarie per far sì che la password soddisfi i requisiti.
 
-L'amministratore IT può impostare più requisiti per la password. Ad esempio, può essere necessario che la password contenga un certo numero di caratteri, un insieme di numeri e lettere. Poiché potrebbero essere impostati più requisiti, queste istruzioni spiegano solo come impostare o modificare la password. Non viene illustrata ogni possibile combinazione di requisiti.
-
-In caso di problemi per l'impostazione di una password che soddisfi tutti i requisiti, contattare l'amministratore IT per assistenza.
+> [!Note]
+> L'amministratore IT può impostare più requisiti per la password. Ad esempio, può essere necessario che la password contenga un certo numero di caratteri, un insieme di numeri e lettere. Poiché potrebbero essere impostati più requisiti, queste istruzioni spiegano solo come impostare o modificare la password. Non viene illustrata ogni possibile combinazione di requisiti.
 
 ## <a name="to-change-your-password-on-windows-phone-81"></a>Per modificare la password in Windows Phone 8.1
 
@@ -46,6 +47,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

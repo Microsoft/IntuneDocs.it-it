@@ -14,26 +14,26 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 19b0b502d2c8c261947c461f27a0e8153df5b186
-ms.openlocfilehash: 1e65c1fa25e273ba03218f79ebeff611138e8013
+ms.sourcegitcommit: 0c05b4e16f7b0a87215a0cd20f7d559cd8497296
+ms.openlocfilehash: 0f175b1eb2d80a68c8b7864d21f5a9e585de458b
 
 
 ---
 
 # <a name="device-logs"></a>Log dei dispositivi
 
-Nell'ambito delle attività di risoluzione dei problemi è necessario raccogliere i log dai dispositivi degli utenti. Le istruzioni per la raccolta dei log sono descritte qui. In genere è necessario accedere ai dispositivi o chiedere agli utenti di raccogliere il log e inviarlo.
+Nell'ambito delle attività di risoluzione dei problemi può essere necessario raccogliere i log dei dispositivi degli utenti. Le istruzioni per la raccolta dei log sono descritte qui. In genere è necessario accedere ai dispositivi per ottenere i log o chiedere agli utenti di raccoglierli e inviarli.
 
 ### <a name="android-logs"></a>Log di Android
-I log di Android si trovano in *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*. 
+I log di Android si trovano in *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*.
 
-Talvolta i file non vengono visualizzati, specialmente nei dispositivi Android più recenti. In questo caso, chiedere agli utenti finali di aprire l'app Portale aziendale per Android e quindi di passare a **Impostazioni**, scegliere **Copia log** e quindi riavviare il dispositivo. 
+Talvolta i file non vengono visualizzati, specialmente nei dispositivi Android più recenti. In questo caso, chiedere agli utenti finali di aprire l'app Portale aziendale per Android. Gli utenti devono quindi scegliere **Impostazioni**>**Copia log** e riavviare il dispositivo.
 
 Per altre informazioni su come gli utenti possono inviare i log di dati, vedere gli articoli seguenti:
 
-- [Usare la registrazione dettagliata per aiutare l'amministratore IT a risolvere i problemi dei dispositivi](/intune/enduser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) - Descrive la procedura per attivare la registrazione dettagliata, che consente l'invio automatico di tutti i log di dati degli utenti all'amministratore. La registrazione dettagliata è attivata per impostazione predefinita.
+- [Use Verbose Logging to help your IT admin fix device issues](/intune/enduser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) (Usare la registrazione dettagliata per aiutare l'amministratore IT a risolvere i problemi dei dispositivi): descrive la procedura per attivare la registrazione dettagliata, consentendo l'invio automatico di tutti i log di dati degli utenti all'amministratore. La registrazione dettagliata è attivata per impostazione predefinita.
 
-- [Inviare i log dei dati di diagnostica di Android all'amministratore IT tramite posta elettronica](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android) 
+- [Inviare i log dei dati di diagnostica di Android all'amministratore IT tramite posta elettronica](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
 
 - [Inviare i log dei dati di diagnostica all'amministratore IT tramite un cavo USB](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 
@@ -45,11 +45,11 @@ L'utente può inviare gli errori di registrazione come descritto in [Send iOS en
 
 1. Aprire l'app **Console**.
 2. In **FILE** scegliere **system.log**.
-3. Nella barra dei menu nella parte superiore scegliere **File** > **Salva una copia con nome** e salvare il file.
+3. Nella barra dei menu nella parte superiore scegliere **File** > **Salva una copia con nome**. Salvare quindi il file.
 
 ### <a name="windows-phone"></a>Windows Phone
 
-Nell'app Portale aziendale di Windows Phone l'utente deve scegliere **…** per accedere al menu, quindi deve scegliere **Invia log**. Questa opzione è disponibile sia prima che dopo l'accesso all'app Portale aziendale.
+Nell'app Portale aziendale di Windows Phone l'utente deve scegliere i tre puntini (**…**) per accedere al menu e quindi deve scegliere **Invia log**. Questa opzione è disponibile sia prima che dopo l'accesso all'app Portale aziendale.
 
 ### <a name="windows"></a>Windows
 
@@ -57,6 +57,6 @@ Per il portale aziendale di Windows i log si trovano in *%localappdata%\Packages
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

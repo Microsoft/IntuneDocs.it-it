@@ -2,10 +2,10 @@
 title: Informazioni sul portale aziendale | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1a1975bb10d4a35f6ab52d724405f77300c40feb
-ms.openlocfilehash: f0c50a7a028fdc17acaad4e0498aaabfb58987a8
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: adf7fc0b7ddeb7fa8361d37efd0fdd5c714a72e4
 
 
 ---
 
-# Informazioni sul portale aziendale
+# <a name="about-the-company-portal"></a>Informazioni sul portale aziendale
 
-## Che cos'è il portale aziendale e a cosa serve?
+## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>Che cos'è il portale aziendale e a cosa serve?
 Il portale aziendale di Microsoft Intune consente di accedere ai dati e alle app della società o dell'istituto di istruzione. È possibile accedere al portale aziendale in due modi diversi:
 
 - Installando l'app Portale aziendale nel dispositivo. In genere è possibile scaricare l'app Portale aziendale dall'App Store del dispositivo, ma anche l'amministratore IT può installare l'app.
@@ -46,7 +46,7 @@ Per scoprire quali operazioni è possibile eseguire nel sito Web del portale azi
 - [Windows](using-your-windows-device-with-intune.md)
 - [Sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
-## Che cosa succede quando si aggiunge un computer o un dispositivo al Portale aziendale?
+## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Che cosa succede quando si aggiunge un computer o un dispositivo al Portale aziendale?
 Quando si aggiunge un computer o un dispositivo al Portale aziendale, a seconda del dispositivo è possibile che venga installato un software o scaricata un'app.  Vengono inoltre concesse all'amministratore IT le autorizzazioni per gestire il dispositivo e proteggere le informazioni aziendali sul dispositivo.
 
 Per informazioni su ciò che l'amministratore IT può e non può visualizzare nei dispositivi degli utenti, usare il collegamento che corrisponde al tipo di dispositivo:
@@ -56,7 +56,7 @@ Per informazioni su ciò che l'amministratore IT può e non può visualizzare ne
 - [iOS e Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
-## Quali tipi di computer o dispositivi è possibile aggiungere al Portale aziendale?
+## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Quali tipi di computer o dispositivi è possibile aggiungere al Portale aziendale?
 
 -   Dispositivi iPhone, iPad e Mac OS X
 
@@ -67,11 +67,8 @@ Per informazioni su ciò che l'amministratore IT può e non può visualizzare ne
     -   Windows 10 Desktop
     -   Windows Phone 8.1
     -   Windows 8.1
-    -   iPhone, iPad e Mac OS X
-    -   Dispositivi mobili Android
 
-
-## È possibile rimuovere un computer o un dispositivo dal Portale aziendale?
+## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>È possibile rimuovere un computer o un dispositivo dal Portale aziendale?
 È possibile rimuovere o reimpostare un computer o un dispositivo dal Portale aziendale. Esiste una differenza tra **rimuovere** e **reimpostare**.
 
 Quando si *rimuove* un computer o dispositivo, si annulla la registrazione del dispositivo in Intune. Dopo l'annullamento della registrazione non è più possibile accedere al Portale aziendale con tale dispositivo e alcuni dati aziendali all'interno di quest'ultimo potrebbero essere rimossi. Per informazioni su come rimuovere il dispositivo dal Portale aziendale, scegliere uno dei collegamenti seguenti:
@@ -91,14 +88,14 @@ Per informazioni su come reimpostare il dispositivo, scegliere uno dei collegame
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Reimpostare un dispositivo dal sito Web del portale aziendale](reset-your-device-cpwebsite.md)
 
-## Nel Portale aziendale non vengono visualizzati tutti i dispositivi
+## <a name="you-do-not-see-all-of-your-devices-in-the-company-portal"></a>Nel Portale aziendale non vengono visualizzati tutti i dispositivi
 Per essere visibile, un dispositivo deve essere in primo luogo aggiunto al Portale aziendale. Accedere al Portale aziendale come indicato dall'amministratore e seguire la procedura per il dispositivo. Inoltre, non saranno più visualizzati i dispositivi di proprietà e gestiti dall'azienda.
 
-## Per informazioni, contattare l'amministratore IT
+## <a name="if-you-have-questions-contact-your-it-administrator"></a>Per informazioni, contattare l'amministratore IT
 Per assistenza, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

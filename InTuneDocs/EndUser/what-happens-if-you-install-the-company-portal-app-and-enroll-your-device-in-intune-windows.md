@@ -2,10 +2,10 @@
 title: Che cosa avviene quando si installa l&quot;app Portale aziendale e si registra il dispositivo Windows in Intune? | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 
 ---
 
 
-# Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows in Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows in Intune?
 
 Quando si installa l'app Portale aziendale e la si usa per registrare un dispositivo Windows o Windows Phone, si consente all'amministratore IT di gestire il dispositivo per garantire la sicurezza dei dati dell'azienda o dell'istituto di istruzione. Questo argomento descrive cosa avviene per i dispositivi precedenti a Windows 10. Per i dispositivi Windows 10, vedere l'[argomento correlato](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
-## Che cosa avviene a tutti i dispositivi Windows dopo l'iscrizione?
+## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Che cosa avviene a tutti i dispositivi Windows dopo l'iscrizione?
 Mediante la registrazione del dispositivo Windows o Windows Phone in Intune è possibile:
 
 -   Accedere alla rete aziendale e ai file della posta elettronica e di lavoro.
@@ -53,7 +53,7 @@ Quando si registra un dispositivo, vengono concesse all'amministratore IT le aut
 
 -   Impedire lo scatto di foto di dati correlati alla società.
 
-## Che cosa accade a tutti i PC Windows dopo l'iscrizione?
+## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>Che cosa accade a tutti i PC Windows dopo l'iscrizione?
 
 -  Verrà installato software nel computer per consentire all'amministratore IT di gestire il computer e all'utente di accedere alle risorse aziendali, come app e informazioni sul supporto. L'amministratore IT può aggiornare automaticamente il software.
 
@@ -63,7 +63,7 @@ Quando si registra un dispositivo, vengono concesse all'amministratore IT le aut
 
 -  L'amministratore IT può installare app e aggiornamenti nel computer.
 
-## Che cosa accade ogni otto ore dopo la registrazione del dispositivo?
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Che cosa accade ogni otto ore dopo la registrazione del dispositivo?
 Ogni otto ore circa i dispositivi registrati eseguono le operazioni seguenti:
 
 -   Download degli aggiornamenti di criteri o app resi disponibili dall'amministratore IT.
@@ -76,6 +76,6 @@ Per eventuali domande, contattare l'amministratore IT. Per informazioni sul cont
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

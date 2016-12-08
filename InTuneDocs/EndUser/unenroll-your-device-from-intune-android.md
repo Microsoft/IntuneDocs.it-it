@@ -2,10 +2,10 @@
 title: Annullare la registrazione di un dispositivo Android da Intune | Microsoft Intune
 description: Descrive come annullare la registrazione di un dispositivo Android da Intune
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 891cf629725392beae1a6b8fbbb39f2bead8eb90
-ms.openlocfilehash: 17f7841daa79473b3c92cf50962b60b67224e4ee
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 350598f5fef3bcfa3b1421a70039f5af90aa56f9
 
 
 ---
 
 
-# Annullare la registrazione del dispositivo Android da Intune
+# <a name="unenroll-your-android-device-from-intune"></a>Annullare la registrazione del dispositivo Android da Intune
 
 Dopo l'annullamento della registrazione del dispositivo Android in Intune, il dispositivo non potrà più accedere alle risorse aziendali.  Per altre informazioni su cosa accade quando viene annullata la registrazione, vedere [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 
@@ -31,7 +31,7 @@ Per annullare la registrazione del dispositivo da Intune e disinstallare l'app P
 
 1.  Accedere all'app Portale aziendale.
 
-2.  Toccare **DISPOSITIVI PERSONALI** e selezionare il dispositivo di cui annullare la registrazione.
+2.  Toccare **Dispositivi personali** e selezionare il dispositivo di cui annullare la registrazione.
 
     ![Scegliere il dispositivo del quale si vuole annullare la registrazione.](./media/andr-1-my-devices-choose.png)
 
@@ -39,14 +39,14 @@ Per annullare la registrazione del dispositivo da Intune e disinstallare l'app P
 
     ![Toccare l'icona del cestino.](./media/andr-2-tap-trashcan.png)
 
-    Nella pagina di avviso toccare **OK** per annullare la registrazione del dispositivo.
+4.  Nella pagina di avviso toccare **OK** per annullare la registrazione del dispositivo.
 
     ![Rimuovere il dispositivo.](./media/andr-3-warning-about-remove.png)
 
-Serve ancora assistenza? Contattare l'amministratore IT (per le informazioni di contatto, visitare il [sito Web del portale aziendale](http://portal.manage.microsoft.com)) o inviare un messaggio di posta elettronica al team Android di Microsoft all'indirizzo wintunedroidfbk@microsoft.com.
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

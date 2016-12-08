@@ -2,7 +2,7 @@
 title: Registrare il dispositivo Android in Intune | Microsoft Intune
 description: Descrive come registrare un dispositivo Android in Intune
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
@@ -14,18 +14,18 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
+ms.sourcegitcommit: 6dc3173207d1e99e1bd0207f8ea5a5b137b36be1
+ms.openlocfilehash: b87799b0ee8dcf98b82bd8353ca7684ede0d8bc2
 
 
 ---
 
 
-# Registrare il dispositivo Android in Intune
+# <a name="enroll-your-android-device-in-intune"></a>Registrare il dispositivo Android in Intune
 
 Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile registrare il dispositivo Android per poter accedere a posta elettronica, file e altre risorse aziendali. La registrazione dei dispositivi consente al reparto IT di gestire e proteggere le risorse aziendali o dell'istituto di istruzione, offrendo al tempo stesso la possibilità di scegliere il dispositivo più adatto per svolgere il proprio lavoro. Per altre informazioni sulla registrazione, vedere [What happens when I install and Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) (Che cosa succede quando si installa l'app Portale aziendale e si registra il dispositivo?).
 
-Queste istruzioni sono valide per la registrazione di dispositivi Android Samsung Knox e Android nativi, esclusi i dispositivi Samsung Knox. Per sapere se il dispositivo è di tipo Samsung Knox, andare in **Impostazioni** &gt; **Info dispositivo**. Se non viene visualizzata la versione Knox, significa che il dispositivo è un dispositivo Android nativo.
+Queste istruzioni sono valide per la registrazione di dispositivi Android Samsung KNOX e Android "nativi" (non Samsung KNOX). Per sapere se il dispositivo è di tipo Samsung KNOX, andare in **Impostazioni** &gt; **Info dispositivo**. Se non viene visualizzata la versione Knox, significa che il dispositivo è un dispositivo Android nativo.
 
 Prima o dopo la registrazione potrebbe essere necessario scegliere la categoria che descrive meglio come viene usato il dispositivo. Questa categoria consente all'amministratore IT di controllare le app a cui è possibile accedere.
 
@@ -68,7 +68,7 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 10.  Se si usa Android 6.0 o versione successiva, eseguire questo passaggio. In caso contrario, andare al passaggio successivo.
 
     Se l'amministratore IT ha configurato determinati criteri, saranno visualizzati i messaggi seguenti:
-    -   **Consentire a Portale aziendale di effettuare e gestire chiamate telefoniche?**
+    -   **Allow Company Portal to make and manage phone calls? (Consentire a Portale aziendale di effettuare e gestire chiamate telefoniche?)**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
@@ -76,7 +76,7 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
     Se si nega l'accesso, il messaggio sarà di nuovo visualizzato quando si accederà di nuovo al Portale aziendale. È tuttavia possibile disattivare la visualizzazione futura dei messaggi selezionando la casella **Non visualizzare più questo messaggio**. Se si decide successivamente di consentire l'accesso, andare a **Impostazioni** &gt; **App** &gt; **Portale aziendale** &gt; **Autorizzazioni** &gt; **Telefono**, quindi attivare l'autorizzazione.
 
-    -   **Allow Company Portal to access your contacts? (Consenti al Portale aziendale l'accesso ai contatti?)**
+    -   **Allow Company Portal to access your contacts? (Consentire a Portale aziendale di accedere ai contatti?)**
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
@@ -114,6 +114,6 @@ Serve ancora assistenza? Contattare l'amministratore IT (accedere al [sito Web d
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
