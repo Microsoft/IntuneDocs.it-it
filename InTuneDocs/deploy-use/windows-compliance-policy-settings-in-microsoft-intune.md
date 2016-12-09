@@ -2,8 +2,8 @@
 title: "Impostazioni dei criteri di conformità per i dispositivi Windows | Microsoft Intune"
 description: "Questo argomento descrive le regole e le impostazioni che è possibile configurare per i criteri di conformità per i dispositivi Windows."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 8712d822eea2a619abeaf86f7fec9d0eb67c826f
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
 
 
 ---
@@ -28,7 +28,7 @@ Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 > [!div class="op_single_selector"]
 - [Impostazioni dei criteri di conformità per i dispositivi iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Impostazioni dei criteri di conformità per i dispositivi Android](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Impostazioni dei criteri di conformità per i dispositivi Android for Work](afw-compliance-policy-settings-in-microsoft-intune)
+- [Impostazioni dei criteri di conformità per i dispositivi Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Impostazioni dei criteri di conformità per i dispositivi Windows Phone
 Le impostazioni elencate in questa sezione sono supportate in Windows Phone 8.1 e versioni successive.
@@ -151,6 +151,6 @@ Per trovare la versione del sistema operativo da usare per le impostazioni **Ver
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

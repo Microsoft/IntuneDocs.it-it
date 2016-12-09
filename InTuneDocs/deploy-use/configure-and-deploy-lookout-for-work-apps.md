@@ -1,8 +1,8 @@
 ---
 title: Distribuire l&quot;app Lookout for Work | Microsoft Intune
 description: Configurare e distribuire l&quot;app Lookout for Work per Android.
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: 646bd62dcf95b37ce9154e4852612b17ab71f954
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 720fe241e7f1205dbad4b64af5cf7f16a80db23e
 
 
 ---
@@ -40,14 +40,15 @@ Quando si fa clic su **App** nella console Intune, l'elenco includerà a questo 
 
 * **Passaggio 5**: distribuire l'app agli utenti selezionando l'app Lookout for Work e scegliendo **Gestisci distribuzione**.
 
-  È necessario selezionare gli stessi utenti aggiunti tramite l'opzione Enrollment Management (Gestione della registrazione) nella console di Lookout MTP.  Vedere il passaggio 3 nella sezione [Configurare la sottoscrizione con Lookout MTP](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp) per informazioni sull'aggiunta di gruppi di utenti a Lookout MTP.
+  È necessario selezionare gli stessi utenti aggiunti tramite l'opzione Enrollment Management (Gestione della registrazione) nella console di Lookout MTP.  Vedere il passaggio 3 nella sezione [Configurare la sottoscrizione con Lookout MTP](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection) per informazioni sull'aggiunta di gruppi di utenti a Lookout MTP.
+
   >[!IMPORTANT]
   > La procedura guidata per la distribuzione di app di Intune non riconosce i gruppi di utenti di Azure AD e usa invece i gruppi di utenti di Intune. È quindi necessario creare un gruppo di utenti di Intune in base al gruppo di utenti di Azure AD registrato nella console di Lookout MTP, come descritto in [questo](plan-your-user-and-device-groups.md)argomento.
 
 * **Passaggio 6**: scegliere l'opzione **Installazione richiesta** per richiedere l'installazione dell'app Lookout nel dispositivo dell'utente.
 
 
-## <a name="ios-enterprisesigned-version-of-lookout-app"></a>iOS (versione Enterprise dell'app Lookout)
+## <a name="ios-enterprise-signed-version-of-lookout-app"></a>iOS (versione Enterprise dell'app Lookout)
 
 * **Passaggio 1:** verificare che la **gestione iOS** sia impostata nel dispositivo. Per istruzioni su come configurare il dispositivo per la gestione iOS, vedere [Configurare la gestione dei dispositivi iOS e Mac](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
@@ -76,7 +77,8 @@ Quando si fa clic su **App** nella console Intune, l'elenco includerà a questo 
 
 * **Passaggio 6:** **per distribuire l'app agli utenti**, selezionare l'app Lookout for Work e scegliere **Gestisci distribuzione**.
 
-  È necessario selezionare gli stessi utenti aggiunti tramite l'opzione Enrollment Management (Gestione della registrazione) nella console di Lookout.  Per informazioni sull'aggiunta di gruppi di utenti a Lookout MTP, vedere il passaggio 3 nella sezione [Configurare la sottoscrizione con la protezione dalle minacce per il dispositivo di Lookout](set-up-your-subscription-with-lookout-mtp#configure-your-subscription-with-lookout-mtp).
+  È necessario selezionare gli stessi utenti aggiunti tramite l'opzione Enrollment Management (Gestione della registrazione) nella console di Lookout.  Per informazioni sull'aggiunta di gruppi di utenti a Lookout MTP, vedere il passaggio 3 nella sezione [Configurare la sottoscrizione con la protezione dalle minacce per il dispositivo di Lookout](set-up-your-subscription-with-lookout-mtp.md#configure-your-subscription-with-lookout-device-threat-protection).
+
 >[!IMPORTANT]
 > La procedura guidata per la distribuzione dell'app di Intune non riconosce i gruppi utenti di Azure AD e usa i gruppi utenti di Intune. È quindi necessario creare un gruppo utenti di Intune basato sul gruppo utenti di Azure AD registrato nella console di Lookout, come descritto in [questo](plan-your-user-and-device-groups.md) argomento.
 
@@ -98,6 +100,6 @@ Quando l'utente apre Lookout for Work nel dispositivo viene richiesto di attivar
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

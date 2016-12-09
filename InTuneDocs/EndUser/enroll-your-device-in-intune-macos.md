@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 162d176c5f272f5f19ba18cdd07fe815ac1bcce7
-ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
 
 
 ---
@@ -46,7 +46,7 @@ La possibilità di accedere alle app, ai dati e alle risorse dell'organizzazione
  ![Registra il dispositivo macOS](./media/macOS_enroll_003_enroll_popup.png)
 
   > [!NOTE]
-  > Intune deve accedere al computer per assicurarsi che il dispositivo sia sufficientemente sicuro per accedere alle risorse dell'organizzazione. Altre informazioni su [cosa avviene quando si registra il dispositivo in Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios).
+  > Intune deve accedere al computer per assicurarsi che il dispositivo sia sufficientemente sicuro per accedere alle risorse dell'organizzazione. Altre informazioni su [cosa avviene quando si registra il dispositivo in Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
 
 6. Verrà aperta la finestra __Preferenze di sistema__ in cui viene richiesto se si vuole __installare il profilo di gestione__. Fare clic su __Installa__ per procedere oppure su __Mostra profilo__ per visualizzare altri dettagli.
 
@@ -64,6 +64,6 @@ Serve ancora assistenza? Rivolgersi all'amministratore IT. È possibile trovare 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

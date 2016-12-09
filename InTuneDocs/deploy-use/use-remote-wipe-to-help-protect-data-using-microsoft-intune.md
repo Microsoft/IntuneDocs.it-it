@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 È possibile cancellare app e dati non più necessari dai dispositivi gestiti da Intune che vengono reimpiegati o sono andati persi. A tale scopo, Intune offre funzionalità di cancellazione completa e selettiva. Gli utenti possono anche inviare un comando di cancellazione remota dei dati del dispositivo dall'app Portale aziendale di Intune nei dispositivi privati registrati in Intune.
 
   > [!NOTE]
-  > Questo argomento riguarda solo la cancellazione dei dispositivi gestiti con la gestione dei dispositivi mobili di Intune. Anche il [portale di Azure](https://portal.azure.com) può essere usato per [cancellare i dati aziendali dalle app](wipe-managed-company-app-data-with-microsoft-intune.md). È anche possibile [ritirare i computer gestiti con il software client di Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+  > Questo argomento riguarda solo la cancellazione dei dispositivi gestiti con la gestione dei dispositivi mobili di Intune. Anche il [portale di Azure](https://portal.azure.com) può essere usato per [cancellare i dati aziendali dalle app](wipe-managed-company-app-data-with-microsoft-intune.md). È anche possibile [ritirare i computer gestiti con il software client di Intune](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="full-wipe"></a>Cancellazione completa
 
@@ -165,6 +165,6 @@ Questo report mostra anche chi ha eseguito l'azione.
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

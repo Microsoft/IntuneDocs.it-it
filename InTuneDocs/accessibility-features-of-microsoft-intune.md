@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 1c4f44619f025b5a35a089c0970188b989b710e6
+ms.sourcegitcommit: b99c90bfafd65e87e258e1e0ac01691e83581659
+ms.openlocfilehash: 9915f85e6bc2dc20b061618fc8ccc6da8f3cec36
 
 
 ---
 
-# Funzionalità di accessibilità di Microsoft Intune
+# <a name="accessibility-features-of-microsoft-intune"></a>Funzionalità di accessibilità di Microsoft Intune
 Oltre alle funzionalità e agli strumenti di accessibilità disponibili in Microsoft Windows, le seguenti funzionalità contribuiscono a rendere [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] ancor più accessibile per gli utenti disabili:
 
 -   Utilizzo dei tasti di scelta rapida
@@ -28,7 +28,7 @@ Oltre alle funzionalità e agli strumenti di accessibilità disponibili in Micro
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## Utilizzo dei tasti di scelta rapida
+## <a name="using-keyboard-shortcuts"></a>Utilizzo dei tasti di scelta rapida
 
 |Per eseguire questa operazione|Utilizzare questo tasto di scelta rapida|
 |--------------|------------------------------|
@@ -44,11 +44,10 @@ Oltre alle funzionalità e agli strumenti di accessibilità disponibili in Micro
 |Passare al gruppo di applicazioni successivo|Freccia SU|
 |Visualizzare le azioni disponibili per un dispositivo selezionato|Freccia DESTRA|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] I portali sono esplorabili tramite i normali tasti di scelta rapida di Internet Explorer.
+> I portali di [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] sono esplorabili tramite le normali scelte rapide da tastiera di Internet Explorer.
 
 
 
-
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

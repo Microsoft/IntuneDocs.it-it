@@ -2,7 +2,8 @@
 title: Risoluzione dei problemi di accesso condizionale | Microsoft Intune
 description: Operazioni da eseguire quando gli utenti non riescono ad accedere alle risorse usando l&quot;accesso condizionale di Intune.
 keywords: 
-author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
+ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
+ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 
 ---
@@ -79,7 +80,7 @@ Un dispositivo può essere bloccato da accesso condizionale senza che venga invi
 - Controllare la presenza di attività sendemail nei log di Exchange Connector e verificare l'eventuale presenza di errori. Un esempio del comando da cercare è InviaMessaggioPostaElettronica inviato dall'account di notifica a PostaElettronicaUtente.
 - Prima di bloccare il dispositivo, Exchange Connector invia il messaggio di posta elettronica di attivazione. Se il dispositivo è offline, potrebbe non ricevere questo messaggio. Controllare se il client di posta elettronica del dispositivo recupera i messaggi di posta elettronica tramite Push anziché Poll. La perdita del messaggio da parte dell'utente potrebbe infatti dipendere anche da questa impostazione. Passare a Poll per vedere se il dispositivo riceve il messaggio di posta elettronica.
 
-## <a name="noncompliant-device-not-blocked"></a>Dispositivo non conforme non bloccato
+## <a name="non-compliant-device-not-blocked"></a>Dispositivo non conforme non bloccato
 
 Nel caso di un dispositivo che non è conforme ma che continua a disporre dei diritti di accesso, procedere come segue.
 
@@ -158,6 +159,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
