@@ -2,8 +2,8 @@
 title: Eseguire il wrapping delle app iOS con lo strumento di wrapping delle app di Intune | Microsoft Intune
 description: Usare le informazioni in questo argomento per informazioni su come eseguire il wrapping delle app iOS senza modificare il codice dell&quot;app stessa. Preparare le app in modo da applicare i criteri di gestione delle app mobili.
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba4ace8106e83f3579cbaf98dcea8ef240a202a9
-ms.openlocfilehash: d150c97197e11d4a81727dca5ddd8eb1310aa193
+ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
+ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
 
 
 ---
@@ -277,6 +277,6 @@ Quando si usa lo strumento di wrapping delle app, adottare le procedure consigli
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

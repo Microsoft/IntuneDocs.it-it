@@ -13,8 +13,8 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: ce460c1b87b4759dcdeed061c2342b68dd491820
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 3141d4b2ad1a21e2ac5ba7b6cafb74f567d07f7a
 
 
 ---
@@ -33,11 +33,11 @@ L'amministratore di Intune può abilitare la registrazione e la gestione per i d
 ## <a name="company-portal-app-enrollment"></a>Registrare l' app del portale aziendale
 È possibile consentire agli utenti di installare e registrare i propri dispositivi tramite l'app Portale aziendale di Intune. Se si creano record CNAME DNS, gli utenti potranno connettersi e registrarsi in Intune senza immettere un nome server.
 
-1.  **Configurare Intune**<br>Se non lo si è già fatto, preparare la gestione di dispositivi mobili [impostando l'autorità di gestione di dispositivi mobili (MDM, Mobile Device Management)](prerequisites-for-enrollment.md#set-mobile-device-management-authority), ad esempio **Microsoft Intune**, e configurando MDM.
+1.  **Configurare Intune**<br>Se non lo si è già fatto, preparare la gestione di dispositivi mobili [impostando l'autorità di gestione di dispositivi mobili (MDM, Mobile Device Management)](prerequisites-for-enrollment.md#step-2-set-mdm-authority), ad esempio **Microsoft Intune**, e configurando MDM.
 
 2.  **Creare record CNAME** (facoltativo)<br>Creare record di risorse DNS **CNAME** per il dominio aziendale. Ad esempio, se il sito Web aziendale è contoso.com, si creerà un CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
 
-    Anche se la creazione di record CNAME DNS è facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record CNAME per la registrazione, agli utenti viene richiesto di immettere manualmente il nome del server MDM https://manage.microsoft.com. 
+    Anche se la creazione di record CNAME DNS è facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record CNAME per la registrazione, agli utenti viene richiesto di immettere manualmente il nome del server MDM https://manage.microsoft.com.
 
     Se si dispone di un CNAME in DNS che reindirizza EnterpriseEnrollment.contoso.com a manage.microsoft.com, si consiglia di sostituirlo con un CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com. Questa modifica è consigliata, perché l'endpoint manage.microsoft.com è deprecato per le registrazioni in una versione futura.
 
@@ -64,7 +64,7 @@ L'amministratore di Intune può abilitare la registrazione e la gestione per i d
 
 5.  **Indicare agli utenti come registrare i propri dispositivi per accedere alle risorse aziendali.**
 
-    Per istruzioni sulla registrazione da parte dell'utente finale, vedere [Registrare il dispositivo Windows in Intune](../enduser/enroll-your-device-in-intune-windows.md). È inoltre possibile indirizzare gli utenti a [Quali sono i dettagli visibili all'amministratore IT quando si registra il dispositivo in Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+    Per istruzioni sulla registrazione da parte dell'utente finale, vedere [Registrare il dispositivo Windows in Intune](../enduser/enroll-your-device-in-intune-windows.md). È inoltre possibile indirizzare gli utenti a [Quali sono i dettagli visibili all'amministratore IT quando si registra il dispositivo in Intune?](../enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
     Per informazioni su altre attività dell'utente finale, vedere gli articoli seguenti:
     - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -74,6 +74,6 @@ Non è necessario alcun intervento aggiuntivo a meno che non venga distribuito i
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

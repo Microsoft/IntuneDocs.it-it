@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
 
 ---
@@ -29,7 +29,7 @@ Sono supportate solo le versioni seguenti. Se il dispositivo non è elencato, la
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8-1)
+* [Windows Phone 8.1](#windows-phone-81)
 
 
 ## <a name="windows-10-mobile"></a>Windows 10 Mobile
@@ -54,7 +54,7 @@ Sincronizzare manualmente il dispositivo Windows 10 Mobile per accelerare un'ins
     Nella parte superiore dello schermo viene visualizzato il messaggio "We're synching your account" (Sincronizzazione account in corso). Il pulsante **Sincronizza** resta disattivato fino al completamento della sincronizzazione del dispositivo.
 
 ## <a name="windows-10-desktop"></a>Windows 10 Desktop
-Esistono più versioni di Windows 10, quindi esistono sono due procedure distinte. Per determinare quale procedura eseguire, esaminare gli screenshot e quindi eseguire la procedura con un aspetto simile a quanto visualizzato sul dispositivo. 
+Esistono più versioni di Windows 10, quindi esistono sono due procedure distinte. Per determinare quale procedura eseguire, esaminare gli screenshot e quindi eseguire la procedura con un aspetto simile a quanto visualizzato sul dispositivo.
 
 1. Scegliere **Start** e quindi scegliere **Impostazioni**.
 
@@ -72,7 +72,7 @@ Esistono più versioni di Windows 10, quindi esistono sono due procedure distint
 
     Se si visualizza questa schermata, in cui compare "Accesso società", seguire i passaggi in [Passaggi da seguire se si visualizza Accesso società](#steps-to-follow-if-you-see-your-account).
 
-    ![Scelta di Accesso società come tipo di account](./media/win10pc-sync-3-work-access.png) 
+    ![Scelta di Accesso società come tipo di account](./media/win10pc-sync-3-work-access.png)
 
 ### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Passaggi da seguire se si visualizza Accedi all'azienda o all'istituto di istruzione
 
@@ -80,9 +80,9 @@ Esistono più versioni di Windows 10, quindi esistono sono due procedure distint
 
     ![Scegliere Accedi all'azienda o all'istituto di istruzione.](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. Scegliere l'account aziendale o dell'istituto di istruzione. A seconda della configurazione eseguita dall'amministratore IT, è possibile che vengano visualizzati due account simili all'esempio illustrato di seguito. Accanto a un account è visibile l'icona Sincronia file e accanto all'altro è presente il logo Microsoft. 
+2. Scegliere l'account aziendale o dell'istituto di istruzione. A seconda della configurazione eseguita dall'amministratore IT, è possibile che vengano visualizzati due account simili all'esempio illustrato di seguito. Accanto a un account è visibile l'icona Sincronia file e accanto all'altro è presente il logo Microsoft.
 
-    - Se è visualizzato l'account con Sincronia file, selezionarlo e cercare il pulsante **Informazioni** sotto di esso. 
+    - Se è visualizzato l'account con Sincronia file, selezionarlo e cercare il pulsante **Informazioni** sotto di esso.
     - Se è visualizzato solo l'account con il logo Microsoft, selezionarlo e cercare il pulsante **Informazioni** sotto di esso.
 
     ![Scegliere il nome dell'account accanto a Sincronia file o al logo Microsoft](./media/win10pc-rs1-sync-info-button.png)
@@ -94,7 +94,7 @@ Esistono più versioni di Windows 10, quindi esistono sono due procedure distint
 4. Scegliere il pulsante **Sincronizza**. Il dispositivo verrà sincronizzato con Intune.
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>Passaggi da seguire se si visualizza Accesso società
-    
+
 1. Nella pagina **Account** scegliere **Accesso società**.
 
     ![Scelta di Accesso società come tipo di account](./media/win10pc-sync-3-work-access.png)
@@ -130,6 +130,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
