@@ -2,8 +2,8 @@
 title: Eseguire la disposizione testo delle app Android con lo strumento per la disposizione testo per app | Microsoft Intune
 description: Usare le informazioni in questo articolo per scoprire come eseguire il wrapping delle app Android senza doverne modificare il codice. Preparare le app in modo da applicare i criteri di gestione delle app mobili.
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 7c61ad6a3122793ddd66547b7040f978705b540c
+ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
+ms.openlocfilehash: e8ca141b31104fb5759d9796f19b618debe74752
 
 
 ---
@@ -140,6 +140,6 @@ Per evitare potenziali attacchi di spoofing, divulgazione di informazioni e l'el
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

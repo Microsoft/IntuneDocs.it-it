@@ -2,8 +2,8 @@
 title: Proteggere le app line-of-business in dispositivi non registrati | Microsoft Intune
 description: Questo argomento illustra come preparare le app line-of-business in modo da applicare i criteri di gestione delle applicazioni mobili che consentono di evitare la perdita di dati.
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
 
 
 ---
@@ -29,9 +29,9 @@ Questo argomento elenca i passaggi per l'applicazione dei criteri MAM alle app a
 
 ##  <a name="step-1-prepare-the-app"></a>Passaggio 1: Preparare l'app.
 
-Prima di applicare i criteri MAM a un'app è necessario eseguire il wrapping di quest'ultima con lo strumento di wrapping delle app di Microsoft Intune per [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) e [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool). In alternativa, usare [Intune App SDK](/../develop/intune-app-sdk) per integrare manualmente le funzionalità di Intune per la protezione delle app.
+Prima di applicare i criteri MAM a un'app è necessario eseguire il wrapping di quest'ultima con lo strumento di wrapping delle app di Microsoft Intune per [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md). In alternativa, usare [Intune App SDK](../develop/intune-app-sdk.md) per integrare manualmente le funzionalità di Intune per la protezione delle app.
 
-Per informazioni sull'uso dello strumento di wrapping delle app rispetto a Intune App SDK, vedere [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
+Per informazioni sull'uso dello strumento di wrapping delle app rispetto a Intune App SDK, vedere [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 ## <a name="step-2-add-the-app"></a>Passaggio 2: Aggiungere l'app.
 
@@ -81,6 +81,6 @@ Per la modifica di dettagli dell'app come il nome o l'identificatore bundle è n
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

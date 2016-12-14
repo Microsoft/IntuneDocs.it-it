@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ Per i dispositivi da ridestinare, è possibile usare anche la [cancellazione com
 8.  Scegliere i dispositivi appropriati e quindi scegliere **Elimina dispositivo**. Il dispositivo verrà eliminato alla successiva sincronizzazione con Active Directory, che avviene, in genere, entro quattro ore. Dopo la sincronizzazione, il dispositivo viene rimosso dalla gestione. Il dispositivo viene scalato dal limite di dispositivi associato all'utente.
 
 ## <a name="retire-managed-computers"></a>Ritirare i computer gestiti
-I computer gestiti dal software client di Intune possono essere rimossi dalla gestione dalla console di amministrazione di Intune. L'operazione disinstalla anche il software client ed elimina i criteri di Intune dal computer. Vedere le informazioni sul [ritiro dei computer gestiti con il software client di Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+I computer gestiti dal software client di Intune possono essere rimossi dalla gestione dalla console di amministrazione di Intune. L'operazione disinstalla anche il software client ed elimina i criteri di Intune dal computer. Vedere le informazioni sul [ritiro dei computer gestiti con il software client di Intune](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="block-access-a-device"></a>Bloccare l'accesso a un dispositivo
 Se un dispositivo viene smarrito o quando è necessario ritirare un dispositivo perché un dipendente lascia l'azienda senza restituire hardware di proprietà di quest'ultima, è anche possibile [reimpostare il passcode e bloccare in remoto](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) il dispositivo. In tal modo si impedirà un uso improprio delle informazioni aziendali anche se si dovrà registrare il dispositivo come perdita.
@@ -70,6 +70,6 @@ In alcuni casi è il dispositivo stesso ad aver raggiunto il termine della vita 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 4563673f1c38cbe29e7cf27e94e8b32411c6c089
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 1bb9969d4ac8a7a03c599866857b7236408fdcef
 
 
 ---
@@ -58,10 +58,10 @@ Quando si registra il dispositivo Windows in Intune, si concedono all'amministra
 
 -   Produttore
 
-Per altre informazioni, vedere [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows) (Cosa accade quando si installa l'app Portale aziendale e si registra il dispositivo in Intune)
+Per altre informazioni, vedere [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (Cosa accade quando si installa l'app Portale aziendale e si registra il dispositivo in Intune)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
