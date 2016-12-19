@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
+ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 
 ---
@@ -86,7 +86,7 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 >
 > Un account utente che viene aggiunto al gruppo Manager di registrazione dispositivi non sarà in grado di completare la registrazione quando vengono applicati i criteri di accesso condizionale per l'accesso utente specifico.
 
-### <a name="company-portal-temporarily-unavailable"></a>Portale aziendale temporaneamente non disponibile
+### <a name="company-portal-emporarily-unavailable"></a>Portale aziendale temporaneamente non disponibile
 **Problema**: nel dispositivo viene visualizzato l'errore **Portale aziendale temporaneamente non disponibile**.
 
 **Risoluzione:**
@@ -214,23 +214,40 @@ Se la soluzione 2 non funziona, chiedere agli utenti di eseguire questa procedur
 
 ### <a name="android-certificate-issues"></a>Problemi relativi ai certificati di Android
 
-**Problema**: l'utente riceve il messaggio seguente nel dispositivo: *Non è possibile accedere perché un certificato necessario non è presente nel dispositivo.*
+**Problema**: gli utenti ricevono il messaggio seguente nel dispositivo: *Non è possibile accedere perché un certificato necessario non è presente nel dispositivo.*
 
-**Risoluzione**:
+**Soluzione 1**:
 
-- L'utente può recuperare il certificato mancante seguendo [queste istruzioni](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
-- Se l'utente non è in grado di recuperare il certificato, è possibile che manchino i certificati intermedi nel server ADFS. I certificati intermedi sono richiesti da Android per considerare attendibile il server.
+Chiedere agli utenti di seguire le istruzioni in [Manca un certificato necessario per il dispositivo](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se l'errore si ripete dopo che gli utenti seguono le istruzioni, provare la soluzione 2.
 
-È possibile importare i certificati nell'archivio intermedio nel server ADFS o nei proxy come indicato di seguito:
+**Soluzione 2**:
 
-1.  Nel server ADFS avviare **Microsoft Management Console** e aggiungere lo snap-in Certificati per l'**account Computer**.
-5.  Trovare il certificato usato dal servizio ADFS e visualizzare il relativo certificato padre.
-6.  Copiare il certificato padre e incollarlo in **Computer\Autorità di certificazione intermedie\Certificati**.
-7.  Copiare i certificati ADFS, ADFS Decrypting e ADFS Signing, e incollarli nell'archivio personale per il servizio ADFS.
-8.  Riavviare i server ADFS.
+Se gli utenti vedono ancora l'errore di certificato mancante dopo aver immesso le credenziali aziendali ed essere stati reindirizzati all'esperienza di accesso federato, potrebbe mancare un certificato intermedio nel server Active Directory Federation Services (ADFS).
 
+L'errore di certificato si verifica perché i dispositivi Android richiedono l'inclusione dei certificati intermedi in un [messaggio hello del Server SSL](https://technet.microsoft.com/library/cc783349.aspx), ma attualmente l'installazione predefinita di un server ADFS o del server proxy ADFS invia solo il certificato SSL del servizio ADFS nella risposta hello del server SSL a un messaggio hello del client SSL.
+
+Per risolvere il problema, importare i certificati nei certificati personali del computer sul server ADFS o proxy, come indicato di seguito:
+
+1.  Nei server ADFS e proxy, avviare la console Gestione certificati per il computer locale facendo clic con il pulsante destro del mouse **Start** scegliendo **Esegui** e digitando **certlm.msc**.
+2.  Espandere **Personale** e selezionare **Certificati**.
+3.  Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
+4.  Selezionare la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
+5.  Per ogni certificato padre, selezionare **Visualizza certificato**.
+6.  Selezionare la scheda **Dettagli** e fare clic su **Copia su file...**.
+7.  Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato nel percorso file desiderato.
+8.  Importare i certificati padre che erano stati esportati al passaggio 3 in Computer locale\Personale\Certificati facendo clic su **Certificati**, selezionando **Tutte le attività** > **Importa** e quindi seguire la procedura guidata per importare il certificato (o i certificati).
+9.  Riavviare i server ADFS.
+10. Ripetere i passaggi precedenti in tutti i server ADFS e proxy.
 L'utente può ora accedere al Portale aziendale nel dispositivo Android.
 
+**Per convalidare la corretta installazione del certificato**:
+
+I passaggi seguenti descrivono solo uno dei numerosi metodi e strumenti che è possibile usare per convalidare la corretta installazione del certificato.
+
+1. Andare allo [strumento Digicert gratuito](ttps://www.digicert.com/help/).
+2. Immettere il nome di dominio completo del server ADFS (ad esempio, sts.contoso.com) e selezionare **CHECK SERVER**.
+
+Se il certificato del server è installato correttamente, nei risultati vengono visualizzati tutti i segni di spunta. Se si verifica il problema sopra riportato, viene visualizzata una X rossa nelle sezioni "Certificate Name Matches" e "SSL Certificate is correctly Installed" del report.
 
 
 ## <a name="ios-issues"></a>Problemi di iOS
@@ -302,7 +319,7 @@ L'utente può ora accedere al Portale aziendale nel dispositivo Android.
 ### <a name="other-ios-enrollment-errors"></a>Altri errori di registrazione di iOS
 Nella sezione relativa agli [errori che si verificano durante la registrazione del dispositivo in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) della documentazione dei dispositivi per gli utenti viene specificato un elenco di errori di registrazione di iOS.
 
-## <a name="pc-issues"></a>Problemi relativi al PC
+## <a name="pc--issues"></a>Problemi relativi al PC
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>The machine is already enrolled (Il computer è già registrato) - Errore hr 0x8007064c
 **Problema:** la registrazione ha esito negativo e genera l'errore **The machine is already enrolled** (Il computer è già registrato). Il log di registrazione visualizza l'errore **hr 0x8007064c**.
@@ -356,6 +373,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

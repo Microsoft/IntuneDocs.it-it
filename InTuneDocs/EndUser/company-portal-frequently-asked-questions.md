@@ -1,11 +1,11 @@
 ---
-title: Informazioni sul portale aziendale | Microsoft Intune
+title: "Che cos&quot;è il Portale aziendale? | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: adf7fc0b7ddeb7fa8361d37efd0fdd5c714a72e4
+ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
+ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
 
 
 ---
@@ -42,7 +42,7 @@ Per scoprire quali operazioni è possibile eseguire nel sito Web del portale azi
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
-- [iOS e Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [iOS e macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Windows](using-your-windows-device-with-intune.md)
 - [Sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
@@ -53,12 +53,12 @@ Per informazioni su ciò che l'amministratore IT può e non può visualizzare ne
 
 > [!div class="op_single_selector"]
 - [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [iOS e Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [iOS e macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Quali tipi di computer o dispositivi è possibile aggiungere al Portale aziendale?
 
--   Dispositivi iPhone, iPad e Mac OS X
+-   Dispositivi iPhone, iPad e macOS
 
 -   Dispositivi mobili Android
 
@@ -75,7 +75,7 @@ Quando si *rimuove* un computer o dispositivo, si annulla la registrazione del d
 
 > [!div class="op_single_selector"]
 - [Android](unenroll-your-device-from-intune-android.md)
-- [iOS e Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [iOS e macOS](unenroll-your-device-from-intune-ios.md)
 - [Windows](unenroll-your-device-from-intune-windows.md)
 
 Quando si *reimposta* un computer o un dispositivo, il Portale aziendale tenta di reimpostare le impostazioni predefinite del dispositivo stesso. La reimpostazione del dispositivo rimuove tutti i dati personali e aziendali dal dispositivo stesso. Se si smarrisce il dispositivo, è possibile reimpostarlo anche in remoto dal sito Web Portale aziendale.
@@ -84,7 +84,7 @@ Per informazioni su come reimpostare il dispositivo, scegliere uno dei collegame
 
 > [!div class="op_single_selector"]
 - [Android](reset-erase-your-lost-or-stolen-device-android.md)
-- [iOS e Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [iOS e macOS](reset-erase-your-lost-or-stolen-device-ios.md)
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Reimpostare un dispositivo dal sito Web del portale aziendale](reset-your-device-cpwebsite.md)
 
@@ -96,6 +96,6 @@ Per assistenza, contattare l'amministratore IT. Per informazioni sul contatto ve
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

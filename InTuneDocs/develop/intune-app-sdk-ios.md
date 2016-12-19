@@ -1,21 +1,21 @@
 ---
-title: Guida per gli sviluppatori di Microsoft Intune App SDK per iOS | Microsoft Intune
+title: Guida per gli sviluppatori di Microsoft Intune App SDK per iOS | Documentazione Microsoft
 description: 
 keywords: 
-author: Msmbaldwin
+author: mtillman
 manager: angrobe
-ms.author: oydang
-ms.date: 09/08/2016
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01b927178ad5fb1019781863e243133861887148
-ms.openlocfilehash: eb14be40a94513a21dbd24a62e42afb7a3e57381
+ms.sourcegitcommit: b55147e2be338bd46661695134fd0f0de105bb72
+ms.openlocfilehash: b8a723fce088c1d61bddb5f2479da59a4b5c3771
 
 
 ---
@@ -32,6 +32,8 @@ Microsoft Intune App SDK per iOS consente di integrare i criteri di protezione d
 * È necessario un computer Mac OS che esegue OS X 10.8.5 o versioni successive e con il set di strumenti XCode versione 5 o successive.
 
 * Rivedere le [Condizioni di licenza di Intune App SDK per iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Stampare e conservare una copia delle condizioni di licenza. Scaricando e usando Intune App SDK per iOS, l'utente accetta tali condizioni di licenza.  Qualora l'utente non le accetti, non potrà usare il software.
+
+* Scaricare i file per Intune App SDK per iOS in [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios).
 
 ## <a name="whats-in-the-sdk"></a>Contenuto dell'SDK
 
@@ -322,9 +324,9 @@ Se la registrazione ha esito negativo, l'app deve prendere in considerazione la 
 
 Dopo aver chiamato l'API, l'app può continuare a funzionare normalmente. Se la registrazione riesce, l'SDK notificherà all'utente che è necessario un riavvio dell'app.
 
-## <a name="debug-information"></a>Informazioni di debug
+## <a name="status-result-and-debug-notifications"></a>Notifiche di stato, risultato e debug
 
-L'app può ricevere notifiche di debug sulle richieste seguenti al servizio MAM di Intune:
+L'app può ricevere notifiche di stato, risultato e debug sulle richieste seguenti al servizio MAM di Intune:
 
  - Richieste di registrazione
  - Richieste di aggiornamento dei criteri
@@ -365,7 +367,7 @@ Questi metodi delegato restituiscono un oggetto `IntuneMAMEnrollmentStatus` che 
 
 Questo oggetto viene definito in Headers/IntuneMAMEnrollmentStatus.h con gli specifici codici di stato che possono essere restituiti.
 
-È importante notare che la logica di business delle app non deve basarsi su queste notifiche. L'idea è che l'app possa inviare queste informazioni a un servizio di telemetria a scopo di debug o di monitoraggio.
+
 
 
 ## <a name="sample-code"></a>Codice di esempio
@@ -637,7 +639,7 @@ Sì. L'amministratore IT può inviare un comando di cancellazione selettiva all'
 
 ## <a name="submit-your-app-to-the-app-store"></a>Inviare l'app all'App Store
 
-Sia la libreria statica che le build del framework di Intune App SDK sono file binari universali. Ciò significa che hanno un codice per tutte le architetture del dispositivo e del simulatore. Apple rifiuterà le app inviate all'App Store se contengono codice del simulatore. Durante la compilazione con la libreria statica per le build solo dispositivo, il linker rimuoverà automaticamente il codice del simulatore.
+Sia la libreria statica che le build del framework di Intune App SDK sono file binari universali. Ciò significa che hanno un codice per tutte le architetture del dispositivo e del simulatore. Apple rifiuterà le app inviate all'App Store se contengono codice del simulatore. Durante la compilazione con la libreria statica per le build solo dispositivo, il linker rimuoverà automaticamente il codice del simulatore. Seguire la procedura seguente per rimuovere tutto il codice simulatore prima di caricare l'app in App Store.
 
 1. Assicurarsi che `IntuneMAM.framework` sia presente nel desktop.
 
@@ -654,6 +656,6 @@ Sia la libreria statica che le build del framework di Intune App SDK sono file b
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
