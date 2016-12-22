@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 52633b881b0fb4c22848e8e408de7cd183db12df
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
 
 # <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>Viene richiesto di identificare il dispositivo durante il tentativo di registrazione
 
-Se si sta provando a registrare un dispositivo iOS o Mac OS X in Intune e viene visualizzata una schermata che richiede di identificare il dispositivo, significa che almeno uno dei dispositivi è già stato registrato e assegnato al proprio account con un metodo diverso dall'app Portale aziendale. Per il corretto funzionamento dell'app Portale aziendale, è necessario indicare se il dispositivo in uso è già stato registrato in Intune.
+Se si sta provando a registrare un dispositivo iOS o macOS in Intune e viene visualizzata una schermata che richiede di identificare il dispositivo, significa che almeno uno dei dispositivi è già stato registrato e assegnato al proprio account con un metodo diverso dall'app Portale aziendale. Per il corretto funzionamento dell'app Portale aziendale, è necessario indicare se il dispositivo in uso è già stato registrato in Intune.
 
 1. Toccare il dispositivo se è presente nell'elenco. Se il dispositivo non è presente nell'elenco, toccare **Nuovo dispositivo**.
 2. Toccare **Continua**.
@@ -34,6 +34,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

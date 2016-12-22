@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
+ms.sourcegitcommit: 06da6823465521b5784188123aab3544fef9fc2e
+ms.openlocfilehash: 4c58060bad8b269394e577df5bb3ccd50b8fa97b
 
 
 ---
 
+# <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Il dispositivo Android è rooted, quindi non è possibile connettersi
 
-# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>Il dispositivo Android è rooted e non è possibile connettersi
+Si è stati indirizzati qui perché si è visto un messaggio che informa che il dispositivo è stato _rooted_.
 
-Quando il dispositivo Android è rooted, significa che è stato modificato per abilitare alcune funzionalità che potrebbero compromettere la sicurezza e le risorse aziendali. Se viene visualizzato questo messaggio, non sarà possibile accedere alle risorse aziendali finché non viene risolto il problema.
+Se un dispositivo Android è stato "rooted", significa che alcune parti del software del dispositivo sono state modificate in modo da abilitare le funzionalità che altrimenti non sarebbero presenti. Queste modifiche possono spesso compromettere l'accesso sicuro alle risorse aziendali, ad esempio posta elettronica e documenti. Non sarà quindi possibile usare i dispositivi rooted per accedere a queste risorse finché non viene risolto il problema.  
 
-Se si ritiene di non aver deliberatamente eseguito il rooting del dispositivo, esaminare i motivi seguenti a causa dei quali il dispositivo può diventare rooted:
+Esistono un paio di modi più comuni in cui il dispositivo potrebbe essere diventato rooted:
 
-- È possibile che sul dispositivo sia stata installata un'app che il software di rilevamento radice ritiene rappresenti un rischio per la sicurezza. Se viene visualizzato questo messaggio dopo l'installazione di un'app, provare a disinstallare l'app.
+- È possibile che sul dispositivo sia stata installata un'app che il software di rilevamento radice ritiene rappresenti un rischio per la sicurezza. Se viene visualizzato questo messaggio immediatamente dopo l'installazione di un'app, provare a disinstallarla.
 
-- È possibile che il produttore del dispositivo abbia installato un prodotto che il software di rilevamento radice ritiene rappresenti un rischio per la sicurezza. Per assistenza, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+- È possibile che il produttore del dispositivo abbia installato un prodotto che il software di rilevamento radice ritiene rappresenti un rischio per la sicurezza. In questo caso, sarà necessario contattare l'amministratore IT per assistenza. Per informazioni sul contatto passare al [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
+Se è stato l'utente a rendere rooted il dispositivo, sarà necessario invertire il processo e ripristinare lo stato unrooted del dispositivo.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
