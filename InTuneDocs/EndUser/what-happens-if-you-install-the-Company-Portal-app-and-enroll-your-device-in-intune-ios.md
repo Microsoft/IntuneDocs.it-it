@@ -1,5 +1,5 @@
 ---
-title: Che cosa avviene quando si installa l&quot;app Portale aziendale e si registra il dispositivo iOS o Mac OS X in Intune? | Microsoft Intune
+title: Che cosa avviene quando si installa l&quot;app Portale aziendale e si registra il dispositivo iOS o macOS in Intune? | Microsoft Intune
 description: 
 keywords: 
 author: barlanmsft
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
 
 
 ---
 
 
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo iOS o Mac OS X in Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo iOS o macOS in Intune?
 
-Quando si installa l'app Portale aziendale e si registra il dispositivo iOS o Mac OS X in Intune, è possibile usare tale app per:
+Quando si installa l'app Portale aziendale e si registra il dispositivo iOS o macOS in Intune, è possibile usare tale app per:
 
 -   Accedere alla rete aziendale e ai file della posta elettronica e di lavoro.
 
@@ -96,6 +96,6 @@ Per eventuali domande, contattare l'amministratore IT. Per informazioni sul cont
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

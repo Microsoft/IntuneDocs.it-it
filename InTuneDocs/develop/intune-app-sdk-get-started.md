@@ -1,21 +1,21 @@
 ---
-title: Introduzione a Microsoft Intune App SDK | Microsoft Intune
+title: Introduzione a Microsoft Intune App SDK | Documentazione Microsoft
 description: 
 keywords: 
-author: Msmbaldwin
-manager: jeffgilb
+author: mtillman
+manager: angrobe
 ms.author: oydang
-ms.date: 09/08/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 7372cdd1c1001d621ba8374284e814951f55ef93
 
 
 ---
@@ -85,11 +85,11 @@ Per integrare Intune App SDK nell'app per Android, vedere:
 
 Per compilare app Cordova con il plug-in Cordova per Intune App SDK, è necessario disporre di quanto segue:
 
-* **[Guida del plug-in Cordova per Intune App SDK](intune-app-sdk-cordova)**: questo documento fornisce informazioni per compilare app per iOS e Android usando Cordova per la gestione delle applicazioni per dispositivi mobili di Intune.
+* **[Guida del plug-in Cordova per Intune App SDK](intune-app-sdk-cordova.md)**: questo documento fornisce informazioni per compilare app per iOS e Android usando Cordova per la gestione delle applicazioni per dispositivi mobili di Intune.
 
 Per compilare app Xamarin con il componente Xamarin per Intune App SDK, è necessario disporre di quanto segue:
 
-* **[Guida del componente Xamarin per Intune App SDK](intune-app-sdk-xamarin)**: questo documento fornisce informazioni per compilare app per iOS e Android usando Cordova per la gestione delle applicazioni per dispositivi mobili di Intune.
+* **[Guida del componente Xamarin per Intune App SDK](intune-app-sdk-xamarin.md)**: questo documento fornisce informazioni per compilare app per iOS e Android usando Cordova per la gestione delle applicazioni per dispositivi mobili di Intune.
 
 
 
@@ -118,6 +118,6 @@ Dopo aver completato i passaggi necessari per integrare l'app per iOS o Android 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

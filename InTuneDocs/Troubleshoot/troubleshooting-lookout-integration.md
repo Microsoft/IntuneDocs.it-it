@@ -1,11 +1,11 @@
 ---
-title: Risolvere i problemi di integrazione di Lookout | Microsoft Intune
+title: Risolvere i problemi di integrazione di Lookout | Documentazione Microsoft
 description: Questo argomento descrive la risoluzione dei problemi che si verificano comunemente con l&quot;integrazione di Lookout
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
-ms.openlocfilehash: aa29f702803d657f783ff0dfc6ea66981484c569
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: 416f200bdb72bae98897cb8d279dbdb767757da9
 
 
 ---
@@ -39,7 +39,7 @@ L'errore seguente può essere visualizzato quando l'utente amministratore global
 
 ![screenshot della schermata di accesso a Lookout che mostra l'errore di accesso](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-Per risolvere questo problema, l'utente amministratore globale deve accedere a https://aad.lookout.com/les?action=consent e accettare la richiesta per avviare la configurazione. È possibile trovare informazioni più dettagliate nell'argomento [Configurare la sottoscrizione con Lookout MTP](set-up-your-subscription-with-lookout-mtp.md)
+Per risolvere questo problema, l'utente amministratore globale deve accedere a https://aad.lookout.com/les?action=consent e accettare la richiesta per avviare la configurazione. È possibile trovare informazioni più dettagliate nell'argomento [Configurare la sottoscrizione con Lookout MTP](../deploy-use/set-up-your-subscription-with-lookout-mtp.md)
 
 ## <a name="troubleshoot-device-status-issues"></a>Risolvere i problemi relativi allo stato del dispositivo
 
@@ -90,6 +90,6 @@ Fino a quando il nuovo utente è incluso in uno dei gruppi di registrazione spec
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
