@@ -21,6 +21,8 @@ ms.openlocfilehash: 080d8f4fd4b6e1b53df860f4319b1c199d504c06
 
 # <a name="validating-your-mobile-application-management-setup"></a>Convalidare la configurazione dei criteri di gestione delle applicazioni mobili
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Questo argomento fornisce informazioni sulla verifica di eventuali problemi dopo la configurazione dei criteri di gestione delle applicazioni mobili (MAM). Queste indicazioni si applicano ai criteri MAM nel portale di Azure.
 
 ### <a name="checking-for-symptoms"></a>Verifica dei sintomi

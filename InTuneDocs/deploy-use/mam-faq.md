@@ -1,5 +1,7 @@
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Questo articolo fornisce risposte ad alcune domande frequenti sulla gestione di applicazioni mobili (MAM) di Intune e sulla protezione delle app di Intune.
 
 ## <a name="mam-basics"></a>Informazioni di base su MAM
