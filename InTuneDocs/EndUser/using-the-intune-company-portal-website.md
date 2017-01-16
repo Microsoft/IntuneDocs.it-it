@@ -1,5 +1,5 @@
 ---
-title: Uso del sito Web del Portale aziendale di Intune | Microsoft Intune
+title: Uso del sito Web del portale aziendale di Intune | Documentazione Microsoft
 description: "Descrive il sito Web del portale aziendale e fornisce i collegamenti alle procedure per le attività che possono eseguire gli utenti finali nel sito Web"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
+searchScope:
+- Company Portal
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
-ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
 
 
 ---
@@ -46,11 +48,11 @@ Dal sito Web del portale aziendale gli utenti possono eseguire queste attività:
 Nel **sito Web del portale aziendale** gli utenti finali possono eseguire la maggior parte delle attività eseguibili usando l'**app Portale aziendale** installata nel dispositivo. Nelle pagine seguenti sono disponibili collegamenti a tutte le attività che gli utenti finali possono eseguire nei loro dispositivi:
 
 - [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
-- [Uso del dispositivo iOS o macOS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Uso del dispositivo iOS o macOS con Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
