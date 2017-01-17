@@ -1,5 +1,5 @@
 ---
-title: "Impostazioni dei criteri di conformità per i dispositivi Android | Microsoft Intune"
+title: "Impostazioni dei criteri di conformità per i dispositivi Android | Documentazione Microsoft"
 description: "Questo argomento descrive le impostazioni dei criteri di conformità per i dispositivi Android."
 keywords: 
 author: andredm7
@@ -14,14 +14,16 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1c4721172d36f4f9b2b149f0da96e65bc65d9484
 
 
 ---
 
 
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Impostazioni dei criteri di conformità per i dispositivi Android in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Le impostazioni dei criteri descritte in questo argomento si applicano ai dispositivi che eseguono Android 4.0 e versioni successive oppure Samsung KNOX 4.0 e versioni successive.
 

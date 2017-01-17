@@ -1,5 +1,5 @@
 ---
-title: Posta elettronica aziendale con i profili di posta elettronica | Microsoft Intune
+title: Accedere alla posta elettronica aziendale con i profili di posta elettronica | Documentazione Microsoft
 description: "È possibile usare le impostazioni del profilo di posta elettronica per configurare le impostazioni di accesso alla posta elettronica per client di posta elettronica specifici sui dispositivi mobili."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
-ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
 
 
 ---
 
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -138,6 +140,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

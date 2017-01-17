@@ -1,5 +1,5 @@
 ---
-title: Risolvere i problemi di registrazione dei dispositivi Windows 10 | Microsoft Intune
+title: Risolvere i problemi di registrazione dei dispositivi Windows 10 | Documentazione Microsoft
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: ecd84b62d34e22a72da87995ff0d62dad5e5a9ed
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: b81465ae9ae22cea347a3e052b70ac3b2be465c5
 
 
 ---
@@ -58,6 +60,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

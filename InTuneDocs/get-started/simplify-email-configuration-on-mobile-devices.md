@@ -1,12 +1,12 @@
 ---
-title: Semplificare la configurazione della posta elettronica nei dispositivi mobili | Microsoft Intune
+title: Semplificare la configurazione della posta elettronica nei dispositivi mobili | Documentazione Microsoft
 description: 
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 12/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: a2ddf2b972f90aea6ac0e47372bd4f0b4de5cf19
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
 
 
 ---
 
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>Guida introduttiva: Semplificare la configurazione della posta elettronica nei dispositivi mobili
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune aiuta le aziende a risparmiare tempo e risorse consentendo di distribuire profili di posta elettronica, oltre che VPN e WiFi, ai dispositivi mobili Windows, iOS e Android gestiti dal servizio Intune. La configurazione automatica dei profili di posta elettronica può migliorare notevolmente l'esperienza d'uso e aumentare il livello di soddisfazione riducendo al tempo stesso i costi per il supporto tecnico.
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>Questa guida introduttiva offre la soluzione adatta ai requisiti d'uso?
@@ -47,6 +50,6 @@ Dopo aver configurato il profilo di posta elettronica, è possibile limitare fac
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

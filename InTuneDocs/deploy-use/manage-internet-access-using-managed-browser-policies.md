@@ -1,11 +1,11 @@
 ---
-title: Gestire l&quot;accesso Web con il browser gestito | Microsoft Intune
+title: Gestire l&quot;accesso Web con Managed Browser | Documentazione Microsoft
 description: Distribuire l&quot;applicazione Managed Browser per limitare l&quot;esplorazione del Web e il trasferimento dei dati Web ad altre app.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: a85aa3ce78425f2e00479ab0e48338e5eef8aec3
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
 
 
 ---
 
-# Gestire l'accesso a Internet utilizzando criteri di browser gestiti con Microsoft Intune.
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gestire l'accesso a Internet utilizzando criteri di browser gestiti con Microsoft Intune.
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Managed Browser è un'applicazione per Web browser che è possibile distribuire nell'organizzazione usando Microsoft Intune. Un criterio di Managed Browser consente di configurare un elenco Consenti o Blocca che limita i siti Web che gli utenti di Managed Browser possono visitare.
 
 I criteri di gestione di applicazioni mobili possono anche essere applicati all'app dato che si tratta di un'app gestita. Questi criteri possono includere il controllo delle operazioni taglia, copia e incolla, il blocco delle acquisizioni di schermata e la verifica dei collegamenti al contenuto selezionati dagli utenti, che possono essere aperti solo in altre app gestite. Per informazioni dettagliate, vedere [Configurare e distribuire i criteri di gestione delle applicazioni mobili nella console di Microsoft Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
@@ -39,7 +42,7 @@ Se gli utenti installano Managed Browser autonomamente in un dispositivo iOS con
 
 Intune Managed Browser supporta l'apertura di contenuti Web di [partner delle applicazioni di Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
-## Creare un criterio di browser gestiti
+## <a name="create-a-managed-browser-policy"></a>Creare un criterio di browser gestiti
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Aggiungi criterio**.
 
@@ -65,7 +68,7 @@ Per altre informazioni sui formati di URL che è possibile specificare, vedere *
 
 Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell'area di lavoro **Criteri**.
 
-## Creare una distribuzione per l'app Managed Browser
+## <a name="create-a-deployment-for-the-managed-browser-app"></a>Creare una distribuzione per l'app Managed Browser
 Dopo aver creato il criterio di Manager Browser, è possibile creare una distribuzione software per l'app di Manager Browser e associarla al criterio di Manager Browser creato.
 
 > [!IMPORTANT]
@@ -75,7 +78,7 @@ Distribuire l'applicazione, assicurarsi di selezionare i criteri di browser gest
 
 Per altre informazioni su come distribuire le app, vedere [Distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
-## Sicurezza e privacy per lo strumento di wrapping delle app
+## <a name="security-and-privacy-for-the-managed-browser"></a>Sicurezza e privacy per lo strumento di wrapping delle app
 
 -   Nei dispositivi iOS i siti Web visitati dagli utenti che hanno un certificato scaduto o non attendibile non possono essere aperti.
 
@@ -87,12 +90,12 @@ Per altre informazioni su come distribuire le app, vedere [Distribuire app in Mi
 
 -   Per consentire l'autenticazione e per assicurarsi di poter accedere alla documentazione di Intune,**&#42;.microsoft.com** è esente dalle impostazioni degli elenchi Blocca o Consenti, perché è sempre consentito.
 
-### Disattivare la raccolta dati
+### <a name="turn-off-usage-data"></a>Disattivare la raccolta dati
 Microsoft raccoglie automaticamente dati anonimi sulle prestazioni e sull'uso di Managed Browser per migliorare prodotti e servizi Microsoft. Gli utenti possono disattivare la raccolta dei dati usando l'impostazione **Dati di utilizzo** nei propri dispositivi. L'utente non ha alcun controllo sulla raccolta di tali dati.
 
-## Informazioni di riferimento
+## <a name="reference-information"></a>Informazioni di riferimento
 
-### Formato dell'URL per URL consentite e bloccate
+### <a name="url-format-for-allowed-and-blocked-urls"></a>Formato dell'URL per URL consentite e bloccate
 Usare le informazioni seguenti per saperne di più sui formati e i caratteri jolly consentiti che possono essere usati quando si specificano gli URL negli elenchi Consenti e Blocca:
 
 -   È possibile usare il carattere jolly asterisco **&#42;** secondo le regole nell'elenco di modelli consentiti seguente.
@@ -142,7 +145,7 @@ Usare le informazioni seguenti per saperne di più sui formati e i caratteri jol
 
     -   http://www.contoso.com: /&#42;
 
-### Come vengono risolti i conflitti tra l'elenco Consenti e blocca
+### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>Come vengono risolti i conflitti tra l'elenco Consenti e blocca
 Se distribuiti diversi criteri browser gestito a un dispositivo e si verifica un conflitto di impostazioni, sia per modalità (Consenti o blocca) e per elenchi di URL, che vengono poi valutati a livello di conflitti. In caso di conflitto si applica il comportamento seguente:
 
 -   Se le modalità disponibili in tutti i criteri sono uguali, ma gli elenchi di URL sono diversi, le URL non verranno applicate al dispositivo.
@@ -155,6 +158,6 @@ Se distribuiti diversi criteri browser gestito a un dispositivo e si verifica un
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

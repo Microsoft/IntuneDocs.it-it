@@ -1,12 +1,12 @@
 ---
 
-title: Impostazioni dei criteri di Android for Work | Microsoft Intune
+title: Impostazioni dei criteri di Android for Work | Documentazione Microsoft
 description: "Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi Android for Work gestiti con Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 
 ---
 
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di Android for Work in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -66,9 +68,7 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 Usare i **criteri di configurazione personalizzati Android for Work** di Microsoft Intune per distribuire le impostazioni OMA-URI che è possibile usare per controllare le funzionalità nei dispositivi Android for Work. Si tratta di impostazioni standard che molti produttori di dispositivi mobili usano per controllare le funzionalità del dispositivo.
 
 Questa funzionalità consente di distribuire le impostazioni Android non configurabili con i criteri di Intune.
-
-> [!NOTE]
-> I criteri personalizzati Android attualmente supportano la configurazione di impostazioni Wi-Fi solo per dispositivi Android che includono una chiave precondivisa.
+Intune supporta attualmente un numero limitato di criteri personalizzati Android. Vedere gli esempi in questo argomento per scoprire quali criteri è possibile configurare.
 
 ### <a name="general-settings"></a>Impostazioni generali
 
@@ -97,6 +97,6 @@ Questa funzionalità consente di distribuire le impostazioni Android non configu
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

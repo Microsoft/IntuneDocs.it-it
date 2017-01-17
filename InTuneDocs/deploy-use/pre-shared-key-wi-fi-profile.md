@@ -1,5 +1,5 @@
 ---
-title: Wi-Fi tramite PSK | Microsoft Intune
+title: Wi-Fi tramite PSK | Documentazione Microsoft
 description: Usare la configurazione personalizzata per creare un profilo Wi-Fi con una chiave precondivisa.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ad5bb09eb18463f541ca0cbb60ff1f27bdc3251e
+ms.sourcegitcommit: bb706f122753219d8034bcd25fbe2e25b7142b30
+ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
 
 
 
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Usare criteri personalizzati per creare un profilo Wi-Fi con una chiave precondivisa
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Di seguito viene illustrato come usare la **configurazione personalizzata** di Intune per creare un profilo Wi-Fi con una chiave precondivisa. Questo argomento include anche un esempio di come creare un profilo Wi-Fi basato su EAP.
 
 > [!NOTE]
@@ -69,24 +72,24 @@ Di seguito è riportato un esempio di codice XML per un profilo Wi-Fi Windows o 
 >  `<hex>53534944</hex>` deve essere impostato sul valore esadecimale di `<name><SSID of wifi profile></name>`.
 >  I dispositivi Windows 10 possono restituire un errore *0x87D1FDE8 Correzione non riuscita* falso, ma verrà comunque eseguito il provisioning con il profilo.
 
-    <!--
-    <Name of wifi profile> = Name of profile
-    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-    <nonBroadcast><true/false></nonBroadcast>
-    <Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
-    <Type of encryption> = Type of encryption used by the network
-    <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
-    <password> = Password to connect to the network
-    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <hex>53534944</hex>
-        <name><SSID of wifi profile></name>
-        </SSID>
+```
+<!--
+<Name of wifi profile> = Name of profile
+<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+<nonBroadcast><true/false></nonBroadcast>
+<Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
+<Type of encryption> = Type of encryption used by the network
+<protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
+<password> = Password to connect to the network
+<hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
+-->
+<WLANProfile
+xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+  <name><Name of wifi profile></name>
+  <SSIDConfig>
+    <SSID>
+      <hex>53534944</hex>
+ <name><SSID of wifi profile></name>        </SSID>
         <nonBroadcast>false</nonBroadcast>
       </SSIDConfig>
       <connectionType>ESS</connectionType>
@@ -108,10 +111,12 @@ Di seguito è riportato un esempio di codice XML per un profilo Wi-Fi Windows o 
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## <a name="eap-based-wi-fi-profile"></a>Profilo Wi-Fi basato su EAP
 Di seguito è riportato un esempio di codice XML per un profilo Wi-Fi basato su EAP:
 
+```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name>testcert</name>
       <SSIDConfig>
@@ -189,6 +194,7 @@ Di seguito è riportato un esempio di codice XML per un profilo Wi-Fi basato su 
         </security>
       </MSM>
     </WLANProfile>
+```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>Creare il file XML da una connessione Wi-Fi esistente
 È possibile creare il file XML da una connessione Wi-Fi esistente:
@@ -215,6 +221,6 @@ Quando si seleziona un criterio distribuito, è possibile visualizzare altre inf
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

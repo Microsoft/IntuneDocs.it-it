@@ -1,9 +1,9 @@
 ---
-title: Gestire il trasferimento di dati tra app iOS | Microsoft Intune
+title: Gestire il trasferimento di dati tra app iOS | Documentazione Microsoft
 description: "Usare questo argomento per comprendere come è possibile usare la funzionalità Apri in di iOS e i criteri di gestione delle app mobili per gestire i trasferimenti di dati tra le app."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 94163d5f303b293da2301b81a5c96f6c9c2e5e5d
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: fdbe65ff13b9b16a125ee37f9dd4614c727f2886
 
 
 ---
 
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gestire il trasferimento di dati tra app iOS con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="manage-ios-apps"></a>Gestire le app iOS
 La protezione dei dati aziendali prevede anche che ci si assicuri che i trasferimenti di file siano limitati alle app gestite dall'utente.  È possibile gestire le app iOS nei modi seguenti:
 
@@ -76,6 +79,6 @@ Questa configurazione è necessaria per i dispositivi gestiti da una soluzione M
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

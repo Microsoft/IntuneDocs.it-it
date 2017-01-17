@@ -1,11 +1,11 @@
 ---
-title: "Autenticazione a più fattori per Windows | Microsoft Intune"
+title: "Autenticazione a più fattori per Windows | Documentazione Microsoft"
 description: "Intune integra l&quot;autenticazione a più fattori per consentire di proteggere le risorse aziendali."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1bfd17f9fcc73049254bc77351eae48da874fb4c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: cc60ffb2cd7a1d0cad141712ba7e2341954b1f02
 
 
 ---
 
 # <a name="protect-windows-devices-with-multi-factor-authentication"></a>Proteggere i dispositivi Windows con l'autenticazione a più fattori
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune integra l'autenticazione a più fattori per consentire di proteggere le risorse aziendali. Per questo tipo di autenticazione sono necessari altri fattori di autenticazione, ad esempio l'autenticazione di testo, oltre a nomi utente e password. Intune supporta l'uso dell'autenticazione a più fattori durante la registrazione di dispositivi desktop o mobili di Windows 8.1 o versioni successive, Windows Phone 8.1 o Windows 10.
+
+>[!NOTE]
+>
+>È possibile abilitare l'autenticazione a più fattori a livello di singolo utente e a livello di gruppo nel server ADFS.  
+
 
 ## <a name="on-premises-infrastructure-requirements-for-adfs-mfa"></a>Requisiti dell'infrastruttura locale per i profili SCEP
 Per impostare l'autenticazione a più fattori, è necessario:
@@ -40,6 +48,7 @@ I server devono soddisfare i requisiti di sistema indicati in [Requisiti di sist
 Se l'organizzazione ha un'infrastruttura IT che include un dominio di Active Directory con Active Directory Federation Services (AD FS), è possibile impostare l'autenticazione a più fattori nel server federativo e quindi abilitare l'autenticazione a più fattori per la registrazione in Intune. Se in Intune viene configurata l'autenticazione a più fattori, gli utenti possono eseguire l'autenticazione una sola volta e quindi usare le risorse aziendali senza ripetere ogni volta il processo di autenticazione a più fattori.
 
 >[!NOTE]
+>
 >È possibile abilitare l'autenticazione a più fattori a livello di singolo utente e a livello di gruppo nel server ADFS.  
 
 #### <a name="mfa-without-intune"></a>Autenticazione a più fattori senza Intune
@@ -60,6 +69,6 @@ Per informazioni su come abilitare l'autenticazione a più fattori in ADFS, vede
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

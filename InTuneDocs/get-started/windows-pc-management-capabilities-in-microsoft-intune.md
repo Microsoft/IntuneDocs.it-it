@@ -1,12 +1,12 @@
 ---
-title: "Funzionalità del client software per PC di Intune | Microsoft Intune"
+title: "Funzionalità del client software per PC di Intune | Documentazione Microsoft"
 description: "Informazioni sulle funzionalità di Intune per gestire i PC Windows con il client software di Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 36a20feed1756ea8dde2230db81099b6c5f8c7f6
 
 
 ---
 
 # <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>Funzionalità di gestione di PC Windows quando si usa il client software di Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Nella maggior parte dei casi i dispositivi vengono registrati con Microsoft Intune che offre un maggior numero di funzionalità. Tuttavia è possibile anche gestire i PC usando il client software di Intune che fornisce le funzionalità seguenti:
 
 -   **[Gestione aggiornamenti software](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)**: è possibile mantenere aggiornati i PC e stabilire quando applicare gli aggiornamenti.
@@ -75,6 +78,6 @@ Di seguito sono riportati i requisiti software minimi per l'installazione del cl
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

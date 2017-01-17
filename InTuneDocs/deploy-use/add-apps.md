@@ -1,11 +1,11 @@
 ---
-title: Aggiungere app | Microsoft Intune
+title: Aggiungere app | Documentazione Microsoft
 description: "Prima di iniziare la distribuzione di app con Intune, prendersi il tempo necessario per acquisire familiarità con i concetti introdotti in questo argomento."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f896f51c21beaf7561168f3f622cfc7b0d0c8068
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
 
 
 ---
 
 # <a name="add-apps-with-microsoft-intune"></a>Aggiungere app con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Prima di iniziare la distribuzione di app con Microsoft Intune, prendersi il tempo necessario per acquisire familiarità con i concetti introdotti in questo argomento. Queste considerazioni consentono di comprendere quali app è possibile distribuire in quale piattaforma. Consentono inoltre di comprendere i prerequisiti che è necessario rispettare prima di procedere.
 
 ## <a name="app-types-that-you-can-deploy"></a>Tipi di app che è possibile distribuire
@@ -93,6 +96,6 @@ Sarà necessario aggiungere le app nella console di Intune prima di distribuirle
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

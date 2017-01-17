@@ -1,11 +1,11 @@
 ---
-title: Limitare l&quot;accesso con la protezione dalle minacce per il dispositivo | Microsoft Intune
+title: Limitare l&quot;accesso con la protezione dalle minacce per il dispositivo | Documentazione Microsoft
 description: Limitare l&quot;accesso alle risorse aziendali in base al rischio per dispositivi, rete e applicazioni.
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,65 +14,76 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: d529bd1c2a281c06f70593e73b71d09962a3c714
+ms.sourcegitcommit: 6b83d06ecbe6e202bf022444c288e0866b3507c6
+ms.openlocfilehash: 1dd2c4a46857aef1ba273904d58d5eacae99c7bc
 
 
 ---
 
 # <a name="restrict-access-to-company-resource-based-on-device-network-and-application-risk"></a>Limitare l'accesso alle risorse aziendali in base al rischio per dispositivi, rete e applicazioni
-È possibile controllare l'accesso dai dispositivi mobili alle risorse aziendali, in base alla valutazione dei rischi condotta da Lookout, una soluzione di protezione dalle minacce per il dispositivo integrata in Microsoft Intune. Il rischio si basa su dati di telemetria raccolti dal servizio Lookout dai dispositivi per le vulnerabilità del sistema operativo, le app dannose installate e i profili di rete dannosi. In base alla valutazione di Lookout dei rischi segnalati, abilitata tramite criteri di conformità di Intune, è possibile configurare criteri di accesso condizionale in Intune e consentire o bloccare i dispositivi determinati come non conformi in seguito al rilevamento di minacce in tali dispositivi.  
+È possibile controllare l'accesso dai dispositivi mobili alle risorse aziendali in base alla valutazione dei rischi condotta da Lookout, una soluzione di protezione dalle minacce per i dispositivi integrata in Microsoft Intune. La valutazione dei rischi viene effettuata in base ai dati di telemetria raccolti dai dispositivi dal servizio Lookout, che includono:
+- Vulnerabilità del sistema operativo
+- Installazione di app dannose
+- Profili di rete dannosi
+
+È possibile configurare criteri di accesso condizionale basati sulla valutazione dei rischi di Lookout e abilitati tramite i criteri di conformità di Intune. Con le impostazioni disponibili è possibile autorizzare o bloccare i dispositivi non conformi in base alle minacce rilevate.  
 
 ## <a name="what-problem-does-this-solve"></a>Quale problema risolve questa soluzione?
-Le aziende e le organizzazioni hanno l'esigenza di proteggere i dati sensibili da minacce emergenti che includono minacce fisiche, minacce basate su app e sulla rete, oltre a vulnerabilità del sistema operativo.
+Le aziende hanno l'esigenza di proteggere i dati sensibili da minacce emergenti che includono minacce fisiche, minacce basate su app e sulla rete, oltre a vulnerabilità del sistema operativo.
 
-Tradizionalmente, le aziende e le organizzazioni hanno adottato una posizione attiva per la protezione dei PC da attacchi dannosi. L'area dei dispositivi mobili è relativamente nuova e spesso senza protezione. Sebbene le piattaforme mobili includano la protezione predefinita del sistema operativo grazie a tecniche come l'isolamento delle app e store online controllati per le app dei consumatori, queste piattaforme continuano a essere vulnerabili ad attacchi sofisticati. Dato che i dispositivi mobili sono sempre più spesso usati dai dipendenti per il lavoro e devono avere accesso a informazioni che possono essere sensibili e preziose, questi dispositivi devono essere protetti da un'ampia gamma di attacchi sofisticati.
+Da sempre le aziende hanno adottato soluzioni proattive per la protezione dei PC da attacchi esterni, senza monitoraggio e protezione per i dispositivi mobili. Anche se le piattaforme mobili includono misure di protezione predefinite, come l'isolamento delle app e store online controllati per le app dei consumatori, rimangono comunque vulnerabili ad attacchi sofisticati. Oggi, un numero sempre maggiore di dipendenti usa i dispositivi al lavoro e deve accedere a informazioni sensibili. I dispositivi devono essere protetti dagli attacchi sempre più sofisticati.
 
-Intune offre la possibilità di controllare l'accesso alle risorse e ai dati aziendali in base alla valutazione dei rischi offerta dalle soluzioni di protezione dalle minacce per il dispositivo come Lookout.
+Intune consente di controllare l'accesso alle risorse aziendali in base alla valutazione dei rischi offerta da soluzioni per la protezione dalle minacce per il dispositivo, come Lookout.
 
 ## <a name="how-do-intune-and-lookout-device-threat-protection-help-protect-company-resources"></a>In che modo la protezione dalle minacce per il dispositivo di Intune e Lookout può tutelare le risorse aziendali?
-L'app Lookout per dispositivi mobili (Lookout for Work), eseguita nei dispositivi mobili, consente di acquisire dati di telemetria per il file system, lo stack di rete, il dispositivo e le applicazioni (se disponibili) e di inviarli al servizio cloud per la protezione dalle minacce per il dispositivo di Lookout, per il calcolo del livello di rischio aggregato del dispositivo in relazione alle minacce per dispositivi mobili. È anche possibile modificare la classificazione del livello di rischio per le minacce nella console di Lookout in base alle proprie esigenze.  
+L'app per dispositivi mobili di Lookout, **Lookout for Work**, viene installata ed eseguita nei dispositivi mobili. Questa app consente di acquisire dati di telemetria per il file system, lo stack di rete, il dispositivo e le applicazioni (se disponibili) e di inviarli al servizio cloud Lookout per la valutazione del livello di rischio per le minacce per dispositivi mobili. È possibile modificare le classificazioni del livello di rischio per le minacce nella console di Lookout in base alle proprie esigenze.  
 
-I criteri di conformità in Intune includono ora una nuova regola per la protezione dalle minacce per il dispositivo di Lookout, basata sulla valutazione dei rischi delle minacce per il dispositivo di Lookout. Quando questa regola è abilitata, Microsoft Intune valuta la conformità del dispositivo in base ai criteri abilitati.
+I criteri di conformità in Intune includono una regola per la protezione dalle minacce per dispositivi mobili di Lookout, basata sulla valutazione dei rischi di Lookout. Quando questa regola è abilitata, Intune valuta la conformità del dispositivo in base ai criteri abilitati.
 
-Se il dispositivo risulta non conforme ai criteri, è possibile bloccare l'accesso a risorse come Exchange Online e SharePoint Online tramite criteri di accesso condizionale. In seguito al blocco dell'accesso, gli utenti ricevono istruzioni per la risoluzione del problema e per ottenere l'accesso alle risorse aziendali. Questa procedura dettagliata viene avviata tramite l'app Lookout for Work.
+Se il dispositivo risulta non conforme, è possibile bloccare l'accesso a risorse come Exchange Online e SharePoint Online. Gli utenti di dispositivi bloccati riceveranno istruzioni per risolvere il problema e riottenere l'accesso. Queste istruzioni vengono fornite dall'app Lookout for Work.
+
 ## <a name="supported-platforms"></a>Piattaforme supportate:
-* **Android 4.1 e versioni successive**, con registrazione in Microsoft Intune.
-* **iOS 8 e versioni successive**, con registrazione in Microsoft Intune.
-Per informazioni sulle piattaforme e i linguaggi supportati da Lookout, vedere questo [articolo](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
+Lookout supporta le piattaforme seguenti per i dispositivi registrati in Intune:
+* **Android 4.1 e versioni successive**
+* **iOS 8 e versioni successive** Per altre informazioni sulle piattaforme e le lingue supportate, visitare il [sito Web di Lookout](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
 
 ## <a name="prerequisites"></a>Prerequisiti:
-* Sottoscrizione a Microsoft Intune e Azure Active Directory.
-* Sottoscrizione aziendale a Lookout Mobile EndPoint Security.  Per altre informazioni, vedere [Lookout Mobile EndPoint Security](https://www.lookout.com/products/mobile-endpoint-security)
+* Sottoscrizione di Microsoft Intune
+* Azure Active Directory
+* Sottoscrizione aziendale a Lookout Mobile EndPoint Security  
 
-## <a name="example-scenarios"></a>Scenari di esempio
+Per altre informazioni, vedere [Lookout Mobile EndPoint Security](https://www.lookout.com/products/mobile-endpoint-security)
+
+## <a name="sample-scenarios"></a>Scenari di esempio
 Questi sono alcuni degli scenari comuni:
-### <a name="control-access-based-on-threat-from-malicious-apps"></a>Controllare l'accesso in base alle minacce da parte di app dannose:
-Quando nel dispositivo vengono rilevate app dannose come malware, è possibile bloccare il dispositivo per impedire:
-* La connessione alla posta elettronica aziendale prima di risolvere la condizione di minaccia.
-* La sincronizzazione di file aziendali tramite l'app OneDrive per il lavoro.
-* L'accesso ad applicazioni cruciali per l'azienda.
 
-**Accesso bloccato quando vengono rilevate app dannose:**
+### <a name="control-access-based-on-threats-from-malicious-apps"></a>Controllare l'accesso in base alle minacce da parte di app dannose
+Se nei dispositivi vengono rilevate app dannose, come malware, è possibile impedire ai dispositivi di eseguire le operazioni seguenti fino alla risoluzione della condizione di minaccia:
+* Connessione alla posta elettronica aziendale
+* Sincronizzazione di file aziendali tramite l'app OneDrive for Work
+* Accesso alle app aziendali
+
+**Bloccare l'accesso quando vengono rilevate app dannose:**
 ![diagramma che mostra i criteri di accesso condizionale che bloccano l'accesso quando il dispositivo viene determinato come non conforme a causa della presenza di app dannose](../media/mtp/malicious-apps-blocked.png)
 
-**Il dispositivo viene sbloccato e può accedere alle risorse aziendali quando la condizione di minaccia è risolta:**
+**Accesso concesso dopo la risoluzione:**
 
 ![diagramma che mostra i criteri di accesso condizionale che concedono l'accesso quando il dispositivo risulta conforme dopo la correzione](../media/mtp/malicious-apps-unblocked.png)
-### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete:
+
+### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete
 Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle e limitare l'accesso a reti Wi-Fi in base al livello di rischio del dispositivo.
 
-**Accesso alla rete tramite Wi-Fi bloccato:**
+**Bloccare l'accesso alla rete tramite Wi-Fi:**
 ![diagramma che mostra l'accesso condizionale che blocca l'accesso tramite Wi-Fi in presenza di minacce di rete](../media/mtp/network-wifi-blocked.png)
 
 **Accesso concesso dopo la risoluzione:**
 
 ![diagramma che mostra l'accesso condizionale che consente l'accesso dopo la risoluzione della condizione di minaccia](../media/mtp/network-wifi-unblocked.png)
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controllare l'accesso a SharePoint Online in base alle minacce alla rete:
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controllare l'accesso a SharePoint Online in base alle minacce alla rete
 
 Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle, e impedire la sincronizzazione dei file aziendali in base al livello di rischio del dispositivo.
 
-**Accesso bloccato a SharePoint Online in base alle minacce di rete rilevate nel dispositivo:**
+**Bloccare SharePoint Online quando vengono rilevate minacce per la rete:**
 
 ![Diagramma che mostra l'accesso condizionale che blocca l'accesso del dispositivo a SharePoint Online in base al rilevamento di minacce](../media/mtp/network-spo-blocked.png)
 
@@ -91,6 +102,6 @@ Ecco i passaggi principali per l'implementazione di questa soluzione:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

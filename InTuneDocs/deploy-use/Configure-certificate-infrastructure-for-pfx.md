@@ -1,5 +1,5 @@
 ---
-title: Configurare l&quot;infrastruttura di certificazione per PFX | Microsoft Intune
+title: Configurare l&quot;infrastruttura di certificazione per PFX | Documentazione Microsoft
 description: Creare e distribuire profili certificato con estensione pfx.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
-ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
 
 
 
 ---
 # <a name="configure-certificate-infrastructure"></a>Configurare l'infrastruttura di certificazione
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Questo argomento descrive cosa è necessario per creare e distribuire i profili certificato con estensione pfx.
 
 Per eseguire qualsiasi autenticazione basata su certificati all'interno dell'azienda, è necessaria un'autorità di certificazione dell'organizzazione.
@@ -31,7 +34,7 @@ Per usare i profili di certificato PFX, oltre all'autorità di certificazione de
 
 -  Il Connettore di certificati di Intune, che viene eseguito sul computer che può comunicare con l'autorità di certificazione.
 
-## <a name="onpremises-infrastructure-description"></a>Descrizione dell'infrastruttura locale
+## <a name="on-premises-infrastructure-description"></a>Descrizione dell'infrastruttura locale
 
 
 -    **Dominio di Active Directory**: tutti i server elencati in questa sezione (tranne il server proxy applicazione Web) devono essere aggiunti al dominio di Active Directory.
@@ -65,7 +68,7 @@ Prima di poter configurare i profili certificato, è necessario completare le at
 - **Attività 1**: configurare i modelli di certificato nell'autorità di certificazione.
 - **Attività 2**: abilitare, installare e configurare il Connettore di certificati di Intune.
 
-### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>Attività 1: configurare i modelli di certificato nell'autorità di certificazione
+### <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>Attività 1: configurare i modelli di certificato nell'autorità di certificazione
 In questa attività verrà pubblicato il modello di certificato.
 
 ##### <a name="to-configure-the-certification-authority"></a>Per configurare l'autorità di certificazione
@@ -104,7 +107,7 @@ In questa attività verrà pubblicato il modello di certificato.
 
 4.  Nel computer della CA assicurarsi che il computer che ospita Connettore di certificati di Intune abbia l'autorizzazione di registrazione per poter accedere al modello usato nella creazione del profilo PFX. Impostare l'autorizzazione nella scheda **Sicurezza** delle proprietà del computer della CA.
 
-### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>Attività 2: abilitare, installare e configurare il Connettore di certificati di Intune
+### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>Attività 2: abilitare, installare e configurare il Connettore di certificati di Intune
 In questa attività sarà possibile:
 
 Scaricare, installare e configurare Connettore di certificati.
@@ -156,6 +159,6 @@ A questo punto è possibile configurare i profili certificato come descritto in 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

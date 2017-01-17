@@ -1,5 +1,5 @@
 ---
-title: Gestire Windows Store per le app aziendali | Microsoft Intune
+title: Gestire le app di Windows Store per le aziende | Documentazione Microsoft
 description: Connettere Microsoft Intune a Windows Store per le aziende se si vuole gestire e distribuire app acquistate con Volume Purchase Program dalla console di Intune
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 37044da4c7a58749c7b3423b1872b07d1673603d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1e0cb157182415e25cd5829e244e47b2bd5b539b
 
 
 ---
 
 # <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>Gestire le app acquistate in Windows Store per le aziende con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In [Windows Store per le aziende](https://www.microsoft.com/business-store) è possibile trovare e acquistare app per l'organizzazione, singolarmente o con Volume Purchase Program. Collegando lo Store a Microsoft Intune è possibile gestire dalla console di Intune le app acquistate con Volume Purchase Program. Ad esempio:
 * È possibile sincronizzare l'elenco di app acquistate dallo Store con Intune.
 * Le app sincronizzate vengono visualizzate nella console di amministrazione di Intune ed è possibile distribuirle come qualsiasi altra app.
@@ -80,6 +83,6 @@ Quando si distribuisce un'app di Windows Store per le aziende, viene usata una l
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

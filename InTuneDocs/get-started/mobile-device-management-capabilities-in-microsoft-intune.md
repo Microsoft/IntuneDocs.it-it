@@ -1,12 +1,12 @@
 ---
-title: "Funzionalità di gestione dei dispositivi registrati | Microsoft Intune"
+title: "Funzionalità di gestione dei dispositivi registrati | Documentazione Microsoft"
 description: Leggere questo argomento per scoprire in che modo Intune consente di gestire i dispositivi registrati.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
-ms.topic: article
+ms.date: 12/12/2016
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,12 +14,14 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 710295f0eaeee71bba549c22706ecbfd062ffcb1
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 898975338edcd3267fd47d62d23b35e295f0d99b
 
 
 ---
-# Funzionalità di gestione dei dispositivi registrati di Microsoft Intune
+# <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Funzionalità di gestione dei dispositivi registrati di Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune consente di gestire una gamma di dispositivi *registrandoli* nel servizio. È possibile registrare autonomamente alcuni tipi di dispositivi. In alternativa, gli utenti possono usare l'app *portale aziendale*. Questo consente loro di eseguire una serie di operazioni, ad esempio cercare e installare app, verificare la conformità del dispositivo ai criteri aziendali e contattare il supporto IT.
 
@@ -29,7 +31,7 @@ Tutte le attività di gestione, inventario, distribuzione di app, provisioning e
 
 
 
-## Configurazione e sicurezza dei dispositivi
+## <a name="device-security-and-configuration"></a>Configurazione e sicurezza dei dispositivi
 
 |Funzionalità|Dettagli|Altre informazioni|
 |--------------|-----------|--------------------|
@@ -37,20 +39,20 @@ Tutte le attività di gestione, inventario, distribuzione di app, provisioning e
 |Cancellazione remota, blocco remoto e reimpostazione passcode|Cancella i dati riservati quando un dispositivo viene smarrito o rubato. Ad esempio, è possibile bloccare in remoto il dispositivo, ripristinarne le impostazioni predefinite o cancellare solo i dati aziendali.<br><br>È possibile reimpostare i passcode se gli utenti perdono l'accesso al dispositivo, bloccare i dispositivi persi o rubati o persino cancellarne i dati.|[Help protect your devices with remote lock and passcode reset (Proteggere i dispositivi con il blocco remoto e la reimpostazione del passcode)](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) e [Retire devices from Intune management (Ritirare i dispositivi dalla gestione Intune)](/intune/deploy-use/retire-devices-from-microsoft-intune-management)|
 |Modalità tutto schermo|Consente di bloccare alcune funzionalità dei dispositivi mobili, ad esempio l'acquisizione schermo e l'alimentazione. Consente anche di limitare i dispositivi per eseguire una sola app specificata dall'utente.|[Impostazioni dei criteri di configurazione di iOS in Microsoft Intune](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 
-## Gestione delle app
+## <a name="app-management"></a>Gestione delle app
 
 |Funzionalità|Dettagli|Altre informazioni|
 |--------------|-----------|--------------------|
 |Gestione e distribuzione delle app|Offre una serie di strumenti che consentono di gestire le app mobili in tutte le fasi del ciclo di vita, inclusa la distribuzione di app da file di installazione e App Store, il monitoraggio dettagliato dello stato delle app e la rimozione delle app.|[Distribuire app in Microsoft Intune](/intune/deploy-use/deploy-apps)|
 |Applicazioni conformi e non conformi|Consente di specificare elenchi di app conformi (che gli utenti sono autorizzati a installare) e di app non conformi (che gli utenti non sono autorizzati a installare).|[Impostazioni dei criteri di iOS in Microsoft Intune](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
-|Gestione per applicazioni mobili|Configura limitazioni per le applicazioni mediante la gestione di applicazioni mobili sia per i dispositivi gestiti con Intune sia per quelli non gestiti con Intune. Questo consente di aumentare la sicurezza dei dati aziendali grazie alla limitazione delle operazioni di copia/incolla, backup esterno dei dati e trasferimento dei dati tra le app.|[Configurare e distribuire criteri di gestione delle applicazioni mobili nella console di Microsoft Intune](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)<br><br>[Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)<br /><br />[Preparare le app per iOS per la gestione delle applicazioni mobili con lo strumento di wrapping delle app di Microsoft Intune](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)<br /><br />[Preparare l'App per Android per la gestione di applicazioni per dispositivi mobili con lo strumento Microsoft Intune App esegue il Wrapping](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
+|Gestione per applicazioni mobili|Configura limitazioni per le applicazioni mediante la gestione di applicazioni mobili sia per i dispositivi gestiti con Intune sia per quelli non gestiti con Intune. Questo consente di aumentare la sicurezza dei dati aziendali grazie alla limitazione delle operazioni di copia/incolla, backup esterno dei dati e trasferimento dei dati tra le app.|[Configurare e distribuire criteri di gestione delle applicazioni mobili nella console di Microsoft Intune](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)<br><br>[Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)<br /><br />[Preparare le app per iOS per la gestione delle applicazioni mobili con lo strumento di wrapping delle app di Microsoft Intune](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)<br /><br />[Preparare le app Android per la gestione delle applicazioni mobili con lo strumento di wrapping delle app di Microsoft Intune](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
 |Configurazione delle app mobili iOS|Usa i criteri di configurazione delle app per dispositivi mobili per specificare impostazioni per app iOS che pssono essere necessarie quando l'utente esegue l'app. Ad esempio, un'app può richiedere all'utente di specificare un numero di porta o informazioni di accesso. Questo può semplificare la configurazione dell'app e ridurre il numero di chiamate all'help desk.|[Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |Profili di provisioning delle app mobili iOS|Consente di distribuire in modo proattivo i profili di provisioning alle app iOS prossime alla scadenza. |[Usare i criteri del profilo di provisioning per dispositivi mobili iOS per impedire la scadenza delle app](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
-|Managed Browser|Configura i criteri di Managed Browser per controllare i siti Web che gli utenti possono visitare. Inoltre, è possibile applicare i criteri di gestione delle applicazioni mobili a Managed Browser.|[Gestire l'accesso a Internet utilizzando criteri di browser gestiti con Microsoft Intune.](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
-|Windows Hello for Business|Consente di eseguire l'integrazione con Windows Hello for Business, un metodo di accesso alternativo per Windows 10 che usa un'istanza locale di Active Directory o Azure Active Directory per sostituire password, smart card o smart card virtuali.|[Controllare le impostazioni di Microsoft Passport nei dispositivi con Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
-|App acquistate con Volume Purchase Program|Semplifica la gestione delle app acquistate con Volume Purchase Program importando le informazioni di licenza dall'App Store, verificando il numero di licenze usate e impedendo l'installazione di più copie dell'app rispetto a quelle possedute.|[Gestione delle app acquistate tramite Volume Purchase Program con Microsoft Intune](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
+|Managed Browser|Configura i criteri di Managed Browser per controllare i siti Web che gli utenti possono visitare. Inoltre, è possibile applicare i criteri di gestione delle applicazioni mobili a Managed Browser.|[Gestire l'accesso a Internet usando criteri di Managed Browser con Microsoft Intune](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
+|Windows Hello for Business|Consente di eseguire l'integrazione con Windows Hello for Business, un metodo di accesso alternativo per Windows 10 che usa un'istanza locale di Active Directory o Azure Active Directory per sostituire password, smart card o smart card virtuali.|[Controllare le impostazioni di Windows Hello for Business nei dispositivi con Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|App acquistate con Volume Purchase Program|Semplifica la gestione delle app acquistate con Volume Purchase Program importando le informazioni di licenza dall'App Store, verificando il numero di licenze usate e impedendo l'installazione di più copie dell'app rispetto a quelle possedute.|[Gestire le app acquistate con Volume Purchase Program con Microsoft Intune](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
-## Accesso alle risorse aziendali
+## <a name="company-resource-access"></a>Accesso alle risorse aziendali
 
 |Funzionalità|Dettagli|Altre informazioni|
 |--------------|-----------|--------------------|
@@ -60,18 +62,18 @@ Tutte le attività di gestione, inventario, distribuzione di app, provisioning e
 |Profili VPN|Distribuisce impostazioni VPN agli utenti e ai dispositivi dell'organizzazione. La distribuzione di queste impostazioni consente di ridurre al minimo le operazioni che l'utente deve eseguire per connettersi alle risorse nella rete aziendale.|[Connessioni VPN in Microsoft Intune](/intune/deploy-use/vpn-connections-in-microsoft-intune)|
 |Criteri di accesso condizionale|Gestisce l'accesso a SharePoint Online e alla posta elettronica di Microsoft Exchange da dispositivi non gestiti da Intune.|[Limitare l'accesso alla posta elettronica e a SharePoint con Microsoft Intune](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)|
 
-## Inventario e creazione di report
+## <a name="inventory-and-reporting"></a>Inventario e creazione di report
 
 |Funzionalità|Dettagli|Altre informazioni|
 |--------------|-----------|--------------------|
 |Inventario e creazione di report|Trova informazioni sui dispositivi gestiti e sul software che usano.|[Informazioni sui dispositivi con inventario in Microsoft Intune](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
 
 
-### Vedere anche
+### <a name="see-also"></a>Vedere anche
 [Funzionalità di gestione dei PC Windows in Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

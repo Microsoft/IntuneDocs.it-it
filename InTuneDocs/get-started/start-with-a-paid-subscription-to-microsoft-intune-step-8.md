@@ -1,5 +1,5 @@
 ---
-title: Abilitare la registrazione dei dispositivi | Microsoft Intune
+title: Abilitare la registrazione dei dispositivi | Documentazione Microsoft
 description: "Impostare l&quot;autorità MDM e abilitare la registrazione per i dispositivi iOS, Windows, Android e Mac."
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
-ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 654c5b65a9fde6742f3682b1fd5ba6c056d0d45b
 
 
 ---
 
 # <a name="enroll-mobile-devices-and-install-an-app"></a>Registrare dispositivi mobili e installare un'app
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Per configurare la gestione dei dispositivi mobili con Intune, è prima necessario impostare l'*autorità di gestione dei dispositivi mobili*, che identifica il servizio utilizzabile per gestire i dispositivi associati all'account. In questo argomento si presuppone l'uso del servizio Intune invece di System Center Configuration Manager. Dopo aver configurato l'autorità MDM, è possibile abilitare la gestione per le piattaforme dei dispositivi e registrare i dispositivi con l'app Portale aziendale.
 
 ## <a name="enable-device-enrollment"></a>Abilitare la registrazione dei dispositivi
@@ -66,6 +69,6 @@ A questo punto, Ultimo passaggio della *Guida introduttiva di Intune* completato
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

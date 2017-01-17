@@ -1,11 +1,11 @@
 ---
-title: Connessioni VPN | Microsoft Intune
+title: Connessioni VPN | Documentazione Microsoft
 description: Usare i profili VPN per distribuire le impostazioni VPN agli utenti e ai dispositivi dell&quot;organizzazione.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
+ms.sourcegitcommit: 0ba06e1d698e051ba72e9f88a654d37041c57cf1
+ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
 
 
 ---
 
 # <a name="vpn-connections-in-microsoft-intune"></a>Connessioni VPN in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla rete aziendale. I dispositivi usano un *profilo di connessione VPN* per stabilire una connessione con il server VPN. Usare i *profili VPN* in Microsoft Intune per distribuire le impostazioni VPN agli utenti e ai dispositivi dell'organizzazione in modo che possano connettersi in modo facile e sicuro alla rete.
 
@@ -67,7 +69,7 @@ L2TP|Profilo personalizzato iOS|No |No |No|Sì (URI OMA)|sì|
 > [!IMPORTANT]
 > Prima di usare i profili VPN distribuiti in un dispositivo, è necessario installare l'app VPN applicabile per il profilo È possibile usare le informazioni fornite nell'argomento [Distribuire le app con Microsoft Intune](deploy-apps-in-microsoft-intune.md) per distribuire l'app applicabile usando Intune.  
 
- Per informazioni su come creare profili VPN personalizzati usando le impostazioni URI, vedere [Configurazioni personalizzate per i profili VPN](custom-configurations-for-vpn-profiles.md).     
+ Per informazioni su come creare profili VPN personalizzati usando le impostazioni URI, vedere [Configurazioni personalizzate per i profili VPN](create-custom-vpn-profiles.md).     
 
 ## <a name="methods-of-securing-vpn-profiles"></a>Metodi per la protezione dei profili VPN
 
@@ -194,13 +196,10 @@ Al termine della distribuzione, il nome della connessione VPN specificato verrà
 
 Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** dell'area di lavoro **Criteri** consentono di identificare i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene visualizzato anche nell'area di lavoro Dashboard.
 
-### <a name="see-also"></a>Vedere anche
-[Configurazioni personalizzate per i profili VPN](Custom-configurations-for-VPN-profiles.md)
-
-[Profilo VPN per app per Android con Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
 
 
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Ritirare i dispositivi | Microsoft Intune
+title: Ritirare i dispositivi | Documentazione Microsoft
 description: Intune supporta sia la cancellazione selettiva sia quella completa per ritirare il dispositivo dalla gestione di Intune rimuovendo i relativi criteri e il portale aziendale.
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,21 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
+ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>Ritirare i dispositivi dalla gestione di Intune
 
-Indipendentemente dal fatto che un dispositivo sia personale o di proprietà dell'azienda, arriva un momento in cui è necessario rimuoverlo dalla gestione in Intune. Potrebbe essere necessario ritirare un dispositivo per diversi motivi:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Indipendentemente dal fatto che un dispositivo sia personale o di proprietà dell'azienda, arriva un momento in cui è necessario rimuoverlo dalla gestione in Intune. 
+
+I dispositivi non vengono mai rimosse da Intune senza l'intervento dell'utente, anche se i dispositivi non sono stati connessi al servizio Intune per un periodo di tempo. 
+
+Potrebbe essere necessario ritirare un dispositivo per diversi motivi:
 
 -   L'utente lascia la società in modo pianificato (abbandono "gestito")
 -   L'utente lascia la società improvvisamente (licenziamento, dimissioni e così via)
@@ -70,6 +76,6 @@ In alcuni casi è il dispositivo stesso ad aver raggiunto il termine della vita 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

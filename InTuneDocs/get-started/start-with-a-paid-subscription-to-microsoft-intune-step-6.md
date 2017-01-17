@@ -1,5 +1,5 @@
 ---
-title: Distribuire criteri e app | Microsoft Intune
+title: Distribuire criteri e app | Documentazione Microsoft
 description: "È possibile abilitare le impostazioni dei criteri e distribuire le app che verranno applicate subito dopo la registrazione dei dispositivi nel sistema di gestione."
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>Creare criteri e pubblicare app
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Prima di iniziare a registrare le app in Intune è possibile abilitare le impostazioni dei criteri e le app che verranno distribuite non appena i dispositivi risultano inclusi nella gestione. I criteri di Intune specificano impostazioni che consentono di controllare le impostazioni di sicurezza dei dispositivi mobili, di eseguire la manutenzione delle impostazioni di Windows Firewall ed Endpoint Protection per i computer, nonché di distribuire applicazioni. È possibile configurare criteri, aggiungere app e distribuire tali app, in modo che i dispositivi ricevano le impostazioni e le app non appena vengono registrati in Intune.
 
 Criteri e app sono specifici della piattaforma.

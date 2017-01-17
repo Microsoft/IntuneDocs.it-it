@@ -1,5 +1,5 @@
 ---
-title: Impostazioni dei criteri di Windows 10 | Microsoft Intune
+title: Impostazioni dei criteri di Windows 10 | Documentazione Microsoft
 description: Usare le impostazioni dei criteri indicate nell&quot;argomento per configurare le impostazioni personalizzate integrate per dispositivi registrati Windows 10 Desktop e Windows 10 Mobile.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
 
 
 ---
 
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Impostazioni dei criteri di Intune per i dispositivi Windows 10 in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Questo argomento contiene informazioni che consentono di comprendere le impostazioni dei criteri di Intune che è possibile usare per gestire i dispositivi Windows 10. Leggere questo argomento insieme alle procedure descritte in [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) per configurare le impostazioni predefinite e personalizzate per i dispositivi Windows 10 Desktop e Windows 10 Mobile registrati. Non è possibile usare questi criteri con PC che eseguono il [software client per PC di Intune](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 

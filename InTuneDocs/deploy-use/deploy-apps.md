@@ -1,11 +1,11 @@
 ---
-title: Distribuire le app | Microsoft Intune
+title: Distribuire le app | Documentazione Microsoft
 description: "Questo argomento illustra i concetti che è necessario comprendere prima di iniziare a distribuire le app con Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,20 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: eedf7db0a974f9a0aa0a21b27b64ed8b4a91b378
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: efa8245020b961797405a6f8b90df7e7b172b4c3
 
 
 ---
 
-# Distribuire le app con Microsoft Intune
+# <a name="deploy-apps-with-microsoft-intune"></a>Distribuire le app con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Questo argomento illustra alcuni dei concetti che è necessario comprendere prima di iniziare a distribuire le app con Microsoft Intune.
 
 
-## Azioni di distribuzione dell'app
+## <a name="app-deployment-actions"></a>Azioni di distribuzione dell'app
 Quando si distribuiscono le app, è possibile scegliere una delle seguenti azioni di distribuzione:
 
 -   **Installazione richiesta**: l'app viene installata nel dispositivo senza alcun intervento da parte dell'utente.
@@ -41,7 +43,7 @@ Quando si distribuiscono le app, è possibile scegliere una delle seguenti azion
 
 -   **Non applicabile**: l'app non viene visualizzata nel portale aziendale e non viene installata in alcun dispositivo.
 
-#### Comprendere quali sono le azioni di distribuzione disponibili per ogni tipo di programma di installazione
+#### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Comprendere quali sono le azioni di distribuzione disponibili per ogni tipo di programma di installazione
 
 |Tipo di programma di installazione|Installazione richiesta|Installazione disponibile|Disinstalla|Non applicabile|
 |------------------|--------------------|---------------------|-------------|------------------|
@@ -58,7 +60,7 @@ Quando si distribuiscono le app, è possibile scegliere una delle seguenti azion
 > [!TIP]
 > Quando si distribuiscono le app, se si selezionano gruppi sia di utenti che di dispositivi, è possibile distribuire l'app soltanto come **Installazione disponibile**.
 
-## Conflitti di distribuzione
+## <a name="deployment-conflicts"></a>Conflitti di distribuzione
 Quando un dispositivo riceve due distribuzioni con la stessa azione di distribuzione, si applicano le regole seguenti:
 
 -   Le distribuzioni eseguite in un gruppo di dispositivi hanno la precedenza rispetto a quelle eseguite in un gruppo di utenti. Tuttavia, se un'app viene distribuita a un gruppo di utenti con un'azione di tipo **Disponibile** e la stessa app viene distribuita in un gruppo di dispositivi con un'azione di tipo **Non applicabile**, l'app risulterà installabile dagli utenti nel portale aziendale.
@@ -68,12 +70,12 @@ Quando un dispositivo riceve due distribuzioni con la stessa azione di distribuz
 -   Se un dispositivo riceve sia un'installazione richiesta sia un'installazione disponibile, le azioni vengono combinate. In altre parole, l'utente può installare l'app disponibile dal portale aziendale prima che inizi l'installazione richiesta.
 
 
-## Passaggi successivi
+## <a name="next-steps"></a>Passaggi successivi
 
 Informazioni su come [distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

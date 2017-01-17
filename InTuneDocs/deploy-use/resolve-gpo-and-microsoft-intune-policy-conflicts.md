@@ -1,11 +1,11 @@
 ---
-title: Risolvere i conflitti di criteri tra Intune e gli oggetti Criteri di gruppo | Microsoft Intune
+title: Risolvere i conflitti di criteri tra Intune e gli oggetti Criteri di gruppo | Documentazione Microsoft
 description: Informazioni su come risolvere i conflitti tra criteri di configurazione di Intune e criteri di gruppo.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3d883851ae9fecd8a5c3baa0aff8312552915ba4
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 439607bf79424ab32118948f112e3814577969e5
 
 
 ---
 
-# Risolvere i conflitti di criteri tra Microsoft Intune e gli oggetti Criteri di gruppo
+# <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Risolvere i conflitti di criteri tra Microsoft Intune e gli oggetti Criteri di gruppo
 Intune usa criteri che consentono di gestire le impostazioni nei PC Windows. Ad esempio, è possibile usare un criterio per controllare le impostazioni di Windows Firewall nei PC. Molte impostazioni di Intune sono simili alle impostazioni che è possibile configurare con i Criteri di gruppo di Windows. A volte, però, i due metodi possono entrare in conflitto.
 
 In questo caso, i criteri di gruppo a livello di dominio hanno la precedenza sui criteri di Intune, a meno che un PC non sia in grado di connettersi al dominio. In questo caso, i criteri di Intune si applicano al PC client.
 
-## Che cosa fare se si usa Criteri di gruppo
+## <a name="what-to-do-if-you-are-using-group-policy"></a>Che cosa fare se si usa Criteri di gruppo
 Verificare che i criteri applicati non siano gestiti da Criteri di gruppo. Per evitare conflitti, è possibile applicare uno o più dei metodi seguenti:
 
 -   Spostare i PC in un'unità organizzativa Active Directory in cui non sono stati applicati i Criteri di gruppo prima di installare il client di Intune. È inoltre possibile bloccare l'ereditarietà di Criteri di gruppo nelle unità organizzative che includono PC registrati in Intune ai quali non si vuole che vengano applicate le impostazioni di Criteri di gruppo.
@@ -36,7 +36,7 @@ Verificare che i criteri applicati non siano gestiti da Criteri di gruppo. Per e
 
 Per altre informazioni sui Criteri di gruppo di Active Directory e Windows, vedere la documentazione di Windows Server.
 
-## Come filtrare gli oggetti Criteri di gruppo esistenti per evitare conflitti con i criteri di Intune
+## <a name="how-to-filter-existing-gpos-to-avoid-conflicts-with-intune-policy"></a>Come filtrare gli oggetti Criteri di gruppo esistenti per evitare conflitti con i criteri di Intune
 Se sono stati identificati oggetti Criteri di gruppo con impostazioni in conflitto con Intune, è possibile usare i filtri del gruppo di sicurezza per limitare tali oggetti ai soli PC non gestiti da Intune.
 
 <!--- ### Use WMI filters
@@ -113,11 +113,11 @@ Gli oggetti Criteri di gruppo possono essere applicati solo ai gruppi di sicurez
 
 È necessario gestire la registrazione del nuovo gruppo di sicurezza in seguito a modifiche del servizio Intune.
 
-### Vedere anche
+### <a name="see-also"></a>Vedere anche
 [Gestire i PC Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

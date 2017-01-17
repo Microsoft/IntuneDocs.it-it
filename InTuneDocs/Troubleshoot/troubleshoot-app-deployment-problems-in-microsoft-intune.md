@@ -1,5 +1,5 @@
 ---
-title: Risorse che consentono di risolvere i problemi di distribuzione dell&quot;app in Microsoft Intune | Microsoft Intune
+title: Risolvere i problemi di distribuzione delle app | Documentazione Microsoft
 description: Questo argomento consente di risolvere i problemi di distribuzione dell&quot;app in Microsoft Intune.
 keywords: 
 author: robstackmsft
@@ -14,16 +14,19 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: efc280f0a1143cacc252ee9fc9344064aa211cb2
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 239371198cbbc01b1345c72b3f887055acd44462
 
 
 ---
 
-# Risorse che consentono di risolvere i problemi di distribuzione dell'app in Microsoft Intune
+# <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Risorse che consentono di risolvere i problemi di distribuzione dell'app in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Se si verificano problemi durante la distribuzione e la gestione di app con Intune, iniziare da qui. Questo argomento descrive alcuni problemi comuni e le relative soluzioni.
 
-## Codici di errore di distribuzione dell'app comuni
+## <a name="common-app-deployment-error-codes"></a>Codici di errore di distribuzione dell'app comuni
 
 |Codice errore|Possibile problema|Soluzione suggerita|
 |--------------|--------------------|------------------------|
@@ -33,11 +36,11 @@ Se si verificano problemi durante la distribuzione e la gestione di app con Intu
 |0x80073CFB|Il pacchetto fornito è già installato, pertanto la reinstallazione del pacchetto è stata bloccata|Questo errore può verificarsi se si installa un pacchetto che non è identico al pacchetto già installato. Verificare che anche la firma digitale faccia parte del pacchetto. Quando un pacchetto viene ricompilato o firmato di nuovo, nel confronto bit per bit tale pacchetto non è più identico a quello installato in precedenza. Per questo problema sono disponibili due soluzioni:<br /><br />-   Incrementare il numero di versione dell'app, quindi ricompilare e firmare nuovamente il pacchetto.<br />-   Rimuovere il pacchetto precedente per ogni utente del sistema prima di installare quello nuovo.|
 |0x87D1041C|L'installazione dell'applicazione è stata completata ma non viene rilevata l'applicazione.|- L'app è stata distribuita da Intune e successivamente disinstallata (possibilmente dall'utente finale). Chiedere all'utente di reinstallare l'app dal portale aziendale. Le app necessarie verranno reinstallate automaticamente al successivo accesso del dispositivo.|
 
-## Risoluzione dei problemi delle app da Windows Store
+## <a name="troubleshooting-apps-from-the-windows-store"></a>Risoluzione dei problemi delle app da Windows Store
 
 Le informazioni nell'argomento [Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (Risoluzione dei problemi relativi a pacchetti, distribuzioni e query delle app di Windows Store) consentono di risolvere i problemi comuni riscontrabili durante l'installazione di app da Windows Store, tramite Intune o altri mezzi.
 
-## Risoluzione dei problemi relativi alla distribuzione di app a PC gestiti dal client software di Intune
+## <a name="troubleshooting-app-deployment-to-pcs-managed-by-the-intune-software-client"></a>Risoluzione dei problemi relativi alla distribuzione di app a PC gestiti dal client software di Intune
 Per risolvere i problemi relativi alla distribuzione di app a PC gestiti dal client software di Intune, è possibile esaminare i file di log seguenti:
 - %ProgramFiles%\Microsoft\OnlineManagement\Logs folder
 - %ProgramFiles%\Microsoft\OnlineManagement\Updates\ReportingEvents.log
@@ -45,11 +48,11 @@ Per risolvere i problemi relativi alla distribuzione di app a PC gestiti dal cli
 Inoltre, se è necessario aprire un caso di supporto per Intune, può essere utile anche inviare questi log a Microsoft.
 
 
-### Passaggi successivi
+### <a name="next-steps"></a>Passaggi successivi
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

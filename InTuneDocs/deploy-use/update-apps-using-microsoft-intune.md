@@ -1,11 +1,11 @@
 ---
-title: Aggiornare le app | Microsoft Intune
+title: Aggiornare le app | Documentazione Microsoft
 description: "Usare le informazioni riportate in questo argomento per comprendere come aggiornare le app quando è richiesta una nuova versione."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e78642494356038d4dff259ca54030122fd90819
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 824605544487c987c8726e0efe91d06a597fadb2
 
 
 ---
 
-# Aggiornare le app con Microsoft Intune
+# <a name="update-apps-using-microsoft-intune"></a>Aggiornare le app con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune consente di gestire gli aggiornamenti delle app. Usare le informazioni riportate in questo argomento per comprendere come aggiornare le app quando è richiesta una nuova versione.
 
-## Come aggiornare le app
+## <a name="how-to-update-apps"></a>Come aggiornare le app
 Quando viene rilasciata una nuova versione di un'app che è stata distribuita, Intune consente di aggiornare e distribuire la versione più recente di tale app. È possibile sostituire una distribuzione solo con una versione più recente della stessa app (contrassegnata dallo stesso identificatore). Non è possibile usare gli aggiornamenti dell'app per aggiornare una distribuzione con un pacchetto dell'app diverso.
 
-### Identificatori app
+### <a name="app-identifiers"></a>Identificatori app
 Identificatore app è una proprietà che identifica in modo univoco un'app. Non è possibile installare più copie di un'app con lo stesso identificatore. Di seguito sono riportati alcuni esempi di identificatori di app:
 
 - **iOS**: ID aggregazione (ad esempio: com.microsoft.excel)
@@ -42,7 +45,7 @@ Identificatore app è una proprietà che identifica in modo univoco un'app. Non 
 > -   L'utente del dispositivo può accedere al portale aziendale, selezionare l'app installata e scegliere **Installa**.
 > -   Modificare l'azione di distribuzione in **Disinstalla**e, una volta disinstallata l'app, distribuirla nuovamente con un'azione di distribuzione **Installazione disponibile**.
 
-### Per aggiornare un'app
+### <a name="to-update-an-app"></a>Per aggiornare un'app
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **App**&gt;**App**.
 
@@ -59,6 +62,6 @@ Per le app distribuite come collegamento a un archivio, l'aggiornamento viene ge
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Ricevere notifiche tramite gli avvisi | Microsoft Intune
+title: Ricevere notifiche tramite gli avvisi | Documentazione Microsoft
 description: "Gli avvisi informano l&quot;utente delle attività in esecuzione in Microsoft Intune."
 keywords: 
 author: arob98
@@ -14,13 +14,16 @@ ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 27aed0126b8aac032f334c712108b23482ef70d7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: efad781dca4a759335b67126026bf4fed127380e
 
 
 ---
 
 # <a name="get-notified-by-microsoft-intune-alerts"></a>Ricevere notifiche tramite gli avvisi di Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Gli avvisi informano l'utente delle attività in esecuzione in Microsoft Intune.
 
 Ad esempio, gli avvisi possono comunicare all'utente gli eventi seguenti:

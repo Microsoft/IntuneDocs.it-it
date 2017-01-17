@@ -1,5 +1,5 @@
 ---
-title: Connessioni Wi-Fi | Microsoft Intune
+title: Connessioni Wi-Fi | Documentazione Microsoft
 description: Usare i profili Wi-Fi per consentire agli utenti di connettersi alle reti Wi-Fi.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df3f5bd6f44b9de8c4f24a82c7f4e000f08aac5a
-ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
 
 
 ---
 
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Configurare i dispositivi per connettersi alle reti Wi-Fi aziendali
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Usare i profili Wi-Fi in di Microsoft Intune per distribuire le impostazioni di rete wireless agli utenti e ai dispositivi dell'organizzazione. Quando si distribuisce un profilo Wi-Fi, gli utenti hanno accesso alla rete Wi-Fi aziendale senza doverla configurare.
 
@@ -158,7 +160,7 @@ Queste tabelle contengono dettagli per le impostazioni di sicurezza disponibili 
 |**Tipo EAP**|Scegliere il tipo di protocollo EAP (Extensible Authentication Protocol) usato per autenticare le connessioni wireless protette:<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|Se si seleziona il tipo di sicurezza **WPA-Enterprise/WPA2-Enterprise**.|
 |**Selezionare i certificati radice per la convalida server**|Scegliere **Seleziona** e quindi scegliere il profilo del certificato radice trusted usato per autenticare la connessione. Per altre informazioni sulla creazione del profilo del certificato radice trusted, vedere [Proteggere l'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).|Se si seleziona un qualsiasi **tipo EAP**.|
 |**Metodo di autenticazione**|Selezionare il metodo di autenticazione usato per la connessione:<br /><br />-   **Certificati** per specificare il certificato client<br />-   **Nome utente e password** per specificare un metodo diverso per l'autenticazione|**Tipo EAP** è impostato su **PEAP** o **EAP-TTLS**.|
-|**Selezionare un metodo non EAP per l'autenticazione (identità interna)**|Selezionare la modalità di autenticazione della connessione:<br /><br />-   **Nessuno**<br />-   **Password Authentication Protocol (PAP)**<br />-   **Challenge Handshake Authentication Protocol (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP versione 2 (MS-CHAP v2)**<br /><br />Le opzioni disponibili dipendono dal tipo EAP selezionato.| **Metodo di autenticazione** è impostato su **Nome utente e password**.|
+|**Selezionare un metodo non EAP per l'autenticazione (identità interna)**|Selezionare la modalità di autenticazione della connessione:<br /><br />-   **Nessuno**<br />-   **Password Authentication Protocol (PAP)**<br />-   **Challenge Handshake Authentication Protocol (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP versione 2 (MS-CHAP v2)**<br /><br />Le opzioni disponibili dipendono dal tipo EAP selezionato.|**Metodo di autenticazione** è impostato su **Nome utente e password**.|
 |**Abilita privacy dell'identità (identità esterna)**|Specificare il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.|Se **Tipo EAP** è **PEAP** o **EAP-TTLS**.|
 |**Selezionare un certificato client per l'autenticazione client (certificato di identità)**|Scegliere **Seleziona** e quindi scegliere il profilo del certificato SCEP usato per autenticare la connessione. Per altre informazioni sulla creazione di un profilo del certificato SCEP, vedere [Proteggere l'accesso alle risorse con i profili certificato](secure-resource-access-with-certificate-profiles.md).|Se il tipo di sicurezza è **WPA-Enterprise/WPA2-Enterprise** e viene selezionato un qualsiasi **tipo EAP**.|
 
@@ -181,6 +183,6 @@ Per informazioni sulla creazione di un profilo Wi-Fi con una chiave precondivisa
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

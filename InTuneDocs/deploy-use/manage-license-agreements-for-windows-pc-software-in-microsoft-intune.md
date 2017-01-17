@@ -1,11 +1,11 @@
 ---
-title: Gestire i contratti di licenza software per PC che eseguono il client del software Intune | Microsoft Intune
+title: Gestire i contratti di licenza software per PC che eseguono il client software di Intune | Documentazione Microsoft
 description: Intune consente di gestire i contratti di licenza del software acquistati tramite Contratti multilicenza Microsoft e del software acquistato tramite altri canali.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6eead7cd7f04641687b334c8f0c09a3af1f9b4ba
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 47c923cf145a7783a1bc2222442831fcbc0f6a47
 
 
 ---
 
-# Gestire i contratti di licenza del software per PC Windows in Microsoft Intune
+# <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gestire i contratti di licenza del software per PC Windows in Microsoft Intune
 Microsoft Intune consente di aggiungere e gestire le informazioni sui contratti di licenza del software acquistato con i contratti multilicenza Microsoft. Queste operazioni possono essere eseguite anche per software Microsoft o non Microsoft acquistato in altri modi. È possibile organizzare le informazioni in gruppi logici.
 
 > [!IMPORTANT]
@@ -43,7 +43,7 @@ Nell'area di lavoro **Licenze** della console di amministrazione di Intune è po
 > [!TIP]
 > L'area di lavoro **Licenze** non viene visualizzata nella console di amministrazione finché non si gestisce almeno un PC Windows con il client per PC Windows di Intune.
 
-## Aggiungere contratti multilicenza Microsoft
+## <a name="add-microsoft-volume-licensing-agreements"></a>Aggiungere contratti multilicenza Microsoft
 I contratti multilicenza per Intune offrono informazioni sulle licenze per il software acquistato tramite contratti multilicenza Microsoft. È possibile aggiungere contratti multilicenza Microsoft a Intune specificando coppie di numeri di contratto. I numeri di contratto o di autorizzazione devono corrispondere ai numeri di licenza o di registrazione corretti. Le coppie dei numeri di contratto si ottengono da [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)al momento dell'acquisto dei contratti di licenza.
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx) scegliere **Licenze**.
@@ -86,7 +86,7 @@ I contratti multilicenza per Intune offrono informazioni sulle licenze per il so
 
         -   **Nome contratto**: specificare un nome univoco per il contratto.
 
-            Il nome del contratto può avere un massimo di 256 caratteri e non può contenere i seguenti caratteri: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Sono invece consentiti gli spazi.
+            Il nome del contratto può avere un massimo di 256 caratteri e non può contenere i caratteri seguenti: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Sono invece consentiti gli spazi.
 
         -   **Numero autorizzazione/contratto**: immettere il numero di autorizzazione/contratto della coppia di licenze.
 
@@ -123,13 +123,13 @@ Dopo aver aggiornato le informazioni sui contratti multilicenza, è possibile co
 > [!NOTE]
 > Il **Titolo prodotto** visualizzato per tutti i contratti multilicenza Microsoft è **Non disponibile**.
 
-## Aggiungere e modificare altri contratti di licenza software
+## <a name="add-and-edit-other-software-licensing-agreements"></a>Aggiungere e modificare altri contratti di licenza software
 È anche possibile aggiungere altri tipi di contratti di licenza a Intune oltre ai contratti multilicenza Microsoft. Questi contratti possono essere relativi a software non Microsoft oppure a software Microsoft acquistato presso un rivenditore.
 
 > [!IMPORTANT]
 > Prima di poter aggiungere un contratto, è necessario avere almeno un PC Windows registrato in Intune.  Inoltre, in almeno un computer registrato deve essere caricato un pacchetto software soggetto a licenza da usare per aggiungere un contratto di licenza.
 
-### Per aggiungere altri contratti software
+### <a name="to-add-other-software-agreements"></a>Per aggiungere altri contratti software
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx) scegliere **Licenze**.
 
@@ -139,7 +139,7 @@ Dopo aver aggiornato le informazioni sui contratti multilicenza, è possibile co
 
 4.  Nell'area **Aggiungi dettagli contratto** specificare quanto segue:
 
-    -   **Agreement name** (obbligatorio). Il nome del contratto può avere un massimo di 256 caratteri e non può contenere i seguenti caratteri: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Sono invece consentiti gli spazi.
+    -   **Agreement name** (obbligatorio). Il nome del contratto può avere un massimo di 256 caratteri e non può contenere i caratteri seguenti: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Sono invece consentiti gli spazi.
 
     -   **Autore** (obbligatorio). Quando si inizia a digitare il nome dell'autore, il servizio recupera tutti i nomi degli autori che contengono i caratteri digitati. Ad esempio, se si digita "soft", il servizio recupera tutti i nomi degli autori che contengono "soft" come parte del nome, come "Microsoft" e "Microsoft Research". I nomi degli autori vengono recuperati dal Software Asset Catalog. È necessario selezionare l'autore prima di immettere il titolo del prodotto.
 
@@ -168,7 +168,7 @@ Dopo aver aggiornato le informazioni sui contratti multilicenza, è possibile co
 
 Viene visualizzato l'elenco **Tutti i contratti** .
 
-## Gestire i contratti di licenza
+## <a name="manage-license-agreements"></a>Gestire i contratti di licenza
 È possibile aggiungere contratti di licenza software a gruppi di licenze. È possibile usare i gruppi di licenze per organizzare i contratti di licenza in unità adeguate alle esigenze dell'organizzazione. È anche possibile eliminare i contratti di licenza creati in precedenza.
 
 |||
@@ -181,6 +181,6 @@ Viene visualizzato l'elenco **Tutti i contratti** .
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 
