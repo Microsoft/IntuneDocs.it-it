@@ -1,11 +1,11 @@
 ---
-title: Risolvere i problemi relativi ai profili di posta elettronica | Microsoft Intune
+title: Risolvere i problemi relativi ai profili di posta elettronica | Documentazione Microsoft
 description: Problemi relativi ai profili di posta elettronica e procedure di risoluzione.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b6fcf0cae23581c0391009fd7d63498d3c7eb2d
-ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
 
 
 ---
 
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Risolvere i problemi relativi ai profili di posta elettronica in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Di seguito vengono elencati alcuni problemi relativi ai profili di posta elettronica e le relative procedure di risoluzione.
 
 Se queste informazioni non consentono di risolvere il problema, vedere [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md) per trovare altri modi per ottenere assistenza.
 
 
-## <a name="unable-to-send-images-from-email-account"></a>Impossibile inviare immagini dall'account di posta elettronica
+## <a name="unable-to-send-images-from--email-account"></a>Impossibile inviare immagini dall'account di posta elettronica
 Gli utenti con account di posta elettronica configurati automaticamente non riescono a inviare le immagini dai propri dispositivi.
 Questo errore si verifica quando l'opzione **Consenti l'invio di messaggi di posta elettronica da applicazioni di terze parti** non è abilitata.
 
@@ -61,7 +64,7 @@ Se l'utente ha installato un profilo di posta elettronica prima di eseguire il p
 
 Samsung KNOX non usa il nome host per identificare il profilo, quindi si consiglia di creare più profili di posta elettronica da distribuire nello stesso indirizzo di posta elettronica di host diversi perché questi verranno sovrascritti.
 
-## <a name="error-0x87d1fde8-for-knox-standard-device"></a>Errore 0x87D1FDE8 per il dispositivo KNOX Standard
+## <a name="error--0x87d1fde8-for-knox-standard-device"></a>Errore 0x87D1FDE8 per il dispositivo KNOX Standard
 **Problema**: dopo la creazione e la distribuzione di un profilo di posta elettronica di Exchange Active Sync per Samsung KNOX Standard per vari dispositivi Android, viene restituito l'errore **0x87D1FDE8** o **correzione non riuscita** nelle proprietà del dispositivo &gt; scheda Criteri.
 
 Verificare la configurazione del profilo EAS per Samsung KNOX e i criteri di origine. L'opzione di sincronizzazione Samsung Notes non è più supportata e non dovrebbe essere selezionata nel profilo. Assicurarsi che i dispositivi abbiano avuto un tempo sufficiente per elaborare i criteri, fino a 24 ore.
@@ -71,6 +74,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: App Android con criteri MAM | Microsoft Intune
+title: App Android con criteri MAM | Documentazione Microsoft
 description: "Questo argomento descrive cosa accade quando l&quot;app è gestita dai criteri di gestione delle app mobili."
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 945c9f48846fc37358c44b83990feed1f3694966
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: aeacfddb3ed42938dd9443e2734222c977436430
 
 
 ---
 
 # <a name="what-to-expect-when-your-android-app-is-managed-by-mam-policies"></a>Aspettative dalla gestione dell'app per Android con criteri MAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Questo argomento descrive l'esperienza dell'utente finale con le app con criteri di gestione delle app mobili (MAM). I criteri di gestione delle app mobili (MAM, Mobile Application Management) vengono applicati solo quando le app vengono usate in un contesto di lavoro, ad esempio quando l'utente accede alle app con un account aziendale o accede ai file archiviati in un percorso OneDrive aziendale.
 ##  <a name="access-apps"></a>Accedere alle app
 

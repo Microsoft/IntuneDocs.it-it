@@ -1,5 +1,5 @@
 ---
-title: Impostazioni dei criteri di sicurezza dei dispositivi mobili | Microsoft Intune
+title: Impostazioni dei criteri di sicurezza dei dispositivi mobili | Documentazione Microsoft
 description: "Usare Intune per configurare una vasta gamma di impostazioni che è possibile distribuire in dispositivi gestiti nell&quot;organizzazione."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,17 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
 
 
 
 ---
 
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di sicurezza dei dispositivi mobili in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > Microsoft Intune include ora criteri di configurazione distinti per ogni piattaforma del dispositivo. Tali criteri comprendono le impostazioni più aggiornate che è possibile usare. È possibile continuare a usare i criteri di sicurezza del dispositivo mobile. Tutte le distribuzioni esistenti continueranno a funzionare. È tuttavia consigliabile pianificare la migrazione ai nuovi criteri di configurazione non appena possibile, poiché i criteri di sicurezza del dispositivo verranno rimossi in futuro.
 
@@ -53,7 +56,7 @@ I criteri di sicurezza per i dispositivi mobili di Intune consentono di configur
 |**Lunghezza minima password**|sì|Sì|Sì|Sì|sì|
 |**Consenti password semplici**<br /><br />Le password semplici includono "0000" e "1234".|No|No|Sì|Sì|No|
 |**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|sì|Sì|Sì|Sì|sì|
-|**Minuti di inattività prima dello spegnimento dello schermo**1|sì|Sì|Sì|Sì|sì|
+|**Minuti di inattività prima dello spegnimento dello schermo**<sup>1</sup>|sì|Sì|Sì|Sì|sì|
 |**Scadenza password (giorni)**|sì|Sì|Sì|Sì|sì|
 |**Ricorda cronologia password**|sì|Sì|Sì|Sì|Sì|
 |**Ricorda cronologia password** – **Impedisci riutilizzo delle password precedenti**|sì|Sì|Sì|Sì|sì|
@@ -61,7 +64,7 @@ I criteri di sicurezza per i dispositivi mobili di Intune consentono di configur
 |**Consenti password grafica e PIN**|sì|Sì|No|No|No|
 |**Minuti di inattività prima che venga richiesta la password**|No|No|No|Sì|No|
 |**Consenti sblocco tramite impronta digitale**|No|No|No|iOS 7 e versioni successive|No|
-1 Nei dispositivi iOS, se le impostazioni **Minuti di inattività prima dello spegnimento dello schermo** e **Minuti di inattività prima che venga richiesta la password** sono configurate, vengono applicate in sequenza. Ad esempio, se si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo 5 minuti e il dispositivo viene bloccato dopo altri 5 minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio, il dispositivo viene bloccato 5 minuti dopo che l'utente spegne lo schermo.
+<sup>1</sup>Nei dispositivi iOS, se le impostazioni **Minuti di inattività prima dello spegnimento dello schermo** e **Minuti di inattività prima che venga richiesta la password** sono configurate, vengono applicate in sequenza. Ad esempio, se si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo 5 minuti e il dispositivo viene bloccato dopo altri 5 minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio, il dispositivo viene bloccato 5 minuti dopo che l'utente spegne lo schermo.
 
 Quando si distribuisce un criterio relativo alla lunghezza della password per dispositivi che eseguono Windows RT, gli utenti saranno costretti a reimpostare la password, anche se la password corrente è conforme ai requisiti dei criteri.
 
@@ -69,9 +72,9 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Richiedi crittografia sul dispositivo mobile**1<br /><br />Per i dispositivi Windows Phone 8, è necessario impostare su **Sì**.<br /><br />Per abilitare la crittografia su dispositivi iOS, abilitare l'impostazione **richiedono una password per sbloccare i dispositivi mobili**.|Sì|No|Sì|No|sì|
+|**Richiedi crittografia sul dispositivo mobile**<sup>1</sup><br /><br />Per i dispositivi Windows Phone 8, è necessario impostare su **Sì**.<br /><br />Per abilitare la crittografia su dispositivi iOS, abilitare l'impostazione **richiedono una password per sbloccare i dispositivi mobili**.|Sì|No|Sì|No|sì|
 |**Richiedi crittografia sulle schede di memoria**<br /><br />Questa impostazione si applica ai dispositivi che sono gestiti anche da Exchange ActiveSync.|n/d|n/d|n/d <br />Le app e i dati associati vengono crittografati automaticamente.|n/d|sì|
-1 Altre informazioni per i dispositivi che eseguono Windows 8.1:
+<sup>1</sup>Altre informazioni per i dispositivi che eseguono Windows 8.1:
 
 -   Per applicare la crittografia su dispositivi che eseguono Windows 8.1, è necessario installare il [dicembre 2014 MDM aggiornamento del client per Windows](http://support.microsoft.com/kb/3013816) su ogni dispositivo.
 
@@ -105,7 +108,7 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 |**Consenti ripristino impostazioni predefinite**|No|No|No|No|Sì (solo Samsung KNOX Standard)|
 
 
-## <a name="cloud-settings-documents-and-data"></a>Impostazioni cloud - Documenti e dati
+## <a name="cloud-settings--documents-and-data"></a>Impostazioni cloud - Documenti e dati
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -116,7 +119,7 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 |**URL cartelle di lavoro**<br /><br />Questa impostazione specifica l'URL della cartella di lavoro per consentire la sincronizzazione dei documenti tra i dispositivi.|sì|No|No|No|No|
 |**Consenti backup di Google**|No|No|No|No|Sì (solo Samsung KNOX Standard)|
 
-## <a name="cloud-settings-accounts-and-synchronization"></a>Impostazioni cloud - Account e sincronizzazione
+## <a name="cloud-settings--accounts-and-synchronization"></a>Impostazioni cloud - Account e sincronizzazione
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -127,7 +130,7 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Consenti agli utenti di eseguire il download degli allegati di posta elettronica**1|n/d|n/d|n/d|n/d|n/d|
+|**Consenti agli utenti di eseguire il download degli allegati di posta elettronica**<sup>1</sup>|n/d|n/d|n/d|n/d|n/d|
 |**Periodo di sincronizzazione della posta elettronica** <br /><br />Questa impostazione si applica ai dispositivi che sono gestiti anche da Exchange ActiveSync.|n/d|n/d|n/d|n/d|n/d|
 |**Consente ai dispositivi mobili che non supportano completamente queste impostazioni di eseguire la sincronizzazione con Exchange (Exchange ActiveSync)** <br /><br />Questa impostazione si applica ai dispositivi che sono gestiti anche da Exchange ActiveSync.|n/d|n/d|n/d|n/d|n/d|
 |**Rendi l'account Microsoft facoltativo nell'applicazione Windows Mail**|sì|No|No|No|No|
@@ -214,6 +217,6 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

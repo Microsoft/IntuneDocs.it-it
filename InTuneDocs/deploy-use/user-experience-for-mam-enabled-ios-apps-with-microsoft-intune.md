@@ -1,11 +1,11 @@
 ---
-title: App iOS con criteri MAM | Microsoft Intune
+title: App iOS con criteri MAM | Documentazione Microsoft
 description: "Questo argomento descrive cosa accade quando l&quot;app iOS è gestita da criteri di gestione delle app mobili."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,26 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 3aa6728036ff66ea489176063af2d136bef4c7cc
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f5a26d3d5ed060571892d91637dc12cae08f1a69
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-mam-policies"></a>Aspettative dalla gestione dell'app per iOS con criteri MAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
  Questo argomento descrive l'esperienza dell'utente finale con le app con criteri di gestione delle app mobili (MAM). I criteri di gestione delle app mobili (MAM, Mobile Application Management) vengono applicati solo quando le app vengono usate nel contesto di lavoro, ad esempio quando l'utente accede alle app con un account aziendale o accede ai file archiviati in un percorso OneDrive aziendale.
 
 ##  <a name="access-apps"></a>Accedere alle app
 
-Se il dispositivo **non è registrato in Intune**, all'utente verrà chiesto di riavviare l'app la prima volta che la usa.  Il riavvio è necessario per consentire l'applicazione dei criteri MAM all'app. La schermata seguente dell'app Skype illustra questa richiesta di riavvio:
+Se il dispositivo **non è registrato in Intune**, all'utente verrà chiesto di riavviare l'app la prima volta che la usa.  Il riavvio è necessario per consentire l'applicazione dei criteri MAM all'app. 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![Screenshot di un dispositivo iOS con la richiesta del PIN](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 Per i dispositivi **registrati per la gestione in Intune**, l'utente riceve il messaggio che l'app è ora gestita dalla società:
 
@@ -68,6 +73,6 @@ Se si usa un dispositivo iOS, quando si prova ad aggiungere un secondo account a
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

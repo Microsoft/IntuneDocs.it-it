@@ -1,25 +1,27 @@
 ---
-title: La password non soddisfa i requisiti dell&quot;amministratore IT | Microsoft Intune
+title: La password non soddisfa i requisiti dell&quot;amministratore IT | Documentazione Microsoft
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/20/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: b13d2a37cc6a1e4d2b6287fc8d43675441386f03
-ms.openlocfilehash: fa9a3a89e50e8d03beb2efc067925ca0a4fcd68c
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 14ac49d73648244f71eff90b71272b60a07cd37e
 
 
 ---
 
-# La password non soddisfa i requisiti dell'amministratore IT
+# <a name="password-does-not-meet-it-administrator-requirements"></a>La password non soddisfa i requisiti dell'amministratore IT
 
 La password usata per accedere alle risorse aziendali o dell'istituto di istruzione non soddisfa uno o più requisiti impostati dall'amministratore IT. Per risolvere il problema, seguire le istruzioni visualizzate nel dispositivo. Di seguito sono elencate le descrizioni dei problemi.
 
@@ -31,7 +33,7 @@ Per la procedura su come impostare il PIN o la password, usare il collegamento c
 
 Descrizioni dei problemi relativi al PIN o alla password:
 
-- **La password non contiene caratteri complessi**. L'amministratore IT richiede di usare una password con caratteri complessi. Caratteri complessi sono, ad esempio, numeri, lettere maiuscole e simboli quali $, % e #. 
+- **La password non contiene caratteri complessi**. L'amministratore IT richiede di usare una password con caratteri complessi. Caratteri complessi sono, ad esempio, numeri, lettere maiuscole e simboli quali $, % e #.
 
 - **La password è troppo semplice e non abbastanza sicura**. Password semplici sono, ad esempio, 1234 o 1111. Se non si sa con sicurezza quali siano i tipi di password consentiti, assicurarsi che la password non contenga numeri in sequenza o ripetuti, come nell'esempio.
 
@@ -41,14 +43,14 @@ Descrizioni dei problemi relativi al PIN o alla password:
 
 - **La password è troppo breve**. L'amministratore IT richiede di usare una password più lunga con più caratteri.
 
-- **La password è stata usata troppo di recente**. L'amministratore IT non consente l'uso di password usate in passato. Scegliere una password non usata in precedenza. 
+- **La password è stata usata troppo di recente**. L'amministratore IT non consente l'uso di password usate in passato. Scegliere una password non usata in precedenza.
 
-- **La password non è abbastanza complessa da soddisfare i requisiti**. L'amministratore IT richiede di usare una password con caratteri più complessi. Provare a usare caratteri come numeri, lettere maiuscole e simboli quali $, % e #. 
+- **La password non è abbastanza complessa da soddisfare i requisiti**. L'amministratore IT richiede di usare una password con caratteri più complessi. Provare a usare caratteri come numeri, lettere maiuscole e simboli quali $, % e #.
 
 Se si ha difficoltà a creare una password conforme ai requisiti, rivolgersi all'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

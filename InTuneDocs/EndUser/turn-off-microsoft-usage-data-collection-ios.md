@@ -1,40 +1,38 @@
 ---
-title: Disattivare la raccolta dati di utilizzo di Microsoft per iOS | Microsoft Intune
+title: Come disattivare la raccolta dati di Microsoft | Documentazione Microsoft
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 29fb52fd86aa84a2c5bab6be14d71d198d6b8deb
 
 
 ---
 
-
 # <a name="turn-off-microsoft-usage-data-collection"></a>Disattivare la raccolta dati di utilizzo di Microsoft
 
-Per migliorare i propri prodotti e servizi, Microsoft raccoglie automaticamente dati anonimi sulle prestazioni e sull'affidabilità dell'app Portale aziendale e sulle relative modalità d'uso.
+Microsoft raccoglie automaticamente determinati dati per i suoi prodotti e servizi allo scopo di migliorare l'affidabilità e le prestazioni dei prodotti Microsoft, inclusa l'app Portale aziendale. Anche se questi dati sono resi anonimi, alcuni utenti potrebbero non acconsentire alla raccolta. Gli amministratori IT non hanno alcun controllo sulla raccolta di questi dati e non possono modificare la selezione di questa impostazione.
 
 Per disattivare la raccolta dei dati di utilizzo nel dispositivo iOS, andare a **Impostazioni**, toccare **Portale aziendale** e quindi disattivare l'impostazione **Dati di utilizzo**.
-
-Gli amministratori IT non hanno alcun controllo sulla raccolta dei dati e non possono modificare la selezione di questa impostazione.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

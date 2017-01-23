@@ -1,5 +1,5 @@
 ---
-title: "Modalità di recupero delle app per gli utenti di Android | Microsoft Intune"
+title: "Modalità di recupero delle app per gli utenti di Android | Documentazione Microsoft"
 description: Metodi per rendere disponibili le app Android per gli utenti finali
 keywords: 
 author: barlanmsft
@@ -14,14 +14,17 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1c131a017e08482f0c31f7f4579cc8d317a366a0
-ms.openlocfilehash: 15151552da5365958ff784b678e58ae5c88fed0e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 370dd5d4a96253f0b7d208ef85659beeace18739
 
 
 ---
 
 
 # <a name="how-your-android-users-get-their-apps"></a>Modalità di recupero delle app per gli utenti di Android
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Usare queste informazioni per comprendere come e dove gli utenti Android possono ottenere le app che vengono distribuite tramite Microsoft Intune. Le informazioni possono variare a seconda del tipo di dispositivo, ad esempio dispositivi Android nativi o dispositivi Samsung KNOX Standard.
 
 ## <a name="native-non-samsung-knox-standard-android-devices"></a>Dispositivi Android nativi (non Samsung KNOX Standard)
@@ -53,6 +56,6 @@ Le app possono essere gestite o non gestite, come descritto di seguito. Il proce
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

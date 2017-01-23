@@ -1,30 +1,32 @@
 ---
-title: 'Procedura: Impostare il periodo prima che il dispositivo Android venga bloccato | Microsoft Intune'
+title: Come impostare il periodo prima che il dispositivo Android venga bloccato | Documentazione Microsoft
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 5df88351d84da28c93d010b8484601b7dbcdaf7e
 
 
 ---
 
-# Procedura: Impostare il periodo prima che il dispositivo Android venga bloccato
+# <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>Procedura: Impostare il periodo prima che il dispositivo Android venga bloccato
 Per riconnettersi al lavoro, è necessario impostare il timeout della password nel dispositivo attenendosi alle istruzioni relative al tipo di dispositivo in uso.
 
-## Dispositivo nativo (non Samsung KNOX)
+## <a name="native-non-samsung-knox-device"></a>Dispositivo nativo (non Samsung KNOX)
 
 1.  In **Settings** (Impostazioni) nel dispositivo toccare **Security** (Sicurezza) &gt; **Automatically Lock** (Blocco automatico), che in alcuni dispositivi corrisponde a **Lock phone after** (Blocca telefono dopo).
 
@@ -32,7 +34,7 @@ Per riconnettersi al lavoro, è necessario impostare il timeout della password n
 
 2.  Selezionare il valore di timeout della password.
 
-## Dispositivo Samsung KNOX
+## <a name="samsung-knox-device"></a>Dispositivo Samsung KNOX
 
 1.  In **Settings** (Impostazioni) nel dispositivo toccare **Lock screen and security** (Schermata di blocco e sicurezza) &gt; **Lock automatically** (Blocca automaticamente).
 
@@ -44,6 +46,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

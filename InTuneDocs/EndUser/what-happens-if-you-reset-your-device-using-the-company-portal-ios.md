@@ -1,5 +1,5 @@
 ---
-title: Che cosa avviene se si reimposta un dispositivo iOS con l&quot;app Portale aziendale? | Microsoft Intune
+title: Che cosa avviene se si reimposta un dispositivo iOS con l&quot;app Portale aziendale? | Documentazione Microsoft
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 1ec1c17d7ae18c227427fdd708b9fe76a0f552be
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: db943ec05e38f09bb8de2f3ec4836aeb0908f3d4
 
 
 ---
@@ -44,6 +46,6 @@ Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

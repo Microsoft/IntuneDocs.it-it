@@ -1,11 +1,11 @@
 ---
-title: Personalizzare il portale aziendale | Microsoft Intune
+title: Personalizzare il portale aziendale | Documentazione Microsoft
 description: "Il portale aziendale di Intune consente agli utenti di eseguire attività comuni come registrare i dispositivi, installare app e trovare informazioni sul reparto IT."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 12/13/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 04cccd410417dca4477c0d6cd61b0940dda8c389
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
 
 
 ---
 
 # <a name="customize-the-company-portal"></a>Personalizzare il portale aziendale
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Il Portale aziendale di Intune è il punto in cui gli utenti possono accedere ai dati aziendali ed eseguire attività comuni quali la registrazione dei dispositivi, l'installazione di app e la ricerca delle informazioni di assistenza del reparto IT.
 
 Il Portale aziendale di Intune consente agli utenti l'accesso ai dati e alle app aziendali. Il Portale aziendale è disponibile in due forme:
 
--   **App Portale aziendale**: un'applicazione disponibile nei dispositivi gestiti con Intune. Altre informazioni sulle app Portale aziendale per [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) e [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
+-   **App Portale aziendale**: un'applicazione disponibile nei dispositivi gestiti con Intune. Altre informazioni sulle app Portale aziendale per [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) e [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
 - **Sito Web del portale aziendale**: sito Web che consente agli utenti finali di eseguire la maggior parte delle attività eseguibili tramite l'app Portale aziendale. L'URL del portale aziendale di Intune è [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Altre informazioni su questo sito Web nell'articolo [Uso del sito Web del Portale aziendale di Intune](/Intune/EndUser/using-the-intune-company-portal-website).
@@ -42,11 +45,6 @@ Alcune attività che gli utenti possono eseguire nel Portale aziendale sono:
 -   Bloccare in remoto il dispositivo
 -   Scaricare il software distribuito dall'organizzazione
 -   Contattare il reparto IT per richiedere assistenza
-
-> [!NOTE]
-> L'app Portale aziendale non è ancora disponibile in alcuni paesi.
-> __iOS__: l'app Portale aziendale per iOS è pubblicata in [tutte le aree disponibili](https://go.microsoft.com/fwlink/?linkid=831284) per Apple iOS App Store.
-> __Android__: l'app Portale aziendale per Android non è attualmente disponibile in Cina. Per questi paesi una soluzione alternativa consiste nel [trasferire localmente la versione per Android dell'app Portale aziendale](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
 ## <a name="customize-company-portal-settings"></a>Personalizzare le impostazioni del portale aziendale
 La personalizzazione del portale aziendale consente di offrire agli utenti finali un'esperienza familiare e utile. Accedere alla [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) come amministratore tenant o del servizio, scegliere **Amministrazione** &gt; **Portale aziendale** e configurare le impostazioni del Portale aziendale.
@@ -91,6 +89,6 @@ Una volta salvate le modifiche, è possibile usare i collegamenti riportati in f
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

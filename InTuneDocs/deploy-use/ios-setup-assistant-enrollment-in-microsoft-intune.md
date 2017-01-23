@@ -1,5 +1,5 @@
 ---
-title: Registrare i dispositivi iOS con Assistente di configurazione | Microsoft Intune
+title: Registrare i dispositivi iOS con Assistente di configurazione | Documentazione Microsoft
 description: "Registrare i dispositivi iOS di proprietà dell&quot;azienda con lo strumento Apple Configurator per ripristinare le impostazioni predefinite del dispositivo e prepararlo all&quot;esecuzione di Assistente configurazione."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 01de894167a65f6b3a46808610232feb8dd7e536
 
 
 ---
 
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Registrare i dispositivi iOS con Apple Configurator mediante Assistente configurazione
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune supporta la registrazione di dispositivi iOS di proprietà dell'azienda con lo strumento [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) in esecuzione in un computer Mac. Questo processo ripristina le impostazioni predefinite del dispositivo e lo prepara per l'esecuzione di Assistente configurazione, installando i criteri della società per il nuovo utente del dispositivo.
 
 ## <a name="setup-assistant-enrollment-for-ios-devices-with-microsoft-intune"></a>Registrazione di Assistente configurazione per i dispositivi iOS con Microsoft Intune
@@ -151,6 +154,6 @@ Con Apple Configurator è possibile ripristinare le impostazioni predefinite dei
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

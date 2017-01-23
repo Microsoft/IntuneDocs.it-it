@@ -1,12 +1,12 @@
 ---
 
-title: Impostazioni dei criteri di Android e Samsung KNOX Standard | Microsoft Intune
+title: Impostazioni dei criteri di Android e Samsung KNOX Standard | Documentazione Microsoft
 description: "Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi Android gestiti con Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: a90e5bc6ed9c4c7447f6ed673f9b75db99257c04
+ms.openlocfilehash: 3f7236989ec2d444601aba4a594175a289e2fc77
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di Android e Samsung KNOX Standard in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune offre una gamma di impostazioni generali integrate che è possibile configurare nei dispositivi Android. È anche possibile specificare i valori OMA-URI (Open Mobile Alliance Uniform Resource Identifier) per creare impostazioni personalizzate non disponibili in Intune.
 
@@ -144,6 +146,8 @@ Nell'elenco **App conformi &amp; Non conformi** specificare un elenco di app con
 |**Modifica**|Consente di modificare il nome, l'autore e l'URL dell'app selezionata.|
 |**Eliminazione**|Elimina l'app selezionata dall'elenco.|
 
+I criteri contenenti le impostazioni per le app conformi e non conformi devono essere distribuiti ai gruppi di utenti.
+
 ### <a name="kiosk-mode-settings"></a>Impostazioni della modalità tutto schermo
 Specificare le impostazioni seguenti per i **dispositivi Samsung KNOX Standard**:
 
@@ -177,9 +181,7 @@ Esempio: Cercare Microsoft Office Mobile in Google Play. L'URL usato sarà **htt
 Usare i **Criteri di configurazione personalizzati Android** di Microsoft Intune per distribuire le impostazioni OMA-URI che è possibile usare per controllare le funzionalità nei dispositivi Android. Si tratta di impostazioni standard che molti produttori di dispositivi mobili usano per controllare le funzionalità del dispositivo.
 
 Questa funzionalità consente di distribuire le impostazioni Android non configurabili con i criteri di Intune.
-
-> [!NOTE]
-> I criteri personalizzati Android attualmente supportano la configurazione di impostazioni Wi-Fi solo per dispositivi Android che includono una chiave precondivisa.
+Intune supporta attualmente un numero limitato di criteri personalizzati Android. Vedere gli esempi in questo argomento per scoprire quali criteri è possibile configurare.
 
 ### <a name="general-settings"></a>Impostazioni generali
 
@@ -209,6 +211,6 @@ Questa funzionalità consente di distribuire le impostazioni Android non configu
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

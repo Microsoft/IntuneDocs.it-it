@@ -1,37 +1,40 @@
 ---
-title: Come trovare il numero di serie del dispositivo? | Microsoft Intune
+title: Come trovare il numero di serie del dispositivo iOS | Documentazione Microsoft
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6c4fedc-47b6-44b1-8c59-2fb81417f978
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 3831b4897596c7b49caaee76cb7063bab4399216
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 613bbe5da9a7f9dcbcb1af1a0b1c00b7aaa88efe
 
 
 ---
 
+# <a name="how-do-i-find-the-serial-number-on-my-device"></a>Come trovare il numero di serie del dispositivo?
 
-# Come trovare il numero di serie del dispositivo?
+Il numero di serie del dispositivo lo identifica in modo univoco e può essere utile all'amministratore per determinate attività, come la sostituzione del dispositivo con uno nuovo. Per individuare il numero di serie:
 
-Nei dispositivi che eseguono iOS 8.0 e versioni successive toccare l'icona **Impostazioni**, toccare **Generali** > **Informazioni su** e quindi scorrere verso il basso fino a trovare il **numero di serie**.
+1. Passare alla schermata __Home__.
+2. Toccare l'app __Impostazioni__ e quindi __Generali__.
+3. Toccare __Info__ e quindi scorrere fino a __N° di serie__.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

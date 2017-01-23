@@ -1,11 +1,11 @@
 ---
-title: Usare i criteri per semplificare la gestione dei PC Windows | Microsoft Intune
+title: Usare i criteri per semplificare la gestione dei PC Windows | Documentazione Microsoft
 description: Descrive i criteri di gestione dei PC Windows ed elenca le impostazioni per Microsoft Intune Center.
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 10/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1c6800ea3fde39603478437de6da7200ecae5afb
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Usare i criteri per semplificare la gestione dei PC
 
-I PC Windows che eseguono il client software di Intune possono essere gestiti mediante i criteri **Gestione Computer** di Intune. Usare i criteri **Gestione computer** di Intune per configurare le impostazioni in Microsoft Intune Center, controllare gli aggiornamenti dei PC e configurare Windows Firewall per i PC.
+Per gestire i desktop di Windows come PC, eseguendo il client software di Intune su di essi, è possibile usare solo i criteri in **Gestione computer** nella console di amministrazione di Intune. Tutti gli altri criteri elencati nella console di amministrazione sono destinati solo ai dispositivi mobili. I criteri **Gestione computer** consentono di configurare le impostazioni in Microsoft Intune Center, controllare gli aggiornamenti dei PC e configurare Windows Firewall per i PC.
 
 ![Modello di criteri per PC Windows](../media/pc_policy_template.png)
 
@@ -63,6 +63,6 @@ Vedere le risorse seguenti per informazioni sui criteri e le impostazioni che è
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

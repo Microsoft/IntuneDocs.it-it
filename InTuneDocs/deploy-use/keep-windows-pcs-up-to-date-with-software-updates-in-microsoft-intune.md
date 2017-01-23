@@ -1,11 +1,11 @@
 ---
-title: Aggiornamenti software per PC Windows | Microsoft Intune
+title: Aggiornamenti software per PC Windows | Documentazione Microsoft
 description: "Intune consente di tenere aggiornati i computer garantendo l&quot;installazione veloce delle patch e degli aggiornamenti software più recenti."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6878d8a4e95280cfd8a919efa4c2f1651ca14024
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 14ef9f901969449ca8b3c60a187da6b6e654bd67
 
 
 ---
 
-# Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune
+# <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune
 Microsoft Intune consente di proteggere i computer gestiti in diversi modi, ad esempio con la gestione degli aggiornamenti software, che consente di mantenere i computer aggiornati installando rapidamente le patch e gli aggiornamenti software più recenti.
 
 Se il client Intune non è ancora stato installato nei computer, vedere [Install the Windows PC client with Microsoft Intune (Installare il client PC Windows con Microsoft Intune)](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -34,10 +34,10 @@ Mentre gli aggiornamenti vengono approvati e installati, è possibile verificare
 
 Le sezioni seguenti consentono di mantenere aggiornato il software sui computer gestiti.
 
-## Prima di iniziare
+## <a name="before-you-start"></a>Prima di iniziare
 Prima di iniziare a creare e approvare degli aggiornamenti software, configurare e distribuire ai computer dei criteri che controllino come e quando gli aggiornamenti vengono installati.
 
-### Per configurare le impostazioni dei criteri di aggiornamento
+### <a name="to-configure-update-policy-settings"></a>Per configurare le impostazioni dei criteri di aggiornamento
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Criteri** &gt; **Panoramica** &gt; **Aggiungi criterio**.
 
@@ -57,7 +57,7 @@ La tabella seguente mostra i valori che possono essere configurati nei criteri e
     |**Pianificazione delle installazioni degli aggiornamenti obbligatori dell'agente client di Microsoft Intune** |Consente di pianificare l'installazione degli aggiornamenti del client.<br /><br />Valore consigliato: non configurato|
     |**Ritardo tra le richieste di riavviare Windows dopo l'installazione di applicazioni e aggiornamenti pianificati (minuti)** |Questa impostazione consente di specificare la frequenza (da 1 a 1440 minuti) con cui l'utente riceve la richiesta di riavviare Windows quando viene installato un aggiornamento pianificato o un'applicazione che richiede il riavvio di Windows e l'utente decide di posticipare il riavvio.<br /><br />Impostazione consigliata: **30 minuti** |
 
-## Aggiornare il software Microsoft
+## <a name="update-software-made-by-microsoft"></a>Aggiornare il software Microsoft
 L'aggiornamento del software Microsoft richiede un intervento minimo da parte dell'utente. Tuttavia, prima di iniziare, è necessario configurare:
 
 -   **Categorie di prodotti e classificazioni degli aggiornamenti** : consente di definire le categorie e le classificazioni degli aggiornamenti che si desidera rendere disponibili ai computer. Ad esempio, si può scegliere di installare solo gli aggiornamenti critici per Microsoft Office.
@@ -66,7 +66,7 @@ L'aggiornamento del software Microsoft richiede un intervento minimo da parte de
 
 Usare le due procedure seguenti per usare gli aggiornamenti software:
 
-### Configurare le categorie di prodotti e le classificazioni degli aggiornamenti che si desidera rendere disponibili ai computer gestiti
+### <a name="configure-the-product-categories-and-update-classifications-you-want-to-make-available-to-managed-computers"></a>Configurare le categorie di prodotti e le classificazioni degli aggiornamenti che si desidera rendere disponibili ai computer gestiti
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Amministrazione**&gt;**Aggiornamenti**.
 
@@ -79,7 +79,7 @@ Usare le due procedure seguenti per usare gli aggiornamenti software:
 
 4.  Scegliere **Salva** per memorizzare le selezioni.
 
-### Per configurare le regole di approvazione automatica degli aggiornamenti software
+### <a name="to-configure-automatic-approval-rules-for-software-updates"></a>Per configurare le regole di approvazione automatica degli aggiornamenti software
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Amministrazione**&gt;**Aggiornamenti**.
 
@@ -110,7 +110,7 @@ La nuova regola viene mostrata nella sezione **Regole di approvazione automatica
 > Quando si crea una regola di approvazione automatica, verranno approvati soltanto gli aggiornamenti futuri e non quelli precedenti che esistono già in Intune. Per approvare gli aggiornamenti è necessario eseguire la regola di approvazione automatica.
 
 
-### Per modificare, eseguire o eliminare una regola di approvazione automatica degli aggiornamenti
+### <a name="to-edit-run-or-delete-an-automatically-approved-update-rule"></a>Per modificare, eseguire o eliminare una regola di approvazione automatica degli aggiornamenti
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Amministrazione**&gt;**Aggiornamenti**.
 
@@ -125,10 +125,10 @@ La nuova regola viene mostrata nella sezione **Regole di approvazione automatica
         > [!NOTE]
         > L'eliminazione di una regola non influisce sugli aggiornamenti precedenti approvati da tale regola eliminata.
 
-## Aggiornare software non Microsoft
+## <a name="update-software-not-made-by-microsoft"></a>Aggiornare software non Microsoft
 È possibile distribuire gli aggiornamenti per il software non Microsoft. A questo scopo, usare la procedura guidata **Caricamento aggiornamento** per copiare l'aggiornamento nello spazio di memorizzazione nel cloud, dopo di che è possibile approvare o rifiutare l'aggiornamento nello stesso modo usato per il software Microsoft.
 
-### Per caricare e configurare un aggiornamento di terze parti
+### <a name="to-upload-and-configure-a-third-party-update"></a>Per caricare e configurare un aggiornamento di terze parti
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Aggiornamenti** &gt; **Panoramica** &gt; **Carica**.
 
@@ -188,7 +188,7 @@ L'aggiornamento caricato viene archiviato nella memoria cloud di Intune. Se lo s
 
 Una volta caricato in Intune, un aggiornamento di terze parti viene visualizzato nell'area di lavoro **Aggiornamenti** nel riquadro **Tutti gli aggiornamenti**. È possibile quindi approvare e distribuire l'aggiornamento. Per altre informazioni, vedere la sezione "Approvare e rifiutare gli aggiornamenti".
 
-## Approvare e rifiutare gli aggiornamenti
+## <a name="approve-and-decline-updates"></a>Approvare e rifiutare gli aggiornamenti
 Quando gli aggiornamenti sono pronti per essere installati, un messaggio viene visualizzato sulla pagina **Panoramica aggiornamenti** dell'area di lavoro **Aggiornamenti** , in corrispondenza di **Stato aggiornamento**. Scegliere questo messaggio per aprire la pagina **Tutti gli aggiornamenti** e verificare quali aggiornamenti sono pronti per l'approvazione.
 
 È possibile usare l'elenco **Filtri** per semplificare la ricerca degli aggiornamenti. Ad esempio, è possibile visualizzare solo gli aggiornamenti non riusciti o gli aggiornamenti sostituiti.
@@ -197,14 +197,14 @@ Quando si seleziona un aggiornamento dall'elenco, sono disponibili ulteriori com
 
 |Attività|Dettagli|
 |--------|--------------------|
-|**Visualizzare le proprietà**|Visualizza informazioni dettagliate sull'aggiornamento, incluso il numero di computer a cui è applicabile.|
+|**Visualizza proprietà**|Visualizza informazioni dettagliate sull'aggiornamento, incluso il numero di computer a cui è applicabile.|
 |**Modifica**|Solo per gli aggiornamenti non Microsoft. Consente di modificare le proprietà dell'aggiornamento.|
 |**Approva**|Approva l'aggiornamento selezionato e consente di configurare i gruppi a cui sarà distribuito. Per altre informazioni, vedere la procedura **Per approvare gli aggiornamenti** in questo argomento.|
-|**Rifiuto**|Rimuove tutte le approvazioni precedenti per l'aggiornamento e nasconde l'aggiornamento dalle visualizzazioni predefinite. Inoltre, l'opzione rimuove tutti i dati di report per l'aggiornamento.<br /><br />Se si desidera individuare un aggiornamento rifiutato in un secondo tempo, impostare il filtro su **Rifiutato** nella pagina **Tutti gli aggiornamenti**. È possibile quindi approvare questo aggiornamento come obbligatorio.<br /><br />Se un aggiornamento è stato rifiutato perché è scaduto in Microsoft Update, l'aggiornamento non può essere approvato nella console di amministrazione di Intune.<br /><br />Se si elimina un criterio Aggiornamenti distribuito nei computer, le impostazioni del criterio Aggiornamenti vengono reimpostate sullo stato predefinito per il sistema operativo installato nei computer.|
+|**Rifiuta**|Rimuove tutte le approvazioni precedenti per l'aggiornamento e nasconde l'aggiornamento dalle visualizzazioni predefinite. Inoltre, l'opzione rimuove tutti i dati di report per l'aggiornamento.<br /><br />Se si desidera individuare un aggiornamento rifiutato in un secondo tempo, impostare il filtro su **Rifiutato** nella pagina **Tutti gli aggiornamenti**. È possibile quindi approvare questo aggiornamento come obbligatorio.<br /><br />Se un aggiornamento è stato rifiutato perché è scaduto in Microsoft Update, l'aggiornamento non può essere approvato nella console di amministrazione di Intune.<br /><br />Se si elimina un criterio Aggiornamenti distribuito nei computer, le impostazioni del criterio Aggiornamenti vengono reimpostate sullo stato predefinito per il sistema operativo installato nei computer.|
 |**Eliminazione**|Solo per gli aggiornamenti non Microsoft. Elimina l'aggiornamento selezionato.|
 |**Carica**|Avvia la procedura guidata **Caricamento aggiornamento** che consente di caricare gli aggiornamenti non Microsoft da distribuire.|
 
-### Per approvare gli aggiornamenti
+### <a name="to-approve-updates"></a>Per approvare gli aggiornamenti
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Aggiornamenti** &gt; **Panoramica** &gt; **Nuovi aggiornamenti da approvare**.
 
@@ -250,11 +250,11 @@ Quando si seleziona un aggiornamento dall'elenco, sono disponibili ulteriori com
 6.  È possibile controllare il riquadro dei dettagli nella parte inferiore della pagina **Tutti gli aggiornamenti** per i messaggi di promemoria sull'aggiornamento.
 
 
-### Vedere anche
-[Policies to protect Windows PCs (Criteri per la protezione dei PC Windows)](policies-to-protect-windows-pcs-in-microsoft-intune.md)
+### <a name="see-also"></a>Vedere anche
+[Criteri per la protezione dei PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

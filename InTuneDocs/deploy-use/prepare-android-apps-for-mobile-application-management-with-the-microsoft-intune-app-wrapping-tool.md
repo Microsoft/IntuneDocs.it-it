@@ -1,11 +1,11 @@
 ---
-title: Eseguire la disposizione testo delle app Android con lo strumento per la disposizione testo per app | Microsoft Intune
+title: Eseguire il wrapping delle app Android con lo strumento di wrapping delle app | Documentazione Microsoft
 description: Usare le informazioni in questo articolo per scoprire come eseguire il wrapping delle app Android senza doverne modificare il codice. Preparare le app in modo da applicare i criteri di gestione delle app mobili.
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: e8ca141b31104fb5759d9796f19b618debe74752
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 9a9899e192db1488c9a2c0fd38ffed6cef625c34
 
 
 ---
 
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Usare lo strumento di wrapping delle app di Microsoft Intune per Android per modificare il comportamento delle app Android interne, limitandone le funzionalità senza modificare il codice.
 
@@ -140,6 +142,6 @@ Per evitare potenziali attacchi di spoofing, divulgazione di informazioni e l'el
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

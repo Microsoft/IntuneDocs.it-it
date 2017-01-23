@@ -1,5 +1,5 @@
 ---
-title: App Portale aziendale per Windows 8.0 deprecata | Microsoft Intune
+title: App Portale aziendale per Windows 8.0 deprecata | Documentazione Microsoft
 description: Abilitare la gestione di dispositivi mobili (MDM) per i dispositivi Windows Phone 8.0 con Microsoft Intune.
 keywords: 
 author: NathBarn
@@ -13,18 +13,20 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 7cab684c3d51dc9d51ac252b5cbb7b61ffd29dfa
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: c1e39aa0944785f2f0fa624a8ba2cd55814ece7f
 
 
 ---
 
-#  App Portale aziendale per Windows Phone 8.0 deprecata
+#  <a name="windows-phone-80-company-portal-app-deprecated"></a>App Portale aziendale per Windows Phone 8.0 deprecata
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 A partire da settembre 2016, l'app Portale aziendale per Windows 8.0 è stata deprecata. I dispositivi Windows 8.0 registrati rimarranno inclusi nella gestione ma non è possibile registrare nuovi dispositivi.
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

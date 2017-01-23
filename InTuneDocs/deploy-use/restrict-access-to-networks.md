@@ -1,5 +1,5 @@
 ---
-title: Limitare l&quot;accesso alle reti con Cisco ISE | Microsoft Intune
+title: Limitare l&quot;accesso alle reti con Cisco ISE | Documentazione Microsoft
 description: Usare ISE Cisco con Intune in modo che i dispositivi vengano registrati in Intune e siano conformi ai relativi criteri prima di accedere a Wi-Fi e VPN controllati da Cisco ISE.
 keywords: 
 author: robstackmsft
@@ -14,8 +14,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
 
 
 ---
@@ -64,7 +64,7 @@ b. Scegliere l'icona del blocco &gt;  **Ulteriori informazioni**.
 > Controllare la data di scadenza del certificato, poiché sarà necessario esportare e importare un nuovo certificato quando questo scade.
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>Ottenere da ISE un certificato autofirmato 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>Ottenere da ISE un certificato autofirmato 
 
 1.  Nella console ISE passare ad **Amministrazione** > **Certificati** > **Certificati di sistema** > **Genera certificato autofirmato**.  
 2.       Esportare il certificato autofirmato.
@@ -100,7 +100,7 @@ Verificare che tutto il testo sia una singola riga
 |Endpoint del token OAuth 2.0|URL emittente di token|
 |Aggiornare il codice con l'ID client|ID client|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Passaggio 4: Caricare il certificato autofirmato da ISE nell'app ISE creata in Azure AD
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Passaggio 4: Caricare il certificato autofirmato da ISE nell'app ISE creata in Azure AD
 1.     Ottenere il valore e l'identificazione personale del certificato con codifica base64 da un file di certificato pubblico X.509 con estensione cer. In questo esempio viene usato PowerShell:
    
       
@@ -189,6 +189,6 @@ Quando l'utente sceglie di eseguire la registrazione, viene reindirizzato al pro
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

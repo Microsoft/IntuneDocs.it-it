@@ -1,5 +1,5 @@
 ---
-title: Inviare i registri dei dati di diagnostica all&quot;amministratore IT tramite un cavo USB | Microsoft Intune
+title: Inviare i log dei dati di diagnostica all&quot;amministratore IT tramite un cavo USB | Documentazione Microsoft
 description: Inviare i registri di dati tramite un cavo USB
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42720b0e0613be10e83cb0e8aae7170a85f473e5
-ms.openlocfilehash: e26a97d52cc753f83eb49e3f733668eb83ef4932
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bda43e0f054d36589aa446f6a3fc19db144dff10
 
 
 ---
@@ -40,6 +40,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

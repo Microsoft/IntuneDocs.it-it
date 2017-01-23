@@ -1,11 +1,11 @@
 ---
-title: "Che cos&quot;è il Portale aziendale? | Microsoft Intune"
+title: "Che cos&quot;è il Portale aziendale? | Documentazione Microsoft"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
-ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
+ms.sourcegitcommit: 01d2fcd0202f1ef347693c973edb82acfae6c818
+ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
 
 
 ---
@@ -41,10 +41,10 @@ Esistono alcune lievi differenze tra l'app Portale aziendale e il sito Web del p
 Per scoprire quali operazioni è possibile eseguire nel sito Web del portale aziendale rispetto a quelle eseguibili nell'app Portale aziendale del dispositivo, scegliere uno dei collegamenti seguenti:
 
 > [!div class="op_single_selector"]
-- [Android](using-your-android-device-with-intune.md)
-- [iOS e macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Windows](using-your-windows-device-with-intune.md)
-- [Sito Web del portale aziendale](using-the-intune-company-portal-website.md)
+- [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
+- [Uso dei dispositivi iOS o macOS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
+- [Uso del sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Che cosa succede quando si aggiunge un computer o un dispositivo al Portale aziendale?
 Quando si aggiunge un computer o un dispositivo al Portale aziendale, a seconda del dispositivo è possibile che venga installato un software o scaricata un'app.  Vengono inoltre concesse all'amministratore IT le autorizzazioni per gestire il dispositivo e proteggere le informazioni aziendali sul dispositivo.
@@ -58,9 +58,9 @@ Per informazioni su ciò che l'amministratore IT può e non può visualizzare ne
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Quali tipi di computer o dispositivi è possibile aggiungere al Portale aziendale?
 
--   Dispositivi iPhone, iPad e macOS
+-   Dispositivi Apple con iOS (iPhone, iPad) e macOS (iMac, MacBook)
 
--   Dispositivi mobili Android
+-   Dispositivi Android
 
 -   Dispositivi Windows
     -   Windows 10 Mobile
@@ -96,6 +96,6 @@ Per assistenza, contattare l'amministratore IT. Per informazioni sul contatto ve
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

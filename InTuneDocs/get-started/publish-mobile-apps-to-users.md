@@ -1,12 +1,12 @@
 ---
-title: Pubblicare app per dispositivi mobili per gli utenti | Microsoft Intune
+title: Pubblicare app per dispositivi mobili per gli utenti | Documentazione Microsoft
 description: 
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 21e79e5dc5fa47c3612182bbc7040c488f94849b
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
 
 
 ---
 
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>Guida introduttiva: Pubblicare app per dispositivi mobili per gli utenti
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune offre agli utenti finali la possibilità di aumentare la produttività permettendo loro di accedere in modo semplice e rapido alle app per dispositivi mobili e desktop di cui hanno bisogno dai dispositivi che preferiscono. La disponibilità immediata di applicazioni consente agli utenti finali di ridurre il tempo e le energie da dedicare alla ricerca e all'installazione delle app corrette e quindi anche il numero di chiamate all'help desk per trovare le app di cui hanno bisogno.   
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>Questa guida introduttiva offre la soluzione adatta ai requisiti d'uso?
@@ -42,6 +45,6 @@ Se la pubblicazione di app di Office per dispositivi mobili viene eseguita con l
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

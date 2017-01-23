@@ -1,5 +1,5 @@
 ---
-title: "Altre opzioni e funzionalità aggiuntive per le valutazioni di Intune | Microsoft Intune"
+title: "Altre opzioni e funzionalità aggiuntive per le valutazioni di Intune | Documentazione Microsoft"
 description: "Descrive avvisi, notifiche e report, oltre a funzionalità generali di Intune che è necessario conoscere quando si esegue l&quot;iscrizione per una valutazione gratuita di 30 giorni di Intune"
 keywords: 
 author: lindavr
@@ -13,13 +13,15 @@ ms.technology:
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 21b0cba6cf1d0cd7048cd0abee3a21dd9d74eadd
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
 
 
 ---
 
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Altre opzioni e funzionalità aggiuntive per le sottoscrizioni di valutazione di Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="alerts-notifications-and-reports"></a>Avvisi, notifiche e report
 Nella console di amministrazione di Intune è possibile usare gli **avvisi** per valutare rapidamente l'integrità generale dei dispositivi gestiti nell'organizzazione. È possibile configurare e personalizzare gli avvisi segnalati e visualizzare solo le informazioni che sono necessarie per l'organizzazione. È possibile scegliere se abilitare o disabilitare un avviso, configurarne la gravità, usare la soglia di visualizzazione che stabilisce la frequenza di attivazione di un evento prima che il relativo avviso venga visualizzato e infine configurare le impostazioni specifiche per determinati tipi di avvisi.
@@ -56,6 +58,6 @@ Passare a una [sottoscrizione a pagamento](get-started-with-a-30-day-trial-of-mi
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

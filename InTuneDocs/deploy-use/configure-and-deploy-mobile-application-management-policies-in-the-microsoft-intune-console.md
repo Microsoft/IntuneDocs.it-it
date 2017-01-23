@@ -1,11 +1,11 @@
 ---
-title: Configurare i criteri MAM nella console di Intune | Microsoft Intune
+title: Configurare i criteri MAM nella console di Intune | Documentazione Microsoft
 description: "I criteri di gestione delle applicazioni mobili in Microsoft Intune consentono di modificare la funzionalità delle app distribuite per allinearle ai criteri aziendali di conformità e sicurezza."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
 
 
 ---
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurare e distribuire criteri di gestione delle applicazioni mobili nella console di Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 I criteri di gestione delle applicazioni mobili (MAM, Mobile Application Management) in Microsoft Intune consentono di modificare la funzionalità delle app distribuite per allinearle ai criteri aziendali di conformità e sicurezza. Ad esempio, è possibile limitare le operazioni Taglia, Copia e Incolla in un'app gestita oppure configurare un'app per aprire tutti i collegamenti Web in Managed Browser.
 
 I criteri di gestione delle applicazioni mobili supportano:
@@ -71,7 +74,7 @@ Ad esempio, utilizzando Outlook app:
 
 -   **Passaggio 5:** Monitorare la distribuzione dell'app.
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Passaggio 1: Ottenere il collegamento a un'app gestita da criteri, creare un'app sottoposta a wrapping o usare Intune App SDK per sviluppare un'app abilitata per MAM
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>Passaggio 1: Ottenere il collegamento a un'app gestita da criteri, creare un'app sottoposta a wrapping o usare Intune App SDK per sviluppare un'app abilitata per MAM
 
 Nell'App Store trovare e prendere nota dell'URL dell'app gestita da criteri che si vuole distribuire. Ad esempio, l'URL dell'app Microsoft Word per iPad è **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
@@ -194,6 +197,6 @@ Nei casi in cui il dispositivo o l'utente riceva due criteri in conflitto, si ap
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

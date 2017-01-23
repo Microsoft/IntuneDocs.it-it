@@ -1,5 +1,5 @@
 ---
-title: Impostare o modificare il passcode | Microsoft Intune
+title: Impostare o modificare il passcode | Documentazione Microsoft
 description: Impostare o modificare il passcode
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 6e941b8ac3d26afce65eb5a7d60f7c56dbbdbe87
+ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
+ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
 
 
 ---
@@ -27,13 +29,13 @@ L'amministratore IT può impostare più requisiti per il passcode. Ad esempio, p
 
 In caso di problemi per l'impostazione di un passcode che soddisfi i requisiti, contattare l'amministratore IT.
 
-## <a name="set-your-passcode"></a>Impostare il passcode##
+## <a name="set-your-passcode"></a>Impostare il passcode
 
 1. Toccare **Impostazioni** > **ID tocco e Passcode**.
 2. Nel menu **Touch ID e codice** toccare **Attiva codice**.
 3. Immettere un nuovo passcode che soddisfi i requisiti dell'amministratore IT, quindi immetterlo nuovamente per la verifica.
 
-## <a name="change-your-passcode"></a>Modificare il passcode##
+## <a name="change-your-passcode"></a>Modificare il passcode
 
 1. Toccare **Impostazioni** > **ID tocco e Passcode**.
 2. Immettere il passcode. Si apre il menu **Touch ID e codice**.
@@ -44,6 +46,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
