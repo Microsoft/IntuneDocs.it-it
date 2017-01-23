@@ -1,11 +1,11 @@
 ---
-title: Impostazioni dei criteri di iOS | Microsoft Intune
+title: Impostazioni dei criteri di iOS | Documentazione Microsoft
 description: "Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi iOS gestiti con Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: dfde68e4ef889ba881ff2fa93b226f879d01cbc8
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
 
 
 ---
 
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di iOS in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune offre una gamma di impostazioni generali predefinite che è possibile configurare nei dispositivi iOS. È anche possibile usare lo strumento Apple Configurator per creare impostazioni personalizzate non disponibili in Intune.
 
@@ -78,12 +80,12 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |----------------|-------|
 |**Consenti backup su iCloud**|Consentire all'utente di eseguire il backup del dispositivo su iCloud.|
 |**Consenti sincronizzazione documenti in iCloud**|Consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud.|
-|**Consenti sincronizzazione streaming foto in iCloud**|Consente la sincronizzazione delle foto del dispositivo su iCloud.|
+|**Consenti sincronizzazione streaming foto in iCloud**|Consente agli utenti di abilitare la funzionalità **Il mio streaming foto** nel dispositivo, che consente di sincronizzare le foto su iCloud in modo che siano disponibili in tutti i dispositivi degli utenti.|
 |**Richiedi backup crittografato**|Richiede la crittografia di tutti i backup del dispositivo.|
 |**Consenti alle app gestite di sincronizzare i dati in iCloud**|Consentire alle app gestite con Intune di sincronizzare i dati con l'account iCloud dell'utente.|
 |**Consenti a Handoff di continuare le attività in un altro dispositivo**|Consentire all'utente di proseguire il lavoro iniziato in un dispositivo iOS in un altro dispositivo iOS o Mac OS X.|
-|**Consenti la condivisione di foto con iCloud**|Consentire l'uso della funzionalità di streaming foto condiviso iOS.|
-|**Consenti la raccolta di foto con iCloud**|Consentire all'utente di archiviare le foto in iCloud. Se disabilitata, eventuali foto già archiviate in iCloud verranno rimosse.|
+|**Consenti la condivisione di foto con iCloud**|Impostare su **No** per disabilitare **Condivisione foto di iCloud** nel dispositivo.|
+|**Consenti la raccolta di foto con iCloud**|Se impostata su **No**, disabilita l'uso della libreria foto di iCloud che consente agli utenti di archiviare foto e video nel cloud.   Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo verranno rimosse dal dispositivo se questa opzione è impostata su **No**.|
 
 ### <a name="application-settings-for-the-browser"></a>Impostazioni dell'applicazione per il browser
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
@@ -172,6 +174,8 @@ Nell'elenco **App conformi &amp; non conformi** specificare un elenco di app con
 |**Importa app**|Importare un elenco di app specificate in un file con valori delimitati da virgole. Nel file usare il formato: nome dell'applicazione, autore, URL dell'app.|
 |**Modifica**|Modificare il nome, l'autore e l'URL dell'app selezionata.|
 |**Eliminazione**|Eliminare l'app selezionata dall'elenco.|
+
+I criteri contenenti le impostazioni per le app conformi e non conformi devono essere distribuiti ai gruppi di utenti.
 
 ### <a name="kiosk-mode-settings"></a>Impostazioni della modalità tutto schermo
 
@@ -383,6 +387,6 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

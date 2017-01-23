@@ -1,11 +1,11 @@
 ---
-title: Aggiungere app per i PC Windows che eseguono il software client di Intune| Microsoft Intune
+title: Aggiungere app per i PC Windows che eseguono il client software di Intune| Documentazione Microsoft
 description: Usare le informazioni in questo argomento per scoprire come aggiungere app a Intune prima di distribuirle.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
 
 
 ---
 
-# Aggiungere app per i PC Windows che eseguono il software client di Intune
+# <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Aggiungere app per i PC Windows che eseguono il software client di Intune
 
 Usare le informazioni in questo argomento per informazioni su come aggiungere app a Intune prima di distribuirle.
 
@@ -28,7 +28,7 @@ Usare le informazioni in questo argomento per informazioni su come aggiungere ap
 > Le informazioni fornite in questo argomento semplificano l'aggiunta di app nei PC Windows gestiti usando il software client di Intune. Per aggiungere app per computer Windows e altri dispositivi mobili registrati, vedere [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 
-## Aggiungere l'app
+## <a name="add-the-app"></a>Aggiungere l'app
 Usare l'Autore del software Intune per configurare le proprietà dell'app e caricarla nello spazio di archiviazione cloud usando la procedura seguente:
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **App** &gt; **Aggiungi app** per avviare l'autore del software Intune.
@@ -85,12 +85,12 @@ Usare l'Autore del software Intune per configurare le proprietà dell'app e cari
 
 L'app viene visualizzata nel nodo **App** dell'area di lavoro **App**.
 
-## Passaggi successivi
+## <a name="next-steps"></a>Passaggi successivi
 
 Il passaggio successivo alla creazione di un'app è la distribuzione. Per altre informazioni, vedere [Distribuire le app con Microsoft Intune](deploy-apps.md).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

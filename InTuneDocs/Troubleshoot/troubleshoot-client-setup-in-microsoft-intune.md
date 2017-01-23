@@ -1,5 +1,5 @@
 ---
-title: Risolvere i problemi di installazione client | Microsoft Intune
+title: Risolvere i problemi di installazione del client | Documentazione Microsoft
 description: Risolvere i problemi comuni di installazione client.
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
-ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
 
 
 ---
 
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Risolvere i problemi di installazione client in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Usare le seguenti informazioni per risolvere i problemi di installazione del client più frequenti. Se queste informazioni non consentono di risolvere il problema, vedere [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md) per trovare altri modi per ottenere assistenza.
 
 ## <a name="client-installation-fails"></a>L'istallazione del client ha esito negativo
@@ -70,7 +73,7 @@ L'errore potrebbe dipendere dall'assenza di aggiornamenti software critici sul P
 **Soluzione:** Verificare che i criteri di aggiornamento del software consentano di installare gli aggiornamenti critici, come descritto in [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune)
 
 
-## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>Errori relativi a criteri di Microsoft Intune in policyplatform.log
+## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Errori relativi a criteri di Microsoft Intune in policyplatform.log
 Per i dispositivi Windows non MDM, gli errori dei criteri nel file policyplatform.log potrebbero derivare da impostazioni non predefinite nel Controllo dell'account utente di Windows sul dispositivo. Alcune impostazioni non predefinite del Controllo dell'account utente possono influire sulle installazioni client di Microsoft Intune e sull'esecuzione dei criteri.
 
 ### <a name="to-resolve-uac-issues"></a>Per risolvere i problemi relativi al Controllo dell'account utente
@@ -127,6 +130,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

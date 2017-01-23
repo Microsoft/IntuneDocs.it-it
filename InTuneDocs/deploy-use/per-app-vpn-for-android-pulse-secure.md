@@ -1,5 +1,5 @@
 ---
-title: Profilo VPN app per Android con Pulse Secure | Microsoft Intune
+title: Profilo VPN per app per Android con Pulse Secure | Documentazione Microsoft
 description: "È possibile creare un profilo VPN per app specifiche per i dispositivi Android gestiti da Intune."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: afbb103f1deecff323d07c510f42a2083a4ea0d5
 
 
 ---
 
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Usare criteri personalizzati per creare un profilo VPN per app per dispositivi Android
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 È possibile creare un profilo VPN per app specifiche per i dispositivi Android 5.0 e versione successiva gestiti da Intune. Creare innanzitutto un profilo VPN che usa il tipo di connessione Pulse Secure o Citrix. Definire quindi criteri di configurazione personalizzati che associano il profilo ad app specifiche. 
 
@@ -78,6 +80,6 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

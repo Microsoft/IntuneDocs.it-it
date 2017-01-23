@@ -1,9 +1,9 @@
 ---
-title: Creare e distribuire criteri MAM | Microsoft Intune
+title: Creare e distribuire criteri MAM | Documentazione Microsoft
 description: Usare le istruzioni dettagliate in questo argomento per creare e distribuire i criteri di gestione delle app mobili.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 3e077bfa8a03526b9472b4e9fdd4a75da22c28c8
 
 
 ---
 
 # <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 I criteri MAM (Mobile app management, Gestione delle app mobili) possono essere adottati in applicazioni eseguite su dispositivi gestiti o non gestiti da Intune. Per una descrizione più dettagliata del funzionamento dei criteri MAM e degli scenari supportati dai criteri MAM di Intune, vedere [Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 In questo argomento viene descritto il processo di creazione di un criterio MAM nel **portale di Azure**. Il portale di Azure è la nuova console di amministrazione per la creazione di criteri MAM. È consigliabile usare questo portale per creare criteri MAM. Il portale di Azure supporta gli scenari MAM seguenti:
@@ -173,6 +176,6 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

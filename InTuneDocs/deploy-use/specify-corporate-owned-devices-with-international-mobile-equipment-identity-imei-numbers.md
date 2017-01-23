@@ -1,5 +1,5 @@
 ---
-title: Specificare i numeri IMEI | Microsoft Intune
+title: Specificare i numeri IMEI | Documentazione Microsoft
 description: Microsoft Intune consente agli amministratori di importare i numeri IMEI (International Mobile Equipment Identity) per le piattaforme per dispositivi mobili in modo da facilitare l&quot;identificazione dei dispositivi mobili aziendali
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
-ms.openlocfilehash: 8b19cb740ed34b479fa8c4f5e2c1d13f13cda1f4
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 588674c38a5e54f6b762ac044457110a361e6969
 
 
 ---
 
 # <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>Specificare i dispositivi aziendali con i numeri IMEI (International Mobile Equipment Identity)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune consente agli amministratori di identificare i dispositivi mobili aziendali tramite l'importazione dei numeri IMEI per le piattaforme per dispositivi mobili. Dopo la registrazione dei dispositivi in Intune, è possibile visualizzare i dispositivi con numeri IMEI importati in **Gruppi** > **Panoramica** > **Tutti i dispositivi**. **Gruppo di dispositivi** elenca i dispositivi con numeri IMEI importati come dispositivi di tipo **Aziendale** nella colonna **Proprietà**.
 
 1. Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) scegliere **Gruppi** &gt; **Tutti i dispositivi** &gt; **Dispositivi aziendali preregistrati** &gt; ** Per IMEI (tutte le piattaforme)** e quindi scegliere **Aggiungi dispositivi....**. È possibile aggiungere dispositivi in due modi:
@@ -50,6 +53,6 @@ Quando un dispositivo con un numero IMEI viene registrato in Intune, in genere q
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

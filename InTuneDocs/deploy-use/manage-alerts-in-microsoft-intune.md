@@ -1,5 +1,5 @@
 ---
-title: Gestire gli avvisi | Microsoft Intune
+title: Gestire gli avvisi | Documentazione Microsoft
 description: "Usare l&quot;area di lavoro Avvisi di Intune per valutare l&quot;integrità generale dei dispositivi nell&quot;organizzazione."
 keywords: 
 author: arob98
@@ -15,13 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: b84a6e353103f35ad62fb95052c44581dd439963
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 67a7e25c8365970eb108b2529692a6f67c5de054
 
 
 ---
 
 # <a name="manage-alerts-in-microsoft-intune"></a>Gestire gli avvisi in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Usare l'area di lavoro **Avvisi** nella console di amministrazione di Intune per valutare l'integrità generale dei dispositivi nell'organizzazione e identificare i problemi.
 
 ## <a name="view-active-alerts"></a>Visualizzare gli avvisi attivi

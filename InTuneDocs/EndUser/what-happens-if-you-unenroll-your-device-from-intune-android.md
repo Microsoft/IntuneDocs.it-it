@@ -1,5 +1,5 @@
 ---
-title: Che cosa avviene se si annulla la registrazione del dispositivo Android da Intune? | Microsoft Intune
+title: Che cosa avviene se si annulla la registrazione del dispositivo Android da Intune? | Documentazione Microsoft
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: d846b1aa3d5526f0e73cb6b3a8ca17b3cdc67db2
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 3cbc2b085ec8ad04e00527fda0665c905314aaea
 
 
 ---
@@ -44,6 +46,6 @@ Serve assistenza? Contattare l'amministratore IT (accedere al [sito Web del port
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

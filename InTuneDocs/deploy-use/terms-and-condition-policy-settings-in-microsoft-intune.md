@@ -1,5 +1,5 @@
 ---
-title: Impostazioni dei criteri relativi termini e condizioni | Microsoft Intune
+title: Impostazioni dei criteri relativi termini e condizioni | Documentazione Microsoft
 description: "È possibile distribuire termini e condizioni di Intune a gruppi di utenti per spiegare in che modo la registrazione, l&quot;accesso alle risorse di lavoro e l&quot;uso dell&quot;app Portale aziendale influiscono su dispositivi e utenti."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
 
 
 ---
 
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri relativi termini e condizioni in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 È possibile distribuire termini e condizioni di Intune a gruppi di utenti per spiegare in che modo la registrazione, l'accesso alle risorse di lavoro e l'uso dell'app Portale aziendale influiscono su dispositivi e utenti. Gli utenti dovranno quindi accettare i termini e le condizioni prima di poter usare il portale aziendale per registrare le app e accedere al lavoro.
 
 È possibile creare e distribuire più criteri contenenti termini e condizioni diversi. È anche possibile creare versioni degli stessi termini e condizioni in lingue diverse e distribuirle ai gruppi appropriati.
@@ -81,6 +84,6 @@ Quando si modifica un criterio esistente relativo a termini e condizioni, è pos
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

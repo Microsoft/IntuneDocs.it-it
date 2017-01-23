@@ -1,5 +1,5 @@
 ---
-title: Exchange Connector per EAS locale | Microsoft Intune
+title: Exchange Connector per EAS locale | Documentazione Microsoft
 description: Usare lo strumento Connector per consentire la comunicazione tra la console di amministrazione di Intune ed Exchange Server locale per Exchange ActiveSync MDM.
 keywords: 
 author: andredm7
@@ -14,13 +14,15 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d50a5751a5afd987196336e9443dc5a429a283fd
-ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1b74d19762a81313325eac27cab50a144a569620
 
 
 ---
 
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Installare Intune On-premises Exchange Connector
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
 Per impostare una connessione che consenta a Microsoft Intune di comunicare con il server di Exchange Server in cui sono ospitate le cassette postali dei dispositivi mobili, è necessario scaricare e configurare On-Premises Exchange Connector dalla console di amministrazione di Intune. Intune supporta solo una connessione con Exchange Connector di qualsiasi tipo per ogni sottoscrizione.

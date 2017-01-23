@@ -1,11 +1,11 @@
 ---
-title: "Impostazioni dei criteri di conformità per i dispositivi iOS | Microsoft Intune"
+title: "Impostazioni dei criteri di conformità per i dispositivi iOS | Documentazione Microsoft"
 description: "In questo argomento vengono descritte le regole e le impostazioni che è possibile usare nei criteri di conformità per i dispositivi iOS."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,16 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: 0ee697472a7cb553d78aef9977381197149c3177
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f09ad4f705d152b25918ca477b97cf7b1df7bfc8
 
 
 ---
 
 
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Impostazioni dei criteri di conformità per i dispositivi iOS in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Le impostazioni dei criteri descritte in questo argomento si applicano ai dispositivi che eseguono iOS 8.0 e versioni successive.
 
@@ -82,6 +84,6 @@ Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornam
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

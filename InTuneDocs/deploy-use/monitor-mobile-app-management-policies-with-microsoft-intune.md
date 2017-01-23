@@ -1,9 +1,9 @@
 ---
-title: Monitorare i criteri MAM con Microsoft Intune | Microsoft Intune
+title: Monitorare i criteri MAM con Microsoft Intune | Documentazione Microsoft
 description: Vedere quanti utenti dispongono di criteri ed eseguire il drill-down per accedere ad altri dettagli.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 487fe778bae73c2ac5564f90c21328932060f576
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 2a18ad7226c6fc6de0277f1f20443ea64dc8b918
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Monitorare i criteri di gestione delle app per dispositivi mobili con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Dopo aver configurato un criterio di gestione delle app mobili (MAM) e averlo applicato agli utenti, è possibile monitorare lo stato di conformità nel [portale di Azure](https://portal.azure.com). Il portale di Azure include informazioni sugli utenti interessati dai criteri, sullo stato di conformità e su eventuali problemi che potrebbero riscontrare gli utenti.
 ## <a name="summary-view"></a>Visualizzazione di riepilogo
 Nel pannello **Gestione di applicazioni mobili di Intune** è possibile visualizzare un riepilogo dello stato di conformità:
@@ -80,6 +83,6 @@ Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

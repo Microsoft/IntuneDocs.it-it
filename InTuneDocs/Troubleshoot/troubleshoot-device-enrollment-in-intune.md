@@ -1,11 +1,11 @@
 ---
-title: Risolvere i problemi di registrazione dei dispositivi | Microsoft Intune
+title: Risolvere i problemi di registrazione dei dispositivi | Documentazione Microsoft
 description: Suggerimenti per la risoluzione dei problemi di registrazione dei dispositivi.
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/20/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
-ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
+ms.sourcegitcommit: d12e2c0a38e406aa8b96cc03e97d327126503531
+ms.openlocfilehash: 5afc7a3bc91dae95581f42979cbe7d8d6d57ba8d
 
 
 ---
@@ -29,7 +29,7 @@ Questo argomento contiene suggerimenti per la risoluzione dei problemi di regist
 
 Prima di iniziare la risoluzione dei problemi, verificare di aver configurato Intune correttamente per consentire la registrazione. Per informazioni su tali requisiti di configurazione, vedere:
 
--   [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
+-   [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -   [Configurare la gestione dei dispositivi iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Configurare la gestione di Windows Phone e Windows 10 Mobile con Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Configurare la gestione dei dispositivi Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -58,7 +58,7 @@ Questi problemi possono verificarsi in tutte le piattaforme di dispositivi.
 
 2.  Nella console di amministrazione di Intune (in Amministrazione\Gestione dei dispositivi mobili\Regole di registrazione) verificare che il limite di registrazione dei dispositivi sia impostato su 15.
 
-Per eliminare i dispositivi, gli utenti possono accedere all'URL seguente: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
+<!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
 Gli amministratori possono eliminare i dispositivi nel portale di Azure Active Directory.
 
@@ -86,7 +86,7 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 >
 > Un account utente che viene aggiunto al gruppo Manager di registrazione dispositivi non sarà in grado di completare la registrazione quando vengono applicati i criteri di accesso condizionale per l'accesso utente specifico.
 
-### <a name="company-portal-emporarily-unavailable"></a>Portale aziendale temporaneamente non disponibile
+### <a name="company-portal-temporarily-unavailable"></a>Portale aziendale temporaneamente non disponibile
 **Problema**: nel dispositivo viene visualizzato l'errore **Portale aziendale temporaneamente non disponibile**.
 
 **Risoluzione:**
@@ -373,6 +373,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

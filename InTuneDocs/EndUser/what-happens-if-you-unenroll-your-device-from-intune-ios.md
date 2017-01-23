@@ -1,5 +1,5 @@
 ---
-title: Che cosa avviene se si annulla la registrazione del dispositivo iOS da Intune? | Microsoft Intune
+title: Che cosa avviene se si annulla la registrazione del dispositivo iOS da Intune? | Documentazione Microsoft
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7c01f0f2dee8fb15f766264489d39df76932e97e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a88b89114db0f9d76c783bf99ff55e4eb4107865
 
 
 ---
@@ -46,6 +48,6 @@ Per eventuali domande, contattare l'amministratore IT. Per informazioni sul cont
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

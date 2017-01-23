@@ -1,12 +1,12 @@
 ---
-title: Protezione dei dati aziendali con la crittografia dei dati | Microsoft Intune
+title: Protezione dei dati aziendali con la crittografia dei dati | Documentazione Microsoft
 description: "Questa guida può essere utile per garantire un&quot;adeguata protezione dell&quot;azienda dalla perdita di dati con la crittografia del passcode e dei dati tramite l&quot;imposizione di criteri per le app per dispositivi mobili."
 keywords: crittografia, PIN, dati
 author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ee5f39ac31c2a35770b88c937f138f9c0b525b6
-ms.openlocfilehash: b907803b2170a09e076712e018987821dfb3caef
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
 
 
 ---
 
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>Guida introduttiva: Proteggere i dati aziendali con la crittografia dei dati
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune contribuisce a impedire la perdita di dati di app di Office per dispositivi mobili in diversi modi, ad esempio:
 - Tramite la crittografia dei dati aziendali con il massimo livello di crittografia dispositivo offerto da iOS e Android.
 - In dispositivi iOS e Android che, a causa di requisiti di privacy o legali, non possono essere registrati in una soluzione di gestione di dispositivi mobili.
@@ -50,6 +53,6 @@ Questa guida consente di proteggere l'azienda dalla perdita di dati con l'imposi
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

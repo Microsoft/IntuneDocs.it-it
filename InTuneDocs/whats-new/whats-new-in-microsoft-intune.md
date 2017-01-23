@@ -1,5 +1,5 @@
 ---
-title: "Novità | Microsoft Intune"
+title: "Novità | Documentazione Microsoft"
 description: "Questo articolo presenta le novità di questo mese e delle versioni precedenti di Microsoft Intune"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9fd309a10d9eb020795c5ce46df124b13dc1a006
-ms.openlocfilehash: d117c929fbde4dd0a39503b8da695aa9c9ea91ad
+ms.sourcegitcommit: 1d9ebc7fd727b80091625ed5256ae634323a9257
+ms.openlocfilehash: f7e71d20923e113b533668a7b5aef688de196182
 
 
 ---
@@ -33,15 +33,12 @@ L'esperienza di amministrazione nel portale di Azure userà la nuova funzionalit
 Per qualsiasi domanda in merito alla tempistica per la migrazione del tenant, contattare il team Microsoft responsabile della migrazione all'indirizzo [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 ### <a name="telecom-expense-management-integration-in-public-preview-of-azure-portal--747605--"></a>Integrazione della gestione delle spese di telecomunicazione nell'anteprima pubblica del portale di Azure<!--747605-->
-Stiamo iniziando a presentare in anteprima l'integrazione con i servizi di gestione delle spese di telecomunicazione di terze parti nel portale di Azure. È possibile usare Intune per imporre limiti al consumo dei dati sia nazionale che in roaming. Queste integrazioni iniziano con [Saaswedo](http://www.saaswedo.com).
+Stiamo iniziando a presentare in anteprima l'integrazione con i servizi di gestione delle spese di telecomunicazione di terze parti nel portale di Azure. È possibile usare Intune per imporre limiti al consumo dei dati sia nazionale che in roaming. Queste integrazioni iniziano con [Saaswedo](http://www.saaswedo.com). Per abilitare questa funzionalità nel tenant di prova, [contattare il supporto tecnico Microsoft](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 ## <a name="new-capabilities"></a>Nuove funzionalità
 
 ### <a name="multi-factor-authentication-across-all-platforms---747590--"></a>Autenticazione a più fattori su tutte le piattaforme <!--747590-->
 È ora possibile imporre l'autenticazione a più fattori (MFA) per un gruppo selezionato di utenti durante la registrazione di un dispositivo iOS, Android, Windows 8.1+ o Windows Phone 8.1+ dal portale di gestione di Azure configurando MFA nell'applicazione di registrazione di Microsoft Intune in Azure Active Directory.
-
-<!--VSO 679339, awaiting chrisgre for go-live--><!--### Conditional access for MAM with SharePoint Online
-È possibile impedire l'accesso a SharePoint Online alle app non supportate dai criteri di gestione delle app mobili (MAM) di Intune.  È possibile iniziare a usare le funzionalità di gestione delle app mobili di Intune nel portale di Azure. Individuare la sezione __Accesso condizionale__ nel pannello __Impostazioni__ che includerà l'opzione per SharePoint Online. Questa funzionalità verrà fornita separatamente rispetto al resto del rilascio del servizio. Altre informazioni su questa nuova funzionalità sono disponibili [qui](https://docs.microsoft.com/intune/deploy-use/mam-ca-for-sharepoint-online).-->
 
 ### <a name="ability-to-restrict-mobile-device-enrollment--747596--"></a>Possibilità di limitare la registrazione di dispositivi mobili<!--747596-->
 Intune aggiunge nuove limitazioni di registrazione che consentono di controllare quali piattaforme per dispositivi mobili sono autorizzate alla registrazione. Intune separa le piattaforme per dispositivi mobili iOS, macOS, Android, Windows e Windows Mobile.
@@ -88,10 +85,10 @@ A partire dalla metà di dicembre 2016, gli utenti non potranno più usare le ap
 ### <a name="see-also"></a>Vedere anche
 * [Blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Guida di orientamento a Cloud Platform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
-* [Versioni precedenti di Intune](whats-new-archive.md)
+* [Archivio delle novità](whats-new-archive.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

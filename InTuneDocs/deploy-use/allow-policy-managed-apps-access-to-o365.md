@@ -1,5 +1,5 @@
 ---
-title: Accesso condizionale basato su app a Office 365 | Microsoft Intune
+title: Accesso condizionale basato su app a Office 365 | Documentazione Microsoft
 description: "Informazioni su come l&quot;accesso condizionale per la gestione delle app per dispositivi mobili può essere usato per controllare le app che hanno accesso ai servizi di Office 365."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c966d955365611781e83eea9f2aec743f0fc0321
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
 
 
 ---
 
 # <a name="allow-only-mobile-apps-that-support-intune-mam-policies-to-access-office-365-services"></a>Consentire solo alle app per dispositivi mobili che supportano i criteri di gestione delle app mobili di Intune di accedere ai servizi di Office 365
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 I [criteri di gestione delle app per dispositivi mobili di Intune](protect-apps-and-data-with-microsoft-intune.md) consentono di proteggere i dati aziendali sui dispositivi registrati per la gestione in Intune. I criteri di gestione delle app per dispositivi mobili possono essere usati anche nei **dispositivi di proprietà dei dipendenti non registrati per la gestione in Intune**.  In questo caso, anche se il dispositivo non viene gestito, è comunque necessario assicurarsi che i dati e le risorse aziendali siano protetti. Usando l'accesso condizionale per la gestione delle app per dispositivi mobili è possibile creare un criterio che consenta solo alle app per dispositivi mobili che supportano i criteri di gestione delle app per dispositivi mobili di Intune di accedere a servizi di Office 365 come Exchange Online.
 
 Ad esempio, consentendo solo all'**app di Microsoft Outlook** di accedere a Exchange Online è possibile **bloccare le app di posta elettronica predefinite in iOS e Android** che non hanno la protezione dei dati dei criteri di gestione delle app per dispositivi mobili di Intune per ricevere la posta elettronica da **Exchange Online**.

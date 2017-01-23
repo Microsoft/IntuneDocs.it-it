@@ -1,5 +1,5 @@
 ---
-title: "Gestire i dispositivi di proprietà dell&quot;azienda | Microsoft Intune"
+title: "Gestire i dispositivi di proprietà dell&quot;azienda | Documentazione Microsoft"
 description: "Registrare i dispositivi di proprietà dell&quot;azienda in diversi modi, in base al tipo di dispositivo, alla modalità di acquisto e alle esigenze dell&quot;organizzazione."
 keywords: 
 author: staciebarker
@@ -14,13 +14,15 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: 2c8dc4917c3ef85955f017c4619c0d7496d03dbf
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 58270feb34185441406abc15e1f889c2924722e8
 
 
 ---
 
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrare i dispositivi di proprietà dell'azienda con Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 È possibile registrare i dispositivi di proprietà dell'organizzazione o dell'azienda in Intune in diversi modi a seconda del tipo di dispositivo, della modalità di acquisto e delle esigenze dell'organizzazione. È anche possibile installare l'app Portale aziendale per registrare e gestire i dispositivi di proprietà dell'azienda, come negli scenari BYOD (Bring Your Own Device).
 
@@ -63,6 +65,6 @@ Quando un dispositivo è contrassegnato come aziendale, verrà visualizzata l'in
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

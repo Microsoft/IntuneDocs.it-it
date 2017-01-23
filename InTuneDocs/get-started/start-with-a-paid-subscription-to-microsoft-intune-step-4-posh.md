@@ -1,5 +1,5 @@
 ---
-title: Gestire le licenze di Intune tramite PowerShell | Microsoft Intune
+title: Gestire le licenze di Intune tramite PowerShell | Documentazione Microsoft
 description: Gestire le licenze Intune con PowerShell
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 8f0786bc821c4a93e5f1ff4bf3d693dd6d59ca8e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6b5ea7323f08ae63ce37adedbf23b9fab31a6f55
 
 
 ---
 
 # <a name="manage-intune-licenses-using-powershell"></a>Gestire le licenze Intune tramite PowerShell
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Perché gli utenti possano accedere al servizio Intune o registrare i propri dispositivi nella gestione, è necessario assegnare loro una licenza per la sottoscrizione di Intune, come descritto nell'articolo relativo alla [gestione delle licenze Intune](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Tuttavia, le organizzazioni che usano Microsoft Enterprise Mobility Suite + Security possono avere utenti che necessitano solo di Azure Active Directory Premium o dei servizi di Intune nel pacchetto EMS. È possibile assegnare un servizio o un sottoinsieme di servizi tramite i [cmdlet di PowerShell per Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
 
 Per assegnare in modo selettivo le licenze utente per i servizi EMS, aprire PowerShell come amministratore su un computer dotato del [Modulo di Azure Active Directory per Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule). È possibile installare PowerShell su un computer locale o su un server ADFS.
@@ -68,6 +71,6 @@ A questo punto, il passaggio 4 della *Guida introduttiva a Intune* è stato comp
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

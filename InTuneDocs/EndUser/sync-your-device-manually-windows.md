@@ -1,57 +1,40 @@
 ---
-title: Sincronizzare il dispositivo Windows manualmente | Microsoft Intune
+title: Sincronizzare il dispositivo Windows manualmente | Documentazione Microsoft
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
+ms.sourcegitcommit: 9dd9a601f2e13a16157a43c28e77db6a6efd1619
+ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
 
 
 ---
 
-
 # <a name="sync-your-windows-device-manually"></a>Sincronizzare il dispositivo Windows manualmente
-Se l'installazione dell'app sta richiedendo troppo tempo, è possibile provare a eseguire la sincronizzazione manuale del dispositivo Windows. La sincronizzazione manuale può essere utile per velocizzare l'installazione.
 
-Sono supportate solo le versioni seguenti. Se il dispositivo non è elencato, la sincronizzazione non è supportata. Attenersi alle istruzioni corrispondenti al tipo di dispositivo in uso.
+A volte, il tentativo di installare un'app nel dispositivo Windows può richiedere più tempo del previsto. In questo caso, è possibile provare a sincronizzare manualmente il dispositivo Windows. La sincronizzazione può essere utile per velocizzare l'installazione.
 
-* [Windows 10 Mobile](#windows-10-mobile)
-* [Windows 10 Desktop](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-81)
+> [!Note] 
+> L'installazione delle app potrebbe richiedere un po' di tempo se si usa una rete lenta o è in corso il download di contenuto da un numero elevato di dispositivi contemporaneamente.
 
+Le versioni di Windows seguenti supportano la sincronizzazione manuale. Sfortunatamente, se il dispositivo usa una versione diversa di Windows, non è possibile avviare una sincronizzazione manuale.
 
-## <a name="windows-10-mobile"></a>Windows 10 Mobile
-Sincronizzare manualmente il dispositivo Windows 10 Mobile per accelerare un'installazione lenta:
-
-1. Accedere a **Tutte le app** > **Impostazioni** > **Account**.
-
-    ![Scelta di Account nella schermata Impostazioni](./media/win10m-sync-1-settings-accounts.png)
-
-2. Scegliere **Accesso società**.
-
-    ![Scelta di Accesso società come tipo di account](./media/win10m-sync-2-work-access.png)
-
-3. In **Registrati per la gestione dispositivi** scegliere il nome della società.
-
-    ![Scelta del nome della società per la gestione dei dispositivi](./media/win10m-sync-3-tap-comp-name.png)
-
-4. Scegliere l'icona **Sincronizza**.
-
-    ![Scelta dell'icona Sincronizza.](./media/win10m-sync-4-tap-sync.png)
-
-    Nella parte superiore dello schermo viene visualizzato il messaggio "We're synching your account" (Sincronizzazione account in corso). Il pulsante **Sincronizza** resta disattivato fino al completamento della sincronizzazione del dispositivo.
+* [Sincronizzazione in Windows 10 Desktop](#windows-10-desktop)
+* [Sincronizzazione in Windows 10 Mobile](#windows-10-mobile)
+* [Sincronizzazione in Windows Phone 8.1](#windows-phone-81)
 
 ## <a name="windows-10-desktop"></a>Windows 10 Desktop
 Esistono più versioni di Windows 10, quindi esistono sono due procedure distinte. Per determinare quale procedura eseguire, esaminare gli screenshot e quindi eseguire la procedura con un aspetto simile a quanto visualizzato sul dispositivo.
@@ -109,6 +92,27 @@ Esistono più versioni di Windows 10, quindi esistono sono due procedure distint
 
    Il pulsante diventa inattivo fino al completamento della sincronizzazione.
 
+   ## <a name="windows-10-mobile"></a>Windows 10 Mobile
+   Sincronizzare manualmente il dispositivo Windows 10 Mobile per accelerare un'installazione lenta:
+
+   1. Accedere a **Tutte le app** > **Impostazioni** > **Account**.
+
+       ![Scelta di Account nella schermata Impostazioni](./media/win10m-sync-1-settings-accounts.png)
+
+   2. Scegliere **Accesso società**.
+
+       ![Scelta di Accesso società come tipo di account](./media/win10m-sync-2-work-access.png)
+
+   3. In **Registrati per la gestione dispositivi** scegliere il nome della società.
+
+       ![Scelta del nome della società per la gestione dei dispositivi](./media/win10m-sync-3-tap-comp-name.png)
+
+   4. Scegliere l'icona **Sincronizza**.
+
+       ![Scelta dell'icona Sincronizza.](./media/win10m-sync-4-tap-sync.png)
+
+       Nella parte superiore dello schermo viene visualizzato il messaggio "We're synching your account" (Sincronizzazione account in corso). Il pulsante **Sincronizza** resta disattivato fino al completamento della sincronizzazione del dispositivo.
+
 ## <a name="windows-phone-81"></a>Windows Phone 8.1
 Sincronizzare manualmente il dispositivo Windows Phone 8.1 per accelerare un'installazione lenta:
 
@@ -130,6 +134,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

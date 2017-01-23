@@ -1,9 +1,9 @@
 ---
-title: Prerequisiti per i criteri MAM| Microsoft Intune
+title: Prerequisiti per i criteri MAM | Documentazione Microsoft
 description: "Questo argomento descrive i prerequisiti e la modalità di configurazione degli utenti per creare i criteri di gestione di app mobili."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/29/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: ac820146d81fb121a60f7029f6a52a0056d6ab0a
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: cb525deb240668c0f0f14b19f39eb1226e338629
 
 
 ---
 
 # <a name="get-ready-to-configure-mobile-app-management-policies-on-the-azure-portal"></a>Preparazione alla configurazione dei criteri di gestione di app per dispositivi mobili nel Portale di Azure
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Questo argomento descrive i prerequisiti e i passaggi da completare **prima** di poter creare criteri MAM (Mobile App Management, Gestione delle app mobili) nel portale di Azure.
 
 Per capire come i criteri MAM in Intune possono proteggere i dati aziendali, vedere [Proteggere app e dati usando i criteri di gestione delle app mobili](protect-apps-and-data-with-microsoft-intune.md).
@@ -121,6 +124,6 @@ La tabella seguente elenca i ruoli e le autorizzazioni che possono essere assegn
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Eseguire il wrapping delle app iOS con lo strumento di wrapping delle app di Intune | Microsoft Intune
+title: Eseguire il wrapping delle app iOS con lo strumento di wrapping delle app di Intune | Documentazione Microsoft
 description: Usare le informazioni in questo argomento per informazioni su come eseguire il wrapping delle app iOS senza modificare il codice dell&quot;app stessa. Preparare le app in modo da applicare i criteri di gestione delle app mobili.
 keywords: 
 author: mtillman
@@ -14,34 +14,154 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
+ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
+ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune
 
-Usare lo strumento di wrapping delle app di Microsoft Intune per iOS per modificare il comportamento delle app iOS interne abilitando le funzionalità di protezione delle app di Intune senza modificare il codice dell'app stessa.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Lo strumento è un'applicazione da riga di comando di macOS che crea un wrapper intorno a un'app. Dopo l'elaborazione è possibile modificare la funzionalità dell'app usando i [criteri di gestione delle applicazioni mobili](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) di Intune distribuiti dall'amministratore IT.
+Usare lo strumento di wrapping delle app di Microsoft Intune per iOS per abilitare i criteri di protezione delle app di Intune senza modificare il codice dell'app stessa.
+
+Lo strumento è un'applicazione da riga di comando di macOS che crea un wrapper intorno a un'app. Dopo l'elaborazione di un'app, è possibile modificarne la funzionalità distribuendo i [criteri di protezione delle app](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) in tale app.
 
 Per scaricare lo strumento, vedere [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) (Strumento di wrapping delle app di Microsoft Intune per iOS) in GitHub.
 
 
 
-## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>Soddisfare i prerequisiti per lo strumento di wrapping delle app
-Per altre informazioni su come ottenere i prerequisiti, vedere il post di blog [How to obtain prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Come ottenere i prerequisiti per lo strumento di wrapping delle app di Intune per iOS).
+## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>Prerequisiti generali per lo strumento di wrapping delle app
 
-|Requisito|Altre informazioni|
-|---------------|--------------------------------|
-|Sistema operativo e set di strumenti supportati | È necessario eseguire lo strumento di wrapping delle app in un computer macOS con OS X 10.8.5 o versioni successive e con il set di strumenti XCode versione 5 o successive.|
-|Certificato di firma e profilo di provisioning | È necessario avere un certificato di firma e un profilo di provisioning Apple. Vedere la [documentazione per sviluppatori Apple](https://developer.apple.com/).|
-|Elaborazione di un'app con lo strumento per la disposizione testo per app  |Le app devono essere sviluppate e firmate dalla società o da un fornitore di software indipendente (ISV). Non è possibile usare questo strumento per elaborare le app dell'Apple Store. L'app deve essere scritta per iOS 8.0 o versioni successive. Il formato delle app deve essere PIE (Position Independent Executable). Per altre informazioni sul formato PIE, vedere la documentazione per sviluppatori di Apple. L'estensione dell'app deve essere infine **app** o **ipa**.|
-|App che lo strumento non è in grado di elaborare | App crittografate, non firmate e con attributi di file estesi.|
-|Impostazione dei diritti per l'app|Prima di eseguire il wrapping dell'app è necessario impostare diritti per concedere all'app autorizzazioni e funzionalità aggiuntive oltre a quelle generalmente concesse. Per istruzioni, vedere [Impostazione dei diritti delle app](#setting-app-entitlements).|
+Prima di eseguire lo strumento di wrapping delle app, è necessario soddisfare alcuni prerequisiti generali:
 
-## <a name="install-the-app-wrapping-tool"></a>Installare lo strumento di wrapping delle app
+* Scaricare lo [strumento di wrapping delle app di Microsoft Intune per iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) da GitHub.
+
+* Un computer macOS che esegue OS X 10.8.5 o versioni successive e con il set di strumenti XCode versione 5 o successive.
+
+* L'app iOS di input deve essere sviluppata e firmata dalla società o da un fornitore di software indipendente (ISV).
+
+  * Il file dell'app di input deve avere estensione **ipa** o **app**.
+
+  * L'app di input deve essere compilata per iOS 8.0 o versione successiva.
+
+  * L'app di input non può essere crittografata.
+
+  * L'app di input non può avere attributi di file estesi.
+
+  * L'app di input deve avere i diritti impostati prima dell'elaborazione con lo strumento di wrapping delle app di Intune. I [diritti](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) concedono all'app autorizzazioni e funzionalità aggiuntive oltre a quelle generalmente concesse. Per istruzioni, vedere [Impostazione dei diritti delle app](#setting-app-entitlements).
+
+## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Prerequisiti per sviluppatori Apple per lo strumento di wrapping delle app
+
+
+Per distribuire le app di cui viene eseguito il wrapping in modo esclusivo agli utenti dell'organizzazione, è necessario un account per il programma [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) e più entità per la firma delle app collegate al proprio account per sviluppatori di Apple.
+
+Per altre informazioni sulla distribuzione di app iOS internamente per gli utenti dell'organizzazione, leggere la guida ufficiale [Distributing Apple Developer Enterprise Program Apps](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html#//apple_ref/doc/uid/TP40012582-CH33-SW1) (Distribuzione di app Apple Developer Enterprise Program).
+
+È necessario quanto segue per distribuire le app di cui è stato eseguito il wrapping con Intune:
+
+* Account per sviluppatori per Apple Developer Enterprise Program.
+
+* Certificato di firma della distribuzione interno e ad hoc con identificatore del team valido.
+
+  * L'hash SHA1 del certificato di firma sarà necessario come parametro per lo strumento di wrapping delle app di Intune.
+
+
+* Profili di provisioning della distribuzione interno.
+
+### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Procedura per creare un account Apple Developer Enterprise
+1. Passare al [sito Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/).
+
+2. In alto a destra nella pagina fare clic su **Enroll** (Registra).
+
+3. Leggere l'elenco di controllo delle informazioni necessarie per la registrazione. Fare clic su **Start Your Enrollment** (Avvia registrazione) nella parte inferiore della pagina.
+
+4. Accedere (**Sign in**) con l'ID Apple dell'organizzazione. Se non è disponibile, fare clic su **Create Apple ID** (Crea ID Apple).
+
+5. Selezionare **Entity Type** (Tipo di entità) e fare clic su **Continue** (Continua).
+
+6. Compilare il modulo con le informazioni dell'organizzazione. Fare clic su **Continue**. A questo punto, Apple contatterà l'utente per verificare che sia autorizzato a registrare l'organizzazione.
+
+8. Dopo la verifica, fare clic su **Agree to License** (Accettazione licenza).
+
+9. Dopo aver accettato la licenza, completare la registrazione con **acquisto e attivazione del programma**.
+
+10. Se si è l'agente del team (ovvero la persona che partecipa al programma Apple Developer Enterprise Program per conto dell'organizzazione), comporre prima di tutto il team invitando i membri e assegnando i ruoli. Per informazioni su come gestire il team, leggere la documentazione di Apple [Managing Your Developer Account Team](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) (Gestione del team di account per sviluppatori).
+
+### <a name="steps-to-create-an-apple-signing-certificate"></a>Procedura per creare un certificato di firma Apple
+
+1. Passare al [portale per sviluppatori Apple](https://developer.apple.com/).
+
+2. In alto a destra nella pagina fare clic su **Account**.
+
+3. Accedere (**Sign in**) con l'ID Apple dell'organizzazione.
+
+4. Fare clic su **Certificates, IDs & Profiles** (Certificati, ID e profili).
+
+  ![Portale per sviluppatori Apple](../media/app-wrapper/iOS-signing-cert-1.png)
+
+5. Fare clic su ![segno più nel portale per sviluppatori Apple](../media/app-wrapper/iOS-signing-cert-2.png) nell'angolo in alto a destra per aggiungere un certificato iOS.
+
+6. Scegliere di creare un certificato **In-House and Ad Hoc** (Interno e ad hoc) in **Production** (Produzione).
+
+  ![Selezionare il certificato interno e ad hoc](../media/app-wrapper/iOS-signing-cert-3.png)
+
+7. Fare clic su **Next** (Avanti) nella parte inferiore della pagina.
+
+8. Leggere le istruzioni per la creazione di una **richiesta di firma del certificato (CSR, Certificate Signing Request)** mediante l'applicazione Accesso Portachiavi nel computer macOS.
+
+  ![Leggere le istruzioni per creare una richiesta CSTR](../media/app-wrapper/iOS-signing-cert-4.png)
+
+9. Seguire le istruzioni sopra riportate per creare una richiesta di firma del certificato. Nel computer macOS in uso avviare l'applicazione **Accesso Portachiavi**.
+
+10. Nel menu macOS nella parte superiore della schermata, passare a **Accesso Portachiavi > Assistente Certificato > Richiedi un certificato da una Autorità di Certificazione**.  
+
+  ![Richiedere un certificato a un'Autorità di certificazione in Accesso Portachiavi](../media/app-wrapper/iOS-signing-cert-5.png)
+
+11. Seguire le istruzioni nel sito per sviluppatori Apple sopra indicato su come creare un file CSR. Salvare il file CSR nel computer macOS in uso.
+
+  ![Richiedere un certificato a un'Autorità di certificazione in Accesso Portachiavi](../media/app-wrapper/iOS-signing-cert-6.png)
+
+12. Tornare al sito per sviluppatori Apple. Fare clic su **Continue**. Caricare quindi il file CSR.
+
+13. Il certificato di firma viene generato da Apple. Scaricarlo e salvarlo in un percorso facile da ricordare nel computer macOS.
+
+  ![Scaricare il certificato di firma](../media/app-wrapper/iOS-signing-cert-7.png)
+
+14. Fare doppio clic sul file di certificato appena scaricato per aggiungere il certificato a un portachiavi.
+
+15. Aprire di nuovo **Accesso Portachiavi**. Individuare il certificato cercando **"iPhone"** nella barra di ricerca in alto a destra nella finestra di Accesso Portachiavi. Fare clic con il pulsante destro del mouse su un elemento per visualizzare il menu e scegliere **Ottieni informazioni**.
+
+  ![Aggiungere il certificato a un portachiavi](../media/app-wrapper/iOS-signing-cert-8.png)
+
+16. Viene visualizzata una finestra informativa. Scorrere verso il basso fino alla sezione **Impronte digitali**. Copiare la stringa **SHA1** da usare come parametro -c per lo strumento di wrapping delle app.
+
+  ![Aggiungere il certificato a un portachiavi](../media/app-wrapper/iOS-signing-cert-9.png)
+
+
+
+### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Procedura per creare un profilo di provisioning della distribuzione interno
+
+1. Tornare al [portale per gli account per sviluppatori di Apple](https://developer.apple.com/account/) e **accedere** con l'ID Apple dell'organizzazione.
+
+2. Fare clic su **Certificates, IDs & Profiles** (Certificati, ID e profili).
+
+3. Fare clic sulla scheda ![segno più nel portale per sviluppatori Apple](../media/app-wrapper/iOS-signing-cert-2.png) nell'angolo in alto a destra per aggiungere un profilo di provisioning iOS.
+
+4. Scegliere **In House** (Interna) in **Distribution** (Distribuzione) per creare un profilo di provisioning interno.
+
+  ![Selezionare un profilo di provisioning interno](../media/app-wrapper/iOS-provisioning-profile-1.png)
+
+5. Fare clic su **Continue**. Assicurarsi di collegare il certificato di firma generato in precedenza al profilo di provisioning.
+
+6. Seguire le istruzioni per scaricare il profilo (con estensione mobileprovision) nel computer macOS.
+
+7. Salvare il file in una posizione facile da ricordare. Questo file verrà usato per il parametro -p durante l'uso dello strumento di wrapping delle app.
+
+
+
+## <a name="download-the-app-wrapping-tool"></a>Scaricare lo strumento di wrapping delle app
 
 1.  Scaricare i file per lo strumento di wrapping delle app da [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) in un computer macOS.
 

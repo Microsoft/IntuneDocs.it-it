@@ -1,12 +1,12 @@
 ---
-title: Scegliere come gestire i dispositivi | Microsoft Intune
+title: Scegliere come gestire i dispositivi | Documentazione Microsoft
 description: Informazioni sui diversi modi per registrare e gestire i dispositivi.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: b97ee1e99778c2a39e92061dd5aa051ecdf35caa
+ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
+ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
 
 
 ---
 
 # <a name="choose-how-to-manage-devices"></a>Scegliere come gestire i dispositivi
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Per sfruttare i vantaggi delle numerose funzionalità di Intune, ad esempio la distribuzione di app e il controllo delle impostazioni del dispositivo, i dispositivi devono essere *gestiti*. La modalità di gestione dei dispositivi dipende dalle funzionalità di Intune che si vuole usare. Questo argomento fornisce indicazioni per scegliere il metodo più adatto alle esigenze specifiche.
 
@@ -44,7 +46,7 @@ Registrare i PC Windows per ottenere la maggior parte delle funzionalità. Tutta
 - Assistenza remota agli utenti con il software TeamViewer
 
 Per un elenco dettagliato delle funzionalità di gestione che si ottengono con ogni metodo, vedere [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md) (Funzionalità di gestione dei dispositivi mobili) e [Funzionalità del client software per PC di Intune](windows-pc-management-capabilities-in-microsoft-intune.md).
-Per informazioni sui dispositivi e i PC supportati da Intune, vedere [Dispositivi mobili e computer supportati](/intune/get-started/supported-mobile-devices-and-computers).
+Per informazioni sui dispositivi e i PC supportati da Intune, vedere [Dispositivi mobili e computer supportati](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -54,6 +56,6 @@ Per informazioni sui dispositivi e i PC supportati da Intune, vedere [Dispositiv
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

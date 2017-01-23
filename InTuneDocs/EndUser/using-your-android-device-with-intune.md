@@ -1,5 +1,5 @@
 ---
-title: Uso del dispositivo Android con Intune | Microsoft Intune
+title: Uso del dispositivo Android con Intune | Documentazione Microsoft
 description: "Elenco di collegamenti alle attività che gli utenti finali possono eseguire nel loro dispositivo mobile Android quando viene registrato in Intune"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
 
 
 ---
@@ -62,8 +62,8 @@ Le informazioni contenute in questa sezione consentono di risolvere i problemi c
 - [Inviare i log dei dati di diagnostica all'amministratore IT tramite posta elettronica](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 - [Inviare i log dei dati di diagnostica all'amministratore IT tramite un cavo USB](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
 - [Inviare gli errori di registrazione all'amministratore IT](send-enrollment-errors-to-your-it-administrator-android.md)
-- [Il dispositivo non ha la versione minima richiesta del sistema operativo](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [Il dispositivo non è conforme alla versione massima del sistema operativo](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [Il dispositivo non ha la versione minima richiesta del sistema operativo](you-need-to-update-your-android-device.md)
+- [Il dispositivo non è conforme alla versione massima del sistema operativo](your-android-version-isnt-yet-supported.md)
 - [Il dispositivo è rooted e non è possibile connettersi](your-device-is-rooted-and-you-cant-connect-android.md)
 - [Manca un certificato necessario per il dispositivo](your-device-is-missing-a-required-certificate-android.md)
 - [Viene richiesta la disattivazione delle origini sconosciute](you-are-asked-to-turn-off-unknown-sources-android.md)
@@ -75,6 +75,6 @@ Le informazioni contenute in questa sezione consentono di risolvere i problemi c
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Cancellare i dati dell&quot;app aziendale gestita | Microsoft Intune
+title: Cancellare i dati delle app aziendali gestite | Documentazione Microsoft
 description: "Informazioni su come è possibile rimuovere selettivamente i dati aziendali dai dispositivi in modalità remota."
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 42e8feba18330539389fc4ab7af5cbd18a8ace16
 
 
 ---
 
 # <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>Cancellare i dati dell'app aziendale gestita con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Quando un dispositivo viene smarrito o rubato, o se il dipendente lascia l'azienda, è necessario assicurarsi di rimuovere dal dispositivo i dati delle app aziendali. Ma potrebbe essere necessario non rimuovere i dati personali sul dispositivo, soprattutto se si tratta di un dispositivo di proprietà del dipendente.
 
 Per rimuovere selettivamente i dati delle app aziendali, creare una richiesta di cancellazione attenendosi alla procedura descritta in questo argomento. Al termine della richiesta, i dati aziendali verranno rimossi dall'app alla successiva esecuzione dell'app nel dispositivo.

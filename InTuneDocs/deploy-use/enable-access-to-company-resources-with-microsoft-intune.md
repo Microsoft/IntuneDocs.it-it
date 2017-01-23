@@ -1,5 +1,5 @@
 ---
-title: Abilitare l&quot;accesso alle risorse aziendali | Microsoft Intune
+title: Abilitare l&quot;accesso alle risorse aziendali | Documentazione Microsoft
 description: I profili Wi-Fi, VPN e di posta elettronica interagiscono per consentire agli utenti di accedere ai file e alle risorse necessari.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f91c3530599b75093f536fd85eaf21d0b4e86e50
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bda32f27216c7b65bd02334bae2882e840e7a99d
 
 
 ---
 
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Abilitare l'accesso alle risorse aziendali con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 I profili Microsoft Intune Wi-Fi, VPN e di posta elettronica interagiscono per consentire agli utenti di accedere ai file e alle risorse necessari, mettendoli in grado di svolgere le loro attività ovunque si trovino. I profili di certificati consentono di proteggere tale accesso.
 
 ## <a name="wi-fi-profileswi-fi-connections-in-microsoft-intunemd-and-supported-platforms"></a>[Profili Wi-Fi](wi-fi-connections-in-microsoft-intune.md) e piattaforme supportate
@@ -57,6 +60,6 @@ Consentono di proteggere l'accesso alle risorse aziendali tra cui reti wireless 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

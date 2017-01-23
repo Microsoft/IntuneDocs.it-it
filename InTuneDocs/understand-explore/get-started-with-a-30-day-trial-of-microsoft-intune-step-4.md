@@ -1,11 +1,11 @@
 ---
-title: Creare criteri e pubblicare un&quot;app per gli utenti | Microsoft Intune
+title: Creare criteri e pubblicare un&quot;app per gli utenti | Documentazione Microsoft
 description: Come creare criteri e pubblicare un&quot;app quando si esegue l&quot;iscrizione per una valutazione gratuita di 30 giorni di Intune
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 64f857307046ea061e702d0b383968b322b89c33
+ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
+ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
 
 
 ---
 
 
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>Creare i criteri e pubblicare un'app per gli utenti della valutazione
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 I criteri di Intune specificano impostazioni che consentono di controllare le impostazioni di sicurezza dei dispositivi mobili, di eseguire la manutenzione delle impostazioni di Windows Firewall ed Endpoint Protection per i computer, nonché di distribuire applicazioni. Se si intende usare Intune per dispositivi che dopo la valutazione verranno configurati per la produzione, è essenziale seguire le istruzioni in [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) e [Proteggere i PC Windows con Endpoint Protection per Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 Con Intune è possibile eseguire due tipi di installazioni delle app. La prima è un'**installazione richiesta**, con cui l'app viene distribuita automaticamente nei dispositivi gestiti. L'altra è un'**installazione disponibile** che distribuisce l'app, o un link all'app, al portale aziendale di Intune in modo che gli utenti possano scegliere se installarla sul computer o su dispositivi mobili.
@@ -102,6 +105,6 @@ Passare a una [sottoscrizione a pagamento](get-started-with-a-30-day-trial-of-mi
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Gestione del servizio DEP di Apple per i dispositivi iOS | Microsoft Intune
+title: Gestione del servizio DEP di Apple per i dispositivi iOS | Documentazione Microsoft
 description: "Distribuire un profilo di registrazione che registra i dispositivi iOS acquistati tramite il programma di registrazione dispositivi (DEP) in modalità wireless per gestire i dispositivi Apple."
 keywords: 
 author: staciebarker
@@ -14,8 +14,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f8f5c1e5d69cf91413ebc4a71f1f9f8f8e1c8231
 
 
 ---
@@ -116,6 +116,6 @@ A partire dal mese di novembre la gestione dei gruppi di dispositivi passerà ad
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Reimpostare il passcode del dispositivo dal sito Web del portale aziendale | Microsoft Intune
+title: Reimpostare il passcode del dispositivo dal sito Web del portale aziendale | Documentazione Microsoft
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b3a3b7c2a983776f79ffa8562e130bb11e714e29
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 975759db98854c8276999592d6ecdba195438681
 
 
 ---
@@ -63,6 +63,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 
