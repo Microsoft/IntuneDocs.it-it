@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
-ms.openlocfilehash: 1c4e77d3089df2ff184a414ba668b01b2d040854
+ms.sourcegitcommit: bb949c9a83fdde630dd2023765d32e98c43a1c20
+ms.openlocfilehash: 22a5cab46a6ca8cf2d350ba9844328a3dea13766
 
 
 ---
@@ -59,22 +61,22 @@ Le informazioni contenute in questa sezione illustrano le azioni che gli utenti 
 Le informazioni contenute in questa sezione consentono di risolvere i problemi che si possono verificare quando il dispositivo Android viene registrato in Intune.
 
 - [Usare la registrazione dettagliata per aiutare l'amministratore IT a risolvere i problemi dei dispositivi](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Inviare i log dei dati di diagnostica all'amministratore IT tramite posta elettronica](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [Inviare i log dei dati di diagnostica all'amministratore IT tramite un cavo USB](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [Inviare gli errori di registrazione all'amministratore IT](send-enrollment-errors-to-your-it-administrator-android.md)
+- [Inviare i log all'amministratore IT tramite posta elettronica](send-logs-to-your-it-admin-by-email-android.md)
+- [Inviare i log all'amministratore IT tramite cavo USB](send-logs-to-your-it-admin-using-cable-android.md)
+- [Inviare gli errori di registrazione all'amministratore IT](send-enrollment-errors-to-your-it-admin-android.md)
 - [Il dispositivo non ha la versione minima richiesta del sistema operativo](you-need-to-update-your-android-device.md)
 - [Il dispositivo non è conforme alla versione massima del sistema operativo](your-android-version-isnt-yet-supported.md)
 - [Il dispositivo è rooted e non è possibile connettersi](your-device-is-rooted-and-you-cant-connect-android.md)
-- [Manca un certificato necessario per il dispositivo](your-device-is-missing-a-required-certificate-android.md)
-- [Viene richiesta la disattivazione delle origini sconosciute](you-are-asked-to-turn-off-unknown-sources-android.md)
-- [Viene richiesta la disattivazione del debug USB](you-are-asked-to-turn-off-usb-debugging-android.md)
-- [Viene richiesta l'attivazione della ricerca di minacce per la sicurezza nel dispositivo](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Manca un certificato necessario per il dispositivo](your-device-is-missing-a-required-certificate-landing-android.md)
+- [È necessario disattivare le origini sconosciute](you-need-to-turn-off-unknown-sources-android.md)
+- [È necessario disattivare il debug USB](you-need-to-turn-off-usb-debugging-android.md)
+- [È necessario attivare la ricerca di minacce per la sicurezza nel dispositivo](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [Il dispositivo non soddisfa la patch di protezione minima](your-device-does-not-meet-the-minimum-security-patch-android.md)
 - [Viene richiesto di installare Lookout for Work nel dispositivo Android](you-are-prompted-to-install-lookout-for-work-android.md)
 - [È necessario risolvere una minaccia rilevata da Lookout for Work nel dispositivo Android](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 
