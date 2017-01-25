@@ -1,11 +1,11 @@
 ---
-title: Limitare l&quot;accesso alla posta elettronica a Exchange locale | Documentazione Microsoft
+title: Proteggere l&quot;accesso alla posta elettronica in Exchange locale | Microsoft Docs
 description: Proteggere e controllare l&quot;accesso alla posta elettronica aziendale in Exchange On-premises con accesso condizionale.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,22 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: c090d4bbc539d4174deee139e51242bae94feeb3
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
 
 
 ---
 
-# <a name="restrict-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Limitare l'accesso alla posta elettronica per Exchange locale e l'ambiente legacy Exchange Online dedicato con Intune
+# <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Proteggere l'accesso alla posta elettronica per Exchange locale e l'ambiente legacy Exchange Online dedicato con Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
-> Se è disponibile un ambiente Exchange Online dedicato ed è necessario definire se si trova nell'ambiente di configurazione nuovo o legacy, contattare l'account manager.
+> Se è disponibile un ambiente Exchange Online dedicato e si deve stabilire se si trova nell'ambiente di configurazione nuovo o legacy, contattare l'account manager.
 
 
 Per controllare l'accesso alla posta elettronica per Exchange locale o per l'ambiente legacy Exchange Online dedicato, configurare l'accesso condizionale per Exchange locale tramite Microsoft Intune.
-Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Limitare l'accesso alla posta elettronica e ai servizi di Office 365]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Proteggere l'accesso alla posta elettronica e ai servizi O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 **Prima** di configurare l'accesso condizionale, verificare quanto segue:
 
@@ -125,15 +127,15 @@ Sono supportati:
 
 -   Se l'utente annulla la registrazione da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], il blocco del dispositivo potrebbe richiedere da 1 a 3 ore.
 
-**Per vedere alcuni scenari di esempio sulla configurazione dei criteri di accesso condizionale per limitare l'accesso dei dispositivi, vedere [Limitare l'accesso alla posta elettronica con Microsoft Intune: scenari di esempio](restrict-email-access-example-scenarios.md).**
+**Per vedere alcuni scenari di esempio sulla configurazione dei criteri di accesso condizionale per proteggere l'accesso dei dispositivi, vedere [Proteggere l'accesso alla posta elettronica: scenari di esempio](restrict-email-access-example-scenarios.md).**
 
 ## <a name="next-steps"></a>Passaggi successivi
--   [Limitare l'accesso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+-   [Proteggere l'accesso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
--   [Limitare l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+-   [Proteggere l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

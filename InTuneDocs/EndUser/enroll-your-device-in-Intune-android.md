@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 385565bd1ce05c9402a52cdd6eeb93f58caaf72a
-ms.openlocfilehash: 02bd3d2f62bd8b8e3f590de4bc8f4e6099f4917d
+ms.sourcegitcommit: 3da636b15807623bb60895870e6d43cd2e0aa01c
+ms.openlocfilehash: 4e28ce37559d209672dd4180eebfb07ffddd60c6
 
 
 ---
@@ -25,11 +27,11 @@ ms.openlocfilehash: 02bd3d2f62bd8b8e3f590de4bc8f4e6099f4917d
 
 Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile registrare il dispositivo Android per poter accedere a posta elettronica, file e altre risorse aziendali. La registrazione dei dispositivi consente al reparto IT di gestire e proteggere le risorse aziendali o dell'istituto di istruzione, offrendo al tempo stesso la possibilità di scegliere il dispositivo più adatto per svolgere il proprio lavoro. Per altre informazioni sulla registrazione, vedere [What happens when I install and Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) (Che cosa succede quando si installa l'app Portale aziendale e si registra il dispositivo?).
 
-Queste istruzioni sono valide per la registrazione di dispositivi Android Samsung KNOX e Android "nativi" (non Samsung KNOX). Per sapere se il dispositivo è di tipo Samsung KNOX, andare in **Impostazioni** &gt; **Info dispositivo**. Se non viene visualizzata la versione Knox, significa che il dispositivo è un dispositivo Android nativo.
+Queste istruzioni sono valide per la registrazione di dispositivi Android Samsung KNOX e Android "nativi" (non Samsung KNOX). Per determinare se il dispositivo è di tipo Samsung KNOX, passare a **Impostazioni** > **Informazioni sul dispositivo**. Se non viene visualizzata la versione Knox, significa che il dispositivo è un dispositivo Android nativo.
 
 Prima o dopo la registrazione potrebbe essere necessario scegliere la categoria che descrive meglio come viene usato il dispositivo. Questa categoria consente all'amministratore IT di controllare le app a cui è possibile accedere.
 
-Se si verifica un errore durante la registrazione del dispositivo in Intune, è possibile [inviare gli errori di registrazione all'amministratore IT](send-enrollment-errors-to-your-it-administrator-android.md).
+Se si verifica un errore durante la registrazione del dispositivo in Intune, è possibile [inviare gli errori di registrazione all'amministratore IT](send-enrollment-errors-to-your-it-admin-android.md).
 
 **Per registrare il dispositivo Android:**
 
@@ -114,6 +116,6 @@ Serve ancora assistenza? Contattare l'amministratore IT (accedere al [sito Web d
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

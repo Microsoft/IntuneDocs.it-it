@@ -5,17 +5,19 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
-ms.reviewer: priyar
+searchScope:
+- Company Portal
+ms.reviewer: jieyan
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 8d1644c5a52d728aecd095979fec130cfa8a86f2
+ms.sourcegitcommit: 81ee6143d53ca08f03dfd3555b118f77319ccf2d
+ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
 
 
 ---
@@ -40,19 +42,19 @@ Per saperne di più Altre informazioni su cosa accade quando si [registra il dis
 
  ![Windows 10 Desktop - Informazioni sul PC](../media/settings_about_pc.png)
 
-3.  Se la versione è __1607__, continuare con [questa procedura](enroll-your-w10-device-access-work-or-school.md). Se la versione è __1511__, continuare con [questa procedura](enroll-your-w10-device-your-account.md).
+3.  Se la versione è __1607__, continuare con [questa procedura](enroll-your-w10-device-access-work-or-school.md). Se la versione è __1511 o precedente__, continuare con [questa procedura](enroll-your-w10-device-your-account.md).
 
 ## <a name="windows-10-mobile-devices"></a>Dispositivi Windows 10 Mobile
 
 1.  In __Start__ scorrere verso l'elenco __Tutte le app__ e quindi selezionare l'app __Impostazioni__.
 2.  Toccare __Sistema__ e quindi __Informazioni su__.
 3.  In __Informazioni sul dispositivo__ toccare __Altre informazioni__. Verrà visualizzato un elenco di informazioni sul dispositivo. In questo elenco individuare la __Versione__.
-4.  Se la versione è __1607__, continuare con [questa procedura](enroll-your-w10-device-access-work-or-school.md). Se la versione è __1511__, continuare con [questa procedura](enroll-your-w10-device-your-account.md).
+4.  Se la versione è __1607__, continuare con [questa procedura](enroll-your-w10-device-access-work-or-school.md). Se la versione è __1511 o precedente__, continuare con [questa procedura](enroll-your-w10-device-your-account.md).
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

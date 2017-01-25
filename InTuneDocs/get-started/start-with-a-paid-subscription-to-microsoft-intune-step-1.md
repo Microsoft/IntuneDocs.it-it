@@ -14,14 +14,17 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 047a2fb0ad286ece183116a70466fc259b9a0dea
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
 
 
 ---
 
 
 # <a name="sign-up-or-sign-in-to-intune"></a>Iscriversi o accedere a Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Prima di poter iscriversi o accedere a Intune, è necessario verificare se l'organizzazione dispone già di un account aziendale o dell'istituto di istruzione Microsoft Online Services o se l'organizzazione dispone di un contratto Enterprise o equivalente contratto multilicenza con Microsoft. Si tratta dell'account che viene fornito quando si sottoscrive un contratto multilicenza con Microsoft o si esegue l'iscrizione ad altri servizi cloud Microsoft come Office 365.
 
 Se si dispone già di un account aziendale o dell'istituto di istruzione, è sufficiente **accedere** con questo account per aggiungere Intune all'ambiente di sottoscrizione esistente. In caso contrario, sarà necessario **iscriversi** per creare un nuovo account da usare per la gestione di Intune per la propria organizzazione.
@@ -50,6 +53,6 @@ Dopo aver completato il processo di iscrizione, si verrà indirizzati a una pagi
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

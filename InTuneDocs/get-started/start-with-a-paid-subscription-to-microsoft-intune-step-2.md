@@ -14,14 +14,17 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b40ce33560ea49fdc966889a1bf2cac2ae537578
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
 
 
 ---
 
 
 # <a name="configure-a-custom-domain-name"></a>Configurare un nome di dominio personalizzato
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 Quando l'organizzazione si iscrive a un servizio Microsoft basato su cloud come Intune, l'utente riceve un nome di dominio iniziale ospitato in Azure Active Directory (AD) simile al seguente: **dominio.onmicrosoft.com**. In questo esempio, **dominio** è il nome scelto al momento dell'iscrizione e **onmicrosoft.com** è il suffisso assegnato agli account che si aggiungono alla sottoscrizione. Quando l'azienda dispone di un dominio personalizzato, è possibile configurare la propria istanza di Intune in modo da usare quel dominio anziché quello fornito con la sottoscrizione.
 
@@ -59,6 +62,6 @@ Altre informazioni sono disponibili in [Informazioni sul dominio onmicrosoft.com
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

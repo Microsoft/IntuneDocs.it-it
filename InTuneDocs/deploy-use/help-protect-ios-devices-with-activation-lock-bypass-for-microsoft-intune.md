@@ -14,13 +14,16 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: fa61114e0bd338725c5d42f788212903ebdccf7a
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: a6fa910c0a8ec1a9542e03a276dbb8d0757d75b4
 
 
 ---
 
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Proteggere i dispositivi iOS con il bypass di Blocco attivazione per Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune consente di gestire il Blocco attivazione di iOS, una funzionalità dell'app Trova il mio iPhone per dispositivi iOS 8.0 e versioni successive. Blocco attivazione viene abilitato automaticamente quando un utente apre l'app Trova il mio iPhone in un dispositivo. Una volta abilitato, richiede l'immissione di un ID Apple e una password dell'utente prima di poter: 
 
 -   Disattivare Trova il mio iPhone
@@ -44,7 +47,7 @@ Per facilitare la soluzione di questi problemi, Apple ha introdotto il bypass di
 > La modalità di supervisione per i dispositivi iOS consente di usare Apple Configurator per bloccare un dispositivo e limitarne la funzionalità per specifici scopi aziendali. Questa modalità è in genere usata solo per dispositivi di proprietà dell'azienda.
 
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Come gestire Blocco attivazione in Intune
-Intune può richiedere lo stato di Blocco attivazione per dispositivi con supervisione e senza supervisione che eseguono iOS 8.0 e versioni successive. Solo per i dispositivi con supervisione, Intune può recuperare il codice del bypass del blocco attivazione e inviarlo direttamente al dispositivo. Se il dispositivo è stato cancellato, è possibile accedervi direttamente usando un nome utente vuoto e il codice come password.
+Intune può richiedere lo stato di Blocco attivazione per dispositivi con supervisione che eseguono iOS 8.0 e versioni successive. Solo per i dispositivi con supervisione, Intune può recuperare il codice del bypass del blocco attivazione e inviarlo direttamente al dispositivo. Se il dispositivo è stato cancellato, è possibile accedervi direttamente usando un nome utente vuoto e il codice come password.
 
 **I vantaggi aziendali di questo approccio sono i seguenti**:
 
@@ -93,6 +96,6 @@ Intune può richiedere lo stato di Blocco attivazione per dispositivi con superv
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

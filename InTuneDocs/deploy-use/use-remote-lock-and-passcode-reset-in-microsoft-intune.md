@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 641ca955c2790dc3029e8408d32a66b7b0418a12
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Protezione dei dispositivi con blocco remoto e reimpostazione passcode
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune include funzionalità per il blocco remoto e la reimpostazione del passcode.
 
 ## <a name="lock-a-device-remotely"></a>Bloccare un dispositivo in modalità remota
-Se un utente perde un dispositivo, è possibile bloccare il dispositivo in modalità remota. Nella tabella seguente è illustrato il funzionamento del blocco remoto su diverse piattaforme per dispositivi mobili.
+Se un utente perde un dispositivo, è possibile bloccare il dispositivo in modalità remota. Per poter usare il blocco remoto è necessario che nel dispositivo sia impostato un PIN o passcode. 
+
+Nella tabella seguente è illustrato il funzionamento del blocco remoto su diverse piattaforme per dispositivi mobili.
 
 |Piattaforma|Blocco remoto|
 |------------|---------------|
@@ -79,6 +84,6 @@ Reimpostazione passcode non è supportato per i PC Windows registrati con il cli
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

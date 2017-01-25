@@ -5,90 +5,95 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/08/2016
+ms.date: 01/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
-ms.reviewer: priyar
+ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1d9ebc7fd727b80091625ed5256ae634323a9257
-ms.openlocfilehash: f7e71d20923e113b533668a7b5aef688de196182
+ms.sourcegitcommit: 2fdf4086ccf4b4f256596b7d0f7192b70a4efd2a
+ms.openlocfilehash: a2f3eab11f208c0260dc4dbc245801416dc36633
 
 
 ---
-# <a name="whats-new-in-microsoft-intune---december-2016"></a>Novità di Microsoft Intune - Dicembre 2016
+# <a name="whats-new-in-microsoft-intune---january-2017"></a>Novità di Microsoft Intune - Gennaio 2017
 Di seguito sono illustrate le novità di questa versione di Microsoft Intune, oltre alle prossime modifiche che si consiglia di pianificare e a informazioni sulle versioni precedenti.
 
 > [!Note]
-> Tutte queste funzionalità saranno supportate per le distribuzioni ibride dei clienti (Configuration Manager con Intune). Per altre informazioni sulle nuove funzionalità ibride, vedere la [pagina Novità per le funzionalità ibride](https://docs.microsoft.com/en-us/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
-
-## <a name="public-preview-of-the-new-intune-admin-experience-on-azure--736542--"></a>Anteprima pubblica della nuova esperienza di amministrazione di Intune in Azure<!--736542-->
-All'inizio del 2017 è prevista la migrazione dell'intera esperienza di amministrazione in Azure e ciò consentirà la gestione efficiente e integrata dei flussi di lavoro principali di EMS su una piattaforma di servizi moderna ed estendibile usando le API Graph. Prima della disponibilità generale di questo portale per tutti i tenant di Intune, siamo lieti di annunciare che verrà introdotta un'anteprima di questa nuova esperienza di amministrazione in seguito durante il mese a tenant selezionati.
-
-L'esperienza di amministrazione nel portale di Azure userà la nuova funzionalità di raggruppamento e targeting già annunciata. Dopo la migrazione di un tenant esistente alla nuova esperienza di raggruppamento verrà eseguita anche la migrazione alla versione di anteprima della nuova esperienza di amministrazione. Nel frattempo, per scoprire cosa abbiamo in serbo per Microsoft Intune nel portale di Azure, vedere la [nuova documentazione](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
-
-Per qualsiasi domanda in merito alla tempistica per la migrazione del tenant, contattare il team Microsoft responsabile della migrazione all'indirizzo [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
-
-### <a name="telecom-expense-management-integration-in-public-preview-of-azure-portal--747605--"></a>Integrazione della gestione delle spese di telecomunicazione nell'anteprima pubblica del portale di Azure<!--747605-->
-Stiamo iniziando a presentare in anteprima l'integrazione con i servizi di gestione delle spese di telecomunicazione di terze parti nel portale di Azure. È possibile usare Intune per imporre limiti al consumo dei dati sia nazionale che in roaming. Queste integrazioni iniziano con [Saaswedo](http://www.saaswedo.com). Per abilitare questa funzionalità nel tenant di prova, [contattare il supporto tecnico Microsoft](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
+> Tutte queste funzionalità saranno supportate per le distribuzioni ibride dei clienti (Configuration Manager con Intune). Per altre informazioni sulle nuove funzionalità ibride, vedere la [pagina Novità per le funzionalità ibride](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 ## <a name="new-capabilities"></a>Nuove funzionalità
 
-### <a name="multi-factor-authentication-across-all-platforms---747590--"></a>Autenticazione a più fattori su tutte le piattaforme <!--747590-->
-È ora possibile imporre l'autenticazione a più fattori (MFA) per un gruppo selezionato di utenti durante la registrazione di un dispositivo iOS, Android, Windows 8.1+ o Windows Phone 8.1+ dal portale di gestione di Azure configurando MFA nell'applicazione di registrazione di Microsoft Intune in Azure Active Directory.
+<!--### Actions for non-compliance <!--730266
+_Actions for non-compliance_ is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.-->
 
-### <a name="ability-to-restrict-mobile-device-enrollment--747596--"></a>Possibilità di limitare la registrazione di dispositivi mobili<!--747596-->
-Intune aggiunge nuove limitazioni di registrazione che consentono di controllare quali piattaforme per dispositivi mobili sono autorizzate alla registrazione. Intune separa le piattaforme per dispositivi mobili iOS, macOS, Android, Windows e Windows Mobile.
-* La limitazione della registrazione di dispositivi mobili non limita la registrazione di client PC.
-* Solo per iOS: è disponibile un'altra opzione che consente di bloccare la registrazione dei dispositivi personali.
+### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Report nella console per MAM senza registrazione <!--677961-->
+Sono stati aggiunti nuovi report relativi alla protezione delle app, sia per i dispositivi registrati che per quelli non registrati. Per altre informazioni in merito, vedere [Monitorare i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune).
 
-Intune contrassegna tutti i nuovi dispositivi come personali, a meno che l'amministratore IT non esegua un'operazione per contrassegnarli come aziendali, come spiegato in [questo articolo](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+<!--### Conditional access for MAM with SharePoint Online <!--679339
+You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint Online.  You can get started using Intune mobile app management in the Azure portal. Look for the __Conditional Access__ section in the __Settings__ blade which will include the option for SharePoint Online. This feature will ship separately from the rest of the service release. <!--Find out more about this new feature [here](https://docs.microsoft.com/intune/deploy-use/mam-ca-for-sharepoint-online).-->
 
+### <a name="android-711-support---694397--"></a>Supporto per Android 7.1.1 <!--694397-->
+Intune ora supporta completamente Android 7.1.1 e la relativa gestione.
+
+### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Risolvere il problema nel caso in cui i dispositivi iOS non sono attivi o la console di amministrazione non è in grado di comunicare con i dispositivi
+
+Quando i dispositivi degli utenti perdono la connessione con Intune è possibile indicare nuovi passaggi per la risoluzione dei problemi per ripristinare l'accesso alle risorse aziendali. Vedere [I dispositivi sono inattivi o la console di amministrazione non è in grado di comunicare con i dispositivi](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
 
 ## <a name="notices"></a>Notifiche
 
-### <a name="multi-factor-authentication-on-enrollment-moving-to-the-azure-portal---vso-750545--"></a>Trasferimento di Multi-Factor Authentication per la registrazione nel portale di Azure <!--VSO 750545-->
-Per impostare MFA per le registrazioni in Intune, gli amministratori dovevano usare in precedenza la console di Intune o Configuration Manager (prima della versione di ottobre 2016). Con questa funzionalità aggiornata è ora possibile accedere al [portale di Microsoft Azure](https://manage.windowsazure.com) con le credenziali di Intune e configurare le impostazioni di MFA tramite Azure AD. Per altre informazioni a questo proposito, vedere [qui](https://aka.ms/mfa_ad).
+### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>La gestione dei dispositivi desktop Windows avviene per impostazione predefinita tramite le impostazioni di Windows <!--663050-->
+Il comportamento predefinito per la registrazione dei computer desktop di Windows 10 sta cambiando. Per le nuove registrazioni verrà usato il flusso di registrazione dell'agente MDM tipico anziché tramite l'agente per PC.
 
-### <a name="company-portal-app-for-android-now-available-in-china--vso-658093--"></a>L'app Portale aziendale per Android è ora disponibile in Cina <!--VSO 658093-->
-L'app Portale aziendale per Android sta per essere pubblicata per il download in Cina. A causa dell'assenza di Google Play Store in Cina, i dispositivi Android devono ottenere l'app dai marketplace di app cinesi. L'app Portale aziendale per Android sarà disponibile per il download negli store seguenti:
-* [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
-* [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
-* [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
-* [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
-* [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+Il sito Web del portale aziendale fornirà agli utenti di desktop Windows 10 istruzioni per la registrazione, che consentono di eseguire in modo guidato il processo di aggiunta di computer desktop Windows 10 come dispositivi mobili. Ciò non influirà su PC già registrati e l'organizzazione può comunque decidere di gestire i desktop Windows 10 con l'agente per PC, [se preferibile](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune).
 
-L'app Portale aziendale per Android usa i servizi Google Play per comunicare con il servizio Microsoft Intune. Dato che i servizi Google Play non sono ancora disponibili in Cina, per completare qualsiasi attività tra le seguenti possono essere richieste fino a 8 ore. 
+<!--### Company Portal for iOS links open inside the app <!--665954
+Links inside of the Company Portal app for iOS, including those to documentation and apps, will open directly in the Company Portal app using an in-app view of Safari. This update will ship separately from the service update in January.-->
 
-|Console di amministrazione di Intune| App Portale aziendale di Intune per Android |Sito Web del portale aziendale di Intune|   
-|---|---|---|
-|Cancellazione completa| Rimozione di un dispositivo remoto| Rimozione di un dispositivo (locale e remoto)|
-|Cancellazione selettiva| Reimpostazione del dispositivo| Reimpostazione del dispositivo|
-|Distribuzioni di app nuove o aggiornate| Installazione delle app line-of-business disponibili| Reimpostazione del passcode del dispositivo|
-|Blocco remoto|||
-|Reimpostazione del passcode|||
+### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Miglioramento del supporto della gestione delle app per dispositivi mobili per la cancellazione selettiva <!--581242-->
+Gli utenti finali riceveranno ulteriori indicazioni su come riottenere l'accesso ai dati aziendali o dell'istituto di istruzione se i dati vengono rimossi automaticamente a causa del criterio "Intervallo offline (giorni) prima della cancellazione dei dati dell'app".<!--, or the removal of the Intune Company Portal on Android.-->
 
-## <a name="deprecations"></a>Elementi deprecati
+### <a name="new-documentation-for-app-protection-policies---583398--"></a>Nuova documentazione per i criteri di protezione delle app <!--583398-->
+È stata aggiornata la documentazione per gli amministratori e gli sviluppatori di app che vogliono abilitare i criteri di protezione delle app (noti come criteri MAM) nelle loro app iOS e Android usando lo strumento di wrapping delle app di Intune o Intune App SDK.
 
-### <a name="firefox-to-no-longer-support-silverlight--vso-tba--"></a>Firefox non supporterà più Silverlight<!--VSO TBA-->
-Mozilla sta per rimuovere il supporto per Silverlight nella versione 52 del [browser Firefox](https://www.mozilla.org/firefox), a partire da marzo 2017. Di conseguenza, non sarà più possibile accedere alla console di Intune esistente usando versioni di Firefox superiori alla 51. Si consiglia di usare Internet Explorer 10 o 11 per accedere alla console di amministrazione o una [versione di Firefox precedente alla versione 52](https://ftp.mozilla.org/pub/firefox/releases/). La transizione di Intune al portale di Azure consentirà di supportare una serie di [browser moderni](https://docs.microsoft.com/en-us/azure/azure-preview-portal-supported-browsers-devices) che non dipendono da Silverlight.
+Sono stati aggiornati gli articoli seguenti:
 
-### <a name="removal-of-exchange-online-mobile-inbox-policies---770687--"></a>Rimozione del criteri per le cassette postali per dispositivi portatili di Exchange Online <!--770687-->
-A partire da dicembre, gli amministratori non potranno più visualizzare o configurare i criteri per le cassette postali per dispositivi portatili di Exchange Online (EAS) all'interno della console di Intune. Questa modifica verrà distribuita in tutti i tenant di Intune nel corso di dicembre e gennaio. La configurazione di tutti i criteri esistenti rimarrà invariata. Per la configurazione dei nuovi criteri, usare Exchange Management Shell. Altre informazioni sono disponibili [qui](https://technet.microsoft.com/en-us/library/bb123783%28v=exchg.150%29.aspx).
+* [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+* [Preparare le app per iOS per la gestione delle app mobili con lo strumento di wrapping delle app di Intune](https://docs.microsoft.com/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+* [Introduzione a Microsoft Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started)
+* [Manuale dello sviluppatore di Intune App SDK per iOS](https://docs.microsoft.com/intune/develop/intune-app-sdk-ios)
 
-### <a name="intune-av-player-image-viewer-and-pdf-viewer-apps-are-no-longer-supported-on-android---747553--"></a>Le app Intune AV Player, Image Viewer e PDF Viewer non sono più supportate in Android <!--747553-->
-A partire dalla metà di dicembre 2016, gli utenti non potranno più usare le app Intune AV Player, Image Viewer e PDF Viewer. Queste app sono state sostituite dall'app Azure Information Protection. È possibile trovare altre informazioni sull'app Azure Information Protection [qui](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq).
+Gli articoli seguenti sono stati aggiunti alla raccolta della documentazione:
+
+* [Plug-in Cordova per Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-cordova)
+* [Componente Xamarin per Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-xamarin)
+
+<!--### Progress bar when launching the Company Portal on iOS <!--665978
+The Company Portal for iOS is introducing a progress bar on the launch screen to provide the user with information about the loading processes that occur. There will be a phased rollout of the progress bar to replace the spinner. This means that some of your users will see the new progress bar while others will continue to see the spinner.-->
+
+## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Novità dell'anteprima pubblica dell'esperienza di amministrazione di Intune in Azure <!--736542-->
+
+All'inizio del 2017 è prevista la migrazione dell'intera esperienza di amministrazione in Azure e ciò consentirà la gestione efficiente e integrata dei flussi di lavoro principali di EMS su una piattaforma di servizi moderna ed estendibile tramite le API Graph.
+
+I nuovi tenant per la valutazione inizieranno a visualizzare l'anteprima pubblica della nuova esperienza di amministrazione nel portale di Azure già questo mese. Durante il periodo di anteprima, le funzionalità e la parità con la console di Intune esistente verranno fornite in modo iterativo.
+
+L'esperienza di amministrazione nel portale di Azure userà la nuova funzionalità di raggruppamento e targeting già annunciata. Dopo la migrazione di un tenant esistente alla nuova esperienza di raggruppamento verrà eseguita anche la migrazione alla versione di anteprima della nuova esperienza di amministrazione. Nel frattempo, se si vogliono testare o esaminare le nuove funzionalità prima della migrazione del tenant, è possibile iscriversi per richiedere un nuovo account di prova di Intune oppure consultare la [nuova documentazione](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
+
+Per qualsiasi domanda in merito alla tempistica per la migrazione del tenant, contattare il team Microsoft responsabile della migrazione all'indirizzo [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+
+Le novità dell'anteprima di Intune in Azure sono descritte [qui](https://docs.microsoft.com/intune-azure/introduction/whats-new).
 
 ### <a name="see-also"></a>Vedere anche
 * [Blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Guida di orientamento a Cloud Platform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Novità dell'anteprima di Azure](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [Archivio delle novità](whats-new-archive.md)
 
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 
