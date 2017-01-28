@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 07/19/2016
+ms.date: 12/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: f8f5c1e5d69cf91413ebc4a71f1f9f8f8e1c8231
+ms.sourcegitcommit: 8063b933a767740a7951fa69a918a8677b664d02
+ms.openlocfilehash: e8a21ace32b5668f8158b9a383b882b7c2f524df
 
 
 ---
 
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Registrare i dispositivi IOS di proprietà dell'azienda usando il programma di registrazione dispositivi (DEP)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune può distribuire un profilo di registrazione che registra in modalità wireless i dispositivi iOS acquistati tramite il programma di registrazione dispositivi (DEP). Il pacchetto di registrazione può includere opzioni di Assistente configurazione per il dispositivo. La registrazione dei dispositivi registrati tramite DEP non può essere annullata dagli utenti.
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Gestione del servizio DEP di Apple per i dispositivi iOS con Microsoft Intune
@@ -109,13 +112,13 @@ Per registrare i dispositivi iOS di proprietà dell'azienda con DEP, è necessar
 
 ## <a name="changes-to-intune-group-assignments"></a>Modifiche alle assegnazioni di gruppo di Intune
 
-A partire dal mese di novembre la gestione dei gruppi di dispositivi passerà ad Azure Active Directory. Dopo la transizione ai gruppi di Azure Active Directory le assegnazioni di gruppo non saranno più incluse nelle opzioni del **profilo di registrazione aziendale**. Poiché questa modifica verrà implementata nel corso di diversi mesi, potrebbe non essere visibile immediatamente. Dopo il passaggio al nuovo portale, è possibile definire le assegnazioni di gruppi di dispositivi dinamici in base ai nomi dei profili di registrazione aziendali. Questo processo assicura che i dispositivi già assegnati a un gruppo di dispositivi verranno registrati automaticamente nel gruppo con le app e i criteri distribuiti. [Altre informazioni sui gruppi di Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+A partire dal mese di dicembre 2016 la gestione dei gruppi di dispositivi passerà ad Azure Active Directory. Dopo la transizione ai gruppi di Azure Active Directory le assegnazioni di gruppo non saranno più incluse nelle opzioni del **profilo di registrazione aziendale**. Poiché questa modifica verrà implementata nel corso di diversi mesi, potrebbe non essere visibile immediatamente. Dopo il passaggio al nuovo portale, è possibile definire le assegnazioni di gruppi di dispositivi dinamici in base ai nomi dei profili di registrazione aziendali. Questo processo assicura che i dispositivi già assegnati a un gruppo di dispositivi verranno registrati automaticamente nel gruppo con le app e i criteri distribuiti. [Altre informazioni sui gruppi di Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### <a name="see-also"></a>Vedere anche
 [Prerequisiti per la registrazione dei dispositivi](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

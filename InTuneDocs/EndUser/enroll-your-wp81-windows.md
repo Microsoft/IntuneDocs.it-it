@@ -5,17 +5,19 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: 756dc97161c560bd44ab003db64584c77661b625
+ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
+ms.openlocfilehash: fe6a3e323828b28b303f7f8ca012fa1cc00db507
 
 
 ---
@@ -81,12 +83,12 @@ Registrare il dispositivo:
 
 4.  Se viene richiesto di installare l'app aziendale o Hub, verificare che la casella corrispondente sia selezionata e toccare **fine**.
 
-Se l'amministratore IT ha configurato l'app Portale aziendale in modo che venga installata durante la registrazione, questa app verrà visualizzata nell'elenco delle app.
+Se l'amministratore IT ha configurato l'app Portale aziendale in modo che venga installata durante la registrazione, l'app verrà visualizzata nell'elenco delle app.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

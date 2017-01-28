@@ -1,11 +1,11 @@
 ---
-title: Limitare l&quot;accesso con la protezione dalle minacce per il dispositivo | Documentazione Microsoft
-description: Limitare l&quot;accesso alle risorse aziendali in base al rischio per dispositivi, rete e applicazioni.
+title: Proteggere l&quot;accesso con la protezione dalle minacce per il dispositivo | Microsoft Docs
+description: Proteggere l&quot;accesso alle risorse aziendali in base al rischio per dispositivi, rete e applicazioni.
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b83d06ecbe6e202bf022444c288e0866b3507c6
-ms.openlocfilehash: 1dd2c4a46857aef1ba273904d58d5eacae99c7bc
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 184002a3a9f4af671a467ce9fe79fe0050bd00df
 
 
 ---
 
-# <a name="restrict-access-to-company-resource-based-on-device-network-and-application-risk"></a>Limitare l'accesso alle risorse aziendali in base al rischio per dispositivi, rete e applicazioni
+# <a name="protect-access-to-company-resource-based-on-device-network-and-application-risk"></a>Proteggere l'accesso alle risorse aziendali in base al rischio per dispositivi, rete e applicazioni
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 È possibile controllare l'accesso dai dispositivi mobili alle risorse aziendali in base alla valutazione dei rischi condotta da Lookout, una soluzione di protezione dalle minacce per i dispositivi integrata in Microsoft Intune. La valutazione dei rischi viene effettuata in base ai dati di telemetria raccolti dai dispositivi dal servizio Lookout, che includono:
 - Vulnerabilità del sistema operativo
 - Installazione di app dannose
@@ -71,7 +74,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile impe
 ![diagramma che mostra i criteri di accesso condizionale che concedono l'accesso quando il dispositivo risulta conforme dopo la correzione](../media/mtp/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete
-Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle e limitare l'accesso a reti Wi-Fi in base al livello di rischio del dispositivo.
+Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle e proteggere l'accesso a reti Wi-Fi in base al livello di rischio del dispositivo.
 
 **Bloccare l'accesso alla rete tramite Wi-Fi:**
 ![diagramma che mostra l'accesso condizionale che blocca l'accesso tramite Wi-Fi in presenza di minacce di rete](../media/mtp/network-wifi-blocked.png)
@@ -102,6 +105,6 @@ Ecco i passaggi principali per l'implementazione di questa soluzione:
 
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

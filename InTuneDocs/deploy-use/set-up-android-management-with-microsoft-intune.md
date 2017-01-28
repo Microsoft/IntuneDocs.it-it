@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 99612d5c83030ee05c19c21471cfd23f423fcd80
+ms.sourcegitcommit: 26ddc03985ab8a4959a1d2c9a47e77f042ab9310
+ms.openlocfilehash: 6b74c09c37970429d3eaa571db655854d592a2fe
 
 
 ---
 
 # <a name="set-up-android-device-management"></a>Configurare la gestione dei dispositivi Android
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In qualità di amministratore di Intune, è possibile abilitare la gestione di dispositivi Android dal portale aziendale, inclusi i dispositivi Samsung KNOX Standard. Gli utenti possono quindi registrare i propri dispositivi usando l'app Portale aziendale disponibile da Google Play.
 
 1.  **Configurare Intune**<br>
@@ -37,11 +40,28 @@ In qualità di amministratore di Intune, è possibile abilitare la gestione di d
   - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](what-to-tell-your-end-users-about-using-microsoft-intune.md)
   - [End user guidance for Android devices](../enduser/using-your-android-device-with-intune.md) (Linee guida per utenti finali relative a dispositivi Android)
 
+A causa dell'assenza di Google Play Store in Cina, i dispositivi Android devono ottenere il portale aziendale dai marketplace di app cinesi. L'app Portale aziendale per Android sarà disponibile per il download negli store seguenti:
+* [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+* [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+* [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+* [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+* [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+
+L'app Portale aziendale per Android usa i servizi Google Play per comunicare con il servizio Microsoft Intune. Dato che i servizi Google Play non sono ancora disponibili in Cina, per completare qualsiasi attività tra le seguenti possono essere richieste fino a 8 ore. 
+
+|Console di amministrazione di Intune| App Portale aziendale di Intune per Android |Sito Web del portale aziendale di Intune|   
+|---|---|---|
+|Cancellazione completa| Rimozione di un dispositivo remoto| Rimozione di un dispositivo (locale e remoto)|
+|Cancellazione selettiva| Reimpostazione del dispositivo| Reimpostazione del dispositivo|
+|Distribuzioni di app nuove o aggiornate| Installazione delle app line-of-business disponibili| Reimpostazione del passcode del dispositivo|
+|Blocco remoto|||
+|Reimpostazione del passcode|||
+
 ### <a name="see-also"></a>Vedere anche
 [Prerequisiti per la registrazione dei dispositivi in Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -5,18 +5,20 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01d2fcd0202f1ef347693c973edb82acfae6c818
-ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: fa9c3fd2c995615e9aa9a16f3bd834b0c145b6d0
 
 
 ---
@@ -24,7 +26,7 @@ ms.openlocfilehash: 13198d264d7d49454e2aba76604b4c2e9445a502
 # <a name="about-the-company-portal"></a>Informazioni sul portale aziendale
 
 ## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>Che cos'è il portale aziendale e a cosa serve?
-Il portale aziendale di Microsoft Intune consente di accedere ai dati e alle app della società o dell'istituto di istruzione. È possibile accedere al portale aziendale in due modi diversi:
+Il portale aziendale consente di accedere ai dati e alle app aziendali o dell'istituto di istruzione. È possibile accedere al portale aziendale in due modi diversi:
 
 - Installando l'app Portale aziendale nel dispositivo. In genere è possibile scaricare l'app Portale aziendale dall'App Store del dispositivo, ma anche l'amministratore IT può installare l'app.
 - Visitando il [sito Web del portale aziendale](http://portal.manage.microsoft.com) impostato dall'amministratore IT.
@@ -42,7 +44,7 @@ Per scoprire quali operazioni è possibile eseguire nel sito Web del portale azi
 
 > [!div class="op_single_selector"]
 - [Uso del dispositivo Android con Intune](using-your-android-device-with-intune.md)
-- [Uso dei dispositivi iOS o macOS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Uso dei dispositivi iOS o macOS con Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Uso del dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 - [Uso del sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
@@ -96,6 +98,6 @@ Per assistenza, contattare l'amministratore IT. Per informazioni sul contatto ve
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

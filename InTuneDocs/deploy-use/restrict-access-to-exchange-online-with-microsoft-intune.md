@@ -1,11 +1,11 @@
 ---
-title: Limitare l&quot;accesso alla posta elettronica a Exchange Online | Documentazione Microsoft
+title: Proteggere l&quot;accesso alla posta elettronica per Exchange Online | Microsoft Docs
 description: Proteggere e controllare l&quot;accesso alla posta elettronica aziendale in Exchange Online con accesso condizionale.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51e06bafef761eaf06d35343b459262524ad9168
-ms.openlocfilehash: 1b5ee2f53f19643cb50e803f538fdac4ec5d2ad9
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 
 ---
 
 
-# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Limitare l'accesso alla posta elettronica per Exchange Online e il nuovo ambiente Exchange Online dedicato
+# <a name="protect-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Proteggere l'accesso alla posta elettronica per Exchange Online e il nuovo ambiente Exchange Online dedicato con Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 >Se è disponibile un ambiente Exchange Online dedicato e si deve stabilire se si trova nell'ambiente di configurazione nuovo o legacy, contattare l'account manager.
 
-Per controllare l'accesso alla posta elettronica per Exchange Online o il nuovo ambiente Exchange Online dedicato, è possibile configurare l'accesso condizionale per Exchange Online con Microsoft Intune. Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Limitare l'accesso alla posta elettronica, a Office 365 e ad altri servizi con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Per controllare l'accesso alla posta elettronica per Exchange Online o il nuovo ambiente Exchange Online dedicato, è possibile configurare l'accesso condizionale per Exchange Online con Microsoft Intune. Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Proteggere l'accesso alla posta elettronica, a Office 365 e ad altri servizi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 
 **Prima** di configurare l'accesso condizionale, è necessario:
@@ -64,7 +66,7 @@ Il diagramma seguente illustra il flusso usato dai criteri di accesso condiziona
 ![Diagramma che illustra gli aspetti tenuti in considerazione per determinare se a un dispositivo è consentito o meno l'accesso](../media/ConditionalAccess8-1.png)
 
 ## <a name="support-for-mobile-devices"></a>Supporto per dispositivi mobili
-È possibile limitare l'accesso alla posta elettronica di Exchange Online da **Outlook** e altre **app che usano l'autenticazione moderna**. Sono supportati:
+È possibile proteggere l'accesso alla posta elettronica di Exchange Online da **Outlook** e altre **app che usano l'autenticazione moderna**. Sono supportati:
 
 - Android 4.0 e versioni successive, Samsung Knox Standard 4.0 e versioni successive e Android for Work
 - iOS 8.0 e versioni successive
@@ -77,7 +79,7 @@ Con l'**autenticazione moderna** l'accesso basato su Active Directory Authentica
 -   Questo tipo di autenticazione consente ai client Office di usare l'autenticazione basata su browser, nota anche come autenticazione passiva. Per eseguire l'autenticazione, l'utente viene indirizzato a una pagina Web di accesso.
 -   Questo nuovo metodo di accesso offre migliori opzioni di sicurezza, come l'**autenticazione a più fattori** e l'**autenticazione basata sui certificati**. Per altre informazioni dettagliate, vedere [Funzionamento dell'autenticazione moderna ](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). È possibile configurare le regole delle attestazioni AD FS per bloccare i protocolli di autenticazione non moderni. Istruzioni dettagliate sono disponibili in [Scenario 3: Bloccare completamente l'accesso esterno a Office 365, ad eccezione di applicazioni basate su browser](https://technet.microsoft.com/library/dn592182.aspx).
 
-È possibile limitare l'accesso a **Outlook Web Access (OWA)** in Exchange Online quando un utente accede a OWA da un browser in dispositivi **iOS** e **Android**. L'accesso è consentito solo dai browser supportati su dispositivi conformi:
+È possibile proteggere l'accesso a **Outlook Web Access (OWA)** in Exchange Online quando un utente accede a OWA da un browser in dispositivi **iOS** e **Android**. L'accesso è consentito solo dai browser supportati su dispositivi conformi:
 
 * Safari (iOS)
 * Chrome (Android)
@@ -88,7 +90,7 @@ Con l'**autenticazione moderna** l'accesso basato su Active Directory Authentica
 **L'app OWA per iOS e Android può essere modificata in modo da evitare l'uso dell'autenticazione moderna e non è supportata. L'accesso dall'app OWA deve essere bloccato tramite le regole delle attestazioni di AD FS.**
 
 
-È possibile limitare l'accesso per la posta elettronica a Exchange dal **client di posta elettronica Exchange ActiveSync** integrato sulle piattaforme seguenti:
+È possibile proteggere l'accesso alla posta elettronica di Exchange dal **client di posta elettronica Exchange ActiveSync** integrato sulle piattaforme seguenti:
 
 - Android 4.0 e versioni successive, Samsung Knox Standard 4.0 e versioni successive
 
@@ -254,7 +256,7 @@ Vengono valutati solo i gruppi di utenti a cui sono applicati i criteri di acces
 
 -   Se l'utente annulla la registrazione del dispositivo, la posta elettronica viene bloccata dopo circa sei ore.
 
-Per vedere alcuni **scenari di esempio sulla configurazione dei criteri di accesso condizionale per limitare l'accesso dei dispositivi**, vedere [Limitare l'accesso alla posta elettronica con Microsoft Intune: scenari di esempio](restrict-email-access-example-scenarios.md).
+Per **alcuni scenari di esempio sulla configurazione dei criteri di accesso condizionale per proteggere l'accesso dei dispositivi**, vedere [Proteggere l'accesso alla posta elettronica: scenari di esempio](restrict-email-access-example-scenarios.md).
 
 ## <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorare i criteri di conformità e di accesso condizionale
 
@@ -264,12 +266,12 @@ Nel dashboard di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sceglier
 ![Screenshot del dashboard di Intune che mostra il numero di dispositivi che non possono accedere a Exchange](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>Passaggi successivi
-- [Limitare l'accesso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+- [Proteggere l'accesso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-- [Limitare l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+- [Proteggere l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
