@@ -86,15 +86,17 @@ Questo articolo fornisce risposte ad alcune domande frequenti sulla gestione di 
 
   2. **Quali dati vengono crittografati?** Vengono crittografati solo i dati contrassegnati come "aziendali" in base ai criteri di protezione delle app dell'amministratore IT. Quando hanno origine da una sede aziendale, i dati vengono considerati "aziendali". Per le app di Office, Intune considera quanto segue come sedi aziendali: posta elettronica (Exchange) o archiviazione cloud (app OneDrive con un account OneDrive for Business). Per le app line-of-business abilitate per lo strumento di wrapping delle app di Intune, tutti i dati delle app vengono considerati "aziendali".
 
-**In che modo Intune cancella i dati in remoto?** Intune può cancellare i dati dell'app in due modi diversi: cancellazione completa e cancellazione selettiva. Per altre informazioni sulla cancellazione da remoto, vedere [Proteggere i dati con la cancellazione selettiva o completa tramite Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md).
+**In che modo Intune cancella i dati in remoto?** Intune può cancellare i dati delle app in tre modi diversi: cancellazione completa dei dati del dispositivo, cancellazione selettiva per MDM e cancellazione selettiva per MAM. Per altre informazioni sulla cancellazione remota per MDM, vedere [Proteggere i dati con la cancellazione selettiva o completa tramite Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Per altre informazioni sulla cancellazione selettiva con MAM, vedere [Cancellare i dati dell'app aziendale gestita con Microsoft Intune](wipe-managed-company-app-data-with-microsoft-intune.md)
 
   1. **Che cos'è la cancellazione completa?** La [cancellazione completa](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) rimuove tutti i dati dell'utente e le impostazioni dal **dispositivo** ripristinandolo alle impostazioni predefinite di fabbrica. Il dispositivo verrà rimosso da Intune.
   >[!NOTE]
   > La cancellazione completa può essere eseguita solo sui dispositivi registrati con la gestione di dispositivi mobili (MDM) di Intune.
 
-  2. **Che cos'è la cancellazione selettiva?** Per informazioni sulla cancellazione selettiva, vedere [Proteggere i dati con la cancellazione selettiva o completa tramite Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe).
+  2. **Che cos'è la cancellazione selettiva per MDM?** Per informazioni sulla cancellazione selettiva, vedere [Proteggere i dati con la cancellazione selettiva o completa tramite Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe).
 
-  3. **A quale velocità si verifica la cancellazione selettiva?** Se l'utente sta usando l'app quando viene avviata la cancellazione selettiva, Intune App SDK controlla ogni 30 minuti la presenza di una richiesta di cancellazione selettiva dal servizio MAM di Intune. L'SDK verifica inoltre la presenza della cancellazione selettiva quando l'utente avvia l'app per la prima volta e accede con l'account aziendale o dell'istituto di istruzione.
+  3. **Che cos'è la cancellazione selettiva per MAM?** La cancellazione selettiva per MAM rimuove semplicemente i dati aziendali da un'app. La richiesta viene avviata tramite Intune nel portale di Azure. Per informazioni su come avviare una richiesta di cancellazione, vedere [Cancellare i dati dell'app aziendale gestita con Microsoft Intune](wipe-managed-company-app-data-with-microsoft-intune.md).
+
+  4. **A quale velocità viene eseguita la cancellazione selettiva per MAM?** Se l'utente sta usando l'app quando viene avviata la cancellazione selettiva, Intune App SDK controlla ogni 30 minuti la presenza di una richiesta di cancellazione selettiva dal servizio MAM di Intune. L'SDK verifica inoltre la presenza della cancellazione selettiva quando l'utente avvia l'app per la prima volta e accede con l'account aziendale o dell'istituto di istruzione.
 
 **Perché i servizi locali non funzionano con le app protette di Intune?** La protezione delle app di Intune dipende dalla coerenza dell'identità dell'utente tra l'applicazione e Intune App SDK. L'unico modo per garantire questo scenario è tramite l'autenticazione moderna. Esistono scenari in cui le app possono funzionare con una configurazione locale, ma non sono garantiti, né coerenti.
 
@@ -110,6 +112,6 @@ Questo articolo fornisce risposte ad alcune domande frequenti sulla gestione di 
 **È possibile usare l'estensione di condivisione iOS per aprire i dati aziendali dell'istituto di istruzione nelle app non gestite, anche con i criteri di trasferimento dei dati impostati su "solo app gestite" o "nessuna app". Questo scenario non comporta la perdita dei dati?** I criteri di protezione delle app di Intune non possono controllare l'estensione di condivisione di iOS senza la gestione del dispositivo. Pertanto, Intune _**crittografa i dati "aziendali" prima che vengano condivisi all'esterno dell'app**_. È possibile convalidare questo scenario provando ad aprire il file "aziendale" all'esterno dell'app gestita. Il file deve essere crittografato e non deve poter essere aperto all'esterno dell'app gestita.
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

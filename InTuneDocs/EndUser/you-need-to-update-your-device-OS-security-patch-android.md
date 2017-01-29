@@ -5,16 +5,18 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: f6fe6f76a700137914ef9cea7ce02753882e2fa3
-ms.openlocfilehash: 8893b397f5a29568ab5d4238e56d7e9806633e30
+ms.sourcegitcommit: 440d0e75c9373d5de44897b8a997da6c24de4e3c
+ms.openlocfilehash: ca6f6453d2b6ba28152c44e1b66700608c07c97a
 
 
 ---
@@ -27,18 +29,20 @@ Se si dispone di un dispositivo Samsung, passare a **Impostazioni** > **Info sul
 
 [!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
 
-## <a name="if-you-have-a-samsung-knox-device"></a>Se si dispone di un dispositivo Samsung Knox
+## <a name="for-most-android-devices-non-samsung-knox"></a>Per la maggior parte dei dispositivi Android (non Samsung Knox)
+
+Passare a **Impostazioni** > **Info** > **Aggiornamenti software**. Installare l'aggiornamento e nel dispositivo deve essere installata la patch di sicurezza corretta.
+
+## <a name="for-samsung-knox-android-devices"></a>Per i dispositivi Android Samsung Knox
 
 Passare a **Impostazioni** > **Aggiornamenti del sistema** > **Check for new system update** (Controlla nuovi aggiornamenti del sistema). Installare l'aggiornamento e nel dispositivo Samsung Knox deve essere installata la patch di sicurezza corretta.
 
-## <a name="if-you-do-not-have-a-samsung-knox-device"></a>Se non si dispone di un dispositivo Samsung Knox
 
-Passare a **Impostazioni** > **Info** > **Aggiornamenti software**. Installare l'aggiornamento e nel dispositivo deve essere installata la patch di sicurezza corretta. 
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
