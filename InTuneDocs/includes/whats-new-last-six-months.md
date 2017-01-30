@@ -407,6 +407,6 @@ Usare gli account DEM solo se non è disponibile la registrazione senza utente p
 - [Protezione dei dati aziendali](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune) è ora noto come **Windows Information Protection**.
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

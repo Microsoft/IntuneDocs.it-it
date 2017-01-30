@@ -26,6 +26,6 @@
 Per un elenco completo dei dispositivi e dei metodi di gestione, vedere [Dispositivi supportati da Intune](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 
