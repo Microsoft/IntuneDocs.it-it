@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 12/31/2016
+ms.date: 1/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8063b933a767740a7951fa69a918a8677b664d02
-ms.openlocfilehash: e8a21ace32b5668f8158b9a383b882b7c2f524df
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: 05b714e1aef180a65b7b203d5a04c0eeaf288257
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: e8a21ace32b5668f8158b9a383b882b7c2f524df
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune può distribuire un profilo di registrazione che registra in modalità wireless i dispositivi iOS acquistati tramite il programma di registrazione dispositivi (DEP). Il pacchetto di registrazione può includere opzioni di Assistente configurazione per il dispositivo. La registrazione dei dispositivi registrati tramite DEP non può essere annullata dagli utenti.
+Microsoft Intune può distribuire un profilo di registrazione che registra in modalità wireless i dispositivi iOS acquistati tramite il programma di registrazione dispositivi (DEP). Il pacchetto di registrazione può includere opzioni di Assistente configurazione per il dispositivo.
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Gestione del servizio DEP di Apple per i dispositivi iOS con Microsoft Intune
 Per gestire i dispositivi iOS di proprietà dell'azienda con il programma di registrazione dispositivi (DEP, Device Enrollment Program) di Apple, le organizzazioni devono partecipare al programma DEP di Apple e acquisire i dispositivi attraverso il programma. I dettagli del processo sono disponibili in:  [https://deploy.apple.com](https://deploy.apple.com) I vantaggi del programma includono la configurazione dei dispositivi senza intervento dell'utente e senza dover connettere ogni dispositivo a un computer tramite un cavo USB.
@@ -83,9 +83,9 @@ Per registrare i dispositivi iOS di proprietà dell'azienda con DEP, è necessar
         - **Supervisione eseguita**: attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita.
      - **Bloccare il profilo di registrazione nel dispositivo**: viene configurata durante l'attivazione e può essere modificata solo ripristinando le impostazioni predefinite.
         - **Disattiva**: consente la rimozione del profilo di gestione dal menu **Impostazioni**.
-        - **Attiva**: richiede **Modalità di preparazione** = **Supervisione eseguita**. Disattiva le impostazioni iOS che potrebbero permettere la rimozione del profilo di gestione.
+        - **Abilita**: richiede **Modalità di preparazione** = **Supervisione eseguita**. Disattiva l'opzione del menu delle impostazioni di iOS per la rimozione del profilo di gestione
      - **Opzioni dell'assistente di configurazione**: queste impostazioni facoltative possono essere configurate in un secondo momento nel menu **Impostazioni** di iOS.
-        - **Passcode**: consente di richiedere un passcode durante l'attivazione. Richiedere sempre un passcode, a meno che il dispositivo non sia protetto o l'accesso al dispositivo non venga controllato in un altro modo (ad esempio, con la modalità tutto schermo, che limita l'uso del dispositivo a una sola app).
+        - **Passcode**: consente di richiedere un passcode durante l'attivazione. Richiedere sempre un passcode, a meno che il dispositivo non sia protetto o l'accesso al dispositivo non venga controllato in un altro modo, ad esempio con la modalità tutto schermo, che limita l'uso del dispositivo a una sola app
         - **Servizi di posizione**: se l'opzione è abilitata, Assistente configurazione richiede il servizio al momento dell'attivazione.
         - **Ripristina**: se l'opzione è abilitata, Assistente configurazione richiede il backup in iCloud durante l'attivazione.
         - **ID Apple**: se l'opzione è abilitata, iOS richiede agli utenti un ID Apple quando Intune prova a installare un'applicazione senza ID. È necessario un ID Apple per il download delle app da iOS App Store, incluse le app installate da Intune.
@@ -119,6 +119,6 @@ A partire dal mese di dicembre 2016 la gestione dei gruppi di dispositivi passer
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

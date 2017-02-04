@@ -1,9 +1,9 @@
 ---
-title: Proteggere i dati delle app usando i criteri MAM | Microsoft Intune
+title: Proteggere i dati delle app usando i criteri di gestione di applicazioni mobili | Documentazione Microsoft
 description: Questo argomento illustra in che modo i criteri di gestione di applicazioni mobili consentono di proteggere i dati aziendali, impedire la perdita di dati e mantenere separate le informazioni personali e di lavoro.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 66a5814ba34f9fd15460512b0a6d40566ec33401
+ms.sourcegitcommit: 40298ae2de5f3bc8090e19882e039c5ec6471820
+ms.openlocfilehash: 3d3c3e0b5fa68f838b8cf1d72346d7abb140073a
 
 
 ---
 
 # <a name="protect-app-data-using-mobile-application-management-policies-with-microsoft-intune"></a>Proteggere i dati delle app usando i criteri di gestione di applicazioni mobili con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Protezione dei dati delle app
 I dipendenti usano dispositivi mobili per le attività personali e aziendali. Se da una parte è necessario verificare la produttività dei dipendenti, dall'altra è indispensabile prevenire la perdita di dati, sia intenzionale sia non intenzionale.  Può inoltre essere utile proteggere i dati aziendali a cui i dipendenti hanno accesso mediante dispositivi non gestiti direttamente dall'amministratore.
@@ -58,7 +60,10 @@ I criteri MAM sono attualmente supportati in:
 -   iOS 8.1 o versioni successive
 -   Android 4 o versioni successive
 
-I dispositivi Windows non sono attualmente supportati.
+>[!NOTE]
+>I dispositivi Windows non sono supportati nello scenario MAM senza registrazione. Tuttavia, quando si >registrano i dispositivi di Windows 10 con Intune, è possibile usare Windows Information Protection, che >offre funzionalità simili. Per altre informazioni, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+
+
 ##  <a name="how-mam-policies-protect-app-data"></a>Protezione dei dati delle app con i criteri MAM
 
 ###  <a name="apps-without-mam-policies"></a>App senza criteri MAM
@@ -130,6 +135,6 @@ Tutte le app di Office per dispositivi mobili supportano l'accesso con più iden
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

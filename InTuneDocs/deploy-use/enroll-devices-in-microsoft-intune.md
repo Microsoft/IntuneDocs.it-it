@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 01/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: bfb1cee100b9c7bfcdc862489254e6ccefe9ecf0
+ms.sourcegitcommit: b75d034b4540f93eb235729b1cdad52b4c463eb0
+ms.openlocfilehash: cf5089053178120e633fdbae5868bec5aa0466f5
 
 
 ---
@@ -34,7 +34,7 @@ La tabella seguente illustra i metodi di registrazione di Intune con le relative
 
 - **Cancellazione** - Indica se il dispositivo deve essere cancellato prima che gli utenti possano registrarlo. Il termine "cancellazione" significa il ripristino delle impostazioni predefinite del dispositivo, con la rimozione di tutti i dati. Per altre informazioni, vedere [Disattivare i dispositivi](retire-devices-from-microsoft-intune-management.md).
 - **Affinità** - Associare i dispositivi agli utenti. Funzionalità richiesta per la gestione di applicazioni per dispositivi mobili (MAM) e l'accesso condizionale ai dati aziendali. Per altre informazioni, vedere [Affinità utente](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Blocco**: impedisce agli utenti di rimuovere il dispositivo dal sistema di gestione. Per il blocco dei dispositivi iOS è richiesta la modalità con supervisione. Per altre informazioni, vedere [Blocco remoto](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
+- **Blocco**: indica se agli utenti non è consentito annullare la registrazione per la gestione dei dispositivi. Gli utenti possono annullare la registrazione dei dispositivi su tutte le piattaforme tramite l'app Portale aziendale. Per annullare la registrazione, non possono usare i menu nativi del sistema operativo. 
 
 **Metodi di registrazione per iOS**
 
@@ -123,6 +123,6 @@ Intune può gestire le piattaforme dei dispositivi seguenti:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
