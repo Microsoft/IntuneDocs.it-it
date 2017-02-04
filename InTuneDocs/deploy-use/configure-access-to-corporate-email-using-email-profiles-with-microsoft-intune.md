@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -23,8 +23,6 @@ ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Nel sistema operativo di molte piattaforme per dispositivi mobili è incluso un client di posta elettronica nativo. Questo argomento descrive come impostare alcuni di questi client usando profili di posta elettronica.
 
