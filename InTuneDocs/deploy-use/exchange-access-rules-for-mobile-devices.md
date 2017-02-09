@@ -2,8 +2,8 @@
 title: Regole di accesso a Exchange per dispositivi mobili | Documentazione Microsoft
 description: Regole di accesso a Exchange ActiveSync per consentire o bloccare la connessione del dispositivo con EAS
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
