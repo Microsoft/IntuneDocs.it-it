@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
@@ -29,9 +30,9 @@ Se è stata eseguita la registrazione in Intune, ma non si vuole più usare il d
 
 Per annullare la registrazione del dispositivo, usare il collegamento corrispondente al tipo di dispositivo in uso illustrato nella sezione precedente "Contenuto dell'articolo":
 
--   [Annullare la registrazione di un dispositivo Windows 10](#unenroll-your-windows-10-device)
--   [Annullare la registrazione di un computer Windows 8.1](#unenroll-your-windows-8-1-computer)
--   [Annullare la registrazione di un dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-8-1-device)
+-    [Annullare la registrazione di un dispositivo Windows 10](#unenroll-your-windows-10-device)
+-    [Annullare la registrazione di un computer Windows 8.1](#unenroll-your-windows-8-1-computer)
+-    [Annullare la registrazione di un dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-8-1-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Annullare la registrazione di un dispositivo Windows 10
 

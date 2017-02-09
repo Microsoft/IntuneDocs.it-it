@@ -1,4 +1,3 @@
-
 ---
 title: Contattare il supporto telefonico assistito | Microsoft Docs
 description: Numeri di telefono per il supporto di Microsoft Intune.

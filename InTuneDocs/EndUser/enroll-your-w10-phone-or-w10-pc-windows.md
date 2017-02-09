@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jieyan
 ms.suite: ems
 translationtype: Human Translation
@@ -30,7 +31,7 @@ La registrazione dei dispositivi in Microsoft Intune consente ai dispositivi Win
 Per saperne di più Altre informazioni su cosa accade quando si [registra il dispositivo in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e cosa significa per le [informazioni sul dispositivo](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
 
 ## <a name="windows-10-desktop-devices"></a>Dispositivi Windows 10 Desktop
-1.  Fare clic su __Start__.
+1.    Fare clic su __Start__.
 
  ![Menu Start di Windows](../media/windows-start-menu.png).
 
@@ -38,18 +39,18 @@ Per saperne di più Altre informazioni su cosa accade quando si [registra il dis
 
  ![impostazioni di ricerca per Informazioni sul PC](../media/searching_for_about_your_pc.png)
 
-2.  In __Impostazioni__ verrà visualizzato un elenco di informazioni sulla versione di Windows 10 installata nel PC. In questo elenco individuare la __Versione__.
+2.    In __Impostazioni__ verrà visualizzato un elenco di informazioni sulla versione di Windows 10 installata nel PC. In questo elenco individuare la __Versione__.
 
  ![Windows 10 Desktop - Informazioni sul PC](../media/settings_about_pc.png)
 
-3.  Se la versione è __1607__, continuare con [questa procedura](enroll-your-w10-device-access-work-or-school.md). Se la versione è __1511 o precedente__, continuare con [questa procedura](enroll-your-w10-device-your-account.md).
+3.    Se la versione è __1607__, continuare con [questa procedura](enroll-your-w10-device-access-work-or-school.md). Se la versione è __1511 o precedente__, continuare con [questa procedura](enroll-your-w10-device-your-account.md).
 
 ## <a name="windows-10-mobile-devices"></a>Dispositivi Windows 10 Mobile
 
-1.  In __Start__ scorrere verso l'elenco __Tutte le app__ e quindi selezionare l'app __Impostazioni__.
-2.  Toccare __Sistema__ e quindi __Informazioni su__.
-3.  In __Informazioni sul dispositivo__ toccare __Altre informazioni__. Verrà visualizzato un elenco di informazioni sul dispositivo. In questo elenco individuare la __Versione__.
-4.  Se la versione è __1607__, continuare con [questa procedura](enroll-your-w10-device-access-work-or-school.md). Se la versione è __1511 o precedente__, continuare con [questa procedura](enroll-your-w10-device-your-account.md).
+1.    In __Start__ scorrere verso l'elenco __Tutte le app__ e quindi selezionare l'app __Impostazioni__.
+2.    Toccare __Sistema__ e quindi __Informazioni su__.
+3.    In __Informazioni sul dispositivo__ toccare __Altre informazioni__. Verrà visualizzato un elenco di informazioni sul dispositivo. In questo elenco individuare la __Versione__.
+4.    Se la versione è __1607__, continuare con [questa procedura](enroll-your-w10-device-access-work-or-school.md). Se la versione è __1511 o precedente__, continuare con [questa procedura](enroll-your-w10-device-your-account.md).
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 

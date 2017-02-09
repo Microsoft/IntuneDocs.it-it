@@ -2,10 +2,10 @@
 title: Endpoint Protection per PC Windows | Documentazione Microsoft
 description: Proteggere i computer gestiti con Endpoint Protection, che fornisce protezione in tempo reale contro minacce malware.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: arob98
-ms.date: 07/25/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
