@@ -42,8 +42,8 @@
 ## [Sezione 9: Test e convalida](plan-design/section-9-test-and-validation.md)
 ## [Risorse aggiuntive](plan-design/additional-resources.md)
 
-# Novità
-## [Novità](whats-new/whats-new-in-microsoft-intune.md)
+# [Novità](whats-new/whats-new-in-microsoft-intune.md)
+## [Novità dell'interfaccia utente dell'app](whats-new/whats-new-in-intune-app-ui.md)
 ## [Novità dell'anteprima di Azure](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Archivio delle novità](whats-new/whats-new-archive.md)
 
@@ -106,7 +106,7 @@
 
 ## [Proteggere i dispositivi](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [Reimpostazione blocco e passcode da remoto](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [Proteggere i dispositivi Windows con MFA](deploy-use/protect-windows-devices-with-multi-factor-authentication.md)
+### [Proteggere i dispositivi Windows con MFA](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [Controllare le impostazioni di Windows Hello for Business](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [Eseguire il bypass del blocco attivazione su iOS](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Criteri per la protezione dei PC Windows](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -159,9 +159,9 @@
 #### [Bloccare le app prive di ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Proteggere l'accesso alle reti (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [Proteggere l'accesso in base al rischio per dispositivi, rete e applicazioni](deploy-use/device-threat-protection.md)
-#### [Configurare la protezione dalle minacce per il dispositivo di Lookout](deploy-use/device-threat-protection-subscription-setup.md)
-#### [Abilitare Lookout in Intune](deploy-use/device-threat-protection-enable.md)
-#### [Distribuire l'app Lookout for Work](deploy-use/device-threat-protection-apps.md)
+#### [Configurare la protezione dalle minacce per i dispositivi](deploy-use/device-threat-protection-subscription-setup.md)
+#### [Abilitare la protezione dalle minacce per i dispositivi](deploy-use/device-threat-protection-enable.md)
+#### [Distribuire le app per la protezione dalle minacce per i dispositivi](deploy-use/device-threat-protection-apps.md)
 #### [Abilitare i criteri di conformità per la protezione dalle minacce per i dispositivi](deploy-use/device-threat-protection-policy.md)
 
 ### [Proteggere i dati delle app con MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -217,11 +217,11 @@
 
 ## [Risolvere i problemi relativi alla gestione di applicazioni mobili](troubleshoot/troubleshoot-mam.md)
 
-## [Risolvere i problemi di integrazione di Lookout](troubleshoot/troubleshooting-lookout-integration.md)
+## [Risolvere i problemi della protezione dalle minacce per i dispositivi](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [Glossario](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 
