@@ -11,7 +11,8 @@
 
 # [Introduzione](get-started/get-started.md)
 ## [Configurare Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Prerequisiti](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [Prerequisiti]
+#### [Dispositivi supportati](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Utilizzo della rete](get-started/network-bandwidth-use.md)
 ### [Accedere a Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configurare i domini](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -57,7 +58,6 @@
 #### [Gestione per Android](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Gestione di Android for Work](deploy-use/set-up-android-for-work.md)
 #### [Gestione dei dispositivi Windows](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile e Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Gestire i dispositivi di proprietà dell'azienda](deploy-use/manage-corporate-owned-devices.md)
 #### [Registrare i dispositivi iOS di proprietà dell'azienda](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Registrazione di Assistente configurazione](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -165,13 +165,13 @@
 #### [Abilitare i criteri di conformità per la protezione dalle minacce per i dispositivi](deploy-use/device-threat-protection-policy.md)
 
 ### [Proteggere i dati delle app con MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Portale di Azure per i criteri MAM](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Prepararsi alla configurazione dei criteri MAM](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Creare e distribuire i criteri MAM](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Criteri MAM per Android](deploy-use/android-mam-policy-settings.md)
-#### [Criteri MAM per iOS](deploy-use/ios-mam-policy-settings.md)
-#### [Convalidare i criteri MAM](deploy-use/validate-mobile-application-management.md)
-#### [Monitorare la conformità ai criteri](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Portale di Azure per i criteri di protezione delle app](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [Prepararsi alla configurazione dei criteri di protezione delle app](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Creare e distribuire i criteri di protezione delle app](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Criteri di protezione delle app per Android](deploy-use/android-mam-policy-settings.md)
+#### [Criteri di protezione delle app per iOS](deploy-use/ios-mam-policy-settings.md)
+#### [Convalidare i criteri di protezione delle app](deploy-use/validate-mobile-application-management.md)
+#### [Monitorare la conformità dei criteri di protezione delle app](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Gestire il trasferimento di dati tra app iOS](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [Console di amministrazione di Intune per i criteri MAM](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -222,6 +222,6 @@
 # [Glossario](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 
