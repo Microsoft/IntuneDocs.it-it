@@ -1,19 +1,20 @@
 ---
-title: Configurare la gestione di Android for Work | Documentazione Microsoft
+title: Impostare Android for Work | Microsoft Docs
 description: Abilitare la gestione di dispositivi mobili (MDM) per i dispositivi Android for Work con Microsoft Intune.
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
 
 
 ---
@@ -21,8 +22,6 @@ ms.openlocfilehash: e0116fb151cd8d05d2d854f0102894a9d72b818e
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Abilitare la registrazione di dispositivi Android for Work
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Per abilitare la gestione di dispositivi Android for Work è necessario aggiungere un'associazione Android for Work a Intune. Per registrare dispositivi che supportano Android for Work ma che in precedenza sono stati registrati come dispositivi Android regolari, è necessario annullare la registrazione dei dispositivi e quindi rieseguirla.
 
@@ -37,7 +36,7 @@ Se non è stato già fatto, preparare la gestione di dispositivi mobili (MDM) [i
 3. **Accedere a Google**<br>
    Nella pagina di accesso di Google immettere le credenziali dell'account Google che verrà associato a tutte le attività di gestione Android for Work per questo tenant. Potrebbe trattarsi di un account Google condiviso tra gli amministratori che gestiscono Intune. Questo sarà l'account Google usato dall'organizzazione per gestire e pubblicare le app nella console di Play for Work.
 
-4. **Specificare i dettagli dell'organizzazione**<br>
+4. **Specificare i dettagli sull'organizzazione**<br>
    Specificare il nome della società in **Nome organizzazione**. Come **provider della gestione della mobilità aziendale** deve essere visualizzato *Microsoft Intune*. Accettare il contratto di Android for Work e quindi fare clic su **Conferma**. La richiesta verrà elaborata.
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Specificare le impostazioni di registrazione a Android for Work
@@ -54,7 +53,7 @@ Dopo aver configurato l'associazione e le impostazioni di Android for Work è po
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Annullare l'associazione dell'account amministrativo Android for Work
 
-È possibile disattivare la registrazione e la gestione di Android for Work. Se si fa clic su **Disassocia** la registrazione di tutti i dispositivi Android for Work viene annullata e la relazione tra l'account Android for Work e Intune viene eliminata.
+È possibile disattivare la registrazione e la gestione di Android for Work. Se si fa clic su **Disassocia** nella Console di amministrazione di Intune la registrazione di tutti i dispositivi Android for Work viene annullata e la relazione tra l'account Android for Work e Intune viene eliminata.
 
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Come disassociare un account Android for Work
 
@@ -66,6 +65,6 @@ Dopo aver configurato l'associazione e le impostazioni di Android for Work è po
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

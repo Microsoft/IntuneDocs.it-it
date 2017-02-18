@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/04/17
+ms.date: 01/29/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b06bb501e71bae5225d451d9ee460213eee183de
-ms.openlocfilehash: 058212ff935f085d569b37298f146623d217ddbe
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
 
 
 ---
@@ -25,9 +26,12 @@ ms.openlocfilehash: 058212ff935f085d569b37298f146623d217ddbe
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Le organizzazioni possono usare Intune per gestire un numero elevato di dispositivi mobili con un singolo account utente. L'account del *manager di registrazione dispositivi* (DEM, Device Enrollment Manager) è un account utente speciale che consente di registrare fino a 1.000 dispositivi. Gli utenti esistenti vengono aggiunti all'account del manager di registrazione dispositivi per rendere disponibili le funzionalità DEM. Ogni dispositivo registrato usa una singola licenza. Si consiglia di usare i dispositivi registrati tramite tale account come dispositivi condivisi piuttosto che come dispositivi personali ("BYOD").  
+Le organizzazioni possono usare Intune per gestire un numero elevato di dispositivi mobili con un singolo account utente. L'account del *manager di registrazione dispositivi* (DEM, Device Enrollment Manager) è un account utente speciale che consente di registrare fino a 1.000 dispositivi. Gli utenti esistenti vengono aggiunti all'account del manager di registrazione dispositivi per rendere disponibili le funzionalità DEM. Ogni dispositivo registrato usa una singola licenza. Si consiglia di usare i dispositivi registrati tramite tale account come dispositivi condivisi, ovvero senza affinità utente, piuttosto che come dispositivi personali ("BYOD").  
 
 Per poter essere aggiunti come manager di registrazione dispositivi, gli utenti devono essere presenti nel portale di Azure. Per una sicurezza ottimale, l'utente manager di registrazione dispositivi non deve essere anche amministratore di Intune.
+
+>[!NOTE]
+>Il metodo di registrazione del manager di registrazione dispositivi non può essere usato con [Assistente configurazione di Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) o con la [registrazione diretta](ios-direct-enrollment-in-microsoft-intune.md) o con il [metodo del programma di registrazione dei dispositivi](ios-device-enrollment-program-in-microsoft-intune.md). 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Esempio di scenario con manager di registrazione dispositivi
 
@@ -105,6 +109,6 @@ L'eliminazione di un manager di registrazione dispositivi non influisce sui disp
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

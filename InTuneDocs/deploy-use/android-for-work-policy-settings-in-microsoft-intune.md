@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
@@ -25,9 +26,7 @@ ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-Intune offre una gamma di impostazioni generali predefinite che è possibile configurare nei dispositivi Android for Work.
+Intune offre una gamma di impostazioni generali predefinite che è possibile configurare nei [dispositivi Android for Work](android-for-work.md).
 
 ## <a name="general-configuration-policy"></a>Criteri di configurazione generale
 
@@ -60,8 +59,6 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 |**Consenti la condivisione dei dati tra i profili di lavoro e personali**|Consente alle app del profilo di lavoro di condividere i dati con le app del profilo personale degli utenti. È possibile scegliere tra:<br><br>- **Impedisci qualsiasi condivisione tra i limiti**<br>- **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**<br>- **Nessuna restrizione sulla condivisione**|
 |**Nascondi le notifiche del profilo di lavoro quando il dispositivo è bloccato**<br>(Android 6.0+)|Controllare se visualizzare le notifiche dal profilo di lavoro quando il dispositivo è bloccato.|
 |**Imposta i criteri di autorizzazione predefiniti delle app**<br>(Android 6.0+)|Imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro.|
-
-
 
 
 ## <a name="custom-policy-settings"></a>Impostazioni di criteri personalizzati
@@ -97,6 +94,6 @@ Intune supporta attualmente un numero limitato di criteri personalizzati Android
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 
