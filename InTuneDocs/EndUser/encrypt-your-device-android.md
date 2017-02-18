@@ -1,29 +1,36 @@
 ---
-title: Crittografare il dispositivo | Microsoft Intune
-description: Descrive come crittografare un dispositivo Android
+title: Come proteggere il dispositivo Android con la crittografia | Microsoft Docs
+description: Proteggere il dispositivo Android
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
-ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>Crittografare il dispositivo
+# <a name="how-to-protect-your-android-device-using-encryption"></a>Come proteggere il dispositivo Android usando la crittografia
 
-Se la società o l'organizzazione consente di accedere a file, posta elettronica o dati aziendali solo dopo aver crittografato il dispositivo Android, seguire questa procedura. Potrebbe essere necessario impostare un PIN o una password prima di crittografare il dispositivo, se richiesto dall'amministratore IT.
+Quando si crittografa un dispositivo, si esegue il wrapping delle informazioni in esso contenute in un livello di codice protettivo che impedisce l'accesso agli utenti non autorizzati. Come passo aggiuntivo per assicurarsi che le informazioni siano protette, l'organizzazione richiede di crittografare il dispositivo Android prima di accedere a file, posta elettronica o dati aziendali.
+
+> [!Note]
+> Potrebbe essere necessario impostare un PIN o una password prima di crittografare il dispositivo, se richiesto dall'amministratore IT.
 
 Un telefono di cui si annulla la registrazione rimarrà crittografato.
 
@@ -61,6 +68,6 @@ Serve ancora assistenza? Contattare l'amministratore IT (accedere al [sito Web d
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 
