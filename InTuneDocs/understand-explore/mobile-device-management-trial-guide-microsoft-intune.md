@@ -12,6 +12,7 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
@@ -78,13 +79,13 @@ Per consentire agli utenti di registrare dispositivi iOS, è necessario impostar
 
 1. **Ottenere una richiesta di firma del certificato**<br/>
 Accedere a Intune con l'account amministratore e passare ad **Amministrazione** > **Mobile Device Management** (Gestione dispositivi mobili) > **iOS e Mac OS X** > **Upload an APNs Certificate** (Carica certificato APNs) e quindi scegliere **Download the APNs certificate request** (Scarica richiesta di certificato APNs). Salvare il file della richiesta di firma del certificato (estensione csr) in locale. Questo file viene usato per richiedere un certificato di relazione di trust al portale Apple Push Certificates. <!--- screen shot--->
-2.  **Ottenere un certificato di Apple Push Notification Service**<BR/>
+2.    **Ottenere un certificato di Apple Push Notification Service**<BR/>
 Visitare il [portale Apple Push Certificates](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2) e accedere con il proprio ID Apple per creare il certificato APN usando il file con estensione csr. Dopo aver scelto **Upload on Apple's Push Certificate Portal** (Carica nel portale Apple Push Certificates), si riceverà un file con estensione json che non può essere usato per il servizio APN. Completare il download e tornare al portale Apple Push Certificates per i certificati per server di terze parti e quindi fare clic su **Scarica**.
 
  Scaricare il certificato APN (con estensione pem) e salvare il file in locale. Questo ID Apple dovrà essere usato in futuro per rinnovare il certificato APN.
-3.  **Aggiungere il certificato APN a Intune**<BR/>
+3.    **Aggiungere il certificato APN a Intune**<BR/>
 Nella console di amministrazione di Microsoft Intune passare ad **Amministrazione** > **Mobile Device Management** (Gestione dispositivi mobili)  > **iOS e Mac OS X** > **Upload an APNs Certificate** (Carica un certificato APNs) e quindi fare clic su **Upload the APNs certificate** (Carica il certificato APNs). Passare al file (con estensione pem) del certificato, scegliere **Apri** e quindi immettere l'ID Apple. Con il certificato APN, Intune può registrare e gestire i dispositivi iOS effettuando il push dei criteri nei dispositivi mobili registrati.
-4.  **Indicare agli utenti come registrare i propri dispositivi per accedere alle risorse aziendali.**<br/>
+4.    **Indicare agli utenti come registrare i propri dispositivi per accedere alle risorse aziendali.**<br/>
 Per istruzioni sulla registrazione da parte degli utenti finali, vedere [Registrare il dispositivo iOS in Intune](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-ios) e [Registrare il dispositivo Mac OS X in Intune](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-mac-os-x). Il processo di registrazione indica agli utenti cosa possono aspettarsi e i dati visibili o meno agli amministratori IT nei propri dispositivi.
 
 
