@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/10/17
+ms.date: 01/24/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: f6cbca6207b0e253077682bbf213a916b20c5247
+ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
+ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
 
 
 ---
@@ -31,10 +32,10 @@ Questo argomento contiene suggerimenti per la risoluzione dei problemi di regist
 
 Prima di iniziare la risoluzione dei problemi, verificare di aver configurato Intune correttamente per consentire la registrazione. Per informazioni su tali requisiti di configurazione, vedere:
 
--   [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
--   [Configurare la gestione dei dispositivi iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--   [Configurare la gestione di Windows Phone e Windows 10 Mobile con Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
--   [Configurare la gestione dei dispositivi Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-    [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
+-    [Configurare la gestione dei dispositivi iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-    [Configurare la gestione di Windows Phone e Windows 10 Mobile con Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-    [Configurare la gestione dei dispositivi Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 
 Gli utenti dei dispositivi gestiti possono raccogliere log di registrazione e diagnostica da sottoporre all'analisi dell'amministratore. Le istruzioni per raccogliere i log sono disponibili nell'articolo:
@@ -227,16 +228,16 @@ L'errore di certificato si verifica perché i dispositivi Android richiedono l'i
 
 Per risolvere il problema, importare i certificati nei certificati personali del computer sul server ADFS o proxy, come indicato di seguito:
 
-1.  Nei server ADFS e proxy, avviare la console Gestione certificati per il computer locale facendo clic con il pulsante destro del mouse **Start** scegliendo **Esegui** e digitando **certlm.msc**.
-2.  Espandere **Personale** e selezionare **Certificati**.
-3.  Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
-4.  Selezionare la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
-5.  Per ogni certificato padre, selezionare **Visualizza certificato**.
-6.  Selezionare la scheda **Dettagli** e fare clic su **Copia su file...**.
-7.  Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato nel percorso file desiderato.
-8.  Importare i certificati padre che erano stati esportati al passaggio 3 in Computer locale\Personale\Certificati facendo clic su **Certificati**, selezionando **Tutte le attività** > **Importa** e quindi seguire la procedura guidata per importare il certificato (o i certificati).
-9.  Riavviare i server ADFS.
-10. Ripetere i passaggi precedenti in tutti i server ADFS e proxy.
+1.    Nei server ADFS e proxy, avviare la console Gestione certificati per il computer locale facendo clic con il pulsante destro del mouse **Start** scegliendo **Esegui** e digitando **certlm.msc**.
+2.    Espandere **Personale** e selezionare **Certificati**.
+3.    Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
+4.    Selezionare la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
+5.    Per ogni certificato padre, selezionare **Visualizza certificato**.
+6.    Selezionare la scheda **Dettagli** e fare clic su **Copia su file...**.
+7.    Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato nel percorso file desiderato.
+8.    Importare i certificati padre che erano stati esportati al passaggio 3 in Computer locale\Personale\Certificati facendo clic su **Certificati**, selezionando **Tutte le attività** > **Importa** e quindi seguire la procedura guidata per importare il certificato (o i certificati).
+9.    Riavviare i server ADFS.
+10.    Ripetere i passaggi precedenti in tutti i server ADFS e proxy.
 L'utente può ora accedere al Portale aziendale nel dispositivo Android.
 
 **Per convalidare la corretta installazione del certificato**:
@@ -294,32 +295,20 @@ Dopo aver eseguito la registrazione, vengono ripristinati il corretto funzioname
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Il dispositivo iOS registrato non viene visualizzato nella console quando si usa System Center Configuration Manager con Intune
 **Problema:** l'utente registra il dispositivo iOS, ma non viene visualizzato nella console di amministrazione di Configuration Manager. Il dispositivo non indica che è stato registrato. Cause possibili:
 
-- È possibile che il connettore Intune sia stato registrato in un account e poi registrato in un altro account.
+- Microsoft Intune Connector nel sito di Configuration Manager non comunica con il servizio Intune.
+- Il componente di gestione dei dati di individuazione (ddm) o il componente Gestione stati (statmgr) non elabora i messaggi dal servizio di Intune.
 - È possibile che il certificato MDM sia stato scaricato da un account e usato con un altro account.
 
 
-**Risoluzione:** attenersi alla procedura seguente:
+**Risoluzione:** esaminare i file di log seguenti per individuare possibili errori:
 
-1. Disabilitare iOS all'interno di Connettore Windows Intune.
-    1. Fare clic con il pulsante destro del mouse sull'abbonamento di Intune e selezionare **Proprietà**.
-    1. Nella scheda "iOS", deselezionare l'opzione "Abilita registrazione iOS".
+- dmpdownloader.log
+- ddm.log
+- statmgr.log
 
-
-
-1. In SQL, attenersi alla procedura seguente nel database CAS
-
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-    1. delete from MDMPolicy where PolicyType = 7
-    1. delete from MDMPolicyAssignment where PolicyType = 7
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-    1. delete from MDMPolicy where PolicyType = 11
-    1. delete from MDMPolicyAssignment where PolicyType = 11
-    1. DELETE Drs_Signals
-1. Riavviare il servizio SMS Executive o riavviare il server CM
+Presto verranno aggiunti esempi su cosa cercare in questi file di log.
 
 
-
-1. Ottenere un nuovo certificato APN e caricarlo: fare doppio clic sulla sottoscrizione Intune nel riquadro a sinistra di Configuration Manager. Selezionare **Crea richiesta certificato per servizio APN** e seguire le istruzioni.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemi durante l'uso di System Center Configuration Manager con Intune
 ### <a name="mobile-devices-disappear"></a>I dispositivi mobili scompaiono
 **Problema:** dopo la registrazione in Configuration Manager, il dispositivo mobile viene eliminato dalla raccolta, ma conserva il profilo di gestione ed è elencato nel gateway CSS.
@@ -400,6 +389,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

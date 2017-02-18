@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: cb80d531a28eaccbd26bc53df3e13ad233522dcf
+ms.sourcegitcommit: 3fdbf7f561f526b68972c6f66d1b72b56f7fa8ad
+ms.openlocfilehash: 5aa384197036adf0c373a08c3750f453812c9fba
 
 
 ---
@@ -119,7 +120,8 @@ Per abilitare Intune App SDK, procedere come segue:
 6. Abilitare la condivisione Keychain, se non è già abilitata, facendo clic su **Capabilities** (Funzionalità) in ogni destinazione del progetto e abilitando l'opzione **Keychain Sharing** (Condivisione Keychain). La condivisione Keychain è necessaria per procedere con il passaggio successivo.
 
     > [!NOTE]
-    > Il profilo di provisioning deve supportare i nuovi valori di condivisione Keychain. I gruppi di accesso a Keychain devono supportare un carattere jolly. Per verificarlo, aprire il file .mobileprovision in un editor di testo, cercare **keychain-access-groups** e verificare che sia presente un carattere jolly. Ad esempio:     ```xml
+    > Il profilo di provisioning deve supportare i nuovi valori di condivisione Keychain. I gruppi di accesso a Keychain devono supportare un carattere jolly. Per verificarlo, aprire il file .mobileprovision in un editor di testo, cercare **keychain-access-groups** e verificare che sia presente un carattere jolly. Ad esempio:
+    ```xml
     <key>keychain-access-groups</key>
     <array>
     <string>YOURBUNDLESEEDID.*</string>
@@ -150,7 +152,7 @@ Per abilitare Intune App SDK, procedere come segue:
 
 9. Per le app per dispositivi mobili sviluppate per iOS 9 o versione successiva, includere ogni protocollo passato dall'app a `UIApplication canOpenURL` nella matrice `LSApplicationQueriesSchemes` del file Info.plist dell'app. Inoltre, per ogni protocollo elencato è necessario aggiungere un nuovo protocollo seguito da `-intunemam`. Nella matrice è anche necessario includere `http-intunemam`, `https-intunemam` e `ms-outlook-intunemam`.
 
-10. Se nei diritti dell'app sono definiti gruppi di app, aggiungere questi gruppi al dizionario IntuneMAMSettings nella chiave `AppGroupIdentitifiers` come matrice di stringhe.
+10. Se nei diritti dell'app sono definiti gruppi di app, aggiungere questi gruppi al dizionario IntuneMAMSettings nella chiave `AppGroupIdentifiers` come matrice di stringhe.
 
 11. Collegare l'applicazione mobile ad Azure Directory Authentication Library (ADAL). La libreria ADAL per Objective C è [disponibile in GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
 
@@ -509,7 +511,7 @@ Si noti che un'identità viene semplicemente definita come stringa. Le identità
 
 ### <a name="identity-overview"></a>Panoramica dell'identità
 
-Un'identità è semplicemente il nome utente di un account, ad esempio user@contoso.com). Gli sviluppatori possono impostare l'identità dell'app per i livelli seguenti:
+Un'identità è costituita semplicemente dal nome utente di un account (ad esempio, user@contoso.com). Gli sviluppatori possono impostare l'identità dell'app sui livelli seguenti:
 
 * **Identità del processo**: imposta l'identità a livello di processo e viene usata principalmente per applicazioni a identità singola. Questa identità influisce su attività, file e interfaccia utente.
 * **Identità dell'interfaccia utente**: determina quali criteri vengono applicati alle attività dell'interfaccia utente nel thread principale, ad esempio taglia/copia/incolla, PIN, autenticazione e condivisione dati. L'identità dell'interfaccia utente non influisce sulle attività di file come crittografia e backup.
@@ -604,6 +606,12 @@ Ecco alcune procedure consigliate per lo sviluppo per iOS:
 
 ## <a name="faq"></a>Domande frequenti
 
+
+**Tutte le API sono indirizzabili tramite Swift nativo o l'interoperabilità tra Objective-C e Swift?**
+
+Le API di Intune App SDK sono solo in Objective-C e non supportano Swift.  
+
+
 **Tutti gli utenti dell'applicazione devono essere registrati con il servizio di gestione delle applicazioni mobili?**
 
 No. Solo gli account aziendali o dell'istituto di istruzione devono essere registrati con Intune App SDK. Le app devono determinare se un account viene usato in un contesto aziendale o dell'istituto di istruzione.   
@@ -637,6 +645,8 @@ Questo metodo deve essere chiamato prima che l'utente venga disconnesso dall'app
 
 Sì. L'amministratore IT può inviare un comando di cancellazione selettiva all'applicazione. Il comando annulla la registrazione dell'utente e cancella selettivamente i dati dell'utente. L'SDK gestisce questo scenario automaticamente e invia una notifica usando un metodo delegato di annullamento della registrazione.
 
+
+
 ## <a name="submit-your-app-to-the-app-store"></a>Inviare l'app all'App Store
 
 Sia la libreria statica che le build del framework di Intune App SDK sono file binari universali. Ciò significa che hanno un codice per tutte le architetture del dispositivo e del simulatore. Apple rifiuterà le app inviate all'App Store se contengono codice del simulatore. Durante la compilazione con la libreria statica per le build solo dispositivo, il linker rimuoverà automaticamente il codice del simulatore. Seguire la procedura seguente per rimuovere tutto il codice simulatore prima di caricare l'app in App Store.
@@ -656,6 +666,6 @@ Sia la libreria statica che le build del framework di Intune App SDK sono file b
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

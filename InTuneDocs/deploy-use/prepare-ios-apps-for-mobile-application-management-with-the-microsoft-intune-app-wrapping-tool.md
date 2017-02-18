@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
-ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
@@ -107,6 +108,9 @@ Per altre informazioni sulla distribuzione di app iOS internamente per gli utent
 
   ![Selezionare il certificato interno e ad hoc](../media/app-wrapper/iOS-signing-cert-3.png)
 
+>[!NOTE]
+>Se non si prevede di distribuire l'app e si vuole solo testarla internamente, è possibile usare un certificato per lo sviluppo di app iOS invece di un certificato per la produzione. Se si usa un certificato di sviluppo, assicurarsi che il profilo di provisioning per dispositivi mobili faccia riferimento ai dispositivi in cui verrà installata l'app.
+
 7. Fare clic su **Next** (Avanti) nella parte inferiore della pagina.
 
 8. Leggere le istruzioni per la creazione di una **richiesta di firma del certificato (CSR, Certificate Signing Request)** mediante l'applicazione Accesso Portachiavi nel computer macOS.
@@ -131,11 +135,12 @@ Per altre informazioni sulla distribuzione di app iOS internamente per gli utent
 
 14. Fare doppio clic sul file di certificato appena scaricato per aggiungere il certificato a un portachiavi.
 
-15. Aprire di nuovo **Accesso Portachiavi**. Individuare il certificato cercando **"iPhone"** nella barra di ricerca in alto a destra nella finestra di Accesso Portachiavi. Fare clic con il pulsante destro del mouse su un elemento per visualizzare il menu e scegliere **Ottieni informazioni**.
+15. Aprire di nuovo **Accesso Portachiavi**. Individuare il certificato cercandone il nome nella barra di ricerca in alto a destra. Fare clic con il pulsante destro del mouse su un elemento per visualizzare il menu e scegliere **Ottieni informazioni**. Nelle schermate di esempio viene usato un certificato di sviluppo anziché un certificato di produzione.
+
 
   ![Aggiungere il certificato a un portachiavi](../media/app-wrapper/iOS-signing-cert-8.png)
 
-16. Viene visualizzata una finestra informativa. Scorrere verso il basso fino alla sezione **Impronte digitali**. Copiare la stringa **SHA1** da usare come parametro -c per lo strumento di wrapping delle app.
+16. Viene visualizzata una finestra informativa. Scorrere verso il basso fino alla sezione **Impronte digitali**. Copiare la stringa **SHA1** (sfocata) da usare come argomento per "-c" per lo strumento di wrapping delle app.
 
   ![Aggiungere il certificato a un portachiavi](../media/app-wrapper/iOS-signing-cert-9.png)
 
@@ -397,6 +402,6 @@ Quando si usa lo strumento di wrapping delle app, adottare le procedure consigli
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
