@@ -1,5 +1,5 @@
 ---
-title: Proteggere l&quot;accesso a SharePoint Online | Microsoft Docs
+title: Proteggere SharePoint Online | Microsoft Docs
 description: Proteggere e controllare l&quot;accesso ai dati aziendali in SharePoint Online con accesso condizionale.
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
 
 
 ---
@@ -28,7 +29,7 @@ Usare l'accesso condizionale di [!INCLUDE[wit_firstref](../includes/wit_firstref
 L'accesso condizionale è costituito da due componenti:
 - Criteri di conformità che il dispositivo deve soddisfare per essere considerato conforme.
 - Criteri di accesso condizionale in cui si specificano le condizioni che il dispositivo deve soddisfare per poter accedere al servizio.
-Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'argomento [Proteggere l'accesso alla posta elettronica, a Office 365 e ad altri servizi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'argomento [Proteggere l'accesso alla posta elettronica, a Office&365; e ad altri servizi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Distribuire i criteri di conformità e di accesso condizionale agli utenti. Viene verificata la conformità ai criteri di qualsiasi dispositivo usato dall'utente per accedere ai servizi.
 
@@ -143,7 +144,7 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
         Tutti i dispositivi usati per accedere a **SharePoint Online** devono essere registrati in Intune e devono essere conformi ai criteri. Qualsiasi applicazione client che usa l'**autenticazione moderna** è soggetta ai criteri di accesso condizionale. Se la piattaforma non è attualmente supportata da Intune, l'accesso a **SharePoint Online** è bloccato.
 
         La selezione dell'opzione **Tutte le piattaforme** indica che Azure Active Directory applica questo criterio a tutte le richieste di autenticazione, indipendentemente dalla piattaforma segnalata dall'applicazione client. Tutte le piattaforme devono essere registrate e conformi, ad eccezione di:
-        *   Dispositivi Windows, che dovranno essere registrati e conformi e/o aggiunti a un dominio con Active Directory locale.
+        *    Dispositivi Windows, che dovranno essere registrati e conformi e/o aggiunti a un dominio con Active Directory locale.
         * Piattaforme non supportate come Mac. Tuttavia, le app che usano l'autenticazione moderna da queste piattaforme sono comunque bloccate.
 
     -   **Piattaforme specifiche**
@@ -195,10 +196,10 @@ Scegliere un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Disp
 -   **Dispositivi conformi e registrati con AAD**. Questi dispositivi possono accedere a SharePoint Online.
 
 ### <a name="see-also"></a>Vedere anche
-[Proteggere l'accesso alla posta elettronica e ai servizi di Office 365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[Proteggere l'accesso alla posta elettronica e ai servizi di Office&365; con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

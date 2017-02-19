@@ -1,11 +1,11 @@
 ---
-title: Che cosa avviene quando si installa l&quot;app Portale aziendale e si registra il dispositivo iOS o macOS in Intune? | Documentazione Microsoft
+title: Installazione dell&quot;app Portale aziendale per iOS e macOS | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
 
 
 ---
@@ -42,13 +43,13 @@ Quando si registra il dispositivo in Intune, si concedono all'amministratore IT 
 
 -   Cronologia Web e delle chiamate
 
--   Percorso
+-    Percorso
 
 -   Posta elettronica e messaggi di testo
 
 -   Contatti
 
--   Password
+-    Password
 
 -   Calendario
 
@@ -98,6 +99,6 @@ Per eventuali domande, contattare l'amministratore IT. Per informazioni sul cont
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

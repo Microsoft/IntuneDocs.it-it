@@ -1,5 +1,5 @@
 ---
-title: "Bloccare il dispositivo in modalità remota dal sito Web del portale aziendale | Microsoft Docs"
+title: Bloccare il dispositivo dal portale aziendale | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
 
 
 ---
@@ -39,13 +40,13 @@ Per ragioni di sicurezza, è possibile bloccarlo usando l'opzione Blocco remoto 
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Per usare Blocco remoto per bloccare il dispositivo
 
-1.  Nel [sito Web del portale aziendale](http://portal.manage.microsoft.com) toccare il nome del dispositivo da bloccare.
+1.    Nel [sito Web del portale aziendale](http://portal.manage.microsoft.com) toccare il nome del dispositivo da bloccare.
 
-2.  Toccare **Blocco remoto**.
+2.    Toccare **Blocco remoto**.
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  Viene visualizzato un avviso che informa che si sta per bloccare il dispositivo. Toccare **Blocco remoto**. Il sito Web del portale aziendale tenterà di bloccare il dispositivo.
+3.    Viene visualizzato un avviso che informa che si sta per bloccare il dispositivo. Toccare **Blocco remoto**. Il sito Web del portale aziendale tenterà di bloccare il dispositivo.
 
     Dopo aver toccato **Blocco remoto** viene visualizzato il messaggio "Blocco remoto in sospeso".  Quando Blocco remoto ha esito positivo, lo stato passa a "Blocco remoto riuscito."
 
@@ -64,6 +65,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

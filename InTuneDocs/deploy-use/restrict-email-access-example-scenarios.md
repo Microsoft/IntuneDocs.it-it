@@ -1,5 +1,5 @@
 ---
-title: 'Proteggere l&quot;accesso alla posta elettronica: scenari di esempio | Microsoft Docs'
+title: Proteggere scenari di posta elettronica | Microsoft Docs
 description: "Alcuni scenari di esempio e informazioni su come è possibile implementarli con l&quot;accesso condizionale."
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: eca68c053185dbd5e7f89a426d3bed44cc09acf1
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 
 
 ---
@@ -84,6 +85,6 @@ Usare il flusso seguente per decidere quali dispositivi possono accedere a Excha
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

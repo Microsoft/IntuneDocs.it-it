@@ -1,11 +1,11 @@
 ---
-title: Che cosa avviene quando si installa l&quot;app Portale aziendale e si registra il dispositivo Android in Intune? | Documentazione Microsoft
+title: Installazione dell&quot;app Portale aziendale per Android | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d0e244659f8a78504ffa2a0b8a6579c829e3642b
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: f80c6e7089519860e822f974753ac9dc0356e055
 
 
 ---
@@ -62,6 +63,6 @@ Serve assistenza? Contattare l'amministratore IT (accedere al [sito Web del port
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

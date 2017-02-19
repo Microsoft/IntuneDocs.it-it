@@ -1,11 +1,11 @@
 ---
-title: Viene richiesto di installare Lookout for Work nel dispositivo Android | Documentazione Microsoft
+title: "È necessario installare Lookout for Work nel dispositivo Android | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 05d2c3868175d405c49076ea93582eb151c9c791
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work"></a>Richiesta di installare Lookout for Work
+# <a name="you-need-to-install-lookout-for-work"></a>È necessario installare Lookout for Work
 
 Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di installare l'app Lookout for Work che consente di proteggere il dispositivo tramite la ricerca di potenziali minacce alla protezione.
 
@@ -30,13 +31,13 @@ Se si verificano problemi con l'installazione, attenersi alla procedura di risol
 
 **Eseguire le operazioni seguenti:**
 
-1.  Trascinare verso il basso la parte superiore della schermata per aprire la barra Notifiche e quindi toccare **Applicazione richiesta - Installa Lookout for Work da Play Store**.
+1.    Trascinare verso il basso la parte superiore della schermata per aprire la barra Notifiche e quindi toccare **Applicazione richiesta - Installa Lookout for Work da Play Store**.
 
     ![viene richiesto di installare Lookout for Work](./media/lookout-required-app-install-android.png)
 
     Viene visualizzata la pagina di installazione di Lookout for Work in Play Store.
 
-2.  Installare Lookout for Work e quindi toccare **ACCETTA** per consentire a Lookout for Work di accedere al dispositivo.
+2.    Installare Lookout for Work e quindi toccare **ACCETTA** per consentire a Lookout for Work di accedere al dispositivo.
 
     ![toccare Accetta per consentire a Lookout for Work di accedere al dispositivo](./media/lookout-accept-store-permissions-android.png)
 
@@ -78,12 +79,12 @@ Se si verificano problemi con l'installazione, attenersi alla procedura di risol
 
 **Se l'installazione non riesce**
 
-Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso, provare a installare manualmente Lookout for Work da Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
+Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso, provare a installare manualmente Lookout for Work da Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise)
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

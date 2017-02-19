@@ -1,5 +1,5 @@
 ---
-title: Proteggere l&quot;accesso a Dynamics CRM Online | Microsoft Docs
+title: Proteggere Dynamics CRM Online | Microsoft Docs
 description: Proteggere e controllare l&quot;accesso a Dynamics CRM Online con l&quot;accesso condizionale.
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
 
 
 ---
@@ -81,8 +82,8 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
   * **iOS**
   * **Android**
 4.  In **Gruppi di destinazione** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory ai quali verranno applicati i criteri. È possibile scegliere di applicare questa opzione a tutti gli utenti o solo a un gruppo di utenti selezionato.
-5.  Facoltativamente, in **Gruppi esentati** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
-6.  Al termine, scegliere **Salva**.
+5.    Facoltativamente, in **Gruppi esentati** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
+6.    Al termine, scegliere **Salva**.
 
 L'accesso condizionale per Dynamics CRM è stato configurato. Non è necessario distribuire i criteri di accesso condizionale perché diventano immediatamente effettivi.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorare i criteri di conformità e di accesso condizionale
@@ -104,6 +105,6 @@ Scegliere un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Disp
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

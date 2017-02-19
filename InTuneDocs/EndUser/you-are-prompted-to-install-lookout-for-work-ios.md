@@ -1,11 +1,11 @@
 ---
-title: Richiesta di installare Lookout for Work nel dispositivo iOS | Documentazione Microsoft
+title: "È necessario installare Lookout for Work nel dispositivo iOS | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,21 @@ ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 64e094c8648c0737cdbc0dcdc4ec6b3a8bc96831
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>Richiesta di installare Lookout for Work nel dispositivo iOS
+# <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>È necessario installare Lookout for Work nel dispositivo iOS
 
 Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di installare l'app Lookout for Work che consente di proteggere il dispositivo con la ricerca di potenziali minacce alla protezione. È possibile che vengano visualizzate istruzioni diverse sul dispositivo, a seconda di come l'amministratore IT ha configurato Lookout for Work.
 
 **Eseguire le operazioni seguenti:**
 
-1.  Se viene visualizzata l'istruzione seguente, toccare **Install** (Installa) per consentire l'installazione di Lookout for Work nel dispositivo.
+1.    Se viene visualizzata l'istruzione seguente, toccare **Install** (Installa) per consentire l'installazione di Lookout for Work nel dispositivo.
 
     ![Toccare Install (Installa) per installare Lookout for Work](./media/ios-lfw-install-app-request.png)
 
@@ -43,7 +44,7 @@ Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di insta
 
     ![Toccare Settings (Impostazioni) e quindi Location Services (Servizi di posizione)](./media/ios-lfw-allow-notifications.png)
 
-    
+
 Al termine dell'installazione di Lookout for Work, se non sono state rilevate minacce alla protezione nel dispositivo, viene visualizzata la schermata seguente.
 
 ![Lookout for Work non ha trovato minacce alla protezione](./media/ios-lfw-no-threats-found.png)
@@ -56,7 +57,6 @@ Talvolta le installazioni possono avere esito negativo a causa di problemi tecni
 
 
 
-
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
