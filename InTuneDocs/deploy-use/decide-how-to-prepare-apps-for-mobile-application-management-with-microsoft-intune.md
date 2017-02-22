@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b15f56f6e771faeb924668aa68140ab89a174b8d
-ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
@@ -55,7 +56,7 @@ Per altre informazioni sullo strumento di wrapping delle app per la gestione del
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK è progettato principalmente per i clienti che hanno le app nell'App Store Apple o in Google Play Store e che vogliono poter gestire le app con Intune. Tuttavia, qualsiasi app può sfruttare l'integrazione dell'SDK, anche se si tratta di un'app line-of-business.
 
-Per altre informazioni sull'SDK, vedere la [panoramica](/intune/develop/intune-app-sdk). Per un'introduzione all'SDK, vedere [Introduzione a Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started)
+Per altre informazioni sull'SDK, vedere la [panoramica](../develop/intune-app-sdk.md). Per un'introduzione all'SDK, vedere [Introduzione a Microsoft Intune App SDK](../develop/intune-app-sdk-get-started.md)
 
 ### <a name="reasons-to-use-the-sdk"></a>Motivi per usare l'SDK
 * L'app non dispone di funzionalità per la protezione dei dati incorporate.
@@ -69,8 +70,8 @@ Per altre informazioni sull'SDK, vedere la [panoramica](/intune/develop/intune-a
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Sì: usare il [componente Xamarin per Intune App SDK](/../develop/intune-app-sdk-xamarin).|Sì: usare il [plug-in Cordova per Intune App SDK](/../develop/intune-app-sdk-cordova).|
-|**Android**| Sì: usare il [componente Xamarin per Intune App SDK](/../develop/intune-app-sdk-xamarin).|Sì: usare il [plug-in Cordova per Intune App SDK](/../develop/intune-app-sdk-cordova).|
+|**iOS**|Sì: usare il [componente Xamarin per Intune App SDK](../develop/intune-app-sdk-xamarin.md).|Sì: usare il [plug-in Cordova per Intune App SDK](../develop/intune-app-sdk-cordova.md).|
+|**Android**| Sì: usare il [componente Xamarin per Intune App SDK](../develop/intune-app-sdk-xamarin.md).|Sì: usare il [plug-in Cordova per Intune App SDK](../develop/intune-app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Confronto delle funzionalità
 Questa tabella elenca le impostazioni che è possibile usare per App SDK e per lo strumento di wrapping delle app.
