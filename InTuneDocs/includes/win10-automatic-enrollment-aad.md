@@ -1,4 +1,4 @@
-## <a name="azure-active-directory-enrollment"></a>Registrazione di Azure Active Directory
+## <a name="set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium"></a>Configurare la registrazione automatica di Windows 10 e Windows 10 Mobile con Azure Active Directory Premium
 
 La registrazione automatica consente agli utenti di registrare dispositivi e PC di proprietà dell'azienda o personali Windows 10 e 10 Windows Mobile in Intune aggiungendo un account aziendale o dell'istituto di istruzione e accettandone la gestione. La procedura è molto semplice: in background, il dispositivo dell'utente si registra e unisce ad Azure Active Directory. Dopo la registrazione, il dispositivo viene gestito con Intune.
 
@@ -11,13 +11,13 @@ La registrazione automatica consente agli utenti di registrare dispositivi e PC 
 
 1. Nel [portale di gestione di Azure](https://manage.windowsazure.com) (https://manage.windowsazure.com) passare al nodo **Active Directory** e selezionare la directory.
 
-2. Fare clic sulla scheda **Applicazioni** per visualizzare **Microsoft Intune** nell'elenco delle applicazioni.
+2. Selezionare la scheda **Applicazioni**. Nell'elenco delle applicazioni viene visualizzato **Microsoft Intune**.
 
     ![App di Azure AD con Microsoft Intune](../media/aad-intune-app.png)
 
-3. Fare clic sulla freccia di **Microsoft Intune** per visualizzare una pagina che consente di configurare Microsoft Intune.
+3. Selezionare la freccia per **Microsoft Intune**. Verrà visualizzata una pagina che consente di configurare Microsoft Intune.
 
-4. Fare clic su **Configura** per avviare la configurazione della registrazione MDM automatica con Microsoft Intune.
+4. Selezionare **Configura** per avviare la configurazione della registrazione MDM automatica con Microsoft Intune.
 
 5. Specificare gli URL per Intune:
 
@@ -34,6 +34,6 @@ La registrazione automatica consente agli utenti di registrare dispositivi e PC 
 7. Scegliere **Salva**.
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

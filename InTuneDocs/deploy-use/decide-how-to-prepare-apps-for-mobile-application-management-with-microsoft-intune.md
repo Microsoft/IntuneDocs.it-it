@@ -1,11 +1,11 @@
 ---
-title: Preparare le app per la gestione di applicazioni mobili | Microsoft Intune
+title: Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune | Documentazione Microsoft
 description: "Le informazioni contenute in questo argomento consentono di stabilire quando è necessario usare lo strumento di wrapping delle app e App SDK per abilitare le app line-of-business personalizzate per l&quot;uso dei criteri di gestione delle app mobili."
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 02/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
+ms.sourcegitcommit: b15f56f6e771faeb924668aa68140ab89a174b8d
+ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
 
 
 ---
 
-# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune
+# <a name="prepare-line-of-business-apps-for-mam"></a>Preparare le app linea di business per MAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 È possibile consentire alle app di usare i criteri di gestione delle applicazioni mobili (MAM, Mobile Application Management) tramite lo strumento di wrapping delle app di Intune o Intune App SDK. In questo articolo vengono fornite informazioni su questi due metodi e su quando usarli.
 
 ## <a name="intune-app-wrapping-tool"></a>Strumento di wrapping delle app di Intune
@@ -106,6 +109,6 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

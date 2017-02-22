@@ -1,11 +1,11 @@
 ---
-title: Proteggere l&quot;accesso alla posta elettronica per Exchange Online | Microsoft Docs
+title: Proteggere la posta elettronica per Exchange Online | Microsoft Docs
 description: Proteggere e controllare l&quot;accesso alla posta elettronica aziendale in Exchange Online con accesso condizionale.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 
 ---
@@ -25,24 +26,26 @@ ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+È possibile configurare l'accesso condizionale per Exchange locale o per Exchange Online dedicato usando Microsoft Intune. Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Proteggere l'accesso alla posta elettronica, a Office&365; e ad altri servizi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+
 > [!NOTE]
 >Se è disponibile un ambiente Exchange Online dedicato e si deve stabilire se si trova nell'ambiente di configurazione nuovo o legacy, contattare l'account manager.
 
-Per controllare l'accesso alla posta elettronica per Exchange Online o il nuovo ambiente Exchange Online dedicato, è possibile configurare l'accesso condizionale per Exchange Online con Microsoft Intune. Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Proteggere l'accesso alla posta elettronica, a Office 365 e ad altri servizi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+## <a name="before-you-begin"></a>Prima di iniziare
 
-
-**Prima** di configurare l'accesso condizionale, è necessario:
+Per configurare l'accesso condizionale è necessario:
 
 -   Avere un **abbonamento a Office 365 che include Exchange Online (ad esempio E3)** e gli utenti devono avere una licenza per Exchange Online.
 
 - Avere una **sottoscrizione di Enterprise Mobility + Security (EMS)** o una **sottoscrizione di Azure Active Directory Premium (Azure AD)** e gli utenti devono essere licenziatari di EMS o Azure AD. Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  Può essere opportuno configurare l'opzione facoltativa **Intune Service to Service Connector** che connette [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] a Exchange Online e consente di gestire le informazioni sui dispositivi tramite la console di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Non è necessario usare il connettore per i criteri di conformità o i criteri di accesso condizionale, ma è obbligatorio per eseguire i report utili per valutare l'impatto dell'accesso condizionale.
+    -  Altre informazioni su [Service to Service Connector di Intune](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
-   > Non configurare Service to Service Connector se si prevede di usare l'accesso condizionale sia per Exchange Online che per Exchange locale.
+   > Non configurare Service to Service Connector di Intune se si prevede di usare l'accesso condizionale sia per Exchange Online che per Exchange locale.
 
-   Per istruzioni su come configurare il connettore, vedere [Configurare Intune Service to Service Connector per Exchange Online](intune-service-to-service-exchange-connector.md).
+### <a name="device-compliance-requirements"></a>Requisiti di conformità del dispositivo
 
 Quando si configurano i criteri per l'accesso condizionale e li si assegna a un utente, prima che un utente possa connettersi alla posta elettronica, il **dispositivo** in uso deve:
 
@@ -54,12 +57,15 @@ Quando si configurano i criteri per l'accesso condizionale e li si assegna a un 
 
 -   Essere **compatibile** con qualsiasi criterio di conformità di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] distribuito per quel dispositivo o unito a un dominio locale.
 
-Se non viene soddisfatto un criterio di accesso condizionale, quando esegue l'accesso l'utente vede uno dei messaggi seguenti:
+### <a name="when-the-device-is-not-compliant"></a>Quando il dispositivo non è conforme
+
+Se un criterio di accesso condizionale non viene soddisfatto, il dispositivo viene inserito immediatamente in quarantena; l'utente riceve un messaggio di posta elettronica e, quando esegue l'accesso, viene visualizzata una delle seguenti notifiche di quarantena:
 
 - Se il dispositivo non è registrato in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oppure non è registrato in Azure Active Directory, viene visualizzato un messaggio contenente istruzioni su come installare l'app Portale aziendale, registrare il dispositivo e attivare la posta elettronica. Questo processo associa anche l'ID Exchange ActiveSync del dispositivo con il record in Azure Active Directory.
 
 -   Se il dispositivo viene dichiarato non conforme alle regole dei criteri di conformità, l'utente viene reindirizzato al sito Web del portale aziendale o all'app Portale aziendale di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dove sono disponibili informazioni sul problema e su come risolverlo.
 
+### <a name="how-conditional-access-works-with-exchange-online"></a>Funzionamento dell'accesso condizionale con Exchange Online
 
 Il diagramma seguente illustra il flusso usato dai criteri di accesso condizionale per Exchange Online.
 
@@ -70,7 +76,6 @@ Il diagramma seguente illustra il flusso usato dai criteri di accesso condiziona
 
 - Android 4.0 e versioni successive, Samsung Knox Standard 4.0 e versioni successive e Android for Work
 - iOS 8.0 e versioni successive
-- Windows Phone 8.1 e versioni successive
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -85,7 +90,8 @@ Con l'**autenticazione moderna** l'accesso basato su Active Directory Authentica
 * Chrome (Android)
 * Intune Managed Browser (iOS, Android 5.0 e versioni successive)
 
-**I browser non supportati sono bloccati**.
+   > [!IMPORTANT]
+   > **I browser non supportati sono bloccati**.
 
 **L'app OWA per iOS e Android può essere modificata in modo da evitare l'uso dell'autenticazione moderna e non è supportata. L'accesso dall'app OWA deve essere bloccato tramite le regole delle attestazioni di AD FS.**
 
@@ -204,7 +210,7 @@ Vengono valutati solo i gruppi di utenti a cui sono applicati i criteri di acces
         Tutti i dispositivi usati per accedere a **Exchange Online** dovranno essere registrati in Intune e dovranno essere conformi ai criteri. Qualsiasi applicazione client che usa l'**autenticazione moderna** è soggetta ai criteri di accesso condizionale. Se la piattaforma non è attualmente supportata da Intune, l'accesso a **Exchange Online** è bloccato.
 
         La selezione dell'opzione **Tutte le piattaforme** indica che Azure Active Directory applica questo criterio a tutte le richieste di autenticazione, indipendentemente dalla piattaforma segnalata dall'applicazione client. Tutte le piattaforme devono essere registrate e conformi, ad eccezione di:
-        *   Dispositivi Windows, che dovranno essere registrati e conformi e/o aggiunti a un dominio con Active Directory locale.
+        *    Dispositivi Windows, che dovranno essere registrati e conformi e/o aggiunti a un dominio con Active Directory locale.
         * Piattaforme non supportate come Mac OS. Tuttavia, le app che usano l'autenticazione moderna da queste piattaforme sono comunque bloccate.
 
     -   **Piattaforme specifiche**
@@ -272,6 +278,6 @@ Nel dashboard di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sceglier
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

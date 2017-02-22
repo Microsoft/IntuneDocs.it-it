@@ -1,0 +1,48 @@
+---
+title: Come aggiungere app Web a Intune | Anteprima di Intune in Azure | Documentazione Microsoft
+description: 'Anteprima di Intune in Azure: informazioni sull&quot;aggiunta Web a Intune.'
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 01/11/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
+ms.reviewer: mghadial
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 4188957e263717d416853f308a50e3dbd7a9244a
+ms.openlocfilehash: 4f8af0008300550d284957c1002be779e0e53f79
+
+---
+
+# <a name="how-to-add-web-apps-to-intune"></a>Come aggiungere app Web a Intune
+
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+1. Accedere al portale Azure.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+3. Nel pannello **Intune** scegliere **Gestisci le app**.
+4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **App**.
+5. In alto all'elenco delle applicazioni scegliere **Aggiungi**.
+6. Nel pannello **Aggiungi app** scegliere **Informazioni sull'app**.
+7. Nel pannello **Modifica l'app** configurare le informazioni seguenti. Al termine, fare clic su **Aggiungi**:
+    - **URL app**: immettere l'URL del sito Web che ospita l'app da distribuire.
+    - **Nome app**: immettere il nome dell'app che verrà visualizzato nel portale aziendale.
+    - **Descrizione app**: immettere una descrizione per l'app. La descrizione verrà visualizzata dagli utenti finali nel portale aziendale.
+    - **Autore**: immettere il nome dell'autore dell'app.
+    - **Categoria (facoltativo)**: selezionare una o più categorie di app predefinite oppure una categoria creata. Ciò consentirà agli utenti di trovare più facilmente l'app nel portale aziendale.
+    - **Visualizza come app in primo piano nel portale aziendale**: visualizza chiaramente l'app nella pagina principale del portale aziendale quando gli utenti sfogliano le app.
+    - **Richiedi un browser gestito per l'apertura del collegamento**: quando si distribuisce un collegamento a un'app Web o a un sito Web, gli utenti potranno aprirlo solo in Intune Managed Browser. Questo browser deve essere installato nel dispositivo.
+    - **Carica l'icona**: caricare un'icona che verrà associata all'app. Questa icona verrà visualizzata insieme all'app quando gli utenti visitano il portale aziendale.
+8. Al termine, nel pannello **Aggiungi app** scegliere **Salva**.
+
+L'app creata verrà visualizzata nell'elenco di app da cui è possibile assegnarla ai gruppi selezionati. Per altre informazioni, vedere [Come assegnare app ai gruppi](/intune-azure/manage-apps/deploy-apps).
+
+
+<!--HONumber=Feb17_HO1-->
+
+

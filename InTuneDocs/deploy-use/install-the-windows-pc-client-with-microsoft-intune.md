@@ -5,7 +5,7 @@ description: Usare questa guida per far gestire i computer Windows dal software 
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 07/19/2016
+ms.date: 01/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,27 +14,29 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 928e4e8097b9cd326e0863a45b183226a7eae056
-ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
+ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
+ms.openlocfilehash: 4b1b466c62ac1c8e03bc6cebd5e214649160185f
 
 
 ---
 
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installare il client software di Intune nei PC Windows
-È possibile registrare i PC Windows installando il software client di Intune. Il software client di Intune può essere installato nei modi seguenti:
+È possibile registrare i PC Windows installando il software client di Intune. Il software client di Intune può essere installato usando i metodi seguenti:
 
-- Installazione manuale
-- Installazione con Criteri di gruppo
-- Inclusione in un'immagine disco
-- Installazione da parte dell'utente
+- Dall'amministratore IT:
+  - Installazione manuale
+  - Installazione tramite Criteri di gruppo
+  - Installazione inclusa in un'immagine disco
 
-Il client software Intune scaricato inizialmente contiene il software minimo necessario per registrare il PC nella gestione di Intune. Dopo la registrazione di un PC, il client software Intune scarica il software client completo necessario per la gestione del PC.
+- Dagli utenti finali, che installano manualmente il software client
 
-Questa serie di download di riduce al minimo il tempo necessario per la registrazione iniziale del PC in Intune. Garantisce anche che il client disponga del software più aggiornato dopo il completamento del secondo download.
+Il client software di Intune, distribuito dall'amministratore IT all'utente o scaricato dall'utente finale, contiene il software minimo necessario per registrare il PC nella gestione di Intune. Dopo la registrazione di un PC, il client software di Intune scarica il software client completo necessario per la gestione del PC.
+
+Questa serie di download limita l'impatto sulla larghezza di banda della rete e riduce al minimo il tempo necessario per la registrazione iniziale del PC in Intune. Garantisce anche che il client disponga del software più aggiornato dopo il completamento del secondo download.
 
 ## <a name="download-the-intune-client-software"></a>Download del software client di Intune
 
-Tutti i metodi, salvo quelli in cui l'utente installa il software client di Intune autonomamente, richiedono il download del software per la sua distribuzione.
+Tutti i metodi, salvo quelli in cui l'utente installa il software client di Intune autonomamente, richiedono che gli amministratori IT scarichino prima di tutto il software per poterlo distribuire successivamente agli utenti finali.
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) fare clic su **Amministrazione** &gt; **Download software client**.
 
@@ -43,7 +45,7 @@ Tutti i metodi, salvo quelli in cui l'utente installa il software client di Intu
 2.  Nella pagina **Download software client** fare clic su **Scarica software client**. Salvare il pacchetto **Microsoft_Intune_Setup.zip** contenente il software in un percorso protetto della rete locale.
 
     > [!NOTE]
-    > Il pacchetto di installazione del software client di Intune contiene le informazioni sull'account dell'utente. Se utenti non autorizzati ottengono l'accesso al pacchetto di installazione, possono registrare computer nell'account rappresentato dal certificato incorporato ed eventualmente ottenere l'accesso alle risorse aziendali.
+    > Il pacchetto di installazione del software client di Intune contiene informazioni univoche e specifiche sull'account, disponibili tramite un certificato incorporato. Se utenti non autorizzati ottengono l'accesso al pacchetto di installazione, possono registrare computer nell'account rappresentato dal certificato incorporato ed eventualmente ottenere l'accesso alle risorse aziendali.
 
 3.  Estrarre il contenuto del pacchetto di installazione in un percorso sicuro nella rete locale.
 
@@ -52,10 +54,10 @@ Tutti i metodi, salvo quelli in cui l'utente installa il software client di Intu
 
 ## <a name="deploy-the-client-software-manually"></a>Distribuire manualmente il software client
 
-In un computer, passare alla cartella in cui si trovano i file di installazione del software client. Quindi eseguire **Microsoft_Intune_Setup.exe** per installare il software client.
+Nei computer in cui dovrà essere installato il client software, passare alla cartella in cui si trovano i file di installazione del software client. Quindi eseguire **Microsoft_Intune_Setup.exe** per installare il software client.
 
-    > [!NOTE]
-    > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
+> [!NOTE]
+> Lo stato dell'installazione viene visualizzato quando si passa il mouse sull'icona nella barra delle applicazioni del computer client.
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>Distribuire il software client usando Criteri di gruppo
 
@@ -72,7 +74,7 @@ In un computer, passare alla cartella in cui si trovano i file di installazione 
 
 3.  Usare Criteri di gruppo per distribuire il software nei computer della rete.
 
-    Per altre informazioni sull'utilizzo di Criteri di gruppo per distribuire automaticamente il software, vedere la documentazione di Windows Server.
+    Per altre informazioni sull'uso di Criteri di gruppo per distribuire automaticamente il software, vedere [Criteri di gruppo per principianti](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>Installare il software client come parte di un'immagine
 Il software client di Intune può essere distribuito nei computer come parte di un'immagine del sistema operativo, usando come traccia la seguente procedura:
@@ -98,15 +100,17 @@ Il software client di Intune può essere distribuito nei computer come parte di 
 
 5.  Acquisire un'immagine del computer di riferimento e distribuirla nei computer di destinazione.
 
-Dopo aver riavviato il computer di destinazione una volta eseguito il programma Installazione di Windows, verrà creata la chiave del Registro di sistema **WindowsIntuneEnrollPending** . Il pacchetto di registrazione verifica se il computer è registrato. Se il computer è registrato, non verrà intrapresa alcuna azione. Se il computer non è registrato, il pacchetto creerà un'attività di registrazione automatica in Microsoft Intune.
+    Dopo aver riavviato il computer di destinazione una volta eseguito il programma Installazione di Windows, verrà creata la chiave del Registro di sistema **WindowsIntuneEnrollPending** . Il pacchetto di registrazione verifica se il computer è registrato. Se il computer è registrato, non verrà intrapresa alcuna azione. Se il computer non è registrato, il pacchetto creerà un'attività di registrazione automatica in Microsoft Intune.
 
-L'attività di registrazione automatica, eseguita al successivo orario pianificato, verifica l'esistenza del valore del Registro di sistema **WindowsIntuneEnrollPending** e tenta di registrare il PC di destinazione in Intune. Se il tentativo non riesce a causa di un errore, la registrazione verrà ripetuta al momento della successiva esecuzione dell'attività. I tentativi continuano per un mese.
+    L'attività di registrazione automatica, eseguita al successivo orario pianificato, verifica l'esistenza del valore del Registro di sistema **WindowsIntuneEnrollPending** e tenta di registrare il PC di destinazione in Intune. Se il tentativo non riesce a causa di un errore, la registrazione verrà ripetuta al momento della successiva esecuzione dell'attività. I tentativi continuano per un mese.
 
-L'attività di registrazione automatica, il valore del Registro di sistema **WindowsIntuneEnrollPending** e il certificato dell'account vengono eliminati dal computer di destinazione al completamento della registrazione o dopo un mese, a seconda di quale condizione si verifica per prima.
+    L'attività di registrazione automatica, il valore del Registro di sistema **WindowsIntuneEnrollPending** e il certificato dell'account vengono eliminati dal computer di destinazione al completamento della registrazione o dopo un mese, a seconda di quale condizione si verifica per prima.
 
 ## <a name="instruct-users-to-self-enroll"></a>Istruire gli utenti per la registrazione automatica
 
 Gli utenti possono installare il software client Intune visitando il [sito Web del portale aziendale](http://portal.manage.microsoft.com). Se il portale Web rileva che il dispositivo è un PC Windows, verrà chiesto agli utenti di registrare il PC scaricando il client software di Intune. Dopo il download del software, gli utenti possono installarlo per attivare la gestione dei PC.
+
+Le informazioni specifiche visibili per gli utenti nel portale Web possono variare, a seconda delle autorità MDM dell'account e della piattaforma e della versione del PC dell'utente.
 
 ![Portale di Intune che richiede di scaricare il client software di Intune](../media/software-client-download.png)
 
@@ -139,6 +143,6 @@ Usare una delle seguenti procedure per controllare e convalidare la distribuzion
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

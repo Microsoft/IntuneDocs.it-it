@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
-ms.openlocfilehash: e60d707833ee276971000411e50564f39b41b207
+ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
+ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Monitorare i criteri di gestione delle app per dispositivi mobili con Microsoft Intune
-È possibile monitorare lo stato di conformità dei criteri di gestione delle app mobili (MAM) applicati agli utenti nel pannello di protezione delle app di Intune nel [portale di Azure](https://portal.azure.com). Verranno visualizzate informazioni sugli utenti interessati dai criteri MAM, lo stato di conformità ed eventuali problemi riscontrati dagli utenti.
+È possibile monitorare lo stato di conformità dei criteri di gestione delle app mobili (MAM) applicati agli utenti. Verranno visualizzate informazioni sugli utenti interessati dai criteri MAM, lo stato di conformità ed eventuali problemi riscontrati dagli utenti.
 
 Lo stato di conformità può essere monitorato in tre posizioni diverse:
 
@@ -36,8 +36,8 @@ Lo stato di conformità può essere monitorato in tre posizioni diverse:
 Seguire i tre passaggi seguenti per aprire la visualizzazione di riepilogo:
 
 1. Passare al [portale di Azure](https://portal.azure.com) e immettere le proprie credenziali.
-2. Scegliere **Altri servizi** e digitare "Intune".
-3. Scegliere **Intune App Protection** (Protezione app Intune).
+2. Scegliere **Altri servizi** e digitare **Intune** nella casella di testo filtro.
+3. Scegliere **Protezione app di Intune**.
 
 Nel pannello di **gestione di applicazioni mobili Intune** è disponibile un riepilogo dello stato di conformità:
 
@@ -95,8 +95,6 @@ Sono visualizzati gli stessi rapporti della visualizzazione dettagliata e ulteri
 
 -   **App protection app report** (Rapporto app protezione app): offre due stati di protezione app diversi che gli amministratori possono selezionare prima di generare il rapporto. Lo stato può essere protetto o non protetto.
 
-    ![Screenshot-1](../media/MAM-reporting-1.png)
-
     -   User status for managed MAM activity (Protected) (Stato utente per attività MAM gestita (Protetto)): questo rapporto descrive l'attività di ogni app MAM gestita per ogni utente.
 
         -   Visualizza tutte le app di destinazione dei criteri MAM per ogni utente e suddivide lo stato di ogni app archiviata con i criteri MAM o di destinazione di un criterio MAM ma mai archiviata.
@@ -109,6 +107,27 @@ Sono visualizzati gli stessi rapporti della visualizzazione dettagliata e ulteri
 
 ![Screenshot-2](../media/MAM-reporting-4.png)
 
+## <a name="table-grouping"></a>Raggruppamento tabelle
+
+Dopo la visualizzazione dei dati del **report utente sulla protezione delle app**, è possibile aggregare i dati nel modo seguente:
+
+- **Risultato della convalida:** i dati visualizzati sono raggruppati in base allo stato di protezione delle app con indicazione di operazione completata, errore o avviso.
+- **Nome app:** i dati visualizzati sono raggruppati in base alle app (nome effettivo dell'app) con indicazione di operazione completata, errore o avviso.
+
+## <a name="export-app-protection-activities-to-csv"></a>Esportare le attività di protezione delle app in formato CSV
+
+È possibile esportare tutte le attività relative ai criteri di protezione delle app in un singolo file con estensione csv. Questa opzione può rivelarsi utile per analizzare tutti gli stati di protezione delle app segnalati dagli utenti.
+
+Seguire questi passaggi per generare il report sulla protezione delle app:
+
+1. Nel pannello Gestione di applicazioni mobili di Intune scegliere il report sulla protezione delle app.
+
+    ![Screenshot&6;](../media/app-protection-report-csv-2.png)
+
+2. Scegliere Sì per salvare il report, quindi scegliere Salva con nome e selezionare la cartella in cui eseguire il salvataggio.
+
+    ![Screenshot&7;](../media/app-protection-report-csv-1.png)
+
 ## <a name="see-also"></a>Vedere anche
 [Gestire il trasferimento di dati tra app iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
@@ -117,6 +136,6 @@ Sono visualizzati gli stessi rapporti della visualizzazione dettagliata e ulteri
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

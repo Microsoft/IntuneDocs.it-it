@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
+ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
+ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
 
 
 ---
@@ -117,10 +118,14 @@ La **cancellazione selettiva** rimuove i dati aziendali, compresi i dati sulla g
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso.|Rimosso.|
 |Impostazioni del profilo certificato|Certificati revocati, ma non rimossi.|Certificati rimossi e revocati.|
 |Agente di gestione|Il privilegio di amministratore del dispositivo viene revocato.|Il privilegio di amministratore del dispositivo viene revocato.|
-|Posta elettronica|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per Android vengono rimossi.|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|
-|Outlook|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|
+|Posta elettronica|N/D. Vedere l'elemento di Outlook.|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|
+|Outlook|Il messaggio di posta elettronica ricevuto dall'app di Microsoft Outlook per Android viene rimosso, ma solo se Outlook è protetto tramite i criteri MAM. In caso contrario, Outlook non è viene cancellato durante l'annullamento della registrazione.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|Il messaggio di posta elettronica ricevuto dall'app di Microsoft Outlook per Android viene rimosso, ma solo se Outlook è protetto tramite i criteri MAM. In caso contrario, Outlook non è viene cancellato durante l'annullamento della registrazione.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|
 |Separazione di Azure Active Directory (AAD)|Il record AAD viene rimosso.|Il record AAD viene rimosso.|
 |Contatti | I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. <br /> <br />Attualmente è supportata solo l'app Outlook.|I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. <br /> <br />Attualmente è supportata solo l'app Outlook.
+
+**Android for Work**
+
+L'esecuzione di una cancellazione selettiva in un dispositivo Android for Work consente di rimuovere tutti i dati, le app e le impostazioni nel profilo di lavoro in tale dispositivo. Il dispositivo viene così ritirato dalla gestione con Intune. La cancellazione completa non è supportata per Android for Work.
 
 **Windows**
 
@@ -168,6 +173,6 @@ Questo report mostra anche chi ha eseguito l'azione.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

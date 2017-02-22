@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fdf4086ccf4b4f256596b7d0f7192b70a4efd2a
-ms.openlocfilehash: a2f3eab11f208c0260dc4dbc245801416dc36633
+ms.sourcegitcommit: 053cf0a1b5d06496397b36cbd1a7ebdce420fed3
+ms.openlocfilehash: 5158d58c32066ea720335a878fef87451542c195
 
 
 ---
@@ -39,8 +39,7 @@ You can block apps that are not supported by Intune mobile app management (MAM) 
 ### <a name="android-711-support---694397--"></a>Supporto per Android 7.1.1 <!--694397-->
 Intune ora supporta completamente Android 7.1.1 e la relativa gestione.
 
-### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Risolvere il problema nel caso in cui i dispositivi iOS non sono attivi o la console di amministrazione non è in grado di comunicare con i dispositivi
-
+### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>Risolvere il problema laddove i dispositivi iOS non sono attivi o la console di amministrazione non riesce a comunicare con i dispositivi <!--unknown-->
 Quando i dispositivi degli utenti perdono la connessione con Intune è possibile indicare nuovi passaggi per la risoluzione dei problemi per ripristinare l'accesso alle risorse aziendali. Vedere [I dispositivi sono inattivi o la console di amministrazione non è in grado di comunicare con i dispositivi](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
 
 ## <a name="notices"></a>Notifiche
@@ -55,6 +54,12 @@ Links inside of the Company Portal app for iOS, including those to documentation
 
 ### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Miglioramento del supporto della gestione delle app per dispositivi mobili per la cancellazione selettiva <!--581242-->
 Gli utenti finali riceveranno ulteriori indicazioni su come riottenere l'accesso ai dati aziendali o dell'istituto di istruzione se i dati vengono rimossi automaticamente a causa del criterio "Intervallo offline (giorni) prima della cancellazione dei dati dell'app".<!--, or the removal of the Intune Company Portal on Android.-->
+
+### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>I collegamenti al portale aziendale per iOS si aprono all'interno dell'app <!--665954-->
+I collegamenti all'interno dell'app Portale aziendale per iOS, inclusi quelli per la documentazione e le app, verranno aperti direttamente nell'app Portale aziendale tramite una visualizzazione in-app di Safari. Questo aggiornamento verrà fornito separatamente rispetto all'aggiornamento del servizio in gennaio.
+
+### <a name="modernizing-the-company-portal-website---753980--"></a>Aggiornamento del sito Web del portale aziendale <!--753980-->
+A partire da febbraio, il sito Web del portale aziendale supporterà le app destinate agli utenti che non hanno dispositivi gestiti. Il sito Web verrà allineato ad altri prodotti e servizi Microsoft tramite una nuova combinazione di colori a contrasto, illustrazioni dinamiche e un "hamburger menu" ![hamburger menu del sito Web del portale aziendale](./media/CP_hamburger_menu.png) che conterrà i dettagli di contatto del supporto tecnico e le informazioni sui dispositivi gestiti esistenti. La pagina di destinazione verrà riorganizzata per evidenziare le applicazioni disponibili per gli utenti, con sequenze video per le app in primo piano e aggiornate di recente. È possibile trovare immagini precedenti e successive all'aggiornamento nella pagina [What's new in the Intune app UI page](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui#January_2017) (Novità nell'interfaccia utente dell'app Intune).
 
 ### <a name="new-documentation-for-app-protection-policies---583398--"></a>Nuova documentazione per i criteri di protezione delle app <!--583398-->
 È stata aggiornata la documentazione per gli amministratori e gli sviluppatori di app che vogliono abilitare i criteri di protezione delle app (noti come criteri MAM) nelle loro app iOS e Android usando lo strumento di wrapping delle app di Intune o Intune App SDK.
@@ -74,6 +79,9 @@ Gli articoli seguenti sono stati aggiunti alla raccolta della documentazione:
 <!--### Progress bar when launching the Company Portal on iOS <!--665978
 The Company Portal for iOS is introducing a progress bar on the launch screen to provide the user with information about the loading processes that occur. There will be a phased rollout of the progress bar to replace the spinner. This means that some of your users will see the new progress bar while others will continue to see the spinner.-->
 
+### <a name="progress-bar-when-launching-the-company-portal-on-ios---665978--"></a>Indicatore di stato quando si avvia l'app Portale aziendale in iOS <!--665978-->
+Nell'app Portale aziendale per iOS verrà introdotta una barra di stato nella schermata di avvio per fornire all'utente informazioni sui processi di caricamento eseguiti. L'implementazione della barra di stato in sostituzione dell'indicatore di stato rotante avverrà in modo graduale. Questo significa che alcuni utenti visualizzeranno la nuova barra di stato, mentre altri continueranno a vedere l'indicatore rotante.
+
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Novità dell'anteprima pubblica dell'esperienza di amministrazione di Intune in Azure <!--736542-->
 
 All'inizio del 2017 è prevista la migrazione dell'intera esperienza di amministrazione in Azure e ciò consentirà la gestione efficiente e integrata dei flussi di lavoro principali di EMS su una piattaforma di servizi moderna ed estendibile tramite le API Graph.
@@ -90,10 +98,11 @@ Le novità dell'anteprima di Intune in Azure sono descritte [qui](https://docs.m
 * [Blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Guida di orientamento a Cloud Platform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Novità dell'anteprima di Azure](https://docs.microsoft.com/intune-azure/introduction/whats-new)
+* [What's new in the Company Portal UI](https://docs.microsoft.com/intune/whats-new/whats-new-in-company-portal-ui) (Novità nell'interfaccia utente del portale aziendale)
 * [Archivio delle novità](whats-new-archive.md)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Proteggere l&quot;accesso alla posta elettronica in Exchange locale | Microsoft Docs
+title: Proteggere la posta elettronica per Exchange locale | Microsoft Docs
 description: Proteggere e controllare l&quot;accesso alla posta elettronica aziendale in Exchange On-premises con accesso condizionale.
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 
 ---
@@ -24,18 +25,19 @@ ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+È possibile configurare l'accesso condizionale per controllare l'accesso alla posta elettronica per Exchange locale o per Exchange Online legacy dedicato usando Microsoft Intune.
+Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Proteggere l'accesso alla posta elettronica e ai servizi O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+
 > [!NOTE]
 > Se è disponibile un ambiente Exchange Online dedicato e si deve stabilire se si trova nell'ambiente di configurazione nuovo o legacy, contattare l'account manager.
 
+## <a name="before-you-begin"></a>Prima di iniziare
 
-Per controllare l'accesso alla posta elettronica per Exchange locale o per l'ambiente legacy Exchange Online dedicato, configurare l'accesso condizionale per Exchange locale tramite Microsoft Intune.
-Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Proteggere l'accesso alla posta elettronica e ai servizi O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
-
-**Prima** di configurare l'accesso condizionale, verificare quanto segue:
+Assicurarsi di verificare quanto segue:
 
 -   La versione di Exchange deve essere **Exchange 2010 o successiva**. Sono supportati array di server Accesso client di Exchange Server.
 
--   È necessario usare **On-premises Exchange Connector** che connette [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] a Exchange locale. Questo connettore consente di gestire i dispositivi attraverso la console di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Per informazioni dettagliate sul connettore, vedere [Install the Intune on-premises Exchange Connector](intune-on-premises-exchange-connector.md) (Installare On-premises Exchange Connector).
+-   È necessario usare [On-premises Exchange Connector di Intune](intune-on-premises-exchange-connector.md) che connette [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] a Exchange locale. Questo connettore consente di gestire i dispositivi attraverso la console di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
     -   On-premises Exchange Connector, disponibile nella console di Intune, è specifico del tenant di Intune e non può essere usato con un altro tenant. È consigliabile anche assicurarsi che Exchange Connector per il tenant sia installato **in un solo computer**.
 
@@ -47,6 +49,8 @@ Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'ar
 
 -   È necessario configurare **Exchange ActiveSync** per l'autenticazione basata su certificati o l'immissione di credenziali utente.
 
+### <a name="device-compliance-requirements"></a>Requisiti di conformità del dispositivo
+
 Quando si configurano i criteri per l'accesso condizionale e li si assegna a un utente, prima che un utente possa connettersi alla posta elettronica, il **dispositivo** in uso deve:
 
 -  Essere un PC aggiunto a un dominio o **registrato** in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
@@ -57,11 +61,13 @@ Quando si configurano i criteri per l'accesso condizionale e li si assegna a un 
 
 -   Essere **compatibile** con i criteri di conformità di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] distribuiti per il dispositivo.
 
+### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Funzionamento dell'accesso condizionale con Exchange locale
+
 Il diagramma seguente illustra il flusso usato dai criteri di accesso condizionale per Exchange locale per valutare se consentire o bloccare i dispositivi.
 
 ![Diagramma che illustra gli aspetti tenuti in considerazione per determinare se a un dispositivo è consentito o meno l'accesso a Exchange locale](../media/ConditionalAccess8-2.png)
 
-Se non viene soddisfatto un criterio di accesso condizionale, quando esegue l'accesso l'utente vede uno dei messaggi seguenti:
+Se un criterio di accesso condizionale non viene soddisfatto, esiste un intervallo di 10 minuti tra il momento in cui il dispositivo viene bloccato e quello in cui l'utente riceve uno dei seguenti messaggi di quarantena in fase di accesso:
 
 - Se il dispositivo non è registrato in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oppure non è registrato in Azure Active Directory, viene visualizzato un messaggio contenente istruzioni su come installare l'app Portale aziendale, registrare il dispositivo e attivare la posta elettronica. Questo processo associa anche l'ID Exchange ActiveSync del dispositivo con il record del dispositivo in Azure Active Directory.
 
@@ -121,11 +127,11 @@ Sono supportati:
 
 -   Non è necessario distribuire i criteri di accesso condizionale perché diventano immediatamente effettivi.
 
--   Dopo la configurazione di un profilo di Exchange ActiveSync, il blocco del dispositivo potrebbe richiedere da 1 a 3 ore, a meno che non sia gestito da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Dopo la configurazione di un profilo di Exchange ActiveSync, il blocco del dispositivo potrebbe richiedere da&1; a&3; ore, a meno che non sia gestito da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
--   Se un utente bloccato registra il dispositivo in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e risolve il problema di conformità, l'accesso alla posta elettronica verrà sbloccato entro 2 minuti.
+-   Se un utente bloccato registra il dispositivo in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e risolve il problema di conformità, l'accesso alla posta elettronica verrà sbloccato entro&2; minuti.
 
--   Se l'utente annulla la registrazione da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], il blocco del dispositivo potrebbe richiedere da 1 a 3 ore.
+-   Se l'utente annulla la registrazione da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], il blocco del dispositivo potrebbe richiedere da&1; a&3; ore.
 
 **Per vedere alcuni scenari di esempio sulla configurazione dei criteri di accesso condizionale per proteggere l'accesso dei dispositivi, vedere [Proteggere l'accesso alla posta elettronica: scenari di esempio](restrict-email-access-example-scenarios.md).**
 
@@ -136,6 +142,6 @@ Sono supportati:
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 
