@@ -1,5 +1,6 @@
 ---
-title: Risolvere i problemi relativi ai profili di dispositivo in Microsoft Intune | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Risolvere i problemi relativi ai profili di dispositivo in Microsoft Intune
+titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: se si è rimasti bloccati, usare questo argomento per risolvere i problemi relativi ai profili di dispositivo Intune."
 keywords: 
 author: robstackmsft
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 132c0b308031a57277c20cedd5b4ad37bfdf92e6
-ms.openlocfilehash: fe2a694d7b6135b4e8f7aaf1c863bc1685e93ea6
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
 
 
 ---
@@ -499,6 +501,6 @@ Nella parte inferiore del menu di navigazione a sinistra è disponibile un colle
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

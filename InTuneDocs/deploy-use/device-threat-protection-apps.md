@@ -14,8 +14,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: ab94439d9fd5300d61c5991434d41f7fdca693d2
 
 
 ---
@@ -78,7 +78,7 @@ Questo articolo descrive come configurare e distribuire l'app Lookout for Work i
 
 6. **Per distribuire l'app agli utenti**, selezionare l'app Lookout for Work e scegliere **Gestisci distribuzione**.
 
-  È necessario selezionare gli stessi utenti aggiunti tramite l'opzione Enrollment Management (Gestione della registrazione) nella console di Lookout.  Per informazioni sull'aggiunta di gruppi di utenti a Lookout MTP, vedere il passaggio 3 nella sezione [Configurare la sottoscrizione con la protezione dalle minacce per il dispositivo di Lookout](configure-and-deploy-lookout-for-work-apps.md).
+  È necessario selezionare gli stessi utenti aggiunti tramite l'opzione Enrollment Management (Gestione della registrazione) nella console di Lookout.  Per informazioni sull'aggiunta di gruppi di utenti a Lookout MTP, vedere il passaggio 3 nella sezione [Configurare la sottoscrizione con la protezione dalle minacce per il dispositivo di Lookout](https://docs.microsoft.com/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps).
 
   >[!IMPORTANT]
   > La procedura guidata per la distribuzione dell'app di Intune non riconosce i gruppi utenti di Azure AD e usa i gruppi utenti di Intune. È quindi necessario creare un gruppo utenti di Intune basato sul gruppo utenti di Azure AD registrato nella console di Lookout, come descritto in [questo](plan-your-user-and-device-groups.md) argomento.
@@ -94,10 +94,10 @@ Quando l'utente apre Lookout for Work nel dispositivo viene richiesto di attivar
 * [È necessario risolvere una minaccia rilevata da Lookout for Work nel dispositivo Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Passaggi successivi
-* [Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità](enable-device-threat-protection-rule-in-compliance-policy.md)
+* [Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

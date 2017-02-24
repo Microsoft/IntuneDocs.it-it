@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
-ms.openlocfilehash: 594b6b66a4c756155e958815b926674e63f07bb5
+ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
+ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 594b6b66a4c756155e958815b926674e63f07bb5
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune consente la gestione dei dispositivi mobili (MDM) iPad, iPhone e Mac OS X e offre agli utenti accesso alla posta elettronica e alle app aziendali. Affinché Intune gestisca i dispositivi iOS e Mac, è necessario un dispositivo Apple Push Notification Service. Dopo aver aggiunto il certificato a Intune, gli utenti possono installare l'app Portale aziendale per registrare i propri dispositivi. In alternativa, l'amministratore può configurare la [gestione dei dispositivi iOS di proprietà dell'azienda](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
+Intune consente la gestione di dispositivi mobili (MDM) iPad, iPhone e macOS e offre agli utenti accesso alla posta elettronica e alle app aziendali. Affinché Intune gestisca i dispositivi iOS e Mac, è necessario un dispositivo Apple Push Notification Service. Dopo aver aggiunto il certificato a Intune, gli utenti possono installare l'app Portale aziendale per registrare i propri dispositivi. In alternativa, l'amministratore può configurare la [gestione dei dispositivi iOS di proprietà dell'azienda](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Configurare Intune**<br>
     Se non è stato già fatto, preparare la gestione di dispositivi mobili (MDM) [impostando l'autorità di gestione di dispositivi mobili](prerequisites-for-enrollment.md#step-2-set-mdm-authority), ad esempio **Microsoft Intune**, e configurando MDM.
@@ -47,10 +48,10 @@ Intune consente la gestione dei dispositivi mobili (MDM) iPad, iPhone e Mac OS X
 
 5.  **Indicare agli utenti come registrare i propri dispositivi per accedere alle risorse aziendali.**
 
-    Per istruzioni sulla registrazione da parte degli utenti finali, vedere [Registrare il dispositivo iOS in Intune](../enduser/enroll-your-device-in-intune-ios.md) e [Registrare il dispositivo Mac OS X in Intune](../enduser/enroll-your-device-in-intune-macos.md). Il processo di registrazione indica agli utenti cosa possono aspettarsi e i dati visibili o meno agli amministratori IT nei propri dispositivi.
+    Per istruzioni sulla registrazione da parte dell'utente finale, vedere [Registrare il dispositivo iOS in Intune](../enduser/enroll-your-device-in-intune-ios.md) e [Registrare il dispositivo macOS in Intune](../enduser/enroll-your-device-in-intune-macos.md). Il processo di registrazione indica agli utenti cosa possono aspettarsi e i dati visibili o meno agli amministratori IT nei propri dispositivi.
 
     Per informazioni su altre attività dell'utente finale, vedere gli articoli seguenti:
-    - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](how-to-educate-your-end-users-about-microsoft-intune.md)
     - [Uso del dispositivo iOS o Mac OS con Intune](../enduser/using-your-ios-or-macOS-device-with-intune.md)
 
 Se l'azienda o l'organizzazione acquista dispositivi iOS per gli utenti, i dispositivi possono anche essere registrati per la gestione come [dispositivi iOS di proprietà dell'azienda](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
@@ -60,6 +61,6 @@ Se l'azienda o l'organizzazione acquista dispositivi iOS per gli utenti, i dispo
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

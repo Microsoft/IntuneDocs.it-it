@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d4b935ba28edc1b41afb46b0aa7d0ee586de2a1c
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
 
 
 ---
@@ -33,11 +34,11 @@ Questo argomento descrive le operazioni da eseguire quando gli utenti non riesco
 
 Per garantire il funzionamento dell'accesso condizionale, devono essere soddisfatte le condizioni seguenti:
 
--   Il dispositivo deve essere gestito da Intune.
--   Il dispositivo deve essere registrato con Azure Active Directory (AAD). In condizioni normali questa registrazione viene eseguita automaticamente durante la registrazione di Intune.
--   Il dispositivo deve essere conforme ai criteri di conformità di Intune, sia per il dispositivo sia per l'utente del dispositivo.  Se non sono presenti criteri di conformità, è sufficiente la registrazione di Intune.
--   È necessario attivare Exchange ActiveSync sul dispositivo se l'utente recupera la posta usando il client di posta elettronica nativo del dispositivo anziché Outlook.     Tale attivazione avviene automaticamente per i dispositivi iOS, Windows Phone e Android/KNOX Standard.
--   Intune Exchange Connector deve essere configurato correttamente. Per altre informazioni, vedere [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) (Risoluzione dei problemi di Exchange Connector in Microsoft Intune).
+-    Il dispositivo deve essere gestito da Intune.
+-    Il dispositivo deve essere registrato con Azure Active Directory (AAD). In condizioni normali questa registrazione viene eseguita automaticamente durante la registrazione di Intune.
+-    Il dispositivo deve essere conforme ai criteri di conformità di Intune, sia per il dispositivo sia per l'utente del dispositivo.  Se non sono presenti criteri di conformità, è sufficiente la registrazione di Intune.
+-    È necessario attivare Exchange ActiveSync sul dispositivo se l'utente recupera la posta usando il client di posta elettronica nativo del dispositivo anziché Outlook.     Tale attivazione avviene automaticamente per i dispositivi iOS, Windows Phone e Android/KNOX Standard.
+-    Intune Exchange Connector deve essere configurato correttamente. Per altre informazioni, vedere [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) (Risoluzione dei problemi di Exchange Connector in Microsoft Intune).
 
 Queste condizioni possono essere visualizzate per ogni dispositivo nel portale di gestione di Azure e nel report inventario dispositivi.
 
@@ -52,7 +53,7 @@ Queste condizioni possono essere visualizzate per ogni dispositivo nel portale d
  -  La registrazione delle informazioni di conformità per un dispositivo può richiedere tempo. Attendere qualche minuto e riprovare.
  -  Per i dispositivi iOS:
      -   Un profilo di posta elettronica esistente creato dall'utente bloccherà la distribuzione di un profilo creato dall'amministratore di Intune. Si tratta di un problema comune poiché gli utenti di iOS in genere creano un profilo di posta elettronica e poi eseguono la registrazione. Il portale aziendale informerà l'utente che non è conforme perché il profilo di posta elettronica è stato configurato manualmente e richiederà la rimozione del profilo. L'utente deve rimuovere il proprio profilo di posta elettronica per consentire la distribuzione del profilo di Intune. Per evitare il problema, indicare agli utenti di eseguire la registrazione senza installare un profilo di posta elettronica e di consentire a Intune di distribuire il profilo.
-     -   Un dispositivo iOS può restare bloccato in uno stato di controllo della conformità, impedendo all'utente di avviare un altro check-in. Il riavvio del portale aziendale può risolvere il problema e lo stato di conformità sarà riflesso nello stato del dispositivo in Intune. Dopo che tutti i dati sono stati raccolti con una sincronizzazione del dispositivo, il controllo della conformità viene eseguito in modo rapido, mediamente in meno di mezzo secondo.
+     -     Un dispositivo iOS può restare bloccato in uno stato di controllo della conformità, impedendo all'utente di avviare un altro check-in. Il riavvio del portale aziendale può risolvere il problema e lo stato di conformità sarà riflesso nello stato del dispositivo in Intune. Dopo che tutti i dati sono stati raccolti con una sincronizzazione del dispositivo, il controllo della conformità viene eseguito in modo rapido, mediamente in meno di mezzo secondo.
 
         In genere, i dispositivi rimangono bloccati in questo stato perché si verificano problemi di connessione al servizio o perché la sincronizzazione richiede molto tempo.  Se il problema persiste con diverse configurazioni di rete (cellulare, Wi-Fi, VPN), con il riavvio del dispositivo e dopo aver verificato l'aggiornamento del provider di servizi condivisi sul dispositivo, contattare il Supporto tecnico Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
@@ -125,7 +126,7 @@ Per visualizzare i log di Exchange Connector, usare lo strumento Visualizzatore 
 
     Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. (Recupero dell'elenco di dispositivi mobili senza filtro temporale (sincronizzazione completa) per 4 utenti eseguito.) Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected',' (Dettagli: risultati comando inventario - Dispositivi sincronizzati: 0 ID comando: commandIDGUID' Integrità Exchange: 'Integrità server 'Nome: 'PowerShellExchangeServer: <Nome=nomeserverposta>' Stato: Connesso',')
 
--   Individuare una sincronizzazione rapida (delta) nei log eseguendo la ricerca di **quick sync** (sincronizzazione rapida).
+-    Individuare una sincronizzazione rapida (delta) nei log eseguendo la ricerca di **quick sync** (sincronizzazione rapida).
 
 ##### <a name="exceptions-in-get-next-command"></a>Eccezioni in Get next command (Recupera comando successivo)
 Verificare nei log di Exchange Connector l'eventuale presenza di eccezioni in **Get next command** (Recupera comando successivo) e comunicarne il contenuto al Supporto tecnico Microsoft.
@@ -134,9 +135,9 @@ Verificare nei log di Exchange Connector l'eventuale presenza di eccezioni in **
 
 Per abilitare la registrazione dettagliata:
 
-1.  Aprire il file di configurazione di traccia di Exchange Connector. Il file si trova in: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.  Individuare TraceSourceLine con la chiave seguente: OnPremisesExchangeConnectorService
-3.  Modificare il valore del nodo **SourceLevel** da **Warning ActivityTracing** (predefinito) a **Verbose ActivityTracing**, come illustrato di seguito.
+1.    Aprire il file di configurazione di traccia di Exchange Connector. Il file si trova in: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
+2.    Individuare TraceSourceLine con la chiave seguente: OnPremisesExchangeConnectorService
+3.    Modificare il valore del nodo **SourceLevel** da **Warning ActivityTracing** (predefinito) a **Verbose ActivityTracing**, come illustrato di seguito.
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
@@ -161,6 +162,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

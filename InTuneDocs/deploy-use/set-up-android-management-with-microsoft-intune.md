@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 26ddc03985ab8a4959a1d2c9a47e77f042ab9310
-ms.openlocfilehash: 6b74c09c37970429d3eaa571db655854d592a2fe
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
 
 
 ---
@@ -25,6 +26,8 @@ ms.openlocfilehash: 6b74c09c37970429d3eaa571db655854d592a2fe
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 In qualità di amministratore di Intune, è possibile abilitare la gestione di dispositivi Android dal portale aziendale, inclusi i dispositivi Samsung KNOX Standard. Gli utenti possono quindi registrare i propri dispositivi usando l'app Portale aziendale disponibile da Google Play.
+
+Per impostazione predefinita, tutti i dispositivi Android sono autorizzati alla registrazione in Intune. Per impedire la registrazione dei dispositivi Android, accedere al [portale di amministrazione di Microsoft Intune](http://manage.microsoft.com) con le credenziali di amministratore. Scegliere **Amministrazione** > **Gestione dei dispositivi mobili** > **Regole di registrazione** e deselezionare la casella **Consenti dispositivi Android**.
 
 1.  **Configurare Intune**<br>
     Se non è stato già fatto, preparare la gestione di dispositivi mobili (MDM) [impostando l'autorità di gestione di dispositivi mobili](prerequisites-for-enrollment.md#step-2-set-mdm-authority), ad esempio **Microsoft Intune**, e configurando MDM.
@@ -37,7 +40,7 @@ In qualità di amministratore di Intune, è possibile abilitare la gestione di d
     Per istruzioni sulla registrazione da parte dell'utente finale, vedere [Registrare il dispositivo Android in Intune](../enduser/enroll-your-device-in-intune-android.md). Il processo di registrazione indica agli utenti cosa possono aspettarsi e i dati visibili o meno agli amministratori IT nei propri dispositivi.
 
     Per informazioni su altre attività dell'utente finale, vedere gli articoli seguenti:
-  - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](how-to-educate-your-end-users-about-microsoft-intune.md)
   - [End user guidance for Android devices](../enduser/using-your-android-device-with-intune.md) (Linee guida per utenti finali relative a dispositivi Android)
 
 A causa dell'assenza di Google Play Store in Cina, i dispositivi Android devono ottenere il portale aziendale dai marketplace di app cinesi. L'app Portale aziendale per Android sarà disponibile per il download negli store seguenti:
@@ -62,6 +65,6 @@ L'app Portale aziendale per Android usa i servizi Google Play per comunicare con
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

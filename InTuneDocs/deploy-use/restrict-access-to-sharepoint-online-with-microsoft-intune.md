@@ -15,8 +15,8 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -155,8 +155,6 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
 
      -   **I dispositivi devono essere aggiunti a un dominio o conformi.** Se i PC devono essere aggiunti a un dominio o conformi ai criteri impostati in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], scegliere questa opzione. Se un PC non soddisfa uno di questi requisiti, all'utente verrà richiesto di registrare il dispositivo in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-     -   **I dispositivi devono essere aggiunti a un dominio.** Per aggiungere i PC a un dominio per l'accesso a Exchange Online, scegliere questa opzione. Se un PC non è aggiunto a un dominio, l'accesso alla posta elettronica viene bloccato e all'utente viene richiesto di contattare l'amministratore IT.
-
      -   **I dispositivi devono essere conformi.** Affinché i PC siano registrati in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e conformi, scegliere questa opzione. Se un PC non è registrato, viene visualizzato un messaggio contenente le istruzioni su come eseguire la registrazione.
 
 4.   In **Accesso browser** a SharePoint Online e OneDrive for Business è possibile scegliere di consentire l'accesso a Exchange Online solo dai browser supportati: Safari (iOS) e Chrome (Android). Non è possibile accedere da altri browser. Vengono applicate le stesse restrizioni di piattaforma selezionate per l'accesso all'applicazione per OneDrive.
@@ -200,6 +198,6 @@ Scegliere un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Disp
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

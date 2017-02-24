@@ -15,8 +15,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: 1297522d0f7b52ebe14eb7b938f3458e7308ae27
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: 618819ff8dded925bc4745160dde8c9e75694faf
 
 
 ---
@@ -34,14 +34,14 @@ Per abilitare la connessione a Lookout MTP in Intune, nella pagina **Amministraz
 >[!IMPORTANT]
 > È **necessario** configurare l'app Lookout for Work prima di creare regole dei criteri di conformità e di configurare l'accesso condizionale. Ciò garantisce che l'app sia pronta e disponibile, in modo che gli utenti finali possano installarla prima di poter ottenere l'accesso alla posta elettronica o ad altre risorse aziendali.
 
-È così completa la configurazione dell'integrazione di Lookout e Intune nella console di amministrazione Intune.  I passaggi successivi per implementare questa soluzione includono la distribuzione dell'[app Lookout for Work](configure-and-deploy-lookout-for-work-apps.md) e la configurazione dei criteri di [conformità](enable-device-threat-protection-rule-in-compliance-policy.md).
+È così completa la configurazione dell'integrazione di Lookout e Intune nella console di amministrazione Intune.  I passaggi successivi per implementare questa soluzione includono la distribuzione dell'[app Lookout for Work](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps) e la configurazione dei criteri di [conformità](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-policy).
 
 
 ## <a name="next-steps"></a>Passaggi successivi
-[Configurare l'app Lookout for Work](configure-and-deploy-lookout-for-work-apps.md)
+[Configurare l'app Lookout for Work](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

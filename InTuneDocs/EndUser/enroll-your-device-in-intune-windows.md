@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: 7696deb59bae37bb424ae3e659a67f3d3f91ace7
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: 8829d392931cdbe23d5b0be7622729ddd2903fcb
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 7696deb59bae37bb424ae3e659a67f3d3f91ace7
 
 # <a name="enroll-your-windows-device-in-intune"></a>Registrare il dispositivo Windows in Intune
 
-Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile registrare il dispositivo Windows per poter accedere a posta elettronica, file e altre risorse aziendali. La registrazione dei dispositivi consente all'azienda di proteggere i suoi dati. Per altre informazioni sulla registrazione, vedere [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune?) e [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (Che cosa può o non può vedere l'amministratore IT nel dispositivo?)
+Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile registrare il dispositivo Windows per poter accedere a posta elettronica, file e altre risorse aziendali. La registrazione dei dispositivi consente all'azienda di proteggere i suoi dati. Per altre informazioni sulla registrazione, vedere [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune?) e [What your IT administrator can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) (Che cosa può o non può vedere l'amministratore IT nel dispositivo?)
 
 Per eseguire la registrazione, usare il collegamento corrispondente al dispositivo in uso:
 
@@ -36,6 +37,6 @@ Per eseguire la registrazione, usare il collegamento corrispondente al dispositi
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

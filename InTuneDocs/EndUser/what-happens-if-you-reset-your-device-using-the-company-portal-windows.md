@@ -18,8 +18,8 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: b48d3559f776de529c95666d4d4f762c8fbc82d2
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Che cosa avviene se si reimposta un dispositivo Windows con l'app Portale aziendale?
 
-Quando si usa l'app Portale aziendale o il [sito Web del portale aziendale](reset-your-device-cpwebsite.md) per reimpostare il dispositivo Windows, vengono ripristinate le impostazioni di fabbrica del dispositivo e vengono eliminate app, impostazioni e dati, inclusi i dati personali. Le conseguenze nei singoli dispositivi dipendono dal tipo di dispositivo e da come viene usato, come descritto nella tabella seguente. Per istruzioni su come reimpostare il dispositivo perso o rubato, vedere [Ripristinare (cancellare) un dispositivo smarrito o rubato](reset-erase-your-lost-or-stolen-device-windows.md).
+Quando si usa l'app Portale aziendale o il [sito Web del portale aziendale](reset-erase-your-device-cpwebsite.md) per reimpostare il dispositivo Windows, vengono ripristinate le impostazioni di fabbrica del dispositivo e vengono eliminate app, impostazioni e dati, inclusi i dati personali. Le conseguenze nei singoli dispositivi dipendono dal tipo di dispositivo e da come viene usato, come descritto nella tabella seguente. Per istruzioni su come reimpostare il dispositivo perso o rubato, vedere [Ripristinare (cancellare) un dispositivo smarrito o rubato](reset-erase-your-device-cpwebsite.md).
 
 |Configurazione e gestione del dispositivo|Tipo di dispositivo|
 |---------------------------------------|---------------|
@@ -39,6 +39,6 @@ Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto 
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 
