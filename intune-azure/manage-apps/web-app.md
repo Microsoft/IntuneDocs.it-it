@@ -1,5 +1,6 @@
 ---
-title: Come aggiungere app Web a Intune | Anteprima di Intune in Azure | Microsoft Docs
+title: Come aggiungere app Web a Intune
+titleSuffix: Intune Azure preview
 description: 'Anteprima di Intune in Azure: informazioni sull&quot;aggiunta di app Web a Intune.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 8b14b9dfef7100a86c338c362ba56be329a8639c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: c2e54d3e57a4b02ba277b88cc672d5587c449281
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -28,7 +30,7 @@ ms.lasthandoff: 02/16/2017
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Gestisci le app**.
 4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **App**.
-5. Sopra l'elenco delle app scegliere **Aggiungi**.
+5. In alto all'elenco delle applicazioni scegliere **Aggiungi**.
 6. Nel pannello **Aggiungi app** scegliere **Informazioni sull'app**.
 7. Nel pannello **Modifica l'app** configurare le informazioni seguenti. Al termine, fare clic su **Aggiungi**:
     - **URL app**: immettere l'URL del sito Web che ospita l'app da distribuire.
