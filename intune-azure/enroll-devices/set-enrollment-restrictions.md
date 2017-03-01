@@ -1,11 +1,11 @@
 ---
-title: Impostare le restrizioni di registrazione in Intune | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Impostare le restrizioni di registrazione in Intune | Anteprima di Intune in Azure | Microsoft Docs
 description: 'Anteprima di Intune in Azure: limitare la registrazione dalla piattaforma e impostare un limite di registrazione dei dispositivi in Intune. '
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 11/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 1bdefce35c20ce24b94ee701a2d13b5408f435ce
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: c4fa22fad4df9c0e4699cf258eb9518a1534bb94
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -23,40 +24,44 @@ ms.openlocfilehash: 1bdefce35c20ce24b94ee701a2d13b5408f435ce
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-È possibile limitare i tipi di dispositivi autorizzati alla registrazione in Intune specificando le piattaforme consentite. È anche possibile impostare il numero massimo di dispositivi che un utente è autorizzato a registrare.
+È possibile impostare i tipi e il numero massimo di dispositivi che un utente è autorizzato a registrare. Nel pannello Restrizioni registrazione è possibile impostare:
+
+- Le piattaforme per cui è consentita la registrazione e se bloccare la registrazione dei dispositivi personali per Android e iOS.
+
+- Il numero massimo di dispositivi che un utente è autorizzato a registrare.
 
 ## <a name="set-device-type-restrictions"></a>Impostare le restrizioni sul tipo di dispositivi
 
-1. Nel portale di Azure scegliere **Altri servizi**, immettere **Intune** nella casella di testo e quindi scegliere **Altro** > **Intune**
+1. Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 
-2. Nel pannello Intune scegliere **Registra i dispositivi** e quindi selezionare **Restrizioni registrazione**.
+2. Nel pannello Intune scegliere **Registra i dispositivi** e quindi scegliere **Restrizioni registrazione**.
 
 3. In **Restrizioni sul tipo di dispositivi** selezionare **Predefinito**.
 
 4. Nel pannello **Tutti gli utenti** selezionare **Piattaforme**.
 
-5. Per le piattaforme autorizzate alla registrazione in Intune, selezionare **Consenti**. Per le piattaforme di cui si desidera impedire la registrazione, selezionare **Blocca**.
+5. Per le piattaforme autorizzate alla registrazione in Intune, selezionare **Consenti**. Per le piattaforme di cui si vuole impedire la registrazione, selezionare **Blocca**. Le piattaforme sono impostate su **Consenti** per impostazione predefinita. 
+
+    >[!NOTE]
+    >Queste impostazioni non riguardano o bloccano le registrazioni di Windows che usano il client software di Intune. Queste impostazioni riguardano solo la registrazione mediante gestione dei dispositivi mobili. 
 
 6. Selezionare **Salva**.
 
 7. Selezionare **Configurazioni della piattaforma**.
 
-8. Scegliere se consentire o bloccare la registrazione per i dispositivi iOS di proprietà personale.
+8. Scegliere **Consenti** o **Blocca** per la registrazione dei dispositivi iOS e Android di proprietà personale.
 
 9. Selezionare **Salva**.
 
 ## <a name="set-device-limit-restrictions"></a>Impostare le restrizioni sul limite dei dispositivi
 
-1. Nel pannello Intune del portale di Azure scegliere **Registra i dispositivi** e quindi scegliere **Restrizioni registrazione**.
+1. Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 
-2. In **Restrizione sul limite di dispositivi** selezionare **Predefinito**.
+2. Nel pannello Intune scegliere **Registra i dispositivi** e quindi scegliere **Restrizioni registrazione**.
 
-3. Nel pannello **Tutti gli utenti** selezionare **Limite di dispositivi**.
+3. In **Restrizione sul limite di dispositivi** selezionare **Predefinito**.
 
-4. Selezionare il numero massimo di dispositivi che un utente può registrare e quindi selezionare **Salva**.
+4. Nel pannello **Tutti gli utenti** selezionare **Limite di dispositivi**.
 
-
-
-<!--HONumber=Feb17_HO1-->
-
+5. Selezionare il numero massimo di dispositivi che un utente può registrare e quindi selezionare **Salva**.
 

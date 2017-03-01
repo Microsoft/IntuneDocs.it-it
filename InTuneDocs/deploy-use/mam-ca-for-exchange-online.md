@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: a738771d62d50999e014c1df3ad49399f754a99a
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: ab6d1cf6a6b77be6aff6398ff99135674471ba35
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -24,11 +26,11 @@ ms.openlocfilehash: a738771d62d50999e014c1df3ad49399f754a99a
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Questo argomento contiene istruzioni dettagliate su come configurare un accesso condizionale a Exchange Online in modo da consentire solo le app mobili che sopportano i criteri di gestione delle app mobili Intune.
+Questo argomento contiene istruzioni dettagliate su come configurare un accesso condizionale a Exchange Online in modo da consentire solo le app mobili che supportano i criteri di protezione delle app di Intune.
 
 
 ## <a name="create-an-exchange-online-policy"></a>Creare criteri di Exchange Online
-1.  Accedere al [Portale di Azure](https://portal.azure.com) in cui è disponibile la funzionalità di accesso delle app. Se non si ha familiarità con il Portale di Azure, leggere l'argomento [Portale di Azure per i criteri MAM](azure-portal-for-microsoft-intune-mam-policies.md).
+1.  Accedere al [Portale di Azure](https://portal.azure.com) in cui è disponibile la funzionalità di accesso delle app. Se non si ha familiarità con il Portale di Azure, leggere l'argomento [Portale di Azure per i criteri di protezione delle app](azure-portal-for-microsoft-intune-mam-policies.md).
 
 2.  Scegliere **Altri servizi** e digitare "Intune".
 
@@ -40,7 +42,7 @@ Questo argomento contiene istruzioni dettagliate su come configurare un accesso 
 
     ![Screenshot del pannello delle impostazioni e sezione dell'accesso condizionale con l'opzione Exchange Online selezionata](../media/MAM-conditional-access-1.png)
 
-6. Nel pannello **App consentite** scegliere l'opzione **Allow apps that support Intune app policies** (Consenti app che supportano i criteri per app Intune) per consentire solo alle app supportate dai criteri MAM di Intune di accedere a Exchange Online. Quando si seleziona questa opzione, viene visualizzato l'elenco delle app supportate.
+6. Nel pannello **App consentite** scegliere l'opzione **Allow apps that support Intune app policies** (Consenti app che supportano i criteri per app Intune) per consentire solo alle app supportate dai criteri di protezione delle app di Intune di accedere a Exchange Online. Quando si seleziona questa opzione, viene visualizzato l'elenco delle app supportate.
 
     >[!NOTE]
     >Tutti i client di posta elettronica di Exchange Active Sync, tra cui i client di posta elettronica predefiniti in iOS e Android che si connettono a Exchange Online, non potranno inviare né ricevere messaggi di posta elettronica. Gli utenti riceveranno invece un solo messaggio di posta elettronica che li avvisa di usare Outlook come app di posta elettronica.
@@ -60,10 +62,5 @@ Per **eliminare un gruppo di utenti** dall'elenco dei **gruppi di utenti limitat
 ## <a name="next-steps"></a>Passaggi successivi
 [Bloccare le app che non usano l'autenticazione moderna](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>Vedere anche
-[Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
+[Proteggere i dati delle app con i criteri di protezione delle app](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 

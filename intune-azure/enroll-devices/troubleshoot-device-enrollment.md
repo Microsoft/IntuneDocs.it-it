@@ -1,11 +1,11 @@
 ---
-title: Risolvere i problemi di registrazione dei dispositivi | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Risolvere i problemi di registrazione dei dispositivi | Anteprima di Intune in Azure | Microsoft Docs
 description: 'Anteprima di Intune in Azure: informazioni su come risolvere i problemi di registrazione dei dispositivi.'
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: 78f0ff9a1b7bdaf30721d8702c36ff0e613b109e
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -46,7 +47,7 @@ Questi problemi possono verificarsi in tutte le piattaforme di dispositivi.
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Verificare il numero di dispositivi registrati e consentiti.
 
-Nel pannello Intune dal portale di Azure andare a **Registra i dispositivi ** > **Restrizioni registrazione** e verificare che l'utente non disponga di un numero di dispositivi superiore al limite di 15 dispositivi assegnati consentito.
+Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**. Nel pannello Intune dal portale di Azure andare a **Registra i dispositivi ** > **Restrizioni registrazione** e verificare che l'utente non disponga di un numero di dispositivi superiore al limite di 15 dispositivi assegnati consentito.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -218,16 +219,16 @@ L'errore di certificato si verifica perché i dispositivi Android richiedono l'i
 
 Per risolvere il problema, importare i certificati nei certificati personali del computer sul server ADFS o proxy, come indicato di seguito:
 
-1.  Nei server ADFS e proxy, avviare la console Gestione certificati per il computer locale facendo clic con il pulsante destro del mouse **Start** scegliendo **Esegui** e digitando **certlm.msc**.
-2.  Espandere **Personale** e selezionare **Certificati**.
-3.  Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
-4.  Selezionare la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
-5.  Per ogni certificato padre, selezionare **Visualizza certificato**.
-6.  Selezionare la scheda **Dettagli** e fare clic su **Copia su file...**.
-7.  Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato nel percorso file desiderato.
-8.  Importare i certificati padre che erano stati esportati al passaggio 3 in Computer locale\Personale\Certificati facendo clic su **Certificati**, selezionando **Tutte le attività** > **Importa** e quindi seguire la procedura guidata per importare il certificato (o i certificati).
-9.  Riavviare i server ADFS.
-10. Ripetere i passaggi precedenti in tutti i server ADFS e proxy.
+1.    Nei server ADFS e proxy, avviare la console Gestione certificati per il computer locale facendo clic con il pulsante destro del mouse **Start** scegliendo **Esegui** e digitando **certlm.msc**.
+2.    Espandere **Personale** e selezionare **Certificati**.
+3.    Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
+4.    Selezionare la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
+5.    Per ogni certificato padre, selezionare **Visualizza certificato**.
+6.    Selezionare la scheda **Dettagli** e fare clic su **Copia su file...**.
+7.    Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato nel percorso file desiderato.
+8.    Importare i certificati padre che erano stati esportati al passaggio 3 in Computer locale\Personale\Certificati facendo clic su **Certificati**, selezionando **Tutte le attività** > **Importa** e quindi seguire la procedura guidata per importare il certificato (o i certificati).
+9.    Riavviare i server ADFS.
+10.    Ripetere i passaggi precedenti in tutti i server ADFS e proxy.
 L'utente può ora accedere al Portale aziendale nel dispositivo Android.
 
 **Per convalidare la corretta installazione del certificato**:
@@ -386,9 +387,4 @@ Questo errore potrebbe essere dovuto al fatto che il computer è stato registrat
 
 ### <a name="next-steps"></a>Passaggi successivi
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

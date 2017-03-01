@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 446156265047994f0a15890d7699991d032c0bd5
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 1b14ec6330c512981025a2910dbd222fa4d7cf7f
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -25,7 +27,9 @@ ms.openlocfilehash: 446156265047994f0a15890d7699991d032c0bd5
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-I gruppi di Intune offrono una grande flessibilità per la gestione di dispositivi e utenti. È possibile configurare gruppi in base alle esigenze dell'organizzazione, ad esempio per località geografica, reparto o caratteristiche dell'hardware, e usarli per eseguire una vasta gamma di attività amministrative, dalla distribuzione di criteri per un set di utenti alla distribuzione di applicazioni a un set di dispositivi.
+Questo argomento descrive come gli amministratori possono creare gruppi di utenti in Intune.
+
+I gruppi in Intune offrono una grande flessibilità per la gestione di dispositivi e utenti. È possibile configurare gruppi in base alle esigenze dell'organizzazione, ad esempio per località geografica, reparto o caratteristiche dell'hardware, e usarli per eseguire una vasta gamma di attività amministrative, dalla distribuzione di criteri per un set di utenti alla distribuzione di applicazioni a un set di dispositivi.
 
 ## <a name="group-management-moving-to-azure-ad"></a>Migrazione della gestione dei gruppi ad Azure AD
 
@@ -84,9 +88,4 @@ Per trovare il gruppo appena creato, andare nell'elenco **Gruppi** nell'area di 
 >[!div class="step-by-step"]
 
 >[&larr; **Gestire le licenze di Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Creare criteri e app** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

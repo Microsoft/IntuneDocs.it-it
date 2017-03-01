@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
+ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
+ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
+ms.lasthandoff: 02/17/2017
 
 
 ---
@@ -26,6 +28,8 @@ Usare le informazioni in questo argomento per informazioni su come aggiungere ap
 
 > [!IMPORTANT]
 > Le informazioni fornite in questo argomento semplificano l'aggiunta di app nei PC Windows gestiti usando il software client di Intune. Per aggiungere app per computer Windows e altri dispositivi mobili registrati, vedere [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+
+Per installare le app nei PC, è necessario che possano essere installate in modalità invisibile, senza l'intervento dell'utente. In caso contrario, l'installazione avrà esito negativo.
 
 
 ## <a name="add-the-app"></a>Aggiungere l'app
@@ -40,7 +44,7 @@ Usare l'Autore del software Intune per configurare le proprietà dell'app e cari
 
     - **Selezionare il tipo di file del programma di installazione software**. Indica il tipo di software da distribuire. Per un PC Windows scegliere **Windows Installer**.
     - **Specificare il percorso dei file di installazione software**. Immettere il percorso dei file di installazione o scegliere **Sfoglia** per selezionare il percorso da un elenco.
-    - **Includi sottocartelle e file aggiuntivi dalla stessa cartella**. Alcuni programmi software che usano Windows Installer richiedono file di supporto. Tali file si trovano in genere nella stessa cartella dei file di installazione. Selezionare questa opzione se si vogliono distribuire anche i file di supporto.
+    - **Includi sottocartelle e file aggiuntivi dalla stessa cartella**. Alcuni programmi software che usano Windows Installer richiedono file di supporto. Tali file devono trovarsi nella stessa cartella dei file di installazione. Selezionare questa opzione se si vogliono distribuire anche i file di supporto.
 
     Ad esempio, se si vuole pubblicare un'app denominata Application.msi su Intune, la pagina avrà un aspetto simile al seguente: ![Pagina di installazione del software dell'autore](./media/publisher-for-pc.png)
 
@@ -73,7 +77,11 @@ Usare l'Autore del software Intune per configurare le proprietà dell'app e cari
 
     Se l'app soddisfa una delle regole configurate, non verrà installata.
 
-6.  Solo per il tipo di file **Windows Installer** (con estensione msi ed exe): nella pagina **Argomenti della riga di comando** indicare se si vuole specificare argomenti facoltativi della riga di comando per il programma di installazione. Alcuni programmi di installazione ad esempio possono supportare l'argomento **/q** per eseguire l'installazione automatica senza intervento dell'utente.
+6.  Solo per il tipo di file **Windows Installer** (con estensione msi ed exe): nella pagina **Argomenti della riga di comando** indicare se si vuole specificare argomenti facoltativi della riga di comando per il programma di installazione.
+    I parametri seguenti vengono aggiunti automaticamente da Intune:
+    - Per i file EXE, viene aggiunto il parametro **/install**.
+    - Per i file MSI, viene aggiunto il parametro **/quiet**.
+    Si noti che queste opzioni funzioneranno solo se l'autore del pacchetto dell'app ha abilitato le funzionalità corrispondenti.
 
 7.  Solo per il tipo di file **Windows Installer** (solo con estensione exe): nella pagina **Codici restituiti** è possibile aggiungere nuovi codici di errore che vengono interpretati da Intune quando l'app viene installata in un PC Windows gestito.
 
@@ -89,8 +97,5 @@ L'app viene visualizzata nel nodo **App** dell'area di lavoro **App**.
 
 Il passaggio successivo alla creazione di un'app è la distribuzione. Per altre informazioni, vedere [Distribuire le app con Microsoft Intune](deploy-apps.md).
 
-
-
-<!--HONumber=Dec16_HO5-->
-
+Per altre informazioni sui suggerimenti e trucchi per distribuire il software in PC Windows, vedere il post di blog [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/) (Suggerimento per il supporto: procedure consigliate per la distribuzione del software Intune nei PC).
 

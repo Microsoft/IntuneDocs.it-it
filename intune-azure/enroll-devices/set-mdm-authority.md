@@ -1,5 +1,5 @@
 ---
-title: "Impostare l&quot;autorità di gestione dei dispositivi mobili |Anteprima di Intune in Azure | Documentazione Microsoft"
+title: "Impostare l&quot;autorità di gestione dei dispositivi mobili | Anteprima di Intune in Azure | Microsoft Docs"
 description: "Anteprima di Intune in Azure: informazioni sulle modalità di impostazione dell&quot;autorità di gestione dei dispositivi mobili in Intune. "
 keywords: 
 author: staciebarker
@@ -14,8 +14,9 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 72a162175e278faa236add5698d65233fa851c7b
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -36,14 +37,9 @@ L'impostazione dell'autorità di gestione dei dispositivi mobili determina la mo
 
 **Per impostare l'autorità di gestione dei dispositivi mobili:**
 
-1. Nel portale di Azure scegliere **Altri servizi**, immettere **Intune** nella casella di testo e quindi scegliere **Altro** > **Intune**.
+1. Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 
-2. Nel pannello Intune scegliere **Registra i dispositivi** e quindi selezionare **Panoramica**.
+2. Nel pannello Intune scegliere **Registra i dispositivi** e quindi scegliere **Panoramica**.
 
 3. Nel pannello **Inizia a gestire dispositivi** scegliere **Imposta l'autorità MDM su Intune**. Un messaggio indica che l'autorità MDM è stata impostata su Intune.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

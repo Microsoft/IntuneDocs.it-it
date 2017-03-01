@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
-ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 2191295407e0c1bb2c3861b8a8d168dd3697da45
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -23,6 +25,8 @@ ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
 # <a name="customize-the-company-portal"></a>Personalizzare il portale aziendale
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Questo argomento descrive agli amministratori come possono personalizzare l'app Portale aziendale e il sito Web del portale aziendale di Intune.
 
 Il Portale aziendale di Intune è il punto in cui gli utenti possono accedere ai dati aziendali ed eseguire attività comuni quali la registrazione dei dispositivi, l'installazione di app e la ricerca delle informazioni di assistenza del reparto IT.
 
@@ -86,9 +90,4 @@ Una volta salvate le modifiche, è possibile usare i collegamenti riportati in f
 >[!div class="step-by-step"]
 
 >[&larr;**Creare criteri e applicazioni**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Registrare dispositivi** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 7e921e3f92b0c9b94e4fdc387513ab5c1627817a
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -25,6 +27,7 @@ ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Questo argomento descrive come gli amministratori possono creare un CNAME DNS per semplificare e personalizzare l'esperienza di accesso.
 
 Quando l'organizzazione si iscrive a un servizio Microsoft basato su cloud come Intune, l'utente riceve un nome di dominio iniziale ospitato in Azure Active Directory (AD) simile al seguente: **dominio.onmicrosoft.com**. In questo esempio, **dominio** è il nome scelto al momento dell'iscrizione e **onmicrosoft.com** è il suffisso assegnato agli account che si aggiungono alla sottoscrizione. Quando l'azienda dispone di un dominio personalizzato, è possibile configurare la propria istanza di Intune in modo da usare quel dominio anziché quello fornito con la sottoscrizione.
 
@@ -59,9 +62,4 @@ Altre informazioni sono disponibili in [Informazioni sul dominio onmicrosoft.com
 >[!div class="step-by-step"]
 
 >[&larr; **Accedere a Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**Aggiungere utenti a Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-3.md)  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

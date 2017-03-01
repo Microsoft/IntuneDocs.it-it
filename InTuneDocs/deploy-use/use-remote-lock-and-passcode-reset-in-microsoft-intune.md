@@ -2,19 +2,21 @@
 title: Blocco remoto e reimpostazione del passcode | Documentazione Microsoft
 description: "Intune include funzionalità per il blocco remoto e la reimpostazione del passcode."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: NathBarn
+ms.author: NathBarn
 manager: angrobe
-ms.date: 01/06/17
+ms.date: 02/16/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
+ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
+ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
+ms.lasthandoff: 02/17/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Protezione dei dispositivi con blocco remoto e reimpostazione passcode
@@ -24,7 +26,7 @@ ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
 Microsoft Intune include funzionalità per il blocco remoto e la reimpostazione del passcode.
 
 ## <a name="lock-a-device-remotely"></a>Bloccare un dispositivo in modalità remota
-Se un utente perde un dispositivo, è possibile bloccare il dispositivo in modalità remota. Per poter usare il blocco remoto è necessario che nel dispositivo sia impostato un PIN o passcode. 
+Se un utente perde un dispositivo, è possibile bloccare il dispositivo in modalità remota. Per poter usare il blocco remoto è necessario che nel dispositivo sia impostato un PIN o passcode.
 
 Nella tabella seguente è illustrato il funzionamento del blocco remoto su diverse piattaforme per dispositivi mobili.
 
@@ -33,7 +35,8 @@ Nella tabella seguente è illustrato il funzionamento del blocco remoto su diver
 |macOS|Non supportato|
 |iOS|Supportato|
 |Android|Supportato|
-|Windows 10 e Windows 10 Mobile|Supportato|
+|Windows 10 (Mobile)|Supportato|
+|Windows 10 (Desktop)|Non supportato|
 |Windows Phone 8 e Windows Phone 8.1|Supportato|
 |Windows RT 8.1 e Windows RT|Funzionalità supportata se l'utente corrente del dispositivo è lo stesso utente che ha registrato il dispositivo.|
 |Windows 8.1|Funzionalità supportata se l'utente corrente del dispositivo è lo stesso utente che ha registrato il dispositivo.|
@@ -81,9 +84,4 @@ Reimpostazione passcode non è supportato per i PC Windows registrati con il cli
 
 ### <a name="see-also"></a>Vedere anche
 [Ritirare i dispositivi](retire-devices-from-microsoft-intune-management.md) e [Cancellazione selettiva di Windows per la gestione di dati del dispositivo](http://technet.microsoft.com/library/dn486874.aspx)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

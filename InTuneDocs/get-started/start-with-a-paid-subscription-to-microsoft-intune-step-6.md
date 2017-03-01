@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -24,13 +26,15 @@ ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Questo argomento descrive come gli amministratori di Intune possono creare criteri e pubblicare app che possono essere in seguito distribuite nei dispositivi gestiti.
+
 Prima di iniziare a registrare le app in Intune è possibile abilitare le impostazioni dei criteri e le app che verranno distribuite non appena i dispositivi risultano inclusi nella gestione. I criteri di Intune specificano impostazioni che consentono di controllare le impostazioni di sicurezza dei dispositivi mobili, di eseguire la manutenzione delle impostazioni di Windows Firewall ed Endpoint Protection per i computer, nonché di distribuire applicazioni. È possibile configurare criteri, aggiungere app e distribuire tali app, in modo che i dispositivi ricevano le impostazioni e le app non appena vengono registrati in Intune.
 
 Criteri e app sono specifici della piattaforma.
 
 ## <a name="manage-device-settings"></a>Gestire le impostazioni dei dispositivi
 
- Le impostazioni dei criteri per i dispositivi devono essere configurate e gestite separatamente per ogni piattaforma. È possibile configurare criteri per le piattaforme seguenti:
+ Le impostazioni dei criteri per i dispositivi devono essere configurate e gestite separatamente per ogni piattaforma. I collegamenti seguenti consentono di accedere a elenchi delle impostazioni disponibili per le rispettive piattaforme:
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android e Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
@@ -69,9 +73,4 @@ Ora che l'app è disponibile in Intune, è possibile distribuirla nei dispositiv
 >[!div class="step-by-step"]
 
 >[&larr; **Organizzare utenti e dispositivi**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)[**Personalizzare il Portale aziendale** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

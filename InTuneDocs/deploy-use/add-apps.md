@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
+ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
+ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -63,7 +65,7 @@ Prima di iniziare a usare Autore del software, è necessario installare la versi
 ## <a name="cloud-storage-space"></a>Spazio di archiviazione nel cloud
 Tutte le app create con il tipo di installazione del programma di installazione software, ad esempio un'app line-of-business, vengono compresse e caricate nello spazio di archiviazione cloud di Microsoft Intune. Una sottoscrizione di valutazione di Intune comprende 2 gigabyte (GB) di archiviazione nel cloud per l'archiviazione delle app gestite e degli aggiornamenti. Una sottoscrizione completa include 20 GB di spazio di archiviazione.
 
-È possibile visualizzare la quantità di spazio usato nel nodo **Uso memoria** dell'area di lavoro **Amministratore**.
+È possibile visualizzare la quantità di spazio usato nel nodo **Uso memoria** dell'area di lavoro **Amministratore**. È possibile acquistare spazio di archiviazione aggiuntivo per Intune usando il metodo di acquisto originale.  Se il pagamento è stato effettuato con fattura o carta di credito, visitare il [portale di gestione delle sottoscrizioni](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  In caso contrario, contattare il partner o l'assistente alle vendite di riferimento.
 
 I requisiti dello spazio di archiviazione nel cloud sono i seguenti:
 
@@ -93,9 +95,4 @@ In questo modo, quando si carica l'app in Intune, saranno caricati anche tutti i
 ## <a name="next-steps"></a>Passaggi successivi
 
 Sarà necessario aggiungere le app nella console di Intune prima di distribuirle. È possibile aggiungere app sia per i [dispositivi registrati](add-apps-for-mobile-devices-in-microsoft-intune.md) sia per i [PC Windows gestiti con il software client di Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

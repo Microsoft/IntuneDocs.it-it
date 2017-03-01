@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -23,6 +25,8 @@ ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Aggiungere utenti e concedere autorizzazioni amministrative a Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Questo argomento descrive agli amministratori come possono aggiungere utenti a Intune e quali autorizzazioni amministrative sono disponibili nel servizio di Intune.
 
 Come amministratore, è possibile aggiungere direttamente o sincronizzare utenti da Active Directory locale. Una volta aggiunti, gli utenti possono registrare i dispositivi e accedere alle risorse aziendali. È anche possibile assegnare agli utenti autorizzazioni aggiuntive, tra cui *amministratore tenant*, *amministratore del servizio* e *autorizzazioni di manager di registrazione dispositivi*.
 
@@ -35,7 +39,7 @@ Questo argomento illustra come:
   - [Manager di registrazione dispositivi](#device-enrollment-managers)
 
 ## <a name="add-users-to-intune"></a>Aggiungere utenti a Intune
-È possibile aggiungere manualmente gli utenti alla sottoscrizione di Intune attraverso il [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), perché le licenze di Intune non vengono assegnate automaticamente. In un secondo momento, un amministratore tenant di Intune dovrà modificare l'account utente per assegnare una licenza all'utente dal portale di Office 365. Per altre informazioni, vedere [Aggiungere utenti singolarmente o in blocco a Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+È possibile aggiungere manualmente utenti alla sottoscrizione di Intune attraverso il [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), ma le licenze di Intune non vengono assegnate automaticamente. In un secondo momento, un amministratore tenant di Intune dovrà modificare l'account utente per assegnare una licenza all'utente dal portale di Office 365. Per altre informazioni, vedere [Aggiungere utenti singolarmente o in blocco a Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### <a name="sync-active-directory-and-add-users-to-intune"></a>Sincronizzare Active Directory e aggiungere utenti a Intune
 È possibile configurare la sincronizzazione delle directory per importare account utente dall'istanza locale di Active Directory a Microsoft Azure Active Directory (Azure AD) che include gli utenti di Intune. La connessione del servizio locale Active Directory con tutti i servizi basati su Azure Active Directory consente di semplificare notevolmente la gestione delle identità utente. È anche possibile configurare le funzionalità SSO (Single Sign-On) per semplificare ulteriormente l'autenticazione per tutti gli utenti. Collegando lo stesso [tenant di Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) con più servizi, gli account utente già sincronizzati sono disponibili a tutti i servizi basati su cloud.
@@ -100,9 +104,4 @@ I manager di registrazione dispositivi sono account utente standard con l'autori
 >[!div class="step-by-step"]
 
 >[&larr; **Impostazioni dominio**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Gestire le licenze di Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
