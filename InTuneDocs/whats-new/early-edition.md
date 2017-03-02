@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/07/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,11 @@ ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 68c7a23dc8769330c14f74e6aebb07eeb188a991
-ms.openlocfilehash: 4bc9a2799bcce035c6847b7b2884ee24160426da
+ms.sourcegitcommit: d0b3a883bb307fb06cb8d16500798086f328314a
+ms.openlocfilehash: eeebf8b6b3bc5c7c35386eb20c96097af1f6769c
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -34,7 +36,7 @@ Questa pagina viene aggiornata periodicamente. Consultarla a intervalli regolari
 ## <a name="new-capabilities"></a>Nuove funzionalità
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>Aggiornamento del sito Web del portale aziendale <!--753980-->
-Il sito Web del portale aziendale supporterà le app destinate agli utenti che non hanno dispositivi gestiti. Il sito Web verrà allineato ad altri prodotti e servizi Microsoft tramite una nuova combinazione di colori a contrasto, illustrazioni dinamiche e un "hamburger menu" ![immagine di "hamburger menu" di piccole dimensioni inserita nell'angolo superiore sinistro del sito Web del portale aziendale](./media/CP_hamburger_menu.png) che conterrà i dettagli di contatto del supporto tecnico e le informazioni sui dispositivi gestiti esistenti. La pagina di destinazione verrà riorganizzata per evidenziare le applicazioni disponibili per gli utenti, con sequenze video per le app in primo piano e aggiornate di recente. Le immagini di prima e dopo sono disponibili nella [pagina degli aggiornamenti dell'interfaccia utente](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
+A partire da febbraio, il design del sito Web del portale aziendale verrà allineato agli altri prodotti e servizi Microsoft tramite una nuova combinazione di colori a contrasto, illustrazioni dinamiche e un "hamburger menu" ![immagine di "hamburger menu" di piccole dimensioni inserita nell'angolo superiore sinistro del sito Web del portale aziendale](./media/CP_hamburger_menu.png) che conterrà i dettagli di contatto del supporto tecnico e le informazioni sui dispositivi gestiti esistenti. La pagina di destinazione verrà riorganizzata per evidenziare le applicazioni disponibili per gli utenti, con sequenze video per le app in primo piano e aggiornate di recente. Le immagini di prima e dopo sono disponibili nella [pagina degli aggiornamenti dell'interfaccia utente](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
 
 ### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Nuova esperienza guidata per il portale aziendale di Windows 10 <!--713927-->
 A partire da marzo, il portale aziendale per Windows 10 includerà un'esperienza guidata di Intune per i dispositivi che non sono stati identificati o registrati. La nuova esperienza fornisce istruzioni dettagliate e personalizzate, per la compilazione di Windows 10 in uso, che guidano l'utente nella procedura di registrazione AAD (obbligatoria per l'identificazione per le funzionalità di accesso condizionale) e di registrazione MDM (obbligatoria per le funzionalità di gestione dei dispositivi). L'esperienza guidata sarà accessibile dalla home page del portale aziendale ed è facoltativa. Gli utenti possono continuare a usare l'app anche se non completano la registrazione, ma potrebbero disporre di funzionalità limitate.
@@ -114,9 +116,4 @@ Stiamo iniziando a presentare in anteprima l'integrazione con i servizi di gesti
 
 ### <a name="see-also"></a>Vedere anche
 Per informazioni dettagliate sugli ultimi sviluppi, vedere [Novità di Microsoft Intune](whats-new-in-microsoft-intune.md).
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

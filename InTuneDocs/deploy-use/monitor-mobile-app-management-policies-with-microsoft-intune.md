@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Monitorare i criteri di gestione delle app per dispositivi mobili con Microsoft Intune
-È possibile monitorare lo stato di conformità dei criteri di gestione delle app mobili (MAM) applicati agli utenti. Verranno visualizzate informazioni sugli utenti interessati dai criteri MAM, lo stato di conformità ed eventuali problemi riscontrati dagli utenti.
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Monitorare i criteri di protezione delle app con Microsoft Intune
+È possibile monitorare lo stato di conformità dei criteri di protezione delle app applicati agli utenti. Sono disponibili informazioni sugli utenti interessati dai criteri di protezione delle app, sullo stato di conformità e su eventuali problemi riscontrati dagli utenti.
 
 Lo stato di conformità può essere monitorato in tre posizioni diverse:
 
@@ -59,7 +61,7 @@ Per accedere alla visualizzazione dettagliata del riepilogo, scegliere il riquad
 È possibile eseguire la ricerca di un singolo utente e controllare il relativo stato di conformità. Il pannello **Segnalazione app** mostra le informazioni seguenti per un utente selezionato:
 - Dispositivi associati all'account utente
 
-- App con criteri MAM nel dispositivo
+- Applicazioni con un criterio di protezione delle app sul dispositivo
 
 - Stato:
 
@@ -68,7 +70,7 @@ Per accedere alla visualizzazione dettagliata del riepilogo, scegliere il riquad
   - **Archiviazione non eseguita**: il criterio è stato distribuito all'utente, ma l'app non è stata usata nel contesto aziendale da quel momento.
 
 >[!NOTE]
-> Se per l'utente cercato non è stato distribuito il criterio MAM, verrà visualizzato un messaggio che informa che all'utente non è applicato alcun criterio MAM.
+> Se il criterio di protezione delle app non è stato distribuito agli utenti cercati, un messaggio informa che a tali utenti non è assegnato alcun criterio di protezione delle app.
 
 Per visualizzare i report generati per un utente, seguire questa procedura:
 
@@ -87,7 +89,7 @@ Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a 
 
 ## <a name="reporting-view"></a>Visualizzazione Rapporti
 
-Sono visualizzati gli stessi rapporti della visualizzazione dettagliata e ulteriori rapporti relativi allo stato di conformità dei criteri MAM:
+Sono visualizzati gli stessi rapporti della visualizzazione dettagliata e altri rapporti relativi allo stato di conformità dell'app con criteri di protezione delle app:
 
 ![Screenshot-4](../media/MAM-reporting-7.png)
 
@@ -97,13 +99,13 @@ Sono visualizzati gli stessi rapporti della visualizzazione dettagliata e ulteri
 
     -   User status for managed MAM activity (Protected) (Stato utente per attività MAM gestita (Protetto)): questo rapporto descrive l'attività di ogni app MAM gestita per ogni utente.
 
-        -   Visualizza tutte le app di destinazione dei criteri MAM per ogni utente e suddivide lo stato di ogni app archiviata con i criteri MAM o di destinazione di un criterio MAM ma mai archiviata.
+        -   Visualizza tutte le app di ciascun utente alle quali sono assegnati criteri di protezione e indica lo stato di ogni app, distinguendo tra app archiviate con criteri di protezione e app con criteri di protezione assegnati, ma non archiviate con tali criteri.
 <br></br>
     -   User status for unmanaged MAM activity (Unprotected) (Stato utente per attività MAM non gestita (Non protetto)): questo rapporto descrive l'attività delle app abilitate per MAM attualmente non gestite per ogni utente. Questa situazione può verificarsi per i motivi seguenti:
 
-        -   Le app sono usate da un utente o un'app che attualmente non è destinazione di un criterio MAM.
+        -   Le app sono usate da un utente o un'app a cui non è assegnato un criterio di protezione delle app.
 
-        -   Tutte le app sono archiviate, ma non ricevono alcun criterio MAM.
+        -   Tutte le app sono archiviate, ma non ricevono alcun criterio di protezione.
 
 ![Screenshot-2](../media/MAM-reporting-4.png)
 
@@ -131,11 +133,6 @@ Seguire questi passaggi per generare il report sulla protezione delle app:
 ## <a name="see-also"></a>Vedere anche
 [Gestire il trasferimento di dati tra app iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Aspettative dalla gestione dell'app per Android con criteri MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Aspettative dalla gestione dell'app per iOS con criteri MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

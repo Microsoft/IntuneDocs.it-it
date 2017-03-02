@@ -14,8 +14,9 @@ ms.assetid: 7e5c79c5-2883-4841-9be6-74cba16ee447
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: b2c79e92f6378825bdaac03d2d9be699bdaca95b
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -31,7 +32,7 @@ Per gestire i dispositivi iOS di proprietà dell'azienda con il programma di reg
 > Questa nota è destinata solo ai clienti migrati dalla console di amministrazione di Intune al portale di Azure. Se un token DEP Apple è stato eliminato dalla console di amministrazione di Intune durante il periodo di migrazione, è possibile che sia stato ripristinato nel proprio account di Intune. In questo caso è sufficiente eliminare il token DEP dal portale di Azure. 
 
 **Ottenere un certificato DEP di Apple**</br>
-Nel portale di Azure scegliere **Altri servizi**, immettere **Intune** nella casella di testo e quindi scegliere **Altro** > **Intune**. Nel pannello Intune scegliere **Registra i dispositivi** > **Token DEP Apple**, quindi seguire i passaggi numerati nel portale di Azure, illustrati di seguito.
+Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**. Nel pannello Intune scegliere **Registra i dispositivi** > **Token DEP Apple**, quindi seguire i passaggi numerati nel portale di Azure, illustrati di seguito.
 
 **Passaggio 1. Scaricare il certificato di chiave pubblica di Intune necessario per creare un token DEP Apple.**<br>
 Selezionare **Download your public key** (Scarica la chiave pubblica) per scaricare e salvare il file della chiave di crittografia (con estensione pem) in locale. Il file PEM viene usato per richiedere un certificato di relazione di trust dal portale del programma di registrazione dispositivi di Apple.
@@ -53,9 +54,4 @@ Selezionare [Creare un token DEP tramite i programmi di distribuzione Apple](htt
 
 **Passaggio 4: Passare al token DEP Apple da caricare. Intune eseguirà automaticamente la sincronizzazione con l'account DEP.**<br>
 Passare al file (con estensione pem) del certificato, scegliere **Apri** e quindi selezionare **Carica**. Con il certificato push, Intune può registrare e gestire i dispositivi iOS eseguendo il push dei criteri nei dispositivi mobili registrati.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

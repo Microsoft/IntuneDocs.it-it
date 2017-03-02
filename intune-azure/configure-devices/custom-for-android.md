@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: 3a80a69a27b540b66fb96e098c0b0f66a0854297
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6a49a87984a465c6a656ad40122d0e64b23599fc
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-settings-for-android-devices-in-intune-azure-preview"></a>Impostazioni personalizzate per dispositivi Android nell'anteprima di Intune in Azure
+# <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Impostazioni personalizzate per dispositivi Android in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -39,9 +40,4 @@ Questa funzionalità consente di distribuire le impostazioni Android non configu
     - **URI OMA**: specificare l'URI OMA per cui si desidera fornire un'impostazione.
     - **Valore**: immettere il valore da associare all'impostazione URI OMA immessa.
 4. Al termine fare clic su **OK**, quindi continuare ad aggiungere altre impostazioni secondo le esigenze.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

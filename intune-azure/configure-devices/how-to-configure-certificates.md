@@ -1,11 +1,12 @@
 ---
-title: Come configurare i certificati con Intune | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Come configurare i certificati con Intune
+titleSuffix: Intune Azure preview
 description: 'Anteprima di Intune in Azure: informazioni su come usare Intune per creare e assegnare certificati che consentono di proteggere Wi-Fi, VPN e altre connessioni.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: a0183f2a170ed458b19c7688b20ee5ba5c2c696e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-certificates-with-intune-azure-preview"></a>Come configurare i certificati con l'anteprima di Intune in Azure
+# <a name="how-to-configure-certificates-in-microsoft-intune"></a>Come configurare i certificati in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,8 +45,8 @@ Quando si concede agli utenti l'accesso alle risorse aziendali tramite profili V
 
     È possibile usare solo un profilo certificato SCEP su queste piattaforme:
 
--   macOS 10.9 e versioni successive
--   Windows Phone 8.1 e versioni successive
+-     macOS 10.9 e versioni successive
+-     Windows Phone 8.1 e versioni successive
 
 È necessario creare un profilo separato per ogni piattaforma dei dispositivi. Quando si crea il profilo, questo viene associato al profilo del certificato radice attendibile già creato.
 
@@ -196,9 +199,4 @@ Prima di assegnare i profili certificato ai gruppi, considerare quanto segue:
 
 ## <a name="next-steps"></a>Passaggi successivi
 Vedere [Come assegnare i profili di dispositivo](how-to-assign-device-profiles.md) per informazioni generali sull'assegnazione dei profili di dispositivo.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

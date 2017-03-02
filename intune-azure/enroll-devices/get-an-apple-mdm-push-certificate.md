@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c0884ded1c8c55bb1b7968e483864b42f5bd6bde
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a6ac1074055892f5ec42fb4057e47e9349fb5a33
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -27,8 +28,7 @@ ms.openlocfilehash: c0884ded1c8c55bb1b7968e483864b42f5bd6bde
 Intune consente la gestione dei dispositivi mobili (MDM) iPad, iPhone e Mac OS X e offre agli utenti accesso alla posta elettronica e alle app aziendali. Affinché Intune gestisca i dispositivi iOS e Mac, è necessario un dispositivo Apple Push Notification Service. Dopo aver aggiunto il certificato a Intune, gli utenti possono installare l'app Portale aziendale per registrare i propri dispositivi. In alternativa, è possibile configurare la gestione dei dispositivi iOS di proprietà dell'azienda.
 
 **Per ottenere un certificato push MDM:**<br>
-
-Nel portale di Azure scegliere **Altri servizi**, immettere **Intune** nella casella di testo e quindi scegliere **Altro** > **Intune**. Nel pannello Intune scegliere **Registra i dispositivi** > **Certificato push MDM Apple**, quindi seguire i passaggi numerati nel portale di Azure, illustrati di seguito.
+Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**. Nel pannello Intune scegliere **Registra i dispositivi** > **Certificato push MDM Apple**, quindi seguire i passaggi numerati nel portale di Azure, illustrati di seguito.
 
 **Passaggio 1. Scaricare la richiesta di firma del certificato di Intune necessaria per creare un certificato push MDM di Apple.**<br>
 Selezionare **Scarica CSR** per scaricare e salvare il file con estensione csr in locale. Questo file viene usato per richiedere un certificato di relazione di trust al portale Apple Push Certificates.
@@ -41,9 +41,4 @@ Nota
 
 **Passaggio 4: Passare al certificato push MDM di Apple da caricare.**<br>
 Passare al file (con estensione pem) del certificato, scegliere **Apri** e quindi selezionare **Carica**. Con il certificato push, Intune può registrare e gestire i dispositivi iOS eseguendo il push dei criteri nei dispositivi mobili registrati.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

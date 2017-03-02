@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: 1ab58388f3d126d5d831c65ad3342ec87fb77b91
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 78eca605a277c1e0fc750900ece028d8f2c7c5b2
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -66,7 +67,7 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
 
 ## <a name="add-a-device-enrollment-manager"></a>Aggiungere un manager di registrazione dispositivi
 
-1.  Nel portale di Azure scegliere **Altri servizi**, immettere **Intune** nella casella di testo e quindi scegliere **Altro** > **Intune**.
+1.  Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 
 2.  Nel pannello Intune scegliere **Registra i dispositivi** e quindi selezionare **Manager di registrazione dispositivi**.
 
@@ -88,18 +89,17 @@ La rimozione di un manager di registrazione dispositivi non influisce sui dispos
 
 **Per rimuovere un manager di registrazione dispositivi**
 
-1. Nel pannello Intune scegliere **Registra i dispositivi** e quindi selezionare **Manager di registrazione dispositivi**.
+1. Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 
-2. Nel pannello **Manager di registrazione dispositivi** fare clic con il pulsante destro del mouse sull'utente manager di registrazione dispositivi e selezionare **Rimuovi**.
+2. Nel pannello Intune scegliere **Registra i dispositivi** e quindi selezionare **Manager di registrazione dispositivi**.
+
+3. Nel pannello **Manager di registrazione dispositivi** fare clic con il pulsante destro del mouse sull'utente manager di registrazione dispositivi e selezionare **Rimuovi**.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Visualizzare le proprietà di un manager di registrazione dispositivi
 
-1. Nel pannello Intune scegliere **Registra i dispositivi** e quindi selezionare **Manager di registrazione dispositivi**.
+1. Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 
-2. Nel pannello **Manager di registrazione dispositivi** fare clic con il pulsante destro del mouse sull'utente manager di registrazione dispositivi e selezionare **Proprietà**.
+2. Nel pannello Intune scegliere **Registra i dispositivi** e quindi selezionare **Manager di registrazione dispositivi**.
 
-
-
-<!--HONumber=Feb17_HO1-->
-
+3. Nel pannello **Manager di registrazione dispositivi** fare clic con il pulsante destro del mouse sull'utente manager di registrazione dispositivi e selezionare **Proprietà**.
 

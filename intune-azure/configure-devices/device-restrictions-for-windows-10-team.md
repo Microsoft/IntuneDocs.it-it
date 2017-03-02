@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e6e0540acd5488077ae5217f8862e3bc5462ed71
-ms.openlocfilehash: 342681922944fd1ea4be6aa4ddcb0725f6cfd42b
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: ab9c879763ce1ed02a52a57e66fdc06fa970c2a4
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="windows-10-team-device-restriction-settings-in-intune-azure-preview"></a>Impostazioni relative alle restrizioni dei dispositivi Windows 10 Team nell'anteprima di Intune Azure
+# <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows 10 Team in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -33,9 +34,4 @@ ms.openlocfilehash: 342681922944fd1ea4be6aa4ddcb0725f6cfd42b
 - **URL dell'immagine di sfondo della schermata iniziale** - Abilitare questa impostazione per visualizzare uno sfondo personalizzato nella **schermata iniziale** dei dispositivi Windows 10 Team dall'URL specificato.<br>L'immagine deve essere nel formato PNG e l'URL deve iniziare con **https://**.
 - **Finestra di manutenzione per gli aggiornamenti** - Configura la finestra durante la quale è possibile eseguire gli aggiornamenti del dispositivo. È possibile configurare l'ora di inizio della finestra e la durata (tra 1 e 5 ore).
 - **Azure Operational Insights** - Azure Operational Insights, parte di Microsoft Operations Management Suite, raccoglie, archivia e analizza i dati dei file di log dai dispositivi Windows 10 Team.<br>Per connettersi ad Azure Operational Insights, è necessario specificare un valore per **ID area di lavoro** e **Chiave dell'area di lavoro**.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

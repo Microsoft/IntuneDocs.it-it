@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: 74f2cc7221e737371d7db97ec25d872578df273d
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6f08dc63a9afaa5e92b188883d160d0b76f3631f
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="configure-your-intune-certificate-infrastructure-for-pkcs"></a>Configurare l'infrastruttura di certificazione di Intune per PKCS
+# <a name="configure-your-microsoft-intune-certificate-infrastructure-for-pkcs"></a>Configurare l'infrastruttura di certificazione di Microsoft Intune per PKCS
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Questo argomento descrive cosa è necessario per creare e distribuire i profili di certificato PKCS con Intune.
@@ -157,9 +158,4 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
 
 ### <a name="next-steps"></a>Passaggi successivi
 A questo punto è possibile configurare i profili di certificato come descritto in [How to configure certificates with Microsoft Intune](how-to-configure-certificates.md) (Come configurare i certificati con Microsoft Intune).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

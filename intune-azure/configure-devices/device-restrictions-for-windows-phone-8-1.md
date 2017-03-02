@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/23/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,46 +14,47 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8640f60ddafd41826edaf781fbdb1fa76fe5c7e6
-ms.openlocfilehash: a24e4a58d0938778efc89fa473864100e698bea8
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 32bc9adb88803385c26894e8a70513a4adc55b27
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="windows-phone-81-device-restriction-settings-in-intune-azure-preview"></a>Impostazioni relative alle restrizioni dei dispositivi Windows Phone 8.1 nell'anteprima di Intune Azure
+# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows Phone 8.1 in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## <a name="general"></a>Generale
--   **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
--   **Fotocamera** - Abilita o blocca la fotocamera del dispositivo.
--   **Copia e incolla** - Abilita o blocca la funzionalità copia e incolla nel dispositivo.
--   **Archivi rimovibili** - Consente al dispositivo di usare unità di archiviazione rimovibili, ad esempio schede SD.
--   **Georilevazione** - Consente al dispositivo di usare le informazioni sulla posizione geografica.
--   **Account Microsoft** - Consente o impedisce all'utente di collegare un account Microsoft al dispositivo.
--   **Acquisizione schermo** - Consente all'utente di acquisire il contenuto della schermata come file di immagine.
--   **Invio dati di diagnostica** - Consente al dispositivo di inviare informazioni di diagnostica a Microsoft.
--   **Sincronizzazione degli account di posta elettronica personalizzati** - Consente al dispositivo di connettersi ad account di posta elettronica non Microsoft.
+-     **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
+-     **Fotocamera** - Abilita o blocca la fotocamera del dispositivo.
+-     **Copia e incolla** - Abilita o blocca la funzionalità copia e incolla nel dispositivo.
+-     **Archivi rimovibili** - Consente al dispositivo di usare unità di archiviazione rimovibili, ad esempio schede SD.
+-     **Georilevazione** - Consente al dispositivo di usare le informazioni sulla posizione geografica.
+-     **Account Microsoft** - Consente o impedisce all'utente di collegare un account Microsoft al dispositivo.
+-     **Acquisizione schermo** - Consente all'utente di acquisire il contenuto della schermata come file di immagine.
+-     **Invio dati di diagnostica** - Consente al dispositivo di inviare informazioni di diagnostica a Microsoft.
+-     **Sincronizzazione degli account di posta elettronica personalizzati** - Consente al dispositivo di connettersi ad account di posta elettronica non Microsoft.
 
 ## <a name="password"></a>Password
--   **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
--   **Password necessaria** - Richiede all'utente finale di immettere una password per accedere al dispositivo.
-    -   **Tipo di password richiesto** - Specifica il tipo di password che verrà richiesto, ad esempio alfanumerico o solo numerico.
-    -   **Lunghezza minima password** - Specifica il numero minimo di caratteri complessi richiesti per la password.
-    -   **Password semplici** - Specifica la possibilità di usare password semplici, ad esempio "0000" e "1234".
-    -   **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** - Specifica il numero di tentativi di immissione di una password errata ripetuti prima che il dispositivo venga cancellato.
-    -   **Numero massimo di minuti di inattività fino al blocco dello schermo** - Specifica il periodo di tempo per cui un dispositivo deve rimanere inattivo prima che lo schermo venga bloccato automaticamente.
-    -   **Scadenza password (giorni)** - Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.
-    -   **Impedisci riutilizzo delle password precedenti** - Specifica quante password utilizzate in precedenza devono essere ricordate.
--   **Crittografia** - Richiede che i dati presenti nei dispositivi mobili supportati siano crittografati.
+-     **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
+-     **Password necessaria** - Richiede all'utente finale di immettere una password per accedere al dispositivo.
+    -     **Tipo di password richiesto** - Specifica il tipo di password che verrà richiesto, ad esempio alfanumerico o solo numerico.
+    -     **Lunghezza minima password** - Specifica il numero minimo di caratteri complessi richiesti per la password.
+    -     **Password semplici** - Specifica la possibilità di usare password semplici, ad esempio "0000" e "1234".
+    -     **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** - Specifica il numero di tentativi di immissione di una password errata ripetuti prima che il dispositivo venga cancellato.
+    -     **Numero massimo di minuti di inattività fino al blocco dello schermo** - Specifica il periodo di tempo per cui un dispositivo deve rimanere inattivo prima che lo schermo venga bloccato automaticamente.
+    -     **Scadenza password (giorni)** - Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.
+    -     **Impedisci riutilizzo delle password precedenti** - Specifica quante password utilizzate in precedenza devono essere ricordate.
+-     **Crittografia** - Richiede che i dati presenti nei dispositivi mobili supportati siano crittografati.
 
 ## <a name="app-store"></a>App Store
--   **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
--   **App Store** - Consente all'utente di connettersi all'App Store dal dispositivo.
+-     **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
+-     **App Store** - Consente all'utente di connettersi all'App Store dal dispositivo.
 
 ## <a name="restricted-apps"></a>App con restrizioni
 
--   **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
+-     **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
 
 Nell'elenco delle app con restrizioni è possibile configurare uno degli elenchi seguenti:
 
@@ -80,20 +81,15 @@ Esempio: cercare per l'app Skype in Store. L'URL usato sarà **http://www.window
 
 
 ## <a name="browser"></a>Browser
--   **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
--   **Browser Web** - Abilita o blocca il Web browser integrato nei dispositivi.
+-     **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
+-     **Browser Web** - Abilita o blocca il Web browser integrato nei dispositivi.
 
 ## <a name="cellular-and-connectivity"></a>Rete cellulare e connettività
--   **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
--   **Wi-Fi** - Abilita o disabilita le funzionalità Wi-Fi del dispositivo.
--   **Tethering Wi-Fi** - Abilita l'uso del tethering Wi-Fi nel dispositivo.
--   **Connetti automaticamente a hotspot Wi-Fi** - Consente al dispositivo di connettersi automaticamente agli hotspot Wi-Fi gratuiti e accettare automaticamente le condizioni d'uso.
--   **Reporting hotspot Wi-Fi** - Invia informazioni sulle connessioni Wi-Fi per individuare connessioni nelle vicinanze.
--   **NFC** - Abilita o disabilita le operazioni che usano Near Field Communication sui dispositivi che la supportano.
--   **Bluetooth** - Abilita o disabilita la funzione Bluetooth del dispositivo.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
+-     **Apply all settings to Windows Phone 8.1 only**(Applica tutte le impostazioni solo a Windows Phone 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows Phone 8.1. Se impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10 Mobile.
+-     **Wi-Fi** - Abilita o disabilita le funzionalità Wi-Fi del dispositivo.
+-     **Tethering Wi-Fi** - Abilita l'uso del tethering Wi-Fi nel dispositivo.
+-     **Connetti automaticamente a hotspot Wi-Fi** - Consente al dispositivo di connettersi automaticamente agli hotspot Wi-Fi gratuiti e accettare automaticamente le condizioni d'uso.
+-     **Reporting hotspot Wi-Fi** - Invia informazioni sulle connessioni Wi-Fi per individuare connessioni nelle vicinanze.
+-     **NFC** - Abilita o disabilita le operazioni che usano Near Field Communication sui dispositivi che la supportano.
+-     **Bluetooth** - Abilita o disabilita la funzione Bluetooth del dispositivo.
 

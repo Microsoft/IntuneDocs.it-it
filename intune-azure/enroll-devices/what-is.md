@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 10cf9980468eff912557747c31994747c17a3ab4
-ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -43,33 +44,33 @@ La tabella seguente illustra i metodi di registrazione di Intune con le relative
 
 **Metodi di registrazione per iOS**
 
-| **Metodo** |  **Cancellazione dati richiesta?** |    **Affinità**    |   **Blocco** | **Informazioni dettagliate** |
+| **Metodo** |    **Cancellazione dati richiesta?** |    **Affinità**    |    **Blocco** | **Informazioni dettagliate** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|    Sì |   No | Maggiori informazioni saranno disponibili a breve|
-|**[DEM](#dem)**|   No |No |No  | [Altre informazioni](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[DEP](#dep)**|   sì |   Facoltativo |  Facoltativo|[Altre informazioni](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[USB-SA](#usb-sa)**| sì |   Facoltativo |  No| [Altre informazioni](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
-|**[USB-Direct](#usb-direct)**| No |    No  | No|[Altre informazioni](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
+|**[BYOD](#byod)** | No|    Sì |    No | Maggiori informazioni saranno disponibili a breve|
+|**[DEM](#dem)**|    No |No |No    | [Altre informazioni](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[DEP](#dep)**|    sì |    Facoltativo |    Facoltativo|[Altre informazioni](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[USB-SA](#usb-sa)**|    sì |    Facoltativo |    No| [Altre informazioni](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
+|**[USB-Direct](#usb-direct)**|    No |    No    | No|[Altre informazioni](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
 
 
 **Metodi di registrazione per Windows**
 
-| **Metodo** |  **Cancellazione dati richiesta?** |    **Affinità**    |   **Blocco** | **Informazioni dettagliate**|
+| **Metodo** |    **Cancellazione dati richiesta?** |    **Affinità**    |    **Blocco** | **Informazioni dettagliate**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | sì|   Sì |   No | Maggiori informazioni saranno disponibili a breve|
-|**[DEM](#dem)**|   No |No |No  |[Altre informazioni](enroll-devices-using-device-enrollment-manager.md)|
+|**[BYOD](#byod)** | sì|    Sì |    No | Maggiori informazioni saranno disponibili a breve|
+|**[DEM](#dem)**|    No |No |No    |[Altre informazioni](enroll-devices-using-device-enrollment-manager.md)|
 
 **Metodi di registrazione per Android**
 
-| **Metodo** |  **Cancellazione dati richiesta?** |    **Affinità**    |   **Blocco** | **Informazioni dettagliate**|
+| **Metodo** |    **Cancellazione dati richiesta?** |    **Affinità**    |    **Blocco** | **Informazioni dettagliate**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|    Sì |   No | Maggiori informazioni saranno disponibili a breve|
-|**[DEM](#dem)**|   No |No |No  |[Altre informazioni](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[BYOD](#byod)** | No|    Sì |    No | Maggiori informazioni saranno disponibili a breve|
+|**[DEM](#dem)**|    No |No |No    |[Altre informazioni](enroll-ios-devices-using-device-enrollment-program.md)|
 
 
 ## <a name="byod"></a>BYOD
-Gli utenti BYOD (Bring Your Own Device) installano l'app Portale aziendale e registrano il dispositivo di loro proprietà. Ciò consente agli utenti di connettersi alla rete aziendale e creare un join al domino o a Azure Active Directory. Per la maggior parte delle piattaforme, è necessario abilitare la registrazione di BYOD per molti scenari di COD (Corporate-Owned Devices, Dispositivi di proprietà dell'azienda).
+Gli utenti BYOD (Bring Your Own Device) installano l'app Portale aziendale e registrano il dispositivo di loro proprietà. Ciò consente agli utenti di connettersi alla rete aziendale e creare un join al domino o a Azure Active Directory. Per la maggior parte delle piattaforme, è necessario abilitare la registrazione di BYOD per molti scenari di COD (Corporate-Owned Devices, Dispositivi di proprietà dell'azienda). È possibile bloccare la registrazione di dispositivi iOS e Android di proprietà personale. Per istruzioni, vedere [Impostare le restrizioni sul tipo di dispositivi](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
 
 ## <a name="corporate-owned-devices"></a>Dispositivi di proprietà dell'azienda
 È possibile gestire i dispositivi di proprietà dell'azienda (COD) tramite il portale di Azure. I dispositivi iOS possono essere registrati direttamente tramite gli strumenti offerti da Apple. Tutti i tipi di dispositivo possono essere registrati da un amministratore o da un responsabile usando il manager di registrazione dispositivi. È anche possibile identificare e contrassegnare come dispositivo di proprietà dell'azienda i dispositivi con numero IMEI e abilitare questo tipo di registrazione.
@@ -80,8 +81,8 @@ Il Manager di registrazione dispositivi è un account utente speciale usato per 
 ### <a name="dep"></a>DEP
 La gestione del programma di registrazione dispositivi (DEP, Device Enrollment Program) di Apple consente di creare e distribuire i criteri in modalità wireless ai dispositivi acquistati e gestiti tramite DEP. Il dispositivo viene registrato quando l'utente accende il dispositivo per la prima volta ed esegue l'Assistente configurazione di iOS. Questo metodo supporta la modalità **supervisione iOS**, che a sua volta abilita:
 
-  - Registrazione bloccata
-  - Modalità tutto schermo e altre configurazioni avanzate e limitazioni
+  -    Registrazione bloccata
+  -    Modalità tutto schermo e altre configurazioni avanzate e limitazioni
 
 Per altre informazioni sulla registrazione di iOS, vedere:
 
@@ -91,8 +92,8 @@ Per altre informazioni sulla registrazione di iOS, vedere:
 
 ### <a name="usb-sa"></a>USB-SA
 Gli amministratori IT usano Apple Configurator, via USB, per preparare manualmente ogni dispositivo di proprietà dell'azienda per la registrazione con Assistente configurazione. L'amministratore IT crea un profilo di registrazione e lo esporta in Apple Configurator. Quando gli utenti ricevono i dispositivi, devono eseguire Assistente configurazione per registrarli. Questo metodo supporta la modalità **supervisione iOS**, che a sua volta abilita:
-  - Registrazione bloccata
-  - Modalità tutto schermo e altre configurazioni avanzate e limitazioni
+  -    Registrazione bloccata
+  -    Modalità tutto schermo e altre configurazioni avanzate e limitazioni
 
 Per altre informazioni sulla registrazione di iOS, vedere:
 
@@ -127,9 +128,4 @@ Vedere [Dispositivi e browser supportati per Intune](https://docs.microsoft.com/
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Pulizia dei dispositivi mobili dopo la scadenza del certificato MDM
 
 Il certificato MDM viene rinnovato automaticamente quando i dispositivi mobili comunicano con il servizio Intune. Se si verifica la cancellazione dei dispositivi mobili (non PC) o se questi non riescono a comunicare con il servizio di Intune per un determinato periodo di tempo, il certificato MDM non viene rinnovato. Il dispositivo viene rimosso dal portale di Azure 180 giorni dopo la scadenza del certificato MDM.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

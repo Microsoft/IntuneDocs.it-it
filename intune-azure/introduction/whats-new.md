@@ -1,11 +1,11 @@
 ---
 title: "Novità dell&quot;anteprima di Microsoft Intune | Anteprima di Intune in Azure | Documentazione Microsoft"
-description: "Anteprima di Intune in Azure: novità dell&quot;anteprima di Intune di Azure"
+description: "Novità dell&quot;anteprima di Intune in Azure"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,28 +14,40 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e405363f9d0a89b1589b01d18ee8d2861b07ec60
-ms.openlocfilehash: 70007f5501fba37964a0a54807c0e0f565510a74
-
+ms.sourcegitcommit: 9852fdb9d1bfeede4931f0ead2fa0898dfcacb0b
+ms.openlocfilehash: a05c7464b3f2fbca467d44218904671529320dda
+ms.lasthandoff: 02/15/2017
 
 ---
 
 # <a name="whats-new-in-the-microsoft-intune-preview"></a>Novità dell'anteprima di Microsoft Intune
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
-
 
 Con il progresso dell'anteprima pubblica e l'aggiunta di altre funzionalità, verrà inviata notifica qui.
 
-<!--## February 2017-->
+## <a name="february-2017"></a>Febbraio 2017
 
-<!--### Custom app categories <!--748805
-You can now create, edit, and assign categories for apps you add to Intune. Currently, categories can only be specified in English.
-See [How to add an app to Intune](/intune-azure/manage-apps/add-apps).-->
+### <a name="ability-to-restrict-mobile-device-enrollment---747600-795782--"></a>Possibilità di limitare la registrazione di dispositivi mobili <!--747600, 795782-->
+Intune aggiunge nuove limitazioni di registrazione che consentono di controllare quali piattaforme per dispositivi mobili sono autorizzate alla registrazione. Intune separa le piattaforme per dispositivi mobili iOS, macOS, Android, Windows e Windows Mobile.
 
-<!--### Display device categories <!--814654
-You can now view the device category as a column in the device list. You can also edit the category from the properties section of the device properties blade.-->
+* La limitazione della registrazione di dispositivi mobili non limita la registrazione di client PC.  
+* Solo per iOS e Android è disponibile un'altra opzione che consente di bloccare la registrazione dei dispositivi personali.
+
+Intune contrassegna tutti i nuovi dispositivi come personali, a meno che l'amministratore IT non esegua un'operazione per contrassegnarli come aziendali, come spiegato in [questo articolo](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+
+### <a name="view-all-actions-on-managed-devices---677150--"></a>Visualizzare tutte le azioni nei dispositivi gestiti <!--677150-->
+Il nuovo report __Azioni del dispositivo__ mostra gli utenti che hanno eseguito azioni remote come il ripristino delle impostazioni predefinite nei dispositivi e lo stato dell'azione. Vedere [Informazioni sulla gestione dei dispositivi in Microsoft Intune](https://docs.microsoft.com/intune-azure/manage-devices/what-is).
+
+### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>I dispositivi non gestiti possono accedere alle app assegnate <!--664691-->
+Nell'ambito delle modifiche di progettazione nel sito Web del portale aziendale, gli utenti iOS e Android potranno installare le app assegnate come "disponibili senza registrazione" nei dispositivi non gestiti. Usando le credenziali di Intune, gli utenti potranno accedere al sito Web del portale aziendale e visualizzare l'elenco delle app assegnate. È possibile eseguire il download di pacchetti di app "disponibili senza registrazione" dal sito Web del portale aziendale. Le app che richiedono la registrazione per poter essere installate non sono interessate da questa modifica poiché agli utenti viene richiesto di registrare il dispositivo per installare le app.
+
+### <a name="custom-app-categories---748805--"></a>Categorie di app personalizzate <!--748805-->
+È ora possibile creare, modificare e assegnare categorie per le app aggiunte a Intune. Attualmente, le categorie possono essere specificate solo in inglese.
+Vedere [How to add an app to Intune](/intune-azure/manage-apps/add-apps) (Come aggiungere un'app in Intune).
+
+### <a name="display-device-categories---814654--"></a>Visualizzare le categorie di dispositivi <!--814654-->
+È ora possibile visualizzare la categoria dei dispositivi come colonna dell'elenco dei dispositivi. È inoltre possibile modificare la categoria nella sezione delle proprietà del pannello delle proprietà del dispositivo. Vedere [How to add an app to Intune](/intune-azure/manage-apps/add-apps) (Come aggiungere un'app in Intune). 
 
 ## <a name="january-2017"></a>Gennaio 2017
 
@@ -83,9 +95,4 @@ Nel portale di Azure non sarà possibile impostare un criterio di profilo predef
 
 #### <a name="how-to-get-ready-for-this-change"></a>Come prepararsi a questo cambiamento
 Forniamo questa informazione in anticipo in modo tale che, se l'utente ne è interessato, può comunicare il cambiamento ai propri amministratori del supporto. Questa modifica coinciderà con la migrazione al portale di Azure, prevista per la prima metà del 2017.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

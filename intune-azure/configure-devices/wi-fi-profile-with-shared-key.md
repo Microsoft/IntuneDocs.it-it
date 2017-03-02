@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,36 +14,37 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: b46d445ce1da103308559939a5bfd8e5e38d46d3
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 009fa0f9ab097d57389f96d2d86a88b0811fef4e
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="use-an-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key-in-intune-azure-preview"></a>Usare un profilo di dispositivo personalizzato di Intune per creare un profilo Wi-Fi con una chiave precondivisa nell'anteprima di Intune in Azure
+# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Usare un profilo di dispositivo personalizzato di Microsoft Intune per la creazione di un profilo Wi-Fi con una chiave precondivisa
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Di seguito viene illustrato come usare i **profili di dispositivo personalizzati** di Intune per creare un profilo Wi-Fi con una chiave precondivisa. Questo argomento include anche un esempio di come creare un profilo Wi-Fi basato su EAP.
 
 > [!NOTE]
--   Può risultare più semplice copiare il codice da un computer che si connette alla rete, come descritto di seguito.
+-    Può risultare più semplice copiare il codice da un computer che si connette alla rete, come descritto di seguito.
 - Per Android, è possibile scegliere di usare lo script [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornito da Johnathon Biersack.
--   È possibile aggiungere più reti e chiavi aggiungendo altre impostazioni URI OMA.
+-    È possibile aggiungere più reti e chiavi aggiungendo altre impostazioni URI OMA.
 -  Per iOS, usare Apple Configurator in una stazione Mac per impostare il profilo. In alternativa, usare lo script [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornito da Johnathon Biersack.
 
 
-1.  Per creare un profilo Wi-Fi con una chiave precondivisa per Android o Windows o un profilo Wi-Fi basato su EAP, quando si crea un profilo di dispositivo scegliere **Personalizzato** per la piattaforma del dispositivo anziché un profilo Wi-Fi.
+1.    Per creare un profilo Wi-Fi con una chiave precondivisa per Android o Windows o un profilo Wi-Fi basato su EAP, quando si crea un profilo di dispositivo scegliere **Personalizzato** per la piattaforma del dispositivo anziché un profilo Wi-Fi.
 
-2.  Specificare un nome e una descrizione
-3.  Aggiungere una nuova impostazione URI OMA:
+2.    Specificare un nome e una descrizione
+3.    Aggiungere una nuova impostazione URI OMA:
 
-   a.   Immettere un nome per questa impostazione di rete Wi-Fi.
+   a.    Immettere un nome per questa impostazione di rete Wi-Fi.
 
-   b.   Immettere una descrizione dell'impostazione URI OMA o lasciare il campo vuoto.
+   b.    Immettere una descrizione dell'impostazione URI OMA o lasciare il campo vuoto.
 
-   c.   **Tipo di dati**: impostare su **Stringa**.
+   c.    **Tipo di dati**: impostare su **Stringa**.
 
-   d.   **OMA-URI**:
+   d.    **OMA-URI**:
 
     - **Per Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **err Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -204,9 +205,4 @@ Di seguito è riportato un esempio di codice XML per un profilo Wi-Fi basato su 
     È consigliabile usare un computer che non si è connesso a molte reti wireless, in quanto sarà necessario eseguire una ricerca in ogni profilo per trovare quella più adatta.
 3.     Cercare nei file XML per individuare quello con il nome corretto.
 4.     Dopo aver individuato il file XML corretto, copiare e incollare il codice XML nel campo Dati della pagina delle impostazioni URI OMA.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

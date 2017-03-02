@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/06/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,14 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 040c4e18d87110ab7380a64540d08127574a7c46
-ms.openlocfilehash: 5a967cc1be387f83f95591186f786db61d3debcd
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 5ed437eca48375def0e4da9715693325845f53a9
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-is-device-management"></a>Che cos'è la gestione dei dispositivi? 
+# <a name="what-is-microsoft-intune-device-management"></a>Informazioni sulla gestione dei dispositivi in Microsoft Intune 
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -53,9 +54,4 @@ A questo punto, scegliere una delle opzioni seguenti:
     ![Nodo applicazioni rilevate](./media/detected-applications.png)
 - **Monitoraggio**: scegliere **Azioni del dispositivo** per visualizzare un elenco delle azioni del dispositivo che sono state eseguite su dispositivi gestiti e lo stato corrente di tali azioni.
 ![Monitorare le azione del dispositivo](./media/monitor-device-actions.png)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

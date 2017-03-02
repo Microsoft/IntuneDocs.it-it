@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 33bc87d16834cb2950cc7c66ad4887dddb12e811
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d3be47257556e8bfa331cebf68baa43524690d1a
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-is-app-management"></a>Che cos'è la gestione delle app?
+# <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -97,9 +98,4 @@ Per informazioni dettagliate, vedere [Eseguire il monitoraggio delle app](monito
     - [Applicazioni acquistate con Volume Purchase Program da Windows Store per le aziende](wsfb-apps.md)
 - **Company Portal Branding** (Personalizzazione del portale aziendale): consente di personalizzare il portale aziendale con il marchio della società. 
     - [Company portal configuration](company-portal-app.md) (Configurazione del Portale aziendale)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

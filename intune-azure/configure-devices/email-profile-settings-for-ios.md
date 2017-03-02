@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f16c9dfb41cb2cfe07ce473a131dac767dee9c74
-ms.openlocfilehash: 255a5e8c8b430e15aba989e1ce805f7d627f0e0c
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 186630903a606842406ff1d76115c1fa7d1c962e
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="email-profile-settings-for-ios-devices-in-intune-azure-preview"></a>Impostazioni relative al profilo di posta elettronica per dispositivi iOS nell'anteprima di Intune Azure
+# <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Impostazioni dei profili di posta elettronica per i dispositivi iOS in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -39,9 +40,4 @@ ms.openlocfilehash: 255a5e8c8b430e15aba989e1ce805f7d627f0e0c
 - **Consentire lo spostamento dei messaggi ad altri account di posta elettronica** - Consente agli utenti di spostare i messaggi di posta elettronica tra diversi account configurati nel dispositivo.
 - **Consenti di inviare i messaggi di posta elettronica dalle applicazioni di terze parti** - Consente all'utente di selezionare questo profilo come account predefinito per l'invio di posta elettronica e consente ad applicazioni di terze parti di aprire la posta elettronica nella relativa app nativa, ad esempio per allegare file ai messaggi.
 - **Sincronizza gli indirizzi di posta elettronica utilizzati di recente** - Questa funzione consente agli utenti di sincronizzare l'elenco di indirizzi di posta elettronica utilizzati di recente sul dispositivo con il server.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

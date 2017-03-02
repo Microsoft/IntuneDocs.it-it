@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: 31a7779537062a63fac1fb512a7cf4b9033368f7
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 21ed25c1c0afd2c3fa45c15d4aa40d9c8d57b35a
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-windows-81-devices-in-intune-azure-preview"></a>Impostazioni VPN per dispositivi Windows 8.1 nell'anteprima di Intune in Azure
+# <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Impostazioni VPN per i dispositivi Windows 8.1 in Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -93,9 +94,4 @@ Per altre informazioni su come scrivere comandi XML personalizzati, fare riferim
     - **Indirizzo**: immettere l'indirizzo del server proxy (ad esempio un indirizzo IP).
     - **Numero di porta**: immettere il numero di porta associato al server proxy.
 - **Ignora proxy per indirizzi locali**: se il server VPN richiede un server proxy per la connessione, selezionare questa opzione se non si vuole usare il server proxy per gli indirizzi locali specificati. Per altre informazioni, vedere la documentazione di Windows Server.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

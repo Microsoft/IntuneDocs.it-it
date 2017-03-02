@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a08274fd4b2d3105b28f46a6d35257b3664f7510
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -32,7 +33,7 @@ Usare le informazioni seguenti per scegliere il metodo di registrazione dei disp
 
 ## <a name="user-owned-ios-devices-byod"></a>Dispositivi iOS di proprietà dell'utente (BYOD)
 
-Se gli utenti desiderano registrare i dispositivi personali BYOD (Bring Your Own Device), l'unico metodo di registrazione disponibile è il download dell'app Portale aziendale per iOS dall'App Store, all'interno della quale seguire le istruzioni per la registrazione. Una volta eseguita la registrazione, gli utenti possono connettersi alla rete aziendale, aggiungersi al dominio o ad Azure Active Directory e ottenere l'accesso alle risorse aziendali.
+Se gli utenti desiderano registrare i dispositivi personali BYOD (Bring Your Own Device), l'unico metodo di registrazione disponibile è il download dell'app Portale aziendale per iOS dall'App Store, all'interno della quale seguire le istruzioni per la registrazione. Una volta eseguita la registrazione, gli utenti possono connettersi alla rete aziendale, aggiungersi al dominio o ad Azure Active Directory e ottenere l'accesso alle risorse aziendali. È possibile bloccare la registrazione di dispositivi iOS di proprietà personale. Per istruzioni, vedere [Impostare le restrizioni sul tipo di dispositivi](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -48,9 +49,4 @@ Il programma di registrazione dispositivi distribuisce un profilo di registrazio
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>Usare un manager di registrazione dispositivi (DEM)
 Il manager di registrazione dispositivi è un tipo di account utente che consente di registrare e gestire fino a 1.000 dispositivi. Gli utenti esistenti vengono aggiunti all'account del manager di registrazione dispositivi per rendere disponibili tali funzionalità. Ogni dispositivo registrato dall'utente DEM usa una singola licenza Intune. Per altre informazioni, vedere [Enroll devices using device enrollment manager](enroll-devices-using-device-enrollment-manager.md) (Registrare dispositivi con il manager di registrazione dispositivi).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

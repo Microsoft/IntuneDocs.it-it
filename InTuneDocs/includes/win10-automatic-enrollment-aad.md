@@ -19,11 +19,11 @@ La registrazione automatica consente agli utenti di registrare dispositivi e PC 
 
 4. Selezionare **Configura** per avviare la configurazione della registrazione MDM automatica con Microsoft Intune.
 
-5. Specificare gli URL per Intune:
+5. Usare i valori predefiniti per gli URL seguenti:
 
-  - **URL di registrazione MDM**: usare il valore predefinito.
-  - **URL delle condizioni di utilizzo MDM**: usare il valore predefinito. Questo URL consente di visualizzare le condizioni di utilizzo per gli utenti durante la registrazione dei dispositivi.
-  - **URL di conformità MDM**: usare il valore predefinito. Se viene rilevato un dispositivo non conforme, con questo URL viene visualizzato un messaggio di **accesso negato**. L'URL punta a una pagina che consente agli utenti di comprendere perché il dispositivo non è conforme ai criteri e come è possibile ristabilirne la conformità.
+  - **Registrazione MDM**
+  - **Condizioni per l'utilizzo di MDM** 
+  - **Conformità MDM**
 
 6.  Specificare i dispositivi degli utenti che devono essere gestiti da Microsoft Intune. I dispositivi utente Windows 10 vengono registrati automaticamente per essere gestiti con Microsoft Intune.
 
@@ -32,8 +32,3 @@ La registrazione automatica consente agli utenti di registrare dispositivi e PC 
   - **Nessuno**
 
 7. Scegliere **Salva**.
-
-
-<!--HONumber=Feb17_HO2-->
-
-
