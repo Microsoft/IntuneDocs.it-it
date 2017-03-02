@@ -91,7 +91,7 @@ Disabilitare la parte di Intune della licenza EMS per un utente a cui è già st
 
 Verificare con:
 
-    (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com" .Licenses.ServiceStatus
+    (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
