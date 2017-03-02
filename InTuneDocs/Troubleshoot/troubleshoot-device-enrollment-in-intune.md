@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/24/17
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
 ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
+ms.lasthandoff: 01/25/2017
 
 
 ---
@@ -261,7 +262,7 @@ Se il certificato del server è installato correttamente, nei risultati vengono 
 
 **Risoluzione:** comunicare le risoluzioni seguenti agli utenti finali per consentire loro di ripristinare l'accesso alle risorse aziendali.
 
-Quando gli utenti avviano l'app Portale aziendale iOS, l'app può indicare se il dispositivo ha perso il collegamento con Intune. Se viene rilevata la mancanza di collegamento, l'app tenta automaticamente di eseguire la sincronizzazione con Intune per ristabilire il collegamento e agli utenti viene visualizzata la notifica inline **Tentativo di sincronizzazione…** . 
+Quando gli utenti avviano l'app Portale aziendale iOS, l'app può indicare se il dispositivo ha perso il collegamento con Intune. Se viene rilevata la mancanza di collegamento, l'app tenta automaticamente di eseguire la sincronizzazione con Intune per ristabilire il collegamento e agli utenti viene visualizzata la notifica inline **Tentativo di sincronizzazione…** .
 
   ![Notifica Tentativo di sincronizzazione](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -269,11 +270,11 @@ Se la sincronizzazione ha esito positivo, viene visualizzata la notifica inline 
 
   ![Notifica La sincronizzazione è riuscita](./media/ios_cp_app_sync_successful_notification.png)
 
-Se la sincronizzazione non viene eseguita, viene visualizzata la notifica inline **Non è possibile eseguire la sincronizzazione** nell'app Portale aziendale iOS. 
+Se la sincronizzazione non viene eseguita, viene visualizzata la notifica inline **Non è possibile eseguire la sincronizzazione** nell'app Portale aziendale iOS.
 
   ![Notifica Non è possibile eseguire la sincronizzazione](./media/ios_cp_app_unable_to_sync_notification.png)
 
-Per risolvere il problema, è necessario che gli utenti selezionino il pulsante **Configura** a destra della notifica **Non è possibile eseguire la sincronizzazione**. Il pulsante Configura visualizza la schermata Configurazione dell'accesso aziendale con istruzioni per la registrazione del dispositivo. 
+Per risolvere il problema, è necessario che gli utenti selezionino il pulsante **Configura** a destra della notifica **Non è possibile eseguire la sincronizzazione**. Il pulsante Configura visualizza la schermata Configurazione dell'accesso aziendale con istruzioni per la registrazione del dispositivo.
 
   ![Schermata di configurazione dell'accesso aziendale](./media/ios_cp_app_company_access_setup.png)
 
@@ -386,9 +387,4 @@ Nella sezione relativa agli [errori che si verificano durante la registrazione d
 
 ### <a name="next-steps"></a>Passaggi successivi
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
