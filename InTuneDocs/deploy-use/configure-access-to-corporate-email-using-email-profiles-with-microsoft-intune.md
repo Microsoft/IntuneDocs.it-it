@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
+ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
+ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
 
 
 ---
@@ -23,8 +24,6 @@ ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Nel sistema operativo di molte piattaforme per dispositivi mobili è incluso un client di posta elettronica nativo. Questo argomento descrive come impostare alcuni di questi client usando profili di posta elettronica.
 
@@ -35,11 +34,11 @@ Per una maggiore prevenzione della perdita dei dati, scegliere [Accesso condizio
 Gli amministratori IT o gli utenti possono anche scegliere di installare client di posta elettronica alternativi, ad esempio Microsoft Outlook per Android o iOS. È possibile che questi client di posta elettronica non supportino i profili di posta elettronica e non possano essere configurati mediante profili di posta elettronica di Intune.  
 
 È possibile usare i profili di posta elettronica per configurare il client di posta elettronica nativo nei tipi di dispositivi seguenti:
--   Windows Phone 8.1 e versioni successive
--   Windows 10 (desktop), Windows 10 Mobile e versioni successive
--   iOS 8.0 e versioni successive
--   Samsung KNOX Standard 4.0 e versioni successive
--   Android for Work
+-    Windows Phone 8.1 e versioni successive
+-    Windows 10 (desktop), Windows 10 Mobile e versioni successive
+-    iOS 8.0 e versioni successive
+-    Samsung KNOX Standard&4;.0 e versioni successive
+-    Android for Work
 
 >[!NOTE]
 >Intune offre due profili di posta elettronica Android for Work, uno per Gmail e uno per Nine Work. Queste app sono disponibili in Google Play Store e possono connettersi a Exchange. Per abilitare la connettività della posta elettronica, distribuire una di queste app nei dispositivi dell'utente. In seguito creare e distribuire il profilo corrispondente.
@@ -90,7 +89,7 @@ Poiché la password non è contenuta nel profilo di posta elettronica, l'utente 
 
     -   **Profilo di posta elettronica (Android for Work - Gmail)**
 
-    -   **Profilo di posta elettronica (Android for Work - Nine Work)**
+    -    **Profilo di posta elettronica (Android for Work - Nine Work)**
 
     È possibile solo creare e distribuire criteri personalizzati dei profili di posta elettronica. Le impostazioni consigliate non sono disponibili.
 
@@ -136,10 +135,10 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 
 > [!NOTE]
 > - Per Android for Work, assicurarsi di distribuire anche le app di Gmail o Nine Work, oltre al profilo di posta elettronica appropriato.
-> - Per rimuovere un profilo di posta elettronica da un dispositivo, modificare la distribuzione e rimuovere tutti i gruppi di cui il dispositivo è membro.
+> - Per rimuovere un profilo di posta elettronica da un dispositivo, modificare la distribuzione e rimuovere tutti i gruppi di cui il dispositivo è membro. Si noti che non è possibile rimuovere un profilo di posta elettronica in questo modo se questo è l'unico profilo presente su un dispositivo.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

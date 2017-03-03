@@ -1,11 +1,11 @@
 ---
-title: La password non soddisfa i requisiti dell&quot;amministratore IT | Documentazione Microsoft
+title: La password non soddisfa i requisiti dell&quot;amministratore IT | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/20/2016
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,16 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 14ac49d73648244f71eff90b71272b60a07cd37e
+ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
+ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
+ms.lasthandoff: 02/10/2017
 
 
 ---
 
-# <a name="password-does-not-meet-it-administrator-requirements"></a>La password non soddisfa i requisiti dell'amministratore IT
+# <a name="your-password-does-not-meet-your-it-admins-requirements"></a>La password non soddisfa i requisiti dell'amministratore IT
 
 La password usata per accedere alle risorse aziendali o dell'istituto di istruzione non soddisfa uno o più requisiti impostati dall'amministratore IT. Per risolvere il problema, seguire le istruzioni visualizzate nel dispositivo. Di seguito sono elencate le descrizioni dei problemi.
 
@@ -45,12 +47,7 @@ Descrizioni dei problemi relativi al PIN o alla password:
 
 - **La password è stata usata troppo di recente**. L'amministratore IT non consente l'uso di password usate in passato. Scegliere una password non usata in precedenza.
 
-- **La password non è abbastanza complessa da soddisfare i requisiti**. L'amministratore IT richiede di usare una password con caratteri più complessi. Provare a usare caratteri come numeri, lettere maiuscole e simboli quali $, % e #.
+- **La password non è abbastanza complessa da soddisfare i requisiti**. L'amministratore IT richiede di usare una password con caratteri più complessi. Provare a usare caratteri come numeri, lettere maiuscole e simboli quali $, % e #. Questo requisito può essere applicato anche ad altri account nel dispositivo, pertanto assicurarsi di controllare gli altri account aziendali per assicurarsi che la password soddisfi i requisiti impostati dall'amministratore IT per il dispositivo.
 
 Se si ha difficoltà a creare una password conforme ai requisiti, rivolgersi all'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

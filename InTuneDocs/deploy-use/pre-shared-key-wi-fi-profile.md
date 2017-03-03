@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: bb706f122753219d8034bcd25fbe2e25b7142b30
 ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
@@ -27,24 +28,24 @@ ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
 Di seguito viene illustrato come usare la **configurazione personalizzata** di Intune per creare un profilo Wi-Fi con una chiave precondivisa. Questo argomento include anche un esempio di come creare un profilo Wi-Fi basato su EAP.
 
 > [!NOTE]
--   Può risultare più semplice copiare il codice da un computer che si connette alla rete, come descritto di seguito.
+-    Può risultare più semplice copiare il codice da un computer che si connette alla rete, come descritto di seguito.
 - Per Android, è possibile scegliere di usare lo script [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornito da Johnathon Biersack.
--   È possibile aggiungere più reti e chiavi aggiungendo altre impostazioni URI OMA.
+-    È possibile aggiungere più reti e chiavi aggiungendo altre impostazioni URI OMA.
 -  Per iOS, usare Apple Configurator in una stazione Mac per impostare il profilo. In alternativa, usare lo script [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornito da Johnathon Biersack.
 
 
-1.  Per creare un profilo Wi-Fi con una chiave precondivisa per Android o Windows o un profilo Wi-Fi basato su EAP, quando si crea un criterio scegliere **Configurazione personalizzata** per tale piattaforma del dispositivo anziché un profilo Wi-Fi.
+1.    Per creare un profilo Wi-Fi con una chiave precondivisa per Android o Windows o un profilo Wi-Fi basato su EAP, quando si crea un criterio scegliere **Configurazione personalizzata** per tale piattaforma del dispositivo anziché un profilo Wi-Fi.
 
-2.  Specificare un nome e una descrizione
-3.  Aggiungere una nuova impostazione URI OMA:
+2.    Specificare un nome e una descrizione
+3.    Aggiungere una nuova impostazione URI OMA:
 
-   a.   Immettere un nome per questa impostazione di rete Wi-Fi.
+   a.    Immettere un nome per questa impostazione di rete Wi-Fi.
 
-   b.   Immettere una descrizione dell'impostazione URI OMA o lasciare il campo vuoto.
+   b.    Immettere una descrizione dell'impostazione URI OMA o lasciare il campo vuoto.
 
-   c.   **Tipo di dati**: impostare su "String(XML)"
+   c.    **Tipo di dati**: impostare su "String(XML)"
 
-   d.   **OMA-URI**:
+   d.    **OMA-URI**:
 
     - **Per Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **err Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml

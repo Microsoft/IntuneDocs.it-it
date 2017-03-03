@@ -1,11 +1,11 @@
 ---
-title: Come contattare il supporto telefonico assistito | Microsoft Intune
-description: Numeri di telefono del supporto di Intune
-keywords: 
+title: Contattare il supporto telefonico assistito | Microsoft Docs
+description: Numeri di telefono per il supporto di Microsoft Intune.
+keywords: orario di ufficio
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3a081109cd499d3bdda75cb6c8a4dab9d9d28fab
-ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: d5460d5e68fcc5346c2e0b745ea694c6875b5480
 
 
 ---
 
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Come contattare il supporto telefonico assistito per Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="phone-numbers-and-business-hours"></a>Numeri di telefono e orario di ufficio
 
@@ -118,6 +121,6 @@ ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

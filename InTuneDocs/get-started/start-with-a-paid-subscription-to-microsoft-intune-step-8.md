@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,20 @@ ms.technology:
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 654c5b65a9fde6742f3682b1fd5ba6c056d0d45b
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
+ms.lasthandoff: 02/15/2017
 
 
 ---
 
-# <a name="enroll-mobile-devices-and-install-an-app"></a>Registrare dispositivi mobili e installare un'app
+# <a name="enable-enrollment-for-mobile-devices"></a>Abilitare la registrazione per i dispositivi mobili
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Questo argomento descrive come un amministratore di Intune può abilitare la registrazione dei dispositivi mobili. Per informazioni sull'uso di Intune nel telefono, vedere [Uso di dispositivi gestiti per lo svolgimento del lavoro](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions). 
 
 Per configurare la gestione dei dispositivi mobili con Intune, è prima necessario impostare l'*autorità di gestione dei dispositivi mobili*, che identifica il servizio utilizzabile per gestire i dispositivi associati all'account. In questo argomento si presuppone l'uso del servizio Intune invece di System Center Configuration Manager. Dopo aver configurato l'autorità MDM, è possibile abilitare la gestione per le piattaforme dei dispositivi e registrare i dispositivi con l'app Portale aziendale.
 
@@ -46,7 +50,7 @@ La registrazione deve essere abilitata per i dispositivi iOS, Mac e Android for 
 
 Abilitare la registrazione dei dispositivi per la piattaforma del dispositivo da gestire. I requisiti variano a seconda della piattaforma:
 
--  [iOS e macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS e macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -  [PC Windows](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Windows 10 Mobile e Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -66,9 +70,4 @@ A questo punto, Ultimo passaggio della *Guida introduttiva di Intune* completato
 >[!div class="step-by-step"]
 
 >[&larr; **Registrare i dispositivi**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**Attività successive alla configurazione** &rarr;](.\post-configuration-tasks.md)  
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -1,22 +1,25 @@
 ---
-title: Registrare il dispositivo iOS in Intune | Microsoft Intune
+title: Registrare il dispositivo iOS in Intune | Documentazione Microsoft
 description: Descrive come registrare un dispositivo iOS in Intune
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-ROBOTS: 
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
-ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: c7fa06ea443523c51a79c33af7e8094d7a7777c5
 
 
 ---
@@ -24,9 +27,12 @@ ms.openlocfilehash: 4daf13d683ada52b098ef24363d2d409dc501c06
 
 # <a name="enroll-your-ios-device-in-intune"></a>Registrare il dispositivo iOS in Intune
 
-Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile registrare il dispositivo iOS per poter accedere a posta elettronica, file e altre risorse aziendali. La registrazione dei dispositivi consente al reparto IT di gestire e proteggere le risorse aziendali o dell'istituto di istruzione, offrendo al tempo stesso la possibilità di scegliere il dispositivo più adatto per svolgere il proprio lavoro. Per altre informazioni sulla registrazione , vedere [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune).
+Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile registrare il dispositivo iOS per poter accedere a posta elettronica, file e altre risorse aziendali. La registrazione dei dispositivi consente al reparto IT di gestire e proteggere le risorse aziendali o dell'istituto di istruzione, offrendo al tempo stesso la possibilità di scegliere il dispositivo più adatto per svolgere il proprio lavoro. Per altre informazioni sulla registrazione , vedere [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (Cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune)
 
-Se si sta registrando un dispositivo macOS, vedere [Registrare il dispositivo macOS in Intune](enroll-your-device-in-intune-macos.md).
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+> [!NOTE]
+> Se si sta in effetti tentando di registrare un dispositivo macOS, ad esempio un MacBook Pro o iMac, [usare invece queste istruzioni](enroll-your-device-in-intune-macos.md).
 
 **Prima di iniziare:**
 
@@ -53,7 +59,7 @@ Se si sta registrando un dispositivo macOS, vedere [Registrare il dispositivo ma
 
 5.  Nella schermata **Operazioni successive** leggere cosa accade durante la registrazione, quindi toccare **Registra**.
 
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
+     ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  Nella schermata **Installa profilo** toccare **Installa** e, se richiesto, immettere il passcode.
 
@@ -65,15 +71,15 @@ Se si sta registrando un dispositivo macOS, vedere [Registrare il dispositivo ma
 
 8.  Toccare **Installa** per indicare che il messaggio di avviso è stato letto.
 
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
+       ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
 
 9.  Toccare **Attendibilità**.
 
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
+       ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
 
 10.  Quando la schermata cambia a indicare che il profilo è stato installato, toccare **Fine**.
 
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
+     ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
     Viene visualizzato un messaggio che indica la registrazione in corso del dispositivo.
 
@@ -91,11 +97,10 @@ Se si sta registrando un dispositivo macOS, vedere [Registrare il dispositivo ma
 
 Il dispositivo è ora registrato in Intune e si riapre l'app Portale aziendale.
 
-
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

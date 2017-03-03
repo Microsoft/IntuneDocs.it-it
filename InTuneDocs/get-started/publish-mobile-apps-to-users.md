@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
@@ -32,9 +33,9 @@ Si vuole consentire agli utenti di accedere rapidamente a tutte le app di cui ha
 Se la risposta è sì, Microsoft Intune consente di pubblicare le app (Office Mobile, line-of-business interne o altre app per dispositivi mobili e desktop) in un unico portale comune: [il sito Web o l'app Portale aziendale di Intune](/intune/enduser/company-portal-frequently-asked-questions).
 
 ## <a name="how-do-i-do-it"></a>In che modo procedere?
-1.  [Registrare i dispositivi](/intune/deploy-use/enroll-devices-in-microsoft-intune) in Gestione dei dispositivi mobili di Intune.
-2.  [Aggiungere in Intune le app](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) che si vuole distribuire ai dispositivi registrati.
-3.  [Distribuire le app con Intune](/intune/deploy-use/deploy-apps) ai dispositivi registrati.
+1.    [Registrare i dispositivi](/intune/deploy-use/enroll-devices-in-microsoft-intune) in Gestione dei dispositivi mobili di Intune.
+2.    [Aggiungere in Intune le app](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) che si vuole distribuire ai dispositivi registrati.
+3.    [Distribuire le app con Intune](/intune/deploy-use/deploy-apps) ai dispositivi registrati.
 
 ### <a name="additional-information"></a>Informazioni aggiuntive:
 Se la pubblicazione di app di Office per dispositivi mobili viene eseguita con l'intenzione di sfruttare le funzionalità MAM di Intune per gestire la protezione dei dati per tali app, a ogni utente finale a cui sono assegnati criteri MAM dovrà essere [assegnata una licenza utente per Office 365](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).

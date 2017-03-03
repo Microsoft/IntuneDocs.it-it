@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
@@ -42,9 +43,9 @@ Questa Guida introduttiva è un'ottima risorsa se sono soddisfatti i prerequisit
 Questa guida consente di proteggere l'azienda dalla perdita di dati con l'imposizione di passcode e crittografia dei dati tramite criteri per le app per dispositivi mobili che i dipendenti usano per accedere ai dati sensibili, senza richiedere la registrazione completa in alcuna soluzione di gestione dei dispositivi. Microsoft Intune consente di impostare criteri di gestione delle applicazioni mobili (MAM, Mobile Application Management) per le app di Office per dispositivi mobili per [iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) e [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android). Questo approccio consente di proteggere i dati di Office 365 senza che gli utenti debbano registrare i propri dispositivi in una soluzione di gestione dei dati aziendali. Al tempo stesso, continua ad essere garantita un'eccezionale esperienza d'uso con le app di Office per dispositivi mobili.
 
 ## <a name="how-do-i-do-it"></a>In che modo procedere?
-1.  [Valutare le opzioni disponibili per proteggere i dati delle app](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.  [Prepararsi per la configurazione dei criteri di gestione delle app mobili](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.  [Creare e distribuire i criteri di gestione delle app mobili](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.    [Valutare le opzioni disponibili per proteggere i dati delle app](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.    [Prepararsi per la configurazione dei criteri di gestione delle app mobili](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.    [Creare e distribuire i criteri di gestione delle app mobili](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>Informazioni aggiuntive:
 - [Informarsi sull'esperienza dell'utente finale con app MAM con Microsoft Intune](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)

@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
@@ -34,8 +35,8 @@ Microsoft Intune è in grado di configurare automaticamente la posta elettronica
 Dopo aver configurato il profilo di posta elettronica, è possibile limitare facilmente l'accesso alla posta elettronica aziendale e ai servizi di Office 365 usando i criteri di accesso condizionale di Intune. Questi criteri consentono di assicurarsi che l'accesso alla posta elettronica aziendale e ai servizi di Office 365 sia limitato ai dispositivi conformi alle regole definite in Intune.
 
 ## <a name="how-do-i-do-it"></a>In che modo procedere?
-1.  [Configurare automaticamente i profili di posta elettronica degli utenti finali](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) nei dispositivi Windows, iOS e Android.
-2.  [Controllare l'accesso alla posta elettronica aziendale](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) usando criteri di accesso condizionale.
+1.    [Configurare automaticamente i profili di posta elettronica degli utenti finali](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) nei dispositivi Windows, iOS e Android.
+2.    [Controllare l'accesso alla posta elettronica aziendale](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) usando criteri di accesso condizionale.
 
 
 ### <a name="additional-information"></a>Informazioni aggiuntive:

@@ -2,10 +2,10 @@
 title: Risolvere i problemi di Endpoint Protection | Documentazione Microsoft
 description: Risolvere i problemi relativi all&quot;uso di Microsoft Intune Endpoint Protection.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
+ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
+ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 
 ---
@@ -24,10 +25,9 @@ ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Usare le informazioni di questa sezione per risolvere i problemi relativi all'uso di Endpoint Protection in Microsoft Intune.
+Usare le informazioni di questa sezione per risolvere i problemi relativi all'uso di Endpoint Protection in Microsoft Intune. È anche possibile esaminare le informazioni sulla [risoluzione dei problemi relativi a Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10).
 
 Se queste informazioni non consentono di risolvere il problema, vedere [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md) per trovare altri modi per ottenere assistenza.
-
 
 ### <a name="endpoint-protection-error-messages"></a>Messaggi di errore di Endpoint Protection
 In questa sezione vengono descritte le possibili cause e soluzioni per gli errori e gli avvisi riportati di seguito visualizzati nel riquadro **Stato Endpoint Protection** della [console di amministrazione di Intune](https://manage.microsoft.com).
@@ -52,6 +52,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

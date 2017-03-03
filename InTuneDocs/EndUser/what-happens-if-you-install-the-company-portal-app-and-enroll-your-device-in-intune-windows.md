@@ -1,11 +1,11 @@
 ---
-title: Che cosa avviene quando si installa l&quot;app Portale aziendale e si registra il dispositivo Windows in Intune? | Documentazione Microsoft
+title: Installazione dell&quot;app Portale aziendale per Windows | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae372c141ffd98d280715c454057284c4bd3d6e9
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -33,7 +35,7 @@ Mediante la registrazione del dispositivo Windows o Windows Phone in Intune è p
 
 -   Accedere alla rete aziendale e ai file della posta elettronica e di lavoro.
 
--   Ottenere app aziendali dal sito Web del portale aziendale. Per Windows 7 e Windows Vista è possibile ottenere app aziendali solo dal sito Web del portale aziendale.
+-   Ottenere app aziendali dal sito Web del portale aziendale. (__Nota__: per Windows 7 e Windows Vista è possibile ottenere app aziendali solo dal sito Web del portale aziendale.)
 
 -   Configurare automaticamente l'account di posta elettronica aziendale o dell'istituto di istruzione.
 
@@ -66,6 +68,7 @@ Quando si registra un dispositivo, vengono concesse all'amministratore IT le aut
 -  L'amministratore IT può installare app e aggiornamenti nel computer.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>Che cosa accade ogni otto ore dopo la registrazione del dispositivo?
+
 Ogni otto ore circa i dispositivi registrati eseguono le operazioni seguenti:
 
 -   Download degli aggiornamenti di criteri o app resi disponibili dall'amministratore IT.
@@ -75,9 +78,4 @@ Ogni otto ore circa i dispositivi registrati eseguono le operazioni seguenti:
 -   Invio degli aggiornamenti dell'inventario delle app aziendali.
 
 Per eventuali domande, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

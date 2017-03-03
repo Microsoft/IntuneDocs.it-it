@@ -13,8 +13,10 @@ ms.technology:
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
 ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
@@ -37,7 +39,7 @@ Dal sito Web del portale aziendale gli utenti possono eseguire queste attività:
 
 -   [Bloccare un dispositivo in modalità remota](remote-lock-your-device-cpwebsite.md)
 
--   [Sincronizzare il dispositivo manualmente per accelerare le installazioni di app lente](sync-your-device-manually-cpwebsite.md)
+-    [Sincronizzare il dispositivo manualmente per accelerare le installazioni di app lente](sync-your-device-manually-cpwebsite.md)
 
 -   Trovare le informazioni di contatto dell'amministratore IT, se configurate
 

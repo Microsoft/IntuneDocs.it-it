@@ -13,35 +13,36 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: 3e077bfa8a03526b9472b4e9fdd4a75da22c28c8
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Creare e distribuire i criteri di gestione delle app per dispositivi mobili con Microsoft Intune
+# <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Creare e distribuire i criteri di protezione delle app con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-I criteri MAM (Mobile app management, Gestione delle app mobili) possono essere adottati in applicazioni eseguite su dispositivi gestiti o non gestiti da Intune. Per una descrizione più dettagliata del funzionamento dei criteri MAM e degli scenari supportati dai criteri MAM di Intune, vedere [Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+Questo argomento descrive il processo di creazione di un criterio di protezione delle app nel **portale di Azure**. Il portale di Azure è la nuova console di amministrazione per la creazione di criteri di protezione delle app. È consigliabile usare questo portale per creare criteri di protezione delle app. Il portale di Azure supporta gli scenari MAM seguenti:
 
-In questo argomento viene descritto il processo di creazione di un criterio MAM nel **portale di Azure**. Il portale di Azure è la nuova console di amministrazione per la creazione di criteri MAM. È consigliabile usare questo portale per creare criteri MAM. Il portale di Azure supporta gli scenari MAM seguenti:
 - Dispositivi registrati in Intune.
 - Dispositivi gestiti da una soluzione MDM di terze parti.
 - Dispositivi non gestiti da nessuna soluzione MDM (BYOD).
 
 >[!IMPORTANT]
-Se si sta usando la **console di amministrazione di Intune** per gestire i dispositivi, tenere presente quanto segue:
+Di seguito sono riportate alcune considerazioni relative all'uso della **console di amministrazione di Intune** per gestire i dispositivi:
 
-> * È possibile creare un criterio MAM che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
-> * I criteri MAM creati nella console di amministrazione di Intune non possono essere importati nel portale di Azure.  Tali criteri devono essere ricreati nel portale di Azure.
+> * È possibile creare un criterio di protezione delle app che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+> * I criteri di protezione delle app creati nella console di amministrazione di Intune non possono essere importati nel portale di Azure.  Tali criteri devono essere ricreati nel portale di Azure.
 
-> * È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Il portale di Azure è la nuova console di amministrazione per la creazione dei criteri MAM.
+> * È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri di protezione delle app. Il portale di Azure è la nuova console di amministrazione per la creazione dei criteri di protezione delle app.
 
-> * Per distribuire app gestite, è necessario creare un criterio MAM nella console di amministrazione di Intune. In questo caso, può essere necessario creare criteri MAM sia nella console di amministrazione di Intune che nel portale di Azure: nella console di amministrazione di Intune per verificare la possibilità di distribuire app gestite e nel portale di Azure perché è la nuova console di amministrazione contenente tutte le impostazioni dei criteri MAM.
+> * Per distribuire app gestite, è necessario creare un criterio di protezione delle app nella console di amministrazione di Intune. In questo caso, può essere necessario creare criteri di protezione delle app sia nella console di amministrazione di Intune che nel portale di Azure: nella console di amministrazione di Intune per verificare la possibilità di distribuire app gestite e nel portale di Azure perché è la nuova console di amministrazione contenente tutte le impostazioni dei criteri di protezione delle app.
 
-> * Se si creano criteri MAM sia nella console di amministrazione di Intune che nel portale di Azure, alle app vengono applicati i criteri creati in quest'ultimo.
+> * Se si creano criteri di protezione delle app sia nella console di amministrazione di Intune che nel portale di Azure, alle app vengono applicati i criteri creati in quest'ultimo.
 
 Per visualizzare un elenco di impostazioni dei criteri supportate nelle piattaforme iOS e Android, selezionare una delle seguenti voci:
 
@@ -49,16 +50,24 @@ Per visualizzare un elenco di impostazioni dei criteri supportate nelle piattafo
 - [Criteri iOS](ios-mam-policy-settings.md)
 - [Criteri Android](android-mam-policy-settings.md)
 
-##  <a name="create-a-mam-policy"></a>Creare un criterio MAM
-Prima di creare un criterio MAM, vedere le informazioni su [prerequisiti e supporto](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md).
-1.  Scegliere **Gestione di applicazioni mobili di Intune &gt; Impostazioni** per aprire il pannello **Impostazioni**.
+- Per una descrizione più dettagliata del funzionamento dei criteri di protezione delle app e degli scenari supportati dai criteri di protezione delle app di Intune, vedere [Proteggere i dati delle app usando i criteri di gestione di applicazioni mobili con Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-    ![Schermata del pannello Gestione di applicazioni mobili di Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+##  <a name="create-an-app-protection-policy"></a>Creare un criterio di protezione delle app
+I criteri di protezione delle app vengono creati nel portale di Azure. Se si usa il portale di Azure per la prima volta, leggere [Portale di Azure per i criteri di protezione delle app di Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) per acquisire familiarità con il portale di Azure. Prima di creare un criterio di protezione delle app, vedere le informazioni su [prerequisiti e supporto](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md).
 
-    > [!TIP]
-    > Se si usa il portale di Azure per la prima volta, leggere [Portale di Azure per i criteri MAM di Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) per acquisire familiarità con il portale.
+Seguire questa procedura per creare criteri di protezione delle app:
 
-2.  Nel pannello **Impostazioni** scegliere **Criteri per le app**. Verrà visualizzato il pannello **Criteri per le app**, in cui sarà possibile creare nuovi criteri e modificare i criteri esistenti. Scegliere **Aggiungi criteri**.
+1. Passare al [portale di Azure](http://portal.azure.com) e immettere le proprie credenziali.
+
+2. Scegliere **Altri servizi** e digitare "Intune".
+
+3. Scegliere **Protezione app di Intune**.
+
+4. Scegliere **Gestione di applicazioni mobili di Intune &gt; Impostazioni** per aprire il pannello **Tutte le impostazioni**.
+
+    ![Schermata del pannello Gestione di applicazioni mobili di Intune](../media/AppManagement/AzurePortal_MAM_Mainblade-2.png)
+
+2.  Nel pannello **Tutte le impostazioni** scegliere **Criteri per le app**. Verrà visualizzato il pannello **Criteri per le app**, in cui sarà possibile creare nuovi criteri e modificare i criteri esistenti. Scegliere **Aggiungi criteri**.
 
     ![Schermata del pannello Criteri per le app con l'opzione Aggiungi criteri evidenziata ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -90,10 +99,10 @@ Prima di creare un criterio MAM, vedere le informazioni su [prerequisiti e suppo
 Dopo aver creato un criterio come descritto nella procedura precedente, non verrà distribuito a tutti gli utenti. Per distribuire un criterio, vedere la sezione seguente, "Distribuire un criterio agli utenti".
 
 > [!IMPORTANT]
-> Se si crea un criterio MAM per un'app con la console di amministrazione di Intune e un criterio MAM con il portale di Azure, il criterio creato nel portale di Azure ha la precedenza. Tuttavia, la creazione di report nella console di Intune o di Configuration Manager segnalerà le impostazioni dei criteri create dalla console di amministrazione di Intune. Ad esempio:
+> Se si crea un criterio di protezione delle app per un'app con la console di amministrazione di Intune e un criterio di protezione delle app con il portale di Azure, il criterio creato nel portale di Azure ha la precedenza. Tuttavia, la creazione di report nella console di Intune o di Configuration Manager segnalerà le impostazioni dei criteri create dalla console di amministrazione di Intune. Ad esempio:
 >
-> -   L'utente ha creato un criterio MAM nella console di amministrazione di Intune che blocca la copia da un'app.
-> -   L'utente ha creato un criterio MAM nella console di Azure che consente la copia da un'app.
+> -   L'utente ha creato un criterio di protezione delle app nella console di amministrazione di Intune che blocca la copia da un'app.
+> -   L'utente ha creato un criterio di protezione delle app nella console di Azure che consente la copia da un'app.
 > -   L'utente associa entrambi i criteri alla stessa app.
 > -   Viene data la precedenza al criterio creato dalla console di Azure e viene consentita la copia.
 > -   Tuttavia, lo stato e i report nella console di Intune indicheranno erroneamente che la copia è bloccata.
@@ -116,8 +125,8 @@ Solo gli utenti a cui sono state assegnate licenze di [!INCLUDE[wit_nextref](../
 > Se si usa Intune con Configuration Manager per gestire i dispositivi Android e iOS, il criterio viene applicato solo agli utenti inclusi direttamente nel gruppo selezionato. I membri dei gruppi figlio annidati all'interno del gruppo selezionato non sono interessati.
 
 Gli utenti finali possono scaricare le app dall'Apple Store o da Google Play. Per altre informazioni, vedere:
-* [Aspettative dalla gestione dell'app per Android con criteri MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Aspettative dalla gestione dell'app per iOS con criteri MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 ##  <a name="change-existing-policies"></a>Modificare i criteri esistenti
 È possibile modificare criteri esistenti e applicarli agli utenti di destinazione. Tuttavia, quando si modificano criteri esistenti, gli utenti che hanno già effettuato l'accesso alle app non vedranno le modifiche per un intervallo di tempo di 8 ore.
@@ -171,11 +180,6 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 [Monitorare la conformità e lo stato utente](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Vedere anche
-* [Aspettative dalla gestione dell'app per Android con criteri MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Aspettative dalla gestione dell'app per iOS con criteri MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+* [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

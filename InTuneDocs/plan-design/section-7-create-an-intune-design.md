@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
+ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
+ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 
 ---
@@ -95,7 +96,7 @@ Durante la registrazione dell'ambiente MDM corrente, assicurarsi di prendere not
 | **Area di soluzioni** | **Ambiente corrente** | **Commenti** |
 |:---:|:---:|:---:|
 | **Identità** | Azure AD, Azure AD Connect, non federato, senza autenticazione a più fattori | Progetto per abilitare l'autenticazione a più fattori entro la fine dell'anno |                 
-| **Ambiente di posta elettronica** | Exchange locale, Exchange Online | Migrazione in corso da Exchange locale a Exchange Online. È stata eseguita la migrazione del 75% delle cassette postali. La migrazione dell'ultimo 25% verrà eseguita prima dell'avvio del progetto pilota di Intune. |                
+| **Ambiente di posta elettronica** | Exchange locale, Exchange Online | Migrazione in corso da Exchange locale a Exchange Online. È stata eseguita la migrazione del&75;% delle cassette postali. La migrazione dell'ultimo 25% verrà eseguita prima dell'avvio del progetto pilota di Intune. |                
 | **SharePoint** | SharePoint locale | Nessun piano per la migrazione a SharePoint Online |  
 | **Soluzione MDM corrente** | Exchange ActiveSync |  |
 | **Soluzione per i certificati** | Microsoft Server 2012 R2, Servizi certificati Active Directory | Uso di PKI solo per i server del sito Web |
@@ -147,7 +148,7 @@ L'identità è il modo in cui vengono identificati gli utenti che appartengono a
 
 ### <a name="user-and-device-groups"></a>Gruppi di utenti e dispositivi
 
-I gruppi di utenti e dispositivi determinano la destinazione di una distribuzione, ad esempio per i criteri, le applicazioni e i profili. La versione cloud di Intune supporta solo gruppi di utenti e dispositivi: è necessario determinare quali gruppi di utenti e dispositivi saranno richiesti. È consigliabile creare tutti i gruppi in Active Directory locale, quindi sincronizzarli con Azure Active Directory. È possibile trovare altre informazioni sulla pianificazione e la creazione dei gruppi di utenti e dispositivi di seguito.
+I gruppi di utenti e dispositivi determinano la destinazione di una distribuzione, ad esempio per i criteri, le applicazioni e i profili. Intune in configurazione solo cloud supporta gruppi di utenti e dispositivi: è necessario determinare quali gruppi di utenti e dispositivi saranno richiesti. È consigliabile creare tutti i gruppi in Active Directory locale, quindi sincronizzarli con Azure Active Directory. È possibile trovare altre informazioni sulla pianificazione e la creazione dei gruppi di utenti e dispositivi di seguito.
 
 -   Altre informazioni sulla [pianificazione dei gruppi di utenti e dispositivi](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
@@ -411,6 +412,6 @@ Nella sezione successiva vengono fornite indicazioni sul [processo di implementa
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO3-->
 
 
