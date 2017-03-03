@@ -1,11 +1,11 @@
 ---
-title: Limitare l&quot;accesso a Dynamics CRM Online | Documentazione Microsoft
+title: Proteggere Dynamics CRM Online | Microsoft Docs
 description: Proteggere e controllare l&quot;accesso a Dynamics CRM Online con l&quot;accesso condizionale.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,23 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: abbfeb493d9e85eaa601b127d618996f2e01a01d
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
 
 
 ---
 
-# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>Limitare l'accesso a Dynamics CRM Online con Intune
+# <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Proteggere l'accesso a Dynamics CRM Online con Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 È possibile controllare l'accesso a Microsoft Dynamics CRM Online dai dispositivi iOS e Android usando l'accesso condizionale di Microsoft Intune.  L'accesso condizionale di Intune è costituito da due componenti:
 * [Criteri di conformità](introduction-to-device-compliance-policies-in-microsoft-intune.md) che il dispositivo deve soddisfare per essere considerato conforme.
 * [Criteri di accesso condizionale](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) in cui si specificano le condizioni che il dispositivo deve soddisfare per poter accedere al servizio.
 
-Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Limitare l'accesso alla posta elettronica, a Office 365 e ad altri servizi con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Proteggere l'accesso alla posta elettronica, a Office 365 e ad altri servizi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!IMPORTANT]
 > Per distribuire l'accesso condizionale è necessario disporre di sottoscrizioni di Intune e Azure Active Directory Premium. È inoltre necessario che gli utenti dispongano delle licenze di entrambi i prodotti. La **sottoscrizione di Enterprise Mobility + Security (EMS)** include sottoscrizioni di Intune e Azure Active Directory Premium. Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Se non si dispone della sottoscrizione di EMS, è possibile ottenere una sottoscrizione per Azure Active Directory Premium. Vedere la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
@@ -78,8 +82,8 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
   * **iOS**
   * **Android**
 4.  In **Gruppi di destinazione** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory ai quali verranno applicati i criteri. È possibile scegliere di applicare questa opzione a tutti gli utenti o solo a un gruppo di utenti selezionato.
-5.  Facoltativamente, in **Gruppi esentati** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
-6.  Al termine, scegliere **Salva**.
+5.    Facoltativamente, in **Gruppi esentati** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
+6.    Al termine, scegliere **Salva**.
 
 L'accesso condizionale per Dynamics CRM è stato configurato. Non è necessario distribuire i criteri di accesso condizionale perché diventano immediatamente effettivi.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorare i criteri di conformità e di accesso condizionale
@@ -92,15 +96,15 @@ Scegliere un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Disp
 * **Dispositivi conformi e registrati con AAD**. Questi dispositivi possono accedere a Dynamics CRM.
 
 ##  <a name="next-steps"></a>Passaggi successivi
-* [Limitare l'accesso a Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [Proteggere l'accesso a Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [Limitare l'accesso a Exchange locale](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [Limitare l'accesso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [Proteggere l'accesso a Exchange locale](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [Proteggere l'accesso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [Limitare l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [Proteggere l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

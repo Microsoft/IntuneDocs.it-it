@@ -1,11 +1,11 @@
 ---
-title: Limitare l&quot;accesso alle reti con Cisco ISE | Documentazione Microsoft
+title: Proteggere l&quot;accesso alle reti con Cisco ISE | Microsoft Docs
 description: Usare ISE Cisco con Intune in modo che i dispositivi vengano registrati in Intune e siano conformi ai relativi criteri prima di accedere a Wi-Fi e VPN controllati da Cisco ISE.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9eb0ea307702f3ae07db4d5c5a82d03f13b727fb
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Uso di Cisco ISE con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 L'integrazione di Intune con Cisco ISE (Identity Services Engine) consente di creare criteri di rete nell'ambiente ISE usando lo stato di conformità e registrazione dei dispositivi di Intune. È possibile usare questi criteri per verificare che l'accesso alla rete aziendale sia limitato ai dispositivi gestiti da Intune e conformi ai criteri di Intune.
 
 ## <a name="configuration-steps"></a>Procedura di configurazione
@@ -151,7 +155,7 @@ Nella console di amministrazione ISE indicare questi valori:
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Informazioni condivise tra il tenant di Intune e il server Cisco ISE
 Questa tabella elenca le informazioni condivise tra il tenant di Intune e il server Cisco ISE per i dispositivi gestiti da Intune.
 
-|Proprietà|  Descrizione|
+|Proprietà|    Descrizione|
 |---------------|------------------------------------------------------------|
 |complianceState|Stringa True o False che indica se il dispositivo è conforme o non conforme.|
 |IsManaged|Stringa True o False che indica se il client è gestito o meno da Intune.|
@@ -189,6 +193,6 @@ Quando l'utente sceglie di eseguire la registrazione, viene reindirizzato al pro
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

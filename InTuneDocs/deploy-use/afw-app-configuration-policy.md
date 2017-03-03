@@ -1,11 +1,11 @@
 ---
-title: Usare i criteri di configurazione delle app per dispositivi mobili Android for Work | Documentazione Microsoft
+title: Criteri di configurazione delle app Android for Work | Microsoft Docs
 description: Usare i criteri di configurazione delle app per dispositivi mobili in Intune per specificare le impostazioni che possono essere richieste quando gli utenti eseguono un&quot;app Android for Work.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/3/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 42581ff16740da0ebcc7160c96b7f70962662ba9
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 
 
 ---
@@ -28,19 +29,17 @@ ms.openlocfilehash: 42581ff16740da0ebcc7160c96b7f70962662ba9
 
 Usare i criteri di configurazione delle app mobili in Microsoft Intune per specificare le impostazioni che possono essere richieste quando gli utenti eseguono un'app iOS. Ad esempio, un'app può richiedere agli utenti di specificare quanto segue:
 
--   Un numero di porta personalizzato.
+-   Un numero di porta personalizzato
+-   Impostazione della lingua
+-   Impostazioni di personalizzazione, ad esempio il logo aziendale
 
--   Impostazioni della lingua.
+Se gli utenti immettono impostazioni in modo non corretto, si può verificare un aumento del carico dell'help desk e un rallentamento nell'adozione di nuove app.
 
--   Impostazioni di personalizzazione, ad esempio il logo aziendale.
-
-Se gli utenti immettono queste impostazioni in modo non corretto, si può verificare un aumento del carico dell'help desk e un rallentamento nell'adozione di nuove app.
-
-I criteri di configurazione delle app per dispositivi mobili permettono di evitare questi problemi consentendo di distribuire tali impostazioni agli utenti prima dell'esecuzione dell'app. Le impostazioni vengono quindi specificate automaticamente e gli utenti non devono eseguire alcuna azione.
+I criteri di configurazione delle app per dispositivi mobili consentono di distribuire le impostazioni ai dispositivi prima che gli utenti eseguano l'app. Le impostazioni vengono specificate automaticamente e gli utenti non devono eseguire alcuna azione.
 
 Per usare i criteri di configurazione delle app, è necessario che lo sviluppatore dell'app abbia esposto le configurazioni delle app aziendali al momento della creazione. Ad esempio, Google Chrome espone le impostazioni che consentono di specificare i segnalibri predefiniti, i siti consentiti e negati e molto altro ancora. Contattare lo sviluppatore dell'app per verificare se queste impostazioni sono supportate e come specificarle nei criteri.
 
-I criteri di configurazione delle app vengono distribuiti agli stessi utenti a cui è stata distribuita l'app da configurare. Le impostazioni dei criteri verranno usate ogni volta che viene eseguita l'app.
+I criteri di configurazione delle app vengono distribuiti agli stessi utenti a cui è stata distribuita l'app da configurare. Le impostazioni delle app vengono applicate quando si esegue l'app.
 
 ## <a name="configure-a-mobile-app-configuration-policy"></a>Configurare un criterio di configurazione delle app mobili
 
@@ -80,6 +79,6 @@ Quando l'app distribuita viene eseguita in un dispositivo, verrà eseguita con l
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

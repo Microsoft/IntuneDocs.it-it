@@ -1,11 +1,11 @@
 ---
-title: "Autenticazione a più fattori con Azure AD| Documentazione Microsoft"
+title: Multi-Factor Authentication per le registrazioni di dispositivi Intune | Documentazione Microsoft
 description: "Come richiedere l&quot;autenticazione a più fattori in Azure AD per la registrazione del dispositivo."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angerobe
-ms.date: 12/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -13,26 +13,31 @@ ms.technology:
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: 
 translationtype: Human Translation
-ms.sourcegitcommit: 85462d6cb5e3dc6ce8e94fe8fd1bc1c1c2b6e4f3
-ms.openlocfilehash: 6e20eca60886781ae884107a224245639c5f107c
+ms.sourcegitcommit: 30ed470200a830caa3c31be284f27e4b2347a71a
+ms.openlocfilehash: fa14ab5d4297a31d80b48611708e8a78d7513b8d
 
 
 ---
 
-# <a name="multi-factor-authentication-for-microsoft-intune"></a>Autenticazione a più fattori per Microsoft Intune
+# <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Multi-Factor Authentication per le registrazioni di dispositivi Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune integra l'autenticazione a più fattori (MFA) di Azure AD per la registrazione del dispositivo per consentire di proteggere le risorse aziendali. Per questo tipo di autenticazione sono necessari altri fattori di autenticazione, ad esempio l'autenticazione di testo, oltre a nomi utente e password. Tale autenticazione è supportata per iOS, Android, Windows 8.1 o versione successiva o Windows Phone 8.1 o dispositivi successivi.
+Intune integra l'autenticazione a più fattori (MFA) di Azure AD per la registrazione del dispositivo per consentire di proteggere le risorse aziendali.
+
+L'autenticazione MFA funziona richiedendo due o più dei seguenti metodi di verifica: 
+
+- Un elemento noto (in genere una password o un PIN).
+- Un oggetto fisico (un dispositivo attendibile non facile da duplicare, come un telefono).
+- Una caratteristica personale (biometria).
+
+L'autenticazione MFA è supportata per iOS, Android, Windows 8.1 o versione successiva o Windows Phone 8.1 o dispositivi successivi.
 
 > [!NOTE]
->
-> Questa è la nuova esperienza per MFA in Intune. L'esperienza precedente, da cui viene eseguita la migrazione dei clienti, è descritta in [Proteggere i dispositivi Windows con l'autenticazione a più fattori](protect-windows-devices-with-multi-factor-authentication.md).
->
 > Nelle versioni precedenti di Configuration Manager (precedenti alla versione 1610), viene visualizzata l'impostazione relativa all'autenticazione a più fattori nella console di amministrazione. Non tentare di configurare l'autenticazione a più fattori nella console di amministrazione di Configuration Manager in quanto non funzionerà. Configurare l'autenticazione a più fattori come descritto in questo argomento.
 
-### <a name="configuring-intune-to-require-multi-factor-authentication-at-device-enrollment"></a>Configurare Intune per la richiesta dell'autenticazione a più fattori alla registrazione del dispositivo
-Per richiedere l'autenticazione a più fattori alla registrazione del dispositivo, seguire questa procedura:
+### <a name="configure-intune-to-require-multi-factor-authentication-at-device-enrollment"></a>Configurare Intune per la richiesta dell'autenticazione a più fattori alla registrazione del dispositivo
+Per richiedere l'autenticazione MFA quando viene registrato un dispositivo, seguire questa procedura:
 
 1. Accedere al [portale di Microsoft Azure](https://manage.windowsazure.com) con le credenziali di amministratore.
 2. Scegliere il tenant.
@@ -54,6 +59,6 @@ Per richiedere l'autenticazione a più fattori alla registrazione del dispositiv
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

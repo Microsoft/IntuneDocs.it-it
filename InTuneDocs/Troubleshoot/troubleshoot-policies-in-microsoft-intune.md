@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 2a620d1e499e286365e5913be0ceb3d1efe3b846
+ms.sourcegitcommit: b28590bdb5a9387331354c8e5766975e3188bb91
+ms.openlocfilehash: e314d247c964b98c4159ca05cd746862d1b0db2e
 
 
 ---
 
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Risolvere i problemi relativi ai criteri in Microsoft Intune
 
-Se si verificano problemi durante la distribuzione e la gestione di criteri con Intune, iniziare da qui. Questo argomento descrive alcuni problemi comuni e le relative soluzioni.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Se si verificano problemi durante la distribuzione e la gestione di criteri Intune, iniziare da qui. Questo argomento descrive alcuni problemi comuni e le relative soluzioni.
 
 ## <a name="general-issues"></a>Problemi generali
 
@@ -99,6 +102,6 @@ Se queste informazioni per la risoluzione dei problemi non sono utili, contattar
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

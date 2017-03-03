@@ -1,11 +1,11 @@
 ---
-title: Come disattivare la raccolta dati di utilizzo di Microsoft | Documentazione Microsoft
+title: Come disattivare la raccolta dati di Microsoft per Windows | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,16 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: bc757320199362ba1885a6322b316e4f30750613
-ms.openlocfilehash: 42c1b63bb6bd6890c98b5c619d2dced945c10484
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: fc48199acad7a65bd4a06b5a51f6f5b851997edb
 
 
 ---
 
 
-# <a name="turn-off-microsoft-usage-data-collection"></a>Disattivare la raccolta dati di utilizzo di Microsoft
+# <a name="how-to-turn-off-microsoft-data-collection"></a>Come disattivare la raccolta dati di Microsoft
 
 Microsoft raccoglie automaticamente determinati dati per i suoi prodotti e servizi allo scopo di migliorare l'affidabilità e le prestazioni dei prodotti Microsoft, inclusa l'app Portale aziendale. Anche se questi dati sono resi anonimi, alcuni utenti potrebbero non acconsentire alla raccolta. Gli amministratori IT non hanno alcun controllo sulla raccolta di questi dati e non possono modificare la selezione di questa impostazione.
 
@@ -34,6 +35,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

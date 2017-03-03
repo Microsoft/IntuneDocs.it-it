@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
-ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -24,16 +26,16 @@ ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Indipendentemente dal fatto che un dispositivo sia personale o di proprietà dell'azienda, arriva un momento in cui è necessario rimuoverlo dalla gestione in Intune. 
+Indipendentemente dal fatto che un dispositivo sia personale o di proprietà dell'azienda, arriva un momento in cui è necessario rimuoverlo dalla gestione in Intune.
 
-I dispositivi non vengono mai rimosse da Intune senza l'intervento dell'utente, anche se i dispositivi non sono stati connessi al servizio Intune per un periodo di tempo. 
+I dispositivi non vengono mai rimosse da Intune senza l'intervento dell'utente, anche se i dispositivi non sono stati connessi al servizio Intune per un periodo di tempo.
 
 Potrebbe essere necessario ritirare un dispositivo per diversi motivi:
 
--   L'utente lascia la società in modo pianificato (abbandono "gestito")
--   L'utente lascia la società improvvisamente (licenziamento, dimissioni e così via)
--   Il dispositivo viene perso
--   Il dispositivo viene riutilizzato (passaggio a un altro utente, riutilizzo per altri scopi e così via)
+-    L'utente lascia la società in modo pianificato (abbandono "gestito")
+-    L'utente lascia la società improvvisamente (licenziamento, dimissioni e così via)
+-    Il dispositivo viene perso
+-    Il dispositivo viene riutilizzato (passaggio a un altro utente, riutilizzo per altri scopi e così via)
 
 Per un dispositivo gestito come dispositivo mobile è possibile eseguire una cancellazione selettiva o una cancellazione completa oppure è possibile bloccare il dispositivo e reimpostarne la password. Cancellando il dispositivo, la sottoscrizione dell'utente viene liberata per l'aggiunta di un altro dispositivo. È anche possibile ritirare i PC gestiti con il software client di Intune.
 
@@ -43,6 +45,9 @@ Sia la cancellazione selettiva che quella completa rimuovono il dispositivo dall
 La [cancellazione selettiva](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) è l'azione da preferire nel caso di dipendenti che hanno registrato i propri dispositivi in Intune perché non influisce sui dati personali presenti nel dispositivo. In questo caso vengono infatti rimossi solo i dati aziendali.
 
 Per i dispositivi da ridestinare, è possibile usare anche la [cancellazione completa](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe), che reimposta il dispositivo alle impostazioni di fabbrica.
+
+### <a name="removing-user-licenses-and-managed-devices"></a>Rimozione di licenze utente e dispositivi gestiti
+Quando si rimuove una licenza utente, viene annullata la registrazione dei dispositivi registrati dell'utente. È consigliabile usare la cancellazione selettiva per rimuovere i dati aziendali dai dispositivi gestiti prima di rimuovere la licenza di Intune per un utente. Dopo aver rimosso la licenza utente, il dispositivo non può essere la destinazione di azioni remote.
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Per eliminare i dispositivi nel portale di Azure Active Directory
 
@@ -73,9 +78,4 @@ In alcuni casi è il dispositivo stesso ad aver raggiunto il termine della vita 
 
 ### <a name="see-also"></a>Vedere anche
 [Proteggere i dati con la cancellazione selettiva o completa](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

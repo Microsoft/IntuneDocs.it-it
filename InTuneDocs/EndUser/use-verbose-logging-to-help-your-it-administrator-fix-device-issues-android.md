@@ -1,11 +1,11 @@
 ---
-title: Usare la registrazione dettagliata per aiutare l&quot;amministratore IT a risolvere i problemi dei dispositivi | Documentazione Microsoft
+title: Aiutare l&quot;amministratore IT a risolvere i problemi dei dispositivi con la registrazione dettagliata | Microsoft Docs
 description: Aiutare l&quot;amministratore IT a risolvere i problemi dei dispositivi mediante la registrazione dettagliata
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,16 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 501b2c5990acce9bc2f8c5efd1efc07fbee1606f
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 352e76d4a2e1d0c9f92fce196d6e699b3cf6e333
 
 
 ---
 
 
-# <a name="use-verbose-logging-to-help-your-it-admin-fix-device-issues"></a>Usare la registrazione dettagliata per aiutare l'amministratore IT a risolvere i problemi dei dispositivi
+# <a name="help-your-it-admin-fix-device-issues-with-verbose-logging"></a>Aiutare l'amministratore IT a risolvere i problemi dei dispositivi con la registrazione dettagliata
 
 Quando il dispositivo Android è registrato in Intune, è possibile usare la *registrazione dettagliata* per fare in modo che l'app Portale aziendale e le app gestite da Intune registrino log dettagliati sugli eventi del dispositivo. Questi log aiutano l'amministratore IT a risolvere i problemi che possono verificarsi quando si usa il portale aziendale o un'app gestita da Intune. La registrazione dettagliata è abilitata sul dispositivo per impostazione predefinita e i log inviati all'amministratore IT comprendono l'indirizzo di posta elettronica dell'utente.
 
@@ -34,6 +35,6 @@ Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul co
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

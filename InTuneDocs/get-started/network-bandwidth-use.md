@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: 213e2e43635dd64cd64c850d74f7fd05f649bd64
+ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
+ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
 
 
 ---
@@ -23,6 +24,8 @@ ms.openlocfilehash: 213e2e43635dd64cd64c850d74f7fd05f649bd64
 # <a name="intune-network-bandwidth-use"></a>Uso della larghezza di banda di rete di Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Queste indicazioni sono rivolte agli amministratori di sistema responsabili della gestione dei dispositivi nell'organizzazione. Per informazioni sull'uso di Intune nel dispositivo mobile, vedere le [domande frequenti su Portale aziendale di Intune](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Prima di configurare Microsoft Intune leggere questo argomento e gli altri requisiti indicati in [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
 
@@ -231,6 +234,6 @@ Nella tabella seguente sono elencati i domini e i servizi a cui accede il client
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

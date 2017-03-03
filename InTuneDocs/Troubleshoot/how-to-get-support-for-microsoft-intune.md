@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/16/2016
+ms.date: 01/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,15 @@ ms.technology:
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1a83bd41e4dc3aaa2e98b78b918b0cfe4c74dfe3
+ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
+ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
 
 
 ---
 
-# <a name="how-to-get-admin-support-for-microsoft-intune"></a>Come ottenere supporto amministrativo per Microsoft Intune
+# <a name="how-admins-get-support-for-microsoft-intune"></a>Come gli amministratori possono ottenere supporto per Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -28,7 +29,35 @@ Microsoft offre supporto globale tecnico e per la prevendita, la fatturazione e 
 
 Il supporto per Intune e per Intune usato con Configuration Manager è gratuito. Ai clienti del supporto tecnico Premier verranno addebitati costi per le risposte a domande procedurali, ad esempio domande relative alla configurazione delle funzionalità di Intune.
 
-## <a name="create-an-online-service-ticket"></a>Creare un ticket di servizio online
+## <a name="find-help-without-opening-a-support-ticket"></a>Ottenere assistenza senza aprire un ticket di supporto
+
+Prima di creare un ticket di supporto, cercare risposte e informazioni utili nelle risorse seguenti. Vedere anche [Suggerimenti generali per la risoluzione dei problemi di Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune).
+
+### <a name="microsoft-intune-technet-forums"></a>Forum su Microsoft Intune in TechNet
+
+È possibile fare una domanda o avviare una discussione con esperti Microsoft. Vengono offerte risposte e approfondimenti nel [Forum su Microsoft Intune in TechNet](https://social.technet.microsoft.com/Forums/home) dove è possibile eseguire ricerche.
+
+![Forum su Microsoft Intune in TechNet](./media/technet-forum-for-support.png)
+
+### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Sito di commenti e suggerimenti sui prodotti UserVoice di Microsoft Intune
+
+Se si hanno commenti e suggerimenti su come Microsoft possa migliorare Intune, aggiungerli sul sito [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) di Microsoft Intune. È anche possibile votare idee aggiunte a UserVoice da altri. 
+
+![Pagina di commenti e suggerimenti UserVoice di Microsoft Intune](./media/intune-uservoice-feedback-page.png)
+
+## <a name="create-an-online-support-ticket"></a>Creare un ticket di supporto online
+
+Se non si riesce a risolvere il problema tramite le risorse di supporto in autonomia, è possibile creare un ticket di supporto online.
+
+**Limitare ogni ticket di supporto a un singolo problema** per aiutarci a offrire il miglior servizio possibile. Questo per le ragioni seguenti:
+
+- I tecnici del supporto che offrono l'assistenza solitamente sono esperti di un'area specifica e in questo modo è più facile individuare l'esperto adatto per risolvere il problema posto.
+- I team di tecnici possono variare la priorità del lavoro in base alle aree di prodotto in cui viene generato il maggior numero di eventi.
+- È più semplice riassegnare i problemi complessi alla risorsa corretta.
+
+Vedere [Definizione di richiesta di assistenza](#definition-of-a-support-incident) prima di creare un ticket di supporto.
+
+**Per creare un ticket di supporto online**:
 
 1.  Accedere al [Centro di amministrazione di Office 365](https://portal.office.com) con le credenziali di Intune.
     >[!NOTE]
@@ -71,12 +100,12 @@ Se la pagina di supporto è simile alla seguente, attenersi a questa procedura:
 ## <a name="get-phone-support"></a>Supporto telefonico
 Vedere [Come contattare il supporto telefonico assistito per Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) per un elenco di numeri di telefono di supporto per paese e area geografica, con i relativi orari del supporto e le lingue disponibili.
 
-## <a name="track-your-service-requests"></a>Tenere traccia delle richieste di servizio
+## <a name="track-your-support-requests"></a>Tenere traccia delle richieste di supporto
 1.  Accedere al [Centro di amministrazione di Office 365](https://portal.office.com) con le credenziali di Intune.
 2.  Scegliere il riquadro **Amministrazione**.
 3.  A sinistra, sotto **Supporto**, scegliere **Richieste di assistenza**. È quindi possibile esaminare le richieste.
 
-I tempi di risposta iniziali per le richieste di assistenza variano a seconda della gravità del problema. Per i problemi più gravi, i clienti Professional riceveranno la prima risposta entro due ore. Per i clienti del supporto tecnico Premier i tempi di risposta variano a seconda del contratto di supporto. Si verificano casi in cui:
+I tempi di risposta iniziali alle richieste di assistenza variano a seconda della gravità del problema. Per i problemi più gravi, i clienti Professional riceveranno la prima risposta entro due ore. Per i clienti del supporto tecnico Premier i tempi di risposta variano a seconda del contratto di supporto. Si verificano casi in cui:
 
 - Uno o più servizi non sono accessibili o non possono essere usati.
 - Le scadenze di produzione, gestione e distribuzione sono gravemente condizionate o ci sarà un grave impatto sulla produzione o sulla redditività.
@@ -99,12 +128,6 @@ Per i problemi di altro tipo, i clienti Professional riceveranno la prima rispos
 >
 > Il supporto tecnico per System Center Configuration Manager o System Center Endpoint Protection richiede un pagamento; in alternativa è possibile scalarne l'importo dai contratti di licenza o di supporto tecnico Premier esistenti.
 
-## <a name="resolve-issues-without-opening-a-support-ticket"></a>Risolvere i problemi senza aprire un ticket di supporto
-
-In determinati casi è possibile risolvere un problema autonomamente, senza aprire un ticket di supporto.
-
-Per risolvere in autonomia i problemi di Intune, vedere [General troubleshooting tips for Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) (Suggerimenti generali per la risoluzione dei problemi di Microsoft Intune) o uno degli argomenti per la risoluzione di problemi specifici. È anche possibile cercare una soluzione o pubblicare una domanda nel [forum di Intune](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
-
 ## <a name="find-support-for-volume-licensing"></a>Supporto per clienti con contratti multilicenza
 Se sono già state acquistate licenze Microsoft con un contratto multilicenza, per il supporto usare le risorse seguenti:
 
@@ -114,8 +137,18 @@ Se sono già state acquistate licenze Microsoft con un contratto multilicenza, p
 
 -   Per informazioni generali sui contratti multilicenza, vedere [Contratti multilicenza](http://go.microsoft.com/fwlink/p/?LinkID=282015).
 
+## <a name="definition-of-a-support-incident"></a>Definizione di richiesta di assistenza
+
+Si definisce richiesta di assistenza un singolo problema tecnico e il lavoro necessario per risolverlo. Un problema tecnico singolo non può essere suddiviso in problemi subordinati. Se vengono individuati problemi subordinati, ogni problema viene considerato come evento separato. È possibile che per risolvere un problema specifico siano necessari più contatti e una ricerca offline. Il tempo impiegato per offrire queste soluzioni è indipendente dall'importo che viene addebitato.
+
+Il supporto "Break-fix" è incluso con le sottoscrizioni a Microsoft Intune e alla gestione dei dispositivi mobili per Office 365, pertanto aprire più interventi di supporto non comporta costi aggiuntivi.
+
+Se un tecnico del supporto chiede di aprire altre richieste per problemi aggiuntivi, lo fa nell'interesse degli utenti. Grazie per la comprensione e la collaborazione che ci aiutano a offrirvi esperienze di supporto di qualità sempre più elevata.
+
+Per i costi di ogni richiesta e i livelli di gravità, vedere [Opzioni di supporto professionale](https://support.microsoft.com/gp/offerprophone).
 
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

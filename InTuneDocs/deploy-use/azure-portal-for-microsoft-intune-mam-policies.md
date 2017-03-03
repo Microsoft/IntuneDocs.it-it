@@ -13,32 +13,30 @@ ms.technology:
 ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: 423f525be6ff9fb72542af46ff18a57d00d04d79
+ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
+ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
+ms.lasthandoff: 02/15/2017
 
 
 ---
 
-# <a name="azure-portal-for-microsoft-intune-mam-policies"></a>Portale di Azure per i criteri MAM di Microsoft Intune
+# <a name="azure-portal-for-intune-app-protection-policies"></a>Portale di Azure per i criteri di protezione delle app di Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-## <a name="use-the-azure-portal"></a>Usare il portale di Azure
-Il portale di Azure consente di creare e gestire i criteri di gestione delle app per dispositivi mobili (MAM).
+Il portale di Azure consente di creare e gestire i criteri di protezione delle app per:
 
-Il portale di Azure supporta la creazione di criteri MAM per:
 - App in esecuzione in dispositivi **registrati e gestiti da Intune**.
 
 - App in esecuzione su dispositivi **non registrati** in qualsiasi soluzione MDM.
 - App in esecuzione in dispositivi **registrati in una soluzione MDM di terze parti**.
 
 >[!IMPORTANT]
+> Il portale di Azure è la nuova console di amministrazione per la creazione di criteri di protezione delle app, ma è anche possibile creare un criterio di protezione delle app che supporta le app per dispositivi registrati in Intune tramite la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) per gli scenari MDM.
 
-
-> Se si sta usando la console di amministrazione di Intune per la gestione dei dispositivi, è possibile creare criteri MAM che supportano le app per i dispositivi registrati in Intune tramite la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) stessa.
-
-> È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri MAM. Il portale di Azure è la nuova console di amministrazione per la creazione dei criteri MAM. Se si creano criteri MAM nella console di amministrazione di Intune e nel portale di Azure, i criteri del portale vengono applicati alle app e distribuiti agli utenti.
+> È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri di protezione delle app disponibili. Inoltre, se si creano criteri di protezione delle app nella console di amministrazione di Intune e nel portale di Azure, i criteri creati nel portale di Azure sostituiranno quelli creati nella console di amministrazione di Intune. In questo scenario, i criteri di protezione delle app del portale di Azure verranno applicati alle app e distribuiti agli utenti.
 
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Accedere al portale di Azure e personalizzare la pagina iniziale
@@ -51,24 +49,20 @@ Il portale di Azure supporta la creazione di criteri MAM per:
 
     ![Schermata del dashboard del portale di Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  Nel menu **Sfoglia** individuare **Intune**.![Screenshot del menu Sfoglia con Intune evidenziato](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
+3.  Scegliere **Altri servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro di casella di testo.
 
-4.  Scegliere **Intune** > **Gestione di applicazioni mobili di Intune** > **Impostazioni**.
+    ![Screenshot del menu Sfoglia con Intune evidenziato](../media/AppManagement/MAM-Azure-Portal-1.png)
 
-    ![Schermata del pannello Gestione di applicazioni mobili di Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+4.  Scegliere **Protezione app di Intune** > **Gestione di applicazioni mobili di Intune** > **Tutte le impostazioni**.
 
-    > [!TIP]
+    ![Schermata del pannello Gestione di applicazioni mobili di Intune](../media/AppManagement/MAM-Azure-Portal-2.png)
 
-    > Per aggiungere un pannello alla pagina **iniziale** , è possibile usare l'opzione di **aggiunta** nel pannello. Fare clic sull'icona a forma di puntina nel pannello **Gestione di applicazioni mobili di Intune** per aggiungere il pannello alla pagina **iniziale**.
+5. (Facoltativo): per aggiungere un pannello alla pagina **iniziale**, è possibile usare l'opzione di **aggiunta** nel pannello. Fare clic sull'icona a forma di puntina nel pannello **Gestione di applicazioni mobili di Intune** per aggiungere il pannello alla pagina **iniziale**.
 
     ![Schermata del pannello Gestione di applicazioni mobili di Intune con l'icona della puntina evidenziata](../media/AppManagement/AzurePortal_MAM_PinBladeAction.png)
 
     ![Schermata del dashboard con il riquadro di Intune bloccato](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
+
 ## <a name="next-steps"></a>Passaggi successivi
-[Preparazione alla configurazione dei criteri di gestione delle app per dispositivi mobili](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+[Prepararsi alla configurazione dei criteri di protezione delle app](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 

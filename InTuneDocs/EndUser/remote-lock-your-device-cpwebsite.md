@@ -1,69 +1,72 @@
 ---
-title: Bloccare in remoto un dispositivo dal sito Web del portale aziendale | Documentazione Microsoft
+title: Bloccare il dispositivo dal portale aziendale | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 04c7ae7df65a0873e794420c1880aa901aa230b6
+ms.sourcegitcommit: 7f2bd282056b035b6f7008db4159d1e2f44953a5
+ms.openlocfilehash: 424d3deedbec2ba28d6c92d0ccd1cb8dc26845b4
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
+# <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloccare il dispositivo in modalità remota dal sito Web del portale aziendale
 
-# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>Bloccare in remoto un dispositivo dal sito Web del portale aziendale
+Può succedere che i dispositivi vengano persi. Se il dispositivo è stato smarrito o rubato, la prima preoccupazione potrebbe essere il possibile accesso alle informazioni sul dispositivo da parte di qualsiasi utente, ovunque si trovi il dispositivo.
 
-Se il dispositivo è stato smarrito o rubato, è possibile bloccarlo tramite l'opzione Blocco remoto sul [sito Web del portale aziendale](http://portal.manage.microsoft.com). Blocco remoto funziona per i tipi di dispositivo seguenti:
+[!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-Piattaforma  |Dettagli sul supporto  
----------|---------
-Android | Supportato       
-iOS | Supportato
-Windows 10 Mobile | Supportato solo se per il telefono è impostato un passcode     
-Windows 10 Desktop | Non supportato  
-Windows Phone 8.1 | Supportato solo se per il telefono è impostato un passcode
-PC (Windows 8.0 e versioni precedenti) | Non supportato       
-PC (Windows 8.1) | Non supportato
+Per ragioni di sicurezza, è possibile bloccarlo usando l'opzione Blocco remoto sul [sito Web del portale aziendale](http://portal.manage.microsoft.com). L'opzione Blocco remoto funziona per:
 
-</br>
-Per usare Blocco remoto per bloccare il dispositivo:
+* Android
+* iOS
+* macOS
+* Windows 10 Mobile (se per il dispositivo è già stato impostato un passcode)
+* Windows Phone 8.1 (se per il dispositivo è già stato impostato un passcode)
 
-1.  Nel [sito Web del portale aziendale](http://portal.manage.microsoft.com) toccare il nome del dispositivo da bloccare.
+## <a name="to-use-remote-lock-to-lock-your-device"></a>Per usare Blocco remoto per bloccare il dispositivo
 
-2.  Toccare **Blocco remoto**.
+1.    Nel [sito Web del portale aziendale](http://portal.manage.microsoft.com) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
 
-    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+  ![Immagine del sito Web del portale aziendale con un menu laterale espanso sul lato sinistro della schermata con i pulsanti Home, Tutte le app, Dispositivi personali, Supporto tecnico e Disconnetti.](/media/iwp-expanded-sidebar.png)
 
-3.  Leggere il messaggio di avviso, visualizzato per segnalare che si sta per bloccare il dispositivo, e quindi toccare **Blocco remoto** per consentire al sito Web del portale aziendale di provare a bloccare il dispositivo.
+2. Nella pagina __Dispositivi personali__ selezionare il nome del dispositivo da bloccare.
 
-    Dopo aver toccato **Blocco remoto** viene visualizzato lo stato "Blocco remoto in sospeso".  Quando Blocco remoto ha esito positivo, lo stato passa a "Blocco remoto riuscito."
+  ![Screenshot della pagina Dispositivi personali con un paio di dispositivi non identificati sopra il banner con la richiesta di registrare i dispositivi non inclusi nell'elenco o di identificare quelli non identificati.](./media/macOS_enroll_002_tap_here_banner.png)
+
+3.    Il dispositivo verrà aperto in una finestra popup. Toccare il pulsante **Blocco remoto**.
+
+    ![Tutte le opzioni per un dispositivo selezionato nel sito Web del portale aziendale, tra cui Rinomina, Rimuovi, Reimposta dispositivo, Reimposta passcode e Blocco remoto. ](./media/iwp-screen-with-all-options.png)
+
+4.    Viene visualizzato un avviso che informa che si sta per bloccare il dispositivo. Toccare **Blocco remoto**. Il sito Web del portale aziendale tenterà di bloccare il dispositivo.
+
+    Dopo aver selezionato **Blocco remoto** viene visualizzato il messaggio "Blocco remoto in sospeso".  Quando Blocco remoto ha esito positivo, lo stato passa a "Blocco remoto riuscito."
 
     Lo stato del blocco remoto viene visualizzato in tre posizioni:
 
     * L'area delle notifiche del sito Web.
-    * La pagina dei dettagli del dispositivo.
-    * Il riquadro contenente il nome del dispositivo nella sezione Dispositivi personali della pagina.
+    * La pagina **Dettagli** per il dispositivo.
+    * Il riquadro contenente il nome del dispositivo nella sezione **Dispositivi personali** della pagina.
 
-    Se viene visualizzata la notifica "Blocco remoto non riuscito", attendere qualche minuto e quindi tentare nuovamente di bloccare il dispositivo. Dopo aver toccato il pulsante per riprovare, lo stato diventa nuovamente "Blocco remoto in sospeso".
+> [!Note]
+> Se viene visualizzata la notifica "Blocco remoto non riuscito", attendere qualche minuto e quindi tentare nuovamente di bloccare il dispositivo. Dopo aver iniziato il nuovo tentativo, lo stato diventa nuovamente "Blocco remoto in sospeso". Se il tentativo non funziona, è necessario contattare l'amministratore IT.
 
-    Se il tentativo ha esito negativo, contattare l'amministratore IT per ricevere assistenza. Se il dispositivo viene ritrovato e si vuole rimuovere il blocco dopo aver usato Blocco remoto, immettere il passcode.
+Se il dispositivo viene ritrovato e si vuole rimuovere il blocco dopo aver usato Blocco remoto, immettere il passcode.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

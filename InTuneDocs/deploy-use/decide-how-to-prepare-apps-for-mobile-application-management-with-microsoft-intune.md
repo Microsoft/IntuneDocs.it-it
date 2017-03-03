@@ -1,11 +1,11 @@
 ---
-title: Preparare le app per la gestione di applicazioni mobili | Microsoft Intune
+title: Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune | Documentazione Microsoft
 description: "Le informazioni contenute in questo argomento consentono di stabilire quando è necessario usare lo strumento di wrapping delle app e App SDK per abilitare le app line-of-business personalizzate per l&quot;uso dei criteri di gestione delle app mobili."
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 02/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
 
-# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune
+# <a name="prepare-line-of-business-apps-for-mam"></a>Preparare le app linea di business per MAM
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 È possibile consentire alle app di usare i criteri di gestione delle applicazioni mobili (MAM, Mobile Application Management) tramite lo strumento di wrapping delle app di Intune o Intune App SDK. In questo articolo vengono fornite informazioni su questi due metodi e su quando usarli.
 
 ## <a name="intune-app-wrapping-tool"></a>Strumento di wrapping delle app di Intune
@@ -52,7 +56,7 @@ Per altre informazioni sullo strumento di wrapping delle app per la gestione del
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK è progettato principalmente per i clienti che hanno le app nell'App Store Apple o in Google Play Store e che vogliono poter gestire le app con Intune. Tuttavia, qualsiasi app può sfruttare l'integrazione dell'SDK, anche se si tratta di un'app line-of-business.
 
-Per altre informazioni sull'SDK, vedere la [panoramica](/intune/develop/intune-app-sdk). Per un'introduzione all'SDK, vedere [Introduzione a Microsoft Intune App SDK](/intune/develop/intune-app-sdk-get-started)
+Per altre informazioni sull'SDK, vedere la [panoramica](../develop/intune-app-sdk.md). Per un'introduzione all'SDK, vedere [Introduzione a Microsoft Intune App SDK](../develop/intune-app-sdk-get-started.md)
 
 ### <a name="reasons-to-use-the-sdk"></a>Motivi per usare l'SDK
 * L'app non dispone di funzionalità per la protezione dei dati incorporate.
@@ -66,8 +70,8 @@ Per altre informazioni sull'SDK, vedere la [panoramica](/intune/develop/intune-a
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Sì: usare il [componente Xamarin per Intune App SDK](/../develop/intune-app-sdk-xamarin).|Sì: usare il [plug-in Cordova per Intune App SDK](/../develop/intune-app-sdk-cordova).|
-|**Android**| Sì: usare il [componente Xamarin per Intune App SDK](/../develop/intune-app-sdk-xamarin).|Sì: usare il [plug-in Cordova per Intune App SDK](/../develop/intune-app-sdk-cordova).|
+|**iOS**|Sì: usare il [componente Xamarin per Intune App SDK](../develop/intune-app-sdk-xamarin.md).|Sì: usare il [plug-in Cordova per Intune App SDK](../develop/intune-app-sdk-cordova.md).|
+|**Android**| Sì: usare il [componente Xamarin per Intune App SDK](../develop/intune-app-sdk-xamarin.md).|Sì: usare il [plug-in Cordova per Intune App SDK](../develop/intune-app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Confronto delle funzionalità
 Questa tabella elenca le impostazioni che è possibile usare per App SDK e per lo strumento di wrapping delle app.
@@ -106,6 +110,6 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

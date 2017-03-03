@@ -15,8 +15,8 @@ ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: d63d670f12f27511671b9015ad53a93f1a784c40
-ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
+ms.sourcegitcommit: 8c4351761b1e4047a0e997cdfabe3deb35b31e54
+ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
       <h2 class="section-heading"><span class="icon icon-warning"></span> Contenuti in primo piano</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="http://fasttrack.microsoft.com/ems">Più di 150 licenze? Sfruttare i vantaggi di FastTrack</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">Più di&150; licenze? Sfruttare i vantaggi di FastTrack</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Metodi comuni per l'uso di Intune</a></li>
           <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune nell'anteprima del portale di Azure</a></li>
         </ul>
@@ -140,7 +140,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
+                  <a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">
                     <h3>Informazioni per gli utenti finali</h3>
                     <p>Comprendere i passaggi che gli utenti finali devono eseguire per usare i dispositivi con Intune. Condividere queste informazioni con gli utenti per consentire loro di portare a termine le attività in modo autonomo.</p>
                   </a>
@@ -155,7 +155,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Proteggere l'accesso alla posta elettronica e ai servizi di Office 365</h3>
+                    <h3>Proteggere l'accesso alla posta elettronica e ai servizi di Office&365;</h3>
                     <p>Usare la funzionalità Accesso condizionale di Intune per proteggere l'accesso alla posta elettronica aziendale e ai servizi di Office 365.</p>
                   </a>
                 </li>
@@ -269,7 +269,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
           <ul class="column-half">
           <li><a href="/enterprise-mobility/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">FastTrack Center per Enterprise Mobility Suite</a></li>
           <li><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc" target="_blank">Forum su Microsoft Intune in TechNet</a></li>
-          <li><a href="https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/default.aspx" target="_blank">Pagina prodotto Intune</a></li>
+          <li><a href="https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/default.aspx" target="_blank">Pagina del prodotto Intune</a></li>
           </ul>
       </div>
       </section>
@@ -285,6 +285,6 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

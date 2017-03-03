@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,22 @@ ms.technology:
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 047a2fb0ad286ece183116a70466fc259b9a0dea
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
+ms.lasthandoff: 02/15/2017
 
 
 ---
 
 
 # <a name="sign-up-or-sign-in-to-intune"></a>Iscriversi o accedere a Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Questo argomento descrive come gli amministratori possono iscriversi per ottenere un account Intune.
+
 Prima di poter iscriversi o accedere a Intune, è necessario verificare se l'organizzazione dispone già di un account aziendale o dell'istituto di istruzione Microsoft Online Services o se l'organizzazione dispone di un contratto Enterprise o equivalente contratto multilicenza con Microsoft. Si tratta dell'account che viene fornito quando si sottoscrive un contratto multilicenza con Microsoft o si esegue l'iscrizione ad altri servizi cloud Microsoft come Office 365.
 
 Se si dispone già di un account aziendale o dell'istituto di istruzione, è sufficiente **accedere** con questo account per aggiungere Intune all'ambiente di sottoscrizione esistente. In caso contrario, sarà necessario **iscriversi** per creare un nuovo account da usare per la gestione di Intune per la propria organizzazione.
@@ -47,9 +54,4 @@ Dopo aver completato il processo di iscrizione, si verrà indirizzati a una pagi
 >[!div class="step-by-step"]
 
 >[&larr;**Prerequisiti**](.\what-to-know-before-you-start-microsoft-intune.md)[**Impostazioni di dominio**     &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
