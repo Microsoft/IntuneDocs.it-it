@@ -2,10 +2,10 @@
 title: "Registrare i dispositivi iOS di proprietà dell&quot;azienda | Documentazione Microsoft"
 description: "Registrazione di dispositivi iOS di proprietà dell&quot;azienda usando il programma di registrazione dispositivi di Apple o Apple Configurator"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -49,7 +50,7 @@ Per impostazione predefinita, tutti i dispositivi iOS sono autorizzati alla regi
 - **Registrazione diretta**: crea un file compatibile con Apple Configurator da usare durante la preparazione dei dispositivi. Non viene eseguito il ripristino delle impostazioni di fabbrica del dispositivo, che risulta però non associato a un utente. Questo metodo prevede che l'amministratore connetta il dispositivo iOS tramite USB a un computer Mac in cui è in esecuzione [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) per registrare il dispositivo. Per altre informazioni, vedere [Enroll iOS devices using Apple Configurator Direct Enrollment](ios-direct-enrollment-in-microsoft-intune.md) (Registrare dispositivi iOS con Apple Configurator e Registrazione diretta).
 
 ## <a name="use-the-device-enrollment-program-dep"></a>Usare il programma di registrazione dispositivi
-Il programma di registrazione dispositivi distribuisce un profilo di registrazione ai dispositivi acquistati tramite il programma di registrazione dispositivi. Quando un utente esegue Assistente configurazione nel dispositivo, il dispositivo viene registrato in Intune.  La registrazione dei dispositivi registrati tramite DEP non può essere annullata dagli utenti. Per altre informazioni, vedere [Enroll Device Enrollment Program iOS devices](ios-device-enrollment-program-in-microsoft-intune.md) (Registrare dispositivi iOS con il programma di registrazione dispositivi).
+Il programma di registrazione dispositivi distribuisce un profilo di registrazione ai dispositivi acquistati tramite il programma di registrazione dispositivi. Quando un utente esegue Assistente configurazione nel dispositivo, il dispositivo viene registrato in Intune. Per altre informazioni, vedere [Enroll Device Enrollment Program iOS devices](ios-device-enrollment-program-in-microsoft-intune.md) (Registrare dispositivi iOS con il programma di registrazione dispositivi).
 
 ## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>Usare il portale aziendale nei dispositivi registrati con il programma di registrazione dispositivi o Apple Configurator
 
@@ -91,9 +92,4 @@ Se è necessaria l'affinità utente, assicurarsi che nel profilo di registrazion
 
 ### <a name="see-also"></a>Vedere anche
 [Prerequisiti per la registrazione dei dispositivi in Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

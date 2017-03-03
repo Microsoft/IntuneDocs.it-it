@@ -1,5 +1,6 @@
 ---
-title: Creare e distribuire i criteri di protezione delle app | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Creare e distribuire i criteri di protezione delle app
+titleSuffix: Intune Azure preview
 description: 'Anteprima di Intune in Azure: informazioni sul modo in cui i criteri di protezione delle app di Intune consentono di proteggere i dati aziendali usati dalle app gestite.'
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 5112c6641577f3faefb85650dd06bd1634542019
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -122,9 +125,4 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 ### <a name="see-also"></a>Vedere anche
 * [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](app-protection-enabled-android-apps.md)
 * [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

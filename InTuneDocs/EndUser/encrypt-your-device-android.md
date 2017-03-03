@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
-ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
+ms.sourcegitcommit: 879f8faa37309edae9d1cbb0456d372ff27b8b98
+ms.openlocfilehash: a36c7dca0274b465315493261f03ab362c09383a
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,6 +41,9 @@ Un telefono di cui si annulla la registrazione rimarrà crittografato.
     In alcuni telefoni è necessario fare clic su **Memoria** &gt; **Crittografia memoria** o **Memoria** &gt; **Schermata di blocco e Sicurezza** &gt; **Altre impostazioni di sicurezza** per trovare l'opzione "Crittografia".
 
 3.  Seguire le istruzioni visualizzate. Durante la crittografia il dispositivo potrebbe essere riavviato più volte.
+
+> [!Note]
+> Alcuni dispositivi Android non possono essere crittografati. Per altre informazioni, vedere [qui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### <a name="what-to-do-if-you-have-issues"></a>Operazioni da eseguire in caso di problemi
 **Problema**: il dispositivo è già stato crittografato e si verifica uno dei problemi seguenti:
@@ -64,10 +68,6 @@ Un telefono di cui si annulla la registrazione rimarrà crittografato.
 
     5. Aprire l'app Portale aziendale, selezionare il dispositivo e toccare **Controlla conformità**.
 
+
 Serve ancora assistenza? Contattare l'amministratore IT (accedere al [sito Web del portale aziendale](http://portal.manage.microsoft.com) per informazioni sui contatti) oppure scrivere al [team Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

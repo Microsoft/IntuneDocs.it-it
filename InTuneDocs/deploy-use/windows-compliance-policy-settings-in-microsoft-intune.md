@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: a7edd3d23a28f3496b22efdc3b17fb25b40399b6
+ms.sourcegitcommit: 1fa570c3bca5d24ad234e8437a8553bf358520b8
+ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -75,6 +76,9 @@ Le impostazioni elencate in questa sezione sono supportate in Windows Phone 8.1 
   -  **Abilitazione della funzionalità BitLocker**: se la funzionalità BitLocker è attiva, il dispositivo può contribuire alla protezione dei dati archiviati nell'unità da accessi non autorizzati, quando il sistema è spento o passa allo stato di ibernazione. Crittografia unità BitLocker di Windows crittografa tutti i dati archiviati nel volume del sistema operativo Windows. BitLocker usa il TPM per proteggere il sistema operativo Windows e i dati utente e consente di garantire che un computer non venga manomesso anche se viene perso, rubato o lasciato incustodito. Se il computer è dotato di un TPM compatibile, BitLocker usa il TPM per bloccare le chiavi di crittografia che contribuiscono a proteggere i dati. Di conseguenza, non è possibile accedere alle chiavi finché il TPM non ha verificato lo stato del computer.
   -  **Abilitazione della funzionalità Integrità del codice**: l'integrità del codice è una funzionalità che verifica l'integrità di un driver o di un file di sistema ogni volta che viene caricato in memoria. L'integrità del codice rileva se un driver o un file di sistema non firmato viene caricato nel kernel o se un file di sistema è stato modificato da software dannoso eseguito da un account utente con privilegi di amministratore.
   - **Abilitazione della funzionalità Avvio protetto**: quando è abilitato l'avvio protetto, il sistema viene forzato a eseguire l'avvio in uno stato attendibile predefinito. Inoltre, quando è abilitato l'avvio protetto, i componenti di base usati per avviare il computer devono avere le firme di crittografia corrette considerate attendibili dall'organizzazione che ha prodotto il dispositivo. Il firmware UEFI effettua questa verifica prima dell'avvio del computer. Se un file è stato manomesso modificandone la firma, il sistema non verrà avviato.
+
+  > [!IMPORTANT]
+  > I dispositivi Windows non supportano l'installazione di software **antimalware ad esecuzione anticipata** di terze parti come parte dell'attestazione dell'integrità dei dispositivi.
 
   Per informazioni su come funziona il servizio di attestazione dell'integrità, vedere l'articolo relativo al [CSP per l'attestazione dell'integrità](https://msdn.microsoft.com/library/dn934876.aspx).
 ###  <a name="device-property-settings"></a>Impostazioni delle proprietà dei dispositivi
@@ -151,9 +155,4 @@ Per trovare la versione del sistema operativo da usare per le impostazioni **Ver
 
 - Per i PC che eseguono Windows 10, la versione deve essere impostata come **10.0** più il numero di build del sistema operativo che il comando **winver** restituisce. Ad esempio, potrebbe essere simile a 10.0.10586.
 > ![Versione della build del sistema operativo evidenziata nella finestra di dialogo "Informazioni su Windows"](./media/ca_win10-os-version.png)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

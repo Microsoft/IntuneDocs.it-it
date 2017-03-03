@@ -12,9 +12,11 @@ ms.technology:
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 115eae8e2d733397eb4b0f025789ca7d0522a845
-ms.openlocfilehash: 5dc90c1e1ddba91fe8bbb4530eb09bca0c9e3ac9
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 6277f82483eb8fb7f5a4e4a832a909490ba0050c
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -45,7 +47,9 @@ Se non lo si è già fatto, preparare la gestione di dispositivi mobili [imposta
 2. **Creare record CNAME** (facoltativo)<br>
 Creare record di risorse DNS **CNAME** per il dominio aziendale. Ad esempio, se il sito Web aziendale è contoso.com, si creerà un CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
 
-    Anche se la creazione di record CNAME DNS è facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record CNAME, viene richiesto all'utente di immettere manualmente il nome del server MDM, enrollment.manage.microsoft.com.    
+
+    Anche se la creazione di record CNAME DNS è facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record CNAME, viene richiesto all'utente di immettere manualmente il nome del server MDM, https://enrollment.manage.microsoft.com.
+
 
     I record di risorse CNAME devono contenere le informazioni seguenti:
 
@@ -70,12 +74,9 @@ Creare record di risorse DNS **CNAME** per il dominio aziendale. Ad esempio, se 
 
     Per altre informazioni sulle attività per gli utenti finali, vedere [Informazioni sull'uso di Microsoft Intune per gli utenti finali](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
 
+Per altre informazioni sulle attività per gli utenti finali, vedere       - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](how-to-educate-your-end-users-about-microsoft-intune.md)
+      - [Uso del dispositivo Windows con Intune](../enduser/using-your-windows-device-with-intune.md)
 
 ### <a name="see-also"></a>Vedere anche
 [Prerequisiti per la registrazione dei dispositivi in Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

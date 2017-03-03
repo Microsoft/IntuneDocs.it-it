@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,35 +13,30 @@ ms.technology:
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 searchScope:
 - Company Portal
-ROBOTS: 
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
-ms.openlocfilehash: 8e6aaaa40b28b1d3f61399c695530321824c2a05
+ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
+ms.openlocfilehash: 0c594c7a22a86ab576c9bdb191ed02f13cdcc19c
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="using-your-ios-or-macos-device-with-intune"></a>Uso del dispositivo iOS o macOS con Intune
 
-Questo articolo contiene collegamenti a tutte le attività che gli utenti finali possono eseguire sui dispositivi gestiti da Intune. Gli amministratori IT possono usare queste informazioni per vedere i passaggi che gli utenti devono seguire per svolgere un'ampia gamma di attività, raggruppate nelle categorie seguenti:
-- Installazione dell'app Portale aziendale e registrazione in Intune
-- Attività di gestione di post-registrazione
-- Problemi di conformità
+Esistono una serie di operazioni che è possibile eseguire con Intune per agevolare il lavoro. L'elenco seguente include le operazioni più comuni che potrebbero essere richieste dalla propria azienda.
 
-## <a name="company-portal-app-installation-and-intune-enrollment"></a>Installazione dell'app Portale aziendale e registrazione in Intune
-
-Le informazioni contenute in questa sezione consentono agli utenti di installare il portale aziendale di Intune e di registrare dispositivi iOS.
+## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Registrazione in Intune e installazione del portale aziendale
 
 - [Installare e accedere all'app Portale aziendale di Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Registrare il dispositivo iOS in Intune](enroll-your-device-in-intune-ios.md)
 - [Registrare il dispositivo macOS in Intune](enroll-your-device-in-intune-macos.md)
 - [Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
-## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Operazioni che gli utenti possono eseguire quando il loro dispositivo è registrato in Intune
-
-Le informazioni contenute in questa sezione illustrano le azioni che gli utenti possono eseguire dopo aver registrato il dispositivo iOS in Intune.
+## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>Operazioni che è possibile eseguire quando il dispositivo è registrato in Intune
 
 - [Usare le app gestite nel dispositivo](use-managed-apps-on-your-device-ios.md)
 - [Impostare o modificare il passcode](set-or-change-your-passcode-ios.md)
@@ -50,25 +45,5 @@ Le informazioni contenute in questa sezione illustrano le azioni che gli utenti 
 - [Annullare la registrazione del dispositivo in Intune](unenroll-your-device-from-intune-ios.md)
 - [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 - [Cosa succede se si reimposta il dispositivo personale con l'app Portale aziendale?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
-- [Sincronizzare il dispositivo manualmente](sync-your-device-manually-ios.md)
-
-## <a name="steps-to-fix-device-and-compliance-issues"></a>Procedure per risolvere i problemi del dispositivo e di conformità
-
-Le informazioni contenute in questa sezione consentono di risolvere i problemi che si potrebbero verificare quando il dispositivo iOS viene registrato in Intune.
-
-- [Come riconnettere un dispositivo iOS compromesso](how-to-reconnect-a-compromised-ios-device.md)
-- [Inviare gli errori all'amministratore IT](send-errors-to-your-it-admin-ios.md)
-- [Si verifica un errore durante l'uso dell'app Portale aziendale](you-get-an-error-while-using-the-company-portal-app-ios.md)
-- [Si verificano errori durante la registrazione del dispositivo in Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
-- [Viene richiesto di identificare il dispositivo durante il tentativo di registrazione](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
-- [Come trovare il numero di serie del dispositivo](how-do-i-find-the-serial-number-on-my-device-ios.md)
-- [Il dispositivo non ha la versione minima richiesta del sistema operativo](you-need-to-update-your-ios-device.md)
-- [Il dispositivo non è conforme alla versione massima del sistema operativo](you-need-to-update-your-ios-device.md)
-- [Richiesta di installare Lookout for Work nel dispositivo iOS](you-are-prompted-to-install-lookout-for-work-ios.md)
-- [È necessario risolvere una minaccia rilevata da Lookout for Work nel dispositivo iOS](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+- [Sincronizzare manualmente il dispositivo](sync-your-device-manually-ios.md)
 

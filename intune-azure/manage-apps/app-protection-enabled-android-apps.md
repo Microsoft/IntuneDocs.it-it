@@ -1,5 +1,6 @@
 ---
-title: App Android con i criteri di protezione delle app | Anteprima di Intune in Azure | Documentazione Microsoft
+title: App Android con criteri di protezione delle app
+titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: questo argomento descrive cosa accade quando l&quot;app Android è gestita da criteri di protezione delle app."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 949686ea8a13072e820d1fdc4f14a22e2730e8f1
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 896a7143bc0b7ec80f69482681f4ed17d79661d4
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -80,9 +83,4 @@ Sono supportati i tipi di file seguenti:
 
 ### <a name="see-also"></a>Vedere anche
 [Creare e distribuire i criteri di protezione delle app con Microsoft Intune](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

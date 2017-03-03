@@ -1,5 +1,6 @@
 ---
-title: Criteri di accesso condizionale per Exchange locale| Anteprima di Intune in Azure | Documentazione Microsoft
+title: Criteri di accesso condizionale per Exchange locale
+titleSuffix: Intune Azure preview
 description: 'Anteprima di Intune in Azure: come configurare l&quot;accesso condizionale per Exchange locale ed Exchange Online dedicato legacy su Intune.'
 keywords: 
 author: andredm7
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 581f9be824ea883fd0208abc3b2ecc09174cb911
-ms.openlocfilehash: a80d6a19948291cc80e42ad5a9a2f016effb2f37
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a9edd882e2cf0fb7abf50002e9f1e8dfd5634fe1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -96,9 +99,4 @@ L'applicazione **Mail** in Windows 8.1 e versioni successive (se registrata con 
   - Quando si imposta questa opzione per bloccare l'accesso, inizialmente viene bloccato l'accesso di tutti i dispositivi a Exchange locale.  I dispositivi che appartengono agli utenti in **Gruppi inclusi** avranno l'accesso una volta che il dispositivo viene registrato in Intune e ritenuto conforme. I dispositivi Android che non eseguono Samsung KNOX standard saranno sempre bloccati poiché non supportano questa impostazione.
 10. In **Eccezioni della piattaforma del dispositivo** scegliere **Aggiungi** per specificare le piattaforme. Se l'opzione **Accesso al dispositivo non gestito** è impostata su **Bloccato**, i dispositivi conformi e registrati potranno accedere anche se è presente un'eccezione che blocca la piattaforma. Scegliere **OK** per salvare le impostazioni.
 11. Nel pannello **Locale** fare clic su **Salva** per salvare il criterio di accesso condizionale.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

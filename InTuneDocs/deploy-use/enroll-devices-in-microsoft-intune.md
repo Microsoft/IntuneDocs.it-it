@@ -2,10 +2,10 @@
 title: Registrare i dispositivi | Documentazione Microsoft
 description: Gestione dei dispositivi mobili (MDM) usa la registrazione per gestire i dispositivi e consentire l&quot;accesso alle risorse.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
-ms.openlocfilehash: 483fd327be25a1cb08e5295d72a27987ab018062
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -37,7 +38,7 @@ La tabella seguente illustra i metodi di registrazione di Intune con le relative
 
 - **Cancellazione** - Indica se il dispositivo deve essere cancellato prima che gli utenti possano registrarlo. Il termine "cancellazione" significa il ripristino delle impostazioni predefinite del dispositivo, con la rimozione di tutti i dati. Per altre informazioni, vedere [Disattivare i dispositivi](retire-devices-from-microsoft-intune-management.md).
 - **Affinità** - Associare i dispositivi agli utenti. Funzionalità richiesta per la gestione di applicazioni per dispositivi mobili (MAM) e l'accesso condizionale ai dati aziendali. Per altre informazioni, vedere [Affinità utente](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Blocco**: indica se agli utenti non è consentito annullare la registrazione per la gestione dei dispositivi. Gli utenti possono annullare la registrazione dei dispositivi su tutte le piattaforme tramite l'app Portale aziendale. Per annullare la registrazione, non possono usare i menu nativi del sistema operativo. 
+- **Blocco**: indica se agli utenti non è consentito annullare la registrazione dei dispositivi personali tramite i menu del sistema operativo nativo. Gli utenti possono annullare la registrazione dei dispositivi su tutte le piattaforme tramite l'app Portale aziendale. 
 
 **Metodi di registrazione per iOS**
 
@@ -130,9 +131,4 @@ Intune può gestire le piattaforme dei dispositivi seguenti:
 - [Prerequisiti per la registrazione del dispositivo](prerequisites-for-enrollment.md)
 - [Gestire i dispositivi di proprietà dell'azienda](manage-corporate-owned-devices.md)
 - [Dispositivi mobili e computer supportati](../get-started/supported-mobile-devices-and-computers.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

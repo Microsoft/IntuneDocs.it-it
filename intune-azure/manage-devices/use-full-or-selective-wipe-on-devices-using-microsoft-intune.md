@@ -1,5 +1,6 @@
 ---
-title: Cancellazione completa o selettiva sui dispositivi con Intune | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Cancellazione completa o selettiva sui dispositivi con Intune
+titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: informazioni sulle modalità per eseguire la cancellazione selettiva dei dati aziendali su un dispositivo o per eseguire la cancellazione completa per il ripristino delle impostazioni predefinite del dispositivo."
 keywords: 
 author: staciebarker
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -122,9 +125,4 @@ La **cancellazione selettiva** rimuove i dati aziendali, compresi i dati sulla g
 3.  Nel pannello che mostra il nome del dispositivo scegliere **Rimuovi i da...** (abbreviazione di Rimuovi i dati aziendali), quindi scegliere **Sì** per confermare la cancellazione.
 
 Se il dispositivo è acceso e connesso, un comando di cancellazione non richiede più di 15 minuti per propagarsi a tutti i tipi di dispositivo.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

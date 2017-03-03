@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: f557aab61a61bde8937d72c99ccf652787170002
+ms.sourcegitcommit: b47b5159a5de5180859a9d3d9edc500b0853448c
+ms.openlocfilehash: dfcc383f88d82ff1a12d917905ca25740f2e9ac0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -30,18 +31,19 @@ Se non si vuole più far gestire il dispositivo dalla propria società o organiz
 
 Per rimuovere il dispositivo:
 
-1.  Aprire il [sito Web del portale aziendale](http://portal.manage.microsoft.com) e toccare il nome del dispositivo da rimuovere.
+1.    Nel [sito Web del portale aziendale](http://portal.manage.microsoft.com) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
 
-2.  Toccare **Rimuovi**.
+  ![Immagine del sito Web del portale aziendale con un menu laterale espanso sul lato sinistro della schermata con i pulsanti Home, Tutte le app, Dispositivi personali, Supporto tecnico e Disconnetti.](/media/iwp-expanded-sidebar.png)
 
-    ![Opzione di rimozione del dispositivo nel sito Web del portale aziendale](./media/iwp-screen-with-all-options.png)
+2. Nella pagina __Dispositivi personali__ selezionare il nome del dispositivo da rimuovere.
 
-3. Leggere il messaggio di avviso e quindi toccare **Rimuovi** per rimuovere il dispositivo dal portale aziendale.
+    ![Screenshot della pagina Dispositivi personali con un paio di dispositivi non identificati sopra il banner con la richiesta di registrare i dispositivi non inclusi nell'elenco o di identificare quelli non identificati.](./media/macOS_enroll_002_tap_here_banner.png)
+
+3.    Il dispositivo verrà aperto in una finestra popup. Toccare il pulsante **Rimuovi**.
+
+      ![Tutte le opzioni per un dispositivo selezionato nel sito Web del portale aziendale, tra cui Rinomina, Rimuovi, Reimposta dispositivo, Reimposta passcode e Blocco remoto. ](./media/iwp-screen-with-all-options.png)
+
+4. Leggere il messaggio di avviso e quindi toccare **Rimuovi** per rimuovere il dispositivo dal portale aziendale.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

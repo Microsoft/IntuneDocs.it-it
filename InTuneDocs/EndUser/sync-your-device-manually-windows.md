@@ -1,5 +1,5 @@
 ---
-title: Sincronizzare il dispositivo Windows manualmente | Documentazione Microsoft
+title: Sincronizzare manualmente il dispositivo Windows | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9dd9a601f2e13a16157a43c28e77db6a6efd1619
-ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
+ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
+ms.openlocfilehash: ff5a4313337c89da00cb87e0f4dd6c8dcc233361
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -27,7 +29,7 @@ ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
 
 A volte, il tentativo di installare un'app nel dispositivo Windows può richiedere più tempo del previsto. In questo caso, è possibile provare a sincronizzare manualmente il dispositivo Windows. La sincronizzazione può essere utile per velocizzare l'installazione.
 
-> [!Note] 
+> [!Note]
 > L'installazione delle app potrebbe richiedere un po' di tempo se si usa una rete lenta o è in corso il download di contenuto da un numero elevato di dispositivi contemporaneamente.
 
 Le versioni di Windows seguenti supportano la sincronizzazione manuale. Sfortunatamente, se il dispositivo usa una versione diversa di Windows, non è possibile avviare una sincronizzazione manuale.
@@ -131,9 +133,4 @@ Sincronizzare manualmente il dispositivo Windows Phone 8.1 per accelerare un'ins
    Nella parte superiore dello schermo viene visualizzato il messaggio "We're synching your account" (Sincronizzazione account in corso) fino al termine della sincronizzazione del dispositivo.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: b8452e55f8ba76e787e43e2239510d7665a561f4
+ms.sourcegitcommit: f413846b6f302502c31ca7b4178ebca4d1e0350e
+ms.openlocfilehash: 8d5165465e0e99462cefaae9494481d618acc80f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -30,18 +31,17 @@ Si potrebbe decidere di voler rinominare il dispositivo per renderne più sempli
 
 Per rinominare il dispositivo:
 
-1.  Aprire il [sito Web del portale aziendale](http://portal.manage.microsoft.com) e toccare il dispositivo di cui si vuole modificare il nome.
+1.    Nel [sito Web del portale aziendale](http://portal.manage.microsoft.com) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
 
-2.  Toccare **Rinomina**.
+2. Nella pagina __Dispositivi personali__ selezionare il nome del dispositivo da rinominare.
 
-    ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+  ![Screenshot della pagina Dispositivi personali con un paio di dispositivi non identificati sopra il banner con la richiesta di registrare i dispositivi non inclusi nell'elenco o di identificare quelli non identificati.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Nella casella in cui viene visualizzato il nome del dispositivo digitare un nuovo nome per il dispositivo e quindi toccare il pulsante **Rinomina**. Il dispositivo viene ora visualizzato con il nuovo nome.
+3.    Il dispositivo verrà aperto in una finestra popup. Toccare il pulsante **Rinomina**.
+
+    ![Tutte le opzioni per un dispositivo selezionato nel sito Web del portale aziendale, tra cui Rinomina, Rimuovi, Reimposta dispositivo, Reimposta passcode e Blocco remoto. ](./media/iwp-screen-with-all-options.png)
+
+4.  Nella casella in cui viene visualizzato il nome del dispositivo digitare un nuovo nome per il dispositivo e quindi toccare il pulsante **Rinomina**. Il dispositivo viene ora visualizzato con il nuovo nome.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
