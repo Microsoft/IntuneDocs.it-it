@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: ab035d069fa1dbf5f5f38a959dc2f896a0109b6f
+ms.sourcegitcommit: 185b7dd1e486155f90956ea1f6f83246636d421c
+ms.openlocfilehash: bcbf2c877aae34baa42e7a51e347489ec8669a34
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -76,7 +77,7 @@ La procedura seguente descrive come registrare i dispositivi iOS al primo utiliz
 
 2. Specificare le informazioni **generali** includendo **Nome** e **Descrizione** e indicare se i dispositivi assegnati al profilo hanno affinità utente o appartengono a un gruppo:
 
-   - **Richiedi affinità utente**: il dispositivo deve essere associato a un utente durante la configurazione iniziale per poter accedere ai dati aziendali e alla posta elettronica con il nome utente. **Affinità utente** deve essere configurata per i dispositivi gestiti tramite DEP che appartengono a utenti che devono usare il portale aziendale, ad esempio per installare app. L'autenticazione a più fattori non funziona durante la registrazione nei dispositivi DEP con affinità utente. Dopo la registrazione, l'autenticazione a più fattori funziona come previsto in questi dispositivi.
+   - **Richiedi affinità utente**: il dispositivo deve essere associato a un utente durante la configurazione iniziale per poter accedere ai dati aziendali e alla posta elettronica con il nome utente. **Affinità utente** deve essere configurata per i dispositivi gestiti tramite DEP che appartengono a utenti che devono usare il portale aziendale, ad esempio per installare app. L'autenticazione a più fattori non funziona durante la registrazione nei dispositivi DEP con affinità utente. Dopo la registrazione, l'autenticazione a più fattori funziona come previsto in questi dispositivi. Per i nuovi utenti a cui è richiesto di modificare la password al primo accesso non è possibile richiedere la password durante la registrazione nei dispositivi DEP. Agli utenti con password scadute, inoltre, non verrà richiesto di reimpostare la password durante la registrazione DEP e devono reimpostarla da un dispositivo diverso. 
 
    > [!NOTE]
    > DEP con affinità utente richiede un endpoint misto/nome utente WS-Trust 1.3 per essere abilitato a richiedere token utente.
@@ -161,9 +162,4 @@ A partire dal mese di dicembre 2016 la gestione dei gruppi di dispositivi passer
 
 ### <a name="see-also"></a>Vedere anche
 [Prerequisiti per la registrazione dei dispositivi](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

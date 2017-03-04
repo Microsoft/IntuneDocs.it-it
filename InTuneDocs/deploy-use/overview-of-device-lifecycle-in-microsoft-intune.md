@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 106b24e73a21d7cd8608c44c4dd7ded4c0eebe4f
+ms.sourcegitcommit: b7a066c1387a97d6100be0e6ab22d78222bf2a30
+ms.openlocfilehash: 3311ba5081c4b04d72fdeb1f9a558ffc2e1b02fc
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -40,15 +42,10 @@ La registrazione dei dispositivi costituisce il primo passaggio. Per poter usufr
 
 ## <a name="protect"></a>Protezione
 Al giorno d'oggi, la protezione dei dispositivi da accessi non autorizzati è una delle attività più importanti da eseguire. Oltre agli elementi descritti nel passaggio **Configurazione** del ciclo di vita del dispositivo, Intune fornisce altre funzionalità che consentono di proteggere i dispositivi gestiti da accessi non autorizzati o attacchi dannosi:
-- [**Multi-Factor Authentication**](protect-windows-devices-with-multi-factor-authentication.md). L'aggiunta di un ulteriore livello di autenticazione agli accessi dell'utente contribuisce a rendere i dispositivi ancora più sicuri. I dispositivi Windows, Windows Phone e Windows Mobile offrono un'autenticazione a più fattori che richiede un secondo livello di autenticazione per l'accesso, ad esempio una telefonata o un messaggio di testo.
+- [**Multi-Factor Authentication**](protect-your-devices-with-microsoft-intune.md). L'aggiunta di un ulteriore livello di autenticazione agli accessi dell'utente contribuisce a rendere i dispositivi ancora più sicuri. Molti dispositivi supportano l'autenticazione a più fattori che richiede un secondo livello di autenticazione per l'accesso, ad esempio una telefonata o un SMS.
 - [**Impostazioni di Microsoft Passport**](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md). Microsoft Passport è un metodo di accesso alternativo che consente agli utenti di usare un *movimento*, ad esempio un'impronta digitale o Windows Hello, per accedere senza dover immettere una password.
 - [**Criteri per proteggere i PC Windows (con il software client di Intune)**](policies-to-protect-windows-pcs-in-microsoft-intune.md). Quando si gestiscono i PC Windows con il software client di Intune, sono disponibili criteri che consentono di controllare le impostazioni per Endpoint Protection, gli aggiornamenti software e Windows Firewall nei PC gestiti.
 
 ## <a name="retire"></a>Ritiro
 È opportuno [ritirare o cancellare](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) il dispositivo quando viene smarrito o rubato e deve essere sostituito oppure quando gli utenti si trasferiscono altrove. Esistono diversi modi per eseguire questa operazione: dal ripristino del dispositivo alla rimozione dalla gestione o alla cancellazione dei dati aziendali contenuti.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

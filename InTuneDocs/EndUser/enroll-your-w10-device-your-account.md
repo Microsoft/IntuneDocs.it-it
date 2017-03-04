@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,30 +16,34 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 32bde9552e79d91dd967050b96cec62146367f9b
+ms.sourcegitcommit: 580ca62628981016c444b2992e792ecc4a5da442
+ms.openlocfilehash: 7afe4eca15c395806bcc800bc261d5e6b7ba5f0c
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrare il dispositivo Windows 10 in Intune
 
-1.  Passare a **Impostazioni** Windows e toccare **Account**.
+1.  Aprire l'app **Impostazioni** di Windows. Passare al **menu Start** e selezionare il pulsante **Impostazioni**. È anche possibile cercare "impostazioni" nella barra di ricerca.
+
+2. Selezionare **Account**.
 
     ![Passaggio a Impostazioni e Account](./media/W10-enroll-1-settings-accounts.png)
 
-2.  Toccare **Account**.
+3. Selezionare **Il tuo account**.
 
-    ![Selezione dell'account personale](./media/W10-enroll-2-accounts-your-account.png)
+    ![Selezionare l'account personale](./media/W10-enroll-2-accounts-your-account.png)
 
-3.  Toccare **Aggiungi un account aziendale o dell'istituto di istruzione**.
+4. Selezionare **Aggiungi un account aziendale o dell'istituto di istruzione**.
 
-    ![Selezione di Aggiungi un account aziendale o dell'istituto di istruzione](./media/w10-enroll-3-add-work-school-acct.png)
+    ![Selezionare Aggiungi un account aziendale o dell'istituto di istruzione](./media/w10-enroll-3-add-work-school-acct.png)
 
-4.  Accedere con le credenziali aziendali o dell'istituto di istruzione.
+5. Accedere con le credenziali aziendali o dell'istituto di istruzione.
 
-    ![sign-in](./media/W10-enroll-4-sign-in.png)
+    ![Accesso](./media/W10-enroll-4-sign-in.png)
 
 Non è ancora possibile accedere agli indirizzi di posta elettronica, ai file o ad altri dati aziendali o dell'istituto di istruzione? Provare a risolvere i problemi di accesso tramite la [risoluzione dei problemi relativi all'account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Se il problema persiste, è necessario contattare l'amministratore IT per assistenza.
 
@@ -47,16 +51,11 @@ Un modo semplice per ottenere assistenza dall'amministratore IT è tramite le in
 
 Se l'app Portale aziendale non è visualizzata nell'elenco di app, seguire questa procedura per installarla.
 
-1.  Toccare **Start** &gt; **Store**.
+1. Selezionare **Start** > **Store**.
 
-2.  Toccare **Cerca** e quindi digitare **portale aziendale**.
+2. Selezionare **Cerca** e quindi digitare **portale aziendale**.
 
-3.  Nell'elenco dei risultati toccare **Portale aziendale** &gt; **Installa**.
+3. Nell'elenco dei risultati selezionare **Portale aziendale** > **Installa**.
 
-4.  Toccare **Installa** o **Gratuito**. Non esiste alcuna differenza tra queste due opzioni per l'utente. L'opzione visualizzata dipende da come l'organizzazione ha configurato l'app Portale aziendale.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+4. Selezionare **Installa** o **Gratuito**. Non esiste alcuna differenza tra queste due opzioni per l'utente. L'opzione visualizzata dipende da come l'organizzazione ha configurato l'app Portale aziendale.
 

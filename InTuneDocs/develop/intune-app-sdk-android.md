@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: ddfd4e8a23f1a7e20230c188ac8203a11e48c4a6
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 178fbaeb1d3235a81cb4da49b7a955f6999c49a2
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -127,7 +129,7 @@ Le classi base di Android devono essere sostituite con il rispettivo equivalente
 
 **Microsoft.Intune.MAM.SDK.Suppot.v4.jar**:
 
-| MAM di Intune - Classe Android | Sostituzione di Intune App SDK |
+| Classe Android    MAM di Intune | Sostituzione di Intune App SDK |
 |--|--|
 | android.support.v4.app.DialogFragment | MAMDialogFragment
 | android.support.v4.app.FragmentActivity | MAMFragmentActivity
@@ -677,7 +679,7 @@ public final class MAMDataProtectionManager {
      * @param input
      *            Input stream to get information on. Either this input
  *            stream must have been returned by a previous call to
-     *            protect OR input.markSupported() must return true.
+      *            protect OR input.markSupported() must return true.
  *            Otherwise it will be impossible to get protection info
  *            without advancing the stream position. The stream must be
  *            positioned at the beginning of the protected data.
@@ -752,9 +754,4 @@ Intune SDK mantiene il contratto fornito dall'API Android, ma potrebbero essere 
 * Tutte le funzioni derivate devono effettuare chiamate attraverso le rispettive versioni delle superclassi.
 
 * Evitare un uso ambiguo di qualsiasi API. Ad esempio, usare `Activity.startActivityForResult/onActivityResult` senza il controllo di `requestCode` provocherà un comportamento anomalo.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
