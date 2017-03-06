@@ -193,9 +193,12 @@
 ### [Cancellare i dati dell'app aziendale gestita](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Informare gli utenti finali su Intune](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Modalità di recupero delle app per gli utenti di Android](deploy-use/how-your-android-users-get-their-apps.md)
-### [Modalità di recupero delle app per gli utenti di iOS](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Modalità di recupero delle app per gli utenti di Windows](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Uso di un dispositivo Android con Intune](EndUser/using-your-android-device-with-intune.md)
+#### [Modalità di recupero delle app per gli utenti di Android](deploy-use/how-your-android-users-get-their-apps.md)
+### [Uso di un dispositivo iOS con Intune](EndUser/using-your-iOS-or-macos-device-with-intune.md)
+#### [Modalità di recupero delle app per gli utenti di iOS](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Uso di un dispositivo Windows con Intune](EndUser/using-your-windows-device-with-intune.md)
+#### [Modalità di recupero delle app per gli utenti di Windows](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Sviluppare e personalizzare le app
 ## [Panoramica di Microsoft Intune App SDK](develop/intune-app-sdk.md)
