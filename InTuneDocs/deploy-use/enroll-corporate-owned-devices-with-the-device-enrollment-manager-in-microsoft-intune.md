@@ -2,8 +2,8 @@
 title: Registrare con il manager di registrazione dispositivi | Documentazione Microsoft
 description: "L&quot;account del manager di registrazione dispositivi consente di gestire un numero elevato di dispositivi mobili condivisi e di proprietà dell&quot;azienda con un unico account utente."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/17
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
 ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
+ms.lasthandoff: 02/04/2017
 
 
 ---
@@ -106,9 +107,4 @@ L'eliminazione di un manager di registrazione dispositivi non influisce sui disp
 -   Le credenziali dell'account del manager di registrazione dispositivi eliminato non possono ancora cancellare o disattivare i dispositivi.
 
 -   La relazione dell'account del manager di registrazione dispositivi eliminato con i dispositivi registrati resta valida, ma non è possibile registrare ulteriori dispositivi.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

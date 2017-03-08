@@ -2,8 +2,8 @@
 title: Gestione del servizio DEP di Apple per i dispositivi iOS | Documentazione Microsoft
 description: "Distribuire un profilo di registrazione che registra i dispositivi iOS acquistati tramite il programma di registrazione dispositivi (DEP) in modalità wireless per gestire i dispositivi Apple."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

@@ -2,8 +2,8 @@
 title: Come ottenere supporto | Documentazione Microsoft
 description: "Il supporto è disponibile sia online che telefonicamente per le sottoscrizioni a pagamento e di valutazione."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
 ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.lasthandoff: 01/28/2017
 
 
 ---
@@ -146,9 +147,4 @@ Il supporto "Break-fix" è incluso con le sottoscrizioni a Microsoft Intune e al
 Se un tecnico del supporto chiede di aprire altre richieste per problemi aggiuntivi, lo fa nell'interesse degli utenti. Grazie per la comprensione e la collaborazione che ci aiutano a offrirvi esperienze di supporto di qualità sempre più elevata.
 
 Per i costi di ogni richiesta e i livelli di gravità, vedere [Opzioni di supporto professionale](https://support.microsoft.com/gp/offerprophone).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -2,8 +2,8 @@
 title: Usare i criteri per semplificare la gestione dei PC Windows | Documentazione Microsoft
 description: Descrive i criteri di gestione dei PC Windows ed elenca le impostazioni per Microsoft Intune Center.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -61,9 +62,4 @@ Vedere le risorse seguenti per informazioni sui criteri e le impostazioni che è
 ### <a name="see-also"></a>Vedere anche
 
 [Attività comuni di gestione di PC Windows con il client software di Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

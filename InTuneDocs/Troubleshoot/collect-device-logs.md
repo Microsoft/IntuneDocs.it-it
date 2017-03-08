@@ -2,8 +2,8 @@
 title: Raccogliere i log dei dispositivi | Documentazione Microsoft
 description: Informazioni su come raccogliere registri da dispositivi gestiti.
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 02/07/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 211b996263aae7a42f8370eb343c7e759ef87790
 ms.openlocfilehash: 5aae8edd2b851eb94156e82bc9b6e604644cb900
+ms.lasthandoff: 02/08/2017
 
 
 ---
@@ -57,9 +58,4 @@ Nell'app Portale aziendale di Windows Phone l'utente deve scegliere i tre puntin
 ### <a name="windows"></a>Windows
 
 Per il portale aziendale di Windows i log si trovano in *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState*.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

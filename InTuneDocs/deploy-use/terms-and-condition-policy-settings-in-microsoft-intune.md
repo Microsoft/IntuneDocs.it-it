@@ -2,8 +2,8 @@
 title: Impostazioni dei criteri relativi termini e condizioni | Documentazione Microsoft
 description: "È possibile distribuire termini e condizioni di Intune a gruppi di utenti per spiegare in che modo la registrazione, l&quot;accesso alle risorse di lavoro e l&quot;uso dell&quot;app Portale aziendale influiscono su dispositivi e utenti."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -82,9 +83,4 @@ Quando si modifica un criterio esistente relativo a termini e condizioni, è pos
 
 ### <a name="see-also"></a>Vedere anche
 [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

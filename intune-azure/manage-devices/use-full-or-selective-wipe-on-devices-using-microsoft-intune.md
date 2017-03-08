@@ -3,8 +3,8 @@ title: Cancellazione completa o selettiva sui dispositivi con Intune
 titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: informazioni sulle modalità per eseguire la cancellazione selettiva dei dati aziendali su un dispositivo o per eseguire la cancellazione completa per il ripristino delle impostazioni predefinite del dispositivo."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

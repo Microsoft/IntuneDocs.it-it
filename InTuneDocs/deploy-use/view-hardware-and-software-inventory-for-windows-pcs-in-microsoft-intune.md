@@ -2,8 +2,8 @@
 title: Visualizzare l&quot;inventario software e hardware per PC Windows | Documentazione Microsoft
 description: Come visualizzare informazioni sull&quot;hardware e il software di desktop Windows gestiti come PC con il client software di Intune.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 8425cee511cdd54e051a93a10a941142c33df893
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -66,8 +67,3 @@ Intune raccoglie informazioni dettagliate sull'hardware e sul software dei deskt
 ### <a name="see-also"></a>Vedere anche
 
 [Attività comuni di gestione di PC Windows con il client software di Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-

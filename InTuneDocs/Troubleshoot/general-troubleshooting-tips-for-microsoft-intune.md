@@ -2,7 +2,8 @@
 title: Suggerimenti generali per la risoluzione dei problemi | Microsoft Docs
 description: Risorse generali per risolvere problemi con Intune.
 keywords: 
-author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/08/2016
 ms.topic: article
@@ -16,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
 ms.openlocfilehash: ef6c482a45a7c759cec1062b129d2644562d0da2
+ms.lasthandoff: 01/10/2017
 
 
 ---
@@ -94,9 +96,4 @@ Gli argomenti seguenti illustrano la risoluzione dei problemi per problemi speci
 [Risolvere i problemi di installazione client in Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Risolvere i problemi degli aggiornamenti software in Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

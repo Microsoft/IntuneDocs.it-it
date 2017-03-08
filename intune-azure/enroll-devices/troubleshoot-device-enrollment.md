@@ -3,8 +3,8 @@ title: Risolvere i problemi di registrazione dei dispositivi
 titleSuffix: Intune Azure preview
 description: 'Anteprima di Intune in Azure: informazioni su come risolvere i problemi di registrazione dei dispositivi.'
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

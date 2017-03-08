@@ -2,8 +2,8 @@
 title: Registrazione diretta per i dispositivi iOS | Documentazione Microsoft
 description: "Usare lo strumento Apple Configurator per registrare direttamente i dispositivi iOS di proprietà dell&quot;azienda con un criterio predefinito mediante connessione USB a un computer Mac."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
