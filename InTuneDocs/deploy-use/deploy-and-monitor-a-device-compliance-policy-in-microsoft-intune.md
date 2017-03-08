@@ -1,5 +1,5 @@
 ---
-title: "Distribuire e monitorare i criteri di conformità | Microsoft Intune"
+title: "Distribuire e monitorare i criteri di conformità | Documentazione Microsoft"
 description: "Usare le istruzioni dettagliate in questo argomento per distribuire e monitorare i criteri di conformità del dispositivo."
 keywords: 
 author: andredm7
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c5c7ed25942a2f7c570bd81aa1e6c08483c0417b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 59c107b9431d4e2925b13d09ab3e01a25c8351fa
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Distribuire e monitorare i criteri di conformità di un dispositivo in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="deploy-a-compliance-policy"></a>Distribuire i criteri di conformità
 Distribuire i criteri di conformità [creati](create-a-device-compliance-policy-in-microsoft-intune.md) a uno o più gruppi di utenti nell'organizzazione. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata sui dispositivi dell’utente.
 
@@ -67,9 +72,4 @@ Per informazioni su come usare i criteri di conformità con i criteri di accesso
 
 ### <a name="see-also"></a>Vedere anche
 [Introduzione ai criteri di conformità del dispositivo in Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

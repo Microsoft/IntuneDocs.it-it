@@ -1,5 +1,5 @@
 ---
-title: Proteggere le app line-of-business in dispositivi non registrati | Microsoft Intune
+title: Proteggere le app line-of-business in dispositivi non registrati | Documentazione Microsoft
 description: Questo argomento illustra come preparare le app line-of-business in modo da applicare i criteri di gestione delle applicazioni mobili che consentono di evitare la perdita di dati.
 keywords: 
 author: mtillman
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Proteggere app e dati line-of-business su dispositivi non registrati
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 I criteri di gestione delle applicazioni mobili consentono di proteggere i dati aziendali limitando le azioni che possono causare la perdita dei dati aziendali e applicando i requisiti di accesso ai dati, ad esempio il PIN dell'app. Prima di applicare i criteri di gestione delle applicazioni mobili alle app line-of-business per iOS e Android, è necessario eseguire il wrapping dell'app con lo strumento di wrapping delle app di Microsoft Intune. Il wrapping dell’app è il processo di applicazione di un livello di gestione a un'app per dispositivi mobili senza alcuna modifica dell'applicazione sottostante. Dopo aver eseguito il wrapping, è possibile applicare i criteri MAM all'app e distribuirla agli utenti.  
 
@@ -44,7 +48,7 @@ Per associare l'app line-of-business ai criteri MAM, è necessario aggiungere i 
 2. Nel pannello **App line-of-business** scegliere **Aggiungi app personalizzata**.
 
   ![Screenshot del pannello App line-of-business con il pulsante Aggiungi app personalizzata nella parte superiore](../media/mam-azure-portal-add-lob-app-action.png)
-3.  Specificare il nome dell'app, l'identificatore del bundle nel campo Identificatore dell'app e la piattaforma (iOS o Android).
+3.    Specificare il nome dell'app, l'identificatore del bundle nel campo Identificatore dell'app e la piattaforma (iOS o Android).
 
   ![Screenshot del pannello Aggiungi app personalizzata](../media/mam-azure-portal-add-app-details.png)
 
@@ -69,18 +73,13 @@ Per la modifica di dettagli dell'app come il nome o l'identificatore bundle è n
 ##  <a name="remove-apps"></a>Rimuovere app
 È possibile rimuovere un'app line-of-business dall'elenco di app. L'app viene rimossa dall'elenco e l'associazione ai criteri MAM viene eliminata. L'app, tuttavia, non viene rimossa o disinstallata dal dispositivo dell'utente.  
 
-1.  Nel [portale di Azure](https://portal.azure.com/) passare a **Gestione di applicazioni mobili di Intune** > **Impostazioni**. Nel pannello **Impostazioni** scegliere **Line-of-business** per aprire l'elenco delle app esistenti.  
-2.  Chiudere l'app da rimuovere e scegliere **(...)**.
+1.    Nel [portale di Azure](https://portal.azure.com/) passare a **Gestione di applicazioni mobili di Intune** > **Impostazioni**. Nel pannello **Impostazioni** scegliere **Line-of-business** per aprire l'elenco delle app esistenti.  
+2.    Chiudere l'app da rimuovere e scegliere **(...)**.
 
   ![Screenshot del pannello App line-of-business con il menu con puntini di sospensione](../media/mam-azure-portal-lob-context-menu.png)
-3.  Scegliere **Elimina applicazione** per eliminare l'app.
+3.    Scegliere **Elimina applicazione** per eliminare l'app.
 
   ![Screenshot del pannello line-of-business con l'opzione di eliminazione dell'applicazione](../media/mam-azure-portal-delete-app.png)
 
   Le app vengono rimosse dall'elenco di app line-of-business e dall'elenco delle app di destinazione nel criterio MAM.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

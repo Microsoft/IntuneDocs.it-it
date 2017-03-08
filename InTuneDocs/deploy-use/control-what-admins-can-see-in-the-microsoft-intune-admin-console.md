@@ -1,11 +1,11 @@
 ---
-title: Personalizzare le visualizzazioni della console per i ruoli di amministratore | Microsoft Intune
+title: Personalizzare le visualizzazioni della console per i ruoli di amministratore | Documentazione Microsoft
 description: Usare questo argomento per filtrare la visualizzazione della console di amministrazione di Intune per consentire agli amministratori di visualizzare solo gli elementi necessari per il proprio ruolo.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,22 @@ ms.technology:
 ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 02448f2f960d98b28780798b469aea23cdab0e2d
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
+ms.lasthandoff: 12/30/2016
 
 
 ---
 
-# Personalizzare le visualizzazioni della console di Intune in base ai ruoli di amministratore
+# <a name="customize-intune-console-views-according-to-admin-roles"></a>Personalizzare le visualizzazioni della console di Intune in base ai ruoli di amministratore
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 È possibile filtrare la visualizzazione della console di amministrazione di Microsoft Intune per consentire gli amministratori di visualizzare solo gli elementi necessari per il proprio ruolo. Ad esempio, è possibile consentire solo agli operatori della console di amministrazione di aggiornare le definizioni malware o reimpostare il passcode su dispositivi. Questa operazione viene eseguita usando il set di impostazioni **designazioni** che è possibile assegnare a utenti specifici. Quando gli utenti accedono alla console di amministrazione, possono vedere solo gli elementi specifici di loro designazione.
 
-## Per creare una visualizzazione personalizzata
+## <a name="to-create-a-custom-view"></a>Per creare una visualizzazione personalizzata
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Amministrazione**&gt;**Amministratori dei servizi**.
 
@@ -66,9 +71,4 @@ ms.openlocfilehash: 02448f2f960d98b28780798b469aea23cdab0e2d
         -   Reimpostare un passcode
 
 Il livello di accesso designato viene assegnato all'amministratore configurato quando apre la console di amministrazione di Intune.
-
-
-
-<!--HONumber=Oct16_HO4-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Creare criteri di conformità dei dispositivi | Microsoft Intune"
+title: "Creare criteri di conformità dei dispositivi | Documentazione Microsoft"
 description: "Creare criteri di conformità per consentire ai dispositivi mobili e ai PC in uso di accedere ai dati della società."
 keywords: 
 author: andredm7
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 21875001129da8f5ca01869fa69960f18ae28c56
+ms.lasthandoff: 12/10/2016
 
 
 ---
 
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Creare criteri di conformità dei dispositivi in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 In questo argomento sono illustrati i passaggi per creare criteri di conformità che un dispositivo deve osservare per essere considerato conforme.
 
 ##  <a name="step-1-add-a-new-policy"></a>Passaggio 1: Aggiungere nuovi criteri
@@ -28,7 +33,7 @@ In questo argomento sono illustrati i passaggi per creare criteri di conformità
 
   ![Schermata della pagina dei criteri di conformità nella console di amministrazione di Intune, con l'opzione Aggiungi visualizzata nel menu in alto nella pagina](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  <a name="step-2-configure-settings"></a>Passaggio 2: Configurare le impostazioni
+##  <a name="step-2--configure-settings"></a>Passaggio 2: Configurare le impostazioni
 Nella pagina **Crea criterio** abilitare le impostazioni richieste:
   -   Impostazioni di protezione del sistema, come la password e la crittografia.
   -   Impostazioni di integrità del dispositivo, ad esempio se il dispositivo è jailbroken oppure se viene segnalato come integro dal servizio di attestazione dell'integrità di Windows.
@@ -85,9 +90,4 @@ Per altre informazioni sulle impostazioni di conformità supportate in ogni piat
 
 ### <a name="see-also"></a>Vedere anche
 [Introduzione ai criteri di conformità dei dispositivi](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
