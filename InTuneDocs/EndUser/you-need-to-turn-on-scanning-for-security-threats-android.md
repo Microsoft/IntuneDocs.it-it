@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: 04e27d9c0752ac5b5d29bdbdb3033e989a3945f9
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -29,9 +30,4 @@ Il dispositivo Android è in grado di scaricare e installare app che possono ese
 Per attivare questa ricerca, scegliere **Impostazioni** > **Google** > **Sicurezza**e attivare **Cerca minacce per la sicurezza nel dispositivo**.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

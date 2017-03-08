@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ab3242d9-1063-4356-a3ac-6f0d8fe379e4
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 5311b186af1e17994eaf67c53541ccac19482a92
 ms.openlocfilehash: d804f30163f68cbca8cb8f7e6962d7ec8f42366e
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -31,9 +32,4 @@ ms.openlocfilehash: d804f30163f68cbca8cb8f7e6962d7ec8f42366e
 Per aggiornare il dispositivo iOS, toccare **Impostazioni** > **Generale** > **Aggiornamento software**.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

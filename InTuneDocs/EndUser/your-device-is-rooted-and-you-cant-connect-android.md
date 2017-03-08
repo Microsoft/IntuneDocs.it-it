@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bebc6cb1d44e99f8337a057eadfae676904ea3d
 ms.openlocfilehash: 27b57f7f8723a1271442b4ed18e219660959b0a8
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -37,9 +38,4 @@ Esistono un paio di modi più comuni in cui il dispositivo potrebbe essere diven
 - È possibile che il produttore del dispositivo abbia installato un prodotto che il software di rilevamento radice ritiene rappresenti un rischio per la sicurezza. In questo caso, sarà necessario contattare l'amministratore IT per assistenza. Per informazioni sul contatto passare al [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 Se è stato l'utente a rendere rooted il dispositivo, sarà necessario invertire il processo e ripristinare lo stato unrooted del dispositivo.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

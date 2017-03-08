@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: fc48199acad7a65bd4a06b5a51f6f5b851997edb
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -32,9 +33,4 @@ Microsoft raccoglie automaticamente determinati dati per i suoi prodotti e servi
 Se si desidera disattivare la raccolta dei dati di utilizzo nel dispositivo Windows personale, trovare l'impostazione **Dati di utilizzo** nell'app Portale aziendale.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

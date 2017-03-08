@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d6fcfac7c8bd469f5163ec9b4017ae8c3d486428
 ms.openlocfilehash: 88770ba06718a767f8229e1b5aa4d543c87bc852
+ms.lasthandoff: 01/05/2017
 
 ---
 
@@ -71,9 +72,4 @@ Per risolvere questo problema e ottenere il certificato richiesto, è necessario
 7. Aprire nuovamente l'app Portale aziendale. Accedere all'app Portale aziendale. Per assistenza, contattare l'amministratore IT.
 
 Se viene visualizzato di nuovo il messaggio "Certificato mancante" illustrato in precedenza ed è già stata eseguita la procedura precedente, è probabile che ci sia un altro certificato da installare con il supporto dell'amministratore IT. Per indicazioni sull'uso delle informazioni di contatto disponibili nel [sito Web del portale aziendale](http://portal.manage.microsoft.com), contattare l'amministratore IT.
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

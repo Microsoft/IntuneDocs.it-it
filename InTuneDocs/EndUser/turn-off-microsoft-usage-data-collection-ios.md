@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: cea226a32c5c2c6d49f1444e55a986d0c68d5448
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -31,9 +32,4 @@ Microsoft raccoglie automaticamente determinati dati per i suoi prodotti e servi
 Per disattivare la raccolta dei dati di utilizzo nel dispositivo iOS, andare a **Impostazioni**, toccare **Portale aziendale** e quindi disattivare l'impostazione **Dati di utilizzo**.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
