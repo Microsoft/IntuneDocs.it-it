@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -40,7 +40,6 @@ Esistono una serie di operazioni che è possibile eseguire con Intune per agevol
 
 - [Usare le app gestite nel dispositivo](use-managed-apps-on-your-device-ios.md)
 - [Impostare o modificare il passcode](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Ripristinare (cancellare) un dispositivo smarrito o rubato](reset-erase-your-device-cpwebsite.md)
 - [Disattivare la raccolta dati di utilizzo di Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 - [Annullare la registrazione del dispositivo in Intune](unenroll-your-device-from-intune-ios.md)

@@ -43,7 +43,6 @@ Esistono una serie di operazioni che è possibile eseguire con Intune per agevol
 - [Impostare il PIN o la password](set-your-pin-or-password-android.md)
 - [Installare la rete privata virtuale (VPN) dell'azienda](install-your-companys-virtual-private-network-VPN-android.md)
 - [Impostare l'intervallo prima che il dispositivo venga bloccato](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Ripristinare (cancellare) un dispositivo smarrito o rubato](reset-erase-your-device-cpwebsite.md)
 - [Disattivare la raccolta dati di utilizzo di Microsoft](turn-off-microsoft-usage-data-collection-android.md)
 - [Annullare la registrazione del dispositivo in Intune](unenroll-your-device-from-intune-android.md)
