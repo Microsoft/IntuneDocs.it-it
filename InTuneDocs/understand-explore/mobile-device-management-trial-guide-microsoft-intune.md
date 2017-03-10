@@ -16,6 +16,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -118,9 +119,4 @@ Open the Company Portal on the mobile device, choose **Apps**, and then install 
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Creare gruppi per organizzare utenti e dispositivi](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
