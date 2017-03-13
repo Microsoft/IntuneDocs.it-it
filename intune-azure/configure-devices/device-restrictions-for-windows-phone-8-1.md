@@ -1,5 +1,6 @@
 ---
-title: Impostazioni relative alle restrizioni del dispositivo di Intune per Windows Phone 8.1 | Anteprima di Intune Azure | Documentazione Microsoft
+title: Impostazioni relative alle restrizioni dei dispositivi per Windows Phone 8.1
+titleSuffix: Intune Azure preview
 description: "Anteprima di Intune Azure: informazioni sulle opzioni di Intune che è possibile usare per controllare le impostazioni e le funzionalità del dispositivo con Windows Phone 8.1."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 32bc9adb88803385c26894e8a70513a4adc55b27
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 175401f05b10e7c8fdece996403832490e102a98
+ms.lasthandoff: 02/18/2017
 
 
 ---

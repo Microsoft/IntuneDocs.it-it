@@ -1,5 +1,6 @@
 ---
-title: Come assegnare i profili di dispositivo con Intune | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Come assegnare i profili di dispositivo con Intune
+titleSuffix: Intune Azure preview
 description: 'Anteprima di Intune in Azure: dopo aver creato un profilo di dispositivo con Intune, usare questo argomento per informazioni su come assegnarlo ai dispositivi.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 0bc43e59c63fb07b07187bd9b8ae78fbc3aa0557
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 861e14227b847422d584d69364315a2418a986de
+ms.lasthandoff: 02/18/2017
 
 
 ---

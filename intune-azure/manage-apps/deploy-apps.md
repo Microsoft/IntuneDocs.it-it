@@ -1,5 +1,6 @@
 ---
-title: Come assegnare app ai gruppi | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Come assegnare app ai gruppi
+titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: dopo aver aggiunto un&quot;app a Intune, è opportuno assegnarla ai gruppi di utenti o dispositivi."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 638ad0d87c19c9e40e96b42d18e5c4342f40a156
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
+ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -42,6 +44,33 @@ Le app possono essere assegnate ai dispositivi gestiti o non gestiti da Intune. 
 
 > [!NOTE]
 > Attualmente, è possibile assegnare app iOS e Android (sia linea di business che acquistate nello store) a dispositivi non registrati con Intune.
+
+## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Modifiche della modalità di assegnazione delle app ai gruppi nell'anteprima di Intune
+
+Nell'anteprima di Intune di Azure per assegnare le app non vengono più usati i gruppi di Intune ma i gruppi di sicurezza di Azure Active Directory (Azure AD). Per questa ragione è necessario conoscere le modifiche apportate alla modalità di assegnazione delle app, in particolare in presenza di app assegnate a gruppi figlio di Intune.
+L'aspetto più importante da notare è l'assenza del concetto di gruppi figlio in Azure AD. È possibile tuttavia che alcuni gruppi contengano gli stessi membri. In questo caso, il comportamento di Intune classico è diverso da quello dell'anteprima di Intune di Azure. La tabella seguente descrive le differenze:
+
+||||||
+|-|-|-|-|-|
+|**Intune classico (prima della migrazione del tenant)**|-|**Intune di Azure (dopo il completamento della migrazione del tenant)**|-|**Altre informazioni**|
+|**Intento della distribuzione del gruppo padre**|**Intento della distribuzione del gruppo figlio**|**Intento dell'assegnazione risultante per i membri comuni del gruppo padre e figlio precedente**|**Intento dell'assegnazione risultante per i membri del gruppo padre**|-|    
+|Disponibile|Richiesto|Richiesto e disponibile|Disponibile|Richiesto e disponibile indica che le app assegnate come richieste possono essere visualizzate anche nell'app Portale aziendale.
+|Non applicabile|Disponibile|Non applicabile|Non applicabile|Soluzione alternativa: rimuovere l'intento della distribuzione 'Non applicabile' dal gruppo padre di Intune.
+|Richiesto|Disponibile|Richiesto e disponibile|Richiesto|-|
+|Richiesto e disponibile<sup>1</sup>|Disponibile|Richiesto e disponibile|Richiesto e disponibile|-|    
+|Richiesto|Non applicabile|Richiesto|Richiesto|-|    
+|Richiesto e disponibile|Non applicabile|Richiesto e disponibile|Richiesto e disponibile|-|    
+|Richiesto|Uninstall|Richiesto|Richiesto|-|    
+|Richiesto e disponibile|Uninstall|Richiesto e disponibile|Richiesto e disponibile|-|
+<sup>1</sup> Solo per le app dello Store iOS gestite, quando si aggiungono le app in Intune e si distribuiscono le app come richieste, le app vengono create automaticamente con entrambi gli intenti Richiesto e Disponibile.
+
+Per evitare conflitti di distribuzione è possibile eseguire le azioni seguenti:
+
+1.    Se in precedenza sono state distribuite app a gruppi padre e figlio di Intune correlati, è consigliabile rimuovere le distribuzioni prima che inizi la migrazione del tenant.
+2.    Rimuovere i gruppi figlio dai gruppi padre e creare un nuovo gruppo contenente i membri del gruppo figlio precedente. Sarà quindi possibile creare una nuova distribuzione di app al gruppo.
+Note: se il gruppo padre precedente era "Tutti gli utenti", sarà necessario creare un nuovo gruppo dinamico che non includa i membri del gruppo figlio.
+È necessario apportare le modifiche ai gruppi nel [portale di Azure](https://portal.azure.com/) per gruppi di utenti e dispositivi. Il [portale di Azure classico](https://manage.windowsazure.com/) consentirà di apportare modifiche soltanto ai gruppi di utenti.
+
 
 ## <a name="how-to-assign-an-app"></a>Come assegnare un'applicazione
 

@@ -1,5 +1,6 @@
 ---
-title: Impostazioni relative alla posta elettronica di Intune per dispositivi iOS | Anteprima di Intune Azure | Documentazione Microsoft
+title: Impostazioni di posta elettronica di Intune per dispositivi iOS
+titleSuffix: Intune Azure preview
 description: "Anteprima di Intune Azure: informazioni sulle opzioni di Intune che è possibile usare per configurare le connessioni di posta elettronica nei dispositivi iOS."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 186630903a606842406ff1d76115c1fa7d1c962e
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: c388cb26be11edb6f8f4b23d455632fad9ca98c9
+ms.lasthandoff: 02/18/2017
 
 
 ---
