@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -35,8 +35,8 @@ Si supponga, ad esempio, di voler effettuare il provisioning di tutti i disposit
 
 È possibile creare i profili VPN tramite i tipi di connessione seguenti:
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |Tipo di connessione|Android|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |Pulse Secure|Sì|Sì|Sì|Sì|Sì|sì|
 |Cisco (IPSec)|No|Sì|No|No|No|No|
