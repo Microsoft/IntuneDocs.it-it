@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -45,9 +45,7 @@ La registrazione del dispositivo può essere rimossa tramite la console di ammin
 * **Dispositivo iOS**: aprire l'app Azure Authenticator, scorrere verso sinistra fino all'account e scegliere di annullare la registrazione.  
 * **Dispositivo Android**: disinstallare l'app Portale aziendale o rimuovere l'account da **Impostazioni di sistema**.
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>Accesso condizionale basato sulle app con accesso condizionale basato sulla conformità del dispositivo  
+## <a name="app-based-ca-with-device-based-ca"></a>Accesso condizionale basato sulle app con accesso condizionale basato sui dispositivi  
 
 È possibile configurare l'[accesso condizionale basato sulla conformità del dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**accesso condizionale per il dispositivo**) nella [console di amministrazione di Intune](https://manage.microsoft.com) o nella [console di gestione di Azure AD Premium] (https://manage.windowsazure.com). L'accesso condizionale per il dispositivo richiede che gli utenti si connettano a Exchange Online solo tramite dispositivi gestiti in Intune conformi ai criteri di conformità dei dispositivi di Intune o tramite PC aggiunti a un dominio.  Se un utente appartiene a uno o più gruppi di sicurezza che soddisfano i criteri di accesso condizionale basato sulle app e per il dispositivo, l'utente deve soddisfare uno dei due requisiti:
 * L'app usata per accedere al servizio è un'app per dispositivi mobili supportata da 

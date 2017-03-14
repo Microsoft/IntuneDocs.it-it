@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -41,7 +42,7 @@ Gli amministratori IT o gli utenti possono anche scegliere di installare client 
 -    Android for Work
 
 >[!NOTE]
->Intune offre due profili di posta elettronica Android for Work, uno per Gmail e uno per Nine Work. Queste app sono disponibili in Google Play Store e possono connettersi a Exchange. Per abilitare la connettività della posta elettronica, distribuire una di queste app nei dispositivi dell'utente. In seguito creare e distribuire il profilo corrispondente.
+>Intune offre due profili di posta elettronica Android for Work, uno per Gmail e uno per Nine Work. Queste app sono disponibili in Google Play Store e possono connettersi a Exchange. Per abilitare la connettività della posta elettronica, distribuire una di queste app nei dispositivi dell'utente. In seguito creare e distribuire il profilo corrispondente. Le app di posta elettronica, ad esempio Nine Work, potrebbero non essere gratuite. Rivedere i dettagli relativi alla licenza dell'app o contattare l'azienda produttrice per richiedere informazioni.
 
 Oltre a configurare un account di posta elettronica sul dispositivo, è possibile impostare il numero di messaggi di posta elettronica da sincronizzare. A seconda del tipo di dispositivo, è possibile impostare anche i tipi di contenuto da sincronizzare.
 
@@ -105,7 +106,7 @@ Poiché la password non è contenuta nel profilo di posta elettronica, l'utente 
     |**Indirizzo di posta elettronica**|Modalità di generazione dell'indirizzo di posta elettronica per l'utente in ogni dispositivo. Selezionare **Indirizzo SMTP primario** per accedere a Exchange con l'indirizzo SMTP primario o **Nome entità utente** per usare il nome completo dell'entità come indirizzo di posta elettronica.|
     |**Metodo di autenticazione** (Android for Work, Samsung KNOX e iOS)|Selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione usato dal profilo di posta elettronica.|
     |**Selezionare un certificato client per l'autenticazione client (certificato di identità)** (Android for Work, Samsung KNOX e iOS)|Selezionare il certificato SCEP client creato in precedenza che verrà usato per autenticare la connessione di Exchange. Per altre informazioni su come usare i profili di certificato in Intune, vedere [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteggere l'accesso alle risorse con profili certificato). Questa opzione viene visualizzata solo quando il metodo di autenticazione è **Certificati**.|
-    |**Usa S/MIME** (Samsung KNOX e iOS)|Consente di usare la crittografia S/MIME per inviare posta elettronica in uscita.|
+    |**Usa S/MIME** (Samsung KNOX e iOS)|Inviare la posta elettronica in uscita usando la firma S/MIME.|
     |**Certificato di firma** (Samsung KNOX e iOS)|Selezionare il certificato di firma che verrà usato per firmare il messaggio di posta elettronica in uscita. Questa opzione viene visualizzata solo quando si seleziona **Usa S/MIME**.|
     |**Numero di giorni di messaggi di posta elettronica da sincronizzare**|Il numero di giorni di posta elettronica che si vogliono sincronizzare. In alternativa, selezionare **Illimitata** per sincronizzare tutta la posta elettronica disponibile.|
     |**Pianificazione sincronizzazione** (Android for Work, Samsung KNOX, Windows Phone 8 e versioni successive, Windows 10)|Selezionare la pianificazione in base a cui i dispositivi sincronizzeranno i dati dal server Exchange. È anche possibile selezionare **Quando arrivano i messaggi**, per sincronizzare i dati non appena arrivano, oppure **Manuale**, per consentire all'utente del dispositivo di avviare la sincronizzazione.|
@@ -136,9 +137,4 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 > [!NOTE]
 > - Per Android for Work, assicurarsi di distribuire anche le app di Gmail o Nine Work, oltre al profilo di posta elettronica appropriato.
 > - Per rimuovere un profilo di posta elettronica da un dispositivo, modificare la distribuzione e rimuovere tutti i gruppi di cui il dispositivo è membro. Si noti che non è possibile rimuovere un profilo di posta elettronica in questo modo se questo è l'unico profilo presente su un dispositivo.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
