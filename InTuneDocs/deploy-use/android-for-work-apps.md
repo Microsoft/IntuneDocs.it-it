@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
+ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
+ms.openlocfilehash: 3b608d42f04b9fce457b6b61587d05ab5d59bb0a
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -59,18 +60,28 @@ Per altre informazioni su come caricare e pubblicare app Android, vedere la [Gui
 
 ## <a name="deploy-an-android-for-work-app"></a>Distribuire un'app Android for Work
 
-In genere la sincronizzazione di Intune con Google Play for Work viene eseguita due volte al giorno. Se è stata approvata un'app dallo store e l'app non è ancora visibile nel nodo **App acquistate con Volume Purchase Program** dell'area di lavoro **App** è possibile forzare una sincronizzazione immediata come descritto di seguito:
+Se è stata approvata un'app dallo store e l'app non è ancora visibile nel nodo **App acquistate con Volume Purchase Program** dell'area di lavoro **App** è possibile forzare una sincronizzazione immediata come descritto di seguito:
 
 1. Nella [console di amministrazione di Intune](https://manage.microsoft.com) scegliere **Amministrazione** > **Gestione dei dispositivi mobili** > **Android for Work**.
 2. Nella pagina **Configurazione della gestione del dispositivo mobile Android for Work** scegliere **Sincronizza**.
 3. La pagina visualizza anche l'ora e lo stato dell'ultima sincronizzazione.
 
-Quando l'app è visualizzata nel nodo **App acquistate con Volume Purchase Program** dell'area di lavoro **App**, è possibile [distribuirla come qualsiasi altra app](deploy-apps-in-microsoft-intune.md). È possibile distribuire l'app solo a gruppi di utenti. Attualmente, è possibile selezionare solo le azioni **Obbligatorio** e **Disinstalla**. Da ottobre 2016 verrà aggiunta l'azione di distribuzione **Disponibile** ai nuovi tenant.
+Quando l'app è visualizzata nel nodo **App acquistate con Volume Purchase Program** dell'area di lavoro **App**, è possibile [distribuirla come qualsiasi altra app](deploy-apps-in-microsoft-intune.md). È possibile distribuire l'app solo a gruppi di utenti. Attualmente, è possibile selezionare solo le azioni **Obbligatorio** e **Disinstalla**.
+
+La possibilità di distribuire un'app come **Disponibile** sfrutta la nuova esperienza di raggruppamento e targeting. Gli account del servizio Intune sottoposti a provisioning di recente potranno usare questa funzionalità non appena sarà disponibile. I clienti esistenti di Intune potranno usare questa funzionalità dopo la migrazione del tenant nel portale di Intune di Azure. I clienti esistenti sono invitati a creare un account di Intune di prova per pianificare e testare questa funzionalità fino alla migrazione del loro tenant.
 
 Una volta distribuita, l'app verrà installata nei dispositivi selezionati come destinazione. All'utente del dispositivo non verrà richiesta l'approvazione.
 
+## <a name="manage-app-permissions"></a>Gestione delle autorizzazioni dell'app
+Android for Work richiede l'approvazione delle app nella console Web gestita di Google Play prima di sincronizzarle con Intune e distribuirle agli utenti.  Poiché Android for Work consente di eseguire automaticamente il push di queste app nei dispositivi degli utenti, è necessario accettare le autorizzazioni dell'app per conto di tutti gli utenti.  Gli utenti finali non vedranno alcuna autorizzazione dell'app durante l'installazione ed è quindi importante leggere e comprendere queste autorizzazioni.
 
+Quando lo sviluppatore di un'app pubblica una nuova versione dell'app con autorizzazioni aggiornate, tali autorizzazioni non vengono accettate automaticamente, anche se sono state approvate le autorizzazioni precedenti. I dispositivi che eseguono la versione precedente dell'app possono continuare a usarla, ma l'app non può essere aggiornata finché non vengono approvate le nuove autorizzazioni. I dispositivi in cui non è installata l'app non possono installarla finché le nuove autorizzazioni dell'app non vengono approvate.
 
-<!--HONumber=Feb17_HO1-->
+### <a name="how-to-update-app-permissions"></a>Come aggiornare le autorizzazioni di app
 
+È consigliabile visitare periodicamente la console di Google Play gestita per verificare se sono disponibili nuove autorizzazioni. Se si distribuisce un'app e si nota che non è installata nei dispositivi, verificare la disponibilità di nuove autorizzazioni seguendo questi passaggi:
+
+1. Visitare il sito Web di Google Play all'indirizzo http://play.google.com/work
+2. Accedere con l'account Google usato per pubblicare e approvare le app.
+3. Nella scheda **Aggiornamenti** verificare se sono presenti app che richiedono un aggiornamento.  Le app elencate richiedono nuove autorizzazioni e non vengono distribuite finché non ne ricevono.  
 

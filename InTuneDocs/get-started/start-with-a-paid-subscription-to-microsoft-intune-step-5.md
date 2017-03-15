@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 1b14ec6330c512981025a2910dbd222fa4d7cf7f
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
+ms.openlocfilehash: 434eea4244931f0708eb05cfc39d0c97b4936830
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -33,7 +33,7 @@ I gruppi in Intune offrono una grande flessibilità per la gestione di dispositi
 
 ## <a name="group-management-moving-to-azure-ad"></a>Migrazione della gestione dei gruppi ad Azure AD
 
-**A partire da novembre 2016** i nuovi account gestiranno i gruppi di utenti e dispositivi nel portale di Azure Active Directory (AD). A dicembre 2016 il team di prodotto Intune inizierà la migrazione dei clienti esistenti alla nuova esperienza di gestione dei gruppi basata su Azure AD. Tutti i gruppi di utenti e dispositivi verranno migrati a gruppi di sicurezza di Azure AD. Microsoft non inizierà la migrazione senza prima aver ridotto al minimo l'impatto sulle attività quotidiane degli utenti e fino a quando non sarà previsto alcun impatto sugli utenti finali. Verrà inoltre inviata notifica prima della migrazione degli account.
+**A partire dal mese di novembre 2016** i nuovi account gestiranno i gruppi di utenti e dispositivi nel portale di Azure Active Directory (AD). A dicembre 2016 il team di prodotto Intune inizierà la migrazione dei clienti esistenti alla nuova esperienza di gestione dei gruppi basata su Azure AD. Tutti i gruppi di utenti e dispositivi verranno migrati a gruppi di sicurezza di Azure AD. Microsoft non inizierà la migrazione senza prima aver ridotto al minimo l'impatto sulle attività quotidiane degli utenti e fino a quando non sarà previsto alcun impatto sugli utenti finali. Verrà inoltre inviata notifica prima della migrazione degli account.
 
 
 >[!IMPORTANT]
