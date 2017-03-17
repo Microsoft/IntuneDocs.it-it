@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 6b723069108ff2cbe85951f7d65ef803323eceb9
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
-# <a name="use-full-or-selective-wipe"></a>Usare la cancellazione completa o selettiva 
+# <a name="use-full-or-selective-wipe"></a>Usare la cancellazione completa o selettiva
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -104,6 +104,10 @@ La **cancellazione selettiva** rimuove i dati aziendali, compresi i dati sulla g
 |Outlook|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|
 |Separazione di Azure Active Directory (AAD)|Il record AAD viene rimosso.|Il record AAD viene rimosso.|
 |Contatti | I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. <br /> <br />Attualmente è supportata solo l'app Outlook.|I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. <br /> <br />Attualmente è supportata solo l'app Outlook.
+
+**Android for Work**
+
+L'esecuzione di una cancellazione selettiva in un dispositivo Android for Work consente di rimuovere tutti i dati, le app e le impostazioni nel profilo di lavoro in tale dispositivo. Il dispositivo viene così ritirato dalla gestione con Intune. La cancellazione completa non è supportata per Android for Work.
 
 **Windows**
 
