@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -169,6 +170,7 @@ Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell
   - **Valuta la connessione**, che presenta tre impostazioni. a. **Azione del dominio**: scegliere **Connetti se necessario** o **Non connettere mai**
     . b. **Elenco di domini separati da virgole**: configurarla solo se si sceglie **Azione del dominio** **Connetti se necessario**
     . c. **Probe della stringa dell'URL necessario**: un URL HTTP o HTTPS (consigliato), ad esempio *https://vpntestprobe.contoso.com*. La regola verificherà se esiste una risposta da questo indirizzo. In caso contrario e se **Azione del dominio** è **Connetti se necessario**, la connessione VPN verrà attivata.
+      
      > [!TIP]
      >
      >Un esempio di quando è possibile usare questa azione riguarda il fatto che alcuni siti della rete aziendale richiedono una connessione alla rete aziendale diretta o VPN, mentre altri no. Se si elencano i domini in **Elenco di domini separati da virgole** *corp.contoso.com*, è possibile scegliere **Connetti se necessario** e quindi elencare siti specifici nella rete che può richiedere una connessione VPN, ad esempio *sharepoint.corp.contoso.com*. La regola controllerà quindi se *vpntestprobe.contoso.com* può essere raggiunto. Se non è possibile, la connessione VPN verrà attivata per il sito di SharePoint.
@@ -192,9 +194,4 @@ Le regole specifiche del dominio vengono valutate prima delle regole di tutti i 
 Al termine della distribuzione, il nome della connessione VPN specificato verrà visualizzato nell'elenco delle connessioni VPN sui dispositivi.
 
 Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** dell'area di lavoro **Criteri** consentono di identificare i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene visualizzato anche nell'area di lavoro Dashboard.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
