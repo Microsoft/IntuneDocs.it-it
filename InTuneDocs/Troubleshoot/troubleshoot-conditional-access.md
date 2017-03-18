@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
-ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -57,6 +57,13 @@ Queste condizioni possono essere visualizzate per ogni dispositivo nel portale d
      -     Un dispositivo iOS può restare bloccato in uno stato di controllo della conformità, impedendo all'utente di avviare un altro check-in. Il riavvio del portale aziendale può risolvere il problema e lo stato di conformità sarà riflesso nello stato del dispositivo in Intune. Dopo che tutti i dati sono stati raccolti con una sincronizzazione del dispositivo, il controllo della conformità viene eseguito in modo rapido, mediamente in meno di mezzo secondo.
 
         In genere, i dispositivi rimangono bloccati in questo stato perché si verificano problemi di connessione al servizio o perché la sincronizzazione richiede molto tempo.  Se il problema persiste con diverse configurazioni di rete (cellulare, Wi-Fi, VPN), con il riavvio del dispositivo e dopo aver verificato l'aggiornamento del provider di servizi condivisi sul dispositivo, contattare il Supporto tecnico Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+
+ - Per dispositivi Android:
+     - È possibile che alcuni dispositivi Android sembrino crittografati, nonostante l'app Portale aziendale non li riconosca come tali. 
+    
+        -    In caso di dispositivi che presentano questo stato, l'utente deve impostare un passcode di avvio sicuro. L'utente visualizzerà una notifica del dispositivo inviata nell'app Portale aziendale in cui viene chiesto di impostare un passcode di avvio per il dispositivo. Dopo aver toccato la notifica del dispositivo e confermato il PIN o la password esistente, scegliere l'opzione **Require PIN to start device** (Richiedi PIN per avviare il dispositivo) nella schermata **Secure start-up** (Avvio sicuro). Toccare poi il pulsante **Controlla conformità** corrispondente al dispositivo nell'app Portale aziendale. Il dispositivo sarà riconosciuto come crittografato.
+    
+        -     Alcuni produttori di dispositivi eseguono la crittografia dei propri dispositivi usando un PIN predefinito anziché il PIN segreto impostato dall'utente. Intune riconosce la crittografia che usa il PIN predefinito come non sicura poiché questo metodo di crittografia può mettere i dati nel dispositivo a rischio di utenti malintenzionati con accesso fisico al dispositivo. Per questo tipo di problema, usare i [criteri di protezione delle app](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemi relativi ai criteri
 
