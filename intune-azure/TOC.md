@@ -169,6 +169,8 @@
 ### [Creare i criteri di conformità Android for Work](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Creare i criteri di conformità iOS](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Creare i criteri di conformità Windows](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [Creare azioni per la non conformità](set-device-compliance/actions-for-noncompliance.md)
+### [Monitorare la conformità dei dispositivi](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 
