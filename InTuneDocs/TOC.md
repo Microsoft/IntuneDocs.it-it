@@ -120,6 +120,7 @@
 
 ## [Aggiungere app](deploy-use/add-apps.md)
 ### [Aggiungere app per dispositivi registrati](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Trasferire localmente le app di Windows](deploy-use/sideload-apps-for-windows.md)
 ### [Aggiungere app per PC client di Intune](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
 #### [Gestire i contratti di licenza per PC client di Intune](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Distribuire le app](deploy-use/deploy-apps.md)
@@ -136,7 +137,6 @@
 ### [Criteri di configurazione delle app Android for Work](deploy-use/afw-app-configuration-policy.md)
 ### [Profili di provisioning delle app mobili iOS](deploy-use/ios-mobile-app-provisioning-profiles.md)
 ### [Gestire l'accesso a Internet](deploy-use/manage-internet-access-using-managed-browser-policies.md)
-### [Trasferire localmente le app LOB](deploy-use/sideload-apps-for-windows.md)
 
 ## [Proteggere app e dati](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [Criteri di conformità dei dispositivi](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
