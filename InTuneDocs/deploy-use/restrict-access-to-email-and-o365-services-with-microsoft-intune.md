@@ -74,7 +74,7 @@ A differenza degli altri criteri di Intune, i criteri di accesso condizionale no
 2. [Creare criteri di conformità dei dispositivi](create-a-device-compliance-policy-in-microsoft-intune.md).
 
 2.  È possibile creare criteri di accesso condizionale per uno dei servizi cloud/prodotti Microsoft seguenti:
-> [!div class="op_single_selector"]
+
   - [Creare criteri di accesso condizionale per Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
   - [Creare criteri di accesso condizionale per Exchange locale](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Creare criteri di accesso condizionale per il nuovo ambiente Exchange Online dedicato](restrict-access-to-exchange-online-with-microsoft-intune.md)
