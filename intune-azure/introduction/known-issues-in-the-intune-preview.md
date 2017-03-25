@@ -16,14 +16,14 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: ec3f87994b19591bda4ec201eac3c839798d634c
+ms.lasthandoff: 03/15/2017
 
 
 ---
 
-# <a name="known-issues-in-the-microsoft-intune-preview"></a>Problemi noti in anteprima di Microsoft Intune
+# <a name="known-issues-in-the-microsoft-intune-preview"></a>Problemi noti nell'anteprima di Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,4 +38,7 @@ Per richiedere l'aggiunta di una nuova funzionalità a Intune, è possibile gene
 ## <a name="administration-and-accounts"></a>Amministrazione e account
 
 - Gli amministratori globali, noti anche come amministratori tenant, possono continuare a eseguire attività di ordinaria amministrazione senza una licenza separata di Intune o Enterprise Mobility Suite (EMS). Tuttavia, se gli amministratori globali vogliono usare il servizio, ad esempio per registrare il proprio dispositivo, un dispositivo aziendale oppure usare il portale aziendale di Intune, avranno bisogno di una licenza Intune o EMS, esattamente come qualsiasi altro utente.
+
+## <a name="apple-enrollment-profile-migration"></a>Migrazione dei profili di registrazione di Apple
+- Nei prossimi mesi Intune consentirà di gestire le registrazioni di Apple Device Enrollment Program e Apple Configurator tramite il nuovo portale di Azure. Se si elimina il token di Apple Device Enrollment Program e non si carica un token aggiornato, quello originale verrà ripristinato nel nuovo portale di Azure come parte della migrazione dell'account di Intune. Per rimuovere questo token e impedire la registrazione di DEP, è sufficiente eliminare il token nel portale di Azure. 
 

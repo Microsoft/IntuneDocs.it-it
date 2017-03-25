@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -34,14 +35,14 @@ Quando viene distribuito un criterio o un'app, Intune prova immediatamente a inv
 
 Se dopo l'invio della prima notifica il dispositivo non contatta il servizio per ottenere il criterio, Intune esegue altri tre tentativi.  Se il dispositivo è offline, ad esempio è spento o non è connesso a una rete, può non ricevere le notifiche. In questo caso, il dispositivo otterrà il criterio al successivo controllo pianificato con il servizio Intune, come indicato di seguito:
 
-- iOS e Mac OS X: ogni 6 ore.
+- iOS e macOS: ogni 6 ore.
 - Android: ogni 8 ore.
 - Windows Phone: ogni 8 ore.
 - PC Windows 8.1 e Windows 10 registrati come dispositivi: ogni 8 ore.
 
 Se il dispositivo è stato appena registrato, la frequenza di controllo sarà maggiore, come indicato di seguito:
 
-- iOS e Mac OS X: ogni 15 minuti per 6 ore e quindi ogni 6 ore.
+- iOS e macOS: ogni 15 minuti per 6 ore e successivamente ogni 6 ore.
 - Android: ogni 3 minuti per 15 minuti, quindi ogni 15 minuti per 2 ore e infine ogni 8 ore.
 - Windows Phone: ogni 5 minuti per 15 minuti, quindi ogni 15 minuti per 2 ore e infine ogni 8 ore.
 - PC Windows registrati come dispositivi: ogni 3 minuti per 30 minuti e quindi ogni 8 ore.
@@ -499,8 +500,3 @@ Nella parte inferiore del menu di navigazione a sinistra è disponibile un colle
 
 ### <a name="next-steps"></a>Passaggi successivi
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune).
-
-
-<!--HONumber=Feb17_HO3-->
-
-

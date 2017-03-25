@@ -1,11 +1,11 @@
 ---
-title: Annullare la registrazione del dispositivo iOS da Intune | Documentazione Microsoft
+title: Annullare la registrazione del dispositivo iOS da Intune | Microsoft Docs
 description: Descrive come annullare la registrazione di un dispositivo iOS da Intune
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: eb41be0b4096c2b2ee5711204b34e8c3bb13e25b
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 8885b82cf452bcc6bb99efb1d7e7394706edac57
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -37,7 +37,7 @@ Per annullare la registrazione del dispositivo da Intune, seguire questa procedu
 
 1.  Nell'app Portale aziendale, in **Dispositivi personali**, selezionare il dispositivo di cui annullare la registrazione.
 
-2.  Toccare **Rimuovi** &gt; **Rimuovi**.
+2.  Toccare **Rimuovi** > **Rimuovi**.
 
 Quando si annulla la registrazione del dispositivo da Intune, si verificano gli eventi seguenti:
 

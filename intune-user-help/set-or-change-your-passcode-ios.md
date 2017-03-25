@@ -1,11 +1,11 @@
 ---
-title: Impostare o modificare il passcode | Documentazione Microsoft
+title: Impostare o modificare il passcode | Microsoft Docs
 description: Impostare o modificare il passcode
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
-ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/21/2016
 
 Se il dispositivo iOS non è conforme ai criteri di passcode dell'amministratore IT, viene visualizzato un messaggio che descrive brevemente il problema e vengono illustrate le procedure necessarie per far sì che il passcode soddisfi i requisiti.
 
-L'amministratore IT può impostare più requisiti per il passcode. Ad esempio, può essere necessario che il passcode contenga un certo numero di caratteri, un insieme di numeri, lettere e caratteri, e così via. Poiché potrebbero essere impostati più requisiti, queste istruzioni possono illustrare solo come impostare o modificare il passcode. Non viene illustrata ogni possibile combinazione di requisiti.
+L'amministratore IT può impostare più requisiti per il passcode. Ad esempio, può essere necessario che il passcode contenga un certo numero di caratteri, un insieme di numeri, lettere e caratteri, e così via. Poiché potrebbero essere impostati più requisiti, queste istruzioni possono illustrare solo come impostare o modificare il passcode. Non viene illustrata ogni possibile combinazione di requisiti. Questi passcode vengono usati, ad esempio, per accedere al dispositivo dalla schermata di blocco.
 
 In caso di problemi per l'impostazione di un passcode che soddisfi i requisiti, contattare l'amministratore IT.
 

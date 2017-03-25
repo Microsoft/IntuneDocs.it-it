@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 8f713769e0b8a13e91e6d9991e4e7415e1da22a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ea910594195313978d6defae529a526bc0310022
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>Configurare l'infrastruttura di certificazione per SCEP in Microsoft Intune
@@ -36,7 +36,7 @@ Questo argomento descrive l'infrastruttura necessaria per creare e distribuire p
 -  **Server NDES**: nei server che eseguono Windows Server 2012 R2 o versioni successive è necessario installare il servizio Registrazione dispositivi di rete (NDES, Network Device Enrollment Service). Intune non supporta l'uso di NDES se viene eseguito su un server con Enterprise CA. Vedere [Linee guida per il servizio Registrazione dispositivi di rete](http://technet.microsoft.com/library/hh831498.aspx) per istruzioni su come configurare Windows Server 2012 R2 per ospitare il Servizio Registrazione dispositivi di rete. Il server NDES deve appartenere al dominio che ospita la CA e non trovarsi nello stesso server di questa. Altre informazioni sulla distribuzione del server NDES in una foresta separata, in una rete isolata o in un dominio interno sono disponibili in [Uso di un Modulo criteri con il servizio Registrazione dispositivi di rete](https://technet.microsoft.com/en-us/library/dn473016.aspx).
 
 -  **Connettore di certificati di Microsoft Intune**: usare la console di amministrazione di Intune per scaricare il programma di installazione del **Connettore di certificati** (**ndesconnectorssetup.exe**). È quindi possibile eseguire **ndesconnectorssetup.exe** nel computer in cui si vuole installare Connettore di certificati.
--  **Server proxy applicazione Web ** (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versioni successive come server proxy applicazione Web (WAP, Web Application Proxy) . Questa configurazione:
+-  **Server proxy applicazione Web** (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versioni successive come server proxy applicazione Web (WAP, Web Application Proxy) . Questa configurazione:
     -  Consente ai dispositivi di ricevere i certificati usando una connessione Internet.
     -  Vale come raccomandazione di sicurezza quando i dispositivi usano la connessione a Internet per ricevere e rinnovare i certificati.
 
@@ -54,7 +54,7 @@ Dalla rete perimetrale a una rete attendibile, aprire tutte le porte e consentir
 È consigliabile pubblicare il server NDES tramite un proxy, ad esempio [Proxy di applicazione di Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Proxy di accesso Web](https://technet.microsoft.com/en-us/library/dn584107.aspx) o un proxy di terze parti.
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Certificati e modelli
+### <a name="BKMK_CertsAndTemplates"></a>Certificati e modelli
 
 |Oggetto|Dettagli|
 |----------|-----------|
@@ -63,13 +63,13 @@ Dalla rete perimetrale a una rete attendibile, aprire tutte le porte e consentir
 |**Certificato di autenticazione server**|Richiesto dalla CA emittente o dalla CA pubblica, questo certificato SSL viene installato e associato in IIS nel server NDES.|
 |**Certificato CA radice attendibile**|Questo viene esportato sotto forma di file con estensione **cer** dalla CA radice o da qualsiasi dispositivo che considera attendibile la CA radice e viene distribuito ai dispositivi mediante il profilo certificato CA attendibile.<br /><br />Viene usato un certificato CA radice attendibile per ogni piattaforma di sistema e lo si associa con ogni profilo del certificato radice attendibile creato.<br /><br />È possibile usare certificati CA radice attendibili aggiuntivi, se necessario. Ad esempio, è possibile farlo per fornire un trust a un'autorità di certificazione che firma i certificati di autenticazione del server per i punti di accesso Wi-Fi.|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Account
+### <a name="BKMK_Accounts"></a>Account
 
 |Nome|Dettagli|
 |--------|-----------|
 |**Account di servizio NDES**|Specificare un account utente di dominio da usare come account del servizio NDES.|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Configurare l'infrastruttura
+## <a name="BKMK_ConfigureInfrastructure"></a>Configurare l'infrastruttura
 Prima di configurare i profili di certificato, è necessario completare le seguenti attività, che richiedono una conoscenza preliminare di Windows Server 2012 R2 e Servizi certificati Active Directory (ADCS):
 
 **Attività 1**: Creare un account del servizio NDES
@@ -108,7 +108,7 @@ In questa attività sarà possibile:
     -   Nella scheda **Estensioni** verificare che la **descrizione dei criteri dell'applicazione** includa **Autenticazione client**.
 
         > [!IMPORTANT]
-        > Per i modelli di certificato iOS e Mac OS X, nella scheda **Estensioni** modificare **Utilizzo chiavi** e verificare che **Firma come prova dell'origine** non sia selezionato.
+        > Per i modelli di certificato iOS e macOS, nella scheda **Estensioni** modificare **Utilizzo chiavi** e verificare che l'opzione **Firma come prova dell'origine** non sia selezionata.
 
     -   Nella scheda **Sicurezza** aggiungere l'account del servizio NDES e dargli le autorizzazioni di **registrazione** al modello. Per gli amministratori di Intune che creano profili SCEP sono necessari diritti di **lettura** per selezionare il modello durante la creazione dei profili.
 
@@ -118,7 +118,7 @@ In questa attività sarà possibile:
 3.  Esaminare il **periodo di validità** nella scheda **Generale** del modello. Per impostazione predefinita, Intune usa il valore configurato nel modello. Tuttavia, è possibile configurare la CA per consentire al richiedente di specificare un valore diverso, che è poi possibile impostare dalla console di amministrazione di Intune. Per usare sempre il valore nel modello, ignorare il resto del passaggio.
 
     > [!IMPORTANT]
-    > Le piattaforme iOS e Mac OS X usano sempre il valore impostato nel modello, indipendentemente da altre configurazioni.
+    > iOS e macOS usano sempre il valore impostato nel modello, indipendentemente dalle altre configurazioni definite.
 
 Ecco alcuni screenshot di una configurazione di esempio del modello.
 
@@ -304,7 +304,7 @@ Scaricare, installare e configurare Connettore di certificati nel server NDES.
 
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>Per abilitare il supporto per Connettore di certificati
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
 4. Nel pannello **Configurazione del dispositivo** scegliere **Autorità di certificazione**.
@@ -312,7 +312,7 @@ Scaricare, installare e configurare Connettore di certificati nel server NDES.
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Per scaricare, installare e configurare Connettore di certificati
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
 4. Nel pannello **Configurazione del dispositivo** scegliere **Autorità di certificazione**.

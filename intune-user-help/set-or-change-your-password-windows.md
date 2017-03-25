@@ -1,11 +1,11 @@
 ---
-title: Impostare o modificare la password | Documentazione Microsoft
+title: Impostare o modificare la password | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 635cd7c9cd6edec82fec76400b410cabce2d8c4c
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
 # <a name="make-your-device-safer-with-the-right-password"></a>Aumentare la sicurezza del dispositivo impostando la password corretta
 
-L'accesso alle risorse aziendali, ad esempio la posta elettronica e i documenti, è un'operazione che gli utenti devono eseguire ogni giorno usando i propri dispositivi Windows. Le organizzazioni vogliono avere la certezza che i dispositivi degli utenti siano in grado di eseguire queste attività in modo sicuro. Un modo per garantire l'accesso sicuro alle risorse è imporre ai dispositivi l'uso di una password.
+L'accesso alle risorse aziendali, ad esempio la posta elettronica e i documenti, è un'operazione che gli utenti devono eseguire ogni giorno usando i propri dispositivi Windows. Le organizzazioni vogliono avere la certezza che i dispositivi degli utenti siano in grado di eseguire queste attività in modo sicuro. Un modo per garantire l'accesso sicuro alle risorse è imporre ai dispositivi l'uso di una password. Queste password vengono usate, ad esempio, per accedere al dispositivo dalla schermata di blocco.
 
 Se il dispositivo Windows non è conforme ai criteri di password dell'amministratore IT, viene visualizzato un messaggio che descrive brevemente il problema e illustra le procedure necessarie per far sì che la password soddisfi i requisiti.
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 9862ef9fd1d4827ae99480cd2cf2eac8dfca54d8
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -28,6 +28,7 @@ ms.lasthandoff: 02/21/2017
 
 A volte possono verificarsi problemi con il dispositivo Android non risolvibili tramite le procedure di risoluzione dei problemi. Di seguito sono elencati alcuni problemi comuni che è possibile provare a risolvere autonomamente. Per i problemi più complessi, si consiglia di contattare l'amministratore IT tramite le informazioni di contatto disponibili nel [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
+- [Controllare la conformità sul dispositivo Android](check-compliance-on-your-device-android.md)
 - [Usare la registrazione dettagliata per aiutare l'amministratore IT a risolvere i problemi dei dispositivi](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Inviare i log all'amministratore IT tramite posta elettronica](send-logs-to-your-it-admin-by-email-android.md)
 - [Inviare i log all'amministratore IT tramite cavo USB](send-logs-to-your-it-admin-using-cable-android.md)

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a062b92cba0042153ffe22b949ce8a3b7b740b3f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -59,7 +59,7 @@ ms.lasthandoff: 02/18/2017
 - **Uso dell'opzione di cancellazione di tutti i contenuti e tutte le impostazioni sul dispositivo (solo con supervisione)** - Consente all'utente di usare l'opzione di cancellazione di tutti i contenuti e le impostazioni del dispositivo.
 - **Modifica del nome dispositivo (solo con supervisione)** - Consente all'utente di modificare il nome del dispositivo.
 - **Modifica delle impostazioni di invio dei dati di diagnostica (solo con supervisione)** - Consente o impedisce al dispositivo di inviare dati di diagnostica ad Apple.
-- ** Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
+- **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
 - **Modifica delle impostazioni di notifica (solo con supervisione)** - Consente all'utente di modificare le impostazioni di notifica del dispositivo.
 - **Modifica del passcode (solo con supervisione)** - Consente di aggiungere, modificare o rimuovere la password del dispositivo.
 - **Modifica dello sfondo (solo con supervisione)** - Consente all'utente di cambiare lo sfondo del dispositivo.
@@ -222,7 +222,7 @@ Usare le informazioni riportate in questo elenco per identificare il nome, l'aut
 -     **Libreria foto di iCloud** - Se impostata su **No**, disabilita l'uso della libreria di foto di iCloud che consente agli utenti di archiviare foto e video nel cloud.    Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo verranno rimosse dal dispositivo se questa opzione è impostata su **No**.
 -     **Sincronizzazione delle app gestite nel cloud** - Consente alle app gestite con Intune di sincronizzare i dati con l'account iCloud dell'utente.
 -     **Flusso di foto condivise** - Impostare su **No** per disabilitare **Condivisione foto di iCloud** nel dispositivo.
--     **Continuazione dell'attività** - Consente all'utente di proseguire il lavoro iniziato in un dispositivo iOS in un altro dispositivo iOS o Mac OS X (Handoff).
+-     **Continuazione dell'attività** - Consente all'utente di proseguire il lavoro iniziato in un dispositivo iOS in un altro dispositivo iOS o macOS (Handoff).
 
 ## <a name="kiosk"></a>Modalità tutto schermo
 -     **Blocco attivazione** - Abilita il blocco attivazione su dispositivi iOS con supervisione.

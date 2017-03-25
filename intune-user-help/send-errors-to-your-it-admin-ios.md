@@ -1,11 +1,11 @@
 ---
-title: Inviare gli errori all&quot;amministratore IT | Documentazione Microsoft
+title: Inviare gli errori all&quot;amministratore IT | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
-ms.openlocfilehash: 5de975c1c4b06d1cce0dcdb2564826d09a53260e
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: c6a9c0aa97a06f7b54768ee6927ea8866c40eb13
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -34,6 +34,8 @@ Se si verificano errori nel dispositivo iOS quando si usa l'app Portale aziendal
 -   Nella schermata **Informazioni** dell'app Portale aziendale, toccare **Invia report di diagnostica**.
 
 -   Nell'app Portale aziendale, agitare il dispositivo e quindi toccare **Posta elettronica** quando viene visualizzato l'avviso di diagnostica. Se l'avviso non viene visualizzato quando si agita il dispositivo, aprire **Impostazioni** > **Portale aziendale** e verificare che l'opzione **Movimento di agitazione** sia selezionata.
+
+Se si riscontrano problemi con questa modalità di invio dei log, è anche possibile provare a [inviare i log di amministratore IT tramite posta elettronica](send-logs-to-your-it-admin-by-email-iOS.md).
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 

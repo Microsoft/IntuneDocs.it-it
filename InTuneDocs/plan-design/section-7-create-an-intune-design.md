@@ -1,11 +1,11 @@
 ---
-title: Creare una progettazione per Intune | Documentazione Microsoft
+title: Creare una progettazione per Intune | Microsoft Docs
 description: Questo articolo semplifica la creazione di una progettazione per un&quot;implementazione di Microsoft Intune in configurazione solo cloud.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -25,11 +26,11 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-Questa sezione della guida deve essere usata in parallelo con gli altri argomenti nella sezione 2. La progettazione sarà basata sulle informazioni raccolte e sulle decisioni prese durante il completamento delle sezioni precedenti di questa guida. In questa sezione relativa alla progettazione ci concentreremo sulla versione autonoma di Intune, che è un servizio Microsoft basato sul cloud.
+Questa sezione della guida deve essere usata in parallelo con gli altri argomenti nella sezione 2. La progettazione sarà basata sulle informazioni raccolte e sulle decisioni prese durante il completamento delle sezioni precedenti di questa guida. In questa sezione relativa alla progettazione verrà usata principalmente la versione autonoma di Intune, che è un servizio Microsoft basato sul cloud.
 
-Anche se i requisiti dell'infrastruttura locale sono minimi, è comunque consigliabile definire un piano di progettazione per essere certi di disporre della soluzione di gestione dei dispositivi mobili più adatta per gli scopi, gli obiettivi e i requisiti dell'organizzazione.
+Anche se i requisiti dell'infrastruttura locale sono minimi, definire un piano di progettazione per essere certi di disporre della soluzione di gestione dei dispositivi mobili più adatta per gli scopi, gli obiettivi e i requisiti dell'organizzazione.
 
-Inoltre, spesso vengono apportate modifiche di progettazione durante le fasi di implementazione e di test: è importante assicurarsi di documentare tutte queste modifiche e i motivi per cui vengono apportate. Verranno descritte le aree seguenti:
+Inoltre, spesso vengono apportate modifiche di progettazione durante le fasi di implementazione e di test: è importante assicurarsi di documentare queste modifiche e i motivi per cui vengono eseguite. Verranno descritte le aree seguenti:
 
 -   Ambiente corrente
 
@@ -409,9 +410,4 @@ Di seguito è riportato un esempio di come documentare i criteri di accesso cond
 ## <a name="next-section"></a>Sezione successiva
 
 Nella sezione successiva vengono fornite indicazioni sul [processo di implementazione di Intune](section-8-onboarding-process.md).
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

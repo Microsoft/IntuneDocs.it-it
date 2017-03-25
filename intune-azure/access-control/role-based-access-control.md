@@ -1,12 +1,12 @@
 ---
-title: Controllo degli accessi in base al ruolo per Microsoft Intune
+title: Ruoli di Intune (Controllo degli accessi in base al ruolo) per Microsoft Intune
 titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: Informazioni su come il Controllo degli accessi in base al ruolo consente di controllare chi può eseguire azioni e apportare modifiche."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/22/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
-ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: e60edd86289e0fca2aa03660d8ce782e373c0236
+ms.lasthandoff: 03/15/2017
 
 
 ---
 
-# <a name="role-based-access-control-rbac-for-microsoft-intune"></a>Controllo degli accessi in base al ruolo per Microsoft Intune
+# <a name="intune-roles-rbac-for-microsoft-intune"></a>Ruoli di Intune (Controllo degli accessi in base al ruolo) per Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -66,9 +66,9 @@ Si assume un amministratore IT che sarà responsabile della distribuzione e dell
 
 ### <a name="how-to-create-a-custom-role"></a>Come creare un ruolo personalizzato
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Controllo dell'accesso**.
+3. Nel pannello **Intune** scegliere **Intune roles** (Ruoli di Intune).
 ![Carico di lavoro di Controllo dell'accesso](./media/axxess-control.png)
 1. Nel pannello **Ruoli** del carico di lavoro di **Controllo dell'accesso** scegliere **Aggiungi personalizzato**.
 2. Nel pannello **Aggiungi un ruolo personalizzato** immettere un nome e una descrizione per il nuovo ruolo e quindi fare clic su **Autorizzazioni**.
@@ -149,7 +149,7 @@ Quando si crea un ruolo personalizzato, è possibile configurare una o più dell
 |**Eseguire il bypass del blocco attivazione**|Rimuove il blocco attivazione dai dispositivi iOS senza richiedere Apple ID e password dell'utente. |
 |**Disabilita la modalità di dispositivo perso**|Disabilitare la modalità di dispositivo perso. Questa modalità consente di specificare un messaggio e un numero di telefono che verranno visualizzati nella schermata di blocco del dispositivo.|
 |**Abilita la modalità di dispositivo perso**|Abilitare la modalità di dispositivo perso. Questa modalità consente di specificare un messaggio e un numero di telefono che verranno visualizzati nella schermata di blocco del dispositivo.|
-|**Individua dispositivo**|-|
+|**Individua il dispositivo**|-|
 |**Riavvia il dispositivo**|Causa il riavvio del dispositivo.|
 |**Blocco remoto**|Blocca un dispositivo. Per sbloccarlo, il proprietario del dispositivo deve usare il passcode.|
 |**Reimposta passcode**|Genera un nuovo passcode per il dispositivo che verrà visualizzato nel pannello Panoramica di <device name>.|

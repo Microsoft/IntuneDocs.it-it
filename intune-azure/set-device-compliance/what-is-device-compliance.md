@@ -16,34 +16,35 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: b245dac28f88e7eab70dfa9d759b15e155f8a7df
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
-# <a name="what-is-device-compliance-in-intune-azure-preview"></a>Che cos'è la conformità del dispositivo nell'anteprima di Intune in Azure?
-
+# <a name="what-is-device-compliance-in-intune-azure-preview"></a>Che cos'è la conformità dei dispositivi nell'anteprima di Intune in Azure?
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Per proteggere i dati aziendali, è necessario assicurarsi che i dispositivi usati per accedere alle app e ai dati aziendali rispettino alcune regole, come l'uso di un PIN per l'accesso ai dispositivi e la crittografia dei dati archiviati nei dispositivi. Un set di regole di questo tipo è definito **criteri di conformità**.
+I criteri di conformità dei dispositivi in Intune definiscono le regole e le impostazioni a cui un dispositivo deve adeguarsi per essere considerato conforme in base ai criteri di accesso condizionale di Intune ed EMS. È anche possibile usare questi criteri per monitorare e correggere i problemi di conformità dei dispositivi. 
 
-##  <a name="how-should-i-use-a-device-compliance-policy"></a>Come usare i criteri di conformità del dispositivo?
-È possibile usare i criteri di conformità con l'accesso condizionale per consentire l'accesso soltanto ai dispositivi che soddisfano le regole dei criteri di conformità per l'accesso alla posta elettronica e ad altri servizi.
+Sono incluse le regole seguenti:
 
-È anche possibile usare i criteri di conformità indipendentemente dall'accesso condizionale.
-In tal caso, i dispositivi vengono valutati e segnalati in base allo stato di conformità. Ad esempio può risultare utile segnalare il numero di dispositivi non crittografati o i dispositivi jailbroken o rooted. Tuttavia, quando i criteri di conformità vengono usati in modo indipendente, non vengono applicate limitazioni per l'accesso alle risorse aziendali.
+- Uso di una password per l'accesso ai dispositivi
+- Crittografia
+- Dispositivo non manomesso con jailbreak o root
+- Versione minima richiesta del sistema operativo
+- Versione massima consentita del sistema operativo
+- Dispositivo non al di sopra del livello di Mobile Threat Defense
 
-I criteri di conformità vengono distribuiti agli utenti. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata sui dispositivi dell’utente. Per informazioni sul tempo necessario ai dispositivi mobili per ottenere un criterio dopo la distribuzione, vedere Gestire impostazioni e funzionalità nei dispositivi.
+<!---##  Concepts
+Following are some terms and concepts that are useful to understanding how to use compliance policies.
 
-##  <a name="concepts"></a>Concetti
-Di seguito sono riportati alcuni termini e concetti utili per comprendere come usare i criteri di conformità.
+### Device compliance requirements
+Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.
 
-### <a name="compliance-requirements"></a>Requisiti di conformità
-I requisiti di conformità sono essenzialmente regole quali la richiesta di un PIN per il dispositivo o la crittografia che è possibile specificare come obbligatoria o non obbligatoria in base ai criteri di conformità.
-
-<!---### Actions for noncompliance
+### Actions for noncompliance
 
 You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
 When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
@@ -66,14 +67,22 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="differences-between-the-classic-intune-admin-console-and-intune-in-the-azure-portal"></a>Differenze tra la console di amministrazione di Intune classica e Intune nel portale di Azure
+##  <a name="how-should-i-use-a-device-compliance-policy"></a>Come usare i criteri di conformità dei dispositivi?
 
+### <a name="using-ems-conditional-access"></a>Con l'accesso condizionale EMS
+È possibile usare i criteri di conformità con l'accesso condizionale EMS per consentire l'accesso alla posta elettronica e ad altre risorse aziendali solo ai dispositivi che soddisfano una o più regole dei criteri di conformità.
 
-Se in precedenza si è usata la console di amministrazione di Intune classica, è opportuno tenere presente le differenze seguenti per la transizione al nuovo flusso di lavoro per la conformità dei dispositivi nel portale di Azure:
+### <a name="not-using-ems-conditional-access"></a>Senza l'accesso condizionale EMS
+È anche possibile usare i criteri di conformità dei dispositivi indipendentemente dall'accesso condizionale EMS.
+In tal caso, i dispositivi vengono valutati e segnalati in base allo stato di conformità. Può ad esempio essere utile segnalare quanti dispositivi non sono crittografati o quali dispositivi sono stati manomessi con jailbreak o root. Tuttavia, quando i criteri di conformità vengono usati in modo indipendente, non vengono applicate limitazioni per l'accesso alle risorse aziendali.
 
+I criteri di conformità vengono distribuiti agli utenti. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata sui dispositivi dell’utente. Per informazioni sul tempo necessario ai dispositivi mobili per ottenere un criterio dopo la distribuzione, vedere Gestire impostazioni e funzionalità nei dispositivi.
+
+##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Confronto tra la console di amministrazione classica di Intune e il portale di anteprima di Intune in Azure
+
+Se si è usata la console di amministrazione classica di Intune, è opportuno tenere presenti le differenze seguenti per facilitare la transizione al nuovo flusso di lavoro dei criteri di conformità dei dispositivi nel portale di Azure:
 
 -   Nel portale di Azure i criteri di conformità vengono creati separatamente per ogni piattaforma supportata. Nella console di amministrazione di Intune un criterio di conformità è comune a tutte le piattaforme supportate.
-
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
@@ -81,15 +90,10 @@ Se in precedenza si è usata la console di amministrazione di Intune classica, �
 
 ##  <a name="next-steps"></a>Passaggi successivi
 
-[Introduzione ai criteri di conformità](get-started-with-device-compliance.md)
+[Introduzione ai criteri conformità dei dispositivi](get-started-with-device-compliance.md)
 
 
 <!---### See also
 
 Conditional access--->
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
