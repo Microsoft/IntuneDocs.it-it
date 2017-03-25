@@ -41,7 +41,7 @@
 #### [Registrare dispositivi iOS con Device Enrollment Program](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Registrare dispositivi con il manager di registrazione dispositivi](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Registrare i dispositivi macOS](enroll-devices/enroll-macos-devices.md)
-### [Registrare i dispositivi Windows](enroll-devices/enroll-window-devices.md)
+### [Registrare i dispositivi Windows](enroll-devices/enroll-windows-devices.md)
 ### Gestire la registrazione dei dispositivi
 #### [Creare termini e condizioni](enroll-devices/create-terms-and-conditions.md)
 #### [Impostare restrizioni registrazione](enroll-devices/set-enrollment-restrictions.md)
