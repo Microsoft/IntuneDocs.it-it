@@ -41,7 +41,7 @@ Per informazioni sull'uso dello strumento di wrapping delle app rispetto a Intun
 
 Per associare l'app line-of-business ai criteri MAM, è necessario aggiungere i dettagli dell'app alla sottoscrizione o al tenant Intune con la procedura seguente:
 
-1. Nel [portale di Azure](https://portal.azure.com/) passare a **Gestione di applicazioni mobili di Intune ** > ** Impostazioni** e scegliere **App line-of-business**.
+1. Nel [portale di Azure](https://portal.azure.com/) passare a **Gestione di applicazioni mobili di Intune** > **Impostazioni** e scegliere **App line-of-business**.
 
   ![Screenshot del pannello delle impostazioni con l'opzione line-of-business](../media/mam-azure-portal-lob-on-settings.png)
 

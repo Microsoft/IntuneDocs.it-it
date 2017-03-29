@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
+ms.lasthandoff: 12/10/2016
 
 
 
@@ -45,7 +46,7 @@ Per usare i profili di certificato PFX, oltre all'autorità di certificazione de
 
 -  **Computer che possono comunicare con Autorità di certificazione**: in alternativa, è possibile usare il computer dell'autorità di certificazione stessa.
 -  **Connettore di certificati di Microsoft Intune**: usare la console di amministrazione di Intune per scaricare il programma di installazione del **Connettore di certificati** (**ndesconnectorssetup.exe**). È quindi possibile eseguire **ndesconnectorssetup.exe** nel computer in cui si vuole installare Connettore di certificati. Per i profili certificato PFX installare Connettore di certificati nel computer che comunica con l'autorità di certificazione.
--  **Server Proxy applicazione Web ** (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versione successiva come Server Proxy applicazione Web (WAP). Questa configurazione:
+-  **Server Proxy applicazione Web** (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versione successiva come Server Proxy applicazione Web (WAP). Questa configurazione:
     -  Consente ai dispositivi di ricevere i certificati usando una connessione Internet.
     -  Vale come raccomandazione di sicurezza quando i dispositivi usano la connessione a Internet per ricevere e rinnovare i certificati.
 
@@ -157,9 +158,4 @@ Scaricare, installare e configurare Connettore di certificati.
 
 ### <a name="next-steps"></a>Passaggi successivi
 A questo punto è possibile configurare i profili certificato come descritto in [Configurare i profili certificato](Configure-Intune-certificate-profiles.md).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
