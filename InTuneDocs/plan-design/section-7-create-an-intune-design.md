@@ -97,7 +97,7 @@ Durante la registrazione dell'ambiente MDM corrente, assicurarsi di prendere not
 | **Area di soluzioni** | **Ambiente corrente** | **Commenti** |
 |:---:|:---:|:---:|
 | **Identità** | Azure AD, Azure AD Connect, non federato, senza autenticazione a più fattori | Progetto per abilitare l'autenticazione a più fattori entro la fine dell'anno |                 
-| **Ambiente di posta elettronica** | Exchange locale, Exchange Online | Migrazione in corso da Exchange locale a Exchange Online. È stata eseguita la migrazione del&75;% delle cassette postali. La migrazione dell'ultimo 25% verrà eseguita prima dell'avvio del progetto pilota di Intune. |                
+| **Ambiente di posta elettronica** | Exchange locale, Exchange Online | Migrazione in corso da Exchange locale a Exchange Online. È stata eseguita la migrazione del 75% delle cassette postali. La migrazione dell'ultimo 25% verrà eseguita prima dell'avvio del progetto pilota di Intune. |                
 | **SharePoint** | SharePoint locale | Nessun piano per la migrazione a SharePoint Online |  
 | **Soluzione MDM corrente** | Exchange ActiveSync |  |
 | **Soluzione per i certificati** | Microsoft Server 2012 R2, Servizi certificati Active Directory | Uso di PKI solo per i server del sito Web |

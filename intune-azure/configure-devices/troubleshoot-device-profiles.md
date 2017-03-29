@@ -31,7 +31,7 @@ ms.lasthandoff: 03/13/2017
 Usare le informazioni contenute in questo argomento per risolvere i problemi comuni relativi ai profili di dispositivo in Intune.
 
 ## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>Quanto tempo è necessario ai dispositivi mobili per ottenere i criteri o le app dopo la distribuzione?
-Quando viene distribuito un criterio o un'app, Intune prova immediatamente a inviare una notifica al dispositivo per avvisarlo di contattare il servizio Intune per controllare la disponibilità di aggiornamenti. Questa operazione richiede in genere meno di&5; minuti.
+Quando viene distribuito un criterio o un'app, Intune prova immediatamente a inviare una notifica al dispositivo per avvisarlo di contattare il servizio Intune per controllare la disponibilità di aggiornamenti. Questa operazione richiede in genere meno di 5 minuti.
 
 Se dopo l'invio della prima notifica il dispositivo non contatta il servizio per ottenere il criterio, Intune esegue altri tre tentativi.  Se il dispositivo è offline, ad esempio è spento o non è connesso a una rete, può non ricevere le notifiche. In questo caso, il dispositivo otterrà il criterio al successivo controllo pianificato con il servizio Intune, come indicato di seguito:
 

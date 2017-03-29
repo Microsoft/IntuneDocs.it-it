@@ -68,7 +68,7 @@ Si assume un amministratore IT che sarà responsabile della distribuzione e dell
 
 1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Intune roles** (Ruoli di Intune).
+3. Nel pannello **Intune** scegliere **Ruoli di Intune**.
 ![Carico di lavoro di Controllo dell'accesso](./media/axxess-control.png)
 1. Nel pannello **Ruoli** del carico di lavoro di **Controllo dell'accesso** scegliere **Aggiungi personalizzato**.
 2. Nel pannello **Aggiungi un ruolo personalizzato** immettere un nome e una descrizione per il nuovo ruolo e quindi fare clic su **Autorizzazioni**.

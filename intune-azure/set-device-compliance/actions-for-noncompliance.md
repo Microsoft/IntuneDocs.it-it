@@ -67,7 +67,7 @@ Quando si prevede di applicare criteri di conformità per impedire ai dispositiv
 
 ### <a name="to-add-a-notification-message-template"></a>Per aggiungere un modello di messaggio di notifica
 
-Nel pannello **Device compliance policies** (Criteri di conformità dei dispositivi):
+Nel pannello **Criteri di conformità del dispositivo**:
 
 1.  In **Gestione** scegliere **Notifiche** in modo da visualizzare il pannello dei modelli dei messaggi di notifica.
 
@@ -100,13 +100,13 @@ Dopo aver aggiunto le informazioni necessarie, è possibile fare clic su **Crea*
 
 È possibile aggiungere un'azione nel momento in cui si crea un nuovo criterio di conformità dei dispositivi o si modifica un criterio esistente.
 
-1.  Nel pannello **Device compliance policies** (Criteri di conformità dei dispositivi), in **Gestione**, scegliere **Criteri**.
+1.  Nel pannello **Criteri di conformità del dispositivo**, in **Gestione**, scegliere **Criteri**.
 
 2.  Fare clic su un criterio di conformità dei dispositivi.
 
     ![Criteri di conformità](../media/afnc-3.png)
 
-3.  Verrà aperto il pannello **Device compliance policy properties** (Proprietà dei criteri di conformità dei dispositivi) in cui scegliere **Azioni per la non conformità**.
+3.  Verrà aperto il pannello **Device compliance policy properties** (Proprietà dei criteri di conformità del dispositivo) in cui scegliere **Azioni per la non conformità**.
 
 4.  Verrà aperto il pannello Azioni per la non conformità in cui scegliere **Aggiungi** per specificare i parametri dell'azione.
 
@@ -132,7 +132,7 @@ Per aggiungere questa azione per la mancata conformità:
 
 4.  Scegliere **Aggiungi** e quindi **OK** nel pannello **Azioni**.
 
-5.  Nel pannello **Device compliance policy properties** (Proprietà dei criteri di conformità dei dispositivi) scegliere **Salva**.
+5.  Nel pannello **Device compliance policy properties** (Proprietà dei criteri di conformità del dispositivo) scegliere **Salva**.
 
 ### <a name="send-e-mail-to-end-user"></a>Invia un messaggio di posta elettronica all'utente finale
 
@@ -155,5 +155,5 @@ Per aggiungere questa azione per la mancata conformità:
 
 2.  Scegliere **Aggiungi** e quindi **OK** nel pannello **Azioni**.
 
-3.  Nel pannello **Device compliance policy properties** (Proprietà dei criteri di conformità dei dispositivi) scegliere **Salva**.
+3.  Nel pannello **Device compliance policy properties** (Proprietà dei criteri di conformità del dispositivo) scegliere **Salva**.
 
