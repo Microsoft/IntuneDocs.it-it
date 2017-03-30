@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: d201715e5e744b0bf2bd37aca2867ef17133311b
-ms.openlocfilehash: 12ad8430d4a9bd6a3f91447db2422f1eb4144a24
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 786028412ca46d07e5180f469d07f9103f956033
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -44,7 +44,7 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
+3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 3. Nel pannello dei profili scegliere **Crea profilo**.
 4. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** per il profilo di posta elettronica.

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 957192c744bf05cd835dfae60b6bb521b8f8b26b
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -73,9 +73,10 @@ Se un dispositivo iOS è stato rubato o smarrito, è possibile abilitare la moda
 2.    Nel pannello **Modalità di dispositivo perso** abilitare questa modalità, immettere il messaggio che verrà visualizzato e, facoltativamente, indicare un numero di telefono di contatto.
 3.    Fare clic su **OK**.
 Quando si abilita la modalità di dispositivo perso, si blocca qualsiasi uso del dispositivo. L'utente finale non può accedere al dispositivo finché l'amministratore non disabilita questa modalità. Quando la modalità di dispositivo perso è abilitata, è possibile usare l'azione **Individua il dispositivo** per scoprire dove si trova il dispositivo.
+Per usare la modalità di dispositivo perso è necessario un dispositivo iOS di proprietà dell'azienda, registrato con DEP, in cui sia attiva la modalità con supervisione.
 
 ### <a name="locate-device"></a>**Individua il dispositivo**
-Usare questa azione remota per visualizzare su una mappa la posizione di un dispositivo iOS rubato o smarrito. Il dispositivo deve essere un dispositivo iOS di proprietà dell'azienda in cui è attiva la modalità con supervisione. Prima di usare questa azione, è necessario abilitare la modalità di dispositivo perso.
+Usare questa azione remota per visualizzare su una mappa la posizione di un dispositivo iOS rubato o smarrito. Deve trattarsi di un dispositivo iOS di proprietà dell'azienda, registrato con DEP, in cui sia attiva la modalità con supervisione. Prima di usare questa azione, è necessario abilitare la modalità di dispositivo perso.
 1.    Nel pannello delle proprietà di un dispositivo iOS, scegliere **Altro** > **Individua il dispositivo**.
 2.    Dopo che il dispositivo è stato trovato, la relativa posizione viene visualizzata nel pannello **Individua il dispositivo**. 
     ![Pannello Individua il dispositivo](./media/locate-device.png)

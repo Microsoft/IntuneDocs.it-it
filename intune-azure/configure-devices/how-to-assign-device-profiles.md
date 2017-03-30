@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 861e14227b847422d584d69364315a2418a986de
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 238c67c3edb843ef62deccb42cfa2879232e1434
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -30,8 +30,8 @@ ms.lasthandoff: 02/18/2017
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
-1. Nel pannello **Configura i dispositivi** scegliere **Gestisci** > **Profili**.
+3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
+1. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 2. Nell'elenco del pannello dei profili selezionare il profilo che si desidera gestire, quindi, nel pannello **Report** <*nome profilo*>  scegliere **Gestisci** > **Assegnazioni**.
 3. Nel pannello successivo fare clic su **Seleziona gruppi**, quindi nel pannello **Selezionare i gruppi** scegliere i gruppi Azure AD a cui assegnare il profilo. Per selezionare più gruppi, è possibile tenere premuto il tasto **CTRL**.
 4. Al termine, nel pannello **Selezionare i gruppi** scegliere **Seleziona**.

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **Scelte rapida da tastiera (solo con supervisione)** - Consente l'uso dei tasti di scelta rapida.
 -     **Rilevamento del polso per l'Apple Watch associato** - Quando l'opzione è abilitata, Apple Watch non visualizza notifiche se non è indossato.
 - **Richiedi la password associata alle richieste AirPlay in uscita** - Richiede una password di associazione quando l'utente usa AirPlay per trasmettere i contenuti ad altri dispositivi di Apple.
-- **Modifica dell'account (solo con supervisione)** - Consente all'utente di modificare le impostazioni dell'account, ad esempio le configurazioni di posta elettronica.
+- **Modifica dell'account (solo con supervisione)** - Quando è bloccata, impedisce all'utente di modificare le impostazioni specifiche dei dispositivi dall'app delle impostazioni iOS, ad esempio creare nuovi account di dispositivo e modificare il nome utente o la password.
+Questa opzione si applica anche alle impostazioni accessibili dall'app delle impostazioni iOS come Posta, Contatti, Calendario, Facebook e Twitter. Non si applica alle app con impostazioni dell'account non configurabili dall'app delle impostazioni iOS, ad esempio Microsoft Outlook.
 - **Associazione di Apple Watch (solo con supervisione)** - Consente al dispositivo di associare un Apple Watch.
 - **Modifica Bluetooth (solo con supervisione)** - Impedisce all'utente finale di modificare le impostazioni Bluetooth nel dispositivo.
 - **Osservazione dello schermo remoto da parte dell'app Classroom (solo con supervisione)** - Consente o blocca l'osservazione dello schermo dei dispositivi remoti da parte dell'app Classroom.

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: aea6d9868d91260dd7a3a4c3b1426f12fcc9f47d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 34b906301fca2e91f2c014b9959c305a39f46af1
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -49,7 +49,7 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
+3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 3. Nel pannello dei profili scegliere **Crea profilo**.
 4. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** per il profilo Wi-Fi.
@@ -60,7 +60,7 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
     - **Windows 8.1 e versioni successive (importazione di un profilo)**
 6. Dall'elenco a discesa dei tipi di **profilo** scegliere **Wi-Fi di base** o **Wi-Fi aziendale**.
     >[!TIP]
-    >Usare **Wi-Fi di base** per fornire informazioni di base quali il nome della rete e l'SSID. **Wi-Fi aziendale** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi lo usa. **Wi-Fi per importazione ** (per Windows 8.1 e Windows 10) consente di importare le impostazioni Wi-Fi come un file XML precedentemente esportato da un altro dispositivo.
+    >Usare **Wi-Fi di base** per fornire informazioni di base quali il nome della rete e l'SSID. **Wi-Fi aziendale** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi lo usa. **Wi-Fi per importazione** (per Windows 8.1 e Windows 10) consente di importare le impostazioni Wi-Fi come un file XML precedentemente esportato da un altro dispositivo.
 7. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli argomenti seguenti per il dettaglio delle impostazioni di ogni piattaforma:
     - [Impostazioni Android](wi-fi-for-android.md)
     - [Impostazioni iOS](wi-fi-for-ios.md)

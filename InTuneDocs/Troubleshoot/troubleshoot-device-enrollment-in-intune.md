@@ -1,11 +1,11 @@
 ---
-title: Risolvere i problemi di registrazione dei dispositivi | Documentazione Microsoft
+title: Risolvere i problemi di registrazione dei dispositivi | Microsoft Docs
 description: Suggerimenti per la risoluzione dei problemi di registrazione dei dispositivi.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
-ms.lasthandoff: 01/25/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 3d4a89cd8e6e57f5a1e268dcda98cfb3c68c5587
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -35,9 +35,9 @@ Prima di iniziare la risoluzione dei problemi, verificare di aver configurato In
 
 -    [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
 -    [Configurare la gestione dei dispositivi iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Configurare la gestione di Windows Phone e Windows 10 Mobile con Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -    [Configurare la gestione dei dispositivi Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-    [Configurare la gestione dei dispositivi Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) - Non sono necessari passaggi aggiuntivi
+-    [Configurare la gestione dei dispositivi Android for Work](/intune/deploy-use/set-up-android-for-work)
 
 Gli utenti dei dispositivi gestiti possono raccogliere log di registrazione e diagnostica da sottoporre all'analisi dell'amministratore. Le istruzioni per raccogliere i log sono disponibili nell'articolo:
 
@@ -65,7 +65,7 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Per eliminare i dispositivi nel portale di Azure Active Directory
 
-1.  Accedere a [http://aka.ms/accessaad](http://aka.ms/accessaad) oppure fare clic su** Amministrazione** &gt; **Azure AD** da [https://portal.office.com](https://portal.office.com).
+1.  Accedere a [http://aka.ms/accessaad](http://aka.ms/accessaad) oppure fare clic su**Amministrazione** &gt; **Azure AD** da [https://portal.office.com](https://portal.office.com).
 
 2.  Accedere con l'ID organizzazione usando il collegamento sul lato sinistro della pagina.
 
@@ -149,7 +149,7 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 **Problema:** quando si aggiunge un secondo dominio verificato ad AD FS, gli utenti con il suffisso del nome principale (UPN) dell'utente del secondo dominio potrebbero non essere in grado di accedere ai portali o di registrare dispositivi.
 
 
-**Risoluzione:** i clienti di Microsoft Office 365 che usano l'accesso Single Sign-On (SSO) tramite AD FS 2.0 e dispongono di più domini di primo livello per i suffissi UPN degli utenti all'interno dell'organizzazione (ad esempio, @contoso.com o @fabrikam.com)) devono distribuire un'istanza separata del Servizio federativo AD FS 2.0 per ogni suffisso. È ora disponibile il [rollup per AD FS 2.0](http://support.microsoft.com/kb/2607496) che interagisce con l'opzione **SupportMultipleDomain** per consentire al server AD FS di supportare questo scenario senza richiedere altri server AD FS 2.0. Per altre informazioni, vedere [questo blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+**Risoluzione:** i clienti di Microsoft Office 365 che usano l'accesso Single Sign-On (SSO) tramite AD FS 2.0 e dispongono di più domini di primo livello per i suffissi UPN degli utenti all'interno dell'organizzazione (ad esempio, @contoso.com o @fabrikam.com) devono distribuire un'istanza separata del servizio federativo AD FS 2.0 per ogni suffisso. È ora disponibile il [rollup per AD FS 2.0](http://support.microsoft.com/kb/2607496) che interagisce con l'opzione **SupportMultipleDomain** per consentire al server AD FS di supportare questo scenario senza richiedere altri server AD FS 2.0. Per altre informazioni, vedere [questo blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Problemi di Android
@@ -279,6 +279,18 @@ Per risolvere il problema, è necessario che gli utenti selezionino il pulsante 
   ![Schermata di configurazione dell'accesso aziendale](./media/ios_cp_app_company_access_setup.png)
 
 Dopo aver eseguito la registrazione, vengono ripristinati il corretto funzionamento dei dispositivi e l'accesso alle risorse aziendali.
+
+### <a name="verify-ws-trust-13-is-enabled"></a>Verificare che WS-Trust 1.3 sia abilitato
+**Problema** I dispositivi iOS Device Enrollment Program (DEP) non possono essere registrati
+
+Per la registrazione dei dispositivi DEP con affinità utente è necessario che un endpoint Username/Mixed di WS-Trust 1.3 sia abilitato a richiedere token utente. Active Directory abilita questo endpoint per impostazione predefinita. Per ottenere un elenco di endpoint abilitati, usare il cmdlet Get-AdfsEndpoint di PowerShell e cercare l'endpoint trust/13/UsernameMixed. Ad esempio:
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+Per altre informazioni, vedere la [documentazione di Get-AdfsEndpoint](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+Per altre informazioni, vedere [Procedure consigliate per la protezione di Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Se è necessaria assistenza aggiuntiva per determinare se l'endpoint Username/Mixed di WS-Trust 1.3 è abilitato nel provider di federazione delle identità, contattare il supporto tecnico Microsoft, se si usa AD FS, oppure un fornitore di identità di terze parti.
+
 
 ### <a name="profile-installation-failed"></a>Installazione profilo non riuscita
 **Problema**: in un dispositivo iOS un messaggio indica che **si è verificato un errore di installazione del profilo**.

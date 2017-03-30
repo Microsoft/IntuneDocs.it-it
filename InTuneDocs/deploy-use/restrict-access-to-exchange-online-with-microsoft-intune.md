@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-È possibile configurare l'accesso condizionale per Exchange locale o per Exchange Online dedicato usando Microsoft Intune. Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Proteggere l'accesso alla posta elettronica, a Office&365; e ad altri servizi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+È possibile configurare l'accesso condizionale per Exchange locale o per Exchange Online dedicato usando Microsoft Intune. Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Proteggere l'accesso alla posta elettronica, a Office 365 e ad altri servizi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!NOTE]
 >Se è disponibile un ambiente Exchange Online dedicato e si deve stabilire se si trova nell'ambiente di configurazione nuovo o legacy, contattare l'account manager.
@@ -59,7 +60,7 @@ Quando si configurano i criteri per l'accesso condizionale e li si assegna a un 
 
 ### <a name="when-the-device-is-not-compliant"></a>Quando il dispositivo non è conforme
 
-Se un criterio di accesso condizionale non viene soddisfatto, il dispositivo viene inserito immediatamente in quarantena; l'utente riceve un messaggio di posta elettronica e, quando esegue l'accesso, viene visualizzata una delle seguenti notifiche di quarantena:
+Se un criterio di accesso condizionale non viene soddisfatto, il dispositivo viene inserito immediatamente in quarantena. L'utente riceve un messaggio di posta elettronica e, quando esegue l'accesso, viene visualizzata una delle seguenti notifiche di quarantena:
 
 - Se il dispositivo non è registrato in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] oppure non è registrato in Azure Active Directory, viene visualizzato un messaggio contenente istruzioni su come installare l'app Portale aziendale, registrare il dispositivo e attivare la posta elettronica. Questo processo associa anche l'ID Exchange ActiveSync del dispositivo con il record in Azure Active Directory.
 
@@ -275,9 +276,4 @@ Nel dashboard di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] sceglier
 - [Proteggere l'accesso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [Proteggere l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

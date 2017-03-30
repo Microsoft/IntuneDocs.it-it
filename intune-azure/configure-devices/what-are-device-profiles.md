@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Usare il carico di lavoro **Configura i dispositivi** di Microsoft Intune per gestire impostazioni e funzionalità in tutti i dispositivi gestiti. Questo carico di lavoro verrà usato principalmente per creare profili di dispositivo, che consentono di gestire e controllare una vasta gamma di funzionalità sui dispositivi gestiti.
+Usare il carico di lavoro **Configurazione del dispositivo** di Microsoft Intune per gestire impostazioni e funzionalità in tutti i dispositivi gestiti. Questo carico di lavoro verrà usato principalmente per creare profili di dispositivo, che consentono di gestire e controllare una vasta gamma di funzionalità sui dispositivi gestiti.
 
 All'apertura di questo carico di lavoro, verranno visualizzate le opzioni seguenti:
 
@@ -41,8 +41,13 @@ Il flusso di lavoro per la creazione di profili di dispositivo è simile per tut
 
 Nei dispositivi è possibile gestire le funzionalità seguenti:
 
-## <a name="device-restrictions"></a>Restrizioni dei dispositivi
-Le restrizioni dei dispositivi consentono di controllare una vasta gamma di impostazioni e funzionalità relative a numerose categorie tra cui sicurezza, browser, hardware e condivisione dei dati. Ad esempio, è possibile creare un profilo di restrizione dei dispositivi che impedisce agli utenti di dispositivi iOS di accedere alla fotocamera.
+## <a name="device-features"></a>Funzionalità del dispositivo
+
+Funzionalità del dispositivo consente di controllare le funzionalità dei dispositivi iOS e macOS come AirPrint, le notifiche e le configurazioni dei dispositivi condivisi.
+Per altre informazioni, vedere [Come configurare le impostazioni relative alle funzionalità dei dispositivi](how-to-configure-device-features.md). Supporta: iOS e macOS.
+
+## <a name="device-restrictions"></a>Limitazioni del dispositivo
+Limitazioni del dispositivo consente di controllare una vasta gamma di impostazioni dei dispositivi gestiti relative a numerose categorie tra cui sicurezza, browser, hardware e condivisione dei dati. Ad esempio, è possibile creare un profilo di restrizione dei dispositivi che impedisce agli utenti di dispositivi iOS di accedere alla fotocamera.
 Per altre informazioni, vedere [How to configure device restriction settings](how-to-configure-device-restrictions.md) (Come configurare le impostazioni di restrizione dei dispositivi). Supporta: Android, iOS, Mac OS, Windows 10 e Windows 10 Team.
 
 ## <a name="email"></a>Posta elettronica
@@ -57,6 +62,10 @@ Per altre informazioni, vedere [How to configure Wi-Fi settings](how-to-configur
 Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla rete aziendale. I dispositivi usano un profilo di connessione VPN per stabilire una connessione con il server VPN. Usare i profili VPN per distribuire le impostazioni VPN agli utenti e ai dispositivi dell'organizzazione in modo che possano connettersi in modo facile e sicuro alla rete.
 Per altre informazioni, vedere [How to configure VPN settings](how-to-configure-vpn-settings.md) (Come configurare le impostazioni VPN).
 Supporto: Android, iOS, Mac OS, Windows Phone 8.1, Windows 8.1 e Windows 10.
+
+## <a name="education"></a>Istruzione
+Consente di configurare le opzioni per l'app Test ed esami di Windows. Quando si configurano queste opzioni, nessun'altra app può essere eseguita sul dispositivo finché il test non è completato.
+Per altre informazioni, vedere [Come configurare le impostazioni relative alla formazione](how-to-configure-education-settings.md).
 
 ## <a name="certificates"></a>Certificati
 Questo tipo di profilo consente di configurare certificati attendibili SCEP e PKCS, da assegnare ai dispositivi e usati per autenticare i profili Wi-Fi, VPN e di posta elettronica.

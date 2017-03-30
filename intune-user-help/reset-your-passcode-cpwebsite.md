@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
-ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -48,23 +48,23 @@ Per reimpostare il passcode:
 
   ![Banner di reimpostazione del passcode con il relativo avviso sulla reimpostazione del passcode del dispositivo e sulla disconnessione dell'utente. I pulsanti per l'input dell'utente sono Disconnetti e Annulla.](./media/iwp-reset-passcode-popup.png)
 
-4.  Selezionare **Disconnetti**. Verrà visualizzato un messaggio finale con informazioni sulla rimozione del passcode dal dispositivo. Non rimuovere il passcode se il dispositivo non è a portata di mano, perché chiunque abbia accesso fisico al dispositivo potrà accedere alla maggior parte delle informazioni in esso contenute, sia personali che aziendali.
+5.  Selezionare **Disconnetti**. Verrà visualizzato un messaggio finale con informazioni sulla rimozione del passcode dal dispositivo. Non rimuovere il passcode se il dispositivo non è a portata di mano, perché chiunque abbia accesso fisico al dispositivo potrà accedere alla maggior parte delle informazioni in esso contenute, sia personali che aziendali.
 
   ![Secondo banner di reimpostazione del passcode con il relativo avviso sulla reimpostazione del passcode del dispositivo e sulla rimozione del passcode dal dispositivo. Viene anche indicato come impostare un nuovo passcode accedendo alle impostazioni del dispositivo per farlo.](./media/iwp-reset-passcode-2nd-popup.png)
 
+  Dispositivi diversi hanno tipi diversi di passcode.
 
-Dato che dispositivi diversi hanno tipi differenti di passcode, nella tabella seguente sono indicati i possibili effetti della reimpostazione del passcode sul dispositivo specifico. 
+  **Android**: rimuove il passcode esistente e crea un passcode temporaneo con lettere e numeri.
 
-    |Tipo di dispositivo|Cosa accade con la reimpostazione|
-    |------------|-----------|
-    |Android|Viene rimosso il passcode esistente e viene creato un passcode temporaneo con lettere e numeri|
-    |iOS|Viene rimosso il passcode esistente senza crearne uno temporaneo. Se si usa il sensore di impronte digitali Touch ID per aprire il dispositivo o effettuare acquisti, sarà necessario reimpostarlo.|
-    |Windows 10 Mobile|Viene rimosso il passcode esistente e viene creato un passcode temporaneo con lettere e numeri. Se si usa il riconoscimento facciale di Windows Hello per eseguire l'accesso, la funzione continuerà a essere supportata.|
-    |Windows Phone 8.1|Viene rimosso il passcode esistente e viene creato un passcode temporaneo con numeri.|
+  **iOS**: rimuove il passcode esistente senza crearne uno temporaneo. Se si usa il sensore di impronte digitali Touch ID per aprire il dispositivo o effettuare acquisti, sarà necessario reimpostarlo.
 
-    5.  Sbloccare il dispositivo e impostare un nuovo passcode o modificare il passcode temporaneo in **Impostazioni** sul dispositivo.
+  **Windows 10 Mobile**: rimuove il passcode esistente e crea un passcode temporaneo con lettere e numeri. Se si usa il riconoscimento facciale di Windows Hello per eseguire l'accesso, la funzione continuerà a essere supportata.
+    
+  **Windows Phone 8.1**: rimuove il passcode esistente e crea un passcode temporaneo con numeri.
 
-    Per visualizzare una notifica di conferma della reimpostazione della password, fare clic sul flag di notifica nella parte superiore destra del sito Web del portale aziendale.
+6.  Sbloccare il dispositivo e impostare un nuovo passcode o modificare il passcode temporaneo in **Impostazioni** sul dispositivo.
+
+Per visualizzare una notifica di conferma della reimpostazione della password, fare clic sul flag di notifica nella parte superiore destra del sito Web del portale aziendale.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: cc9ef6777f06aca5ef93154c38e12520ab9ed348
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 17c5649e7ece5becd17e8ef9a74d748b6202693f
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -39,6 +39,7 @@ ms.lasthandoff: 02/18/2017
     - **Piattaforma**: selezionare il tipo di piattaforma per il profilo che si desidera creare.
     - **Tipo di profilo**: selezionare il tipo di profilo che si desidera creare. L'elenco dei tipi disponibili varia in base alla piattaforma scelta.
     - **Impostazioni**: vedere gli argomenti seguenti per informazioni sulle impostazioni per ogni tipo di profilo:
+        -  [Impostazioni delle funzionalità dei dispositivi](/intune-azure/configure-devices/how-to-configure-device-features)
         -  [Device restriction settings](/intune-azure/configure-devices/how-to-configure-device-restrictions) (Impostazioni relative alle restrizioni dei dispositivi)
         -  [Email settings](/intune-azure/configure-devices/how-to-configure-email-settings) (Impostazioni di posta elettronica)
         -  [VPN settings](/intune-azure/configure-devices/how-to-configure-vpn-settings) (Impostazioni VPN)
@@ -46,7 +47,7 @@ ms.lasthandoff: 02/18/2017
         -  [Windows 10 edition upgrade settings](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade) (Impostazioni di aggiornamento edizione di Windows 10)
         -  [Certificate settings](/intune-azure/configure-devices/how-to-configure-certificates) (Impostazioni dei certificati)
         -  [Windows Information Protection settings](/intune-azure/configure-devices/how-to-configure-windows-information-protection) (Impostazioni di Windows Information Protection)
-        -  [Education settings](/intune-azure/configure-devices/education-settings-for-ios.md) (Impostazioni di Education)
+        -  [Education settings](/intune-azure/configure-devices/how-to-configure-education-settings) (Impostazioni di Education)
         -  [Custom settings](/intune-azure/configure-devices/how-to-configure-custom-settings) (Impostazioni personalizzate)
 
     ![Creare un profilo del dispositivo](./media/create-device-profile.png)

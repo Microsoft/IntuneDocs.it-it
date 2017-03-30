@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/08/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
-ms.openlocfilehash: f12d538b1f4cd327b893d234f2b558185cdd9d85
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: e0a853c34c6d38e8fae6f4712ba6c2b767e5d0ba
+ms.lasthandoff: 03/22/2017
 
 ---
 
@@ -26,14 +26,24 @@ ms.lasthandoff: 03/09/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-È possibile creare un elenco di numeri IMEI(International Mobile Equipment Identity) per identificare i dispositivi aziendali. Questi dispositivi possono essere registrati o meno e presentano lo stato "Registrato" o "Non contattato". "Non contattato" significa che il dispositivo non effettua mai la connessione al servizio Intune.
+Come amministratore IT è possibile creare e importare un file con valori delimitati da virgole (con estensione csv) che elenca i codici IMEI (International Mobile Equipment Identity) per identificare i dispositivi di proprietà dell'azienda. Per ogni codice IMEI, nell'elenco possono essere specificati dettagli per scopi amministrativi.
 
-Per creare l'elenco, generare un elenco di valori a due colonne, delimitato da virgole (file con estensione CSV) senza intestazione. Aggiungere l'identificatore IMEI nella colonna a sinistra e i dettagli nella colonna destra. Il limite massimo corrente per l'elenco è di 500 righe.
+## <a name="create-a-csv-file"></a>Creare un file con estensione csv
+Per creare l'elenco, generare un elenco di valori a due colonne, delimitato da virgole (file con estensione CSV) senza intestazione. Aggiungere l'identificatore IMEI nella colonna a sinistra e i dettagli nella colonna destra. Il testo dei dettagli può avere una lunghezza massima di 128 caratteri. Il limite corrente per ogni file con estensione csv è di 500 righe.
 
-In un editor di testo, l'elenco CSV è simile al seguente:
+**Caricando un file con estensione csv contenente i numeri di serie**: creare un elenco delimitato da virgole (con estensione csv) composto da due colonne senza intestazione e limitato a 5.000 dispositivi o a 5 MB per ogni file con estensione csv.
 
-01 234567 890123,dettagli del dispositivo</br>
-02 234567 890123,dettagli del dispositivo
+|||
+|-|-|
+|&lt;IMEI n. 1&gt;|&lt;Dettagli sul dispositivo 1&gt;|
+|&lt;IMEI n. 2&gt;|&lt;Dettagli sul dispositivo 2&gt;|
+
+    This .csv file when viewed in a text editor appears as:
+
+    ```
+    01 234567 890123,device details
+    02 234567 890123,device details
+    ```
 
 **Per aggiungere un elenco di identificatori aziendali con estensione CSV**
 
@@ -48,11 +58,15 @@ In un editor di testo, l'elenco CSV è simile al seguente:
 > [!IMPORTANT]
 > Alcuni dispositivi Android hanno più numeri IMEI. Intune archivia un numero IMEI per ogni dispositivo. Se si importa un numero IMEI che non corrisponde al numero IMEI specificato in Intune, il dispositivo verrà classificato come dispositivo personale anziché come dispositivo aziendale. Se si importano più numeri IMEI per un dispositivo, sarà visualizzato lo stato di registrazione **Sconosciuto** per i numeri non archiviati.
 
-**Per eliminare un elenco di identificatori aziendali con estensione CSV**
+Una volta importati, questi dispositivi possono essere registrati o meno e possono avere lo stato **Registrato** o **Non contattato**. **Non contattato** significa che il dispositivo non ha mai eseguito la connessione al servizio Intune.
+
+## <a name="delete-a-csv-list"></a>Eliminare un elenco con estensione csv
 
 1. Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 
 2. Nel pannello Intune scegliere **Registra i dispositivi** e quindi selezionare **Identificatori dei dispositivi aziendali**.
 
 3. Scegliere **Elimina**.
+
+Per specifiche dettagliate sui codici IMEI, vedere [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
 

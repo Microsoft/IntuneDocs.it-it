@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: 464b9b60e9e8a5cb3e195bbec88d496eb4dc9ecf
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: a4886c9fb780f2748aa767e426f404e03671f42e
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -60,10 +60,10 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
     ![Schermata di configurazione dell'accesso aziendale](./media/and-enroll-4a-comp-access-setup.png)
 
-> [!NOTE]
-> I triangoli gialli non indicano che si è già verificato un errore, ma che alcuni passaggi del processo di registrazione devono ancora essere completati.
+    > [!NOTE]
+    > I triangoli gialli non indicano che si è già verificato un errore, ma che alcuni passaggi del processo di registrazione devono ancora essere completati.
 
-7.  Nella schermata **Perché registrare il dispositivo?** leggere le informazioni sulle operazioni che possono essere eseguite durante la registrazione del dispositivo e quindi toccare **CONTINUA**.
+7. Nella schermata **Perché registrare il dispositivo?** leggere le informazioni sulle operazioni che possono essere eseguite durante la registrazione del dispositivo e quindi toccare **CONTINUA**.
 
     ![Schermata Perché registrare il dispositivo?](./media/and-enroll-4b-why-enroll.png)
 
@@ -90,13 +90,19 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Se viene visualizzato questo messaggio, toccare **CONSENTI**. È consigliabile scegliere questa opzione perché **Microsoft non può mai accedere ai contatti**. Il testo del messaggio è controllato da Google, quindi Microsoft non può modificarlo. Quando si concede l'accesso, si consente solo all'app Portale aziendale di creare, usare e gestire il proprio account aziendale.
+        Se viene visualizzato questo messaggio, toccare **CONSENTI**. È consigliabile scegliere questa opzione perché **Microsoft non può mai accedere ai contatti**. Il testo del messaggio è controllato da Google, quindi Microsoft non può modificarlo. Quando si concede l'accesso, si consente solo all'app Portale aziendale di creare, usare e gestire il proprio account aziendale.
 
-    Se si nega l'accesso, il messaggio sarà di nuovo visualizzato quando si accederà di nuovo al Portale aziendale. È tuttavia possibile disattivare la visualizzazione futura dei messaggi selezionando la casella **Non visualizzare più questo messaggio**. Se si decide successivamente di consentire l'accesso, andare a **Impostazioni** &gt; **App** &gt; **Portale aziendale** &gt; **Autorizzazioni** &gt; **Telefono**, quindi attivare l'autorizzazione.
+        Se si nega l'accesso, il messaggio sarà di nuovo visualizzato quando si accederà di nuovo al Portale aziendale. È tuttavia possibile disattivare la visualizzazione futura dei messaggi selezionando la casella **Non visualizzare più questo messaggio**. Se si decide successivamente di consentire l'accesso, andare a **Impostazioni** &gt; **App** &gt; **Portale aziendale** &gt; **Autorizzazioni** &gt; **Telefono**, quindi attivare l'autorizzazione.
 
 11.  Nella schermata relativa all'**attivazione dell'amministratore del dispositivo** toccare **Attiva**.
 
     ![Schermata di attivazione dell'amministratore del dispositivo](./media/and-enroll-5-activate.png)
+
+    Il ruolo di amministratore del dispositivo è un ruolo necessario all'app Portale aziendale per gestire il dispositivo. Consente all'amministratore di osservare determinati comportamenti, come il numero di tentativi di sblocco dello schermo, e di eseguire alcune azioni.
+
+    Il concetto chiave da tenere presente consiste nel fatto che le azioni vengono eseguite a tutela della sicurezza. L'amministratore IT non cerca di violare la privacy degli utenti né di cancellare le informazioni per alcun motivo, ma vuole assicurarsi che i dati aziendali siano mantenuti al sicuro.
+
+    Microsoft non controlla questo messaggio ed è consapevole che la sua formulazione può sembrare piuttosto drastica. L'app Portale aziendale non può visualizzare solo le restrizioni e i diritti di accesso che sono rilevanti per l'organizzazione. Tutti i diritti vengono concessi contemporaneamente in questa schermata. Se si hanno domande specifiche sulla prassi adottata nella propria organizzazione, contattare l'amministratore IT usando le informazioni di contatto riportate nel [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 12.  Seguire le istruzioni per immettere un PIN o una password. Se sul dispositivo è già stato impostato un PIN o una password, questa schermata non verrà visualizzata o verrà richiesto di immettere un nuovo PIN o una nuova password.
 
@@ -108,21 +114,21 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
     Questa schermata indica che dispositivo è in fase di registrazione.
 
-      ![Schermata di registrazione in corso del dispositivo](./media/and-enroll-8-device-enrolling.png)
+    ![Schermata di registrazione in corso del dispositivo](./media/and-enroll-8-device-enrolling.png)
 
 14. Quando viene visualizzata la schermata **Configurazione dell'accesso aziendale** toccare **CONTINUA**. Se viene visualizzato un messaggio che indica che il dispositivo non è conforme, seguire le istruzioni per risolvere il problema e toccare **CONTINUA**.
 
-  ![Il dispositivo non è conforme, ma è registrato](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![Il dispositivo non è conforme, ma è registrato](./media/and-enroll-9a-noncompliant-enrolled-device.png)
 
-  ![Si verificano problemi di conformità del dispositivo che è necessario risolvere](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Si verificano problemi di conformità del dispositivo che è necessario risolvere](./media/and-enroll-9b-resolve-compliance-issues.png)
 
-È possibile trovare altre informazioni sui problemi riscontrati toccando le voci corrispondenti. 
+    È possibile trovare altre informazioni sui problemi riscontrati toccando le voci corrispondenti.
 
-  ![Problemi di conformità del dispositivo espansi](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Problemi di conformità del dispositivo espansi](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
 
-    ![Company access setup screen](./media/and-enroll-9d-comp-access-setup.png)  
+    ![Schermata di configurazione dell'accesso aziendale](./media/and-enroll-9d-comp-access-setup.png)  
 
-11. Nella schermata **Configurazione dell'accesso aziendale completato** toccare **FINE**. Il dispositivo è ora registrato.
+15. Nella schermata **Configurazione dell'accesso aziendale completato** toccare **FINE**. Il dispositivo è ora registrato.
 
     ![Schermata di configurazione dell'accesso aziendale completata](./media/and-enroll-10-comp-access-setup-complete.png)
 
