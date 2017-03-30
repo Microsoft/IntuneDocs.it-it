@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
 ms.openlocfilehash: b02a5247cec36b45679a76bf3d637cf8b5c031f4
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -60,7 +61,7 @@ Un dispositivo è indicato come **Pending** (In sospeso) se l'utente finale non 
 ## <a name="device-whos-active-but-has-no-device-id"></a>Dispositivo attivo, ma privo di ID dispositivo
 Se nella console di Lookout MTP non è disponibile l'ID dispositivo per un dispositivo attivo, significa che l'utente del dispositivo non è incluso nel gruppo di registrazione. Un dispositivo può avere questo stato se l'utente del dispositivo è stato rimosso dal gruppo di registrazione oppure se viene rimosso il gruppo di registrazione.
 
-Nella [console di Lookout](http://aad.lookout.com) passare a **System** > **Intune Connector** > **Enrollment ** (Sistema, Connettore Intune, Registrazione) e controllare le impostazioni.  Controllare i gruppi di Azure AD e verificare che l'utente del dispositivo faccia parte di uno dei gruppi di Azure AD.
+Nella [console di Lookout](http://aad.lookout.com) passare a **System** > **Intune Connector** > **Enrollment** (Sistema, Connettore Intune, Registrazione) e controllare le impostazioni.  Controllare i gruppi di Azure AD e verificare che l'utente del dispositivo faccia parte di uno dei gruppi di Azure AD.
 
 Quando un dispositivo è in questo stato, Lookout continuerà a inviare notifica all'utente di eventuali minacce rilevate, ma non invierà alcuna informazione sulle minacce a Intune.
 
@@ -88,9 +89,4 @@ Se il nuovo utente è incluso in uno dei gruppi di registrazione di Lookout MTP,
 
 ### <a name="see-also"></a>Vedere anche
 [Configurare la sottoscrizione con Lookout MTP](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
