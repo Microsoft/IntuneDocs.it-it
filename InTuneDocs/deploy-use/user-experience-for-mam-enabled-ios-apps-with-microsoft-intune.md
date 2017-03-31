@@ -2,8 +2,8 @@
 title: App iOS con criteri di protezione delle app | Microsoft Docs
 description: "Questo argomento descrive cosa accade quando l&quot;app iOS è gestita in base ai criteri di protezione delle app."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
