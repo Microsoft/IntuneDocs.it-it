@@ -1,5 +1,6 @@
 # Introduzione
 ## [Che cos'è l'anteprima del portale di Azure?](introduction/what-is-microsoft-intune.md)
+## [Funzionalità di Intune in Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Operazioni preliminari
 <!---(introduction/get-started.md) --->
 ### [Iscriversi per una valutazione gratuita](introduction/sign-up-free-trial-microsoft-intune.md)
