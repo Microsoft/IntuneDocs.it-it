@@ -154,7 +154,8 @@ Il certificato Symantec usato per distribuire le app per dispositivi mobili Wind
 2. Dopo aver acquisito l'app, selezionarla nella pagina **Inventario**.  
 3. Selezionare **Windows 10 all devices** (Windows 10 - tutti i dispositivi) come **Piattaforma**, quindi specificare l'opzione di **Architettura** appropriata ed eseguire il download. Per questa app non è necessario un file di licenza di app.
 ![Immagine dei dettagli del pacchetto per Windows 10 (tutti i dispositivi) e l'architettura X86](../media/Win10CP-all-devices.png)
-4. Scaricare tutti i pacchetti inclusi in "Framework richiesti". Questa operazione deve essere eseguita per le architetture x86, x64 e ARM, per un totale di 9 pacchetti, come illustrato di seguito.  
+4. Scaricare tutti i pacchetti inclusi in "Framework richiesti". Questa operazione deve essere eseguita per le architetture x86, x64 e ARM, per un totale di 9 pacchetti, come illustrato di seguito.
+
 ![Immagine dei file di dipendenza da scaricare ](../media/Win10CP-dependent-files.png)
 5. Prima di caricare l'app Portale aziendale in Intune, creare una cartella (ad esempio, C:&#92;Company Portal) con i pacchetti strutturati nel modo seguente:
   1. Inserire il pacchetto dell'app Portale aziendale in C:\Company Portal. Creare anche una sottocartella Dependencies in questa posizione.  
