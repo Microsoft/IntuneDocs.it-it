@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
-ms.openlocfilehash: a4886c9fb780f2748aa767e426f404e03671f42e
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 9e70ef08eabb1595804f84247fc1663c5c6f985e
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -48,7 +48,7 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
     ![Schermata iniziale dell'app Portale aziendale per Android, che chiede all'utente di accedere con l'account aziendale o dell'istituto di istruzione, segnalando inoltre che gli account Microsoft e altri account personali non sono accettati.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  Se l'amministratore IT ha impostato i termini e le condizioni aziendali, toccare **ACCETTO** per accettarli.
+4.  Se l'amministratore IT ha impostato i termini e le condizioni aziendali, toccare **ACCETTO** per accettarli. Questa schermata può differire leggermente dall'immagine riportata di seguito in base alla versione di Android in uso.
 
     ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 126fce43ea91d5ec9e447d731e4e9ab5663df956
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -41,6 +41,6 @@ A volte possono verificarsi problemi con il dispositivo Android non risolvibili 
 - [È necessario disattivare il debug USB](you-need-to-turn-off-usb-debugging-android.md)
 - [È necessario attivare la ricerca di minacce per la sicurezza nel dispositivo](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [Il dispositivo non soddisfa la patch di protezione minima](you-need-to-update-your-device-OS-security-patch-android.md)
-- [Viene richiesto di installare Lookout for Work nel dispositivo Android](you-are-prompted-to-install-lookout-for-work-android.md)
-- [È necessario risolvere una minaccia rilevata da Lookout for Work nel dispositivo Android](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
+- [Viene richiesto di installare un'app di protezione dalle minacce per il dispositivo nel dispositivo Android](you-are-prompted-to-install-mtd-android.md)
+- [È necessario risolvere una minaccia rilevata da un'app di protezione dalle minacce per il dispositivo nel dispositivo Android](you-need-to-resolve-a-threat-found-by-mtd-android.md)
 

@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 8cc5e12308871a3b023bed49e9647b888971f849
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -87,6 +87,12 @@ Se si è usata la console di amministrazione classica di Intune, è opportuno te
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migrazione dalla console classica di Intune al portale di anteprima di Intune di Azure
+
+I criteri di conformità dei dispositivi creati nella [console classica di Intune](https://manage.microsoft.com) non verranno visualizzati nel nuovo [portale di Intune di Azure](https://portal.azure.com). Tali criteri saranno comunque ancora destinati agli utenti e gestibili tramite la console classica di Intune.
+
+Per sfruttare le nuove funzionalità correlate alle conformità dei dispositivi nel portale di Intune di Azure, sarà necessario creare nuovi criteri di conformità dei dispositivi nel portale stesso. Se si assegna un nuovo criterio di conformità dei dispositivi nel portale di Intune di Azure a un utente, al quale è stato assegnato a un criterio di conformità dei dispositivi anche dal portale classico di Intune, i criteri di conformità dei dispositivi dal portale di Intune di Azure hanno la precedenza rispetto a quelli creati nella console classica di Intune.
 
 ##  <a name="next-steps"></a>Passaggi successivi
 

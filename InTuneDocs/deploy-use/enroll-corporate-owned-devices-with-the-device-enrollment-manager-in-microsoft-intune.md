@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
-ms.lasthandoff: 02/04/2017
+ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
+ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Le organizzazioni possono usare Intune per gestire un numero elevato di disposit
 Per poter essere aggiunti come manager di registrazione dispositivi, gli utenti devono essere presenti nel portale di Azure. Per una sicurezza ottimale, l'utente manager di registrazione dispositivi non deve essere anche amministratore di Intune.
 
 >[!NOTE]
->Il metodo di registrazione del manager di registrazione dispositivi non può essere usato con [Assistente configurazione di Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) o con la [registrazione diretta](ios-direct-enrollment-in-microsoft-intune.md) o con il [metodo del programma di registrazione dei dispositivi](ios-device-enrollment-program-in-microsoft-intune.md). 
+>Il metodo di registrazione del manager di registrazione dispositivi non può essere usato con [Assistente configurazione di Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) o con la [registrazione diretta](ios-direct-enrollment-in-microsoft-intune.md) o con il [metodo del programma di registrazione dei dispositivi](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Esempio di scenario con manager di registrazione dispositivi
 
@@ -42,9 +42,9 @@ Solo gli utenti presenti nella console di Intune possono essere manager di regis
 
 L'utente manager di registrazione dispositivi può:
 
--   Registrare un massimo di 1000 dispositivi in Intune.
--   Accedere al portale aziendale per ottenere le app aziendali.
--   Configurare l'accesso ai dati aziendali distribuendo app specifiche dei ruoli ai tablet.
+-   Registrare un massimo di 1000 dispositivi in Intune
+-   Usare l'app Portale aziendale per accedere alle app aziendali
+-   Configurare l'accesso ai dati aziendali distribuendo app specifiche dei ruoli ai tablet
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Limitazioni dei dispositivi registrati con un account del manager di registrazione dispositivi
 
@@ -57,9 +57,9 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
   - L'utente manager di registrazione dispositivi non può annullare la registrazione di dispositivi registrati DEM sul dispositivo tramite il portale aziendale. Questa operazione può essere eseguita dall'amministratore di Intune ma non dall'utente manager di registrazione dispositivi.
 
   - Visualizzazione del solo dispositivo locale nell'app o nel sito Web del portale aziendale.
- 
+
   - Gli utenti non possono usare le app Volume Purchase Program di Apple poiché è necessario un ID Apple per utente per la gestione delle app.
- 
+
   - (Solo iOS) Se si usa un manager di registrazione dispositivi per la registrazione dei dispositivi iOS, non è possibile usare Apple Configurator o il programma di registrazione dispositivi di Apple per la registrazione dei dispositivi.
 
 > [!NOTE]
@@ -77,7 +77,7 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
 
 4.  Scegliere **Aggiungi...**. Verrà visualizzata la finestra di dialogo **Aggiungi manager di registrazione dispositivi** .
 
-5.  Immettere l'**ID utente** dell'account Intune e quindi scegliere **OK**. 
+5.  Immettere l'**ID utente** dell'account Intune e quindi scegliere **OK**.
 
     L'utente manager di registrazione dispositivi può ora registrare i dispositivi mobili usando la stessa procedura usata da un utente finale per uno scenario BYOD nel portale aziendale. L'utente finale responsabile può installare l'app Portale aziendale e registrare il dispositivo usando le proprie credenziali DEM su un massimo di 1000 dispositivi. Per la procedura di registrazione dell'utente finale per ogni piattaforma, vedere:
 
