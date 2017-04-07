@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
-ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -34,10 +34,10 @@ Prima di iniziare la distribuzione di app con Microsoft Intune, prendersi il tem
 
 |Tipo di App|Dettagli|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|Questo tipo di app deve supportare l'installazione invisibile all'utente senza input dell'utente. La documentazione dell'app deve includere le opzioni della riga di comando rilevanti per l'installazione automatica dell'app, ad esempio, **/q**. Per un elenco di opzioni comuni della riga di comando, vedere [Opzioni della riga di comando per lo strumento Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Le cartelle e i file aggiuntivi richiesti dal programma di installazione dell'app devono essere disponibili nel percorso specificato per i file di installazione dell'app stessa.<br><br>Nella maggior parte dei casi, i file Windows Installer (con estensione msi) e Windows Installer Patch (con estensione msp) non richiedono l'installazione di alcun argomento della riga di comando da parte di Intune. Verificare la documentazione dell'app.<br><br>Se sono necessari argomenti di riga di comando, essi devono essere inseriti come coppia Nome=Valore (ad esempio TRANSFORMS=custom_transform.mst).|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|Questo tipo di app deve supportare l'installazione invisibile all'utente senza input dell'utente. La documentazione dell'app deve includere le opzioni della riga di comando rilevanti per l'installazione automatica dell'app, ad esempio, **/q**. Per un elenco di opzioni comuni della riga di comando, vedere [Opzioni della riga di comando per lo strumento Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Le cartelle e i file aggiuntivi richiesti dal programma di installazione dell'app devono essere disponibili nel percorso specificato per i file di installazione dell'app stessa.<br><br>Nella maggior parte dei casi, i file Windows Installer (con estensione msi) e Windows Installer Patch (con estensione msp) non richiedono l'installazione di alcun argomento della riga di comando da parte di Intune. Verificare la documentazione dell'app.<br><br>Se sono necessari argomenti di riga di comando, essi devono essere inseriti come coppia Nome=Valore (ad esempio TRANSFORMS=custom_transform.mst).<br><br>Questo tipo di app si applica solo ai computer che eseguono il client del software Intune.|
 |**Pacchetto app per Android (&#42;.apk)**|Per distribuire app per Android, è necessario un pacchetto con estensione apk valido.|
 |**Pacchetto app per iOS (&#42;.ipa)**|Per distribuire le app per iOS, è necessario un pacchetto con estensione ipa valido.<br><br>Il pacchetto con estensione ipa deve essere stato firmato da Apple e la data di scadenza indicata nel profilo di provisioning deve essere valida. Intune è in grado di distribuire applicazioni iOS con certificato aziendale.<br><br>Non tutte le app Apple con certificato di sviluppatore sono supportate.<br><br>L'azienda deve essere registrata al programma iOS Developer Enterprise Program.<br><br>Verificare che il firewall dell'organizzazione consenta l'accesso ai siti Web di provisioning e certificazione iOS.<br><br>Non è necessario distribuire un file manifesto (con estensione plist) con l'app.|
-|**Pacchetto app Windows Phone (&#42;.xap, .appx, .appxbundle)**|Per distribuire le app serve un certificato di firma codice mobile aziendale. Per altre informazioni vedere [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) (Configurare la gestione dei dispositivi Windows Phone con Microsoft Intune).|
+|**Pacchetto app Windows Phone (&#42;.xap, .appx, .appxbundle)**|Per distribuire le app serve un certificato di firma codice mobile aziendale. Per altre informazioni vedere [Set up Windows Phone management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md) (Configurare la gestione dei dispositivi Windows Phone con Microsoft Intune).|
 |**Pacchetto app Windows (.appx, .appxbundle)**|Per distribuire le app serve un certificato di firma codice mobile aziendale. Per altre informazioni vedere [Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md) (Configurare la gestione dei dispositivi Windows con Microsoft Intune).|
 |**Windows Installer tramite MDM (&#42;.msi)**|È possibile usare questa app per creare e distribuire app basate su Windows Installer in PC registrati che eseguono Windows 10. Questi PC sono gestiti mediante MDM (Mobile Device Management).<br /><br />È possibile caricare un solo file con estensione msi.<br><br>Per il rilevamento delle app vengono usati il codice e la versione prodotto del file.<br><br>Verrà usato il comportamento di riavvio predefinito dell'app. Intune non controlla questo comportamento.<br><br>I pacchetti MSI per utente vengono installati per un singolo utente.<br><br>I pacchetti MSI per computer vengono installati per tutti gli utenti del dispositivo.<br><br>I pacchetti MSI dual mode vengono attualmente installati soltanto per tutti gli utenti del dispositivo.<br><br>Gli aggiornamenti delle app sono supportati quando il codice prodotto MSI di ogni versione è lo stesso.<br>
 Tutti i tipi di app del programma di installazione software vengono caricati nello spazio di archiviazione cloud.
@@ -65,7 +65,7 @@ Prima di iniziare a usare Autore del software, è necessario installare la versi
 ## <a name="cloud-storage-space"></a>Spazio di archiviazione nel cloud
 Tutte le app create con il tipo di installazione del programma di installazione software, ad esempio un'app line-of-business, vengono compresse e caricate nello spazio di archiviazione cloud di Microsoft Intune. Una sottoscrizione di valutazione di Intune comprende 2 gigabyte (GB) di archiviazione nel cloud per l'archiviazione delle app gestite e degli aggiornamenti. Una sottoscrizione completa include 20 GB di spazio di archiviazione.
 
-È possibile visualizzare la quantità di spazio usato nel nodo **Uso memoria** dell'area di lavoro **Amministratore**. È possibile acquistare spazio di archiviazione aggiuntivo per Intune usando il metodo di acquisto originale.  Se il pagamento è stato effettuato con fattura o carta di credito, visitare il [portale di gestione delle sottoscrizioni](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  In caso contrario, contattare il partner o l'assistente alle vendite di riferimento.
+È possibile visualizzare la quantità di spazio usato nel nodo **Uso memoria** dell'area di lavoro **Amministratore**. È possibile acquistare spazio di archiviazione aggiuntivo per Intune usando il metodo di acquisto originale.  Se il pagamento è stato effettuato con fattura o carta di credito, visitare il [portale di gestione delle sottoscrizioni](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Negli altri casi, contattare il partner o l'assistente alle vendite di riferimento.
 
 I requisiti dello spazio di archiviazione nel cloud sono i seguenti:
 

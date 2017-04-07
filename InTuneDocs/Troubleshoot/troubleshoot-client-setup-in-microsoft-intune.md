@@ -2,8 +2,8 @@
 title: Risolvere i problemi di installazione del client | Documentazione Microsoft
 description: Risolvere i problemi comuni di installazione client.
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article

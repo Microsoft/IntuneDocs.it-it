@@ -1,11 +1,12 @@
 ---
-title: Profilo VPN per app per Android - Pulse Secure | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Profilo VPN per app per Android - Pulse Secure
+titleSuffix: Intune Azure preview
 description: 'Anteprima di Intune in Azure: Informazioni su come creare un profilo VPN per app specifiche per i dispositivi Android gestiti da Intune.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: aeed271699656addce8f2bd8cde2a69ab8ede8f9
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 2c79f5f796152e930c4a952388541383ab50e595
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -39,7 +41,7 @@ Dopo aver distribuito i criteri ai gruppi di utenti o ai dispositivi Android, gl
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
+3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 2. Nell'elenco del pannello dei profili scegliere **Crea profilo**.
 3. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** facoltativa per il profilo VPN.
@@ -53,7 +55,7 @@ Prendere nota del nome del profilo VPN per usarlo nel passaggio successivo. Ad e
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
+3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 3. Nel pannello dei profili fare clic su **Crea profilo**.
 4. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** per il profilo personalizzato.
@@ -63,7 +65,7 @@ Prendere nota del nome del profilo VPN per usarlo nel passaggio successivo. Ad e
 3. Nel pannello **Impostazioni OMA-URI personalizzate** scegliere **Aggiungi**.
     - Immettere un nome per l'impostazione.
     - In **Tipo di dati** specificare **Stringa**.
-    - In **URI OMA** specificare la stringa seguente: **./Vendor/MSFT/VPN/Profile/*nome*/PackageList** dove *nome* è il nome del profilo VPN annotato nel Passaggio 1. In questo esempio, la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+    - In **URI OMA** specificare la stringa seguente: **./Vendor/MSFT/VPN/Profile/*nome*/PackageList**dove*nome* è il nome del profilo VPN annotato nel Passaggio 1. In questo esempio, la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
     - Per l'opzione **Valore** creare un elenco separato da punti e virgola dei pacchetti da associare al profilo. Ad esempio, se si vuole che Excel e il browser Google Chrome usino la connessione VPN, digitare: **com.microsoft.office.excel;com.android.chrome**.
 
 ![Esempio di criteri personalizzati VPN per app Android](./media/android_per_app_vpn_oma_uri.png)
@@ -74,7 +76,7 @@ In alternativa, è possibile usare il valore **WHITELIST** per specificare un el
   1.    Nel pannello **Impostazioni OMA-URI personalizzate** scegliere **Aggiungi**.
   2.    Immettere un nome per l'impostazione.
   3.    In **Tipo di dati** specificare **Stringa**.
-  4.    Per **URI OMA** usare la stringa seguente: **./Vendor/MSFT/VPN/Profile/*nome*/Mode** dove *nome* è il nome del profilo VPN annotato nel Passaggio 1. Con il nome di esempio citato in precedenza la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  4.    Per **URI OMA** usare la stringa seguente: **./Vendor/MSFT/VPN/Profile/*nome*/Mode**dove*nome* è il nome del profilo VPN annotato nel Passaggio 1. Con il nome di esempio citato in precedenza la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
   5.    In **Valore** immettere **BLACKLIST** o **WHITELIST**.
 
 

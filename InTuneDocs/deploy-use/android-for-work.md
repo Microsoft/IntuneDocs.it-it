@@ -1,10 +1,10 @@
 ---
-title: Informazioni su Android for Work | Documentazione Microsoft
+title: Informazioni su Android for Work | Microsoft Docs
 description: "Intune gestisce Android for Work per offrire funzionalità di gestione aggiuntive e privacy quando gli utenti usano i dispositivi Android personali per il lavoro."
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a5c024c2139536f004799b18a0f6d1d1eb4875b2
-ms.openlocfilehash: bdacb61d1713bf24b2f33f144afa0db356e10ee0
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: e04ab9c14ea6e7cc38430ec6a4d478a65e23ba96
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -41,9 +41,9 @@ Intune offre una gamma di impostazioni generali predefinite che è possibile con
 
 ## <a name="app-publishing-and-distribution"></a>Distribuzione e pubblicazione di app
 
-Il servizio Google Play for Work è parte integrante della distribuzione e della gestione di app in Android for Work. Tutte le app distribuite in dispositivi Android for Work nel profilo di lavoro provengono dal servizio Play for Work. Per gestire e distribuire le app in Play Store, è necessario accedere come amministratore di Intune al sito Web di Play for Work e approvare le app per il tenant di Intune. Queste app vengono sincronizzate con la console di Intune e possono quindi essere distribuite e gestite mediante Intune. Le app line-of-business (LOB) sviluppate dall'organizzazione devono essere pubblicate in Play for Work usando la console per la pubblicazione di app Android di Google. Le app LOB devono essere configurate nella console di pubblicazione di app Android per limitare l'accesso all'organizzazione.
+Il servizio Google Play for Work è parte integrante della distribuzione e della gestione di app in Android for Work. Tutte le app distribuite in dispositivi Android for Work nel profilo di lavoro provengono dal servizio Play for Work. Per gestire e distribuire le app in Play Store, accedere al sito Web Google Play con le credenziali di amministratore della società per la gestione di Google. È possibile approvare le app per la distribuzione di Android for Work in modo che vengano visualizzate nei profili di lavoro dei dispositivi. Queste app vengono quindi sincronizzate con la console di Intune e possono essere distribuite e gestite tramite Intune. Le app line-of-business (LOB) sviluppate dall'organizzazione devono essere pubblicate in Play for Work usando la console per la pubblicazione di app Android di Google. Le app LOB devono essere configurate nella console di pubblicazione di app Android per limitare l'accesso all'organizzazione.
 
-Le app possono essere installate senza interazioni con l'utente e senza richiedere all'utente di consentire l'**installazione da origini sconosciute**. Per cercare e installare app facoltative o disponibili, l'utente può usare Play Store nel proprio dispositivo. Altre informazioni sulla [distribuzione di app per Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
+Le app possono essere installate senza interazioni con l'utente e senza richiedere all'utente di consentire l'**installazione da origini sconosciute**. Per cercare e installare app facoltative o disponibili, l'utente può usare lo store Play for Work nel proprio dispositivo. Altre informazioni sulla [distribuzione di app per Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps).
 
 ## <a name="app-configuration"></a>Configurazione delle app
 
@@ -51,15 +51,15 @@ Android for Work offre un'infrastruttura per distribuire i valori di configurazi
 
 ## <a name="email-configuration"></a>Configurazione della posta elettronica
 
-Android for Work non offre un'app di posta elettronica predefinita o un oggetto profilo di posta elettronica nativo simili a quelli forniti da iOS. Le configurazioni per la posta elettronica possono essere invece impostate tramite l'applicazione di impostazioni di configurazione delle app alle app di posta elettronica che le supportano. Gmail e Nine Work sono due app client Exchange ActiveSync (EAS) disponibili in Play Store che possono essere configurate con la configurazione delle app Android for Work.
+Android for Work non offre un'app di posta elettronica predefinita o un oggetto profilo di posta elettronica nativo simile a quello fornito da iOS. Le configurazioni per la posta elettronica possono essere invece impostate tramite l'applicazione di impostazioni di configurazione delle app alle app di posta elettronica che le supportano. Gmail e Nine Work sono due app client Exchange ActiveSync (EAS) disponibili in Play Store che possono essere configurate con la configurazione delle app Android for Work.
 
-Intune offre modelli di configurazione per le app Gmail e Nine Work. Altre app di posta elettronica che supportano i profili di configurazione delle app possono essere configurate con i criteri di configurazione delle app per dispositivi mobili.
+Intune offre modelli di configurazione per le app Gmail e Nine Work gestite come app di lavoro. Altre app di posta elettronica che supportano i profili di configurazione delle app possono essere configurate con i criteri di configurazione delle app per dispositivi mobili.
 
 Se si usa l'accesso condizionale di Exchange ActiveSync per dispositivi Android for Work, è necessario usare l'app di posta elettronica Gmail o Nine Work. Sono anche supportate l'app Microsoft Outlook per Android e qualsiasi altra app di posta elettronica che usa l'autenticazione moderna tramite ADAL. Altre informazioni sui [profili di posta elettronica per la posta elettronica aziendale](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).
 
-## <a name="mobile-app-management-policies"></a>Criteri di gestione delle app per dispositivi mobili
+## <a name="app-protection-policies"></a>Criteri di protezione delle app
 
-I criteri di restrizione applicati alle app abilitate per la gestione di applicazioni mobili (MAM) sono completamente supportati nel profilo di lavoro e nel profilo personale. È possibile pubblicare app line-of-business nella console di pubblicazione di app Android all'indirizzo https://play.google.com/apps/publish. Questa console include un'opzione per impostare le app come private per l'organizzazione. Altre informazioni sulle [Impostazioni dei criteri di conformità per Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md). Per informazioni generali sui criteri della gestione di applicazioni mobili, vedere i [criteri di gestione delle app per dispositivi mobili](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+I criteri di protezione delle app applicati sono completamente supportati nel profilo di lavoro e nel profilo personale. È possibile pubblicare app line-of-business nella console di pubblicazione di app Android all'indirizzo https://play.google.com/apps/publish. Questa console include un'opzione per impostare le app come private per l'organizzazione. Altre informazioni sulle [Impostazioni dei criteri di conformità per Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md). Per informazioni generali sui criteri protezione delle app, vedere l'articolo sui [criteri di protezione delle app](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 ## <a name="vpn-profiles"></a>Profili VPN
 

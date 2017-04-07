@@ -1,11 +1,11 @@
 ---
-title: Configurare i criteri MAM nella console di Intune | Documentazione Microsoft
+title: Configurare i criteri MAM nella console di Intune | Microsoft Docs
 description: "I criteri di gestione delle applicazioni mobili in Microsoft Intune consentono di modificare la funzionalità delle app distribuite per allinearle ai criteri aziendali di conformità e sicurezza."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -139,7 +140,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
     |**Richiedi la conformità del dispositivo ai criteri aziendali per l'accesso**|Questa impostazione consente l'uso dell'app solo se il dispositivo non è jailbroken o rooted.|
     |**Controlla di nuovo i requisiti di accesso dopo (minuti)**|Nel campo **Timeout** specificare il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app dopo l'apertura.|
     |**Periodo di prova offline**|Se il dispositivo è offline specificare il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app.|
-    |**Crittografa dati app**|Questa impostazione specifica che tutti i dati associati all'app verranno crittografati. Sono inclusi i dati archiviati esternamente, ad esempio i dati delle schede SD.<br /><br />**Crittografia per iOS**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, i dati vengono crittografati a riposo mediante la crittografia a livello di dispositivo fornita dal sistema operativo. Questo viene abilitato tramite i criteri PIN del dispositivo impostati dall'amministratore IT. Quando viene richiesto un PIN, i dati verranno crittografati in base alle impostazioni nei criteri di gestione delle applicazioni mobili. Come indicato nella documentazione di Apple, [i moduli usati da iOS sono dotati di certificazione FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Crittografia per Android**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, la crittografia viene fornita da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O file.  Il contenuto nell'archivio del dispositivo verrà sempre crittografato. Il metodo di crittografia non è conforme agli standard FIPS 140-2.|
+    |**Crittografa dati app**|Questa impostazione specifica che tutti i dati associati all'app verranno crittografati. Sono inclusi i dati archiviati esternamente, ad esempio i dati delle schede SD.<br /><br />**Crittografia per iOS**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, i dati vengono crittografati a riposo mediante la crittografia a livello di dispositivo fornita dal sistema operativo. Questo viene abilitato tramite i criteri PIN del dispositivo impostati dall'amministratore IT. Quando viene richiesto un PIN, i dati verranno crittografati in base alle impostazioni nei criteri di gestione delle applicazioni mobili. Come indicato nella documentazione di Apple, [i moduli usati da iOS sono dotati di certificazione FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Crittografia per Android**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, la crittografia viene fornita da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O file.  Il contenuto nell'archivio del dispositivo verrà sempre crittografato. Il metodo di crittografia è compatibile con FIPS 140-2 solo per i dispositivi Samsung KNOX.|
     |**Blocca acquisizione schermo** (solo per dispositivi Android)|Questa impostazione specifica che le funzionalità di acquisizione schermo del dispositivo vengono bloccate quando un utente usa l'app.|
 
 4. Al termine, scegliere **Salva criterio**.
@@ -195,9 +196,4 @@ Nei casi in cui il dispositivo o l'utente riceva due criteri in conflitto, si ap
 -   Se un criterio è già stato distribuito al dispositivo, le impostazioni di criteri esistenti non vengono sovrascritte.
 
 -   Se al dispositivo non è stato ancora distribuito alcun criterio e vengono distribuite due impostazioni in conflitto, viene usata l'impostazione predefinita del dispositivo.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

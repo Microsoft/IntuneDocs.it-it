@@ -1,11 +1,12 @@
 ---
-title: Configurare l&quot;infrastruttura di certificazione di Intune per PKCS | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Configurare l&quot;infrastruttura di certificazione di Intune per PKCS
+titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: informazioni sulle modalità di configurazione dell&quot;infrastruttura per l&quot;uso di certificati PKCS con Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 6f08dc63a9afaa5e92b188883d160d0b76f3631f
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
+ms.lasthandoff: 03/13/2017
 
 
 
@@ -44,7 +46,7 @@ Per usare i profili di certificato PKCS, oltre all'autorità di certificazione d
 
 -  **Computer che possono comunicare con Autorità di certificazione**: in alternativa, è possibile usare il computer dell'autorità di certificazione stessa.
 -  **Connettore di certificati di Microsoft Intune**: dal portale di Azure scaricare il programma di installazione di **Connettore di certificati** (**ndesconnectorssetup.exe**). È quindi possibile eseguire **ndesconnectorssetup.exe** nel computer in cui si vuole installare Connettore di certificati. Per i profili di certificato PKCS installare il Connettore di certificati nel computer che comunica con l'autorità di certificazione.
--  **Server Proxy applicazione Web ** (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versione successiva come Server Proxy applicazione Web (WAP). Questa configurazione:
+-  **Server Proxy applicazione Web** (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versione successiva come Server Proxy applicazione Web (WAP). Questa configurazione:
     -  Consente ai dispositivi di ricevere i certificati usando una connessione Internet.
     -  Vale come raccomandazione di sicurezza quando i dispositivi usano la connessione a Internet per ricevere e rinnovare i certificati.
 
@@ -84,12 +86,12 @@ In questa attività verrà pubblicato il modello di certificato.
     -   Nella scheda **Estensioni** verificare che la **descrizione dei criteri dell'applicazione** includa **Autenticazione client**.
 
         > [!IMPORTANT]
-        > Per i modelli di certificato iOS e Mac OS X, nella scheda **Estensioni** modificare **Utilizzo chiavi** e verificare che **Firma come prova dell'origine** non sia selezionato.
+        > Per i modelli di certificato iOS e macOS, nella scheda **Estensioni** modificare **Utilizzo chiavi** e verificare che l'opzione **Firma come prova dell'origine** non sia selezionata.
 
 2.  Esaminare il **periodo di validità** nella scheda **Generale** del modello. Per impostazione predefinita, Intune usa il valore configurato nel modello. Tuttavia, è possibile configurare la CA per consentire al richiedente di specificare un valore diverso, che è poi possibile impostare dalla console di amministrazione di Intune. Per usare sempre il valore nel modello, ignorare il resto del passaggio.
 
     > [!IMPORTANT]
-    > Le piattaforme iOS e Mac OS X usano sempre il valore impostato nel modello, indipendentemente da altre configurazioni.
+    > iOS e macOS usano sempre il valore impostato nel modello, indipendentemente dalle altre configurazioni definite.
 
     Per configurare la CA in modo che consenta al richiedente di specificare il periodo di validità, eseguire questi comandi nella CA:
 
@@ -114,7 +116,7 @@ Scaricare, installare e configurare Connettore di certificati.
 
 ### <a name="to-enable-support-for-the-certificate-connector"></a>Per abilitare il supporto per Connettore di certificati
 
-1.  Accedere al portale Azure.
+1.  Accedere al portale di Azure.
 2.  Scegliere **Altri servizi** > **Altro** > **Intune**.
 3.  Nel pannello **Intune** scegliere **Configura i dispositivi**.
 2.  Nel pannello **Configurazione del dispositivo** scegliere **Installazione** > **Autorità di certificazione**.

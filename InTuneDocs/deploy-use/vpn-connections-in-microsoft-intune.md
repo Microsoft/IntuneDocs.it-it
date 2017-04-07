@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -162,13 +163,14 @@ Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell
 1. Nella pagina di configurazione dei criteri, trovare **Regole su richiesta per questa connessione VPN**. Le colonne sono denominate **Corrispondenza**, la condizione verificata dalle regole, e **Azione**, l'azione che il criterio attiverà quando la condizione verrà soddisfatta.
 2. Scegliere **Aggiungi** per creare una regola. Nella regola è possibile impostare due tipi di corrispondenze. È possibile configurare solo uno di questi tipi per ogni regola.
   - **SSID**, che fanno riferimento alle reti wireless.
-  - **Domini di ricerca DNS**, che sono...  È possibile usare nomi di dominio completo, ad esempio *team. corp.contoso.com*, oppure usare domini quali *contoso.com*, che è equivalente all'uso di * *.contoso.com*.
+  - **Domini di ricerca DNS**, che sono...  È possibile usare nomi di dominio completo, ad esempio *team. corp.contoso.com*, oppure usare domini quali *contoso.com*, che è equivalente all'uso di **.contoso.com*.
 3. Facoltativo: specificare un probe della stringa dell'URL, ovvero un URL che viene usato come test. Se il dispositivo in cui è installato il profilo è in grado di accedere a tale URL senza il reindirizzamento, verrà stabilita la connessione VPN e il dispositivo si connetterà all'URL di destinazione. L'utente non visualizzerà il sito del probe della stringa dell'URL. Un esempio di probe della stringa dell'URL è l'indirizzo di un server Web di controllo che verifica la conformità del dispositivo prima della connessione VPN. Un'altra possibilità è che l'URL verifichi la capacità della rete VPN di connettersi a un sito, prima di connettere il dispositivo all'URL di destinazione tramite VPN.
 4. Scegliere una delle azioni seguenti:
   - **Connessione**
   - **Valuta la connessione**, che presenta tre impostazioni. a. **Azione del dominio**: scegliere **Connetti se necessario** o **Non connettere mai**
     . b. **Elenco di domini separati da virgole**: configurarla solo se si sceglie **Azione del dominio** **Connetti se necessario**
     . c. **Probe della stringa dell'URL necessario**: un URL HTTP o HTTPS (consigliato), ad esempio *https://vpntestprobe.contoso.com*. La regola verificherà se esiste una risposta da questo indirizzo. In caso contrario e se **Azione del dominio** è **Connetti se necessario**, la connessione VPN verrà attivata.
+      
      > [!TIP]
      >
      >Un esempio di quando è possibile usare questa azione riguarda il fatto che alcuni siti della rete aziendale richiedono una connessione alla rete aziendale diretta o VPN, mentre altri no. Se si elencano i domini in **Elenco di domini separati da virgole** *corp.contoso.com*, è possibile scegliere **Connetti se necessario** e quindi elencare siti specifici nella rete che può richiedere una connessione VPN, ad esempio *sharepoint.corp.contoso.com*. La regola controllerà quindi se *vpntestprobe.contoso.com* può essere raggiunto. Se non è possibile, la connessione VPN verrà attivata per il sito di SharePoint.
@@ -192,9 +194,4 @@ Le regole specifiche del dominio vengono valutate prima delle regole di tutti i 
 Al termine della distribuzione, il nome della connessione VPN specificato verrà visualizzato nell'elenco delle connessioni VPN sui dispositivi.
 
 Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** dell'area di lavoro **Criteri** consentono di identificare i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene visualizzato anche nell'area di lavoro Dashboard.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

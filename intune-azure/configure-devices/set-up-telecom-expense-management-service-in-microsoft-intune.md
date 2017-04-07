@@ -1,9 +1,10 @@
 ---
-title: Configurare un servizio di gestione delle spese per telecomunicazioni | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Impostare un servizio di gestione delle spese per telecomunicazioni
+titleSuffix: Intune Azure preview
 description: 'Anteprima di Intune in Azure: configurare il servizio di gestione delle spese per telecomunicazioni Saaswedo per l&quot;integrazione con Intune.'
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: d243aaf8de5bb235f1c60141ff62f156b81f312b
-ms.openlocfilehash: faf662d2d5c9cb05fe507da8a1ec5c2eb89f3352
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
+ms.lasthandoff: 03/17/2017
 
 ---
 
@@ -81,7 +83,7 @@ Dopo il completamento del passaggio 1 sopra descritto, la connessione deve esser
 
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 
-3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
+3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 
 4. Nel pannello **Configurazione del dispositivo** scegliere **Installazione** > **Gestione delle spese per telecomunicazioni**. 
 

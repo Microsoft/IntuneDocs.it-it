@@ -5,7 +5,7 @@ keywords: informazioni su Intune
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 03/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
-ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -31,7 +32,7 @@ Intune è un servizio di gestione della mobilità aziendale (EMM) basato su clou
 * Proteggere le informazioni aziendali grazie alla possibilità di controllare le modalità di accesso e condivisione dei dati da parte della forza lavoro.
 * Assicurarsi che i dispositivi e le app siano conformi ai requisiti di sicurezza aziendali.
 
-Intune è integrato con Azure Active Directory (Azure AD) per il controllo delle identità e degli accessi e con Azure Rights Management (Azure RMS) per la protezione dei dati. Costituisce lo *strumento di gestione* di Microsoft Enterprise Mobility + Security (EMS), mentre Office 365 è lo *strumento di produttività* della soluzione di mobilità di Microsoft.  
+Intune è integrato con Azure Active Directory (Azure AD) per il controllo delle identità e degli accessi e con Azure Information Protection per la protezione dei dati. Costituisce lo *strumento di gestione* di Microsoft Enterprise Mobility + Security (EMS), mentre Office 365 è lo *strumento di produttività* della soluzione di mobilità di Microsoft.  
 
 Insieme, Office 365 e EMS consentono alla forza lavoro di essere produttiva con tutti i dispositivi, garantendo al tempo stesso la protezione delle informazioni aziendali. Office 365 in combinazione con EMS costituisce una suite integrata completa per la mobilità aziendale, con strumenti per la produttività, la gestione delle identità, il controllo degli accessi, la gestione e la protezione dei dati. Rappresenta un metodo efficace per distribuire e gestire una soluzione di mobilità nell'organizzazione.
 
@@ -114,9 +115,4 @@ L'elenco seguente di problemi aziendali include collegamenti a informazioni più
 * Leggere informazioni su alcuni [metodi comuni per l'uso di Intune](common-ways-to-use-intune.md).
 * Acquisire familiarità con il prodotto [con una versione di valutazione di 30 giorni di Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md).
 * Approfondire i [requisiti tecnici e le funzionalità](/intune/get-started/what-to-know-before-you-start-microsoft-intune) di Intune.
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

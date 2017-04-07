@@ -1,10 +1,10 @@
 ---
-title: Trasferire localmente app per Windows e Windows Phone | Documentazione Microsoft
+title: Trasferire localmente app per Windows e Windows Phone | Microsoft Docs
 description: Informazioni su come firmare le app line-of-business in modo da poter usare Intune per distribuirle.
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 1781600f82b37ba76fe072d3a0e6557504de3b46
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -83,7 +84,7 @@ La procedura seguente consente di ottenere il certificato necessario e di firmar
 
 4.  **Scaricare il Windows SDK per Windows 8.1** Scaricare e installare il [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525). Si noti che lo script di PowerShell incluso con l'app Portale aziendale usa il percorso di installazione predefinito, `${env:ProgramFiles(x86)}\Windows Kits\8.1`. Se si esegue l’installazione in un altro percorso, è necessario includere il percorso in un parametro del cmdlet.
 
-5.  **Firmare il codice dell'app con PowerShell** Come amministratore, aprire **Windows PowerShel**l sul computer host installato con il Windows SDK, il certificato di firma codice mobile aziendale Symantec, accedere al file Sign-WinPhoneCompanyPortal.ps1 ed eseguire lo script.
+5.  **Firmare il codice dell'app con PowerShell** Come amministratore, aprire **Windows PowerShell** sul computer host installato con il Windows SDK, il certificato di firma codice mobile aziendale Symantec, accedere al file Sign-WinPhoneCompanyPortal.ps1 ed eseguire lo script.
 
     **Esempio 1**
 
@@ -103,7 +104,7 @@ La procedura seguente consente di ottenere il certificato necessario e di firmar
 
     -   `-InputAppx` : il percorso locale del file CompanyPortal.appx tra virgolette singole. Ad esempio 'C:\temp\CompanyPortal.appx'
 
-    -   `-OutputAppx` : il percorso locale e il nome file per l’app Portale aziendale firmata tra virgolette singole. Ad esempio 'C:\temp\CompanyPortal.appx'
+    -   `-OutputAppx` : il percorso locale e il nome file per l’app Portale aziendale firmata tra virgolette singole. Ad esempio 'C:\temp\CompanyPortalEnterpriseSigned.appx'
 
     -   `-PfxFilePath` : il percorso locale e il nome file per il file PFX esportato del certificato di Symantec. Ad esempio, 'C:\signing\cert.pfx'
 
@@ -127,7 +128,7 @@ Il certificato Symantec usato per distribuire le app per dispositivi mobili Wind
 
     Per altre informazioni sui certificati Symantec, visitare [www.symantec.com](http://www.symantec.com) o chiamare il numero 1-877-438-8776 o 1-650-426-3400.
 
-2.  Visitare il sito Web (ad esempio: [hhttps://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) e accedere con l’ID dell’editore Symantec e l’indirizzo di posta elettronica associato al certificato. Ricordare di usare lo stesso computer in cui sarà scaricato il certificato per avviare il rinnovo.
+2.  Visitare il sito Web (ad esempio: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) e accedere con l’ID dell’editore Symantec e l’indirizzo di posta elettronica associato al certificato. Ricordare di usare lo stesso computer in cui sarà scaricato il certificato per avviare il rinnovo.
 
 3.  Una volta approvato e pagato il rinnovo, scaricare il certificato.
 
@@ -143,8 +144,59 @@ Il certificato Symantec usato per distribuire le app per dispositivi mobili Wind
 
 5.  Firmare tutte le app line-of-business aziendali nuove e aggiornate usando il nuovo certificato. Le applicazioni esistenti non devono essere firmate e distribuite di nuovo.
 
+## <a name="manually-deploy-windows-10-company-portal-app"></a>Distribuire manualmente l'app Portale aziendale di Windows 10
+È possibile distribuire manualmente l'app Portale aziendale di Windows 10 direttamente da Intune, anche se non si è integrato Intune con Windows Store per le aziende.
 
+ > [!NOTE]
+ > Se si sceglie questa opzione, sarà necessario distribuire manualmente gli aggiornamenti ogni volta che verrà rilasciato un aggiornamento dell'app.
 
-<!--HONumber=Dec16_HO2-->
+1. Accedere al proprio account di [Windows Store per le aziende](https://www.microsoft.com/business-store) e acquisire la versione con **licenza offline** dell'app Portale aziendale.  
+2. Dopo aver acquisito l'app, selezionarla nella pagina **Inventario**.  
+3. Selezionare **Windows 10 all devices** (Windows 10 - tutti i dispositivi) come **Piattaforma**, quindi specificare l'opzione di **Architettura** appropriata ed eseguire il download. Per questa app non è necessario un file di licenza di app.
+![Immagine dei dettagli del pacchetto per Windows 10 (tutti i dispositivi) e l'architettura X86](../media/Win10CP-all-devices.png)
+4. Scaricare tutti i pacchetti inclusi in "Framework richiesti". Questa operazione deve essere eseguita per le architetture x86, x64 e ARM, per un totale di 9 pacchetti, come illustrato di seguito.
 
+![Immagine dei file di dipendenza da scaricare ](../media/Win10CP-dependent-files.png)
+5. Prima di caricare l'app Portale aziendale in Intune, creare una cartella (ad esempio, C:&#92;Company Portal) con i pacchetti strutturati nel modo seguente:
+  1. Inserire il pacchetto dell'app Portale aziendale in C:\Company Portal. Creare anche una sottocartella Dependencies in questa posizione.  
+  ![Immagine della cartella Dependencies salvata con il file APPXBUN](../media/Win10CP-Dependencies-save.png)
+  2. Inserire i nove pacchetti delle dipendenze nella cartella Dependencies.  
+  Se le dipendenze non vengono inserite in questo formato, Intune non sarà in grado di riconoscerle e caricarle durante il caricamento del pacchetto. Pertanto questa operazione avrà esito negativo e restituirà l'errore seguente.  
+  ![Nella cartella dell'applicazione non è presente la dipendenza delle app Windows per questo programma di installazione software. È possibile continuare a creare e a distribuire questa applicazione senza che sia possibile eseguirla fino a quando la dipendenza delle app Windows mancante non verrà fornita.](../media/Win10CP-error-message.png)
+6. Tornare a Intune e caricare l'app Portale aziendale come una nuova app. Distribuirla come app necessaria al gruppo di utenti di destinazione desiderato.  
+
+Per altre informazioni sul modo in cui Intune gestisce le dipendenze per le app universali, vedere [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Distribuzione di un appxbundle con dipendenze tramite MDM di Microsoft Intune).  
+
+### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>Come aggiornare l'app Portale aziendale sui dispositivi degli utenti se hanno già installato le app precedenti dallo Store?
+Se gli utenti hanno già installato le app Portale aziendale di Windows 8.1 o Windows Phone 8.1 dallo Store, queste dovrebbero essere aggiornate automaticamente alla nuova versione senza alcun intervento da parte dell'amministratore o dell'utente. Se l'aggiornamento non viene eseguito, chiedere agli utenti di controllare se hanno abilitato gli aggiornamenti automatici per le app dello Store sui dispositivi.   
+
+### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Come aggiornare l'app Portale aziendale di Windows 8.1 trasferita localmente all'app Portale aziendale di Windows 10?
+Il percorso di migrazione consigliato consiste nell'eliminare la distribuzione dell'app Portale aziendale di Windows 8.1 impostando l'azione di distribuzione su "Disinstalla". Al termine di questa operazione, l'app Portale aziendale di Windows 10 può essere distribuita usando una delle opzioni precedenti.  
+
+Se è necessario trasferire localmente l'app e si è distribuita l'app Portale aziendale di Windows 8.1 senza firmarla con il certificato Symantec, per completare l'aggiornamento seguire i passaggi riportati nella sezione relativa alla distribuzione diretta tramite Intune.
+
+Se è necessario trasferire localmente l'app e si è firmata e distribuita l'app Portale aziendale di Windows 8.1 con il certificato di firma codice Symantec, seguire i passaggi illustrati nella sezione seguente.  
+
+### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Come aggiornare l'app Portale aziendale di Windows 8.1 o Windows Phone 8.1 firmata e trasferita localmente all'app Portale aziendale di Windows 10?
+Il percorso di migrazione consigliato consiste nell'eliminare la distribuzione esistente dell'app Portale aziendale di Windows 8.1 o Windows Phone 8.1 impostando l'azione di distribuzione su "Disinstalla". Al termine di questa operazione, l'app Portale aziendale di Windows 10 può essere distribuita normalmente.  
+
+In caso contrario, è necessario aggiornare e firmare l'app Portale aziendale di Windows 10 per assicurarsi che il percorso di aggiornamento venga rispettato.  
+
+Se l'app Portale aziendale di Windows 10 viene firmata e distribuita in questo modo, sarà necessario ripetere questa procedura per ogni nuovo aggiornamento dell'app disponibile nello Store. L'app non verrà aggiornata automaticamente in caso di aggiornamento dello Store.  
+
+Ecco come firmare e distribuire l'app in questo modo:
+
+1. Scaricare lo script di firma di Microsoft Intune per l'app Portale aziendale di Windows 10 dall'indirizzo [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Per l'esecuzione di questo script è necessario che sia installato Windows 10 SDK nel computer host. Per scaricare Windows 10 SDK, visitare [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
+2. Scaricare l'app Portale aziendale di Windows 10 da Windows Store per le aziende, come descritto in precedenza.  
+3. Eseguire lo script per firmare l'app Portale aziendale di Windows 10 con i parametri di input riportati nell'intestazione (descritti nella tabella seguente). Non è necessario passare le dipendenze allo script. Le dipendenze sono necessarie solo quando l'app viene caricata nella console di amministrazione di Intune.
+
+|Parametro | Descrizione|
+| ------------- | ------------- |
+|InputWin10AppxBundle |Percorso in cui si trova il file appxbundle di origine. |
+|OutputWin10AppxBundle |Percorso di output per il file appxbundle firmato.  Win81Appx: percorso in cui si trova il file (con estensione appx) dell'app Portale aziendale di Windows 8.1 o Windows Phone 8.1.|
+|PfxFilePath |Percorso del file (con estensione pfx) del certificato di firma codice di Symantec Enterprise Mobile. |
+|PfxPassword| Password del certificato di firma codice di Symantec Enterprise Mobile. |
+|PublisherId |ID editore dell'azienda. Se assente, viene usato il campo 'Subject' del certificato di firma codice mobile aziendale Symantec .|
+|SdkPath | Percorso della cartella radice di Windows 10 SDK. Questo argomento è facoltativo e l'impostazione predefinita è ${env:ProgramFiles(x86)}\Windows Kits\10.|
+Al termine dell'esecuzione, lo script genererà la versione firmata dell'app Portale aziendale di Windows 10. Sarà quindi possibile distribuire la versione firmata dell'app come app line-of-business tramite Intune, in modo da aggiornare le versioni attualmente distribuite alla nuova app.  
 

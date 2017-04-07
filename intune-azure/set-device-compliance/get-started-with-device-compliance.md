@@ -1,5 +1,6 @@
 ---
-title: "Introduzione alla conformità dei dispositivi | Anteprima di Intune in Azure | Documentazione Microsoft"
+title: "Introduzione alla conformità dei dispositivi"
+titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: usare questo argomento per comprendere i prerequisiti necessari per creare i criteri di conformità in Microsoft Intune"
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: c868bc9adc0afbc216d47530a7eace10f8ca2d9b
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -25,19 +28,20 @@ ms.openlocfilehash: c868bc9adc0afbc216d47530a7eace10f8ca2d9b
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-In questo argomento verranno fornite maggiori informazioni sui prerequisiti necessari per creare un criterio di conformità del dispositivo e una rapida panoramica su ciò che può essere visualizzato ed eseguito nel portale di Azure. Se non si conosce il concetto, è consigliabile leggere questo argomento per scoprire cosa si intende per conformità del dispositivo e come è possibile usarla nell'azienda.
+In questo argomento verrà illustrato quanto segue: 
+
+- I prerequisiti per iniziare a creare criteri di conformità dei dispositivi.
+- Una rapida panoramica sui dati visualizzati e sulle attività che è possibile svolgere nel portale di anteprima di Intune in Azure. 
+
+Se non si ha familiarità con il concetto di conformità dei dispositivi, è consigliabile leggere [questo argomento](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) per scoprire cosa si intende per conformità dei dispositivi e come è possibile applicarla nell'organizzazione.
 
 ##  <a name="pre-requisites"></a>Prerequisiti
-
 
 -   Una sottoscrizione a Intune
 
 -   Una sottoscrizione ad Azure Active Directory
 
-
-
 ##  <a name="supported-platforms"></a>Piattaforme supportate:
-
 
 -   Android
 
@@ -51,8 +55,7 @@ In questo argomento verranno fornite maggiori informazioni sui prerequisiti nece
 
 ##  <a name="azure-portal-workflow"></a>Flusso di lavoro del portale di Azure
 
-
-Di seguito viene fornita una panoramica di come è possibile creare e gestire la conformità di un dispositivo nel portale di Azure.
+Di seguito viene presentata una panoramica di come è possibile creare e gestire la conformità dei dispositivi nel portale di anteprima di Intune in Azure.
 
 <!---### Overview
 
@@ -79,9 +82,4 @@ Periodo di validità dello stato di conformità
 [Create a compliance policy for iOS](create-a-compliance-policy-for-ios.md) (Creare un criterio di conformità per iOS)
 
 [Create a compliance policy for Windows](create-a-compliance-policy-for-windows.md) (Creare un criterio di conformità per Windows)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

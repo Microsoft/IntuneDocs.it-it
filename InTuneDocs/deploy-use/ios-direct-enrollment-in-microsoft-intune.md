@@ -2,9 +2,9 @@
 title: Registrazione diretta per i dispositivi iOS | Documentazione Microsoft
 description: "Usare lo strumento Apple Configurator per registrare direttamente i dispositivi iOS di proprietà dell&quot;azienda con un criterio predefinito mediante connessione USB a un computer Mac."
 keywords: 
-author: staciebarker
-ms.author: stabar
-manager: arob98
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -91,9 +92,4 @@ Durante la registrazione diretta dei dispositivi iOS, è possibile registrare un
 9.  Nel dispositivo iOS aprire la finestra **Impostazioni** e passare a **Generale** &gt; **Gestione dei dispositivi** &gt; **Profilo di gestione**. Verificare che l'installazione del profilo è inclusa nell'elenco e controllare le restrizioni dei criteri iOS e le app installate. La visualizzazione delle restrizioni dei criteri e delle app nel dispositivo può impiegare fino a 10 minuti.
 
 10.  Distribuire i dispositivi. Il dispositivo iOS viene ora registrato con Intune e gestito.
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

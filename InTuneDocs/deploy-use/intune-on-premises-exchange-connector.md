@@ -15,8 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1b74d19762a81313325eac27cab50a144a569620
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 68dbebbd7d29514bde438b7dff3142dc45e8471d
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -132,9 +133,4 @@ Dopo aver configurato correttamente Exchange Connector, è possibile visualizzar
 
 
 È inoltre possibile verificare la data e ora dell'ultimo tentativo di sincronizzazione riuscito.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

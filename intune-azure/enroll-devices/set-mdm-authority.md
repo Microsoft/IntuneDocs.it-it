@@ -3,8 +3,8 @@ title: "Impostare l&quot;autorità di gestione dei dispositivi mobili"
 titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: informazioni sulle modalità di impostazione dell&quot;autorità di gestione dei dispositivi mobili in Intune. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/06/2016
 ms.topic: article

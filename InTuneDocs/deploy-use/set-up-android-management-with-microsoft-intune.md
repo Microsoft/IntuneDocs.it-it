@@ -2,10 +2,10 @@
 title: Configurare la gestione per Android | Documentazione Microsoft
 description: Abilitare la gestione di dispositivi mobili (MDM) per i dispositivi Android e KNOX Standard con Microsoft Intune.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: a5a4f11ae341480b2e674ca55a514b62831bdd60
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -37,11 +38,11 @@ Per impostazione predefinita, tutti i dispositivi Android sono autorizzati alla 
 
 3.  **Indicare agli utenti come registrare i propri dispositivi per accedere alle risorse aziendali.**
 
-    Per istruzioni sulla registrazione da parte dell'utente finale, vedere [Registrare il dispositivo Android in Intune](../enduser/enroll-your-device-in-intune-android.md). Il processo di registrazione indica agli utenti cosa possono aspettarsi e i dati visibili o meno agli amministratori IT nei propri dispositivi.
+    Per istruzioni sulla registrazione da parte dell'utente finale, vedere [Registrare il dispositivo Android in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android). Il processo di registrazione indica agli utenti cosa possono aspettarsi e i dati visibili o meno agli amministratori IT nei propri dispositivi.
 
     Per informazioni su altre attività dell'utente finale, vedere gli articoli seguenti:
   - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](how-to-educate-your-end-users-about-microsoft-intune.md)
-  - [End user guidance for Android devices](../enduser/using-your-android-device-with-intune.md) (Linee guida per utenti finali relative a dispositivi Android)
+  - [End user guidance for Android devices](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune) (Linee guida per utenti finali relative a dispositivi Android)
 
 A causa dell'assenza di Google Play Store in Cina, i dispositivi Android devono ottenere il portale aziendale dai marketplace di app cinesi. L'app Portale aziendale per Android sarà disponibile per il download negli store seguenti:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
@@ -62,9 +63,4 @@ L'app Portale aziendale per Android usa i servizi Google Play per comunicare con
 
 ### <a name="see-also"></a>Vedere anche
 [Prerequisiti per la registrazione dei dispositivi in Microsoft Intune](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: bac9e6784ed6814d27bec9ad07b507facc9e8fc2
-ms.openlocfilehash: 48fe5f0a124a6608434f87905c24cda822fe63b7
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 69f7f366e798c1c987a6ddfb93300598b22a7d01
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -26,8 +26,6 @@ Informazioni su quali aggiornamenti sono stati apportati all'interfaccia utente 
 
 > [!Note]
 > Si noti che le immagini seguenti sono anteprime e che il prodotto annunciato potrebbe differire dalle versioni presentate.
-
-## <a name="whats-coming"></a>Sviluppi futuri
 
 ### <a name="february-2017"></a>Febbraio 2017
 

@@ -1,5 +1,6 @@
 ---
-title: Gestire il trasferimento di dati tra app per iOS | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Gestire il trasferimento di dati tra app iOS | Anteprima di Intune in Azure
+titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: Usare questo argomento per comprendere come è possibile usare la funzionalità Apri in di iOS e i criteri di gestione delle app per dispositivi mobili per gestire i trasferimenti di dati tra le app."
 keywords: 
 author: NathBarn
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
-ms.openlocfilehash: 4ad494b42313e064a2d5ecc8056e19a522cfe051
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 2b589f98ef77329ca495c894054acd7cd6c2812e
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -58,7 +60,7 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
 
       Esempio: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Distribuire il criterio di gestione Apri in ai dispositivi registrati usando il provider MDM di terze parti.
+  2.  Distribuire i criteri di gestione Apri in con il provider MDM di terze parti in uso nei dispositivi registrati.
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Esempio 1: Esperienza di amministrazione nella console MDM di terze parti
@@ -96,7 +98,7 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
 
 ### <a name="validate-user-upn-setting-for-third-party-emm"></a>Convalidare l'impostazione UPN dell'utente per soluzioni EMM di terze parti
 
-Dopo aver configurato l'impostazione UPN dell'utente, è necessario convalidare la capacità dell'app iOS di ricevere i criteri di protezione delle app di Intune e di conformarsi a tali criteri.
+Dopo aver configurato l'impostazione UPN dell'utente, è necessario verificare se l'app iOS può ricevere i criteri di protezione delle app di Intune e conformarsi a tali criteri.
 
 Ad esempio, è facile verificare visivamente l'impostazione del criterio **Richiedi PIN semplice per l'accesso** in un dispositivo. Se il criterio è impostato su **Sì**, quando l'utente cerca di accedere ai dati aziendali un prompt richiede di impostare o immettere un PIN.
 

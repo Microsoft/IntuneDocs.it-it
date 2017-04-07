@@ -16,8 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
+ms.sourcegitcommit: 02c844a5b38023a6dfc6c4ef1de81e1416601fba
+ms.openlocfilehash: b0c3520c7c1fd29a631587fe1a69d4c411099cb4
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -58,7 +59,7 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 |----------------|-|
 |**Consenti la condivisione dei dati tra i profili di lavoro e personali**|Consente alle app del profilo di lavoro di condividere i dati con le app del profilo personale degli utenti. È possibile scegliere tra:<br><br>- **Impedisci qualsiasi condivisione tra i limiti**<br>- **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**<br>- **Nessuna restrizione sulla condivisione**|
 |**Nascondi le notifiche del profilo di lavoro quando il dispositivo è bloccato**<br>(Android 6.0+)|Controllare se visualizzare le notifiche dal profilo di lavoro quando il dispositivo è bloccato.|
-|**Imposta i criteri di autorizzazione predefiniti delle app**<br>(Android 6.0+)|Imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro.|
+|**Imposta i criteri di autorizzazione predefiniti delle app**<br>(Android 6.0+)|Imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro. A partire da Android 6, alcune autorizzazioni necessarie per le app vengono richieste all'utente finale in fase di esecuzione.  Questa impostazione di criteri consente al personale IT di decidere come o se richiedere agli utenti di concedere autorizzazioni per le app nel profilo di lavoro. <br/><br/>Ad esempio, il personale IT può eseguire il push nel profilo di lavoro di un'app che richiede l'accesso alla posizione.  In genere viene visualizzata una finestra di dialogo per chiedere all'utente se vuole concedere all'app l'accesso alla posizione e l'utente può approvare o rifiutare questa richiesta.  Questa impostazione di criteri consente al personale IT di decidere se tutte le autorizzazioni devono essere concesse o rifiutate automaticamente senza visualizzare un messaggio di richiesta oppure se lasciare la libertà di scelta all'utente.|
 
 
 ## <a name="custom-policy-settings"></a>Impostazioni di criteri personalizzati
@@ -91,9 +92,4 @@ Intune supporta attualmente un numero limitato di criteri personalizzati Android
 
 ### <a name="see-also"></a>Vedere anche
 [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

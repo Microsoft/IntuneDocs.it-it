@@ -1,5 +1,5 @@
 ---
-title: Configurare l&quot;infrastruttura di certificazione per SCEP | Microsoft Intune
+title: Configurare l&quot;infrastruttura di certificazione per SCEP | Documentazione Microsoft
 description: Infrastruttura per la creazione e la distribuzione di profili certificato SCEP.
 keywords: 
 author: robstackmsft
@@ -13,12 +13,17 @@ ms.technology:
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
-ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
+ms.lasthandoff: 12/10/2016
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurare l'infrastruttura di certificazione per SCEP
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Questo argomento descrive l'infrastruttura necessaria per creare e distribuire profili certificato SCEP.
 
 ### <a name="on-premises-infrastructure"></a>Infrastruttura locale
@@ -31,7 +36,7 @@ I
 -  **Server NDES**: nei server che eseguono Windows Server 2012 R2 o versioni successive è necessario installare il servizio Registrazione dispositivi di rete (NDES, Network Device Enrollment Service). Intune non supporta l'uso di NDES se viene eseguito su un server con Enterprise CA. Vedere [Linee guida per il servizio Registrazione dispositivi di rete](http://technet.microsoft.com/library/hh831498.aspx) per istruzioni su come configurare Windows Server 2012 R2 per ospitare il Servizio Registrazione dispositivi di rete. Il server NDES deve appartenere al dominio che ospita la CA e non trovarsi nello stesso server di questa. Altre informazioni sulla distribuzione del server NDES in una foresta separata, in una rete isolata o in un dominio interno sono disponibili in [Uso di un Modulo criteri con il servizio Registrazione dispositivi di rete](https://technet.microsoft.com/en-us/library/dn473016.aspx).
 
 -  **Connettore di certificati di Microsoft Intune**: usare la console di amministrazione di Intune per scaricare il programma di installazione del **Connettore di certificati** (**ndesconnectorssetup.exe**). È quindi possibile eseguire **ndesconnectorssetup.exe** nel computer in cui si vuole installare Connettore di certificati.
--  **Server proxy applicazione Web ** (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versioni successive come server proxy applicazione Web (WAP, Web Application Proxy) . Questa configurazione:
+-  **Server proxy applicazione Web** (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versioni successive come server proxy applicazione Web (WAP, Web Application Proxy) . Questa configurazione:
     -  Consente ai dispositivi di ricevere i certificati usando una connessione Internet.
     -  Vale come raccomandazione di sicurezza quando i dispositivi usano la connessione a Internet per ricevere e rinnovare i certificati.
 
@@ -49,7 +54,7 @@ Dalla rete perimetrale a una rete attendibile, aprire tutte le porte e consentir
 È consigliabile pubblicare il server NDES tramite un proxy, ad esempio [Proxy di applicazione di Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [Proxy di accesso Web](https://technet.microsoft.com/en-us/library/dn584107.aspx) o un proxy di terze parti.
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Certificati e modelli
+### <a name="BKMK_CertsAndTemplates"></a>Certificati e modelli
 
 |Oggetto|Dettagli|
 |----------|-----------|
@@ -58,13 +63,13 @@ Dalla rete perimetrale a una rete attendibile, aprire tutte le porte e consentir
 |**Certificato di autenticazione server**|Richiesto dalla CA emittente o dalla CA pubblica, questo certificato SSL viene installato e associato in IIS nel server NDES.|
 |**Certificato CA radice attendibile**|Questo viene esportato sotto forma di file con estensione **cer** dalla CA radice o da qualsiasi dispositivo che considera attendibile la CA radice e viene distribuito ai dispositivi mediante il profilo certificato CA attendibile.<br /><br />Viene usato un certificato CA radice attendibile per ogni piattaforma di sistema e lo si associa con ogni profilo del certificato radice attendibile creato.<br /><br />È possibile usare certificati CA radice attendibili aggiuntivi, se necessario. Ad esempio, è possibile farlo per fornire un trust a un'autorità di certificazione che firma i certificati di autenticazione del server per i punti di accesso Wi-Fi.|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Account
+### <a name="BKMK_Accounts"></a>Account
 
 |Nome|Dettagli|
 |--------|-----------|
 |**Account di servizio NDES**|Specificare un account utente di dominio da usare come account del servizio NDES.|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Configurare l'infrastruttura
+## <a name="BKMK_ConfigureInfrastructure"></a>Configurare l'infrastruttura
 Prima di configurare i profili di certificato, è necessario completare le seguenti attività, che richiedono una conoscenza preliminare di Windows Server 2012 R2 e Servizi certificati Active Directory (ADCS):
 
 **Attività 1**: Creare un account del servizio NDES
@@ -93,7 +98,7 @@ In questa attività sarà possibile:
 
 ##### <a name="to-configure-the-certification-authority"></a>Per configurare l'autorità di certificazione
 
-1.  Accedere come amministratore dell'organizzazione. 
+1.  Accedere come amministratore dell'organizzazione.
 
 2.  Nella CA emittente usare lo snap-in Modelli di certificato per creare un nuovo modello personalizzato o copiare un modello esistente (ad esempio, il modello Utente) e modificarlo per l'utilizzo con NDES.
 
@@ -109,7 +114,7 @@ In questa attività sarà possibile:
         > Per i modelli di certificato iOS e Mac OS X, nella scheda **Estensioni** modificare **Utilizzo chiavi** e verificare che **Firma come prova dell'origine** non sia selezionato.
 
     -   Nella scheda **Sicurezza** aggiungere l'account del servizio NDES e dargli le autorizzazioni di **registrazione** al modello. Per gli amministratori di Intune che creano profili SCEP sono necessari diritti di **lettura** per selezionare il modello durante la creazione dei profili.
-    
+
     > [!NOTE]
     > Per revocare i certificati, l'account del servizio NDES ha bisogno dei diritti *Rilascio e gestione certificati* per ogni modello di certificato usato da un profilo di certificato.
 
@@ -120,19 +125,19 @@ In questa attività sarà possibile:
 
 Ecco alcuni screenshot di una configurazione di esempio del modello.
 
-![Modello, scheda di gestione delle richieste](..\media\scep_ndes_request_handling.png) 
+![Modello, scheda di gestione delle richieste](..\media\scep_ndes_request_handling.png)
 
-![Modello, scheda relativa al nome soggetto](..\media\scep_ndes_subject_name.jpg) 
+![Modello, scheda relativa al nome soggetto](..\media\scep_ndes_subject_name.jpg)
 
-![Modello, scheda della sicurezza](..\media\scep_ndes_security.jpg) 
+![Modello, scheda della sicurezza](..\media\scep_ndes_security.jpg)
 
-![Modello, scheda delle estensioni](..\media\scep_ndes_extensions.jpg) 
+![Modello, scheda delle estensioni](..\media\scep_ndes_extensions.jpg)
 
-![Modello, scheda dei requisiti di rilascio](..\media\scep_ndes_issuance_reqs.jpg) 
+![Modello, scheda dei requisiti di rilascio](..\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
     > Per Criteri di applicazione (nel quarto screenshot) aggiungere solo i criteri di applicazione richiesti. Verificare le scelte effettuate con gli amministratori della sicurezza.
-   
+
 
 
 Per configurare la CA in modo che consenta al richiedente di specificare il periodo di validità, eseguire questi comandi nella CA:
@@ -239,12 +244,12 @@ In questa attività sarà possibile:
 
 4. In Gestione IIS scegliere **Sito Web predefinito** -> **Filtro richieste** -> **Modifica impostazioni funzionalità** e modificare **Lunghezza massima URL** e **Lunghezza massima stringa di query** in *65534*, come illustrato.
 
-    ![Lunghezza massima URL IIS e lunghezza query](..\media\SCEP_IIS_max_URL.png) 
+    ![Lunghezza massima URL IIS e lunghezza query](..\media\SCEP_IIS_max_URL.png)
 
 5.  Riavviare il server. L'esecuzione di **iisreset** nel server non è sufficiente per finalizzare le modifiche.
 6. Passare a http://*FQDN*/certsrv/mscep/mscep.dll. Verrà visualizzata una pagina NDES simile alla seguente:
 
-    ![Test NDES](..\media\SCEP_NDES_URL.png) 
+    ![Test NDES](..\media\SCEP_NDES_URL.png)
 
     Se viene visualizzato l'errore **503 - Servizio non disponibile**, controllare eventviewer. È probabile che il pool di applicazioni si sia arrestato perché l'utente NDES non dispone di un diritto. Tali diritti sono descritti nell'attività 1.
 
@@ -347,9 +352,4 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
 
 ## <a name="next-steps"></a>Passaggi successivi
 A questo punto è possibile configurare i profili certificato come descritto in [Configure certificate profiles](Configure-Intune-certificate-profiles.md) (Configurare i profili certificato).
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

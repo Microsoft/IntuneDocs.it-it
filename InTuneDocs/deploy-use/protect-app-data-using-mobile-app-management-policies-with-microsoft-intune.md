@@ -37,8 +37,8 @@ Per proteggere i dati aziendali, è possibile usare i criteri di protezione dell
 
 -   **Registrati in una soluzione di gestione di dispositivi mobili di terze parti:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dell'azienda.
 
-  > [!NOTE]
-  > L'uso di criteri di protezione delle app con soluzioni di gestione delle app per dispositivi mobili o di contenitore protetto di terze parti non è consigliato.
+      > [!NOTE]
+      > L'uso di criteri di protezione delle app con soluzioni di gestione delle app per dispositivi mobili o di contenitore protetto di terze parti non è consigliato.
 
 -   **Non registrati in alcuna soluzione di gestione di dispositivi mobili:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dei dipendenti non gestiti o registrati in Intune o altre soluzioni MDM.
 

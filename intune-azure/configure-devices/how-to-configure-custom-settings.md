@@ -1,11 +1,12 @@
 ---
-title: Come configurare le impostazioni dispositivo personalizzate in Intune | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Come configurare le impostazioni dispositivo personalizzate di Intune
+titleSuffix: Intune Azure preview
 description: 'Anteprima di Intune in Azure: informazioni su come usare Intune per configurare impostazioni personalizzate nei dispositivi gestiti.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: d9da3f1c2ccade5391e2e874336802602a016700
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 029b5c4c011ddf3ff7dbb06c55b48ef0c18c725e
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -36,7 +38,7 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
+3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 3. Nel pannello dei profili scegliere **Crea profilo**.
 4. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** per il profilo personalizzato.

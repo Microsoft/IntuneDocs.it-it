@@ -2,10 +2,10 @@
 title: Note sulla versione di Microsoft Intune | Documentazione Microsoft
 description: Note sulla versione di Intune
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fd300a5dfe6d6976491988453ec69e99668889fb
+ms.sourcegitcommit: f0e027d1c63435084c434c591fed7bb71b5c07f2
+ms.openlocfilehash: 8369cc039ac1c4c24b29927a96360cd872f8e9bc
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -27,21 +28,21 @@ ms.openlocfilehash: fd300a5dfe6d6976491988453ec69e99668889fb
 
 Microsoft Intune è una soluzione di gestione client integrata basata su cloud che include strumenti, report e licenze di aggiornamento alla versione più recente di Windows e consente di mantenere i computer aggiornati e protetti. Intune permette anche di gestire i dispositivi mobili in modo diretto oppure sulla rete tramite Exchange ActiveSync. Le note sulla versione seguenti descrivono informazioni importanti e problemi noti in Microsoft Intune.
 
+<!-- 3-6-17: customer asked if this is still current; Stacie asked Chris Baldwin about it. Chris said it's a Samsung issue, but that he hasn't heard any reports about it for months, so he suggested that I share that with the customer and remove this item from the release notes. I'm only going to comment it out in case it resurfaces.
+## Android users can’t send email when conditional access for Exchange Online is implemented
 
-## <a name="android-users-cant-send-email-when-conditional-access-for-exchange-online-is-implemented"></a>Gli utenti di Android non possono inviare messaggi di posta elettronica se è implementato l'accesso condizionale per Exchange Online.
+**Issue:** Users running Samsung Android 5.1.1 and later on their devices can't send email when conditional access for Exchange Online has been set up. Samsung acknowledges that the issue is in its built-in email client in Android 5.1.1 and later, and is investigating a fix.
 
-**Problema:** gli utenti che eseguono Samsung Android 5.1.1 e versioni successive nei loro dispositivi non possono inviare messaggi di posta elettronica se è stato impostato l'accesso condizionale per Exchange Online. Samsung riconosce che il problema risiede nel client di posta elettronica predefinito di Android 5.1.1 e versioni successive e sta cercando di mettere a punto una correzione.
+**Workaround 1:** Advise users to use the Outlook app for Android.
 
-**Soluzione alternativa 1:** consigliare agli utenti di usare l'app Outlook per Android.
+**Workaround 2:** To let affected users send email, you can follow these steps:
 
-**Soluzione alternativa 2:** per consentire agli utenti interessati di inviare messaggi di posta elettronica, seguire questa procedura:
+1. Put each affected user in a security group in the “exempted groups” section of the conditional access policy for Exchange Online.
+2. Let the user temporarily sync email on the built-in email client.
+3. Remove the affected user from the exempted group, and confirm that the user can now send email.
 
-1. Inserire tutti gli utenti interessati dal problema in un gruppo di sicurezza della sezione "Gruppi esentati" dei criteri di accesso condizionale per Exchange Online.
-2. Consentire agli utenti di sincronizzare temporaneamente la posta elettronica nel client di posta elettronica predefinito.
-3. Rimuovere gli utenti interessati dal gruppo esentato e verificare che ora possano inviare messaggi di posta elettronica.
-
-Microsoft continuerà a collaborare con Samsung per mettere a punto una correzione o altre soluzioni alternative.
-
+Microsoft will continue to work closely with Samsung on a fix or additional workarounds.
+-->
 
 
 ## <a name="changing-resource-access-profiles-between-groups-for-ios-and-android-might-fail"></a>La modifica dei profili di accesso alle risorse tra gruppi per iOS e Android può avere esito negativo
@@ -92,9 +93,4 @@ In entrambi i casi, il profilo di accesso alla risorsa (profilo di posta elettro
 Il portale di Azure supporta le lingue seguenti: cinese (semplificato), cinese (tradizionale), ceco, olandese, inglese, tedesco, ungherese, italiano, giapponese, portoghese (Brasile), portoghese (Portogallo), russo, spagnolo, francese, coreano, polacco, svedese e turco.
 
 La console di amministrazione di Intune e le app mobili per l'utente supportano le lingue seguenti: danese, greco, finlandese, norvegese e romeno, oltre a tutte le lingue supportate dal portale di Azure.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

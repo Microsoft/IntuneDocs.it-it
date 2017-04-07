@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: arob98
-ms.date: 01/31/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -171,11 +172,12 @@ Per visualizzare lo stato di un'attività remota, scegliere il collegamento **At
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Come visualizzare recenti percorsi di rilevamento di malware nel computer.
 Intune consente di visualizzare i percorsi per fino a 10 istanze di malware rilevate più di recente in un dispositivo. Il **recente rilevamento percorso** è disabilitato per impostazione predefinita. Per abilitare questa visualizzazione:
 
-1.  Nella [console di amministrazione Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** > **Tutti i dispositivi** > **Malware**.
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** > **Tutti i dispositivi** > **Tutti i computer**.
+2. Fare clic con il pulsante destro del mouse sul computer di cui si vuole visualizzare i recenti percorsi di rilevamento e selezionare **Proprietà**.
+3. Selezionare **Malware** tra le schede visualizzate nella parte superiore.
 
-2.  Fare doppio clic su un'intestazione di colonna. Verrà visualizzato un elenco delle colonne disponibili.
-
-3.  Selezionare la casella di controllo **Percorsi di rilevamento recenti** nell'elenco. Viene visualizza la colonna **Percorsi di rilevamento recenti** che riporta fino a 10 delle istanze di malware monitorate più di recente nel dispositivo.
+   ![Selezionare la scheda Malware e quindi fare clic sulla casella di controllo Percorsi di rilevamento recenti.](../media/malware-path-column.png)
+4. Fare clic con il pulsante destro del mouse sull'intestazione di colonna. Verrà visualizzato un elenco delle colonne disponibili. Selezionare la casella di controllo **Percorsi di rilevamento recenti** nell'elenco. Viene visualizza la colonna **Percorsi di rilevamento recenti** che riporta fino a 10 delle istanze di malware monitorate più di recente nel dispositivo.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Eseguire un'analisi del malware o aggiornare le definizioni di malware in un computer
 Intune consente di eseguire un'analisi completa o veloce del malware usando Endpoint Protection o Windows Defender in un PC gestito in remoto in cui è installato il client Intune.
@@ -184,17 +186,9 @@ Intune consente di eseguire un'analisi completa o veloce del malware usando Endp
 
 2. Scegliere l'elenco a discesa **Attività remote** e quindi selezionare l'attività da eseguire nel computer remoto.
 
-
-
-
 ## <a name="need-more-help"></a>Ulteriore assistenza?
 Per altre informazioni e supporto, vedere [Troubleshoot Endpoint Protection in Microsoft Intune (Risoluzione dei problemi di Endpoint Protection in Microsoft Intune)](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
 ### <a name="see-also"></a>Vedere anche
 [Criteri per la protezione dei PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

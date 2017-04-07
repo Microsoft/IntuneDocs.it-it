@@ -3,8 +3,8 @@ title: Registrare i dispositivi iOS con Apple Configurator e registrazione diret
 titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: informazioni su come usare lo strumento Apple Configurator per registrare i dispositivi iOS di proprietà dell&quot;azienda con la registrazione diretta."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

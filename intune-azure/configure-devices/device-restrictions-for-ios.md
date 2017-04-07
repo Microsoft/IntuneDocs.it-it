@@ -1,11 +1,12 @@
 ---
-title: Impostazioni relative alle restrizioni del dispositivo di Intune per iOS | Anteprima di Intune Azure | Documentazione Microsoft
+title: Impostazioni relative alle restrizioni dei dispositivi per iOS
+titleSuffix: Intune Azure preview
 description: "Anteprima di Intune Azure: informazioni sulle opzioni di Intune che è possibile usare per controllare le impostazioni e le funzionalità del dispositivo con iOS."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 2b8bf6d3944f9968d0f4020fbb5c57ef8180062c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -49,7 +51,8 @@ ms.lasthandoff: 02/16/2017
 -     **Scelte rapida da tastiera (solo con supervisione)** - Consente l'uso dei tasti di scelta rapida.
 -     **Rilevamento del polso per l'Apple Watch associato** - Quando l'opzione è abilitata, Apple Watch non visualizza notifiche se non è indossato.
 - **Richiedi la password associata alle richieste AirPlay in uscita** - Richiede una password di associazione quando l'utente usa AirPlay per trasmettere i contenuti ad altri dispositivi di Apple.
-- **Modifica dell'account (solo con supervisione)** - Consente all'utente di modificare le impostazioni dell'account, ad esempio le configurazioni di posta elettronica.
+- **Modifica dell'account (solo con supervisione)** - Quando è bloccata, impedisce all'utente di modificare le impostazioni specifiche dei dispositivi dall'app delle impostazioni iOS, ad esempio creare nuovi account di dispositivo e modificare il nome utente o la password.
+Questa opzione si applica anche alle impostazioni accessibili dall'app delle impostazioni iOS come Posta, Contatti, Calendario, Facebook e Twitter. Non si applica alle app con impostazioni dell'account non configurabili dall'app delle impostazioni iOS, ad esempio Microsoft Outlook.
 - **Associazione di Apple Watch (solo con supervisione)** - Consente al dispositivo di associare un Apple Watch.
 - **Modifica Bluetooth (solo con supervisione)** - Impedisce all'utente finale di modificare le impostazioni Bluetooth nel dispositivo.
 - **Osservazione dello schermo remoto da parte dell'app Classroom (solo con supervisione)** - Consente o blocca l'osservazione dello schermo dei dispositivi remoti da parte dell'app Classroom.
@@ -57,7 +60,7 @@ ms.lasthandoff: 02/16/2017
 - **Uso dell'opzione di cancellazione di tutti i contenuti e tutte le impostazioni sul dispositivo (solo con supervisione)** - Consente all'utente di usare l'opzione di cancellazione di tutti i contenuti e le impostazioni del dispositivo.
 - **Modifica del nome dispositivo (solo con supervisione)** - Consente all'utente di modificare il nome del dispositivo.
 - **Modifica delle impostazioni di invio dei dati di diagnostica (solo con supervisione)** - Consente o impedisce al dispositivo di inviare dati di diagnostica ad Apple.
-- ** Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
+- **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
 - **Modifica delle impostazioni di notifica (solo con supervisione)** - Consente all'utente di modificare le impostazioni di notifica del dispositivo.
 - **Modifica del passcode (solo con supervisione)** - Consente di aggiungere, modificare o rimuovere la password del dispositivo.
 - **Modifica dello sfondo (solo con supervisione)** - Consente all'utente di cambiare lo sfondo del dispositivo.
@@ -220,7 +223,7 @@ Usare le informazioni riportate in questo elenco per identificare il nome, l'aut
 -     **Libreria foto di iCloud** - Se impostata su **No**, disabilita l'uso della libreria di foto di iCloud che consente agli utenti di archiviare foto e video nel cloud.    Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo verranno rimosse dal dispositivo se questa opzione è impostata su **No**.
 -     **Sincronizzazione delle app gestite nel cloud** - Consente alle app gestite con Intune di sincronizzare i dati con l'account iCloud dell'utente.
 -     **Flusso di foto condivise** - Impostare su **No** per disabilitare **Condivisione foto di iCloud** nel dispositivo.
--     **Continuazione dell'attività** - Consente all'utente di proseguire il lavoro iniziato in un dispositivo iOS in un altro dispositivo iOS o Mac OS X (Handoff).
+-     **Continuazione dell'attività** - Consente all'utente di proseguire il lavoro iniziato in un dispositivo iOS in un altro dispositivo iOS o macOS (Handoff).
 
 ## <a name="kiosk"></a>Modalità tutto schermo
 -     **Blocco attivazione** - Abilita il blocco attivazione su dispositivi iOS con supervisione.

@@ -4,7 +4,7 @@ description: Metodi per mettere a disposizione degli utenti le app Windows
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: arob98
+manager: angrobe
 ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 6e295c5df6ec52d3c106fe934d05f10dbc2a3e1f
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -39,9 +40,4 @@ Usare queste informazioni per comprendere come e dove gli utenti possono ottener
 ### <a name="see-also"></a>Vedere anche
 [Modalità di recupero delle app per gli utenti di Android](how-your-android-users-get-their-apps.md)</br>
 [Modalità di recupero delle app per gli utenti di iOS](how-your-ios-users-get-their-apps.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

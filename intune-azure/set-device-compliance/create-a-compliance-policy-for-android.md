@@ -16,47 +16,26 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5c8e0d2bec63c3eab5c1af08471d54f66feb5231
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: a0950e3b816128ccd042620eb1344f908c915a21
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview"></a>Come creare i criteri di conformità per i dispositivi Android nell'anteprima di Intune in Azure
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Come creare i criteri di conformità per i dispositivi Android nel portale di anteprima di Intune in Azure
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-I criteri di conformità vengono creati per ogni piattaforma.  È possibile creare i criteri di conformità nel portale di Azure. Per altre informazioni sui criteri di conformità consultare l'argomento [What is a device compliance](what-is-device-compliance.md)(Che cos'è la conformità dei dispositivi). Per altre informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, consultare l'argomento [Get started with device compliance](get-started-with-device-compliance.md) (Introduzione alla conformità dei dispositivi).
+I criteri di conformità dei dispositivi vengono creati per ogni piattaforma dal portale di anteprima di Intune in Azure. 
 
-La tabella seguente descrive il modo in cui le impostazioni di non conformità vengono gestite quando i criteri di conformità vengono usati con i criteri di accesso condizionale.
+- Per altre informazioni sui criteri di conformità consultare l'argomento [What is a device compliance](what-is-device-compliance.md)(Che cos'è la conformità dei dispositivi).
+- Per altre informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, consultare l'argomento [Introduzione alla conformità dei dispositivi](get-started-with-device-compliance.md).
 
---------------------
+## <a name="to-create-a-device-compliance-policy"></a>Per creare i criteri di conformità dei dispositivi
 
-|**impostazione di criteri**| **Android 4.0 e versioni successive, Samsung Knox Standard 4.0 e versioni successive** |
-| --- | ----|
-| **Configurazione di PIN o password** |  In quarantena |
-| **Crittografia dispositivo** | In quarantena |
-| **Dispositivo jailbroken o rooted** | In quarantena (non è un'impostazione) |
-| **Profilo di posta elettronica** | Non applicabile |
-| **Versione minima del sistema operativo** | In quarantena |
-| **Versione massima del sistema operativo** |   In quarantena |
-| **Attestazione dell'integrità di Windows** | Non applicabile |
-
---------------------------
-
-
-**Con correzione** = il sistema operativo del dispositivo impone la conformità. (Ad esempio, l'utente è obbligato a impostare un PIN.)+
-
-**In quarantena** = il sistema operativo del dispositivo non impone la conformità. (Ad esempio, i dispositivi Android non impongono la crittografia del dispositivo all'utente.) Quando il dispositivo non è compatibile, vengono eseguite le azioni seguenti:+
-
-- Il dispositivo viene bloccato se un criterio di accesso condizionale si applica all'utente.
-- Il portale aziendale segnala all'utente eventuali problemi di conformità.
-
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creare i criteri di conformità nel portale di Azure
-
-1. Dal pannello **Intune** scegliere **Imposta la conformità dei dispositivi**. In **Gestisci** scegliere **All device compliance policies** (Tutti i criteri di conformità dei dispositivi) e scegliere **Crea**.
+1. Dal pannello **Intune** scegliere **Imposta la conformità dei dispositivi**. In **Gestione** scegliere **Tutti i criteri di conformità del dispositivo** e quindi **Crea**.
 2. Digitare un nome e una descrizione, quindi scegliere la piattaforma a cui si desidera applicare questi criteri.
 3. Scegliere i **Requisiti per la conformità** per specificare le impostazioni **Sicurezza**, **Integrità del dispositivo** e **Proprietà del dispositivo**. Al termine, scegliere **OK**.
 
@@ -67,7 +46,7 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
 
-## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
+## <a name="to-assign-user-groups"></a>Per assegnare gruppi di utenti
 
 Per assegnare agli utenti i criteri di conformità, scegliere un criterio configurato. I criteri esistenti sono reperibili nel pannello **Criteri di conformità**.
 
@@ -77,6 +56,26 @@ Per assegnare agli utenti i criteri di conformità, scegliere un criterio config
 Il criterio è stato applicato agli utenti.  I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità.
 
 <!---##  Compliance policy settings--->
+
+## <a name="device-health-and-security-settings"></a>Impostazioni di integrità e sicurezza dei dispositivi
+
+- **Il dispositivo non deve essere jailbroken o rooted**: se si abilita questa impostazione, i dispositivi jailbroken verranno valutati come non conformi.
+- **Richiedi che i dispositivi impediscano l'installazione di app da origini sconosciute (Android 4.0 o versione successiva)**: per bloccare i dispositivi che hanno le opzioni **Sicurezza**>; **Origini sconosciute** abilitate sul dispositivo, abilitare questa impostazione e impostarla su **Sì**.
+
+### <a name="important"></a>Importante
+
+Le applicazioni di cui si esegue il sideload richiedono l'abilitazione dell'impostazione **Origini sconosciute**. Imporre questo criterio di conformità solo se non si esegue il sideload di app Android nei dispositivi.
+
+- **Richiedi la disabilitazione del debug USB (Android 4.2 o versione successiva)**: questa impostazione indica se è necessario rilevare o meno l'abilitazione del debug USB nel dispositivo.
+- **Richiedi l'abilitazione dell'opzione "Cerca minacce per la sicurezza nel dispositivo" nei dispositivi (Android 4.2-4.4)**: questa impostazione specifica che la funzionalità **Verifica app** è abilitata nel dispositivo.
+- **Livello minimo di patch di protezione per Android (Android 6.0 o versione successiva)**: usare questa impostazione per specificare il livello minimo di patch per Android. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere specificata nel formato: AAAA-MM-GG.
+- **Richiedi l'abilitazione della protezione dalle minacce per il dispositivo**: usare questa impostazione per considerare la valutazione del rischio della soluzione Lookout MTP come condizione di conformità. Selezionare il livello di minaccia più alto consentito tra uno dei seguenti:
+  - **Nessuno (protetto)**: questo è il livello più sicuro e indica che il dispositivo non può avere minacce. Se viene rilevata la presenza di minacce di qualsiasi livello per il dispositivo, questo sarà considerato come non conforme.
+  - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
+  - **Medio**: il dispositivo viene valutato come conforme se le minacce presenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
+  - **Alta**: questo è il livello meno sicuro. Questa impostazione abilita tutti i livelli di rischio. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
+
+Per altre informazioni dettagliate, vedere [Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="system-security-settings"></a>Impostazioni di sicurezza del sistema
 
@@ -101,30 +100,35 @@ Il criterio è stato applicato agli utenti.  I dispositivi usati dagli utenti a 
 
 - **Richiedi crittografia sul dispositivo mobile**: impostare questa opzione su **Sì** per richiedere che i dispositivi vengano crittografati per la connessione alle risorse. I dispositivi vengono crittografati se si sceglie l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**.
 
-## <a name="device-health-and-security-settings"></a>Impostazioni di integrità e sicurezza dei dispositivi
-
-- **Il dispositivo non deve essere jailbroken o rooted**: se si abilita questa impostazione, i dispositivi jailbroken verranno valutati come non conformi.
-- **Richiedi che i dispositivi impediscano l'installazione di app da origini sconosciute (Android 4.0 o versione successiva)**: per bloccare i dispositivi che hanno le opzioni **Sicurezza**>; **Origini sconosciute** abilitate sul dispositivo, abilitare questa impostazione e impostarla su **Sì**.
-
-### <a name="important"></a>Importante
-
-Le applicazioni di cui si esegue il sideload richiedono l'abilitazione dell'impostazione **Origini sconosciute**. Imporre questo criterio di conformità solo se non si esegue il sideload di app Android nei dispositivi.
-
-- **Richiedi la disabilitazione del debug USB (Android 4.2 o versione successiva)**: questa impostazione indica se è necessario rilevare o meno l'abilitazione del debug USB nel dispositivo.
-- **Richiedi l'abilitazione dell'opzione "Cerca minacce per la sicurezza nel dispositivo" nei dispositivi (Android 4.2-4.4)**: questa impostazione specifica che la funzionalità **Verifica app** è abilitata nel dispositivo.
-- **Livello minimo di patch di protezione per Android (Android 6.0 o versione successiva)**: usare questa impostazione per specificare il livello minimo di patch per Android. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere specificata nel formato: AAAA-MM-GG.
-- **Richiedi l'abilitazione della protezione dalle minacce per il dispositivo**: usare questa impostazione per considerare la valutazione del rischio della soluzione Lookout MTP come condizione di conformità. Selezionare il livello di minaccia più alto consentito tra uno dei seguenti:
-  - **Nessuno (protetto)**: questo è il livello più sicuro e indica che il dispositivo non può avere minacce. Se viene rilevata la presenza di minacce di qualsiasi livello per il dispositivo, questo sarà considerato come non conforme.
-  - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
-  - **Medio**: il dispositivo viene valutato come conforme se le minacce presenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
-  - **Alta**: questo è il livello meno sicuro. Questa impostazione abilita tutti i livelli di rischio. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
-
-Per altre informazioni dettagliate, vedere [Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
-
 ## <a name="device-property-settings"></a>Impostazioni delle proprietà dei dispositivi
 
 - **Versione minima del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo per poter accedere alle risorse aziendali.
 - **Versione massima del sistema operativo**: quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali è bloccato e l'utente deve contattare l'amministratore IT. Fino a quando la regola non viene modificata per consentire la versione del sistema operativo, non è possibile usare il dispositivo per accedere alle risorse aziendali.
+
+## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>In che modo interagiscono le impostazioni di non conformità con i criteri di accesso condizionale?
+
+La tabella seguente descrive il modo in cui vengono gestite le impostazioni di non conformità quando i criteri di conformità vengono usati insieme ai criteri di accesso condizionale.
+
+--------------------
+
+|**Impostazione di criteri**| **Android 4.0 e versioni successive, Samsung Knox Standard 4.0 e versioni successive** |
+| --- | ----|
+| **Configurazione di PIN o password** |  In quarantena |
+| **Crittografia dispositivo** | In quarantena |
+| **Dispositivo jailbroken o rooted** | In quarantena (non è un'impostazione) |
+| **Profilo di posta elettronica** | Non applicabile |
+| **Versione minima del sistema operativo** | In quarantena |
+| **Versione massima del sistema operativo** |   In quarantena |
+| **Attestazione dell'integrità di Windows** | Non applicabile |
+
+--------------------------
+
+**Con correzione** = il sistema operativo del dispositivo impone la conformità. (Ad esempio, l'utente è obbligato a impostare un PIN.)+
+
+**In quarantena** = il sistema operativo del dispositivo non impone la conformità. (Ad esempio, i dispositivi Android non impongono la crittografia del dispositivo all'utente.) Quando il dispositivo non è compatibile, vengono eseguite le azioni seguenti:+
+
+- Il dispositivo viene bloccato se un criterio di accesso condizionale si applica all'utente.
+- Il portale aziendale segnala all'utente eventuali problemi di conformità.
 
 <!--- ## Next steps
 

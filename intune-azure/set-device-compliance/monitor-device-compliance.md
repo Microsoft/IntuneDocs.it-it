@@ -1,5 +1,6 @@
 ---
-title: "Come monitorare la conformità del dispositivo | Anteprima di Intune in Azure | Documentazione Microsoft"
+title: "Come monitorare la conformità dei dispositivi"
+titleSuffix: Intune Azure preview
 description: "Anteprima di Intune in Azure: Come monitorare la conformità del dispositivo."
 keywords: 
 author: andredm7
@@ -13,13 +14,15 @@ ms.technology:
 ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 7693d49e2f0fa6e4aa40b6bb71433a7eaab8dd15
-ms.openlocfilehash: eb27002f449b3bbebb2a9b4ed780350c71eda881
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: 6932e75fd002661245baa7754824ec6cfe500a22
+ms.lasthandoff: 03/15/2017
 
 
 ---
-# <a name="how-to-monitor-compliance-in-intune-azure-preview"></a>Come monitorare la conformità in anteprima di Intune in Azure
+# <a name="how-to-monitor-device-compliance-in-intune-azure-preview"></a>Come monitorare la conformità dei dispositivi nell'anteprima di Intune in Azure
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -44,9 +47,4 @@ Il report sulla conformità delle impostazioni fornisce i dettagli per ogni impo
 - La piattaforma a cui viene applicata l'impostazione.
 
 È possibile eseguire il drill-down di ogni impostazione per visualizzare altre informazioni sui profili per cui sono state abilitate queste impostazioni ed è stato configurato il valore dell'impostazione.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -1,5 +1,6 @@
 ---
-title: Criterio di Intune per consentire o bloccare le app Samsung KNOX | Anteprima di Intune in Azure | Documentazione Microsoft
+title: Criteri di Intune per consentire o bloccare le app per Samsung KNOX
+titleSuffix: Intune Azure preview
 description: 'Anteprima di Intune in Azure: creare un profilo personalizzato per consentire e bloccare app per dispositivi Samsung KNOX Standard.'
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: f5267d2e06f1cd7ec471fd1782bfd965843d1c7e
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: a47ea4c8d3027cb34fd8ecd8324fac52c9846a77
+ms.lasthandoff: 03/17/2017
 
 
 
@@ -33,7 +35,7 @@ Queste impostazioni possono essere usate solo dai dispositivi che eseguono Samsu
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
+3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 2. Nell'elenco del pannello dei profili scegliere **Crea profilo**.
 3. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** (facoltativa) per questo profilo di dispositivo.

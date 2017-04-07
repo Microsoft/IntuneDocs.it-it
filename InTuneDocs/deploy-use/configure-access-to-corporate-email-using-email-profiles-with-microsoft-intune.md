@@ -1,11 +1,11 @@
 ---
-title: Accedere alla posta elettronica aziendale con i profili di posta elettronica | Documentazione Microsoft
+title: Accedere alla posta elettronica aziendale con i profili di posta elettronica | Microsoft Docs
 description: "È possibile usare le impostazioni del profilo di posta elettronica per configurare le impostazioni di accesso alla posta elettronica per client di posta elettronica specifici sui dispositivi mobili."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
+ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
+ms.lasthandoff: 03/23/2017
 
 
 ---
@@ -37,28 +38,22 @@ Gli amministratori IT o gli utenti possono anche scegliere di installare client 
 -    Windows Phone 8.1 e versioni successive
 -    Windows 10 (desktop), Windows 10 Mobile e versioni successive
 -    iOS 8.0 e versioni successive
--    Samsung KNOX Standard&4;.0 e versioni successive
--    Android for Work
-
->[!NOTE]
->Intune offre due profili di posta elettronica Android for Work, uno per Gmail e uno per Nine Work. Queste app sono disponibili in Google Play Store e possono connettersi a Exchange. Per abilitare la connettività della posta elettronica, distribuire una di queste app nei dispositivi dell'utente. In seguito creare e distribuire il profilo corrispondente.
+-    Samsung KNOX Standard 4.0 e versioni successive
+-    Android for Work (app di posta elettronica di terze parti, quella nativa può essere usata solo per il profilo personale)
 
 Oltre a configurare un account di posta elettronica sul dispositivo, è possibile impostare il numero di messaggi di posta elettronica da sincronizzare. A seconda del tipo di dispositivo, è possibile impostare anche i tipi di contenuto da sincronizzare.
 
->[!NOTE]
->
->Se l'utente ha installato un profilo di posta elettronica prima di configurare un profilo con Intune, il risultato della distribuzione del profilo di posta elettronica di Intune dipende dalla piattaforma del dispositivo:
+Se l'utente ha installato un profilo di posta elettronica prima di configurare un profilo con Intune, il risultato della distribuzione del profilo di posta elettronica di Intune dipende dalla piattaforma del dispositivo:
 
->**iOS**: un profilo di posta elettronica esistente duplicato viene individuato in base al nome host e all'indirizzo di posta elettronica. Il profilo di posta elettronica duplicato creato dall'utente blocca la distribuzione di un profilo creato dall'amministratore di Intune. Si tratta di un problema comune poiché gli utenti di iOS in genere creano un profilo di posta elettronica e poi eseguono la registrazione. Il portale aziendale comunica all'utente che esiste un problema di conformità perché il profilo di posta elettronica è stato configurato manualmente. All'utente viene quindi richiesto di rimuovere il profilo. L'utente deve rimuovere il proprio profilo di posta elettronica per consentire l'impostazione del profilo di Intune. Per evitare il problema, indicare agli utenti di eseguire la registrazione prima di installare un profilo di posta elettronica e di consentire a Intune di impostarlo.
+**iOS**<br>Un profilo di posta elettronica duplicato esistente viene individuato in base al nome host e all'indirizzo di posta elettronica. Il profilo di posta elettronica duplicato creato dall'utente blocca la distribuzione di un profilo creato dall'amministratore di Intune. Si tratta di un problema comune poiché gli utenti di iOS in genere creano un profilo di posta elettronica e poi eseguono la registrazione. Il portale aziendale comunica all'utente che esiste un problema di conformità perché il profilo di posta elettronica è stato configurato manualmente. All'utente viene quindi richiesto di rimuovere il profilo. L'utente deve rimuovere il proprio profilo di posta elettronica per consentire l'impostazione del profilo di Intune. Per evitare il problema, indicare agli utenti di eseguire la registrazione prima di installare un profilo di posta elettronica e di consentire a Intune di impostarlo.
 
->**Windows**: un profilo di posta elettronica esistente duplicato viene individuato in base al nome host e all'indirizzo di posta elettronica. Intune sovrascrive il profilo di posta elettronica esistente creato dall'utente.
+**Windows**<br>Un profilo di posta elettronica duplicato esistente viene individuato in base al nome host e all'indirizzo di posta elettronica. Intune sovrascrive il profilo di posta elettronica esistente creato dall'utente.
 
->**Samsung KNOX**: un profilo di posta elettronica esistente duplicato viene individuato sulla base dell'indirizzo di posta elettronica e viene sovrascritto con il profilo di Intune. Se l'utente imposta tale account, questo verrà sovrascritto nuovamente dal profilo di Intune. Questo comportamento può confondere l'utente.
+**Samsung KNOX**<br>Un profilo di posta elettronica duplicato esistente viene individuato in base all'indirizzo di posta elettronica e viene sovrascritto con il profilo di Intune. Se l'utente imposta tale account, questo verrà sovrascritto nuovamente dal profilo di Intune. Questo comportamento può confondere l'utente.
 
->Poiché Samsung KNOX non usa il nome host per identificare il profilo, si consiglia di non creare diversi profili di posta elettronica da usare con lo stesso indirizzo di posta elettronica su host diversi perché tali profili si sovrascrivono a vicenda.
+Poiché Samsung KNOX non usa il nome host per identificare il profilo, si consiglia di non creare diversi profili di posta elettronica da usare con lo stesso indirizzo di posta elettronica su host diversi perché tali profili si sovrascrivono a vicenda.
 
->**Android for Work**: il profilo di Intune è applicabile solo ad app di posta elettronica specifiche nel profilo di lavoro del dispositivo. Non ha effetti sulla configurazione della posta elettronica nel profilo utente del dispositivo.
-
+**Android for Work**<br>Intune offre due profili di posta elettronica Android for Work, uno per Gmail e uno per Nine Work. Queste app sono disponibili in Google Play Store, vengono installate nel profilo di lavoro del dispositivo e possono connettersi a Exchange. Per abilitare la connettività della posta elettronica, distribuire una di queste app nei dispositivi dell'utente. In seguito creare e distribuire il profilo corrispondente. Le app di posta elettronica, ad esempio Nine Work, potrebbero non essere gratuite. Rivedere i dettagli relativi alla licenza dell'app o contattare l'azienda produttrice per richiedere informazioni.
 
 ## <a name="secure-email-profiles"></a>Proteggere i profili di posta elettronica
 È possibile proteggere i profili di posta elettronica mediante un certificato o una password.
@@ -105,7 +100,7 @@ Poiché la password non è contenuta nel profilo di posta elettronica, l'utente 
     |**Indirizzo di posta elettronica**|Modalità di generazione dell'indirizzo di posta elettronica per l'utente in ogni dispositivo. Selezionare **Indirizzo SMTP primario** per accedere a Exchange con l'indirizzo SMTP primario o **Nome entità utente** per usare il nome completo dell'entità come indirizzo di posta elettronica.|
     |**Metodo di autenticazione** (Android for Work, Samsung KNOX e iOS)|Selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione usato dal profilo di posta elettronica.|
     |**Selezionare un certificato client per l'autenticazione client (certificato di identità)** (Android for Work, Samsung KNOX e iOS)|Selezionare il certificato SCEP client creato in precedenza che verrà usato per autenticare la connessione di Exchange. Per altre informazioni su come usare i profili di certificato in Intune, vedere [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteggere l'accesso alle risorse con profili certificato). Questa opzione viene visualizzata solo quando il metodo di autenticazione è **Certificati**.|
-    |**Usa S/MIME** (Samsung KNOX e iOS)|Consente di usare la crittografia S/MIME per inviare posta elettronica in uscita.|
+    |**Usa S/MIME** (Samsung KNOX e iOS)|Inviare la posta elettronica in uscita usando la firma S/MIME.|
     |**Certificato di firma** (Samsung KNOX e iOS)|Selezionare il certificato di firma che verrà usato per firmare il messaggio di posta elettronica in uscita. Questa opzione viene visualizzata solo quando si seleziona **Usa S/MIME**.|
     |**Numero di giorni di messaggi di posta elettronica da sincronizzare**|Il numero di giorni di posta elettronica che si vogliono sincronizzare. In alternativa, selezionare **Illimitata** per sincronizzare tutta la posta elettronica disponibile.|
     |**Pianificazione sincronizzazione** (Android for Work, Samsung KNOX, Windows Phone 8 e versioni successive, Windows 10)|Selezionare la pianificazione in base a cui i dispositivi sincronizzeranno i dati dal server Exchange. È anche possibile selezionare **Quando arrivano i messaggi**, per sincronizzare i dati non appena arrivano, oppure **Manuale**, per consentire all'utente del dispositivo di avviare la sincronizzazione.|
@@ -136,9 +131,4 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 > [!NOTE]
 > - Per Android for Work, assicurarsi di distribuire anche le app di Gmail o Nine Work, oltre al profilo di posta elettronica appropriato.
 > - Per rimuovere un profilo di posta elettronica da un dispositivo, modificare la distribuzione e rimuovere tutti i gruppi di cui il dispositivo è membro. Si noti che non è possibile rimuovere un profilo di posta elettronica in questo modo se questo è l'unico profilo presente su un dispositivo.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

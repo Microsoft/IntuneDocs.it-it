@@ -3,8 +3,8 @@ title: Impostare restrizioni di registrazione in Intune
 titleSuffix: Intune Azure preview
 description: 'Anteprima di Intune in Azure: limitare la registrazione dalla piattaforma e impostare un limite di registrazione dei dispositivi in Intune. '
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

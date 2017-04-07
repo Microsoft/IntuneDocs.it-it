@@ -2,8 +2,8 @@
 title: Gestire i PC con il software client | Documentazione Microsoft
 description: Gestire i PC Windows installando il software client di Intune.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

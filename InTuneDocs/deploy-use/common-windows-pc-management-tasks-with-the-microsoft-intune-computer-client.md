@@ -2,8 +2,8 @@
 title: "Attività comuni di gestione di PC Windows | Documentazione Microsoft"
 description: Informazioni sulla gestione dei PC Windows che eseguono il client software di Intune.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -35,10 +36,5 @@ Questo argomento elenca le attività che è possibile eseguire per gestire i des
 
 - [Request and provide remote assistance for Windows PCs](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) (Richiedere e fornire assistenza remota per i PC Windows): descrive in che modo gli utenti di PC Intune ottengono assistenza remota, indica i prerequisiti e descrive l'installazione di TeamViewer.
 
-
-
-
-
-<!--HONumber=Dec16_HO3-->
 
 

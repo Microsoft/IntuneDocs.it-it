@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -77,7 +78,7 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
 
   ![Schermata della pagina dei criteri di accesso condizionale per Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  Scegliere il criterio **Abilita criteri di accesso condizionale **.
+2.  Scegliere il criterio **Abilita criteri di accesso condizionale**.
 3.  In **Accesso all'applicazione** è possibile scegliere di applicare i criteri di accesso condizionale a:
   * **iOS**
   * **Android**
@@ -102,9 +103,4 @@ Scegliere un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Disp
 * [Proteggere l'accesso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 * [Proteggere l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
