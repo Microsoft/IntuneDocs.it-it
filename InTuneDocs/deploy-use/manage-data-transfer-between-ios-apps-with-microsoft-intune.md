@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
-ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -33,7 +33,7 @@ La protezione dei dati aziendali prevede anche che ci si assicuri che i trasferi
 
 -   È anche possibile distribuire e gestire le app tramite il **canale MDM**.  Ciò richiede che i dispositivi vengono registrati nella soluzione MDM. Possono essere app **gestite da criteri** o altre app gestite.
 
-La funzionalità di **gestione Open In** per i dispositivi iOS consente i trasferimenti di file solo tra le app distribuite tramite il **canale MDM**. Le restrizioni della gestione Open In sono definite nelle impostazioni di configurazione e distribuite tramite la soluzione MDM.  Quando l'utente installa l'app distribuita, vengono applicate le restrizioni impostate.
+La funzionalità di **gestione Open-In** per i dispositivi iOS consente i trasferimenti di file solo tra le app distribuite tramite il **canale MDM**. Le restrizioni della gestione Open-In sono definite nelle impostazioni di configurazione e distribuite tramite la soluzione MDM.  Quando l'utente installa l'app distribuita, vengono applicate le restrizioni impostate.
 
 ##  <a name="manage-data-transfer-between-ios-apps"></a>Gestire il trasferimento di dati tra app iOS
 I criteri di protezione delle app possono essere usati con la funzionalità di **gestione Apri in** di iOS per proteggere i dati aziendali nei modi seguenti:
@@ -54,13 +54,13 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
 
 1.  Nel portale di Azure [configurare un criterio di protezione delle app](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) per la piattaforma iOS. Configurare le impostazioni dei criteri secondo i requisiti aziendali e selezionare le app che devono rispettare questi criteri.
 
-2.  Distribuire le app e il profilo di posta elettronica che si vuole gestire **tramite la soluzione MDM di terze parti** usando la procedura generalizzata descritta di seguito. Questa esperienza è anche illustrata dall'esempio 1.
+2.  Distribuire le app e il profilo di posta elettronica che si vuole gestire **tramite la soluzione MDM di terze parti** usando la procedura generalizzata descritta di seguito. Questa esperienza è illustrata anche dall'esempio 1.
 
   1.  Distribuire l'app con le impostazioni di configurazione seguenti:
 
-      **key** = IntuneMAMUPN,  **value** = <username@company.com>
+      **key** = IntuneMAMUPN, **value** = <username@company.com>
 
-      Esempio: ['IntuneMAMUPN',‘jondoe@microsoft.com’]
+      Esempio: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
   2.  Distribuire i criteri di gestione Apri in con il provider MDM di terze parti in uso nei dispositivi registrati.
 
@@ -71,15 +71,15 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
 
 2. Immettere l'impostazione seguente nella sezione Configurazione dell'applicazione:
 
-  **key** = IntuneMAMUPN,  **value** = <username@company.com>
+  **key** = IntuneMAMUPN, **value** = <username@company.com>
 
-  La sintassi esatta della coppia chiave/valore può variare in base al provider MDM di terze parti. La tabella seguente mostra alcuni esempi di provider MDM di terze parti e i valori esatti che devono essere immessi per la coppia chiave/valore.
+  La sintassi esatta della coppia chiave/valore può variare a seconda del provider MDM di terze parti. La tabella seguente visualizza alcuni esempi di provider MDM di terze parti e i valori esatti che devono essere immessi per la coppia chiave/valore.
 
 |Provider MDM di terze parti| Chiave Configuration | Tipo valore | Valore di configurazione|
 | ------- | ---- | ---- | ---- |
-|VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | String | ${userUPN} **o** ${userEmailAddress} |
-
+| VMware AirWatch | IntuneMAMUPN | String | {UserPrincipalName}|
+| MobileIron Core | IntuneMAMUPN | String | $EMAIL$ **o** $USER_UPN$ |
+| MobileIron Cloud | IntuneMAMUPN | String | ${userUPN} **o** ${userEmailAddress} |
 
 ### <a name="example-2-end-user-experience"></a>Esempio 2: Esperienza dell'utente finale
 
@@ -96,13 +96,13 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
 
 5.  Se l'accesso riesce, le impostazioni dei criteri di protezione delle app vengono applicate all'app Word.
 
-6.  A questo punto il trasferimento dei dati avrà esito positivo e il documento viene contrassegnato come identità aziendale nell'app. I dati, poi, vengono trattati in un contesto aziendale e le impostazioni dei criteri vengono applicate di conseguenza.
+6.  A questo punto il trasferimento del file è stato completato e il documento viene contrassegnato come identità aziendale nell'app. Il file viene inoltre gestito in un contesto aziendale e le impostazioni dei criteri vengono applicate di conseguenza.
 
 ### <a name="validate-user-upn-setting-for-third-party-emm"></a>Convalidare l'impostazione UPN dell'utente per soluzioni EMM di terze parti
 
 Dopo aver configurato l'impostazione UPN dell'utente, è necessario verificare se l'app iOS può ricevere i criteri di protezione delle app di Intune e conformarsi a tali criteri.
 
-Ad esempio, è facile verificare visivamente l'impostazione dei criteri **Require app PIN** (Richiedi PIN app) in un dispositivo. Se il criterio viene impostato su **Sì**, all'utente finale deve essere visualizzato un prompt per impostare o immettere un PIN quando tenta di accedere ai dati aziendali.
+Ad esempio, è facile verificare visivamente l'impostazione del criterio **Richiedi PIN semplice per l'accesso** in un dispositivo. Se il criterio viene impostato su **Sì**, all'utente finale deve essere visualizzato un prompt per impostare o immettere un PIN quando tenta di accedere ai dati aziendali.
 
 Prima di tutto, [creare e distribuire i criteri di protezione delle app](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)  nell'app iOS. Per altre informazioni su come testare i criteri di protezione delle app, vedere [Convalidare i criteri di protezione delle app](validate-mobile-application-management.md).
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 10ba007095182c9cb07710656ba5f275e254d92e
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
 # <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Gestire i PC Windows con il software client per PC di Intune
-La [registrazione dei PC Windows come dispositivi mobili](set-up-windows-device-management-with-microsoft-intune.md) è il metodo preferito di registrazione dei PC Windows in Intune; in alternativa è possibile scegliere di registrare e gestire i PC Windows installando il software client di Intune, come descritto in questo argomento.
+La [registrazione dei PC Windows come dispositivi mobili](set-up-windows-device-management-with-microsoft-intune.md) è il metodo preferito di registrazione dei PC Windows in Intune, ma un amministratore IT può scegliere in alternativa di registrare e gestire i PC Windows installando il software client di Intune, come descritto in questo argomento. Il client software di Intune non è supportato con la registrazione come dispositivo mobile.
 
 Intune gestisce i PC Windows tramite criteri con modalità analoghe a quelle degli oggetti Criteri di gruppo di Servizi di dominio Active Directory di Windows Server. Se si gestiscono computer appartenenti a un dominio di Active Directory con Intune, [assicurarsi che i criteri di Intune non siano in conflitto con oggetti Criteri di gruppo](resolve-gpo-and-microsoft-intune-policy-conflicts.md) attivati per l'organizzazione. Per altre informazioni, vedere [Oggetti Criteri di gruppo](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Criteri e distribuzione di app per il software client Intune
 
-Il client software di Intune supporta [funzionalità di gestione per la protezione dei PC](policies-to-protect-windows-pcs-in-microsoft-intune.md) mediante la gestione degli aggiornamenti software, Windows Firewall ed Endpoint Protection. Tuttavia ai PC gestiti con il client software di Intune non possono essere assegnati altri criteri di Intune, incluse le impostazioni dei criteri di **Windows** specifiche per la gestione dei dispositivi mobili. 
+Il client software di Intune supporta [funzionalità di gestione per la protezione dei PC](policies-to-protect-windows-pcs-in-microsoft-intune.md) mediante la gestione degli aggiornamenti software, Windows Firewall ed Endpoint Protection. Tuttavia ai PC gestiti con il client software di Intune non possono essere assegnati altri criteri di Intune, incluse le impostazioni dei criteri di **Windows** specifiche per la gestione dei dispositivi mobili.
 
 Quando si usa il software client di Intune per gestire i PC Windows, è possibile usare solo i criteri visualizzati nella sezione **Gestione computer**.
 
@@ -70,7 +70,7 @@ Quando si distribuiscono le app è possibile anche usare il programma di install
 
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Funzionalità di gestione dei computer con il software client di Intune
 
-Dopo aver installato il software client di Intune, le funzionalità di gestione includono: 
+Dopo aver installato il software client di Intune, le funzionalità di gestione includono:
 
 - [Gestione delle applicazioni](deploy-apps-in-microsoft-intune.md)
 

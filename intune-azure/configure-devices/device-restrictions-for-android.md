@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: fafc2b14d3060f79b92bb9d18aabda6b08737881
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -28,32 +28,43 @@ ms.lasthandoff: 02/18/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## <a name="general"></a>Generale
--     **Fotocamera** - Consente l'uso della fotocamera del dispositivo.
--     **Copia e incolla** - Consente le funzioni Copia e Incolla nel dispositivo.
--     **Condivisione degli Appunti tra app** - Consente l'uso degli Appunti per copiare e incollare tra app (solo Samsung KNOX Standard).
--     **Invio dati di diagnostica** - Impedisce all'utente di inviare dati di diagnostica dal dispositivo.    
--     **Ripristino impostazioni predefinite** - Consente all'utente di eseguire il ripristino delle impostazioni di fabbrica del dispositivo.
--     **Georilevazione** - Consente al dispositivo di usare le informazioni sul percorso (solo Samsung KNOX Standard).
--     **Spegnimento** - Consente all'utente di spegnere il dispositivo.<br>Se questa impostazione è disabilitata, l'impostazione **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** per i dispositivi Samsung KNOX Standard non funziona.
--     **Acquisizione schermo** - Consente all'utente di acquisire il contenuto della schermata come immagine.
--     **Assistente vocale** - Consente di usare software di assistenza vocale sul dispositivo (solo Samsung KNOX Standard).
--     **YouTube** - Consente l'uso dell'app YouTube nel dispositivo (solo Samsung KNOX Standard).
+
+|||||
+|-|-|-|-|
+|Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
+|**Fotocamera**|Consente l'uso della fotocamera del dispositivo.|Sì|sì|
+|**Copia e Incolla**|Consente le funzioni Copia e Incolla nel dispositivo.|No|sì|
+|**Condivisione degli Appunti tra app**|Consente l'uso degli Appunti per copiare e incollare dati tra app.|No|sì|
+|**Invio dati diagnostici**|Impedisce all'utente di inviare dati di diagnostica dal dispositivo.|No|sì|
+|**Ripristino impostazioni predefinite**|Consente all'utente di eseguire il ripristino delle impostazioni di fabbrica del dispositivo.|No|sì|
+|**Georilevazione**|Consente al dispositivo di usare le informazioni sulla posizione (solo Samsung KNOX Standard).|No|sì|
+|**Spegnimento**|Consente all'utente di spegnere il dispositivo.<br>Se questa impostazione è disabilitata, l'impostazione **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** per i dispositivi Samsung KNOX Standard non funziona.|No|sì|
+|**Acquisizione schermo**|Consente all'utente di acquisire il contenuto della schermata come immagine.|No|sì|
+|**Assistente vocale**|Consente di usare il software di Assistente vocale sul dispositivo.|No|sì|
+|**YouTube**|Consente l'uso dell'app YouTube nel dispositivo.|No|sì|
 
 ## <a name="password"></a>Password
--     **Password necessaria** - Richiede all'utente finale di immettere una password per accedere al dispositivo.
--     **Lunghezza minima password** - Immettere la lunghezza minima della password che l'utente deve configurare, da 4 a 16 caratteri.
--     **Numero massimo di minuti di inattività fino al blocco dello schermo** - Specifica il numero di minuti di inattività prima dello spegnimento dello schermo del dispositivo.
--     **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** - Specifica il numero di errori di accesso consentiti prima della cancellazione del dispositivo.
--     **Scadenza password (giorni)** - Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.
--     **Tipo di password richiesto** - Specifica il livello richiesto di complessità delle password e indica se è possibile usare dispositivi biometrici.
--     **Impedisci riutilizzo delle password precedenti** - Impedisce all'utente finale di creare una password che è già stata usata in precedenza.
--     **Impronta digitale sbloccata** - Consente di usare un'impronta digitale per sbloccare i dispositivi supportati.
--     **Smart Lock e altri agenti di attendibilità** - Consente di controllare la funzionalità Smart Lock su dispositivi Android compatibili (Samsung KNOX Standard 5.0 e versioni successive). Questa funzionalità del telefono, talvolta nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se quest'ultimo si trova in una posizione attendibile, ad esempio quando è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. È possibile usare questa impostazione per impedire agli utenti di configurare Smart Lock.
--     **Crittografia** - Richiede la crittografia dei file nel dispositivo.
+
+|||||
+|-|-|-|-|
+|Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
+|**Password**|Richiede all'utente finale di immettere una password per accedere al dispositivo.|sì|sì|
+|**Lunghezza minima password**|Immettere la lunghezza minima della password che l'utente deve configurare, da 4 a 16 caratteri.|sì|sì|
+|**Numero massimo di minuti di inattività fino al blocco dello schermo**|Specifica il numero di minuti di inattività prima dello spegnimento dello schermo del dispositivo.|sì|sì|
+|**Numero di errori di accesso prima della cancellazione dei dati del dispositivo**|Specifica il numero di errori di accesso consentiti prima della cancellazione del dispositivo.|sì|sì|
+|**Scadenza password (giorni)**|Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.|Sì|sì|
+|**Tipo di password richiesto**|Specifica il livello richiesto di complessità delle password e indica se è possibile usare dispositivi biometrici.|sì|sì|
+|**Impedisci riutilizzo delle password precedenti**|Impedisce all'utente finale di creare una password che è già stata usata in precedenza.|sì|sì|
+|**Sblocco con impronta digitale**|Consente di usare un'impronta digitale per sbloccare i dispositivi supportati.|No|sì|
+|**Smart Lock e altri agenti di attendibilità**|Consente di controllare la funzionalità Smart Lock su dispositivi Android compatibili (Samsung KNOX Standard 5.0 e versioni successive). Questa funzionalità del telefono, talvolta nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se quest'ultimo si trova in una posizione attendibile, ad esempio quando è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. È possibile usare questa impostazione per impedire agli utenti di configurare Smart Lock.|Sì (5.0 e versioni successive)|No|
+|**Crittografia**|Richiede la crittografia dei file nel dispositivo.|sì|sì|
 
 ## <a name="google-play-store"></a>Google Play Store
 
--     **Google Play Store** - Consente all'utente di accedere a Google Play Store sul dispositivo (solo Samsung KNOX Standard).
+|||||
+|-|-|-|-|
+|Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
+|**Google Play Store**|Consente all'utente di accedere a Google Play Store sul dispositivo|No|sì|
 
 ## <a name="restricted-apps"></a>App con restrizioni
 
@@ -80,30 +91,42 @@ Esempio: Cercare Microsoft Office Mobile in Google Play. L'URL usato sarà **htt
 È possibile anche fare clic su **Importa** per popolare l'elenco da un file CSV nel formato <*url app*>, <*nome app*>, <*autore app*> o fare clic su **Esporta** per creare un file CSV che abbia come contenuto l'elenco delle app con restrizioni nello stesso formato.        
 
 ## <a name="browser"></a>Browser
--     **Browser Web** - Specifica se è consentito l'uso del browser Web predefinito nel dispositivo.
--     **Riempimento automatico** - Consente di usare la funzione di riempimento automatico del browser Web.
--     **Cookie** - Consente l'uso dei cookie nel browser Web del dispositivo.
--     **JavaScript** - Consente al browser Web del dispositivo di eseguire gli script JavaScript.
--     **Popup** - Consente di usare un blocco popup nel Web browser.
+|||||
+|-|-|-|-|
+|Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
+|**Web browser**|Specifica se è consentito l'uso del Web browser predefinito nel dispositivo.|No|sì|
+|**Riempimento automatico**|Consente di usare la funzione di riempimento automatico del Web browser.|No|sì|
+|**Cookie**|Consente l'uso dei cookie nel Web browser del dispositivo.|No|sì|
+|**JavaScript**|Consente al Web browser del dispositivo di eseguire gli script JavaScript.|No|sì|
+|**Popup**|Consente di usare un blocco popup nel Web browser.|No|sì|
 
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
--     **Backup di Google** - Consente l'uso del backup di Google.
--     **Sincronizzazione automatica dell'account Google** - Consente la sincronizzazione automatica delle impostazioni dell'account Google.
--     **Archivi rimovibili** - Consente al dispositivo di usare archivi rimovibili, ad esempio una scheda SD (solo Samsung KNOX Standard).
--     **Crittografia sulle schede di memoria** - Specifica se la scheda di memoria del dispositivo deve essere crittografata.
+|||||
+|-|-|-|-|
+|Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
+|**Backup di Google**|Consente l'uso del backup di Google.|No|sì|
+|**Sincronizzazione automatica dell'account Google**|Consente la sincronizzazione automatica delle impostazioni dell'account Google.|No|sì|
+|**Archivi rimovibili**|Consente al dispositivo di usare archivi rimovibili, ad esempio una scheda SD.|No|sì|
+|**Crittografia sulle schede di memoria**|Specifica se la scheda di memoria del dispositivo deve essere crittografata.|No|sì|
 
 ## <a name="cellular-and-connectivity"></a>Rete cellulare e connettività
--     **Roaming dati** - Consente il roaming dati quando il dispositivo si trova in una rete cellulare (solo Samsung KNOX Standard).
--     **Messaggi SMS/MMS** - Consente l'uso dei messaggi SMS e MMS sul dispositivo (solo Samsung KNOX Standard).
--     **Chiamata vocale** - Abilita o disabilita la funzionalità di composizione vocale sul dispositivo (solo Samsung KNOX Standard).
--     **Roaming vocale** - Consente il roaming vocale quando il dispositivo si trova in una rete cellulare (solo Samsung KNOX Standard).
--     **Bluetooth** - Consente l'uso di Bluetooth nel dispositivo (solo Samsung KNOX Standard).
--     **NFC** - Consente l'uso della tecnologia NFC (Near Field Communication) se il dispositivo la supporta (solo Samsung KNOX Standard).
--     **Wi-Fi** - Consente l'uso delle funzionalità Wi-Fi nel dispositivo (solo Samsung KNOX Standard).
--     **Tethering Wi-Fi** - Consente di usare il tethering Wi-Fi nel dispositivo (solo Samsung KNOX Standard).
+|||||
+|-|-|-|-|
+|Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
+|**Roaming dati**|Consente dati in roaming quando il dispositivo si trova in una rete cellulare.|No|sì|
+|**Messaggi SMS/MMS**|Consente l'uso di messaggi SMS e MMS sul dispositivo.|No|sì|
+|**Chiamata vocale**|Attiva o disattiva la funzionalità di composizione vocale sul dispositivo.|No|sì|
+|**Roaming vocale**|Consente il roaming vocale quando il dispositivo si trova in una rete cellulare.|No|sì|
+|**Bluetooth**|Consente di usare il Bluetooth nel dispositivo.|No|sì|
+|**NFC**|Consente l'uso della tecnologia NFC (Near Field Communication) se il dispositivo la supporta.|No|sì|
+|**Wi-Fi**|Consente di usare le funzionalità Wi-Fi del dispositivo.|No|sì|
+|**Tethering Wi-Fi**|Consente di usare il tethering Wi-Fi nel dispositivo.|No|sì|
 
 ## <a name="kiosk"></a>Modalità tutto schermo
--     **Selezionare un'app gestita** - Individuare e selezionare l'app gestita che può essere eseguita quando il dispositivo è in modalità tutto schermo. Le app specificate come collegamento allo store non sono attualmente supportate. Non sarà possibile eseguire altre applicazioni nel dispositivo.
--     **Pulsante Sospensione schermo** - Abilita o disabilita il pulsante di sospensione dello schermo del dispositivo.
--     **Pulsanti volume**: abilita o disabilita l'uso dei pulsanti del volume del dispositivo.
+|||||
+|-|-|-|-|
+|Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
+|**Selezionare un'app gestita**|Individuare e selezionare l'app gestita che può essere eseguita quando il dispositivo è in modalità tutto schermo. Le app specificate come collegamento allo store non sono attualmente supportate. Non sarà possibile eseguire altre applicazioni nel dispositivo.|No|sì|
+|**Pulsante Sospensione schermo**|Abilita o disabilita il pulsante di riattivazione sospensione dello schermo del dispositivo.|No|sì|
+|**Pulsanti volume**|Abilita o disabilita l'uso dei pulsanti del volume nel dispositivo.|No|Sì|
 

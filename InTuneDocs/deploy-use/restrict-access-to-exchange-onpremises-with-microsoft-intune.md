@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -80,11 +81,12 @@ Sono supportati:
 -   App di posta elettronica nativa in iOS.
 
 -   Client di posta Exchange ActiveSync, ad esempio Gmail in Android 4 o versione successiva.
-- Client di posta Exchange ActiveSync in **dispositivi Android for Work**: nei dispositivi Android for Work sono supportate solo le app **Gmail** e **Nine Work** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni in Android for Work, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work. È anche necessario distribuire tali app come installazioni obbligatorie. 
+-   Client di posta Exchange ActiveSync in **dispositivi Android for Work**: nei dispositivi Android for Work sono supportate solo le app **Gmail** e **Nine Work** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni in Android for Work, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work. È anche necessario distribuire tali app come installazioni obbligatorie. 
 
+<!---
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-> [!NOTE]
+--->
+> [!NOTE] 
 > L'app Microsoft Outlook per Android e iOS non è supportata.
 
 ## <a name="support-for-pcs"></a>Supporto per PC
@@ -110,14 +112,12 @@ Sono supportati:
   - **Eccezioni della piattaforma**: scegliere **Aggiungi regola** per configurare una regola che definisce i livelli di accesso per gruppi e modelli specificati di dispositivi mobili. Poiché questi dispositivi possono essere di qualsiasi tipo, possono essere configurati anche i tipi di dispositivo non supportati da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
   - **Regola predefinita**: per un dispositivo non soggetto a nessun'altra regola, è possibile scegliere di consentire l'accesso a Exchange, bloccarlo o metterlo in quarantena. Quando si imposta la regola per consentire l'accesso, per i dispositivi registrati e conformi, l'accesso alla posta elettronica viene concesso automaticamente per i dispositivi iOS, Windows e Samsung KNOX. L'utente non deve eseguire alcuna procedura per ottenere l'accesso alla posta elettronica.
-
-        Nei dispositivi Android che non eseguono Samsung KNOX, gli utenti visualizzano un messaggio di posta elettronica di quarantena che include una procedura guidata per verificare la conformità e la registrazione prima di poter accedere alla posta elettronica. Se si imposta la regola per bloccare l'accesso o mettere in quarantena i dispositivi, viene bloccato l'accesso a Exchange per tutti i dispositivi, indipendentemente dalla registrazione in Intune. Per impedire che i dispositivi registrati e conformi siano interessati da questa regola, selezionare **Override regola predefinita**.
+      - Nei dispositivi Android che non eseguono Samsung KNOX, gli utenti visualizzano un messaggio di posta elettronica di quarantena che include una procedura guidata per verificare la conformità e la registrazione prima di poter accedere alla posta elettronica. Se si imposta la regola per bloccare l'accesso o mettere in quarantena i dispositivi, viene bloccato l'accesso a Exchange per tutti i dispositivi, indipendentemente dalla registrazione in Intune. Per impedire che i dispositivi registrati e conformi siano interessati da questa regola, selezionare **Override regola predefinita**.
 >[!TIP]
 >Se si intende bloccare tutti i dispositivi prima di concedere l'accesso alla posta elettronica, scegliere la regola per il blocco dell'accesso o la quarantena. La regola predefinita viene applicata a tutti i tipi di dispositivo, quindi ha effetto anche sui tipi configurati come eccezioni di piattaforma e che non sono supportati da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
   - **Notifica utente**: oltre al messaggio di posta elettronica di notifica inviato da Exchange, Intune invia un messaggio di posta elettronica che contiene le istruzioni per sbloccare il dispositivo. È possibile modificare il messaggio predefinito per personalizzarlo in base alle proprie esigenze. Nel caso in cui il dispositivo dell'utente venga bloccato prima della ricezione del messaggio di posta elettronica di notifica di Intune contenente le istruzioni per la correzione (questo messaggio viene recapitato alla cassetta postale di Exchange dell'utente), è possibile usare un dispositivo non bloccato o un altro metodo per accedere a Exchange e visualizzare il messaggio.
-
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+      - Questa opzione è utile soprattutto quando la **regola predefinita** è impostata per il blocco o la quarantena. In questo caso, l'utente deve passare allo store delle app per la piattaforma del dispositivo in uso, scaricare l'app Portale aziendale Microsoft e registrare il dispositivo. Questa opzione è disponibile per i dispositivi iOS, Windows e Samsung KNOX. Per i dispositivi che non eseguono Samsung KNOX, è necessario inviare il messaggio di posta elettronica di quarantena a un account di posta elettronica alternativo. L'utente deve copiare il messaggio di posta elettronica nel dispositivo bloccato per completare il processo di registrazione e conformità.
   > [!NOTE]
   > Affinché Exchange sia in grado di inviare il messaggio di posta elettronica di notifica, è necessario specificare l'account usato per inviare tale messaggio.
   >
@@ -127,11 +127,11 @@ Sono supportati:
 
 -   Non è necessario distribuire i criteri di accesso condizionale perché diventano immediatamente effettivi.
 
--   Dopo la configurazione di un profilo di Exchange ActiveSync, il blocco del dispositivo potrebbe richiedere da&1; a&3; ore, a meno che non sia gestito da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Dopo la configurazione di un profilo di Exchange ActiveSync, il blocco del dispositivo potrebbe richiedere da 1 a 3 ore, a meno che non sia gestito da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
--   Se un utente bloccato registra il dispositivo in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e risolve il problema di conformità, l'accesso alla posta elettronica verrà sbloccato entro&2; minuti.
+-   Se un utente bloccato registra il dispositivo in [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] e risolve il problema di conformità, l'accesso alla posta elettronica verrà sbloccato entro 2 minuti.
 
--   Se l'utente annulla la registrazione da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], il blocco del dispositivo potrebbe richiedere da&1; a&3; ore.
+-   Se l'utente annulla la registrazione da [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], il blocco del dispositivo potrebbe richiedere da 1 a 3 ore.
 
 **Per vedere alcuni scenari di esempio sulla configurazione dei criteri di accesso condizionale per proteggere l'accesso dei dispositivi, vedere [Proteggere l'accesso alla posta elettronica: scenari di esempio](restrict-email-access-example-scenarios.md).**
 
@@ -139,9 +139,4 @@ Sono supportati:
 -   [Proteggere l'accesso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [Proteggere l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
