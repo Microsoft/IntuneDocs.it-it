@@ -1,6 +1,6 @@
 ---
-title: Aggiungere app Skycure, l&quot;app Microsoft Authenticator e i criteri di configurazione iOS | Microsoft Docs
-description: Aggiungere app Skycure, l&quot;app Microsoft Authenticator e i criteri di configurazione iOS nella console classica di Intune.
+title: Aggiungere app Skycure, Microsoft Authenticator e i criteri di configurazione delle app iOS | Microsoft Docs
+description: Aggiungere app Skycure, Microsoft Authenticator e i criteri di configurazione delle app iOS nella console classica di Intune.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -22,7 +22,7 @@ ms.lasthandoff: 03/21/2017
 
 ---
 
-# <a name="add-skycure-apps-microsoft-authenticator-app-and-ios-configuration-policy"></a>Aggiungere app Skycure, l'app Microsoft Authenticator e i criteri di configurazione iOS
+# <a name="add-skycure-apps-microsoft-authenticator-app-and-ios-configuration-policy"></a>Aggiungere app Skycure, Microsoft Authenticator e i criteri di configurazione delle app iOS
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 03/21/2017
 
 -   Usare lo stesso account di Azure AD configurato in precedenza nella console di gestione di Skycure, che dovrebbe corrispondere all'account usato per accedere alla console classica di Intune.
 
--   È necessario avere pronto il file di integrazione di Skycure, ossia il file con estensione zip scaricato in precedenza dalla console di gestione di Skycure, che contiene il file **skycure\_configuration.plist** con i parametri dei criteri di configurazione delle app iOS.
+-   È necessario avere pronto il file di integrazione di Skycure, ovvero il file con estensione zip scaricato in precedenza dalla console di gestione di Skycure, che contiene il file **skycure\_configuration.plist** con i parametri dei criteri di configurazione delle app iOS.
 
 -   Assicurarsi di avere familiarità con le procedure seguenti:
 
