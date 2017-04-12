@@ -122,7 +122,7 @@ Questi sono i passaggi da completare per integrare Intune con Skycure:
 
 2.  [Scaricare i criteri di configurazione delle app iOS Skycure](https://docs.microsoft.com/intune/deploy-use/download-skycure-ios-app-configuration-policy)
 
-3.  [Aggiungere app Skycure, l'app Microsoft Authenticator e i criteri di configurazione iOS](https://docs.microsoft.com/intune/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
+3.  [Aggiungere app Skycure, Microsoft Authenticator e i criteri di configurazione delle app iOS](https://docs.microsoft.com/intune/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
 
 4.  [Distribuire app Skycure, l'app Microsoft Authenticator e i criteri di configurazione delle app iOS](https://docs.microsoft.com/intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
 
