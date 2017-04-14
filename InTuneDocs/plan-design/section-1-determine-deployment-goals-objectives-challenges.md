@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
+ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -91,12 +92,7 @@ Le sfide della distribuzione sono i problemi più importanti per un'organizzazio
 <br>
     -   **Strategia di riduzione del rischio:** prima di passare all'implementazione del progetto, assicurarsi di aver chiaramente definito gli scopi e gli obiettivi. Includere questi scopi e obiettivi in tutte le attività di formazione e sensibilizzazione per garantire agli utenti un'adeguata comprensione del motivo per cui l'organizzazione ha adottato Intune.
 
-## <a name="next-section"></a>Sezione successiva
+## <a name="next-steps"></a>Passaggi successivi
 
 Dopo avere identificato gli scopi, gli obiettivi e le potenziali sfide della distribuzione, possiamo passare alla sezione successiva: [Identificare gli scenari per i casi d'uso](section-2-identify-use-case-scenarios.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
