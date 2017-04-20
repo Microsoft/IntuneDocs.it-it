@@ -31,17 +31,16 @@
 ### [Impostare l'autorità di gestione dei dispositivi mobili](enroll-devices/set-mdm-authority.md)
 ## Pianificare e progettare
 ### [Ottenere un certificato push MDM Apple](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Ottenere un token DEP Apple](enroll-devices/get-apple-dep-token.md)
 ### [Scegliere come registrare i dispositivi iOS](enroll-devices/choose-ios-enrollment-method.md)
 ## Procedure
 ### [Assegnare licenze agli utenti](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Registrare dispositivi Android](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Registrare dispositivi Android
-#### [Registrare dispositivi iOS con Assistente configurazione](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [Registrare dispositivi iOS con la registrazione diretta](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
+#### [Apple Configurator - Assistente configurazione](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+#### [Apple Configurator - registrazione diretta](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [Aggiungere numeri di serie di Apple Configurator](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [Registrare dispositivi iOS con Device Enrollment Program](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [Registrare dispositivi con il manager di registrazione dispositivi](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+### [Manager di registrazione dispositivi](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Registrare i dispositivi macOS](enroll-devices/enroll-macos-devices.md)
 ### [Registrare i dispositivi Windows](enroll-devices/enroll-windows-devices.md)
 ### Gestire la registrazione dei dispositivi
