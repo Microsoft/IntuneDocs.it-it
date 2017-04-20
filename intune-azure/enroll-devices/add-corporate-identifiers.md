@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: e0a853c34c6d38e8fae6f4712ba6c2b767e5d0ba
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4ebd74c77145464574a1fed878ec4dbc2eb3c271
+ms.openlocfilehash: 7bb8168c442a3340e8c185f1908acd9be15cab05
+ms.lasthandoff: 04/05/2017
 
 ---
 
@@ -27,6 +27,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Come amministratore IT è possibile creare e importare un file con valori delimitati da virgole (con estensione csv) che elenca i codici IMEI (International Mobile Equipment Identity) per identificare i dispositivi di proprietà dell'azienda. Per ogni codice IMEI, nell'elenco possono essere specificati dettagli per scopi amministrativi.
+
+Quando si caricano numeri di serie di dispositivi iOS di proprietà dell'azienda, è necessario che siano associati a un profilo di registrazione aziendale. Per fare in modo che risultino di proprietà dell'azienda, i dispositivi devono quindi essere registrati tramite Apple Device Enrollment Program (DEP) o Apple Configurator. 
 
 ## <a name="create-a-csv-file"></a>Creare un file con estensione csv
 Per creare l'elenco, generare un elenco di valori a due colonne, delimitato da virgole (file con estensione CSV) senza intestazione. Aggiungere l'identificatore IMEI nella colonna a sinistra e i dettagli nella colonna destra. Il testo dei dettagli può avere una lunghezza massima di 128 caratteri. Il limite corrente per ogni file con estensione csv è di 500 righe.

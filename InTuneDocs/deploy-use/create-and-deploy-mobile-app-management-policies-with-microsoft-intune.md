@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -94,8 +94,6 @@ Seguire questa procedura per creare criteri di protezione delle app:
 
     ![Schermata del pannello Aggiungi criteri con le opzioni App e Impostazioni configurate](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-
-
 Dopo aver creato un criterio come descritto nella procedura precedente, non verrà distribuito a tutti gli utenti. Per distribuire un criterio, vedere la sezione seguente, "Distribuire un criterio agli utenti".
 
 > [!IMPORTANT]
@@ -106,6 +104,46 @@ Dopo aver creato un criterio come descritto nella procedura precedente, non verr
 > -   L'utente associa entrambi i criteri alla stessa app.
 > -   Viene data la precedenza al criterio creato dalla console di Azure e viene consentita la copia.
 > -   Tuttavia, lo stato e i report nella console di Intune indicheranno erroneamente che la copia è bloccata.
+
+## <a name="line-of-business-lob-apps-optional"></a>App line-of-business (LOB) (facoltativo)
+
+A partire da Intune versione 1703, è possibile aggiungere genericamente app LOB in Intune quando si crea un nuovo criterio di protezione delle app. In questo modo è possibile definire i criteri di protezione per le app LOB usando l'SDK per MAM senza dover necessariamente disporre delle autorizzazioni di distribuzione completa delle app.
+
+> [!TIP] 
+> È anche possibile aggiungere app LOB in Intune quando si esegue il flusso di lavoro di [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started).
+
+> [!IMPORTANT]
+> Se gli utenti dispongono solo di autorizzazioni specifiche per la distribuzione di app MAM anziché di autorizzazioni di distribuzione completa delle app, che consentirebbero di distribuire qualsiasi app in Intune, non saranno in grado di eseguire il flusso di lavoro di Intune SDK, ma potranno comunque aggiungere app LOB tramite il flusso di lavoro per la creazione di criteri di protezione delle app MAM.
+
+### <a name="to-add-lob-apps-ios-and-android"></a>Per aggiungere app LOB (iOS e Android)
+
+1.  Nel pannello Aggiungi criteri scegliere Configura **App** per aprire il pannello App.
+
+    ![MAM - Pannello Aggiungi criteri](../media/AppManagement/mam-lob-apps-1.png)
+
+2.  Fare clic su **Altre app**, immettere l'**ID bundle** (per iOS), l'**ID pacchetto** (per Android) e quindi fare clic su Seleziona per aggiungere le app LOB.
+
+    ![MAM - Pannello Altre app](../media/AppManagement/mam-lob-apps-2.png)
+
+### <a name="to-add-lob-apps-windows"></a>Per aggiungere app LOB (Windows)
+
+> [!IMPORTANT] 
+> È necessario selezionare Windows 10 dall'elenco a discesa Piattaforma quando si crea un nuovo criterio di protezione delle app.
+
+1.  Nel pannello Aggiungi criteri scegliere **App consentite** o **Exempt apps** (App esenti) per aprire il pannello App consentite o Exempt apps (App esenti).
+
+    > [!NOTE]
+    > 
+    - **App consentite**: si tratta delle app che devono essere conformi a questo criterio.
+    - **Exempt apps** (App esenti): queste app sono escluse da questo criterio e possono accedere ai dati aziendali senza restrizioni.
+<br></br>
+2. Nel pannello App consentite o Exempt apps (App esenti) fare clic su **Aggiungi app**. È possibile aggiungere app Microsoft consigliate, app dello Store o app desktop.
+
+    a.  **App consigliate**: un elenco già popolato di app (principalmente di Office) che gli amministratori sono autorizzati a importare facilmente nei criteri.
+
+    b.  **Store apps** (App dello Store): l'amministratore può aggiungere qualsiasi app da Windows Store al criterio.
+
+    c.  **Windows desktop apps** (App desktop di Windows): l'amministratore può aggiungere qualsiasi app desktop di Windows tradizionale al criterio (ad esempio, exe, dll e così via).
 
 ## <a name="deploy-a-policy-to-users"></a>Distribuire un criterio agli utenti
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e75ab41176f2aa1feac98fcf067349b132d4d61b
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
+ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -30,9 +30,6 @@ ms.lasthandoff: 02/18/2017
 L'App Store iOS consente di acquistare più licenze per un'app da eseguire nell'azienda. In questo modo, è possibile ridurre il carico amministrativo associato al monitoraggio di più copie delle app acquistate.
 
 Microsoft Intune semplifica la gestione delle app acquistate con questo programma importando le informazioni di licenza dall'App Store, verificando il numero di licenze usate e impedendo l'installazione di più copie dell'app rispetto a quelle possedute.
-
-> [!Important]
-> Attualmente Intune assegna licenze VPP (Volume Purchase Program per le aziende) per app iOS a utenti e non a dispositivi. Per questo motivo, per installare le app gli utenti finali devono immettere la password dell'ID Apple.
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Gestione delle app acquistate tramite Volume Purchase Program per dispositivi iOS
 Acquistare più licenze per le app iOS tramite [Apple Volume Purchase Program per le aziende](http://www.apple.com/business/vpp/) o [Apple Volume Purchase Program per l'istruzione](http://volume.itunes.apple.com/us/store). A questo scopo, configurare un account VPP di Apple dal sito Web Apple e caricare il token VPP di Apple in Intune.  È quindi possibile sincronizzare le informazioni relative a Volume Purchase Program con Intune e tenere traccia dell'uso delle app acquistate con VPP.
@@ -69,10 +66,10 @@ Il token viene visualizzato nel pannello di elenco dei token.
 ## <a name="to-assign-a-volume-purchased-app"></a>Per assegnare un'app acquistata tramite Volume Purchase Program
 
 1. Nel carico di lavoro di **Gestisci le app** scegliere **Gestisci** > **App con licenza**.
-2. Nel pannello di elenco delle app scegliere l'app da assegnare e quindi scegliere "**... **" > **Assegna gruppi**.
+2. Nel pannello di elenco delle app scegliere l'app da assegnare e quindi scegliere "**...**" > **Assegna gruppi**.
 3. Nel pannello <*Nome app*> - **Gruppi assegnati** scegliere **Gestisci** > **Gruppi assegnati**.
-4. Scegliere **Assegna gruppi** e quindi nel pannello **Seleziona gruppi** scegliere i gruppi Azure AD a cui assegnare l'app.
-È necessario scegliere un'azione di assegnazione **obbligatoria**. Le installazioni disponibili non sono attualmente supportate.
+4. Scegliere **Assegna gruppi** e quindi nel pannello **Seleziona gruppi** scegliere i gruppi di utenti o di dispositivi Azure AD a cui assegnare l'app.
+È necessario scegliere un'azione di assegnazione **obbligatoria**. Le installazioni disponibili non sono attualmente supportate. Inoltre, le assegnazioni ai gruppi di dispositivi sono disponibili per i nuovi tenant creati dopo il mese di gennaio 2017. Se il tenant è stato creato prima di questa data e non è possibile assegnare le app VPP ai gruppi di dispositivi, contattare il supporto tecnico di Intune.
 5. Al termine, scegliere **Salva**.
 
 Vedere [How to monitor apps](monitor-apps.md) (Come monitorare le app) per informazioni sul monitoraggio delle assegnazioni di app.
