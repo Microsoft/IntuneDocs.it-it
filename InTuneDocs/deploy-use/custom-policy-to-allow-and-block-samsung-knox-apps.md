@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
+ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
+ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
+ms.lasthandoff: 03/31/2017
 
 
 
@@ -43,7 +44,7 @@ Queste impostazioni possono essere usate solo dai dispositivi che eseguono Samsu
     - **Descrizione dell'impostazione.** Immettere una descrizione (facoltativa), ad esempio 'Elenco delle app bloccate'.
     -     **Tipo di dati.** Scegliere **Stringa** dall'elenco a discesa.
     -     **URI OMA.** Immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -     **Valore.** Immettere l'elenco dei nomi di pacchetti che si vuole consentire. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
+    -     **Valore.** Immettere l'elenco dei nomi di pacchetti di app che si vuole bloccare. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
 
     Per un elenco di app che gli utenti del dispositivo sono autorizzati a installare da Google Play Store, escludendo tutte le altre app, specificare le informazioni seguenti:
 
@@ -72,9 +73,4 @@ Quando si seleziona un criterio distribuito, è possibile visualizzare altre inf
 
 ### <a name="see-also"></a>Vedere anche
 [Impostazioni dei criteri di Android e Samsung KNOX in Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 64b59ccb29e05af0472d463f426a06509d242034
-ms.openlocfilehash: 7a13afcbfd6b37a209c2cb879a47370f9a00b937
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -58,9 +58,10 @@ Per istruzioni su come creare un criterio di protezione delle app usando la cons
 ##  <a name="supported-platforms"></a>Piattaforme supportate
 - iOS 8.1 o versioni successive
 - Android 4 o versioni successive
+- Windows 10
 
 >[!NOTE]
->I dispositivi Windows non supportano i criteri di protezione delle app. Tuttavia, quando si registrano i dispositivi di Windows 10 con Intune, è possibile usare Windows Information Protection, che offre funzionalità simili. Per altre informazioni, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>A partire dalla versione 1703, è possibile definire criteri di protezione delle app per i dispositivi Windows 10 nello scenario MAM senza registrazione. Per altre informazioni, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  <a name="supported-apps"></a>App supportate
 * **App Microsoft:** queste app includono Intune App SDK e non richiedono alcuna elaborazione aggiuntiva per l'applicazione dei criteri di protezione delle app.
