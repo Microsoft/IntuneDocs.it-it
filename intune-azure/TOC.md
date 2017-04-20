@@ -74,9 +74,7 @@
 ## [Plan and design](manage-apps/plan-and-design.md) --->
 ## Come gestire le app
 ### [Aggiungere app](manage-apps/add-apps.md)
-#### [App line-of-business Android](manage-apps/android-lob-app.md)
 #### [App di Android Store](manage-apps/android-store-app.md)
-#### [App line-of-business iOS](manage-apps/ios-lob-app.md)
 #### [App di iOS Store](manage-apps/ios-store-app.md)
 #### [App Web](manage-apps/web-app.md)
 #### [App di Windows Phone 8.1 Store](manage-apps/windows-phone-8-1-store-app.md)
