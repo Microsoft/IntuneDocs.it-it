@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/22/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: ed878327650b4560a891f9acb470b31aa64fbfa6
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 15415f9f31d520d66257df3a7e134e4b1de8467c
+ms.openlocfilehash: 6da1d00ce654add003a2f8e39b1a1c987d96e5a4
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -33,7 +33,7 @@ Quando si crittografa un dispositivo, si esegue la codifica delle informazioni i
 Alcuni dispositivi Android con la versione 7.0 o successive crittografano i dati in modi non coerenti con determinati standard della piattaforma Android. Questi dispositivi potrebbero sembrare crittografati per impostazione predefinita, ma secondo Intune i metodi usati possono esporre le informazioni del dispositivo a rischi dovuti all'accesso fisico al dispositivo da parte di utenti malintenzionati.
 
 > [!Note]
-> Microsoft collabora con i produttori elencati per tentare di risolvere questi problemi e aggiornerà questo elenco corrispondentemente. 
+> Microsoft collabora con tutti i produttori elencati per tentare di risolvere questi problemi e aggiornerà questo elenco corrispondentemente man mano che vengono completate le correzioni.
 
 ## <a name="an-incomplete-list-of-devices"></a>Elenco incompleto di dispositivi
 

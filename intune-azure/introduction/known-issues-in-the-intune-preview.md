@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/06/2017
+ms.date: 04/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: ec3f87994b19591bda4ec201eac3c839798d634c
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
+ms.openlocfilehash: 4c81c17ba1419f0b5bdc4910be7d26a5893b32e0
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -35,10 +35,27 @@ Per segnalare un bug non elencato qui, [aprire una richiesta di supporto](https:
 
 Per richiedere l'aggiunta di una nuova funzionalità a Intune, è possibile generare un report nel nostro sito [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
 
+## <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>I gruppi creati da Intune durante la migrazione potrebbero influire sulle funzionalità di altri prodotti Microsoft
+
+Quando si esegue la migrazione da Intune classico al portale di Azure, si potrebbe notare un nuovo gruppo denominato **Tutti gli utenti - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Tenere presente che questo gruppo contiene tutti gli utenti di Azure Active Directory e non solo gli utenti con licenza per Intune. Se si prevede che alcuni utenti nuovi o esistenti non diventino membri di alcun gruppo, ciò potrebbe causare problemi con altri prodotti Microsoft.
+
+## <a name="altering-groups-created-by-intune-during-migration-will-delay-migration"></a>La modifica di gruppi creati da Intune durante la migrazione ritarderà la migrazione
+
+In preparazione della migrazione, i gruppi vengono copiati da Intune ad Azure AD. Qualsiasi modifica apportata successivamente nel portale classico di Intune verrà aggiornata nel gruppo di Azure AD. Tuttavia, qualsiasi modifica apportata in Azure AD non verrà sincronizzata nella console di Intune classica. Ciò potrebbe causare l'esito negativo della migrazione al portale di Azure e ritardi per la migrazione.
+
+## <a name="compliance-policies-from-intune-will-not-show-up-in-new-console"></a>I criteri di conformità da Intune non verranno visualizzati nella nuova console. 
+
+Gli eventuali criteri di conformità creati nel portale di Intune classico vengono inclusi nella migrazione, ma non vengono visualizzati nel portale di Azure. Ciò è dovuto a modifiche di progettazione nel portale di Azure. I criteri di conformità creati nel portale di Intune classico vengono ancora applicati, ma è necessario visualizzarli e modificarli nel portale classico.
+Inoltre, i nuovi criteri di conformità creati nel portale di Azure non saranno visibili nel portale classico.
+Per altre informazioni, vedere [Che cos'è la conformità dei dispositivi?](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance).
+
+
+
+
 ## <a name="administration-and-accounts"></a>Amministrazione e account
 
-- Gli amministratori globali, noti anche come amministratori tenant, possono continuare a eseguire attività di ordinaria amministrazione senza una licenza separata di Intune o Enterprise Mobility Suite (EMS). Tuttavia, se gli amministratori globali vogliono usare il servizio, ad esempio per registrare il proprio dispositivo, un dispositivo aziendale oppure usare il portale aziendale di Intune, avranno bisogno di una licenza Intune o EMS, esattamente come qualsiasi altro utente.
+Gli amministratori globali, noti anche come amministratori tenant, possono continuare a eseguire attività di ordinaria amministrazione senza una licenza separata di Intune o Enterprise Mobility Suite (EMS). Tuttavia, se gli amministratori globali vogliono usare il servizio, ad esempio per registrare il proprio dispositivo, un dispositivo aziendale oppure usare il portale aziendale di Intune, avranno bisogno di una licenza Intune o EMS, esattamente come qualsiasi altro utente.
 
 ## <a name="apple-enrollment-profile-migration"></a>Migrazione dei profili di registrazione di Apple
-- Nei prossimi mesi Intune consentirà di gestire le registrazioni di Apple Device Enrollment Program e Apple Configurator tramite il nuovo portale di Azure. Se si elimina il token di Apple Device Enrollment Program e non si carica un token aggiornato, quello originale verrà ripristinato nel nuovo portale di Azure come parte della migrazione dell'account di Intune. Per rimuovere questo token e impedire la registrazione di DEP, è sufficiente eliminare il token nel portale di Azure. 
+Nei prossimi mesi Intune consentirà di gestire le registrazioni di Apple Device Enrollment Program e Apple Configurator tramite il nuovo portale di Azure. Se si elimina il token di Apple Device Enrollment Program e non si carica un token aggiornato, quello originale verrà ripristinato nel nuovo portale di Azure come parte della migrazione dell'account di Intune. Per rimuovere questo token e impedire la registrazione di DEP, è sufficiente eliminare il token nel portale di Azure. 
 

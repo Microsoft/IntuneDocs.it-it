@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
+ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -80,6 +80,9 @@ Usare questa azione remota per visualizzare su una mappa la posizione di un disp
 1.    Nel pannello delle proprietà di un dispositivo iOS, scegliere **Altro** > **Individua il dispositivo**.
 2.    Dopo che il dispositivo è stato trovato, la relativa posizione viene visualizzata nel pannello **Individua il dispositivo**. 
     ![Pannello Individua il dispositivo](./media/locate-device.png)
+
+>[!NOTE]
+>Per motivi di privacy, la distanza di zoom nella mappa è limitata.
 
 ### <a name="restart"></a>**Riavvia**
 Causa il riavvio del dispositivo. Il proprietario del dispositivo non viene avvisato automaticamente del riavvio, pertanto potrebbe perdere il lavoro.
