@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f66772dd318e97b9fef124776e80d9d9a4c7de7f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/24/2017
 ## <a name="how-does-conditional-access-work"></a>Come funziona l'accesso condizionale?
 È possibile usare le impostazioni dei criteri di conformità per valutare la conformità di un dispositivo. I criteri di accesso condizionale usano la versione di valutazione per limitare o consentire l'accesso a un servizio specifico. Quando i criteri di accesso condizionale vengono usati in combinazione con i criteri di conformità dei dispositivi, possono accedere al servizio solo i dispositivi conformi. I criteri di conformità e di accesso condizionale vengono distribuiti all'utente. Di qualsiasi dispositivo usato dall'utente per accedere ai servizi viene verificata la conformità ai criteri.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Tenere presente che l'utente che usa il dispositivo deve disporre di criteri di conformità distribuiti, così da consentire la valutazione della conformità del dispositivo stesso.
 > Se all'utente non viene distribuito alcun criterio di conformità, il dispositivo viene considerato conforme e non vengono applicate restrizioni di accesso.
 
@@ -48,7 +48,7 @@ Microsoft Intune e Azure Active Directory (Azure AD) Premium sono perfettamente 
 
 Le **licenze di Azure AD Premium** possono essere acquistate come servizio autonomo oppure (insieme a Intune) come parte del contratto aziendale. Se si distribuiscono criteri di accesso condizionale con Intune, assicurarsi di avere ottenuto le licenze appropriate per Azure AD Premium o **EMS**.
 
-- Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 Assicurarsi inoltre di avere [assegnato licenze di Azure AD Premium o EMS](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) agli utenti a cui si prevede di applicare i criteri di accesso condizionale.
 

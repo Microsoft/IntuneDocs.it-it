@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e084cce8e34b0de2dce7c6b8503d5b5089c930e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ ms.lasthandoff: 02/18/2017
 |||
 |-|-|
 |Profilo di posta elettronica|Questi criteri possono essere usati per definire le [impostazioni di accesso alla posta elettronica](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) per client di posta elettronica specifici nei dispositivi mobili, riducendo al minimo le configurazioni che l'utente finale deve eseguire.|
-|EMS|Microsoft Enterprise Mobility + Security (in precedenza Enterprise Mobility Suite) mantiene i dati aziendali protetti consentendo agli utenti di [accedere alle app e al contenuto necessari](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
+|EMS|Microsoft Enterprise Mobility + Security (in precedenza Enterprise Mobility Suite) mantiene i dati aziendali protetti consentendo agli utenti di [accedere alle app e al contenuto necessari](https://www.microsoft.com/cloud-platform/enterprise-mobility).|
 |Utente finale|[Utenti di dispositivi quali telefoni e PC](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) gestiti tramite Intune.|
 |Registrazione|Microsoft Intune usa la [registrazione](/intune/deploy-use/enroll-devices-in-microsoft-intune) per gestire i dispositivi e consentire l'accesso alle risorse.|
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 02/18/2017
 |Blocco remoto|Funzionalità di Intune che consente di [bloccare i dispositivi supportati](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune), anche se non si è in possesso del dispositivo.|
 |Reports|Intune offre una gamma di [report integrati](/intune/deploy-use/understand-microsoft-intune-operations-by-using-reports) che contengono informazioni sui dispositivi gestiti.|
 |Installazione richiesta|Quando si distribuisce un'app con questa azione, l'app viene installata nel dispositivo [senza alcun intervento da parte dell'utente](/intune/deploy-use/deploy-apps) (sebbene per alcune piattaforme è possibile che l'utente finale possa dover accettare l'installazione).|
-|Requisiti|[Operazione di distribuzione dell'app](/en-us/intune/deploy-use/add-apps) che consente di selezionare i requisiti che devono essere soddisfatti in un dispositivo prima dell'installazione dell'app. Ad esempio, può essere necessario specificare la versione del sistema operativo iOS da installare prima dell'installazione dell'app.|
+|Requisiti|[Operazione di distribuzione dell'app](/intune/deploy-use/add-apps) che consente di selezionare i requisiti che devono essere soddisfatti in un dispositivo prima dell'installazione dell'app. Ad esempio, può essere necessario specificare la versione del sistema operativo iOS da installare prima dell'installazione dell'app.|
 
 ## <a name="s"></a>S
 |||

@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: dbc5c6afc9f2748b50e064b912e519e8f2de9022
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,7 +43,7 @@ A differenza degli altri criteri di Intune, i criteri di gestione delle applicaz
 
 Per applicare restrizioni a un'app, questa deve includere Microsoft Intune App SDK. Esistono tre metodi per ottenere questo tipo di app:
 
--   **Usare un'app gestita da criteri**. Un'app gestita da criteri include App SDK. Per aggiungere questo tipo di applicazione, è possibile specificare un collegamento all'app da un archivio di app, ad esempio l'iTunes store o Google Play. Non sono richieste ulteriori elaborazioni per questo tipo di app. Per altre informazioni, vedere l'elenco delle [app che è possibile usare con i criteri di gestione delle applicazioni mobili di Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
+-   **Usare un'app gestita da criteri**. Un'app gestita da criteri include App SDK. Per aggiungere questo tipo di applicazione, è possibile specificare un collegamento all'app da un archivio di app, ad esempio l'iTunes store o Google Play. Non sono richieste ulteriori elaborazioni per questo tipo di app. Per altre informazioni, vedere l'elenco delle [app che è possibile usare con i criteri di gestione delle applicazioni mobili di Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 -   **Usare un'app di cui è stato eseguito il wrapping**. Un'app di cui è stato eseguito il wrapping è un'app che è stata riassemblata in modo da includere App SDK usando lo strumento di wrapping delle app di Microsoft Intune. Questo strumento viene in genere usato per elaborare le app aziendali create internamente. Non può essere usato per elaborare app scaricate dall'App Store. Per altre informazioni, vedere [Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -140,7 +140,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
     |**Richiedi la conformità del dispositivo ai criteri aziendali per l'accesso**|Questa impostazione consente l'uso dell'app solo se il dispositivo non è jailbroken o rooted.|
     |**Controlla di nuovo i requisiti di accesso dopo (minuti)**|Nel campo **Timeout** specificare il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app dopo l'apertura.|
     |**Periodo di prova offline**|Se il dispositivo è offline specificare il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app.|
-    |**Crittografa dati app**|Questa impostazione specifica che tutti i dati associati all'app verranno crittografati. Sono inclusi i dati archiviati esternamente, ad esempio i dati delle schede SD.<br /><br />**Crittografia per iOS**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, i dati vengono crittografati a riposo mediante la crittografia a livello di dispositivo fornita dal sistema operativo. Questo viene abilitato tramite i criteri PIN del dispositivo impostati dall'amministratore IT. Quando viene richiesto un PIN, i dati verranno crittografati in base alle impostazioni nei criteri di gestione delle applicazioni mobili. Come indicato nella documentazione di Apple, [i moduli usati da iOS sono dotati di certificazione FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Crittografia per Android**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, la crittografia viene fornita da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O file.  Il contenuto nell'archivio del dispositivo verrà sempre crittografato. Il metodo di crittografia è compatibile con FIPS 140-2 solo per i dispositivi Samsung KNOX.|
+    |**Crittografa dati app**|Questa impostazione specifica che tutti i dati associati all'app verranno crittografati. Sono inclusi i dati archiviati esternamente, ad esempio i dati delle schede SD.<br /><br />**Crittografia per iOS**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, i dati vengono crittografati a riposo mediante la crittografia a livello di dispositivo fornita dal sistema operativo. Questo viene abilitato tramite i criteri PIN del dispositivo impostati dall'amministratore IT. Quando viene richiesto un PIN, i dati verranno crittografati in base alle impostazioni nei criteri di gestione delle applicazioni mobili. Come indicato nella documentazione di Apple, [i moduli usati da iOS sono dotati di certificazione FIPS 140-2](http://support.apple.com/HT202739).<br /><br />**Crittografia per Android**<br /><br />Per le app associate ai criteri di gestione delle applicazioni mobili di Intune, la crittografia viene fornita da Microsoft. I dati vengono crittografati in modo sincrono durante le operazioni di I/O file.  Il contenuto nell'archivio del dispositivo verrà sempre crittografato. Il metodo di crittografia è compatibile con FIPS 140-2 solo per i dispositivi Samsung KNOX.|
     |**Blocca acquisizione schermo** (solo per dispositivi Android)|Questa impostazione specifica che le funzionalità di acquisizione schermo del dispositivo vengono bloccate quando un utente usa l'app.|
 
 4. Al termine, scegliere **Salva criterio**.

@@ -15,8 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -89,7 +90,7 @@ Il gruppo appena creato viene visualizzato nell'elenco **Gruppi** nell'area di l
     > Attualmente, se il gruppo include i membri da specifici gruppi di sicurezza o gruppi di manager e si escludono i membri da alcuni gruppi, i membri inizialmente inclusi verranno rimossi. Per creare un gruppo in cui siano presenti membri inclusi ed esclusi, è consigliabile creare innanzitutto un gruppo padre con i membri inclusi e quindi creare un gruppo figlio per il gruppo padre. Nel nuovo gruppo figlio elencare i membri esclusi. Usare quindi il gruppo figlio per gestire i criteri, i profili e la distribuzione di app di Intune.
 
     > [!NOTE]
-    > Nel portale di Azure è possibile creare un gruppo in base al manager a cui gli utenti fanno riferimento. Questo tipo di gruppo è dinamico e verrà modificato man mano che i dipendenti vengono aggiunti o rimossi dal team di un manager in Azure Active Directory. La procedura per la creazione di un gruppo di Azure in base al nome di un manager è descritta in [Uso di attributi per la creazione di regole avanzate](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) nella sezione **Per configurare un gruppo come gruppo "Manager"**.
+    > Nel portale di Azure è possibile creare un gruppo in base al manager a cui gli utenti fanno riferimento. Questo tipo di gruppo è dinamico e verrà modificato man mano che i dipendenti vengono aggiunti o rimossi dal team di un manager in Azure Active Directory. La procedura per la creazione di un gruppo di Azure in base al nome di un manager è descritta in [Uso di attributi per la creazione di regole avanzate](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/) nella sezione **Per configurare un gruppo come gruppo "Manager"**.
 
 4.  Nella pagina **Definisci appartenenza diretta** scegliere **Sfoglia** per selezionare i singoli utenti da includere o escludere. Se si selezionano utenti non inclusi nel gruppo padre specificato, tali utenti verranno aggiunti automaticamente al gruppo padre. L'opzione per aggiungere manualmente un utente è disponibile nella parte inferiore della finestra di dialogo **Seleziona membri**. Ciò è utile se si desidera aggiungere un utente che non dispone ancora di un dispositivo registrato.
 
@@ -151,9 +152,4 @@ Ogni criterio dispone di un **previsto valore** e **stato**. Il valore previsto 
 
 > [!NOTE]
 > Tenere presente che quando due criteri con livelli di restrizione diversi vengono applicati allo stesso dispositivo o utente, viene di fatto applicato il criterio più restrittivo.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

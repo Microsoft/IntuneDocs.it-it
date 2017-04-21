@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: dfed1ece238210e8b98934d8add7dbb9b0f1c1fb
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 47645e1f133b172d059f849e2f73e59e115046c6
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,7 +43,7 @@ Se il dispositivo risulta non conforme, è possibile bloccare l'accesso a risors
 ## <a name="supported-platforms"></a>Piattaforme supportate:
 Lookout supporta le piattaforme seguenti per i dispositivi registrati in Intune:
 * **Android 4.1 e versioni successive**
-* **iOS 8 e versioni successive** Per altre informazioni sulle piattaforme e le lingue supportate, visitare il [sito Web di Lookout](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
+* **iOS 8 e versioni successive** Per altre informazioni sulle piattaforme e le lingue supportate, visitare il [sito Web di Lookout](https://personal.support.lookout.com/hc/articles/114094140253).
 
 ## <a name="prerequisites"></a>Prerequisiti:
 * Sottoscrizione di Microsoft Intune

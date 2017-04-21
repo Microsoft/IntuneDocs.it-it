@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 35543604ed68393e859517e32f5186247be001df
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f30ab8799b2e049372139c7f9ee7213547736bb0
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +32,7 @@ I criteri di protezione delle app consentono di imporre la sicurezza a livello d
 
 ## <a name="app-protection-policies-with-lob-apps"></a>Criteri di protezione delle app con app LOB
 
-I criteri di protezione delle app per dispositivi mobili possono anche essere estesi alle app line-of-business (LOB) tramite [Microsoft Intune App SDK](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) o lo strumento di wrapping delle app di Microsoft Intune per entrambe le piattaforme [iOS](https://www.microsoft.com/en-us/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) e [Android](https://www.microsoft.com/en-us/download/details.aspx?id=47267).
+I criteri di protezione delle app per dispositivi mobili possono anche essere estesi alle app line-of-business (LOB) tramite [Microsoft Intune App SDK](https://docs.microsoft.com/intune/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management) o lo strumento di wrapping delle app di Microsoft Intune per entrambe le piattaforme [iOS](https://www.microsoft.com/download/details.aspx?id=45218&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) e [Android](https://www.microsoft.com/download/details.aspx?id=47267).
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>Utilità dei criteri di protezione delle app durante la migrazione
 
@@ -46,9 +46,9 @@ Dopo aver disabilitato l'accesso condizionale nel provider MDM precedente, gli u
 
 ## <a name="task-list-for-app-protection-policies"></a>Elenco di attività per i criteri di protezione delle app
 
--   Attività 1: Scoprire [come prepararsi alla configurazione dei criteri di protezione delle app](https://docs.microsoft.com/en-us/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+-   Attività 1: Scoprire [come prepararsi alla configurazione dei criteri di protezione delle app](https://docs.microsoft.com/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
 
--   Attività 2: Scoprire [come creare e distribuire i criteri di protezione delle app](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+-   Attività 2: Scoprire [come creare e distribuire i criteri di protezione delle app](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Passaggi successivi 
 

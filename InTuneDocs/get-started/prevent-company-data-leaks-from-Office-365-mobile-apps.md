@@ -15,9 +15,9 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 0288ecd940d650304d83b7dd5803a56f69b936f7
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4c13eb3149ea0cc21604a5a05445cfccdc984293
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -41,7 +41,7 @@ Microsoft Intune consente di impostare criteri MAM per le app di Office 365 per 
 ### <a name="additional-information"></a>Informazioni aggiuntive:
 - [Esperienza dell'utente finale](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) con app compatibili con MAM.
 - [Preparare app LOB per MAM con Intune](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- <a href="https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners" target="_blank"> Elenco di partner di Microsoft Intune &rarr;</a> che forniscono app compatibili con MAM.
+- <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank"> Elenco di partner di Microsoft Intune &rarr;</a> che forniscono app compatibili con MAM.
 
 ## <a name="what-should-i-do-next"></a>Operazioni successive
 [Eseguire la migrazione da una soluzione MDM non Microsoft in Microsoft Intune](/intune/deploy-use/migrate-to-intune)

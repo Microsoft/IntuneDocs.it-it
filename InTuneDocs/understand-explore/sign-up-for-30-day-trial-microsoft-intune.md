@@ -14,8 +14,9 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ca4af205f8f391089e86e0ee7787e32813d54cca
-ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 55556d781149b97af3556f3a6774b4bc5b3b76ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 Questo articolo illustra come iscriversi per ottenere una versione di valutazione di Intune. Tale versione viene quindi preparata per l'uso con alcuni utenti, in modo che sia possibile seguire la guida di valutazione associata per comprendere il modo in cui Intune gestisce i dispositivi mobili. <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> A partire da dicembre 2016, Microsoft Intune verrà spostato nel portale di Azure e alcune iscrizioni per la versione di valutazione gratuita saranno in Intune nel portale di Azure e alcune in Intune classico. Se la versione di valutazione in uso è disponibile nel portale di Azure, il [contenuto relativo a Intune nella versione di anteprima del portale di Azure](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune) risulterà più utile dopo aver completato i passaggi descritti in questo articolo.
+> A partire da dicembre 2016, Microsoft Intune verrà spostato nel portale di Azure e alcune iscrizioni per la versione di valutazione gratuita saranno in Intune nel portale di Azure e alcune in Intune classico. Se la versione di valutazione in uso è disponibile nel portale di Azure, il [contenuto relativo a Intune nella versione di anteprima del portale di Azure](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) risulterà più utile dopo aver completato i passaggi descritti in questo articolo.
 
 ## <a name="assumptions"></a>Presupposti
 Nella sezione relativa all'iscrizione e nella guida di valutazione si presuppone che la versione gratuita venga usata soltanto a scopo di valutazione. Si presuppone inoltre che, quando si esegue la sottoscrizione, si inizi con un ambiente "pulito".
@@ -39,7 +40,7 @@ Con la versione di valutazione è possibile eseguire le stesse operazioni consen
 ## <a name="sign-up-for-your-trial"></a>Iscriversi per la versione di valutazione gratuita
 Visitare la pagina di [iscrizione a Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) e compilare il modulo per richiedere una sottoscrizione di valutazione.
 
-Se si dispone già di un account aziendale o dell'istituto di istruzione e si vuole usare tale account per la versione di valutazione di Intune, seguire [queste istruzioni di iscrizione](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1). Questo articolo e la guida di valutazione, tuttavia, presuppongono che non venga usato questo tipo di account.
+Se si dispone già di un account aziendale o dell'istituto di istruzione e si vuole usare tale account per la versione di valutazione di Intune, seguire [queste istruzioni di iscrizione](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1). Questo articolo e la guida di valutazione, tuttavia, presuppongono che non venga usato questo tipo di account.
 
 > [!TIP]
 > Se per la maggior parte delle operazioni IT viene usata una lingua diversa dalla propria, è necessario specificare per la versione di valutazione le impostazioni locali appropriate, così da poter eseguire il test delle prestazioni.
@@ -54,7 +55,7 @@ Se la versione di valutazione è nel **portale di Azure**, passare a https://por
 ## <a name="add-users"></a>Aggiungere utenti
 Prima di passare dall'interfaccia di amministrazione di Office 365 a Intune, è necessario aggiungere alcuni utenti all'account di valutazione.
 
-Nell'interfaccia di amministrazione di Office 365 è possibile aggiungere utenti, sia singolarmente che in blocco, caricando un file con estensione csv. Per impostare la versione di valutazione verranno eseguite entrambe le operazioni. Nell'ambiente di produzione, tuttavia, è probabilmente preferibile usare gli account utente di Azure Active Directory. Per altre informazioni, vedere le sezioni [Guida introduttiva](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) e [Passaggi successivi](#Next-steps) di questo articolo.
+Nell'interfaccia di amministrazione di Office 365 è possibile aggiungere utenti, sia singolarmente che in blocco, caricando un file con estensione csv. Per impostare la versione di valutazione verranno eseguite entrambe le operazioni. Nell'ambiente di produzione, tuttavia, è probabilmente preferibile usare gli account utente di Azure Active Directory. Per altre informazioni, vedere le sezioni [Guida introduttiva](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) e [Passaggi successivi](#Next-steps) di questo articolo.
 
 ### <a name="add-an-individual-user"></a>Aggiungere un singolo utente
 1. Scegliere una delle due opzioni per l'aggiunta di un utente per aprire un modulo che consente di creare un utente. Sono obbligatori soltanto gli elementi contrassegnati da un asterisco (\*).
@@ -137,18 +138,13 @@ Per tornare all'interfaccia di amministrazione di Office 365 da Intune, immetter
 Scenario di valutazione: [Valutare la gestione dei dispositivi mobili in Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
 ### <a name="intune-azure-preview"></a>Anteprima di Intune in Azure
-Altre informazioni sull'[anteprima di Intune nel portale di Azure](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune)
+Altre informazioni sull'[anteprima di Intune nel portale di Azure](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)
 
 ### <a name="integration-with-other-products"></a>Integrazione con altri prodotti
 Per altre informazioni sull'uso degli account utente di Azure Active Directory con Intune, vedere:
-- [Identity requirements](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview) (Requisiti di identità)
-- [Determinare i requisiti di sincronizzazione delle directory](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [Determinare i requisiti dell'autenticazione a più fattori](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+- [Identity requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview) (Requisiti di identità)
+- [Determinare i requisiti di sincronizzazione delle directory](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [Determinare i requisiti dell'autenticazione a più fattori](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
-Altre informazioni sull'uso di [Intune con System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+Altre informazioni sull'uso di [Intune con System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
 

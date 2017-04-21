@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23037cdb5a474b2c62c231ac1966989902a983e1
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -34,7 +34,7 @@ Prima di iniziare la distribuzione di app con Microsoft Intune, prendersi il tem
 
 |Tipo di App|Dettagli|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|Questo tipo di app deve supportare l'installazione invisibile all'utente senza input dell'utente. La documentazione dell'app deve includere le opzioni della riga di comando rilevanti per l'installazione automatica dell'app, ad esempio, **/q**. Per un elenco di opzioni comuni della riga di comando, vedere [Opzioni della riga di comando per lo strumento Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Le cartelle e i file aggiuntivi richiesti dal programma di installazione dell'app devono essere disponibili nel percorso specificato per i file di installazione dell'app stessa.<br><br>Nella maggior parte dei casi, i file Windows Installer (con estensione msi) e Windows Installer Patch (con estensione msp) non richiedono l'installazione di alcun argomento della riga di comando da parte di Intune. Verificare la documentazione dell'app.<br><br>Se sono necessari argomenti di riga di comando, essi devono essere inseriti come coppia Nome=Valore (ad esempio TRANSFORMS=custom_transform.mst).<br><br>Questo tipo di app si applica solo ai computer che eseguono il client del software Intune.|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|Questo tipo di app deve supportare l'installazione invisibile all'utente senza input dell'utente. La documentazione dell'app deve includere le opzioni della riga di comando rilevanti per l'installazione automatica dell'app, ad esempio, **/q**. Per un elenco di opzioni comuni della riga di comando, vedere [Opzioni della riga di comando per lo strumento Microsoft Windows Installer](https://support.microsoft.com/kb/227091).<br><br>Le cartelle e i file aggiuntivi richiesti dal programma di installazione dell'app devono essere disponibili nel percorso specificato per i file di installazione dell'app stessa.<br><br>Nella maggior parte dei casi, i file Windows Installer (con estensione msi) e Windows Installer Patch (con estensione msp) non richiedono l'installazione di alcun argomento della riga di comando da parte di Intune. Verificare la documentazione dell'app.<br><br>Se sono necessari argomenti di riga di comando, essi devono essere inseriti come coppia Nome=Valore (ad esempio TRANSFORMS=custom_transform.mst).<br><br>Questo tipo di app si applica solo ai computer che eseguono il client del software Intune.|
 |**Pacchetto app per Android (&#42;.apk)**|Per distribuire app per Android, è necessario un pacchetto con estensione apk valido.|
 |**Pacchetto app per iOS (&#42;.ipa)**|Per distribuire le app per iOS, è necessario un pacchetto con estensione ipa valido.<br><br>Il pacchetto con estensione ipa deve essere stato firmato da Apple e la data di scadenza indicata nel profilo di provisioning deve essere valida. Intune è in grado di distribuire applicazioni iOS con certificato aziendale.<br><br>Non tutte le app Apple con certificato di sviluppatore sono supportate.<br><br>L'azienda deve essere registrata al programma iOS Developer Enterprise Program.<br><br>Verificare che il firewall dell'organizzazione consenta l'accesso ai siti Web di provisioning e certificazione iOS.<br><br>Non è necessario distribuire un file manifesto (con estensione plist) con l'app.|
 |**Pacchetto app Windows Phone (&#42;.xap, .appx, .appxbundle)**|Per distribuire le app serve un certificato di firma codice mobile aziendale. Per altre informazioni vedere [Set up Windows Phone management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md) (Configurare la gestione dei dispositivi Windows Phone con Microsoft Intune).|
@@ -49,7 +49,7 @@ Usare un collegamento esterno quando si dispone degli elementi seguenti:
 
 Le app basate su collegamenti esterni non sono archiviate nello spazio di archiviazione nel cloud Intune.
 ### <a name="managed-ios-app-from-the-app-store"></a>**App iOS gestita dall'App Store**
-È possibile usare app iOS gestite per gestire e distribuire app iOS gratuite dall'App Store. È anche possibile usare app iOS gestite per associare i [criteri di gestione delle applicazioni mobili](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) con [app compatibili](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) e controllarne lo stato nella console di amministrazione.<br /><br />Le app iOS gestite non vengono archiviate nello spazio di memorizzazione cloud di Intune.
+È possibile usare app iOS gestite per gestire e distribuire app iOS gratuite dall'App Store. È anche possibile usare app iOS gestite per associare i [criteri di gestione delle applicazioni mobili](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) con [app compatibili](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) e controllarne lo stato nella console di amministrazione.<br /><br />Le app iOS gestite non vengono archiviate nello spazio di memorizzazione cloud di Intune.
 
 > [!TIP]
 > Le opzioni per i dispositivi mobili non sono disponibili finché non si [imposta l'autorità MDM](prerequisites-for-enrollment.md) su Intune.
