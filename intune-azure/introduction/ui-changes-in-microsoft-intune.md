@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
-ms.openlocfilehash: 791486a8d4cc490cd452ea9075fe323395635b5f
-ms.lasthandoff: 03/31/2017
+ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
+ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -26,14 +26,14 @@ ms.lasthandoff: 03/31/2017
 Con lo spostamento di Intune nel portale di Azure, alcune attività sono state riorganizzate in modo più logico. Ma ogni ottimizzazione implica la necessità di abituarsi a una nuova organizzazione. Pertanto, è stata realizzata questa Guida di riferimento, pensata espressamente per chi conosce già Intune nella console classica e vuole imparare a usarlo in Azure. Se questo articolo non fornisce informazioni su una funzionalità specifica, lasciare un commento alla fine dell'articolo in modo da poterlo aggiornare.
 ## <a name="quick-reference-guide"></a>Guida di riferimento rapido
 |Funzionalità |Percorso nella console classica|Percorso in Intune in Azure| |------------||---------------|---------------|
-|Device Enrollment Program (DEP) |Amministrazione > Gestione dei dispositivi mobili > iOS e Mac OS X > Device Enrollment Program|[Registra i dispositivi > Registrazioni Apple > Token Device Enrollment Program](#where-did-apple-dep-go) |
-|Device Enrollment Program (DEP)| Amministrazione > Gestione dei dispositivi mobili > iOS e Mac OS X > Device Enrollment Program |[Registra i dispositivi > Registrazioni Apple > Numeri di serie Device Enrollment Program](#where-did-apple-dep-go) |
-|Regole di registrazione |Amministrazione > Gestione dei dispositivi mobili > Regole di registrazione|[Registra i dispositivi > Restrizioni registrazione](#where-did-enrollment-rules-go) |
-|Gruppi per numero di serie iOS |Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per numero di serie iOS|[Registra i dispositivi > Registrazioni Apple > Numeri di serie Device Enrollment Program](#where-did-corporate-pre-enrolled-devices-go) |
-|Gruppi per numero di serie iOS |Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per numero di serie iOS| [Registra i dispositivi > Registrazioni Apple > Numeri di serie AC](#where-did-corporate-pre-enrolled-devices-go)|
-|Gruppi per IMEI (tutte le piattaforme)| Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per IMEI (tutte le piattaforme) | [Registra i dispositivi > Identificatori dei dispositivi aziendali](#by-imei-all-platforms)|
-| Profilo di registrazione dei dispositivi aziendali| Criteri > Registrazione di dispositivi aziendali | [Registra i dispositivi > Registrazioni Apple > Profili Device Enrollment Program](#where-did-corporate-pre-enrolled-devices-go) |
-| Profilo di registrazione dei dispositivi aziendali | Criteri > Registrazione di dispositivi aziendali | [Registra i dispositivi > Registrazioni Apple > Profili AC](#where-did-corporate-pre-enrolled-devices-go) |
+|Device Enrollment Program (DEP) |Amministrazione > Gestione dei dispositivi mobili > iOS e Mac OS X > Device Enrollment Program|[Registrazione del dispositivo > Registrazione Apple > Token Device Enrollment Program](#where-did-apple-dep-go) |
+|Device Enrollment Program (DEP)| Amministrazione > Gestione dei dispositivi mobili > iOS e Mac OS X > Device Enrollment Program |[Registrazione del dispositivo > Registrazione Apple > Numeri di serie DEP](#where-did-apple-dep-go) |
+|Regole di registrazione |Amministrazione > Gestione dei dispositivi mobili > Regole di registrazione|[Registrazione del dispositivo > Restrizioni registrazione](#where-did-enrollment-rules-go) |
+|Gruppi per numero di serie iOS |Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per numero di serie iOS|[Registrazione del dispositivo > Registrazione Apple > Numeri di serie DEP](#where-did-corporate-pre-enrolled-devices-go) |
+|Gruppi per numero di serie iOS |Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per numero di serie iOS| [Registrazione del dispositivo > Registrazione Apple > Numeri di serie Apple Configurator](#where-did-corporate-pre-enrolled-devices-go)|
+|Gruppi per IMEI (tutte le piattaforme)| Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per IMEI (tutte le piattaforme) | [Registrazione del dispositivo > Identificatori dei dispositivi aziendali](#by-imei-all-platforms)|
+| Profilo di registrazione dei dispositivi aziendali| Criteri > Registrazione di dispositivi aziendali | [Registrazione del dispositivo > Registrazione Apple > Profili Device Enrollment Program](#where-did-corporate-pre-enrolled-devices-go) |
+| Profilo di registrazione dei dispositivi aziendali | Criteri > Registrazione di dispositivi aziendali | [Registra i dispositivi > Registrazione Apple > Profili AC](#where-did-corporate-pre-enrolled-devices-go) |
 
 
 ## <a name="where-do-i-manage-groups"></a>Dove si gestiscono i gruppi?
