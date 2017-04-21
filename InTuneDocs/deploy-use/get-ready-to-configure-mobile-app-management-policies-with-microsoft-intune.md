@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,11 +61,11 @@ Per istruzioni su come creare un criterio di protezione delle app usando la cons
 - Windows 10
 
 >[!NOTE]
->A partire dalla versione 1703, è possibile definire criteri di protezione delle app per i dispositivi Windows 10 nello scenario MAM senza registrazione. Per altre informazioni, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>A partire dalla versione 1703, è possibile definire criteri di protezione delle app per i dispositivi Windows 10 nello scenario MAM senza registrazione. Per altre informazioni, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  <a name="supported-apps"></a>App supportate
 * **App Microsoft:** queste app includono Intune App SDK e non richiedono alcuna elaborazione aggiuntiva per l'applicazione dei criteri di protezione delle app.
-Per visualizzare l'elenco completo delle app Microsoft supportate, passare alla [raccolta di applicazioni mobili di Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) nella pagina dei partner di app di Microsoft Intune. Fare clic su un'app per visualizzare le piattaforme e gli scenari supportati e per verificare se l'app supporta più identità.
+Per visualizzare l'elenco completo delle app Microsoft supportate, passare alla [raccolta di applicazioni mobili di Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) nella pagina dei partner di app di Microsoft Intune. Fare clic su un'app per visualizzare le piattaforme e gli scenari supportati e per verificare se l'app supporta più identità.
 
 * **App line-of-business create internamente:** è necessario preparare queste app per includere Intune App SDK prima di applicare i criteri di protezione delle app.
 
@@ -76,7 +76,7 @@ Per visualizzare l'elenco completo delle app Microsoft supportate, passare alla 
 ## <a name="prerequisites"></a>Prerequisiti
 
 -   **Sottoscrizione di Microsoft Intune**. Gli utenti devono avere le licenze di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] per ottenere app con criteri di protezione delle app.
-Si dispone già di una sottoscrizione di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se si usa [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] per gestire i dispositivi. Si dispone di una sottoscrizione di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] anche nel caso in cui sia stata acquistata una licenza di Enterprise Mobility Suite (EMS). Se si sta provando [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] per testare le funzionalità MAM, è possibile ottenere un account di valutazione nella [pagina di Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
+Si dispone già di una sottoscrizione di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] se si usa [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] per gestire i dispositivi. Si dispone di una sottoscrizione di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] anche nel caso in cui sia stata acquistata una licenza di Enterprise Mobility Suite (EMS). Se si sta provando [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] per testare le funzionalità MAM, è possibile ottenere un account di valutazione nella [pagina di Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
     Per verificare se si ha già una sottoscrizione di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], accedere alla pagina **Fatturazione** nel portale di Office.  Se si ha una sottoscrizione, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] dovrebbe essere visualizzata come **Attivo** nella sezione delle sottoscrizioni.
 
@@ -98,13 +98,13 @@ Si dispone già di una sottoscrizione di [!INCLUDE[wit_nextref](../includes/wit_
 
 1.  Accedere al [portale di Office](http://portal.office.com) con le credenziali di amministratore.
 
-2.  Aggiungere utenti come descritto nella sezione **Passaggi per completare una valutazione di 30 giorni di Intune** della [Guida alla valutazione di Intune](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) e quindi assegnare le licenze Intune. Per consentire a un utente di accedere al portale di Office, al portale di Azure AD e al portale di Azure, assegnare all'utente il ruolo **Amministratore globale**.
+2.  Aggiungere utenti come descritto nella sezione **Passaggi per completare una valutazione di 30 giorni di Intune** della [Guida alla valutazione di Intune](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) e quindi assegnare le licenze Intune. Per consentire a un utente di accedere al portale di Office, al portale di Azure AD e al portale di Azure, assegnare all'utente il ruolo **Amministratore globale**.
 
-5.  I criteri di protezione delle app vengono distribuiti ai gruppi di utenti in Azure Active Directory. Per creare gruppi di utenti per i criteri di protezione delle app, vedere la sezione **Creare un gruppo di utenti** di [Creare gruppi per organizzare utenti e dispositivi della sottoscrizione di valutazione](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
+5.  I criteri di protezione delle app vengono distribuiti ai gruppi di utenti in Azure Active Directory. Per creare gruppi di utenti per i criteri di protezione delle app, vedere la sezione **Creare un gruppo di utenti** di [Creare gruppi per organizzare utenti e dispositivi della sottoscrizione di valutazione](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
 
 ### <a name="assign-roles-to-non-global-admin-users"></a>Assegnare ruoli agli utenti amministratori non globali
 
-Gli amministratori globali hanno accesso al [portale di Azure](https://portal.azure.com).  Se si vuole che gli utenti amministratori non globali possano configurare i criteri ed eseguire altre attività di gestione di app mobili, vedere l'articolo [Usare le assegnazioni di ruolo per gestire l'accesso alle risorse della sottoscrizione di Azure](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/).
+Gli amministratori globali hanno accesso al [portale di Azure](https://portal.azure.com).  Se si vuole che gli utenti amministratori non globali possano configurare i criteri ed eseguire altre attività di gestione di app mobili, vedere l'articolo [Usare le assegnazioni di ruolo per gestire l'accesso alle risorse della sottoscrizione di Azure](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/).
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Creare e distribuire i criteri di protezione delle app con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

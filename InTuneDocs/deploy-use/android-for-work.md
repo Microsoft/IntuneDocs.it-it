@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: e04ab9c14ea6e7cc38430ec6a4d478a65e23ba96
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: b00cb3af00d20b091b9b443fdce6d37c89d769b7
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -84,7 +84,7 @@ Altre informazioni sui [profili certificato](secure-resource-access-with-certifi
 I profili Wi-Fi gestiti da Android for Work vengono eliminati quando il dispositivo viene ritirato da Intune e il profilo di lavoro viene eliminato. Altre informazioni sui [profili Wi-Fi](wi-fi-connections-in-microsoft-intune.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
-[Abilitare la registrazione di dispositivi Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-android-for-work)
+[Abilitare la registrazione di dispositivi Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
-[Distribuzione di app per Android for Work](https://docs.microsoft.com/en-us/intune/deploy-use/android-for-work-apps)
+[Distribuzione di app per Android for Work](https://docs.microsoft.com/intune/deploy-use/android-for-work-apps)
 

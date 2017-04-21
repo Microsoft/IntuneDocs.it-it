@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: abeef923eb5c964ef1e306bbb2c25d0570959674
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -45,7 +45,7 @@ Se si dispone già di un account aziendale o dell'istituto di istruzione, è suf
 ## <a name="post-sign-up-considerations"></a>Considerazioni successive all'iscrizione
 Se si esegue l'iscrizione per una nuova sottoscrizione, all'indirizzo di posta elettronica specificato in fase di iscrizione verrà inviato un messaggio contenente le informazioni sul proprio account. Questo messaggio conferma che la sottoscrizione è attiva.
 
-Dopo aver completato il processo di iscrizione, si verrà indirizzati a una pagina usata per aggiungere utenti e assegnare loro licenze tramite l'interfaccia di amministrazione di Office 365. Se si dispone esclusivamente di account basati su cloud che usano il nome di dominio onmicrosoft.com predefinito, è quindi possibile proseguire per aggiungere utenti e assegnare loro licenze. Tuttavia, se si usa il nome di dominio personalizzato dell'organizzazione o si desidera sincronizzare le informazioni sull'account utente da Active Directory locale, è possibile chiudere la finestra del browser e procedere al passaggio 2 di questa guida introduttiva. Altre informazioni sono disponibili in [Informazioni sul dominio onmicrosoft.com iniziale in Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
+Dopo aver completato il processo di iscrizione, si verrà indirizzati a una pagina usata per aggiungere utenti e assegnare loro licenze tramite l'interfaccia di amministrazione di Office 365. Se si dispone esclusivamente di account basati su cloud che usano il nome di dominio onmicrosoft.com predefinito, è quindi possibile proseguire per aggiungere utenti e assegnare loro licenze. Tuttavia, se si usa il nome di dominio personalizzato dell'organizzazione o si desidera sincronizzare le informazioni sull'account utente da Active Directory locale, è possibile chiudere la finestra del browser e procedere al passaggio 2 di questa guida introduttiva. Altre informazioni sono disponibili in [Informazioni sul dominio onmicrosoft.com iniziale in Office 365](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
 
 >[!TIP]
 > Al successivo accesso a Intune, l'utente verrà automaticamente indirizzato alla console di amministrazione di Intune.

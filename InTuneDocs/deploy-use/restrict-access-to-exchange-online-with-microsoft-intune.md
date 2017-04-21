@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -38,7 +38,7 @@ Per configurare l'accesso condizionale è necessario:
 
 -   Avere un **abbonamento a Office 365 che include Exchange Online (ad esempio E3)** e gli utenti devono avere una licenza per Exchange Online.
 
-- Avere una **sottoscrizione di Enterprise Mobility + Security (EMS)** o una **sottoscrizione di Azure Active Directory Premium (Azure AD)** e gli utenti devono essere licenziatari di EMS o Azure AD. Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Avere una **sottoscrizione di Enterprise Mobility + Security (EMS)** o una **sottoscrizione di Azure Active Directory Premium (Azure AD)** e gli utenti devono essere licenziatari di EMS o Azure AD. Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 -  Può essere opportuno configurare l'opzione facoltativa **Intune Service to Service Connector** che connette [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] a Exchange Online e consente di gestire le informazioni sui dispositivi tramite la console di [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Non è necessario usare il connettore per i criteri di conformità o i criteri di accesso condizionale, ma è obbligatorio per eseguire i report utili per valutare l'impatto dell'accesso condizionale.
     -  Altre informazioni su [Service to Service Connector di Intune](intune-service-to-service-exchange-connector.md).
@@ -83,7 +83,7 @@ Il diagramma seguente illustra il flusso usato dai criteri di accesso condiziona
 Con l'**autenticazione moderna** l'accesso basato su Active Directory Authentication Library (ADAL) diventa disponibile per i client Microsoft Office.
 
 -   Questo tipo di autenticazione consente ai client Office di usare l'autenticazione basata su browser, nota anche come autenticazione passiva. Per eseguire l'autenticazione, l'utente viene indirizzato a una pagina Web di accesso.
--   Questo nuovo metodo di accesso offre migliori opzioni di sicurezza, come l'**autenticazione a più fattori** e l'**autenticazione basata sui certificati**. Per altre informazioni dettagliate, vedere [Funzionamento dell'autenticazione moderna ](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). È possibile configurare le regole delle attestazioni AD FS per bloccare i protocolli di autenticazione non moderni. Istruzioni dettagliate sono disponibili in [Scenario 3: Bloccare completamente l'accesso esterno a Office 365, ad eccezione di applicazioni basate su browser](https://technet.microsoft.com/library/dn592182.aspx).
+-   Questo nuovo metodo di accesso offre migliori opzioni di sicurezza, come l'**autenticazione a più fattori** e l'**autenticazione basata sui certificati**. Per altre informazioni dettagliate, vedere [Funzionamento dell'autenticazione moderna ](https://support.office.com/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). È possibile configurare le regole delle attestazioni AD FS per bloccare i protocolli di autenticazione non moderni. Istruzioni dettagliate sono disponibili in [Scenario 3: Bloccare completamente l'accesso esterno a Office 365, ad eccezione di applicazioni basate su browser](https://technet.microsoft.com/library/dn592182.aspx).
 
 È possibile proteggere l'accesso a **Outlook Web Access (OWA)** in Exchange Online quando un utente accede a OWA da un browser in dispositivi **iOS** e **Android**. L'accesso è consentito solo dai browser supportati su dispositivi conformi:
 
@@ -123,7 +123,7 @@ Con l'**autenticazione moderna** l'accesso basato su Active Directory Authentica
   >[!NOTE]
     >L'accesso condizionale non è supportato nei PC che eseguono il client dei computer Intune.
 
--   [L'autenticazione moderna di Office 365 deve essere abilitata](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) ed è necessario avere tutti gli aggiornamenti di Office più recenti.
+-   [L'autenticazione moderna di Office 365 deve essere abilitata](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) ed è necessario avere tutti gli aggiornamenti di Office più recenti.
 
     Con l'autenticazione moderna, i client Office 2013/Windows possono usare l'accesso basato su Active Directory Authentication Library (ADAL). Questo metodo di accesso offre migliori opzioni di sicurezza, come l'**autenticazione a più fattori** e **l'autenticazione basata sui certificati**.
 
@@ -192,7 +192,7 @@ Vengono valutati solo i gruppi di utenti a cui sono applicati i criteri di acces
 >[!NOTE]
 > È anche possibile creare criteri di accesso condizionale nella console di gestione di Azure AD. La console di gestione di Azure AD consente di creare i criteri di accesso condizionale per i dispositivi di Intune (definiti come **criteri di accesso condizionale basato su dispositivo** in Azure AD) oltre ad altri criteri di accesso condizionale come l'autenticazione a più fattori.
 
->È anche possibile impostare i criteri di accesso condizionale per app aziendali di terze parti supportate da Azure AD, come Salesforce e Box. Per altri dettagli, vedere [Come impostare criteri di accesso condizionale basato su dispositivo di Azure Active Directory per controllare gli accessi delle applicazioni connesse ad Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+>È anche possibile impostare i criteri di accesso condizionale per app aziendali di terze parti supportate da Azure AD, come Salesforce e Box. Per altri dettagli, vedere [Come impostare criteri di accesso condizionale basato su dispositivo di Azure Active Directory per controllare gli accessi delle applicazioni connesse ad Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** > **Accesso condizionale** > **Criteri di Exchange Online**.

@@ -14,8 +14,9 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 08b5b555ed44275c428c15fe3529bd683dc8c004
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -28,16 +29,11 @@ Se si acquistano almeno 150 licenze per Microsoft Intune in un piano idoneo, è 
 
 La versione di valutazione gratuita di Intune può essere convertita in una sottoscrizione a pagamento usando le procedure seguenti:
 
--   **Sottoscrizione Intune**: concessa in licenza ai singoli utenti. Per altre informazioni, vedere [Come acquistare Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx). Dopo aver completato l'acquisto, seguire la procedura in [Get started with a paid subscription to Microsoft Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) (Introduzione alla sottoscrizione a pagamento di Microsoft Intune) ed esaminare i passaggi di configurazione aggiuntivi visualizzati nelle attività iniziali di Intune.
+-   **Sottoscrizione Intune**: concessa in licenza ai singoli utenti. Per altre informazioni, vedere [Come acquistare Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/Purchasing.aspx). Dopo aver completato l'acquisto, seguire la procedura in [Get started with a paid subscription to Microsoft Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) (Introduzione alla sottoscrizione a pagamento di Microsoft Intune) ed esaminare i passaggi di configurazione aggiuntivi visualizzati nelle attività iniziali di Intune.
 
--   **Enterprise Mobility + Security**: offre i servizi Intune, Azure Active Directory Premium e Azure RMS. Per altre informazioni, contattare l'Account Manager designato da Microsoft o il rivenditore locale oppure [leggere le informazioni sulle funzionalità di EMS](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx) e sui [prezzi](http://www.microsoft.com/en-us/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx).
+-   **Enterprise Mobility + Security**: offre i servizi Intune, Azure Active Directory Premium e Azure RMS. Per altre informazioni, contattare l'Account Manager designato da Microsoft o il rivenditore locale oppure [leggere le informazioni sulle funzionalità di EMS](https://www.microsoft.com/server-cloud/enterprise-mobility/overview.aspx) e sui [prezzi](https://www.microsoft.com/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx).
 
 -   **Enterprise Agreement** (&gt; 250 utenti): il programma di licenza migliore per le organizzazioni con più di 250 utenti. Il contratto EA offre la flessibilità di scegliere tra software in locale e servizi online per soddisfare al meglio le esigenze e ottimizzare la tecnologia. Per altre informazioni, contattare l'Account Manager designato da Microsoft o il rivenditore locale Microsoft oppure visitare la pagina del [sito Volume Licensing dedicata al contratto Enterprise Agreement](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx).
 
 -   **Online Subscription Program** (&lt; 250 utenti): il programma di [contratti multilicenza di Online Services](http://www.microsoft.com/licensing/online-services/default.aspx) è pensato appositamente per le organizzazioni con meno di 250 utenti. Usare questo programma per eseguire la sottoscrizione, gestire e distribuire i servizi di Intune.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

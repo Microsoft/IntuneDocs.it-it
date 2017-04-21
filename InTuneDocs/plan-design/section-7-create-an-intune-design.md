@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
-ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: ce51e92f9643ddc77e84e6b4c65825d397a37ddc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -153,7 +153,7 @@ I gruppi di utenti e dispositivi determinano la destinazione di una distribuzion
 
 -   Altre informazioni sulla [pianificazione dei gruppi di utenti e dispositivi](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
--   Informazioni su [come creare gruppi di utenti e dispositivi](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Informazioni su [come creare gruppi di utenti e dispositivi](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ### <a name="public-key-infrastructure-pki"></a>Infrastruttura a chiave pubblica (PKI)
 
@@ -326,7 +326,7 @@ Di seguito è riportato un esempio di come documentare la progettazione di un pr
 
 I profili di posta elettronica consentono la configurazione automatica di un client di posta elettronica con le informazioni di connessione e la configurazione della posta elettronica. Intune supporta i profili di posta elettronica in alcuni dispositivi.
 
--   Altre informazioni sui [profili di posta elettronica](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) e sulle piattaforme supportate.
+-   Altre informazioni sui [profili di posta elettronica](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) e sulle piattaforme supportate.
 
 Di seguito è riportato un esempio di come documentare la progettazione dei profili di posta elettronica:
 

@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 87832ec7f295c08678052d19164af9a8db051f9f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23d40a31c43a061e0f3b1fbb05827697ca7380ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,7 +62,7 @@ Di seguito viene fornita una panoramica di ogni attività durante l'implementazi
 
 Come indicato nella sezione dei requisiti precedente, è necessario una sottoscrizione EMS o Intune. Se l'organizzazione non dispone di una sottoscrizione EMS o Intune, contattare Microsoft o il team dell'account Microsoft e comunicare il proprio interesse per l'acquisto di Enterprise Mobility + Security (EMS) o Intune.
 
--   Altre informazioni su [come acquistare Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing).
+-   Altre informazioni su [come acquistare Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
 #### <a name="task-2-add-office-365-subscription"></a>Attività 2: Aggiungere la sottoscrizione Office 365
 
@@ -115,7 +116,7 @@ Microsoft Intune supporta i profili di posta elettronica, Wi-Fi e VPN. L'aggiunt
 
 Microsoft Intune supporta la distribuzione di app Web, line-of-business e di Store pubblici. È inoltre supportata la gestione delle app in cui è integrato Intune SDK, associandole con i criteri MAM. L'aggiunta e la distribuzione delle app vengono eseguite nell'area di lavoro App del portale di amministrazione di Intune. L'aggiunta dei criteri MAM viene eseguita nell'area di lavoro Criteri del portale di amministrazione di Intune. Aggiungere le app a seconda delle esigenze e distribuirle ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
--   Altre informazioni su [come aggiungere e distribuire applicazioni](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps).
+-   Altre informazioni su [come aggiungere e distribuire applicazioni](https://docs.microsoft.com/intune/deploy-use/deploy-apps).
 
 #### <a name="task-11-add-and-deploy-compliance-policies"></a>Attività 11: Aggiungere e distribuire i criteri di conformità
 
@@ -141,9 +142,4 @@ Intune supporta le piattaforme per dispositivi mobili iOS, Mac OS, Android, Wind
 ## <a name="next-section"></a>Sezione successiva
 
 Nella sezione successiva vengono fornite indicazioni su [test e convalida della distribuzione di Intune](section-9-test-and-validation.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

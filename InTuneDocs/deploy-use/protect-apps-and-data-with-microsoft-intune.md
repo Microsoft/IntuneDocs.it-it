@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,14 +49,9 @@ Questi set di regole sono denominati [criteri di gestione delle applicazioni per
 
 Per associare un'app a un criterio MAM, l'app deve incorporare Microsoft Intune App SDK. In alternativa, è possibile usare lo strumento di wrapping delle app.
 
-In app come quelle di Microsoft Office, Intune App SDK è integrato. È possibile visualizzare l'elenco completo delle applicazioni supportate nella [raccolta di applicazioni per dispositivi mobili di Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) disponibile nella pagina dei partner di Microsoft Intune. Scegliere l'app per visualizzare le piattaforme e gli scenari supportati e per verificare se l'app supporta identità multiple.
+In app come quelle di Microsoft Office, Intune App SDK è integrato. È possibile visualizzare l'elenco completo delle applicazioni supportate nella [raccolta di applicazioni per dispositivi mobili di Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponibile nella pagina dei partner di Microsoft Intune. Scegliere l'app per visualizzare le piattaforme e gli scenari supportati e per verificare se l'app supporta identità multiple.
 
 È anche possibile [abilitare le app line-of-business personalizzate](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) da usare con i criteri MAM.
 
 Oltre a limitare lo spostamento dei dati, se un dispositivo viene smarrito o rubato o se l'utente non lavora più nell'azienda, è possibile [cancellare selettivamente i dati aziendali](wipe-managed-company-app-data-with-microsoft-intune.md) lasciando solo quelli personali.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

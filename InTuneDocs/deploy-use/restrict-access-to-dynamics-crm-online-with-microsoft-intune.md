@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 01/24/2017
 Per altre informazioni sul funzionamento dell'accesso condizionale, leggere l'articolo [Proteggere l'accesso alla posta elettronica, a Office 365 e ad altri servizi](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!IMPORTANT]
-> Per distribuire l'accesso condizionale è necessario disporre di sottoscrizioni di Intune e Azure Active Directory Premium. È inoltre necessario che gli utenti dispongano delle licenze di entrambi i prodotti. La **sottoscrizione di Enterprise Mobility + Security (EMS)** include sottoscrizioni di Intune e Azure Active Directory Premium. Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Se non si dispone della sottoscrizione di EMS, è possibile ottenere una sottoscrizione per Azure Active Directory Premium. Vedere la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+> Per distribuire l'accesso condizionale è necessario disporre di sottoscrizioni di Intune e Azure Active Directory Premium. È inoltre necessario che gli utenti dispongano delle licenze di entrambi i prodotti. La **sottoscrizione di Enterprise Mobility + Security (EMS)** include sottoscrizioni di Intune e Azure Active Directory Premium. Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing). Se non si dispone della sottoscrizione di EMS, è possibile ottenere una sottoscrizione per Azure Active Directory Premium. Vedere la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 Quando un utente di destinazione tenta di usare l'app Dynamics CRM sul proprio dispositivo, si verifica quanto segue:
 

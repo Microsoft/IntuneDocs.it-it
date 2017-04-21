@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Distribuire app in Microsoft Intune
@@ -49,7 +49,7 @@ In questa procedura l'app verrà distribuita a gruppi selezionati di dispositivi
 
 5. Se è possibile configurare l'app da distribuire con i criteri di gestione per applicazioni mobili, verrà visualizzata la pagina **Gestione delle app mobili**. In questa pagina scegliere i criteri di gestione di applicazioni mobili da associare a questa app.
 
-    [Vedere quali app Microsoft sono compatibili con i criteri di gestione delle applicazioni mobili.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
+    [Vedere quali app Microsoft sono compatibili con i criteri di gestione delle applicazioni mobili.](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Se l'app da distribuire è compatibile con i profili VPN di Intune, verrà visualizzata la pagina **Profilo VPN**. In questa pagina è possibile scegliere di associare le app iOS a un profilo VPN già distribuito. La connessione VPN verrà aperta automaticamente all'avvio dell'app. Per rendere disponibile un profilo VPN, l'impostazione del profilo **VPN per app** deve essere abilitata.
  Per informazioni su come configurare i profili VPN, incluse le informazioni su come associare i profili con le app, vedere [Connessioni VPN in Microsoft Intune](vpn-connections-in-microsoft-intune.md).

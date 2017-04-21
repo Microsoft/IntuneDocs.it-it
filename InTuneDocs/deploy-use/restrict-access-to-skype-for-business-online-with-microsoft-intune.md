@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,9 +38,9 @@ Quando un utente di destinazione tenta di usare Skype for Business Online sul pr
 
 **Prima** di configurare i criteri di accesso condizionale per Skype for Business Online è necessario:
 - Avere una **sottoscrizione di Skype for Business Online** e assegnare la licenza di Skype for Business agli utenti.
-- Avere una **sottoscrizione di Enterprise Mobility + Security (EMS)** o una **sottoscrizione di Azure Active Directory Premium (Azure AD)** e gli utenti devono essere licenziatari di EMS o Azure AD. Per altre informazioni dettagliate, vedere i [prezzi di Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o i [prezzi di Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Avere una **sottoscrizione di Enterprise Mobility + Security (EMS)** o una **sottoscrizione di Azure Active Directory Premium (Azure AD)** e gli utenti devono essere licenziatari di EMS o Azure AD. Per altre informazioni dettagliate, vedere i [prezzi di Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o i [prezzi di Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
--   [Abilitare l'autenticazione moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) per Skype for Business Online.
+-   [Abilitare l'autenticazione moderna](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) per Skype for Business Online.
 -  Tutti gli utenti devono usare **Skype for Business Online**. Se si ha una distribuzione con Skype for Business Online e Skype for Business locale, i criteri di accesso condizionale non verranno applicati agli utenti.
 
 Il dispositivo che necessita dell'accesso a Skype for Business Online deve:
@@ -118,9 +119,4 @@ Scegliere un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Disp
 * **Dispositivi non conformi**: si tratta dei dispositivi che non possono accedere a Skype for Business Online.
 
 * **Dispositivi conformi e registrati con AAD**: si tratta dei dispositivi che possono accedere a Skype for Business Online.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

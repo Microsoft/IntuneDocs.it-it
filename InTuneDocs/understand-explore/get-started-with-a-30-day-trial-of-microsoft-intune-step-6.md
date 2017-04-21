@@ -14,8 +14,9 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 31788f18d983ab6b0fc57a93566bd43e6606f10f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -36,7 +37,7 @@ Per altre informazioni su avvisi, notifiche e report, vedere [Monitoraggio e rep
 ## <a name="intune-capabilities"></a>Funzionalità di Intune
 Intune ha un'ampia gamma di funzionalità in aggiunta a quelle illustrate in questa breve procedura di configurazione. Alcuni esempi di queste funzionalità includono:
 
--   **Controllo dell'accesso a Exchange e Office 365.** Per informazioni dettagliate, vedere [Limitare l'accesso alla posta elettronica e ai servizi di Office 365 con Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) e [Limitare l’accesso alle app nei servizi Office 365](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   **Controllo dell'accesso a Exchange e Office 365.** Per informazioni dettagliate, vedere [Limitare l'accesso alla posta elettronica e ai servizi di Office 365 con Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) e [Limitare l’accesso alle app nei servizi Office 365](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
 -   **Gestione dei dispositivi iOS di proprietà dell'azienda.** Per altri dettagli, vedere [Registrare i dispositivi iOS di proprietà dell'azienda in Microsoft Intune](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
 
@@ -56,9 +57,4 @@ Le opzioni di supporto sono descritte in [Come ottenere supporto per Microsoft I
 Leggere informazioni sui [metodi comuni per l'uso di Intune](common-ways-to-use-intune.md)
 
 Passare a una [sottoscrizione a pagamento](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

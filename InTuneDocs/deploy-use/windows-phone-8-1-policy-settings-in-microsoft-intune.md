@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2fd7ebc53c3b033982297dbce4a091cd9336fbb1
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 65d3b454531084008bdbb01dd17f5ce34ef5890f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -136,7 +137,7 @@ In **Elenco app consentite e bloccate** specificare un elenco di app da consenti
 #### <a name="how-to-specify-urls-to-app-stores"></a>Come specificare gli URL negli App Store
 Per specificare un URL app nell'elenco di app consentite e bloccate, usare il formato seguente:
 
-Nella pagina [App + giochi per Windows Phone](http://www.windowsphone.com/en-us/store/overview) cercare l'applicazione che si vuole usare.
+Nella pagina [App + giochi per Windows Phone](http://www.windowsphone.com/store/overview) cercare l'applicazione che si vuole usare.
 
 Aprire la pagina dell'app e copiare l'URL negli Appunti. A questo punto l'URL può essere usato in entrambi gli elenchi di app consentite o bloccate.
 
@@ -172,9 +173,4 @@ Nella finestra di dialogo **Aggiungi o modifica impostazione URI OMA** specifica
 
 ### <a name="see-also"></a>Vedere anche
 [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e43444bff3b189c1516c6ca7131771035313ea
-ms.openlocfilehash: 6258917de60bdbf8efde4720c17ec6fc643154bd
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c795b0b5b12d900155e55e0874009177b32a2546
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +36,7 @@ Questi sono i problemi comuni che un amministratore IT può sperimentare durante
 | Problema | Descrizione | Risoluzione |
 | -- | -- | -- |
 | Criteri non applicati a Skype for Business | I criteri di protezione delle app senza registrazione del dispositivo, eseguita nel portale di Azure, non vengono applicati all'app Skype for Business in dispositivi iOS e Android. | È necessario configurare Skype for Business per l'autenticazione moderna.  Per configurare l'autenticazione moderna per Skype, seguire le istruzioni in [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (Abilitare il tenant per l'autenticazione moderna). |
-| Criteri per le app di Office non applicati | I criteri di protezione delle app non vengono applicati ad alcuna [app di Office supportata](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) per qualsiasi utente. | Verificare che l'utente abbia una licenza per Intune e che le app di Office siano la destinazione di un criterio di protezione delle app distribuito. L'applicazione di un criterio di protezione dell'app appena distribuito può richiedere fino a otto ore. |
+| Criteri per le app di Office non applicati | I criteri di protezione delle app non vengono applicati ad alcuna [app di Office supportata](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) per qualsiasi utente. | Verificare che l'utente abbia una licenza per Intune e che le app di Office siano la destinazione di un criterio di protezione delle app distribuito. L'applicazione di un criterio di protezione dell'app appena distribuito può richiedere fino a otto ore. |
 | L'amministratore non può configurare criteri di protezione delle app nel portale di Azure | L'utente amministratore IT non riesce a configurare i criteri di protezione delle app nel portale di Azure. | i ruoli utente seguenti hanno accesso al portale di Azure: <ul><li>Amministratore globale, configurabile nel [portale di Office](http://portal.office.com/)</li><li>Proprietario, configurabile nel [portale di Office](https://portal.azure.com/)</li><li>Collaboratore, configurabile nel [portale di Office](https://portal.azure.com/)</li></ul>  Per informazioni sulla configurazione di questi ruoli, vedere [Preparazione alla configurazione dei criteri di gestione delle app per dispositivi mobili con Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md).|
 |Account utente mancanti nei report dei criteri di protezione delle app | I report della console di amministrazione non mostrano gli account utente a cui sono stati distribuiti di recente criteri di protezione delle app. | Se un utente è stato selezionato di recente come destinazione di criteri di protezione delle app, possono trascorrere fino a 24 ore prima che l'utente compaia nei report come utente di destinazione. |
 | Modifiche dei criteri non funzionanti | Per l'applicazione di modifiche o aggiornamenti dei criteri di protezione delle app possono essere richieste fino a 8 ore. | Se applicabile, l'utente finale può disconnettersi dall'app e rieseguire l'accesso per forzare la sincronizzazione con il servizio. |
@@ -87,7 +88,7 @@ Messaggio o finestra di dialogo di errore | Causa | Soluzione |
 **Introduzione a Intune Managed Browser**: questa app funziona in modo ottimale se gestita da Microsoft Intune. L'app può essere usata per navigare in rete ma, quando è gestita da Microsoft Intune, è possibile accedere ad altre funzionalità di protezione dati. | Non è stato rilevato il criterio di protezione dell'app obbligatorio per l'app Intune Managed Browser. <br><br>L'utente può ancora usare l'app per esplorare il Web, ma l'app non è gestita da Intune. | Verificare che sia stato distribuito un criterio di protezione dell'app iOS al gruppo di sicurezza dell'utente e che l'app Intune Managed Browser rappresenti la destinazione.
 **L'accesso non è riuscito**: l'accesso non è disponibile al momento. Riprovare più tardi. | Non è stato possibile registrare l'utente con il servizio MAM dopo che l'utente ha provato ad accedere con il proprio account aziendale o dell'istituto di istruzione. | Verificare che sia stato distribuito un criterio di protezione dell'app iOS al gruppo di sicurezza dell'utente e che questa app rappresenti la destinazione.
 **L'account non è configurato**: l'organizzazione non ha configurato l'account per l'accesso ai dati aziendali o dell'istituto di istruzione. Per assistenza, contattare l'amministratore IT. | L'account utente non ha una licenza Intune A Direct. | Verificare che all'account dell'utente sia assegnata una licenza di Intune nel [portale di Office](http://portal.office.com).
-**Dispositivo non conforme**: questa app non può essere usata perché si sta usando un dispositivo jailbroken. Per assistenza contattare l'amministratore IT. | Intune ha rilevato che l'utente sta usando un dispositivo jailbroken. | Ripristinare le impostazioni predefinite del dispositivo. Seguire [queste istruzioni](https://support.apple.com/en-us/HT201274) dal sito di supporto di Apple.
+**Dispositivo non conforme**: questa app non può essere usata perché si sta usando un dispositivo jailbroken. Per assistenza contattare l'amministratore IT. | Intune ha rilevato che l'utente sta usando un dispositivo jailbroken. | Ripristinare le impostazioni predefinite del dispositivo. Seguire [queste istruzioni](https://support.apple.com/HT201274) dal sito di supporto di Apple.
 **Connessione a Internet richiesta**: è necessaria una connessione a Internet per verificare se è possibile usare questa app. | Il dispositivo non è connesso a Internet. | Connettere il dispositivo a una rete Wi-Fi o dati.
 **Errore sconosciuto**: provare a riavviare l'app. Se il problema persiste, contattare l'amministratore IT per assistenza. | Si è verificato un errore sconosciuto. | Attendere qualche minuto e riprovare. Se l'errore persiste, creare un ticket di supporto con Intune [qui](how-to-get-support-for-microsoft-intune.md).
 **Accesso ai dati dell'organizzazione**: l'account aziendale o dell'istituto di istruzione specificato non ha accesso a questa app. Può essere necessario accedere con un altro account. Per assistenza contattare l'amministratore IT. | Intune rileva che l'utente ha provato ad accedere con il secondo account aziendale o dell'istituto di istruzione che è diverso dall'account registrato in MAM per il dispositivo. MAM può gestire un solo account aziendale o dell'istituto di istruzione alla volta per ogni dispositivo. | Richiedere all'utente di accedere con l'account il cui nome utente è popolato dalla schermata di accesso. <br> <br> In alternativa, richiedere all'utente di accedere con il nuovo account aziendale o dell'istituto di istruzione e rimuovere l'account registrato in MAM esistente.
@@ -116,9 +117,4 @@ Finestra di dialogo/Messaggio di errore | Causa | Soluzione |
 - [Convalidare la configurazione dei criteri di gestione delle applicazioni mobili](../deploy-use/validate-mobile-application-management.md)
 - [Preparazione alla configurazione dei criteri di gestione delle app per dispositivi mobili con Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
