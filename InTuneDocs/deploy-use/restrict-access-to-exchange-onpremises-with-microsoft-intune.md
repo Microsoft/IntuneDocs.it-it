@@ -83,10 +83,7 @@ Sono supportati:
 -   Client di posta Exchange ActiveSync, ad esempio Gmail in Android 4 o versione successiva.
 -   Client di posta Exchange ActiveSync in **dispositivi Android for Work**: nei dispositivi Android for Work sono supportate solo le app **Gmail** e **Nine Work** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni in Android for Work, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work. È anche necessario distribuire tali app come installazioni obbligatorie. 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > L'app Microsoft Outlook per Android e iOS non è supportata.
 
 ## <a name="support-for-pcs"></a>Supporto per PC

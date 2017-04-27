@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -41,7 +42,6 @@ Per informazioni dettagliate vedere [Limitare l'accesso alla posta elettronica e
 - **Criteri di accesso alle risorse:** questi criteri interagiscono per consentire agli utenti di accedere ai file e alle risorse necessarie per svolgere le attività, ovunque si trovino.
 Per informazioni dettagliate vedere [Abilitare l'accesso alle risorse aziendali con Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md).
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Per l'elenco completo dei criteri di Intune vedere [Informazioni di riferimento sui criteri di Microsoft Intune](microsoft-intune-policy-reference.md).
 
@@ -212,9 +212,4 @@ Quando si elimina un criterio o si rimuove un dispositivo da un gruppo in cui è
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>Dove è possibile trovare contenuti sulla risoluzione dei problemi?
 
 Vedere [Risolvere i problemi relativi ai criteri in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

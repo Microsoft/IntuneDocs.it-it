@@ -58,8 +58,6 @@ Il certificato viene importato quando si configura un profilo certificato attend
 
 -  Windows Phone 8.1 e versioni successive
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  Aggiungere un criterio **Profilo certificato attendibile**.
 
     Altre informazioni: [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
