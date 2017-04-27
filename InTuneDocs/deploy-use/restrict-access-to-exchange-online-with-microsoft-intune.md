@@ -78,8 +78,6 @@ Il diagramma seguente illustra il flusso usato dai criteri di accesso condiziona
 - Android 4.0 e versioni successive, Samsung Knox Standard 4.0 e versioni successive e Android for Work
 - iOS 8.0 e versioni successive
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 Con l'**autenticazione moderna** l'accesso basato su Active Directory Authentication Library (ADAL) diventa disponibile per i client Microsoft Office.
 
 -   Questo tipo di autenticazione consente ai client Office di usare l'autenticazione basata su browser, nota anche come autenticazione passiva. Per eseguire l'autenticazione, l'utente viene indirizzato a una pagina Web di accesso.
