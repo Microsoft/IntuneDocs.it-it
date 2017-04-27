@@ -58,13 +58,13 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## Procedure
 ### [Usare la cancellazione completa o selettiva](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-### [Controllo remoto di dispositivi Android](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # Gestione degli utenti
 ## [Che cos'è la gestione degli utenti?](manage-users/what-is.md)
 <!--- Was What is users & group management--->
 ## [Introduzione](manage-users/get-started-with-groups.md)
+## [Offrire assistenza agli utenti](manage-users/help-desk.md)
 <!--- ## [Plan and design](manage-users/plan-and-design.md) --->
 
 <!--- ## [Troubleshoot](manage-users/troubleshooting.md) --->
