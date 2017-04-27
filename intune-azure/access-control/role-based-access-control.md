@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -81,9 +81,7 @@ Il nuovo ruolo viene visualizzato nell'elenco del pannello **Ruoli**.
 ## <a name="how-to-assign-a-role"></a>Come assegnare un ruolo
 
 1. Nel pannello **Ruoli** del carico di lavoro di **Controllo dell'accesso** scegliere il ruolo predefinito o personalizzato da assegnare.
-2. Nel pannello <*Nome ruolo*>- **Proprietà** scegliere **Gestisci** > **Assegnazioni**.
-    >[!TIP]
-    >In questo pannello è anche possibile modificare o eliminare i ruoli esistenti.
+2. Nel pannello <*Nome ruolo*>- **Proprietà** scegliere **Gestisci** > **Assegnazioni**. In questo pannello è anche possibile modificare o eliminare i ruoli esistenti.
 3. Nel pannello successivo scegliere **Assegna**.
 4. Nel pannello **Assegnazioni di ruolo** immettere un **nome** e una **descrizione** facoltativa per l'assegnazione e quindi scegliere le operazioni seguenti:
     - **Membri**: selezionare un gruppo contenente l'utente a cui si vuole assegnare le autorizzazioni.
