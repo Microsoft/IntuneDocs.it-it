@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
-ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
-ms.lasthandoff: 03/24/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ea57a51f2855dea416ad4a76e657e1846ffe41f1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -69,9 +69,9 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
 
 ## <a name="add-a-device-enrollment-manager"></a>Aggiungere un manager di registrazione dispositivi
 
-1.  Assicurarsi che l'utente che si vuole aggiungere all'account del manager di registrazione dispositivi sia già presente. Se è necessario aggiungere l'utente, accedere al [Portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) e seguire la procedura descritta in [Aggiungere utenti singolarmente o in blocco a Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+1.  Assicurarsi che l'utente che si vuole aggiungere all'account del manager di registrazione dispositivi sia già presente. Se è necessario aggiungere l'utente, accedere al [Portale di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) e seguire la procedura descritta in [Aggiungere utenti singolarmente o in blocco a Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-2.  Accedere alla [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) con le credenziali di amministratore.
+2.  Accedere alla [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) con le credenziali di amministratore.
 
 3.  Nel riquadro di spostamento scegliere **Amministrazione**, passare a **Gestione amministratori** e selezionare **Manager di registrazione dispositivi**. Verrà visualizzata la pagina **Manager di registrazione dispositivi**.
 
@@ -88,7 +88,7 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Eliminare un manager di registrazione dispositivi da Intune
 
-1.  Accedere al [portale di amministrazione di Microsoft Intune](http://manage.microsoft.com) con le credenziali di amministratore.
+1.  Accedere al [portale di amministrazione di Microsoft Intune](https://manage.microsoft.com) con le credenziali di amministratore.
 
 2.  Nel riquadro di spostamento scegliere **Amministrazione**, passare a **Gestione amministratori** e selezionare **Manager di registrazione dispositivi**. Verrà visualizzata la pagina **Manager di registrazione dispositivi**.
 

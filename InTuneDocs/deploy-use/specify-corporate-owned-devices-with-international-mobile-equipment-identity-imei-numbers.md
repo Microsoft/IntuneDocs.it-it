@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 02743ee216ce09c74a9d0ab2455e826b36e8aa4a
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5d317c837d43d58b9ac4750fa6f0e054fe2ff7da
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/22/2017
 
 Microsoft Intune consente agli amministratori di identificare i dispositivi mobili aziendali tramite l'importazione dei numeri IMEI per le piattaforme per dispositivi mobili. Dopo la registrazione dei dispositivi in Intune, è possibile visualizzare i dispositivi con numeri IMEI importati in **Gruppi** > **Panoramica** > **Tutti i dispositivi**. **Gruppo di dispositivi** elenca i dispositivi con numeri IMEI importati come dispositivi di tipo **Aziendale** nella colonna **Proprietà**.
 
-1. Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) scegliere **Gruppi** &gt; **Tutti i dispositivi** &gt; **Dispositivi aziendali preregistrati** &gt; **Per IMEI (tutte le piattaforme)** e quindi scegliere **Aggiungi dispositivi....**. È possibile aggiungere dispositivi in due modi:
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Gruppi** &gt; **Tutti i dispositivi** &gt; **Dispositivi aziendali preregistrati** &gt;  **Per IMEI (tutte le piattaforme)** e quindi scegliere **Aggiungi dispositivi....**. È possibile aggiungere dispositivi in due modi:
 
     -   **Caricando un file con estensione csv contenente i numeri di serie**: creare un elenco delimitato da virgole (con estensione csv) composto da due colonne senza intestazione e limitato a 5.000 dispositivi o a 5 MB per ogni file con estensione csv. Il campo dei dettagli è limitato a 128 caratteri.
 

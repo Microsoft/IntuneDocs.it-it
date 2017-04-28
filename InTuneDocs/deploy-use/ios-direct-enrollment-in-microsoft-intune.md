@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -35,7 +35,7 @@ Durante la registrazione diretta dei dispositivi iOS, è possibile registrare un
 
 1.  Se non è disponibile, creare un profilo di registrazione dispositivi per i dispositivi iOS registrati tramite Apple Configurator. Un profilo di registrazione dispositivi consente di definire le impostazioni applicate ai dispositivi.
 
-    1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) fare clic su **Criteri** &gt; **Registrazione di dispositivi aziendali** e scegliere **Aggiungi**.
+    1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** &gt; **Registrazione di dispositivi aziendali** e scegliere **Aggiungi**.
 
         ![Pagina Crea profilo di registrazione dispositivi](../media/pol-sa-corp-enroll.png)
 

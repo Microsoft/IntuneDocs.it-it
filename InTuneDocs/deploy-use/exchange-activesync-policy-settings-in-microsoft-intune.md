@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: c4023007f993436e0d7628cce52f78a1127c88f8
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ Usare i criteri di **Exchange ActiveSync** di Microsoft Intune per configurare l
 |**Richiedi crittografia sulle schede di memoria**|Richiede la crittografia dei dati presenti nella risorsa di archiviazione esterna, ad esempio una scheda SD (nei dispositivi supportati).
 <sup>1</sup> Altre informazioni per i dispositivi che eseguono Windows 8.1
 
--   Per imporre la crittografia nei dispositivi che eseguono Windows 8.1, è necessario installare l'[Aggiornamento del client MDM di dicembre 2014 in Windows](http://support.microsoft.com/kb/3013816) in ogni dispositivo.
+-   Per imporre la crittografia nei dispositivi che eseguono Windows 8.1, è necessario installare l'[Aggiornamento del client MDM di dicembre 2014 in Windows](https://support.microsoft.com/kb/3013816) in ogni dispositivo.
 
 -   Se si abilita questa impostazione per i dispositivi Windows 8.1, tutti gli utenti del dispositivo devono avere un account Microsoft.
 
@@ -82,9 +83,4 @@ Usare i criteri di **Exchange ActiveSync** di Microsoft Intune per configurare l
 
 ### <a name="see-also"></a>Vedere anche
 [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="create-a-terms-and-conditions-policy"></a>Creare un criterio relativo a termini e condizioni
 
-1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
 
     ![Schermata dei criteri relativi a termini e condizioni](./media/pol-sa-terms-conditions.png)
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>Distribuire un criterio relativo a termini e condizioni
 
-1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
 
 2.  Nell'elenco **Criteri di termini e condizioni** selezionare il criterio da distribuire, quindi fare clic su **Gestisci distribuzione**.
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 12/10/2016
 
 ## <a name="monitor-a-terms-and-conditions-policy"></a>Monitorare un criterio relativo a termini e condizioni
 
-1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
 
 2.  Nella finestra **Crea nuovo report** fare clic su **Visualizza report**. Verrà aperto un report che elencherà in dettaglio gli utenti che hanno accettato i termini e le condizioni distribuite.
 
@@ -73,7 +73,7 @@ Quando si modifica un criterio esistente relativo a termini e condizioni, è pos
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Gestire più versioni di termini e condizioni
 
-1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) fare clic su **Criteri** &gt; **Termini e condizioni**.
 
 2.  Selezionare il criterio relativo ai termini e alle condizioni da modificare, quindi fare clic su **Modifica**.
 

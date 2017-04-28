@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
-ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -106,7 +106,7 @@ Il software client di Intune può essere distribuito nei computer come parte di 
 
 ## <a name="instruct-users-to-self-enroll"></a>Istruire gli utenti per la registrazione automatica
 
-Per installare il software client di Intune, gli utenti possono visitare il [sito Web del portale aziendale](http://portal.manage.microsoft.com). Le informazioni specifiche visibili agli utenti nel portale Web variano in base all'autorità di gestione dei dispositivi mobili (MDM) dell'account e a piattaforma e versione del PC dell'utente.
+Per installare il software client di Intune, gli utenti possono visitare il [sito Web del portale aziendale](https://portal.manage.microsoft.com). Le informazioni specifiche visibili agli utenti nel portale Web variano in base all'autorità di gestione dei dispositivi mobili (MDM) dell'account e a piattaforma e versione del PC dell'utente.
 
 Se agli utenti non è stata assegnata una licenza di Intune o se l'autorità MDM dell'organizzazione non è stata impostata su Intune, gli utenti non visualizzeranno alcuna opzione per la registrazione.
 

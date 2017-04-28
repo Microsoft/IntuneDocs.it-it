@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
-ms.openlocfilehash: 825acdb4452aa7fc9369be653b8afcdd4312ab23
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ef1fbee09172a89e0f83cbe905a00f3a3ef25b05
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Intune consente la gestione di dispositivi mobili (MDM) iPad, iPhone e macOS e o
     Se non è stato già fatto, preparare la gestione di dispositivi mobili (MDM) [impostando l'autorità di gestione di dispositivi mobili](prerequisites-for-enrollment.md#step-2-set-mdm-authority), ad esempio **Microsoft Intune**, e configurando MDM.
 
 2.  **Ottenere una richiesta di firma del certificato**<br>
-    Gli utenti amministratori possono aprire la [console di amministrazione di Microsoft Intune](http://manage.microsoft.com), fare clic su **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **iOS e Mac OS X** &gt; **Carica un certificato APNs** e quindi scegliere **Scarica richiesta di certificato APN**. Salvare il file della richiesta di firma del certificato (estensione csr) in locale. Questo file viene usato per richiedere un certificato di relazione di trust al portale Apple Push Certificates.
+    Gli utenti amministratori possono aprire la [console di amministrazione di Microsoft Intune](https://manage.microsoft.com), fare clic su **Amministrazione** &gt;  **Gestione dei dispositivi mobili** &gt; **iOS e Mac OS X** &gt; **Carica un certificato APNs** e quindi scegliere **Scarica richiesta di certificato APN**. Salvare il file della richiesta di firma del certificato (estensione csr) in locale. Questo file viene usato per richiedere un certificato di relazione di trust al portale Apple Push Certificates.
 
     ![Caricare la finestra di dialogo del certificato APN](../media/Intune-iOS-enrollment-with-apns.png)
 
@@ -45,7 +45,7 @@ Intune consente la gestione di dispositivi mobili (MDM) iPad, iPhone e macOS e o
     > Questo certificato APN dovrà essere rinnovato (non sostituito) ogni anno. Usare lo stesso ID Apple per accedere al portale Apple Push Certificates per rinnovare il certificato e quindi usare le stesse istruzioni in questo argomento per scaricare il certificato e caricarlo in Intune.
 
 4.  **Aggiungere il certificato APN a Intune**<br>
-    Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com), fare clic su **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **iOS e Mac OS X** &gt; **Carica un certificato APNs** e quindi scegliere **Carica il certificato APNs**. Passare al file (con estensione pem) del certificato, scegliere **Apri** e quindi immettere l'**ID Apple**. Con il certificato APN Intune può registrare e gestire i dispositivi iOS effettuando il push dei criteri nei dispositivi mobili registrati.
+    Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com), fare clic su **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **iOS e Mac OS X** &gt; **Carica un certificato APNs** e quindi scegliere **Carica il certificato APNs**. Passare al file (con estensione pem) del certificato, scegliere **Apri** e quindi immettere l'**ID Apple**. Con il certificato APN Intune può registrare e gestire i dispositivi iOS effettuando il push dei criteri nei dispositivi mobili registrati.
 
 5.  **Indicare agli utenti come registrare i propri dispositivi per accedere alle risorse aziendali.**
 

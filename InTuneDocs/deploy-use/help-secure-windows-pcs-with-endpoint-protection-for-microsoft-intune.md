@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 39dab717810aa5f900cbb4f4371491b05de1ecd1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -89,7 +89,7 @@ Se si impostano i valori dei criteri per le opzioni **Installa Endpoint Protecti
 |**Monitorizza attività di file e programmi nei computer**|Consente il monitoraggio dei file in ingresso e in uscita, nonché delle attività dei programmi sui computer. Con questa impostazione, Endpoint Protection è in grado di monitorare quando vengono eseguiti file e programmi nonché di notificare l'utente in merito alle operazioni relative a questi file e programmi.<br /><br />Impostazione consigliata: **Sì**|
 |**File monitorati**|Consente di scegliere se monitorare solo i file in ingresso, quelli in uscita o tutti.<br /><br />Impostazione consigliata: **Monitora tutti i file**|
 |**Abilita monitoraggio del comportamento**|Consente a Microsoft Intune Endpoint Protection di verificare la presenza di alcuni modelli di attività sospette nei computer client.<br /><br />Impostazione consigliata: **Sì**|
-|**Abilita Network Inspection System**|Abilita Network Inspection System (NIS) nei computer client. Con NIS vengono usate firme di vulnerabilità note ottenute da [Microsoft Malware Protection Center](http://go.microsoft.com/fwlink/?LinkId=234249) per rilevare e bloccare il traffico di rete dannoso.<br /><br />Impostazione consigliata: **Sì**|
+|**Abilita Network Inspection System**|Abilita Network Inspection System (NIS) nei computer client. Con NIS vengono usate firme di vulnerabilità note ottenute da [Microsoft Malware Protection Center](https://go.microsoft.com/fwlink/?LinkId=234249) per rilevare e bloccare il traffico di rete dannoso.<br /><br />Impostazione consigliata: **Sì**|
 
   ![Impostazioni in tempo reale per Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 
