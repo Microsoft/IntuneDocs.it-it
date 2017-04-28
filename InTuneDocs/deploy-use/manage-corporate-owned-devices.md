@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 8ef5f26eced99dac547be727fc96e41c11d3a0e7
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/31/2017
 
 È possibile registrare i dispositivi di proprietà dell'organizzazione o dell'azienda in Intune in diversi modi a seconda del tipo di dispositivo, della modalità di acquisto e delle esigenze dell'organizzazione. È anche possibile installare l'app Portale aziendale per registrare e gestire i dispositivi di proprietà dell'azienda, come negli scenari BYOD (Bring Your Own Device).
 
-Per impostazione predefinita, i dispositivi di tutte le piattaforme sono autorizzati alla registrazione in Intune. Per impedire la registrazione dei dispositivi, accedere al [portale di amministrazione di Microsoft Intune](http://manage.microsoft.com) con le credenziali di amministratore. Scegliere **Amministrazione** > **Gestione dei dispositivi mobili** > **Regole di registrazione** e deselezionare le caselle di controllo applicabili per le piattaforme da bloccare.
+Per impostazione predefinita, i dispositivi di tutte le piattaforme sono autorizzati alla registrazione in Intune. Per impedire la registrazione dei dispositivi, accedere al [portale di amministrazione di Microsoft Intune](https://manage.microsoft.com) con le credenziali di amministratore. Scegliere **Amministrazione** > **Gestione dei dispositivi mobili** > **Regole di registrazione** e deselezionare le caselle di controllo applicabili per le piattaforme da bloccare.
 
 ## <a name="enroll-corporate-owned-ios-devices"></a>Registrare i dispositivi iOS di proprietà dell'azienda
 

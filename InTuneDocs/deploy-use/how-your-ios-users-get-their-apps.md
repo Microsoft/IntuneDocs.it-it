@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 02e54d4ae2ffa860fb95725c74fdff913e88365b
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -40,13 +41,13 @@ Le restrizioni di Apple impediscono alle app line-of-business e alle app di App 
 
 Gli utenti registrati possono ottenere le app toccando i riquadri seguenti nella schermata App dell'app Portale aziendale:
 
-- Il riquadro **Tutte le app** punta all'elenco di tutte le app nella scheda TUTTE del [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+- Il riquadro **Tutte le app** punta all'elenco di tutte le app nella scheda TUTTE del [sito Web del portale aziendale](https://portal.manage.microsoft.com).
 
 - Dal riquadro **App in evidenza** gli utenti vengono indirizzati alla scheda IN EVIDENZA del sito Web del portale aziendale.
 
 - Il riquadro **Categorie** punta alla scheda CATEGORIE del sito Web del portale aziendale.
 
- 
+
 ![Schermata delle app nel portale aziendale iOS](./media/ios-cp-app-main-apps-screen.png)
 
 Per informazioni su come aggiungere app e inserirle in questi riquadri, vedere [Aggiungere app per dispositivi registrati in Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md).
@@ -55,9 +56,4 @@ Per informazioni su come aggiungere app e inserirle in questi riquadri, vedere [
 [Modalità di recupero delle app per gli utenti di Android](how-your-android-users-get-their-apps.md)
 
 [Modalità di recupero delle app per gli utenti di Windows](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

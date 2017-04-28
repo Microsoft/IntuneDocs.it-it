@@ -14,9 +14,9 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: abba595672fa88efc022128ec8751cb27d14b089
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +50,7 @@ Rassicurare gli utenti sarà utile per agevolare la distribuzione. L'elenco segu
 
 * __Personalizzazione.__ Fornire istruzioni non specifiche della distribuzione può indurre gli utenti finali a pensare che non sia stata dedicata la dovuta attenzione alla loro esperienza. È possibile usare questo [modello di registrazione personalizzabile degli utenti finali di Intune per gli amministratori IT](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) per creare istruzioni di registrazione specifiche destinate agli utenti finali.
 
-* __Canali di comunicazione diversi.__ Così come hanno [diversi stili di apprendimento](http://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/), gli utenti hanno modalità preferite per la fruizione delle informazioni. Agli utenti che preferiscono i video alla documentazione, Microsoft offre [versioni video delle procedure per la registrazione di vari tipi di dispositivo](https://channel9.msdn.com/Series/IntuneEnrollment) e altri video su Channel 9. Questi video possono essere incorporati direttamente nel [sito di SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) aziendale o sono disponibili per il download di copie locali, sia del video che solo della traccia audio.
+* __Canali di comunicazione diversi.__ Così come hanno [diversi stili di apprendimento](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/), gli utenti hanno modalità preferite per la fruizione delle informazioni. Agli utenti che preferiscono i video alla documentazione, Microsoft offre [versioni video delle procedure per la registrazione di vari tipi di dispositivo](https://channel9.msdn.com/Series/IntuneEnrollment) e altri video su Channel 9. Questi video possono essere incorporati direttamente nel [sito di SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) aziendale o sono disponibili per il download di copie locali, sia del video che solo della traccia audio.
 
 * __Conoscenza degli utenti.__ L'esperienza degli utenti finali avrà un impatto sulla produttività e conoscere la loro esperienza faciliterà le attività di risoluzione dei problemi all'occorrenza. Sapere in che modo gli utenti finali si procurano le app può rendere molto più facile la diagnostica dei problemi riscontrati, oltre a permettere di risolverli più velocemente.
 

@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -57,7 +57,7 @@ I criteri di protezione delle app vengono creati nel portale di Azure. Se si usa
 
 Seguire questa procedura per creare criteri di protezione delle app:
 
-1. Passare al [portale di Azure](http://portal.azure.com) e immettere le proprie credenziali.
+1. Passare al [portale di Azure](https://portal.azure.com) e immettere le proprie credenziali.
 
 2. Scegliere **Altri servizi** e digitare "Intune".
 
@@ -109,7 +109,7 @@ Dopo aver creato un criterio come descritto nella procedura precedente, non verr
 
 A partire da Intune versione 1703, è possibile aggiungere genericamente app LOB in Intune quando si crea un nuovo criterio di protezione delle app. In questo modo è possibile definire i criteri di protezione per le app LOB usando l'SDK per MAM senza dover necessariamente disporre delle autorizzazioni di distribuzione completa delle app.
 
-> [!TIP] 
+> [!TIP]
 > È anche possibile aggiungere app LOB in Intune quando si esegue il flusso di lavoro di [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started).
 
 > [!IMPORTANT]
@@ -127,13 +127,13 @@ A partire da Intune versione 1703, è possibile aggiungere genericamente app LOB
 
 ### <a name="to-add-lob-apps-windows"></a>Per aggiungere app LOB (Windows)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > È necessario selezionare Windows 10 dall'elenco a discesa Piattaforma quando si crea un nuovo criterio di protezione delle app.
 
 1.  Nel pannello Aggiungi criteri scegliere **App consentite** o **Exempt apps** (App esenti) per aprire il pannello App consentite o Exempt apps (App esenti).
 
     > [!NOTE]
-    > 
+    >
     - **App consentite**: si tratta delle app che devono essere conformi a questo criterio.
     - **Exempt apps** (App esenti): queste app sono escluse da questo criterio e possono accedere ai dati aziendali senza restrizioni.
 <br></br>

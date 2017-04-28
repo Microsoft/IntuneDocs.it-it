@@ -15,8 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 47d1437159da85b958e6e6fa91fa743d7746c5ce
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -46,7 +47,7 @@ Nella procedura riportata di seguito viene descritto come creare una regola pers
 
 ## <a name="create-a-default-access-rule"></a>Creare una regola di accesso predefinita
 
-1.  Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) scegliere **Criteri** &gt; **Exchange ActiveSync**.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Exchange ActiveSync**.
 
 2.  Nell'elenco **Regola predefinita** selezionare la regola di accesso da applicare a tutti i dispositivi mobili a cui non si applica una regola o un'esenzione personale. Scegliere **Salva**.
 
@@ -54,12 +55,7 @@ La procedura seguente descrive come creare una regola personalizzata:
 
 ## <a name="create-a-custom-access-rule"></a>Creare una regola di accesso personalizzata
 
-1. Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) scegliere **Criteri** &gt; **Exchange ActiveSync**.
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Exchange ActiveSync**.
 
 2.  Nell'elenco **Eccezioni della piattaforma** scegliere **Aggiungi regola** e quindi creare una regola personalizzata. Scegliere **Salva**.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
