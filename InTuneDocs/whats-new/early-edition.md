@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 31f984fabd2373d242e5e3399bd0c82fbaf53070
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -59,7 +59,7 @@ Gli utenti non devono più eseguire l'accesso all'app di Outlook se sono già co
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicatore di stato dell'accesso al portale aziendale Android <!--953374-->
 
-Un aggiornamento all'app Portale aziendale Android mostra un indicatore di stato dell'accesso quando l'utente avvia o riprende l'app. L'indicatore indica una progressione attraverso nuovi stati, a partire da "Connessione in corso...", ad "Accesso in corso..." e infine "Verifica dei requisiti di sicurezza in corso..." prima di consentire all'utente di accedere all'app. È possibile visualizzare le nuove schermate per l'app del portale aziendale per Android nella [pagina delle novità dell'interfaccia utente di Intune](whats-new-in-intune-app-ui.md). 
+Un aggiornamento all'app Portale aziendale Android mostra un indicatore di stato dell'accesso quando l'utente avvia o riprende l'app. L'indicatore indica una progressione attraverso nuovi stati, a partire da "Connessione in corso...", ad "Accesso in corso..." e infine "Verifica dei requisiti di sicurezza in corso..." prima di consentire all'utente di accedere all'app. È possibile visualizzare le nuove schermate per l'app del portale aziendale per Android nella [pagina delle novità dell'interfaccia utente di Intune](whats-new-in-intune-app-ui.md).
 
 
 ## <a name="notices"></a>Notifiche
@@ -186,7 +186,7 @@ Sono ora supportate ulteriori impostazioni di restrizione dei dispositivi per Wi
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Supporto multiutente per Windows 10 Creators Update <!-- 822547 -->
 
-È stato aggiunto il supporto per la gestione multiutente per i dispositivi che eseguono Windows 10 Creators Update e sono aggiunti al dominio di Azure Active Directory. Ciò significa che quando utenti diversi accedono al dispositivo con le rispettive credenziali AAD, accederanno alle app e ai criteri che sono stati assegnati al loro nome utente.
+È stato aggiunto il supporto per la gestione multiutente per i dispositivi che eseguono Windows 10 Creators Update e sono aggiunti al dominio di Azure Active Directory. Ciò significa che quando utenti standard diversi accedono al dispositivo con le rispettive credenziali di Azure AD, accederanno alle app e ai criteri che sono stati assegnati al loro nome utente. Gli utenti non possono attualmente usare il portale aziendale per scenari self-service come l'installazione di app.
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Fresh Start per i PC Windows 10<!-- 1004830 -->
 
@@ -203,7 +203,7 @@ In questa versione è stata aggiunta una nuova azione del dispositivo Fresh Star
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Registrazione in blocco di dispositivi Windows 10 <!-- 747607 -->
 
-È possibile aggiungere un numero elevato di dispositivi Windows 10 ad Azure Active Directory e Intune tramite strumenti di automazione IT. Per abilitare la registrazione MDM automatica del tenant di Azure AD, creare un pacchetto di provisioning per l'aggiunta del dispositivo al tenant di Azure AD usando Progettazione configurazione di Windows. Applicare il pacchetto ai dispositivi di proprietà dell'azienda da registrare e gestire in blocco.  Dopo che il pacchetto è stato applicato, i dispositivi si connettono ad Azure AD, vengono registrati in Intune e sono pronti per l'accesso da parte degli utenti di Azure AD.
+È possibile aggiungere un numero elevato di dispositivi che eseguono Windows 10 Creators Update ad Azure Active Directory e Intune tramite Windows Configuration Designer (WCD). Per abilitare la registrazione MDM automatica del tenant di Azure AD, creare un pacchetto di provisioning per l'aggiunta dei dispositivi al tenant di Azure AD usando Windows Configuration Designer e applicare il pacchetto ai dispositivi di proprietà aziendale che si vuole registrare e gestire in blocco. Dopo aver applicato il pacchetto, i dispositivi verranno aggiunti ad Azure AD, registrati in Intune e saranno pronti per l'accesso da parte degli utenti di Azure AD.  Gli utenti di Azure AD sono utenti standard di questi dispositivi e ricevono i criteri assegnati e le app necessarie. Al momento non sono supportati scenari self-service o con il portale aziendale.
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----58112-736644---"></a>Nuove impostazioni MAM per PIN e percorsi di archiviazione gestita <!-- 58112, 736644 -->
 

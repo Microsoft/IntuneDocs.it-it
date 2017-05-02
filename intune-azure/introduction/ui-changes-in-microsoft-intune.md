@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
-ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: 6a1dbb2c9d3810f19536fc709719767de923b519
+ms.openlocfilehash: e5067631fc17fa375a3b263f9910936300e6f8e9
+ms.lasthandoff: 04/18/2017
 
 
 ---
@@ -34,6 +34,7 @@ Con lo spostamento di Intune nel portale di Azure, alcune attività sono state r
 |Gruppi per IMEI (tutte le piattaforme)| Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per IMEI (tutte le piattaforme) | [Registrazione del dispositivo > Identificatori dei dispositivi aziendali](#by-imei-all-platforms)|
 | Profilo di registrazione dei dispositivi aziendali| Criteri > Registrazione di dispositivi aziendali | [Registrazione del dispositivo > Registrazione Apple > Profili Device Enrollment Program](#where-did-corporate-pre-enrolled-devices-go) |
 | Profilo di registrazione dei dispositivi aziendali | Criteri > Registrazione di dispositivi aziendali | [Registra i dispositivi > Registrazione Apple > Profili AC](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | Amministrazione > Gestione dei dispositivi mobili > Android for Work | Registrazione del dispositivo > Registrazione Android for Work | | Termini e condizioni | Criteri > Termini e condizioni | Registrazione del dispositivo > Termini e condizioni |
 
 
 ## <a name="where-do-i-manage-groups"></a>Dove si gestiscono i gruppi?
