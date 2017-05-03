@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 81761af5ab5aebe6abb44ff43a7df5a337d38fc7
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: f4a48b889702147abe20fd513fdb0f774020a54a
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -27,11 +27,55 @@ Informazioni su quali aggiornamenti sono stati apportati all'interfaccia utente 
 > [!Note]
 > Si noti che le immagini seguenti sono anteprime e che il prodotto annunciato potrebbe differire dalle versioni presentate.
 
-## <a name="whats-coming-in-intune-app-ui"></a>Sviluppi futuri nell'interfaccia utente dell'app Intune
+## <a name="april-2017"></a>Aprile 2017
 
-### <a name="april-2017"></a>Aprile 2017
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Migliorata l'esperienza di accesso nelle app del portale aziendale per tutte le piattaforme <!--User Story 1132123-->
 
-#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nuove icone per Managed Browser e il portale aziendale <!--918433, 918431-->
+Microsoft sta migliorando l'esperienza di accesso per le app del portale aziendale di Intune per Android, iOS e Windows.  Non appena questa modifica viene apportata con Azure AD, la nuova esperienza utente apparirà automaticamente su tutte le piattaforme per l'app del portale aziendale. Ora gli utenti possono anche accedere al portale aziendale da un altro dispositivo con un codice generato monouso. Ciò è particolarmente utile nei casi in cui gli utenti devono accedere senza credenziali.  
+
+Di seguito sono illustrate l'esperienza di accesso precedente, la nuova esperienza di accesso con credenziali e la nuova esperienza di accesso da un altro dispositivo.
+
+__Esperienza di accesso precedente__
+
+![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![Dopo aver toccato Accedi, l'utente immette le proprie credenziali in questa pagina, che richiede l'indirizzo di posta elettronica e la password dell'utente e offre diversi modi per risolvere gli errori relativi alle password.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![Dopo aver specificato la password, l'app portale aziendale esegue l'accesso, operazione indicata da una barra di caricamento.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Nuova esperienza di accesso__
+
+![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![Viene chiesto all'utente di indicare solo l'indirizzo di posta elettronica anziché l'indirizzo di posta elettronica e la password nella stessa schermata.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![La password verrà richiesta all'utente dopo che l'indirizzo di posta elettronica è stato accettato.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+__Nuova esperienza di accesso con accesso da un altro dispositivo__
+
+![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Toccare il collegamento __Accesso da un altro dispositivo__.
+
+![Viene chiesto all'utente di indicare solo l'indirizzo di posta elettronica anziché l'indirizzo di posta elettronica e la password nella stessa schermata. Il collegamento sotto il campo dell'indirizzo di posta elettronica indica "Accesso da un altro dispositivo".](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
+
+![Viene indicato come passare alla pagina aka.ms/devicelogin con un passcode univoco dal computer di lavoro, quindi come usare il codice per l'accesso.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Avviare un browser e passare a [http://aka.ms/devicelogin](https://aka.ms/devicelogin).
+
+![Un'immagine del browser dell'utente nel computer di lavoro anziché nell'app portale aziendale. Nella pagina "Accesso dispositivo" visualizzata viene chiesto all'utente di immettere il codice ricevuto nell'app portale aziendale.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Immettere il codice visto nell'app portale aziendale. Quando si seleziona __Continua__ sarà possibile eseguire l'autenticazione usando qualsiasi metodo supportato dall'azienda, ad esempio una smart card.
+
+![L'utente ha immesso il codice univoco nel campo e il sito "Accesso dispositivo" ha chiesto di confermare che il portale aziendale di Intune è l'app corretta per la ricezione dell'autorizzazione ad accedere.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Una pagina di conferma indica che l'utente ha eseguito l'accesso all'app portale aziendale sul proprio dispositivo e che questa pagina può essere chiusa.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+L'app portale aziendale avvia la procedura di accesso.
+
+![Terminato il processo di autenticazione, l'app portale aziendale esegue l'accesso, visualizzando una barra di caricamento.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nuove icone per Managed Browser e il portale aziendale <!--918433, 918431-->
 
 Managed Browser disporrà di icone aggiornate per le versioni Android e iOS dell'app. La nuova icona conterrà il logo di Intune aggiornato, in modo da renderla più coerente con le altre app in Enterprise Mobility + Security (EM+S).
 
@@ -52,7 +96,7 @@ Managed Browser disporrà di icone aggiornate per le versioni Android e iOS dell
 
 Il portale aziendale disporrà inoltre di icone aggiornate per le versioni Android, iOS e Windows dell'app, per migliorare la coerenza con le altre app in EM+S. Queste icone verranno rilasciate gradualmente tra le piattaforme da aprile a fine maggio.
 
-#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicatore di stato dell'accesso nel portale aziendale Android <!--953374-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicatore di stato dell'accesso nel portale aziendale Android <!--953374-->
 
 Un aggiornamento all'app Portale aziendale Android mostra un indicatore di stato dell'accesso quando l'utente avvia o riprende l'app. L'indicatore indica una progressione attraverso nuovi stati, a partire da "Connessione in corso...", ad "Accesso in corso..." e infine "Verifica dei requisiti di sicurezza in corso..." prima di consentire all'utente di accedere all'app.
 
@@ -74,9 +118,7 @@ Un aggiornamento all'app Portale aziendale Android mostra un indicatore di stato
 </body>
 </html>
 
-## <a name="whats-been-announced-for-ui-updates-for-end-user-apps"></a>Aggiornamenti dell'interfaccia utenti annunciati per le app per utenti finali
-
-### <a name="february-2017"></a>Febbraio 2017
+## <a name="february-2017"></a>Febbraio 2017
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Nuova esperienza utente per l'app Portale aziendale per Android <!--621622, announced 1702-->
 A partire da marzo, l'app Portale aziendale per Android seguirà le [linee guida di progettazione dei materiali](https://material.io/guidelines/material-design/introduction.html) per creare un aspetto più moderno. La nuova esperienza utente include i seguenti miglioramenti:
@@ -113,7 +155,7 @@ A partire da febbraio, il sito Web del portale aziendale supporterà le app dest
 
 ### <a name="see-also"></a>Vedere anche
 * [Blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Guida di orientamento a Cloud Platform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Guida di orientamento a Cloud Platform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Novità dell'anteprima di Azure](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [Archivio delle novità](whats-new-archive.md)
 

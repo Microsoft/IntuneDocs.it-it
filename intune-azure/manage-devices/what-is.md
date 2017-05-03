@@ -15,14 +15,14 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
-ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
-# <a name="what-is-microsoft-intune-device-management"></a>Informazioni sulla gestione dei dispositivi in Microsoft Intune 
+# <a name="what-is-microsoft-intune-device-management"></a>Informazioni sulla gestione dei dispositivi in Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,8 +38,8 @@ A questo punto, scegliere una delle opzioni seguenti:
 - **Panoramica**: ottenere informazioni sui dispositivi registrati e sui sistemi operativi eseguiti da ogni dispositivo.
 - **Gestisci**: scegliere **Tutti i dispositivi** per visualizzare un elenco di tutti i dispositivi gestiti.
     Selezionare uno dei dispositivi nell'elenco per aprire il pannello **Panoramica** di <*nome dispositivo*> , in cui è possibile selezionare una delle opzioni seguenti:
-    - **Panoramica**: consente di vedere le informazioni generali sul dispositivo, tra cui le informazioni sul nome e sul proprietario, se si tratta di un dispositivo BYOD, quando è stato archiviato per l'ultima volta e altro. 
-                
+    - **Panoramica**: consente di vedere le informazioni generali sul dispositivo, tra cui le informazioni sul nome e sul proprietario, se si tratta di un dispositivo BYOD, quando è stato archiviato per l'ultima volta e altro.
+
     - **Hardware**: consente di vedere informazioni più dettagliate sul dispositivo, tra cui spazio di archiviazione disponibile, modello, produttore e altro.
     ![Inventario hardware dei dispositivi gestiti](./media/hardware-inventory.png)
     - **Applicazioni rilevate**: consente di visualizzare un elenco di tutte le app installate nel dispositivo trovate da Intune.
@@ -67,6 +67,12 @@ Genera un nuovo passcode per il dispositivo che verrà visualizzato nel pannello
 ### <a name="bypass-activation-lock"></a>**Eseguire il bypass del blocco attivazione**
 Rimuove il blocco attivazione da un dispositivo iOS senza richiedere l'Apple ID e la password dell'utente. Se è stato eseguito il bypass del blocco attivazione, il dispositivo attiva nuovamente il blocco attivazione quando si avvia l'app Trova il mio iPhone. Eseguire il bypass del blocco attivazione solo se si ha accesso fisico al dispositivo.
 
+### <a name="fresh-start"></a>**Fresh Start**
+
+Rimuove tutte le app installate in un computer Windows 10 che esegue Creators Update, quindi aggiorna automaticamente il computer alla versione più recente di Windows.
+Questa funzionalità può essere usata per rimuovere le app OEM che spesso sono preinstallate in un nuovo PC. È possibile configurare se i dati utente devono essere conservati quando si esegue questa azione del dispositivo. In questo caso le app e le impostazioni vengono rimosse, ma il contenuto della cartella Home degli utenti viene mantenuto.
+
+
 ### <a name="lost-mode"></a>**Modalità di dispositivo perso**
 Se un dispositivo iOS è stato rubato o smarrito, è possibile abilitare la modalità di dispositivo perso. Questa modalità consente di specificare un messaggio e un numero di telefono che verranno visualizzati nella schermata di blocco del dispositivo. A tale scopo, eseguire questa procedura:
 1.    Nel pannello delle proprietà di un dispositivo iOS, scegliere **Altro** > **Modalità di dispositivo perso**.
@@ -78,7 +84,7 @@ Per usare la modalità di dispositivo perso è necessario un dispositivo iOS di 
 ### <a name="locate-device"></a>**Individua il dispositivo**
 Usare questa azione remota per visualizzare su una mappa la posizione di un dispositivo iOS rubato o smarrito. Deve trattarsi di un dispositivo iOS di proprietà dell'azienda, registrato con DEP, in cui sia attiva la modalità con supervisione. Prima di usare questa azione, è necessario abilitare la modalità di dispositivo perso.
 1.    Nel pannello delle proprietà di un dispositivo iOS, scegliere **Altro** > **Individua il dispositivo**.
-2.    Dopo che il dispositivo è stato trovato, la relativa posizione viene visualizzata nel pannello **Individua il dispositivo**. 
+2.    Dopo che il dispositivo è stato trovato, la relativa posizione viene visualizzata nel pannello **Individua il dispositivo**.
     ![Pannello Individua il dispositivo](./media/locate-device.png)
 
 >[!NOTE]

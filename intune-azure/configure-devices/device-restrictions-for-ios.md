@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -60,7 +60,7 @@ Questa opzione si applica anche alle impostazioni accessibili dall'app delle imp
 - **Uso dell'opzione di cancellazione di tutti i contenuti e tutte le impostazioni sul dispositivo (solo con supervisione)** - Consente all'utente di usare l'opzione di cancellazione di tutti i contenuti e le impostazioni del dispositivo.
 - **Modifica del nome dispositivo (solo con supervisione)** - Consente all'utente di modificare il nome del dispositivo.
 - **Modifica delle impostazioni di invio dei dati di diagnostica (solo con supervisione)** - Consente o impedisce al dispositivo di inviare dati di diagnostica ad Apple.
-- **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
+-  **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
 - **Modifica delle impostazioni di notifica (solo con supervisione)** - Consente all'utente di modificare le impostazioni di notifica del dispositivo.
 - **Modifica del passcode (solo con supervisione)** - Consente di aggiungere, modificare o rimuovere la password del dispositivo.
 - **Modifica dello sfondo (solo con supervisione)** - Consente all'utente di cambiare lo sfondo del dispositivo.
@@ -225,6 +225,67 @@ Usare le informazioni riportate in questo elenco per identificare il nome, l'aut
 -     **Flusso di foto condivise** - Impostare su **No** per disabilitare **Condivisione foto di iCloud** nel dispositivo.
 -     **Continuazione dell'attività** - Consente all'utente di proseguire il lavoro iniziato in un dispositivo iOS in un altro dispositivo iOS o macOS (Handoff).
 
+## <a name="autonomous-single-app-mode-supervised-only"></a>Modalità applicazione singola autonoma (solo con supervisione)
+
+Usare queste impostazioni per configurare dispositivi iOS in modo che eseguano specifiche app in modalità applicazione singola autonoma. Quando questa modalità è configurata e l'app è in esecuzione, il dispositivo è bloccato in modo che possa eseguire solo quell'app. Un esempio è quando si configura un'app che consente agli utenti di eseguire un test nel dispositivo. Quando le azioni dell'app sono state completate o si rimuovono questi criteri, il dispositivo torna allo stato normale.
+
+### <a name="settings"></a>Impostazioni
+
+- **Nome dell'app**: immettere il nome dell'app che verrà visualizzato nell'elenco di app in questo pannello.
+- **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per assistenza, vedere **Guida di riferimento agli ID bundle per le app iOS predefinite** in questo argomento.
+
+Dopo aver specificato il nome di ogni app e ID, scegliere **Aggiungi** per aggiungerle all'elenco.
+
+- **Importa**: importa un file di valori delimitati da virgole (CSV) contenente un elenco di nomi di app e di ID bundle associati.
+- **Esporta**: esporta i nomi delle app e gli ID bundle associati configurati in un file con valori delimitati da virgole (CSV).
+
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Guida di riferimento agli ID bundle per le app iOS predefinite
+
+Questo elenco include l'ID bundle di alcune app comuni iOS predefinite. Per trovare l'ID bundle di altre app, contattare il fornitore del software.
+
+|||
+|-|-|
+|Nome app|ID bundle|
+|App Store|com.apple.AppStore|
+|Calcolatrice|com.apple.calculator|
+|Calendario|com.apple.mobilecal|
+|Fotocamera|com.apple.camera|
+|Orologio|com.apple.mobiletimer|
+|Bussola|com.apple.compass|
+|Contatti|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|Trova i miei amici|com.apple.mobileme.fmf1|
+|Trova il mio iPhone|com.apple.mobileme.fmip1|
+|Area giochi|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|Integrità|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Mail|com.apple.mobilemail|
+|Maps|com.apple.Maps|
+|Messaggi|com.apple.MobileSMS|
+|Musica|com.apple.Music|
+|Notizie|com.apple.news|
+|Note|com.apple.mobilenotes|
+|Numeri|com.apple.Numbers|
+|.NET|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|Foto|com.apple.mobileslideshow|
+|Podcasts|com.apple.podcasts|
+|Reminders|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Impostazioni|com.apple.Preferences|
+|Stocks|com.apple.stocks|
+|Suggerimenti|com.apple.tips|
+|Video|com.apple.videos|
+|VoiceMemos|com.apple.VoiceMemos|
+|Wallet|com.apple.Passbook|
+|Video|com.apple.Bridge|
+|Weather|com.apple.weather|
+
+
 ## <a name="kiosk"></a>Modalità tutto schermo
 -     **Blocco attivazione** - Abilita il blocco attivazione su dispositivi iOS con supervisione.
 -     **App in esecuzione in modalità tutto schermo** - Scegliere **App gestita** per selezionare un'app che è stata aggiunta a Intune o **App dello Store** per specificare l'URL di un'app dello store. Non sarà possibile eseguire altre applicazioni nel dispositivo. Per informazioni, vedere "Come specificare gli URL negli App Store" più avanti in questo argomento.
@@ -256,4 +317,21 @@ Usare le informazioni riportate in questo elenco per identificare il nome, l'aut
 -     **JavaScript** - Consente l'esecuzione di script JavaScript nel browser.
 -     **Avvisi illeciti** - Consente gli avvisi di illeciti nel browser.
 -     **Popup** - Attiva o disattiva il blocco dei popup del browser.
+
+
+## <a name="domains"></a>Domains
+
+### <a name="unmarked-email-domains"></a>Domini di posta elettronica non contrassegnati
+
+Nel campo **URL del dominio di posta elettronica** aggiungere uno o più URL all'elenco. Quando gli utenti finali ricevono un messaggio di posta elettronica da un dominio diverso da quelli configurati, il messaggio di posta elettronica verrà contrassegnato come non attendibile nell'app Mail iOS.
+
+
+### <a name="managed-web-domains"></a>Domini Web gestiti
+
+Nel campo **URL del dominio Web** aggiungere uno o più URL all'elenco. Quando i documenti vengono scaricati dal dominio specificato, saranno considerati come gestiti. Questa impostazione si applica solo ai documenti scaricati tramite Safari.
+
+
+### <a name="safari-password-auto-fill-domains"></a>Domini con compilazione automatica della password di Safari
+
+Nel campo **URL del dominio** aggiungere uno o più URL all'elenco. Gli utenti possono salvare solo le password Web dagli URL in questo elenco. Questa impostazione si applica solo al browser Safari e ai dispositivi iOS 9.3 e versioni successive in modalità con supervisione. Se non si specifica nessun URL, è possibile salvare le password da tutti i siti web.
 

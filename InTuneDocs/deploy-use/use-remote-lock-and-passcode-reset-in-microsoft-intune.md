@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/06/17
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
-ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: f0a477c9eb1ed0580314e79135e377809eaab197
+ms.openlocfilehash: 9b0ae19b211373548061e2c2979620739a0bf0a0
+ms.lasthandoff: 04/17/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Protezione dei dispositivi con blocco remoto e reimpostazione passcode
@@ -64,7 +64,7 @@ Se un utente dimentica un passcode, è possibile aiutarlo rimuovendo il passcode
 |iOS|Funzionalità supportata per cancellare il passcode da un dispositivo. Non implica la creazione di un nuovo passcode temporaneo.|
 |Android|Supportato nelle versioni precedenti alla 7.0. Crea un passcode temporaneo.|
 |Android for Work|Non supportato|
-|Windows 10 Mobile|Supportato|
+|Windows 10 Mobile|Supportato per dispositivi mobili con Windows 10 Creator e versioni successive inclusi in Azure AD.|
 |Windows Phone 8 e Windows Phone 8.1|Supportato|
 |Windows RT 8.1|Funzionalità non supportata|
 |Windows 8.1|Funzionalità non supportata|

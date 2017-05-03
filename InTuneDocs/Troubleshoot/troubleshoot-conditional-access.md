@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
-ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cc14d6a44b3dcb6234cc77cb463098a9d2f4c5b8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -63,7 +63,7 @@ Queste condizioni possono essere visualizzate per ogni dispositivo nel portale d
     
         -    In caso di dispositivi che presentano questo stato, l'utente deve impostare un passcode di avvio sicuro. L'utente visualizzerà una notifica del dispositivo inviata nell'app Portale aziendale in cui viene chiesto di impostare un passcode di avvio per il dispositivo. Dopo aver toccato la notifica del dispositivo e confermato il PIN o la password esistente, scegliere l'opzione **Require PIN to start device** (Richiedi PIN per avviare il dispositivo) nella schermata **Secure start-up** (Avvio sicuro). Toccare poi il pulsante **Controlla conformità** corrispondente al dispositivo nell'app Portale aziendale. Il dispositivo sarà riconosciuto come crittografato.
     
-        -     Alcuni produttori di dispositivi eseguono la crittografia dei propri dispositivi usando un PIN predefinito anziché il PIN segreto impostato dall'utente. Intune riconosce la crittografia che usa il PIN predefinito come non sicura poiché questo metodo di crittografia può mettere i dati nel dispositivo a rischio di utenti malintenzionati con accesso fisico al dispositivo. Per questo tipo di problema, usare i [criteri di protezione delle app](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+        -     Alcuni produttori di dispositivi eseguono la crittografia dei propri dispositivi usando un PIN predefinito anziché il PIN segreto impostato dall'utente. Intune riconosce la crittografia che usa il PIN predefinito come non sicura poiché questo metodo di crittografia può mettere i dati nel dispositivo a rischio di utenti malintenzionati con accesso fisico al dispositivo. Per questo tipo di problema, usare i [criteri di protezione delle app](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemi relativi ai criteri
 
@@ -119,7 +119,7 @@ Se le procedure descritte non consentono di risolvere il problema riscontrato, p
 ### <a name="exchange-connector-logs"></a>Log di Exchange Connector
 
 #### <a name="general-log-information"></a>Informazioni generali sui log
-Per visualizzare i log di Exchange Connector, usare lo strumento Visualizzatore di tracce dei servizi (https://msdn.microsoft.com/it-it/library/ms732023(v=vs.110).aspx'). Per questo strumento è necessario scaricare l'SDK di Windows Server.
+Per visualizzare i log di Exchange Connector, usare lo strumento Visualizzatore di tracce dei servizi (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Per questo strumento è necessario scaricare l'SDK di Windows Server.
 
 >[!NOTE]
 >I log si trovano in C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Sono contenuti in una serie di 30 file di log che inizia da *Connector0.log* e termina con *Connector29.log*. Il rollover da un log all'altro avviene nel momento in cui si accumulano 10 MB di dati in un log. Dopo aver generato il log Connector29, il meccanismo riparte dal log Connector0, sovrascrivendo i file di log precedenti.

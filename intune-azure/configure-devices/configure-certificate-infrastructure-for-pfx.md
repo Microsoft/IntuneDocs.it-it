@@ -1,12 +1,12 @@
 ---
-title: Configurare l&quot;infrastruttura di certificazione di Intune per PKCS
+title: Configurare e gestire i certificati PKCS con Intune
 titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni sulle modalità di configurazione dell&quot;infrastruttura per l&quot;uso di certificati PKCS con Intune."
+description: 'Anteprima di Intune di Azure: informazioni su come configurare l&quot;infrastruttura e quindi creare e assegnare i certificati SCEP con Intune.'
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: 0c378fe6ed26bafb5a78daf36b9326771fdd287b
+ms.lasthandoff: 04/19/2017
 
 
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2017
 # <a name="configure-your-microsoft-intune-certificate-infrastructure-for-pkcs"></a>Configurare l'infrastruttura di certificazione di Microsoft Intune per PKCS
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Questo argomento descrive cosa è necessario per creare e distribuire i profili di certificato PKCS con Intune.
+Questo argomento illustra come configurare l'infrastruttura e quindi creare e assegnare profili certificato PKCS con Intune.
 
 Per eseguire qualsiasi autenticazione basata su certificati all'interno dell'azienda, è necessaria un'autorità di certificazione dell'organizzazione.
 
@@ -46,7 +46,7 @@ Per usare i profili di certificato PKCS, oltre all'autorità di certificazione d
 
 -  **Computer che possono comunicare con Autorità di certificazione**: in alternativa, è possibile usare il computer dell'autorità di certificazione stessa.
 -  **Connettore di certificati di Microsoft Intune**: dal portale di Azure scaricare il programma di installazione di **Connettore di certificati** (**ndesconnectorssetup.exe**). È quindi possibile eseguire **ndesconnectorssetup.exe** nel computer in cui si vuole installare Connettore di certificati. Per i profili di certificato PKCS installare il Connettore di certificati nel computer che comunica con l'autorità di certificazione.
--  **Server Proxy applicazione Web** (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versione successiva come Server Proxy applicazione Web (WAP). Questa configurazione:
+-  **Server Proxy applicazione Web**  (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versione successiva come Server Proxy applicazione Web (WAP). Questa configurazione:
     -  Consente ai dispositivi di ricevere i certificati usando una connessione Internet.
     -  Vale come raccomandazione di sicurezza quando i dispositivi usano la connessione a Internet per ricevere e rinnovare i certificati.
 
@@ -61,17 +61,16 @@ Per usare i profili di certificato PKCS, oltre all'autorità di certificazione d
 |Oggetto|Dettagli|
 |----------|-----------|
 |**Modello di certificato**|Questo modello viene configurato nella CA emittente.|
-|**Certificato CA radice attendibile**|Viene esportato come file **.cer** dalla CA emittente o da qualsiasi dispositivo che consideri attendibile la CA emittente e viene distribuito ai dispositivi mediante il profilo del certificato CA attendibile.<br /><br />Viene usato un certificato CA radice attendibile per ogni piattaforma di sistema e lo si associa con ogni profilo del certificato radice attendibile creato.<br /><br />È possibile usare certificati CA radice attendibili aggiuntivi, se necessario. Ad esempio, è possibile farlo per fornire un trust a un'autorità di certificazione che firma i certificati di autenticazione del server per i punti di accesso Wi-Fi.|
+|**Certificato CA radice attendibile**|Questo certificato viene esportato come file con estensione **CER** dalla CA emittente o da qualsiasi dispositivo che considera attendibile la CA emittente, e viene assegnato ai dispositivi usando il profilo certificato della CA attendibile.<br /><br />Viene usato un certificato CA radice attendibile per ogni piattaforma di sistema e lo si associa con ogni profilo del certificato radice attendibile creato.<br /><br />È possibile usare certificati CA radice attendibili aggiuntivi, se necessario. Ad esempio, è possibile farlo per fornire un trust a un'autorità di certificazione che firma i certificati di autenticazione del server per i punti di accesso Wi-Fi.|
 
 
 ## <a name="configure-your-infrastructure"></a>Configurare l'infrastruttura
-Prima di poter configurare i profili certificato, è necessario completare le attività seguenti. Le attività seguenti presuppongono la conoscenza di Windows Server 2012 R2 e di Servizi certificati Active Directory (ADCS):
+Prima di poter configurare i profili certificato, è necessario completare i passaggi seguenti. Questi passaggi richiedono la conoscenza di Windows Server 2012 R2 e dei Servizi certificati Active Directory (ADCS):
 
-- **Attività 1**: configurare i modelli di certificato nell'autorità di certificazione.
-- **Attività 2**: abilitare, installare e configurare il Connettore di certificati di Intune.
+- **Passaggio 1**: configurare modelli di certificato nell'autorità di certificazione.
+- **Passaggio 2**: abilitare, installare e configurare il Connettore di certificati di Intune.
 
-## <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>Attività 1: configurare i modelli di certificato nell'autorità di certificazione
-In questa attività verrà pubblicato il modello di certificato.
+## <a name="step-1---configure-certificate-templates-on-the-certification-authority"></a>Passaggio 1: configurare modelli di certificato nell'autorità di certificazione
 
 ### <a name="to-configure-the-certification-authority"></a>Per configurare l'autorità di certificazione
 
@@ -109,20 +108,21 @@ In questa attività verrà pubblicato il modello di certificato.
 
 4.  Nel computer della CA assicurarsi che il computer che ospita il Connettore di certificati di Intune abbia l'autorizzazione di registrazione per poter accedere al modello usato nella creazione del profilo PKCS. Impostare l'autorizzazione nella scheda **Sicurezza** delle proprietà del computer della CA.
 
-## <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>Attività 2: abilitare, installare e configurare il Connettore di certificati di Intune
-In questa attività sarà possibile:
+## <a name="step-2---enable-install-and-configure-the-intune-certificate-connector"></a>Passaggio 2: abilitare, installare e configurare il Connettore di certificati di Intune
+In questo passaggio verranno eseguite le operazioni seguenti:
 
-Scaricare, installare e configurare Connettore di certificati.
+- Abilitare il supporto per il Connettore di certificati
+- Scaricare, installare e configurare Connettore di certificati.
 
-### <a name="to-enable-support-for-the-certificate-connector"></a>Per abilitare il supporto per Connettore di certificati
+### <a name="to-enable-support-for-the-certificate-connector"></a>Per abilitare il supporto per il Connettore di certificati
 
-1.  Accedere al portale di Azure.
+1.  Accedere al portale Azure.
 2.  Scegliere **Altri servizi** > **Altro** > **Intune**.
 3.  Nel pannello **Intune** scegliere **Configura i dispositivi**.
 2.  Nel pannello **Configurazione del dispositivo** scegliere **Installazione** > **Autorità di certificazione**.
 2.  Nel **passaggio 1** scegliere **Abilita**.
 
-### <a name="to-download-install-and-configure-the-certificate-connector"></a>Per scaricare, installare e configurare Connettore di certificati
+### <a name="to-download-install-and-configure-the-certificate-connector"></a>Scaricare, installare e configurare il Connettore di certificati
 
 1.  Nel pannello **Configura i dispositivi** scegliere **Installazione** > **Autorità di certificazione**.
 2.  Scegliere **Scarica il connettore del certificato**.
@@ -158,6 +158,53 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
 
 **http://&lt;FQDN_del_server_NDES&gt;/certsrv/mscep/mscep.dll**
 
-### <a name="next-steps"></a>Passaggi successivi
-A questo punto è possibile configurare i profili di certificato come descritto in [How to configure certificates with Microsoft Intune](how-to-configure-certificates.md) (Come configurare i certificati con Microsoft Intune).
+
+### <a name="how-to-create-a-pkcs-certificate-profile"></a>Come creare un profilo certificato PKCS
+
+Nel portale di Azure selezionare il carico di lavoro **Configura i dispositivi**.
+2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
+3. Nel pannello dei profili fare clic su **Crea profilo**.
+4. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** per il profilo certificato PKCS.
+5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma del dispositivo per questo certificato PKCS:
+    - **Android**
+    - **Android for Work**
+    - **iOS**
+    - **Windows 10 e versioni successive**
+6. Dall'elenco a discesa dei tipi di **profilo** scegliere **Certificato PKCS**.
+7. Nel pannello **Certificato PKCS** è possibile configurare le impostazioni seguenti:
+    - **Soglia di rinnovo (%)**: specificare la percentuale di durata residua del certificato prima che il dispositivo ne richieda il rinnovo.
+    - **Periodo di validità del certificato**: se il comando **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** è stato eseguito nella CA emittente, che consente un periodo di validità personalizzato, è possibile specificare la quantità di tempo rimanente prima della scadenza del certificato.<br>È possibile specificare un valore inferiore, ma non superiore rispetto al periodo di validità nel modello di certificato indicato. Ad esempio, se il periodo di validità del certificato nel modello di certificato è di due anni, è possibile specificare un valore di un anno ma non un valore di cinque anni. Inoltre, il valore deve essere inferiore rispetto al periodo di validità rimanente del certificato della CA emittente.
+    - **Provider di archiviazione chiavi (KSP)** (Windows 10) Specificare dove archiviare la chiave per il certificato. Scegliere tra uno dei seguenti valori:
+        - **Registra nel provider di archiviazione chiavi Trusted Platform Module (TPM) se presente, altrimenti nel provider di archiviazione chiavi software**
+        - **Registra nel provider di archiviazione chiavi Trusted Platform Module (TPM) oppure genera errore**
+        - **Registra in Passport oppure genera errore (Windows 10 e versioni successive)**
+        - **Registra nel provider di archiviazione chiavi software**
+    - **Autorità di certificazione**: un'autorità di certificazione globale eseguita in un'edizione Enterprise di Windows Server 2008 R2 o versioni successive. L'opzione CA autonoma non è supportata. Per istruzioni su come configurare un'autorità di certificazione, vedere [Installare l'autorità di certificazione](http://technet.microsoft.com/library/jj125375.aspx). Se la CA esegue Windows Server 2008 R2, è necessario [installare l'hotfix di KB2483564](http://support.microsoft.com/kb/2483564/).
+    - **Nome dell'autorità di certificazione**: immettere il nome dell'autorità di certificazione.
+    - **Nome modello di certificato**: immettere il nome di un modello di certificato configurato per essere usato dal servizio Registrazione dispositivi di rete e che è stato aggiunto a una CA emittente.
+    Assicurarsi che il nome corrisponda esattamente a uno dei modelli del certificato elencati nel registro di sistema del server che esegue il servizio Registrazione dispositivi di rete. Accertarsi di specificare il nome del modello del certificato e non il nome visualizzato del modello del certificato. 
+    Per trovare i nomi dei modelli di certificato, individuare la seguente chiave: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP. I modelli di certificato verranno visualizzati come i valori per **EncryptionTemplate**, **GeneralPurposeTemplate**e **SignatureTemplate**. Per impostazione predefinita, il valore per i tre modelli di certificato è IPSECIntermediateOffline, che è associato al nome visualizzato del modello **IPSec (Offline request)**. 
+    - **Formato nome soggetto**: dall'elenco, selezionare in che modo Intune crea automaticamente il nome soggetto nella richiesta certificato. Se il certificato è per un utente, è anche possibile includere l'indirizzo di posta elettronica dell'utente nel nome del soggetto. È possibile scegliere tra:
+        - **Non configurato**
+        - **Nome comune**
+        - **Nome comune incluso l'indirizzo di posta elettronica**
+        - **Nome comune come indirizzo di posta elettronica**
+    - **Nome alternativo soggetto**: specificare in che modo Intune crea automaticamente i valori per il nome alternativo soggetto (SAN) nella richiesta certificato. Ad esempio, se si seleziona un tipo di certificato utente, è possibile includere il nome dell'entità utente (UPN) nel nome alternativo oggetto. Se il certificato client verrà usato per eseguire l'autenticazione in un server dei criteri di rete, è necessario impostare il nome alternativo oggetto sul nome dell'entità utente.
+    - **Utilizzo chiave esteso** (Android): scegliere **Aggiungi** per aggiungere valori per lo scopo designato del certificato. Nella maggior parte dei casi il certificato richiederà l' **Autenticazione Client** in modo che l'utente o il dispositivo possa eseguire l'autenticazione a un server. È comunque possibile aggiungere altri utilizzi di chiavi secondo necessità. 
+    - **Certificato radice** (Android): scegliere un profilo del certificato radice della CA già configurato e assegnato all'utente o al dispositivo. Questo certificato CA deve essere il certificato radice per l'autorità di certificazione che rilascerà il certificato che si sta configurando in questo profilo certificato. Questo è il profilo certificato attendibile creato in precedenza.
+8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
+
+Il profilo verrà creato e visualizzato nel pannello dell'elenco dei profili.
+
+## <a name="how-to-assign-the-certificate-profile"></a>Come assegnare il profilo certificato
+
+Prima di assegnare i profili certificato ai gruppi, considerare quanto segue:
+
+- Quando si assegnano i profili certificato ai gruppi, il file del certificato dal profilo certificato CA attendibile viene installato nel dispositivo. Il dispositivo usa il profilo certificato SCEP per creare una richiesta di certificato tramite il dispositivo.
+- I profili certificato vengono installati solo nei dispositivi che eseguono la piattaforma usata durante la creazione del profilo.
+- È possibile assegnare profili certificato alle raccolte di utenti o di dispositivi.
+- Per pubblicare rapidamente un certificato in un dispositivo dopo la registrazione del dispositivo, assegnare il profilo certificato a un gruppo di utenti invece che a un gruppo di dispositivi. Se si assegna il profilo certificato a un gruppo di dispositivi, è necessario eseguire una registrazione completa dei dispositivi prima che questi ricevano i criteri.
+- Sebbene ogni profilo venga assegnato separatamente, è necessario assegnare anche la CA radice attendibile e il profilo PKCS. In caso contrario, i criteri di certificato PKCS avranno esito negativo.
+
+Per informazioni su come assegnare profili, vedere [Come assegnare i profili di dispositivo](how-to-assign-device-profiles.md).
 

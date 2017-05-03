@@ -14,9 +14,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: f6014c5500b05762d123b2285ef859d67382e402
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 1d9bd55a8abee4175d2e71727d7ff18274defd3d
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -25,21 +25,21 @@ ms.lasthandoff: 04/06/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Per configurare la registrazione per i dispositivi Windows, usare uno dei metodi seguenti:
+Questo argomento offre agli amministratori IT informazioni utili per semplificare la registrazione di Windows per gli utenti.  I dispositivi Windows possono essere registrati senza ulteriori passaggi, ma è possibile semplificare la registrazione per gli utenti.
 
-- [**Registrazione automatica di Windows 10 con Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
- -  Questo metodo è disponibile solo per i dispositivi Windows 10.
- -  Per usare questo metodo, è necessario disporre di Azure Active Directory Premium.
- -  Se si sceglie di non abilitare la registrazione automatica, usare il metodo di registrazione per Windows 8.1 e Windows Phone 8.1.
+La semplificazione della registrazione dei dispositivi Windows dipende da due fattori:
+- **Si usa Azure Active Directory Premium?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) è incluso in Enterprise Mobility + Security e altri piani di licenze.
+- **Quali versioni di client Windows saranno registrate?** <br>I dispositivi Windows 10 possono essere registrati automaticamente mediante l'aggiunta di un account aziendale o dell'istituto di istruzione. Le versioni precedenti devono essere registrate con l'app del portale aziendale.
 
-- [**Registrazione senza la funzionalità automatica di Azure AD Premium**](#enable-windows-enrollment-without-azure-ad-premium)
- - È necessario usare questo metodo per registrare i dispositivi Windows 8.1 e Windows Phone 8.1.
- - Se non si vuole usare Azure Active Directory (AD) Premium, è possibile eseguire questo metodo per i dispositivi Windows 8.1 e versioni successive.
+||**Azure AD Premium**|**Altro AD**|
+|----------|---------------|---------------|  
+|**Windows 10**|[Registrazione automatica](#enable-windows-10-automatic-enrollment) |[Registrazione utente](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Versioni precedenti di Windows**|[Registrazione utente](#enable-windows-enrollment-without-azure-ad-premium)|[Registrazione utente](#enable-windows-enrollment-without-azure-ad-premium)|
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>Abilitare la registrazione di Windows senza la registrazione automatica
-È possibile consentire agli utenti di installare e registrare i propri dispositivi senza la registrazione automatica di Azure AD Premium. Dopo avere assegnato una licenza all'account degli utenti, è possibile aggiungere tale account a un dispositivo Windows e accettare di registrare il dispositivo nella gestione. Se si creano record CNAME DNS, gli utenti potranno connettersi e registrarsi in Intune senza immettere un nome server.
+È possibile consentire agli utenti di registrare i propri dispositivi senza la registrazione automatica di Azure AD Premium. Una volta assegnate le licenze, gli utenti possono effettuare la registrazione dopo l'aggiunta dell'account aziendale ai dispositivi personali oppure includendo i loro dispositivi di proprietà dell'azienda in Azure Active Directory. La creazione di un alias DNS (tipo di record CNAME) consente agli utenti di registrare facilmente i propri dispositivi. Se si creano record di risorse DNS CNAME, gli utenti potranno connettersi e registrarsi in Intune senza dover immettere il nome del server Intune.
 
 **Passaggio 1: Creare CNAME** (facoltativo)<br>
 Creare record di risorse DNS CNAME per il dominio aziendale. Ad esempio, se il sito Web aziendale è contoso.com, si creerà un CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
