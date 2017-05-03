@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: b1df2e0c6b2494386193e24c2f6265db35e58dd5
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: 03fec9d22e705ccb27f4eb1f8f82c7ace95e841e
+ms.openlocfilehash: c5cff131e7bcedadbad42fe6ab8bf00017f933ff
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -28,14 +28,15 @@ ms.lasthandoff: 04/19/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 ## <a name="work-profile-settings"></a>Impostazioni del profilo di lavoro
--     **Condivisione dei dati tra i profili di lavoro e personali**: usare questa impostazione per controllare se le app nel profilo di lavoro possono condividere dati con le app nel profilo personale. È possibile scegliere tra: 
+-     **Condivisione dei dati tra i profili di lavoro e personali**: usare questa impostazione per controllare se le app nel profilo di lavoro possono condividere dati con le app nel profilo personale. È possibile scegliere tra:
     - **Restrizioni predefinite per la condivisione**: questo è il comportamento di condivisione predefinito del dispositivo che varia a seconda della versione di Android in esecuzione. Per impostazione predefinita, la condivisione di dati dal profilo personale al profilo di lavoro è consentita. Per impostazione predefinita, la condivisione tra il profilo di lavoro e il profilo personale è bloccata. Questo impedisce il trasferimento di dati dal profilo di lavoro al profilo personale. Google non offre un modo per bloccare i dati che vanno dal profilo personale al profilo di lavoro in dispositivi che eseguono versioni precedenti alla 6.0.  
     - **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**: usare questa opzione per abilitare la funzionalità Android predefinita che consente la condivisione dal profilo personale al profilo di lavoro. Quando questa opzione è abilitata, una richiesta di condivisione iniziata da un'app nel profilo personale sarà in grado di condividere dati con app nel profilo di lavoro. Questo è il comportamento predefinito per i dispositivi Android che eseguono versioni precedenti alla 6.0.
     - **Le app nel profilo personale possono gestire una richiesta di condivisione dal profilo di lavoro**: abilita la condivisione all'interno dell'area del profilo di lavoro in entrambe le direzioni. Quando si seleziona questa impostazione, le app nel profilo di lavoro possono condividere dati con app non gestite nel profilo personale.  Usare questa impostazione con cautela poiché consente di trasferire dati gestiti nel profilo di lavoro alla parte non gestita del dispositivo.
 
 
 -     **Notifiche del profilo di lavoro durante il blocco del dispositivo**: controlla se le app del profilo di lavoro possono visualizzare notifiche sulla schermata quando il dispositivo è bloccato.
--     **Autorizzazioni delle app predefinite**: imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro. A partire da Android 6, alcune autorizzazioni necessarie per le app vengono richieste all'utente finale in fase di esecuzione. Questa impostazione dei criteri consente di determinare se e come viene richiesto agli utenti di concedere autorizzazioni per le app nel profilo di lavoro. Ad esempio, si può eseguire il push nel profilo di lavoro di un'app che richiede l'accesso alla posizione. In genere viene visualizzata una finestra di dialogo per chiedere all'utente se vuole concedere all'app l'accesso alla posizione e l'utente può approvare o rifiutare questa richiesta. Questi criteri consentono di decidere se tutte le autorizzazioni devono essere concesse o rifiutate automaticamente senza visualizzare un messaggio di richiesta oppure se lasciare la scelta all'utente finale. È possibile scegliere tra:
+-     **Autorizzazioni delle app predefinite**: imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro. A partire da Android 6, alcune autorizzazioni necessarie per le app vengono richieste all'utente finale in fase di esecuzione. Questa impostazione dei criteri consente di determinare se e come viene richiesto agli utenti di concedere autorizzazioni per le app nel profilo di lavoro.
+Ad esempio, si può eseguire il push nel profilo di lavoro di un'app che richiede l'accesso alla posizione. In genere viene visualizzata una finestra di dialogo per chiedere all'utente se vuole concedere all'app l'accesso alla posizione e l'utente può approvare o rifiutare questa richiesta. Questi criteri consentono di decidere se tutte le autorizzazioni devono essere concesse o rifiutate automaticamente senza visualizzare un messaggio di richiesta oppure se lasciare la scelta all'utente finale. È possibile scegliere tra:
     -     **Impostazione predefinita dispositivo**
     -     **Messaggio di richiesta**
     -     **Concedi automaticamente**
@@ -60,4 +61,26 @@ ms.lasthandoff: 04/19/2017
 - **Sblocco con impronta digitale**: impedisce a un utente finale di usare lo scanner di impronta digitale del dispositivo per sbloccarlo.
 - **Smart Lock e altri agenti di attendibilità**: consente di controllare la funzionalità Smart Lock su dispositivi compatibili. Questa funzionalità del telefono, talvolta nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se quest'ultimo si trova in una posizione attendibile, ad esempio quando è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. È possibile usare questa impostazione per impedire che gli utenti configurino Smart Lock.
 
+## <a name="custom-policy-settings"></a>Impostazioni di criteri personalizzati
+Usare i **criteri di configurazione personalizzati Android for Work** di Microsoft Intune per distribuire le impostazioni OMA-URI che è possibile usare per controllare le funzionalità nei dispositivi Android for Work. Si tratta di impostazioni standard che molti produttori di dispositivi mobili usano per controllare le funzionalità del dispositivo.
+
+Questa funzionalità consente di distribuire le impostazioni Android non configurabili con i criteri di Intune.
+Intune supporta attualmente un numero limitato di criteri personalizzati Android. Vedere gli esempi in questo argomento per scoprire quali criteri è possibile configurare.
+
+### <a name="general-settings"></a>Impostazioni generali
+
+|Nome impostazione|Dettagli|
+    |----------------|--------------------|
+    |**Nome** |Immettere un nome univoco per il criterio personalizzato Android che consenta di identificarlo nella console di Intune.|
+    |**Descrizione** |Fornire una descrizione di carattere generale sul criterio personalizzato Android e altre informazioni rilevanti per consentirne l'individuazione.|
+
+### <a name="oma-uri-settings"></a>Impostazioni OMA-URI
+
+  |Nome impostazione|Dettagli|
+  |--------|--------------------|
+  |**Nome** |Immettere un nome univoco per l'impostazione OMA URI per identificarla nell'elenco delle impostazioni.|
+  |**Descrizione** |Fornire una descrizione che offra una panoramica dell'impostazione e altre informazioni rilevanti per individuarla.|
+    |**OMA-URI (maiuscole/minuscole)** |Specificare l'impostazione OMA-URI per cui si desidera fornire un'impostazione.|
+  |**Tipo di dati** |Selezionare il tipo di dati in cui verrà specificata questa impostazione OMA URI. Scegliere tra **Stringa, Stringa (XML), Data e ora, Intero, Virgola mobile** o **Booleano**.|
+  |**Valore** |Specificare il valore da associare all'impostazione OMA-URI specificata in precedenza.|
 
