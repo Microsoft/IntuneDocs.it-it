@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: e1bc6388ec1927693bac676a20a18935cdbf894e
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: fddd4963ceea09b37ad4d8c739f437dbcf3b053e
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -49,7 +49,6 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
     - [Intune Home screen layout settings for iOS devices](home-screen-settings-for-ios.md) (Impostazioni di layout della schermata iniziale di Intune per i dispositivi iOS)
     - [Intune app notifications settings for IOS devices](app-notification-settings-for-ios.md) (Impostazioni di notifica delle app di Intune per i dispositivi iOS)
     - [Shared device configuration settings for iOS](shared-device-settings-for-ios.md) (Impostazioni di configurazione dei dispositivi condivisi per iOS)
-    - [Web content filter settings for iOS](web-content-filter-settings-for-ios.md) (Impostazioni di filtraggio del contenuto Web per iOS)
 
 8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
 
