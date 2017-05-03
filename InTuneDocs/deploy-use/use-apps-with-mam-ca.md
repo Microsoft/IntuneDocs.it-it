@@ -1,6 +1,6 @@
 ---
-title: Uso di app con l&quot;accesso condizionale MAM | Documentazione Microsoft
-description: "Informazioni su come l&quot;accesso condizionale per la gestione delle app per dispositivi mobili può essere usato per controllare le app che hanno accesso ai servizi di Office&365;."
+title: Usare app con accesso condizionale MAM
+description: "Informazioni su come l&quot;accesso condizionale per la gestione delle app per dispositivi mobili può essere usato per controllare le app che hanno accesso ai servizi di Office 365."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -37,6 +37,11 @@ L'elenco seguente include le proprietà che derivano direttamente dal dispositiv
 * deviceOSType
 * deviceOSVersion
 * displayName
+
+> [!NOTE]
+> Su dispositivi Android:
+  * È necessario che l'app Portale aziendale sia installata nel dispositivo, ma non è necessario che l'utente acceda all'app.
+  * La registrazione del dispositivo va eseguita tramite l'app OneDrive o Outlook.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Per rimuovere un dispositivo dalla registrazione in Azure AD
 La registrazione del dispositivo può essere rimossa tramite la console di amministrazione di Azure AD, in genere da un amministratore IT.  Questa operazione può essere eseguita anche dall'utente finale nel dispositivo stesso.

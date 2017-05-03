@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: dd53e547a8f834eff528e79cf2506be1e6c2dc2a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: e1bc6388ec1927693bac676a20a18935cdbf894e
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -44,8 +44,12 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
     - **macOS**
 6. Dall'elenco a discesa **Tipo di profilo** scegliere **Funzionalità del dispositivo**. 
 7. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli argomenti seguenti per il dettaglio delle impostazioni di ogni piattaforma:
-    - [Impostazioni iOS](device-features-for-ios.md)
-    - [Impostazioni macOS](device-features-for-macos.md)
+    - [AirPrint settings for iOS and macOS devices](air-print-settings-for-ios-and-macos.md) (Impostazioni di AirPrint per i dispositivi iOS e MacOS)
+     - [Intune AirPlay settings for iOS devices](airplay-settings-for-ios-devices.md) (Impostazioni di Intune AirPlay per i dispositivi iOS)
+    - [Intune Home screen layout settings for iOS devices](home-screen-settings-for-ios.md) (Impostazioni di layout della schermata iniziale di Intune per i dispositivi iOS)
+    - [Intune app notifications settings for IOS devices](app-notification-settings-for-ios.md) (Impostazioni di notifica delle app di Intune per i dispositivi iOS)
+    - [Shared device configuration settings for iOS](shared-device-settings-for-ios.md) (Impostazioni di configurazione dei dispositivi condivisi per iOS)
+    - [Web content filter settings for iOS](web-content-filter-settings-for-ios.md) (Impostazioni di filtraggio del contenuto Web per iOS)
 
 8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
 

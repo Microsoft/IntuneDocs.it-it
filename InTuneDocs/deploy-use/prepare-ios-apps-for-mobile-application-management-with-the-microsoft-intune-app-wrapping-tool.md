@@ -15,8 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
-ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: 991393e0caf64c44cc10c7775fba45083212659e
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -108,8 +109,8 @@ Per altre informazioni sulla distribuzione di app iOS internamente per gli utent
 
   ![Selezionare il certificato interno e ad hoc](../media/app-wrapper/iOS-signing-cert-3.png)
 
->[!NOTE]
->Se non si prevede di distribuire l'app e si vuole solo testarla internamente, è possibile usare un certificato per lo sviluppo di app iOS invece di un certificato per la produzione. Se si usa un certificato di sviluppo, assicurarsi che il profilo di provisioning per dispositivi mobili faccia riferimento ai dispositivi in cui verrà installata l'app.
+  >[!NOTE]
+  >Se non si prevede di distribuire l'app e si vuole solo testarla internamente, è possibile usare un certificato per lo sviluppo di app iOS invece di un certificato per la produzione. Se si usa un certificato di sviluppo, assicurarsi che il profilo di provisioning per dispositivi mobili faccia riferimento ai dispositivi in cui verrà installata l'app.
 
 7. Fare clic su **Next** (Avanti) nella parte inferiore della pagina.
 
@@ -136,7 +137,6 @@ Per altre informazioni sulla distribuzione di app iOS internamente per gli utent
 14. Fare doppio clic sul file di certificato appena scaricato per aggiungere il certificato a un portachiavi.
 
 15. Aprire di nuovo **Accesso Portachiavi**. Individuare il certificato cercandone il nome nella barra di ricerca in alto a destra. Fare clic con il pulsante destro del mouse su un elemento per visualizzare il menu e scegliere **Ottieni informazioni**. Nelle schermate di esempio viene usato un certificato di sviluppo anziché un certificato di produzione.
-
 
   ![Aggiungere il certificato a un portachiavi](../media/app-wrapper/iOS-signing-cert-8.png)
 
@@ -205,7 +205,7 @@ Con lo strumento di wrapping delle app è possibile usare i parametri della riga
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Mostra informazioni d'uso dettagliate per le proprietà della riga di comando disponibili per lo strumento di wrapping delle app.|
-|**-v**|(Facoltativo) Mostra messaggi dettagliati nella console.|
+|**-v**|(Facoltativo) Mostra messaggi dettagliati nella console. È consigliabile usare questo flag per il debug di eventuali errori.|
 |**-e**| (Facoltativo) Usare questo flag per fare in modo che lo strumento di wrapping delle app rimuova i diritti mancanti durante l'elaborazione dell'app. Per altri dettagli, vedere Impostazione dei diritti delle app.|
 |**-xe**| (Facoltativo) Visualizza informazioni sulle estensioni iOS nell'app e sui diritti necessari per usarle. Per altri dettagli, vedere Impostazione dei diritti delle app. |
 |**-x**| (Facoltativo) `<An array of paths to extension provisioning profiles>`. Usare questa opzione se l'app richiede profili di provisioning estensioni.|
@@ -399,9 +399,4 @@ Quando si usa lo strumento di wrapping delle app, adottare le procedure consigli
 - [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
 - [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
 - [Usare l'SDK per abilitare le app per la gestione delle applicazioni mobili](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

@@ -1,6 +1,6 @@
 ## <a name="enable-windows-10-automatic-enrollment"></a>Abilitare la registrazione automatica di Windows 10
 
-La registrazione automatica consente agli utenti di registrare dispositivi e PC di proprietà dell'azienda o personali Windows 10 e 10 Windows Mobile in Intune aggiungendo un account aziendale o dell'istituto di istruzione e accettandone la gestione. La procedura è molto semplice: in background, il dispositivo dell'utente si registra e unisce ad Azure Active Directory. Dopo la registrazione, il dispositivo viene gestito con Intune.
+La registrazione automatica consente agli utenti di registrare i propri dispositivi Windows 10 in Intune quando l'account aziendale viene aggiunto ai dispositivi di proprietà personale o quando i dispositivi di proprietà dell'azienda vengono aggiunti ad Azure Active Directory. in background, il dispositivo dell'utente si registra e unisce ad Azure Active Directory. Dopo la registrazione, il dispositivo viene gestito con Intune.
 
 **Prerequisiti**
 - Sottoscrizione di Azure Active Directory Premium ([sottoscrizione di prova](http://go.microsoft.com/fwlink/?LinkID=816845))
@@ -21,19 +21,19 @@ La registrazione automatica consente agli utenti di registrare dispositivi e PC 
 
   ![Schermata del portale di Azure](../media/auto-enroll-intune.png)
 
-4. Configurare gli utenti che saranno registrati automaticamente.
+4. Configurare **Ambito utente MDM**. Specificare i dispositivi degli utenti che devono essere gestiti da Microsoft Intune. I dispositivi utente Windows 10 vengono registrati automaticamente per essere gestiti con Microsoft Intune.
 
-  ![Schermata del portale di Azure](../media/auto-enroll-scope.png)
-
-  Usare i valori predefiniti per gli URL seguenti:
-  - **Registrazione MDM**
-  - **Condizioni per l'utilizzo di MDM**
-  - **Conformità MDM**
-
-5. Specificare i dispositivi degli utenti che devono essere gestiti da Microsoft Intune. I dispositivi utente Windows 10 vengono registrati automaticamente per essere gestiti con Microsoft Intune.
-
-  - **Tutti**
-  - **Gruppi**
   - **Nessuno**
+  - **Alcuni**
+  - **Tutti**
+
+   ![Schermata del portale di Azure](../media/auto-enroll-scope.png)
+
+5. Usare i valori predefiniti per gli URL seguenti:
+    - **URL delle condizioni per l'uso di MDM**
+    - **URL individuazione MDM**
+    - **URL conformità MDM**
 
 6. Selezionare **Salva**.
+
+Per impostazione predefinita, l'autenticazione a due fattori non è abilitata per il servizio. Tuttavia l'autenticazione a due fattori è consigliabile quando si registra un dispositivo. Prima di richiedere l'autenticazione a due fattori per questo servizio, è necessario configurare un provider di autenticazione a due fattori in Azure Active Directory e configurare gli account utente per l'autenticazione a più fattori. Vedere [Introduzione al server Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
