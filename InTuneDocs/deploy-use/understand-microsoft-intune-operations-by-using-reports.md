@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ Usare le informazioni contenute in questo argomento per creare e gestire report 
 ## <a name="using-reports"></a>Utilizzo dei report
 I report di Intune forniscono informazioni su software, hardware e licenze software dell'organizzazione. I report contribuiscono a definire le esigenze correnti e a prevedere la spesa futura. Nell'area di lavoro **Report** vengono forniti gli strumenti per creare e gestire i report. 
 
-### <a name="report-types"></a>Tipi di report
+## <a name="report-types"></a>Tipi di report
 
 |Tipo di report|Descrizione|
 |---------------|---------------|
@@ -49,8 +49,10 @@ I report di Intune forniscono informazioni su software, hardware e licenze softw
 |**Report di attestazione dell'integrità**|Indica l'integrità dei dispositivi mobili.|
 |**Report sull'hardware Mac OS X**|Visualizza i dettagli sull'hardware per tutti i dispositivi Mac OS X registrati nei gruppi selezionati. Per informazioni sull'inventario hardware raccolto da questi dispositivi, vedere [Informazioni sui dispositivi con inventario in Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Report sul software Mac OS X**|Visualizza il software installato in tutti i dispositivi Mac OS X nei gruppi selezionati. Nel report sono elencati il nome del software (come ID bundle), il nome abbreviato (o descrittivo), la versione e il numero di dispositivi in cui è installato il software.|
+|**Report di Windows Information Protection**|Mostra informazioni sulle operazioni di Windows Information Protection (WIP) nei dispositivi gestiti.|
+|**Report di attestazione dell'integrità**|Mostra le informazioni segnalate dal servizio di attestazione dell'integrità di Windows per i dispositivi gestiti.|
 
-#### <a name="to-create-a-report"></a>Per creare un report
+## <a name="to-create-a-report"></a>Per creare un report
 
 1.  Nella console di amministrazione di Intune scegliere **Report**. Scegliere quindi il tipo di report che si vuole generare, come descritto nella tabella precedente.
 

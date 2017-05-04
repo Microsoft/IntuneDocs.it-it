@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 9ebfadd945916b6be8225b9e07d67100e3f91222
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: eae3a7d0771724076680ec7152b09e7364603880
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -31,7 +31,7 @@ Il portale aziendale di Microsoft Intune è il punto in cui gli utenti possono a
 > [!Tip]
 > Quando si personalizza il portale aziendale, le configurazioni vengono applicate sia al sito Web che alle app Portale aziendale.
 
-La personalizzazione del portale aziendale consente di offrire agli utenti finali un'esperienza familiare e utile. A tale scopo, dal carico di lavoro **Gestisci le app** scegliere **Installazione** > **Company Portal Branding** (Personalizzazione del portale aziendale), quindi configurare le impostazioni richieste.
+La personalizzazione del portale aziendale consente di offrire agli utenti finali un'esperienza familiare e utile. A tale scopo, dal carico di lavoro **App per dispositivi mobili** scegliere **Installazione** > **Personalizzazione del portale aziendale** e quindi configurare le impostazioni richieste.
 
 ## <a name="company-contact-information-and-privacy-statement"></a>Informazioni di contatto e informativa sulla privacy della società
 Il nome dell'azienda viene visualizzato come titolo del portale aziendale. I dettagli e le informazioni di contatto vengono visualizzati agli utenti nella schermata **Contatta l'IT** del portale aziendale. L'informativa sulla privacy viene visualizzata quando un utente fa clic sul relativo collegamento.

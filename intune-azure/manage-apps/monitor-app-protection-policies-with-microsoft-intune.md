@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -42,8 +43,8 @@ Lo stato di conformità può essere monitorato in tre posizioni diverse:
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
-3. Nel pannello **Intune** scegliere **Gestisci le app**.
-4. Nel carico di lavoro di **Gestisci le app** scegliere **Monitora** > **stato dell'utente con protezione delle app** per esaminare la visualizzazione di riepilogo:
+3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
+4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Monitoraggio** > **Stato dell'utente con protezione delle app** per esaminare la visualizzazione di riepilogo:
 
 ![Riquadro Riepilogo del pannello Gestione di applicazioni mobili di Intune](../media/app-protection-user-status-summary.png)
 
@@ -126,20 +127,15 @@ Seguire questi passaggi per generare il report sulla protezione delle app:
 
 1. Nel pannello Gestione di applicazioni mobili di Intune scegliere il report sulla protezione delle app.
 
-    ![Screenshot&6;](../media/app-protection-report-csv-2.png)
+    ![Screenshot 6](../media/app-protection-report-csv-2.png)
 
 2. Scegliere Sì per salvare il report, quindi scegliere Salva con nome e selezionare la cartella in cui eseguire il salvataggio.
 
-    ![Screenshot&7;](../media/app-protection-report-csv-1.png)
+    ![Screenshot 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Vedere anche
 [Gestire il trasferimento di dati tra app iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](app-protection-enabled-android-apps.md)
 * [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

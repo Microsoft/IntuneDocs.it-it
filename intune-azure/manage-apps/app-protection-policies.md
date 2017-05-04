@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 0aabb7af82bc7c9ed55eca91e615bace5e299d11
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/18/2017
 I criteri di protezione delle app possono essere applicati in app eseguite su dispositivi gestiti o non gestiti da Intune. Per una descrizione più dettagliata del funzionamento dei criteri di protezione delle app e degli scenari supportati dai criteri di protezione delle app di Intune, vedere [What is Microsoft Intune app protection policies](what-is-app-protection-policy.md)(Cosa sono i criteri di protezione delle app di Microsoft Intune).
 
 ##  <a name="create-an-app-protection-policy"></a>Creare un criterio di protezione delle app
-1.  Nel carico di lavoro **Gestisci le app** scegliere **Gestisci** > **Criteri di protezione delle app**.
+1.  Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **Criteri di protezione delle app**.
 
 2.  Verrà visualizzato il pannello **Criteri di protezione delle app**, in cui sarà possibile creare nuovi criteri e modificare i criteri esistenti. Scegliere **Aggiungi criteri**.
 

@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 68dbebbd7d29514bde438b7dff3142dc45e8471d
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: f760d567ac339bbb60240ee9f8d28cb550656a59
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -63,7 +63,7 @@ Nella tabella seguente sono elencati i requisiti per il computer in cui viene in
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Scaricare il pacchetto di installazione di On-premises Exchange Connector
 
-1. In un sistema operativo Windows Server supportato da On-premises Exchange Connector aprire la [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) con un account utente che è un amministratore nel tenant Exchange e dispone di una licenza per l'uso di Exchange Server.
+1. In un sistema operativo Windows Server supportato da On-premises Exchange Connector aprire la [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) (https://manage.microsoft.com) con un account utente che è un amministratore nel tenant Exchange e dispone di una licenza per l'uso di Exchange Server.
 ![Aprire Configura connessione Exchange](../media/ExchangeConnector.gif)
 
 2.  Nel riquadro dei collegamenti alle aree di lavoro scegliere **Amministrazione**>**Gestione dei dispositivi mobili** > **Microsoft Exchange**>**Configura connessione Exchange**.
@@ -129,7 +129,7 @@ Dopo aver configurato la connessione in Exchange Connector, i dispositivi mobili
 
 ## <a name="validate-the-exchange-connection"></a>Convalidare la connessione di Exchange
 
-Dopo aver configurato correttamente Exchange Connector, è possibile visualizzare lo stato della connessione e l'ultimo tentativo di sincronizzazione riuscito. Nella [console di amministrazione di Microsoft Intune](http://manage.microsoft.com) scegliere l'area di lavoro **Amministrazione**. In **Gestione dei dispositivi mobili** scegliere **Microsoft Exchange** e verificare che i dettagli specificati siano visualizzati in **Informazioni sulla connessione Exchange**.
+Dopo aver configurato correttamente Exchange Connector, è possibile visualizzare lo stato della connessione e l'ultimo tentativo di sincronizzazione riuscito. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere l'area di lavoro **Amministrazione**. In **Gestione dei dispositivi mobili** scegliere **Microsoft Exchange** e verificare che i dettagli specificati siano visualizzati in **Informazioni sulla connessione Exchange**.
 
 
 È inoltre possibile verificare la data e ora dell'ultimo tentativo di sincronizzazione riuscito.

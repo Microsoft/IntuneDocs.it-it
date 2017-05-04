@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 44429b8694d15006f77a9eb5206293a6bcc8090b
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -87,12 +87,11 @@ Questo articolo descrive come configurare e distribuire l'app Lookout for Work i
   Scegliere l'opzione **Installazione richiesta** per richiedere l'installazione dell'app Lookout nel dispositivo dell'utente.
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Cosa accade quando viene aperta l'app distribuita nel dispositivo
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Quando l'utente apre Lookout for Work nel dispositivo viene richiesto di attivare l'app e di scegliere l'opzione Accedi con Azure Active Directory. Negli argomenti seguenti è disponibile una procedura dettagliata con il flusso per l'utente finale:
 
-Quando l'utente apre Lookout for Work nel dispositivo viene richiesto di attivare l'app e di scegliere l'opzione Sign in with Azure Active Directory (Accedi con Azure Active Directory). Negli argomenti seguenti è disponibile una procedura dettagliata con il flusso per l'utente finale:
+* [Viene richiesto di installare Lookout for Work nel dispositivo Android](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-* [Viene richiesto di installare Lookout for Work nel dispositivo Android](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
-
-* [È necessario risolvere una minaccia rilevata da Lookout for Work nel dispositivo Android](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [È necessario risolvere una minaccia rilevata da Lookout for Work nel dispositivo Android](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Passaggi successivi
 * [Creare criteri di conformità dei dispositivi di Lookout in Intune](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

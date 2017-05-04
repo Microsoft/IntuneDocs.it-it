@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d02d7c3367e18c96cc1d72de3a3a0ef581ef63ff
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -58,7 +58,7 @@ Prima di abilitare la sincronizzazione nella console di Intune, è necessario co
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
-3. Nel pannello **Intune** scegliere **Gestisci le app**.
+3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
 1. Nel pannello **App per dispositivi mobili** scegliere **Installazione** > **Windows Store per le aziende**.
 2. Fare clic su **Abilita**.
 3. Se non è già stato fatto, fare clic sul collegamento per registrarsi a Windows Store per le aziende e associare il proprio account come descritto in precedenza.
@@ -67,7 +67,7 @@ Prima di abilitare la sincronizzazione nella console di Intune, è necessario co
 
 ## <a name="synchronize-apps"></a>Sincronizzare le app
 
-1. Nel carico di lavoro **Gestisci le app** scegliere **Installazione** > **Windows Store per le aziende**.
+1. Nel carico di lavoro **App per dispositivi mobili** scegliere **Installazione** > **Windows Store per le aziende**.
 2. Fare clic su **Sincronizza** per trasferire le app acquistate da Windows Store in Intune.
 
 ## <a name="assign-apps"></a>Assegnare le app

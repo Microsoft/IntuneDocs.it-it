@@ -15,9 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
-ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
-ms.lasthandoff: 02/10/2017
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 5211d2222e5e8ef9328f60ed13f0146925194c5f
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -26,11 +26,7 @@ ms.lasthandoff: 02/10/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Queste indicazioni sono rivolte agli amministratori di sistema responsabili della gestione dei dispositivi nell'organizzazione. Per informazioni sull'uso di Intune nel dispositivo mobile, vedere le [domande frequenti su Portale aziendale di Intune](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
-
-Prima di configurare Microsoft Intune leggere questo argomento e gli altri requisiti indicati in [Informazioni preliminari per l'uso di Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)
-
-Usare le informazioni nelle sezioni seguenti per pianificare il traffico di rete per i client Microsoft Intune.
+Queste linee guida consentono agli amministratori di Intune di conoscere i requisiti di rete per il servizio Intune. È possibile usare queste informazioni per comprendere i requisiti di larghezza di banda e le impostazioni di porta e indirizzo IP necessarie per le impostazioni proxy.
 
 ## <a name="average-network-traffic"></a>Traffico di rete medio
 In questa tabella sono elencate le dimensioni approssimative e la frequenza di contenuto comune che viaggia attraverso la rete per ogni client.
