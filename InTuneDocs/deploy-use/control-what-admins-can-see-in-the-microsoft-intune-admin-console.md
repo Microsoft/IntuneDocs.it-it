@@ -40,7 +40,7 @@ ms.lasthandoff: 12/30/2016
     -   **Accesso in sola lettura**
     -   **Supporto tecnico - Nodo Gruppi**
 
-    Accesso completo e accesso in sola lettura sono di chiara interpretazione. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    Accesso completo e accesso in sola lettura sono di chiara interpretazione. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
     **Supporto tecnico - Nodo Gruppi** limita le attività che l'amministratore può eseguire a quanto segue:
 

@@ -33,7 +33,7 @@ Come amministratore IT è possibile creare e importare un file con valori delimi
 ## <a name="add-corporate-identifiers"></a>Aggiungere identificatori aziendali
 Per creare l'elenco, generare un elenco di valori a due colonne, delimitato da virgole (file con estensione CSV) senza intestazione. Aggiungere l'identificatore IMEI nella colonna a sinistra e i dettagli nella colonna destra. I dettagli sono limitati a 128 caratteri e sono destinati esclusivamente a un uso amministrativo. Non sono visualizzati nel dispositivo. Il limite corrente per ogni file con estensione csv è di 500 righe.
 
-**Caricando un file con estensione csv contenente i numeri di serie**: creare un elenco delimitato da virgole (con estensione csv) composto da due colonne senza intestazione e limitato a 5.000 dispositivi o a 5 MB per ogni file con estensione csv.
+**Caricando un file con estensione csv contenente i numeri di serie**: creare un elenco delimitato da virgole (con estensione csv) composto da due colonne senza intestazione e limitato a 5.000 dispositivi o a 5 MB per ogni file con estensione csv. 
 
 |||
 |-|-|
@@ -43,8 +43,8 @@ Per creare l'elenco, generare un elenco di valori a due colonne, delimitato da v
 Il file con estensione CSV quando viene visualizzato in un editor di testo viene visualizzato come:
 
 ```
-01 234567 890123,device details
-02 234567 890123,device details
+01234567890123,device details
+02234567890123,device details
 ```
 
 

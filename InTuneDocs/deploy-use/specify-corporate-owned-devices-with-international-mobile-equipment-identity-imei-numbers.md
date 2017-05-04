@@ -30,7 +30,7 @@ Microsoft Intune consente agli amministratori di identificare i dispositivi mobi
 
 1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Gruppi** &gt; **Tutti i dispositivi** &gt; **Dispositivi aziendali preregistrati** &gt;  **Per IMEI (tutte le piattaforme)** e quindi scegliere **Aggiungi dispositivi....**. È possibile aggiungere dispositivi in due modi:
 
-    -   **Caricando un file con estensione csv contenente i numeri di serie**: creare un elenco delimitato da virgole (con estensione csv) composto da due colonne senza intestazione e limitato a 5.000 dispositivi o a 5 MB per ogni file con estensione csv. Il campo dei dettagli è limitato a 128 caratteri.
+    -   **Caricando un file con estensione csv contenente i numeri di serie**: creare un elenco delimitato da virgole (con estensione csv) composto da due colonne senza intestazione e limitato a 5.000 dispositivi o a 5 MB per ogni file con estensione csv. Il campo dei dettagli è limitato a 128 caratteri. 
 
         |||
         |-|-|
@@ -39,8 +39,8 @@ Microsoft Intune consente agli amministratori di identificare i dispositivi mobi
         Il file con estensione CSV quando viene visualizzato in un editor di testo viene visualizzato come:
 
         ```
-        01 234567 890123,device details
-        02 234567 890123,device details
+        01234567890123,device details
+        02234567890123,device details
         ```
 
     -   **Aggiungendo manualmente i dettagli dei dispositivi**: immettere il numero IMEI e i dettagli per un massimo di quindici dispositivi.
