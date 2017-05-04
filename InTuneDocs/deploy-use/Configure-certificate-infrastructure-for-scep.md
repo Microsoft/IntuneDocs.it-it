@@ -15,9 +15,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 924dc37b310b27fe40ece9f8019061b02cb7ac2d
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 88fd05cf1ccaf2c033b737ce76a3ce5d83557313
+ms.lasthandoff: 04/25/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurare l'infrastruttura di certificazione per SCEP
@@ -36,12 +36,12 @@ I
 -  **Server NDES**: nei server che eseguono Windows Server 2012 R2 o versioni successive è necessario installare il servizio Registrazione dispositivi di rete (NDES, Network Device Enrollment Service). Intune non supporta l'uso di NDES se viene eseguito su un server con Enterprise CA. Vedere [Linee guida per il servizio Registrazione dispositivi di rete](http://technet.microsoft.com/library/hh831498.aspx) per istruzioni su come configurare Windows Server 2012 R2 per ospitare il Servizio Registrazione dispositivi di rete. Il server NDES deve appartenere al dominio che ospita la CA e non trovarsi nello stesso server di questa. Altre informazioni sulla distribuzione del server NDES in una foresta separata, in una rete isolata o in un dominio interno sono disponibili in [Uso di un Modulo criteri con il servizio Registrazione dispositivi di rete](https://technet.microsoft.com/library/dn473016.aspx).
 
 -  **Connettore di certificati di Microsoft Intune**: usare la console di amministrazione di Intune per scaricare il programma di installazione del **Connettore di certificati** (**ndesconnectorssetup.exe**). È quindi possibile eseguire **ndesconnectorssetup.exe** nel computer in cui si vuole installare Connettore di certificati.
--  **Server proxy applicazione Web** (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versioni successive come server proxy applicazione Web (WAP, Web Application Proxy) . Questa configurazione:
+-  **Server proxy applicazione Web**  (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versioni successive come server proxy applicazione Web (WAP, Web Application Proxy) . Questa configurazione:
     -  Consente ai dispositivi di ricevere i certificati usando una connessione Internet.
     -  Vale come raccomandazione di sicurezza quando i dispositivi usano la connessione a Internet per ricevere e rinnovare i certificati.
 
  > [!NOTE]           
-> -    Il server che ospita WAP [deve installare un aggiornamento](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) che abilita il supporto per gli URL lunghi usati dal servizio Registrazione dispositivi di rete. Questo aggiornamento è incluso nell' [aggiornamento cumulativo di dicembre 2014](http://support.microsoft.com/kb/3013769)oppure può essere scaricato singolarmente da [KB3011135](http://support.microsoft.com/kb/3011135).
+> -    Il server che ospita WAP [deve installare un aggiornamento](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) che abilita il supporto per gli URL lunghi usati dal servizio Registrazione dispositivi di rete. Questo aggiornamento è incluso nell' [aggiornamento cumulativo di dicembre 2014](https://support.microsoft.com/kb/3013769)oppure può essere scaricato singolarmente da [KB3011135](https://support.microsoft.com/kb/3011135).
 >-  Il server che ospita WAP deve avere un certificato SSL che corrisponde al nome pubblicato ai client esterni e riconosciuto come attendibile dal server NDES. Questi certificati consentono al server WAP di chiudere la connessione SSL dai client e creare una nuova connessione SSL nel server NDES.
     Per informazioni sui certificati per WAP, vedere la sezione sulla **pianificazione dei certificati** in [Pianificazione della pubblicazione di applicazioni mediante il proxy applicazione Web](https://technet.microsoft.com/library/dn383650.aspx). Per informazioni generali sui server WAP (Web Application Proxy, proxy di applicazioni Web), vedere [Utilizzo di Proxy applicazione Web](http://technet.microsoft.com/library/dn584113.aspx).|
 

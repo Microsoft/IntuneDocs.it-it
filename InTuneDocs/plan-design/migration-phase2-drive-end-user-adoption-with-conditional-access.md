@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 26d11bc64802005bcce8cc1962d531af6ffe5cd5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 12584743534a76d0b2ce92e5de6cb5f916453938
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -50,7 +50,7 @@ Ecco un approccio tipico per ottimizzare una campagna di migrazione con accesso 
 
 -   Gli utenti della soluzione precedente potrebbero riuscire potenzialmente ad accedere alle risorse usando dispositivi non gestiti fino a quando non viene abilitato l'accesso condizionale per tali utenti.
 
-> [!TIP] 
+> [!TIP]
 > Questo è solo uno dei tanti approcci disponibili. È possibile scegliere un processo più semplice che posticipa del tutto l'accesso condizionale fino al completamento della registrazione per tutte le fasi oppure un processo più rigido che impone l'accesso condizionale sin dall'inizio e richiede la conformità completa per tutti gli accessi.
 
 -   Altre informazioni sull'[accesso condizionale](https://docs.microsoft.com/intune-azure/conditional-access/what-is-conditional-access).
@@ -61,7 +61,7 @@ Ecco un approccio tipico per ottimizzare una campagna di migrazione con accesso 
 
 -   Scoprire [come configurare l'accesso condizionale](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
-### <a name="task-2-setup-intune-conditional-access"></a>Attività 2: Configurare l'accesso condizionale di Intune
+### <a name="task-2-set-up-intune-conditional-access"></a>Attività 2: Configurare l'accesso condizionale di Intune
 
 Scegliere uno dei tipi di criteri di accesso condizionale seguenti per altre informazioni:
 

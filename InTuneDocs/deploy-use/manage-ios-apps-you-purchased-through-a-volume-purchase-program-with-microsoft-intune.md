@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -66,7 +67,7 @@ Nella pagina **Volume Purchase Program** è ora possibile visualizzare le inform
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>Per distribuire un'app acquistata tramite Volume Purchase Program
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **App** &gt; **Software gestito** &gt; **App acquistate con Volume Purchase Program**. Questo elenco visualizza tutte le applicazioni che sono state sincronizzate dal servizio VPP di Apple.
+1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **App** &gt; **App** &gt; **App acquistate con Volume Purchase Program**. Questo elenco visualizza tutte le applicazioni che sono state sincronizzate dal servizio VPP di Apple.
 
 2.  Scegliere l'app da distribuire, scegliere **Gestisci distribuzione**, quindi usare le istruzioni specificate nell'argomento [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Distribuire app in Microsoft Intune) per completare il caricamento, la creazione e la distribuzione dell'app.
 
@@ -79,22 +80,14 @@ Per revocare una licenza, è necessario modificare l'azione di distribuzione spe
 
 La prima volta che un utente con un dispositivo idoneo tenta di installare un'app VPP gli viene richiesto di partecipare al programma Volume Purchase Program di Apple. È necessario completare questo passaggio per poter proseguire l'installazione dell'app.
 
-> [!TIP]
-> Osservare la colonna **VPP Terms Status** per visualizzare lo stato dei accettazione per ogni utente a cui è stata distribuita l'app.
-
 Se non ci sono altre licenze disponibili, la distribuzione non riuscirà.
 
 ## <a name="to-monitor-apple-vpp-apps"></a>Per monitorare le app VPP di Apple
-Per monitorare quali app VPP sono state distribuite e quante licenze sono in uso, è possibile usare l'area di lavoro **App** nel nodo **Software gestito** &gt; **App acquistate con Volume Purchase Program**.
+Per monitorare quali app VPP sono state distribuite e quante licenze sono in uso, è possibile usare l'area di lavoro **App** nel nodo **App acquistate con Volume Purchase Program**.
 
 > [!TIP]
 > È anche possibile usare **Filtri** per esaminare lo stato dell'installazione di ogni app.
 
 ### <a name="see-also"></a>Vedere anche
 [Distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

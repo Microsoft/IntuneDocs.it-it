@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 03f53e6ec9f934eb40415434a60213bc839f6afe
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: 29fe0acf6c3724455d56b4657c79bc93fb258441
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -43,7 +43,7 @@ Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione d
 | **Crittografa dati app** | Per le applicazioni gestite da criteri, i dati inattivi vengono crittografati usando lo schema di crittografia a livello di dispositivo fornito da iOS. Quando viene richiesto un PIN, i dati vengono crittografati in base alle impostazioni nei criteri di protezione delle app. <br><br> Passare alla documentazione di Apple ufficiale [qui](https://support.apple.com/HT202739) per vedere quali moduli di crittografia iOS sono certificati FIPS 140-2 o in attesa della certificazione FIPS 140-2. <br><br> Specificare quando vengono crittografati i dati aziendali o dell'istituto di istruzione nell'app. È possibile scegliere tra: <ul><li>**Quando il dispositivo è bloccato**: tutti i dati delle app associati a questo criterio vengono crittografati quando il dispositivo è bloccato.</li><li>**Quando il dispositivo è bloccato e sono presenti file aperti**: tutti i dati delle app associati a questo criterio vengono crittografati quando il dispositivo è bloccato, tranne i dati nei file attualmente aperti nell'app.</li><li>**Dopo il riavvio del dispositivo**: tutti i dati delle app associati a questo criterio vengono crittografati al riavvio del dispositivo e restano crittografati fino a quando il dispositivo non viene sbloccato per la prima volta.</li><li>**Usa impostazioni dispositivo**: i dati delle app vengono crittografati in base alle impostazioni predefinite del dispositivo. Quando si abilita questa impostazione, l'utente deve configurare e usare un PIN per accedere al dispositivo.  Se non è presente il PIN, le app non vengono aperte e all'utente viene richiesto di impostare un PIN con il messaggio "L'azienda ha richiesto l'abilitazione di un PIN del dispositivo per poter accedere a questa applicazione". </li></ul> | Quando il dispositivo è bloccato |
 | **Disabilita sincronizzazione contatti** | Scegliere **Sì** per impedire all'app di salvare dati nell'app Contatti nativa nel dispositivo. Se si sceglie **No**, l'app può salvare dati nell'app Contatti nativa nel dispositivo. <br><br>Quando si esegue una cancellazione selettiva per rimuovere dati aziendali o dell'istituto di istruzione dall'app, i contatti sincronizzati direttamente dall'app nell'app Contatti nativa vengono rimossi. Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. Attualmente questa opzione è disponibile solo per l'app Microsoft Outlook. | No |
 | **Disabilita stampa** | Scegliere **Sì** per impedire all'app di stampare dati aziendali o dell'istituto di istruzione. | No |
-
+| **Selezionare i servizi di archiviazione in cui è possibile salvare i dati aziendali** | Gli utenti possono salvare nei servizi selezionati (OneDrive for Business, SharePoint e archiviazione locale). Tutti gli altri servizi verranno bloccati. | OneDrive for Business e SharePoint |
 
 > [!NOTE]
 > Nessuna delle impostazioni di rilocazione dei dati controlla la funzionalità "Apri in" gestita di Apple nei dispositivi iOS. Per gestire la funzionalità "Apri in" gestita di Apple, vedere [Gestire il trasferimento di dati tra app iOS con Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
@@ -72,6 +72,7 @@ Esistono alcune app e servizi della piattaforma esenti, per i quali in determina
 | **Blocca l'esecuzione delle app gestite nei dispositivi jailbroken o rooted** |  Scegliere **Sì** per impedire l'esecuzione dell'app nei dispositivi jailbroken o rooted. L'utente potrà comunque usare le app per le attività personali, ma dovrà usare un dispositivo diverso per accedere ai dati aziendali o dell'istituto di istruzione nell'app. | sì |
 | **Controlla di nuovo i requisiti di accesso dopo (minuti)** | Configurare le seguenti impostazioni: <ul><li>**Timeout**: numero di minuti prima che vengano ricontrollati i requisiti di accesso definiti in precedenza nei criteri. Ad esempio, un amministratore attiva il PIN nel criterio e l'utente deve immettere un PIN quando apre un'app MAM. Quando si usa questa impostazione, l'utente non dovrà immettere un PIN per alcuna app MAM per altri **30 minuti** (valore predefinito).</li><li>**Periodo di prova offline**: numero di minuti per cui è consentita l'esecuzione di app MAM offline. Specificare il periodo (in minuti) prima che vengano ricontrollati i requisiti di accesso per l'app. Valore predefinito: **720** minuti (12 ore). Alla scadenza di questo periodo, l'app richiederà l'autenticazione utente per AAD per poter continuare l'esecuzione.</li></ul>| Timeout: 30 <br><br> Offline: 720 |
 | **Intervallo offline (giorni) prima della cancellazione dei dati dell'app** | Dopo questo numero di giorni (definito dall'amministratore) di esecuzione offline, l'app stessa eseguirà una cancellazione selettiva. Questa cancellazione selettiva è uguale a quella che può essere avviata dall'amministratore nel flusso di lavoro di cancellazione MAM. <br><br> | 90 giorni |
+| **Disabilita il PIN dell'app quando il PIN del dispositivo è gestito** | Scegliere **Sì** per disabilitare il PIN dell'app quando viene rilevato un blocco del dispositivo in un dispositivo registrato. | No |
 
 ##  <a name="add-ins-for-outlook-app"></a>Componenti aggiuntivi per l'app Outlook
 
