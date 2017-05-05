@@ -5,7 +5,7 @@ keywords: informazioni su Intune
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 03/7/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 2552f84dc38c4453851167cd1570143c7a9820c2
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -32,7 +32,7 @@ Intune è un servizio di gestione della mobilità aziendale (EMM) basato su clou
 * Proteggere le informazioni aziendali grazie alla possibilità di controllare le modalità di accesso e condivisione dei dati da parte della forza lavoro.
 * Assicurarsi che i dispositivi e le app siano conformi ai requisiti di sicurezza aziendali.
 
-Intune è integrato con Azure Active Directory (Azure AD) per il controllo delle identità e degli accessi e con Azure Information Protection per la protezione dei dati. Costituisce lo *strumento di gestione* di Microsoft Enterprise Mobility + Security (EMS), mentre Office 365 è lo *strumento di produttività* della soluzione di mobilità di Microsoft.  
+Intune è integrato con Azure Active Directory (Azure AD) per il controllo delle identità e degli accessi e con Azure Information Protection per la protezione dei dati.
 
 Insieme, Office 365 e EMS consentono alla forza lavoro di essere produttiva con tutti i dispositivi, garantendo al tempo stesso la protezione delle informazioni aziendali. Office 365 in combinazione con EMS costituisce una suite integrata completa per la mobilità aziendale, con strumenti per la produttività, la gestione delle identità, il controllo degli accessi, la gestione e la protezione dei dati. Rappresenta un metodo efficace per distribuire e gestire una soluzione di mobilità nell'organizzazione.
 
