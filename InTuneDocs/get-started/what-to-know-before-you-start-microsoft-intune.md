@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 7171dab36ace4915b51def2dd717e63df8438135
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -47,7 +47,7 @@ La gestione dei dispositivi Intune offre le [funzionalità descritte di seguito]
 
 ### <a name="windows-pc-software-client"></a>Client software PC Windows
 
-Un [client software Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) può essere distribuito e installato nei PC di Windows come metodo alternativo di registrazione. È possibile usare il client software di Intune per gestire PC con Windows 7 e versioni successive, ad eccezione dell'edizione Windows 10 Home. La gestione dei PC con il software client offre [queste funzionalità](windows-pc-management-capabilities-in-microsoft-intune.md).
+Un [client software Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) può essere distribuito e installato nei PC di Windows come metodo alternativo di registrazione. È possibile usare il client software di Intune per gestire PC con Windows 7 e versioni successive, ad eccezione dell'edizione Windows 10 Home.
 
 ### <a name="exchange-activesync-management"></a>Gestione di Exchange ActiveSync
 
