@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 1c13d39b8b193c56439602a6e9d9a34e547aef81
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ff43a0be6ebc124bb7e52e5be31e89985ce32166
+ms.contentlocale: it-it
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -53,8 +54,8 @@ Prima di iniziare, è necessario ottenere un token VPP da Apple e caricarlo nell
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
-3. Nel pannello **Intune** scegliere **Gestisci le app**.
-1.  Nel carico di lavoro di **Gestisci le app** scegliere **Installazione** > **Token VPP iOS**.
+3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
+1.  Nel carico di lavoro di **App per dispositivi mobili** scegliere **Installazione** > **Token VPP iOS**.
 2.  Nel pannello di elenco dei token VPP fare clic su **Aggiungi**.
 3.  Nel pannello Nuovo token VPP specificare le informazioni seguenti:
     - **File del token VPP**: procedere all'iscrizione per Volume Purchase Program per le aziende o Volume Purchase Program per l'istruzione, se questa operazione non è stata ancora eseguita. Dopo avere completato l'iscrizione, scaricare il token VPP di Apple per l'account e selezionarlo qui.
@@ -69,7 +70,7 @@ Il token viene visualizzato nel pannello di elenco dei token.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Per assegnare un'app acquistata tramite Volume Purchase Program
 
-1. Nel carico di lavoro di **Gestisci le app** scegliere **Gestisci** > **App con licenza**.
+1. Nel carico di lavoro di **App per dispositivi mobili** scegliere **Gestisci** > **App con licenza**.
 2. Nel pannello di elenco delle app scegliere l'app da assegnare e quindi scegliere "**...** " > **Assegna gruppi**.
 3. Nel pannello <*Nome app*> - **Gruppi assegnati** scegliere **Gestisci** > **Gruppi assegnati**.
 4. Scegliere **Assegna gruppi** e quindi nel pannello **Seleziona gruppi** scegliere i gruppi di utenti o di dispositivi Azure AD a cui assegnare l'app.

@@ -14,10 +14,11 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
-ms.openlocfilehash: b3cf8d8f60482be2d4d903d1b2c00c1a3a392b73
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 0dc3fd3b4cc355bc95677ca648efdee07d1066b2
+ms.contentlocale: it-it
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -45,7 +46,7 @@ Managed Browser disporrà di icone aggiornate per le versioni Android e iOS dell
 
 Il portale aziendale disporrà inoltre di icone aggiornate per le versioni Android, iOS e Windows dell'app, per migliorare la coerenza con le altre app in EM+S. Queste icone verranno rilasciate gradualmente tra le piattaforme da aprile a fine maggio.
 
-### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicatore di stato dell'accesso al portale aziendale Android <!--953374-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicatore di stato dell'accesso nel portale aziendale Android <!--953374-->
 
 Un aggiornamento all'app Portale aziendale Android mostra un indicatore di stato dell'accesso quando l'utente avvia o riprende l'app. L'indicatore indica una progressione attraverso nuovi stati, a partire da "Connessione in corso...", ad "Accesso in corso..." e infine "Verifica dei requisiti di sicurezza in corso..." prima di consentire all'utente di accedere all'app. È possibile visualizzare le nuove schermate per l'app portale aziendale per Android nella [pagina delle novità dell'interfaccia utente dell'app di Intune](whats-new-in-intune-app-ui.md).
 
@@ -97,6 +98,15 @@ I ruoli di amministrazione di gestione delle applicazioni per dispositivi mobili
 
 
 ## <a name="whats-coming"></a>Sviluppi futuri
+
+### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Modifiche pianificate: Intune ha intenzione di modificare l'esperienza del portale per i partner di Intune <!-- 1050016 -->
+
+A partire dall'aggiornamento del servizio previsto per la metà di maggio 2017, la pagina Intune Partner verrà rimossa dal sito manage.microsoft.com.  
+
+Gli amministratori di partner non saranno più in grado di visualizzare e agire per conto dei clienti dalla pagina Intune Partner, ma dovranno invece effettuare l'accesso a uno degli altri due altri portali Microsoft per i partner.
+
+Il [Centro per i partner Microsoft](https://partnercenter.microsoft.com/) e l'[interfaccia di amministrazione partner di Office 365](https://portal.office.com/) consentiranno entrambi di accedere agli account cliente gestiti. Procedendo come partner, usare uno di questi siti per gestire i clienti. 
+
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple richiederà aggiornamenti per Application Transport Security <!--748318-->
 

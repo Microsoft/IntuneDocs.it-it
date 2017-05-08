@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/17
+ms.date: 03/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: 723830f686991fe13de13f75c6a5d1bc84e6920b
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 4916b66e1f2eeabb42401645dbece28dad28eb19
+ms.contentlocale: it-it
+ms.lasthandoff: 04/26/2017
 
 ---
 # <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>Assistere gli utenti con il portale per la risoluzione dei problemi in Microsoft Intune
@@ -40,8 +41,9 @@ Per altre informazioni sui ruoli di Intune, vedere [Ruoli di Intune (Controllo d
 ## <a name="access-the-troubleshooting-portal"></a>Accedere al portale per la risoluzione dei problemi
 
 Il personale del supporto tecnico e gli amministratori di Intune possono accedere al portale per la risoluzione dei problemi in due modi:
-- Nel [portale di Azure](https:portal.azure.com) selezionare **More Services** (Altri servizi)  > **Monitoring + Management** (Monitoraggio e gestione) > **Intune**, quindi nel pannello di navigazione a sinistra selezionare **Troubleshoot** (Risoluzione dei problemi). Nel pannello di navigazione a sinistra sono visibili altri carichi di lavoro, che tuttavia non sono disponibili.
-![Schermata del carico di lavoro Troubleshoot (Risoluzione dei problemi) di Intune con il collegamento Seleziona utente](media/help-desk-user.png)
+- Nel [portale di Azure](https://portal.azure.com) selezionare **More Services** (Altri servizi)  > **Monitoring + Management** (Monitoraggio e gestione) > **Intune**, quindi nel pannello di navigazione a sinistra selezionare **Troubleshoot** (Risoluzione dei problemi). Nel pannello di navigazione a sinistra sono visibili altri carichi di lavoro, che tuttavia non sono disponibili.
+
+![Screenshot del carico di lavoro Intune Troubleshoot (Risoluzione dei problemi di Intune) con il collegamento Seleziona utente](media/help-desk-user.png)
 - Aprire [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) in un Web browser. È visibile solo il portale per la risoluzione dei problemi.
 
 ## <a name="use-the-troubleshooting-portal"></a>Usare il portale per la risoluzione dei problemi
