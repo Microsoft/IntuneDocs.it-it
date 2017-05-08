@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: d85544bdfaa3a369e1d2d03e5454ff7aa2d75467
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 92fb84726846c1eb0fb44db1961a225922e9d9aa
+ms.contentlocale: it-it
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -32,17 +33,18 @@ Intune consente di aggiungere e assegnare i tipi di app seguenti:
 
 ![Tipi di app supportati da Intune](./media/app-types.png)
 
-Sono supportate le piattaforme seguenti. Fare clic su uno degli argomenti per altre informazioni sulle modalità di aggiunta di tutti i tipi di app.
+Sono supportate le piattaforme seguenti.
 
-- [App di Android Store](/intune-azure/manage-apps/android-store-app)
-- [App di Android LOB](/intune-azure/manage-apps/android-lob-app)
-- [App di iOS Store](/intune-azure/manage-apps/ios-store-app)
-- [App di iOS LOB](/intune-azure/manage-apps/ios-lob-app)
-- [App Web (per tutte le piattaforme)](/intune-azure/manage-apps/web-app)
-- [App di Windows Phone 8.1 Store](/intune-azure/manage-apps/windows-phone-8-1-store-app)
-- [App di Windows Store](/intune-azure/manage-apps/windows-store-app)
+- App di Android Store
+- App line-of-business Android
+- App di iOS Store
+- App line-of-business iOS
+- App Web
+- App di Windows Phone 8.1 Store
+- App di Windows Store
 
-Alcune app Microsoft vengono aggiunte automaticamente da Intune quando viene configurato il tenant. Queste app verranno elencate più avanti in questo argomento.
+>[!TIP]
+> Un'app line-of-business è un'app che non viene installata da un App Store, ma dal file di installazione dell'app stessa. Ad esempio, per installare un'app line-of-business iOS, aggiungere il file di archivio dell'applicazione (con estensione ipa). Tali app vengono in genere create internamente.
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
@@ -52,7 +54,7 @@ Tenere presente quanto segue prima di iniziare ad aggiungere e assegnare le app.
 - Alcune app o elementi distribuiti potrebbero dipendere da app iOS predefinite. Ad esempio, se si distribuisce un libro dallo Store iOS, è necessario che l'app iBooks sia disponibile nel dispositivo. Se l'app iBooks predefinita è stata rimossa, non è possibile usare Intune per ripristinarla.
 
 ## <a name="cloud-storage-space"></a>Spazio di archiviazione nel cloud
-Tutte le app create con il tipo di installazione del programma di installazione software, ad esempio un'app line-of-business, vengono compresse e caricate nello spazio di archiviazione cloud di Microsoft Intune. Una sottoscrizione di valutazione di Intune comprende 2 gigabyte (GB) di archiviazione nel cloud per l'archiviazione delle app gestite e degli aggiornamenti. Una sottoscrizione completa include 20 GB di spazio di archiviazione.
+Tutte le app create con il tipo di installazione del programma di installazione software, ad esempio un'app line-of-business, vengono compresse e caricate nello spazio di archiviazione cloud di Intune. Una sottoscrizione di valutazione di Intune comprende 2 gigabyte (GB) di archiviazione nel cloud per l'archiviazione delle app gestite e degli aggiornamenti. Una sottoscrizione completa include 20 GB di spazio di archiviazione.
 
 È possibile acquistare spazio di archiviazione aggiuntivo per Intune usando il metodo di acquisto originale.  Se il pagamento è stato effettuato con fattura o carta di credito, visitare il [portale di gestione delle sottoscrizioni](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  Negli altri casi, contattare il partner o l'assistente alle vendite di riferimento.
 
@@ -106,3 +108,14 @@ Le app seguenti pubblicate da Microsoft vengono compilate in Intune e possono es
 |Outlook Groups|iOS|App dello Store iOS gestita|
 |PowerPoint|iOS|App dello Store iOS gestita|
 
+## <a name="next-steps"></a>Passaggi successivi
+
+Per informazioni su come aggiungere a Intune app per ciascuna piattaforma, scegliere uno degli argomenti seguenti:
+
+- [App di Android Store](/intune-azure/manage-apps/android-store-app)
+- [App di Android LOB](/intune-azure/manage-apps/android-lob-app)
+- [App di iOS Store](/intune-azure/manage-apps/ios-store-app)
+- [App di iOS LOB](/intune-azure/manage-apps/ios-lob-app)
+- [App Web (per tutte le piattaforme)](/intune-azure/manage-apps/web-app)
+- [App di Windows Phone 8.1 Store](/intune-azure/manage-apps/windows-phone-8-1-store-app)
+- [App di Windows Store](/intune-azure/manage-apps/windows-store-app)

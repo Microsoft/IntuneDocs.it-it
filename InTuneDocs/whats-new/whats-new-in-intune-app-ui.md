@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
-ms.openlocfilehash: f4a48b889702147abe20fd513fdb0f774020a54a
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
+ms.openlocfilehash: 84c6c9ddeeff3570d0b00364063e43105141de0f
+ms.contentlocale: it-it
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -61,7 +62,7 @@ Toccare il collegamento __Accesso da un altro dispositivo__.
 
 ![Viene indicato come passare alla pagina aka.ms/devicelogin con un passcode univoco dal computer di lavoro, quindi come usare il codice per l'accesso.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-Avviare un browser e passare a [http://aka.ms/devicelogin](https://aka.ms/devicelogin).
+Avviare un browser e passare a [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
 ![Un'immagine del browser dell'utente nel computer di lavoro anziché nell'app portale aziendale. Nella pagina "Accesso dispositivo" visualizzata viene chiesto all'utente di immettere il codice ricevuto nell'app portale aziendale.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -112,6 +113,24 @@ Un aggiornamento all'app Portale aziendale Android mostra un indicatore di stato
            </td>
            <td>
               <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+           </td>
+      </tr>
+   </table>
+</body>
+</html>
+
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Stato di installazione delle app migliorato per l'app Portale aziendale di Windows 10 <!--676495-->
+Nell'app Portale aziendale di Windows 10 è ora disponibile un indicatore di stato per tutte le installazioni di app moderne avviate dal portale aziendale.
+
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_before_1704.png" alt="An image of the previous version of the loading screen, where the status simply said 'installing.'" width=200 height=366 align=center>
+          </td>
+          <td>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_after_1704.png" alt="An image of the updated version of the loading screen, which now shows an install progress bar." width=200 height=366 align=center>
            </td>
       </tr>
    </table>
