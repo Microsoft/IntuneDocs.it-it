@@ -1,5 +1,6 @@
 # Introduzione
 ## [Che cos'è l'anteprima del portale di Azure?](introduction/what-is-microsoft-intune.md)
+## [Che cos'è Intune for Education?](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
 ## [Funzionalità di Intune in Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Operazioni preliminari
 <!---(introduction/get-started.md) --->
@@ -77,15 +78,18 @@
 ## Come gestire le app
 ### [Aggiungere app](manage-apps/add-apps.md)
 #### [App di Android Store](manage-apps/android-store-app.md)
-#### [App LOB Android](manage-apps/android-lob-app.md)
+#### [App di Android LOB](manage-apps/android-lob-app.md)
 #### [App di iOS Store](manage-apps/ios-store-app.md)
 #### [App LOB iOS](manage-apps/ios-lob-app.md)
 #### [App Web](manage-apps/web-app.md)
 #### [App di Windows Phone 8.1 Store](manage-apps/windows-phone-8-1-store-app.md)
+#### [Applicazioni line-of-business di Windows Phone](manage-apps/windows-phone-line-of-business-app.md)
 #### [App di Windows Store](manage-apps/windows-store-app.md)
+#### [Applicazioni line-of-business di Windows](manage-apps/windows-line-of-business-app.md)
 ### [Assegnare le app](manage-apps/deploy-apps.md)
 ### [Eseguire il monitoraggio delle app](manage-apps/monitor-apps.md)
-### [Usare i criteri di configurazione delle app](manage-apps/app-configuration-policies.md)
+### [Usare i profili di configurazione delle app](manage-apps/app-configuration-policies.md)
+### [Usare i profili di provisioning delle app iOS](manage-apps/ios-app-provisioning-profile.md)
 ### [Cancellare le app in modo selettivo](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Usare le app acquistate con Volume Purchase Program](manage-apps/volume-purchased-apps.md)
@@ -186,7 +190,7 @@
 ### [Creare i criteri di conformità Android for Work](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Creare i criteri di conformità iOS](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Creare i criteri di conformità Windows](set-device-compliance/create-a-compliance-policy-for-windows.md)
-### [Creare azioni per la non conformità](set-device-compliance/actions-for-noncompliance.md)
+<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
 ### [Monitorare la conformità dei dispositivi](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
