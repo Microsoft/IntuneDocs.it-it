@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 748f5b6e18b7bc6d9e9d3e6635ac2c3e7eb11a67
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 3015c5493e8b38b425309584430c372e6a4d90cf
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ Usare le informazioni seguenti per scegliere il metodo di registrazione dei disp
 
 ## <a name="user-owned-ios-devices-byod"></a>Dispositivi iOS di proprietà dell'utente (BYOD)
 
-Se gli utenti desiderano registrare i dispositivi personali BYOD (Bring Your Own Device), l'unico metodo di registrazione disponibile è il download dell'app Portale aziendale per iOS dall'App Store, all'interno della quale seguire le istruzioni per la registrazione. Una volta eseguita la registrazione, gli utenti possono connettersi alla rete aziendale, aggiungersi al dominio o ad Azure Active Directory e ottenere l'accesso alle risorse aziendali. È possibile bloccare la registrazione di dispositivi iOS di proprietà personale. Per istruzioni, vedere [Impostare le restrizioni sul tipo di dispositivi](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions).
+Se gli utenti desiderano registrare i dispositivi personali BYOD (Bring Your Own Device), l'unico metodo di registrazione disponibile è il download dell'app Portale aziendale per iOS dall'App Store, all'interno della quale seguire le istruzioni per la registrazione. Una volta eseguita la registrazione, gli utenti possono connettersi alla rete aziendale, aggiungersi al dominio o ad Azure Active Directory e ottenere l'accesso alle risorse aziendali. È possibile bloccare la registrazione di dispositivi iOS di proprietà personale. Per istruzioni, vedere [Impostare le restrizioni sul tipo di dispositivi](set-enrollment-restrictions.md#set-device-type-restrictions).
 
 ## <a name="apple-configurator"></a>Apple Configurator
 

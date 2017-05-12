@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
-ms.openlocfilehash: 2a011bf390bb55d685f580cfc782b21ff0c2ebd5
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 289635354e7e2244857f56655de6ee227bf97ee7
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -36,7 +37,7 @@ Prima di configurare l'accesso condizionale, verificare quanto segue:
 
 - La versione di Exchange deve essere **Exchange 2010 SP1 o successiva**. È supportato un array del server Accesso client di Exchange Server.
 
-- È necessario usare [On-Premises Exchange Connector di Exchange Active](https://docs.microsoft.com/intune-azure/conditional-access/install-intune-on-premises-exchange-connector) che connette Intune a Exchange locale.
+- È necessario usare [On-Premises Exchange Connector di Exchange Active](install-intune-on-premises-exchange-connector.md) che connette Intune a Exchange locale.
 
     >[!IMPORTANT]
     >On-premises Exchange Connector è specifico del tenant di Intune e non può essere usato con un altro tenant. È necessario anche assicurarsi che Exchange Connector per il tenant sia installato **in un solo computer**.

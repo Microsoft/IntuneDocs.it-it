@@ -15,10 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: a0950e3b816128ccd042620eb1344f908c915a21
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 49c06de8ae4b04a3f6ea81cc17bc303b842374a5
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -75,7 +76,7 @@ Le applicazioni di cui si esegue il sideload richiedono l'abilitazione dell'impo
   - **Medio**: il dispositivo viene valutato come conforme se le minacce presenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
   - **Alta**: questo è il livello meno sicuro. Questa impostazione abilita tutti i livelli di rischio. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
 
-Per altre informazioni dettagliate, vedere [Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
+Per altre informazioni dettagliate, vedere [Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità](https://docs.microsoft.com/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="system-security-settings"></a>Impostazioni di sicurezza del sistema
 

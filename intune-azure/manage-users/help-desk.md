@@ -15,10 +15,10 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
-ms.openlocfilehash: 4916b66e1f2eeabb42401645dbece28dad28eb19
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 8cf12e434518c9f06c105a22f3b7aef2613fcdb0
 ms.contentlocale: it-it
-ms.lasthandoff: 04/26/2017
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>Assistere gli utenti con il portale per la risoluzione dei problemi in Microsoft Intune
@@ -36,7 +36,7 @@ Un amministratore di Intune può assegnare agli utenti l'autorizzazione di opera
 4. Digitare un **Nome dell'assegnazione** (obbligatorio), una **Descrizione dell'assegnazione** (facoltativa), quindi assegnare **Membri (gruppi)** e **Ambito (gruppi)**.
 5. Ora i membri appartenenti al ruolo Operatore del supporto tecnico possono usare il portale per la risoluzione dei problemi.
 
-Per altre informazioni sui ruoli di Intune, vedere [Ruoli di Intune (Controllo degli accessi in base al ruolo)](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control).
+Per altre informazioni sui ruoli di Intune, vedere [Ruoli di Intune (Controllo degli accessi in base al ruolo)](../access-control/role-based-access-control.md).
 
 ## <a name="access-the-troubleshooting-portal"></a>Accedere al portale per la risoluzione dei problemi
 

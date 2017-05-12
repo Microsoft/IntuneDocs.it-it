@@ -15,10 +15,11 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 17c5649e7ece5becd17e8ef9a74d748b6202693f
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 74a905ed2ba9ec04ae14df96fcd3f6b6caf1241c
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -39,16 +40,16 @@ ms.lasthandoff: 03/17/2017
     - **Piattaforma**: selezionare il tipo di piattaforma per il profilo che si desidera creare.
     - **Tipo di profilo**: selezionare il tipo di profilo che si desidera creare. L'elenco dei tipi disponibili varia in base alla piattaforma scelta.
     - **Impostazioni**: vedere gli argomenti seguenti per informazioni sulle impostazioni per ogni tipo di profilo:
-        -  [Impostazioni delle funzionalità dei dispositivi](/intune-azure/configure-devices/how-to-configure-device-features)
-        -  [Device restriction settings](/intune-azure/configure-devices/how-to-configure-device-restrictions) (Impostazioni relative alle restrizioni dei dispositivi)
-        -  [Email settings](/intune-azure/configure-devices/how-to-configure-email-settings) (Impostazioni di posta elettronica)
-        -  [VPN settings](/intune-azure/configure-devices/how-to-configure-vpn-settings) (Impostazioni VPN)
-        -  [Wi-Fi settings](/intune-azure/configure-devices/how-to-configure-wi-fi-settings) (Impostazioni Wi-Fi)
-        -  [Windows 10 edition upgrade settings](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade) (Impostazioni di aggiornamento edizione di Windows 10)
-        -  [Certificate settings](/intune-azure/configure-devices/how-to-configure-certificates) (Impostazioni dei certificati)
-        -  [Windows Information Protection settings](/intune-azure/configure-devices/how-to-configure-windows-information-protection) (Impostazioni di Windows Information Protection)
-        -  [Education settings](/intune-azure/configure-devices/how-to-configure-education-settings) (Impostazioni di Education)
-        -  [Custom settings](/intune-azure/configure-devices/how-to-configure-custom-settings) (Impostazioni personalizzate)
+        -  [Impostazioni delle funzionalità dei dispositivi](how-to-configure-device-features.md)
+        -  [Device restriction settings](how-to-configure-device-restrictions.md) (Impostazioni relative alle restrizioni dei dispositivi)
+        -  [Email settings](how-to-configure-email-settings.md) (Impostazioni di posta elettronica)
+        -  [VPN settings](how-to-configure-vpn-settings.md) (Impostazioni VPN)
+        -  [Wi-Fi settings](how-to-configure-wi-fi-settings.md) (Impostazioni Wi-Fi)
+        -  [Windows 10 edition upgrade settings](how-to-configure-windows-10-edition-upgrade.md) (Impostazioni di aggiornamento edizione di Windows 10)
+        -  [Certificate settings](how-to-configure-certificates.md) (Impostazioni dei certificati)
+        -  [Windows Information Protection settings](how-to-configure-windows-information-protection.md) (Impostazioni di Windows Information Protection)
+        -  [Education settings](how-to-configure-education-settings.md) (Impostazioni di Education)
+        -  [Custom settings](how-to-configure-custom-settings.md) (Impostazioni personalizzate)
 
     ![Creare un profilo del dispositivo](./media/create-device-profile.png)
 4. Dopo aver terminato di configurare le impostazioni, nel pannello **Crea profilo** scegliere **Crea**.
@@ -58,5 +59,5 @@ Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegna
 
 
 ### <a name="next-steps"></a>Passaggi successivi
-Vedere [Come assegnare i profili di dispositivo con Microsoft Intune](/intune-azure/configure-devices/how-to-assign-device-profiles) per informazioni sull'assegnazione dei profili di dispositivo.
+Vedere [Come assegnare i profili di dispositivo con Microsoft Intune](how-to-assign-device-profiles.md) per informazioni sull'assegnazione dei profili di dispositivo.
 

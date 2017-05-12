@@ -15,10 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 0aabb7af82bc7c9ed55eca91e615bace5e299d11
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 119c7172f8175d128c3e13d37bb9ec3c91719bcf
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/24/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-**Se non ci si trova nel servizio Intune nel programma di anteprima del portale di Azure**, questo argomento spiega [come creare i criteri di protezione delle app](https://docs.microsoft.com/en-us/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) nella console di Intune classica.
+**Se non ci si trova nel servizio Intune nel programma di anteprima del portale di Azure**, questo argomento spiega [come creare i criteri di protezione delle app](https://docs.microsoft.com/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) nella console di Intune classica.
 
 I criteri di protezione delle app possono essere applicati in app eseguite su dispositivi gestiti o non gestiti da Intune. Per una descrizione più dettagliata del funzionamento dei criteri di protezione delle app e degli scenari supportati dai criteri di protezione delle app di Intune, vedere [What is Microsoft Intune app protection policies](what-is-app-protection-policy.md)(Cosa sono i criteri di protezione delle app di Microsoft Intune).
 
