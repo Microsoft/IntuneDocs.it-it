@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 5e2516611b933bb9c74c2b8dc973f85e1d82237f
-ms.lasthandoff: 03/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e825d47860924de1350299c8998d958ed68c0418
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,7 +55,7 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 
     ![Impostazione di Windows per i dati di diagnostica e di utilizzo](./media/telemetry-basic.png)
 
-    È possibile configurare manualmente questa impostazione oppure usare un profilo di restrizione dei dispositivi di Intune per Windows 10 e versioni successive. A tale scopo, configurare l'impostazione **Generale** > **Invio dati di diagnostica** almeno su **Di base**. Per altre informazioni sui profili di dispositivo, vedere [Come configurare le impostazioni relative alle restrizioni dei dispositivi](/intune-azure/configure-devices/how-to-configure-device-restrictions).
+    È possibile configurare manualmente questa impostazione oppure usare un profilo di restrizione dei dispositivi di Intune per Windows 10 e versioni successive. A tale scopo, configurare l'impostazione **Generale** > **Invio dati di diagnostica** almeno su **Di base**. Per altre informazioni sui profili di dispositivo, vedere [Come configurare le impostazioni relative alle restrizioni dei dispositivi](how-to-configure-device-restrictions.md).
 
 - Nella console di amministrazione classica di Intune sono disponibili quattro impostazioni che controllano il comportamento degli aggiornamenti software. Queste impostazioni fanno parte dei criteri di configurazione generale per dispositivi Windows 10 Desktop e Mobile:
     - **Consenti aggiornamenti automatici**

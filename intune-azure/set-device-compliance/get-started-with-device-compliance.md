@@ -15,10 +15,11 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: a0fa37130948126ea08e4cc0140d4c326c26782b
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -33,7 +34,7 @@ In questo argomento verrà illustrato quanto segue:
 - I prerequisiti per iniziare a creare criteri di conformità dei dispositivi.
 - Una rapida panoramica sui dati visualizzati e sulle attività che è possibile svolgere nel portale di anteprima di Intune in Azure. 
 
-Se non si ha familiarità con il concetto di conformità dei dispositivi, è consigliabile leggere [questo argomento](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) per scoprire cosa si intende per conformità dei dispositivi e come è possibile applicarla nell'organizzazione.
+Se non si ha familiarità con il concetto di conformità dei dispositivi, è consigliabile leggere [questo argomento](what-is-device-compliance.md) per scoprire cosa si intende per conformità dei dispositivi e come è possibile applicarla nell'organizzazione.
 
 ##  <a name="pre-requisites"></a>Prerequisiti
 
