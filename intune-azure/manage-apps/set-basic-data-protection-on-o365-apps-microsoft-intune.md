@@ -16,10 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e3924cb3409ab03f8070376c2248a2791a1e713d
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 9ce22cb6e4031432f8d78653230b526f504b5f8c
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -72,7 +73,7 @@ Questo articolo usa OneDrive for Business come esempio per dimostrare che l'espe
 ## <a name="user-experience-on-an-android-device"></a>Esperienza utente con un dispositivo iOS
 
 1. Avviare l'app OneDrive for Business per aprire la pagina di accesso.  <br/> ![Immagine della schermata iniziale dell'app OneDrive](./media/onedrive-android-welcome.png)
-2. Digitare il nome utente dell'account aziendale. Si verrà reindirizzati alla pagina di autenticazione di Office 365 in cui immettere le credenziali aziendali. <br/> ![Immagine dell'accesso a Office&365; in Android](./media/o365-sign-in-android.png)
+2. Digitare il nome utente dell'account aziendale. Si verrà reindirizzati alla pagina di autenticazione di Office 365 in cui immettere le credenziali aziendali. <br/> ![Immagine dell'accesso a Office 365 in Android](./media/o365-sign-in-android.png)
 3. Dopo che le credenziali saranno state autenticate da Azure Active Directory, verrà visualizzato un messaggio con le istruzioni per installare l'app Portale aziendale, se non è già installata nel dispositivo. Toccare **Vai allo Store** per continuare. <br/> ![Immagine del messaggio per ottenere l'app Portale aziendale](./media/get-company-portal-android.png) <br/>Se l'app Portale aziendale è già installata nel telefono, l'app OneDrive for Business verrà avviata automaticamente ed è possibile passare direttamente alla nota finale.
 >[!IMPORTANT]
 >In Android, dopo la configurazione delle app di Office che devono essere gestite da un criterio MAM, l'utente del dispositivo **deve** installare l'app Portale aziendale per accedere ai messaggi di posta elettronica e ai documenti di lavoro, anche se per leggere effettivamente i messaggi o i documenti l'utente finale non ha necessità di aprire o accedere all'app.
@@ -132,5 +133,5 @@ Per visualizzare o aggiornare questi criteri o eventuali criteri creati nell'ant
 ![Immagine del percorso dell'interfaccia utente per visualizzare i criteri](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Altre informazioni sui [criteri di protezione delle app](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy).
+Altre informazioni sui [criteri di protezione delle app](https://docs.microsoft.comwhat-is-app-protection-policy.md).
 

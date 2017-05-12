@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 03860275184824e72c94937ef3bb32c76cfef933
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 41de68c6962056164e8ac62aea657a74dd9b229e
+ms.contentlocale: it-it
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.lasthandoff: 02/18/2017
 
 Se non si ha familiarità con Intune nel portale di Azure, tenere presente che non vengono più creati gruppi per Intune. Intune usa i gruppi di Azure AD come molte altre applicazioni in uso.
 
-Per altre informazioni su come usare i gruppi in Azure AD, vedere [Gestione dell'accesso alle risorse con i gruppi di Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups).
+Per altre informazioni su come usare i gruppi in Azure AD, vedere [Gestione dell'accesso alle risorse con i gruppi di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups).
 
 Per gestire i gruppi nel [portale di Azure](https://portal.azure.com), cercare **Intune** e scegliere **Gestione utenti**. Nel carico di lavoro **Utenti e gruppi** sarà possibile eseguire le operazioni che seguono:
 
@@ -43,5 +44,5 @@ Per gestire i gruppi nel [portale di Azure](https://portal.azure.com), cercare *
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Introduzione ai gruppi](/intune-azure/manage-users/get-started-with-groups)
+[Introduzione ai gruppi](../manage-users/get-started-with-groups.md)
 
