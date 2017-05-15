@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
 ms.openlocfilehash: 6b723069108ff2cbe85951f7d65ef803323eceb9
+ms.contentlocale: it-it
 ms.lasthandoff: 03/13/2017
 
 
@@ -52,7 +53,7 @@ Se il dispositivo è acceso e connesso, un comando di cancellazione non richiede
 
 ### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Per eliminare i dispositivi nel portale di Azure Active Directory
 
-1.  Accedere a [http://aka.ms/accessaad](http://aka.ms/accessaad) oppure fare clic su** Amministrazione** &gt; **Azure AD** da [https://portal.office.com](https://portal.office.com).
+1.  Accedere a [http://aka.ms/accessaad](http://aka.ms/accessaad) oppure fare clic su **Amministrazione** &gt; **Azure AD** da [https://portal.office.com](https://portal.office.com).
 
 2.  Accedere con l'ID organizzazione usando il collegamento sul lato sinistro della pagina.
 
