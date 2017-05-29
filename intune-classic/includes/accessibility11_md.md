@@ -1,5 +1,1 @@
-**Learning Ally (in precedenza Recording for the Blind &amp; Dyslexic, Inc.)** 
-
-<!--HONumber=Oct16_HO1-->
-
-
+**Learning Ally (precedentemente noto come Recording for the Blind &amp; Dyslexic, Inc.)** 

@@ -14,10 +14,11 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
-ms.lasthandoff: 04/14/2017
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -78,7 +79,7 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
 
   ![Schermata della pagina dei criteri di accesso condizionale per Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  Scegliere il criterio **Abilita criteri di accesso condizionale**.
+2.  Scegliere il criterio **Abilita criteri di accesso condizionale** .
 3.  In **Accesso all'applicazione** è possibile scegliere di applicare i criteri di accesso condizionale a:
   * **iOS**
   * **Android**

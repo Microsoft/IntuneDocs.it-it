@@ -15,10 +15,11 @@ searchScope:
 - User help
 ROBOTS: 
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 604bdec9cfbb982b75fc9b54dda6a572d2b11802
-ms.openlocfilehash: 47b9b0e882c277f5ad3200ab6eb8999ea000a696
-ms.lasthandoff: 01/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 42734b9181c7637807bf3f787a058c0403e70abc
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 01/12/2017
 
 Il _debug USB_ è una modalità che consente ai dispositivi Android di comunicare con i computer per facilitare le attività di sviluppo di app per Android. In questa modalità è possibile accedere ad aree particolari del telefono con cui la maggior parte delle persone non deve normalmente interagire. Anche se è utile, questa modalità può esporre il dispositivo a un rischio aggiuntivo poiché le informazioni possono essere compromesse quando il dispositivo è connesso a un computer. L'amministratore IT ha richiesto di disattivare questa impostazione per una migliore protezione dei dati aziendali nel dispositivo.
 
-Per disattivare il debug USB, scegliere **Impostazioni** > **Opzioni per gli sviluppatori** e disattivare **USB debugging** (Debug USB).
+Per disattivare il debug USB, scegliere **Impostazioni** > **Opzioni per gli sviluppatori** e disattivare **Debug USB**.
 
 Dopo avere disattivato il **debug USB**, attendere alcuni minuti. Sarà quindi possibile usare il dispositivo Android per accedere ai dati dell'azienda o dell'istituto come di consueto.
 

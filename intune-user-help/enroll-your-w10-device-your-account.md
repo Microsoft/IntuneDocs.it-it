@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,31 +17,40 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 351a0e6cf440b1506426db57ec0529496ed70231
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 624819ddd8afabef1e3b5419706268eef6d960d0
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrare il dispositivo Windows 10 in Intune
 
-1.  Aprire l'app **Impostazioni** di Windows. Passare al **menu Start** e selezionare il pulsante **Impostazioni**. È anche possibile cercare "impostazioni" nella barra di ricerca.
+> [!NOTE]
+> Windows 10 funziona in tutti i tipi di dispositivi. Su desktop, telefono o tablet, i passaggi da seguire sono gli stessi, anche se sembrano leggermente diversi dalle immagini in questa pagina.
 
-2. Selezionare **Account**.
+1.  Fare clic su **Start**.
+
+  - Se si usa un dispositivo **Windows 10 Desktop** andare al **menu Start**.
+  - Se si usa un dispositivo **Windows 10 Mobile**, andare alla **schermata Start** e quindi scorrere verso l'elenco **Tutte le app**.
+
+2. Aprire l'app **Impostazioni** di Windows cercando "impostazioni" nella barra di ricerca.
+
+3. Selezionare **Account**.
 
     ![Passaggio a Impostazioni e Account](./media/W10-enroll-1-settings-accounts.png)
 
-3. Selezionare **Il tuo account**.
+4. Selezionare **Il tuo account**.
 
     ![Selezionare l'account personale](./media/W10-enroll-2-accounts-your-account.png)
 
-4. Selezionare **Aggiungi un account aziendale o dell'istituto di istruzione**.
+5. Selezionare **Aggiungi un account aziendale o dell'istituto di istruzione**.
 
     ![Selezionare Aggiungi un account aziendale o dell'istituto di istruzione](./media/w10-enroll-3-add-work-school-acct.png)
 
-5. Accedere con le credenziali aziendali o dell'istituto di istruzione.
+6. Accedere con le credenziali aziendali o dell'istituto di istruzione.
 
     ![Accesso](./media/W10-enroll-4-sign-in.png)
 

@@ -14,9 +14,11 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 239371198cbbc01b1345c72b3f887055acd44462
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 0277c0baed66a1340373cb607976d03a07ca5282
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -51,9 +53,4 @@ Inoltre, se è necessario aprire un caso di supporto per Intune, può essere uti
 
 ### <a name="next-steps"></a>Passaggi successivi
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Come ottenere supporto per Microsoft Intune).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

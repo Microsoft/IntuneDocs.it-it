@@ -1,11 +1,11 @@
 ---
 title: Registrare il dispositivo Windows 10 in Intune | Documentazione Microsoft
-description: Registrare un dispositivo Windows 10 1607 in Intune
+description: Registrare un dispositivo Windows 10 1607 o versione successiva in Intune
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,21 +17,30 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 5cf93d5f29e7fa3b989b1a00070d620e06f720c4
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: aa12a88cfd80f62e2f7b249b52333bd16cbb6533
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrare il dispositivo Windows 10 in Intune
 
+> [!NOTE]
+> Windows 10 funziona in tutti i tipi di dispositivi. Su desktop, telefono o tablet, i passaggi da seguire sono gli stessi, anche se sembrano leggermente diversi dalle immagini in questa pagina.
+
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  Aprire l'app **Impostazioni** di Windows. Passare al **menu Start** e selezionare il pulsante **Impostazioni**. È anche possibile cercare "impostazioni" nella barra di ricerca.
+1. Fare clic su **Start**.
 
-2. Selezionare **Account** > **Accedi all'azienda o all'istituto di istruzione** > **Connetti**.
+  - Se si usa un dispositivo **Windows 10 Desktop** andare al **menu Start**.
+  - Se si usa un dispositivo **Windows 10 Mobile**, andare alla **schermata Start** e quindi scorrere verso l'elenco **Tutte le app**.
+
+2.  Aprire l'app **Impostazioni** di Windows cercando "impostazioni" nella barra di ricerca.
+
+3. Selezionare **Account** > **Accedi all'azienda o all'istituto di istruzione** > **Connetti**.
 
     ![Selezionare Accedi all'azienda o all'istituto di istruzione](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
