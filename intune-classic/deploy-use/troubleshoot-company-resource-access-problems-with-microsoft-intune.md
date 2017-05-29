@@ -2,8 +2,8 @@
 title: Risolvere i problemi di accesso alle risorse aziendali | Documentazione Microsoft
 description: Codici di errore e di stato in questo argomento per risolvere i problemi di accesso alle risorse.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
@@ -14,9 +14,11 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dd1ada2bf6505552e7dbf8b185c929fa4e40104c
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 9956d92c5d1b294c4ccf04ebecd15cdb59794c90
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -353,7 +355,7 @@ Se queste informazioni non consentono di risolvere il problema, vedere [Come ott
 |-2016345810|0x87D1012E|Syncml(302): la destinazione richiesta è stata spostata temporaneamente in un URI diverso.|
 |-2016345811|0x87D1012D|Syncml(301): la destinazione richiesta dispone di un nuovo URI.|
 |-2016345812|0x87D1012C|Syncml(300): la destinazione richiesta è una delle diverse alternative disponibili.|
-|-2016345896|0x87D100D8|Syncml(216): un comando era incluso in un elemento atomico non riuscito. Il rollback di questo comando non è stato eseguito correttamente.|
+|-2016345896|0x87D100D8|Syncml(216): un comando era incluso in un elemento atomico non riuscito. Il rollback di questo comando è stato eseguito correttamente.|
 |-2016345897|0x87D100D7|Syncml(215): un comando non è stato eseguito a causa dell'interazione con l'utente, che ha scelto di non accettare l'opzione.|
 |-2016345898|0x87D100D6|Syncml(214): operazione annullata. Il comando SyncML è stato completato correttamente, ma nessun altro comando verrà elaborato all'interno della sessione.|
 |-2016345899|0x87D100D5|Syncml(213): elemento in blocchi accettato e memorizzato nel buffer.|
@@ -374,9 +376,4 @@ Se queste informazioni non consentono di risolvere il problema, vedere [Come ott
 
 ### <a name="next-steps"></a>Passaggi successivi
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

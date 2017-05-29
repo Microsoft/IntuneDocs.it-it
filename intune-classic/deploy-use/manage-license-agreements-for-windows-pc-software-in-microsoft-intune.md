@@ -14,9 +14,11 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 47c923cf145a7783a1bc2222442831fcbc0f6a47
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
+ms.contentlocale: it-it
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -61,7 +63,7 @@ I contratti multilicenza per Intune offrono informazioni sulle licenze per il so
 
         -   Sono supportati solo i caratteri ASCII.
 
-        -   I seguenti caratteri non sono consentiti nel nome del contratto: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Sono invece consentiti gli spazi.
+        -   I caratteri seguenti non sono consentiti nel nome del contratto: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Sono invece consentiti gli spazi.
 
         -   Il nome del file non può superare i 128 caratteri.
 
@@ -179,9 +181,4 @@ Viene visualizzato l'elenco **Tutti i contratti** .
 |Rinominare un gruppo di licenze|Nell'area di lavoro **Licenze** scegliere un gruppo di licenze e quindi scegliere **Modifica gruppo di licenze** dal menu **Attività**.|
 |Eliminare un gruppo di licenze|Nell'area di lavoro **Licenze** scegliere un gruppo di licenze e quindi scegliere **Elimina gruppo di licenze** dal menu **Attività**. **Suggerimento:** tutte le licenze nel gruppo eliminato verranno spostate nel gruppo di licenze **Contratti non assegnati**.|
 |Eliminare un contratto di licenza|Nell'area di lavoro **Licenze** scegliere un contratto e quindi fare clic su **Elimina**. **Suggerimento:** dopo aver eliminato i contratti multilicenza, per aggiornare le informazioni sulle licenze fare clic su **Aggiorna** nella pagina **Panoramica licenze** o della scheda **Generale** di un gruppo di licenze specifico.|
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
