@@ -129,7 +129,7 @@ Per visualizzare i log di Exchange Connector, usare lo strumento Visualizzatore 
 
 -    Per individuare una sincronizzazione completa nei log, è necessario cercare **full sync** (sincronizzazione completa). L'inizio di una sincronizzazione completa è contrassegnato dal testo seguente:
 
-    'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users` ('Gestione comando: recupero dell'elenco di dispositivi mobili senza filtro temporale (sincronizzazione completa) per X utenti`)
+    'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users` ('Gestione comando: recupero dell'elenco di dispositivi mobili senza filtro temporale (sincronizzazione completa) per X utenti')
 
     La parte finale del log relativo a una sincronizzazione completa è simile al seguente:
 
