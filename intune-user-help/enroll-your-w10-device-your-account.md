@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/22/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -28,8 +28,8 @@ ms.lasthandoff: 05/23/2017
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrare il dispositivo Windows 10 in Intune
 
-> [!NOTE]
-> Windows 10 funziona in tutti i tipi di dispositivi. Su desktop, telefono o tablet, i passaggi da seguire sono gli stessi, anche se sembrano leggermente diversi dalle immagini in questa pagina.
+  > [!NOTE]
+  > Windows 10 funziona in tutti i tipi di dispositivi. Su desktop, telefono o tablet, i passaggi da seguire sono gli stessi, anche se sembrano leggermente diversi dalle immagini in questa pagina.
 
 1.  Fare clic su **Start**.
 
