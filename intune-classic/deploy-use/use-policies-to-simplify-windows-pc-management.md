@@ -1,5 +1,5 @@
 ---
-title: Usare i criteri per semplificare la gestione dei PC Windows | Documentazione Microsoft
+title: Usare i criteri per semplificare la gestione dei PC
 description: Descrive i criteri di gestione dei PC Windows ed elenca le impostazioni per Microsoft Intune Center.
 keywords: 
 author: nathbarn
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a2b956f8c999ec5489152a63a9af6e24da8ec536
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e14b5c56356812fdc3ea775cddde0f668b344177
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Usare i criteri per semplificare la gestione dei PC
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Per gestire i desktop di Windows come PC, eseguendo il client software di Intune su di essi, è possibile usare solo i criteri in **Gestione computer** nella console di amministrazione di Intune. Tutti gli altri criteri elencati nella console di amministrazione sono destinati solo ai dispositivi mobili. I criteri **Gestione computer** consentono di configurare le impostazioni in Microsoft Intune Center, controllare gli aggiornamenti dei PC e configurare Windows Firewall per i PC.
 

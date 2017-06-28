@@ -1,5 +1,5 @@
 ---
-title: Ritirare un PC Windows | Documentazione Microsoft
+title: Ritirare un PC Windows
 description: Come ritirare un PC Windows gestito da Intune.
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 30781be121782196b760f5aa163e922122480d33
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09bba1ea199b51fdd1503cb1f0a3beeb97b6aa47
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="retire-a-windows-pc"></a>Ritirare un PC Windows
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Usare la procedura descritta di seguito per ritirare i desktop gestiti come PC eseguendo il client software di Intune. Quando si ritira un PC, lo si rimuove dalla gestione Intune. Non è possibile ripristinare le impostazioni predefinite di un PC da Intune per riportarlo alle impostazioni originali.
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) scegliere **Gruppi** &gt; **Tutti i dispositivi** oppure un altro gruppo che contiene il PC da ritirare.

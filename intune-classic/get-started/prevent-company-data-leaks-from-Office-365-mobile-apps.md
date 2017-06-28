@@ -1,5 +1,5 @@
 ---
-title: Impedire la divulgazione di dati aziendali da app di Office 365 per dispositivi mobili | Documentazione Microsoft
+title: Impedire la divulgazione di dati aziendali da app di Office 365 per dispositivi mobili
 description: Usare Intune consente di proteggere i dati dell&quot;organizzazione tramite criteri di gestione delle app mobili (MAM) in grado di evitare la divulgazione di dati aziendali da app di Office 365 per dispositivi mobili o da altre app line-of-business (LOB).
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db350fbefe5ed9b1aa796ee8430000d33ebd1b4e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,13 +35,13 @@ Le aziende vogliono consentire agli utenti finali di accedere ai dati delle app 
 Microsoft Intune consente di impostare criteri MAM per le app di Office 365 per dispositivi mobili su iOS e Android, incluse le limitazioni per le operazioni di taglia, copia e incolla, impedendo di eseguire il comando 'Salva con nome', impostare requisiti PIN e cancellare in remoto dati protetti MAM.  In questo modo, i dati aziendali risultano protetti senza che gli utenti debbano registrare i propri dispositivi in una soluzione MDM. Al tempo stesso, continua ad essere garantita un'eccezionale esperienza d'uso con le app di Office per dispositivi mobili.
 
 ## <a name="how-do-i-do-it"></a>In che modo procedere?
-1.    Ottenere una conoscenza di base di come funziona la [gestione di applicazioni mobili di Intune /intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
-2.    Scoprire i [passaggi da eseguire prima di creare i criteri MAM](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) nel portale di Azure.
-3.    [Creare e distribuire i criteri MAM](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) con Intune.
+1.  Acquisire conoscenze di base sul funzionamento della [gestione di applicazioni mobili (MAM) di Intune](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
+2.  Scoprire i [passaggi da eseguire prima di creare i criteri MAM](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) nel portale di Azure.
+3.  [Creare e distribuire i criteri MAM](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) con Intune.
 
 ### <a name="additional-information"></a>Informazioni aggiuntive:
 - [Esperienza dell'utente finale](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) con app compatibili con MAM.
-- [Preparare app LOB per MAM con Intune](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Preparare app LOB per MAM con Intune](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank"> Elenco di partner di Microsoft Intune &rarr;</a> che forniscono app compatibili con MAM.
 
 ## <a name="what-should-i-do-next"></a>Operazioni successive

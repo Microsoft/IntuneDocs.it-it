@@ -1,5 +1,5 @@
 ---
-title: Risolvere i conflitti di criteri tra Intune e gli oggetti Criteri di gruppo | Documentazione Microsoft
+title: Risolvere i conflitti di criteri tra Intune e gli oggetti Criteri di gruppo
 description: Informazioni su come risolvere i conflitti tra criteri di configurazione di Intune e criteri di gruppo.
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Risolvere i conflitti di criteri tra Microsoft Intune e gli oggetti Criteri di gruppo
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune usa criteri che consentono di gestire le impostazioni nei PC Windows. Ad esempio, è possibile usare un criterio per controllare le impostazioni di Windows Firewall nei PC. Molte impostazioni di Intune sono simili alle impostazioni che è possibile configurare con i Criteri di gruppo di Windows. A volte, però, i due metodi possono entrare in conflitto.
 
 In questo caso, i criteri di gruppo a livello di dominio hanno la precedenza sui criteri di Intune, a meno che un PC non sia in grado di connettersi al dominio. In questo caso, i criteri di Intune si applicano al PC client.

@@ -1,5 +1,5 @@
 ---
-title: "Registrare i dispositivi iOS di proprietà dell&quot;azienda | Documentazione Microsoft"
+title: "Registrare i dispositivi iOS di proprietà dell&quot;azienda"
 description: "Registrazione di dispositivi iOS di proprietà dell&quot;azienda usando il programma di registrazione dispositivi di Apple o Apple Configurator"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42da9c874183287bc9485035ae39e94efbaa3e8b
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -59,8 +59,8 @@ I dispositivi configurati con affinità utente possono installare ed eseguire l'
 
 L'affinità utente è necessaria per supportare quanto segue:
   - App per la gestione di applicazioni mobili (MAM)
-  -    Accesso condizionale ai dati aziendali e della posta elettronica
-  -    App Portale aziendale
+  - Accesso condizionale ai dati aziendali e della posta elettronica
+  - App Portale aziendale
 
 **Come registrare i dispositivi iOS di proprietà dell'azienda con l'affinità utente**
 1. Quando gli utenti accendono i dispositivi, viene chiesto di completare l'Assistente configurazione. Durante la configurazione, agli utenti viene chiesto di fornire le credenziali. Devono usare le credenziali (nome personale univoco o UPN) associate alla propria sottoscrizione in Intune.

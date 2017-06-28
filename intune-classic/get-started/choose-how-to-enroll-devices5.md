@@ -1,5 +1,5 @@
 ---
-title: Scegliere come registrare i dispositivi mobili | Documentazione Microsoft
+title: Scegliere come registrare i dispositivi mobili
 description: Decidere come registrare i dispositivi mobili in Intune rispondendo ad alcune semplici domande
 keywords: 
 author: NathBarn
@@ -15,10 +15,10 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 64f8a051cfa873df034e3d260862181ce637948c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e978a9df5d0c0e2e94f484c5e683a970f66dc945
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -31,9 +31,11 @@ Le risposte alla serie di domande seguente consentono di determinare il metodo d
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**Come vengono gestiti i dispositivi iOS condivisi?**
 
 > [!div class="button"]
-[Registrazione DEP in iOS >] / intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)[!div class="button"]
-> [Registrazione diretta in iOS >]/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune) [!div class="button"]
-[Registrazione DEM >] / intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+[Registrazione Programma di registrazione dispositivi iOS >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+> [!div class="button"]
+[Registrazione diretta iOS >](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+> [!div class="button"]
+[Registrazione DEM >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Programma di registrazione dispositivi (DEP) di Apple**: i dispositivi iOS acquistati o gestiti con questo programma possono essere associati a un profilo di registrazione. Quando un utente accende il proprio dispositivo per la prima volta, il dispositivo scarica il profilo DEP ed esegue la registrazione con quel profilo.
 

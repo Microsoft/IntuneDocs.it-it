@@ -1,5 +1,5 @@
 ---
-title: Proteggere app e dati | Documentazione Microsoft
+title: Proteggere app e dati
 description: "Questo argomento illustra le varie funzionalità e caratteristiche disponibili in Intune per proteggere le app e i dati aziendali."
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -52,7 +52,7 @@ Per associare un'app a un criterio MAM, l'app deve incorporare Microsoft Intune 
 
 In app come quelle di Microsoft Office, Intune App SDK è integrato. È possibile visualizzare l'elenco completo delle applicazioni supportate nella [raccolta di applicazioni per dispositivi mobili di Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponibile nella pagina dei partner di Microsoft Intune. Scegliere l'app per visualizzare le piattaforme e gli scenari supportati e per verificare se l'app supporta identità multiple.
 
-È anche possibile [abilitare le app line-of-business personalizzate](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) da usare con i criteri MAM.
+È anche possibile [abilitare le app line-of-business personalizzate](/intune/apps-prepare-mobile-application-management) da usare con i criteri MAM.
 
 Oltre a limitare lo spostamento dei dati, se un dispositivo viene smarrito o rubato o se l'utente non lavora più nell'azienda, è possibile [cancellare selettivamente i dati aziendali](wipe-managed-company-app-data-with-microsoft-intune.md) lasciando solo quelli personali.
 

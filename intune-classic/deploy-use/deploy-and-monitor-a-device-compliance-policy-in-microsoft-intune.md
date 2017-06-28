@@ -1,5 +1,5 @@
 ---
-title: "Distribuire e monitorare i criteri di conformità | Documentazione Microsoft"
+title: "Deploy and monitor a compliance policy (Distribuire e monitorare criteri di conformità)"
 description: "Usare le istruzioni dettagliate in questo argomento per distribuire e monitorare i criteri di conformità del dispositivo."
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 40826175eb7c71220a521ac45bb8b9b9e84dec4a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d0d48724a8c09a5dac0bfa2987a1eee05f218950
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

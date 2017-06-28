@@ -1,5 +1,5 @@
 ---
-title: Risolvere i problemi di accesso condizionale | Documentazione Microsoft
+title: Risolvere i problemi di accesso condizionale
 description: Operazioni da eseguire quando gli utenti non riescono ad accedere alle risorse usando l&quot;accesso condizionale di Intune.
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19635b4dda7f4f04690ad165bad6608cad7ac84f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,11 +36,11 @@ Questo argomento descrive le operazioni da eseguire quando gli utenti non riesco
 
 Per garantire il funzionamento dell'accesso condizionale, devono essere soddisfatte le condizioni seguenti:
 
--    Il dispositivo deve essere gestito da Intune.
--    Il dispositivo deve essere registrato con Azure Active Directory (AAD). In condizioni normali questa registrazione viene eseguita automaticamente durante la registrazione di Intune.
--    Il dispositivo deve essere conforme ai criteri di conformità di Intune, sia per il dispositivo sia per l'utente del dispositivo.  Se non sono presenti criteri di conformità, è sufficiente la registrazione di Intune.
--    È necessario attivare Exchange ActiveSync sul dispositivo se l'utente recupera la posta usando il client di posta elettronica nativo del dispositivo anziché Outlook.     Tale attivazione avviene automaticamente per i dispositivi iOS, Windows Phone e Android/KNOX Standard.
--    Intune Exchange Connector deve essere configurato correttamente. Per altre informazioni, vedere [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) (Risoluzione dei problemi di Exchange Connector in Microsoft Intune).
+-   Il dispositivo deve essere gestito da Intune.
+-   Il dispositivo deve essere registrato con Azure Active Directory (AAD). In condizioni normali questa registrazione viene eseguita automaticamente durante la registrazione di Intune.
+-   Il dispositivo deve essere conforme ai criteri di conformità di Intune, sia per il dispositivo sia per l'utente del dispositivo.  Se non sono presenti criteri di conformità, è sufficiente la registrazione di Intune.
+-   È necessario attivare Exchange ActiveSync sul dispositivo se l'utente recupera la posta usando il client di posta elettronica nativo del dispositivo anziché Outlook.     Tale attivazione avviene automaticamente per i dispositivi iOS, Windows Phone e Android/KNOX Standard.
+-   Intune Exchange Connector deve essere configurato correttamente. Per altre informazioni, vedere [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) (Risoluzione dei problemi di Exchange Connector in Microsoft Intune).
 
 Queste condizioni possono essere visualizzate per ogni dispositivo nel portale di gestione di Azure e nel report inventario dispositivi.
 
@@ -55,16 +55,16 @@ Queste condizioni possono essere visualizzate per ogni dispositivo nel portale d
  -  La registrazione delle informazioni di conformità per un dispositivo può richiedere tempo. Attendere qualche minuto e riprovare.
  -  Per i dispositivi iOS:
      -   Un profilo di posta elettronica esistente creato dall'utente bloccherà la distribuzione di un profilo creato dall'amministratore di Intune. Si tratta di un problema comune poiché gli utenti di iOS in genere creano un profilo di posta elettronica e poi eseguono la registrazione. Il portale aziendale informerà l'utente che non è conforme perché il profilo di posta elettronica è stato configurato manualmente e richiederà la rimozione del profilo. L'utente deve rimuovere il proprio profilo di posta elettronica per consentire la distribuzione del profilo di Intune. Per evitare il problema, indicare agli utenti di eseguire la registrazione senza installare un profilo di posta elettronica e di consentire a Intune di distribuire il profilo.
-     -     Un dispositivo iOS può restare bloccato in uno stato di controllo della conformità, impedendo all'utente di avviare un altro check-in. Il riavvio del portale aziendale può risolvere il problema e lo stato di conformità sarà riflesso nello stato del dispositivo in Intune. Dopo che tutti i dati sono stati raccolti con una sincronizzazione del dispositivo, il controllo della conformità viene eseguito in modo rapido, mediamente in meno di mezzo secondo.
+     -   Un dispositivo iOS può restare bloccato in uno stato di controllo della conformità, impedendo all'utente di avviare un altro check-in. Il riavvio del portale aziendale può risolvere il problema e lo stato di conformità sarà riflesso nello stato del dispositivo in Intune. Dopo che tutti i dati sono stati raccolti con una sincronizzazione del dispositivo, il controllo della conformità viene eseguito in modo rapido, mediamente in meno di mezzo secondo.
 
         In genere, i dispositivi rimangono bloccati in questo stato perché si verificano problemi di connessione al servizio o perché la sincronizzazione richiede molto tempo.  Se il problema persiste con diverse configurazioni di rete (cellulare, Wi-Fi, VPN), con il riavvio del dispositivo e dopo aver verificato l'aggiornamento del provider di servizi condivisi sul dispositivo, contattare il Supporto tecnico Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
  - Per dispositivi Android:
-     - È possibile che alcuni dispositivi Android sembrino crittografati, nonostante l'app Portale aziendale non li riconosca come tali. 
+    - È possibile che alcuni dispositivi Android sembrino crittografati, nonostante l'app Portale aziendale non li riconosca come tali. 
     
-        -    In caso di dispositivi che presentano questo stato, l'utente deve impostare un passcode di avvio sicuro. L'utente visualizzerà una notifica del dispositivo inviata nell'app Portale aziendale in cui viene chiesto di impostare un passcode di avvio per il dispositivo. Dopo aver toccato la notifica del dispositivo e confermato il PIN o la password esistente, scegliere l'opzione **Require PIN to start device** (Richiedi PIN per avviare il dispositivo) nella schermata **Secure start-up** (Avvio sicuro). Toccare poi il pulsante **Controlla conformità** corrispondente al dispositivo nell'app Portale aziendale. Il dispositivo sarà riconosciuto come crittografato.
+        -   In caso di dispositivi che presentano questo stato, l'utente deve impostare un passcode di avvio sicuro. L'utente visualizzerà una notifica del dispositivo inviata nell'app Portale aziendale in cui viene chiesto di impostare un passcode di avvio per il dispositivo. Dopo aver toccato la notifica del dispositivo e confermato il PIN o la password esistente, scegliere l'opzione **Require PIN to start device** (Richiedi PIN per avviare il dispositivo) nella schermata **Secure start-up** (Avvio sicuro). Toccare poi il pulsante **Controlla conformità** corrispondente al dispositivo nell'app Portale aziendale. Il dispositivo sarà riconosciuto come crittografato.
     
-        -     Alcuni produttori di dispositivi eseguono la crittografia dei propri dispositivi usando un PIN predefinito anziché il PIN segreto impostato dall'utente. Intune riconosce la crittografia che usa il PIN predefinito come non sicura poiché questo metodo di crittografia può mettere i dati nel dispositivo a rischio di utenti malintenzionati con accesso fisico al dispositivo. Per questo tipo di problema, usare i [criteri di protezione delle app](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+        -   Alcuni produttori di dispositivi eseguono la crittografia dei propri dispositivi usando un PIN predefinito anziché il PIN segreto impostato dall'utente. Intune riconosce la crittografia che usa il PIN predefinito come non sicura poiché questo metodo di crittografia può mettere i dati nel dispositivo a rischio di utenti malintenzionati con accesso fisico al dispositivo. Per questo tipo di problema, usare i [criteri di protezione delle app](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemi relativi ai criteri
 
@@ -135,7 +135,7 @@ Per visualizzare i log di Exchange Connector, usare lo strumento Visualizzatore 
 
     Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. (Recupero dell'elenco di dispositivi mobili senza filtro temporale (sincronizzazione completa) per 4 utenti eseguito.) Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected',' (Dettagli: risultati comando inventario - Dispositivi sincronizzati: 0 ID comando: commandIDGUID' Integrità Exchange: 'Integrità server 'Nome: 'PowerShellExchangeServer: <Nome=nomeserverposta>' Stato: Connesso',')
 
--    Individuare una sincronizzazione rapida (delta) nei log eseguendo la ricerca di **quick sync** (sincronizzazione rapida).
+-   Individuare una sincronizzazione rapida (delta) nei log eseguendo la ricerca di **quick sync** (sincronizzazione rapida).
 
 ##### <a name="exceptions-in-get-next-command"></a>Eccezioni in Get next command (Recupera comando successivo)
 Verificare nei log di Exchange Connector l'eventuale presenza di eccezioni in **Get next command** (Recupera comando successivo) e comunicarne il contenuto al Supporto tecnico Microsoft.
@@ -144,9 +144,9 @@ Verificare nei log di Exchange Connector l'eventuale presenza di eccezioni in **
 
 Per abilitare la registrazione dettagliata:
 
-1.    Aprire il file di configurazione di traccia di Exchange Connector. Il file si trova in: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.    Individuare TraceSourceLine con la chiave seguente: OnPremisesExchangeConnectorService
-3.    Modificare il valore del nodo **SourceLevel** da **Warning ActivityTracing** (predefinito) a **Verbose ActivityTracing**, come illustrato di seguito.
+1.  Aprire il file di configurazione di traccia di Exchange Connector. Il file si trova in: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
+2.  Individuare TraceSourceLine con la chiave seguente: OnPremisesExchangeConnectorService
+3.  Modificare il valore del nodo **SourceLevel** da **Warning ActivityTracing** (predefinito) a **Verbose ActivityTracing**, come illustrato di seguito.
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
