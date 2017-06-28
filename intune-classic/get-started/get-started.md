@@ -1,5 +1,5 @@
 ---
-title: Introduzione | Documentazione Microsoft
+title: Introduzione
 description: Questo argomento include indicazioni per gli amministratori pronti per la distribuzione di Microsoft Intune nell&quot;ambiente di produzione dell&quot;organizzazione che gestiscono.
 keywords: 
 author: nathbarn
@@ -12,10 +12,10 @@ ms.technology:
 ms.assetid: 5b56f8b4-269b-4e7f-b7e9-b0401bdd42f4
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8943ae84c27001ea12834ddef3aae641a66899be
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a9655730e15c7c7cd49cfbfbe197e7953f9c7b01
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -24,10 +24,10 @@ ms.lasthandoff: 05/23/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Le informazioni in questo argomento sono utili per gli amministratori pronti per iniziare a usare Microsoft Intune per gestire i dispositivi e i servizi per i loro utenti. Se non si è pronti per l'acquisto di Intune, è possibile [valutare il servizio con un account di prova di Intune](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).
+Le informazioni in questo argomento sono utili per gli amministratori pronti per iniziare a usare Microsoft Intune per gestire i dispositivi e i servizi per i loro utenti. Se non si è pronti per l'acquisto di Intune, è possibile [valutare il servizio con un account di prova di Intune](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune).
 
 In questa guida sono inclusi gli argomenti seguenti:
-- [Guida introduttiva a Intune](start-with-a-paid-subscription-to-microsoft-intune.md): istruzioni dettagliate per convertire la sottoscrizione di valutazione passando da una gestione di test a una gestione aziendale effettiva o configurare una nuova sottoscrizione per l'organizzazione
-- [Eseguire la migrazione a Intune](/intune-classic/plan-design/intune-mdm-migration-guide): indicazioni per eseguire la migrazione a Intune dalla soluzione di gestione della mobilità aziendale esistente
+- [Guida introduttiva a Intune](/intune/setup-steps): istruzioni dettagliate per convertire la sottoscrizione di valutazione passando da una gestione di test a una gestione aziendale effettiva o configurare una nuova sottoscrizione per l'organizzazione
+- [Eseguire la migrazione a Intune](/intune/migration-guide): indicazioni per eseguire la migrazione a Intune dalla soluzione di gestione della mobilità aziendale esistente
 - [Passaggi successivi con Intune](prevent-company-data-leaks-from-Office-365-mobile-apps.md): panoramica e passaggi successivi per le attività comuni di Intune
 

@@ -1,5 +1,5 @@
 ---
-title: Usare gruppi per gestire utenti e dispositivi | Documentazione Microsoft
+title: Usare i gruppi per gestire utenti e dispositivi
 description: Creare e gestire gruppi usando l&quot;area di lavoro Gruppi.
 keywords: 
 author: Mtillman
@@ -15,10 +15,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 095b8db0cb5097edca98d138edccafbe8e55b9ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -108,7 +108,7 @@ Nelle visualizzazioni di gruppi filtrati è possibile personalizzare ciò che pu
 -   Si vuole che gli amministratori IT possano solo distribuire elementi a utenti e dispositivi specifici
 -   Si vuole che gli amministratori IT possano visualizzare solo i gruppi rilevanti per ogni amministratore
 
-È possibile configurare le visualizzazioni di gruppi filtrati per gli amministratori del servizio nella console di amministrazione Intune. Per informazioni dettagliate, vedere [Informazioni preliminari per l'uso di Microsoft Intune](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune).
+È possibile configurare le visualizzazioni di gruppi filtrati per gli amministratori del servizio nella console di amministrazione Intune. Per informazioni dettagliate, vedere [Informazioni preliminari per l'uso di Microsoft Intune](/intune/supported-devices-browsers).
 
 Dopo aver configurato le visualizzazioni di gruppi filtrati per un amministratore del servizio, quando l'amministratore distribuisce software o criteri o esegue report, l'amministratore può visualizzare e selezionare solo i gruppi specificati. L'amministratore non vede inoltre informazioni sullo stato in queste pagine della console di amministrazione:
 

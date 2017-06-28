@@ -1,5 +1,5 @@
 ---
-title: "Attività comuni di gestione di PC Windows | Documentazione Microsoft"
+title: "Attività comuni di gestione di PC Windows"
 description: Informazioni sulla gestione dei PC Windows che eseguono il client software di Intune.
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 548a4b84fe662d5634e2b82363f2ab3d86e48849
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 535979b6adf25c67daaab2df924cbb0e21e15a36
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Attività comuni di gestione di PC Windows con il client software di Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Questo argomento elenca le attività che è possibile eseguire per gestire i desktop gestiti come PC installando il client software di Intune. Questo argomento non tratta la gestione dei PC come dispositivi mobili. Se il client non è ancora stato installato nei PC, vedere [Installare il client software di Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 

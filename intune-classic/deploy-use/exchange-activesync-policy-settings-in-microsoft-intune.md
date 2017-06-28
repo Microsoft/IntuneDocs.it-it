@@ -1,5 +1,5 @@
 ---
-title: Impostazioni dei criteri di Exchange ActiveSync | Documentazione Microsoft
+title: Impostazioni dei criteri di Exchange ActiveSync
 description: "Usare i criteri di Exchange ActiveSync di Intune per configurare le impostazioni che consentono di controllare una gamma di funzionalità sui dispositivi gestiti da Exchange ActiveSync."
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c4023007f993436e0d7628cce52f78a1127c88f8
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6bbb0cd7ca87a3c6cc352cbdd6dd2b61a9c5e36c
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

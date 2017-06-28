@@ -1,5 +1,5 @@
 ---
-title: Semplificare la configurazione della posta elettronica nei dispositivi mobili | Documentazione Microsoft
+title: Semplificare la configurazione della posta elettronica nei dispositivi mobili
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 78bce5b82cfbb65473ad0b8cadb0db349ed3df3c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2fe65f3021596390af8262f83704d6e4ceaa1716
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -37,8 +37,8 @@ Microsoft Intune è in grado di configurare automaticamente la posta elettronica
 Dopo aver configurato il profilo di posta elettronica, è possibile limitare facilmente l'accesso alla posta elettronica aziendale e ai servizi di Office 365 usando i criteri di accesso condizionale di Intune. Questi criteri consentono di assicurarsi che l'accesso alla posta elettronica aziendale e ai servizi di Office 365 sia limitato ai dispositivi conformi alle regole definite in Intune.
 
 ## <a name="how-do-i-do-it"></a>In che modo procedere?
-1.    [Configurare automaticamente i profili di posta elettronica degli utenti finali](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) nei dispositivi Windows, iOS e Android.
-2.    [Controllare l'accesso alla posta elettronica aziendale](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) usando criteri di accesso condizionale.
+1.  [Configurare automaticamente i profili di posta elettronica degli utenti finali](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) nei dispositivi Windows, iOS e Android.
+2.  [Controllare l'accesso alla posta elettronica aziendale](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) usando criteri di accesso condizionale.
 
 
 ### <a name="additional-information"></a>Informazioni aggiuntive:

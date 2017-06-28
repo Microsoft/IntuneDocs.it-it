@@ -1,5 +1,5 @@
 ---
-title: Ritirare i dispositivi | Documentazione Microsoft
+title: Retire devices (Ritirare i dispositivi)
 description: Intune supporta sia la cancellazione selettiva sia quella completa per ritirare il dispositivo dalla gestione di Intune rimuovendo i relativi criteri e il portale aziendale.
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -33,10 +33,10 @@ I dispositivi non vengono mai rimosse da Intune senza l'intervento dell'utente, 
 
 Potrebbe essere necessario ritirare un dispositivo per diversi motivi:
 
--    L'utente lascia la società in modo pianificato (abbandono "gestito")
--    L'utente lascia la società improvvisamente (licenziamento, dimissioni e così via)
--    Il dispositivo viene perso
--    Il dispositivo viene riutilizzato (passaggio a un altro utente, riutilizzo per altri scopi e così via)
+-   L'utente lascia la società in modo pianificato (abbandono "gestito")
+-   L'utente lascia la società improvvisamente (licenziamento, dimissioni e così via)
+-   Il dispositivo viene perso
+-   Il dispositivo viene riutilizzato (passaggio a un altro utente, riutilizzo per altri scopi e così via)
 
 Per un dispositivo gestito come dispositivo mobile è possibile eseguire una cancellazione selettiva o una cancellazione completa oppure è possibile bloccare il dispositivo e reimpostarne la password. Cancellando il dispositivo, la sottoscrizione dell'utente viene liberata per l'aggiunta di un altro dispositivo. È anche possibile ritirare i PC gestiti con il software client di Intune.
 

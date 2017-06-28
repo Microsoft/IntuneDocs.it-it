@@ -18,10 +18,10 @@ ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 748fce44b696675d4b7fe4b1d3048633fba1b490
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -38,7 +38,7 @@ Il reparto IT dell'azienda può vedere le informazioni relative al lavoro, ma no
 È possibile accedere al portale aziendale in due modi diversi:
 
 - Installando l'app Portale aziendale nel dispositivo. In genere è possibile scaricare l'app Portale aziendale dall'App Store del dispositivo, ma anche l'amministratore IT può installare l'app.
-- Visitando il [sito Web del portale aziendale](http://portal.manage.microsoft.com) impostato dall'amministratore IT.
+- Visitando il [sito Web del portale aziendale](https://portal.manage.microsoft.com) impostato dall'amministratore IT.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual è la differenza tra app e sito Web?
 Esistono alcune lievi differenze tra l'app Portale aziendale e il sito Web del portale aziendale, ma la maggior parte delle attività può essere eseguita su entrambi. Ad esempio, è possibile:
@@ -100,5 +100,5 @@ Microsoft consiglia di provare prima di tutto a risolvere il problema autonomame
 - [Risolvere problemi comuni con il dispositivo iOS](troubleshoot-your-device-ios.md)
 - [Risolvere problemi comuni con il dispositivo Windows](troubleshoot-your-device-windows.md)
 
-È possibile aggiungere un commento di seguito per richiedere assistenza, ma ogni organizzazione ha requisiti diversi e non sempre Microsoft è in grado di rispondere alle domande. Rivolgersi al proprio amministratore IT è probabilmente il modo più efficace per ottenere risposte veloci e pertinenti. Le informazioni di contatto dovrebbero essere disponibili nel [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+È possibile aggiungere un commento di seguito per richiedere assistenza, ma ogni organizzazione ha requisiti diversi e non sempre Microsoft è in grado di rispondere alle domande. Rivolgersi al proprio amministratore IT è probabilmente il modo più efficace per ottenere risposte veloci e pertinenti. Le informazioni di contatto dovrebbero essere disponibili nel [sito Web del portale aziendale](https://portal.manage.microsoft.com).
 

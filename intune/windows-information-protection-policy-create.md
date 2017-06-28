@@ -1,12 +1,12 @@
 ---
-title: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune | Microsoft Docs
-titleSuffix: Intune Azure preview
+title: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
+titleSuffix: Intune on Azure
 description: Creare e distribuire criteri di protezione delle app WIP con Intune
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ca8e309653aa43292c7bd1ae1cb72cbb282d37dc
+ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
+ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 A partire dalla versione 1704 di Intune, è possibile usare i criteri di protezione delle app con Windows 10 in scenari di gestione di applicazioni mobili (MAM) senza registrazione.
 
@@ -52,7 +52,7 @@ Di seguito vengono presentati prima di tutto alcuni concetti fondamentali per l'
 
 È necessario configurare il provider MAM prima di poter creare un criterio di protezione delle app WIP.
 
--   Altre informazioni su [come configurare il provider MAM con Intune](https://docs.microsoft.comapp-protection-policies-configure-windows-10.md).
+-   Altre informazioni su [come configurare il provider MAM con Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 È inoltre necessario disporre di quanto segue:
 

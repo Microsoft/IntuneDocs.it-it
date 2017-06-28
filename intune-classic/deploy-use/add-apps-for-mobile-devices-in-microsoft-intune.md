@@ -1,5 +1,5 @@
 ---
-title: Aggiungere app per dispositivi registrati | Documentazione Microsoft
+title: Aggiungere app per dispositivi registrati
 description: "Prima di distribuire un&quot;app è necessario aggiungerla a Intune. L&quot;app sarà quindi disponibile nella console di Intune, in cui sarà possibile distribuirla e gestirla."
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 87d8af0c3e014a6c8bcf2cda72bc6815143c34a9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 98d0376ff02ea89e019fba6022de800f3ca84555
 ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
