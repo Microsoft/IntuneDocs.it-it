@@ -14,15 +14,12 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: eea3b9e2888f07399c8cda1e81ae8a5318d02d42
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Trovare un nome della famiglia di pacchetti (PFN) per la configurazione VPN per app
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,4 +85,3 @@ Le informazioni desiderate vengono visualizzate in Microsoft Edge. In Internet E
 `  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",`
 `  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`
 `}`
-

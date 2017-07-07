@@ -1,5 +1,5 @@
 ---
-title: Configurare l&quot;infrastruttura di certificazione per PFX
+title: Configurare l'infrastruttura di certificazione per PFX
 description: Creare e distribuire profili certificato con estensione pfx.
 keywords: 
 author: lleonard-msft
@@ -14,14 +14,11 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 868578d6c6c87a9e7459160ed89dfd50629bdb51
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-certificate-infrastructure"></a>Configurare l'infrastruttura di certificazione
 
@@ -159,4 +156,3 @@ Scaricare, installare e configurare Connettore di certificati.
 
 ### <a name="next-steps"></a>Passaggi successivi
 A questo punto è possibile configurare i profili certificato come descritto in [Configurare i profili certificato](Configure-Intune-certificate-profiles.md).
-

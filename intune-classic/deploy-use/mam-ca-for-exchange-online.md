@@ -1,5 +1,5 @@
 ---
-title: Accesso delle app per Exchange Online | Microsoft Docs
+title: Accesso delle app per Exchange Online
 description: Questo argomento descrive come configurare criteri di accesso condizionale per app MAM.
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: df84bdf2358b596905299c7099ce22e128e9d17d
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ef4a0c0e642026d625d7139b2ea2629cdd96930
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>Creare un accesso condizionale a Exchange Online per consentire solo le app supportate dalla gestione di applicazioni mobili
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -64,4 +61,3 @@ Per **eliminare un gruppo di utenti** dall'elenco dei **gruppi di utenti limitat
 [Bloccare le app che non usano l'autenticazione moderna](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>Vedere anche
 [Proteggere i dati delle app con i criteri di protezione delle app](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

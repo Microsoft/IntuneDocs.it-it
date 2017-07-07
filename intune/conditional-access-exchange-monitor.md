@@ -1,7 +1,7 @@
 ---
-title: "Monitorare la conformità dell&quot;accesso condizionale per Exchange locale ed Exchange Online"
-titleSuffix: Intune Azure preview
-description: "Monitorare la conformità dell&quot;accesso condizionale per Exchange locale ed Exchange Online tramite il portale di Azure in Intune"
+title: "Monitorare la conformità dell'accesso condizionale per Exchange locale ed Exchange Online"
+titleSuffix: Intune on Azure
+description: "Monitorare la conformità dell'accesso condizionale per Exchange locale ed Exchange Online tramite il portale di Azure in Intune"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,16 +14,13 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>Monitorare la conformità dell'accesso condizionale per Exchange locale ed Exchange Online nell'anteprima di Azure in Intune
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Monitorare la conformità dell'accesso condizionale per Exchange locale ed Exchange Online in Intune
 
 A partire dalla versione 1704 di Intune, gli amministratori possono vedere informazioni di report correlate ai record dei dispositivi Exchange ActiveSync sincronizzati con Intune tramite On-Premises Exchange Connector o il connettore da servizio a servizio di Intune (Exchange Online Connector). Le informazioni di report sulla conformità dell'accesso condizionale offrono un riepilogo dei dispositivi con stati di sincronizzazione diversi:
 
@@ -70,4 +67,3 @@ Nella pannello dei dettagli del dispositivo, è possibile visualizzare ulteriori
 -   **Configurazione del dispositivo:** mostra tutti i dettagli di configurazione del dispositivo.
 
 -   **Accesso ad Exchange:** in questa sezione sono disponibili ulteriori informazioni sullo stato del dispositivo dopo l'applicazione dei criteri di accesso condizionale.
-

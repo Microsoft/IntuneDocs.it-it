@@ -1,6 +1,6 @@
 ---
-title: Proteggere SharePoint Online | Microsoft Docs
-description: Proteggere e controllare l&quot;accesso ai dati aziendali in SharePoint Online con accesso condizionale.
+title: Proteggere SharePoint Online
+description: Proteggere e controllare l'accesso ai dati aziendali in SharePoint Online con accesso condizionale.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,15 +14,12 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
-ms.contentlocale: it-it
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: e22686964df7415ece75361a645103006af43c51
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Proteggere l'accesso a SharePoint Online con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -146,7 +143,7 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
         Tutti i dispositivi usati per accedere a **SharePoint Online** devono essere registrati in Intune e devono essere conformi ai criteri. Qualsiasi applicazione client che usa l'**autenticazione moderna** è soggetta ai criteri di accesso condizionale. Se la piattaforma non è attualmente supportata da Intune, l'accesso a **SharePoint Online** è bloccato.
 
         La selezione dell'opzione **Tutte le piattaforme** indica che Azure Active Directory applica questo criterio a tutte le richieste di autenticazione, indipendentemente dalla piattaforma segnalata dall'applicazione client. Tutte le piattaforme devono essere registrate e conformi, ad eccezione di:
-        *    Dispositivi Windows, che dovranno essere registrati e conformi e/o aggiunti a un dominio con Active Directory locale.
+        *   Dispositivi Windows, che dovranno essere registrati e conformi e/o aggiunti a un dominio con Active Directory locale.
         * Piattaforme non supportate come Mac. Tuttavia, le app che usano l'autenticazione moderna da queste piattaforme sono comunque bloccate.
 
     -   **Piattaforme specifiche**
@@ -197,4 +194,3 @@ Scegliere un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Disp
 
 ### <a name="see-also"></a>Vedere anche
 [Proteggere l'accesso alla posta elettronica e ai servizi di Office 365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-

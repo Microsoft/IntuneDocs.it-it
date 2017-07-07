@@ -1,6 +1,6 @@
 ---
-title: Aggiornamenti software per PC Windows | Documentazione Microsoft
-description: "Intune consente di tenere aggiornati i computer garantendo l&quot;installazione veloce delle patch e degli aggiornamenti software più recenti."
+title: Aggiornamenti software per PC Windows
+description: "Intune consente di tenere aggiornati i computer garantendo l'installazione veloce delle patch e degli aggiornamenti software più recenti."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,16 +14,16 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5530c1a85c53f76f94d5ebf6d356bfebd1aa2adb
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1243d52f3d135ac02b9451022451bf9cf8c7304b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune consente di proteggere i computer gestiti in diversi modi, ad esempio con la gestione degli aggiornamenti software, che consente di mantenere i computer aggiornati installando rapidamente le patch e gli aggiornamenti software più recenti.
 
 Se il client Intune non è ancora stato installato nei computer, vedere [Install the Windows PC client with Microsoft Intune (Installare il client PC Windows con Microsoft Intune)](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -255,4 +255,3 @@ Quando si seleziona un aggiornamento dall'elenco, sono disponibili ulteriori com
 
 ### <a name="see-also"></a>Vedere anche
 [Criteri per la protezione dei PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

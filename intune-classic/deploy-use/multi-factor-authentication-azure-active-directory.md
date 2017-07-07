@@ -1,6 +1,6 @@
 ---
-title: "Autenticazione a più fattori per la registrazione di dispositivi Intune | Microsoft Docs"
-description: "Come richiedere l&quot;autenticazione a più fattori in Azure AD per la registrazione del dispositivo."
+title: Multi-Factor Authentication per le registrazioni di dispositivi Intune
+description: "Come richiedere l'autenticazione a più fattori in Azure AD per la registrazione del dispositivo."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: 
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dba070ef76de8015b347e760b424a5e28ce6ddec
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 805ca79932788786636d365109e06aee836d8a0e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Multi-Factor Authentication per le registrazioni di dispositivi Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -59,4 +56,3 @@ Per richiedere l'autenticazione MFA quando viene registrato un dispositivo, segu
 > [!IMPORTANT]
 > 
 > Non configurare le **regole di accesso in base al dispositivo** per la registrazione di Microsoft Intune.
-

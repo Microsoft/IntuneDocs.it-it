@@ -14,15 +14,12 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7fc99a944000a8d5ecfc09ebc2e956e7c0f201c9
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>Ripristinare dispositivi iOS gestiti da Intune da backup
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -52,4 +49,3 @@ Avviare l'app Portale aziendale e annullare la registrazione selezionando il riq
 
 ### <a name="for-users-who-will-use-both-their-old-and-new-devices"></a>Per gli utenti che usano sia il dispositivo precedente che quello nuovo
 Cancellare i cookie da Safari toccando __Impostazioni__ > __Safari__ > __Cancella dati siti web e cronologia__. Dopo la cancellazione, disinstallare e reinstallare l'app Portale aziendale e quindi seguire la procedura di registrazione standard per [registrare un dispositivo iOS in Intune](/intune-user-help/enroll-your-device-in-intune-ios).
-

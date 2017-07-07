@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-when-you-create-a-work-profile"></a>Cosa accade quando si crea un profilo di lavoro
 
 Un profilo di lavoro viene impostato nel dispositivo per mantenere la posta elettronica, le app e i file aziendali o dell'istituto di istruzione separati dai dati personali.
@@ -49,4 +44,3 @@ Quando si crea un profilo di lavoro:
 Per i passaggi per la creazione di un profilo di lavoro, vedere [Create a work profile and enroll your device](create-a-work-profile-and-enroll-your-device-in-intune-android.md) (Creare un profilo di lavoro e registrare il dispositivo).
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

@@ -1,6 +1,6 @@
 ---
 title: Impostazioni dei criteri di sicurezza dei dispositivi mobili
-description: "Usare Intune per configurare una vasta gamma di impostazioni che è possibile distribuire in dispositivi gestiti nell&quot;organizzazione."
+description: "Usare Intune per configurare una vasta gamma di impostazioni che è possibile distribuire in dispositivi gestiti nell'organizzazione."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,16 +14,12 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 15b56f822557d80d0088467099c5c1232848bf82
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di sicurezza dei dispositivi mobili in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -217,4 +213,3 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 
 ### <a name="see-also"></a>Vedere anche
 [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

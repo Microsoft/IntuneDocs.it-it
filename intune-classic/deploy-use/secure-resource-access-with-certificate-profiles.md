@@ -1,6 +1,6 @@
 ---
-title: Profili certificato per l&quot;accesso alle risorse | Documentazione Microsoft
-description: Protezione VPN, Wi-Fi e di accesso alla posta elettronica con un certificato installato su ogni dispositivo dell&quot;utente.
+title: Profili certificato per l'accesso alle risorse
+description: Protezione VPN, Wi-Fi e di accesso alla posta elettronica con un certificato installato su ogni dispositivo dell'utente.
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -14,15 +14,12 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3dd6e5971d084773640c577cace43c2f011dbb69
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 5570c13b9ca1782b12ad7ca718d18c98bda7bbfa
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Proteggere l'accesso alle risorse con i profili certificato in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -62,4 +59,3 @@ Quando si concede agli utenti l'accesso alle risorse aziendali tramite profili V
 - [Configurare l'infrastruttura di certificazione per SCEP](configure-certificate-infrastructure-for-scep.md)
 - [Configurare l'infrastruttura di certificazione per PFX](configure-certificate-infrastructure-for-pfx.md)
 - [Configurare i profili certificato di Intune](configure-intune-certificate-profiles.md)
-
