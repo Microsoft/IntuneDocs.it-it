@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Che cosa avviene se si reimposta un dispositivo Windows con l'app Portale aziendale?
 
 Quando si usa l'app Portale aziendale o il [sito Web del portale aziendale](reset-erase-your-device-cpwebsite.md) per reimpostare il dispositivo Windows, vengono ripristinate le impostazioni di fabbrica del dispositivo e vengono eliminate app, impostazioni e dati, inclusi i dati personali. Le conseguenze nei singoli dispositivi dipendono dal tipo di dispositivo e da come viene usato, come descritto nella tabella seguente. Per istruzioni su come reimpostare il dispositivo perso o rubato, vedere [Ripristinare (cancellare) un dispositivo smarrito o rubato](reset-erase-your-device-cpwebsite.md).
@@ -38,4 +33,3 @@ Quando si usa l'app Portale aziendale o il [sito Web del portale aziendale](rese
 |PC e portatili|**Windows 8.1 e Windows 8**<br />Non è possibile reimpostare un computer che esegue Windows 8 o Windows 8.1 a meno che non sia usato solo per la posta elettronica.<br /><br />**Windows 7 o Windows Vista**<br />Non è possibile reimpostare un computer che esegue Windows 7 o versioni precedenti.|
 
 Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

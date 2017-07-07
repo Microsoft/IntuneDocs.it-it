@@ -1,5 +1,5 @@
 ---
-title: Installazione dell&quot;app Portale aziendale per Windows | Microsoft Docs
+title: Installazione dell'app Portale aziendale per Windows | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 052de47e19f4e171428ee22b4701ed516461231f
-ms.contentlocale: it-it
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows in Intune?
 
 Quando si installa l'app Portale aziendale e la si usa per registrare un dispositivo Windows o Windows Phone, si consente all'amministratore IT di gestire il dispositivo per garantire la sicurezza dei dati dell'azienda o dell'istituto di istruzione. Questo argomento descrive cosa avviene per i dispositivi precedenti a Windows 10. Per i dispositivi Windows 10, vedere l'[argomento correlato](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
@@ -79,4 +74,3 @@ Ogni otto ore circa i dispositivi registrati eseguono le operazioni seguenti:
 -   Invio degli aggiornamenti dell'inventario delle app aziendali.
 
 Per eventuali domande, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
-

@@ -1,5 +1,5 @@
 ---
-title: Installazione dell&quot;app Portale aziendale per Windows 10 | Microsoft Docs
+title: Installazione dell'app Portale aziendale per Windows 10 | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 0f5c1eb76f823c72904bad7543409d9efa9e93e6
-ms.contentlocale: it-it
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows 10 in Intune?
 
 Quando si installa l'app Portale aziendale e si registra il proprio dispositivo Windows 10 Enterprise o Professional in Intune, è possibile usare tale app per:
@@ -57,4 +53,3 @@ Quando si aggiunge un computer:
 -   L'amministratore IT può imporre criteri al computer. Ad esempio, potrebbe essere necessario impostare una password o un PIN per il computer. L'amministratore IT può anche limitare il numero di immissioni di una password errata e impedire l'accesso al computer o eliminare tutti i dati dal disco rigido se tale numero viene superato.
 
 Per eventuali domande, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
-

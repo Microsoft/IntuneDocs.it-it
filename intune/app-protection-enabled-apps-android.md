@@ -1,7 +1,7 @@
 ---
 title: App Android con criteri di protezione delle app
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: questo argomento descrive cosa accade quando l&quot;app Android è gestita da criteri di protezione delle app."
+titleSuffix: Intune on Azure
+description: "Questo argomento descrive cosa accade quando un'app Android è gestita in base ai criteri di protezione delle app.\""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,17 +15,14 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c1704e5e63be434eaacaeec6e575640310ce74b3
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Aspettative dalla gestione dell'app per Android con criteri di protezione delle app 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Questo argomento descrive l'esperienza dell'utente finale con le app con criteri di protezione delle app. I criteri di protezione delle app vengono applicati solo quando le app sono usate nel contesto di lavoro, ad esempio nei casi di accesso alle app con l'account aziendale o di accesso ai file archiviati nel percorso OneDrive aziendale.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]Questo argomento descrive l'esperienza dell'utente finale con le app con criteri di protezione delle app. I criteri di protezione delle app vengono applicati solo quando le app sono usate nel contesto di lavoro, ad esempio nei casi di accesso alle app con l'account aziendale o di accesso ai file archiviati nel percorso OneDrive aziendale.
 ##  <a name="accessing-apps"></a>Accesso alle app
 
 L'app Portale aziendale è necessaria per tutte le app associate a criteri di protezione delle app in dispositivi Android.
@@ -84,4 +81,3 @@ Sono supportati i tipi di file seguenti:
 
 ### <a name="see-also"></a>Vedere anche
 [Creare e distribuire i criteri di protezione delle app con Microsoft Intune](app-protection-policies.md)
-

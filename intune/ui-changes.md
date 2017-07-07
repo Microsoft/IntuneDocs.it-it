@@ -1,7 +1,7 @@
 ---
 title: "Dove si trovano le funzionalità di Intune in Azure?"
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: suggerimenti per individuare le funzionalità di Intune nella console di Azure."
+titleSuffix: Intune on Azure
+description: "Suggerimenti per individuare le funzionalità di Intune nella console di Azure.\""
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,27 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9dd6e93108ffc46e9e52b6928cf513161d29f7a4
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Dove si trovano le funzionalità di Intune in Azure?
 Con lo spostamento di Intune nel portale di Azure, alcune attività sono state riorganizzate in modo più logico. Ma ogni ottimizzazione implica la necessità di abituarsi a una nuova organizzazione. Pertanto, è stata realizzata questa Guida di riferimento, pensata espressamente per chi conosce già Intune nella console classica e vuole imparare a usarlo in Azure. Se questo articolo non fornisce informazioni su una funzionalità specifica, lasciare un commento alla fine dell'articolo in modo da poterlo aggiornare.
 ## <a name="quick-reference-guide"></a>Guida di riferimento rapido
-|Funzionalità |Percorso nella console classica|Percorso in Intune in Azure| |------------||---------------|---------------|
-|Device Enrollment Program (DEP) |Amministrazione > Gestione dei dispositivi mobili > iOS e Mac OS X > Device Enrollment Program|[Registrazione del dispositivo > Registrazione Apple > Token Device Enrollment Program](#where-did-apple-dep-go) |
-|Device Enrollment Program (DEP)| Amministrazione > Gestione dei dispositivi mobili > iOS e Mac OS X > Device Enrollment Program |[Registrazione del dispositivo > Registrazione Apple > Numeri di serie DEP](#where-did-apple-dep-go) |
-|Regole di registrazione |Amministrazione > Gestione dei dispositivi mobili > Regole di registrazione|[Registrazione del dispositivo > Restrizioni registrazione](#where-did-enrollment-rules-go) |
-|Gruppi per numero di serie iOS |Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per numero di serie iOS|[Registrazione del dispositivo > Registrazione Apple > Numeri di serie DEP](#where-did-corporate-pre-enrolled-devices-go) |
-|Gruppi per numero di serie iOS |Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per numero di serie iOS| [Registrazione del dispositivo > Registrazione Apple > Numeri di serie Apple Configurator](#where-did-corporate-pre-enrolled-devices-go)|
-|Gruppi per IMEI (tutte le piattaforme)| Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per IMEI (tutte le piattaforme) | [Registrazione del dispositivo > Identificatori dei dispositivi aziendali](#by-imei-all-platforms)|
-| Profilo di registrazione dei dispositivi aziendali| Criteri > Registrazione di dispositivi aziendali | [Registrazione del dispositivo > Registrazione Apple > Profili Device Enrollment Program](#where-did-corporate-pre-enrolled-devices-go) |
-| Profilo di registrazione dei dispositivi aziendali | Criteri > Registrazione di dispositivi aziendali | [Registra i dispositivi > Registrazione Apple > Profili AC](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Amministrazione > Gestione dei dispositivi mobili > Android for Work | Registrazione del dispositivo > Registrazione Android for Work | | Termini e condizioni | Criteri > Termini e condizioni | Registrazione del dispositivo > Termini e condizioni |
+|Funzionalità |Percorso nella console classica|Percorso in Intune in Azure| |------------||---------------|---------------| |Device Enrollment Program (DEP) |Amministrazione > Gestione dei dispositivi mobili > iOS e Mac OS X > Device Enrollment Program|[Registrazione del dispositivo > Registrazione Apple > Token Device Enrollment Program](#where-did-apple-dep-go) | |Device Enrollment Program (DEP)| Amministrazione > Gestione dei dispositivi mobili > iOS e Mac OS X > Device Enrollment Program|[Registrazione del dispositivo > Registrazione Apple > Numeri di serie DEP](#where-did-apple-dep-go) | |Regole di registrazione |Amministrazione > Gestione dei dispositivi mobili > Regole di registrazione|[Registrazione del dispositivo > Restrizioni registrazione](#where-did-enrollment-rules-go) | |Gruppi per numero di serie iOS |Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per numero di serie iOS|[Registrazione del dispositivo > Registrazione Apple > Numeri di serie DEP](#where-did-corporate-pre-enrolled-devices-go) | |Gruppi per numero di serie iOS |Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per numero di serie iOS| [Registrazione del dispositivo > Registrazione Apple > Numeri di serie Apple Configurator](#where-did-corporate-pre-enrolled-devices-go)| |Gruppi per IMEI (tutte le piattaforme)| Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per IMEI (tutte le piattaforme) | [Registrazione del dispositivo > Identificatori dei dispositivi aziendali](#by-imei-all-platforms)| | Profilo di registrazione dei dispositivi aziendali| Criteri > Registrazione di dispositivi aziendali | [Registrazione del dispositivo > Registrazione Apple > Profili Device Enrollment Program](#where-did-corporate-pre-enrolled-devices-go) | | Profilo di registrazione dei dispositivi aziendali | Criteri > Registrazione di dispositivi aziendali | [Registra i dispositivi > Registrazione Apple > Profili AC](#where-did-corporate-pre-enrolled-devices-go) | | Android for Work | Amministrazione > Gestione dei dispositivi mobili > Android for Work | Registrazione del dispositivo > Registrazione Android for Work | | Termini e condizioni | Criteri > Termini e condizioni | Registrazione del dispositivo > Termini e condizioni |
 
 
 ## <a name="where-do-i-manage-groups"></a>Dove si gestiscono i gruppi?
@@ -117,4 +106,3 @@ Per ridurre la confusione tra i due tipi di profilo e le potenziali assegnazioni
 
 **Profili di Apple Configurator**
 ![Immagine dei profili di Apple Configurator in Azure](./media/16-azure-ac-profiles.png)
-

@@ -1,49 +1,61 @@
 ---
-title: Il dispositivo Android sembra essere crittografato, ma il portale aziendale indica il contrario
+title: Il dispositivo Android sembra essere crittografato
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/06/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6da1d00ce654add003a2f8e39b1a1c987d96e5a4
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 269ad7968242f8f5ce7095c9c73347987675e846
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Il dispositivo Android sembra essere crittografato, ma il portale aziendale indica il contrario
 
 Quando si crittografa un dispositivo, si esegue la codifica delle informazioni in esso contenute tramite una chiave segreta nota solo all'utente, impedendo così l'accesso agli utenti non autorizzati. Come passo aggiuntivo per assicurarsi che le informazioni siano protette, l'organizzazione richiede di crittografare il dispositivo Android prima di accedere a file, posta elettronica o dati aziendali.
 
+## <a name="common-issues"></a>Problemi comuni
+
+Le versioni più recenti di Android, in particolare a partire dalla versione 7.0, richiedono un passcode di avvio per assicurarsi che il dispositivo sia completamente crittografato. Produttori di dispositivi diversi hanno descrizioni e posizioni variabili per il passcode di avvio. Nella maggior parte dei casi, questa funzionalità è detta "avvio sicuro". 
+
+## <a name="solutions"></a>Soluzioni
+
+### <a name="add-a-startup-pin"></a>Aggiungere un PIN di avvio
+
+Alcuni dispositivi Android richiedono la creazione di un PIN di avvio per assicurarsi che il dispositivo sia sicuro. Esistono molte versioni di Android da più produttori diversi. È possibile provare a risolvere il problema trovando la posizione in cui abilitare questa opzione nell'app delle impostazioni. Ad esempio, per abilitare l'avvio sicuro in un dispositivo Samsung Galaxy S7, passare a **Impostazioni** > **Blocco schermo e sicurezza** > **Avvio sicuro**.  
+
+### <a name="downgrade-your-version-of-android"></a>Effettuare il downgrade della versione di Android
+Se il dispositivo offre la possibilità di effettuare il downgrade a Android 6.0+, procedere in tal senso. Il tentativo di effettuare il downgrade del dispositivo potrebbe comportare dei rischi di perdita di dati. In caso contrario, è consigliabile contattare l'amministratore IT per risolvere il problema. Le informazioni di contatto per l'amministratore IT di riferimento sono disponibili nel [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+
+## <a name="specific-manufacturer-issues"></a>Problemi di produttori specifici
+
 Alcuni dispositivi Android con la versione 7.0 o successive crittografano i dati in modi non coerenti con determinati standard della piattaforma Android. Questi dispositivi potrebbero sembrare crittografati per impostazione predefinita, ma secondo Intune i metodi usati possono esporre le informazioni del dispositivo a rischi dovuti all'accesso fisico al dispositivo da parte di utenti malintenzionati.
 
 > [!Note]
-> Microsoft collabora con tutti i produttori elencati per tentare di risolvere questi problemi e aggiornerà questo elenco corrispondentemente man mano che vengono completate le correzioni.
+> Microsoft collabora con i produttori per risolvere i problemi rilevati durante i test o segnalati dagli utenti. Questo articolo verrà aggiornato quando saranno disponibili nuove informazioni. 
 
-## <a name="an-incomplete-list-of-devices"></a>Elenco incompleto di dispositivi
+## <a name="known-devices"></a>Dispositivi noti
 
-Questo problema si verificherà nei dispositivi seguenti.
+### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>Dispositivi noti che possono essere aggiornati per risolvere questo problema
+
+I proprietari di uno dei dispositivi seguenti potrebbero sperimentare questo problema se il dispositivo non è stato aggiornato alla versione più recente di Android. Per installare gli aggiornamenti per questi dispositivi, passare a **Impostazioni** > **Updater**. 
 
 - [Huawei Honor 8](http://consumer.huawei.com/en/support/mobile-phones/honor8_en-sup.htm)
 - [Huawei P9](http://consumer.huawei.com/mobile-phones/p9/index.html)
 
-## <a name="solutions"></a>Soluzioni
+### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Dispositivi noti che attualmente non possono essere aggiornati per risolvere questo problema
 
-Se il dispositivo offre la possibilità di effettuare il downgrade a Android 6.0+, procedere in tal senso. Il tentativo di effettuare il downgrade del dispositivo potrebbe comportare dei rischi di perdita di dati. In caso contrario, è consigliabile contattare l'amministratore IT per risolvere il problema. Le informazioni di contatto per l'amministratore IT di riferimento sono disponibili nel [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
+- [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [Smartphone Xiaomi Mi](https://xiaomi-mi.com/mi-smartphones/)

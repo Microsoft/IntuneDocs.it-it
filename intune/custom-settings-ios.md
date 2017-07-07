@@ -1,7 +1,7 @@
 ---
 title: Impostazioni personalizzate di Intune per dispositivi iOS
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni sulle impostazioni che è possibile usare in un profilo personalizzato iOS."
+titleSuffix: Intune on Azure
+description: "Informazioni sulle impostazioni che è possibile usare in un profilo personalizzato iOS.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3d1ccae3c36e13b4074c442b48943077041a8b52
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b169fe74063b618f947f5d3d6809e0e49a5136e3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-custom-settings-for-ios-devices"></a>Impostazioni personalizzate di Microsoft Intune per dispositivi iOS
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Usare il profilo di configurazione personalizzato iOS di Microsoft Intune per assegnare le impostazioni create con lo [strumento Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12) nei dispositivi iOS. Questo strumento consente di creare molte impostazioni che controllano il funzionamento di questi dispositivi e di esportarle in un profilo di configurazione. È quindi possibile importare il profilo di configurazione nel profilo personalizzato iOS di Intune e assegnare le impostazioni a utenti e dispositivi nell'organizzazione.
 
@@ -41,4 +38,3 @@ Questa funzionalità consente di assegnare le impostazioni iOS che non possono e
 Assicurarsi che le impostazioni esportate dallo strumento Apple Configurator siano compatibili con la versione di iOS nei dispositivi a cui vengono assegnati i criteri personalizzati iOS. Per informazioni sulla risoluzione delle impostazioni incompatibili, cercare **Configuration Profile Reference** (Riferimento per il profilo di configurazione) e **Mobile Device Management Protocol Reference** (Riferimento per il protocollo di gestione dei dispositivi mobili) nel sito Web [Apple Developer](https://developer.apple.com/).
 
 Il file importato viene visualizzato nell'area **Contenuti del file** del pannello.
-

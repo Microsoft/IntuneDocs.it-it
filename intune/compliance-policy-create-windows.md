@@ -1,7 +1,7 @@
 ---
 title: "Come creare un criterio di conformità per Windows"
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni sulle modalità di creazione dei criteri di conformità per i dispositivi Windows."
+titleSuffix: Intune on Azure
+description: "Informazioni sulle modalità di creazione dei criteri di conformità per i dispositivi Windows.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,18 +15,16 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4de81c3dc6f1499c2364d8bf9c3b49b219248684
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 91f0a71ed7b924746425822ce10190a8ec7a7a40
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune-azure-preview"></a>Come creare i criteri di conformità per i dispositivi Windows nell'anteprima di Intune in Azure
+# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi Windows in Intune
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 I criteri di conformità vengono creati per ogni piattaforma.  È possibile creare i criteri di conformità nel portale di Azure. Per altre informazioni sui criteri di conformità consultare l'argomento [What is a device compliance](device-compliance.md)(Che cos'è la conformità dei dispositivi). Per altre informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, consultare l'argomento [Get started with device compliance](device-compliance-get-started.md) (Introduzione alla conformità dei dispositivi).
 
@@ -195,4 +193,3 @@ Per trovare la versione del sistema operativo da usare per le impostazioni **Ver
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-
