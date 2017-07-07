@@ -1,5 +1,5 @@
 ---
-title: Impostare l&quot;intervallo di tempo prima del blocco schermo | Microsoft Docs
+title: Impostare l'intervallo di tempo prima del blocco schermo | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: af2625387e6d2d454200e851ce5e64f8eb5607c7
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Come impostare l'intervallo di tempo prima del blocco dello schermo del dispositivo Android
 
 Per riconnettersi al lavoro, è necessario impostare il timeout della password nel dispositivo attenendosi alle istruzioni relative al tipo di dispositivo in uso.
@@ -47,4 +43,3 @@ Per riconnettersi al lavoro, è necessario impostare il timeout della password n
 2.  Selezionare un valore di timeout della password.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

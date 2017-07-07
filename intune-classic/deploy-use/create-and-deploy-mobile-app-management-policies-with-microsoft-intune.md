@@ -1,5 +1,5 @@
 ---
-title: Creare e distribuire criteri MAM | Documentazione Microsoft
+title: Creare e distribuire i criteri MAM
 description: Usare le istruzioni dettagliate in questo argomento per creare e distribuire i criteri di gestione delle app mobili.
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d91ce526650166197520d37c82084c0ff141ec80
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ebb4b03307f8af7e1390c6db994d3120942fae89
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Creare e distribuire i criteri di protezione delle app con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -109,9 +106,9 @@ Dopo aver creato un criterio come descritto nella procedura precedente, non verr
 ## <a name="line-of-business-lob-apps-optional"></a>App line-of-business (LOB) (facoltativo)
 
 A partire da Intune versione 1703, è possibile aggiungere genericamente app LOB in Intune quando si crea un nuovo criterio di protezione delle app. In questo modo è possibile definire i criteri di protezione per le app LOB usando l'SDK per MAM senza dover necessariamente disporre delle autorizzazioni di distribuzione completa delle app.
-
+/intune/app-sdk-get-started
 > [!TIP]
-> È anche possibile aggiungere app LOB in Intune quando si esegue il flusso di lavoro di [Intune App SDK](/intune-classic/develop/intune-app-sdk-get-started).
+> È anche possibile aggiungere app LOB in Intune quando si esegue il flusso di lavoro di [Intune App SDK](/intune/app-sdk-get-started).
 
 > [!IMPORTANT]
 > Se gli utenti dispongono solo di autorizzazioni specifiche per la distribuzione di app MAM anziché di autorizzazioni di distribuzione completa delle app, che consentirebbero di distribuire qualsiasi app in Intune, non saranno in grado di eseguire il flusso di lavoro di Intune SDK, ma potranno comunque aggiungere app LOB tramite il flusso di lavoro per la creazione di criteri di protezione delle app MAM.
@@ -164,8 +161,8 @@ I criteri vengono applicati solo agli utenti a cui sono state assegnate licenze 
 > Se si usa Intune con Configuration Manager per gestire i dispositivi Android e iOS, il criterio viene applicato solo agli utenti inclusi direttamente nel gruppo selezionato. I membri dei gruppi figlio annidati all'interno del gruppo selezionato non sono interessati.
 
 Gli utenti finali possono scaricare le app dall'Apple Store o da Google Play. Per altre informazioni, vedere:
-* [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](/intune/end-user-mam-apps-android)
+* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](/intune/end-user-mam-apps-ios)
 
 ##  <a name="change-existing-policies"></a>Modificare i criteri esistenti
 È possibile modificare criteri esistenti e applicarli agli utenti di destinazione. Tuttavia, quando si modificano criteri esistenti, gli utenti che hanno già effettuato l'accesso alle app non vedranno le modifiche per un intervallo di tempo di 8 ore.
@@ -219,6 +216,5 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 [Monitorare la conformità e lo stato utente](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Vedere anche
-* [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](/intune/end-user-mam-apps-android)
+* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](/intune/end-user-mam-apps-ios)

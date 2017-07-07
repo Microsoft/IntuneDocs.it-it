@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-or-change-your-passcode"></a>Impostare o modificare il passcode
 
 Se il dispositivo iOS non è conforme ai criteri di passcode dell'amministratore IT, viene visualizzato un messaggio che descrive brevemente il problema e vengono illustrate le procedure necessarie per far sì che il passcode soddisfi i requisiti.
@@ -46,4 +42,3 @@ In caso di problemi per l'impostazione di un passcode che soddisfi i requisiti, 
 3. Immettere un nuovo passcode che soddisfi i requisiti dell'amministratore IT, quindi immetterlo nuovamente per la verifica.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

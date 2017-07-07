@@ -1,5 +1,5 @@
 ---
-title: Inviare i log all&quot;amministratore IT tramite un cavo USB | Microsoft Docs
+title: Inviare i log all'amministratore IT tramite un cavo USB | Microsoft Docs
 description: Inviare i registri di dati tramite un cavo USB
 keywords: 
 author: barlanmsft
@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>Inviare i log all'amministratore IT tramite cavo USB
 
 Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo Android, è possibile inviare informazioni sull'errore tramite posta elettronica per consentire all'amministratore IT di risolvere il problema. Queste informazioni vengono memorizzate nel dispositivo in uno specifico documento definito _log di diagnostica_.
@@ -43,4 +38,3 @@ Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo A
 4.  Selezionare i file e allegarli a un messaggio di posta elettronica. Inviare questo messaggio di posta elettronica all'amministratore IT.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-
