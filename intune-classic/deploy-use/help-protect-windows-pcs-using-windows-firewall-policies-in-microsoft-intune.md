@@ -1,5 +1,5 @@
 ---
-title: Criteri firewall per PC Windows | Documentazione Microsoft
+title: Criteri firewall per PC Windows
 description: Intune consente di proteggere i PC gestiti usando il client di Intune in diversi modi, ad esempio per facilitare la configurazione delle impostazioni di Windows Firewall.
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d96fd3cf4d8963f1e79ef4ed27c1b826c8893b5f
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13ec6a424c3665e48938315d4af11cc986a83339
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Proteggere i PC Windows con criteri di Windows Firewall in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune consente di proteggere i PC Windows gestiti usando il client di Intune in diversi modi, ad esempio fornendo criteri che consentono di configurare le impostazioni di Windows Firewall nei computer.
 
 Se il client Intune per PC Windows non è ancora stato installato nei computer, vedere [Installare il client PC Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -135,4 +135,3 @@ Per tutte queste impostazioni, il valore predefinito è **Sì**.
 
 ### <a name="see-also"></a>Vedere anche
 [Criteri per la protezione dei PC Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

@@ -1,7 +1,7 @@
 ---
 title: Come cancellare solo i dati aziendali dalle app
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni sulle modalità di cancellazione selettiva delle app con Microsoft Intune."
+titleSuffix: Intune on Azure
+description: "Informazioni sulle modalità di cancellazione selettiva delle app con Microsoft Intune.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,17 +15,15 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: affe7323b8572aa17122011b293cb6a3a2fd7747
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Come cancellare solo i dati aziendali dalle app gestite da Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Quando un dispositivo viene smarrito o rubato, o se il dipendente lascia l'azienda, è necessario assicurarsi di rimuovere dal dispositivo i dati delle app aziendali. Ma potrebbe essere necessario non rimuovere i dati personali sul dispositivo, soprattutto se si tratta di un dispositivo di proprietà del dipendente.
 
@@ -38,7 +36,7 @@ Per rimuovere selettivamente i dati delle app aziendali, creare una richiesta di
 
 1.  Accedere al [portale di Azure](https://portal.azure.com).
 
-2.  Scegliere **Altri servizi**, digitare **Intune** nella casella di testo filtro e selezionare **Intune**. Si apre il pannello di anteprima di Intune, scegliere il pannello **Gestisci le app**.
+2.  Scegliere **Altri servizi**, digitare **Intune** nella casella di testo filtro e selezionare **Intune**. Verrà aperto il pannello di Intune. Scegliere il pannello **Gestisci le app**.
 
     ![Schermata del pannello Nuova richiesta di cancellazione dati](./media/intune-azure-preview-blade.png)
 

@@ -1,12 +1,12 @@
 ---
 title: Configurare e gestire i certificati PKCS con Intune
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune di Azure: informazioni su come configurare l&quot;infrastruttura e quindi creare e assegnare i certificati SCEP con Intune.'
+titleSuffix: Intune on Azure
+description: Informazioni su come configurare l'infrastruttura e quindi creare e assegnare i certificati PKCS con Intune."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 04/22/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16fa26ae8ed06c4959807b30e430fd69fc503936
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Configurare e gestire i certificati PKCS con Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Questo argomento illustra come configurare l'infrastruttura e quindi creare e assegnare profili certificato PKCS con Intune.
 
@@ -118,7 +115,7 @@ In questo passaggio verranno eseguite le operazioni seguenti:
 ### <a name="to-enable-support-for-the-certificate-connector"></a>Per abilitare il supporto per il Connettore di certificati
 
 1.  Accedere al portale Azure.
-2.  Scegliere **Altri servizi** > **Altro** > **Intune**.
+2.  Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3.  Nel pannello **Intune** scegliere **Configura i dispositivi**.
 2.  Nel pannello **Configurazione del dispositivo** scegliere **Installazione** > **Autorità di certificazione**.
 2.  Nel **passaggio 1** scegliere **Abilita**.
@@ -190,7 +187,8 @@ Nel portale di Azure selezionare il carico di lavoro **Configura i dispositivi**
         - **Nome comune**
         - **Nome comune incluso l'indirizzo di posta elettronica**
         - **Nome comune come indirizzo di posta elettronica**
-    - **Nome alternativo soggetto**: specificare in che modo Intune crea automaticamente i valori per il nome alternativo soggetto (SAN) nella richiesta certificato. Ad esempio, se si seleziona un tipo di certificato utente, è possibile includere il nome dell'entità utente (UPN) nel nome alternativo oggetto. Se il certificato client verrà usato per eseguire l'autenticazione in un server dei criteri di rete, è necessario impostare il nome alternativo oggetto sul nome dell'entità utente.
+    - **Nome alternativo soggetto**: specificare in che modo Intune crea automaticamente i valori per il nome alternativo soggetto (SAN) nella richiesta certificato. Ad esempio, se si seleziona un tipo di certificato utente, è possibile includere il nome dell'entità utente (UPN) nel nome alternativo oggetto. Se il certificato client viene usato per eseguire l'autenticazione in un server dei criteri di rete, impostare il nome alternativo oggetto sul nome dell'entità utente. 
+    È anche possibile selezionare **Custom Azure AD attribute** (Attributo Azure AD personalizzato). Quando si seleziona questa opzione, viene visualizzato un altro campo a discesa. Nel campo **Custom Azure AD attribute** (Attributo di Azure AD personalizzato) è disponibile una sola opzione **Reparto**. Quando si seleziona questa opzione, se il reparto non è identificato in Azure AD, il certificato non viene rilasciato. Per risolvere questo problema, identificare il reparto e salvare le modifiche. In occasione del successivo accesso del dispositivo, il problema viene risolto e il certificato viene rilasciato. ASN. 1 è la notazione usata per questo campo. 
     - **Utilizzo chiave esteso** (Android): scegliere **Aggiungi** per aggiungere valori per lo scopo designato del certificato. Nella maggior parte dei casi il certificato richiederà l' **Autenticazione Client** in modo che l'utente o il dispositivo possa eseguire l'autenticazione a un server. È comunque possibile aggiungere altri utilizzi di chiavi secondo necessità. 
     - **Certificato radice** (Android): scegliere un profilo del certificato radice della CA già configurato e assegnato all'utente o al dispositivo. Questo certificato CA deve essere il certificato radice per l'autorità di certificazione che rilascerà il certificato che si sta configurando in questo profilo certificato. Questo è il profilo certificato attendibile creato in precedenza.
 8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
@@ -208,4 +206,3 @@ Prima di assegnare i profili certificato ai gruppi, considerare quanto segue:
 - Sebbene ogni profilo venga assegnato separatamente, è necessario assegnare anche la CA radice attendibile e il profilo PKCS. In caso contrario, i criteri di certificato PKCS avranno esito negativo.
 
 Per informazioni su come assegnare profili, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
-

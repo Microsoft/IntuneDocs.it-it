@@ -1,5 +1,5 @@
 ---
-title: Configurare i criteri MAM nella console di Intune | Microsoft Docs
+title: Configurare i criteri MAM nella console di Intune
 description: "I criteri di gestione delle applicazioni mobili in Microsoft Intune consentono di modificare la funzionalità delle app distribuite per allinearle ai criteri aziendali di conformità e sicurezza."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65b2eb20aea4bbadba9d470590b6c344ac37b9f5
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurare e distribuire criteri di gestione delle applicazioni mobili nella console di Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,11 +43,10 @@ Per applicare restrizioni a un'app, questa deve includere Microsoft Intune App S
 
 -   **Usare un'app gestita da criteri**. Un'app gestita da criteri include App SDK. Per aggiungere questo tipo di applicazione, è possibile specificare un collegamento all'app da un archivio di app, ad esempio l'iTunes store o Google Play. Non sono richieste ulteriori elaborazioni per questo tipo di app. Per altre informazioni, vedere l'elenco delle [app che è possibile usare con i criteri di gestione delle applicazioni mobili di Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
--   **Usare un'app di cui è stato eseguito il wrapping**. Un'app di cui è stato eseguito il wrapping è un'app che è stata riassemblata in modo da includere App SDK usando lo strumento di wrapping delle app di Microsoft Intune. Questo strumento viene in genere usato per elaborare le app aziendali create internamente. Non può essere usato per elaborare app scaricate dall'App Store. Per altre informazioni, vedere [Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Usare un'app di cui è stato eseguito il wrapping**. Un'app di cui è stato eseguito il wrapping è un'app che è stata riassemblata in modo da includere App SDK usando lo strumento di wrapping delle app di Microsoft Intune. Questo strumento viene in genere usato per elaborare le app aziendali create internamente. Non può essere usato per elaborare app scaricate dall'App Store. Per altre informazioni, vedere [Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](/intune/app-wrapper-prepare-ios) e [Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune](/intune/app-wrapper-prepare-android).
 
-- **Sviluppare una propria app che includa Intune App SDK**. Intune App SDK consente di integrare in un'app funzionalità di gestione specifiche durante la fase di sviluppo. Per altre informazioni, vedere [Panoramica di Intune App SDK](/intune-classic/develop/intune-app-sdk).
-
-Per informazioni sulla scelta tra lo strumento di wrapping delle app e Intune App SDK, vedere [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+- **Sviluppare una propria app che includa Intune App SDK**. Intune App SDK consente di integrare in un'app funzionalità di gestione specifiche durante la fase di sviluppo. Per altre informazioni, vedere [Panoramica di Intune App SDK](/intune/app-sdk).
+/intune/apps-prepare-mobile-application-management Per informazioni sulla scelta tra lo strumento di wrapping delle app e Intune App SDK, vedere [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
 Alcune app gestite, ad esempio l'app Outlook per iOS e Android, supportano *più identità*. Questo significa che Intune si applica solo alle impostazioni di gestione di account aziendali o dati all'interno dell'applicazione.
 
@@ -197,4 +193,3 @@ Nei casi in cui il dispositivo o l'utente riceva due criteri in conflitto, si ap
 -   Se un criterio è già stato distribuito al dispositivo, le impostazioni di criteri esistenti non vengono sovrascritte.
 
 -   Se al dispositivo non è stato ancora distribuito alcun criterio e vengono distribuite due impostazioni in conflitto, viene usata l'impostazione predefinita del dispositivo.
-

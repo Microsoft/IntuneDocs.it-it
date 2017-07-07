@@ -1,5 +1,5 @@
 ---
-title: Impostazioni dei criteri di iOS | Documentazione Microsoft
+title: Impostazioni dei criteri di iOS
 description: "Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi iOS gestiti con Intune."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3a59391aaf241e52f59bb3ff5de3eae84c496c51
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di iOS in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,7 +85,7 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |**Consenti alle app gestite di sincronizzare i dati in iCloud**|Consentire alle app gestite con Intune di sincronizzare i dati con l'account iCloud dell'utente.|
 |**Consenti a Handoff di continuare le attività in un altro dispositivo**|Consentire all'utente di proseguire il lavoro iniziato in un dispositivo iOS in un altro dispositivo iOS o Mac OS X.|
 |**Consenti la condivisione di foto con iCloud**|Impostare su **No** per disabilitare **Condivisione foto di iCloud** nel dispositivo.|
-|**Consenti la raccolta di foto con iCloud**|Se impostata su **No**, disabilita l'uso della libreria foto di iCloud che consente agli utenti di archiviare foto e video nel cloud.    Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo verranno rimosse dal dispositivo se questa opzione è impostata su **No**.|
+|**Consenti la raccolta di foto con iCloud**|Se impostata su **No**, disabilita l'uso della libreria foto di iCloud che consente agli utenti di archiviare foto e video nel cloud.   Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo verranno rimosse dal dispositivo se questa opzione è impostata su **No**.|
 
 ### <a name="application-settings-for-the-browser"></a>Impostazioni dell'applicazione per il browser
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
@@ -387,4 +384,3 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 
 ### <a name="see-also"></a>Vedere anche
 [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

@@ -1,11 +1,11 @@
 ---
-title: Risolvere i problemi di registrazione dei dispositivi | Microsoft Docs
+title: Risolvere i problemi di registrazione dei dispositivi
 description: Suggerimenti per la risoluzione dei problemi di registrazione dei dispositivi.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e72051f9318d24ed36fc39ea6645041f0a150a40
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,11 +31,11 @@ Questo argomento contiene suggerimenti per la risoluzione dei problemi di regist
 
 Prima di iniziare la risoluzione dei problemi, verificare di aver configurato Intune correttamente per consentire la registrazione. Per informazioni su tali requisiti di configurazione, vedere:
 
--    [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](/intune-classic/deploy-use/prerequisites-for-enrollment)
--    [Configurare la gestione dei dispositivi iOS e Mac](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Configurare la gestione dei dispositivi Windows](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--    [Configurare la gestione dei dispositivi Android](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - Non sono necessari passaggi aggiuntivi
--    [Configurare la gestione dei dispositivi Android for Work](/intune-classic/deploy-use/set-up-android-for-work)
+-   [Prepararsi alla registrazione dei dispositivi in Microsoft Intune](/intune-classic/deploy-use/prerequisites-for-enrollment)
+-   [Configurare la gestione dei dispositivi iOS e Mac](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [Configurare la gestione dei dispositivi Windows](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-   [Configurare la gestione dei dispositivi Android](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - Non sono necessari passaggi aggiuntivi
+-   [Configurare la gestione dei dispositivi Android for Work](/intune-classic/deploy-use/set-up-android-for-work)
 
 Gli utenti dei dispositivi gestiti possono raccogliere log di registrazione e diagnostica da sottoporre all'analisi dell'amministratore. Le istruzioni per raccogliere i log sono disponibili nell'articolo:
 
@@ -110,8 +107,8 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 
 1.  Verificare che l'autorità MDM sia impostata correttamente per il tipo di servizio Intune in uso, ovvero Intune, Office 365 o System Center Configuration Manager con Intune. Per Intune, l'autorità MDM è impostata in **Amministratore** &gt; **Gestione dei dispositivi mobili**. Per Configuration Manager con Intune, è necessario impostare l'autorità MDM quando si configura il connettore Intune, mentre in Office 365 è un'impostazione di **Dispositivi mobili**.
 
-    > [!NOTE]
-    > Dopo aver impostato l'autorità MDM, è possibile modificarla solo contattando il supporto tecnico, come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+    > [!NOTE]    
+    > In Configuration Manager versione 1610 o successiva e Microsoft Intune versione 1705 è possibile modificare l'autorità MDM senza dover contattare il supporto Microsoft e senza che sia necessario annullare la registrazione dei dispositivi gestiti esistenti e quindi eseguirla di nuovo. Per informazioni dettagliate, vedere [Cosa fare se si sceglie l'impostazione dell'autorità MDM sbagliata](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 2.  Verificare che le credenziali dell'utente siano sincronizzate correttamente con Azure Active Directory, controllando che il nome dell'entità utente corrisponda alle informazioni di Active Directory nel portale di Office 365.
     Se il nome dell'entità utente non corrisponde alle informazioni di Active Directory:
@@ -230,16 +227,16 @@ L'errore di certificato si verifica perché i dispositivi Android richiedono l'i
 
 Per risolvere il problema, importare i certificati nei certificati personali del computer sul server ADFS o proxy, come indicato di seguito:
 
-1.    Nei server ADFS e proxy, avviare la console Gestione certificati per il computer locale facendo clic con il pulsante destro del mouse **Start** scegliendo **Esegui** e digitando **certlm.msc**.
-2.    Espandere **Personale** e selezionare **Certificati**.
-3.    Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
-4.    Selezionare la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
-5.    Per ogni certificato padre, selezionare **Visualizza certificato**.
-6.    Selezionare la scheda **Dettagli** e fare clic su **Copia su file...**.
-7.    Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato nel percorso file desiderato.
-8.    Importare i certificati padre che erano stati esportati al passaggio 3 in Computer locale\Personale\Certificati facendo clic su **Certificati**, selezionando **Tutte le attività** > **Importa** e quindi seguire la procedura guidata per importare il certificato (o i certificati).
-9.    Riavviare i server ADFS.
-10.    Ripetere i passaggi precedenti in tutti i server ADFS e proxy.
+1.  Nei server ADFS e proxy, avviare la console Gestione certificati per il computer locale facendo clic con il pulsante destro del mouse **Start** scegliendo **Esegui** e digitando **certlm.msc**.
+2.  Espandere **Personale** e selezionare **Certificati**.
+3.  Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
+4.  Selezionare la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
+5.  Per ogni certificato padre, selezionare **Visualizza certificato**.
+6.  Selezionare la scheda **Dettagli** e fare clic su **Copia su file...**.
+7.  Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato nel percorso file desiderato.
+8.  Importare i certificati padre che erano stati esportati al passaggio 3 in Computer locale\Personale\Certificati facendo clic su **Certificati**, selezionando **Tutte le attività** > **Importa** e quindi seguire la procedura guidata per importare il certificato (o i certificati).
+9.  Riavviare i server ADFS.
+10. Ripetere i passaggi precedenti in tutti i server ADFS e proxy.
 L'utente può ora accedere al Portale aziendale nel dispositivo Android.
 
 **Per convalidare la corretta installazione del certificato**:
@@ -261,10 +258,10 @@ La tabella seguente elenca gli errori che potrebbero verificarsi quando gli uten
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|Non sono stati trovati criteri di registrazione|Verificare che siano stati configurati tutti i prerequisiti di registrazione, ad esempio il certificato APNS (Apple Push Notification Service), e che sia abilitato "iOS come piattaforma". Per le istruzioni, vedere [Configurare la gestione dei dispositivi iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceCapReached|Sono già stati registrati troppi dispositivi mobili.|L'utente deve rimuovere dal Portale aziendale uno dei dispositivi mobili attualmente registrati prima di poterne registrare un altro. Vedere le istruzioni relative al tipo di dispositivo in uso: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios) o [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Si è verificato un problema con il certificato che consente al dispositivo mobile di comunicare con la rete aziendale.<br /><br />|Apple Push Notification Service (APNS) offre un canale per contattare i dispositivi iOS registrati. Se non sono state eseguite le procedure per ottenere un certificato APNS o se il certificato è scaduto, i tentativi di registrazione avranno esito negativo e verrà visualizzato questo messaggio.<br /><br />Esaminare le informazioni sulla configurazione degli utenti in [Sincronizzare Active Directory e aggiungere utenti a Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) e [Organizzazione di utenti e dispositivi](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
+|APNSCertificateNotValid|Si è verificato un problema con il certificato che consente al dispositivo mobile di comunicare con la rete aziendale.<br /><br />|Apple Push Notification Service (APNS) offre un canale per contattare i dispositivi iOS registrati. Se non sono state eseguite le procedure per ottenere un certificato APNS o se il certificato è scaduto, i tentativi di registrazione avranno esito negativo e verrà visualizzato questo messaggio.<br /><br />Esaminare le informazioni sulla configurazione degli utenti in [Sincronizzare Active Directory e aggiungere utenti a Intune](/intune/users-permissions-add) e [Organizzazione di utenti e dispositivi](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |AccountNotOnboarded|Si è verificato un problema con il certificato che consente al dispositivo mobile di comunicare con la rete aziendale.<br /><br />|Apple Push Notification Service (APNS) offre un canale per contattare i dispositivi iOS registrati. Se non sono state eseguite le procedure per ottenere un certificato APNS o se il certificato è scaduto, i tentativi di registrazione avranno esito negativo e verrà visualizzato questo messaggio.<br /><br />Per altre informazioni, vedere [Configurare la gestione dei dispositivi iOS e Mac con Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceTypeNotSupported|È possibile che l'utente abbia cercato di eseguire la registrazione con un dispositivo non iOS. Il tipo di dispositivo mobile che si sta provando a registrare non è supportato.<br /><br />Verificare che il dispositivo esegua iOS 8.0 o versione successiva.<br /><br />|Verificare che nel dispositivo dell'utente sia in esecuzione iOS 8.0 o versione successiva.|
-|UserLicenseTypeInvalid|Il dispositivo non può essere registrato perché l'account utente non è ancora membro di un gruppo di utenti richiesto.<br /><br />|Per poter registrare i loro dispositivi, gli utenti devono essere membri del gruppo di utenti appropriato. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili designata. Questo errore di Intune viene visualizzato, ad esempio, se Intune è stato designato come autorità di gestione dei dispositivi mobili e l'utente usa una licenza per System Center 2012 R2 Configuration Manager.<br /><br />Per altre informazioni, vedere quanto segue:<br /><br />Vedere l'articolo [Configurare la gestione dei dispositivi iOS e Mac con Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) e le informazioni sulla configurazione degli utenti in [Sincronizzare Active Directory e aggiungere utenti a Intune](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3) e [Organizzazione di utenti e dispositivi](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
+|UserLicenseTypeInvalid|Il dispositivo non può essere registrato perché l'account utente non è ancora membro di un gruppo di utenti richiesto.<br /><br />|Per poter registrare i loro dispositivi, gli utenti devono essere membri del gruppo di utenti appropriato. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili designata. Questo errore di Intune viene visualizzato, ad esempio, se Intune è stato designato come autorità di gestione dei dispositivi mobili e l'utente usa una licenza per System Center 2012 R2 Configuration Manager.<br /><br />Per altre informazioni, vedere quanto segue:<br /><br />Vedere l'articolo [Configurare la gestione dei dispositivi iOS e Mac con Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) e le informazioni sulla configurazione degli utenti in [Sincronizzare Active Directory e aggiungere utenti a Intune](/intune/users-permissions-add) e [Organizzazione di utenti e dispositivi](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |MdmAuthorityNotDefined|L'autorità di gestione dei dispositivi mobili non è stata definita.<br /><br />|L'autorità di gestione dei dispositivi mobili non è stata designata in Intune.<br /><br />Rivedere il primo punto del "Passaggio 6: Registrare dispositivi mobili e installare un'app" in [Iniziare con una versione di valutazione gratuita di 30 giorni di Microsoft Intune](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>I dispositivi sono inattivi o la console di amministrazione non è in grado di comunicare con i dispositivi
@@ -413,4 +410,3 @@ Nella sezione relativa agli [errori che si verificano durante la registrazione d
 
 ### <a name="next-steps"></a>Passaggi successivi
 Se queste informazioni per la risoluzione dei problemi non sono utili, contattare il supporto Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
-

@@ -1,6 +1,6 @@
 ---
-title: Usare la cancellazione remota per proteggere i dati | Documentazione Microsoft
-description: "Intune offre funzionalità di cancellazione selettiva e completa per rimuovere i dati aziendali riservati e impedire l&quot;accesso a numerose risorse aziendali."
+title: Usare la cancellazione remota per proteggere i dati
+description: "Intune offre funzionalità di cancellazione selettiva e completa per rimuovere i dati aziendali riservati e impedire l'accesso a numerose risorse aziendali."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b3aeb3e81a14b0c5e461422741d62c02ab635f7e
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9d03f3936d608b9d526724eccbbdadbe030b53b8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Proteggere i dati con la cancellazione selettiva o completa tramite Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -172,4 +169,3 @@ Questo report mostra anche chi ha eseguito l'azione.
 [Ritirare i dispositivi](retire-devices-from-microsoft-intune-management.md)
 
 [Cancellazione selettiva di Windows per la gestione di dati del dispositivo](http://technet.microsoft.com/library/dn486874.aspx)
-

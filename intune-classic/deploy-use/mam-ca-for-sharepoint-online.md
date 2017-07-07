@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 531b09bb-ddfd-498f-8ee3-6675d2466208
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2d9065281436d4c44e6af7d7a4401786a2a01965
-ms.contentlocale: it-it
-ms.lasthandoff: 05/31/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-app-based-conditional-access-ca-policies-for-sharepoint-online"></a>Configurare criteri di accesso condizionale basato su app per SharePoint Online
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
@@ -81,4 +78,3 @@ Questo argomento contiene le linee guida per la configurazione di criteri di acc
 [Proteggere i dati delle app con i criteri di protezione delle app](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Configurare l'accesso condizionale basato su app per Exchange Online](mam-ca-for-exchange-online.md)
-
