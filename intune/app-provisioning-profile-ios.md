@@ -1,7 +1,7 @@
 ---
-title: Profili di provisioning dell&quot;app | Documentazione Microsoft
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: Intune offre gli strumenti per assegnare in modo proattivo un nuovo profilo di provisioning ai dispositivi con app prossime alla scadenza.'
+title: Profili di provisioning delle app
+titleSuffix: Intune on Azure
+description: Intune offre gli strumenti per assegnare in modo proattivo un nuovo profilo di provisioning ai dispositivi con app prossime alla scadenza."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 966c097280ebebac68749e71c20381ee816360da
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bf2da880f0f092b9948a400f6a10bd9ad032f959
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Usare i profili di provisioning per dispositivi mobili iOS per impedire la scadenza delle app
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introduzione
 
@@ -42,7 +40,7 @@ Dopo la scadenza del certificato, è necessario firmare nuovamente l'app con un 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Come creare un profilo di provisioning per dispositivi mobili iOS
 
 1. Accedere al portale Azure.
-2. Scegliere **Altri servizi** > **Altro** > **Intune**.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
 1.  Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **Profili di provisioning di iOS**.
 2.  Nell'elenco del pannello dei profili scegliere **Crea profilo**.
@@ -55,4 +53,3 @@ Dopo la scadenza del certificato, è necessario firmare nuovamente l'app con un 
 ## <a name="next-steps"></a>Passaggi successivi
 
 Assegnare il profilo ai dispositivi iOS richiesti. Per altre informazioni, vedere la procedura in [Come assegnare i profili di dispositivo](device-profile-assign.md).
-

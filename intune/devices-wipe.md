@@ -1,12 +1,12 @@
 ---
 title: Cancellazione completa o selettiva sui dispositivi con Intune
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni sulle modalità per eseguire la cancellazione selettiva dei dati aziendali su un dispositivo o per eseguire la cancellazione completa per il ripristino delle impostazioni predefinite del dispositivo."
+titleSuffix: Intune on Azure
+description: "Informazioni sulle modalità per eseguire la cancellazione selettiva dei dati aziendali su un dispositivo o per eseguire la cancellazione completa per il ripristino delle impostazioni predefinite del dispositivo.\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8233ba1b5ea05a46f46219d98625e4d4bea6bb9
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-full-or-selective-wipe"></a>Usare la cancellazione completa o selettiva
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 È possibile cancellare app e dati non più necessari dai dispositivi gestiti da Intune che vengono reimpiegati o sono andati persi. A tale scopo, Intune offre funzionalità di cancellazione completa e selettiva. Gli utenti possono anche inviare un comando di cancellazione remota dei dati del dispositivo dall'app Portale aziendale di Intune nei dispositivi privati registrati in Intune.
 
@@ -101,8 +98,8 @@ La **cancellazione selettiva** rimuove i dati aziendali, compresi i dati sulla g
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso.|Rimosso.|
 |Impostazioni del profilo certificato|Certificati revocati, ma non rimossi.|Certificati rimossi e revocati.|
 |Agente di gestione|Il privilegio di amministratore del dispositivo viene revocato.|Il privilegio di amministratore del dispositivo viene revocato.|
-|Posta elettronica|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per Android vengono rimossi.|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|
-|Outlook|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|
+|Posta elettronica|n/a (i profili di posta elettronica non sono supportati dai dispositivi Android)|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|
+|Outlook|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per Android vengono rimossi.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per Android vengono rimossi.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|
 |Separazione di Azure Active Directory (AAD)|Il record AAD viene rimosso.|Il record AAD viene rimosso.|
 |Contatti | I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. <br /> <br />Attualmente è supportata solo l'app Outlook.|I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. <br /> <br />Attualmente è supportata solo l'app Outlook.
 
@@ -130,4 +127,3 @@ L'esecuzione di una cancellazione selettiva in un dispositivo Android for Work c
 3.  Nel pannello che mostra il nome del dispositivo scegliere **Rimuovi i da...** (abbreviazione di Rimuovi i dati aziendali), quindi scegliere **Sì** per confermare la cancellazione.
 
 Se il dispositivo è acceso e connesso, un comando di cancellazione non richiede più di 15 minuti per propagarsi a tutti i tipi di dispositivo.
-
