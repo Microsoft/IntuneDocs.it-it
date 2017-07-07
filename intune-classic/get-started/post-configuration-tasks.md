@@ -14,15 +14,12 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a3a928e1b3ed6cd0bdfdaeee1da383c8e2183885
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="post-configuration-tasks"></a>Attività successive alla configurazione
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,4 +31,3 @@ Dopo aver completato la procedura iniziale di configurazione per una sottoscrizi
 -   **Report di Intune:** Microsoft Intune fornisce avvisi e report che è possibile usare per monitorare i dispositivi, nonché lo stato delle licenze software e le azioni che interessano i dispositivi, ad esempio la cancellazione di un dispositivo.  Per altre informazioni sui report, vedere [Understand Microsoft Intune operations by using reports](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports) (Acquisire informazioni sulle operazioni di Microsoft Intune tramite report).
 
 -   **Protezione delle risorse aziendali:** dopo aver configurato Intune e registrato i dispositivi, è opportuno verificare che siano protetti dalla perdita di dati e da altre minacce. Per altre informazioni sulla protezione delle risorse, vedere [Proteggere app e dati con Microsoft Intune](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune).
-

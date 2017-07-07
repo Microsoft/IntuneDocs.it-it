@@ -1,12 +1,12 @@
 ---
 title: Come configurare le impostazioni di posta elettronica di Intune
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: informazioni su come configurare Intune per creare connessioni alla posta elettronica aziendale nei dispositivi gestiti.'
+titleSuffix: Intune on Azure
+description: Informazioni su come configurare Intune per creare connessioni alla posta elettronica aziendale nei dispositivi gestiti."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8e22d95dbaa51e8a799c771ec2cfe34f09e527d8
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ae3e8ec9f9c791d536fe311bc4d30cae41b9482
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Come configurare le impostazioni di posta elettronica in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 È possibile usare i profili di posta elettronica per configurare i dispositivi gestiti con le impostazioni necessarie per connettersi e sincronizzarsi con la posta elettronica aziendale. Ciò consente di garantire che le impostazioni siano standard in tutti i dispositivi e anche di ridurre le chiamate al servizio di supporto da parte di utenti finali che non conoscono le impostazioni di posta elettronica corrette.
 
@@ -45,19 +42,20 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 ## <a name="create-a-device-profile-containing-email-settings"></a>Creare un profilo dispositivo contenente le impostazioni di posta elettronica
 
 1. Accedere al portale Azure.
-2. Scegliere **Altri servizi** > **Altro** > **Intune**.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 3. Nel pannello dei profili scegliere **Crea profilo**.
 4. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** per il profilo di posta elettronica.
 5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma del dispositivo a cui si desiderano applicare le impostazioni di posta elettronica. Attualmente, è possibile scegliere una tra le piattaforme seguenti per le impostazioni del dispositivo di posta elettronica:
-    - **Android**
+    - **Android** (solo Samsung Android KNOX Standard)
+    - **Android for Work**
     - **iOS**
     - **Windows Phone 8.1**
     - **Windows 10 e versioni successive**
 6. Dall'elenco a discesa dei tipi di **profilo** scegliere **Posta elettronica**.
 7. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli argomenti seguenti per il dettaglio delle impostazioni di ogni piattaforma:
-    - [Impostazioni Android](email-settings-android.md)
+    - [Impostazioni Android for Work e Samsung KNOX Standard](email-settings-android.md)
     - [Impostazioni iOS](email-settings-ios.md)
     - [Impostazioni Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Impostazioni Windows 10](email-settings-windows-10.md)
@@ -88,10 +86,10 @@ Se l'utente ha già configurato un account di posta elettronica, il risultato de
 
 - **iOS:** un profilo di posta elettronica esistente duplicato viene individuato in base al nome host e all'indirizzo di posta elettronica. Il profilo di posta elettronica duplicato blocca l'assegnazione di un profilo di Intune. In questo caso il portale aziendale comunica all'utente che esiste un problema di conformità e richiede quindi di rimuovere il profilo. Per evitare il problema, indicare agli utenti di eseguire la registrazione prima di installare un profilo di posta elettronica e di consentire a Intune di impostarlo.
 - **Windows:** un profilo di posta elettronica esistente duplicato viene individuato in base al nome host e all'indirizzo di posta elettronica. Intune sovrascrive il profilo di posta elettronica esistente creato dall'utente.
-- **Android** un profilo di posta elettronica esistente duplicato viene individuato sulla base dell'indirizzo di posta elettronica e viene sovrascritto con il profilo di Intune.
+- **Android Samsung KNOX Standard**: un profilo di posta elettronica esistente duplicato viene individuato sulla base dell'indirizzo di posta elettronica e viene sovrascritto con il profilo di Intune.
 Poiché Android non usa il nome host per identificare il profilo, si consiglia di non creare diversi profili di posta elettronica da usare con lo stesso indirizzo di posta elettronica su host diversi perché tali profili si sovrascrivono a vicenda.
+- **Android for Work** Intune offre due profili di posta elettronica Android for Work, uno per Gmail e uno per Nine Work. Queste app sono disponibili in Google Play Store e vengono installate nel profilo di lavoro del dispositivo, quindi possono subentrare profili duplicati. Entrambe le app supportano le connessioni a Exchange. Per abilitare la connettività della posta elettronica, distribuire una di queste app nei dispositivi dell'utente. In seguito creare e distribuire il profilo di posta elettronica corrispondente. Le app di posta elettronica, ad esempio Nine Work, potrebbero non essere gratuite. Rivedere i dettagli relativi alla licenza dell'app o contattare l'azienda produttrice per richiedere informazioni.
 
 ### <a name="update-an-email-profile"></a>Aggiornare un profilo di posta elettronica
 
 Se si apportano modifiche a un profilo di posta elettronica assegnato in precedenza, è possibile che un messaggio richieda agli utenti finali di approvare la riconfigurazione delle impostazioni di posta elettronica.
-

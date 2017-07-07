@@ -1,5 +1,5 @@
 ---
-title: Cancellazione dei dispositivi mobili gestiti da Exchange | Documentazione Microsoft
+title: Cancellazione dei dispositivi mobili gestiti da Exchange
 description: Microsoft Intune consente di cancellare o ripristinare i dispositivi mobili gestiti usando Exchange ActiveSync (EAS) con Intune Exchange Connector
 keywords: 
 author: andredm7
@@ -14,17 +14,13 @@ ms.assetid: e116b620-1e12-4b5c-9905-2f7acf2ae530
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4b0914ab12456fd3ad5f957d68a59df9de539176
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 665f57a4cdb25c1e9f2bef7f1c25f284589df16f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
-# <a name="wipe-for-exchange-managed-mobile-devices"></a>Wipe for Exchange-managed mobile devices
+# <a name="wipe-for-exchange-managed-mobile-devices"></a>Cancellazione dei dispositivi mobili gestiti da Exchange
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -35,4 +31,3 @@ Microsoft Intune consente di cancellare o ripristinare i dispositivi mobili gest
 |Cancellazione completa|Rimuove l'account di posta elettronica e i messaggi di posta elettronica memorizzati nella cache.|Ripristino delle impostazioni predefinite.|Ripristino delle impostazioni predefinite.|
 |Cancellazione selettiva/posta elettronica|Rimuove l'account di posta elettronica.|Non supportata.|Non supportata.|
 |Cancellazione selettiva/criteri|L'applicazione dei criteri viene rimossa, ma non vengono modificate le impostazioni|L'applicazione dei criteri viene rimossa, ma non vengono modificate le impostazioni.|L'applicazione dei criteri viene rimossa, ma le impostazioni non vengono modificate.|
-

@@ -1,5 +1,5 @@
 ---
-title: Monitorare i criteri MAM con Microsoft Intune | Documentazione Microsoft
+title: Monitorare i criteri MAM con Microsoft Intune
 description: Vedere quanti utenti dispongono di criteri ed eseguire il drill-down per accedere ad altri dettagli.
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Monitorare i criteri di protezione delle app con Microsoft Intune
 È possibile monitorare lo stato di conformità dei criteri di protezione delle app applicati agli utenti. Sono disponibili informazioni sugli utenti interessati dai criteri di protezione delle app, sullo stato di conformità e su eventuali problemi riscontrati dagli utenti.
 
@@ -134,6 +131,5 @@ Seguire questi passaggi per generare il report sulla protezione delle app:
 ## <a name="see-also"></a>Vedere anche
 [Gestire il trasferimento di dati tra app iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](/intune/end-user-mam-apps-android)
+* [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](/intune/end-user-mam-apps-ios)

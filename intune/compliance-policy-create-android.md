@@ -1,7 +1,7 @@
 ---
 title: "Come creare un criterio di conformità per Android"
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni sulle modalità di creazione dei criteri di conformità per i dispositivi Android."
+titleSuffix: Intune on Azure
+description: "Informazioni sulle modalità di creazione dei criteri di conformità per i dispositivi Android.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,21 +15,18 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 08d503fad2304b25e6feb7f41cf0b93546dd26fd
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc68bf4a52e5fcf9a8fbb3550a5bee814f4f46f0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi Android in Intune
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Come creare i criteri di conformità per i dispositivi Android nel portale di anteprima di Intune in Azure
 
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-I criteri di conformità dei dispositivi vengono creati per ogni piattaforma dal portale di anteprima di Intune in Azure. 
+I criteri di conformità dei dispositivi vengono creati per ogni piattaforma dal portale di Intune in Azure. 
 
 - Per altre informazioni sui criteri di conformità consultare l'argomento [What is a device compliance](device-compliance.md)(Che cos'è la conformità dei dispositivi).
 - Per altre informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, consultare l'argomento [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
@@ -134,4 +131,3 @@ La tabella seguente descrive il modo in cui vengono gestite le impostazioni di n
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

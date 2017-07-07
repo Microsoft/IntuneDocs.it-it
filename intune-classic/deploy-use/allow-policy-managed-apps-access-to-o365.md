@@ -1,6 +1,6 @@
 ---
 title: Accesso condizionale basato su app a Office 365
-description: "Informazioni su come l&quot;accesso condizionale per la gestione delle app per dispositivi mobili può essere usato per controllare le app che hanno accesso ai servizi di Office 365."
+description: "Informazioni su come l'accesso condizionale per la gestione delle app per dispositivi mobili può essere usato per controllare le app che hanno accesso ai servizi di Office 365."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,15 +14,12 @@ ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8fc53e8717277a4075bc7ecde31fd60c3539a5f7
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Consentire l'accesso ai servizi di Office 365 solo alle app per dispositivi mobili che supportano i criteri di protezione delle app di Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -70,4 +67,3 @@ Per informazioni sull'esperienza utente con un'app che usa criteri di accesso co
 ### <a name="see-also"></a>Vedere anche
 
 [Proteggere i dati delle app con i criteri di protezione delle app](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

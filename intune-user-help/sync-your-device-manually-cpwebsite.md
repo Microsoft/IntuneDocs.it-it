@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ce2404fd5e26c00a6a9ced83bc6501e2074bffce
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="sync-your-device-with-the-company-portal-website"></a>Sincronizzare il dispositivo con il sito Web del portale aziendale
 
 In alcuni casi l'installazione di un'app o l'esecuzione di un'altra attività può richiedere più tempo rispetto al normale. Se impiega troppo tempo, provare a sincronizzare manualmente il dispositivo per accelerare le operazioni.
@@ -38,4 +33,3 @@ In alcuni casi l'installazione di un'app o l'esecuzione di un'altra attività pu
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
 * [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-81)
-

@@ -1,7 +1,7 @@
 ---
 title: "Conformità del dispositivo"
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: usare questo argomento per informazioni sulla conformità del dispositivo in Microsoft Intune"
+titleSuffix: Intune on Azure
+description: "Usare questo argomento per informazioni sulla conformità dei dispositivi in Microsoft Intune\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,18 +15,15 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2aec7463b9a2b3bdaa78281fca0bbb39dcd3f884
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a747d577a28433635883ad6c4fe4c858e75902d0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="what-is-device-compliance-in-intune"></a>Che cos'è la conformità dei dispositivi in Intune?
 
-# <a name="what-is-device-compliance-in-intune-azure-preview"></a>Che cos'è la conformità dei dispositivi nell'anteprima di Intune in Azure?
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 I criteri di conformità dei dispositivi in Intune definiscono le regole e le impostazioni a cui un dispositivo deve adeguarsi per essere considerato conforme in base ai criteri di accesso condizionale di Intune ed EMS. È anche possibile usare questi criteri per monitorare e correggere i problemi di conformità dei dispositivi. 
 
@@ -79,7 +76,7 @@ In tal caso, i dispositivi vengono valutati e segnalati in base allo stato di co
 
 I criteri di conformità vengono distribuiti agli utenti. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata sui dispositivi dell’utente. Per informazioni sul tempo necessario ai dispositivi mobili per ottenere un criterio dopo la distribuzione, vedere Gestire impostazioni e funzionalità nei dispositivi.
 
-##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Confronto tra la console di amministrazione classica di Intune e il portale di anteprima di Intune in Azure
+##  <a name="intune-classic-admin-console-vs-intune-on-the-azure-portal"></a>Confronto tra la console di amministrazione classica di Intune Intune nel portale di Azure
 
 Se si è usata la console di amministrazione classica di Intune, è opportuno tenere presenti le differenze seguenti per facilitare la transizione al nuovo flusso di lavoro dei criteri di conformità dei dispositivi nel portale di Azure:
 
@@ -89,7 +86,7 @@ Se si è usata la console di amministrazione classica di Intune, è opportuno te
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Migrazione dalla console classica di Intune al portale di anteprima di Intune di Azure
+##  <a name="migration-from-intune-classic-console-to-intune-on-the-azure-portal"></a>Migrazione dalla console classica di Intune a Intune nel portale di Azure
 
 I criteri di conformità dei dispositivi creati nella [console classica di Intune](https://manage.microsoft.com) non verranno visualizzati nel nuovo [portale di Intune di Azure](https://portal.azure.com). Tali criteri saranno comunque ancora destinati agli utenti e gestibili tramite la console classica di Intune.
 
@@ -103,4 +100,3 @@ Per sfruttare le nuove funzionalità correlate alle conformità dei dispositivi 
 <!---### See also
 
 Conditional access--->
-

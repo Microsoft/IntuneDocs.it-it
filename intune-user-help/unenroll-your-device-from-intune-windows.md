@@ -11,31 +11,26 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 10e6bda2001b5dfeb380e9a553aa0fe5a060746b
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-windows-device-from-intune"></a>Annullare la registrazione del dispositivo Windows da Intune
 
 Se è stata eseguita la registrazione in Intune, ma non si vuole più usare il dispositivo Windows per le attività aziendali o scolastiche e non è più necessario l'accesso alla posta elettronica, alle app o ad altre risorse dell'azienda o dell'istituto di istruzione, annullare la registrazione del dispositivo. Dopo aver annullato la registrazione del dispositivo in Intune, non sarà più possibile accedere a tali risorse. Per altre informazioni su cosa accade quando viene annullata la registrazione del dispositivo, vedere [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 
 Per annullare la registrazione del dispositivo, usare il collegamento corrispondente al tipo di dispositivo in uso illustrato nella sezione precedente "Contenuto dell'articolo":
 
--    [Annullare la registrazione di un dispositivo Windows 10](#unenroll-your-windows-10-device)
--    [Annullare la registrazione di un computer Windows 8.1](#unenroll-your-windows-81-computer)
--    [Annullare la registrazione di un dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-81-device)
+-   [Annullare la registrazione di un dispositivo Windows 10](#unenroll-your-windows-10-device)
+-   [Annullare la registrazione di un computer Windows 8.1](#unenroll-your-windows-81-computer)
+-   [Annullare la registrazione di un dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-81-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Annullare la registrazione di un dispositivo Windows 10
 
@@ -68,4 +63,3 @@ Per annullare la registrazione del dispositivo, usare il collegamento corrispond
 4.  Nella finestra di dialogo **Elimina account** toccare **Elimina**.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

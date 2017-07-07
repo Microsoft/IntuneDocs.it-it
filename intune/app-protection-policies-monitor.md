@@ -1,7 +1,7 @@
 ---
 title: Come monitorare i criteri di protezione delle app
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: Vedere quanti utenti dispongono di criteri ed eseguire il drill-down per accedere ad altri dettagli.'
+titleSuffix: Intune on Azure
+description: Vedere quanti utenti dispongono di criteri ed eseguire il drill-down per accedere ad altri dettagli."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,19 +15,16 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1e7294e5c7bb1136718ca6d651d9375a22796fa7
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Se non ci si trova nell'anteprima di Intune in Azure**, questo argomento spiega [come creare i criteri di protezione delle app](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) nella console di Intune classica.
+**Se non ci si trova nel portale di Azure**, questo argomento spiega [come creare i criteri di protezione delle app](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) nella console di Intune classica.
 
 
 È possibile monitorare lo stato di conformità dei criteri di gestione delle app mobili (MAM) applicati agli utenti nel pannello di protezione delle app di Intune nel [portale di Azure](https://portal.azure.com). Verranno visualizzate informazioni sugli utenti interessati dai criteri MAM, lo stato di conformità ed eventuali problemi riscontrati dagli utenti.
@@ -43,7 +40,7 @@ Lo stato di conformità può essere monitorato in tre posizioni diverse:
 ## <a name="summary-view"></a>Visualizzazione di riepilogo
 
 1. Accedere al portale Azure.
-2. Scegliere **Altri servizi** > **Altro** > **Intune**.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
 4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Monitoraggio** > **Stato dell'utente con protezione delle app** per esaminare la visualizzazione di riepilogo:
 
@@ -139,4 +136,3 @@ Seguire questi passaggi per generare il report sulla protezione delle app:
 
 * [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](app-protection-enabled-apps-android.md)
 * [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](app-protection-enabled-apps-ios.md)
-

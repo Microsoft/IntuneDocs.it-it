@@ -1,7 +1,7 @@
 ---
 title: Registrare i dispositivi iOS con Apple Configurator e registrazione diretta
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni su come usare lo strumento Apple Configurator per registrare i dispositivi iOS di proprietà dell&quot;azienda con la registrazione diretta."
+titleSuffix: Intune on Azure
+description: "Informazioni su come usare lo strumento Apple Configurator per registrare i dispositivi iOS di proprietà dell'azienda con la registrazione diretta.\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5347e2023a9ce19f8e8ab960e2eebf8107530220
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: dd856cc3c9d11d1079c6092025200059f0ace437
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-and-direct-enrollment"></a>Registrare i dispositivi iOS con Apple Configurator e registrazione diretta 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune supporta la registrazione di dispositivi iOS di proprietà dell'azienda con lo strumento [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) in esecuzione in un computer Mac. Questo processo non ripristina le impostazioni predefinite del dispositivo e lo registra con un criterio predefinito. Questo metodo è destinato ai dispositivi con **nessuna affinità utente** e richiede la connessione USB del dispositivo iOS a un computer Mac per configurare la registrazione aziendale.
 
@@ -42,7 +39,7 @@ Altri metodi per la registrazione di dispositivi iOS sono descritti in [Choose h
 
 Completare i prerequisiti seguenti prima di configurare la registrazione di dispositivi iOS:
 
-- [Configurare i domini](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
+- [Configurare i domini](custom-domain-name-configure.md)
 - [Impostare l'autorità MDM](mdm-authority-set.md)
 - [Creare i gruppi](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [Configurare il Portale aziendale](company-portal-app.md)
@@ -102,4 +99,3 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 4. Nel dispositivo iOS aprire la finestra **Impostazioni** e passare a **Generale**  >  **Gestione dei dispositivi**  >  **Profilo di gestione**. Verificare che l'installazione del profilo è inclusa nell'elenco e controllare le restrizioni dei criteri iOS e le app installate. La visualizzazione delle restrizioni dei criteri e delle app nel dispositivo può impiegare fino a 10 minuti.
 
 5. Distribuire i dispositivi. Il dispositivo iOS viene ora registrato con Intune e gestito.
-

@@ -1,5 +1,5 @@
 ---
-title: Creare gruppi per organizzare utenti e dispositivi | Documentazione Microsoft
+title: Creazione di gruppi per organizzare utenti e dispositivi
 description: Creare utenti e gruppi per la sottoscrizione di Intune
 keywords: 
 author: nathbarn
@@ -14,16 +14,12 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 058006b2356d62c77c3a5a6ee0f4c8ed74ed4a50
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: a6e9eb087b730c66bcf32f877fd22f2d3be0c121
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-groups-to-organize-users-and-devices"></a>Creazione di gruppi per organizzare utenti e dispositivi
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -87,6 +83,4 @@ I gruppi di utenti consentono di distribuire criteri software e per dispositivi.
 Per trovare il gruppo appena creato, andare nell'elenco **Gruppi** nell'area di lavoro **Gruppi** in **Tutti gli utenti**. Da qui è possibile inoltre modificare o eliminare il gruppo.
 
 >[!div class="step-by-step"]
-
->[&larr; **Gestire le licenze di Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**Creare criteri e app** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
-
+/intune/licenses-assign [&larr; **Gestire le licenze di Intune**](/intune/licenses-assign)       [**Creare criteri e app** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  

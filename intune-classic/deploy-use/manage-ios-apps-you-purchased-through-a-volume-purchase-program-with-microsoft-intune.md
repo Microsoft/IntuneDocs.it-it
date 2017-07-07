@@ -1,6 +1,6 @@
 ---
 title: Gestire le app iOS acquistate con Volume Purchase Program
-description: "Usare Intune per la gestione delle app acquistate con Volume Purchase Program da Apple importando le informazioni di licenza dall&quot;App Store, verificando il numero di licenze usate e impedendo l&quot;installazione di più copie dell&quot;app rispetto a quelle possedute."
+description: "Usare Intune per la gestione delle app acquistate con Volume Purchase Program da Apple importando le informazioni di licenza dall'App Store, verificando il numero di licenze usate e impedendo l'installazione di più copie dell'app rispetto a quelle possedute."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,15 +14,12 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: f2600864eaf127810639e76932adbd422b4e0008
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Gestire le app iOS acquistate tramite Volume Purchase Program con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -90,4 +87,3 @@ Per monitorare quali app VPP sono state distribuite e quante licenze sono in uso
 
 ### <a name="see-also"></a>Vedere anche
 [Distribuire app in Microsoft Intune](deploy-apps-in-microsoft-intune.md)
-

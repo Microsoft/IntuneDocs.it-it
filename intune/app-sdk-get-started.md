@@ -1,6 +1,6 @@
 ---
 title: Introduzione a Microsoft Intune App SDK
-description: Abilitare rapidamente un&quot;app per dispositivi mobili per la gestione di applicazioni mobili (MAM) con Microsoft Intune.
+description: Abilitare rapidamente un'app per dispositivi mobili per la gestione di applicazioni mobili (MAM) con Microsoft Intune.
 keywords: 
 author: mtillman
 manager: angrobe
@@ -14,15 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
 Questa guida illustra come abilitare rapidamente un'app per dispositivi mobili per i criteri di protezione delle app con Microsoft Intune. Può essere utile per capire i vantaggi di Intune App SDK descritti nella [panoramica di Intune App SDK](app-sdk.md).
@@ -139,4 +136,3 @@ Il logo è un'icona a forma di valigetta, come illustrato negli esempi seguenti:
 * Un'applicazione per la modifica di immagini che supporta la lettura di file con estensione **eps** oppure un'applicazione Adobe in grado di leggere file con estensione **ai**.
 
 * È possibile trovare [linee guida e asset per l'aggiunta del logo alle app di Intune](https://github.com/msintuneappsdk/intune-app-partner-badge) nella sezione dedicata a Microsoft Intune di GitHub.
-

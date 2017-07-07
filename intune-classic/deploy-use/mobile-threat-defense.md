@@ -1,6 +1,6 @@
 ---
-title: Mobile Threat Defense di Intune | Microsoft Docs
-description: Proteggere l&quot;accesso alle risorse aziendali in base al rischio dei dispositivi.
+title: Mobile Threat Defense di Intune
+description: Proteggere l'accesso alle risorse aziendali in base al rischio dei dispositivi.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,15 +14,12 @@ ms.assetid: 08d87906-8158-4d5e-a49d-ad919efef3d1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56cd18e1a5556178d951ec47c6e894d8fc2e6f86
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 85f3ed28b021c0aa2b00f128297eb0d99cf0bc1c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-mobile-threat-defense-connectors"></a>Connettori Mobile Threat Defense di Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -54,4 +51,3 @@ Informazioni sulla protezione dell'accesso alle risorse aziendali in base al ris
 
 - [Lookout](/intune-classic/deploy-use/lookout-mobile-threat-defense-connector)
 - [Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector)
-

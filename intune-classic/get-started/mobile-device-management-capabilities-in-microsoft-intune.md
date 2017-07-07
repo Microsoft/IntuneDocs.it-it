@@ -14,13 +14,11 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 5fc5e6108e7e7841ed142f24f463d85273ae8a12
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Funzionalità di gestione dei dispositivi registrati di Microsoft Intune
 
@@ -70,4 +68,3 @@ Tutte le attività di gestione, inventario, distribuzione di app, provisioning e
 |Funzionalità|Dettagli|Altre informazioni|
 |--------------|-----------|--------------------|
 |Inventario e creazione di report|Trova informazioni sui dispositivi gestiti e sul software che usano.|[Informazioni sui dispositivi con inventario in Microsoft Intune](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
-

@@ -11,20 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f720befe-a6f9-4422-aa9b-4d85c9fc94e2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="fix-common-issues-with-your-android-device"></a>Risolvere problemi comuni con il dispositivo Android
 
 A volte possono verificarsi problemi con il dispositivo Android non risolvibili tramite le procedure di risoluzione dei problemi. Di seguito sono elencati alcuni problemi comuni che è possibile provare a risolvere autonomamente. Per i problemi più complessi, si consiglia di contattare l'amministratore IT tramite le informazioni di contatto disponibili nel [sito Web del portale aziendale](http://portal.manage.microsoft.com).
@@ -45,4 +41,3 @@ A volte possono verificarsi problemi con il dispositivo Android non risolvibili 
 - [Il dispositivo sembra essere crittografato, ma l'app Portale aziendale indica il contrario](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [Viene richiesto di installare un'app di protezione dalle minacce per il dispositivo nel dispositivo Android](you-are-prompted-to-install-mtd-android.md)
 - [È necessario risolvere una minaccia rilevata da un'app di protezione dalle minacce per il dispositivo nel dispositivo Android](you-need-to-resolve-a-threat-found-by-mtd-android.md)
-

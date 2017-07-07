@@ -1,5 +1,5 @@
 ---
-title: Usare l&quot;SDK per abilitare le app per MAM | Documentazione Microsoft
+title: Usare l'SDK per abilitare le app per MAM
 description: "Questo argomento offre una rapida panoramica sui motivi per cui è consigliabile usare Intune App SDK."
 keywords: 
 author: mtillman
@@ -14,15 +14,12 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ec4e2f966fa8c24505ce1fa74a59c95908273bd1
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: de7c4f57e6d42ac36ba5873e3d0ba1eaee6a5e8b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-the-sdk-to-enable-apps-for-mobile-application-management"></a>Usare l'SDK per abilitare le app per la gestione delle applicazioni per dispositivi mobili
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -39,8 +36,7 @@ Usare Microsoft Intune App SDK per consentire a Intune di gestire alcune funzion
 
 Per usare l'SDK, è necessario accedere al codice sorgente dell'app, ma è possibile abilitare la maggior parte delle funzionalità SDK senza dover modificare il comportamento dell'app.
 
-Per una panoramica dell'SDK, vedere la pagina [Panoramica](/intune-classic/develop/intune-app-sdk-get-started).
+Per una panoramica dell'SDK, vedere la pagina [Panoramica](/intune/app-sdk-get-started).
 
 ### <a name="see-also"></a>Vedere anche
-[Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
-
+[Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](/intune/apps-prepare-mobile-application-management)

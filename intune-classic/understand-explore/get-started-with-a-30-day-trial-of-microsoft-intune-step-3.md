@@ -1,6 +1,6 @@
 ---
-title: Creare gruppi per organizzare utenti e dispositivi in una versione di valutazione gratuita| Microsoft Docs
-description: Come creare gruppi di dispositivi e gruppi di utenti quando si esegue l&quot;iscrizione per una valutazione gratuita di 30 giorni di Microsoft Intune.
+title: Creare gruppi per organizzare utenti e dispositivi in una versione di valutazione gratuita
+description: Come creare gruppi di dispositivi e gruppi di utenti quando si esegue l'iscrizione per una valutazione gratuita di 30 giorni di Microsoft Intune.
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f6a5926876bdd7224d0e9bfef55aa86f51c87aff
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 084cc155a64a58582e3008df10e86c1e5266054d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>Creare gruppi per organizzare utenti e dispositivi della sottoscrizione di valutazione
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -64,4 +61,3 @@ Per altre informazioni sull'uso dei gruppi, vedere [Creare gruppi per gestire ut
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Creare i criteri](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)  
-

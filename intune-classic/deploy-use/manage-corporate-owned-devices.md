@@ -1,6 +1,6 @@
 ---
-title: "Gestire i dispositivi di proprietà dell&quot;azienda"
-description: "Registrare i dispositivi di proprietà dell&quot;azienda in diversi modi, in base al tipo di dispositivo, alla modalità di acquisto e alle esigenze dell&quot;organizzazione."
+title: "Gestire i dispositivi di proprietà dell'azienda"
+description: "Registrare i dispositivi di proprietà dell'azienda in diversi modi, in base al tipo di dispositivo, alla modalità di acquisto e alle esigenze dell'organizzazione."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8dae789ad1996543ddf9b92d031ac995beff6a46
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrare i dispositivi di proprietà dell'azienda con Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -67,4 +64,3 @@ Un dispositivo viene identificato come "aziendale" in Intune in presenza di una 
  - Il dispositivo è registrato in [Azure Active Directory o Enterprise Mobility Suite come dispositivo Windows 10 Enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (solo per Windows 10).
 
 Quando un dispositivo è contrassegnato come aziendale, verrà visualizzata l'indicazione **Aziendale** nella colonna **Proprietà** per il record del dispositivo nella console di amministrazione. 
-

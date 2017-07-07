@@ -1,6 +1,6 @@
 ---
-title: Proteggere Dynamics CRM Online | Microsoft Docs
-description: Proteggere e controllare l&quot;accesso a Dynamics CRM Online con l&quot;accesso condizionale.
+title: Proteggere Dynamics CRM Online
+description: Proteggere e controllare l'accesso a Dynamics CRM Online con l'accesso condizionale.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,15 +14,12 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: da92d75cfafa2a605ed8606ba7c8f3ec18dc6063
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Proteggere l'accesso a Dynamics CRM Online con Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,8 +81,8 @@ A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e c
   * **iOS**
   * **Android**
 4.  In **Gruppi di destinazione** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory ai quali verranno applicati i criteri. È possibile scegliere di applicare questa opzione a tutti gli utenti o solo a un gruppo di utenti selezionato.
-5.    Facoltativamente, in **Gruppi esentati** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
-6.    Al termine, scegliere **Salva**.
+5.  Facoltativamente, in **Gruppi esentati** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
+6.  Al termine, scegliere **Salva**.
 
 L'accesso condizionale per Dynamics CRM è stato configurato. Non è necessario distribuire i criteri di accesso condizionale perché diventano immediatamente effettivi.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorare i criteri di conformità e di accesso condizionale
@@ -104,4 +101,3 @@ Scegliere un gruppo qualsiasi di dispositivi mobili e quindi nella scheda **Disp
 * [Proteggere l'accesso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 * [Proteggere l'accesso a Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-

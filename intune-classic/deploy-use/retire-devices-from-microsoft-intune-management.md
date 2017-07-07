@@ -14,15 +14,12 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="retire-devices-from-intune-management"></a>Ritirare i dispositivi dalla gestione di Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -79,4 +76,3 @@ In alcuni casi è il dispositivo stesso ad aver raggiunto il termine della vita 
 
 ### <a name="see-also"></a>Vedere anche
 [Proteggere i dati con la cancellazione selettiva o completa](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-

@@ -1,12 +1,12 @@
 ---
-title: Come configurare i certificati con Intune | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: informazioni su come usare Intune per creare e assegnare certificati che consentono di proteggere Wi-Fi, VPN e altre connessioni.'
+title: Come configurare i certificati con Intune
+titleSuffix: Intune on Azure
+description: Informazioni su come usare Intune per creare e assegnare certificati che consentono di proteggere Wi-Fi, VPN e altre connessioni."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81c7e04d4b4cc7599b63917e5507775b38b65ba7
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: da23a0c79c5e0e178e52e956561e2764268d09df
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Come configurare i certificati in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Quando si concede agli utenti l'accesso alle risorse aziendali tramite profili VPN, Wi-Fi o di posta elettronica, è possibile autenticare queste connessioni mediante i certificati. I certificati rendono superflua l'immissione di nomi utente e password per l'autenticazione delle connessioni.
 
@@ -56,8 +53,8 @@ Ognuno di questi tipi di certificato ha prerequisiti e requisiti di infrastruttu
 
     È possibile usare solo un profilo certificato SCEP su queste piattaforme:
 
--     macOS 10.9 e versioni successive
--     Windows Phone 8.1 e versioni successive
+-   macOS 10.9 e versioni successive
+-   Windows Phone 8.1 e versioni successive
 
 È necessario creare un profilo separato per ogni piattaforma dei dispositivi. Quando si crea il profilo, questo viene associato al profilo del certificato radice attendibile già creato.
 
@@ -88,7 +85,7 @@ Il certificato viene importato quando si configura un profilo certificato attend
 ### <a name="to-create-a-trusted-certificate-profile"></a>Per creare un profilo certificato attendibile
 
 1. Accedere al portale Azure.
-2. Scegliere **Altri servizi** > **Altro** > **Intune**.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 3. Nel pannello dei profili scegliere **Crea profilo**.
@@ -128,4 +125,3 @@ Dopo aver creato un profilo certificato attendibile, creare i profili certificat
 
 ## <a name="next-steps"></a>Passaggi successivi
 Vedere [Come assegnare i profili di dispositivo](device-profile-assign.md) per informazioni generali sull'assegnazione dei profili di dispositivo.
-

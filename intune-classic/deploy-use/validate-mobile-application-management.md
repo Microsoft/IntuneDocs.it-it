@@ -1,6 +1,6 @@
 ---
-title: Convalidare la configurazione di MAM | Documentazione Microsoft
-description: "Questo argomento descrive com&quot;è possibile verificare e convalidare se i criteri di gestione delle applicazioni mobili (MAM) sono configurati correttamente e funzionano come previsto."
+title: Convalidare la configurazione di MAM
+description: "Questo argomento descrive com'è possibile verificare e convalidare se i criteri di gestione delle applicazioni mobili (MAM) sono configurati correttamente e funzionano come previsto."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab04c85d6704d7011cc5d4ea2a9f83d78b5b73e3
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="validating-your-mobile-application-management-setup"></a>Convalidare la configurazione dei criteri di gestione delle applicazioni mobili
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,7 +47,7 @@ Se la verifica mostra che il comportamento dei criteri di gestione delle applica
 ### <a name="what-to-do"></a>Operazioni da eseguire
 Di seguito sono descritte le azioni da eseguire in base allo stato dell'utente:
 
-- Se l'utente non ha la licenza per MAM, assegnare una licenza Intune all'utente come descritto in [Gestire le licenze di Intune](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md).
+- Se l'utente non ha la licenza per MAM, assegnare una licenza Intune all'utente come descritto in [Gestire le licenze di Intune](/intune/setup-steps).
 - Se l'utente non ha la licenza per Office 365, ottenerne una per l'utente.
 - Se un'app dell'utente è elencata come **Non archiviato**, controllare se i criteri MAM per tale app sono stati configurati correttamente.
 - Assicurarsi che queste condizioni vengano applicate a tutti gli utenti a cui si vuole applicare i criteri di gestione delle applicazioni mobili.
@@ -59,4 +56,3 @@ Di seguito sono descritte le azioni da eseguire in base allo stato dell'utente:
 [Preparazione alla configurazione dei criteri di gestione delle app per dispositivi mobili con Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Proteggere i dati delle app usando i criteri di gestione delle app mobili con Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

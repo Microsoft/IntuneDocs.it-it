@@ -1,5 +1,5 @@
 ---
-title: Proteggere i dati delle app usando i criteri di gestione di applicazioni mobili | Documentazione Microsoft
+title: Proteggere i dati delle app usando i criteri di gestione di applicazioni mobili
 description: Questo argomento illustra in che modo i criteri di gestione di applicazioni mobili consentono di proteggere i dati aziendali, impedire la perdita di dati e mantenere separate le informazioni personali e di lavoro.
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
-ms.contentlocale: it-it
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 40a6badf072c254f635a2656189d626e4f13a320
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Proteggere i dati delle app usando i criteri di protezione delle app con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -38,8 +35,8 @@ Per proteggere i dati aziendali, è possibile usare i criteri di protezione dell
 
 -   **Registrati in una soluzione di gestione di dispositivi mobili di terze parti:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dell'azienda.
 
-      > [!NOTE]
-      > L'uso di criteri di protezione delle app con soluzioni di gestione delle app per dispositivi mobili o di contenitore protetto di terze parti non è consigliato.
+    > [!NOTE]
+    > L'uso di criteri di protezione delle app con soluzioni di gestione delle app per dispositivi mobili o di contenitore protetto di terze parti non è consigliato.
 
 -   **Non registrati in alcuna soluzione di gestione di dispositivi mobili:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dei dipendenti non gestiti o registrati in Intune o altre soluzioni MDM.
 
@@ -135,4 +132,3 @@ Ad esempio, quando un utente avvia l'app OneDrive usando il proprio account azie
 - [Prepararsi alla configurazione dei criteri di protezione delle app](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Creare e distribuire i criteri di protezione delle app con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-

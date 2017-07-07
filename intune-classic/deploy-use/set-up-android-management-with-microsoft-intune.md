@@ -14,15 +14,12 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 927259d2f3b3078c9fdb0f1ba3bb22a69b555ab6
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-android-device-management"></a>Configurare la gestione dei dispositivi Android
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -64,4 +61,3 @@ L'app Portale aziendale per Android usa i servizi Google Play per comunicare con
 
 ### <a name="see-also"></a>Vedere anche
 [Prerequisiti per la registrazione dei dispositivi in Microsoft Intune](prerequisites-for-enrollment.md)
-

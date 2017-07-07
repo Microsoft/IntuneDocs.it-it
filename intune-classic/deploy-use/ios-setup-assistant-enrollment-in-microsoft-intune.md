@@ -1,6 +1,6 @@
 ---
-title: Registrare i dispositivi iOS con Assistente di configurazione | Documentazione Microsoft
-description: "Registrare i dispositivi iOS di proprietà dell&quot;azienda con lo strumento Apple Configurator per ripristinare le impostazioni predefinite del dispositivo e prepararlo all&quot;esecuzione di Assistente configurazione."
+title: Registrare dispositivi iOS con Assistente configurazione
+description: "Registrare i dispositivi iOS di proprietà dell'azienda con lo strumento Apple Configurator per ripristinare le impostazioni predefinite del dispositivo e prepararlo all'esecuzione di Assistente configurazione."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 12466562ea8431156e9644e63fda16231ac70f32
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 402b5b469b1536e9f2ea13948e45c9232baca458
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Registrare i dispositivi iOS con Apple Configurator mediante Assistente configurazione
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -175,4 +172,3 @@ I dispositivi sono ora pronti per la registrazione aziendale. Spegnere i disposi
 
 ### <a name="see-also"></a>Vedere anche
 [Prerequisiti per la registrazione dei dispositivi](prerequisites-for-enrollment.md)
-

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Create a work profile and enroll your device in Intune (Creare un profilo di lavoro e registrare il dispositivo in Intune)
 
 La registrazione del dispositivo Android consente di accedere a posta elettronica, app e dati aziendali. Come parte della registrazione, è possibile impostare un profilo di lavoro, che separa i dati personali che si trovano sul dispositivo dai dati aziendali. L'amministratore IT può gestire solo il profilo aziendale, che contiene i dati di lavoro. L'amministratore IT non può gestire i dati personali sul dispositivo. Altri dettagli sono disponibili in [Cosa accade quando si crea un profilo di lavoro](what-happens-when-you-create-a-work-profile-android.md).
@@ -88,4 +83,3 @@ Per creare un profilo di lavoro:
     ![Pagina delle app in Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

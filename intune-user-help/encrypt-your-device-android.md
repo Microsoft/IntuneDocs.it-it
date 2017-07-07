@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Come proteggere il dispositivo Android usando la crittografia
 
 Quando si crittografa un dispositivo, si esegue il wrapping delle informazioni in esso contenute in un livello di codice protettivo che impedisce l'accesso agli utenti non autorizzati. Come passo aggiuntivo per assicurarsi che le informazioni siano protette, l'organizzazione richiede di crittografare il dispositivo Android prima di accedere a file, posta elettronica o dati aziendali.
@@ -70,4 +65,3 @@ Un telefono di cui si annulla la registrazione rimarrà crittografato.
     5. Aprire l'app Portale aziendale, selezionare il dispositivo e toccare **Controlla conformità**.
 
 Serve ancora assistenza? Contattare l'amministratore IT (accedere al [sito Web del portale aziendale](http://portal.manage.microsoft.com) per informazioni sui contatti) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.
-

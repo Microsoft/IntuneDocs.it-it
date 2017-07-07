@@ -1,7 +1,7 @@
 ---
-title: Impostare la gestione dati di base nelle app di Office 365 - Anteprima di Intune in Azure
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: Documentazione di supporto relativa alla procedura guidata per la gestione delle app di Office 365.'
+title: Impostare la gestione dati di base nelle app di Office 365 in Intune
+titleSuffix: Intune on Azure
+description: Documentazione di supporto relativa alla procedura guidata per la gestione delle app di Office 365."
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -16,16 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 639d045e036ecdc6ff40d6ae335d2c5109d9e420
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Esperienza utente relativa alla protezione base nelle app di Office 365 gestite
 
 La procedura guidata per la**gestione delle app di Office 365** crea un criterio di protezione delle app per ogni piattaforma del dispositivo.
@@ -129,9 +125,8 @@ In Android, per le app associate a un criterio MAM di Intune, i dati vengono cri
 È sempre possibile modificare queste impostazioni per soddisfare i requisiti dell'organizzazione.
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>Come è possibile visualizzare e modificare i criteri creati dalla procedura guidata?
-Per visualizzare o aggiornare questi criteri o eventuali criteri creati nell'anteprima di Intune in Azure, dal dashboard scegliere **Gestisci app** > **Criteri di protezione app**. A destra verrà aperto l'elenco di criteri. Scegliere il criterio da visualizzare per esaminare e modificare le impostazioni. <br/>
+Per visualizzare o aggiornare questi criteri o eventuali criteri creati nel portale di Intune di Azure, dal dashboard scegliere **Gestisci app** > **Criteri di protezione app**. A destra verrà aperto l'elenco di criteri. Scegliere il criterio da visualizzare per esaminare e modificare le impostazioni. <br/>
 ![Immagine del percorso dell'interfaccia utente per visualizzare i criteri](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sui [criteri di protezione delle app](https://docs.microsoft.comapp-protection-policy.md).
-

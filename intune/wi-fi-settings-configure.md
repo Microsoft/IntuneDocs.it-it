@@ -1,12 +1,12 @@
 ---
 title: Come configurare le impostazioni Wi-Fi di Intune
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: informazioni su come usare Intune per configurare le connessioni Wi-Fi nei dispositivi gestiti.'
+titleSuffix: Intune on Azure
+description: Informazioni su come usare Intune per configurare le connessioni Wi-Fi nei dispositivi gestiti."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3378df904936def8737ca3b5b791feebdb95823b
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0e191fe443757a5ea43ccc2b4ef2e9cb331b2142
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Come configurare le impostazioni Wi-Fi in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Usare i profili Wi-Fi in di Microsoft Intune per assegnare le impostazioni di rete wireless agli utenti e ai dispositivi dell'organizzazione. Quando si assegna un profilo Wi-Fi, gli utenti hanno accesso alla rete Wi-Fi aziendale senza doverla configurare.
 
@@ -39,6 +36,7 @@ Si immagini, ad esempio, di installare una nuova rete Wi-Fi denominata Contoso W
 I profili Wi-Fi supportano le piattaforme per dispositivi seguenti:
 
 - Android 4 e versioni successive
+- Android for Work
 - iOS 8.0 e versioni successive
 - macOS (Mac OS X 10.9 e versioni successive)
 
@@ -49,13 +47,14 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Creare un profilo dispositivo contenente le impostazioni Wi-Fi
 
 1. Accedere al portale Azure.
-2. Scegliere **Altri servizi** > **Altro** > **Intune**.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 3. Nel pannello dei profili scegliere **Crea profilo**.
 4. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** per il profilo Wi-Fi.
 5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma del dispositivo a cui si desiderano applicare le impostazioni Wi-Fi. Attualmente, è possibile scegliere una tra le piattaforme seguenti per le impostazioni Wi-Fi:
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows 8.1 e versioni successive (importazione di un profilo)**
@@ -63,7 +62,7 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
     >[!TIP]
     >Usare **Wi-Fi di base** per fornire informazioni di base quali il nome della rete e l'SSID. **Wi-Fi aziendale** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi lo usa. **Wi-Fi per importazione**  (per Windows 8.1 e Windows 10) consente di importare le impostazioni Wi-Fi come un file XML precedentemente esportato da un altro dispositivo.
 7. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli argomenti seguenti per il dettaglio delle impostazioni di ogni piattaforma:
-    - [Impostazioni Android](wi-fi-settings-android.md)
+    - [Impostazioni Android e Android for Work](wi-fi-settings-android.md)
     - [Impostazioni iOS](wi-fi-settings-ios.md)
     - [Impostazioni macOS](wi-fi-settings-macos.md)
     - [Impostazioni Windows Phone 8.1](wi-fi-settings-import-windows-8-1.md)
@@ -71,5 +70,3 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 
 Il profilo verrà creato e visualizzato nel pannello dell'elenco dei profili.
 Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
-
-

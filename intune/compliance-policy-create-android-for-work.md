@@ -1,7 +1,7 @@
 ---
 title: "Creare criteri di conformità per Android for Work"
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni sulle modalità di creazione dei criteri di conformità per i dispositivi Android for Work."
+titleSuffix: Intune on Azure
+description: "Informazioni sulle modalità di creazione dei criteri di conformità per i dispositivi Android for Work.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,19 +15,16 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: af5aa4f336df0f47695484b7dce1d7df29bea03d
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 518b74703de88a1cded2ad38d33c52b54699dc44
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi Android for Work in Intune
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune-azure-preview"></a>Come creare i criteri di conformità per i dispositivi Android for Work nell'anteprima di Intune in Azure
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 I criteri di conformità vengono creati per ogni piattaforma.  È possibile creare i criteri di conformità nel portale di Azure. Per altre informazioni sui criteri di conformità consultare l'argomento [What is a device compliance](device-compliance.md)(Che cos'è la conformità dei dispositivi). Per altre informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, consultare l'argomento [Get started with device compliance](device-compliance-get-started.md) (Introduzione alla conformità dei dispositivi).
 
@@ -123,4 +120,3 @@ Per altre informazioni dettagliate, vedere [Abilitare la regola di protezione da
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

@@ -1,6 +1,7 @@
 ---
-title: Configurare le impostazioni di Windows Update for Business - Intune | Anteprima di Intune in Azure | Microsoft Docs
-description: 'Anteprima di Intune in Azure: informazioni su come configurare le impostazioni di Windows Update for Business in Intune per controllare gli aggiornamenti ai dispositivi Windows 10.'
+title: Configurare le impostazioni di Windows Update for Business - Intune
+titleSuffix: Intune on Azure
+description: Informazioni su come configurare le impostazioni di Windows Update for Business in Intune per controllare gli aggiornamenti ai dispositivi Windows 10."
 keywords: 
 author: dougeby
 ms.author: dougeby
@@ -13,18 +14,15 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b0bc3e557f303cd80c780634ba47b24405c327e1
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>Come configurare le impostazioni di Windows Update for Business con Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introduzione
 Windows as a Service è il nuovo modo per distribuire gli aggiornamenti per Windows 10. A partire da Windows 10, i nuovi aggiornamenti qualitativi e delle funzionalità includeranno il contenuto di tutti gli aggiornamenti precedenti. Ciò significa che, una volta installato l'aggiornamento più recente, si ha la sicurezza che i dispositivi Windows 10 sono perfettamente aggiornati. A differenza di quanto accadeva per le versioni precedenti di Windows, è ora necessario installare l'intero aggiornamento anziché una sola parte.
@@ -87,7 +85,7 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
     - **Comportamento di aggiornamento automatico**: scegliere come gestire il comportamento di aggiornamento automatico per cercare, scaricare e installare gli aggiornamenti. Per informazioni dettagliate, vedere [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Periodo di differimento dell'aggiornamento qualitativo (giorni)**: specificare il numero di giorni per cui verranno posticipati gli aggiornamenti qualitativi. È possibile posticipare la ricezione di questi aggiornamenti per un periodo massimo di 30 giorni dalla data di rilascio.  
 
-      Gli aggiornamenti qualitativi includono in genere correzioni e miglioramenti alle funzionalità esistenti di Windows e vengono normalmente pubblicati il primo martedì del mese, anche se possono essere rilasciati da Microsoft in qualsiasi momento. È possibile definire se, e per quanto tempo, posticipare la ricezione degli aggiornamenti qualitativi dopo che sono stati resi disponibili.
+    Gli aggiornamenti qualitativi includono in genere correzioni e miglioramenti alle funzionalità esistenti di Windows e vengono normalmente pubblicati il primo martedì del mese, anche se possono essere rilasciati da Microsoft in qualsiasi momento. È possibile definire se, e per quanto tempo, posticipare la ricezione degli aggiornamenti qualitativi dopo che sono stati resi disponibili.
     - **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)**: specificare il numero di giorni per cui verranno posticipati gli aggiornamenti delle funzionalità. È possibile posticipare la ricezione di questi aggiornamenti per un periodo massimo di 180 giorni dalla data di rilascio.
 
     Gli aggiornamenti delle funzionalità includono in genere nuove funzionalità per Windows. Dopo aver configurato l'impostazione **Ramo di manutenzione** (**CB** o **CBB**), è possibile definire se, e per quanto tempo, posticipare la ricezione degli aggiornamenti delle funzionalità dopo che sono stati resi disponibili da Microsoft in Windows Update.
@@ -148,4 +146,3 @@ Questo è il percorso dell'URI OMA (con distinzione tra maiuscole e minuscole) p
 > [!IMPORTANT]
 > Quando si esegue un comando di sospensione, i dispositivi ricevono tale comando non appena controllano la disponibilità di aggiornamenti nel servizio. È quindi possibile che, prima di effettuare questo controllo, installino un aggiornamento pianificato.
 > Inoltre, se un dispositivo è spento quando si esegue il comando di sospensione, all'accensione tale dispositivo potrebbe scaricare e installare gli aggiornamenti pianificati prima di controllare la disponibilità di nuovi aggiornamenti con Intune.
-

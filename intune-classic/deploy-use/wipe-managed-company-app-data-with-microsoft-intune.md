@@ -1,5 +1,5 @@
 ---
-title: Cancellare i dati dell&quot;app aziendale gestita
+title: Cancellare i dati dell'app aziendale gestita
 description: "Informazioni su come è possibile rimuovere selettivamente i dati aziendali dai dispositivi in modalità remota."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7025bdd5d89e52f1c99f9cd834232daf324f3285
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="wipe-company-app-data-with-intune-mam"></a>Cancellare i dati delle app aziendali con MAM di Intune.
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -95,4 +92,3 @@ Le cancellazioni dati con stato in sospeso rimangono visualizzate fino all'elimi
 [Proteggere i dati delle app usando i criteri di gestione delle app mobili](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Uso del portale di Azure](azure-portal-for-microsoft-intune-mam-policies.md)
-

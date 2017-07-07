@@ -1,6 +1,6 @@
 ---
-title: Gestire l&quot;accesso Web con Managed Browser | Documentazione Microsoft
-description: Distribuire l&quot;applicazione Managed Browser per limitare l&quot;esplorazione del Web e il trasferimento dei dati Web ad altre app.
+title: Gestire l'accesso Web con Managed Browser
+description: Distribuire l'applicazione Managed Browser per limitare l'esplorazione del Web e il trasferimento dei dati Web ad altre app.
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,15 +14,12 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 49ad005846265deb7d4b34b52a1c139e8f61372b
-ms.contentlocale: it-it
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 89f60e34fd89784ca8ea1fa3999927c7b0bc66e4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gestire l'accesso a Internet utilizzando criteri di browser gestiti con Microsoft Intune.
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -158,4 +155,3 @@ Se distribuiti diversi criteri browser gestito a un dispositivo e si verifica un
 -   Se un dispositivo riceve i criteri di browser gestiti per la prima volta ed il conflitto nei due criteri, le URL non verranno applicate al dispositivo Utilizzare il nodo **conflitti tra criteri** dei **criteri** nell’area di lavoro per visualizzare i conflitti.
 
 -   Se un dispositivo ha già ricevuto un criterio di browser gestiti e un secondo criterio è distribuito con le impostazioni in conflitto, le impostazioni originali rimangono sul dispositivo. Utilizzare il nodo **conflitti tra criteri** dei **criteri** nell’area di lavoro per visualizzare i conflitti.
-

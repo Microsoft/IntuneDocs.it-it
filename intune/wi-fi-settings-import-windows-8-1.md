@@ -1,12 +1,12 @@
 ---
 title: Importare le impostazioni Wi-Fi per dispositivi Windows 8.1 e versioni successive
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: come importare le impostazioni Wi-Fi da Windows a un profilo Wi-Fi di Intune.'
+titleSuffix: Intune on Azure
+description: Come importare le impostazioni Wi-Fi da Windows a un profilo Wi-Fi di Intune."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 80181ce809265dc4289e56ef65aff66214d2e765
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c4ef9bf6ed3f731afada55d2af71d56367f4638d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Come importare le impostazioni Wi-Fi per i dispositivi Windows 8.1 e versioni successive in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Per i dispositivi che eseguono Windows 8.1 o Windows 10 Desktop o Mobile, è possibile importare un profilo di configurazione Wi-Fi precedentemente esportato in un file.
 
@@ -41,7 +38,7 @@ In Windows usare l'utilità **netsh wlan** per esportare un profilo Wi-Fi esiste
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Importare le impostazioni Wi-Fi in Intune
 
 1. Accedere al portale Azure.
-2. Scegliere **Altri servizi** > **Altro** > **Intune**.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 3. Nel pannello dei profili fare clic su **Crea profilo**.
@@ -55,4 +52,3 @@ In Windows usare l'utilità **netsh wlan** per esportare un profilo Wi-Fi esiste
 8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
 
 Il profilo verrà creato e visualizzato nel pannello dell'elenco dei profili.
-

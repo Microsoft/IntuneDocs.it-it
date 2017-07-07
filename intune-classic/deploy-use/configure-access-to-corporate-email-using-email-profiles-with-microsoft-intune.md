@@ -1,5 +1,5 @@
 ---
-title: Accedere alla posta elettronica aziendale con i profili di posta elettronica | Microsoft Docs
+title: Accedere alla posta elettronica aziendale con i profili di posta elettronica
 description: "È possibile usare le impostazioni del profilo di posta elettronica per configurare le impostazioni di accesso alla posta elettronica per client di posta elettronica specifici sui dispositivi mobili."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 21eee53a4e3674dc28b01311a61dda0d71f9f7fa
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,11 +33,11 @@ Per una maggiore prevenzione della perdita dei dati, scegliere [Accesso condizio
 Gli amministratori IT o gli utenti possono anche scegliere di installare client di posta elettronica alternativi, ad esempio Microsoft Outlook per Android o iOS. È possibile che questi client di posta elettronica non supportino i profili di posta elettronica e non possano essere configurati mediante profili di posta elettronica di Intune.  
 
 È possibile usare i profili di posta elettronica per configurare il client di posta elettronica nativo nei tipi di dispositivi seguenti:
--    Windows Phone 8.1 e versioni successive
--    Windows 10 (desktop), Windows 10 Mobile e versioni successive
--    iOS 8.0 e versioni successive
--    Samsung KNOX Standard 4.0 e versioni successive
--    Android for Work (app di posta elettronica di terze parti, quella nativa può essere usata solo per il profilo personale)
+-   Windows Phone 8.1 e versioni successive
+-   Windows 10 (desktop), Windows 10 Mobile e versioni successive
+-   iOS 8.0 e versioni successive
+-   Samsung KNOX Standard 4.0 e versioni successive
+-   Android for Work (app di posta elettronica di terze parti, quella nativa può essere usata solo per il profilo personale)
 
 Oltre a configurare un account di posta elettronica sul dispositivo, è possibile impostare il numero di messaggi di posta elettronica da sincronizzare. A seconda del tipo di dispositivo, è possibile impostare anche i tipi di contenuto da sincronizzare.
 
@@ -85,7 +82,7 @@ Poiché la password non è contenuta nel profilo di posta elettronica, l'utente 
 
     -   **Profilo di posta elettronica (Android for Work - Gmail)**
 
-    -    **Profilo di posta elettronica (Android for Work - Nine Work)**
+    -   **Profilo di posta elettronica (Android for Work - Nine Work)**
 
     È possibile solo creare e distribuire criteri personalizzati dei profili di posta elettronica. Le impostazioni consigliate non sono disponibili.
 
@@ -133,4 +130,3 @@ Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** d
 > - Per Android for Work, assicurarsi di distribuire anche le app di Gmail o Nine Work, oltre al profilo di posta elettronica appropriato.
 > - Per rimuovere un profilo di posta elettronica da un dispositivo, modificare la distribuzione e rimuovere tutti i gruppi di cui il dispositivo è membro. Si noti che non è possibile rimuovere un profilo di posta elettronica in questo modo se questo è l'unico profilo presente su un dispositivo.
 > - Se si apportano modifiche a un profilo di posta elettronica distribuito in precedenza, gli utenti finali potrebbero ricevere un messaggio che richiede di approvare la riconfigurazione delle impostazioni di posta elettronica.
-

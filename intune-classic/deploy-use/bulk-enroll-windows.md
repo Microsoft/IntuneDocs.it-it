@@ -1,5 +1,5 @@
 ---
-title: Registrazione in blocco per Windows 10 | Microsoft Docs
+title: Registrazione in blocco per Windows 10
 description: Creare un pacchetto di registrazione in blocco per Microsoft Intune
 keywords: 
 author: NathBarn
@@ -13,12 +13,11 @@ ms.technology:
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 027f2ff4e822f7800405bd0f318afe28a47c5a00
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ab52ba70403da5192cd3539dfd6d1e64bd79268c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registrazione in blocco per dispositivi Windows
 
@@ -48,19 +47,19 @@ Per la registrazione in blocco per dispositivi Windows, è necessario quanto seg
   - **Project folder** (Cartella progetto): la cartella in cui verrà salvato il nuovo progetto
   - **Description** (Descrizione): una descrizione facoltativa del progetto ![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](../media/bulk-enroll-name.png)
 
-4.    Specificare un nome univoco per i dispositivi. I nomi possono includere un numero di serie (%%NUMERO DI SERIE%%) o un set di caratteri casuali. Facoltativamente, è anche possibile immettere un codice Product Key, se si vuole aggiornare l'edizione di Windows, configurare il dispositivo per la condivisione e rimuovere software pre-installato.<BR>
+4.  Specificare un nome univoco per i dispositivi. I nomi possono includere un numero di serie (%%NUMERO DI SERIE%%) o un set di caratteri casuali. Facoltativamente, è anche possibile immettere un codice Product Key, se si vuole aggiornare l'edizione di Windows, configurare il dispositivo per la condivisione e rimuovere software pre-installato.<BR>
 ![Screenshot della finestra in cui specificare nome, cartella di progetto e descrizione nell'app Progettazione configurazione di Windows](../media/bulk-enroll-device.png)
 
-5.    Facoltativamente, è possibile configurare la rete Wi-Fi alla quale i dispositivi si connettono quando vengono avviati per la prima volta.  Se questa non viene configurata, quando il dispositivo viene avviato per la prima volta è necessaria una connessione di rete cablata.
+5.  Facoltativamente, è possibile configurare la rete Wi-Fi alla quale i dispositivi si connettono quando vengono avviati per la prima volta.  Se questa non viene configurata, quando il dispositivo viene avviato per la prima volta è necessaria una connessione di rete cablata.
 ![Schermata di abilitazione Wi-Fi inclusi SSID di rete e opzioni del tipo di rete nell'Applicazione immagine e configurazione di Windows](../media/bulk-enroll-network.png)
 
-6.    Selezionare **Enroll in Azure AD** (Registra in Azure AD), immettere una data per **Bulk Token Expiry** (Scadenza token in blocco) e selezionare **Get Bulk Token** (Ottieni token in blocco).
+6.  Selezionare **Enroll in Azure AD** (Registra in Azure AD), immettere una data per **Bulk Token Expiry** (Scadenza token in blocco) e selezionare **Get Bulk Token** (Ottieni token in blocco).
 ![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](../media/bulk-enroll-account.png)
 
 7. Specificare le credenziali di Azure AD per ottenere un token in blocco.
 ![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](../media/bulk-enroll-cred.png)
 
-8.    Fare clic su **Next** (Avanti) quando **Bulk Token** (Token in blocco) viene recuperato correttamente.
+8.  Fare clic su **Next** (Avanti) quando **Bulk Token** (Token in blocco) viene recuperato correttamente.
 
 9. Facoltativamente, è possibile selezionare **Add applications** (Aggiungi applicazioni) e **Add certificates** (Aggiungi certificati). Verrà eseguito il provisioning di tali applicazioni e certificati nel dispositivo.
 
@@ -88,4 +87,3 @@ Il provisioning deve essere usato su nuovi dispositivi Windows. Gli errori di pr
 
 - Un pacchetto di provisioning che tenta di aggiungere un dominio di Active Directory o un tenant di Azure Active Directory che non crea un account locale potrebbe rendere il dispositivo non raggiungibile, se il processo di aggiunta al dominio ha esito negativo a causa della mancanza di connettività di rete.
 - Gli script eseguiti dal pacchetto di provisioning vengono eseguiti nel contesto di sistema e possono apportare modifiche arbitrarie al file system e alle configurazioni del dispositivo. Uno script dannoso o errato potrebbe compromettere lo stato del dispositivo al punto che questo possa essere ripristinato solo recuperandone l'immagine o ripristinandone le impostazioni predefinite.
-

@@ -1,11 +1,11 @@
 ---
-title: Profilo VPN per app per Android con Pulse Secure | Documentazione Microsoft
+title: Profilo VPN per app per Android con Pulse Secure
 description: "È possibile creare un profilo VPN per app specifiche per i dispositivi Android gestiti da Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6786ac87c34e913ba71cd203f431f746df816459
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 262cc461d5c1790fdfb162d5453a9cebd48271c4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>Usare criteri personalizzati per creare un profilo VPN per app per dispositivi Android
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,7 +42,7 @@ Dopo aver distribuito i criteri ai gruppi di utenti o ai dispositivi Android, gl
 
 > [!NOTE]
 >
-> Prendere nota del nome del profilo VPN per usarlo nel passaggio successivo. Ad esempio, MyAppVpnProfile.
+> Prendere nota del valore **Nome connessione VPN (visualizzato agli utenti)** specificato quando si crea il profilo VPN. Questo valore sarà necessario nel passaggio successivo. Ad esempio **MyAppVpnProfile**.
 
 ### <a name="step-2-create-a-custom-configuration-policy"></a>Passaggio 2: Creare criteri di configurazione personalizzati
 
@@ -55,7 +52,7 @@ Dopo aver distribuito i criteri ai gruppi di utenti o ai dispositivi Android, gl
    4. Immettere un nome per l'impostazione.
    5. In **Tipo di dati** specificare **Stringa**.
    6. In **URI OMA** specificare la stringa seguente: **./Vendor/MSFT/VPN/Profile/*nome*/PackageList** dove *nome* è il nome del profilo VPN annotato nel passaggio 1. Con il nome di esempio, citato in precedenza la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
-   7.    Per l'opzione **Valore** creare un elenco separato da punti e virgola dei pacchetti da associare al profilo. Ad esempio, se si vuole che Excel e il browser Google Chrome usino la connessione VPN, digitare: **com.microsoft.office.excel;com.android.chrome**.
+   7.   Per l'opzione **Valore** creare un elenco separato da punti e virgola dei pacchetti da associare al profilo. Ad esempio, se si vuole che Excel e il browser Google Chrome usino la connessione VPN, digitare: **com.microsoft.office.excel;com.android.chrome**.
 
 ![Esempio di criteri personalizzati VPN per app Android](./media/android_per_app_vpn_oma_uri.png)
 
@@ -80,4 +77,3 @@ In alternativa, è possibile usare il valore **WHITELIST** per specificare un el
     -   **Per chiudere la finestra di dialogo senza distribuire il criterio**, scegliere **Annulla**.
 
 Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** dell'area di lavoro **Criteri** consentono di identificare i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene visualizzato nell'area di lavoro **Dashboard**.
-

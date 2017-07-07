@@ -1,5 +1,5 @@
 ---
-title: Wi-Fi tramite PSK | Documentazione Microsoft
+title: Wi-Fi tramite PSK
 description: Usare la configurazione personalizzata per creare un profilo Wi-Fi con una chiave precondivisa.
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6845097b768e67c7fbc6ff16bf41f27982c4b33e
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 7f3432f914c2f4a76d7a9303924d106b270220a1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Usare criteri personalizzati per creare un profilo Wi-Fi con una chiave precondivisa
 
@@ -30,24 +27,24 @@ ms.lasthandoff: 05/23/2017
 Di seguito viene illustrato come usare la **configurazione personalizzata** di Intune per creare un profilo Wi-Fi con una chiave precondivisa. Questo argomento include anche un esempio di come creare un profilo Wi-Fi basato su EAP.
 
 > [!NOTE]
--    Può risultare più semplice copiare il codice da un computer che si connette alla rete, come descritto di seguito.
+-   Può risultare più semplice copiare il codice da un computer che si connette alla rete, come descritto di seguito.
 - Per Android, è possibile scegliere di usare lo script [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornito da Johnathon Biersack.
--    È possibile aggiungere più reti e chiavi aggiungendo altre impostazioni URI OMA.
+-   È possibile aggiungere più reti e chiavi aggiungendo altre impostazioni URI OMA.
 -  Per iOS, usare Apple Configurator in una stazione Mac per impostare il profilo. In alternativa, usare lo script [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornito da Johnathon Biersack.
 
 
-1.    Per creare un profilo Wi-Fi con una chiave precondivisa per Android o Windows o un profilo Wi-Fi basato su EAP, quando si crea un criterio scegliere **Configurazione personalizzata** per tale piattaforma del dispositivo anziché un profilo Wi-Fi.
+1.  Per creare un profilo Wi-Fi con una chiave precondivisa per Android o Windows o un profilo Wi-Fi basato su EAP, quando si crea un criterio scegliere **Configurazione personalizzata** per tale piattaforma del dispositivo anziché un profilo Wi-Fi.
 
-2.    Specificare un nome e una descrizione
-3.    Aggiungere una nuova impostazione URI OMA:
+2.  Specificare un nome e una descrizione
+3.  Aggiungere una nuova impostazione URI OMA:
 
-   a.    Immettere un nome per questa impostazione di rete Wi-Fi.
+   a.   Immettere un nome per questa impostazione di rete Wi-Fi.
 
-   b.    Immettere una descrizione dell'impostazione URI OMA o lasciare il campo vuoto.
+   b.   Immettere una descrizione dell'impostazione URI OMA o lasciare il campo vuoto.
 
-   c.    **Tipo di dati**: impostare su "String(XML)"
+   c.   **Tipo di dati**: impostare su "String(XML)"
 
-   d.    **OMA-URI**:
+   d.   **OMA-URI**:
 
     - **Per Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **err Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -221,4 +218,3 @@ Quando si seleziona un criterio distribuito, è possibile visualizzare altre inf
 
 ### <a name="see-also"></a>Vedere anche
 [Connessioni Wi-Fi in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md)
-

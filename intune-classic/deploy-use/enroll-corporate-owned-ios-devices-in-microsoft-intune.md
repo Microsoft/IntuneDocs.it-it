@@ -1,6 +1,6 @@
 ---
-title: "Registrare i dispositivi iOS di proprietà dell&quot;azienda"
-description: "Registrazione di dispositivi iOS di proprietà dell&quot;azienda usando il programma di registrazione dispositivi di Apple o Apple Configurator"
+title: "Registrare i dispositivi iOS di proprietà dell'azienda"
+description: "Registrazione di dispositivi iOS di proprietà dell'azienda usando il programma di registrazione dispositivi di Apple o Apple Configurator"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 42da9c874183287bc9485035ae39e94efbaa3e8b
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Registrare i dispositivi iOS di proprietà dell'azienda in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,4 +90,3 @@ Se è necessaria l'affinità utente, assicurarsi che nel profilo di registrazion
 
 ### <a name="see-also"></a>Vedere anche
 [Prerequisiti per la registrazione dei dispositivi in Microsoft Intune](prerequisites-for-enrollment.md)
-

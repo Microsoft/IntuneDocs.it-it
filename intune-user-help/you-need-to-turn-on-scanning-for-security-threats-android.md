@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 668f105b65f5bdd8d05600a935aba3c0d46314d5
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>È necessario attivare la ricerca di minacce per la sicurezza nel dispositivo
 
 Il dispositivo Android è in grado di scaricare e installare app che possono eseguire numerose attività di diverso tipo. Tuttavia, non tutte le app sono uguali e alcune possono causare problemi. Una raccomandazione generale è quella di scaricare app solo da origini verificate, ad esempio Google Play Store. L'amministratore IT ha deciso di aumentare la protezione dei dati sul dispositivo e ha chiesto di attivare la ricerca tramite Google di eventuali minacce nelle app da installare per verificare che siano sicure.
@@ -31,4 +27,3 @@ Il dispositivo Android è in grado di scaricare e installare app che possono ese
 Per attivare questa ricerca, scegliere **Impostazioni** > **Google** > **Sicurezza**e attivare **Cerca minacce per la sicurezza nel dispositivo**.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

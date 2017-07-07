@@ -1,12 +1,12 @@
 ---
 title: Criteri di Intune per consentire o bloccare le app per Samsung KNOX
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: creare un profilo personalizzato per consentire e bloccare app per dispositivi Samsung KNOX Standard.'
+titleSuffix: Intune on Azure
+description: Creare un profilo personalizzato per consentire e bloccare app per dispositivi Samsung KNOX Standard."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,14 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dea090e108d5ea023dc64d8d168b25d30b688cb2
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: 8245bb3fa8f08e719df903a70f079f4fdf534ca5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Usare criteri personalizzati per consentire e bloccare app per dispositivi Samsung KNOX Standard in Microsoft Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]Seguire le procedure riportate in questo argomento per creare un criterio Microsoft Intune personalizzato allo scopo di creare uno degli elementi seguenti:
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]Seguire le procedure riportate in questo argomento per creare un criterio Microsoft Intune personalizzato allo scopo di creare uno degli elementi seguenti:
 
 - Un elenco di app la cui esecuzione è bloccata nel dispositivo. Le app presenti in questo elenco sono bloccate e non possono essere eseguite, anche se al momento dell'applicazione del criterio erano già state installate .
 - Un elenco di app che gli utenti del dispositivo sono autorizzati a installare da Google Play Store. È possibile installare soltanto le app elencate. Le altre app dello Store non possono essere installate.
@@ -35,7 +32,7 @@ Queste impostazioni possono essere usate solo dai dispositivi che eseguono Samsu
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Creare un elenco di app consentite o bloccate
 
 1. Accedere al portale Azure.
-2. Scegliere **Altri servizi** > **Altro** > **Intune**.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 2. Nell'elenco del pannello dei profili scegliere **Crea profilo**.
@@ -49,9 +46,9 @@ Queste impostazioni possono essere usate solo dai dispositivi che eseguono Samsu
 
 - **Nome**: immettere **PreventStartPackages**.
 - **Descrizione**: immettere una descrizione (facoltativa), ad esempio "Elenco delle app bloccate".
--     **Tipo di dati**: scegliere **Stringa** dall'elenco a discesa.
--     **URI OMA**: immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
--     **Valore**: immettere l'elenco dei nomi di pacchetti di app che si vuole consentire. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
+-   **Tipo di dati**: scegliere **Stringa** dall'elenco a discesa.
+-   **URI OMA**: immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+-   **Valore**: immettere l'elenco dei nomi di pacchetti di app che si vuole consentire. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>Per un elenco di app che gli utenti del dispositivo sono autorizzati a installare da Google Play Store, escludendo tutte le altre app, specificare le informazioni seguenti:
 - **Nome**: immettere **AllowInstallPackages**.
@@ -69,4 +66,3 @@ Alla successiva verifica del dispositivo assegnato verranno applicate le imposta
 
 
 <!---## Assign the custom profile--->
-

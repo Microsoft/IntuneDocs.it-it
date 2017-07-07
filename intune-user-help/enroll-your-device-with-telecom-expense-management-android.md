@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Registrare il dispositivo Android nella gestione delle spese per telecomunicazioni
 
 È possibile che la propria organizzazione usi software per la gestione delle spese per telecomunicazioni al fine di verificare che i piani dati e voce vengano usati entro limiti accettabili. Al termine della registrazione del dispositivo, verrà quindi chiesto di selezionare la categoria migliore per il dispositivo.
@@ -67,4 +63,3 @@ Toccare la freccia __avanti__ nell'angolo in alto a destra della schermata per p
 Al termine della registrazione, sarà possibile iniziare a esaminare l'utilizzo dei dati nell'app Datalert.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

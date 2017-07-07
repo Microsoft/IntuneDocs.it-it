@@ -1,5 +1,5 @@
 ---
-title: Gestire i contratti di licenza software per PC che eseguono il client software di Intune | Documentazione Microsoft
+title: Gestire i contratti di licenza software per PC che eseguono il client software di Intune
 description: Intune consente di gestire i contratti di licenza del software acquistati tramite Contratti multilicenza Microsoft e del software acquistato tramite altri canali.
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: afaeb5b1af35008e6aa778e4391cafeda979bdc0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gestire i contratti di licenza del software per PC Windows in Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune consente di aggiungere e gestire le informazioni sui contratti di licenza del software acquistato con i contratti multilicenza Microsoft. Queste operazioni possono essere eseguite anche per software Microsoft o non Microsoft acquistato in altri modi. È possibile organizzare le informazioni in gruppi logici.
 
 > [!IMPORTANT]
@@ -181,4 +181,3 @@ Viene visualizzato l'elenco **Tutti i contratti** .
 |Rinominare un gruppo di licenze|Nell'area di lavoro **Licenze** scegliere un gruppo di licenze e quindi scegliere **Modifica gruppo di licenze** dal menu **Attività**.|
 |Eliminare un gruppo di licenze|Nell'area di lavoro **Licenze** scegliere un gruppo di licenze e quindi scegliere **Elimina gruppo di licenze** dal menu **Attività**. **Suggerimento:** tutte le licenze nel gruppo eliminato verranno spostate nel gruppo di licenze **Contratti non assegnati**.|
 |Eliminare un contratto di licenza|Nell'area di lavoro **Licenze** scegliere un contratto e quindi fare clic su **Elimina**. **Suggerimento:** dopo aver eliminato i contratti multilicenza, per aggiornare le informazioni sulle licenze fare clic su **Aggiorna** nella pagina **Panoramica licenze** o della scheda **Generale** di un gruppo di licenze specifico.|
-

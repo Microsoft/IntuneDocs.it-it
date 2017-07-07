@@ -1,7 +1,7 @@
 ---
 title: Impostazioni personalizzate di Intune per dispositivi Windows 10
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni sulle impostazioni che è possibile usare in un profilo personalizzato Windows 10."
+titleSuffix: Intune on Azure
+description: "Informazioni sulle impostazioni che è possibile usare in un profilo personalizzato Windows 10.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 52ad4f141c3b2b73a400c69fb9d9beb174bbac64
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: bda9e939e2d4aba4c4d005ea55ba65bec9c6e217
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Impostazioni personalizzate per i dispositivi Windows 10 in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
  Usare il profilo **personalizzato** di Microsoft Intune per Windows 10 e Windows 10 Mobile per distribuire impostazioni URI OMA (Open Mobile Alliance Uniform Resource Identifier) che possono essere usate per controllare le funzionalità nei dispositivi. Windows 10 rende disponibili molte impostazioni CSP (Configuration Service Provider, provider di servizi di configurazione), ad esempio il [provider di servizi di configurazione dei criteri](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 Se si sta cercando una determinata impostazione, tenere presente che il [profilo di restrizione del dispositivo Windows 10](device-restrictions-windows-10.md) contiene molte impostazioni integrate in Intune per cui non è necessario specificare valori personalizzati.
@@ -62,6 +59,5 @@ Per un elenco completo di tutti i provider di servizi di configurazione (CSP) su
 Non tutte le impostazioni sono compatibili con tutte le versioni di Windows 10. La tabella nell'argomento di Windows indica quali versioni sono supportate per ogni CSP.
 
 Intune inoltre non supporta tutte le impostazioni elencate nell'argomento. Per verificare se Intune supporta l'impostazione desiderata, aprire l'argomento relativo all'impostazione. Ogni pagina relativa a un'impostazione mostra le operazioni supportate. Per usare Intune, l'impostazione deve supportare l'operazione **Add** o **Replace**.
-
 
 
