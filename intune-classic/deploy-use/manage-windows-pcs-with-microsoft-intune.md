@@ -1,5 +1,5 @@
 ---
-title: Gestire i PC con il software client | Documentazione Microsoft
+title: Gestire i PC con il software client
 description: Gestire i PC Windows installando il software client di Intune.
 keywords: 
 author: nathbarn
@@ -14,16 +14,15 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6bd4e3315fd27201e8005b1053fa6e15bf2c21b5
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gestire i PC Windows come computer tramite il client software di Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune offre alle organizzazioni una soluzione completa per la gestione dei dispositivi mobili. Intune consente di gestire i PC Windows come dispositivi mobili usando le funzionalità di gestione dei dispositivi moderni integrate nel sistema operativo Windows 10. Per soddisfare le esigenze di gestione dell'organizzazione, Intune consente anche di gestire i PC Windows come computer con il client del software Intune. Questo metodo di gestione usa le funzionalità di gestione dei computer tradizionali nel sistema operativo Windows legacy.
 
@@ -79,7 +78,7 @@ Il client software di Intune supporta [funzionalità di gestione per la protezio
 
 Quando si usa il software client di Intune per gestire i PC Windows, è possibile usare solo i criteri visualizzati nella sezione **Gestione computer**.
 
-Intune consente di gestire i PC Windows tramite criteri, in modo simile agli oggetti Criteri di gruppo di Windows Server Active Directory Domain Services. Se si gestiscono i computer appartenenti a un dominio di Active Directory mediate Intune, assicurarsi che i criteri di Intune non entrino in conflitto con altri oggetti Criteri di gruppo usati nell'organizzazione. Per altre informazioni, vedere [Criteri di gruppo per principianti](https://technet.microsoft.com/library/hh147307.aspx).
+Intune gestisce PC Windows tramite criteri in modo analogo a Oggetti Criteri di gruppo di Active Directory Domain Services (AD DS) di Windows Server. Se si gestiscono computer appartenenti a un dominio di Active Directory con Intune, [assicurarsi che i criteri di Intune non siano in conflitto con altri oggetti Criteri di gruppo](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) usati nell'organizzazione. Per altre informazioni, vedere [Criteri di gruppo per principianti](https://technet.microsoft.com/library/hh147307.aspx).
 
   ![Selezionare il modello per nuovi criteri relativi ai PC Windows](../media/select-template-for-pc-policy.png)
 
@@ -115,4 +114,3 @@ Nella console di amministrazione di Intune alcune sezioni, ad esempio **Aggiorna
 Il software client di Intune viene in genere eseguito in modalità non interattiva in background, senza richiedere interazione da parte dell'utente o procedure per la risoluzione dei problemi. Se è necessario risolvere i problemi di gestione dei PC, è possibile controllare i log. Il software client di Intune e i log corrispondenti vengono installati nella directory %Program Files%\Microsoft\OnlineManagement.
 
 È possibile anche esaminare [Risolvere i problemi di installazione client in Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-client-setup-in-microsoft-intune) per verificare la presenza di eventuali problemi e le risoluzioni o le soluzioni alternative possibili.
-

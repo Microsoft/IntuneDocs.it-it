@@ -1,7 +1,7 @@
 ---
 title: Configurare le impostazioni relative alle restrizioni dei dispositivi di Intune
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni su come usare Intune per configurare le impostazioni e le funzionalità nei dispositivi gestiti."
+titleSuffix: Intune on Azure
+description: "Informazioni su come usare Intune per configurare le impostazioni e le funzionalità nei dispositivi gestiti.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 600ff92bf1b53800712fc2e77fef7158ab765970
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8652b2b6db340f3b0cddcf538fa418c8774b1d6c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Come configurare le impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Le restrizioni dei dispositivi consentono di controllare una vasta gamma di impostazioni e funzionalità relative a numerose categorie tra cui sicurezza, browser, hardware e condivisione dei dati. Ad esempio, è possibile creare un profilo di restrizione dei dispositivi che impedisce agli utenti di dispositivi iOS di accedere alla fotocamera.
 
@@ -35,7 +32,7 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Creare un profilo dispositivo contenente le impostazioni relative alle restrizioni del dispositivo
 
 1. Accedere al portale Azure.
-2. Scegliere **Altri servizi** > **Altro** > **Intune**.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
 3. Nel pannello dei profili scegliere **Crea profilo**.
@@ -67,5 +64,4 @@ Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegna
 In questo esempio generale verrà creato un criterio di restrizione che impedisce l'uso delle app della fotocamera incorporata nei dispositivi Android.
 
 ![Come disabilitare la fotocamera su dispositivi Android](./media/disable-android-camera.png)
-
 

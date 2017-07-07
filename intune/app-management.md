@@ -1,12 +1,12 @@
 ---
-title: "Che cos&quot;è la gestione delle app | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: usare questo argomento per apprendere le nozioni fondamentali sulla gestione delle app con Microsoft Intune.'
+title: "Che cos'è la gestione delle app"
+titleSuffix: Intune on Azure
+description: Usare questo argomento per apprendere le nozioni fondamentali sulla gestione delle app con Microsoft Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,22 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56eefde5969f5426886c07bd6e9a548c8526e82e
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Il compito degli amministratori IT consiste nell'accertarsi che gli utenti finali abbiano accesso alle app di cui hanno bisogno per svolgere il proprio lavoro. Non sempre questo compito risulta semplice da svolgere, perché:
+Gli amministratori IT hanno la responsabilità di accertarsi che gli utenti finali abbiano accesso alle app di cui hanno bisogno per svolgere il proprio lavoro. Non sempre questo compito risulta semplice da svolgere, perché:
 - Esiste una vasta gamma di piattaforme per dispositivi e tipi di applicazione.
-- Potrebbe essere necessario gestire le applicazioni sui dispositivi aziendali e sui dispositivi personali degli utenti.
-- Queste operazioni devono essere svolte garantendo che rete e dati rimangano protetti. 
+- Potrebbe essere necessario gestire le app nei dispositivi aziendali e nei dispositivi personali degli utenti.
+- Occorre assicurarsi che rete e dati rimangano protetti.
 
 In aggiunta, potrebbe essere necessario assegnare e gestire le applicazioni su dispositivi che non sono registrati con Intune.
 
@@ -63,7 +60,6 @@ Intune offre un'ampia gamma di funzionalità che consente di usare le app necess
 
 <sup>2</sup> Si applica solo ai dispositivi gestiti da Intune.
 
-
 ## <a name="how-to-get-started"></a>Come iniziare
 
 Il carico di lavoro **App per dispositivi mobili** contiene numerose informazioni sulle app ed è accessibile come indicato di seguito:
@@ -75,12 +71,13 @@ Il carico di lavoro **App per dispositivi mobili** contiene numerose informazion
     ![Carico di lavoro App per dispositivi mobili](./media/apps-workload.png)
 
 ### <a name="manage"></a>Gestire
-- **App**: questo è il punto in cui la maggior parte delle app verrà aggiunta, assegnata e monitorata. 
+- **App**: questo è il nodo in cui la maggior parte delle app viene aggiunta, assegnata e monitorata.
     - [Aggiungere app](apps-add.md)
     - [Assegnare le app](apps-deploy.md)
     - [Eseguire il monitoraggio delle app](apps-monitor.md)
-- **Criteri di configurazione dell'app**: consentono di specificare le impostazioni che potrebbero essere necessarie quando l'utente esegue un'app. Per informazioni dettagliate, vedere:
-    - [App configuration policies](app-configuration-policies.md) (Criteri di configurazione dell'app)
+- **Criteri di configurazione dell'app**: consentono di specificare le impostazioni che potrebbero essere necessarie quando l'utente esegue un'app.
+    - [Criteri di configurazione delle app iOS](app-configuration-policies-use-ios.md)
+    - [Criteri di configurazione delle app Android](app-configuration-policies-use-android.md)
 - **Criteri di protezione delle app**: consentono di associare le impostazioni a un'app per proteggere i dati aziendali da essa usati. Ad esempio, si potrebbero limitare le funzionalità di comunicazione di un'applicazione con altre applicazioni o richiedere all'utente di immettere un PIN per accedere a un'app aziendale.
     - [App protection policies](app-protection-policies.md) (Criteri di protezione delle app)
 - **Cancellazione selettiva di app**: consente di rimuovere solo i dati aziendali da un dispositivo utente selezionato.
@@ -100,8 +97,7 @@ Per informazioni dettagliate, vedere [Eseguire il monitoraggio delle app](apps-m
 ### <a name="setup"></a>Installazione
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Windows Store per le aziende**: consente di configurare l'integrazione di Windows Store per le aziende. Al termine dell'operazione, è possibile sincronizzare le applicazioni acquistate con Intune, assegnarle monitorare l'uso delle licenze. 
+- **Windows Store per le aziende**: consente di configurare l'integrazione di Windows Store per le aziende. In seguito è possibile sincronizzare le applicazioni acquistate con Intune, assegnarle e monitorare l'uso delle licenze.
     - [Applicazioni acquistate con Volume Purchase Program da Windows Store per le aziende](windows-store-for-business.md)
-- **Personalizzazione del portale aziendale**: consente di personalizzare il portale aziendale con il marchio della società. 
+- **Personalizzazione del portale aziendale**: consente di personalizzare il portale aziendale con il marchio della società.
     - [Company portal configuration](company-portal-app.md) (Configurazione del Portale aziendale)
-

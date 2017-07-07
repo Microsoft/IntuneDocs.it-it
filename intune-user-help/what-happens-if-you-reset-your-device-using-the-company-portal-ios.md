@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: be7a0e7650e798babba66344e50abe7f958f1dda
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Che cosa avviene se si reimposta un dispositivo iOS con l'app Portale aziendale?
 
 Quando si usa il Portale aziendale per ripristinare il dispositivo iPhone o iPad, alcune app e impostazioni nel dispositivo potrebbero essere eliminate, inclusi alcuni dati personali. Le conseguenze nei singoli dispositivi dipendono dal modo in cui viene usato il dispositivo, come descritto negli elenchi seguenti.
@@ -44,4 +39,3 @@ Quando si usa il Portale aziendale per ripristinare il dispositivo iPhone o iPad
 -   L'account di posta elettronica aziendale e i messaggi di posta elettronica non salvati verranno eliminati.
 
 Per informazioni, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

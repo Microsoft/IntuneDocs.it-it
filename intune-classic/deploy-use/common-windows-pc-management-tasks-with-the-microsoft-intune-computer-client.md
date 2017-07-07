@@ -14,15 +14,12 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 535979b6adf25c67daaab2df924cbb0e21e15a36
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Attività comuni di gestione di PC Windows con il client software di Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -39,6 +36,5 @@ Questo argomento elenca le attività che è possibile eseguire per gestire i des
 - [Gestire il collegamento utente-dispositivo per PC Windows](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md): spiega quando e come è necessario collegare un utente a un PC prima di distribuire software all'utente in questione.
 
 - [Request and provide remote assistance for Windows PCs](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) (Richiedere e fornire assistenza remota per i PC Windows): descrive in che modo gli utenti di PC Intune ottengono assistenza remota, indica i prerequisiti e descrive l'installazione di TeamViewer.
-
 
 

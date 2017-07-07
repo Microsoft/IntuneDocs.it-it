@@ -1,5 +1,5 @@
 ---
-title: Personalizzare le visualizzazioni della console per i ruoli di amministratore | Documentazione Microsoft
+title: Personalizzare le visualizzazioni della console per i ruoli di amministratore
 description: Usare questo argomento per filtrare la visualizzazione della console di amministrazione di Intune per consentire agli amministratori di visualizzare solo gli elementi necessari per il proprio ruolo.
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1ab4c0a7ae79d0d3396efe7c54deaf1d794a5aeb
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b2016bc4f2c7ef63722becc413422d618939336
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>Personalizzare le visualizzazioni della console di Intune in base ai ruoli di amministratore
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -72,4 +69,3 @@ ms.lasthandoff: 05/23/2017
         -   Reimpostare un passcode
 
 Il livello di accesso designato viene assegnato all'amministratore configurato quando apre la console di amministrazione di Intune.
-

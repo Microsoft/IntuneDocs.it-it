@@ -1,5 +1,5 @@
 ---
-title: Installazione dell&quot;app Portale aziendale per iOS e macOS | Microsoft Docs
+title: Installazione dell'app Portale aziendale per iOS e macOS | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.contentlocale: it-it
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo iOS o macOS in Intune?
 
 Quando si installa l'app Portale aziendale e si registra il dispositivo iOS o macOS in Intune, è possibile usare tale app per:
@@ -68,4 +63,3 @@ Quando il dispositivo è registrato, l'amministratore IT può:
 -   Abilitare o disabilitare la sincronizzazione automatica dei file in modalità roaming sul dispositivo. Se è consentita la sincronizzazione automatica dei file, si potrebbero subire addebiti per questo servizio.
 
 Per eventuali domande, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
-

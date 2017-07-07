@@ -11,19 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: be200787cf628e79e95ca40f5f733123aa2e58f9
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="you-need-to-enable-encryption"></a>È necessario abilitare la crittografia
 
@@ -32,4 +29,3 @@ Quando si crittografa un dispositivo, si esegue il wrapping delle informazioni i
 ovvero un software che consente di crittografare l'unità e di proteggere i dati. Per abilitare BitLocker nei dispositivi Windows 10, seguire [queste istruzioni](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d).
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

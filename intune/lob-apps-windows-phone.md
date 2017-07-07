@@ -1,7 +1,7 @@
 ---
-title: Come aggiungere app line-of-business per Windows Phone in Intune | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: Informazioni sull&quot;aggiunta di app line-of-business per Windows Phone a Intune.'
+title: Come aggiungere app line-of-business per Windows Phone in Intune
+titleSuffix: Intune on Azure
+description: Informazioni sull'aggiunta di app line-of-business per Windows Phone a Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4d9adb9a5120c83023bb25199f666f1352752562
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 5c27b1a7d0c24bacc206cabe65bd3529a50fc2b4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per Windows Phone in Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Passaggio 1: specificare il file di installazione del software
@@ -67,4 +65,3 @@ ms.lasthandoff: 05/23/2017
 2. Scegliere **Aggiungi** per caricare l'app in Intune.
 
 L'app creata verrà visualizzata nell'elenco di app da cui è possibile assegnarla ai gruppi selezionati. Per altre informazioni, vedere [Come assegnare app ai gruppi](apps-deploy.md).
-

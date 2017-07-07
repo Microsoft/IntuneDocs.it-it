@@ -1,5 +1,5 @@
 ---
-title: App consentite e bloccate per KNOX | Documentazione Microsoft
+title: App consentite e bloccate per KNOX
 description: Personalizzare il profilo per creare un elenco di app consentite e bloccate per KNOX.
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b215425534e833db7e92e3f60fc507a168ef576f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Usare criteri personalizzati per consentire e bloccare app per dispositivi Samsung KNOX Standard
 
@@ -43,9 +40,9 @@ Queste impostazioni possono essere usate solo dai dispositivi che eseguono Samsu
     
     - **Nome dell'impostazione.** Immettere **PreventStartPackages**.
     - **Descrizione dell'impostazione.** Immettere una descrizione (facoltativa), ad esempio 'Elenco delle app bloccate'.
-    -     **Tipo di dati.** Scegliere **Stringa** dall'elenco a discesa.
-    -     **URI OMA.** Immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -     **Valore.** Immettere l'elenco dei nomi di pacchetti di app che si vuole bloccare. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
+    -   **Tipo di dati.** Scegliere **Stringa** dall'elenco a discesa.
+    -   **URI OMA.** Immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+    -   **Valore.** Immettere l'elenco dei nomi di pacchetti di app che si vuole bloccare. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
 
     Per un elenco di app che gli utenti del dispositivo sono autorizzati a installare da Google Play Store, escludendo tutte le altre app, specificare le informazioni seguenti:
 
@@ -74,4 +71,3 @@ Quando si seleziona un criterio distribuito, è possibile visualizzare altre inf
 
 ### <a name="see-also"></a>Vedere anche
 [Impostazioni dei criteri di Android e Samsung KNOX in Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
-

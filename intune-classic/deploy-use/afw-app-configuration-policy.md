@@ -1,6 +1,6 @@
 ---
-title: Criteri di configurazione delle app Android for Work | Microsoft Docs
-description: Usare i criteri di configurazione delle app per dispositivi mobili in Intune per specificare le impostazioni che possono essere richieste quando gli utenti eseguono un&quot;app Android for Work.
+title: Criteri di configurazione delle app Android for Work
+description: Usare i criteri di configurazione delle app per dispositivi mobili in Intune per specificare le impostazioni che possono essere richieste quando gli utenti eseguono un'app Android for Work.
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,15 +14,12 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 69cee5763cb8a24b4a3be6e981bcd46512bfc3ba
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f2284920852de5a79cf47fee81922a5b069157c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configurare le app Android for Work con i criteri di configurazione delle app per dispositivi mobili in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,4 +73,3 @@ Quando l'app distribuita viene eseguita in un dispositivo, verrà eseguita con l
 
 > [!TIP]
 > Distribuire solo un criterio di configurazione dell'app per ogni app a un utente.
-

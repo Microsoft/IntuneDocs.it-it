@@ -1,7 +1,7 @@
 ---
 title: Creare e distribuire i criteri di protezione delle app
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: informazioni sul modo in cui i criteri di protezione delle app di Intune consentono di proteggere i dati aziendali usati dalle app gestite.'
+titleSuffix: Intune on Azure
+description: Informazioni sul modo in cui i criteri di protezione delle app di Intune consentono di proteggere i dati aziendali usati dalle app gestite."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,21 +15,23 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d63e99561766268941b2c6d8b3bb6a1dd028f72c
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 56a19bc4d970f230f719af9369dada45ffb65e76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Se non ci si trova nel servizio Intune nel programma di anteprima del portale di Azure**, questo argomento spiega [come creare i criteri di protezione delle app](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) nella console di Intune classica.
+## <a name="before-you-begin"></a>Prima di iniziare
+
+Per istruzioni relative alla console di Intune classica, vedere [Come creare i criteri di protezione delle app](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
 
 I criteri di protezione delle app possono essere applicati in app eseguite su dispositivi gestiti o non gestiti da Intune. Per una descrizione pi√π dettagliata del funzionamento dei criteri di protezione delle app e degli scenari supportati dai criteri di protezione delle app di Intune, vedere [What is Microsoft Intune app protection policies](app-protection-policy.md)(Cosa sono i criteri di protezione delle app di Microsoft Intune).
+
+Per un elenco delle app supportate da MAM, vedere [Elenco di app MAM](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Creare un criterio di protezione delle app
 1.  Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **Criteri di protezione delle app**.
@@ -116,7 +118,6 @@ Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale dovr√
 ## <a name="policy-settings"></a>Impostazioni criteri
 Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Android, selezionare una delle seguenti voci:
 
-> [!div class="op_single_selector"]
 - [Criteri iOS](app-protection-policy-settings-ios.md)
 - [Criteri Android](app-protection-policy-settings-android.md)
 
@@ -126,4 +127,3 @@ Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Andr
 ### <a name="see-also"></a>Vedere anche
 * [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](app-protection-enabled-apps-android.md)
 * [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](app-protection-enabled-apps-ios.md)
-

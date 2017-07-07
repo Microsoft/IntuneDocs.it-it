@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b5521762-a80c-4630-ae30-38b471da216b
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 7f9509ebaf4a0d11568a6cf094fbf699b38321aa
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-skycure"></a>È necessario risolvere una minaccia trovata da Skycure
 
 Skycure ha rilevato una potenziale minaccia nel dispositivo ed è necessario risolvere il problema per ottenere di nuovo l'accesso alla posta elettronica, alle app e ai file aziendali o dell'istituto di istruzione. Il messaggio visualizzato potrebbe essere simile al seguente:
@@ -49,4 +45,3 @@ Se è stata installata un'app che Skycure considera una minaccia, verrà visuali
 Dopo aver disinstallato l'app, si riottiene subito accesso alla posta elettronica e ai dati aziendali. Se si ignora la richiesta di disinstallare l'app, si perderà l'accesso alla posta elettronica e ai dati fino a quando l'app non verrà disinstallata.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

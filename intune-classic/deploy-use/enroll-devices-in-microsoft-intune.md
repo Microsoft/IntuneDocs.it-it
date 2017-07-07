@@ -1,6 +1,6 @@
 ---
 title: Registrare i dispositivi
-description: Gestione dei dispositivi mobili (MDM) usa la registrazione per gestire i dispositivi e consentire l&quot;accesso alle risorse.
+description: Gestione dei dispositivi mobili (MDM) usa la registrazione per gestire i dispositivi e consentire l'accesso alle risorse.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-devices-for-management-in-intune"></a>Registrare i dispositivi per la gestione in Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -132,4 +129,3 @@ Intune può gestire le piattaforme dei dispositivi seguenti:
 - [Prerequisiti per la registrazione del dispositivo](prerequisites-for-enrollment.md)
 - [Gestire i dispositivi di proprietà dell'azienda](manage-corporate-owned-devices.md)
 - [Dispositivi mobili e computer supportati](/intune/supported-devices-browsers#intune-supported-devices)
-

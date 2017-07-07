@@ -1,12 +1,12 @@
 ---
-title: Gestire il trasferimento di dati tra app iOS | Anteprima di Intune in Azure
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: Usare questo argomento per comprendere come è possibile usare la funzionalità Apri in di iOS e i criteri di gestione delle app per dispositivi mobili per gestire i trasferimenti di dati tra le app."
+title: Gestire il trasferimento di dati tra app iOS
+titleSuffix: Intune on Azure
+description: "Usare questo argomento per comprendere come è possibile usare la funzionalità Apri in di iOS e i criteri di gestione delle app mobili per gestire i trasferimenti di dati tra le app.\""
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Come gestire il trasferimento di dati tra app iOS
 ## <a name="manage-ios-apps"></a>Gestire le app iOS
 La protezione dei dati aziendali prevede anche che ci si assicuri che i trasferimenti di file siano limitati alle app gestite dall'utente.  È possibile gestire le app iOS nei modi seguenti:
@@ -36,7 +33,7 @@ La funzionalità di **gestione Open In** per i dispositivi iOS consente i trasfe
 ##  <a name="using-app-protection-with-ios-apps"></a>Uso della protezione delle app con app per iOS
 I criteri di protezione delle app possono essere usati con la funzionalità di **gestione Apri in** di iOS per proteggere i dati aziendali nei modi seguenti:
 
--   **Dispositivi di proprietà dei dipendenti non gestiti da soluzioni MDM:** è possibile impostare i criteri di protezione delle app su **Allow app to transfer data to only managed apps** (Consenti all'app di trasferire i dati solo alle app gestite). L'utente finale non sarà in grado di aprire il file protetto in un'app non gestita da criteri.
+-   **Dispositivi di proprietà dei dipendenti non gestiti da soluzioni MDM:** è possibile impostare i criteri di protezione delle app su **Consenti all'app di trasferire i dati ad altre app: App gestite da criteri**. Il comportamento Apri in un'app gestita da criteri presenterà solo altre app gestite da criteri come opzione per la condivisione. Se un utente tenta di inviare un file protetto da criteri come allegato dalla posta nativa di OneDrive, il file risulterà illeggibile.
 
 -   **Dispositivi gestiti da Intune:** per i dispositivi registrati in Intune, il trasferimento dei dati tra app con criteri di protezione delle app e altre app iOS gestite distribuite tramite Intune è consentito automaticamente. Per consentire il trasferimento dei dati tra app con criteri di protezione delle app, abilitare l'impostazione **Allow app to transfer data to only managed apps** (Consenti all'app di trasferire i dati solo alle app gestite). È possibile usare la funzionalità di **gestione Open In** per controllare il trasferimento dei dati tra le app distribuite tramite Intune.   
 
@@ -108,4 +105,3 @@ Prima di tutto, [creare e assegnare criteri di protezione delle app](app-protect
 
 ### <a name="see-also"></a>Vedere anche
 [Che cos'è un criterio di protezione delle app di Intune?](app-protection-policy.md)
-

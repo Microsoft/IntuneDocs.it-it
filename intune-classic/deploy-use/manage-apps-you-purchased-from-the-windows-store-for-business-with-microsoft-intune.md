@@ -1,5 +1,5 @@
 ---
-title: Gestire le app di Windows Store per le aziende | Documentazione Microsoft
+title: Gestire le app di Windows Store per le aziende
 description: Connettere Microsoft Intune a Windows Store per le aziende se si vuole gestire e distribuire app acquistate con Volume Purchase Program dalla console di Intune
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a6c84735b6bb8e7f636ea155437e7d90b8f3cc0
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 888d825fb9955e97b49e54a0c36ab882055076d8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>Gestire le app acquistate in Windows Store per le aziende con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -86,4 +83,3 @@ Quando si distribuisce un'app di Windows Store per le aziende, viene usata una l
 
 ### <a name="see-also"></a>Vedere anche
 [Aggiungere app per dispositivi mobili in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)
-

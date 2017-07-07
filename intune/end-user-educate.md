@@ -13,16 +13,15 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 623ed8dda2b35a895e5a00c0639a647624f74e59
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 3f60ee6334ac8fa00dcaaa524485c5339b040381
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Come informare gli utenti finali su Microsoft Intune
+
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Microsoft Intune consente di offrire agli utenti la possibilità di usare i dispositivi mobili, mantenendo protetti i dati aziendali. Una distribuzione corretta implica numerosi passaggi, tra cui la valutazione di Intune tramite una [versione di valutazione gratuita](app-sdk.md).
 
@@ -57,15 +56,15 @@ Rassicurare gli utenti sarà utile per agevolare la distribuzione. L'elenco segu
 
 * **Android**
   * [Uso di un dispositivo Android con Intune](/intune-user-help/using-your-android-device-with-intune)
-  * [Modalità di recupero delle app per gli utenti di Android](/intune-classic/deploy-use/how-your-android-users-get-their-apps)
+  * [Modalità di recupero delle app per gli utenti di Android](end-user-apps-android.md)
 
 * **iOS**
   * [Uso di un dispositivo iOS con Intune](/intune-user-help/using-your-ios-or-macos-device-with-intune)
-  * [Modalità di recupero delle app per gli utenti di iOS](/intune-classic/deploy-use/how-your-ios-users-get-their-apps)
+  * [Modalità di recupero delle app per gli utenti di iOS](end-user-apps-ios.md)
 
 * **Windows**
   * [Uso di un dispositivo Windows con Intune](/intune-user-help/using-your-windows-device-with-intune)
-  * [Modalità di recupero delle app per gli utenti di Windows](/intune-classic/deploy-use/how-your-windows-users-get-their-apps)
+  * [Modalità di recupero delle app per gli utenti di Windows](end-user-apps-windows.md)
 
 * __Disponibilità e chiarezza.__ È importante comunicare chiaramente agli utenti cosa si intende gestire nei loro dispositivi. Indicare il tipo di dati che verranno raccolti e i motivi per cui vengono raccolti. Informarli sull'uso previsto di tutti i dati. [Microsoft ritiene che gli utenti abbiano il diritto di ricevere tutte le informazioni possibili su come vengono gestiti i dati dei clienti nel cloud](https://www.microsoft.com/trustcenter/about/transparency) ed è convinta che questa filosofia possa aumentare notevolmente la soddisfazione degli utenti finali per Intune.
 
@@ -73,4 +72,3 @@ Rassicurare gli utenti sarà utile per agevolare la distribuzione. L'elenco segu
 > La trasparenza, laddove possibile, è fondamentale per il successo della distribuzione.
 
 L'obiettivo è trovare la giusta combinazione di fiducia e criteri di conformità accuratamente elaborati per assicurarsi che gli utenti finali sappiano che, anche se l'azienda *può* avere accesso a determinati tipi di dati personali, *non è intenzionata a farlo* e che sappiano che l'azienda è responsabile di tutelare la loro privacy e conoscano gli effetti di eventuali violazioni. La stesura di un'informativa specifica in collaborazione con i reparti legale e delle risorse umane può essere utile per soddisfare dipendenti particolarmente esigenti.
-

@@ -1,7 +1,7 @@
 ---
 title: "Monitorare i criteri di conformità dei dispositivi di Intune"
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni su come monitorare i criteri di conformità dei dispositivi."
+titleSuffix: Intune on Azure
+description: "Informazioni su come monitorare i criteri di conformità dei dispositivi.\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -123,8 +121,6 @@ Se si fa clic sul pulsante **Filtra**, viene visualizzata l'area a comparsa del 
 
 Se si fa clic sul pulsante **Aggiorna**, l'area a comparsa dovrebbe essere chiusa e i risultati dovrebbero essere aggiornati in base ai criteri di filtro selezionati.
 
-![Pulsante per l'aggiornamento del filtro](./media/idc-5.png)
-
 ##### <a name="device-details"></a>Dettagli dispositivo
 
 Se si fa clic su un dispositivo, viene aperto il **pannello dei dispositivi** con il dispositivo selezionato. È così possibile visualizzare altri dettagli sull'impostazione di criterio di conformità applicata al dispositivo.
@@ -154,4 +150,3 @@ Questo report consente di visualizzare, per ogni singola impostazione di conform
 Quando si fa clic sul riquadro Conformità dell'impostazione e quindi su una delle impostazioni dei criteri di conformità dei dispositivi, è possibile vedere lo **stato di conformità**, l'**alias di posta elettronica dell'utente**, il **modello** e la **posizione** per ogni dispositivo interessato dall'impostazione dei criteri di conformità dei dispositivi.
 
 ![Riquadro Conformità dell'impostazione](./media/idc-11.png)
-

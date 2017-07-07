@@ -1,7 +1,7 @@
 ---
 title: Che cosa sono i criteri di protezione delle app
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: usare questo argomento per informazioni sulla protezione dei dati aziendali con i criteri di protezione delle app di Microsoft Intune.'
+titleSuffix: Intune on Azure
+description: Usare questo argomento per informazioni sulla protezione dei dati aziendali con i criteri di protezione delle app di Microsoft Intune."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,19 +15,16 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 01f77e3511785d2c8da2edcd92df809b3b7e73e7
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13b3199108c34a61d117e4d89d118bdd05d7d20f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="what-are-app-protection-policies"></a>Che cosa sono i criteri di protezione delle app?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 I criteri di protezione delle app di Microsoft Intune consentono di proteggere i dati aziendali ed evitare la perdita di dati.
 
@@ -68,7 +65,7 @@ L'uso di soluzioni MDM con criteri di protezione delle app comporta vantaggi agg
 
 -   Android 4 o versioni successive
 
-I dispositivi Windows non sono attualmente supportati. Tuttavia, quando si registrano i dispositivi di Windows 10 con Intune, è possibile usare Windows Information Protection, che offre funzionalità simili. Per altre informazioni, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+I dispositivi Windows non sono attualmente supportati. Tuttavia, quando si registrano i dispositivi di Windows 10 con Intune, è possibile usare Windows Information Protection, che offre funzionalità simili. Per altre informazioni, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Come i criteri di protezione delle app proteggono i dati dell'app
 
 ####  <a name="apps-without-app-protection-policies"></a>App senza criteri di protezione delle app
@@ -138,4 +135,3 @@ Ad esempio, quando un utente avvia l'app OneDrive usando il proprio account azie
 ##  <a name="next-steps"></a>Passaggi successivi
 
 [Come creare e distribuire i criteri di protezione delle app con Microsoft Intune](app-protection-policies.md)
-

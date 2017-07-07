@@ -1,6 +1,6 @@
 ---
 title: Guida a Microsoft Intune App SDK per sviluppatori di Android
-description: "Microsoft Intune App SDK per Android permette di integrare le funzionalità di gestione delle app mobili (MAM, Mobile App Management) di Intune nell&quot;app Android."
+description: "Microsoft Intune App SDK per Android permette di integrare le funzionalità di gestione delle app mobili (MAM, Mobile App Management) di Intune nell'app Android."
 keywords: SDK
 author: mtillman
 manager: angrobe
@@ -14,16 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
-ms.openlocfilehash: 7dfcc0bf8f3da1e600df59927db6e78ec2021e0f
-ms.contentlocale: it-it
-ms.lasthandoff: 06/12/2017
-
-
+ms.openlocfilehash: 403917adb1fb1156f0ed0027a316677d1e4f2f84
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/03/2017
 ---
-
-
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guida a Microsoft Intune App SDK per sviluppatori di Android
 
 > [!NOTE]
@@ -80,7 +76,8 @@ Se viene usato [ProGuard](http://proguard.sourceforge.net/) (o qualsiasi altro m
 Le librerie ADAL (Azure Active Directory Authentication Library) possono avere le proprie restrizioni per ProGuard. Se l'app integra ADAL, è necessario seguire la documentazione di ADAL in merito a tali restrizioni.
 
 ### <a name="entry-points"></a>Punti di ingresso
-======= La libreria [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) (Azure Active Directory Authentication Library) richiede queste autorizzazioni per eseguire l'autenticazione negoziata. Se queste autorizzazioni non vengono concesse all'app o vengono revocate dall'utente, verranno disabilitati i flussi di autenticazione che richiedono il broker (l'app Portale aziendale).
+
+La libreria [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) (Azure Active Directory Authentication Library) richiede queste autorizzazioni per eseguire l'autenticazione negoziata. Se queste autorizzazioni non vengono concesse all'app o vengono revocate dall'utente, verranno disabilitati i flussi di autenticazione che richiedono il broker (l'app Portale aziendale).
 
 Intune App SDK richiede modifiche del codice sorgente di un'app per abilitare i criteri di protezione delle app di Intune. A questo scopo, vengono sostituite le classi base di Android con le classi base di Intune equivalenti, che hanno nomi con il prefisso **MAM**. Le classi dell'SDK si trovano tra la classe base per Android e la versione derivata dell'app di tale classe. Usando un'attività come esempio, la gerarchia di ereditarietà risultante ha un aspetto simile a questa: `Activity` > `MAMActivity` > `AppSpecificActivity`.
 
@@ -161,7 +158,7 @@ Intune App SDK richiede tre [autorizzazioni di sistema Android](https://develope
 
 * `android.permission.USE_CREDENTIALS`
 
-La libreria [ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) (Azure Active Directory Authentication Library) richiede queste autorizzazioni per eseguire l'autenticazione negoziata. Se queste autorizzazioni non vengono concesse all'app o vengono revocate dall'utente, verranno disabilitati i flussi di autenticazione che richiedono il broker (l'app Portale aziendale).
+La libreria [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) (Azure Active Directory Authentication Library) richiede queste autorizzazioni per eseguire l'autenticazione negoziata. Se queste autorizzazioni non vengono concesse all'app o vengono revocate dall'utente, verranno disabilitati i flussi di autenticazione che richiedono il broker (l'app Portale aziendale).
 
 ## <a name="logging"></a>Registrazione
 
@@ -410,7 +407,7 @@ Le notifiche seguenti vengono inviate all'app e alcune possono richiedere la par
 
 Leggere prima di tutto le linee guida sull'integrazione di ADAL disponibili nel [repository ADAL su GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-android).
 
-L'SDK si basa su [ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) per gli scenari di [autenticazione](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/) e avvio condizionale, che richiedono la configurazione delle app con [Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/). I valori di configurazione vengono comunicati all'SDK tramite i metadati di AndroidManifest.
+L'SDK si basa su [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) per gli scenari di [autenticazione](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) e avvio condizionale, che richiedono la configurazione delle app con [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). I valori di configurazione vengono comunicati all'SDK tramite i metadati di AndroidManifest.
 
 Per configurare l'app e abilitare l'autenticazione appropriata, aggiungere il codice seguente al nodo dell'app in AndroidManifest.xml. Alcune di queste configurazioni sono necessarie solo se l'app usa ADAL per l'autenticazione in generale. In questo caso, saranno necessari i valori specifici usati dall'app per registrare se stessa con AAD. Questo avviene per evitare che all'utente finale venga chiesta l'autenticazione due volte, a causa del fatto che AAD riconosce due valori di registrazione separati, uno dall'app e uno dall'SDK.
 
@@ -1181,4 +1178,3 @@ Intune SDK mantiene il contratto fornito dall'API Android, ma è possibile che v
 * Usare gli strumenti di compilazione di Android SDK più recenti.
 
 * Rimuovere tutte le librerie non necessarie e non in uso, ad esempio android.support.v4.
-

@@ -1,5 +1,5 @@
 ---
-title: Configurare l&quot;infrastruttura di certificazione per SCEP
+title: Configurare l'infrastruttura di certificazione per SCEP
 description: Infrastruttura per la creazione e la distribuzione di profili certificato SCEP.
 keywords: 
 author: lleonard-msft
@@ -14,12 +14,11 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 9b62e03d88055c19a04c3968a1f060e20ae4fc65
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurare l'infrastruttura di certificazione per SCEP
 
@@ -353,4 +352,3 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
 
 ## <a name="next-steps"></a>Passaggi successivi
 A questo punto è possibile configurare i profili certificato come descritto in [Configure certificate profiles](Configure-Intune-certificate-profiles.md) (Configurare i profili certificato).
-

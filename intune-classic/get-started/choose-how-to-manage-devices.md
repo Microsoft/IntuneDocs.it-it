@@ -1,5 +1,5 @@
 ---
-title: Scegliere come gestire i dispositivi | Documentazione Microsoft
+title: Scegliere come gestire i dispositivi
 description: Informazioni sui diversi modi per registrare e gestire i dispositivi.
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dfd79323c7db53cb3291f729878bcd1d36f93fe7
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0dbe387ee6b8130e3dc64323f89b38e868087dfe
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="choose-how-to-manage-devices"></a>Scegliere come gestire i dispositivi
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -48,12 +45,11 @@ Registrare i PC Windows per ottenere la maggior parte delle funzionalità. Tutta
 - Endpoint Protection e Windows Firewall
 - Assistenza remota agli utenti con il software TeamViewer
 
-Per un elenco dettagliato delle funzionalità di gestione da usare con ogni metodo, vedere [Mobile device management capabilities](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) (Funzionalità della gestione di dispositivi mobili).
-Per informazioni sui dispositivi e i PC supportati da Intune, vedere [Dispositivi mobili e computer supportati](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
+Per un elenco dettagliato delle funzionalità di gestione da usare con ogni metodo, vedere [Mobile device managem/intune/supported-devices-browserssoft-intune).
+Per informazioni sui dispositivi e i PC supportati da Intune, vedere [Dispositivi mobili e computer supportati](/intune/supported-devices-browsers#intune-supported-devices).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Scegliere come registrare i dispositivi mobili](/intune-classic/get-started/choose-how-to-enroll-devices1)
 - [Gestire i PC Windows con il software client per PC di Intune](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)
 - [Gestione dei dispositivi mobili con Exchange ActiveSync e Microsoft Intune](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
-

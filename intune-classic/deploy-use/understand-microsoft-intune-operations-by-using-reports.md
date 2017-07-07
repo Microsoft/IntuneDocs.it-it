@@ -1,6 +1,6 @@
 ---
-title: Raccogliere informazioni operative tramite i report | Documentazione Microsoft
-description: Creare e gestire report su software, hardware e licenze software dell&quot;organizzazione.
+title: Raccogliere informazioni operative tramite i report
+description: Creare e gestire report su software, hardware e licenze software dell'organizzazione.
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,16 +14,12 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Comprendere le operazioni di Microsoft Intune con l'uso dei report
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,6 +69,5 @@ Inoltre, i report supportano le seguenti operazioni:
 |**Salva**|Nella pagina **Crea nuovo report** ogni utente può salvare fino a 100 report. Configurare i parametri del report in base ai propri requisiti e quindi scegliere **Salva**o **Salva con nome** se si vuole usare un altro nome.|
 |**Carica**|Nella pagina **Crea nuovo report** scegliere **Carica** per recuperare i gruppi di parametri report precedentemente salvati.|
 |**Eliminazione**|Nell'area di lavoro **Report** selezionare il tipo di report desiderato e scegliere **Carica**. Quindi, nell'elenco dei report, scegliere l'icona di eliminazione (x) accanto al report.|
-
 
 

@@ -1,6 +1,6 @@
 ---
 title: Usare app con accesso condizionale MAM
-description: "Informazioni su come l&quot;accesso condizionale per la gestione delle app per dispositivi mobili può essere usato per controllare le app che hanno accesso ai servizi di Office 365."
+description: "Informazioni su come l'accesso condizionale per la gestione delle app per dispositivi mobili può essere usato per controllare le app che hanno accesso ai servizi di Office 365."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,13 +14,11 @@ ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>Cosa accade quando viene usata un'app con accesso condizionale basato sulle app
 
@@ -68,4 +66,3 @@ La registrazione del dispositivo può essere rimossa tramite la console di ammin
 ### <a name="see-also"></a>Vedere anche
 
 [Proteggere i dati delle app con i criteri di protezione delle app](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

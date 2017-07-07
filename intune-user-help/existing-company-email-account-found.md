@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="an-existing-company-email-account-was-found"></a>Account di posta elettronica aziendale già esistente
 
 È già disponibile un account di posta elettronica nell'organizzazione o nella società e si vuole accedere all'account sul dispositivo mobile. Collaborare con l'amministratore IT per proteggere l'accesso alla posta elettronica durante il trasferimento dalla persona che lo ha inviato al dispositivo. L'attuale sistema di posta elettronica può aver funzionato correttamente in precedenza, ma l'esecuzione della procedura seguente garantirà una maggior sicurezza delle informazioni.
@@ -39,4 +35,3 @@ ms.lasthandoff: 05/23/2017
 3.  Attendere qualche istante nuove impostazioni di posta elettronica da applicare automaticamente il dispositivo.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

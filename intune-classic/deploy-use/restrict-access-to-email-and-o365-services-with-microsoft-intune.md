@@ -1,6 +1,6 @@
 ---
-title: Proteggere la posta elettronica e Office 365 | Microsoft Docs
-description: "Questo argomento descrive in che modo è possibile usare l&quot;accesso condizionale per consentire solo ai dispositivi conformi di accedere alla posta elettronica e ai dati aziendali in SharePoint Online e altri servizi."
+title: Proteggere la posta elettronica e Office 365
+description: "Questo argomento descrive in che modo è possibile usare l'accesso condizionale per consentire solo ai dispositivi conformi di accedere alla posta elettronica e ai dati aziendali in SharePoint Online e altri servizi."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,15 +14,12 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc89c1b5b502f00bab5ed02f6e7df6422241aeb1
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3405671130a58aa944d6c689264379a254face1d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Proteggere l'accesso alla posta elettronica, a Office 365 e ad altri servizi con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -51,7 +48,7 @@ Le **licenze di Azure AD Premium** possono essere acquistate come servizio auton
 
 - Per altre informazioni, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
-Assicurarsi inoltre di avere [assegnato licenze di Azure AD Premium o EMS](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md) agli utenti a cui si prevede di applicare i criteri di accesso condizionale.
+Assicurarsi inoltre di avere [assegnato licenze di Azure AD Premium o EMS](/intune/licenses-assign) agli utenti a cui si prevede di applicare i criteri di accesso condizionale.
 
 ### <a name="device-compliance-settings"></a>Impostazioni di conformità del dispositivo
 
@@ -83,4 +80,3 @@ A differenza degli altri criteri di Intune, i criteri di accesso condizionale no
   - [Creare criteri di accesso condizionale per SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Creare criteri di accesso condizionale per Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [Creare criteri di accesso condizionale per Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-

@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 5de619d98ab78384e42c8a3a2264ce4deebc2602
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-your-ios-or-macos-device-with-intune"></a>Uso del dispositivo iOS o macOS con Intune
 
 Esistono una serie di operazioni che è possibile eseguire con Intune per agevolare il lavoro. L'elenco seguente include le operazioni più comuni che potrebbero essere richieste dalla propria azienda.
@@ -52,4 +48,3 @@ Attualmente Intune supporta iOS 8.0 e versioni successive. Supporta anche macOS 
 - [Cosa succede se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 - [Cosa succede se si reimposta il dispositivo personale con l'app Portale aziendale?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 - [Sincronizzare manualmente il dispositivo](sync-your-device-manually-ios.md)
-
