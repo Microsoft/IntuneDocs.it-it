@@ -16,19 +16,20 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8885b82cf452bcc6bb99efb1d7e7394706edac57
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b2af07817b15c2afd2d2674aa0c6d8a403147421
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="unenroll-your-ios-device-from-intune"></a>Annullare la registrazione del dispositivo iOS da Intune
+# Annullare la registrazione del dispositivo iOS da Intune
+<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
 
 Quando si annulla la registrazione del dispositivo iOS da Intune, il dispositivo non potrà più accedere alle risorse aziendali né verrà più gestito da Intune.
 
 Per annullare la registrazione del dispositivo da Intune, seguire questa procedura o guardare il video:
 
-<iframe width="675" height="379" src="https://www.youtube.com/embed/6UFtBrBWUUI" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/6UFtBrBWUUI]
 
 
 1.  Nell'app Portale aziendale, in **Dispositivi personali**, selezionare il dispositivo di cui annullare la registrazione.

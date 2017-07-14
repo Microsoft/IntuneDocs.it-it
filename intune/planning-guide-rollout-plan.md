@@ -14,17 +14,19 @@ ms.assetid: 3a63f78f-a7e7-4f44-9288-16b28d5d58ca
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b3f13dbc5abb8110627cfb39aa61040a977bf38
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9dda530be47b5449a9c1ed610d8e409fd62148d7
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="develop-a-rollout-plan"></a>Elaborare un piano di implementazione
+# Elaborare un piano di implementazione
+<a id="develop-a-rollout-plan" class="xliff"></a>
 
 Il piano di implementazione identifica i gruppi dell'organizzazione di destinazione per l'implementazione di Intune, l'intervallo di tempo di implementazione per ciascun gruppo e gli approcci di registrazione da usare.
 
-## <a name="targeted-groups-and-timeframes"></a>Gruppi di destinazione e intervalli di tempo
+## Gruppi di destinazione e intervalli di tempo
+<a id="targeted-groups-and-timeframes" class="xliff"></a>
 
 Innanzitutto, controllare i gruppi di destinazione per l'implementazione di Intune che sono stati identificati negli [scenari dei casi d'uso](planning-guide-scenarios.md).
 
@@ -36,17 +38,20 @@ In secondo luogo, determinare l'intervallo di tempo per ogni gruppo di destinazi
 * Posizione geografica
 * Rischio aziendale
 
-## <a name="rollout-phases"></a>Fasi di implementazione
+## Fasi di implementazione
+<a id="rollout-phases" class="xliff"></a>
 Le organizzazioni generalmente scelgono di avviare l'implementazione di Intune con un progetto pilota, che coinvolge un piccolo gruppo di utenti del reparto IT. Il progetto pilota può essere ampliato per includere un set più ampio di utenti IT e può comprendere la partecipazione di altri gruppi dell'organizzazione.
 
-### <a name="pilot"></a>Distribuzione pilota
+### Distribuzione pilota
+<a id="pilot" class="xliff"></a>
 La prima fase di implementazione deve coinvolgere utenti pilota. Gli utenti pilota devono essere consapevoli di essere i primi utenti di una nuova soluzione. Devono essere disposti a fornire feedback per migliorare la configurazione, la documentazione e le notifiche, nonché agevolare tutti gli altri utenti nelle fasi di implementazione successive. Questi utenti non devono essere dirigenti o persone importanti.
 
 Il progetto pilota rappresenta una valida opportunità per testare le [problematiche](planning-guide-deployment-goals.md) e perfezionare i [requisiti](planning-guide-requirements.md) raccolti in precedenza.
 
 Includere il piano di [comunicazione](planning-guide-communication-plan.md), il piano di [supporto](planning-guide-support-plan.md) e [i test e la convalida](planning-guide-test-validation.md), in modo da risolvere gli eventuali problemi mentre l'impatto per gli utenti è ancora ridotto.
 
-### <a name="production-rollout"></a>Implementazione in produzione
+### Implementazione in produzione
+<a id="production-rollout" class="xliff"></a>
 Dopo il progetto pilota, si è pronti per avviare un'implementazione completa in produzione, per il resto dei gruppi dell'organizzazione. Alcuni esempi dei diversi gruppi e delle fasi di distribuzione sono:
 
 -   **Reparti** <br/>A ogni reparto può essere associata una fase di implementazione. Si effettuerà l'implementazione per un intero reparto alla volta. In questo tipo di implementazione, gli utenti di ogni reparto tendono a usare i dispositivi mobili nello stesso modo e ad accedere alle stesse applicazioni. Per gli utenti sono solitamente previsti gli stessi tipi di criteri.
@@ -66,22 +71,26 @@ Di seguito è riportato un esempio di un piano di implementazione di Intune che 
 | Fase 3 di implementazione in produzione |  |  |  | HR (50 utenti), finanza (40 utenti), dirigenti (30 utenti) |
 
 È anche possibile [scaricare un modello della tabella precedente](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) per immettere le fasi di implementazione della propria organizzazione.
-## <a name="match-rollout-groups-to-enrollment-approaches"></a>Associare i gruppi di distribuzione agli approcci di registrazione
+## Associare i gruppi di distribuzione agli approcci di registrazione
+<a id="match-rollout-groups-to-enrollment-approaches" class="xliff"></a>
 
 Dopo avere determinato i gruppi di destinazione e gli intervalli di tempo per l'implementazione di Intune, il passaggio successivo consiste nello scegliere l'approccio alla registrazione di Intune più appropriato per ogni gruppo. È possibile usare diversi approcci di registrazione, tra cui:
 * Registrazione self-service
 * Registrazione assistita
 * Evento IT
 
-### <a name="user-self-service"></a>Registrazione self-service
+### Registrazione self-service
+<a id="user-self-service" class="xliff"></a>
 
 In questo caso, l'utente è responsabile per la registrazione del proprio dispositivo, in genere seguendo le istruzioni di registrazione fornite dall'organizzazione IT. Questo approccio è quello usato più di frequente nelle organizzazioni ed è più scalabile rispetto alla registrazione assistita.
 
-### <a name="user-assisted-enrollment"></a>Registrazione assistita
+### Registrazione assistita
+<a id="user-assisted-enrollment" class="xliff"></a>
 
 Questo approccio garantisce all'utente un trattamento esclusivo. Un membro del team IT assiste l'utente durante il processo di registrazione, di persona o tramite Skype. Questo approccio viene solitamente adottato per i dirigenti e altri gruppi che potrebbero richiedere particolare assistenza durante il processo di registrazione.
 
-### <a name="it-tech-fair"></a>Evento IT
+### Evento IT
+<a id="it-tech-fair" class="xliff"></a>
 
 Un'altra opzione per la registrazione degli utenti in Intune è l'organizzazione di un evento IT. Nel corso dell'evento, il gruppo IT organizza uno stand per fornire assistenza per la registrazione di Intune, dove gli utenti possono ricevere informazioni sulla registrazione di Intune, porre domande e ottenere assistenza per il processo di registrazione. Questa opzione può essere utile sia per il gruppo IT che per gli utenti, soprattutto durante le fasi iniziali dell'implementazione di Intune.
 
@@ -102,6 +111,7 @@ Ecco un esempio aggiornato del piano di implementazione di Intune precedente che
 | Self-service |  |  |  | HR, finanza |
 | Trattamento esclusivo |  |  |  | Dirigenti |
 
-## <a name="next-section"></a>Sezione successiva
+## Passaggi successivi
+<a id="next-steps" class="xliff"></a>
 
 Nella sezione successiva vengono fornite indicazioni su [come elaborare un piano di comunicazione per l'implementazione di Intune](planning-guide-communication-plan.md).
