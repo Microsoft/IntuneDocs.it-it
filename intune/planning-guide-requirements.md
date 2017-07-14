@@ -14,13 +14,14 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8806dc965653deaca5ab370c290403ae049e5c58
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 032427a9965f368d7be17339e3cbe5b426800347
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="determine-use-case-scenario-requirements"></a>Determinare i requisiti degli scenari per i casi d'uso
+# Determinare i requisiti degli scenari per i casi d'uso
+<a id="determine-use-case-scenario-requirements" class="xliff"></a>
 
 In questa sezione vengono determinati i requisiti per ogni gruppo dell'organizzazione in ciascuno scenario dei casi d'uso. Questo processo agevola la preparazione per le altre aree della pianificazione della distribuzione di Intune, come architettura e progettazione, onboarding e implementazione. Può inoltre consentire di identificare potenziali gap e problemi correlati al progetto di distribuzione di Intune.
 
@@ -41,7 +42,8 @@ Di seguito sono riportati alcuni esempi di requisiti per i casi d'uso di un'orga
 È anche possibile [scaricare un modello della tabella precedente](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) per immettere i requisiti dei casi d'uso e dei casi d'uso secondari della propria organizzazione.
 
 
-## <a name="examples-of-requirements"></a>Esempi di requisiti
+## Esempi di requisiti
+<a id="examples-of-requirements" class="xliff"></a>
 
 Di seguito sono riportati alcuni esempi aggiuntivi che possono essere usati nella colonna "Requisiti":
 
@@ -62,6 +64,7 @@ Di seguito sono riportati alcuni esempi aggiuntivi che possono essere usati nell
     - Office 365 con criteri di protezione delle app
     - Line-of-business criteri di protezione delle app
 
-## <a name="next-section"></a>Sezione successiva
+## Passaggi successivi
+<a id="next-steps" class="xliff"></a>
 
 Nella sezione successiva vengono fornite indicazioni su [come elaborare un piano di implementazione di Intune](planning-guide-rollout-plan.md).

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7ec66c3864aae3d680c006ada95859df0e7f0e84
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
+# Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
+<a id="ios-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="general"></a>Generale
+## Generale
+<a id="general" class="xliff"></a>
 -   **Fotocamera** - Specifica se è consentito l'uso della fotocamera del dispositivo.   
 -   **Invio dati di diagnostica** - Consente o impedisce al dispositivo di inviare dati di diagnostica ad Apple.
 -   **FaceTime** - Consente l'uso dell'app FaceTime sul dispositivo.
@@ -73,7 +75,8 @@ Questa opzione si applica anche alle impostazioni accessibili dall'app delle imp
 - **Apple News (solo con supervisione)** - Consente l'uso dell'app Apple News.
 - **Modifiche al profilo di configurazione** - Consente all'utente di installare profili di configurazione.
 
-## <a name="password"></a>Password
+## Password
+<a id="password" class="xliff"></a>
 -   **Password necessaria** - Richiede all'utente finale di immettere una password per accedere al dispositivo.
 -   **Password semplici** - Consente l'uso di password semplici come 0000 e 1234.
 -   **Tipo di password richiesto** - Specifica il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.
@@ -88,7 +91,8 @@ Questa opzione si applica anche alle impostazioni accessibili dall'app delle imp
 
 <sup>1</sup>Quando si configurano le impostazioni **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password** e **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**, queste vengono applicate in sequenza. Ad esempio, se si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo 5 minuti e il dispositivo viene bloccato dopo altri 5 minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio, il dispositivo viene bloccato 5 minuti dopo che l'utente spegne lo schermo.
 
-## <a name="app-store-doc-viewing-gaming"></a>App Store, visualizzazione documenti, giochi
+## App Store, visualizzazione documenti, giochi
+<a id="app-store-doc-viewing-gaming" class="xliff"></a>
 
 
 -   **App Store (solo con supervisione)** - Blocca l'accesso all'App Store nei dispositivi con supervisore.
@@ -106,7 +110,8 @@ Questa opzione si applica anche alle impostazioni accessibili dall'app delle imp
 -   **Area classificazioni** - Scegliere l'area di classificazioni per cui si desidera configurare i download consentiti, quindi scegliere le classificazioni consentite per **film** e **programmi TV**.
 -   **App** - Scegliere la fascia d'età consentita per le app che gli utenti potranno scaricare oppure è possibile scegliere **Consenti tutte le app**.
 
-## <a name="restricted-apps"></a>App con restrizioni
+## App con restrizioni
+<a id="restricted-apps" class="xliff"></a>
 
 Nell'elenco delle app con restrizioni è possibile configurare uno degli elenchi seguenti:
 
@@ -115,7 +120,8 @@ Un elenco **App approvate** - Elenca le app che gli utenti sono autorizzati a in
 
 Per configurare un elenco, fare clic su **Aggiungi** e quindi specificare il nome, facoltativamente l'autore dell'app e l'URL dell'app nell'App Store.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Come specificare l'URL di un'app nello store
+### Come specificare l'URL di un'app nello store
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Per specificare un URL di app nell'elenco delle app, usare il formato seguente:
 
@@ -130,11 +136,13 @@ Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.
 
 
 
-### <a name="additional-options"></a>Opzioni aggiuntive
+### Opzioni aggiuntive
+<a id="additional-options" class="xliff"></a>
 
 È possibile anche fare clic su **Importa** per popolare l'elenco da un file CSV nel formato <*url app*>, <*nome app*>, <*autore app*> o fare clic su **Esporta** per creare un file CSV che abbia come contenuto l'elenco delle app con restrizioni nello stesso formato.
 
-## <a name="show-or-hide-apps"></a>Mostrare o nascondere app
+## Mostrare o nascondere app
+<a id="show-or-hide-apps" class="xliff"></a>
 
 Nell'elenco delle app da mostrare o nascondere è possibile configurare uno degli elenchi seguenti (richiede dispositivi con supervisore che eseguono iOS 9.3 o versione successiva).
 
@@ -143,7 +151,8 @@ Un elenco **App visibili** - Specifica un elenco di app che gli utenti possono v
 
 Per configurare un elenco, fare clic su **Aggiungi** e quindi specificare il nome, facoltativamente l'autore dell'app e l'URL dell'app nell'App Store.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Come specificare l'URL di un'app nello store
+### Come specificare l'URL di un'app nello store
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Per specificare un URL di app nell'elenco delle app, usare il formato seguente:
 
@@ -155,19 +164,22 @@ Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.
 > [!Note]
 > È possibile usare anche il software iTunes per trovare l'app e il comando **Copia collegamento** per ottenere l'URL dell'app.
 
-### <a name="additional-options"></a>Opzioni aggiuntive
+### Opzioni aggiuntive
+<a id="additional-options" class="xliff"></a>
 
 È possibile anche fare clic su **Importa** per popolare l'elenco da un file CSV nel formato <*url app*>, <*nome app*>, <*autore app*> o fare clic su **Esporta** per creare un file CSV che abbia come contenuto l'elenco delle app nascoste o visibili nello stesso formato.
 
 
-## <a name="cellular"></a>Cellulare
+## Cellulare
+<a id="cellular" class="xliff"></a>
 -   **Roaming dati** - Consente il roaming dei dati quando il dispositivo si trova su una rete cellulare.
 -   **Recupero in background globale durante il roaming** - Consente al dispositivo di recuperare dati come la posta elettronica durante il roaming su una rete cellulare.
 -   **Chiamata vocale** - Consente l'uso della funzionalità di composizione vocale sul dispositivo.
 -   **Roaming vocale** - Consente il roaming vocale quando il dispositivo è su una rete cellulare.
 -   **Modifiche alle impostazioni dell'utilizzo della rete dati dell'app (solo con supervisione)** - Consente all'utente di controllare quali applicazioni possono usare i dati del cellulare.
 
-## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
+## Cloud e risorse di archiviazione
+<a id="cloud-and-storage" class="xliff"></a>
 -   **Backup in iCloud** - Consente all'utente di eseguire il backup del dispositivo su iCloud.
 -   **Sincronizzazione dei documenti in iCloud (solo con supervisione)** - Consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud.
 -   **Sincronizzazione dello streaming foto in iCloud** - Consente agli utenti di abilitare la funzionalità **Il mio streaming foto** nel dispositivo, che permette di sincronizzare le foto su iCloud in modo che siano disponibili in tutti i dispositivi degli utenti.
@@ -177,11 +189,13 @@ Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.
 -   **Flusso di foto condivise** - Impostare su **No** per disabilitare **Condivisione foto di iCloud** nel dispositivo.
 -   **Continuazione dell'attività** - Consente all'utente di proseguire il lavoro iniziato in un dispositivo iOS in un altro dispositivo iOS o macOS (Handoff).
 
-## <a name="autonomous-single-app-mode-supervised-only"></a>Modalità applicazione singola autonoma (solo con supervisione)
+## Modalità applicazione singola autonoma (solo con supervisione)
+<a id="autonomous-single-app-mode-supervised-only" class="xliff"></a>
 
 Usare queste impostazioni per configurare dispositivi iOS in modo che eseguano specifiche app in modalità applicazione singola autonoma. Quando questa modalità è configurata e l'app è in esecuzione, il dispositivo è bloccato in modo che possa eseguire solo quell'app. Un esempio è quando si configura un'app che consente agli utenti di eseguire un test nel dispositivo. Quando le azioni dell'app sono state completate o si rimuovono questi criteri, il dispositivo torna allo stato normale.
 
-### <a name="settings"></a>Impostazioni
+### Impostazioni
+<a id="settings" class="xliff"></a>
 
 - **Nome dell'app**: immettere il nome dell'app che verrà visualizzato nell'elenco di app in questo pannello.
 - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per assistenza, vedere **Guida di riferimento agli ID bundle per le app iOS predefinite** in questo argomento.
@@ -191,54 +205,57 @@ Dopo aver specificato il nome di ogni app e ID, scegliere **Aggiungi** per aggiu
 - **Importa**: importa un file di valori delimitati da virgole (CSV) contenente un elenco di nomi di app e di ID bundle associati.
 - **Esporta**: esporta i nomi delle app e gli ID bundle associati configurati in un file con valori delimitati da virgole (CSV).
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Guida di riferimento agli ID bundle per le app iOS predefinite
+### Guida di riferimento agli ID bundle per le app iOS predefinite
+<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
 
 Questo elenco include l'ID bundle di alcune app comuni iOS predefinite. Per l'ID bundle di altre app rivolgersi al fornitore del software.
 
-|||
-|-|-|
-|Nome app|ID bundle|
-|App Store|com.apple.AppStore|
-|Calcolatrice|com.apple.calculator|
-|Calendario|com.apple.mobilecal|
-|Fotocamera|com.apple.camera|
-|Orologio|com.apple.mobiletimer|
-|Bussola|com.apple.compass|
-|Contatti|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Trova amici|com.apple.mobileme.fmf1|
-|Trova il mio iPhone|com.apple.mobileme.fmip1|
-|Area giochi|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Integrità|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|Maps|com.apple.Maps|
-|Messaggi|com.apple.MobileSMS|
-|Musica|com.apple.Music|
-|News|com.apple.news|
-|Note|com.apple.mobilenotes|
-|Numeri|com.apple.Numbers|
-|.NET|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Foto|com.apple.mobileslideshow|
-|Podcast|com.apple.podcasts|
-|Reminders|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Impostazioni|com.apple.Preferences|
-|Stocks|com.apple.stocks|
-|Suggerimenti|com.apple.tips|
-|Video|com.apple.videos|
-|VoiceMemos|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Video|com.apple.Bridge|
-|Weather|com.apple.weather|
+```
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
-## <a name="kiosk"></a>Modalità tutto schermo
+```
+
+
+## Modalità tutto schermo
+<a id="kiosk" class="xliff"></a>
 -   **Blocco attivazione** - Abilita il blocco attivazione su dispositivi iOS con supervisione.
 -   **App in esecuzione in modalità tutto schermo** - Scegliere **App gestita** per selezionare un'app che è stata aggiunta a Intune o **App dello Store** per specificare l'URL di un'app dello store. Non sarà possibile eseguire altre applicazioni nel dispositivo. Per informazioni, vedere "Come specificare gli URL negli App Store" più avanti in questo argomento.
 -   **Tocco per l'accesso facilitato** - Abilita o disabilita l'impostazione di accessibilità **Tocco per l'accesso facilitato** che aiuta l'utente a eseguire sullo schermo movimenti che altrimenti risulterebbero difficili da eseguire.
@@ -262,7 +279,8 @@ Questo elenco include l'ID bundle di alcune app comuni iOS predefinite. Per l'ID
 > Prima di poter configurare un dispositivo iOS per la modalità tutto schermo, è necessario usare lo strumento Apple Configurator o il programma di registrazione dispositivi di Apple per attivare la modalità con supervisore del dispositivo. Per altre informazioni sullo strumento Apple Configurator, vedere la documentazione di Apple.
 >Se l'app per iOS specificata viene installata dopo aver assegnato il profilo, il dispositivo non passerà alla modalità tutto schermo finché non viene riavviato.
 
-## <a name="safari"></a>Safari
+## Safari
+<a id="safari" class="xliff"></a>
 -   **Safari (solo con supervisione)** - Specifica se il browser Safari può essere usato nel dispositivo.
 -   **Riempimento automatico** - Consente all'utente di modificare le impostazioni di completamento automatico nel browser.
 -   **Cookie** - Consente l'uso dei cookie nel browser.
@@ -271,18 +289,22 @@ Questo elenco include l'ID bundle di alcune app comuni iOS predefinite. Per l'ID
 -   **Popup** - Attiva o disattiva il blocco dei popup del browser.
 
 
-## <a name="domains"></a>Domains
+## Domains
+<a id="domains" class="xliff"></a>
 
-### <a name="unmarked-email-domains"></a>Domini di posta elettronica non contrassegnati
+### Domini di posta elettronica non contrassegnati
+<a id="unmarked-email-domains" class="xliff"></a>
 
 Nel campo **URL del dominio di posta elettronica** aggiungere uno o più URL all'elenco. Quando gli utenti finali ricevono un messaggio di posta elettronica da un dominio diverso da quelli configurati, il messaggio di posta elettronica verrà contrassegnato come non attendibile nell'app Mail iOS.
 
 
-### <a name="managed-web-domains"></a>Domini Web gestiti
+### Domini Web gestiti
+<a id="managed-web-domains" class="xliff"></a>
 
 Nel campo **URL del dominio Web** aggiungere uno o più URL all'elenco. Quando i documenti vengono scaricati dal dominio specificato, saranno considerati come gestiti. Questa impostazione si applica solo ai documenti scaricati tramite Safari.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Domini con compilazione automatica della password di Safari
+### Domini con compilazione automatica della password di Safari
+<a id="safari-password-auto-fill-domains" class="xliff"></a>
 
 Nel campo **URL del dominio** aggiungere uno o più URL all'elenco. Gli utenti possono salvare solo le password Web dagli URL in questo elenco. Questa impostazione si applica solo al browser Safari e ai dispositivi iOS 9.3 e versioni successive in modalità con supervisione. Se non si specifica nessun URL, è possibile salvare le password da tutti i siti web.

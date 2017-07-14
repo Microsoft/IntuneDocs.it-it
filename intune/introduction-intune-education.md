@@ -14,13 +14,14 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: lindavr
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d69727762e63f0258eacc084801827c50eaa1454
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c094d59d7261b602c51196233286d10c27732236
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="what-is-intune-for-education"></a>Che cos'è Intune per Education?
+# Che cos'è Intune per Education?
+<a id="what-is-intune-for-education" class="xliff"></a>
 
 Intune per Education è progettato per consentire a docenti e studenti di essere produttivi, mantenendo protetti i dati dell'istituto di istruzione. Intune è un servizio di gestione della mobilità aziendale (EMM, Enterprise Mobility Management) basato sul cloud che rappresenta la base di Intune per Education.
 
@@ -30,7 +31,7 @@ Intune per Education consente di gestire i dispositivi Windows 10 con le funzion
 
 È possibile usare Intune per Education da solo o in integrazione con l'[esperienza completa di gestione dei dispositivi disponibile in Intune](introduction-intune.md). È anche possibile usare questo servizio insieme al resto degli strumenti disponibili in [Microsoft Education](https://microsoft.com/education), in modo da poter usare facilmente Intune per Education con altri utili strumenti didattici da Microsoft.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ukrnCwcLvV8" frameborder="0" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 
 Sia Intune che Intune per Education consentono di:
 * Gestire i dispositivi mobili usati dalla forza lavoro per accedere ai dati.
@@ -38,7 +39,8 @@ Sia Intune che Intune per Education consentono di:
 * Proteggere le informazioni dell'organizzazione, grazie alla possibilità di controllare le modalità di accesso e condivisione dei dati da parte degli utenti.
 * Assicurarsi che i dispositivi e le app siano conformi ai requisiti di sicurezza.
 
-### <a name="next-steps"></a>Passaggi successivi
+### Passaggi successivi
+<a id="next-steps" class="xliff"></a>
 * Acquisire familiarità con il prodotto [con una versione di valutazione di 30 giorni di Intune](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune).
 * Scoprire qual è il modo più rapido per [iniziare a usare Intune per Education](/intune-education/what-is-express-configuration).
 * Approfondire i [requisiti tecnici e le funzionalità](/intune/supported-devices-browsers) di Intune.
