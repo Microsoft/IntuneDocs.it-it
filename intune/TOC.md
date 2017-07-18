@@ -38,9 +38,9 @@
 ### [Implementazione](planning-guide-onboarding.md)
 ### [Test e convalida](planning-guide-test-validation.md)
 ### [Risorse aggiuntive](planning-guide-resources.md)
-<!-- ## Scenario implementation guides
-### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
-### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+## Guide all'implementazione di uno scenario
+### [BYOD](byod-enable.md)
+<!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
 ### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
@@ -64,14 +64,13 @@
 #### [Uso della larghezza di banda di rete](network-bandwidth-use.md)
 ### [Accedere a Intune](account-sign-up.md)
 ### [Configurare i domini](custom-domain-name-configure.md)
-### [Aggiungere utenti](users-permissions-add.md)
+### [Aggiungere utenti](users-add.md)
 ### [Aggiungere gruppi](groups-add.md)
-### [Assegnare le licenze](licenses-assign.md)       
-### [Personalizzare il portale aziendale](company-portal-customize.md)     
+### [Assegnare le licenze](licenses-assign.md)
 ### [Impostare l'autorità di gestione dei dispositivi mobili](mdm-authority-set.md)
 
 ## [Registrare i dispositivi](device-enrollment.md)
-### Opzioni di installazione
+### [Opzioni di registrazione](enrollment-options.md)
 #### [Termini e condizioni](terms-and-conditions-create.md)
 #### [Restrizioni](enrollment-restrictions-set.md)
 #### [Certificato push MDM Apple](apple-mdm-push-certificate-get.md)
@@ -105,7 +104,6 @@
 ### [Reimpostazione del PIN di Windows 10](device-windows-pin-reset.md)
 ### [Esaminare l'inventario dei dispositivi](device-inventory.md)
 
-## [Gestire gli utenti](user-management.md)
 <!--### Add and delete users -->
 
 ## [Gestire le app](app-management.md)
@@ -219,32 +217,24 @@
 
 #### [Configurare Lookout](lookout-mobile-threat-defense-connector.md)
 ##### [Integrazione di Lookout e Intune](lookout-mtd-connector-integration.md)
+
 #### [Configurare Skycure](skycure-mobile-threat-defense-connector.md)
-##### [Configurare SSO in Azure AD](skycure-azure-sso-configure.md)
-##### [Scaricare criteri di configurazione delle app iOS](skycure-ios-app-configuration-policy-download.md)
 ##### [Integrazione di Skycure e Intune](skycure-mtd-connector-integration.md)
+
+#### [Impostare Check Point](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+##### [Integrazione di Check Point e Intune](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+
 #### [Aggiungere app MTD](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [Abilitare MTD in Intune](mtd-connector-enable.md)
 #### [Creare criteri di conformità per dispositivi MTD](mtd-device-compliance-policy-create.md)
 
 ### [Controllo di accesso di rete](network-access-control-integrate.md)
 
-
-<!-- ### Set up mobile threat protection        
-#### Prerequisites
-#### Set up Lookout
-#### Set up Skycure
-#### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy -->
-
 ### [Configurare Windows Hello](windows-hello.md)        
 <!-- ### Protect devices with remote actions -->
 
 ## [Gestire i ruoli](role-based-access-control.md)
-<!-- ### Create a custom role
-### Assign a role -->
 
-<!-- ### Custom role settings -->
 
 ## [Gestire i PC con l'agente software](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Confrontare le modalità di gestione dei PC](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
