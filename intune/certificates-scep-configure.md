@@ -1,12 +1,12 @@
 ---
 title: Configurare e gestire i certificati SCEP con Intune
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune di Azure: informazioni su come configurare l&quot;infrastruttura prima di creare e assegnare i profili certificato SCEP di Intune.'
+titleSuffix: Intune on Azure
+description: Informazioni su come configurare l'infrastruttura prima di creare e assegnare i profili certificato SCEP di Intune."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,14 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad0dc380eca386438e9568bf212ac9c5ad66ceb6
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configurare e gestire i certificati SCEP con Intune
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Questo argomento illustra come configurare l'infrastruttura e quindi creare e assegnare i profili certificato Simple Certificate Enrollment Protocol (SCEP) con Intune.
 
@@ -84,6 +83,10 @@ Prima di configurare i profili di certificato, è necessario completare le segue
 
 **Passaggio 5**: abilitare, installare e configurare il Connettore di certificati di Intune
 
+> [!NOTE]
+> A causa di un problema noto, scaricare, installare e configurare il connettore di certificati usando questa procedura: [Configurare l'infrastruttura di certificazione per SCEP -> Configurare l'infrastruttura -> Attività 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
+
+
 #### <a name="step-1---create-an-ndes-service-account"></a>Passaggio 1: creare un account del servizio NDES
 
 Creare un account utente di dominio da usare come account del servizio NDES. L'account viene specificato quando si configurano i modelli nella CA emittente prima di installare e configurare NDES. Assicurarsi che l'utente abbia i diritti predefiniti, **accesso locale**, **accesso come servizio** e **accesso come processo batch**. In alcune organizzazioni sono attivi criteri di protezione avanzata che disabilitano tali diritti.
@@ -100,6 +103,9 @@ In questa attività sarà possibile:
 1.  Accedere come amministratore dell'organizzazione.
 
 2.  Nella CA emittente usare lo snap-in Modelli di certificato per creare un nuovo modello personalizzato o copiare un modello esistente (ad esempio, il modello Utente) e modificarlo per l'utilizzo con NDES.
+
+    >[!NOTE]
+    > Il modello di certificato NDES deve essere basato su un modello di certificato v2 (che include la compatibilità con Windows 2003).
 
     Il modello deve avere le seguenti configurazioni:
 
@@ -246,7 +252,7 @@ In questa attività sarà possibile:
 
     ![Test NDES](.\media\SCEP_NDES_URL.png)
 
-    Se viene visualizzato l'errore **503 - Servizio non disponibile**, controllare eventviewer. È probabile che il pool di applicazioni si sia arrestato perché l'utente NDES non dispone di un diritto. Tali diritti sono descritti nell'attività 1.
+    Se viene visualizzato l'errore **503 - Servizio non disponibile**, controllare nel visualizzatore eventi. È probabile che il pool di applicazioni si sia arrestato perché l'utente NDES non dispone di un diritto. Tali diritti sono descritti nell'attività 1.
 
 ##### <a name="to-install-and-bind-certificates-on-the-ndes-server"></a>Per installare e associare i certificati nel server NDES
 
@@ -304,7 +310,7 @@ Scaricare, installare e configurare Connettore di certificati nel server NDES.
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>Per abilitare il supporto per il Connettore di certificati
 
 1. Accedere al portale Azure.
-2. Scegliere **Altri servizi** > **Altro** > **Intune**.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
 4. Nel pannello **Configurazione del dispositivo** scegliere **Autorità di certificazione**.
 5.  Selezionare **Abilita Connettore di certificati**.
@@ -312,10 +318,10 @@ Scaricare, installare e configurare Connettore di certificati nel server NDES.
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Per scaricare, installare e configurare il connettore di certificati
 
 > [!NOTE]
-> A causa di un problema noto, scaricare, installare e configurare il connettore di certificati usando questa procedura: [Configurare l'infrastruttura di certificazione per SCEP -> Configurare l'infrastruttura -> Attività 5](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)
+> A causa di un problema noto, scaricare, installare e configurare il connettore di certificati usando questa procedura: [Configurare l'infrastruttura di certificazione per SCEP -> Configurare l'infrastruttura -> Attività 5](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)
 
 1. Accedere al portale Azure.
-2. Scegliere **Altri servizi** > **Altro** > **Intune**.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
 4. Nel pannello **Configurazione del dispositivo** scegliere **Autorità di certificazione**.
 5. Scegliere **Scarica Connettore di certificati**.
@@ -377,6 +383,8 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
         - **Nome comune**
         - **Nome comune incluso l'indirizzo di posta elettronica**
         - **Nome comune come indirizzo di posta elettronica**
+        - **Personalizzato** - Quando si seleziona questa opzione, viene visualizzato un altro campo a discesa. Usare questo campo per immettere un formato di nome soggetto personalizzato. Le due variabili supportate per il nome personalizzato sono **CN (Nome comune)** ed **E (Posta elettronica)**. Usando una combinazione di una o più di queste variabili e stringhe statiche, è possibile creare un formato del nome soggetto personalizzato, come il seguente: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** In questo esempio è stato creato un formato del nome soggetto che, oltre alle variabili CN ed E, usa stringhe per i valori Organizational Unit, Organization, Location, State e Country. [Questo argomento](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) mostra la funzione **CertStrToName** e le relative stringhe supportate.
+        
     - **Nome alternativo soggetto**: specificare in che modo Intune crea automaticamente i valori per il nome alternativo soggetto (SAN) nella richiesta certificato. Ad esempio, se si seleziona un tipo di certificato utente, è possibile includere il nome dell'entità utente (UPN) nel nome alternativo oggetto. Se il certificato client verrà usato per eseguire l'autenticazione in un server dei criteri di rete, è necessario impostare il nome alternativo oggetto sul nome dell'entità utente. 
     - **Utilizzo chiave**: specificare le opzioni d'uso della chiave per il certificato. È possibile scegliere una delle opzioni seguenti: 
         - **Crittografia chiave:** consentire lo scambio di chiavi solo quando la chiave viene crittografata. 
@@ -392,10 +400,6 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
 
 Il profilo verrà creato e visualizzato nel pannello dell'elenco dei profili.
 
->[!Note]
-> Solo per dispositivi iOS: in Formato nome soggetto selezionare Personalizzato per immettere un formato personalizzato del nome soggetto.
-> Le due variabili attualmente supportate per il nome personalizzato sono **CN (Nome comune)** ed **E (Posta elettronica)**. Usando una combinazione di queste stringhe statiche e variabili, è possibile creare un formato del nome soggetto personalizzato, come il seguente: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** In questo esempio è stato creato un formato del nome soggetto che, oltre alle variabili CN ed E, usa stringhe per i valori Organizational Unit, Organization, Location, State e Country. [Questo argomento](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) mostra la funzione **CertStrToName** e le relative stringhe supportate.
-
 ## <a name="how-to-assign-the-certificate-profile"></a>Come assegnare il profilo certificato
 
 Prima di assegnare i profili certificato ai gruppi, considerare quanto segue:
@@ -407,5 +411,4 @@ Prima di assegnare i profili certificato ai gruppi, considerare quanto segue:
 - Sebbene ogni profilo venga assegnato separatamente, è anche necessario assegnare la CA radice attendibile e il profilo SCEP o PKCS. In caso contrario, i criteri di certificato SCEP o PKCS avranno esito negativo.
 
 Per informazioni su come assegnare profili, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
-
 

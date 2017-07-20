@@ -1,32 +1,27 @@
 ---
-title: Installare e accedere all&quot;app Portale aziendale | Microsoft Docs
+title: Installare e accedere all'app Portale aziendale | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d4491a6068ebde632b8af0dfa6bee500def8e4b2
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7386d257b8e1c9fb4b211e877ad5f599743ca9e4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Installare e accedere all'app Portale aziendale
 
 Portale aziendale è un'app da installare nel proprio dispositivo iOS per avere accesso alle app, alla posta elettronica e alla rete dell'azienda o dell'istituto di istruzione.  Prima di poter ottenere l'accesso, è necessario installare l'app Portale aziendale e quindi usarla per registrare il dispositivo in Microsoft Intune. Per altre informazioni, vedere [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune).
@@ -39,7 +34,6 @@ Portale aziendale è un'app da installare nel proprio dispositivo iOS per avere 
 
 3.  Aprire l'app Portale aziendale, immettere l'indirizzo di posta elettronica e la password aziendale o dell'istituto di istruzione e toccare **Accedi**.
 
-    Se si accede all'app Portale aziendale per la prima volta e l'azienda o l'istituto di istruzione usa Intune, verrà richiesto di registrare il dispositivo in Intune. Per eseguire la registrazione, vedere [Registrare il dispositivo iOS in Intune](enroll-your-device-in-intune-ios.md) o [Registrare il dispositivo macOS in Intune](enroll-your-device-in-intune-macos.md).
+    Se si accede all'app Portale aziendale per la prima volta e l'azienda o l'istituto di istruzione usa Intune, verrà richiesto di registrare il dispositivo in Intune. Per eseguire la registrazione, seguire le procedure descritte in [Registrare il dispositivo iOS in Intune](enroll-your-device-in-intune-ios.md) o [Registrare il dispositivo macOS in Intune](enroll-your-device-in-intune-macos.md). È anche possibile [eseguire l'accesso usando un altro dispositivo](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device). 
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
-

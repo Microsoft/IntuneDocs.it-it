@@ -12,15 +12,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 852997044cef22901e8133d76f327e98b2a1ee72
-ms.contentlocale: it-it
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Abilitare la registrazione di dispositivi Android for Work
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,7 +30,7 @@ Per abilitare la gestione di dispositivi Android for Work è necessario aggiunge
 Se non è stato già fatto, preparare la gestione di dispositivi mobili (MDM) [impostando l'autorità di gestione di dispositivi mobili](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment), ad esempio **Microsoft Intune**, e configurando MDM.
 
 2. **Configurare l'associazione Android for Work**<br>
-    L'amministratore di Intune può aprire la [console di amministrazione di Microsoft Intune](https://manage.microsoft.com), passare ad **Amministrazione** &gt; **Gestione dei dispositivi mobili** &gt; **Android for Work** e fare clic su **Configura** per aprire il sito Web di Android for Work in Google Play. Questo sito verrà aperto in una nuova scheda del browser.
+    Come amministratore di Intune, aprire la [console di amministrazione di Microsoft Intune](https://manage.microsoft.com),passare ad **Amministrazione** &gt; **Gestione dispositivi mobili** &gt; **Android for Work** e fare clic su **Configura** per aprire il sito Web Android for Work di Google Play. Questo sito verrà aperto in una nuova scheda del browser.
 
 3. **Accedere a Google**<br>
    Nella pagina di accesso di Google immettere le credenziali dell'account Google che verrà associato a tutte le attività di gestione di Android for Work per questo tenant. Si tratta dell'account Google condiviso tra gli amministratori IT dall'organizzazione e usato per gestire e pubblicare le app nella console di Play for Work.
@@ -64,4 +61,3 @@ Dopo avere configurato l'associazione e le impostazioni di Android for Work, è 
 
 2. **Confermare l'eliminazione dell'associazione di Android for Work**<br>
   Fare clic su **Sì** per eliminare l'associazione e annullare la registrazione di tutti i dispositivi Android for Work da Intune.
-

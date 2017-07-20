@@ -1,12 +1,12 @@
 ---
 title: Impostazioni di AirPrint di Intune per dispositivi iOS e macOS
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: informazioni su come usare Intune per connettere automaticamente i dispositivi iOS e macOS a stampanti compatibili con AirPrint.'
+titleSuffix: Intune on Azure
+description: Informazioni su come usare Intune per connettere automaticamente i dispositivi iOS e macOS a stampanti compatibili con AirPrint."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,17 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 55486693e2f5678ceeb20dd3a0ef3c52553871d2
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 743eb9a71efe1a5ea18b15312fdd4fe684f0ff07
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>Impostazioni di AirPrint per dispositivi iOS e macOS
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Usare queste impostazioni per configurare i dispositivi iOS o macOS in modo che si connettano automaticamente a stampanti compatibili con AirPrint in rete. Sono necessari l'indirizzo IP e il percorso risorsa delle stampanti.
+Usare queste impostazioni per configurare i dispositivi iOS o macOS in modo che si connettano automaticamente a stampanti compatibili con AirPrint in rete. Per procedere, sono necessari l'indirizzo IP e il percorso risorsa delle stampanti.
 
 ## <a name="find-airprint-printer-information"></a>Trovare le informazioni sulla stampante AirPrint
 
@@ -49,3 +46,7 @@ Seguire questa procedura per aggiungere le informazioni AirPrint al payload AirP
 
 È anche possibile importare un elenco di stampanti da un file con valori delimitati da virgole (csv) oppure esportarlo.
 
+
+## <a name="next-steps"></a>Passaggi successivi
+
+È ora possibile assegnare il profilo del dispositivo ai gruppi selezionati. Per informazioni dettagliate, vedere [How to assign device profiles](device-profile-assign.md) (Come assegnare profili di dispositivo).
