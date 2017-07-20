@@ -34,6 +34,9 @@ La registrazione automatica consente agli utenti di registrare i propri disposit
     - **URL individuazione MDM**
     - **URL conformità MDM**
 
+    > [!IMPORTANT]
+    > Se un utente è un membro di un gruppo con la registrazione MDM automatica e MAM abilitati e l'utente tenta di aggiungere il dispositivo personale, viene abilitata solo MAM. 
+
 6. Selezionare **Salva**.
 
 Per impostazione predefinita, l'autenticazione a due fattori non è abilitata per il servizio. Tuttavia l'autenticazione a due fattori è consigliabile quando si registra un dispositivo. Prima di richiedere l'autenticazione a due fattori per questo servizio, è necessario configurare un provider di autenticazione a due fattori in Azure Active Directory e configurare gli account utente per l'autenticazione a più fattori. Vedere [Introduzione al server Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

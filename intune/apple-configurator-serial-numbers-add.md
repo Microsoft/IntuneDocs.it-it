@@ -1,7 +1,7 @@
 ---
 title: Aggiungere i numeri di serie di Apple Configurator
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: informazioni su come aggiungere numeri di serie a dispositivi iOS di proprietà dell&quot;azienda con Apple Configurator."
+titleSuffix: Intune on Azure
+description: "Informazioni su come aggiungere numeri di serie a dispositivi iOS di proprietà dell'azienda con Apple Configurator.\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,18 +15,15 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3d56d93e2e229faad8effa63eeb91e627468a3a
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apple-configurator-serial-numbers"></a>Aggiungere i numeri di serie di Apple Configurator
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Usare la procedura seguente per aggiungere i numeri di serie a Intune quando si vuole [registrare dispositivi iOS di proprietà dell'azienda con Apple Configurator e Assistente configurazione](apple-configurator-setup-assistant-enroll-ios.md). È possibile aggiungere i numeri di serie uno alla volta o caricare un file di testo in formato CSV con i numeri di serie. Dopo aver aggiunto i numeri di serie, è possibile assegnare a questi un profilo. Il profilo contiene le impostazioni di gestione specifiche che si desiderano applicare ai dispositivi.
 
@@ -76,4 +73,3 @@ I numeri di serie del dispositivo possono presentare due stati:
 **Per visualizzare lo stato di un numero di serie**
 
 Nel pannello **Numeri di serie di Apple Configurator** selezionare il numero di serie di cui si desidera visualizzare lo stato e cercare l'elemento **Stato**.
-

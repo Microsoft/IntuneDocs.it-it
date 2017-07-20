@@ -1,12 +1,12 @@
 ---
-title: Come assegnare app ai gruppi | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: "Anteprima di Intune in Azure: dopo aver aggiunto un&quot;app a Intune, è opportuno assegnarla ai gruppi di utenti o dispositivi."
+title: Come assegnare app ai gruppi
+titleSuffix: Intune on Azure
+description: "Dopo aver aggiunto un'app a Intune, è opportuno assegnarla ai gruppi di utenti o dispositivi.\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/09/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,17 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1246ef539c044b894b4e4a93f449e60e6462600a
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Come assegnare app ai gruppi con Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Dopo aver aggiunto un'app a Intune, è necessario distribuirla a utenti e dispositivi, assegnandola a essi.
+Dopo aver aggiunto un'app a Intune, è possibile assegnarla a utenti e dispositivi.
 
 Le app possono essere assegnate ai dispositivi gestiti o non gestiti da Intune. Usare la tabella seguente per comprendere le varie opzioni per l'assegnazione di applicazioni a utenti e dispositivi:
 
@@ -46,33 +44,6 @@ Le app possono essere assegnate ai dispositivi gestiti o non gestiti da Intune. 
 > [!NOTE]
 > Attualmente, è possibile assegnare app iOS e Android (sia linea di business che acquistate nello store) a dispositivi non registrati con Intune.
 
-## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Modifiche della modalità di assegnazione delle app ai gruppi nell'anteprima di Intune
-
-Nell'anteprima di Intune di Azure per assegnare le app non vengono più usati i gruppi di Intune ma i gruppi di sicurezza di Azure Active Directory (Azure AD). Per questa ragione è necessario conoscere le modifiche apportate alla modalità di assegnazione delle app, in particolare in presenza di app assegnate a gruppi figlio di Intune.
-L'aspetto più importante da notare è l'assenza del concetto di gruppi figlio in Azure AD. È possibile tuttavia che alcuni gruppi contengano gli stessi membri. In questo caso, il comportamento di Intune classico è diverso da quello dell'anteprima di Intune di Azure. La tabella seguente descrive le differenze:
-
-||||||
-|-|-|-|-|-|
-|**Intune classico (prima della migrazione del tenant)**|-|**Intune di Azure (dopo il completamento della migrazione del tenant)**|-|**Altre informazioni**|
-|**Intento dell'assegnazione del gruppo padre**|**Intento dell'assegnazione del gruppo figlio**|**Intento dell'assegnazione risultante per i membri comuni del gruppo padre e figlio precedente**|**Intento dell'assegnazione risultante per i membri del gruppo padre**|-|
-|Disponibile|Richiesto|Richiesto e disponibile|Disponibile|Richiesto e disponibile indica che le app assegnate come richieste possono essere visualizzate anche nell'app Portale aziendale.
-|Non applicabile|Disponibile|Non applicabile|Non applicabile|Soluzione alternativa: rimuovere l'intento dell'assegnazione 'Non applicabile' dal gruppo padre di Intune.
-|Richiesto|Disponibile|Richiesto e disponibile|Richiesto|-|
-|Richiesto e disponibile<sup>1</sup>|Disponibile|Richiesto e disponibile|Richiesto e disponibile|-|
-|Richiesto|Non applicabile|Richiesto|Richiesto|-|
-|Richiesto e disponibile|Non applicabile|Richiesto e disponibile|Richiesto e disponibile|-|
-|Richiesto|Uninstall|Richiesto|Richiesto|-|
-|Richiesto e disponibile|Uninstall|Richiesto e disponibile|Richiesto e disponibile|-|
-<sup>1</sup> Solo per le app dello Store iOS gestite, quando si aggiungono le app in Intune e si assegnano le app con l'intento Richiesto, le app vengono create automaticamente con entrambi gli intenti Richiesto e Disponibile.
-
-Per evitare conflitti di assegnazione, è possibile eseguire le azioni seguenti:
-
-1.    Se in precedenza sono state assegnate app a gruppi padre e figlio di Intune correlati, è consigliabile rimuovere queste assegnazioni prima che inizi la migrazione del tenant.
-2.    Rimuovere i gruppi figlio dai gruppi padre e creare un nuovo gruppo contenente i membri del gruppo figlio precedente. Sarà quindi possibile creare una nuova assegnazione di app al gruppo.
-Note: se il gruppo padre precedente era "Tutti gli utenti", sarà necessario creare un nuovo gruppo dinamico che non includa i membri del gruppo figlio.
-È necessario apportare le modifiche ai gruppi nel [portale di Azure](https://portal.azure.com/) per gruppi di utenti e dispositivi. Il [portale di Azure classico](https://manage.windowsazure.com/) consentirà di apportare modifiche soltanto ai gruppi di utenti.
-
-
 ## <a name="how-to-assign-an-app"></a>Come assegnare un'applicazione
 
 1. Accedere al portale Azure.
@@ -87,10 +58,53 @@ Note: se il gruppo padre precedente era "Tutti gli utenti", sarà necessario cre
     - **Non applicabile**: l'app non è installata o visualizzata nel portale aziendale.
     - **Obbligatoria**: l'applicazione è installata sui dispositivi nei gruppi selezionati.
     - **Disinstalla**: l'applicazione è disinstallata sui dispositivi nei gruppi selezionati.
-    - **Available with or without enrollment** (Disponibile con o senza registrazione): assegnare questa app a gruppi di utenti i cui dispositivi non sono registrati con Intune. Per un aiuto, vedere la tabella in alto.
+    - **Available with or without enrollment** (Disponibile con o senza registrazione): assegnare questa app a gruppi di utenti i cui dispositivi non sono registrati con Intune.
 6. Al termine, scegliere **Salva**.
 
-L'app è ora assegnata al gruppo scelto.
+L'app è ora assegnata al gruppo selezionato.
+
+## <a name="how-conflicts-between-app-intents-are-resolved"></a>Modalità di risoluzione dei conflitti tra finalità di app
+
+In alcuni casi, la stessa app viene assegnata a più gruppi, ma con finalità diverse. In questi casi, usare questa tabella per comprendere la finalità risultante.
+
+||||
+|-|-|-|
+|Finalità gruppo 1|Finalità gruppo 2|Finalità risultante|
+|Obbligatoria per l'utente|Disponibile per l'utente|Richiesto e disponibile|
+|Obbligatoria per l'utente|Non disponibile per l'utente|Richiesto|
+|Obbligatoria per l'utente|Disinstallazione utente|Richiesto|
+|Disponibile per l'utente|Non disponibile per l'utente|Non disponibile|
+|Disponibile per l'utente|Disinstallazione utente|Uninstall|
+|Non disponibile per l'utente|Disinstallazione utente|Uninstall
+|Obbligatoria per l'utente|Obbligatoria per il dispositivo|Entrambe presenti. Il gateway la considera obbligatoria 
+|Obbligatoria per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Risoluzione gateway: obbligatoria 
+|Disponibile per l'utente|Obbligatoria per il dispositivo|Entrambe presenti. Risoluzione gateway: obbligatoria (obbligatoria e disponibile)
+|Disponibile per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Risoluzione gateway: disponibile.<br>L'app viene visualizzata nel portale aziendale.<br>Se l'app è già installata perché la sua finalità precedente era "app obbligatoria", viene disinstallata.<br>Ma se l'utente fa clic su Installa dal portale aziendale, l'app viene installata e la finalità di disinstallazione non viene rispettata.|
+|Non disponibile per l'utente|Obbligatoria per il dispositivo|Richiesto|
+|Non disponibile per l'utente|Disinstallazione dal dispositivo|Uninstall|
+|Disinstallazione utente|Obbligatoria per il dispositivo|Entrambe presenti. Risoluzione gateway: obbligatoria|
+|Disinstallazione utente|Disinstallazione dal dispositivo|Entrambe presenti. Risoluzione gateway: disinstallazione|
+|Obbligatoria per il dispositivo|Disinstallazione dal dispositivo|Richiesto|
+|Obbligatoria e disponibile per l'utente|Disponibile per l'utente|Richiesto e disponibile|
+|Obbligatoria e disponibile per l'utente|Disinstallazione utente|Richiesto e disponibile|
+|Obbligatoria e disponibile per l'utente|Non disponibile per l'utente|Richiesto e disponibile|
+|Obbligatoria e disponibile per l'utente|Obbligatoria per il dispositivo|Entrambe presenti, obbligatoria e disponibile
+|Obbligatoria e disponibile per l'utente|Non disponibile per il dispositivo|Richiesto e disponibile|
+|Obbligatoria e disponibile per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Risoluzione gateway: obbligatoria. Obbligatoria + disponibile
+|Non disponibile per l'utente|Non disponibile per il dispositivo|Non disponibile|
+|Disponibile per l'utente|Non disponibile per il dispositivo|Disponibile|
+|Obbligatoria per l'utente|Non disponibile per il dispositivo|Richiesto|
+|Disponibile per l'utente senza registrazione|Obbligatoria e disponibile per l'utente|Richiesto e disponibile
+|Disponibile per l'utente senza registrazione|Obbligatoria per l'utente|Richiesto
+|Disponibile per l'utente senza registrazione|Non disponibile per l'utente|Non disponibile
+|Disponibile per l'utente senza registrazione|Disponibile per l'utente|Disponibile|
+|Disponibile per l'utente senza registrazione|Obbligatoria per il dispositivo|Obbligatoria e disponibile senza registrazione|
+|Disponibile per l'utente senza registrazione|Non disponibile per il dispositivo|Disponibile senza registrazione|
+|Disponibile per l'utente senza registrazione|Disinstallazione dal dispositivo|Disinstallazione e disponibile senza registrazione.<br>Se l'utente non ha installato l'app dal portale aziendale, la finalità di disinstallazione viene rispettata.<br>Se l'utente installa l'app dal portale aziendale, l'installazione ha priorità più alta rispetto alla disinstallazione.|
+
+>[!NOTE]
+>Solo per le app dello Store iOS gestite: quando si aggiungono queste app in Intune assegnandole come obbligatorie, vengono create automaticamente con entrambe le finalità Obbligatoria e Disponibile.
+
+## <a name="next-steps"></a>Passaggi successivi
 
 Vedere [How to monitor apps](apps-monitor.md) (Come monitorare le app) per informazioni sul monitoraggio delle assegnazioni di app.
-

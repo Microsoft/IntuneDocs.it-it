@@ -1,6 +1,6 @@
 ---
-title: Connessioni VPN | Documentazione Microsoft
-description: Usare i profili VPN per distribuire le impostazioni VPN agli utenti e ai dispositivi dell&quot;organizzazione.
+title: Connessioni VPN
+description: Usare i profili VPN per distribuire le impostazioni VPN agli utenti e ai dispositivi dell'organizzazione.
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -14,15 +14,12 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 51096dedbc29726b2622e0a156b0d2516522e497
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-connections-in-microsoft-intune"></a>Connessioni VPN in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -168,9 +165,7 @@ Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell
 3. Facoltativo: specificare un probe della stringa dell'URL, ovvero un URL che viene usato come test. Se il dispositivo in cui è installato il profilo è in grado di accedere a tale URL senza il reindirizzamento, verrà stabilita la connessione VPN e il dispositivo si connetterà all'URL di destinazione. L'utente non visualizzerà il sito del probe della stringa dell'URL. Un esempio di probe della stringa dell'URL è l'indirizzo di un server Web di controllo che verifica la conformità del dispositivo prima della connessione VPN. Un'altra possibilità è che l'URL verifichi la capacità della rete VPN di connettersi a un sito, prima di connettere il dispositivo all'URL di destinazione tramite VPN.
 4. Scegliere una delle azioni seguenti:
   - **Connessione**
-  - **Valuta la connessione**, che presenta tre impostazioni. a. **Azione del dominio**: scegliere **Connetti se necessario** o **Non connettere mai**
-    . b. **Elenco di domini separati da virgole**: configurarla solo se si sceglie **Azione del dominio** **Connetti se necessario**
-    . c. **Probe della stringa dell'URL necessario**: un URL HTTP o HTTPS (consigliato), ad esempio *https://vpntestprobe.contoso.com*. La regola verificherà se esiste una risposta da questo indirizzo. In caso contrario e se **Azione del dominio** è **Connetti se necessario**, la connessione VPN verrà attivata.
+  - **Valuta la connessione**, che presenta tre impostazioni. a. **Azione del dominio**: scegliere **Connetti se necessario** o **Non connettere mai**. b. **Elenco di domini separati da virgole**: configurare questa azione solo se si imposta **Azione del dominio** su **Connetti se necessario**. c. **Probe della stringa dell'URL necessario**: un URL HTTP o HTTPS (consigliato), ad esempio *https://vpntestprobe.contoso.com*. La regola verificherà se esiste una risposta da questo indirizzo. In caso contrario e se **Azione del dominio** è **Connetti se necessario**, la connessione VPN verrà attivata.
       
      > [!TIP]
      >
@@ -195,4 +190,3 @@ Le regole specifiche del dominio vengono valutate prima delle regole di tutti i 
 Al termine della distribuzione, il nome della connessione VPN specificato verrà visualizzato nell'elenco delle connessioni VPN sui dispositivi.
 
 Un riepilogo dello stato e gli avvisi visualizzati nella pagina **Panoramica** dell'area di lavoro **Criteri** consentono di identificare i problemi relativi ai criteri che richiedono attenzione. Un riepilogo dello stato viene visualizzato anche nell'area di lavoro Dashboard.
-

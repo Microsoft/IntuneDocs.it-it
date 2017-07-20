@@ -1,12 +1,12 @@
 ---
-title: Introduzione a Intune nel portale di anteprima di Azure
-titleSuffix: Intune Azure preview
-description: 'Anteprima di Intune in Azure: nozioni di base su Intune nel portale di anteprima di Azure e informazioni su come questo strumento aiuta nella gestione dei dispositivi.'
+title: Introduzione a Intune nel portale di Azure
+titleSuffix: Intune on Azure
+description: Nozioni di base su Intune nel portale di Azure e informazioni su come questo strumento aiuta nella gestione dei dispositivi."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 04/24/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,35 +14,30 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d7ff50eb821e0927c3c6ea21f3cdb1257762a0
-ms.contentlocale: it-it
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7549f3277c23c3951090502f2babfe7c47b0a201
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introduzione a Microsoft Intune nel portale di Azure
 
 
-# <a name="introduction-to-microsoft-intune-in-the-azure-portal-preview"></a>Introduzione a Microsoft Intune nel portale di anteprima di Azure
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Microsoft Intune sta migrando nel portale di Azure e ciò significa che i flussi di lavoro e le funzionalità conosciute dall'utente subiranno delle modifiche.
-Il nuovo design offre un'anteprima delle funzionalità nuove e aggiornate nel portale di Azure, in cui è possibile gestire dispositivi mobili, PC e app dell'organizzazione.
-Alla fine, tutte le funzionalità di Intune verranno migrate in Azure, ma è già possibile eseguire molte attività di Intune nel portale di Azure. Dal momento che questa nuova esperienza è disponibile in anteprima, alcune funzionalità potrebbero non essere ancora presenti nel portale. Per informazioni dettagliate, rivedere la sezione [Novità](#whats-new).
+Microsoft Intune ora è disponibile nel portale di Azure e ciò significa che i flussi di lavoro e le funzionalità conosciute dall'utente sono cambiati.
+Il nuovo design offre funzionalità nuove e aggiornate nel portale di Azure, in cui è possibile gestire dispositivi mobili, PC e app dell'organizzazione.
 
 > [!IMPORTANT]
 > **Non è ancora possibile visualizzare il nuovo portale?**<br>
-> Abbiamo già iniziato a lanciare l'anteprima in alcuni tenant. I tenant esistenti verranno migrati alla nuova esperienza a partire dai primi periodi del 2017. L'utente riceverà una notifica nel centro messaggi di Office prima della migrazione del tenant.
+> È in corso la migrazione dei tenant esistenti alla nuova esperienza. Prima di eseguire la migrazione del tenant, viene visualizzata una notifica nel Centro messaggi di Office.
 >
-> Gli account di Intune creati prima di gennaio 2017 richiederanno un'unica migrazione prima che i flussi di lavoro Registrazione Apple siano disponibili in Azure. Il programma per la migrazione non è stato ancora annunciato, ma i dettagli saranno resi disponibili non appena possibile. Se l'account esistente non può accedere all'anteprima, è fortemente consigliabile creare un account di prova per testare la nuova esperienza.
+> Gli account di Intune creati prima di gennaio 2017 richiedono un'unica migrazione prima che i flussi di lavoro Registrazione Apple siano disponibili in Azure. La pianificazione per la migrazione non è ancora stata annunciata. Se l'account esistente non può accedere al portale di Azure, è consigliabile creare un account di prova.
+>
+> Rivedere l'elenco dei blocchi potenziali https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
 
 
-La documentazione sul nuovo prodotto sarà disponibile in questa libreria e verrà aggiornata continuamente durante l'anteprima. Se hai suggerimenti, inviaci un feedback tramite i commenti dell'argomento. Saremmo lieti di ricevere la tua opinione.
-
-<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+È possibile trovare informazioni sul nuovo portale in questa raccolta, che viene continuamente aggiornata. Per eventuali suggerimenti, inviare feedback tramite i commenti dell'argomento. Saremmo lieti di ricevere la tua opinione.
 
 Le caratteristiche della nuova esperienza includono:
 
@@ -78,9 +73,9 @@ La documentazione riflette il layout del portale di Intune per rendere più semp
 ![Carichi di lavoro del portale di Azure](./media/azure-portal-workloads.png)
 
 ### <a name="introduction-and-get-started"></a>Introduzione e operazioni preliminari
-Questa sezione contiene informazioni su [novità](whats-new.md), [problemi noti](known-issues.md), [come ottenere supporto](get-support.md) e come [iniziare a usare una versione di valutazione gratuita](free-trial-sign-up.md) di Intune.
+Questa sezione contiene [informazioni introduttive](introduction-intune.md) per l'uso di Intune.
 ### <a name="plan-and-design"></a>Pianificare e progettare
-Informazioni utili per [pianificare e progettare](/intune-classic/plan-and-design/introduction) l'ambiente di Intune.
+Informazioni utili per [pianificare e progettare](/intune-classic/plan-design/introduction) l'ambiente di Intune.
 ### <a name="device-enrollment"></a>Registrazione del dispositivo
 [Come impostare la gestione dei dispositivi da Intune](device-enrollment.md).
 ### <a name="device-compliance"></a>Conformità del dispositivo
@@ -108,5 +103,4 @@ Informazioni utili per [pianificare e progettare](/intune-classic/plan-and-desig
 
 ## <a name="whats-new"></a>Quali sono le novità?
 
-[Scopri le novità nella versione di anteprima](whats-new.md).
-
+[Novità di Intune](whats-new.md).
