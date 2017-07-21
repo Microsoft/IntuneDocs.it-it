@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/25/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 269ad7968242f8f5ce7095c9c73347987675e846
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 370fbcf8bb424030eb7b7dbaba66fa943f08aa42
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Il dispositivo Android sembra essere crittografato, ma il portale aziendale indica il contrario
 
-Quando si crittografa un dispositivo, si esegue la codifica delle informazioni in esso contenute tramite una chiave segreta nota solo all'utente, impedendo così l'accesso agli utenti non autorizzati. Come passo aggiuntivo per assicurarsi che le informazioni siano protette, l'organizzazione richiede di crittografare il dispositivo Android prima di accedere a file, posta elettronica o dati aziendali.
+Quando si crittografa un dispositivo, si esegue la codifica delle informazioni in esso contenute tramite una chiave segreta nota solo all'utente. Questo impedisce l'accesso agli utenti non autorizzati. Molte organizzazioni richiedono agli utenti di crittografare i propri dispositivi Android prima di poter accedere ai file, alla posta elettronica o ai dati aziendali.
 
 ## <a name="common-issues"></a>Problemi comuni
 
-Le versioni più recenti di Android, in particolare a partire dalla versione 7.0, richiedono un passcode di avvio per assicurarsi che il dispositivo sia completamente crittografato. Produttori di dispositivi diversi hanno descrizioni e posizioni variabili per il passcode di avvio. Nella maggior parte dei casi, questa funzionalità è detta "avvio sicuro". 
+Le versioni più recenti di Android, in particolare a partire dalla versione 7.0, richiedono un passcode di avvio per assicurarsi che il dispositivo sia completamente crittografato. Produttori di dispositivi diversi hanno descrizioni e posizioni variabili per il passcode di avvio. Nella maggior parte dei casi, questa impostazione è detta "avvio sicuro". 
 
 ## <a name="solutions"></a>Soluzioni
 
@@ -37,11 +37,12 @@ Le versioni più recenti di Android, in particolare a partire dalla versione 7.0
 Alcuni dispositivi Android richiedono la creazione di un PIN di avvio per assicurarsi che il dispositivo sia sicuro. Esistono molte versioni di Android da più produttori diversi. È possibile provare a risolvere il problema trovando la posizione in cui abilitare questa opzione nell'app delle impostazioni. Ad esempio, per abilitare l'avvio sicuro in un dispositivo Samsung Galaxy S7, passare a **Impostazioni** > **Blocco schermo e sicurezza** > **Avvio sicuro**.  
 
 ### <a name="downgrade-your-version-of-android"></a>Effettuare il downgrade della versione di Android
+
 Se il dispositivo offre la possibilità di effettuare il downgrade a Android 6.0+, procedere in tal senso. Il tentativo di effettuare il downgrade del dispositivo potrebbe comportare dei rischi di perdita di dati. In caso contrario, è consigliabile contattare l'amministratore IT per risolvere il problema. Le informazioni di contatto per l'amministratore IT di riferimento sono disponibili nel [sito Web del portale aziendale](http://portal.manage.microsoft.com).
 
 ## <a name="specific-manufacturer-issues"></a>Problemi di produttori specifici
 
-Alcuni dispositivi Android con la versione 7.0 o successive crittografano i dati in modi non coerenti con determinati standard della piattaforma Android. Questi dispositivi potrebbero sembrare crittografati per impostazione predefinita, ma secondo Intune i metodi usati possono esporre le informazioni del dispositivo a rischi dovuti all'accesso fisico al dispositivo da parte di utenti malintenzionati.
+Alcuni dispositivi Android con la versione 7.0 o successive crittografano i dati in modi non coerenti con determinati standard della piattaforma Android. Questi dispositivi possono risultare crittografati anche se sono completamente nuovi. Intune riconosce che i metodi di crittografia di questi dispositivi mettono a rischio le informazioni del dispositivo. Questo rischio deriva principalmente da utenti malintenzionati che hanno accesso fisico al dispositivo.
 
 > [!Note]
 > Microsoft collabora con i produttori per risolvere i problemi rilevati durante i test o segnalati dagli utenti. Questo articolo verrà aggiornato quando saranno disponibili nuove informazioni. 
@@ -57,5 +58,8 @@ I proprietari di uno dei dispositivi seguenti potrebbero sperimentare questo pro
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Dispositivi noti che attualmente non possono essere aggiornati per risolvere questo problema
 
+Non è possibile risolvere questo problema per i dispositivi seguenti. Potrebbe essere necessario usare un dispositivo diverso per accedere alle risorse aziendali. 
+
 - [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [Huawei Mate 9](http://consumer.huawei.com/en/phones/mate9/)
 - [Smartphone Xiaomi Mi](https://xiaomi-mi.com/mi-smartphones/)
