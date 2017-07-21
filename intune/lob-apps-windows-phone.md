@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c27b1a7d0c24bacc206cabe65bd3529a50fc2b4
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f27ad720556a866b5f2a9326df0a574cc37f2a5d
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per Windows Phone in Microsoft Intune
 
@@ -45,23 +45,25 @@ ms.lasthandoff: 07/01/2017
 ## <a name="step-3---configure-app-information"></a>Passaggio 3: configurare le informazioni sull'app
 
 1. Nel pannello **Aggiungi app** scegliere **File del pacchetto dell'app**.
-2. Nel pannello **Informazioni sull'app** configurare le informazioni seguenti. A seconda dell'app selezionata, è possibile che alcuni valori nel pannello vengano compilati automaticamente:
-    - **Nome**: immettere il nome dell'app che verrà visualizzato nel portale aziendale. Verificare che tutti i nomi di app usati siano univoci. Se il nome di un'app è usato due volte, solo una delle due app verrà visualizzata agli utenti nel portale aziendale.
-    - **Descrizione**: immettere una descrizione per l'app. La descrizione verrà visualizzata agli utenti nel portale aziendale.
+2. Nel pannello **Informazioni sull'app** configurare le informazioni sull'app. A seconda dell'app selezionata, è possibile che alcuni valori nel pannello vengano compilati automaticamente:
+    - **Nome**: immettere il nome dell'app che viene visualizzato nel portale aziendale. Verificare che tutti i nomi di app usati siano univoci. Se il nome di un'app è usato due volte, solo una delle due app viene visualizzata dagli utenti nel portale aziendale.
+    - **Descrizione**: immettere una descrizione per l'app. La descrizione viene visualizzata dagli utenti nel portale aziendale.
     - **Autore**: immettere il nome dell'autore dell'app.
-    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. Ciò consentirà agli utenti di trovare più facilmente l'app nel portale aziendale.
+    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. L'uso delle categorie consente agli utenti di trovare più facilmente l'app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: visualizza chiaramente l'app nella pagina principale del portale aziendale quando gli utenti sfogliano le app.
-    - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL verrà visualizzato agli utenti nel portale aziendale.
-    - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL verrà visualizzato agli utenti nel portale aziendale.
+    - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
+    - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
     - **Developer**: immettere il nome dello sviluppatore dell'applicazione (facoltativo).
     - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio, **reparto risorse umane** (facoltativo).
     - **Note**: immettere eventuali note da associare a questa app.
-    - **Logo**: caricare un'icona che verrà associata all'app. Questa icona verrà visualizzata insieme all'app quando gli utenti visitano il portale aziendale.
+    - **Logo**: caricare un'icona che viene associata all'app. Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
 3. Al termine scegliere **OK**.
 
 ## <a name="step-4---finish-up"></a>Passaggio 4: completare l'operazione
 
-1. Nel pannello **Aggiungi app** verificare che le informazioni configurate siano corrette.
+1. Nel pannello **Aggiungi app** verificare di aver configurato correttamente le informazioni.
 2. Scegliere **Aggiungi** per caricare l'app in Intune.
 
-L'app creata verrà visualizzata nell'elenco di app da cui è possibile assegnarla ai gruppi selezionati. Per altre informazioni, vedere [Come assegnare app ai gruppi](apps-deploy.md).
+## <a name="next-steps"></a>Passaggi successivi
+
+L'app creata viene visualizzata nell'elenco di app da cui è possibile assegnarla ai gruppi selezionati. Per altre informazioni, vedere [Come assegnare app ai gruppi](apps-deploy.md).

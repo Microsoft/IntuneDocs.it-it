@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/05/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f9ea697cafa0f277c176e55443250d32ca378dbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b86d2d7f4d295ed41168c9dfdbaf8d4c253a0f75
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Come usare i criteri di configurazione delle app di Microsoft Intune per Android for Work
 
@@ -65,7 +65,7 @@ Questi criteri non vengono assegnati direttamente agli utenti e ai dispositivi, 
 
 Il criterio verrà creato e visualizzato nel pannello dell'elenco dei criteri.
 
-Procedere quindi ad [assegnare](apps-deploy.md) e [monitorare](apps-monitor.md) normalmente le app.
+
 
 Quando l'app assegnata viene eseguita in un dispositivo, verrà eseguita con le impostazioni configurate nel criterio di configurazione delle app.
 
@@ -89,3 +89,8 @@ Quando l'app assegnata viene eseguita in un dispositivo, verrà eseguita con le 
 8. Per assegnare i criteri di configurazione delle app, selezionare i criteri di configurazione delle app, selezionare **Assegnazione** e quindi selezionare **Seleziona gruppi**.
 9. Selezionare i gruppi di utenti da assegnare e quindi scegliere **Seleziona**.
 10. Scegliere **Salva** per assegnare i criteri.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Procedere ad [assegnare](apps-deploy.md) e [monitorare](apps-monitor.md) normalmente le app.
+
