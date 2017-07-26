@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 69b1540d325f7cfa49e11f91fcb72a464f8a2e0e
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Come aggiungere un'app a Microsoft Intune
 
@@ -79,34 +79,9 @@ Quando si aggiunge un'app in Intune, è possibile selezionare la categoria desid
 
 ## <a name="apps-added-automatically-by-intune"></a>App aggiunte automaticamente da Intune
 
-Le app seguenti pubblicate da Microsoft vengono compilate in Intune e possono essere assegnate:
-
-|||
-|-|-|
-|Nome|Piattaforma|Tipo di App|
-|Azure Information Protection|Android|App di Android Store gestita|
-|Dynamics CRM per telefoni|Android|App di Android Store gestita|
-|Dynamics CRM per tablet|Android|App di Android Store gestita|
-|Excel|iOS|App dello Store iOS gestita|
-|Excel|Android|App di Android Store gestita|
-|Managed Browser|Android|App di Android Store gestita|
-|Managed Browser|iOS|App dello Store iOS gestita|
-|Microsoft Dynamics CRM per telefoni|iOS|App dello Store iOS gestita|
-|Microsoft Dynamics CRM per tablet|iOS|App dello Store iOS gestita|
-|Microsoft Power BI|iOS|App dello Store iOS gestita|
-|Microsoft Power BI|Android|App di Android Store gestita|
-|Microsoft SharePoint|iOS|App dello Store iOS gestita|
-|Microsoft SharePoint|Android|App di Android Store gestita|
-|Microsoft Teams|Android|App di Android Store gestita|
-|Microsoft Teams|iOS|App dello Store iOS gestita|
-|OneDrive|iOS|App dello Store iOS gestita|
-|OneDrive|Android|App di Android Store gestita|
-|OneNote|iOS|App dello Store iOS gestita|
-|Outlook|Android|App di Android Store gestita|
-|Outlook|iOS|App dello Store iOS gestita|
-|Outlook Groups|Android|App di Android Store gestita|
-|Outlook Groups|iOS|App dello Store iOS gestita|
-|PowerPoint|iOS|App dello Store iOS gestita|
+Intune conteneva in precedenza un numero di app predefinite che era possibile assegnare rapidamente. In base ai commenti e suggerimenti ricevuti, abbiamo rimosso l'elenco e le app predefinite non verranno più visualizzate.
+Tuttavia, se sono già state assegnate app predefinite, le app assegnate saranno ancora visibili nell'elenco delle app. È possibile continuare ad assegnare queste app in base alle proprie esigenze.
+In una versione successiva si prevede di aggiungere un metodo più semplice per la selezione e l'assegnazione delle app predefinite dal portale di Intune.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
