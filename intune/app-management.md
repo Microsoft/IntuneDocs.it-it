@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/12/2017
 ---
-# Informazioni sulla gestione delle app in Microsoft Intune
-<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
+# <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +36,7 @@ In aggiunta, potrebbe essere necessario assegnare e gestire le applicazioni su d
 
 Intune offre un'ampia gamma di funzionalità che consente di usare le app necessarie sui dispositivi desiderati.
 
-## Funzionalità di gestione delle app per piattaforma
-<a id="app-management-capabilities-by-platform" class="xliff"></a>
+## <a name="app-management-capabilities-by-platform"></a>Funzionalità di gestione delle app per piattaforma
 
 ||||||
 |-|-|-|-|-|
@@ -62,8 +60,7 @@ Intune offre un'ampia gamma di funzionalità che consente di usare le app necess
 
 <sup>2</sup> Si applica solo ai dispositivi gestiti da Intune.
 
-## Come iniziare
-<a id="how-to-get-started" class="xliff"></a>
+## <a name="how-to-get-started"></a>Come iniziare
 
 Il carico di lavoro **App per dispositivi mobili** contiene numerose informazioni sulle app ed è accessibile come indicato di seguito:
 
@@ -73,8 +70,7 @@ Il carico di lavoro **App per dispositivi mobili** contiene numerose informazion
 
     ![Carico di lavoro App per dispositivi mobili](./media/apps-workload.png)
 
-### Gestire
-<a id="manage" class="xliff"></a>
+### <a name="manage"></a>Gestire
 - **App**: questo è il nodo in cui la maggior parte delle app viene aggiunta, assegnata e monitorata.
     - [Aggiungere app](apps-add.md)
     - [Assegnare le app](apps-deploy.md)
@@ -89,8 +85,7 @@ Il carico di lavoro **App per dispositivi mobili** contiene numerose informazion
 - **Profili di provisioning iOS**: le app iOS includono un profilo di provisioning e codice firmato da un certificato. Quando il certificato scade, l'app non può più essere eseguita. Intune offre gli strumenti per assegnare in modo proattivo un nuovo criterio del profilo di provisioning ai dispositivi con app prossime alla scadenza.
     - [Profili di provisioning delle app iOS](app-provisioning-profile-ios.md)
 
-### Monitoraggio
-<a id="monitor" class="xliff"></a>
+### <a name="monitor"></a>Monitoraggio
 - **App con licenza**: consente di visualizzare, assegnare e monitorare le app acquistate con Volume Purchase Program dagli App Store.
     - [Applicazioni acquistate con Volume Purchase Program da Windows Store per le aziende](windows-store-for-business.md)
 - **Discovered Apps** (App individuate): mostra tutte le applicazioni assegnate da Intune e installate su un dispositivo.
@@ -99,8 +94,7 @@ Il carico di lavoro **App per dispositivi mobili** contiene numerose informazion
 
 Per informazioni dettagliate, vedere [Eseguire il monitoraggio delle app](apps-monitor.md).
 
-### Installazione
-<a id="setup" class="xliff"></a>
+### <a name="setup"></a>Installazione
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Windows Store per le aziende**: consente di configurare l'integrazione di Windows Store per le aziende. In seguito è possibile sincronizzare le applicazioni acquistate con Intune, assegnarle e monitorare l'uso delle licenze.

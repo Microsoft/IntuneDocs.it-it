@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 2720cf6f1c5d6b71966c4b4987734cc40dca8aa9
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installare il client software di Intune nei PC Windows
 
@@ -43,11 +43,11 @@ Tutti i metodi, salvo quelli in cui l'utente installa il software client di Intu
 
   ![Scaricare il client PC Intune](../media/pc-sa-client-download.png)
 
-2.  Nella pagina **Download software client** fare clic su **Scarica software client**. Salvare il pacchetto **Microsoft_Intune_Setup.zip** contenente il software in un percorso protetto della rete locale.
+2. Nella pagina **Download software client** fare clic su **Scarica software client**. Salvare il pacchetto **Microsoft_Intune_Setup.zip** contenente il software in un percorso protetto della rete locale.
 
-Il pacchetto di installazione del software client di Intune contiene informazioni univoche e specifiche sull'account, disponibili tramite un certificato incorporato. Se utenti non autorizzati ottengono l'accesso al pacchetto di installazione, possono registrare PC nell'account rappresentato dal certificato incorporato ed eventualmente ottenere l'accesso alle risorse aziendali.
+  Il pacchetto di installazione del software client di Intune contiene informazioni univoche e specifiche sull'account, disponibili tramite un certificato incorporato. Se utenti non autorizzati ottengono l'accesso al pacchetto di installazione, possono registrare PC nell'account rappresentato dal certificato incorporato ed eventualmente ottenere l'accesso alle risorse aziendali.
 
-3.  Estrarre il contenuto del pacchetto di installazione in un percorso sicuro nella rete locale.
+3. Estrarre il contenuto del pacchetto di installazione in un percorso sicuro nella rete locale.
 
     > [!IMPORTANT]
     > Non rinominare o rimuovere il file **ACCOUNTCERT** estratto, altrimenti l'installazione del software client avrà esito negativo.
@@ -198,13 +198,10 @@ Usando un prompt dei comandi con privilegi elevati, eseguire uno dei comandi seg
 
 **Metodo 1**:
 
-    ```
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
-    ```
 
 **Metodo 2**<br>Si noti che non tutti gli agenti sono installati in ogni SKU di Windows:
 
-    ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
     wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
     wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
@@ -237,7 +234,6 @@ Usando un prompt dei comandi con privilegi elevati, eseguire uno dei comandi seg
     wmic product where name="Windows Online Management Update Manager" call uninstall<br>
     wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
     wmic product where name="Windows Intune" call uninstall
-    ```
 
 > [!TIP]
 > L'annullamento della registrazione del client lascerà un record lato server non aggiornato per il client interessato. Poiché il processo di annullamento della registrazione è asincrono e sono presenti nove agenti da disinstallare, è possibile che siano necessari fino a 30 minuti per il completamento.
@@ -255,10 +251,8 @@ Controllare "%ProgramFiles%\Microsoft\OnlineManagement" e verificare che a sinis
 
 Il processo di annullamento della registrazione non rimuove la cartella OnlineManagement. Attendere 30 minuti dopo la disinstallazione ed eseguire il comando seguente. Se il comando viene eseguito troppo presto, la disinstallazione potrebbe rimanere in uno stato sconosciuto. Per rimuovere la cartella, avviare un prompt con privilegi elevati ed eseguire:
 
-    ```
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
-    ```
 
-### <a name="see-also"></a>Vedere anche
+### <a name="next-steps"></a>Passaggi successivi
 [Gestire i PC Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 [Risolvere i problemi di installazione client](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
