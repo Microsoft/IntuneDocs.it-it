@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
+ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/15/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usare le app gestite nel dispositivo iOS
 
@@ -38,6 +38,8 @@ Le app gestite possono essere installate in due modi:
 -   Quando il dispositivo viene registrato in Microsoft Intune, è possibile installare l'app dall'app Portale aziendale o dal sito Web del portale aziendale oppure l'installazione nel dispositivo può essere eseguita dall'amministratore IT. Per informazioni sulla registrazione, vedere [Registrare il dispositivo iOS in Intune](enroll-your-device-in-intune-ios.md) o [Registrare il dispositivo macOS in Intune](enroll-your-device-in-intune-macos.md).
 
 -   L'app viene installata da App Store e quindi l'utente accede con l'account utente aziendale gestito da Intune.
+
+È possibile a volte che l'amministratore IT acquisti più licenze per un'app installata. Se viene visualizzato un messaggio in cui viene richiesto di accettare il contratto di Volume Purchase Program di Apple, accettare il programma. Se non lo si accetta, non sarà possibile installare l'app.
 
 ### <a name="what-can-my-it-admin-manage-in-an-app"></a>Cosa può gestire l'amministratore IT in un'app?
 Di seguito sono riportati alcuni esempi di opzioni che l'amministratore IT può gestire in un'app e che possono influire sulle interazioni con i dati aziendali nel dispositivo:

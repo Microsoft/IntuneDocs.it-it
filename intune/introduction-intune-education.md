@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/13/2017
 ---
-# Che cos'è Intune per Education?
-<a id="what-is-intune-for-education" class="xliff"></a>
+# <a name="what-is-intune-for-education"></a>Che cos'è Intune per Education?
 
 Intune per Education è progettato per consentire a docenti e studenti di essere produttivi, mantenendo protetti i dati dell'istituto di istruzione. Intune è un servizio di gestione della mobilità aziendale (EMM, Enterprise Mobility Management) basato sul cloud che rappresenta la base di Intune per Education.
 
@@ -39,8 +38,7 @@ Sia Intune che Intune per Education consentono di:
 * Proteggere le informazioni dell'organizzazione, grazie alla possibilità di controllare le modalità di accesso e condivisione dei dati da parte degli utenti.
 * Assicurarsi che i dispositivi e le app siano conformi ai requisiti di sicurezza.
 
-### Passaggi successivi
-<a id="next-steps" class="xliff"></a>
+### <a name="next-steps"></a>Passaggi successivi
 * Acquisire familiarità con il prodotto [con una versione di valutazione di 30 giorni di Intune](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune).
 * Scoprire qual è il modo più rapido per [iniziare a usare Intune per Education](/intune-education/what-is-express-configuration).
 * Approfondire i [requisiti tecnici e le funzionalità](/intune/supported-devices-browsers) di Intune.

@@ -14,17 +14,17 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Proteggere app e dati line-of-business su dispositivi non registrati
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-I criteri di gestione delle applicazioni mobili consentono di proteggere i dati aziendali limitando le azioni che possono causare la perdita dei dati aziendali e applicando i requisiti di accesso ai dati, ad esempio il PIN dell'app. Prima di applicare i criteri di gestione delle applicazioni mobili alle app line-of-business per iOS e Android, è necessario eseguire il wrapping dell'app con lo strumento di wrapping delle app di Microsoft Intune. Il wrapping dell'app è il processo di applicazione di un livello di gestione a un'app per dispositivi mobili senza alcuna modifica dell'applicazione, che viene quindi distribuita agli utenti.  
+I criteri di gestione delle applicazioni mobili consentono di proteggere i dati aziendali limitando le azioni che possono causare la perdita dei dati aziendali e applicando i requisiti di accesso ai dati, ad esempio il PIN dell'app. Prima di applicare i criteri di gestione delle applicazioni mobili alle app line-of-business per iOS e Android, è necessario eseguire il wrapping dell'app con lo strumento di wrapping delle app di Microsoft Intune. Il wrapping dell’app è il processo di applicazione di un livello di gestione a un'app per dispositivi mobili senza alcuna modifica dell'applicazione e la sua distribuzione agli utenti.  
 
 Questo argomento elenca i passaggi per l'applicazione dei criteri MAM alle app a cui gli utenti hanno accesso su **dispositivi di proprietà dei dipendenti e non gestiti** e dispositivi gestiti da **soluzioni di gestione di dispositivi mobili (MDM) di terze parti**.  Per preparare le app line-of-business eseguite su **dispositivi registrati in gestione di dispositivi mobili di Intune**, vedere [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 

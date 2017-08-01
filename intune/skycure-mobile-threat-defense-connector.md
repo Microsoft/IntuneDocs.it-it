@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c55fa5b3ea86127648850ae7374107ca65db9764
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2a7c15cf695fd88ba5961611c78ecc28a29238af
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Connettore Skycure Mobile Threat Defense
 
@@ -115,14 +115,10 @@ Per altre informazioni, visitare il [sito Web di Skycure](https://www.skycure.co
 
 Questi sono i passaggi da completare per integrare Intune con Skycure:
 
-1.  [Configurare Skycure per l'uso di Single Sign-On (SSO) di Azure Active Directory](skycure-azure-sso-configure.md)
+1.  [Add and assign Skycure apps, Microsoft Authenticator and iOS app configuration policy](mtd-apps-ios-app-configuration-policy-add-assign.md) (Aggiungere e assegnare app Skycure e Microsoft Authenticator e criteri di configurazione delle app iOS)
 
-2.  [Scaricare i criteri di configurazione delle app iOS Skycure](skycure-ios-app-configuration-policy-download.md)
+2.  [Configurare l'integrazione di Skycure con Intune](skycure-mtd-connector-integration.md)
 
-3.  [Add and assign Skycure apps, Microsoft Authenticator and iOS app configuration policy](mtd-apps-ios-app-configuration-policy-add-assign.md) (Aggiungere e assegnare app Skycure e Microsoft Authenticator e criteri di configurazione delle app iOS)
+3.  [Abilitare Mobile Threat Defense in Intune](mtd-connector-enable.md)
 
-4.  [Configurare l'integrazione di Skycure con Intune](skycure-mtd-connector-integration.md)
-
-5.  [Abilitare Skycure Mobile Threat Defense in Intune](mtd-connector-enable.md)
-
-6.  [Creare i criteri di conformità di Skycure Mobile Threat Defense in Intune](mtd-device-compliance-policy-create.md)
+4.  [Creare criteri di conformità dei dispositivi Mobile Threat Defense (MTD) con Intune](mtd-device-compliance-policy-create.md)

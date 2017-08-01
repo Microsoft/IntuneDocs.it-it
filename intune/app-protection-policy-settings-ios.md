@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 537087b720338413261b3947365a4d90fed89fbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -71,8 +71,8 @@ Esistono alcune app e servizi della piattaforma esenti, per i quali in determina
 | **Controlla di nuovo i requisiti di accesso dopo (minuti)** | Configurare le seguenti impostazioni: <ul><li>**Timeout**: numero di minuti prima che vengano ricontrollati i requisiti di accesso definiti in precedenza nei criteri. Ad esempio, un amministratore attiva il PIN nel criterio e l'utente deve immettere un PIN quando apre un'app MAM. Quando si usa questa impostazione, l'utente non dovrà immettere un PIN per alcuna app MAM per altri **30 minuti** (valore predefinito).</li><li>**Periodo di prova offline**: numero di minuti per cui è consentita l'esecuzione di app MAM offline. Specificare il periodo (in minuti) prima che vengano ricontrollati i requisiti di accesso per l'app. Valore predefinito: **720** minuti (12 ore). Alla scadenza di questo periodo, l'app richiederà l'autenticazione utente per AAD per poter continuare l'esecuzione.</li></ul>| Timeout: 30 <br><br> Offline: 720 |
 | **Intervallo offline (giorni) prima della cancellazione dei dati dell'app** | Dopo questo numero di giorni (definito dall'amministratore) di esecuzione offline, l'app stessa eseguirà una cancellazione selettiva. Questa cancellazione selettiva è uguale a quella che può essere avviata dall'amministratore nel flusso di lavoro di cancellazione MAM. <br><br> | 90 giorni |
 | **Disabilita il PIN dell'app quando il PIN del dispositivo è gestito** | Scegliere **Sì** per disabilitare il PIN dell'app quando viene rilevato un blocco del dispositivo in un dispositivo registrato. | No |
-| **Richiedi un sistema operativo iOS minimo** | Scegliere **Sì** per richiedere un sistema operativo iOS minimo per usare questa app. All'utente verrà impedito l'accesso se la versione di iOS nel dispositivo non soddisfa il requisito. | No |
-| **Richiedi un sistema operativo iOS minimo (solo avviso)** | Scegliere **Sì** per richiedere un sistema operativo iOS minimo per usare questa app. L'utente visualizzerà una notifica se la versione di iOS nel dispositivo non soddisfa il requisito. Questa notifica può essere chiusa. | No |
+| **Richiedi un sistema operativo iOS minimo** | Scegliere **Sì** per richiedere un sistema operativo iOS minimo per usare questa app. All'utente verrà impedito l'accesso se la versione di iOS nel dispositivo non soddisfa il requisito. Questi criteri supportano le versioni con una sola cifra decimale, ad esempio iOS 10.3. | No |
+| **Richiedi un sistema operativo iOS minimo (solo avviso)** | Scegliere **Sì** per richiedere un sistema operativo iOS minimo per usare questa app. L'utente visualizzerà una notifica se la versione di iOS nel dispositivo non soddisfa il requisito. Questa notifica può essere chiusa. Questi criteri supportano le versioni con una sola cifra decimale, ad esempio iOS 10.3. | No |
 | **Richiedi una versione minima dell'app** | Scegliere **Sì** per richiedere una versione minima dell'app per usare l'app. All'utente viene impedito l'accesso se la versione dell'app nel dispositivo non soddisfa il requisito.<br><br>Poiché spesso gli schemi di numerazione delle versioni sono diversi per le varie app, creare un criterio con una versione minima di un'app come destinazione (ad esempio, "Criteri versione Outlook"). <br><br> | No | 
 | **Richiedi una versione minima dell'app (solo avviso)** | Scegliere **Sì** per consigliare una versione minima dell'app per usare questa app. L'utente visualizza una notifica se la versione dell'app nel dispositivo non soddisfa il requisito. Questa notifica può essere chiusa.<br><br>Poiché spesso gli schemi di numerazione delle versioni sono diversi per le varie app, creare un criterio con una versione minima di un'app come destinazione (ad esempio, "Criteri versione Outlook"). <br><br> | No | 
 | **Richiedi una versione minima dell'SDK dei criteri di protezione app di Intune** | Scegliere **Sì** per richiedere una versione minima dell'SDK dei criteri di protezione delle app di Intune per l'app da usare. All'utente viene impedito l'accesso se la versione dell'SDK dei criteri di protezione delle app di Intune dell'app non soddisfa il requisito. <br> <br> Per altre informazioni sull'SDK dei criteri di protezione delle app di Intune, vedere [Panoramica di Intune App SDK](app-sdk.md) <br><br> | No |

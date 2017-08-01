@@ -1,49 +1,92 @@
 ---
-title: "Introduzione alla conformità dei dispositivi"
+title: "Criteri di conformità dei dispositivi Intune"
 titleSuffix: Intune on Azure
-description: "Usare questo argomento per comprendere i prerequisiti necessari per creare i criteri di conformità in Microsoft Intune\""
+description: "Usare questo argomento per informazioni sulla conformità dei dispositivi in Microsoft Intune\""
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
+ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9723e5a8b001068e8b7c9994723e6c7111e7a80d
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/20/2017
 ---
-# <a name="get-started-with-device-compliance-in-intune"></a>Introduzione alla conformità dei dispositivi in Intune
-
+# <a name="get-started-with-intune-device-compliance-policies"></a>Introduzione ai criteri conformità dei dispositivi Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-In questo argomento verrà illustrato quanto segue: 
+## <a name="what-is-device-compliance-in-intune"></a>Che cos'è la conformità dei dispositivi in Intune?
 
-- I prerequisiti per iniziare a creare criteri di conformità dei dispositivi.
-- Una rapida panoramica sui dati visualizzati e sulle attività che è possibile svolgere nel portale di Intune di Azure. 
+I criteri di conformità dei dispositivi Intune definiscono le regole e le impostazioni che un dispositivo deve soddisfare per essere considerato conforme da Intune.
 
-Se non si ha familiarità con il concetto di conformità dei dispositivi, è consigliabile leggere [questo argomento](device-compliance.md) per scoprire cosa si intende per conformità dei dispositivi e come è possibile applicarla nell'organizzazione.
+Sono incluse le regole seguenti:
+
+- Uso di una password per l'accesso ai dispositivi
+
+- Crittografia
+
+- Dispositivo non manomesso con jailbreak o root
+
+- Versione minima richiesta del sistema operativo
+
+- Versione massima consentita del sistema operativo
+
+- Dispositivo non al di sopra del livello di Mobile Threat Defense
+
+È anche possibile usare questi criteri per monitorare lo stato di conformità nei dispositivi.
+
+### <a name="device-compliance-requirements"></a>Requisiti di conformità del dispositivo
+
+I requisiti di conformità sono essenzialmente regole quali la richiesta di un PIN per il dispositivo o la crittografia che è possibile specificare come obbligatoria o non obbligatoria in base ai criteri di conformità.
+
+<!---### Actions for noncompliance
+
+You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
+When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
+actions for a device that continues to be in the noncompliant status for
+a week:
+
+-   When the device is first determined to be non-compliant, an email with noncompliant notification is sent to the user.
+
+-   3 days after initial noncompliance state, a follow up reminder is sent to the user.
+
+-   5 days after initial noncompliance state, a final reminder with a notification that access to company resources will be blocked on the device in 2 days if the compliance issues are not remediated is sent to the user.
+
+-   7 days after initial noncompliance state, access to company resources is blocked. This requires that you have conditional access policy that specifies that access from noncompliant devices should    be blocked for services such as Exchange and SharePoint.
+
+### Grace Period
+
+This is the time between when a device is first determined as
+noncompliant to when access to company resources on that device is blocked. This time allows for time that the user has to resolve
+compliance issues on the device. You can also use this time to create your action sequences to send notifications to the user before their access is blocked.
+
+Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ##  <a name="pre-requisites"></a>Prerequisiti
 
--   Una sottoscrizione a Intune
+È necessario avere le seguenti sottoscrizioni per usare i criteri di conformità dei dispositivi con Intune:
 
--   Una sottoscrizione ad Azure Active Directory
+- Intune EMS
 
-##  <a name="supported-platforms"></a>Piattaforme supportate:
+- Azure AD Premium
+
+###  <a name="supported-platforms"></a>Piattaforme supportate:
 
 -   Android
 
 -   iOS
+
+-   macOS (anteprima)
 
 -   Windows 8.1
 
@@ -51,32 +94,48 @@ Se non si ha familiarità con il concetto di conformità dei dispositivi, è con
 
 -   Windows 10
 
-##  <a name="azure-portal-workflow"></a>Flusso di lavoro del portale di Azure
+> [!IMPORTANT]
+> Per segnalare lo stato di conformità, i dispositivi devono essere registrati in Intune.
 
-Di seguito viene fornita una panoramica di come è possibile creare e gestire la conformità di un dispositivo nel portale di Intune di Azure.
+## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Funzionamento dei criteri di conformità Intune con Azure AD
 
-<!---### Overview
+Quando un dispositivo viene registrato in Intune, si verifica il processo di registrazione di Azure AD, che aggiorna gli attributi del dispositivo con altre informazioni in Azure AD. Una delle informazioni chiave sul dispositivo è lo stato di conformità del dispositivo, usato dai criteri di accesso condizionale per consentire o bloccare l'accesso alla posta elettronica e altre risorse aziendali.
 
-When you choose the **Set device compliance** workload, the blade opens with an  **Overview** section that displays a summary view of your compliance policies that you have created and the status of the devices they have been applied to. If you
-don’t have any policies configured yet, the overview will just include the various reports but with no data.--->
+- Altre informazioni sul [processo di registrazione di Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).
 
-### <a name="manage"></a>Gestire
+##  <a name="ways-to-use-device-compliance-policies"></a>Modi per usare i criteri di conformità del dispositivo
 
-È possibile creare, modificare ed eliminare i criteri di conformità. Inoltre, da qui è anche possibile assegnare i criteri agli utenti.
+### <a name="with-conditional-access"></a>Con l'accesso condizionale
+È possibile usare i criteri di conformità con l'accesso condizionale per consentire l'accesso alla posta elettronica e ad altre risorse aziendali solo ai dispositivi che soddisfano una o più regole dei criteri di conformità.
 
-<!---### Monitor
+### <a name="without-conditional-access"></a>Senza l'accesso condizionale
+È anche possibile usare i criteri di conformità dei dispositivi indipendentemente dall'accesso condizionale. In tal caso, i dispositivi vengono valutati e segnalati in base allo stato di conformità. Può ad esempio essere utile segnalare quanti dispositivi non sono crittografati o quali dispositivi sono stati manomessi con jailbreak o root. Tuttavia, quando i criteri di conformità vengono usati in modo indipendente, non vengono applicate limitazioni per l'accesso alle risorse aziendali.
 
-This section is a detailed view of what you see in the **Overview**. A list of all the reports are displayed in this section and you can interactively drill down through each of these reports.--->
+I criteri di conformità vengono distribuiti agli utenti. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata sui dispositivi dell’utente. Per informazioni sul tempo necessario ai dispositivi mobili per ottenere un criterio dopo la distribuzione, vedere Gestire impostazioni e funzionalità nei dispositivi.
 
-### <a name="setup"></a>Installazione
+##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Uso dei criteri di conformità nel portale di Intune classico e nel Portale di Azure
 
-Periodo di validità dello stato di conformità
+Si notino le differenze principali per eseguire la transizione al nuovo flusso di lavoro dei criteri di conformità del dispositivo nel portale di Azure.
+
+- Nel portale di Azure i criteri di conformità vengono creati separatamente per ogni piattaforma supportata.
+- Nel portale di Intune classico un criterio di conformità è comune a tutte le piattaforme supportate.
+
+<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
+
+-   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a>Eseguire la migrazione dei criteri di conformità dei dispositivi dal portale di Intune classico al portale di Azure
+
+I criteri di conformità dei dispositivi creati nel [portale di Intune classico](https://manage.microsoft.com) non verranno visualizzati nel nuovo [portale di Intune di Azure](https://portal.azure.com). Tali criteri saranno tuttavia ancora destinati agli utenti e gestibili tramite il portale di Intune classico.
+
+Per sfruttare le nuove funzionalità correlate alla conformità dei dispositivi nel portale di Azure, sarà necessario creare nuovi criteri di conformità dei dispositivi nel portale stesso. Se si assegna un nuovo criterio di conformità dei dispositivi nel portale di Azure a un utente al quale è stato assegnato un criterio di conformità dei dispositivi anche dal portale di Intune classico, i criteri di conformità dei dispositivi dal portale di Intune di Azure hanno la precedenza rispetto a quelli creati nel portale di Intune classico.
 
 ##  <a name="next-steps"></a>Passaggi successivi
-[Create a compliance policy for Android](compliance-policy-create-android.md) (Creare un criterio di conformità per Android)
 
-[Create a compliance policy for Android for work](compliance-policy-create-android-for-work.md) (Creare un criterio di conformità per Android for Work)
+Creare criteri di conformità dei dispositivi per le piattaforme seguenti:
 
-[Create a compliance policy for iOS](compliance-policy-create-ios.md) (Creare un criterio di conformità per iOS)
-
-[Create a compliance policy for Windows](compliance-policy-create-windows.md) (Creare un criterio di conformità per Windows)
+- [Android](compliance-policy-create-android.md)
+- [Android for work](compliance-policy-create-android-for-work.md)
+- [iOS](compliance-policy-create-ios.md)
+- [macOS](compliance-policy-create-mac-os.md)
+- [Windows](compliance-policy-create-windows.md)
