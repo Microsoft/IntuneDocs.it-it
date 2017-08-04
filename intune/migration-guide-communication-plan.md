@@ -27,21 +27,21 @@ Il piano di comunicazione è un elemento chiave in una migrazione a Intune. È p
 
 Si consiglia il piano di comunicazione di posta elettronica seguente. Sono disponibili modelli da adattare al piano di comunicazione scelto:
 
--   **Messaggio di posta elettronica 1:** illustrare vantaggi, aspettative e pianificazione. Cogliere questa opportunità per presentare tutti gli altri nuovi servizi a cui sarà concesso l'accesso nei dispositivi gestiti da Intune.<br/><br/>
+-   **Messaggio di posta elettronica\# 1:** illustrare vantaggi, aspettative e pianificazione. Cogliere questa opportunità per presentare tutti gli altri nuovi servizi a cui sarà concesso l'accesso nei dispositivi gestiti da Intune.<br/><br/>
 
 
-    -   [Scaricare il modello di messaggio di posta 1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
+    -   [Scaricare il modello di messaggio di posta\# 1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
--   **Messaggio di posta elettronica 2:** annunciare che i servizi sono ora pronti per l'accesso tramite Intune. Dare istruzioni agli utenti di eseguire la registrazione. Ricordare agli utenti i vantaggi e i motivi strategici per la migrazione.<br/><br/>
+-   **Messaggio di posta elettronica\# 2:** annunciare che i servizi sono ora pronti per l'accesso tramite Intune. Dare istruzioni agli utenti di eseguire la registrazione. Ricordare agli utenti i vantaggi e i motivi strategici per la migrazione.<br/><br/>
 
 
-    -   [Scaricare il modello di messaggio di posta 2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
+    -   [Scaricare il modello di messaggio di posta\# 2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **Messaggio di posta elettronica 3:** indicare una sequenza temporale agli utenti prima che l'accesso venga compromesso. Ricordare di nuovo agli utenti i vantaggi e i motivi strategici per la migrazione. La tempistica di invio dei messaggi di posta elettronica deve includere una finestra temporale scorrevole corrispondente alle fasi previste. Ad esempio, in giugno inviare il messaggio di posta elettronica 1 agli utenti nella fase 1, il messaggio di posta elettronica 2 agli utenti nella fase 2 e il messaggio di posta elettronica 3 agli utenti nella fase 3.<br/><br/>
+-   **Messaggio di posta elettronica\# 3:** indicare una sequenza temporale agli utenti prima che l'accesso venga compromesso. Ricordare di nuovo agli utenti i vantaggi e i motivi strategici per la migrazione. La tempistica di invio dei messaggi di posta elettronica deve includere una finestra temporale scorrevole corrispondente alle fasi previste. Ad esempio, in giugno inviare il messaggio di posta elettronica\# 1 agli utenti nella fase 1, il messaggio di posta elettronica\# 2 agli utenti nella fase 2 e il messaggio di posta elettronica\# 3 agli utenti nella fase 3.<br/><br/>
 
-    -   [Scaricare il modello di messaggio di posta 3](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
+    -   [Scaricare il modello di messaggio di posta\# 3](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
 
 Dopo un determinato periodo, è possibile iniziare ad applicare la conformità tramite criteri di accesso condizionale e usarli per l'accesso ai dati aziendali, come illustrato in [Promuovere l'adozione da parte degli utenti finali con l'accesso condizionale](migration-guide-drive-adoption.md).
 
