@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d03f3936d608b9d526724eccbbdadbe030b53b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 036899c5e438355cc10da8ab2bd47ec0830c9946
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Proteggere i dati con la cancellazione selettiva o completa tramite Microsoft Intune
 
@@ -99,8 +99,8 @@ La **cancellazione selettiva** rimuove i dati aziendali, compresi i dati sulla g
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso.|
 |Impostazioni del profilo certificato|Certificati rimossi e revocati.|
 |Agente di gestione|Il profilo di gestione viene rimosso.|
-|Posta elettronica|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato. Se Microsoft Exchange è ospitato in locale, i profili di posta elettronica e i messaggi di posta elettronica memorizzati nella cache non vengono rimossi.|
-|Outlook|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|
+|Posta elettronica|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|
+|Outlook|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi.|
 |Separazione di Azure Active Directory (AAD)|Il record AAD viene rimosso.|
 |Contatti | I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. <br /> <br />Attualmente è supportata solo l'app Outlook.
 
@@ -118,7 +118,7 @@ La **cancellazione selettiva** rimuove i dati aziendali, compresi i dati sulla g
 |Impostazioni del profilo certificato|Certificati revocati, ma non rimossi.|Certificati rimossi e revocati.|
 |Agente di gestione|Il privilegio di amministratore del dispositivo viene revocato.|Il privilegio di amministratore del dispositivo viene revocato.|
 |Posta elettronica|N/D. Vedere l'elemento di Outlook.|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|
-|Outlook|Il messaggio di posta elettronica ricevuto dall'app di Microsoft Outlook per Android viene rimosso, ma solo se Outlook è protetto tramite i criteri MAM. In caso contrario, Outlook non è viene cancellato durante l'annullamento della registrazione.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|Il messaggio di posta elettronica ricevuto dall'app di Microsoft Outlook per Android viene rimosso, ma solo se Outlook è protetto tramite i criteri MAM. In caso contrario, Outlook non è viene cancellato durante l'annullamento della registrazione.</br>Eccezione: se Exchange è ospitato in locale, i messaggi di posta elettronica non vengono rimossi.|
+|Outlook|Il messaggio di posta elettronica ricevuto dall'app di Microsoft Outlook per Android viene rimosso, ma solo se Outlook è protetto tramite i criteri MAM. In caso contrario, Outlook non è viene cancellato durante l'annullamento della registrazione.|Il messaggio di posta elettronica ricevuto dall'app di Microsoft Outlook per Android viene rimosso, ma solo se Outlook è protetto tramite i criteri MAM. In caso contrario, Outlook non è viene cancellato durante l'annullamento della registrazione.|
 |Separazione di Azure Active Directory (AAD)|Il record AAD viene rimosso.|Il record AAD viene rimosso.|
 |Contatti | I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. <br /> <br />Attualmente è supportata solo l'app Outlook.|I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. <br /> <br />Attualmente è supportata solo l'app Outlook.
 
@@ -134,7 +134,7 @@ L'esecuzione di una cancellazione selettiva in un dispositivo Android for Work c
 |Impostazioni|Le configurazioni impostate tramite criteri di Intune non vengono più applicate e gli utenti possono modificare le impostazioni.|Le configurazioni impostate tramite criteri di Intune non vengono più applicate e gli utenti possono modificare le impostazioni.|Le configurazioni impostate tramite criteri di Intune non vengono più applicate e gli utenti possono modificare le impostazioni.|Le configurazioni impostate tramite criteri di Intune non vengono più applicate e gli utenti possono modificare le impostazioni.|
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso.|Rimosso.|Non supportata.|Rimosso.|
 |Impostazioni del profilo certificato|Certificati rimossi e revocati.|Certificati rimossi e revocati.|Non supportata.|Certificati rimossi e revocati.|
-|Posta elettronica|Rimuove le applicazioni di posta elettronica abilitate per EFS, tra cui i messaggi e gli allegati dell'applicazione Posta di Windows.|Non supportata.|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|Rimuove le applicazioni di posta elettronica abilitate per EFS, tra cui i messaggi e gli allegati dell'applicazione Posta di Windows. Rimuove gli account di posta elettronica di cui Intune ha effettuato il provisioning.</br>**Eccezione**: se Exchange è ospitato in locale, gli account di posta elettronica non vengono rimossi.|
+|Posta elettronica|Rimuove le applicazioni di posta elettronica abilitate per EFS, tra cui i messaggi e gli allegati dell'applicazione Posta di Windows.|Non supportata.|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|Rimuove le applicazioni di posta elettronica abilitate per EFS, tra cui i messaggi e gli allegati dell'applicazione Posta di Windows. Rimuove gli account di posta elettronica di cui Intune ha effettuato il provisioning.|
 |Separazione di Azure Active Directory (AAD)|No.|No.|Il record AAD viene rimosso.|Non applicabile. Windows 10 non supporta la cancellazione selettiva per dispositivi appartenenti ad Azure Active Directory.|
 
 ## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Cancellare contenuti abilitati per Encryption File System (EFS)

@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a086da185681a91daad214f1be2d4ff0e2827fbb
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 71093f8ac17fc6d6938f5c263a40204f89419726
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="getting-started-with-apps"></a>Introduzione alle app
 
-![Immagine dell'aggiunta dell'app Microsoft Word.](/intune/media/generic-add-apps.png)
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-I dispositivi aziendali possono essere usati solo con le app necessarie. Intune supporta vari metodi per la distribuzione di app nei dispositivi aziendali:
+Intune supporta vari metodi per la distribuzione di app nei dispositivi aziendali:
 
 * **Programmi di installazione del software**: programmi in cui si carica un file che viene scaricato nei dispositivi degli utenti
 * __Collegamenti esterni__: utili quando l'app risiede in un app store pubblico o è un'app Web

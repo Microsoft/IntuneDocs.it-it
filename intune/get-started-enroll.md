@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,15 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36e658cebdfd23547e3c376124289046f81acc1f
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="getting-started-enrolling-devices"></a>Introduzione alla registrazione di dispositivi
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-![Dispositivo iOS che visualizza l'app Portale aziendale. Prima schermata visualizzata all'utente per il processo di registrazione.](/intune-user-help/media/ios-enroll-1a-comp-access-setup.png)
 
 Microsoft Intune consente di offrire agli utenti la possibilità di usare i dispositivi mobili, mantenendo protetti i dati aziendali. Poiché gli utenti finali interagiscono con Intune nei dispositivi anziché nella console di amministrazione, si vorrà garantire un'esperienza di registrazione semplice. Per questa ragione è possibile combinare criteri di conformità ben definiti e la propria esperienza per dimostrare empatia nei confronti degli utenti. Ciò è particolarmente importante poiché gli utenti sapranno esattamente quali informazioni sono visibili all'amministratore:
 

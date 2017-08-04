@@ -20,15 +20,13 @@ ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/12/2017
 ---
-# Impostazioni dei criteri di iOS in Microsoft Intune
-<a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
+# <a name="ios-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di iOS in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune offre una gamma di impostazioni generali predefinite che è possibile configurare nei dispositivi iOS. È anche possibile usare lo strumento Apple Configurator per creare impostazioni personalizzate non disponibili in Intune.
 
-## Impostazioni dei criteri di configurazione generali
-<a id="general-configuration-policy-settings" class="xliff"></a>
+## <a name="general-configuration-policy-settings"></a>Impostazioni dei criteri di configurazione generali
 
 Usare i **criteri di configurazione generali iOS** di Microsoft Intune per configurare:
 
@@ -43,8 +41,7 @@ Usare i **criteri di configurazione generali iOS** di Microsoft Intune per confi
 
 Se l'impostazione che si sta cercando non viene visualizzata in questo argomento, è possibile crearla usando i criteri personalizzati iOS che consentono di importare le impostazioni create usando lo [strumento Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Per altre informazioni, vedere "Impostazioni di criteri personalizzati" più avanti in questo argomento.
 
-### Impostazioni di sicurezza
-<a id="security-settings" class="xliff"></a>
+### <a name="security-settings"></a>Impostazioni di sicurezza
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
@@ -63,8 +60,7 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |**Consenti sblocco tramite impronta digitale**|Consente di sbloccare il dispositivo con un'impronta digitale.|
 <sup>1</sup> Nei dispositivi iOS, se le impostazioni **Minuti di inattività prima dello spegnimento dello schermo** e **Minuti di inattività prima che venga richiesta la password** sono configurate, vengono applicate in sequenza. Ad esempio, se si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo 5 minuti e il dispositivo viene bloccato dopo altri 5 minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio, il dispositivo viene bloccato 5 minuti dopo che l'utente spegne lo schermo.
 
-### Impostazioni di sistema
-<a id="system-settings" class="xliff"></a>
+### <a name="system-settings"></a>Impostazioni di sistema
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
@@ -77,8 +73,7 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |**Consenti invio dati di diagnostica**|Consente o blocca l'invio di dati di diagnostica ad Apple dal dispositivo.|
 |**Consenti passbook durante il blocco**|Consente all'utente di accedere all'app Passbook mentre il dispositivo è bloccato.|
 
-### Impostazioni cloud per documenti e dati
-<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
+### <a name="cloud-settings-for-documents-and-data"></a>Impostazioni cloud per documenti e dati
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
@@ -92,8 +87,7 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |**Consenti la condivisione di foto con iCloud**|Impostare su **No** per disabilitare **Condivisione foto di iCloud** nel dispositivo.|
 |**Consenti la raccolta di foto con iCloud**|Se impostata su **No**, disabilita l'uso della libreria foto di iCloud che consente agli utenti di archiviare foto e video nel cloud.   Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo verranno rimosse dal dispositivo se questa opzione è impostata su **No**.|
 
-### Impostazioni dell'applicazione per il browser
-<a id="application-settings-for-the-browser" class="xliff"></a>
+### <a name="application-settings-for-the-browser"></a>Impostazioni dell'applicazione per il browser
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
@@ -105,8 +99,7 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |**Consenti scripting Java**|Consente l'esecuzione di script Java nel browser.|
 |**Consenti avviso illeciti**|Consentire gli avvisi di illeciti nel browser.|
 
-### Impostazioni dell'applicazione per le app
-<a id="application-settings-for-apps" class="xliff"></a>
+### <a name="application-settings-for-apps"></a>Impostazioni dell'applicazione per le app
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
@@ -120,8 +113,7 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |**Consenti all'utente di considerare attendibili nuovi autori di app aziendali**|Consentire all'utente di scegliere di considerare attendibili le app che non sono state scaricate dall'App Store.|
 
 
-### Impostazioni dell'applicazione per i giochi
-<a id="application-settings-for-games" class="xliff"></a>
+### <a name="application-settings-for-games"></a>Impostazioni dell'applicazione per i giochi
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
@@ -129,8 +121,7 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |**Consenti l'aggiunta di amici al Game Center**|Consente all'utente di aggiungere amici in Game Center.|
 |**Consenti la modalità di gioco multiplayer**|Consente all'utente di partecipare a giochi multiplayer sul dispositivo.|
 
-### Impostazioni dell'applicazione per i contenuti multimediali
-<a id="application-settings-for-media-content" class="xliff"></a>
+### <a name="application-settings-for-media-content"></a>Impostazioni dell'applicazione per i contenuti multimediali
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
@@ -140,8 +131,7 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |**Consenti all'utente di scaricare contenuti da iBook Store contrassegnati come 'Erotici'**|Consentire all'utente di scaricare libri della categoria "Erotici".|
 
 
-### Impostazioni delle funzionalità del dispositivo per l'hardware
-<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
+### <a name="device-capabilities-settings-for-hardware"></a>Impostazioni delle funzionalità del dispositivo per l'hardware
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
@@ -150,8 +140,7 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |**Forza gli Apple Watch associati a usare il rilevamento del polso**|Se abilitata, l'Apple Watch non visualizza notifiche se non è indossato.|
 |**Richiedi una password di associazione per le richieste AirPlay in uscita**|Richiedere una password di associazione quando l'utente usa AirPlay per trasmettere i contenuti ad altri dispositivi di Apple.|
 
-### Impostazioni delle funzionalità del dispositivo per il cellulare
-<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
+### <a name="device-capabilities-settings-for-cellular"></a>Impostazioni delle funzionalità del dispositivo per il cellulare
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
@@ -160,8 +149,7 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |**Consenti roaming dei dati**|Consentire il roaming dei dati quando il dispositivo si trova su una rete cellulare.|
 |**Consenti recupero in background globale durante il roaming**|Consente al dispositivo di recuperare dati come la posta elettronica durante il roaming su una rete cellulare.|
 
-### Impostazioni delle funzionalità del dispositivo per le funzionalità
-<a id="device-capabilities-settings-for-features" class="xliff"></a>
+### <a name="device-capabilities-settings-for-features"></a>Impostazioni delle funzionalità del dispositivo per le funzionalità
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
@@ -172,8 +160,7 @@ Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 |**Non consentire AirDrop dalle app gestite**|Impedisce alle app gestite di inviare dati tramite AirDrop.|
 
 
-### Impostazioni per le app conformi e non conformi
-<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
+### <a name="settings-for-compliant-and-noncompliant-apps"></a>Impostazioni per le app conformi e non conformi
 Nell'elenco **App conformi &amp; non conformi** specificare un elenco di app conformi o non conformi usando le informazioni seguenti.
 
 > [!NOTE]
@@ -190,8 +177,7 @@ Nell'elenco **App conformi &amp; non conformi** specificare un elenco di app con
 
 I criteri contenenti le impostazioni per le app conformi e non conformi devono essere distribuiti ai gruppi di utenti.
 
-### Impostazioni della modalità tutto schermo
-<a id="kiosk-mode-settings" class="xliff"></a>
+### <a name="kiosk-mode-settings"></a>Impostazioni della modalità tutto schermo
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
@@ -218,20 +204,17 @@ I criteri contenenti le impostazioni per le app conformi e non conformi devono e
 > -   Prima di poter configurare un dispositivo iOS per la modalità tutto schermo, è necessario usare lo [strumento Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) o il [programma di registrazione dispositivi di Apple](ios-device-enrollment-program-in-microsoft-intune.md) per inserire il dispositivo in modalità di supervisione. Per altre informazioni sullo strumento Apple Configurator, vedere la documentazione di Apple.
 > -   Se l'app per iOS specificata viene installata dopo aver distribuito i criteri di configurazione, il dispositivo non passerà alla modalità tutto schermo finché non viene riavviato.
 
-### Informazioni di riferimento per le app conformi e non conformi
-<a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
+### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Informazioni di riferimento per le app conformi e non conformi
 
 Usare **Report app non conformi** per visualizzare la conformità delle app consentite e bloccate.
 
-##### Per eseguire il report app non conformi
-<a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
+##### <a name="to-run-the-noncompliant-apps-report"></a>Per eseguire il report app non conformi
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Report** &gt; **Report app non conformi**.
 
 2.  Selezionare i gruppi di dispositivi da controllare, scegliere se verificare la presenza di app conformi, di app non conformi o di entrambi i tipi di app, quindi scegliere **Visualizza report**.
 
-#### Come specificare gli URL negli App Store
-<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
+#### <a name="how-to-specify-urls-to-app-stores"></a>Come specificare gli URL negli App Store
 Per specificare un URL dell'app nell'elenco delle app conformi e non conformi o nell'opzione **Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo** (solo iOS), usare uno dei formati seguenti:
 
 1. Usando un motore di ricerca, trovare l'app da usare nell'App Store iTunes e aprire la pagina per l'app.
@@ -243,20 +226,17 @@ Per specificare un URL dell'app nell'elenco delle app conformi e non conformi o 
 > [!NOTE]
 > È possibile usare anche il software iTunes per trovare l'app e il comando **Copia collegamento** per ottenere l'URL dell'app.
 
-### Impostazioni di registrazione
-<a id="enrollment-settings" class="xliff"></a>
+### <a name="enrollment-settings"></a>Impostazioni di registrazione
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
 |**Consenti blocco attivazione quando il dispositivo è in modalità di supervisione**|Abilitare il blocco attivazione su dispositivi iOS con supervisione.|
 
-### Impostazioni della modalità di supervisione
-<a id="supervised-mode-settings" class="xliff"></a>
+### <a name="supervised-mode-settings"></a>Impostazioni della modalità di supervisione
 Nei dispositivi che eseguono iOS 8.0 e versioni successive in modalità di supervisione possono essere configurate le impostazioni seguenti.
 
-### Impostazioni della modalità di supervisione per restrizioni del dispositivo
-<a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-device-restrictions"></a>Impostazioni della modalità di supervisione per restrizioni del dispositivo
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
@@ -272,8 +252,7 @@ Nei dispositivi che eseguono iOS 8.0 e versioni successive in modalità di super
 |**Consenti la modifica delle impostazioni di notifica**|Consentire all'utente di modificare le impostazioni di notifica del dispositivo.|
 |**Consenti la modifica dello sfondo**|Consentire all'utente di modificare lo sfondo del dispositivo.|
 
-### Impostazioni della modalità supervisione per restrizioni delle funzionalità
-<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-feature-restrictions"></a>Impostazioni della modalità supervisione per restrizioni delle funzionalità
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
@@ -287,8 +266,7 @@ Nei dispositivi che eseguono iOS 8.0 e versioni successive in modalità di super
 |**Consenti il controllo ortografico tastiera**|Consentire al dispositivo di eseguire il controllo ortografico.|
 |**Consenti tasti di scelta rapida**|Consentire l'uso dei tasti di scelta rapida.|
 
-### Impostazioni della modalità supervisione per restrizioni dell'app
-<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
+### <a name="supervised-mode-settings-for-app-restrictions"></a>Impostazioni della modalità supervisione per restrizioni dell'app
 
 |Nome impostazione|Dettagli|
 |----------------|--------------------|
@@ -305,8 +283,7 @@ Nei dispositivi che eseguono iOS 8.0 e versioni successive in modalità di super
 |**Consenti Game Center**|Consente l'uso dell'app Game Center.|
 
 
-### Mostrare o nascondere app
-<a id="show-or-hide-apps" class="xliff"></a>
+### <a name="show-or-hide-apps"></a>Mostrare o nascondere app
 
 Usare **Elenco di app nascoste e mostrate** per controllare quanto riportato di seguito su dispositivi supervisionati che eseguono iOS 9.3 o versione successiva:
 
@@ -314,8 +291,7 @@ Usare **Elenco di app nascoste e mostrate** per controllare quanto riportato di 
 - Specificare un elenco di app che gli utenti possono visualizzare e avviare. Non è possibile visualizzare o avviare altre app.
 
 
-#### Come creare un elenco di app nascoste o mostrate
-<a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
+#### <a name="how-to-create-a-hidden-or-shown-app-list"></a>Come creare un elenco di app nascoste o mostrate
 
 Specificare le impostazioni seguenti:
 
@@ -329,8 +305,7 @@ Specificare le impostazioni seguenti:
 |**Modifica**|Consente di modificare il nome, l'autore e l'URL dell'app selezionata.|
 |**Eliminazione**|Elimina l'app selezionata dall'elenco.|
 
-#### Informazioni per app iOS incorporate
-<a id="app-information-for-built-in-ios-apps" class="xliff"></a>
+#### <a name="app-information-for-built-in-ios-apps"></a>Informazioni per app iOS incorporate
 
 Usare le informazioni riportate in questo elenco per identificare il nome, l'autore e l'ID bundle delle app iOS incorporate che si vogliono mostrare o nascondere. Se si vogliono mostrare o nascondere tutte le app dell'elenco, è possibile copiare i dati riportati di seguito in un file di testo con estensione **csv** e quindi usare l'opzione **Importa app** per importare tutte le app contemporaneamente.
 
@@ -380,30 +355,26 @@ Usare le informazioni riportate in questo elenco per identificare il nome, l'aut
 
 
 
-## Impostazioni di criteri personalizzati
-<a id="custom-policy-settings" class="xliff"></a>
+## <a name="custom-policy-settings"></a>Impostazioni di criteri personalizzati
 
 Usare i **criteri di configurazione personalizzati iOS** di Microsoft Intune per distribuire le impostazioni create con lo strumento [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) nei dispositivi iOS. Questo strumento consente di creare molte impostazioni che controllano il funzionamento di questi dispositivi e di esportarle in un profilo di configurazione. È quindi possibile importare il profilo di configurazione in un criterio personalizzato iOS di Intune e distribuire le impostazioni a utenti e dispositivi nella propria organizzazione.
 
 Questa funzionalità consente di distribuire le impostazioni di iOS che non possono essere configurate con i criteri di configurazione generali di Intune.
 
-### Prerequisiti
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Prerequisiti
 Prima di iniziare, è necessario aver installato lo strumento Apple Configurator e creato un file di configurazione contenente le impostazioni da distribuire a utenti o dispositivi. È possibile scaricare e acquisire informazioni su Apple Configurator da [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).
 
 > [!NOTE]
 > Intune non segnala la conformità delle singole impostazioni in un criterio personalizzato iOS. Tuttavia, viene segnalata la conformità generale del criterio.
 
-### Impostazioni generali
-<a id="general-settings" class="xliff"></a>
+### <a name="general-settings"></a>Impostazioni generali
 
 |Nome impostazione|Dettagli|
     |----------------|--------------------|
     |**Nome**|Immettere un nome univoco per il criterio personalizzato iOS, che consenta di identificarlo nella console di Intune.|
     |**Descrizione**|Fornire una descrizione di carattere generale sul criterio personalizzato iOS e altre informazioni rilevanti per consentirne l'individuazione.|
 
-### Impostazioni personalizzate
-<a id="custom-settings" class="xliff"></a>
+### <a name="custom-settings"></a>Impostazioni personalizzate
 
 |Nome impostazione|Dettagli|
     |----------------|--------------------|
@@ -411,6 +382,5 @@ Prima di iniziare, è necessario aver installato lo strumento Apple Configurator
 |**File del profilo di configurazione**|Scegliere **Importa**, quindi selezionare il profilo di configurazione creato usando lo strumento Apple Configurator. **Nota:** Assicurarsi che le impostazioni esportate dallo strumento Apple Configurator siano compatibili con la versione di iOS sui dispositivi su cui vengono distribuiti i criteri personalizzati iOS. Per informazioni sulla risoluzione delle impostazioni incompatibili, cercare **Configuration Profile Reference** (Riferimento per il profilo di configurazione) e **Mobile Device Management Protocol Reference** (Riferimento per il protocollo di gestione dei dispositivi mobili) nel sito Web [Apple Developer](https://developer.apple.com/).|
     |**Dettagli del profilo di configurazione**|Visualizzare il codice XML per il profilo di configurazione importato.|
 
-### Vedere anche
-<a id="see-also" class="xliff"></a>
+### <a name="see-also"></a>Vedere anche
 [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
