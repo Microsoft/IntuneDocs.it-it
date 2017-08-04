@@ -19,11 +19,9 @@ ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/11/2017
 ---
-# Risorse aggiuntive per la pianificazione della distribuzione di Intune
-<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
+# <a name="additional-resources-for-planning-your-intune-deployment"></a>Risorse aggiuntive per la pianificazione della distribuzione di Intune
 
-## Modelli
-<a id="templates" class="xliff"></a>
+## <a name="templates"></a>Modelli
 
 I modelli di Microsoft Excel per le tabelle usate nella Guida alla pianificazione sono disponibili per il [download](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
@@ -44,8 +42,7 @@ Ecco un elenco dei modelli di tabella per ogni sezione.
 | | Criteri di accesso condizionale|-|
 
 
-## Ulteriori informazioni
-<a id="further-reading" class="xliff"></a>
+## <a name="further-reading"></a>Ulteriori informazioni
 
 Consultare queste risorse per informazioni aggiuntive che possono risultare utili durante il processo di pianificazione, progettazione e implementazione della distribuzione di Intune.
 

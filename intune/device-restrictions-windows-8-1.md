@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,22 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows 8.1 e versioni successive in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Generale
--   **Applica tutte le configurazioni a Windows 10** - Consente di applicare le impostazioni di questi criteri ai dispositivi Windows 10, oltre ai dispositivi Windows 8.1.
+
 -   **Invio dati di diagnostica** - Consente al dispositivo di inviare informazioni di diagnostica a Microsoft.
 -   **Firewall** - È necessario che Windows Firewall sia attivato.
 -   **Controllo dell'account utente** -Richiede l'uso di Controllo dell'account utente nei dispositivi.
+
 ## <a name="password"></a>Password
 -   **Tipo di password richiesto** - Richiede all'utente finale di immettere una password per accedere al dispositivo.
 -   **Lunghezza minima password** - Configura la lunghezza minima richiesta, in caratteri, per la password.
@@ -62,8 +63,10 @@ Quando si applica la crittografia in un dispositivo, è possibile visualizzare l
 -   **Accesso al menu di modalità Enterprise** - Consente agli utenti di accedere alle opzioni di menu della modalità Enterprise da Internet Explorer.
 Se si seleziona questa opzione, è possibile anche specificare una **Posizione report di registrazione** contenente un URL a un report che mostra i siti Web per cui gli utenti hanno attivato l'accesso in modalità Enterprise.
 -   **Percorso elenco siti modalità Enterprise** - Specifica il percorso dell'elenco di siti Web che useranno la modalità Enterprise quando è attiva.
+
 ## <a name="cellular"></a>Cellulare
 -   **Roaming dati** - Abilita il roaming dati quando il dispositivo si trova in una rete cellulare.
+
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
 -   **URL cartelle di lavoro** - Imposta l'URL della cartella di lavoro per consentire la sincronizzazione dei documenti tra i dispositivi.
 -   **Accedi all'app Windows Mail senza un account Microsoft** - Consente di accedere all'applicazione Windows Mail senza un account Microsoft.    

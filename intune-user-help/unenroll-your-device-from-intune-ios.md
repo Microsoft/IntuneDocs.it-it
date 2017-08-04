@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/13/2017
 ---
-# Annullare la registrazione del dispositivo iOS da Intune
-<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
+# <a name="unenroll-your-ios-device-from-intune"></a>Annullare la registrazione del dispositivo iOS da Intune
 
 Quando si annulla la registrazione del dispositivo iOS da Intune, il dispositivo non potrà più accedere alle risorse aziendali né verrà più gestito da Intune.
 

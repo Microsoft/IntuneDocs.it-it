@@ -15,14 +15,17 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 912bc5230904f5798b2e0026dcf0dd1cecdb811c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 519a721b19e42c3fe2cc8120f7985b18cd57a1ce
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]Questo argomento descrive l'esperienza dell'utente finale con le app con criteri di protezione delle app. I criteri di protezione delle app vengono applicati solo quando le app sono usate nel contesto di lavoro, ad esempio nei casi di accesso alle app con l'account aziendale o di accesso ai file archiviati nel percorso OneDrive aziendale.
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Questo argomento descrive l'esperienza utente relativa alle app con criteri di protezione. I criteri di protezione delle app vengono applicati solo quando le app sono usate nel contesto di lavoro, ad esempio nei casi di accesso alle app con l'account aziendale o di accesso ai file archiviati nel percorso OneDrive aziendale.
 ##  <a name="accessing-apps"></a>Accesso alle app
 
 Se il dispositivo **non è registrato in Intune**, all'utente finale verrà chiesto di riavviare l'app la prima volta che la usa.  Il riavvio è necessario per consentire l'applicazione dei criteri di protezione delle app all'app. Lo screenshot seguente illustra questo aspetto tramite l'app Skype:
