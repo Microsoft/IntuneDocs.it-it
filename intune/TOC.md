@@ -8,9 +8,7 @@
 ### [Novità dell'interfaccia utente dell'app](whats-new-app-ui.md)
 ### [Archivio delle novità (portale di Azure)](whats-new-archive.md)
 ### [Archivio delle novità (portale classico)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [Architettura di alto livello](high-level-architecture.md)
 ## [Cicli di vita del dispositivo e dell'app](introduction-device-app-lifecycles.md)
 ### [Ciclo di vita del dispositivo](device-lifecycle.md)
 ### [Ciclo di vita dell'app](app-lifecycle.md)
@@ -264,6 +262,8 @@
 
 # Monitorare e risolvere i problemi
 ## [Usare il ruolo di operatore helpdesk](help-desk-operators.md)
+## [Usare il data warehouse di Intune](reports-nav-create-intune-reports.md)
+### [Connettersi al data warehouse con Power BI](reports-proc-get-a-link-powerbi.md)
 
 # Sviluppare e personalizzare
 ## [Configurare impostazioni personalizzate per i dispositivi](custom-settings-configure.md)
@@ -288,5 +288,16 @@
 ### [Componente Xamarin per Intune App SDK](app-sdk-xamarin.md)
 ## [Come usare le API Graph di Intune](intune-graph-apis.md)
 ## [API Graph di Intune](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [API data warehouse di Intune](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Endpoint dell'API data warehouse](reports-api-url.md)
+### [Modello di dati del data warehouse](reports-ref-data-model.md)
+#### [Informazioni di riferimento per l'entità Date](reports-ref-date.md)
+#### [Informazioni di riferimento per l'entità User](reports-ref-user.md)
+#### [Informazioni di riferimento per le entità di gestione delle app per dispositivi mobili (MAM)](reports-ref-mobile-app-management.md)
+#### [Informazioni di riferimento per le entità della categoria Devices](reports-ref-devices.md)
+#### [Informazioni di riferimento per le entità della categoria Application](reports-ref-application.md)
+#### [Informazioni di riferimento per le entità della categoria Policy](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Glossario](intune-glossary.md)
