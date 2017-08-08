@@ -83,7 +83,7 @@
 ### [Configurare la registrazione di iOS](ios-enroll.md)
 #### [Programma di registrazione dei dispositivi](device-enrollment-program-enroll-ios.md)
 #### [Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Apple Configurator](apple-configurator-enroll-ios.md)
 ### [Configurare la registrazione di macOS](macos-enroll.md)
 
 ## [Gestire i dispositivi](device-management.md)
@@ -101,6 +101,7 @@
 ### [Rimuovere un utente](device-remove-user.md)
 ### [Controllo remoto per Android](device-profile-android-teamviewer.md)
 ### [Reimpostazione del PIN di Windows 10](device-windows-pin-reset.md)
+### [Sincronizzare il dispositivo](device-sync.md)
 ### [Esaminare l'inventario dei dispositivi](device-inventory.md)
 
 <!--### Add and delete users -->
@@ -171,6 +172,7 @@
 ### [Configurare le impostazioni di Windows 10 relative alla formazione](education-settings-configure.md)
 ### [Configurare le impostazioni di iOS relative alla formazione](education-settings-configure-ios.md)
 ### [Configurare i dispositivi condivisi iOS per la formazione](education-settings-configure-ios-shared.md)
+### [Configurare i criteri di aggiornamento per iOS](software-updates-ios.md)
 ### [Configurare le impostazioni di Windows Update for Business](windows-update-for-business-configure.md)
 ### [Configurare i certificati](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
