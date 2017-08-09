@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 07/06/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 299e2ed0a84c7158a582ee874f0711eb3c379532
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: fed97412df96d0bdffaf3b10ad5306a6f56d0066
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento per la disposizione testo per app di Intune
 
@@ -50,16 +50,7 @@ Prima di eseguire lo strumento, vedere [Considerazioni sulla sicurezza per l'ese
     > [!NOTE]
     > In alcuni casi, la versione a 32 bit di Java può causare problemi di memoria. È consigliabile installare la versione a 64 bit.
 
-- Android richiede che tutti i pacchetti dell'app (con estensione apk) siano firmati. Lo strumento keytool Java consente di generare le credenziali necessarie per firmare l'app di output di cui è stato eseguito il wrapping. Ad esempio, il comando seguente usa il file eseguibile Java keytool.exe per generare chiavi utilizzabili dallo strumento di wrapping delle app per firmare l'app di output di cui viene eseguito il wrapping.
-
-    ```
-    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-    ```
-    Questo esempio genera una coppia di chiavi (una chiave pubblica e una chiave privata associata di 2.048 bit) con l'algoritmo RSA, quindi esegue il wrapping della chiave pubblica in un certificato autofirmato X.509 v3 che viene archiviato come catena di certificati a elemento singolo. Questa catena di certificati e la chiave privata vengono archiviati in una nuova voce keystore denominata "mykeystorefile" e identificata dall'alias "mykeyalias". La voce keystore è valida per 50.000 giorni.
-
-    Il comando richiederà l'immissione di password per il keystore e la chiave. Usare password sicure, ma prenderne nota perché saranno necessarie per eseguire lo strumento di wrapping delle app.
-
-    Per informazioni dettagliate vedere gli argomenti relativi a [keytool](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) e [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) di Java nel sito della documentazione Oracle.
+- Android richiede che tutti i pacchetti dell'app (con estensione apk) siano firmati. Per informazioni sul **riutilizzo** di certificati esistenti e linee guida generali per la firma dei certificati, vedere [Riutilizzo dei certificati di protezione ed esecuzione del wrapping delle app](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). L'eseguibile Java keytool.exe consente di generare le **nuove** credenziali necessarie per firmare l'app di output di cui è stato eseguito il wrapping. Qualsiasi password impostata deve essere sicura, ma prenderne nota perché saranno necessarie per eseguire lo strumento di wrapping delle app.
 
 ## <a name="install-the-app-wrapping-tool"></a>Installare lo strumento di wrapping delle app
 
@@ -95,7 +86,7 @@ Prendere nota della cartella in cui è installato lo strumento. La posizione pre
 |**-KeyStorePassword**&lt;SecureString&gt;|Password usata per decrittografare il file keystore. Android richiede che tutti i pacchetti di applicazioni (con estensione apk) siano firmati. Usare keytool Java per generare KeyStorePassword. Altre informazioni sulla classe KeyStore Java sono disponibili [qui](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html).| |
 |**-KeyAlias**&lt;Stringa&gt;|Nome della chiave da usare per la firma.| |
 |**-KeyPassword**&lt;SecureString&gt;|Password usata per decrittografare la chiave privata da usare per la firma.| |
-|**-SigAlg**&lt;SecureString&gt;| (Facoltativo) Nome dell'algoritmo di firma da usare per la firma. L'algoritmo deve essere compatibile con la chiave privata.|Esempi: SHA256withRSA, SHA1withRSA e MD5withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (Facoltativo) Nome dell'algoritmo di firma da usare per la firma. L'algoritmo deve essere compatibile con la chiave privata.|Esempi: SHA256withRSA, SHA1withRSA|
 | **&lt;Parametri comuni&gt;** | (Facoltativo) Il comando supporta parametri PowerShell comuni, come verbose e debug. |
 
 
@@ -121,6 +112,17 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 Verranno quindi richiesti i valori di **KeyStorePassword** e **KeyPassword**. Immettere le credenziali usate per creare il file keystore.
 
 L'applicazione sottoposta a wrapping e un file di log vengono generati e salvati nel percorso di output specificato.
+
+## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Riutilizzo dei certificati di protezione ed esecuzione del wrapping delle app
+Android richiede che tutte le app siano firmate da un certificato valido per essere installate nei dispositivi Android.
+
+Le app sottoposte a wrapping possono essere firmate nell'ambito di un processo di wrapping o *successivamente* tramite gli strumenti di firma esistenti. Le informazioni sulla firma presenti nell'app prima del wrapping vengono eliminate.
+ 
+Se possibile, nell'esecuzione del wrapping è consigliabile usare le informazioni sulla firma già usate durante il processo di compilazione. In alcune organizzazioni potrebbe essere necessario collaborare con gli utenti in possesso delle informazioni sull'archivio chiavi, ad esempio il team di compilazione dell'app. 
+
+Se non è possibile usare il certificato di firma precedente o se l'app non è stata distribuita in precedenza, è possibile creare un nuovo certificato di firma seguendo le istruzioni descritte nella [Guida per gli sviluppatori Android](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
+
+Se l'app è stata distribuita in precedenza con un certificato di firma diverso, non è possibile caricarla nella console di Intune dopo l'aggiornamento. Gli scenari di aggiornamento dell'app vengono interrotti nel caso in cui l'app sia stata firmata con un certificato diverso da quello con cui è stata compilata. Di conseguenza, è necessario mantenere i nuovi certificati di firma per gli aggiornamenti delle app. 
 
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>Considerazioni sulla sicurezza per l'esecuzione dello strumento di wrapping delle app
 Per evitare potenziali attacchi di spoofing, divulgazione di informazioni e l'elevazione dei privilegi:

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fda224613d8b69be82ef7f9681ba9165be33e52
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemi noti in Microsoft Intune
 
@@ -37,7 +37,7 @@ Per richiedere una nuova funzionalità per Intune, è possibile compilare un rep
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>I gruppi creati da Intune durante la migrazione potrebbero influire sulle funzionalità di altri prodotti Microsoft
 
-Quando si esegue la migrazione da Intune classico ad Azure, si potrebbe notare un nuovo gruppo denominato **Tutti gli utenti - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Questo gruppo contiene tutti gli utenti di Azure Active Directory e non solo gli utenti con licenza per Intune. Se si prevede che alcuni utenti nuovi o esistenti non diventino membri di alcun gruppo, ciò potrebbe causare problemi con altri prodotti Microsoft.
+Quando si esegue la migrazione da Intune classico al portale di Azure, si potrebbe notare un nuovo gruppo denominato **Tutti gli utenti - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Questo gruppo contiene tutti gli utenti di Azure Active Directory e non solo gli utenti con licenza per Intune. Se si prevede che alcuni utenti nuovi o esistenti non diventino membri di alcun gruppo, ciò potrebbe causare problemi con altri prodotti Microsoft.
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Migrazione secondaria necessaria per alcune funzionalità
 
@@ -51,7 +51,7 @@ Quando si esegue la migrazione da Intune classico ad Azure, si potrebbe notare u
 
 Dato che queste funzionalità non possono essere gestite sia dalla console classica Silverlight che dalla console di Azure, la migrazione:
 - Le disabilita nella console classica
-- Le abilita nella console di Azure.  
+- Le abilita nella console di Azure  
 
 Se queste funzionalità di Intune sono attualmente gestite nel portale di Azure, tenere presente quanto segue:
 
@@ -64,13 +64,12 @@ Se è stato eliminato un token DEP (Device Enrollment Program) Apple nel portale
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>I pannelli di stato per i criteri migrati non funzionano
 
-Non è possibile visualizzare informazioni di stato per i criteri di cui è stata eseguita la migrazione dal portale classico al portale di Azure. È comunque possibile continuare a visualizzare i report per questi criteri nel portale classico.
-Per visualizzare informazioni di stato per i criteri di configurazione migrati, ricrearli nel portale di Azure.
+Non è possibile visualizzare informazioni di stato per i criteri di cui è stata eseguita la migrazione dal portale classico al portale di Azure. È comunque possibile continuare a visualizzare i report per questi criteri nel portale classico. Per visualizzare informazioni di stato per i criteri di configurazione migrati, ricrearli nel portale di Azure.
 
 ## <a name="apps"></a>App
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>Le app iOS acquistate con Volume Purchase Program sono disponibili solo nella lingua del tenant di Intune predefinita
-Le app iOS acquistate con volume Purchase Program sono visualizzate e possono essere assegnate solo per lo stesso codice paese dell'account di Intune. Intune sincronizza solo le app con le stesse impostazioni locali di iTunes del codice di paese dell'account del tenant di Intune. Ad esempio, se si acquista un'app che è disponibile solo nello store degli Stati Uniti e il proprio account di Intune è in lingua tedesca, Intune non visualizza l'app.
+Le app iOS acquistate con volume Purchase Program sono visualizzate e possono essere assegnate solo per lo stesso codice paese dell'account di Intune. Intune sincronizza solo le app con le stesse impostazioni locali di iTunes del codice di paese dell'account del tenant di Intune. Ad esempio, se si acquista un'app che è disponibile solo nello store degli Stati Uniti e il proprio account di Intune è tedesco, Intune non visualizza l'app.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Vengono caricate più copie dello stesso programma iOS acquistato con volume Purchase Program
 Non fare clic sul pulsante **Carica** più volte per lo stesso token VPP. Se si fa clic più volte verranno caricati token VPP duplicati e le app verranno sincronizzate più volte per lo stesso token VPP. 
@@ -107,7 +106,11 @@ Per altre informazioni, vedere [Che cos'è la conformità dei dispositivi?](devi
 <!-- ## Enrollment -->
 
 
-<!-- ## Data protection -->
+## <a name="data-protection"></a>Protezione dati
+
+### <a name="ios-app-protection-policies"></a>Criteri di protezione delle app iOS
+
+È possibile definire i [criteri di protezione delle app per iOS](app-protection-policy-settings-ios.md) disponibili per gli utenti nei dispositivi gestiti tramite una soluzione di gestione delle app per dispositivi mobili (MAM) senza registrazione. A causa di un errore temporaneo, è possibile definire questi criteri solo per le versioni di iOS con una sola cifra decimale e non con più cifre decimali. Anziché impostare una versione minima di iOS 10.3.1, è possibile impostare iOS 10.3. Questo errore verrà risolto a breve con un aggiornamento a iOS SDK.
 
 
 ## <a name="administration-and-accounts"></a>Amministrazione e account
