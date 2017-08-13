@@ -1,37 +1,35 @@
 ---
 title: Glossario di Intune
-titleSuffix: Intune on Azure
+titleSuffix: 
 description: Informazioni su alcuni termini usati in Microsoft Intune
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Glossario di Microsoft Intune
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="a"></a>A
 
 |||
 |-|-|
 |Assegnazione delle app|Consente agli utenti di [trovare, scaricare e installare](/intune/app-management) le app necessarie. Era precedentemente denominata *distribuzione di app*.|
-|Profilo di configurazione dell'app|Configura un'app [iOS](/intune/app-configuration-policies-use-ios) o [Android](/intune/app-configuration-policies-use-android) con impostazioni specifiche prima dell'esecuzione.|
+|Profilo di configurazione dell'app <br/><br/>Criteri di configurazione delle app|Disponibili per app per dispositivi mobili con configurazioni specifiche del fornitore. Configura un'app [iOS](/intune/app-configuration-policies-use-ios) o [Android](/intune/app-configuration-policies-use-android) con impostazioni specifiche prima dell'esecuzione.|
 |Monitoraggio delle app|Consente di [esaminare lo stato e le attività recenti](/intune/apps-monitor) relativi all'assegnazione delle app.|
 |Attività di rimozione dei dati di protezione dell'app|[Rimuove i dati dell'app](/intune/app-protection-policies) dal dispositivo dell'utente.|
-|Criterio di protezione dell'app|Garantisce che le app dell'utente siano conformi ai [criteri di protezione dei dati aziendali](/intune/app-protection-policies).|
+|Criterio di protezione dell'app|Disponibile per app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Garantisce che le app dell'utente siano conformi ai [criteri di protezione dei dati aziendali](/intune/app-protection-policies).|
 |App SDK|[Microsoft Intune App SDK](/intune/app-sdk) consente di aggiungere funzionalità alle proprie app interne consentendone la gestione tramite i criteri di protezione delle app di Intune.|
 |Azione di disinstallazione delle app|Consente di [disinstallare le app](/intune/apps-deploy) dai dispositivi dell'utente.|
 |Strumento di wrapping delle app|[Applicazione della riga di comando](/intune/apps-prepare-mobile-application-management) che crea un wrapper per un'app line-of-business, consentendone la gestione tramite i criteri di gestione delle app di Intune.|
@@ -103,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |-|-|
 |Managed Browser|[Applicazione per Web browser](/intune/app-configuration-managed-browser) che è possibile assegnare nell'organizzazione usando Intune. Un criterio di Managed Browser consente di configurare un elenco Consenti o Blocca che limita i siti Web che gli utenti di Managed Browser possono visitare.|
 |Autorità di gestione dei dispositivi mobili|L'[autorità di gestione dei dispositivi mobili](/intune/mdm-authority-set) definisce il servizio di gestione autorizzato a gestire un set di dispositivi. L'autorità di gestione di dispositivi mobili (MDM) prevede due opzioni: l'uso di Intune da solo e l'uso di Configuration Manager con Intune.|
-|Criteri di configurazione delle app mobili|Criterio di [iOS](/intune/app-configuration-policies-use-ios) o [Android](/intune/app-configuration-policies-use-android) usato per fornire impostazioni ad app compatibili quando vengono eseguite, ad esempio un nome della società o un indirizzo del server.|
+|Criteri di configurazione delle app mobili|Disponibili per app per dispositivi mobili con configurazioni specifiche del fornitore. Ad esempio, un criterio di [iOS](/intune/app-configuration-policies-use-ios) o [Android](/intune/app-configuration-policies-use-android) usato per fornire impostazioni ad app compatibili quando vengono eseguite, ad esempio un nome della società o un indirizzo del server.|
 |Criteri di provisioning di app mobili|Criterio di iOS che consente di verificare che i [profili di provisioning](/intune/app-provisioning-profile-ios) delle app per iOS assegnati non scadano.|
 |Gestione per applicazioni mobili|[Gestione delle applicazioni mobili](/intune/app-lifecycle) consente di pubblicare, distribuire, configurare, proteggere, monitorare e aggiornare le app mobili degli utenti aziendali.
 |Gestione dispositivi mobili|[Gestione dei dispositivi mobili](/intune/device-lifecycle) consente di registrare i dispositivi in Intune per poter configurare, monitorare, eseguire il provisioning e gestire tali dispositivi.
@@ -131,7 +129,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|Cancellazione selettiva|La [cancellazione selettiva](/intune/device-company-data-remove) rimuove solo i dati aziendali, compresi i dati di gestione delle applicazioni mobili, ove applicabile, le impostazioni e i profili di posta elettronica da un dispositivo. La cancellazione selettiva lascia i dati personali dell'utente sul dispositivo.|
+|Cancellazione selettiva|La [cancellazione selettiva](/intune/device-company-data-remove) rimuove solo i dati aziendali protetti dai criteri di protezione delle app, inclusi le impostazioni e i profili di posta elettronica da un dispositivo. La cancellazione selettiva lascia i dati personali dell'utente sul dispositivo.|
 |Sideload|Azione di installazione di un'app line-of-business senza accedervi da un App Store.|
 |Sottoscrizione|Il contratto immesso consente di accedere a un tenant di Intune.|
 

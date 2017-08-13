@@ -6,7 +6,7 @@ keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 01/09/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d21b6a03cdc8094bc8da3cecd5331b3f11400302
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Esperienza utente relativa alla protezione base nelle app di Office 365 gestite
 
@@ -48,15 +48,14 @@ Questo articolo usa OneDrive for Business come esempio per dimostrare che l'espe
 
 1. Avviare l'app OneDrive for Business per aprire la pagina di accesso.  <br/> ![Immagine della schermata di accesso di OneDrive per iOS](./media/onedrive-ios-sign-in.png)
 2. Digitare il nome utente dell'account aziendale. Si verrà reindirizzati alla pagina di autenticazione di Office 365 in cui immettere le credenziali aziendali. <br/> ![Immagine della pagina di accesso a Office 365](./media/o365-sign-in-ios.png)
-3. Dopo la corretta autenticazione delle credenziali in Azure Active Directory, verranno applicati i criteri di Gestione delle app mobili (MAM) e verrà richiesto di riavviare l'app OneDrive for Business.  <br/>![Immagine della richiesta di riavvio per iOS](./media/ios-restart-prompt.png)
->[!NOTE]
->Il messaggio indicante che il riavvio è richiesto viene visualizzato solo per i dispositivi non registrati in Intune.
+3. Dopo la corretta autenticazione delle credenziali in Azure Active Directory, verranno applicati i criteri di protezione delle app e verrà richiesto di riavviare l'app OneDrive for Business.  <br/>![Immagine della richiesta di riavvio per iOS](./media/ios-restart-prompt.png)    
+  > [!NOTE]
+  > Il messaggio indicante che il riavvio è richiesto viene visualizzato solo per i dispositivi non registrati in Intune.
 
 
-4. Riavviare l'app OneDrive for Business. L'app viene avviata con i criteri MAM attivati e viene richiesto di impostare un PIN per il dispositivo, se questa operazione non è stata ancora eseguita. <br/> ![Immagine della richiesta di creare un PIN](./media/pin-prompt-ios.png)
-
->[!NOTE]
->Questo messaggio non verrà visualizzato alla maggior parte degli utenti. Il messaggio verrà visualizzato solo agli utenti che non hanno attivato un PIN nel proprio dispositivo iOS.
+4. Riavviare l'app OneDrive for Business. L'app viene avviata con i criteri di protezione delle app attivati e viene richiesto di impostare un PIN per il dispositivo, se questa operazione non è stata ancora eseguita. <br/> ![Immagine della richiesta di creare un PIN](./media/pin-prompt-ios.png)    
+  > [!NOTE]
+  > Questo messaggio non verrà visualizzato alla maggior parte degli utenti. Il messaggio verrà visualizzato solo agli utenti che non hanno attivato un PIN nel proprio dispositivo iOS.
 
 
 5. Dopo avere impostato e confermato il PIN, tornare all'app OneDrive for Business. Verrà visualizzato un avviso singolo indicante che l'amministratore IT sta ora proteggendo i dati di lavoro in OneDrive. <br/> ![Immagine dell'avviso singolo inviato dall'amministratore IT](./media/one-time-notice.png)
@@ -70,9 +69,9 @@ Questo articolo usa OneDrive for Business come esempio per dimostrare che l'espe
 
 1. Avviare l'app OneDrive for Business per aprire la pagina di accesso.  <br/> ![Immagine della schermata iniziale dell'app OneDrive](./media/onedrive-android-welcome.png)
 2. Digitare il nome utente dell'account aziendale. Si verrà reindirizzati alla pagina di autenticazione di Office 365 in cui immettere le credenziali aziendali. <br/> ![Immagine dell'accesso a Office 365 in Android](./media/o365-sign-in-android.png)
-3. Dopo che le credenziali saranno state autenticate da Azure Active Directory, verrà visualizzato un messaggio con le istruzioni per installare l'app Portale aziendale, se non è già installata nel dispositivo. Toccare **Vai allo Store** per continuare. <br/> ![Immagine del messaggio per ottenere l'app Portale aziendale](./media/get-company-portal-android.png) <br/>Se l'app Portale aziendale è già installata nel telefono, l'app OneDrive for Business verrà avviata automaticamente ed è possibile passare direttamente alla nota finale.
->[!IMPORTANT]
->In Android, dopo la configurazione delle app di Office che devono essere gestite da un criterio MAM, l'utente del dispositivo **deve** installare l'app Portale aziendale per accedere ai messaggi di posta elettronica e ai documenti di lavoro, anche se per leggere effettivamente i messaggi o i documenti l'utente finale non ha necessità di aprire o accedere all'app.
+3. Dopo che le credenziali saranno state autenticate da Azure Active Directory, verrà visualizzato un messaggio con le istruzioni per installare l'app Portale aziendale, se non è già installata nel dispositivo. Toccare **Vai allo Store** per continuare. <br/> ![Immagine del messaggio per ottenere l'app Portale aziendale](./media/get-company-portal-android.png) <br/>Se l'app Portale aziendale è già installata nel telefono, l'app OneDrive for Business verrà avviata automaticamente ed è possibile passare direttamente alla nota finale.    
+  > [!IMPORTANT]
+  > In Android, dopo aver configurato le app di Office da gestire con criteri di protezione delle app, l'utente del dispositivo **deve** installare l'app Portale aziendale per accedere ai messaggi di posta elettronica e ai documenti di lavoro, anche se per leggere effettivamente i messaggi o i documenti l'utente finale non ha necessità di aprire o accedere all'app.
 
 4. A questo punto si viene reindirizzati allo store Google Play, da cui è possibile scaricare e installare l'app Portale aziendale. L'app consente di mantenere i dati sicuri e protetti. <br/> ![Immagine dell'app nello store Google Play](./media/google-play-get-app-android.png)
 5. Dopo avere completato l'installazione, scegliere **Accetta** per accettare i termini. L'app OneDrive for Business verrà avviata automaticamente.
@@ -118,9 +117,9 @@ Questo articolo usa OneDrive for Business come esempio per dimostrare che l'espe
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Perché un criterio PIN per le app viene configurato solo per i dispositivi Android?
 La crittografia funziona in modo diverso in iOS e in Android.
 
-In iOS per le app associate ai criteri MAM di Intune, i dati inattivi vengono crittografati usando la crittografia a livello di dispositivo offerta dal sistema operativo. L'attivazione del criterio di crittografia delle app implica automaticamente la richiesta all'utente di avere a disposizione e immettere un PIN di dispositivo per accedere ai dati di lavoro. Agli utenti che non dispongono già di un PIN di dispositivo configurato nel dispositivo verrà chiesto di creare uno.
+In iOS per le app associate a un criterio di protezione delle app di Intune, i dati inattivi vengono crittografati usando la crittografia a livello di dispositivo offerta dal sistema operativo. L'attivazione del criterio di crittografia delle app implica automaticamente la richiesta all'utente di avere a disposizione e immettere un PIN di dispositivo per accedere ai dati di lavoro. Agli utenti che non dispongono già di un PIN di dispositivo configurato nel dispositivo verrà chiesto di creare uno.
 
-In Android, per le app associate a un criterio MAM di Intune, i dati vengono crittografati in modo sincrono durante le attività di I/O dei file. Il contenuto nella memoria del dispositivo è sempre crittografato. Nei dispositivi non gestiti dalla soluzione MDM, i criteri MAM non possono forzare il requisito di un PIN di dispositivo. Per assicurarsi che agli utenti venga richiesto un PIN per accedere ai dati di lavoro, la procedura guidata abilita i criteri relativi al PIN delle app.
+In Android, per le app associate a un criterio di protezione delle app di Intune, i dati vengono crittografati in modo sincrono durante le attività di I/O su file. Il contenuto nella memoria del dispositivo è sempre crittografato. Nei dispositivi non gestiti dalla soluzione MDM, i criteri di protezione delle app non possono imporre il requisito di un PIN per il dispositivo. Per assicurarsi che agli utenti venga richiesto un PIN per accedere ai dati di lavoro, la procedura guidata abilita i criteri relativi al PIN delle app.
 
 È sempre possibile modificare queste impostazioni per soddisfare i requisiti dell'organizzazione.
 

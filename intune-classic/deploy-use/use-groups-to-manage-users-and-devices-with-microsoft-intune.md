@@ -14,11 +14,11 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8c5acd617e9d69fa23455d382dfd78518e52515b
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>Usare gruppi per gestire utenti e dispositivi in Microsoft Intune
 
@@ -32,7 +32,7 @@ Questo argomento descrive come creare gruppi in Intune. Fornisce inoltre informa
 >
 >![Schermata del collegamento alla gestione dei gruppi in Azure](../media/groups-link-azure.png) 
 >
->Se non è disponibile il collegamento al portale di Azure AD, si sta ancora usando l'approccio *corrente* alla gestione dei gruppi, descritto in [Creare gruppi per gestire utenti e dispositivi con Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) in questo argomento.
+>Se non è disponibile il collegamento al portale di Azure AD, si sta ancora usando l'approccio *corrente* alla gestione dei gruppi, descritto in [Creare gruppi](#create-groups) in questo argomento.
 
 Questo argomento descrive come creare gruppi di Intune nella console di amministrazione di Intune.
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3819042d3b6e7236506c288156f98a0e55c15ea
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows 10 e versioni successive in Microsoft Intune
 
@@ -43,14 +43,9 @@ ms.lasthandoff: 07/01/2017
 -   **Ripristino del telefono** - Controlla se l'utente può eseguire un ripristino delle impostazioni predefinite nel dispositivo.
 -   **Connessione USB (solo per dispositivi mobili)**: controlla se i dispositivi possono accedere a dispositivi di archiviazione esterni tramite una connessione USB.
 -   **Modalità antifurto (solo per dispositivi mobili)**: configura l'attivazione della modalità antifurto di Windows.
--   **Notifiche del centro notifiche (solo per dispositivi mobili)**: abilita o disabilita le notifiche del centro notifiche visualizzate nella schermata di blocco del dispositivo (solo in Windows 10 Mobile).
 -   **Cortana** - Abilita o disabilita l'assistente vocale Cortana.
 -   **Registrazione voce (solo per dispositivi mobili)**: consente o impedisce l'uso del registratore vocale del dispositivo.
--   **Modifica delle impostazioni di risparmio energia e sospensione (solo desktop)**: impedisce all'utente finale di modificare le impostazioni di risparmio energia e sospensione del dispositivo.
--   **Modifica delle impostazioni dell'area (solo desktop)**: impedisce all'utente finale di modificare le impostazioni dell'area del dispositivo.
--   **Modifiche alle impostazioni della lingua (solo desktop)**: impedisce all'utente finale di modificare le impostazioni della lingua del dispositivo.
--   **Modifica dell'ora di sistema**: impedisce all'utente finale di modificare la data e l'ora del dispositivo.
--   **Modifica del nome del dispositivo**: impedisce all'utente finale di modificare il nome del dispositivo.
+-   **Modifica del nome del dispositivo**: impedisce all'utente finale di modificare il nome del dispositivo (solo Windows 10 Mobile).
 -   **Aggiungi pacchetti di provisioning**: blocca l'agente di configurazione di runtime che installa pacchetti di provisioning.
 -   **Rimuovi i pacchetti di provisioning**: blocca l'agente di configurazione di runtime che rimuove pacchetti di provisioning.
 -   **Individuazione dei dispositivi**: blocca l'individuazione di un dispositivo da parte di altri dispositivi.
@@ -67,7 +62,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
     -   **Numero massimo di minuti di inattività fino al blocco dello schermo** - Specifica il periodo di tempo per cui un dispositivo deve rimanere inattivo prima che lo schermo venga bloccato.
     -   **Scadenza password (giorni)** - Specifica l'intervallo di tempo dopo il quale è necessario modificare la password del dispositivo.
     -   **Impedisci riutilizzo delle password precedenti** - Specifica il numero di password utilizzate in precedenza che il dispositivo deve ricordare.
-    -   **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività** - Specifica che l'utente deve inserire una password per sbloccare il dispositivo (solo Windows 10 Mobile).
+    -   **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (solo Mobile)** - Specifica che l'utente deve inserire una password per sbloccare il dispositivo (solo Windows 10 Mobile).
     -   **Password semplici**: consente di autorizzare l'uso di password semplici come 1111 o 1234. Questa impostazione consente o blocca anche l'uso delle password grafiche di Windows.
 -   **Crittografia** - Abilita la crittografia sui dispositivi di destinazione (solo Windows 10 Mobile).
 
@@ -105,6 +100,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Installa i dati dell'app nel volume di sistema**: impedisce alle app di archiviare dati nel volume di sistema del dispositivo.
 -   **Installa le app nell'unità di sistema**: impedisce alle app di archiviare dati nell'unità di sistema del dispositivo.
 -   **Game DVR (solo desktop)**: configura se la registrazione e la trasmissione dei giochi sono consentite.
+-   **Apps from store only** (Solo app dallo Store): specifica se gli utenti possono installare le app da posizioni diverse dall'App Store.
 
 
 
@@ -112,7 +108,6 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Browser Microsoft Edge (solo dispositivi mobili)** - Consente l'uso del browser Web Edge sul dispositivo.
 -   **Elenco a discesa della barra degli indirizzi (solo desktop)**: usare questa opzione per impedire a Edge di visualizzare suggerimenti in un elenco a discesa durante la digitazione. Ciò consente di ridurre al minimo l'uso di larghezza di banda tra Edge e i servizi Microsoft.
 -   **Sincronizza i Preferiti tra i browser Microsoft (solo desktop)**: consente la sincronizzazione dei Preferiti tra Edge e Internet Explorer in Windows.
--   **SmartScreen**: abilita o disabilita SmartScreen, che blocca i siti Web fraudolenti.
 -   **Invia intestazioni DNT (Do Not Track)** - Configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.
 -   **Cookie** - Consente al browser di salvare i cookie di Internet per il dispositivo.
 -   **JavaScript** - Consente di eseguire script, ad esempio Javascript, nel browser Microsoft Edge.
@@ -130,13 +125,16 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Home page**: aggiunge un elenco dei siti da usare come home page nel browser Edge (solo desktop).
 -   **Modifiche alla pagina iniziale**: consente agli utenti di modificare la scelta delle pagine iniziali visualizzate all'avvio di Edge. Usare l'impostazione Home page per creare la pagina o l'elenco di pagine che viene aperta all'avvio di Edge.
 -   **Blocca l'accesso ai flag Informazioni su**: impedisce all'utente finale di accedere alla pagina di "flag Informazioni su" in Microsoft Edge che contiene impostazioni sperimentali e di sviluppo.
--   **Override della richiesta di conferma SmartScreen**: consente all'utente finale di ignorare gli avvisi del filtro SmartScreen su siti Web potenzialmente dannosi.
--   **Override della richiesta di conferma SmartScreen per i file**: consente all'utente finale di ignorare gli avvisi del filtro SmartScreen durante il download di file potenzialmente dannosi.
 -   **Indirizzo IP localhost WebRtc**: blocca la visualizzazione dell'indirizzo IP localhost IP quando si effettuano telefonate tramite il protocollo RTC Web.
 -   **Motore di ricerca predefinito**: specifica il motore di ricerca predefinito da usare. Gli utenti finali possono modificare questo valore in qualsiasi momento.
 -   **Cancella i dati di esplorazione all'uscita**: cancella la cronologia e i dati di esplorazione quando l'utente esce da Edge.
 -   **Raccolta di dati per il riquadro animato**: interrompe la raccolta di informazioni dal riquadro animato quando gli utenti aggiungono un sito al menu Start da Edge.
 
+## <a name="edge-browser-smartscreen"></a>SmartScreen nel browser Edge
+
+-   **SmartScreen**: abilita o disabilita SmartScreen, che blocca i siti Web fraudolenti.
+-   **Override della richiesta di conferma SmartScreen**: consente all'utente finale di ignorare gli avvisi del filtro SmartScreen su siti Web potenzialmente dannosi.
+-   **Override della richiesta di conferma SmartScreen per i file**: consente all'utente finale di ignorare gli avvisi del filtro SmartScreen durante il download di file potenzialmente dannosi.
 
 ## <a name="search"></a>Cerca
 - **Ricerca sicura (solo dispositivi mobili)**: controlla come Cortana filtra il contenuto per adulti nei risultati della ricerca. È possibile selezionare **Strict**, **Moderate** o consentire all'utente finale di scegliere le proprie impostazioni.
@@ -156,7 +154,6 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Individuabilità di Bluetooth** - Consente che il dispositivo sia scoperto da altri dispositivi con la funzione Bluetooth attivata.
 -   **Pre-associazione Bluetooth**: consente di configurare dispositivi Bluetooth specifici per l'associazione automatica con un dispositivo host.
 -   **Annunci con Bluetooth** - Consente al dispositivo di ricevere annunci tramite Bluetooth.
--   **Nome di Bluetooth del dispositivo**: consente di specificare il nome di Bluetooth per un dispositivo. Se non si specifica un nome viene usato il nome predefinito del trasmettitore locale.
 -   **Servizio dispositivi connessi**: specifica se consentire il servizio dispositivi connessi, che abilita l'individuazione e la connessione ad altri dispositivi Bluetooth.
 -   **NFC** - Consente all'utente di attivare e configurare funzionalità Near Field Communications sul dispositivo.
 -   **Wi-Fi** - Consente all'utente di attivare e configurare le funzionalità Wi-Fi del dispositivo (solo Windows 10 Mobile).
@@ -170,14 +167,19 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
 -   **App Impostazioni**: blocca l'accesso all'app Impostazioni di Windows.
     -   **Sistema**: blocca l'accesso all'area di sistema dell'app Impostazioni.
+        -   **Modifica delle impostazioni di risparmio energia e sospensione (solo desktop)**: impedisce all'utente finale di modificare le impostazioni di risparmio energia e sospensione del dispositivo.
     -   **Dispositivi**: blocca l'accesso all'area dei dispositivi dell'app Impostazioni.
     -   **Rete Internet**: blocca l'accesso all'area rete e Internet dell'app Impostazioni.
     -   **Personalizzazione**: blocca l'accesso all'area di personalizzazione dell'app Impostazioni.
     -   **Account**: blocca l'accesso all'area degli account dell'app Impostazioni.
     -   **Ora e lingua**: blocca l'accesso all'area dell'ora e della lingua dell'app Impostazioni.
+        -   **Modifica dell'ora di sistema**: impedisce all'utente finale di modificare la data e l'ora del dispositivo.
+        -   **Modifica delle impostazioni dell'area (solo desktop)**: impedisce all'utente finale di modificare le impostazioni dell'area del dispositivo.
+        -   **Modifiche alle impostazioni della lingua (solo desktop)**: impedisce all'utente finale di modificare le impostazioni della lingua del dispositivo.
+    -   **Giochi**: blocca l'accesso all'app Giochi in Impostazioni.
     -   **Accessibilità**: blocca l'accesso all'area accessibilità dell'app Impostazioni.
     -   **Riservatezza**: blocca l'accesso all'area riservatezza dell'app Impostazioni.
-    -   **Aggiornamento e sicurezza** : blocca l'accesso all'area di aggiornamento e sicurezza dell'app Impostazioni.
+    -   **Aggiornamento e sicurezza** : blocca l'accesso all'area Aggiornamento e sicurezza dell'app Impostazioni.
 
 ## <a name="defender"></a>Defender
 
@@ -237,17 +239,17 @@ Se i file sull'unità sono di sola lettura, Defender non può rimuovere il malwa
 ## <a name="windows-spotlight"></a>Contenuti in evidenza di Windows
 
 
-- Contenuti in evidenza di Windows: usare questa impostazione per bloccare tutte le funzionalità di Contenuti in evidenza di Windows nei dispositivi Windows 10. Se si blocca questa impostazione, le impostazioni seguenti non sono disponibili.
+- **Contenuti in evidenza di Windows**: usare questa impostazione per bloccare tutte le funzionalità di Contenuti in evidenza di Windows nei dispositivi Windows 10. Se si blocca questa impostazione, le impostazioni seguenti non sono disponibili.
     - **Windows Spotlight nella schermata di blocco**: blocca la visualizzazione di Contenuti in evidenza di Windows nella schermata di blocco del dispositivo.
     - **Suggerimenti di terze parti in Windows Spotlight**: blocca i suggerimenti relativi a contenuti di terzi in Contenuti in evidenza di Windows.
-    - **Suggerimenti di Windows**: consente di bloccare la visualizzazione dei suggerimenti popup in Windows.
     - **Funzionalità consumer**: consente di bloccare le funzionalità consumer, ad esempio i suggerimenti per il menu Start e le notifiche di appartenenza.
+    - **Suggerimenti di Windows**: consente di bloccare la visualizzazione dei suggerimenti popup in Windows.
     - **Centro notifiche di Windows Spotlight**: blocca la visualizzazione di suggerimenti di Contenuti in evidenza di Windows (quali nuove app o contenuti di protezione) nel Centro notifiche di Windows.
     - **Personalizzazione di Windows Spotlight**: impedisce a Contenuti in evidenza di Windows la personalizzazione dei risultati a seconda dell'uso di un dispositivo.
     - **Esperienza di Configurazione e personalizzazione di Windows**: blocca l'Esperienza di Configurazione e personalizzazione di Windows, che visualizza informazioni su funzionalità nuove o aggiornate.
 
 
-## <a name="display"></a>Schermo
+## <a name="projection"></a>Proiezione
 
 - **Input degli utenti da ricevitori di schermo wireless**: blocca l'input degli utenti da ricevitori di schermo wireless.
 - **Proiezione per questo computer**: blocca l'individuazione della proiezione di questo computer da parte di altri dispositivi.

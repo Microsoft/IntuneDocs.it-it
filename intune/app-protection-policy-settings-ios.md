@@ -3,8 +3,8 @@ title: Impostazioni dei criteri di protezione delle app per iOS
 titleSuffix: Intune on Azure
 description: Questo argomento descrive le impostazioni dei criteri di protezione delle app per dispositivi iOS."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/17/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: 5261d3df82525a5b363b6c0ee89821770a4e9e35
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/09/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -69,7 +69,7 @@ Esistono alcune app e servizi della piattaforma esenti, per i quali in determina
 | **Richiedi credenziali aziendali per l'accesso** | Scegliere **Sì** per richiedere all'utente di accedere con il proprio account aziendale o dell'istituto di istruzione anziché immettere un PIN per accedere all'app. Se questa opzione è impostata su **Sì**, ha la priorità sulle richieste di PIN o ID tocco.  | No |
 | **Blocca l'esecuzione delle app gestite nei dispositivi jailbroken o rooted** |  Scegliere **Sì** per impedire l'esecuzione dell'app nei dispositivi jailbroken o rooted. L'utente potrà comunque usare le app per le attività personali, ma dovrà usare un dispositivo diverso per accedere ai dati aziendali o dell'istituto di istruzione nell'app. | sì |
 | **Controlla di nuovo i requisiti di accesso dopo (minuti)** | Configurare le seguenti impostazioni: <ul><li>**Timeout**: numero di minuti prima che vengano ricontrollati i requisiti di accesso definiti in precedenza nei criteri. Ad esempio, un amministratore attiva il PIN nel criterio e l'utente deve immettere un PIN quando apre un'app MAM. Quando si usa questa impostazione, l'utente non dovrà immettere un PIN per alcuna app MAM per altri **30 minuti** (valore predefinito).</li><li>**Periodo di prova offline**: numero di minuti per cui è consentita l'esecuzione di app MAM offline. Specificare il periodo (in minuti) prima che vengano ricontrollati i requisiti di accesso per l'app. Valore predefinito: **720** minuti (12 ore). Alla scadenza di questo periodo, l'app richiederà l'autenticazione utente per AAD per poter continuare l'esecuzione.</li></ul>| Timeout: 30 <br><br> Offline: 720 |
-| **Intervallo offline (giorni) prima della cancellazione dei dati dell'app** | Dopo questo numero di giorni (definito dall'amministratore) di esecuzione offline, l'app stessa eseguirà una cancellazione selettiva. Questa cancellazione selettiva è uguale a quella che può essere avviata dall'amministratore nel flusso di lavoro di cancellazione MAM. <br><br> | 90 giorni |
+| **Intervallo offline (giorni) prima della cancellazione dei dati dell'app** | Dopo questo numero di giorni (definito dall'amministratore) di esecuzione offline, l'app richiederà all'utente di connettersi alla rete e ripetere l'autenticazione. Se l'utente viene autenticato correttamente, può continuare ad accedere ai dati e l'intervallo offline viene reimpostato.  Se l'autenticazione non riesce, l'app eseguirà una cancellazione selettiva dell'account utenti e dei dati.  Vedere [Come cancellare solo i dati aziendali dalle app gestite da Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) per altre informazioni sui dati che vengono rimossi con una cancellazione selettiva. <br><br> | 90 giorni |
 | **Disabilita il PIN dell'app quando il PIN del dispositivo è gestito** | Scegliere **Sì** per disabilitare il PIN dell'app quando viene rilevato un blocco del dispositivo in un dispositivo registrato. | No |
 | **Richiedi un sistema operativo iOS minimo** | Scegliere **Sì** per richiedere un sistema operativo iOS minimo per usare questa app. All'utente verrà impedito l'accesso se la versione di iOS nel dispositivo non soddisfa il requisito. Questi criteri supportano le versioni con una sola cifra decimale, ad esempio iOS 10.3. | No |
 | **Richiedi un sistema operativo iOS minimo (solo avviso)** | Scegliere **Sì** per richiedere un sistema operativo iOS minimo per usare questa app. L'utente visualizzerà una notifica se la versione di iOS nel dispositivo non soddisfa il requisito. Questa notifica può essere chiusa. Questi criteri supportano le versioni con una sola cifra decimale, ad esempio iOS 10.3. | No |

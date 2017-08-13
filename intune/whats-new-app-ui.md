@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,67 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e2e1eb6da9114c689aae5eb06f7d7c780f35817
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni su quali aggiornamenti sono stati apportati all'interfaccia utente per le app che gli utenti finali vedranno in questa versione di Microsoft Intune. Queste informazioni sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.
 
+## <a name="week-of-july-31-2017"></a>Settimana del 31 luglio 2017
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Migliorata l'esperienza di accesso nelle app del portale aziendale per tutte le piattaforme <!--User Story 1132123-->
+
+Microsoft ha annunciato una modifica che verrà introdotta nei prossimi mesi e consentirà di migliorare l'esperienza di accesso per le app Portale aziendale di Intune per Android, iOS e Windows. Non appena questa modifica viene apportata con Azure AD, la nuova esperienza utente apparirà automaticamente su tutte le piattaforme per l'app del portale aziendale. Ora gli utenti possono anche accedere al portale aziendale da un altro dispositivo con un codice generato monouso. Ciò è particolarmente utile nei casi in cui gli utenti devono accedere senza credenziali.  
+
+Di seguito sono illustrate l'esperienza di accesso precedente, la nuova esperienza di accesso con credenziali e la nuova esperienza di accesso da un altro dispositivo.
+
+__Esperienza di accesso precedente__
+
+![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![Dopo aver toccato Accedi, l'utente immette le proprie credenziali in questa pagina, che richiede l'indirizzo di posta elettronica e la password dell'utente e offre diversi modi per risolvere gli errori relativi alle password.](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![Dopo aver specificato la password, l'app portale aziendale esegue l'accesso, operazione indicata da una barra di caricamento.](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__Nuova esperienza di accesso__
+
+![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![Viene chiesto all'utente di indicare solo l'indirizzo di posta elettronica anziché l'indirizzo di posta elettronica e la password nella stessa schermata.](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![La password verrà richiesta all'utente dopo che l'indirizzo di posta elettronica è stato accettato.](./media/cp_ios_aad_signin_after_1704_003.png)
+
+![Terminato il processo di autenticazione, l'app portale aziendale esegue l'accesso, visualizzando una barra di caricamento.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+__Nuova esperienza di accesso con accesso da un altro dispositivo__
+
+![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+Toccare il collegamento __Accesso da un altro dispositivo__.
+
+![Viene indicato come passare alla pagina aka.ms/devicelogin con un passcode univoco dal computer di lavoro, quindi come usare il codice per l'accesso.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+Avviare un browser e passare a [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
+
+![Un'immagine del browser dell'utente nel computer di lavoro anziché nell'app portale aziendale. Nella pagina "Accesso dispositivo" visualizzata viene chiesto all'utente di immettere il codice ricevuto nell'app portale aziendale.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+Immettere il codice visto nell'app portale aziendale. Quando si seleziona __Continua__ sarà possibile eseguire l'autenticazione usando qualsiasi metodo supportato dall'azienda, ad esempio una smart card.
+
+![L'utente ha immesso il codice univoco nel campo e il sito "Accesso dispositivo" ha chiesto di confermare che il portale aziendale di Intune è l'app corretta per la ricezione dell'autorizzazione ad accedere.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![Una pagina di conferma indica che l'utente ha eseguito l'accesso all'app portale aziendale sul proprio dispositivo e che questa pagina può essere chiusa.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+L'app portale aziendale avvia la procedura di accesso.
+
+![Terminato il processo di autenticazione, l'app portale aziendale esegue l'accesso, visualizzando una barra di caricamento.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
 ## <a name="week-of-june-12-2017"></a>Settimana del 12 giugno 2017
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>L'app Portale aziendale per Android ora include una nuova esperienza utente finale per i criteri di protezione delle app <!--1305217-->
-In base ai suggerimenti dei clienti, l'app Portale aziendale per Android è stata modificata e ora include un il pulsante **Accesso al contenuto aziendale**. Con questa funzionalità gli utenti finali possono evitare il processo di registrazione per accedere solo ad app che supportano i criteri di protezione, una funzionalità di gestione delle applicazioni mobili di Intune.
+In base ai suggerimenti dei clienti, l'app Portale aziendale per Android è stata modificata e ora include un pulsante **Accesso al contenuto aziendale**. Con questa funzionalità gli utenti finali possono evitare il processo di registrazione per accedere solo ad app che supportano i criteri di protezione, una funzionalità di gestione delle applicazioni mobili di Intune.
 
 L'utente può toccare il pulsante **Accesso al contenuto aziendale** anziché iniziare il processo di registrazione del dispositivo.
 
@@ -180,51 +228,12 @@ Questi sono i piani per i miglioramenti previsti per l'esperienza utente tramite
 > [!Note]
 > Si noti che le immagini seguenti potrebbero essere anteprime e che il prodotto annunciato potrebbe differire dalle versioni presentate.
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Migliorata l'esperienza di accesso nelle app del portale aziendale per tutte le piattaforme <!--User Story 1132123-->
+### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Aggiornamenti dell'interfaccia utente del sito Web del portale aziendale <!--1313244 part 2-->
 
-Microsoft ha annunciato una modifica che verrà introdotta nei prossimi mesi e consentirà di migliorare l'esperienza di accesso per le app Portale aziendale di Intune per Android, iOS e Windows. Non appena questa modifica viene apportata con Azure AD, la nuova esperienza utente apparirà automaticamente su tutte le piattaforme per l'app del portale aziendale. Ora gli utenti possono anche accedere al portale aziendale da un altro dispositivo con un codice generato monouso. Ciò è particolarmente utile nei casi in cui gli utenti devono accedere senza credenziali.  
+__Aggiornamenti per le app in primo piano__ È stata aggiunta una pagina dedicata nel sito, nella quale gli utenti possono visualizzare le app che hanno scelto di mettere in primo piano e sono state apportate alcune modifiche all'interfaccia utente della sezione In primo piano nella home page.
 
-Di seguito sono illustrate l'esperienza di accesso precedente, la nuova esperienza di accesso con credenziali e la nuova esperienza di accesso da un altro dispositivo.
+![Riquadri colorati che mostrano le app. Si tratta di grandi quadrati a colori sotto ogni app, per i quali il colore viene derivato dal colore principale nel logo dell'app. La sezione "App in primo piano" è visualizzata lungo la parte superiore dell'app Portale aziendale.](./media/cp_win10_colorful_tiles_after_1708.png)
 
-__Esperienza di accesso precedente__
-
-![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
-
-![Dopo aver toccato Accedi, l'utente immette le proprie credenziali in questa pagina, che richiede l'indirizzo di posta elettronica e la password dell'utente e offre diversi modi per risolvere gli errori relativi alle password.](./media/cp_ios_aad_signin_before_1704_002.png)
-
-![Dopo aver specificato la password, l'app portale aziendale esegue l'accesso, operazione indicata da una barra di caricamento.](./media/cp_ios_aad_signin_before_1704_003.png)
-
-__Nuova esperienza di accesso__
-
-![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](./media/cp_ios_aad_signin_after_1704_001.png)
-
-![Viene chiesto all'utente di indicare solo l'indirizzo di posta elettronica anziché l'indirizzo di posta elettronica e la password nella stessa schermata.](./media/cp_ios_aad_signin_after_1704_002.png)
-
-![La password verrà richiesta all'utente dopo che l'indirizzo di posta elettronica è stato accettato.](./media/cp_ios_aad_signin_after_1704_003.png)
-
-![Terminato il processo di autenticazione, l'app portale aziendale esegue l'accesso, visualizzando una barra di caricamento.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
-__Nuova esperienza di accesso con accesso da un altro dispositivo__
-
-![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
-
-Toccare il collegamento __Accesso da un altro dispositivo__.
-
-![Viene indicato come passare alla pagina aka.ms/devicelogin con un passcode univoco dal computer di lavoro, quindi come usare il codice per l'accesso.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
-
-Avviare un browser e passare a [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
-
-![Un'immagine del browser dell'utente nel computer di lavoro anziché nell'app portale aziendale. Nella pagina "Accesso dispositivo" visualizzata viene chiesto all'utente di immettere il codice ricevuto nell'app portale aziendale.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
-
-Immettere il codice visto nell'app portale aziendale. Quando si seleziona __Continua__ sarà possibile eseguire l'autenticazione usando qualsiasi metodo supportato dall'azienda, ad esempio una smart card.
-
-![L'utente ha immesso il codice univoco nel campo e il sito "Accesso dispositivo" ha chiesto di confermare che il portale aziendale di Intune è l'app corretta per la ricezione dell'autorizzazione ad accedere.](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
-
-![Una pagina di conferma indica che l'utente ha eseguito l'accesso all'app portale aziendale sul proprio dispositivo e che questa pagina può essere chiusa.](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
-
-L'app portale aziendale avvia la procedura di accesso.
-
-![Terminato il processo di autenticazione, l'app portale aziendale esegue l'accesso, visualizzando una barra di caricamento.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 ### <a name="see-also"></a>Vedere anche
 * [Blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Guida di orientamento a Cloud Platform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)

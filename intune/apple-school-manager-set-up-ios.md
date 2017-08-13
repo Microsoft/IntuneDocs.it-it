@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,43 +15,43 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73556209c88759ffe0747d9927cbcbb49600e0c0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7079a22afc04b5674eb8f12a2833961e86939a28
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Abilitare la registrazione di dispositivi iOS con Apple School Manager
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Questo argomento offre agli amministratori IT informazioni utili per abilitare la registrazione dei dispositivi iOS acquistati tramite il programma [Apple School Manager (ASM)](https://school.apple.com/). Microsoft Intune può distribuire un profilo di registrazione in modalità wireless che registra i dispositivi ASM nella gestione. L'amministratore non deve mai intervenire su ciascun dispositivo gestito. Un profilo ASM contiene le impostazioni di gestione che vengono applicate ai dispositivi durante la registrazione, incluse le opzioni di Assistente configurazione.
+Questo argomento offre agli amministratori IT informazioni utili per abilitare la registrazione dei dispositivi iOS acquistati tramite il programma [Apple School Manager](https://school.apple.com/). Microsoft Intune può distribuire un profilo di registrazione in modalità wireless che registra i dispositivi Apple School Manager nella gestione. L'amministratore non deve mai intervenire su ciascun dispositivo gestito. Il profilo di registrazione contiene le impostazioni di gestione che vengono applicate ai dispositivi durante la registrazione, incluse le opzioni di Assistente configurazione.
 
-**Procedura di registrazione tramite ASM**
-1. [Ottenere un token ASM e assegnare i dispositivi](#get-the-asm-token-and-assign-devices)
+**Passaggi per la registrazione di Apple School Manager**
+1. [Ottenere un token di Apple School Manager e assegnare i dispositivi](#get-the-apple-token-and-assign-devices)
 2. [Creare un profilo di registrazione](#create-an-apple-enrollment-profile)
 3. [Connettere School Data Sync](#connect-school-data-sync) (facoltativo)
-4. [Sincronizzare i dispositivi gestiti tramite ASM](#sync-asm-managed-devices)
-5. [Assegnare il profilo ai dispositivi ASM](#assign-an-asm-profile-to-devices)
+4. [Sincronizzare i dispositivi gestiti da Apple School Manager](#sync-managed-devices)
+5. [Assegnare un profilo di Apple School Manager ai dispositivi](#assign-a-profile-to-devices)
 6. [Distribuire i dispositivi agli utenti](#distribute-devices-to-users)
 
 >[!NOTE]
->La registrazione ASM non può essere usata con [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) di Apple o con l'account del [manager di registrazione dispositivi](device-enrollment-manager-enroll.md) di Intune.
+>La registrazione di Apple School Manager non può essere usata con il [programma DEP di Apple](device-enrollment-program-enroll-ios.md) o con il [manager di registrazione dispositivi](device-enrollment-manager-enroll.md).
 
-## <a name="get-the-apple-asm-token-and-assign-devices"></a>Ottenere un token ASM Apple e assegnare i dispositivi
+## <a name="get-the-apple-token-and-assign-devices"></a>Ottenere il token Apple e assegnare i dispositivi
 
-Per registrare i dispositivi iOS di proprietà dell'azienda con Apple School Manager (ASM), è necessario un file di token ASM (con estensione p7m) di Apple. Questo token consente a Intune di sincronizzare le informazioni sui dispositivi che partecipano al programma ASM. Consente inoltre di caricare i profili di registrazione in Apple e assegnare i dispositivi a tali profili. Nel portale Apple è inoltre possibile assegnare i numeri di serie dei dispositivi da gestire.
+Per registrare i dispositivi iOS di proprietà dell'azienda in Apple School Manager, è necessario un file di token (con estensione p7m) di Apple. Questo token consente a Intune di sincronizzare le informazioni sui dispositivi che partecipano al programma Apple School Manager. Consente inoltre di caricare i profili di registrazione in Apple e assegnare i dispositivi a tali profili. Nel portale Apple è inoltre possibile assegnare i numeri di serie dei dispositivi da gestire.
 
 **Prerequisiti**
 - [Certificato push MDM Apple](apple-mdm-push-certificate-get.md)
 - Registrazione per [Apple School Management](http://school.apple.com)
 
-**Passaggio 1. Scaricare il certificato di chiave pubblica di Intune necessario per creare un token ASM Apple.**<br>
+**Passaggio 1. Scaricare il certificato di chiave pubblica di Intune necessario per creare un token Apple.**<br>
 1. Nel [portale di Intune ](https://aka.ms/intuneportal) in Azure scegliere **Registrazione del dispositivo** e quindi selezionare **Token DEP**.
 2. Nel pannello **Token DEP** selezionare **Scarica la chiave pubblica** per scaricare e salvare il file della chiave di crittografia (con estensione pem) in locale. Il file PEM viene usato per richiedere un certificato di relazione di trust dal portale Apple School Manager.
 
-**Passaggio 2: Scaricare un token ASM e assegnare i dispositivi.**<br>
-Selezionare **Crea un token tramite Apple School Manager** e accedere con l'ID Apple aziendale. Lo stesso ID Apple può essere usato per rinnovare il token ASM.
+**Passaggio 2: Scaricare un token e assegnare i dispositivi.**<br>
+Selezionare **Crea un token tramite Apple School Manager** e accedere con l'ID Apple aziendale. Lo stesso ID Apple può essere usato per rinnovare il token di Apple School Manager.
 
    1.  Nel [portale Apple School Manager](https://school.apple.com) passare a **Server MDM** e quindi selezionare **Aggiungi server MDM** (in alto a destra).
    2.  Immettere il **nome del server MDM**. Il nome del server viene immesso come riferimento per identificare il server MDM (Mobile Device Management, Gestione dei dispositivi mobili). Non è il nome o l'URL del server di Microsoft Intune.
@@ -59,13 +59,13 @@ Selezionare **Crea un token tramite Apple School Manager** e accedere con l'ID A
    4.  Selezionare **Ottieni token** e quindi scaricare il file token del server (con estensione p7m) nel computer.
    5. Passare ad **Assegnazioni di dispositivi** e **scegliere il dispositivo** inserendo manualmente i **numeri di serie**, il **numero di ordine** o **caricando un file CSV**.
    6.   Scegliere l'azione **Assegna al server**  e selezionare il **server MDM** creato.
-   7. Specificare come **scegliere i dispositivi**, fornire le informazioni sul dispositivo e specificare i dettagli in base al **Numero di serie** del dispositivo, al **Numero dell'ordine**o **caricando un file CSV**.
+   7. Specificare come **scegliere i dispositivi** e quindi fornire dettagli e informazioni sul dispositivo.
    8. Scegliere **Assegna al server**, selezionare il &lt;nome del server&gt; specificato per Microsoft Intune e fare clic su **OK**.
 
-**Passaggio 3: Immettere l'ID Apple usato per creare il token ASM.**<br>Questo ID deve essere usato per rinnovare il token ASM Apple e viene archiviato per riferimento futuro.
+**Passaggio 3: Immettere l'ID Apple usato per creare il token di Apple School Manager.**<br>Questo ID deve essere usato per rinnovare il token di Apple School Manager e viene archiviato per riferimento futuro.
 
 **Passaggio 4: Individuare e caricare il token.**<br>
-Passare al file del certificato (con estensione p7m), scegliere **Apri** e quindi selezionare **Carica**. Intune sincronizzerà automaticamente i dispositivi ASM da Apple.
+Passare al file del certificato (con estensione p7m), scegliere **Apri** e quindi selezionare **Carica**. Intune sincronizzerà automaticamente i dispositivi Apple School Manager da Apple.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Creare un profilo di registrazione di Apple
 Un profilo di registrazione dispositivi consente di definire le impostazioni applicate a un gruppo di dispositivi durante la registrazione.
@@ -76,17 +76,17 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 4. Nel pannello **Crea un profilo di registrazione** immettere un **nome** e una **descrizione** per il profilo visualizzato nel portale Intune.
 5. Per **Affinità utente**, scegliere se i dispositivi con questo profilo verranno registrati con o senza affinità utente.
 
- - **Registra con affinità utente**: il dispositivo deve essere associato a un utente durante la configurazione iniziale e può quindi accedere ai dati aziendali e alla posta elettronica. Scegliere l'affinità utente per i dispositivi gestiti tramite ASM a cui gli utenti accedono con l'ID Apple gestito.
+ - **Registra con affinità utente**: il dispositivo viene affiliato a un utente durante l'installazione.
 
  >[!NOTE]
- >L'autenticazione a più fattori non funziona durante la registrazione nei dispositivi ASM con affinità utente. Dopo la registrazione, l'autenticazione a più fattori funziona come previsto in questi dispositivi.
+ >L'autenticazione a più fattori non funziona durante la registrazione nei dispositivi Apple School Manager con affinità utente. Dopo la registrazione, l'autenticazione a più fattori funziona come previsto in questi dispositivi.
 
-  La modalità iPad condiviso di Apple School Manager richiede la registrazione dell'utente con l'affinità utente.
+  La modalità iPad condiviso di Apple School Manager richiede la registrazione dell'utente senza affinità utente.
 
  >[!NOTE]
-    >ASM con affinità utente richiede l'abilitazione di un [endpoint misto/nome utente WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints) per richiedere il token utente. [Altre informazioni su WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    >Apple School Manager con affinità utente richiede l'abilitazione di un [endpoint misto/nome utente WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints) per richiedere il token utente. [Altre informazioni su WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
- - **Registra senza affinità utente**: il dispositivo non è associato a un utente. Usare questa associazione per i dispositivi che eseguono attività senza accedere ai dati utente locali. Le app che richiedono l'affinità utente, inclusa l'app Portale aziendale usata per installare le app line-of-business, non funzioneranno.
+ - **Registra senza affinità utente**: il dispositivo non è associato a un utente. Usare questa associazione per i dispositivi che eseguono attività senza accedere ai dati utente locali. Le app che richiedono l'affinità utente, inclusa l'app Portale aziendale usata per installare le app line-of-business, non funzionano.
 
 6. Selezionare **Impostazioni di gestione dei dispositivi**. Questi elementi vengono impostati durante l'attivazione e richiedono il ripristino delle impostazioni predefinite per la modifica. Configurare le impostazioni del profilo seguenti e quindi selezionare **Salva**:
 
@@ -94,10 +94,10 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 
     - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disattiva le impostazioni iOS che potrebbero permettere la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni.
 
-  - **iPad condiviso**: richiede le modalità **Registra con affinità utente** e **Supervisione eseguita**. Consente a più utenti di eseguire l'accesso agli iPad registrati usando un ID Apple gestito. Gli ID Apple gestiti sono creati nel portale Apple School Manager.
+  - **iPad condiviso**: richiede le modalità **Registra senza affinità utente** e **Supervisione eseguita**. Consente a più utenti di eseguire l'accesso agli iPad registrati usando un ID Apple gestito. Gli ID Apple gestiti sono creati nel portale Apple School Manager.
 
   >[!NOTE]
-  >Se la modalità **iPad condiviso** è abilitata in un profilo e la modalità **Affinità utente** o **Supervisione eseguita** è impostata su **Disattivato**, la modalità iPad condiviso è disabilitata per il profilo di registrazione.
+  >Se **Affinità utente** è impostata su **Con affinità utente** o la modalità **Supervisione eseguita** è impostata su **Disattivato**, la modalità iPad condiviso è disabilitata per il profilo di registrazione.
 
   - **Numero massimo di utenti memorizzati nella cache**: richiede **iPad condiviso** = **Sì**. Crea una partizione nel dispositivo per ogni utente. Il valore consigliato è il numero di studenti che potrebbero usare il dispositivo in un determinato periodo di tempo. Se ad esempio il dispositivo viene usato regolarmente da sei studenti nel corso della settimana, impostare questo numero su sei.  
 
@@ -125,40 +125,40 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 8. Per salvare le impostazioni del profilo, selezionare **Crea** nel pannello **Crea un profilo di registrazione**.
 
 ## <a name="connect-school-data-sync"></a>Connettere School Data Sync
-(Facoltativo) ASM supporta la sincronizzazione dei dati dell'elenco di classi in Azure Active Directory (AD) tramite Microsoft School Data Sync (SDS). Completare i passaggi seguenti per usare SDS per sincronizzare i dati dell'istituto di istruzione.
+(Facoltativo) Apple School Manager supporta la sincronizzazione dei dati dell'elenco di classi in Azure Active Directory (AD) tramite Microsoft School Data Sync (SDS). Completare i passaggi seguenti per usare SDS per sincronizzare i dati dell'istituto di istruzione.
 
 1. Nel pannello **Token DEP** selezionare il banner informativo di colore blu oppure **Connetti SDS**.
 2. Selezionare **Consenti a Microsoft School Data Sync di usare questo token**, impostando **Consenti**. Questa impostazione consente a Intune di connettersi con SDS in Office 365.
-3. Per abilitare una connessione tra ASM e Azure AD, selezionare **Configura Microsoft School Data Sync**. Altre informazioni su [come configurare School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1).
+3. Per abilitare una connessione tra Apple School Manager e Azure AD, selezionare **Configura Microsoft School Data Sync**. Altre informazioni su [come configurare School Data Sync](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1).
 4. Fare clic su **OK** per salvare e continuare.
 
-## <a name="sync-asm-managed-devices"></a>Sincronizzare i dispositivi gestiti tramite ASM
-Dopo aver assegnato le autorizzazioni per gestire i dispositivi ASM a Intune, è possibile sincronizzare Intune con il servizio ASM per visualizzare i dispositivi gestiti nel portale di Intune.
+## <a name="sync-managed-devices"></a>Sincronizzare i dispositivi gestiti
+Dopo aver assegnato le autorizzazioni per gestire i dispositivi Apple School Manager a Intune, è possibile sincronizzare Intune con il servizio Apple per visualizzare i dispositivi gestiti nel portale di Intune.
 
 1. Nel portale di Intune scegliere **Registrazione del dispositivo** e quindi scegliere **Registrazione Apple**.
 2. In **Dispositivi DEP** selezionare **Sincronizza**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
 
-    Per soddisfare i requisiti Apple per volumi di traffico ASM accettabili, Intune impone le seguenti limitazioni:
-     -  Una sincronizzazione ASM completa può essere eseguita solo una volta ogni sette giorni. Durante una sincronizzazione completa, Intune aggiorna tutti i numeri di serie che Apple ha assegnato a Intune, anche se sono già stati sincronizzati in precedenza. Se si tenta una sincronizzazione completa prima che trascorra il periodo di sette giorni, Intune aggiorna solo i numeri di serie che non sono ancora elencati in Intune.
+    Per soddisfare i requisiti Apple per il traffico accettabile, Intune impone le seguenti limitazioni:
+     -  Una sincronizzazione completa può essere eseguita solo una volta ogni sette giorni. Durante una sincronizzazione completa, Intune aggiorna tutti i numeri di serie che Apple ha assegnato a Intune, anche se sono già stati sincronizzati in precedenza. Se si tenta una sincronizzazione completa prima che trascorra il periodo di sette giorni, Intune aggiorna solo i numeri di serie che non sono ancora elencati in Intune.
      -  Il tempo concesso per il completamento di una richiesta di sincronizzazione è pari a 15 minuti. Durante questo tempo o fino al completamento della richiesta, il pulsante **Sincronizza** è disabilitato.
 
 >[!NOTE]
->È inoltre possibile assegnare i numeri di serie ASM ai profili dal pannello **Dispositivi DEP**.
+>È anche possibile assegnare i numeri di serie di Apple School Manager ai profili dal pannello **Dispositivi DEP**.
 
-## <a name="assign-an-asm-profile-to-devices"></a>Assegnare un profilo ASM ai dispositivi
-Ai dispositivi ASM gestiti da Intune deve essere assegnato un profilo ASM prima della registrazione.
+## <a name="assign-a-profile-to-devices"></a>Assegnare un profilo ai dispositivi
+Ai dispositivi Apple School Manager gestiti da Intune deve essere assegnato un profilo di registrazione prima di registrarli.
 
 1. Nel portale di Intune scegliere **Registrazione del dispositivo** > **Registrazione Apple** e quindi selezionare **Profili DEP**.
 2. Nell'elenco **Profili DEP** selezionare il profilo che si vuole assegnare ai dispositivi e quindi selezionare **Assegnazioni di dispositivi**.
-3. Selezionare **Assegna** e quindi selezionare i dispositivi ASM a cui si vuole assegnare il profilo. È possibile filtrare per visualizzare i dispositivi ASM disponibili:
+3. Selezionare **Assegna** e quindi selezionare i dispositivi Apple School Manager a cui si vuole assegnare il profilo. È possibile applicare un filtro per visualizzare i dispositivi disponibili:
   - **non assegnato**
   - **qualsiasi**
-  - **&lt;Nome del profilo ASM&gt;**
-4. Selezionare i dispositivi che si vuole assegnare. La casella di controllo sopra la colonna consente di selezionare fino a 1000 dispositivi elencati. Fare clic su **Assegna**. Per registrare più di 1000 dispositivi, ripetere i passaggi di assegnazione fino ad assegnare un profilo ASM a tutti i dispositivi.
+  - **&lt;Nome del profilo di Apple School Manager&gt;**
+4. Selezionare i dispositivi che si vuole assegnare. La casella di controllo sopra la colonna consente di selezionare fino a 1000 dispositivi elencati. Fare clic su **Assegna**. Per registrare più di 1000 dispositivi, ripetere i passaggi di assegnazione fino a quando non è stato assegnato un profilo di registrazione a tutti i dispositivi.
 
 ## <a name="distribute-devices-to-users"></a>Distribuire i dispositivi agli utenti
 
-Ora è possibile distribuire i dispositivi di proprietà dell'azienda agli utenti. Quando un dispositivo ASM iOS viene attivato, viene registrato per la gestione con Intune. Se il dispositivo è stato attivato ed è in uso, il profilo potrà essere applicato solo dopo il ripristino delle impostazioni predefinite del dispositivo.
+Ora è possibile distribuire i dispositivi di proprietà dell'azienda agli utenti. Quando un dispositivo Apple School Manager iOS viene attivato, viene registrato per la gestione con Intune. Se il dispositivo è stato attivato ed è in uso, il profilo potrà essere applicato solo dopo il ripristino delle impostazioni predefinite del dispositivo.
 
 ### <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>In che modo gli utenti installano e usano il portale aziendale sui dispositivi
 
