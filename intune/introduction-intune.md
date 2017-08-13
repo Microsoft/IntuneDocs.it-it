@@ -5,7 +5,7 @@ keywords: informazioni su Intune
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: 53115eba5e5150139b8ff0f359cde279df297d47
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-is-intune"></a>Informazioni su Intune
 
@@ -37,7 +37,7 @@ Insieme, Office 365 e EMS consentono alla forza lavoro di essere produttiva con 
 ## <a name="how-does-intune-work"></a>Come funziona Intune?
 Intune consente la gestione dei dispositivi mobili (MDM, Mobile Device Management) e la gestione delle app mobili (MAM, Mobile App Management). Le funzionalità MDM e MAM di Intune contribuiscono quindi alla suite EMS con scenari di protezione e conformità dei dati.  
 
-Le modalità di utilizzo delle funzionalità MDM/MAM di Intune e della protezione dei dati EMS variano in base al [problema aziendale da risolvere](#common-business-problems-that-intune-helps-solve). Ad esempio:
+Le modalità d'uso delle funzionalità MDM/MAM di Intune e della protezione dei dati EMS variano in base al [problema aziendale da risolvere](#common-business-problems-that-intune-helps-solve). Ad esempio:
 * Se si crea un pool di dispositivi a utilizzo singolo da condividere tra gli addetti alla vendita di un negozio, verranno usate maggiormente le funzionalità MDM.
 * Sarà necessario fare affidamento sulle funzionalità MAM e di protezione dei dati se si consente alla forza lavoro di usare i propri dispositivi personali per accedere ai dati aziendali (BYOD).  
 * Se si dotano gli Information Worker di telefoni aziendali, occorrerà usare in ugual misura entrambe le tecnologie.
@@ -72,10 +72,10 @@ Quando si usa Intune con gli altri servizi di EMS, si assicura all'organizzazion
 
 * [Single Sign-On](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *   [Multi-Factor Authentication](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-* [Accesso condizionale all'app - abilitazione dell'accesso se l'app per dispositivi mobili contiene dati aziendali](app-based-conditional-access-intune.md) ([console classica](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365))
-* [Isolamento dei dati aziendali da quelli personali all'interno della stessa app](app-protection-policy.md) ([console classica](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Criteri di protezione dell'app (PIN, crittografia, salvataggio con nome, Appunti e così via)](app-protection-policies.md) ([console classica](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [Cancellazione dei dati aziendali da un'app mobile](/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)
+* [Accesso condizionale all'app - consentire l'accesso se l'app per dispositivi mobili contiene dati aziendali](app-based-conditional-access-intune.md)
+* [Isolamento dei dati aziendali da quelli personali all'interno della stessa app](app-protection-policy.md)
+* [Criteri di protezione dell'app (PIN, crittografia, salvataggio con nome, Appunti e così via)](app-protection-policies.md)
+* [Cancellazione dei dati aziendali da un'app mobile](apps-selective-wipe.md)
 * [Supporto per Rights Management](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Immagine dei livelli di protezione dei dati per la gestione delle app](./media/managing-mobile-apps.png)
@@ -110,6 +110,6 @@ L'elenco seguente di problemi aziendali include collegamenti a informazioni più
 * [Assegnare tablet condivisi con limitazioni d'uso ai task worker](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### <a name="next-steps"></a>Passaggi successivi
-* Leggere informazioni su alcuni [metodi comuni per l'uso di Intune](common-scenarios.md) ([console classica](/intune-classic/understand-explore/common-ways-to-use-intune)).
-* Acquisire familiarità con il prodotto [con una versione di valutazione di 30 giorni di Intune](free-trial-sign-up.md) ([console classica](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)).
-* Approfondire i [requisiti tecnici e le funzionalità](supported-devices-browsers.md) ([console classica](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)) di Intune.
+* Leggere informazioni su alcuni [metodi comuni per l'uso di Intune](common-scenarios.md).
+* Acquisire familiarità con il prodotto [con una versione di valutazione di 30 giorni di Intune](free-trial-sign-up.md).
+* Approfondire i [requisiti tecnici e le funzionalità](supported-devices-browsers.md) di Intune.

@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
+ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Controllo degli accessi in base al ruolo (RBAC) con Intune
 
@@ -44,7 +44,7 @@ A partire dal nuovo portale di Intune, **Azure Active Directory (Azure AD)** off
     > Il ruolo Amministratore del servizio Intune non offre la possibilità di gestire le impostazioni di accesso condizionale di Azure AD.
 
     > [!TIP]
-    > Intune mostra inoltre tre estensioni di Azure AD, **Utenti**, **Gruppi** e **Accesso condizionale**, controllate tramite RBAC di Azure AD. Il ruolo **Amministratore account utente**, inoltre, consente di eseguire solo attività su utenti e gruppi di AAD e non dispone delle autorizzazioni complete per eseguire tutte le attività in Intune. Per altri dettagli, fare riferimento ad [Assegnazione dei ruoli di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+    > Intune mostra inoltre tre estensioni di Azure AD, **Utenti**, **Gruppi** e **Accesso condizionale**, controllate tramite il controllo degli accessi in base al ruolo di Azure AD. Il ruolo **Amministratore account utente**, inoltre, consente di eseguire solo attività su utenti e gruppi di AAD e non dispone delle autorizzazioni complete per eseguire tutte le attività in Intune. Per altri dettagli, fare riferimento ad [Assegnazione dei ruoli di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 ## <a name="roles-created-in-the-intune-classic-console"></a>Ruoli creati nella console classica di Intune
 
@@ -57,9 +57,9 @@ Solo gli utenti **Amministratori del servizio** con autorizzazioni "Completo" ve
 
 I seguenti ruoli sono predefiniti in Intune ed è possibile assegnarli ai gruppi senza ulteriore configurazione:
 
-- **Help Desk Operator** (Operatore supporto tecnico): consente di eseguire attività remote su utenti e dispositivi e assegnare le applicazioni o i criteri a utenti o dispositivi. 
+- **Help Desk Operator** (Operatore supporto tecnico): consente di eseguire attività remote su utenti e dispositivi e assegnare le applicazioni o i criteri a utenti o dispositivi.
 - **Policy and Profile Manager** (Gestione criteri e profili): consente di gestire i criteri di conformità, i profili di configurazione, la registrazione Apple e gli identificatori dei dispositivi aziendali.
-- **Read Only Operator** (Operatore sola lettura): consente di visualizzare informazioni su utenti, dispositivi, registrazione, configurazione e applicazioni e non consente di apportare modifiche a Intune.
+- **Read Only Operator** (Operatore sola lettura): consente di visualizzare informazioni su utenti, dispositivi, registrazione, configurazione e applicazioni. Non consente di apportare modifiche a Intune.
 - **Application Manager** (Gestione applicazioni): consente di gestire le applicazioni per dispositivi mobili e gestite e di leggere le informazioni sui dispositivi.
 
 ### <a name="to-assign-a-built-in-role"></a>Per assegnare un ruolo predefinito
@@ -68,9 +68,9 @@ I seguenti ruoli sono predefiniti in Intune ed è possibile assegnarli ai gruppi
 
 2. Nel pannello <*nome ruolo*> - **Proprietà** scegliere **Gestisci** e quindi **Assegnazioni**.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Non è possibile eliminare o modificare i ruoli predefiniti
-    
+
 3. Nel pannello del ruolo personalizzato scegliere **Assegna**.
 
 4. Nel pannello **Assegnazioni di ruolo** immettere un **nome** e una **descrizione** facoltativa per l'assegnazione e quindi scegliere le operazioni seguenti:

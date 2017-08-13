@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71558786cc7f058cee31e9bbe3960ed75a76891b
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: b535c137d16ed8e17f4aee22d1fe2e922247f088
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="implement-your-intune-plan"></a>Implementare il piano di Intune
 
@@ -32,7 +32,7 @@ I requisiti principali per la configurazione autonoma di Intune sono:
 
 -   Sottoscrizione Enterprise Mobility + Security (EMS)/Intune
 
--   Sottoscrizione Office 365 (per le app di Office e le app gestite tramite criteri MAM)
+-   Sottoscrizione Office 365 (per le app di Office e le app gestite con criteri di protezione delle app)
 
 -   Certificato APN Apple (per consentire la gestione della piattaforma per dispositivi iOS)
 
@@ -109,7 +109,7 @@ Intune supporta i profili di posta elettronica, Wi-Fi e VPN. Aggiungere questi p
 
 ### <a name="task-10-add-and-deploy-apps"></a>Attività 10: Aggiungere e distribuire le app
 
-Intune supporta la distribuzione di app Web, line-of-business e di Store pubblici. È inoltre possibile gestire app in cui è integrato Intune SDK, associandole con i criteri MAM. Aggiungere le app a seconda delle esigenze e distribuirle ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
+Intune supporta la distribuzione di app Web, line-of-business e di Store pubblici. È anche possibile gestire app in cui è integrato Intune SDK, associandole con i criteri di protezione delle app. Aggiungere le app a seconda delle esigenze e distribuirle ai gruppi di destinazione in base ai casi d'uso e ai requisiti per la distribuzione di Intune.
 
 -   Altre informazioni su [come aggiungere e distribuire app](app-management.md).
 

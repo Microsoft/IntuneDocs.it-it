@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b7ce81eb63a81534af2911b34904d870ac41ad
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 433cec8e0bc2012090e680e0a28a9a77d7b13a38
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Come gestire le app iOS acquistate tramite Volume Purchase Program con Microsoft Intune
 
@@ -33,6 +33,19 @@ Microsoft Intune consente di gestire le app acquistate con questo programma medi
 - Importazione delle informazioni di licenza dall'app store
 - Verifica del numero di licenze usate
 - Blocco dell'installazione di un numero di copie dell'app superiore al numero di copie acquistate
+
+È possibile usare due metodi per assegnare app acquistate con Volume Purchase Program:
+
+### <a name="device-licensing"></a>Licenze per dispositivo
+
+Quando si assegna un'app a un dispositivo, viene usata una licenza dell'app che rimane associata al dispositivo a cui è stata assegnata.
+Quando si assegnano app acquistate con Volume Purchase Program a un dispositivo, l'utente finale del dispositivo non deve fornire un ID Apple per accedere allo store. 
+
+### <a name="user-licensing"></a>Licenze per utenti
+
+Quando si assegna un'app a un utente, viene usata una licenza dell'app che rimane associata all'utente. È possibile eseguire l'app su più dispositivi di proprietà dell'utente.
+Quando si assegna un'app acquistata con Volume Purchase Program agli utenti, ogni utente finale deve avere un ID Apple valido per accedere all'App Store.
+
 
 È anche possibile usare Intune per sincronizzare, gestire e assegnare i libri acquistati nello store Apple Volume Purchase Program. Per la gestione dei libri, usare il carico di lavoro **Libri** del portale di Intune. Le procedure per la gestione dei libri sono uguali a quelle usate per la gestione delle app.
 Prima di eseguire questa operazione è necessario aver caricato un token Apple Volume Purchase Program. Attualmente, è possibile assegnare libri solo con la modalità di installazione **Richiesto**.
@@ -81,24 +94,28 @@ Il token viene visualizzato nel pannello di elenco dei token.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Per assegnare un'app acquistata tramite Volume Purchase Program
 
-1. Nel carico di lavoro di **App per dispositivi mobili** scegliere **Gestisci** > **App con licenza**.
-2. Nel pannello di elenco delle app scegliere l'app da assegnare e quindi scegliere "**...** " > **Assegna gruppi**.
-3. Nel pannello <*Nome app*> - **Gruppi assegnati** scegliere **Gestisci** > **Gruppi assegnati**.
-4. Scegliere **Assegna gruppi** e quindi nel pannello **Seleziona gruppi** scegliere i gruppi di utenti o di dispositivi Azure AD a cui assegnare l'app.
-È necessario scegliere un'azione di assegnazione **obbligatoria**. Inoltre, le assegnazioni ai gruppi di dispositivi sono disponibili per i nuovi tenant creati dopo il mese di gennaio 2017. Se il tenant è stato creato prima di questa data e non è possibile assegnare le app VPP ai gruppi di dispositivi contattare il supporto tecnico di Intune.
-5. Al termine, scegliere **Salva**.
+1.  Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **Licenze app**.
+2.  Nel pannello di elenco delle app scegliere l'app da assegnare e quindi scegliere "**...** " > **Assegna gruppi**.
+3.  Nel pannello *<app name>* - **Assegnazioni** scegliere **Gestisci** > **Assegnazioni**.
+4.  Scegliere **Seleziona gruppi** e quindi nel pannello **Seleziona gruppi** scegliere i gruppi di utenti o di dispositivi Azure AD a cui assegnare l'app.
+5.  Per ogni gruppo selezionato scegliere le impostazioni seguenti:
+    - **Tipo**: decidere se l'app sarà **Disponibile** (gli utenti finali possono installare l'app dal portale aziendale) o **Obbligatoria** (l'app verrà installata automaticamente nei dispositivi degli utenti finali).
+Quando si assegna un'app VPP come **Disponibile**, il contenuto e la licenza dell'app vengono assegnati direttamente dall'App Store.
+    - **Tipo di licenza**: scegliere **Licenze utente** o **Licenze dispositivo**.
+6.  Al termine, scegliere **Salva**.
+
 
 >[!NOTE]
 >L'elenco di app visualizzato è associato a un token. Se è presente un'app associata a più token VPP la stessa app viene visualizzata più volte, una volta per ogni token.
 
-Vedere [How to monitor apps](apps-monitor.md) (Come monitorare le app) per informazioni sul monitoraggio delle assegnazioni di app.
-
 ## <a name="further-information"></a>Altre informazioni
 
-Quando si assegna l'app indicando l'installazione come **Obbligatoria**, ogni utente che installa l'app usa una licenza.
-
-Per revocare una licenza, è necessario modificare l'azione di assegnazione specificando **Disinstalla**. La licenza verrà revocata una volta disinstallata l'app.
+Per revocare una licenza, è necessario modificare l'azione di assegnazione specificando Disinstalla. La licenza verrà revocata una volta disinstallata l'app.
 
 Quando un utente con un dispositivo idoneo prova a installare per la prima volta un'app VPP riceve una richiesta di partecipazione a Volume Purchase Program di Apple. Per procedere con l'installazione dell'app l'utente deve confermare la partecipazione. L'invito a partecipare al Volume Purchase Program di Apple richiede che l'utente possa usare l'app iTunes nel dispositivo iOS. Se sono stati impostati criteri per disabilitare l'app iTunes Store, le licenze basate sugli utenti per le app VPP non funzionano. La soluzione consiste nel consentire l'app iTunes rimuovendo i criteri oppure nell'usare licenze basate sui dispositivi.
 
-Quando si assegna un'app VPP come Disponibile, il contenuto e la licenza dell'app vengono assegnati direttamente dall'App Store.
+
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Vedere [How to monitor apps](apps-monitor.md) (Come monitorare le app) per informazioni sul monitoraggio delle assegnazioni di app.

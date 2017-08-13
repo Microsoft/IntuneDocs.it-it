@@ -1,11 +1,11 @@
 ---
 title: Abilitare BYOD con Microsoft Intune
-description: 
+description: Flusso di lavoro generale per la configurazione di Intune al fine di abilitare una soluzione BYOD (Bring Your Own Device) per l'organizzazione.
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 880b83a63eefe13a96ab8838c7092c185aa32cd0
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="enable-byod-with-intune"></a>Abilitare BYOD con Intune
 
@@ -27,7 +27,7 @@ Il flusso di lavoro è suddiviso nei tre processi seguenti. È possibile persona
 
 -   **[Registrare i dispositivi e verificare la conformità](#enroll-devices-and-check-for-compliance)**  descrive come consentire agli utenti di registrare i propri dispositivi personali per la gestione con Intune. Intune gestisce dispositivi iOS, Mac OS, Android e Windows. In questa sezione viene inoltre descritto come distribuire i criteri ai dispositivi e verificare che soddisfino i requisiti di sicurezza di base.
 
-- **[Fornire l'accesso alle risorse aziendali](#provide-access-to-company-resources)**  illustra come il personale IT può consentire agli utenti di accedere alle risorse aziendali in modo semplice e sicuro. Questa operazione viene eseguita distribuendo i profili di accesso ai dispositivi gestiti. In questa sezione viene inoltre spiegato come gestire con Intune le distribuzioni di app acquistate con Volume Purchase Program.
+- **[Fornire l'accesso alle risorse aziendali](#provide-access-to-company-resources)** illustra come è possibile consentire agli utenti di accedere alle risorse aziendali in modo semplice e sicuro. Questa operazione viene eseguita distribuendo i profili di accesso ai dispositivi gestiti. In questa sezione viene inoltre spiegato come gestire con Intune le distribuzioni di app acquistate con Volume Purchase Program.
 
 -   **[Proteggere i dati aziendali](#protect-company-data)** offre informazioni utili su come fornire l'accesso condizionale alle risorse aziendali, evitare la perdita di dati e rimuovere le app e i dati aziendali dai dispositivi quando non sono più necessari per il lavoro oppure in caso di furto o smarrimento.
 
@@ -38,19 +38,17 @@ Il flusso di lavoro è suddiviso nei tre processi seguenti. È possibile persona
 ## <a name="before-you-begin"></a>Prima di iniziare
 Prima che gli utenti possano registrare i dispositivi, è innanzitutto necessario preparare il servizio Intune. A tale scopo, [assegnare le licenze agli utenti](licenses-assign.md) e [impostare l'autorità di gestione dei dispositivi mobili](mdm-authority-set.md).
 
-Al tempo stesso, è anche necessario [personalizzare il portale aziendale](company-portal-customize.md). Aggiungere il branding aziendale e fornire agli utenti informazioni sul supporto. Questo consente di creare un'esperienza di registrazione e supporto attendibile per gli utenti.
+Al tempo stesso, è anche necessario [personalizzare il portale aziendale](company-portal-customize.md). Aggiungere il branding aziendale e fornire agli utenti informazioni sul supporto. Questo consente di creare un'esperienza di registrazione e supporto attendibile per gli utenti. È anche possibile creare [condizioni di utilizzo](terms-and-conditions-create.md) che gli utenti devono accettare prima della registrazione o [restrizioni per i dispositivi](enrollment-restrictions-set.md) per specificare le piattaforme supportate.
 
 ## <a name="enroll-devices-and-check-for-compliance"></a>Registrare i dispositivi e verificare la conformità
 
 Dopo aver preparato il servizio Intune, è necessario soddisfare i vari requisiti di registrazione per i diversi tipi di dispositivi da gestire. Il processo di registrazione dei dispositivi per la gestione è immediato, ma varia leggermente a seconda del tipo di dispositivo.
 
--   **Dispositivi iOS e Mac** Per registrare iPad, iPhone o dispositivi Mac OS, è necessario [richiedere un certificato del servizio APN (Apple Push Notification)](apple-mdm-push-certificate-get.md). Dopo aver caricato il certificato APN in Intune, gli utenti possono [registrare i dispositivi iOS](/intune-user-help/enroll-your-device-in-intune-ios) tramite l'app Portale aziendale e usare il sito Web del portale aziendale per [registrare i dispositivi Mac OS](/intune-user-help/enroll-your-device-in-intune-macos).
+-   **Dispositivi iOS e Mac** Per registrare iPad, iPhone o dispositivi Mac OS, è necessario [richiedere un certificato push MDM Apple](apple-mdm-push-certificate-get.md). Dopo aver caricato il certificato push MDM in Intune, gli utenti possono [registrare i dispositivi iOS](/intune-user-help/enroll-your-device-in-intune-ios) tramite l'app Portale aziendale e usare il sito Web del portale aziendale per [registrare i dispositivi MacOS](/intune-user-help/enroll-your-device-in-intune-macos).
 
--   **Dispositivi Android** Non è necessario eseguire alcuna operazione per preparare il servizio Intune per la registrazione dei dispositivi Android. Gli utenti possono [registrare i dispositivi Android](/intune-user-help/enroll-your-device-in-intune-android.md) per la gestione usando l'app Portale aziendale disponibile in Google Play.
+-   **Dispositivi Android** Non è necessario eseguire alcuna operazione per preparare il servizio Intune per la registrazione dei dispositivi Android. Gli utenti possono [registrare i dispositivi Android](/intune-user-help/enroll-your-device-in-intune-android) per la gestione usando l'app Portale aziendale disponibile in Google Play.
 
--   **Windows Phone e PC Windows** È consigliabile [impostare un alias DNS per il server di registrazione](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) per rendere più semplice la registrazione dei dispositivi Windows. In alternativa, gli utenti possono [registrare i dispositivi Windows](/intune-user-help/enroll-your-w10-phone-or-w10-pc-windows) aggiungendo un account aziendale o dell'istituto di istruzione.
-
-  - Se si dispone di Azure AD Premium, è possibile rendere ancora più semplice la registrazione dei dispositivi Windows per gli utenti [abilitando la funzionalità di registrazione automatica](windows-enroll.md). Questa funzionalità registra automaticamente un dispositivo in Intune quando un utente aggiunge un account aziendale o dell'istituto di istruzione per registrare il proprio dispositivo personale. Può essere usata anche per un dispositivo di proprietà dell'azienda aggiunto ad Azure AD dell'organizzazione.
+-   **Dispositivi Windows Phone e PC** I dispositivi Windows possono essere registrati con configurazione aggiuntiva. Per semplificare l'esperienza degli utenti, è possibile abilitare la registrazione automatica per i PC Windows 10 e i dispositivi mobili Windows 10 in Azure Active Directory (AD) Premium. Se non si dispone di Azure AD Premium o se è necessario supportare Windows 8.1, è possibile creare [un alias DNS per il server di registrazione](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) per semplificare la registrazione.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Verificare che i dispositivi gestiti soddisfino i requisiti di sicurezza di base
@@ -61,13 +59,13 @@ Quando [si distribuiscono criteri di conformità](device-compliance-get-started.
 
 ## <a name="provide-access-to-company-resources"></a>Fornire l'accesso alle risorse aziendali
 
-La prima cosa che la maggior parte dei dipendenti vuole sul proprio dispositivo mobile è l'accesso alla posta elettronica e ai documenti aziendali. E si aspettano di configurare l'accesso senza procedure complesse e senza doversi rivolgere al supporto tecnico. Con Intune è semplice [creare e distribuire le impostazioni di posta elettronica](conditional-access-intune-common-ways-use.md) per le app di posta elettronica native preinstallate nei dispositivi mobili.
-<!--- this was old link: (https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune). check with Andre--->
+La prima cosa che la maggior parte dei dipendenti vuole sul proprio dispositivo mobile è l'accesso alla posta elettronica e ai documenti aziendali. E si aspettano di configurare l'accesso senza procedure complesse e senza doversi rivolgere al supporto tecnico. Con Intune è semplice [creare e distribuire le impostazioni di posta elettronica](email-settings-configure.md) per le app di posta elettronica native preinstallate nei dispositivi mobili.
+
 
 > [!NOTE]
 > Intune supporta la configurazione di profili di posta elettronica Android for Work per le app di posta elettronica Gmail e Nine Work disponibili in Google Play Store.
 
-Intune consente inoltre di controllare e proteggere l'accesso ai dati aziendali locali quando gli utenti lavorano fuori sede. I profili [Wi-Fi](https://docs.microsoft.com/intune/deploy-use/wi-fi-connections-in-microsoft-intune), [VPN](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune#create-a-vpn-profile) e di posta elettronica di Intune interagiscono per consentire agli utenti di accedere ai file e alle risorse necessari, mettendoli in grado di svolgere le loro attività ovunque si trovino. È anche possibile accedere in modo sicuro alle applicazioni Web e ai servizi dell'azienda ospitati in locale e proteggerli usando il proxy per l'applicazione Azure Active Directory e l'accesso condizionale.
+Intune consente inoltre di controllare e proteggere l'accesso ai dati aziendali locali quando gli utenti lavorano fuori sede. I profili [Wi-Fi](wi-fi-settings-configure.md), [VPN](vpn-settings-configure.md) e di posta elettronica di Intune interagiscono per consentire agli utenti di accedere ai file e alle risorse necessari, per svolgere le loro attività ovunque si trovino. È anche possibile accedere in modo sicuro alle applicazioni Web e ai servizi dell'azienda ospitati in locale e proteggerli usando il proxy per l'applicazione Azure Active Directory e l'accesso condizionale.
 
 ### <a name="manage-volume-purchased-apps"></a>Gestire le app acquistate con Volume Purchase Program
 Con Intune è molto semplice:
@@ -109,8 +107,8 @@ Usare i [criteri di Windows Information Protection (WIP)](app-protection-policie
 
 ### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Cancellare i dati aziendali mantenendo intatti i dati personali
 
-Quando un dispositivo non viene più usato per lavoro, viene reimpiegato o risulta mancante, è necessario poter rimuovere le app e i dati aziendali dal dispositivo. A tale scopo, è possibile usare le funzionalità di cancellazione selettiva e completa di Intune. Gli utenti possono anche cancellare in remoto i dati dai dispositivi personali dal portale aziendale di Intune, se i dispositivi sono registrati in Intune.
+Quando un dispositivo non viene più usato per lavoro, viene reimpiegato o risulta semplicemente mancante, è necessario poter rimuovere le app e i dati aziendali dal dispositivo. A tale scopo, è possibile usare le funzionalità di cancellazione selettiva e completa di Intune. Gli utenti possono anche cancellare in remoto i dati dai dispositivi personali dal portale aziendale di Intune, se i dispositivi sono registrati in Intune.
 
 Una [cancellazione completa](devices-wipe.md) ripristina le impostazioni predefinite di un dispositivo e rimuove i dati e le impostazioni dell'utente. Una [cancellazione selettiva](devices-wipe.md#selective-wipe) rimuove solo i dati aziendali dal dispositivo, mantenendo invariati i dati personali degli utenti.
 
-Una volta avviata, il dispositivo inizia immediatamente il processo di cancellazione selettiva per essere rimosso dalla gestione. Al termine del processo, tutti i dati aziendali vengono eliminati e il nome del dispositivo viene rimosso dalla console di amministrazione di Intune. Questo termina il ciclo di vita della gestione dei dispositivi mobili.
+Una volta avviata, il dispositivo inizia immediatamente il processo di cancellazione selettiva per essere rimosso dalla gestione. Al termine del processo, tutti i dati aziendali vengono eliminati e il nome del dispositivo viene rimosso dal portale di Intune. Questo termina il ciclo di vita della gestione dei dispositivi mobili.

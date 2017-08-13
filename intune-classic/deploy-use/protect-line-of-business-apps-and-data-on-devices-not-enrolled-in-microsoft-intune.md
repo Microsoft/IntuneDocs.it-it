@@ -14,11 +14,11 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Proteggere app e dati line-of-business su dispositivi non registrati
 
@@ -31,7 +31,7 @@ Questo argomento elenca i passaggi per l'applicazione dei criteri MAM alle app a
 
 ##  <a name="step-1-prepare-the-app"></a>Passaggio 1: Preparare l'app.
 
-Prima di applicare i criteri MAM a un'app è necessario eseguire il wrapping di quest'ultima con lo strumento di wrapping delle app di Microsoft Intune per [iOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android). In alternativa, usare [Intune App SDK](/intune/app-sdk) per integrare manualmente le funzionalità di Intune per la protezione delle app.
+Prima di applicare i criteri MAM a un'app è necessario eseguire il wrapping di quest'ultima con lo strumento di wrapping delle app di Microsoft Intune per [iOS](/intune/app-wrapper-prepare-ios) e [Android](/intune/app-wrapper-prepare-android). In alternativa, usare [Intune App SDK](/intune/app-sdk) per integrare manualmente le funzionalità di Intune per la protezione delle app.
 
 Per informazioni sull'uso dello strumento di wrapping delle app rispetto a Intune App SDK, vedere [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
