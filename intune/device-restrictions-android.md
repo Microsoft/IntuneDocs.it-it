@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,20 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9e009e94fb4d9bdb99960e0d238d5471d1f4b50
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Android e Samsung KNOX Standard in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Usare queste impostazioni con i criteri di restrizione per i dispositivi Android per configurare i dispositivi nell'organizzazione.
+
+>[!TIP]
+>Se le impostazioni desiderate non sono disponibili, per la configurazione dei dispositivi si potrebbe usare un [profilo personalizzato](custom-settings-android.md). 
 
 ## <a name="general"></a>Generale
 
@@ -132,3 +135,8 @@ Queste impostazioni si applicano solo ai dispositivi Samsung KNOX Standard.
     - **Aggiungi app gestite**.
 - **Pulsante Sospensione schermo** - Abilita o disabilita il pulsante di sospensione dello schermo del dispositivo.
 - **Pulsanti volume**: abilita o disabilita l'uso dei pulsanti del volume del dispositivo.
+
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Continuare con le istruzioni in [Come configurare le impostazioni relative alle restrizioni dei dispositivi](device-restrictions-configure.md) per creare e quindi assegnare il profilo di restrizione del dispositivo.

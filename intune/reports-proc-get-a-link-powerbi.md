@@ -14,17 +14,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9d99b71b9f84eea45ae597ed0f69010f6e95805
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Connettersi al data warehouse con Power BI
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-È possibile scaricare un file per l'uso con Microsoft Power BI che consente di caricare report interattivi, generati in modo dinamico per il tenant di Intune. Il file di Power BI del data warehouse (PBIX) contiene le impostazioni di connessione al tenant e i seguenti report e grafici di esempio: 
+È possibile scaricare un file per l'uso con Microsoft Power BI che consente di caricare report interattivi, generati in modo dinamico per il tenant di Intune. Il file di Power BI del data warehouse (PBIX) contiene le impostazioni di connessione al tenant e i seguenti report e grafici di esempio:  
 
   -  Dispositivi
   -  Registrazione
@@ -45,6 +45,9 @@ Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power B
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Caricare i dati e i report usando il file di Power BI (PBIX)
 
 Il file di Power BI (PBIX) contiene informazioni di connessione per il tenant e un set di report predefiniti in base al modello di dati del data warehouse. Aprire il file in Power BI Desktop e accedere a Azure AD. Il report carica i dati dal tenant di Intune.
+
+> [!Important]  
+> Ogni file di Power BI (pbix) potrebbe essere diverso a seconda della posizione del tenant. Se si gestiscono più tenant di Intune, assicurarsi di usare il file scaricato dal portale di Azure mentre si è connessi al tenant.  
 
 1.  Accedere al portale di Azure e scegliere **Monitoraggio e gestione** > **Intune**. È anche possibile cercare risorse per **Intune**.  
 2.  Aprire il pannello **API data warehouse di Microsoft Intune (anteprima)**.
