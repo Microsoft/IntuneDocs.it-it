@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>Abilitare BYOD con Intune
 
@@ -75,14 +75,14 @@ Con Intune è molto semplice:
 * [Distribuire app dello Store ai dispositivi gestiti](apps-deploy.md)
 * Specificare app di destinazione per i dispositivi non gestiti tramite il sito Web del portale aziendale
 
-Intune consente inoltre di gestire e distribuire le app acquistate con contratti multilicenza dall'App Store di iOS e da Windows Store per le aziende. In questo modo, è possibile ridurre il carico amministrativo associato al monitoraggio delle app acquistate con Volume Purchase Program.
+Intune consente anche di gestire e distribuire le app acquistate con contratti multilicenza dall'App Store di iOS e da Microsoft Store per le aziende. In questo modo, è possibile ridurre il carico amministrativo associato al monitoraggio delle app acquistate con Volume Purchase Program.
 
 > [!TIP]
 > È possibile [configurare Single Sign-On (SSO) con Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). SSO consente agli utenti di accedere alle app con il nome utente e la password di dominio usati in locale. È inoltre possibile [fornire l'accesso basato su Internet alle app Web ospitate in locale](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) usando il proxy dell'applicazione Azure Active Directory.
 
 -   [Gestire le app acquistate tramite Volume Purchase Program per dispositivi iOS](vpp-apps-ios.md). Per acquistare più licenze per app iOS, è necessario usare [Volume Purchase Program di Apple per le aziende](http://www.apple.com/business/vpp/). È necessario configurare un account VPP di Apple dal sito Web Apple e caricare il token VPP di Apple in Intune. È quindi possibile sincronizzare le informazioni relative a Volume Purchase Program con Intune e tenere traccia dell'uso delle app acquistate con VPP.
 
--   [Gestire le app acquistate da Windows Store per le aziende](windows-store-for-business.md). In [Windows Store per le aziende](https://www.microsoft.com/business-store) è possibile trovare e acquistare app per l'organizzazione, singolarmente o con Volume Purchase Program. Collegando lo Store a Intune, è possibile gestire dal portale di Intune le app acquistate con Volume Purchase Program.
+-   [Gestire le app acquistate da Microsoft Store per le aziende](windows-store-for-business.md). In [Microsoft Store per le aziende](https://www.microsoft.com/business-store) è possibile trovare e acquistare app per l'organizzazione, singolarmente o con Volume Purchase Program. Collegando lo Store a Intune, è possibile gestire dal portale di Intune le app acquistate con Volume Purchase Program.
 
 ## <a name="protect-company-data"></a>Proteggere i dati aziendali
 
@@ -105,10 +105,10 @@ Con i criteri di protezione delle applicazioni di Intune è possibile scegliere 
 
 Usare i [criteri di Windows Information Protection (WIP)](app-protection-policies-configure-windows-10.md) per eseguire la stessa operazione per i dispositivi Windows 10 gestiti. Questi criteri possono essere usati senza interferire con l'esperienza del dipendente. Non richiedono modifiche dell'ambiente di rete o di altre app.
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Cancellare i dati aziendali mantenendo intatti i dati personali
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Rimuovere i dati aziendali mantenendo intatti i dati personali
 
-Quando un dispositivo non viene più usato per lavoro, viene reimpiegato o risulta semplicemente mancante, è necessario poter rimuovere le app e i dati aziendali dal dispositivo. A tale scopo, è possibile usare le funzionalità di cancellazione selettiva e completa di Intune. Gli utenti possono anche cancellare in remoto i dati dai dispositivi personali dal portale aziendale di Intune, se i dispositivi sono registrati in Intune.
+Quando un dispositivo non viene più usato per lavoro, viene reimpiegato o risulta semplicemente mancante, è necessario poter rimuovere le app e i dati aziendali dal dispositivo. A tale scopo, è possibile usare le funzionalità di Intune per rimuovere i dati aziendali e ripristinare le impostazioni predefinite. Gli utenti possono anche ripristinare in remoto i dispositivi personali dal portale aziendale di Intune, se i dispositivi sono registrati in Intune.
 
-Una [cancellazione completa](devices-wipe.md) ripristina le impostazioni predefinite di un dispositivo e rimuove i dati e le impostazioni dell'utente. Una [cancellazione selettiva](devices-wipe.md#selective-wipe) rimuove solo i dati aziendali dal dispositivo, mantenendo invariati i dati personali degli utenti.
+Il [ripristino delle impostazioni predefinite](devices-wipe.md) consente di ripristinare le impostazioni predefinite di fabbrica di un dispositivo, di rimuovere i dati e le impostazioni dell'utente, nonché di rimuovere il dispositivo dalla gestione di Intune. La funzionalità [Rimuovi i dati aziendali](devices-wipe.md#remove-company-data) rimuove solo i dati aziendali dal dispositivo, mantenendo invariati i dati personali degli utenti.
 
-Una volta avviata, il dispositivo inizia immediatamente il processo di cancellazione selettiva per essere rimosso dalla gestione. Al termine del processo, tutti i dati aziendali vengono eliminati e il nome del dispositivo viene rimosso dal portale di Intune. Questo termina il ciclo di vita della gestione dei dispositivi mobili.
+Una volta avviato, il dispositivo inizia immediatamente il processo di ripristino. Al termine del processo, tutti i dati aziendali vengono eliminati e il nome del dispositivo viene rimosso da Intune. Questo termina il ciclo di vita della gestione dei dispositivi mobili.

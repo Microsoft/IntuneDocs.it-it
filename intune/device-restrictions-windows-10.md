@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows 10 e versioni successive in Microsoft Intune
 
@@ -72,7 +72,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
 ## <a name="privacy"></a>Privacy
 
--   **Personalizzazione dell'input**: non consente l'uso di servizi di riconoscimento vocale basati sul cloud per Cortana, app di dettatura o app di Windows Store. Se si consentono questi servizi, Microsoft potrebbe raccogliere dati vocali per migliorare il servizio.
+-   **Personalizzazione dell'input**: non consente l'uso di servizi di riconoscimento vocale basati sul cloud per Cortana, app di dettatura o app di Microsoft Store. Se si consentono questi servizi, Microsoft potrebbe raccogliere dati vocali per migliorare il servizio.
 -   **Accettazione automatica delle richieste di associazione e di consenso utente sulla privacy**: consente a Windows di accettare automaticamente messaggi di associazione e consenso sulla privacy durante l'esecuzione di app.
 
 
@@ -91,12 +91,12 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 ## <a name="app-store"></a>App Store
 
 -   **App Store (solo dispositivi mobili)** - Consente o blocca l'uso dell'App Store nei dispositivi Windows 10 Mobile.
--   **Aggiorna automaticamente le app dallo Store**: consente l'aggiornamento automatico delle app installate da Windows Store.
+-   **Aggiorna automaticamente le app dallo Store**: consente l'aggiornamento automatico delle app installate da Microsoft Store.
 -   **Installazione di app attendibile**: consente il trasferimento locale delle app con certificato attendibile.
 -   **Sblocco dallo sviluppatore**: consente la modifica delle impostazioni da parte degli sviluppatori Windows, ad esempio consentire all'utente finale di modificare le app trasferite localmente.
 -   **Dati app utente condivisi**: consente alle app di condividere dati tra utenti diversi dello stesso dispositivo.
 -   **Usa solo lo Store privato**: consente agli utenti finali di scaricare app da uno Store privato.
--   **Avvio di app originate dallo Store**: disabilita tutte le app preinstallate nel dispositivo o scaricate da Windows Store.
+-   **Avvio di app originate dallo Store**: disabilita tutte le app preinstallate nel dispositivo o scaricate da Microsoft Store.
 -   **Installa i dati dell'app nel volume di sistema**: impedisce alle app di archiviare dati nel volume di sistema del dispositivo.
 -   **Installa le app nell'unità di sistema**: impedisce alle app di archiviare dati nell'unità di sistema del dispositivo.
 -   **Game DVR (solo desktop)**: configura se la registrazione e la trasmissione dei giochi sono consentite.
