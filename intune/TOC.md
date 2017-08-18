@@ -17,11 +17,12 @@
 ## [Problemi noti](known-issues.md)
 ## [Ottenere supporto](get-support.md)
 
-# [Introduzione](get-started-evaluation.md)
-## [Creare un gruppo](get-started-groups.md)
+# [Introduzione a Intune](get-started-evaluation.md)
+## [Spostamenti nel portale di Azure](get-started-azure.md)
 ## [Creare un utente](get-started-users.md)
-## [Registrare i dispositivi](get-started-enroll.md)
+## [Creare un gruppo](get-started-groups.md)
 ## [Assegnare criteri](get-started-policies.md)
+## [Registrare i dispositivi](get-started-enroll.md)
 ## [Assegnare le app](get-started-apps.md)
 
 
@@ -74,6 +75,7 @@
 #### [Restrizioni](enrollment-restrictions-set.md)
 #### [Certificato push MDM Apple](apple-mdm-push-certificate-get.md)
 #### [Identificatori aziendali](corporate-identifiers-add.md)
+#### [Multi-Factor Authentication](multi-factor-authentication.md)
 #### [Manager di registrazione dispositivi](device-enrollment-manager-enroll.md)
 #### [Eseguire il mapping di dispositivi a gruppi](device-group-mapping.md)
 ### Impostare la registrazione di Windows
@@ -290,8 +292,8 @@
 ### [Componente Xamarin per Intune App SDK](app-sdk-xamarin.md)
 ## [Come usare le API Graph di Intune](intune-graph-apis.md)
 ## [API Graph di Intune](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-## [API data warehouse di Intune](reports-nav-intune-date-warehouse.md)
-<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+## [API data warehouse di Intune](reports-nav-intune-data-warehouse.md)
+### [Recuperare dati dall'API data warehouse con un client REST](reports-proc-data-rest.md)
 ### [Endpoint dell'API data warehouse](reports-api-url.md)
 ### [Modello di dati del data warehouse](reports-ref-data-model.md)
 #### [Informazioni di riferimento per l'entità Date](reports-ref-date.md)
@@ -300,6 +302,6 @@
 #### [Informazioni di riferimento per le entità della categoria Devices](reports-ref-devices.md)
 #### [Informazioni di riferimento per le entità della categoria Application](reports-ref-application.md)
 #### [Informazioni di riferimento per le entità della categoria Policy](reports-ref-policy.md)
-<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) -->
 
 # [Glossario](intune-glossary.md)
