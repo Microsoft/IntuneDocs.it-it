@@ -263,7 +263,7 @@
 ### [Come ottenere le app per Windows](end-user-apps-windows.md)
 
 # Monitorare e risolvere i problemi
-## [Usare il ruolo di operatore helpdesk](help-desk-operators.md)
+## [Aiutare gli utenti nella risoluzione dei problemi](help-desk-operators.md)
 ## [Usare il data warehouse di Intune](reports-nav-create-intune-reports.md)
 ### [Connettersi al data warehouse con Power BI](reports-proc-get-a-link-powerbi.md)
 
