@@ -175,7 +175,6 @@
 ### [Configurare le impostazioni di iOS relative alla formazione](education-settings-configure-ios.md)
 ### [Configurare i dispositivi condivisi iOS per la formazione](education-settings-configure-ios-shared.md)
 ### [Configurare i criteri di aggiornamento per iOS](software-updates-ios.md)
-### [Configurare le impostazioni di Windows Update for Business](windows-update-for-business-configure.md)
 ### [Configurare i certificati](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
@@ -237,7 +236,7 @@
 <!-- ### Protect devices with remote actions -->
 
 ## [Gestire i ruoli](role-based-access-control.md)
-
+## [Gestire gli aggiornamenti software](windows-update-for-business-configure.md)
 
 ## [Gestire i PC con l'agente software](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [Confrontare le modalità di gestione dei PC](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
