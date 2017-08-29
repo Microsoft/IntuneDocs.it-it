@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5d5d8e0500a0ee928b1037a978f6d4dadab71495
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: ba953f1f471cc8bdbfdadad75c8f4eeb8acc2279
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2017"></a>Edizione anticipata per Microsoft Intune - Agosto 2017
 
@@ -57,15 +57,12 @@ Vengono aggiunte nuove [impostazioni di restrizione dei dispositivi](device-rest
 È possibile specificare l'app in base all'URL, al nome del pacchetto o dall'elenco di app che si gestiscono.
 
 ### <a name="new-settings-for-windows-10-device-restriction-profile"></a>Nuove impostazioni per il profilo di restrizione dei dispositivi Windows 10
-<!--- 978575, 1308849, 1308850 -->
+<!--- 978575, 1308849, -->
 Sono state aggiunte nuove impostazioni per il profilo di restrizione dei dispositivi Windows 10 nella categoria Windows Defender SmartScreen.
 
 Per informazioni dettagliate sul profilo di restrizione dei dispositivi Windows 10, vedere [Windows 10 and later device restriction settings]( device-restrictions-windows-10.md) (Impostazioni di restrizione del dispositivo Windows 10 e versioni successive).
 
-### <a name="new-device-restriction-settings-for-windows-10------1063965---"></a>Nuove impostazioni relative alle restrizioni dei dispositivi per Windows 10 <!-- 1063965 -->
-Sono state aggiunte nuove impostazioni per il [profilo di restrizione dei dispositivi Windows 10](/intune/device-restrictions-windows-10) nelle categorie seguenti:
-- Windows Defender SmartScreen
-- App Store
+
 
 
 ### <a name="android-for-work-support-for-lookout----1087312---"></a>Supporto di Android for Work per Lookout <!-- 1087312 -->   
@@ -120,8 +117,6 @@ Gli utenti finali potranno presto non avere l'obbligo di registrare il dispositi
 ### <a name="improved-error-message-for-when-a-user-reaches-the-maximum-number-of-devices-allowed-to-enroll----1270370---"></a>Messaggio di errore migliorato quando un utente raggiunge il numero massimo di dispositivi di cui è consentita la registrazione <!-- 1270370 -->
 Invece di un messaggio di errore generico, gli utenti finali vedranno un messaggio di errore descrittivo e interattivo: "You have enrolled the maximum number of devices allowed by your IT admin. Please remove an enrolled device or get help from your IT admin." (È stato raggiunto il numero massimo di dispositivi consentiti dall'amministratore IT. Rimuovere un dispositivo registrato o richiedere assistenza all'amministratore IT.)
 
-### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Nuova esperienza di accesso per gli utenti dell'app Portale aziendale per Android e gli utenti dei criteri di protezione delle app <!-- 621669 -->
-Gli utenti finali potranno accedere alle app, gestire i dispositivi e visualizzare le informazioni di contatto IT tramite l'app Portale aziendale per Android senza registrare i dispositivi Android. Inoltre, se un utente finale usa già un'app protetta dai criteri di Protezione app di Intune e avvia l'app Portale aziendale per Android, l'utente finale non riceverà più la richiesta di registrare il dispositivo. 
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>Comunicare agli utenti finali quali informazioni sui dispositivi possono essere visualizzate per iOS<!--739894-->
 Verrà aggiunta l'opzione **Ownership Type** (Tipo di proprietà) nella schermata Dettagli dispositivo nell'app Portale aziendale per iOS. In questo modo gli utenti possono ottenere ulteriori informazioni sulla privacy direttamente da questa pagina dalla documentazione finale di Intune. Potranno accedere a queste informazioni anche nella schermata Informazioni su.
