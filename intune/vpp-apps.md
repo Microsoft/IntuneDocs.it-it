@@ -15,11 +15,11 @@ ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8f938e81740d1bb08e0e9995cab94329c2fe5e7
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: fced0a52db719fe2228d6cd91786b7de8f539f57
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Gestire le app e i libri acquistati con Volume Purchase Program con Microsoft Intune
 
@@ -33,8 +33,8 @@ Microsoft Intune consente di gestire le app e i libri acquistati tramite questo 
 
 ## <a name="which-types-of-apps-and-books-can-you-manage"></a>Quali tipi di app e libri è possibile gestire?
 
-Intune attualmente consente di gestire le app e i libri acquistati con contratti multilicenza dallo store iOS e di gestire le app acquistate da Windows Store per le aziende. Per informazioni su come gestire le app concesse in licenza da ognuno degli store, scegliere uno degli argomenti seguenti:
+Intune attualmente consente di gestire le app e i libri acquistati con contratti multilicenza dallo store iOS e di gestire le app acquistate da Microsoft Store per le aziende. Per informazioni su come gestire le app concesse in licenza da ognuno degli store, scegliere uno degli argomenti seguenti:
 
 - [Manage iOS apps you purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md) (Gestire le app iOS acquistate tramite Volume Purchase Program con Microsoft Intune)
-- [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](windows-store-for-business.md) (Gestire le app acquistate da Windows Store per le aziende tramite Volume Purchase Program con Microsoft Intune)
+- [Gestire le app acquistate con Volume Purchase Program da Microsoft Store per le aziende](windows-store-for-business.md)
 - [Come gestire eBook per iOS](vpp-ebooks-ios.md)

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3597af6117832adab40a2d6213ed4e2a6a9f338e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5278179f22d174de6e97aa990bbe8761d8c8f8f8
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Riavviare i dispositivi in remoto con Intune
 
@@ -27,10 +27,22 @@ ms.lasthandoff: 07/01/2017
 
 L'azione del dispositivo **Riavvia** causa il riavvio del dispositivo scelto. Il proprietario del dispositivo non viene avvisato automaticamente del riavvio, pertanto potrebbe perdere il lavoro.
 
+## <a name="supported-platforms"></a>Piattaforme supportate
+
+- Windows: funzionalità supportata in Windows 8.1 e versioni successive
+- Windows Phone: funzionalità supportata in Windows Phone 8.1 e versioni successive
+- iOS: funzionalità non supportata
+- macOS: funzionalità non supportata
+- Android: funzionalità non supportata
+
+## <a name="how-to-restart-a-device"></a>Come riavviare un dispositivo
+
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
 4. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.
 5. Nell'elenco dei dispositivi gestiti scegliere un dispositivo e quindi scegliere l'azione remota del dispositivo **Riavvia**.
+
+## <a name="next-steps"></a>Passaggi successivi
 
 Per visualizzare lo stato dell'azione appena eseguita, scegliere **Azioni del dispositivo** nel pannello **Dispositivi e gruppi**.

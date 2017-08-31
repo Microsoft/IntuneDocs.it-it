@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c05b2257fe03cd23ad5ba71a3fee217cd4802650
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
@@ -87,7 +87,7 @@ Il carico di lavoro **App per dispositivi mobili** contiene numerose informazion
 
 ### <a name="monitor"></a>Monitoraggio
 - **App con licenza**: consente di visualizzare, assegnare e monitorare le app acquistate con Volume Purchase Program dagli App Store.
-    - [Applicazioni acquistate con Volume Purchase Program da Windows Store per le aziende](windows-store-for-business.md)
+    - [App acquistate con Volume Purchase Program da Microsoft Store per le aziende](windows-store-for-business.md)
 - **Discovered Apps** (App individuate): mostra tutte le applicazioni assegnate da Intune e installate su un dispositivo.
 - **App Install Status** (Stato installazione app): mostra lo stato di un'assegnazione di un'app creata.
 - **Stato protezione app**: mostra lo stato dei criteri di protezione delle app per un utente selezionato.
@@ -97,7 +97,7 @@ Per informazioni dettagliate, vedere [Eseguire il monitoraggio delle app](apps-m
 ### <a name="setup"></a>Installazione
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Windows Store per le aziende**: consente di configurare l'integrazione di Windows Store per le aziende. In seguito è possibile sincronizzare le applicazioni acquistate con Intune, assegnarle e monitorare l'uso delle licenze.
-    - [Applicazioni acquistate con Volume Purchase Program da Windows Store per le aziende](windows-store-for-business.md)
+- **Microsoft Store per le aziende**: consente di configurare l'integrazione di Microsoft Store per le aziende. In seguito è possibile sincronizzare le applicazioni acquistate con Intune, assegnarle e monitorare l'uso delle licenze.
+    - [App acquistate con Volume Purchase Program da Microsoft Store per le aziende](windows-store-for-business.md)
 - **Personalizzazione del portale aziendale**: consente di personalizzare il portale aziendale con il marchio della società.
     - [Company portal configuration](company-portal-app.md) (Configurazione del Portale aziendale)

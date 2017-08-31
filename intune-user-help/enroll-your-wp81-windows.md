@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 307999a7bb18a7b33d111bec212922558a5e10bf
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Registrare il dispositivo Windows Phone 8.1 in Intune
 
@@ -29,11 +29,11 @@ Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile regis
 
 Per registrare il dispositivo Phone 8.1 in Intune, seguire le istruzioni valide per la società o l'istituto di istruzione:
 
--   [Se la società consente di usare l'app Portale aziendale da Windows Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [Se la società consente di usare l'app Portale aziendale da Microsoft Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [Se non è consentito accedere a Windows Store dal dispositivo Windows Phone o se non si ha un account Microsoft](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [Se non è consentito accedere a Microsoft Store dal dispositivo Windows Phone o se non si ha un account Microsoft](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>Se la società consente di usare il Portale aziendale di Windows Store
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>Se la società consente di usare l'app Portale aziendale da Microsoft Store
 Installare l'app Portale aziendale nel dispositivo:
 
 1.  Toccare **Start** &gt; **Store**.
@@ -72,7 +72,7 @@ Registrare il dispositivo:
 
     ![Schermata di aggiunta account](./media/WP81-enroll-4-account-added.png)
 
-## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Se non è consentito accedere a Windows Store dal telefono Windows o se non si ha un account Microsoft
+## <a name="if-you-are-not-allowed-to-access-the-microsoft-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Se non è consentito accedere a Microsoft Store dal dispositivo Windows Phone o se non si ha un account Microsoft
 
 1.  Toccare **Impostazioni** &gt; **area di lavoro**.
 

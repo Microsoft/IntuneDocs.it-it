@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,23 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3688eef68fc9dcfced976db02c8d50126fa30da8
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: 9cf2549852c5949ff1c95af12b40f59136d56e34
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Reimpostare il passcode nei dispositivi Windows integrati con il servizio di reimpostazione PIN tramite Intune
 
 La funzionalità di reimpostazione del passcode per i dispositivi Windows si integra con il servizio di reimpostazione PIN per consentire di generare un nuovo passcode per i dispositivi che eseguono Windows 10 Mobile. I dispositivi devono eseguire Windows 10 Creators Update o versioni successive.
+
+## <a name="supported-platforms"></a>Piattaforme supportate
+
+- Windows: funzionalità supportata in Windows 10 Creators Update e versioni successive (aggiunto ad Azure AD)
+- Windows Phone: funzionalità non supportata
+- iOS: funzionalità non supportata
+- macOS: funzionalità non supportata
+- Android: funzionalità non supportata
 
 
 ## <a name="before-you-start"></a>Prima di iniziare
@@ -40,13 +48,14 @@ Prima che si possa reimpostare in modalità remota il passcode nei dispositivi W
 
 ### <a name="configure-windows-devices-to-use-pin-reset"></a>Configurare i dispositivi Windows per usare la reimpostazione PIN
 
-Per configurare la reimpostazione PIN nei dispositivi Windows gestiti, usare i [criteri di dispositivo personalizzato per Windows 10 in Intune](custom-settings-windows-10.md) per abilitare la funzionalità. Configurare i criteri usando i provider del servizio di configurazione (CSP) dei criteri di Windows seguenti:
+Per configurare la reimpostazione PIN nei dispositivi Windows gestiti, usare i [criteri di dispositivo personalizzato per Windows 10 in Intune](custom-settings-windows-10.md) per abilitare la funzionalità. Configurare i criteri usando il provider del servizio di configurazione (CSP) dei criteri di Windows seguente:
 
 
-- **Per gli utenti** - **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
-- **Per i dispositivi** - **./Device/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
+- **Per i dispositivi** - **./Device/Vendor/MSFT/PassportForWork/*ID tenant*/Policies/EnablePinRecovery**
 
-Entrambi i valori per questi CSP devono essere impostati su **True**.
+*ID tenant* fa riferimento all'ID di directory di Azure Active Directory che è possibile ottenere dalla pagina **Proprietà** di Azure Active Directory.
+
+Impostare il valore per questo CSP su **True**.
 
 ## <a name="steps-to-reset-the-passcode"></a>Passaggi per reimpostare il passcode
 
