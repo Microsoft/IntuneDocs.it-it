@@ -1,7 +1,7 @@
 ---
 title: Disconnettere l'utente di un dispositivo iOS con Intune
 titleSuffix: Intune on Azure
-description: Informazioni su come disconnettere l'utente corrente di un dispositivo iOS con Intune.
+description: Informazioni su come disconnettere l'utente corrente di un dispositivo iOS con Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc01055995747a74782680ff2f64fb0bec6f4883
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: 1de2069b7b25ee5e5c21a8e4caa7512f13d4ca0e
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Disconnettere l'utente corrente nei dispositivi iOS gestiti da Intune
 
@@ -26,7 +26,17 @@ ms.lasthandoff: 07/14/2017
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-L'azione **Disconnetti l'utente corrente** disconnette l'utente corrente in un dispositivo iPad condiviso configurato per la gestione dell'app Classroom iOS con un [profilo di formazione iOS](education-settings-configure-ios.md). 
+L'azione **Disconnetti l'utente corrente** disconnette l'utente corrente in un dispositivo iPad condiviso configurato per la gestione dell'app Classroom iOS con un [profilo Istruzione iOS](education-settings-configure-ios.md). 
+
+## <a name="supported-platforms"></a>Piattaforme supportate
+
+- Windows: funzionalità non supportata
+- Windows Phone: funzionalità non supportata
+- iOS: supportate in iOS 9.3 e versioni successive (solo in dispositivi iPad condivisi)
+- macOS: funzionalità non supportata
+- Android: funzionalità non supportata
+
+## <a name="how-to-logout-the-current-user"></a>Come disconnettere l'utente corrente
 
 1.  Accedere al portale Azure.
 2.  Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.

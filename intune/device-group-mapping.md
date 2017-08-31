@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e7c46a0bab45223293b73f8eaa2f8b40850cd43
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6c5d97499545d0ad3899f28ed4e88eb4dc1fe734
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="map-device-groups"></a>Mappare gruppi di dispositivi
 
@@ -43,10 +43,10 @@ Le categorie dei dispositivi usano il flusso di lavoro seguente:
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>Passaggio 1: creare categorie di dispositivi nel pannello Intune del portale di Azure
 1. Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Registra i dispositivi**.
-3. Nel pannello **Registrazione** scegliere **Categorie di dispositivi**.
+3. Nel pannello **Intune** scegliere **Registrazione del dispositivo**.
+3. Nel pannello **Registrazione del dispositivo** scegliere **Categorie di dispositivi**.
 4. Nella pagina **Categorie di dispositivi** scegliere **Crea** per aggiungere una nuova categoria.
-5. Nel pannello successivo immettere un **nome** per la nuova categoria e una **descrizione** facoltativa.
+5. Nel pannello successivo immettere un **Nome** per la nuova categoria e una **Descrizione** facoltativa.
 6. Al termine, fare clic su **Crea**. La categoria appena creata verrà visualizzata nell'elenco delle categorie.
 
 Il nome della categoria di dispositivi verrà usato per la creazione dei gruppi di sicurezza di Azure Active Directory nel passaggio 2.

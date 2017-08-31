@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f55d99ccf2fb5263ac9c7e0c4c8d0db8208456f5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 90ce9ae6c1f48b6a42cf62f8873621499ba05256
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="whats-new-in-the-intune-classic-console---previous-months"></a>Novità della console di Intune classica - mesi precedenti
 
@@ -232,8 +232,8 @@ A partire da marzo, l'app Portale aziendale per Android seguirà le [linee guida
 
 Le immagini di prima e dopo sono disponibili nella [pagina degli aggiornamenti dell'interfaccia utente](whats-new-app-ui.md).
 
-### <a name="associate-multiple-management-tools-with-the-windows-store-for-business---926135--"></a>Associare più strumenti di gestione con Windows Store per le aziende <!--926135-->
-Se si usa più di uno strumento di gestione per distribuire le app di Windows Store per le aziende, in precedenza era possibile associare soltanto un'app a Windows Store per le aziende. È ora possibile associare più strumenti di gestione allo Store, ad esempio Intune e Configuration Manager. Per informazioni dettagliate, vedere [Gestire le app acquistate in Windows Store per le aziende con Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
+### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>Associare più strumenti di gestione con Microsoft Store per le aziende <!--926135-->
+Se si usa più di uno strumento di gestione per distribuire le app di Microsoft Store per le aziende, in precedenza era possibile associare soltanto un'app a Microsoft Store per le aziende. È ora possibile associare più strumenti di gestione allo Store, ad esempio Intune e Configuration Manager. Per informazioni dettagliate, vedere [Gestire le app acquistate in Microsoft Store per le aziende con Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Novità dell'anteprima pubblica dell'esperienza di amministrazione di Intune in Azure <!--736542-->
 
@@ -346,7 +346,7 @@ __Supporto per le app Intune AV Player, Image Viewer e PDF Viewer non più dispo
 
 __Nuovo portale aziendale di Microsoft Intune disponibile per dispositivi Windows 10__ Microsoft ha rilasciato una nuova app [Portale aziendale di Microsoft Intune per dispositivi Windows 10](https://www.microsoft.com/store/apps/9wzdncrfj3pz). Questa app, che sfrutta il nuovo formato universale di Windows 10, offrirà un'esperienza utente aggiornata all'interno dell'app ed esperienze identiche in tutti i dispositivi Windows 10, sia PC che mobili, senza variazioni alle funzionalità già in uso.
 
-La nuova app consentirà anche agli utenti di sfruttare altre funzionalità della piattaforma come Single Sign-On (SSO) e l'autenticazione basata su certificato nei dispositivi Windows 10. L'app verrà resa disponibile come aggiornamento delle installazioni del portale aziendale di Windows 8.1 e del portale aziendale di Windows Phone 8.1 da Windows Store. Per altre informazioni, vedere [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
+La nuova app consentirà anche agli utenti di sfruttare altre funzionalità della piattaforma come Single Sign-On (SSO) e l'autenticazione basata su certificato nei dispositivi Windows 10. L'app verrà resa disponibile come aggiornamento delle installazioni esistenti dell'app Portale aziendale di Windows 8.1 e l'app Portale aziendale di Windows Phone 8.1 viene installata da Microsoft Windows Store. Per altre informazioni, vedere [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
 
 > [!IMPORTANT]
 > __Un aggiornamento in Intune e Android for Work__ Anche se è possibile distribuire app Android for Work con l'azione __Richiesto__, un'app può essere distribuita solo come __Disponibile__ se è stata eseguita la migrazione dei gruppi di Intune alla nuova esperienza dei gruppi di Azure AD.

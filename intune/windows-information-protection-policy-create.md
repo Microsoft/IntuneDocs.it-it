@@ -15,17 +15,17 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A partire dalla versione 1704 di Intune, è possibile usare i criteri di protezione delle app con Windows 10 in scenari di gestione di applicazioni mobili (MAM) senza registrazione.
+A partire dalla versione 1704 di Intune, è possibile usare i criteri di protezione delle app con Windows 10 per proteggere le app senza registrare i dispositivi.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -39,17 +39,15 @@ Di seguito vengono presentati prima di tutto alcuni concetti fondamentali per l'
 
 ### <a name="types-of-apps"></a>Tipi di app
 
--   **App consigliate**: un elenco precompilato di app (principalmente Microsoft Office) che gli amministratori possono importare facilmente nei criteri.
+-   **App consigliate**: un elenco precompilato di app (principalmente Microsoft Office) che è possibile importare facilmente nei criteri. <!---I really don't know what you mean by "easily import into policy"--->
 
--   **Store apps** (App dello Store): l'amministratore può aggiungere qualsiasi app da Windows Store al criterio.
+-   **App Store**: è possibile aggiungere qualsiasi app da Windows Store al criterio.
 
--   **Windows desktop apps** (App desktop di Windows): l'amministratore può aggiungere qualsiasi app desktop di Windows tradizionale al criterio (ad esempio, exe, dll e così via).
+-   **Windows desktop apps** (App desktop di Windows): è possibile aggiungere qualsiasi app desktop di Windows tradizionale al criterio (ad esempio, exe e dll)
 
 ## <a name="pre-requisites"></a>Prerequisiti
 
-È necessario configurare il provider MAM prima di poter creare un criterio di protezione delle app WIP.
-
--   Altre informazioni su [come configurare il provider MAM con Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+È necessario configurare il provider MAM prima di poter creare un criterio di protezione delle app WIP. Altre informazioni su [come configurare il provider MAM con Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 È inoltre necessario disporre di quanto segue:
 
@@ -58,12 +56,13 @@ Di seguito vengono presentati prima di tutto alcuni concetti fondamentali per l'
 
 > [!IMPORTANT]
 > WIP non supporta più identità e può essere presente una sola identità gestita alla volta.
+<!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## <a name="to-add-a-wip-policy"></a>Per aggiungere criteri WIP
 
-Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri specifici di WIP tramite il [portale Azure](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri specifici di WIP tramite il [portale Azure](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
 
-1.  Passare al dashboard **Gestione di applicazioni mobili di Intune**, scegliere **Tutte le impostazioni** e quindi scegliere **Criteri per le app**.
+1.  Passare al dashboard **Gestione di applicazioni mobili di Intune**, scegliere **Tutte le impostazioni** > **Criteri per le app**.
 
 2.  Nel pannello **Criteri per le app** scegliere **Aggiungi criteri** e quindi immettere i valori seguenti:
 
@@ -77,7 +76,7 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 
 3.  Scegliere **Crea**. Il criterio viene creato e visualizzato nella tabella nel pannello **Criteri per le app**.
 
-## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>Per aggiungere app consigliate all'elenco App consentite
+## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>Per aggiungere app consigliate all'elenco delle app consentite
 
 1.  Nel pannello **Criteri per le app** scegliere il nome del criterio e quindi scegliere **App consentite** nel pannello **Aggiungi criteri**. Verrà aperto il pannello **App consentite** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
 
@@ -85,7 +84,7 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 
 3.  Selezionare tutte le app a cui si vuole concedere l'accesso ai dati aziendali e quindi scegliere **OK**. Il pannello **App consentite** verrà aggiornato con tutte le app selezionate.
 
-## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Aggiungere un'app dello Store all'elenco App consentite
+## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Aggiungere un'app dello Store all'elenco delle app consentite
 
 **Per aggiungere un'app dello Store**
 
@@ -105,7 +104,7 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 > [!NOTE]
 > Per aggiungere più app dello Store contemporaneamente, è possibile fare clic sul menu **(...)**  alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
 
-## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Aggiungere un'app desktop all'elenco App consentite
+## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Aggiungere un'app desktop all'elenco delle app consentite
 
 **Per aggiungere un'app desktop**
 
@@ -120,65 +119,64 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 > [!NOTE]
 > Per aggiungere più **app desktop** contemporaneamente, è possibile fare clic sul menu **(...)** alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
 
-## <a name="windows-information-protection-wip-learning"></a>Apprendimento WIP (Windows Information Protection)
-
+## <a name="wip-learning"></a>Apprendimento WIP
+<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 Dopo aver aggiunto le app che si vuole proteggere con WIP, è necessario applicare una modalità di protezione usando **Apprendimento WIP**.
 
 ### <a name="before-you-begin"></a>Prima di iniziare
 
-Apprendimento WIP (Windows Information Protection) è un report che consente agli amministratori di monitorare le app sconosciute WIP. Con app sconosciute si intendono quelle non distribuite dal reparto IT dell'organizzazione. L'amministratore può esportare queste app dal report e quindi aggiungerle ai criteri WIP per evitare disservizi con effetti sulla produttività prima dell'applicazione di WIP in modalità "Nascondi sostituzioni".
+Apprendimento WIP è un report che consente di monitorare le app sconosciute WIP. Con app sconosciute si intendono quelle non distribuite dal reparto IT dell'organizzazione. È possibile esportare queste app dal report e quindi aggiungerle ai criteri WIP per evitare disservizi con effetti sulla produttività prima dell'applicazione di WIP in modalità "Nascondi sostituzioni".
 
 È consigliabile iniziare con **Invisibile all'utente** o **Consenti sostituzioni** mentre si verifica con un piccolo gruppo di avere incluso le app appropriate nell'elenco delle app consentite. Quando si è pronti, è possibile passare al criterio di applicazione finale, ovvero **Nascondi sostituzioni**.
 
-#### <a name="what-the-protection-modes-are"></a>Caratteristiche delle modalità di protezione
+### <a name="what-are-the-protection-modes"></a>Caratteristiche delle modalità di protezione
 
-- **Nascondi sostituzioni:**
-    - WIP rileva eventuali procedure di condivisione dei dati non appropriate e impedisce all'utente di completare l'azione.
-    - Può trattarsi, ad esempio, della condivisione di informazioni tra app non protette dall'azienda e della condivisione di dati aziendali tra altri utenti e dispositivi all'esterno dell'organizzazione.
-<br></br>
+#### <a name="hide-overrides"></a>Nascondi sostituzioni
+WIP rileva eventuali procedure di condivisione dei dati non appropriate e impedisce all'utente di completare l'azione. Può trattarsi, ad esempio, della condivisione di informazioni tra app non protette dall'azienda e della condivisione di dati aziendali tra altri utenti e dispositivi all'esterno dell'organizzazione.
 
-- **Consenti sostituzioni:**
-    - WIP rileva eventuali procedure di condivisione dei dati non appropriate e avvisa gli utenti nel caso eseguano operazioni considerate potenzialmente non sicure.
-    - Questa modalità consente tuttavia all'utente di ignorare il criterio e di condividere i dati, con registrazione dell'azione nel log di controllo.
-<br></br>
-- **Invisibile all'utente:**
-    - WIP viene eseguito in modo invisibile all'utente e registra attività di condivisione dei dati non appropriate senza bloccare alcuna operazione che richiederebbe l'interazione con il dipendente in modalità Consenti sostituzioni.
-    - Le azioni non consentite, ad esempio app che tentano l'accesso in modo non appropriato a una risorsa di rete o a dati protetti da WIP, vengono bloccate.
-<br></br>
-- **Disattivato (scelta non consigliata):**
-    - WIP viene disattivato e non consente di proteggere oppure di controllare i dati.
-    - Dopo la disattivazione di WIP, viene effettuato un tentativo di decrittografare gli eventuali file contrassegnati da WIP nei dischi collegati in locale. Tenere presente che le informazioni precedenti relative a decrittografia e criteri non vengono riapplicate automaticamente se si riattiva la protezione WIP.
+#### <a name="allow-overrides"></a>Consenti sostituzioni
+WIP rileva eventuali procedure di condivisione dei dati non appropriate e avvisa gli utenti nel caso eseguano operazioni considerate potenzialmente non sicure. Questa modalità consente tuttavia all'utente di ignorare il criterio e di condividere i dati, con registrazione dell'azione nel log di controllo.
 
-### <a name="to-add-a-protection-mode"></a>Per aggiungere una modalità di protezione
+#### <a name="silent"></a>Invisibile all'utente
+WIP viene eseguito in modo invisibile all'utente e registra attività di condivisione dei dati non appropriate senza bloccare alcuna operazione che richiederebbe l'interazione con il dipendente in modalità Consenti sostituzioni. Le azioni non consentite, ad esempio app che tentano l'accesso in modo non appropriato a una risorsa di rete o a dati protetti da WIP, vengono bloccate.
 
-1.  Nel pannello **Criteri per le app** scegliere il nome del criterio e quindi scegliere **Impostazioni obbligatorie** nel pannello **Aggiungi criteri**.
+#### <a name="off-not-recommended"></a>Disattivato (scelta non consigliata)
+WIP viene disattivato e non consente di proteggere oppure di controllare i dati.
+
+Dopo la disattivazione di WIP, viene effettuato un tentativo di decrittografare gli eventuali file contrassegnati da WIP nei dischi collegati in locale. Tenere presente che le informazioni precedenti relative a decrittografia e criteri non vengono riapplicate automaticamente se si riattiva la protezione WIP.
+
+### <a name="add-a-protection-mode"></a>Aggiungere una modalità di protezione
+
+1.  Nel pannello **Criteri per le app** scegliere il nome del criterio e quindi scegliere **Impostazioni obbligatorie**.
 
     ![Screenshot della modalità di protezione](./media/learning-mode-sc1.png)
 
 1.  Scegliere **Salva**.
 
-### <a name="to-use-wip-learning"></a>Per usare Apprendimento WIP
+### <a name="use-wip-learning"></a>Usare Apprendimento WIP
 
-1. Passare al dashboard di Azure.
+1. Passare al dashboard di Azure. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
 
 2. Scegliere **Altri servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
 3. Scegliere **Intune**. Verrà aperto il **dashboard di Intune**. Scegliere **App per dispositivi mobili**.
 
-4. Scegliere **Apprendimento WIP** nella sezione **Monitoraggio**. Verranno visualizzate le app sconosciute registrate da Apprendimento WIP.
+4. Scegliere **Apprendimento WIP** in **Monitoraggio**. Verranno visualizzate le app sconosciute registrate da Apprendimento WIP.
 
 > [!IMPORTANT]
 > Quando le app sono visualizzate nel report di registrazione di Apprendimento WIP, sarà possibile aggiungerle ai criteri di protezione delle app.
 
-## <a name="to-deploy-your-wip-app-protection-policy"></a>Per distribuire i criteri di protezione delle app WIP
+## <a name="deploy-your-wip-app-protection-policy"></a>Distribuire i criteri di protezione delle app WIP
 
 > [!IMPORTANT]
-> Questa procedura è valida per lo scenario WIP con gestione di applicazioni mobili (MAM) senza registrazione.
+> Queste informazioni si applicano a WIP senza registrazione del dispositivo.
+
+<!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
 Dopo aver creato i criteri di protezione delle app WIP, è necessario distribuirli all'organizzazione tramite MAM.
 
-1.  Nel pannello **Criteri per le app** scegliere il nuovo criterio di protezione per le app, scegliere **Gruppi di utenti** e quindi scegliere **Aggiungi un gruppo di utenti**.
+1.  Nel pannello **Criteri per le app** scegliere il nuovo criterio di protezione per le app, scegliere **Gruppi di utenti** > **Aggiungi un gruppo di utenti**.
 
     Nel pannello **Aggiungi un gruppo di utenti** verrà visualizzato un elenco dei gruppi di utenti composto da tutti i gruppi di sicurezza in Azure Active Directory.
 
-1.  Scegliere il gruppo a cui si vuole applicare il criterio e quindi fare clic su **Seleziona** per distribuire il criterio.
+1.  Scegliere il gruppo a cui si vuole applicare il criterio e quindi scegliere **Seleziona** per distribuire il criterio.

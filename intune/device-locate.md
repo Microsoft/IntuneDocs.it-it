@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80aa0e5afd1f8862b181d455ff6b545e462f90c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8c6035ce5119b618ed63cf817082dd3eedc6eda7
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Individuare dispositivi iOS persi o rubati con Intune
 
@@ -26,6 +26,16 @@ ms.lasthandoff: 07/01/2017
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 L'azione del dispositivo **Individua il dispositivo** consente di visualizzare su una mappa la posizione di un dispositivo iOS rubato o smarrito. Deve trattarsi di un dispositivo iOS di proprietà dell'azienda, registrato con DEP, in cui sia attiva la modalità con supervisione. Prima di usare questa azione, è necessario abilitare la [modalità di dispositivo perso](/intune-azure/manage-devices/lost-mode.md).
+
+## <a name="supported-platforms"></a>Piattaforme supportate
+
+- Windows: funzionalità non supportata
+- Windows Phone: funzionalità non supportata
+- iOS: funzionalità supportata in iOS 9.3 e versioni successive (in modalità di dispositivo perso), con supervisione e di proprietà dell'azienda
+- macOS: funzionalità non supportata
+- Android: funzionalità non supportata
+
+## <a name="how-to-locate-a-lost-or-stolen-device"></a>Come individuare un dispositivo perso o rubato
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
@@ -44,3 +54,8 @@ L'azione del dispositivo **Individua il dispositivo** consente di visualizzare s
 - I dati vengono archiviati per 24 ore e quindi rimossi. Non è possibile rimuoverli manualmente.
 - I dati relativi alla posizione sono crittografati, sia durante il periodo di archiviazione sia quando vengono trasmessi.
 - Quando si configura la modalità di dispositivo perso, nel messaggio da visualizzare nella schermata di blocco è opportuno fornire informazioni che possano consentire a qualcuno che trova il dispositivo di renderlo al proprietario.
+
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Per visualizzare lo stato dell'azione appena eseguita, scegliere **Azioni del dispositivo** nel pannello **Dispositivi e gruppi**.

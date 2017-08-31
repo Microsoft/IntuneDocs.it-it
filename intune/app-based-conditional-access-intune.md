@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0893d511c73e4154c61063d96e26937ea2825467
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9899f08cac650b1fea05370eb52327bc3c204a48
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Accesso condizionale basato su app con Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 07/01/2017
 
 I [criteri di protezione delle app di Intune](app-protection-policy.md) consentono di proteggere i dati aziendali sui dispositivi registrati in Intune. I criteri di protezione delle app possono essere usati anche nei dispositivi di proprietà dei dipendenti non registrati per la gestione in Intune. In questo caso, anche se il dispositivo non viene gestito dall'azienda, è comunque necessario assicurarsi che i dati e le risorse aziendali siano protetti.
 
-L'accesso condizionale basato su app e la gestione delle applicazioni per dispositivi mobili consentono di aggiungere un livello di sicurezza, garantendo che solo le app per dispositivi mobili che supportano i criteri di protezione di Intune possano accedere a Exchange Online e ad altri servizi di Office 365.
+L'accesso condizionale basato su app e la gestione delle app per dispositivi mobili consentono di aggiungere un livello di sicurezza, garantendo che solo le app per dispositivi mobili che supportano i criteri di protezione delle app di Intune possano accedere a Exchange Online e ad altri servizi di Office 365.
 
 > [!NOTE]
 > Un'app gestita è un'app a cui sono applicati criteri di protezione delle app e che può essere gestita da Intune.
@@ -36,8 +36,10 @@ Consentendo solo all'app Microsoft Outlook di accedere a Exchange Online, è pos
 ## <a name="prerequisites"></a>Prerequisiti
 Prima di creare un criterio di accesso condizionale basato su app, sono necessari:
 
-- **Una sottoscrizione di Enterprise Mobility + Security o una sottoscrizione di Azure Active Directory Premium** e gli utenti devono essere licenziatari di EMS o Azure AD.
-    - Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
+- **Enterprise Mobility + Security (EMS)** o una **sottoscrizione Azure Active Directory (AD) Premium**
+- Gli utenti devono avere la licenza per EMS o Azure AD
+
+Per altre informazioni, vedere i [prezzi di Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o i [prezzi di Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## <a name="supported-apps"></a>App supportate
 
@@ -53,24 +55,22 @@ Prima di creare un criterio di accesso condizionale basato su app, sono necessar
 <br></br>
 - **Microsoft Teams**
 
-    > [!NOTE] 
-    > L'accesso condizionale basato su app [supporta anche le app line-of-business](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), ma queste app devono usare l'[autenticazione moderna di Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
+L'accesso condizionale basato su app [supporta anche le app line-of-business (LOB)](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), ma queste app devono usare l'[autenticazione moderna di Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
 
 ## <a name="how-app-based-conditional-access-works"></a>Funzionamento dell'accesso condizionale basato su app
 
 In questo esempio, l'amministratore ha applicato criteri di protezione delle app all'app Outlook, seguiti da una regola di accesso condizionale che aggiunge l'app Outlook a un elenco approvato di app che possono essere usate per l'accesso alla posta elettronica aziendale.
 
-> [!NOTE] 
+> [!NOTE]
 > Per le altre app gestite è possibile usare la struttura del diagramma di flusso riportata di seguito.
 
-![Diagramma di flusso per l'accesso condizionale basato su app con Intune](./media/ca-intune-common-ways-3.png)
+![Diagramma di flusso dell'accesso condizionale basato su app con Intune](./media/ca-intune-common-ways-3.png)
 
 1.  L'utente tenta di eseguire l'autenticazione in Azure AD dall'app Outlook.
 
 2.  L'utente viene reindirizzato all'App Store per installare un'app broker quando tenta di eseguire l'autenticazione per la prima volta. L'app broker può essere Microsoft Authenticator per iOS o il Portale aziendale Microsoft per i dispositivi Android.
 
-    > [!NOTE]
-    > In questo scenario, se gli utenti tentano di usare un'app di posta elettronica nativa, vengono reindirizzati all'App Store per installare l'app Outlook.
+ Se gli utenti tentano di usare un'app di posta elettronica nativa, vengono reindirizzati all'App Store per installare l'app Outlook.
 
 3.  L'app broker viene installata nel dispositivo.
 
@@ -80,7 +80,7 @@ In questo esempio, l'amministratore ha applicato criteri di protezione delle app
 
 6.  L'app broker invia l'ID client dell'app ad Azure AD nell'ambito del processo di autenticazione utente per verificare se è incluso nell'elenco dei criteri approvati.
 
-7.  Azure AD consente all'utente di eseguire l'autenticazione e di usare l'app in base all'elenco dei criteri approvati. Se l'app non è presente nell'elenco dei criteri approvati, Azure AD nega l'accesso all'app.
+7.  Azure AD consente all'utente di eseguire l'autenticazione e di usare l'app in base all'elenco dei criteri approvati. Se l'app non è presente nell'elenco, Azure AD nega l'accesso all'app.
 
 8.  L'app Outlook comunica con il servizio cloud di Outlook per avviare la comunicazione con Exchange Online.
 

@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 812bdf5bde724798289668937ed2502438c524e0
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Come aggiungere app di Windows Store a Microsoft Intune
 
@@ -51,12 +51,12 @@ ms.lasthandoff: 07/01/2017
 L'app creata verrà visualizzata nell'elenco di app da cui è possibile assegnarla ai gruppi selezionati. Per altre informazioni, vedere [Come assegnare app ai gruppi](apps-deploy.md).
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>Assegnare manualmente l'app Portale aziendale di Windows 10
-Gli utenti finali possono installare l'app Portale aziendale da Windows Store per gestire dispositivi e installare app. Se tuttavia per le specifiche esigenze aziendali è richiesta l'assegnazione dell'app Portale aziendale, è possibile assegnare manualmente l'app Portale aziendale di Windows 10 direttamente da Intune, anche se Intune non è integrato con Windows Store per le aziende.
+Gli utenti finali possono installare l'app Portale aziendale da Microsoft Store per gestire dispositivi e installare app. Se tuttavia per le specifiche esigenze aziendali è richiesta l'assegnazione dell'app Portale aziendale, è possibile assegnare manualmente l'app Portale aziendale di Windows 10 direttamente da Intune, anche se Intune non è integrato con Microsoft Store per le aziende.
 
  > [!NOTE]
  > Se si sceglie questa opzione, sarà necessario assegnare manualmente gli aggiornamenti ogni volta che viene rilasciato un aggiornamento dell'app.
 
-1. Accedere al proprio account di [Windows Store per le aziende](https://www.microsoft.com/business-store) e acquisire la versione con **licenza offline** dell'app Portale aziendale.  
+1. Accedere al proprio account di [Microsoft Store per le aziende](https://www.microsoft.com/business-store) e acquisire la versione con **licenza offline** dell'app Portale aziendale.  
 2. Dopo aver acquisito l'app, selezionarla nella pagina **Inventario**.  
 3. Selezionare **Windows 10 all devices** (Windows 10 - tutti i dispositivi) come **Piattaforma**, quindi specificare l'opzione di **Architettura** appropriata ed eseguire il download. Per questa app non è necessario un file di licenza di app.
 ![Immagine dei dettagli del pacchetto per Windows 10 (tutti i dispositivi) e l'architettura X86](./media/Win10CP-all-devices.png)
@@ -93,7 +93,7 @@ Se l'app Portale aziendale di Windows 10 viene firmata e assegnata in questo mod
 Ecco come firmare e assegnare l'app in questo modo:
 
 1. Scaricare lo script di firma di Microsoft Intune per l'app Portale aziendale di Windows 10 dall'indirizzo [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Per l'esecuzione di questo script è necessario che sia installato Windows 10 SDK nel computer host. Per scaricare Windows 10 SDK, visitare [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
-2. Scaricare l'app Portale aziendale di Windows 10 da Windows Store per le aziende, come descritto in precedenza.  
+2. Scaricare l'app Portale aziendale di Windows 10 da Microsoft Store per le aziende, come descritto in precedenza.  
 3. Eseguire lo script per firmare l'app Portale aziendale di Windows 10 con i parametri di input riportati nell'intestazione (descritti nella tabella seguente). Non è necessario passare le dipendenze allo script. Le dipendenze sono necessarie solo quando l'app viene caricata nella console di amministrazione di Intune.
 
 |Parametro | Descrizione|

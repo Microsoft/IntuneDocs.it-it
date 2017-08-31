@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.openlocfilehash: ab52ba70403da5192cd3539dfd6d1e64bd79268c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: dc37cfb782e1d1e1e076d90fef160c2ce910cda4
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registrazione in blocco per dispositivi Windows
 
@@ -36,7 +36,7 @@ Per la registrazione in blocco per dispositivi Windows, è necessario quanto seg
 
 ## <a name="create-a-provisioning-package"></a>Creare un pacchetto di provisioning
 
-1. Scaricare [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22) (Applicazione immagine e configurazione di Windows) da Windows Store.
+1. Scaricare [Progettazione configurazione di Windows](https://www.microsoft.com/store/apps/9nblggh4tx22) da Microsoft Store.
 ![Screenshot e descrizione dallo Store dell'app Applicazione immagine e configurazione di Windows](../media/bulk-enroll-store.png)
 
 2. Aprire l'**Applicazione immagine e configurazione di Windows** e selezionare **Provision desktop devices** (Esegui provisioning dispositivi desktop).

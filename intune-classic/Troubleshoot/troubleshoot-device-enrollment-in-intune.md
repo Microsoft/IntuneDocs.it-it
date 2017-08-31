@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 14407e26a0715f3d5aa8cf570a2109dac7140079
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Intune
 
@@ -159,7 +159,7 @@ La tabella seguente elenca gli errori che potrebbero verificarsi quando gli uten
 |Messaggio di errore|Problema|Risoluzione|
 |---|---|---|
 |**L'amministratore IT deve assegnare la licenza per l'accesso**<br>L'amministratore IT non ha concesso l'accesso per l'uso di questa app. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|Il dispositivo non può essere registrato perché l'account dell'utente non ha la licenza necessaria.|Per poter registrare i dispositivi, è necessario che agli utenti venga assegnata la licenza necessaria. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili designata. Questo errore di Intune viene visualizzato, ad esempio, se Intune è stato designato come autorità di gestione dei dispositivi mobili e l'utente usa una licenza per System Center 2012 R2 Configuration Manager.<br><br>Vedere le informazioni su come [assegnare le licenze di Intune agli account utente](/intune/licenses-assign.md).
-|**L'amministratore IT deve impostare l'autorità MDM<br>L'amministratore IT non ha impostato un'autorità MDM. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|L'autorità di gestione dei dispositivi mobili non è stata definita.|L'autorità di gestione dei dispositivi mobili non è stata designata in Intune. Vedere le informazioni su come [impostare l'autorità di gestione dei dispositivi mobili](/intune/mdm-authority-set.md).|
+|**L'amministratore IT deve impostare l'autorità MDM**<br>L'amministratore IT non ha impostato un'autorità MDM. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|L'autorità di gestione dei dispositivi mobili non è stata definita.|L'autorità di gestione dei dispositivi mobili non è stata designata in Intune. Vedere le informazioni su come [impostare l'autorità di gestione dei dispositivi mobili](/intune/mdm-authority-set.md).|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>I dispositivi non riescono a collegarsi al servizio Intune e vengono visualizzati come "Non integro" nella console di amministrazione di Intune

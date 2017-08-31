@@ -2,8 +2,8 @@
 title: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 description: Creare e distribuire criteri di protezione delle app WIP con Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7aa879307ef3b72660d1ba7b3c3c2f99fc82dc97
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 78352c995311f5b097954ce86098165408d5d810
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -35,6 +35,13 @@ Di seguito vengono presentati prima di tutto alcuni concetti fondamentali per l'
 -   **App consentite:** si tratta delle app che devono essere conformi al criterio.
 
 -   **App escluse**: queste app sono escluse dal criterio e possono accedere ai dati aziendali senza restrizioni.
+
+> [!IMPORTANT]  
+> Intune consiglia di aggiungere l'app Portale aziendale all'elenco delle app escluse per consentire il corretto funzionamento dell'app. A tale scopo, aggiungere l'**app Store** seguente all'elenco **App escluse**:  
+>   - Nome: Portale aziendale  
+>   - Editore: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
+>   - Nome prodotto: Microsoft.CompanyPortal"  
+
 
 ### <a name="types-of-apps"></a>Tipi di app
 

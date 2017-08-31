@@ -11,11 +11,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d668e50b3880bdaf569380fa5a5fd25f5ed4564e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Firmare le app line-of-business per poterle distribuire nei dispositivi Windows con Intune
 
@@ -64,7 +64,7 @@ La procedura seguente consente di ottenere il certificato necessario e di firmar
 
 ## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Esempio: scaricare, firmare e distribuire l'app Portale aziendale per dispositivi Windows
 
-È possibile distribuire l'app Portale aziendale in dispositivi Windows, inclusi dispositivi Windows Phone e Windows 10 Mobile, con Intune invece di eseguire l'installazione da Windows Store. È necessario scaricare l'app Portale aziendale e firmarla con il certificato.  Questa operazione è necessaria solo se gli utenti non utilizzano lo Store aziendale e si desidera distribuire Portale aziendale nei dispositivi Windows Phone 8.1.
+È possibile distribuire l'app Portale aziendale in dispositivi Windows, inclusi dispositivi Windows Phone e Windows 10 Mobile, con Intune invece di eseguire l'installazione da Microsoft Store. È necessario scaricare l'app Portale aziendale e firmarla con il certificato.  Questa operazione è necessaria solo se gli utenti non utilizzano lo Store aziendale e si desidera distribuire Portale aziendale nei dispositivi Windows Phone 8.1.
 
 
 1.  **Scaricare Portale aziendale**
@@ -75,7 +75,7 @@ La procedura seguente consente di ottenere il certificato necessario e di firmar
 
     -   WinPhoneCompanyPortal.ps1: uno script di PowerShell che è possibile usare per firmare il file dell’app Portale aziendale in modo che possa essere distribuita ai dispositivi Windows Phone 8.1
 
-    In alternativa, è possibile scaricare l'app Portale aziendale di Windows Phone 8.1 (pacchetto con licenza offline) o Portale aziendale di Windows 10 (pacchetto con licenza offline) da [Windows Store per le aziende](http://businessstore.microsoft.com/). L'app Portale aziendale dovrà essere acquisita con una licenza offline e il pacchetto appropriato dovrà essere scaricato per l'uso offline. Le voci per la piattaforma Windows 8 e Windows Phone 8 nella selezione fanno riferimento alle controparti 8.1. Per informazioni dettagliate su come eseguire questa operazione con Intune, vedere [Manage apps you purchased from the Windows Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) (Gestire le app acquistate in Windows Store per le aziende).
+    In alternativa, è possibile scaricare l'app Portale aziendale di Windows Phone 8.1 (pacchetto con licenza offline) o Portale aziendale di Windows 10 (pacchetto con licenza offline) da [Microsoft Store per le aziende](http://businessstore.microsoft.com/). L'app Portale aziendale dovrà essere acquisita con una licenza offline e il pacchetto appropriato dovrà essere scaricato per l'uso offline. Le voci per la piattaforma Windows 8 e Windows Phone 8 nella selezione fanno riferimento alle controparti 8.1. Per informazioni dettagliate su come eseguire questa operazione con Intune, vedere [Manage apps you purchased from the Microsoft Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune) (Gestire le app acquistate in Microsoft Store per le aziende).
 
 2.  **Scaricare Windows Phone SDK** Scaricare Windows Phone 8.0 SDK (http://go.microsoft.com/fwlink/?LinkId=615570) e installare l'SDK nel computer. Questo SDK è necessario per generare un token di registrazione applicazione.
 
@@ -144,12 +144,12 @@ Il certificato Symantec usato per distribuire le app per dispositivi mobili Wind
 5.  Firmare tutte le app line-of-business aziendali nuove e aggiornate usando il nuovo certificato. Le applicazioni esistenti non devono essere firmate e distribuite di nuovo.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Distribuire manualmente l'app Portale aziendale di Windows 10
-È possibile distribuire manualmente l'app Portale aziendale di Windows 10 direttamente da Intune, anche se non si è integrato Intune con Windows Store per le aziende.
+È possibile distribuire manualmente l'app Portale aziendale di Windows 10 direttamente da Intune, anche se non si è integrato Intune con Microsoft Store per le aziende.
 
  > [!NOTE]
  > Se si sceglie questa opzione, sarà necessario distribuire manualmente gli aggiornamenti ogni volta che verrà rilasciato un aggiornamento dell'app.
 
-1. Accedere al proprio account di [Windows Store per le aziende](https://www.microsoft.com/business-store) e acquisire la versione con **licenza offline** dell'app Portale aziendale.  
+1. Accedere al proprio account di [Microsoft Store per le aziende](https://www.microsoft.com/business-store) e acquisire la versione con **licenza offline** dell'app Portale aziendale.  
 2. Dopo aver acquisito l'app, selezionarla nella pagina **Inventario**.  
 3. Selezionare **Windows 10 all devices** (Windows 10 - tutti i dispositivi) come **Piattaforma**, quindi specificare l'opzione di **Architettura** appropriata ed eseguire il download. Per questa app non è necessario un file di licenza di app.
 ![Immagine dei dettagli del pacchetto per Windows 10 (tutti i dispositivi) e l'architettura X86](./media/Win10CP-all-devices.png)
@@ -186,7 +186,7 @@ Se l'app Portale aziendale di Windows 10 viene firmata e distribuita in questo m
 Ecco come firmare e distribuire l'app in questo modo:
 
 1. Scaricare lo script di firma di Microsoft Intune per l'app Portale aziendale di Windows 10 dall'indirizzo [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Per l'esecuzione di questo script è necessario che sia installato Windows 10 SDK nel computer host. Per scaricare Windows 10 SDK, visitare [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
-2. Scaricare l'app Portale aziendale di Windows 10 da Windows Store per le aziende, come descritto in precedenza.  
+2. Scaricare l'app Portale aziendale di Windows 10 da Microsoft Store per le aziende, come descritto in precedenza.  
 3. Eseguire lo script per firmare l'app Portale aziendale di Windows 10 con i parametri di input riportati nell'intestazione (descritti nella tabella seguente). Non è necessario passare le dipendenze allo script. Le dipendenze sono necessarie solo quando l'app viene caricata nella console di amministrazione di Intune.
 
 |Parametro | Descrizione|

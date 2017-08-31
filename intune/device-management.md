@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f066e62e323fffb7c6954d83b2b55ee63f4be46
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: e0fc5337b92ac604a448038f685b27623b6153f9
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Informazioni sulla gestione dei dispositivi in Microsoft Intune
 
@@ -30,8 +30,9 @@ Il carico di lavoro **Dispositivi** offre informazioni dettagliate sui dispositi
 1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
+4. È ora possibile eseguire le azioni remote elencate sui dispositivi. Le azioni disponibili dipendono dalla piattaforma del dispositivo e dalla configurazione del dispositivo:
 
-È ora possibile eseguire le azioni seguenti:
+## <a name="available-device-actions"></a>Azioni del dispositivo disponibili
 
 - [Visualizzare l'inventario dei dispositivi](device-inventory.md)
 - Eseguire azioni remote per i dispositivi:
@@ -46,29 +47,8 @@ Il carico di lavoro **Dispositivi** offre informazioni dettagliate sui dispositi
     - [Riavvia](device-restart.md)
     - [Reimpostazione del PIN di Windows 10](device-windows-pin-reset.md)
     - [Controllo remoto per Android](device-profile-android-teamviewer.md)
+    - [Sincronizzare il dispositivo](device-sync.md)
 
-
-## <a name="support-for-each-device-action"></a>Supporto per ogni azione del dispositivo
-
-Usare la tabella seguente per un elenco delle piattaforme per dispositivi supportate da ogni azione.
-
-|||||||
-|-|-|-|-|-|-|
-|Azione del dispositivo|Windows|Windows Phone|iOS|macOS|Android|
-|**Rimuovi i dati aziendali**|sì|Sì|Sì|Sì|Sì|
-|**Ripristino impostazioni predefinite**|Windows 8.1 e versioni successive (dispositivi gestiti non EAS)|sì|Sì|No|Android for Work non è supportato|
-|**Eliminazione**|sì|Sì|Sì|Sì|sì|
-|**Blocco remoto**|No|Windows Phone 8.1 e versioni successive|Sì|No|sì|
-|**Reimposta passcode**|No|Aggiornamento da Windows Phone 8.1 a Windows 10 Creators non aggiunto a Azure AD, Windows 10 Creators Update e versioni successive - tutti|sì|No|Android precedenti alla versione 7, Android for Work non supportati|
-|**Nuovo passcode** (per dispositivi Windows 10)|No|Windows 10 Creators Update e versioni successive (aggiunto ad Azure AD)|No|No|Android for Work non è supportato|
-|**Eseguire il bypass del blocco attivazione**|No|No|Solo dispositivi di proprietà dell'azienda|No|No|
-|**Modalità di dispositivo perso**|No|No|iOS 9.3 e versioni successive, con supervisione e di proprietà dell'azienda|No|No|
-|**Individua il dispositivo**|No|No|iOS 9.3 in modalità dispositivo perso e versioni successive, con supervisione, di proprietà dell'azienda|No|No|
-|**Disconnettere utente corrente**|No|No|iOS 9.3 e versioni successive (solo in dispositivi iPad condivisi)|No|No|
-|**Riavvia**|Windows 8.1 e versioni successive|Windows Phone 8.1 e versioni successive|No|No|No|
-|**Fresh Start**|Windows 10 Creators Update e versioni successive|No|No|No|No|
-|**Nuova sessione di assistenza remota**|No|No|No|No|sì|
-|**Rimuovi utente**|No|No|iOS 9.3 e versioni successive (solo in dispositivi iPad condivisi)|No|No|
 
 ## <a name="next-steps"></a>Passaggi successivi
 
