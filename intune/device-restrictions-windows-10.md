@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: e0bbbdfae73dfd843f4b011cecf0217d2c6eb699
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows 10 e versioni successive in Microsoft Intune
 
@@ -100,7 +100,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Installa i dati dell'app nel volume di sistema**: impedisce alle app di archiviare dati nel volume di sistema del dispositivo.
 -   **Installa le app nell'unità di sistema**: impedisce alle app di archiviare dati nell'unità di sistema del dispositivo.
 -   **Game DVR (solo desktop)**: configura se la registrazione e la trasmissione dei giochi sono consentite.
--   **Apps from store only** (Solo app dallo Store): specifica se gli utenti possono installare le app da posizioni diverse dall'App Store.
+-   **App solo dallo Store**: specifica se gli utenti possono installare le app da posizioni diverse dall'App Store.
 
 
 

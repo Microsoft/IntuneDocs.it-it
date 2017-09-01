@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7f054868d0bae061f348239614f3a40b96a15b1
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>Configurare criteri di accesso condizionale basato su app
 
@@ -59,9 +59,30 @@ Questo argomento descrive come configurare criteri di accesso condizionale basat
 2. Fare clic sui puntini di sospensione per visualizzare le opzioni di eliminazione.
 3. Scegliere **Elimina** per rimuovere il gruppo di utenti dall'elenco.
 
+## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Creare criteri di accesso condizionale basato su app in un carico di lavoro di Azure AD
+
+A partire dalla versione 1708 di Intune, gli amministratori IT possono creare criteri di accesso condizionale basato su app dal carico di lavoro di Azure AD. Questo approccio è molto comodo, perché evita di doversi spostare tra i carichi di lavoro di Azure e Intune.
+
+> [!IMPORTANT]
+> È necessario avere una licenza di Azure AD Premium per creare criteri di accesso condizionale di Azure AD dal portale di Intune di Azure.
+
+### <a name="to-create-an-app-based-conditional-access-policy"></a>Per creare criteri di accesso condizionale basato su app
+
+> [!IMPORTANT]
+> Per potere usare i criteri di accesso condizionale basato su app, è prima di tutto necessario che i [criteri di protezione delle app di Intune](app-protection-policies.md) siano applicati alle app.
+
+1. Nel **dashboard di Intune** scegliere **Accesso condizionale**.
+
+2. Nel pannello **Criteri** scegliere **Nuovo criterio** per creare il nuovo criterio di accesso condizionale basato su app.
+
+4. Dopo avere immesso un nome di criterio e dopo avere configurato le impostazioni disponibili nella sezione **Assegnazioni**, scegliere **Concedi** nella sezione **Controlli di accesso**.
+
+5. Scegliere **Richiedi app client approvata**, quindi **Seleziona** e infine **OK** per salvare il nuovo criterio.
+
 ## <a name="next-steps"></a>Passaggi successivi
 [Bloccare le app che non usano l'autenticazione moderna](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>Vedere anche
 
 [Proteggere i dati delle app con i criteri di protezione delle app](app-protection-policies.md)
+[Accesso condizionale in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

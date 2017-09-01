@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 237e141eacb413eb130b17217116b6d0c7e085f8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d5db079d224f145336b5d3c9b9963f8a5f2c306a
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="common-ways-to-use-intune"></a>Metodi comuni per l'uso di Intune
 
@@ -42,7 +42,7 @@ La maggior parte delle strategie di mobilità aziendale inizia con un piano che 
 
 Intune e Microsoft Enterprise Mobility + Security (EMS) offrono un'esclusiva [soluzione di accesso condizionale](conditional-access.md) integrata ([portale classico](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) per Exchange Server, per garantire che nessuna app per dispositivi mobili possa accedere alla posta elettronica finché il dispositivo è registrato con Intune, tutto ciò senza la distribuzione di un altro computer del gateway al margine della rete aziendale.
 
-Intune supporta anche l'abilitazione dell'accesso alle applicazioni per dispositivi mobili che richiedono l'accesso protetto ai dati locali, ad esempio i server app line-of-business. Questa operazione viene in genere eseguita usando [certificati gestiti da Intune](certificates-configure.md) ([portale classico](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) per il controllo di accesso, combinati con un gateway VPN standard o un proxy nel perimetro, ad esempio il Proxy di applicazione di Microsoft Azure Active Directory.  
+Intune supporta anche l'abilitazione dell'accesso alle applicazioni per dispositivi mobili che richiedono l'accesso protetto ai dati locali, ad esempio i server app line-of-business. Questa operazione viene in genere eseguita usando [certificati gestiti da Intune](certificates-configure.md) ([portale classico](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) per il controllo di accesso, combinati con un gateway VPN standard o un proxy nel perimetro, ad esempio il Proxy di applicazione di Microsoft Azure Active Directory. 
 
 In questi casi, l'unico modo per accedere ai dati aziendali è registrare il dispositivo nel sistema di gestione. Dopo che i dispositivi sono stati registrati, il sistema di gestione garantisce che siano compatibili con i criteri specificati prima di poter accedere ai dati aziendali. In Intune sono anche disponibili lo [strumento di wrapping delle app e App SDK](apps-prepare-mobile-application-management.md) che consentono di contenere i dati a cui si accede all'interno dell'app line-of-business, in modo che non sia possibile passare i dati aziendali alle app o ai servizi consumer.
 
@@ -75,7 +75,7 @@ L'approccio Bring Your Own Device (BYOD) è sempre più popolare tra le organizz
 
 Quando la registrazione del dispositivo non è fattibile, Intune offre un approccio BYOD alternativo che consiste semplicemente nel [gestire le app che contengono dati aziendali](app-protection-policies.md) ([portale classico](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)). Intune protegge i dati aziendali anche se l'app in questione accede sia ai dati aziendali che ai dati personali, come avviene per le app Office per dispositivi mobili.  
 
-In qualità di amministratore, è possibile richiedere agli utenti di accedere a Office 365 dalle app Office per dispositivi mobili e di configurare le app con i criteri che assicurano la protezione dei dati (come la crittografia, la protezione con pin e così via). Questi criteri evitano la perdita di dati in app e posizioni di archiviazione non gestite, all'interno o all'esterno delle app. Ad esempio, i criteri possono impedire a un utente di copiare il testo da un profilo di posta elettronica aziendale in un profilo di posta elettronica personale, anche se entrambi i profili sono configurati all'interno di Outlook Mobile. È possibile distribuire configurazioni simili per altri servizi e applicazioni richiesti dagli utenti BYOD.
+In qualità di amministratore, è possibile richiedere agli utenti di accedere a Office 365 dalle app Office per dispositivi mobili e di configurare le app con i criteri che assicurano la protezione dei dati (come la crittografia, la protezione con pin e così via). Questi criteri di protezione delle app evitano la perdita di dati in app e posizioni di archiviazione non gestite, all'interno o all'esterno delle app. Ad esempio, i criteri possono impedire a un utente di copiare il testo da un profilo di posta elettronica aziendale in un profilo di posta elettronica personale, anche se entrambi i profili sono configurati all'interno di Outlook Mobile. È possibile distribuire configurazioni simili per altri servizi e applicazioni richiesti dagli utenti BYOD.
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 

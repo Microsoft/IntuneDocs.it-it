@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enable-byod-with-intune"></a>Abilitare BYOD con Intune
 
@@ -44,22 +44,22 @@ Al tempo stesso, è anche necessario [personalizzare il portale aziendale](compa
 
 Dopo aver preparato il servizio Intune, è necessario soddisfare i vari requisiti di registrazione per i diversi tipi di dispositivi da gestire. Il processo di registrazione dei dispositivi per la gestione è immediato, ma varia leggermente a seconda del tipo di dispositivo.
 
--   **Dispositivi iOS e Mac** Per registrare iPad, iPhone o dispositivi Mac OS, è necessario [richiedere un certificato push MDM Apple](apple-mdm-push-certificate-get.md). Dopo aver caricato il certificato push MDM in Intune, gli utenti possono [registrare i dispositivi iOS](/intune-user-help/enroll-your-device-in-intune-ios) tramite l'app Portale aziendale e usare il sito Web del portale aziendale per [registrare i dispositivi MacOS](/intune-user-help/enroll-your-device-in-intune-macos).
+-   **Dispositivi iOS e Mac** Per registrare iPad, iPhone o dispositivi macOS, è necessario [richiedere un certificato push MDM Apple](apple-mdm-push-certificate-get.md). Dopo aver caricato il certificato push MDM in Intune, gli utenti possono [registrare i dispositivi iOS](/intune-user-help/enroll-your-device-in-intune-ios) tramite l'app Portale aziendale e usare il sito Web del portale aziendale per [registrare i dispositivi macOS](/intune-user-help/enroll-your-device-in-intune-macos).
 
 -   **Dispositivi Android** Non è necessario eseguire alcuna operazione per preparare il servizio Intune per la registrazione dei dispositivi Android. Gli utenti possono [registrare i dispositivi Android](/intune-user-help/enroll-your-device-in-intune-android) per la gestione usando l'app Portale aziendale disponibile in Google Play.
 
--   **Dispositivi Windows Phone e PC** I dispositivi Windows possono essere registrati con configurazione aggiuntiva. Per semplificare l'esperienza degli utenti, è possibile abilitare la registrazione automatica per i PC Windows 10 e i dispositivi mobili Windows 10 in Azure Active Directory (AD) Premium. Se non si dispone di Azure AD Premium o se è necessario supportare Windows 8.1, è possibile creare [un alias DNS per il server di registrazione](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) per semplificare la registrazione.
+-   **Dispositivi Windows Phone e PC** I dispositivi Windows possono essere registrati con configurazione aggiuntiva. Per semplificare l'esperienza degli utenti finali, è possibile abilitare la registrazione automatica per i PC Windows 10 e i dispositivi mobili Windows 10 in Azure Active Directory (AD) Premium. Se non si dispone di Azure AD Premium o se è necessario supportare Windows 8.1, è possibile creare [un alias DNS per il server di registrazione](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) per semplificare la registrazione.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Verificare che i dispositivi gestiti soddisfino i requisiti di sicurezza di base
 
 Dopo che gli utenti hanno registrato i dispositivi per la gestione, il personale IT deve assicurarsi che i dispositivi usati per accedere alle app e ai dati aziendali soddisfino i requisiti di sicurezza di base, come l'uso di un PIN per l'accesso ai dispositivi e la crittografia dei dati archiviati nei dispositivi. Un set di regole di questo tipo è definito [criteri di conformità](device-compliance.md).
 
-Quando [si distribuiscono criteri di conformità](device-compliance-get-started.md) a un utente, tutti i dispositivi gestiti da Intune vengono controllati per determinare se soddisfano i requisiti di sicurezza di base definiti come parte dei criteri BYOD. Dopo che un dispositivo è stato valutato per determinarne la conformità ai criteri, il relativo stato viene comunicato a Intune. In alcuni casi, agli utenti potrebbe essere richiesto di correggere le impostazioni, ad esempio il PIN o la crittografia del dispositivo. In altri casi, l'app Portale aziendale notifica semplicemente all'utente le eventuali impostazioni che non soddisfano i criteri.
+Quando [si distribuiscono criteri di conformità](device-compliance-get-started.md) a un utente, ogni dispositivo gestito da Intune viene controllati per determinare se soddisfa i requisiti di sicurezza di base definiti come parte dei criteri BYOD. Dopo che un dispositivo è stato valutato per determinarne la conformità ai criteri, il relativo stato viene comunicato a Intune. In alcuni casi, agli utenti potrebbe essere richiesto di correggere le impostazioni, ad esempio il PIN o la crittografia del dispositivo. In altri casi, l'app Portale aziendale notifica semplicemente all'utente le eventuali impostazioni che non soddisfano i criteri.
 
 ## <a name="provide-access-to-company-resources"></a>Fornire l'accesso alle risorse aziendali
 
-La prima cosa che la maggior parte dei dipendenti vuole sul proprio dispositivo mobile è l'accesso alla posta elettronica e ai documenti aziendali. E si aspettano di configurare l'accesso senza procedure complesse e senza doversi rivolgere al supporto tecnico. Con Intune è semplice [creare e distribuire le impostazioni di posta elettronica](email-settings-configure.md) per le app di posta elettronica native preinstallate nei dispositivi mobili.
+La maggior parte dei dipendenti vuole accedere nel proprio dispositivo mobile prima di tutto a posta elettronica e documenti aziendali. I dipendenti si aspettano di configurare l'accesso senza procedure complesse e senza doversi rivolgere al supporto tecnico. Con Intune è semplice [creare e distribuire le impostazioni di posta elettronica](email-settings-configure.md) per le app di posta elettronica native preinstallate nei dispositivi mobili.
 
 
 > [!NOTE]
@@ -86,7 +86,7 @@ Intune consente anche di gestire e distribuire le app acquistate con contratti m
 
 ## <a name="protect-company-data"></a>Proteggere i dati aziendali
 
-Intune protegge i dati aziendali tramite diversi livelli di tecnologie. A livello di identità, l'accesso condizionale protegge l'accesso ai servizi. L'accesso condizionale consente l'accesso alle risorse aziendali solo ai dispositivi conformi e gestiti. A livello di applicazione client, la gestione di applicazioni per dispositivi mobili (MAM) consente di evitare le perdite di dati.  I criteri di protezione delle app impediscono lo spostamento dei dati in app o percorsi di archiviazione non protetti. Questi criteri consentono inoltre di cancellare i dati aziendali quando un dispositivo viene smarrito o rubato.
+Intune protegge i dati aziendali tramite diversi livelli di tecnologie. A livello di identità, l'accesso condizionale protegge l'accesso ai servizi. L'accesso condizionale consente l'accesso alle risorse aziendali solo ai dispositivi conformi e gestiti. A livello di app client, i criteri di protezione delle app proteggono dalla perdita di dati. I criteri di protezione delle app impediscono lo spostamento dei dati in app o percorsi di archiviazione non protetti. Questi criteri consentono inoltre di cancellare i dati aziendali quando un dispositivo viene smarrito o rubato.
 
 ### <a name="enforce-conditional-access-to-company-resources"></a>Imporre l'accesso condizionale alle risorse aziendali
 
@@ -97,17 +97,17 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 > [!IMPORTANT]
 > I criteri di accesso condizionale non possono essere usati se non vengono applicati criteri di conformità per la convalida della conformità.
 
-### <a name="prevent-data-loss-of-company-data-with-application-protection-policies"></a>Evitare la perdita dei dati aziendali con criteri di protezione delle applicazioni
+### <a name="prevent-data-loss-of-company-data-with-app-protection-policies"></a>Evitare la perdita dei dati aziendali con criteri di protezione delle app
 
-Con i criteri di protezione delle applicazioni di Intune è possibile scegliere la modalità di accesso ai dati, con o senza registrazione dei dispositivi. Questa versatilità consente di proteggere i dati aziendali in modo che un utente possa comunque accedere ai dati aziendali in modo sicuro, anche se non registra il dispositivo in Intune.
+Con i criteri di protezione delle app di Intune è possibile scegliere la modalità di accesso ai dati, con o senza registrazione dei dispositivi. Questa versatilità consente di proteggere i dati aziendali in modo che un utente possa comunque accedere ai dati aziendali in modo sicuro, anche se non registra il dispositivo in Intune.
 
-È possibile usare i [criteri di protezione delle app di Intune](app-protection-policies.md) per proteggere i dati aziendali a cui accedono i dispositivi iOS e Android degli utenti. Quando si usano questi criteri a livello di app, è possibile controllare il modo in cui i dati aziendali vengono usati e condivisi dai dipendenti, anche se il dispositivo stesso non è gestito da Intune.
+È possibile usare i [criteri di protezione delle app di Intune](app-protection-policies.md) per proteggere i dati aziendali a cui accedono i dispositivi iOS e Android. Quando si usano questi criteri a livello di app, è possibile controllare il modo in cui i dati aziendali vengono usati e condivisi dai dipendenti, anche se il dispositivo stesso non è gestito da Intune.
 
-Usare i [criteri di Windows Information Protection (WIP)](app-protection-policies-configure-windows-10.md) per eseguire la stessa operazione per i dispositivi Windows 10 gestiti. Questi criteri possono essere usati senza interferire con l'esperienza del dipendente. Non richiedono modifiche dell'ambiente di rete o di altre app.
+Usare [Windows Information Protection (WIP)](app-protection-policies-configure-windows-10.md) per eseguire la stessa operazione per i dispositivi Windows 10 gestiti. Questi criteri possono essere usati senza interferire con l'esperienza del dipendente. Non richiedono modifiche dell'ambiente di rete o di altre app.
 
 ### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Rimuovere i dati aziendali mantenendo intatti i dati personali
 
-Quando un dispositivo non viene più usato per lavoro, viene reimpiegato o risulta semplicemente mancante, è necessario poter rimuovere le app e i dati aziendali dal dispositivo. A tale scopo, è possibile usare le funzionalità di Intune per rimuovere i dati aziendali e ripristinare le impostazioni predefinite. Gli utenti possono anche ripristinare in remoto i dispositivi personali dal portale aziendale di Intune, se i dispositivi sono registrati in Intune.
+Quando un dispositivo non viene più usato per lavoro, viene reimpiegato o risulta mancante, è necessario poter rimuovere le app e i dati aziendali dal dispositivo. A tale scopo, è possibile usare le funzionalità di Intune per rimuovere i dati aziendali e ripristinare le impostazioni predefinite. Gli utenti possono anche ripristinare in remoto i dispositivi personali dal portale aziendale di Intune, se i dispositivi sono registrati in Intune.
 
 Il [ripristino delle impostazioni predefinite](devices-wipe.md) consente di ripristinare le impostazioni predefinite di fabbrica di un dispositivo, di rimuovere i dati e le impostazioni dell'utente, nonché di rimuovere il dispositivo dalla gestione di Intune. La funzionalità [Rimuovi i dati aziendali](devices-wipe.md#remove-company-data) rimuove solo i dati aziendali dal dispositivo, mantenendo invariati i dati personali degli utenti.
 
