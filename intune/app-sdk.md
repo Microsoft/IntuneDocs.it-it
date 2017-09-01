@@ -4,7 +4,7 @@ description: "Intune App SDK è disponibile per la piattaforma iOS e Android e a
 keywords: 
 author: mtillman
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8a9b0c398c4b6dd46823ceaaefd68ee193ab4502
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c509e324788828d8ce5a3e9ac556c82ce57e9b07
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="intune-app-sdk-overview"></a>Panoramica di Intune App SDK
 Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di protezione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. La maggior parte delle funzionalità dell'SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che richiedono la partecipazione dell'app.
@@ -62,8 +62,7 @@ Questa funzionalità per il supporto di più identità contribuisce a risolvere 
 ### <a name="app-protection-without-device-enrollment"></a>Protezione delle app senza registrazione del dispositivo
 
 >[!IMPORTANT]
->La protezione delle app di Intune senza registrazione del dispositivo non è attualmente disponibile con Intune App SDK per Android. È disponibile con gli strumenti per il wrapping delle app di Intune, l'SDK per iOS, il componente Xamarin per l'SDK e il plug-in Cordova per l'SDK.
-
+>La protezione delle app di Intune senza la registrazione dei dispositivi è disponibile con gli strumenti di wrapping delle app di Intune, Intune App SDK per Android, Intune App SDK per iOS, il componente Xamarin per SDK e il plug-in Cordova per SDK.
 
 Molti utenti con dispositivi personali vogliono accedere ai dati aziendali senza registrare il dispositivo personale in un provider di gestione di dispositivi mobili (MDM). Dato che la registrazione in una soluzione MDM richiede il controllo globale del dispositivo, gli utenti sono spesso riluttanti a fornire tale controllo all'azienda per i propri dispositivi personali.
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4994656afcf1cdb97fdcd3877f6dabdadfb7d374
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f38320ca84a734f645c3d8554c5aef53836fd1be
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Impostazioni di Endpoint Protection per Windows 10 e versioni successive in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Il profilo di Endpoint Protection consente di controllare le funzionalità di sicurezza dei dispositivi Windows 10, ad esempio BitLocker.
+Il profilo di Endpoint Protection consente di controllare le funzionalità di sicurezza dei dispositivi Windows 10, ad esempio BitLocker e Windows Defender.
 
 Usare le informazioni in questo argomento per apprendere come creare profili di Endpoint Protection.
 
@@ -38,13 +38,18 @@ Usare le informazioni in questo argomento per apprendere come creare profili di 
 3. Nel pannello dei profili scegliere **Crea profilo**.
 4. Nel pannello **Crea profilo** immettere i valori di **Nome** e **Descrizione** per il profilo delle funzionalità dei dispositivi.
 5. Dall'elenco a discesa **Piattaforma** selezionare **Windows 10 e versioni successive**.
-6. Dall'elenco a discesa **Tipo di profilo** scegliere **Endpoint Protection**. 
+6. Dall'elenco a discesa **Tipo di profilo** scegliere **Endpoint Protection**.
 7. Nel pannello **Crittografia di Windows** configurare le impostazioni volute. I dettagli in questo argomento consentono di comprendere la funzione di ogni impostazione. Al termine, scegliere **OK**.
 8. Tornare al pannello **Crea profilo** e scegliere **Crea**.
 
 Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
 
-## <a name="endpoint-protection-profile-settings-reference"></a>Informazioni di riferimento sulle impostazioni dei profili di Endpoint Protection
+## <a name="windows-defender-smartscreen-settings"></a>Impostazioni di Windows Defender SmartScreen
+
+- **SmartScreen per app e file**: consente di abilitare Windows SmartScreen per l'esecuzione di file e per le app in esecuzione.
+- **Esecuzione di file non verificati**: consente di impedire all'utente finale di eseguire file non verificati da Windows SmartScreen.
+
+## <a name="windows-encryption-settings"></a>Impostazioni della crittografia di Windows
 
 ### <a name="windows-settings"></a>Impostazioni Windows
 
@@ -62,16 +67,16 @@ Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
 
 ### <a name="bitlocker-os-drive-settings"></a>Impostazioni delle unità del sistema operativo di BitLocker
 
-- **Richiedi l'autenticazione aggiuntiva all'avvio** - 
-    - **Blocca BitLocker nei dispositivi senza chip TPM compatibile** - 
-    - **Avvio TPM**: consente di configurare se il chip TPM è consentito, non consentito o obbligatorio. 
-    - **PIN di avvio TPM**: consente di configurare se l'uso di un PIN di avvio con il chip TPM è consentito, non consentito o obbligatorio. 
-    - **Chiave di avvio TPM**: consente di configurare se l'uso di una chiave di avvio con il chip TPM è consentito, non consentito o obbligatorio. 
+- **Richiedi l'autenticazione aggiuntiva all'avvio** -
+    - **BitLocker con chip TPM non compatibile** -
+    - **Avvio TPM**: consente di configurare se il chip TPM è consentito, non consentito o obbligatorio.
+    - **PIN di avvio TPM**: consente di configurare se l'uso di un PIN di avvio con il chip TPM è consentito, non consentito o obbligatorio.
+    - **Chiave di avvio TPM**: consente di configurare se l'uso di una chiave di avvio con il chip TPM è consentito, non consentito o obbligatorio.
     - **Chiave di avvio e PIN TPM**: consente di configurare se l'uso di una chiave e di un PIN di avvio con il chip TPM è consentito, non consentito o obbligatorio.
 - **Lunghezza minima del PIN**: abilitare questa impostazione per configurare la lunghezza minima del PIN di avvio del chip TPM.
     - **Numero minimo di caratteri**: immettere il numero di caratteri obbligatorio per il PIN di avvio, **4**-**20**.
 - **Abilita il ripristino delle unità del sistema operativo**: abilitare questa impostazione per controllare la modalità di ripristino delle unità del sistema operativo protette da BitLocker se le informazioni necessarie all'avvio non sono disponibili.
-    - **Consenti l'agente di recupero dati basato su certificati**: abilitare questa impostazione se si vuole che sia possibile usare gli agenti di recupero dati con unità del sistema operativo protette da BitLocker.
+    - **Agente di recupero dati basato su certificati**: abilitare questa impostazione se si vuole che sia possibile usare gli agenti di recupero dati con unità del sistema operativo protette da BitLocker.
     - **Creazione della password di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una password di ripristino di 48 cifre.
     - **Creazione della chiave di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una chiave di ripristino a 256 bit.
     - **Nascondi le opzioni di ripristino nell'installazione guidata di BitLocker** : abilitare questa impostazione per impedire agli utenti di visualizzare o modificare le opzioni di ripristino se BitLocker è attivato.
@@ -92,7 +97,7 @@ Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
 
 - **Nega l'accesso in scrittura alle unità dati fisse non protette da BitLocker**: se questa impostazione è abilitata, è necessario abilitare la protezione BitLocker per tutte le unità dati fisse o predefinite perché sia possibile scrivere all'interno di esse.
 - **Abilita il ripristino delle unità fisse**: abilitare questa impostazione per controllare la modalità di ripristino delle unità fisse protette da BitLocker se le informazioni necessarie all'avvio non sono disponibili.
-    - **Consenti l'agente di recupero dati**: abilitare questa impostazione se si vogliono usare gli agenti di recupero dati con unità fisse protette da BitLocker.
+    - **Agente di recupero dati**: abilitare questa impostazione se si vogliono usare gli agenti di recupero dati con unità fisse protette da BitLocker.
     - **Creazione della password di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una password di ripristino di 48 cifre.  
     - **Creazione della chiave di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una chiave di ripristino a 256 bit.
     - **Nascondi le opzioni di ripristino nell'installazione guidata di BitLocker** : abilitare questa impostazione per impedire agli utenti di visualizzare o modificare le opzioni di ripristino se BitLocker è attivato.
@@ -113,5 +118,3 @@ Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
 ## <a name="next-steps"></a>Passaggi successivi
 
 Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
-
-

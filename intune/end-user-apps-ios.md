@@ -14,11 +14,11 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0061d4ecd8d71f8b7363193e36b838741aa56a92
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 72291be81df5e0358c9477a2749fb7d9d7cb8fdc
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>Modalità di recupero delle app per gli utenti di iOS
 
@@ -30,9 +30,9 @@ Usare queste informazioni per comprendere come e dove gli utenti possono ottener
 
 **App disponibili**: app che vengono messe a disposizione nell'elenco delle app Portale aziendale e che un utente può scegliere di installare.
 
-**App gestite**: app che possono essere gestite tramite criteri e che sono state "integrate" in Intune o che sono state compilate con l'SDK (Software Development Kit) della gestione di applicazioni mobili (MAM) di Intune. Queste app possono essere gestite da Intune ed è possibile applicarvi criteri dell'applicazione.
+**App gestite**: app che possono essere gestite usando i criteri e sono state sottoposte a "wrapping" in Intune o sono state compilate con Intune App Software Development Kit (SDK). Queste app possono essere gestite da Intune ed è possibile applicarvi criteri di protezione delle app.
 
-**App non gestite**: app che possono essere gestite tramite criteri e che non sono state integrate in Intune o che non comprendono l'SDK del software MAM di Intune. Non è possibile applicare i criteri dell'applicazione a queste app.
+**App non gestite**: app che possono essere gestite tramite criteri e che non sono state integrate in Intune o che non comprendono Intune App SDK. Non è possibile applicare i criteri dell'applicazione a queste app.
 
 Le restrizioni di Apple impediscono alle app line-of-business e alle app di App Store gestite di essere elencate nell'app Portale aziendale. Per risolvere questo problema, i riquadri nell'app Portale aziendale per iOS indirizzano gli utenti a visualizzazioni diverse in un'unica posizione, il sito Web del portale aziendale, per tutte le app.
 
