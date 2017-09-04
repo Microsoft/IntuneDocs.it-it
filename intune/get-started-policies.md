@@ -1,12 +1,12 @@
 ---
 title: Introduzione ai criteri
 titleSuffix: Intune on Azure
-description: 
+description: Creare criteri per impedire agli utenti di eseguire operazioni non autorizzate con i propri dispositivi.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd3279288fe5ea1fec16224c70b4562fcf53555d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b12b80ac13868b6706d2d4e7532ec13cba9a5b7e
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-policies"></a>Introduzione ai criteri
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-policies"></a>Introduzione ai criteri
 
 Uno degli obiettivi principali dell'introduzione a Intune è la registrazione dei dispositivi per assicurarsi che siano conformi con i criteri aziendali. I criteri di conformità non solo consentono di gestire tipi di dispositivi specializzati, ad esempio chioschi multimediali di proprietà dell'azienda, ma anche dispositivi personali (BYOD), tablet e dispositivi senza utente associato.
 
@@ -56,3 +54,12 @@ __Come si creano i criteri?__
 7. Tornare al pannello **Crea criteri**, quindi selezionare **Crea**.
 8. Dopo aver creato i criteri, selezionare **Assegnazioni** per assegnarli al gruppo di test. Selezionare il gruppo di test che include l'utente di test e assegnare i criteri al gruppo facendo clic su **Salva**.
 9. Attendere qualche minuto. Il dispositivo registrato dovrebbe richiedere di aggiornare la password per garantire la conformità ai criteri aziendali. È possibile verificare questa operazione anche manualmente nell'**app Portale aziendale per iOS** toccando il nome del dispositivo e il pulsante **Sincronizza**.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+[Introduzione alla registrazione dei dispositivi](get-started-enroll.md): illustra l'esperienza di registrazione tramite la registrazione completa di un dispositivo iOS.
+
+## <a name="learn-more"></a>Altre informazioni
+
+* [Monitorare i criteri di conformità dei dispositivi Intune](compliance-policy-monitor.md)
+* [Modi comuni per usare i criteri di accesso condizionale con Intune](conditional-access-intune-common-ways-use.md)

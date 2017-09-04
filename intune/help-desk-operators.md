@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 066f8668ea37e928455792f512e4e337a1f19c20
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti
 
@@ -41,7 +41,7 @@ Come amministratore di Intune, è possibile assegnare il ruolo Help Desk Operato
 Per aggiungere utenti al gruppo del supporto tecnico:
 1. [Aggiungere utenti a Intune](users-add.md) se necessario.
 2. [Creare un gruppo di operatori del supporto tecnico](groups-add.md) e aggiungere utenti al gruppo.
-3. [Assegnare il ruolo Help Desk Operator (Operatore del supporto tecnico) di controllo degli accessi in base al ruolo](role-based-access-control.md#built-in-roles)
+3. [Assegnare il ruolo Operatore help desk per il controllo degli accessi in base al ruolo](role-based-access-control.md#built-in-roles).
 
   ![Screenshot del portale di Intune con i ruoli di Intune evidenziati e un elenco dei ruoli predefiniti, incluso Help Desk Operator (Operatore del supporto tecnico)](./media/help-desk-user-add.png). È anche possibile [creare un ruolo personalizzato](role-based-access-control.md#custom-roles) e modificarlo per consentire l'accesso agli operatori del supporto tecnico.  Per risolvere i problemi degli utenti, gli operatori del supporto tecnico devono avere le autorizzazioni seguenti:
     - MobileApps: Lettura
@@ -61,8 +61,6 @@ Il personale del supporto tecnico e gli amministratori di Intune possono acceder
 - Accedere al portale di Azure, scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune** e quindi passare a **Guida e supporto tecnico** > **Risoluzione dei problemi**.
 
 Fare clic su **Selezionare l'utente** per visualizzare un utente e i relativi dettagli.
-
-![Screenshot del carico di lavoro Intune Troubleshoot (Risoluzione dei problemi di Intune) con il collegamento Seleziona utente](media/help-desk-user.png)
 
 ## <a name="use-the-troubleshooting-portal"></a>Usare il portale per la risoluzione dei problemi
 

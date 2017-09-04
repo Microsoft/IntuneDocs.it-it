@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,32 +14,36 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 966183f0da7a48148a193a1823f74b9e416f4004
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: fba27041fb55cfbef1cbba39e3679ce6884cd5f0
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="set-up-intune"></a>Configurare Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-I passaggi di impostazione preparano l'ambiente per la gestione dei dispositivi mobili.  
+Questa procedura di configurazione consente di abilitare Gestione di dispositivi mobili (MDM). Prima di poter concedere agli utenti l'accesso alle risorse aziendali o gestire le impostazioni nei dispositivi, i dispositivi devono essere gestiti.
+
+Alcuni passaggi, ad esempio la configurazione di una sottoscrizione di Intune e l'impostazione di un'autorità MDM, sono obbligatori per la maggior parte degli scenari. Altre procedure,ad esempio la configurazione di un dominio personalizzato o l'aggiunta di app, sono facoltative e dipendono dalle esigenze specifiche dell'azienda.
 
 Se attualmente si usa Microsoft System Center Configuration Manager per gestire computer e server, è possibile [estendere Configuration Manager per gestire i dispositivi mobili](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 >[!TIP]
 >Se si acquistano almeno 150 licenze per Intune con un piano idoneo, è possibile usare *FastTrack Center Benefit*. Con questo servizio, gli specialisti Microsoft collaborano con gli utenti per preparare l'ambiente per Intune. Vedere [FastTrack Center Benefit per Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
 
+
+
 | Passaggi | Stato  |
 | ------------- |-------------|
-| 1  | [Prerequisiti](supported-devices-browsers.md): informazioni da leggere prima di iniziare|
-| 2 |  [Iscriversi a Intune](account-sign-up.md): iscriversi per ottenere una versione di valutazione o creare una nuova sottoscrizione |  
-| 3 | [Configurare il nome del dominio](custom-domain-name-configure.md): Impostare la registrazione DNS per la connessione al nome del dominio dell'azienda con Intune  |
-| 4 | [Aggiungere utenti](users-add.md): aggiungere gli utenti manualmente o connettersi ad Active Directory per sincronizzare gli utenti con Intune  |
-| 5 | [Assegnare licenze](licenses-assign.md): concedere agli utenti l'autorizzazione a usare Intune|
-| 6 |  [Aggiungere gruppi](groups-add.md): usare gruppi di utenti e dispositivi per semplificare le attività di gestione |
-| 7 | [Aggiungere app](apps-add.md): abilitare le impostazioni e le app da distribuire agli utenti |
-| 8 | [Configurare dispositivi](device-profiles.md): impostare i profili che gestiscono i dispositivi e accedono alle risorse aziendali |
-| 9 | [Personalizzare il portale aziendale](company-portal-app.md): personalizzare il portale aziendale di Intune   |
-| 10 | [Abilitare la registrazione dei dispositivi](mdm-authority-set.md): abilitare la gestione di dispositivi iOS, Windows, Android e Mac in Intune |
+| 1  | [Prerequisiti](supported-devices-browsers.md): informazioni da leggere prima di iniziare. Sono inclusi i requisiti di rete e le configurazioni supportate.|
+| 2 |  [Accedere a Intune](account-sign-up.md): eseguire l'accesso alla sottoscrizione di valutazione oppure creare una nuova sottoscrizione di Intune. |  
+| 3 | [Configurare il nome di dominio](custom-domain-name-configure.md): impostare la registrazione DNS per la connessione al nome di dominio aziendale dell'azienda con Intune. Questo consente di offrire agli utenti un dominio noto per la connessione a Intune e per l'uso delle risorse.  |
+| 4 | [Aggiungere gli utenti](users-add.md): aggiungere gli utenti manualmente o connettere Active Directory per sincronizzare gli utenti con Intune. Questo passaggio è obbligatorio a meno che i dispositivi non siano dispositivi chiosco "senza utente". |
+| 5 | [Assegnare le licenze](licenses-assign.md): concedere agli utenti l'autorizzazione a usare Intune. Ogni utente o dispositivo senza utente richiede una licenza di Intune per accedere al servizio.|
+| 6 |  [Aggiungere i gruppi](groups-add.md): usare gruppi di utenti e dispositivi per semplificare le attività di gestione. I gruppi consentono di assegnare app, impostazioni e altre risorse. |
+| 7 | [Aggiungere le app](apps-add.md): le app possono essere assegnate a gruppi e installate automaticamente o facoltativamente. |
+| 8 | [Configurare i dispositivi](device-profiles.md): configurare i profili che gestiscono le impostazioni dei dispositivi. I profili dei dispositivi possono preconfigurare le impostazioni per la posta elettronica, la VPN, la connessione Wi-Fi e le funzionalità dei dispositivi. Possono anche limitare i dispositivi per la protezione di dispositivi e dati.  |
+| 9 | [Personalizzare il portale aziendale](company-portal-app.md): personalizzare il Portale aziendale Intune che verrà usato dagli utenti per registrare i dispositivi e installare le app. Queste impostazioni vengono visualizzate sia nell'app Portale aziendale sia nel sito Web Portale aziendale Intune. |
+| 10 | [Abilitare la registrazione dei dispositivi](mdm-authority-set.md): abilitare la gestione in Intune di dispositivi iOS, Windows, Android e Mac impostando l'autorità MDM e abilitando piattaforme specifiche. |
