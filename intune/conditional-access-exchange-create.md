@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b02d7dfd2331db232269869fd941b687465f8221
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: be626985a020d518bd4285a4d0b280c6c66932a6
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Come creare e assegnare un criterio di accesso condizionale per Exchange locale ed Exchange Online dedicato legacy in Microsoft Intune
 
@@ -122,11 +122,7 @@ A partire dalla versione 1704 di Intune, gli amministratori possono creare crite
 
 1. Nel **dashboard di Intune** scegliere **Accesso condizionale**.
 
-2. Nel dashboard **Accesso condizionale** scegliere **Accesso condizionale in Azure Active Directory**.
-
-3. Scegliere **Nuovo criterio** per creare il nuovo criterio di accesso condizionale di Azure AD.
-
-    ![Criteri di accesso condizionale di Azure AD](./media/Azure-AD-CA-Intune.png)
+2. Nel pannello **Criteri** scegliere **Nuovo criterio** per creare il nuovo criterio di accesso condizionale di Azure AD.
 
 ## <a name="see-also"></a>Vedere anche
 
