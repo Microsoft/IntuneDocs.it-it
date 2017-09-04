@@ -1,12 +1,12 @@
 ---
 title: Introduzione alle app
 titleSuffix: Intune on Azure
-description: 
+description: Ttrovare le app e aggiungerle ai dispositivi per consentire ai dipendenti di svolgere il proprio lavoro.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71093f8ac17fc6d6938f5c263a40204f89419726
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 7ac2a6f027a78c6b0093a0d299a7cae3265e5954
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-apps"></a>Introduzione alle app
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-adding-apps"></a>Introduzione all'aggiunta di app
 
 Intune supporta vari metodi per la distribuzione di app nei dispositivi aziendali:
 
@@ -33,7 +31,7 @@ Intune supporta vari metodi per la distribuzione di app nei dispositivi aziendal
 
 Di seguito viene illustrato uno dei metodi più rapidi di distribuzione app ovvero l'assegnazione di un'app da uno store pubblico.
 
-__Come assegnare un'app di uno store pubblico?__
+## <a name="how-do-i-assign-a-public-store-app"></a>Come si assegna un'app di uno store pubblico?
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. In **Cerca risorse** cercare **Intune**.
@@ -43,3 +41,9 @@ __Come assegnare un'app di uno store pubblico?__
 6. Nel pannello **Aggiungi app** selezionare **Informazioni sull'app** e verificare che tutte le informazioni sull'app siano compilate. È possibile aggiungere altri dettagli facoltativi per definire l'app, ad esempio **Proprietario**, **Note**, **Sviluppatore** e un **URL privacy** per l'informativa sulla privacy dell'azienda.
 7. Verificare di avere selezionato Sì per Visualizza come app in primo piano nel portale aziendale, quindi scegliere OK.
 8. Selezionare **Aggiungi** per aggiungere l'app. Viene visualizzata la **Panoramica** dell'app. Scegliere **Assegnazioni**, quindi fare clic su **Selezione gruppi** per assegnare l'app al gruppo di test. Impostare l'app come **Disponibile** per il download. L'app viene visualizzata come **App in primo piano** nel dispositivo di test.
+
+## <a name="learn-more"></a>Altre informazioni
+
+* [Che cos'è la gestione delle app con Intune?](app-management.md)
+* [Panoramica del ciclo di vita dell'app](app-lifecycle.md)
+* [Che cosa sono i criteri di protezione delle app?](app-protection-policy.md)

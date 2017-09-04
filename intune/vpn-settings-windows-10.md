@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e7fb7697f50706566210063605e9b5d750e0c90
+ms.sourcegitcommit: 5a4529aae710ca2abac5b4d2cfd92cb2df7e67cb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Impostazioni VPN per i dispositivi Windows 10 in Microsoft Intune
 
@@ -96,10 +96,13 @@ Per altre informazioni su come scrivere comandi XML personalizzati, fare riferim
 
 ## <a name="conditional-access"></a>Accesso condizionale
 
-**Accesso condizionale per questa connessione VPN** -
-**Single Sign-On (SSO) con certificato alternativo** -
-**Utilizzo chiavi avanzato** -
-**Hash dell'emittente** -
+**Accesso condizionale per questa connessione VPN**: abilita il flusso di conformità del dispositivo dal client. Se questa impostazione è abilitata, il client VPN tenterà di comunicare con Azure Active Directory per ottenere un certificato da usare per l'autenticazione. La rete VPN deve essere impostata per usare l'autenticazione basata su certificato e il server VPN deve considerare attendibile il server restituito da Azure Active Directory.
+
+**Accesso Single Sign-On (SSO) con il certificato alternativo**: per la conformità del dispositivo, usare un certificato diverso dal certificato di autenticazione VPN per l'autenticazione Kerberos. Specificare il certificato con le impostazioni seguenti: 
+
+- **Utilizzo chiavi avanzato**: nome per l'utilizzo chiavi avanzato.
+- **Identificatore di oggetto**: identificatore di oggetto per l'utilizzo chiavi avanzato.
+- **Hash dell'emittente**: identificazione personale per il certificato SSO.
 
 ## <a name="dns-settings"></a>Impostazioni DNS
 

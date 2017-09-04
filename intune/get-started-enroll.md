@@ -1,12 +1,12 @@
 ---
 title: Introduzione alla registrazione di dispositivi
 titleSuffix: Intune on Azure
-description: 
+description: Informazioni sull'esperienza di registrazione tramite la registrazione completa di un dispositivo iOS.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,26 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b072ca0ee5a1e4d0a4feb6972ee80fe717fe9f83
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-enrolling-devices"></a>Introduzione alla registrazione di dispositivi
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-enrolling-devices"></a>Introduzione alla registrazione di dispositivi
 
 Microsoft Intune consente di offrire agli utenti la possibilità di usare i dispositivi mobili, mantenendo protetti i dati aziendali. Poiché gli utenti finali interagiscono con Intune nei dispositivi anziché nella console di amministrazione, si vorrà garantire un'esperienza di registrazione semplice. Per questa ragione è possibile combinare criteri di conformità ben definiti e la propria esperienza per dimostrare empatia nei confronti degli utenti. Ciò è particolarmente importante poiché gli utenti sapranno esattamente quali informazioni sono visibili all'amministratore:
 
-## <a name="what-it-cannot-see"></a>Elementi non visibili all'IT
-* Cronologia delle chiamate e delle esplorazioni Web
-* Percorso
-* Posta elettronica personale
-* Messaggi di testo
-* Contatti
-* Password per gli account personali
-* Eventi del calendario
-* Immagini, incluse quelle nell'app Foto o nel rullino della fotocamera
-
-## <a name="what-it-can-see"></a>Elementi visibili all'IT
-* Modello
-* Numero di serie
-* Versione del sistema operativo
-* Nomi di app
-* Proprietario
-* Nome dispositivo
-* Produttore (per i dispositivi non prodotti da Apple)
-* Numero di telefono (il numero completo per i dispositivi di lavoro e solo le ultime quattro cifre per i dispositivi personali)
+| Elementi non visibili all'IT | Elementi visibili all'IT |
+|---|---|
+| Cronologia delle chiamate e delle esplorazioni Web | Modello |
+| Percorso | Numero di serie |
+| Posta elettronica personale | Versione del sistema operativo |
+| Messaggi di testo | Nomi di app |
+| Contatti | Proprietario |
+| Password per gli account personali | Nome dispositivo |
+| Eventi del calendario | Produttore (per i dispositivi non prodotti da Apple) |
+| Immagini, incluse quelle nell'app Foto o nel rullino della fotocamera | Numero di telefono (il numero completo per i dispositivi di lavoro e solo le ultime quattro cifre per i dispositivi personali) |
 
 ## <a name="how-do-i-enroll-a-device"></a>Come si registra un dispositivo?
 
@@ -67,3 +56,13 @@ La registrazione di un dispositivo è la prima esperienza che faranno molti uten
 14. Quando la schermata indica che il profilo è stato installato, toccare **Fine**.
 15. Nella schermata viene visualizzato il messaggio "Registrazione dispositivo" e quindi viene indicato che l'operazione è stata eseguita correttamente. Viene visualizzata una finestra popup in cui viene chiesto di aprire la pagina nel portale aziendale. Toccare **Apri**.
 16. Viene nuovamente visualizzata la schermata **Configurazione dell'accesso aziendale**. Se non sono stati specificati criteri di test, il dispositivo dovrebbe essere conforme. Se sono stati specificati criteri di test, quando si tocca **Conformità del dispositivo** vengono elencate le operazioni da eseguire per rendere il dispositivo sicuro.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+[Introduzione all'aggiunta di app](get-started-apps.md): illustra come trovare le app e aggiungerle ai dispositivi per consentire ai dipendenti di svolgere il proprio lavoro.
+
+## <a name="learn-more"></a>Altre informazioni
+
+* [Opzioni di registrazione per Intune](enrollment-options.md)
+* [Abilitare un dispositivo Bring Your Own Device (BYOD) con Intune](byod-enable.md)
+* [Formazione degli utenti finali su registrazione e gestione dei dispositivi](end-user-educate.md)

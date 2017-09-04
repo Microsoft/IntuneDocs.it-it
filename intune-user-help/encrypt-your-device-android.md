@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
+ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Come proteggere il dispositivo Android usando la crittografia
 
@@ -33,8 +33,8 @@ Un telefono di cui si annulla la registrazione rimarrà crittografato.
 
 1.  Assicurarsi che per il dispositivo sia stato impostato un PIN o una password per il blocco dello schermo.
 
-2.  In **Impostazioni** scegliere **Sicurezza** &gt; **Crittografa dispositivo**.
-    In alcuni telefoni è necessario fare clic su **Memoria** &gt; **Crittografia memoria** o **Memoria** &gt; **Schermata di blocco e Sicurezza** &gt; **Altre impostazioni di sicurezza** per trovare l'opzione "Crittografia".
+2.  In **Impostazioni** scegliere **Sicurezza** > **Esegui crittografia dispositivo**.
+    In alcuni telefoni è necessario fare clic su **Memoria** > **Crittografia memoria** o **Memoria** > **Schermata di blocco e sicurezza** > **Altre impostazioni di sicurezza** per trovare l'opzione "Crittografia".
 
 3.  Seguire le istruzioni visualizzate. Durante la crittografia il dispositivo potrebbe essere riavviato più volte.
 
@@ -54,14 +54,16 @@ Un telefono di cui si annulla la registrazione rimarrà crittografato.
 - Assicurarsi di aver impostato un PIN o una password nel dispositivo.
 - Se il PIN o la password sono già impostati nel dispositivo, provare i passaggi seguenti che l'amministratore IT potrebbe richiedere per rendere più sicuro il dispositivo. I nomi dei menu visualizzati potrebbero essere leggermente diversi da quelli riportati nelle procedure, a seconda del tipo di dispositivo Android in uso.
 
-    1. Toccare **Impostazioni** > **Sicurezza** > **Blocco schermo**. Confermare il PIN o la password corrente.
+    1. Passare a **Impostazioni** > **Schermata di blocco e sicurezza** > **Blocco schermo**. Confermare il PIN o la password corrente.
 
-    2. In **Selezione blocco schermo** scegliere il tipo di blocco schermo da usare.
+    2. In **Selezione blocco schermo** scegliere il tipo di blocco schermo da usare. 
 
-    3. Nella schermata di **avvio protetto** toccare **Richiedi PIN per avviare il dispositivo**, quindi toccare **Continua**.
+    3. Dopo aver scelto il blocco dello schermo, tornare a **Schermata di blocco e sicurezza** e selezionare **Avvio protetto**. 
+    
+    4. Nella schermata di **avvio protetto** toccare **Richiedi PIN per avviare il dispositivo**, quindi toccare **Continua**.
 
-    4. Scegliere un PIN, ad esempio quello immesso in precedenza, e toccare **Conferma PIN**.
+    5. Scegliere un PIN, ad esempio quello immesso in precedenza, e toccare **Conferma PIN**.
 
-    5. Aprire l'app Portale aziendale, selezionare il dispositivo e toccare **Controlla conformità**.
+    6. Aprire l'app Portale aziendale, selezionare il dispositivo e toccare **Controlla conformità**.
 
 Serve ancora assistenza? Contattare l'amministratore IT (accedere al [sito Web del portale aziendale](http://portal.manage.microsoft.com) per informazioni sui contatti) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.

@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: dcc97e5bcffb35752b65e8ce275d38b9578da6fa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: 3514b580a4e35cc9e0813d6dd7fd0e1eee550d7c
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="enrollment-options-for-intune"></a>Opzioni di registrazione per Intune
 
@@ -41,6 +41,9 @@ Per la registrazione di dispositivi iOS e macOS, è necessario un certificato pu
 ## <a name="corporate-identifiers"></a>Identificatori aziendali
 
 Per identificare i dispositivi di proprietà dell'azienda, è possibile elencare i numeri IMEI (International Mobile Equipment Identifier) e i numeri di serie. Altre informazioni sugli [identificatori aziendali](corporate-identifiers-add.md).
+## <a name="multi-factor-authentication"></a>Multi-Factor Authentication
+
+È possibile richiedere agli utenti di usare un metodo di verifica aggiuntivo, ad esempio un telefono, un PIN o informazioni biometriche, quando registrano un dispositivo. Altre informazioni sull'[autenticazione a più fattori](multi-factor-authentication.md).
 
 ## <a name="device-enrollment-manager"></a>Manager di registrazione dispositivi
 È possibile impostare gli utenti come manager di registrazione dispositivi.  Gli utenti manager di registrazione dispositivi possono registrare un numero elevato di dispositivi mobili con un singolo account utente. L'account del manager di registrazione dispositivi consente di registrare fino a 1.000 dispositivi. Altre informazioni sui [manager di registrazione dispositivi](device-enrollment-manager-enroll.md).

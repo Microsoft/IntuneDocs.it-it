@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e12792445b36ba6657cbe6b2f6c924f6d97fe3c
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="reference-for-application-entities"></a>Informazioni di riferimento per le entità della categoria Application
 
@@ -52,9 +52,9 @@ L'entità **AppRevision** elenca tutte le versioni di un'app.
 | IsCurrent |Indica se la versione dell'app è corrente o no nel data warehouse |True/False |
 | RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica della versione dell'app nel data warehouse |23/11/2016 12.00.00 |
 
-## <a name="appinstallertypes"></a>AppInstallerTypes
+## <a name="apptypes"></a>AppTypes
 
-L'entità **AppInstallerTypes** elenca l'origine dell'installazione di un'app.
+L'entità **AppTypes** elenca l'origine dell'installazione di un'app.
 
 | Proprietà  | Descrizione |
 |---------|------------|
@@ -80,44 +80,6 @@ L'entità **AppInstallerTypes** elenca l'origine dell'installazione di un'app.
 | 11 |Windows Mobile MSI |Un'app line-of-business MSI |
 | 12 |App line-of-business di Windows Phone |Un'app line-of-business di Windows Phone |
 
-## <a name="applicationtypes"></a>ApplicationTypes
-
-L'entità **ApplicationTypes** elenca i tipi possibili per un'app.
-
-| Proprietà  | Descrizione |
-|---------|------------|
-| ApplicationTypeID |ID per il tipo |
-| ApplicationTypeKey |Chiave surrogata per la chiave |
-| ApplicationTypeName |Tipo di App |
-
-## <a name="example"></a>Esempio
-
-| ApplicationTypeID  | Nome | Descrizione |
-|---------|------------|--------|
-| 0 |InHouse |App sviluppata internamente |
-| 1 |DeepLink |Collegamento a un'app in un App Store |
-| 2 |WebLink |Collegamento all'app web |
-
-## <a name="managedsoftwaretypes"></a>ManagedSoftwareTypes
-
-L'entità **ManagedSoftwareTypes** elenca i possibili tipi di software gestito per un'app.
-
-| Proprietà  | Descrizione |
-|---------|------------|
-| SoftwareTypeID |ID per il tipo |
-| SoftwareTypeKey |Chiave surrogata per la chiave |
-| SoftwareTypeName |Tipo di software |
-
-## <a name="example"></a>Esempio
-
-| SoftwareTypeID  | Nome | Descrizione |
-|---------|------------|--------|
-| 0 |Desktop |Un'app desktop |
-| 2 |Aggiornamento/Aggiornare |Un aggiornamento della finestra |
-| 5 |SideCarAgent | |
-| 1 |Mobile |Un'app per dispositivi mobili |
-| 3 |WebLink |Un collegamento Web |
-| 4 |VppDeepLink |Un collegamento a un'app nell'App Store che fa parte di un VPP (Volume Purchase Program) |
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 

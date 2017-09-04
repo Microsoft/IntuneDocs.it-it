@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8197e03e8a3eb42c6a5be3b6357d959ed9428454
-ms.sourcegitcommit: 0e012f25fb22124f66193f20f244362493c6b8bb
+ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
+ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Abilitare la registrazione di dispositivi iOS con Apple School Manager
 
@@ -103,18 +103,16 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 
     - **Supervisione eseguita**: modalità di gestione che attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita. Se si lascia vuota la casella di controllo, le funzionalità di gestione saranno limitate.
 
-    - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disattiva le impostazioni iOS che potrebbero permettere la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni.
+     - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disattiva le impostazioni iOS che potrebbero permettere la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni.
+   - **iPad condiviso**: richiede le modalità **Registra senza affinità utente** e **Supervisione eseguita**. Consente a più utenti di eseguire l'accesso agli iPad registrati usando un ID Apple gestito. Gli ID Apple gestiti sono creati nel portale Apple School Manager. Altre informazioni sull'[iPad condiviso](education-settings-configure-ios-shared.md).
+   >[!NOTE]
+   >Se **Affinità utente** è impostata su **Con affinità utente** o la modalità **Supervisione eseguita** è impostata su **Disattivato**, la modalità iPad condiviso è disabilitata per il profilo di registrazione.
 
-  - **iPad condiviso**: richiede le modalità **Registra senza affinità utente** e **Supervisione eseguita**. Consente a più utenti di eseguire l'accesso agli iPad registrati usando un ID Apple gestito. Gli ID Apple gestiti sono creati nel portale Apple School Manager.
-
-  >[!NOTE]
-  >Se **Affinità utente** è impostata su **Con affinità utente** o la modalità **Supervisione eseguita** è impostata su **Disattivato**, la modalità iPad condiviso è disabilitata per il profilo di registrazione.
-
-  - **Numero massimo di utenti memorizzati nella cache**: richiede **iPad condiviso** = **Sì**. Crea una partizione nel dispositivo per ogni utente. Il valore consigliato è il numero di studenti che potrebbero usare il dispositivo in un determinato periodo di tempo. Se ad esempio il dispositivo viene usato regolarmente da sei studenti nel corso della settimana, impostare questo numero su sei.  
+        - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
 
     - **Consenti associazione**: specifica se i dispositivi iOS possono sincronizzarsi con i computer. Se si sceglie **Consenti Apple Configurator per certificato**, è necessario selezionare un certificato in **Certificati di Apple Configurator**.
 
-    - **Certificati di Apple Configurator**: se si è scelto **Consenti Apple Configurator per certificato**  in **Consenti associazione**, scegliere un certificato di Apple Configurator da importare.
+      - **Certificati di Apple Configurator**: se si è scelto **Consenti Apple Configurator per certificato**  in **Consenti associazione**, scegliere un certificato di Apple Configurator da importare.
 
 7. Scegliere **Impostazioni dell'Assistente configurazione**, configurare le impostazioni del profilo seguenti e quindi scegliere **Salva**:
 

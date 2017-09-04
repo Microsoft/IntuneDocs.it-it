@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni su quali aggiornamenti sono stati apportati all'interfaccia utente per le app che gli utenti finali vedranno in questa versione di Microsoft Intune. Queste informazioni sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.
+
+## <a name="week-of-august-14-2017"></a>Settimana del 14 agosto 2017
+
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Aggiornamenti alla pagina "Dettagli dispositivo" nell'app Portale aziendale per Windows 10
+
+L'app Portale aziendale per Windows 10 ha spostato il tag __Categoria__ da sotto il titolo a una proprietà nella pagina __Dettagli dispositivo__.
+
+![La schermata "Dettagli dispositivo" dell'app Portale aziendale per Windows, ora mostra il campo "Categorie" come una proprietà anziché direttamente sotto il titolo della schermata.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>Settimana del 31 luglio 2017
 
