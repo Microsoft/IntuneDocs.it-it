@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 78352c995311f5b097954ce86098165408d5d810
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: a08296770ee3a326411d3267705ed6a912ab17bd
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -40,7 +40,7 @@ Di seguito vengono presentati prima di tutto alcuni concetti fondamentali per l'
 > Intune consiglia di aggiungere l'app Portale aziendale all'elenco delle app escluse per consentire il corretto funzionamento dell'app. A tale scopo, aggiungere l'**app Store** seguente all'elenco **App escluse**:  
 >   - Nome: Portale aziendale  
 >   - Editore: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
->   - Nome prodotto: Microsoft.CompanyPortal"  
+>   - Nome prodotto: Microsoft.CompanyPortal  
 
 
 ### <a name="types-of-apps"></a>Tipi di app
