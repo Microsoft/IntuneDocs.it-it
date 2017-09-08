@@ -1,11 +1,11 @@
 ---
-title: "È necessario installare Skycure nel dispositivo Android | Microsoft Docs"
-description: 
+title: "È necessario installare Symantec Endpoint Protection Mobile sul dispositivo Android | Microsoft Docs"
+description: Informazioni su come installare SEP Mobile sul dispositivo Android in uso.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 08/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,43 +14,43 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 531963056c4e488865b1c51b76e6b9ce97fe2eb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f94a7cdb4feeea19527efec6486d09efcaca9b67
+ms.sourcegitcommit: 1135765fd3ac2149663341d8107f656aba236493
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/30/2017
 ---
-# <a name="you-need-to-install-skycure-on-your-android-device"></a>È necessario installare Skycure nel dispositivo Android
+# <a name="you-need-to-install-symantec-endpoint-protection-mobile-on-your-android-device"></a>È necessario installare Symantec Endpoint Protection Mobile sul dispositivo Android
 
-Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di installare l'app Skycure che consente di proteggere il dispositivo tramite la ricerca di potenziali minacce alla protezione.
+Per l'accesso ai dati aziendali l'amministratore IT richiede di installare l'app Symantec Endpoint Protection (SEP), che consente di proteggere il dispositivo rilevando potenziali minacce per la sicurezza.
 
-Se si verificano problemi con l'installazione, attenersi alla procedura di risoluzione dei problemi alla fine di questo argomento.
+Se si verificano problemi con l'installazione, seguire la procedura di risoluzione dei problemi alla fine di questo argomento.
 
 **Eseguire le operazioni seguenti:**
 
 1. Trascinare verso il basso dalla parte superiore della schermata per aprire la barra Notifiche e quindi toccare **Applicazione richiesta - Installa Skycure da Play Store**. È anche possibile accedere a questa app dall'interno dell'app Portale aziendale in __Dettagli conformità__.
 
-  ![Pagina dei dettagli di conformità in un dispositivo Android. Il dispositivo non è conforme, con un messaggio nella parte inferiore della pagina del portale aziendale che indica che il dispositivo non soddisfa i criteri di rischio per dispositivi mobili e che è necessario aprire Skycure per risolvere il problema.](./media/skycure-resolves-compliance-android.png)
+  <!--![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)-->
 
-2. Verrà visualizzata la pagina di installazione di Skycure in Play Store. Installare Skycure e quindi toccare **ACCEPT** (ACCETTA) per consentire a Skycure di accedere al dispositivo.
+2. Verrà visualizzata la pagina di installazione di SEP Mobile in Play Store. Installare SEP Mobile e quindi toccare **ACCEPT** (ACCETTA) per consentire a SEP Mobile di accedere al dispositivo.
 
-3. Aprire Skycure e quindi toccare **VERIFY** (VERIFICA).
+3. Aprire SEP Mobile e quindi toccare **VERIFY** (VERIFICA).
 
 4. Toccare **Sign in with Azure Active Directory** (Accedi con Azure Active Directory) e immettere l'account usato per accedere alla posta elettronica e ai file aziendali o dell'istituto di istruzione.
 
 5. Selezionare l'account usato per accedere all'e-mail e ai file di lavoro o scuola e quindi toccare **ADD ACCOUNT**.
 
-6. Toccare **Accept** (Accetta) per autorizzare Skycure a eseguire l'accesso e a leggere il profilo personale.
+6. Toccare **Accept** (Accetta) per autorizzare SEP Mobile a eseguire l'accesso e a leggere il profilo personale.
 
-7. Rivedere le informazioni sulla protezione del dispositivo offerta da Skycure e quindi toccare **OK**. La configurazione di Skycure richiederà alcuni minuti e in seguito verrà avviato il controllo delle minacce per la sicurezza nel dispositivo.
+7. Rivedere le informazioni sulla protezione del dispositivo di SEP Mobile e quindi toccare **OK**. La configurazione di SEP Mobile richiede alcuni minuti, dopodiché viene avviato il controllo delle minacce per la sicurezza nel dispositivo.
 
-  Skycure avvia immediatamente una ricerca delle minacce per la sicurezza nel dispositivo.
+8. SEP Mobile avvia immediatamente una ricerca delle minacce per la sicurezza nel dispositivo.
 
-  ![Skycure analizza il dispositivo per individuare eventuali minacce per la sicurezza.](./media/skycure-scan-in-progress-android.png)
+  <!--![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)-->
 
-  Se Skycure rileva una minaccia per la sicurezza nel dispositivo, verranno visualizzate le istruzioni per la risoluzione del problema.
+  Se SEP Mobile rileva una minaccia per la sicurezza nel dispositivo vengono visualizzate le istruzioni per la risoluzione del problema.
 
-  ![Skycure ha rilevato una minaccia per la sicurezza.](./media/skycure-found-a-threat-android.png)
+  <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
 
   Se non viene trovata alcuna minaccia, tutti e tre i tipi di minacce saranno visualizzati in verde.
 
@@ -60,6 +60,6 @@ Se si verificano problemi con l'installazione, attenersi alla procedura di risol
 
 **Se l'installazione non riesce**
 
-Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso, provare a installare Skycure [manualmente da Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
+Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso provare a installare SEP Mobile [manualmente da Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).

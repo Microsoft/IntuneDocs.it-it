@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Modalità di recupero delle app per gli utenti di Android
 
@@ -50,9 +50,9 @@ In questo caso, l'app Portale aziendale informerà l'utente e lo assisterà per 
 
 Le app possono essere gestite o non gestite, come descritto di seguito. Il processo per rendere le app gestite è lo stesso per tutti i tipi di dispositivi Android.
 
-**App gestite**: queste app possono essere gestite tramite criteri. Sono state integrate in Intune o sono state compilate con l'SDK (Software Development Kit) della gestione delle applicazioni mobili di Intune (MAM). Queste app possono essere gestite da Intune ed è possibile applicarvi criteri dell'applicazione.
+**App gestite**: queste app possono essere gestite tramite criteri. Sono state sottoposte a wrapping da Intune o compilate con Intune App SDK. Queste app possono essere gestite da Intune ed è possibile applicarvi criteri dell'applicazione.
 
-**App non gestite**: queste app non possono essere gestite tramite criteri. Non sono state integrate in Intune o non comprendono l'SDK della gestione delle applicazioni mobili di Intune. Non è possibile applicare i criteri dell'applicazione a queste app.
+**App non gestite**: queste app non possono essere gestite tramite criteri. Non sono state sottoposte a wrapping da Intune o non includono Intune App SDK. Non è possibile applicare i criteri dell'applicazione a queste app.
 
 ### <a name="see-also"></a>Vedere anche
 [Aggiungere app con Microsoft Intune](apps-add.md)

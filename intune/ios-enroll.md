@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/15/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61bdbc7ca68995e23295cf099ce73dfdcaeba37c
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 8bae9bd48493f20bb4abb94290013f27a6a75dd6
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrare i dispositivi iOS in Intune
 
@@ -32,7 +32,19 @@ Prima di abilitare i dispositivi iOS, completare i passaggi seguenti:
 - [Configurare Intune](setup-steps.md): questi passaggi consentono di impostare l'infrastruttura Intune. In particolare, per la registrazione del dispositivo è necessario [impostare l'autorità di gestione dei dispositivi mobili](mdm-authority-set.md).
 - [Ottenere un certificato push MDM di Apple](apple-mdm-push-certificate-get.md): Apple richiede un certificato per abilitare la gestione dei dispositivi iOS e macOS.
 
-Dopo aver completato i prerequisiti, gli utenti possono installare l'app Portale aziendale per registrare i propri dispositivi iOS personali. In alternativa, l'amministratore può configurare la gestione dei dispositivi iOS di proprietà dell'azienda. Gli amministratori possono anche assegnare [manager di registrazione dispositivi](device-enrollment-manager-enroll.md) che possono registrare più dispositivi con un account di gestione singolo. Intune supporta i metodi di registrazione dei dispositivi iOS di proprietà dell'azienda seguenti:
+## <a name="user-owned-ios-devices-byod"></a>Dispositivi iOS di proprietà dell'utente (BYOD)
+
+È possibile consentire agli utenti di registrare i dispositivi personali per la gestione di Intune, una funzionalità nota come BYOD (Bring Your Own Device, Usa dispositivo personale). Dopo aver completato i prerequisiti e assegnato le licenze, gli utenti possono scaricare l'app Portale aziendale iOS dall'App Store e seguire le istruzioni di registrazione nell'app.
+
+## <a name="company-owned-ios-devices"></a>Dispositivi iOS di proprietà dell'azienda
+Per le organizzazioni che acquistano dispositivi per i propri utenti, Intune supporta i seguenti metodi di registrazione dei dispositivi iOS di proprietà dell'azienda:
+
+- Device Enrollment Program (DEP) di Apple
+- Apple School Manager
+- Registrazione con Assistente configurazione e Apple Configurator
+- Registrazione diretta con Apple Configurator
+
+È anche possibile registrare i dispositivi iOS di proprietà dell'azienda con un account [Manager di registrazione dispositivi](device-enrollment-manager-enroll.md).
 
 ## <a name="device-enrollment-program"></a>Programma di registrazione dispositivi
 Le organizzazioni possono ora acquistare i dispositivi iOS tramite Device Enrollment Program (DEP) di Apple. DEP consente di distribuire un profilo di registrazione in modalità wireless per portare i dispositivi nella gestione. Altre informazioni su [Device Enrollment Program](device-enrollment-program-enroll-ios.md).

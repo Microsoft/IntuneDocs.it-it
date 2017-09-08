@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,67 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni su quali aggiornamenti sono stati apportati all'interfaccia utente per le app che gli utenti finali vedranno in questa versione di Microsoft Intune. Queste informazioni sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.
 
+## <a name="week-of-august-28-2017"></a>Settimana del 28 agosto 2017
+
+
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>L'app di posta elettronica iOS 11 supporta OAuth <!---1196951--->
+
+L'accesso condizionale con Intune supporta un'autenticazione più sicura sui dispositivi iOS con OAuth. Per il supporto di questa funzionalità il flusso di lavoro nell'app Portale aziendale per iOS è stato modificato, per consentire un'autenticazione più sicura. Quando gli utenti finali tentano di accedere a un nuovo account di Exchange nell'app della posta elettronica, appare una richiesta di visualizzazione Web. Al momento della registrazione in Intune gli utenti visualizzano una richiesta per consentire all'app di posta elettronica nativa l'accesso a un certificato. La maggior parte degli utenti finali non visualizza più i messaggi di posta elettronica di quarantena. Gli account di posta elettronica esistenti continuano a usare il protocollo di autenticazione di base, pertanto gli utenti di questi account ricevono comunque i messaggi di posta elettronica di quarantena. Questa esperienza di accesso per gli utenti finali è simile a quella delle app Office per dispositivi mobili.
+
+![Selezione del tipo di account nell'app di posta elettronica nativa.](./media/ios-11-ca-email-after-1708-01.png)
+
+![Dopo la selezione di Exchange il dispositivo iOS richiede l'indirizzo di posta elettronica e il nome account.](./media/ios-11-ca-email-after-1708-02.png)
+
+![Specificare l'indirizzo di posta elettronica e il nome dell'account.](./media/ios-11-ca-email-after-1708-03.png)
+
+![Dati inviati al log esterno Microsoft nella pagina.](./media/ios-11-ca-email-after-1708-04.png)
+
+![Immissione della password nella pagina Microsoft.](./media/ios-11-ca-email-after-1708-05.png)
+
+![Microsoft richiede all'utente di registrare il dispositivo per la gestione.](./media/ios-11-ca-email-after-1708-06.png)
+
+![Dal sito Web del Portale aziendale viene richiesto all'utente di effettuare la registrazione.](./media/ios-11-ca-email-after-1708-07.png)
+
+## <a name="week-of-august-21-2017"></a>Settimana del 21 agosto 2017
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Le finestre di dialogo per la gestione delle applicazioni mobili di Intune ora hanno un'interfaccia moderna <!-- 1199015 -->
+
+Le finestre di dialogo per la gestione delle applicazioni mobili di Intune sono state aggiornate con uno stile più moderno. Le finestre di dialogo funzionano nello stesso modo di quelle con lo stile precedente.
+
+**Esperienza precedente**
+
+![Interfaccia precedente](./media/NewUI_Old_AttachFileHandler.jpg)
+
+**Esperienza moderna**
+
+![Interfaccia moderna](./media/NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>Settimana del 14 agosto 2017
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Aggiornamenti alla pagina "Dettagli dispositivo" nell'app Portale aziendale per Windows 10
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Aggiornamenti alla pagina "Dettagli dispositivo" nell'app Portale aziendale per Windows 10 <!---1287448--->
 
 L'app Portale aziendale per Windows 10 ha spostato il tag __Categoria__ da sotto il titolo a una proprietà nella pagina __Dettagli dispositivo__.
 
 ![La schermata "Dettagli dispositivo" dell'app Portale aziendale per Windows, ora mostra il campo "Categorie" come una proprietà anziché direttamente sotto il titolo della schermata.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>Settimana del 31 luglio 2017
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Le pagine dei dettagli delle app visualizzano nuove informazioni per i dispositivi Android <!--1287476-->
+
+La pagina dei dettagli nell'app Portale aziendale per Android visualizza le categorie di app definite dall'amministratore IT per l'app stessa.
+
+![Nuova pagina dei dettagli dell'app](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Migliorata l'esperienza di accesso nelle app del portale aziendale per tutte le piattaforme <!--User Story 1132123-->
 
@@ -128,7 +170,7 @@ In risposta al feedback degli utenti, per l'app Portale aziendale per Android è
 
 ## <a name="week-of-june-5-2017"></a>Settimana del 5 giugno 2017
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>Miglioramenti dei riquadri dell'app Portale aziendale per iOS
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Miglioramenti dei riquadri dell'app Portale aziendale per iOS <!--1230777-->
 È stata aggiornata la progettazione dei riquadri dell'app nella home page in modo che rispecchino il colore personalizzato impostato per Portale aziendale.
 
 **Prima**
