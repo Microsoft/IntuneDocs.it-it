@@ -1,6 +1,6 @@
 ---
 title: Come configurare le impostazioni Wi-Fi di Intune
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: Informazioni su come usare Intune per configurare le connessioni Wi-Fi nei dispositivi gestiti."
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0e191fe443757a5ea43ccc2b4ef2e9cb331b2142
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2c2417c4739a85c30fa18c000ee06fac6fe83282
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Come configurare le impostazioni Wi-Fi in Microsoft Intune
 
@@ -60,7 +60,7 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
     - **Windows 8.1 e versioni successive (importazione di un profilo)**
 6. Dall'elenco a discesa dei tipi di **profilo** scegliere **Wi-Fi di base** o **Wi-Fi aziendale**.
     >[!TIP]
-    >Usare **Wi-Fi di base** per fornire informazioni di base quali il nome della rete e l'SSID. **Wi-Fi aziendale** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi lo usa. **Wi-Fi per importazione**  (per Windows 8.1 e Windows 10) consente di importare le impostazioni Wi-Fi come un file XML precedentemente esportato da un altro dispositivo.
+    >Usare **Wi-Fi di base** per fornire informazioni di base quali il nome della rete e l'SSID. **Wi-Fi aziendale** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi lo usa. **Wi-Fi per importazione ** (per Windows 8.1 e Windows 10) consente di importare le impostazioni Wi-Fi come un file XML precedentemente esportato da un altro dispositivo.
 7. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli argomenti seguenti per il dettaglio delle impostazioni di ogni piattaforma:
     - [Impostazioni Android e Android for Work](wi-fi-settings-android.md)
     - [Impostazioni iOS](wi-fi-settings-ios.md)

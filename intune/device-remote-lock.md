@@ -1,6 +1,6 @@
 ---
 title: Bloccare in remoto i dispositivi gestiti con Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informazioni su come usare Intune per bloccare in remoto i dispositivi gestiti."
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab885fa6f693e65295986c182353f4918024281f
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: 6c5d282efbd3b0fe90c93ec813f2f513c1932a6e
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remotely-lock-managed-devices-with-intune"></a>Bloccare in remoto i dispositivi gestiti con Intune
 

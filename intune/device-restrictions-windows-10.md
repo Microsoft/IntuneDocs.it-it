@@ -1,6 +1,6 @@
 ---
 title: Impostazioni relative alle restrizioni dei dispositivi per Windows 10
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Informazioni sulle opzioni di Intune che è possibile usare per controllare le impostazioni e le funzionalità del dispositivo in dispositivi Windows 10.\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e0bbbdfae73dfd843f4b011cecf0217d2c6eb699
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 182088fa7c99f9f933d2228c0cdcf6a29aa4d727
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows 10 e versioni successive in Microsoft Intune
 
@@ -179,7 +179,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
     -   **Giochi**: blocca l'accesso all'app Giochi in Impostazioni.
     -   **Accessibilità**: blocca l'accesso all'area accessibilità dell'app Impostazioni.
     -   **Riservatezza**: blocca l'accesso all'area riservatezza dell'app Impostazioni.
-    -   **Aggiornamento e sicurezza** : blocca l'accesso all'area Aggiornamento e sicurezza dell'app Impostazioni.
+    -   **Aggiornamento e sicurezza **: blocca l'accesso all'area Aggiornamento e sicurezza dell'app Impostazioni.
 
 ## <a name="defender"></a>Defender
 

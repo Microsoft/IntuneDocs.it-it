@@ -1,6 +1,6 @@
 ---
 title: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Creare e distribuire criteri di protezione delle app WIP con Intune
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
-ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
+ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -102,7 +102,7 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 5.  Dopo aver immesso le informazioni nei campi, scegliere **OK** per aggiungere l'app all'elenco **App consentite**.
 
 > [!NOTE]
-> Per aggiungere più app dello Store contemporaneamente, è possibile fare clic sul menu **(...)**  alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
+> Per aggiungere più app dello Store contemporaneamente, è possibile fare clic sul menu **(...) ** alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Aggiungere un'app desktop all'elenco delle app consentite
 

@@ -1,6 +1,6 @@
 ---
 title: Configurare e gestire i certificati PKCS con Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informazioni su come configurare l'infrastruttura e quindi creare e assegnare i certificati PKCS con Intune."
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1dff7d3e00b26b4f186beb71bacf13738ac857a3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Configurare e gestire i certificati PKCS con Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -44,7 +44,7 @@ Per usare i profili di certificato PKCS, oltre all'autorità di certificazione d
 
 -  **Computer che possono comunicare con Autorità di certificazione**: in alternativa, è possibile usare il computer dell'autorità di certificazione stessa.
 -  **Connettore di certificati di Microsoft Intune**: dal portale di Azure scaricare il programma di installazione di **Connettore di certificati** (**ndesconnectorssetup.exe**). È quindi possibile eseguire **ndesconnectorssetup.exe** nel computer in cui si vuole installare Connettore di certificati. Per i profili di certificato PKCS installare il Connettore di certificati nel computer che comunica con l'autorità di certificazione.
--  **Server Proxy applicazione Web**  (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versione successiva come Server Proxy applicazione Web (WAP). Questa configurazione:
+-  **Server Proxy applicazione Web ** (facoltativo): è possibile usare un server che esegue Windows Server 2012 R2 o versione successiva come Server Proxy applicazione Web (WAP). Questa configurazione:
     -  Consente ai dispositivi di ricevere i certificati usando una connessione Internet.
     -  Vale come raccomandazione di sicurezza quando i dispositivi usano la connessione a Internet per ricevere e rinnovare i certificati.
 
