@@ -1,6 +1,6 @@
 ---
 title: Come usare le categorie di dispositivi in Intune
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: Informazioni su come usare le categorie di dispositivi che gli utenti possono scegliere quando registrano i dispositivi in Intune."
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c5d97499545d0ad3899f28ed4e88eb4dc1fe734
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: 00becba338f9a64e341b0b6d220b1a4ace3b40a9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="map-device-groups"></a>Mappare gruppi di dispositivi
 
@@ -56,7 +56,7 @@ In questo passaggio verranno creati gruppi dinamici nel portale di Azure, basati
 
 Per continuare, vedere l'argomento [Utilizzo degli attributi per creare regole avanzate](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) nella documentazione di Azure Active Directory. 
 
-Usare le informazioni in questa sezione per creare un gruppo di dispositivi con una regola avanzata usando l'attributo **deviceCategory**. Ad esempio (**device.deviceCategory -eq** "*<the device category name you got from the Intune portal>*")
+Usare le informazioni in questa sezione per creare un gruppo di dispositivi con una regola avanzata usando l'attributo **deviceCategory**. Ad esempio (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
 Dopo aver configurato i gruppi di dispositivi, e dopo che gli utenti hanno registrato i loro dispositivi, viene visualizzato un elenco delle categorie configurate. Dopo che gli utenti hanno scelto una categoria e completato la registrazione, il loro dispositivo viene aggiunto al gruppo di sicurezza di Active Directory corrispondente alla categoria selezionata.
 

@@ -1,6 +1,6 @@
 ---
 title: Configurare la registrazione al programma Apple School Manager per i dispositivi iOS
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Informazioni su come configurare la registrazione al programma Apple School Manager per i dispositivi iOS di proprietà dell'azienda con Intune\""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
-ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
+ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Abilitare la registrazione di dispositivi iOS con Apple School Manager
 
@@ -71,7 +71,7 @@ Per registrare i dispositivi iOS di proprietà dell'azienda in Apple School Mana
 5.  Scegliere **Ottieni token** e quindi scaricare il file token del server (con estensione p7m) nel computer.
 6. Passare ad **Assegnazioni di dispositivi** e **scegliere il dispositivo** inserendo manualmente i **numeri di serie**, il **numero di ordine** o **caricando un file CSV**.
      ![Screenshot del portale di Apple School Manager con l'opzione del numero di serie selezionata](./media/asm-device-assignment.png)
-7.  Scegliere l'azione **Assegna al server**  e scegliere il **server MDM** creato.
+7.  Scegliere l'azione **Assegna al server ** e scegliere il **server MDM** creato.
 8. Specificare come **scegliere i dispositivi** e quindi fornire dettagli e informazioni sul dispositivo.
 9. Scegliere **Assegna al server**, selezionare il &lt;nome del server&gt; specificato per Microsoft Intune e fare clic su **OK**.
 
@@ -86,7 +86,7 @@ Passare al file del certificato (con estensione p7m), scegliere **Apri** e quind
 Un profilo di registrazione dispositivi consente di definire le impostazioni applicate a un gruppo di dispositivi durante la registrazione.
 
 1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** e quindi scegliere **Registrazione Apple**.
-2. In **Programma di registrazione**  scegliere **Profili DEP**.
+2. In **Programma di registrazione ** scegliere **Profili DEP**.
 3. Nel pannello **Profili DEP** scegliere **Crea**.
 4. Nel pannello **Crea un profilo di registrazione** immettere un **nome** e una **descrizione** per il profilo visualizzato in Intune.
 5. Per **Affinità utente**, scegliere se i dispositivi con questo profilo verranno registrati con o senza affinità utente.
@@ -112,7 +112,7 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 
     - **Consenti associazione**: specifica se i dispositivi iOS possono sincronizzarsi con i computer. Se si sceglie **Consenti Apple Configurator per certificato**, è necessario selezionare un certificato in **Certificati di Apple Configurator**.
 
-      - **Certificati di Apple Configurator**: se si è scelto **Consenti Apple Configurator per certificato**  in **Consenti associazione**, scegliere un certificato di Apple Configurator da importare.
+      - **Certificati di Apple Configurator**: se si è scelto **Consenti Apple Configurator per certificato ** in **Consenti associazione**, scegliere un certificato di Apple Configurator da importare.
 
 7. Scegliere **Impostazioni dell'Assistente configurazione**, configurare le impostazioni del profilo seguenti e quindi scegliere **Salva**:
 

@@ -1,6 +1,6 @@
 ---
 title: Come aggiungere app line-of-business per Windows Phone in Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informazioni sull'aggiunta di app line-of-business per Windows Phone a Intune."
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f7a38f811c1e8b1a3a93bdb733642c02f07bfc
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 32ce7f134d2774483023c090caa6ef2b4d422604
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per Windows Phone in Microsoft Intune
 

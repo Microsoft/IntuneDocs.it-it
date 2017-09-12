@@ -1,12 +1,12 @@
 ---
 title: Gestire i dispositivi con Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informazioni su come visualizzare i dispositivi gestiti con Intune ed eseguire diverse operazioni su tali dispositivi."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 08/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d78b4a87eaa366b7bb00356c4b98d609620dcf3
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: ca40eee8a53fa3e8b2610ce414f0037180d4beaf
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Informazioni sulla gestione dei dispositivi in Microsoft Intune
 
@@ -39,7 +39,7 @@ Le azioni disponibili dipendono dalla piattaforma del dispositivo e dalla config
 - Eseguire azioni remote per i dispositivi:
     - [Rimuovi i dati aziendali](devices-wipe.md#remove-company-data)
     - [Ripristino impostazioni predefinite](devices-wipe.md#factory-reset)
-    - [Blocco remoto](device-remote-lock.md) 
+    - [Blocco remoto](device-remote-lock.md)
     - [Reimposta passcode](device-passcode-reset.md)
     - [Bypass del blocco attivazione](device-activation-lock-bypass.md) (solo iOS)
     - [Fresh Start](device-fresh-start.md) (solo Windows)

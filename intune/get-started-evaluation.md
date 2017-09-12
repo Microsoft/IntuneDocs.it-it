@@ -1,10 +1,10 @@
 ---
 title: Introduzione a Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Ecco una serie di esercizi pratici per acquisire informazioni su Intune.
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5dc7a76ddac12dd3e002c8780541d3dd4e976896
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: abfd1c1a05ce0eac3e6ab835d6ac8b017c9a6d77
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Che cosa può fare Intune per la mia azienda?
 
@@ -27,7 +27,7 @@ Intune è un servizio di gestione della mobilità aziendale (EMM) basato su clou
 
 ![Diagramma dell'architettura di alto livello per Microsoft Intune](/intune/media/intunearchitecture.svg)
 
-Iniziare a gestire i dispositivi mobili può sembrare un'operazione complessa, dal momento che sarà necessario prendere numerose decisioni per conto dell'azienda. Questi esercizi illustrano alcune attività che aiutano l'utente a comprendere come usare Intune per proteggere le risorse aziendali. 
+Iniziare a gestire i dispositivi mobili può sembrare un'operazione complessa, dal momento che sarà necessario prendere numerose decisioni per conto dell'azienda. Questi esercizi illustrano alcune attività che aiutano l'utente a comprendere come usare Intune per proteggere le risorse aziendali.
 
 ## <a name="what-are-the-exercises"></a>Quali sono gli esercizi?
 
