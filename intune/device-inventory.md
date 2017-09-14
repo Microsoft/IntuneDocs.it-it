@@ -1,12 +1,12 @@
 ---
 title: Visualizzare l'inventario dei dispositivi di Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informazioni su come visualizzare i dispositivi gestiti con Intune ed esaminare l'hardware e le app installate corrispondenti."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 09/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3618c5ee0b4a7ff0e7b6a4d6ed58f77a2af0ba66
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: 45ef07d68248ab4c0c6f3a3e6e8da83cb210c5c7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>Come visualizzare l'inventario dei dispositivi di Intune
 
@@ -54,3 +54,4 @@ Scegliere una delle opzioni seguenti:
 
 >[!NOTE]
 > Intune raccoglie l'inventario solo delle app dei dispositivi di proprietà dell'azienda. Le app dei dispositivi personali non sono incluse nell'inventario. Per i PC Windows 10, viene raccolto solo l'inventario delle app moderne nei dispositivi di proprietà dell'azienda. Intune non raccoglie informazioni sulle app Win32 del dispositivo.
+> In base al gestore telefonico utilizzato con i dispositivi, è possibile che non siano raccolti tutti gli elementi dell'inventario.
