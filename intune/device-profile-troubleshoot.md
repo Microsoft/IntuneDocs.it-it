@@ -1,6 +1,6 @@
 ---
 title: Risolvere i problemi relativi ai profili di dispositivo in Microsoft Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Se si è rimasti bloccati, usare questo argomento per risolvere i problemi relativi ai profili di dispositivo Intune.\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 426bed61930e045f38e3c7c658dbb7168dc2f551
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Risolvere i problemi relativi ai profili di dispositivo in Microsoft Intune
 
@@ -59,7 +59,7 @@ Quando vengono assegnati due o più criteri per lo stesso utente o dispositivo, 
 
 -   L'impostazione di un criterio di conformità più restrittivo viene applicata se viene valutata rispetto alla stessa impostazione in un criterio di conformità diverso.
 
--   Se un'impostazione dei criteri di configurazione è in conflitto con un'impostazione di un altro criterio di configurazione, il conflitto viene visualizzato nella console di Intune. Tali conflitti devono essere risolti manualmente.
+-   Se un'impostazione dei criteri di configurazione è in conflitto con un'impostazione di un altro criterio di configurazione, il conflitto viene visualizzato nel portale di Azure. Tali conflitti devono essere risolti manualmente.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>Che cosa succede quando i criteri di protezione delle app sono in conflitto tra loro? Quale verrà applicato all'app?
 I valori in conflitto sono le impostazioni più restrittive disponibili in un criterio di protezione delle app, ad eccezione dei campi di immissione numerici (come il numero di tentativi di immissione del PIN prima della reimpostazione),  che verranno impostati sugli stessi valori configurati durante la creazione di un criterio MAM nella console usando l'opzione delle impostazioni consigliate.

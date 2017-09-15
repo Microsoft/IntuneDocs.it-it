@@ -1,6 +1,6 @@
 ---
 title: Iscriversi per una versione di valutazione gratuita di Microsoft Intune valida 30 giorni
-titleSuffix: 
+titleSuffix: Azure portal
 description: Come iscriversi per una versione di valutazione gratuita di Intune valida 30 giorni.
 keywords: 
 author: lindavr
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 21ee75ab006c1770bc61039facc28d8a0118e706
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Iscriversi per una versione di valutazione gratuita di Microsoft Intune
 
@@ -47,11 +47,11 @@ Quando si esegue l'iscrizione per una versione di valutazione, all'indirizzo di 
 Per il portale di Intune di Azure sono disponibili tre portali:
 - Il dashboard di Intune in Azure ([portal.azure.com](https://portal.azure.com)) in cui è possibile esplorare le [funzionalità di Intune nel portale di Azure](what-is-intune.md).
 - L'interfaccia di amministrazione di Office 365 ([portal.office.com](https://portal.office.com)) in cui è possibile aggiungere e gestire gli utenti se non si usa Azure Active Directory a tale scopo. È anche possibile gestire altri aspetti del proprio account, incluse la fatturazione e il supporto tecnico.
-- La console di amministrazione di Intune classica ([manage.microsoft.com](https://manage.microsoft.com)) in cui è possibile esplorare le funzionalità che non sono ancora state aggiunte ad Azure.
+- La console di amministrazione di Intune ([manage.microsoft.com](https://manage.microsoft.com)) in cui è possibile esplorare le funzionalità che non sono ancora state aggiunte ad Azure.
 
 In genere le operazioni vengono eseguite nel dashboard di Intune, illustrato di seguito. Questa console consente infatti di impostare e gestire i gruppi, i criteri, i dispositivi e le app.
 
-È possibile passare alla console di amministrazione di Intune classica dal dashboard scegliendo **Portale classico** nella parte superiore del dashboard.
+È possibile passare alla console di amministrazione di Intune dal dashboard scegliendo **Portale classico** nella parte superiore del dashboard.
 
 Per tornare al portale di Intune di Azure, immettere https://portal.azure.com nella barra degli indirizzi del browser e quindi scegliere di nuovo **Intune** nell'elenco dei servizi.
 
@@ -68,7 +68,7 @@ Per tornare all'interfaccia di amministrazione di Office 365 da Intune, immetter
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-### <a name="intune-on-azure"></a>Intune in Azure
+### <a name="intune-in-the-azure-portal"></a>Intune nel portale di Azure
 Altre informazioni su [Intune nel portale di Azure](what-is-intune.md)
 
 ### <a name="integration-with-other-products"></a>Integrazione con altri prodotti

@@ -1,6 +1,6 @@
 ---
 title: Portale del supporto tecnico per la risoluzione dei problemi
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Il personale del supporto tecnico usa il portale per risolvere i problemi tecnici degli utenti
 keywords: 
 author: NathBarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti
 
@@ -35,14 +35,14 @@ Ad esempio, quando un utente contatta il supporto tecnico per un problema tecnic
 -   Un errore di installazione dell'app
 
 ## <a name="add-help-desk-operators"></a>Aggiungere operatori del supporto tecnico
-Come amministratore di Intune, è possibile assegnare il ruolo Help Desk Operator (Operatore del supporto tecnico) a un gruppo di utenti. I membri del gruppo possono usare il portale di amministrazione per risolvere i problemi degli utenti. Ogni operatore del supporto tecnico deve avere una licenza di Intune per accedere al portale di Intune. Informazioni su come [assegnare le licenze di Intune](licenses-assign.md).
+Come amministratore di Intune, è possibile assegnare il ruolo Help Desk Operator (Operatore del supporto tecnico) a un gruppo di utenti. I membri del gruppo possono usare il portale di Azure per risolvere i problemi degli utenti. Ogni operatore del supporto tecnico deve avere una licenza di Intune per accedere al portale di Azure. Informazioni su come [assegnare le licenze di Intune](licenses-assign.md).
 
 Per aggiungere utenti al gruppo del supporto tecnico:
 1. [Aggiungere utenti a Intune](users-add.md) se necessario.
 2. [Creare un gruppo di operatori del supporto tecnico](groups-add.md) e aggiungere utenti al gruppo.
 3. [Assegnare il ruolo Operatore help desk per il controllo degli accessi in base al ruolo](role-based-access-control.md#built-in-roles).
 
-  ![Screenshot del portale di Intune con i ruoli di Intune evidenziati e un elenco dei ruoli predefiniti, incluso Help Desk Operator (Operatore del supporto tecnico)](./media/help-desk-user-add.png). È anche possibile [creare un ruolo personalizzato](role-based-access-control.md#custom-roles) e modificarlo per consentire l'accesso agli operatori del supporto tecnico.  Per risolvere i problemi degli utenti, gli operatori del supporto tecnico devono avere le autorizzazioni seguenti:
+  ![Screenshot del portale di Azure con i ruoli di Intune evidenziati e un elenco dei ruoli predefiniti, incluso Help Desk Operator (Operatore del supporto tecnico)](./media/help-desk-user-add.png). È anche possibile [creare un ruolo personalizzato](role-based-access-control.md#custom-roles) e modificarlo per consentire l'accesso agli operatori del supporto tecnico.  Per risolvere i problemi degli utenti, gli operatori del supporto tecnico devono avere le autorizzazioni seguenti:
     - MobileApps: Lettura
     - ManagedApps: Lettura
     - ManagedDevices: Lettura

@@ -1,6 +1,6 @@
 ---
 title: Impostazioni VPN di Intune per dispositivi Windows 8.1
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Informazioni sulle impostazioni di Intune che è possibile usare per configurare le connessioni VPN nei dispositivi Windows 8.1.\""
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d851a8900ae1e164cb22f1878b352c3e90096f73
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: de811d4a41aa8bdf9fd016b6ee439e1ed2ef2a92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Impostazioni VPN per i dispositivi Windows 8.1 in Microsoft Intune
 
@@ -30,7 +30,7 @@ A seconda delle impostazioni selezionate, non tutti i valori nell'elenco seguent
 ## <a name="base-vpn-settings"></a>Impostazioni VPN di base
 
 
-- **Apply all settings to Windows 8.1 only** (Applica tutte le impostazioni solo a Windows 8.1): si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows 8.1. Se è impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10.
+- **Applica tutte le impostazioni solo a Windows 8.1**: si tratta di un'impostazione che è possibile configurare nel portale classico di Intune. Nel portale di Azure questa impostazione non può essere modificata. Se è impostata su **Configurato**, tutte le impostazioni verranno applicate solo ai dispositivi Windows 8.1. Se è impostata su **Non configurato**, queste impostazioni verranno applicate anche ai dispositivi Windows 10.
 - **Nome della connessione**: immettere un nome per la connessione. Questo nome viene visualizzato dagli utenti finali nel momento in cui sfogliano l'elenco delle connessioni VPN disponibili nel dispositivo.
 - **Server**: aggiungere uno o più server VPN a cui si connetteranno i dispositivi.
     - **Aggiungi**: apre il pannello **Aggiungi riga** in cui è possibile specificare le informazioni seguenti:

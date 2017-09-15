@@ -1,6 +1,6 @@
 ---
 title: "Creare i criteri di conformità di Skycure Mobile Threat Defense"
-description: "Creare i criteri di conformità di Skycure Mobile Threat Defense nella console classica di Intune."
+description: "Creare i criteri di conformità di Skycure Mobile Threat Defense nel portale classico di Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29caf162500e25c2a0151be92aabe4cc432e241b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e8f7b6c5c1e8497ca698b83215525ba9b4056f59
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Creare i criteri di conformità di Skycure Mobile Threat Defense
 
@@ -38,7 +38,7 @@ Nell'ambito della configurazione di Skycure Mobile Threat Defense, nella console
 
 ## <a name="to-create-skycure-compliance-policy"></a>Per creare i criteri di conformità di Skycure
 
-1.  Passare alla [console classica di Intune](https://manage.microsoft.com/) e immettere le proprie credenziali.
+1.  Passare al [portale classico di Intune](https://manage.microsoft.com/) e immettere le proprie credenziali.
 
 2.  Scegliere **Criteri** &gt; **Criteri di conformità**. È possibile usare criteri di conformità esistenti o crearne di nuovi.
 

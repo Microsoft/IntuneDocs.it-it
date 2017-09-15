@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/03/2016
+ms.date: 09/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85612fc63b3fb738e6135ac71065edc06169fa9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1f19b7e9d57350f90baca96562a99b2fde66f91a
+ms.sourcegitcommit: 00352501833818a08479758ba1c9efdf7223e264
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Impostazioni dei criteri di Intune per i dispositivi Windows 10 in Microsoft Intune
 
@@ -39,11 +39,11 @@ Specificare le impostazioni seguenti in un criterio personalizzato.
 
 Immettere un nome e una descrizione facoltativa per i criteri che consenta di identificarli nella console di Intune.
 
-### <a name="oma-uri-settings"></a>Impostazioni OMA-URI
+### <a name="oma-uri-settings"></a>Impostazioni URI OMA
 
-Per ogni impostazione URI OMA che si vuole aggiungere, immettere le informazioni seguenti. Usare il [riferimento alle impostazioni URI di Windows 10](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune#Windows-10-URI-settings) in questo argomento per informazioni sulle impostazioni che è possibile usare:
+Per ogni impostazione URI OMA che si vuole aggiungere, immettere le informazioni seguenti:
 
-- **Nome impostazione**: immettere un nome univoco per l'impostazione URI OMA per identificarla nell'elenco delle impostazioni.
+- **Nome impostazione**: immettere un nome univoco per l'impostazione URI OMA per identificarla nell'elenco delle impostazioni. Per altre informazioni sulle impostazioni URI, vedere [Introduzione ai provider di servizi di configurazione per i professionisti IT](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 - **Descrizione impostazione**: immettere facoltativamente una descrizione per l'impostazione.
 - **Tipo di dati**: scegliere tra i tipi di dati seguenti:
     - **Stringa**

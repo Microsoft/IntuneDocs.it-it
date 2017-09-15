@@ -5,20 +5,20 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 07/05/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: a28305aab1fff16a46b8142e5869bfa25008017c
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guida a Microsoft Intune App SDK per sviluppatori di Android
 
@@ -456,8 +456,9 @@ Di seguito sono indicati alcuni modi comuni di configurazione di un'app con ADAL
     |--|--|
     | Authority | Ambiente desiderato in cui sono stati configurati gli account AAD |
     | ClientID | ID client dell'app (generato da Azure AD al momento della registrazione dell'app) |
-    | NonBrokerRedirectURI | URI di reindirizzamento valido per l'app o `urn:ietf:wg:oauth:2.0:oob` per impostazione predefinita. <br><br> Assicurarsi di configurare il valore come URI di reindirizzamento accettabile per l'ID client dell'app.
-    | SkipBroker | False |
+    | NonBrokerRedirectURI | URI di reindirizzamento valido per l'app o `urn:ietf:wg:oauth:2.0:oob` 
+    . <br><br> Assicurarsi di configurare il valore come URI di reindirizzamento accettabile per l'ID client dell'app.
+   | SkipBroker | False |
 
 
 3. **App che integra ADAL ma non supporta l'autenticazione negoziata/SSO a livello di dispositivo:**
@@ -1355,7 +1356,7 @@ Intune SDK mantiene il contratto fornito dall'API Android, ma è possibile che v
 
 ## <a name="telemetry"></a>Telemetria
 
-Intune App SDK per Android non controlla la raccolta di dati dall'app. Per impostazione predefinita, l'applicazione Portale aziendale registra dati di telemetria relativi agli eventi di utilizzo seguenti. Questi dati vengono inviati a Microsoft Intune. In base ai criteri Microsoft, non vengono raccolte informazioni personali.
+Intune App SDK per Android non controlla la raccolta di dati dall'app. Per impostazione predefinita, l'applicazione Portale aziendale registra dati di telemetria. Questi dati vengono inviati a Microsoft Intune. In base ai criteri Microsoft, non vengono raccolte informazioni personali.
 
 > [!NOTE]
 > Se l'utente finale sceglie di non inviare questi dati, deve disattivare la telemetria in Impostazioni nell'app Portale aziendale. Per altre informazioni, vedere [Disattivare la raccolta dati di utilizzo di Microsoft](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 

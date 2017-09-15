@@ -1,6 +1,6 @@
 ---
 title: RBAC con Intune
-titleSuffix: Intune Azure preview
+titleSuffix: Azure portal
 description: "Anteprima di Intune in Azure: Informazioni su come il Controllo degli accessi in base al ruolo consente di controllare chi può eseguire azioni e apportare modifiche."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Controllo degli accessi in base al ruolo (RBAC) con Intune
 
@@ -32,7 +32,7 @@ RBAC consente di controllare chi esegue varie attività di Intune all'interno de
 
 ![Esempio di controllo RBAC di Intune](./media/intune-rbac-1.PNG)
 
-A partire dal nuovo portale di Intune, **Azure Active Directory (Azure AD)** offre due ruoli della directory che è possibile usare con Intune. A questi ruoli vengono concesse autorizzazioni complete per eseguire tutte le attività in Intune:
+A partire dal nuovo portale di Azure, **Azure Active Directory (Azure AD)** offre due ruoli della directory che è possibile usare con Intune. A questi ruoli vengono concesse autorizzazioni complete per eseguire tutte le attività in Intune:
 
 - **Amministratore globale:** gli utenti con questo ruolo hanno accesso a tutte le funzionalità amministrative di Azure AD, nonché ai servizi federati con Azure AD come Exchange Online, SharePoint Online e Skype for Business Online. La persona che si registra per il tenant di Azure AD diventa un amministratore globale. Solo gli amministratori globali possono assegnare altri ruoli di amministratore di Azure AD. Nell'organizzazione vi possono essere più amministratori globali. Gli amministratori globali possono reimpostare la password per tutti gli utenti e tutti gli altri amministratori.
 
@@ -46,12 +46,12 @@ A partire dal nuovo portale di Intune, **Azure Active Directory (Azure AD)** off
     > [!TIP]
     > Intune mostra inoltre tre estensioni di Azure AD, **Utenti**, **Gruppi** e **Accesso condizionale**, controllate tramite il controllo degli accessi in base al ruolo di Azure AD. Il ruolo **Amministratore account utente**, inoltre, consente di eseguire solo attività su utenti e gruppi di AAD e non dispone delle autorizzazioni complete per eseguire tutte le attività in Intune. Per altri dettagli, fare riferimento ad [Assegnazione dei ruoli di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
-## <a name="roles-created-in-the-intune-classic-console"></a>Ruoli creati nella console classica di Intune
+## <a name="roles-created-in-the-intune-classic-portal"></a>Ruoli creati nel portale classico di Intune
 
-Solo gli utenti **Amministratori del servizio** con autorizzazioni "Completo" vengono inclusi nella migrazione dalla console classica di Intune a Intune in Azure. È necessario assegnare nuovamente gli utenti **Amministratori del servizio** di Intune con accesso "Sola lettura" o "Supporto tecnico" nei ruoli di Intune nel portale di Azure e rimuoverli dal portale classico.
+Solo gli utenti **Amministratori del servizio** con autorizzazioni "Completo" vengono inclusi nella migrazione dal portale classico di Intune a Intune nel portale di Azure. È necessario assegnare nuovamente gli utenti **Amministratori del servizio** di Intune con accesso "Sola lettura" o "Supporto tecnico" nei ruoli di Intune nel portale di Azure e rimuoverli dal portale classico.
 
 > [!IMPORTANT]
-> Potrebbe essere necessario mantenere l'accesso Amministratori del servizio Intune nella console classica, se gli amministratori hanno ancora la necessità di gestire i PC con Intune.
+> Potrebbe essere necessario mantenere l'accesso Amministratori del servizio Intune nel portale classico, se gli amministratori hanno ancora la necessità di gestire i PC con Intune.
 
 ## <a name="built-in-roles"></a>Ruoli predefiniti
 

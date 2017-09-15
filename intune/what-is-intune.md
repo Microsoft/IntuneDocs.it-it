@@ -1,6 +1,6 @@
 ---
 title: Introduzione a Intune nel portale di Azure
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Nozioni di base su Intune nel portale di Azure e informazioni su come questo strumento aiuta nella gestione dei dispositivi."
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: a51b3c59d922b0c150073017222dca0c90c5b7a0
-ms.sourcegitcommit: 36ae73f59ff5e9fdfe4f930ad0aa4b7795fe11f2
+ms.openlocfilehash: 6150434620f055f17563da6269c85c89c70b8e2b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introduzione a Microsoft Intune nel portale di Azure
 
@@ -72,7 +72,7 @@ Per informazioni aggiornate sui browser supportati, vedere il [portale di Azure]
 
 ## <a name="whats-in-this-library"></a>Contenuto della libreria
 
-La documentazione riflette il layout del portale di Intune per rendere più semplice trovare le informazioni necessarie.
+La documentazione riflette il layout del portale di Azure per rendere più semplice trovare le informazioni necessarie.
 
 ![Carichi di lavoro del portale di Azure](./media/azure-portal-workloads.png)
 
