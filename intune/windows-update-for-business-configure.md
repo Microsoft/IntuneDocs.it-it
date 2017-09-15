@@ -1,6 +1,6 @@
 ---
-title: Gestire gli aggiornamenti software
-titleSuffix: Configure Windows Update for Business settings - Intune
+title: Configurare le impostazioni di Windows Update for Business in Intune
+titleSuffix: Azure portal
 description: Informazioni su come configurare le impostazioni di Windows Update for Business in Intune per controllare gli aggiornamenti ai dispositivi Windows 10."
 keywords: 
 author: dougeby
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
-ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
+ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-software-updates"></a>Gestire gli aggiornamenti software
 
@@ -54,20 +54,20 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 
     È possibile configurare manualmente questa impostazione oppure usare un profilo di restrizione dei dispositivi di Intune per Windows 10 e versioni successive. A tale scopo, configurare l'impostazione **Generale** > **Invio dati di diagnostica** almeno su **Di base**. Per altre informazioni sui profili di dispositivo, vedere [Come configurare le impostazioni relative alle restrizioni dei dispositivi](device-restrictions-configure.md).
 
-- Nella console di amministrazione classica di Intune sono disponibili quattro impostazioni che controllano il comportamento degli aggiornamenti software. Queste impostazioni fanno parte dei criteri di configurazione generale per dispositivi Windows 10 Desktop e Mobile:
+- Nella console di amministrazione di Intune sono disponibili quattro impostazioni che controllano il comportamento degli aggiornamenti software. Queste impostazioni fanno parte dei criteri di configurazione generale per dispositivi Windows 10 Desktop e Mobile:
     - **Consenti aggiornamenti automatici**
     - **Consenti funzionalità di versioni non definitive**
     - **Giorno pianificato per l'installazione**
     - **Ora pianificata per l'installazione**
 
-  La console classica include anche un numero limitato di altre impostazioni per gli aggiornamenti di Windows 10 nel profilo di configurazione del dispositivo. Se una qualsiasi di queste impostazioni è configurata nella console di amministrazione classica di Intune quando si esegue la migrazione al portale di Azure, è fortemente consigliato procedere nel modo seguente:
+  Il portale classico include anche un numero limitato di altre impostazioni per gli aggiornamenti di Windows 10 nel profilo di configurazione del dispositivo. Se una qualsiasi di queste impostazioni è configurata nella console di amministrazione di Intune quando si esegue la migrazione al portale di Azure, è fortemente consigliato procedere nel modo seguente:
 
 1. Creare gli anelli di aggiornamento di Windows 10 nel portale di Azure con le impostazioni necessarie. L'impostazione **Consenti funzionalità di versioni non definitive** non è supportata nel portale di Azure perché non è più applicabile alle build più recenti di Windows 10. È possibile configurare le altre tre impostazioni, e anche quelle relative agli aggiornamenti di Windows 10, quando si creano gli anelli aggiornamento.
 
   > [!NOTE]
-  > Le impostazioni relative agli aggiornamenti di Windows 10 configurate nella console classica non vengono visualizzate nel portale di Azure dopo la migrazione, ma continuano a essere applicate. Se è stata eseguita la migrazione di una qualsiasi di queste impostazioni e si modificano i criteri migrati dal portale di Azure, l'impostazione verrà rimossa dai criteri.
+  > Le impostazioni relative agli aggiornamenti di Windows 10 configurate nel portale classico non vengono visualizzate nel portale di Azure dopo la migrazione, ma continuano a essere applicate. Se è stata eseguita la migrazione di una qualsiasi di queste impostazioni e si modificano i criteri migrati dal portale di Azure, l'impostazione verrà rimossa dai criteri.
 
-2. Eliminare le impostazioni di aggiornamento nella console classica. Dopo avere eseguito la migrazione al portale di Azure e aver aggiunto le stesse impostazioni in un anello di aggiornamento, è necessario eliminare le impostazioni nel portale classico per evitare possibili conflitti di criteri. Ad esempio, quando la stessa impostazione è configurata con valori diversi, si verifica un conflitto che non è facile identificare perché l'impostazione configurata nella console classica non viene visualizzata nel portale di Azure.
+2. Eliminare le impostazioni di aggiornamento nel portale classico. Dopo avere eseguito la migrazione al portale di Azure e aver aggiunto le stesse impostazioni in un anello di aggiornamento, è necessario eliminare le impostazioni nel portale classico per evitare possibili conflitti di criteri. Ad esempio, quando la stessa impostazione è configurata con valori diversi, si verifica un conflitto che non è facile identificare perché l'impostazione configurata nel portale classico non viene visualizzata nel portale di Azure.
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Come creare e assegnare anelli di aggiornamento
 

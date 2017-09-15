@@ -1,6 +1,6 @@
 ---
 title: Assegnare app a dispositivi Android for Work
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Usare questo argomento per sincronizzare e quindi assegnare app ai dispositivi Android for Work da Google Play for Work."
 keywords: 
 author: mattbriggs
@@ -15,18 +15,18 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bbe5be4afead5d80f38e2ef56d12c0b26351dfd8
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Come assegnare app a dispositivi Android for Work con Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 L'assegnazione di app a dispositivi Android for Work avviene in modo diverso rispetto all'assegnazione di app a dispositivi Android standard. Tutte le app installate per Android for Work provengono da Google Play for Work. Accedere allo store, cercare le app desiderate e approvarle.
-L'app viene quindi visualizzata nel nodo **App con licenza** del portale di Intune. Da qui è possibile gestire l'assegnazione dell'app allo stesso modo in cui si assegnano le altre app.
+L'app viene quindi visualizzata nel nodo **App con licenza** del portale di Azure. Da qui è possibile gestire l'assegnazione dell'app allo stesso modo in cui si assegnano le altre app.
 
 Inoltre, se sono state create app line-of-business (LOB) personalizzate, è possibile assegnarle come segue:
 - Registrarsi per ottenere un account Google Developer che consente di pubblicare le app in un'area privata dello store Google Play.
@@ -34,7 +34,7 @@ Inoltre, se sono state create app line-of-business (LOB) personalizzate, è poss
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Assicurarsi di aver configurato l'uso di Intune con Android for Work nel carico di lavoro **Registrazione del dispositivo** del portale di Intune.
+Assicurarsi di avere configurato l'uso di Intune con Android for Work nel carico di lavoro **Registrazione del dispositivo** del portale di Azure.
 
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Sincronizzare un'app da Google Play for Work
 

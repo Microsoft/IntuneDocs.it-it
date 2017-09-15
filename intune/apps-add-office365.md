@@ -1,12 +1,12 @@
 ---
 title: Installare le app di Office 365 ProPlus nei dispositivi Windows 10 con Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Informazioni su come usare Intune per renderne più semplice l'installazione delle app di Office 365 nei dispositivi Windows 10."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/30/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: c3613c1e0482654d799329069f56ec0b0aac7772
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Come assegnare le app di Office 365 ProPlus 2016 ai dispositivi Windows 10 con Microsoft Intune
 
@@ -35,7 +35,7 @@ Questo tipo di app semplifica l'assegnazione delle app Office 365 ProPlus 2016 a
 - Intune supporta l'aggiunta di app di Office solo da Office 365 ProPlus 2016 Suite.
 - Se sono aperte app di Office quando Intune installa l'insieme di app, è possibile che gli utenti finali perdano i dati dei file non salvati.
 - Questo metodo di installazione non è supportato nei dispositivi Windows 10 S.
-- Se si assegna questo tipo di app come disponibile e si usano assegnazioni diverse per più utenti, tali utenti visualizzeranno solo l'assegnazione di destinazione di più recente.
+- Intune non consente di installare le app desktop di Office 365 da Windows Store (note come app Office Centennial) in un dispositivo a cui sono già state distribuite app di Office 365 con Intune. Se si installa questa configurazione, si potrebbero verificare perdite o danneggiamenti dei dati.
 
 
 ## <a name="get-started"></a>Introduzione
@@ -60,7 +60,7 @@ In questo passaggio scegliere le app di Office che si vuole assegnare ai disposi
 
 ## <a name="configure-app-information"></a>Configurare le informazioni sull'app
 
-In questo passaggio specificare le informazioni sulla suite di app. Queste informazioni consentono di identificarla nella console di Intune e permettono agli utenti finali di individuarla nell'app Portale aziendale.
+In questo passaggio specificare le informazioni sulla suite di app. Queste informazioni consentono di identificarla in Intune e permettono agli utenti di trovarla nell'app Portale aziendale.
 
 1.  Nel pannello **Aggiungi app** scegliere **App Suite Information** (Informazioni sulla suite di app).
 2.  Nel pannello **App Suite Information** (Informazioni sulla suite di app) specificare le informazioni seguenti: 

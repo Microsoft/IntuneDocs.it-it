@@ -1,12 +1,12 @@
 ---
 title: Usare il ripristino delle impostazioni predefinite oppure rimuovere i dati aziendali nei dispositivi con Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informazioni su come rimuovere i dati aziendali in un dispositivo o come eseguire il ripristino delle impostazioni predefinite del dispositivo.
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Rimuovere i dispositivi con il ripristino delle impostazioni predefinite o rimuovere i dati aziendali
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/10/2017
 > [!NOTE]
 > Prima di rimuovere un utente da Azure Active Directory, inviare un comando di **ripristino delle impostazioni predefinite** o di **rimozione dei dati aziendali** a tutti i dispositivi associati all'utente. Se si rimuovono utenti con dispositivi gestiti da Azure Active Directory, Intune non può più inviare il comando di ripristino delle impostazioni predefinite o di rimozione dei dati aziendali a tali dispositivi.
 
-## <a name="factory-reset"></a>Ripristino delle impostazioni predefinite
+## <a name="factory-reset"></a>Ripristino delle impostazioni di fabbrica
 
 Il **ripristino delle impostazioni predefinite** consente di reimpostare le impostazioni di fabbrica di un dispositivo, rimuovendo tutti i dati e le impostazioni aziendali e dell'utente. Il dispositivo viene rimosso dalla gestione di Intune. Il ripristino delle impostazioni predefinite è utile per reimpostare un dispositivo prima di consegnarlo a un nuovo utente o nei casi in cui il dispositivo è stato smarrito o rubato. Prestare attenzione quando si seleziona il ripristino delle impostazioni predefinite. Non sarà possibile recuperare i dati nel dispositivo.
 
@@ -106,7 +106,7 @@ Se il dispositivo è acceso e connesso, un comando di rimozione dei dati non ric
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Eliminare dispositivi dal portale di Azure Active Directory
 
-A causa di problemi di comunicazione o dispositivi mancanti, potrebbe essere necessario eliminare dispositivi da Azure Active Directory (AD). Il comando di eliminazione non rimuove un dispositivo dalla gestione, ma è possibile usare **Elimina** per rimuovere dalla console di Azure i record dei dispositivi che si è certi siano irraggiungibili oppure che molto probabilmente non comunicheranno più con Azure.
+A causa di problemi di comunicazione o dispositivi mancanti, potrebbe essere necessario eliminare dispositivi da Azure Active Directory (AD). Il comando di eliminazione non rimuove un dispositivo dalla gestione, ma è possibile usare **Elimina** per rimuovere dal portale di Azure i record dei dispositivi che si è certi siano irraggiungibili oppure che molto probabilmente non comunicheranno più con Azure.
 
 1.  Accedere ad [Azure Active Directory nel portale di Azure](http://aka.ms/accessaad) con le credenziali di amministratore. È anche possibile accedere al [portale di Office 365](https://portal.office.com) e quindi scegliere **Amministrazione** &gt; **Azure AD** usando il collegamento sul lato sinistro della pagina.
 3.  Creare una sottoscrizione di Azure, se non se ne possiede una. Se si dispone di un account a pagamento, questa operazione non richiede l'uso di una carta di credito né un pagamento. Fare clic sul collegamento per l'abbonamento relativo alla **registrazione gratuita di Azure Active Directory**.

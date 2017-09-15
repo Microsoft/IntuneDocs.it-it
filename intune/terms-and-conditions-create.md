@@ -1,6 +1,6 @@
 ---
 title: Impostare i termini e le condizioni in Microsoft Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: 'Impostare i termini e le condizioni visualizzati dagli utenti nel portale aziendale per Intune. '
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0262b8068ddf134de5ffec0965476fb513ceb9ab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47b153223e10ec358c61a212bdacd109ee90bbcd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>Verificare che gli utenti accettino le condizioni aziendali per l'accesso
 
@@ -32,14 +32,14 @@ Come amministratore di Intune, è possibile richiedere agli utenti di accettare 
 ## <a name="create-terms-and-conditions"></a>Creare termini e condizioni
 Completare i passaggi seguenti per creare i termini e le condizioni. Il nome visualizzato e la descrizione sono destinati all'uso amministrativo, mentre le proprietà dei termini e delle condizioni vengono visualizzate agli utenti nel portale aziendale.
 
-1. Nel portale di Intune scegliere **Registrazione del dispositivo** e quindi **Termini e condizioni**.
+1. Nel portale di Azure scegliere **Registrazione del dispositivo** e quindi **Termini e condizioni**.
 2. Selezionare **Crea**.
-![Screenshot del portale di Intune che mostra il pulsante Crea per i termini e le condizioni](media/terms-create-terms.png)
+![Screenshot del portale di Azure che mostra il pulsante Crea per i termini e le condizioni](media/terms-create-terms.png)
 3. Nel pannello espanso specificare le informazioni seguenti:
 
-   - **Nome visualizzato**: nome per i termini e le condizioni nel portale di Intune. Questo nome non viene visualizzato agli utenti.
+   - **Nome visualizzato**: nome per i termini e le condizioni nel portale di Azure. Questo nome non viene visualizzato agli utenti.
 
-   - **Descrizione**: dettagli facoltativi che permettono di identificare questo set di condizioni nel portale di Intune.
+   - **Descrizione**: dettagli facoltativi che permettono di identificare questo set di condizioni nel portale di Azure.
 
 4. Selezionare la freccia accanto a Define terms of use (Definisci le condizioni per l'utilizzo) per aprire il pannello Termini e condizioni, quindi immettere le informazioni seguenti:
 
@@ -64,9 +64,9 @@ L'esempio seguente mostra i termini e le condizioni nella console di amministraz
 
 È possibile assegnare termini e condizioni a gruppi di utenti, che devono accettarli prima di usare il portale aziendale.
 
-1. Nel portale di Intune scegliere **Registrazione del dispositivo** e quindi **Termini e condizioni**.
+1. Nel portale di Azure scegliere **Registrazione del dispositivo** e quindi **Termini e condizioni**.
 2. Nell'elenco dei termini e delle condizioni selezionare quelli da assegnare e quindi fare clic su **Gruppi assegnati**.
-![Screenshot del pannello Assegna gruppi del portale di Intune che mostra i pulsanti Seleziona gruppo e Seleziona per l'assegnazione dei termini e delle condizioni](media/terms-assign-groups.png)
+![Screenshot del pannello Assegna gruppi del portale di Azure che mostra i pulsanti Seleziona gruppo e Seleziona per l'assegnazione dei termini e delle condizioni](media/terms-assign-groups.png)
 3. Fare clic sul pulsante **Seleziona gruppo**, selezionare i gruppi a cui assegnare i termini e le condizioni nel pannello **Seleziona gruppi** e quindi fare clic su **Seleziona**. Non è possibile assegnare termini e condizioni ai gruppi dinamici.
 4. Nel pannello **Gruppi assegnati** fare clic su **Salva**.  I termini e le condizioni sono ora assegnati a utenti in gruppi selezionati. Agli utenti verrà chiesto di accettare i termini e le condizioni al successivo accesso al portale aziendale. I termini e le condizioni devono essere accettati una sola volta. Gli utenti con più dispositivi non dovranno accettarli in ogni dispositivo.
 

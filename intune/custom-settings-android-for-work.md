@@ -1,6 +1,6 @@
 ---
 title: Impostazioni del profilo personalizzato di Intune per Android for Work
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informazioni su come creare impostazioni di profilo personalizzato di Intune per dispositivi Android for Work."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47af10ea2eb04b5e5a470aff36d45d41105feb15
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Creare impostazioni di profilo personalizzato di Intune per dispositivi Android for Work
 
@@ -32,7 +32,7 @@ Questa funzionalità consente di assegnare le impostazioni Android non configura
 1. Per iniziare, usare le istruzioni illustrate in [Come configurare le impostazioni dispositivo personalizzate](custom-settings-configure.md).
 2. Nel pannello **Impostazioni URI OMA personalizzate** scegliere **Aggiungi** per aggiungere una nuova impostazione.
 3. Nel pannello **Aggiungi riga** configurare quanto segue:
-    - **Nome**: immettere un nome univoco per le impostazioni personalizzate di Android for work per poterle identificare nel portale di Intune.
+    - **Nome**: immettere un nome univoco per le impostazioni personalizzate di Android for work per poterle identificare nel portale di Azure.
     - **Descrizione**: immettere una descrizione di carattere generale sui criteri personalizzati Android e altre informazioni rilevanti per consentirne l'individuazione.
     - **URI OMA**: immettere l'URI OMA per cui si vuole specificare un'impostazione.
     - **Tipo di dati**: selezionare il tipo di dati in cui verrà specificata questa impostazione URI OMA. Scegliere tra **Stringa**, **Stringa (file XML)**, **Data e ora**, **Integer**, **Virgola mobile**, **Booleano** o **Base64 (file)**.

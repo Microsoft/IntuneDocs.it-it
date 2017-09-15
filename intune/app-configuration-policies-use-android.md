@@ -1,6 +1,6 @@
 ---
 title: Usare i criteri di configurazione delle app di Intune per Android for Work
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Informazioni su come usare i criteri di configurazione delle app per fornire i dati di configurazione a un'app Android for Work in esecuzione."
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7486a62ed11b83f00414a74b2d816f6048826f73
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 4b73202a1a68bd2dd3dcbfa86c21cb09ae00056c
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Come usare i criteri di configurazione delle app di Microsoft Intune per Android for Work
 
@@ -27,16 +27,16 @@ ms.lasthandoff: 08/15/2017
 
 Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni che possono essere disponibili quando gli utenti eseguono un'app Android for Work. Non tutte le app supportano la configurazione delle app. Contattare lo sviluppatore dell'app per verificare se l'app è stata progettata o meno per supportare i criteri di configurazione delle app.
 
-I criteri di configurazione delle app consentono di preconfigurare le impostazioni delle app disponibili per gli utenti prima dell'esecuzione dell'app. Alcune app Android supportano opzioni per le configurazioni gestite che è possibile configurare nella console di Intune con [Progettazione configurazione](#use-configuration-designer). Alcune impostazioni di configurazione per le app (ad esempio, quelle con tipi Bundle) non possono essere configurate con Progettazione configurazione.  Sarà necessario usare l'[editor JSON](#use-json-editor) per tali valori.   Le impostazioni vengono fornite automaticamente alle app durante l'installazione.
+I criteri di configurazione delle app consentono di preconfigurare le impostazioni delle app disponibili per gli utenti prima dell'esecuzione dell'app. Alcune app Android supportano opzioni per le configurazioni gestite che è possibile configurare nel portale di Azure con [Progettazione configurazione](#use-configuration-designer). Alcune impostazioni di configurazione per le app (ad esempio, quelle con tipi Bundle) non possono essere configurate con Progettazione configurazione.  Sarà necessario usare l'[editor JSON](#use-json-editor) per tali valori.   Le impostazioni vengono fornite automaticamente alle app durante l'installazione.
 
 Questi criteri non vengono assegnati direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi assegnata. Le impostazioni dei criteri vengono usate quando l'app ne esegue la ricerca (in genere, alla prima esecuzione).
 
 ## <a name="use-configuration-designer"></a>Usare Progettazione configurazione
 
-1. Nel portale di Intune scegliere **App per dispositivi mobili**. In **Gestisci** scegliere **Criteri di configurazione dell'app** e quindi fare clic su **Aggiungi**.
+1. Nel portale di Azure scegliere **App per dispositivi mobili**. In **Gestisci** scegliere **Criteri di configurazione dell'app** e quindi fare clic su **Aggiungi**.
 2. Impostare i dettagli seguenti:
-    - **Nome** - Il nome del profilo che verrà visualizzato nella console di Intune
-    - **Descrizione** - La descrizione del profilo che verrà visualizzata nella console di Intune
+    - **Nome**: il nome del profilo che verrà visualizzato nel portale di Azure
+    - **Descrizione**: la descrizione del profilo che verrà visualizzata nel portale di Azure
     - **Piattaforma** - Selezionare **Android**
     - **Tipo di registrazione del dispositivo** -  È preselezionata l'opzione **Registrato in Intune**.
 3. Selezionare **App associata** per scegliere l'app per cui definire i criteri di configurazione.  Selezionare dall'elenco di app Android for Work che sono state approvate e sincronizzate con Intune
@@ -51,10 +51,10 @@ Questi criteri non vengono assegnati direttamente agli utenti e ai dispositivi, 
 
 ## <a name="use-json-editor"></a>Usare l'editor JSON
 
-1. Nel portale di Intune scegliere **App per dispositivi mobili**. In **Gestisci** scegliere **Criteri di configurazione dell'app** e quindi fare clic su **Aggiungi**.
+1. Nel portale di Azure scegliere **App per dispositivi mobili**. In **Gestisci** scegliere **Criteri di configurazione dell'app** e quindi fare clic su **Aggiungi**.
 2. Impostare i dettagli seguenti:
-    - **Nome** - Il nome del profilo che verrà visualizzato nella console di Intune
-    - **Descrizione** - La descrizione del profilo che verrà visualizzata nella console di Intune
+    - **Nome**: il nome del profilo che verrà visualizzato nel portale di Azure
+    - **Descrizione**: la descrizione del profilo che verrà visualizzata nel portale di Azure
     - **Piattaforma** - Selezionare **Android**
     - **Tipo di registrazione del dispositivo** -  È preselezionata l'opzione **Registrato in Intune**.
 3. Selezionare **App associata** per scegliere l'app per cui definire i criteri di configurazione.  Selezionare dall'elenco di app Android for Work che sono state approvate e sincronizzate con Intune.
@@ -73,10 +73,10 @@ Quando l'app assegnata viene eseguita in un dispositivo, verrà eseguita con le 
 
 È anche possibile preconfigurare l'autorizzazione per le app per l'accesso alle funzionalità del dispositivo Android. Per impostazione predefinita, le app Android che richiedono autorizzazioni del dispositivo, ad esempio l'accesso alla posizione o alla fotocamera del dispositivo, chiedono agli utenti di accettare o rifiutare le autorizzazioni. Se ad esempio un'app usa il microfono del dispositivo, all'utente finale viene chiesto di concedere all'app l'autorizzazione per l'uso del microfono.
 
-1. Nel portale di Intune scegliere **App per dispositivi mobili**. In **Gestisci** scegliere **Criteri di configurazione dell'app** e quindi fare clic su **Aggiungi**.
+1. Nel portale di Azure scegliere **App per dispositivi mobili**. In **Gestisci** scegliere **Criteri di configurazione dell'app** e quindi fare clic su **Aggiungi**.
 2. Impostare i dettagli seguenti:
-    - **Nome** - Il nome del profilo che verrà visualizzato nella console di Intune
-    - **Descrizione** - La descrizione del profilo che verrà visualizzata nella console di Intune
+    - **Nome**: il nome del profilo che verrà visualizzato nel portale di Azure
+    - **Descrizione**: la descrizione del profilo che verrà visualizzata nel portale di Azure
     - **Piattaforma** - Selezionare **Android**
     - **Tipo di registrazione del dispositivo** -  È preselezionata l'opzione **Registrato in Intune**.
 3. Selezionare **App associata** per scegliere l'app per cui definire i criteri di configurazione.  Selezionare dall'elenco di app Android for Work che sono state approvate e sincronizzate con Intune.

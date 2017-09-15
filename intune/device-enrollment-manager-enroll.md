@@ -1,6 +1,6 @@
 ---
 title: Registrare i dispositivi - Manager di registrazione dispositivi
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Usare l'account del manager di registrazione dispositivi per registrare i dispositivi in Intune. "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Registrare i dispositivi con il manager di registrazione dispositivi
 
@@ -36,7 +36,7 @@ Per poter essere aggiunti come manager di registrazione dispositivi, gli utenti 
 
 Un ristorante vuole offrire 50 tablet POS al personale di sala e monitor per gli ordini per il personale di cucina. I dipendenti non hanno bisogno di accedere ai dati aziendali o di accedere come utenti. L'amministratore di Intune crea un account del manager di registrazione dispositivi e aggiunge un supervisore del ristorante all'account offrendo le funzionalità DEM al supervisore. Il supervisore potrà quindi registrare 50 tablet usando le credenziali DEM.
 
-Solo gli utenti presenti nella console di Intune possono essere manager di registrazione dispositivi. L'utente manager di registrazione dispositivi non può essere un amministratore di Intune.
+Solo gli utenti presenti nel portale di Azure possono essere manager di registrazione dispositivi. L'utente manager di registrazione dispositivi non può essere un amministratore di Intune.
 
 L'utente manager di registrazione dispositivi può:
 
@@ -95,5 +95,5 @@ La rimozione di un manager di registrazione dispositivi non influisce sui dispos
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Visualizzare le proprietà di un manager di registrazione dispositivi
 
-1. Nel portale di Intune scegliere **Registrazione del dispositivo** e quindi scegliere **Manager di registrazione dispositivi**.
+1. Nel portale di Azure scegliere **Registrazione del dispositivo** e quindi scegliere **Manager di registrazione dispositivi**.
 2. Nel pannello **Manager di registrazione dispositivi** fare clic con il pulsante destro del mouse sull'utente manager di registrazione dispositivi e selezionare **Proprietà**.

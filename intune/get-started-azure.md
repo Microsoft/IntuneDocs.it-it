@@ -1,10 +1,10 @@
 ---
 title: Guida introduttiva al portale di Azure
-titleSuffix: Intune on Azure
-description: Informazioni sulla creazione e condivisione dei dashboard in Intune in Azure.
+titlesuffix: Azure portal
+description: Informazioni sulla creazione e condivisione dei dashboard in Intune nel portale di Azure.
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27ae85160573f6757b20c885e95a280eb7f1155
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Guida introduttiva a Intune nel portale di Azure
 
@@ -52,7 +52,7 @@ Sarà più rilevante dopo aver aggiunto altro contenuto a Intune come ad esempio
 
 ## <a name="using-services"></a>Uso dei servizi
 
-Ogni volta che si apre Intune o qualsiasi altro servizio in Azure, verrà visualizzato in un **pannello**. Alcuni dei primi carichi di lavoro usati in Intune, ad esempio **Utenti**, **Gruppi** e **App per dispositivi mobili**, vengono visualizzati tutti in un pannello a schermo intero. Quando si seleziona il carico di lavoro, il relativo pannello verrà aperto nell'intera pagina. Gli altri pannelli, quando vengono aperti, scorreranno dal lato destro del pannello e verranno compressi sotto il pannello principale da cui provengono. 
+Ogni volta che si apre Intune o qualsiasi altro servizio in Azure, verrà visualizzato in un **pannello**. Alcuni dei primi carichi di lavoro usati in Intune, ad esempio **Utenti**, **Gruppi** e **App per dispositivi mobili**, vengono visualizzati tutti in un pannello a schermo intero. Quando si seleziona il carico di lavoro, il relativo pannello verrà aperto nell'intera pagina. Gli altri pannelli, quando vengono aperti, scorreranno dal lato destro del pannello e verranno compressi sotto il pannello principale da cui provengono.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
