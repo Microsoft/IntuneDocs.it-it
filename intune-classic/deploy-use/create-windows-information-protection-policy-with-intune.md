@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 9/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a08296770ee3a326411d3267705ed6a912ab17bd
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 040ce88c47eb12bbe9b228189d90ca422e5185e7
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -35,13 +35,6 @@ Di seguito vengono presentati prima di tutto alcuni concetti fondamentali per l'
 -   **App consentite:** si tratta delle app che devono essere conformi al criterio.
 
 -   **App escluse**: queste app sono escluse dal criterio e possono accedere ai dati aziendali senza restrizioni.
-
-> [!IMPORTANT]  
-> Intune consiglia di aggiungere l'app Portale aziendale all'elenco delle app escluse per consentire il corretto funzionamento dell'app. A tale scopo, aggiungere l'**app Store** seguente all'elenco **App escluse**:  
->   - Nome: Portale aziendale  
->   - Editore: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
->   - Nome prodotto: Microsoft.CompanyPortal  
-
 
 ### <a name="types-of-apps"></a>Tipi di app
 
@@ -109,7 +102,7 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 5.  Dopo aver immesso le informazioni nei campi, scegliere **OK** per aggiungere l'app all'elenco **App consentite**.
 
 > [!NOTE]
-> Per aggiungere più app dello Store contemporaneamente, è possibile fare clic sul menu **(...)**  alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
+> Per aggiungere più app dello Store contemporaneamente, è possibile fare clic sul menu **(...) ** alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Aggiungere un'app desktop all'elenco App consentite
 
