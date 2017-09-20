@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Abilitare la registrazione di dispositivi iOS con Apple School Manager
 
@@ -38,17 +38,8 @@ La registrazione di Apple School Manager non può essere usata con il [programma
 - Per l'affinità utente è richiesto [endpoint misto/nome utente WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Altre informazioni](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Dispositivi acquistati dal programma [Apple School Management](http://school.apple.com)
 
-**Passaggi per la registrazione di Apple School Manager**
-1. [Ottenere un token di Apple School Manager e assegnare i dispositivi](#get-the-apple-token-and-assign-devices)
-2. [Creare un profilo di registrazione](#create-an-apple-enrollment-profile)
-3. [Connettere School Data Sync](#connect-school-data-sync) (facoltativo)
-4. [Sincronizzare i dispositivi gestiti da Apple School Manager](#sync-managed-devices)
-5. [Assegnare un profilo di Apple School Manager ai dispositivi](#assign-a-profile-to-devices)
-6. [Distribuire i dispositivi agli utenti](#distribute-devices-to-users)
-
 >[!NOTE]
 >L'autenticazione a più fattori non funziona durante la registrazione nei dispositivi Apple School Manager con affinità utente. Dopo la registrazione, l'autenticazione a più fattori funziona come previsto in questi dispositivi. Dopo la registrazione, l'autenticazione a più fattori funziona come previsto nei dispositivi. I dispositivi non possono richiedere agli utenti di modificare la password al primo accesso. Inoltre, agli utenti con password scadute non viene richiesto di reimpostare la password durante la registrazione e devono reimpostarla da un altro dispositivo.
-
 
 ## <a name="get-the-apple-token-and-assign-devices"></a>Ottenere il token Apple e assegnare i dispositivi
 
@@ -104,7 +95,8 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
     - **Supervisione eseguita**: modalità di gestione che attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita. Se si lascia vuota la casella di controllo, le funzionalità di gestione saranno limitate.
 
      - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disattiva le impostazioni iOS che potrebbero permettere la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni.
-   - **iPad condiviso**: richiede le modalità **Registra senza affinità utente** e **Supervisione eseguita**. Consente a più utenti di eseguire l'accesso agli iPad registrati usando un ID Apple gestito. Gli ID Apple gestiti sono creati nel portale Apple School Manager. Altre informazioni sull'[iPad condiviso](education-settings-configure-ios-shared.md).
+   - **iPad condiviso**: richiede le modalità **Registra senza affinità utente** e **Supervisione eseguita**. Consente a più utenti di eseguire l'accesso agli iPad registrati usando un ID Apple gestito. Gli ID Apple gestiti sono creati nel portale Apple School Manager. Altre informazioni sull'[iPad condiviso](education-settings-configure-ios-shared.md). Vedere anche i [requisiti per usare l'iPad condiviso di Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+
    >[!NOTE]
    >Se **Affinità utente** è impostata su **Con affinità utente** o la modalità **Supervisione eseguita** è impostata su **Disattivato**, la modalità iPad condiviso è disabilitata per il profilo di registrazione.
 

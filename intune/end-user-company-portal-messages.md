@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Consentire agli utenti finali di comprendere i messaggi dell'app Portale aziendale
 
@@ -95,6 +95,17 @@ Al secondo accesso all'app Portale aziendale dopo aver negato l'accesso, nel mes
 ### <a name="how-to-explain-this-to-your-users"></a>Come spiegare questo agli utenti
 Suggerire agli utenti di consultare l'articolo [Inviare i log all'amministratore IT tramite posta elettronica](/intune-user-help/send-logs-to-your-it-admin-by-email-android) e anche l'articolo [Send logs to your IT admin by cable](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) (Inviare i log all'amministratore IT tramite cavo), se si vuole che confrontino i due metodi.
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>È necessario che il supporto aziendale garantisca l'accesso alle risorse aziendali
+
+### <a name="where-it-appears"></a>Dove viene visualizzato
+Se l'app Portale aziendale non è stata aggiunta all'elenco **App consentite** o **Escludi le app** e un utente tenta di accedere, l'accesso avrà esito negativo. Verrà visualizzato il messaggio seguente:
+
+> **È necessario che il supporto aziendale garantisca l'accesso alle risorse aziendali**  
+> L'azienda usa i criteri di Windows Information Protection per proteggere il dispositivo. Il supporto aziendale dovrà verificare che Portale aziendale possa eseguire l'accesso alle risorse.
+
+### <a name="what-it-means"></a>Che cosa significa
+
+Aggiungere l'app Portale aziendale all'elenco **App consentite** o **Escludi le app** tra i criteri di protezione delle app di Windows Information Protection (WIP). Per altre informazioni, vedere [Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
 ### <a name="see-also"></a>Vedere anche
 [Informazioni sull'uso di Intune per gli utenti finali](end-user-educate.md)

@@ -3,10 +3,10 @@ title: Configurare le impostazioni di Windows 10 relative alla formazione con In
 titleSuffix: Azure portal
 description: Informazioni su come usare Intune per configurare le impostazioni di Windows 10 relative alla formazione nei dispositivi gestiti."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c18eaa0416a41e802f82bbe12b57a4d25118892c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 12e36761320557f6af9554d3b671fc133253c13c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Come configurare le impostazioni di Windows 10 relative alla formazione in Microsoft Intune
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/09/2017
 
 I profili di formazione consentono di specificare i dettagli per configurare l'app Test ed esami di Windows, inclusi i dettagli dell'account e l'URL di test. Quando si configurano queste opzioni, l'app Test ed esami viene aperta con il test specificato e nessun'altra app può essere eseguita sul dispositivo finché il test non è completato.
 
-Usare le informazioni in questo argomento per apprendere le nozioni di base sulla configurazione di un profilo di restrizione del dispositivo e quindi leggere altri argomenti relativi a ogni piattaforma per informazioni specifiche sui dispositivi.
+Per informazioni dettagliate su 	Test ed esami, vedere [Test ed esami in Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
 
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>Creare un profilo di dispositivo contenente le impostazioni del profilo di formazione
 
@@ -47,6 +47,9 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
 
 Il profilo verrà creato e visualizzato nel pannello dell'elenco dei profili.
+
+## <a name="next-steps"></a>Passaggi successivi
+
 Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
 
 

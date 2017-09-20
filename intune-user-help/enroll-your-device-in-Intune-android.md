@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e12f8d31abc4e067a6339e93cc21680921ce88e4
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Registrare il dispositivo Android in Intune
 
@@ -54,14 +54,14 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
 6.  Nella schermata **Configurazione dell'accesso aziendale** toccare **INIZIA**.
 
-    ![Schermata di configurazione dell'accesso aziendale](./media/and-enroll-4a-comp-access-setup.png)
+    ![Schermata di configurazione dell'accesso aziendale](/intune/media/android_cp_enroll_02_post_1709.png)
 
     > [!NOTE]
     > I triangoli gialli non indicano che si è già verificato un errore, ma che alcuni passaggi del processo di registrazione devono ancora essere completati.
 
-7. Nella schermata **Perché registrare il dispositivo?** leggere le informazioni sulle operazioni che possono essere eseguite durante la registrazione del dispositivo e quindi toccare **CONTINUA**.
+7. Nella schermata **Benefits of device management** (Vantaggi della gestione dei dispositivi) leggere le informazioni sulle operazioni che possono essere eseguite durante la registrazione del dispositivo e toccare **CONTINUA**.
 
-    ![Schermata Perché registrare il dispositivo?](./media/and-enroll-4b-why-enroll.png)
+    ![Schermata Benefits of device management (Vantaggi della gestione dei dispositivi)](/intune/media/android_cp_enroll_02_post_1709.png)
 
 8.  Rivedere cosa può e non può visualizzare l'amministratore IT nel dispositivo e toccare **CONTINUA**.
 
@@ -114,13 +114,13 @@ Se si verifica un errore durante la registrazione del dispositivo in Intune, è 
 
 14. Quando viene visualizzata la schermata **Configurazione dell'accesso aziendale** toccare **CONTINUA**. Se viene visualizzato un messaggio che indica che il dispositivo non è conforme, seguire le istruzioni per risolvere il problema e toccare **CONTINUA**.
 
-    ![Il dispositivo non è conforme, ma è registrato](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![Il dispositivo non è conforme, ma è registrato](/intune/media/android_cp_enroll_05_post_1709.png)
 
-    ![Si verificano problemi di conformità del dispositivo che è necessario risolvere](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Si verificano problemi di conformità del dispositivo che è necessario risolvere](/intune/media/android_cp_enroll_03_post_1709.png)
 
     È possibile trovare altre informazioni sui problemi riscontrati toccando le voci corrispondenti.
 
-    ![Problemi di conformità del dispositivo espansi](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Problemi di conformità del dispositivo espansi](/intune/media/android_cp_enroll_04_post_1709.png)
 
     ![Schermata di configurazione dell'accesso aziendale](./media/and-enroll-9d-comp-access-setup.png)  
 

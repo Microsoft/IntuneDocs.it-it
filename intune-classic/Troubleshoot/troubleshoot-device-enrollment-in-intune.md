@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/16/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: d553f62ed2ee1c9e5a6b9121b766e6e427d06bf7
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Intune
 
@@ -63,7 +63,7 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Per eliminare i dispositivi nel portale di Azure Active Directory
 
-1.  Accedere a [http://aka.ms/accessaad](http://aka.ms/accessaad) oppure fare clic su **Amministrazione** &gt; **Azure AD** da [https://portal.office.com](https://portal.office.com).
+1.  Accedere a [http://aka.ms/accessaad](http://aka.ms/accessaad) oppure fare clic su** Amministrazione** &gt; **Azure AD** da [https://portal.office.com](https://portal.office.com).
 
 2.  Accedere con l'ID organizzazione usando il collegamento sul lato sinistro della pagina.
 
@@ -370,7 +370,14 @@ Presto verranno aggiunti esempi su cosa cercare in questi file di log.
 ### <a name="other-ios-enrollment-errors"></a>Altri errori di registrazione di iOS
 Nella sezione relativa agli [errori che si verificano durante la registrazione del dispositivo in Intune](/intune-user-help/using-your-iOS-or-macOS-device-with-intune) della documentazione dei dispositivi per gli utenti viene specificato un elenco di errori di registrazione di iOS.
 
-## <a name="pc--issues"></a>Problemi relativi al PC
+## <a name="pc-issues"></a>Problemi relativi al PC
+
+
+|Messaggio di errore|Problema|Risoluzione|
+|---|---|---|
+|**L'amministratore IT deve assegnare la licenza per l'accesso**<br>L'amministratore IT non ha concesso l'accesso per l'uso di questa app. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|Il dispositivo non può essere registrato perché l'account dell'utente non ha la licenza necessaria.|Per poter registrare i dispositivi, è necessario che agli utenti venga assegnata la licenza necessaria. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili designata. Questo errore di Intune viene visualizzato, ad esempio, se Intune è stato designato come autorità di gestione dei dispositivi mobili e l'utente usa una licenza per System Center 2012 R2 Configuration Manager.<br>Vedere le informazioni su [come assegnare le licenze di Intune agli account utente](https://docs.microsoft.com/intune/licenses-assign).|
+
+
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>The machine is already enrolled (Il computer è già registrato) - Errore hr 0x8007064c
 **Problema:** la registrazione ha esito negativo e genera l'errore **The machine is already enrolled** (Il computer è già registrato). Il log di registrazione visualizza l'errore **hr 0x8007064c**.

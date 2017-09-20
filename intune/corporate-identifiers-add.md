@@ -15,24 +15,24 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85303c503e068ec23c8321b9359760775bbdb6f8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 58dac14dcc38329cfa0a98746e667bf6e5438170
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificare i dispositivi di proprietà dell'azienda
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-L'amministratore di Intune può identificare un dispositivo come di proprietà aziendale in diversi modi. Intune può raccogliere informazioni aggiuntive dai dispositivi di proprietà aziendale. È anche possibile configurare restrizioni per i dispositivi, in modo da impedire la registrazione da parte di dispositivi non appartenenti all'azienda.
+L'amministratore di Intune può identificare i dispositivi di proprietà dell'azienda per perfezionare la gestione e l'identificazione. Con Intune è possibile eseguire attività di gestione aggiuntive e raccogliere altre informazioni, ad esempio il numero di telefono completo e un inventario delle app dai dispositivi di proprietà dell'azienda. È anche possibile configurare restrizioni per impedire la registrazione da parte di dispositivi che non sono di proprietà dell'azienda.
 
 Un dispositivo viene identificato come di proprietà aziendale se una delle condizioni seguenti risulta vera:
 
 - Registrazione con un account di [manager di registrazione dispositivi](device-enrollment-manager-enroll.md) (tutte le piattaforme)
 - Registrazione con Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md), [Apple School Manager](apple-school-manager-set-up-ios.md) o [Apple Configurator](apple-configurator-enroll-ios.md) (solo iOS)
 - [Identificazione come di proprietà aziendale prima della registrazione](#identify-corporate-owned-devices-with-imei-or-serial-number) tramite numeri IMEI (International Mobile Equipment Identifier) nel caso di tutte le piattaforme con numeri IMEI oppure tramite i numeri di serie nel caso di iOS e Android
-- Registrazione in Azure Active Directory o Enterprise Mobility + Security come dispositivo Windows 10 Enterprise (solo Windows 10)
+- Registrazione in Azure Active Directory o Enterprise Mobility + Security come dispositivo Windows 10 Enterprise
 - Identificazione come [dispositivo di proprietà aziendale](#change-device-ownership) nell'elenco delle proprietà del dispositivo
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Identificare i dispositivi di proprietà aziendale con numero IMEI o numero di serie
