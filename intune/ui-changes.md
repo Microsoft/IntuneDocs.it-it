@@ -15,19 +15,19 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Dove si trovano le funzionalità di Intune in Azure?
 Con lo spostamento di Intune nel portale di Azure, alcune attività sono state riorganizzate in modo più logico. Ma ogni ottimizzazione implica la necessità di abituarsi a una nuova organizzazione. È stata quindi realizzata questa Guida di riferimento, pensata espressamente per chi conosce già Intune nel portale classico e vuole imparare a usarlo nel portale di Azure. Se questo articolo non fornisce informazioni su una funzionalità specifica, lasciare un commento alla fine dell'articolo in modo da poterlo aggiornare.
 ## <a name="quick-reference-guide"></a>Guida di riferimento rapido
 |Funzionalità |Percorso nel portale classico|Percorso in Intune nel portale di Azure|
 |------------|---------------|---------------|
-|Device Enrollment Program (DEP) |Amministrazione > Gestione dispositivi mobili > iOS e Mac OS X > Device Enrollment Program|[Registrazione del dispositivo > Registrazione Apple > Token DEP](#where-did-apple-dep-go) |
-|Device Enrollment Program (DEP)| Amministrazione > Gestione dispositivi mobili > iOS e Mac OS X > Device Enrollment Program |[Registrazione del dispositivo > Registrazione Apple > Numeri di serie DEP](#where-did-apple-dep-go) |
+|Device Enrollment Program (DEP) [solo iOS]|Amministrazione > Gestione dispositivi mobili > iOS > Device Enrollment Program|[Registrazione del dispositivo > Registrazione Apple > Token DEP](#where-did-apple-dep-go) |
+|Device Enrollment Program (DEP) [solo iOS]| Amministrazione > Gestione dispositivi mobili > iOS e Mac OS X > Device Enrollment Program |[Registrazione del dispositivo > Registrazione Apple > Numeri di serie DEP](#where-did-apple-dep-go) |
 |Regole di registrazione |Amministrazione > Gestione dispositivi mobili > Regole di registrazione|[Registrazione del dispositivo > Restrizioni di registrazione](#where-did-enrollment-rules-go) |
 |Gruppi in base al numero di serie iOS |Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per numero di serie iOS|[Registrazione del dispositivo > Registrazione Apple > Numeri di serie DEP](#where-did-corporate-pre-enrolled-devices-go) |
 |Gruppi in base al numero di serie iOS |Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per numero di serie iOS| [Registrazione del dispositivo > Registrazione Apple > Numeri di serie AC](#where-did-corporate-pre-enrolled-devices-go)|

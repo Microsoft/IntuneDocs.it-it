@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c14903d227164089f52c9bd3288a99f29a9141b8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple
 
@@ -43,7 +43,6 @@ La registrazione DEP non funziona con il [manager di registrazione dispositivi](
 - Dispositivi acquistati tramite il programma [Device Enrollment Program di Apple](http://deploy.apple.com)
 - [Autorità di gestione dei dispositivi mobili](mdm-authority-set.md)
 - [Certificato push MDM Apple](apple-mdm-push-certificate-get.md)
-- Per l'affinità utente è richiesto [endpoint misto/nome utente WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Altre informazioni](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
 > [!NOTE]
 > L'autenticazione a più fattori (MFA) non funziona durante la registrazione DEP configurata per l'affinità utente. Dopo la registrazione, l'autenticazione a più fattori funziona come previsto nei dispositivi. I dispositivi non possono richiedere agli utenti di modificare la password al primo accesso. Inoltre, agli utenti con password scadute non viene richiesto di reimpostare la password durante la registrazione e devono reimpostarla da un altro dispositivo.
@@ -109,7 +108,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 
   Per **Affinità utente**, scegliere se i dispositivi con questo profilo verranno registrati con o senza un utente assegnato.
 
- - **Registra con affinità utente**: scegliere questa opzione per i dispositivi che appartengono a utenti e che devono usare il portale aziendale per i servizi, come l'installazione di app.
+ - **Registra con affinità utente**: scegliere questa opzione per i dispositivi che appartengono a utenti e che devono usare il portale aziendale per i servizi, come l'installazione di app. Per l'affinità utente è richiesto [endpoint misto/nome utente WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Altre informazioni](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
  - **Registra senza affinità utente**: scegliere questa opzione per un dispositivo non associato a un singolo utente. Usare questa impostazione per i dispositivi che eseguono attività senza accedere ai dati utente locali. Le app come l'app Portale aziendale non funzionano.
 
@@ -119,6 +118,8 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
     - **Supervisione eseguita**: modalità di gestione che attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita. Se si lascia vuota la casella di controllo, le funzionalità di gestione saranno limitate.
 
     - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disattiva le impostazioni iOS che potrebbero permettere la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni. Dopo la registrazione del dispositivo, non è possibile modificare questa impostazione senza ripristinare le impostazioni predefinite del dispositivo.
+
+  - **Modalità iPad condiviso abilitata**: il programma Device Enrollment Program di Apple non supporta la modalità iPad condiviso.
 
     - **Consenti associazione**: specifica se i dispositivi iOS possono sincronizzarsi con i computer. Se si sceglie **Consenti Apple Configurator per certificato**, è necessario scegliere un certificato in **Certificati di Apple Configurator**.
 

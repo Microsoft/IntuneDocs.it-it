@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 09/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c4787c716f94e95ab98badf924273af5d02751f8
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: d48664186b1914d30757557bd97d3d61b6410338
+ms.sourcegitcommit: 695bf70a79e20a17168c061afbb675b73ea999f7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 
@@ -41,6 +41,31 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazio
   ### Monitor and troubleshoot
 
 -->   
+
+## <a name="week-of-september-11-2017"></a>Settimana dell'11 settembre 2017
+
+### <a name="device-enrollment"></a>Registrazione del dispositivo
+
+#### <a name="additional-push-notifications-for-end-users-on-the-company-portal-app-for-android-o----1475932---"></a>Notifiche push aggiuntive per gli utenti finali dell'app Portale aziendale per Android O <!---1475932--->
+
+Gli utenti finali visualizzeranno notifiche aggiuntive che indicheranno loro quando l'app Portale aziendale per Android O sta eseguendo attività in background, ad esempio il recupero di criteri dal servizio di Intune. Gli utenti finali possono così sapere in modo più trasparente quando l'app Portale aziendale ha in esecuzione attività amministrative nel dispositivo. È uno degli aspetti dell'intera [ottimizzazione dell'interfaccia utente del portale aziendale](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune) per l'app Portale aziendale per Android O. 
+
+#### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>Comunicare agli utenti finali quali informazioni sui dispositivi possono essere visualizzate per iOS<!--739894--> 
+
+È stata aggiunta l'opzione **Tipo di proprietà** nella schermata Dettagli dispositivo nell'app Portale aziendale per iOS. In questo modo gli utenti possono ottenere altre informazioni sulla privacy direttamente da questa pagina dalla documentazione di Intune per gli utenti finali. Potranno accedere a queste informazioni anche nella schermata Informazioni su. 
+
+#### <a name="allow-end-users-to-access-the-company-portal-app-for-android-without-enrollment----1169910---"></a>Consentire agli utenti di accedere all'app Portale aziendale per Android senza registrazione <!---1169910--->
+
+Gli utenti finali potranno presto non avere l'obbligo di registrare il dispositivo per accedere all'app Portale aziendale per Android. Agli utenti finali di organizzazioni che usano criteri di protezione delle app non verrà più richiesto di registrare il dispositivo quando aprono l'app Portale aziendale. Gli utenti finali potranno anche installare app dal Portale aziendale senza registrare il dispositivo. 
+
+
+#### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Testo più comprensibile per l'app Portale aziendale per Android <!---1396349--->  
+
+Il processo di registrazione per l'app del portale aziendale per Android è ora più semplice per gli utenti finali, grazie all'uso di un nuovo testo più comprensibile. Aggiornare la precedente documentazione relativa alla registrazione personalizzata perché contenga le nuove schermate. È possibile trovare immagini di esempio nella pagina [Aggiornamenti dell'interfaccia utente per le app degli utenti finali in Intune](whats-new-app-ui.md#week-of-september-11-2017).
+
+#### <a name="windows-10-company-portal-app-added-to-windows-information-protection-allow-policy----677129---"></a>App del portale aziendale di Windows 10 aggiunta ai criteri per il consenso di Windows Information Protection<!-- 677129 -->
+
+L'app Portale aziendale di Windows 10 è stata aggiornata per supportare Windows Information Protection (WIP). L'app può essere aggiunta ai criteri per il consenso di WIP. Con questa modifica non è più necessario aggiungere l'app all'elenco **Esente**. 
 
 
 ## <a name="week-of-august-21-2017"></a>Settimana del 21 agosto 2017

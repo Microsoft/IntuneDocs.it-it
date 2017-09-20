@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,31 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
-ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
+ms.openlocfilehash: a43c15f7fb7323a17b8fe24f26128834288e0dec
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni su quali aggiornamenti sono stati apportati all'interfaccia utente per le app che gli utenti finali vedranno in questa versione di Microsoft Intune. Queste informazioni sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.
 
-## <a name="week-of-august-28-2017"></a>Settimana del 28 agosto 2017
+## <a name="week-of-september-11-2017"></a>Settimana dell'11 settembre 2017
 
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Testo più comprensibile per l'app Portale aziendale per Android <!---1396349--->  
+
+Il processo di registrazione per l'app del portale aziendale per Android è ora più semplice per gli utenti finali, grazie all'uso di un nuovo testo più comprensibile. Aggiornare la precedente documentazione relativa alla registrazione personalizzata perché contenga le nuove schermate. Di seguito alcune immagini di esempio:
+
+|Prima|Dopo|
+|---|---|
+|![01](./media/android_cp_enroll_01_before_1709.png)|![01](./media/android_cp_enroll_01_post_1709.png)|
+|![02](./media/android_cp_enroll_02_before_1709.png)|![02](./media/android_cp_enroll_02_post_1709.png)|
+|![03](./media/android_cp_enroll_03_before_1709.png)|![03](./media/android_cp_enroll_03_post_1709.png)|
+|![04](./media/android_cp_enroll_04_before_1709.png)|![04](./media/android_cp_enroll_04_post_1709.png)|
+|![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
+
+
+## <a name="week-of-august-28-2017"></a>Settimana del 28 agosto 2017
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>L'app di posta elettronica iOS 11 supporta OAuth <!---1196951--->
 

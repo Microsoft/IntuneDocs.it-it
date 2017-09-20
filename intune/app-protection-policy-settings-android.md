@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 72adee13a7400421fe8db6a63d9bfdaf2db4858c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 43737ac3c2a8e84f1909c0f0cfcf450937301872
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per Android
 Le impostazioni dei criteri descritte in questo argomento possono essere [configurate](app-protection-policies.md) per il criterio di protezione delle app nel pannello **Impostazioni** del portale di Azure.
@@ -35,13 +35,13 @@ Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione d
 | **Impedisci "Salva con nome"** | Scegliere **Sì** per disabilitare l'uso dell'opzione Salva con nome in questa app. Scegliere **No** per consentire l'uso di Salva con nome. <p><br>**Selezionare i servizi di archiviazione in cui è possibile salvare i dati aziendali** <br>Gli utenti possono salvare nei servizi selezionati (OneDrive for Business, SharePoint e archiviazione locale). Tutti gli altri servizi verranno bloccati.</p> | No <br><br> 0 selezionato |
 | **Limita le operazioni taglia, copia e incolla con le altre app** | Specificare quando è possibile usare le azioni taglia, copia e incolla con questa app. È possibile scegliere tra: <ul><li>**Bloccato**: non consente le azioni taglia, copia e incolla tra questa app e altre app.</li><li>**App gestite da criteri**: consente le azioni taglia, copia e incolla tra questa app e altre app gestite da criteri.</li><li>**App gestite da criteri con Incolla in**: consente le azioni taglia o copia tra questa app e altre app gestite da criteri. I dati da qualsiasi app possono essere incollati in questa app.</li><li>**Qualsiasi app**: nessuna restrizione per le azioni taglia, copia e incolla in e da questa app. | Qualsiasi app |
 |**Limita il contenuto Web per la visualizzazione in Managed Browser** | Scegliere **Sì** per imporre l'apertura dei collegamenti Web nell'app con l'app Managed Browser. <br><br> Per i dispositivi non registrati in Intune, i collegamenti Web nelle app gestite da criteri possono essere aperti solo nell'app Managed Browser. <br><br> Se si usa Intune per gestire i dispositivi, vedere [Gestire l'accesso a Internet usando criteri di browser gestiti con Microsoft Intune](app-configuration-managed-browser.md). | No |
-| **Crittografa dati app** | Scegliere **Sì** per abilitare la crittografia dei dati aziendali o dell'istituto di istruzione in questa app. Intune usa uno schema di crittografia OpenSSL AES a 128 bit insieme al sistema di archivio chiavi Android per crittografare i dati dell'app in modo sicuro. I dati vengono crittografati in modo sincrono durante le operazioni di I/O dei file. Il contenuto nella memoria del dispositivo è sempre crittografato. <br><br> Il metodo di crittografia **non** è certificato FIPS 140-2.  | sì |
+| **Crittografa dati app** | Scegliere **Sì** per abilitare la crittografia dei dati aziendali o dell'istituto di istruzione in questa app. Intune usa uno schema di crittografia OpenSSL AES a 128 bit insieme al sistema di archivio chiavi Android per crittografare i dati dell'app in modo sicuro. I dati vengono crittografati in modo sincrono durante le operazioni di I/O dei file. Il contenuto nella memoria del dispositivo è sempre crittografato. <br><br> Il metodo di crittografia **non** è certificato FIPS 140-2.  | Sì |
+| **Disabilita la crittografia delle app quando è abilitata la crittografia del dispositivo** | Scegliere **Sì** per disabilitare la crittografia delle app per le risorse di archiviazione delle app interne quando la crittografia dei dispositivi viene rilevata in un dispositivo registrato. <br><br>**Nota:** Intune può rilevare solo la registrazione del dispositivo con MDM Intune. Le risorse di archiviazione delle app esterne saranno tuttavia crittografate perché i dati non siano accessibili da applicazioni non gestite. | Sì |
 | **Disabilita sincronizzazione contatti** | Scegliere **Sì** per impedire all'app di salvare dati nell'app Contatti nativa nel dispositivo. Se si sceglie **No**, l'app può salvare dati nell'app Contatti nativa nel dispositivo. <br><br>Quando si esegue una cancellazione selettiva per rimuovere dati aziendali o dell'istituto di istruzione dall'app, i contatti sincronizzati direttamente dall'app nell'app Contatti nativa vengono rimossi. Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere cancellati. Attualmente questa opzione è disponibile solo per l'app Microsoft Outlook. | No |
 | **Disabilita stampa** | Scegliere **Sì** per impedire all'app di stampare dati aziendali o dell'istituto di istruzione. | No |
 
   >[!NOTE]
   >Il metodo di crittografia per l'impostazione **Crittografa dati app** **non** è certificato FIPS 140-2.
-
 
   ## <a name="data-transfer-exemptions"></a>Esenzioni per il trasferimento dei dati
 
@@ -83,6 +83,6 @@ Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione d
 | **Richiedi credenziali aziendali per l'accesso** | Scegliere **Sì** per richiedere all'utente di accedere con il proprio account aziendale o dell'istituto di istruzione anziché immettere un PIN per accedere all'app. Se questa opzione è impostata su **Sì**, ha la priorità sulle richieste di PIN o ID tocco.  | No |
 | **Blocca l'esecuzione delle app gestite nei dispositivi jailbroken o rooted** |Scegliere **Sì** per impedire l'esecuzione dell'app nei dispositivi jailbroken o rooted. L'utente potrà comunque usare le app per le attività personali, ma dovrà usare un dispositivo diverso per accedere ai dati aziendali o dell'istituto di istruzione nell'app. | sì |
 | **Controlla di nuovo i requisiti di accesso dopo (minuti)** | Configurare le seguenti impostazioni: <ul><li>**Timeout**: numero di minuti prima che vengano ricontrollati i requisiti di accesso definiti in precedenza nei criteri. Ad esempio, un amministratore attiva il PIN nel criterio e l'utente deve immettere un PIN quando apre un'app MAM. Quando si usa questa impostazione, l'utente non dovrà immettere un PIN per alcuna app MAM per altri **30 minuti** (valore predefinito).</li><li>**Periodo di prova offline**: numero di minuti per cui è consentita l'esecuzione di app MAM offline. Specificare il periodo (in minuti) prima che vengano ricontrollati i requisiti di accesso per l'app. Valore predefinito: **720** minuti (12 ore). Alla scadenza di questo periodo, l'app richiederà l'autenticazione utente per AAD per poter continuare l'esecuzione.</li></ul>| Timeout: 30 <br><br> Offline: 720 |
-| **Intervallo offline (giorni) prima della cancellazione dei dati dell'app** | Dopo questo numero di giorni (definito dall'amministratore) di esecuzione offline, l'app richiederà all'utente di connettersi alla rete e ripetere l'autenticazione. Se l'utente viene autenticato correttamente, può continuare ad accedere ai dati e l'intervallo offline viene reimpostato.  Se l'autenticazione non riesce, l'app eseguirà una cancellazione selettiva dell'account utenti e dei dati.  Vedere [Come cancellare solo i dati aziendali dalle app gestite da Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) per altre informazioni sui dati che vengono rimossi con una cancellazione selettiva.<br><br> | 90 giorni |
+| **Intervallo offline (giorni) prima della cancellazione dei dati dell'app** | Trascorso questo intervallo di esecuzione offline (numero di giorni definito dall'amministratore), l'app chiederà all'utente di connettersi alla rete e ripetere l'autenticazione. Se l'utente viene autenticato correttamente, può continuare ad accedere ai dati e l'intervallo offline viene reimpostato.  Se l'autenticazione non riesce, l'app eseguirà una cancellazione selettiva dell'account utenti e dei dati.  Vedere [Come cancellare solo i dati aziendali dalle app gestite da Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) per altre informazioni sui dati che vengono rimossi con una cancellazione selettiva.<br><br> | 90 giorni |
 | **Blocca acquisizione schermo e Assistente per Android (Android 6.0+)** | Scegliere **Sì** per bloccare le funzionalità di acquisizione schermo e **Assistente per Android** del dispositivo quando si usa questa app. Se si sceglie **Sì** verrà anche sfocata l'immagine di anteprima della funzione Switch quando si usa questa app con un account aziendale o dell'istituto di istruzione. | No |
 | **Disabilita il PIN dell'app quando il PIN del dispositivo è gestito** | Scegliere **Sì** per disabilitare il PIN dell'app quando viene rilevato un blocco del dispositivo in un dispositivo registrato. | No |
