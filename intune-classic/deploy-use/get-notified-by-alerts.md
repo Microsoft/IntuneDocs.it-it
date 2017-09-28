@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
-ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
+ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
+ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/22/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Usare gli avvisi per ricevere notifiche da Microsoft Intune
 
@@ -61,6 +61,8 @@ Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.
 
 ## <a name="working-with-alerts"></a>Utilizzo degli avvisi
 
+Per visualizzare gli avvisi nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com), scegliere **Avvisi** e quindi il tipo di avviso da visualizzare.
+
 Usare le opzioni seguenti per gestire gli avvisi dalla console di amministrazione di Intune.
 
 |Opzione|Descrizione|
@@ -70,11 +72,12 @@ Usare le opzioni seguenti per gestire gli avvisi dalla console di amministrazion
 |**Chiudere un avviso**|Nell'elenco degli avvisi scegliere l'avviso da chiudere e quindi scegliere **Chiudi avviso**.<br /><br />Gli avvisi chiusi vengono eliminati definitivamente dopo 90 giorni.|
 |**Riattivare un avviso chiuso**|Nell'elenco degli avvisi impostare l'elenco a discesa **Filtri** su **Chiuso**.<br /><br />Nell'elenco degli avvisi chiusi selezionare l'avviso da riattivare e quindi scegliere **Riattiva avviso**.|
 
-Gli avvisi di Intune restano attivi finché:
+Gli avvisi di Intune restano attivi 30 giorni o finché:
 
-- Il problema per il quale è stato generato l'avviso non viene risolto
-- L'avviso non viene chiuso manualmente
-- Non trascorrono 45 giorni dalla generazione dell'avviso
+- Il problema per il quale è stato generato l'avviso non viene risolto.
+- L'avviso viene chiuso manualmente.
+
+Gli avvisi chiusi possono essere riattivati per 30 giorni dopo la chiusura. Dopo 30 giorni, gli avvisi chiusi e inattivi vengono rimossi da Intune.
 
 > [!TIP]
 > Se lo stesso avviso viene generato da dispositivi che eseguono sistemi operativi diversi, potrebbero essere visualizzate più versioni dello stesso avviso nell'elenco degli avvisi.

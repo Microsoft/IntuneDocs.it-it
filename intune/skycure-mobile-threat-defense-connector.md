@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9afb22b5fdfa20824f2a470936b213e3d5b76056
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 47df2c4a909c397ac5a6c0f736d11344de44736e
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Connettore Skycure Mobile Threat Defense
 
@@ -115,10 +115,10 @@ Per altre informazioni, visitare il [sito Web di Skycure](https://www.skycure.co
 
 Questi sono i passaggi da completare per integrare Intune con Skycure:
 
-1.  [Add and assign Skycure apps, Microsoft Authenticator and iOS app configuration policy](mtd-apps-ios-app-configuration-policy-add-assign.md) (Aggiungere e assegnare app Skycure e Microsoft Authenticator e criteri di configurazione delle app iOS)
+- [Configurare l'integrazione di Skycure con Intune](skycure-mtd-connector-integration.md)
 
-2.  [Configurare l'integrazione di Skycure con Intune](skycure-mtd-connector-integration.md)
+- [Add and assign Skycure apps, Microsoft Authenticator and iOS app configuration policy](mtd-apps-ios-app-configuration-policy-add-assign.md) (Aggiungere e assegnare app Skycure e Microsoft Authenticator e criteri di configurazione delle app iOS)
 
-3.  [Abilitare Mobile Threat Defense in Intune](mtd-connector-enable.md)
+- [Creare criteri di conformità dei dispositivi Mobile Threat Defense (MTD) con Intune](mtd-device-compliance-policy-create.md)
 
-4.  [Creare criteri di conformità dei dispositivi Mobile Threat Defense (MTD) con Intune](mtd-device-compliance-policy-create.md)
+- [Abilitare Mobile Threat Defense in Intune](mtd-connector-enable.md)

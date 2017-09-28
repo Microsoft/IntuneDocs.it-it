@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2cffc21ba78cbd54edfb75eaa892df1539ad62b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2e9b1a3dc42a9c18d61fc9b55d5a7b71f00c3e29
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creare criteri di conformità dei dispositivi Mobile Threat Defense (MTD) con Intune
 
@@ -35,8 +35,6 @@ Nell'ambito della configurazione di MTD, nella console partner di MTD sono stati
 Prerequisiti dei criteri di conformità dei dispositivi con MTD:
 
 -   Configurazione dell'integrazione di MTD con Intune
-
--   Abilitazione del connettore MTD in Intune
 
 ## <a name="to-create-a-mtd-device-compliance-policy"></a>Per creare criteri di conformità dei dispositivi per MTD
 
@@ -77,3 +75,7 @@ Per assegnare agli utenti criteri di conformità dei dispositivi, scegliere crit
 
     > [!NOTE] 
     > Il criterio è stato applicato agli utenti. I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Abilitare MTD con Intune](mtd-connector-enable.md)
