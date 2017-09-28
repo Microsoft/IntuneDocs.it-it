@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 77021ddc681f10d735ed0e680738122667608bdf
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6a9925b91b009f43c08533222a5fdfc765ea51c2
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurare l'integrazione di Lookout Mobile Threat Defense con Intune
 
@@ -130,5 +130,7 @@ Lookout Mobile Threat Defense usa vari tipi di classificazione per le minacce ai
 
 ## <a name="watching-enrollment"></a>Monitoraggio della registrazione
 Al termine della configurazione, Lookout Mobile Threat Defense inizia a eseguire il polling di Azure AD per i dispositivi corrispondenti ai gruppi di registrazione specificati.  Le informazioni sui dispositivi registrati sono disponibili nel modulo Devices (Dispositivi).  Per i dispositivi viene visualizzato lo stato iniziale in sospeso.  Lo stato del dispositivo cambia dopo l'installazione, l'apertura e l'attivazione nel dispositivo dell'app Lookout for Work.  Per informazioni dettagliate su come ottenere tramite push l'app Lookout for Work nel dispositivo, vedere l'argomento [Add Lookout for work apps with Intune](mtd-apps-ios-app-configuration-policy-add-assign.md) (Aggiungere app Lookout for Work con Intune).
+
 ## <a name="next-steps"></a>Passaggi successivi
-[Enable Lookout MTD connection Intune](mtd-connector-enable.md) (Abilitare la connessione a Lookout MTD in Intune)
+
+[Configurare le app di Lookout](mtd-apps-ios-app-configuration-policy-add-assign.md)

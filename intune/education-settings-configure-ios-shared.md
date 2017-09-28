@@ -15,17 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9149b4d9d263a5d68fdd73e0a3754a24a74ad973
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 9b24ee84d339b728addd753cb309b4d8572e5582
+ms.sourcegitcommit: e5501cdf08d3e79bc51dc726697606be02110e57
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 09/21/2017
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Come configurare le impostazioni relative all'istruzione di Intune per i dispositivi iPad condivisi
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Introduzione Intune supporta l'app Classromm iOS, progettata per consentire ai docenti di gestire l'insegnamento e controllare i dispositivi degli studenti in aula. Per l'app Classroom, Apple offre anche la possibilità di configurare i dispositivi iPad degli studenti in modo che un singolo dispositivo possa essere condiviso da più studenti. In questo documento viene spiegato come raggiungere questo obiettivo con Intune.
+Intune supporta l'app Classroom iOS, progettata per consentire ai docenti di gestire l'insegnamento e controllare i dispositivi degli studenti in aula. Per l'app Classroom, Apple offre anche la possibilità di configurare i dispositivi iPad degli studenti in modo che un singolo dispositivo possa essere condiviso da più studenti. In questo documento viene spiegato come raggiungere questo obiettivo con Intune.
+
 Per informazioni sulla configurazione dei dispositivi iPad (1:1) dedicati per l'uso dell'app Classroom, vedere [How to configure Intune settings for the iOS Classroom app](education-settings-configure-ios.md) (Come configurare le impostazioni di Intune per l'app Classroom iOS).
 
 ## <a name="before-you-start"></a>Prima di iniziare
