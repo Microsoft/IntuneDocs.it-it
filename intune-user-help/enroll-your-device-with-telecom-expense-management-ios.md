@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a71b8d1a100100e204eb7e90ba0ab00573ffc5c6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 525e2024246946c9fd9fadefbe42d10dee5c2932
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>Registrare il dispositivo iOS nella gestione delle spese per telecomunicazioni
 
@@ -63,4 +63,4 @@ Selezionare l'opzione appropriata. Si riceverà una notifica per l'installazione
 
 Al termine della registrazione, sarà possibile iniziare a esaminare l'utilizzo dei dati nell'app Datalert.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
