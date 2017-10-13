@@ -1,5 +1,5 @@
 ---
-title: Inviare i log all'amministratore IT per i dispositivi Windows 10 | Microsoft Docs
+title: Inviare i log al supporto tecnico aziendale per i dispositivi Windows 10 | Microsoft Docs
 description: Registrare un dispositivo Windows 10 1511 in Intune
 keywords: 
 author: barlanmsft
@@ -16,22 +16,22 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 47e6b663cead876b1b19f61d02efed81be4d0dbc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f2287700e96c798be7033eac35539e3490bc3f8a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-from-the-company-portal-app-for-windows-10"></a>Inviare i log all'amministratore IT dall'app Portale aziendale per Windows 10
+# <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Inviare i log al supporto tecnico aziendale dall'app Portale aziendale per Windows 10
 
-Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo Windows 10, è possibile inviare informazioni sull'errore tramite posta elettronica per consentire all'amministratore IT di risolvere il problema. Queste informazioni vengono memorizzate nel dispositivo in uno specifico documento definito _log di diagnostica_.
+Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo Windows 10, è possibile inviare un messaggio di posta elettronica al supporto tecnico aziendale con informazioni utili ai fini della risoluzione del problema. Queste informazioni vengono memorizzate nel dispositivo in uno specifico documento definito _log di diagnostica_.
 
 1.  Aprire l'app **Portale aziendale**.
 2.  Selezionare l'icona a forma di ingranaggio **Impostazioni** e quindi **Invia log**.
-3.  Verrà aperta la finestra **Condividi**. Selezionare **Posta**. Verrà creato un messaggio di posta elettronica con i log dell'app Portale aziendale allegati, in modo da poterli inviare all'amministratore IT.
+3.  Verrà aperta la finestra **Condividi**. Selezionare **Posta**. Verrà creato un messaggio di posta elettronica con i log dell'app Portale aziendale allegati, perché sia possibile inviarli al supporto tecnico aziendale.
 
-  ![Finestra di dialogo Invia log dalla pagina Impostazioni dell'app Portale aziendale. Il collegamento su cui fare clic indica "Invia log - È possibile inviare i log di diagnostica all'amministratore IT per semplificare la risoluzione dei problemi relativi al portale aziendale."](./media/w10-share-logs.png)
+  ![Finestra di dialogo Invia log dalla pagina Impostazioni dell'app Portale aziendale. Il collegamento su cui fare clic è "Invia log - È possibile inviare i log di diagnostica al supporto tecnico aziendale per semplificare la risoluzione dei problemi relativi al portale aziendale."](./media/w10-share-logs.png)
 
-Potrebbe anche essere necessario inviare i [log dall'app Impostazioni](send-logs-to-your-it-admin-settings-windows.md) per offrire all'amministratore IT ulteriore supporto per la risoluzione degli eventuali problemi rilevati. 
+Può anche essere necessario inviare i [log dall'app Impostazioni](send-logs-to-your-it-admin-settings-windows.md) per mettere a disposizione del supporto tecnico aziendale altri elementi per la risoluzione degli eventuali problemi rilevati. 
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

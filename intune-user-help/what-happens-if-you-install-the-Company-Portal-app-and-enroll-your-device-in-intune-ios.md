@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo iOS o macOS in Intune?
 
@@ -34,9 +34,9 @@ Quando si installa l'app Portale aziendale e si registra il dispositivo iOS o ma
 
 -   Configurare automaticamente l'account di posta elettronica aziendale.
 
-Quando si registra il dispositivo in Intune, si concedono all'amministratore IT le autorizzazioni per gestire il dispositivo e proteggere le informazioni aziendali presenti all'interno di esso.
+Quando si registra il dispositivo in Intune, si autorizza il supporto tecnico dell'azienda a gestire il dispositivo e proteggere le informazioni aziendali presenti nello stesso.
 
-Quando il dispositivo è registrato, l'amministratore IT può:
+Quando il dispositivo è registrato, il supporto tecnico dell'azienda può:
 
 -   Ripristinare le impostazioni predefinite del dispositivo se quest'ultimo viene perso o rubato.
 
@@ -62,4 +62,4 @@ Quando il dispositivo è registrato, l'amministratore IT può:
 
 -   Abilitare o disabilitare la sincronizzazione automatica dei file in modalità roaming sul dispositivo. Se è consentita la sincronizzazione automatica dei file, si potrebbero subire addebiti per questo servizio.
 
-Per eventuali domande, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usare dispositivi gestiti per lo svolgimento del lavoro
 Microsoft Intune è un componente software che consente alle organizzazioni di gestire dispositivi (ad esempio smartphone, tablet e PC), app e altre risorse aziendali come la posta elettronica. Questo strumento permette ai dipendenti di accedere alle informazioni di lavoro praticamente da qualsiasi luogo su quasi tutti i dispositivi e, al tempo stesso, contribuisce a proteggere le informazioni aziendali.
@@ -33,8 +33,8 @@ Il reparto IT dell'azienda può vedere le informazioni relative al lavoro, ma no
 ## <a name="how-do-i-get-the-company-portal"></a>Come si accede al portale aziendale?
 È possibile accedere al portale aziendale in due modi diversi:
 
-- Installando l'app Portale aziendale nel dispositivo. In genere è possibile scaricare l'app Portale aziendale dall'App Store del dispositivo, ma anche l'amministratore IT può installare l'app.
-- Visitando il [sito Web del portale aziendale](https://portal.manage.microsoft.com) impostato dall'amministratore IT.
+- Installando l'app Portale aziendale nel dispositivo. In genere è possibile scaricare l'app Portale aziendale dall'App Store del dispositivo, ma anche il supporto tecnico dell'azienda può installare l'app.
+- Visitando il [sito Web del portale aziendale](https://portal.manage.microsoft.com) impostato dal supporto tecnico dell'azienda.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual è la differenza tra app e sito Web?
 Esistono alcune lievi differenze tra l'app Portale aziendale e il sito Web del portale aziendale, ma la maggior parte delle attività può essere eseguita su entrambi. Ad esempio, è possibile:
@@ -54,9 +54,9 @@ Per scoprire quali operazioni è possibile eseguire nel sito Web del portale azi
 - [Uso del sito Web del portale aziendale](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>Che cosa succede quando si aggiunge un computer o un dispositivo al Portale aziendale?
-Quando si aggiunge un computer o un dispositivo al Portale aziendale, a seconda del dispositivo è possibile che venga installato un software o scaricata un'app. Vengono inoltre concesse all'amministratore IT le autorizzazioni per gestire il dispositivo e proteggere le informazioni aziendali sul dispositivo.
+Quando si aggiunge un computer o un dispositivo al Portale aziendale, a seconda del dispositivo è possibile che venga installato un software o scaricata un'app. Vengono inoltre concesse al supporto tecnico dell'azienda le autorizzazioni necessarie per gestire il dispositivo e proteggere le informazioni aziendali sul dispositivo.
 
-Per informazioni su ciò che l'amministratore IT può e non può visualizzare nei dispositivi degli utenti, usare il collegamento che corrisponde al tipo di dispositivo in uso:
+Per informazioni su ciò che l'azienda può e non può visualizzare nei dispositivi degli utenti, usare il collegamento che corrisponde al tipo di dispositivo in uso:
 
 - [Installare l'app Portale aziendale per Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [Installare l'app Portale aziendale per iOS e macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -96,4 +96,4 @@ Microsoft consiglia di provare prima di tutto a risolvere il problema autonomame
 - [Risolvere problemi comuni con il dispositivo iOS](troubleshoot-your-device-ios.md)
 - [Risolvere problemi comuni con il dispositivo Windows](troubleshoot-your-device-windows.md)
 
-È possibile aggiungere un commento di seguito per richiedere assistenza, ma ogni organizzazione ha requisiti diversi e non sempre Microsoft è in grado di rispondere alle domande. Rivolgersi al proprio amministratore IT è probabilmente il modo più efficace per ottenere risposte veloci e pertinenti. Le informazioni di contatto dovrebbero essere disponibili nel [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+È possibile aggiungere un commento di seguito per richiedere assistenza, ma ogni organizzazione ha requisiti diversi e non sempre Microsoft è in grado di rispondere alle domande. Rivolgersi al personale di supporto della propria azienda è probabilmente il modo più efficace per ottenere risposte veloci e pertinenti. Le informazioni di contatto dovrebbero essere disponibili nel [sito Web del portale aziendale](https://portal.manage.microsoft.com).

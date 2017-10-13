@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 56d1f2598c7489fdd09b1c27c6c76c5d80fb6e7e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 41f79bcccd4868f5d8a73926cd47d73c904c8df5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Procedura: Crittografare un dispositivo Windows
 
-Per proteggere i dati aziendali o dell'istituto di istruzione, è possibile che l'amministratore IT debba crittografare il dispositivo Windows. Un dispositivo Windows Phone registrato verrà crittografato automaticamente se è necessaria la crittografia.
+Per proteggere i dati aziendali o dell'istituto di istruzione, il supporto tecnico aziendale può richiedere agli utenti di crittografare il dispositivo Windows. Un dispositivo Windows Phone registrato verrà crittografato automaticamente se è necessaria la crittografia.
 
 Se si dispone di un dispositivo desktop, seguire le istruzioni seguenti per crittografarlo.
 
@@ -32,4 +32,4 @@ Se si dispone di un dispositivo desktop, seguire le istruzioni seguenti per crit
 
 2.  Fare clic su **Attiva BitLocker** e quindi seguire le istruzioni specificate per crittografare le singole unità.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

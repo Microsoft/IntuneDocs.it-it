@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 21d9e6678c9981b3c1d918f337322d50aa0fecb5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Account di posta elettronica aziendale già esistente
 
-È già disponibile un account di posta elettronica nell'organizzazione o nella società e si vuole accedere all'account sul dispositivo mobile. Collaborare con l'amministratore IT per proteggere l'accesso alla posta elettronica durante il trasferimento dalla persona che lo ha inviato al dispositivo. L'attuale sistema di posta elettronica può aver funzionato correttamente in precedenza, ma l'esecuzione della procedura seguente garantirà una maggior sicurezza delle informazioni.
+È già disponibile un account di posta elettronica nell'organizzazione o nella società e si vuole accedere all'account sul dispositivo mobile. È importante collaborare con il supporto tecnico dell'azienda per proteggere l'accesso alla posta elettronica durante il trasferimento dei messaggi dal mittente al dispositivo. L'attuale sistema di posta elettronica può aver funzionato correttamente in precedenza, ma l'esecuzione della procedura seguente garantirà una maggior sicurezza delle informazioni.
 
 1.  Passare alle **Impostazioni** del dispositivo e rimuovere la connessione alla posta elettronica aziendale impostata in precedenza.
 
@@ -34,4 +34,4 @@ ms.lasthandoff: 07/01/2017
 
 3.  Attendere qualche istante nuove impostazioni di posta elettronica da applicare automaticamente il dispositivo.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

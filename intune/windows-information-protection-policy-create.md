@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -47,7 +47,7 @@ Di seguito vengono presentati prima di tutto alcuni concetti fondamentali per l'
 
 ## <a name="pre-requisites"></a>Prerequisiti
 
-È necessario configurare il provider MAM prima di poter creare un criterio di protezione delle app WIP. Altre informazioni su [come configurare il provider MAM con Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+Configurare il provider MAM prima di creare un criterio di protezione dell'app di WIP. Altre informazioni su [come configurare il provider MAM con Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 È inoltre necessario disporre di quanto segue:
 
@@ -102,7 +102,7 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 5.  Dopo aver immesso le informazioni nei campi, scegliere **OK** per aggiungere l'app all'elenco **App consentite**.
 
 > [!NOTE]
-> Per aggiungere più app dello Store contemporaneamente, è possibile fare clic sul menu **(...) ** alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
+> Per aggiungere più app dello Store contemporaneamente, è possibile fare clic sul menu **(...)**  alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Aggiungere un'app desktop all'elenco delle app consentite
 
@@ -155,16 +155,13 @@ Dopo la disattivazione di WIP, viene effettuato un tentativo di decrittografare 
 
 ### <a name="use-wip-learning"></a>Usare Apprendimento WIP
 
-1. Passare al dashboard di Azure. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. Aprire il portale di Azure. Scegliere **Altri servizi**. Digitare **Intune** nel filtro della casella di testo.
 
-2. Scegliere **Altri servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+3. Scegliere **Intune** > **App per dispositivi mobili**.
 
-3. Scegliere **Intune**. Verrà aperto il **dashboard di Intune**. Scegliere **App per dispositivi mobili**.
-
-4. Scegliere **Apprendimento WIP** in **Monitoraggio**. Verranno visualizzate le app sconosciute registrate da Apprendimento WIP.
-
-> [!IMPORTANT]
-> Quando le app sono visualizzate nel report di registrazione di Apprendimento WIP, sarà possibile aggiungerle ai criteri di protezione delle app.
+4. Scegliere **Stato di protezione dell'App** > **Report** > **Apprendimento Windows Information Protection**.  
+ 
+    Quando le app sono visualizzate nel report di registrazione di Apprendimento WIP, sarà possibile aggiungerle ai criteri di protezione delle app.
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>Distribuire i criteri di protezione delle app WIP
 
@@ -175,7 +172,7 @@ Dopo la disattivazione di WIP, viene effettuato un tentativo di decrittografare 
 
 Dopo aver creato i criteri di protezione delle app WIP, è necessario distribuirli all'organizzazione tramite MAM.
 
-1.  Nel pannello **Criteri per le app** scegliere il nuovo criterio di protezione per le app, scegliere **Gruppi di utenti** > **Aggiungi un gruppo di utenti**.
+1.  Nel pannello **Criteri per le app** scegliere il nuovo criterio di protezione per le app, scegliere**Gruppi utenti** > **Aggiungi gruppo utenti**.
 
     Nel pannello **Aggiungi un gruppo di utenti** verrà visualizzato un elenco dei gruppi di utenti composto da tutti i gruppi di sicurezza in Azure Active Directory.
 

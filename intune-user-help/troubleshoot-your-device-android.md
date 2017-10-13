@@ -15,21 +15,21 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Risolvere problemi comuni con il dispositivo Android
 
-A volte possono verificarsi problemi con il dispositivo Android non risolvibili tramite le procedure di risoluzione dei problemi. Di seguito sono elencati alcuni problemi comuni che è possibile provare a risolvere autonomamente. Per i problemi più complessi, si consiglia di contattare l'amministratore IT tramite le informazioni di contatto disponibili nel [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+A volte possono verificarsi problemi con il dispositivo Android non risolvibili tramite le procedure di risoluzione dei problemi. Di seguito sono elencati alcuni problemi comuni che è possibile provare a risolvere autonomamente. Per i problemi più complessi, si consiglia di contattare il supporto tecnico dell'azienda usando le informazioni di contatto disponibili nel [sito Web del portale aziendale](https://portal.manage.microsoft.com).
 
 - [Controllare la conformità sul dispositivo Android](check-compliance-on-your-device-android.md)
-- [Usare la registrazione dettagliata per aiutare l'amministratore IT a risolvere i problemi dei dispositivi](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Inviare i log all'amministratore IT tramite posta elettronica](send-logs-to-your-it-admin-by-email-android.md)
-- [Inviare i log all'amministratore IT tramite cavo USB](send-logs-to-your-it-admin-using-cable-android.md)
-- [Inviare gli errori di registrazione all'amministratore IT](send-enrollment-errors-to-your-it-admin-android.md)
+- [Usare la registrazione dettagliata per aiutare il supporto tecnico dell'azienda a risolvere i problemi dei dispositivi](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [Inviare i log al supporto tecnico dell'azienda usando la posta elettronica](send-logs-to-your-it-admin-by-email-android.md)
+- [Inviare i log al supporto tecnico dell'azienda usando un cavo USB](send-logs-to-your-it-admin-using-cable-android.md)
+- [Inviare gli errori di registrazione al supporto tecnico dell'azienda](send-enrollment-errors-to-your-it-admin-android.md)
 - [È necessario aggiornare il dispositivo Android](you-need-to-update-your-android-device.md)
 - [Il dispositivo non è conforme alla versione massima del sistema operativo](your-android-version-isnt-yet-supported.md)
 - [Il dispositivo è rooted e non è possibile connettersi](your-device-is-rooted-and-you-cant-connect-android.md)

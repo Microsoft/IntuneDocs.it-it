@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrare il dispositivo Windows 10 in Intune
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![Accesso](./media/W10-enroll-4-sign-in.png)
 
-Non è ancora possibile accedere agli indirizzi di posta elettronica, ai file o ad altri dati aziendali o dell'istituto di istruzione? Provare a risolvere i problemi di accesso tramite la [risoluzione dei problemi relativi all'account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Se il problema persiste, è necessario contattare l'amministratore IT per assistenza.
+Non è ancora possibile accedere agli indirizzi di posta elettronica, ai file o ad altri dati aziendali o dell'istituto di istruzione? Provare a risolvere i problemi di accesso tramite la [risoluzione dei problemi relativi all'account](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Se il problema persiste, è necessario contattare il supporto tecnico dell'azienda per ricevere assistenza.
 
-Un modo semplice per ottenere assistenza dall'amministratore IT è tramite le informazioni di contatto disponibili nell'app Portale aziendale, che consente anche di cercare e scaricare le app consigliate e richieste per le attività quotidiane. È possibile che l'app Portale aziendale sia già installata nel dispositivo. Un modo rapido per verificarlo consiste nel cercare __Portale aziendale__ nell'elenco __Tutte le app__.
+Un modo semplice per ottenere assistenza dal supporto tecnico dell'azienda è usare le informazioni di contatto disponibili nell'app Portale aziendale, in cui è anche possibile trovare e scaricare le app consigliate e richieste per le attività quotidiane. È possibile che l'app Portale aziendale sia già installata nel dispositivo. Un modo rapido per verificarlo consiste nel cercare __Portale aziendale__ nell'elenco __Tutte le app__.
 
 Se l'app Portale aziendale non è visualizzata nell'elenco di app, seguire questa procedura per installarla.
 

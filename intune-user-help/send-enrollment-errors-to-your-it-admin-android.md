@@ -1,5 +1,5 @@
 ---
-title: Inviare gli errori di registrazione all'amministratore IT | Documentazione Microsoft
+title: Inviare gli errori di registrazione al supporto tecnico dell'azienda | Microsoft Docs
 description: Inviare gli errori di registrazione all'amministratore
 keywords: 
 author: barlanmsft
@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 667282ef1ab6e5058e852b6e3b94daecd01c5d53
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 95be9fd1df23e8cc4c6d41f6c9f49cd30eef87cf
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-enrollment-errors-to-your-it-admin"></a>Inviare gli errori di registrazione all'amministratore IT
+# <a name="send-enrollment-errors-to-your-company-support"></a>Inviare gli errori di registrazione al supporto tecnico dell'azienda
 
-Se si verifica un errore durante la registrazione del dispositivo Android in Intune, è possibile provare a rieseguirla toccando **Riprova**. Se il problema persiste, è possibile inviare all'amministratore IT informazioni su ciò che avviene tramite posta elettronica toccando **Invia informazioni**.
+Se si verifica un errore durante la registrazione del dispositivo Android in Intune, è possibile provare a rieseguirla toccando **Riprova**. Se il problema persiste, è possibile inviare al supporto tecnico dell'azienda un messaggio di posta elettronica con la descrizione di ciò che accade toccando **Invia informazioni**.
 
-Quando si tocca **Invia informazioni** viene creato automaticamente un messaggio di posta elettronica. Il messaggio di posta elettronica viene indirizzato all'amministratore IT e contiene le informazioni o i _log_ necessari per risolvere il problema del dispositivo.
+Quando si tocca **Invia informazioni** viene creato automaticamente un messaggio di posta elettronica. Il messaggio di posta elettronica viene indirizzato al supporto tecnico dell'azienda e contiene le informazioni o i _log_ necessari per risolvere il problema del dispositivo.
 
-Esistono diversi modi per inviare i registri dei dati del dispositivo all'amministratore IT per ricevere assistenza in caso di errori:
+Esistono diversi modi per inviare i log dei dati del dispositivo al supporto tecnico dell'azienda per ricevere assistenza in caso di errori:
 
 - [Usare il pulsante Invia informazioni per inviare i log tramite posta elettronica](send-logs-to-your-it-admin-by-email-android.md)
 - [Usare un cavo USB per inviare i log come allegato di posta elettronica](send-logs-to-your-it-admin-using-cable-android.md)

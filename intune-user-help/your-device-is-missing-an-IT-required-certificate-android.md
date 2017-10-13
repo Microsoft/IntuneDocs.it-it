@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 784fec4e29f64db0445c857e5073ddd7e890a795
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-it-admin"></a>Il dispositivo Android non ha un certificato richiesto dall'amministratore IT
+# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Il dispositivo Android non ha un certificato richiesto dal supporto tecnico dell'azienda
 
-Se il dispositivo non è registrato in Intune e non ha un determinato certificato richiesto dall'amministratore IT, non sarà possibile accedere all'app Portale aziendale dal dispositivo. Quando si tenta di accedere, verrà visualizzato il messaggio seguente:
+Se il dispositivo non è registrato in Intune e non ha un determinato certificato richiesto dal supporto tecnico dell'azienda, non sarà possibile accedere all'app Portale aziendale dal dispositivo. Quando si tenta di accedere, verrà visualizzato il messaggio seguente:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -35,15 +35,15 @@ Per risolvere questo problema e ottenere il certificato richiesto, è necessario
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Identificare il certificato mancante cercando in un PC della società o dell'istituto di istruzione
 
-1. In un PC aprire Internet Explorer. Se non si ha un PC da usare per questo scopo, contattare l'amministratore IT. Per trovare le informazioni di contatto dell'amministratore IT, vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+1. In un PC aprire Internet Explorer. Se non si ha un PC da usare per questo scopo, contattare il supporto tecnico dell'azienda. Per le informazioni di contatto del supporto tecnico dell'azienda, vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
 
-2. Passare al [sito Web del portale aziendale](http://portal.manage.microsoft.com) ed eseguire l'accesso con le credenziali della società o dell'istituto di istruzione.
+2. Passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com) ed eseguire l'accesso con le credenziali della società o dell'istituto di istruzione.
 
 3. All'estrema destra della barra degli indirizzi del browser, fare clic sul simbolo simile a un lucchetto, come illustrato di seguito.
 
     ![screenshot-internet-explorer-address-bar-padlock-symbol](./media/andr-missing-cert-ie-padlock-symbol.png)
 
-    Se non viene visualizzato il simbolo di un lucchetto, interrompere la procedura e contattare l'amministratore IT. Il lucchetto indica che l'accesso viene eseguito in modalità sicura. Se quindi non si visualizza tale simbolo, è consigliabile non procedere.
+    Se non viene visualizzato il simbolo di un lucchetto, interrompere la procedura e contattare il supporto tecnico dell'azienda. Il lucchetto indica che l'accesso viene eseguito in modalità sicura. Se quindi non si visualizza tale simbolo, è consigliabile non procedere.
 
 4. Fare clic su **Visualizza certificati**.
 
@@ -67,6 +67,6 @@ Per risolvere questo problema e ottenere il certificato richiesto, è necessario
 
 6. Chiudere l'app Portale aziendale.
 
-7. Aprire nuovamente l'app Portale aziendale. Accedere all'app Portale aziendale. Per assistenza, contattare l'amministratore IT.
+7. Aprire nuovamente l'app Portale aziendale. Accedere all'app Portale aziendale. Per assistenza, contattare il supporto tecnico dell'azienda.
 
-Se viene visualizzato di nuovo il messaggio "Certificato mancante" illustrato in precedenza ed è già stata eseguita la procedura precedente, è probabile che ci sia un altro certificato da installare con il supporto dell'amministratore IT. Per indicazioni sull'uso delle informazioni di contatto disponibili nel [sito Web del portale aziendale](http://portal.manage.microsoft.com), contattare l'amministratore IT.
+Se viene visualizzato di nuovo il messaggio "Certificato mancante" illustrato in precedenza ed è già stata eseguita la relativa procedura, è probabile che sia necessario installare un altro certificato con l'assistenza del supporto tecnico dell'azienda. Per indicazioni sull'uso delle informazioni di contatto disponibili nel [sito Web del portale aziendale](https://portal.manage.microsoft.com), contattare il supporto tecnico dell'azienda.

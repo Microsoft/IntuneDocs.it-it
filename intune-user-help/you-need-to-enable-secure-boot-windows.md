@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 364b2b4bfbf91f006447dd42d6a196f0b3b81542
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2afa9ef5fdd755e7722939288f3c3b1ad4dd722f
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-secure-boot"></a>È necessario abilitare l'avvio protetto
 
 L'organizzazione richiede l'abilitazione della funzionalità Avvio protetto di Windows, ovvero una funzionalità di sicurezza che consente di proteggere il dispositivo.
 
-L'abilitazione dell'avvio protetto è un'attività avanzata. Se si usa un dispositivo mobile, contattare l'amministratore IT per assistenza.
+L'abilitazione dell'avvio protetto è un'attività avanzata. Se si usa un dispositivo mobile, contattare il supporto tecnico dell'azienda per l'assistenza.
 
-Se si usa un PC, è possibile contattare l'amministratore IT o vedere la sezione "Per riabilitare l'avvio protetto" nella pagina [Disabilitazione dell'avvio protetto](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) per provare ad abilitare l'avvio protetto senza l'aiuto dell'amministratore IT.
+Se si usa un PC, è possibile contattare il supporto tecnico dell'azienda o vedere la sezione "Per riabilitare l'avvio protetto" nella pagina [Disabilitazione dell'avvio protetto](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) per provare ad abilitare l'avvio protetto senza l'aiuto del personale di assistenza.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

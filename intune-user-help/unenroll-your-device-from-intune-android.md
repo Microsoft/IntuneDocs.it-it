@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c17389164df2f458ad5e3185f37a92791a83b129
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 778ba1445361a15c43edf0d09f154750beacd3ad
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-unenroll-your-android-device-from-intune"></a>Come annullare la registrazione del dispositivo Android da Intune
 
@@ -36,6 +36,6 @@ Per annullare la registrazione del dispositivo da Intune e rimuovere l'app Porta
 
 3. Verrà visualizzato un messaggio di conferma, in cui viene richiesto di confermare la rimozione dell'app Portale aziendale. Il messaggio fornisce alcune informazioni su cosa accade quando si annulla la registrazione del dispositivo. Dopo aver letto il messaggio, toccare **OK** per rimuovere l'app. 
 
-  ![Immagine della finestra di dialogo di conferma visualizzata dopo aver selezionato la nuova opzione "Remove company portal" (Rimuovi portale aziendale) dal menu Azione. Questa finestra di dialogo informa l'utente che rimuovendo Portale aziendale, il dispositivo non verrà più gestito dall'amministratore IT e potrebbe essere rimosso l'accesso a dati, app o posta elettronica aziendali. Viene quindi richiesto all'utente di confermare la rimozione dell'app Portale aziendale selezionando "Sì".](./media/android_remove_cp_menu_confirmation_after_1705.png)
+  ![Immagine della finestra di dialogo di conferma visualizzata dopo aver selezionato la nuova opzione "Remove company portal" (Rimuovi portale aziendale) dal menu Azione. La finestra di dialogo informa l'utente che "se si rimuove il portale aziendale, il dispositivo non sarà più gestito dall'amministratore IT ed è possibile che l'accesso ai dati, alle app e ai messaggi di posta elettronica aziendali venga rimosso." Viene quindi richiesto all'utente di confermare la rimozione dell'app Portale aziendale selezionando "Sì".](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

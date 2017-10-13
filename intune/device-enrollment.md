@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/29/2017
+ms.date: 10/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dda7108aedcc4d3878fe3743ee0b88b26fabbe6f
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="what-is-device-enrollment"></a>Che cos'è la registrazione dei dispositivi?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ Se si usa Exchange ActiveSync, sia in locale che ospitato nel cloud, è possibil
 ## <a name="overview-of-device-enrollment-methods"></a>Panoramica dei metodi di registrazione dei dispositivi
 
 La tabella seguente offre una panoramica dei metodi di registrazione di Intune, con una descrizione delle relative funzionalità e dei requisiti.
+
 **Legenda**
 
 - **Ripristino necessario** - Viene eseguito il ripristino delle impostazioni predefinite del dispositivo durante la registrazione.
@@ -79,18 +80,59 @@ Di seguito sono indicati gli scenari di registrazione per i dispositivi di propr
 Il manager di registrazione dispositivi (DEM, Device Enrollment Manager) è un account utente speciale usato per registrare e gestire più dispositivi di proprietà dell'azienda. I manager possono installare il Portale aziendale e registrare molti dispositivi senza utente associato. Altre informazioni su [DEM](./device-enrollment-manager-enroll.md).
 
 ### <a name="dep"></a>DEP
-La gestione del programma di registrazione dispositivi (DEP, Device Enrollment Program) di Apple consente di creare e distribuire i criteri in modalità wireless ai dispositivi acquistati e gestiti tramite DEP. Il dispositivo viene registrato quando l'utente accende il dispositivo per la prima volta ed esegue l'Assistente configurazione di iOS. Questo metodo supporta la modalità **supervisione iOS**, che a sua volta abilita le funzionalità seguenti:
+La gestione del programma di registrazione dispositivi (DEP, Device Enrollment Program) di Apple consente di creare e distribuire i criteri in modalità wireless ai dispositivi acquistati e gestiti tramite DEP. Il dispositivo viene registrato quando l'utente accende il dispositivo per la prima volta ed esegue l'Assistente configurazione di iOS. Questo metodo supporta la modalità con supervisione iOS, che abilita la configurazione del dispositivo con le funzionalità seguenti:
 
-  - Registrazione bloccata
-  - Modalità tutto schermo e altre configurazioni avanzate e limitazioni
+- Blocco dell'app (modalità app singola) 
+- Proxy HTTP globale 
+- Bypass del blocco attivazione 
+- Modalità applicazione singola autonoma 
+- Filtro contenuto Web 
+- Impostazione dello sfondo e della schermata di blocco 
+- Push app invisibile all'utente 
+- VPN Always On 
+- Installazione esclusivamente di app gestite 
+- iBookstore 
+- iMessages 
+- Area giochi 
+- AirDrop 
+- AirPlay 
+- Associazione di host 
+- Sincronizzazione cloud 
+- Ricerca Spotlight 
+- Handoff 
+- Cancellazione di dispositivi 
+- Interfaccia utente restrizioni 
+- Installazione di profili di configurazione tramite interfaccia utente 
+- News 
+- Tasti di scelta rapida 
+- Modifica del passcode 
+- Modifica di nomi di dispositivo 
+- Modifica dello sfondo 
+- Download automatici delle app 
+- Modifica dell'attendibilità delle applicazioni enterprise 
+- Apple Music 
+- Mail Drop 
+- Associazione con Apple Watch 
+
+> [!NOTE]
+> Apple ha confermato che nel 2018 alcune impostazioni passeranno alla modalità solo con supervisione. È consigliabile usare le impostazioni interessate tenendo conto di questo aspetto, anziché attendere che Apple effettui la migrazione alla modalità solo con supervisione:
+> - Installazione di app
+> - Rimozione di app
+> - FaceTime
+> - Safari
+> - iTunes
+> - Contenuti espliciti
+> - Documenti e dati iCloud
+> - Gioco multiplayer
+> - Aggiungi amici dell'area giochi
 
 Per altre informazioni sulla registrazione DEP iOS, vedere:
 
-- [Scegliere come registrare i dispositivi iOS](enrollment-method-choose-ios.md)
+- [Scegliere come registrare i dispositivi iOS](ios-enroll.md)
 - [Registrare dispositivi iOS con Device Enrollment Program](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
-Gli amministratori IT usano Apple Configurator, tramite USB, per preparare manualmente ogni dispositivo di proprietà dell'azienda per la registrazione con Assistente configurazione. L'amministratore IT crea un profilo di registrazione e lo esporta in Apple Configurator. Quando gli utenti ricevono i dispositivi, devono eseguire Assistente configurazione per registrarli. Questo metodo supporta la modalità **supervisione iOS**, che a sua volta abilita le funzionalità seguenti:
+Gli amministratori IT usano Apple Configurator, tramite USB, per preparare manualmente ogni dispositivo di proprietà dell'azienda per la registrazione con Assistente configurazione. L'amministratore IT crea un profilo di registrazione e lo esporta in Apple Configurator. Quando gli utenti ricevono i dispositivi, devono eseguire Assistente configurazione per registrarli. Questo metodo supporta la modalità **con supervisione iOS**, che a sua volta abilita le funzionalità seguenti:
   - Registrazione bloccata
   - Modalità tutto schermo e altre configurazioni avanzate e limitazioni
 

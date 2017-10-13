@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 088012a1dd9ee1997e7d2b578e54774c4bd586fb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2692bc1e6652d5290afd577247344762e5bcb91a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="check-compliance-on-your-android-device"></a>Controllare la conformità nel dispositivo Android
 
@@ -30,4 +30,4 @@ Se il dispositivo non si è connesso a Intune per un certo periodo di tempo, pot
 
 2. Toccare **Controlla conformità**.
 
-Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere all'amministratore IT di eseguire questa operazione. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Se non si riesce a reimpostare il dispositivo smarrito o rubato, chiedere al supporto tecnico dell'azienda di eseguire questa operazione. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

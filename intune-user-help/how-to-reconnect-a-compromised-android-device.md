@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a51857a6e5ffd020888af6a7c0a3b85efa91fe20
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1d1447887f63edf9671fc954dbc69bfd7766ca73
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Procedura: Riconnettere un dispositivo Android compromesso
 
-L'amministratore IT ha rilevato il dispositivo in uso è rooted. "Rooted" significa che il dispositivo è stato alterato per consentire l'accesso al sistema operativo, che può compromettere la sicurezza e potrebbe rappresentare una minaccia per le risorse aziendali. Se ciò si verifica, il dispositivo non potrà più accedere alle risorse aziendali.
+Il supporto tecnico aziendale ha rilevato che il dispositivo in uso è rooted. "Rooted" significa che il dispositivo è stato alterato per consentire l'accesso al sistema operativo, che può compromettere la sicurezza e potrebbe rappresentare una minaccia per le risorse aziendali. Se ciò si verifica, il dispositivo non potrà più accedere alle risorse aziendali.
 
-Serve ancora assistenza? Contattare l'amministratore IT (accedere al [sito Web del portale aziendale](http://portal.manage.microsoft.com) per informazioni sui contatti) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.
+Serve ancora assistenza? Contattare il supporto tecnico aziendale (accedere al [sito Web Portale aziendale](https://portal.manage.microsoft.com) per informazioni sul contatto) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with a rooted device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.
