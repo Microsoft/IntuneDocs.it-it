@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/12/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b139db1780881e5bc0aed2345f9dc456a18f0e0
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 22a03068c543ebaa410521532dfdfc96e0f10eb0
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Registrare i dispositivi iOS con Apple Configurator
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune supporta la registrazione di dispositivi iOS con lo strumento [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) in esecuzione in un computer Mac. La registrazione con Apple Configurator richiede la connessione USB di ogni dispositivo iOS a un computer Mac per configurare la registrazione aziendale. È possibile registrare i dispositivi in Intune con Apple Configurator in due modi:
+Intune supporta la registrazione di dispositivi iOS con lo strumento [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) in esecuzione in un computer Mac. La registrazione con Apple Configurator richiede la connessione USB di ogni dispositivo iOS a un computer Mac per configurare la registrazione aziendale. È possibile registrare i dispositivi in Intune con Apple Configurator in due modi:
 - **Registrazione con Assistente configurazione**: esegue il ripristino delle impostazioni predefinite del dispositivo e lo prepara per la registrazione durante Assistente configurazione.
 - **Registrazione diretta**: non ripristina le impostazioni predefinite del dispositivo e lo registra tramite le impostazioni iOS. Questo metodo supporta solo i dispositivi **senza affinità utente**.
 
@@ -38,7 +38,7 @@ I metodi di registrazione con Apple Configurator non possono essere usati con il
 - [Un certificato push MDM Apple](apple-mdm-push-certificate-get.md)
 - Numeri di serie dei dispositivi (solo Registrazione con Assistente configurazione)
 - Cavi di connessione USB
-- Computer Mac che esegue [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)
+- Computer macOS che esegue [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344)
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>Creare un profilo di Apple Configurator per i dispositivi
 
@@ -69,7 +69,7 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 
 **Per aggiungere numeri di serie di Apple Configurator a Intune**
 
-1. Creare un elenco di valori a due colonne, delimitato da virgole (file con estensione CSV) senza intestazione. Aggiungere i numeri di serie nella colonna sinistra e i dettagli nella colonna destra. Il limite massimo corrente per l'elenco è di 500 righe. In un editor di testo l'elenco con estensione csv è simile al seguente:
+1. Creare un elenco di valori a due colonne, delimitato da virgole (file con estensione CSV) senza intestazione. Aggiungere i numeri di serie nella colonna sinistra e i dettagli nella colonna destra. Il limite massimo corrente per l'elenco è di 5.000 righe. In un editor di testo l'elenco con estensione csv è simile al seguente:
 
     F7TLWCLBX196, dettagli del dispositivo</br>
     DLXQPCWVGHMJ, dettagli del dispositivo
@@ -101,7 +101,7 @@ Si assegna un profilo di registrazione quando si importano i numeri di serie iOS
 ### <a name="export-the-profile"></a>Esportare il profilo
 Dopo aver creato il profilo e assegnato i numeri di serie, è necessario esportare il profilo da Intune come URL. Il profilo dovrà poi essere importato in Apple Configurator in un Mac per la distribuzione ai dispositivi.
 
-1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** > ** Registrazione Apple** > **Profili AC** e scegliere il profilo da esportare.
+1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** >  **Registrazione Apple** > **Profili AC** e scegliere il profilo da esportare.
 2. Nel profilo selezionare **Esporta il profilo**.
 
   ![Schermata Esporta il profilo per la registrazione con Assistente installazione con l'URL del profilo evidenziato](./media/ios-apple-configurator-expor-sat.png)

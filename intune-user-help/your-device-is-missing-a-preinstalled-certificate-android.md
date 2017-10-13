@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 63595e9905a220c326c315f5932379a9b743d3de
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 52070573560b798044c929b0fa9476cf1f7bbf89
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Manca un certificato necessario per il dispositivo Android generalmente installato nel telefono
 
@@ -42,9 +42,9 @@ Se il dispositivo non è registrato in Intune e manca un certificato solitamente
 
 5. Chiudere il browser e l'app Portale aziendale.
 
-6. Aprire nuovamente l'app Portale aziendale. Accedere all'app Portale aziendale. Se non è possibile usare l'app Portale aziendale, contattare l'amministratore IT usando le informazioni fornite nel [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+6. Aprire nuovamente l'app Portale aziendale. Accedere all'app Portale aziendale. Se non è ancora possibile usare l'app Portale aziendale, richiedere assistenza al supporto tecnico dell'azienda usando le informazioni riportate nel [sito Web del portale aziendale](https://portal.manage.microsoft.com).
 
 >[!NOTE]
 > Se l'installazione di questo certificato non risolve il problema e viene visualizzato un altro messaggio "certificato mancante", è necessario eseguire passaggi aggiuntivi per [installare il certificato mancante](your-device-is-missing-an-IT-required-certificate-android.md).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

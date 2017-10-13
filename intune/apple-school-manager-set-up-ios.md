@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: afb3aeff7a7c6cc481d24bac3a61de0816b4d34b
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Abilitare la registrazione di dispositivi iOS con Apple School Manager
 
@@ -62,7 +62,7 @@ Per registrare i dispositivi iOS di proprietà dell'azienda in Apple School Mana
 5.  Scegliere **Ottieni token** e quindi scaricare il file token del server (con estensione p7m) nel computer.
 6. Passare ad **Assegnazioni di dispositivi** e **scegliere il dispositivo** inserendo manualmente i **numeri di serie**, il **numero di ordine** o **caricando un file CSV**.
      ![Screenshot del portale di Apple School Manager con l'opzione del numero di serie selezionata](./media/asm-device-assignment.png)
-7.  Scegliere l'azione **Assegna al server ** e scegliere il **server MDM** creato.
+7.  Scegliere l'azione **Assegna al server**  e scegliere il **server MDM** creato.
 8. Specificare come **scegliere i dispositivi** e quindi fornire dettagli e informazioni sul dispositivo.
 9. Scegliere **Assegna al server**, selezionare il &lt;nome del server&gt; specificato per Microsoft Intune e fare clic su **OK**.
 
@@ -77,7 +77,7 @@ Passare al file del certificato (con estensione p7m), scegliere **Apri** e quind
 Un profilo di registrazione dispositivi consente di definire le impostazioni applicate a un gruppo di dispositivi durante la registrazione.
 
 1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** e quindi scegliere **Registrazione Apple**.
-2. In **Programma di registrazione ** scegliere **Profili DEP**.
+2. In **Programma di registrazione**  scegliere **Profili DEP**.
 3. Nel pannello **Profili DEP** scegliere **Crea**.
 4. Nel pannello **Crea un profilo di registrazione** immettere un **nome** e una **descrizione** per il profilo visualizzato in Intune.
 5. Per **Affinità utente**, scegliere se i dispositivi con questo profilo verranno registrati con o senza affinità utente.
@@ -94,8 +94,8 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 
     - **Supervisione eseguita**: modalità di gestione che attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita. Se si lascia vuota la casella di controllo, le funzionalità di gestione saranno limitate.
 
-     - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disattiva le impostazioni iOS che potrebbero permettere la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni.
-   - **iPad condiviso**: richiede le modalità **Registra senza affinità utente** e **Supervisione eseguita**. Consente a più utenti di eseguire l'accesso agli iPad registrati usando un ID Apple gestito. Gli ID Apple gestiti sono creati nel portale Apple School Manager. Altre informazioni sull'[iPad condiviso](education-settings-configure-ios-shared.md). Vedere anche i [requisiti per usare l'iPad condiviso di Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+     - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disattiva le impostazioni iOS che potrebbero consentire la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni.
+   - **iPad condiviso**: richiede le modalità **Registra senza affinità utente** e Supervisione eseguita. Consente a più utenti di eseguire l'accesso agli iPad registrati usando un ID Apple gestito. Gli ID Apple gestiti sono creati nel portale Apple School Manager. Altre informazioni sull'[iPad condiviso](education-settings-configure-ios-shared.md). Vedere anche i [requisiti per usare l'iPad condiviso di Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
    >[!NOTE]
    >Se **Affinità utente** è impostata su **Con affinità utente** o la modalità **Supervisione eseguita** è impostata su **Disattivato**, la modalità iPad condiviso è disabilitata per il profilo di registrazione.
@@ -104,7 +104,7 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 
     - **Consenti associazione**: specifica se i dispositivi iOS possono sincronizzarsi con i computer. Se si sceglie **Consenti Apple Configurator per certificato**, è necessario selezionare un certificato in **Certificati di Apple Configurator**.
 
-      - **Certificati di Apple Configurator**: se si è scelto **Consenti Apple Configurator per certificato ** in **Consenti associazione**, scegliere un certificato di Apple Configurator da importare.
+      - **Certificati di Apple Configurator**: se si è scelto **Consenti Apple Configurator per certificato**  in **Consenti associazione**, scegliere un certificato di Apple Configurator da importare.
 
 7. Scegliere **Impostazioni dell'Assistente configurazione**, configurare le impostazioni del profilo seguenti e quindi scegliere **Salva**:
 

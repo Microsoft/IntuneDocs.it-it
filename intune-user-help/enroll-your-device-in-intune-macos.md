@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>Registrare il dispositivo macOS in Intune
 
-La possibilità di accedere alle app, ai dati e alle risorse dell'organizzazione significa poter svolgere il proprio lavoro. Se si usa un dispositivo macOS in ufficio, sarà necessario installare un __profilo di gestione__. Si tratta semplicemente di un file configurato dall'amministratore IT che carica le impostazioni e le informazioni di accesso nel dispositivo Mac. Per saperne di più Scoprire [cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+La possibilità di accedere alle app, ai dati e alle risorse dell'organizzazione significa poter svolgere il proprio lavoro. Se si usa un dispositivo macOS in ufficio, sarà necessario installare un __profilo di gestione__. Si tratta semplicemente di un file configurato dal supporto tecnico dell'azienda che carica le impostazioni e le informazioni di accesso nel dispositivo Mac. Per saperne di più Scoprire [cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 
   > [!NOTE]
   > Se si sta in effetti tentando di registrare un dispositivo iOS, ad esempio un iPhone o iPad, [usare invece queste istruzioni](enroll-your-device-in-intune-ios.md).
 
-1. Trovare __Safari__ nel __Dock__ e aprire una nuova finestra, quindi aprire il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+1. Trovare __Safari__ nel __Dock__ e aprire una nuova finestra, quindi aprire il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
 2. Accedere al sito Web del portale aziendale con l'account aziendale o dell'istituto di istruzione.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -65,4 +65,4 @@ La possibilità di accedere alle app, ai dati e alle risorse dell'organizzazione
 
  ![Profilo macOS installato](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
-Serve ancora assistenza? Rivolgersi all'amministratore IT. È possibile trovare le informazioni di contatto nel [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Rivolgersi al personale del supporto tecnico dell'azienda. È possibile trovare le informazioni di contatto nel [sito Web del portale aziendale](https://portal.manage.microsoft.com).

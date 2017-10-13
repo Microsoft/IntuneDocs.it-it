@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>Cosa accade quando si crea un profilo di lavoro
 
@@ -28,9 +28,9 @@ Un profilo di lavoro viene impostato nel dispositivo per mantenere la posta elet
 
 Quando si crea un profilo di lavoro:
 
-- L'amministratore IT può gestire solo la posta elettronica, le app, le impostazioni e i dati del dispositivo correlati al lavoro e non le app o i dati personali.
+- Il supporto tecnico dell'azienda può gestire solo la posta elettronica, le app, le impostazioni e i dati del dispositivo correlati al lavoro e non le app o i dati personali.
 
-- Le app correlate al lavoro vengono scaricate da Play Store for Work. Per scaricare app personali si continua a usare Google Play. L'amministratore IT non può visualizzare o gestire le app personali.
+- Le app correlate al lavoro vengono scaricate da Play Store for Work. Per scaricare app personali si continua a usare Google Play. Il supporto tecnico dell'azienda non può visualizzare o gestire le app personali.
 
 - Le app di lavoro sono separate dalle app personali, ma possono essere visualizzate contemporaneamente nella schermata home. Di seguito è riportato un esempio di ciò che potrebbe essere visualizzato. La schermata potrebbe essere leggermente diversa.
 
@@ -38,9 +38,9 @@ Quando si crea un profilo di lavoro:
 
     ![Play Store for Work per Android](./media/afw-google-play-store-for-work.png)
 
-- Poiché la società o l'istituto di istruzione è titolare del profilo di lavoro, l'amministratore IT può installare o rimuovere le app di lavoro o il profilo, ma non le app o i dati personali.
-- L'amministratore IT non può reimpostare o cancellare tutti i dati dal dispositivo.
+- Poiché la società o l'istituto di istruzione è titolare del profilo di lavoro, il supporto tecnico dell'azienda può installare o rimuovere le app di lavoro o il profilo, ma non le app o i dati personali.
+- Il supporto tecnico dell'azienda non può reimpostare o cancellare tutti i dati dal dispositivo.
 
 Per i passaggi per la creazione di un profilo di lavoro, vedere [Create a work profile and enroll your device](create-a-work-profile-and-enroll-your-device-in-intune-android.md) (Creare un profilo di lavoro e registrare il dispositivo).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

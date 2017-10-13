@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f73b8b8638cfa775edc921edd8b6206191c5d3b5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2fe506fc871dd331240823deff5045d2ed5e4dd1
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>Come trovare il numero di serie del dispositivo?
 
-Il numero di serie del dispositivo lo identifica in modo univoco e può essere utile all'amministratore per determinate attività, come la sostituzione del dispositivo con uno nuovo. Per individuare il numero di serie:
+Il numero di serie del dispositivo lo identifica in modo univoco e può essere utile al personale del supporto tecnico in determinate attività, ad esempio la sostituzione del dispositivo con uno nuovo. Per individuare il numero di serie:
 
 1. Passare alla schermata __Home__.
 2. Toccare l'app __Impostazioni__ e quindi __Generali__.
 3. Toccare __Info__ e quindi scorrere fino a __N° di serie__.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

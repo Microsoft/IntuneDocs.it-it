@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
-ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
+ms.openlocfilehash: 398b6be25b1d927170571af23a9424a6d7e68c0b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usare le app gestite nel dispositivo iOS
 
-Le app gestite sono app che l'amministratore IT può configurare per proteggere i dati aziendali ai quali è possibile accedere dall'app stessa. Quando si accede ai dati aziendali da un'app gestita in un dispositivo iOS, è possibile notare che il funzionamento dell'app è leggermente diverso rispetto a quello previsto. Ad esempio, potrebbero non essere consentite le operazioni di copia e incolla dei dati aziendali protetti oppure il salvataggio dei dati in determinati percorsi.
+Le app gestite sono app che il supporto tecnico dell'azienda può configurare per proteggere i dati aziendali ai quali è possibile accedere dall'app stessa. Quando si accede ai dati aziendali da un'app gestita in un dispositivo iOS, è possibile notare che il funzionamento dell'app è leggermente diverso rispetto a quello previsto. Ad esempio, potrebbero non essere consentite le operazioni di copia e incolla dei dati aziendali protetti oppure il salvataggio dei dati in determinati percorsi.
 
 Diverse app gestite possono anche interagire tra loro nel dispositivo per consentire di eseguire le attività giornaliere mantenendo protetti i dati aziendali. Ad esempio, se si apre un file aziendale in un'app gestita che richiede un'altra app gestita per visualizzare il file, questa seconda app viene aperta automaticamente. Se un'app necessaria non è disponibile, alcune azioni, come l'apertura di un documento o l'accesso a un collegamento Web in un documento gestito, potrebbero non essere disponibili.
 
@@ -35,14 +35,14 @@ Quando si accede ai dati aziendali in un'app gestita, viene visualizzato un mess
 ### <a name="how-do-i-get-managed-apps"></a>Come si ottengono le app gestite?
 Le app gestite possono essere installate in due modi:
 
--   Quando il dispositivo viene registrato in Microsoft Intune, è possibile installare l'app dall'app Portale aziendale o dal sito Web del portale aziendale oppure l'installazione nel dispositivo può essere eseguita dall'amministratore IT. Per informazioni sulla registrazione, vedere [Registrare il dispositivo iOS in Intune](enroll-your-device-in-intune-ios.md) o [Registrare il dispositivo macOS in Intune](enroll-your-device-in-intune-macos.md).
+-   Quando il dispositivo viene registrato in Microsoft Intune, è possibile installare l'app dall'app Portale aziendale o dal sito Web del portale aziendale oppure l'installazione nel dispositivo può essere eseguita dal supporto tecnico dell'azienda. Per informazioni sulla registrazione, vedere [Registrare il dispositivo iOS in Intune](enroll-your-device-in-intune-ios.md) o [Registrare il dispositivo macOS in Intune](enroll-your-device-in-intune-macos.md).
 
 -   L'app viene installata da App Store e quindi l'utente accede con l'account utente aziendale gestito da Intune.
 
-È possibile a volte che l'amministratore IT acquisti più licenze per un'app installata. Se viene visualizzato un messaggio in cui viene richiesto di accettare il contratto di Volume Purchase Program di Apple, accettare il programma. Se non lo si accetta, non sarà possibile installare l'app.
+È possibile a volte che il supporto tecnico dell'azienda acquisti più licenze per un'app installata. Se viene visualizzato un messaggio in cui viene richiesto di accettare il contratto di Volume Purchase Program di Apple, accettare il programma. Se non lo si accetta, non sarà possibile installare l'app.
 
-### <a name="what-can-my-it-admin-manage-in-an-app"></a>Cosa può gestire l'amministratore IT in un'app?
-Di seguito sono riportati alcuni esempi di opzioni che l'amministratore IT può gestire in un'app e che possono influire sulle interazioni con i dati aziendali nel dispositivo:
+### <a name="what-can-my-company-support-manage-in-an-app"></a>Che cosa può gestire il supporto tecnico dell'azienda in un'app?
+Di seguito sono riportati alcuni esempi di opzioni che il supporto tecnico dell'azienda può gestire in un'app e che possono influire sulle interazioni con i dati aziendali nel dispositivo:
 
 -   Accesso a specifici siti Web
 
@@ -62,4 +62,4 @@ Di seguito sono riportati alcuni esempi di opzioni che l'amministratore IT può 
 
 -   Requisiti di crittografia dati
 
-Per altre informazioni sulle app gestite nel dispositivo contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Per altre informazioni sulle applicazioni gestite nel dispositivo, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

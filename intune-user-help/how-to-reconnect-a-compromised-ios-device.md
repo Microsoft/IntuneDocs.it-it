@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208b7775ef66042339ed5e77637a6f0d63eb9831
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a808f9030053b1aee571dbde9bba01d5d503a8a2
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>Procedura: Riconnettere un dispositivo iOS compromesso
 
-L'amministratore IT ha rilevato il dispositivo in uso è jailbroken. "Jailbroken" significa che il dispositivo è stato alterato per consentire l'accesso senza restrizioni a particolari file critici, situazione che può compromettere la sicurezza e potrebbe rappresentare una minaccia per le risorse aziendali.
+Il supporto tecnico aziendale ha rilevato che il dispositivo in uso è jailbroken. "Jailbroken" significa che il dispositivo è stato alterato per consentire l'accesso senza restrizioni a particolari file critici, situazione che può compromettere la sicurezza e potrebbe rappresentare una minaccia per le risorse aziendali.
 
-In questo caso, il dispositivo non può più accedere alle risorse aziendali ed è necessario contattare l'amministratore IT per ricevere assistenza. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+In questo caso, il dispositivo non può più accedere alle risorse aziendali ed è necessario contattare il supporto tecnico aziendale. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

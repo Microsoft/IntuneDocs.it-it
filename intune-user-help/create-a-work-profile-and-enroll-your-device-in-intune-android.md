@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fa95dc161adabcf280d9933770ce68b719a47a74
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Create a work profile and enroll your device in Intune (Creare un profilo di lavoro e registrare il dispositivo in Intune)
 
-La registrazione del dispositivo Android consente di accedere a posta elettronica, app e dati aziendali. Come parte della registrazione, è possibile impostare un profilo di lavoro, che separa i dati personali che si trovano sul dispositivo dai dati aziendali. L'amministratore IT può gestire solo il profilo aziendale, che contiene i dati di lavoro. L'amministratore IT non può gestire i dati personali sul dispositivo. Altri dettagli sono disponibili in [Cosa accade quando si crea un profilo di lavoro](what-happens-when-you-create-a-work-profile-android.md).
+La registrazione del dispositivo Android consente di accedere a posta elettronica, app e dati aziendali. Come parte della registrazione, è possibile impostare un profilo di lavoro, che separa i dati personali che si trovano sul dispositivo dai dati aziendali.
+
+Il supporto tecnico aziendale può gestire solo il profilo di lavoro, che contiene i dati di lavoro. Il supporto tecnico aziendale non può gestire i dati personali sul dispositivo dell'utente. Altri dettagli sono disponibili in [Cosa accade quando si crea un profilo di lavoro](what-happens-when-you-create-a-work-profile-android.md).
 
 Per creare un profilo di lavoro:
 
@@ -32,27 +34,27 @@ Per creare un profilo di lavoro:
 
     ![Schermata iniziale del Portale aziendale Android](./media/and-enroll-0-welcome-screen.png)
 
-2. Nella schermata **Configurazione dell'accesso aziendale** toccare **INIZIA**.
+2. Nella schermata **Configurazione dell'accesso aziendale** toccare **CONTINUA**.
 
-    ![Schermata di configurazione dell'accesso aziendale](./media/andr-afw-begin-company-access-setup.png)
+    ![Schermata di configurazione dell'accesso aziendale](/intune/media/android_cp_enroll_01_1709_new.png)
 
 3.  Nella schermata **Why create a work profile?** (Perché creare un profilo di lavoro) leggere quali operazioni è possibile eseguire e toccare **CONTINUA**.
 
     ![Why create a work profile? (Perché creare un profilo di lavoro)](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Esaminare l'elenco dei dati che l'amministratore IT può o meno visualizzare e quindi toccare **CONTINUA**.
+4.  Rivedere l'elenco di cosa può e di cosa non può essere visualizzato sul dispositivo dal personale del supporto tecnico aziendale e toccare **CONTINUA**.
 
-    ![Cosa può e non può visualizzare l'amministratore IT nel dispositivo](./media/andr-afw-what-it-can-see-on-your-device.png)
+    ![Cosa può e cosa non può essere visualizzato dal supporto tecnico aziendale sul dispositivo](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  Nella schermata **Operazioni successive** leggere quali saranno le operazioni successive e toccare **CONTINUA**.
+5.  Nella schermata **Operazioni successive** leggere cosa accade durante la registrazione e quindi toccare **REGISTRA**.
 
-    ![Operazioni successive](./media/andr-afw-what-comes-next.png)
+    ![Schermata Passaggi successivi](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
 6. Nella schermata **Set up work profile** (Configura profilo di lavoro) toccare **AVANTI** per consentire all'app Portale aziendale di accedere al profilo di lavoro.
 
     ![Consentire all'app Portale aziendale di accedere al profilo di lavoro](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 
-7. Rivedere la schermata di Google che descrive le operazioni che può eseguire l'amministratore IT durante la creazione di un profilo di lavoro e toccare **OK**.
+7. Rivedere la schermata di Google che descrive le operazioni che il supporto tecnico aziendale può eseguire durante la creazione di un profilo di lavoro e quindi toccare **OK**.
 
     ![Rivedere le informazioni di Google sui profili di lavoro](./media/andr-afw-google-screen-what-it-can-do.png)
 
@@ -70,16 +72,12 @@ Per creare un profilo di lavoro:
 
     Per un attimo sarà visualizzato il messaggio "Registrazione del dispositivo in corso".
 
-11. Se la schermata **Configurazione dell'accesso aziendale** indica che è stato tutto configurato, toccare **CONTINUA**.
+11. Quando la schermata **Le operazioni sono state completate.** indica che la configurazione è stata completata correttamente, toccare **FINE**.
 
-    ![In Configurazione dell'accesso aziendale è possibile notare che il profilo di lavoro e la registrazione sono completi](./media/andr-afw-company-access-setup-green-checks.png)
-
-12. Nella schermata **Configurazione dell'accesso aziendale completato** toccare **FINE**. Potrebbe essere necessario completare altri passaggi se l'amministratore IT ha aggiunto altri requisiti.
-
-    ![Configurazione dell'accesso aziendale completato](./media/andr-afw-company-access-setup-complete.png)
+    ![In Configurazione dell'accesso aziendale è possibile notare che il profilo di lavoro e la registrazione sono completi](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
     È possibile ora ottenere app aziendali da Play Store for work.
 
     ![Pagina delle app in Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

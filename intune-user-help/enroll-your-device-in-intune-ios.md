@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 975344e5eb773a2bff3a04d11e4e63d167b30b29
-ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
+ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>Registrare il dispositivo iOS in Intune
 
@@ -54,7 +54,7 @@ Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile regis
   > [!NOTE]
   > I triangoli gialli non indicano che si è già verificato un errore, ma che alcuni passaggi del processo di registrazione devono ancora essere completati.
 
-4. Rivedere l'elenco di cosa può e non può vedere l'amministratore IT nel dispositivo registrato e toccare **Continua**.
+4. Rivedere l'elenco di cosa può e non può vedere il personale del supporto tecnico dell'azienda nel dispositivo registrato e toccare **Continua**.
 
     ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -101,4 +101,4 @@ Il dispositivo è ora registrato in Intune e si riapre l'app Portale aziendale.
 > [!Note]
 > È necessario eseguire ancora alcuni passaggi per completare la registrazione del dispositivo. Vedere altre informazioni sulla [registrazione del dispositivo con la gestione delle spese per le telecomunicazioni](enroll-your-device-with-telecom-expense-management-ios.md). Se l'organizzazione usa Device Enrollment Program di Apple, vedere altre informazioni [qui](enroll-your-device-dep-ios.md).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

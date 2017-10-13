@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32ce7f134d2774483023c090caa6ef2b4d422604
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 60776df3774d4f9ca7404ef04b1cc94536bcd164
+ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per Windows Phone in Microsoft Intune
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Passaggio 1: specificare il file di installazione del software
 
-1. Accedere al portale Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Accedere al portale di Azure.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** + **Intune**.
 3. Nel pannello **Intune** scegliere **Gestisci le app**.
 4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **App**.
 5. In alto all'elenco delle applicazioni scegliere **Aggiungi**.
@@ -66,4 +66,8 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-L'app creata viene visualizzata nell'elenco di app da cui è possibile assegnarla ai gruppi selezionati. Per altre informazioni, vedere [Come assegnare app ai gruppi](apps-deploy.md).
+L'app creata viene visualizzata nell'elenco di app. È ora possibile assegnarla ai gruppi scelti. Per altre informazioni, vedere [Come assegnare app ai gruppi](apps-deploy.md).
+
+Altre informazioni sulle modalità in cui è possibile monitorare le proprietà e l'assegnazione dell'app. Per altre informazioni, vedere [Come monitorare le informazioni sulle app e le assegnazioni](apps-monitor.md).
+
+Altre informazioni sul contesto dell'app in Intune. Per altre informazioni, vedere [Panoramica dei cicli di vita del dispositivo e dell'app](introduction-device-app-lifecycles.md)

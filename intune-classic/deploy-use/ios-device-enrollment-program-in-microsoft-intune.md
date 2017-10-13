@@ -1,6 +1,6 @@
 ---
 title: Gestione del servizio DEP di Apple per i dispositivi iOS
-description: "Distribuire un profilo di registrazione che registra i dispositivi iOS acquistati tramite il programma di registrazione dispositivi (DEP) in modalità wireless per gestire i dispositivi Apple."
+description: "Per gestire i dispositivi Apple, distribuire un profilo di registrazione che registri i dispositivi iOS acquistati tramite Device Enrollment Program (DEP) in modalità wireless."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,11 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 75d2a54f065e04b3f6c923dc4e83cfea498ead76
+ms.sourcegitcommit: c36f74323b57c9d9ef972322082923c449a1a74f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Registrare i dispositivi IOS di proprietà dell'azienda usando il programma di registrazione dispositivi (DEP)
 
@@ -28,7 +28,7 @@ Microsoft Intune può distribuire un profilo di registrazione che registra in mo
 
 >[!NOTE]
 >La registrazione DEP non può essere usata con il metodo del [manager di registrazione dispositivi](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
->Se gli utenti registrano dispositivi iOS con l'app Portale aziendale, inoltre, e i numeri di serie di tali dispositivi vengono poi importati con corrispondente assegnazione di un profilo DEP, la registrazione del dispositivo in Intune verrà annullata.
+>Inoltre se gli utenti registrano i dispositivi iOS (ad es. tramite l'app Portale aziendale) e i numeri di serie di tali dispositivi vengono poi importati con corrispondente assegnazione di un profilo DEP, la registrazione del dispositivo in Intune verrà annullata.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Prerequisiti per la registrazione di dispositivi iOS tramite la gestione del servizio DEP di Apple
 

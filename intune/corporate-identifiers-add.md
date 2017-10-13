@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58dac14dcc38329cfa0a98746e667bf6e5438170
-ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
+ms.openlocfilehash: 82b839943d21cd44c1be457cc8436928f41fe73c
+ms.sourcegitcommit: b6a2d55d9c4e3248ff7ef738393f458f1978de44
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificare i dispositivi di proprietà dell'azienda
 
@@ -37,7 +37,7 @@ Un dispositivo viene identificato come di proprietà aziendale se una delle cond
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Identificare i dispositivi di proprietà aziendale con numero IMEI o numero di serie
 
-Un amministratore di Intune può creare e importare un file con valori delimitati da virgole (con estensione csv) che elenca i numeri IMEI o i numeri di serie. Intune usa questi identificatori per specificare la proprietà aziendale del dispositivo durante la registrazione del dispositivo. È possibile dichiarare i numeri IMEI per tutte le piattaforme supportate. È possibile dichiarare solo il numero di serie per i dispositivi iOS e Android. Per ogni numero IMEI o numero di serie, nell'elenco possono essere specificati dettagli per scopi amministrativi.
+Un amministratore di Intune può creare e importare un file con valori delimitati da virgole (con estensione csv) che elenca i numeri IMEI o i numeri di serie. Intune usa questi identificatori per specificare la proprietà aziendale del dispositivo durante la registrazione del dispositivo. È possibile dichiarare i numeri IMEI per tutte le piattaforme supportate. È possibile dichiarare solo il numero di serie per i dispositivi iOS, macOS e Android. Per ogni numero IMEI o numero di serie, nell'elenco possono essere specificati dettagli per scopi amministrativi.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 

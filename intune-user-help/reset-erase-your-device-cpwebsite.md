@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ce0ce291f303b04f0851b93add5f5cde5e2ee13f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
+ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Reimpostare un dispositivo dal sito Web del portale aziendale
 
-Se il dispositivo viene smarrito o rubato, è consigliabile reimpostare le impostazioni predefinite per evitare l'accesso non autorizzato ai dati. Per reimpostare un dispositivo in remoto, è possibile usare il [sito Web del portale aziendale](http://portal.manage.microsoft.com). Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati in Intune. È possibile usare questo sito Web per eseguire la maggior parte delle attività che si possono svolgere usando l'app Portale aziendale.
+Se il dispositivo viene smarrito o rubato, è consigliabile reimpostare le impostazioni predefinite per evitare l'accesso non autorizzato ai dati. Per reimpostare un dispositivo in remoto, è possibile usare il [sito Web del portale aziendale](https://portal.manage.microsoft.com). Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati in Intune. È possibile usare questo sito Web per eseguire la maggior parte delle attività che si possono svolgere usando l'app Portale aziendale.
 
 Se viene reimpostato, il dispositivo non verrà più elencato nel portale aziendale e verranno reimpostate le impostazioni predefinite.
 
@@ -33,7 +33,7 @@ Se viene reimpostato, il dispositivo non verrà più elencato nel portale aziend
 
 Per reimpostare il dispositivo:
 
-1.  Nel [sito Web del portale aziendale](http://portal.manage.microsoft.com) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
+1.  Nel [sito Web Portale aziendale](https://portal.manage.microsoft.com) toccare il pulsante __menu__, quindi selezionare __Dispositivi personali__.
 
 2. Nella pagina __Dispositivi personali__ selezionare il nome del dispositivo da rinominare.
 
@@ -47,4 +47,4 @@ Per reimpostare il dispositivo:
 
 Il dispositivo è stato reimpostato.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

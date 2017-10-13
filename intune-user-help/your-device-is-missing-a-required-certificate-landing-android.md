@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 910fe2bc4e616c3b60d351efaffe173f58c04bc6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 53bb84c3f2f9e8ee0c0bda419015ff35d1a51488
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>Manca un certificato necessario per il dispositivo
 
@@ -30,12 +30,12 @@ La [crittografia](https://technet.microsoft.com/library/cc962030.aspx) è la sci
 
 ## <a name="fixing-certificate-issues"></a>Correzione dei problemi di certificato
 
-Se il dispositivo Android non è registrato in Intune e non ha un determinato certificato richiesto dall'amministratore IT, non sarà possibile accedere all'app Portale aziendale dal dispositivo. Quando si tenta di accedere, verrà visualizzato il messaggio seguente:
+Se il dispositivo Android non è registrato in Intune e non ha un determinato certificato richiesto dal supporto tecnico dell'azienda, non sarà possibile accedere all'app Portale aziendale dal dispositivo. Quando si tenta di accedere, verrà visualizzato il messaggio seguente:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
 Il primo passaggio da tentare consiste nel verificare se nel dispositivo [è presente un certificato generalmente preinstallato](your-device-is-missing-a-preinstalled-certificate-android.md).
 
-Se il problema persiste, l'amministratore IT può [richiedere di installare un altro certificato per maggiore sicurezza](your-device-is-missing-an-IT-required-certificate-android.md).
+Se il problema persiste, il supporto tecnico dell'azienda può [richiedere di installare un altro certificato per maggiore sicurezza](your-device-is-missing-an-IT-required-certificate-android.md).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

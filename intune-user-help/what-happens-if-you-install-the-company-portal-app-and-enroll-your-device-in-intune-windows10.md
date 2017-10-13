@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 53fe121c5d565fe7bd35843b92f9480cfd5bd5e8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 31b6545b0518e369b95b6e4830617988aa806112
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows 10 in Intune?
 
@@ -34,22 +34,22 @@ Quando si installa l'app Portale aziendale e si registra il proprio dispositivo 
 
 -   Ripristinare le impostazioni di fabbrica del telefono se questo viene smarrito o rubato.
 
-Per i passaggi di registrazione, vedere [Registrare il dispositivo Windows 10 Mobile o Windows 10 Desktop in Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Per informazioni sui dettagli del dispositivo visibili all'amministratore IT, vedere [Quali sono i dettagli visibili all'amministratore IT quando si registra il dispositivo in Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+Per i passaggi di registrazione, vedere [Registrare il dispositivo Windows 10 Mobile o Windows 10 Desktop in Intune](enroll-your-w10-phone-or-w10-pc-windows.md). Per informazioni sui dettagli del dispositivo visibili al supporto tecnico dell'azienda, vedere [Quali sono le informazioni visibili per l'azienda quando si registra il dispositivo?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
 Quando si aggiunge un computer:
 
--   Verrà installato software nel computer per consentire all'amministratore IT di gestire il computer e all'utente di accedere alle risorse aziendali, come app e informazioni sul supporto. L'amministratore IT può aggiornare automaticamente il software.
+-   Verrà installato software nel computer per consentire al supporto tecnico dell'azienda di gestire il computer e all'utente di accedere alle risorse aziendali, come app e informazioni sul supporto. Il supporto tecnico dell'azienda può aggiornare automaticamente il software.
 
 -   Intune Endpoint Protection può essere installato nel computer. Questo software controlla l'eventuale presenza di virus e malware.
 
--   L'amministratore IT può eseguire un inventario di tutto il software installato nel computer, compreso quello installato personalmente dall'utente.
+-   Il supporto tecnico dell'azienda può eseguire un inventario di tutto il software installato nel computer, compreso quello installato personalmente dall'utente.
 
 -   Potrebbe essere necessario accettare i termini e le condizioni.
 
--   L'amministratore IT può raccogliere o eliminare dati dal disco rigido del computer. L'amministratore IT può anche eliminare l'intero disco rigido.
+-   Il supporto tecnico dell'azienda può raccogliere o eliminare dati dal disco rigido del computer. Il supporto tecnico dell'azienda può anche eliminare l'intero disco rigido.
 
--   L'amministratore IT può installare app e aggiornamenti nel computer.
+-   Il supporto tecnico dell'azienda può installare app e aggiornamenti nel computer.
 
--   L'amministratore IT può imporre criteri al computer. Ad esempio, potrebbe essere necessario impostare una password o un PIN per il computer. L'amministratore IT può anche limitare il numero di immissioni di una password errata e impedire l'accesso al computer o eliminare tutti i dati dal disco rigido se tale numero viene superato.
+-   Il supporto tecnico dell'azienda può imporre criteri al computer. Ad esempio, potrebbe essere necessario impostare una password o un PIN per il computer. Il supporto tecnico dell'azienda può anche limitare il numero di immissioni di una password errata e impedire l'accesso al computer o eliminare tutti i dati dal disco rigido se tale numero viene superato.
 
-Per eventuali domande, contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

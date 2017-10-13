@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e9057866ac8f8e5d8487a93401282117a72015cd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 38ee5446c679472927f4dccecfdc56f1228fb92c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Android in Intune?
 
@@ -34,13 +34,13 @@ Quando si installa l'app Portale aziendale e si registra il dispositivo Android 
 
 -   Ripristinare le impostazioni di fabbrica del telefono se questo viene smarrito o rubato.
 
-Quando si registra il dispositivo Android, si concedono all'amministratore IT le autorizzazioni per accedere al dispositivo. Tali autorizzazioni consentono di:
+Quando si registra il dispositivo Android, si concedono al supporto tecnico dell'azienda le autorizzazioni per accedere al dispositivo. Tali autorizzazioni consentono di:
 
 -   Ripristinare le impostazioni predefinite dal produttore del dispositivo. Questa operazione è utile se il dispositivo viene smarrito o rubato.
 
 -   Rimuovere tutti i dati correlati alla società. Impostazioni e dati personali non vengono rimossi.
 
--   Impostare requisiti per il dispositivo, ad esempio richiedere una password del dispositivo o un PIN per consentire la protezione dei dati aziendali. L'amministratore IT può anche limitare il numero di immissioni di una password errata e impedire l'accesso al dispositivo se tale numero viene superato.
+-   Impostare requisiti per il dispositivo, ad esempio richiedere una password del dispositivo o un PIN per consentire la protezione dei dati aziendali. Il supporto tecnico dell'azienda può anche limitare il numero di immissioni di una password errata e impedire l'accesso al dispositivo se tale numero viene superato.
 
 -   Richiedere di accettare i termini e le condizioni.
 
@@ -50,10 +50,10 @@ Quando si registra il dispositivo Android, si concedono all'amministratore IT le
 
 Dopo che il dispositivo è stato aggiunto al portale aziendale, ogni otto ore circa verranno eseguite le operazioni seguenti:
 
--   Download degli aggiornamenti di criteri o app resi disponibili dall'amministratore IT.
+-   Download degli aggiornamenti di criteri o app resi disponibili dal supporto tecnico dell'azienda.
 
 -   Invio degli aggiornamenti dell'inventario hardware. Questi aggiornamenti non contengono informazioni personali.
 
 -   Invio degli aggiornamenti dell'inventario delle app aziendali. Questi aggiornamenti non contengono informazioni personali.
 
-Serve assistenza? Contattare l'amministratore IT (accedere al [sito Web del portale aziendale](https://portal.manage.microsoft.com) per informazioni sui contatti) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.
+Serve assistenza? Contattare il supporto tecnico dell'azienda (accedere al [sito Web del portale aziendale](https://portal.manage.microsoft.com) per informazioni sui contatti) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.

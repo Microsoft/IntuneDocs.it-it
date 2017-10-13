@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple
 
@@ -30,6 +30,9 @@ Questo argomento offre informazioni utili per abilitare la registrazione dei dis
 Per abilitare la registrazione DEP, si usano i portali di Intune e DEP di Apple. È necessario un elenco di numeri di serie o un numero di ordine di acquisto per poter assegnare i dispositivi a Intune per la gestione. Si creano profili di registrazione DEP contenenti le impostazioni da applicare ai dispositivi durante la registrazione.
 
 La registrazione DEP non funziona con il [manager di registrazione dispositivi](device-enrollment-manager-enroll.md).
+
+## <a name="what-is-supervised-mode"></a>Che cos'è la modalità con supervisione?
+Apple ha introdotto la modalità con supervisione in iOS 5. Un dispositivo iOS in modalità con supervisione può essere gestito con un numero maggiore di controlli. Questa modalità è quindi particolarmente utile per dispositivi di proprietà dell'azienda. Intune supporta la configurazione di dispositivi per la modalità con supervisione nell'ambito del programma Apple Device Enrollment Program (DEP). 
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -77,7 +80,6 @@ Per creare un token DEP si usa il portale DEP di Apple. È anche possibile usare
 
 5. Viene visualizzata la finestra di dialogo **Aggiungi &lt;NomeServer&gt;** che richiede di **caricare la chiave pubblica**. Fare clic su **Scegli file** per caricare il file PEM e scegliere **Avanti**.
 
-6.  La finestra di dialogo **Aggiungi &lt;Nome Server&gt;** include un collegamento al **Token del server**. Scaricare il file token del server (con estensione p7m) nel computer e fare clic su **Fine**.
 
 7. Passare a **Programmi di distribuzione** &gt; **Device Enrollment Program** &gt; **Gestione dei dispositivi**.
 8. Nella sezione **Scegliere dispositivi per** specificare come vengono identificati i dispositivi:
@@ -114,16 +116,19 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 
 4. Scegliere **Impostazioni di gestione dei dispositivi** per configurare le impostazioni di profilo seguenti:
 
-  ![Screenshot della scelta della modalità di gestione. Le impostazioni del dispositivo sono le seguenti: Supervisione eseguita, Registrazione bloccata, Consenti associazione impostato su Rifiuta tutto. Per un nuovo profilo DEP, l'opzione Certificati di Apple Configurator è disattivata.](./media/enrollment-program-profile-mode.png)
-    - **Supervisione eseguita**: modalità di gestione che attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita. Se si lascia vuota la casella di controllo, le funzionalità di gestione saranno limitate.
+  ![Screenshot della scelta della modalità di gestione. Le impostazioni del dispositivo sono le seguenti: Supervisione eseguita, Registrazione bloccata, Rifiuta tutto in Consenti associazione. Per un nuovo profilo DEP, l'opzione Certificati di Apple Configurator è disattivata.](./media/enrollment-program-profile-mode.png)
+    - **Supervisione eseguita**: modalità di gestione che attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita. Se si lascia vuota la casella di controllo, le funzionalità di gestione saranno limitate. È consigliabile usare il programma DEP come meccanismo per l'abilitazione della modalità con supervisione, soprattutto per le organizzazioni che distribuiscono un numero elevato di dispositivi iOS.
 
-    - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disattiva le impostazioni iOS che potrebbero permettere la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni. Dopo la registrazione del dispositivo, non è possibile modificare questa impostazione senza ripristinare le impostazioni predefinite del dispositivo.
+ > [!NOTE]
+ > Dopo che un dispositivo è stato registrato non è possibile configurarlo per la modalità con supervisione tramite Intune. Dopo la registrazione, l'unico modo per abilitare la modalità con supervisione è connettere il dispositivo iOS a un computer Mac con un cavo USB e usare Apple Configurator. In questo modo il dispositivo viene reimpostato e configurato in modalità con supervisione. Per altre informazioni vedere la [documentazione di Apple Configurator](http://help.apple.com/configurator/mac/2.3). Un dispositivo con supervisione visualizza "This iPhone is managed by Contoso." (Questo dispositivo è gestito da Contoso) nella schermata di blocco e "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device." (Questo iPhone è soggetto a supervisione. Contoso può monitorare il traffico Internet e individuare il dispositivo) in **Impostazioni** > **Generali** > **Info**.
+
+    - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disabilita le impostazioni iOS che possono consentire la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni. Dopo la registrazione del dispositivo, non è possibile modificare questa impostazione senza ripristinare le impostazioni predefinite del dispositivo.
 
   - **Modalità iPad condiviso abilitata**: il programma Device Enrollment Program di Apple non supporta la modalità iPad condiviso.
 
     - **Consenti associazione**: specifica se i dispositivi iOS possono sincronizzarsi con i computer. Se si sceglie **Consenti Apple Configurator per certificato**, è necessario scegliere un certificato in **Certificati di Apple Configurator**.
 
-    - **Certificati di Apple Configurator**: se si è scelto **Consenti Apple Configurator per certificato ** in **Consenti associazione**, scegliere un certificato di Apple Configurator da importare.
+    - **Certificati di Apple Configurator**: se si è scelto **Consenti Apple Configurator per certificato**  in **Consenti associazione**, scegliere un certificato di Apple Configurator da importare.
 
   Scegliere **Salva**.
 
@@ -146,6 +151,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
         - **Dati di diagnostica**
 
     Scegliere **Salva**.
+
 9. Per salvare le impostazioni del profilo, scegliere **Crea** nel pannello **Crea un profilo di registrazione**. Il profilo di registrazione viene visualizzato nell'elenco dei profili DEP Apple.
 
 ## <a name="sync-managed-devices"></a>Sincronizzare i dispositivi gestiti

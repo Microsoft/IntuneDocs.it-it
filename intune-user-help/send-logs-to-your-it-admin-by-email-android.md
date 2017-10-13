@@ -1,5 +1,5 @@
 ---
-title: Inviare i log all'amministratore IT tramite posta elettronica | Microsoft Docs
+title: Inviare i log al supporto tecnico dell'azienda via posta elettronica | Microsoft Docs
 description: Inviare i registri di dati tramite posta elettronica in un dispositivo Android
 keywords: 
 author: barlanmsft
@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b10e4f6571d581b76d8e9d280767ce09ec8e3684
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-email"></a>Inviare i log all'amministratore IT tramite posta elettronica
+# <a name="send-logs-to-your-company-support-using-email"></a>Inviare i log al supporto tecnico dell'azienda usando la posta elettronica
 
-Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo Android, è possibile inviare informazioni sull'errore tramite posta elettronica per consentire all'amministratore IT di risolvere il problema. Queste informazioni vengono memorizzate nel dispositivo in uno specifico documento definito _log di diagnostica_.
+Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo Android, è possibile inviare un messaggio di posta elettronica al supporto tecnico dell'azienda con informazioni utili ai fini della risoluzione del problema. Queste informazioni vengono memorizzate nel dispositivo in uno specifico documento definito _log di diagnostica_.
 
 > [!Note]
-> Per fare in modo che sia più semplice per l'amministratore IT individuare il problema, attivare la _registrazione dettagliata_. La registrazione dettagliata include tutte le informazioni rilevanti nel report. Per informazioni su come attivare la registrazione dettagliata, vedere [qui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Per fare in modo che sia più semplice per il personale del supporto tecnico dell'azienda individuare il problema, attivare la _registrazione dettagliata_. La registrazione dettagliata include tutte le informazioni rilevanti nel report. Per informazioni su come attivare la registrazione dettagliata, vedere [qui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-Per inviare i registri all'amministratore IT tramite posta elettronica:
+Per inviare log al supporto tecnico dell'azienda usando la posta elettronica:
 
 1.  Aprire l'app Portale aziendale.
 
@@ -40,4 +40,4 @@ Per inviare i registri all'amministratore IT tramite posta elettronica:
 
 3.  In **Guida** toccare **Richiedi assistenza**.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

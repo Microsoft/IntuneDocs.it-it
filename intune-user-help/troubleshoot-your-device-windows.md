@@ -15,20 +15,20 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 526cfed5e8f42d739c57882b454745ba5b20181c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 483b2155c2f1935a5b0d79b84ab65db1f9fc182d
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Risolvere problemi comuni con il dispositivo Windows
 
-A volte possono verificarsi problemi con il dispositivo Windows non risolvibili tramite le procedure di risoluzione dei problemi. Di seguito sono elencati alcuni problemi comuni che è possibile provare a risolvere autonomamente. Per i problemi più complessi, si consiglia di contattare l'amministratore IT tramite le informazioni di contatto disponibili nel [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+A volte possono verificarsi problemi con il dispositivo Windows non risolvibili tramite le procedure di risoluzione dei problemi. Di seguito sono elencati alcuni problemi comuni che è possibile provare a risolvere autonomamente. Per i problemi più complessi, si consiglia di contattare il supporto tecnico dell'azienda usando le informazioni di contatto disponibili nel [sito Web del portale aziendale](https://portal.manage.microsoft.com).
 
 - [Non è possibile registrare il dispositivo Windows 10](troubleshoot-your-windows-10-device-windows.md)
 - [È necessario aggiornare il dispositivo Windows](you-need-to-update-your-windows-device.md)
-- [È necessario inviare i log all'amministratore IT dall'app Portale aziendale](send-logs-to-your-it-admin-cp-windows.md)
-- [È necessario inviare i log all'amministratore IT dall'app Impostazioni](send-logs-to-your-it-admin-settings-windows.md)
+- [È necessario inviare i log al supporto tecnico dell'azienda dall'app Portale aziendale](send-logs-to-your-it-admin-cp-windows.md)
+- [È necessario inviare i log al supporto tecnico dell'azienda dall'app Impostazioni](send-logs-to-your-it-admin-settings-windows.md)
 - [La versione di Windows non è ancora supportata](your-windows-version-isnt-yet-supported.md)
 - [È necessario abilitare la crittografia di Windows](you-need-to-enable-windows-encryption.md)
 - [Il dispositivo richiede software antimalware](your-device-needs-antimalware-software.md)

@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 43737ac3c2a8e84f1909c0f0cfcf450937301872
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 635f99a0fd4857e9c0c2266371713c102ce37912
+ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per Android
 Le impostazioni dei criteri descritte in questo argomento possono essere [configurate](app-protection-policies.md) per il criterio di protezione delle app nel pannello **Impostazioni** del portale di Azure.
@@ -30,7 +30,7 @@ Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione d
 | Impostazioni | Uso | Valori predefiniti |
 |------|------|------|
 | **Impedisci backup in Android** | Scegliere **Sì** per impedire all'app di eseguire il backup di dati aziendali o dell'istituto di istruzione nel [servizio di backup Android](https://developer.android.com/google/backup/index.html). Scegliere **No** per consentire all'app di eseguire il backup di dati aziendali o dell'istituto di istruzione.| sì |
-| **Consenti all'app di trasferire i dati ad altre app** | Specificare le app da cui questa app può ricevere dati: <ul><li> **App gestite da criteri**: consente il trasferimento solo ad altre app gestite da criteri.</li> <li>**Tutte le app**: consente il trasferimento a qualsiasi app. </li> <li>**Nessuna**: non consente il trasferimento a nessuna app, incluse le altre app gestite da criteri.</li></ul> <p>Esistono alcuni servizi e app esenti, ai quali Intune può consentire il trasferimento dei dati. Vedere [Esenzioni per il trasferimento dei dati](#Data-transfer-exemptions) per un elenco completo di app e servizi.| Tutte le app |
+| **Consenti all'app di trasferire i dati ad altre app** | Specificare le app da cui questa app può ricevere dati: <ul><li> **App gestite da criteri**: consente il trasferimento solo ad altre app gestite da criteri.</li> <li>**Tutte le app**: consente il trasferimento a qualsiasi app. </li> <li>**Nessuna**: non consente il trasferimento a nessuna app, incluse le altre app gestite da criteri.</li></ul> <p>Esistono alcuni servizi e app esenti ai quali Intune può consentire il trasferimento dei dati. Vedere [Esenzioni per il trasferimento dei dati](#Data-transfer-exemptions) per un elenco completo di app e servizi.<p>**Nota:** Intune attualmente non supporta la funzionalità Android Instant Apps. Intune blocca qualsiasi connessione dati da o verso l'app.  Per altre informazioni su [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) vedere la documentazione per sviluppatori di Android.</p>| Tutte le app |
 | **Consenti all'app di ricevere i dati da altre app** | Specificare le app che possono trasferire dati a questa app: <ul><li>**App gestite da criteri**: consente il trasferimento solo da altre app gestite da criteri.</li><li>**Tutte le app**: consente il trasferimento dei dati da qualsiasi app.</li><li>**Nessuna**: non consente il trasferimento da alcuna app, incluse le altre app gestite da criteri. </li></ul> <p>Esistono alcuni servizi e app esenti, dai quali Intune può consentire il trasferimento dei dati. Vedere [Esenzioni per il trasferimento dei dati](#Data-transfer-exemptions) per un elenco completo di app e servizi. | Tutte le app |
 | **Impedisci "Salva con nome"** | Scegliere **Sì** per disabilitare l'uso dell'opzione Salva con nome in questa app. Scegliere **No** per consentire l'uso di Salva con nome. <p><br>**Selezionare i servizi di archiviazione in cui è possibile salvare i dati aziendali** <br>Gli utenti possono salvare nei servizi selezionati (OneDrive for Business, SharePoint e archiviazione locale). Tutti gli altri servizi verranno bloccati.</p> | No <br><br> 0 selezionato |
 | **Limita le operazioni taglia, copia e incolla con le altre app** | Specificare quando è possibile usare le azioni taglia, copia e incolla con questa app. È possibile scegliere tra: <ul><li>**Bloccato**: non consente le azioni taglia, copia e incolla tra questa app e altre app.</li><li>**App gestite da criteri**: consente le azioni taglia, copia e incolla tra questa app e altre app gestite da criteri.</li><li>**App gestite da criteri con Incolla in**: consente le azioni taglia o copia tra questa app e altre app gestite da criteri. I dati da qualsiasi app possono essere incollati in questa app.</li><li>**Qualsiasi app**: nessuna restrizione per le azioni taglia, copia e incolla in e da questa app. | Qualsiasi app |

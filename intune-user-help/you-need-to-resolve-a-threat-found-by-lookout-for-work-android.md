@@ -1,6 +1,6 @@
 ---
 title: Risoluzione delle minacce rilevate da Lookout for Work in Android | Microsoft Docs
-description: 
+description: Informazioni su come risolvere una minaccia rilevata da Lookout for Work in Android.
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -14,13 +14,13 @@ ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: b7cd5e4d019030a432845557de4cd27ee652785a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f4f878f6cd46c4ded709d833c799bb2d310adeb9
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>È necessario risolvere una minaccia trovata da Lookout for Work
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Risolvere una minaccia rilevata da Lookout for Work
 
 Lookout for Work ha rilevato una potenziale minaccia nel dispositivo ed è necessario risolvere il problema per riottenere accesso alla posta elettronica, alle app e ai file aziendali o dell'istituto di istruzione. Il messaggio visualizzato potrebbe essere simile al seguente:
 
@@ -34,7 +34,7 @@ Se c'è un virus o un'altra minaccia per la protezione nel dispositivo registrat
 
 ![Messaggio di errore di Lookout for Work con collegamento al sito Web del portale aziendale](./media/mtd-go-to-device-management-portal-android.png)
 
-Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](http://portal.manage.microsoft.com), in cui verranno visualizzate istruzioni su come risolvere il problema.
+Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com), in cui verranno visualizzate istruzioni su come risolvere il problema.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Esempio di un'app che Lookout for Work considera come una minaccia
 
@@ -44,4 +44,4 @@ Se è stata installata un'app che Lookout for Work considera una minaccia, verr�
 
 Dopo aver disinstallato l'app, si riottiene subito accesso alla posta elettronica e ai dati aziendali. Se si ignora la richiesta di disinstallare l'app, si perderà l'accesso alla posta elettronica e ai dati fino a quando l'app non verrà disinstallata.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

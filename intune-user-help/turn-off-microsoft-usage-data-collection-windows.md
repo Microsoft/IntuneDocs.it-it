@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cc242a36957ed897198f597ab7864aca21a7820d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fb082ad8830a5d8e9ab0514a981c9bb4b02592b0
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Come disattivare la raccolta dati di Microsoft
 
-Microsoft raccoglie automaticamente determinati dati per i suoi prodotti e servizi allo scopo di migliorare l'affidabilità e le prestazioni dei prodotti Microsoft, inclusa l'app Portale aziendale. Anche se questi dati sono resi anonimi, alcuni utenti potrebbero non acconsentire alla raccolta. Gli amministratori IT non hanno alcun controllo sulla raccolta di questi dati e non possono modificare la selezione di questa impostazione.
+Microsoft raccoglie automaticamente determinati dati per i suoi prodotti e servizi allo scopo di migliorare l'affidabilità e le prestazioni dei prodotti Microsoft, inclusa l'app Portale aziendale. Anche se questi dati sono resi anonimi, alcuni utenti potrebbero non acconsentire alla raccolta. Il personale del supporto tecnico dell'azienda non ha alcun controllo sulla raccolta di questi dati e non può modificare la selezione dell'impostazione.
 
 Se si desidera disattivare la raccolta dei dati di utilizzo nel dispositivo Windows personale, trovare l'impostazione **Dati di utilizzo** nell'app Portale aziendale.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

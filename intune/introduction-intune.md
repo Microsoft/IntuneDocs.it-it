@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 4946404a4bdb4968c47904549a581c9c39f6e9e0
-ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
+ms.openlocfilehash: 527a2a1578fcf9ef8e8f80c68091e582f8f2ebd2
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="what-is-intune"></a>Informazioni su Intune
 
@@ -37,7 +37,7 @@ Intune è un servizio basato su cloud nel settore di gestione della mobilità az
 * [Rilasciare telefoni di proprietà dell'azienda alla forza lavoro](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
 * [Offrire un programma BYOD (Bring Your Own Device) o per un dispositivo personale a tutti i dipendenti](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
 * [Abilitare i dipendenti per l'accesso protetto a Office 365 da un chiosco pubblico non gestito](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
-* [Assegnare tablet condivisi con limitazioni d'uso ai task worker](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
+* [Distribuire tablet condivisi con limitazioni d'uso ai dipendenti](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 
 ## <a name="how-does-intune-work"></a>Come funziona Intune?

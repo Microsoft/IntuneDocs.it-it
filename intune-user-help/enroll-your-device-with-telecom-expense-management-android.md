@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 87704687947aee7c1169b36009ea1960bec37edd
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Registrare il dispositivo Android nella gestione delle spese per telecomunicazioni
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/01/2017
 
 Selezionare l'opzione appropriata. Si riceverà una notifica per l'installazione dell'app [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) da Google Play Store. Datalert è l'app con cui l'organizzazione può misurare l'utilizzo dei dati. Se l'organizzazione ha configurato l'opzione di registrazione aziendale o dell'istituto di istruzione, verrà richiesto di accedere con l'account aziendale o dell'istituto di istruzione. Se questa configurazione non è stata abilitata, è necessario specificare altre informazioni, ad esempio il numero di telefono, e verificare il dispositivo usando un codice per registrarlo nel servizio Datalert a partire dall'app.
 
-Toccare la freccia __avanti__ nell'angolo in alto a destra della schermata per proseguire. L'amministratore IT deve informare l'utente se deve accedere con l'__account Microsoft aziendale o dell'istituto di istruzione__ oppure se usare il __numero di telefono__.
+Toccare la freccia __avanti__ nell'angolo in alto a destra della schermata per proseguire. Il personale di supporto deve indicare all'utente se deve accedere con l'__account Microsoft aziendale o dell'istituto di istruzione__ oppure usare il __numero di telefono__.
 
   ![Screenshot della schermata iniziale dell'app Datalert, in cui viene chiesto di passare alla schermata successiva ed è riportata una breve spiegazione di come Datalert può aiutare a sfruttare al meglio il piano dati.](./media/and-enroll-12-tem-datalert-setup.png)
 
@@ -62,4 +62,4 @@ Toccare la freccia __avanti__ nell'angolo in alto a destra della schermata per p
 
 Al termine della registrazione, sarà possibile iniziare a esaminare l'utilizzo dei dati nell'app Datalert.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

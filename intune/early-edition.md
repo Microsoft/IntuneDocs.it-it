@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/05/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0ac0d1fd2f618339f847201f333d3f32561ca6b1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f2e11a7fbe226932206f6946ef0603307e76c69c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2017"></a>Edizione anticipata per Microsoft Intune - Settembre 2017
 
@@ -184,6 +184,14 @@ Ciò non ha alcun impatto immediato sui dispositivi Windows Phone 8.1 gestiti da
 
 
 ## <a name="intune-apps"></a>App di Intune
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Migliorare la ricerca per il sito Web Portale aziendale <!--1331697-->
+Stiamo migliorando la funzionalità di ricerca dell'app, a partire dal [sito Web Portale aziendale](https://portal.manage.microsoft.com). Le ricerche verranno ora eseguite sulle categorie di app, oltre ai campi nome e descrizione. I risultati verranno ordinati, per impostazione predefinita, in ordine decrescente di rilevanza. 
+
+Gli utenti di iOS riceveranno anche questa modifica, dato che il sito Web Portale aziendale è usato anche come parte dell'app del Portale aziendale per iOS. Le app del Portale aziendale per Android e Windows riceveranno aggiornamenti simili nei prossimi mesi. 
+
+Stiamo ancora ottimizzando il modo in cui viene tenuta traccia della rilevanza. Per comunicarci come sta andando, usare il collegamento "Commenti e suggerimenti" nella parte inferiore del sito Web del Portale aziendale.
+
 ### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>Azione di aggiornamento aggiunta all'app del portale aziendale per Windows 10 <!--1132468-->
 L'app del portale aziendale per Windows 10 consentirà agli utenti di aggiornare i dati nell'app trascinando verso il basso oppure, nei sistemi desktop, premendo F5.
 

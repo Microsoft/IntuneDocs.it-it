@@ -1,5 +1,5 @@
 ---
-title: Inviare gli errori all'amministratore IT | Microsoft Docs
+title: Inviare gli errori al supporto tecnico dell'azienda | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 12fe4702217ad180a94dcf4d79326dd6840a7839
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-errors-to-your-it-admin-for-issues-with-your-ios-device"></a>Inviare gli errori all'amministratore IT per i problemi relativi al dispositivo iOS
+# <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Inviare gli errori al supporto tecnico dell'azienda per i problemi relativi al dispositivo iOS
 
-Se si verificano errori nel dispositivo iOS quando si usa l'app Portale aziendale, è possibile inviare informazioni per consentire all'amministratore IT di risolvere il problema. È possibile inviare informazioni sugli errori in modi diversi:
+Se si verificano errori nel dispositivo iOS quando si usa l'app Portale aziendale, è possibile inviare informazioni per consentire al supporto tecnico dell'azienda di risolvere il problema. È possibile inviare informazioni sugli errori in modi diversi:
 
 -   Nei messaggi di avviso dell'errore, toccare **Report**.
 
@@ -32,4 +32,4 @@ Se si verificano errori nel dispositivo iOS quando si usa l'app Portale aziendal
 
 -   Nell'app Portale aziendale, agitare il dispositivo e quindi toccare **Invia report di diagnostica** quando viene visualizzato l'avviso di diagnostica. Se l'avviso non viene visualizzato quando si agita il dispositivo, aprire **Impostazioni** > **Portale aziendale** e verificare che l'opzione **Movimento di agitazione** sia selezionata.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

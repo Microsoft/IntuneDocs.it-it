@@ -1,11 +1,11 @@
 ---
 title: "È necessario installare Lookout for Work nel dispositivo iOS | Microsoft Docs"
-description: 
+description: Informazioni su come installare Lookout for Work per iOS.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 62e37d42aef9a828551db1fbbcf5e3cb1b3eeec9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 46827fa3505fd8c4f2d767ba821ce9d84fc0d16d
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>È necessario installare Lookout for Work nel dispositivo iOS
+# <a name="install-lookout-for-work-on-your-ios-device"></a>Installare Lookout for Work nel dispositivo iOS
 
-Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di installare l'app Lookout for Work che consente di proteggere il dispositivo con la ricerca di potenziali minacce alla protezione. È possibile che vengano visualizzate istruzioni diverse sul dispositivo, a seconda di come l'amministratore IT ha configurato Lookout for Work.
 
-**Eseguire le operazioni seguenti:**
+Prima di poter accedere ai dati aziendali, viene richiesto dal supporto tecnico di installare l'app Lookout for Work, che consente di proteggere il dispositivo rilevando potenziali minacce per la sicurezza. È possibile che vengano visualizzate istruzioni diverse sul dispositivo, a seconda di come l'amministratore IT ha configurato Lookout for Work.
+
+
+## <a name="what-you-need-to-do"></a>Operazione da effettuare
 
 1.  Se viene visualizzata l'istruzione seguente, toccare **Install** (Installa) per consentire l'installazione di Lookout for Work nel dispositivo.
 
@@ -40,14 +42,17 @@ Prima di poter accedere al proprio lavoro, l'amministratore IT richiede di insta
 
 4. Quando il sistema richiede di consentire a Lookout for Work di inviare notifiche, toccare **Allow** (Consenti).
 
-  ![Toccare Settings (Impostazioni) e quindi Location Services (Servizi di posizione)](./media/ios-lfw-allow-notifications.png)
+     ![Toccare Settings (Impostazioni) e quindi Location Services (Servizi di posizione)](./media/ios-lfw-allow-notifications.png)
 
-Al termine dell'installazione di Lookout for Work, se non sono state rilevate minacce alla protezione nel dispositivo, viene visualizzata la schermata seguente.
+   * Al termine dell'installazione di Lookout for Work, se non sono state rilevate minacce alla protezione nel dispositivo, viene visualizzata la schermata seguente.
 
-  ![Lookout for Work non ha trovato minacce alla protezione](./media/ios-lfw-no-threats-found.png)
+     ![Lookout for Work non ha trovato minacce alla protezione](./media/ios-lfw-no-threats-found.png)
 
-Se Lookout for Work trova una minaccia alla protezione nel dispositivo, verranno visualizzate le istruzioni per la risoluzione del problema.
+   * Se Lookout for Work trova una minaccia alla protezione nel dispositivo, verranno visualizzate le istruzioni per la risoluzione del problema.
 
-**Se l'installazione non riesce**
+## <a name="if-the-installation-doesnt-work"></a>Se l'installazione non riesce
 
-Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso contattare l’amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](http://portal.manage.microsoft.com).
+Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso, provare a installare Lookout for Work [manualmente dall'App Store](https://itunes.apple.com/app/lookout-for-work/id997193468).
+
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+
