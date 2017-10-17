@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 040ce88c47eb12bbe9b228189d90ca422e5185e7
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b2049fa20b79ffb21e70b037aa9ddab863f66108
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -102,7 +103,7 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 5.  Dopo aver immesso le informazioni nei campi, scegliere **OK** per aggiungere l'app all'elenco **App consentite**.
 
 > [!NOTE]
-> Per aggiungere più app dello Store contemporaneamente, è possibile fare clic sul menu **(...) ** alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
+> Per aggiungere più app dello Store contemporaneamente, è possibile fare clic sul menu **(...)**  alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Aggiungere un'app desktop all'elenco App consentite
 

@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 10/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 804ea185cf48b6781174b888436211a6d70823ca
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 8d05199359f7e4ca2c41415c0db13e339c66c162
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Ottenere un certificato push MDM di Apple
 
@@ -51,9 +51,6 @@ Passare al file (con estensione pem) del certificato, scegliere **Apri** e quind
 Il certificato push MDM Apple è valido un anno e deve essere rinnovato annualmente per poter continuare la gestione dei dispositivi iOS e macOS. Se il certificato è scaduto, non è possibile contattare i dispositivi Apple registrati.
 
 Il certificato è associato all'ID Apple usato per crearlo. Rinnovare il certificato push MDM con lo stesso ID Apple usato per crearlo.
-
-> [!NOTE]
-> Il certificato è associato all'ID Apple usato per crearlo. La procedura consigliata è usare un ID Apple aziendale per attività di gestione. Non usare mai un ID Apple personale.
 
 1. Nel portale di Azure scegliere **Registrazione del dispositivo** > **Registrazione Apple** e quindi scegliere **Certificato push MDM Apple**.
 2. Scegliere **Scarica CSR** per scaricare e salvare il file di richiesta in locale. Questo file viene usato per richiedere un certificato di relazione di trust al portale Apple Push Certificates.

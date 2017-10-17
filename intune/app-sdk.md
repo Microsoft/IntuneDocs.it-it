@@ -2,7 +2,8 @@
 title: Vantaggi di Intune App SDK
 description: "Intune App SDK è disponibile per la piattaforma iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune."
 keywords: 
-author: mtillman
+author: mattbriggs
+ms.author: mabriggs
 manager: angrobe
 ms.date: 08/24/2017
 ms.topic: article
@@ -13,11 +14,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c509e324788828d8ce5a3e9ac556c82ce57e9b07
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: e3ab0526dbd9de6ce38bd540ea218ef56a4e4876
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="intune-app-sdk-overview"></a>Panoramica di Intune App SDK
 Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di protezione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. La maggior parte delle funzionalità dell'SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che richiedono la partecipazione dell'app.
