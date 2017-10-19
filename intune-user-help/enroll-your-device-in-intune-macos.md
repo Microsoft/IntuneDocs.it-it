@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology:
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope: User help
 ROBOTS: 
-ms.reviewer: jieyang
+ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ec1120f8fe040227d513fa5de2c096b34611ed7a
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>Registrare il dispositivo macOS in Intune
 
 La possibilità di accedere alle app, ai dati e alle risorse dell'organizzazione significa poter svolgere il proprio lavoro. Se si usa un dispositivo macOS in ufficio, sarà necessario installare un __profilo di gestione__. Si tratta semplicemente di un file configurato dal supporto tecnico dell'azienda che carica le impostazioni e le informazioni di accesso nel dispositivo Mac. Per saperne di più Scoprire [cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-
-  > [!NOTE]
-  > Se si sta in effetti tentando di registrare un dispositivo iOS, ad esempio un iPhone o iPad, [usare invece queste istruzioni](enroll-your-device-in-intune-ios.md).
 
 1. Trovare __Safari__ nel __Dock__ e aprire una nuova finestra, quindi aprire il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
 2. Accedere al sito Web del portale aziendale con l'account aziendale o dell'istituto di istruzione.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-3. Dopo l'accesso verranno visualizzato le eventuali schede disponibili __Home__, __App__ e __Categorie__. Questa pagina mostrerà tutte le app disponibili per l'installazione. Se non è ancora stato registrato alcun dispositivo, verrà visualizzato un avviso di tipo **Non è possibile visualizzare alcuna app.** È possibile procedere selezionando __Dispositivi personali__.
+3. Dopo aver eseguito l'accesso, fare clic su **Menu** in alto a sinistra e selezionare **Dispositivi personali**.
 
  ![Screenshot della pagina di destinazione per il portale Web con il portale Web che mostra che non è possibile installare alcuna app, con il pulsante Dispositivi personali sotto.](./media/macOS_enroll_001_landing_page.png)
 
-4. Nella pagina __Dispositivi personali__ verrà visualizzato un elenco di dispositivi registrati o semplicemente un banner. Ciò dipende dal fatto di avere già un dispositivo macOS registrato o meno. Per registrare un dispositivo che non è elencato, selezionare il banner che indica __If your device is listed, tap here to identify it. You can also tap here to enroll your device if it is not listed__ (Se il dispositivo è elencato, toccare qui per identificarlo. È anche possibile toccare qui per registrare il dispositivo se non è elencato).
+4. Nella pagina __Dispositivi personali__ verrà visualizzato un elenco di dispositivi registrati o semplicemente un banner. Ciò dipende dal fatto di avere già un dispositivo macOS registrato o meno. Per registrare un dispositivo che non è elencato, selezionare il banner che indica __If your device is listed, tap here to identify it. You can also tap here to enroll your device if it is not listed__ (Se il dispositivo è elencato, toccare qui per identificarlo. È anche possibile toccare qui per registrare il dispositivo se non è elencato). Se non si hanno dispositivi registrati, verrà visualizzato il banner **Non è stato registrato alcun dispositivo. Registrare questo dispositivo toccando qui.**
 
   ![Screenshot della pagina Dispositivi personali con un paio di dispositivi non identificati sopra il banner con la richiesta di registrare i dispositivi non inclusi nell'elenco o di identificare quelli non identificati.](./media/macOS_enroll_002_tap_here_banner.png)
 
@@ -64,5 +61,7 @@ La possibilità di accedere alle app, ai dati e alle risorse dell'organizzazione
 9. Potrebbero essere visualizzati alcuni messaggi aggiuntivi da Mac con altri dettagli relativi al profilo o per chiedere conferma per procedere con l'__installazione__. Fare clic su __Continua__ e __Installa__ nelle varie finestre per procedere. Al termine dell'installazione, sarà possibile visualizzare il __profilo di gestione__ appena installato nell'elenco dei __profili di dispositivo__.
 
  ![Profilo macOS installato](./media/macOS_enroll_007_sysprefs_installed_profile.png)
+
+È possibile che alcuni profili risultino **Unverified** (Non verificato). Se sono profili aziendali, questo è normale.
 
 Serve ancora assistenza? Rivolgersi al personale del supporto tecnico dell'azienda. È possibile trovare le informazioni di contatto nel [sito Web del portale aziendale](https://portal.manage.microsoft.com).

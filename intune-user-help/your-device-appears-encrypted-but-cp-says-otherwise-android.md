@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
-ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
+ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Il dispositivo Android sembra essere crittografato, ma il portale aziendale indica il contrario
 
@@ -39,6 +39,15 @@ Alcuni dispositivi Android richiedono la creazione di un PIN di avvio per assicu
 ### <a name="downgrade-your-version-of-android"></a>Effettuare il downgrade della versione di Android
 
 Se il dispositivo offre la possibilità di effettuare il downgrade a Android 6.0+, procedere in tal senso. Il tentativo di effettuare il downgrade del dispositivo potrebbe comportare dei rischi di perdita di dati. In caso contrario, è consigliabile contattare il supporto tecnico dell'azienda per risolvere il problema. Le informazioni di contatto per il supporto tecnico dell'azienda sono disponibili nel [sito Web Portale aziendale](https://portal.manage.microsoft.com).
+
+### <a name="encrypt-the-entire-device"></a>Crittografare l'intero dispositivo
+
+Alcuni dispositivi consentono di scegliere se crittografare l'intero dispositivo o solo lo spazio usato. Scegliere l'opzione per crittografare l'intero dispositivo anziché solo lo spazio usato. Se è già stato crittografato solo lo spazio usato:
+
+1. [Rimuovere il dispositivo dal Portale aziendale](unenroll-your-device-from-intune-android.md)
+2. Decrittografare lo spazio usato
+3. Crittografare l'intero dispositivo
+4. Registrare nuovamente il dispositivo
 
 ## <a name="specific-manufacturer-issues"></a>Problemi di produttori specifici
 

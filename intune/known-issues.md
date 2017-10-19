@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bddab9000bfe609856b8e003f9bd4c3802f6e6b
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 534441a7ae337f99a251831b456ea5c295184bec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemi noti in Microsoft Intune
 
@@ -53,7 +53,7 @@ Dato che queste funzionalità non possono essere gestite sia dalla console di In
 - Le disabilita nel portale classico
 - Le abilita nel portale di Azure  
 
-Dall'11 settembre 2017, la migrazione di queste funzionalità è unita nella migrazione primaria ad Azure. Se è già stata eseguita la migrazione dell'account per usare il portale di Azure, questa migrazione secondaria verrà eseguita tra l'11 e il 22 settembre 2017. La migrazione dell'account verrà iniziata e completata nell'arco dello stesso giorno. La migrazione può richiedere fino a 6 ore da quando queste funzionalità vengono disabilitate nel portale classico di Intune.
+A partire dal 22 settembre 2017, la migrazione di queste funzionalità verrà unita alla migrazione primaria in Azure. Se è già stata eseguita la migrazione dell'account per usare il portale di Azure, questa migrazione secondaria a questo punto deve essere stata completata. In caso contrario, queste funzionalità verranno migrate in Azure entro novembre. La migrazione dell'account verrà iniziata e completata nell'arco dello stesso giorno. La migrazione può richiedere fino a 6 ore da quando queste funzionalità vengono disabilitate nel portale classico di Intune.
 
 Se queste funzionalità di Intune sono attualmente gestite nel portale di Azure, tenere presente quanto segue:
 

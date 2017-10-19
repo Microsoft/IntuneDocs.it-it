@@ -5,7 +5,7 @@ keywords: Data warehouse di Intune
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: 0b3436a22543eb07cedb0780984766bcb7faa284
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Connettersi al data warehouse con Power BI
 
@@ -34,13 +34,13 @@ ms.lasthandoff: 08/11/2017
   -  Aggiornamenti software
   -  Log inventario del dispositivo
 
-Sono anche evidenziate le tendenze per la registrazione, la conformità, il profilo di configurazione dispositivo e gli aggiornamenti software. I report e i grafici di esempio applicano filtri semplici all'area di disegno. Per usare i filtri avanzati, vedere il riquadro **Filtro** in Power BI Desktop. 
+Sono anche evidenziate le tendenze per la registrazione, la conformità, il profilo di configurazione dispositivo e gli aggiornamenti software. I report e i grafici di esempio applicano filtri semplici all'area di disegno. Per usare i filtri avanzati, vedere il riquadro **Filtro** in Power BI Desktop.
 
 La procedura seguente illustra come scaricare il file di Power BI e come usare il collegamento OData con Power BI.
 
 ## <a name="install-power-bi"></a>Installare Power BI
 
-Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power BI Desktop da: [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop) 
+Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power BI Desktop da: [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop)
 
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Caricare i dati e i report usando il file di Power BI (PBIX)
 
@@ -80,5 +80,5 @@ Con un client autenticato in Azure AD, l'URL di OData si connette all'endpoint R
 È possibile trovare le risposte alle domande sull'ambiente, ad esempio il numero di dispositivi registrati per ogni giorno nell'ultima settimana. È possibile esaminare a fondo il popolamento di tenant e client Intune con i report usando il file di Power BI del data warehouse di Intune (pbix) recuperato dal pannello in Azure. Tuttavia, Intune fornisce una serie di altri modi per estendere o riutilizzare i dati. È possibile fare molto di più con Power BI e l'API data warehouse di Intune, ad esempio:
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
- -  I dati del tenant sono organizzati in modo da contribuire all'estrazione di informazioni dettagliate dai dati. Per altre informazioni sull'organizzazione dei dati, vedere [Modello di dati del data warehouse](reports-ref-data-model.md). 
+ -  I dati del tenant sono organizzati in modo da contribuire all'estrazione di informazioni dettagliate dai dati. Per altre informazioni sull'organizzazione dei dati, vedere [Modello di dati del data warehouse](reports-ref-data-model.md).
  -  È anche possibile accedere ai dati da un'interfaccia RESTful e incorporarli nell'app. Per altre informazioni, vedere [Recuperare dati dall'API data warehouse con un client REST](reports-proc-data-rest.md).
