@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ddb9b939b695f8612c02a2a25f4670e28c556c44
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
+ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Come monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune
 
@@ -44,4 +44,4 @@ Eseguire una delle operazioni seguenti per ottenere altre informazioni sulle app
 ## <a name="monitor"></a>Monitoraggio
 
 - **Stato dell'installazione del dispositivo**: fornisce informazioni dettagliate per ogni dispositivo cui è stata assegnata l'app selezionata, tra cui il nome del dispositivo, il sistema operativo, la data e l'ora dell'ultima archiviazione del dispositivo in Intune e lo stato dell'installazione dell'app.
-- **Stato dell'installazione dell'utente**: fornisce informazioni dettagliate per l'utente cui è stata assegnata l'app selezionata, tra cui il numero di installazioni dell'app che l'utente ha su tutti i dispositivi e gli eventuali errori di installazione.
+- **Stato dell'installazione dell'utente**: offre informazioni dettagliate per l'utente cui è stata assegnata l'app selezionata, tra cui il numero di installazioni dell'app che l'utente ha su tutti i dispositivi e gli eventuali errori di installazione.
