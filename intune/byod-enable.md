@@ -25,7 +25,7 @@ Questo argomento fornisce un flusso di lavoro generale per la configurazione di 
 
 Il flusso di lavoro è suddiviso nei tre processi seguenti. È possibile personalizzare gli aspetti di ogni processo in base ai requisiti dell'organizzazione.
 
--   **[Registrare i dispositivi e verificare la conformità](#enroll-devices-and-check-for-compliance) ** descrive come consentire agli utenti di registrare i propri dispositivi personali per la gestione con Intune. Intune gestisce dispositivi iOS, Mac OS, Android e Windows. In questa sezione viene inoltre descritto come distribuire i criteri ai dispositivi e verificare che soddisfino i requisiti di sicurezza di base.
+-   **[Registrare i dispositivi e verificare la conformità](#enroll-devices-and-check-for-compliance)**  descrive come consentire agli utenti di registrare i propri dispositivi personali per la gestione con Intune. Intune gestisce dispositivi iOS, Mac OS, Android e Windows. In questa sezione viene inoltre descritto come distribuire i criteri ai dispositivi e verificare che soddisfino i requisiti di sicurezza di base.
 
 - **[Fornire l'accesso alle risorse aziendali](#provide-access-to-company-resources)** illustra come è possibile consentire agli utenti di accedere alle risorse aziendali in modo semplice e sicuro. Questa operazione viene eseguita distribuendo i profili di accesso ai dispositivi gestiti. In questa sezione viene inoltre spiegato come gestire con Intune le distribuzioni di app acquistate con Volume Purchase Program.
 
