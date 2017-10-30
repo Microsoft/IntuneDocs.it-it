@@ -15,18 +15,19 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c749b72949399dbe709b8ac5554cd919e2b09bc
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Impostazioni delle restrizioni dei dispositivi Android for Work in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Impostazioni del profilo di lavoro
-- **Condivisione dei dati tra i profili di lavoro e personali**: usare questa impostazione per controllare se le app nel profilo di lavoro possono condividere dati con le app nel profilo personale. Questa impostazione controlla le azioni di condivisione all'interno delle applicazioni (ad esempio, l'opzione **Condividi...** nell'app browser Chrome) e non si applica al comportamento Copia/Incolla degli Appunti. Diversamente dalle [impostazioni dei criteri di protezione delle app](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), le impostazioni di restrizione dei dispositivi sono gestite dal portale di Azure e usano la partizione del profilo di lavoro di Android for Work per isolare le applicazioni gestite. È possibile scegliere tra:
+-   **Copia e incolla tra il profilo di lavoro e il profilo personale**: controlla le operazioni di copia e incolla tra app aziendali e personali. Scegliere **Blocca** per abilitare il blocco. Scegliere **Non configurato** per disabilitare il blocco.
+- **Condivisione dei dati tra i profili di lavoro e personali**: usare questa impostazione per controllare se le app nel profilo di lavoro possono condividere dati con le app nel profilo personale. Questa impostazione controlla le azioni di condivisione all'interno delle applicazioni (ad esempio, l'opzione **Condividi...** nell'app browser Chrome) e non si applica al comportamento Copia/Incolla degli Appunti. Diversamente dalle [impostazioni dei criteri di protezione delle app](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), le impostazioni di restrizione dei dispositivi sono gestite dal portale di Intune e usano la partizione del profilo di lavoro di Android for Work per isolare le applicazioni gestite. È possibile scegliere tra:
     - **Restrizioni predefinite per la condivisione**: questa impostazione è il comportamento di condivisione predefinito del dispositivo che varia a seconda della versione di Android in esecuzione. Per impostazione predefinita, la condivisione dal profilo personale al profilo di lavoro è consentita. Per impostazione predefinita, la condivisione dal profilo di lavoro al profilo personale è bloccata. Questa impostazione impedisce la condivisione di dati dal profilo di lavoro al profilo personale. Google non offre un modo per bloccare la condivisione dal profilo personale al profilo di lavoro nei dispositivi che eseguono la versione 6.0 e versioni successive.   
     - **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**: usare questa opzione per abilitare la funzionalità Android predefinita che consente la condivisione dal profilo personale al profilo di lavoro. Quando questa opzione è abilitata, una richiesta di condivisione da un'app nel profilo personale supporta la condivisione con app nel profilo di lavoro. Questa impostazione rappresenta il comportamento predefinito per i dispositivi Android che eseguono versioni precedenti alla 6.0.
     - **Consenti la condivisione tra limiti**: abilita la condivisione tra i limiti del profilo di lavoro in entrambe le direzioni. Quando si seleziona questa impostazione, le app nel profilo di lavoro possono condividere dati con app senza badge nel profilo personale. Usare questa impostazione con cautela perché consente la condivisione tra le app gestite nel profilo di lavoro e le app nella parte non gestita del dispositivo.

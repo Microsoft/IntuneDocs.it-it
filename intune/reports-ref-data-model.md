@@ -14,17 +14,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9257af29c65dbe27667738abc8ee06203177124f
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: d52e240763263ac4f761a8635ee6694a45168354
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="data-warehouse-data-model"></a>Modello di dati del data warehouse
 
 Il data warehouse di Intune esegue il campionamento giornaliero dei dati per fornire una visualizzazione cronologia dell'ambiente per dispositivi mobili in continua evoluzione.
 
-I dati estratti dal tenant vengono aggiunti a un data warehouse. Il warehouse è un set di entità e relazioni che sono significative per il tipo di domande che si vogliono chiedere. Ad esempio, è possibile esaminare il numero di installazioni di un'applicazione Android sviluppata internamente per ogni giorno dell'ultima settimana per valutare se è presente una tendenza crescente di installazioni. La struttura del data warehouse consente di ottenere informazioni nell'ambiente per dispositivi mobili. A loro volta, gli strumenti di analisi come Microsoft Power BI possono uszare il modello di dati Data Warehouse per creare visualizzazioni e dashboard dinamici.
+I dati estratti dal tenant vengono aggiunti a un data warehouse. Il warehouse è un set di entità e relazioni che sono significative per il tipo di domande che si vogliono chiedere. Ad esempio, è possibile esaminare il numero di installazioni di un'applicazione Android sviluppata internamente per ogni giorno dell'ultima settimana per valutare se è presente una tendenza crescente di installazioni. La struttura del data warehouse consente di ottenere informazioni nell'ambiente per dispositivi mobili. A loro volta, gli strumenti di analisi come Microsoft Power BI possono usare il modello di dati del data warehouse per creare visualizzazioni e dashboard dinamici.
 
 La struttura del data warehouse di Intune usa un modello di schema a stella. Lo schema a stella organizza i fatti sulla dimensione del tempo. Un *fatto* nel contesto del modello è una misura quantitativa quale il numero di dispositivi, il numero di app o la data/ora di registrazione. Una *dimensione* nel contesto del modello è un set di categorie con le rispettive relazioni gerarchiche. Ad esempio, i giorni sono raggruppati in mesi e i mesi sono raggruppati in anni. Un modello di schema a stella è ottimizzato per l'analisi di dati e la flessibilità per poter creare i report necessari a comprendere l'ambiente per dispositivi mobili in continua evoluzione.
 
@@ -44,6 +44,7 @@ I set di entità sono raccolte di entità denominate nel modello di dati. Questi
   -  [Dispositivi](reports-ref-devices.md)
   -  [Applicazione](reports-ref-application.md)
   -  [Criteri](reports-ref-policy.md)
+  -  [Associazione utente-dispositivo](reports-ref-userdeviceassociations.md)
 
 <!-- ## Data Model relationships
 

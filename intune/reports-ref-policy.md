@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6af0ff1f463c153e62f6df63ce811076c5f692f2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-policy-entities"></a>Informazioni di riferimento per le entità della categoria Policy
 
@@ -35,14 +35,14 @@ l'entità **Policy** elenca profili di configurazione del dispositivo, profili d
 
 | Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
-| PolicyKey |Chiave univoca per rappresentare i criteri nel data warehouse |123 |
-| PolicyId |Identificatore univoco del criterio nel data warehouse |b66bc706-ffff-7437-0340-032819502773 |
-| PolicyName |Nome del criterio |"Windows 10 Baseline" |
+| PolicyKey |Chiave univoca per rappresentare i criteri nel data warehouse. |123 |
+| PolicyId |Identificatore univoco del criterio nel data warehouse. |b66bc706-ffff-7437-0340-032819502773 |
+| PolicyName |Nome del criterio. |"Windows 10 Baseline" |
 | PolicyVersion |Versione del criterio. Quando il criterio viene modificato o cambiato, viene creata una versione più recente. |1, 2, 3 |
-| IsDeleted |Indica se il record Policy è stato aggiornato.  True: il criterio ha un nuovo record con i campi aggiornati. False: l'ultimo record per il criterio. |True/False |
-| StartDateInclusiveUTC |Data e ora in formato UTC in cui il criterio è stato creato nel data warehouse |23/11/2016 12.00.00 |
-| DeletedDateUTC |Data e ora in formato UTC quando IsDeleted è diventato True |23/11/2016 12.00.00 |
-| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica del criterio nel data warehouse |23/11/2016 12.00.00 |
+| IsDeleted |Indica se il record Policy è stato aggiornato.  <br>True: il criterio ha un nuovo record con i campi aggiornati. <br>False: l'ultimo record per il criterio. |True/False |
+| StartDateInclusiveUTC |Data e ora in formato UTC della creazione del criterio nel data warehouse. |23/11/2016 12.00.00 |
+| DeletedDateUTC |Data e ora in formato UTC in cui IsDeleted è stato impostato su True. |23/11/2016 12.00.00 |
+| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica del criterio nel data warehouse. |23/11/2016 12.00.00 |
 
 ## <a name="policytype"></a>PolicyType
 
@@ -50,9 +50,9 @@ L'entità **PolicyType** elenca i tipi di profilo di configurazione del disposit
 
 | Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
-| PolicyTypeId |Identificatore univoco del criterio nel sistema di origine |123 |
-| PolicyTypeKey |Identificatore univoco del criterio nel data warehouse |1 |
-| PolicyTypeName |Nome del tipo di criterio. |Criteri di conformità di Windows 10 |
+| PolicyTypeId |Identificatore univoco del criterio nel sistema di origine. |123 |
+| PolicyTypeKey |Identificatore univoco del criterio nel data warehouse. |1 |
+| PolicyTypeName |Nome del tipo di criterio. |Criteri di conformità di Windows 10. |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
@@ -60,11 +60,11 @@ L'entità **DeviceConfigurationProfileDeviceActivity** elenca il numero di dispo
 
 | Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
-| DateKey |Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse |20160703 |
-| Pending |Numero di dispositivi univoci in sospeso |123 |
-| Operazione completata |Numero di dispositivi univoci in stato completato |12 |
-| Errore |Numero di dispositivi univoci in stato di errore |10 |
-| Failed |Numero di dispositivi univoci in stato non riuscito |2 |
+| DateKey |Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse. |20160703 |
+| Pending |Numero di dispositivi univoci in sospeso. |123 |
+| Operazione completata |Numero di dispositivi univoci in stato completato. |12 |
+| Errore |Numero di dispositivi univoci in stato di errore. |10 |
+| Failed |Numero di dispositivi univoci in stato non riuscito. |2 |
 
 ## <a name="userconfiguration"></a>UserConfiguration
 
@@ -72,11 +72,11 @@ L'entità **UserConfigurationProfileDeviceActivity** elenca il numero di utenti 
 
 | Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
-| DateKey |Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse |20160703 |
-| Pending |Numero di utenti univoci in sospeso |123 |
-| Operazione completata |Numero di utenti univoci in stato completato |12 |
-| Errore |Numero di utenti univoci in stato di errore |10 |
-| Failed |Numero di utenti univoci in stato non riuscito |2 |
+| DateKey |Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse. |20160703 |
+| Pending |Numero di utenti univoci in sospeso. |123 |
+| Operazione completata |Numero di utenti univoci in stato completato. |12 |
+| Errore |Numero di utenti univoci in stato di errore. |10 |
+| Failed |Numero di utenti univoci in stato non riuscito. |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -84,10 +84,10 @@ L'entità **PolicyTypeActivity** elenca il numero cumulativo di dispositivi nell
 
 | Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
-| DateKey |Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse |20160703 |
-| PolicyKey |Chiave dei criteri, può essere unita con i criteri per ottenere il policyName |Windows 10 baseline |
-| PolicyTypeKey |Tipo di chiave dei criteri, può essere unita con il tipo di criterio per ottenere il nome del tipo di criterio |Criteri Windows10Compliance |
-| Pending |Numero di dispositivi univoci in sospeso |123 |
-| Operazione completata |Numero di dispositivi univoci in stato completato |12 |
-| Errore |Numero di dispositivi univoci in stato di errore |10 |
-| Fail- |Numero di dispositivi univoci in stato non riuscito |2 |
+| DateKey |Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse. |20160703 |
+| PolicyKey |Chiave dei criteri, può essere unita con i criteri per ottenere policyName. |Windows 10 baseline |
+| PolicyTypeKey |Tipo di chiave dei criteri, può essere unita con il tipo di criterio per ottenere il nome del tipo di criterio. |Criteri di conformità di Windows 10 |
+| Pending |Numero di dispositivi univoci in sospeso. |123 |
+| Operazione completata |Numero di dispositivi univoci in stato completato. |12 |
+| Errore |Numero di dispositivi univoci in stato di errore. |10 |
+| Fail- |Numero di dispositivi univoci in stato non riuscito. |2 |
