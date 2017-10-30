@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f3c76f558987cd03a4e6434243b31908cd083807
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ba3a947060877fe704d4980cb1f25f34f110ff1f
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Installare Mobile Threat Defense nel dispositivo iOS
 
@@ -31,6 +31,17 @@ Prima di poter accedere ai dati aziendali, viene richiesto dal supporto tecnico 
 * [SandBlast Mobile Protect](you-are-prompted-to-install-sandblast-ios.md)
 * [Zimperium zIPS](you-are-prompted-to-install-zips-ios.md)
 
-**Se l'installazione non riesce**
+## <a name="additional-information-your-company-can-see"></a>Informazioni aggiuntive visualizzabili dall'azienda
+
+Mobile Threat Defense protegge i dispositivi degli utenti aziendali dalle app che sottraggono informazioni riservate dell'azienda. Per fornire questo tipo di protezione il servizio Mobile Threat Defense usato dall'azienda deve disporre di informazioni aggiuntive sulle app presenti nei dispositivi. L'azienda non può visualizzare i dati presenti nelle app personali. Tutte le app sul dispositivo vengono aggiunte agli [elementi che l'azienda può visualizzare](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) se usa il servizio Mobile Threat Defense. Le parti dell'app che l'azienda può visualizzare sono:
+
+*   Nome app
+* ID dell'app: nome univoco che identifica l'app nell'App Store
+*   Numero di versione e versione breve dell'app: numeri di versione specifici di un'app
+* Bundle e dimensioni dinamiche dell'app: quantità di spazio usato dall'app nel dispositivo
+* Validità dell'app: se un'app è approvata per l'uso
+*   Stato di gestione dell'app: se si tratta di un'app gestita dall'azienda o di un'app personale
+
+## <a name="if-the-installation-doesnt-work"></a>Se l'installazione non riesce
 
 Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

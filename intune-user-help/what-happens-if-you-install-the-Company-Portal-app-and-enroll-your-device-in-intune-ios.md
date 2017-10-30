@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 8d697a18ca812b9ccd39a5678dce7f7692aa97e5
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo iOS o macOS in Intune?
 
@@ -46,7 +46,7 @@ Quando il dispositivo è registrato, il supporto tecnico dell'azienda può:
 
 -   Richiedere di accettare i termini e le condizioni.
 
--   Abilitare o disabilitare la fotocamera sul dispositivo per impedire lo scatto di foto di dati riservati dell'azienda.
+-   Disabilitare la fotocamera sul dispositivo per impedire lo scatto di foto di dati riservati dell'azienda.
 
 -   Abilitare o disabilitare l'esplorazione Web sul dispositivo.
 

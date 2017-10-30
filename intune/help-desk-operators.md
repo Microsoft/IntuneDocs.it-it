@@ -1,12 +1,12 @@
 ---
-title: Portale del supporto tecnico per la risoluzione dei problemi
+title: Portale del Supporto tecnico per la risoluzione dei problemi | Microsoft Docs
 titlesuffix: Azure portal
 description: Il personale del supporto tecnico usa il portale per risolvere i problemi tecnici degli utenti
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,58 +14,228 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Il portale di risoluzione dei problemi consente agli operatori del supporto tecnico e agli amministratori di Intune di visualizzare le informazioni degli utenti per rispondere alle richieste di assistenza degli utenti. Le organizzazioni con operatori del supporto tecnico possono assegnare il ruolo **Help Desk Operator** (Operatore del supporto tecnico) a un gruppo di utenti che possono quindi usare il pannello Risoluzione dei problemi per aiutare gli utenti.
+Il portale di risoluzione dei problemi consente agli operatori del supporto tecnico e agli amministratori di Intune di visualizzare le informazioni degli utenti per rispondere alle richieste di assistenza degli utenti. Le organizzazioni che dispongono di help desk possono assegnare il ruolo di **operatore di help desk** a un gruppo di utenti. I membri del ruolo operatore di help desk possono usare il pannello **Risoluzione dei problemi**.
 
-Ad esempio, quando un utente contatta il supporto tecnico per un problema tecnico di Intune, l'operatore del supporto tecnico immette il nome dell'utente. Intune Mostra dati utili che consentono di risolvere molti problemi di livello 1 tra cui:
+Per istruzioni sull'aggiunta di un ruolo operatore di help desk, vedere [Controllo degli accessi in base al ruolo (RBAC) con Intune](/intune/role-based-access-control).
+
+Quando un utente contatta l'help desk per un problema tecnico di Intune, l'operatore di help desk immette il nome dell'utente. Intune visualizza dati utili che consentono di risolvere molti problemi di livello 1, tra cui:
+
 - Stato utente
 - Assignments
 - Problemi di conformità
 - Un dispositivo che non risponde
--   Un dispositivo che non riceve le impostazioni VPN o Wi-Fi
--   Un errore di installazione dell'app
+- Un dispositivo che non riceve le impostazioni VPN o Wi-Fi
+- Un errore di installazione dell'app
 
-## <a name="add-help-desk-operators"></a>Aggiungere operatori del supporto tecnico
-Come amministratore di Intune, è possibile assegnare il ruolo Help Desk Operator (Operatore del supporto tecnico) a un gruppo di utenti. I membri del gruppo possono usare il portale di Azure per risolvere i problemi degli utenti. Ogni operatore del supporto tecnico deve avere una licenza di Intune per accedere al portale di Azure. Informazioni su come [assegnare le licenze di Intune](licenses-assign.md).
+## <a name="to-review-troubleshooting-details"></a>Per esaminare le informazioni sulla risoluzione dei problemi
 
-Per aggiungere utenti al gruppo del supporto tecnico:
-1. [Aggiungere utenti a Intune](users-add.md) se necessario.
-2. [Creare un gruppo di operatori del supporto tecnico](groups-add.md) e aggiungere utenti al gruppo.
-3. [Assegnare il ruolo Operatore help desk per il controllo degli accessi in base al ruolo](role-based-access-control.md#built-in-roles).
+Nel pannello Risoluzione dei problemi scegliere **Selezionare l'utente** per visualizzare le informazioni relative all'utente. Le informazioni utente sono utili per definire lo stato corrente degli utenti e dei loro dispositivi.  
 
-  ![Screenshot del portale di Azure con i ruoli di Intune evidenziati e un elenco dei ruoli predefiniti, incluso Help Desk Operator (Operatore del supporto tecnico)](./media/help-desk-user-add.png). È anche possibile [creare un ruolo personalizzato](role-based-access-control.md#custom-roles) e modificarlo per consentire l'accesso agli operatori del supporto tecnico.  Per risolvere i problemi degli utenti, gli operatori del supporto tecnico devono avere le autorizzazioni seguenti:
-    - MobileApps: Lettura
-    - ManagedApps: Lettura
-    - ManagedDevices: Lettura
-    - Organization: Lettura
-    - DeviceCompliancePolices: Lettura
-    - DeviceConfigurations: Lettura
+1. Accedere al portale Azure.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+3. Nel pannello **Intune** scegliere **Risoluzione dei problemi**.
+4. Fare clic su **Selezionare l'utente**.
+5. Selezionare un utente digitando il nome o l'indirizzo di posta elettronica. Fare clic su **Seleziona**. Le informazioni di risoluzione dei problemi per l'utente vengono visualizzate nel pannello Risoluzione dei problemi. Le tabelle seguenti descrivono tali informazioni.
 
-4. Per concedere agli operatori del supporto tecnico l'autorizzazione per visualizzare l'integrità del servizio e i ticket di supporto aperti per Intune, [concedere agli utenti autorizzazioni di amministratore](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal) come **amministratore del servizio**. Non assegnare l'autorizzazione di **amministratore del servizio Intune** perché questo ruolo della directory ha più diritti di quelli necessari per gli operatori del supporto tecnico.
+> [!Note]  
+> È anche possibile accedere al pannello **Risoluzione dei problemi** digitando il seguente indirizzo nel browser: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
-## <a name="access-the-troubleshooting-portal"></a>Accedere al portale per la risoluzione dei problemi
+## <a name="areas-of-troubleshooting-dashboard"></a>Aree del dashboard Risoluzione dei problemi
 
-Il personale del supporto tecnico e gli amministratori di Intune possono accedere al portale per la risoluzione dei problemi in due modi:
-- Aprire [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) in un Web browser per visualizzare solo il portale per la risoluzione dei problemi.
-  ![Screenshot della console di risoluzione dei problemi](./media/help-desk-console.png)
-- Accedere al portale di Azure, scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune** e quindi passare a **Guida e supporto tecnico** > **Risoluzione dei problemi**.
+È possibile usare il pannello **Risoluzione dei problemi** per esaminare le informazioni dell'utente. 
 
-Fare clic su **Selezionare l'utente** per visualizzare un utente e i relativi dettagli.
+![](/intune/media/troubleshooting-dash.png)
 
-## <a name="use-the-troubleshooting-portal"></a>Usare il portale per la risoluzione dei problemi
+| Area | Nome | Descrizione |
+| ---  | ---  | ---         |
+| 1.   | Stato dell'account  | Mostra lo stato del tenant di Intune corrente come **Attivo** o **Inattivo**.       |
+| 2.   | Selezione utente  | Nome dell'utente attualmente selezionato. Fare clic su **Cambia utente** per scegliere un nuovo utente.       |
+| 3.   | Stato utente  | Visualizza lo stato della licenza Intune dell'utente, il numero di dispositivi, la conformità di ciascun dispositivo, il numero di app e la conformità delle app.       |
+| 4.   | Informazioni utente  | Usare l'elenco per selezionare i dettagli da esaminare nel pannello. <br>È possibile selezionare: <ul><li>App per dispositivi mobili<li>Criteri di protezione delle app<li>Criteri di conformità<li> Criteri di configurazione</ul>      |
+| 5.   | Appartenenza al gruppo  | Yadda       |
 
-Nel portale per la risoluzione dei problemi è possibile scegliere **Seleziona utente** per visualizzare le informazioni relative a un utente. Le informazioni utente sono utili per definire lo stato corrente degli utenti e dei loro dispositivi. Il portale per la risoluzione dei problemi mostra i seguenti dettagli per la risoluzione dei problemi:
-- **Stato dell'account**
-- **Stato utente**
-- **Dispositivi** con le azioni per i dispositivi
-- **Appartenenza a gruppi**
-- **Stato protezione app**
+## <a name="mobile-apps-reference"></a>Riferimento per le app per dispositivi mobili
+
+App in esecuzione nei dispositivi (o dispositivi di proprietà degli utenti) gestiti da Intune e Azure Active Directory (AD).
+
+### <a name="properties"></a>Proprietà
+
+Proprietà delle app per dispositivi mobili.
+
+| Proprietà      | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nome          | Nome dell'applicazione.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Sistema operativo            | Sistema operativo installato nel dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Tipo          | È possibile scegliere un tipo di assegnazione per ciascuna applicazione.  <br> **Disponibile**: gli utenti installano l'app dall'app Portale aziendale o dal relativo sito Web.  <br> **Non applicabile**: l'app non è installata o visualizzata nel portale aziendale. <br> **Disinstalla**: l'applicazione è disinstallata sui dispositivi nei gruppi selezionati.  <br> **Available with or without enrollment** (Disponibile con o senza registrazione): assegnare questa app a gruppi di utenti i cui dispositivi non sono registrati con Intune. |
+| Ultima modifica | Nome del tipo di dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+
+### <a name="devices"></a>Dispositivi
+
+Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
+
+| Proprietà           | Descrizione                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nome dispositivo        | Nome del tipo di dispositivo.                                                                                                     |
+| Gestito da         | Timestamp della modifica del criterio.                                                                                              |
+| Tipo di aggiunta ad Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Proprietà          | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Conforme con Intune   | Nome del tipo di dispositivo.                                                                                                     |
+| Conforme con Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Sistema operativo                 | Sistema operativo installato nel dispositivo.                                                                                       |
+| Versione sistema operativo         | Numero di versione del sistema operativo del dispositivo.                                                                                  |
+| Ultima archiviazione      | Nome del tipo di dispositivo.                                                                                                     |
+
+### <a name="app-protection-status"></a>Stato protezione app
+
+I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Ciò garantisce un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+
+| Proprietà    | Descrizione                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Stato      | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Nome app    | Nome dell'applicazione.                                                           |
+| Nome dispositivo | Nome del tipo di dispositivo.                                                       |
+| Tipo di dispositivo | Nome del tipo di dispositivo.                                                       |
+| Criteri    | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Ultima sincronizzazione   | Timestamp dell'ultima sincronizzazione del dispositivo con Intune.                   |
+
+## <a name="app-protection-policies-reference"></a>Riferimento dei criteri di protezione app
+
+I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Ciò garantisce un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+
+### <a name="properties"></a>Proprietà
+
+La tabella riepiloga lo stato dei criteri di protezione app per i dispositivi gestiti da Intune.
+
+| Proprietà    | Descrizione                                                                                                                                |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nome        | Nome dell'applicazione.                                                                                                        |
+| Distribuito    | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Piattaforma    | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Registrazione  | Nome del tipo di dispositivo.                                                                                                     |
+| Ultimo aggiornamento | Timestamp della modifica del criterio.                                                                                              |
+
+### <a name="devices"></a>Dispositivi
+
+Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
+
+| Proprietà           | Testo                                                                                                                                |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nome periferica        | Nome del tipo di dispositivo.                                                                                                     |
+| Gestito da         | Timestamp della modifica del criterio.                                                                                              |
+| Tipo di aggiunta ad Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Proprietà          | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Conforme con Intune   | Nome del tipo di dispositivo.                                                                                                     |
+| Conforme con Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Conforme con Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Sistema operativo                 | Sistema operativo installato nel dispositivo.                                                                                       |
+| Versione sistema operativo         | Numero di versione del sistema operativo del dispositivo.                                                                                  |
+| Ultima archiviazione      | Nome del tipo di dispositivo.                                                                                                     |
+
+## <a name="compliance-policies-reference"></a>Riferimento dei criteri di conformità
+
+Questi criteri garantiscono che i dispositivi usati per accedere alle app e ai dati aziendali rispettino alcune regole, come l'uso di un PIN per l'accesso al dispositivo e la crittografia dei dati archiviati nel dispositivo stesso.
+
+### <a name="properties"></a>Proprietà
+
+Proprietà dei criteri di conformità.
+
+| Proprietà      | Descrizione                                                                                                                         |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Assegnazione    | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Nome          | Nome dell'applicazione.                                                                                                        |
+| Sistema operativo            | Sistema operativo installato nel dispositivo.                                                                                       |
+| Tipo di criteri   | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Ultima modifica | Nome del tipo di dispositivo.                                                                                                     |
+
+### <a name="devices"></a>Dispositivi
+
+Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
+
+| Proprietà           | Descrizione                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nome dispositivo        | Nome del tipo di dispositivo.                                                                                                     |
+| Gestito da         | Timestamp della modifica del criterio.                                                                                              |
+| Tipo di aggiunta ad Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Proprietà          | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Conforme con Intune   | Nome del tipo di dispositivo.                                                                                                     |
+| Conforme con Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Sistema operativo                 | Sistema operativo installato nel dispositivo.                                                                                       |
+| Versione sistema operativo         | Numero di versione del sistema operativo del dispositivo.                                                                                  |
+| Ultima archiviazione      | Nome del tipo di dispositivo.                                                                                                     |
+
+### <a name="app-protection-policies"></a>Criteri di protezione delle app
+
+I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Ciò garantisce un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+
+| Proprietà    | Descrizione                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Stato      | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Nome app    | Nome dell'applicazione.                                                           |
+| Nome dispositivo | Nome del tipo di dispositivo.                                                       |
+| Tipo di dispositivo | Nome del tipo di dispositivo.                                                       |
+| Criteri    | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Ultima sincronizzazione   | Timestamp dell'ultima sincronizzazione del dispositivo con Intune.                   |
+
+## <a name="configuration-policies-reference"></a>Riferimento dei criteri di configurazione
+
+I criteri di configurazione sono disponibili per app per dispositivi mobili con configurazioni specifiche del fornitore. 
+
+### <a name="properties"></a>Proprietà
+
+Proprietà dei criteri di configurazione.
+
+| Proprietà      | Descrizione                                                                                                                         |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Assegnazione    | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Nome          | Nome dell'applicazione.                                                                                                        |
+| Sistema operativo            | Sistema operativo installato nel dispositivo.                                                                                       |
+| Tipo di criteri   | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Ultima modifica | Nome del tipo di dispositivo.                                                                                                     |
+
+### <a name="devices"></a>Dispositivi
+
+Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
+
+| Proprietà           | Descrizione                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nome dispositivo        | Nome del tipo di dispositivo.                                                                                                     |
+| Gestito da         | Timestamp della modifica del criterio.                                                                                              |
+| Tipo di aggiunta ad Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Proprietà          | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Conforme con Intune   | Nome del tipo di dispositivo.                                                                                                     |
+| Conforme con Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Sistema operativo                 | Sistema operativo installato nel dispositivo.                                                                                       |
+| Versione sistema operativo         | Numero di versione del sistema operativo del dispositivo.                                                                                  |
+| Ultima archiviazione      | Nome del tipo di dispositivo.                                                                                                     |
+
+
+### <a name="app-protection-policies"></a>Criteri di protezione delle app
+
+I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Ciò garantisce un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+
+| Proprietà    | Descrizione                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Stato      | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Nome app    | Nome dell'applicazione.                                                           |
+| Nome dispositivo | Nome del tipo di dispositivo.                                                       |
+| Tipo di dispositivo | Nome del tipo di dispositivo.                                                       |
+| Criteri    | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Ultima sincronizzazione   | Timestamp dell'ultima sincronizzazione del dispositivo con Intune.                   |
+
+## <a name="next-steps"></a>Passaggi successivi
+
+È possibile ottenere altre informazioni sull'uso del controllo degli accessi in base al ruolo (RBAC) per definire i ruoli nel dispositivo aziendale, gestire app per dispositivi mobili e implementare attività di protezione dati. Per altre informazioni, vedere [Controllo degli accessi in base al ruolo (RBAC) con Intune](/intune/role-based-access-control).
+
+È possibile ottenere informazioni sui problemi noti in Microsoft Intune. Per altre informazioni, vedere [Problemi noti in Microsoft Intune](/intune/known-issues).
+
+È possibile apprendere come creare un ticket di supporto e ottenere supporto quando è necessario. [Ottenere supporto](/intune/get-support).

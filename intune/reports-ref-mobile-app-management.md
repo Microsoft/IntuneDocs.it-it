@@ -14,11 +14,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 44358d68a653760804f11668ab64d30ebf7ae9eb
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 32b5f3515c0b77ea8f411c1c1f42e7b44669ca23
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Informazioni di riferimento per le entità di gestione delle app mobili (MAM)
 
@@ -38,13 +38,13 @@ L'entità **MamApplication** elenca le app Line-of-Business (LOB) gestite attrav
 
 | Proprietà | Descrizione | Esempio |
 |---------|------------|--------|
-| ApplicationKey |Identificatore univoco dell'app MAM nel data warehouse |123 |
-| ApplicationName |Nome dell'app MAM |"Word" |
-| ApplicationId |ID applicazione dell'app MAM |b66bc706-ffff-7437-0340-032819502773 |
-| IsDeleted |Indica se il record dell'app MAM è stato aggiornato. True: l'app MAM ha un nuovo record con i campi aggiornati in questa tabella. False: l'ultimo record per questa app MAM. |True/False |
-| StartDateInclusiveUTC |Data e ora in formato UTC in cui l'app MAM è stata creata nel data warehouse |23/11/2016 12.00.00 |
-| DeletedDateUTC |Data e ora in formato UTC quando IsDeleted è diventato True |23/11/2016 12.00.00 |
-| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica dell'app MAM nel data warehouse |23/11/2016 12.00.00 |
+| ApplicationKey |Identificatore univoco dell'app MAM nel data warehouse. |123 |
+| ApplicationName |Nome dell'app MAM. |"Word" |
+| ApplicationId |ID applicazione dell'app MAM. |b66bc706-ffff-7437-0340-032819502773 |
+| IsDeleted |Indica se il record dell'app MAM è stato aggiornato. <br>True: l'app MAM ha un nuovo record con i campi aggiornati in questa tabella. <br>False: l'ultimo record per questa app MAM. |True/False |
+| StartDateInclusiveUTC |Data e ora in formato UTC della creazione dell'app MAM nel data warehouse. |23/11/2016 12.00.00 |
+| DeletedDateUTC |Data e ora in formato UTC in cui IsDeleted è stato impostato su True. |23/11/2016 12.00.00 |
+| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica dell'app MAM nel data warehouse. |23/11/2016 12.00.00 |
 
 ## <a name="mamapplicationinstance"></a>MamApplicationInstance
 
@@ -52,21 +52,21 @@ L'entità **MamApplicationInstance** elenca le app Gestione delle app mobili (MA
 
 | Proprietà | Descrizione | Esempio |
 |---------|------------|--------|
-| ApplicationInstanceKey |Identificatore univoco dell'istanza di app MAM nel data warehouse - chiave surrogata |123 |
-| UserId |Id utente dell'utente che ha installato l'app MAM |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationInstanceId |Identificatore univoco dell'istanza di app MAM - simile a ApplicationInstanceKey, ma l'identificatore è una chiave naturale |b66bc706-ffff-7437-0340-032819502773 |
+| ApplicationInstanceKey |Identificatore univoco dell'istanza dell'app MAM nel data warehouse, chiave surrogata. |123 |
+| UserId |ID dell'utente che ha installato l'app MAM. |b66bc706-ffff-7437-0340-032819502773 |
+| ApplicationInstanceId |Identificatore univoco dell'istanza dell'app MAM, simile ad ApplicationInstanceKey, ma l'identificatore è una chiave naturale. |b66bc706-ffff-7437-0340-032819502773 |
 | ApplicationId |ID applicazione di questa app MAM |com.microsoft.groupies-daily.<IOS> |
-| ApplicationVersion |Versione dell'applicazione di questa app MAM |2 |
+| ApplicationVersion |Versione dell'applicazione dell'app MAM. |2 |
 | CreatedDate |Data di creazione del record dell'istanza di app MAM. Il valore può essere Null. |23/11/2016 12.00.00 |
-| Piattaforma |Piattaforma del dispositivo in cui è installata l'app MAM |2 |
-| PlatformVersion |Versione della piattaforma del dispositivo in cui è installata l'app MAM |2.2 |
-| SdkVersion |Versione dell'SDK MAM con cui è stato eseguito il wrapping di questa app MAM |3.2 |
-| DeviceId |ID dispositivo del dispositivo in cui è installata l'app MAM |b66bc706-ffff-7437-0340-032819502773 |
-| DeviceName |Nome del dispositivo in cui è installata l'app MAM |"MyDevice" |
-| IsDeleted |Indica se il record dell'istanza di app MAM è stato aggiornato. True: quest'istanza di app MAM ha un nuovo record con i campi aggiornati in questa tabella. False: l'ultimo record per questa istanza di app MAM. |True/False |
-| StartDateInclusiveUTC |Data e ora in formato UTC in cui l'istanza di app MAM è stata creata nel data warehouse |23/11/2016 12.00.00 |
-| DeletedDateUtc |Data e ora in formato UTC quando IsDeleted è diventato True |23/11/2016 12.00.00 |
-| RowLastModifiedDateTimeUtc |Data e ora in formato UTC dell'ultima modifica apportata all'istanza di app MAM nel data warehouse |23/11/2016 12.00.00 |
+| Piattaforma |Piattaforma del dispositivo in cui è installata l'app MAM. |2 |
+| PlatformVersion |Versione della piattaforma del dispositivo in cui è installata l'app MAM. |2.2 |
+| SdkVersion |Versione dell'SDK MAM con cui è stato eseguito il wrapping dell'app MAM. |3.2 |
+| DeviceId |ID del dispositivo in cui è installata l'app MAM. |b66bc706-ffff-7437-0340-032819502773 |
+| DeviceName |Nome del dispositivo in cui è installata l'app MAM. |"MyDevice" |
+| IsDeleted |Indica se il record dell'istanza di app MAM è stato aggiornato. <br>True: quest'istanza di app MAM ha un nuovo record con i campi aggiornati in questa tabella. <br>False: l'ultimo record per questa istanza di app MAM. |True/False |
+| StartDateInclusiveUTC |Data e ora in formato UTC della creazione dell'istanza dell'app MAM nel data warehouse. |23/11/2016 12.00.00 |
+| DeletedDateUtc |Data e ora in formato UTC in cui IsDeleted è stato impostato su True. |23/11/2016 12.00.00 |
+| RowLastModifiedDateTimeUtc |Data e ora in formato UTC dell'ultima modifica apportata all'istanza dell'app MAM nel data warehouse. |23/11/2016 12.00.00 |
 
 ## <a name="mamcheckin"></a>MamCheckin
 
@@ -77,12 +77,12 @@ L'entità **MamCheckin** rappresenta i dati raccolti quando un'istanza di app Ge
 
 | Proprietà | Descrizione | Esempio |
 |---------|------------|--------|
-| DateKey |Chiave data in cui l'archiviazione dell'app MAM è stata registrata nel data warehouse | 20160703 |
-| ApplicationInstanceKey |Chiave dell'istanza di app associata a questa archiviazione dell'app MAM |2/5/1900 12.00.00 |
-| UserKey |Chiave dell'utente associata a questa archiviazione dell'app MAM |12/1/1900 12.00.00 |
-| ApplicationKey |Chiave dell'app MAM che è stata archiviata |10/1/1900 12.00.00 |
-| DeviceHealthKey |Chiave DeviceHealth associata a questa archiviazione dell'app MAM |2/1/1900 12.00.00 |
-| PlatformKey |Rappresenta la piattaforma del dispositivo associato a questa archiviazione dell'app MAM |1/1/1900 12:00:00 AM |
+| DateKey |Chiave data in cui l'archiviazione dell'app MAM è stata registrata nel data warehouse. | 20160703 |
+| ApplicationInstanceKey |Chiave dell'istanza dell'app associata all'archiviazione dell'app MAM. |2/5/1900 12.00.00 |
+| UserKey |Chiave dell'utente associata all'archiviazione dell'app MAM. |12/1/1900 12.00.00 |
+| ApplicationKey |Chiave dell'app MAM che è stata archiviata. |10/1/1900 12.00.00 |
+| DeviceHealthKey |Chiave di DeviceHealth associata all'archiviazione dell'app MAM. |2/1/1900 12.00.00 |
+| PlatformKey |Rappresenta la piattaforma del dispositivo associato all'archiviazione dell'app MAM. |1/1/1900 12:00:00 AM |
 | EffectiveAppliedPolicyKey |Rappresenta il criterio valido applicato, associato a questa archiviazione dell'app MAM. Un criterio valido applicato risulta dall'unione di tutti i criteri pertinenti a una particolare app e utente. |2/5/1900 12.00.00 |
 | LastCheckInDate |Data e ora dell'ultima archiviazione di questa app MAM. Il valore può essere Null. |23/11/2016 12.00.00 |
 
@@ -92,10 +92,10 @@ L'entità **MamDeviceHealth** rappresenta i dispositivi in cui sono stati distri
 
 | Proprietà | Descrizione | Esempio |
 |---------|------------|--------|
-| DeviceHealthKey |Identificatore univoco del dispositivo e integrità associata nel data warehouse - chiave surrogata |1/1/1900 12:00:00 AM |
-| DeviceHealth |Identificatore univoco del dispositivo e integrità, simile a DeviceHealthKey, ma l'identificatore è una chiave naturale |1/1/1900 12:00:00 AM |
-| DeviceHealthName |Rappresenta lo stato del dispositivo. Non disponibile- nessuna informazione su questo dispositivo. Integro - dispositivo non jailbroken. Non integro - dispositivo jailbroken. |Non disponibile Integro Non integro |
-| RowLastModifiedDateTimeUtc |Data e ora in formato UTC dell'ultima modifica apportata all'integrità del dispositivo specifico nel data warehouse |23/11/2016 12.00.00 |
+| DeviceHealthKey |Identificatore univoco del dispositivo e integrità associata nel data warehouse, chiave surrogata. |1/1/1900 12:00:00 AM |
+| DeviceHealth |Identificatore univoco del dispositivo e integrità associata, simile a DeviceHealthKey ma l'identificatore è una chiave naturale. |1/1/1900 12:00:00 AM |
+| DeviceHealthName |Rappresenta lo stato del dispositivo. <br>Non disponibile- nessuna informazione su questo dispositivo. <br>Integro - dispositivo non jailbroken. <br>Non integro - dispositivo jailbroken. |Non disponibile Integro Non integro |
+| RowLastModifiedDateTimeUtc |Data e ora in formato UTC dell'ultima modifica apportata all'integrità del dispositivo MAM specifico nel data warehouse. |23/11/2016 12.00.00 |
 
 ## <a name="mameffectivepolicy"></a>MamEffectivePolicy
 
@@ -103,7 +103,7 @@ L'entità **MamEffectivePolicy** elenca tutti i criteri validi di Gestione di ap
 
 | Proprietà | Descrizione | Esempio |
 |---------|------------|--------|
-| EffectivePolicyKey |Identificatore univoco del criterio valido MAM nel data warehouse |2 |
+| EffectivePolicyKey |Identificatore univoco del criterio valido MAM nel data warehouse. |2 |
 | RealPolicyKey |Identificatore univoco del criterio MAM creato dal professionista IT. |1 |
 | RowCreatedDateTimeUtc |Data e ora in formato UTC in cui il criterio valido MAM è stato creato nel data warehouse. |23/11/2016 12.00.00 |
 
@@ -124,7 +124,7 @@ L'entità **MamPlatform** elenca i nomi e i tipi di piattaforma in cui è stata 
 
 | Proprietà | Descrizione | Esempio |
 |---------|------------|--------|
-| PlatformKey |Identificatore univoco della piattaforma nel data warehouse - chiave surrogata |123 |
-| Piattaforma |Identificatore univoco della piattaforma, simile a PlatformKey, ma è una chiave naturale |123 |
-| PlatformName |Nome della piattaforma |Non è disponibile Nessuno Android IOS Windows |
-| RowLastModifiedDateTimeUtc |Data e ora in formato UTC dell'ultima modifica di questa piattaforma nel data warehouse |23/11/2016 12.00.00 |
+| PlatformKey |Identificatore univoco della piattaforma nel data warehouse, chiave surrogata. |123 |
+| Piattaforma |Identificatore univoco della piattaforma, simile a PlatformKey ma è una chiave naturale. |123 |
+| PlatformName |Nome della piattaforma |Non disponibile <br>Nessuno <br>Windows <br>iOS <br>Android. |
+| RowLastModifiedDateTimeUtc |Data e ora in formato UTC dell'ultima modifica della piattaforma nel data warehouse. |23/11/2016 12.00.00 |

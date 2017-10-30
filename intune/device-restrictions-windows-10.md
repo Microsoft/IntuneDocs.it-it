@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fee635b6c50355a4af8b418c9f8e7fae8e88cff0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
+ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows 10 e versioni successive in Microsoft Intune
 
@@ -64,7 +64,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
     -   **Impedisci riutilizzo delle password precedenti** - Specifica il numero di password utilizzate in precedenza che il dispositivo deve ricordare.
     -   **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (solo Mobile)** - Specifica che l'utente deve inserire una password per sbloccare il dispositivo (solo Windows 10 Mobile).
     -   **Password semplici**: consente di autorizzare l'uso di password semplici come 1111 o 1234. Questa impostazione consente o blocca anche l'uso delle password grafiche di Windows.
--   **Crittografia** - Abilita la crittografia sui dispositivi di destinazione (solo Windows 10 Mobile).
+-   **Crittografia**: consente di abilitare la crittografia nei dispositivi di destinazione.
 
 ## <a name="personalization"></a>Personalization
 
@@ -179,7 +179,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
     -   **Giochi**: blocca l'accesso all'app Giochi in Impostazioni.
     -   **Accessibilità**: blocca l'accesso all'area accessibilità dell'app Impostazioni.
     -   **Riservatezza**: blocca l'accesso all'area riservatezza dell'app Impostazioni.
-    -   **Aggiornamento e sicurezza **: blocca l'accesso all'area Aggiornamento e sicurezza dell'app Impostazioni.
+    -   **Aggiornamento e sicurezza** : blocca l'accesso all'area Aggiornamento e sicurezza dell'app Impostazioni.
 
 ## <a name="defender"></a>Defender
 

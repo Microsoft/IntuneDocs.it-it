@@ -14,11 +14,11 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2b9739299c52c668117116f54c08715f1218d130
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: be8b7041882539c4e379074cffea385f582f686e
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-user-entity"></a>Informazioni di riferimento per l'entità User
 
@@ -30,14 +30,14 @@ L'entità **User** elenca tutti gli utenti di Azure Active Directory (Azure AD) 
 
 | Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
-| UserKey |Identificatore univoco dell'utente nel data warehouse - chiave surrogata |123 |
-| UserId |Identificatore univoco dell'utente, simile a UserKey, ma è una chiave naturale |b66bc706-ffff-7437-0340-032819502773 |
-| UserEmail |Indirizzo di posta elettronica dell'utente |John@constoso.com |
-| DisplayName |Nome visualizzato dell'utente |Luca |
+| UserKey |Identificatore univoco dell'utente nel data warehouse, chiave surrogata. |123 |
+| UserId |Identificatore univoco dell'utente, simile a UserKey, ma è una chiave naturale. |b66bc706-ffff-7437-0340-032819502773 |
+| UserEmail |Indirizzo di posta elettronica dell'utente. |John@constoso.com |
+| DisplayName |Nome visualizzato dell'utente. |Luca |
 | IntuneLicensed |Specifica se l'utente ha una licenza per Intune. |True/False |
 | IsDeleted |Indica se il record utente è stato aggiornato.  True: questo utente ha un nuovo record con i campi aggiornati in questa tabella. False: l'ultimo record per questo utente. |True/False |
-| StartDateInclusiveUTC |Data e ora in formato UTC in cui l'utente è stato creato nel data warehouse |23/11/2016 12:00:00 |
-| EndDateExclusiveUTC |Data e ora in formato UTC quando IsDeleted è diventato True |23/11/2016 12:00:00 |
-| IsCurrent |Indica se il record dell'utente è corrente o no nel data warehouse |True/False |
-| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica dell'utente nel data warehouse |23/11/2016 12:00:00 |
+| StartDateInclusiveUTC |Data e ora in formato UTC della creazione dell'utente nel data warehouse. |23/11/2016 12.00.00 |
+| EndDateExclusiveUTC |Data e ora in formato UTC in cui IsDeleted è stato impostato su True. |23/11/2016 12.00.00 |
+| IsCurrent |Indica se il record dell'utente è corrente nel data warehouse. |True/False |
+| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica dell'utente nel data warehouse. |23/11/2016 12.00.00 |
 

@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cd684feec1df6b20f9349052496a21895527710b
-ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
+ms.openlocfilehash: 9fd14c985b4cedcd0575b2b6ea29e7aa4d8bb2d4
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-application-entities"></a>Informazioni di riferimento per le entità della categoria Application
 
@@ -36,21 +36,21 @@ L'entità **AppRevision** elenca tutte le versioni di un'app.
 
 | Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
-| AppKey |Identificatore univoco dell'app |123 |
+| AppKey |Identificatore univoco dell'app. |123 |
 | ApplicationId |Identificatore univoco dell'app, simile a AppKey, ma è una chiave naturale. |b66bc706-ffff-7437-0340-032819502773 |
-| Revisione |La versione indicata dall'amministratore durante il caricamento del file binario |2 |
-| Titolo |Titolo dell'app |Excel |
-| Pubblicazione |Autore della pubblicazione dell'app |Microsoft |
-| UploadState |Stato di upload dell'app |1 |
+| Revisione |La versione indicata dall'amministratore durante il caricamento del file binario. |2 |
+| Titolo |Titolo dell'app. |Excel |
+| Pubblicazione |Autore della pubblicazione dell'app. |Microsoft |
+| UploadState |Stato di caricamento dell'app. |1 |
 | AppTypeKey |Riferimento ad AppType descritto nella sezione seguente. | |
-| VppProgramTypeKey |Riferimento a VppProgramType descritto di seguito | |
-| CreationTime |Ora di creazione della revisione |23/11/2016 12.00.00 |
-| ModifiedTime |Ora dell'ultima modifica apportata a qualsiasi elemento relativo a questa revisione |23/11/2016 12.00.00 |
-| Dimensioni |Dimensioni del file binario | |
-| StartDateInclusiveUTC |Data e ora in formato UTC in cui la revisione dell'app è stata creata nel data warehouse |23/11/2016 12.00.00 |
-| EndDateExclusiveUTC |Data e ora in formato UTC in cui la revisione dell'app è divenuta obsoleta |23/11/2016 12.00.00 |
-| IsCurrent |Indica se la versione dell'app è corrente o no nel data warehouse |True/False |
-| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica della versione dell'app nel data warehouse |23/11/2016 12.00.00 |
+| VppProgramTypeKey |Riferimento a VppProgramType descritto di seguito. | |
+| CreationTime |Ora di creazione della revisione. |23/11/2016 12.00.00 |
+| ModifiedTime |Ora dell'ultima modifica apportata a qualsiasi elemento relativo a questa revisione. |23/11/2016 12.00.00 |
+| Dimensioni |Dimensioni del file binario. | |
+| StartDateInclusiveUTC |Data e ora in formato UTC della creazione della revisione dell'app nel data warehouse. |23/11/2016 12.00.00 |
+| EndDateExclusiveUTC |Data e ora in formato UTC in cui la revisione dell'app è diventata obsoleta. |23/11/2016 12.00.00 |
+| IsCurrent |Indica se la versione dell'app è corrente nel data warehouse. |True/False |
+| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica della versione dell'app nel data warehouse. |23/11/2016 12.00.00 |
 
 ## <a name="apptypes"></a>AppTypes
 
@@ -66,19 +66,19 @@ L'entità **AppTypes** elenca l'origine dell'installazione di un'app.
 
 | AppTypeID  | Nome | Descrizione |
 |---------|------------|--------|
-| 0 |App di Android Store |Un'app di Android Store |
-| 1 |App di Android LOB |Un'app line-of-business Android |
-| 2 |App di Android Store gestita (MAM) |Un'app di Android Store abilitata per la gestione |
-| 3 |App di iOS Store |Un'app di iOS Store |
-| 4 |App LOB iOS |Un'app line-of-business iOS |
-| 5 |App dello Store iOS gestita (MAM?) |Un'app di iOS Store abilitata per la gestione |
-| 6 |O365 Pro Plus Suite |Office 365 Pro Plus Suite per Windows 10 |
-| 7 |App Web |Un'app web |
-| 8 |App di Windows Phone 8.1 Store |Un'app di Windows Phone 8.1 Store |
-| 9 |App di Windows Store |Un'app di Windows Store |
-| 10 |App line-of-business di Windows |Un'app line-of-business appx Windows |
-| 11 |Windows Mobile MSI |Un'app line-of-business MSI |
-| 12 |App line-of-business di Windows Phone |Un'app line-of-business di Windows Phone |
+| 0 |App di Android Store | Un'app di Android Store. |
+| 1 |App di Android LOB | Un'app line-of-business Android. |
+| 2 |App di Android Store gestita (MAM) | Un'app di Android Store abilitata per la gestione. |
+| 3 |App di iOS Store | Un'app dello Store iOS. |
+| 4 |App LOB iOS | Un'app line-of-business iOS. |
+| 5 |App dello Store iOS gestita (MAM?) | Un'app iOSstore abilitata per la gestione. |
+| 6 |O365 Pro Plus Suite | Office 365 Pro Plus Suite per Windows 10. |
+| 7 |App Web | Un'app Web. |
+| 8 |App di Windows Phone 8.1 Store | Un'app dello Store per Windows Phone 8.1. |
+| 9 |App di Windows Store | Un'app di Windows Store. |
+| 10 |App line-of-business di Windows | Un'app line-of-business AppX per Windows. |
+| 11 |Windows Mobile MSI | Un'app line-of-business MSI. |
+| 12 |App line-of-business di Windows Phone | Un'app line-of-business per Windows Phone. |
 
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
@@ -87,17 +87,17 @@ L'entità **VppProgramTypes** elenca i tipi di programma VPP possibili per un'ap
 
 | Proprietà  | Descrizione |
 |---------|------------|
-| VppProgramTypeID |ID per il tipo |
-| VppProgramTypeKey |Chiave surrogata per la chiave |
-| VppProgramTypeName |Tipo di programma VPP |
+| VppProgramTypeID | ID per il tipo. |
+| VppProgramTypeKey | Chiave surrogata per la chiave. |
+| VppProgramTypeName | Tipo di programma VPP. |
 
 ## <a name="example"></a>Esempio
 
 | VppProgramID  | Nome | Descrizione |
 |---------|------------|--------|
-| 3DDA2474-470B-4503-9830-2665C21C1945 |Microsoft |Programma VPP di Microsoft |
-| 00000000-0000-0000-0000-000000000000 |Non ancora disponibile |Valore predefinito, nessun VPP |
-| B54814E0-68EA-4BA4-8088-B5AAB58E737B |Apple |Programma VPP di Apple |
+| 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Programma VPP Microsoft. |
+| 00000000-0000-0000-0000-000000000000 | Non ancora disponibile | Valore predefinito, nessun VPP. |
+| B54814E0-68EA-4BA4-8088-B5AAB58E737B | Apple | Programma VPP Apple. |
 
 
 
@@ -107,8 +107,8 @@ L'entità **ApplicationInventory** elenca le applicazioni trovate nel dispositiv
 
 | Proprietà  | Descrizione |
 |---------|------------|
-| DeviceKey |Si tratta di un riferimento alla tabella Device che contiene l'ID dispositivo Intune |
-| DateKey |Riferimento alla tabella di data che indica il giorno dell'inventario |
-| ApplicationName |Nome dell'applicazione |
-| ApplicationVersion |Versione dell'applicazione |
-| BundleSize |Dimensione dell'app in byte |
+| DeviceKey | Si tratta di un riferimento alla tabella Device che contiene l'ID dispositivo Intune. |
+| DateKey | Riferimento alla tabella di data che indica il giorno dell'inventario. |
+| ApplicationName | Il nome dell'applicazione. |
+| ApplicationVersion | Versione dell'applicazione. |
+| BundleSize | Dimensione dell'app in byte. |

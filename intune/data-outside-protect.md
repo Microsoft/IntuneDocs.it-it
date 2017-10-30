@@ -13,11 +13,11 @@ ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ae828adff5d159c24e436b35ed480033c54560f
-ms.sourcegitcommit: 29ee35da2864b25f4432d2423b285014c77040af
+ms.openlocfilehash: 85e4712a204032497cb7fd31dbee910d52ac08b7
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="prevent-unauthorized-access-to-company-data"></a>Impedire l'accesso non autorizzato ai dati aziendali 
 
@@ -45,4 +45,4 @@ Completare l'[esercitazione introduttiva di Azure Information Protection](https:
 Come parte delle procedure successive, è possibile ottenere informazioni su altre strategie per incrementare la protezione dei dati aziendali, ad esempio: 
 
 * Informazioni sull'uso di [Azure Information Protection nei dispositivi iOS e Android](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
-* Per i computer Mac e Windows Phone, vedere le [domande frequenti sull'applicazione SharePoint di Microsoft Rights Management](https://technet.microsoft.com/dn451248).
+* Per i computer Mac e Windows Phone, vedere le [domande frequenti sull'applicazione di condivisione Microsoft Rights Management](https://technet.microsoft.com/dn451248).

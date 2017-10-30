@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11a3c96046a194e10d952508669b7e8fac0d1ee8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni su quali aggiornamenti sono stati apportati all'interfaccia utente per le app che gli utenti finali vedranno in questa versione di Microsoft Intune. Queste informazioni sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.
+
+## <a name="week-of-october-16-2017"></a>Settimana del 16 ottobre 2017
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Migliorare la ricerca per il sito Web Portale aziendale <!--1331697-->
+Stiamo migliorando la funzionalità di ricerca dell'app, a partire dal [sito Web Portale aziendale](https://portal.manage.microsoft.com). Le ricerche verranno ora eseguite sulle categorie di app, oltre ai campi nome e descrizione. I risultati verranno ordinati, per impostazione predefinita, in ordine decrescente di rilevanza. 
+
+Gli utenti di iOS riceveranno anche questa modifica, dato che il sito Web Portale aziendale è usato anche come parte dell'app del Portale aziendale per iOS. Le app del Portale aziendale per Android e Windows riceveranno aggiornamenti simili nei prossimi mesi.
+
+Stiamo ancora ottimizzando il modo in cui viene tenuta traccia della rilevanza. Per comunicarci come sta andando, usare il collegamento "Commenti e suggerimenti" nella parte inferiore del sito Web del Portale aziendale.
+
+
+### <a name="ios-company-portal-displays-large-icons----1454593---"></a>Il portale aziendale iOS visualizza icone grandi <!-- 1454593 -->
+In questa versione viene risolto un problema noto di visualizzazione delle icone nel riquadro app del portale aziendale iOS. Se si caricano icone di app di almeno 120 x 120 pixel, ora le icone vengono visualizzate nel [sito Web del portale aziendale](https://portal.manage.microsoft.com) e nelle pagine delle app del portale aziendale iOS occupando l'intero riquadro app.
+
+
+
+
+
 
 ## <a name="week-of-october-2-2017"></a>Settimana del 2 ottobre 2017
 
@@ -67,7 +85,7 @@ Il processo di registrazione per l'app del portale aziendale per Android è ora 
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
 
 
-## <a name="week-of-august-28-2017"></a>Settimana del 28 agosto 2017
+## <a name="august-2017"></a>Agosto 2017
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>L'app di posta elettronica iOS 11 supporta OAuth <!---1196951--->
 
@@ -87,7 +105,7 @@ L'accesso condizionale con Intune supporta un'autenticazione più sicura sui dis
 
 ![Dal sito Web del Portale aziendale viene richiesto all'utente di effettuare la registrazione.](./media/ios-11-ca-email-after-1708-07.png)
 
-## <a name="week-of-august-21-2017"></a>Settimana del 21 agosto 2017
+
 
 ### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Le finestre di dialogo per la gestione delle applicazioni mobili di Intune ora hanno un'interfaccia moderna <!-- 1199015 -->
 
@@ -102,15 +120,13 @@ Le finestre di dialogo per la gestione delle applicazioni mobili di Intune sono 
 ![Interfaccia moderna](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-## <a name="week-of-august-14-2017"></a>Settimana del 14 agosto 2017
-
 ### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Aggiornamenti alla pagina "Dettagli dispositivo" nell'app Portale aziendale per Windows 10 <!---1287448--->
 
 L'app Portale aziendale per Windows 10 ha spostato il tag __Categoria__ da sotto il titolo a una proprietà nella pagina __Dettagli dispositivo__.
 
 ![La schermata "Dettagli dispositivo" dell'app Portale aziendale per Windows, ora mostra il campo "Categorie" come una proprietà anziché direttamente sotto il titolo della schermata.](./media/cp_win10_category_tag_move_after_1708.png)
 
-## <a name="week-of-july-31-2017"></a>Settimana del 31 luglio 2017
+## <a name="july-2017"></a>Luglio 2017
 
 ### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Le pagine dei dettagli delle app visualizzano nuove informazioni per i dispositivi Android <!--1287476-->
 
@@ -164,7 +180,7 @@ L'app portale aziendale avvia la procedura di accesso.
 
 ![Terminato il processo di autenticazione, l'app portale aziendale esegue l'accesso, visualizzando una barra di caricamento.](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## <a name="week-of-june-12-2017"></a>Settimana del 12 giugno 2017
+## <a name="june-2017"></a>Giugno 2017
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>L'app Portale aziendale per Android ora include una nuova esperienza utente finale per i criteri di protezione delle app <!--1305217-->
 In base ai suggerimenti dei clienti, l'app Portale aziendale per Android è stata modificata e ora include un pulsante **Accesso al contenuto aziendale**. Con questa funzionalità gli utenti finali possono evitare il processo di registrazione per accedere solo ad app che supportano i criteri di protezione, una funzionalità di gestione delle applicazioni mobili di Intune.
@@ -210,8 +226,6 @@ In risposta al feedback degli utenti, per l'app Portale aziendale per Android è
 ![Immagine dell'app Portale aziendale per Android, con il menu Azione aperto nell'angolo in alto a destra. La nuova opzione "Remove company portal" (Rimuovi portale aziendale) è disponibile come terza opzione dopo "Profilo personale" e "Impostazioni" e prima di "Termini e condizioni", "Guida e commenti e suggerimenti" e "Informazioni su".](./media/android_remove_cp_menu_action_after_1705.png)
 
 ![Immagine della finestra di dialogo di conferma visualizzata dopo aver selezionato la nuova opzione "Remove company portal" (Rimuovi portale aziendale) dal menu Azione. Questa finestra di dialogo informa l'utente che rimuovendo Portale aziendale, il dispositivo non verrà più gestito dall'amministratore IT e potrebbe essere rimosso l'accesso a dati, app o posta elettronica aziendali. Viene quindi richiesto all'utente di confermare la rimozione dell'app Portale aziendale selezionando "Sì".](./media/android_remove_cp_menu_confirmation_after_1705.png)
-
-## <a name="week-of-june-5-2017"></a>Settimana del 5 giugno 2017
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Miglioramenti dei riquadri dell'app Portale aziendale per iOS <!--1230777-->
 È stata aggiornata la progettazione dei riquadri dell'app nella home page in modo che rispecchino il colore personalizzato impostato per Portale aziendale.

@@ -26,6 +26,7 @@
 
 ### [Risoluzione dei problemi comuni con Android](troubleshoot-your-device-android.md)
 #### [Verifica della conformità del dispositivo](check-compliance-on-your-device-android.md)
+#### [Sincronizzazione della posta elettronica di Outlook con modalità di risparmio batteria](power-saving-mode-android.md)
 
 #### Uso dei log la risoluzione dei problemi
 ##### [Attivare la registrazione dettagliata](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab24b147b32c94ba51728c0c223de3e6c92dd215
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: dadcd33f39827365fc3f22c46d4332f3ea3cbf09
+ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Sincronizzare i dispositivi con Intune per ottenere i criteri e le azioni più recenti
 
@@ -29,11 +29,11 @@ L'azione del dispositivo **Sincronizza** forza il dispositivo selezionato a eseg
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
-- Windows: funzionalità supportata
-- Windows Phone: funzionalità supportata
-- iOS: funzionalità supportata
-- macOS: funzionalità supportata
-- Android: funzionalità supportata
+- Windows
+- Windows Phone
+- iOS
+- macOS
+- Android
 
 ## <a name="how-to-sync-a-device"></a>Come sincronizzare un dispositivo
 
@@ -43,6 +43,26 @@ L'azione del dispositivo **Sincronizza** forza il dispositivo selezionato a eseg
 4. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.
 5. Nell'elenco dei dispositivi gestiti scegliere un dispositivo e quindi scegliere l'azione remota **Sincronizza**.
 7. Scegliere **Sì** per confermare l'azione.
+
+
+## <a name="retriable-error-codes"></a>Codici di errore con possibilità di ritentare
+
+Quando un amministratore esegue l'azione **Sincronizzazione** per il dispositivo, le app iOS e Android per le quali l'azione non è riuscita e che hanno generato un codice di errore con possibilità di ritentare risultano disponibili per il dispositivo. Invece le app che hanno generato un codice di errore senza possibilità di ritentare vengono rese disponibili al dispositivo dopo sette giorni.
+
+
+| Codice di errore  | Descrizione suggerita                                                                                                                  | Con possibilità di ritentare |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 2016330898 | Si è verificato un errore sconosciuto.                                                                                                             | No        |
+| 2016330897 | Si è verificato il timeout della connessione a Intune. Reimpostare la connessione.                                                                             | Sì       |
+| 2016330896 | La connessione a Internet è stata persa. Reimpostare la connessione.                                                                            | Sì       |
+| 2016330895 | La connessione a Internet è stata persa. Reimpostare la connessione.                                                                            | Sì       |
+| 2016330894 | La connessione a Internet è stata persa. Reimpostare la connessione.                                                                            | Sì       |
+| 2016330893 | La connessione a Internet è stata persa. Reimpostare la connessione.                                                                            | Sì       |
+| 2016330892 | Il roaming internazionale è disabilitato.                                                                                                     | No        |
+| 2016330891 | Non è possibile accedere alla connessione alla rete cellulare per questo dispositivo durante l'effettuazione di una telefonata. Attendere il completamento della telefonata. | Sì       |
+| 2016330890 | Non è stato possibile usare la rete cellulare per questo dispositivo/questi dispositivi. Non è stato possibile usare i dispositivi.                                                   | No        |
+| 2016330889 | La connessione sicura non è riuscita. Reimpostare la connessione.                                                                                   | Sì       |
+| 2016330888 | Non è stato possibile valutare il server trust.                                                                                                | No        |
 
 ## <a name="next-steps"></a>Passaggi successivi
 
