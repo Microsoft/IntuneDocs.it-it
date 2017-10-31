@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 635f99a0fd4857e9c0c2266371713c102ce37912
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per Android
 Le impostazioni dei criteri descritte in questo argomento possono essere [configurate](app-protection-policies.md) per il criterio di protezione delle app nel pannello **Impostazioni** del portale di Azure.
@@ -86,3 +86,8 @@ Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione d
 | **Intervallo offline (giorni) prima della cancellazione dei dati dell'app** | Trascorso questo intervallo di esecuzione offline (numero di giorni definito dall'amministratore), l'app chiederà all'utente di connettersi alla rete e ripetere l'autenticazione. Se l'utente viene autenticato correttamente, può continuare ad accedere ai dati e l'intervallo offline viene reimpostato.  Se l'autenticazione non riesce, l'app eseguirà una cancellazione selettiva dell'account utenti e dei dati.  Vedere [Come cancellare solo i dati aziendali dalle app gestite da Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) per altre informazioni sui dati che vengono rimossi con una cancellazione selettiva.<br><br> | 90 giorni |
 | **Blocca acquisizione schermo e Assistente per Android (Android 6.0+)** | Scegliere **Sì** per bloccare le funzionalità di acquisizione schermo e **Assistente per Android** del dispositivo quando si usa questa app. Se si sceglie **Sì** verrà anche sfocata l'immagine di anteprima della funzione Switch quando si usa questa app con un account aziendale o dell'istituto di istruzione. | No |
 | **Disabilita il PIN dell'app quando il PIN del dispositivo è gestito** | Scegliere **Sì** per disabilitare il PIN dell'app quando viene rilevato un blocco del dispositivo in un dispositivo registrato. | No |
+| **Require minimum Android operating system** (Richiedi un sistema operativo Android minimo) | Scegliere **Sì** per richiedere un sistema operativo Android minimo per usare l'app. All'utente verrà impedito l'accesso se la versione di Android nel dispositivo non soddisfa il requisito. | No |
+| **Require minimum Android operating system (Warning only)** (Richiedi un sistema operativo Android minimo (solo avviso)) | Scegliere **Sì** per richiedere un sistema operativo Android minimo per usare l'app. L'utente visualizzerà una notifica se la versione di Android nel dispositivo non soddisfa il requisito. Questa notifica può essere chiusa. | No |
+| **Richiedi una versione minima dell'app** | Scegliere **Sì** per richiedere una versione minima dell'app per usare l'app. All'utente verrà impedito l'accesso se la versione dell'app nel dispositivo non soddisfa il requisito.<br><br>Quando si selezionano le app di destinazione, tenere presente che spesso gli schemi di numerazione delle versioni sono diversi per le varie app.<br><br> | No | 
+| **Richiedi una versione minima dell'app (solo avviso)** | Scegliere **Sì** per consigliare una versione minima dell'app per usare questa app. L'utente visualizzerà una notifica se la versione dell'app nel dispositivo non soddisfa il requisito. Questa notifica può essere chiusa.<br><br>Quando si selezionano le app di destinazione, tenere presente che spesso gli schemi di numerazione delle versioni sono diversi per le varie app.<br><br> | No | 
+
