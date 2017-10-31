@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 973408b292261b86f0a49bfaf4c786d6a6dacf28
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>Edizione anticipata per Microsoft Intune - Ottobre 2017
 
@@ -151,19 +151,6 @@ Con il rilascio di Android Oreo, Google introduce un gruppo di funzionalità di 
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>Supporto dei criteri di aggiornamento edizione di Windows 10 <!-- 903672(archived), 1119689 -->  
 È possibile creare criteri di aggiornamento edizione di Windows 10 per l'aggiornamento di dispositivi Windows 10 a Windows 10 Education, Windows 10 Education N, Windows 10 Professional, Windows 10 Professional N, Windows 10 Professional Education e Windows 10 Professional Education N. Per informazioni dettagliate sugli aggiornamenti edizione di Windows 10, vedere [Come configurare gli aggiornamenti edizione di Windows 10](edition-upgrade-configure-windows-10.md).
 
-
-### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>Componenti aggiuntivi MAM di Intune e Outlook per Android <!-- 1450688 -->
-Tra alcune settimane, il team di Office annuncerà componenti aggiuntivi per Outlook in Android. Questo set di funzionalità aggiuntive è già presente in Outlook in Windows, iOS, Web e Mac. Poiché i componenti aggiuntivi vengono gestiti tramite Exchange, gli utenti potranno condividere dati e messaggi in Outlook e applicazioni aggiuntive non gestite, a meno che l'accesso ai componenti aggiuntivi non venga disattivato dall'amministratore di Exchange. 
-
-Per gestire le autorizzazioni di accesso ai componenti aggiuntivi, rivolgersi all'amministratore di Exchange per verificare che i criteri di protezione dati MAM vengano applicati ai componenti aggiuntivi.
-
-#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
-Se i criteri di Exchange sono già impostati per impedire il caricamento o l'installazione di componenti aggiuntivi da parte dell'utente, non proseguire la lettura. I criteri MAM verranno applicati come previsto. Se in MAM sono stati tuttavia impostati criteri per limitare le operazioni Taglia, Copia e Incolla all'interno di Outlook in Android e i criteri per i componenti aggiuntivi non sono stati impostati in Exchange, gli utenti potranno installare componenti aggiuntivi in Outlook per impostazione predefinita. Questi componenti aggiuntivi possono accedere al corpo del messaggio, all'oggetto e ad altre proprietà del messaggio. Per impedire all'utente di installare componenti aggiuntivi, l'amministratore di Exchange deve rimuovere i ruoli "App del Marketplace" e "App personalizzate".
-
-La modifica dell'impostazione in Exchange verrà applicata ad Outlook in Windows, iOS, Web, Mac e Mobile. 
-
-#### <a name="what-do-i-need-to-do"></a>Cosa fare
-Verificare subito i criteri di Exchange. Informare lo staff IT e il supporto tecnico. Contattare il team di supporto per eventuali dubbi o domande specifiche. 
 
 
 
