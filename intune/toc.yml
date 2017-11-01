@@ -240,10 +240,15 @@
           href: apps-deploy.md
         - name: Eseguire il monitoraggio delle app
           href: apps-monitor.md
-        - name: Profili di configurazione delle app iOS
-          href: app-configuration-policies-use-ios.md
-        - name: Profili di configurazione delle app Android
-          href: app-configuration-policies-use-android.md
+        - name: Criteri di configurazione dell'app
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS dispositivi gestiti
+              href: app-configuration-policies-use-ios.md
+            - name: Android dispositivi gestiti
+              href: app-configuration-policies-use-android.md
+            - name: App gestite
+              href: app-configuration-policies-managed-app.md
         - name: Usare i profili di provisioning delle app iOS
           href: app-provisioning-profile-ios.md
         - name: Cancellare le app in modo selettivo
