@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 09/19/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff2c9943a04ec02a83e821a65e1307e311a9d1c0
-ms.sourcegitcommit: 4ce095c0c3fa2e42cf76207b6ff8edf1fe397165
+ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
+ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
 
@@ -108,10 +108,8 @@ Questa opzione si applica anche alle impostazioni accessibili dall'app delle imp
 
 Nell'elenco delle app con restrizioni è possibile configurare uno degli elenchi seguenti:
 
-Un elenco **App non consentite** - Elenca le app non gestite da Intune che gli utenti non sono autorizzati a installare ed eseguire.
-Un elenco **App approvate** - Elenca le app che gli utenti sono autorizzati a installare. Gli utenti non devono installare app che non sono elencate. Le app gestite da Intune sono automaticamente consentite.
-
-Agli utenti non viene impedito di installare un'app non consentita, ma se lo fanno si riceverà una segnalazione.
+- Un elenco **App non consentite** - Elenca le app non gestite da Intune che gli utenti non sono autorizzati a installare ed eseguire. Agli utenti non viene impedito di installare un'app non consentita, ma se lo fanno si riceverà una segnalazione.
+- Un elenco **App approvate** - Elenca le app che gli utenti sono autorizzati a installare. Gli utenti non devono installare app che non sono elencate. Le app gestite da Intune sono automaticamente consentite. Agli utenti non viene impedito di installare un'app non inclusa nell'elenco delle app approvate, ma se lo fanno si riceverà una segnalazione.
 
 Per configurare un elenco, fare clic su **Aggiungi** e quindi specificare il nome, facoltativamente l'autore dell'app e l'URL dell'app nell'App Store.
 
@@ -179,7 +177,7 @@ Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.
 -   **Associazione di Apple Watch (solo con supervisione)** - Consente al dispositivo di associare un Apple Watch.
 -   **Rilevamento del polso per l'Apple Watch associato** - Quando l'opzione è abilitata, Apple Watch non visualizza notifiche se non è indossato.
 -   **Modifica Bluetooth (solo con supervisione)** - Impedisce all'utente finale di modificare le impostazioni Bluetooth nel dispositivo.
--   ** Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
+-   **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
 -   **Richiedi la password associata alle richieste AirPlay in uscita** - Richiede una password di associazione quando l'utente usa AirPlay per trasmettere i contenuti ad altri dispositivi di Apple.
 
 ## <a name="keyboard-and-dictionary"></a>Tastiera e dizionario

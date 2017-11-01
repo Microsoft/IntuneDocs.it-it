@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e55246f8f089a998fa4a04fe07e5e54408d8513
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 65350c9a247c5820cb2080d8230d308a37e98d7c
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
@@ -94,6 +94,16 @@ Per integrare Intune App SDK nelle app, è necessario consultare una delle guide
 
 
 
+## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>Abilitare un'app iOS o Android per l'accesso condizionale basato su app
+ 
+ Oltre ad abilitare l'app per i criteri di protezione delle app, è necessario soddisfare i requisiti seguenti affinché l'app possa funzionare correttamente con l'accesso condizionale basato su app di Azure Active Directory (AAD):
+ 
+ * L'app deve essere compilata con la [libreria di autenticazione di Azure Active Directory ](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) e abilitata per l'autenticazione con broker AAD.
+ 
+ * L'[ID client AAD](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) per l'app deve essere univoco sulle piattaforme iOS e Android.
+ 
+ 
+ 
 
 ## <a name="configure-telemetry-for-your-app"></a>Configurazione della telemetria per l'app
 

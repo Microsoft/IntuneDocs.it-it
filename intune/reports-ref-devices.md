@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6d8c4af1ff091fbb125ec8a06b3c46cc2424a0bd
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e3352335a5804575a39bbbf050ccb41b2674f2c
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="reference-for-devices-entities"></a>Informazioni di riferimento per le entità della categoria Devices
 
@@ -130,10 +130,23 @@ L'entità **EnrollmentTypes** indica se un dispositivo è aziendale, personale o
 
 L'entità **MdmStatuses** indica lo stato di conformità del dispositivo.
 
-| Proprietà  | Descrizione | Esempio |
+| Proprietà  | Descrizione |
+|---------|------------|
+| MdmStatusID |Identificatore univoco dello stato di conformità |
+| MdmStatusKey |Identificatore univoco dello stato di conformità nel data warehouse - chiave surrogata | 
+| ComplianceStatus |Stato di conformità del dispositivo. Deve avere uno dei valori nella tabella seguente. | 
+
+
+## <a name="example"></a>Esempio
+
+| MdmStatusID  | ComplianceStatus | Descrizione |
 |---------|------------|--------|
-| MdmStatusName |Identificatore MdmStatus |0 - Sconosciuto <br>1 - Conforme <br>2 - Non conforme |
-| MdmStatusKey |Identificatore univoco dello stato di conformità nel data warehouse - chiave surrogata | |
+| 0 |Sconosciuto |Lo stato di conformità del dispositivo è sconosciuto. |
+| 1 |Conforme |Il dispositivo è conforme. |
+| 2 |Non conforme |Il dispositivo non è conforme. |
+| 3 |Conflitto |La conformità del dispositivo ha generato un conflitto. |
+| 4 |Errore |Errore durante la lettura dello stato di conformità del dispositivo. |
+
 
 ## <a name="managementstates"></a>ManagementStates
 
