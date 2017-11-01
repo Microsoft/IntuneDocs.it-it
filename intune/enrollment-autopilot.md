@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 76b709f97b349966fbca7115959f64a56741380b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Registrare dispositivi Windows con il programma Windows AutoPilot Deployment
 Il programma Windows AutoPilot Deployment semplifica il provisioning dei dispositivi. Oggi, la compilazione e la gestione di immagini del sistema operativo personalizzate richiedono molto tempo. Allo stesso modo, l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali richiede molto tempo. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni, e così via, sui dispositivi dopo che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot) (Panoramica di Windows AutoPilot).
@@ -47,13 +47,16 @@ I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi
    - **Impostazioni privacy**: scegliere se visualizzare le impostazioni di privacy per gli utenti. 
    - **Contratto di licenza con l'utente finale**: scegliere se visualizzare il contratto di licenza per gli utenti.
    - **Tipo di account utente**: scegliere se il tipo di account utente è un utente **Amministratore** o **Standard**.
+
+     > [!Note]    
+     > Questa impostazione non si applica agli account Amministratore globale o Amministratore società. Questi account non possono essere utenti standard perché hanno accesso a tutte le funzionalità amministrative di Azure AD.
 8. Fare clic su **Crea** per creare il profilo. Il profilo di distribuzione AutoPilot è ora disponibile per l'assegnazione ai dispositivi.
      
-   > [!Note]    
-   > Con tutti i profili di distribuzione AutoPilot vengono configurate le impostazioni seguenti:
-   > - Ignorare Cortana, OneDrive e pagine di configurazione di registrazione OEM
-   > - Configurazione automatica per l'azienda o l'istituto di istruzione
-   > - Esperienza di accesso con il marchio aziendale o dell'istituto di istruzione    
+> [!Note]    
+> Con tutti i profili di distribuzione AutoPilot vengono configurate le impostazioni seguenti:
+> - Ignorare Cortana, OneDrive e pagine di configurazione di registrazione OEM
+> - Configurazione automatica per l'azienda o l'istituto di istruzione
+> - Esperienza di accesso con il marchio aziendale o dell'istituto di istruzione    
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>Assegnare un profilo di distribuzione AutoPilot
 Dopo aver creato i profili di distribuzione AutoPilot è possibile assegnarli ai dispositivi selezionati.
