@@ -545,6 +545,8 @@
     - name: Usare il data warehouse di Intune
       href: reports-nav-create-intune-reports.md
       items:
+        - name: Registro modifiche per il data warehouse
+          href: reports-changelog.md
         - name: Connettersi al data warehouse con Power BI
           href: reports-proc-get-a-link-powerbi.md
         - name: Creare un report dal feed OData con Power BI
@@ -602,18 +604,20 @@
         - name: Modello di dati del data warehouse
           href: reports-ref-data-model.md
           items:
-            - name: Informazioni di riferimento per l'entità Date
-              href: reports-ref-date.md
-            - name: Informazioni di riferimento per l'entità User
-              href: reports-ref-user.md
-            - name: Informazioni di riferimento per le entità di gestione delle app mobili (MAM)
-              href: reports-ref-mobile-app-management.md
-            - name: Informazioni di riferimento per le entità della categoria Devices
-              href: reports-ref-devices.md
             - name: Informazioni di riferimento per le entità della categoria Application
               href: reports-ref-application.md
-            - name: Riferimento per entità associazioni dispositivo utente
-              href: reports-ref-userdeviceassociations.md
+            - name: Informazioni di riferimento per l'entità Date
+              href: reports-ref-date.md
+            - name: Informazioni di riferimento per le entità della categoria Devices
+              href: reports-ref-devices.md
+            - name: Informazioni di riferimento per le entità di gestione delle app mobili (MAM)
+              href: reports-ref-mobile-app-management.md
+            - name: Informazioni di riferimento per le entità della categoria Policy
+              href: reports-ref-policy.md
+            - name: Riferimento dell'associazione utente-dispositivo
+              href: reports-ref-user-device.md
+            - name: Informazioni di riferimento per l'entità User
+              href: reports-ref-user.md
     - name: Trasferire localmente le app di Windows
       href: intune-graph-apis.md
       items:
