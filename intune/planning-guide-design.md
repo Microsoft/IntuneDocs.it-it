@@ -2,10 +2,10 @@
 title: Creare una progettazione
 description: Questo articolo semplifica la creazione di una progettazione per un'implementazione di Microsoft Intune in configurazione solo cloud.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 73e9a634e579b85ac5acabebf38c8a08bc1af86c
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: bd8f3372f3546b5fba20a253611e382f780b3236
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -262,7 +262,7 @@ Usare i criteri di configurazione per gestire le impostazioni di sicurezza e le 
 
 Per determinare le esigenze specifiche a livello di criteri di configurazione, è possibile [scaricare un modello della tabella qui sopra](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
-### <a name="profiles"></a>Profili
+### <a name="profiles"></a>Profiles
 
 Usare i profili per consentire all'utente finale di connettersi ai dati aziendali. Intune supporta diversi tipi di profili. Fare riferimento ai casi d'uso e ai requisiti per determinare quando verranno configurati i profili. Tutti i profili dispositivo devono essere classificati in base al tipo di piattaforma e inclusi nella documentazione della progettazione.
 
