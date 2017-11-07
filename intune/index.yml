@@ -9,7 +9,7 @@ metadata:
   author: arob98
   ms.author: angrobe
   manager: angrobe
-  ms.date: 10/07/2017
+  ms.date: 10/31/2017
   ms.topic: article
   ms.devlang: na
   ms.service: microsoft-intune
@@ -64,16 +64,16 @@ sections:
             title: Visualizzare l'architettura generale di Intune
             image:
               src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: reports-nav-create-intune-reports.md
-            title: Creare report con il data warehouse di Intune (anteprima)
+          - href: enrollment-autopilot.md
+            title: Supporto del programma Windows AutoPilot Deployment in Microsoft Intune
             image:
               src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/22/pfx-certificates-issued-using-the-intune-certificate-connector-fix-your-intune-migration-configuration-issues/'
-            title: '[Blog] PFX certificates issued using the Intune Certificate Connector (Certificati PFX emessi usando il connettore di certificati di Intune)'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/'
+            title: '[Blog] Security enhancements in the Intune service (Miglioramenti della sicurezza nel servizio Intune) '
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/'
-            title: '[Blog] Setting up communication between MAM-managed and MDM-managed apps (Impostazione della comunicazione tra app gestite da MAM e app gestite da MDM)'
+          - href: 'https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/'
+            title: '[Blog] Troubleshooting Portal makes diagnosing and resolving end user issues easier (Risoluzione dei problemi del portale per individuare e risolvere i problemi degli utenti finali in modo più semplice)'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
   - title: Video
