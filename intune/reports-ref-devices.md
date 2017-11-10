@@ -1,5 +1,5 @@
 ---
-title: Devices | Microsoft Docs
+title: Devices nel data warehouse di Intune | Microsoft Docs
 description: "Argomento di riferimento per la categoria Devices delle raccolte di entità nell'API data warehouse di Intune."
 keywords: Data warehouse di Intune
 author: mattbriggs
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e3352335a5804575a39bbbf050ccb41b2674f2c
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="reference-for-devices-entities"></a>Informazioni di riferimento per le entità della categoria Devices
 
@@ -145,7 +145,7 @@ L'entità **MdmStatuses** indica lo stato di conformità del dispositivo.
 | 1 |Conforme |Il dispositivo è conforme. |
 | 2 |Non conforme |Il dispositivo non è conforme. |
 | 3 |Conflitto |La conformità del dispositivo ha generato un conflitto. |
-| 4 |Errore |Errore durante la lettura dello stato di conformità del dispositivo. |
+| 4 |Error |Errore durante la lettura dello stato di conformità del dispositivo. |
 
 
 ## <a name="managementstates"></a>ManagementStates
@@ -167,7 +167,7 @@ L'entità **ManagementStates** fornisce informazioni dettagliate sullo stato del
 | 2 |RetireFailed | Il comando di ritiro del dispositivo non è riuscito. |
 | 3 |WipePending | C'è un comando di cancellazione in sospeso per il dispositivo. |
 | 4 |WipeFailed | Il comando di cancellazione del dispositivo non è riuscito. |
-| 5 |Unhealthy | Stato non integro. |
+| 5 |Non integro | Stato non integro. |
 | 6 |DeletePending | C'è un comando di eliminazione in sospeso per il dispositivo. |
 | 7 |RetireIssued | Al dispositivo è stato inviato un comando di ritiro. |
 | 8 |WipeIssued | Al dispositivo è stato inviato un comando di cancellazione. |
@@ -358,7 +358,7 @@ L'entità **MdmDeviceInventoryHistories** contiene gli snapshot quotidiani dei d
 | PlatformType |Tipo di piattaforma. |
 | ProcessorLevel |Livello del processore. |
 | ProcessorRevision |Revisione del processore. |
-| Prodotto |Prodotto. |
+| Product |Prodotto. |
 | ProductVersion |Versione del prodotto. |
 | OEM |OEM (Original Equipment Manufacturer). |
 | DeviceBuildVersion |Versione build del dispositivo. |
