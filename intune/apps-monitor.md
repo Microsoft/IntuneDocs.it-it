@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
-ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
+ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Come monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune
 
@@ -27,8 +27,22 @@ ms.lasthandoff: 10/11/2017
 
 Intune offre alcuni metodi per monitorare le proprietà delle app gestite, nonché il rispettivo stato di assegnazione.
 
-1. Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **App**.
-2. Nel pannello dell'elenco delle app scegliere l'app per cui visualizzare le informazioni. Verrà visualizzato il pannello <*Nome app*> **Stato dell'installazione del dispositivo**: pannello ![Stato di installazione dell'app](./media/monitor-apps.png)
+1. Accedere al portale di Azure.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** + **Intune**.
+3. Nel carico di lavoro di **App per dispositivi mobili** scegliere **App** dal gruppo **Gestisci**.
+     
+    ![Pannello stato di installazione app.](./media/monitor-apps.png)
+5. Nel pannello con l'elenco di app scegliere un'app. Verrà visualizzato il pannello <*nome app*> **Stato dell'installazione del dispositivo**.
+
+Il report sullo stato dell'installazione del dispositivo contiene le colonne seguenti:
+
+1.  **Nome dispositivo** Il nome del tipo di dispositivo.
+2.  **Nome utente** Il nome dell'utente.
+3.   **Piattaforma** Il sistema operativo installato nel dispositivo.
+4.  **Versione** Il numero di versione dell'applicazione.
+5.   **Stato** Gli stati possibili per le app sono: **Installato**, **Non installato**, **Installazione in sospeso** ed **Errore**.
+6. **Dettagli stato** Una descrizione leggibile dello stato dell'app nel dispositivo.
+7. **Ultima archiviazione** Quando il dispositivo ha eseguito l'ultimo accesso a Intune.
 
 Eseguire una delle operazioni seguenti per ottenere altre informazioni sulle app e sulle rispettive assegnazioni.
 

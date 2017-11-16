@@ -1,12 +1,12 @@
 ---
 title: Guida introduttiva al portale di Azure
 titlesuffix: Azure portal
-description: Informazioni sulla creazione e condivisione dei dashboard in Intune nel portale di Azure.
+description: Informazioni sulla creazione e condivisione dei dashboard di Intune nel portale di Azure.
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: cce99fb69abd5f99a4a1eae0c6fbe0e5178af450
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Guida introduttiva a Intune nel portale di Azure
 
-Nel portale di Azure è possibile trovare il servizio Intune. Ci sono numerosi servizi in Azure, molti dei quali possono non essere usati regolarmente. La personalizzazione del dashboard e della barra laterale consente di trovare rapidamente le informazioni appropriate, ogni volta che si esegue l'accesso per gestire i dispositivi con Intune.
+Nel portale di Azure è possibile trovare il servizio Intune. Azure include numerosi servizi, molti dei quali possono non essere usati regolarmente. La personalizzazione del dashboard e della barra laterale consente di trovare rapidamente le informazioni appropriate, ogni volta che si esegue l'accesso per gestire i dispositivi con Intune.
 
 ## <a name="changing-the-sidebar"></a>Modifica della barra laterale
 
-La __barra laterale__ sul lato sinistro del portale di Azure contiene un elenco di tutti i servizi di Azure disponibili. Questo elenco completo può essere modificato rispetto alla visualizzazione predefinita in modo da mantenere una visualizzazione permanente dei servizi più importanti. Come esempio di un servizio da aggiungere in cima all'elenco verrà usato Intune.
+La __barra laterale__ sul lato sinistro del portale di Azure contiene un elenco di tutti i servizi di Azure disponibili. Questo elenco completo può essere modificato rispetto alla visualizzazione predefinita in modo da avere una visualizzazione permanente dei servizi più importanti. Come esempio di un servizio da aggiungere in cima all'elenco verrà usato Intune.
 
 ![Utente che cerca Intune nell'elenco "Altri servizi".](./media/azure-add-intune1.png)
 
@@ -52,7 +52,7 @@ Sarà più rilevante dopo aver aggiunto altro contenuto a Intune come ad esempio
 
 ## <a name="using-services"></a>Uso dei servizi
 
-Ogni volta che si apre Intune o qualsiasi altro servizio in Azure, verrà visualizzato in un **pannello**. Alcuni dei primi carichi di lavoro usati in Intune, ad esempio **Utenti**, **Gruppi** e **App per dispositivi mobili**, vengono visualizzati tutti in un pannello a schermo intero. Quando si seleziona il carico di lavoro, il relativo pannello verrà aperto nell'intera pagina. Gli altri pannelli, quando vengono aperti, scorreranno dal lato destro del pannello e verranno compressi sotto il pannello principale da cui provengono.
+Ogni volta che si apre Intune o qualsiasi altro servizio in Azure, questo verrà visualizzato in un **pannello**. Alcuni dei primi carichi di lavoro usati in Intune, ad esempio **Utenti**, **Gruppi** e **App per dispositivi mobili**, vengono visualizzati tutti in un pannello a schermo intero. Quando si seleziona il carico di lavoro, il relativo pannello viene aperto a pagina intera. Gli altri pannelli, quando vengono aperti, scorrono dal lato destro del pannello e vengono compressi sotto il pannello principale da cui provengono.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

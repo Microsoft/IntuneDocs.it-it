@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: ff83c5926b04b11c67799e0486249dc339a167c1
+ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Riassegnare i criteri di accesso condizionale dal portale di Intune classico al portale di Azure
 
@@ -82,7 +82,7 @@ Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amm
     ![Confronto dell'interfaccia utente per i gruppi di utenti tra i portali di Intune e di Azure](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > La selezione effettuata per il portale di Azure deve corrispondere alla selezione effettuata per il portale di Azure. Ad esempio, se sono selezionati tutti gli utenti nel portale di Intune classico, selezionare **Tutti gli utenti** nel portale di Azure. Inoltre, se è stata scelta l'opzione **Gruppi esenti** nel portale di Intune classico, escludere tali gruppi anche nel portale di Azure.
+    > La selezione eseguita per il portale di Azure deve corrispondere alla selezione eseguita per il portale classico. Ad esempio, se sono selezionati tutti gli utenti nel portale di Intune classico, selezionare **Tutti gli utenti** nel portale di Azure. Inoltre, se è stata scelta l'opzione **Gruppi esenti** nel portale di Intune classico, escludere tali gruppi anche nel portale di Azure.
 
 5. Dopo aver scelto il gruppo, fare clic su **Seleziona** e quindi su **Fine**.
 

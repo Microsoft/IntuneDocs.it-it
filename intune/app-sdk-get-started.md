@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 12/15/2016
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65350c9a247c5820cb2080d8230d308a37e98d7c
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: a0134f19aea3956a6aff852d97e9d95e1882e056
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
@@ -113,8 +113,50 @@ Microsoft Intune raccoglie i dati sulle statistiche di utilizzo dell'app.
 
     * Se si sceglie di non inviare i dati della telemetria a Microsoft Intune dall'app, è necessario disabilitare la trasmissione della telemetria SDK impostando la proprietà `MAMTelemetryDisabled` su "YES" nel dizionario IntuneMAMSettings.
 
-
 * **Intune App SDK per Android**: i dati della telemetria non vengono registrati con l'SDK.
+
+ Il numero di versione delle app line-of-business iOS e Android è visibile <!-- 1380712 -->
+
+## <a name="line-of-business-app-version-numbers"></a>Numeri di versione di app line-of-business
+
+Nelle app line-of-business in Intune viene ora visualizzato il numero di versione per le app iOS e Android. Il numero viene visualizzato nel portale di Azure nell'elenco delle app e nel pannello della panoramica dell'app. Gli utenti finali possono visualizzare il numero dell'app nell'app Portale aziendale e nel portale Web.
+
+### <a name="full-version-number"></a>Numero di versione completo
+
+Il numero di versione completo identifica una versione specifica dell'app. Il numero viene visualizzato come _Versione_(_Build_). Ad esempio, 2.2(2.2.17560800)
+
+Il numero di versione completo include due componenti:
+
+ - **Versione**  
+   Il numero di versione è il numero di versione leggibile dell'app. Viene usato dagli utenti finali per identificare diverse versioni dell'app.
+
+ - **Numero di build**  
+    Il numero di build è un numero interno che può essere usato nel rilevamento delle app e per gestire l'app a livello di codice. Il numero di build si riferisce a un'iterazione dell'app che fa riferimento alle modifiche nel codice.
+
+### <a name="version-and-build-number-in-android-and-ios"></a>Numero di versione e di build in Android e iOS
+
+Sia Android che iOS usano il numero di versione e di build per i riferimenti alle app. Tuttavia, entrambi hanno significati che sono specifici del sistema operativo. Nella tabella seguente viene illustrato come sono correlati questi termini.
+
+Quando si sviluppa un'applicazione line-of-business per l'uso in Intune, ricordarsi di usare sia il numero di versione che il numero di build. Le funzionalità di gestione delle app di Intune si basano su un elemento **CFBundleVersion** (per iOS) e **PackageVersionCode** (per Android) significativo. Questi numeri sono inclusi nel manifesto dell'app. 
+
+Intune|iOS|Android|Descrizione|
+|---|---|---|---|
+Numero versione|CFBundleShortVersionString|PackageVersionName |Questo numero indica una versione specifica dell'app per gli utenti finali.|
+Numero build|CFBundleVersion|PackageVersionCode |Questo numero viene usato per indicare un'iterazione nel codice dell'app.|
+
+#### <a name="ios"></a>iOS
+
+- **CFBundleShortVersionString**  
+    Specifica il numero di versione del bundle. Questo numero identifica una versione rilasciata dell'app. Il numero viene usato dagli utenti finali per fare riferimento all'app.
+ - **CFBundleVersion**  
+    La versione di build del bundle, che identifica un'iterazione del bundle. Il numero può indicare un bundle rilasciato o non rilasciato. Il numero viene usato per il rilevamento dell'app.
+
+#### <a name="android"></a>Android
+
+ - **PackageVersionName**  
+    Il numero di versione visualizzato dagli utenti. Questo attributo può essere impostato come una stringa non elaborata o come un riferimento a una risorsa di stringa. La stringa non ha altri scopi se non la visualizzazione da parte degli utenti.
+ - **PackageVersionCode**  
+    Un numero di versione interno. Questo numero viene usato solo per determinare se una versione è più recente rispetto a un'altra. I valori più alti indicano versioni più recenti. Non si tratta della versione 
 
 ## <a name="next-steps-after-integration"></a>Passaggi successivi dopo l'integrazione
 

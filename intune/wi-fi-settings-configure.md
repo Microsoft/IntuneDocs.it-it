@@ -15,11 +15,11 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c2417c4739a85c30fa18c000ee06fac6fe83282
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: e3333a5addfd0c4ab757121e22e19ac66c0b3e1d
+ms.sourcegitcommit: ec8561b8c63515e0b5f21a858984108dc5dbd5d3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Come configurare le impostazioni Wi-Fi in Microsoft Intune
 
@@ -60,7 +60,7 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
     - **Windows 8.1 e versioni successive (importazione di un profilo)**
 6. Dall'elenco a discesa dei tipi di **profilo** scegliere **Wi-Fi di base** o **Wi-Fi aziendale**.
     >[!TIP]
-    >Usare **Wi-Fi di base** per fornire informazioni di base quali il nome della rete e l'SSID. **Wi-Fi aziendale** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi lo usa. **Wi-Fi per importazione ** (per Windows 8.1 e Windows 10) consente di importare le impostazioni Wi-Fi come un file XML precedentemente esportato da un altro dispositivo.
+    >Usare **Wi-Fi di base** per fornire informazioni di base quali il nome della rete e l'SSID. **Wi-Fi aziendale** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi lo usa. **Wi-Fi per importazione**  (per Windows 8.1 e Windows 10) consente di importare le impostazioni Wi-Fi come un file XML precedentemente esportato da un altro dispositivo.
 7. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli argomenti seguenti per il dettaglio delle impostazioni di ogni piattaforma:
     - [Impostazioni Android e Android for Work](wi-fi-settings-android.md)
     - [Impostazioni iOS](wi-fi-settings-ios.md)

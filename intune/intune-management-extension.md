@@ -1,0 +1,72 @@
+---
+title: Gestire gli script di PowerShell in Intune per i dispositivi Windows 10
+titlesuffix: Azure portal
+description: Informazioni su come caricare script di PowerShell in Intune per l'esecuzione in dispositivi Windows 10.
+keywords: 
+author: dougeby
+manager: angrobe
+ms.date: 11/08/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
+ms.reviewer: 
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 237d6d090d0aae7f9a0853839b72d55618f4607e
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/09/2017
+---
+# <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gestire gli script di PowerShell in Intune per i dispositivi Windows 10
+L'estensione di gestione di Intune consente di caricare script di PowerShell in Intune da eseguire in dispositivi Windows 10. L'estensione di gestione integra le funzionalità di gestione di dispositivi mobili (MDM, Mobile Device Management) di Windows 10 e rende più semplice passare a una gestione moderna.
+
+## <a name="moving-to-modern-management"></a>Passare alla gestione moderna
+I computer destinati agli utenti finali stanno attraversando una fase di trasformazione digitale. Le attività IT tradizionali e classiche si occupano di piattaforme su singoli dispositivi, di dispositivi di proprietà dell'azienda, di utenti che lavorano in ufficio e di una serie di processi reattivi manuali. Un'area di lavoro moderna, tuttavia, prevede piattaforme su più dispositivi, di proprietà dell'utente finale e dell'azienda, consente di lavorare ovunque ci si trovi e mette a disposizione processi IT automatizzati e proattivi. 
+
+I servizi MDM, ad esempio Microsoft Intune, gestiscono i dispositivi Windows 10 tramite il protocollo MDM. Il client di gestione predefinito in Windows 10 è in grado di comunicare con Intune per eseguire attività di gestione aziendale, promuovendo l'adozione di metodi di gestione moderni nei dispositivi Windows 10. Possono tuttavia rivelarsi necessarie alcune funzionalità, ad esempio la configurazione avanzata dei dispositivi, la risoluzione dei problemi e la gestione di app Win32 legacy, attualmente non disponibili tra le funzioni di gestione MDM di Windows 10. Per avere tali funzionalità, è possibile eseguire il client software Intune nei dispositivi Windows 10. Di conseguenza, non si è in grado di usare le nuove funzionalità offerte dalla gestione MDM di Windows 10. [Esaminare le differenze tra il client software Intune e la funzione di gestione MDM di Windows 10](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison).
+
+L'estensione di gestione di Intune integra le funzionalità di gestione MDM disponibili in Windows 10. È possibile creare script di PowerShell da eseguire nei dispositivi Windows 10 per ottenere le funzionalità necessarie. È ad esempio possibile creare uno script di PowerShell che consenta di installare un'app Win32 legacy nei dispositivi Windows 10, caricare lo script in Intune, assegnarlo a un gruppo di Azure Active Directory (AD) ed eseguirlo nei dispositivi Windows 10. È quindi possibile monitorare lo stato dell'esecuzione dello script nei dispositivi Windows 10 dall'inizio alla fine.
+
+## <a name="prerequisites"></a>Prerequisiti
+L'estensione di gestione di Intune ha i prerequisiti seguenti:
+- I dispositivi devono essere stati aggiunti ad Azure AD
+- I dispositivi devono eseguire Windows 10 versione 1607 o successiva
+
+## <a name="create-a-powershell-script-policy"></a>Creare un criterio di script di PowerShell 
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
+4. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Script di PowerShell**.
+5. Nel pannello **Script di PowerShell** scegliere **Aggiungi script**.
+6. Nel pannello **Aggiungi uno script di PowerShell** immettere un **Nome** e una **Descrizione** per lo script di PowerShell.
+7. In **Percorso dello script** cercare e selezionare lo script di PowerShell. Lo script deve avere dimensioni inferiori a 10 KB (ASCII) o a 5 KB (Unicode).
+8. Scegliere **Configura** e quindi scegliere se eseguire lo script con le credenziali dell'utente del dispositivo (**Sì**) o nel contesto di sistema (**No**). Per impostazione predefinita, lo script viene eseguito nel contesto di sistema. Selezionare **Sì**, a meno che non sia necessario eseguire lo script nel contesto di sistema. 
+  ![Pannello Aggiungi uno script di PowerShell](./media/mgmt-extension-add-script.png)
+9. Scegliere se lo script deve essere firmato da un autore attendibile (**Sì**). Per impostazione predefinita, non è necessario che lo script sia firmato. 
+10. Fare clic su **OK** e quindi fare clic su **Crea** per salvare lo script.
+
+## <a name="assign-a-powershell-script-policy"></a>Assegnare un criterio di script di PowerShell
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
+4. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Script di PowerShell**.
+5. Nel pannello **Script di PowerShell** selezionare lo script da assegnare e quindi scegliere **Gestisci** > **Assegnazioni**.
+  ![Pannello Aggiungi uno script di PowerShell](./media/mgmt-extension-assignments.png)
+ 
+6. Scegliere **Seleziona gruppi** per elencare i gruppi di Azure AD disponibili. 
+7. Selezionare i gruppi e quindi fare clic su **Seleziona** per assegnare il criterio ai gruppi selezionati.
+
+L'estensione di gestione di Intune effettua la sincronizzazione con Intune una volta ogni ora. Dopo aver assegnato il criterio ai gruppi di Azure AD, lo script di PowerShell viene eseguito e vengono visualizzati i risultati dell'esecuzione. 
+ 
+## <a name="monitor-run-status-for-powershell-scripts"></a>Monitorare lo stato di esecuzione degli script di PowerShell
+È possibile monitorare lo stato dell'esecuzione degli script di PowerShell per utenti e dispositivi nel portale di Azure.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
+4. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Script di PowerShell**.
+5. Nel pannello **Script di PowerShell** selezionare lo script da monitorare e quindi scegliere **Monitoraggio** e uno dei report seguenti:
+   - **Stato del dispositivo**
+   - **Stato utente**

@@ -5,20 +5,20 @@ keywords: sdk, Xamarin, intune
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 11/15/2016
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8ab9807d22aa1a5c232b595df2bd999c0c178b16
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: f50ecfbf5a0ac0b05de38e0ad29b27a729ab824b
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Componente Xamarin per Microsoft Intune App SDK
 
@@ -29,6 +29,9 @@ ms.lasthandoff: 10/11/2017
 
 ## <a name="overview"></a>Panoramica
 Il [componente Xamarin per Intune App SDK](https://components.xamarin.com/view/microsoft.intune.mam) consente l'uso dei [criteri di protezione delle app di Intune](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) nelle app per iOS e Android compilate con Xamarin. Il componente consente agli sviluppatori di creare con facilità le funzionalità di protezione dell'app Intune nella propria app basata su Xamarin.
+
+> [!NOTE]
+> Il supporto per l'SDK di Intune per Xamarin è attualmente disponibile in anteprima. 
 
 Il componente Xamarin per Microsoft Intune App SDK consente di incorporare i criteri di protezione delle app di Intune, definiti anche criteri APP o MAM, nelle app sviluppate con Xamarin. Un'applicazione abilitata per MAM è integrata con Intune App SDK. Gli amministratori IT possono distribuire i criteri di protezione all'app per dispositivi mobili quando Intune gestisce attivamente l'app.
 

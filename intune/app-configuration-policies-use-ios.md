@@ -1,12 +1,12 @@
 ---
-title: Come usare i criteri di configurazione delle app di Intune per iOS
+title: Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti | Microsoft Docs
 titlesuffix: Azure portal
-description: Informazioni su come usare i criteri di configurazione delle app per fornire i dati di configurazione a un'app iOS in esecuzione."
+description: Informazioni su come usare i criteri di configurazione delle app per specificare i dati di configurazione per un'app iOS in fase di esecuzione.
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,31 +15,17 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc42f3cafa83b5f7ba053d03dbd066b725bb1fee
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
+ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
-# <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Come usare i criteri di configurazione delle app di Microsoft Intune per iOS
+# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni usate quando gli utenti eseguono un'app iOS. Ad esempio, un'app può richiedere agli utenti di specificare quanto segue:
-
--   Un numero di porta personalizzato.
-
--   Impostazioni della lingua.
-
--   Impostazioni di sicurezza.
-
--   Impostazioni di personalizzazione, ad esempio il logo aziendale.
-
-Se gli utenti immettono queste impostazioni in modo non corretto, si può verificare un aumento del carico dell'help desk e un rallentamento nell'adozione di nuove app.
-
-I criteri di configurazione delle app permettono di evitare questi problemi consentendo di assegnare tali impostazioni agli utenti in un criterio prima dell'esecuzione dell'app. Le impostazioni vengono quindi specificate automaticamente e gli utenti non devono eseguire alcuna azione. Le app devono essere scritte per supportare l'uso di configurazioni di app. Per altre informazioni, consultare il fornitore dell'app.
-
-Questi criteri non vengono assegnati direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi assegnata. Le impostazioni dei criteri vengono usate ogni volta che l'app ne esegue la ricerca (in genere alla prima esecuzione).
+Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni quando gli utenti eseguono un'app iOS. Questi criteri non vengono assegnati direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi assegnata. Le impostazioni dei criteri vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
 
 > [!TIP]
 > Questo tipo di criteri è attualmente disponibile solo per i dispositivi che eseguono iOS 8.0 e versioni successive. Supporta i tipi di installazione di app seguenti:
@@ -50,67 +36,55 @@ Questi criteri non vengono assegnati direttamente agli utenti e ai dispositivi, 
 > Per altre informazioni sui tipi di installazione delle app, vedere [How to add an app to Microsoft Intune](apps-add.md) (Come aggiungere un'app a Microsoft Intune).
 
 ## <a name="create-an-app-configuration-policy"></a>Creare criteri di configurazione delle app
-1.  Accedere al portale Azure.
-2.  Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3.  Nel pannello **Intune** scegliere **App per dispositivi mobili**.
-4.  Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **Criteri di configurazione dell'app**.
-5.  Nel pannello dell'elenco dei criteri scegliere **Aggiungi**.
-6.  Nel pannello **Aggiungi i criteri di configurazione** specificare un **Nome** e una **Descrizione** facoltativa per i criteri di configurazione dell'app.
-7.  Per **Tipo di registrazione del dispositivo**, scegliere una delle opzioni seguenti:
-    - **Registrato in Intune**: per le app gestite da Intune.
-    - **Non registrato in Intune**: per le app non gestite da Intune o gestite da un'altra soluzione.
-8.  Per **Piattaforma**, scegliere **iOS** (solo per i dispositivi registrati in Intune)
-9.  Scegliere **App associata** e nel pannello **App associata** selezionare l'app gestita a cui si desidera applicare la configurazione.
-10. Nel pannello **Aggiungi i criteri di configurazione** scegliere **Impostazioni di configurazione**
-11. Nel pannello **Impostazioni di configurazione** scegliere come specificare i valori XML che costituiscono il profilo di configurazione selezionando una delle opzioni seguenti:
-    - **Immettere i dati XML** (solo per i dispositivi registrati in Intune): immettere o incollare un elenco di proprietà XML contenente le impostazioni di configurazione dell'app desiderate. Il formato dell'elenco di proprietà XML varia a seconda dell'app da configurare. Per altre informazioni sul formato esatto da usare, contattare il fornitore dell'app.
-Intune verifica che il file XML aggiunto sia in un formato valido. Non verifica che l'elenco di proprietà XML funzioni con l'app a cui è associato.
-Per altre informazioni sugli elenchi di proprietà XML, vedere l'articolo relativo agli [elenchi di proprietà XML](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) nella libreria degli sviluppatori iOS.
-    - **Usa progettazione configurazione** (dispositivi registrati o non registrati in Intune): consente di specificare le coppie chiave-valore XML direttamente nel portale.
-11. Al termine, tornare al pannello **Aggiungi i criteri di configurazione** e premere **Crea**.
 
-Il criterio viene creato e visualizzato nel pannello dell'elenco dei criteri.
+1. Accedere al portale di Azure.
+2. Scegliere **Altri servizi** > **Monitoraggio e gestione** + **Intune**.
+3. Scegliere il carico di lavoro delle **app per dispositivi mobili**.
+4. Fare clic su **Criteri di configurazione dell'app** nel gruppo **Gestisci** e quindi fare clic su **Aggiungi**.
+5. Impostare i dettagli seguenti:
+    - **Nome**  
+      Il nome del profilo che verrà visualizzato nel portale di Azure.
+    - **Descrizione**  
+      La descrizione del profilo che verrà visualizzata nel portale di Azure.
+    - **Tipo di registrazione del dispositivo**  
+      Scegliere **Dispositivi gestiti**.
+6. Selezionare **iOS** per **Piattaforma**.
+7.  Scegliere **App associata** e nel pannello **App associata** selezionare l'app gestita a cui si desidera applicare la configurazione.
+8.  Nel pannello **Aggiungi i criteri di configurazione** scegliere **Impostazioni di configurazione**
+9. Selezionare **Formato delle impostazioni di configurazione**. Selezionare un'opzione:
+    - **[Usa progettazione configurazione](#Use-the-configuration-designer)**
+    - **[Immettere i dati XML](#enter-xml-data)**
+10. Fare clic su **OK** e scegliere **Aggiungi**.
 
+## <a name="use-configuration-designer"></a>Usare Progettazione configurazione
 
+È possibile usare la finestra di progettazione della configurazione per le app disponibili in dispositivi registrati o non registrati in Intune. La finestra di progettazione consente di configurare chiavi e valori di configurazione specifici. È anche necessario specificare il tipo di dati per ogni valore. Le impostazioni vengono fornite automaticamente alle app durante l'installazione.
 
->[!Note]
->È possibile usare [Intune App SDK](https://docs.microsoft.com/intune/app-sdk-ios) per preparare le app line-of-business che devono essere gestite dai criteri di protezione delle app di Intune e i criteri di configurazione delle app per dispositivi registrati o non registrati in Intune. Ad esempio, è possibile usare i criteri di configurazione di un'app per configurare gli URL consentiti e bloccati per [Intune Managed Browser](app-configuration-managed-browser.md). Se l'app è compatibile con questi criteri, è possibile configurarla usando i criteri.
+### <a name="add-a-setting"></a>Aggiungere un'impostazione
 
+1. Per ogni chiave e valore nella configurazione, impostare: <ul><li>**Chiave di configurazione**<br>Viene usata per identificare in modo univoco la configurazione specifica delle impostazioni.</li><li>**Tipo di valore**<br>Il tipo di dati del valore di configurazione. I tipi includono Integer, Real, String o Boolean.</li><li>**Valore di configurazione**<br>Il valore per la configurazione.</li></ul>
+2. Fare clic su **OK** per specificare le impostazioni di configurazione.
 
-Quando l'app assegnata viene eseguita in un dispositivo, viene eseguita con le impostazioni configurate nei criteri di configurazione dell'app.
-Vedere la documentazione dell'app che si sta configurando per informazioni su cosa accade se uno o più criteri di configurazione dell'app sono in conflitto.
+### <a name="delete-a-setting"></a>Eliminare un'impostazione
 
->[!Tip]
->È anche possibile usare l'API Graph per eseguire queste attività. Per informazioni dettagliate, vedere il [riferimento dell'API Graph sulla configurazione di destinazione MAM](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
-
-
-## <a name="information-about-the-xml-file-format"></a>Informazioni sul formato di file XML
-
-Intune supporta i tipi di dati seguenti in un elenco di proprietà:
-
-- &lt;integer&gt;
-- &lt;real&gt;
-- &lt;string&gt;
-- &lt;array&gt;
-- &lt;dict&gt;
-- &lt;true /&gt; o &lt;false /&gt;
-
-Per altre informazioni sui tipi di dati, vedere l'articolo relativo agli [elenchi di proprietà](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) nella libreria degli sviluppatori iOS.
-
-Intune supporta anche i tipi di token seguenti nell'elenco di proprietà:
-- \{\{userprincipalname\}\} - (esempio: **John@contoso.com**)
-- \{\{mail\}\} - (esempio: **John@contoso.com**)
-- \{\{partialupn\}\} - (esempio: **Luca**)
-- \{\{accountid\}\} - (esempio: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} - (esempio: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} - (esempio: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} - (esempio: **Luca Udinesi**)
-- \{\{serialnumber\}\} - (esempio: **F4KN99ZUG5V2**) per dispositivi iOS
-- \{\{serialnumberlast4digits\}\} - (esempio: **G5V2**) per dispositivi iOS
+1. Fare clic sui puntini di sospensione (…) accanto all'impostazione.
+2. Selezionare **Elimina**.
 
 I caratteri \{\{ e \}\} vengono usati solo dai tipi di token e non devono essere usati per altri scopi.
 
-## <a name="example-format-for-an-app-configuration-xml-file"></a>Formato di esempio per file XML di configurazione delle app
+## <a name="enter-xml-data"></a>Immettere i dati XML
+
+È possibile digitare o incollare un elenco di proprietà XML contenente le impostazioni di configurazione dell'app per i dispositivi registrati in Intune. Il formato dell'elenco di proprietà XML varia a seconda dell'app da configurare. Per altre informazioni sul formato esatto da usare, contattare il fornitore dell'app.
+
+Intune convalida il formato XML. Tuttavia, Intune non verifica se l'elenco di proprietà XML funziona con l'app di destinazione.
+Per altre informazioni sugli elenchi di proprietà XML, vedere l'articolo relativo agli [elenchi di proprietà XML]
+
+Per altre informazioni sugli elenchi di proprietà XML:
+
+  -  Leggere [Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+  -  Consultare la [guida agli elenchi di proprietà XML](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) nella libreria per gli sviluppatori iOS.
+
+### <a name="example-format-for-an-app-configuration-xml-file"></a>Formato di esempio per file XML di configurazione delle app
 
 Quando si crea un file di configurazione di app, è possibile specificare uno o più dei seguenti valori usando questo formato:
 
@@ -137,8 +111,30 @@ Quando si crea un file di configurazione di app, è possibile specificare uno o 
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
+### <a name="supported-xml-plist-data-types"></a>Tipi di dati supportati nell'elenco di proprietà XML
+
+Intune supporta i tipi di dati seguenti in un elenco di proprietà:
+
+- &lt;integer&gt;
+- &lt;real&gt;
+- &lt;string&gt;
+- &lt;array&gt;
+- &lt;dict&gt;
+- &lt;true /&gt; o &lt;false /&gt;
+
+### <a name="tokens-used-in-the-property-list"></a>Token usati nell'elenco di proprietà
+
+Intune supporta anche i tipi di token seguenti nell'elenco di proprietà:
+- \{\{userprincipalname\}\} - (esempio: **John@contoso.com**)
+- \{\{mail\}\} - (esempio: **John@contoso.com**)
+- \{\{partialupn\}\} - (esempio: **Luca**)
+- \{\{accountid\}\} - (esempio: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
+- \{\{deviceid\}\} - (esempio: **b9841cd9-9843-405f-be28-b2265c59ef97**)
+- \{\{userid\}\} - (esempio: **3ec2c00f-b125-4519-acf0-302ac3761822**)
+- \{\{username\}\} - (esempio: **Luca Udinesi**)
+- \{\{serialnumber\}\} - (esempio: **F4KN99ZUG5V2**) per dispositivi iOS
+- \{\{serialnumberlast4digits\}\} - (esempio: **G5V2**) per dispositivi iOS
 
 ## <a name="next-steps"></a>Passaggi successivi
 

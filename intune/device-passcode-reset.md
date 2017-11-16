@@ -14,18 +14,18 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3defec3624944918d14b9c4527487c368c487dd6
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 0446db40b829e92b681294ecc497a2c475480fac
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reset-the-passcode-on-intune-managed-devices"></a>Reimpostare il passcode nei dispositivi gestiti con Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-L'azione **Reimposta passcode** genera un nuovo passcode per il dispositivo che viene visualizzato nel pannello **Panoramica di <*nome dispositivo*> **.
+L'azione **Rimuovi il passcode** genera un nuovo passcode per il dispositivo che viene visualizzato nel pannello **Panoramica** di <*nome dispositivo*> .
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
@@ -41,7 +41,7 @@ L'azione **Reimposta passcode** genera un nuovo passcode per il dispositivo che 
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
 4. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.
-5. Nell'elenco dei dispositivi gestiti scegliere un dispositivo e quindi scegliere l'azione remota del dispositivo **Reimposta passcode**.
+5. Nell'elenco dei dispositivi gestiti scegliere un dispositivo e quindi scegliere l'azione remota del dispositivo **Rimuovi il passcode**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
