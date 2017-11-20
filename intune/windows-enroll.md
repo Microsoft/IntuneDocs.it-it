@@ -1,11 +1,11 @@
 ---
 title: Registrazione di dispositivi Windows
 titlesuffix: Azure portal
-description: Abilitare la gestione di dispositivi mobili (MDM) Intune per i dispositivi Windows."
+description: Abilitare la gestione di dispositivi mobili (MDM) Intune per i dispositivi Windows.
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 08/30/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd858d617d9a9f2154a5682f5421a096d0c28224
-ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
+ms.openlocfilehash: 02563b85a6bcac12c60537af4a998b09bca3b6ee
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices"></a>Registrazione di dispositivi Windows
 
@@ -30,6 +30,7 @@ L'amministratore di Intune può semplificare la registrazione nei seguenti modi:
 - [Abilitare la registrazione automatica](#enable-windows-10-automatic-enrollment) (richiede Azure AD Premium)
 - [Registrazione CNAME](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Abilitare la registrazione in blocco](windows-bulk-enroll.md) (sono necessari Azure AD Premium e Progettazione configurazione di Windows)
+- [Aggiungere un messaggio personalizzato](windows-enrollment-status.md) per salutare agli utenti quando si registrano e visualizzano lo stato di avanzamento delle impostazioni dei criteri man mano che vengono applicati
 
 La semplificazione della registrazione dei dispositivi Windows dipende da due fattori:
 

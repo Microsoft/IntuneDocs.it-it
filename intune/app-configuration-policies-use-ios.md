@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 2226477d40f2bb70dd047ed58e8789fd9bee4ecb
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 
@@ -40,21 +40,21 @@ Usare i criteri di configurazione delle app in Microsoft Intune per specificare 
 1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** + **Intune**.
 3. Scegliere il carico di lavoro delle **app per dispositivi mobili**.
-4. Fare clic su **Criteri di configurazione dell'app** nel gruppo **Gestisci** e quindi fare clic su **Aggiungi**.
+4. Scegliere **Criteri di configurazione dell'app** nel gruppo **Gestisci** e quindi scegliere **Aggiungi**.
 5. Impostare i dettagli seguenti:
-    - **Nome**  
+    - **Nome**<br>
       Il nome del profilo che verrà visualizzato nel portale di Azure.
-    - **Descrizione**  
-      La descrizione del profilo che verrà visualizzata nel portale di Azure.
-    - **Tipo di registrazione del dispositivo**  
+    - **Descrizione**<br>
+      Descrizione del profilo che verrà visualizzata nel portale di Azure.
+    - **Tipo di registrazione del dispositivo**<br>
       Scegliere **Dispositivi gestiti**.
 6. Selezionare **iOS** per **Piattaforma**.
-7.  Scegliere **App associata** e nel pannello **App associata** selezionare l'app gestita a cui si desidera applicare la configurazione.
-8.  Nel pannello **Aggiungi i criteri di configurazione** scegliere **Impostazioni di configurazione**
-9. Selezionare **Formato delle impostazioni di configurazione**. Selezionare un'opzione:
+7.  Scegliere **App associata**. Nel pannello **App associata** scegliere l'app gestita alla quale applicare la configurazione.
+8.  Nel pannello **Aggiungi i criteri di configurazione** scegliere **Impostazioni di configurazione**.
+9. Selezionare **Formato delle impostazioni di configurazione**. Selezionare una delle opzioni seguenti:
     - **[Usa progettazione configurazione](#Use-the-configuration-designer)**
     - **[Immettere i dati XML](#enter-xml-data)**
-10. Fare clic su **OK** e scegliere **Aggiungi**.
+10. Scegliere **OK** e quindi **Aggiungi**.
 
 ## <a name="use-configuration-designer"></a>Usare Progettazione configurazione
 
@@ -62,12 +62,18 @@ Usare i criteri di configurazione delle app in Microsoft Intune per specificare 
 
 ### <a name="add-a-setting"></a>Aggiungere un'impostazione
 
-1. Per ogni chiave e valore nella configurazione, impostare: <ul><li>**Chiave di configurazione**<br>Viene usata per identificare in modo univoco la configurazione specifica delle impostazioni.</li><li>**Tipo di valore**<br>Il tipo di dati del valore di configurazione. I tipi includono Integer, Real, String o Boolean.</li><li>**Valore di configurazione**<br>Il valore per la configurazione.</li></ul>
-2. Fare clic su **OK** per specificare le impostazioni di configurazione.
+1. Per ogni chiave e valore nella configurazione, impostare:
+   - **Chiave di configurazione**<br>
+     Chiave che identifica in modo univoco la configurazione specifica delle impostazioni.
+   - **Tipo di valore**<br>
+     Il tipo di dati del valore di configurazione. I tipi includono Integer, Real, String o Boolean.
+   - **Valore di configurazione**<br>
+     Il valore per la configurazione.
+2. Scegliere **OK** per specificare le impostazioni di configurazione.
 
 ### <a name="delete-a-setting"></a>Eliminare un'impostazione
 
-1. Fare clic sui puntini di sospensione (…) accanto all'impostazione.
+1. Scegliere i puntini di sospensione (**...**) accanto all'impostazione.
 2. Selezionare **Elimina**.
 
 I caratteri \{\{ e \}\} vengono usati solo dai tipi di token e non devono essere usati per altri scopi.
@@ -76,13 +82,12 @@ I caratteri \{\{ e \}\} vengono usati solo dai tipi di token e non devono essere
 
 È possibile digitare o incollare un elenco di proprietà XML contenente le impostazioni di configurazione dell'app per i dispositivi registrati in Intune. Il formato dell'elenco di proprietà XML varia a seconda dell'app da configurare. Per altre informazioni sul formato esatto da usare, contattare il fornitore dell'app.
 
-Intune convalida il formato XML. Tuttavia, Intune non verifica se l'elenco di proprietà XML funziona con l'app di destinazione.
-Per altre informazioni sugli elenchi di proprietà XML, vedere l'articolo relativo agli [elenchi di proprietà XML]
+Intune convalida il formato XML. Tuttavia Intune non verifica se l'elenco di proprietà XML (PList) funziona con l'app di destinazione.
 
 Per altre informazioni sugli elenchi di proprietà XML:
 
   -  Leggere [Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-  -  Consultare la [guida agli elenchi di proprietà XML](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) nella libreria per gli sviluppatori iOS.
+  -  Vedere [Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Informazioni sugli elenchi di proprietà XML) nella libreria per gli sviluppatori iOS.
 
 ### <a name="example-format-for-an-app-configuration-xml-file"></a>Formato di esempio per file XML di configurazione delle app
 
@@ -126,15 +131,15 @@ Intune supporta i tipi di dati seguenti in un elenco di proprietà:
 ### <a name="tokens-used-in-the-property-list"></a>Token usati nell'elenco di proprietà
 
 Intune supporta anche i tipi di token seguenti nell'elenco di proprietà:
-- \{\{userprincipalname\}\} - (esempio: **John@contoso.com**)
-- \{\{mail\}\} - (esempio: **John@contoso.com**)
-- \{\{partialupn\}\} - (esempio: **Luca**)
-- \{\{accountid\}\} - (esempio: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} - (esempio: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} - (esempio: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} - (esempio: **Luca Udinesi**)
-- \{\{serialnumber\}\} - (esempio: **F4KN99ZUG5V2**) per dispositivi iOS
-- \{\{serialnumberlast4digits\}\} - (esempio: **G5V2**) per dispositivi iOS
+- \{\{userprincipalname\}\}, ad esempio **John@contoso.com**
+- \{\{mail\}\}, ad esempio **John@contoso.com**
+- \{\{partialupn\}\}, ad esempio **John**
+- \{\{accountid\}\}, ad esempio **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- \{\{deviceid\}\}, ad esempio **b9841cd9-9843-405f-be28-b2265c59ef97**
+- \{\{userid\}\}, ad esempio **3ec2c00f-b125-4519-acf0-302ac3761822**
+- \{\{username\}\}, ad esempio **John Doe**
+- \{\{serialnumber\}\}, ad esempio **F4KN99ZUG5V2** (per dispositivi iOS)
+- \{\{serialnumberlast4digits\}\}, ad esempio **G5V2** (per dispositivi iOS)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 08/21/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,21 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="manage-software-updates"></a>Gestire gli aggiornamenti software
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Il servizio Windows as a Service consente di aggiornare i dispositivi Windows 10. A partire da Windows 10, i nuovi aggiornamenti qualitativi e delle funzionalità includeranno il contenuto di tutti gli aggiornamenti precedenti. Ciò significa che, una volta installato l'aggiornamento più recente, si ha la sicurezza che i dispositivi Windows 10 sono perfettamente aggiornati. A differenza di quanto accadeva per le versioni precedenti di Windows, è ora necessario installare l'intero aggiornamento anziché una sola parte.
+Il servizio Windows as a Service consente di aggiornare i dispositivi Windows 10. A partire da Windows 10, i nuovi aggiornamenti qualitativi e delle funzionalità includeranno il contenuto di tutti gli aggiornamenti precedenti. Ciò significa che, una volta installato l'aggiornamento più recente, si ha la sicurezza che i dispositivi Windows 10 sono aggiornati. A differenza di quanto accadeva per le versioni precedenti di Windows, è ora necessario installare l'intero aggiornamento anziché una sola parte.
 
 Usando Windows Update for Business, è possibile semplificare l'esperienza di gestione degli aggiornamenti in modo da non dover approvare singoli aggiornamenti per gruppi di dispositivi. È comunque possibile gestire i rischi nei propri ambienti configurando una strategia di implementazione degli aggiornamenti. In questo modo, Windows Update verifica che gli aggiornamenti vengano installati al momento opportuno. Microsoft Intune offre la possibilità di configurare le impostazioni di aggiornamento sui dispositivi e di posticipare l'installazione degli aggiornamenti. Intune non archivia gli aggiornamenti, ma solo l'assegnazione dei criteri di aggiornamento. I dispositivi accedono direttamente a Windows Update per gli aggiornamenti. Usare Intune per configurare e gestire gli **anelli di aggiornamento di Windows 10**. Un anello di aggiornamento contiene un gruppo di impostazioni che definiscono quando e come vengono installati gli aggiornamenti di Windows 10. È ad esempio possibile configurare le impostazioni seguenti:
 
-- **Windows 10 Servicing Branch** (Ramo di manutenzione di Windows 10): scegliere se determinati gruppi di dispositivi dovranno ricevere gli aggiornamenti da Current Branch o da Current Branch for Business.  
+- **Canale di manutenzione di Windows 10**: scegliere se si vuole che i gruppi di dispositivi ricevano aggiornamenti dal canale semestrale (mirato) o dal canale semestrale.  
 - **Deferral Settings** (Impostazioni di differimento): configurare queste impostazioni per ritardare l'installazione degli aggiornamenti per gruppi di dispositivi. Usare queste impostazioni per implementare gli aggiornamenti per fasi in modo da poter esaminare lo stato di avanzamento.
 - **Pausing** (Sospensione): posticipare l'installazione degli aggiornamenti se si rileva un problema in un momento qualsiasi durante l'implementazione.
 - **Maintenance window** (Finestra di manutenzione): configurare gli orari in cui possono essere installati gli aggiornamenti.
@@ -78,7 +78,7 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 5. Nel pannello contenente l'elenco degli anelli di aggiornamento scegliere **Crea**.
 6. Nel pannello **Crea l'anello di aggiornamento** specificare un nome e una descrizione facoltativa per l'anello di aggiornamento e quindi scegliere **Impostazioni**.
 7. Nel pannello **Impostazioni** configurare le informazioni seguenti:
-    - **Ramo di manutenzione**: impostare il ramo per cui il dispositivo riceve gli aggiornamenti di Windows (Current Branch o Current Branch for Business).
+    - **Canale di manutenzione**: impostare il canale per il quale il dispositivo riceve gli aggiornamenti di Windows: semestrale mirato(destinazione) o semestrale.
     - **Aggiornamenti Microsoft**: scegliere se cercare gli aggiornamenti di app da Microsoft Update.
     - **Driver di Windows**: scegliere se escludere i driver di Windows Update durante gli aggiornamenti.
     - **Comportamento di aggiornamento automatico**: scegliere come gestire il comportamento di aggiornamento automatico per cercare, scaricare e installare gli aggiornamenti. Per informazioni dettagliate, vedere [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
@@ -87,12 +87,12 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
     Gli aggiornamenti qualitativi includono in genere correzioni e miglioramenti alle funzionalità esistenti di Windows e vengono normalmente pubblicati il primo martedì del mese, anche se possono essere rilasciati da Microsoft in qualsiasi momento. È possibile definire se, e per quanto tempo, posticipare la ricezione degli aggiornamenti qualitativi dopo che sono stati resi disponibili.
     - **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)**: specificare il numero di giorni per cui vengono posticipati gli aggiornamenti delle funzionalità. È possibile posticipare la ricezione di questi aggiornamenti per un periodo massimo di 180 giorni dalla data di rilascio.
 
-    Gli aggiornamenti delle funzionalità includono in genere nuove funzionalità per Windows. Dopo aver configurato l'impostazione **Ramo di manutenzione** (**CB** o **CBB**), è possibile definire se, e per quanto tempo, posticipare la ricezione degli aggiornamenti delle funzionalità dopo che sono stati resi disponibili da Microsoft in Windows Update.
+    Gli aggiornamenti delle funzionalità includono in genere nuove funzionalità per Windows. Dopo aver configurato l'impostazione **Canale di manutenzione** (canale semestrale (mirato) o canale semestrale), è possibile definire se, e per quanto tempo, posticipare la ricezione degli aggiornamenti delle funzionalità dopo che sono stati resi disponibili da Microsoft in Windows Update.
 
     Ad esempio:  
-    **Se Ramo di manutenzione è impostato su CB e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia pubblicamente disponibile in Windows Update come CB nel mese di gennaio. Il dispositivo non riceverà l'aggiornamento fino a febbraio, 30 giorni più tardi.
+    **Se il Canale di manutenzione è impostato su Canale semestrale (mirato) e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Il dispositivo non riceverà l'aggiornamento fino a febbraio, 30 giorni più tardi.
 
-    **Se Ramo di manutenzione è impostato su CBB e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia pubblicamente disponibile in Windows Update come CB nel mese di gennaio e che venga rilasciato come CBB quattro mesi dopo, nel mese di aprile. Il dispositivo riceverà l'aggiornamento 30 giorni dopo il rilascio come CBB e verrà aggiornato nel mese di maggio.
+    **Se il Canale di manutenzione è impostato su Canale semestrale e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Quattro mesi dopo, in aprile, l'aggiornamento della funzionalità X sarà rilasciato come Canale semestrale. Il dispositivo riceverà l'aggiornamento 30 giorni dopo il rilascio del canale semestrale e verrà aggiornato nel mese di maggio.
 
     - **Ottimizzazione recapito**: scegliere il metodo in base al quale i dispositivi scaricheranno gli aggiornamenti di Windows. Per informazioni dettagliate, vedere [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
 8. Al termine della configurazione, fare clic su **OK** e nel pannello **Crea l'anello di aggiornamento** fare clic su **Crea**.
@@ -112,7 +112,7 @@ Rivedere un report sui criteri per visualizzare lo stato di distribuzione per gl
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Aggiornamenti software**.
-4. Nel pannello **Aggiornamenti software** scegliere **Panoramica**. Vengono visualizzate informazioni generali sullo stato di tutte le fasi di aggiornamento assegnata.
+4. Nel pannello **Aggiornamenti software** scegliere **Panoramica**. Vengono visualizzate informazioni generali sullo stato di tutte le fasi di aggiornamento assegnate.
 5. Aprire uno dei report seguenti: 
      
    **Per tutti gli anelli di distribuzione:**
