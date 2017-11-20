@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/20/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c07125901709d4d7baf3339e4dd09cb5620e8d1
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 2383d41c52618710a1d42f0b2236d41d117b42be
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per Android
 Le impostazioni dei criteri descritte in questo argomento possono essere [configurate](app-protection-policies.md) per il criterio di protezione delle app nel pannello **Impostazioni** del portale di Azure.
@@ -90,3 +90,5 @@ Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione d
 | **Require minimum Android operating system (Warning only)** (Richiedi un sistema operativo Android minimo (solo avviso)) | Scegliere **Sì** per richiedere un sistema operativo Android minimo per usare l'app. L'utente visualizzerà una notifica se la versione di Android nel dispositivo non soddisfa il requisito. Questa notifica può essere chiusa. | No |
 | **Richiedi una versione minima dell'app** | Scegliere **Sì** per richiedere una versione minima dell'app per usare l'app. All'utente verrà impedito l'accesso se la versione dell'app nel dispositivo non soddisfa il requisito.<br><br>Quando si selezionano le app di destinazione, tenere presente che spesso gli schemi di numerazione delle versioni sono diversi per le varie app.<br><br> | No | 
 | **Richiedi una versione minima dell'app (solo avviso)** | Scegliere **Sì** per consigliare una versione minima dell'app per usare questa app. L'utente visualizzerà una notifica se la versione dell'app nel dispositivo non soddisfa il requisito. Questa notifica può essere chiusa.<br><br>Quando si selezionano le app di destinazione, tenere presente che spesso gli schemi di numerazione delle versioni sono diversi per le varie app.<br><br> | No | 
+| **Require Minimum Android Patch Version** (Richiedi una versione minima della patch di Android) | Scegliere **Sì** per richiedere una versione minima della patch di protezione di Android rilasciata da Google. All'utente verrà impedito l'accesso se la patch di protezione di Android nel dispositivo non soddisfa il requisito. | No |
+| **Require Minimum Android Patch Version (Warning Only)** (Richiedi una versione minima della patch Android (solo avviso)) | Scegliere **Sì** per richiedere una versione minima della patch di protezione di Android rilasciata da Google. L'utente visualizzerà una notifica se la patch di protezione di Android nel dispositivo non soddisfa il requisito. Questa notifica può essere chiusa. | No |

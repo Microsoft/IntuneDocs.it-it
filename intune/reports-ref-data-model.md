@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37af15a36ff20b2c13b5fb1157d04a05c40d3216
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="data-warehouse-data-model"></a>Modello di dati del data warehouse
 
@@ -41,6 +41,7 @@ I set di entità sono raccolte di entità denominate nel modello di dati. Questi
   -  [Applicazione](reports-ref-application.md)
   -  [Data](reports-ref-date.md)
   -  [Dispositivi](reports-ref-devices.md)
+  -  [Intune Management Extension](reports-ref-intunemanagementextension.md) (Estensione di gestione di Intune)
   -  [Criteri](reports-ref-policy.md)
   -  [Gestione delle app mobili (MAM)](reports-ref-mobile-app-management.md)
   -  [Utente](reports-ref-user.md)

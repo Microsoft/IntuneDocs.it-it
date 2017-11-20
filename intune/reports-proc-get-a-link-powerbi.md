@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: aa559d946456f215d4db925c8a2e8a42cfacf209
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Connettersi al data warehouse con Power BI
 
@@ -53,7 +53,7 @@ Il file di Power BI (PBIX) contiene informazioni di connessione per il tenant e 
 
 1.  Accedere al portale di Azure e scegliere **Monitoraggio e gestione** > **Intune**. È anche possibile cercare risorse per **Intune**.  
 2.  Aprire il pannello **API data warehouse di Microsoft Intune (anteprima)**.
-3.  Fare clic su **Scarica file di Power BI**. Il file con estensione .pbix viene scaricato nel percorso specificato.
+3.  Selezionare **Download PowerBI file** (Scarica file di Power BI). Il file con estensione .pbix viene scaricato nel percorso specificato.
 4.  Aprire il file con Power BI. Vengono caricati i *report di data warehouse Intune*, ma il recupero dei dati del tenant potrebbe richiedere alcuni secondi.
 5.  Fare clic su **Aggiorna** per caricare i dati del tenant e rivedere i report.
 6.  Se Power BI non è autenticato con le credenziali di Azure Active Directory, richiederà all'utente di fornire le proprie credenziali. Quando si selezionano le credenziali, scegliere **Account aziendale** come metodo di autenticazione.
@@ -69,13 +69,13 @@ Con un client autenticato in Azure AD, l'URL di OData si connette all'endpoint R
 5. Scegliere **Home** > **Recupera dati**. Selezionare **Feed OData**.
 6. Scegliere **Basic**.
 7. Digitare o incollare l'**URL OData** nella casella URL.
-8. Fare clic su **OK**.
+8. Selezionare **OK**.
 9. Se non è stata ancora eseguita l'autenticazione del tenant in Azure AD dal client desktop di Power BI, digitare le credenziali. Per ottenere l'accesso ai dati, è necessario concedere l'autorizzazione con Azure Active Directory (Azure AD) usando OAuth 2.0.  
     1.  Selezionare **Account aziendale**.  
     2.  Digitare il nome utente e la password.  
-    3.  Fare clic su **Accedi**.  
-    4.  Fare clic su **Connetti**.  
-10. Fare clic su **Carica**.
+    3.  Selezionare **Accedi**.  
+    4.  Selezionare **Connetti**.  
+10. Selezionare **Carica**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

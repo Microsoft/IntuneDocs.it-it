@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37f36aca0d58f5d87b9d54a1a4bdf18eb011b40b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creare un report dal feed OData con Power BI
 
@@ -60,16 +60,16 @@ Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power B
 
     ![Feed OData](media/reports-create-01-odatafeed.png)
 
-9. Fare clic su **OK**.
+9. Selezionare **OK**.
 10. Selezionare **account aziendale** e quindi accedere con le credenziali di Intune. 
 
     ![Credenziali dell'account aziendale](media/reports-create-02-org-account.png)
 
-11. Fare clic su **Connetti**. Viene visualizzato lo strumento di navigazione con l'elenco delle tabelle del data warehouse di Intune. 
+11. Selezionare **Connetti**. Viene visualizzato lo strumento di navigazione con l'elenco delle tabelle del data warehouse di Intune. 
 
     ![Strumento di navigazione](media/reports-create-02-loadentities.png)
 
-12. Selezionare le tabelle **devices** e **ownerTypes**.  Fare clic su **Carica**. Power BI carica i dati nel modello.
+12. Selezionare le tabelle **devices** e **ownerTypes**.  Selezionare **Carica**. Power BI carica i dati nel modello.
 
 ## <a name="create-a-relationship"></a>Creare una relazione 
 
@@ -77,8 +77,8 @@ Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power B
 
 ![Gestire le relazioni](media/reports-create-03-managerelationships.png)
 
-1. Fare clic su **Gestisci relazioni**.
-2. Fare clic su **Rilevamento automatico...** se PowerBI non ha già individuato le relazioni.  
+1. Selezionare **Gestione relazioni**.
+2. Selezionare **Rileva automaticamente...** se PowerBI non ha ancora individuato le relazioni.  
 La relazione è visualizzata dalla colonna Da alla colonna A. In questo esempio il campo dati **ownerTypeKey** della tabella **devices** viene collegato al campo dati **ownerTypeKey** della tabella **ownerTypes**. È possibile usare la relazione per cercare il nome del codice del tipo di dispositivo nella tabella **devices**.
 
 ## <a name="create-a-treemap-visualization"></a>Creare una visualizzazione ad albero
@@ -100,7 +100,7 @@ Un grafico ad albero mostra i dati gerarchici come caselle all'interno di casell
 
 È possibile aggiungere un filtro alla mappa ad albero per poter rispondere a domande aggiuntive usando l'app. 
 
-1. Fare clic sull'area di disegno report e quindi fare clic sull'**icona Filtro dei dati** (![Mappa ad albero con dati](media/reports-create-slicer.png)) in **Visualizzazioni** per aggiungere un filtro.
+1. Fare clic sull'area di disegno report e quindi selezionare l'**icona Filtro dei dati** (![Mappa ad albero con dati](media/reports-create-slicer.png)) in **Visualizzazioni** per aggiungere un filtro.
 2. Cercare la tabella **ownerTypes** e trascinare il campo dati **ownerTypeName** nella sezione **Filtri** nel pannello **Visualizzazioni**.  
    Nella tabella devices è incluso un campo dati denominato **OwnerTypeKey** che contiene un codice che indica se il dispositivo è aziendale o personale. Per visualizzare i nomi descrittivi nel filtro, cercare la tabella **ownerTypes** e trascinare **ownerTypeName**. Questo esempio mostra come il modello di dati supporta le relazioni tra le tabelle.
 
@@ -108,8 +108,8 @@ Un grafico ad albero mostra i dati gerarchici come caselle all'interno di casell
 
 È ora disponibile un filtro interattivo che consente di passare dai dispositivi aziendali ai dispositivi personali per visualizzare i cambiamenti della distribuzione.
 
-1. Fare clic su **Società** per visualizzare la distribuzione dei dispositivi aziendali.
-2. Fare clic su **Personale** per visualizzare i dispositivi personali.
+1. Selezionare **Società** per visualizzare la distribuzione dei dispositivi aziendali.
+2. Selezionare **Personale** per visualizzare i dispositivi personali.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

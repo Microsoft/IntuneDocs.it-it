@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 09/01/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cc4ba554b498e3b41df5fb1051f1d7a0bd4fb89e
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
+ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guida per gli sviluppatori di Microsoft Intune App SDK per iOS
 
@@ -159,7 +159,24 @@ Per abilitare Intune App SDK, procedere come segue:
 
 11. Se nei diritti dell'app sono definiti gruppi di app, aggiungere questi gruppi al dizionario **IntuneMAMSettings** nella chiave `AppGroupIdentifiers` come matrice di stringhe.
 
+## <a name="using-the-intune-mam-configurator-tool"></a>Uso dello strumento Intune MAM Configurator
 
+Lo strumento Intune MAM Configurator gestisce tutte le elaborazioni di info.plist necessarie per l'integrazione manuale del SDK. Lo strumento è disponibile nel repository Intune App SDK per iOS. Le impostazioni aggiuntive specifiche delle app quali ID multipli, impostazioni AAD e così via non vengono gestite da questo strumento. Lo strumento include 3 parametri:
+ 
+|Proprietà|Modo d'uso|
+|---------------|--------------------------------|
+|- i |  `<Path to the input plist>` |
+|- e | File dei diritti |
+|- o |  (Facoltativo) `<Path for the changed input plist>` |
+    
+Lo strumento Intune MAM Configurator può essere usato per aggiornare:
+* I file dello storyboard principale o i file con estensione nib principali in IntuneMAMSettings.
+* Gli schemi URL definiti dell'app nel file Info.plist corrispondente con il suffisso -intunemam per ogni schema URL.
+* I tipi di documento definiti nel file Info.plist per la matrice "UTI dei tipi di contenuto documento" di ogni elemento; aggiungere una voce duplicata per ogni stringa con prefisso "com.microsoft.intune.mam".
+* I gruppi di app definiti nei diritti dell'app. Aggiungere questi gruppi al dizionario IntuneMAMSettings nella chiave AppGroupIdentitifiers come matrice di stringhe.
+
+    
+>[!NOTE] Se si decide di usare questo strumento invece della modifica manuale di info.plist, è consigliabile eseguire nuovamente lo strumento dopo ogni modifica apportata al file info.plist o ai diritti dell'app.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Configurare Azure Active Directory Authentication Library (ADAL)
 

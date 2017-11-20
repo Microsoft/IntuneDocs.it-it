@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8beabb21df8b122b7a1dd18a698a8075604046b5
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b61ad1c0a114c8a66c174fa34c4520e2f6c6244a
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Come configurare le impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune
 
@@ -29,7 +29,7 @@ Le restrizioni dei dispositivi consentono di controllare una vasta gamma di impo
 
 Usare le informazioni in questo argomento per apprendere le nozioni di base sulla configurazione di un profilo di restrizione del dispositivo e quindi leggere altri argomenti relativi a ogni piattaforma per informazioni specifiche sui dispositivi.
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Creare un profilo dispositivo contenente le impostazioni relative alle restrizioni del dispositivo
+Per creare un profilo dispositivo contenente le impostazioni relative alle restrizioni del dispositivo:
 
 1. Accedere al portale Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
@@ -59,9 +59,12 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 Il profilo verrà creato e visualizzato nel pannello dell'elenco dei profili.
 Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
 
-## <a name="example-of-device-restriction-settings"></a>Esempio di impostazioni relative alle restrizioni dei dispositivi
+<!--  Removing image as part of design review; retaining source until we known the disposition.
 
-In questo esempio generale verrà creato un criterio di restrizione che impedisce l'uso delle app della fotocamera incorporata nei dispositivi Android.
+## Example of device restriction settings
 
-![Come disabilitare la fotocamera su dispositivi Android](./media/disable-android-camera.png)
+In this high-level example, you'll create a device restriction policy that blocks the use of the built-in camera app on Android devices.
 
+![How to disable the camera on Android devices](./media/disable-android-camera.png)
+
+-->

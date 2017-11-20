@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows 10 e versioni successive in Microsoft Intune
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 10/19/2017
 -   **Annullamento manuale della registrazione** - Consente all'utente di eliminare manualmente l'account aziendale dal dispositivo.
 -   **Installazione manuale del certificato radice (solo per dispositivi mobili)**: impedisce all'utente di installare manualmente i certificati radice e i certificati intermedi CAP.
 -   **Invio dati di diagnostica** - I valori possibili sono:
-    -       **No** Non vengono inviati dati a Microsoft
-    -       **Di base** Vengono inviate a Microsoft informazioni limitate
-    -       **Avanzati** Vengono inviati a Microsoft dati di diagnostica avanzati
-    -       **Completi** Invia gli stessi dati di Avanzati, più dati aggiuntivi sullo stato del dispositivo
+    - **No**: non vengono inviati dati a Microsoft
+    - **Di base**: vengono inviate a Microsoft informazioni limitate
+    - **Avanzati**: vengono inviati a Microsoft dati di diagnostica avanzati
+    - **Completi** Invia gli stessi dati di Avanzati, più dati aggiuntivi sullo stato del dispositivo
 -   **Fotocamera** - Consente o blocca l'uso della fotocamera sul dispositivo.
 -   **Sincronizzazione dei file di OneDrive**: impedisce al dispositivo di sincronizzare i file in OneDrive.
 -   **Archivi rimovibili**: specifica se è possibile usare con il dispositivo supporti di archiviazione esterni come le schede SD.
@@ -105,6 +105,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
 
 ## <a name="edge-browser"></a>Browser Edge
+
 -   **Browser Microsoft Edge (solo dispositivi mobili)** - Consente l'uso del browser Web Edge sul dispositivo.
 -   **Elenco a discesa della barra degli indirizzi (solo desktop)**: usare questa opzione per impedire a Edge di visualizzare suggerimenti in un elenco a discesa durante la digitazione. Ciò consente di ridurre al minimo l'uso di larghezza di banda tra Edge e i servizi Microsoft.
 -   **Sincronizza i Preferiti tra i browser Microsoft (solo desktop)**: consente la sincronizzazione dei Preferiti tra Edge e Internet Explorer in Windows.
@@ -180,6 +181,44 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
     -   **Accessibilità**: blocca l'accesso all'area accessibilità dell'app Impostazioni.
     -   **Riservatezza**: blocca l'accesso all'area riservatezza dell'app Impostazioni.
     -   **Aggiornamento e sicurezza** : blocca l'accesso all'area Aggiornamento e sicurezza dell'app Impostazioni.
+
+## <a name="kiosk"></a>Modalità tutto schermo
+
+-   **Modalità tutto schermo**: identifica il tipo di [modalità tutto schermo](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) supportata dai criteri.  Le opzioni includono:
+
+      - **Non configurata** (impostazione predefinita): il criterio non abilita la modalità tutto schermo. 
+      - **App singola per chiosco multimediale**: il profilo abilita il dispositivo come app singola per chiosco multimediale.
+      - **App multiple per chiosco multimediale**: il profilo abilita il dispositivo come app multiple per chiosco multimediale.
+
+    Le app singole per chiosco multimediale richiedono le seguenti impostazioni:
+
+      - **Account utente**: specifica l'account utente locale (per il dispositivo) o l'account di accesso di Azure AD associato all'app per chiosco multimediale.  Per gli account aggiunti ai domini di Azure AD, specificare l'account nel formato `domain\\username@tenant.org`.
+
+         Per i dispositivi in ambienti pubblici, usare account con privilegi minimi per evitare attività non autorizzate.  
+
+      - **ID modello utente applicazione (AUMID, Application User Model ID) dell'app**: specifica l'AUMID dell'app per chiosco multimediale.  Per altre informazioni, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata).
+
+    Le app multiple per chiosco multimediale richiedono una configurazione per chiosco multimediale.  Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multimediale o selezionarne una esistente.
+
+    Le configurazioni app multiple per chiosco multimediale includono le impostazioni seguenti:
+
+    - **Nome della configurazione per chiosco multimediale**: nome descrittivo usato per identificare una determinata configurazione.
+
+    - Una o più **App chiosco multimediale** costituite da:
+
+        - **Tipo di app** che specifica il tipo dell'app chiosco multimediale.  I valori supportati includono:   
+
+            - **App Win32**: app desktop tradizionale.  È necessario il nome del percorso completo del file eseguibile, relativo al dispositivo.
+
+            - **App UWP**: app Windows universale.  È necessario l'[AUMID per l'app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+        - **Identificatore dell'app**: specifica il nome del percorso completo del file eseguibile (app Win32) o l'[AUMID dell'app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (app UWP).
+
+    - **Barra delle applicazioni** indica se la barra delle applicazioni viene visualizzata (**Abilitata**) o nascosta (**Non configurata**) sul chiosco multimediale.
+
+    - **Layout del menu Start**: specifica un file XML che descrive come le app [vengono visualizzate nel menu Start](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+
+    - **Utenti assegnati**: specifica uno o più account utente associati alla configurazione per chiosco multimediale.  L'account può essere locale nel dispositivo o in un account di accesso di Azure AD associato all'app per chiosco multimediale.  Specificare gli account appartenenti a un dominio nel formato `domain\\username@tenant.org`.
 
 ## <a name="defender"></a>Defender
 

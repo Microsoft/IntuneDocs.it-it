@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurare Intune On-Premises Exchange Connector in Microsoft Intune in Azure
 
@@ -134,13 +134,18 @@ Dopo aver configurato la connessione in Exchange Connector, i dispositivi mobili
 > [!NOTE]
 > Se è stato installato On-Premises Exchange Connector e a un certo punto si elimina la connessione a Exchange, è necessario disinstallare On-Premises Exchange Connector dal computer in cui è stato installato.
 
-## <a name="validate-the-exchange-connection"></a>Convalidare la connessione di Exchange
+## <a name="monitor-the-exchange-connector-activity"></a>Monitorare l'attività di Exchange Connector
 
 Dopo aver configurato correttamente Exchange Connector, è possibile visualizzare lo stato della connessione e l'ultimo tentativo di sincronizzazione riuscito. Per convalidare la connessione di Exchange Connector:
 
-- Nel dashboard di Intune scegliere **Accesso locale**. In **Gestisci** selezionare **Accesso locale a Exchange** per verificare lo stato della connessione.
+1. Nel dashboard di Intune scegliere **Accesso locale**.
+2. In **Gestisci** selezionare **Accesso locale a Exchange** per verificare lo stato della connessione.
 
 È inoltre possibile verificare la data e ora dell'ultimo tentativo di sincronizzazione riuscito.
+
+### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) Management Pack
+
+A partire dalla versione 1710 di Intune, è possibile usare [SCOM Management Pack per Exchange Connector e Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True), che consente di eseguire il monitoraggio di Exchange Connector in diversi modi quando è necessario risolvere i problemi.
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Creare criteri di accesso condizionale per Exchange locale](conditional-access-exchange-create.md)
