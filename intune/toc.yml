@@ -386,6 +386,8 @@
           href: compliance-policy-create-android.md
         - name: Creare criteri Android for Work
           href: compliance-policy-create-android-for-work.md
+        - name: Creare criteri per abilitare Google Play Protect
+          href: compliance-policy-create-google-play-protect.md
         - name: Creare criteri iOS
           href: compliance-policy-create-ios.md
         - name: Creare criteri macOS
