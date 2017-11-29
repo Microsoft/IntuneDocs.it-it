@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 895a089a58845da609423ab7fd74fbf26e0b967f
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Come proteggere il dispositivo Android usando la crittografia
 
 Quando si crittografa un dispositivo, si esegue il wrapping delle informazioni in esso contenute in un livello di codice protettivo che impedisce l'accesso agli utenti non autorizzati. Come passo aggiuntivo per assicurarsi che le informazioni siano protette, l'organizzazione richiede di crittografare il dispositivo Android prima di accedere a file, posta elettronica o dati aziendali.
 
 > [!Note]
-> Potrebbe essere necessario impostare un PIN o una password prima di crittografare il dispositivo, se richiesto dal supporto tecnico dell'azienda.
+> Alcuni dispositivi Android, inclusi alcuni modelli realizzati da Huawei e tutti i dispositivi Vivo e OPPO, non possono essere crittografati. Per altre informazioni, vedere [qui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 Un telefono di cui si annulla la registrazione rimarrà crittografato.
 
@@ -37,9 +37,6 @@ Un telefono di cui si annulla la registrazione rimarrà crittografato.
     In alcuni telefoni è necessario fare clic su **Memoria** > **Crittografia memoria** o **Memoria** > **Schermata di blocco e sicurezza** > **Altre impostazioni di sicurezza** per trovare l'opzione "Crittografia".
 
 3.  Seguire le istruzioni visualizzate. Durante la crittografia il dispositivo potrebbe essere riavviato più volte.
-
-> [!Note]
-> Alcuni dispositivi Android non possono essere crittografati. Per altre informazioni, vedere [qui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### <a name="what-to-do-if-you-have-issues"></a>Operazioni da eseguire in caso di problemi
 **Problema**: il dispositivo è già stato crittografato e si verifica uno dei problemi seguenti:
@@ -66,4 +63,4 @@ Un telefono di cui si annulla la registrazione rimarrà crittografato.
 
     6. Aprire l'app Portale aziendale, selezionare il dispositivo e toccare **Controlla conformità**.
 
-Serve ancora assistenza? Contattare il supporto tecnico dell'azienda (accedere al [sito Web del portale aziendale](https://portal.manage.microsoft.com) per informazioni sui contatti) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.
+Serve ancora assistenza? Contattare il supporto tecnico aziendale (accedere al [sito Web Portale aziendale](https://portal.manage.microsoft.com) per informazioni sul contatto) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.

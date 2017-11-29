@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -125,13 +125,13 @@ Dopo aver aggiunto le app che si vuole proteggere con WIP, è necessario applica
 
 ### <a name="before-you-begin"></a>Prima di iniziare
 
-Apprendimento WIP è un report che consente di monitorare le app sconosciute WIP. Con app sconosciute si intendono quelle non distribuite dal reparto IT dell'organizzazione. È possibile esportare queste app dal report e quindi aggiungerle ai criteri WIP per evitare disservizi con effetti sulla produttività prima dell'applicazione di WIP in modalità "Nascondi sostituzioni".
+Apprendimento WIP è un report che consente di monitorare le app sconosciute WIP. Con app sconosciute si intendono quelle non distribuite dal reparto IT dell'organizzazione. È possibile esportare queste app dal report e quindi aggiungerle ai criteri WIP per evitare disservizi con effetti sulla produttività prima dell'applicazione di WIP in modalità "Blocca".
 
-È consigliabile iniziare con **Invisibile all'utente** o **Consenti sostituzioni** mentre si verifica con un piccolo gruppo di avere incluso le app appropriate nell'elenco delle app consentite. Quando si è pronti, è possibile passare al criterio di applicazione finale, ovvero **Nascondi sostituzioni**.
+È consigliabile iniziare con **Invisibile all'utente** o **Consenti sostituzioni** mentre si verifica con un piccolo gruppo di avere incluso le app appropriate nell'elenco delle app consentite. Quando si è pronti, è possibile passare al criterio di applicazione finale, ovvero **Blocca**.
 
 ### <a name="what-are-the-protection-modes"></a>Caratteristiche delle modalità di protezione
 
-#### <a name="hide-overrides"></a>Nascondi sostituzioni
+#### <a name="block"></a>Blocca
 WIP rileva eventuali procedure di condivisione dei dati non appropriate e impedisce all'utente di completare l'azione. Può trattarsi, ad esempio, della condivisione di informazioni tra app non protette dall'azienda e della condivisione di dati aziendali tra altri utenti e dispositivi all'esterno dell'organizzazione.
 
 #### <a name="allow-overrides"></a>Consenti sostituzioni

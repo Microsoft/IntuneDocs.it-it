@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7ad33ba7020f418f4894a689d5d66a74e4b8c10e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 78b5d58df44252d1f3916c1d2a2ea02fcb1a10e2
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Consentire l'accesso ai servizi di Office 365 solo alle app per dispositivi mobili che supportano i criteri di protezione delle app di Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-I [criteri di protezione delle app di Intune](protect-apps-and-data-with-microsoft-intune.md) consentono di proteggere i dati aziendali sui dispositivi registrati per la gestione in Intune. I criteri di protezione delle app possono essere usati anche nei **dispositivi di proprietà dei dipendenti non registrati per la gestione in Intune**.  In questo caso, anche se il dispositivo non viene gestito, è comunque necessario assicurarsi che i dati e le risorse aziendali siano protetti. Se si usa l'accesso condizionale basato sulle app con il software MAM, è possibile creare un criterio che consenta solo alle app per dispositivi mobili che supportano i criteri di protezione delle app di Intune di accedere ai servizi di Office 365 come Exchange Online.
+I [criteri di protezione delle app di Intune](protect-apps-and-data-with-microsoft-intune.md) consentono di proteggere i dati aziendali sui dispositivi registrati per la gestione in Intune. I criteri di protezione delle app possono essere usati anche nei **dispositivi di proprietà dei dipendenti non registrati per la gestione in Intune**.  In questo caso, anche se il dispositivo non viene gestito, è comunque necessario assicurarsi che i dati e le risorse aziendali siano protetti. Se si usa l'accesso condizionale basato sulle app con il software MAM, è possibile creare criteri che consentano solo alle app per dispositivi mobili che supportano i criteri di protezione delle app di Intune di accedere ai servizi di Office 365 come Exchange Online.
 
 Ad esempio, consentendo solo all'**app di Microsoft Outlook** di accedere a Exchange Online è possibile **bloccare le app di posta elettronica predefinite in iOS e Android** che non hanno la protezione dei dati dei criteri di gestione delle app per dispositivi mobili di Intune per ricevere la posta elettronica da **Exchange Online**. Oppure è possibile impedire alle app per dispositivi mobili che non supportano la gestione di applicazioni mobili di Intune di accedere a **SharePoint Online**.
 
@@ -38,7 +38,7 @@ Descrizione delle abbreviazioni usate nei diagrammi:
 * **EAS**: Exchange Active Sync
 
 ## <a name="prerequisites"></a>Prerequisiti
-**Prima** di creare un criterio di accesso condizionale basato sulle app è necessario avere una **sottoscrizione Enterprise Mobility + Security o Azure Active Directory Premium** e gli utenti devono avere la licenza per EMS o Azure AD. Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
+**Prima** di creare criteri di accesso condizionale basati sulle app è necessario avere una **sottoscrizione Enterprise Mobility + Security o Azure Active Directory Premium** e gli utenti devono avere la licenza per EMS o Azure AD. Per altre informazioni dettagliate, vedere la [pagina dei prezzi di Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o la [pagina dei prezzi di Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 
 ## <a name="supported-apps"></a>App supportate

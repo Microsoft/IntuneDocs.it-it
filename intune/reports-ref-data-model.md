@@ -5,7 +5,7 @@ keywords: Data warehouse di Intune
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,26 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f720d5f9dbf91d7f098a640d640f8f35136da4fc
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 29825c58febc813c7b11072699d06106725584d3
+ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="data-warehouse-data-model"></a>Modello di dati del data warehouse
 
-Il data warehouse di Intune esegue il campionamento giornaliero dei dati per fornire una visualizzazione cronologia dell'ambiente per dispositivi mobili in continua evoluzione.
+Il data warehouse di Intune esegue il campionamento giornaliero dei dati per fornire una visualizzazione cronologica dell'ambiente dei dispositivi mobili, in continua evoluzione. La visualizzazione è costituita da elementi correlati nel tempo.
 
-I dati estratti dal tenant vengono aggiunti a un data warehouse. Il warehouse è un set di entità e relazioni che sono significative per il tipo di domande che si vogliono chiedere. Ad esempio, è possibile esaminare il numero di installazioni di un'applicazione Android sviluppata internamente per ogni giorno dell'ultima settimana per valutare se è presente una tendenza crescente di installazioni. La struttura del data warehouse consente di ottenere informazioni nell'ambiente per dispositivi mobili. A loro volta, gli strumenti di analisi come Microsoft Power BI possono usare il modello di dati del data warehouse per creare visualizzazioni e dashboard dinamici.
+## <a name="things-entity-sets"></a>Elementi: set di entità
 
-La struttura del data warehouse di Intune usa un modello di schema a stella. Lo schema a stella organizza i fatti sulla dimensione del tempo. Un *fatto* nel contesto del modello è una misura quantitativa quale il numero di dispositivi, il numero di app o la data/ora di registrazione. Una *dimensione* nel contesto del modello è un set di categorie con le rispettive relazioni gerarchiche. Ad esempio, i giorni sono raggruppati in mesi e i mesi sono raggruppati in anni. Un modello di schema a stella è ottimizzato per l'analisi di dati e la flessibilità per poter creare i report necessari a comprendere l'ambiente per dispositivi mobili in continua evoluzione.
+Il warehouse espone i dati nelle aree generali seguenti:
 
-Il warehouse espone i dati nelle seguenti categorie generali:
   -  App abilitate per la protezione dati e utilizzo
   -  Dispositivi registrati, proprietà e inventario
   -  Inventario app e software
   -  Configurazione del dispositivo e criteri di conformità
 
-**Set di entità del modello di dati**
-
-I set di entità sono raccolte di entità denominate nel modello di dati. Questi set contengono le entità che definiscono i dati raccolti nel modello. Ogni set di entità fornisce un punto di accesso nel modello di dati Data warehouse. Sono disponibili informazioni dettagliate sulle seguenti categorie di entità:
+Queste aree contengono le entità (o elementi) significative per l'ambiente Intune. Informazioni dettagliate sui set di entità sono disponibili negli argomenti seguenti:
 
   -  [Applicazione](reports-ref-application.md)
   -  [Data](reports-ref-date.md)
@@ -45,4 +42,23 @@ I set di entità sono raccolte di entità denominate nel modello di dati. Questi
   -  [Criteri](reports-ref-policy.md)
   -  [Gestione delle app mobili (MAM)](reports-ref-mobile-app-management.md)
   -  [Utente](reports-ref-user.md)
+  -  [Current User](reports-ref-current-user.md)
   -  [Associazioni utente-dispositivo](reports-ref-user-device.md)
+
+## <a name="relationships-star-schema-model"></a>Relazione: modello di schema a stella
+
+Il warehouse organizza le entità in relazioni significative per il tipo di domande che si vogliono chiedere. È possibile, ad esempio, verificare il numero di installazioni di un'applicazione Android sviluppata internamente. La struttura del data warehouse consente di ottenere informazioni nell'ambiente per dispositivi mobili. A loro volta, gli strumenti di analisi come Microsoft Power BI possono usare il modello di dati del data warehouse per creare visualizzazioni e dashboard dinamici.
+
+Le entità e le relazioni usano un modello di schema a stella, che correla i fatti sulla dimensione del tempo. Un *fatto* nel contesto del modello è una misura quantitativa quale il numero di dispositivi, il numero di app o la data/ora di registrazione. Nelle tabelle dei fatti viene archiviata una grande quantità di dati. Le tabelle possono quindi acquisire dimensioni molto grandi e, per questo motivo, le informazioni vengono mantenute al loro interno per 30 giorni. Una *dimensione* fornisce il contesto dei fatti. Se il fatto indica cosa è accaduto, le dimensioni indicano a chi è accaduto. Le tabelle delle dimensioni, come la tabella **User**, sono di dimensioni inferiori e possono quindi mantenere i dati per periodi più lunghi rispetto alle tabelle dei fatti. 
+
+Un modello di schema a stella è ottimizzato per l'analisi di dati e la flessibilità per poter creare i report necessari a comprendere l'ambiente per dispositivi mobili in continua evoluzione.
+
+## <a name="time-daily-snapshots"></a>Tempo: snapshot giornalieri
+
+Il warehouse si trova a valle rispetto ai dati di Intune. Intune crea uno snapshot giornaliero a mezzanotte UTC e lo archivia nel warehouse. La durata degli snapshot acquisiti varia in base alla tabella dei fatti in uso. Alcune tabelle li mantengono per sette giorni, altre per 30 giorni e altre per periodi ancora più lunghi.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+ - Per altre informazioni su come il data warehouse controlla la durata di un utente in Intune, vedere [Rappresentazione della durata degli utenti nel data warehouse di Intune](reports-ref-user-timeline.md).
+ - Per altre informazioni sull'uso dei data warehouse, vedere [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Creare il primo warehouse).
+ - Per altre informazioni sull'uso di Power BI e di un data warehouse, vedere [Create a new Power BI report by importing a dataset](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/) (Creare un nuovo report di Power BI importando un set di dati). 
