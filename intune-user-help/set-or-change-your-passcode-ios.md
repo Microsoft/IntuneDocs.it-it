@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 7272c3d21674e4e0029cf49140638d9a3fd3306f
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 5feec496d0f7952b1ae35ed1d905cbfc526bc387
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="set-or-change-your-passcode"></a>Impostare o modificare il passcode
 
@@ -38,7 +38,7 @@ In caso di problemi per l'impostazione di un passcode che soddisfi i requisiti, 
 
 1. Toccare **Impostazioni** > **ID tocco e Passcode**.
 2. Immettere il passcode. Si apre il menu **Touch ID e codice**.
-2. Toccare **Cambia passcode** e immettere la password precedente.
+2. Toccare **Cambia passcode** e immettere il passcode precedente.
 3. Immettere un nuovo passcode che soddisfi i requisiti del supporto tecnico dell'azienda, quindi immetterlo nuovamente per la verifica.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).

@@ -5,7 +5,7 @@ keywords: Data warehouse di Intune
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,30 +14,36 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8088127f5968c0b4f07f83b1dad02ba90f4e6b9a
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 2d81d17bc9489900f9d17101db1f1496ba8d55e9
+ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="reference-for-user-entity"></a>Informazioni di riferimento per l'entità User
 
 La categoria **User** contiene l'entità **User** che definire le proprietà utente e agente nel modello di dati.
 
-**Utente**
+## <a name="user"></a>Utente
 
 L'entità **User** elenca tutti gli utenti di Azure Active Directory (Azure AD) con licenze assegnate nell'organizzazione.
+
+La raccolta di entità **User** contiene i dati dell'ultimo mese. In questi record sono inclusi gli stati utente registrati nel periodo di raccolta dei dati, anche se l'utente è stato rimosso. Nel corso dell'ultimo mese, ad esempio, è possibile che un utente sia stato aggiunto e rimosso da Intune. Pertanto, se anche l'utente non è presente al momento del report, l'utente e lo stato sono comunque presenti nei dati del mese precedente. In questo caso, è possibile creare un report che mostri la durata della presenza storica dell'utente nei dati.
 
 | Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
 | UserKey |Identificatore univoco dell'utente nel data warehouse, chiave surrogata. |123 |
 | UserId |Identificatore univoco dell'utente, simile a UserKey, ma è una chiave naturale. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Indirizzo di posta elettronica dell'utente. |John@constoso.com |
-| DisplayName |Nome visualizzato dell'utente. |John |
+| UPN | UPN dell'utente. | John@constoso.com |
+| DisplayName |Nome visualizzato dell'utente. |Luca |
 | IntuneLicensed |Specifica se l'utente ha una licenza per Intune. |True/False |
-| IsDeleted |Indica se il record utente è stato aggiornato.  True: questo utente ha un nuovo record con i campi aggiornati in questa tabella. False: l'ultimo record per questo utente. |True/False |
-| StartDateInclusiveUTC |Data e ora in formato UTC della creazione dell'utente nel data warehouse. |23/11/2016 12.00.00 |
-| EndDateExclusiveUTC |Data e ora in formato UTC in cui IsDeleted è stato impostato su True. |23/11/2016 12.00.00 |
-| IsCurrent |Indica se il record dell'utente è corrente nel data warehouse. |True/False |
-| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica dell'utente nel data warehouse. |23/11/2016 12.00.00 |
+| IsDeleted | Indica se tutte le licenze dell'utente sono scadute e se l'utente è stato quindi rimosso da Intune. Per un singolo record, questo flag non cambia. Per un nuovo stato utente viene creato invece un nuovo record. |True/False |
+| StartDateInclusiveUTC |Se IsDeleted = FALSE, data e ora in formato UTC del momento in cui all'utente è stata assegnata una licenza e ne è iniziata la presenza in Intune. Se IsDeleted = TRUE, data e ora in formato UTC del momento in cui sono scadute le licenze dell'utente e quest'ultimo è stato quindi rimosso da Intune. |23/11/2016 12.00.00 |
+| EndDateExclusiveUTC |Se IsDeleted = FALSE, data e ora in formato UTC del momento in cui è scaduta la licenza dell'utente e quest'ultimo è stato quindi rimosso da Intune. La licenza è scaduta nel corso del giorno precedente. Se IsDeleted = TRUE, data e ora in formato UTC del momento in cui l'utente ha riacquisito una nuova licenza ed è stato ricreato in Intune.  |23/11/2016 12.00.00 |
+| IsCurrent |Indica se il record rappresenta lo stato più recente dell'utente. Per un utente possono esistere più record, ma solo uno ne rappresenta lo stato corrente.  |True/False |
+| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica del record nel data warehouse  |23/11/2016 12.00.00 |
 
+## <a name="next-steps"></a>Passaggi successivi
+ - È possibile usare la raccolta di entità **Current User** per limitare i dati agli utenti attualmente attivi. Per altre informazioni, vedere [Informazioni di riferimento per l'entità Current User](reports-ref-current-user.md). 
+ - Per altre informazioni su come il data warehouse controlla la durata di un utente in Intune, vedere [Rappresentazione della durata degli utenti nel data warehouse di Intune](reports-ref-user-timeline.md).
