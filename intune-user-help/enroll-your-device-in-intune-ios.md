@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Configurare l'accesso alle risorse aziendali
 
@@ -48,7 +48,7 @@ Le aziende dispongono di molte informazioni proprietarie relative, ad esempio, a
 |![Richiesta di password di Azure Active Directory.](./media/ios-0b-cp-enroll-1711.png)|Immettere la password e quindi toccare **Accedi**.|
 |![Schermata iniziale di caricamento delle risorse aziendali.](./media/ios-1-cp-enroll-1711.png)|Attendere il caricamento.|
 |![Termini e condizioni.](./media/ios-2-cp-enroll-1711.png)|Leggere i termini e le condizioni e fare clic su **Accetta tutto**.|
-|![Schermata di configurazione dell'accesso aziendale. È necessario eseguire determinate azioni sia nella schermata di gestione sia in quella delle impostazioni.](./media/ios-3-cp-enroll-1711.png)|Toccare **Consenti la gestione del dispositivo** per iniziare il processo che consentirà al dispositivo di accedere alle risorse aziendali. Se non è possibile eseguire subito questa operazione, fare clic su **Rimanda** per rimandare il processo. In questo caso, tuttavia, non sarà possibile ottenere messaggi di posta elettronica, documenti e altro ancora.|
+|![Schermata di configurazione dell'accesso aziendale. È necessario eseguire determinate azioni sia nella schermata di gestione sia in quella delle impostazioni.](./media/ios-3-cp-enroll-1711.png)|Toccare **Inizio** per iniziare il processo che consentirà al dispositivo di accedere alle risorse aziendali. Se non è possibile eseguire subito questa operazione, fare clic su **Rimanda** per rimandare il processo. In questo caso, tuttavia, non sarà possibile ottenere messaggi di posta elettronica, documenti e altro ancora.|
 |![Schermata relativa agli elementi che può vedere la società.](./media/ios-4-cp-enroll-1711.png)|Toccando il link **Altre informazioni** in fondo alla schermata, è possibile sapere quali informazioni può visualizzare la società. Altrimenti, toccare **Continua**.|
 |![Schermata Passaggi successivi.](./media/ios-5-cp-enroll-1711.png)|Questa schermata illustra cosa accade durante il processo di configurazione. Per completare il processo sarà necessario eseguire alcune operazioni in Safari, nell'app Impostazioni e nell'app Portale aziendale. Toccare **Avanti**.|
 |![Caricamento della schermata visualizzata dopo aver toccato Avanti nella schermata Passaggi successivi.](./media/ios-6-cp-enroll-1711.png)||
@@ -66,7 +66,7 @@ Le aziende dispongono di molte informazioni proprietarie relative, ad esempio, a
 |![Schermata di caricamento delle risorse aziendali.](./media/ios-18-cp-enroll-1711.png)|Attendere il caricamento.|
 |![Selezionare una categoria di dispositivi nell'app Portale aziendale.](./media/ios-19-cp-enroll-1711.png)|Scegliere la categoria più idonea per il dispositivo in uso. Questa scelta dipende in genere dal proprietario del dispositivo e dal luogo in cui si trova il dispositivo nella maggior parte dei casi.|
 |![Categoria selezionata.](./media/ios-20-cp-enroll-1711.png)||
-|![Gestione del dispositivo eseguita con esito positivo. Necessità di aggiornare le impostazioni.](./media/ios-21-cp-enroll-1711.png)|Il dispositivo risulta ora correttamente gestito. Probabilmente, tuttavia, esistono ancora alcune impostazioni, ad esempio la lunghezza della password, che l'azienda richiede che vengano aggiornate. Toccare **Aggiorna impostazioni del dispositivo** per continuare.|
+|![Gestione del dispositivo eseguita con esito positivo. Necessità di aggiornare le impostazioni.](./media/ios-21-cp-enroll-1711.png)|Il dispositivo risulta ora correttamente gestito. Probabilmente, tuttavia, esistono ancora alcune impostazioni, ad esempio la lunghezza della password, che l'azienda richiede che vengano aggiornate. Toccare **Continua** per procedere.|
 |![Conferma delle impostazioni del dispositivo.](./media/ios-22-cp-enroll-1711.png)|L'app Portale aziendale verificherà che non siano presenti impostazioni da aggiornare.|
 |![Controllo delle impostazioni completato con versione del sistema operativo non corretta](./media/ios-23-cp-enroll-1711.png)|L'app Portale aziendale fornirà le istruzioni necessarie per correggere eventuali problemi con le impostazioni. Al termine della risoluzione dei problemi, toccare **Verifica le impostazioni**.|
 |![Schermata di caricamento di conferma delle impostazioni del dispositivo](./media/ios-24-cp-enroll-1711.png)|Il dispositivo verificherà che le impostazioni siano sufficientemente sicure per accedere alle risorse aziendali.|
