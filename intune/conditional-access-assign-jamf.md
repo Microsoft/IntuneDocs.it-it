@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6184552ce901ffc062f0453f169ec992049ae69b
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: dd84812a7e7dcf83f01c8d4d2b613706f7700775
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Imporre la conformità nei computer Mac gestiti con Jamf Pro
 
@@ -64,3 +64,8 @@ Gli utenti finali devono avviare l'app Portale aziendale tramite Jamf Self Servi
 2. Configurare il payload **Accesso condizionale**, incluse le impostazioni relative al trigger e alla frequenza di esecuzione. Impostare la priorità su **Dopo**.
 3. Fare clic sulla scheda **Ambito** e includere nell'ambito dei criteri tutti i dispositivi di destinazione.
 4. Fare clic sulla scheda **Self Service** per rendere i criteri disponibili in Jamf Self Service. Includere i criteri nella categoria **Conformità del dispositivo**. Fare clic su **Save**.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Accesso condizionale in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [Get started with conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started) (Introduzione all'accesso condizionale in Azure Active Directory)

@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8aad2b31b6545c451f27084c6deefaf416ee2710
-ms.sourcegitcommit: 13955af66e3402a0448e236451b97e90a2d29204
+ms.openlocfilehash: 1f3f9832a643628cf18aee6131b9c8a43843e94d
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 
@@ -257,7 +257,7 @@ L'app Portale aziendale per Android include ora istruzioni per gli utenti finali
 
 #### <a name="new-resolve-action-available-for-android-devices----1583480---"></a>Nuova azione 'Risolvi' disponibile per i dispositivi Android <!---1583480--->
 
-L'app del portale aziendale per Android include ora una nuova azione 'Risolvi' nella pagina _Aggiorna impostazioni del dispositivo_. La selezione di questa opzione indirizza l'utente finale direttamente all'impostazione che rende il dispositivo non conforme. L'app del portale aziendale per Android supporta attualmente questa opzione per le impostazioni di [passcode del dispositivo](/intune-user-help/set-your-pin-or-password-android), [crittografia del dispositivo](/intune-user-help/encrypt-your-device-android), [debug USB](/intune-user-help/you-need-to-turn-off-usb-debugging-android) e [origini sconosciute](/intune-user-help/you-need-to-turn-off-unknown-sources-android).
+L'app del portale aziendale per Android include ora una nuova azione 'Risolvi' nella pagina _Aggiorna impostazioni del dispositivo_. La selezione di questa opzione indirizza l'utente finale direttamente all'impostazione che rende il dispositivo non conforme. L'app del portale aziendale per Android supporta attualmente questa opzione per le impostazioni di [passcode del dispositivo](/intune-user-help/set-your-pin-or-password-android), [debug USB](/intune-user-help/you-need-to-turn-off-usb-debugging-android) e [origini sconosciute](/intune-user-help/you-need-to-turn-off-unknown-sources-android).
 
 #### <a name="device-setup-progress-indicator-in-android-company-portal----1565657---"></a>Indicatore dello stato di avanzamento della configurazione del dispositivo in Portale aziendale Android <!---1565657--->
 Quando un utente registra un dispositivo, nell'app Portale aziendale per Android viene visualizzato un indicatore dello stato di avanzamento del processo di configurazione del dispositivo. L'indicatore elenca i nuovi stati nell'ordine seguente: "Configurazione del dispositivo...", "Registrazione del dispositivo...", "Completamento della registrazione del dispositivo..." e "Completamento della configurazione del dispositivo...".
