@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: a10d158816f17c7fbe07fd14172d1a9abb9ed9b9
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple
 
@@ -157,11 +157,11 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 ## <a name="sync-managed-devices"></a>Sincronizzare i dispositivi gestiti
 Adesso che Intune ha le autorizzazioni per gestire i dispositivi, è possibile sincronizzare Intune con Apple per visualizzare i dispositivi gestiti nel portale di Azure in Intune.
 
-1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** >  **Registrazione Apple** > **Dispositivi DEP**.
-2. In **Dispositivi DEP** scegliere **Sincronizza**.
+1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Dispositivi DEP** > **Sincronizza**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
 
   ![Screenshot del nodo Dispositivi DEP selezionato e della scelta del collegamento Sincronizza.](./media/enrollment-program-device-sync.png)
-3. Nel pannello **Sincronizzazione** scegliere **Richiedi la sincronizzazione**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
+  
+2. Nel pannello **Sincronizzazione** scegliere **Richiedi la sincronizzazione**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
 
   ![Screenshot del pannello Sincronizza con la scelta del collegamento Richiedi la sincronizzazione.](./media/enrollment-program-device-request-sync.png)
 
@@ -170,7 +170,7 @@ Adesso che Intune ha le autorizzazioni per gestire i dispositivi, è possibile s
      -  Il tempo concesso per il completamento di una richiesta di sincronizzazione è pari a 15 minuti. Durante questo tempo o fino al completamento della richiesta, il pulsante **Sincronizza** è disabilitato.
      - Intune sincronizza con Apple i dispositivi nuovi e rimossi ogni 24 ore.
 
-4. Nell'area di lavoro DEP, scegliere **Aggiorna** per visualizzare i dispositivi.
+3. Nell'area di lavoro DEP, scegliere **Aggiorna** per visualizzare i dispositivi.
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>Assegnare un profilo DEP ai dispositivi
 Prima della registrazione è necessario assegnare ai dispositivi un profilo DEP.

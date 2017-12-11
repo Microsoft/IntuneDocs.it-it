@@ -284,6 +284,8 @@
               href: app-notification-settings-ios.md
             - name: Dispositivi condivisi per iOS
               href: shared-device-settings-ios.md
+            - name: Configurare Intune per l’accesso Single Sign-On al dispositivo iOS
+              href: sso-ios.md
             - name: Impostazioni di filtro Web per iOS
               href: web-content-filter-settings-ios.md
         - name: Configurare le restrizioni dei dispositivi
