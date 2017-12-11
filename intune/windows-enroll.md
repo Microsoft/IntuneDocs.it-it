@@ -5,7 +5,7 @@ description: Abilitare la gestione di dispositivi mobili (MDM) Intune per i disp
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 11/08/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02563b85a6bcac12c60537af4a998b09bca3b6ee
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: 0c4c245829a7819c9427a8ebe8ad9e166b58da97
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enroll-windows-devices"></a>Registrazione di dispositivi Windows
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 11/09/2017
 
 Questo argomento offre agli amministratori IT informazioni utili per semplificare la registrazione di Windows per gli utenti. Dopo aver [configurato Intune](setup-steps.md) gli utenti registrano i dispositivi Windows [accedendo](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) con l'account aziendale o dell'istituto di istruzione.  
 
-L'amministratore di Intune può semplificare la registrazione nei seguenti modi:
+L'amministratore di Intune può semplificare la registrazione nei modi seguenti:
 - [Abilitare la registrazione automatica](#enable-windows-10-automatic-enrollment) (richiede Azure AD Premium)
 - [Registrazione CNAME](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Abilitare la registrazione in blocco](windows-bulk-enroll.md) (sono necessari Azure AD Premium e Progettazione configurazione di Windows)
@@ -78,6 +78,15 @@ La propagazione delle modifiche ai record DNS potrebbe richiedere fino a 72 ore.
 Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**. Nel pannello Intune scegliere **Registra i dispositivi** > **Registrazione Windows**. Immettere l'URL del sito Web della società nella casella **Specificare un nome di dominio verificato** e quindi scegliere **Verifica il rilevamento automatico**.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Informare gli utenti sulla modalità di registrazione dei dispositivi Windows
-Informare gli utenti sulla modalità di registrazione dei dispositivi Windows e su cosa accade dopo il loro inserimento nella gestione. Per istruzioni sulla registrazione da parte dell'utente finale, vedere [Registrare il dispositivo Windows in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). È anche possibile invitare gli utenti a leggere [Quali sono le informazioni visibili per l'azienda quando si registra il dispositivo in Intune?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+Informare gli utenti sulla modalità di registrazione dei dispositivi Windows e su cosa accade dopo il loro inserimento nella gestione.
+
+> [!NOTE]
+> Gli utenti finali devono accedere al sito Web del portale aziendale attraverso Microsoft Edge per visualizzare le app Windows assegnate per le versioni di Windows specifiche. Altri browser, inclusi Google Chrome, Mozilla Firefox e Internet Explorer, non supportano questo tipo di filtro.
+
+Per istruzioni sulla registrazione da parte dell'utente finale, vedere [Registrare il dispositivo Windows in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). È anche possibile invitare gli utenti a leggere [Quali sono le informazioni visibili per l'azienda quando si registra il dispositivo in Intune?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
 Per altre informazioni sulle attività per gli utenti finali, vedere [Informazioni sull'uso di Microsoft Intune per gli utenti finali](end-user-educate.md).
+
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Considerazioni per la gestione di dispositivi Windows con Intune in Azure](/intune-classic/deploy-use/intune-on-azure.md).

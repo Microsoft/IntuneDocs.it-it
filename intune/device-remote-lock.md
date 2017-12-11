@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 11/21/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 585c9ba232f8a1d9c7bb529d6d260165c2d0883d
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 8905b97a5912010a2516788a8da66441fc6f89ae
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remotely-lock-managed-devices-with-intune"></a>Bloccare in remoto i dispositivi gestiti con Intune
 
@@ -32,7 +32,10 @@ L'azione del dispositivo **Blocco remoto** consente di bloccare il dispositivo s
 - Windows: funzionalità non supportata
 - Windows Phone: funzionalità supportata in Windows Phone 8.1 e versioni successive
 - iOS: funzionalità supportata
-- macOS: funzionalità non supportata
+- macOS: funzionalità supportata
+
+    > [!Note]  
+    > Impostare un PIN di ripristino di 6 cifre. Quando il dispositivo è bloccato, il pannello **Device overview** (Panoramica dispositivo) visualizza il PIN fino a quando non viene inviata un'altra azione del dispositivo.
 - Android: funzionalità supportata
 
 ## <a name="how-to-remote-lock-a-device"></a>Come bloccare un dispositivo in remoto

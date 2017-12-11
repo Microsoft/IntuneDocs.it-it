@@ -1,12 +1,12 @@
 ---
 title: Come monitorare le informazioni sulle app e le assegnazioni
 titlesuffix: Azure portal
-description: Dopo avere assegnato un'app agli utenti o ai dispositivi, usare queste informazioni per monitorarne lo stato."
+description: Dopo avere assegnato un'app agli utenti o ai dispositivi, usare queste informazioni per monitorarne lo stato.
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/20/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 0298fc255b3c11a12b5bf225968d6f2303192053
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Come monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune
 
@@ -30,32 +30,74 @@ Intune offre alcuni metodi per monitorare le proprietà delle app gestite, nonch
 1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** + **Intune**.
 3. Nel carico di lavoro di **App per dispositivi mobili** scegliere **App** dal gruppo **Gestisci**.
-     
-    ![Pannello stato di installazione app.](./media/monitor-apps.png)
 5. Nel pannello con l'elenco di app scegliere un'app. Verrà visualizzato il pannello <*nome app*> **Stato dell'installazione del dispositivo**.
 
-Il report sullo stato dell'installazione del dispositivo contiene le colonne seguenti:
+## <a name="app-overview-blade"></a>Pannello di panoramica delle app
 
-1.  **Nome dispositivo** Il nome del tipo di dispositivo.
-2.  **Nome utente** Il nome dell'utente.
-3.   **Piattaforma** Il sistema operativo installato nel dispositivo.
-4.  **Versione** Il numero di versione dell'applicazione.
-5.   **Stato** Gli stati possibili per le app sono: **Installato**, **Non installato**, **Installazione in sospeso** ed **Errore**.
-6. **Dettagli stato** Una descrizione leggibile dello stato dell'app nel dispositivo.
-7. **Ultima archiviazione** Quando il dispositivo ha eseguito l'ultimo accesso a Intune.
+È possibile usare il pannello <*nome app*> **Stato dell'installazione del dispositivo** per esaminare i dettagli relativi allo stato di un'app nel proprio ambiente.
 
-Eseguire una delle operazioni seguenti per ottenere altre informazioni sulle app e sulle rispettive assegnazioni.
+### <a name="essentials"></a>Essentials
 
-## <a name="general"></a>Generale
+La sezione **Informazioni di base** contiene le seguenti informazioni sull'app:
 
-- **Panoramica**: contiene una panoramica di base dell'app, con informazioni sullo stato di qualsiasi assegnazione. È possibile scegliere uno dei grafici per aprire il pannello **Stato dell'installazione del dispositivo** o **Stato dell'installazione dell'utente** per ottenere maggiori dettagli.
+ - **Autore**  
+Autore della pubblicazione dell'app.
+ - **Sistema operativo**  
+Sistema operativo dell'app (Windows, iOS, Android, ecc.)
+ - **Crea**  
+Ora di creazione della revisione.
+ - **Assegnato**  
+**Sì** o **No** a seconda che l'app sia stata assegnata o meno.
 
-## <a name="manage"></a>Gestire
+### <a name="status"></a>Stato
+Ogni grafico mostra i conteggi per gli stati seguenti:
 
-- **Proprietà**: permette di visualizzare e modificare le informazioni sull'app selezionata. Per altre informazioni sulle proprietà dell'app, vedere [Come aggiungere un'app a Microsoft Intune](apps-add.md).
-- **Assegnazioni**: fornisce informazioni sulle assegnazioni per l'app. Per altre informazioni, vedere [How to assign apps to groups with Microsoft Intune](apps-deploy.md) (Come assegnare app ai gruppi con Microsoft Intune).
+ - **Installato**  
+Numero di app installate.
+ - **Non installato**  
+Numero di app non installate.
+ - **L'installazione è in sospeso**  
+Numero di app in corso d'installazione.
+ - **Operazione non riuscita**  
+Numero di installazioni non riuscite.
+ - **Sconosciuto**  
+Numero di app con stato sconosciuto.
 
-## <a name="monitor"></a>Monitoraggio
+### <a name="device-status"></a>Stato dispositivo
 
-- **Stato dell'installazione del dispositivo**: fornisce informazioni dettagliate per ogni dispositivo cui è stata assegnata l'app selezionata, tra cui il nome del dispositivo, il sistema operativo, la data e l'ora dell'ultima archiviazione del dispositivo in Intune e lo stato dell'installazione dell'app.
-- **Stato dell'installazione dell'utente**: offre informazioni dettagliate per l'utente cui è stata assegnata l'app selezionata, tra cui il numero di installazioni dell'app che l'utente ha su tutti i dispositivi e gli eventuali errori di installazione.
+Stato del dispositivo. Grafico ad anello che visualizza lo stato di installazione dell'app nei dispositivi. Fare clic sul grafico per aprire un elenco dei dettagli relativi allo stato del dispositivo. La tabella dei dettagli include le colonne seguenti:
+
+ - **Nome dispositivo**  
+Nome del dispositivo su piattaforme che consentono la denominazione di un dispositivo. Su altre piattaforme, Intune crea un nome da altre proprietà. Questo attributo non può essere disponibile per tutti i dispositivi.
+ - **Nome utente**  
+Nome dell'utente.
+ - **Piattaforma**  
+Sistema operativo del dispositivo (Windows, iOS, Android, ecc.)
+ - **Versione**  
+Numero di versione dell'app. Per le app line-of-business, viene visualizzato il numero di versione completo dell'app. Il numero di versione completo identifica una versione specifica dell'app. Il numero viene visualizzato come _Versione_(_Build_). Ad esempio, 2.2(2.2.17560800)
+ - **Stato**  
+Stato dell'app.
+ - **Dettagli stato**  
+Dettagli dello stato.
+ - **Ultima archiviazione**  
+Data dell'ultima sincronizzazione del dispositivo con Intune.
+
+
+### <a name="user-status"></a>Stato utente
+
+Stato dell'utente. Grafico ad anello che visualizza lo stato di installazione dell'app per gli utenti. Fare clic sul grafico per aprire un elenco dei dettagli relativi allo stato del dispositivo. La tabella dei dettagli include le colonne seguenti:
+ - **Nome**  
+Nome dell'utente in Azure AD.
+ - **Nome utente**  
+Nome univoco dell'utente.
+ - **Installazioni**  
+Numero di installazioni di app usato dall'utente.
+ - **Errori**  
+Numero di installazioni non riuscite eseguite dall'utente.
+ - **Non installato**  
+Numero di app non installate dall'utente.
+
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Per altre informazioni sull'uso dei dati di Intune, vedere [Usare il data warehouse di Intune](reports-nav-create-intune-reports.md).

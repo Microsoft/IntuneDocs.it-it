@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afb3aeff7a7c6cc481d24bac3a61de0816b4d34b
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: 5aaefd6bfbff3394b4c0f79948ac23e32536f1e3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Abilitare la registrazione di dispositivi iOS con Apple School Manager
 
@@ -90,11 +90,11 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 
 6. Scegliere **Impostazioni di gestione dei dispositivi**. Questi elementi vengono impostati durante l'attivazione e richiedono il ripristino delle impostazioni predefinite per la modifica. Configurare le impostazioni del profilo seguenti e quindi scegliere **Salva**:
 
-  ![Screenshot della scelta della modalità di gestione. Le impostazioni del dispositivo sono le seguenti: Supervisione eseguita, Registrazione bloccata, Consenti associazione impostato su Rifiuta tutto. Per un nuovo profilo DEP, l'opzione Certificati di Apple Configurator è disattivata.](./media/enrollment-program-profile-mode.png)
+  ![Screenshot della scelta della modalità di gestione. Le impostazioni del dispositivo sono le seguenti: Supervisione eseguita, Registrazione bloccata, Rifiuta tutto in Consenti associazione. Per un nuovo profilo DEP, l'opzione Certificati di Apple Configurator è disattivata.](./media/enrollment-program-profile-mode.png)
 
     - **Supervisione eseguita**: modalità di gestione che attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita. Se si lascia vuota la casella di controllo, le funzionalità di gestione saranno limitate.
 
-     - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disattiva le impostazioni iOS che potrebbero consentire la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni.
+     - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disabilita le impostazioni iOS che possono consentire la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni.
    - **iPad condiviso**: richiede le modalità **Registra senza affinità utente** e Supervisione eseguita. Consente a più utenti di eseguire l'accesso agli iPad registrati usando un ID Apple gestito. Gli ID Apple gestiti sono creati nel portale Apple School Manager. Altre informazioni sull'[iPad condiviso](education-settings-configure-ios-shared.md). Vedere anche i [requisiti per usare l'iPad condiviso di Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
    >[!NOTE]
@@ -136,9 +136,10 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 ## <a name="sync-managed-devices"></a>Sincronizzare i dispositivi gestiti
 Dopo aver assegnato le autorizzazioni per gestire i dispositivi Apple School Manager a Intune, è possibile sincronizzare Intune con il servizio Apple per visualizzare i dispositivi gestiti in Intune.
 
-1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** e quindi scegliere **Registrazione Apple**.
-2. In **Dispositivi DEP** scegliere **Sincronizza**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
-3. Nel pannello **Sincronizzazione** scegliere **Richiedi la sincronizzazione**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
+1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Dispositivi DEP** > **Sincronizza**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
+
+  ![Screenshot del nodo Dispositivi DEP selezionato e della scelta del collegamento Sincronizza.](./media/enrollment-program-device-sync.png)
+2. Nel pannello **Sincronizzazione** scegliere **Richiedi la sincronizzazione**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
 
   ![Screenshot del pannello Sincronizza con la scelta del collegamento Richiedi la sincronizzazione.](./media/enrollment-program-device-request-sync.png)
 

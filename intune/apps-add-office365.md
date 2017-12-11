@@ -1,5 +1,5 @@
 ---
-title: Installare le app di Office 365 ProPlus nei dispositivi Windows 10 con Intune
+title: Installare le app di Office 365 nei dispositivi mobili usando Intune
 titlesuffix: Azure portal
 description: "Informazioni su come usare Intune per renderne più semplice l'installazione delle app di Office 365 nei dispositivi Windows 10."
 keywords: 
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4e3ad7b68be723e0cab7b541b0ae7e3cc858c99
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Come assegnare le app di Office 365 ProPlus 2016 ai dispositivi Windows 10 con Microsoft Intune
 
-Questo tipo di app semplifica l'assegnazione delle app Office 365 ProPlus 2016 ai dispositivi gestiti che eseguono Windows 10. È anche possibile installare app per il client per desktop di Microsoft Project Online e Microsoft Visio Pro for Office 365 se si è proprietari delle relative licenze. Le app desiderate vengono visualizzate come un'unica app nell'elenco delle app nella console di Intune.
+Questo tipo di app semplifica l'assegnazione delle app Office 365 ProPlus 2016 ai dispositivi gestiti che eseguono Windows 10. È anche possibile installare app per il client per desktop di Microsoft Project Online e Microsoft Visio Pro for Office 365 se si è proprietari delle relative licenze. Le app desiderate vengono visualizzate come unica voce nell'elenco delle app nella console di Intune.
 
 
 ## <a name="before-you-start"></a>Prima di iniziare
@@ -137,7 +137,3 @@ La tabella seguente elenca i codici di errore comuni che possono essere visualiz
 ## <a name="next-steps"></a>Passaggi successivi
 
 È ora possibile assegnare le app ai gruppi scelti. Per altre informazioni, vedere [Come assegnare app ai gruppi](/intune-azure/manage-apps/deploy-apps).
-
-             
-
-

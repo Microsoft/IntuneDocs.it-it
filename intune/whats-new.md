@@ -3,10 +3,10 @@ title: "Novità di Microsoft Intune"
 titlesuffix: Azure portal
 description: "Informazioni sulle novità nel portale di Intune di Azure"
 keywords: 
-author: brenduns
-ms.author: brenduns
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/18/2017
+ms.date: 11/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f3f9832a643628cf18aee6131b9c8a43843e94d
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: b3e17a932eb77d5b5917c18e4383cbbfb2aeb539
+ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 
@@ -41,6 +41,149 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazio
   ### Monitor and troubleshoot
 
 -->   
+
+## <a name="week-of-november-27-2017"></a>Settimana del 27 novembre 2017
+
+### <a name="device-enrollment"></a>Registrazione del dispositivo
+ 
+#### <a name="troubleshoot-enrollment-issues-----746324---"></a>Risolvere i problemi di registrazione  <!-- 746324 --> 
+
+L'area di lavoro **Risoluzione dei problemi** ora visualizza i problemi di registrazione dell'utente. Informazioni dettagliate sul problema e i passaggi suggeriti per la correzione possono essere utili ad amministratori e operatori di help desk per la risoluzione dei problemi. Alcuni problemi di registrazione non vengono rilevati ed è possibile che per alcuni errori non siano disponibili suggerimenti per la correzione. 
+
+#### <a name="group-assigned-enrollment-restrictions----747598---"></a>Restrizioni di registrazione assegnate ai gruppi <!-- 747598 -->
+ 
+L'amministratore di Intune ora può [creare restrizioni di registrazione Tipo di dispositivo e Limite di dispositivi personalizzate per i gruppi di utenti](enrollment-restrictions-set.md).
+ 
+Il portale di Azure di Intune consente di creare fino a 25 istanze di ogni tipo di restrizione che possono essere successivamente assegnate ai gruppi di utenti. Le restrizioni assegnate ai gruppi sostituiscono le restrizioni predefinite.
+ 
+Tutte le istanze di un tipo di restrizione vengono mantenute in un elenco nell'ordine. L'ordine definisce un valore di priorità per la risoluzione dei conflitti. Un utente interessato da più istanze di restrizione viene limitato solo dall'istanza con il valore di priorità più alto. È possibile modificare la priorità di un'istanza specifica trascinandola in una posizione diversa nell'elenco. 
+ 
+Questa funzionalità verrà rilasciata con la migrazione delle impostazioni di Android for Work dal menu di registrazione di Android for Work al menu Restrizioni registrazione. Poiché la migrazione può richiedere diversi giorni, è possibile che l'account venga aggiornato per altre parti del rilascio di novembre prima che l'assegnazione dei gruppi appaia abilitata per le restrizioni di registrazione.
+
+#### <a name="support-for-multiple-network-device-enrollment-service-ndes-connectors----1528104---"></a>Supporto di più connettori del servizio Registrazione dispositivi di rete <!-- 1528104 -->
+
+Il servizio Registrazione dispositivi di rete (NDES, Network Device Enrollment Service) consente ai dispositivi mobili in esecuzione senza credenziali di dominio di ottenere certificati basati sul protocollo SCEP (Simple Certificate Enrollment Protocol). Con questo aggiornamento, sono supportati più connettori del servizio Registrazione dispositivi di rete. 
+
+#### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>Gestire i dispositivi Android for Work indipendentemente dai dispositivi Android <!-- 1490731 EEready-->
+ 
+**Nota**: la distribuzione di queste modifiche avrà inizio con l'aggiornamento di novembre, ma eseguirla nel proprio account può richiedere tempo. Quando queste modifiche vengono rese effettive per il proprio account, si riceverà una notifica di conferma nel portale di Office 365. Dopo la distribuzione saranno disponibili opzioni aggiuntive per la gestibilità. L'esperienza dell'utente finale non subirà variazioni durante la distribuzione.
+ 
+Intune supporta la gestione della registrazione di dispositivi Android for Work indipendentemente dalla piattaforma Android. Queste impostazioni vengono gestite in **Registrazione del dispositivo** > **Restrizioni registrazione** > **Restrizioni sul tipo di dispositivi**. In precedenza erano disponibili in **Registrazione del dispositivo** > **Registrazione di Android for Work** > **Impostazioni di registrazione per Android for Work**.
+ 
+Per impostazione predefinita, le impostazioni dei dispositivi Android for Work corrispondono alle impostazioni dei dispositivi Android. Tuttavia, dopo la modifica delle impostazioni Android for Work questa corrispondenza andrà persa.
+ 
+Se si blocca la registrazione dei dispositivi Android for Work personali, solo i dispositivi Android aziendali possono essere registrati come Android for Work.
+ 
+Durante l'uso delle nuove impostazioni, considerare quanto segue:
+ 
+##### <a name="if-you-have-never-previously-onboarded-android-for-work-enrollment"></a>Se la registrazione di Android for Work non è mai stata caricata in precedenza
+ 
+La nuova piattaforma Android for Work è bloccata nelle Restrizioni sul tipo di dispositivi predefinite. Dopo aver caricato la funzionalità, è possibile consentire la registrazione dei dispositivi con Android for Work. A tale scopo, modificare il valore predefinito o creare una nuova restrizione dei tipi di dispositivo per sostituire la restrizione predefinita.
+ 
+##### <a name="if-you-have-onboarded-android-for-work-enrollment"></a>Se la registrazione di Android for Work è stata caricata
+ 
+Se la registrazione è stata caricata in precedenza, la situazione varia a seconda dell'impostazione selezionata:
+ 
+| Impostazioni | Stato di Android for Work nella restrizione dei tipi di dispositivo predefinita | Note |
+| --- | --- | --- |
+| **Gestisci tutti i dispositivi come Android** | Bloccato | Tutti i dispositivi Android devono essere registrati senza Android for Work. |
+| **Gestisci i dispositivi supportati come Android for Work** | Consentito | Tutti i dispositivi Android che supportano Android for Work devono essere registrati con Android for Work. |
+| **Gestisci i dispositivi supportati per gli utenti solo in questi gruppi come Android for Work** | Bloccato | Per sostituire l'impostazione predefinita è stato creato un criterio Restrizione dei tipi di dispositivo separato. Questo criterio definisce i gruppi precedentemente selezionati per consentire la registrazione di Android for Work. Gli utenti inclusi nei gruppi selezionati continueranno a essere autorizzati a registrare i loro dispositivi Android for Work. A tutti gli altri utenti non è consentita la registrazione con Android for Work. |
+ 
+In tutti i casi, viene mantenuto il regolamento previsto. Per mantenere l'autorizzazione globale o per i singoli gruppi di Android for Work nel proprio ambiente non è necessario eseguire alcuna operazione.
+
+### <a name="app-management"></a>Gestione delle app
+  
+#### <a name="app-install-report-updated-to-include-install-pending-status----1249446---"></a>Report sull'installazione delle app aggiornato per includere lo stato Installazione in sospeso <!-- 1249446 -->  
+
+Il report **Stato di installazione dell'app** accessibile per ogni app attraverso l'elenco **App** nel carico di lavoro **App per dispositivi mobili** ora contiene il conteggio **Installazione in sospeso** per utenti e dispositivi.
+
+#### <a name="ios-11-app-inventory-api-for-mobile-threat-detection----1391759---"></a>API di inventario delle app iOS 11 per il rilevamento delle minacce per i dispositivi mobili<!-- 1391759 -->
+
+Intune raccoglie le informazioni degli inventari delle app dei dispositivi personali e aziendali e le rende disponibili per i provider del servizio di rilevamento delle minacce per i dispositivi mobili (MTD, Mobile Threat Detection), ad esempio Lookout for Work. Si possono raccogliere gli inventari delle app dagli utenti di dispositivi iOS 11 e versioni successive.
+
+**Inventario delle app**  
+Gli inventari dei dispositivi aziendali e personali iOS 11 e versioni successive vengono inviati al provider del servizio MTD. I dati dell'inventario delle app includono:
+
+ - ID dell'app
+ - Versione dell'app
+ - Versione breve dell'app
+ - Nome dell'app
+ - Dimensione del bundle dell'app
+ - Dimensione dinamica dell'app
+ - Indicazione sulla convalida dell'app
+ - Indicazione sulla gestione dell'app
+
+
+### <a name="device-management"></a>Gestione dei dispositivi
+
+#### <a name="remotely-restart-ios-device-supervised-only----1424595---"></a>Riavvio remoto del dispositivo iOS (solo supervisionato) <!-- 1424595 -->
+
+È ora possibile riavviare un dispositivo iOS 10.3 e versioni successive supervisionato usando un'azione del dispositivo. Per altre informazioni sull'uso dell'azione di riavvio del dispositivo, vedere [Riavviare i dispositivi in remoto con Intune](device-restart.md).
+
+> [!Note]
+> Per eseguire questo comando sono necessari un dispositivo supervisionato e il diritto di accesso **Device Lock** (Blocco dispositivo). Il dispositivo viene riavviato immediatamente. I dispositivi iOS bloccati con passcode non si ricollegano a una rete Wi-Fi dopo il riavvio. È possibile che dopo il riavvio non siano in grado di comunicare con il server.
+
+#### <a name="remotely-lock-managed-macos-device-with-intune----1437691---"></a>Bloccare in remoto un dispositivo macOS gestito con Intune <!-- 1437691 -->
+
+È possibile bloccare un dispositivo macOS smarrito e impostare un PIN di ripristino di 6 cifre. Quando il dispositivo è bloccato, il pannello **Device overview** (Panoramica dispositivo) visualizza il PIN fino a quando non viene inviata un'altra azione del dispositivo.
+
+Per altre informazioni, vedere [Bloccare in remoto i dispositivi gestiti con Intune](device-remote-lock.md).
+
+#### <a name="new-scep-profile-details-supported----1559808---"></a>Nuovi dettagli del profilo SCEP supportati <!-- 1559808 -->
+
+Gli amministratori ora possono configurare impostazioni aggiuntive durante la creazione di un profilo SCEP nelle piattaforme Windows, iOS, macOS e Android.  Gli amministratori possono impostare IMEI, numero di serie o nome comune, inclusa la posta elettronica nel formato del nome soggetto.
+
+#### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine----1592747----"></a>Gestire dispositivi macOS registrati in Jamf con il motore di conformità dei dispositivi di Intune <!---1592747 --->
+A partire dai primi mesi del 2018, Jamf invierà informazioni sullo stato dei dispositivi macOS a Intune, che ne valuterà la conformità ai criteri definiti nella console di Intune. In base allo stato di conformità dei dispositivi e ad altre condizioni (ad esempio la posizione, il rischio utente e così via), l'accesso condizionale imporrà la conformità ai dispositivi macOS che accedono alle applicazioni cloud e locali connesse ad Azure AD, incluso Office 365.
+
+<!-- #### Update to what device details your company may see -1616825
+The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources. -->
+
+#### <a name="retain-data-during-a-factory-reset----1588489---"></a>Mantenere i dati durante il ripristino delle impostazioni predefinite  <!--1588489 -->
+Quando si reimposta Windows 10 versione 1709 e successive ripristinando le impostazioni predefinite, è disponibile una nuova funzionalità. Gli amministratori possono specificare se la registrazione del dispositivo e altri dati di provisioning vengono mantenuti nel dispositivo quando viene eseguito il ripristino delle impostazioni predefinite. 
+
+Quando viene eseguito il ripristino delle impostazioni predefinite vengono mantenuti i dati seguenti:
+- Account utente associati al dispositivo
+- Stato del computer (aggiunto a un dominio, aggiunto ad Azure Active Directory)
+- Registrazione MDM
+- App installate OEM (app dello Store e Win32)
+- Profilo utente
+- Dati utente esterni al profilo utente
+- Accesso automatico dell'utente
+ 
+I dati seguenti non vengono mantenuti:
+- File dell'utente
+- App installate dell'utente (app dello Store e Win32)
+- Impostazioni del dispositivo non predefinite
+
+### <a name="monitor-and-troubleshoot"></a>Monitorare e risolvere i problemi
+#### <a name="window-10-update-ring-assignments-are-displayed----1621837---"></a>Assegnazioni degli anelli di aggiornamento di Windows 10 visualizzate <!-- 1621837 -->
+Durante la **Risoluzione dei problemi** per l'utente visualizzato le assegnazioni degli anelli di aggiornamento di Windows 10 sono visibili.  
+
+#### <a name="windows-defender-advanced-threat-protection-reporting-frequency-settings------1455974-----"></a>Impostazioni della frequenza di creazione di report di Windows Defender Advanced Threat Protection  <!--- 1455974  --->
+Il servizio Windows Defender Advanced Threat Protection (WDATP) consente agli amministratori di gestire la frequenza di creazione di report per i dispositivi gestiti. Con la nuova opzione **Accelera la frequenza di creazione di report di telemetria**, WDATP raccoglie i dati e valuta i rischi con maggior frequenza. L'impostazione predefinita per la creazione di report ottimizza velocità e prestazioni. L'aumento della frequenza di creazione di report può essere utile per i dispositivi a rischio elevato. Questa impostazione è disponibile nel profilo **Windows Defender ATP** in **Configurazioni dispositivi**.
+
+#### <a name="audit-updates----1412961---"></a>Aggiornamenti dei controlli <!-- 1412961 -->  
+La funzione di controllo di Intune offre un record delle operazioni di modifica correlate a Intune.  Tutte le operazioni di creazione, aggiornamento, eliminazione e attività remota vengono acquisite e conservate per un anno.  Il portale di Azure offre una visualizzazione degli ultimi 30 giorni dei dati di controllo di ogni carico di lavoro a cui è possibile applicare filtri.  Un'API Graph corrispondente consente il recupero dei dati di controllo archiviati dell'ultimo anno. 
+
+La funzione di controllo è disponibile nel gruppo **MONITOR**. Viene visualizzata una voce di menu **Log di controllo** per ogni carico di lavoro.   
+
+
+## <a name="week-of-november-20-2017"></a>Settimana del 20 novembre 2017
+
+### <a name="app-management"></a>Gestione delle app
+
+#### <a name="google-play-protect-support-on-android----908720---"></a>Supporto di Google Play Protect in Android <!-- 908720 -->
+
+Con il rilascio di Android Oreo, Google introduce un gruppo di funzionalità di sicurezza denominato Google Play Protect che consente a utenti e organizzazioni di eseguire app e immagini Android sicure. Intune supporta le funzionalità di Google Play Protect, inclusa l'attestazione remota SafetyNet. Gli amministratori possono impostare requisiti per i criteri di conformità che richiedono la configurazione e l'integrità di Google Play Protect.
+L'**attestazione dispositivo SafetyNet** richiede che il dispositivo si connetta a un servizio Google per verificare che il dispositivo sia integro e non compromesso. Gli amministratori possono anche definire un'impostazione del profilo di configurazione per far sì che Android for Work richieda la verifica delle app installate da parte di Google Play Services. L'accesso condizionale può impedire agli utenti di accedere alle risorse aziendali se un dispositivo non è conforme ai requisiti di Google Play Protect.
+
+- Informazioni su [come creare un criterio di conformità del dispositivo per abilitare Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect).
+
+#### <a name="text-protocol-allowed-from-managed-apps----1414050----"></a>Protocollo di testo consentito dalle app gestite <!-- 1414050  -->
+
+Le app gestite da Intune App SDK sono in grado di inviare messaggi SMS.
 
 ## <a name="week-of-november-13-2017"></a>Settimana del 13 novembre 2017
 
@@ -117,10 +260,10 @@ Gli amministratori possono definire i siti come "attendibili" o "aziendali" usan
 
 Application Guard è disponibile nei profili di configurazione del dispositivo, nel profilo "Endpoint Protection". Nel profilo gli amministratori possono configurare l'iterazione tra il browser virtualizzato e il computer host, i siti non attendibili e i siti attendibili e l'archiviazione dei dati nel browser virtualizzato. Per usare Application Guard in un dispositivo, è necessario innanzitutto configurare un limite di rete. È importante definire un solo limite di rete per dispositivo.  
 
-#### <a name="windows-defender-application-guard-on-windows-10-enterprise-provides-mode-to-trust-only-authorized-apps----1031096---"></a>Windows Defender Application Guard in Windows 10 Enterprise consente di considerare attendibili solo le app autorizzate <!-- 1031096 -->    
-Considerate le migliaia di nuovi file dannosi creati ogni giorno, l'uso di un sistema di rilevamento antivirus basato su firma per la protezione da software dannoso potrebbe non offrire più una difesa adeguata dai nuovi attacchi. Con Windows Defender Application Guard in Windows 10 Enterprise è possibile modificare la configurazione del dispositivo passando da una modalità in cui vengono considerate attendibili tutte le app a eccezione di quelle bloccate da un antivirus o da un'altra soluzione di sicurezza a una modalità in cui il sistema operativo considera attendibili solo le app autorizzate dalla propria organizzazione. È possibile impostare le app come attendibili in Windows Defender Application Guard.
+#### <a name="windows-defender-application-control-on-windows-10-enterprise-provides-mode-to-trust-only-authorized-apps----1031096---"></a>Il controllo delle applicazioni di Windows Defender in Windows 10 Enterprise consente di considerare attendibili solo le app autorizzate <!-- 1031096 -->    
+Considerate le migliaia di nuovi file dannosi creati ogni giorno, l'uso di un sistema di rilevamento antivirus basato su firma per la protezione da software dannoso potrebbe non offrire più una difesa adeguata dai nuovi attacchi. Con il controllo delle applicazioni di Windows Defender in Windows 10 Enterprise è possibile modificare la configurazione del dispositivo passando da una modalità in cui vengono considerate attendibili tutte le app a eccezione di quelle bloccate da un antivirus o da un'altra soluzione di sicurezza a una modalità in cui il sistema operativo considera attendibili solo le app autorizzate dalla propria organizzazione. È possibile impostare le app come attendibili nel controllo delle applicazioni di Windows Defender.
 
-Usando Intune è possibile configurare i criteri di controllo delle applicazioni in modalità "solo controllo" o in modalità di imposizione. In modalità "solo controllo" le app non vengono bloccate. La modalità "solo controllo" registra tutti gli eventi nei log del client locali. È anche possibile specificare se autorizzare l'esecuzione solo dei componenti Windows e delle app di Windows Store o di altre app affidabili in base a quanto definito da Intelligent Security Graph.
+Usando Intune è possibile configurare i criteri di controllo delle applicazioni in modalità "solo controllo" o in modalità di imposizione. In modalità "solo controllo" le app non vengono bloccate. La modalità "solo controllo" registra tutti gli eventi nei log del client locali. È anche possibile specificare se autorizzare l'esecuzione solo dei componenti Windows e delle app di Windows Store o anche quella di altre app affidabili in base a quanto definito da Intelligent Security Graph.
 
 #### <a name="window-defender-exploit-guard-is-a-new-set-of-intrusion-prevention-capabilities-for-windows-10----1063615---"></a>Windows Defender Exploit Guard è un nuovo set di funzionalità di prevenzione intrusioni per Windows 10 <!-- 1063615 -->   
 Windows Defender Exploit Guard include regole personalizzate per ridurre la vulnerabilità agli exploit delle applicazioni, evitare le minacce di macro e script, blocca automaticamente le connessioni di rete verso indirizzi IP con reputazione negativa ed è in grado di proteggere i dati da ransomware e minacce sconosciute. Windows Defender Exploit Guard include i componenti seguenti:
@@ -246,8 +389,8 @@ La pagina Impostazioni dell'app Portale aziendale per Windows 10 è stata aggior
 #### <a name="feedback-prompts-for-the-company-portal-app-for-android---1165249--"></a>Richiesta di commenti e suggerimenti per l'app Portale aziendale per Android <!--1165249-->
 L'app Portale aziendale per Android richiede ora commenti e suggerimenti da parte degli utenti finali. I commenti vengono inviati direttamente a Microsoft e offrono agli utenti finali la possibilità di valutare l'app nello store pubblico Google Play. L'invio di commenti e suggerimenti non è comunque obbligatorio e può essere facilmente ignorato per continuare a usare regolarmente l'app.
 
-#### <a name="update-to-what-device-details-an-organization-can-see---1616825--"></a>Aggiornamento sui dettagli dei dispositivi a cui può accedere un'organizzazione <!--1616825-->
-L'app Portale aziendale per Android può usare ora il geofencing per proteggere l'accesso alle risorse aziendali. Usa inoltre dettagli di rete come l'indirizzo IP, l'indirizzo gateway predefinito e il DNS (Domain Name System) per determinare se consentire l'accesso alle risorse aziendali protette.
+<!-- #### Update to what device details an organization can see 1616825
+The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources.-->
 
 #### <a name="helping-your-users-help-themselves-with-the-company-portal-app-for-android----1573324-1573150-1558616-1564878---"></a>Consentire agli utenti di usare l'app del portale aziendale per Android <!---1573324, 1573150, 1558616, 1564878--->
 
@@ -443,8 +586,35 @@ L'app Portale aziendale per Windows 10 consente agli utenti di aggiornare i dati
 
 ## <a name="notices"></a>Notifiche
 
-### <a name="deprecating-support-for-os-x-yosemite-1010-and-previous-versions-of-macos---1489263-plan-for-change-for-1802--"></a>Deprecazione del supporto per OS X Yosemite 10.10 e versioni precedenti di macOS <!--1489263, plan for change for 1802-->
+### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>Gestire i dispositivi Android for Work indipendentemente dai dispositivi Android <!-- 1490731 EEready-->
+ 
+**Nota**: la distribuzione di queste modifiche avrà inizio con l'aggiornamento di novembre, ma eseguirla nel proprio account può richiedere tempo. Quando queste modifiche vengono rese effettive per il proprio account, si riceverà una notifica di conferma nel portale di Office 365. Dopo la distribuzione saranno disponibili opzioni aggiuntive per la gestibilità. L'esperienza dell'utente finale non subirà variazioni durante la distribuzione.
+ 
+Intune supporta la gestione della registrazione di dispositivi Android for Work indipendentemente dalla piattaforma Android. Queste impostazioni vengono gestite in **Registrazione del dispositivo** > **Restrizioni registrazione** > **Restrizioni sul tipo di dispositivi**. In precedenza erano disponibili in **Registrazione del dispositivo** > **Registrazione di Android for Work** > **Impostazioni di registrazione per Android for Work**.
+ 
+Per impostazione predefinita, le impostazioni dei dispositivi Android for Work corrispondono alle impostazioni dei dispositivi Android. Tuttavia, dopo la modifica delle impostazioni Android for Work questa corrispondenza andrà persa.
+ 
+Se si blocca la registrazione dei dispositivi Android for Work personali, solo i dispositivi Android aziendali possono essere registrati come Android for Work.
+ 
+Durante l'uso delle nuove impostazioni, considerare quanto segue:
+ 
+#### <a name="if-you-have-never-previously-onboarded-android-for-work-enrollment"></a>Se la registrazione di Android for Work non è mai stata caricata in precedenza
+ 
+La nuova piattaforma Android for Work è bloccata nelle Restrizioni sul tipo di dispositivi predefinite. Dopo aver caricato la funzionalità, è possibile consentire la registrazione dei dispositivi con Android for Work. A tale scopo, modificare il valore predefinito o creare una nuova restrizione dei tipi di dispositivo per sostituire la restrizione predefinita.
+ 
+#### <a name="if-you-have-onboarded-android-for-work-enrollment"></a>Se la registrazione di Android for Work è stata caricata
+ 
+Se la registrazione è stata caricata in precedenza, la situazione varia a seconda dell'impostazione selezionata:
+ 
+| Impostazioni | Stato di Android for Work nella restrizione dei tipi di dispositivo predefinita | Note |
+| --- | --- | --- |
+| **Gestisci tutti i dispositivi come Android** | Bloccato | Tutti i dispositivi Android devono essere registrati senza Android for Work. |
+| **Gestisci i dispositivi supportati come Android for Work** | Consentito | Tutti i dispositivi Android che supportano Android for Work devono essere registrati con Android for Work. |
+| **Gestisci i dispositivi supportati per gli utenti solo in questi gruppi come Android for Work** | Bloccato | Per sostituire l'impostazione predefinita è stato creato un criterio Restrizione dei tipi di dispositivo separato. Questo criterio definisce i gruppi precedentemente selezionati per consentire la registrazione di Android for Work. Gli utenti inclusi nei gruppi selezionati continueranno a essere autorizzati a registrare i loro dispositivi Android for Work. A tutti gli altri utenti non è consentita la registrazione con Android for Work. |
+ 
+In tutti i casi, viene mantenuto il regolamento previsto. Per mantenere l'autorizzazione globale o per i singoli gruppi di Android for Work nel proprio ambiente non è necessario eseguire alcuna operazione.
 
+### <a name="deprecating-support-for-os-x-mavericks-1010-and-previous-versions-of-macos---1489263-plan-for-change-for-1802--"></a>Deprecazione del supporto per OS X Mavericks 10.10 e versioni precedenti di macOS<!--1489263, plan for change for 1802-->
 Si annuncia che a febbraio 2018 inizierà la deprecazione della registrazione per dispositivi con OS X Yosemite 10.10 e versioni precedenti di macOS. Intune supporta completamente OS X El Capitan 10.11 e versioni più recenti.
 
 ### <a name="new-path-for-managed-devices-in-graph-api----1586728---"></a>Nuovo percorso per i dispositivi gestiti nell'API Graph <!-- 1586728 -->

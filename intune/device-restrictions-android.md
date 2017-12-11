@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Android e Samsung KNOX Standard in Microsoft Intune
 
@@ -42,7 +42,7 @@ Usare queste impostazioni con i criteri di restrizione per i dispositivi Android
 - **Acquisizione schermo (solo Samsung KNOX)** - Consente all'utente di acquisire il contenuto dello schermo come immagine.
 - **Assistente vocale (solo Samsung KNOX)** - Consente di usare software di assistenza vocale sul dispositivo.
 - **YouTube (solo Samsung KNOX)** - Consente l'uso dell'app YouTube nel dispositivo.
-- **Dispositivi condivisi** - Consente di configurare un dispositivo Samsung KNOX Standard gestito come dispositivo condiviso. In questa modalità, gli utenti finali possono accedere e disconnettersi dal dispositivo con le credenziali di Azure AD e il dispositivo rimane gestito indipendentemente dal fatto che sia o meno in uso.<br>Quando gli utenti finali eseguono l'accesso, possono accedere alle app e ai criteri ad essi applicati. Quando gli utenti si disconnettono, tutti i dati delle app vengono cancellati.
+- **Dispositivi condivisi (solo Samsung KNOX)** - Consente di configurare un dispositivo Samsung KNOX Standard gestito come dispositivo condiviso. In questa modalità, gli utenti finali possono accedere e disconnettersi dal dispositivo con le credenziali di Azure AD e il dispositivo rimane gestito indipendentemente dal fatto che sia o meno in uso.<br>Quando usata in combinazione con un profilo certificato SCEP, questa funzionalità consente agli utenti di condividere un dispositivo con lo stesso set di app per tutti gli utenti, ma con il proprio certificato utente SCEP.  Quando gli utenti si disconnettono, tutti i dati delle app vengono cancellati.  Questa funzionalità è limitata alle app LOB.
 
 ## <a name="password"></a>Password
 

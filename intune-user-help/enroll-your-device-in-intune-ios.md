@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Configurare l'accesso alle risorse aziendali
 
@@ -36,7 +36,7 @@ Le aziende dispongono di molte informazioni proprietarie relative, ad esempio, a
 - Prima di iniziare, accertarsi di aver completato l'intero processo. Se si sospende l'esecuzione per alcuni minuti, in genere il processo viene arrestato ed è necessario riavviarlo.
 - Se il processo ha esito negativo, è necessario tornare all'app Portale aziendale per riprovare.
 - Assicurarsi che la connessione wi-fi sia attiva e che Safari funzioni correttamente nel dispositivo.
-- Seguire la procedura descritta in [Installare e accedere all'app Portale aziendale di Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
+- Scaricare e installare l'[app Portale aziendale Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
 
 ## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>Uso dell'app Portale aziendale per configurare l'accesso alle risorse aziendali
