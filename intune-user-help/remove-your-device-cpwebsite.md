@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0b490148a932339d4fb4366d28e020416782ceee
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: adfce4c7b62181f5874f44f62f4b820b061538b0
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Rimuovere il dispositivo dal Portale aziendale
 
-Se non si vuole più far gestire il dispositivo dalla propria società o organizzazione, è possibile rimuoverlo dal portale aziendale usando il [sito Web del portale aziendale](https://portal.manage.microsoft.com). Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati per la gestione con il reparto IT. Se il dispositivo viene rimosso, non verrà più visualizzato nel portale aziendale e si potrebbe perdere anche l'accesso ad app, posta elettronica e dati aziendali o dell'istituto di istruzione.
+Se non si vuole più far gestire il dispositivo dalla propria società o organizzazione, è possibile rimuoverlo dal portale aziendale usando il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog). Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati per la gestione con il reparto IT. Se il dispositivo viene rimosso, non verrà più visualizzato nel portale aziendale e si potrebbe perdere anche l'accesso ad app, posta elettronica e dati aziendali o dell'istituto di istruzione.
 
 Per rimuovere il dispositivo:
 
-1.  Nel [sito Web del portale aziendale](https://portal.manage.microsoft.com) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
+1.  Nel [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
 
   ![Immagine del sito Web del portale aziendale con un menu laterale espanso sul lato sinistro della schermata con i pulsanti Home, Tutte le app, Dispositivi personali, Supporto tecnico e Disconnetti.](/media/iwp-expanded-sidebar.png)
 
@@ -42,4 +42,4 @@ Per rimuovere il dispositivo:
 
 4. Leggere il messaggio di avviso e quindi toccare **Rimuovi** per rimuovere il dispositivo dal portale aziendale.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

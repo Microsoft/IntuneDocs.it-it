@@ -14,11 +14,11 @@ ms.assetid: b5521762-a80c-4630-ae30-38b471da216b
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 341226bcc5ba3ca0b7f12aedeb137580a49b9f18
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 1fa368ad494ae60a9db5cbe32ce678ce6fd56c0d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Risolvere una minaccia rilevata da Symantec Endpoint Protection Mobile
 
@@ -34,7 +34,7 @@ Se c'è un virus o un'altra minaccia per la protezione nel dispositivo registrat
 
 ![Messaggio di errore di Skycure con collegamento al sito Web del portale aziendale](./media/skycure-list-of-potential-issues-android.png)
 
-Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com), in cui verranno visualizzate istruzioni su come risolvere il problema.
+Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog), in cui verranno visualizzate istruzioni su come risolvere il problema.
 
 ## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Esempio di un'app considerata una minaccia da Symantec Endpoint Protection Mobile
 
@@ -44,5 +44,5 @@ Se è stata installata un'app che Symantec Endpoint Protection Mobile considera 
 
 Dopo aver disinstallato l'app, si riottiene subito accesso alla posta elettronica e ai dati aziendali. Se si ignora la richiesta di disinstallare l'app, si perderà l'accesso alla posta elettronica e ai dati fino a quando l'app non verrà disinstallata.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
 

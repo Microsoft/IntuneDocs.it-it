@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: caea74745dc58a04c60e780727b318ebdb8ff235
-ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
+ms.openlocfilehash: 622006bf6ac244ddcf5e11f765f4119e6822866f
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Come accedere all'app del portale aziendale? <!--User Story 1132123-->
 
@@ -89,4 +89,4 @@ Se non si usa una password per accedere alle risorse aziendali, è possibile usa
 
   ![Dopo aver completato il processo di autenticazione, l'app del portale aziendale esegue l'accesso visualizzando una barra di caricamento.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

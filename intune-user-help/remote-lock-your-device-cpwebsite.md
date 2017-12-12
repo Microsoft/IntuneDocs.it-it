@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3976327decf6b1850baed8e781609e458d375aa1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloccare il dispositivo in modalità remota dal sito Web del portale aziendale
 
@@ -28,7 +28,7 @@ Può succedere che i dispositivi vengano persi. Se il dispositivo è stato smarr
 
 [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-Per ragioni di sicurezza, è possibile bloccarlo usando l'opzione Blocco remoto sul [sito Web del portale aziendale](https://portal.manage.microsoft.com). L'opzione Blocco remoto funziona per:
+Per ragioni di sicurezza, è possibile bloccarlo usando l'opzione Blocco remoto sul [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog). L'opzione Blocco remoto funziona per:
 
 * Android
 * iOS
@@ -38,7 +38,7 @@ Per ragioni di sicurezza, è possibile bloccarlo usando l'opzione Blocco remoto 
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Per usare Blocco remoto per bloccare il dispositivo
 
-1.  Nel [sito Web del portale aziendale](https://portal.manage.microsoft.com) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
+1.  Nel [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
 
   ![Immagine del sito Web del portale aziendale con un menu laterale espanso sul lato sinistro della schermata con i pulsanti Home, Tutte le app, Dispositivi personali, Supporto tecnico e Disconnetti.](/media/iwp-expanded-sidebar.png)
 
@@ -65,4 +65,4 @@ Per ragioni di sicurezza, è possibile bloccarlo usando l'opzione Blocco remoto 
 
 Se il dispositivo viene ritrovato e si vuole rimuovere il blocco dopo aver usato Blocco remoto, immettere il passcode.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

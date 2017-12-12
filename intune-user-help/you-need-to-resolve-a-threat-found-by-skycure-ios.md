@@ -14,11 +14,11 @@ ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: a80ab4b22aa7ace1b6df53722c5fdfaf44134e0d
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ef3b94251b324ed95d127cde5a58517747b3ea0b
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Risolvere una minaccia rilevata da Symantec Endpoint Protection Mobile
 
@@ -34,7 +34,7 @@ Se c'è un virus o un'altra minaccia per la protezione nel dispositivo registrat
 
 ![Messaggio di errore di Skycure con collegamento al sito Web del portale aziendale](./media/mtd-go-to-device-management-portal-android.png)
 
-Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com), in cui verranno visualizzate istruzioni su come risolvere il problema.
+Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog), in cui verranno visualizzate istruzioni su come risolvere il problema.
 
 ## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Esempio di un'app considerata una minaccia da Symantec Endpoint Protection Mobile
 
@@ -44,5 +44,5 @@ Toccare il nome dell'app visualizzato nella parte superiore dello schermo e segu
 
 Dopo aver disinstallato l'app, si ottiene nuovamente l'accesso alla posta elettronica e agli altri dati aziendali o dell'istituto di istruzione sin da subito. Se si ignora la richiesta di disinstallare l'app, si perderà l'accesso alla posta elettronica e ai dati aziendali fino a quando l'app non verrà disinstallata.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
 

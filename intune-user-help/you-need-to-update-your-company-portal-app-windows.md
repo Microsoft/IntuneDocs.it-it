@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0994240c05b372a851823218012ba6573c945d9f
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 0688979cb0cca170a0c8c95a92f94e13de0b0b03
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>L'app Portale aziendale per Windows non è aggiornata
 
 È necessario aggiornare l'app Portale aziendale per poter continuare ad accedere a elementi quali documenti, contatti e posta elettronica aziendale. Per risolvere questo problema, aprire **Microsoft Store** e installare la nuova versione dell'app **Portale aziendale**.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -14,11 +14,11 @@ ms.assetid: eaccd9c0-cd46-48e2-8675-4c022c74f672
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 6b435156b89bf0ba55e83158c2c5ac62c590cdf4
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 32bd0436c6d883bb351a4e00bda181ab820a94d4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>Risolvere una minaccia rilevata da Zimperium zIPS
 
@@ -30,7 +30,7 @@ Per risolvere il problema, aprire l'app Zimperium zIPS e seguire le istruzioni v
 
 Se viene rilevato un virus o un'altra minaccia per la sicurezza nel dispositivo registrato e si tenta di accedere alla posta elettronica o ai file aziendali, un messaggio di Zimperium zIPSt avvisa di prendere provvedimenti.
 
-Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com), in cui è possibile seguire le istruzioni su come risolvere il problema.
+Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog), in cui è possibile seguire le istruzioni su come risolvere il problema.
 
 ## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Esempio di un'app considerata una minaccia da Zimperium zIPS
 
@@ -38,4 +38,4 @@ Se è stata installata un'app che Zimperium zIPSt considera una minaccia, l'app 
 
 Quando ciò si verifica, disinstallare l'app per riottenere subito l'accesso alla posta elettronica e ai dati aziendali. Se non si disinstalla l'app, si perderà l'accesso alla posta elettronica e ai dati fino a quando l'app non verrà disinstallata.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eca9ef81acb4d1535649d4e13e1b5b2e18ed109a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: e4180a20fdbc3181fe631f1b57ec6758a9e16ee4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Come installare la rete privata virtuale (VPN) dell'azienda
 
@@ -33,4 +33,4 @@ Se il supporto tecnico dell'azienda ha configurato un'applicazione VPN per conse
 3.  Toccare **Install corporate VPN profile** (Installa il profilo VPN aziendale) e seguire le istruzioni. I passaggi di installazione possono essere leggermente diversi, a seconda del provider VPN usato dalla società.
 
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

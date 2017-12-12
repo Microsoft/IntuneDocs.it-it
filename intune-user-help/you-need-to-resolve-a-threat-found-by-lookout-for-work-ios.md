@@ -14,11 +14,11 @@ ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 1b5a49c4bb29f5511dc13b7d12928b11fd98b2de
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 6cfc144b188b1701a2e5e599af43d12c98d48496
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Risolvere una minaccia rilevata da Lookout for Work
 
@@ -34,7 +34,7 @@ Se c'è un virus o un'altra minaccia per la protezione nel dispositivo registrat
 
 ![Messaggio di errore di Lookout for Work con collegamento al sito Web del portale aziendale](./media/mtd-go-to-device-management-portal-android.png)
 
-Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com), in cui verranno visualizzate istruzioni su come risolvere il problema.
+Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog), in cui verranno visualizzate istruzioni su come risolvere il problema.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Esempio di un'app che Lookout for Work considera come una minaccia
 
@@ -46,5 +46,5 @@ In questo caso, toccare il nome dell'applicazione visualizzato nella parte super
 
 Dopo aver disinstallato l'app, si ottiene nuovamente l'accesso alla posta elettronica e agli altri dati aziendali o dell'istituto di istruzione sin da subito. Se si ignora la richiesta di disinstallare l'app, si perderà l'accesso alla posta elettronica e ai dati aziendali fino a quando l'app non verrà disinstallata.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
 

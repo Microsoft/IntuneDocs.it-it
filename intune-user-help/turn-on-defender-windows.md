@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 446b395aab311d13ebc7ac6b8c3ed7c740070729
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: d2a7cd5cc4c201a73570f73892563463cb0bdcc7
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Abilitare Windows Defender per accedere alle risorse aziendali
 
@@ -48,4 +48,4 @@ Verificare che la protezione in tempo reale sia abilitata selezionando **Start**
 
 Verificare che le definizioni di antivirus siano aggiornate selezionando **Start** e cercando **Windows Defender Security Center**. Selezionare **Aggiornamenti della protezione** e **Verifica se sono disponibili aggiornamenti:** per assicurarsi che il dispositivo abbia una protezione aggiornata da virus. Se questa opzione non viene visualizzata, seguire la procedura in [Abilitare la protezione in tempo reale](turn-on-defender-windows.md#turn-on-real-time-protection)
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

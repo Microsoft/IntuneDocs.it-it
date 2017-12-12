@@ -1,5 +1,5 @@
 ---
-title: Installare Symantec Endpoint Protection Mobile nel dispositivo Android | Microsoft Docs
+title: "È necessario installare Symantec Endpoint Protection Mobile sul dispositivo Android | Microsoft Docs"
 description: Informazioni su come installare SEP Mobile sul dispositivo Android in uso.
 keywords: 
 author: barlanmsft
@@ -14,11 +14,11 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 6dba55de8d4c4551ff1e09bb0dffe797f0cf3190
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 50707eb19dc8dd876dea256094e5790d587d7087
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Installare Symantec Endpoint Protection Mobile nel dispositivo Android
 
@@ -56,4 +56,4 @@ Se si verificano problemi con l'installazione, seguire la procedura di risoluzio
 
 Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso provare a installare SEP Mobile [manualmente da Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

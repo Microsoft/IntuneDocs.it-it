@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b77c28b7c3ccec979a7c3612483f8682c3094576
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 082acce8d82d50be28e0328c76e63c4440608983
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>Inviare i log agli sviluppatori dell'app Portale aziendale per i dispositivi iOS
 
@@ -33,4 +33,4 @@ Se si riscontra questo problema con l'app, è necessario inviare alcune informaz
 3.  Effettuare una pressione prolungata e quindi trascinare i puntini blu verso l'alto e verso il basso finché tutto il testo del report non è selezionato. Toccare __Copia__ nel menu popup.
 4.  Aprire l'app di posta elettronica e incollare il contenuto copiato nel corpo del messaggio di posta elettronica. Inviare il messaggio a <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a>.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

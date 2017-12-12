@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c06146c2a8abe15f346be532cf02e1fe6d97cc99
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 0d469a52c10a3c6080a3e900d55d18d7798bb534
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Registrare il dispositivo iOS in Intune con Device Enrollment Program
 
@@ -33,4 +33,4 @@ Device Enrollment Program viene offerto da Apple alle società e alle organizzaz
 5.  Accettare **termini e condizioni** e decidere se inviare le informazioni di diagnostica a Apple.
 6.  Dopo avere completato la registrazione, il dispositivo potrebbe chiedere di eseguire altre azioni, ad esempio, immettere la password per l'accesso alla posta elettronica, configurare un passcode, accettare le installazioni di applicazioni, a seconda della configurazione scelta dall'amministratore di Intune della società.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
