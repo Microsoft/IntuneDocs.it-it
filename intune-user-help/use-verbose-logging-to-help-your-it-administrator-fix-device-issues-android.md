@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a8364778943171bb1a949f61ad696427ff914c99
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 055bfcf088d46c1010206bd1e77ffbad76611c7c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Aiutare il supporto tecnico dell'azienda a risolvere i problemi dei dispositivi con la registrazione dettagliata
 
@@ -28,4 +28,4 @@ Quando il dispositivo Android è registrato in Intune, è possibile usare la *re
 
 Per attivare o disattivare la registrazione dettagliata, accedere all'app Portale aziendale usando le credenziali aziendali o dell'istituto di istruzione, toccare **Impostazioni** e quindi toccare il pulsante di attivazione/disattivazione accanto a **Registrazione dettagliata**.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

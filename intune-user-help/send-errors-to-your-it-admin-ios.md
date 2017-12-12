@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 2aa8ee8803e3001abeb8da92fb61c93c81ffb135
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Inviare gli errori al supporto tecnico dell'azienda per i problemi relativi al dispositivo iOS
 
@@ -32,4 +32,4 @@ Se si verificano errori nel dispositivo iOS quando si usa l'app Portale aziendal
 
 -   Nell'app Portale aziendale, agitare il dispositivo e quindi toccare **Invia report di diagnostica** quando viene visualizzato l'avviso di diagnostica. Se l'avviso non viene visualizzato quando si agita il dispositivo, aprire **Impostazioni** > **Portale aziendale** e verificare che l'opzione **Movimento di agitazione** sia selezionata.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

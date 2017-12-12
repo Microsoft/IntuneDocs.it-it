@@ -15,15 +15,15 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: a9da0ecabadc856c54bc8c10ec71520d549ca50c
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 17d8fd46e46586510bed2f95c502f89ae67c95be
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Risolvere problemi comuni con il dispositivo Windows
 
-A volte possono verificarsi problemi con il dispositivo Windows non risolvibili tramite le procedure di risoluzione dei problemi. Di seguito sono elencati alcuni problemi comuni che è possibile provare a risolvere autonomamente. Per i problemi più complessi, è consigliabile contattare il supporto tecnico dell'azienda usando le informazioni di contatto disponibili nel [sito Web del Portale aziendale](https://portal.manage.microsoft.com).
+A volte possono verificarsi problemi con il dispositivo Windows non risolvibili tramite le procedure di risoluzione dei problemi. Di seguito sono elencati alcuni problemi comuni che è possibile provare a risolvere autonomamente. Per i problemi più complessi, è consigliabile contattare il supporto tecnico dell'azienda usando le informazioni di contatto disponibili nel [sito Web del Portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 - [Non è possibile registrare il dispositivo Windows 10](troubleshoot-your-windows-10-device-windows.md)
 - [È necessario aggiornare il dispositivo Windows](you-need-to-update-your-windows-device.md)
