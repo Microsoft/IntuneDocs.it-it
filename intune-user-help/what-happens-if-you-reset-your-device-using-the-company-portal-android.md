@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 476f1cfa59f562a8c0953236184693e1c5674ee3
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Che cosa avviene se si reimposta un dispositivo Android con l'app Portale aziendale?
 
@@ -32,4 +32,4 @@ Se si usa un dispositivo Samsung KNOX, è possibile eseguire una "cancellazione 
 - Posta elettronica, VPN e Wi-Fi.
 - La capacità del supporto tecnico dell'azienda di imporre determinate impostazioni.
 
-Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

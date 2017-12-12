@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6213bcf2e7ee2ad1ffd15010d8741b86b065d147
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 6448e9986bdb98e21f3b9547ecbbf9b8c3ed8871
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="using-the-intune-company-portal-website"></a>Uso del sito Web del portale aziendale
-Il [sito Web del portale aziendale](https://portal.manage.microsoft.com) è una pagina Web che gli utenti finali possono usare per gestire computer e dispositivi registrati in Intune.
+Il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) è una pagina Web che gli utenti finali possono usare per gestire computer e dispositivi registrati in Intune.
 
 Dal sito Web del portale aziendale gli utenti possono eseguire queste attività:
 
@@ -45,4 +45,4 @@ Dal sito Web del portale aziendale gli utenti possono eseguire queste attività:
 
 -   Gestire in remoto il PC (opzione disponibile solo per i PC)
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

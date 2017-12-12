@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 04ce17615055d67f38e49158bec806de9f322bfd
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: f9c91c85b4a93fb211b5cd278dd82277a58cb08e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Il dispositivo Android sembra essere crittografato, ma il portale aziendale indica il contrario
 
@@ -38,7 +38,7 @@ Alcuni dispositivi Android richiedono la creazione di un PIN di avvio per assicu
 
 ### <a name="downgrade-your-version-of-android"></a>Effettuare il downgrade della versione di Android
 
-Se il dispositivo offre la possibilità di effettuare il downgrade a Android 6.0+, procedere in tal senso. Il tentativo di effettuare il downgrade del dispositivo potrebbe comportare dei rischi di perdita di dati. In caso contrario, è consigliabile contattare il supporto tecnico dell'azienda per risolvere il problema. Le informazioni di contatto per il supporto tecnico dell'azienda sono disponibili nel [sito Web Portale aziendale](https://portal.manage.microsoft.com).
+Se il dispositivo offre la possibilità di effettuare il downgrade a Android 6.0+, procedere in tal senso. Il tentativo di effettuare il downgrade del dispositivo potrebbe comportare dei rischi di perdita di dati. In caso contrario, è consigliabile contattare il supporto tecnico dell'azienda per risolvere il problema. Le informazioni di contatto per il supporto tecnico dell'azienda sono disponibili nel [sito Web Portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 ### <a name="encrypt-the-entire-device"></a>Crittografare l'intero dispositivo
 

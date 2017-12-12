@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b10e4f6571d581b76d8e9d280767ce09ec8e3684
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 9886fdf682b08707d4a5292f8c34aca20b828028
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="send-logs-to-your-company-support-using-email"></a>Inviare i log al supporto tecnico dell'azienda usando la posta elettronica
 
@@ -40,4 +40,4 @@ Per inviare log al supporto tecnico dell'azienda usando la posta elettronica:
 
 3.  In **Guida** toccare **Richiedi assistenza**.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

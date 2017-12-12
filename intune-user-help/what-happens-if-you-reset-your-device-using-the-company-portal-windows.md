@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0720707c5e24daa9ef1677c549a8d2a763944f3b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 4034e3848f49b13fc675f44c44ca1e80cf1e3568
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Che cosa avviene se si reimposta un dispositivo Windows con l'app Portale aziendale?
 
@@ -32,4 +32,4 @@ Quando si usa l'app Portale aziendale o il [sito Web del portale aziendale](rese
 |Il dispositivo può accedere solo alla posta elettronica aziendale|**Windows Phone 8.1**<br />Il dispositivo non sarà più visualizzato nel portale aziendale e verranno eliminati l'account di posta elettronica aziendale e i messaggi di posta elettronica non salvati.<br /><br />**Windows 7 o Windows Vista**<br />Non è possibile reimpostare un computer che esegue Windows 7 o versioni precedenti che viene usato solo per la posta elettronica.<br /><br />**Windows 8.1 e Windows 8**<br />Il dispositivo non sarà più visualizzato nel portale aziendale e verranno eliminati l'account di posta elettronica aziendale e i messaggi di posta elettronica non salvati.|
 |PC e portatili|**Windows 8.1 e Windows 8**<br />Non è possibile reimpostare un computer che esegue Windows 8 o Windows 8.1 a meno che non sia usato solo per la posta elettronica.<br /><br />**Windows 7 o Windows Vista**<br />Non è possibile reimpostare un computer che esegue Windows 7 o versioni precedenti.|
 
-Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

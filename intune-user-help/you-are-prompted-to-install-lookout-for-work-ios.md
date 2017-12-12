@@ -14,11 +14,11 @@ ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 46827fa3505fd8c4f2d767ba821ce9d84fc0d16d
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 9bb4d39545964dd5c8e0bb5efe767e1315c7f6de
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>Installare Lookout for Work nel dispositivo iOS
 
@@ -54,5 +54,5 @@ Prima di poter accedere ai dati aziendali, viene richiesto dal supporto tecnico 
 
 Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso, provare a installare Lookout for Work [manualmente dall'App Store](https://itunes.apple.com/app/lookout-for-work/id997193468).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
 

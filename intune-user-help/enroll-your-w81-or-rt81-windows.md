@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4ef4b297a3c841897aa702d793f675584df39eb4
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f3b5a93d204926e476ff5c001a4b597c74929ec0
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Come registrare il dispositivo Windows 8.1 o Windows RT 8.1 in Intune
 
-Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile registrare i dispositivi per poter accedere a posta elettronica, file e altre risorse aziendali. La registrazione dei dispositivi consente all'azienda di proteggere i suoi dati. Per altre informazioni sulla registrazione, vedere [Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [Quali sono le informazioni visibili per l'azienda quando si registra il dispositivo?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile registrare i dispositivi per poter accedere a posta elettronica, file e altre risorse aziendali. La registrazione dei dispositivi consente all'azienda di proteggere i suoi dati. Per altre informazioni sulla registrazione, vedere [Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [Cosa può e cosa non può essere visualizzato dal supporto tecnico aziendale sul dispositivo](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 
 Per registrare il dispositivo Windows 8.1 o Windows RT 8.1:
@@ -63,4 +63,4 @@ Per registrare il dispositivo Windows 8.1 o Windows RT 8.1:
 
 4.  Toccare **Installa** o **Gratuito**. L'opzione visualizzata varia a seconda di come la società ha configurato l'app.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

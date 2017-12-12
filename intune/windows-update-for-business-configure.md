@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="manage-software-updates"></a>Gestire gli aggiornamenti software
 
@@ -94,8 +94,8 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 
     **Se il Canale di manutenzione è impostato su Canale semestrale e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Quattro mesi dopo, in aprile, l'aggiornamento della funzionalità X sarà rilasciato come Canale semestrale. Il dispositivo riceverà l'aggiornamento 30 giorni dopo il rilascio del canale semestrale e verrà aggiornato nel mese di maggio.
 
-    - **Ottimizzazione recapito**: scegliere il metodo in base al quale i dispositivi scaricheranno gli aggiornamenti di Windows. Per informazioni dettagliate, vedere [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
-8. Al termine della configurazione, fare clic su **OK** e nel pannello **Crea l'anello di aggiornamento** fare clic su **Crea**.
+    - **Ottimizzazione recapito**: scegliere il metodo in base al quale i dispositivi scaricheranno gli aggiornamenti di Windows. Per informazioni dettagliate, vedere [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+1. Al termine della configurazione, fare clic su **OK** e nel pannello **Crea l'anello di aggiornamento** fare clic su **Crea**.
 
 Il nuovo anello di aggiornamento viene visualizzato nell'elenco degli anelli di aggiornamento.
 

@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8023e3a75dbf9a3275654b7ed8f917546d401168
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 59d9ed0ddc6b24d680f665eb6f5c9976001d940b
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Rinominare il dispositivo dal sito Web del portale aziendale
 
-Si potrebbe decidere di voler rinominare il dispositivo per renderne più semplice l'identificazione. L'operazione può essere eseguita dal [sito Web del portale aziendale](https://portal.manage.microsoft.com). Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati per la gestione con il reparto IT.
+Si potrebbe decidere di voler rinominare il dispositivo per renderne più semplice l'identificazione. L'operazione può essere eseguita dal [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog). Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati per la gestione con il reparto IT.
 
 Per rinominare il dispositivo:
 
-1.  Nel [sito Web del portale aziendale](https://portal.manage.microsoft.com) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
+1.  Nel [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
 
 2. Nella pagina __Dispositivi personali__ selezionare il nome del dispositivo da rinominare.
 
@@ -40,4 +40,4 @@ Per rinominare il dispositivo:
 
 4.  Nella casella in cui viene visualizzato il nome del dispositivo digitare un nuovo nome per il dispositivo e quindi toccare il pulsante **Rinomina**. Il dispositivo viene ora visualizzato con il nuovo nome.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
-ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
+ms.openlocfilehash: 98bc92eeba4c92a38aacf05f0eab1ea742dff031
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Reimpostare un dispositivo dal sito Web del portale aziendale
 
-Se il dispositivo viene smarrito o rubato, è consigliabile reimpostare le impostazioni predefinite per evitare l'accesso non autorizzato ai dati. Per reimpostare un dispositivo in remoto, è possibile usare il [sito Web del portale aziendale](https://portal.manage.microsoft.com). Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati in Intune. È possibile usare questo sito Web per eseguire la maggior parte delle attività che si possono svolgere usando l'app Portale aziendale.
+Se il dispositivo viene smarrito o rubato, è consigliabile reimpostare le impostazioni predefinite per evitare l'accesso non autorizzato ai dati. Per reimpostare un dispositivo in remoto, è possibile usare il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog). Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati in Intune. È possibile usare questo sito Web per eseguire la maggior parte delle attività che si possono svolgere usando l'app Portale aziendale.
 
 Se viene reimpostato, il dispositivo non verrà più elencato nel portale aziendale e verranno reimpostate le impostazioni predefinite.
 
@@ -33,7 +33,7 @@ Se viene reimpostato, il dispositivo non verrà più elencato nel portale aziend
 
 Per reimpostare il dispositivo:
 
-1.  Nel [sito Web Portale aziendale](https://portal.manage.microsoft.com) toccare il pulsante __menu__, quindi selezionare __Dispositivi personali__.
+1.  Nel [sito Web Portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) toccare il pulsante __menu__, quindi selezionare __Dispositivi personali__.
 
 2. Nella pagina __Dispositivi personali__ selezionare il nome del dispositivo da rinominare.
 
@@ -47,4 +47,4 @@ Per reimpostare il dispositivo:
 
 Il dispositivo è stato reimpostato.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 31b6545b0518e369b95b6e4830617988aa806112
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 7d8dc077c3da1c9bfe302b4808142f8b7a1a60cf
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows 10 in Intune?
 
@@ -52,4 +52,4 @@ Quando si aggiunge un computer:
 
 -   Il supporto tecnico dell'azienda può imporre criteri al computer. Ad esempio, potrebbe essere necessario impostare una password o un PIN per il computer. Il supporto tecnico dell'azienda può anche limitare il numero di immissioni di una password errata e impedire l'accesso al computer o eliminare tutti i dati dal disco rigido se tale numero viene superato.
 
-Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
