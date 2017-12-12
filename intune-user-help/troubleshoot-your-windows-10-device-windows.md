@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 651df0e6ba3f8b3b2727d3194c8bf5e1a40cffc3
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 7160f58f60624815137e2990bd06188edd4ede81
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Risolvere i problemi di registrazione dei dispositivi Windows 10
 Se è stata seguita la procedura descritta in [Registrare il dispositivo Windows 10 Mobile o Windows 10 Desktop in Intune](enroll-your-w10-phone-or-w10-pc-windows.md), ma non è ancora possibile accedere alla posta elettronica e ai file dell'azienda o dell'istituto di istruzione, provare a eseguire i passaggi di risoluzione dei problemi seguenti.
@@ -59,4 +59,4 @@ Se è stata eseguita la procedura sopra descritta, ma non è tuttavia possibile 
 
 Se viene visualizzato il messaggio __Non è possibile individuare automaticamente un endpoint di gestione che corrisponde al nome utente immesso. Controlla il nome utente e riprova. Se conosci l'URL dell'endpoint di gestione, immettilo qui.__, è consigliabile provare a immettere nuovamente nome utente e password. Se il problema persiste, richiedere al supporto tecnico dell'azienda quale sito Web è necessario specificare nella casella di testo **Endpoint di gestione**. Si tratta di un sito Web in un formato probabilmente simile a **www.società.onmicrosoft.com**.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

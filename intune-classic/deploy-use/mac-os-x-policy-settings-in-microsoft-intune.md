@@ -2,8 +2,8 @@
 title: Impostazioni dei criteri di Mac OS X
 description: "Intune offre una gamma di impostazioni generali predefinite che è possibile configurare nei dispositivi Mac OS X. È anche possibile usare lo strumento Apple Configurator per creare impostazioni personalizzate non disponibili in Intune."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0039ac4552bc1995a1af033cc4572808cbd44d43
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 18f05219d002f0998e25671e39f1e71449b7b6c7
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di configurazione di Mac OS X in Microsoft Intune
 
