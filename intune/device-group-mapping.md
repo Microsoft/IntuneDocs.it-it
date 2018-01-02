@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,13 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e34b9cd030244db4bdde78eedbb0f874f49fa1e1
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ddcd4639c1f5a0949be46025e16e44d0b6ac6616
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="map-device-groups"></a>Mappare gruppi di dispositivi
-
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -54,7 +53,7 @@ Il nome della categoria di dispositivi verrà usato per la creazione dei gruppi 
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>Passaggio 2: creare i gruppi di sicurezza di Azure Active Directory
 In questo passaggio verranno creati gruppi dinamici nel portale di Azure, basati sulla categoria dispositivi e sul nome della categoria dispositivi.
 
-Per continuare, vedere l'argomento [Utilizzo degli attributi per creare regole avanzate](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) nella documentazione di Azure Active Directory. 
+Per continuare, vedere l'argomento [Utilizzo degli attributi per creare regole avanzate](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) nella documentazione di Azure Active Directory.
 
 Usare le informazioni in questa sezione per creare un gruppo di dispositivi con una regola avanzata usando l'attributo **deviceCategory**. Ad esempio (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
@@ -84,7 +83,7 @@ Se la colonna **Categoria** non viene visualizzata, fare clic su **Colonne**, sc
 
 Quando gli utenti finali registrano il loro dispositivo iOS e Android, devono scegliere una categoria nell'elenco delle categorie configurate. Dopo che hanno scelto una categoria e completato la registrazione, il loro dispositivo viene aggiunto al gruppo di dispositivi di Intune o al gruppo di sicurezza di Active Directory corrispondente alla categoria selezionata.
 
-Per assegnare una categoria a un dispositivo Windows, gli utenti finali devono usare il sito Web Portale aziendale (portal.manage.microsoft.com) dopo aver registrato il dispositivo. In un dispositivo Windows, accedere al sito Web e passare a **Menu** > **Dispositivi personali**. Scegliere un dispositivo registrato elencato nella pagina e quindi selezionare una categoria. 
+Indipendentemente dalla piattaforma, gli utenti finali possono sempre passare a portal.manage.microsoft.com dopo la registrazione del dispositivo. Richiedere all'utente di accedere al sito Web del portale aziendale e passare a **Dispositivi personali**. L'utente potrà scegliere un dispositivo registrato elencato nella pagina e quindi selezionare una categoria.
 
 Dopo la scelta della categoria, il dispositivo viene automaticamente aggiunto al gruppo corrispondente creato. Se un dispositivo è già registrato prima di configurare le categorie, l'utente finale vedrà una notifica sul dispositivo nel sito Web Portale aziendale che richiede di selezionare una categoria in occasione dell'accesso successivo all'app Portale aziendale su iOS e Android.
 
@@ -92,5 +91,3 @@ Dopo la scelta della categoria, il dispositivo viene automaticamente aggiunto al
 - È possibile modificare una categoria di dispositivo nel portale di Azure, ma in questo caso, è necessario aggiornare manualmente i gruppi di sicurezza di Azure Active Directory che fanno riferimento a questa categoria.
 
 - Se si elimina una categoria, per tutti i dispositivi a essa assegnati verrà visualizzato il nome di categoria **Non assegnati**.
-
-
