@@ -3,10 +3,10 @@ title: "Configurare le impostazioni relative alle funzionalità dei dispositivi 
 titleSuffix: Azure portal
 description: "Informazioni su come usare Intune per configurare le funzionalità nei dispositivi gestiti.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2723bfc0adecd9b6265b4af43e6fe185882b5e
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ea280ac6858485aa4e3d64d11835f002c5bb35ca
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-device-feature-settings-in-microsoft-intune"></a>Come configurare le impostazioni relative alle funzionalità dei dispositivi in Microsoft Intune
 
@@ -40,18 +40,19 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma per dispositivi a cui applicare le impostazioni. È attualmente possibile scegliere una delle piattaforme seguenti per le funzionalità dei dispositivi:
     - **iOS**
     - **macOS**
-6. Dall'elenco a discesa **Tipo di profilo** scegliere **Funzionalità del dispositivo**. 
+6. Nell'elenco a discesa **Tipo di profilo** scegliere **Funzionalità del dispositivo**. 
 7. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli argomenti seguenti per il dettaglio delle impostazioni di ogni piattaforma:
     - [AirPrint settings for iOS and macOS devices](air-print-settings-ios-macos.md) (Impostazioni di AirPrint per i dispositivi iOS e MacOS)
     - [Intune AirPlay settings for iOS devices](airplay-settings-ios.md) (Impostazioni di Intune AirPlay per i dispositivi iOS)
     - [Intune Home screen layout settings for iOS devices](home-screen-settings-ios.md) (Impostazioni di layout della schermata iniziale di Intune per i dispositivi iOS)
     - [Intune app notifications settings for IOS devices](app-notification-settings-ios.md) (Impostazioni di notifica delle app di Intune per i dispositivi iOS)
     - [Shared device configuration settings for iOS](shared-device-settings-ios.md) (Impostazioni di configurazione dei dispositivi condivisi per iOS)
+    - [Configurare Intune per l'accesso Single Sign-On al dispositivo iOS](sso-ios.md)
     - [Web content filter settings for iOS](web-content-filter-settings-ios.md) (Impostazioni di filtraggio del contenuto Web per iOS)
 
 8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
 
-Il profilo verrà creato e visualizzato nel pannello dell'elenco dei profili.
+Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
 Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
 
 

@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/30/2017
+ms.date: 12/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06cc4d70b30ec92946baefbc020aa4cda28b0c88
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Imporre la conformità nei computer Mac gestiti con Jamf Pro
 
@@ -42,12 +42,9 @@ ms.lasthandoff: 12/01/2017
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>Distribuire l'app Portale aziendale per macOS in Jamf Pro
 
-Esistono due modi per distribuire l'app Portale aziendale per macOS in Jamf Pro:
+È necessario distribuire l'app Portale aziendale per macOS in Jamf Pro come installazione in background seguendo questa procedura:
 
-- Rendere disponibile la distribuzione dell'app Portale aziendale in Jamf Self-Service oppure
-- Come installazione in background in modo che gli utenti eseguano la procedura seguente:
-
-1. In un dispositivo macOS scaricare la versione corrente dell'[app Portale aziendale per macOS](https://go.microsoft.com/fwlink/?linkid=862280).
+1. In un dispositivo macOS scaricare la versione corrente dell'[app Portale aziendale per macOS](https://go.microsoft.com/fwlink/?linkid=862280). Non installarla. È necessaria una copia dell'app da caricare in Jamf Pro.
 2. Aprire Jamf Pro e quindi passare a **Gestione computer** > **Pacchetti**.
 3. Creare un nuovo pacchetto con l'app Portale aziendale per macOS e quindi fare clic su **Salva**.
 4. Aprire **Computer** > **Criteri** e quindi selezionare **Nuovo**.
@@ -71,7 +68,7 @@ Gli utenti finali devono avviare l'app Portale aziendale tramite Jamf Self Servi
 > Per iniziare la registrazione del dispositivo, l'app Portale aziendale deve essere avviata da Jamf Self Service. <br><br>Se l'app Portale aziendale viene avviata manualmente, ad esempio dalle cartelle Applicazioni o Download, il dispositivo non viene registrato. Se l'utente finale avvia manualmente il portale aziendale, viene visualizzato l'avviso 'AccountNotOnboarded'.
 
 1. In Jamf Pro passare a **Computer** > **Criteri** e creare nuovi criteri per la registrazione del dispositivo.
-2. Configurare il payload **Microsoft Intune Integration** (Integrazione Microsoft Intune), incluse le impostazioni di attivazione e frequenza di esecuzione. Impostare la priorità su **Dopo**.
+2. Configurare il payload **Microsoft Intune Integration** (Integrazione Microsoft Intune), incluse le impostazioni di attivazione e frequenza di esecuzione.
 3. Fare clic sulla scheda **Ambito** e includere nell'ambito dei criteri tutti i dispositivi di destinazione.
 4. Fare clic sulla scheda **Self Service** per rendere i criteri disponibili in Jamf Self Service. Includere i criteri nella categoria **Conformità del dispositivo**. Fare clic su **Save**.
 

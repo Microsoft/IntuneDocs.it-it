@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usare dispositivi gestiti per lo svolgimento del lavoro
 Microsoft Intune è un componente software che consente alle organizzazioni di gestire dispositivi (ad esempio smartphone, tablet e PC), app e altre risorse aziendali come la posta elettronica. Questo strumento permette ai dipendenti di accedere alle informazioni di lavoro praticamente da qualsiasi luogo su quasi tutti i dispositivi e, al tempo stesso, contribuisce a proteggere le informazioni aziendali.
@@ -34,7 +34,7 @@ Il supporto tecnico dell'azienda può vedere le informazioni relative al lavoro,
 È possibile accedere al portale aziendale in due modi diversi:
 
 - Installando l'app Portale aziendale nel dispositivo. In genere è possibile scaricare l'app Portale aziendale dall'App Store del dispositivo, ma anche il supporto tecnico dell'azienda può installare l'app.
-- Visitando il [sito Web del portale aziendale](https://portal.manage.microsoft.com) impostato dal supporto tecnico dell'azienda.
+- Visitando il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) impostato dal supporto tecnico dell'azienda.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual è la differenza tra app e sito Web?
 Esistono alcune lievi differenze tra l'app Portale aziendale e il sito Web del portale aziendale, ma la maggior parte delle attività può essere eseguita su entrambi. Ad esempio, è possibile:
@@ -59,9 +59,10 @@ Quando si aggiunge un computer o un dispositivo al Portale aziendale, a seconda 
 
 Per informazioni su ciò che l'azienda può e non può visualizzare nei dispositivi degli utenti, usare il collegamento che corrisponde al tipo di dispositivo in uso:
 
-- [Installare l'app Portale aziendale per Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [Installare l'app Portale aziendale per iOS e macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [Installare l'app Portale aziendale per Windows](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [Installazione dell'app Portale aziendale per Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [Installazione dell'app Portale aziendale per iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Installazione dell'app Portale aziendale per macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [Installazione dell'app Portale aziendale per Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Quali tipi di computer o dispositivi è possibile aggiungere al Portale aziendale?
 -   Dispositivi Apple con iOS (ad esempio iPhone e iPad) e macOS (ad esempio MacBook e iMac)
@@ -78,7 +79,8 @@ Per informazioni su ciò che l'azienda può e non può visualizzare nei disposit
 Quando si *rimuove* un computer o un dispositivo dal portale aziendale, si annulla la registrazione del dispositivo in Intune. Dopo l'annullamento della registrazione non è più possibile accedere al Portale aziendale con tale dispositivo e alcuni dati aziendali all'interno di quest'ultimo potrebbero essere rimossi. Per informazioni su come rimuovere il dispositivo dal Portale aziendale, scegliere uno dei collegamenti seguenti:
 
 - [Annullamento della registrazione del dispositivo Android](unenroll-your-device-from-intune-android.md)
-- [Annullamento della registrazione del dispositivo iOS o macOS](unenroll-your-device-from-intune-ios.md)
+- [Annullamento della registrazione del dispositivo iOS](unenroll-your-device-from-intune-ios.md)
+- [Annullamento della registrazione del dispositivo macOS](unenroll-your-device-from-intune-macos.md)
 - [Annullamento della registrazione del dispositivo Windows](unenroll-your-device-from-intune-windows.md)
 
 Quando si *reimposta* un computer o un dispositivo, il Portale aziendale tenta di reimpostare le impostazioni predefinite del dispositivo stesso. La reimpostazione del dispositivo rimuove tutti i dati personali e aziendali dal dispositivo stesso. Se si smarrisce il dispositivo, è possibile reimpostarlo anche in remoto dal sito Web Portale aziendale.
@@ -95,6 +97,7 @@ Microsoft consiglia di provare prima di tutto a risolvere il problema autonomame
 
 - [Risolvere problemi comuni con il dispositivo Android](troubleshoot-your-device-android.md)
 - [Risolvere problemi comuni con il dispositivo iOS](troubleshoot-your-device-ios.md)
+- [Risolvere problemi comuni con il dispositivo macOS](troubleshoot-your-device-macos.md)
 - [Risolvere problemi comuni con il dispositivo Windows](troubleshoot-your-device-windows.md)
 
-È possibile aggiungere un commento di seguito per richiedere assistenza, ma ogni organizzazione ha requisiti diversi e non sempre Microsoft è in grado di rispondere alle domande. Rivolgersi al personale di supporto della propria azienda è probabilmente il modo più efficace per ottenere risposte veloci e pertinenti. Le informazioni di contatto dovrebbero essere disponibili nel [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+È possibile aggiungere un commento di seguito per richiedere assistenza, ma ogni organizzazione ha requisiti diversi e non sempre Microsoft è in grado di rispondere alle domande. Rivolgersi al personale di supporto della propria azienda è probabilmente il modo più efficace per ottenere risposte veloci e pertinenti. Le informazioni di contatto dovrebbero essere disponibili nel [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

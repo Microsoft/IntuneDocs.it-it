@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7e1ff77fef9e084000938022fb36217b21279c28
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Configurare l'accesso alle risorse aziendali
 
@@ -75,4 +75,4 @@ Le aziende dispongono di molte informazioni proprietarie relative, ad esempio, a
 > [!Note]
 > È possibile che sia necessario eseguire ancora alcuni passaggi prima che il dispositivo sia completamente gestito. Vedere altre informazioni sulla [registrazione del dispositivo con la gestione delle spese per le telecomunicazioni](enroll-your-device-with-telecom-expense-management-ios.md). Se l'organizzazione usa Device Enrollment Program di Apple, vedere altre informazioni [qui](enroll-your-device-dep-ios.md).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

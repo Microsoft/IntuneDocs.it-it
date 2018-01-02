@@ -1,11 +1,11 @@
 ---
-title: "Questo dispositivo è leggermente diverso | Microsoft Docs"
+title: Errori che potrebbero verificarsi se si usa Jamf Self-Service | Microsoft Docs
 description: Informazioni sul dispositivo Intune abilitato per macOS gestito da Jamf.
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 14db11738b1ef34a9180515e5f909ff1960bfbb0
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 080bc7c287dcc068ac18a3aec60295e777840368
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Operazioni eseguite in un dispositivo macOS gestito da Jamf
 
@@ -28,4 +28,8 @@ La società usa una serie di strumenti per assicurarsi che il dispositivo macOS 
 
 Se si usa il dispositivo macOS gestito da Jamf con problemi di conformità, fare clic sul pulsante **Risolvi** per avviare **Self-service**.
 
-Serve ancora assistenza? Rivolgersi al personale del supporto tecnico dell'azienda. È possibile trovare le informazioni di contatto nel [sito Web del portale aziendale](https://portal.manage.microsoft.com).
+__Operazioni da eseguire se viene visualizzato il messaggio "AccountNotOnboarded" o "Il dispositivo è già registrato"__
+
+Se è stata aperta l'app Portale aziendale e viene visualizzato un messaggio con la dicitura "AccountNotOnboarded", è necessario chiudere l'app Portale aziendale e passare ad **Applicazioni** > **Self-Service**. Per la società sarà disponibile un criterio di registrazione dei dispositivi che deve essere installato. Fare clic sul criterio per installarlo e quindi aprire di nuovo l'app Portale aziendale.
+
+Serve ancora assistenza? Rivolgersi al personale del supporto tecnico dell'azienda. È possibile trovare le informazioni di contatto nel [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

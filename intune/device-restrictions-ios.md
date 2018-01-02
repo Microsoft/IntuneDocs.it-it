@@ -3,8 +3,8 @@ title: Impostazioni relative alle restrizioni dei dispositivi per iOS
 titleSuffix: Azure portal
 description: "Informazioni sulle opzioni di Intune che è possibile usare per controllare le impostazioni e le funzionalità del dispositivo in dispositivi iOS.\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
 
@@ -41,7 +41,7 @@ Questa opzione si applica anche alle impostazioni accessibili dall'app delle imp
 - **Modifica delle impostazioni di notifica (solo con supervisione)** - Consente all'utente di modificare le impostazioni di notifica del dispositivo.
 - **Modifica dello sfondo (solo con supervisione)** - Consente all'utente di cambiare lo sfondo del dispositivo.
 - **Modifica delle impostazioni di attendibilità delle app aziendali (solo con supervisione)** - Consente all'utente di scegliere di considerare attendibili le app che non sono state scaricate dall'App Store.
-- **Modifiche al profilo di configurazione** - Consente all'utente di installare profili di configurazione.
+- **Modifiche al profilo di configurazione (solo con supervisione)** - Consente all'utente di installare profili di configurazione.
 - **Blocco attivazione (solo con supervisione)** - Abilita il blocco attivazione su dispositivi iOS con supervisione.
 
 ## <a name="configurations-requiring-supervision"></a>Configurazioni che richiedono supervisione
@@ -223,7 +223,7 @@ Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.
 -   **Associazione di Apple Watch (solo con supervisione)** - Consente al dispositivo di associare un Apple Watch.
 -   **Rilevamento del polso per l'Apple Watch associato** - Quando l'opzione è abilitata, Apple Watch non visualizza notifiche se non è indossato.
 -   **Modifica Bluetooth (solo con supervisione)** - Impedisce all'utente finale di modificare le impostazioni Bluetooth nel dispositivo.
--   **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
+-    **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
 -   **Richiedi la password associata alle richieste AirPlay in uscita** - Richiede una password di associazione quando l'utente usa AirPlay per trasmettere i contenuti ad altri dispositivi di Apple.
 
 ## <a name="keyboard-and-dictionary"></a>Tastiera e dizionario
