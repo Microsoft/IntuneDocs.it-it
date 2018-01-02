@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 791d93326ed1af173606d28639e92647ed7c1312
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Controllo degli accessi in base al ruolo (RBAC) con Intune
 
@@ -36,7 +36,7 @@ A partire dal nuovo portale di Azure, **Azure Active Directory (Azure AD)** offr
 
 - **Amministratore globale:** gli utenti con questo ruolo hanno accesso a tutte le funzionalità amministrative di Azure AD, nonché ai servizi federati con Azure AD come Exchange Online, SharePoint Online e Skype for Business Online. La persona che si registra per il tenant di Azure AD diventa un amministratore globale. Solo gli amministratori globali possono assegnare altri ruoli di amministratore di Azure AD. Nell'organizzazione vi possono essere più amministratori globali. Gli amministratori globali possono reimpostare la password per tutti gli utenti e tutti gli altri amministratori.
 
-- **Amministratore del servizio Intune:** gli utenti con questo ruolo hanno autorizzazioni globali all'interno di Intune quando il servizio è presente. Questo ruolo include inoltre la possibilità di gestire utenti e dispositivi, nonché di creare e gestire gruppi.
+- **Amministratore del servizio Intune:** gli utenti con questo ruolo hanno autorizzazioni globali all'interno di Intune quando il servizio è presente. Inoltre, se non sono presenti altre restrizioni di Azure prioritarie, questo ruolo offre la possibilità di gestire utenti e dispositivi, nonché di creare e gestire gruppi di Intune.
 
 - **Conditional Access Administrator** (Amministratore di accesso condizionale): gli utenti con questo ruolo hanno solo le autorizzazioni per visualizzare, creare, modificare ed eliminare i criteri di accesso condizionale.
 

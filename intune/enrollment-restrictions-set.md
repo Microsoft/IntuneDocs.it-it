@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 376236634ba9579e6496fa252c6a3638197fbcb9
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: bdb89d3426bd2dd040b184c8f7c23397bbed576b
+ms.sourcegitcommit: a99a5104400708b47ecee80075264d541b82874f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
@@ -28,7 +28,10 @@ ms.lasthandoff: 12/01/2017
 Gli amministratori di Intune sono in grado di creare e gestire restrizioni di registrazione che definiscono i tipi e il numero di dispositivi che possono essere registrati per la gestione con Intune. È possibile creare più restrizioni e applicarle a gruppi utenti diversi. È anche possibile impostare l'[ordine di priorità](#change-enrollment-restriction-priority) delle diverse restrizioni.
 
 >[!NOTE]
->Le restrizioni di registrazione non sono una funzionalità di sicurezza. I dispositivi compromessi possano dare risultati non previsti. Queste restrizioni sono una barriera di massimo sforzo per gli utenti legittimi. 
+>Le restrizioni di registrazione non sono una funzionalità di sicurezza. I dispositivi compromessi possano dare risultati non previsti. Queste restrizioni sono una barriera di massimo sforzo per gli utenti legittimi.
+
+>[!NOTE]
+>Le funzionalità menzionate di seguito per le restrizioni e l'impostazione dell'ordine di priorità per la registrazione dei dispositivi con applicazione ai gruppi sono in corso di distribuzione tra i clienti di Intune. Fino al termine della distribuzione, le funzionalità per gruppi e priorità potrebbero non essere accessibili. 
 
 Le restrizioni di registrazione specifiche che è possibile creare includono:
 

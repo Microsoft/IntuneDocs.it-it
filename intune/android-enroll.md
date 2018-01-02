@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 68d93fe98b89f27c947e07d79eca9a0e02dea582
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 1c78c41b9883cac41b4506c1c02790008115e210
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="enroll-android-devices"></a>Registrare dispositivi Android
 
@@ -69,6 +69,17 @@ Se non è stato ancora fatto, preparare la gestione dei dispositivi mobili [impo
    - **Gestisci tutti i dispositivi come Android**. Tutti i dispositivi Android, inclusi i dispositivi che supportano Android for Work, vengono registrati come dispositivi Android convenzionali.
    - **Gestisci i dispositivi supportati come Android for Work**. Tutti i dispositivi che supportano Android for Work vengono registrati come dispositivi Android for Work. Tutti i dispositivi che non supportano Android for Work vengono registrati come dispositivi Android convenzionali.
    - **Gestisci i dispositivi supportati per gli utenti solo in questi gruppi come Android for Work**. Consente di impostare la gestione Android for Work per un insieme limitato di utenti. Solo i membri dei gruppi selezionati che registrano un dispositivo che supporta Android for Work vengono registrati come dispositivi Android for Work. Tutti gli altri vengono registrati come dispositivi Android. Questa modalità risulta utile durante le distribuzioni pilota di Android for Work.
+
+## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>Approvare l'app Portale aziendale nella versione gestita di Google Play Store
+È necessario approvare l'app Portale aziendale per Android nella versione gestita di Google Play Store per assicurarsi che riceva gli aggiornamenti automatici delle app. Se non viene approvata, l'app Portale aziendale diventerà non aggiornata e potrebbe non ricevere correzioni di bug importanti o nuove funzionalità rilasciate da Microsoft.
+
+Seguire questa procedura per approvare l'app Portale aziendale Intune:
+
+1.  Scaricare l'app Portale aziendale dalla [versione gestita di Google Play Store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+2.  Accedere alla versione gestita di Google Play Store con lo stesso account di Google usato per configurare l'associazione per Android for Work.
+3.  Fare clic su **Approva**.  Verrà aperta una nuova finestra di dialogo.
+4.  Controllare le autorizzazioni in questa finestra di dialogo e quindi fare clic su **Approva**. Questa operazione è necessaria per consentire queste autorizzazioni allo scopo di consentire all'app Portale aziendale di gestire il profilo di lavoro nel dispositivo.
+5.  Selezionare **Keep approved when app requests new permissions** (Mantieni approvazione quando l'app richiede nuove autorizzazioni) e quindi fare clic su **Salva**.
 
 <!--  ## Next steps for Android for Work
 After configuring the Android for Work binding and settings, you can do the following:
