@@ -3,8 +3,8 @@ title: Come assegnare app ai gruppi
 titlesuffix: Azure portal
 description: "Dopo aver aggiunto un'app a Intune, è opportuno assegnarla ai gruppi di utenti o dispositivi.\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/24/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 51abb6daad11b9d6036396dcc5a5ce8f2a2c4ac4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 7121cffaf1deb206aa88373a3aa77ce23bdf030e
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Come assegnare app ai gruppi con Microsoft Intune
 
@@ -32,21 +32,21 @@ Le app possono essere assegnate ai dispositivi gestiti o non gestiti da Intune. 
 ||||
 |-|-|-|-|
 |&nbsp;|Dispositivi registrati con Intune|Dispositivi non registrati con Intune|
-|Assegnazione a utenti|sì|sì|
-|Assegnazione a dispositivi|sì|No|
-|Assegnazione di app sottoposte a wrapping o app che includa l'SDK Intune (per i criteri di protezione delle app)|sì|sì|
-|Assegnazione di app come Disponibili|sì|sì|
-|Assegnazione di app come Obbligatorio|sì|No|
-|Disinstallazione di app|sì|No|
-|Installazione di app disponibili sull'app Portale aziendale da parte degli utenti finali|sì|No|
-|Installazione di app disponibili sul portale aziendale basato su Web da parte degli utenti finali|sì|sì|
+|Assegnazione a utenti|Sì|Sì|
+|Assegnazione a dispositivi|Sì|No|
+|Assegnazione di app sottoposte a wrapping o app che includa l'SDK Intune (per i criteri di protezione delle app)|Sì|Sì|
+|Assegnazione di app come Disponibili|Sì|Sì|
+|Assegnazione di app come Obbligatorio|Sì|No|
+|Disinstallazione di app|Sì|No|
+|Installazione di app disponibili sull'app Portale aziendale da parte degli utenti finali|Sì|No|
+|Installazione di app disponibili sul portale aziendale basato su Web da parte degli utenti finali|Sì|Sì|
 
 > [!NOTE]
 > Attualmente, è possibile assegnare app iOS e Android (sia linea di business che acquistate nello store) a dispositivi non registrati con Intune.
 
 ## <a name="how-to-assign-an-app"></a>Come assegnare un'applicazione
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
 1. Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **App**.
