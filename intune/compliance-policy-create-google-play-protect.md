@@ -3,8 +3,8 @@ title: "Abilitare la conformità con Google Play Protect con Intune"
 titleSuffix: Azure portal
 description: "Informazioni su come creare un criterio di conformità per i dispositivi Android per abilitare Google Play Protect."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/20/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d610bc338c1bcf81ed3bc71f1357e001914c5877
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: 3d9e687ff31d50e30ea4d15a4eb751c0e78dc24e
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Come creare un criterio di conformità del dispositivo per abilitare Google Play Protect
 
@@ -36,7 +36,7 @@ I criteri di conformità che richiedono queste impostazioni possono poi essere a
 5. Selezionare **Android** per la piattaforma.
 6. Scegliere **Impostazioni** > **Integrità del dispositivo**.
 7. Configurare le impostazioni di **Google Play Protect**.
-8. Dopo aver configurato le impostazioni di Google Play Protect, specificare le impostazioni **Sicurezza** e **Proprietà dispositivo**. Al termine, scegliere **Salva**.
+8. Dopo aver configurato le impostazioni di Google Play Protect, specificare le impostazioni **Sicurezza** e **Proprietà dispositivo**. Al termine, scegliere **OK**.
 
 ## <a name="configure-the-google-play-protect-settings"></a>Configurare le impostazioni di Google Play Protect
 
