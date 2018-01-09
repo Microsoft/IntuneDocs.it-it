@@ -2,8 +2,8 @@
 title: Modello di dati del data warehouse | Microsoft Docs
 description: Il data warehouse di Intune esegue il campionamento giornaliero dei dati per fornire una visualizzazione cronologia dell'ambiente per dispositivi mobili in continua evoluzione.
 keywords: Data warehouse di Intune
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/14/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29825c58febc813c7b11072699d06106725584d3
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: bb4248c773e30244beb310a5b5c8b3fb0bb9d5f0
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="data-warehouse-data-model"></a>Modello di dati del data warehouse
 
@@ -41,7 +41,7 @@ Queste aree contengono le entità (o elementi) significative per l'ambiente Intu
   -  [Intune Management Extension](reports-ref-intunemanagementextension.md) (Estensione di gestione di Intune)
   -  [Criteri](reports-ref-policy.md)
   -  [Gestione delle app mobili (MAM)](reports-ref-mobile-app-management.md)
-  -  [Utente](reports-ref-user.md)
+  -  [User](reports-ref-user.md)
   -  [Current User](reports-ref-current-user.md)
   -  [Associazioni utente-dispositivo](reports-ref-user-device.md)
 

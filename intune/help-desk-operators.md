@@ -3,8 +3,8 @@ title: Portale del Supporto tecnico per la risoluzione dei problemi | Microsoft 
 titlesuffix: Azure portal
 description: Il personale del supporto tecnico usa il portale per risolvere i problemi tecnici degli utenti
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 09/26/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 845b225fe60ecde71f364b224a0984638662a3db
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti
 
@@ -43,7 +43,7 @@ Quando un utente contatta l'help desk per un problema tecnico di Intune, l'opera
 
 Nel pannello Risoluzione dei problemi scegliere **Selezionare l'utente** per visualizzare le informazioni relative all'utente. Le informazioni utente sono utili per definire lo stato corrente degli utenti e dei loro dispositivi.  
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Risoluzione dei problemi**.
 4. Fare clic su **Selezionare l'utente**.
@@ -58,7 +58,7 @@ Nel pannello Risoluzione dei problemi scegliere **Selezionare l'utente** per vis
 
 ![](/intune/media/troubleshooting-dash.png)
 
-| Area | Nome | Descrizione |
+| Area | Name | Descrizione |
 | ---  | ---  | ---         |
 | 1.   | Stato dell'account  | Mostra lo stato del tenant di Intune corrente come **Attivo** o **Inattivo**.       |
 | 2.   | Selezione utente  | Nome dell'utente attualmente selezionato. Fare clic su **Cambia utente** per scegliere un nuovo utente.       |
@@ -76,7 +76,7 @@ Proprietà delle app per dispositivi mobili.
 
 | Proprietà      | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nome          | Nome dell'applicazione.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Name          | Nome dell'applicazione.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Sistema operativo            | Sistema operativo installato nel dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Tipo          | È possibile scegliere un tipo di assegnazione per ciascuna applicazione.  <br> **Disponibile**: gli utenti installano l'app dall'app Portale aziendale o dal relativo sito Web.  <br> **Non applicabile**: l'app non è installata o visualizzata nel portale aziendale. <br> **Disinstalla**: l'applicazione è disinstallata sui dispositivi nei gruppi selezionati.  <br> **Available with or without enrollment** (Disponibile con o senza registrazione): assegnare questa app a gruppi di utenti i cui dispositivi non sono registrati con Intune. |
 | Ultima modifica | Nome del tipo di dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -120,7 +120,7 @@ La tabella riepiloga lo stato dei criteri di protezione app per i dispositivi ge
 
 | Proprietà    | Descrizione                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Nome        | Nome dell'applicazione.                                                                                                        |
+| Name        | Nome dell'applicazione.                                                                                                        |
 | Distribuito    | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
 | Piattaforma    | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
 | Registrazione  | Nome del tipo di dispositivo.                                                                                                     |
@@ -154,7 +154,7 @@ Proprietà dei criteri di conformità.
 | Proprietà      | Descrizione                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Assegnazione    | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
-| Nome          | Nome dell'applicazione.                                                                                                        |
+| Name          | Nome dell'applicazione.                                                                                                        |
 | Sistema operativo            | Sistema operativo installato nel dispositivo.                                                                                       |
 | Tipo di criteri   | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
 | Ultima modifica | Nome del tipo di dispositivo.                                                                                                     |
@@ -199,7 +199,7 @@ Proprietà dei criteri di configurazione.
 | Proprietà      | Descrizione                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Assegnazione    | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
-| Nome          | Nome dell'applicazione.                                                                                                        |
+| Name          | Nome dell'applicazione.                                                                                                        |
 | Sistema operativo            | Sistema operativo installato nel dispositivo.                                                                                       |
 | Tipo di criteri   | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
 | Ultima modifica | Nome del tipo di dispositivo.                                                                                                     |

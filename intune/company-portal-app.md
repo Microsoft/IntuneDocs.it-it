@@ -3,8 +3,8 @@ title: Come configurare l'app Portale aziendale
 titleSuffix: Azure portal
 description: Informazioni su come applicare specifiche personalizzazioni aziendali all'app Portale aziendale. "
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 303d4a4cbce9d63abc0809a27ae1e22dcd1e195b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 994d8b8fd90e4e66b5fdadae1cfdbbba403897ae
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Come configurare l'app Portale aziendale di Microsoft Intune
 
@@ -36,7 +36,7 @@ La personalizzazione del portale aziendale consente di offrire agli utenti final
 Il nome dell'azienda viene visualizzato come titolo del portale aziendale. I dettagli e le informazioni di contatto vengono visualizzati agli utenti nella schermata **Contatta l'IT** del portale aziendale. L'informativa sulla privacy viene visualizzata quando un utente fa clic sul relativo collegamento.        
 
 
-|Nome campo|Lunghezza massima|Altre informazioni|        
+|Nome del campo|Lunghezza massima|Altre informazioni|        
 |-|-|-|     
 |**Nome società**|40|È il nome che verrà visualizzato come titolo del portale aziendale.|        
 |**Nome contatto del reparto IT**|40|Questo nome viene visualizzato nella pagina **Contatta l'IT**.|      

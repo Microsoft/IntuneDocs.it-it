@@ -3,8 +3,8 @@ title: Come aggiungere app line-of-business per Windows Phone in Intune
 titlesuffix: Azure portal
 description: Informazioni sull'aggiunta di app line-of-business per Windows Phone a Intune."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/3/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 60776df3774d4f9ca7404ef04b1cc94536bcd164
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: 93bb2f6b0515febf4b85cb5d11dee379cad46bf5
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per Windows Phone in Microsoft Intune
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 10/04/2017
 
 1. Nel pannello **Aggiungi app** scegliere **File del pacchetto dell'app**.
 2. Nel pannello **File del pacchetto dell'app** scegliere il pulsante Sfoglia e selezionare un file di installazione Windows Phone con estensione **xap**.
-3. Al termine scegliere **OK**.
+3. Al termine, scegliere **OK**.
 
 
 ## <a name="step-3---configure-app-information"></a>Passaggio 3: configurare le informazioni sull'app
@@ -57,7 +57,7 @@ ms.lasthandoff: 10/04/2017
     - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio, **reparto risorse umane** (facoltativo).
     - **Note**: immettere eventuali note da associare a questa app.
     - **Logo**: caricare un'icona che viene associata all'app. Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
-3. Al termine scegliere **OK**.
+3. Al termine, scegliere **OK**.
 
 ## <a name="step-4---finish-up"></a>Passaggio 4: completare l'operazione
 

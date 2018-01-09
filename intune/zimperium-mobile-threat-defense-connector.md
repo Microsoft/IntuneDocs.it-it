@@ -3,10 +3,10 @@ title: Connettore Zimperium MTD con Intune
 titleSuffix: Intune on Azure
 description: Integrazione del connettore Zimperium con Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/06/2017
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78214293a66784d4bc05e441c2c1cdbf718b0a9a
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 22fbdb95a0fe0c064f07dea2dca50c516b995b8d
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Connettore Zimperium Mobile Threat Defense con Intune
 
@@ -51,7 +51,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile bloc
 
 ![App dannose rilevate](./media/Maliciousapps_blocked_Zimperium.png)
 
-**Accesso concesso dopo la risoluzione:**
+**Accesso concesso dopo la correzione:**
 
 ![App dannose rilevate e accesso consentito](./media/maliciousapps_unblocked_Zimperium.png)
 
@@ -63,7 +63,7 @@ Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e prot
 
 ![Bloccare l'accesso alla rete tramite Wi-Fi](./media/network_wifi_blocked_Zimperium.png)
 
-**Accesso concesso dopo la risoluzione:**
+**Accesso concesso dopo la correzione:**
 
 ![Accesso concesso dopo la risoluzione](./media/network_wifi_unblocked_Zimperium.png)
 
@@ -75,7 +75,7 @@ Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e impe
 
 ![Bloccare SharePoint Online quando vengono rilevate minacce per la rete](./media/network_spo_blocked_Zimperium.png)
 
-**Accesso concesso dopo la risoluzione:**
+**Accesso concesso dopo la correzione:**
 
 ![Accesso concesso dopo la risoluzione per l'esempio di SharePoint](./media/network_spo_unblocked_Zimperium.png)
 
