@@ -3,9 +3,9 @@ title: Registrazione di dispositivi Windows
 titlesuffix: Azure portal
 description: Abilitare la gestione di dispositivi mobili (MDM) Intune per i dispositivi Windows.
 keywords: 
-author: nathbarn
-manager: nathbarn
-ms.date: 11/29/2017
+author: ErikjeMS
+manager: erikje
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bf9ae5f05e21fa2ca7be4af08dace5b96315cec3
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 308522e0a54d47595294b8f1c31e92a965a09ef4
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-windows-devices"></a>Registrazione di dispositivi Windows
 
@@ -53,7 +53,7 @@ I dispositivi, che hanno Windows 10 Creators Update e che sono aggiunti al domin
 È possibile semplificare la registrazione per gli utenti creando un alias DNS (Domain Name Server), un tipo di record CNAME che reindirizza automaticamente le richieste di registrazione ai server di Intune. Se non si crea un record di risorse DNS CNAME, gli utenti che provano a connettersi a Intune devono immettere il nome del server Intune durante la registrazione.
 
 **Passaggio 1: Creare CNAME** (facoltativo)<br>
-Creare record di risorse DNS CNAME per il dominio aziendale. Ad esempio, se il sito Web aziendale è contoso.com, si creerà un CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
+Creare record di risorse DNS CNAME per il dominio aziendale. Ad esempio, se il sito Web della società è contoso.com, si creerà un record CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
 
 Anche se la creazione di record CNAME DNS è facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record di registrazione CNAME, agli utenti viene richiesto di immettere manualmente il nome del server MDM, enrollment.manage.microsoft.com.
 

@@ -3,8 +3,8 @@ title: Come aggiungere app line-of-business iOS in Intune
 titlesuffix: Azure portal
 description: Informazioni sull'aggiunta di app line-of-business per iOS a Intune."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/3/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0e64ca5481b86a63b51b9f0b664569e86f1bfbc9
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: 20a044ea6b517279a2546f62d05cc79e09dcdc5f
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per iOS in Microsoft Intune
 
@@ -43,7 +43,7 @@ Usare le informazioni di questo argomento per aggiungere le app line-of-business
 
 1. Nel pannello **Aggiungi app** scegliere **File del pacchetto dell'app**.
 2. Nel pannello **File del pacchetto dell'app** scegliere il pulsante Sfoglia e selezionare un file di installazione iOS con estensione **.ipa**.
-3. Al termine scegliere **OK**.
+3. Al termine, scegliere **OK**.
 
 
 ## <a name="step-3---configure-app-information"></a>Passaggio 3: configurare le informazioni sull'app
@@ -62,7 +62,7 @@ Usare le informazioni di questo argomento per aggiungere le app line-of-business
     - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio, **reparto risorse umane** (facoltativo).
     - **Note**: immettere eventuali note da associare a questa app.
     - **Logo**: caricare un'icona che viene associata all'app. Questa è l'icona visualizzata insieme all'app quando gli utenti visitano il portale aziendale.
-3. Al termine scegliere **OK**.
+3. Al termine, scegliere **OK**.
 
 ## <a name="step-4---finish-up"></a>Passaggio 4: completare l'operazione
 

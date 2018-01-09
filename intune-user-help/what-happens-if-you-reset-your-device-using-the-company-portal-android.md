@@ -1,5 +1,5 @@
 ---
-title: Cosa accade se si reimposta il dispositivo Android? | Documentazione Microsoft
+title: Cosa accade se si reimposta il dispositivo Android? | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 476f1cfa59f562a8c0953236184693e1c5674ee3
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4095ffc0da85501ec4649940d886b4d9a4719c7a
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Che cosa avviene se si reimposta un dispositivo Android con l'app Portale aziendale?
 
 Quando si usa il portale aziendale per reimpostare il dispositivo Android, tutte le app, le impostazioni e i dati personali nel dispositivo vengono eliminati. La reimpostazione ripristina le impostazioni predefinite del dispositivo.
 
-Se si usa un dispositivo Samsung KNOX, è possibile eseguire una "cancellazione selettiva" scegliendo l'opzione di **rimozione del dispositivo** dal portale aziendale. La cancellazione selettiva rimuove solo:
+Se si usa un dispositivo Samsung Knox, è possibile eseguire una "cancellazione selettiva" scegliendo l'opzione di **rimozione del dispositivo** dal portale aziendale. La cancellazione selettiva rimuove solo:
 
 - App aziendali rese disponibili dal supporto tecnico dell'azienda.
 - Posta elettronica, VPN e Wi-Fi.

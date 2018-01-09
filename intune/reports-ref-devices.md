@@ -2,8 +2,8 @@
 title: Devices nel data warehouse di Intune | Microsoft Docs
 description: "Argomento di riferimento per la categoria Devices delle raccolte di entità nell'API data warehouse di Intune."
 keywords: Data warehouse di Intune
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b11994028a42b19aca3e78900886afbedc1ca1d5
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 24260c9e6a9929c74b47e5d83bf4d1be867b6b2e
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-devices-entities"></a>Informazioni di riferimento per le entità della categoria Devices
 
@@ -45,7 +45,7 @@ L'entità **DeviceTypes** rappresenta il tipo di dispositivo a cui fanno riferim
 
 ## <a name="example"></a>Esempio
 
-| deviceTypeID  | Nome | Descrizione |
+| deviceTypeID  | Name | Descrizione |
 |---------|------------|--------|
 | 0 |Desktop |Dispositivo Windows Desktop |
 | 1 |WindowsRT |Dispositivo WindowsRT |
@@ -80,7 +80,7 @@ L'entità **ClientRegistrationStateTypes** rappresenta il tipo di registrazione 
 
 ## <a name="example"></a>Esempio
 
-| ClientRegisterationStateID  | Nome | Descrizione |
+| ClientRegisterationStateID  | Name | Descrizione |
 |---------|------------|--------|
 | 0 |NotRegistered |Non registrato |
 | 1 |SMSIDConflict |Conflitto ID SMS |
@@ -104,7 +104,7 @@ L'entità **EnrollmentTypes** indica in che modo è stato registrato un disposit
 
 ## <a name="example"></a>Esempio
 
-| enrollmentTypeID  | Nome | Descrizione |
+| enrollmentTypeID  | Name | Descrizione |
 |---------|------------|--------|
 | 0 |Sconosciuto |Il tipo di registrazione non è stato raccolto |
 | 1 |UserEnrollment |Registrazione avviata dall'utente |
@@ -145,7 +145,7 @@ L'entità **MdmStatuses** indica lo stato di conformità del dispositivo.
 | 1 |Conforme |Il dispositivo è conforme. |
 | 2 |Non conforme |Il dispositivo non è conforme. |
 | 3 |Conflitto |La conformità del dispositivo ha generato un conflitto. |
-| 4 |Error |Errore durante la lettura dello stato di conformità del dispositivo. |
+| 4 |Errore |Errore durante la lettura dello stato di conformità del dispositivo. |
 
 
 ## <a name="managementstates"></a>ManagementStates
@@ -160,14 +160,14 @@ L'entità **ManagementStates** fornisce informazioni dettagliate sullo stato del
 
 ## <a name="example"></a>Esempio
 
-| managementStateID  | Nome | Descrizione |
+| managementStateID  | Name | Descrizione |
 |---------|------------|--------|
 | 0 |Gestiti | Gestito senza azioni remote in sospeso. |
 | 1 |RetirePending | C'è un comando di disattivazione in sospeso per il dispositivo. |
 | 2 |RetireFailed | Il comando di ritiro del dispositivo non è riuscito. |
 | 3 |WipePending | C'è un comando di cancellazione in sospeso per il dispositivo. |
 | 4 |WipeFailed | Il comando di cancellazione del dispositivo non è riuscito. |
-| 5 |Non integro | Stato non integro. |
+| 5 |Unhealthy | Stato non integro. |
 | 6 |DeletePending | C'è un comando di eliminazione in sospeso per il dispositivo. |
 | 7 |RetireIssued | Al dispositivo è stato inviato un comando di ritiro. |
 | 8 |WipeIssued | Al dispositivo è stato inviato un comando di cancellazione. |
@@ -187,7 +187,7 @@ L'entità **WorkPlaceJoinStateTypes** rappresenta lo stato Workplace Join di Azu
 
 ## <a name="example"></a>Esempio
 
-| workPlaceJoinStateID  | Nome | Descrizione |
+| workPlaceJoinStateID  | Name | Descrizione |
 |---------|------------|--------|
 | 0 |Sconosciuto |Se un dispositivo non è stato aggiunto all'area di lavoro, è in stato Unknown |
 | 1 |Operazione completata |Aggiunta all'area di lavoro riuscita |
@@ -211,7 +211,7 @@ L'entità **ManagementAgentTypes** rappresenta gli agenti usati per gestire un d
 
 ## <a name="example"></a>Esempio
 
-| ManagementAgentTypeID  | Nome | Descrizione |
+| ManagementAgentTypeID  | Name | Descrizione |
 |---------|------------|--------|
 | 1 |EAS | Il dispositivo è gestito tramite Exchange Active Sync |
 | 2 |MDM | Il dispositivo è gestito tramite un agente MDM |
@@ -358,7 +358,7 @@ L'entità **MdmDeviceInventoryHistories** contiene gli snapshot quotidiani dei d
 | PlatformType |Tipo di piattaforma. |
 | ProcessorLevel |Livello del processore. |
 | ProcessorRevision |Revisione del processore. |
-| Product |Prodotto. |
+| Prodotto |Prodotto. |
 | ProductVersion |Versione del prodotto. |
 | OEM |OEM (Original Equipment Manufacturer). |
 | DeviceBuildVersion |Versione build del dispositivo. |

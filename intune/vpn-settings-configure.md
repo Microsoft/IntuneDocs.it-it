@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1b4152cfe5442b01f0d81c724dfa5eccb02ae29
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5bb34d9f180240e2ea03d43f42dc9ea8aee7adcd
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Come configurare le impostazioni VPN in Microsoft Intune
 
@@ -35,17 +35,17 @@ Si supponga, ad esempio, di voler effettuare il provisioning di tutti i disposit
 
 |Tipo di connessione|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Sì|Sì|Sì|Sì|Sì|sì|
+|Pulse Secure|Sì|Sì|Sì|Sì|Sì|Sì|
 |Cisco (IPSec)|No|Sì|No|No|No|No|
-|Citrix|sì|Sì|No|No|No|Sì|
+|Citrix|Sì|Sì|No|No|No|Sì|
 |F5 Edge Client|Sì|Sì|Sì|Sì|Sì|Sì|
-|Dell SonicWALL Mobile Connect|Sì|Sì|Sì|Sì|Sì|sì|
-|Check Point Capsule VPN|sì|Sì|Sì|Sì|Sì|sì|
+|Dell SonicWALL Mobile Connect|Sì|Sì|Sì|Sì|Sì|Sì|
+|Check Point Capsule VPN|Sì|Sì|Sì|Sì|Sì|Sì|
 |Cisco AnyConnect|Sì|Sì|Sì|No|No|No|
-|Automatico|No|No|No|No|No|sì|
+|Automatico|No|No|No|No|No|Sì|
 |IKEv2|No|No|No|No|No|Sì|
-|L2TP|No|No|No|No|No|sì|
-|PPTP|No|No|No|No|No|sì|
+|L2TP|No|No|No|No|No|Sì|
+|PPTP|No|No|No|No|No|Sì|
 |Custom|No|Sì|Sì|No|No|No|
 
 
@@ -56,7 +56,7 @@ Per informazioni su come creare profili VPN personalizzati usando le impostazion
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>Creare un profilo dispositivo contenente le impostazioni VPN
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
