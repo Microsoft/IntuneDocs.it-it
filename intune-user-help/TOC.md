@@ -6,6 +6,8 @@
 
 ## [Reimpostare un dispositivo](what-happens-if-you-reset-your-device-cpwebsite.md)
 
+## [Aggiornamento della password](password-does-not-meet-it-administrator-requirements.md)
+
 ## [Accedere al portale aziendale](sign-in-to-the-company-portal.md)
 
 ## [Uso del dispositivo Android](using-your-android-device-with-intune.md)
@@ -72,7 +74,7 @@
 #### [Che cosa accade se si annulla la registrazione del dispositivo?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Sincronizzare manualmente il dispositivo](sync-your-device-manually-ios.md)
 
-#### [Risoluzione dei problemi comuni con iOS](troubleshoot-your-device-iOS.md)
+### [Risoluzione dei problemi comuni con iOS](troubleshoot-your-device-iOS.md)
 #### [Riconnettere un dispositivo iOS compromesso](how-to-reconnect-a-compromised-ios-device.md)
 #### [Inviare gli errori all'azienda](send-errors-to-your-it-admin-ios.md)
 #### [Inviare gli errori a Microsoft](send-logs-to-microsoft-ios.md)
@@ -116,6 +118,7 @@
 #### [Cosa accade quando si registrano altre versioni di Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Registrare il dispositivo Windows](enroll-your-device-in-intune-windows.md)
 #### [Registrare il dispositivo Windows 10](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Registrare il dispositivo Windows 10 tramite "Accedi all'azienda o all'istituto di istruzione"](enroll-your-w10-device-access-work-or-school.md)
 #### [Registrare il dispositivo Windows 8.1 o Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
 #### [Registrare il dispositivo Windows Phone 8.1](enroll-your-wp81-windows.md)
 ### [Reimpostare il dispositivo](reset-erase-your-device-cpwebsite.md)

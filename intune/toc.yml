@@ -642,7 +642,7 @@
               href: reports-ref-user-device.md
             - name: Informazioni di riferimento per l'entità User
               href: reports-ref-user.md
-    - name: Trasferire localmente le app di Windows
+    - name: API Graph di Intune
       href: intune-graph-apis.md
       items:
         - name: Informazioni di riferimento sulle API Graph per Intune
