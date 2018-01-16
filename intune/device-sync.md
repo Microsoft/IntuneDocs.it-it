@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dadcd33f39827365fc3f22c46d4332f3ea3cbf09
-ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
+ms.openlocfilehash: 8a8bb4729314819b23d69f0ccf6f6c093f29801f
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Sincronizzare i dispositivi con Intune per ottenere i criteri e le azioni più recenti
 
@@ -37,7 +37,7 @@ L'azione del dispositivo **Sincronizza** forza il dispositivo selezionato a eseg
 
 ## <a name="how-to-sync-a-device"></a>Come sincronizzare un dispositivo
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
 4. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.

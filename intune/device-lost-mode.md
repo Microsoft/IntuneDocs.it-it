@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f16bd212c7a23d847da0929933fbd4b497099d0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 54c298e751f2cb63e8c9fd60aa14ed626ab9a0b1
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>Attivare la modalità di dispositivo perso nei dispositivi iOS
 
@@ -37,7 +37,7 @@ L'azione del dispositivo **Modalità di dispositivo perso** consente di abilitar
 
 ## <a name="how-to-activate-lost-mode"></a>Come attivare la modalità di dispositivo perso
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
 4. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.

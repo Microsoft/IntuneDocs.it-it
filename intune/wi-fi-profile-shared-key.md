@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Usare un profilo di dispositivo personalizzato per la creazione di un profilo Wi-Fi con una chiave precondivisa
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -28,9 +28,9 @@ Di seguito viene illustrato come usare i **profili di dispositivo personalizzati
 
 > [!NOTE]
 -   Può risultare più semplice copiare il codice da un computer che si connette alla rete, come descritto di seguito.
-- Per Android, è possibile scegliere di usare lo script [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornito da Johnathon Biersack.
+- Per Android, è possibile scegliere di usare lo script [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) fornito da Johnathon Biersack.
 -   È possibile aggiungere più reti e chiavi aggiungendo altre impostazioni URI OMA.
--  Per iOS, usare Apple Configurator in una stazione Mac per impostare il profilo. In alternativa, usare lo script [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornito da Johnathon Biersack.
+-  Per iOS, usare Apple Configurator in una stazione Mac per impostare il profilo. In alternativa, usare lo script [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) fornito da Johnathon Biersack.
 
 
 1.  Per creare un profilo Wi-Fi con una chiave precondivisa per Android o Windows o un profilo Wi-Fi basato su EAP, quando si crea un profilo di dispositivo scegliere **Personalizzato** per la piattaforma del dispositivo anziché un profilo Wi-Fi.
