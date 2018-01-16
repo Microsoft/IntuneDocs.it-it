@@ -7,7 +7,7 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: c4210d77e52abba07454d8606ba7715c03078ca6
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemi noti in Microsoft Intune
 
@@ -43,31 +43,6 @@ La possibilità di gestire Windows 10 in Intune nel portale di Azure è disponib
 
 Quando si esegue la migrazione da Intune al portale di Azure, si potrebbe notare un nuovo gruppo denominato **Tutti gli utenti - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Questo gruppo contiene tutti gli utenti di Azure Active Directory e non solo gli utenti con licenza per Intune. Se si prevede che alcuni utenti nuovi o esistenti non diventino membri di alcun gruppo, ciò potrebbe causare problemi con altri prodotti Microsoft.
 
-### <a name="secondary-migration-required-for-select-capabilities"></a>Migrazione secondaria necessaria per alcune funzionalità
-
-È necessario eseguire la migrazione degli account di Intune creati prima di gennaio 2017 prima di poter usare le funzionalità seguenti nel portale di Azure:
-
-- Profili di registrazione di dispositivo aziendale
-- Programma di registrazione del dispositivo mobile di Apple:
-- Predichiarare i dispositivi aziendali per numero di serie iOS
-- Account del manager di registrazione dispositivi
-- Volume Purchase Program di Apple
-
-Dato che queste funzionalità non possono essere gestite sia dalla console di Intune (Silverlight) che dal portale di Azure, la migrazione:
-- Le disabilita nel portale classico
-- Le abilita nel portale di Azure  
-
-A partire dal 22 settembre 2017, la migrazione di queste funzionalità verrà unita alla migrazione primaria in Azure. Se è già stata eseguita la migrazione dell'account per usare il portale di Azure, questa migrazione secondaria a questo punto deve essere stata completata. In caso contrario, queste funzionalità verranno migrate in Azure entro novembre. La migrazione dell'account verrà iniziata e completata nell'arco dello stesso giorno. La migrazione può richiedere fino a 6 ore da quando queste funzionalità vengono disabilitate nel portale classico di Intune.
-
-Se queste funzionalità di Intune sono attualmente gestite nel portale di Azure, tenere presente quanto segue:
-
-#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Rimozione dei profili di registrazione di dispositivi aziendali nel programma DEP di Apple
-Il portale di Azure non supporta un profilo di registrazione di dispositivi aziendali predefinito per dispositivi DEP (Device Enrollment Program) di Apple. Questa funzionalità, disponibile nella console di Intune (Silverlight), è stata sospesa per evitare che i profili venissero assegnati involontariamente. Quando i numeri di serie DEP vengono sincronizzati nel portale di Azure, non viene assegnato alcun profilo di registrazione di dispositivi aziendali. È necessario assegnare un profilo di registrazione prima di usare il dispositivo.
-
-#### <a name="apple-dep-token-restored-with-migration"></a>Token DEP Apple ripristinato con la migrazione
-
-Se è stato eliminato un token DEP (Device Enrollment Program) Apple nel portale di Intune (Silverlight) e non si carica un nuovo token, quello originale viene ripristinato nel portale di Azure durante la migrazione. Per rimuovere il token e impedire la registrazione DEP, eliminare il token dal portale di Azure.
-
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>I pannelli di stato per i criteri migrati non funzionano
 
 Non è possibile visualizzare informazioni di stato per i criteri di cui è stata eseguita la migrazione dal portale classico al portale di Azure. È comunque possibile continuare a visualizzare i report per questi criteri nel portale classico. Per visualizzare informazioni di stato per i criteri di configurazione migrati, ricrearli nel portale di Azure.
@@ -79,6 +54,7 @@ Le app iOS acquistate con volume Purchase Program sono visualizzate e possono es
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Vengono caricate più copie dello stesso programma iOS acquistato con volume Purchase Program
 Non fare clic sul pulsante **Carica** più volte per lo stesso token VPP. Se si fa clic più volte verranno caricati token VPP duplicati e le app verranno sincronizzate più volte per lo stesso token VPP.
+
 
 <!-- ## Groups -->
 

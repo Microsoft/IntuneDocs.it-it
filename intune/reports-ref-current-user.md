@@ -1,11 +1,11 @@
 ---
-title: User nel data warehouse di Intune | Microsoft Docs
+title: Current User nel data warehouse di Intune | Microsoft Docs
 description: "Argomento di riferimento per la categoria User delle raccolte di entità nell'API data warehouse di Intune."
 keywords: Data warehouse di Intune
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,20 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6f321a3a9ac09c004639a3db15df280fbdb5be3c
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: cabf39f603ac93a0716594c44174908e7c999e5c
+ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="reference-for-current-user-entity"></a>Informazioni di riferimento per l'entità User corrente
+# <a name="reference-for-current-user-entity"></a>Informazioni di riferimento per l'entità Current User
 
-La categoria **Current User** contiene le proprietà utente e agente nel modello di dati. La raccolta di entità **Current User** è limitata agli utenti attualmente attivi. L'entità contiene tutti gli utenti di Azure Active Directory attualmente assegnati a una licenza. La licenza può essere una licenza di Intune, una licenza ibrida o una licenza di Microsoft Office 365. Se un utente è stato rimosso, non verrà rappresentato per il periodo di raccolta dei dati. Per una raccolta contenente una cronologia delle modifiche apportate allo stato di un utente, vedere [Informazioni di riferimento per l'entità User](reports-ref-user.md).
+La categoria **Current User** contiene le proprietà utente nel modello di dati. La raccolta di entità **Current User** è limitata agli utenti attualmente attivi. L'entità contiene tutti gli utenti di Azure Active Directory attualmente assegnati a una licenza. La licenza può essere una licenza di Intune, una licenza ibrida o una licenza di Microsoft Office 365. Se un utente è stato rimosso, non verrà rappresentato nella raccolta Current User. Per una raccolta contenente una cronologia delle modifiche apportate allo stato di un utente, vedere [Informazioni di riferimento per l'entità User](reports-ref-user.md).
 
 
-## <a name="user"></a>Utente
+## <a name="current-user"></a>Utente corrente
 
-L'entità **User** elenca tutti gli utenti di Azure Active Directory (Azure AD) con licenze assegnate nell'organizzazione.
+L'entità **Current User** elenca tutti gli utenti di Azure Active Directory (Azure AD) con licenze assegnate nell'organizzazione.
 
 | Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
@@ -41,5 +41,5 @@ L'entità **User** elenca tutti gli utenti di Azure Active Directory (Azure AD) 
 | RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica dell'utente nel data warehouse. |23/11/2016 12.00.00 |
 
 ## <a name="next-steps"></a>Passaggi successivi
- - È possibile usare la raccolta di entità **User** per estendere i dati anche agli utenti non attualmente attivi. Per altre informazioni, vedere [Informazioni di riferimento per l'entità User](reports-ref-user.md). 
+ - È possibile usare la raccolta di entità **User** per estendere i dati anche agli utenti non attualmente attivi. Per altre informazioni, vedere [Informazioni di riferimento per l'entità User](reports-ref-user.md).
  - Per altre informazioni su come il data warehouse controlla la durata di un utente in Intune, vedere [Rappresentazione della durata degli utenti nel data warehouse di Intune](reports-ref-user-timeline.md).

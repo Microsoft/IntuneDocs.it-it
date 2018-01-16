@@ -1,7 +1,7 @@
 ---
-title: Criteri di Intune per consentire o bloccare le app per Samsung KNOX
+title: Criteri di Intune per consentire o bloccare le app per Samsung Knox
 titlesuffix: Azure portal
-description: Creare un profilo personalizzato per consentire e bloccare app per dispositivi Samsung KNOX Standard."
+description: Creare un profilo personalizzato per consentire e bloccare app per dispositivi Samsung Knox Standard."
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -15,26 +15,26 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aaa85347dc647658faf981e93d7fb0ea60c9e296
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 22d1e578da6a0085fd2e41ffc1d2322d01d971f1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Usare criteri personalizzati per consentire e bloccare app per dispositivi Samsung KNOX Standard in Microsoft Intune
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Usare criteri personalizzati per consentire e bloccare app per dispositivi Samsung Knox Standard in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Seguire le procedure riportate in questo argomento per creare un criterio Microsoft Intune personalizzato allo scopo di creare uno degli elementi seguenti:
 
 - Un elenco di app la cui esecuzione è bloccata nel dispositivo. Le app presenti in questo elenco sono bloccate e non possono essere eseguite, anche se al momento dell'applicazione del criterio erano già state installate .
-- Un elenco di app che gli utenti del dispositivo sono autorizzati a installare da Google Play Store. È possibile installare soltanto le app elencate. Le altre app dello Store non possono essere installate.
+- Un elenco di app che gli utenti del dispositivo sono autorizzati a installare da Google Play Store. È possibile installare soltanto le app elencate. Non sarà possibile installare altre app dallo Store.
 
-Queste impostazioni possono essere usate solo dai dispositivi che eseguono Samsung KNOX Standard.
+Queste impostazioni possono essere usate solo dai dispositivi che eseguono Samsung Knox Standard.
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Creare un elenco di app consentite o bloccate
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.

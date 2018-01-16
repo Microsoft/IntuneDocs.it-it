@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef7c8bb8daa76c5555b5d55d06fc30a9bb6c317
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app iOS per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -345,7 +345,7 @@ Prima di eseguire il wrapping dell'app, è possibile assegnare *diritti* per con
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>Risoluzione di problemi comuni relativi ai diritti
 Se lo strumento di wrapping delle app per iOS visualizza un errore relativo ai diritti, provare le procedure seguenti per la risoluzione dei problemi.
 
-|Problema|Causa|Risoluzione|
+|Problema|Causa|Soluzione|
 |---------|---------|--------------|
 |Impossibile analizzare i diritti generati dall'applicazione di input.|Lo strumento per la disposizione testo per app non è in grado di leggere il file dei diritti che è stato estratto dall'app. Il file dei diritti potrebbe non essere nel formato corretto.|Esaminare il file dei diritti per l'app. Le istruzioni seguenti spiegano come eseguire questa operazione. Quando si esamina il file dei diritti, verificare se sono presenti errori di sintassi. Il file deve essere in formato XML.|
 |I diritti non sono presenti nel profilo di provisioning (sono elencati i diritti mancanti). Ricreare il pacchetto dell'app con un profilo di provisioning a cui sono assegnati tali diritti.|I diritti abilitati nel profilo di provisioning e le funzionalità abilitate nell'app non corrispondono. Questa mancata corrispondenza vale anche per gli ID associati a particolari funzionalità, ad esempio gruppi di app, accesso al portachiavi e così via.|In genere è possibile creare un nuovo profilo di provisioning che abilita le stesse funzionalità dell'app. In caso di mancata corrispondenza tra gli ID del profilo e dell'app, lo strumento per la disposizione testo per app sostituirà gli ID, se è in grado di eseguire l'operazione. Se questo errore viene ancora visualizzato dopo aver creato un nuovo profilo di provisioning, è possibile provare a rimuovere i diritti dall'app usando il parametro -e (vedere la sezione Uso del parametro -e per rimuovere diritti da un'app).|
@@ -392,6 +392,18 @@ Quando si usa lo strumento di wrapping delle app, adottare le procedure consigli
 -   Le app iOS che includono una finestra di dialogo per il caricamento dei file possono consentire agli utenti di eludere le restrizioni per le operazioni taglia, copia e incolla applicate all'app. Ad esempio, un utente potrebbe usare la finestra di dialogo per il caricamento dei file per caricare una schermata dei dati dell'app.
 
 -   Quando si monitora la cartella dei documenti nel dispositivo dall'app di cui è stato eseguito il wrapping, potrebbe essere visualizzata una cartella denominata .msftintuneapplauncher. Se questo file viene modificato o eliminato, ciò potrebbe influire sul corretto funzionamento delle app con restrizioni.
+
+## <a name="getting-logs-for-your-wrapped-applications"></a>Recupero dei log per le applicazioni di cui è stato eseguito il wrapping
+Usare questa procedura per ottenere i log per le applicazioni di cui è stato eseguito il wrapping durante la risoluzione dei problemi.
+
+1. Passare all'app Impostazioni iOS nel dispositivo e selezionare l'app LOB.
+2. Impostare **Diagnostics Console** (Console diagnostica) su **On**.
+3. Avviare l'applicazione LOB.
+4. Fare clic sul collegamento "Get Started" (Per iniziare).
+5. È ora possibile condividere i log tramite posta elettronica o copiarli in un percorso di OneDrive.
+
+>[!NOTE]
+La funzionalità di registrazione è abilitata per le app di cui è stato eseguito il wrapping con la versione 7.1.13 dello strumento di wrapping delle app di Intune, o versione successiva.
 
 ### <a name="see-also"></a>Vedere anche
 - [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](apps-prepare-mobile-application-management.md)</br>

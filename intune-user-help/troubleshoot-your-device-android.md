@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/10/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: dd211b9dd8b09f2e3eab570eab48664fab55e3df
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: a83d938abbaefe35d028e50ed13c422b97bc3987
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Risolvere problemi comuni con il dispositivo Android
 
@@ -30,6 +30,7 @@ A volte possono verificarsi problemi con il dispositivo Android non risolvibili 
 - [Inviare i log al supporto tecnico dell'azienda usando la posta elettronica](send-logs-to-your-it-admin-by-email-android.md)
 - [Inviare i log al supporto tecnico dell'azienda usando un cavo USB](send-logs-to-your-it-admin-using-cable-android.md)
 - [Inviare gli errori di registrazione al supporto tecnico dell'azienda](send-enrollment-errors-to-your-it-admin-android.md)
+- [Inviare gli errori a Microsoft](send-logs-to-microsoft-android.md)
 - [È necessario aggiornare il dispositivo Android](you-need-to-update-your-android-device.md)
 - [Il dispositivo non è conforme alla versione massima del sistema operativo](your-android-version-isnt-yet-supported.md)
 - [Il dispositivo è rooted e non è possibile connettersi](your-device-is-rooted-and-you-cant-connect-android.md)
@@ -41,3 +42,4 @@ A volte possono verificarsi problemi con il dispositivo Android non risolvibili 
 - [Il dispositivo sembra essere crittografato, ma l'app Portale aziendale indica il contrario](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [Viene richiesto di installare un'app di protezione dalle minacce per il dispositivo nel dispositivo Android](you-are-prompted-to-install-mtd-android.md)
 - [È necessario risolvere una minaccia rilevata da un'app di protezione dalle minacce per il dispositivo nel dispositivo Android](you-need-to-resolve-a-threat-found-by-mtd-android.md)
+- [Correzione degli errori per i dispositivi Samsung Knox](samsung-knox-errors-android.md)

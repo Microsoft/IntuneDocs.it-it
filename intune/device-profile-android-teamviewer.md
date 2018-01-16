@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: 46e850cdda27444d18354b972d10b0cd02c036d9
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Offrire assistenza remota per dispositivi gestiti da Intune
 
@@ -32,7 +32,7 @@ Con Intune è possibile usare il software [TeamViewer](https://www.teamviewer.co
 I dispositivi Android e Windows gestiti da Intune supportano l'amministrazione remota.
 
 >[!NOTE]
->Windows Holographic (HoloLens), Windows Team (Surface Hub) e Windows 10 S non sono supportati dal software TeamViewer. 
+>Windows Holographic (HoloLens), Windows Team (Surface Hub) e Windows 10 S non sono supportati dal software TeamViewer. È comunque necessario gestire i dispositivi usando il [client PC](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json) nel portale classico di Intune.
 
 
 
@@ -50,7 +50,7 @@ Verificare che all'utente del portale di Azure siano assegnate le autorizzazioni
 Prima di poter offrire assistenza remota ai dispositivi, è necessario configurare TeamViewer Connector per Intune, eseguendo la procedura seguente:
 
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
 4. Nel pannello **Dispositivi e gruppi** scegliere **Installazione** > **TeamViewer Connector**.
@@ -61,7 +61,7 @@ Prima di poter offrire assistenza remota ai dispositivi, è necessario configura
 
 ## <a name="how-to-remotely-administer-a-device"></a>Come amministrare in remoto un dispositivo
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
 4. Nel pannello **Dispositivi** scegliere **Gestisci** > **Tutti i dispositivi**.
@@ -77,4 +77,3 @@ Al termine, chiudere la finestra di TeamViewer.
 ## <a name="next-steps"></a>Passaggi successivi
 
 Un utente finale vedrà un flag di notifica sull'icona dell'app Portale aziendale nel dispositivo e un'altra notifica all'apertura dell'app, quindi potrà accettare la richiesta di assistenza remota.
-

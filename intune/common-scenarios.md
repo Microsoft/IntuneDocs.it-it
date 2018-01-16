@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6cf2d958e5775281cca7878c54b2c9d9f593f509
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 485517f589649bdb805f94503df716b82de17b06
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-ways-to-use-intune"></a>Metodi comuni per l'uso di Intune
 
@@ -82,7 +82,7 @@ In qualità di amministratore, è possibile richiedere agli utenti di accedere a
 ## <a name="issue-corporate-owned-phones-to-your-employees"></a>Distribuire telefoni di proprietà dell'azienda ai dipendenti
 Oggi molti dipendenti lavorano in modo remoto, per cui i dispositivi mobili sono essenziali per la loro produttività. Questi dipendenti devono accedere senza problemi a tutte le applicazioni e ai dati aziendali in qualsiasi momento, ovunque si trovino. È necessario garantire che i dati aziendali siano protetti e che i costi amministrativi siano contenuti.  
 
-Intune offre [soluzioni per il provisioning e la gestione in blocco](device-enrollment.md) ([portale classico](/intune-classic/deploy-use/manage-corporate-owned-devices)) integrate con le principali piattaforme di gestione dei dispositivi aziendali presenti sul mercato, come il programma di registrazione del dispositivo mobile di Apple e la piattaforma di sicurezza mobile Samsung KNOX. La creazione centralizzata delle configurazioni dei dispositivi con Intune consente di trasformare il provisioning dei dispositivi aziendali in un processo estremamente automatizzato.  
+Intune offre [soluzioni per il provisioning e la gestione in blocco](device-enrollment.md) ([portale classico](/intune-classic/deploy-use/manage-corporate-owned-devices)) integrate con le principali piattaforme di gestione dei dispositivi aziendali presenti sul mercato, come il programma di registrazione dei dispositivi mobili di Apple (DEP) e la piattaforma di sicurezza mobile Samsung Knox. La creazione centralizzata delle configurazioni dei dispositivi con Intune consente di trasformare il provisioning dei dispositivi aziendali in un processo estremamente automatizzato.  
 
 Immaginiamo di dare a un dipendente un iPhone nuovo. Il dipendente accende il dispositivo e viene guidato attraverso una procedura di configurazione personalizzata per l'azienda in cui deve autenticarsi. iPhone è viene configurato in modo semplice con i [criteri di sicurezza](device-profiles.md) ([portale classico](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)).
 

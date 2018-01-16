@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 86f5b505923a709cd8f8ab4e2d91c6a891e2acc6
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3b1ccb3b0b7b2ce024ff6a09d7f9d8366896fb67
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Impostazioni personalizzate per dispositivi Android in Microsoft Intune
 
@@ -31,7 +31,7 @@ Questa funzionalità consente di assegnare le impostazioni Android seguenti che 
 
 - [Usare un profilo di dispositivo personalizzato di Microsoft Intune per la creazione di un profilo Wi-Fi con una chiave precondivisa](/intune/wi-fi-profile-shared-key)
 - [Usare un profilo personalizzato di Microsoft Intune per creare un profilo VPN per ogni app per dispositivi Android](/intune/android-pulse-secure-per-app-vpn)
-- [Usare criteri personalizzati per consentire e bloccare app per dispositivi Samsung KNOX Standard in Microsoft Intune](/intune/samsung-knox-apps-allow-block)
+- [Usare criteri personalizzati per consentire e bloccare app per dispositivi Samsung Knox Standard in Microsoft Intune](/intune/samsung-knox-apps-allow-block)
 
 >[!IMPORTANT]
 >Solo le impostazioni elencate in precedenza possono essere attualmente configurate da questo tipo di profilo. I dispositivi Android non espongono un elenco completo di impostazioni URI OMA configurabili. Se si vogliono visualizzare altre impostazioni aggiunte, richiederle sul [sito UserVoice di Intune](https://microsoftintune.uservoice.com/forums/291681-ideas).

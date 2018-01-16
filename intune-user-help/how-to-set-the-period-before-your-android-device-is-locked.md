@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c4813649092dd12b6be2c07b900d6c1af957bcb
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 13ad914f076f00d1a505510b726f84645ba22cc1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Come impostare l'intervallo di tempo prima del blocco dello schermo del dispositivo Android
 
 Per riconnettersi al lavoro, è necessario impostare il timeout della password nel dispositivo attenendosi alle istruzioni relative al tipo di dispositivo in uso.
 
-## <a name="native-non-samsung-knox-device"></a>Dispositivo nativo (non Samsung KNOX)
+## <a name="native-non-samsung-knox-device"></a>Dispositivo nativo (non Samsung Knox)
 
 1.  In **Settings** (Impostazioni) nel dispositivo toccare **Security** (Sicurezza) &gt; **Automatically Lock** (Blocco automatico), che in alcuni dispositivi corrisponde a **Lock phone after** (Blocca telefono dopo).
 
@@ -34,7 +34,7 @@ Per riconnettersi al lavoro, è necessario impostare il timeout della password n
 
 2.  Selezionare il valore di timeout della password.
 
-## <a name="samsung-knox-device"></a>Dispositivo Samsung KNOX
+## <a name="samsung-knox-device"></a>Dispositivo Samsung Knox
 
 1.  In **Settings** (Impostazioni) nel dispositivo toccare **Lock screen and security** (Schermata di blocco e sicurezza) &gt; **Lock automatically** (Blocca automaticamente).
 

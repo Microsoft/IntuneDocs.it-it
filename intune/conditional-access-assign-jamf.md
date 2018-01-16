@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,17 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
-ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
+ms.openlocfilehash: c72de87b87775155672994163140e342b7ba99b4
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Imporre la conformità nei computer Mac gestiti con Jamf Pro
 
 |Si applica a: Intune nel Portale di Azure |
 |--|
 |Serve documentazione su Intune nel portale classico? [Fare clic qui](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
-
-|Attualmente in anteprima privata|
-|--|
-|Le funzionalità descritte in questo argomento sono disponibili solo ai clienti attualmente registrati per l'anteprima privata. Questo messaggio verrò rimosso dopo il rilascio per tutti i clienti.|
 | |
 
 È possibile usare Azure Active Directory e i criteri di accesso condizionale di Microsoft Intune per verificare che gli utenti finali siano conformi ai requisiti dell'organizzazione. È possibile applicare questi criteri anche a computer Mac [gestiti con Jamf Pro](conditional-access-integrate-jamf.md). A questo scopo, è necessario l'accesso a entrambe le console di Intune e Jamf Pro.
@@ -48,7 +43,7 @@ ms.lasthandoff: 12/06/2017
 2. Aprire Jamf Pro e quindi passare a **Gestione computer** > **Pacchetti**.
 3. Creare un nuovo pacchetto con l'app Portale aziendale per macOS e quindi fare clic su **Salva**.
 4. Aprire **Computer** > **Criteri** e quindi selezionare **Nuovo**.
-5. Usare il payload **Generale** per configurare le impostazioni per i criteri. Specificare le impostazioni seguenti: 
+5. Usare il payload **Generale** per configurare le impostazioni per i criteri. Specificare le impostazioni seguenti:
    - Attivazione: selezionare **Enrollment Complete** (Completamento registrazione) e **Recurring Check-in** (Check in ricorrente)
    - Frequenza di esecuzione: selezionare **Once per computer** (Una volta per computer)
 6. Selezionare il payload **Pacchetti** e fare clic su **Configura**.
