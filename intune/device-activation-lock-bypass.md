@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/22/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3cd1c7d68cba09c3483cd346772e9791d66c490
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: f976bdcc900accc2955281685c11e33a732909f5
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Bypass del blocco attivazione su dispositivi iOS con supervisione con Intune
 
@@ -69,7 +69,7 @@ Prima di poter eseguire il bypass del blocco attivazione nei dispositivi, è nec
 
 L'azione remota del dispositivo di Intune **Bypass del blocco attivazione** consente di rimuovere il blocco attivazione dai dispositivi iOS senza richiedere Apple ID e password dell'utente. Se è stato eseguito il bypass del blocco attivazione, il dispositivo attiva nuovamente il blocco attivazione quando si avvia l'app Trova il mio iPhone. Eseguire il bypass del blocco attivazione solo se si ha accesso fisico al dispositivo.
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
 4. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.
