@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
-ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
+ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Rimuovere i dispositivi con il ripristino delle impostazioni predefinite o rimuovere i dati aziendali
 
@@ -77,7 +77,7 @@ Il comando **Rimuovi i dati aziendali** consente di rimuovere i dati delle app (
 
 ### <a name="android"></a>Android
 
-|Tipo di dati|Android|Android Samsung KNOX Standard|
+|Tipo di dati|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Collegamenti Web|Rimosso.|Rimosso.|
 |App Google Play non gestite|Le app e i dati rimangono installati.|Le app e i dati rimangono installati.|
@@ -89,7 +89,7 @@ Il comando **Rimuovi i dati aziendali** consente di rimuovere i dati delle app (
 |Impostazioni del profilo certificato|Certificati revocati, ma non rimossi.|Certificati rimossi e revocati.|
 |Agente di gestione|Il privilegio di amministratore del dispositivo viene revocato.|Il privilegio di amministratore del dispositivo viene revocato.|
 |Posta elettronica|n/a (i profili di posta elettronica non sono supportati dai dispositivi Android)|I profili di posta elettronica di cui viene eseguito il provisioning tramite Intune vengono rimossi e il messaggio di posta elettronica memorizzato nella cache del dispositivo viene eliminato.|
-|Outlook|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per Android vengono rimossi.|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per Android vengono rimossi.|
+|Outlook|Il messaggio di posta elettronica ricevuto dall'app di Microsoft Outlook per Android viene rimosso, ma solo se Outlook è protetto tramite i criteri MAM. In caso contrario, Outlook non è viene cancellato durante l'annullamento della registrazione.|Il messaggio di posta elettronica ricevuto dall'app di Microsoft Outlook per Android viene rimosso, ma solo se Outlook è protetto tramite i criteri MAM. In caso contrario, Outlook non è viene cancellato durante l'annullamento della registrazione.|
 |Separazione di Azure Active Directory (AD)|Il record di Azure AD viene rimosso.|Il record di Azure AD viene rimosso.|
 |Contatti | I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere rimossi. <br /> <br />Attualmente è supportata solo l'app Outlook.|I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi.  Tutti i contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere rimossi. <br /> <br />Attualmente è supportata solo l'app Outlook.
 

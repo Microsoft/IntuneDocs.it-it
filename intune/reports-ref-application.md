@@ -2,10 +2,10 @@
 title: Application | Microsoft Docs
 description: "Argomento di riferimento per la categoria Application delle raccolte di entità nell'API data warehouse di Intune."
 keywords: Data warehouse di Intune
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fd14c985b4cedcd0575b2b6ea29e7aa4d8bb2d4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6698ff8d333d386c1401f942b2bbd4a75d86943c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-application-entities"></a>Informazioni di riferimento per le entità della categoria Application
 
@@ -60,11 +60,11 @@ L'entità **AppTypes** elenca l'origine dell'installazione di un'app.
 |---------|------------|
 | AppTypeID |ID per il tipo |
 | AppTypeKey |Chiave surrogata per la chiave |
-| AppTypeName |Tipo di App |
+| AppTypeName |Tipo di app |
 
-## <a name="example"></a>Esempio
+### <a name="example"></a>Esempio
 
-| AppTypeID  | Nome | Descrizione |
+| AppTypeID  | Name | Descrizione |
 |---------|------------|--------|
 | 0 |App di Android Store | Un'app di Android Store. |
 | 1 |App di Android LOB | Un'app line-of-business Android. |
@@ -91,9 +91,9 @@ L'entità **VppProgramTypes** elenca i tipi di programma VPP possibili per un'ap
 | VppProgramTypeKey | Chiave surrogata per la chiave. |
 | VppProgramTypeName | Tipo di programma VPP. |
 
-## <a name="example"></a>Esempio
+### <a name="example"></a>Esempio
 
-| VppProgramID  | Nome | Descrizione |
+| VppProgramID  | Name | Descrizione |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Programma VPP Microsoft. |
 | 00000000-0000-0000-0000-000000000000 | Non ancora disponibile | Valore predefinito, nessun VPP. |
@@ -112,3 +112,26 @@ L'entità **ApplicationInventory** elenca le applicazioni trovate nel dispositiv
 | ApplicationName | Il nome dell'applicazione. |
 | ApplicationVersion | Versione dell'applicazione. |
 | BundleSize | Dimensione dell'app in byte. |
+
+## <a name="mobileappinstallstate"></a>MobileAppInstallState
+
+L'entità **MobileAppInstallState** rappresenta lo stato di installazione per un'applicazione per dispositivi mobili dopo l'assegnazione a un gruppo che contiene dispositivi, utenti o entrambi.
+
+| Proprietà | Descrizione |
+|---|---|
+| AppInstallStateKey | ID univoco dello stato di installazione dell'app per l'account. |
+| AppInstallState | Valore di enumerazione dello stato di installazione dell'app. |
+| AppInstallStateName | Nome dello stato di installazione dell'app. |
+
+## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
+
+**MobileAppDeviceUserInstallStatus** rappresenta lo stato di installazione di un'app per dispositivi mobili per un determinato dispositivo e utente.
+
+| Proprietà | Descrizione |
+|---|---|
+| DateKey | Chiave della data di registrazione dello stato di installazione dell'app. |
+| AppKey | Chiave dell'app per dispositivi mobili usata per identificare un'istanza di AppRevision. |
+| DeviceKey | Chiave di un dispositivo di destinazione usata per identificare un'istanza del dispositivo. |
+| UserKey | Chiave di un utente di destinazione usata per identificare un'istanza dell'utente. |
+|AppInstallStateKey | Chiave dello stato di installazione dell'app usata per identificare un'istanza di MobileAppInstallState. |
+| ErrorCode | Codice di errore restituito dal programma di installazione dell'app, dalla piattaforma per dispositivi mobili o dal servizio in merito all'installazione dell'app. |

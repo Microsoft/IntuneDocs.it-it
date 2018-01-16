@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 9650afefc8ba0ba782e95b28feaaf1aaceea8d7f
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurare Intune On-Premises Exchange Connector in Microsoft Intune in Azure
 
@@ -133,6 +133,13 @@ Dopo aver configurato la connessione in Exchange Connector, i dispositivi mobili
 
 > [!NOTE]
 > Se è stato installato On-Premises Exchange Connector e a un certo punto si elimina la connessione a Exchange, è necessario disinstallare On-Premises Exchange Connector dal computer in cui è stato installato.
+
+## <a name="on-premises-exchange-connector-high-availability-support"></a>Supporto a disponibilità elevata di Exchange Connector locale 
+Dopo che Exchange Connector crea una connessione a Exchange usando il CAS specificato, il connettore è in grado di individuare altri CAS. Se il CAS principale diventa non disponibile, il connettore eseguirà il failover a un altro CAS, se disponibile, fino a quando non diventa disponibile il CAS principale. Questa funzionalità è attivata per impostazione predefinita. È possibile disattivare questa funzionalità usando la procedura seguente:
+1. Nel server in cui è installato Exchange Connector, passare a %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
+2. Aprire **OnPremisesExchangeConnectorServiceConfiguration.xml** in un editor di testo.
+3. Modificare &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; in &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; per disabilitare la funzionalità.    
+
 
 ## <a name="monitor-the-exchange-connector-activity"></a>Monitorare l'attività di Exchange Connector
 

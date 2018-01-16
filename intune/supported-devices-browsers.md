@@ -2,10 +2,10 @@
 title: Dispositivi supportati in Microsoft Intune
 description: Questo articolo elenca le piattaforme di dispositivi e i browser supportati per la gestione dei dispositivi in Intune.
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b168cbf5282b4e016133d071c56c8abd54c2e23b
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="supported-devices-and-browsers"></a>Dispositivi e browser supportati
 
@@ -39,11 +39,14 @@ Prima di iniziare la configurazione di Microsoft Intune, esaminare i requisiti s
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
-### <a name="supported-samsung-knox-standard-devices"></a>Dispositivi Samsung KNOX Standard supportati
+### <a name="supported-samsung-knox-standard-devices"></a>Dispositivi Samsung Knox Standard supportati
 
-L'app Portale aziendale tenta l'attivazione Samsung KNOX durante la registrazione MDM solo se il dispositivo da attivare è presente nell'[elenco dei dispositivi KNOX supportati](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Ciò consente di evitare errori di attivazione KNOX che impediscono la registrazione MDM. I dispositivi che non supportano l'attivazione Samsung KNOX vengono registrati come dispositivi Android standard. Tra i dispositivi Samsung, non tutti hanno un numero di modello che supporta KNOX. Verificare la compatibilità KNOX presso il rivenditore del dispositivo prima dell'acquisto e della distribuzione di dispositivi Samsung.
+L'app Portale aziendale tenta l'attivazione di Samsung Knox durante la registrazione MDM solo se il dispositivo da attivare è presente nell'[elenco dei dispositivi Knox supportati](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Ciò consente di evitare errori di attivazione Knox che impediscono la registrazione MDM. I dispositivi che non supportano l'attivazione di Samsung Knox vengono registrati come dispositivi Android standard. Tra i dispositivi Samsung, non tutti hanno un numero di modello che supporta Knox. Verificare la compatibilità Knox presso il rivenditore del dispositivo prima dell'acquisto e della distribuzione di dispositivi Samsung.
 
-I modelli Samsung presenti nell'elenco seguente non supportano KNOX e vengono registrati come dispositivi Android nativi dall'app Portale aziendale per Android.
+> [!NOTE]
+> Per la registrazione dei dispositivi Samsung Knox potrebbe essere necessario [abilitare l'accesso ai server Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
+
+I modelli Samsung nell'elenco seguente non supportano Knox e vengono registrati come dispositivi Android nativi dall'app Portale aziendale per Android:
 
 | **Nome dispositivo** | **Numeri modello dispositivo** |
 | --- | --- |

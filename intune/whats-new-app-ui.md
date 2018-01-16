@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/11/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61306d1da81340ef2e922abdf944243eac8de219
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5f13aa8bbe5173bda34cdeeecda26d96f8e3aa83
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni su quali aggiornamenti sono stati apportati all'interfaccia utente per le app che gli utenti finali vedranno in questa versione di Microsoft Intune. Queste informazioni sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.
+
+## <a name="week-of-december-11-2017"></a>Settimana del 11 dicembre 2017
+
+### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Messaggi per gli utenti finali per gli account <!--1573558, 1712; changes to be made for other platforms for 1801-->
+
+Gli utenti del sito Web Portale aziendale non potranno eseguire azioni che richiedono l'accesso in scrittura al tenant. Verranno visualizzati messaggi di errore appropriati per spiegare che l'account di tali utenti è in manutenzione. È prevista a breve l'introduzione di modifiche simili per le app Portale aziendale per Android, iOS, macOS e Windows.
+
+![Messaggio di errore che si verifica durante lo spostamento di account](./media/account-move-rom-iwp-user-1712.png)
 
 ## <a name="week-of-november-27-2017"></a>Settimana del 27 novembre 2017
 
@@ -245,7 +253,7 @@ L'app Portale aziendale per Windows 10 avvierà ora automaticamente una sincroni
 ![Immagine dell'app Portale aziendale per Windows 10 con il nuovo stato di sincronizzazione automatica e un messaggio di stato indicante che la sincronizzazione del dispositivo e il download dell'app sono in corso.](./media/w10_download_pending_syncing_after_1706.png)
 
 ### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Nuova esperienza guidata per il portale aziendale di Windows 10 <!---1058938--->
-L'app Portale aziendale per Windows 10 includerà un'esperienza guidata di Intune per i dispositivi che non sono stati identificati o registrati. La nuova esperienza fornisce istruzioni dettagliate che guidano l'utente nella procedura di registrazione in Azure Active Directory (obbligatoria per le funzionalità di accesso condizionale) e di registrazione MDM (obbligatoria per le funzionalità di gestione dei dispositivi). L'esperienza guidata sarà accessibile dalla home page del portale aziendale. Gli utenti possono continuare a usare l'app anche se non completano la registrazione, ma avranno a disposizione funzionalità limitate.
+L'app Portale aziendale per Windows 10 includerà un'esperienza guidata di Intune per i dispositivi che non sono stati identificati o registrati. La nuova esperienza fornisce istruzioni dettagliate che guidano l'utente nella procedura di registrazione in Azure Active Directory (obbligatoria per le funzionalità di accesso condizionale) e di registrazione MDM (obbligatoria per le funzionalità di gestione dei dispositivi). L'esperienza guidata sarà accessibile dalla home page del portale aziendale. Gli utenti possono continuare a usare l'app se non completano la registrazione, ma le funzionalità saranno limitate.
 
 Questo aggiornamento è visibile solo nei dispositivi che eseguono l'Aggiornamento dell'anniversario di Windows 10 (build 1607) o versione successiva.
 
@@ -293,10 +301,10 @@ Managed Browser disporrà di icone aggiornate per le versioni Android e iOS dell
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_manbro_before_042017.png" alt="The previous version of the Managed Browser app icon." width=200 height=366 align=center>
+            <img src="/intune/media/cp_manbro_before_042017.png" alt="The previous version of the Managed Browser app icon." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_manbro_after_042017.png" alt="The updated version of the Managed Browser app icon." width=200 height=366 align=center>
+             <img src="/intune/media/cp_manbro_after_042017.png" alt="The updated version of the Managed Browser app icon." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -314,13 +322,13 @@ Un aggiornamento all'app Portale aziendale Android mostra un indicatore di stato
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -354,7 +362,7 @@ A partire da marzo, l'app Portale aziendale per Android seguirà le [linee guida
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width=200 height=366 align=center>
+            <img src="/intune/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width="200" height="366" align="center">
           </td>
       </tr>
    </table>

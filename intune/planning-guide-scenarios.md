@@ -14,11 +14,11 @@ ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 864f99f52e0c8b46307f1ec24d11da51d8f52662
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c77e2f9f46e61442261f65ddaa90877fc0063906
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificare gli scenari dei casi d'uso per la gestione di dispositivi mobili
 
@@ -74,7 +74,7 @@ A questo punto, è necessario identificare i gruppi dell'organizzazione che sono
 
 Il passaggio successivo è identificare le piattaforme per dispositivi mobili associate a ogni scenario dei casi d'uso. Possono essere più di una.
 
-Lo scenario relativo al caso d'uso aziendale può ad esempio supportare le piattaforme per dispositivi iOS e Android Samsung KNOX. I criteri BYOD possono includere il supporto per piattaforme per dispositivi mobili aggiuntive, come Android (non Samsung KNOX) e Windows 10 Mobile. Sulla base degli esempi precedenti, sono state associate le piattaforme per dispositivi mobili a ogni scenario dei casi d'uso.
+Lo scenario relativo al caso d'uso aziendale può ad esempio supportare le piattaforme per dispositivi iOS e Android Samsung Knox. I criteri BYOD possono includere il supporto per piattaforme per dispositivi mobili aggiuntive, come Android (non Samsung Knox) e Windows 10 Mobile. Sulla base degli esempi precedenti, sono state associate le piattaforme per dispositivi mobili a ogni scenario dei casi d'uso.
 
 | **Casi d'uso** | **Casi d'uso secondari** | **Gruppi** | **Piattaforme per i dispositivi** |   
 |:---:|:---:|:---:|:---:|

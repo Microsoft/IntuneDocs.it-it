@@ -3,8 +3,8 @@ title: Assegnare app a dispositivi Android for Work
 titlesuffix: Azure portal
 description: Usare questo argomento per sincronizzare e quindi assegnare app ai dispositivi Android for Work da Google Play for Work."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/13/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f873fa6324bab56ce8233a8a550e2d13fe2fb054
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Come assegnare app a dispositivi Android for Work con Intune
 
@@ -62,7 +62,7 @@ Per altre informazioni su come caricare e pubblicare app Android, vedere la [Gui
 
 Se è stata approvata un'app dallo store e l'app non è ancora visualizzata nel nodo **App con licenza** del carico di lavoro **App per dispositivi mobili**, forzare una sincronizzazione immediata in questo modo:
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
 3. Nel carico di lavoro **App per dispositivi mobili** scegliere **Installazione** > **Android for Work**.
 4. Nel pannello Android for Work scegliere **Sincronizza**.

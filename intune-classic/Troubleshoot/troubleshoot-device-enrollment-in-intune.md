@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ec41724eacc4abca994b1dadff6e6d9df63c74d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Intune
 
@@ -37,6 +37,12 @@ Prima di iniziare la risoluzione dei problemi, verificare di aver configurato In
 -   [Configurare la gestione dei dispositivi Windows](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -   [Configurare la gestione dei dispositivi Android](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - Non sono necessari passaggi aggiuntivi
 -   [Configurare la gestione dei dispositivi Android for Work](/intune-classic/deploy-use/set-up-android-for-work)
+
+È anche possibile assicurarsi che la data e l'ora nel dispositivo dell'utente siano impostate correttamente:
+
+1. Riavviare il dispositivo.
+2. Assicurarsi che la data e l'ora siano impostate su standard GMT (+ o - 12 ore) rispetto al fuso orario dell'utente finale.
+3. Disinstallare e reinstallare il portale aziendale di Intune (se applicabile).
 
 Gli utenti dei dispositivi gestiti possono raccogliere log di registrazione e diagnostica da sottoporre all'analisi dell'amministratore. Le istruzioni per raccogliere i log sono disponibili nell'articolo:
 
@@ -157,7 +163,7 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 
 La tabella seguente elenca gli errori che potrebbero verificarsi quando gli utenti finali registrano i dispositivi Android in Intune.
 
-|Messaggio di errore|Problema|Risoluzione|
+|Messaggio di errore|Problema|Soluzione|
 |---|---|---|
 |**L'amministratore IT deve assegnare la licenza per l'accesso**<br>L'amministratore IT non ha concesso l'accesso per l'uso di questa app. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|Il dispositivo non può essere registrato perché l'account dell'utente non ha la licenza necessaria.|Per poter registrare i dispositivi, è necessario che agli utenti venga assegnata la licenza necessaria. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili designata. Questo errore di Intune viene visualizzato, ad esempio, se Intune è stato designato come autorità di gestione dei dispositivi mobili e l'utente usa una licenza per System Center 2012 R2 Configuration Manager.<br><br>Vedere le informazioni su come [assegnare le licenze di Intune agli account utente](/intune/licenses-assign.md).
 |**L'amministratore IT deve impostare l'autorità MDM**<br>L'amministratore IT non ha impostato un'autorità MDM. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|L'autorità di gestione dei dispositivi mobili non è stata definita.|L'autorità di gestione dei dispositivi mobili non è stata designata in Intune. Vedere le informazioni su come [impostare l'autorità di gestione dei dispositivi mobili](/intune/mdm-authority-set.md).|
@@ -229,27 +235,29 @@ Se la soluzione 2 non funziona, chiedere agli utenti di eseguire questa procedur
 
 **Soluzione 1**:
 
-Chiedere agli utenti di seguire le istruzioni in [Manca un certificato necessario per il dispositivo](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se l'errore si ripete dopo che gli utenti seguono le istruzioni, provare la soluzione 2.
+L'utente potrebbe essere in grado di recuperare il certificato mancante seguendo le istruzioni in [Manca un certificato necessario per il dispositivo](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se l'errore persiste, provare la soluzione 2.
 
 **Soluzione 2**:
 
-Se gli utenti vedono ancora l'errore di certificato mancante dopo aver immesso le credenziali aziendali ed essere stati reindirizzati all'esperienza di accesso federato, potrebbe mancare un certificato intermedio nel server Active Directory Federation Services (ADFS).
+Se gli utenti vedono ancora l'errore di certificato mancante dopo aver immesso le credenziali aziendali ed essere stati reindirizzati per l'accesso federato, potrebbe mancare un certificato intermedio nel server Active Directory Federation Services (ADFS).
 
-L'errore di certificato si verifica perché i dispositivi Android richiedono l'inclusione dei certificati intermedi in un [messaggio hello del Server SSL](https://technet.microsoft.com/library/cc783349.aspx), ma attualmente l'installazione predefinita di un server ADFS o del server proxy ADFS invia solo il certificato SSL del servizio ADFS nella risposta hello del server SSL a un messaggio hello del client SSL.
+L'errore di certificato si verifica perché i dispositivi Android richiedono certificati intermedi da includere in un [messaggio Hello del server SSL](https://technet.microsoft.com/library/cc783349.aspx). Attualmente, un'installazione predefinita con server AD FS o server proxy WAP - AD FS invia solo il certificato SSL del servizio AD FS nella risposta Hello del server SSL a un messaggio Hello del client SSL.
 
 Per risolvere il problema, importare i certificati nei certificati personali del computer sul server ADFS o proxy, come indicato di seguito:
 
-1.  Nei server ADFS e proxy, avviare la console Gestione certificati per il computer locale facendo clic con il pulsante destro del mouse **Start** scegliendo **Esegui** e digitando **certlm.msc**.
-2.  Espandere **Personale** e selezionare **Certificati**.
+1.  Nei server AD FS e proxy fare doppio clic su **Start** > **Esegui** > **certlm.msc**. Verrà avviata la console Gestione certificati del computer locale.
+2.  Espandere **Personale** e scegliere **Certificati**.
 3.  Cercare il certificato per la comunicazione del servizio ADFS (un certificato firmato pubblicamente) e fare doppio clic per visualizzare le relative proprietà.
-4.  Selezionare la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
-5.  Per ogni certificato padre, selezionare **Visualizza certificato**.
-6.  Selezionare la scheda **Dettagli** e fare clic su **Copia su file...**.
-7.  Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato nel percorso file desiderato.
-8.  Importare i certificati padre che erano stati esportati al passaggio 3 in Computer locale\Personale\Certificati facendo clic su **Certificati**, selezionando **Tutte le attività** > **Importa** e quindi seguire la procedura guidata per importare il certificato (o i certificati).
-9.  Riavviare i server ADFS.
-10. Ripetere i passaggi precedenti in tutti i server ADFS e proxy.
-L'utente può ora accedere al Portale aziendale nel dispositivo Android.
+4.  Scegliere la scheda **Percorso certificazione** per visualizzare il o i certificati padre del certificato.
+5.  Per ogni certificato padre, scegliere **Visualizza certificato**.
+6.  Nella scheda **Dettagli** scegliere **Copia su file**.
+7.  Seguire le istruzioni della procedura guidata per esportare o salvare la chiave pubblica del certificato padre nel percorso file desiderato.
+8.  Fare clic con il pulsante destro del mouse su **Certificati** > **Tutte le attività** > **Importa**.
+9.  Seguire le indicazioni della procedura guidata per importare i certificati padre in **Computer locale\Personale\Certificati**.
+10. Riavviare i server ADFS.
+11. Ripetere i passaggi precedenti in tutti i server ADFS e proxy.
+
+Per verificare che l'installazione del certificato sia corretta, è possibile usare lo strumento di diagnostica disponibile in [https://www.digicert.com/help/](https://www.digicert.com/help/). Nella casella **Indirizzo server** immettere il nome di dominio completo del server AD FS (ad esempio: sts.contso.com) e fare clic su **Controllo server**.
 
 **Per convalidare la corretta installazione del certificato**:
 
@@ -266,7 +274,7 @@ Se il certificato del server è installato correttamente, nei risultati vengono 
 ### <a name="ios-enrollment-errors"></a>Errori di registrazione per iOS
 La tabella seguente elenca gli errori che potrebbero verificarsi quando gli utenti finali registrano i dispositivi iOS in Intune.
 
-|Messaggio di errore|Problema|Risoluzione|
+|Messaggio di errore|Problema|Soluzione|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|Non sono stati trovati criteri di registrazione|Verificare che siano stati configurati tutti i prerequisiti di registrazione, ad esempio il certificato APNS (Apple Push Notification Service), e che sia abilitato "iOS come piattaforma". Per le istruzioni, vedere [Configurare la gestione dei dispositivi iOS e Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceCapReached|Sono già stati registrati troppi dispositivi mobili.|L'utente deve rimuovere dal Portale aziendale uno dei dispositivi mobili attualmente registrati prima di poterne registrare un altro. Vedere le istruzioni relative al tipo di dispositivo in uso: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios) o [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
@@ -374,7 +382,7 @@ Nella sezione relativa agli [errori che si verificano durante la registrazione d
 ## <a name="pc-issues"></a>Problemi relativi al PC
 
 
-|Messaggio di errore|Problema|Risoluzione|
+|Messaggio di errore|Problema|Soluzione|
 |---|---|---|
 |**L'amministratore IT deve assegnare la licenza per l'accesso**<br>L'amministratore IT non ha concesso l'accesso per l'uso di questa app. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|Il dispositivo non può essere registrato perché l'account dell'utente non ha la licenza necessaria.|Per poter registrare i dispositivi, è necessario che agli utenti venga assegnata la licenza necessaria. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili designata. Questo errore di Intune viene visualizzato, ad esempio, se Intune è stato designato come autorità di gestione dei dispositivi mobili e l'utente usa una licenza per System Center 2012 R2 Configuration Manager.<br>Vedere le informazioni su [come assegnare le licenze di Intune agli account utente](https://docs.microsoft.com/intune/licenses-assign).|
 

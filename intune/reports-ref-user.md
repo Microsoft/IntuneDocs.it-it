@@ -2,10 +2,10 @@
 title: User nel data warehouse di Intune | Microsoft Docs
 description: "Argomento di riferimento per la categoria User delle raccolte di entità nell'API data warehouse di Intune."
 keywords: Data warehouse di Intune
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,21 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2d81d17bc9489900f9d17101db1f1496ba8d55e9
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: 917c9585ffe17f9d090c519f716d284aa1b932b8
+ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="reference-for-user-entity"></a>Informazioni di riferimento per l'entità User
 
-La categoria **User** contiene l'entità **User** che definire le proprietà utente e agente nel modello di dati.
+La categoria **User** contiene l'entità **User** che definisce le proprietà utente nel modello di dati.
 
 ## <a name="user"></a>Utente
 
 L'entità **User** elenca tutti gli utenti di Azure Active Directory (Azure AD) con licenze assegnate nell'organizzazione.
 
-La raccolta di entità **User** contiene i dati dell'ultimo mese. In questi record sono inclusi gli stati utente registrati nel periodo di raccolta dei dati, anche se l'utente è stato rimosso. Nel corso dell'ultimo mese, ad esempio, è possibile che un utente sia stato aggiunto e rimosso da Intune. Pertanto, se anche l'utente non è presente al momento del report, l'utente e lo stato sono comunque presenti nei dati del mese precedente. In questo caso, è possibile creare un report che mostri la durata della presenza storica dell'utente nei dati.
+La raccolta di entità **User** contiene i dati utente. In questi record sono inclusi gli stati utente registrati nel periodo di raccolta dei dati, anche se l'utente è stato rimosso. Nel corso dell'ultimo mese, ad esempio, è possibile che un utente sia stato aggiunto e rimosso da Intune. Pertanto, se anche l'utente non è presente al momento del report, l'utente e lo stato sono comunque presenti nei dati del mese precedente. In questo caso, è possibile creare un report che mostri la durata della presenza storica dell'utente nei dati.
 
 | Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
@@ -45,5 +45,5 @@ La raccolta di entità **User** contiene i dati dell'ultimo mese. In questi reco
 | RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica del record nel data warehouse  |23/11/2016 12.00.00 |
 
 ## <a name="next-steps"></a>Passaggi successivi
- - È possibile usare la raccolta di entità **Current User** per limitare i dati agli utenti attualmente attivi. Per altre informazioni, vedere [Informazioni di riferimento per l'entità Current User](reports-ref-current-user.md). 
+ - È possibile usare la raccolta di entità **Current User** per limitare i dati agli utenti attualmente attivi. Per altre informazioni, vedere [Informazioni di riferimento per l'entità Current User](reports-ref-current-user.md).
  - Per altre informazioni su come il data warehouse controlla la durata di un utente in Intune, vedere [Rappresentazione della durata degli utenti nel data warehouse di Intune](reports-ref-user-timeline.md).

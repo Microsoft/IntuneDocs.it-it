@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0d1c1d7e4121bfdabf121b62f0ac8e1af2bca20a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15f549970494174d4f0764472f313f93b11f32a2
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Registrare i dispositivi iOS di proprietà dell'azienda in Microsoft Intune
 
@@ -73,7 +73,7 @@ L'affinità utente è necessaria per supportare quanto segue:
 
   Se il dispositivo non è registrato dall'azienda, è necessario selezionare **nuovo dispositivo** per continuare con il flusso di registrazione standard.
 
-6. Nella schermata successiva l'utente deve confermare il numero di serie del nuovo dispositivo. L'utente può toccare il collegamento **confermare il numero di serie** per avviare l'app Impostazioni e verificare il numero di serie. Deve quindi immettere gli ultimi quattro caratteri del numero di serie nell'app del portale aziendale.
+6. Nella schermata successiva l'utente deve confermare il numero di serie del nuovo dispositivo. L'utente può toccare il collegamento **confermare il numero di serie** per avviare le istruzioni per l'uso dell'app Impostazioni per verificare il numero di serie. Deve quindi immettere gli ultimi quattro caratteri del numero di serie nell'app del portale aziendale.
 
   Questo passaggio verifica che il dispositivo sia il dispositivo aziendale registrato in Intune. Se il numero di serie sul dispositivo non corrisponde, è stato selezionato il dispositivo errato. L'utente deve tornare alla schermata precedente e selezionare un dispositivo diverso.
 

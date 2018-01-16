@@ -3,8 +3,8 @@ title: Registrazione in blocco per Windows 10
 titlesuffix: Azure portal
 description: Creare un pacchetto di registrazione in blocco per Microsoft Intune
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: Erikje
+ms.author: erikje
 manager: angrobe
 ms.date: 10/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 7738935675595bbdd3ba1f6411a78a2646894073
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: f24bf5f8767763c3ca56d51127ab1d3f484e51d8
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registrazione in blocco per dispositivi Windows
 
@@ -29,8 +29,6 @@ L'amministratore può aggiungere un numero elevato di nuovi dispositivi Windows 
 Gli utenti di Azure AD sono utenti standard di questi dispositivi e devono conformarsi a criteri di Intune assegnati e applicazioni obbligatorie. Al momento non sono supportati scenari self-service o con il portale aziendale.
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Prerequisiti per la registrazione in blocco di dispositivi Windows
-
-Per la registrazione in blocco per dispositivi Windows, è necessario quanto segue:
 
 - Dispositivi che eseguano Windows 10 Creators Update o versione successiva
 - [Registrazione automatica di Windows](windows-enroll.md#enable-windows-10-automatic-enrollment)
@@ -43,15 +41,15 @@ Per la registrazione in blocco per dispositivi Windows, è necessario quanto seg
 2. Aprire l'**Applicazione immagine e configurazione di Windows** e selezionare **Provision desktop devices** (Esegui provisioning dispositivi desktop).
 ![Schermata della selezione del provisioning dei dispositivi desktop nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-select.png)
 
-3. Si apre la finestra **New project** (Nuovo progetto) dove è necessario specificare quanto segue:
+3. Si apre la finestra **Nuovo progetto** in cui è necessario specificare le informazioni seguenti:
   - **Name** (Nome): il nome del progetto
-  - **Project folder** (Cartella progetto): la cartella in cui verrà salvato il progetto
+  - **Cartella di progetto**: percorso di salvataggio per il progetto
   - **Description** (Descrizione): una descrizione facoltativa del progetto ![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-name.png)
 
 4.  Specificare un nome univoco per i dispositivi. I nomi possono includere un numero di serie (%%NUMERO DI SERIE%%) o un set di caratteri casuali. Facoltativamente, è anche possibile immettere un codice Product Key, se si vuole aggiornare l'edizione di Windows, configurare il dispositivo per la condivisione e rimuovere software pre-installato.
 ![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-device.png)
 
-5.  Facoltativamente, è possibile configurare la rete Wi-Fi alla quale i dispositivi si connettono quando vengono avviati per la prima volta.  Se questa non viene configurata, quando il dispositivo viene avviato per la prima volta è necessaria una connessione di rete cablata.
+5.  Facoltativamente, è possibile configurare la rete Wi-Fi alla quale i dispositivi si connettono quando vengono avviati per la prima volta.  Se i dispositivi di rete non sono configurati, quando il dispositivo viene avviato per la prima volta è necessaria una connessione di rete cablata.
 ![Schermata di abilitazione Wi-Fi inclusi SSID di rete e opzioni del tipo di rete nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-network.png)
 
 6.  Selezionare **Enroll in Azure AD** (Registra in Azure AD), immettere una data per **Bulk Token Expiry** (Scadenza token in blocco) e selezionare **Get Bulk Token** (Ottieni token in blocco).
@@ -77,7 +75,7 @@ Per la registrazione in blocco per dispositivi Windows, è necessario quanto seg
 
  Per istruzioni dettagliate sull'applicazione di un pacchetto di provisioning, vedere [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package) (Applicare un pacchetto di provisioning).
 
-3. Dopo aver applicato il pacchetto, il dispositivo verrà riavviato automaticamente in 1 minuto.
+3. Dopo aver applicato il pacchetto, il dispositivo verrà riavviato automaticamente in un minuto.
  ![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-add.png)
 
 4. Al riavvio del dispositivo, questo si connette ad Azure Active Directory e viene registrato in Microsoft Intune.
@@ -88,7 +86,7 @@ Per la registrazione in blocco per dispositivi Windows, è necessario quanto seg
 Il provisioning deve essere usato su nuovi dispositivi Windows. Gli errori di provisioning potrebbero richiedere un ripristino delle impostazioni predefinite del dispositivo o il ripristino dall'immagine di avvio. Gli esempi seguenti descrivono alcuni dei motivi per cui si verificano errori di provisioning:
 
 - Un pacchetto di provisioning che tenta di aggiungere un dominio di Active Directory o un tenant di Azure Active Directory che non crea un account locale potrebbe rendere il dispositivo non raggiungibile, se il processo di aggiunta al dominio ha esito negativo a causa della mancanza di connettività di rete.
-- Gli script eseguiti dal pacchetto di provisioning vengono eseguiti nel contesto di sistema e possono apportare modifiche arbitrarie al file system e alle configurazioni del dispositivo. Uno script dannoso o errato potrebbe compromettere lo stato del dispositivo al punto che questo possa essere ripristinato solo recuperandone l'immagine o ripristinandone le impostazioni predefinite.
+- Gli script eseguiti dal pacchetto di provisioning vengono eseguiti nel contesto del sistema. Gli script possono apportare modifiche arbitrarie al file system e alle configurazioni del dispositivo. Uno script dannoso o errato potrebbe compromettere lo stato del dispositivo al punto che questo possa essere ripristinato solo recuperandone l'immagine o ripristinandone le impostazioni predefinite.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemi della registrazione in blocco e del portale aziendale
 Se un utente tenta di registrare tramite il portale aziendale un dispositivo registrato in precedenza con una registrazione in blocco, un messaggio di avviso comunica che per il dispositivo sono necessarie altre azioni, ovvero la configurazione o la registrazione. Il dispositivo è registrato, ma la registrazione non viene riconosciuta dall'app del portale aziendale o dal sito Web.

@@ -6,7 +6,7 @@ keywords:
 author: dagerrit
 ms.author: dagerrit
 manager: angrobe
-ms.date: 03/31/2017
+ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
-ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
+ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
+ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Dove si trovano le funzionalità di Intune in Azure?
-Con lo spostamento di Intune nel portale di Azure, alcune attività sono state riorganizzate in modo più logico. Ma ogni ottimizzazione implica la necessità di abituarsi a una nuova organizzazione. È stata quindi realizzata questa Guida di riferimento, pensata espressamente per chi conosce già Intune nel portale classico e vuole imparare a usarlo nel portale di Azure. Se questo articolo non fornisce informazioni su una funzionalità specifica, lasciare un commento alla fine dell'articolo in modo da poterlo aggiornare.
+Con lo spostamento di Intune nel portale di Azure, alcune attività sono state riorganizzate in modo più logico. Ma ogni ottimizzazione implica la necessità di abituarsi a una nuova organizzazione. È stata quindi realizzata questa Guida di riferimento, pensata espressamente per chi conosce già Intune nel portale classico e vuole imparare a usarlo nel portale di Azure. Se questo articolo non fornisce informazioni su una funzionalità specifica, lasciare un commento alla fine dell'articolo in modo che possa essere aggiornato.
 ## <a name="quick-reference-guide"></a>Guida di riferimento rapido
 |Funzionalità |Percorso nel portale classico|Percorso in Intune nel portale di Azure|
 |------------|---------------|---------------|
@@ -36,6 +36,7 @@ Con lo spostamento di Intune nel portale di Azure, alcune attività sono state r
 | Profilo di registrazione di dispositivo aziendale | Criteri > 	Pre-Approved	Registrazione di dispositivi aziendali | [Registrazione del dispositivo > Registrazione Apple > Profili AC](#where-did-corporate-pre-enrolled-devices-go) |
 | Android for Work | Amministrazione > Gestione dispositivi mobili > Android for Work | Registrazione del dispositivo > Registrazione di Android for Work |
 | Termini e condizioni | Criteri > Termini e condizioni | Registrazione del dispositivo > Termini e condizioni |
+Impostazioni del portale aziendale|Amministrazione > Portale aziendale|**Gestisci** > App per dispositivi mobili<br> **Installazione** > Personalizzazione del portale aziendale
 
 
 ## <a name="where-do-i-manage-groups"></a>Dove si gestiscono i gruppi?
@@ -62,7 +63,7 @@ La possibilità di consentire o bloccare i dispositivi personali è ora gestita 
 
 ![Immagine delle impostazioni di blocco dei dispositivi personali in Azure](./media/05-azure-personal-block.png)
 
-Nuove funzionalità di restrizione verranno aggiunte solo al portale di Azure.
+Nuove funzionalità di restrizione vengono aggiunte solo al portale di Azure.
 
 ## <a name="where-did-apple-dep-go"></a>Dove si trova il servizio Apple DEP?
 Nel portale classico è possibile impostare Intune in modo da integrarsi con Apple Device Enrollment Program e richiedere manualmente la sincronizzazione con il servizio Apple:
@@ -73,7 +74,7 @@ Nel portale di Azure Apple Device Enrollment Program viene impostato allo stesso
 
 ![Immagine del token DEP in Azure](./media/07-azure-dep-token.png)
 
-L'opzione **Sincronizza** nel portale classico è stata tuttavia spostata nel flusso di lavoro di gestione dei numeri di serie, dal momento che i risultati di una sincronizzazione manuale verranno visualizzati in quella finestra:
+L'opzione **Sincronizza** nel portale classico è stata tuttavia spostata nel flusso di lavoro di gestione dei numeri di serie, dal momento che i risultati di una sincronizzazione manuale vengono visualizzati in quella finestra:
 
 ![Immagine della sincronizzazione DEP in Azure](./media/08-azure-dep-sync.png)
 
@@ -97,7 +98,7 @@ Nel portale classico è possibile pre-elencare i numeri IMEI dei dispositivi per
 
 ![Immagine dell'elenco dei numeri IMEI nella console classica](./media/12-classic-corp-imei.png)
 
-Nel portale di Azure è necessario caricare lo stesso IMEI nell'elenco Identificatori dei dispositivi aziendali con un file di valori separati da virgole (CSV). Il nuovo portale non supporterà l'immissione manuale di numeri IMEI:
+Nel portale di Azure è necessario caricare lo stesso IMEI nell'elenco Identificatori dei dispositivi aziendali con un file di valori separati da virgole (CSV). Il nuovo portale non supporta l'immissione manuale di numeri IMEI:
 
 ![Immagine dell'elenco dei numeri IMEI in Azure](./media/13-azure-corp-imei.png)
 
