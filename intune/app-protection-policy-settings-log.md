@@ -15,19 +15,19 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b281a6b618e945750b5d5dec278e4ddc6166276
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 8eb231a225a642e4ccdd538f307442921633ddaf
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="review-app-protection-logs-in-the-managed-browser"></a>Esaminare i log di protezione delle app nel Managed Browser
+# <a name="review-client-app-protection-logs"></a>Esaminare i log di protezione delle app client
 
 È possibile accedere ai log abilitando la modalità di diagnostica di Intune per un'app presente in un client per dispositivi mobili. La tabella seguente contiene il nome e una spiegazione delle impostazioni registrate nel log.
 
 ## <a name="app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app
 
-| Nome                        | Valori possibili                                                                                                                                                                                                                                                                                           | Impostazione nel portale Gestione di applicazioni mobili di Azure Intune                                                                                                                            |
+| Name                        | Valori possibili                                                                                                                                                                                                                                                                                           | Impostazione nel portale Gestione di applicazioni mobili di Azure Intune                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x minuti                                                                                                                                                                                                                                                                                                   | [Accesso] Controlla di nuovo i requisiti di accesso - Periodo di prova offline<br>Nota: è il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app se il dispositivo è offline.             |
 | AccessRecheckOnlineTimeout  | _x_ minuti                                                                                                                                                                                                                                                                                                   | [Accesso] Controlla di nuovo i requisiti di accesso - Timeout.<br>Nota: è il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app dopo l'avvio se il dispositivo è online. |
