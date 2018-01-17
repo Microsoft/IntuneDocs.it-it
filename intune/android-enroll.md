@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 12/07/2017
+ms.date: 01/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad018bdfa55b030f5d714017ae09f616ae2bf164
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 7877d0bb6ba7a9c9d51cd261a7f1fbf555f88961
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="enroll-android-devices"></a>Registrare dispositivi Android
 
@@ -75,7 +75,7 @@ Se non è stato ancora fatto, preparare la gestione dei dispositivi mobili [impo
 
 Seguire questa procedura per approvare l'app Portale aziendale Intune:
 
-1.  Scaricare l'app Portale aziendale dalla [versione gestita di Google Play Store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  Passare all'app Portale aziendale Intune nella [versione gestita di Google Play Store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Accedere alla versione gestita di Google Play Store con lo stesso account di Google usato per configurare l'associazione per Android for Work.
 3.  Fare clic su **Approva**.  Verrà aperta una nuova finestra di dialogo.
 4.  Controllare le autorizzazioni in questa finestra di dialogo e quindi fare clic su **Approva**. Questa operazione è necessaria per consentire queste autorizzazioni allo scopo di consentire all'app Portale aziendale di gestire il profilo di lavoro nel dispositivo.

@@ -5,7 +5,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54b8a14c01e0a08e76843b02f00124117617540d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurare l'infrastruttura di certificazione per SCEP
 
@@ -66,7 +66,7 @@ Dalla rete perimetrale a una rete attendibile, aprire tutte le porte e consentir
 
 ### <a name="BKMK_Accounts"></a>Account
 
-|Nome|Dettagli|
+|Name|Dettagli|
 |--------|-----------|
 |**Account di servizio NDES**|Specificare un account utente di dominio da usare come account del servizio NDES.|
 
@@ -338,6 +338,9 @@ Scaricare, installare e configurare Connettore di certificati nel server NDES.
 5.  Nell'interfaccia utente di **Connettore di certificati** :
 
     Fare clic su **Accedi** e immettere le credenziali di amministratore del servizio di Intune oppure le credenziali di amministratore tenant con autorizzazioni di amministrazione globali.
+
+    > [!NOTE]
+    > Se viene visualizzato l'errore **Nome utente non riconosciuto** quando si accede a NDESConnectorUI.exe, in genere significa che è stato utilizzato un account che non dispone di una licenza di Intune valida. Assegnare all'account una licenza Intune o EMS e ripetere l'operazione.
 
     Se l'organizzazione usa un server proxy e il proxy è necessario al server NDES per accedere a Internet, fare clic su **Usa server proxy**, quindi specificare il nome del server proxy, la porta e le credenziali dell'account per la connessione.
 
