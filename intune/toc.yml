@@ -654,11 +654,11 @@
               href: reports-ref-user-device.md
             - name: Informazioni di riferimento per l'entità User
               href: reports-ref-user.md
-    - name: API Graph di Intune
+    - name: Usare Azure AD per accedere alle API di Intune in Microsoft Graph
       href: intune-graph-apis.md
       items:
-        - name: Informazioni di riferimento sulle API Graph per Intune
-          href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: Informazioni di riferimento sulle API di Intune
+          href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: Risorse
   items:
     - name: glossario
