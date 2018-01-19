@@ -5,20 +5,20 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/10/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 031ae18fb88a04cd02ca3ced5c39a33e49610bef
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 942e7ceb8d42240c46387889677cb4620a9da103
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guida per gli sviluppatori di Microsoft Intune App SDK per iOS
 
@@ -29,9 +29,9 @@ Microsoft Intune App SDK per iOS consente di integrare i criteri di protezione d
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* È necessario un computer Mac OS che esegue OS X 10.8.5 o versioni successive e include Xcode 8 o versioni successive.
+* È necessario un computer Mac OS che esegua OS X 10.8.5 o versione successiva e in cui sia installato Xcode 9 o versione successiva.
 
-* L'app deve essere destinata a iOS 9 o versioni successive.
+* L'app deve essere destinata a iOS 9.3.5 o versione successiva.
 
 * Rivedere le [Condizioni di licenza di Intune App SDK per iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Stampare e conservare una copia delle condizioni di licenza. Scaricando e usando Intune App SDK per iOS, l'utente accetta tali condizioni di licenza.  Se non vengono accettate, non usare il software.
 
@@ -208,7 +208,7 @@ Se l'app non usa ADAL, Intune App SDK specifica i valori predefiniti per i param
 ## <a name="receiving-app-protection-policy"></a>Ricezione dei criteri di protezione delle app
 
 ### <a name="overview"></a>Panoramica
-Per ricevere i criteri di protezione delle app di Intune, le app devono avviare una richiesta di registrazione nel servizio Intune. Le app possono essere configurate nella console di Intune per ricevere i criteri di protezione delle app con o senza registrazione del dispositivo. I criteri di protezione delle app senza registrazione, noti anche come **APP-WE** o MAM-WE, consentono la gestione delle app in Intune senza richiedere la registrazione del dispositivo nella gestione dei dispositivi mobili (MDM) di Intune. In entrambi i casi, la registrazione nel servizio Intune è obbligatoria per ricevere i criteri.
+Per ricevere i criteri di protezione delle app di Intune, le app devono avviare una richiesta di registrazione nel servizio MAM di Intune. Le app possono essere configurate nella console di Intune per ricevere i criteri di protezione delle app con o senza registrazione del dispositivo. I criteri di protezione delle app senza registrazione, noti anche come **APP-WE** o MAM-WE, consentono la gestione delle app in Intune senza richiedere la registrazione del dispositivo nella gestione dei dispositivi mobili (MDM) di Intune. In entrambi i casi, la registrazione nel servizio MAM di Intune è obbligatoria per ricevere i criteri.
 
 ### <a name="apps-that-use-adal"></a>App che usano ADAL
 
@@ -235,7 +235,7 @@ Dopo aver richiamato l'API, l'app può continuare a funzionare normalmente. Se l
 
 ### <a name="apps-that-do-not-use-adal"></a>App che non usano ADAL
 
-Le app che non eseguono l'accesso dell'utente con ADAL possono comunque ricevere criteri di protezione delle app dal servizio Intune chiamando l'API per consentire all'SDK di gestire l'autenticazione. Le app devono usare questa tecnica quando l'utente non è stato autenticato con Azure AD, ma è comunque necessario recuperare i criteri di protezione delle app per proteggere i dati. Ad esempio, viene applicata quando viene usato un altro servizio di autenticazione per l'accesso dell'app o se l'app non supporta l'accesso. A tale scopo, l'applicazione deve chiamare il metodo `loginAndEnrollAccount` sull'istanza `IntuneMAMEnrollmentManager`:
+Le app che non eseguono l'accesso utente con ADAL possono comunque ricevere i criteri di protezione delle app dal servizio MAM di Intune chiamando l'API, perché l'autenticazione sia gestita dall'SDK. Le app devono usare questa tecnica quando l'utente non è stato autenticato con Azure AD, ma è comunque necessario recuperare i criteri di protezione delle app per proteggere i dati. Ad esempio, viene applicata quando viene usato un altro servizio di autenticazione per l'accesso dell'app o se l'app non supporta l'accesso. A tale scopo, l'applicazione deve chiamare il metodo `loginAndEnrollAccount` sull'istanza `IntuneMAMEnrollmentManager`:
 
 ```objc
 /**
@@ -248,7 +248,7 @@ Le app che non eseguono l'accesso dell'utente con ADAL possono comunque ricevere
 
 ```
 
-Chiamando questo metodo, l'SDK chiederà le credenziali dell'utente se non viene trovato alcun token esistente. L'SDK proverà quindi a registrare l'app nel servizio Intune per conto dell'account utente specificato. Il metodo può essere chiamato con l'identità "nil". In questo caso l'SDK eseguirà la registrazione con l'utente gestito esistente nel dispositivo (nel caso di MDM) o chiederà di specificare un nome se non trova utenti esistenti.
+Chiamando questo metodo, l'SDK chiederà le credenziali dell'utente se non viene trovato alcun token esistente. L'SDK proverà quindi a registrare l'app nel servizio MAM di Intune per conto dell'account utente specificato. Il metodo può essere chiamato con l'identità "nil". In questo caso l'SDK eseguirà la registrazione con l'utente gestito esistente nel dispositivo (nel caso di MDM) o chiederà di specificare un nome se non trova utenti esistenti.
 
 Se la registrazione ha esito negativo, l'app deve prendere in considerazione la necessità di chiamare l'API in un secondo momento, a seconda dei dettagli dell'errore. L'app può ricevere le [notifiche](#Status-result-and-debug-notifications) sui risultati delle richieste di registrazione attraverso un delegato.
 
@@ -287,7 +287,7 @@ Prima della disconnessione dell'utente, l'app deve chiamare il metodo seguente s
 
 ```
 
-Questo metodo deve essere chiamato prima che i token di Azure AD dell'account utente vengano eliminati. L'SDK richiede che i token AAD dell'account utente eseguano richieste specifiche al servizio Intune per conto dell'utente.
+Questo metodo deve essere chiamato prima che i token di Azure AD dell'account utente vengano eliminati. L'SDK richiede che i token AAD dell'account utente inviino richieste specifiche al servizio MAM di Intune per conto dell'utente.
 
 Se l'app eliminerà i dati aziendali dell'utente in modo autonomo, il contrassegno `doWipe` può essere impostato su false. In caso contrario, l'SDK può avviare automaticamente una cancellazione selettiva. Ciò comporta una chiamata al delegato per la cancellazione selettiva dell'app.
 
@@ -453,10 +453,10 @@ WebViewHandledURLSchemes | Matrice di stringhe | Specifica gli schemi URL gestit
 > Se l'app verrà rilasciata per l'App Store, `MAMPolicyRequired` deve essere impostato su "NO" come previsto dagli standard per App Store.
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Abilitazione della configurazione di destinazione MAM per le applicazioni iOS
-La configurazione di destinazione MAM consente a un'app di ricevere i dati di configurazione tramite Intune App SDK. Il proprietario o lo sviluppatore dell'applicazione deve comunicare ai clienti Intune il formato e le varianti di tali dati. Gli amministratori di Intune possono trovare e distribuire i dati di configurazione tramite il portale di Azure di Intune. A partire da Intune App SDK per iOS (v 7.0.1) le applicazioni incluse nella configurazione di destinazione MAM possono ricevere dati di configurazione MAM tramite il servizio MAM. I dati di configurazione dell'applicazione vengono inviati tramite il servizio MAM direttamente all'app invece che tramite il canale MDM. Intune App SDK include una classe per l'accesso ai dati recuperati da queste console. I seguenti elementi possono essere considerati come prerequisiti: <br>
-* Per l'accesso all'interfaccia utente della configurazione di destinazione MAM, l'app deve essere registrata in MAM-WE. Per altre informazioni su MAM-WE, vedere [Criteri di protezione delle app senza registrazione del dispositivo](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment) nella Guida di Intune App SDK.
+La configurazione di destinazione MAM consente a un'app di ricevere i dati di configurazione tramite Intune App SDK. Il proprietario o lo sviluppatore dell'applicazione deve comunicare ai clienti Intune il formato e le varianti di tali dati. Gli amministratori di Intune possono trovare e distribuire i dati di configurazione tramite il portale di Azure di Intune. A partire dalla versione 7.0.1 di Intune App SDK per iOS, le applicazioni incluse nella configurazione di destinazione MAM possono ricevere dati di configurazione MAM tramite il servizio MAM. I dati di configurazione dell'applicazione vengono inviati tramite il servizio MAM direttamente all'app invece che tramite il canale MDM. Intune App SDK include una classe per l'accesso ai dati recuperati da queste console. I seguenti elementi possono essere considerati come prerequisiti: <br>
+* Per l'accesso all'interfaccia utente per la configurazione della destinazione MAM, l'app deve essere registrata nel servizio MAM di Intune. Per altre informazioni, vedere [Ricezione dei criteri di protezione delle app](#receiving-app-protection-policy).
 * Includere ```IntuneMAMAppConfigManager.h``` nel file di origine dell'app.
-* Chiamare ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` per ottenere l'oggetto Configurazione applicazione.
+* Chiamare ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` per ottenere l'oggetto Configurazione applicazione.
 * Chiamare il selettore appropriato per l'oggetto ```IntuneMAMAppConfig```. Ad esempio se la chiave dell'applicazione è una stringa è opportuno usare ```stringValueForKey``` o ```allStringsForKey```. Il file ```IntuneMAMAppConfig.h header``` illustra le condizioni di errore e i valori restituiti.
 
 Per altre informazioni sulle funzionalità dell'API Graph relative ai valori di configurazione MAM di destinazione, vedere [Configurazione MAM di destinazione di riferimento per l'API Graph](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>

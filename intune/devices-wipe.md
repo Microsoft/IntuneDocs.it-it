@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/31/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 343078bf802aa45ec0cd0a3f2e554ab74e1f0b8a
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Rimuovere i dispositivi con il ripristino delle impostazioni predefinite o rimuovere i dati aziendali
 
@@ -96,6 +96,18 @@ Il comando **Rimuovi i dati aziendali** consente di rimuovere i dati delle app (
 ### <a name="android-for-work"></a>Android for Work
 
 La rimozione dei dati aziendali da un dispositivo Android for Work consente di rimuovere tutti i dati, le app e le impostazioni nel profilo di lavoro in tale dispositivo. Il dispositivo viene così ritirato dalla gestione con Intune. Il ripristino delle impostazioni predefinite non è supportato per Android for Work.
+
+
+### <a name="macos"></a>macOS
+
+|Tipo di dati|macOS|
+|-------------|-------|
+|Impostazioni|Le configurazioni impostate tramite criteri di Intune non vengono più applicate e gli utenti possono modificare le impostazioni.|
+|Impostazioni del profilo Wi-Fi e VPN|Rimosso.|
+|Impostazioni del profilo certificato|I certificati distribuiti tramite MDM vengono rimossi e revocati.|
+|Agente di gestione|Il profilo di gestione viene rimosso.|
+|Outlook|Se l'accesso condizionale è abilitato, nessun nuovo messaggio verrà ricevuto dal dispositivo.|
+|Separazione di Azure Active Directory (AD)|Il record di Azure AD viene rimosso.|
 
 ### <a name="windows"></a>Windows
 
