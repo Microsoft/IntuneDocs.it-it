@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/14/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f13aa8bbe5173bda34cdeeecda26d96f8e3aa83
-ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
+ms.openlocfilehash: 1662245fdf9ba557fbc62fbb2e9c0e1aa29888b2
+ms.sourcegitcommit: 5877b650d93fc9a5e8f058f845acbdbfdff828b7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni su quali aggiornamenti sono stati apportati all'interfaccia utente per le app che gli utenti finali vedranno in questa versione di Microsoft Intune. Queste informazioni sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.
@@ -382,11 +382,21 @@ Questi sono i piani per i miglioramenti previsti per l'esperienza utente tramite
 > [!Note]
 > Si noti che le immagini seguenti potrebbero essere anteprime e che il prodotto annunciato potrebbe differire dalle versioni presentate.
 
+### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Aggiornamento dell'esperienza utente per l'app Portale aziendale per iOS <!--1412866-->
+
+Verrà rilasciato un importante aggiornamento dell'esperienza utente per l'app Portale aziendale per iOS. L'aggiornamento include una riprogettazione grafica completa che conferisce all'app un aspetto moderno, maggiore usabilità e accessibilità. Tutte le attuali funzionalità del Portale aziendale per iOS saranno mantenute.
+
+Tramite il programma Apple TestFlight viene offerta una versione non definitiva dell'app Portale aziendale aggiornata per iOS che l'utente può usare e per la quale può inviare i propri commenti e suggerimenti. Effettuare l'iscrizione in https://aka.ms/intune_ios_cp_testflight per l'accesso a TestFlight.
+
+![immagini teaser per la nuova app del Portale aziendale per ios](./media/ios-cp-app-redesign-1801-teaser.png)
+
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Aggiornamenti dell'interfaccia utente del sito Web del portale aziendale <!--1313244 part 2-->
 
 __Aggiornamenti per le app in primo piano__ È stata aggiunta una pagina dedicata nel sito, nella quale gli utenti possono visualizzare le app che hanno scelto di mettere in primo piano e sono state apportate alcune modifiche all'interfaccia utente della sezione In primo piano nella home page.
 
 ![Riquadri colorati che mostrano le app. Si tratta di grandi quadrati a colori sotto ogni app, per i quali il colore viene derivato dal colore principale nel logo dell'app. La sezione "App in primo piano" è visualizzata lungo la parte superiore dell'app Portale aziendale.](./media/cp_win10_colorful_tiles_after_1708.png)
+
+
 
 ### <a name="see-also"></a>Vedere anche
 * [Blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)

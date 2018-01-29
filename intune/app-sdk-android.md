@@ -5,7 +5,7 @@ keywords: SDK
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/28/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7bb78d05f9225c681c5b8a3bb6f1fcee4581a0de
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guida a Microsoft Intune App SDK per sviluppatori di Android
 
 > [!NOTE]
 > Si consiglia di leggere prima [Panoramica di Intune App SDK](app-sdk.md), che illustra le attuali funzionalità dell'SDK e descrive come preparare l'integrazione in ogni piattaforma supportata.
 
-Microsoft Intune App SDK per Android consente di integrare i criteri di protezione delle app di Intune, noti anche come criteri **APP** o MAM, nell'app Android nativa. Un'applicazione con supporto per Intune è integrata con Intune App SDK. Gli amministratori di Intune possono distribuire facilmente i criteri di protezione delle app nell'app con supporto per Intune quando Intune gestisce attivamente l'app.
+Microsoft Intune App SDK per Android consente di integrare i criteri di protezione delle app di Intune, noti anche come criteri **APP** o MAM, nell'app Android nativa. Un'applicazione gestita da Intune è integrata con Intune App SDK. Gli amministratori di Intune possono distribuire facilmente i criteri di protezione delle app nell'app gestita da Intune quando Intune gestisce attivamente l'app.
 
 
 ## <a name="whats-in-the-sdk"></a>Contenuto dell'SDK
@@ -55,7 +55,7 @@ Intune App SDK è un progetto Android compilato. Di conseguenza, per lo più non
 Intune App SDK per Android richiede la presenza dell'app [Portale aziendale](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) nel dispositivo per abilitare i criteri di protezione delle app. Il Portale aziendale recupera i criteri di protezione delle app dal servizio Intune. Al momento dell'inizializzazione, l'app carica i criteri e il codice per applicare i criteri dal Portale aziendale.
 
 > [!NOTE]
-> Quando l'app Portale aziendale non è presente nel dispositivo, un'app con supporto per Intune si comporta analogamente a una normale app che non supporta i criteri di protezione delle app di Intune.
+> Quando l'app Portale aziendale non è presente nel dispositivo, un'app gestita da Intune si comporta analogamente a una normale app che non supporta i criteri di protezione delle app di Intune.
 
 Per la protezione delle app senza registrazione del dispositivo, _**non**_ è richiesta la registrazione del dispositivo con l'app Portale aziendale.
 
@@ -607,7 +607,7 @@ Result getRegisteredAccountStatus(String upn);
 
 ### <a name="important-implementation-notes"></a>Note di implementazione importanti
 
-#### <a name="authentication"></a>Autenticazione
+#### <a name="authentication"></a>Authentication
 
 * Quando l'app chiama `registerAccountForMAM()`, può ricevere un callback nell'interfaccia `MAMServiceAuthenticationCallback` poco dopo, in un thread diverso. Idealmente, l'app ha acquisito il proprio token da ADAL prima della registrazione dell'account per accelerare l'acquisizione del **token di MAMService**. Se l'app restituisce un token valido dal callback, la registrazione continua e l'app ottiene il risultato finale tramite una notifica.
 
@@ -875,7 +875,7 @@ Nel caso dell'impostazione di un'identità a livello di contesto, il risultato v
 
 ### <a name="implicit-identity-changes"></a>Modifiche di identità implicite
 
-Oltre alla possibilità di impostare l'identità tramite l'app, l'identità di un thread o un contesto può cambiare anche in base all'ingresso di dati da un'altra app con supporto per Intune che usa criteri di protezione delle app.
+Oltre alla possibilità di impostare l'identità tramite l'app, l'identità di un thread o un contesto può cambiare anche in base all'ingresso di dati da un'altra app gestita da Intune che usa criteri di protezione delle app.
 
 #### <a name="examples"></a>Esempi
 
@@ -1353,6 +1353,32 @@ Di seguito è riportato l'elenco completo degli attributi di stile consentiti, d
 | Colore principale | Bordo della casella del PIN quando la casella è evidenziata <br> Collegamenti ipertestuali |accent_color | Colore |
 | Logo dell'app | Icona grande visualizzata nella schermata del PIN dell'app Intune | logo_image | Risorsa drawable |
 
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>Richiesta del prompt di accesso utente per la registrazione automatica al servizio APP-WE, richiesta dei criteri di protezione delle app Intune per l'uso di un'app line-of-business per Android integrata con SDK e abilitazione di SSO ADAL (facoltativa)
+
+Di seguito è riportato materiale sussidiario per la richiesta di un prompt utente all'avvio dell'app per la registrazione automatica al servizio APP-WE (denominata **registrazione predefinita** in questa sezione) e la richiesta dei criteri di protezione delle app Intune per consentire solo agli utenti protetti da Intune di usare un'app line-of-business per Android integrata con SDK. Viene anche illustrato come abilitare SSO per un'app line-of-business per Android integrata con SDK. Questa funzionalità **non** è supportata per le app dello Store che possono essere usate da utenti non Intune.
+
+> [!NOTE] 
+> Uno dei vantaggi della **registrazione predefinita** è il metodo semplificato per ottenere i criteri dal servizio APP-WE per un'app presente nel dispositivo.
+
+### <a name="general-requirements"></a>Requisiti generali
+* Il team di Intune SDK richiederà l'ID applicazione dell'app. Un modo per trovarlo è tramite il [portale di Azure](https://portal.azure.com/), in **Tutte le applicazioni** nella colonna relativa a **ID applicazione**. Un buon metodo per contattare il team di Intune SDK è tramite l'invio di un messaggio di posta elettronica all'indirizzo msintuneappsdk@microsoft.com.
+     
+### <a name="working-with-the-intune-sdk"></a>Uso di Intune SDK
+Queste istruzioni sono specifiche per tutte le app Android e Xamarin che richiederanno i criteri di protezione delle app Intune per l'uso nel dispositivo di un utente finale.
+
+1. Configurare ADAL usando i passaggi definiti nella [Guida a Intune SDK per Android](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> Il termine "ID client" associato all'app equivale al termine "ID applicazione" del portale di Azure. 
+* Per abilitare SSO, vedere il punto 2 della sezione "Configurazioni comuni di ADAL".
+
+2. Abilitare la registrazione predefinita inserendo il valore seguente nel manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> Questa deve essere l'unica integrazione MAM-WE nell'app. Altri tentativi di chiamare le API MAMEnrollmentManager possono determinare conflitti.
+
+3. Abilitare i criteri MAM richiesti inserendo il valore seguente nel manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> In questo modo, l'utente dovrà scaricare il Portale aziendale nel dispositivo e completare le fasi della registrazione predefinita prima dell'uso.
+
 ## <a name="limitations"></a>Limitazioni
 
 ### <a name="file-size-limitations"></a>Limitazioni relative alle dimensioni dei file
@@ -1380,7 +1406,7 @@ Per codebase di grandi dimensioni eseguite senza [ProGuard](http://proguard.sour
     
 ### <a name="exported-services"></a>Servizi esportati
 
- Il file AndroidManifest.xml incluso in Intune App SDK contiene **MAMNotificationReceiverService**, che deve essere un servizio esportato per consentire al Portale aziendale di inviare notifiche a un'app abilitata. Il servizio verifica il chiamante per garantire che l'invio di notifiche sia consentito solo all'app Portale aziendale.
+ Il file AndroidManifest.xml incluso in Intune App SDK contiene **MAMNotificationReceiverService**, che deve essere un servizio esportato per consentire al Portale aziendale di inviare notifiche a un'app gestita. Il servizio verifica il chiamante per garantire che l'invio di notifiche sia consentito solo all'app Portale aziendale.
 
 ### <a name="reflection-limitations"></a>Limitazioni della reflection
 Alcune delle classi di base MAM, ad esempio MAMActivity e MAMDocumentsProvider, contengono metodi basati sulle classi di base Android originali che usano parametri o tipi restituiti presenti solo al di sopra di determinati livelli API. Per questo motivo, potrebbe non essere sempre possibile usare la reflection per enumerare tutti i metodi dei componenti dell'app. Questa restrizione non è limitata a MAM, ma si applica anche se l'app ha implementato questi metodi delle classi di base Android.

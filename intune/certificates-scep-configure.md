@@ -6,20 +6,19 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/09/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: 3082bd52460bc9bd852edb3b560e96fb718a71c3
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configurare e gestire i certificati SCEP con Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -66,7 +65,7 @@ Dalla rete perimetrale a una rete attendibile, aprire tutte le porte e consentir
 
 ### <a name="accounts"></a>Account
 
-|Nome|Dettagli|
+|Name|Dettagli|
 |--------|-----------|
 |**Account di servizio NDES**|Specificare un account utente di dominio da usare come account del servizio NDES.|
 
@@ -305,7 +304,7 @@ In questa attività sarà possibile:
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Scaricare, installare e configurare il Connettore di certificati
 ![Download connettore](./media/certificates-download-connector.png)   
  
-1. Accedere al portale Azure. 
+1. Accedere al portale di Azure. 
 2. Selezionare **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** selezionare **Configurazione del dispositivo**.
 4. Nel pannello **Configurazione del dispositivo** selezionare **Autorità di certificazione**.
@@ -329,6 +328,9 @@ In questa attività sarà possibile:
 5.  Nell'interfaccia utente di **Connettore di certificati** :
 
     Fare clic su **Accedi** e immettere le credenziali di amministratore del servizio di Intune oppure le credenziali di amministratore tenant con autorizzazioni di amministrazione globali.
+
+    > [!IMPORTANT]
+    > All'account utente deve essere assegnata una licenza di Intune valida. Se l'account utente non ha una licenza di Intune valida, l'esecuzione di NDESConnectorUI.exe non riesce.
 
     Se l'organizzazione usa un server proxy e il proxy è necessario al server NDES per accedere a Internet, fare clic su **Usa server proxy**, quindi specificare il nome del server proxy, la porta e le credenziali dell'account per la connessione.
 
