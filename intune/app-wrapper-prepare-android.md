@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a691786ce2ee975086899844b285a91f676aa71f
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 1673fa1e9c580c1554537530341f87b1580e79eb
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app Android per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -81,7 +81,7 @@ Prendere nota della cartella in cui è installato lo strumento. La posizione pre
 |Proprietà|Informazioni|Esempio|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;Stringa&gt;|Percorso dell'app Android di origine (.apk).| |
-|**-OutputPath**&lt;Stringa&gt;|Percorso dell'app Android di output. Se il percorso della directory è uguale a quello per InputPath, il pacchetto non riuscirà.| |
+ |**-OutputPath**&lt;Stringa&gt;|Percorso dell'app Android di output. Se il percorso della directory è uguale a quello per InputPath, il pacchetto non riuscirà.| |
 |**-KeyStorePath**&lt;Stringa&gt;|Percorso del file dell'archivio chiavi che contiene la coppia di chiavi pubblica/privata per la firma.|Per impostazione predefinita i file dell'archivio chiavi vengono archiviati in "C:\Programmi (x86)\Java\jreX.X.X_XX\bin". |
 |**-KeyStorePassword**&lt;SecureString&gt;|Password usata per decrittografare il file keystore. Android richiede che tutti i pacchetti di applicazioni (con estensione apk) siano firmati. Usare keytool Java per generare KeyStorePassword. Altre informazioni sulla classe KeyStore Java sono disponibili [qui](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html).| |
 |**-KeyAlias**&lt;Stringa&gt;|Nome della chiave da usare per la firma.| |
@@ -115,7 +115,7 @@ L'applicazione sottoposta a wrapping e un file di log vengono generati e salvati
 
 ## <a name="how-often-should-i-rewrap-my-android-application-with-the-intune-app-wrapping-tool"></a>Con quale frequenza è necessario eseguire nuovamente il wrapping dell'applicazione Android con lo strumento per la disposizione testo per app di Microsoft Intune?
 Gli scenari principali in cui è necessario eseguire nuovamente il wrapping delle applicazioni sono i seguenti:
-* L'applicazione ha rilasciato una nuova versione.
+* L'applicazione ha rilasciato una nuova versione. La versione precedente dell'app è stata sottoposta a wrapping e caricata nella console di Intune.
 * Lo strumento per la disposizione testo per app di Microsoft Intune per Android ha rilasciato una nuova versione che consente di eseguire le principali correzioni di bug o che dispone di nuove e specifiche funzionalità con criteri di protezione per applicazioni Intune. Ciò avviene ogni 6-8 settimane tramite il repository GitHub per lo [strumento per la disposizione testo per app di Microsoft Intune per Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
 
 Alcune procedure consigliate per eseguire nuovamente il wrapping comprendono: 
@@ -144,6 +144,32 @@ Per evitare potenziali attacchi di spoofing, divulgazione di informazioni e l'el
 -   Assicurarsi che l'applicazione provenga da una fonte attendibile.
 
 -   Proteggere la directory di output che contiene l'applicazione di cui è stato eseguito il wrapping. È possibile utilizzare una directory a livello di utente per l'output.
+
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>Richiesta del prompt di accesso utente per la registrazione automatica al servizio APP-WE, richiesta dei criteri di protezione delle app Intune per l'uso di un'app line-of-business per Android di cui è stato eseguito il wrapping e abilitazione di SSO ADAL (facoltativa)
+
+Di seguito è riportato materiale sussidiario per la richiesta di un prompt utente all'avvio dell'app per la registrazione automatica al servizio APP-WE (denominata **registrazione predefinita** in questa sezione) e la richiesta dei criteri di protezione delle app Intune per consentire solo agli utenti protetti da Intune di usare un'app line-of-business per Android di cui è stato eseguito il wrapping. Viene anche illustrato come abilitare SSO per un'app line-of-business per Android di cui è stato eseguito il wrapping. 
+
+> [!NOTE] 
+> Uno dei vantaggi della **registrazione predefinita** è il metodo semplificato per ottenere i criteri dal servizio APP-WE per un'app presente nel dispositivo.
+
+### <a name="general-requirements"></a>Requisiti generali
+* Il team di Intune SDK richiederà l'ID applicazione dell'app. Un modo per trovarlo è tramite il [portale di Azure](https://portal.azure.com/), in **Tutte le applicazioni** nella colonna relativa a **ID applicazione**. Un buon metodo per contattare il team di Intune SDK è tramite l'invio di un messaggio di posta elettronica all'indirizzo msintuneappsdk@microsoft.com.
+     
+### <a name="working-with-the-intune-sdk"></a>Uso di Intune SDK
+Queste istruzioni sono specifiche per tutte le app Android e Xamarin che richiederanno i criteri di protezione delle app Intune per l'uso nel dispositivo di un utente finale.
+
+1. Configurare ADAL usando i passaggi definiti nella [Guida a Intune SDK per Android](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> Il termine "ID client" associato all'app equivale al termine "ID applicazione" del portale di Azure associato all'app. 
+* Per abilitare SSO, vedere il punto 2 della sezione "Configurazioni comuni di ADAL".
+
+2. Abilitare la registrazione predefinita inserendo il valore seguente nel manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> Questa deve essere l'unica integrazione MAM-WE nell'app. Altri tentativi di chiamare le API MAMEnrollmentManager possono determinare conflitti.
+
+3. Abilitare i criteri MAM richiesti inserendo il valore seguente nel manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> In questo modo, l'utente dovrà scaricare il Portale aziendale nel dispositivo e completare le fasi della registrazione predefinita prima dell'uso.
 
 ### <a name="see-also"></a>Vedere anche
 - [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](apps-prepare-mobile-application-management.md)

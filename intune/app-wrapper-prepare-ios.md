@@ -5,20 +5,20 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/12/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app iOS per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -53,7 +53,6 @@ Prima di eseguire lo strumento di wrapping delle app, è necessario soddisfare a
   * L'app di input deve avere i diritti impostati prima dell'elaborazione con lo strumento di wrapping delle app di Intune. I [diritti](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) concedono all'app autorizzazioni e funzionalità aggiuntive oltre a quelle generalmente concesse. Per istruzioni, vedere [Impostazione dei diritti delle app](#setting-app-entitlements).
 
 ## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Prerequisiti per sviluppatori Apple per lo strumento di wrapping delle app
-
 
 Per distribuire le app di cui viene eseguito il wrapping in modo esclusivo agli utenti dell'organizzazione, è necessario un account per il programma [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) e più entità per la firma delle app collegate al proprio account per sviluppatori di Apple.
 
@@ -204,8 +203,8 @@ Con lo strumento di wrapping delle app è possibile usare i parametri della riga
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Mostra informazioni d'uso dettagliate per le proprietà della riga di comando disponibili per lo strumento di wrapping delle app.|
 |**-v**|(Facoltativo) Mostra messaggi dettagliati nella console. È consigliabile usare questo flag per il debug di eventuali errori.|
-|**-e**| (Facoltativo) Usare questo flag per fare in modo che lo strumento di wrapping delle app rimuova i diritti mancanti durante l'elaborazione dell'app. Per altri dettagli, vedere Impostazione dei diritti delle app.|
-|**-xe**| (Facoltativo) Visualizza informazioni sulle estensioni iOS nell'app e sui diritti necessari per usarle. Per altri dettagli, vedere Impostazione dei diritti delle app. |
+|**-e**| (Facoltativo) Usare questo flag per fare in modo che lo strumento di wrapping delle app rimuova i diritti mancanti durante l'elaborazione dell'app. Per altri dettagli, vedere [Impostazione dei diritti delle app](#setting-app-entitlements).|
+|**-xe**| (Facoltativo) Visualizza informazioni sulle estensioni iOS nell'app e sui diritti necessari per usarle. Per altri dettagli, vedere [Impostazione dei diritti delle app](#setting-app-entitlements). |
 |**-x**| (Facoltativo) `<An array of paths to extension provisioning profiles>`. Usare questa opzione se l'app richiede profili di provisioning estensioni.|
 |**-f**|(Facoltativo) `<Path to a plist file specifying arguments.>` Usare questo flag prima del file [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) se si sceglie di usare il modello plist per specificare le altre proprietà IntuneMAMPackager, come: -i, -o e -p. Vedere Usare un file plist per l'input di argomenti. |
 |**-b**|(Facoltativo) Usare -b senza argomento se si vuole che l'applicazione di output con wrapper abbia la stessa versione di bundle dell'app di input (scelta non consigliata). <br/><br/> Usare `-b <custom bundle version>` se si vuole che l'app con wrapper abbia un valore CFBundleVersion personalizzato. Se si sceglie di specificare un valore CFBundleVersion personalizzato, è consigliabile incrementare il componente meno significativo del valore CFBundleVersion dell'app nativa, ad esempio 1.0.0 -> 1.0.1. |
@@ -244,6 +243,16 @@ L'app di cui è stato eseguito il wrapping viene salvata nella cartella di outpu
 > Quando si carica un'app con wrapper è possibile provare a eseguire l'aggiornamento di una versione precedente (con wrapper o nativa) se tale versione era già stata distribuita a Intune. In caso di errore, caricare l'app come nuova app ed eliminare la versione precedente.
 
 È ora possibile distribuire l'app ai gruppi di utenti e assegnare i criteri di protezione delle app all'app. L'app verrà eseguita nel dispositivo con i criteri di protezione delle app specificati.
+
+## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>Con quale frequenza è necessario eseguire nuovamente il wrapping dell'applicazione iOS con lo strumento di wrapping delle app di Intune?
+Gli scenari principali in cui è necessario eseguire nuovamente il wrapping delle applicazioni sono i seguenti:
+* L'applicazione ha rilasciato una nuova versione. La versione precedente dell'app è stata sottoposta a wrapping e caricata nella console di Intune.
+* Lo strumento di wrapping delle app di Intune per iOS ha rilasciato una nuova versione che consente di eseguire le principali correzioni di bug o che dispone di nuove e specifiche funzionalità con criteri di protezione per applicazioni Intune. Ciò avviene dopo 6-8 settimane tramite il repository GitHub per lo [strumento di wrapping delle app di Microsoft Intune per iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
+
+Per iOS, sebbene sia possibile eseguire il wrapping con un profilo di certificato/provisioning diverso rispetto a quello originale usato per firmare l'app, se i diritti specificati nell'app non sono inclusi nel nuovo profilo di provisioning, l'operazione di wrapping avrà esito negativo. L'uso dell'opzione della riga di comando "-e", che rimuove i diritti mancanti dall'app, per imporre la corretta esecuzione del wrapping in questo scenario può determinare problemi di funzionamento nell'app.
+
+Alcune procedure consigliate per eseguire nuovamente il wrapping comprendono:
+* Assicurarsi che un profilo di provisioning diverso includa tutti i diritti necessari come il profilo di provisioning precedente. 
 
 ## <a name="error-messages-and-log-files"></a>Messaggi di errore e file di log
 Usare le informazioni seguenti per risolvere i problemi dello strumento per la disposizione testo per app.

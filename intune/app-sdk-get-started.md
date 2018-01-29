@@ -5,7 +5,7 @@ keywords:
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/03/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bd7d48a6511b1ae8ecf5a6f413ae2f682434244c
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 546c5d3f373b863e75afa05b7e9bd842f8a8eb46
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
@@ -34,7 +34,7 @@ Intune App SDK supporta scenari simili in iOS e Android ed è progettato per off
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Se l'app verrà rilasciata a un app store pubblico, ad esempio l'App Store Apple o Google Play:
 
-È prima di tutto _**necessario**_ registrare l'app in Microsoft Intune e accettare le condizioni di registrazione. Gli amministratori IT possono applicare i criteri di protezione delle app all'app abilitata, che verrà elencata come partner di app di Intune.
+È prima di tutto _**necessario**_ registrare l'app in Microsoft Intune e accettare le condizioni di registrazione. Gli amministratori IT possono quindi applicare i criteri di protezione delle app all'app gestita che verrà inserita nell'elenco delle app partner di Intune.
 
 Fino alla conclusione della registrazione e all'avvenuta conferma da parte del team di Microsoft Intune, gli amministratori di Intune non potranno applicare i criteri di protezione delle app al collegamento diretto dell'app. Microsoft aggiungerà l'app anche alla relativa [pagina dei partner di Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). Verrà quindi visualizzata l'icona dell'app per mostrare che supporta i criteri di protezione delle app di Intune.
 
@@ -60,8 +60,6 @@ Se il collegamento diretto dell'app dovesse cambiare, sarà necessario registrar
 > [!NOTE]
 > È necessario comunicare se l'app viene aggiornata con una nuova versione di Intune App SDK.
 
-
-
 ## <a name="download-the-sdk-files"></a>Scaricare i file SDK
 
 I file di Intune App SDK per iOS e Android nativi sono ospitati in un account Microsoft GitHub. I repository pubblici contengono rispettivamente i file SDK per iOS e Android nativi:
@@ -75,10 +73,6 @@ Se l'app è basata su Xamarin o Cordova, usare queste varianti dell'SDK:
 * [Plug-in Cordova per Intune App SDK](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Si consiglia di registrarsi per un account GitHub utile per eseguire operazioni di biforcazione ed estrazione dal repository. GitHub consente agli sviluppatori di comunicare con il team del prodotto Microsoft, aprire problemi e ricevere risposte rapide, visualizzare le note sulla versione e fornire commenti e suggerimenti a Microsoft. Per domande su Intune App SDK GitHub, contattare msintuneappsdk@microsoft.com.
-
-
-
-
 
 ## <a name="enable-your-ios-or-android-app-for-app-protection-policy"></a>Abilitare un'app iOS o Android per i criteri di protezione delle app
 
@@ -102,9 +96,6 @@ Per integrare Intune App SDK nelle app, è necessario consultare una delle guide
  
  * L'[ID client AAD](https://docs.microsoft.com/en-us/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) per l'app deve essere univoco sulle piattaforme iOS e Android.
  
- 
- 
-
 ## <a name="configure-telemetry-for-your-app"></a>Configurazione della telemetria per l'app
 
 Microsoft Intune raccoglie i dati sulle statistiche di utilizzo dell'app.
@@ -113,7 +104,10 @@ Microsoft Intune raccoglie i dati sulle statistiche di utilizzo dell'app.
 
     * Se si sceglie di non inviare i dati della telemetria a Microsoft Intune dall'app, è necessario disabilitare la trasmissione della telemetria SDK impostando la proprietà `MAMTelemetryDisabled` su "YES" nel dizionario IntuneMAMSettings.
 
-* **Intune App SDK per Android**: i dati della telemetria non vengono registrati con l'SDK.
+* **Intune App SDK per Android**: Intune App SDK per Android non controlla la raccolta di dati dall'app. Per impostazione predefinita, l'applicazione Portale aziendale registra dati di telemetria. Questi dati vengono inviati a Microsoft Intune. In base ai criteri Microsoft, non vengono raccolte informazioni personali. 
+
+    * Se l'utente finale sceglie di non inviare questi dati, deve disattivare la telemetria in Impostazioni nell'app Portale aziendale. Per altre informazioni, vedere [Disattivare la raccolta dati di utilizzo di Microsoft](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+
 
  Il numero di versione delle app line-of-business iOS e Android è visibile <!-- 1380712 -->
 
@@ -123,7 +117,7 @@ Nelle app line-of-business in Intune viene ora visualizzato il numero di version
 
 ### <a name="full-version-number"></a>Numero di versione completo
 
-Il numero di versione completo identifica una versione specifica dell'app. Il numero viene visualizzato come _Versione_(_Build_). Ad esempio, 2.2(2.2.17560800)
+Il numero di versione completo identifica una versione specifica dell'app. Il numero viene visualizzato come _Versione_(_Build_). Ad esempio, 2.2(2.2.17560800). 
 
 Il numero di versione completo include due componenti:
 
@@ -163,7 +157,7 @@ Numero build|CFBundleVersion|PackageVersionCode |Questo numero viene usato per i
 ### <a name="test-your-app"></a>Test dell'app
 Dopo aver completato i passaggi necessari per integrare l'app per iOS o Android con Intune App SDK, è necessario assicurarsi che tutti i criteri di protezione delle app siano abilitati e funzionanti per l'utente e l'amministratore IT. Per testare l'app integrata, è necessario quanto segue:
 
-* **Account di prova per Microsoft Intune**: per testare le funzionalità di protezione delle app di Intune nelle app abilitate per Intune, è necessario un account di Microsoft Intune.
+* **Account di prova per Microsoft Intune**: per testare le funzionalità di protezione delle app di Intune nelle app gestite da Intune, è necessario un account di Microsoft Intune.
 
     * Gli ISV che abilitano le proprie app dello store iOS e Android per i criteri di protezione delle app di Intune, riceveranno un codice promozionale al termine della registrazione in Microsoft Intune, come descritto nel passaggio relativo alla registrazione. Con il codice promozionale sarà possibile richiedere una versione di valutazione di Microsoft Intune per un anno di uso esteso.
 
@@ -171,7 +165,7 @@ Dopo aver completato i passaggi necessari per integrare l'app per iOS o Android 
 
 * **Criteri di protezione delle app di Intune**: per testare l'app con tutti i criteri di protezione delle app di Intune, è necessario conoscere il comportamento previsto per ogni impostazione dei criteri. Vedere le descrizioni dei [criteri di protezione delle app iOS](/intune-classic/deploy-use/ios-mam-policy-settings) e dei [criteri di protezione delle app Android](/intune-classic/deploy-use/android-mam-policy-settings).
 
-* **Risoluzione dei problemi**: se si verificano problemi durante i test manuali dell'esperienza utente per l'app, vedere [Risolvere i problemi relativi alla gestione di applicazioni mobili](/intune-classic/troubleshoot/troubleshoot-mam). Questo articolo offre assistenza per i problemi comuni, le finestre di dialogo e i messaggi di errore che possono presentarsi nelle app abilitate per Intune. 
+* **Risoluzione dei problemi**: se si verificano problemi durante i test manuali dell'esperienza utente per l'app, vedere [Risolvere i problemi relativi alla gestione di applicazioni mobili](/intune-classic/troubleshoot/troubleshoot-mam). Questo articolo offre assistenza per i problemi comuni, le finestre di dialogo e i messaggi di errore che possono presentarsi nelle app gestite da Intune. 
 
 ### <a name="badge-your-app-optional"></a>Aggiungere il logo all'app (facoltativo)
 

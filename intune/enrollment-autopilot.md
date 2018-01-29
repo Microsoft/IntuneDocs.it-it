@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: cbccff7ac58c98e85f5a038950feb5bd6590922b
-ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
+ms.openlocfilehash: dae736aef57489880915c269cb30785371380a52
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Registrare dispositivi Windows con il programma Windows AutoPilot Deployment
 Il programma Windows AutoPilot Deployment semplifica il provisioning dei dispositivi. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni, e così via, sui dispositivi dopo che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot) (Panoramica di Windows AutoPilot).
@@ -101,6 +101,7 @@ Se non si è interessati alla gestione di dispositivi mobili, è possibile usare
 - Sincronizzare i profili creati in un altro portale
 - Visualizzare le modifiche apportate alle assegnazioni dei profili eseguite in un altro portale
 - Sincronizzare le assegnazioni dei profili eseguite in un altro portale
+- Visualizzare le modifiche dell'elenco dei dispositivi apportate in un altro portale
 
 ## <a name="next-steps"></a>Passaggi successivi
 Dopo aver configurato Windows AutoPilot per i dispositivi Windows 10 registrati, scoprire come gestire i dispositivi. Per altre informazioni, vedere [Informazioni sulla gestione dei dispositivi in Microsoft Intune](https://docs.microsoft.com/intune/device-management).

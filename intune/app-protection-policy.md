@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/01/2017
+ms.date: 01/19/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 668264fc0ed4d9bebf84d97aa66a886d93fbb4eb
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: b91a9e57eb368daae77958eaf4e554628361b2c4
+ms.sourcegitcommit: 7d80886ed9a12597fead9326568b4e759b29a340
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Che cosa sono i criteri di protezione delle app?
 
@@ -45,7 +45,7 @@ I criteri di protezione delle app possono essere configurati per app in esecuzio
 -   **Non registrati in alcuna soluzione di gestione di dispositivi mobili:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dei dipendenti non gestiti o registrati in Intune o altre soluzioni MDM.
 
 > [!IMPORTANT]
-> È possibile creare criteri di gestione delle app per dispositivi mobili per le app di Office per dispositivi mobili che si connettono ai servizi di Office 365. I criteri di protezione delle app non sono supportati per le app che si connettono ai servizi locali di Exchange, Skype for Business o SharePoint.
+> È possibile creare criteri di gestione delle app per dispositivi mobili per le app di Office per dispositivi mobili che si connettono ai servizi di Office 365. I criteri di protezione delle app non sono supportati per le app che si connettono ai servizi locali di Exchange o SharePoint.
 
 **I vantaggi più rilevanti dell'uso dei criteri di protezione delle app sono i seguenti:**
 

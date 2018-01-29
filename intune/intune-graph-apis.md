@@ -1,6 +1,6 @@
 ---
-title: Come usare Azure AD per accedere all'API Graph di Intune
-description: Descrive i passaggi necessari per consentire alle app di usare Azure AD per accedere all'API Graph di Intune
+title: Come usare Azure AD per accedere alle API di Intune in Microsoft Graph
+description: Descrive i passaggi necessari per consentire alle app di usare Azure AD per accedere alle API di Intune in Microsoft Graph.
 keywords: intune graphapi c# powershell ruoli di autorizzazione
 author: vhorne
 manager: angrobe
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Come usare Azure AD per accedere all'API Graph di Intune
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Come usare Azure AD per accedere alle API di Intune in Microsoft Graph
 
-L'[API Microsoft Graph](https://developer.microsoft.com/graph/) ora supporta Microsoft Intune con API e ruoli di autorizzazione specifici.  L'API Graph usa Azure Active Directory (Azure AD) per l'autenticazione e il controllo di accesso.  
-L'accesso all'API Graph di Intune richiede:
+L'[API Microsoft Graph](https://developer.microsoft.com/graph/) ora supporta Microsoft Intune con API e ruoli di autorizzazione specifici.  L'API Microsoft Graph usa Azure Active Directory (Azure AD) per l'autenticazione e il controllo di accesso.  
+L'accesso alle API di Intune in Microsoft Graph richiede:
 
 - Un ID applicazione con:
 
-    - Autorizzazione per la chiamata di API Graph e Azure AD.
+    - Autorizzazione per chiamare Azure AD e le API Microsoft Graph.
     - Ambiti di autorizzazione appropriati per le specifiche attività dell'applicazione.
 
 - Credenziali utente con:
@@ -38,11 +38,11 @@ L'accesso all'API Graph di Intune richiede:
 
 Questo articolo:
 
-- Illustra come registrare un'applicazione con l'accesso all'API Graph e i ruoli di autorizzazione appropriati.
+- Illustra come registrare un'applicazione con l'accesso all'API Microsoft Graph e i ruoli di autorizzazione appropriati.
 
-- Descrive i ruoli di autorizzazione dell'API Graph di Intune.
+- Descrive i ruoli di autorizzazione dell'API di Intune.
 
-- Fornisce esempi di autenticazione dell'API Graph di Intune per C# e PowerShell.
+- Include esempi di autenticazione dell'API di Intune per C# e PowerShell.
 
 - Descrive come supportare più tenant
 
@@ -53,9 +53,9 @@ Per altre informazioni, vedere:
 - [Integrazione di applicazioni con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [Informazioni su OAuth 2.0](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>Registrare le app per l'uso dell'API Graph
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>Registrare le app per l'uso dell'API Microsoft Graph
 
-Per registrare un'app per l'uso dell'API Graph:
+Per registrare un'app per l'uso dell'API Microsoft Graph:
 
 1.  Accedere al [portale di Azure](https://portal.azure.com) con credenziali amministrative.
 
@@ -127,15 +127,15 @@ A questo punto, è inoltre possibile:
 
 ## <a name="intune-permission-scopes"></a>Ambiti di autorizzazione di Intune
 
-Azure AD e l'API Graph usano gli ambiti di autorizzazione per controllare l'accesso alle risorse aziendali.  
+Azure AD e Microsoft Graph usano ambiti di autorizzazione per controllare l'accesso alle risorse aziendali.  
 
-Gli ambiti di autorizzazione (anche denominati _ambiti OAuth_) controllano l'accesso alle specifiche entità di Intune e alle relative proprietà. In questa sezione sono riepilogati gli ambiti di autorizzazione per le funzionalità dell'API Graph di Intune.
+Gli ambiti di autorizzazione (anche denominati _ambiti OAuth_) controllano l'accesso alle specifiche entità di Intune e alle relative proprietà. In questa sezione sono riepilogati gli ambiti di autorizzazione per le funzionalità dell'API di Intune.
 
 Per altre informazioni, vedere:
 - [Autenticazione di Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Ambiti di autorizzazione dell'applicazione](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Quando si concede l'autorizzazione per l'API Graph, è possibile specificare i seguenti ambiti per controllare l'accesso alle funzionalità di Intune. Nella tabella seguente sono riepilogati gli ambiti di autorizzazione dell'API Graph di Intune.  La prima colonna indica il nome della funzionalità, così com'è visualizzato nel portale di Azure, e la seconda colonna specifica il nome dell'ambito di autorizzazione.
+Quando si concede l'autorizzazione a Microsoft Graph, è possibile specificare i seguenti ambiti per controllare l'accesso alle funzionalità di Intune. Nella tabella seguente sono riepilogati gli ambiti di autorizzazione dell'API di Intune.  La prima colonna indica il nome della funzionalità, così com'è visualizzato nel portale di Azure, e la seconda colonna specifica il nome dell'ambito di autorizzazione.
 
 Impostazione _Abilita accesso_ | Nome ambito
 :--|:--
@@ -153,7 +153,7 @@ __Read Microsoft Intune configuration__ (Leggere la configurazione di Microsoft 
 
 La tabella elenca le impostazioni nell'ordine in cui sono visualizzate nel portale di Azure. Nelle sezioni seguenti vengono descritti gli ambiti in ordine alfabetico.
 
-Attualmente, tutti gli ambiti di autorizzazione di Intune richiedono l'accesso con privilegi di amministratore.  Ciò significa che sono necessarie credenziali corrispondenti per l'esecuzione di app o script che accedono alle risorse dell'API Graph di Intune.
+Attualmente, tutti gli ambiti di autorizzazione di Intune richiedono l'accesso con privilegi di amministratore.  Ciò significa che sono necessarie credenziali corrispondenti per l'esecuzione di app o script che accedono alle risorse dell'API di Intune.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ Quando si testa un esempio, potrebbero essere visualizzati errori di stato HTTP 
 
 In questo caso, verificare quanto segue:
 
-- L'ID applicazione è stato aggiornato a un ID autorizzato a usare l'API Graph e l'ambito di autorizzazione `DeviceManagementManagedDevices.Read.All`.
+- L'ID applicazione è stato aggiornato a un ID autorizzato a usare l'API Microsoft Graph e l'ambito di autorizzazione `DeviceManagementManagedDevices.Read.All`.
 
 - Le credenziali del tenant supportano le funzioni amministrative.
 
