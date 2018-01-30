@@ -4,7 +4,7 @@ description: Questo articolo aiuta a determinare i requisiti degli scenari dei c
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65a1fb8fb41fa8d9f3e707c73bf752a997a8a1a1
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 7f4f080201d1a089a8ae10a6acf81c0c28fa33c9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinare i requisiti degli scenari per i casi d'uso
 
@@ -30,7 +30,7 @@ Possono anche essere presenti gruppi dell'organizzazione per lo scenario relativ
 
 Di seguito sono riportati alcuni esempi di requisiti per i casi d'uso di un'organizzazione, con diversi set di requisiti per ogni caso d'uso e caso d'uso secondario, gruppo dell'organizzazione e piattaforma per dispositivi mobili. È anche possibile usare la tabella seguente per immettere i requisiti per i casi d'uso della propria organizzazione:
 
-| **Casi d'uso** | **Casi d'uso secondari** | **Gruppi** | **Piattaforme per i dispositivi** | **Requirements** |
+| **Casi d'uso** | **Casi d'uso secondari** | **Gruppi** | **Piattaforme per i dispositivi** | **Requisiti** |
 |:---:|:---:|:---:|:---:|:---:|
 | Aziendale | Information Worker | HR, finanza | iOS | Posta elettronica sicura, impostazioni del dispositivo, profili, app |                                                          
 | Aziendale | Dirigenti | HR, finanza | iOS | Posta elettronica sicura, impostazioni del dispositivo, profili, app |                                                         

@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
-ms.date: 02/23/2017
+manager: dougeby
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 3926b64bacb1acde29146aed9d3030729e8b9b17
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloccare il dispositivo in modalità remota dal sito Web del portale aziendale
 
@@ -33,14 +34,13 @@ Per ragioni di sicurezza, è possibile bloccarlo usando l'opzione Blocco remoto 
 * Android
 * iOS
 * macOS
+* Windows 10
 * Windows 10 Mobile (se per il dispositivo è già stato impostato un passcode)
 * Windows Phone 8.1 (se per il dispositivo è già stato impostato un passcode)
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Per usare Blocco remoto per bloccare il dispositivo
 
-1.  Nel [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
-
-  ![Immagine del sito Web del portale aziendale con un menu laterale espanso sul lato sinistro della schermata con i pulsanti Home, Tutte le app, Dispositivi personali, Supporto tecnico e Disconnetti.](/media/iwp-expanded-sidebar.png)
+1.  Nel [sito Web Portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) toccare il pulsante __menu__, quindi selezionare __Dispositivi personali__.
 
 2. Nella pagina __Dispositivi personali__ selezionare il nome del dispositivo da bloccare.
 
