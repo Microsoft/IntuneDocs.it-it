@@ -5,7 +5,7 @@ description: "Informazioni sulle opzioni di Intune che è possibile usare per co
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b24ee84d339b728addd753cb309b4d8572e5582
-ms.sourcegitcommit: e5501cdf08d3e79bc51dc726697606be02110e57
+ms.openlocfilehash: c183af24e953f87e12e87654f767dd9a30f8509f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Come configurare le impostazioni relative all'istruzione di Intune per i dispositivi iPad condivisi
 
@@ -62,7 +62,7 @@ SDS sincronizza le informazioni dal sistema SIS e le archivia in Azure AD. Azure
 
 ### <a name="configure-general-settings"></a>Configurare le impostazioni generali
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
 4. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
@@ -133,7 +133,7 @@ Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
 
 ## <a name="step-3---create-a-device-category"></a>Passaggio 3: Creare una categoria di dispositivi
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
 3. Nel pannello **Intune** scegliere **Registrazione del dispositivo**.
 4. Nel pannello **Registrazione - Panoramica** scegliere **Categoria di dispositivi**.
@@ -145,7 +145,7 @@ La categoria di dispositivi viene creata nel pannello **Registrazione - Categori
 
 ## <a name="step-4--create-a-dynamic-group"></a>Passaggio 4: Creare un gruppo dinamico
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
 3. Nel pannello **Intune** scegliere **Gruppi**.
 4. Nel pannello **Utenti e gruppi - Tutti i gruppi** scegliere **Nuovo gruppo**.
@@ -163,7 +163,7 @@ Il gruppo dinamico viene creato nel pannello **Utenti e gruppi - Tutti i gruppi*
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>Passaggio 5: Assegnare un dispositivo a una categoria (Carrelli)
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
 4. Nel pannello **Dispositivi** scegliere **Tutti i dispositivi**.
@@ -176,7 +176,7 @@ Il dispositivo è ora associato alla categoria del dispositivo. Ripetere questo 
 
 ## <a name="step-6--create-classroom-profiles"></a>Passaggio 6: Creare profili di classe
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
 4. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili del carrello**.
@@ -192,7 +192,7 @@ Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Passaggio 7: Assegnare il profilo del carrello alle classi
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Altro** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
 4. Nel pannello **Configurazione del dispositivo** scegliere **Esegui monitoraggio** > **Stato dell'assegnazione**.

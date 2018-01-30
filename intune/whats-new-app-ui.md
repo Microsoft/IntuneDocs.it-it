@@ -4,7 +4,7 @@ description: "Cosa è cambiato nell'interfaccia utente per le applicazioni usate
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1662245fdf9ba557fbc62fbb2e9c0e1aa29888b2
-ms.sourcegitcommit: 5877b650d93fc9a5e8f058f845acbdbfdff828b7
+ms.openlocfilehash: 9f39c908e6de55c0668f507c3d7eed9545deba82
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni su quali aggiornamenti sono stati apportati all'interfaccia utente per le app che gli utenti finali vedranno in questa versione di Microsoft Intune. Queste informazioni sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.

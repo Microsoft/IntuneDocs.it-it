@@ -5,7 +5,7 @@ description: Proteggere l'accesso alle risorse aziendali in base al rischio dei 
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16402b30895e61d9a4ff8393fd4d4c6efa061e9e
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: f1d5957acde86b3621009e5c38df42bc894a413c
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Integrazione di Mobile Threat Defense in Intune
 
@@ -30,7 +30,7 @@ I connettori Mobile Threat Defense di Intune consentono di basare i criteri di c
 
 Le aziende hanno l'esigenza di proteggere i dati sensibili da minacce emergenti che includono minacce fisiche, minacce basate su app e sulla rete, oltre a vulnerabilità del sistema operativo.
 
-Da sempre le aziende hanno adottato soluzioni proattive per la protezione dei PC da attacchi esterni, senza tuttavia monitorare e proteggere i dispositivi mobili. Anche se le piattaforme mobili includono misure di protezione predefinite, come l'isolamento delle app e store online controllati per le app dei consumatori, rimangono comunque vulnerabili ad attacchi sofisticati. Oggi, un numero sempre maggiore di dipendenti usa i dispositivi al lavoro e deve accedere a informazioni sensibili. I dispositivi devono essere protetti dagli attacchi sempre più sofisticati.
+Da sempre le aziende hanno adottato soluzioni proattive per la protezione dei PC da attacchi esterni, senza tuttavia monitorare e proteggere i dispositivi mobili. Le piattaforme mobili hanno protezioni incorporate, come l'isolamento delle app e il controllo degli app store consumer, ma continuano a essere vulnerabili agli attacchi sofisticati. Oggi, un numero sempre maggiore di dipendenti usa i dispositivi al lavoro e deve accedere a informazioni sensibili. I dispositivi devono essere protetti dagli attacchi sempre più sofisticati.
 
 ## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Come funzionano i connettori Mobile Threat Defense di Intune?
 

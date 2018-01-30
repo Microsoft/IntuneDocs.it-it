@@ -4,23 +4,24 @@ description: Informazioni su cosa significa registrare un dispositivo nel sistem
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 28e455230213da30fcf371a29b4862982f1a514b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usare dispositivi gestiti per lo svolgimento del lavoro
 Microsoft Intune è un componente software che consente alle organizzazioni di gestire dispositivi (ad esempio smartphone, tablet e PC), app e altre risorse aziendali come la posta elettronica. Questo strumento permette ai dipendenti di accedere alle informazioni di lavoro praticamente da qualsiasi luogo su quasi tutti i dispositivi e, al tempo stesso, contribuisce a proteggere le informazioni aziendali.
@@ -59,10 +60,10 @@ Quando si aggiunge un computer o un dispositivo al Portale aziendale, a seconda 
 
 Per informazioni su ciò che l'azienda può e non può visualizzare nei dispositivi degli utenti, usare il collegamento che corrisponde al tipo di dispositivo in uso:
 
-- [Installazione dell'app Portale aziendale per Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
+- [Installare l'app Portale aziendale per Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [Installazione dell'app Portale aziendale per iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Installazione dell'app Portale aziendale per macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
-- [Installazione dell'app Portale aziendale per Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+- [Installare l'app Portale aziendale per Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Quali tipi di computer o dispositivi è possibile aggiungere al Portale aziendale?
 -   Dispositivi Apple con iOS (ad esempio iPhone e iPad) e macOS (ad esempio MacBook e iMac)

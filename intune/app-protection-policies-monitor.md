@@ -5,7 +5,7 @@ description: Vedere quanti utenti dispongono di criteri ed eseguire il drill-dow
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d369b311339218edcb3204ce7c575986c7a08528
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -39,7 +39,7 @@ Lo stato di conformità può essere monitorato in tre posizioni diverse:
 
 ## <a name="summary-view"></a>Visualizzazione di riepilogo
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
 4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Monitoraggio** > **Stato dell'utente con protezione delle app** per esaminare la visualizzazione di riepilogo:

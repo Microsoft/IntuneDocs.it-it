@@ -5,7 +5,7 @@ description: "Informazioni sulle modalità di creazione dei criteri di conformit
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,18 +15,18 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76d1bb091553fbe5a1220c818289f59f4ef4100b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi Windows in Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-I criteri di conformità vengono creati per ogni piattaforma.  È possibile creare i criteri di conformità nel portale di Azure. Per altre informazioni sui criteri di conformità consultare l'argomento [What is a device compliance](device-compliance.md)(Che cos'è la conformità dei dispositivi). Per altre informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, consultare l'argomento [Get started with device compliance](device-compliance-get-started.md) (Introduzione alla conformità dei dispositivi).
+I criteri di conformità vengono creati per ogni piattaforma.  È possibile creare i criteri di conformità nel portale di Azure. Per altre informazioni sui criteri di conformità consultare l'argomento [What is a device compliance](device-compliance.md)(Che cos'è la conformità dei dispositivi). Per altre informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, consultare l'argomento [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
 
 La tabella seguente descrive il modo in cui le impostazioni di non conformità vengono gestite quando i criteri di conformità vengono usati con i criteri di accesso condizionale.
 
@@ -108,7 +108,7 @@ Se per questa impostazione viene usato un numero più alto, gli utenti dovranno 
 
 
 
-## <a name="device-health-settings"></a>Impostazioni dell'integrità dei dispositivi
+## <a name="device-health-settings"></a>Impostazioni dello stato dei dispositivi
 
 - **Richiedi che i dispositivi siano segnalati come integri:** è possibile impostare una regola per richiedere che i dispositivi **Windows 10 Mobile** vengano segnalati come integri nei criteri di conformità nuovi o esistenti. Se questa impostazione è abilitata, i dispositivi Windows 10 vengono valutati tramite il servizio di attestazione dell'integrità in base ai punti dati seguenti:
   - **Abilitazione della funzionalità BitLocker:** se la funzionalità BitLocker è attiva, il dispositivo è in grado di proteggere i dati archiviati nell'unità da accessi non autorizzati, quando il sistema è spento o passa allo stato di ibernazione. Crittografia unità BitLocker di Windows crittografa tutti i dati archiviati nel volume del sistema operativo Windows. BitLocker usa il TPM per proteggere il sistema operativo Windows e i dati utente e consente di garantire che un computer non venga manomesso anche se viene perso, rubato o lasciato incustodito. Se il computer è dotato di un TPM compatibile, BitLocker usa il TPM per bloccare le chiavi di crittografia che proteggono i dati. Di conseguenza, non è possibile accedere alle chiavi finché il TPM non ha verificato lo stato del computer.

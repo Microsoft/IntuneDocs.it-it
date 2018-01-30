@@ -5,7 +5,7 @@ description: "Informazioni su come usare Intune per configurare le impostazioni 
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 552e098438e7515c1a4b82a0a8dcb941c69ac81e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 4cd21d6e87dfa142fe9e3ef4d9bbbc0be87eca9b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Come configurare le impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune
 
@@ -31,7 +31,7 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 
 Per creare un profilo dispositivo contenente le impostazioni relative alle restrizioni del dispositivo:
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
