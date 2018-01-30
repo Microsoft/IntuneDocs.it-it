@@ -5,7 +5,7 @@ description: "Informazioni sui profili di dispositivo Intune e sulle modalità d
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 101e19a9de67a3a47f488988957bc1e7ef7626a3
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 0c745f9f745802e0de7a58e3dd7570c0e363ab5d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Informazioni sui profili di dispositivo in Microsoft Intune
 
@@ -56,7 +56,7 @@ Per altre informazioni, vedere [Come configurare le impostazioni di posta elettr
 Usare i profili Wi-Fi per assegnare le impostazioni di rete wireless agli utenti e ai dispositivi dell'organizzazione. Quando si assegna un profilo Wi-Fi, gli utenti hanno accesso alla rete Wi-Fi aziendale senza doverla configurare.
 Per altre informazioni, vedere [Come configurare le impostazioni Wi-Fi](wi-fi-settings-configure.md). Sistemi operativi supportati: Android, iOS, macOS e Windows 8.1 (solo importazione).
 
-## <a name="vpn"></a>VPN
+## <a name="vpn"></a>Connessione
 Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla rete aziendale. I dispositivi usano un profilo di connessione VPN per stabilire una connessione con il server VPN. Assegnare profili VPN agli utenti e ai dispositivi dell'organizzazione in modo che possano connettersi in modo facile e sicuro alla rete.
 Per altre informazioni, vedere [How to configure VPN settings](vpn-settings-configure.md) (Come configurare le impostazioni VPN).
 Sistemi operativi supportati: Android, iOS, Mac OS, Windows Phone 8.1, Windows 8.1 e Windows 10.

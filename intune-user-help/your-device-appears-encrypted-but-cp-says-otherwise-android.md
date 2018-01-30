@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f9c91c85b4a93fb211b5cd278dd82277a58cb08e
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: ab67a6f2fd1f861ba197464a9e369ca0b54e6b5d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Il dispositivo Android sembra essere crittografato, ma il portale aziendale indica il contrario
 
@@ -36,10 +37,6 @@ Le versioni più recenti di Android, in particolare a partire dalla versione 7.0
 
 Alcuni dispositivi Android richiedono la creazione di un PIN di avvio per assicurarsi che il dispositivo sia sicuro. Esistono molte versioni di Android da più produttori diversi. È possibile provare a risolvere il problema trovando la posizione in cui abilitare questa opzione nell'app delle impostazioni. Ad esempio, per abilitare l'avvio sicuro in un dispositivo Samsung Galaxy S7, passare a **Impostazioni** > **Blocco schermo e sicurezza** > **Avvio sicuro**.  
 
-### <a name="downgrade-your-version-of-android"></a>Effettuare il downgrade della versione di Android
-
-Se il dispositivo offre la possibilità di effettuare il downgrade a Android 6.0+, procedere in tal senso. Il tentativo di effettuare il downgrade del dispositivo potrebbe comportare dei rischi di perdita di dati. In caso contrario, è consigliabile contattare il supporto tecnico dell'azienda per risolvere il problema. Le informazioni di contatto per il supporto tecnico dell'azienda sono disponibili nel [sito Web Portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
-
 ### <a name="encrypt-the-entire-device"></a>Crittografare l'intero dispositivo
 
 Alcuni dispositivi consentono di scegliere se crittografare l'intero dispositivo o solo lo spazio usato. Scegliere l'opzione per crittografare l'intero dispositivo anziché solo lo spazio usato. Se è già stato crittografato solo lo spazio usato:
@@ -48,6 +45,10 @@ Alcuni dispositivi consentono di scegliere se crittografare l'intero dispositivo
 2. Decrittografare lo spazio usato
 3. Crittografare l'intero dispositivo
 4. Registrare nuovamente il dispositivo
+
+### <a name="downgrade-your-version-of-android"></a>Effettuare il downgrade della versione di Android
+
+Se il dispositivo offre la possibilità di effettuare il downgrade a Android 6.0+, procedere in tal senso. Il tentativo di effettuare il downgrade del dispositivo potrebbe comportare dei rischi di perdita di dati. In caso contrario, è consigliabile contattare il supporto tecnico dell'azienda per risolvere il problema. Le informazioni di contatto per il supporto tecnico dell'azienda sono disponibili nel [sito Web Portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 ## <a name="specific-manufacturer-issues"></a>Problemi di produttori specifici
 

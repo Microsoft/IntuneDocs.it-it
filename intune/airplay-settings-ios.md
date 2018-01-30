@@ -5,7 +5,7 @@ description: Informazioni su come usare Intune per connettere automaticamente i 
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a1472d86a0a25e35ef26be1c579ff491437676b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: fc1a30a86ae924777b435c67e67f926819753d67
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>Impostazioni di AirPlay di Intune per dispositivi iOS
 
@@ -31,7 +31,7 @@ Questa funzionalità consente di eseguire le operazioni seguenti:
 - **Configurare un elenco di dispositivi e password**: per consentire agli utenti di connettersi automaticamente ai dispositivi AirPlay nel campo. Eseguire il provisioning con il nome e la password dei dispositivi AirPlay in modo che non debbano specificarli al momento della connessione.
 - **Configurare le destinazioni consentite**: configurare un elenco di dispositivi AirPlay, usando l'ID dispositivo. Gli utenti finali possono visualizzare e connettersi solo ai dispositivi elencati (solo dispositivi con supervisione).
 
-## <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Operazioni preliminari
 
 1. Nel pannello **Funzionalità del dispositivo** scegliere **AirPlay**.
 2. Nel pannello **AirPlay** scegliere una o entrambe le operazioni seguenti:
@@ -40,7 +40,7 @@ Questa funzionalità consente di eseguire le operazioni seguenti:
 
 1. Nel pannello **Password** immettere **Nome dispositivo** e la **Password** di un dispositivo AirPlay, ad esempio **Contoso Apple TV**.
 2. Dopo aver immesso le informazioni sul dispositivo, fare clic su **Aggiungi**. Il dispositivo verrà visualizzato nell'elenco **Nome dispositivo**.
-3. Aggiungere tutti i dispositivi desiderati. Al termine scegliere **OK**.
+3. Aggiungere tutti i dispositivi desiderati. Al termine, scegliere **OK**.
 
 
 ## <a name="configure-allowed-destinations"></a>Configurare le destinazioni consentite

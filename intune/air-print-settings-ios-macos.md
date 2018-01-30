@@ -5,7 +5,7 @@ description: Informazioni su come usare Intune per connettere automaticamente i 
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8953997ce5437227463b8061b8059d58721dce7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5f55d05dd39fca02e72535cbbff9afb8d575ed9f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>Impostazioni di AirPrint per dispositivi iOS e macOS
 
@@ -42,7 +42,7 @@ Seguire questa procedura per aggiungere le informazioni AirPrint al payload AirP
 
 1. Nel pannello **Funzionalità del dispositivo** scegliere **AirPrint**.
 2. Nel pannello **AirPrint** immettere l'**indirizzo IP** e il **percorso della risorsa** per aggiungere una destinazione AirPrint e fare clic su **Aggiungi**.
-3. Aggiungere tutte le destinazioni necessarie. Al termine scegliere **OK**.
+3. Aggiungere tutte le destinazioni necessarie. Al termine, scegliere **OK**.
 
 È anche possibile importare un elenco di stampanti da un file con valori delimitati da virgole (csv) oppure esportarlo.
 

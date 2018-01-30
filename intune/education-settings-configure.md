@@ -5,7 +5,7 @@ description: Informazioni su come usare Intune per configurare le impostazioni d
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 12e36761320557f6af9554d3b671fc133253c13c
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b50c35dc805d033bd905105c22c4ec287dfaa1b7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Come configurare le impostazioni di Windows 10 relative alla formazione in Microsoft Intune
 
@@ -31,7 +31,7 @@ Per informazioni dettagliate su 	Test ed esami, vedere [Test ed esami in Windows
 
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>Creare un profilo di dispositivo contenente le impostazioni del profilo di formazione
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
