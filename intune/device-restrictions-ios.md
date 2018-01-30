@@ -5,7 +5,7 @@ description: "Informazioni sulle opzioni di Intune che è possibile usare per co
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
 
@@ -223,7 +223,7 @@ Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.
 -   **Associazione di Apple Watch (solo con supervisione)** - Consente al dispositivo di associare un Apple Watch.
 -   **Rilevamento del polso per l'Apple Watch associato** - Quando l'opzione è abilitata, Apple Watch non visualizza notifiche se non è indossato.
 -   **Modifica Bluetooth (solo con supervisione)** - Impedisce all'utente finale di modificare le impostazioni Bluetooth nel dispositivo.
--    **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
+-   **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
 -   **Richiedi la password associata alle richieste AirPlay in uscita** - Richiede una password di associazione quando l'utente usa AirPlay per trasmettere i contenuti ad altri dispositivi di Apple.
 
 ## <a name="keyboard-and-dictionary"></a>Tastiera e dizionario

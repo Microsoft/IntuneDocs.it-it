@@ -5,7 +5,7 @@ description: "Suggerimenti per trovare le funzionalità di Intune nel portale di
 keywords: 
 author: dagerrit
 ms.author: dagerrit
-manager: angrobe
+manager: dougeby
 ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
-ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
+ms.openlocfilehash: d15659e78c3b47753e9ef87a99d16ef1687ecf22
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Dove si trovano le funzionalità di Intune in Azure?
 Con lo spostamento di Intune nel portale di Azure, alcune attività sono state riorganizzate in modo più logico. Ma ogni ottimizzazione implica la necessità di abituarsi a una nuova organizzazione. È stata quindi realizzata questa Guida di riferimento, pensata espressamente per chi conosce già Intune nel portale classico e vuole imparare a usarlo nel portale di Azure. Se questo articolo non fornisce informazioni su una funzionalità specifica, lasciare un commento alla fine dell'articolo in modo che possa essere aggiornato.

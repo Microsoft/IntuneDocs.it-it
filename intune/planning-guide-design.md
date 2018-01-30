@@ -4,7 +4,7 @@ description: Questo articolo semplifica la creazione di una progettazione per un
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: bd8f3372f3546b5fba20a253611e382f780b3236
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 38cae4b0726d4ad96c243dd87ea2581a691da306
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -349,7 +349,7 @@ Per determinare le esigenze specifiche a livello di profili di posta elettronica
 
 -   [VPP (Volume Purchase Program) per le aziende per iOS](vpp-apps-ios.md)
 
--   [App di Windows Store per le aziende](windows-store-for-business.md)
+-   [App di Microsoft Store per le aziende](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Requisiti per il tipo di app
 

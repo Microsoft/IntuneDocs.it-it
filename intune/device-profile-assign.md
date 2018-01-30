@@ -5,7 +5,7 @@ description: Dopo aver creato un profilo di dispositivo con Intune, usare questo
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ba1438fe9227e0c7933fda7e9a2b60c8d4a5dca4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ef03eeab32050559d34d3d7d580c06c21f5ffb05
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-microsoft-intune-device-profiles"></a>Come assegnare i profili di dispositivo con Microsoft Intune
 
 ## <a name="assign-a-device-profile"></a>Assegnare un profilo di dispositivo
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 1. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.

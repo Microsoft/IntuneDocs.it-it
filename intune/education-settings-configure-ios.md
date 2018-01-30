@@ -5,7 +5,7 @@ description: "Informazioni sulle opzioni di Intune che è possibile usare per co
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f31ad2226052b4a681bc79e366e7d1def01c3cc4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Come configurare le impostazioni di Intune per l'app Classroom iOS
 
@@ -72,7 +72,7 @@ SDS sincronizza le informazioni dal sistema SIS e le archivia in Azure AD. Azure
 
 ### <a name="configure-general-settings"></a>Configurare le impostazioni generali
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3.  Nel pannello **Intune** scegliere **Configura i dispositivi**.
 4.  Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
