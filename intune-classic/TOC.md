@@ -142,7 +142,7 @@
 ## [Distribuire le app](deploy-use/deploy-apps.md)
 ### [Distribuire app su dispositivi e PC Windows](deploy-use/deploy-apps-in-microsoft-intune.md)
 ### [Distribuire app a dispositivi Android for Work](deploy-use/android-for-work-apps.md)
-### [Eseguire il monitoraggio delle app](deploy-use/monitor-apps-in-microsoft-intune.md)
+### [Monitoraggio le applicazioni](deploy-use/monitor-apps-in-microsoft-intune.md)
 ### [Gestire le app acquistate con Volume Purchase Program](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [Gestire le app iOS acquistate con Volume Purchase Program](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
 #### [Gestire le app Windows acquistate con Volume Purchase Program](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
