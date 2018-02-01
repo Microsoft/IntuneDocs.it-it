@@ -5,7 +5,7 @@ description: Informazioni su come creare un profilo VPN per app specifiche per i
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5b8e85ded2ea515f361c91c61744956b8112757
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 46555f776ff93207f4672dc5d97abbaa2323b234
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Usare un profilo personalizzato di Microsoft Intune per creare un profilo VPN per ogni app per dispositivi Android
 
@@ -37,7 +37,7 @@ Dopo aver assegnato i criteri ai gruppi di utenti o ai dispositivi Android, gli 
 ## <a name="step-1-create-a-vpn-profile"></a>Passaggio 1: Creare un profilo VPN
 
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
@@ -51,7 +51,7 @@ Prendere nota del valore **Nome connessione** specificato quando si crea il prof
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>Passaggio 2: Creare criteri di configurazione personalizzati
 
-1. Accedere al portale Azure.
+1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
@@ -63,7 +63,7 @@ Prendere nota del valore **Nome connessione** specificato quando si crea il prof
 3. Nel pannello **Impostazioni OMA-URI personalizzate** scegliere **Aggiungi**.
     - Immettere un nome per l'impostazione.
     - In **Tipo di dati** specificare **Stringa**.
-    - In **URI OMA** specificare la stringa seguente: **./Vendor/MSFT/VPN/Profile/*nome*/PackageList** dove *nome* è il nome del profilo VPN annotato nel passaggio 1. In questo esempio, la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+    - In **URI OMA** specificare la stringa seguente: **./Vendor/MSFT/VPN/Profile/*nome*/PackageList**, dove *nome* è il nome del profilo VPN annotato nel passaggio 1. In questo esempio, la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
     - Per l'opzione **Valore** creare un elenco separato da punti e virgola dei pacchetti da associare al profilo. Ad esempio, se si vuole che Excel e il browser Google Chrome usino la connessione VPN, digitare: **com.microsoft.office.excel;com.android.chrome**.
 
 ![Esempio di criteri personalizzati VPN per app Android](./media/android_per_app_vpn_oma_uri.png)
@@ -74,7 +74,7 @@ In alternativa, è possibile usare il valore **WHITELIST** per specificare un el
   1.    Nel pannello **Impostazioni OMA-URI personalizzate** scegliere **Aggiungi**.
   2.    Immettere un nome per l'impostazione.
   3.    In **Tipo di dati** specificare **Stringa**.
-  4.    Per **URI OMA** usare la stringa seguente: **./Vendor/MSFT/VPN/Profile/*nome*/Mode** dove *nome* è il nome del profilo VPN annotato nel passaggio 1. Con il nome di esempio citato in precedenza la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  4.    Per **URI OMA** usare la stringa seguente: **./Vendor/MSFT/VPN/Profile/*nome*/Mode**, dove *nome* è il nome del profilo VPN annotato nel passaggio 1. Con il nome di esempio citato in precedenza la stringa sarà **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
   5.    In **Valore** immettere **BLACKLIST** o **WHITELIST**.
 
 

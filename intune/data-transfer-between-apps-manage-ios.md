@@ -5,7 +5,7 @@ description: "Usare questo argomento per comprendere come è possibile usare la 
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
@@ -15,17 +15,17 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83ef0050380b8b5e3741dc7b8ea57574df6df658
-ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
+ms.openlocfilehash: 2d110a099b4957626d4368c9e63817674d6cfaa2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Come gestire il trasferimento di dati tra app iOS
 ## <a name="manage-ios-apps"></a>Gestire le app iOS
 La protezione dei dati aziendali prevede anche che ci si assicuri che i trasferimenti di file siano limitati alle app gestite dall'utente.  È possibile gestire le app iOS nei modi seguenti:
 
--   Evitare perdite di dati aziendali tramite la configurazione di criteri di protezione delle app, a cui si farà riferimento con il termine app **gestite da criteri**. Vedere [tutte le app abilitate per Intune gestibili con i criteri di protezione delle app](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+-   Evitare perdite di dati aziendali tramite la configurazione di criteri di protezione delle app, a cui si farà riferimento con il termine app **gestite da criteri**. Vedere [tutte le app gestite da Intune che è possibile gestire con i criteri di protezione delle app](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
 
 -   È anche possibile distribuire e gestire le app tramite il **canale MDM**.  Ciò richiede che i dispositivi vengono registrati nella soluzione MDM. Possono essere app **gestite da criteri** o altre app gestite.
 

@@ -5,7 +5,7 @@ description: Informazioni su come sincronizzare le app in Intune da Microsoft St
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ca1ab9ca0e6bd734fa756cd32e64bde7ff4cb40
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 85141fc6f4d71994f575233c255a97e336c92108
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Come gestire le app acquistate in Microsoft Store per le aziende con Microsoft Intune
 
@@ -31,7 +31,7 @@ In [Microsoft Store per le aziende](https://www.microsoft.com/business-store) è
 * Le app sincronizzate vengono visualizzate nella console di amministrazione di Intune ed è possibile assegnarle come qualsiasi altra app.
 * È possibile tenere traccia del numero di licenze disponibili e del numero di licenze in uso nella console di amministrazione di Intune.
 * Intune blocca l'assegnazione e l'installazione di app se non sono disponibili licenze sufficienti.
-* Le app gestite da Windows Store for Business revocano automaticamente le licenze quando un utente lascia l'azienda o l'amministratore rimuove l'utente e i dispositivi dell'utente.
+* Le app gestite da Microsoft Store per le aziende revocano automaticamente le licenze quando un utente lascia l'azienda o l'amministratore rimuove l'utente e i dispositivi dell'utente.
 
 ## <a name="before-you-start"></a>Prima di iniziare
 

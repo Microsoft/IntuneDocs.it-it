@@ -4,7 +4,7 @@ description: Questo articolo fornisce indicazioni su come definire un piano e un
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: e36e917c035d4bbadccd629ef4cc21552cc62ec6
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="plan-communications"></a>Pianificare le comunicazioni
 
@@ -30,13 +30,13 @@ Si consiglia il piano di comunicazione di posta elettronica seguente. Sono dispo
 -   **Messaggio di posta elettronica\# 1:** illustrare vantaggi, aspettative e pianificazione. Cogliere questa opportunità per presentare tutti gli altri nuovi servizi a cui sarà concesso l'accesso nei dispositivi gestiti da Intune.<br/><br/>
 
 
-    -   [Scaricare il modello di messaggio di posta\# 1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
+    -   [Scaricare il modello Messaggio di posta elettronica\# 1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
 -   **Messaggio di posta elettronica\# 2:** annunciare che i servizi sono ora pronti per l'accesso tramite Intune. Dare istruzioni agli utenti di eseguire la registrazione. Ricordare agli utenti i vantaggi e i motivi strategici per la migrazione.<br/><br/>
 
 
-    -   [Scaricare il modello di messaggio di posta\# 2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
+    -   [Scaricare il modello Messaggio di posta elettronica\# 2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
 -   **Messaggio di posta elettronica\# 3:** indicare una sequenza temporale agli utenti prima che l'accesso venga compromesso. Ricordare di nuovo agli utenti i vantaggi e i motivi strategici per la migrazione. La tempistica di invio dei messaggi di posta elettronica deve includere una finestra temporale scorrevole corrispondente alle fasi previste. Ad esempio, in giugno inviare il messaggio di posta elettronica\# 1 agli utenti nella fase 1, il messaggio di posta elettronica\# 2 agli utenti nella fase 2 e il messaggio di posta elettronica\# 3 agli utenti nella fase 3.<br/><br/>
