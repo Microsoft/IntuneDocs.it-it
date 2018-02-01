@@ -5,7 +5,7 @@ description: Informazioni sull'aggiunta di app dello Store iOS a Intune."
 keywords: Intune
 author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7dcb857127b3c36d2b90208aac9b8ad901e31d89
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: e013b5c995274365978ee0c2ba2f45bfeef54baa
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Come aggiungere app iOS Store a Microsoft Intune
 
@@ -35,6 +35,8 @@ Usare le informazioni di questo argomento per aggiungere le app dello Store iOS 
 
 È possibile assegnare le app solo con questo metodo se sono gratuite nell'App Store. Per assegnare app a pagamento con Intune, valutare la possibilità di usare [Volume Purchase Program iOS](vpp-apps-ios.md).
 
+>[!NOTE]
+>Chrome ed Edge sono i browser consigliati per l'utilizzo con Microsoft Intune.
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Passaggio 1: cercare l'app nello Store
 
@@ -63,9 +65,9 @@ Usare le informazioni di questo argomento per aggiungere le app dello Store iOS 
 - **Visualizza come app in primo piano nel portale aziendale**: evidenzia l'app nella pagina principale del portale aziendale Intune quando gli utenti sfogliano le app.
 - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
 - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-- **Developer**: immettere il nome dello sviluppatore dell'applicazione (facoltativo). Questo campo è visibile solo per gli amministratori e non per gli utenti finali.
-- **Proprietario**: immettere il nome del proprietario di questa app, ad esempio **Reparto risorse umane** (facoltativo).  Questo campo è visibile solo per gli amministratori e non per gli utenti finali.
-- **Note**: immettere eventuali note da associare a questa app. Questo campo è visibile solo per gli amministratori e non per gli utenti finali.
+- **Developer**: immettere il nome dello sviluppatore dell'applicazione (facoltativo). Questo campo è visibile solo per gli amministratori e non per gli utenti.
+- **Proprietario**: immettere il nome del proprietario di questa app, ad esempio **Reparto risorse umane** (facoltativo).  Questo campo è visibile solo per gli amministratori e non per gli utenti.
+- **Note**: immettere eventuali note da associare a questa app. Questo campo è visibile solo per gli amministratori e non per gli utenti.
 - **Logo**: caricare un'icona che viene associata all'app. L'icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
 3. Al termine, nel pannello **Aggiungi app** scegliere **OK**.
 

@@ -4,7 +4,7 @@ description: Usare le informazioni in questo argomento per informazioni su come 
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: 4925fc86596437d0560bd7fa2598eaf95126df16
+ms.sourcegitcommit: cede2e15bd62f1073131fbc9af7623cdfc3730cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app iOS per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -172,6 +172,9 @@ Per altre informazioni sulla distribuzione di app iOS internamente per gli utent
 3. Scegliere **Accetto** per accettare il contratto di licenza e procedere al montaggio del pacchetto nel computer.
 
 4.  Aprire la cartella **IntuneMAMPackager** e salvarne il contenuto nel computer macOS. È ora possibile eseguire lo strumento di wrapping delle app.
+
+> [!NOTE]
+> È possibile che Intune MAM Packager venga montato separatamente nel computer macOS generando l'errore "file non trovato" quando si eseguono i comandi di wrapping. Lo spostamento del contenuto della cartella IntuneMAMPackager consentirà pertanto di trovare il percorso al packager durante l'operazione di wrapping.
 
 ## <a name="run-the-app-wrapping-tool"></a>Eseguire lo strumento di wrapping delle app
 

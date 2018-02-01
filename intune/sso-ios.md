@@ -5,7 +5,7 @@ description: Informazioni su come configurare Intune per l'accesso Single Sign-O
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff71239a360b09ca831a6e99f5f7a759b08f5d56
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="configure-intune-for-ios-device-single-sign-on"></a>Configurare Intune per l’accesso Single Sign-On al dispositivo iOS
 
@@ -89,7 +89,7 @@ I criteri `http://.com` e `https://.com` corrispondono rispettivamente a tutti g
 
 Indicare le app nel dispositivo dell'utente finale che possono usare il payload Single Sign-On.
 
-La matrice `AppIdentifierMatches` deve contenere stringhe corrispondenti agli ID dei bundle dell'app. Queste stringhe potrebbero essere corrispondenze esatte (ad esempio: `com.contoso.myapp`) o specificare una corrispondenza di prefisso per l'ID del bundle usando il carattere jolly *. Il carattere jolly deve essere visualizzato dopo un punto (.) e può comparire una sola volta alla fine della stringa (ad esempio: `com.contoso.*`). Quando si include un carattere jolly, viene concesso all'account l'accesso a qualsiasi app il cui ID di bundle inizia con il prefisso.
+La matrice `AppIdentifierMatches` deve contenere stringhe corrispondenti agli ID dei bundle dell'app. Queste stringhe potrebbero essere corrispondenze esatte (ad esempio: `com.contoso.myapp`) o specificare una corrispondenza di prefisso per l'ID del bundle usando il carattere jolly *\. Il carattere jolly deve essere visualizzato dopo un punto (.) e può comparire una sola volta alla fine della stringa (ad esempio: `com.contoso.*`). Quando si include un carattere jolly, viene concesso all'account l'accesso a qualsiasi app il cui ID di bundle inizia con il prefisso.
 
 Il campo **Nome app** viene usato per aggiungere un nome descrittivo per facilitare l'identificazione dell'ID del bundle.
 

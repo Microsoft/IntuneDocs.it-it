@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: abb0267f46d2933b0037ed661281198a5981f659
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app
 
@@ -32,7 +32,7 @@ Questo articolo fornisce risposte ad alcune domande frequenti su Gestione di app
 
 **Che cos'è MAM?** [Gestione di applicazioni mobili (MAM) di Intune](/intune/app-lifecycle) indica la suite di funzionalità di gestione di Intune che consente di pubblicare, distribuire, configurare, proteggere, monitorare e aggiornare le app mobili degli utenti.
 
-**Quali sono i vantaggi della protezione delle app di MAM?** MAM protegge i dati di un'organizzazione all'interno di un'applicazione. Con MAM-WE un'app correlata all'istituto di istruzione o all'azienda contenente dati sensibili può essere gestita in quasi tutti i dispositivi, inclusi i dispositivi personali in scenari bring-your-own-device (BYOD). La maggior parte delle app di produttività, ad esempio le app per Microsoft Office, può essere gestita da MAM di Intune. Vedere l'elenco ufficiale delle [app abilitate per Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponibili al pubblico.
+**Quali sono i vantaggi della protezione delle app di MAM?** MAM protegge i dati di un'organizzazione all'interno di un'applicazione. Con MAM-WE un'app correlata all'istituto di istruzione o all'azienda contenente dati sensibili può essere gestita in quasi tutti i dispositivi, inclusi i dispositivi personali in scenari bring-your-own-device (BYOD). La maggior parte delle app di produttività, ad esempio le app per Microsoft Office, può essere gestita da MAM di Intune. Vedere l'elenco ufficiale delle [app gestite da Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponibili al pubblico.
 
 **Quali configurazioni dei dispositivi sono supportate da MAM?** MAM di Intune supporta due configurazioni:
   1. **Intune MDM + MAM**: questa è la prima configurazione supportata da MAM al primo avvio. Gli amministratori IT possono gestire le app solo usando MAM e i criteri di protezione delle app nei dispositivi registrati con la gestione di dispositivi mobili (MDM) di Intune. Per gestire le app con MDM e MAM, i clienti devono usare la console autonoma di Intune all'indirizzo https://manage.microsoft.com.
@@ -48,9 +48,9 @@ Questo articolo fornisce risposte ad alcune domande frequenti su Gestione di app
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>App gestibili con i criteri di protezione delle app
 
-**Quali app possono essere gestite dai criteri di protezione delle app?** Qualsiasi app abilitata da [Intune App SDK](/intune/app-sdk) o di cui è stato eseguito il wrapping tramite lo [strumento di wrapping delle app di Intune](/intune/apps-prepare-mobile-application-management) può essere gestita mediante i criteri di protezione delle app di Intune. Vedere l'elenco ufficiale delle [app abilitate per Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponibili al pubblico.
+**Quali app possono essere gestite dai criteri di protezione delle app?** Qualsiasi app abilitata da [Intune App SDK](/intune/app-sdk) o di cui è stato eseguito il wrapping tramite lo [strumento di wrapping delle app di Intune](/intune/apps-prepare-mobile-application-management) può essere gestita mediante i criteri di protezione delle app di Intune. Vedere l'elenco ufficiale delle [app gestite da Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) disponibili al pubblico.
 
-**Quali sono i requisiti di base per usare i criteri di protezione delle app in un'app abilitata per Intune?**
+**Quali sono i requisiti di base per usare i criteri di protezione delle app in un'app gestita da Intune?**
   1. L'utente finale deve avere un account Azure Active Directory (AAD). Per imparare a creare gli utenti Intune in Azure Active Directory, vedere [Aggiungere utenti e concedere autorizzazioni amministrative a Intune](/intune/users-permissions-add).
 
   2. L'utente finale deve disporre di una licenza per Microsoft Intune assegnata all'account Azure Active Directory. Per informazioni su come assegnare le licenze di Intune agli utenti finali, vedere [Gestire le licenze di Intune](/intune/licenses-assign).
@@ -136,7 +136,7 @@ MAM (in iOS) consente attualmente un PIN a livello di applicazione con caratteri
 
 **Perché i servizi locali non funzionano con le app protette di Intune?** La protezione delle app di Intune dipende dalla coerenza dell'identità dell'utente tra l'applicazione e Intune App SDK. L'unico modo per garantire questo scenario è tramite l'autenticazione moderna. Esistono scenari in cui le app possono funzionare con una configurazione locale, ma non sono garantiti, né coerenti.
 
-**Esiste un modo sicuro per aprire i collegamenti Web da app gestite?** Sì. L'amministratore IT può distribuire e impostare i criteri di protezione delle app per l'[app Intune Managed Browser](../deploy-use/manage-internet-access-using-managed-browser-policies.md), un Web browser sviluppato da Microsoft Intune che è possibile gestire facilmente con Intune. L'amministratore IT può richiedere che tutti i collegamenti Web nelle app abilitate per Intune vengano aperti tramite l'app Managed Browser.
+**Esiste un modo sicuro per aprire i collegamenti Web da app gestite?** Sì. L'amministratore IT può distribuire e impostare i criteri di protezione delle app per l'[app Intune Managed Browser](../deploy-use/manage-internet-access-using-managed-browser-policies.md), un Web browser sviluppato da Microsoft Intune che è possibile gestire facilmente con Intune. L'amministratore IT può richiedere che tutti i collegamenti Web nelle app gestite da Intune vengano aperti tramite l'app Managed Browser.
 
 
 ## <a name="app-experience-on-android"></a>Esperienza dell'app in Android

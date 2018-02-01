@@ -5,27 +5,25 @@ description: "Informazioni sulle impostazioni di Intune che è possibile usare p
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 10/20/2017
+manager: dougeby
+ms.date: 1/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54ff681c96dc01587cd9a2770dacc5bb9a54d134
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e7bd1d15276f93b50a22c7b47de6bd1eb619264a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Impostazioni VPN per i dispositivi Windows 10 in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A seconda delle impostazioni selezionate, non tutti i valori nell'elenco seguente sono configurabili.
+A seconda delle impostazioni selezionate, non tutti i valori nell'elenco seguente saranno configurabili.
 
 
 ## <a name="base-vpn-settings"></a>Impostazioni VPN di base
@@ -81,6 +79,8 @@ A seconda delle impostazioni selezionate, non tutti i valori nell'elenco seguent
 ```
 
 Per altre informazioni su come scrivere comandi XML personalizzati, fare riferimento alla documentazione della VPN fornita dai diversi produttori.
+
+Per altre informazioni sulla creazione di XML EAP personalizzato, vedere [EAP configuration](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration) (Configurazione EAP).
 
 **Split tunneling** - **abilitare** o **disabilitare** questa opzione che consente ai dispositivi di stabilire la connessione da usare in base al traffico. Ad esempio, un utente in un hotel userà la connessione VPN per accedere ai file di lavoro, ma userà la rete standard dell'hotel per la normale esplorazione sul Web.
 - **Route di split tunneling per questa connessione VPN**: aggiungere route facoltative per i provider VPN di terze parti. Specificare un prefisso di destinazione e la dimensione del prefisso per ognuno.

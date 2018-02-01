@@ -5,7 +5,7 @@ description: Usare un profilo personalizzato di Intune per creare un profilo Wi-
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 395a7136630a9393f44037c65e3c8db760149c38
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Usare un profilo di dispositivo personalizzato per la creazione di un profilo Wi-Fi con una chiave precondivisa
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -210,7 +210,5 @@ Di seguito è riportato un esempio di codice XML per un profilo Wi-Fi basato su 
 Prima di distribuire un profilo Wi-Fi con una chiave precondivisa, verificare che il dispositivo possa connettersi direttamente all'endpoint.
 
 Durante la rotazione delle chiavi (password o passphrase), prevedere un tempo di inattività e pianificare di conseguenza le distribuzioni. Considerare di effettuare il push dei nuovi profili Wi-Fi durante ore non lavorative. Avvisare anche gli utenti che la connettività potrebbe essere compromessa.
- 
-Per garantire una transizione graduale e distribuire tempestivamente gli aggiornamenti dei criteri, è necessario che almeno uno dei canali di comunicazione dei dispositivi rimanga aperto a Intune. A tale scopo, usare la connettività del cellulare oppure prevedere un accesso Wi-Fi guest in modo che gli utenti possano connettersi solo agli endpoint di Intune.
 
-
+Per garantire un'esperienza di transizione senza problemi, verificare che il dispositivo dell'utente disponga di una connessione a Internet alternativa. Ad esempio, l'utente deve essere in grado di tornare al Wi-Fi guest (o a un'altra rete Wi-Fi) o avere connettività cellulare per la comunicazione con Intune. Ciò consente all'utente di continuare a ricevere gli aggiornamenti dei criteri quando viene aggiornato il profilo Wi-Fi aziendale nel dispositivo.
