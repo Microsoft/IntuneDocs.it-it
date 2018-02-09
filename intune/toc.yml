@@ -68,6 +68,8 @@
           href: app-lifecycle.md
     - name: Scenari comuni
       href: common-scenarios.md
+    - name: DOMANDE FREQUENTI SU MAM
+      href: mam-faq.md
 - name: Pianificare la distribuzione
   items:
     - name: Guida alla pianificazione
