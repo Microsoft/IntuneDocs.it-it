@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36dc2924602ffa060d01d3ba932c657fd52552c7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6d1a4513b8ef6e1f42ad84558de8a57399bb8c1b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Esperienza utente relativa alla protezione base nelle app di Office 365 gestite
 
@@ -128,4 +128,4 @@ Per visualizzare o aggiornare questi criteri o eventuali criteri creati nel port
 ![Immagine del percorso dell'interfaccia utente per visualizzare i criteri](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Altre informazioni sui [criteri di protezione delle app](https://docs.microsoft.comapp-protection-policy.md).
+Altre informazioni sui [criteri di protezione delle app](app-protection-policy.md).

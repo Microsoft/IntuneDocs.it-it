@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f17b885ffc05808933a955dcb4f8977ffb0f4a0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
@@ -52,7 +52,7 @@ Intune offre un'ampia gamma di funzionalità che consente di usare le app necess
 |Installazione obbligatoria delle applicazioni sui dispositivi (obbligatorio)<sup>2</sup>|Sì|Sì|Sì|Sì|
 |Installazione facoltativa di dispositivi dal Portale aziendale (installazione disponibile)|Sì|Sì|Sì|Sì|
 |Installazione di combinazione di tasti per un'applicazione sul Web (clip Web)|Sì|Sì|Sì|Sì|
-|App interne (line-of-business)|Sì|Sì|No|No|
+|App interne (line-of-business)|Sì|Sì|No|Sì|
 |App da uno Store|Sì|Sì|Sì|Sì|
 |Aggiornare le app|Sì|Sì|Sì|Sì|
 

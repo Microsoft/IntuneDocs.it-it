@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
 ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: 7d204f97f1d6e6aad55e5b7f1b53c8c751190b0f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ead246477ed4fe50798df7023c32041cb30a39f4
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Ridurre i costi dell'help desk tramite la reimpostazione della password self-service
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="next-steps"></a>Passaggi successivi
 
 Altre informazioni sugli argomenti seguenti:
-* [Procedure consigliate per le password](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwordsd) 
+* [Procedure consigliate per le password](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Concessione in licenza della reimpostazione della password self-service](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
 Se si vuole ottenere assistenza per l'abilitazione di questi scenari o di altri scenari per EMS oppure Office 365 e sono disponibili almeno 150 licenze per Microsoft 365, Enterprise Mobility + Security o Azure Active Directory Premium, usare i propri [vantaggi FastTrack](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program).
