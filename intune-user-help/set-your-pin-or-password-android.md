@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d4ce8d7878845b880e958b8869471b6393a59ba7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b4cf329806b49f427eaa2d1c888c40102e6564ab
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="set-your-pin-or-password"></a>Impostare il PIN o la password
 
@@ -33,6 +33,6 @@ Per impostare un PIN o una password eseguire la procedura seguente.
 
 2.  Scegliere e confermare la nuova password.
 
-Per alcuni dispositivi, è possibile che sia necessario impostare un PIN di avvio oltre alla password della schermata. È possibile provare a risolvere il problema trovando la posizione in cui abilitare questa opzione nell'app delle impostazioni. Ad esempio, per abilitare l'avvio sicuro in un dispositivo Samsung Galaxy S7, passare a **Impostazioni** > **Blocco schermo e sicurezza** > **Avvio sicuro**. Per altre informazioni, vedere [qui](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise). 
+Per alcuni dispositivi, è possibile che sia necessario impostare un PIN di avvio oltre alla password della schermata. È possibile provare a risolvere il problema trovando la posizione in cui abilitare questa opzione nell'app delle impostazioni. Ad esempio, per abilitare l'avvio sicuro in un dispositivo Samsung Galaxy S7, passare a **Impostazioni** > **Blocco schermo e sicurezza** > **Avvio sicuro**. Per altre informazioni, vedere [qui](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android). 
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
