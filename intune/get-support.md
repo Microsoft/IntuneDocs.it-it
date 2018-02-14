@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a844255451f441f0b64cb020b863b4775fbb768
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Come ottenere supporto per Microsoft Intune
 
@@ -47,7 +47,7 @@ Gli amministratori IT possono archiviare un ticket di supporto dal portale di Az
     - **Piano di supporto**: **Supporto tecnico - incluso** (per problemi tecnici di Intune, il supporto è gratuito).
 
     >[!IMPORTANT]
-    >Il supporto per Intune e per Intune usato con Configuration Manager è gratuito. Per esaminare i dettagli dell'offerta del supporto tecnico Premier, vedere la documentazione [Description of Services](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx) (Descrizione dei servizi), sezione 5.3.3 "Advisory Services" (Servizi di consulenza).
+    >Il supporto per Intune e per Intune usato con Configuration Manager è gratuito. Per esaminare i dettagli dell'offerta del supporto tecnico Premier, vedere la documentazione [Description of Services](https://www.microsoft.com/microsoftservices/services-list.aspx) (Descrizione dei servizi), sezione 5.3.3 "Advisory Services" (Servizi di consulenza).
 
     Scegliere **Avanti** per continuare.
 4. Nel pannello **Problema** selezionare le opzioni seguenti per assicurarsi che la richiesta venga analizzata da un esperto in materia:
