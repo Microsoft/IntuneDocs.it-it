@@ -36,7 +36,7 @@ Usare le informazioni di questo argomento per aggiungere le app dello Store iOS 
 È possibile assegnare le app solo con questo metodo se sono gratuite nell'App Store. Per assegnare app a pagamento con Intune, valutare la possibilità di usare [Volume Purchase Program iOS](vpp-apps-ios.md).
 
 >[!NOTE]
->Chrome ed Edge sono i browser consigliati per l'utilizzo con Microsoft Intune.
+>Chrome e Microsoft Edge sono i browser consigliati per l'utilizzo con Microsoft Intune.
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Passaggio 1: cercare l'app nello Store
 
