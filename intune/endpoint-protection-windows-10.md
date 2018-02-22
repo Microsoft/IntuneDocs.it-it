@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Impostazioni di Endpoint Protection per Windows 10 e versioni successive in Microsoft Intune
 
@@ -225,7 +225,9 @@ Per abilitare la protezione dagli exploit creare un file XML che rappresenta le 
 
 Usare i **criteri relativi all'integrità del codice di controllo dell'applicazione** per scegliere altre app che devono essere controllate o possono essere ritenute attendibili per l'esecuzione da parte del Controllo di applicazioni di Windows Defender. I componenti Windows e tutte le app di Windows Store sono ritenuti automaticamente attendibili per l'esecuzione.
 
-In modalità "solo controllo" le applicazioni non vengono bloccate. La modalità "solo controllo" registra tutti gli eventi nei log del client locali.
+In modalità **Solo controllo** le applicazioni non vengono bloccate. La modalità **Solo controllo** registra tutti gli eventi nei log del client locali.
+
+Una volta abilitato, il controllo delle applicazioni può essere disabilitato solo passando dalla modalità **Imponi** alla modalità **Solo controllo**. Il passaggio dalla modalità **Imponi** alla modalità **Non configurato** fa sì che il controllo delle applicazioni continui a essere applicato nei dispositivi assegnati.
 
 ## <a name="windows-defender-security-center"></a>Windows Defender Security Center
 
