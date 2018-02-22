@@ -15,15 +15,15 @@ searchScope:
 - User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: ef8d10a1bc06234930ae32a2ce0dc8b1503e89d0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3851095689f194a2133aaa1b0ac8712098662226
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>È necessario aggiornare il sistema operativo del dispositivo Android
 
-Se viene visualizzato un messaggio indicante che il livello minimo di sicurezza della patch Android non è configurato, è necessario installare un aggiornamento per garantire che il dispositivo rimanga protetto. Viene rilasciata una _patch_ per garantire l'esecuzione e l'aggiornamento del software. Il supporto tecnico dell'azienda richiede di installare questa patch per assicurarsi che i dati aziendali siano mantenuti protetti nel dispositivo. Il percorso della patch di sicurezza necessaria varia a seconda del tipo specifico di dispositivo Samsung.
+Se viene visualizzato un messaggio indicante che il livello minimo di sicurezza della patch Android non è configurato, è necessario installare un aggiornamento per garantire che il dispositivo rimanga protetto. Viene rilasciata una _patch_ per garantire l'esecuzione e l'aggiornamento del software. Il supporto tecnico dell'azienda richiede di installare questa patch per assicurarsi che i dati aziendali siano mantenuti protetti nel dispositivo. Il percorso della patch di sicurezza necessaria varia a seconda del tipo di dispositivo Android usato.
 
 Se si dispone di un dispositivo Samsung, passare a **Impostazioni** > **Info sul dispositivo** e verificare se in un punto dello schermo è presente la parola "Knox". In questo caso, seguire le istruzioni di Samsung Knox riportate di seguito.
 

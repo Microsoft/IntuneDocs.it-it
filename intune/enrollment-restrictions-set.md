@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3e3f35648784de860eb7e3f2e203488bc77a96d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
@@ -31,7 +31,7 @@ Gli amministratori di Intune sono in grado di creare e gestire restrizioni di re
 >Le restrizioni di registrazione non sono una funzionalità di sicurezza. I dispositivi compromessi possano dare risultati non previsti. Queste restrizioni sono una barriera di massimo sforzo per gli utenti legittimi.
 
 >[!NOTE]
->Le funzionalità menzionate di seguito per le restrizioni e l'impostazione dell'ordine di priorità per la registrazione dei dispositivi con applicazione ai gruppi sono in corso di distribuzione tra i clienti di Intune. Fino al termine della distribuzione, le funzionalità per gruppi e priorità potrebbero non essere accessibili. 
+>Le funzionalità menzionate di seguito per le restrizioni e l'impostazione dell'ordine di priorità per la registrazione dei dispositivi con applicazione ai gruppi sono in corso di distribuzione tra i clienti di Intune. Fino al termine della distribuzione, le funzionalità per gruppi e priorità potrebbero non essere accessibili.
 
 Le restrizioni di registrazione specifiche che è possibile creare includono:
 
@@ -80,7 +80,7 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
   - Android e Android for Work supportano major.minor.rev.build.
   - iOS supporta il formato di versione maggiore.minore.revisione.
   - Windows supporta il formato maggiore.minore.revisione.build solo per Windows 10.
-  Le versioni del sistema operativo non si applicano ai dispositivi Apple registrati in Device Enrollment Program, Apple School Manager o nell'app Apple Configurator. 
+  Le versioni del sistema operativo non si applicano ai dispositivi Apple registrati in Device Enrollment Program, Apple School Manager o nell'app Apple Configurator.
 8. Specificare **Consenti** o **Blocca** per i dispositivi **di proprietà personale** per ogni piattaforma elencata.
 
     ![Screenshot dell'area di lavoro delle restrizioni relative ai dispositivi con la configurazione dei dispositivi di proprietà personale visualizzate per le configurazioni delle piattaforme predefinite.](media/device-restrictions-platform-configurations.png)
@@ -103,15 +103,19 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
     ![Schermata del pannello Restrizione sul limite di dispositivi con le restrizioni sul limite del dispositivo.](./media/device-restrictions-limit.png)
 6. Fare clic su **Save**.
 
+Verrà visualizzata una notifica che informa l'utente finale quando raggiunge il limite di dispositivi registrati. Ad esempio, in iOS verrà visualizzato un messaggio simile al seguente:
+
+![Screenshot della notifica iOS per il limite di dispositivi](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
 ## <a name="change-enrollment-restriction-priority"></a>Modificare la priorità delle restrizioni di registrazione
 
-La priorità viene usata se un utente appartiene a più gruppi a cui sono assegnate restrizioni. Gli utenti sono soggetti solo alla restrizione con priorità più alta assegnata a un gruppo di cui fanno parte. Si supponga ad esempio che Joe appartenga al gruppo A, a cui sono assegnate restrizioni con priorità 5, e al gruppo B, a cui sono assegnate restrizioni con priorità 2. Joe è soggetto solo alle restrizioni con priorità 2. 
+La priorità viene usata se un utente appartiene a più gruppi a cui sono assegnate restrizioni. Gli utenti sono soggetti solo alla restrizione con priorità più alta assegnata a un gruppo di cui fanno parte. Si supponga ad esempio che Joe appartenga al gruppo A, a cui sono assegnate restrizioni con priorità 5, e al gruppo B, a cui sono assegnate restrizioni con priorità 2. Joe è soggetto solo alle restrizioni con priorità 2.
 
 Quando si crea una restrizione, questa viene aggiunta all'elenco al livello immediatamente superiore a quello dell'impostazione predefinita.
 
-La registrazione di dispositivi prevede restrizioni predefinite sia per il tipo che per il numero di dispositivi. Queste due restrizioni si applicano a tutti gli utenti, a meno che non vengano sostituite da restrizioni con priorità più alta. 
+La registrazione di dispositivi prevede restrizioni predefinite sia per il tipo che per il numero di dispositivi. Queste due restrizioni si applicano a tutti gli utenti, a meno che non vengano sostituite da restrizioni con priorità più alta.
 
-È possibile modificare la priorità di tutte le restrizioni non predefinite. 
+È possibile modificare la priorità di tutte le restrizioni non predefinite.
 
 **Per modificare la priorità delle restrizioni**
 
@@ -120,8 +124,3 @@ La registrazione di dispositivi prevede restrizioni predefinite sia per il tipo 
 3. Scegliere **Registrazione del dispositivo** > **Restrizioni registrazione**.
 4. Passare il puntatore del mouse sulla restrizione nell'elenco delle priorità.
 5. Usando i tre punti verticali, trascinare la priorità nella posizione voluta nell'elenco.
-
-
-
-
-

@@ -3,10 +3,10 @@ title: Come aggiungere app in Microsoft Intune
 titlesuffix: Azure portal
 description: Queste procedure consentono di ottenere in Intune app pronte per l'assegnazione a utenti e dispositivi. "
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f84adced59d2057cd4d18f05ff6953293f7c44cc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Come aggiungere un'app a Microsoft Intune
 
@@ -33,6 +33,7 @@ Intune consente di aggiungere e assegnare i tipi di app seguenti:
 | App sul Web                           | Intune crea un collegamento all'app Web nella schermata iniziale del dispositivo          | Gli aggiornamenti dell'app sono automatici     |
 | App sviluppate internamente (line-of-business)  | Intune installa l'app nel dispositivo (è necessario fornire il file di installazione)    | È necessario aggiornare l'app       |
 | App dello Store                       | Intune installa l'app nel dispositivo                                       | Gli aggiornamenti dell'app sono automatici     |
+| App predefinite                        | Intune installa l'app nel dispositivo                                       | Gli aggiornamenti dell'app sono automatici     |
 
 
 Oltre alle app Web, Intune supporta le piattaforme specifiche seguenti per le app dello Store e le app line-of-business:
@@ -49,6 +50,7 @@ Oltre alle app Web, Intune supporta le piattaforme specifiche seguenti per le ap
     - App line-of-business iOS
     - App line-of-business di Windows Phone (file con estensione xap)
     - App line-of-business di Windows (solo file con estensione msi)
+- App predefinite    
 
 >[!TIP]
 > Un'app line-of-business è un'app che viene aggiunta da un apposito file di installazione. Per installare un'app line-of-business iOS, ad esempio, aggiungere l'applicazione scegliendo **App line-of-business** come **Tipo di app** nel pannello **Aggiungi app**. Selezionare quindi il file del pacchetto dell'app (con estensione ipa). Questi tipi di app vengono in genere sviluppati internamente.
@@ -147,4 +149,5 @@ Per informazioni su come aggiungere a Intune app per ciascuna piattaforma, scegl
 - [App di Windows Store](store-apps-windows.md)
 - [App line-of-business di Windows](lob-apps-windows.md)
 - [Applicazioni di Office 365 per Windows 10](apps-add-office365.md)
+- [App predefinite](apps-add-built-in.md)
 

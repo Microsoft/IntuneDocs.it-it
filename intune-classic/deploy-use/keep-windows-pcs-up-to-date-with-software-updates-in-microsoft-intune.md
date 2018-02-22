@@ -14,11 +14,11 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85299c97c2b0c605adbb83a7c6e8017360511609
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c31d1e44b4b96995223f4294655d8e0730170f47
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Mantenere i PC Windows aggiornati con gli aggiornamenti software in Microsoft Intune
 
@@ -35,7 +35,7 @@ Quando sono disponibili nuovi aggiornamenti da Microsoft Update applicabili ai c
 
 Mentre gli aggiornamenti vengono approvati e installati, è possibile verificare il risultato dell'installazione nell'area di lavoro **Aggiornamenti** della console di Intune.
 
-Le sezioni seguenti consentono di mantenere aggiornato il software sui computer gestiti.
+Le sezioni seguenti consentono di mantenere aggiornato il software nei computer gestiti.
 
 ## <a name="before-you-start"></a>Prima di iniziare
 Prima di iniziare a creare e approvare degli aggiornamenti software, configurare e distribuire ai computer dei criteri che controllino come e quando gli aggiornamenti vengono installati.

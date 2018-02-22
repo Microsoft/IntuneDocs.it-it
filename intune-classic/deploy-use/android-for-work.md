@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 17c066ee7208790a591272ae5e1edc99cf2141a4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d7939a20e9729487ce5824ba3f67cd84ec970032
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-android-for-work-devices-with-intune"></a>Gestire dispositivi Android for Work con Intune
 
@@ -40,7 +40,7 @@ Intune offre una gamma di impostazioni generali predefinite che è possibile con
 
 ## <a name="app-publishing-and-distribution"></a>Distribuzione e pubblicazione di app
 
-Il servizio Google Play for Work è parte integrante della distribuzione e della gestione di app in Android for Work. Tutte le app distribuite in dispositivi Android for Work nel profilo di lavoro provengono dal servizio Play for Work. Per gestire e distribuire le app in Play Store, accedere al sito Web Google Play con le credenziali di amministratore della società per la gestione di Google. È possibile approvare le app per la distribuzione di Android for Work in modo che vengano visualizzate nei profili di lavoro dei dispositivi. Queste app vengono quindi sincronizzate con la console di Intune e possono essere distribuite e gestite tramite Intune. Le app line-of-business (LOB) sviluppate dall'organizzazione devono essere pubblicate in Play for Work usando la console per la pubblicazione di app Android di Google. Le app LOB devono essere configurate nella console di pubblicazione di app Android per limitare l'accesso all'organizzazione.
+Il servizio Google Play for Work è parte integrante della distribuzione e della gestione di app in Android for Work. Tutte le app distribuite in dispositivi Android for Work nel profilo di lavoro provengono dal servizio Play for Work. Per gestire e distribuire le app in Play Store, accedere al sito Web Google Play con le credenziali di amministratore della società per la gestione di Google. È possibile approvare le app per la distribuzione di Android for Work in modo che vengano visualizzate nei profili di lavoro dei dispositivi. Queste app vengono quindi sincronizzate con la console di Intune e possono essere distribuite e gestite tramite Intune. Le app line-of-business (LOB) sviluppate dall'organizzazione devono essere pubblicate in Play for Work usando la console per la pubblicazione di app Android di Google. Le app line-of-business devono essere configurate nella console di pubblicazione di app Android per limitare l'accesso all'organizzazione.
 
 Le app possono essere installate senza interazioni con l'utente e senza richiedere all'utente di consentire l'**installazione da origini sconosciute**. Per cercare e installare app facoltative o disponibili, l'utente può usare lo store Play for Work nel proprio dispositivo. Altre informazioni sulla [distribuzione di app per Android for Work](/intune-classic/deploy-use/android-for-work-apps).
 

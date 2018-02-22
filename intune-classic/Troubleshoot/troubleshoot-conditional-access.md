@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Risolvere i problemi di accesso condizionale
 
@@ -90,7 +90,7 @@ Un dispositivo può essere bloccato da accesso condizionale senza che venga invi
 - Controllare la presenza di attività sendemail nei log di Exchange Connector e verificare l'eventuale presenza di errori. Un esempio del comando da cercare è InviaMessaggioPostaElettronica inviato dall'account di notifica a PostaElettronicaUtente.
 - Prima di bloccare il dispositivo, Exchange Connector invia il messaggio di posta elettronica di attivazione. Se il dispositivo è offline, potrebbe non ricevere questo messaggio. Controllare se il client di posta elettronica del dispositivo recupera i messaggi di posta elettronica tramite Push anziché Poll. La perdita del messaggio da parte dell'utente potrebbe infatti dipendere anche da questa impostazione. Passare a Poll per vedere se il dispositivo riceve il messaggio di posta elettronica.
 
-## <a name="non-compliant-device-not-blocked"></a>Dispositivo non conforme non bloccato
+## <a name="noncompliant-device-not-blocked"></a>Dispositivo non conforme non bloccato
 
 Nel caso di un dispositivo che non è conforme ma che continua a disporre dei diritti di accesso, procedere come segue.
 

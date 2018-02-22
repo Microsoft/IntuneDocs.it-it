@@ -6,19 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/01/2017
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-software-updates"></a>Gestire gli aggiornamenti software
 
@@ -45,8 +44,9 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 - Windows Update supporta le versioni di Windows 10 seguenti:
     - Windows 10
     - Windows 10 Team (per dispositivi Surface Hub)
+    - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- I dispositivi che eseguono Windows 10 Mobile e Windows 10 Holographic non sono supportati.
+ I dispositivi che eseguono Windows 10 Mobile non sono supportati.
 
 - Nei dispositivi Windows, **Feedback e diagnostica** > **Dati di diagnostica e di utilizzo** deve essere impostato almeno su **Di base**.
 
@@ -89,8 +89,7 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 
     Gli aggiornamenti delle funzionalità includono in genere nuove funzionalità per Windows. Dopo aver configurato l'impostazione **Canale di manutenzione** (canale semestrale (mirato) o canale semestrale), è possibile definire se, e per quanto tempo, posticipare la ricezione degli aggiornamenti delle funzionalità dopo che sono stati resi disponibili da Microsoft in Windows Update.
 
-    Ad esempio:  
-    **Se il Canale di manutenzione è impostato su Canale semestrale (mirato) e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Il dispositivo non riceverà l'aggiornamento fino a febbraio, 30 giorni più tardi.
+    Ad esempio: **Se il Canale di manutenzione è impostato su Canale semestrale (mirato) e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Il dispositivo non riceverà l'aggiornamento fino a febbraio, 30 giorni più tardi.
 
     **Se il Canale di manutenzione è impostato su Canale semestrale e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Quattro mesi dopo, in aprile, l'aggiornamento della funzionalità X sarà rilasciato come Canale semestrale. Il dispositivo riceverà l'aggiornamento 30 giorni dopo il rilascio del canale semestrale e verrà aggiornato nel mese di maggio.
 
@@ -154,3 +153,11 @@ Il percorso dell'URI OMA (con distinzione tra maiuscole e minuscole) per configu
 > [!IMPORTANT]
 > Quando si esegue un comando di sospensione, i dispositivi ricevono tale comando non appena controllano la disponibilità di aggiornamenti nel servizio. È quindi possibile che, prima di effettuare questo controllo, installino un aggiornamento pianificato.
 > Inoltre, se un dispositivo è spento quando si esegue il comando di sospensione, all'accensione tale dispositivo potrebbe scaricare e installare gli aggiornamenti pianificati prima di controllare la disponibilità di nuovi aggiornamenti con Intune.
+
+## <a name="windows-holographic-for-business-support"></a>Supporto di Windows Holographic for Business
+
+Windows Holographic for Business supporta le impostazioni seguenti:
+
+- **Comportamento di aggiornamento automatico**
+- **Aggiornamenti ai prodotti Microsoft**
+- **Canale di manutenzione**

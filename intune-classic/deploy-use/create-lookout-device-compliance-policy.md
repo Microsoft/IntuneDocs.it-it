@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ee11809349999a795aca0a373724ce18eedbe65
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: f649227c6ad49cd9c788e75097bc4a5eeb71f350
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>Creare criteri di conformità dei dispositivi di Lookout in Intune
 
@@ -40,13 +40,13 @@ Nell'ambito della configurazione di Lookout Mobile Threat Defense, nella [consol
 
 2. Selezionare **Livello di minaccia massimo consentito**:
   * **Nessuno (protetto)**: questo è il livello più sicuro.  Nel dispositivo non possono essere presenti minacce per poter accedere alle risorse aziendali.  Se viene rilevata qualsiasi minaccia, il dispositivo viene valutato come non conforme.  
-  * **Basso**: il dispositivo è conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello superiore, il dispositivo verrà messo in stato di non conformità.
+  * **Basso**: il dispositivo è conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
   * **Medio**: il dispositivo è conforme se le minacce presenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene determinato come non conforme.
   * **Alta**: questo è il livello meno sicuro. Con questa impostazione sono consentiti tutti i livelli di minacce e la protezione dalle minacce del dispositivo di Lookout viene usata solo a scopi di report.
 
 ![screenshot che mostra l'opzione del livello di minaccia per l'impostazione della regola di protezione dalle minacce per il dispositivo](../media/mtp/mtp-compliance-policy-setting.png)
 
-Se si creano criteri di accesso condizionale per Office 365 e altri servizi, questa valutazione di conformità viene considerata e per i dispositivi non conformi viene bloccato l'accesso a questi servizi fino alla risoluzione della condizione di minaccia.
+Se si creano criteri di accesso condizionale per Office 365 o altri servizi, viene considerata questa valutazione di conformità e ai dispositivi non conformi viene impedito l'accesso a questi servizi fino alla risoluzione della condizione di minaccia.
 
 ## <a name="monitor-device-threats"></a>Monitorare le minacce per i dispositivi
 Per visualizzare lo stato di conformità di un dispositivo, passare alla [console di amministrazione di Intune](https://manage.microsoft.com) e visualizzare **Tutti i dispositivi**.

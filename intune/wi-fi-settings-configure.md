@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 161b0de7d697a4ed2d8f80dffdef71296eb6ced2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Come configurare le impostazioni Wi-Fi in Microsoft Intune
 
@@ -33,6 +31,8 @@ Si immagini, ad esempio, di installare una nuova rete Wi-Fi denominata Contoso W
 2. Assegnare il profilo a un gruppo contenente tutti gli utenti dei dispositivi iOS.
 3. Gli utenti visualizzeranno la nuova rete Contoso Wi-Fi nell'elenco delle reti wireless sul proprio dispositivo e potranno facilmente connettersi a tale rete.
 
+## <a name="supported-device-platforms"></a>Piattaforme per dispositivi supportate
+
 I profili Wi-Fi supportano le piattaforme per dispositivi seguenti:
 
 - Android 4 e versioni successive
@@ -40,7 +40,7 @@ I profili Wi-Fi supportano le piattaforme per dispositivi seguenti:
 - iOS 8.0 e versioni successive
 - macOS (Mac OS X 10.9 e versioni successive)
 
-Per i dispositivi che eseguono Windows 8.1, Windows 10 e 10 Windows Mobile, è possibile importare una configurazione Wi-Fi precedentemente esportata da un altro dispositivo.
+Per i dispositivi che eseguono Windows 8.1, Windows 10, 10 Windows Mobile e Windows Holographic for Business, è possibile importare una configurazione Wi-Fi precedentemente esportata da un altro dispositivo.
 
 Usare le informazioni in questo argomento per apprendere le nozioni di base sulla configurazione di un profilo Wi-Fi e quindi leggere altri argomenti relativi a ogni piattaforma per informazioni specifiche sui dispositivi.
 
@@ -58,13 +58,22 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
     - **iOS**
     - **macOS**
     - **Windows 8.1 e versioni successive (importazione di un profilo)**
-6. Dall'elenco a discesa dei tipi di **profilo** scegliere **Wi-Fi di base** o **Wi-Fi aziendale**. È anche possibile usare **Wi-Fi di base** per offrire informazioni di base, come il nome della rete e l'SSID. **Wi-Fi aziendale** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi lo usa. **Wi-Fi per importazione**  (per Windows 8.1 e Windows 10) consente di importare le impostazioni Wi-Fi come un file XML precedentemente esportato da un altro dispositivo.
-7. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli argomenti seguenti per il dettaglio delle impostazioni di ogni piattaforma:
+
+   > [!IMPORTANT]
+   > Se si sta creando un profilo per dispositivi che eseguono Windows 10, tra cui Windows Holographic for Business, è necessario scegliere la piattaforma **Windows 8.1 e versioni successive**. La piattaforma **Windows 10 e versioni successive** non include un tipo di profilo Wi-Fi. 
+
+6. Per i dispositivi Apple o Android nell'elenco a discesa **Tipo di Wi-Fi** scegliere **Basic** o **Enterprise**. È possibile usare **Basic** per fornire informazioni di base, come il nome della rete e l'identificatore SSID. **Enterprise** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi lo usa. 
+
+   Il profilo **Wi-Fi per importazione**  (per Windows 8.1 e versioni successive) consente di importare le impostazioni Wi-Fi come un file XML precedentemente esportato da un altro dispositivo.
+1. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli argomenti seguenti per il dettaglio delle impostazioni di ogni piattaforma:
     - [Impostazioni Android e Android for Work](wi-fi-settings-android.md)
     - [Impostazioni iOS](wi-fi-settings-ios.md)
     - [Impostazioni macOS](wi-fi-settings-macos.md)
-    - [Impostazioni Windows Phone 8.1](wi-fi-settings-import-windows-8-1.md)
-8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
+    - [Impostazioni di Windows 8.1 e versioni successive](wi-fi-settings-import-windows-8-1.md) (incluso Windows Holographic for Business)
+1. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
 
-Il profilo verrà creato e visualizzato nel pannello dell'elenco dei profili.
+Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
+
+## <a name="next-steps"></a>Passaggi successivi
+
 Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
