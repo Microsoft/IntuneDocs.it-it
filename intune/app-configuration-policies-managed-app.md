@@ -3,10 +3,10 @@ title: Aggiungere criteri di configurazione delle app per le app gestite senza r
 titlesuffix: Azure portal
 description: Informazioni su come usare i criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2266e460d816dfdd908d6a68944c8c2cc5c0afc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 136032be6a05ad56dd78fe40e66d3d049a4b5a03
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi
 
@@ -41,8 +41,8 @@ ms.lasthandoff: 01/25/2018
 6. Selezionare **App associata** per scegliere l'app da configurare. Selezionare l'app dall'elenco di app già approvate e sincronizzate con Intune.
 7. Per ogni impostazione di configurazione supportata dall'app digitare **Nome** e **Valore** e scegliere i puntini di sospensione (**...**).  
     Per eliminare una configurazione scegliere i puntini di sospensione (**...**) e selezionare **Elimina**.  
-    Le app abilitate per Intune App SDK supportano le configurazioni in coppie chiave/valore. Per altre informazioni sulle configurazioni chiave-valore supportate, vedere la documentazione delle singole app.  
-    È anche possibile usare token che verranno popolati in modo dinamico con i dati generati dall'applicazione.
+    
+Le app abilitate per Intune App SDK supportano le configurazioni in coppie chiave/valore. Per altre informazioni sulle configurazioni chiave-valore supportate, vedere la documentazione delle singole app. Si noti che è possibile usare token che verranno popolati in modo dinamico con i dati generati dall'applicazione. Per informazioni sulle impostazioni dei criteri di configurazione dell'app Outlook per iOS, vedere [Gestione della configurazione dell'app Outlook per iOS con Microsoft Intune](https://technet.microsoft.com/en-us/library/mt813789(v=exchg.150).aspx).
 
 ## <a name="configuration-values-for-using-tokens"></a>Valori di configurazione per l'uso dei token
 

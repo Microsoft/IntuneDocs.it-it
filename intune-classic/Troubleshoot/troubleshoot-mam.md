@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 645414169dcdf5c2e548bda9d21e017e8a18f76d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15baae06398d135557439c0e67b50f7e1326b6fe
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Risolvere i problemi relativi alla gestione di applicazioni mobili
 
@@ -32,7 +32,7 @@ Se queste informazioni non consentono di risolvere il problema, vedere [Come ott
 
 Questi sono i problemi comuni che un amministratore IT può sperimentare durante l'uso dei criteri di protezione delle app di Intune.
 
-| Problema | Descrizione | Risoluzione |
+| Problema | Descrizione | Soluzione |
 | -- | -- | -- |
 | Criteri non applicati a Skype for Business | I criteri di protezione delle app senza registrazione del dispositivo, eseguita nel portale di Azure, non vengono applicati all'app Skype for Business in dispositivi iOS e Android. | È necessario configurare Skype for Business per l'autenticazione moderna.  Per configurare l'autenticazione moderna per Skype, seguire le istruzioni in [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (Abilitare il tenant per l'autenticazione moderna). |
 | Criteri per le app di Office non applicati | I criteri di protezione delle app non vengono applicati ad alcuna [app di Office supportata](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) per qualsiasi utente. | Verificare che l'utente abbia una licenza per Intune e che le app di Office siano la destinazione di un criterio di protezione delle app distribuito. L'applicazione di un criterio di protezione dell'app appena distribuito può richiedere fino a otto ore. |

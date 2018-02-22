@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b67314ec37198553adc226424bc226293350453b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7995b79422a142f3eb8d5e81d81dbc525fbbb696
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi Android in Intune
 
@@ -103,9 +103,9 @@ Per altre informazioni dettagliate, vedere [Abilitare la regola di protezione da
 - **Versione minima del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo per poter accedere alle risorse aziendali.
 - **Versione massima del sistema operativo**: quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali è bloccato e l'utente deve contattare l'amministratore IT. Fino a quando la regola non viene modificata per consentire la versione del sistema operativo, non è possibile usare il dispositivo per accedere alle risorse aziendali.
 
-## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>In che modo interagiscono le impostazioni di non conformità con i criteri di accesso condizionale?
+## <a name="how-noncompliant-settings-work-with-conditional-access-policies"></a>In che modo interagiscono le impostazioni di non conformità con i criteri di accesso condizionale?
 
-La tabella seguente descrive il modo in cui vengono gestite le impostazioni di non conformità quando i criteri di conformità vengono usati insieme ai criteri di accesso condizionale.
+La tabella seguente descrive il modo in cui le impostazioni di non conformità vengono gestite quando i criteri di conformità vengono usati con i criteri di accesso condizionale.
 
 --------------------
 

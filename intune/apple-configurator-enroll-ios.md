@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3554623db2a153fd7f281a3b8453bedf1de3c77a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Registrare i dispositivi iOS con Apple Configurator
 
@@ -71,8 +71,8 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 
 1. Creare un elenco di valori a due colonne, delimitato da virgole (file con estensione CSV) senza intestazione. Aggiungere i numeri di serie nella colonna sinistra e i dettagli nella colonna destra. Il limite massimo corrente per l'elenco è di 5.000 righe. In un editor di testo l'elenco con estensione csv è simile al seguente:
 
-    F7TLWCLBX196, dettagli del dispositivo</br>
-    DLXQPCWVGHMJ, dettagli del dispositivo
+  F7TLWCLBX196, dettagli del dispositivo</br>
+  DLXQPCWVGHMJ, dettagli del dispositivo
 
    Informazioni su [come trovare il numero di serie di un dispositivo iOS](https://support.apple.com/HT204073).
 2. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** e quindi scegliere **Registrazione Apple**.
@@ -164,3 +164,5 @@ Le app che richiedono l'associazione utente, inclusa l'app Portale aziendale usa
 7. Nel dispositivo iOS aprire la finestra **Impostazioni** e passare a **Generale**  >  **Gestione dei dispositivi**  >  **Profilo di gestione**. Verificare che l'installazione del profilo è inclusa nell'elenco e controllare le restrizioni dei criteri iOS e le app installate. La visualizzazione delle restrizioni dei criteri e delle app nel dispositivo può impiegare fino a 10 minuti.
 
 8. Distribuire i dispositivi. Il dispositivo iOS è ora registrato in Intune e gestito.
+
+

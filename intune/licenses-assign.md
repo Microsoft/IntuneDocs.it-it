@@ -14,11 +14,11 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0fe556eaf548d51b35c843ee313264244144f9c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fd407b8b933c7edce449cd25a9fbd53f4299fcc3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="assign-intune-licenses-to-your-user-accounts"></a>Assegnare le licenze di Intune agli account utente
 
@@ -52,7 +52,7 @@ Quando si assegna una licenza Intune per Education, assicurarsi di assegnare anc
 
 ![Immagine della configurazione della licenza del prodotto](./media/i4e-set-licenses.png)
 
-Per altre informazioni su SDS, vedere questa [panoramica di School Data Sync](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US).
+Per altre informazioni su SDS, vedere questa [panoramica di School Data Sync](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Effetti delle licenze utente e dispositivo sull'accesso ai servizi
 * Ogni **utente** a cui viene assegnata una licenza software utente può accedere ai servizi online e al software correlato e usarli (incluso il software System Center) per gestire le applicazioni e fino a 15 dispositivi.

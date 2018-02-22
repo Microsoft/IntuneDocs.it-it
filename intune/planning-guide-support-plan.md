@@ -14,11 +14,11 @@ ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46172f4b47a5ffeb623cdb068b7e1c6f6c7f1795
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e557fe23b5fcee11957904b2dfd5eb99ec344f3f
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="develop-a-support-plan"></a>Elaborare un piano di supporto
 
@@ -80,7 +80,7 @@ Di seguito è riportato un esempio di programma di formazione per il supporto di
 
 -   Domande e risposte
 
-La [documentazione di Intune](https://docs.microsoft.com/intune/) offre una panoramica di Intune, descrizioni dettagliate delle funzionalità e informazioni sulla risoluzione dei problemi. Il [forum di Intune](https://social.technet.microsoft.com/Forums/en-US/home) è una risorsa della community per domande e argomenti non trattati nella documentazione di Intune.
+La [documentazione di Intune](https://docs.microsoft.com/intune/) offre una panoramica di Intune, descrizioni dettagliate delle funzionalità e informazioni sulla risoluzione dei problemi. Il [forum di Intune](https://social.technet.microsoft.com/Forums/home) è una risorsa della community per domande e argomenti non trattati nella documentazione di Intune.
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Quali sono le opportunità di coinvolgere il team di supporto fin dalle fasi iniziali?
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1e04113d2f8707be0d06cb0783e6113914b856a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: be7eed7618bca29b821a453c9fbf1e77cf8ce90d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Connettore Lookout Mobile Threat Defense con Intune
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/10/2017
 - Installazione di app dannose
 - Profili di rete dannosi
 
-È possibile configurare criteri di accesso condizionale basati sulla valutazione dei rischi di Lookout e abilitati tramite i criteri di conformità di Intune. Le impostazioni consentono di autorizzare o bloccare i dispositivi non conformi in base alle minacce rilevate.
+È possibile configurare criteri di accesso condizionale basati sulla valutazione dei rischi di Lookout e abilitati tramite i criteri di conformità di Intune. Con le impostazioni disponibili è possibile autorizzare o bloccare i dispositivi non conformi in base alle minacce rilevate.
 
 ## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>In che modo Intune e Lookout Mobile Threat Defense possono proteggere le risorse aziendali?
 L'app per dispositivi mobili di Lookout, **Lookout for Work**, viene installata ed eseguita nei dispositivi mobili. Questa app consente di acquisire dati di telemetria per il file system, lo stack di rete, il dispositivo e le applicazioni (se disponibili) e di inviarli al servizio cloud Lookout per la valutazione del livello di rischio per le minacce per dispositivi mobili. È possibile modificare le classificazioni del livello di rischio per le minacce nella console di Lookout in base alle proprie esigenze.  
@@ -63,7 +63,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile impe
 **Bloccare l'accesso quando vengono rilevate app dannose:**
 ![diagramma che mostra i criteri di accesso condizionale che bloccano l'accesso quando il dispositivo viene determinato come non conforme a causa della presenza di app dannose](../media/mtp/malicious-apps-blocked.png)
 
-**Accesso concesso dopo la risoluzione:**
+**Accesso concesso dopo la correzione:**
 
 ![diagramma che mostra i criteri di accesso condizionale che concedono l'accesso quando il dispositivo risulta conforme dopo la correzione](../media/mtp/malicious-apps-unblocked.png)
 
@@ -73,7 +73,7 @@ Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle e protegg
 **Bloccare l'accesso alla rete tramite Wi-Fi:**
 ![diagramma che mostra l'accesso condizionale che blocca l'accesso tramite Wi-Fi in presenza di minacce di rete](../media/mtp/network-wifi-blocked.png)
 
-**Accesso concesso dopo la risoluzione:**
+**Accesso concesso dopo la correzione:**
 
 ![diagramma che mostra l'accesso condizionale che consente l'accesso dopo la risoluzione della condizione di minaccia](../media/mtp/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controllare l'accesso a SharePoint Online in base alle minacce alla rete
@@ -85,7 +85,7 @@ Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle, e impedi
 ![Diagramma che mostra l'accesso condizionale che blocca l'accesso del dispositivo a SharePoint Online in base al rilevamento di minacce](../media/mtp/network-spo-blocked.png)
 
 
-**Accesso concesso dopo la risoluzione:**
+**Accesso concesso dopo la correzione:**
 
 ![Diagramma che mostra l'accesso condizionale che consente l'accesso dopo la risoluzione della condizione di minaccia per la rete](../media/mtp/network-spo-unblocked.png)
 

@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eda4ad57f1365a7fe27d58ad8f40399b1582b4b6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4ae5060ca2ea884ddbcf0e21d7a6e95c56f973bc
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Registrare i dispositivi con il manager di registrazione dispositivi
 
@@ -30,7 +30,7 @@ Le organizzazioni possono usare Intune per gestire un numero elevato di disposit
 Per poter essere aggiunti come manager di registrazione dispositivi, gli utenti devono essere presenti nel portale di Azure. Per una sicurezza ottimale, l'utente manager di registrazione dispositivi non deve essere anche amministratore di Intune.
 
 >[!NOTE]
->Il metodo di registrazione DEM non può essere usato con questi altri metodi di registrazione: [Apple Configurator tramite l'Assistente configurazione](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator con registrazione diretta](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) o [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md). Non può inoltre essere usato per registrare i dispositivi macOS. 
+>Il metodo di registrazione DEM non può essere usato con questi altri metodi di registrazione: [Apple Configurator tramite l'Assistente configurazione](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator con registrazione diretta](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) o [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md). Non può inoltre essere usato per registrare i dispositivi macOS.
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Esempio di scenario con manager di registrazione dispositivi
 
@@ -65,13 +65,11 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
 
 ## <a name="add-a-device-enrollment-manager"></a>Aggiungere un manager di registrazione dispositivi
 
-1.  Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1.  Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Manager di registrazione dispositivi**.
 
-2.  Nel pannello Intune scegliere **Registra i dispositivi** e quindi selezionare **Manager di registrazione dispositivi**.
+2.  Selezionare **Aggiungi**.
 
-3.  Selezionare **Aggiungi**.
-
-4.  Nel pannello **Aggiungi utente** immettere un nome entità utente per l'utente manager di registrazione dispositivi, quindi selezionare **Aggiungi**. L'utente manager di registrazione dispositivi viene aggiunto all'elenco di utenti manager di registrazione dispositivi.
+3.  Nel pannello **Aggiungi utente** immettere un nome entità utente per l'utente manager di registrazione dispositivi, quindi selezionare **Aggiungi**. L'utente manager di registrazione dispositivi viene aggiunto all'elenco di utenti manager di registrazione dispositivi.
 
 ## <a name="permissions-for-dem"></a>Autorizzazioni per il manager di registrazione dispositivi
 

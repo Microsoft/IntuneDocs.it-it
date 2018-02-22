@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 08/14/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Come assegnare le app di Office 365 ProPlus 2016 ai dispositivi Windows 10 con Microsoft Intune
 
@@ -33,9 +33,10 @@ Questo tipo di app semplifica l'assegnazione delle app Office 365 ProPlus 2016 a
 
 - È necessario che i dispositivi in cui vengono distribuite le app eseguano Windows 10 Creators Update o versioni successive.
 - Intune supporta l'aggiunta di app di Office solo da Office 365 ProPlus 2016 Suite.
-- Se sono aperte app di Office quando Intune installa l'insieme di app, è possibile che gli utenti finali perdano i dati dei file non salvati.
-- Questo metodo di installazione non è supportato nei dispositivi Windows 10 S.
+- Se sono aperte app di Office quando Intune installa l'insieme di app, è possibile che l'installazione non riesca e che gli utenti finali perdano i dati dei file non salvati.
+- Questo metodo di installazione non è supportato nei dispositivi Windows 10S, Windows Home, Windows Team, Windows Holographic e Windows Holographic for Business.
 - Intune non consente di installare le app desktop di Office 365 da Microsoft Store (note come app Office Centennial) in un dispositivo a cui sono già state distribuite app di Office 365 con Intune. Se si installa questa configurazione, si potrebbero verificare perdite o danneggiamenti dei dati.
+- Più assegnazioni di app necessarie o disponibili non sono cumulative. Un'assegnazione di app successiva sovrascriverà le assegnazioni di app installate preesistenti. Ad esempio, se il primo set di app di Office contiene Word mentre il successivo set non lo contiene, Word verrà disinstallato. Questo criterio non si applica alle applicazioni di Visio o Project.
 
 
 ## <a name="get-started"></a>Operazioni preliminari

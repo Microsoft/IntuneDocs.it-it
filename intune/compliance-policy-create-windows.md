@@ -6,27 +6,25 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 1/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 05fb016277f8645c661bc8dee213ed98b95c0198
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi Windows in Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-I criteri di conformità vengono creati per ogni piattaforma.  È possibile creare i criteri di conformità nel portale di Azure. Per altre informazioni sui criteri di conformità consultare l'argomento [What is a device compliance](device-compliance.md)(Che cos'è la conformità dei dispositivi). Per altre informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, consultare l'argomento [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
+I criteri di conformità vengono creati per ogni piattaforma. È possibile creare i criteri di conformità nel portale di Azure. Per altre informazioni sui criteri di conformità consultare l'argomento [What is a device compliance](device-compliance.md)(Che cos'è la conformità dei dispositivi). Per altre informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, consultare l'argomento [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
 
 La tabella seguente descrive il modo in cui le impostazioni di non conformità vengono gestite quando i criteri di conformità vengono usati con i criteri di accesso condizionale.
 
@@ -46,14 +44,14 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 
 **Con correzione** = il sistema operativo del dispositivo impone la conformità. (Ad esempio, l'utente è obbligato a impostare un PIN.)+
 
-**In quarantena** = il sistema operativo del dispositivo non impone la conformità. (Ad esempio, i dispositivi Android non impongono la crittografia del dispositivo all'utente.) Quando il dispositivo non è compatibile, vengono eseguite le azioni seguenti:+
+**In quarantena** = il sistema operativo del dispositivo non impone la conformità. (Ad esempio, i dispositivi Android non impongono la crittografia del dispositivo all'utente.) Quando il dispositivo non è compatibile, vengono eseguite le azioni seguenti:
 
 - Il dispositivo viene bloccato se un criterio di accesso condizionale si applica all'utente.
 - Il portale aziendale segnala all'utente eventuali problemi di conformità.
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creare i criteri di conformità nel portale di Azure
 
-1. Dal pannello **Intune** scegliere **Imposta la conformità dei dispositivi**. In **Gestisci** scegliere **All device compliance policies** (Tutti i criteri di conformità dei dispositivi) e scegliere **Crea**.
+1. Dal pannello **Intune** scegliere **Imposta la conformità dei dispositivi**. In **Gestione** scegliere **Tutti i criteri di conformità del dispositivo** e quindi **Crea**.
 2. Digitare un nome e una descrizione, quindi scegliere la piattaforma a cui si desidera applicare questi criteri.
 3. Scegliere **Requisiti per la conformità** per aprire il relativo pannello.  È possibile specificare le impostazioni **Protezione**, **Integrità del dispositivo** e **Proprietà del dispositivo**. Al termine, scegliere **OK**.
 
@@ -71,7 +69,7 @@ Per assegnare agli utenti i criteri di conformità, scegliere un criterio config
 1. Scegliere il criterio da assegnare agli utenti, quindi selezionare **Assegnazioni**. Si apre il pannello da cui è possibile selezionare i **Gruppi di sicurezza Azure Active Directory** e assegnarli ai criteri.
 2. Scegliere **Seleziona gruppi** per aprire il pannello che consente di visualizzare i gruppi di sicurezza di Azure AD.  Se si sceglie **Seleziona** il criterio verrà distribuito agli utenti.
 
-Il criterio è stato applicato agli utenti.  I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità.
+Il criterio è stato applicato agli utenti. I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità.
 
 <!---## Compliance policy settings--->
 
@@ -132,7 +130,7 @@ Per informazioni su come funziona il servizio di attestazione dell'integrità, v
 
 Specificare il numero minimo di cifre o caratteri che la password dell'utente deve contenere.
 
-Per i dispositivi che prevedono l'accesso con un account Microsoft, i criteri di conformità non eseguono correttamente la convalida se **Lunghezza minima password** è maggiore di 8 caratteri e **Numero minimo di set di caratteri** è maggiore di 2 caratteri.
+Per i dispositivi che prevedono l'accesso con un account Microsoft, i criteri di conformità non eseguono correttamente la convalida se **Lunghezza minima password** è maggiore di otto caratteri e **Numero minimo di set di caratteri** è maggiore di due caratteri.
 
 - **Tipo di password richiesto**: supportata in Windows RT, Windows RT 8.1 e Windows 8.1.
 
@@ -144,7 +142,7 @@ Specificare se gli utenti devono creare una password **alfanumerica** o **numeri
   - Simboli
   - Numeri: se per questa impostazione viene usato un numero più alto, gli utenti dovranno creare password più complesse.
 
-Per i dispositivi che prevedono l'accesso con un account Microsoft, i criteri di conformità non eseguono correttamente la convalida se **Lunghezza minima password** è maggiore di 8 caratteri e **Numero minimo di set di caratteri** è maggiore di 2 caratteri.
+Per i dispositivi che prevedono l'accesso con un account Microsoft, i criteri di conformità non eseguono correttamente la convalida se **Lunghezza minima password** è maggiore di otto caratteri e **Numero minimo di set di caratteri** è maggiore di due caratteri.
 
 - **Minuti di inattività prima che venga richiesta la password:** supportata in Windows RT, Windows RT 8.1 e Windows 8.1
 
@@ -160,7 +158,7 @@ Usare questa impostazione insieme a **Impedisci riutilizzo delle password preced
 
 - **Impedisci riutilizzo delle password precedenti:** supportata in Windows RT, Windows RT 8.1 e Windows 8.1
 
-Se l'opzione **Ricorda cronologia password** è selezionata, specificare il numero di password usate in precedenza che non è possibile riutilizzare.
+Se l'opzione **Ricorda cronologia password** è selezionata, specificare il numero di password usate in precedenza che non è possibile riusare.
 
 
 ## <a name="device-health-settings"></a>Impostazioni dello stato dei dispositivi
@@ -189,6 +187,14 @@ Per trovare la versione del sistema operativo da usare per le impostazioni **Ver
 
 - I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione del sistema operativo è impostata su Windows 8.1 per Windows, il dispositivo risulta non conforme anche se il sistema operativo installato è Windows 8.1.
 - Per i PC che eseguono Windows 10, la versione deve essere impostata come &quot;10.0&quot; più il numero di build del sistema operativo restituito dal comando winver.
+
+## <a name="windows-holographic-for-business-support"></a>Supporto di Windows Holographic for Business
+
+Windows Holographic for Business supporta l' impostazione seguente:
+
+- Sicurezza del sistema / Crittografia
+
+  **Crittografia dell'archivio dati nel dispositivo**.
 
 <!--- ## Next steps
 

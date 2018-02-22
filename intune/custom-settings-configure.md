@@ -11,15 +11,13 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e3821f40cdf1c36f020bf807eed5c6fbd83a9aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Come configurare le impostazioni dispositivo personalizzate in Microsoft Intune
 
@@ -53,8 +51,9 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
     - [Impostazioni macOS](custom-settings-macos.md)
     - [Impostazioni Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
     - [Impostazioni Windows 10](custom-settings-windows-10.md)
+    - [Impostazioni di Windows Holographic for Business](custom-settings-windows-holographic.md)
     - [Impostazioni di Android for Work](custom-settings-android-for-work.md)
 8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
 
-Il profilo verrà creato e visualizzato nel pannello dell'elenco dei profili.
+Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
 Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
