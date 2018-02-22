@@ -1,25 +1,24 @@
 ---
 title: Come amministrare in remoto i dispositivi con TeamViewer
 titlesuffix: Azure portal
-description: Informazioni su come amministrare in remoto i dispositivi con TeamViewer."
+description: Informazioni su come amministrare in remoto i dispositivi con TeamViewer.
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 2/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 476480ce3957ef2d411b37a0a078707c721fd2e6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0219993e0322be06dbf9b26707789332039001f1
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Offrire assistenza remota per dispositivi gestiti da Intune
 
@@ -32,7 +31,7 @@ Con Intune è possibile usare il software [TeamViewer](https://www.teamviewer.co
 I dispositivi Android e Windows gestiti da Intune supportano l'amministrazione remota.
 
 >[!NOTE]
->Windows Holographic (HoloLens), Windows Team (Surface Hub) e Windows 10 S non sono supportati dal software TeamViewer. È comunque necessario gestire i dispositivi usando il [client PC](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json) nel portale classico di Intune.
+>Windows Holographic (HoloLens), Windows Team (Surface Hub) e Windows 10 S non sono supportati dal software TeamViewer.
 
 
 
@@ -76,4 +75,4 @@ Al termine, chiudere la finestra di TeamViewer.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Un utente finale vedrà un flag di notifica sull'icona dell'app Portale aziendale nel dispositivo e un'altra notifica all'apertura dell'app, quindi potrà accettare la richiesta di assistenza remota.
+Un utente finale noterà un flag di notifica sull'icona dell'app Portale aziendale nel dispositivo e un'altra notifica all'apertura dell'app, quindi potrà accettare la richiesta di assistenza remota.

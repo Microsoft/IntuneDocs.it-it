@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Proteggere i dati delle app usando i criteri di protezione delle app con Microsoft Intune
 
@@ -57,9 +57,7 @@ L'uso di soluzioni MDM con criteri di protezione delle app comporta vantaggi agg
 - **I criteri di protezione delle app garantiscono che le misure di sicurezza a livello di app siano presenti**. Ad esempio, è possibile impostare un criterio in base a cui viene richiesto un PIN per aprire un'app in un contesto aziendale, viene impedita la condivisione di dati tra app e viene impedito il salvataggio di dati di un'app aziendale in un percorso di archiviazione personale.
 
 ## <a name="devices-that-support-mam"></a>Dispositivi che supportano MAM
-I criteri di protezione delle app sono attualmente supportati in:
--   iOS 8.1 o versioni successive
--   Android 4 o versioni successive
+Il supporto della piattaforma dei criteri di protezione delle app di Intune è allineato al supporto della piattaforma delle applicazioni di Office. Per informazioni, vedere [Requisiti di sistema per Office](https://products.office.com/en-US/office-system-requirements).
 
 >[!NOTE]
 >I dispositivi Windows non sono supportati nello scenario MAM senza registrazione. Tuttavia, quando si registrano i dispositivi di Windows 10 con Intune, è possibile usare Windows Information Protection, che offre funzionalità simili. Per altre informazioni, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).

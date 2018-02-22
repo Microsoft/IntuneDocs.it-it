@@ -5,20 +5,19 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4b3178b8469b5c92e4124ab00f9a635e63568d77
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="reference-for-policy-entities"></a>Informazioni di riferimento per le entità della categoria Policy
 
@@ -66,9 +65,9 @@ L'entità **DeviceConfigurationProfileDeviceActivity** elenca il numero di dispo
 | Errore |Numero di dispositivi univoci in stato di errore. |10 |
 | Failed |Numero di dispositivi univoci in stato non riuscito. |2 |
 
-## <a name="userconfiguration"></a>UserConfiguration
 
-L'entità **UserConfigurationProfileDeviceActivity** elenca il numero di utenti nello stato completato, in sospeso, non riuscito o di errore al giorno. Il numero rispecchia i profili di configurazione dispositivo assegnati all'entità. Ad esempio, se un utente è nello stato completato per tutti i relativi criteri assegnati, incrementa di uno il contatore di completamento per tale giorno. Se a un utente sono assegnati due profili, uno in stato completato mentre l'altro è in stato di errore, viene considerato l'utente nello stato di errore.  L'entità **UserConfigurationProfileDeviceActivity** elenca quanti utenti sono in un determinato stato in un giorno specifico negli ultimi 30 giorni.
+
+L'entità **DeviceConfigurationProfileUserActivity** elenca il numero di utenti con stato completato, in sospeso, non riuscito o di errore per ogni giorno. Il numero rispecchia i profili di configurazione dispositivo assegnati all'entità. Ad esempio, se un utente è nello stato completato per tutti i relativi criteri assegnati, incrementa di uno il contatore di completamento per tale giorno. Se a un utente sono assegnati due profili, uno con stato completato e l'altro con stato di errore, viene considerato l'utente con lo stato di errore.  L'entità **DeviceConfigurationProfileUserActivity** elenca il numero di utenti in ogni stato diverso in un giorno specifico degli ultimi 30 giorni.
 
 | Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
@@ -90,4 +89,77 @@ L'entità **PolicyTypeActivity** elenca il numero cumulativo di dispositivi nell
 | Pending |Numero di dispositivi univoci in sospeso. |123 |
 | Operazione completata |Numero di dispositivi univoci in stato completato. |12 |
 | Errore |Numero di dispositivi univoci in stato di errore. |10 |
-| Fail- |Numero di dispositivi univoci in stato non riuscito. |2 |
+| Failed |Numero di dispositivi univoci in stato non riuscito. |2 |
+
+## <a name="compliance-policy"></a>Criteri di conformità
+
+Le informazioni di riferimento sull'API dei criteri di conformità contengono le entità che forniscono informazioni sullo stato per i criteri di conformità assegnati ai dispositivi.
+
+### <a name="compliancepolicystatusdeviceactivities"></a>CompliancePolicyStatusDeviceActivities
+
+La tabella seguente contiene un riepilogo dello stato di assegnazione dei criteri di conformità ai dispositivi. La tabella elenca il numero di dispositivi trovati in ogni stato di conformità.
+
+
+|Proprietà     |Descrizione  |Esempio  |
+|---------|---------|---------|
+|DateKey  |Chiave della data in cui è stato creato il riepilogo per i criteri di conformità.|20161204 |
+|Unknown  |Numero di dispositivi che sono offline o che non sono riusciti a comunicare con Intune o Azure AD per altri motivi. |5|
+|NotApplicable      |Numero di dispositivi in cui i criteri di conformità dei dispositivi assegnati dall'amministratore non sono applicabili.|201 |
+|Compliant      |Numero di dispositivi che hanno applicato correttamente uno o più criteri di conformità dei dispositivi assegnati dall'amministratore. |4083 |
+|InGracePeriod      |Numero di dispositivi che non sono conformi, ma che si trovano nel periodo di tolleranza definito dall'amministratore. |57|
+|NonCompliant      |Numero di dispositivi che non sono riusciti ad applicare uno o più criteri di conformità assegnati dall'amministratore o in cui l'utente non ha soddisfatto la conformità ai criteri assegnati dall'amministratore.|43 |
+|Error      |Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore. |3|
+
+### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
+
+La tabella seguente contiene un riepilogo dello stato di assegnazione dei criteri di conformità ai dispositivi in base a ciascun criterio e al tipo di criterio. La tabella elenca il numero di dispositivi trovati in ogni stato di conformità per ogni criterio di conformità assegnato.
+
+
+
+|Proprietà  |Descrizione  |Esempio  |
+|---------|---------|---------|
+|DateKey  |Chiave della data in cui è stato creato il riepilogo per i criteri di conformità.|20161219|
+|PolicyKey     |Chiave per il criterio di conformità per cui è stato creato il riepilogo. |10178 |
+|PolicyPlatformKey      |Chiave per il tipo di piattaforma del criterio di conformità per cui è stato creato il riepilogo.|5|
+|Unknown     |Numero di dispositivi che sono offline o che non sono riusciti a comunicare con Intune o Azure AD per altri motivi.|13|
+|NotApplicable     |Numero di dispositivi in cui i criteri di conformità dei dispositivi assegnati dall'amministratore non sono applicabili.|3|
+|Compliant      |Numero di dispositivi che hanno applicato correttamente uno o più criteri di conformità dei dispositivi assegnati dall'amministratore. |45|
+|InGracePeriod      |Numero di dispositivi che non sono conformi, ma che si trovano nel periodo di tolleranza definito dall'amministratore. |3|
+|NonCompliant      |Numero di dispositivi che non sono riusciti ad applicare uno o più criteri di conformità assegnati dall'amministratore o in cui l'utente non ha soddisfatto la conformità ai criteri assegnati dall'amministratore.|7|
+|Error      |Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore. |3|
+
+### <a name="policyplatformtypes"></a>PolicyPlatformTypes
+
+La tabella seguente contiene i tipi di piattaforma di tutti i criteri assegnati. I tipi di piattaforma dei criteri che non sono mai stati assegnati ad alcun dispositivo non sono inclusi nella tabella.
+
+
+|Proprietà  |Descrizione  |Esempio  |
+|---------|---------|---------|
+|PolicyPlatformTypeKey      |Chiave univoca per il tipo di piattaforma dei criteri. |20170519 |
+|PolicyPlatformTypeId      |Identificatore univoco per il tipo di piattaforma dei criteri.|1|
+|PolicyPlatformTypeName      |Nome del tipo di piattaforma dei criteri.|AndroidForWork |
+
+### <a name="policydeviceactivity"></a>PolicyDeviceActivity
+
+La tabella seguente elenca il numero di dispositivi con stato completato, in sospeso, non riuscito o di errore ogni giorno. Il numero riflette i dati per ogni profilo del tipo di criteri. Ad esempio, se un dispositivo è nello stato completato per tutti i relativi criteri assegnati, incrementa di uno il contatore di completamento per tale giorno. Se a un dispositivo sono assegnati due profili, uno nello stato completato e l'altro in uno stato di errore, l'entità incrementa il contatore di completamento e colloca il dispositivo in stato di errore. L'entità PolicyDeviceActivity elenca il numero di dispositivi che sono in un determinato stato in un giorno specifico negli ultimi 30 giorni.
+
+|Proprietà  |Descrizione  |Esempio  |
+|---------|---------|---------|
+|DateKey|Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse.|20160703|
+|Pending|Numero di dispositivi univoci in sospeso.|123|
+|Operazione completata|Numero di dispositivi univoci in stato completato.|12|
+PolicyKey|Chiave dei criteri, può essere unita con i criteri per ottenere policyName.|Windows 10 baseline|
+|Errore|Numero di dispositivi univoci in stato di errore.|10|
+|Failed|Numero di dispositivi univoci in stato non riuscito.|2|
+
+### <a name="policyuseractivity"></a>PolicyUserActivity 
+
+La tabella seguente elenca il numero di utenti con stato completato, in sospeso, non riuscito o di errore ogni giorno. Il numero riflette i dati per ogni profilo del tipo di criteri. Ad esempio, se un utente è nello stato completato per tutti i relativi criteri assegnati, incrementa di uno il contatore di completamento per tale giorno. Se a un utente sono assegnati due profili, uno con stato completato e l'altro con stato di errore, viene considerato l'utente con lo stato di errore. L'entità PolicyUserActivity elenca il numero di utenti in ogni stato in un giorno specifico negli ultimi 30 giorni.
+
+|Proprietà  |Descrizione  |Esempio  |
+|---------|---------|---------|
+|DateKey|Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse.|20160703|
+|Pending|Numero di dispositivi univoci in sospeso.|123|
+|Operazione completata|Numero di dispositivi univoci in stato completato.|12|
+PolicyKey|Chiave dei criteri, può essere unita con i criteri per ottenere policyName.|Windows 10 baseline|
+|Errore|Numero di dispositivi univoci in stato di errore.|10|
