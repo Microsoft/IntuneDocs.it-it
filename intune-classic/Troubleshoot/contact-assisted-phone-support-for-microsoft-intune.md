@@ -16,10 +16,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 821234397df511e054e98bc11cd6da21ce8370d7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Come contattare il supporto telefonico assistito per Microsoft Intune
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 10/10/2017
 |Germania|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 CET (UTC +1)|Tedesco&#42;, inglese|0800 5892332|069380789508||
 |Grecia|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 EET (UTC +2)|Greco&#42;, inglese|0080044142831||
 |Guatemala|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 CST (UTC +6)|Spagnolo&#42;, inglese|1-800-300-0069<br /><br />Passaggio 1. Selezionare l'opzione 4 (per l'accesso speciale)<br /><br />Passaggio 2: Immettere il codice: 7007||
-|RAS di Hong Kong|24 x 7|Lunedì-venerdì<br /><br />09.00 – 18.00 HKT (UTC +8)|Cantonese&#42;, mandarino&#42;, inglese||30713055|
+|Hong Kong - R.A.S.|24 x 7|Lunedì-venerdì<br /><br />09.00 – 18.00 HKT (UTC +8)|Cantonese&#42;, mandarino&#42;, inglese||30713055|
 |Ungheria|24 x 7|Lunedì-venerdì<br /><br />09.00 - 17.00 CET (UTC +1)|Ungherese&#42;, inglese|36 80 983 899|36 1 778 9292|
 |Islanda|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 GMT (UTC)|Inglese|8009609||
 |India|24 x 7|Lunedì-venerdì<br /><br />09.00 – 17.00 IST (UTC +5.30)|Inglese|000800 4402038|18002002052|

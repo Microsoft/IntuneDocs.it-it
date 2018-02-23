@@ -104,7 +104,6 @@
 ## [Uso del dispositivo macOS](using-your-macos-device-with-intune.md)
 ### [Cosa accade quando si registra un dispositivo macOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Registrare il dispositivo macOS](enroll-your-device-in-intune-macos-cp.md)
-### [Registrare il dispositivo macOS legacy](enroll-your-device-in-intune-macos-legacy.md)
 ### [Annullamento della registrazione del dispositivo macOS](unenroll-your-device-from-intune-macos.md)
 
 ### [Risoluzione dei problemi comuni con macOS](troubleshoot-your-device-macos.md)
@@ -140,6 +139,7 @@
 #### [Inviare i log dall'app Portale aziendale](send-logs-to-your-it-admin-cp-windows.md)
 #### [Inviare i log dall'app Impostazioni](send-logs-to-your-it-admin-settings-windows.md)
 #### [La versione di Windows non è ancora supportata](your-windows-version-isnt-yet-supported.md)
+#### [Installazione di Office 365 nel dispositivo Windows 10](install-office-windows.md)
 #### [Abilitare la crittografia di Windows](you-need-to-enable-windows-encryption.md)
 #### [Il dispositivo richiede software antimalware](your-device-needs-antimalware-software.md)
 #### [Abilitare l'avvio protetto](you-need-to-enable-secure-boot-windows.md)

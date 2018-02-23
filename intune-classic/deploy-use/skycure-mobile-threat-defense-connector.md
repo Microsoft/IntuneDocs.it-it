@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51f26d630537901ad39a215062f820a2c243e077
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 096cd7f2f7895531b00d77c5d26413471fb9bbcf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Connettore Skycure Mobile Threat Defense
 
@@ -69,7 +69,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile bloc
 
 ![App dannose rilevate](../media/mtp/skycure-arch-1.png)
 
-**Accesso concesso dopo la risoluzione:**
+**Accesso concesso dopo la correzione:**
 
 ![App dannose rilevate e accesso consentito](../media/mtp/skycure-arch-2.png)
 
@@ -81,7 +81,7 @@ Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e prot
 
 ![Bloccare l'accesso alla rete tramite Wi-Fi](../media/mtp/skycure-arch-3.png)
 
-**Accesso concesso dopo la risoluzione:**
+**Accesso concesso dopo la correzione:**
 
 ![Accesso concesso dopo la risoluzione](../media/mtp/skycure-arch-4.png)
 
@@ -93,7 +93,7 @@ Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e impe
 
 ![Bloccare SharePoint Online quando vengono rilevate minacce per la rete](../media/mtp/skycure-arch-5.png)
 
-**Accesso concesso dopo la risoluzione:**
+**Accesso concesso dopo la correzione:**
 
 ![Accesso concesso dopo la risoluzione per l'esempio di SharePoint](../media/mtp/skycure-arch-6.png)
 
