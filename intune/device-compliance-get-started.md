@@ -3,23 +3,21 @@ title: "Criteri di conformità dei dispositivi Intune"
 titleSuffix: Azure portal
 description: "Usare questo argomento per informazioni sulla conformità dei dispositivi in Microsoft Intune\""
 keywords: 
-author: andredm7
-ms.author: andredm
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 07/18/2017
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f4a9f70762c3d30a49a686bcf1cfa9de4851b6c
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Introduzione ai criteri conformità dei dispositivi Intune
 
@@ -99,9 +97,63 @@ Remember that you need to implement conditional access policies in addition to c
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Funzionamento dei criteri di conformità Intune con Azure AD
 
-Quando un dispositivo viene registrato in Intune, si verifica il processo di registrazione di Azure AD, che aggiorna gli attributi del dispositivo con altre informazioni in Azure AD. Una delle informazioni chiave sul dispositivo è lo stato di conformità del dispositivo, usato dai criteri di accesso condizionale per consentire o bloccare l'accesso alla posta elettronica e altre risorse aziendali.
+Al momento della registrazione in Intune viene avviato il processo di registrazione di Azure AD durante il quale gli attributi del dispositivo vengono aggiornati con altre informazioni in Azure AD. Un'informazione importante è lo stato di conformità del dispositivo che viene usato dai criteri di accesso condizionale per bloccare o consentire l'accesso alla posta elettronica e ad altre risorse aziendali.
 
-- Altre informazioni sul [processo di registrazione di Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).
+- Altre informazioni sul [processo di registrazione di Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction).
+
+### <a name="assigning-a-resulting-device-configuration-profile-status"></a>Assegnazione di uno stato del profilo di configurazione del dispositivo risultante
+
+Se a un dispositivo sono stati assegnati più profili di configurazione e il dispositivo presenta stati di conformità diversi per due o più dei profili di configurazione assegnati, sarà necessario assegnare un unico stato di conformità risultante. Questa assegnazione si basa su un livello di gravità concettuale assegnato a ogni stato di conformità. I livelli di gravità di ogni stato di conformità sono i seguenti:
+
+
+|Stato  |Gravità  |
+|---------|---------|
+|Pending     |1|
+|Operazione completata     |2|
+|Failed     |3|
+|Errore     |4|
+
+Uno stato risultante di due o più profili di configurazione viene quindi assegnato selezionando il livello di gravità più alto di tutti i profili assegnati a un dispositivo.
+
+Si osservi ad esempio il caso di un dispositivo con tre profili: uno nello stato in sospeso (gravità = 1), uno nello stato completato (gravità = 2) e uno nello stato di errore (gravità = 4). Lo stato di errore ha il livello di gravità più alto e viene quindi assegnato come stato di conformità risultante per tutti e tre i profili.
+
+### <a name="assigning-an-ingraceperiod-status-for-an-assigned-compliance-policy"></a>Assegnazione di uno stato InGracePeriod per un criterio di conformità assegnato
+
+Lo stato InGracePeriod per un criterio di conformità è un valore determinato considerando la combinazione del periodo di tolleranza e dello stato attuale di un dispositivo per il criterio di conformità assegnato. 
+
+In particolare, se un dispositivo presenta uno stato NonCompliant per un criterio di conformità assegnato e:
+
+- al dispositivo non è stato assegnato alcun periodo di tolleranza, il valore assegnato per il criterio di conformità è NonCompliant.
+- il dispositivo ha un periodo di tolleranza scaduto, il valore assegnato per il criterio di conformità è NonCompliant.
+- il dispositivo ha un periodo di tolleranza futuro, il valore assegnato per il criterio di conformità è InGracePeriod.
+
+Nella tabella seguente sono riepilogati i punti precedenti:
+
+
+|Stato di conformità attuale|Valore del periodo di tolleranza assegnato|Stato di conformità effettivo|
+|---------|---------|---------|
+|NonCompliant |Nessun periodo di tolleranza assegnato |NonCompliant |
+|NonCompliant |Data trascorsa|NonCompliant|
+|NonCompliant |Data futura|InGracePeriod|
+
+Per altre informazioni sul monitoraggio dei criteri di conformità dei dispositivi, vedere [Monitorare i criteri di conformità dei dispositivi di Intune](compliance-policy-monitor.md).
+
+### <a name="assigning-a-resulting-compliance-policy-status"></a>Assegnazione di uno stato dei criteri di conformità risultante
+
+Se a un dispositivo sono stati assegnati più criteri di conformità e il dispositivo presenta stati di conformità diversi per due o più dei criteri di conformità assegnati, sarà necessario assegnare un unico stato di conformità risultante. Questa assegnazione si basa su un livello di gravità concettuale assegnato a ogni stato di conformità. I livelli di gravità di ogni stato di conformità sono i seguenti: 
+
+|Stato  |Gravità  |
+|---------|---------|
+|Sconosciuto     |1|
+|NotApplicable     |2|
+|Conforme|3|
+|InGracePeriod|4|
+|NonCompliant|5|
+|Errore|6|
+
+Uno stato risultante di due o più criteri di conformità viene quindi determinato selezionando il livello di gravità più alto di tutti i criteri assegnati a un dispositivo.
+ 
+Si osservi ad esempio il caso di un dispositivo con tre criteri di conformità: uno con stato sconosciuto (gravità = 1), uno con stato conforme (gravità = 3) e uno con stato InGracePeriod (gravità = 4). Lo stato InGracePeriod ha il livello di gravità più alto e viene quindi assegnato come stato di conformità risultante per tutti e tre i profili.  
 
 ##  <a name="ways-to-use-device-compliance-policies"></a>Modi per usare i criteri di conformità del dispositivo
 
@@ -112,6 +164,10 @@ Quando un dispositivo viene registrato in Intune, si verifica il processo di reg
 È anche possibile usare i criteri di conformità dei dispositivi indipendentemente dall'accesso condizionale. In tal caso, i dispositivi vengono valutati e segnalati in base allo stato di conformità. Può ad esempio essere utile segnalare quanti dispositivi non sono crittografati o quali dispositivi sono stati manomessi con jailbreak o root. Tuttavia, quando i criteri di conformità vengono usati in modo indipendente, non vengono applicate limitazioni per l'accesso alle risorse aziendali.
 
 I criteri di conformità vengono distribuiti agli utenti. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata sui dispositivi dell’utente. Per informazioni sul tempo necessario ai dispositivi mobili per ottenere un criterio dopo la distribuzione, vedere [Risolvere i problemi relativi ai profili di dispositivo in Microsoft Intune](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+
+#### <a name="actions-for-non-compliance"></a>Azioni per la mancata conformità
+
+Le azioni per la non conformità consentono di configurare una sequenza temporale di azioni da applicare ai dispositivi che non soddisfano i criteri di conformità. Per altre informazioni, vedere [Automatizzare le azioni per la non conformità](actions-for-noncompliance.md).
 
 ##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Uso dei criteri di conformità nel portale di Intune classico e nel Portale di Azure
 
@@ -126,16 +182,18 @@ Si notino le differenze principali per eseguire la transizione al nuovo flusso d
 
 ##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a>Eseguire la migrazione dei criteri di conformità dei dispositivi dal portale di Intune classico al portale di Azure
 
-I criteri di conformità dei dispositivi creati nel [portale di Intune classico](https://manage.microsoft.com) non verranno visualizzati nel nuovo [portale di Intune di Azure](https://portal.azure.com). Tali criteri saranno tuttavia ancora destinati agli utenti e gestibili tramite il portale di Intune classico.
+I criteri di conformità dei dispositivi creati nel [portale di Intune classico](https://manage.microsoft.com) non sono visualizzati nel nuovo [portale di Intune di Azure](https://portal.azure.com). Tali criteri saranno tuttavia ancora destinati agli utenti e gestibili tramite il portale di Intune classico.
 
 Per sfruttare le nuove funzionalità correlate alla conformità dei dispositivi nel portale di Azure, sarà necessario creare nuovi criteri di conformità dei dispositivi nel portale stesso. Se si assegna un nuovo criterio di conformità dei dispositivi nel portale di Azure a un utente al quale è stato assegnato un criterio di conformità dei dispositivi anche dal portale di Intune classico, i criteri di conformità dei dispositivi dal portale di Intune di Azure hanno la precedenza rispetto a quelli creati nel portale di Intune classico.
 
 ##  <a name="next-steps"></a>Passaggi successivi
 
-Creare criteri di conformità dei dispositivi per le piattaforme seguenti:
+- Creare criteri di conformità dei dispositivi per le piattaforme seguenti:
 
-- [Android](compliance-policy-create-android.md)
-- [Android for work](compliance-policy-create-android-for-work.md)
-- [iOS](compliance-policy-create-ios.md)
-- [macOS](compliance-policy-create-mac-os.md)
-- [Windows](compliance-policy-create-windows.md)
+   - [Android](compliance-policy-create-android.md)
+   - [Android for work](compliance-policy-create-android-for-work.md)
+   - [iOS](compliance-policy-create-ios.md)
+   - [macOS](compliance-policy-create-mac-os.md)
+   - [Windows](compliance-policy-create-windows.md)
+
+- Per informazioni sulle entità del criterio Data warehouse di Intune, vedere [Informazioni di riferimento per le entità della categoria Policy](reports-ref-policy.md).

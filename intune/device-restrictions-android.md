@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c2ebbe451f83dc14a9294c78a21ecfd30e5d155
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 559550860d0882b20a005a5d0957be761978cbe6
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Android e Samsung Knox Standard in Microsoft Intune
 
@@ -94,7 +94,7 @@ Nella [sezione delle app di Google Play](https://play.google.com/store/apps), ce
 
 Aprire la pagina di installazione relativa all'app e copiare l'URL negli Appunti. A questo punto l'URL può essere usato in entrambi gli elenchi di app conformi e non conformi.
 
-Esempio: Cercare Microsoft Office Mobile in Google Play. Usare l'URL: **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Esempio: cercare **Microsoft Planner** nella [sezione delle app di Google Play](https://play.google.com/store/apps). Usare l'URL: **https://play.google.com/store/apps/details?id=com.microsoft.planner**.
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 

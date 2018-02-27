@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>Edizione anticipata per Microsoft Intune - Febbraio 2018
 
@@ -40,6 +40,10 @@ Questa pagina viene aggiornata periodicamente. Consultarla a intervalli regolari
 
 
 <!-- 1802 start -->
+
+### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>Nuovo grafico di tendenza degli errori di registrazione e tabella dei motivi degli errori <!-- 1471783 -->
+
+Nella pagina della panoramica della registrazione è possibile visualizzare la tendenza degli errori di registrazione e le prime cinque cause degli errori. Facendo clic sul grafico o sulla tabella sarà possibile espandere i dettagli per trovare consigli sulla risoluzione dei problemi e suggerimenti per la correzione.
 
 ### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>Impedire agli utenti finali di aggiungere o rimuovere account nel profilo di lavoro <!-- 1728700 -->    
 Quando si distribuisce l'app Gmail in un profilo Android for Work, è possibile impedire agli utenti finali di aggiungere o rimuovere account nel profilo di lavoro tramite l'impostazione **Aggiungi o rimuovi account** nel profilo delle restrizioni per dispositivi Android for Work.
@@ -76,9 +80,6 @@ Ad esempio, è possibile aggiungere il pacchetto Webex come eccezione ai criteri
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561-eeready--"></a>Personalizzare i temi del portale aziendale con codici esadecimali <!--1049561 eeready-->
 
 Sarà possibile personalizzare il colore del tema nelle app Portale aziendale usando codici esadecimali. Quando si immette il codice esadecimale, Intune determina il colore del testo che offre il livello di contrasto massimo tra colore del testo e colore di sfondo in base agli [standard WCAG 2.0](http://www.w3.org/TR/WCAG20). È possibile visualizzare in anteprima un confronto tra il colore del testo e il logo della società e il colore in **App per dispositivi mobili** > **Portale aziendale**. 
-
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>Selezionare le categorie di dispositivi usando le impostazioni Accedi all'azienda o all'istituto di istruzione <!-- 1058963 --> 
-Se è stato abilitato il [mapping dei gruppi di dispositivi](https://docs.microsoft.com/intune/device-group-mapping), agli utenti in Windows 10 verrà richiesto di selezionare una categoria di dispositivi dopo la registrazione tramite il pulsante **Connetti** in **Impostazioni** > **Account** > **Accedi all'azienda o all'istituto di istruzione** o durante la Configurazione guidata.
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Nuove impostazioni di Windows Defender Credential Guard aggiunte alle impostazioni di Endpoint Protection <!--1102252 --> 
 
@@ -120,7 +121,7 @@ Saranno disponibili due nuove impostazioni di privacy per i dispositivi:
 
 Gli utenti potranno usare il manager di registrazione dispositivi durante la registrazione nel portale aziendale macOS.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nuove impostazioni per il browser Microsoft Edge <!--1469166 -->
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nuove impostazioni per il browser Edge <!--1469166 -->
 
 Le due nuove impostazioni per il **percorso di Preferiti** e le **modifiche a Preferiti** saranno disponibili per i dispositivi con browser Microsoft Edge. 
 
