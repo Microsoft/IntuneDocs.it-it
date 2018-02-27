@@ -3,10 +3,10 @@ title: Prepararsi alla configurazione dei criteri di protezione delle app per Wi
 titlesuffix: Azure portal
 description: Configurare il provider di gestione di applicazioni mobili (MAM) in Azure AD
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/25/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 5514ea423f67e5bc824b4ee947f630c7f1b43d8f
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Prepararsi alla configurazione dei criteri di protezione delle app per Windows 10
 
@@ -40,17 +40,17 @@ Abilitare la gestione di applicazioni mobili (MAM) per Windows 10, impostando il
 
 4. Configurare le impostazioni nel gruppo **Ripristina URL MAM predefiniti** nel pannello **Configura**.
 
-    **Ambito utente MAM**  
-      Usare la registrazione automatica MAM per gestire i dati aziendali nei dispositivi Windows dei dipendenti. La registrazione automatica MAM verrà configurata per gli scenari Bring Your Own Device (BYOD).<ul><li>**Nessuno**<br>Selezionare questa opzione se tutti gli utenti possono essere registrati in MAM.</li><li>**Alcuni**<br>Selezionare i gruppi di Azure AD che contengono utenti che verranno registrati in MAM.</li><li>**Tutti**<br>Selezionare questa opzione se tutti gli utenti possono essere registrati in MAM.</li></ul>
+   **Ambito utente MAM**  
+   Usare la registrazione automatica MAM per gestire i dati aziendali nei dispositivi Windows dei dipendenti. La registrazione automatica MAM verrà configurata per gli scenari Bring Your Own Device (BYOD).<ul><li>**Nessuno**<br>Selezionare questa opzione se tutti gli utenti possono essere registrati in MAM.</li><li>**Alcuni**<br>Selezionare i gruppi di Azure AD che contengono utenti che verranno registrati in MAM.</li><li>**Tutti**<br>Selezionare questa opzione se tutti gli utenti possono essere registrati in MAM.</li></ul>
 
-    **URL delle condizioni per l'utilizzo di MAM**  
-     URL dell'endpoint delle condizioni per l'utilizzo del servizio MAM. L'endpoint delle condizioni per l'utilizzo viene usato per visualizzare le condizioni del servizio agli utenti finali prima che registrino i propri dispositivi per la gestione. Il testo delle condizioni per l'utilizzo comunica agli utenti i criteri applicati al dispositivo mobile.
+   **URL delle condizioni per l'utilizzo di MAM**  
+   L'URL delle condizioni per l'utilizzo di MAM non è supportato per Microsoft Intune. Per applicare i criteri di protezione è necessario che questa casella di input sia lasciata vuota.
 
-    **URL individuazione MAM**  
-    URL dell'endpoint di registrazione del servizio MAM. L'endpoint di registrazione viene usato per registrare i dispositivi per la gestione con il servizio MAM.
+   **URL individuazione MAM**  
+   URL dell'endpoint di registrazione del servizio MAM. L'endpoint di registrazione viene usato per registrare i dispositivi per la gestione con il servizio MAM.
 
-    **URL conformità MAM**  
-      URL dell'endpoint di conformità del servizio MAM. Quando a un utente viene negato l'accesso a una risorsa da un dispositivo non conforme, viene visualizzato un collegamento all'URL di conformità. L'utente può aprire il collegamento all'URL ospitato dal servizio MAM per visualizzare il motivo per il quale il dispositivo è considerato non conforme e può avviare una procedura di correzione in modalità self-service in modo da rendere il dispositivo conforme e continuare ad accedere alle risorse.
+   **URL conformità MAM**  
+   L'URL di conformità MAM non è supportato per Microsoft Intune. Per applicare i criteri di protezione è necessario che questa casella di input sia lasciata vuota. 
 
 5.  Fare clic su **Save**.
 

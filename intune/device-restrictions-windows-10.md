@@ -1,24 +1,23 @@
 ---
 title: Impostazioni relative alle restrizioni dei dispositivi per Windows 10
 titlesuffix: Azure portal
-description: "Informazioni sulle opzioni di Intune che è possibile usare per controllare le impostazioni e le funzionalità del dispositivo in dispositivi Windows 10.\""
+description: "Informazioni sulle impostazioni di Intune che è possibile usare per controllare impostazioni e funzionalità nei dispositivi Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows 10 e versioni successive in Microsoft Intune
 
@@ -28,6 +27,8 @@ ms.lasthandoff: 02/01/2018
 - **Acquisizione di schermata (solo dispositivi mobili)**: consente all'utente di acquisire la schermata del dispositivo come immagine.
 - **Copia e incolla (solo dispositivi mobili)** - Consente le azioni di copia e incolla tra app sul dispositivo.
 - **Annullamento manuale della registrazione** - Consente all'utente di eliminare manualmente l'account aziendale dal dispositivo.
+   - Questa impostazione di criteri non viene applicata se il computer è stato aggiunto ad Azure Active Directory e la registrazione automatica è abilitata. 
+   - Questa impostazione di criteri non si applica ai computer con Windows 10 Home.
 - **Installazione manuale del certificato radice (solo per dispositivi mobili)**: impedisce all'utente di installare manualmente i certificati radice e i certificati intermedi CAP.
 - **Invio dati di diagnostica** - I valori possibili sono:
     - **No**: non vengono inviati dati a Microsoft
@@ -68,7 +69,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
 ## <a name="personalization"></a>Personalization
 
-- **URL dell'immagine di sfondo del desktop (solo desktop)**: consente di specificare l'URL di un'immagine in formato JPEG, PNG o JPG che verrà usata come sfondo del desktop di Windows. Gli utenti non possono modificare questa impostazione.
+- **URL dell'immagine di sfondo del desktop (solo desktop)**: consente di specificare l'URL di un'immagine in formato JPEG che verrà usata come sfondo del desktop di Windows. Gli utenti non possono modificare questa impostazione.
 
 ## <a name="privacy"></a>Privacy
 
@@ -156,8 +157,8 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 ## <a name="edge-browser"></a>Browser Edge
 
 -   **Browser Microsoft Edge (solo dispositivi mobili)** - Consente l'uso del browser Web Edge sul dispositivo.
--   **Elenco a discesa della barra degli indirizzi (solo desktop)**: usare questa opzione per impedire a Microsoft Edge di visualizzare suggerimenti in un elenco a discesa durante la digitazione. Ciò consente di ridurre al minimo l'uso di larghezza di banda tra Microsoft Edge e i servizi Microsoft.
--   **Sincronizza i Preferiti tra i browser Microsoft (solo desktop)**: consente la sincronizzazione dei Preferiti tra Microsoft Edge e Internet Explorer in Windows.
+-   **Elenco a discesa della barra degli indirizzi (solo desktop)**: usare questa opzione per impedire a Edge di visualizzare suggerimenti in un elenco a discesa durante la digitazione. Ciò consente di ridurre al minimo l'uso di larghezza di banda tra Microsoft Edge e i servizi Microsoft.
+-   **Sincronizza i Preferiti tra i browser Microsoft (solo desktop)**: consente la sincronizzazione dei Preferiti tra Edge e Internet Explorer in Windows.
 -   **Invia intestazioni DNT (Do Not Track)** - Configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.
 -   **Cookie** - Consente al browser di salvare i cookie di Internet per il dispositivo.
 -   **JavaScript** - Consente di eseguire script, ad esempio Javascript, nel browser Microsoft Edge.
@@ -170,14 +171,14 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Strumenti di sviluppo**: impedisce all'utente finale di aprire gli strumenti di sviluppo di Microsoft Edge.
 -   **Estensioni**: consente all'utente finale di installare le estensioni di Microsoft Edge nel dispositivo.
 -   **InPrivate Browsing**: impedisce all'utente finale di aprire sessioni InPrivate Browsing.
--   **Mostra la pagina alla prima esecuzione**: impedisce la visualizzazione della pagina introduttiva quando si esegue Microsoft Edge per la prima volta.
+-   **Mostra la pagina alla prima esecuzione**: impedisce la visualizzazione della pagina introduttiva quando si esegue Edge per la prima volta.
     -   **URL della prima esecuzione**: specifica l'URL della pagina che viene visualizzata quando l'utente esegue Microsoft Edge per la prima volta (solo Windows 10 Mobile).
 -   **Home page**: aggiunge un elenco dei siti da usare come home page nel browser Microsoft Edge (solo desktop).
 -   **Modifiche alla pagina iniziale**: consente agli utenti di modificare la scelta delle pagine iniziali visualizzate all'avvio di Microsoft Edge. Usare l'impostazione Home page per creare la pagina o l'elenco di pagine che viene aperta all'avvio di Microsoft Edge.
 -   **Blocca l'accesso ai flag Informazioni su**: impedisce all'utente finale di accedere alla pagina di "flag Informazioni su" in Microsoft Edge che contiene impostazioni sperimentali e di sviluppo.
 -   **Indirizzo IP localhost WebRtc**: blocca la visualizzazione dell'indirizzo IP localhost IP quando si effettuano telefonate tramite il protocollo RTC Web.
 -   **Motore di ricerca predefinito**: specifica il motore di ricerca predefinito da usare. Gli utenti finali possono modificare questo valore in qualsiasi momento.
--   **Cancella i dati di esplorazione all'uscita**: cancella la cronologia e i dati di esplorazione quando l'utente esce da Microsoft Edge.
+-   **Cancella i dati di esplorazione all'uscita**: cancella la cronologia e i dati di esplorazione quando l'utente esce da Edge.
 -   **Raccolta di dati per il riquadro animato**: interrompe la raccolta di informazioni dal riquadro animato quando gli utenti aggiungono un sito al menu Start da Microsoft Edge.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
@@ -268,7 +269,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
       - **ID modello utente applicazione (AUMID, Application User Model ID) dell'app**: specifica l'AUMID dell'app per chiosco multimediale. Per altre informazioni, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata).
 
-    Per più app chiosco multimediale è richiesta una configurazione per chiosco multimediale. Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multimediale o selezionarne una esistente.
+    I [chioschi multimediali con più app](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) richiedono una configurazione per chiosco multimediale. Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multimediale o selezionarne una esistente.
 
     Le configurazioni per chiosco multimediale con più app includono le impostazioni seguenti:
 

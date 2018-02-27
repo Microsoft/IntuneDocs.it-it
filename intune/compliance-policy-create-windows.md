@@ -6,18 +6,18 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 1/24/2018
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05fb016277f8645c661bc8dee213ed98b95c0198
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: fe5a66ca91181d0cebdaea846f0ee08f9252d76b
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi Windows in Intune
 
@@ -196,6 +196,10 @@ Windows Holographic for Business supporta l' impostazione seguente:
 
   **Crittografia dell'archivio dati nel dispositivo**.
 
-<!--- ## Next steps
+Per verificare la crittografia del dispositivo in Microsoft HoloLens, vedere [Verificare la crittografia dispositivo](https://docs.microsoft.com/hololens/hololens-encryption#verify-device-encryption).
 
-[How to monitor device compliance](device-compliance-monitor.md)--->
+## <a name="next-steps"></a>Passaggi successivi
+
+Per informazioni su come monitorare la conformità dei dispositivi, vedere l'argomento seguente:
+
+- [Come monitorare la conformità dei dispositivi](device-compliance-monitor.md)

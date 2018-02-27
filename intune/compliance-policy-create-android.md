@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7995b79422a142f3eb8d5e81d81dbc525fbbb696
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 6da4e6ffb473cee73f3946e5af3d97ddd5bb6b7b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi Android in Intune
 
@@ -28,13 +28,13 @@ ms.lasthandoff: 01/30/2018
 
 I criteri di conformità dei dispositivi vengono creati per ogni piattaforma dal portale di Intune in Azure. 
 
-- Per altre informazioni sui criteri di conformità consultare l'argomento [What is a device compliance](device-compliance.md)(Che cos'è la conformità dei dispositivi).
-- Per altre informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, consultare l'argomento [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
+- Per altre informazioni sui criteri di conformità, vedere [cos'è la conformità dei dispositivi](device-compliance.md).
+- Per informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, vedere [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
 
 ## <a name="to-create-a-device-compliance-policy"></a>Per creare i criteri di conformità dei dispositivi
 
 1. Dal pannello **Intune** scegliere **Imposta la conformità dei dispositivi**. In **Gestione** scegliere **Tutti i criteri di conformità del dispositivo** e quindi **Crea**.
-2. Digitare un nome e una descrizione, quindi scegliere la piattaforma a cui si desidera applicare questi criteri.
+2. Digitare un nome e una descrizione e scegliere la piattaforma a cui applicare questi criteri.
 3. Scegliere i **Requisiti per la conformità** per specificare le impostazioni **Sicurezza**, **Integrità del dispositivo** e **Proprietà del dispositivo**. Al termine, scegliere **OK**.
 
 <!-- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
@@ -48,7 +48,7 @@ I criteri di conformità dei dispositivi vengono creati per ogni piattaforma dal
 
 Per assegnare agli utenti i criteri di conformità, scegliere un criterio configurato. I criteri esistenti sono reperibili nel pannello **Criteri di conformità**.
 
-1. Selezionare il criterio e scegliere **Assegnazione**. Si apre il pannello da cui è possibile selezionare i **Gruppi di sicurezza Azure Active Directory** e assegnarli ai criteri.
+1. Selezionare il criterio e scegliere **Assegnazione**. Sarà quindi possibile selezionare **Gruppi di sicurezza Azure Active Directory** e assegnare i gruppi al criterio.
 2. Scegliere **Seleziona gruppi** per aprire il pannello che consente di visualizzare i gruppi di sicurezza di Azure AD. Qui è possibile trovare i gruppi di sicurezza in Azure Active Directory.  È possibile selezionare i gruppi di utenti a cui si vuole applicare questo criterio e scegliere **Seleziona**. Se si sceglie **Seleziona** il criterio verrà distribuito agli utenti.
 
 Il criterio è stato applicato agli utenti.  I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità.
@@ -57,7 +57,7 @@ Il criterio è stato applicato agli utenti.  I dispositivi usati dagli utenti a 
 
 ## <a name="device-health-and-security-settings"></a>Impostazioni di integrità e sicurezza dei dispositivi
 
-- **Il dispositivo non deve essere jailbroken o rooted**: se si abilita questa impostazione, i dispositivi jailbroken verranno valutati come non conformi.
+- **Il dispositivo non deve essere jailbroken o rooted:** se si abilita questa impostazione, i dispositivi jailbroken vengono considerati come non conformi.
 - **Richiedi che i dispositivi impediscano l'installazione di app da origini sconosciute (Android 4.0 o versione successiva)**: per bloccare i dispositivi che hanno le opzioni **Sicurezza**>; **Origini sconosciute** abilitate sul dispositivo, abilitare questa impostazione e impostarla su **Sì**.
 
 ### <a name="important"></a>Importante
@@ -68,19 +68,17 @@ Le applicazioni di cui si esegue il sideload richiedono l'abilitazione dell'impo
 - **Richiedi l'abilitazione dell'opzione "Cerca minacce per la sicurezza nel dispositivo" nei dispositivi (Android 4.2-4.4)**: questa impostazione specifica che la funzionalità **Verifica app** è abilitata nel dispositivo.
 - **Livello minimo di patch di protezione per Android (Android 6.0 o versione successiva)**: usare questa impostazione per specificare il livello minimo di patch per Android. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere specificata nel formato: AAAA-MM-GG.
 - **Richiedi l'abilitazione della protezione dalle minacce per il dispositivo**: usare questa impostazione per considerare la valutazione del rischio della soluzione Lookout MTP come condizione di conformità. Selezionare il livello di minaccia più alto consentito tra uno dei seguenti:
-  - **Nessuno (protetto)**: questo è il livello più sicuro e indica che il dispositivo non può avere minacce. Se viene rilevata la presenza di minacce di qualsiasi livello per il dispositivo, questo sarà considerato come non conforme.
+  - **Nessuno (protetto)**: questo livello di minaccia è il più sicuro e indica che il dispositivo non può contenere minacce. Se viene rilevata la presenza di minacce di qualsiasi livello per il dispositivo, questo sarà considerato come non conforme.
   - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
   - **Medio**: il dispositivo viene valutato come conforme se le minacce presenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
-  - **Alta**: questo è il livello meno sicuro. Questa impostazione abilita tutti i livelli di rischio. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
-
-Per altre informazioni dettagliate, vedere [Abilitare la regola di protezione dalle minacce per i dispositivi nei criteri di conformità](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
+  - **Alto**: questo livello di minaccia è il meno sicuro. Questa impostazione abilita tutti i livelli di rischio. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
 
 ## <a name="system-security-settings"></a>Impostazioni di sicurezza del sistema
 
 ### <a name="password"></a>Password
 
-- **Richiedi una password per sbloccare i dispositivi mobili:** impostare l'opzione su **Sì** per richiedere agli utenti di immettere una password prima di poter accedere al dispositivo.
-- **Lunghezza minima password**: specifica il numero minimo di cifre o caratteri per la password dell&#39;utente.
+- **Richiedi una password per sbloccare i dispositivi mobili**: selezionare **Sì** per richiedere agli utenti di immettere una password prima di poter accedere al dispositivo.
+- **Lunghezza minima password**: specificare il numero minimo di cifre o caratteri per la password dell&#39;utente.
 - **Qualità password:** questa impostazione rileva se i requisiti di password specificati sono configurati nel dispositivo. Abilitare questa impostazione per richiedere agli utenti di impostare determinati requisiti di password per i dispositivi Android. È possibile scegliere tra:
   - **Protezione biometrica bassa**
   - **Richiesto**
@@ -88,15 +86,15 @@ Per altre informazioni dettagliate, vedere [Abilitare la regola di protezione da
   - **Almeno alfabetico**
   - **Almeno alfanumerico**
   - **Alfanumerico con simboli**
-- **Minuti di inattività prima che venga richiesta la password**: specifica il tempo di inattività prima che l'utente debba immettere di nuovo la password.
+- **Minuti di inattività prima che venga richiesta la password:** specifica il tempo di inattività prima che l'utente debba immettere di nuovo la password.
 - **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
-- **Ricorda cronologia password**: usare questa impostazione insieme a **Impedisci riutilizzo delle password precedenti** per impedire all'utente di creare password già usate in precedenza.
-- **Impedisci riutilizzo delle password precedenti**: se l'opzione **Ricorda cronologia password** è selezionata, specifica il numero di password usate in precedenza che non è possibile usare di nuovo.
+- **Ricorda cronologia password:** usare questa impostazione insieme a **Impedisci riutilizzo delle password precedenti** per impedire all'utente di creare password già usate in precedenza.
+- **Impedisci riutilizzo delle password precedenti**: se l'opzione **Ricorda cronologia password** è selezionata, specificare il numero di password usate in precedenza che non è possibile usare di nuovo.
 - **Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività:** questa impostazione deve essere usata insieme all'impostazione **Minuti di inattività prima che venga richiesta la password**. Agli utenti viene richiesto di immettere una password per accedere a un dispositivo che è rimasto inattivo per il tempo specificato nell'impostazione **Minuti di inattività prima che venga richiesta la password**.
 
 ### <a name="encryption"></a>Crittografia
 
-- **Richiedi crittografia sul dispositivo mobile**: impostare questa opzione su **Sì** per richiedere che i dispositivi vengano crittografati per la connessione alle risorse. I dispositivi vengono crittografati se si sceglie l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**.
+- **Richiedi crittografia sul dispositivo mobile**: selezionare **Sì** per richiedere la crittografia dei dispositivi per la connessione alle risorse. I dispositivi vengono crittografati se si sceglie l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**.
 
 ## <a name="device-property-settings"></a>Impostazioni delle proprietà dei dispositivi
 

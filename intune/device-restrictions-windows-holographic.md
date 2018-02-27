@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 1/19/2018
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 300ddb15f2d7b8f2fc6ab4a0e9e32852e0604e0a
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 0ecf5e17bb66ac6515a3e67f4b0a1bc82ec9c3ba
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="windows-holographic-for-business-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows Holographic for Business in Microsoft Intune
 
@@ -41,12 +41,11 @@ Le impostazioni seguenti relative alle restrizioni dei dispositivi sono supporta
 
 ## <a name="app-store"></a>App Store
 
--   **App Store**: consente o blocca l'uso dell'App Store nei dispositivi.
 -   **Aggiorna automaticamente le app dallo Store**: consente l'aggiornamento automatico delle app installate da Microsoft Store.
 -   **Installazione di app attendibile**: consente il trasferimento locale delle app con certificato attendibile.
 -   **Sblocco dallo sviluppatore**: consente la modifica delle impostazioni da parte degli sviluppatori Windows, ad esempio consentire all'utente finale di modificare le app trasferite localmente.
 
-## <a name="edge-browser"></a>Browser Edge
+## <a name="edge-browser"></a>Browser Microsoft Edge
 
 -   **Browser Microsoft Edge**: consente l'uso del browser Web Microsoft Edge sul dispositivo.
 -   **Cookie** - Consente al browser di salvare i cookie di Internet per il dispositivo.
