@@ -1,45 +1,43 @@
 ---
-title: Impostazioni di layout della schermata iniziale di Intune per i dispositivi iOS
+title: Impostazioni di layout della schermata iniziale di Microsoft Intune per i dispositivi iOS
 titlesuffix: Azure portal
-description: Informazioni sulle impostazioni per personalizzare la schermata iniziale e il dock nei dispositivi iOS."
+description: Informazioni sulle impostazioni per personalizzare la schermata iniziale e il dock nei dispositivi che eseguono iOS.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e4de4f4b1235136d7391c8d9efdc1405043e4da
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Impostazioni di layout della schermata iniziale di Intune per i dispositivi iOS
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Impostazioni di layout della schermata iniziale di Microsoft Intune per i dispositivi iOS 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Usare queste impostazioni per configurare il layout di app e cartelle nel dock e nella schermata iniziale dei dispositivi iOS.
+Usare queste impostazioni per configurare il layout delle app e le cartelle nel dock e nella schermata iniziale dei dispositivi che eseguono iOS.
 
-I dispositivi iOS ai quali si assegna il profilo devono essere in modalità di supervisione ed eseguire iOS 9.3 o versione successiva.
+I dispositivi che eseguono iOS con un profilo assegnato devono essere in modalità di supervisione ed eseguire iOS 9.3 o versione successiva.
 
-1. Nei pannelli delle **funzionalità dei dispositivi** scegliere **Layout della schermata iniziale (solo con supervisione)**.
-2. Nel pannello **Layout della schermata iniziale (solo supervisione)** scegliere se configurare il layout **Dock** o **Pagine**.
+1. Nella pagina **Configurazione del dispositivo**, **Crea profilo**, **Funzionalità del dispositivo** scegliere **Layout della schermata iniziale (solo con supervisione)**.
+2. Nella pagina **Layout della schermata iniziale (solo con supervisione)** scegliere se configurare il layout **Dock** o **Pagine**.
 
 ## <a name="add-items-to-the-dock"></a>Aggiungere elementi al dock
 
-Nel pannello **Dock** è possibile aggiungere fino a sei elementi o cartelle al dock della schermata iOS. Tuttavia, molti dispositivi supportano un numero inferiore di elementi. Ad esempio, i dispositivi iPhone supportano massimo quattro elementi. In questo caso, nel dispositivo verranno visualizzati solo i primi quattro elementi configurati.
+Nella pagina **Dock** è possibile aggiungere fino a sei elementi o cartelle al dock della schermata iOS. Tuttavia, molti dispositivi supportano un numero inferiore di elementi. Ad esempio, i dispositivi iPhone supportano massimo quattro elementi. In questo caso, nel dispositivo verranno visualizzati solo i primi quattro elementi configurati.
 
 1. Scegliere **Aggiungi** per aggiungere un elemento al dock.
-2. Nel pannello **Aggiungi riga** scegliere se aggiungere un'**App** o una **Cartella**.
+2. Nella pagina **Aggiungi riga** scegliere se aggiungere un'**App** o una **Cartella**.
 3. Usando le informazioni in questo argomento, configurare le app e le cartelle che si vuole visualizzare nel dock.
-4. Aggiungere tutti gli elementi desiderati. Al termine, fare clic su **OK** in ogni pannello fino a tornare al pannello **Crea profilo**. Scegliere **Crea**.
+4. Aggiungere tutti gli elementi desiderati. Al termine, fare clic su **OK** in ogni pagina fino a tornare alla pagina **Crea profilo**. Scegliere **Crea**.
 
 >[!TIP]
 > È possibile selezionare e trascinare gli elementi di qualsiasi schermata iniziale e qualsiasi elenco di pagine per riordinarli. 
@@ -48,19 +46,19 @@ Nel pannello **Dock** è possibile aggiungere fino a sei elementi o cartelle al 
 
 In questo esempio la schermata del dock è stata configurata in modo che visualizzi solo le app Safari, Mail e Borsa. Nella figura seguente, l'app Mail è selezionata per illustrarne le proprietà:
 
-![Impostazioni di esempio del dock iOS](http://i.imgur.com/FfFiUcP.png)
+![Impostazioni di esempio del dock iOS](./media/FfFiUcP.png)
 
 Quando si assegnano i criteri a un iPhone, il risultato è un dock con un aspetto simile al seguente:
 
-![Esempio di layout del dock su iPhone](http://i.imgur.com/bAgCe8F.png)
+![Esempio di layout del dock su iPhone](./media/bAgCe8F.png)
 
 ## <a name="add-home-screen-pages"></a>Aggiungere pagine alla schermata iniziale
 
 Aggiungere le pagine che verranno visualizzate nella schermata iniziale e le app che verranno visualizzate in ogni pagina. Le app aggiunte a una pagina vengono disposte da sinistra a destra, nell'ordine in cui sono specificate nell'elenco. Se si aggiungono più app di quelle che può contenere una pagina, le app vengono spostate nella pagina successiva.
 
 
-1. Nel pannello **Pagine**, scegliere **Aggiungi**.
-2. Nel pannello **Aggiungi riga**, immettere un **Nome pagina**. Questo nome viene usato come riferimento nel portale di Azure e *non viene visualizzato* nel dispositivo iOS.
+1. Nella pagina **Pagine** scegliere **Aggiungi**.
+2. Nella pagina **Aggiungi riga** immettere un **Nome pagina**. Questo nome viene usato come riferimento nel portale di Azure e *non viene visualizzato* nel dispositivo iOS.
 3. Scegliere **Aggiungi**, quindi scegliere se aggiungere alla pagina un'**App** o una **Cartella**.
 4. Usando le informazioni in questo argomento, configurare le app e le cartelle che si vuole visualizzare nella pagina.
 
@@ -68,11 +66,11 @@ Aggiungere le pagine che verranno visualizzate nella schermata iniziale e le app
 
 In questo esempio è stata configurata una nuova pagina con il nome **Contoso**. La pagina visualizza solo le app Trova amici e Impostazioni. Nell'immagine seguente l'app Impostazioni è selezionata per illustrarne le proprietà:
 
-![Esempio di impostazioni della schermata iniziale iOS](http://i.imgur.com/Jc2OxyX.png)
+![Esempio di impostazioni della schermata iniziale iOS](./media/Jc2OxyX.png)
 
 Quando si assegnano i criteri a un iPhone, il risultato è una pagina con un aspetto simile al seguente:
 
-![Dispositivo iOS con schermata iniziale modificata](http://i.imgur.com/Bd37PHa.png)
+![Dispositivo iOS con schermata iniziale modificata](./media/Bd37PHa.png)
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Come aggiungere un'app all'elenco
 
@@ -87,7 +85,7 @@ Le app aggiunte a una pagina in una cartella vengono disposte da sinistra a dest
 
 1. Immettere il **Nome cartella**. Questo nome viene visualizzato nel dispositivo degli utenti.
 2. Scegliere **Aggiungi** per creare una pagina nella cartella. È possibile aggiungere fino a 20 pagine.
-3. Nel pannello **Aggiungi riga**, immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure e *non viene visualizzato* nel dispositivo iOS.
+3. Nella pagina **Aggiungi riga** immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure e *non viene visualizzato* nel dispositivo iOS.
 3. Immettere il **Nome app**. Questo nome viene usato come riferimento nel portale di Azure e *non viene visualizzato* nel dispositivo iOS.
 2. Immettere l'**ID bundle** dell'app che si vuole visualizzare. Per assistenza, vedere **Come aggiungere un'app all'elenco**.
 3. Scegliere **Aggiungi**. È possibile aggiungere fino a 60 elementi.

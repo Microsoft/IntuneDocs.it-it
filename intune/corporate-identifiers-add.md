@@ -1,7 +1,7 @@
 ---
 title: Aggiungere identificatori aziendali a Intune
-titlesuffix: Azure portal
-description: Informazioni su come aggiungere gli identificatori aziendali (metodo di registrazione, numeri IMEI e numeri di serie) a Microsoft Intune. "
+titlesuffix: Microsoft Intune
+description: Informazioni su come aggiungere gli identificatori aziendali (metodo di registrazione, numeri IMEI e numeri di serie) a Microsoft Intune.
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2be1f71887b7812ff17b69b679d54a920d3261
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificare i dispositivi di proprietà dell'azienda
 
@@ -72,7 +72,7 @@ Il file con estensione CSV quando viene visualizzato in un editor di testo viene
 
 1. In Intune nel portale di Azure scegliere **Registrazione del dispositivo** > **Identificatori dei dispositivi aziendali** e quindi fare clic su **Aggiungi**.
 
- ![Screenshot dell'area di lavoro Identificatori dei dispositivi aziendali con il pulsante Aggiungi evidenziato.](./media/add-corp-id.png)
+ ![Area di lavoro Identificatori dei dispositivi aziendali con il pulsante Aggiungi evidenziato](./media/add-corp-id.png)
 
 2. Nel pannello **Aggiungi identificatori** specificare il tipo di identificatore, **IMEI** o **Numero di serie**. È possibile specificare se i numeri importati in precedenza debbano **Sovrascrivere i dettagli per gli identificatori esistenti**.
 
@@ -100,4 +100,4 @@ Le proprietà dei dispositivi mostrano la **Proprietà** per ogni record di disp
 3. Scegliere **Proprietà**.
 4. Specificare la **Proprietà del dispositivo** come **Personale** o **Aziendale**.
 
-  ![Screenshot delle proprietà del dispositivo che mostra le opzioni Categoria del dispositivo e Proprietà del dispositivo.](./media/device-properties.png)
+  ![Proprietà del dispositivo che mostrano le opzioni Categoria del dispositivo e Proprietà del dispositivo](./media/device-properties.png)

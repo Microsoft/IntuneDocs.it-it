@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc5ebd90483b0fa0e25461574085bd4160f012ea
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
+ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Procedura per la gestione delle app iOS acquistate tramite Volume Purchase Program con Microsoft Intune
 
@@ -120,11 +120,11 @@ Agli utenti finali verrà richiesto di installare app VPP in numerosi scenari. N
 
 | # | Scenario                                | Invito al programma VPP di Apple                              | Richiesta di installazione app | Richiesta di ID Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD: utente con licenza                             | Y                                                                                               | Y                                           | Y                                 |
-| 2 | Aziendale: utente con licenza (dispositivo senza supervisione)     | Y                                                                                               | Y                                           | Y                                 |
-| 3 | Aziendale: utente con licenza (dispositivo con supervisione)         | Y                                                                                               | N                                           | Y                                 |
-| 4 | BYOD: dispositivo con licenza                           | N                                                                                               | Y                                           | N                                 |
-| 5 | Aziendale: dispositivo con licenza (dispositivo senza supervisione)                           | N                                                                                               | Y                                           | N                                 |
+| 1 | BYOD: utente con licenza                             | S                                                                                               | S                                           | S                                 |
+| 2 | Aziendale: utente con licenza (dispositivo senza supervisione)     | S                                                                                               | S                                           | S                                 |
+| 3 | Aziendale: utente con licenza (dispositivo con supervisione)         | S                                                                                               | N                                           | S                                 |
+| 4 | BYOD: dispositivo con licenza                           | N                                                                                               | S                                           | N                                 |
+| 5 | Aziendale: dispositivo con licenza (dispositivo senza supervisione)                           | N                                                                                               | S                                           | N                                 |
 | 6 | Aziendale: dispositivo con licenza (dispositivo con supervisione)                           | N                                                                                               | N                                           | N                                 |
 | 7 | Modalità tutto schermo (dispositivo con supervisione): dispositivo con licenza | N                                                                                               | N                                           | N                                 |
 | 8 | Modalità tutto schermo (dispositivo con supervisione): utente con licenza   | --- | ---                                          | ---                                |
@@ -134,17 +134,20 @@ Agli utenti finali verrà richiesto di installare app VPP in numerosi scenari. N
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>Revoca delle licenze delle app ed eliminazione dei token 
 
-<!-- 820863 -->For a given device that has one or more iOS volume-purchase program (VPP) apps, you revoke all associated device-based app licenses for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim a license, you must change the assignment type of the VPP app to **Uninstall**. If you remove an app that was assigned to a user, Intune reclaims the user or device license and uninstallS the app from the device.
+<!-- 820863 -->  
+Per un dispositivo specifico con una o più app Volume Purchase Program (VPP) iOS, è necessario revocare tutte le licenze per app basate su dispositivo associate al dispositivo stesso. La revoca di una licenza per app non comporterà la disinstallazione dell'app VPP correlata dal dispositivo. Per disinstallare un'app VPP e revocare una licenza, è necessario modificare il tipo di assegnazione dell'app VPP in **Disinstalla**. Se si rimuove un'app assegnata a un utente, Intune recupera la licenza per l'utente o il dispositivo e disinstalla l'app dal dispositivo.
 
 >[!NOTE]
 >Intune recupererà tutte le licenze delle app VPP per iOS concesse agli utenti quando un dipendente lascia l'azienda e non fa più parte dei gruppi di AAD.
 
-<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses or uninstall apps. 
+<!-- 820879 -->  
+È possibile eliminare un token Volume Purchasing Program (VPP) iOS tramite la console. Ciò potrebbe risultare necessario in presenza di istanze duplicate di un token VPP. L'eliminazione di un token eliminerà anche le eventuali app associate e l'assegnazione. Tuttavia, l'eliminazione di un token non comporta la revoca delle licenze per le app o la disinstallazione di app. 
 
 >[!NOTE]
 >Intune non può revocare le licenze delle app dopo l'eliminazione di un token. 
 
-<!-- 820870 -->To revoke the license of all VPP apps for a given VPP token, you must first revoke all app licenses associated with the token, then delete the token.
+<!-- 820870 -->  
+Per revocare la licenza di tutte le app VPP per un token VPP specificato, è prima di tutto necessario revocare tutte le licenze di app associate al token e quindi eliminare il token.
 
 ## <a name="further-information"></a>Altre informazioni
 

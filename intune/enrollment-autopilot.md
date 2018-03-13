@@ -1,6 +1,7 @@
 ---
-title: Registrare dispositivi Windows con il programma Windows AutoPilot Deployment
-description: Informazioni su come registrare nuovi dispositivi Windows 10 con il programma Windows AutoPilot Deployment.
+title: Registrare dispositivi con il programma Windows AutoPilot Deployment
+titleSuffix: Microsoft Intune
+description: Informazioni su come registrare dispositivi Windows 10 con il programma Windows AutoPilot Deployment.
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -11,19 +12,19 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 56d585c52d3704e64c658cedb48cad7270ceeccf
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: dfdc712f3cf1b9ce928574ee9e9078c80bd696bb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Registrare dispositivi Windows con il programma Windows AutoPilot Deployment
-Il programma Windows AutoPilot Deployment semplifica il provisioning dei dispositivi. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni, e così via, sui dispositivi dopo che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot) (Panoramica di Windows AutoPilot).
+# <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>Registrare dispositivi Windows con il programma Windows AutoPilot Deployment
+Il programma Windows AutoPilot Deployment semplifica il provisioning dei dispositivi. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni, e così via, sui dispositivi dopo che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Panoramica di Windows AutoPilot).
 
 ## <a name="prerequisites"></a>Prerequisiti
 - [I dispositivi devono essere registrati per l'organizzazione](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#device-registration-and-oobe-customization)
 - [La registrazione automatica di Windows deve essere abilitata](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
-- È necessario avere una [sottoscrizione di Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+- [sottoscrizione di Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 ## <a name="synchronize-devices"></a>Sincronizzare i dispositivi
 Sincronizzare i dispositivi registrati in Intune in modo da poterli configurare.

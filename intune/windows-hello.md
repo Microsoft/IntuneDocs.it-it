@@ -1,32 +1,32 @@
 ---
-title: Come usare Windows Hello for Business
-titleSuffix: Azure portal
+title: Come integrare Windows Hello for Business in Microsoft Intune
+titleSuffix: 
 description: Informazioni su come creare un criterio per controllare l'uso di Windows Hello for Business nei dispositivi gestiti."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 465de83c5bd15cfab67a4307000c0aa9cbfb1730
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-windows-hello-for-business"></a>Usare Windows Hello for Business
+# <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrare Windows Hello for Business in Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune si integra con Windows Hello for Business (precedentemente noto come Microsoft Passport for Work), un metodo di accesso alternativo che usa Active Directory o un account Azure Active Directory per sostituire una password, una smart card o una smart card virtuale.
+È possibile integrare Windows Hello for Business (in precedenza Microsoft Passport for Work) in Microsoft Intune.
 
-Hello for Business consente di eseguire l'accesso usando un *movimento dell'utente* invece di una password. Un movimento dell'utente può essere un PIN semplice, l'autenticazione biometrica come Windows Hello o un dispositivo esterno come un lettore di impronte digitali.
+ Hello for Business è un metodo di accesso alternativo che usa Active Directory o un account Azure Active Directory per sostituire una password, una smart card o una smart card virtuale. Consente di eseguire l'accesso usando un *movimento dell'utente* invece di una password. Un movimento dell'utente può essere un PIN semplice, l'autenticazione biometrica come Windows Hello o un dispositivo esterno come un lettore di impronte digitali.
 
 Intune si integra con Hello for Business in due modi:
 
@@ -50,17 +50,17 @@ Per assicurarsi che i conflitti dei criteri vengano risolti e che i criteri dei 
 
 1.  Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 
-2.  Nel pannello di Intune scegliere **Registrazione del dispositivo** e quindi **Registrazione Windows** > **Windows Hello for Business**.
+2.  Nella pagina di Intune scegliere **Registrazione del dispositivo** e quindi **Registrazione Windows** > **Windows Hello for Business**.
 
-3.  Nel pannello visualizzato scegliere le impostazioni **predefinite**.
+3.  Nella pagina visualizzata scegliere le impostazioni **predefinite**.
 
-4.  Nel pannello **Tutti gli utenti** fare clic su **Proprietà** e immettere un **nome** e una **descrizione** facoltativa per le impostazioni di Windows Hello for Business.
+4.  Nella pagina **Tutti gli utenti** fare clic su **Proprietà** e immettere un **nome** e una **descrizione** facoltativa per le impostazioni di Windows Hello for Business.
 
-5. Nel pannello **Tutti gli utenti** fare clic su **Impostazioni** e quindi per **Configura Windows Hello for Business** scegliere tra le seguenti impostazioni:
+5. Nella pagina **Tutti gli utenti** fare clic su **Impostazioni** e quindi per **Configura Windows Hello for Business** scegliere tra le seguenti impostazioni:
 
     - **Disabilitato**. Selezionare questa impostazione se non si vuole usare Windows Hello for Business. Tutte le altre impostazioni nella schermata risultano non disponibili.
     - **Attivata**. Selezionare questa impostazione se si vuole configurare le impostazioni di Windows Hello for Business.
-    - **Non configurato**. Selezionare questa impostazione se non si vuole usare Intune per controllare le impostazioni di Windows Hello for Business. Eventuali impostazioni di Windows Hello for Business presenti nei dispositivi Windows 10 non verranno modificate. Tutte le altre impostazioni nel pannello non sono disponibili.
+    - **Non configurato**. Selezionare questa impostazione se non si vuole usare Intune per controllare le impostazioni di Windows Hello for Business. Eventuali impostazioni di Windows Hello for Business presenti nei dispositivi Windows 10 non verranno modificate. Tutte le altre impostazioni nella pagina non sono disponibili.
 
 6.  Se si seleziona **Abilitato** nel passaggio precedente, configurare le impostazioni obbligatorie che verranno applicate a tutti i dispositivi Windows 10 e Windows 10 Mobile registrati.
 

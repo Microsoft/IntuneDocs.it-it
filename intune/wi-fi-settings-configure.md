@@ -1,7 +1,7 @@
 ---
 title: Come configurare le impostazioni Wi-Fi di Intune
-titleSuffix: Azure portal
-description: Informazioni su come usare Intune per configurare le connessioni Wi-Fi nei dispositivi gestiti."
+titleSuffix: Microsoft Intune
+description: Informazioni su come usare Microsoft Intune per configurare le connessioni Wi-Fi nei dispositivi gestiti.
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Come configurare le impostazioni Wi-Fi in Microsoft Intune
 
@@ -46,7 +46,7 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
 
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Creare un profilo dispositivo contenente le impostazioni Wi-Fi
 
-1. Accedere al portale di Azure.
+1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
 2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
@@ -62,7 +62,7 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
    > [!IMPORTANT]
    > Se si sta creando un profilo per dispositivi che eseguono Windows 10, tra cui Windows Holographic for Business, è necessario scegliere la piattaforma **Windows 8.1 e versioni successive**. La piattaforma **Windows 10 e versioni successive** non include un tipo di profilo Wi-Fi. 
 
-6. Per i dispositivi Apple o Android nell'elenco a discesa **Tipo di Wi-Fi** scegliere **Basic** o **Enterprise**. È possibile usare **Basic** per fornire informazioni di base, come il nome della rete e l'identificatore SSID. **Enterprise** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi lo usa. 
+6. Per i dispositivi Apple o Android nell'elenco a discesa **Tipo di Wi-Fi** scegliere **Basic** o **Enterprise**. È possibile usare **Basic** per fornire informazioni di base, come il nome della rete e l'identificatore SSID. **Enterprise** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi usa questo protocollo. 
 
    Il profilo **Wi-Fi per importazione**  (per Windows 8.1 e versioni successive) consente di importare le impostazioni Wi-Fi come un file XML precedentemente esportato da un altro dispositivo.
 1. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli argomenti seguenti per il dettaglio delle impostazioni di ogni piattaforma:

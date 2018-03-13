@@ -1,12 +1,12 @@
 ---
-title: Come aggiungere app iOS Store a Intune | Microsoft Docs
-titlesuffix: Azure portal
-description: Informazioni sull'aggiunta di app dello Store iOS a Intune."
+title: Come aggiungere app dello Store iOS a Microsoft Intune
+titlesuffix: 
+description: Informazioni sull'aggiunta di app dello Store iOS a Microsoft Intune.
 keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2017
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e013b5c995274365978ee0c2ba2f45bfeef54baa
-ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
+ms.openlocfilehash: b5315d683abfc38a7f42d2f322cc77c625270e3c
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Come aggiungere app iOS Store a Microsoft Intune
+# <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Come aggiungere app dello Store iOS a Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Usare le informazioni di questo argomento per aggiungere le app dello Store iOS a Intune.
+Usare le informazioni di questo articolo per aggiungere le app dello Store iOS a Microsoft Intune. Le app delle Store iOS sono app installate da Intune in un dispositivo dell'utente. L'utente fa parte della forza lavoro della società. Le app dello Store iOS vengono aggiornate automaticamente. 
 
 >[!NOTE]
 >Anche se gli utenti dei dispositivi iOS possono rimuovere alcune delle app iOS predefinite, ad esempio Borsa e Mappe, non è possibile usare Intune per ridistribuire tali app. Se gli utenti finali eliminano queste app, devono accedere all'App Store e reinstallarle manualmente.
@@ -40,25 +40,25 @@ Usare le informazioni di questo argomento per aggiungere le app dello Store iOS 
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Passaggio 1: cercare l'app nello Store
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Gestisci le app**.
-4. Nel carico di lavoro di **App per dispositivi mobili** scegliere **Gestisci** > App.
-5. In alto all'elenco delle applicazioni scegliere **Aggiungi**.
-6. Nel pannello **Aggiungi app** scegliere **Cerca in App Store**.
-7. Nel pannello **App Store di Apple** selezionare le impostazioni locali del paese per App Store.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
+4. Nel carico di lavoro **App per dispositivi mobili** scegliere **App** nella sezione **Gestisci**.
+5. Scegliere **Aggiungi** sul lato destro del riquadro **App**.
+6. Nell'elenco **Tipo di app** selezionare **iOS** dai tipi di **App Store** disponibili.
+6. Scegliere **Cerca in App Store**.
+7. Nel pannello **Cerca in App Store** selezionare le impostazioni locali del paese per App Store.
 8. Digitare il nome (o una parte del nome) nella casella di ricerca. Intune esegue la ricerca nello Store e restituisce un elenco di risultati pertinenti.
-9. Nell'elenco scegliere l'app desiderata, quindi fare clic su **OK**.
+9. Scegliere l'app nell'elenco e fare clic su **Seleziona**.
 
 ## <a name="step-2---configure-app-information"></a>Passaggio 2: configurare le informazioni sull'app
 
-1. Nel pannello **Aggiungi app** scegliere **Informazioni sull'app**.
-2. Nel pannello **Modifica l'app** configurare le informazioni relative all'app. Al termine, fare clic su **Aggiungi**. A seconda dell'app selezionata, è possibile che alcuni valori nel pannello vengano compilati automaticamente:
+1. Nel pannello **Aggiungi app** scegliere **Informazioni sull'app** per configurare l'app.
+2. Nel pannello **Informazioni sull'app** aggiungere le informazioni sull'app. A seconda dell'app selezionata, è possibile che alcuni valori nel pannello vengano compilati automaticamente:
 - **Nome**: immettere il nome dell'app da visualizzare nel portale aziendale. Verificare che tutti i nomi di app usati siano univoci. Se il nome di un'app è usato due volte, il portale aziendale mostra agli utenti una sola app.
 - **Descrizione**: immettere la descrizione dell'app che gli utenti visualizzano nel portale aziendale.
 - **Autore**: immettere il nome dell'autore dell'app.
 - **URL di App Store**: immettere l'URL dell'App Store per l'app che si vuole creare.
-- **Store country/region** (Paese/area di App Store): selezionare le impostazioni locali dell'area geografica di App Store.
 - **Sistema operativo minimo**: scegliere nell'elenco la versione minima del sistema operativo in cui è possibile installare l'app. L'app non verrà installata su un dispositivo con un sistema operativo precedente.
 - **Tipo di dispositivo applicabile**: scegliere nell'elenco i dispositivi che vengono usati dall'app.
 - **Categoria** (facoltativo). Selezionare uno o più categorie di app predefinite oppure una categoria creata. Le categorie consentono agli utenti di trovare più facilmente l'app nel portale aziendale.
@@ -69,6 +69,11 @@ Usare le informazioni di questo argomento per aggiungere le app dello Store iOS 
 - **Proprietario**: immettere il nome del proprietario di questa app, ad esempio **Reparto risorse umane** (facoltativo).  Questo campo è visibile solo per gli amministratori e non per gli utenti.
 - **Note**: immettere eventuali note da associare a questa app. Questo campo è visibile solo per gli amministratori e non per gli utenti.
 - **Logo**: caricare un'icona che viene associata all'app. L'icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
-3. Al termine, nel pannello **Aggiungi app** scegliere **OK**.
+3. Al termine, fare clic su **OK** nel pannello **Aggiungi informazioni**.
+4. Fare clic su **Aggiungi** nel pannello **Aggiungi app**. 
 
-L'app creata viene visualizzata nell'elenco di app e da qui è possibile assegnarla ai gruppi desiderati. Per altre informazioni, vedere [Come assegnare app ai gruppi](apps-deploy.md).
+L'app creata viene visualizzata nell'elenco di app e da qui è possibile assegnarla ai gruppi desiderati. 
+
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Come assegnare app ai gruppi](apps-deploy.md)

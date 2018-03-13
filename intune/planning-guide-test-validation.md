@@ -1,9 +1,10 @@
 ---
 title: Test e convalida di Intune
-description: "I dettagli che è necessario considerare durante il test e la convalida di una soluzione Intune di tipo solo cloud nel proprio ambiente."
+titlesuffix: Microsoft Intune
+description: Come testare e convalidare la soluzione Intune solo cloud nell'ambiente in uso.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Test e convalida di Intune
 
-La fase di test ha luogo sia durante che dopo la fase di implementazione. Sono necessari account, gruppi e dispositivi di test per testare tutti gli scenari IT (amministratore) e per l'utente finale (caso d'uso) richiesti che sono stati identificati in precedenza.
+Quando si testa l'implementazione di Microsoft Intune, prendere in considerazione la convalida funzionale e la convalida in base a casi d'uso. La convalida funzionale comprende il test di ogni componente e configurazione per determinare che funzioni correttamente. La convalida in base a casi d'uso prevede di eseguire i test per verificare che gli scenari che comportano una serie di attività funzionino come previsto. 
 
 È consigliabile incorporare il personale help desk e di supporto IT nella fase di test, in modo che venga creata la documentazione di supporto e il personale help desk e di supporto IT acquisisca familiarità con il supporto del prodotto. Se un componente o uno scenario non funziona in base ai casi d'uso, assicurarsi di documentare le modifiche necessarie e includere il motivo per cui è stata apportata una modifica.
 

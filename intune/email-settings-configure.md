@@ -1,25 +1,23 @@
 ---
-title: Come configurare le impostazioni di posta elettronica di Intune
-titleSuffix: Azure portal
-description: Informazioni su come configurare Intune per creare connessioni alla posta elettronica aziendale nei dispositivi gestiti."
+title: Come configurare le impostazioni di posta elettronica di Microsoft Intune
+titleSuffix: 
+description: Informazioni su come configurare Microsoft Intune per creare connessioni alla posta elettronica aziendale nei dispositivi gestiti.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8558da2460b6443cbd4d42f7dec420d3e7abc7d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Come configurare le impostazioni di posta elettronica in Microsoft Intune
 
@@ -37,16 +35,16 @@ Il client di posta elettronica predefinito è supportato per la maggior parte de
 - Windows Phone 8.1 e versioni successive
 - Windows 10 (Desktop) e Windows 10 Mobile
 
-Usare le informazioni in questo argomento per apprendere le nozioni di base sulla configurazione di un profilo di posta elettronica e quindi leggere argomenti relativi a ogni piattaforma per informazioni specifiche sui dispositivi.
+Usare le informazioni in questo articolo per apprendere le nozioni di base sulla configurazione di un profilo di posta elettronica e quindi leggere altri argomenti relativi a ogni piattaforma per informazioni specifiche sui dispositivi.
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>Creare un profilo dispositivo contenente le impostazioni di posta elettronica
 
 1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
-2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
-3. Nel pannello dei profili scegliere **Crea profilo**.
-4. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** per il profilo di posta elettronica.
+3. Nella pagina **Intune** scegliere **Configurazione del dispositivo**.
+2. Nella pagina **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
+3. Nella pagina dei profili scegliere **Crea profilo**.
+4. Nella pagina **Crea profilo** immettere un **nome** e una **descrizione** per il profilo di posta elettronica.
 5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma del dispositivo a cui si desiderano applicare le impostazioni di posta elettronica. Attualmente, è possibile scegliere una tra le piattaforme seguenti per le impostazioni del dispositivo di posta elettronica:
     - **Android** (solo Samsung Android Knox Standard)
     - **Android for Work**
@@ -59,16 +57,16 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
     - [Impostazioni iOS](email-settings-ios.md)
     - [Impostazioni Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Impostazioni Windows 10](email-settings-windows-10.md)
-8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
+8. Al termine tornare alla pagina **Crea profilo** e scegliere **Crea**.
 
-Il profilo verrà creato e visualizzato nel pannello dell'elenco dei profili.
+Il profilo viene creato e visualizzato nella pagina dell'elenco dei profili.
 Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
 
 ## <a name="further-information"></a>Altre informazioni
 
 ### <a name="remove-an-email-profile"></a>Rimuovere un profilo di posta elettronica
 
-Per rimuovere un profilo di posta elettronica da un dispositivo, modificare l'assegnazione e rimuovere tutti i gruppi di cui il dispositivo è membro. Si noti che non è possibile rimuovere un profilo di posta elettronica in questo modo se questo è l'unico profilo presente su un dispositivo.
+Per rimuovere un profilo di posta elettronica da un dispositivo, modificare l'assegnazione e rimuovere tutti i gruppi di cui il dispositivo è membro. Non è possibile rimuovere un profilo di posta elettronica in questo modo se questo è l'unico profilo presente su un dispositivo.
 
 ### <a name="securing-email-access"></a>Proteggere l'accesso alla posta elettronica
 

@@ -1,6 +1,7 @@
 ---
-title: Opzioni di registrazione per Intune
-description: 
+title: Opzioni di registrazione per i dispositivi gestiti da Microsoft Intune
+titleSuffix: 
+description: Elenco delle opzioni di registrazione che gli amministratori possono impostare per i dispositivi gestiti da Microsoft Intune.
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -11,13 +12,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 2672ebec94387ad876443c975f083472c2613a11
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enrollment-options-for-intune"></a>Opzioni di registrazione per Intune
+# <a name="enrollment-options-for-devices-managed-by-intune"></a>Opzioni di registrazione per i dispositivi gestiti da Intune
 
 Gli amministratori di Intune possono configurare la registrazione dei dispositivi per agevolare gli utenti e abilitare le funzionalità di Intune.  Intune include le opzioni di registrazione seguenti:
 

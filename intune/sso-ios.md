@@ -1,25 +1,25 @@
 ---
-title: "Configurare Intune per l’accesso Single Sign-On al dispositivo iOS"
-titlesuffix: Azure portal
-description: Informazioni su come configurare Intune per l'accesso Single Sign-On al dispositivo iOS.
+title: Configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS
+titlesuffix: 
+description: Informazioni su come configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS.
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-intune-for-ios-device-single-sign-on"></a>Configurare Intune per l’accesso Single Sign-On al dispositivo iOS
+# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,16 +35,16 @@ Per sfruttare i vantaggi della funzionalità Single Sign-On per i dispositivi iO
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
-2. Nel pannello **Configurazione del dispositivo** scegliere **Profili**.
-3. Nel pannello dei profili scegliere **Crea profilo**, specificare un nome e una descrizione, quindi configurare le impostazioni seguenti:
+3. Nella pagina **Intune** scegliere **Configurazione del dispositivo**.
+2. Nella pagina **Configurazione del dispositivo** scegliere **Profili**.
+3. Nella pagina dei profili scegliere **Crea profilo**, specificare un nome e una descrizione, quindi configurare le impostazioni seguenti:
    - **Piattaforma**: scegliere **iOS**. 
    - **Tipo di profilo**: scegliere **Funzionalità del dispositivo**.
-4. Nel pannello **Funzionalità del dispositivo** scegliere **Single Sign On**.
+4. Nella pagina **Funzionalità del dispositivo** scegliere **Single Sign On**.
 
-   ![Pannello Single Sign-On](./media/sso-blade.png)
+   ![Pagina Single Sign-On](./media/sso-blade.png)
 
-2. Fare riferimento alla tabella di riepilogo seguente per la compilazione dei campi nel pannello **Single Sign-On**. Per informazioni dettagliate, vedere le sezioni dopo la tabella.
+2. Fare riferimento alla tabella di riepilogo seguente per la compilazione dei campi nella pagina **Single Sign-On**. Per informazioni dettagliate, vedere le sezioni dopo la tabella.
    
    |Campo  |Note|
    |---------|---------|
@@ -82,7 +82,7 @@ Ad esempio, quando un utente si connette a uno di questi siti, il dispositivo iO
 > [!NOTE]
 > Questi URL devono essere nomi di dominio completi formattati in modo appropriato. Apple richiede che siano nel formato `http://<yourURL.domain>`
 
-I criteri di corrispondenza per gli URL devono iniziare con `http://` o `https://`. Viene eseguita una semplice corrispondenza di stringhe, quindi il prefisso URL `http://www.contoso.com/` non corrisponde a `http://www.contoso.com:80/`. Con iOS 9.0 o versioni successive, tuttavia, è possibile usare un singolo carattere jolly * per specificare tutti i valori corrispondenti. Ad esempio, `http://*.contoso.com/` corrisponde sia a `http://store.contoso.com/` che a `http://www.contoso.com`.
+I criteri di corrispondenza per gli URL devono iniziare con `http://` o `https://`. Viene eseguita una semplice corrispondenza di stringhe, quindi il prefisso URL `http://www.contoso.com/` non corrisponde a `http://www.contoso.com:80/`. Con iOS 9.0 o versioni successive, tuttavia, è possibile usare un singolo carattere jolly \* per specificare tutti i valori corrispondenti. Ad esempio, `http://*.contoso.com/` corrisponde sia a `http://store.contoso.com/` che a `http://www.contoso.com`.
 I criteri `http://.com` e `https://.com` corrispondono rispettivamente a tutti gli URL HTTP e HTTPS.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>App che useranno l'accesso Single Sign-On

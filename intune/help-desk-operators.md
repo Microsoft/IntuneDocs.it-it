@@ -1,12 +1,12 @@
 ---
-title: Portale del Supporto tecnico per la risoluzione dei problemi | Microsoft Docs
-titlesuffix: Azure portal
-description: Il personale del supporto tecnico usa il portale per risolvere i problemi tecnici degli utenti
+title: Portale del supporto tecnico per la risoluzione dei problemi
+titlesuffix: Microsoft Intune
+description: Il personale del supporto tecnico usa questo portale per risolvere i problemi tecnici degli utenti.
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/26/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 2da1a37af1ab0b0b1566738bf1ecdfe990dd760d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-the-troubleshooting-portal-to-help-users"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti
+# <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti aziendali
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -63,7 +63,7 @@ Nel pannello Risoluzione dei problemi scegliere **Selezionare l'utente** per vis
 | 1.   | Stato dell'account  | Mostra lo stato del tenant di Intune corrente come **Attivo** o **Inattivo**.       |
 | 2.   | Selezione utente  | Nome dell'utente attualmente selezionato. Fare clic su **Cambia utente** per scegliere un nuovo utente.       |
 | 3.   | Stato utente  | Visualizza lo stato della licenza Intune dell'utente, il numero di dispositivi, la conformità di ciascun dispositivo, il numero di app e la conformità delle app.       |
-| 4.   | Informazioni utente  | Usare l'elenco per selezionare i dettagli da esaminare nel pannello. <br>È possibile selezionare: <ul><li>App per dispositivi mobili<li>Criteri di protezione delle app<li>Criteri di conformità<li> Criteri di configurazione</ul>      |
+| 4.   | Informazioni utente  | Usare l'elenco per selezionare i dettagli da esaminare nel pannello. <br>È possibile selezionare: <ul><li>App per dispositivi mobili<li>Criteri di protezione delle app<li>Criteri di conformità<li> Criteri di configurazione<li> Restrizioni di registrazione</ul>      |
 | 5.   | Appartenenza al gruppo  | Yadda       |
 
 ## <a name="mobile-apps-reference"></a>Riferimento per le app per dispositivi mobili
