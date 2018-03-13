@@ -1,7 +1,7 @@
 ---
 title: App Android con criteri di protezione delle app
-titlesuffix: Azure portal
-description: "Questo argomento descrive cosa accade quando un'app Android è gestita in base ai criteri di protezione delle app.\""
+titlesuffix: Microsoft Intune
+description: Informazioni su cosa aspettarsi da un'app Android con criteri di protezione.
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,50 +15,50 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ee7977d8608327560b4df0c1bfbcc60ff150da9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: af25dc918907e086441a89f222985a75199bbe95
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Aspettative dalla gestione dell'app per Android con criteri di protezione delle app 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Questo argomento descrive l'esperienza utente relativa alle app con criteri di protezione. I criteri di protezione delle app vengono applicati solo quando le app sono usate nel contesto di lavoro, ad esempio nei casi di accesso alle app con l'account aziendale o di accesso ai file archiviati nel percorso OneDrive aziendale.
+Informazioni su cosa aspettarsi da app Android con criteri di protezione delle app. I criteri di protezione delle app si applicano solo quando le app vengono usate in un contesto professionale, ad esempio quando si accede a un'app con un account aziendale o quando si accede a file archiviati nel percorso OneDrive dell'azienda.
 ##  <a name="accessing-apps"></a>Accesso alle app
 
-L'app Portale aziendale è necessaria per tutte le app associate a criteri di protezione delle app in dispositivi Android.
+L'app Portale aziendale è necessaria per tutte le app in dispositivi Android con criteri di protezione delle app.
 
-Per i dispositivi non registrati in Intune è necessario installare l'app Portale aziendale nel dispositivo. Tuttavia, l'utente non deve avviare l'app Portale aziendale o accedervi per poter usare le app gestite tramite criteri di protezione delle app.
-L'app Portale aziendale è una modalità con cui Intune condivide i dati in una posizione sicura. Questo quindi è un requisito anche se il dispositivo non è registrato in Intune.
+Installare l'app Portale aziendale in tutti i dispositivi che non sono registrati in Intune. Agli utenti non viene richiesto di accedere all'app Portale aziendale per usare le app con criteri di protezione delle app.
+L'app Portale aziendale consente di condividere i dati in una posizione sicura. È quindi un requisito anche per i dispositivi non registrati.
 
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Uso di app con supporto di più identità
 
-I criteri di protezione delle app vengono applicati solo al contesto di lavoro quando si usa l'app. Il comportamento delle diverse app quindi può essere diverso a seconda del contesto, di lavoro o personale.
+I criteri di protezione delle app hanno effetto solo quando un utente tenta di accedere a dati relativi al lavoro.  Se l'utente accede all'app per uso personale, i comportamenti possono essere diversi.
 
-Per le app che supportano più identità, Intune applica i criteri di protezione delle app solo quando l'utente finale usa l'app nel contesto di lavoro.  Ad esempio, l'utente finale riceverà la richiesta di inserimento del PIN al momento di accedere ai dati di lavoro.  Per l'**app Outlook**, all'utente finale viene richiesto il PIN all'avvio dell'app. Per l'**app OneDrive** ciò si verifica quando l'utente finale digita l'account aziendale.  Per Microsoft **Word**, **PowerPoint* ed **Excel**, ciò si verifica quando l'utente finale accede ai documenti archiviati nel percorso aziendale di OneDrive for Business.
+Alcune app supportano più identità. In questo caso, Intune applica i criteri di protezione delle app solo quando un utente accede ai dati di lavoro.  Un utente potrebbe, ad esempio, ricevere una richiesta di immissione di un PIN.  Nell'**app Outlook** il messaggio di richiesta viene visualizzato quando un utente avvia l'app. Nell'**app OneDrive** il messaggio di richiesta viene visualizzato quando un utente digita l'account aziendale.  In Microsoft **Word**, **PowerPoint** ed **Excel** il messaggio di richiesta viene visualizzato quando un utente accede a documenti di OneDrive aziendale.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gestione degli account utente nel dispositivo
 
-Intune supporta solo la distribuzione di criteri di protezione delle app a un unico account utente per dispositivo.
+Intune supporta la distribuzione di criteri di protezione delle app a un unico account utente per dispositivo.
 
 * A seconda dell'applicazione che si usa, è possibile scegliere di bloccare o meno il secondo utente del dispositivo. In ogni caso, sarà tuttavia interessato dai criteri di protezione delle app solo il primo utente che ottiene i criteri.
 
-  * **Microsoft Word**, **Excel** e **PowerPoint** non bloccano un secondo account utente. Questo account utente non sarà tuttavia interessato dai criteri di protezione delle app.
+  * **Microsoft Word**, **Excel** e **PowerPoint** non bloccheranno l'accesso a un account utente aggiuntivo. L'account utente non sarà tuttavia interessato dai criteri di protezione delle app.
 
-  * Per le app **OneDrive e Outlook**, è possibile usare un solo account aziendale.  L'aggiunta di più account aziendali è bloccata in queste app.  È tuttavia possibile rimuovere un utente e aggiungere un altro utente sul dispositivo.
-
-
-* Se prima della distribuzione dei criteri di protezione delle app, un dispositivo ha più di un account utente, il primo account che riceve la distribuzione dei criteri di protezione delle app sarà gestito dai criteri di protezione delle app di Intune.
+  * Per le app **OneDrive e Outlook**, è possibile usare un solo account aziendale.  L'aggiunta di più account aziendali è bloccata in queste app.  È comunque possibile rimuovere un utente da un dispositivo e quindi aggiungere un altro utente al dispositivo.
 
 
-Per capire meglio come vengono gestiti gli account utente multipli, leggere lo scenario di esempio riportato sotto.
+* In un dispositivo potrebbero essere presenti più account utente esistenti prima della distribuzione dei criteri di protezione delle app. In questo caso, il primo account al quale vengono distribuiti i criteri di protezione delle app è gestito dai criteri di protezione delle app di Intune.
 
-L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri di protezione delle app. L'**Azienda X** distribuisce i criteri di protezione delle app **prima dell'****Azienda Y**. L'account associato all'**Azienda X** otterrà i criteri di protezione delle app, a differenza dell'account associato all'Azienda Y. Se si vuole che l'account utente associato all'Azienda Y sia gestito con i criteri di protezione delle app, è necessario rimuovere l'utente associato all'Azienda X.
+
+Per informazioni su come Intune gestisce più account utente, vedere l'esempio seguente.
+
+L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri di protezione delle app. L'**Azienda X** distribuisce i criteri di protezione delle app **prima dell'****Azienda Y**. L'account associato all'**Azienda X** otterrà i criteri di protezione delle app, a differenza dell'account associato all'Azienda Y. Per fare in modo che l'account utente associato all'Azienda Y sia gestito con i criteri di protezione delle app, l'utente A deve rimuovere l'account associato all'Azienda X.
 ### <a name="adding-a-second-account"></a>Aggiunta di un secondo account
 ####  <a name="android"></a>Android
-Se si usa un dispositivo Android, potrebbe essere visualizzato un messaggio di blocco con le istruzioni necessarie per rimuovere l'account esistente e aggiungerne uno nuovo.  Per rimuovere l'account esistente, passare a **Impostazioni &gt; Generali &gt; Applicazioni &gt;Portale aziendale e selezionare "Cancella dati"**.
+Potrebbe essere richiesto di rimuovere l'account esistente e aggiungerne uno nuovo.  Per rimuovere l'account esistente, passare a **Impostazioni &gt; Generali &gt; Gestione applicazioni &gt;Portale aziendale. Selezionare quindi "Cancella dati".**
 
 ![Schermata del messaggio di errore con le istruzioni per rimuovere l'account](./media/android-switch-user.png)
 
@@ -77,7 +77,7 @@ Sono supportati i tipi di file seguenti:
 ------------
 |**pfile**|**text**|
 |----|----|
-|Il formato pfile è un formato "wrapper" generico per i file protetti che incapsula il contenuto crittografato e le licenze Azure Information Protection e può essere usato per proteggere qualsiasi tipo di file.|I file di testo, ad esempio i file XML, CSV e così via, possono essere aperti nell'app anche se sono protetti. Tipi di file: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+|Pfile è un formato "wrapper" generico per i file protetti. Incapsula il contenuto crittografato e le licenze di Azure Information Protection. e può essere usato per proteggere qualsiasi tipo di file.|I file di testo, ad esempio i file XML, CSV e così via, possono essere aperti nell'app anche se sono protetti. Tipi di file: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
 ## <a name="next-steps"></a>Passaggi successivi
 [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](app-protection-enabled-apps-ios.md)

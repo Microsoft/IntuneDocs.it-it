@@ -1,9 +1,9 @@
 ---
 title: Accesso condizionale basato su app con Intune
-description: Consente di comprendere i concetti relativi al funzionamento dell'accesso condizionale basato su app con Intune.
+description: Informazioni su come funziona l'accesso condizionale basato su app con Intune.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 43421ac02fc3791e2827d980adcb708619cde9b8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Accesso condizionale basato su app con Intune
 
@@ -54,7 +54,7 @@ In questo esempio, l'amministratore ha applicato criteri di protezione delle app
 > [!NOTE]
 > Per le altre app gestite è possibile usare la struttura del diagramma di flusso riportata di seguito.
 
-![Diagramma di flusso dell'accesso condizionale basato su app con Intune](./media/ca-intune-common-ways-3.png)
+![Processo di accesso condizionale basato su app illustrato in un diagramma di flusso](./media/ca-intune-common-ways-3.png)
 
 1.  L'utente tenta di eseguire l'autenticazione in Azure AD dall'app Outlook.
 

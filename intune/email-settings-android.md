@@ -1,31 +1,29 @@
 ---
-title: Impostazioni di posta elettronica di Intune per dispositivi Android e Android for Work
-titleSuffix: Azure portal
-description: "Informazioni sulle opzioni di Intune che è possibile usare per configurare le connessioni di posta elettronica nei dispositivi Android.\""
+title: Impostazioni di posta elettronica di Microsoft Intune per dispositivi Android e Android for Work
+titleSuffix: 
+description: "Informazioni sulle impostazioni di Microsoft Intune che è possibile usare per configurare le impostazioni di posta elettronica nei dispositivi che eseguono Android e Android for Work."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/15/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14f726d330e1cd8e4a0f7bfcfac8fe931c66d23b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a68607be7cbd84d5a9e9080d0a8608bce85edd22
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Impostazioni dei profili di posta elettronica per i dispositivi Android in Microsoft Intune
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Impostazioni del profilo di posta elettronica in Microsoft Intune per i dispositivi che eseguono Android e Android for Work
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Come amministratore di Intune, è possibile creare e assegnare le impostazioni di posta elettronica per i dispositivi Android seguenti:
+Come amministratore di Intune, è possibile creare e assegnare le impostazioni di posta elettronica ai dispositivi Android seguenti:
 - [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
 - [Android for Work](#android-for-work-email-settings)
 
@@ -59,7 +57,7 @@ Come amministratore di Intune, è possibile creare e assegnare le impostazioni d
 
 - **App di posta elettronica** - Selezionare **Gmail** o **Nine Work**
 - **Server di posta elettronica** - Il nome host del server Exchange dell'azienda.
-- **Attributo nome utente da AAD** - Si tratta dell'attributo in Active Directory (AD) o Azure AD che verrà usato per generare il nome utente per questo profilo di posta elettronica. Selezionare **Indirizzo SMTP primario**, ad esempio user1@contoso.com o **Nome entità utente**, ad esempio utente1 o user1@contoso.com.
+- **Attributo nome utente da AAD** - Si tratta dell'attributo in Active Directory (AD) o Azure AD che viene usato per generare il nome utente per questo profilo di posta elettronica. Selezionare **Indirizzo SMTP primario**, ad esempio user1@contoso.com o **Nome entità utente**, ad esempio utente1 o user1@contoso.com.
 - **Indirizzo di posta elettronica** - La modalità di generazione dell'indirizzo di posta elettronica per l'utente in ogni dispositivo. Selezionare **Nome dell'entità utente** per usare il nome dell'entità utente completo come indirizzo di posta elettronica o **Nome utente**.
 - **Metodo di autenticazione** - Selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione utilizzato dal profilo di posta elettronica.
     - Se è stata selezionata l'opzione **Certificato**, selezionare un profilo certificato client SCEP o PKCS creato in precedenza per autenticare la connessione di Exchange.

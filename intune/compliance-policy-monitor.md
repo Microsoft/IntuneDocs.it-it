@@ -1,33 +1,31 @@
 ---
 title: "Monitorare i criteri di conformità dei dispositivi di Intune"
 titlesuffix: Azure portal
-description: "Informazioni su come monitorare i criteri di conformità dei dispositivi.\""
+description: "Informazioni su come monitorare i criteri di conformità dei dispositivi"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 03/10/2017
+ms.date: 2/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 2f80d46e3e7c25c2b2e7a7c1af9604de1257a21e
+ms.sourcegitcommit: a55c009a2ab223f79dc7439539937b284aee0626
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
-I report di conformità consentono agli amministratori di analizzare il comportamento di conformità dei dispositivi nell'organizzazione e di risolvere rapidamente i problemi di conformità riscontrati dagli utenti all'interno dell'organizzazione. È possibile visualizzare le informazioni sullo stato generale di conformità dei dispositivi e sullo stato di conformità per una singola impostazione o un singolo criterio e anche eseguire il drill-down in un singolo dispositivo per visualizzare le impostazioni e i criteri specifici che interessano tale dispositivo.
+I report di conformità consentono agli amministratori di analizzare il comportamento di conformità dei dispositivi nell'organizzazione e di risolvere rapidamente i problemi correlati alla conformità riscontrati dagli utenti all'interno dell'organizzazione. È possibile visualizzare le informazioni sullo stato generale di conformità dei dispositivi e sullo stato di conformità per una singola impostazione o un singolo criterio e anche eseguire il drill-down in un singolo dispositivo per visualizzare le impostazioni e i criteri specifici che interessano tale dispositivo.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Seguire questa procedura per trovare il **dashboard della conformità dei dispositivi di Intune** nel portale di Azure:
+Usare questa procedura per trovare il **dashboard della conformità dei dispositivi di Intune** nel portale di Azure:
 
 1.  Andare nel [portale di Azure](https://portal.azure.com) e accedere con le credenziali di Intune.
 
@@ -131,7 +129,7 @@ Quando si fa clic sull'impostazione stessa, è possibile visualizzare il nome de
 
 ![Nome dell'impostazione di conformità dei dispositivi](./media/idc-7.png)
 
-### <a name="per-policy-device-compliance-report"></a>Report di conformità dei dispositivi in base ai criteri
+## <a name="policy-compliance-report"></a>Report di conformità ai criteri
 
 Questo report offre una visualizzazione in base ai criteri di conformità e indica il numero totale di dispositivi in ogni stato di conformità. Il riquadro **Conformità dei criteri** è accessibile dal **dashboard della conformità dei dispositivi** e mostra tutti i criteri creati in precedenza dall'amministratore, le piattaforme in cui è applicato il criterio, il numero di dispositivi conformi e quello di dispositivi non conformi.
 
@@ -141,7 +139,7 @@ Quando si fa clic sul riquadro Conformità dei criteri e quindi su uno dei crite
 
 ![Riquadro Conformità dei criteri](./media/idc-9.png)
 
-### <a name="per-setting-device-compliance-report"></a>Report di conformità dei dispositivi in base alle impostazioni
+## <a name="setting-compliance-report"></a>Report di conformità dell'impostazione
 
 Questo report consente di visualizzare, per ogni singola impostazione di conformità, il numero totale di dispositivi in ogni stato di conformità. Il riquadro **Conformità dell'impostazione** è accessibile dal **dashboard della conformità dei dispositivi** e mostra tutte le impostazioni relative a tutti i criteri di conformità dei dispositivi creati dall'amministratore, le piattaforme a cui sono state applicate le impostazioni dei criteri e il numero di dispositivi non conformi.
 
@@ -150,3 +148,14 @@ Questo report consente di visualizzare, per ogni singola impostazione di conform
 Quando si fa clic sul riquadro Conformità dell'impostazione e quindi su una delle impostazioni dei criteri di conformità dei dispositivi, è possibile vedere lo **stato di conformità**, l'**alias di posta elettronica dell'utente**, il **modello** e la **posizione** per ogni dispositivo interessato dall'impostazione dei criteri di conformità dei dispositivi.
 
 ![Riquadro Conformità dell'impostazione](./media/idc-11.png)
+
+## <a name="threat-agent-status-report"></a>Report dello stato dell'agente delle minacce
+
+Questo report consente di visualizzare lo stato e l'integrità dell'agente di Windows Defender. Usando un report di rollup dello stato in **Conformità del dispositivo** è possibile visualizzare i dispositivi per i quali è necessaria una delle azioni seguenti:
+- Aggiornamento della firma
+- Riavvio
+- Intervento manuale
+- Analisi completa
+- Intervento per altri stati dell'agente
+
+Un report di analisi per ogni categoria di stato elenca i singoli PC che richiedono attenzione e quelli per i quali è indicato **Pulisci**.

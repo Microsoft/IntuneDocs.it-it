@@ -1,10 +1,10 @@
 ---
-title: Introduzione alla registrazione di dispositivi
-titlesuffix: Azure portal
+title: Informazioni sull'esperienza di registrazione dei dispositivi iOS
+titlesuffix: Microsoft Intune
 description: Informazioni sull'esperienza di registrazione tramite la registrazione completa di un dispositivo iOS.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3818556f300821fb9acaa260300ae683f43b13e3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 18a3225ef81d7f13b8656326540e30cf5ee07f1e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-enrolling-devices"></a>Introduzione alla registrazione di dispositivi
+# <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Informazioni sull'esperienza utente per la registrazione di un dispositivo iOS
 
 Microsoft Intune consente di offrire agli utenti la possibilità di usare i dispositivi mobili, mantenendo protetti i dati aziendali. Poiché gli utenti finali interagiscono con Intune nei dispositivi anziché nella console di amministrazione, si vorrà garantire un'esperienza di registrazione semplice. Per questa ragione è possibile combinare criteri di conformità ben definiti e la propria esperienza per dimostrare empatia nei confronti degli utenti. Ciò è particolarmente importante poiché gli utenti sapranno esattamente quali informazioni sono visibili all'amministratore:
 

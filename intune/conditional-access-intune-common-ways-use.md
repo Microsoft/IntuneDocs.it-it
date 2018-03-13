@@ -3,10 +3,10 @@ title: Accesso condizionale con Intune
 titlesuffix: Azure portal
 description: Modi comuni per usare l'accesso condizionale con Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,25 +14,27 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Modi comuni per usare l'accesso condizionale con Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-È necessario configurare i criteri di conformità dei dispositivi mobili di Intune e le funzionalità per la gestione di applicazioni mobili (MAM) di Intune per garantire la conformità dell'accesso condizionale ai requisiti dell'organizzazione. Di seguito sono descritti i modi più comuni per usare l'accesso condizionale con Intune.
+Esistono due tipi principali di accesso condizionale con Intune. Il primo tipo è l'accesso condizionale basato su dispositivo. Il secondo tipo è l'accesso condizionale basato su app. È necessario configurare i criteri di conformità correlati per promuovere la conformità dell'accesso condizionale nell'organizzazione.
 
-## <a name="device-based-conditional-access"></a>Accesso condizionale basato sul dispositivo
+Le informazioni seguenti consentono di comprendere come usare le funzionalità per la conformità dei *dispositivi* mobili di Intune e le funzionalità di gestione delle *applicazioni* per dispositivi mobili (MAM) di Intune. 
+
+## <a name="device-based-conditional-access"></a>Accesso condizionale basato su dispositivo
 
 Intune e Azure Active Directory collaborano per assicurarsi che solo i dispositivi gestiti e conformi abbiano accesso alla posta elettronica, ai servizi di Office 365, alle app SaaS (Software as a Service) e alle [app locali](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). È inoltre possibile impostare un criterio in Azure Active Directory per consentire l'accesso ai servizi di Office 365 solo ai computer che appartengono a un dominio o ai dispositivi mobili registrati in Intune.
 
 Intune offre funzionalità per i criteri di conformità dei dispositivi che consentono di valutare lo stato di conformità dei dispositivi. Lo stato di conformità viene segnalato ad Azure Active Directory, che lo usa per l'applicazione dei criteri di accesso condizionale creati in Azure Active Directory quando l'utente tenta di accedere alle risorse aziendali.
 
-Con l'introduzione del [nuovo portale di Azure](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune), i criteri di accesso condizionale basato su dispositivo per Exchange Online e gli altri prodotti di Office 365 sono configurati nel portale di Azure.
+I criteri di accesso condizionale basato su dispositivo per Exchange Online e gli altri prodotti di Office 365 sono configurati nel [portale di Azure](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
 
 -   Altre informazioni sull'[accesso condizionale in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 

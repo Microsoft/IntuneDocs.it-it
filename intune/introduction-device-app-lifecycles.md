@@ -1,11 +1,12 @@
 ---
 title: Panoramica dei cicli di vita del dispositivo e dell'app
-description: Panoramica dei cicli di vita del dispositivo e dell'app con Intune.
+titleSuffix: Microsoft Intune
+description: Panoramica dei cicli di vita del dispositivo e dell'app con Microsoft Intune.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +15,19 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a2f2c8df4b3f4b5cb73e26ff6083aea1b58001c0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d262d5679ceb802320bd5aa496d91f549ec12952
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="overview-of-device-and-app-lifecycles"></a>Panoramica dei cicli di vita del dispositivo e dell'app
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Anche se le esigenze delle singole organizzazioni possono essere diverse, esistono alcune operazioni comuni che tutte le organizzazioni devono eseguire con regolarità, indipendentemente dalle effettive esigenze operative. Tali operazioni possono essere raggruppate in due categorie principali, denominate **cicli di vita**. Il ciclo di vita di distribuzione seguito dipende dallo scenario che si vuole abilitare. Ad esempio, può essere necessario solo il ciclo di vita del dispositivo o solo il ciclo di vita dell'app, oppure possono essere necessari entrambi.
+Anche se le esigenze delle singole organizzazioni possono essere diverse, esistono alcune operazioni comuni che tutte le organizzazioni devono eseguire con regolarità per gestire i dispositivi mobili e le app per dispositivi mobili. Tali operazioni possono essere raggruppate in due categorie principali, denominate **cicli di vita**. Il ciclo di vita di distribuzione seguito dipende dallo scenario che si vuole abilitare. Ad esempio, può essere necessario solo il ciclo di vita del dispositivo o solo il ciclo di vita dell'app, oppure possono essere necessari entrambi.
 
-![MDM e ciclo di vita dell'app](./media/device-app-lifecycle.png "Cicli di vita del dispositivo mobile e dell'app")
+![Cicli di vita della gestione dei dispositivi mobili e delle app per dispositivi mobili](./media/device-app-lifecycle.png)
 
 Ai fini della gestione, tutti i dispositivi hanno un ciclo di vita. Tale ciclo inizia con la registrazione del dispositivo e termina con il suo ritiro. Il [ciclo di gestione del dispositivo](device-lifecycle.md) comprende la registrazione del dispositivo, la configurazione e la protezione dello stesso e quindi la sua rimozione dalla gestione.
 

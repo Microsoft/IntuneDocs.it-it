@@ -1,10 +1,11 @@
 ---
-title: Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune
-description: "Le informazioni contenute in questo argomento consentono di stabilire quando è necessario usare lo strumento di wrapping delle app e App SDK per abilitare le app line-of-business personalizzate per l'uso dei criteri di gestione delle app mobili."
+title: Preparare le app line-of-business per i criteri di protezione delle app
+titlesuffix: Microsoft Intune
+description: Usare lo strumento di wrapping delle app e App SDK per abilitare le app line-of-business personalizzate per l'uso dei criteri di protezione delle app in Microsoft Intune.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparare le app line-of-business per i criteri di protezione delle app
 
@@ -102,6 +103,7 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 |Configurazione dell'applicazione di destinazione |X||
 |Supportare più identità|X||
 |Stile personalizzabile |X|||
+
 ## <a name="next-steps"></a>Passaggi successivi
 
 Per altre informazioni sui criteri di protezione delle app e Intune, vedere gli argomenti seguenti:

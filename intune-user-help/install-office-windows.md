@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/15/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,17 +17,17 @@ ROBOTS:
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e40f3f10119366f8678b478f0acb2ece5d129684
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 62cc9e1b939ac68768f21b00b4390956c6ccb857
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Installazione di Office 365 nel dispositivo Windows 10
 
 È possibile installare la famiglia di prodotti Office nel dispositivo Windows 10 in diversi modi. A seconda delle dimensioni dell'azienda, nel portale aziendale possono essere disponibili per il download più versioni di Office.
 
-<!--*image of company portal app store with conflicting versions of office side by side*-->
+![App Portale aziendale per Windows 10 che mostra le 2 versioni di Office affiancate.](./media/multiple-office-installs-cp-win10.png)
 
 Quando l'azienda rende disponibile Office, è consigliabile installare una sola versione di Office. Se si prova a installarne più di una, verrà rimossa quella installata per prima.
 

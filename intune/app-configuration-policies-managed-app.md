@@ -1,7 +1,7 @@
 ---
-title: Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi | Microsoft Docs
-titlesuffix: Azure portal
-description: Informazioni su come usare i criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi.
+title: Criteri di configurazione per le app gestite senza registrazione dei dispositivi
+titlesuffix: Microsoft Intune
+description: Informazioni su come configurare i criteri per le app gestite senza registrazione dei dispositivi.
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 136032be6a05ad56dd78fe40e66d3d049a4b5a03
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 384804029ecbf403f526144136dc187212e6cf4a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi
 
@@ -27,8 +27,8 @@ ms.lasthandoff: 02/09/2018
 
 È possibile usare i criteri di configurazione delle app con le app gestite che supportano Intune App SDK anche su dispositivi non registrati. 
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** + **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Scegliere il carico di lavoro delle **app per dispositivi mobili**.
 4. Scegliere **Criteri di configurazione dell'app** nel gruppo **Gestisci** e quindi scegliere **Aggiungi**.
 5. Impostare i dettagli seguenti:

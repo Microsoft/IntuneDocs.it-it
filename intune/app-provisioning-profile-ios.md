@@ -1,12 +1,12 @@
 ---
-title: Profili di provisioning delle app
-titlesuffix: Azure portal
+title: Profili di provisioning di app iOS in Microsoft Intune
+titlesuffix: 
 description: Intune offre gli strumenti per assegnare in modo proattivo un nuovo profilo di provisioning ai dispositivi con app prossime alla scadenza."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/03/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa1fe56726f320d971f35cc971253707f968442
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 7637dcb3aba4f46a3e97c8de47d974b46af27b47
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Usare i profili di provisioning per dispositivi mobili iOS per impedire la scadenza delle app
+# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>Usare i profili di provisioning per dispositivi mobili iOS in Intune per evitare la scadenza delle app
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -39,12 +39,12 @@ Dopo la scadenza del certificato, è necessario firmare nuovamente l'app con un 
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Come creare un profilo di provisioning per dispositivi mobili iOS
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
-1.  Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **Profili di provisioning di iOS**.
-2.  Nell'elenco del pannello dei profili scegliere **Crea profilo**.
-3. Nel pannello **Crea profilo** configurare i valori seguenti:
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** scegliere **App per dispositivi mobili**.
+1.  Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **Profili di provisioning delle app iOS**.
+2.  Nell'elenco del riquadro dei profili scegliere **Crea profilo**.
+3. Nel riquadro **Crea profilo** configurare i valori seguenti:
     - **Nome**: specificare un nome per il profilo di provisioning per dispositivi mobili.
     - **Descrizione**: (facoltativo) specificare una descrizione per il criterio.
     - **Carica il file del profilo**: fare clic su **Importa** e quindi scegliere un file del profilo di configurazione per dispositivi mobili Apple, con estensione **mobileprovision**, scaricato dal sito Web Apple Developer.

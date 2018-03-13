@@ -1,12 +1,12 @@
 ---
-title: Come aggiungere app line-of-business per Windows in Intune
-titlesuffix: Azure portal
-description: Informazioni sull'aggiunta di app line-of-business per Windows a Intune."
+title: Come aggiungere app line-of-business per Windows in Microsoft Intune
+titlesuffix: 
+description: Informazioni su come aggiungere app line-of-business (LOB) per Windows in Microsoft Intune.
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,17 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 72e0a9011ba6dda324ace96fb2dbefb42c608641
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b687b71f9d264364ff758fdd46b0739465c16865
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per Windows in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Un'app line-of-business è un'app che viene aggiunta da un apposito file di installazione. Questi tipi di app vengono in genere sviluppati internamente. I passaggi seguenti forniscono istruzioni per l'aggiunta di un'app LOB per Windows a Microsoft Intune.
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Passaggio 1: specificare il file di installazione del software
 
@@ -68,6 +69,10 @@ ms.lasthandoff: 01/30/2018
 ## <a name="step-5---update-a-line-of-business-app"></a>Passaggio 5: aggiornare un'app line-of-business
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+## <a name="configuring-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>Configurazione di un'app MSI per dispositivi mobili con aggiornamento automatico per ignorare il processo di controllo delle versioni
+
+È possibile configurare un'app MSI per dispositivi mobili con aggiornamento automatico nota, per ignorare il processo di controllo delle versioni. Alcune app basate sul programma di installazione MSI vengono aggiornate automaticamente dallo sviluppatore. Per queste app MSI con aggiornamento automatico, è possibile configurare l'impostazione **Ignora la versione dell'app** nel pannello **Informazioni sull'app**. Se questa impostazione viene cambiata in **Sì**, Microsoft Intune non imporrà la versione dell'app installata nel client Windows. Questa funzionalità consente di evitare una race condition. Ad esempio, questo tipo di race condition può verificarsi quando l'app viene aggiornata automaticamente dallo sviluppatore di app e anche da Intune. In entrambi i casi è possibile che si tenti di imporre una versione dell'app in un client di Windows creando un conflitto.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
