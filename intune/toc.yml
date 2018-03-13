@@ -470,30 +470,6 @@
           href: conditional-access-assign-jamf.md
     - name: Proteggere i dati del dispositivo
       items:
-        - name: Usare i criteri di protezione delle app
-          href: app-protection-policy.md
-          items:
-            - name: Creare criteri di protezione delle app
-              href: app-protection-policies.md
-              items:
-                - name: Impostazioni Android
-                  href: app-protection-policy-settings-android.md
-                - name: Impostazioni iOS
-                  href: app-protection-policy-settings-ios.md
-                - name: Eccezioni dei criteri di trasferimento dei dati
-                  href: app-protection-policies-exception.md
-                - name: Esaminare i log di protezione delle app nel Managed Browser
-                  href: app-protection-policy-settings-log.md
-            - name: Convalidare i criteri di protezione delle app
-              href: app-protection-policies-validate.md
-            - name: Monitorare lo stato dell'utente con protezione delle app
-              href: app-protection-policies-monitor.md
-            - name: Prepararsi per i criteri di protezione delle app WIP
-              href: app-protection-policies-configure-windows-10.md
-            - name: Creare e assegnare i criteri di protezione delle app WIP
-              href: windows-information-protection-policy-create.md
-            - name: Gestire il trasferimento di dati tra app iOS
-              href: data-transfer-between-apps-manage-ios.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:

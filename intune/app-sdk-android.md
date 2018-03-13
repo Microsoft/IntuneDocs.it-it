@@ -2,10 +2,10 @@
 title: Guida a Microsoft Intune App SDK per sviluppatori di Android
 description: "Microsoft Intune App SDK per Android permette di integrare le funzionalità di gestione delle app mobili (MAM, Mobile App Management) di Intune nell'app Android."
 keywords: SDK
-author: erikre
+author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/18/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3efc522b8b788a0cb6cd1bbc6d04ce7545890de3
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 53f0d46fa1a9452b7a0cc1e243373f21556f5fb6
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guida a Microsoft Intune App SDK per sviluppatori di Android
 
