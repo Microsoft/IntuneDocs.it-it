@@ -1,12 +1,12 @@
 ---
-title: "Creare criteri di conformità dei dispositivi Mobile Threat Defense con Intune"
-titlesuffix: Azure portal
-description: "Creare criteri di conformità dei dispositivi Mobile Threat Defense in Intune"
+title: "Creare criteri di conformità dei dispositivi MTD con Microsoft Intune"
+titlesuffix: 
+description: "Creare criteri di conformità dei dispositivi di Intune che usano i livelli di minaccia del partner MTD per determinare se un dispositivo mobile può accedere alle risorse aziendali."
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creare criteri di conformità dei dispositivi Mobile Threat Defense (MTD) con Intune
 
@@ -40,7 +40,7 @@ Prerequisiti dei criteri di conformità dei dispositivi con MTD:
 
 1.  Andare nel [portale di Azure](https://portal.azure.com/) e accedere con le credenziali di Intune.
 
-2.  Nel **dashboard di Azure** scegliere **Altri servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+2.  Nel **dashboard di Azure** scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
 3.  Scegliere **Intune**. Si aprirà il **dashboard di Intune**.
 
@@ -48,9 +48,9 @@ Prerequisiti dei criteri di conformità dei dispositivi con MTD:
 
 5.  Scegliere **Crea criterio**, immettere **Nome** e **Descrizione** della conformità del dispositivo, selezionare la **piattaforma** e quindi nella sezione **Impostazioni** scegliere **Configura**.
 
-6.  Nel pannello **Criteri di conformità** scegliere **Integrità del dispositivo**.
+6.  Nel riquadro **Criteri di conformità** scegliere **Integrità del dispositivo**.
 
-7.  Nel pannello **Integrità del dispositivo** scegliere il livello di minaccia per dispositivi mobili dall'elenco a discesa in **Richiedi che il dispositivo si trovi al massimo al livello di minaccia per dispositivi mobili**.
+7.  Nel riquadro **Integrità del dispositivo** scegliere il livello di minaccia per dispositivi mobili nell'elenco a discesa in **Richiedi che il dispositivo si trovi al massimo al livello di minaccia per dispositivi mobili**.
 
     a.  **Protetto**: questo è il livello più sicuro. Nel dispositivo non possono essere presenti minacce per poter accedere alle risorse aziendali. Se viene rilevata qualsiasi minaccia, il dispositivo viene valutato come non conforme.
 
@@ -67,11 +67,11 @@ Prerequisiti dei criteri di conformità dei dispositivi con MTD:
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>Per assegnare criteri di conformità dei dispositivi per MTD
 
-Per assegnare agli utenti criteri di conformità dei dispositivi, scegliere criteri configurati in precedenza. I criteri esistenti sono disponibili nel pannello **Tutti i criteri di conformità del dispositivo**.
+Per assegnare agli utenti criteri di conformità dei dispositivi, scegliere criteri configurati in precedenza. I criteri esistenti sono disponibili nel riquadro **Conformità del dispositivo - criteri**.
 
-1. Scegliere il criterio da assegnare agli utenti, quindi selezionare **Assegnazioni**. Si apre il pannello da cui è possibile selezionare i **Gruppi di sicurezza Azure Active Directory** e assegnarli ai criteri.
+1. Scegliere il criterio da assegnare agli utenti, quindi selezionare **Assegnazioni**. Si apre il riquadro da cui è possibile selezionare i **Gruppi di sicurezza Azure Active Directory** e assegnarli ai criteri.
 
-2. Scegliere **Seleziona gruppi** per aprire il pannello che consente di visualizzare i gruppi di sicurezza di Azure AD.  Se si sceglie **Seleziona** il criterio verrà distribuito agli utenti.
+2. Scegliere **Selezionare i gruppi da includere** per aprire il riquadro che consente di visualizzare i gruppi di sicurezza di Azure AD.  Se si sceglie **Seleziona** il criterio verrà distribuito agli utenti.
 
     > [!NOTE] 
     > Il criterio è stato applicato agli utenti. I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità.

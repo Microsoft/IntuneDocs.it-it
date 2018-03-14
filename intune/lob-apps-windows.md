@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b687b71f9d264364ff758fdd46b0739465c16865
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e23ddb70bb2c12e1278f4167ec074972eeba3003
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per Windows in Microsoft Intune
 
@@ -29,27 +29,28 @@ Un'app line-of-business è un'app che viene aggiunta da un apposito file di inst
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Passaggio 1: specificare il file di installazione del software
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** + **Intune**.
-3. Nel pannello **Intune** scegliere **Gestisci le app**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** scegliere **App per dispositivi mobili**.
 4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **App**.
 5. In alto all'elenco delle applicazioni scegliere **Aggiungi**.
-6. Nel pannello **Aggiungi app** scegliere **App line-of-business**.
+6. Nel riquadro **Aggiungi app** scegliere **App line-of-business**.
 
 ## <a name="step-2---configure-the-app-package-file"></a>Passaggio 2: configurare il file del pacchetto dell'app
 
-1. Nel pannello **Aggiungi app** scegliere **File del pacchetto dell'app**.
-2. Nel pannello **File del pacchetto dell'app** scegliere il pulsante Sfoglia e selezionare un file di installazione Windows con estensione **msi**, **appx** o **appxbundle**.
+1. Nel riquadro **Aggiungi app** scegliere **File del pacchetto dell'app**.
+2. Nel riquadro **File del pacchetto dell'app** scegliere il pulsante Sfoglia e selezionare un file di installazione Windows con estensione **msi**, **appx** o **appxbundle**.
 3. Al termine, scegliere **OK**.
 
 
 ## <a name="step-3---configure-app-information"></a>Passaggio 3: configurare le informazioni sull'app
 
-1. Nel pannello **Aggiungi app** scegliere **File del pacchetto dell'app**.
-2. Nel pannello **Informazioni sull'app** configurare le informazioni seguenti (alcuni valori del pannello potrebbero venire inseriti automaticamente):
+1. Nel riquadro **Aggiungi app** scegliere **File del pacchetto dell'app**.
+2. Nel riquadro **Informazioni sull'app** configurare le informazioni seguenti (alcuni valori del riquadro potrebbero essere compilati automaticamente):
     - **Nome**: immettere il nome dell'app che viene visualizzato nel portale aziendale. Verificare che tutti i nomi di app usati siano univoci. Se il nome di un'app è usato due volte, solo una delle due app viene visualizzata dagli utenti nel portale aziendale.
     - **Descrizione**: immettere una descrizione per l'app. La descrizione viene visualizzata dagli utenti nel portale aziendale.
     - **Autore**: immettere il nome dell'autore dell'app.
+    - **Ignora la versione dell'app**: impostare su **Sì** se l'app viene aggiornata automaticamente dallo sviluppatore.
     - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. La categorizzazione delle app consente agli utenti di trovare più facilmente l'app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: visualizza chiaramente l'app nella pagina principale del portale aziendale quando gli utenti sfogliano le app.
     - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
@@ -63,7 +64,7 @@ Un'app line-of-business è un'app che viene aggiunta da un apposito file di inst
 
 ## <a name="step-4---finish-up"></a>Passaggio 4: completare l'operazione
 
-1. Nel pannello **Aggiungi app** verificare di aver configurato correttamente le informazioni sull'app.
+1. Nel riquadro **Aggiungi app** verificare di aver configurato correttamente le informazioni sull'app.
 2. Scegliere **Aggiungi** per caricare l'app in Intune.
 
 ## <a name="step-5---update-a-line-of-business-app"></a>Passaggio 5: aggiornare un'app line-of-business
@@ -76,8 +77,8 @@ Un'app line-of-business è un'app che viene aggiunta da un apposito file di inst
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-L'app creata viene visualizzata nell'elenco di app. È ora possibile assegnarla ai gruppi scelti. Per altre informazioni, vedere [Come assegnare app ai gruppi](apps-deploy.md).
+- L'app creata viene visualizzata nell'elenco di app. È ora possibile assegnarla ai gruppi scelti. Per altre informazioni, vedere [Come assegnare app ai gruppi](apps-deploy.md).
 
-Altre informazioni sulle modalità in cui è possibile monitorare le proprietà e l'assegnazione dell'app. Per altre informazioni, vedere [Come monitorare le informazioni sulle app e le assegnazioni](apps-monitor.md).
+- Altre informazioni sulle modalità in cui è possibile monitorare le proprietà e l'assegnazione dell'app. Per altre informazioni, vedere [Come monitorare le informazioni sulle app e le assegnazioni](apps-monitor.md).
 
-Altre informazioni sul contesto dell'app in Intune. Per altre informazioni, vedere [Panoramica dei cicli di vita del dispositivo e dell'app](introduction-device-app-lifecycles.md)
+- Altre informazioni sul contesto dell'app in Intune. Per altre informazioni, vedere [Panoramica dei cicli di vita del dispositivo e dell'app](introduction-device-app-lifecycles.md)

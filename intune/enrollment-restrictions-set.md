@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: a6466d62cf8af4e6b8a14980db5e9a244deb45c4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
@@ -53,8 +53,8 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
 
 ## <a name="create-a-restriction"></a>Creare una restrizione
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi**, cercare **Intune** e quindi scegliere **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Scegliere **Registrazione del dispositivo** > **Restrizioni registrazione**.
 4. Scegliere **Crea restrizione**.
 5. Assegnare un nome e una descrizione alla restrizione.
@@ -70,8 +70,8 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
 
 È possibile modificare le impostazioni relative al tipo di dispositivo tramite la procedura seguente:
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi**, cercare **Intune** e quindi scegliere **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Scegliere **Registrazione del dispositivo** > **Restrizioni registrazione**.
 4. In **Restrizioni sul tipo di dispositivi** scegliere la restrizione che si vuole impostare.
 5. Sotto il nome della restrizione (**Tutti gli utenti** per la restrizione predefinita) selezionare **Piattaforme**. Scegliere **Consenti** o **Blocca** per ogni piattaforma elencata.
@@ -81,10 +81,10 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
   - iOS supporta il formato di versione maggiore.minore.revisione.
   - Windows supporta il formato maggiore.minore.revisione.build solo per Windows 10.
   Le versioni del sistema operativo non si applicano ai dispositivi Apple registrati in Device Enrollment Program, Apple School Manager o nell'app Apple Configurator.
-8. Specificare **Consenti** o **Blocca** per i dispositivi **di proprietà personale** per ogni piattaforma elencata.
+6. Specificare **Consenti** o **Blocca** per i dispositivi **di proprietà personale** per ogni piattaforma elencata.
 
     ![Screenshot dell'area di lavoro delle restrizioni relative ai dispositivi con la piattaforma predefinita configurata per i dispositivi di proprietà personale](media/device-restrictions-platform-configurations.png)
-9. Fare clic su **Save**.
+7. Fare clic su **Save**.
 
 >[!NOTE]
 >- Anche se si bloccano i dispositivi personali Android per la registrazione, i dispositivi di proprietà personale con Android for Work possono ancora essere registrati.
@@ -95,13 +95,13 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
 
 È possibile modificare le impostazioni relative al numero di dispositivi tramite la procedura seguente:
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi**, cercare **Intune** e quindi scegliere **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Scegliere **Registrazione del dispositivo** > **Restrizioni registrazione**.
 4. In **Restrizione sul limite di dispositivi** scegliere la restrizione che si vuole impostare.
 5. Scegliere **Limite di dispositivi** e quindi nell'elenco a discesa selezionare il numero massimo di dispositivi che un utente può registrare.
     ![Screenshot del pannello Restrizione sul limite di dispositivi](./media/device-restrictions-limit.png)
-6. Fare clic su **Save**.
+4. Fare clic su **Save**.
 
 Verrà visualizzata una notifica che informa l'utente finale quando raggiunge il limite di dispositivi registrati. Ad esempio, in iOS verrà visualizzato un messaggio simile al seguente:
 
@@ -119,8 +119,8 @@ La registrazione di dispositivi prevede restrizioni predefinite sia per il tipo 
 
 **Per modificare la priorità delle restrizioni**
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi**, cercare **Intune** e quindi scegliere **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Scegliere **Registrazione del dispositivo** > **Restrizioni registrazione**.
 4. Passare il puntatore del mouse sulla restrizione nell'elenco delle priorità.
-5. Usando i tre punti verticali, trascinare la priorità nella posizione voluta nell'elenco.
+5. Usando i tre punti verticali a sinistra, trascinare la priorità nella posizione voluta nell'elenco.
