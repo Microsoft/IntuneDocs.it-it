@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificare i dispositivi di proprietà dell'azienda
 
@@ -70,7 +70,7 @@ Il file con estensione CSV quando viene visualizzato in un editor di testo viene
 
 ### <a name="add-a-csv-list-of-corporate-identifiers"></a>Aggiungere un elenco di identificatori aziendali con estensione csv
 
-1. In Intune nel portale di Azure scegliere **Registrazione del dispositivo** > **Identificatori dei dispositivi aziendali** e quindi fare clic su **Aggiungi**.
+1. In [Intune nel portale di Azure](https://portal.azure.com) scegliere **Registrazione del dispositivo** > **Identificatori dei dispositivi aziendali** e quindi fare clic su **Aggiungi**.
 
  ![Area di lavoro Identificatori dei dispositivi aziendali con il pulsante Aggiungi evidenziato](./media/add-corp-id.png)
 
@@ -82,11 +82,11 @@ I dispositivi importati non sono necessariamente registrati. I dispositivi posso
 
 ### <a name="delete-corporate-identifiers"></a>Eliminare gli identificatori aziendali
 
-1. In Intune nel portale di Azure scegliere **Registrazione del dispositivo** > **Identificatori dei dispositivi aziendali**.
+1. In [Intune nel portale di Azure](https://portal.azure.com) scegliere **Registrazione del dispositivo** > **Identificatori dei dispositivi aziendali**.
 2. Selezionare gli identificatori dei dispositivi da eliminare e quindi scegliere **Elimina**.
 3. Confermare l'eliminazione.
 
-L'eliminazione di un identificatore aziendale per un dispositivo registrato non comporta la modifica della proprietà del dispositivo. Per modificare la proprietà di un dispositivo, passare a **Dispositivi** > **Tutti i dispositivi**, selezionare il dispositivo, scegliere **Proprietà** e quindi modificare la **Proprietà del dispositivo**.
+L'eliminazione di un identificatore aziendale per un dispositivo registrato non comporta la modifica della proprietà del dispositivo. Per modificare la proprietà di un dispositivo, passare a **Dispositivi**, selezionare il dispositivo, scegliere **Proprietà** e quindi modificare **Proprietà del dispositivo**.
 
 ### <a name="imei-specifications"></a>Specifiche IMEI
 Per specifiche dettagliate sui codici IMEI, vedere [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
@@ -96,7 +96,7 @@ Per specifiche dettagliate sui codici IMEI, vedere [3GGPP TS 23.003](https://por
 Le proprietà dei dispositivi mostrano la **Proprietà** per ogni record di dispositivo in Intune. L'amministratore può specificare i dispositivi come **Personale** o **Aziendale**.
 
 **Per modificare la proprietà del dispositivo:**
-1. In Intune nel portale di Azure passare a **Dispositivi** > **Tutti i dispositivi** e quindi scegliere il dispositivo.
+1. In [Intune nel portale di Azure](https://portal.azure.com) passare a **Dispositivi** e quindi scegliere il dispositivo.
 3. Scegliere **Proprietà**.
 4. Specificare la **Proprietà del dispositivo** come **Personale** o **Aziendale**.
 

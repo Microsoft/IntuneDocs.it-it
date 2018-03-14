@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e06b335c03caee0bd997748f9c48ed78d7d379b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-managing-users"></a>Introduzione alla gestione degli utenti
 
@@ -27,13 +27,13 @@ In ogni organizzazione lavorano molte persone diverse. Per ogni persona che usa 
 
 ## <a name="how-do-i-create-a-user"></a>Come si crea un utente?
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. In **Cerca risorse** cercare **Intune**.
-3. Dopo aver aperto il pannello **Microsoft Intune**, selezionare **Utenti**. Nella pagina **Tutti gli utenti** selezionare **+ Nuovo utente**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Dopo aver aperto il riquadro **Microsoft Intune**, selezionare **Utenti**. Nella pagina **Tutti gli utenti** selezionare **+ Nuovo utente**.
 4. Immettere i dettagli dell'utente, ad esempio **Nome** e **Nome utente**. La parte del nome utente con il nome di dominio deve corrispondere al nome di dominio predefinito iniziale "contoso.onmicrosoft.com" o a un nome di dominio verificato e non federato, ad esempio "contoso.com".
 5. In **Gruppi** scegliere il gruppo di test al quale aggiungere l'utente.
 6. Salvare la password dell'utente generata automaticamente e necessaria per l'accesso a un dispositivo di test. È necessario comunicare questa password agli utenti, che potranno sostituirla con una password normale facile da ricordare.
-7. Nel pannello **Utente** selezionare **Crea**.
+7. Nel riquadro **Utente** selezionare **Crea**.
 
 ## <a name="assigning-licenses-to-users"></a>Assegnazione di licenze agli utenti
 

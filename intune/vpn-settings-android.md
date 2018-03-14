@@ -13,15 +13,18 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fe05b5fdd87e92f5acc35c0a750287f8fd01b92
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 909c014e1d68c26c1440c2b924e05dbaabbde5e5
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Configurare le impostazioni VPN in Microsoft Intune per i dispositivi che eseguono Android 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Questo articolo illustra le impostazioni di Intune che è possibile usare per configurare le connessioni VPN nei dispositivi che eseguono Android.
+
 
 È possibile configurare le impostazioni VPN per le piattaforme seguenti:
 
@@ -39,7 +42,7 @@ A seconda delle impostazioni scelte, non tutti i valori seguenti sono configurab
 - **Tipo di connessione**: selezionare il tipo di connessione VPN dall'elenco di fornitori seguente:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Citrix**
@@ -57,7 +60,7 @@ A seconda delle impostazioni scelte, non tutti i valori seguenti sono configurab
 - **Tipo di connessione**: selezionare il tipo di connessione VPN dall'elenco di fornitori seguente:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
 

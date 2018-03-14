@@ -14,19 +14,19 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 9582b53c4f992b5f788f10a262bb802e80580144
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti aziendali
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Il portale di risoluzione dei problemi consente agli operatori del supporto tecnico e agli amministratori di Intune di visualizzare le informazioni degli utenti per rispondere alle richieste di assistenza degli utenti. Le organizzazioni che dispongono di help desk possono assegnare il ruolo di **operatore di help desk** a un gruppo di utenti. I membri del ruolo operatore di help desk possono usare il pannello **Risoluzione dei problemi**.
+Il portale di risoluzione dei problemi consente agli operatori del supporto tecnico e agli amministratori di Intune di visualizzare le informazioni degli utenti per rispondere alle richieste di assistenza degli utenti. Le organizzazioni che dispongono di help desk possono assegnare il ruolo di **operatore di help desk** a un gruppo di utenti. I membri del ruolo operatore di help desk possono usare il riquadro **Risoluzione dei problemi**.
 
-Il pannello **Risoluzione dei problemi** visualizza anche i problemi di registrazione dell'utente. Informazioni dettagliate sul problema e i passaggi suggeriti per la correzione possono essere utili ad amministratori e operatori di help desk per la risoluzione dei problemi. Alcuni problemi di registrazione non vengono rilevati ed è possibile che per alcuni errori non siano disponibili suggerimenti per la correzione. 
+Il riquadro **Risoluzione dei problemi** visualizza anche i problemi di registrazione dell'utente. Informazioni dettagliate sul problema e i passaggi suggeriti per la correzione possono essere utili ad amministratori e operatori di help desk per la risoluzione dei problemi. Alcuni problemi di registrazione non vengono rilevati ed è possibile che per alcuni errori non siano disponibili suggerimenti per la correzione.
 
 Per istruzioni sull'aggiunta di un ruolo operatore di help desk, vedere [Controllo degli accessi in base al ruolo (RBAC) con Intune](/intune/role-based-access-control).
 
@@ -41,20 +41,20 @@ Quando un utente contatta l'help desk per un problema tecnico di Intune, l'opera
 
 ## <a name="to-review-troubleshooting-details"></a>Per esaminare le informazioni sulla risoluzione dei problemi
 
-Nel pannello Risoluzione dei problemi scegliere **Selezionare l'utente** per visualizzare le informazioni relative all'utente. Le informazioni utente sono utili per definire lo stato corrente degli utenti e dei loro dispositivi.  
+Nel riquadro Risoluzione dei problemi scegliere **Selezionare l'utente** per visualizzare le informazioni relative all'utente. Le informazioni utente sono utili per definire lo stato corrente degli utenti e dei loro dispositivi.  
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Risoluzione dei problemi**.
-4. Fare clic su **Selezionare l'utente**.
-5. Selezionare un utente digitando il nome o l'indirizzo di posta elettronica. Fare clic su **Seleziona**. Le informazioni di risoluzione dei problemi per l'utente vengono visualizzate nel pannello Risoluzione dei problemi. Le tabelle seguenti descrivono tali informazioni.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** scegliere **Risoluzione dei problemi**.
+4. Fare clic su **Seleziona** per selezionare un utente per risolvere i problemi.
+5. Selezionare un utente digitando il nome o l'indirizzo di posta elettronica. Fare clic su **Seleziona**. Le informazioni di risoluzione dei problemi per l'utente vengono visualizzate nel riquadro Risoluzione dei problemi. Le tabelle seguenti descrivono tali informazioni.
 
 > [!Note]  
-> È anche possibile accedere al pannello **Risoluzione dei problemi** digitando il seguente indirizzo nel browser: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
+> È anche possibile accedere al riquadro **Risoluzione dei problemi** digitando il seguente indirizzo nel browser: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
 ## <a name="areas-of-troubleshooting-dashboard"></a>Aree del dashboard Risoluzione dei problemi
 
-È possibile usare il pannello **Risoluzione dei problemi** per esaminare le informazioni dell'utente. 
+È possibile usare il riquadro **Risoluzione dei problemi** per esaminare le informazioni dell'utente.
 
 ![](/intune/media/troubleshooting-dash.png)
 
@@ -63,7 +63,7 @@ Nel pannello Risoluzione dei problemi scegliere **Selezionare l'utente** per vis
 | 1.   | Stato dell'account  | Mostra lo stato del tenant di Intune corrente come **Attivo** o **Inattivo**.       |
 | 2.   | Selezione utente  | Nome dell'utente attualmente selezionato. Fare clic su **Cambia utente** per scegliere un nuovo utente.       |
 | 3.   | Stato utente  | Visualizza lo stato della licenza Intune dell'utente, il numero di dispositivi, la conformità di ciascun dispositivo, il numero di app e la conformità delle app.       |
-| 4.   | Informazioni utente  | Usare l'elenco per selezionare i dettagli da esaminare nel pannello. <br>È possibile selezionare: <ul><li>App per dispositivi mobili<li>Criteri di protezione delle app<li>Criteri di conformità<li> Criteri di configurazione<li> Restrizioni di registrazione</ul>      |
+| 4.   | Informazioni utente  | Usare l'elenco per selezionare i dettagli da esaminare nel riquadro. <br>È possibile selezionare: <ul><li>App per dispositivi mobili<li>Criteri di protezione delle app<li>Criteri di conformità<li> Criteri di configurazione</ul>      |
 | 5.   | Appartenenza al gruppo  | Yadda       |
 
 ## <a name="mobile-apps-reference"></a>Riferimento per le app per dispositivi mobili

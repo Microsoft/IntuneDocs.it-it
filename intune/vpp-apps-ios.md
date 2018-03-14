@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
-ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
+ms.openlocfilehash: 04a94e4baee23ac9a4a742a2ff11591087381fde
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Procedura per la gestione delle app iOS acquistate tramite Volume Purchase Program con Microsoft Intune
 
@@ -80,11 +80,11 @@ Quando si configura un dispositivo per un nuovo utente di Intune, verificare di 
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Per ottenere e caricare un token VPP di Apple
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-1.  Nel pannello **Intune** scegliere **App per dispositivi mobili** > **Token VPP iOS** da **Installazione**.
-2.  Nel pannello di elenco dei token VPP selezionare **Crea**.
-4. Nel pannello **Creazione token VPP** specificare le informazioni seguenti:
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+1.  Nel riquadro **Intune** scegliere **App per dispositivi mobili** > **Token VPP iOS** in **Installazione**.
+2.  Nel riquadro di elenco dei token VPP selezionare **Crea**.
+4. Nel riquadro **Creazione token VPP** specificare le informazioni seguenti:
     - **File del token VPP**: se l'operazione non è ancora stata eseguita, procedere all'iscrizione a Volume Purchase Program per le aziende o per l'istruzione. Dopo avere completato l'iscrizione, scaricare il token VPP di Apple per l'account e selezionarlo qui.
     - **ID Apple**: immettere l'ID Apple dell'account associato al Volume Purchase Program.
     - **Paese/area**: selezionare lo Store del paese VPP.  Intune sincronizza le app VPP per tutte le impostazioni locali dello Store del paese VPP specificato.
@@ -94,17 +94,17 @@ Quando si configura un dispositivo per un nuovo utente di Intune, verificare di 
     - **Tipo di account VPP**: scegliere **Azienda** o **Istruzione**.
     - **Aggiornamenti automatici delle app**: scegliere da **On** a **Off** per abilitare gli aggiornamenti automatici. Una volta abilitati, Intune aggiornerà le app acquistate per il token specifico, quando il dispositivo è connesso, attraverso il servizio Intune.
 Identifica gli aggiornamenti per le app VPP all'interno dell'app store e li invia automaticamente al dispositivo quando questo si connette.
-4. Al termine, selezionare **Carica**.
+4. Al termine, selezionare **Crea**.
 
-Il token viene visualizzato nel pannello di elenco dei token.
+Il token viene visualizzato nel riquadro di elenco dei token.
 
 È possibile sincronizzare i dati archiviati da Apple con Intune in qualsiasi momento scegliendo **Sincronizza**.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Per assegnare un'app acquistata tramite Volume Purchase Program
 
-1.  Nel pannello **Intune** scegliere **App per dispositivi mobili** > **Apps** sotto **Gestisci**.
-2.  Nel pannello dell'elenco delle app scegliere l'app da assegnare e quindi scegliere **Assegnazioni**.
-3.  Nel pannello***nome app*** - **Assegnazioni** scegliere **Seleziona gruppi**,quindi nel pannello **Seleziona gruppi** scegliere i gruppi di utenti o di dispositivi Azure AD a cui assegnare l'app.
+1.  Nel riquadro **Intune** scegliere **App per dispositivi mobili** > **App** in **Gestisci**.
+2.  Nel riquadro dell'elenco delle app scegliere l'app da assegnare e quindi scegliere **Assegnazioni**.
+3.  Nel riquadro ***nome app*** - **Assegnazioni** scegliere **Aggiungi gruppo**, quindi nel riquadro **Aggiungi gruppo** scegliere un **Tipo di assegnazione** e scegliere i gruppi di utenti o di dispositivi Azure AD a cui assegnare l'app.
 5.  Per ogni gruppo selezionato scegliere le impostazioni seguenti:
     - **Tipo**: decidere se l'app sarà **Disponibile** (gli utenti finali possono installare l'app dal Portale aziendale) o **Obbligatoria** (l'app sarà installata automaticamente nei dispositivi degli utenti finali).
     - **Tipo di licenza**: scegliere **Licenze utente** o **Licenze dispositivo**.

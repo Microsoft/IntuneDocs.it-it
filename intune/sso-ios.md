@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS
 
@@ -34,18 +34,19 @@ Per sfruttare i vantaggi della funzionalità Single Sign-On per i dispositivi iO
 
 
 1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nella pagina **Intune** scegliere **Configurazione del dispositivo**.
-2. Nella pagina **Configurazione del dispositivo** scegliere **Profili**.
-3. Nella pagina dei profili scegliere **Crea profilo**, specificare un nome e una descrizione, quindi configurare le impostazioni seguenti:
-   - **Piattaforma**: scegliere **iOS**. 
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** scegliere **Configurazione del dispositivo**.
+4. Nel riquadro **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
+5. Nel riquadro dei profili scegliere **Crea profilo**.
+6. Specificare un nome e una descrizione e configurare le impostazioni seguenti:
+   - **Piattaforma**: scegliere **iOS**.
    - **Tipo di profilo**: scegliere **Funzionalità del dispositivo**.
-4. Nella pagina **Funzionalità del dispositivo** scegliere **Single Sign On**.
+7. Nel riquadro **Funzionalità del dispositivo** scegliere **Single Sign On**.
 
-   ![Pagina Single Sign-On](./media/sso-blade.png)
+   ![Riquadro Single Sign-On](./media/sso-blade.png)
 
-2. Fare riferimento alla tabella di riepilogo seguente per la compilazione dei campi nella pagina **Single Sign-On**. Per informazioni dettagliate, vedere le sezioni dopo la tabella.
-   
+8. Fare riferimento alla tabella di riepilogo seguente per la compilazione dei campi nel riquadro **Single Sign-On**. Per informazioni dettagliate, vedere le sezioni dopo la tabella.
+
    |Campo  |Note|
    |---------|---------|
    |**Attributo nome utente da AAD**|Attributo esaminato da Intune per ogni utente in AAD e usato per popolare il campo corrispondente (ad esempio UPN) prima di generare il payload XML che viene installato nel dispositivo.|
@@ -95,7 +96,7 @@ Il campo **Nome app** viene usato per aggiungere un nome descrittivo per facilit
 
 ### <a name="credential-renewal-certificate"></a>Certificato di rinnovo delle credenziali
 
-Se si autenticano gli utenti finali con i certificati (non password), usare questo campo per selezionare il certificato SCEP o PFX distribuito all'utente come certificato di autenticazione. In genere, si tratta dello stesso certificato distribuito all'utente per altri profili, ad esempio VPN, WiFi o posta elettronica.
+Se si autenticano gli utenti finali con i certificati (non password), usare questo campo per selezionare il certificato SCEP o PFX distribuito all'utente come certificato di autenticazione. In genere, si tratta dello stesso certificato distribuito all'utente per altri profili, ad esempio VPN, Wi-Fi o posta elettronica.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
