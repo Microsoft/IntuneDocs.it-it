@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d415628419bec26c24494b38a13bd3801051c603
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrare Windows Hello for Business in Microsoft Intune
 
@@ -48,19 +48,19 @@ Per assicurarsi che i conflitti dei criteri vengano risolti e che i criteri dei 
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Creare un criterio di Windows Hello for Business
 
-1.  Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1.  Nel [portale di Azure](https://portal.azure.com) scegliere **Tutti i servizi** > **Monitoraggio e gestione** > **Intune**.
 
-2.  Nella pagina di Intune scegliere **Registrazione del dispositivo** e quindi **Registrazione Windows** > **Windows Hello for Business**.
+2.  Nel riquadro di Intune scegliere **Registrazione del dispositivo** e quindi **Registrazione Windows** > **Windows Hello for Business**.
 
-3.  Nella pagina visualizzata scegliere le impostazioni **predefinite**.
+3.  Nel riquadro visualizzato scegliere le impostazioni**predefinite**.
 
-4.  Nella pagina **Tutti gli utenti** fare clic su **Proprietà** e immettere un **nome** e una **descrizione** facoltativa per le impostazioni di Windows Hello for Business.
+4.  Nel riquadro **Tutti gli utenti** fare clic su **Proprietà** e quindi immettere un **nome** e una **descrizione** facoltativa per le impostazioni di Windows Hello for Business.
 
-5. Nella pagina **Tutti gli utenti** fare clic su **Impostazioni** e quindi per **Configura Windows Hello for Business** scegliere tra le seguenti impostazioni:
+5. Nel riquadro **Tutti gli utenti** fare clic su **Impostazioni** e quindi per **Configura Windows Hello for Business** scegliere tra le impostazioni seguenti:
 
     - **Disabilitato**. Selezionare questa impostazione se non si vuole usare Windows Hello for Business. Tutte le altre impostazioni nella schermata risultano non disponibili.
     - **Attivata**. Selezionare questa impostazione se si vuole configurare le impostazioni di Windows Hello for Business.
-    - **Non configurato**. Selezionare questa impostazione se non si vuole usare Intune per controllare le impostazioni di Windows Hello for Business. Eventuali impostazioni di Windows Hello for Business presenti nei dispositivi Windows 10 non verranno modificate. Tutte le altre impostazioni nella pagina non sono disponibili.
+    - **Non configurato**. Selezionare questa impostazione se non si vuole usare Intune per controllare le impostazioni di Windows Hello for Business. Eventuali impostazioni di Windows Hello for Business presenti nei dispositivi Windows 10 non verranno modificate. Tutte le altre impostazioni nel riquadro non sono disponibili.
 
 6.  Se si seleziona **Abilitato** nel passaggio precedente, configurare le impostazioni obbligatorie che verranno applicate a tutti i dispositivi Windows 10 e Windows 10 Mobile registrati.
 
@@ -69,9 +69,9 @@ Per assicurarsi che i conflitti dei criteri vengano risolti e che i criteri dei 
      - **Obbligatorio** (impostazione predefinita). Solo i dispositivi con un modulo TPM accessibile possono eseguire il provisioning di Windows Hello for Business.
      - **Preferito**. I dispositivi provano a usare prima un modulo TPM. Se non è disponibile, possono usare la crittografia software.
 
- - **Richiedi lunghezza minima del PIN**/**Richiedi lunghezza massima del PIN**. Configura i dispositivi in modo che usino i valori massimo e minimo specificati per la lunghezza del PIN per garantire l'accesso protetto. La lunghezza del PIN predefinita è 6 caratteri, ma è possibile applicare una lunghezza minima di 4 caratteri. La lunghezza massima del PIN è 127 caratteri.
+ - **Lunghezza minima del PIN**/**Lunghezza massima del PIN**. Configura i dispositivi in modo che usino i valori massimo e minimo specificati per la lunghezza del PIN per garantire l'accesso protetto. La lunghezza del PIN predefinita è 6 caratteri, ma è possibile applicare una lunghezza minima di 4 caratteri. La lunghezza massima del PIN è 127 caratteri.
 
- - **Richiedi lettere minuscole nel PIN**/**Richiedi lettere maiuscole nel PIN**/**Caratteri speciali nel PIN**. Per applicare un PIN più complesso, richiedere l'utilizzo di lettere maiuscole, lettere minuscole e caratteri speciali nel PIN. È possibile scegliere tra:
+ - **Lettere minuscole nel PIN**/**Lettere maiuscole nel PIN**/**Caratteri speciali nel PIN**. Per applicare un PIN più complesso, richiedere l'utilizzo di lettere maiuscole, lettere minuscole e caratteri speciali nel PIN. È possibile scegliere tra:
 
      - **Consentito**. Gli utenti possono usare il tipo di carattere specificato nel proprio PIN, ma non è obbligatorio.
 
@@ -90,7 +90,7 @@ Per assicurarsi che i conflitti dei criteri vengano risolti e che i criteri dei 
 
  - **Usa anti-spoofing avanzato, se disponibile**. Consente di configurare se usare le funzionalità di anti-spoofing di Windows Hello nei dispositivi che lo supportano, ad esempio il rilevamento di una fotografia di un viso invece di un viso reale.<br>Se impostato su **Sì**, Windows richiede a tutti gli utenti di usare la funzionalità di anti-spoofing per le caratteristiche del viso, se supportata.
 
- - **Usare l'accesso tramite telefono**. Se questa opzione è impostata su **Sì**, gli utenti possono usare Passport remoto come dispositivo portatile complementare per l'autenticazione del computer desktop. Il computer desktop deve essere aggiunto ad Azure Active Directory e il dispositivo complementare deve essere configurato con un PIN di Windows Hello for Business.
+ - **Consenti l'accesso tramite telefono**. Se questa opzione è impostata su **Sì**, gli utenti possono usare Passport remoto come dispositivo portatile complementare per l'autenticazione del computer desktop. Il computer desktop deve essere aggiunto ad Azure Active Directory e il dispositivo complementare deve essere configurato con un PIN di Windows Hello for Business.
 
 ## <a name="windows-holographic-for-business-support"></a>Supporto di Windows Holographic for Business
 
