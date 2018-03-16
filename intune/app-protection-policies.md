@@ -1,12 +1,12 @@
 ---
 title: Creare e distribuire i criteri di protezione delle app
-titleSuffix: Azure portal
-description: Informazioni sul modo in cui i criteri di protezione delle app di Intune consentono di proteggere i dati aziendali usati dalle app gestite."
+titleSuffix: Microsoft Intune
+description: Informazioni su come creare e assegnare criteri di protezione delle app di Microsoft Intune.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,18 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbb9a1f6697a8339a2854e4352749ca04bb612e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+
+Informazioni su come creare e assegnare criteri di protezione delle app di Microsoft Intune agli utenti. In questo argomento viene anche descritto come apportare modifiche a criteri esistenti.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -34,89 +37,91 @@ I criteri di protezione delle app possono essere applicati in app eseguite su di
 Per un elenco delle app supportate da MAM, vedere [Elenco di app MAM](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Creare un criterio di protezione delle app
-1.  Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **Criteri di protezione delle app**.
+1.  Nel carico di lavoro **App per dispositivi mobili** selezionare **Criteri di protezione delle app** dalla sezione **Gestisci**. Questa selezione determina la visualizzazione dei dettagli dei **Criteri di protezione delle app**, in cui è possibile creare nuovi criteri e modificare i criteri esistenti.
+2. Scegliere **Aggiungi criteri**.
 
-2.  Verrà visualizzato il pannello **Criteri di protezione delle app**, in cui sarà possibile creare nuovi criteri e modificare i criteri esistenti. Scegliere **Aggiungi criteri**.
+  ![Schermata del pannello "Aggiungi criteri"](./media/app-protection-add-policy.png)
 
-  ![Schermata del pannello Aggiungi criteri](./media/app-protection-add-policy.png)
+3.  Digitare un nome per il criterio, aggiungere una breve descrizione e selezionare il tipo di piattaforma per i criteri. È possibile creare più criteri per ogni piattaforma, se necessario.
 
-3.  Digitare un nome per il criterio, aggiungere una breve descrizione e selezionare il tipo di piattaforma per creare un criterio per iOS e Android. È possibile creare più criteri per ogni piattaforma.
-
-4.  Scegliere **App** per aprire il **pannello App**, che contiene l'elenco delle app disponibili. Selezionare una o più app dall'elenco che si vuole associare al criterio che si sta creando. Dopo avere selezionato le app, scegliere **Seleziona** nella parte inferiore del pannello **App** per salvare la selezione.
+4.  Scegliere **App** per aprire il pannello **App**, che contiene l'elenco delle app disponibili. Selezionare una o più app dall'elenco che si vuole associare al criterio che si sta creando.
+5. Dopo aver selezionato le app, scegliere **Seleziona** per salvare la selezione.
 
     > [!IMPORTANT]
     > È necessario selezionare almeno un'app per creare un criterio.
 
-5.  Nel pannello **Aggiungi criteri** scegliere **Configurare le impostazioni necessarie** per aprire il pannello delle impostazioni dei criteri.
+6.  Scegliere **Configura le impostazioni obbligatorie** nel pannello **Aggiungi criteri** per aprire le **Impostazioni**.
 
-    Esistono due categorie di impostazioni dei criteri: **Rilocazione dati** e **Accesso**.  I criteri di rilocazione dati sono applicabili allo spostamento dei dati da e verso le app, mentre i criteri di accesso determinano il modo in cui l'utente finale accede alle applicazioni in un contesto aziendale.
+    Esistono due categorie di impostazioni dei criteri: **Rilocazione dati** e **Accesso**.  I criteri di rilocazione dei dati sono applicabili allo spostamento dei dati da e verso le app. I criteri di accesso determinano come l'utente finale accede alle applicazioni in un contesto aziendale.
     In questa introduzione le impostazioni dei criteri hanno valori predefiniti. Non è necessario apportare modifiche se i valori predefiniti soddisfano i requisiti.
 
     > [!TIP]
-    > Queste impostazioni dei criteri vengono applicate solo quando si usano le app nel contesto aziendale.  Quando l'utente finale usa l'app per eseguire un'attività personale, questi criteri non hanno effetto.
+    > Queste impostazioni dei criteri vengono applicate solo quando si usano le app nel contesto aziendale. Quando gli utenti finali usano l'app per eseguire un'attività personale, questi criteri non hanno effetto.
 
+7.  Scegliere **OK** per salvare la configurazione. Viene di nuovo visualizzato il riquadro **Aggiungi criteri**. Scegliere **Crea** per creare i criteri e salvare le impostazioni.
+8. Scegliere **OK** per salvare la configurazione. A questo punto ci si trova di nuovo nel riquadro **Aggiungi criteri**.
+9. Scegliere **Crea** per creare i criteri e salvare le impostazioni.
 
-
-6.  Scegliere **OK** per salvare la configurazione. Viene di nuovo visualizzato il pannello **Aggiungi un criterio** . Scegliere **Crea** per creare i criteri e salvare le impostazioni.
-
-
-Dopo aver creato un criterio come descritto nella procedura precedente, non verrà distribuito a tutti gli utenti. Per distribuire un criterio, vedere la sezione seguente, "Distribuire un criterio agli utenti".
+Dopo aver creato un criterio come descritto nella procedura precedente, non verrà distribuito a tutti gli utenti. Per distribuire un criterio, vedere [Distribuire un criterio agli utenti](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Distribuire un criterio agli utenti
 
-1.  Nel pannello **Criteri** scegliere **Gruppi di utenti** per aprire il pannello **Gruppi di utenti**. Fare clic su **Aggiungi un gruppo di utenti** nel pannello **Gruppi di utenti** per aprire il pannello **Aggiungi un gruppo di utenti**.
 
-  ![Schermata del pannello Gruppi di utenti con l'opzione Aggiungi un gruppo di utenti evidenziata](./media/app-protection-policy-add-users.png)
+1. Selezionare un criterio nel riquadro **Criteri di protezione delle app**.
 
-2.  Viene visualizzato un elenco dei gruppi di utenti nel pannello **Aggiungi un gruppo di utenti** . Si tratta di un elenco di tutti i gruppi di sicurezza in **Azure Active Directory**. Selezionare i gruppi di utenti a cui si vuole applicare questo criterio e quindi scegliere **Seleziona**. Se si sceglie **Seleziona** il criterio verrà distribuito agli utenti.
-  ![Schermata del pannello Aggiungi gruppo di utenti che visualizza l'elenco di utenti di Azure Active Directory](./media/azure-ad-user-group-list.png)
+1. Nel riquadro **Criteri** scegliere **Assegnazioni**, che consente di visualizzare il riquadro **Protezione app di Intune - Assegnazioni**. Scegliere **Selezionare i gruppi da includere** nel riquadro **Assegnazioni** per aprire il riquadro **Selezionare i gruppi da includere**.
+
+   ![Schermata del riquadro Assegnazioni con l'opzione di menu Selezionare i gruppi da includere evidenziata](./media/app-protection-policy-add-users.png)
+
+2.  Viene visualizzato un elenco dei gruppi di utenti nel riquadro **Aggiungi un gruppo di utenti**. Si tratta di un elenco di tutti i gruppi di sicurezza in **Azure Active Directory**. Selezionare i gruppi di utenti a cui si vuole applicare questo criterio e quindi scegliere **Seleziona**. Se si sceglie **Seleziona** il criterio verrà distribuito agli utenti.
+
+    ![Schermata del riquadro Aggiungi un gruppo di utenti che visualizza l'elenco di utenti di Azure Active Directory](./media/azure-ad-user-group-list.png)
 
 A questo punto, l'utente ha creato un criterio e lo ha distribuito agli utenti.
 
-Solo gli utenti a cui sono state assegnate licenze di Microsoft Intune sono interessati dai criteri. Gli utenti che appartengono al gruppo di sicurezza selezionato e ai quali non è stata assegnata una licenza di Microsoft Intune non saranno interessati dai criteri.
+Solo gli utenti a cui sono state assegnate licenze di Microsoft Intune sono interessati dai criteri. Gli utenti del gruppo di sicurezza selezionato a cui non è stata assegnata una licenza di Intune non sono interessati.
 
 >[!IMPORTANT]
-> Se si usa Intune con Configuration Manager per gestire i dispositivi Android e iOS, il criterio viene applicato solo agli utenti inclusi direttamente nel gruppo selezionato. I membri dei gruppi figlio annidati all'interno del gruppo selezionato non sono interessati.
+> Se si usa Intune con Configuration Manager per gestire i propri dispositivi, il criterio viene applicato solo agli utenti inclusi direttamente nel gruppo selezionato. I membri dei gruppi figlio annidati all'interno del gruppo selezionato non sono interessati.
 
 Gli utenti finali possono scaricare le app dall'Apple Store o da Google Play. Per altre informazioni, vedere:
 * [Aspettative dalla gestione dell'app per Android con criteri di protezione delle app](app-protection-enabled-apps-android.md)
 * [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](app-protection-enabled-apps-ios.md)
 
 ##  <a name="change-existing-policies"></a>Modificare i criteri esistenti
-È possibile modificare criteri esistenti e applicarli agli utenti di destinazione. Tuttavia, quando si modificano criteri esistenti, gli utenti che hanno già effettuato l'accesso alle app non vedranno le modifiche per un intervallo di tempo di 8 ore.
+È possibile modificare criteri esistenti e applicarli agli utenti di destinazione. Quando tuttavia si modificano criteri esistenti, gli utenti che hanno già effettuato l'accesso alle app non vedranno le modifiche per un intervallo di tempo di 8 ore.
 
-Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale dovrà disconnettersi dall'app ed eseguire nuovamente l'accesso.
+Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale deve disconnettersi dall'app ed eseguire nuovamente l'accesso.
 
 ### <a name="to-change-the-list-of-apps-associated-with-the-policy"></a>Per modificare l'elenco delle app associate al criterio
 
-1.  Nel pannello **Criteri per le app** scegliere il criterio che si vuole modificare. Verrà aperto un pannello specifico per il criterio appena selezionato.
+1.  Nel riquadro **Criteri di protezione delle app** scegliere i criteri da modificare per aprire un riquadro specifico per i criteri appena selezionati.
 
-2.  Nel pannello dei criteri, scegliere **App di destinazione** per aprire l'elenco delle app.
+2.  Nel riquadro dei criteri scegliere **App di destinazione** per aprire l'elenco delle app.
 
 3.  Rimuovere o aggiungere app dall'elenco e scegliere l'icona **Salva** per salvare le modifiche.
 
 ### <a name="to-change-the-list-of-user-groups"></a>Per modificare l'elenco dei gruppi di utenti
 
-1.  Nel pannello **Criteri per le app** scegliere il criterio che si vuole modificare. Verrà aperto il pannello specifico per il criterio selezionato.
 
-2.  Nel pannello dei criteri, scegliere **Gruppi di utenti** per aprire il pannello **Gruppo di utenti**, che visualizza l'elenco dei gruppi di utenti che hanno questo criterio.
+1.  Nel riquadro **Criteri di protezione delle app** scegliere i criteri da modificare per aprire il riquadro specifico per i criteri selezionati.
 
-3.  Per aggiungere un nuovo gruppo di utenti al criterio, scegliere **Aggiungi un gruppo di utenti** e selezionare il gruppo di utenti. Scegliere **Seleziona** per distribuire il criterio al gruppo selezionato.
+2.  Nel riquadro Criteri scegliere **Assegnazioni** per aprire il riquadro **Protezione app di Intune - Assegnazioni** che visualizza l'elenco corrente dei gruppi di utenti che hanno questi criteri.
 
-4.  Per eliminare un gruppo di utenti, evidenziare il gruppo di utenti che si vuole rimuovere. Scegliere i puntini di sospensione (...) e quindi scegliere **Elimina** per rimuovere il gruppo di utenti.
-  ![Schermata con l'opzione Elimina visualizzata](./media/app-protection-policy-delete-user.png)
+3.  Per aggiungere un nuovo gruppo di utenti ai criteri, nella scheda **Includi** scegliere **Selezionare i gruppi da includere** e selezionare il gruppo di utenti. Scegliere **Seleziona** per distribuire il criterio al gruppo selezionato.
+
+4.  Per eliminare un gruppo di utenti, nella scheda **Escludi** scegliere **Selezionare i gruppi da escludere** e selezionare il gruppo di utenti. Scegliere **Seleziona** per rimuovere il gruppo di utenti.
 
 ### <a name="to-change-policy-settings"></a>Per modificare le impostazioni dei criteri
 
-1.  Nel pannello **Criteri per le app** scegliere il criterio che si vuole modificare. Verrà aperto un pannello specifico per il criterio appena selezionato.
+1.  Nel riquadro **Criteri di protezione delle app** scegliere i criteri da modificare per aprire un riquadro specifico per i criteri appena selezionati.
 
-
-2.  Scegliere **Impostazioni criteri** per aprire il pannello **Impostazioni criteri**.
+2.  Scegliere **Impostazioni criteri** per aprire il riquadro **Impostazioni criteri**.
 
 3.  Modificare le impostazioni e quindi scegliere l'icona **Salva** per salvare le modifiche.
 
 ## <a name="policy-settings"></a>Impostazioni criteri
-Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Android, selezionare una delle seguenti voci:
+Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Android, selezionare uno dei collegamenti seguenti:
 
 - [Criteri iOS](app-protection-policy-settings-ios.md)
 - [Criteri Android](app-protection-policy-settings-android.md)

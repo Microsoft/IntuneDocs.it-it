@@ -14,18 +14,18 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90b1321c0df49f446bfdeccbacdfd5642396dacd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 864d528091de7a6113485347304b0dc254af2c7d
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Individuare dispositivi iOS persi o rubati con Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-L'azione del dispositivo **Individua il dispositivo** consente di visualizzare su una mappa la posizione di un dispositivo iOS rubato o smarrito. Deve trattarsi di un dispositivo iOS di proprietà dell'azienda, registrato con DEP, in cui sia attiva la modalità con supervisione. Prima di usare questa azione, è necessario abilitare la [modalità di dispositivo perso](/intune-azure/manage-devices/lost-mode.md).
+L'azione del dispositivo **Individua il dispositivo** consente di visualizzare su una mappa la posizione di un dispositivo iOS rubato o smarrito. Deve trattarsi di un dispositivo iOS di proprietà dell'azienda, registrato con DEP, in cui sia attiva la modalità con supervisione. Prima di usare questa azione, è necessario abilitare la [modalità di dispositivo perso](device-lost-mode.md).
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
@@ -37,11 +37,11 @@ L'azione del dispositivo **Individua il dispositivo** consente di visualizzare s
 
 ## <a name="how-to-locate-a-lost-or-stolen-device"></a>Come individuare un dispositivo perso o rubato
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
-4. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.
-5. Nell'elenco dei dispositivi gestiti scegliere un dispositivo iOS e quindi scegliere l'azione remota **Individua il dispositivo**.
+4. Nel pannello **Dispositivi** scegliere **Tutti i dispositivi**.
+5. Nell'elenco dei dispositivi gestiti scegliere un dispositivo iOS, scegliere **Altro** e quindi scegliere l'azione remota **Individua il dispositivo**.
 6. Dopo che il dispositivo è stato trovato, la relativa posizione viene visualizzata nel pannello **Individua il dispositivo**.
     ![Pannello Individua il dispositivo](./media/locate-device.png)
 
@@ -58,4 +58,4 @@ L'azione del dispositivo **Individua il dispositivo** consente di visualizzare s
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per visualizzare lo stato dell'azione appena eseguita, scegliere **Azioni del dispositivo** nel pannello **Dispositivi e gruppi**.
+Per visualizzare lo stato dell'azione appena eseguita, scegliere **Azioni del dispositivo** nel pannello **Dispositivi**.

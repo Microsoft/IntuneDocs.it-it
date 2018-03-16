@@ -3,8 +3,8 @@ title: Configurare l'integrazione di Lookout con Intune
 titlesuffix: Azure portal
 description: Configurare la sottoscrizione di Lookout con Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 891fbda72d38b829397158a75bdceeb452bc8d3b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: fa13ee9239dcb1f62f4fb06e876ecc272a8f620c
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurare l'integrazione di Lookout Mobile Threat Defense con Intune
 
@@ -54,7 +54,7 @@ Usare la procedura seguente per raccogliere le informazioni che dovranno essere 
 2. Quando si sceglie il nome della sottoscrizione, l'URL risultante include l'ID sottoscrizione.  Se risulta problematico trovare l'ID sottoscrizione, questo [articolo del supporto tecnico Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) include suggerimenti per trovare l'ID sottoscrizione.
 
 3. Trovare l'ID gruppo di Azure AD. La console di Lookout supporta 2 livelli di accesso:  
-  * **Accesso completo:** l'amministratore di Azure AD può creare un gruppo per gli utenti che avranno accesso completo e, facoltativamente, creare un gruppo per gli utenti che avranno accesso limitato.  Solo gli utenti di questi gruppi saranno in grado di accedere alla **console di Lookout**.
+  * **Accesso completo:** l'amministratore di Azure AD può creare un gruppo per gli utenti con accesso completo e, facoltativamente, creare un gruppo per gli utenti con accesso limitato.  Solo gli utenti di questi gruppi saranno in grado di accedere alla **console di Lookout**.
   * **Accesso limitato:** gli utenti in questo gruppo non avranno alcun accesso a diversi moduli correlati alla configurazione e alla registrazione della console di Lookout e avranno accesso in sola lettura al modulo **Security Policy** (Criteri di sicurezza) della console di Lookout.  
 
     > [!TIP] 
@@ -94,7 +94,7 @@ Usare la procedura seguente per raccogliere le informazioni che dovranno essere 
     ![screenshot della pagina di registrazione di Intune Connector](./media/lookout-mtp-enrollment.png)
 
     >[!IMPORTANT]
-    > Per il **Display Name** (Nome visualizzato) viene fatta distinzione tra maiuscole e minuscole, come indicato nella pagina **Proprietà** del gruppo di sicurezza nel portale di Azure. Come illustrato nell'immagine seguente, il nome indicato in **Display Name** (Nome visualizzato) per il gruppo di sicurezza ha iniziali maiuscole, mentre il titolo è tutto in lettere minuscole. Nella console di Lookout usare la combinazione di maiuscole/minuscole di **Display Name** (Nome visualizzato) per il gruppo di sicurezza.
+    > Per il **nome visualizzato** viene fatta distinzione tra maiuscole e minuscole, come indicato nella pagina **Proprietà** del gruppo di sicurezza nel portale di Azure. Come illustrato nell'immagine seguente, il nome indicato in **Display Name** (Nome visualizzato) per il gruppo di sicurezza ha iniziali maiuscole, mentre il titolo è tutto in lettere minuscole. Nella console di Lookout usare la combinazione di maiuscole/minuscole di **Display Name** (Nome visualizzato) per il gruppo di sicurezza.
     >![screenshot del portale di Azure, servizio Azure Active Directory, pagina delle proprietà](./media/aad-group-display-name.png)
 
     >[!NOTE] 
@@ -131,7 +131,7 @@ Lookout Mobile Threat Defense usa vari tipi di classificazione per le minacce ai
 > I livelli di rischio rappresentano un aspetto importante di Mobile Threat Defense perché l'integrazione con Intune calcola la conformità dei dispositivi in base a questi livelli di rischio in fase di esecuzione. In altre parole, l'amministratore di Intune imposta una regola nei criteri per identificare un dispositivo come non conforme se presenta una minaccia attiva con un livello minimo di rischio: **alto**, **medio** o **basso**. Il calcolo di conformità dei dispositivi in Intune dipende direttamente dai criteri di classificazione delle minacce in Lookout Mobile Threat Defense.
 
 ## <a name="watching-enrollment"></a>Monitoraggio della registrazione
-Al termine della configurazione, Lookout Mobile Threat Defense inizia a eseguire il polling di Azure AD per i dispositivi corrispondenti ai gruppi di registrazione specificati.  Le informazioni sui dispositivi registrati sono disponibili nel modulo Devices (Dispositivi).  Per i dispositivi viene visualizzato lo stato iniziale in sospeso.  Lo stato del dispositivo cambia dopo l'installazione, l'apertura e l'attivazione nel dispositivo dell'app Lookout for Work.  Per informazioni dettagliate su come ottenere tramite push l'app Lookout for Work nel dispositivo, vedere l'argomento [Add Lookout for work apps with Intune](mtd-apps-ios-app-configuration-policy-add-assign.md) (Aggiungere app Lookout for Work con Intune).
+Al termine della configurazione, Lookout Mobile Threat Defense inizia a eseguire il polling di Azure AD per i dispositivi corrispondenti ai gruppi di registrazione specificati.  Le informazioni sui dispositivi registrati sono disponibili nel modulo Devices (Dispositivi).  Per i dispositivi viene visualizzato lo stato iniziale in sospeso.  Lo stato del dispositivo cambia dopo l'installazione, l'apertura e l'attivazione nel dispositivo dell'app Lookout for Work.  Per informazioni dettagliate su come ottenere l'app Lookout for Work nel dispositivo con push, vedere [Add Lookout for work apps with Intune](mtd-apps-ios-app-configuration-policy-add-assign.md) (Aggiungere app Lookout for Work con Intune).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -1,12 +1,12 @@
 ---
 title: Come monitorare i criteri di protezione delle app
-titleSuffix: Azure portal
-description: Vedere quanti utenti dispongono di criteri ed eseguire il drill-down per accedere ad altri dettagli."
+titleSuffix: Microsoft Intune
+description: "Monitorare lo stato di conformità dei criteri di gestione delle app per dispositivi mobili in Intune."
 keywords: 
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 100114552b05e131ff1d0d3e9e61ef08bcc2eea4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/25/2018
 **Se non ci si trova nel portale di Azure**, questo argomento spiega [come creare i criteri di protezione delle app](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) nel portale di Intune classico.
 
 
-È possibile monitorare lo stato di conformità dei criteri di gestione delle app mobili (MAM) applicati agli utenti nel pannello di protezione delle app di Intune nel [portale di Azure](https://portal.azure.com). Verranno visualizzate informazioni sugli utenti interessati dai criteri MAM, lo stato di conformità ed eventuali problemi riscontrati dagli utenti.
+Monitorare lo stato di conformità dei criteri di gestione delle app mobili (MAM) applicati agli utenti nel riquadro Protezione app di Intune nel [portale di Azure](https://portal.azure.com). Vengono visualizzate informazioni sugli utenti interessati dai criteri MAM, lo stato di conformità ed eventuali problemi riscontrati dagli utenti.
 
 Lo stato di conformità può essere monitorato in tre posizioni diverse:
 
@@ -39,12 +39,12 @@ Lo stato di conformità può essere monitorato in tre posizioni diverse:
 
 ## <a name="summary-view"></a>Visualizzazione di riepilogo
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
-4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Monitoraggio** > **Stato dell'utente con protezione delle app** per esaminare la visualizzazione di riepilogo:
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** scegliere **App per dispositivi mobili**.
+4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Monitoraggio** > **Stato di protezione dell'app** per esaminare la visualizzazione di riepilogo:
 
-![Riquadro Riepilogo del pannello Gestione di applicazioni mobili di Intune](./media/app-protection-user-status-summary.png)
+![Riquadro Riepilogo del riquadro Gestione di applicazioni mobili di Intune](./media/app-protection-user-status-summary.png)
 
 -   **Utenti**: numero totale di utenti dell'azienda che usano un'app associata a un criterio in un contesto aziendale.
 
@@ -61,7 +61,7 @@ Lo stato di conformità può essere monitorato in tre posizioni diverse:
 Per accedere alla visualizzazione dettagliata del riepilogo, scegliere il riquadro **Stato utente**, a seconda della piattaforma del sistema operativo del dispositivo, e il riquadro **Utenti contrassegnati**.
 
 ### <a name="user-status"></a>Stato utente
-È possibile eseguire la ricerca di un singolo utente e controllare il relativo stato di conformità. Il pannello **Segnalazione app** mostra le informazioni seguenti per un utente selezionato:
+È possibile eseguire la ricerca di un singolo utente e controllare il relativo stato di conformità. Il riquadro **Segnalazione app** visualizza le informazioni seguenti per un utente selezionato:
 - Dispositivi associati all'account utente
 
 - App con criteri MAM nel dispositivo
@@ -79,13 +79,13 @@ Per visualizzare i report generati per un utente, seguire questa procedura:
 
 1.  Per selezionare un utente, scegliere il riquadro **Riepilogo**.
 
-    ![Screenshot 3](./media/MAM-reporting-6.png)
+    ![Schermata che evidenzia il riquadro Riepilogo in Gestione di applicazioni mobili di Intune, pannello Impostazioni](./media/MAM-reporting-6.png)
 
-2. Nel pannello **Segnalazione app** che viene aperto scegliere **Seleziona utente** per cercare un utente di Azure Active Directory.
+2. Nel riquadro **Segnalazione app** che viene aperto scegliere **Selezionare l'utente** per cercare un utente di Azure Active Directory.
 
-    ![Opzione Selezione utente nel pannello Segnalazione app](./media/MAM-reporting-2.png)
+    ![Schermata che evidenzia l'opzione che consente di selezionare l'utente nel riquadro Segnalazione app](./media/MAM-reporting-2.png)
 
-3. Selezionare un utente nell'elenco. Verranno visualizzati i dettagli dello stato di conformità per l'utente.
+3. Selezionare un utente nell'elenco. È possibile visualizzare i dettagli dello stato di conformità per l'utente.
 
 ### <a name="flagged-users"></a>Utenti contrassegnati
 Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a cui si è eseguito l'accesso quando si è verificato l'errore, la piattaforma del sistema operativo del dispositivo interessato e un timestamp.
@@ -94,7 +94,7 @@ Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a 
 
 Sono visualizzati gli stessi rapporti della visualizzazione dettagliata e ulteriori rapporti relativi allo stato di conformità dei criteri MAM:
 
-![Screenshot-4](./media/MAM-reporting-7.png)
+![Schermata che evidenzia 2 report disponibili nel riquadro Impostazioni](./media/MAM-reporting-7.png)
 
 -   **App protection user report** (Rapporto utente protezione app): offre le stesse informazioni del rapporto **Stato utente** descritte nella sezione precedente relativa alla visualizzazione dettagliata .
 
@@ -110,7 +110,7 @@ Sono visualizzati gli stessi rapporti della visualizzazione dettagliata e ulteri
 
         -   Tutte le app sono archiviate, ma non ricevono alcun criterio MAM.
 
-![Screenshot-2](./media/MAM-reporting-4.png)
+![Schermata che illustra il pannello Segnalazione app di un utente con una tabella dei dettagli di 3 app registrate](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Raggruppamento tabelle
 
@@ -125,13 +125,13 @@ Dopo la visualizzazione dei dati del **report utente sulla protezione delle app*
 
 Seguire questi passaggi per generare il report sulla protezione delle app:
 
-1. Nel pannello Gestione di applicazioni mobili di Intune scegliere il report sulla protezione delle app.
+1. Nel pannello Gestione di applicazioni mobili di Intune scegliere **Report protezione app**.
 
-    ![Screenshot 6](./media/app-protection-report-csv-2.png)
+    ![Schermata che evidenzia il collegamento di download per la protezione app nel riquadro Gestione di applicazioni mobili di Intune](./media/app-protection-report-csv-2.png)
 
 2. Scegliere Sì per salvare il report, quindi scegliere Salva con nome e selezionare la cartella in cui eseguire il salvataggio.
 
-    ![Screenshot 7](./media/app-protection-report-csv-1.png)
+    ![Schermata della finestra di conferma Salva report](./media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Vedere anche
 [Gestire il trasferimento di dati tra app iOS](data-transfer-between-apps-manage-ios.md)

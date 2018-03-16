@@ -1,12 +1,12 @@
 ---
 title: Impostazioni dei criteri di protezione delle app per Android
-titlesuffix: Azure portal
-description: Questo argomento descrive le impostazioni dei criteri di protezione delle app per dispositivi Android."
+titlesuffix: Microsoft Intune
+description: Questo argomento descrive le impostazioni dei criteri di protezione delle app per dispositivi Android.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10c09b4669371fbb61ad4d30f44fcaf5e2db3482
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per Android
-Le impostazioni dei criteri descritte in questo argomento possono essere [configurate](app-protection-policies.md) per il criterio di protezione delle app nel pannello **Impostazioni** del portale di Azure.
+Questo argomento descrive le impostazioni dei criteri di protezione delle app per dispositivi Android. Le impostazioni dei criteri descritte possono essere [configurate](app-protection-policies.md) per i criteri di protezione delle app nel pannello **Impostazioni** del portale di Azure.
 Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione dei dati e impostazioni di accesso. In questo argomento il termine *app gestite da criteri* si riferisce alle app configurate con criteri di protezione delle app.
 
 ##  <a name="data-relocation-settings"></a>Impostazioni di rilocazione dei dati
@@ -30,7 +30,7 @@ Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione d
 | Impostazione | Uso | Valori predefiniti |
 |------|------|------|
 | **Impedisci backup in Android** | Scegliere **Sì** per impedire all'app di eseguire il backup di dati aziendali o dell'istituto di istruzione nel [servizio di backup Android](https://developer.android.com/google/backup/index.html). Scegliere **No** per consentire all'app di eseguire il backup di dati aziendali o dell'istituto di istruzione.| Sì |
-| **Consenti all'app di trasferire i dati ad altre app** | Specificare le app da cui questa app può ricevere dati: <ul><li> **App gestite da criteri**: consente il trasferimento solo ad altre app gestite da criteri.</li> <li>**Tutte le app**: consente il trasferimento a qualsiasi app. </li> <li>**Nessuna**: non consente il trasferimento a nessuna app, incluse le altre app gestite da criteri.</li></ul> <p>Esistono alcuni servizi e app esenti ai quali Intune può consentire il trasferimento dei dati. Vedere [Esenzioni per il trasferimento dei dati](#Data-transfer-exemptions) per un elenco completo di app e servizi.<p>**Nota:** Intune attualmente non supporta la funzionalità Android Instant Apps. Intune blocca qualsiasi connessione dati da o verso l'app.  Per altre informazioni su [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) vedere la documentazione per sviluppatori di Android.</p>| Tutte le app |
+| **Consenti all'app di trasferire i dati ad altre app** | Specificare le app da cui questa app può ricevere dati: <ul><li> **App gestite da criteri**: consente il trasferimento solo ad altre app gestite da criteri.</li> <li>**Tutte le app**: consente il trasferimento a qualsiasi app. </li> <li>**Nessuna**: non consente il trasferimento a nessuna app, incluse le altre app gestite da criteri.</li></ul> <p>Esistono alcuni servizi e app esenti ai quali Intune può consentire il trasferimento dei dati per impostazione predefinita. È anche possibile creare le proprie esenzioni se è necessario consentire il trasferimento dei dati a un'app che non supporta i criteri di protezione delle app di Intune. Per altre informazioni, vedere [Esenzioni per il trasferimento dei dati](#Data-transfer-exemptions).<p>**Nota:** Intune attualmente non supporta la funzionalità Android Instant Apps. Intune blocca qualsiasi connessione dati da o verso l'app.  Per altre informazioni su [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) vedere la documentazione per sviluppatori di Android.</p>| Tutte le app |
 | **Consenti all'app di ricevere i dati da altre app** | Specificare le app che possono trasferire dati a questa app: <ul><li>**App gestite da criteri**: consente il trasferimento solo da altre app gestite da criteri.</li><li>**Tutte le app**: consente il trasferimento dei dati da qualsiasi app.</li><li>**Nessuna**: non consente il trasferimento da alcuna app, incluse le altre app gestite da criteri. </li></ul> <p>Esistono alcuni servizi e app esenti, dai quali Intune può consentire il trasferimento dei dati. Vedere [Esenzioni per il trasferimento dei dati](#Data-transfer-exemptions) per un elenco completo di app e servizi. | Tutte le app |
 | **Impedisci "Salva con nome"** | Scegliere **Sì** per disabilitare l'uso dell'opzione Salva con nome in questa app. Scegliere **No** per consentire l'uso di Salva con nome. <p><br>**Selezionare i servizi di archiviazione in cui è possibile salvare i dati aziendali** <br>Gli utenti possono salvare nei servizi selezionati (OneDrive for Business, SharePoint e archiviazione locale). Tutti gli altri servizi verranno bloccati.</p> | No <br><br> 0 selezionato |
 | **Limita le operazioni taglia, copia e incolla con le altre app** | Specificare quando è possibile usare le azioni taglia, copia e incolla con questa app. È possibile scegliere tra: <ul><li>**Bloccato**: non consente le azioni taglia, copia e incolla tra questa app e altre app.</li><li>**App gestite da criteri**: consente le azioni taglia, copia e incolla tra questa app e altre app gestite da criteri.</li><li>**App gestite da criteri con Incolla in**: consente le azioni taglia o copia tra questa app e altre app gestite da criteri. I dati da qualsiasi app possono essere incollati in questa app.</li><li>**Qualsiasi app**: nessuna restrizione per le azioni taglia, copia e incolla in e da questa app. | Qualsiasi app |
@@ -73,7 +73,7 @@ Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione d
   | com.android.providers.media | Provider di contenuti multimediali Android | Il provider di contenuti multimediali è consentito solo per l'azione di selezione della suoneria. |
   | com.google.android.gms; com.google.android.gsf | Pacchetti di Google Play Services | Questi pacchetti sono consentiti per le azioni di Google Cloud Messaging, ad esempio per le notifiche push. |
 
-
+Per altre informazioni, vedere [Eccezioni dei criteri di trasferimento dei dati per le app](app-protection-policies-exception.md). 
 
 ##  <a name="access-settings"></a>Impostazioni di accesso
 

@@ -1,12 +1,12 @@
 ---
 title: Come aggiungere app in Microsoft Intune
-titlesuffix: Azure portal
-description: Queste procedure consentono di ottenere in Intune app pronte per l'assegnazione a utenti e dispositivi. "
+titlesuffix: 
+description: Informazioni su come aggiungere app in Microsoft Intune, in modo da poterle assegnare a utenti e dispositivi. Intune supporta un'ampia gamma di tipi diversi di app.
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 91762eafbba5f96ce04f3ffd4d83f63434a3ac74
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Come aggiungere un'app a Microsoft Intune
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/14/2018
 Prima di poter assegnare, monitorare, configurare o proteggere le app è necessario aggiungerle a Intune. Intune supporta un'ampia gamma di tipi diversi di app. Le opzioni disponibili variano per ogni tipo di app.
 
 Intune consente di aggiungere e assegnare i tipi di app seguenti:
-| Tipo di app                                  | Installazione                                                                  | Updates                       |
+| Tipo di app                                  | Installazione                                                                  | Aggiornamenti                       |
 |------------------------------------------ |----------------------------------------------------------------------------   |---------------------------    |
 | App sul Web                           | Intune crea un collegamento all'app Web nella schermata iniziale del dispositivo          | Gli aggiornamenti dell'app sono automatici     |
 | App sviluppate internamente (line-of-business)  | Intune installa l'app nel dispositivo (è necessario fornire il file di installazione)    | È necessario aggiornare l'app       |
@@ -121,8 +121,8 @@ I requisiti dello spazio di archiviazione nel cloud sono i seguenti:
 Le categorie di app consentono di ordinare le app in modo da consentire agli utenti di trovarle più facilmente nel portale aziendale. È possibile assegnare una o più categorie a un'app, ad esempio **App per sviluppatori** o **App di comunicazione**.
 Quando si aggiunge un'app in Intune, è possibile selezionare la categoria desiderata. Usare gli argomenti specifici della piattaforma per aggiungere un'app e assegnare le categorie. Per creare e modificare le categorie, usare la procedura seguente:
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
 4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Installazione** > **Categorie di app**.
 5. Nel pannello **Categorie di app** viene visualizzato un elenco delle categorie correnti. Scegliere una delle azioni seguenti:
@@ -142,7 +142,7 @@ Per informazioni su come aggiungere a Intune app per ciascuna piattaforma, scegl
 - [App di Android Store](store-apps-android.md)
 - [App di Android LOB](lob-apps-android.md)
 - [App di iOS Store](store-apps-ios.md)
-- [App di iOS LOB](lob-apps-ios.md)
+- [App line-of-business iOS](lob-apps-ios.md)
 - [App Web (per tutte le piattaforme)](web-app.md)
 - [App di Windows Phone 8.1 Store](store-apps-windows-phone-8-1.md)
 - [Applicazioni line-of-business di Windows Phone](lob-apps-windows-phone.md)

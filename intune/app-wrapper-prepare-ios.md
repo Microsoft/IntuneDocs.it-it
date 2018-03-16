@@ -1,11 +1,11 @@
 ---
 title: Eseguire il wrapping delle app iOS con lo strumento di wrapping delle app di Intune
-description: Usare le informazioni in questo argomento per informazioni su come eseguire il wrapping delle app iOS senza modificare il codice dell'app stessa. Preparare le app in modo da applicare i criteri di gestione delle app mobili.
+description: Informazioni su come eseguire il wrapping delle app iOS senza modificarne il codice. Preparare le app in modo da applicare i criteri di gestione delle app mobili.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4925fc86596437d0560bd7fa2598eaf95126df16
-ms.sourcegitcommit: cede2e15bd62f1073131fbc9af7623cdfc3730cf
+ms.openlocfilehash: c9329c25d6211149102c06b44fdb6d6222b13550
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app iOS per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -149,7 +149,7 @@ Per altre informazioni sulla distribuzione di app iOS internamente per gli utent
 
 2. Fare clic su **Certificates, IDs & Profiles** (Certificati, ID e profili).
 
-3. Fare clic sulla scheda ![segno più nel portale per sviluppatori Apple](./media/iOS-signing-cert-2.png) nell'angolo in alto a destra per aggiungere un profilo di provisioning iOS.
+3. Fare clic su ![segno più nel portale per sviluppatori Apple](./media/iOS-signing-cert-2.png) nell'angolo in alto a destra per aggiungere un profilo di provisioning iOS.
 
 4. Scegliere **In House** (Interna) in **Distribution** (Distribuzione) per creare un profilo di provisioning interno.
 

@@ -1,12 +1,12 @@
 ---
-title: Installare le app di Office 365 nei dispositivi mobili usando Intune
-titlesuffix: Azure portal
-description: "Informazioni su come usare Intune per renderne più semplice l'installazione delle app di Office 365 nei dispositivi Windows 10."
+title: Installare le app di Office 365 nei dispositivi usando Microsoft Intune
+titlesuffix: 
+description: "Informazioni su come usare Microsoft Intune per rendere più semplice l'installazione delle app di Office 365 nei dispositivi Windows 10."
 keywords: 
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Come assegnare le app di Office 365 ProPlus ai dispositivi Windows 10 con Microsoft Intune
 
@@ -85,11 +85,11 @@ In questo passaggio configurare le opzioni di installazione per la suite di app.
 1.  Nel pannello **Aggiungi app** scegliere **App Suite Settings** (Impostazioni suite di app).
 2.  Nel pannello **App Suite Settings** (Impostazioni suite di app) specificare le informazioni seguenti:
     - **Versione di Office**: scegliere se assegnare la versione a 32 bit o a 64 bit di Office. La versione a 32 bit può essere installata su dispositivi a 32 bit e a 64 bit, mentre la versione a 64 bit può essere installata solo su dispositivi a 64 bit.
-    - **Canale di aggiornamento**: scegliere la modalità di aggiornamento di Office nei dispositivi. Per informazioni sui diversi canali di aggiornamento, vedere Panoramica dei canali di aggiornamento per Office 365 ProPlus. È possibile scegliere tra:
-        - **Current** (Corrente)
-        - **Deferred** (Rinviato)
-        - **First Release Current** (Prima versione corrente)
-        - **First Release Deferred** (Prima versione rinviata)
+    - **Canale di aggiornamento**: scegliere la modalità di aggiornamento di Office nei dispositivi. Per informazioni sui diversi canali di aggiornamento, vedere [Panoramica dei canali di aggiornamento per Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Scegliere tra:
+        - **Monthly** (Mensile)
+        - **Monthly (Targeted)** (Mensile - mirato)
+        - **Semi-Annual** (Semestrale)
+        - **Semi-Annual (Targeted)** (Semestrale - mirato)
     - **Automatically accept the app end user license agreement** (Accetta automaticamente il contratto di licenza con l'utente finale): selezionare questa opzione se non si richiede agli utenti finali di accettare il contratto di licenza. Intune accetterà automaticamente il contratto.
     - **Use shared computer activation** (Usa attivazione di computer condivisi): l'attivazione di computer condivisi viene usata quando più utenti condividono un computer. Per altre informazioni, vedere Panoramica dell'attivazione di computer condivisi per Office 365 ProPlus.
     - **Lingue**: Office viene installato automaticamente in tutte le lingue supportate installate con Windows nel dispositivo dell'utente finale. Selezionare questa opzione se si vuole installare lingue aggiuntive con la suite di app.

@@ -1,12 +1,11 @@
 ---
-title: Creare profili di configurazione dei dispositivi in Intune
-titlesuffix: Azure portal
-description: Informazioni su come creare profili di configurazione dei dispositivi in Intune."
+title: Creare profili di dispositivo in Microsoft Intune - Azure | Microsoft Docs
+description: Aggiungere o configurare un profilo di dispositivo in Microsoft Intune eseguendo la selezione del tipo di piattaforma e la configurazione delle impostazioni nel portale di Azure
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,28 +14,38 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5afc6896883e6be67780c2314107c15633fd237a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c40fd13a46a61ec0ee05efba7ece7653f5de90ca
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>Come creare profili di configurazione del dispositivo in Microsoft Intune
+# <a name="create-a-device-profile-in-microsoft-intune"></a>Creare un profilo di dispositivo in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+## <a name="create-the-profile"></a>Creare il profilo
+1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi** e cercare **Microsoft Intune**.
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
-2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
-2. Nel pannello contenente l'elenco dei profili scegliere **Crea profilo**.
-3. Nel pannello **Crea profilo** specificare gli elementi seguenti:
+2. In **Microsoft Intune** selezionare **Configurazione del dispositivo**, selezionare **Profili** e quindi fare clic su **Crea profilo**.
+
+3. Immettere le seguenti proprietà: 
+
     - **Nome**: immettere un nome descrittivo per il nuovo profilo.
-    - **Descrizione**: immettere una descrizione facoltativa per il profilo.
-    - **Piattaforma**: selezionare il tipo di piattaforma per il profilo che si desidera creare.
-    - **Tipo di profilo**: selezionare il tipo di profilo che si desidera creare. L'elenco dei tipi disponibili varia in base alla piattaforma scelta.
-    - **Impostazioni**: vedere gli argomenti seguenti per informazioni sulle impostazioni per ogni tipo di profilo:
+    - **Descrizione**: facoltativa ma consigliata. Immettere una descrizione del profilo.
+    - **Piattaforma**: selezionare il tipo di piattaforma:  
+
+        - **Android**
+        - **Android for Work**
+        - **iOS**
+        - **macOS**
+        - **Windows Phone 8.1**
+        - **Windows 8.1 e versioni successive**
+        - **Windows 10 e versioni successive**
+
+    - **Tipo di profilo**: selezionare il tipo di profilo che si vuole creare. L'elenco dipende dalla piattaforma scelta.
+    - **Impostazioni**: gli argomenti seguenti descrivono le impostazioni per ogni tipo di profilo:
+
         -  [Impostazioni delle funzionalità dei dispositivi](device-features-configure.md)
         -  [Device restriction settings](device-restrictions-configure.md) (Impostazioni relative alle restrizioni dei dispositivi)
         -  [Email settings](email-settings-configure.md) (Impostazioni di posta elettronica)
@@ -48,12 +57,12 @@ ms.lasthandoff: 01/25/2018
         -  [Education settings](education-settings-configure.md) (Impostazioni di Education)
         -  [Custom settings](custom-settings-configure.md) (Impostazioni personalizzate)
 
-    ![Creare un profilo del dispositivo](./media/create-device-profile.png)
-4. Dopo aver terminato di configurare le impostazioni, nel pannello **Crea profilo** scegliere **Crea**.
+    ![Immettere le impostazioni per creare un profilo di dispositivo](./media/create-device-profile.png)
 
-Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
-Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
+4. Al termine selezionare **Crea**. 
+
+Il profilo viene creato e quindi visualizzato nell'elenco. Per assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
 
 
-### <a name="next-steps"></a>Passaggi successivi
-Vedere [Come assegnare i profili di dispositivo con Microsoft Intune](device-profile-assign.md) per informazioni sull'assegnazione dei profili di dispositivo.
+## <a name="next-steps"></a>Passaggi successivi
+Per assegnare profili di dispositivo, vedere [Come assegnare i profili di dispositivo con Microsoft Intune](device-profile-assign.md).

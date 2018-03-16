@@ -1,7 +1,7 @@
 ---
-title: Log dei criteri di protezione dell'app
-titlesuffix: Azure portal
-description: Questo argomento descrive le impostazioni dei criteri di protezione delle app registrate nei log delle app.
+title: Esaminare i log dei criteri di protezione delle app
+titlesuffix: Microsoft Intune
+description: "In questo articolo vengono descritte le impostazioni che è possibile esaminare nei log di protezione delle app."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76b7771f974fb1c9a5de8afe52ef79eaa0ed0c2a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="review-client-app-protection-logs"></a>Esaminare i log di protezione delle app client
 
-È possibile accedere ai log abilitando la modalità di diagnostica di Intune per un'app presente in un client per dispositivi mobili. La tabella seguente contiene il nome e una spiegazione delle impostazioni registrate nel log.
+In questo articolo vengono descritte le impostazioni che è possibile esaminare nei log di protezione delle app. È possibile accedere ai log abilitando la modalità di diagnostica di Intune per un'app presente in un client per dispositivi mobili. La tabella seguente contiene il nome e una spiegazione delle impostazioni registrate nel log.
 
 ## <a name="app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app
 

@@ -1,31 +1,30 @@
 ---
-title: "Criteri di conformità dei dispositivi Intune"
-titleSuffix: Azure portal
-description: "Usare questo argomento per informazioni sulla conformità dei dispositivi in Microsoft Intune\""
+title: "Criteri di conformità dei dispositivi in Microsoft Intune"
+titleSuffix: 
+description: "Informazioni sulla conformità dei dispositivi in Microsoft Intune"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 9e3a7bdf3ddf6ad77a82ac6dc7075d696fbe6497
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>Introduzione ai criteri conformità dei dispositivi Intune
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Introduzione ai criteri di conformità dei dispositivi in Microsoft Intune
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="what-is-device-compliance-in-intune"></a>Che cos'è la conformità dei dispositivi in Intune?
-
-I criteri di conformità dei dispositivi Intune definiscono le regole e le impostazioni che un dispositivo deve soddisfare per essere considerato conforme da Intune.
+I criteri di conformità dei dispositivi di Intune definiscono le regole e le impostazioni che un dispositivo deve soddisfare per essere considerato conforme da Intune.
 
 Sono incluse le regole seguenti:
 
@@ -43,7 +42,7 @@ Sono incluse le regole seguenti:
 
 È anche possibile usare questi criteri per monitorare lo stato di conformità nei dispositivi.
 
-### <a name="device-compliance-requirements"></a>Requisiti di conformità del dispositivo
+## <a name="device-compliance-requirements"></a>Requisiti di conformità del dispositivo
 
 I requisiti di conformità sono essenzialmente regole quali la richiesta di un PIN per il dispositivo o la crittografia che è possibile specificare come obbligatoria o non obbligatoria in base ai criteri di conformità.
 
@@ -110,7 +109,7 @@ Se a un dispositivo sono stati assegnati più profili di configurazione e il dis
 |---------|---------|
 |Pending     |1|
 |Operazione completata     |2|
-|Failed     |3|
+|Operazione non riuscita     |3|
 |Errore     |4|
 
 Uno stato risultante di due o più profili di configurazione viene quindi assegnato selezionando il livello di gravità più alto di tutti i profili assegnati a un dispositivo.
@@ -191,7 +190,7 @@ Per sfruttare le nuove funzionalità correlate alla conformità dei dispositivi 
 - Creare criteri di conformità dei dispositivi per le piattaforme seguenti:
 
    - [Android](compliance-policy-create-android.md)
-   - [Android for work](compliance-policy-create-android-for-work.md)
+   - [Android for Work](compliance-policy-create-android-for-work.md)
    - [iOS](compliance-policy-create-ios.md)
    - [macOS](compliance-policy-create-mac-os.md)
    - [Windows](compliance-policy-create-windows.md)

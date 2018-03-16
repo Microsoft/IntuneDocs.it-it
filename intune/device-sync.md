@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f784143535188c6bee2082c5717b752f08c5490
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Sincronizzare i dispositivi con Intune per ottenere i criteri e le azioni più recenti
 
@@ -37,17 +37,17 @@ L'azione del dispositivo **Sincronizza** forza il dispositivo selezionato a eseg
 
 ## <a name="how-to-sync-a-device"></a>Come sincronizzare un dispositivo
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
-4. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.
-5. Nell'elenco dei dispositivi gestiti scegliere un dispositivo e quindi scegliere l'azione remota **Sincronizza**.
+4. Nel pannello **Dispositivi** scegliere **Tutti i dispositivi**.
+5. Nell'elenco dei dispositivi gestiti scegliere un dispositivo, scegliere **Altro** e quindi scegliere l'azione remota **Sincronizza**.
 7. Scegliere **Sì** per confermare l'azione.
 
 
 ## <a name="retriable-error-codes"></a>Codici di errore con possibilità di ritentare
 
-Quando un amministratore esegue l'azione **Sincronizzazione** per il dispositivo, le app iOS e Android per le quali l'azione non è riuscita e che hanno generato un codice di errore con possibilità di ritentare risultano disponibili per il dispositivo. Invece le app che hanno generato un codice di errore senza possibilità di ritentare vengono rese disponibili al dispositivo dopo sette giorni.
+Quando un amministratore esegue l'azione **Sincronizzazione** per il dispositivo, le app iOS e Android per le quali l'azione non è riuscita e che hanno generato un codice di errore con possibilità di riprovare risultano disponibili per il dispositivo. Invece le app che hanno generato un codice di errore senza possibilità di ritentare vengono rese disponibili al dispositivo dopo sette giorni.
 
 
 | Codice di errore  | Descrizione suggerita                                                                                                                  | Con possibilità di ritentare |

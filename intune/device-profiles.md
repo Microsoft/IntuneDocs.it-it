@@ -1,12 +1,11 @@
 ---
-title: Che cosa sono i profili di dispositivo in Microsoft Intune?
-titlesuffix: Azure portal
-description: "Informazioni sui profili di dispositivo Intune e sulle modalità di gestione e protezione dei dispositivi nell'azienda.\""
+title: Profili di dispositivo in Microsoft Intune - Azure | Microsoft Docs
+description: "Panoramica dei diversi profili di dispositivo di Microsoft Intune, che include funzionalità, restrizioni, posta elettronica, Wi-Fi, VPN, Education, certificati, aggiornamento a Windows 10, BitLocker e Windows Defender, Windows Information Protection e impostazioni di configurazione del dispositivo personalizzate nel portale di Azure. Usare questi profili per proteggere i dati e i dispositivi aziendali."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/23/2017
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,75 +14,125 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c745f9f745802e0de7a58e3dd7570c0e363ab5d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 79ca6eaf22233dd6d024a28e456e57a8a74d02aa
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Informazioni sui profili di dispositivo in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Usare il carico di lavoro **Configurazione del dispositivo** di Microsoft Intune per gestire impostazioni e funzionalità in tutti i dispositivi gestiti. Questo carico di lavoro viene usato principalmente per creare profili di dispositivo, che consentono di gestire e controllare una vasta gamma di funzionalità dei dispositivi.
+Microsoft Intune include impostazioni e funzionalità che è possibile abilitare o disabilitare in dispositivi diversi all'interno dell'organizzazione. Queste impostazioni e funzionalità vengono gestite usando i profili. Di seguito sono riportati alcuni esempi di profili: 
 
-Quando si apre questo carico di lavoro, vengono visualizzate le opzioni seguenti:
+- Un profilo Wi-Fi che consente a dispositivi diversi l'accesso alla rete Wi-Fi aziendale
+- Un profilo VPN che consente a dispositivi diversi l'accesso al server VPN nella rete aziendale
 
-- **Overview** (Panoramica): questa pagina offre stato e report che consentono di monitorare le configurazioni del dispositivo assegnate a utenti e dispositivi.
-- **Manage Profiles** (Gestione profili): questa sezione consente di creare profili di configurazione per i dispositivi. Più avanti in questo argomento è presente un elenco di tutti i tipi di profilo che è possibile creare.
-- **Setup Certificate Authority** (Configurazione autorità di certificazione): questo flusso di lavoro guida l'utente nella procedura necessaria per configurare i profili certificato di Intune.
+In questo argomento viene offerta una panoramica dei diversi profili che è possibile creare per i dispositivi. Usare questi profili per autorizzare o bloccare determinate funzionalità nei dispositivi.
 
-## <a name="getting-started"></a>Guida introduttiva
+## <a name="before-you-begin"></a>Prima di iniziare
+Per visualizzare le funzionalità disponibili, aprire il [portale di Azure](https://portal.azure.com) e quindi aprire la risorsa di Intune. 
 
-Il flusso di lavoro per la creazione di profili di dispositivo è simile per tutti i profili. Per informazioni, leggere [Come creare profili di configurazione del dispositivo in Microsoft Intune](device-profile-create.md). Continuare a leggere per informazioni specifiche sulla creazione delle impostazioni per ogni tipo di profilo.
+**Configurazione del dispositivo** include le opzioni seguenti:
 
-Nei dispositivi è possibile gestire le funzionalità seguenti:
+- **Panoramica**: elenca lo stato dei profili e offre dettagli aggiuntivi sui profili assegnati a utenti e dispositivi
+- **Gestisci**: consente di creare profili di dispositivo e caricare [script PowerShell](intune-management-extension.md) personalizzati da eseguire all'interno del profilo
+- **Monitoraggio**: consente di verificare lo stato di un profilo e le operazioni riuscite e non riuscite, nonché di visualizzare i log per i profili
+- **Installazione**: consente di aggiungere un'autorità di certificazione (SCEP o PFX) o di attivare Gestione delle spese per telecomunicazioni per il profilo
 
-## <a name="device-features"></a>Funzionalità del dispositivo
+## <a name="create-the-profile"></a>Creare il profilo
 
-Funzionalità del dispositivo consente di controllare le funzionalità dei dispositivi iOS e macOS come AirPrint, le notifiche e le configurazioni dei dispositivi condivisi.
-Per altre informazioni, vedere [Come configurare le impostazioni relative alle funzionalità dei dispositivi](device-features-configure.md). Supporta: iOS e macOS.
+[Creare un profilo del dispositivo](device-profile-create.md) visualizza istruzioni dettagliate per creare un profilo. 
 
-## <a name="device-restrictions"></a>Limitazioni del dispositivo
-Le restrizioni dei dispositivi consentono di controllare numerose impostazioni dei dispositivi gestiti per numerose categorie, ad esempio le impostazioni relative alla sicurezza, all'hardware e alla condivisione dei dati. Ad esempio, è possibile creare un profilo di restrizione dei dispositivi che impedisce agli utenti di dispositivi iOS di accedere alla fotocamera.
-Per altre informazioni, vedere [Come configurare le impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune](device-restrictions-configure.md). Sistemi operativi supportati: Android, iOS, Mac OS, Windows 10 e Windows 10 Team.
+## <a name="device-features-profile"></a>Profilo Funzionalità del dispositivo
 
-## <a name="email"></a>Posta elettronica
-I profili di posta elettronica consentono di creare, assegnare e monitorare le impostazioni di posta elettronica di Exchange ActiveSync nei dispositivi gestiti. I profili di posta elettronica garantiscono coerenza e consentono di ridurre le chiamate al supporto. Grazie ad essi, poi, gli utenti finali possono accedere alla posta elettronica aziendale dai dispositivi personali senza alcuna configurazione manuale.
-Per altre informazioni, vedere [Come configurare le impostazioni di posta elettronica in Microsoft Intune](email-settings-configure.md). Sistemi operativi supportati: Android, iOS, Windows Phone 8.1 e Windows 10.
+[Funzionalità del dispositivo](device-features-configure.md) consente di gestire le funzionalità dei dispositivi iOS e macOS, come AirPrint, le notifiche e le configurazioni dei dispositivi condivisi.
 
-## <a name="wi-fi"></a>Wi-Fi
-Usare i profili Wi-Fi per assegnare le impostazioni di rete wireless agli utenti e ai dispositivi dell'organizzazione. Quando si assegna un profilo Wi-Fi, gli utenti hanno accesso alla rete Wi-Fi aziendale senza doverla configurare.
-Per altre informazioni, vedere [Come configurare le impostazioni Wi-Fi](wi-fi-settings-configure.md). Sistemi operativi supportati: Android, iOS, macOS e Windows 8.1 (solo importazione).
+Questa funzionalità supporta:  
+- iOS 
+- macOS
 
-## <a name="vpn"></a>Connessione
-Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla rete aziendale. I dispositivi usano un profilo di connessione VPN per stabilire una connessione con il server VPN. Assegnare profili VPN agli utenti e ai dispositivi dell'organizzazione in modo che possano connettersi in modo facile e sicuro alla rete.
-Per altre informazioni, vedere [How to configure VPN settings](vpn-settings-configure.md) (Come configurare le impostazioni VPN).
-Sistemi operativi supportati: Android, iOS, Mac OS, Windows Phone 8.1, Windows 8.1 e Windows 10.
+## <a name="device-restrictions-profile"></a>Profilo Limitazioni del dispositivo
+[Limitazioni del dispositivo](device-restrictions-configure.md) consente di gestire la protezione, l'hardware, la condivisione dei dati e altre impostazioni nei dispositivi. Ad esempio è possibile creare un profilo di limitazioni del dispositivo che impedisce agli utenti di dispositivi iOS di usare la fotocamera. 
 
-## <a name="education"></a>Istruzione
-Consente di configurare le opzioni per l'app Test ed esami di Windows. Quando si configurano queste opzioni, nessun'altra app può essere eseguita sul dispositivo finché il test non è completato.
-Per altre informazioni, vedere [Come configurare le impostazioni relative alla formazione](education-settings-configure.md).
+Questa funzionalità supporta: 
 
-## <a name="certificates"></a>Certificati
-Questo tipo di profilo consente di configurare certificati attendibili SCEP e PKCS, da assegnare ai dispositivi e usati per autenticare i profili Wi-Fi, VPN e di posta elettronica.
-Per altre informazioni, vedere [Come configurare i certificati](certificates-configure.md). Sistemi operativi supportati: Android, iOS, Windows Phone 8.1, Windows 8.1 e Windows 10.
+- Android
+- iOS
+- macOS
+- Windows 10
+- Windows 10 Team
 
-## <a name="edition-upgrade"></a>Aggiornamento dell'edizione
-Questo tipo di profilo consente di aggiornare automaticamente i dispositivi che eseguono alcune versioni di Windows 10 a un'edizione più recente.
-Per altre informazioni, vedere [Come configurare gli aggiornamenti edizione di Windows 10](edition-upgrade-configure-windows-10.md). Sistemi operativi supportati: solo Windows 10.
+## <a name="email-profile"></a>Profilo di posta elettronica
+Il profilo [Impostazioni di posta elettronica](email-settings-configure.md) consente di creare, assegnare e gestire le impostazioni di posta elettronica Exchange ActiveSync nei dispositivi. I profili di posta elettronica garantiscono coerenza e consentono di ridurre le chiamate al supporto. Grazie ad essi gli utenti finali possono accedere alla posta elettronica aziendale dai dispositivi personali senza alcuna configurazione manuale. 
 
-## <a name="endpoint-protection"></a>Endpoint Protection
-Questo tipo di profilo consente di configurare le impostazioni di BitLocker e Windows Defender per i dispositivi Windows 10.
-Per altre informazioni, vedere [Endpoint protection settings for Windows 10 and later](endpoint-protection-windows-10.md) (Impostazioni di Endpoint Protection per Windows 10 e versioni successive). Sistemi operativi supportati: solo Windows 10.
+Questa funzionalità supporta: 
 
-## <a name="windows-information-protection"></a>Windows Information Protection
-Windows Information Protection offre protezione dalla perdita di dati senza interferire con l'esperienza del dipendente. Consente inoltre di proteggere le app e i dati aziendali da perdite di dati accidentali su dispositivi di proprietà dell'azienda e dispositivi personali che i dipendenti portano a lavoro senza richiedere modifiche per l'ambiente o altre app.
-Per altre informazioni, vedere [How to configure Windows Information Protection](windows-information-protection-configure.md) (Come configurare Windows Information Protection). Supporta: solo Windows 10.
+- Android
+- iOS
+- Windows Phone 8.1
+- Windows 10
 
-## <a name="custom"></a>Custom
-Le impostazioni personalizzate consentono di assegnare ai dispositivi impostazioni non integrate in Intune. Ad esempio, sui dispositivi Android è possibile specificare valori URI OMA che consentono di configurare il dispositivo. Per i dispositivi iOS è possibile importare un file di configurazione creato in Apple Configurator.
-Per altre informazioni, vedere [How to configure custom settings](custom-settings-configure.md) (Come configurare impostazioni personalizzate). Sistemi operativi supportati: Android, iOS, macOS e Windows 8.1 (solo importazione).
+## <a name="wi-fi-profile"></a>Profilo Wi-Fi
+[Impostazioni Wi-Fi](wi-fi-settings-configure.md) assegna le impostazioni di rete wireless a utenti e dispositivi. Quando si assegna un profilo Wi-Fi, gli utenti dispongono dell'accesso alla rete Wi-Fi aziendale senza doverlo configurare. 
 
-## <a name="next-steps"></a>Passaggi successivi
-Scegliere uno dei tipi di profilo dall'elenco per iniziare la configurazione dei dispositivi.
+Questa funzionalità supporta: 
+
+- Android
+- iOS
+- macOS
+- Windows 8.1 (solo importazione)
+
+## <a name="vpn-profile"></a>Profilo VPN
+[Impostazioni VPN](vpn-settings-configure.md) assegna le impostazioni VPN agli utenti e ai dispositivi dell'organizzazione in modo che possano connettersi in modo facile e sicuro alla rete. 
+
+Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla rete aziendale. I dispositivi usano un profilo di connessione VPN per stabilire una connessione con il server VPN. 
+
+Questa funzionalità supporta: 
+
+- Android
+- iOS
+- macOS
+- Windows Phone 8.1
+- Windows 8.1
+- Windows 10
+
+## <a name="education-profile"></a>Profilo Education
+Le [impostazioni Education](education-settings-configure.md) consentono di configurare le opzioni per l'[app Test ed esami di Windows](https://education.microsoft.com/gettrained/win10takeatest). Quando si configurano queste opzioni, nessun'altra app può essere eseguita sul dispositivo finché il test non è completato.
+
+## <a name="certificates-profile"></a>Profilo Certificati
+Il profilo [Certificati](certificates-configure.md) consente di configurare certificati attendibili, SCEP e PKCS, da assegnare ai dispositivi e da usare per autenticare i profili Wi-Fi, VPN e di posta elettronica.
+
+Questa funzionalità supporta: 
+
+- Android
+- iOS
+- Windows Phone 8.1
+- Windows 8.1
+- Windows 10
+
+## <a name="edition-upgrade-profile"></a>Profilo Aggiornamento edizione
+[Aggiornamento edizione di Windows 10](edition-upgrade-configure-windows-10.md) consente di aggiornare automaticamente i dispositivi che eseguono determinate versioni di Windows 10 a un'edizione più recente.
+
+Questa funzionalità supporta: solo Windows 10
+
+## <a name="endpoint-protection-profile"></a>Profilo Endpoint Protection
+[Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md) (Impostazioni di Endpoint Protection per Windows 10) configura le impostazioni di BitLocker e Windows Defender per i dispositivi Windows 10.
+
+Questa funzionalità supporta: solo Windows 10
+
+## <a name="windows-information-protection-profile"></a>Profilo Windows Information Protection
+[Windows Information Protection](windows-information-protection-configure.md) offre la protezione dalla perdita di dati senza interferire con l'esperienza del dipendente. Consente anche di proteggere le app e i dati aziendali da perdite di dati accidentali su dispositivi di proprietà dell'azienda e dispositivi personali che i dipendenti usano al lavoro. Questa funzionalità non richiede modifiche all'ambiente o ad altre app.
+
+Questa funzionalità supporta: solo Windows 10
+
+## <a name="custom-profile"></a>Profilo personalizzato
+Le [impostazioni personalizzate](custom-settings-configure.md) consentono di assegnare ai dispositivi impostazioni non integrate in Intune. Ad esempio, nei dispositivi Android è possibile immettere valori OMA-URI. Per i dispositivi iOS è possibile importare un file di configurazione creato in Apple Configurator. 
+
+Questa funzionalità supporta: 
+
+- Android
+- iOS
+- macOS
+- Windows Phone 8.1

@@ -1,27 +1,26 @@
 ---
-title: Impostazioni relative alle restrizioni dei dispositivi per iOS
-titleSuffix: Azure portal
-description: "Informazioni sulle opzioni di Intune che è possibile usare per controllare le impostazioni e le funzionalità del dispositivo in dispositivi iOS.\""
+title: Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
+titleSuffix: 
+description: "Informazioni sulle opzioni di Intune per il controllo di impostazioni e funzionalità nei dispositivi iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
+Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di Microsoft Intune configurabili per i dispositivi che eseguono iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -69,7 +68,7 @@ La modalità con supervisione iOS può essere abilitata solo durante l'installaz
 - Cancellazione di dispositivi 
 - Interfaccia utente restrizioni 
 - Installazione di profili di configurazione tramite interfaccia utente 
-- News 
+- Notizie 
 - Tasti di scelta rapida 
 - Modifica del passcode 
 - Modifica di nomi di dispositivo 
@@ -94,20 +93,20 @@ La modalità con supervisione iOS può essere abilitata solo durante l'installaz
 
 ## <a name="password"></a>Password
 -   **Password**: richiede all'utente finale di immettere una password per accedere al dispositivo.
-    -   **Password semplici** - Consente l'uso di password semplici come 0000 e 1234.
-    -   **Tipo di password richiesto** - Specifica il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.
+    -   **Password semplici**: consente l'uso di password semplici come 0000 e 1234.
+    -   **Tipo di password richiesto**: specifica il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.
     -   **Numero di caratteri non alfanumerici nella password** - Specifica il numero di simboli, ad esempio **#** o **@**, che è necessario includere nella password.
     -   **Lunghezza minima password** - Specifica il numero minimo di caratteri per la password.
     -   **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** - Specifica il numero di tentativi di accesso non riusciti prima che questa impostazione cancelli il dispositivo.
-    -   **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta la password**<sup>1</sup> - Specifica quanto tempo il dispositivo può rimanere inattivo prima che l'utente debba immettere nuovamente la password.
+    -   **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta la password**<sup>1</sup>: specifica il tempo per il quale il dispositivo può rimanere inattivo prima che l'utente debba immettere nuovamente la password.
     -   **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**<sup>1</sup> - Specifica il numero di minuti prima che la visualizzazione del dispositivo sia disattivata.
     -   **Scadenza password (giorni)** - Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.
-    -   **Impedisci riutilizzo delle password precedenti** - Specifica il numero di password utilizzate in precedenza che il dispositivo deve ricordare.
+    -   **Impedisci riutilizzo delle password precedenti** - Specifica il numero di password usate in precedenza che il dispositivo deve ricordare.
     -   **Sblocco con impronta digitale** - Consente di usare un'impronta digitale per sbloccare i dispositivi compatibili.
 - **Modifica del passcode (solo con supervisione)** - Impedisce la modifica, l'aggiunta o la rimozione del passcode.
     - **Modifica dell'impronta digitale (solo con supervisione)** - Impedisce all'utente di modificare, aggiungere o rimuovere le impostazioni del TouchID.
 
-<sup>1</sup>Quando si configurano le impostazioni **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password** e **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**, queste vengono applicate in sequenza. Ad esempio, se si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo 5 minuti e il dispositivo viene bloccato dopo altri 5 minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio, il dispositivo viene bloccato 5 minuti dopo che l'utente spegne lo schermo.
+<sup>1</sup>Quando si configurano le impostazioni **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password** e **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**, queste vengono applicate in sequenza. Se ad esempio si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo cinque minuti e il dispositivo viene bloccato dopo altri cinque minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio il dispositivo viene bloccato cinque minuti dopo che l'utente spegne lo schermo.
 
 ## <a name="locked-screen-experience"></a>Esperienza della schermata di blocco
 
@@ -133,7 +132,7 @@ La modalità con supervisione iOS può essere abilitata solo durante l'installaz
 -   **Game Center (solo con supervisione)** - Impedisce o consente l'uso dell'app Game Center.
 -   **Giochi multiplayer (solo con supervisione)** - Consente all'utente di partecipare a giochi multiplayer sul dispositivo.
 -   **Area classificazioni** - Scegliere l'area di classificazioni per cui si desidera configurare i download consentiti, quindi scegliere le classificazioni consentite per **film** e **programmi TV**.
--   **App** - Scegliere la fascia d'età consentita per le app che gli utenti potranno scaricare oppure è possibile scegliere **Consenti tutte le app**.
+-   **App** - Scegliere la fascia d'età consentita per le app che gli utenti possono scaricare. In alternativa è possibile scegliere **Consenti tutte le app**.
 
 ## <a name="built-in-apps"></a>App predefinite
 
@@ -169,7 +168,7 @@ Usando un motore di ricerca, trovare l'app da usare nell'App Store iTunes e apri
 Copiare l'URL della pagina e usarlo per la configurazione dell'elenco delle app consentite o proibite o di un'app da eseguire in modalità tutto schermo.
 I profili dispositivo che contengono impostazioni per app con restrizioni devono essere assegnati ai gruppi di utenti.
 
-Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Esempio: cercare Microsoft Word per iPad. L'URL usato è https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > È anche possibile usare iTunes per trovare l'app e quindi il comando **Copia collegamento** per ottenere l'URL dell'app.
@@ -182,8 +181,8 @@ Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.
 
 Nell'elenco delle app da mostrare o nascondere è possibile configurare uno degli elenchi seguenti (richiede dispositivi con supervisore che eseguono iOS 9.3 o versione successiva).
 
-Un elenco **App nascoste** - Specifica un elenco di app nascoste agli utenti. Gli utenti non possono visualizzare o avviare queste app.
-Un elenco **App visibili** - Specifica un elenco di app che gli utenti possono visualizzare e avviare. Non è possibile visualizzare o avviare altre app.
+Elenco **App nascoste**: specifica un elenco di app nascoste agli utenti. Gli utenti non possono visualizzare o avviare queste app.
+Elenco **App visibili**: specifica un elenco di app che gli utenti possono visualizzare e avviare. Non è possibile visualizzare o avviare altre app.
 
 Per configurare un elenco, fare clic su **Aggiungi** e quindi specificare il nome, facoltativamente l'autore dell'app e l'URL dell'app nell'App Store.
 
@@ -194,7 +193,7 @@ Per specificare un URL di app nell'elenco delle app, usare il formato seguente:
 Usando un motore di ricerca, trovare l'app da usare nell'App Store iTunes e aprire la pagina per l'app.
 Copiare l'URL della pagina e usarlo per la configurazione dell'elenco delle app consentite o proibite o di un'app da eseguire in modalità tutto schermo.
 
-Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Esempio: cercare Microsoft Word per iPad. L'URL usato è https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > È possibile usare anche il software iTunes per trovare l'app e il comando **Copia collegamento** per ottenere l'URL dell'app.
@@ -213,7 +212,7 @@ Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.
 -   **Hotspot personale** - Non consente l'uso del dispositivo come hotspot personale. Questa impostazione potrebbe non essere compatibile con alcuni gestori.
 -   **Aggiungi reti Wi-Fi solo tramite profili di configurazione (solo con supervisione)** - Consente al dispositivo di connettersi solo a reti Wi-Fi configurate con un profilo Wi-Fi di Intune.
 
-- **Regole di utilizzo della rete cellulare (solo app gestite)** - Consente di definire i tipi di dati utilizzabili dalle app gestite nelle reti cellulari. È possibile scegliere tra:
+- **Regole di utilizzo della rete cellulare (solo app gestite)** - Consente di definire i tipi di dati usabili dalle app gestite nelle reti cellulari. È possibile scegliere tra:
     - **Blocca l'uso della rete dati**
     - **Blocca l'uso della rete dati durante il roaming**
 
@@ -223,12 +222,12 @@ Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.
 -   **Associazione di Apple Watch (solo con supervisione)** - Consente al dispositivo di associare un Apple Watch.
 -   **Rilevamento del polso per l'Apple Watch associato** - Quando l'opzione è abilitata, Apple Watch non visualizza notifiche se non è indossato.
 -   **Modifica Bluetooth (solo con supervisione)** - Impedisce all'utente finale di modificare le impostazioni Bluetooth nel dispositivo.
--   **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
+-    **Associazione di host per controllare i dispositivi a cui può essere associato un dispositivo iOS (solo con supervisione)** - Consente l'abbinamento host in modo che l'amministratore possa controllare a quali dispositivi il dispositivo iOS può essere associato.
 -   **Richiedi la password associata alle richieste AirPlay in uscita** - Richiede una password di associazione quando l'utente usa AirPlay per trasmettere i contenuti ad altri dispositivi di Apple.
 
 ## <a name="keyboard-and-dictionary"></a>Tastiera e dizionario
 
--   **Ricerca della definizione delle parole (solo con supervisione)** - Consente la funzionalità di iOS che permette di evidenziare una parola e cercarne la definizione.
+-   **Ricerca della definizione delle parole (solo con supervisione)** - Consente la funzionalità di iOS che consente di evidenziare una parola e cercarne la definizione.
 -   **Tastiere predittive (solo con supervisione)** - Consente l'uso di tastiere predittive che suggeriscono all'utente i termini desiderati.
 -   **Correzione automatica (solo con supervisione)** - Consente al dispositivo di correggere automaticamente le parole errate.
 -   **Controllo ortografico tastiera (solo con supervisione)** - Consente il controllo ortografico nel dispositivo.
@@ -238,9 +237,9 @@ Esempio: cercare Microsoft Word per iPad. L'URL utilizzato sarà https://itunes.
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
 -   **Backup in iCloud** - Consente all'utente di eseguire il backup del dispositivo su iCloud.
 -   **Sincronizzazione dei documenti in iCloud (solo con supervisione)** - Consente la sincronizzazione di documenti e coppie chiave-valore nello spazio di archiviazione iCloud.
--   **Sincronizzazione dello streaming foto in iCloud** - Consente agli utenti di abilitare la funzionalità **Il mio streaming foto** nel dispositivo, che permette di sincronizzare le foto su iCloud in modo che siano disponibili in tutti i dispositivi degli utenti.
+-   **Sincronizzazione dello streaming foto in iCloud**: consente agli utenti di abilitare nel dispositivo la funzionalità **Il mio streaming foto**, che consente di sincronizzare le foto su iCloud in modo che siano disponibili in tutti i dispositivi degli utenti.
 -   **Backup crittografato** - Richiede la crittografia di tutti i backup del dispositivo.
--   **Libreria foto di iCloud** - Se impostata su **No**, disabilita l'uso della libreria di foto di iCloud che consente agli utenti di archiviare foto e video nel cloud.    Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo verranno rimosse dal dispositivo se questa opzione è impostata su **No**.
+-   **Libreria foto di iCloud**: se impostata su **No** disabilita l'uso della libreria di foto di iCloud che consente agli utenti di archiviare foto e video nel cloud.   Eventuali foto non scaricate completamente dalla Libreria foto di iCloud nel dispositivo vengono rimosse dal dispositivo se questa opzione è impostata su **No**.
 -   **Sincronizzazione delle app gestite nel cloud** - Consente alle app gestite con Intune di sincronizzare i dati con l'account iCloud dell'utente.
 -   **Flusso di foto condivise** - Impostare su **No** per disabilitare **Condivisione foto di iCloud** nel dispositivo.
 -   **Continuazione dell'attività** - Consente all'utente di proseguire il lavoro iniziato in un dispositivo iOS in un altro dispositivo iOS o macOS (Handoff).
@@ -251,7 +250,7 @@ Usare queste impostazioni per configurare dispositivi iOS in modo che eseguano s
 
 ### <a name="settings"></a>Impostazioni
 
-- **Nome dell'app**: immettere il nome dell'app che verrà visualizzato nell'elenco di app in questo pannello.
+- **Nome dell'app**: immettere il nome dell'app che viene visualizzato nell'elenco di app in questo pannello.
 - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per assistenza, vedere **Guida di riferimento agli ID bundle per le app iOS predefinite** in questo argomento.
 
 Dopo aver specificato il nome di ogni app e ID, scegliere **Aggiungi** per aggiungerle all'elenco.
@@ -308,7 +307,7 @@ Questo elenco include l'ID bundle di alcune app comuni iOS predefinite. Per l'ID
 
 
 ## <a name="kiosk-supervised-only"></a>Modalità tutto schermo (solo con supervisione)
--   **App in esecuzione in modalità tutto schermo** - Scegliere **App gestita** per selezionare un'app che è stata aggiunta a Intune o **App dello Store** per specificare l'URL di un'app dello store. Non sarà possibile eseguire altre applicazioni nel dispositivo. Per informazioni, vedere "Come specificare gli URL negli App Store" più avanti in questo argomento.
+-   **App in esecuzione in modalità tutto schermo** - Scegliere **App gestita** per selezionare un'app che è stata aggiunta a Intune o **App dello Store** per specificare l'URL di un'app dello store. Non sarà possibile eseguire altre app nel dispositivo. Per informazioni, vedere "Come specificare gli URL negli App Store" più avanti in questo argomento.
     -   **Tocco per l'accesso facilitato** - Abilita o disabilita l'impostazione di accessibilità **Tocco per l'accesso facilitato** che aiuta l'utente a eseguire sullo schermo movimenti che altrimenti risulterebbero difficili da eseguire.
     -   **Inverti colori** - Abilita o disabilita l'impostazione di accessibilità Inverti colori che consente di regolare la visualizzazione per gli utenti con problemi visivi.
     -   **Audio mono** - Abilita o disabilita l'impostazione di accessibilità Audio mono.
@@ -343,12 +342,12 @@ Questo elenco include l'ID bundle di alcune app comuni iOS predefinite. Per l'ID
 
 ### <a name="unmarked-email-domains"></a>Domini di posta elettronica non contrassegnati
 
-Nel campo **URL del dominio di posta elettronica** aggiungere uno o più URL all'elenco. Quando gli utenti finali ricevono un messaggio di posta elettronica da un dominio diverso da quelli configurati, il messaggio di posta elettronica verrà contrassegnato come non attendibile nell'app Mail iOS.
+Nel campo **URL del dominio di posta elettronica** aggiungere uno o più URL all'elenco. Quando gli utenti finali ricevono un messaggio di posta elettronica da un dominio diverso da quelli configurati, il messaggio di posta elettronica viene contrassegnato come non attendibile nell'app di posta in iOS.
 
 
 ### <a name="managed-web-domains"></a>Domini Web gestiti
 
-Nel campo **URL del dominio Web** aggiungere uno o più URL all'elenco. Quando i documenti vengono scaricati dal dominio specificato, saranno considerati come gestiti. Questa impostazione si applica solo ai documenti scaricati tramite Safari.
+Nel campo **URL del dominio Web** aggiungere uno o più URL all'elenco. Quando i documenti vengono scaricati dal dominio specificato, sono considerati come gestiti. Questa impostazione si applica solo ai documenti scaricati tramite Safari.
 
 
 ### <a name="safari-password-autofill-domains"></a>Domini con compilazione automatica della password di Safari

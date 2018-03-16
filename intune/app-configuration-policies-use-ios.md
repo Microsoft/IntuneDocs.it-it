@@ -1,12 +1,12 @@
 ---
-title: Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti | Microsoft Docs
-titlesuffix: Azure portal
+title: Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
+titlesuffix: Microsoft Intune
 description: Informazioni su come usare i criteri di configurazione delle app per specificare i dati di configurazione per un'app iOS in fase di esecuzione.
 keywords: 
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: ee17ceae0af131f683341f2346f92ad5ef03ed16
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/03/2018
 
 Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni quando gli utenti eseguono un'app iOS. Questi criteri non vengono assegnati direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi assegnata. Le impostazioni dei criteri vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
 
-È possibile assegnare un criterio di configurazione dell'applicazione a un gruppo di utenti e dispositivi tramite una combinazione di assegnazioni di inclusione ed esclusione. Dopo aver aggiunto un criterio di configurazione dell'app, è possibile impostare le assegnazioni per i criteri di configurazione dell'app. Quando si impostano le assegnazioni per i criteri, è possibile scegliere di includere ed escludere i gruppi di utenti ai quali verranno applicati i criteri. Quando si sceglie di includere uno o più gruppi, è possibile selezionare i gruppi specifici da includere o selezionare i gruppi predefiniti. I gruppi predefiniti includono **Tutti gli utenti**, **Tutti i dispositivi**, e **Tutti gli utenti + Tutti i dispositivi**. 
+È possibile assegnare un criterio di configurazione dell'applicazione a un gruppo di utenti e dispositivi tramite una combinazione di assegnazioni di inclusione ed esclusione. Dopo aver aggiunto un criterio di configurazione dell'app, è possibile impostare le assegnazioni per i criteri di configurazione dell'app. Quando si impostano le assegnazioni per i criteri, è possibile scegliere di includere ed escludere i gruppi di utenti ai quali vengono applicati i criteri. Quando si sceglie di includere uno o più gruppi, è possibile selezionare i gruppi specifici da includere o selezionare i gruppi predefiniti. I gruppi predefiniti includono **Tutti gli utenti**, **Tutti i dispositivi**, e **Tutti gli utenti + Tutti i dispositivi**. 
 
 >[!NOTE]
 >Intune fornisce per praticità i gruppi **Tutti gli utenti** e **Tutti i dispositivi** creati in precedenza nella console con le ottimizzazioni predefinite. È consigliabile usare questi gruppi per scegliere tutti gli utenti e tutti i dispositivi invece dei gruppi 'Tutti gli utenti' o 'Tutti i dispositivi' che potrebbero essere stati creati manualmente.
@@ -44,38 +44,38 @@ Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'appl
 
 ## <a name="create-an-app-configuration-policy"></a>Creare criteri di configurazione delle app
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** + **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Scegliere il carico di lavoro delle **app per dispositivi mobili**.
 4. Scegliere **Criteri di configurazione dell'app** nel gruppo **Gestisci** e quindi scegliere **Aggiungi**.
 5. Impostare i dettagli seguenti:
     - **Nome**<br>
-      Il nome del profilo che verrà visualizzato nel portale di Azure.
+      Il nome del profilo che viene visualizzato nel portale di Azure.
     - **Descrizione**<br>
-      Descrizione del profilo che verrà visualizzata nel portale di Azure.
+      La descrizione del profilo che viene visualizzato nel portale di Azure.
     - **Tipo di registrazione del dispositivo**<br>
       Scegliere **Dispositivi gestiti**.
 6. Selezionare **iOS** per **Piattaforma**.
-7.  Scegliere **App associata**. Nel pannello **App associata** scegliere l'app gestita alla quale applicare la configurazione.
-8.  Nel pannello **Aggiungi i criteri di configurazione** scegliere **Impostazioni di configurazione**.
+7.  Scegliere **App associata**. Nel riquadro **App associata** scegliere l'app gestita alla quale applicare la configurazione e selezionare **OK**.
+8.  Nel riquadro **Aggiungi i criteri di configurazione** scegliere **Impostazioni di configurazione**.
 9. Selezionare **Formato delle impostazioni di configurazione**. Selezionare una delle opzioni seguenti:
     - **[Usa progettazione configurazione](#use-configuration-designer)**
     - **[Immettere i dati XML](#enter-xml-data)**
-10. Dopo aver aggiunto le informazioni XML, scegliere **OK**, quindi scegliere **Aggiungi** per aggiungere i criteri di configurazione. Verrà visualizzato il pannello di panoramica dei criteri di configurazione.
+10. Dopo aver aggiunto le informazioni XML, scegliere **OK**, quindi scegliere **Aggiungi** per aggiungere i criteri di configurazione. Viene visualizzato il riquadro di panoramica dei criteri di configurazione.
 11. Selezionare **Assegnazioni** per visualizzare le opzioni di inclusione ed esclusione. 
 
-    ![Assegnazioni criteri](./media/app-config-policy01.png)
+    ![Screenshot della scheda Includi in Assegnazioni](./media/app-config-policy01.png)
 12. Selezionare **Tutti gli utenti** nella scheda **Includi**.
 
-    ![Assegnazioni criteri - Tutti gli utenti](./media/app-config-policy02.png)
+    ![Screenshot delle assegnazioni dei criteri - opzione di elenco a discesa Tutti gli utenti](./media/app-config-policy02.png)
 13. Selezionare la scheda **Escludi**. 
-14. Fare clic su **Selezionare i gruppi da escludere** per visualizzare il pannello correlato.
+14. Fare clic su **Selezionare i gruppi da escludere** per visualizzare il riquadro correlato.
 
-    ![Assegnazioni criteri - Selezionare i gruppi da escludere](./media/app-config-policy03.png)
+    ![Screenshot delle assegnazioni dei criteri - Pannello Selezionare i gruppi da escludere](./media/app-config-policy03.png)
 15. Scegliere i gruppi da escludere e quindi fare clic su **Seleziona**.
 
     >[!NOTE]
-    >Quando si aggiunge un gruppo, se non sono stati ancora inclusi altri gruppi per un tipo di assegnazione specifico, tale gruppo risulterà preselezionato e non potrà essere modificato per gli altri tipi di assegnazione di inclusione. Di conseguenza, tale gruppo non potrà essere usato come gruppo escluso.
+    >Quando si aggiunge un gruppo, se sono già stati inclusi altri gruppi per un tipo di assegnazione specifico, tale gruppo risulterà preselezionato e non potrà essere modificato per gli altri tipi di assegnazione di inclusione. Di conseguenza, tale gruppo non potrà essere usato come gruppo escluso.
 16. Fare clic su **Save**.
 
 ## <a name="use-configuration-designer"></a>Usare Progettazione configurazione

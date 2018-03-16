@@ -3,10 +3,10 @@ title: Gestire le app da Microsoft Store per le aziende
 titlesuffix: Azure portal
 description: Informazioni su come sincronizzare le app in Intune da Microsoft Store per le aziende, assegnarle e tenerne traccia."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85141fc6f4d71994f575233c255a97e336c92108
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4460924b3e53a9540ff21aa009a0c028de92f26f
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Come gestire le app acquistate in Microsoft Store per le aziende con Microsoft Intune
 
@@ -39,17 +39,20 @@ Prima di iniziare la sincronizzazione e l'assegnazione di app da Microsoft Store
 
 - Configurare Intune come autorità di gestione dei dispositivi mobili dell'organizzazione.
 - È necessario ottenere un account registrandosi in Microsoft Store per le aziende.
-- Dopo che un account di Windows Store per le aziende è stato associato a Intune, non è possibile passare a un altro account in futuro.
+- Dopo che un account di Microsoft Store per le aziende è stato associato a Intune, non è possibile passare a un altro account in futuro.
 - Le app acquistate dallo Store non possono essere aggiunte o eliminate manualmente da Intune. Possono solo essere sincronizzate con Microsoft Store per le aziende.
-- Intune sincronizza le app concesse in licenza sia online che offline acquistate da Microsoft Store per le aziende.
-- Solo le applicazioni offline gratuite possono essere sincronizzate con Intune.
+- Le app concesse in licenza sia online che offline acquistate da Microsoft Store per le aziende vengono sincronizzate nel portale di Intune. Sarà quindi possibile quindi distribuire le app ai gruppi di dispositivi o ai gruppi di utenti. 
+- Le installazioni di app online vengono gestite dallo Store.
+- Anche le app offline gratuite possono essere sincronizzate con Intune. Queste app vengono installate da Intune, non dallo Store.
 - Per usare questa funzionalità i dispositivi devono essere aggiunti ad Active Directory Domain Services o all'area di lavoro.
 - I dispositivi registrati devono usare la versione 1511 di Windows 10 o successive.
+
+Inoltre, i set correlati e le app con licenza offline sincronizzate da Microsoft Store per le aziende ora verranno consolidati in un'unica voce di app nell'interfaccia utente. I dettagli relativi alla distribuzione dei singoli pacchetti verranno migrati in quell'unica voce. Per visualizzare gli insiemi correlati nel portale di Azure, selezionare **Licenze dell'app** dal pannello **App per dispositivi mobili**.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Associare l'account Microsoft Store per le aziende a Intune
 Prima di abilitare la sincronizzazione nella console di Intune, è necessario configurare l'account dello Store per usare Intune come strumento di gestione:
 1. Assicurarsi di accedere a Windows Store per le aziende con lo stesso account tenant usato per accedere a Intune.
-2. In Business Store scegliere **Impostazioni** > **Strumenti di gestione**
+2. In Business Store scegliere **Impostazioni** > **Strumenti di gestione**.
 3. Nella pagina Strumenti di gestione scegliere **Aggiungi uno strumento di gestione** e scegliere **Microsoft Intune**.
 
 > [!NOTE]
@@ -62,11 +65,12 @@ Prima di abilitare la sincronizzazione nella console di Intune, è necessario co
 1. Accedere al portale di Azure.
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
-1. Nel pannello **App per dispositivi mobili** scegliere **Installazione** > **Microsoft Store per le aziende**.
-2. Fare clic su **Abilita**.
-3. Se non è ancora stato fatto, fare clic sul collegamento per registrarsi a Microsoft Store per le aziende e associare il proprio account come descritto in precedenza.
-5. Nell'elenco a discesa **Lingua** scegliere la lingua in cui visualizzare le app scaricate da Microsoft Store per le aziende nel portale di Azure. Indipendentemente dalla lingua in cui sono visualizzate, vengono installate nella lingua dell'utente finale, se disponibile.
-6. Fare clic su **Sincronizza** per trasferire le app acquistate da Microsoft Store in Intune.
+4. Nel pannello **App per dispositivi mobili** scegliere **Installazione** > **Microsoft Store per le aziende**.
+5. Fare clic su **Abilita**.
+6. Se non è ancora stato fatto, fare clic sul collegamento per registrarsi a Microsoft Store per le aziende e associare il proprio account come descritto in precedenza.
+7. Nell'elenco a discesa **Lingua** scegliere la lingua in cui visualizzare le app scaricate da Microsoft Store per le aziende nel portale di Azure. Indipendentemente dalla lingua in cui sono visualizzate, vengono installate nella lingua dell'utente finale, se disponibile.
+8. Fare clic su **Sincronizza** per trasferire le app acquistate da Microsoft Store in Intune.
+9. Fare clic su **Salva**.
 
 ## <a name="synchronize-apps"></a>Sincronizzare le app
 
@@ -75,7 +79,7 @@ Prima di abilitare la sincronizzazione nella console di Intune, è necessario co
 
 ## <a name="assign-apps"></a>Assegnare le app
 
-Le app assegnate dallo Store vengono assegnate allo stesso modo di qualsiasi altra app di Intune. Per altre informazioni, vedere [How to assign apps to groups with Microsoft Intune](apps-deploy.md) (Come assegnare app ai gruppi con Microsoft Intune). Tuttavia, invece di assegnare le app dalla pagina **Tutte le app**, è necessario assegnarle dalla pagina **App con licenza**.
+Le app assegnate dallo Store vengono assegnate allo stesso modo di qualsiasi altra app di Intune. Per altre informazioni, vedere [Come assegnare app ai gruppi con Microsoft Intune](apps-deploy.md). Tuttavia, invece di assegnare le app dalla pagina **Tutte le app**, è necessario assegnarle dalla pagina **App con licenza**.
 
 Le app offline possono essere assegnate a gruppi di utenti, gruppi di dispositivi o gruppi composti da utenti e dispositivi.
 Le app offline possono essere installate in un dispositivo per un utente specifico o per tutti gli utenti. 

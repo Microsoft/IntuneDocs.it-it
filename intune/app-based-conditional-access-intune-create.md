@@ -1,9 +1,9 @@
 ---
-title: Criteri di accesso condizionale basato su app con Intune
-description: Questo argomento descrive come configurare criteri di accesso condizionale basato su app con Intune.
+title: Configurare criteri di accesso condizionale basato su app con Intune
+description: Informazioni su come configurare criteri di accesso condizionale basato su app con Intune.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -14,48 +14,46 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d938a21e041055c61e6638e94841a056e20b38
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 89ee7c0df2fde740c18b84f1d9f028d59ba5d81d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="set-up-app-based-conditional-access-policies"></a>Configurare criteri di accesso condizionale basato su app
+# <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Configurare criteri di accesso condizionale basato su app con Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Questo argomento descrive come configurare criteri di accesso condizionale basato su app per le app che fanno parte dell'elenco di app approvate. L'elenco di app approvate include le applicazioni testate da Microsoft.
+Questo articolo descrive come configurare criteri di accesso condizionale basato su app per le app che fanno parte dell'elenco di app approvate. L'elenco di app approvate include le applicazioni testate da Microsoft.
 
 > [!IMPORTANT]
-> Questo argomento descrive come configurare la procedura per l'aggiunta di criteri per l'accesso condizionale basato su app con Exchange Online, ma è possibile usare la stessa procedura per aggiungere altre app dall'elenco delle app approvate, ad esempio SharePoint Online, Microsoft Teams e così via.
+> Questo articolo descrive la procedura per l'aggiunta di criteri per l'accesso condizionale basato su app con Exchange Online, ma è possibile usare la stessa procedura per aggiungere altre app dall'elenco delle app approvate, come ad esempio SharePoint Online, Microsoft Teams e così via.
 
 ## <a name="to-create-an-app-based-conditional-access-policy"></a>Per creare criteri di accesso condizionale basato su app
 1.  Passare al [portale di Azure](https://portal.azure.com) e accedere con le proprie credenziali.
 
-2.  Scegliere **Altri servizi** e digitare "Intune".
+2.  Scegliere **Tutti i servizi** e digitare "Intune".
 
 3.  Scegliere **Protezione app di Intune**.
 
-4.  Nel pannello **Gestione di applicazioni mobili di Intune** scegliere **Tutte le impostazioni**.
+4.  In **Protezione app di Intune** nella sezione **Accesso condizionale** scegliere **Exchange Online**.
 
-5.  Nella sezione **Accesso condizionale** scegliere **Exchange Online**.
+    ![Screenshot del riquadro delle impostazioni che include la sezione dell'accesso condizionale con l'opzione Exchange Online selezionata](./media/MAM-conditional-access-1.png)
 
-    ![Screenshot del pannello delle impostazioni e sezione dell'accesso condizionale con l'opzione Exchange Online selezionata](./media/MAM-conditional-access-1.png)
-
-6. Nel pannello **App consentite** scegliere l'opzione **Allow apps that support Intune app policies** (Consenti app che supportano i criteri per app Intune) per consentire solo alle app supportate dai criteri di protezione delle app di Intune di accedere a Exchange Online. Quando si seleziona questa opzione, viene visualizzato l'elenco delle app supportate.
+6. Nel riquadro **App consentite** scegliere l'opzione **Consenti app che supportano i criteri app di Intune** per consentire solo alle app supportate dai criteri di protezione delle app di Intune di accedere a Exchange Online. Quando si seleziona questa opzione, viene visualizzato l'elenco delle app supportate.
 
     > [!NOTE]
-    > Tutti i client di posta elettronica di Exchange Active Sync, tra cui i client di posta elettronica predefiniti in iOS e Android che si connettono a Exchange Online, non potranno inviare né ricevere messaggi di posta elettronica. Gli utenti riceveranno invece un solo messaggio di posta elettronica che li avvisa di usare Outlook come app di posta elettronica.
+    > Tutti i client di posta elettronica di Exchange Active Sync, tra cui i client di posta elettronica predefiniti in iOS e Android che si connettono a Exchange Online, non possono inviare né ricevere messaggi di posta elettronica. Gli utenti riceveranno invece un solo messaggio di posta elettronica che li avvisa di usare Outlook come app di posta elettronica.
 
-7. Per applicare questi criteri agli utenti, aprire il pannello **Gruppi di utenti limitati** e scegliere **Aggiungi un gruppo di utenti**. Selezionare uno o più gruppi di utenti a cui applicare questi criteri.
+7. Per applicare questi criteri agli utenti, aprire il riquadro **Gruppi di utenti limitati** e scegliere **Aggiungi un gruppo di utenti**. Selezionare uno o più gruppi di utenti a cui applicare questi criteri.
 
-    ![Screenshot del pannello Gruppi di utenti limitati e opzione Aggiungi un gruppo di utenti selezionata](./media/mam-ca-add-user-group.png)
+    ![Screenshot del riquadro Gruppi di utenti limitati e opzione Aggiungi un gruppo di utenti selezionata](./media/mam-ca-add-user-group.png)
 
-8. È possibile che alcuni utenti appartenenti al gruppo selezionato nel passaggio precedente non debbano essere interessati da questi criteri. In questi casi aggiungere il gruppo di utenti all'elenco dei gruppi esentati. Scegliere **Exempted user groups** (Gruppi di utenti esentati) dal pannello **Exchange Online**. Scegliere **Aggiungi un gruppo di utenti** per aprire l'elenco dei gruppi di utenti. Selezionare i gruppi che si vuole esentare da questi criteri.
+8. È possibile che alcuni utenti appartenenti al gruppo selezionato nel passaggio precedente non debbano essere interessati da questi criteri. In questi casi aggiungere il gruppo di utenti all'elenco dei gruppi esentati. Dal riquadro **Exchange Online** scegliere **Exempted user groups** (Gruppi di utenti esentati). Scegliere **Aggiungi un gruppo di utenti** per aprire l'elenco dei gruppi di utenti. Selezionare i gruppi che si vuole esentare da questi criteri.
 
 ## <a name="to-modify-or-delete-user-groups-from-an-existing-app-based-ca-policy"></a>Per modificare o eliminare gruppi di utenti da un criterio di accesso condizionale basato su app esistente
 
-1. Aprire il pannello **Gruppi di utenti limitati** e quindi evidenziare il gruppo di utenti che si vuole eliminare.
+1. Aprire il pannello **Gruppi di utenti limitati** ed evidenziare il gruppo di utenti che si vuole eliminare.
 2. Fare clic sui puntini di sospensione per visualizzare le opzioni di eliminazione.
 3. Scegliere **Elimina** per rimuovere il gruppo di utenti dall'elenco.
 
@@ -73,7 +71,7 @@ A partire dalla versione 1708 di Intune, gli amministratori IT possono creare cr
 
 1. Nel **dashboard di Intune** scegliere **Accesso condizionale**.
 
-2. Nel pannello **Criteri** scegliere **Nuovo criterio** per creare il nuovo criterio di accesso condizionale basato su app.
+2. Nel pannello **Criteri** scegliere **Nuovi criteri** per creare i nuovi criteri di accesso condizionale basato su app.
 
 4. Dopo avere immesso un nome di criterio e dopo avere configurato le impostazioni disponibili nella sezione **Assegnazioni**, scegliere **Concedi** nella sezione **Controlli di accesso**.
 

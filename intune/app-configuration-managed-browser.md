@@ -1,12 +1,12 @@
 ---
 title: Gestire l'accesso Web con l'app Managed Browser
-titlesuffix: Azure portal
-description: Distribuire l'applicazione Managed Browser per limitare l'esplorazione del Web e il trasferimento dei dati Web ad altre app."
+titlesuffix: Microsoft Intune
+description: Distribuire l'applicazione Managed Browser per limitare l'esplorazione del Web e il trasferimento dei dati Web ad altre app.
 keywords: 
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f7c36639272bd8738bff33f6039a2d26e6147729
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gestire l'accesso a Internet usando criteri di Managed Browser con Microsoft Intune.
 
@@ -63,17 +63,17 @@ Intune Managed Browser supporta l'apertura di contenuti Web di [partner delle ap
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Creare una configurazione per l'app Managed Browser
 
-1.  Accedere al portale di Azure.
-2.  Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3.  Nel pannello **App mobili** dell'elenco di gestione, scegliere **Criteri di configurazione dell'app**.
 4.  Nel pannello **Criteri di configurazione dell'app** scegliere **Aggiungi**.
-5.  Nel pannello **Aggiungi la configurazione dell'app** immettere **Nome** e **Descrizione** facoltativa per le impostazioni di configurazione dell'app.
+5.  Nel pannello **Aggiungi i criteri di configurazione** immettere **Nome** e **Descrizione** facoltativa per le impostazioni di configurazione dell'app.
 6.  Per **Tipo di registrazione del dispositivo** scegliere **App gestite**.
-7.  Scegliere **Selezionare le app richieste** e quindi, nel pannello **App di destinazione**, scegliere **Managed Browser** per iOS, Android o per entrambi.
-8.  Scegliere **OK** per tornare al pannello **Aggiungi la configurazione dell'app**.
+7.  Scegliere **Selezionare l'app necessaria** e quindi nel pannello **App di destinazione** scegliere **Managed Browser** per iOS, per Android o per entrambi.
+8.  Scegliere **OK** per tornare al pannello **Aggiungi i criteri di configurazione**.
 9.  Scegliere **Impostazioni di configurazione**. Nel pannello **Configurazione** definire le coppie di chiavi e valori per specificare le configurazioni per Managed Browser. Vedere le sezioni più avanti in questo articolo per informazioni sulle varie coppie di chiavi e valori che è possibile definire.
 10. Al termine, scegliere **OK**.
-11. Nel pannello **Aggiungi la configurazione dell'app** scegliere **Crea**.
+11. Nel pannello **Aggiungi i criteri di configurazione** scegliere **Aggiungi**.
 12. La nuova configurazione verrà creata e visualizzata nel pannello **Configurazione dell'app**.
 
 >[!IMPORTANT]
@@ -83,10 +83,10 @@ Intune Managed Browser supporta l'apertura di contenuti Web di [partner delle ap
 
 Le impostazioni vengono assegnate a gruppi di utenti di Azure AD. Se tale utente ha installato l'app Managed Browser, questa verrà gestita dalle impostazioni specificate.
 
-1. Nel pannello **Impostazioni** del dashboard di gestione delle applicazioni per dispositivi mobili di Intune scegliere **Configurazione dell'app**.
+1. Nel pannello **App per dispositivi mobili** del dashboard di gestione delle applicazioni per dispositivi mobili di Intune scegliere **Criteri di configurazione dell'app**.
 2. Nell'elenco di configurazioni di app selezionare quella che si vuole assegnare.
-3. Nel pannello successivo scegliere **Gruppi di utenti**.
-4. Nel pannello **Gruppi di utenti** selezionare il gruppo di Azure AD a cui si vuole assegnare la configurazione dell'app e quindi scegliere **OK**.
+3. Nel pannello successivo scegliere **Assegnazioni**.
+4. Nel pannello **Assegnazioni** selezionare il gruppo di Azure AD a cui si vuole assegnare la configurazione dell'app e scegliere **OK**.
 
 
 ## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Come configurare le impostazioni proxy di applicazione per Managed Browser
@@ -148,7 +148,7 @@ Usando la procedura per creare una configurazione per l'app Managed Browser, spe
 |||
 |-|-|
 |Chiave|Valore|
-|È possibile scegliere tra:<br><br>- Specificare gli URL consentiti (sono consentiti solo questi URL e nessun altro sito è accessibile): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specificare gli URL bloccati (tutti gli altri siti sono accessibili): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|Il valore corrispondente per la chiave è un elenco di URL. Tutti gli URL da consentire o bloccare vengono immessi come valore singolo, separati da un carattere barra verticale **&#124;**.<br><br>Esempi:<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|Scegliere tra:<br><br>- Specificare gli URL consentiti (sono consentiti solo questi URL e nessun altro sito è accessibile): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specificare gli URL bloccati (tutti gli altri siti sono accessibili): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|Il valore corrispondente per la chiave è un elenco di URL. Tutti gli URL da consentire o bloccare vengono immessi come valore singolo, separati da un carattere barra verticale **&#124;**.<br><br>Esempi:<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >Non specificare entrambe le chiavi. Se entrambe le chiavi sono destinate allo stesso utente, viene usata la chiave consentita, essendo l'opzione più restrittiva.
