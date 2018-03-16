@@ -1,11 +1,12 @@
 ---
 title: Vantaggi di Intune App SDK
-description: "Intune App SDK è disponibile per la piattaforma iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune."
+titlesuffix: Microsoft Intune
+description: "Intune App SDK è disponibile per le piattaforme iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/24/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75965145c38e94516846937e4dd408730d3ce10f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ae22d3e718fd01330b81206921b6e9a23313a30f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Panoramica di Intune App SDK
-Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di protezione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. La maggior parte delle funzionalità dell'SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che richiedono la partecipazione dell'app.
+Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di protezione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. La maggior parte delle funzionalità dell'SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che ne richiedono la partecipazione.
 
 Dopo avere abilitato l'app per i criteri di protezione delle app, gli amministratori IT possono distribuire questi criteri per proteggere i dati aziendali all'interno dell'app.
 
@@ -42,7 +43,7 @@ Gli amministratori IT possono applicare un criterio che assicura che i dati salv
 Gli amministratori IT possono cancellare i dati aziendali da remoto mediante un'app gestita da Intune. Questa funzionalità è basata sull'identità ed elimina solo i file associati all'identità aziendale dell'utente finale. A questo scopo, la funzionalità richiede la partecipazione dell'app. L'app può specificare l'identità per cui è necessario cancellare i dati sulla base delle impostazioni utente. Se nell'applicazione non sono presenti queste impostazioni utente specifiche, il comportamento predefinito prevede la cancellazione della directory dell'applicazione e l'invio di una notifica all'utente finale relativa alla rimozione dell'accesso.
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>Imporre l'uso di un browser gestito
-Gli amministratori IT possono imporre l'apertura dei collegamenti Web nell'app con l'[app Intune Managed Browser](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). In questo modo, si garantisce che i collegamenti visualizzati in un ambiente aziendale si trovino all'interno del dominio delle app gestite da Intune.
+Gli amministratori IT possono imporre l'apertura dei collegamenti Web nell'app con l'[app Intune Managed Browser](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). Questa funzionalità garantisce che i collegamenti visualizzati in un ambiente aziendale si trovino all'interno del dominio delle app gestite da Intune.
 
 ### <a name="enforce-a-pin-policy"></a>Applicare un criterio PIN
 Gli amministratori IT possono richiedere all'utente finale di immettere un PIN prima di accedere ai dati aziendali nell'app. In questo modo, si garantisce che la persona che usa l'app sia la stessa che inizialmente ha eseguito l'accesso con un account aziendale o dell'istituto di istruzione. Quando gli utenti finali configurano il PIN, Intune App SDK usa Azure Active Directory per verificare le credenziali degli utenti finali rispetto all'account di Intune registrato.

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7884682b765fe0df0ecb8b55b18f7a85ac4b2ec9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fcdd5e6fa844d4c475462cd0b2a4883f8ff9ba90
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>Attivare la modalità di dispositivo perso nei dispositivi iOS
 
@@ -37,11 +37,11 @@ L'azione del dispositivo **Modalità di dispositivo perso** consente di abilitar
 
 ## <a name="how-to-activate-lost-mode"></a>Come attivare la modalità di dispositivo perso
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
-4. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.
-5. Nell'elenco dei dispositivi gestiti scegliere un dispositivo iOS e quindi scegliere l'azione remota **Modalità di dispositivo perso**.
+4. Nel pannello **Dispositivi** scegliere **Tutti i dispositivi**.
+5. Nell'elenco dei dispositivi gestiti scegliere un dispositivo iOS, scegliere **Altro** e quindi scegliere l'azione remota **Modalità di dispositivo perso**.
 6. Nel pannello **Modalità di dispositivo perso** abilitare la modalità di dispositivo perso. Immettere quindi il messaggio da visualizzare e, facoltativamente, indicare un numero di telefono di contatto.
 7. Fare clic su **OK**.
 
@@ -57,5 +57,5 @@ Per usare la modalità di dispositivo perso, il dispositivo deve essere un dispo
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per visualizzare lo stato dell'azione appena eseguita, scegliere **Azioni del dispositivo** nel pannello **Dispositivi e gruppi**.
+Per visualizzare lo stato dell'azione appena eseguita, scegliere **Azioni del dispositivo** nel pannello **Dispositivi**.
 

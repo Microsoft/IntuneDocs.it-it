@@ -1,12 +1,12 @@
 ---
-title: "Che cos'è la gestione delle app"
-titlesuffix: Azure portal
-description: Usare questo argomento per apprendere le nozioni fondamentali sulla gestione delle app con Microsoft Intune."
+title: Informazioni sulla gestione delle app in Microsoft Intune
+titlesuffix: 
+description: Nozioni fondamentali sulla gestione delle app con Microsoft Intune.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
@@ -27,14 +27,14 @@ ms.lasthandoff: 02/13/2018
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Gli amministratori IT hanno la responsabilità di accertarsi che gli utenti finali abbiano accesso alle app di cui hanno bisogno per svolgere il proprio lavoro. Non sempre questo compito risulta semplice da svolgere, perché:
+Microsoft Intune consente all'amministratore IT di gestire le app per dispositivi mobili usate dai dipendenti dell'azienda. Questa funzionalità si aggiunge alla gestione dei dispositivi e alla protezione dei dati. Una delle priorità dell'uso di questa funzionalità è fare in modo che gli utenti finali abbiano accesso alle app necessarie per svolgere il proprio lavoro. Non sempre questo compito risulta semplice da svolgere, perché:
 - Esiste una vasta gamma di piattaforme per dispositivi e tipi di applicazione.
 - Potrebbe essere necessario gestire le app sia nei dispositivi aziendali che nei dispositivi personali degli utenti.
 - Occorre assicurarsi che rete e dati rimangano protetti.
 
 In aggiunta, potrebbe essere necessario assegnare e gestire le app su dispositivi non registrati in Intune.
 
-Intune offre un'ampia gamma di funzionalità che consente di usare le app necessarie nei dispositivi desiderati.
+Intune offre un'ampia gamma di funzionalità che consente di usare le app necessarie nei dispositivi desiderati. Nella tabella seguente viene illustrato un riepilogo delle funzionalità di gestione delle app. Dopo la tabella inizia a essere spiegato l'uso di Microsoft Intune nel portale di Azure. 
 
 ## <a name="app-management-capabilities-by-platform"></a>Funzionalità di gestione delle app per piattaforma
 
@@ -64,8 +64,8 @@ Intune offre un'ampia gamma di funzionalità che consente di usare le app necess
 
 Il carico di lavoro **App per dispositivi mobili** contiene numerose informazioni sulle app ed è accessibile come indicato di seguito:
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
 
     ![Carico di lavoro App per dispositivi mobili](./media/apps-workload.png)
@@ -115,3 +115,7 @@ Per altri dettagli, vedere [Eseguire il monitoraggio delle app](apps-monitor.md)
 ### <a name="help-and-support"></a>Guida e supporto tecnico
 - **Guida e supporto tecnico**: risolvere i problemi, richiedere supporto o visualizzare lo stato di Intune.
     - [Risoluzione dei problemi](help-desk-operators.md)
+    
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Come aggiungere un'app a Microsoft Intune](apps-add.md)

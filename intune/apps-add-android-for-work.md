@@ -1,12 +1,12 @@
 ---
 title: Assegnare app a dispositivi Android for Work
-titlesuffix: Azure portal
-description: Usare questo argomento per sincronizzare e quindi assegnare app ai dispositivi Android for Work da Google Play for Work."
+titlesuffix: Microsoft Intune
+description: Informazioni su come sincronizzare e assegnare app ai dispositivi Android for Work da Google Play for Work.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 248dcc978b5324733d5d640230aba2b6db1a2c62
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Come assegnare app a dispositivi Android for Work con Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-L'assegnazione di app a dispositivi Android for Work avviene in modo diverso rispetto all'assegnazione di app a dispositivi Android standard. Tutte le app installate per Android for Work provengono da Google Play for Work. Accedere allo store, cercare le app desiderate e approvarle.
-L'app viene quindi visualizzata nel nodo **App con licenza** del portale di Azure. Da qui è possibile gestire l'assegnazione dell'app allo stesso modo in cui si assegnano le altre app.
+Android for Work è un programma per i dispositivi Android. Tutte le app installate in dispositivi Android for Work provengono da Google Play for Work. L'assegnazione di app a dispositivi Android for Work avviene in modo diverso rispetto all'assegnazione di app a dispositivi Android standard. Accedere allo store, cercare le app desiderate e approvarle. L'app viene quindi visualizzata nel nodo **App con licenza** del portale di Azure. Da qui è possibile gestire l'assegnazione dell'app allo stesso modo in cui si assegnano le altre app.
 
 Inoltre, se sono state create app line-of-business (LOB) personalizzate, è possibile assegnarle come segue:
 - Registrarsi per ottenere un account Google Developer che consente di pubblicare le app in un'area privata dello store Google Play.

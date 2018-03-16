@@ -5,7 +5,7 @@ description: Informazioni su come visualizzare i dispositivi gestiti con Intune 
 keywords: 
 author: arob98
 ms.author: angrobe
-nmanager: dougeby
+manager: dougeby
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 39351e76c2510f7411c64d4bc3e3275bc051c63e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 772e2b1380626384d618e653b90b31a1f421eb72
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-view-intune-device-inventory"></a>Come visualizzare l'inventario dei dispositivi di Intune
 
@@ -29,8 +29,8 @@ Il carico di lavoro **Dispositivi** offre informazioni dettagliate sui dispositi
 
 Per visualizzare l'inventario dei dispositivi:
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
 
 Scegliere una delle opzioni seguenti:
@@ -46,4 +46,4 @@ Scegliere una delle opzioni seguenti:
 - **Monitoraggio**: scegliere **Azioni del dispositivo** per visualizzare un elenco delle azioni del dispositivo che sono state eseguite nei dispositivi gestiti e lo stato corrente delle azioni.
 - **Installazione** > **TeamViewer Connector**: consente di configurare l'amministrazione remota nei dispositivi usando il software TeamViewer. Per informazioni dettagliate, vedere [Fornire assistenza remota per i dispositivi Android gestiti da Intune](/intune/device-profile-android-teamviewer).
 
-Intune raccoglie l'inventario solo delle app dei dispositivi di proprietà dell'azienda. Le app dei dispositivi personali non sono incluse nell'inventario. Per i PC Windows 10, viene raccolto solo l'inventario delle app moderne nei dispositivi di proprietà dell'azienda. Intune non raccoglie informazioni sulle app Win32 del dispositivo. In base al gestore telefonico utilizzato con i dispositivi, è possibile che non siano raccolti tutti gli elementi dell'inventario.
+Intune raccoglie l'inventario solo delle app dei dispositivi di proprietà dell'azienda. Le app dei dispositivi personali non sono incluse nell'inventario. Per i PC Windows 10, viene raccolto solo l'inventario delle app moderne nei dispositivi di proprietà dell'azienda. Intune non raccoglie informazioni sulle app Win32 del dispositivo. In base al gestore telefonico usato con i dispositivi, è possibile che non siano raccolti tutti gli elementi dell'inventario.

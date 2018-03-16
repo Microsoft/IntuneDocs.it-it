@@ -1,6 +1,6 @@
 ---
-title: Usare il ripristino delle impostazioni predefinite oppure rimuovere i dati aziendali nei dispositivi con Intune
-titlesuffix: Azure portal
+title: Usare il ripristino delle impostazioni predefinite oppure rimuovere i dati aziendali nei dispositivi con Microsoft Intune
+titlesuffix: 
 description: Informazioni su come rimuovere i dati aziendali in un dispositivo o come eseguire il ripristino delle impostazioni predefinite del dispositivo.
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 62404f6ffede7a7f3f7150da1fde289f2ba9e64f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Rimuovere i dispositivi con il ripristino delle impostazioni predefinite o rimuovere i dati aziendali
 
@@ -35,11 +35,11 @@ Il **ripristino delle impostazioni predefinite** consente di reimpostare le impo
 
 ### <a name="to-factory-reset-a-device"></a>Per ripristinare le impostazioni predefinite di un dispositivo
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel pannello **Dispositivi** scegliere **Tutti i dispositivi**.
 4. Scegliere il nome del dispositivo di cui si vuole eseguire il ripristino delle impostazioni predefinite.
-5. Nel pannello che mostra il nome del dispositivo scegliere **Ripristino delle impostazioni predefinite**
+5. Nel pannello che visualizza il nome del dispositivo scegliere **Ripristino delle impostazioni predefinite**.
 6. Per Windows 10 versione 1709 o successiva, è disponibile l'opzione aggiuntiva "Mantieni lo stato della registrazione e l'account utente". 
     
     |Mantenuti tramite ripristino delle impostazioni predefinite|Non mantenuti|
@@ -122,9 +122,9 @@ La rimozione dei dati aziendali da un dispositivo Android for Work consente di r
 
 ### <a name="to-remove-company-data"></a>Per rimuovere i dati aziendali
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel pannello **Dispositivi** scegliere **Tutti i dispositivi**.
 4. Scegliere il nome del dispositivo da cui si vuole rimuovere i dati aziendali.
 5. Nel pannello che mostra il nome del dispositivo scegliere **Rimuovi i dati aziendali** e quindi scegliere **Sì** per confermare.
 
@@ -134,10 +134,10 @@ Se il dispositivo è acceso e connesso, un comando di rimozione dei dati non ric
 
 A causa di problemi di comunicazione o dispositivi mancanti, potrebbe essere necessario eliminare dispositivi da Azure Active Directory (AD). Il comando di eliminazione non rimuove un dispositivo dalla gestione, ma è possibile usare **Elimina** per rimuovere dal portale di Azure i record dei dispositivi che si è certi siano irraggiungibili oppure che molto probabilmente non comunicheranno più con Azure.
 
-1.  Accedere ad [Azure Active Directory nel portale di Azure](http://aka.ms/accessaad) con le credenziali di amministratore. È anche possibile accedere al [portale di Office 365](https://portal.office.com) e quindi scegliere **Amministrazione** &gt; **Azure AD** usando il collegamento sul lato sinistro della pagina.
+1.  Accedere ad [Azure Active Directory nel portale di Azure](http://aka.ms/accessaad) con le credenziali di amministratore. È anche possibile accedere al [portale di Office 365](https://portal.office.com) e quindi scegliere **Interfacce di amministrazione** &gt; **Azure AD** usando il collegamento sul lato sinistro della pagina.
 3.  Creare una sottoscrizione di Azure, se non se ne possiede una. Se si dispone di un account a pagamento, questa operazione non richiede l'uso di una carta di credito né un pagamento. Fare clic sul collegamento per l'abbonamento relativo alla **registrazione gratuita di Azure Active Directory**.
-4.  Selezionare **Active Directory** e quindi l'organizzazione.
-5.  Selezionare la scheda **Utenti** .
+4.  Selezionare **Azure Active Directory** e quindi l'organizzazione.
+5.  Selezionare la scheda **Utenti**.
 6.  Selezionare l'utente di cui si desidera eliminare i dispositivi.
 7.  Scegliere **Dispositivi**.
 8.  Rimuovere i dispositivi nel modo opportuno, ad esempio quelli che non sono più in uso o quelli con definizioni errate.

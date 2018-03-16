@@ -1,12 +1,12 @@
 ---
 title: Impostazioni dei criteri di protezione delle app per iOS
-titlesuffix: Azure portal
-description: Questo argomento descrive le impostazioni dei criteri di protezione delle app per dispositivi iOS."
+titlesuffix: Microsoft Intune
+description: Questo argomento descrive le impostazioni dei criteri di protezione delle app per dispositivi iOS.
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5366062588d518a7072fb4d56e4eade0f492bebf
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 6225afab71d1f47793ea295553dfcaf169374a06
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Le impostazioni dei criteri descritte in questo argomento possono essere [configurate](app-protection-policies.md) per un criterio di protezione delle app nel pannello **Impostazioni** del portale di Azure.
+Le impostazioni dei criteri descritte in questo argomento possono essere [configurate](app-protection-policies.md) per un criterio di protezione delle app nel pannello **Aggiungi criteri** > **Impostazioni** del portale di Azure.
 
 Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione dei dati e impostazioni di accesso. In questo argomento il termine ***app gestite da criteri*** si riferisce alle app configurate con criteri di protezione delle app.
 
@@ -32,8 +32,8 @@ Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione d
 
 | Impostazione | Uso | Valore predefinito |
 |------|------|------|
-| **Impedisci backup in iTunes e iCloud** | Scegliere **Sì** per disabilitare il backup di tutti i file gestiti in iTunes e iCloud. Scegliere **No** per consentire all'app di eseguire il backup dei file gestiti in iTunes e iCloud.| Sì |
-| **Consenti all'app di trasferire i dati ad altre app** | Specificare le app da cui questa app può ricevere dati: <ul><li> **App gestite da criteri**: consente il trasferimento solo ad altre app gestite da criteri.</li> <li>**Tutte le app**: consente il trasferimento a qualsiasi app. </li> <li>**Nessuna**: non consente il trasferimento a nessuna app, incluse le altre app gestite da criteri.</li></ul> Inoltre, se si imposta l'opzione su **App gestite da criteri** o **Nessuna**, la funzionalità di iOS 9 che consente alla ricerca Spotlight di cercare i dati nelle app verrà bloccata. <br><br> Esistono alcuni servizi e app esenti ai quali Intune può consentire il trasferimento dei dati. Vedere [Esenzioni per il trasferimento dei dati](#data-transfer-exemptions) per un elenco completo di app e servizi. | Tutte le app |
+| **Impedisci backup in iTunes e iCloud** | Scegliere **Sì** per impedire all'app di eseguire il backup dei dati aziendali o dell'istituto di istruzione in iTunes e iCloud. Scegliere **No** per consentire all'app di eseguire il backup dei dati aziendali o dell'istituto di istruzione in iTunes e iCloud.| Sì |
+| **Consenti all'app di trasferire i dati ad altre app** | Specificare le app da cui questa app può ricevere dati: <ul><li> **App gestite da criteri**: consente il trasferimento solo ad altre app gestite da criteri.</li> <li>**Tutte le app**: consente il trasferimento a qualsiasi app. </li> <li>**Nessuna**: non consente il trasferimento a nessuna app, incluse le altre app gestite da criteri.</li></ul> Inoltre, se si imposta l'opzione su **App gestite da criteri** o **Nessuna**, la funzionalità di iOS 9 che consente alla ricerca Spotlight di cercare i dati nelle app verrà bloccata. <br><br> Esistono alcuni servizi e app esenti ai quali Intune può consentire il trasferimento dei dati per impostazione predefinita. È anche possibile creare le proprie esenzioni se è necessario consentire il trasferimento dei dati a un'app che non supporta i criteri di protezione delle app di Intune. Per altre informazioni, vedere [Esenzioni per il trasferimento dei dati](#data-transfer-exemptions). | Tutte le app |
 | **Consenti all'app di ricevere i dati da altre app** | Specificare le app che possono trasferire dati a questa app: <ul><li>**App gestite da criteri**: consente il trasferimento solo da altre app gestite da criteri.</li><li>**Tutte le app**: consente il trasferimento dei dati da qualsiasi app.</li><li>**Nessuna**: non consente il trasferimento da alcuna app, incluse le altre app gestite da criteri.</li></ul> Esistono alcuni servizi e app esenti, dai quali Intune può consentire il trasferimento dei dati. Vedere [Esenzioni per il trasferimento dei dati](#data-transfer-exemptions) per un elenco completo di app e servizi. Le applicazioni abilitate per MAM con supporto per identità multiple nei dispositivi iOS non registrati ignorano questo criterio e consentono tutti i dati in ingresso. | Tutte le app |
 | **Impedisci "Salva con nome"** | Scegliere **Sì** per disabilitare l'uso dell'opzione Salva con nome in questa app. Scegliere **No** per consentire l'uso di Salva con nome. | No |
 | **Limita le operazioni taglia, copia e incolla con le altre app** | Specificare quando è possibile usare le azioni taglia, copia e incolla con questa app. È possibile scegliere tra: <ul><li>**Bloccato**: non consente le azioni taglia, copia e incolla tra questa app e altre app.</li><li>**App gestite da criteri**: consente le azioni taglia, copia e incolla tra questa app e altre app gestite da criteri.</li><li>**App gestite da criteri con Incolla in**: consente le azioni taglia o copia tra questa app e altre app gestite da criteri. I dati da qualsiasi app possono essere incollati in questa app.</li><li>**Qualsiasi app**: nessuna restrizione per le azioni taglia, copia e incolla in e da questa app. | Qualsiasi app |
@@ -53,13 +53,12 @@ Esistono alcune app e servizi della piattaforma esenti, per i quali in determina
 | Nome/i app/servizio | Descrizione |
 | ---- | --- |
 |<code>tel; telprompt</code> | App nativa del telefono |
-| <code>skype</code> | Skype |
-| <code>app-settings</code> | Impostazioni del dispositivo |
-| <code>itms; itmss; itms-apps; itms-appss; itms-services</code> | App Store |
-| <code>calshow</code> | Calendario nativo |
+|<code>skype</code> | Skype |
+|<code>app-settings</code> | Impostazioni del dispositivo |
+|<code>itms; itmss; itms-apps; itms-appss; itms-services</code> | App Store |
+|<code>calshow</code> | Calendario nativo |
 
-
-
+Per altre informazioni, vedere [Eccezioni dei criteri di trasferimento dei dati per le app](app-protection-policies-exception.md). 
 
 ## <a name="access-settings"></a>Impostazioni di accesso
 

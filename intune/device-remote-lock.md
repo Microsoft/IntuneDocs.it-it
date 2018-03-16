@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ecd7fa03b35e91b5a77906858fb251348796704d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0a8f3c93507cde4363570a9a39f8b3b1f69c07df
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="remotely-lock-managed-devices-with-intune"></a>Bloccare in remoto i dispositivi gestiti con Intune
 
@@ -36,7 +36,7 @@ Il blocco remoto è supportato nelle piattaforme seguenti:
 |Android|Sì|
 |iOS|Sì|
 |macOS|Sì|
-|Windows 10|Sì|
+|Windows 10 Desktop|No|
 |Windows 10 Mobile|Sì|
 |Windows Phone|Sì, per Windows Phone 8.1 e versioni successive|
 
@@ -45,12 +45,12 @@ Il blocco remoto è supportato nelle piattaforme seguenti:
 
 ## <a name="how-to-remote-lock-a-device"></a>Come bloccare un dispositivo in remoto
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel pannello **Intune** scegliere **Dispositivi**.
-4. Nel pannello **Dispositivi e gruppi** scegliere **Tutti i dispositivi**.
+4. Nel pannello **Dispositivi** scegliere **Tutti i dispositivi**.
 5. Nell'elenco dei dispositivi gestiti scegliere un dispositivo e quindi scegliere l'azione remota del dispositivo **Blocco remoto**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per visualizzare lo stato dell'azione appena eseguita, scegliere **Azioni del dispositivo** nel pannello **Dispositivi e gruppi**.
+Per visualizzare lo stato dell'azione appena eseguita, scegliere **Azioni del dispositivo** nel pannello **Dispositivi**.

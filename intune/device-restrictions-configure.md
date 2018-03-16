@@ -1,25 +1,23 @@
 ---
-title: Configurare le impostazioni relative alle restrizioni dei dispositivi di Intune
-titleSuffix: Azure portal
-description: "Informazioni su come usare Intune per configurare le impostazioni e le funzionalità nei dispositivi gestiti.\""
+title: Configurare le impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune
+titleSuffix: 
+description: "Informazioni su come usare Microsoft Intune per configurare le impostazioni e le funzionalità nei dispositivi gestiti."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 93b6a642f26ec6273853f75d063fd368698f3864
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 62c12cde5ca128a26b10e0e4516e0bbf7e0f0bbb
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Come configurare le impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune
 
@@ -31,18 +29,18 @@ Le restrizioni dei dispositivi consentono di controllare una vasta gamma di impo
 - Hardware
 - Impostazioni di condivisione dei dati
 
-Ad esempio, è possibile creare un profilo di restrizione dei dispositivi che impedisce agli utenti di dispositivi iOS di accedere alla fotocamera.
+Ad esempio, è possibile creare un profilo di restrizioni dei dispositivi che impedisce agli utenti di dispositivi iOS di accedere alla fotocamera.
 
-Usare le informazioni in questo argomento per apprendere le nozioni di base sulla configurazione di un profilo di restrizione del dispositivo e quindi leggere altri argomenti relativi a ogni piattaforma per informazioni specifiche sui dispositivi.
+Nozioni di base sul profilo di restrizioni dei dispositivi e articoli per le singole piattaforme, con informazioni specifiche relative ai singoli dispositivi.
 
-Per creare un profilo dispositivo contenente le impostazioni relative alle restrizioni del dispositivo:
+## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Creare un profilo dispositivo contenente le impostazioni relative alle restrizioni del dispositivo
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configura i dispositivi**.
-2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
-3. Nel pannello dei profili scegliere **Crea profilo**.
-4. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** per il profilo di restrizione del dispositivo.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nella pagina **Intune** scegliere **Configurazione del dispositivo**.
+2. Nella pagina **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
+3. Nella pagina **Profili** scegliere **Crea profilo**.
+4. Nella pagina **Crea profilo** immettere **Nome** e **Descrizione** per il profilo di restrizione del dispositivo.
 5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma del dispositivo a cui si desiderano applicare le impostazioni personalizzate. Attualmente, è possibile scegliere una tra le piattaforme seguenti per le impostazioni delle restrizioni del dispositivo:
     - **Android**
     - **iOS**
@@ -61,9 +59,9 @@ Per creare un profilo dispositivo contenente le impostazioni relative alle restr
     - [Impostazioni Windows 10 Team](device-restrictions-windows-10-teams.md)
     - [Impostazioni di Windows Holographic for Business](device-restrictions-windows-holographic.md)
     - [Impostazioni di Android for Work](device-restrictions-android-for-work.md)
-8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
+8. Al termine tornare alla pagina **Crea profilo** e fare clic su **Crea**.
 
-Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
+Il profilo viene creato e visualizzato nella pagina dell'elenco dei profili.
 Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.

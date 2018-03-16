@@ -10,14 +10,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: b2f6f6f4829e53d60cc259be220de89cf3f8d97d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Log di controllo per le attività di Intune
-I log di controllo includono una registrazione delle attività che generano una modifica in Microsoft Intune. Le azioni di creazione, aggiornamento (modifica), eliminazione ed assegnazione, o le attività remote, generano eventi di controllo che è possibile esaminare. È possibile esaminare i log di controllo per la maggior parte dei carichi di lavoro di Intune. 
+I log di controllo includono una registrazione delle attività che generano una modifica in Microsoft Intune. Le azioni di creazione, aggiornamento (modifica), eliminazione ed assegnazione, o le attività remote, generano eventi di controllo che è possibile esaminare. È possibile esaminare i log di controllo per la maggior parte dei carichi di lavoro di Intune. Il controllo è abilitato per impostazione predefinita per tutti i clienti e non può essere disabilitato. Gli eventi di controllo sono stati registrati per la prima volta nel rilascio della funzionalità di dicembre 2017, gli eventi precedenti non sono disponibili.
 
 ## <a name="who-can-access-the-data"></a>Utenti autorizzati ad accedere ai dati
 Gli utenti con le autorizzazioni seguenti possono esaminare i log di controllo:
@@ -27,7 +27,7 @@ Gli utenti con le autorizzazioni seguenti possono esaminare i log di controllo:
 
 ## <a name="audit-logs-for-intune-workloads"></a>Log di controllo per i carichi di lavoro di Intune
 È possibile esaminare i log di controllo nel gruppo Monitoraggio per ogni carico di lavoro di Intune.  
-1. Accedere al [portale Azure](https://portal.azure.com).
+1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
 3. Nel pannello **Intune** scegliere il carico di lavoro per cui si vogliono esaminare i log di controllo.
 4. Nel gruppo **Monitoraggio** per il carico di lavoro scegliere **Log di controllo**.
@@ -41,7 +41,7 @@ Per un log di controllo è disponibile una visualizzazione elenco predefinita ch
 - Azione avviata da (attore)
 - Attività
 - Destinazione/i
-- Category
+- Categoria
 - Stato
 
 È possibile fare clic su un elemento nella visualizzazione elenco per ottenere tutti i dettagli disponibili.

@@ -1,25 +1,26 @@
 ---
-title: Impostazioni relative alle restrizioni dei dispositivi per Windows 10
-titlesuffix: Azure portal
-description: "Informazioni sulle impostazioni di Intune che è possibile usare per controllare impostazioni e funzionalità nei dispositivi Windows 10."
+title: Impostazioni relative alle restrizioni dei dispositivi per Windows 10 in Microsoft Intune
+titlesuffix: 
+description: "Informazioni sulle opzioni di Microsoft Intune per il controllo di impostazioni e funzionalità nei dispositivi Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Windows 10 e versioni successive in Microsoft Intune
+#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi per Windows 10 e versioni successive in Microsoft Intune
+Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di Microsoft Intune configurabili per i dispositivi che eseguono Windows 10.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +31,7 @@ ms.lasthandoff: 02/19/2018
    - Questa impostazione di criteri non viene applicata se il computer è stato aggiunto ad Azure Active Directory e la registrazione automatica è abilitata. 
    - Questa impostazione di criteri non si applica ai computer con Windows 10 Home.
 - **Installazione manuale del certificato radice (solo per dispositivi mobili)**: impedisce all'utente di installare manualmente i certificati radice e i certificati intermedi CAP.
-- **Invio dati di diagnostica** - I valori possibili sono:
-    - **No**: non vengono inviati dati a Microsoft
-    - **Di base**: vengono inviate a Microsoft informazioni limitate
-    - **Avanzati**: vengono inviati a Microsoft dati di diagnostica avanzati
-    - **Completi** Invia gli stessi dati di Avanzati, più dati aggiuntivi sullo stato del dispositivo
+
 - **Fotocamera** - Consente o blocca l'uso della fotocamera sul dispositivo.
 - **Sincronizzazione dei file di OneDrive**: impedisce al dispositivo di sincronizzare i file in OneDrive.
 - **Archivi rimovibili**: specifica se è possibile usare con il dispositivo supporti di archiviazione esterni come le schede SD.
@@ -51,6 +48,7 @@ ms.lasthandoff: 02/19/2018
 - **Individuazione dei dispositivi**: blocca l'individuazione di un dispositivo da parte di altri dispositivi.
 - **Cambio modalità per l'attività (solo dispositivi mobili)**: blocca il cambio modalità per l'attività nel dispositivo.
 - **Finestra di dialogo di errore per la scheda SIM (solo dispositivi mobili)**: blocca la visualizzazione di un messaggio di errore nel dispositivo se non viene rilevata alcuna scheda SIM.
+- **Ink Workspace** (Area Windows Ink): impedisce agli utenti l'accesso all'area di lavoro Windows Ink. Quando questa impostazione non è configurata, l'area di lavoro Windows Ink è abilitata (la funzionalità è attivata), e l'utente è autorizzato a usarla sopra la schermata di blocco.
 - **Ridistribuzione automatica**: consente agli utenti con diritti amministrativi di eliminare tutti i dati utente e tutte le impostazioni utente tramite **CTRL+tasto WINDOWS+R** nella schermata di blocco del dispositivo. Il dispositivo viene automaticamente riconfigurato e registrato di nuovo nella gestione.
 
 
@@ -62,7 +60,7 @@ ms.lasthandoff: 02/19/2018
 Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo per il numero di volte specificato, il dispositivo viene cancellato.
     -   **Numero massimo di minuti di inattività fino al blocco dello schermo** - Specifica il periodo di tempo per cui un dispositivo deve rimanere inattivo prima che lo schermo venga bloccato.
     -   **Scadenza password (giorni)** - Specifica l'intervallo di tempo dopo il quale è necessario modificare la password del dispositivo.
-    -   **Impedisci riutilizzo delle password precedenti** - Specifica il numero di password utilizzate in precedenza che il dispositivo deve ricordare.
+    -   **Impedisci riutilizzo delle password precedenti** - Specifica il numero di password usate in precedenza che il dispositivo deve ricordare.
     -   **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (solo Mobile)** - Specifica che l'utente deve inserire una password per sbloccare il dispositivo (solo Windows 10 Mobile).
     -   **Password semplici**: consente di autorizzare l'uso di password semplici come 1111 o 1234. Questa impostazione consente o blocca anche l'uso delle password grafiche di Windows.
 -   **Crittografia**: consente di abilitare la crittografia nei dispositivi di destinazione.
@@ -75,6 +73,9 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
 -   **Personalizzazione dell'input**: non consente l'uso di servizi di riconoscimento vocale basati sul cloud per Cortana, app di dettatura o app di Microsoft Store. Se si consentono questi servizi, Microsoft potrebbe raccogliere dati vocali per migliorare il servizio.
 -   **Accettazione automatica delle richieste di associazione e di consenso utente sulla privacy**: consente a Windows di accettare automaticamente messaggi di associazione e consenso sulla privacy durante l'esecuzione di app.
+- **Pubblica le attività utente**: impostare l'opzione su **Blocca** per impedire le esperienze condivise e l'individuazione delle ultime risorse usate nel cambio modalità per l'attività.
+- **Solo attività locali**: impostare l'opzione su **Blocca** per impedire le esperienze condivise e l'individuazione delle ultime risorse usate nel cambio modalità solo per l'attività locale.
+
 
 È possibile definire le informazioni accessibili per tutte le app nel dispositivo. È possibile definire eccezioni per le singole app tramite **Eccezioni alla privacy per app**.
 
@@ -130,7 +131,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 ## <a name="locked-screen-experience"></a>Esperienza della schermata bloccata
 
 - **Notifiche del centro notifiche (solo per dispositivi mobili)**: consente la visualizzazione delle notifiche del centro notifiche nella schermata di blocco del dispositivo (solo Windows 10 Mobile).
-- **URL dell'immagine della schermata bloccata (solo desktop)**: specifica l'URL di un'immagine in formato JPEG, PNG o JPG che verrà usata come sfondo della schermata bloccata di Windows. Gli utenti non possono modificare questa impostazione.
+- **URL dell'immagine della schermata bloccata (solo desktop)**: specifica l'URL di un'immagine in formato JPEG che verrà usata come sfondo della schermata bloccata di Windows. Gli utenti non possono modificare questa impostazione.
 -   **Timeout dello schermo configurabile dall'utente (solo dispositivi mobili)**: consente agli utenti di configurare il timeout. 
 -   **Cortana nella schermata di blocco (solo desktop)**: non consente all'utente di interagire con Cortana quando è attiva la schermata di blocco del dispositivo (solo Windows 10 Desktop).
 -   **Notifiche di tipo avviso popup nella schermata di blocco**: blocca la visualizzazione dei messaggi di avviso nella schermata di blocco del dispositivo.
@@ -154,7 +155,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
 
 
-## <a name="edge-browser"></a>Browser Edge
+## <a name="edge-browser"></a>Browser Microsoft Edge
 
 -   **Browser Microsoft Edge (solo dispositivi mobili)** - Consente l'uso del browser Web Edge sul dispositivo.
 -   **Elenco a discesa della barra degli indirizzi (solo desktop)**: usare questa opzione per impedire a Edge di visualizzare suggerimenti in un elenco a discesa durante la digitazione. Ciò consente di ridurre al minimo l'uso di larghezza di banda tra Microsoft Edge e i servizi Microsoft.
@@ -180,6 +181,8 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Motore di ricerca predefinito**: specifica il motore di ricerca predefinito da usare. Gli utenti finali possono modificare questo valore in qualsiasi momento.
 -   **Cancella i dati di esplorazione all'uscita**: cancella la cronologia e i dati di esplorazione quando l'utente esce da Edge.
 -   **Raccolta di dati per il riquadro animato**: interrompe la raccolta di informazioni dal riquadro animato quando gli utenti aggiungono un sito al menu Start da Microsoft Edge.
+-  **Elenco Preferiti**: definisce il percorso del file dei preferiti. Ad esempio, http://contoso.com/favorites.html.
+-  **Restrict changes to Favorites** (Limita modifiche ai Preferiti): impostare questa proprietà su **Blocca** per impedire agli utenti di eseguire operazioni di aggiunta, importazione, ordinamento o modifica dell'elenco Preferiti. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
@@ -209,7 +212,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **NFC** - Consente all'utente di attivare e configurare funzionalità Near Field Communications sul dispositivo.
 -   **Wi-Fi** - Consente all'utente di attivare e configurare le funzionalità Wi-Fi del dispositivo (solo Windows 10 Mobile).
 -   **Connetti automaticamente a hotspot Wi-Fi** - Consente al dispositivo di connettersi automaticamente agli hotspot Wi-Fi gratuiti e accettare automaticamente termini e condizioni per la connessione.
--   **Configurazione Wi-Fi manuale** - Controlla se l'utente può configurare le proprie connessioni Wi-Fi o se può usare solo le connessioni configurate da un profilo Wi-Fi (solo Windows 10 Mobile).
+-   **Configurazione Wi-Fi manuale**: controlla se l'utente può configurare le proprie connessioni Wi-Fi o se può usare solo le connessioni configurate da un profilo Wi-Fi (solo Windows 10 Mobile).
 -   **Intervallo di analisi Wi-Fi**: specifica la frequenza con cui i dispositivi ricercano le reti Wi-Fi. Specificare un valore compreso tra 1 (ricerca più frequente) e 500 (ricerca meno frequente).
 -   **Servizi Bluetooth consentiti**: specifica sotto forma di stringhe esadecimali un elenco di profili e servizi Bluetooth consentiti.
 
@@ -297,13 +300,13 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Monitoraggio del comportamento** - Consente a Defender di controllare la presenza di modelli noti di attività sospette nei dispositivi.
 -   **Network Inspection System (NIS)**: consente di proteggere i computer dagli exploit basati sulla rete. Usa le firme delle vulnerabilità note da Microsoft Endpoint Protection Center per consentire di rilevare e bloccare il traffico dannoso.
 -   **Analizza tutti i download** - Controlla se Defender deve analizzare tutti i file scaricati da Internet.
--   **Analizza gli script caricati nei Web browser Microsoft** - Consente a Defender di analizzare gli script utilizzati in Internet Explorer.
+-   **Analizza gli script caricati nei Web browser Microsoft** - Consente a Defender di analizzare gli script usati in Internet Explorer.
 -   **Accesso dell'utente finale a Defender** - Controlla se l'interfaccia utente di Windows Defender è nascosta agli utenti finali.
 Quando questa impostazione viene modificata, ha effetto dal successivo avvio del PC dell'utente finale.
 -   **Intervallo di aggiornamento della firma (in ore)**: specifica l'intervallo con il quale Defender controllerà i nuovi file di firma.
 -   **Monitora l'attività di file e programmi** - Consente a Defender di monitorare l'attività di file e programmi nei dispositivi.
 -   **Giorni di attesa prima dell'eliminazione di malware in quarantena** - Consente a Defender di continuare a monitorare il malware risolto per il numero di giorni specificato, in modo che sia possibile controllare manualmente i dispositivi colpiti in precedenza. Se si imposta il numero di giorni su **0**, il malware rimane nella cartella della quarantena e non viene rimosso automaticamente.
--   **Limite di utilizzo della CPU durante un'analisi** - Consente di limitare la quantità di CPU utilizzata per le analisi (da **1** a **100**).
+-   **Limite di utilizzo della CPU durante un'analisi** - Consente di limitare la quantità di CPU usata per le analisi (da **1** a **100**).
 -   **Analizza file di archivio** - Consente a Defender di analizzare i file archiviati come i file con estensione .zip o .cab.
 -   **Analizza i messaggi di posta in arrivo** - Consente a Defender di analizzare i messaggi di posta elettronica non appena arrivano sul dispositivo.
 -   **Analizza le unità rimovibili durante un'analisi completa** - Consente a Defender di analizzare le unità rimovibili come le chiavi USB.
