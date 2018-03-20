@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c02ea2df53b1524933cea72a8bcc3de89772e62
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 0f2d37a9033464381de5c23a558d0205f85fe56a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Configurare Connettore di certificati di Intune per il servizio Web PKI Manager di Symantec
 
@@ -166,8 +166,11 @@ Usare la procedura seguente per ottenere il certificato di registrazione dell'au
 
 Se si usa già la versione più recente di Connettore di certificati di Intune per una CA Microsoft esistente e si vuole aggiungere il supporto della CA Symantec, ignorare questo passaggio. In caso contrario, scaricare la versione più recente di Connettore di certificati di Intune dal portale di amministrazione di Intune e seguire queste istruzioni.
 
-1. Accedere a https://portal.azure.com usando le credenziali di amministratore tenant di Intune e cercare le risorse di Intune.
-2. Scaricare NDESConnectorSetup.exe da **Microsoft Intune** > **Configurazione del dispositivo** > **Autorità di certificazione** > **collegamento Scarica il connettore del certificato**
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** selezionare **Configurazione dispositivo**.
+4. Nel riquadro **Configurazione dispositivo** selezionare **Autorità di certificazione**.
+5. Fare clic su **Aggiungi** e selezionare **Scaricare il file del connettore**. Salvare il file scaricato in un percorso a cui è possibile accedere dal server in cui verrà installato. 
 3. Eseguire NDESConnectorSetup.exe con privilegi elevati.
 
     a. Nella schermata **Opzioni di installazione** selezionare **Distribuzione PFX** come illustrato nello screenshot seguente.  Completare il resto dell'installazione con le selezioni predefinite.
@@ -233,7 +236,7 @@ I certificati PKCS distribuiti per i dispositivi gestiti di Intune devono essere
 
     a. Accedere al [portale di Azure](https://portal.azure.com) usando le credenziali di amministratore del tenant di Intune e cercare le risorse di Intune.
 
-    b. Creare un profilo certificato attendibile da **Microsoft Intune** > **Configurazione del dispositivo** - **Profili** > **Crea profilo**.
+    b. Creare un profilo certificato attendibile da **Microsoft Intune** > **Configurazione dispositivo** > **Profili** > **Crea profilo**.
 
     c. Specificare le informazioni richieste nei campi **Nome** e **Descrizione**, quindi selezionare la piattaforma di destinazione. 
 
@@ -264,7 +267,7 @@ L'OID del profilo certificato viene associato a un modello di profilo certificat
 ## <a name="create-a-pkcs-certificate-profile"></a>Creare un profilo certificato PKCS
 
 1. Accedere al [portale di Azure](https://portal.azure.com) usando le credenziali di amministratore del tenant di Intune e cercare le risorse di Intune.
-2. Creare un profilo certificato PKCS da **Microsoft Intune** > **Configurazione del dispositivo - Profili** > **Crea profilo** > **Certificato PKCS**.
+2. Creare un profilo certificato PKCS da **Microsoft Intune** > **Configurazione dispositivo > Profili** > **Crea profilo**.
 
     a. Specificare le informazioni richieste nei campi **Nome** e **Descrizione**, quindi selezionare la piattaforma di destinazione.
 

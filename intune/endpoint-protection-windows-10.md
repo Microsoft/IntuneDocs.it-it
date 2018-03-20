@@ -1,12 +1,12 @@
 ---
-title: Impostazioni di Intune Endpoint Protection per Windows 10
-titlesuffix: Azure portal
-description: "Informazioni sulle opzioni di Intune che è possibile usare per controllare le impostazioni di Endpoint Protection nei dispositivi Windows 10.\""
+title: Impostazioni di Microsoft Intune Endpoint Protection per Windows 10
+titlesuffix: 
+description: "Informazioni sulle opzioni di Intune che è possibile usare per controllare le impostazioni di Endpoint Protection, ad esempio BitLocker nei dispositivi Windows 10."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Impostazioni di Endpoint Protection per Windows 10 e versioni successive in Microsoft Intune
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Creare impostazioni di Endpoint Protection per Windows 10 e versioni successive in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Il profilo di Endpoint Protection consente di controllare le funzionalità di sicurezza dei dispositivi Windows 10, ad esempio BitLocker e Windows Defender.
+Il profilo di Endpoint Protection consente di controllare le funzionalità di sicurezza nei dispositivi Windows 10, ad esempio BitLocker e Windows Defender.
 
-Usare le informazioni in questo argomento per apprendere come creare profili di Endpoint Protection.
+Usare le informazioni di questo articolo per apprendere come creare profili di Endpoint Protection.
 
 > [!Note]
 > Queste impostazioni non sono supportate nelle edizioni di Windows 10 Home e Professional.
 
 ## <a name="create-an-endpoint-protection-profile"></a>Creare un profilo di Endpoint Protection
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
-2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
+2. Nel pannello **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
 3. Nel pannello dei profili scegliere **Crea profilo**.
 4. Nel pannello **Crea profilo** immettere i valori di **Nome** e **Descrizione** per il profilo delle funzionalità del dispositivo.
 5. Dall'elenco a discesa **Piattaforma** selezionare **Windows 10 e versioni successive**.
 6. Dall'elenco a discesa **Tipo di profilo** scegliere **Endpoint Protection**.
-7. Configurare le impostazioni desiderate. I dettagli in questo argomento consentono di comprendere la funzione di ogni impostazione. Al termine, scegliere **OK**.
+7. Configurare le impostazioni desiderate. I dettagli in questo articolo consentono di comprendere la funzione di ogni impostazione. Al termine, scegliere **OK**.
 8. Tornare al pannello **Crea profilo** e scegliere **Crea**.
 
 Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
@@ -57,6 +57,7 @@ Application Guard è disponibile solo per i dispositivi Windows 10 a 64 bit. Qua
 - **Stampa dal browser virtuale**: consente alle stampanti PDF, XPS, locali e/o di rete di stampare contenuto dal browser virtuale.
 - **Raccogli registri**: consente di raccogliere i registri degli eventi che si verificano in una sessione del browser di Application Guard.
 - **Conserva i dati del browser generati dall'utente**: consente di salvare i dati utente, ad esempio password, Preferiti e cookie, creati durante una sessione del browser virtuale di Application Guard.
+- **Accelerazione grafica**: consente di caricare più rapidamente i siti Web con molti elementi grafici quando si lavora all'interno della sessione del browser virtuale di Application Guard e si consente l'accesso a un'unità di elaborazione grafica virtuale.
 
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall
@@ -100,7 +101,7 @@ Queste impostazioni sono applicabili a tipi di rete specifici, tra cui **Rete di
 
 ## <a name="windows-encryption"></a>Crittografia di Windows
 
-### <a name="windows-settings"></a>Impostazioni di Windows
+### <a name="windows-settings"></a>Impostazioni Windows
 
 Queste impostazioni si applicano a tutte le versioni di Windows 10.
 

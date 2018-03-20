@@ -1,12 +1,12 @@
 ---
-title: Accesso condizionale con Intune
-titlesuffix: Azure portal
-description: Informazioni su come definire le condizioni che utenti e dispositivi devono soddisfare per accedere alle risorse aziendali in Microsoft Intune."
+title: Accesso condizionale con Microsoft Intune
+titlesuffix: 
+description: Informazioni su come definire le condizioni che utenti, dispositivi e app devono soddisfare per accedere alle risorse aziendali in Microsoft Intune.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 05/23/2017
+ms.date: 03/06/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-conditional-access"></a>Che cos'è l'accesso condizionale?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Questo argomento descrive l'accesso condizionale applicato a Enterprise Mobility + Security (EMS) e, a seguire, gli scenari comuni di accesso condizionale quando si usa Intune.
+L'accesso condizionale fa riferimento ai modi con i quali è possibile controllare i dispositivi e le app che sono autorizzati a connettersi alle risorse aziendali e di posta elettronica. In questo argomento viene illustrato l'accesso condizionale basato su dispositivi e app e gli scenari comuni per l'uso dell'accesso condizionale con Intune.
 
 L'accesso condizionale di Enterprise Mobility + Security (EMS) non è un prodotto autonomo, bensì una soluzione usata in tutti i servizi e i prodotti che fanno parte di EMS. Questa soluzione consente un controllo di accesso granulare per la sicurezza dei dati aziendali, oltre a offrire agli utenti un'esperienza che consente loro di operare in modo ottimale da qualsiasi dispositivo e luogo.
 

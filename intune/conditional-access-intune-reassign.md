@@ -1,10 +1,10 @@
 ---
-title: Eseguire la migrazione dei criteri di accesso condizionale dal portale di Intune classico al portale di Azure
-titlesuffix: Azure portal
-description: Eseguire la migrazione dei criteri di accesso condizionale dal portale di Intune classico al portale di Azure.
+title: Eseguire la migrazione dell'accesso condizionale al portale di Azure
+titlesuffix: Microsoft Intune
+description: Riassegnare i criteri di accesso condizionale creati in precedenza nel portale di Intune classico al portale di Azure.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdb64d4cc668bf382c39a235111547c2f4e21c9c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Riassegnare i criteri di accesso condizionale dal portale di Intune classico al portale di Azure
 
-Con il nuovo portale di Azure, l'accesso condizionale offre supporto per più criteri di applicazione insieme ad altre possibilità di personalizzazione.
+Con il nuovo portale di Azure, l'accesso condizionale offre supporto per più criteri di applicazione insieme ad altre possibilità di personalizzazione. Se in precedenza sono stati creati criteri di accesso condizionale nel portale di Intune classico, è possibile eseguirne la migrazione al portale di Azure. 
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -79,7 +79,7 @@ Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amm
 
 4. Scegliere **Utenti e gruppi** nella sezione **Assegnazioni** per assegnare i nuovi criteri di accesso condizionale.
     
-    ![Confronto dell'interfaccia utente per i gruppi di utenti tra i portali di Intune e di Azure](./media/reassign-ca-1.png)
+    ![Immagine del confronto dell'interfaccia utente per i gruppi di utenti tra i portali di Intune e di Azure](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > La selezione eseguita per il portale di Azure deve corrispondere alla selezione eseguita per il portale classico. Ad esempio, se sono selezionati tutti gli utenti nel portale di Intune classico, selezionare **Tutti gli utenti** nel portale di Azure. Inoltre, se è stata scelta l'opzione **Gruppi esenti** nel portale di Intune classico, escludere tali gruppi anche nel portale di Azure.
@@ -94,7 +94,7 @@ Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amm
 
 9. Fare clic su **Fine**.
 
-    ![Confronto dell'interfaccia utente per le app cloud tra i portali di Intune e di Azure](./media/reassign-ca-3.png)
+    ![Immagine del confronto dell'interfaccia utente per le app cloud tra i portali di Intune e di Azure](./media/reassign-ca-3.png)
 
     > [!TIP] 
     > Se si hanno più app con gli stessi criteri, valutare la possibilità di consolidarli in un singolo set di criteri nel portale di Azure.
@@ -105,7 +105,7 @@ Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amm
 
 12. Dopo aver scelto le piattaforme dei dispositivi, fare clic su **Fine** due volte.
 
-    ![Confronto dell'interfaccia utente della piattaforma dei dispositivi tra i portali di Intune e di Azure](./media/reassign-ca-4.png)
+    ![Immagine del confronto dell'interfaccia utente della piattaforma dei dispositivi tra i portali di Intune e di Azure](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > Se sono state scelte singole piattaforme nel portale di Intune classico, scegliere le singole piattaforme nel portale di Azure.
@@ -119,7 +119,7 @@ Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amm
 
 15. Dopo aver scelto l'app client, fare clic su **Fine** due volte.
 
-    ![Confronto dell'interfaccia utente per le app client tra i portali di Intune e di Azure](./media/reassign-ca-6.png)
+    ![Immagine del confronto dell'interfaccia utente per le app client tra i portali di Intune e di Azure](./media/reassign-ca-6.png)
 
 16. Se sono state scelte le impostazioni del browser nel portale di Intune classico, selezionare **Browser** e **App per dispositivi mobili e client desktop** nel portale di Azure. Nel caso in cui non siano state scelte le impostazioni del browser nel portale di Intune classico, scegliere solo **App per dispositivi mobili e client desktop**. 
 
@@ -133,7 +133,7 @@ Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amm
 
 21. Attivare l'opzione **Abilita criteri** nel pannello **Nuovo** dei criteri di accesso condizionale e quindi fare clic su **Crea**.
 
-    ![Confronto dell'interfaccia utente per abilitare i criteri di accesso condizionale tra i portali di Intune e di Azure](./media/reassign-ca-11.png)
+    ![Immagine del confronto dell'interfaccia utente per abilitare i criteri di accesso condizionale tra i portali di Intune e di Azure](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>Riassegnare i criteri di accesso condizionale basati su dispositivo di Intune per i client EAS
 
@@ -147,7 +147,7 @@ Se sono state configurate le impostazioni di Exchange ActiveSync come parte dei 
 
 4. Scegliere **Utenti e gruppi** nella sezione **Assegnazioni** per assegnare i nuovi criteri di accesso condizionale.
 
-    ![Confronto dell'interfaccia utente per i gruppi di utenti tra i portali di Intune e di Azure](./media/reassign-ca-12.png)
+    ![Immagine del confronto dell'interfaccia utente per i gruppi di utenti tra i portali di Intune e di Azure](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
     > La selezione effettuata per il portale di Azure deve corrispondere alla selezione effettuata per il portale di Azure. Ad esempio, se sono selezionati tutti gli utenti nel portale di Intune classico, selezionare **Tutti gli utenti** nel portale di Azure. Inoltre, se è stata scelta l'opzione **Gruppi esenti** nel portale di Intune classico, escludere tali gruppi anche nel portale di Azure.
@@ -158,14 +158,14 @@ Se sono state configurate le impostazioni di Exchange ActiveSync come parte dei 
 
 7. Nel pannello **App cloud**, fare clic su **Seleziona app** e scegliere **Exchange Online**. Fare quindi clic su **Seleziona** e su **Fine**.
 
-    ![Confronto dell'interfaccia utente per le app cloud tra i portali di Intune e di Azure](./media/reassign-ca-14.png)
+    ![Immagine del confronto dell'interfaccia utente per le app cloud tra i portali di Intune e di Azure](./media/reassign-ca-14.png)
 
     > [!IMPORTANT] 
     > I criteri di accesso condizionale per i client EAS non possono includere altre app cloud.
 
 8. Nel pannello **Condizioni** scegliere **App client** e quindi scegliere l'app client applicabile. Se si è scelto di bloccare i client che non sono supportati da Intune, usare l'opzione **Applica i criteri solo alle piattaforme supportate**.
 
-    ![Confronto dell'interfaccia utente per le app client tra i portali di Intune e di Azure](./media/reassign-ca-15.png)
+    ![Immagine del confronto dell'interfaccia utente per le app client tra i portali di Intune e di Azure](./media/reassign-ca-15.png)
 
 9. Dopo aver scelto l'app client, fare clic su **Fine** due volte.
 
@@ -173,11 +173,11 @@ Se sono state configurate le impostazioni di Exchange ActiveSync come parte dei 
 
 11. Scegliere **Richiedi che i dispositivi siano contrassegnati come conformi** in **Concedi controlli di accesso** e quindi fare clic su **Seleziona**.
 
-    ![Confronto dell'interfaccia utente per concedere l'accesso tra i portali di Intune e di Azure](./media/reassign-ca-16.png)
+    ![Immagine del confronto dell'interfaccia utente per concedere l'accesso tra i portali di Intune e di Azure](./media/reassign-ca-16.png)
 
 12. Attivare l'opzione **Abilita criteri** nel pannello **Nuovo** dei criteri di accesso condizionale e quindi fare clic su **Crea**.
 
-    ![Confronto dell'interfaccia utente per abilitare i criteri di accesso condizionale tra i portali di Intune e di Azure](./media/reassign-ca-17.png)
+    ![Immagine del confronto dell'interfaccia utente per abilitare i criteri di accesso condizionale tra i portali di Intune e di Azure](./media/reassign-ca-17.png)
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Disabilitare i criteri di accesso condizionale nel portale di Intune classico
 
@@ -196,7 +196,7 @@ Dopo aver riassegnato i criteri di accesso condizionale nel portale di Azure, è
 
 4.  Deselezionare l'opzione **Abilita criteri di accesso condizionale** e quindi fare clic su **Salva**.
 
-    ![Disabilitare i criteri di accesso condizionale nel portale di Intune classico](./media/reassign-ca-18.png)
+    ![Immagine della disabilitazione dei criteri di accesso condizionale nel portale di Intune classico](./media/reassign-ca-18.png)
 
 ## <a name="see-also"></a>Vedere anche
 

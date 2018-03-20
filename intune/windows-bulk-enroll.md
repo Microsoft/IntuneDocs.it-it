@@ -1,6 +1,6 @@
 ---
 title: Registrazione in blocco per Windows 10
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: Creare un pacchetto di registrazione in blocco per Microsoft Intune
 keywords: 
 author: Erikje
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 8b4c9f5685c12bb6c15d15d85c73d573dfcd66e8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 851be6ad98383937a3457a33e47115933f309cea
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registrazione in blocco per dispositivi Windows
 
@@ -36,7 +36,7 @@ Gli utenti di Azure AD sono utenti standard di questi dispositivi e devono confo
 ## <a name="create-a-provisioning-package"></a>Creare un pacchetto di provisioning
 
 1. Scaricare [Progettazione configurazione di Windows](https://www.microsoft.com/store/apps/9nblggh4tx22) da Microsoft Store.
-![Screenshot e descrizione dallo Store dell'app Applicazione immagine e configurazione di Windows](media/bulk-enroll-store.png)
+![Screenshot dallo Store dell'app Progettazione configurazione di Windows](media/bulk-enroll-store.png)
 
 2. Aprire l'**Applicazione immagine e configurazione di Windows** e selezionare **Provision desktop devices** (Esegui provisioning dispositivi desktop).
 ![Schermata della selezione del provisioning dei dispositivi desktop nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-select.png)
@@ -47,23 +47,24 @@ Gli utenti di Azure AD sono utenti standard di questi dispositivi e devono confo
   - **Description** (Descrizione): una descrizione facoltativa del progetto ![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-name.png)
 
 4.  Specificare un nome univoco per i dispositivi. I nomi possono includere un numero di serie (%%NUMERO DI SERIE%%) o un set di caratteri casuali. Facoltativamente, è anche possibile immettere un codice Product Key, se si vuole aggiornare l'edizione di Windows, configurare il dispositivo per la condivisione e rimuovere software pre-installato.
-![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-device.png)
+
+    ![Screenshot della schermata in cui specificare nome e codice Product Key nell'app Progettazione configurazione di Windows](media/bulk-enroll-device.png)
 
 5.  Facoltativamente, è possibile configurare la rete Wi-Fi alla quale i dispositivi si connettono quando vengono avviati per la prima volta.  Se i dispositivi di rete non sono configurati, quando il dispositivo viene avviato per la prima volta è necessaria una connessione di rete cablata.
 ![Schermata di abilitazione Wi-Fi inclusi SSID di rete e opzioni del tipo di rete nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-network.png)
 
 6.  Selezionare **Enroll in Azure AD** (Registra in Azure AD), immettere una data per **Bulk Token Expiry** (Scadenza token in blocco) e selezionare **Get Bulk Token** (Ottieni token in blocco).
-![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-account.png)
+![Screenshot della schermata di gestione degli account nell'app Progettazione configurazione di Windows](media/bulk-enroll-account.png)
 
 7. Specificare le credenziali di Azure AD per ottenere un token in blocco.
-![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-cred.png)
+![Screenshot della schermata di accesso all'app Progettazione configurazione di Windows](media/bulk-enroll-cred.png)
 
 8.  Fare clic su **Next** (Avanti) quando **Bulk Token** (Token in blocco) viene recuperato correttamente.
 
 9. Facoltativamente, è possibile selezionare **Add applications** (Aggiungi applicazioni) e **Add certificates** (Aggiungi certificati). Verrà eseguito il provisioning di tali applicazioni e certificati nel dispositivo.
 
 10. Facoltativamente, è possibile proteggere il pacchetto di provisioning con una password.  Scegliere **Crea**.
-![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](media/bulk-enroll-create.png)
+![Screenshot della protezione del pacchetto nell'app Progettazione configurazione di Windows](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Eseguire il provisioning dei dispositivi
 

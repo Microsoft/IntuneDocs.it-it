@@ -1,12 +1,12 @@
 ---
-title: "Monitorare la conformità dell'accesso condizionale per Exchange locale ed Exchange Online"
-titlesuffix: Azure portal
-description: "Monitorare la conformità dell'accesso condizionale per Exchange locale ed Exchange Online tramite il portale di Azure in Intune"
+title: Monitorare l'accesso condizionale per Exchange in Microsoft Intune
+titlesuffix: 
+description: "Monitorare la conformità dell'accesso condizionale per Exchange locale ed Exchange Online tramite il portale di Azure in Intune."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2025bbb008be090420ebb3778fc37a0b1790608b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 932dfe32c6df5741615d9db9f303aaee7785d3a3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Monitorare la conformità dell'accesso condizionale per Exchange locale ed Exchange Online in Intune
 
@@ -36,23 +36,23 @@ A partire dalla versione 1704 di Intune, gli amministratori possono vedere infor
 
 2.  Dopo l'accesso viene visualizzato il **dashboard di Azure**.
 
-3.  Scegliere **Altri servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+3.  Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
 4.  Scegliere **Intune**. Verrà visualizzato il **dashboard di Intune**.
 
-5.  Scegliere **Accesso condizionale** e quindi scegliere **Panoramica**.
+5.  Scegliere **Accesso condizionale** e quindi **Panoramica**.
 
-6.  Scegliere una delle tre aree (**Bloccato**, **Quarantena** o **Consentito**) nel grafico per visualizzare le informazioni di report sulla conformità dell'accesso condizionale.
+6.  Scegliere una delle tre aree (**Consentito**, **Bloccato** o **Quarantena**) nel grafico per visualizzare le informazioni per la creazione dei report di conformità dell'accesso condizionale.
 
-    ![Dashboard dell'accesso condizionale](./media/CA-reporting-intune-1.png)
+    ![Immagine del dashboard dell'accesso condizionale](./media/CA-reporting-intune-1.png)
 
-Dopo aver scelto una delle tre aree, è possibile visualizzare ulteriori dettagli sui dispositivi consentiti, bloccati o in quarantena.
+Dopo aver scelto una delle tre aree, è possibile visualizzare altri dettagli sui dispositivi consentiti, bloccati o in quarantena.
 
-È anche possibile eseguire il drill-down di dispositivi specifici per visualizzare ulteriori dettagli. Ad esempio, il dispositivo scelto nell'immagine seguente è bloccato. Intune offre la possibilità di rimuovere i dati aziendali dal pannello del report di conformità dell'accesso condizionale.
+È anche possibile eseguire il drill-down di dispositivi specifici per visualizzare ulteriori dettagli. Ad esempio, il dispositivo scelto nell'immagine seguente è bloccato. Intune offre la possibilità di rimuovere i dati aziendali dal riquadro del report di conformità dell'accesso condizionale.
 
-![Report dei dettagli del dispositivo per l'accesso condizionale](./media/CA-reporting-intune-3.png)
+![Immagine del report dei dettagli del dispositivo per l'accesso condizionale](./media/CA-reporting-intune-3.png)
 
-Nella pannello dei dettagli del dispositivo, è possibile visualizzare ulteriori informazioni:
+Nella riquadro dei dettagli del dispositivo è possibile visualizzare altre informazioni:
 
 -   **Panoramica:** sono visualizzate proprietà del dispositivo come versione del sistema operativo, modello, proprietà, numero di serie, produttore, numero di telefono e ora dell'ultima archiviazione.
 

@@ -1,12 +1,12 @@
 ---
-title: Configurare Exchange Connector per EAS con Intune
-titleSuffix: Azure portal
-description: Usare lo strumento Connector per consentire la comunicazione tra Intune ed Exchange Server locale
+title: Configurare Microsoft Intune On-Premises Exchange Connector
+titleSuffix: 
+description: Usare Exchange Connector locale per gestire l'accesso dei dispositivi alle cassette postali di Exchange in base alla registrazione in Intune e a Exchange Active Sync (EAS).
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb82b1a9af0cc8dd2f394747ce7ed8b695260bb9
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0caea2e8b7704fe2dfcbec937b59000ac2a12ae5
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurare Intune On-Premises Exchange Connector in Microsoft Intune in Azure
 
@@ -70,11 +70,11 @@ Nella tabella seguente sono elencati i requisiti per il computer in cui viene in
 
 1. In un sistema operativo Windows Server supportato per On-Premises Exchange Connector aprire il [portale di Azure](http://portal.azure.com) ed eseguire l'accesso con un account utente che è un amministratore nel server Exchange locale e dispone di una licenza per l'uso di Exchange Server.
 
-2. Scegliere **Altri servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+2. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
 3. Scegliere **Intune**. Verrà aperto il dashboard di Intune. Scegliere **Accesso locale**.
 
-4. Nella sezione **Installazione** del pannello **Accesso locale - Connettore per Exchange ActiveSync** scegliere **Scaricare il connettore locale**.
+4. Scegliere **Connettore per Exchange ActiveSync** e quindi scegliere **Scaricare il connettore locale**.
 
 5.  On-premises Exchange Connector è contenuto in una cartella compressa (zip) che può essere aperta o salvata. Nella finestra di dialogo **Download del file** scegliere **Salva** per archiviare la cartella compressa in una posizione protetta.
 
@@ -93,7 +93,7 @@ Eseguire la procedura seguente per installare Intune On-premises Exchange Connec
 
 3.  Nella finestra di dialogo **Microsoft Intune Exchange Connector** selezionare **Microsoft Exchange Server locale** o **Microsoft Exchange Server ospitato**.
 
-  ![Scegliere il tipo di server Exchange](./media/intune-sa-exchange-connector-config.png)
+  ![Immagine che illustra dove scegliere il tipo di Exchange Server](./media/intune-sa-exchange-connector-config.png)
 
   Per un server Exchange locale specificare il nome del server o il nome di dominio completo del server Exchange in cui è ospitato il ruolo **Server Accesso client**.
 
@@ -116,7 +116,7 @@ Eseguire la procedura seguente per installare Intune On-premises Exchange Connec
 
     5. Nei campi **Utente (dominio\utente)** e **Password** immettere le credenziali necessarie per la connessione al server Exchange.
 
-    6.  Fornire le credenziali amministrative necessarie per inviare le notifiche alla cassetta postale di Exchange Server di un utente. È possibile configurare queste notifiche con i criteri di accesso condizionale in Intune.
+    6.  Specificare le credenziali necessarie per inviare le notifiche alla cassetta postale di Exchange Server di un utente. L'utente può essere dedicato solo alle notifiche. Perché l'utente delle notifiche sia in grado di inviare notifiche tramite posta elettronica, deve avere una cassetta postale di Exchange. È possibile configurare queste notifiche con i criteri di accesso condizionale in Intune.  
 
         Verificare che il servizio di individuazione automatica e i servizi Web Exchange siano configurati nel server Accesso client di Exchange. Per altre informazioni, vedere [Server Accesso client](https://technet.microsoft.com/library/dd298114.aspx).
 

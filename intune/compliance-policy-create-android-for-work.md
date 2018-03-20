@@ -1,12 +1,12 @@
 ---
 title: "Creare criteri di conformità per Android for Work"
-titleSuffix: Azure portal
-description: "Informazioni sulle modalità di creazione dei criteri di conformità per i dispositivi Android for Work.\""
+titleSuffix: Microsoft Intune
+description: "Creare criteri di conformità per i dispositivi Android for Work in Microsoft Intune in modo da poter specificare i requisiti che un dispositivo deve soddisfare per essere conforme."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b5ff76137da7b42fddc5c1238ef9e102adfa1307
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 8ca31d4c83ccc6b786933080b96f66953cf1a108
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi Android for Work in Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-I criteri di conformità vengono creati per ogni piattaforma.  È possibile creare i criteri di conformità nel portale di Azure. Per altre informazioni sui criteri di conformità, vedere [cos'è la conformità dei dispositivi](device-compliance.md). Per informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, vedere [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
+I criteri di conformità di un dispositivo Android for Work in Intune specificano le regole e le impostazioni che i dispositivi Android for Work devono soddisfare per essere considerati conformi. È possibile usare questi criteri con accesso condizionale per consentire o bloccare l'accesso alle risorse aziendali, oltre che ottenere report per dispositivi e intraprendere azioni per la mancata conformità. I criteri di conformità dei dispositivi vengono creati per ogni piattaforma nel portale di Intune in Azure. Per altre informazioni sui criteri di conformità e i prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, vedere [Introduzione ai criteri conformità](device-compliance-get-started.md).
 
 La tabella seguente descrive il modo in cui le impostazioni di non conformità vengono gestite quando i criteri di conformità vengono usati con i criteri di accesso condizionale.
 
@@ -51,12 +51,14 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creare i criteri di conformità nel portale di Azure
 
-1. Dal pannello **Intune** scegliere **Imposta la conformità dei dispositivi**. In **Gestisci** scegliere **All device compliance policies** (Tutti i criteri di conformità dei dispositivi) e scegliere **Crea**.
-2. Digitare un nome e una descrizione e scegliere la piattaforma a cui applicare questi criteri.
-3. Scegliere i **Requisiti per la conformità** per specificare le impostazioni **Sicurezza**, **Integrità del dispositivo** e **Proprietà del dispositivo**. Al termine, fare clic su **Ok**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+1. Dal riquadro **Intune** scegliere **Conformità del dispositivo**. In **Gestisci** scegliere **Criteri** e quindi **Crea criterio**.
+2. Digitare un nome e una descrizione, quindi scegliere la piattaforma a cui si desidera applicare questi criteri.
+3. Scegliere **Impostazioni Configura** per specificare le impostazioni **Sicurezza del sistema**, **Integrità del dispositivo** e **Proprietà dispositivo**. Al termine, scegliere **OK**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 
 ## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
 
-Per assegnare agli utenti i criteri di conformità, scegliere un criterio configurato. I criteri esistenti sono reperibili nel pannello **Criteri di conformità**.
+Per assegnare agli utenti i criteri di conformità, scegliere un criterio configurato. I criteri esistenti sono disponibili nel riquadro **Conformità del dispositivo - Criteri**.
 
-1. Scegliere il criterio da assegnare agli utenti, quindi selezionare **Assegnazioni**. Si apre il pannello da cui è possibile selezionare i **Gruppi di sicurezza Azure Active Directory** e assegnarli ai criteri.
-2. Scegliere **Seleziona gruppi** per aprire il pannello che consente di visualizzare i gruppi di sicurezza di Azure AD.  Se si sceglie **Seleziona** il criterio verrà distribuito agli utenti.
+1. Scegliere il criterio da assegnare agli utenti, quindi selezionare **Assegnazioni**. Si apre il riquadro da cui è possibile selezionare i **gruppi di sicurezza di Azure Active Directory** e assegnarli ai criteri.
+2. Scegliere **Gruppi selezionati** per aprire il riquadro che consente di visualizzare i gruppi di sicurezza di Azure AD.  Se si sceglie **Salva** il criterio verrà distribuito agli utenti.
 
 Il criterio è stato applicato agli utenti.  I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità.
 

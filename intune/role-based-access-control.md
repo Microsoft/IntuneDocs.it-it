@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/27/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e89ba73869d7453b74edb1e7f87f6c8edb210bf
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c19a3b8a6df82780d54f277d5477b947f050b1cc
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Controllo degli accessi in base al ruolo (RBAC) con Intune
 
@@ -76,16 +76,19 @@ I seguenti ruoli sono predefiniti in Intune ed è possibile assegnarli ai gruppi
 
 ### <a name="to-assign-a-built-in-role"></a>Per assegnare un ruolo predefinito
 
-1. In **Ruoli di Intune** scegliere il ruolo predefinito da assegnare.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** scegliere **Ruoli di Intune** e quindi selezionare **Tutti i ruoli**.
+1. Nel riquadro **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo predefinito da assegnare.
 
-2. Nel pannello <*nome ruolo*> - **Proprietà** scegliere **Gestisci** e quindi **Assegnazioni**.
+2. Nel riquadro <*nome ruolo*> - **Panoramica** scegliere **Gestisci** e quindi **Assegnazioni**.
 
     > [!NOTE]
     > Non è possibile eliminare o modificare i ruoli predefiniti
 
-3. Nel pannello del ruolo personalizzato scegliere **Assegna**.
+3. Nel riquadro del ruolo personalizzato scegliere **Assegna**.
 
-4. Nel pannello **Assegnazioni di ruolo** immettere un **nome** e una **descrizione** facoltativa per l'assegnazione e quindi scegliere le operazioni seguenti:
+4. Nel riquadro **Assegnazioni di ruolo** immettere un **nome** e una **descrizione** (facoltativa) per l'assegnazione e quindi scegliere le opzioni seguenti:
     - **Membri**: selezionare un gruppo contenente l'utente a cui si vuole assegnare le autorizzazioni.
     - **Ambito**: selezionare un gruppo contenente gli utenti che il membro indicato in precedenza è autorizzato a gestire.
 <br></br>
@@ -108,29 +111,29 @@ I seguenti ruoli sono predefiniti in Intune ed è possibile assegnarli ai gruppi
 
 1. Accedere al [portale di Azure](https://portal.azure.com) con le credenziali di Intune.
 
-2. Scegliere **Altri servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+2. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
 3. Scegliere **Intune**. Verrà aperto il dashboard di Intune. Scegliere **Ruolo di Intune**.
 
-4. Nel pannello **Ruoli di Intune** scegliere **Ruoli di Intune** e quindi scegliere **Aggiungi personalizzato**.
+4. Nel riquadro **Ruoli di Intune** scegliere **Tutti i ruoli** e quindi scegliere **Aggiungi personalizzato**.
 
-5. Nel pannello **Aggiungi un ruolo personalizzato** immettere un nome e una descrizione per il nuovo ruolo e quindi fare clic su **Autorizzazioni**.
+5. Nel riquadro **Aggiungi un ruolo personalizzato** immettere un nome e una descrizione per il nuovo ruolo e quindi fare clic su **Autorizzazioni**.
 
-3. Nel pannello **Autorizzazioni** scegliere le autorizzazioni da usare con questo ruolo. Usare la [tabella del controllo RBAC di Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) per decidere le autorizzazioni da applicare.
+3. Nel riquadro **Autorizzazioni** scegliere le autorizzazioni da usare con il ruolo. Usare la [tabella del controllo RBAC di Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) per decidere le autorizzazioni da applicare.
 
 4. Al termine, scegliere **OK**.
 
-5. Nel pannello **Aggiungi ruolo personalizzato** fare clic su **Crea**. Il nuovo ruolo verrà visualizzato nell'elenco del pannello **Ruoli di Intune**.
+5. Nel riquadro **Aggiungi un ruolo personalizzato** fare clic su **Crea**. Il nuovo ruolo verrà visualizzato nell'elenco del riquadro **Ruoli di Intune- Tutti i ruoli**.
 
 ### <a name="to-assign-a-custom-role"></a>Per assegnare un ruolo personalizzato
 
-1. In **Ruoli di Intune** scegliere il ruolo personalizzato da assegnare.
+1. Nel riquadro **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo personalizzato da assegnare.
 
-2. Nel pannello <*nome ruolo*> - **Proprietà** scegliere **Gestisci** e quindi **Assegnazioni**. In questo pannello è anche possibile modificare o eliminare i ruoli esistenti.
+2. Nel riquadro <*nome ruolo*> - **Panoramica** scegliere **Gestisci** e quindi **Assegnazioni**. In questo riquadro è anche possibile modificare o eliminare ruoli esistenti.
 
-3. Nel pannello del ruolo personalizzato scegliere **Assegna**.
+3. Nel riquadro del ruolo personalizzato scegliere **Assegna**.
 
-4. Nel pannello **Assegnazioni di ruolo** immettere un **nome** e una **descrizione** facoltativa per l'assegnazione e quindi scegliere le operazioni seguenti:
+4. Nel riquadro **Assegnazioni di ruolo** immettere un **nome** e una **descrizione** (facoltativa) per l'assegnazione e quindi scegliere le opzioni seguenti:
     - **Membri**: selezionare un gruppo contenente l'utente a cui si vuole assegnare le autorizzazioni.
     - **Ambito**: selezionare un gruppo contenente gli utenti che il membro indicato in precedenza è autorizzato a gestire.
 <br></br>

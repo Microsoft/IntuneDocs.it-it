@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configurare e gestire i certificati SCEP con Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -304,10 +304,10 @@ In questa attività sarà possibile:
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Scaricare, installare e configurare il Connettore di certificati
 ![Download connettore](./media/certificates-download-connector.png)   
  
-1. Accedere al portale di Azure. 
-2. Selezionare **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** selezionare **Configurazione del dispositivo**.
-4. Nel pannello **Configurazione del dispositivo** selezionare **Autorità di certificazione**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** selezionare **Configurazione dispositivo**.
+4. Nel riquadro **Configurazione dispositivo** selezionare **Autorità di certificazione**.
 5. Fare clic su **Aggiungi** e selezionare **Scaricare il file del connettore**. Salvare il file scaricato in un percorso a cui è possibile accedere dal server in cui verrà installato. 
 6.  Al completamento del download, eseguire il programma di installazione scaricato (**ndesconnectorssetup.exe**) nel server che ospita il ruolo del servizio Registrazione dispositivi di rete (NDES). Il programma di installazione installa anche il modulo di criteri per NDES e il servizio Web CRP. (Il servizio Web CRP, CertificateRegistrationSvc, viene eseguito come applicazione in IIS).
 
@@ -346,10 +346,10 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
 
 ## <a name="how-to-create-a-scep-certificate-profile"></a>Come creare un profilo certificato SCEP
 
-1. Nel portale di Azure selezionare il carico di lavoro **Configura i dispositivi**.
-2. Nel pannello **Configurazione del dispositivo** selezionare **Gestisci** > **Profili**.
-3. Nel pannello dei profili selezionare **Crea profilo**.
-4. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** per il profilo certificato SCEP.
+1. Nel portale di Azure selezionare il carico di lavoro **Configurazione dispositivo**.
+2. Nel riquadro **Configurazione dispositivo** selezionare **Gestisci** > **Profili**.
+3. Nel riquadro dei profili selezionare **Crea profilo**.
+4. Nel riquadro **Crea profilo** immettere un **nome** e una **descrizione** per il profilo certificato SCEP.
 5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma del dispositivo per questo certificato SCEP. Attualmente, è possibile selezionare una delle piattaforme seguenti per le impostazioni delle restrizioni del dispositivo:
     - **Android**
     - **iOS**
@@ -358,7 +358,7 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
     - **Windows 8.1 e versioni successive**
     - **Windows 10 e versioni successive**
 6. Nell'elenco a discesa **Tipo di profilo** selezionare **Certificato SCEP**.
-7. Nel pannello **Certificato SCEP** è possibile configurare le impostazioni seguenti:
+7. Nel riquadro **Certificato SCEP** configurare le impostazioni seguenti:
     - **Periodo di validità del certificato**: se il comando **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** è stato eseguito nella CA emittente, che consente un periodo di validità personalizzato, è possibile specificare la quantità di tempo rimanente prima della scadenza del certificato.<br>È possibile specificare un valore inferiore, ma non superiore rispetto al periodo di validità nel modello di certificato indicato. Ad esempio, se il periodo di validità del certificato nel modello di certificato è di due anni, è possibile specificare un valore di un anno ma non un valore di cinque anni. Inoltre, il valore deve essere inferiore rispetto al periodo di validità rimanente del certificato della CA emittente. 
     - **Provider di archiviazione chiavi (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): specificare dove viene archiviata la chiave per il certificato. Scegliere tra uno dei seguenti valori:
         - **Registra nel provider di archiviazione chiavi Trusted Platform Module (TPM) se presente, altrimenti nel provider di archiviazione chiavi software**
@@ -385,9 +385,9 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
     - **Impostazioni di registrazione**
         - **Soglia di rinnovo (%)**: specificare la percentuale di durata residua del certificato prima che il dispositivo ne richieda il rinnovo.
         - **URL server SCEP**: specificare uno o più URL per i server NDES che emettono certificati tramite SCEP. 
-8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
+8. Selezionare **OK**, quindi tornare al riquadro **Crea profilo** e selezionare **Crea**.
 
-Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
+Il profilo viene creato e visualizzato nel riquadro dell'elenco dei profili.
 
 ## <a name="how-to-assign-the-certificate-profile"></a>Come assegnare il profilo certificato
 

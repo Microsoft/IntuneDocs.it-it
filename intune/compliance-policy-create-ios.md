@@ -1,12 +1,12 @@
 ---
-title: "Come creare un criterio di conformità per iOS"
-titleSuffix: Azure portal
-description: "Informazioni sulle modalità di creazione dei criteri di conformità per i dispositivi iOS.\""
+title: "Creare criteri di conformità per i dispositivi iOS in Microsoft Intune"
+titleSuffix: 
+description: "Creare criteri di conformità per i dispositivi iOS in Microsoft Intune in modo da poter specificare i requisiti che un dispositivo deve soddisfare per essere conforme."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4676a199f3d52ac5ed1c1661fdfe3e024eadf54
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b024c846f9fc79fe214e3e90b094384455f2b086
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi iOS in Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-I criteri di conformità vengono creati per ogni piattaforma.  È possibile creare i criteri di conformità nel portale di Azure. Per altre informazioni sui criteri di conformità consultare l'argomento [What is a device compliance](device-compliance.md)(Che cos'è la conformità dei dispositivi). Per altre informazioni sui prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, consultare l'argomento [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
+I criteri di conformità di un dispositivo iOS in Intune specificano le regole e le impostazioni che i dispositivi iOS devono soddisfare per essere considerati conformi. Tramite i criteri di conformità del dispositivo con accesso condizionale è possibile consentire o bloccare l'accesso alle risorse aziendali. È anche possibile ottenere i report di dispositivo e intraprendere azioni per la mancata conformità. I criteri di conformità dei dispositivi possono essere creati per ogni piattaforma nel portale di Intune in Azure. Per altre informazioni sui criteri di conformità e i prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, vedere l'argomento [Introduzione ai criteri conformità](device-compliance-get-started.md).
 
 La tabella seguente descrive il modo in cui le impostazioni di non conformità vengono gestite quando i criteri di conformità vengono usati con i criteri di accesso condizionale.
 
@@ -54,12 +54,14 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creare i criteri di conformità nel portale di Azure
 
-1. Dal pannello **Intune** scegliere **Imposta la conformità dei dispositivi**. In **Gestisci** scegliere **All device compliance policies** (Tutti i criteri di conformità dei dispositivi) e scegliere **Crea**.
-2. Digitare un nome e una descrizione, quindi scegliere la piattaforma a cui si desidera applicare questi criteri.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+1. Dal riquadro **Intune** scegliere **Conformità del dispositivo**. In **Gestisci** scegliere **Criteri** e quindi **Crea criterio**.
+2. Digitare un nome e una descrizione e scegliere la piattaforma a cui applicare questi criteri.
 3. Scegliere i **Requisiti per la conformità** per specificarvi le impostazioni **Sicurezza**, **Integrità del dispositivo** e **Proprietà del dispositivo** e, al termine, scegliere **OK**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 7. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -67,10 +69,10 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 
 ## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
 
-Per assegnare agli utenti i criteri di conformità, scegliere un criterio configurato. I criteri esistenti sono reperibili nel pannello **Criteri di conformità**.
+Per assegnare agli utenti i criteri di conformità, scegliere un criterio configurato. I criteri esistenti sono disponibili nel riquadro **Conformità del dispositivo - Criteri**.
 
-1. Scegliere il criterio da assegnare agli utenti, quindi selezionare **Assegnazioni**. Si apre il pannello da cui è possibile selezionare i **Gruppi di sicurezza Azure Active Directory** e assegnarli ai criteri.
-2. Scegliere **Seleziona gruppi** per aprire il pannello che consente di visualizzare i gruppi di sicurezza di Azure AD.  Se si sceglie **Seleziona** il criterio verrà distribuito agli utenti.
+1. Scegliere il criterio da assegnare agli utenti, quindi selezionare **Assegnazioni**. Si apre il pannello da cui è possibile selezionare i **gruppi di sicurezza Azure Active Directory** e assegnarli ai criteri.
+2. Scegliere **Gruppi selezionati** per aprire il riquadro che consente di visualizzare i gruppi di sicurezza di Azure AD.  Se si sceglie **Salva** il criterio verrà distribuito agli utenti.
 
 Il criterio è stato applicato agli utenti.  I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità.
 
@@ -81,8 +83,8 @@ Il criterio è stato applicato agli utenti.  I dispositivi usati dagli utenti a 
 ### <a name="password"></a>Password
 
 - **Richiedi una password per sbloccare i dispositivi mobili:** impostare l'opzione su **Sì** per consentire a un utente di immettere una password per poter accedere al dispositivo. I dispositivi iOS che usano una password vengono crittografati.
-- **Consenti password semplici**: impostare questa opzione su **Sì** per consentire all'utente di creare una password semplice come **1234** o **1111**.
-- **Lunghezza minima password**: specifica il numero minimo di cifre o caratteri per la password.
+- **Consenti le password semplici**: impostare questa opzione su **Sì** per consentire all'utente di creare una password come **1234** o **1111**.
+- **Lunghezza minima password**: specificare il numero minimo di cifre o caratteri per la password.
 - **Tipo di password richiesto:** specificare se l'utente deve creare una password di tipo **Alfanumerico** o **Numerico**.
 - **Numero minimo di set di caratteri:** se **Tipo di password richiesto** è impostato su **Alfanumerico**, usare questa impostazione per specificare il numero minimo di set di caratteri che la password deve avere. I quattro set di caratteri sono:
   - Lettere minuscole
@@ -94,11 +96,11 @@ Se si imposta un numero maggiore, l'utente dovrà creare una password più compl
 
 Per i dispositivi iOS, questa impostazione si riferisce al numero di caratteri speciali (ad esempio **!** , **#** , **&amp;** ) che è necessario includere nella password.
 
-- **Minuti di inattività prima che venga richiesta la password**: specifica il tempo di inattività prima che l'utente debba immettere di nuovo la password.
+- **Minuti di inattività prima che venga richiesta la password:** specifica il tempo di inattività prima che l'utente debba immettere di nuovo la password.
 - **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
 - **Ricorda cronologia password**: usare questa impostazione insieme a **Impedisci riutilizzo delle password precedenti** per impedire all'utente di creare password già usate in precedenza.
-- **Impedisci riutilizzo delle password precedenti**: se l'opzione **Ricorda cronologia password** è selezionata, specifica il numero di password usate in precedenza che non è possibile usare di nuovo.
-- **Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività**: questa impostazione deve essere usata insieme all'impostazione **Minuti di inattività prima che venga richiesta la password**. Agli utenti viene richiesto di immettere una password per accedere a un dispositivo che è rimasto inattivo per il tempo specificato nell'impostazione **Minuti di inattività prima che venga richiesta la password**.
+- **Impedisci riutilizzo delle password precedenti:** se l'opzione **Ricorda cronologia password** è selezionata, specifica il numero di password usate in precedenza che non è possibile usare di nuovo.
+- **Richiedi una password quando il dispositivo torna attivo dopo uno stato di inattività:** questa impostazione deve essere usata insieme all'impostazione **Minuti di inattività prima che venga richiesta la password**. Agli utenti viene richiesto di immettere una password per accedere a un dispositivo che è rimasto inattivo per il tempo specificato nell'impostazione **Minuti di inattività prima che venga richiesta la password**.
 
 ### <a name="email-profile"></a>Profilo di posta elettronica
 

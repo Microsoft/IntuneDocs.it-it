@@ -1,40 +1,40 @@
 ---
-title: Impostazioni Wi-Fi di Intune per dispositivi macOS
-titleSuffix: Azure portal
-description: "Informazioni sulle impostazioni di Intune che è possibile usare per configurare le connessioni Wi-Fi nei dispositivi macOS.\""
+title: Impostazioni Wi-Fi in Microsoft Intune per i dispositivi che eseguono macOS
+titleSuffix: 
+description: "Informazioni sulle impostazioni di Intune che è possibile usare per configurare le connessioni Wi-Fi nei dispositivi che eseguono macOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 322a38d5-21f5-48ee-bc59-0a4f9da78d38
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a48671d738a2697202b98073502433ed0888316
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 25cc8cd550567d6edc63f1cab416bdb7d978eb52
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Impostazioni Wi-Fi per dispositivi macOS in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Questo articolo illustra tutte le impostazioni Wi-Fi che è possibile configurare in Microsoft Intune per i dispositivi che eseguono macOS.
+
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Impostazioni Wi-Fi per i profili di base ed enterprise
 
 - **Nome rete**: immettere un nome per questa connessione Wi-Fi. È il nome che gli utenti visualizzano quando sfogliano l'elenco delle connessioni disponibili nel dispositivo.
-- **SSID**: nome breve per identificatore del set di servizi di rete. Si tratta del nome reale della rete wireless a cui si connetteranno i dispositivi. Quando scelgono la connessione, gli utenti, tuttavia, visualizzano solo il nome di rete creato in precedenza.
+- **SSID**: nome breve per identificatore del set di servizi di rete. Si tratta del nome reale della rete wireless a cui si connettono i dispositivi. Quando scelgono la connessione, gli utenti, tuttavia, visualizzano solo il nome di rete configurato in precedenza.
 - **Connetti automaticamente**: consente al dispositivo di connettersi ogni volta che si trova nel campo della rete.
 - **Rete nascosta**: impedisce che la rete venga visualizzata nell'elenco delle reti disponibili sul dispositivo.
 - **Impostazioni proxy**: scegliere tra:
     - **Nessuno**: non viene configurata nessuna impostazione proxy.
     - **Manuale**: immettere l'**Indirizzo server proxy** (come indirizzo IP), associato al **Numero di porta**.
-    - **Automatico**: consente di usare un file per configurare il server proxy. Immettere l'**URL del server proxy** (ad esempio **http://proxy.contoso.com**) che contiene il file di configurazione.
+    - **Automatico**: consente di usare un file per configurare il server proxy. Immettere l'**URL del server proxy** (ad esempio **http://proxy.contoso.com) che contiene il file di configurazione.
 
 ## <a name="wi-fi-settings-for-basic-profiles-only"></a>Impostazioni Wi-Fi solo per i profili di base
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 01/25/2018
 
 |Nome impostazione|Altre informazioni|Usare quando|
 |--------------|-------------|----------|
-|**Nomi server di certificazione**|Specificare uno o più nomi comuni usati nei certificati emessi dall'autorità di certificazione (CA) attendibile. Se si forniscono queste informazioni, è possibile ignorare la finestra di dialogo relativa al trust dinamico visualizzata nei dispositivi degli utenti finali quando si connettono alla rete Wi-Fi.|Tipo EAP è impostato su **EAP-TLS**, **EAP-TTLS** o **PEAP**.|
+|**Nomi server di certificazione**|Specificare uno o più nomi comuni usati nei certificati emessi dall'autorità di certificazione (CA) attendibile. Se si specificano queste informazioni, è possibile ignorare la finestra di dialogo relativa al trust dinamico visualizzata nei dispositivi degli utenti quando si connettono alla rete Wi-Fi.|Tipo EAP è impostato su **EAP-TLS**, **EAP-TTLS** o **PEAP**.|
 |**Certificato radice per la convalida server**|Scegliere il profilo del certificato radice attendibile usato per autenticare la connessione. |Tipo EAP è impostato su **EAP-TLS**, **EAP-TTLS** o **PEAP**|
 |**Privacy dell'identità (identità esterna)**|Specificare il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.|Tipo EAP è impostato su **PEAP**|
 
@@ -76,4 +76,4 @@ ms.lasthandoff: 01/25/2018
 |Nome impostazione|Altre informazioni|Usare quando|
 |--------------|-------------|----------|
 |**Certificato client per l'autenticazione client (certificato di identità)**|Scegliere il profilo di certificato SCEP o PKCS usato per autenticare la connessione.|Tipo EAP è impostato su **EAP-TLS**|
-|**Metodo di autenticazione**|Selezionare il metodo di autenticazione per la connessione:<br>- **Certificati** per selezionare il certificato client SCEP o PKCS che corrisponde al certificato di identità presentato al server.<br><br>- **Nome utente e password** per specificare un metodo diverso per l'autenticazione. <br><br>Se si seleziona **Nome utente e password**, configurare:<br><br>-  **Metodo non EAP (identità interna)**, quindi selezionare la modalità di autenticazione della connessione:<br>- **Nessuno**<br>- **Password Authentication Protocol (PAP)**<br>- **Challenge Handshake Authentication Protocol (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP versione 2 (MS-CHAP v2)**<br>Le opzioni disponibili dipendono dal tipo EAP selezionato.<br><br>**e**<br><br>- **Privacy dell'identità (identità esterna)**: specificare il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.|Tipo EAP è impostato su **EAP-TTLS** o **PEAP**|
+|**Metodo di autenticazione**|Selezionare il metodo di autenticazione per la connessione:<br>- **Certificati** per selezionare il certificato client SCEP o PKCS che corrisponde al certificato di identità presentato al server.<br><br>- **Nome utente e password** per specificare un metodo diverso per l'autenticazione. <br><br>Se si seleziona **Nome utente e password**, configurare:<br><br>-  **Metodo non EAP (identità interna)** e quindi selezionare la modalità di autenticazione della connessione:<br>- **Nessuno**<br>- **Password Authentication Protocol (PAP)**<br>- **Challenge Handshake Authentication Protocol (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP versione 2 (MS-CHAP v2)**<br>Le opzioni disponibili dipendono dal tipo EAP selezionato.<br><br>**e**<br><br>- **Privacy dell'identità (identità esterna)**: specificare il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.|Tipo EAP è impostato su **EAP-TTLS** o **PEAP**|
