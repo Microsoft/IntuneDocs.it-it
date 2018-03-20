@@ -1,12 +1,11 @@
 ---
-title: Reimpostare il passcode nei dispositivi Windows con Intune
-titlesuffix: Azure portal
-description: Informazioni su come usare Intune per reimpostare il passcode nei dispositivi Windows integrati con il servizio di reimpostazione PIN.
+title: Reimpostare il passcode nei dispositivi Windows con Microsoft Intune - Azure | Microsoft Docs
+description: Per reimpostare il passcode nei dispositivi Windows, installare il servizio di reimpostazione PIN Microsoft e il client di reimpostazione PIN Microsoft, creare i criteri dei dispositivi tramite l'ID directory di Azure Active Directory e reimpostare il passcode nel portale di Azure usando Microsoft Intune.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,60 +13,59 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6149eeb3da2da3be3a137845eee5a0a515a4e39
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 14a5654e72352b9dc8ebd51e6c926ea963e7432d
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Reimpostare il passcode nei dispositivi Windows integrati con il servizio di reimpostazione PIN tramite Intune
+# <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Reimpostare il passcode nei dispositivi Windows con Intune
 
-La funzionalità di reimpostazione del passcode per i dispositivi Windows si integra con il servizio di reimpostazione PIN per consentire di generare un nuovo passcode per i dispositivi che eseguono Windows 10 Mobile. I dispositivi devono eseguire Windows 10 Creators Update o versioni successive.
+È possibile reimpostare il passcode per i dispositivi Windows. La funzionalità di reimpostazione del passcode usa il servizio di reimpostazione PIN Microsoft per generare un nuovo passcode per i dispositivi che eseguono Windows 10 Mobile. 
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
-- Windows: funzionalità supportata in Windows 10 Creators Update e versioni successive (aggiunto ad Azure AD)
-- Windows Phone: funzionalità non supportata
-- iOS: funzionalità non supportata
-- macOS: funzionalità non supportata
-- Android: funzionalità non supportata
+- Windows 10 Creators Update e versioni successive (aggiunto ad Azure AD)
 
+**Non** sono supportate le piattaforme seguenti:
+- Windows Phone
+- iOS
+- macOS
+- Android
 
-## <a name="before-you-start"></a>Prima di iniziare
+## <a name="authorize-the-pin-reset-services"></a>Autorizzare i servizi di reimpostazione PIN
 
-Prima che si possa reimpostare in modalità remota il passcode nei dispositivi Windows che è possibile gestire, è necessario caricare il servizio di reimpostazione PIN del tenant di Intune e configurare i dispositivi gestiti. Seguire queste istruzioni per ottenere tale configurazione:
+Per reimpostare il passcode nei dispositivi Windows, caricare il servizio di reimpostazione PIN servizio nel tenant di Intune.
 
-### <a name="connect-intune-with-the-pin-reset-service"></a>Connettere Intune con il servizio di reimpostazione PIN
+1. Passare a [Microsoft Pin Reset Service Production](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) e accedere usando l'account amministratore del tenant.
+2. **Accetta** consente al servizio di reimpostazione PIN di accedere all'account: ![accettare la richiesta del server di reimpostazione PIN per le autorizzazioni](./media/pin-reset-service-home-screen.png)
+3. Passare a [Microsoft Pin Reset Client Production](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) e accedere usando l'account amministratore del tenant. **Accetta** consente al client di reimpostazione PIN di accedere all'account.
+4. Nel [portale di Azure](https://portal.azure.com) verificare che i servizi di reimpostazione PIN siano elencati in Applicazioni aziendali (Tutte le applicazioni): ![pagina autorizzazioni del servizio di reimpostazione PIN](./media/pin-reset-service-application.png)
 
-1. Visitare [il sito Web sull'integrazione del servizio di reimpostazione PIN](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) e accedere usando l'account di amministratore tenant usato per gestire il tenant di Intune.
-2. Dopo l'accesso, fare clic su **Accetta** per consentire al servizio di reimpostazione PIN di accedere all'account.<br>
-![Pagina autorizzazioni del servizio di reimpostazione PIN](./media/pin-reset-service-application.png)
-3. Nel portale di Azure, è possibile verificare che Intune e il servizio di reimpostazione PIN sono stati integrati dal pannello Enterprise applications - All applications (Applicazioni Enterprise - Tutte le applicazioni) come illustrato di seguito:<br>
-![Applicazione del servizio di reimpostazione PIN in Azure](./media/pin-reset-service-home-screen.png)
-4. Accedere a [questo sito Web](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) usando le credenziali amministratore tenant di Intune e scegliere nuovamente **Accetta** per consentire al servizio di accedere all'account.
+> [!NOTE]
+> Dopo aver accettato le richieste di reimpostazione PIN, può essere visualizzato un messaggio `Page not found` oppure può sembrare che nessuna operazione sia stata eseguita. Si tratta di un comportamento normale. Controllare che le due applicazioni di reimpostazione PIN siano elencate per il tenant.
 
-### <a name="configure-windows-devices-to-use-pin-reset"></a>Configurare i dispositivi Windows per usare la reimpostazione PIN
+## <a name="configure-windows-devices-to-use-pin-reset"></a>Configurare i dispositivi Windows per usare la reimpostazione PIN
 
-Per configurare la reimpostazione PIN nei dispositivi Windows gestiti, usare i [criteri di dispositivo personalizzato per Windows 10 in Intune](custom-settings-windows-10.md) per abilitare la funzionalità. Configurare i criteri usando il provider del servizio di configurazione (CSP) dei criteri di Windows seguente:
+Per configurare la reimpostazione PIN nei dispositivi Windows gestiti, usare i [criteri dei dispositivi personalizzati per Windows 10 in Intune](custom-settings-windows-10.md). Configurare i criteri usando il provider del servizio di configurazione (CSP) dei criteri di Windows seguente:
 
+**Usare i criteri dei dispositivi** - `./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery`
 
-- **Per i dispositivi** - **./Device/Vendor/MSFT/PassportForWork/*ID tenant*/Policies/EnablePinRecovery**
-
-*ID tenant* fa riferimento all'ID di directory di Azure Active Directory che è possibile ottenere dalla pagina **Proprietà** di Azure Active Directory.
+Sostituire *ID tenant* con l'ID directory di Azure AD elencato in **Proprietà** di Azure Active Directory nel [portale di Azure](https://portal.azure.com).
 
 Impostare il valore per questo CSP su **True**.
 
-## <a name="steps-to-reset-the-passcode"></a>Passaggi per reimpostare il passcode
+> [!TIP]
+> Dopo aver creato i criteri, assegnare (o distribuire) i criteri a un gruppo. I criteri possono essere assegnati a gruppi di utenti o a gruppi di dispositivi. Se vengono assegnati a un gruppo di utenti, è possibile che nel gruppo siano inclusi utenti con altri dispositivi, ad esempio IOS. Tecnicamente, i criteri non vengono applicabili. Questi dispositivi sono comunque inclusi nei dettagli relativi allo stato.
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Dispositivi**.
-4. Nel pannello **Dispositivi** scegliere **Gestisci** > **Tutti i dispositivi**.
-5. Selezionare il dispositivo per il quale si vuole reimpostare il passcode e quindi nel pannello delle proprietà del dispositivo, scegliere **Nuovo passcode**.
-6. Nel messaggio di conferma visualizzato scegliere **Sì**. Il passcode viene generato e visualizzato nel portale per sette giorni successivi.
+## <a name="reset-the-passcode"></a>Reimpostare il passcode
 
-## <a name="next-steps"></a>Passaggi successivi
+1. Accedere al [portale di Azure](https://portal.azure.com). 
+2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+3. Selezionare **Dispositivi** e poi **Tutti i dispositivi**.
+4. Selezionare il dispositivo per il quale si vuole reimpostare il passcode. Nelle proprietà del dispositivo selezionare **Nuovo passcode**.
+5. Selezionare **Sì** per confermare. Il passcode viene generato e visualizzato nel portale per sette giorni successivi.
 
-Se la reimpostazione del passcode ha esito negativo, viene visualizzato un collegamento nel portale per ottenere altre informazioni.
+## <a name="next-step"></a>Passaggio successivo
 
-
+Se la reimpostazione del passcode ha esito negativo, viene visualizzato un collegamento nel portale per ottenere altre informazioni dettagliate.

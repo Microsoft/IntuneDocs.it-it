@@ -1,5 +1,6 @@
 ---
-title: Dispositivi supportati in Microsoft Intune
+title: Sistemi operativi e browser supportati da Microsoft Intune
+titleSuffix: 
 description: Questo articolo elenca le piattaforme di dispositivi e i browser supportati per la gestione dei dispositivi in Intune.
 keywords: 
 author: ErikjeMS
@@ -14,24 +15,19 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 11c4336979ee9089b218ea79ac826176d99492d9
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Sistemi operativi e browser supportati
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Questo articolo è rivolto agli amministratori di sistema responsabili della gestione dei dispositivi nell'organizzazione. Per informazioni sull'installazione di Intune sul dispositivo, vedere [Uso di dispositivi gestiti per lo svolgimento del lavoro](/intune-user-help/company-portal-frequently-asked-questions).
+Prima di installare Microsoft Intune, controllare quali sistemi operativi e browser sono supportati.
 
-Prima di iniziare la configurazione di Microsoft Intune, esaminare i requisiti seguenti:
-
-- [Sistemi operativi supportati](#intune-supported-operating-systems)
-- [Elenco di Web browser supportati che usano Intune](#intune-supported-web-browsers)
-
-È anche consigliabile acquisire familiarità con l'[uso della larghezza di banda di rete in Intune](network-bandwidth-use.md) ([portale classico](/intune-classic/get-started/network-bandwidth-use)).
+Per informazioni sull'installazione di Intune sul dispositivo, vedere [Uso di dispositivi gestiti per lo svolgimento del lavoro](/intune-user-help/company-portal-frequently-asked-questions). È anche consigliabile acquisire familiarità con l'[uso della larghezza di banda di rete in Intune](network-bandwidth-use.md) ([portale classico](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Sistemi operativi supportati di Intune
 
