@@ -1,35 +1,34 @@
 ---
-title: Impostazioni di posta elettronica di Intune per dispositivi Windows 10
-titleSuffix: Azure portal
-description: "Informazioni sulle opzioni di Intune che è possibile usare per configurare le connessioni di posta elettronica nei dispositivi Windows 10.\""
+title: Impostazioni di posta elettronica di Microsoft Intune per dispositivi Windows 10
+titleSuffix: 
+description: "Informazioni sulle impostazioni di Microsoft Intune che è possibile usare per configurare le impostazioni di posta elettronica nei dispositivi che eseguono Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3ea7974600daccb8308cd558ccb365c2f5e8bff
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b02579895123995f9b4205d64e9bf67ce04de746
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="email-profile-settings-for-windows-10-devices-in-microsoft-intune"></a>Impostazioni dei profili di posta elettronica per i dispositivi Windows 10 in Microsoft Intune
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>Impostazioni del profilo di posta elettronica in Microsoft Intune per i dispositivi che eseguono Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Questo articolo illustra le impostazioni del profilo di posta elettronica che è possibile configurare per i dispositivi che eseguono Windows 10.
 
 
 - **Server di posta elettronica** - Il nome host del server Exchange dell'azienda.
 - **Nome account** - Il nome visualizzato dell'account di posta elettronica come appare agli utenti nei dispositivi.
-- **Attributo nome utente da AAD** - Si tratta dell'attributo in Active Directory (AD) o Azure AD che verrà usato per generare il nome utente per questo profilo di posta elettronica. Selezionare **Indirizzo SMTP primario**, ad esempio **user1@contoso.com** o **Nome entità utente**, ad esempio **utente1** o **user1@contoso.com**.
+- **Attributo nome utente da AAD** - Si tratta dell'attributo in Active Directory (AD) o Azure AD che viene usato per generare il nome utente per questo profilo di posta elettronica. Selezionare **Indirizzo SMTP primario**, ad esempio **user1@contoso.com** o **Nome entità utente**, ad esempio **utente1** o **user1@contoso.com**.
 - **Indirizzo di posta elettronica** - La modalità di generazione dell'indirizzo di posta elettronica per l'utente in ogni dispositivo. Selezionare **Indirizzo SMTP primario** per accedere a Exchange con l'indirizzo SMTP primario o **Nome entità utente** per usare il nome completo dell'entità come indirizzo di posta elettronica.
 
 
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="synchronization-settings"></a>Impostazioni di sincronizzazione
 
 - **Numero di messaggi di posta elettronica da sincronizzare** - Selezionare il numero di giorni di posta elettronica da sincronizzare o selezionare **Illimitata** nell'elenco a discesa per sincronizzare tutti i messaggi di posta elettronica disponibili.
-- **Pianificazione sincronizzazione** - Selezionare la pianificazione in base a cui i dispositivi sincronizzeranno i dati dal server di Exchange. È anche possibile selezionare **Quando arrivano i messaggi**, per sincronizzare i dati non appena arrivano, oppure **Manuale**, per consentire all'utente del dispositivo di avviare la sincronizzazione.
+- **Pianificazione sincronizzazione** - Selezionare la pianificazione in base a cui i dispositivi sincronizzano i dati dal server di Exchange. È anche possibile selezionare **Quando arrivano i messaggi**, per sincronizzare i dati non appena arrivano, oppure **Manuale**, per consentire all'utente del dispositivo di avviare la sincronizzazione.
 
 ## <a name="content-sync-settings"></a>Impostazioni di sincronizzazione del contenuto
 

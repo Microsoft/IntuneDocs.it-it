@@ -1,27 +1,25 @@
 ---
-title: Impostazioni personalizzate di Intune per dispositivi macOS
-titleSuffix: Azure portal
-description: "Informazioni sulle impostazioni che è possibile usare in un profilo personalizzato macOS.\""
+title: Impostazioni personalizzate di Microsoft Intune per dispositivi macOS
+titleSuffix: 
+description: "Informazioni sulle impostazioni che è possibile usare in un profilo personalizzato macOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88224849de0727418197fcfdb96cac3b4c2ca0e7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ccc9d48eb16ce155bbed2bbdf38793b8f3bdfda
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Impostazioni personalizzate per i dispositivi macOS in Microsoft Intune
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>Impostazioni personalizzate di Microsoft Intune per dispositivi che eseguono macOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,10 +29,10 @@ Questa funzionalità consente di assegnare le impostazioni di macOS che non poss
 
 
 1. Per iniziare, usare le istruzioni riportate in [How to configure custom device settings in Microsoft Intune](custom-settings-configure.md)(Come configurare le impostazioni dei dispositivi personalizzate in Microsoft Intune).
-2. Nel pannello **Crea profilo** specificare quanto segue:
+2. Nel riquadro **Profilo di configurazione personalizzato** configurare le impostazioni seguenti:
 
-- **Nome del profilo di configurazione personalizzato**: specificare un nome per il criterio con cui verrà visualizzato nel dispositivo e lo stato di Intune.
+- **Nome del profilo di configurazione personalizzato**: specificare un nome per i criteri con cui questi verranno visualizzati nel dispositivo e nello stato di Intune.
 - **File del profilo di configurazione**: cercare il profilo di configurazione creato usando lo strumento Apple Configurator.
 Assicurarsi che le impostazioni esportate dallo strumento Apple Configurator siano compatibili con la versione di macOS nei dispositivi a cui vengono assegnati i criteri personalizzati macOS. Per informazioni sulla risoluzione delle impostazioni incompatibili, cercare **Configuration Profile Reference** (Riferimento per il profilo di configurazione) e **Mobile Device Management Protocol Reference** (Riferimento per il protocollo di gestione dei dispositivi mobili) nel sito Web [Apple Developer](https://developer.apple.com/).
 
-Il file importato viene visualizzato nell'area **Contenuti del file** del pannello.
+Il file importato viene visualizzato nell'area **Contenuti del file** del riquadro.

@@ -1,5 +1,6 @@
 ---
-title: Policy | Microsoft Docs
+title: Criteri
+titlesuffix: Microsoft Intune
 description: "Argomento di riferimento per la categoria Policy delle raccolte di entità nell'API data warehouse di Intune."
 keywords: Data warehouse di Intune
 author: Erikre
@@ -13,11 +14,11 @@ ms.technology:
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>Informazioni di riferimento per le entità della categoria Policy
 
@@ -63,7 +64,7 @@ L'entità **DeviceConfigurationProfileDeviceActivity** elenca il numero di dispo
 | Pending |Numero di dispositivi univoci in sospeso. |123 |
 | Operazione completata |Numero di dispositivi univoci in stato completato. |12 |
 | Errore |Numero di dispositivi univoci in stato di errore. |10 |
-| Failed |Numero di dispositivi univoci in stato non riuscito. |2 |
+| Operazione non riuscita |Numero di dispositivi univoci in stato non riuscito. |2 |
 
 
 
@@ -75,7 +76,7 @@ L'entità **DeviceConfigurationProfileUserActivity** elenca il numero di utenti 
 | Pending |Numero di utenti univoci in sospeso. |123 |
 | Operazione completata |Numero di utenti univoci in stato completato. |12 |
 | Errore |Numero di utenti univoci in stato di errore. |10 |
-| Failed |Numero di utenti univoci in stato non riuscito. |2 |
+| Operazione non riuscita |Numero di utenti univoci in stato non riuscito. |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -89,7 +90,7 @@ L'entità **PolicyTypeActivity** elenca il numero cumulativo di dispositivi nell
 | Pending |Numero di dispositivi univoci in sospeso. |123 |
 | Operazione completata |Numero di dispositivi univoci in stato completato. |12 |
 | Errore |Numero di dispositivi univoci in stato di errore. |10 |
-| Failed |Numero di dispositivi univoci in stato non riuscito. |2 |
+| Operazione non riuscita |Numero di dispositivi univoci in stato non riuscito. |2 |
 
 ## <a name="compliance-policy"></a>Criteri di conformità
 
@@ -103,12 +104,12 @@ La tabella seguente contiene un riepilogo dello stato di assegnazione dei criter
 |Proprietà     |Descrizione  |Esempio  |
 |---------|---------|---------|
 |DateKey  |Chiave della data in cui è stato creato il riepilogo per i criteri di conformità.|20161204 |
-|Unknown  |Numero di dispositivi che sono offline o che non sono riusciti a comunicare con Intune o Azure AD per altri motivi. |5|
+|Sconosciuto  |Numero di dispositivi che sono offline o che non sono riusciti a comunicare con Intune o Azure AD per altri motivi. |5|
 |NotApplicable      |Numero di dispositivi in cui i criteri di conformità dei dispositivi assegnati dall'amministratore non sono applicabili.|201 |
-|Compliant      |Numero di dispositivi che hanno applicato correttamente uno o più criteri di conformità dei dispositivi assegnati dall'amministratore. |4083 |
+|Conforme      |Numero di dispositivi che hanno applicato correttamente uno o più criteri di conformità dei dispositivi assegnati dall'amministratore. |4083 |
 |InGracePeriod      |Numero di dispositivi che non sono conformi, ma che si trovano nel periodo di tolleranza definito dall'amministratore. |57|
 |NonCompliant      |Numero di dispositivi che non sono riusciti ad applicare uno o più criteri di conformità assegnati dall'amministratore o in cui l'utente non ha soddisfatto la conformità ai criteri assegnati dall'amministratore.|43 |
-|Error      |Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore. |3|
+|Errore      |Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore. |3|
 
 ### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
 
@@ -121,12 +122,12 @@ La tabella seguente contiene un riepilogo dello stato di assegnazione dei criter
 |DateKey  |Chiave della data in cui è stato creato il riepilogo per i criteri di conformità.|20161219|
 |PolicyKey     |Chiave per il criterio di conformità per cui è stato creato il riepilogo. |10178 |
 |PolicyPlatformKey      |Chiave per il tipo di piattaforma del criterio di conformità per cui è stato creato il riepilogo.|5|
-|Unknown     |Numero di dispositivi che sono offline o che non sono riusciti a comunicare con Intune o Azure AD per altri motivi.|13|
+|Sconosciuto     |Numero di dispositivi che sono offline o che non sono riusciti a comunicare con Intune o Azure AD per altri motivi.|13|
 |NotApplicable     |Numero di dispositivi in cui i criteri di conformità dei dispositivi assegnati dall'amministratore non sono applicabili.|3|
-|Compliant      |Numero di dispositivi che hanno applicato correttamente uno o più criteri di conformità dei dispositivi assegnati dall'amministratore. |45|
+|Conforme      |Numero di dispositivi che hanno applicato correttamente uno o più criteri di conformità dei dispositivi assegnati dall'amministratore. |45|
 |InGracePeriod      |Numero di dispositivi che non sono conformi, ma che si trovano nel periodo di tolleranza definito dall'amministratore. |3|
 |NonCompliant      |Numero di dispositivi che non sono riusciti ad applicare uno o più criteri di conformità assegnati dall'amministratore o in cui l'utente non ha soddisfatto la conformità ai criteri assegnati dall'amministratore.|7|
-|Error      |Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore. |3|
+|Errore      |Numero di dispositivi che non sono riusciti a comunicare con Intune o Azure AD e che hanno restituito un messaggio di errore. |3|
 
 ### <a name="policyplatformtypes"></a>PolicyPlatformTypes
 
@@ -150,7 +151,7 @@ La tabella seguente elenca il numero di dispositivi con stato completato, in sos
 |Operazione completata|Numero di dispositivi univoci in stato completato.|12|
 PolicyKey|Chiave dei criteri, può essere unita con i criteri per ottenere policyName.|Windows 10 baseline|
 |Errore|Numero di dispositivi univoci in stato di errore.|10|
-|Failed|Numero di dispositivi univoci in stato non riuscito.|2|
+|Operazione non riuscita|Numero di dispositivi univoci in stato non riuscito.|2|
 
 ### <a name="policyuseractivity"></a>PolicyUserActivity 
 

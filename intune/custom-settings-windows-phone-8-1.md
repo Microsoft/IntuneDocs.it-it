@@ -1,27 +1,25 @@
 ---
-title: Impostazioni personalizzate di Intune per dispositivi Windows Phone 8.1
-titleSuffix: Azure portal
-description: "Informazioni sulle impostazioni che è possibile usare in un profilo personalizzato Windows Phone 8.1.\""
+title: Impostazioni personalizzate di Microsoft Intune per dispositivi Windows Phone 8.1
+titleSuffix: 
+description: "Informazioni sulle impostazioni che è possibile usare in un profilo personalizzato Windows Phone 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 21c55041-3821-4a62-9f85-855b97dba269
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bbe76f454575d9f09617b12e3811b0c7d5a75ca1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f45b2dd9cab0ccfd912d1f1348d90264bf8906b8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Impostazioni personalizzate per i dispositivi Windows Phone 8.1 in Microsoft Intune
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-phone-81"></a>Impostazioni dei dispositivi personalizzate di Microsoft Intune per dispositivi che eseguono Windows Phone 8.1
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,12 +30,12 @@ Questa funzionalità consente di assegnare le impostazioni non configurabili con
 ## <a name="custom-policy-settings-for-windows-phone-81-devices"></a>Impostazioni dei criteri personalizzati per i dispositivi Windows Phone 8.1
 
 1. Per iniziare, usare le istruzioni riportate in [How to configure custom device settings in Microsoft Intune](custom-settings-configure.md)(Come configurare le impostazioni dei dispositivi personalizzate in Microsoft Intune).
-2. Nel pannello **Crea profilo** scegliere **Impostazioni** per aggiungere una o più impostazioni URI OMA.
-3. Nel pannello **Aggiungi riga** configurare per ogni impostazione i valori seguenti:
+2. Nel riquadro **Impostazioni OMA URI personalizzate** scegliere **Aggiungi** per aggiungere una o più impostazioni URI OMA.
+3. Nel riquadro **Aggiungi riga** configurare i valori seguenti per ogni impostazione:
     - **Nome**: immettere un nome univoco per l'impostazione URI OMA per identificarla nell'elenco delle impostazioni.
     - **Descrizione**: fornire una descrizione che offra una panoramica dell'impostazione e altre informazioni rilevanti per individuarla.
     - **URI OMA**: specificare l'URI OMA per cui si desidera fornire un'impostazione.
-    - **Tipo di dati**: selezionare il tipo di dati in cui verrà specificata questa impostazione URI OMA. Scegliere tra **Stringa**, **Data e ora**, **Intero**, **Virgola mobile** o **Booleano**.
-    - **Valore**: immettere il valore da associare all'impostazione URI OMA immessa.
+    - **Tipo di dati**: selezionare il tipo di dati in cui verrà specificata l'impostazione URI OMA. Scegliere tra **Stringa**, **Stringa (XML)**, **Data e ora**, **Intero**, **Virgola mobile**, **Booleano** o **Base64**.
+    - **Valore**: immettere il valore o il file da associare all'impostazione URI OMA immessa.
 
 4. Al termine fare clic su **OK**, quindi continuare ad aggiungere altre impostazioni secondo le esigenze.
