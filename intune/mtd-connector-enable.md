@@ -1,12 +1,12 @@
 ---
-title: Abilitare il connettore Mobile Threat Defense con Intune
+title: Abilitare il connettore Mobile Threat Defense in Microsoft Intune
 titlesuffix: Azure portal
-description: Abilitare il connettore Mobile Threat Defense in Intune.
+description: Abilitare il connettore tra il partner Mobile Threat Defense (MTD) e Microsoft Intune.
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,30 +15,30 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b73cb0885c4d93cf91ea219ca98a8a81d67b39
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 28233965fb68ef1b83b07d14d39568b5bd997c89
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="enable-mobile-threat-defense-in-intune"></a>Abilitare Mobile Threat Defense in Intune
+# <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Abilitare il connettore Mobile Threat Defense in Intune
 
 > [!NOTE] 
 > Questo argomento si applica a tutti i partner Mobile Threat Defense.
 
-Per abilitare la connessione Mobile Threat Defense (MTD) in Intune, è necessario avere già configurato il connettore Intune nella console del partner MTD.
+Durante l'installazione di Mobile Threat Defense (MTD), sono stati configurati criteri di classificazione delle minacce nella console del partner MTD e sono stati creati criteri di conformità del dispositivo in Intune. Se il connettore Intune nella console del partner MTD è già stato configurato, è possibile abilitare la connessione MTD in Intune.
 
 ## <a name="to-enable-the-mtd-connector"></a>Per abilitare il connettore MTD
 
 1. Andare nel [portale di Azure](https://portal.azure.com) e accedere con le credenziali di Intune. Dopo l'accesso viene visualizzato il **dashboard di Azure**.
 
-2. Nel **dashboard di Azure** scegliere **Altri servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+2. Nel **dashboard di Azure** scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
-3. Scegliere **Intune**. Viene visualizzato il **dashboard di Intune**.
+3. Scegliere **Intune**. Si aprirà il **dashboard di Intune**.
 
 4. Nel **dashboard di Intune** scegliere **Conformità del dispositivo** e quindi scegliere **Mobile Threat Defense** nella sezione **Installazione**.
 
-5. Nel pannello **Mobile Threat Defense** scegliere **Aggiungi**.
+5. Nel riquadro **Mobile Threat Defense** scegliere **Aggiungi**.
 
 6. Scegliere la soluzione MTD nell'elenco a discesa **Selezionare il connettore Mobile Threat Defense da configurare**.
 
@@ -48,7 +48,7 @@ Per abilitare la connessione Mobile Threat Defense (MTD) in Intune, è necessari
 
 ## <a name="mtd-toggle-options"></a>Opzioni di attivazione/disattivazione di MTD
 
-È possibile decidere quali opzioni di attivazione/disattivazione di MTD è necessario abilitare in base ai requisiti dell'organizzazione. Per informazioni più dettagliate:
+È possibile decidere quali opzioni di attivazione/disattivazione di MTD è necessario abilitare in base ai requisiti dell'organizzazione. Ecco ulteriori dettagli:
 
 - **Connetti dispositivi Android 4.1+ a [nome partner MTD] for Work MTD**: quando si abilita questa opzione è possibile fare in modo che i dispositivi Android 4.1+ segnalino i rischi di sicurezza in Intune.
     - **Contrassegna come non conforme se non vengono ricevuti dati**: se Intune non riceve dati su un dispositivo in questa piattaforma da un partner MTD, il dispositivo viene considerato non conforme.
@@ -64,4 +64,4 @@ Per abilitare la connessione Mobile Threat Defense (MTD) in Intune, è necessari
 > È necessario aggiungere e assegnare le app MTD prima di creare le regole di conformità del dispositivo e dei criteri di accesso condizionale. Ciò garantisce che l'app MTD sia pronta e disponibile in modo che gli utenti finali possano installarla prima di ottenere l'accesso alla posta elettronica o ad altre risorse aziendali.
 
 > [!TIP]
-> Nel pannello Mobile Threat Defence sono visualizzati lo **Stato connessione** e l'ora dell'**Ultima sincronizzazione** tra Intune e il partner MTD.
+> Nel riquadro Mobile Threat Defence sono visualizzati lo **Stato connessione** e l'ora dell'**Ultima sincronizzazione** tra Intune e il partner MTD.

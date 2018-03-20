@@ -1,11 +1,12 @@
 ---
-title: Modello di dati del data warehouse | Microsoft Docs
-description: Il data warehouse di Intune esegue il campionamento giornaliero dei dati per fornire una visualizzazione cronologia dell'ambiente per dispositivi mobili in continua evoluzione.
+title: Modello di dati del data warehouse
+titlesuffix: Microsoft Intune
+description: Il data warehouse di Microsoft Intune esegue il campionamento giornaliero dei dati per offrire una visualizzazione cronologica dell'ambiente dei dispositivi mobili in continua evoluzione.
 keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>Modello di dati del data warehouse
 
-Il data warehouse di Intune esegue il campionamento giornaliero dei dati per fornire una visualizzazione cronologica dell'ambiente dei dispositivi mobili, in continua evoluzione. La visualizzazione è costituita da elementi correlati nel tempo.
+Il data warehouse di Intune esegue il campionamento giornaliero dei dati per fornire una visualizzazione cronologica dell'ambiente dei dispositivi mobili, in continua evoluzione. La visualizzazione è costituita da entità correlate nel tempo.
 
-## <a name="things-entity-sets"></a>Elementi: set di entità
+## <a name="entities-entity-sets"></a>Entità: set di entità
 
 Il warehouse espone i dati nelle aree generali seguenti:
 
@@ -33,7 +34,7 @@ Il warehouse espone i dati nelle aree generali seguenti:
   -  Inventario app e software
   -  Configurazione del dispositivo e criteri di conformità
 
-Queste aree contengono le entità (o elementi) significative per l'ambiente Intune. Informazioni dettagliate sui set di entità sono disponibili negli argomenti seguenti:
+Queste aree contengono le entità significative per l'ambiente Intune. Informazioni dettagliate sui set di entità sono disponibili negli argomenti seguenti:
 
   -  [Applicazione](reports-ref-application.md)
   -  [Data](reports-ref-date.md)

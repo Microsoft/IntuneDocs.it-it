@@ -1,7 +1,7 @@
 ---
-title: Configurare l'integrazione di Skycure con Intune
-titlesuffix: Azure portal
-description: Configurare l'integrazione di Skycure con Microsoft Intune.
+title: Configurare l'integrazione di Skycure con Microsoft Intune
+titlesuffix: 
+description: Come configurare la soluzione Skycure Mobile Threat Defense (MTD) con Microsoft Intune per controllare l'accesso dei dispositivi mobili alle risorse aziendali.
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,15 +15,15 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a1cea01960512ca484caa643862d90cbb867963
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 3a09806afae72f60961a94ab27707b4851006cf0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>Configurare l'integrazione di Skycure con Intune
 
-È necessario aggiungere app Skycure in Azure AD per usufruire di funzionalità di accesso Single Sign-On.
+Per integrare la soluzione Skycure Mobile Threat Defense con Intune, eseguire la procedura seguente. È necessario aggiungere app Skycure in Azure AD per usufruire di funzionalità di accesso Single Sign-On.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -62,15 +62,15 @@ Intune supporta due modalità di integrazione con Intune:
 
 4.  Nell'etichetta **iOS App** (App iOS) fare clic su **Add to Active Directory** (Aggiungi ad Active Directory).
 
-    ![App iOS nella console di gestione di Skycure](./media/skycure-setup-1.png)
+    ![Immagine dell'app iOS nella console di gestione di Skycure](./media/skycure-setup-1.png)
 
 5.  Verrà visualizzata la pagina di accesso. Immettere le credenziali di Intune e quindi fare clic su **Accept** (Accetto).
 
-    ![App iOS - prompt di accesso a Intune](./media/skycure-setup-2.png)
+    ![Immagine del prompt di accesso a Intune dell'app iOS](./media/skycure-setup-2.png)
 
 6.  Dopo che l'app è stata aggiunta in Azure AD, viene visualizzato un messaggio per indicare il completamento dell'operazione nella console di gestione di Skycure.
 
-    ![App iOS - schermata di completamento](./media/skycure-setup-3.png)
+    ![Immagine della schermata di completamento dell'app iOS](./media/skycure-setup-3.png)
 
 > [!NOTE]
 > Ripetere lo stesso processo per l'**app Android** e l'**app di gestione** di Skycure.
@@ -79,13 +79,13 @@ Intune supporta due modalità di integrazione con Intune:
 
 È necessario aggiungere un gruppo di sicurezza di Azure AD contenente tutti i dispositivi che eseguono Skycure.
 
-1.  Immettere e selezionare tutti i gruppi di sicurezza dei dispositivi che eseguono Skycure e quindi fare clic su **Apply changes** (Applica modifiche).
+-  Immettere e selezionare tutti i gruppi di sicurezza dei dispositivi che eseguono Skycure e quindi fare clic su **Apply changes** (Applica modifiche).
 
-    ![Configurare un gruppo di sicurezza nella console di gestione di Skycure](./media/skycure-setup-4.png)
+    ![Immagine che illustra dove configurare la console di gestione di Skycure dei gruppi di sicurezza](./media/skycure-setup-4.png)
 
 Skycure sincronizza i dispositivi che eseguono il servizio Mobile Threat Defense con i gruppi di sicurezza di Azure AD.
 
-![Configurazione dei gruppi di sicurezza completata nella console di gestione di Skycure](./media/skycure-setup-5.png)
+![Immagine che illustra la configurazione dei gruppi di sicurezza completata nella console di gestione di Skycure](./media/skycure-setup-5.png)
 
 ## <a name="set-up-the-full-integration-between-intune-and-skycure"></a>Per configurare l'integrazione completa tra Intune e Skycure
 
@@ -103,7 +103,7 @@ Skycure sincronizza i dispositivi che eseguono il servizio Mobile Threat Defense
 
 5.  Fare clic su **Apply changes** (Applica modifiche).
 
-    ![Integrazione completa di Skycure completata](./media/skycure-setup-6.png)
+    ![Immagine che illustra l'integrazione completa di Skycure completata](./media/skycure-setup-6.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

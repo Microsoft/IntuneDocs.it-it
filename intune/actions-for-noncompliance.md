@@ -1,105 +1,87 @@
 ---
-title: "Azioni per la non conformità con Intune"
-titleSuffix: Intune on Azure
-description: "Informazioni su come creare azioni per la non conformità con Intune"
+title: Messaggio e azioni per i dispositivi non conformi con Microsoft Intune - Azure | Microsoft Docs
+description: "Creare un messaggio di posta elettronica di notifica da inviare ai dispositivi non conformi. Se un dispositivo viene contrassegnato come non conforme, è possibile aggiungere azioni, ad esempio un periodo di tolleranza al termine del quale il dispositivo deve essere conforme, o creare una pianificazione per bloccare l'accesso finché il dispositivo non è conforme. Queste operazioni possono essere eseguite con Microsoft Intune in Azure."
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/05/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 573a8b000e63576f3dd3bae1b6e8e8c47733f6bf
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="automate-actions-for-noncompliance"></a>Automatizzare le azioni per la non conformità
+# <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi - Intune
 
-Le **azioni per la non conformità** consentono di configurare una sequenza temporale di azioni da applicare ai dispositivi che non soddisfano i criteri di conformità. Per impostazione predefinita, quando viene rilevato che un dispositivo non soddisfa i criteri di conformità, Intune lo contrassegna immediatamente come non conforme, quindi il dispositivo viene bloccato dall'accesso condizionale di Azure Active Directory. Le **azioni per la non conformità** consentono di decidere con maggior flessibilità come procedere quando un dispositivo risulta non conforme. È ad esempio possibile decidere di non bloccare immediatamente il dispositivo e di concedere all'utente un periodo di tolleranza per adeguarsi ai criteri di conformità.
+La funzionalità **Azioni per la mancata conformità** consente di configurare una sequenza di azioni in ordine temporale. Queste azioni riguardano i dispositivi che non soddisfano i criteri di conformità. 
+
+## <a name="overview"></a>Panoramica
+Per impostazione predefinita, quando Intune rileva un dispositivo che non è conforme, lo contrassegna immediatamente come non conforme. Quindi l'[accesso condizionale](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) di Azure Active Directory (AD) blocca il dispositivo. Quando un dispositivo non è conforme, le **azioni per la non conformità** offrono anche la flessibilità necessaria per decidere cosa fare. Ad esempio, si può decidere di non bloccare immediatamente il dispositivo e di concedere all'utente un periodo di tolleranza per adeguarsi ai criteri di conformità.
 
 Esistono due tipi di azioni:
 
--   **Notifica agli utenti finali tramite posta elettronica**: è possibile personalizzare il messaggio di posta elettronica di notifica prima di inviarlo all'utente finale. Intune consente di personalizzare i destinatari, l'oggetto e il corpo del messaggio, inclusi il logo aziendale e le informazioni di contatto.
+- **Notifica via posta elettronica agli utenti finali**: personalizzare il messaggio di posta elettronica di notifica prima di inviarlo all'utente finale. È possibile personalizzare i destinatari, l'oggetto e il corpo del messaggio, inclusi il logo aziendale e le informazioni di contatto.
 
     Intune include inoltre le informazioni sul dispositivo non conforme nella notifica di posta elettronica.
 
--   **Contrassegnare il dispositivo come non conforme**: è possibile pianificare un numero di giorni trascorsi i quali il dispositivo viene contrassegnato come non conforme. È possibile configurare l'azione in modo che venga applicata immediatamente oppure concedere all'utente un periodo di tolleranza entro il quale dovrà adeguarsi ai criteri di conformità dei dispositivi.
+- **Contrassegnare il dispositivo come non conforme**: pianificare un numero di giorni trascorsi i quali il dispositivo viene contrassegnato come non conforme. È possibile configurare l'azione in modo che venga applicata immediatamente oppure concedere all'utente un periodo di tolleranza entro il quale dovrà adeguarsi ai criteri di conformità.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Per configurare le azioni per la mancata conformità è necessario aver creato almeno un criterio di conformità dei dispositivi. 
+- Per configurare le azioni per la mancata conformità è necessario aver creato almeno un criterio di conformità dei dispositivi. Per creare criteri di conformità dei dispositivi, vedere le piattaforme seguenti:
 
-- Informazioni su come creare criteri di conformità dei dispositivi per le piattaforme seguenti:
+  - [Android](compliance-policy-create-android.md)
+  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [iOS](compliance-policy-create-ios.md)
+  - [macOS](compliance-policy-create-mac-os.md)
+  - [Windows](compliance-policy-create-windows.md)
 
-    -   [Android](compliance-policy-create-android.md)
-    -   [Android for Work](compliance-policy-create-android-for-work.md)
-    -   [iOS](compliance-policy-create-ios.md)
-    -   [macOS](compliance-policy-create-mac-os.md)
-    -   [Windows](compliance-policy-create-windows.md)
+- Per usare i criteri di conformità per impedire ai dispositivi di usare le risorse aziendali, è necessario aver configurato l'accesso condizionale di Azure AD. Per le indicazioni, vedere [Accesso condizionale in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 
-Quando si prevede di applicare criteri di conformità per impedire ai dispositivi di usare le risorse aziendali, è necessario aver configurato l'accesso condizionale di Azure AD. 
+- Deve essere creato un modello di messaggio di notifica. Per inviare messaggi di posta elettronica agli utenti, usare questo modello per creare azioni per la non conformità.
 
-- Vedere la procedura per [configurare l'accesso condizionale EMS](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
+## <a name="create-a-notification-message-template"></a>Creare un modello di messaggio di notifica
 
-È inoltre necessario aver creato un modello di messaggio di notifica. Questo modello verrà usato in un secondo momento, durante la creazione delle azioni per la mancata conformità, per inviare notifiche di posta elettronica agli utenti.
+1. Accedere al [portale di Azure](https://portal.azure.com) con le credenziali di Intune. 
+2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+3. Selezionare **Conformità del dispositivo**, quindi **Notifiche**. 
+4. Selezionare **Crea la notifica** e quindi immettere le informazioni seguenti:
 
-### <a name="to-create-a-notification-message-template"></a>Per creare un modello di messaggio di notifica
+  - Name
+  - Subject
+  - Messaggio
+  - Intestazione del messaggio di posta elettronica: includere il logo dell'azienda
+  - Piè di pagina del messaggio di posta elettronica: includere il nome dell'azienda
+  - Piè di pagina del messaggio di posta elettronica: includere le informazioni sul contatto
 
-1. Passare a [Intune nel portale di Azure](https://portal.azure.com) e accedere con le credenziali di Intune.
-2. Scegliere **Altri servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
-3. Scegliere **Intune**
-4. Scegliere **Conformità del dispositivo**, quindi **Notifiche** nella sezione **Gestisci**.
-5. Scegliere **Crea la notifica**e quindi immettere le informazioni seguenti:
-    - Name
-    - Subject
-    - Messaggio
-    - Intestazione del messaggio di posta elettronica - Includere il logo dell'azienda
-    - Piè di pagina del messaggio di posta elettronica - Includere il nome dell'azienda
-    - Piè di pagina del messaggio di posta elettronica - Includere le informazioni sul contatto
+  ![Esempio di messaggio di notifica di Intune relativo alla conformità](./media/actionsfornoncompliance-1.PNG)
 
-5. Scegliere **Crea la notifica**e quindi immettere le informazioni seguenti:
-
-    a. Name
-
-    b. Subject
-
-    c.  Messaggio
-
-    d. Intestazione del messaggio di posta elettronica - Includere il logo dell'azienda
-
-    e. Piè di pagina del messaggio di posta elettronica - Includere il nome dell'azienda
-
-    f. Piè di pagina del messaggio di posta elettronica - Includere le informazioni sul contatto
-
-![esempio del modello di messaggio di notifica](./media/actionsfornoncompliance-1.PNG)
-
-Dopo aver aggiunto le informazioni, scegliere **Crea**. Il modello di messaggio di notifica è disponibile per l'uso.
+Dopo aver aggiunto le informazioni, scegliere **Crea**. Il modello di messaggio di notifica è pronto per l'uso.
 
 > [!NOTE]
 > È anche possibile modificare un modello di notifica creato in precedenza.
 
-## <a name="to-create-actions-for-noncompliance"></a>Per creare azioni per la mancata conformità
+## <a name="add-actions-for-noncompliance"></a>Aggiungere azioni per la mancata conformità
 
-> [!TIP]
-> Intune offre un'azione predefinita nella sezione Azioni per la non conformità. Questa azione contrassegna il dispositivo come non conforme se rileva che non soddisfa i criteri di conformità per i dispositivi. È possibile personalizzare dopo quanto tempo dal rilevamento il dispositivo viene contrassegnato come non conforme. L' azione non può essere rimossa.
+Per impostazione predefinita, Intune crea automaticamente un'azione in caso di mancata conformità. Quando un dispositivo non soddisfa i criteri di conformità, questa azione contrassegna il dispositivo come non conforme. È possibile personalizzare il periodo di tempo in cui il dispositivo rimane contrassegnato come non conforme. Questa azione non può essere rimossa.
 
-È possibile aggiungere un'azione nel momento in cui si crea un nuovo criterio di conformità dei dispositivi o quando si modifica un criterio esistente.
+È possibile aggiungere un'azione quando si crea un nuovo criterio di conformità o si aggiorna un criterio esistente. 
 
-1.  Nel carico di lavoro di Intune, nel pannello **Tutti i criteri di conformità del dispositivo** scegliere **Criteri** nella sezione **Gestisci**.
+1. Nel [portale di Azure](https://portal.azure.com) aprire **Microsoft Intune** e selezionare **Conformità del dispositivo**.
+2. Selezionare **Criteri**, scegliere uno dei criteri e quindi selezionare **Proprietà**. 
 
-2.  Scegliere un criterio di conformità del dispositivo facendo clic su di esso, quindi scegliere **Proprietà** nella sezione **Gestisci**.
+  Non esiste ancora un criterio? Creare un criterio per [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o un'altra piattaforma.
 
-3.  Verrà aperto il pannello **Device compliance policy properties** (Proprietà dei criteri di conformità del dispositivo) in cui scegliere **Azioni per la non conformità**.
+3. Selezionare **Azioni per la mancata conformità**, quindi selezionare **Aggiungi** per immettere i parametri dell'azione. È possibile scegliere il modello di messaggio creato in precedenza, aggiungere altri destinatari e aggiornare la pianificazione del periodo di tolleranza. È possibile indicare il numero di giorni (da 0 a 365) nella pianificazione, quindi applicare i criteri di accesso condizionale. Se si immette **0** come numero di giorni, l'accesso condizionale blocca **immediatamente** l'accesso alle risorse aziendali.
 
-4.  Verrà aperto il pannello **Azioni per la non conformità** in cui scegliere **Aggiungi** per specificare i parametri dell'azione. È possibile scegliere il modello di messaggio creato in precedenza, uno più destinatari aggiuntivi e la pianificazione del periodo di tolleranza. È possibile specificare il numero di giorni (da 0 a 365) nella pianificazione, quindi applicare i criteri di accesso condizionale. Se si specifica **0** come numero di giorni, l'accesso condizionale deve bloccare **immediatamente** l'accesso alle risorse aziendali quando i dispositivi risultano non conformi ai criteri.
-
-5.  Dopo aver aggiunto le informazioni, scegliere **Aggiungi**, quindi **OK**.
+4. Al termine, selezionare **Aggiungi** > **OK** per salvare le modifiche.
 
 ## <a name="next-steps"></a>Passaggi successivi
-È possibile monitorare l'attività di conformità del dispositivo eseguendo i report disponibili nel pannello di conformità del dispositivo. Per altri dettagli, vedere [Come monitorare la conformità dei dispositivi in Intune](device-compliance-monitor.md).
+Monitorare l'attività di conformità del dispositivo eseguendo i report. Alcune indicazioni sono contenute in [Come monitorare la conformità dei dispositivi in Intune](device-compliance-monitor.md).

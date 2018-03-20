@@ -6,18 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-software-updates"></a>Gestire gli aggiornamenti software
 
@@ -71,20 +71,21 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Come creare e assegnare anelli di aggiornamento
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Aggiornamenti software**.
-4. Nel pannello **Aggiornamenti software** scegliere **Gestisci** > **Anelli di aggiornamento di Windows 10**.
-5. Nel pannello contenente l'elenco degli anelli di aggiornamento scegliere **Crea**.
-6. Nel pannello **Crea l'anello di aggiornamento** specificare un nome e una descrizione facoltativa per l'anello di aggiornamento e quindi scegliere **Impostazioni**.
-7. Nel pannello **Impostazioni** configurare le informazioni seguenti:
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** scegliere **Aggiornamenti software**.
+4. Nel riquadro **Aggiornamenti software** scegliere **Gestisci** > **Anelli di aggiornamento di Windows 10**.
+5. Nel riquadro contenente l'elenco degli anelli di aggiornamento scegliere **Crea**.
+6. Nel riquadro **Crea l'anello di aggiornamento** specificare un nome e una descrizione (facoltativa) per l'anello di aggiornamento e quindi scegliere **Impostazioni - Configura**.
+7. Nel riquadro **Impostazioni** configurare le informazioni seguenti:
     - **Canale di manutenzione**: impostare il canale per il quale il dispositivo riceve gli aggiornamenti di Windows: semestrale mirato(destinazione) o semestrale.
-    - **Aggiornamenti Microsoft**: scegliere se cercare gli aggiornamenti di app da Microsoft Update.
+    - **Aggiornamenti ai prodotti Microsoft**: scegliere se cercare gli aggiornamenti di app da Microsoft Update.
     - **Driver di Windows**: scegliere se escludere i driver di Windows Update durante gli aggiornamenti.
     - **Comportamento di aggiornamento automatico**: scegliere come gestire il comportamento di aggiornamento automatico per cercare, scaricare e installare gli aggiornamenti. Per informazioni dettagliate, vedere [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Periodo di differimento dell'aggiornamento qualitativo (giorni)**: specificare il numero di giorni per cui vengono posticipati gli aggiornamenti qualitativi. È possibile posticipare la ricezione di questi aggiornamenti per un periodo massimo di 30 giorni dalla data di rilascio.  
 
     Gli aggiornamenti qualitativi includono in genere correzioni e miglioramenti alle funzionalità esistenti di Windows e vengono normalmente pubblicati il primo martedì del mese, anche se possono essere rilasciati da Microsoft in qualsiasi momento. È possibile definire se, e per quanto tempo, posticipare la ricezione degli aggiornamenti qualitativi dopo che sono stati resi disponibili.
+
     - **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)**: specificare il numero di giorni per cui vengono posticipati gli aggiornamenti delle funzionalità. È possibile posticipare la ricezione di questi aggiornamenti per un periodo massimo di 180 giorni dalla data di rilascio.
 
     Gli aggiornamenti delle funzionalità includono in genere nuove funzionalità per Windows. Dopo aver configurato l'impostazione **Canale di manutenzione** (canale semestrale (mirato) o canale semestrale), è possibile definire se, e per quanto tempo, posticipare la ricezione degli aggiornamenti delle funzionalità dopo che sono stati resi disponibili da Microsoft in Windows Update.
@@ -93,13 +94,13 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 
     **Se il Canale di manutenzione è impostato su Canale semestrale e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Quattro mesi dopo, in aprile, l'aggiornamento della funzionalità X sarà rilasciato come Canale semestrale. Il dispositivo riceverà l'aggiornamento 30 giorni dopo il rilascio del canale semestrale e verrà aggiornato nel mese di maggio.
 
-    - **Ottimizzazione recapito**: scegliere il metodo in base al quale i dispositivi scaricheranno gli aggiornamenti di Windows. Per informazioni dettagliate, vedere [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
-1. Al termine della configurazione, fare clic su **OK** e nel pannello **Crea l'anello di aggiornamento** fare clic su **Crea**.
+    - **Modalità di download con ottimizzazione recapito**: scegliere il metodo in base al quale i dispositivi devono scaricare gli aggiornamenti di Windows. Per informazioni dettagliate, vedere [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+1. Al termine della configurazione, fare clic su **OK** e nel riquadro **Crea l'anello di aggiornamento** fare clic su **Crea**.
 
 Il nuovo anello di aggiornamento viene visualizzato nell'elenco degli anelli di aggiornamento.
 
 1. Per assegnare un anello, selezionarlo dall'elenco e nella scheda <*nome anello*> scegliere **Assegnazioni**.
-2. Nella scheda successiva scegliere **Seleziona gruppi** e quindi selezionare i gruppi a cui assegnare l'anello.
+2. Nella scheda successiva scegliere **Selezionare i gruppi da includere** e quindi selezionare i gruppi a cui assegnare l'anello.
 3. Al termine dell'operazione, scegliere **Seleziona** per completare l'assegnazione.
 
 ## <a name="update-compliance-reporting"></a>Creazione di report di conformità degli aggiornamenti
@@ -108,22 +109,21 @@ Il nuovo anello di aggiornamento viene visualizzato nell'elenco degli anelli di 
 ### <a name="review-update-compliance-in-intune"></a>Verificare la conformità degli aggiornamenti in Intune 
 <!-- 1352223 -->
 Rivedere un report sui criteri per visualizzare lo stato di distribuzione per gli anelli di aggiornamento di Windows 10 configurati. 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Aggiornamenti software**.
-4. Nel pannello **Aggiornamenti software** scegliere **Panoramica**. Vengono visualizzate informazioni generali sullo stato di tutte le fasi di aggiornamento assegnate.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** scegliere **Aggiornamenti software**.
+4. Nel riquadro **Aggiornamenti software** scegliere **Panoramica**. Vengono visualizzate informazioni generali sullo stato di tutte le fasi di aggiornamento assegnate.
 5. Aprire uno dei report seguenti: 
      
    **Per tutti gli anelli di distribuzione:**
-   1. Passare al pannello **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10**. 
+   1. Passare al riquadro **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10**. 
    2. Nella sezione **Monitoraggio** scegliere **Stato di distribuzione per ogni anello di aggiornamento**.
                    
    **Per anelli di distribuzione specifici:** 
-   1. Nel pannello **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10** scegliere l'anello di distribuzione da rivedere.
+   1. Nel riquadro **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10** scegliere l'anello di distribuzione da rivedere.
    2. Nella sezione **Monitoraggio** scegliere uno dei report seguenti per visualizzare informazioni dettagliate sull'anello di aggiornamento:
-      - **Distribuzione dell'anello di aggiornamento per i dispositivi**
-      - **Distribuzione dell'anello di aggiornamento per gli utenti**
-      - **Stato della distribuzione per singola impostazione**
+      - **Stato del dispositivo**
+      - **Stato utente**
 
 ### <a name="review-update-compliance-using-oms"></a>Verificare la conformità degli aggiornamenti usando OMS
 È possibile monitorare le implementazioni degli aggiornamenti di Windows 10 usando la soluzione gratuita Update Compliance disponibile in Operations Management Suite (OMS). Per informazioni dettagliate, vedere [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Monitorare gli aggiornamenti di Windows con Update Compliance). Quando si usa questa soluzione, è possibile distribuire un ID commerciale a uno qualsiasi dei dispositivi Windows 10 gestiti da Intune per il quale si vuole creare un report di conformità degli aggiornamenti.
@@ -136,19 +136,19 @@ Questo è il percorso dell'URI OMA (con distinzione tra maiuscole e minuscole) p
 
 - **Nome dell'impostazione**: ID commerciale di Windows Analytics
 - **Descrizione dell'impostazione**: configurazione dell'ID commerciale per le soluzioni Windows Analytics
-- **Tipo di dati**: String
 - **URI OMA** (maiuscole/minuscole): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **Tipo di dati**: String
 - **Valore**: <*Usare il GUID visualizzato nella scheda Telemetria di Windows nell'area di lavoro OMS*>
 
 ![Impostazione di Windows per i dati di diagnostica e di utilizzo](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Come sospendere gli aggiornamenti
 È possibile sospendere la ricezione degli aggiornamenti qualitativi o delle funzionalità su un dispositivo per un periodo massimo di 35 giorni dall'inizio della sospensione. Dopo che è trascorso il numero massimo di giorni, la funzionalità di sospensione verrà disattivata automaticamente e il dispositivo eseguirà la ricerca degli aggiornamenti applicabili in Windows Updates. Dopo questa ricerca, è possibile sospendere nuovamente gli aggiornamenti.
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Aggiornamenti software**.
-4. Nel pannello **Aggiornamenti software** scegliere **Gestisci** > **Anelli di aggiornamento di Windows 10**.
-5. Nel pannello con l'elenco degli anelli di aggiornamento, selezionare l'anello per cui impostare la sospensione e quindi scegliere **...** > **Sospendi l'aggiornamento qualitativo** o **Sospendi gli aggiornamenti delle funzionalità**, a seconda del tipo di aggiornamenti da sospendere.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** scegliere **Aggiornamenti software**.
+4. Nel riquadro **Aggiornamenti software** scegliere **Gestisci** > **Anelli di aggiornamento di Windows 10**.
+5. Nel riquadro con l'elenco degli anelli di aggiornamento, scegliere l'anello per cui impostare la sospensione e quindi scegliere **...** > **Sospendi l'aggiornamento qualitativo** > o **Sospendi gli aggiornamenti delle funzionalità**, a seconda del tipo di aggiornamenti da sospendere.
 
 > [!IMPORTANT]
 > Quando si esegue un comando di sospensione, i dispositivi ricevono tale comando non appena controllano la disponibilità di aggiornamenti nel servizio. È quindi possibile che, prima di effettuare questo controllo, installino un aggiornamento pianificato.

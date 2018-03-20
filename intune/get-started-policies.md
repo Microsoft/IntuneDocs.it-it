@@ -1,12 +1,12 @@
 ---
-title: Introduzione ai criteri
-titlesuffix: Azure portal
-description: Creare criteri per impedire agli utenti di eseguire operazioni non autorizzate con i propri dispositivi.
+title: Introduzione ai criteri di Microsoft Intune
+titlesuffix: 
+description: Creare criteri per la protezione dei dati aziendali e la gestione dei dispositivi che gli utenti finali usano per accedere alle risorse aziendali.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,22 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ea5fe13f7361b968f3158a617275cd08daedac1c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8af61eb207a8f9b2dc74650627fcab0e4d858904
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="get-started-with-policies"></a>Introduzione ai criteri
+# <a name="get-started-with-creating-policies"></a>Introduzione alla creazione di criteri
 
-Uno degli obiettivi principali dell'introduzione a Intune è la registrazione dei dispositivi per assicurarsi che siano conformi con i criteri aziendali. I criteri di conformità non solo consentono di gestire tipi di dispositivi specializzati, ad esempio chioschi multimediali di proprietà dell'azienda, ma anche dispositivi personali (BYOD), tablet e dispositivi senza utente associato.
+Uno degli obiettivi principali quando si inizia a prendere confidenza con Intune è la registrazione dei dispositivi per assicurarsi che siano conformi ai criteri aziendali. I criteri di conformità non solo consentono di gestire tipi di dispositivi specializzati, ad esempio chioschi multimediali di proprietà dell'azienda, ma anche dispositivi personali (BYOD), tablet e dispositivi senza utente associato.
 
 ![Dashboard di conformità con pochi dati](/intune/media/generic-compliance-dashboard.png)
 
-I criteri di conformità offrono le funzionalità di gestione seguenti per i dispositivi mobili seguenti:
+Gestire i dispositivi mobili nelle aree seguenti tramite criteri di conformità:
 
 * Regolare il numero di dispositivi registrati da ogni utente
-* Gestire le impostazioni dei dispositivi, ad esempio la crittografia a livello di dispositivo, la lunghezza delle password, l'uso della fotocamera e così via
+* Gestire le impostazioni dei dispositivi, ad esempio la crittografia a livello di dispositivo, la lunghezza delle password e l'uso della fotocamera
 * Distribuire app, profili di posta elettronica, profili VPN e così via.
 * Valutare i criteri a livello del dispositivo per i criteri di conformità di sicurezza
 
@@ -45,13 +45,14 @@ I criteri di conformità vengono creati separatamente per ogni piattaforma. In q
 
 __Come si creano i criteri?__
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. In **Cerca risorse** cercare **Intune**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Selezionare **Conformità del dispositivo**.
-4. Nel pannello **Conformità del dispositivo** selezionare **Criteri**.
-5. Selezionare **Crea criteri**, quindi specificare i dettagli, ad esempio **Nome** e **Descrizione**. Scegliere **iOS** come **Piattaforma**.
+4. Nel riquadro **Conformità del dispositivo** selezionare **Criteri**.
+5. Selezionare **Crea criteri**, quindi specificare i dettagli, ad esempio **Nome** e **Descrizione**. 
+6. Scegliere **iOS** come **Piattaforma**.
 6. In **Impostazioni** selezionare **Sicurezza del sistema**, quindi impostare **Richiedi una password per sbloccare i dispositivi mobili** su **Richiedi**. È possibile impostare anche altre regole, ad esempio **Lunghezza minima password**, **Tipo di password richiesto** e **Numero di caratteri non alfanumerici nella password**. Dopo aver terminato l'impostazione dei criteri, selezionare **OK**.
-7. Tornare al pannello **Crea criteri**, quindi selezionare **Crea**.
+7. Tornare al riquadro **Crea criterio** e quindi selezionare **Crea**.
 8. Dopo aver creato i criteri, selezionare **Assegnazioni** per assegnarli al gruppo di test. Selezionare il gruppo di test che include l'utente di test e assegnare i criteri al gruppo facendo clic su **Salva**.
 9. Attendere qualche minuto. Il dispositivo registrato dovrebbe richiedere di aggiornare la password per garantire la conformità ai criteri aziendali. È possibile verificare questa operazione anche manualmente nell'**app Portale aziendale per iOS** toccando il nome del dispositivo e il pulsante **Sincronizza**.
 

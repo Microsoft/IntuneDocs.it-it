@@ -1,12 +1,12 @@
 ---
-title: "Come creare i criteri di conformità per macOS"
-titleSuffix: Azure portal
-description: "Informazioni su come creare criteri di conformità per dispositivi macOS."
+title: "Creare criteri di conformità per i dispositivi macOS in Microsoft Intune"
+titleSuffix: 
+description: "Creare criteri di conformità per i dispositivi macOS in Microsoft Intune in modo da poter specificare i requisiti che un dispositivo deve soddisfare per essere conforme."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,18 @@ ms.technology:
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Creare criteri di conformità per i dispositivi macOS con Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+I criteri di conformità di un dispositivo macOS in Intune specificano le regole e le impostazioni che i dispositivi macOS devono soddisfare per essere considerati conformi. È possibile usare questi criteri con accesso condizionale per consentire o bloccare l'accesso alle risorse aziendali, oltre che ottenere report per dispositivi e intraprendere azioni per la mancata conformità. I criteri di conformità dei dispositivi vengono creati per ogni piattaforma nel portale di Intune in Azure.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -108,7 +110,7 @@ Quando si crea un nuovo criterio di conformità dei dispositivi con Intune è po
 
 2. Dopo l'accesso viene visualizzato il **dashboard di Azure**.
 
-3. Scegliere **Altri servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+3. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
 4. Scegliere **Intune**. Verrà visualizzato il **dashboard di Intune**.
 
@@ -118,7 +120,7 @@ Quando si crea un nuovo criterio di conformità dei dispositivi con Intune è po
 
 7. Digitare un nome e una descrizione e scegliere la piattaforma a cui applicare questi criteri.
 
-8. Viene visualizzato il pannello **macOS compliance policy** (Criteri di conformità macOS). Scegliere le categorie di impostazioni di conformità del dispositivo **Sicurezza**, **Integrità del dispositivo** e **Proprietà del dispositivo** per specificare le impostazioni.
+8. Viene visualizzato il riquadro **Criteri di conformità Mac**. Scegliere le categorie di impostazioni di conformità del dispositivo **Sicurezza del sistema**, **Integrità del dispositivo** e **Proprietà dispositivo** per specificare le impostazioni.
 
 10. Dopo aver scelto le impostazioni, scegliere **OK** in ogni categoria di impostazioni di conformità del dispositivo.
 
@@ -126,15 +128,15 @@ Quando si crea un nuovo criterio di conformità dei dispositivi con Intune è po
 
 ## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
 
-Per assegnare agli utenti i criteri di conformità, scegliere un criterio configurato. I criteri esistenti sono disponibili nel pannello **Criteri di conformità**.
+Per assegnare agli utenti i criteri di conformità, scegliere un criterio configurato. I criteri esistenti sono disponibili nel riquadro **Conformità del dispositivo - Criteri**.
 
-1. Scegliere i criteri di conformità del dispositivo da assegnare agli utenti e quindi selezionare **Assegnazioni**. Si apre il pannello da cui è possibile selezionare i **Gruppi di sicurezza Azure Active Directory** e assegnarli ai criteri.
+1. Scegliere i criteri di conformità del dispositivo da assegnare agli utenti e quindi selezionare **Assegnazioni**. Si apre il riquadro da cui è possibile selezionare i **gruppi di sicurezza di Azure Active Directory** e assegnarli ai criteri.
 
-2. Scegliere **Seleziona gruppi** per aprire il pannello che consente di visualizzare i gruppi di sicurezza di Azure AD.
+2. Scegliere **Gruppi selezionati** per aprire il riquadro che consente di visualizzare i gruppi di sicurezza di Azure AD.
 
-3. Scegliere **Selezione** e quindi **Salva** per assegnare i criteri di conformità del dispositivo ai gruppi di sicurezza di Azure AD.
+3. Scegliere **Salva** per assegnare i criteri di conformità del dispositivo ai gruppi di sicurezza di Azure AD.
 
-4. Dopo aver completato l'assegnazione dei criteri di conformità del dispositivo ai gruppi, è possibile chiudere il pannello **Assegnazioni**.
+4. Dopo aver completato l'assegnazione dei criteri di conformità del dispositivo ai gruppi, è possibile chiudere il riquadro **Assegnazioni**.
 
     > [!TIP]
     > Per impostazione predefinita, i dispositivi verificano la conformità ogni otto ore, ma gli utenti possono forzare il processo tramite l'app Portale aziendale Intune.

@@ -1,11 +1,12 @@
 ---
-title: Creare un report dal feed OData con Power BI | Microsoft Docs
+title: Creare un report dal feed OData con Power BI
+titlesuffix: Microsoft Intune
 description: Creare una visualizzazione ad albero usando Power BI Desktop con un filtro interattivo dall'API data warehouse di Intune.
 keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/18/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +15,19 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a81a3b0648c77e3adb7a57bdcecddea1e0412eb2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 850218c33a37738c591be36c778dfe5941bea51b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creare un report dal feed OData con Power BI
 
-In questa esercitazione viene creata una visualizzazione ad albero usando Power BI Desktop con un filtro interattivo. È possibile ad esempio che il CFO desideri visualizzare la distribuzione generale dei dispositivi confrontando dispositivi di proprietà dell'azienda e dispositivi personali. La visualizzazione ad albero offre informazioni dettagliate sul totale dei tipi di dispositivi. È possibile esaminare il numero di dispositivi iOS, Android e Windows di proprietà dell'azienda o personali.
+Questo articolo spiega come creare una visualizzazione ad albero usando Power BI Desktop con un filtro interattivo. È possibile ad esempio che il CFO desideri visualizzare la distribuzione generale dei dispositivi confrontando dispositivi di proprietà dell'azienda e dispositivi personali. La visualizzazione ad albero offre informazioni dettagliate sul totale dei tipi di dispositivi. È possibile esaminare il numero di dispositivi iOS, Android e Windows di proprietà dell'azienda o personali.
 
 ### <a name="overview-of-creating-the-chart"></a>Panoramica della creazione del grafico
 
-Per creare il grafico:
+Per creare il grafico, è necessario:
 1. Installare Power BI Desktop se non è già stato installato.
 2. Connettersi al modello di dati del data warehouse di Intune e recuperare i dati correnti del modello.
 3. Creare o gestire le relazioni dei modelli di dati.
@@ -49,9 +50,9 @@ Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power B
 > [!Note]  
 > È necessario disporre dell'autorizzazione per l'accesso ai **report** in Intune. Per altre informazioni, vedere [Autorizzazione](reports-api-url.md).
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** + **Intune**.
-3. Aprire il pannello **Data warehouse** di Intune.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Aprire il riquadro **Data warehouse** di Intune.
 4. Copiare l'URL del feed personalizzato. ad esempio `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Aprire Power BI Desktop.
 6. Scegliere **Recupera dati** > **Feed OData**.
@@ -61,24 +62,25 @@ Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power B
     ![Feed OData](media/reports-create-01-odatafeed.png)
 
 9. Selezionare **OK**.
-10. Selezionare **account aziendale** e quindi accedere con le credenziali di Intune. 
+10. Selezionare **account aziendale** e quindi accedere con le credenziali di Intune.
 
     ![Credenziali dell'account aziendale](media/reports-create-02-org-account.png)
 
-11. Selezionare **Connetti**. Viene visualizzato lo strumento di navigazione con l'elenco delle tabelle del data warehouse di Intune. 
+11. Selezionare **Connetti**. Viene visualizzato lo strumento di navigazione con l'elenco delle tabelle del data warehouse di Intune.
 
     ![Strumento di navigazione](media/reports-create-02-loadentities.png)
 
 12. Selezionare le tabelle **devices** e **ownerTypes**.  Selezionare **Carica**. Power BI carica i dati nel modello.
 
-## <a name="create-a-relationship"></a>Creare una relazione 
+## <a name="create-a-relationship"></a>Creare una relazione
 
 È possibile importare più tabelle per analizzare i dati correlati di più tabelle anziché i dati di una singola tabella.  PowerBI include una funzionalità denominata **Rilevamento automatico** che rileva e crea le relazioni automaticamente. Le tabelle del data warehouse sono state progettate per essere usate con la funzionalità di rilevamento automatico di PowerBI. Tuttavia, anche nel caso in cui PowerBI non rilevi automaticamente le relazioni, è possibile gestire le relazioni.
 
 ![Gestire le relazioni](media/reports-create-03-managerelationships.png)
 
 1. Selezionare **Gestione relazioni**.
-2. Selezionare **Rileva automaticamente...** se PowerBI non ha ancora individuato le relazioni.  
+2. Selezionare **Rileva automaticamente...** se PowerBI non ha ancora individuato le relazioni.
+
 La relazione è visualizzata dalla colonna Da alla colonna A. In questo esempio il campo dati **ownerTypeKey** della tabella **devices** viene collegato al campo dati **ownerTypeKey** della tabella **ownerTypes**. È possibile usare la relazione per cercare il nome del codice del tipo di dispositivo nella tabella **devices**.
 
 ## <a name="create-a-treemap-visualization"></a>Creare una visualizzazione ad albero
@@ -92,21 +94,24 @@ Un grafico ad albero mostra i dati gerarchici come caselle all'interno di casell
 3. Espandere la tabella **devices** e selezionare il campo dati **manufacturer** nel pannello **Campi**.
 4. Trascinare il campo dati **manufacturer** nel grafico Mappa ad albero nell'area di disegno report.
 5. Trascinare il campo dati **deviceKey** dalla tabella **devices** alla sezione **Valori** nel riquadro **Visualizzazioni** e rilasciarlo nella casella **Trascinare qui i campi dati**.  
-È ora disponibile una visualizzazione che mostra la distribuzione dei produttori di dispositivi all'interno dell'organizzazione.
+
+È ora disponibile una visualizzazione della distribuzione dei produttori di dispositivi all'interno dell'organizzazione.
 
 ![Mappa ad albero con dati](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Aggiungere un filtro
 
-È possibile aggiungere un filtro alla mappa ad albero per poter rispondere a domande aggiuntive usando l'app. 
+È possibile aggiungere un filtro alla mappa ad albero per poter rispondere a domande aggiuntive usando l'app.
 
-1. Fare clic sull'area di disegno report e quindi selezionare l'**icona Filtro dei dati** (![Mappa ad albero con dati](media/reports-create-slicer.png)) in **Visualizzazioni** per aggiungere un filtro.
+
+1. Per aggiungere un filtro, selezionare l'area di disegno report e quindi selezionare l'**icona Filtro dei dati** (![Mappa ad albero con dati](media/reports-create-slicer.png)) in **Visualizzazioni**.
 2. Cercare la tabella **ownerTypes** e trascinare il campo dati **ownerTypeName** nella sezione **Filtri** nel pannello **Visualizzazioni**.  
-   Nella tabella devices è incluso un campo dati denominato **OwnerTypeKey** che contiene un codice che indica se il dispositivo è aziendale o personale. Per visualizzare i nomi descrittivi nel filtro, cercare la tabella **ownerTypes** e trascinare **ownerTypeName**. Questo esempio mostra come il modello di dati supporta le relazioni tra le tabelle.
+
+   Nella tabella devices è incluso un campo dati denominato **OwnerTypeKey** che contiene un codice che indica se il dispositivo è aziendale o personale. Per visualizzare i nomi descrittivi nel filtro, cercare la tabella **ownerTypes** e trascinare **ownerTypeName**. Questo esempio illustra come il modello di dati supporta le relazioni tra le tabelle.
 
 ![Mappa ad albero con filtro](media/reports-create-08_ownertype.png)
 
-È ora disponibile un filtro interattivo che consente di passare dai dispositivi aziendali ai dispositivi personali per visualizzare i cambiamenti della distribuzione.
+È ora disponibile un filtro interattivo che consente di passare dai dispositivi aziendali ai dispositivi personali. Usare questo filtro per vedere in che modo cambia la distribuzione.
 
 1. Selezionare **Società** per visualizzare la distribuzione dei dispositivi aziendali.
 2. Selezionare **Personale** per visualizzare i dispositivi personali.
