@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 09/12/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b50c35dc805d033bd905105c22c4ec287dfaa1b7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 18987c65c7ad0443c8bf3dc268284306cf64080d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Come configurare le impostazioni di Windows 10 relative alla formazione in Microsoft Intune
 
@@ -31,22 +31,23 @@ Per informazioni dettagliate su 	Test ed esami, vedere [Test ed esami in Windows
 
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>Creare un profilo di dispositivo contenente le impostazioni del profilo di formazione
 
-1. Accedere al portale di Azure.
-2. Scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
-2. Nel pannello **Configurazione del dispositivo** scegliere **Gestisci** > **Profili**.
-3. Nel pannello dei profili scegliere **Crea profilo**.
-4. Nel pannello **Crea profilo** immettere un **nome** e una **descrizione** per il profilo di restrizione del dispositivo.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** scegliere **Configurazione del dispositivo**.
+2. Nel riquadro **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
+3. Nel riquadro dei profili scegliere **Crea profilo**.
+4. Nella pagina **Crea profilo** immettere **Nome** e **Descrizione** per il profilo di restrizione del dispositivo.
 5. Dall'elenco a discesa **Piattaforma** selezionare **Windows 10 e versioni successive**.
 6. Dall'elenco a discesa **Tipo di profilo** selezionare **Profilo di formazione**. 
-7. Scegliere Impostazioni > Configura e quindi nel pannello **Test ed esami** configurare quanto segue:
+7. Scegliere **Impostazioni > Configura** e nel riquadro **Test ed esami** configurare quanto segue:
+    - **Tipo di account**: selezionare un tipo di account dal campo a discesa.
     - **Nome dell'account utente**: immettere il nome utente dell'account usato con Test ed esami. Può trattarsi di un account di dominio, un account Azure Active Directory (AAD) o un account computer locale.
     - **URL della valutazione**: specificare l'URL del test che dovrà essere eseguito dagli utenti. Per altre informazioni, vedere la documentazione relativa a Test ed esami.
     - **Monitoraggio dello schermo**: specificare se si vuole essere in grado di monitorare l'attività dello schermo mentre gli utenti eseguono un test.
     - **Suggerimento di testo**: consentire o bloccare i suggerimenti di testo mentre gli utenti eseguono un test.
-8. Al termine tornare al pannello **Crea profilo** e fare clic su **Crea**.
+8. Al termine tornare al riquadro **Crea profilo** e scegliere **Crea**.
 
-Il profilo verrà creato e visualizzato nel pannello dell'elenco dei profili.
+Il profilo verrà creato e visualizzato nel riquadro dell'elenco dei profili.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

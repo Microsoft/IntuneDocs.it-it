@@ -1,12 +1,12 @@
 ---
 title: Impostare i termini e le condizioni in Microsoft Intune
-titlesuffix: Azure portal
-description: 'Impostare i termini e le condizioni visualizzati dagli utenti nel portale aziendale per Intune. '
+titlesuffix: 
+description: Impostare i termini e le condizioni visualizzati dagli utenti nel portale aziendale per Intune.
 keywords: 
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df7f91cbdcbafb785d0c4cfb1612d6c2f9e5581e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8fb386948d14fcbd26cffcd1b531b6ae61e9d669
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="ensure-users-accept-company-terms-for-access"></a>Verificare che gli utenti accettino le condizioni aziendali per l'accesso
+# <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>Gestire termini e condizioni aziendali per l'accesso degli utenti
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,16 +32,18 @@ Come amministratore di Intune, è possibile richiedere agli utenti di accettare 
 ## <a name="create-terms-and-conditions"></a>Creare termini e condizioni
 Completare i passaggi seguenti per creare i termini e le condizioni. Il nome visualizzato e la descrizione sono destinati all'uso amministrativo, mentre le proprietà dei termini e delle condizioni vengono visualizzate agli utenti nel portale aziendale.
 
-1. Nel portale di Azure scegliere **Registrazione del dispositivo** e quindi **Termini e condizioni**.
+1. Accedere al [portale Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Intune** scegliere **Registrazione del dispositivo** e quindi **Termini e condizioni**.
 2. Selezionare **Crea**.
 ![Screenshot del portale di Azure che mostra il pulsante Crea per i termini e le condizioni](media/terms-create-terms.png)
-3. Nel pannello espanso specificare le informazioni seguenti:
+3. Nel riquadro espanso specificare le informazioni seguenti:
 
    - **Nome visualizzato**: nome per i termini e le condizioni nel portale di Azure. Questo nome non viene visualizzato agli utenti.
 
    - **Descrizione**: dettagli facoltativi che permettono di identificare questo set di condizioni nel portale di Azure.
 
-4. Selezionare la freccia accanto a Define terms of use (Definisci le condizioni per l'utilizzo) per aprire il pannello Termini e condizioni, quindi immettere le informazioni seguenti:
+4. Selezionare la freccia accanto a **Define terms of use** (Definisci le condizioni per l'uso) per aprire il riquadro Termini e condizioni e immettere le informazioni seguenti:
 
    ![Schermata della schermata di accettazione dei termini e condizioni dell'utente finale con riepilogo dei termini](./media/terms-summary-create.png)
 
@@ -65,23 +67,24 @@ L'esempio seguente mostra i termini e le condizioni nella console di amministraz
 È possibile assegnare termini e condizioni a gruppi di utenti, che devono accettarli prima di usare il portale aziendale.
 
 1. Nel portale di Azure scegliere **Registrazione del dispositivo** e quindi **Termini e condizioni**.
-2. Nell'elenco dei termini e delle condizioni selezionare quelli da assegnare e quindi fare clic su **Gruppi assegnati**.
-![Screenshot del pannello Assegna gruppi del portale di Azure che mostra i pulsanti Seleziona gruppo e Seleziona per l'assegnazione dei termini e delle condizioni](media/terms-assign-groups.png)
-3. Fare clic sul pulsante **Seleziona gruppo**, selezionare i gruppi a cui assegnare i termini e le condizioni nel pannello **Seleziona gruppi** e quindi fare clic su **Seleziona**. Non è possibile assegnare termini e condizioni ai gruppi dinamici.
-4. Nel pannello **Gruppi assegnati** fare clic su **Salva**.  I termini e le condizioni sono ora assegnati a utenti in gruppi selezionati. Agli utenti verrà chiesto di accettare i termini e le condizioni al successivo accesso al portale aziendale. I termini e le condizioni devono essere accettati una sola volta. Gli utenti con più dispositivi non dovranno accettarli in ogni dispositivo.
+2. Nell'elenco dei termini e delle condizioni selezionare quelli da assegnare e quindi fare clic su **Gestisci** > **Assegnazioni**.
+![Screenshot del riquadro Assegna gruppi del portale di Azure in cui vengono visualizzati i pulsanti Selezione gruppo e Seleziona per l'assegnazione di termini e condizioni](media/terms-assign-groups.png)
+3. Fare clic su **Seleziona gruppo**, selezionare i gruppi a cui assegnare i termini e le condizioni e fare clic su **Seleziona**. Non è possibile assegnare termini e condizioni ai gruppi dinamici.
+4. Nel riquadro **Gruppi assegnati** fare clic su **Salva**.  I termini e le condizioni sono ora assegnati a utenti in gruppi selezionati. Agli utenti verrà chiesto di accettare i termini e le condizioni al successivo accesso al portale aziendale. I termini e le condizioni devono essere accettati una sola volta. Gli utenti con più dispositivi non dovranno accettarli in ogni dispositivo.
 
 
 ## <a name="monitor-terms-and-conditions"></a>Monitorare termini e condizioni
 
-1. Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**. Nel pannello Intune scegliere **Registrazione del dispositivo** e quindi **Termini e condizioni**.
-2. Nell'elenco dei termini e delle condizioni selezionare quelli per i quali si vuole visualizzare l'accettazione e quindi fare clic su **Stati di accettazione**.
+1. Nel portale di Azure scegliere **Tutti i servizi** > **Monitoraggio e gestione** > **Intune**. 
+1. Nel riquadro Intune scegliere **Registrazione del dispositivo** e quindi **Termini e condizioni**.
+2. Nell'elenco dei termini e delle condizioni selezionare quelli per i quali si vuole visualizzare l'accettazione e quindi scegliere **Acceptance Reporting** (Creazione di report sull'accettazione).
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Gestire più versioni di termini e condizioni
 È possibile modificare i termini e le condizioni e gestirne le versioni. È consigliabile incrementare il numero di versione e richiedere l'accettazione ogni volta che si apportano modifiche significative ai termini e alle condizioni. Non modificare il numero di versione corrente se, ad esempio, si correggono errori di digitazione o si modifica la formattazione.
 
-1. Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
+1. Nel portale di Azure scegliere **Tutti i servizi** > **Monitoraggio e gestione** > **Intune**.
 
-2. Nel pannello Intune scegliere **Registrazione del dispositivo**, scegliere **Termini e condizioni**, selezionare i termini e le condizioni da modificare e quindi selezionare **Proprietà**.
+2. Nel riquadro di Intune scegliere **Registrazione del dispositivo**, **Termini e condizioni**, selezionare i termini e le condizioni che si vuole modificare e quindi scegliere **Proprietà**.
 
 4. Nel pannello **Proprietà** selezionare **Termini e condizioni** e quindi modificare **Titolo**, **Riepilogo delle condizioni** e **Termini e condizioni** in base alle esigenze. Se dopo le modifiche apportate è necessario che gli utenti riaccettino i nuovi termini e condizioni, fare clic su **Richiedi agli utenti di accettare di nuovo e incrementa il numero di versione a**.
 

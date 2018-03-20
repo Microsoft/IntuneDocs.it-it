@@ -1,10 +1,10 @@
 ---
 title: Aggiunta della schermata dello stato di registrazione
-titlesuffix: Azure portal
+titleSuffix: Microsoft Intune
 description: Dare il benvenuto agli utenti che stanno effettuando la registrazione di dispositivi Windows 10.
 keywords: 
-author: barlan
-manager: barlanmsft
+author: ErikjeMS
+manager: erikje
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 479f2c1998cd8dfd637f1487a7f4c767b17a5fa7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a8691572a25dbb94ff5d165298d48a3c68b33bab
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="set-up-an-enrollment-status-screen"></a>Impostare la schermata dello stato di registrazione
 
@@ -27,8 +27,6 @@ ms.lasthandoff: 01/25/2018
 Quando un utente finale registra un dispositivo Windows, si aspetta di poter accedere a tutte le funzionalità necessarie per essere produttivo subito dopo la registrazione. Tuttavia i contenuti, le app, i criteri e le impostazioni sono disponibili nel dispositivo una volta terminato il processo di registrazione.
 
 È possibile aggiungere una schermata relativa allo stato di registrazione per rendere disponibili altre informazioni per gli utenti finali per quanto riguarda i passaggi da seguire una volta terminato il processo di registrazione. Il percorso è il seguente: **Registrazione dispositivi** > **Registrazione Windows** > **Schermata relativa allo stato della registrazione**.
-
-![Schermata dello stato di registrazione per Windows 10.](win10-enrollment-status-admin-setup.png)
 
 È possibile definire quattro campi: il **Messaggio introduttivo**, il **Messaggio**e il **Collegamento ipertestuale per la Guida**, in cui è possibile impostare **Testo del collegamento**e **URL per la Guida utenti**.
 

@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1a30a86ae924777b435c67e67f926819753d67
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9de6f0e2f7c74e7aec45c27f0fa20189b26c5e22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>Impostazioni di AirPlay di Intune per dispositivi iOS
 
@@ -33,19 +33,20 @@ Questa funzionalità consente di eseguire le operazioni seguenti:
 
 ## <a name="get-started"></a>Operazioni preliminari
 
-1. Nel pannello **Funzionalità del dispositivo** scegliere **AirPlay**.
-2. Nel pannello **AirPlay** scegliere una o entrambe le operazioni seguenti:
+1. Da [Intune nel portale di Azure](https://portal.azure.com) passare a [**Funzionalità del dispositivo** nell'area di configurazione del dispositivo](device-features-configure.md). 
+1. Nel riquadro **Funzionalità del dispositivo** scegliere **AirPlay**.
+2. Nel riquadro **AirPlay** scegliere una o entrambe le azioni seguenti:
 
 ## <a name="configure-a-device-and-password-list"></a>Configurare un elenco di dispositivi e password
 
-1. Nel pannello **Password** immettere **Nome dispositivo** e la **Password** di un dispositivo AirPlay, ad esempio **Contoso Apple TV**.
+1. Nel riquadro **Password** immettere **Nome dispositivo** e **Password** di un dispositivo AirPlay, ad esempio **Contoso Apple TV**.
 2. Dopo aver immesso le informazioni sul dispositivo, fare clic su **Aggiungi**. Il dispositivo verrà visualizzato nell'elenco **Nome dispositivo**.
 3. Aggiungere tutti i dispositivi desiderati. Al termine, scegliere **OK**.
 
 
 ## <a name="configure-allowed-destinations"></a>Configurare le destinazioni consentite
 
-1. Nel pannello **Allowed destinations (supervised only)** (Destinazioni consentite (solo con supervisione)) immettere l'**ID dispositivo** di un dispositivo AirPlay, ad esempio 52:46:CD:51:83:4C.
+1. Nel riquadro **Allowed destinations (supervised only)** (Destinazioni consentite (solo con supervisione)) immettere l'**ID dispositivo** di un dispositivo AirPlay, ad esempio 52:46:CD:51:83:4C.
 2. Dopo aver immesso l'ID del dispositivo, fare clic su **Aggiungi**. L'ID verrà visualizzato nell'elenco **ID dispositivo**.
 3. Aggiungere tutti i dispositivi desiderati. Al termine scegliere **OK**.
 
