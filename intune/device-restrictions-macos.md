@@ -1,29 +1,29 @@
 ---
-title: Impostazioni relative alle restrizioni dei dispositivi per macOS
-titlesuffix: Azure portal
-description: "Informazioni sulle opzioni di Intune che è possibile usare per controllare le impostazioni e le funzionalità del dispositivo in dispositivi macOS.\""
+title: Impostazioni relative alle restrizioni dei dispositivi per macOS in Microsoft Intune
+titlesuffix: 
+description: "Informazioni sulle opzioni di Intune per il controllo delle impostazioni e delle funzionalità nei dispositivi che eseguono macOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/31/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 72c9036bd6062e719d55876d77f44123fe2af392
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Impostazioni relative alle restrizioni dei dispositivi macOS in Microsoft Intune
+# <a name="microsoft-intune-macos-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi macOS in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Usare queste impostazioni per gestire i dispositivi macOS in un profilo di restrizione del dispositivo.
+Questo articolo illustra le impostazioni relative alle restrizioni dei dispositivi di Microsoft Intune configurabili per i dispositivi che eseguono macOS.
 
 ## <a name="password"></a>Password
 -   **Password**: richiede all'utente finale di immettere una password per accedere al dispositivo.
@@ -49,5 +49,5 @@ Per configurare un elenco, fare clic su **Aggiungi** e quindi specificare il nom
 
 ### <a name="unmarked-email-domains"></a>Domini di posta elettronica non contrassegnati
 
-Nel campo **URL del dominio di posta elettronica** aggiungere uno o più URL all'elenco. Quando gli utenti finali ricevono un messaggio di posta elettronica da un dominio diverso da quello configurato, il messaggio di posta elettronica viene contrassegnato come non attendibile nell'app di posta in iOS.
+Nel campo **URL del dominio di posta elettronica** aggiungere uno o più URL all'elenco. Quando gli utenti ricevono un messaggio di posta elettronica da un dominio diverso da quello configurato, il messaggio di posta elettronica viene contrassegnato come non attendibile nell'app di posta in iOS.
 

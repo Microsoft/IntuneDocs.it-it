@@ -5,7 +5,7 @@ keywords: intune graphapi c# powershell ruoli di autorizzazione
 author: vhorne
 manager: dougeby
 ms.author: victorh
-ms.date: 06/20/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c97c32f5f6c81f1112c99b486898c271cc5ff2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 7b59d4bc689daf462ac01a106457c3835a78b98b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Come usare Azure AD per accedere alle API di Intune in Microsoft Graph
 
@@ -44,7 +44,7 @@ Questo articolo:
 
 - Include esempi di autenticazione dell'API di Intune per C# e PowerShell.
 
-- Descrive come supportare più tenant
+- Descrive come supportare più tenant.
 
 Per altre informazioni, vedere:
 
@@ -97,7 +97,7 @@ Per registrare un'app per l'uso dell'API Microsoft Graph:
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    Scegliere i ruoli necessari per l'app inserendo un segno di spunta a sinistra dei nomi corrispondenti.  Per informazioni sugli specifici ambiti di autorizzazione di Intune, vedere [Ambiti di autorizzazione di Intune](#user-content-intune-permission-scopes).  Per informazioni sugli altri ambiti di autorizzazione dell'API Graph, vedere [Informazioni di riferimento sulle autorizzazioni di Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+    Scegliere i ruoli necessari per l'app inserendo un segno di spunta a sinistra dei nomi corrispondenti.  Per informazioni sugli specifici ambiti di autorizzazione di Intune, vedere [Ambiti di autorizzazione di Intune](#intune-permission-scopes).  Per informazioni sugli altri ambiti di autorizzazione dell'API Graph, vedere [Informazioni di riferimento sulle autorizzazioni di Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
     Per ottenere risultati ottimali, scegliere il minor numero di ruoli necessario per implementare l'applicazione.
 
@@ -139,7 +139,7 @@ Quando si concede l'autorizzazione a Microsoft Graph, è possibile specificare i
 
 Impostazione _Abilita accesso_ | Nome ambito
 :--|:--
-__Perform user-impacting remote actions on Microsoft Intune devices__ (Eseguire azioni remote che influiscono sull'utente nei dispositivi di Microsoft Intune) | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__Perform user-impacting remote actions on Microsoft Intune devices__ (Eseguire azioni remote che influiscono sull'utente nei dispositivi di Microsoft Intune) | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
 __Read and write Microsoft Intune devices__ (Leggere e scrivere i dispositivi di Microsoft Intune) | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Read Microsoft Intune devices__ (Leggere i dispositivi di Microsoft Intune) | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Read and write Microsoft Intune RBAC settings__ (Leggere e scrivere le impostazioni di controllo degli accessi in base al ruolo di Microsoft Intune) | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
@@ -585,7 +585,7 @@ Ricordare di aggiungere l'utente ad altri ruoli in base alle esigenze. Ad esempi
 
 Inoltre:
 
-- Usare http://portal.office.com per assegnare una licenza di Intune all'account utente.
+- Usare https://portal.office.com per assegnare una licenza di Intune all'account utente.
 
 - Aggiornare il codice dell'applicazione per eseguire l'autenticazione nel dominio del tenant di Azure AD del cliente, anziché nel proprio.
 

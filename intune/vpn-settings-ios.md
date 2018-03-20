@@ -1,29 +1,29 @@
 ---
-title: Impostazioni VPN di Intune per dispositivi iOS
-titlesuffix: Azure portal
-description: "Informazioni sulle impostazioni di Intune che è possibile usare per configurare le connessioni VPN nei dispositivi iOS.\""
+title: Impostazioni VPN di Microsoft Intune per i dispositivi iOS
+titlesuffix: 
+description: "Informazioni sulle impostazioni di Intune che è possibile usare per configurare le connessioni VPN nei dispositivi che eseguono iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3db57b851c405758c9cccdc3e70c96ca9e76000
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70721d1d2f360527af0e269a93d6243b6a42431b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Impostazioni VPN per dispositivi iOS in Microsoft Intune
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Configurare le impostazioni VPN in Microsoft Intune per i dispositivi che eseguono iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Questo articolo illustra le impostazioni di Intune che è possibile usare per configurare le connessioni VPN nei dispositivi che eseguono iOS.
 
 A seconda delle impostazioni selezionate, non tutti i valori nell'elenco seguente sono configurabili.
 
@@ -38,7 +38,7 @@ A seconda delle impostazioni selezionate, non tutti i valori nell'elenco seguent
 - **Tipo di connessione**: selezionare il tipo di connessione VPN dall'elenco di fornitori seguente:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Cisco (IPSec)**
@@ -62,7 +62,7 @@ Se si seleziona **VPN personalizzata** come tipo di connessione, configurare que
 - **On-demand rules** (Regole su richiesta): consente di configurare le regole condizionali che controllano l'avvio della connessione VPN. Ad esempio, è possibile creare una condizione per cui la connessione VPN viene usata solo quando un dispositivo non è connesso a una delle reti Wi-Fi dell'azienda. In alternativa, è possibile creare una condizione per cui, se un dispositivo non può accedere a un dominio di ricerca DNS specificato, la connessione VPN non viene avviata.
 
     - **SSID o domini di ricerca DNS**: specificare se la condizione userà o meno **SSID** della rete wireless o **Domini di ricerca DNS**. Scegliere Aggiungi per configurare uno o più SSID o domini di ricerca.
-    - **Probe della stringa dell'URL**: facoltativo, specificare un URL che la regola usa come test. Se il dispositivo in cui è installato il profilo è in grado di accedere a questo URL senza il reindirizzamento, la connessione VPN viene avviata e il dispositivo si connette all'URL di destinazione. L'utente non visualizzerà il sito del probe della stringa dell'URL. Un esempio di probe della stringa dell'URL è l'indirizzo di un server Web di controllo che verifica la conformità del dispositivo prima della connessione VPN. Un'altra possibilità è che l'URL verifichi che la rete VPN possa connettersi a un sito prima di connettere il dispositivo all'URL di destinazione tramite VPN.
+    - **Probe della stringa dell'URL**: facoltativo, specificare un URL che la regola usa come test. Se il dispositivo in cui è installato il profilo è in grado di accedere a questo URL senza il reindirizzamento, la connessione VPN viene avviata e il dispositivo si connette all'URL di destinazione. L'utente non visualizza il sito del probe della stringa dell'URL. Un esempio di probe della stringa dell'URL è l'indirizzo di un server Web di controllo che verifica la conformità del dispositivo prima della connessione VPN. Un'altra possibilità è che l'URL verifichi che la rete VPN possa connettersi a un sito prima di connettere il dispositivo all'URL di destinazione tramite VPN.
     - **Azione del dominio**: scegliere una delle voci seguenti:
         - Connetti se necessario 
         - Non connettere mai 
