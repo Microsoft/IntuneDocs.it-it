@@ -6,8 +6,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.date: 02/26/2018
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: f2d0a77c9e9e36db53c23031fd9f06f508fef15d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Guida introduttiva a Microsoft Intune nel portale di Azure
 
@@ -31,7 +31,7 @@ La __barra laterale__ sul lato sinistro del portale di Azure contiene un elenco 
 
 ![Utente che cerca Microsoft Intune nell'elenco "Altri servizi".](./media/azure-add-intune1.png)
 
-1. Selezionare **Altri servizi** nella parte inferiore della barra laterale sul lato sinistro della pagina.
+1. Selezionare **Tutti i servizi** nella barra laterale sul lato sinistro della pagina.
 2. Cercare **Intune** nella casella del filtro.
 3. Selezionare la **stella** per aggiungere Intune alla fine dell'elenco dei servizi preferiti.
 4. Passare il puntatore del mouse sul servizio Intune. Selezionare e trascinare Intune mediante i **tre punti verticali** a destra del nome del servizio.
@@ -52,7 +52,7 @@ Questa funzionalità sarà più rilevante dopo aver aggiunto altro contenuto a I
 
 ## <a name="using-services"></a>Uso dei servizi
 
-Ogni volta che si apre Microsoft Intune o qualsiasi altro servizio in Azure, questo verrà visualizzato in un **pannello**. Alcuni dei primi carichi di lavoro usati in Intune, ad esempio **Utenti**, **Gruppi** e **App per dispositivi mobili**, vengono visualizzati tutti in un pannello a schermo intero. Quando si seleziona il carico di lavoro, il relativo pannello viene aperto a pagina intera. Gli altri pannelli, quando vengono aperti, scorrono dal lato destro del pannello e vengono compressi sotto il pannello principale da cui provengono.
+Ogni volta che si apre Intune o qualsiasi altro servizio in Azure, questo verrà visualizzato in un **riquadro**. Alcuni dei primi carichi di lavoro usati in Intune, ad esempio **Utenti**, **Gruppi** e **App per dispositivi mobili**, vengono visualizzati tutti in un riquadro a schermo intero. Quando si seleziona il carico di lavoro, il relativo riquadro viene aperto a pagina intera. Gli altri riquadri, quando vengono aperti, scorrono dal lato destro del riquadro e vengono compressi sotto il riquadro principale da cui provengono.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

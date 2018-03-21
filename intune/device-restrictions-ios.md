@@ -13,19 +13,21 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
-Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di Microsoft Intune configurabili per i dispositivi che eseguono iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Questo articolo illustra le impostazioni relative alle restrizioni dei dispositivi di Microsoft Intune configurabili per i dispositivi che eseguono iOS.
+
 ## <a name="general"></a>Generale
 
+-   **Condividi i dati di utilizzo** - Consente o impedisce al dispositivo di inviare dati di diagnostica e di telemetria dell'utilizzo ad Apple.
 -   **Invio dati di diagnostica** - Consente o impedisce al dispositivo di inviare dati di diagnostica ad Apple.
 -   **Acquisizione schermo** - Consente all'utente di acquisire il contenuto della schermata come immagine.
     - **Osservazione dello schermo remoto da parte dell'app Classroom (solo con supervisione)** - Consente o blocca l'osservazione dello schermo di dispositivi iOS da parte dell'app Apple Classroom.
@@ -212,9 +214,9 @@ Esempio: cercare Microsoft Word per iPad. L'URL usato è https://itunes.apple.co
 -   **Hotspot personale** - Non consente l'uso del dispositivo come hotspot personale. Questa impostazione potrebbe non essere compatibile con alcuni gestori.
 -   **Aggiungi reti Wi-Fi solo tramite profili di configurazione (solo con supervisione)** - Consente al dispositivo di connettersi solo a reti Wi-Fi configurate con un profilo Wi-Fi di Intune.
 
-- **Regole di utilizzo della rete cellulare (solo app gestite)** - Consente di definire i tipi di dati usabili dalle app gestite nelle reti cellulari. È possibile scegliere tra:
-    - **Blocca l'uso della rete dati**
-    - **Blocca l'uso della rete dati durante il roaming**
+- **Regole di utilizzo della rete cellulare (solo app gestite)** - Consente di definire i tipi di dati usabili dalle app gestite nelle reti cellulari. Scegliere tra:
+    - **Blocca l'uso della rete dati** - È possibile bloccare l'uso della rete dati per ** Tutte le app gestite* oppure **scegliere app specifiche**.
+    - **Blocca l'uso della rete dati durante il roaming** - È possibile bloccare l'uso della rete dati durante il roaming per ** Tutte le app gestite* oppure **scegliere app specifiche**.
 
 ## <a name="connected-devices"></a>Dispositivi connessi
 

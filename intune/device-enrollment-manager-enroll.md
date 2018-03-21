@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01f5791869876ecfb7096c987cbc2828a39a2844
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi usando un account del manager di registrazione dispositivi
 
@@ -34,7 +34,7 @@ Per poter essere aggiunti come manager di registrazione dispositivi, gli utenti 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Esempio di scenario con manager di registrazione dispositivi
 
-Un ristorante vuole offrire 50 tablet POS al personale di sala e monitor per gli ordini per il personale di cucina. I dipendenti non hanno bisogno di accedere ai dati aziendali o di accedere come utenti. L'amministratore di Intune crea un account del manager di registrazione dispositivi e aggiunge un supervisore del ristorante all'account offrendo le funzionalità DEM al supervisore. Il supervisore potrà quindi registrare 50 tablet usando le credenziali DEM.
+Un ristorante vuole offrire 50 tablet POS al personale di sala e monitor per gli ordini per il personale di cucina. I dipendenti non hanno bisogno di accedere ai dati aziendali o di accedere come utenti. L'amministratore di Intune crea un account del manager di registrazione dispositivi e aggiunge un supervisore del ristorante all'account. Il supervisore ha ora capacità di manager di registrazione dispositivi. Il supervisore potrà quindi registrare 50 tablet usando le credenziali DEM.
 
 Solo gli utenti presenti nel [portale di Azure](https://portal.azure.com) possono essere manager di registrazione dispositivi. L'utente manager di registrazione dispositivi non può essere un amministratore di Intune.
 
@@ -50,16 +50,16 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
 
   - Nessun accesso per singolo utente. Poiché ai dispositivi non è assegnato alcun utente, il dispositivo non ha accesso alla posta elettronica o ai dati aziendali. È comunque possibile usare configurazioni VPN, ad esempio, per fornire l'accesso ai dati alle app dei dispositivi.
   - Nessun accesso condizionale. Questi infatti sono scenari per utente.
-  - L'utente manager di registrazione dispositivi non può annullare la registrazione di dispositivi registrati DEM sul dispositivo tramite il portale aziendale. Questa operazione può essere eseguita dall'amministratore di Intune, ma non dall'utente DEM.
+  - L'utente manager di registrazione dispositivi non può annullare la registrazione di dispositivi registrati DEM sul dispositivo tramite il portale aziendale. L'amministratore di Intune può annullare la registrazione.
   - Visualizzazione del solo dispositivo locale nell'app o nel sito Web del portale aziendale.
   - Gli utenti non possono usare le app Volume Purchase Program di Apple poiché è necessario un ID Apple per utente per la gestione delle app.
   - (Solo iOS) Se si usa un manager di registrazione dispositivi per la registrazione dei dispositivi iOS, non è possibile usare Apple Configurator, Apple Device Enrollment Program (DEP) o Apple School Manager (ASM) per la registrazione dei dispositivi.
-  - (Solo Android) È previsto un limite alla quantità di dispositivi Android for Work che è possibile registrare con un singolo account DEM. Per ogni account DEM è possibile registrare fino a dieci profili di lavoro Android. Questa limitazione non si applica alla registrazione di Android legacy.
+  - (Solo Android) È previsto un limite al numero di dispositivi Android for Work che è possibile registrare con un singolo account DEM. Per ogni account DEM è possibile registrare fino a 10 profili di lavoro Android. Questa limitazione non si applica alla registrazione di Android legacy.
   - Ogni dispositivo richiede una licenza dispositivo. Altre informazioni sulle [licenze utente e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
 > [!NOTE]
-> Per distribuire le app aziendali ai dispositivi gestiti con il manager di registrazione dispositivi, distribuire l'app Portale aziendale come **Installazione richiesta** all'account utente del manager di registrazione dispositivi.
+> È possibile distribuire app aziendali ai dispositivi gestiti dal manager di registrazione dispositivi. Distribuire l'app Portale aziendale come **installazione richiesta** all'account utente del manager di registrazione dispositivi.
 > Per consentire prestazioni migliori, se si visualizza l'app Portale aziendale in un dispositivo DEM, viene visualizzato solo il dispositivo locale. La gestione remota di altri dispositivi DEM è possibile solo dalla console di amministrazione di Intune.
 
 
@@ -88,9 +88,8 @@ La rimozione di un manager di registrazione dispositivi non influisce sui dispos
 
 **Per rimuovere un manager di registrazione dispositivi**
 
-1. Nel [portale di Azure](https://portal.azure.com) scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-2. Nel pannello Intune scegliere **Registrazione del dispositivo** e quindi scegliere **Manager di registrazione dispositivi**.
-3. Nel pannello **Manager di registrazione dispositivi** selezionare l'utente manager di registrazione dispositivi e selezionare **Elimina**.
+1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** e quindi scegliere **Manager di registrazione dispositivi**.
+2. Nel pannello **Manager di registrazione dispositivi** selezionare l'utente manager di registrazione dispositivi e selezionare **Elimina**.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Visualizzare le proprietà di un manager di registrazione dispositivi
 
