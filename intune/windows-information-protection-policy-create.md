@@ -1,12 +1,12 @@
 ---
-title: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
-titlesuffix: Azure portal
-description: Creare e distribuire criteri di protezione delle app WIP con Intune
+title: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP)
+titlesuffix: Microsoft Intune
+description: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Microsoft Intune
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: doubeby
-ms.date: 02/16/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 4325d77982bcca748a38696fbbbb413a1c304ffb
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A partire dalla versione 1704 di Intune, è possibile usare i criteri di protezione delle app con Windows 10 per proteggere le app senza registrare i dispositivi.
+È possibile usare i criteri di protezione delle app con app Windows 10 per proteggere le app senza registrare i dispositivi.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Di seguito vengono presentati prima di tutto alcuni concetti fondamentali per l'aggiunta di criteri WIP.
+È necessario conoscere alcuni concetti fondamentali per l'aggiunta di criteri WIP:
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Elenco delle app consentite ed escluse
 
@@ -39,95 +39,84 @@ Di seguito vengono presentati prima di tutto alcuni concetti fondamentali per l'
 
 ### <a name="types-of-apps"></a>Tipi di app
 
--   **App consigliate**: un elenco precompilato di app (principalmente Microsoft Office) che è possibile importare facilmente nei criteri. <!---I really don't know what you mean by "easily import into policy"--->
-
+-   **App consigliate**: elenco precompilato di app (principalmente Microsoft Office) che è possibile importare facilmente nei criteri.
 -   **App Store**: è possibile aggiungere qualsiasi app da Windows Store al criterio.
-
 -   **Windows desktop apps** (App desktop di Windows): è possibile aggiungere qualsiasi app desktop di Windows tradizionale al criterio (ad esempio, exe e dll)
 
-## <a name="pre-requisites"></a>Prerequisiti
+## <a name="prerequisites"></a>Prerequisiti
 
 Configurare il provider MAM prima di creare un criterio di protezione dell'app di WIP. Altre informazioni su [come configurare il provider MAM con Intune](app-protection-policies-configure-windows-10.md).
 
 È inoltre necessario avere la licenza e l'aggiornamento seguenti:
 
--   Una licenza di [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
+-   Una licenza di [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 > [!IMPORTANT]
 > WIP non supporta più identità e può essere presente una sola identità gestita alla volta.
-<!---Should you be linking to a topic that explains what multi-identity is?--->
 
-## <a name="to-add-a-wip-policy"></a>Per aggiungere criteri WIP
+## <a name="to-add-a-wip-app-protection-policy"></a>Per aggiungere criteri di protezione delle app WIP
 
-Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri specifici di WIP tramite il [portale Azure](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
+Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri specifici di WIP.
 
-1.  Passare al dashboard **Gestione di applicazioni mobili di Intune**, scegliere **Tutte le impostazioni** > **Criteri per le app**.
-
-2.  Nel pannello **Criteri per le app** scegliere **Aggiungi criteri** e quindi immettere i valori seguenti:
-
-    a.  **Nome:** digitare un nome (obbligatorio) per il nuovo criterio.
-
-    b.  **Descrizione:** digitare una descrizione facoltativa.
-
-    c.  **Piattaforma:** scegliere **Windows 10** come piattaforma supportata per i criteri di protezione delle app.
-
-    d.  **Stato della registrazione:** scegliere **Senza registrazione** come stato di registrazione per il criterio.
-
-3.  Scegliere **Crea**. Il criterio viene creato e visualizzato nella tabella nel pannello **Criteri per le app**.
+1. Accedere al [portale di Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi** > **Intune**.
+3. Selezionare **App per dispositivi mobili** nel pannello **Microsoft Intune**.
+4. Selezionare **Criteri di protezione delle app** nel pannello **App per dispositivi mobili**.
+5. Fare clic su **Aggiungi criteri** per visualizzare il pannello **Aggiungi criteri**.
+6. Aggiungere i valori seguenti:
+    - **Nome:** digitare un nome (obbligatorio) per il nuovo criterio.
+    - **Descrizione:** (facoltativo) digitare una descrizione.
+    - **Piattaforma:** scegliere **Windows 10** come piattaforma supportata per i criteri di protezione delle app.
+    - **Stato della registrazione:** scegliere **Senza registrazione** come stato di registrazione per il criterio.
+7.  Scegliere **Crea**. I criteri vengono creati e visualizzati nella tabella nel pannello **Criteri di protezione delle app**.
 
 ## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>Per aggiungere app consigliate all'elenco delle app consentite
 
-1.  Nel pannello **Criteri per le app** scegliere il nome del criterio e quindi scegliere **App consentite** nel pannello **Aggiungi criteri**. Verrà aperto il pannello **App consentite** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
-
-2.  Nel pannello **App consentite** scegliere **Aggiungi app**. **Aggiungi app** visualizza tutte le app che fanno parte di questo elenco.
-
-3.  Selezionare tutte le app a cui si vuole concedere l'accesso ai dati aziendali e quindi scegliere **OK**. Il pannello **App consentite** verrà aggiornato con tutte le app selezionate.
+1. Selezionare **App per dispositivi mobili** nel pannello **Microsoft Intune**.
+2. Selezionare **Criteri di protezione delle app** nel pannello **App per dispositivi mobili**.
+3. Nel pannello **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il pannello **Protezione app di Intune**.
+4. Scegliere **App protette** nel pannello **Protezione app di Intune**. Verrà aperto il pannello **App protette** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
+5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del pannello consente di modificare il filtro dell'elenco.
+6. Selezionare tutte le app a cui si vuole concedere l'accesso ai dati aziendali.
+7. Fare clic su **OK**. Il pannello **App protette** viene aggiornato per visualizzare tutte le app selezionate.
+8. Fare clic su **Save**.
 
 ## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Aggiungere un'app dello Store all'elenco delle app consentite
 
 **Per aggiungere un'app dello Store**
-
-1.  Nel pannello **Criteri per le app** scegliere il nome del criterio e quindi scegliere **App consentite** nel menu visualizzato che mostra tutte le app già incluse nell'elenco per questo criterio di protezione delle app.
-
-2.  Nel pannello **App consentite** scegliere **Aggiungi app**.
-
-3.  Nel pannello **Aggiungi app** scegliere **App Store** nell'elenco a discesa. Le informazioni cambiano in modo da visualizzare le caselle per l'aggiunta di un **editore** e un **nome** per l'app.
-
-4.  Digitare il nome dell'app e del relativo editore, quindi scegliere **OK**.
-
-    > [!TIP]
-    > Ecco un esempio di app con **Editore** *CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US* e **Nome** prodotto *Microsoft.MicrosoftAppForWindows*.
-
-5.  Dopo aver immesso le informazioni nei campi, scegliere **OK** per aggiungere l'app all'elenco **App consentite**.
-
-> [!NOTE]
-> Per aggiungere più app dello Store contemporaneamente, è possibile fare clic sul menu **(...)**  alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
+1. Selezionare **App per dispositivi mobili** nel pannello **Microsoft Intune**.
+2. Selezionare **Criteri di protezione delle app** nel pannello **App per dispositivi mobili**.
+3. Nel pannello **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il pannello **Protezione app di Intune**.
+4. Scegliere **App protette** nel pannello **Protezione app di Intune**. Verrà aperto il pannello **App protette** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
+5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del pannello consente di modificare il filtro dell'elenco.
+6. Nell'elenco selezionare **App Store**.
+7. Immettere i valori per **Nome**, **Editore**, **Nome prodotto** e **Azione**. Assicurarsi di impostare il valore di **Azione** su **Consenti**, in modo che l'app possa accedere ai dati aziendali.
+9. Fare clic su **OK**. Il pannello **App protette** viene aggiornato per visualizzare tutte le app selezionate.
+10. Fare clic su **Save**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Aggiungere un'app desktop all'elenco delle app consentite
 
 **Per aggiungere un'app desktop**
-
-1.  Nel pannello **Criteri per le app** scegliere il nome del criterio e quindi scegliere **App consentite**. Verrà aperto il pannello **App consentite** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
-
-2.  Nel pannello **App consentite** scegliere **Aggiungi app**.
-
-3.  Nel pannello **Aggiungi app** scegliere **App desktop** nell'elenco a discesa.
-
-4.  Dopo aver immesso le informazioni nei campi, scegliere **OK** per aggiungere l'app all'elenco **App consentite**.
-
-> [!NOTE]
-> Per aggiungere più **app desktop** contemporaneamente, è possibile fare clic sul menu **(...)** alla fine della riga dell'app e quindi continuare ad aggiungere altre app. Al termine dell'operazione scegliere **OK**.
+1. Selezionare **App per dispositivi mobili** nel pannello **Microsoft Intune**.
+2. Selezionare **Criteri di protezione delle app** nel pannello **App per dispositivi mobili**.
+3. Nel pannello **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il pannello **Protezione app di Intune**.
+4. Scegliere **App protette** nel pannello **Protezione app di Intune**. Verrà aperto il pannello **App protette** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
+5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del pannello consente di modificare il filtro dell'elenco.
+6. Nell'elenco selezionare **App desktop**.
+7. Immettere i valori per **Nome**, **Editore**, **Nome prodotto**, **File**, **Versione minima**, **Versione massima** e **Azione**. Assicurarsi di impostare il valore di **Azione** su **Consenti**, in modo che l'app possa accedere ai dati aziendali.
+9. Fare clic su **OK**. Il pannello **App protette** viene aggiornato per visualizzare tutte le app selezionate.
+10. Fare clic su **Save**.
 
 ## <a name="wip-learning"></a>Apprendimento WIP
-<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 Dopo aver aggiunto le app che si vuole proteggere con WIP, è necessario applicare una modalità di protezione usando **Apprendimento WIP**.
 
 ### <a name="before-you-begin"></a>Prima di iniziare
 
 Apprendimento WIP è un report che consente di monitorare le app abilitate per WIP e le app sconosciute WIP. Con app sconosciute si intendono quelle non distribuite dal reparto IT dell'organizzazione. È possibile esportare queste app dal report e quindi aggiungerle ai criteri WIP per evitare disservizi con effetti sulla produttività prima dell'applicazione di WIP in modalità "Blocca".
 
-<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
+<!-- 1631908 -->
+Oltre a visualizzare informazioni sulle app abilitate per WIP, è possibile visualizzare un riepilogo dei dispositivi che hanno condiviso dati di lavoro con siti Web. Con queste informazioni, è possibile determinare quali siti Web devono essere aggiunti ai criteri WIP per gruppi e utenti. Il riepilogo mostra gli URL di siti Web a cui hanno accesso le app abilitate per WIP.
 
 Quando si usano le app abilitate per WIP e le app sconosciute WIP, è consigliabile iniziare con **Invisibile all'utente** o **Consenti sostituzioni** mentre si verifica con un piccolo gruppo di avere incluso le app appropriate nell'elenco delle app consentite. Quando si è pronti, è possibile passare al criterio di applicazione finale, ovvero **Blocca**.
 
@@ -153,22 +142,22 @@ Dopo la disattivazione di WIP, viene effettuato un tentativo di decrittografare 
 
     ![Screenshot della modalità di protezione](./media/learning-mode-sc1.png)
 
-2.  Scegliere **Salva**.
+1.  Selezionare un'impostazione e quindi scegliere **Salva**.
 
 ### <a name="use-wip-learning"></a>Usare Apprendimento WIP
 
-1. Aprire il portale di Azure. Scegliere **Altri servizi**. Digitare **Intune** nel filtro della casella di testo.
+1. Aprire il [portale di Azure](https://portal.azure.com). Scegliere **Tutti i servizi**. Digitare **Intune** nel filtro della casella di testo.
 
 3. Scegliere **Intune** > **App per dispositivi mobili**.
 
 4. Scegliere **Stato di protezione dell'App** > **Report** > **Apprendimento Windows Information Protection**.  
- 
+
     Quando le app sono visualizzate nel report di registrazione di Apprendimento WIP, sarà possibile aggiungerle ai criteri di protezione delle app.
 
 ## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>Consentire all'indicizzatore di Ricerca di Windows di cercare elementi crittografati
 Consente o impedisce l'indicizzazione di elementi. Questa opzione è per l'indicizzatore di Ricerca di Windows, che stabilisce se deve essere eseguita l'indicizzazione degli elementi che vengono crittografati, ad esempio i file protetti di Windows Information Protection (WIP).
 
-Questa opzione dei criteri di protezione dell'app si trova nelle **impostazioni avanzate** dei criteri di Windows Information Protection. I criteri di protezione dell'app devono essere impostati sulla piattaforma *Windows 10* e lo **stato di registrazione** dei criteri dell'app deve essere impostato su **Con registrazione**. 
+Questa opzione dei criteri di protezione dell'app si trova nelle **impostazioni avanzate** dei criteri di Windows Information Protection. I criteri di protezione dell'app devono essere impostati sulla piattaforma *Windows 10* e lo **stato di registrazione** dei criteri dell'app deve essere impostato su **Con registrazione**.
 
 Quando i criteri sono abilitati, gli elementi protetti da WIP vengono indicizzati e i relativi metadati vengono archiviati in un percorso non crittografato. I metadati includono elementi come percorso del file e data di modifica.
 
@@ -195,4 +184,4 @@ Dopo aver creato i criteri di protezione delle app WIP, è necessario distribuir
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- Per maggiori dettagli su Windows Information Protection, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip). 
+Per maggiori dettagli su Windows Information Protection, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).

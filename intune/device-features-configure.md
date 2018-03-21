@@ -1,12 +1,11 @@
 ---
-title: "Configurare le impostazioni relative alle funzionalità dei dispositivi in Microsoft Intune"
-titleSuffix: 
-description: "Informazioni su come usare Microsoft Intune per configurare le funzionalità nei dispositivi gestiti."
+title: Creare profili di dispositivo iOS o macOS in Microsoft Intune - Azure | Microsoft Docs
+description: Aggiungere o creare un profilo di dispositivo iOS o macOS e quindi configurare le impostazioni per AirPrint, AirPlay, layout della schermata iniziale, notifiche delle app, dispositivi condivisi, Single Sign-On e filtro del contenuto Web in Microsoft Intune
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,33 +13,42 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6cd646976deb1599c4cbc9154b6f2a487029dd79
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e3de7d1bccd57da1290987a714416373cbdd2b0d
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/09/2018
 ---
-#<a name="configure-device-feature-settings-in-microsoft-intune"></a>Configurare le impostazioni relative alle funzionalità dei dispositivi in Microsoft Intune
+# <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Aggiungere impostazioni relative alle funzionalità dei dispositivi iOS e macOS in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Funzionalità del dispositivo consente di controllare le funzionalità dei dispositivi iOS e macOS come AirPrint, le notifiche e le configurazioni dei dispositivi condivisi.
+Le funzionalità dei dispositivi consentono di controllare una gamma di impostazioni e funzionalità nei dispositivi iOS e macOS, ad esempio:
 
-Usare le informazioni in questo articolo per apprendere le nozioni di base sulla configurazione dei profili delle funzionalità dei dispositivi e quindi leggere altri articoli relativi a ogni piattaforma per informazioni specifiche sui dispositivi.
+- Impostazioni di AirPrint e AirPlay
+- Layout della schermata iniziale
+- Notifiche dalle app
+- Configurazione dei dispositivi condivisi
+- Configura l'accesso Single Sign-On
+- Filtro del contenuto Web
 
-## <a name="create-a-device-profile-containing-device-feature-settings"></a>Creare un profilo dispositivo contenente le impostazioni relative alle funzionalità del dispositivo
+Questo articolo illustra i concetti di base della configurazione di profili di funzionalità dei dispositivi iOS. È quindi possibile procedere con ulteriori articoli per configurare le impostazioni specifiche della piattaforma per i dispositivi.
 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nella pagina **Intune** scegliere **Configurazione del dispositivo**.
-2. Nella pagina **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
-3. Nella pagina dei profili scegliere **Crea profilo**.
-4. Nella pagina **Crea profilo** immettere i valori di **Nome** e **Descrizione** per il profilo delle funzionalità del dispositivo.
-5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma per dispositivi a cui applicare le impostazioni. È attualmente possibile scegliere una delle piattaforme seguenti per le funzionalità dei dispositivi:
+## <a name="create-a-device-profile"></a>Creare un profilo del dispositivo
+
+1. Accedere al [portale di Azure](https://portal.azure.com).
+2. Selezionare **Tutti i servizi**, filtrare per **Intune** e quindi selezionare **Microsoft Intune**.
+3. Selezionare **Configurazione del dispositivo**, selezionare **Profili** e quindi fare clic su **Crea profilo**.
+4. Immettere le seguenti proprietà:
+
+  - **Nome**: immettere un nome descrittivo per il nuovo profilo.
+  - **Descrizione**: (facoltativo ma consigliato) immettere una descrizione per il profilo
+  - **Piattaforma**: selezionare il tipo di piattaforme:
     - **iOS**
     - **macOS**
-6. Nell'elenco a discesa **Tipo di profilo** scegliere **Funzionalità del dispositivo**. 
-7. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli articoli seguenti per informazioni dettagliate sulle impostazioni per ogni piattaforma:
+  - **Tipo di profilo**: selezionare **Funzionalità del dispositivo**
+  - **Impostazioni**: le impostazioni variano a seconda della piattaforma scelta. Gli articoli seguenti descrivono le impostazioni per ogni tipo di profilo:
+
     - [AirPrint settings for iOS and macOS devices](air-print-settings-ios-macos.md) (Impostazioni di AirPrint per i dispositivi iOS e MacOS)
     - [Intune AirPlay settings for iOS devices](airplay-settings-ios.md) (Impostazioni di Intune AirPlay per i dispositivi iOS)
     - [Intune Home screen layout settings for iOS devices](home-screen-settings-ios.md) (Impostazioni di layout della schermata iniziale di Intune per i dispositivi iOS)
@@ -49,12 +57,10 @@ Usare le informazioni in questo articolo per apprendere le nozioni di base sulla
     - [Configurare Intune per l'accesso Single Sign-On al dispositivo iOS](sso-ios.md)
     - [Web content filter settings for iOS](web-content-filter-settings-ios.md) (Impostazioni di filtraggio del contenuto Web per iOS)
 
-8. Al termine scegliere **OK**, tornare alla pagina **Crea profilo** e scegliere **Crea**.
+5. Al termine, selezionare **OK** e quindi scegliere **Crea** per salvare le modifiche.
 
-Il profilo viene creato e visualizzato nella pagina dell'elenco dei profili.
-## <a name="next-steps"></a>Passaggi successivi
+Il profilo viene creato e quindi visualizzato nell'elenco.
 
-Se si vuole assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
+## <a name="next-step"></a>Passaggio successivo
 
-
-
+Per assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).

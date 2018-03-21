@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e770c39a22b620bb642b7b15a456369bb4acec2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 24b1ffb1d89f52a51f21dc6c4a588324f3cd87d3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS usando il programma Device Enrollment Program di Apple
 
@@ -74,7 +74,7 @@ Per creare un token DEP si usa il portale DEP di Apple. È anche possibile usare
 
 **Passaggio 1. Scaricare il certificato di chiave pubblica di Intune necessario per creare un token DEP Apple.**<br>
 
-1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Token DEP**.
+1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Token DEP**.
 
   ![Riquadro Token DEP nell'area di lavoro dei certificati Apple](./media/enrollment-program-token-add.png)
 
@@ -116,7 +116,7 @@ Passare al file (con estensione pem) del certificato, scegliere **Apri** e quind
 
 Ora che è stato installato il token, è possibile creare un profilo di registrazione per i dispositivi DEP. Un profilo di registrazione dispositivi consente di definire le impostazioni applicate a un gruppo di dispositivi durante la registrazione.
 
-1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** > **Registrazione Apple**.
+1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Apple**.
 2. In **Programma di registrazione per Apple** scegliere **Profili DEP** > **Crea**.
 3. In **Crea un profilo di registrazione** immettere un **nome** e una **descrizione** per il profilo per scopi amministrativi. Questi dettagli non vengono visualizzati agli utenti. È possibile usare questo campo **Nome** per creare un gruppo dinamico in Azure Active Directory. Usare il nome del profilo per definire il parametro enrollmentProfileName per assegnare i dispositivi con questo profilo di registrazione. Altre informazioni sui [gruppi dinamici di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
@@ -169,7 +169,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 ## <a name="sync-managed-devices"></a>Sincronizzare i dispositivi gestiti
 Adesso che Intune ha le autorizzazioni per gestire i dispositivi, è possibile sincronizzare Intune con Apple per visualizzare i dispositivi gestiti nel portale di Azure in Intune.
 
-1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Dispositivi DEP** > **Sincronizza**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
+1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Dispositivi DEP** > **Sincronizza**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
 
   ![Nodo Dispositivi DEP selezionato e scelta del collegamento Sincronizza](./media/enrollment-program-device-sync.png)
   
@@ -190,7 +190,7 @@ Prima della registrazione è necessario assegnare ai dispositivi un profilo DEP.
 >[!NOTE]
 >È anche possibile assegnare i numeri di serie ai profili nel pannello **Numeri di serie Apple**.
 
-1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** > **Registrazione Apple** e quindi scegliere **Profili DEP**.
+1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Apple** e quindi scegliere **Profili DEP**.
 2. Nell'elenco **Profili DEP** scegliere il profilo che si vuole assegnare ai dispositivi e quindi scegliere **Assegna dispositivi**.
 
  ![Assegnazioni di dispositivo con l'opzione di assegnazione selezionata](./media/enrollment-program-device-assign.png)

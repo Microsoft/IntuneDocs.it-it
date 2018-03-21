@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Creare un gruppo per gestire gli utenti e l'accesso ai dati
 
@@ -30,11 +30,13 @@ Microsoft Intune usa Azure Active Directory (Azure AD) per gestire l'accesso all
 ## <a name="how-do-i-create-a-group"></a>Come si crea un gruppo?
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
-2. In **Cerca risorse** cercare **Intune**.
-3. Dopo aver aperto il pannello **Microsoft Intune**, selezionare **Gruppi**.
-4. Nel pannello **Utenti e gruppi - Tutti i gruppi** scegliere il comando **Nuovo gruppo**.
-5. Nel pannello **Gruppo** aggiungere un **nome** e una **descrizione** al gruppo.
+2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Dopo aver aperto il riquadro **Microsoft Intune** selezionare **Gruppi**.
+4. Nel riquadro **Utenti e gruppi - Tutti i gruppi** scegliere il comando **Nuovo gruppo**.
+5. Nel riquadro **Gruppo** scegliere **Tipo di gruppo**.
+5. Immettere un **nome** e una **descrizione** per il gruppo.
 6. Impostare **Tipo di appartenenza** su **Assegnato**. Non **abilitare le funzionalità di Office** per il gruppo di test.
+7. Selezionare i **membri** per il gruppo.
 7. Scegliere **Crea**.
 
 Se un gruppo è stato creato correttamente, verrà visualizzato nell'elenco di **tutti i gruppi**. Se non è incluso nell'elenco, provare a creare un altro gruppo.

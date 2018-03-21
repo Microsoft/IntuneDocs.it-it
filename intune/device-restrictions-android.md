@@ -6,19 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi Android e Samsung Knox Standard in Microsoft Intune 
 
@@ -51,7 +51,7 @@ Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di
 - **Numero massimo di minuti di inattività fino al blocco dello schermo** - Specifica il numero di minuti di inattività prima dello spegnimento dello schermo del dispositivo.
 - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** - Specifica il numero di errori di accesso consentiti prima della cancellazione del dispositivo.
 - **Scadenza password (giorni)** - Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.
--  **Tipo di password richiesto** - Specifica il livello richiesto di complessità delle password e indica se è possibile usare dispositivi biometrici. È possibile scegliere tra:
+-  **Tipo di password richiesto** - Specifica il livello richiesto di complessità delle password e indica se è possibile usare dispositivi biometrici. Scegliere tra:
     - **Impostazione predefinita dispositivo**
     - **Protezione biometrica bassa**
     - **Almeno numerico**
@@ -144,7 +144,7 @@ Per ogni impostazione, configurare un elenco di app usando una delle opzioni seg
 
 Le impostazioni della modalità tutto schermo si applicano solo ai dispositivi Samsung Knox Standard e solo alle app gestite con Intune.
 
-- **Selezionare un'app gestita**: scegliere una delle opzioni seguenti per aggiungere una o più app gestite che possono essere eseguite quando il dispositivo è in modalità tutto schermo. Non sarà possibile eseguire altre app nel dispositivo.
+- **Selezionare un'app gestita**: scegliere una delle opzioni seguenti per aggiungere una o più app gestite che possono essere eseguite quando il dispositivo è in modalità tutto schermo. Non sarà possibile eseguire altre app nel dispositivo. I browser preinstallati non possono essere definiti come app che può essere eseguita mentre il dispositivo è in modalità tutto schermo. Se è richiesto un browser, è consigliabile usare [Managed Browser](app-configuration-managed-browser.md).
     - **Aggiungi app per nome del pacchetto**
     - **Aggiungi app per URL**
     - **Aggiungi app gestite**.
