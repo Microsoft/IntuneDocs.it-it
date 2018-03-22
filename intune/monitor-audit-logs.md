@@ -1,7 +1,8 @@
 ---
-title: "Log di controllo per le attività di Intune"
-description: "Informazioni su come esaminare i log di controllo che registrano le attività di Intune"
+title: "Log di controllo per le attività di Microsoft Intune"
+description: "Informazioni su come esaminare i log di controllo che registrano le attività di Microsoft Intune."
 keywords: 
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
@@ -10,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c7c8b860be9722138f8bd804a66131328b592022
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Log di controllo per le attività di Intune
 I log di controllo includono una registrazione delle attività che generano una modifica in Microsoft Intune. Le azioni di creazione, aggiornamento (modifica), eliminazione ed assegnazione, o le attività remote, generano eventi di controllo che è possibile esaminare. È possibile esaminare i log di controllo per la maggior parte dei carichi di lavoro di Intune. Il controllo è abilitato per impostazione predefinita per tutti i clienti e non può essere disabilitato. Gli eventi di controllo sono stati registrati per la prima volta nel rilascio della funzionalità di dicembre 2017, gli eventi precedenti non sono disponibili.

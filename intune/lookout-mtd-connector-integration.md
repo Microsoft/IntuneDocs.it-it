@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurare l'integrazione di Lookout Mobile Threat Defense con Intune
 
@@ -72,8 +72,6 @@ Usare la procedura seguente per raccogliere le informazioni che dovranno essere 
 2.  Al primo accesso alla console di Lookout è necessario usare un account utente con il ruolo di amministratore globale di Azure AD per la registrazione del tenant di Azure AD. In seguito, per l'accesso non è necessario questo livello di privilegi di Azure AD. Viene visualizzata una pagina per richiedere il consenso. Scegliere **Accept** (Accetto) per completare la registrazione. Dopo aver accettato e fornito il consenso , si verrà reindirizzati alla console di Lookout.
 
     ![screenshot della pagina di primo accesso della console di Lookout](./media/lookout_mtp_initial_login.png)
-    > [!NOTE] 
-    > Vedere [Risolvere i problemi di integrazione di Lookout](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) per assistenza per i problemi di accesso.
 
 3.  Nella [console di Lookout](https://aad.lookout.com), nel modulo **System** (Sistema), scegliere la scheda **Connectors** (Connettori) e quindi selezionare **Intune**.
 
