@@ -1,25 +1,26 @@
 ---
-title: "Configurare i criteri di conformità del dispositivo e di gestione delle app durante una migrazione a Intune"
-description: "Questo articolo descrive i passaggi necessari per configurare i criteri di conformità del dispositivo e di gestione delle app durante una migrazione a Intune."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Configurare i criteri di conformità del dispositivo e di gestione delle app durante una migrazione a Intune
+titlesuffix: Microsoft Intune
+description: In questo articolo vengono descritte le procedure necessarie per configurare i criteri di conformità del dispositivo e di gestione delle app durante una migrazione a Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 96541c503a387e1a2ad3a4158f441266f1202be0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 13a9c0a036eb6ce6ea7e984419c9598194b35b68
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="configure-device-compliance-and-app-management-policies"></a>Configurare i criteri di conformità del dispositivo e di gestione delle app
+# <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurare i criteri di conformità del dispositivo e di gestione delle app durante una migrazione a Microsoft Intune
 
 L'obiettivo principale durante la migrazione a Intune è registrare tutti i dispositivi in Intune e fare in modo che siano conformi ai criteri corrispondenti. I criteri per i dispositivi non sono utili solo per gestire i dispositivi usati da singoli utenti e di proprietà dell'azienda, ma anche i dispositivi personali (BYOD) e condivisi, come i dispositivi per la modalità a tutto schermo, i computer per punti vendita, i tablet condivisi da più studenti in una classe o i dispositivi senza utente (solo iOS).
 

@@ -1,24 +1,24 @@
 ---
 title: Plug-in Cordova per Microsoft Intune App SDK
-description: 
+description: Il plug-in Intune App SDK Cordova permette agli sviluppatori di integrare le funzionalità di protezione dei dati e delle app di Intune nelle app basate su Cordova.
 keywords: sdk, Cordova, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Plug-in Cordova per Microsoft Intune App SDK
 
@@ -64,7 +64,7 @@ Le app Cordova compilate con il plug-in Cordova per Intune App SDK possono ora r
 * È richiesta la versione 0.8.0+ del [Plug-in delle librerie di autenticazione di Azure Active Directory (ADAL) per Cordova](https://github.com/AzureAD/azure-activedirectory-library-for-cordova).
 
 > [!NOTE]
-> A causa di un bug di Apache Cordova segnalato [qui](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22), le app che già dispongono della dipendenza del plug-in non aggiorneranno automaticamente il plug-in alla versione necessaria.
+> A causa di un bug di Apache Cordova segnalato [qui](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22), le app che hanno già la dipendenza del plug-in non aggiorneranno automaticamente il plug-in alla versione necessaria.
 
 
 
@@ -118,19 +118,19 @@ Il plug-in riconosce automaticamente le informazioni di firma fornite a Cordova 
 
 Per altre informazioni sul formato previsto, vedere le [informazioni sulla firma di Gradle di Cordova](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle).
 
-Attualmente non è supportata la possibilità di fornire informazioni sulla firma in `build.json` o in posizioni arbitrarie specificate tramite parametri per la compilazione di Cordova.
+Attualmente Intune non supporta la possibilità di fornire informazioni sulla firma in `build.json` o in posizioni arbitrarie specificate tramite parametri per la compilazione di Cordova.
 
 ## <a name="debugging-from-visual-studio"></a>Debug da Visual Studio
 
-Dopo avere avviato l'app per la prima volta, verrà visualizzata una finestra di dialogo che informa che l'app è gestita da Intune. Fare clic su "Non visualizzare più questo messaggio" e quindi nuovamente sul pulsante di esecuzione/debug da Visual Studio per fare in modo che i punti di interruzione vengano riconosciuti.
+Dopo avere avviato l'app per la prima volta, viene visualizzata una finestra di dialogo che informa che l'app è gestita da Intune. Fare clic su "Non visualizzare più questo messaggio" e quindi nuovamente sul pulsante di esecuzione/debug da Visual Studio per fare in modo che i punti di interruzione vengano riconosciuti.
 
 ## <a name="known-limitations"></a>Limitazioni note
 
 ### <a name="android"></a>Android
 
 * Il supporto MultiDex è incompleto.
-* L'app deve avere `minSdkVersion` 14 e `targetSdkVersion` 24 o versioni precedenti. Non sono attualmente supportate app destinate ad API 25
-* Non è possibile firmare di nuovo le app firmate con lo schema di firma V2. Quando si esegue il wrapping delle app con firma V2 dal plug-in, il file apk di output sottoposto a wrapping sarà non firmato.
+* L'app deve avere `minSdkVersion` 14 e `targetSdkVersion` 24 o versioni precedenti. Attualmente Intune non supporta app destinate ad API 25
+* Intune non firma di nuovo le app firmate con lo schema di firma V2. Quando si esegue il wrapping delle app con firma V2 dal plug-in, il file apk di output sottoposto a wrapping sarà non firmato.
 *
   * È possibile disabilitare la firma V2 predefinita di Cordova aggiungendo il codice seguente al file `build-extras.gradle`:
 

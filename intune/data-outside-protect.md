@@ -1,25 +1,27 @@
 ---
 title: Impedire l'accesso non autorizzato ai dati aziendali
-description: Impedire l'accesso non autorizzato ai dati aziendali quando sono condivisi all'esterno della rete aziendale.
+titlesuffix: Microsoft Intune
+description: Impedire l'accesso non autorizzato ai dati aziendali quando sono condivisi all'esterno della rete aziendale usando Microsoft Intune.
 keywords: Office 365 O365 Azure Information Protection protezione dati all'esterno della rete
-author: arob98
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 25f0572d65e6d651c636c8b1961903f7c2c78906
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-unauthorized-access-to-company-data"></a>Impedire l'accesso non autorizzato ai dati aziendali 
+# <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Impedire l'accesso non autorizzato ai dati aziendali usando Microsoft Intune
 
 È possibile classificare, etichettare e proteggere documenti e messaggi di posta elettronica di Office 365 in modo che solo gli utenti autorizzati possano accedere ai dati. Le impostazioni vengono gestite automaticamente dopo che gli amministratori IT o gli utenti impostano regole e condizioni. In alternativa, il team IT può mettere a disposizione degli utenti le impostazioni consigliate da usare. Gli amministratori e gli utenti possono anche revocare l'accesso ai dati già condivisi con altri utenti, senza l'assistenza di un'altra autorità. Il risultato di queste operazioni è controllare chi apre o aggiorna i dati protetti, anche quando i dati lasciano la rete aziendale. 
 
@@ -44,5 +46,5 @@ Completare l'[esercitazione introduttiva di Azure Information Protection](https:
 
 Come parte delle procedure successive, è possibile ottenere informazioni su altre strategie per incrementare la protezione dei dati aziendali, ad esempio: 
 
-* Informazioni sull'uso di [Azure Information Protection nei dispositivi iOS e Android](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
+* Informazioni su come usare [Azure Information Protection nei dispositivi iOS e Android](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
 * Per i computer Mac e Windows Phone, vedere le [domande frequenti sull'applicazione di condivisione Microsoft Rights Management](https://technet.microsoft.com/dn451248).

@@ -1,23 +1,24 @@
 ---
 title: Modelli e risorse per pianificare e progettare la distribuzione di Intune
-description: Collegamenti a modelli di pianificazione e informazioni aggiuntive su Intune che possono risultare utili durante il processo di pianificazione e implementazione della distribuzione di Intune.
-keywords: 
-author: arob98
-ms.author: angrobe
+titlesuffix: Microsoft Intune
+description: Collegamenti a modelli di pianificazione e informazioni aggiuntive su Intune che possono risultare utili durante il processo di pianificazione e implementazione della distribuzione di Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8a5a819fc8d081330be60e8b83944e326baaba2b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67476afbd00cf54162b316e6c38967bccbed34ad
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Risorse aggiuntive per la pianificazione della distribuzione di Intune
 
@@ -50,7 +51,7 @@ Consultare queste risorse per informazioni aggiuntive che possono risultare util
 
 -   [Blog di Intune](https://blogs.technet.microsoft.com/enterprisemobility/) - Post per comprendere il ruolo di Intune all'interno del contesto più ampio di Enterprise Mobility.
 
--   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter/default.aspx) - Informazioni sull'approccio di Microsoft a sicurezza, privacy, conformità e trasparenza in tutti i prodotti e i servizi cloud di Microsoft.
+-   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter) - Informazioni sull'approccio di Microsoft a sicurezza, privacy, conformità e trasparenza in tutti i prodotti e i servizi cloud di Microsoft.
 
 -   [Suggerimenti degli utenti per Intune](http://microsoftintune.uservoice.com/) - Si vuole richiedere una funzionalità o votare le funzionalità richieste da altri clienti? È possibile fornire feedback su Intune tramite la pagina dedicata alla voce degli utenti. Microsoft presta grande attenzione ai suggerimenti degli utenti.
 

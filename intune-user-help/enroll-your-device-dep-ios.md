@@ -1,37 +1,48 @@
 ---
 title: Registrare il dispositivo iOS con Device Enrollment Program | Microsoft Docs
 description: Descrive come registrare un dispositivo iOS in Intune con DEP
-keywords: 
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 07/07/2017
+ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f4e7d87e-56d1-43e4-8e88-2f62cf0999e2
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 542a7e382b6f140af3f4cf605e503efd0b7a4c6e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 07a336635ae76b1fce19236eb676155703dd9a84
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Registrare il dispositivo iOS in Intune con Device Enrollment Program
 
-Device Enrollment Program viene offerto da Apple alle società e alle organizzazioni che vogliono facilitare fin da subito l'esperienza utente di gestione dei dispositivi iOS. Se la società ha consentito agli utenti di usare i dispositivi personali, sarà sufficiente seguire la [normale procedura di registrazione iOS](enroll-your-device-in-intune-ios.md) invece di quella indicata in questa pagina. Se invece la società ha fornito agli utenti dispositivi iOS specificando che fanno parte di Device Enrollment Program, continuare a leggere.
+Device Enrollment Program viene offerto da Apple per consentire alle aziende di gestire in modo semplice un numero elevato di dispositivi iOS. Se la società ha consentito agli utenti di usare i dispositivi personali, eseguire la [normale procedura di registrazione iOS](enroll-your-device-in-intune-ios.md) anziché quella indicata in questa pagina. Se invece la società ha fornito agli utenti dispositivi iOS specificando che fanno parte di Device Enrollment Program, continuare a leggere.
 
-1.  Accendere l'iPad, e completare le prime due schermate di configurazione.
+1.  Accendere il dispositivo iOS. 
 2.  Dopo avere selezionato la **lingua**, connettere il dispositivo al Wi-Fi.
-3.  Dopo la connessione al Wi-Fi, verrà visualizzata la schermata **Configuration** (Configurazione) contenente il messaggio **[Your Company] will automatically configure your [iPad/iPhone]** ([Società] configurerà automaticamente l'[iPad/iPhone]).
-4.  Eseguire l'accesso con il **nome utente** e la **password** aziendali.
-5.  Accettare **termini e condizioni** e decidere se inviare le informazioni di diagnostica a Apple.
-6.  Dopo avere completato la registrazione, il dispositivo potrebbe chiedere di eseguire altre azioni, ad esempio, immettere la password per l'accesso alla posta elettronica, configurare un passcode, accettare le installazioni di applicazioni, a seconda della configurazione scelta dall'amministratore di Intune della società.
+3. Nella schermata **Set up iOS device** (Configura dispositivo iOS) scegliere: 
+ 
+ - **Set up as new device** (Configura come nuovo dispositivo)
+ - **Restore from iCloud Backup** (Ripristina da backup iCloud)
+ - **Restore from iTunes Backup** (Ripristina da backup iTunes)
+
+4.  Dopo la connessione al Wi-Fi, verrà visualizzata la schermata **Configuration** (Configurazione) contenente il messaggio **[Your Company] will automatically configure your device** ([Società] configurerà automaticamente il dispositivo).
+
+  **Configuration allows [Your Company] to manage this device over the air (La configurazione consente a [società] di gestire il dispositivo in modalità wireless). An administrator can help you set up email and network accounts, install and configure apps, and manage settings remotely (Un amministratore può consentire di configurare gli account di posta elettronica e di rete, installare e configurare le app e gestire le impostazioni in modalità remota). An administrator may disable features, install and remove apps, monitor and restrict your Internet traffic and remotely erase this device** (Un amministratore può disattivare le funzionalità, installare e rimuovere app, monitorare e limitare il traffico Internet e cancellare in remoto il dispositivo).
+ 
+  **Configuration is provided by: [Your Company's] iOS Team [Address]** (La configurazione è specificata da: team iOS [società]).
+
+5. Eseguire l'accesso con l'ID Apple. L'accesso consente di installare l'app Portale aziendale e il profilo di gestione che consentono all'azienda di concedere l'accesso alle risorse, come la posta elettronica e le app. 
+6.  Accettare **termini e condizioni** e decidere se inviare le informazioni di diagnostica a Apple.
+7.  Dopo avere completato la registrazione, il dispositivo potrebbe chiedere di eseguire altre azioni, Alcune di queste operazioni potrebbero essere l'immissione della password per l'accesso alla posta elettronica e l'impostazione di un passcode.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

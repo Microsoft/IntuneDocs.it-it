@@ -1,30 +1,31 @@
 ---
 title: Introduzione alla pianificazione e progettazione di Intune
-description: "Questo articolo è un'introduzione a tutte le sezioni dedicate alla pianificazione, progettazione e implementazione di Intune. Strumenti che consentono di determinare gli obiettivi, gli scenari dei casi d'uso e i requisiti, creare piani di implementazione e di comunicazione, supporto, test e piani di convalida."
-keywords: 
-author: arob98
-ms.author: angrobe
+titlesuffix: Microsoft Intune
+description: Questo articolo è un'introduzione a tutte le sezioni dedicate alla pianificazione, progettazione e implementazione di Microsoft Intune. Strumenti che consentono di determinare gli obiettivi, gli scenari dei casi d'uso e i requisiti, creare piani di implementazione e di comunicazione, supporto, test e piani di convalida.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 962ec376b7f2e30ad857ce69e24124c5d482cda0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 074490428b52effbc4a555a63d997a47da55546e
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Guida alla pianificazione, progettazione e implementazione della distribuzione di Intune
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-Per il successo della distribuzione di Intune occorre partire da una buona pianificazione e un progetto accurato. Lo scopo di questa guida è illustrare in dettaglio il processo di elaborazione di un piano di distribuzione, creazione della progettazione, onboarding di Intune e implementazione in produzione.
+Perché la distribuzione di Microsoft Intune abbia esito positivo occorre partire da una buona pianificazione e da un progetto accurato. Lo scopo di questa guida è illustrare in dettaglio il processo di elaborazione di un piano di distribuzione, creazione della progettazione, onboarding di Intune e implementazione in produzione.
 
 ## <a name="whats-included-in-this-guide"></a>Contenuti della guida
 

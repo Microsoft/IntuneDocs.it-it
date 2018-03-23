@@ -1,30 +1,31 @@
 ---
 title: Configurare un nome di dominio personalizzato
-description: Aggiungere un nome di dominio personalizzato per la sottoscrizione di Intune
-keywords: 
-author: arob98
-ms.author: angrobe
+titlesuffix: Microsoft Intune
+description: Aggiungere un nome di dominio personalizzato per la sottoscrizione di Microsoft Intune
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6046b574c495035977dcd635786409e52be85bb8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 913334a9fee8ab584cb11f8124ef2a491e01661f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>Configurare un nome di dominio personalizzato
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Questo argomento descrive come gli amministratori possono creare un CNAME DNS per semplificare e personalizzare l'esperienza di accesso.
+Questo argomento descrive agli amministratori come creare un CNAME DNS per semplificare e personalizzare l'esperienza di accesso usando Microsoft Intune.
 
 Quando l'organizzazione si iscrive a un servizio Microsoft basato su cloud come Intune, l'utente riceve un nome di dominio iniziale ospitato in Azure Active Directory (AD) simile a **dominio.onmicrosoft.com**. In questo esempio **dominio** è il nome scelto al momento dell'iscrizione. **onmicrosoft.com** è il suffisso assegnato agli account che si aggiungono alla sottoscrizione. Per accedere a Intune, è possibile configurare il dominio personalizzato dell'organizzazione invece del nome di dominio fornito con la sottoscrizione.
 

@@ -1,25 +1,25 @@
 ---
 title: Impostazioni di Intune per l'app Classroom iOS
-titlesuffix: Azure portal
-description: "Informazioni sulle opzioni di Intune che è possibile usare per controllare le impostazioni per l'app Classroom nei dispositivi iOS.\""
-keywords: 
+titleSuffix: Microsoft Intune
+description: Informazioni sulle impostazioni di Intune che è possibile usare per controllare le impostazioni per l'app Classroom nei dispositivi iOS.
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 063287ac1bf3441092ff7c9daea5102314384b7d
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Come configurare le impostazioni di Intune per l'app Classroom iOS
 
@@ -59,7 +59,6 @@ SDS sincronizza le informazioni dal sistema SIS e le archivia in Azure AD. Azure
 
 - [File CSV](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1): esportare e compilare manualmente file con valori delimitati da virgole (CSV)
 - [API PowerSchool](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f): provider SIS che semplifica la sincronizzazione con Azure AD
-- [API Clever](https://support.office.com/article/Follow-these-steps-f3d92fde-3ad0-48f3-80a1-1ad0ac4a3fae): soluzione di gestione delle identità che supporta la sincronizzazione diretta con Azure AD
 - [OneRoster](https://support.office.com/article/Follow-these-steps-f43cbb2a-b502-497d-a8b1-783dc05a57ab): formato CSV utilizzabile per l'esportazione e la conversione per la sincronizzazione con Azure AD
 
 ### <a name="find-out-more"></a>Altre informazioni

@@ -1,23 +1,23 @@
 ---
-title: Configurare le impostazioni di Windows Update for Business in Intune
-titleSuffix: Azure portal
-description: Informazioni su come configurare le impostazioni di Windows Update for Business in Intune per controllare gli aggiornamenti ai dispositivi Windows 10."
-keywords: 
+title: Configurare le impostazioni di Windows Update for Business in Microsoft Intune
+titleSuffix: ''
+description: Informazioni su come configurare le impostazioni di Windows Update for Business in Microsoft Intune per controllare gli aggiornamenti ai dispositivi Windows 10.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-software-updates"></a>Gestire gli aggiornamenti software
 
@@ -140,7 +140,7 @@ Questo è il percorso dell'URI OMA (con distinzione tra maiuscole e minuscole) p
 - **Tipo di dati**: String
 - **Valore**: <*Usare il GUID visualizzato nella scheda Telemetria di Windows nell'area di lavoro OMS*>
 
-![Impostazione di Windows per i dati di diagnostica e di utilizzo](./media/commID.png)
+![Impostazioni URI OMA - Aggiungi riga](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Come sospendere gli aggiornamenti
 È possibile sospendere la ricezione degli aggiornamenti qualitativi o delle funzionalità su un dispositivo per un periodo massimo di 35 giorni dall'inizio della sospensione. Dopo che è trascorso il numero massimo di giorni, la funzionalità di sospensione verrà disattivata automaticamente e il dispositivo eseguirà la ricerca degli aggiornamenti applicabili in Windows Updates. Dopo questa ricerca, è possibile sospendere nuovamente gli aggiornamenti.
