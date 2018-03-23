@@ -1,25 +1,25 @@
 ---
 title: Configurare la registrazione dei dispositivi Windows con Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Configurare la registrazione dei dispositivi Windows.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21849cd4bb1c77334fdc3e9e347365a25ab4df2d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurare la registrazione dei dispositivi Windows
 
@@ -85,6 +85,9 @@ Informare gli utenti sulla modalità di registrazione dei dispositivi Windows e 
 > Gli utenti finali devono accedere al sito Web del portale aziendale attraverso Microsoft Edge per visualizzare le app Windows assegnate per le versioni di Windows specifiche. Altri browser, inclusi Google Chrome, Mozilla Firefox e Internet Explorer, non supportano questo tipo di filtro.
 
 Per istruzioni sulla registrazione da parte dell'utente finale, vedere [Registrare il dispositivo Windows in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). È anche possibile invitare gli utenti a leggere [Quali sono le informazioni visibili per l'azienda quando si registra il dispositivo in Intune?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
+
+>[!IMPORTANT]
+> Se la registrazione MDM automatica non è abilitata e vengono usati dispositivi Windows 10 aggiunti ad Azure AD, saranno visibili due record nella console di Intune dopo la registrazione. Per evitare questo problema assicurarsi che gli utenti con dispositivi aggiunti ad Azure AD passino ad **Account** > **Accedi all'azienda o all'istituto di istruzione** e **Connetti** usando lo stesso account. 
 
 Per altre informazioni sulle attività per gli utenti finali, vedere [Informazioni sull'uso di Microsoft Intune per gli utenti finali](end-user-educate.md).
 

@@ -1,34 +1,35 @@
 ---
-title: "Sequenza temporale dell'entità User nel data warehouse | Microsoft Docs"
-description: "Il data warehouse di Intune rappresenta le entità User in una sequenza temporale."
+title: Sequenza temporale dell'entità User nel data warehouse
+titlesuffix: Microsoft Intune
+description: Informazioni sul data warehouse di Intune che rappresenta le entità User in una sequenza temporale.
 keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e72f60b9ad604f756f74b1ba7cbbde7e5c2ab9f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7448954fce2b81c5783845c9fbdaaebf43fdf326
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Rappresentazione della durata degli utenti nel data warehouse di Intune
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Rappresentazione della durata degli utenti nel data warehouse di Microsoft Intune
 
 È possibile usare il mese degli snapshot di dati archiviati nel data warehouse di Intune per rispondere alle domande sulle tendenze basate sul tempo. È possibile, ad esempio, conoscere il numero di utenti aggiunti nell'arco di un mese o chiedere quanti utenti sono stati rimossi dal sistema nello stesso periodo.
 
-Per fornire queste informazioni, il data warehouse archivia informazioni cronologiche e, in questo modo, tiene traccia della durata di un'entità. Il warehouse registra infatti il momento in cui viene creata un'entità, quelli in cui viene modificato lo stato dell'entità e il momento in cui l'entità viene eliminata. Con queste informazioni cronologiche acquisite tramite snapshot giornalieri di misure quantitative, è possibile confrontare ogni giorno rispetto al giorno precedente e così via.
+Per fornire queste informazioni, il data warehouse archivia informazioni cronologiche. Il data warehouse può tenere traccia della durata di un'entità. Il warehouse registra infatti il momento in cui viene creata un'entità, quelli in cui viene modificato lo stato dell'entità e il momento in cui l'entità viene eliminata. Con queste informazioni cronologiche acquisite tramite snapshot giornalieri di misure quantitative, è possibile confrontare ogni giorno rispetto al giorno precedente e così via.
 
 Fare riferimento alla durata delle entità, tuttavia, può generare confusione, poiché lo stato delle entità è in continua evoluzione. Se, ad esempio, si controlla uno snapshot il giorno 30, è possibile che nei dati non sia possibile trovare un record utente con uno stato attivo, mentre è possibile che il record dell'entità esistesse come attivo nei giorni 28 e 29 e che, prima del giorno 28, l'utente non esistesse affatto.
 
-Questo concetto può essere più chiaro se si esamina la durata di un'entità.
+Questo scenario può essere più chiaro se si esamina la durata di un'entità.
 
 Si supponga che all'utente **John Smith** venga assegnata una licenza in data 01/06/2017 e che la tabella **User** contenga la voce seguente: 
  

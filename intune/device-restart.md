@@ -1,24 +1,24 @@
 ---
 title: Riavviare i dispositivi in remoto con Intune
-titlesuffix: Azure portal
-description: Informazioni su come riavviare in remoto i dispositivi con l'azione di riavvio del dispositivo."
-keywords: 
-author: arob98
-ms.author: angrobe
+titlesuffix: Microsoft Intune
+description: Informazioni su come riavviare in remoto i dispositivi con l'azione di riavvio del dispositivo in Microsoft Intune.
+keywords: ''
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ab2bf622211c1a81ca9732aabebea43b5b0dcc4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1bd5a01b8aac91c3bd6ea033d62d41e19aab65f8
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Riavviare i dispositivi in remoto con Intune
 

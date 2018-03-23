@@ -1,25 +1,26 @@
 ---
 title: Promuovere l'adozione da parte degli utenti finali con l'accesso condizionale
-description: Questo articolo fornisce informazioni dettagliate su come usare l'accesso condizionale per promuovere la registrazione in Intune.
-keywords: 
-author: andredm7
-ms.author: andredm
+titlesuffix: Microsoft Intune
+description: Informazioni su come usare l'accesso condizionale per la registrazione in Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 180cecde31627192363bb00f58fb13f7ec123744
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 31e2a79e5506666cc5ebe655536600b57a429802
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="drive-end-user-adoption-with-conditional-access"></a>Promuovere l'adozione da parte degli utenti finali con l'accesso condizionale
+# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Promuovere l'uso da parte di utenti finali con accesso condizionale in Microsoft Intune
 
 Abilitare le funzionalità di accesso condizionale con Intune, ad esempio il blocco della posta elettronica per i dispositivi non registrati, può essere utile ai fini della registrazione e della conformità, ma non è obbligatorio per l'esito positivo di una migrazione. Il successo dipende dagli obiettivi e dai requisiti di sicurezza per l'adozione.
 

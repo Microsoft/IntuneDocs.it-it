@@ -1,25 +1,27 @@
 ---
 title: Evitare perdite di dati nei dispositivi non gestiti
-description: Consentire l'accesso ai dati aziendali nei dispositivi e proteggere i dati dalla divulgazione.
+titlesuffix: Microsoft Intune
+description: Consentire l'accesso ai dati aziendali nei dispositivi e proteggere i dati dalla divulgazione usando Microsoft Intune.
 keywords: protezione dati impedire divulgazione dispositivo O365 Office 365
-author: arob98
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b917b3718a7630c4a556a41c551aa5d76f4b4aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 964422f113e6a722c1134cf49b1b28b494632872
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-data-leaks-on-non-managed-devices"></a>Evitare perdite di dati nei dispositivi non gestiti
+# <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Evitare perdite di dati nei dispositivi non gestiti usando Microsoft Intune
 
 Se si consente l'accesso ai dati aziendali ospitati in Office 365, è possibile stabilire il modo in cui gli utenti condividono e salvano i dati senza rischiare la divulgazione intenzionale o accidentale dei dati. In Microsoft Intune è possibile impostare criteri di protezione app per proteggere i dati aziendali presenti nei dispositivi personali degli utenti. Non è necessario che i dispositivi siano registrati nel servizio Intune. 
 

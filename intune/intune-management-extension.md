@@ -1,24 +1,25 @@
 ---
-title: Gestire gli script di PowerShell in Intune per i dispositivi Windows 10
-titlesuffix: Azure portal
-description: Informazioni su come caricare script di PowerShell in Intune per l'esecuzione in dispositivi Windows 10.
-keywords: 
+title: Gestire gli script di PowerShell in Microsoft Intune per i dispositivi Windows 10
+titlesuffix: ''
+description: Informazioni su come caricare script di PowerShell in Microsoft Intune per l'esecuzione in dispositivi Windows 10.
+keywords: ''
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a52f2affa235a37b6d99a8452bc83a794cb04ce5
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c501292126200baa88e06e30b6226e5c5021b8ec
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gestire gli script di PowerShell in Intune per i dispositivi Windows 10
 L'estensione di gestione di Intune consente di caricare script di PowerShell in Intune da eseguire in dispositivi Windows 10. L'estensione di gestione integra le funzionalità di gestione di dispositivi mobili (MDM, Mobile Device Management) di Windows 10 e rende più semplice passare a una gestione moderna.
@@ -44,7 +45,7 @@ L'estensione di gestione di Intune ha i prerequisiti seguenti:
 6. Nel riquadro **Aggiungi uno script di PowerShell** immettere un **Nome** e una **Descrizione** per lo script di PowerShell.
 7. In **Percorso dello script** cercare e selezionare lo script di PowerShell. Lo script deve avere dimensioni inferiori a 10 KB (ASCII) o a 5 KB (Unicode).
 8. Scegliere **Configura** e quindi scegliere se eseguire lo script con le credenziali dell'utente del dispositivo (**Sì**) o nel contesto di sistema (**No**). Per impostazione predefinita, lo script viene eseguito nel contesto di sistema. Selezionare **Sì**, a meno che non sia necessario eseguire lo script nel contesto di sistema. 
-  ![Riquadro Aggiungi uno script di PowerShell](./media/mgmt-extension-add-script.png)
+  ![Riquadro Script di PowerShell](./media/mgmt-extension-add-script.png)
 9. Scegliere se lo script deve essere firmato da un autore attendibile (**Sì**). Per impostazione predefinita, non è necessario che lo script sia firmato. 
 10. Fare clic su **OK** e quindi fare clic su **Crea** per salvare lo script.
 

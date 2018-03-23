@@ -1,27 +1,26 @@
 ---
-title: RBAC con Intune
-titleSuffix: Azure portal
-description: "Anteprima di Intune in Azure: Informazioni su come il Controllo degli accessi in base al ruolo consente di controllare chi può eseguire azioni e apportare modifiche."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Controllo degli accessi in base al ruolo con Microsoft Intune
+description: Informazioni su come il controllo degli accessi in base al ruolo (RBAC) consente di controllare gli utenti che possono eseguire le azioni e apportare modifiche in Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c19a3b8a6df82780d54f277d5477b947f050b1cc
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="role-based-administration-control-rbac-with-intune"></a>Controllo degli accessi in base al ruolo (RBAC) con Intune
+# <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune
 
 RBAC consente di controllare chi esegue varie attività di Intune all'interno dell'organizzazione e a chi si applicano queste attività. È possibile usare i ruoli predefiniti che coprono alcuni scenari comuni in Intune oppure creare ruoli personalizzati. Un ruolo è definito da:
 

@@ -1,24 +1,25 @@
 ---
-title: Gestione delle app mobili (MAM) | Microsoft Docs
-description: "Argomento di riferimento per la categoria Gestione delle app mobili delle raccolte di entità nell'API data warehouse di Intune."
+title: Gestione delle app mobili (MAM)
+titlesuffix: Microsoft Intune
+description: Argomento di riferimento per la categoria Gestione delle app mobili delle raccolte di entità nell'API data warehouse di Intune.
 keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d07d6e012a9c74c0ba68d59f98c05e5169789cf0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: eb9f63199063db34361c7d463b8cef37bb8bfa1f
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Informazioni di riferimento per le entità di gestione delle app mobili (MAM)
 

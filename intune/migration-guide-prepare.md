@@ -1,25 +1,26 @@
 ---
 title: Preparare Intune per la gestione dei dispositivi mobili
-description: Valutare i requisiti tecnici e aziendali prima della migrazione a Intune.
-keywords: 
-author: andredm7
-ms.author: andredm
+titlesuffix: Microsoft Intune
+description: Valutare i requisiti tecnici e aziendali prima della migrazione a Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 93c17ff0343c4475bbc665ff2418e1e7860894d5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 52af99e79b9c97fc38dc911fb55070180667b7a1
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparare Intune per la gestione dei dispositivi mobili (MDM)
+# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparare Microsoft Intune per la gestione dei dispositivi mobili (MDM)
 
 Prima di affrontare nei dettagli la configurazione di Intune, è importante esaminare i requisiti dell'organizzazione per la gestione dei dispositivi mobili. Potrebbe essere utile eseguire report degli utenti attivi nel provider MDM corrente per identificare i gruppi di utenti critici. Sarà quindi possibile iniziare a rispondere alle domande della sezione [Valutare i requisiti per la gestione dei dispositivi mobili](migration-guide-prepare.md#assess-mdm-requirements).
 

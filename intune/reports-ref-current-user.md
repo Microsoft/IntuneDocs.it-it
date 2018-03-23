@@ -1,24 +1,25 @@
 ---
-title: Current User nel data warehouse di Intune | Microsoft Docs
-description: "Argomento di riferimento per la categoria User delle raccolte di entità nell'API data warehouse di Intune."
+title: Current User nel data warehouse di Intune
+titlesuffix: Microsoft Intune
+description: Argomento di riferimento per la categoria User delle raccolte di entità nell'API data warehouse di Intune.
 keywords: Data warehouse di Intune
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d25825910e878d428bde72414c4bbee2d5092a89
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 55aaf78df514b373a8627dfcd3b47934085cd8fa
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-current-user-entity"></a>Informazioni di riferimento per l'entità Current User
 

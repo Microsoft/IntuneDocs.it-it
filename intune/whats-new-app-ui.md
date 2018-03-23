@@ -1,35 +1,30 @@
 ---
 title: Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
-description: "Cosa è cambiato nell'interfaccia utente per le applicazioni usate nei dispositivi degli utenti finali con Intune."
-keywords: 
+titlesuffix: Microsoft Intune
+description: Informazioni sulle novità dell'interfaccia utente per le app usate nei dispositivi degli utenti finali con Microsoft Intune.
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f39c908e6de55c0668f507c3d7eed9545deba82
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
-Informazioni su quali aggiornamenti sono stati apportati all'interfaccia utente per le app che gli utenti finali vedranno in questa versione di Microsoft Intune. Queste informazioni sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.
+Informazioni sugli aggiornamenti apportati all'interfaccia utente per le app disponibili per gli utenti finali in questa versione di Microsoft Intune. Le informazioni sugli aggiornamenti sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.
 
-## <a name="week-of-december-11-2017"></a>Settimana del 11 dicembre 2017
-
-### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Messaggi per gli utenti finali per gli account <!--1573558, 1712; changes to be made for other platforms for 1801-->
-
-Gli utenti del sito Web Portale aziendale non potranno eseguire azioni che richiedono l'accesso in scrittura al tenant. Verranno visualizzati messaggi di errore appropriati per spiegare che l'account di tali utenti è in manutenzione. È prevista a breve l'introduzione di modifiche simili per le app Portale aziendale per Android, iOS, macOS e Windows.
-
-![Messaggio di errore che si verifica durante lo spostamento di account](./media/account-move-rom-iwp-user-1712.png)
+<!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-november-27-2017"></a>Settimana del 27 novembre 2017
 
@@ -59,7 +54,7 @@ Se è stato abilitato il [mapping del gruppo di dispositivi](device-group-mappin
 |![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
 
 
-## <a name="week-of-november-6-2017"></a>Settimana del 06 novembre 2017
+## <a name="week-of-november-6-2017"></a>Settimana del 6 novembre 2017
 
 ### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Aggiornamenti all'app Portale aziendale per Windows 10 <!--1299474-->
 La pagina Impostazioni dell'app Portale aziendale per Windows 10 è stata aggiornata in modo da rendere più coerenti le impostazioni e le azioni previste dall'utente sui vari tipi di impostazioni. Ne è stato aggiornato anche il layout per uniformarlo a quello delle altre app Windows.
@@ -144,7 +139,7 @@ L'accesso condizionale con Intune supporta un'autenticazione più sicura sui dis
 
 ![Specificare l'indirizzo di posta elettronica e il nome dell'account.](./media/ios-11-ca-email-after-1708-03.png)
 
-![Dati inviati al log esterno Microsoft nella pagina.](./media/ios-11-ca-email-after-1708-04.png)
+![Dati inviati alla pagina di accesso Microsoft esterna.](./media/ios-11-ca-email-after-1708-04.png)
 
 ![Immissione della password nella pagina Microsoft.](./media/ios-11-ca-email-after-1708-05.png)
 
@@ -189,7 +184,7 @@ Di seguito sono illustrate l'esperienza di accesso precedente, la nuova esperien
 
 __Esperienza di accesso precedente__
 
-![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
+![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Il pulsante "Accedi" si trova nella parte inferiore. Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](./media/cp_ios_aad_signin_before_1704_001.png)
 
 ![Dopo aver toccato Accedi, l'utente immette le proprie credenziali in questa pagina, che richiede l'indirizzo di posta elettronica e la password dell'utente e offre diversi modi per risolvere gli errori relativi alle password.](./media/cp_ios_aad_signin_before_1704_002.png)
 
@@ -229,7 +224,7 @@ L'app portale aziendale avvia la procedura di accesso.
 
 ## <a name="june-2017"></a>Giugno 2017
 
-### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>L'app Portale aziendale per Android ora include una nuova esperienza utente finale per i criteri di protezione delle app <!--1305217-->
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>L'app Portale aziendale per Android ora include una nuova esperienza utente finale per i criteri di protezione delle app
 In base ai suggerimenti dei clienti, l'app Portale aziendale per Android è stata modificata e ora include un pulsante **Accesso al contenuto aziendale**. Con questa funzionalità gli utenti finali possono evitare il processo di registrazione per accedere solo ad app che supportano i criteri di protezione, una funzionalità di gestione delle applicazioni mobili di Intune.
 
 L'utente può toccare il pulsante **Accesso al contenuto aziendale** anziché iniziare il processo di registrazione del dispositivo.
@@ -238,7 +233,7 @@ L'utente può toccare il pulsante **Accesso al contenuto aziendale** anziché in
 
 Viene visualizzato il sito Web Portale aziendale, dove l'utente può specificare le proprie credenziali per ottenere l'autorizzazione all'uso dell'app nel dispositivo.
 
-![Immagine del sito Web Portale aziendale in cui viene confermato l'accesso.](./media/and_iwp_sign_in_auth_page_after_1706.png)
+![Immagine del sito Web del portale aziendale in cui viene confermato l'accesso.](./media/and_iwp_sign_in_auth_page_after_1706.png)
 
 È comunque possibile registrare il dispositivo può per la gestione completa toccando il menu **Azione**.
 
@@ -259,9 +254,9 @@ Questo aggiornamento è visibile solo nei dispositivi che eseguono l'Aggiornamen
 
 ![Immagine della pagina di destinazione dell'app Portale aziendale di Windows 10 con un messaggio di stato al centro dell'elenco "Dispositivi" che indica all'utente che il dispositivo in uso in non è ancora stato configurato per l'uso aziendale e che l'utente deve selezionare il messaggio per avviare la configurazione.](./media/win10_guided_enroll_select_setup_after_1706.png)
 
-![Immagine della pagina di configurazione dell'app Portale aziendale per Windows 10 con un messaggio indicante che per registrare il dispositivo per la gestione è necessario aggiungere un account aziendale al dispositivo.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
+![Immagine della pagina di configurazione dell'app Portale aziendale per Windows 10 con un messaggio in cui viene comunicato che per registrare il dispositivo per la gestione è necessario aggiungere un account aziendale al dispositivo.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
 
-![Immagine della pagina Aggiungere un account aziendale a questo dispositivo dell'app Portale aziendale per Windows 10, che segnala all'utente che è necessario aprire l'app Impostazioni e selezionare "Connetti" per completare la registrazione. Dopo questa operazione, un messaggio indica che è necessario tornare all'app Portale aziendale per completare la registrazione.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
+![Immagine della pagina Aggiungere un account aziendale a questo dispositivo dell'app Portale aziendale per Windows 10 che segnala all'utente che è necessario aprire l'app Impostazioni e selezionare "Connetti" per completare la registrazione. Dopo questa operazione, un messaggio indica che è necessario tornare all'app Portale aziendale per completare la registrazione.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
 
 ![Immagine della schermata Registra nella gestione dell'app Portale aziendale per Windows 10 che visualizza un messaggio di operazione completata, indicante che il dispositivo dell'utente è registrato e che per continuare è necessario toccare il pulsante "Avanti".](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
 
@@ -322,13 +317,13 @@ Un aggiornamento all'app Portale aziendale Android mostra un indicatore di stato
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -382,11 +377,28 @@ Questi sono i piani per i miglioramenti previsti per l'esperienza utente tramite
 > [!Note]
 > Si noti che le immagini seguenti potrebbero essere anteprime e che il prodotto annunciato potrebbe differire dalle versioni presentate.
 
+### <a name="ui-iwp"></a>Nuova esperienza utente per il sito Web del portale aziendale <!--2000968-->
+
+In aprile verrà introdotta una nuova esperienza per il sito Web del portale aziendale con aggiornamenti dell'interfaccia utente, flussi di lavoro semplificati e miglioramenti all'accessibilità. La nuova esperienza includerà miglioramenti proposti dai clienti, come la condivisione delle app e prestazioni migliorate in generale per offrire un'esperienza più semplice.
+
+Sono state aggiunte alcune nuove funzionalità, in base ai suggerimenti dei clienti, ad esempio, che miglioreranno significativamente l'usabilità e le funzionalità esistenti:
+
+-   Miglioramenti dell'interfaccia utente in tutto il sito Web
+-   Possibilità di condividere collegamenti diretti alle app
+- Miglioramento delle prestazioni per i cataloghi di app di grandi dimensioni
+
+Non è necessario eseguire alcuna azione per prepararsi per queste modifiche. Si riceverà una notifica quando il sito Web del portale aziendale aggiornato diventa disponibile. Tuttavia, potrebbe essere eventualmente necessario aggiornare la documentazione per gli utenti finali con screenshot aggiornati. Si noti che potrebbe anche essere necessario aggiornare la documentazione per l'app Portale aziendale in iOS, perché il sito Web è alla base della sezione **App** dell'app iOS.
+
+|Aggiornamento|Indietro|
+|---|---|
+|![La pagina del dispositivo aggiornato mostra il dispositivo allineato sopra le informazioni sul dispositivo e non più sopra l'elenco completo.](./media/iwp-device-after-1803.png)|![Versione precedente della pagina del dispositivo.](./media/iwp-device-before-1803.png)|
+|![La pagina di installazione dell'app aggiornata mostra l'app sopra la descrizione e le informazioni di installazione che includono la data di pubblicazione, la versione e il tipo di app.](./media/iwp-app-install-after-1803.png)|![Versione precedente della pagina di installazione dell'app.](./media/iwp-app-install-before-1803.png)|
+
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Aggiornamento dell'esperienza utente per l'app Portale aziendale per iOS <!--1412866-->
 
 Verrà rilasciato un importante aggiornamento dell'esperienza utente per l'app Portale aziendale per iOS. L'aggiornamento include una riprogettazione grafica completa che conferisce all'app un aspetto moderno, maggiore usabilità e accessibilità. Tutte le attuali funzionalità del Portale aziendale per iOS saranno mantenute.
 
-Tramite il programma Apple TestFlight viene offerta una versione non definitiva dell'app Portale aziendale aggiornata per iOS che l'utente può usare e per la quale può inviare i propri commenti e suggerimenti. Effettuare l'iscrizione in https://aka.ms/intune_ios_cp_testflight per l'accesso a TestFlight.
+Tramite il programma Apple TestFlight viene offerta una versione non definitiva dell'app Portale aziendale aggiornata per iOS che l'utente può usare e per la quale può inviare i propri commenti e suggerimenti. Iscriversi all'indirizzo https://aka.ms/intune_ios_cp_testflight per l'accesso a TestFlight. Per informazioni aggiornate su questo aggiornamento, vedere https://aka.ms/iOS_companyportal_update.
 
 ![immagini teaser per la nuova app del Portale aziendale per ios](./media/ios-cp-app-redesign-1801-teaser.png)
 
@@ -400,5 +412,5 @@ __Aggiornamenti per le app in primo piano__ È stata aggiunta una pagina dedicat
 
 ### <a name="see-also"></a>Vedere anche
 * [Blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Guida di orientamento a Cloud Platform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Guida di orientamento a Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
 * [Novità in Intune](https://docs.microsoft.com/intune/whats-new)
