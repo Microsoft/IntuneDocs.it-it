@@ -1,25 +1,25 @@
 ---
-title: "Criteri di conformità dei dispositivi"
-description: "Questo argomento spiega cosa sono e come funzionano i criteri di conformità del dispositivo."
-keywords: 
+title: Criteri di conformità dei dispositivi
+description: Questo argomento spiega cosa sono e come funzionano i criteri di conformità del dispositivo.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bcdad361dba7ee006bf2e2cffac7f1024c5e6dc6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ce8375a1b946a7ba5286637b1958539fd5015d8a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Criteri di conformità dei dispositivi in Microsoft Intune
 
