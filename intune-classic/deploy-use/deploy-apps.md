@@ -1,25 +1,25 @@
 ---
 title: Distribuire le app
-description: "Questo argomento illustra i concetti che è necessario comprendere prima di iniziare a distribuire le app con Intune."
-keywords: 
+description: Questo argomento illustra i concetti che è necessario comprendere prima di iniziare a distribuire le app con Intune.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6e3761ad892ff17abdfb8b61516ef56b1fb8318d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Distribuire le app con Microsoft Intune
 
@@ -48,16 +48,16 @@ Quando si distribuiscono le app, è possibile scegliere una delle seguenti azion
 
 |Tipo di programma di installazione|Installazione richiesta|Installazione disponibile|Disinstalla|Non applicabile|
 |------------------|--------------------|---------------------|-------------|------------------|
-|Pacchetto app Windows (distribuito in un gruppo di utenti)|sì|Sì|Sì|sì|
-|Pacchetto app Windows (distribuito in un gruppo di dispositivi)|sì|No|Sì|sì|
-|Pacchetto app per dispositivi mobili (distribuito in un gruppo di utenti)|sì|Sì|Sì|sì|
-|Pacchetto app per dispositivi mobili (distribuito in un gruppo di dispositivi)|sì|No|Sì|sì|
-|Windows Installer (distribuito in un gruppo di utenti)|No|Sì|No|sì|
-|Windows Installer (distribuito in un gruppo di dispositivi)|sì|No|Sì|sì|
-|Collegamento esterno (distribuito in un gruppo di utenti)|No|Sì|No|sì|
+|Pacchetto app Windows (distribuito in un gruppo di utenti)|Sì|Sì|Sì|Sì|
+|Pacchetto app Windows (distribuito in un gruppo di dispositivi)|Sì|No|Sì|Sì|
+|Pacchetto app per dispositivi mobili (distribuito in un gruppo di utenti)|Sì|Sì|Sì|Sì|
+|Pacchetto app per dispositivi mobili (distribuito in un gruppo di dispositivi)|Sì|No|Sì|Sì|
+|Windows Installer (distribuito in un gruppo di utenti)|No|Sì|No|Sì|
+|Windows Installer (distribuito in un gruppo di dispositivi)|Sì|No|Sì|Sì|
+|Collegamento esterno (distribuito in un gruppo di utenti)|No|Sì|No|Sì|
 |Collegamento esterno (distribuito in un gruppo di dispositivi)|No|No|No|No|
-|App iOS gestita dall'App Store (distribuita in un gruppo di utenti)|sì|Sì|Sì|sì|
-|App iOS gestita dall'App Store (distribuita in un gruppo di dispositivi)|sì|No|Sì|sì|
+|App iOS gestita dall'App Store (distribuita in un gruppo di utenti)|Sì|Sì|Sì|Sì|
+|App iOS gestita dall'App Store (distribuita in un gruppo di dispositivi)|Sì|No|Sì|Sì|
 > [!TIP]
 > Quando si distribuiscono le app, se si selezionano gruppi sia di utenti che di dispositivi, è possibile distribuire l'app soltanto come **Installazione disponibile**.
 

@@ -1,25 +1,25 @@
 ---
 title: Gestire il trasferimento di dati tra app iOS
-description: "Usare questo argomento per comprendere come è possibile usare la funzionalità Apri in di iOS e i criteri di gestione delle app mobili per gestire i trasferimenti di dati tra le app."
-keywords: 
+description: Usare questo argomento per comprendere come è possibile usare la funzionalità Apri in di iOS e i criteri di gestione delle app mobili per gestire i trasferimenti di dati tra le app.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c460e48360bb31076e2054297b037d08545ea1ae
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gestire il trasferimento di dati tra app iOS con Microsoft Intune
 
@@ -76,9 +76,9 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
 
 |Provider MDM di terze parti| Chiave Configuration | Tipo valore | Valore di configurazione|
 | ------- | ---- | ---- | ---- |
-| VMware AirWatch | IntuneMAMUPN | String | {UserPrincipalName}|
-| MobileIron Core | IntuneMAMUPN | String | $EMAIL$ **o** $USER_UPN$ |
-| MobileIron Cloud | IntuneMAMUPN | String | ${userUPN} **o** ${userEmailAddress} |
+| VMware AirWatch | IntuneMAMUPN | Stringa | {UserPrincipalName}|
+| MobileIron Core | IntuneMAMUPN | Stringa | $EMAIL$ **o** $USER_UPN$ |
+| MobileIron Cloud | IntuneMAMUPN | Stringa | ${userUPN} **o** ${userEmailAddress} |
 | ManageEngine Mobile Device Manager | IntuneMAMUPN | Stringa | %upn% |
 
 ### <a name="example-2-end-user-experience"></a>Esempio 2: Esperienza dell'utente finale

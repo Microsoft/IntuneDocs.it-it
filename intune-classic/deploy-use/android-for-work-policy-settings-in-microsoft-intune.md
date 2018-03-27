@@ -1,25 +1,25 @@
 ---
 title: Impostazioni dei criteri di Android for Work
-description: "Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi Android for Work gestiti con Intune."
-keywords: 
+description: Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi Android for Work gestiti con Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0938e4b788ef11a773854531f570e63809389fad
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e42d33b4cc69e6b2cc836e2236c508d97c2245fe
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di Android for Work in Microsoft Intune
 
@@ -40,7 +40,7 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 
 |Nome impostazione|Dettagli|
 |----------------|-|
-|**Richiedi una password per sbloccare i dispositivi mobili**|Specifica se è necessaria una password nei dispositivi gestiti. È possibile scegliere tra:<br><br>- **Complessa**: deve includere almeno una lettera, un numero e un simbolo<br>- **Alfanumerica**: deve includere almeno un numero e un carattere alfabetico<br>- **Alfabetica**: deve includere almeno lettere o simboli<br>- **Complessa numerica**: deve includere caratteri numerici non ripetuti o consecutivi<br>- **Numerica**<br><br>Se questa impostazione non è abilitata, non sono previsti requisiti di complessità.|
+|**Richiedi una password per sbloccare i dispositivi mobili**|Specifica se è necessaria una password nei dispositivi gestiti. Scegliere tra:<br><br>- **Complessa**: deve includere almeno una lettera, un numero e un simbolo<br>- **Alfanumerica**: deve includere almeno un numero e un carattere alfabetico<br>- **Alfabetica**: deve includere almeno lettere o simboli<br>- **Complessa numerica**: deve includere caratteri numerici non ripetuti o consecutivi<br>- **Numerica**<br><br>Se questa impostazione non è abilitata, non sono previsti requisiti di complessità.|
 |**Lunghezza minima password**|Specifica il numero minimo di caratteri o numeri della password.|
 |**Minuti di inattività prima che lo schermo del dispositivo venga bloccato**|Specifica il numero di minuti di inattività dell'utente prima del blocco automatico del dispositivo.|
 |**Consenti Smart Lock e altri agenti di attendibilità**<br>(Android 6.0+)|Consente di controllare la funzionalità Smart Lock nei dispositivi Android compatibili. Questa funzionalità del telefono, talvolta nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se quest'ultimo si trova in una posizione attendibile, ad esempio quando è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. È possibile usare questa impostazione per impedire agli utenti di configurare Smart Lock.|
@@ -55,7 +55,7 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 
 |Nome impostazione|Dettagli|
 |----------------|-|
-|**Consenti la condivisione dei dati tra i profili di lavoro e personali**|Consente alle app del profilo di lavoro di condividere i dati con le app del profilo personale degli utenti. È possibile scegliere tra:<br><br>- **Impedisci qualsiasi condivisione tra i limiti**<br>- **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**<br>- **Nessuna restrizione sulla condivisione**|
+|**Consenti la condivisione dei dati tra i profili di lavoro e personali**|Consente alle app del profilo di lavoro di condividere i dati con le app del profilo personale degli utenti. Scegliere tra:<br><br>- **Impedisci qualsiasi condivisione tra i limiti**<br>- **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**<br>- **Nessuna restrizione sulla condivisione**|
 |**Nascondi le notifiche del profilo di lavoro quando il dispositivo è bloccato**<br>(Android 6.0+)|Controllare se visualizzare le notifiche dal profilo di lavoro quando il dispositivo è bloccato.|
 |**Imposta i criteri di autorizzazione predefiniti delle app**<br>(Android 6.0+)|Imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro. A partire da Android 6, alcune autorizzazioni necessarie per le app vengono richieste all'utente finale in fase di esecuzione.  Questa impostazione di criteri consente al personale IT di decidere come o se richiedere agli utenti di concedere autorizzazioni per le app nel profilo di lavoro. <br/><br/>Ad esempio, il personale IT può eseguire il push nel profilo di lavoro di un'app che richiede l'accesso alla posizione.  In genere viene visualizzata una finestra di dialogo per chiedere all'utente se vuole concedere all'app l'accesso alla posizione e l'utente può approvare o rifiutare questa richiesta.  Questa impostazione di criteri consente al personale IT di decidere se tutte le autorizzazioni devono essere concesse o rifiutate automaticamente senza visualizzare un messaggio di richiesta oppure se lasciare la libertà di scelta all'utente.|
 
@@ -73,7 +73,7 @@ Intune supporta attualmente un numero limitato di criteri personalizzati Android
     |**Nome**|Immettere un nome univoco per il criterio personalizzato Android che consenta di identificarlo nella console di Intune.|
     |**Descrizione**|Fornire una descrizione di carattere generale sul criterio personalizzato Android e altre informazioni rilevanti per consentirne l'individuazione.|
 
-### <a name="oma-uri-settings"></a>Impostazioni OMA-URI
+### <a name="oma-uri-settings"></a>Impostazioni URI OMA
 
    |Nome impostazione|Dettagli|
     |--------|--------------------|

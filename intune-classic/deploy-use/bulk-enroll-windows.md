@@ -1,24 +1,24 @@
 ---
 title: Registrazione in blocco per Windows 10
 description: Creare un pacchetto di registrazione in blocco per Microsoft Intune
-keywords: 
+keywords: ''
 author: NathBarn
 ms.author: NathBarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.openlocfilehash: 5c7a51721850f539a1a3c2648054f2d3604231e0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 3660255503c0dc7faa8d41b698f3d5fd9e4c330f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registrazione in blocco per dispositivi Windows
 
@@ -49,7 +49,7 @@ Per la registrazione in blocco per dispositivi Windows, è necessario quanto seg
   - **Description** (Descrizione): una descrizione facoltativa del progetto ![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](../media/bulk-enroll-name.png)
 
 4.  Specificare un nome univoco per i dispositivi. I nomi possono includere un numero di serie (%%NUMERO DI SERIE%%) o un set di caratteri casuali. Facoltativamente, è anche possibile immettere un codice Product Key, se si vuole aggiornare l'edizione di Windows, configurare il dispositivo per la condivisione e rimuovere software pre-installato.<BR>
-![Screenshot della finestra in cui specificare nome, cartella di progetto e descrizione nell'app Progettazione configurazione di Windows](../media/bulk-enroll-device.png)
+![Screenshot della schermata in cui specificare nome, cartella di progetto e descrizione nell'Applicazione immagine e configurazione di Windows](../media/bulk-enroll-device.png)
 
 5.  Facoltativamente, è possibile configurare la rete Wi-Fi alla quale i dispositivi si connettono quando vengono avviati per la prima volta.  Se questa non viene configurata, quando il dispositivo viene avviato per la prima volta è necessaria una connessione di rete cablata.
 ![Schermata di abilitazione Wi-Fi inclusi SSID di rete e opzioni del tipo di rete nell'Applicazione immagine e configurazione di Windows](../media/bulk-enroll-network.png)

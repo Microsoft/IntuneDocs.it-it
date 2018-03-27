@@ -1,25 +1,25 @@
 ---
 title: Aggiungere app
-description: "Prima di iniziare la distribuzione di app con Intune, prendersi il tempo necessario per acquisire familiarità con i concetti introdotti in questo argomento."
-keywords: 
+description: Prima di iniziare la distribuzione di app con Intune, prendersi il tempo necessario per acquisire familiarità con i concetti introdotti in questo argomento.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 788e8a7f15566c4b15fec09f3e861d9380278e3f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 69c3f671fdf1ac0d281e484f9090356a3ce246a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-with-microsoft-intune"></a>Aggiungere app con Microsoft Intune
 
@@ -31,7 +31,7 @@ Prima di iniziare la distribuzione di app con Microsoft Intune, prendersi il tem
 
 ### <a name="software-installer"></a>Programma di installazione software
 
-|Tipo di App|Dettagli|
+|Tipo di app|Dettagli|
 |----------------|-------|
 |**Windows Installer (&#42;.exe, &#42;.msi)**|Questo tipo di app deve supportare l'installazione invisibile all'utente senza input dell'utente. La documentazione dell'app deve includere le opzioni della riga di comando rilevanti per l'installazione automatica dell'app, ad esempio, **/q**. Per un elenco di opzioni comuni della riga di comando, vedere [Opzioni della riga di comando per lo strumento Microsoft Windows Installer](https://support.microsoft.com/kb/227091).<br><br>Le cartelle e i file aggiuntivi richiesti dal programma di installazione dell'app devono essere disponibili nel percorso specificato per i file di installazione dell'app stessa.<br><br>Nella maggior parte dei casi, i file Windows Installer (con estensione msi) e Windows Installer Patch (con estensione msp) non richiedono l'installazione di alcun argomento della riga di comando da parte di Intune. Verificare la documentazione dell'app.<br><br>Se sono necessari argomenti di riga di comando, essi devono essere inseriti come coppia Nome=Valore (ad esempio TRANSFORMS=custom_transform.mst).<br><br>Questo tipo di app si applica solo ai computer che eseguono il client del software Intune.|
 |**Pacchetto app per Android (&#42;.apk)**|Per distribuire app per Android, è necessario un pacchetto con estensione apk valido.|

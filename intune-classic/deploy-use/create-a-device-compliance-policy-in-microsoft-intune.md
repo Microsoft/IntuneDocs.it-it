@@ -1,25 +1,25 @@
 ---
-title: "Creare criteri di conformità dei dispositivi"
-description: "Creare criteri di conformità per consentire ai dispositivi mobili e ai PC in uso di accedere ai dati della società."
-keywords: 
+title: Creare criteri di conformità dei dispositivi
+description: Creare criteri di conformità per consentire ai dispositivi mobili e ai PC in uso di accedere ai dati della società.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/12/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e37e5f490254efedf56a383e612f934925be75e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Creare criteri di conformità dei dispositivi in Microsoft Intune
 
@@ -56,7 +56,7 @@ Per specificare l'intervallo di tempo in cui il dispositivo deve eseguire l'arch
 La tabella seguente include le impostazioni dei criteri di conformità e le piattaforme nelle quali sono supportate.
 
 -------------
-|Impostazioni|iOS|Android|Windows|
+|Impostazione|iOS|Android|Windows|
 |-----|----|-----|-----|
 |Richiedi una password per sbloccare i dispositivi mobili|iOS 6 e versioni successive|Android 4.0 e versioni successive <br>Samsung KNOX Standard 4.0 e versioni successive|Windows Phone 8.1 e versioni successive|
 |Consenti password semplici|iOS 6 e versioni successive|Non supportato|Windows Phone 8.1 e versioni successive|
