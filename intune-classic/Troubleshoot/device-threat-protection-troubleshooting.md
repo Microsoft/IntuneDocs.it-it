@@ -1,25 +1,25 @@
 ---
 title: Risolvere i problemi di integrazione di Lookout
 description: Questo argomento descrive la risoluzione dei problemi che si verificano comunemente con l'integrazione di Lookout
-keywords: 
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6adb0bc2562a16c0111242cc7dd923afa073d84e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ec20d87da48fb52207d839da0753eb05524569af
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Risolvere i problemi di integrazione di Lookout con Intune
 
@@ -36,14 +36,14 @@ Lookout MTP consente l'accesso al servizio solo agli utenti di un gruppo di Azur
 
 * Posta elettronica: enterprisesupport@lookout.com
 * Accedere alla [console MTP](http://aad.lookout.com) e passare al modulo **Support** (Supporto).
-* Andare a https://enterprise.support.lookout.com/hc/requests e inviare una richiesta di supporto.
+* Accedere a https://enterprise.support.lookout.com/hc/requests e creare una richiesta di supporto.
 
 ## <a name="unable-to-sign-in"></a>Impossibile accedere
 L'errore seguente viene visualizzato quando l'utente amministratore globale di Azure AD non ha accettato la configurazione iniziale di Lookout.
 
 ![screenshot della schermata di accesso a Lookout che mostra l'errore di accesso](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-Per risolvere questo problema, l'utente amministratore globale deve accedere a https://aad.lookout.com/les?action=consent e accettare la richiesta per avviare la configurazione. È possibile trovare informazioni più dettagliate nell'argomento [Configurare la sottoscrizione con Lookout MTP](../deploy-use/setup-your-lookout-mtd-subscription.md)
+Per risolvere questo problema, l'utente amministratore globale deve accedere a https://aad.lookout.com/les?action=consent e accettare la richiesta di avvio della configurazione. È possibile trovare informazioni più dettagliate nell'argomento [Configurare la sottoscrizione con Lookout MTP](../deploy-use/setup-your-lookout-mtd-subscription.md)
 
 **Problemi di stato del dispositivo**
 

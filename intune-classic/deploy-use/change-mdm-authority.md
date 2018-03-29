@@ -1,24 +1,24 @@
 ---
-title: "Cambiare l'autorità MDM in Configuration Manager (MDM ibrida)"
-description: "Informazioni su come modificare l'autorità MDM da Intune autonoma a Configuration Manager (MDM ibrida)"
-keywords: 
+title: Cambiare l'autorità MDM in Configuration Manager (MDM ibrida)
+description: Informazioni su come modificare l'autorità MDM da Intune autonoma a Configuration Manager (MDM ibrida)
+keywords: ''
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-the-mdm-authority"></a>Cambiare l'autorità MDM
 A partire dalla versione 1610 di Configuration Manager, è possibile cambiare l'autorità MDM senza contattare il supporto tecnico Microsoft e senza dover annullare e ripetere la registrazione dei dispositivi gestiti esistenti. Questo argomento illustra la procedura da seguire per cambiare un tenant di Microsoft Intune esistente configurato da Intune e con l'autorità MDM impostata su **Microsoft Intune** (autonomo) a **Configuration Manager** (MDM ibrida) senza dover annullare e ripetere la registrazione dei dispositivi gestiti esistenti.
@@ -51,7 +51,7 @@ Esaminare le informazioni seguenti per preparare il passaggio alla nuova autorit
 - Se si usa Intune autonomo per gestire i dispositivi iOS prima di cambiare l'autorità MDM, è necessario assicurarsi che lo stesso certificato del servizio Apple Push Notification (APN) utilizzato in precedenza in Intune sia rinnovato e utilizzato per configurare nuovamente il tenant Configuration Manager (ibrido).    
 
     > [!IMPORTANT]  
-    > Se si usa un altro certificato APN per il sistema ibrido, viene annullata la registrazione di TUTTI i dispositivi iOS registrati in precedenza ed è necessario ripetere la procedura di registrazione. Prima di cambiare l'autorità MDM, assicurarsi di sapere esattamente quale certificato APN è stato usato per gestire i dispositivi iOS in Intune. Individuare lo stesso certificato elencato nel portale Apple Push Certificates (https://identity.apple.com) e assicurarsi che l'utente il cui ID Apple è stato usato per creare il certificato APN originale sia identificato e disponibile per rinnovare gli stessi certificati APN come parte del passaggio alla nuova autorità MDM.  
+    > Se si usa un altro certificato APN per il sistema ibrido, viene annullata la registrazione di TUTTI i dispositivi iOS registrati in precedenza ed è necessario ripetere la procedura di registrazione. Prima di cambiare l'autorità MDM, assicurarsi di sapere esattamente quale certificato APN è stato usato per gestire i dispositivi iOS in Intune. Individuare lo stesso certificato elencato nel portale Apple Push Certificates (https://identity.apple.com)) e assicurarsi che l'utente il cui ID Apple è stato usato per creare il certificato APN originale sia identificato e disponibile per rinnovare gli stessi certificati APN come parte del passaggio alla nuova autorità MDM.  
 
 ## <a name="change-the-mdm-authority-to-configuration-manager"></a>Cambiare l'autorità MDM in Configuration Manager
 Il processo per cambiare l'autorità MDM in Configuration Manager (ibrido) include i passaggi generali seguenti:  

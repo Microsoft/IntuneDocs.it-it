@@ -1,12 +1,11 @@
 ---
-title: Come monitorare i profili dei dispositivi con Intune
-titlesuffix: Microsoft Intune
-description: Informazioni su come monitorare i profili di dispositivi Microsoft Intune assegnati.
+title: Visualizzare profili di dispositivo con Microsoft Intune - Azure | Microsoft Docs
+description: Visualizzare i dettagli del profilo sui dispositivi e i dispositivi con profili di dispositivo Microsoft Intune assegnati o distribuiti.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,23 +14,21 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7483d2568ef3a43b7774916ef0a5f8f9b4540e4e
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: ddf8c7366cf97e251d85b995cb620e61f9d5f4ef
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>Come monitorare i profili dispositivo in Microsoft Intune
+# <a name="monitor-device-profiles-in-microsoft-intune"></a>Monitorare i profili di dispositivo in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-È possibile monitorare lo stato di assegnazione dei profili di dispositivi Intune in due modi:
+È possibile monitorare lo stato di assegnazione dei profili di dispositivi Intune in due modi.
 
-
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
-2. Nel pannello **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
-2. Nell'elenco del pannello dei profili scegliere il profilo che si desidera gestire, quindi procedere in uno dei modi seguenti:
-    - Nel pannello <*nome profilo*> **Profilo di configurazione del dispositivo** scegliere **Panoramica** per visualizzare informazioni di base sul profilo e sulle relative assegnazioni.
-    - Nel pannello <*nome profilo*> **Profilo di configurazione del dispositivo** scegliere **Assegnazioni** per visualizzare informazioni più dettagliate sul profilo e sulle relative assegnazioni.
+1. Accedere al [portale di Azure](https://portal.azure.com).
+2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+3. Selezionare **Configurazione del dispositivo** > **Profili**.
+4. Nell'elenco dei profili selezionare il profilo da gestire. Eseguire quindi una delle operazioni seguenti:
+    - Nel riquadro <*nome profilo*> **Profilo di configurazione del dispositivo** selezionare **Panoramica** per visualizzare informazioni di base sul profilo e le relative assegnazioni.
+    - Nel riquadro <*nome profilo*> **Profilo di configurazione del dispositivo** selezionare **Assegnazioni** per visualizzare informazioni più dettagliate sul profilo e le relative assegnazioni.

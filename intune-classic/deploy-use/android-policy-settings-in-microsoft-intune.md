@@ -1,25 +1,25 @@
 ---
 title: Impostazioni dei criteri di Android e Samsung KNOX
-description: "Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi Android gestiti con Intune."
-keywords: 
+description: Creare criteri per il controllo delle impostazioni e delle funzionalità dei dispositivi Android gestiti con Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a75380f578eeea57b8f6e694923d84b42b844045
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di Android e Samsung KNOX Standard in Microsoft Intune
 
@@ -46,31 +46,31 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
 |----------------|-|----------------|----------------|
-|**Richiedi una password per sbloccare i dispositivi mobili**|Specifica la richiesta di una password nei dispositivi supportati.|sì|sì|
-|**Lunghezza minima password**|Specifica la lunghezza minima della password.|sì|sì|
-|**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|Specifica il numero di errori di accesso consentiti prima della cancellazione del dispositivo.|sì|sì|
-|**Minuti di inattività prima dello spegnimento dello schermo**|Specifica il numero di minuti di inattività prima dello spegnimento dello schermo del dispositivo.|sì|sì|
-|**Scadenza password (giorni)**|Specifica il numero di giorni prima che sia necessario modificare una password.|sì|sì|
+|**Richiedi una password per sbloccare i dispositivi mobili**|Specifica la richiesta di una password nei dispositivi supportati.|Sì|Sì|
+|**Lunghezza minima password**|Specifica la lunghezza minima della password.|Sì|Sì|
+|**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|Specifica il numero di errori di accesso consentiti prima della cancellazione del dispositivo.|Sì|Sì|
+|**Minuti di inattività prima dello spegnimento dello schermo**|Specifica il numero di minuti di inattività prima dello spegnimento dello schermo del dispositivo.|Sì|Sì|
+|**Scadenza password (giorni)**|Specifica il numero di giorni prima che sia necessario modificare una password.|Sì|Sì|
 |**Ricorda cronologia password**|Specifica il numero di password usate in precedenza che è necessario ricordare.|Sì|Sì|
-|**Ricorda cronologia password** - **Impedisci riutilizzo delle password precedenti**|Impedisce il riutilizzo delle password precedenti.|sì|sì|
-|**Qualità password**|Specifica il livello richiesto di complessità delle password e indica se è possibile usare dispositivi biometrici.|sì|sì|
-|**Consenti sblocco tramite impronta digitale**|Consente di sbloccare il dispositivo con un'impronta digitale.|No|sì|
-|**Consenti Smart Lock e altri agenti di attendibilità**<br>(Android 5 e versioni successive)|Consente di controllare la funzionalità Smart Lock nei dispositivi Android compatibili. Questa funzionalità del telefono, talvolta nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se quest'ultimo si trova in una posizione attendibile, ad esempio quando è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. È possibile usare questa impostazione per impedire agli utenti di configurare Smart Lock.|sì|No|
+|**Ricorda cronologia password** - **Impedisci riutilizzo delle password precedenti**|Impedisce il riutilizzo delle password precedenti.|Sì|Sì|
+|**Qualità password**|Specifica il livello richiesto di complessità delle password e indica se è possibile usare dispositivi biometrici.|Sì|Sì|
+|**Consenti sblocco tramite impronta digitale**|Consente di sbloccare il dispositivo con un'impronta digitale.|No|Sì|
+|**Consenti Smart Lock e altri agenti di attendibilità**<br>(Android 5 e versioni successive)|Consente di controllare la funzionalità Smart Lock nei dispositivi Android compatibili. Questa funzionalità del telefono, talvolta nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se quest'ultimo si trova in una posizione attendibile, ad esempio quando è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. È possibile usare questa impostazione per impedire agli utenti di configurare Smart Lock.|Sì|No|
 
 ### <a name="encryption-settings"></a>Impostazioni di crittografia
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
-|**Richiedi crittografia sui dispositivi mobili**|Richiede la crittografia dei file sul dispositivo mobile.|Sì|sì|
+|**Richiedi crittografia sui dispositivi mobili**|Richiede la crittografia dei file sul dispositivo mobile.|Sì|Sì|
 |**Richiedi crittografia sulle schede di memoria**|Specifica se la scheda di memoria del dispositivo deve essere crittografata.|No|Sì|
 
 ### <a name="system-settings"></a>Impostazioni di sistema
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
-|**Consenti acquisizione schermo**|Consente all'utente di acquisire il contenuto della schermata come immagine.|No|sì|
-|**Consenti invio dati di diagnostica**|Consente al dispositivo di inviare informazioni di diagnostica a Google.|No|sì|
-|**Consenti ripristino impostazioni predefinite**|Consente all'utente di eseguire il ripristino delle impostazioni di fabbrica del dispositivo.|No|sì|
+|**Consenti acquisizione schermo**|Consente all'utente di acquisire il contenuto della schermata come immagine.|No|Sì|
+|**Consenti invio dati di diagnostica**|Consente al dispositivo di inviare informazioni di diagnostica a Google.|No|Sì|
+|**Consenti ripristino impostazioni predefinite**|Consente all'utente di eseguire il ripristino delle impostazioni di fabbrica del dispositivo.|No|Sì|
 
 ### <a name="cloud-settings---documents-and-data"></a>Impostazioni cloud - Documenti e dati
 
@@ -88,10 +88,10 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
-|**Consenti Web browser**|Specifica se è consentito l'uso del Web browser predefinito nel dispositivo.|No|sì|
-|**Consenti riempimento automatico**|Consente di usare la funzione di riempimento automatico del Web browser.|No|sì|
-|**Consenti blocco popup**|Consente di usare un blocco popup nel Web browser.|No|sì|
-|**Consenti cookie**|Consente l'uso dei cookie nel Web browser del dispositivo.|No|sì|
+|**Consenti Web browser**|Specifica se è consentito l'uso del Web browser predefinito nel dispositivo.|No|Sì|
+|**Consenti riempimento automatico**|Consente di usare la funzione di riempimento automatico del Web browser.|No|Sì|
+|**Consenti blocco popup**|Consente di usare un blocco popup nel Web browser.|No|Sì|
+|**Consenti cookie**|Consente l'uso dei cookie nel Web browser del dispositivo.|No|Sì|
 |**Consenti scripting**|Consente l'uso dello scripting nel Web browser del dispositivo.|No|Sì|
 
 ### <a name="application-settings---apps"></a>Impostazioni dell'applicazione - App
@@ -104,31 +104,31 @@ Se l'impostazione che si sta cercando non viene visualizzata nell'argomento, è 
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
 |----------------|-----|-----------|----------------|
-|**Consenti la fotocamera**|Consente l'uso della fotocamera del dispositivo.|Sì|sì|
-|**Consenti archivi rimovibili**|Consente al dispositivo di usare archivi rimovibili, ad esempio una scheda SD.|No|sì|
-|**Consenti Wi-Fi**|Consente di usare le funzionalità Wi-Fi del dispositivo.|No|sì|
-|**Consenti tethering Wi-Fi**|Consente di usare il tethering Wi-Fi nel dispositivo.|No|sì|
-|**Consenti georilevazione**|Consente al dispositivo usare le informazioni sul percorso.|No|sì|
-|**Consenti NFC**|Consente l'uso della tecnologia NFC (Near Field Communication) se il dispositivo la supporta.|No|sì|
-|**Consenti Bluetooth**|Consente di usare il Bluetooth nel dispositivo.|No|sì|
+|**Consenti la fotocamera**|Consente l'uso della fotocamera del dispositivo.|Sì|Sì|
+|**Consenti archivi rimovibili**|Consente al dispositivo di usare archivi rimovibili, ad esempio una scheda SD.|No|Sì|
+|**Consenti Wi-Fi**|Consente di usare le funzionalità Wi-Fi del dispositivo.|No|Sì|
+|**Consenti tethering Wi-Fi**|Consente di usare il tethering Wi-Fi nel dispositivo.|No|Sì|
+|**Consenti georilevazione**|Consente al dispositivo usare le informazioni sul percorso.|No|Sì|
+|**Consenti NFC**|Consente l'uso della tecnologia NFC (Near Field Communication) se il dispositivo la supporta.|No|Sì|
+|**Consenti Bluetooth**|Consente di usare il Bluetooth nel dispositivo.|No|Sì|
 |**Consenti lo spegnimento**|Consente all'utente di spegnere il dispositivo.<br /><br />Se questa impostazione è disabilitata, l'impostazione **Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo** per i dispositivi Samsung KNOX Standard non funziona.|No|Sì|
 
 ### <a name="device-capabilities-settings---cellular"></a>Impostazioni delle funzionalità del dispositivo - Cellulare
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
 |----------------|---|-------------|----------------|
-|**Consenti roaming vocale**|Consente il roaming vocale quando il dispositivo si trova in una rete cellulare.|No|sì|
-|**Consenti roaming dei dati**|Consente il roaming dati quando il dispositivo si trova in una rete cellulare.|No|sì|
+|**Consenti roaming vocale**|Consente il roaming vocale quando il dispositivo si trova in una rete cellulare.|No|Sì|
+|**Consenti roaming dei dati**|Consente il roaming dati quando il dispositivo si trova in una rete cellulare.|No|Sì|
 |**Consenti i messaggi SMS/MMS**|Consente l'uso di messaggi SMS e MMS sul dispositivo.|No|Sì|
 
 ### <a name="device-capabilities-settings---features"></a>Impostazioni delle funzionalità del dispositivo - Funzionalità
 
 |Nome impostazione|Dettagli|Android 4.0+|Samsung KNOX Standard|
 |----------------|----|------------|----------------|
-|**Consenti l'assistente vocale**|Consente di usare il software di Assistente vocale sul dispositivo.|No|sì|
-|**Consenti la composizione vocale**|Attiva o disattiva la funzionalità di composizione vocale sul dispositivo.|No|sì|
-|**Consenti copia e incolla**|Consente le funzioni Copia e Incolla nel dispositivo.|No|sì|
-|**Consenti la condivisione degli Appunti tra le applicazioni**|Consente l'uso degli Appunti per copiare e incollare dati tra app.|No|sì|
+|**Consenti l'assistente vocale**|Consente di usare il software di Assistente vocale sul dispositivo.|No|Sì|
+|**Consenti la composizione vocale**|Attiva o disattiva la funzionalità di composizione vocale sul dispositivo.|No|Sì|
+|**Consenti copia e incolla**|Consente le funzioni Copia e Incolla nel dispositivo.|No|Sì|
+|**Consenti la condivisione degli Appunti tra le applicazioni**|Consente l'uso degli Appunti per copiare e incollare dati tra app.|No|Sì|
 |**Consenti YouTube**|Consente l'uso di YouTube sul dispositivo.|No|Sì|
 
 ### <a name="settings-for-compliant-and-noncompliant-apps"></a>Impostazioni per le app conformi e non conformi
@@ -190,7 +190,7 @@ Intune supporta attualmente un numero limitato di criteri personalizzati Android
     | **Nome** |Immettere un nome univoco per il criterio personalizzato Android che consenta di identificarlo nella console di Intune.|
     | **Descrizione** |Fornire una descrizione di carattere generale sul criterio personalizzato Android e altre informazioni rilevanti per consentirne l'individuazione.|
 
-### <a name="oma-uri-settings"></a>Impostazioni OMA-URI
+### <a name="oma-uri-settings"></a>Impostazioni URI OMA
 
    |Nome impostazione|Dettagli|
     |--------|--------------------|

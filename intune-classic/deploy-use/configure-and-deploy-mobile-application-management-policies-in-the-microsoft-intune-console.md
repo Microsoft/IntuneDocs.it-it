@@ -1,25 +1,25 @@
 ---
 title: Configurare i criteri MAM nella console di Intune
-description: "I criteri di gestione delle applicazioni mobili in Microsoft Intune consentono di modificare la funzionalità delle app distribuite per allinearle ai criteri aziendali di conformità e sicurezza."
-keywords: 
+description: I criteri di gestione delle applicazioni mobili in Microsoft Intune consentono di modificare la funzionalità delle app distribuite per allinearle ai criteri aziendali di conformità e sicurezza.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 881180fec0fe4fca8b49106bcae6ea1ecd52c2eb
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 94c6a46d2213ba3d1389b52f7684ec531e40228a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configurare e distribuire criteri di gestione delle applicazioni mobili nella console di Microsoft Intune
 
@@ -131,7 +131,7 @@ Dopo avere verificato il corretto caricamento dell'app, continuare con il passag
     |**Consenti all'app di trasferire i dati ad altre app**|Questa impostazione specifica le app a cui l'app in questione può inviare dati. È possibile scegliere di non consentire il trasferimento dei dati alle app, di trasferire i dati solo alle altre app gestite oppure di consentire il trasferimento a qualsiasi app. <br /><br />Ad esempio, se non si consente il trasferimento dei dati, questo viene limitato in servizi come la messaggistica SMS, l'assegnazione di immagini ai contatti e la pubblicazione di post su Facebook o Twitter.<br /><br />Nei dispositivi iOS, per impedire il trasferimento di documenti tra app gestite e non gestite, è necessario anche configurare e distribuire un criterio di sicurezza dei dispositivi mobili che disabilita l'impostazione **Consenti documenti gestiti in altre app non gestite**. Se si sceglie di consentire il trasferimento dei dati solo ad altre app gestite, i visualizzatori di file PDF e di immagini di Intune (se distribuiti) verranno usati per aprire il contenuto dei rispettivi tipi.<br /><br />Inoltre, se si imposta l'opzione su **App gestite da criteri** o **Nessuna**, la funzionalità di iOS 9 che consente a Ricerca Spotlight di cercare i dati nelle app verrà bloccata.<br><br>Questa impostazione non controlla l'uso della funzionalità Apri in nei dispositivi mobili. Per gestire la funzionalità Apri in, vedere [Gestire il trasferimento di dati tra app iOS con Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).|
     |**Consenti all'app di ricevere i dati da altre app**|Questa impostazione specifica le app da cui questa app può ricevere dati. È possibile scegliere di non consentire il trasferimento dei dati dalle app, di trasferire i dati solo da altre app gestite oppure di consentire il trasferimento da qualsiasi app.<br /><br />Quando un utente accede ai dati da un'app non gestita da criteri di gestione delle applicazioni mobili, i dati verranno considerati come dati aziendali e saranno protetti dai criteri. Questo si applica ad app iOS che supportano più identità (dove Intune applica le impostazioni di gestione solo ai dati o agli account aziendali presenti nell'app). In alternativa, si applica a un dispositivo registrato con criteri di gestione delle applicazioni mobili.|
     |**Impedisci "Salva con nome"**|Questa impostazione disabilita l'uso dell'opzione **Salva con nome** per salvare i dati in posizioni di archiviazione cloud personali (ad esempio OneDrive o Dropbox) nelle app che usano questi criteri.|
-    |**Limita le operazioni taglia, copia e incolla con le altre app**|Questa impostazione specifica come è possibile usare le operazioni Taglia, Copia e Incolla con l'app. È possibile scegliere tra:<br /><br />**Bloccato**. Non consente le operazioni Taglia, Copia e Incolla tra questa app e altre app.<br /><br />**App gestite da criteri**. Consente le operazioni Taglia, Copia e Incolla solo tra questa app e altre app gestite.<br /><br />**App gestite da criteri con Incolla in**. I dati tagliati o copiati da questa app possono essere incollati solo in altre app gestite. I dati tagliati o copiati da qualsiasi app possono essere incollati in questa app.<br /><br />**Qualsiasi app**. Nessuna restrizione per le operazioni Taglia, Copia e Incolla in o da questa app.<br /><br />Per copiare o incollare i dati tra app gestite, in entrambe le app deve essere configurata l'impostazione **App gestite da criteri** o **App gestite da criteri con Incolla in**.|
+    |**Limita le operazioni taglia, copia e incolla con le altre app**|Questa impostazione specifica come è possibile usare le operazioni Taglia, Copia e Incolla con l'app. Scegliere tra:<br /><br />**Bloccato**. Non consente le operazioni Taglia, Copia e Incolla tra questa app e altre app.<br /><br />**App gestite da criteri**. Consente le operazioni Taglia, Copia e Incolla solo tra questa app e altre app gestite.<br /><br />**App gestite da criteri con Incolla in**. I dati tagliati o copiati da questa app possono essere incollati solo in altre app gestite. I dati tagliati o copiati da qualsiasi app possono essere incollati in questa app.<br /><br />**Qualsiasi app**. Nessuna restrizione per le operazioni Taglia, Copia e Incolla in o da questa app.<br /><br />Per copiare o incollare i dati tra app gestite, in entrambe le app deve essere configurata l'impostazione **App gestite da criteri** o **App gestite da criteri con Incolla in**.|
     |**Richiedi PIN semplice per l'accesso**|Questa impostazione richiede all'utente di immettere un PIN specificato per l'uso dell'app. All'utente verrà richiesto di impostare questo numero alla prima esecuzione dell'app.|
     |**Numero di tentativi prima della reimpostazione del PIN**|Specificare il numero di tentativi di immissione del PIN che è possibile effettuare prima che all'utente venga richiesto di reimpostare il PIN.|
     |**Richiedi credenziali aziendali per l'accesso**|Questa impostazione richiede all'utente di immettere le informazioni di accesso aziendali per poter accedere all'app.|

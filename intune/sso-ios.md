@@ -1,23 +1,23 @@
 ---
 title: Configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS
-titlesuffix: 
+titlesuffix: ''
 description: Informazioni su come configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS
 
@@ -90,7 +90,7 @@ I criteri `http://.com` e `https://.com` corrispondono rispettivamente a tutti g
 
 Indicare le app nel dispositivo dell'utente finale che possono usare il payload Single Sign-On.
 
-La matrice `AppIdentifierMatches` deve contenere stringhe corrispondenti agli ID dei bundle dell'app. Queste stringhe potrebbero essere corrispondenze esatte (ad esempio: `com.contoso.myapp`) o specificare una corrispondenza di prefisso per l'ID del bundle usando il carattere jolly *\. Il carattere jolly deve essere visualizzato dopo un punto (.) e può comparire una sola volta alla fine della stringa (ad esempio: `com.contoso.*`). Quando si include un carattere jolly, viene concesso all'account l'accesso a qualsiasi app il cui ID di bundle inizia con il prefisso.
+La matrice `AppIdentifierMatches` deve contenere stringhe corrispondenti agli ID dei bundle dell'app. Queste stringhe potrebbero essere corrispondenze esatte (ad esempio: `com.contoso.myapp`) o specificare una corrispondenza di prefisso per l'ID del bundle usando il carattere jolly \*. Il carattere jolly deve essere visualizzato dopo un punto (.) e può comparire una sola volta alla fine della stringa (ad esempio: `com.contoso.*`). Quando si include un carattere jolly, viene concesso all'account l'accesso a qualsiasi app il cui ID di bundle inizia con il prefisso.
 
 Il campo **Nome app** viene usato per aggiungere un nome descrittivo per facilitare l'identificazione dell'ID del bundle.
 

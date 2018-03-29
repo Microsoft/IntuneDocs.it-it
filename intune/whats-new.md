@@ -1,25 +1,25 @@
 ---
-title: "Novità di Microsoft Intune"
-titlesuffix: 
-description: "Informazioni sulle novità nel portale di Intune di Azure"
-keywords: 
+title: Novità di Microsoft Intune
+titlesuffix: ''
+description: Informazioni sulle novità nel portale di Intune di Azure
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/16/2018
+ms.date: 03/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f171779a2606790dd1e59caf5e261e6d22faaf7f
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: be4d02419879a765c3d84a99b65a1184f7e8353e
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 
@@ -47,6 +47,10 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazio
 
 
 ## <a name="week-of-march-12-2018"></a>Settimana del 12 marzo 2018
+
+#### <a name="company-portal-app-for-android-visual-updates---976944---"></a>Aggiornamenti di elementi visivi nell'app Portale aziendale per Android <!--976944 -->
+
+L'app Portale aziendale per Android è stata aggiornata e resa conforme alle linee guida di Android [Material Design](https://material.io/). È possibile visualizzare le immagini delle nuove icone nell'articolo [Novità dell'interfaccia utente dell'app](whats-new-app-ui.md).
 
 ### <a name="new-windows-defender-exploit-guard-settings----1631893---"></a>Nuove impostazioni di Windows Defender Exploit Guard <!-- 1631893 -->
 

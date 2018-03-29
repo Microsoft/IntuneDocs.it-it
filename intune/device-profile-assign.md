@@ -1,50 +1,48 @@
 ---
 title: Assegnare profili di dispositivo in Microsoft Intune - Azure | Microsoft Docs
-description: Usare il portale di Azure per assegnare profili e criteri di dispositivo a utenti e dispositivi e per escludere gruppi da un'assegnazione di profilo in Microsoft Intune
-keywords: 
+description: Usare il portale di Azure per assegnare profili e criteri di dispositivo a utenti e dispositivi. Informazioni su come escludere i gruppi da un'assegnazione di profilo in Microsoft Intune.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09650bc99b1bdf892b60828f0b524467d7b60ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9840298df981bee6c33d3cb36ec5e4ada46d11bd
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Assegnare profili utente e profili di dispositivo in Microsoft Intune
 
-Dopo aver creato un profilo è possibile assegnarlo a gruppi di Azure Active Directory.
+Dopo aver creato un profilo è possibile assegnarlo ai gruppi di Azure Active Directory (Azure AD).
 
 ## <a name="assign-a-device-profile"></a>Assegnare un profilo di dispositivo
 
 1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi** e cercare **Microsoft Intune**.
 2. In **Microsoft Intune** selezionare **Configurazione del dispositivo** e quindi **Profili**.
 3. Nell'elenco di profili selezionare il profilo che si vuole assegnare e quindi scegliere **Assegnazioni**.
-4. Scegliere **Includi** o **Escludi** per i gruppi, quindi **Selezionare i gruppi**:  
+4. Scegliere **Includi** o **Escludi** e quindi selezionare i gruppi.  
 
-    ![Includere o escludere gruppi da un'assegnazione di profilo](./media/group-include-exclude.png)
+    ![Screenshot delle opzioni per includere o escludere i gruppi da un'assegnazione di profilo](./media/group-include-exclude.png)
 
-5. Quando si selezionano i gruppi, si sceglie un gruppo di Azure Activity Directory. Per selezionare più gruppi tenere premuto **CTRL**.
-6. Al termine scegliere **Salva** per salvare le modifiche.
+5. Quando si selezionano i gruppi, si sceglie un gruppo di Azure AD. Per selezionare più gruppi, tenere premuto **CTRL**.
+6. Al termine, selezionare **Salva**.
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Escludere gruppi da un'assegnazione di profilo
 
 I profili di configurazione dei dispositivi Intune consentono di escludere gruppi dall'assegnazione dei criteri. Ad esempio è possibile assegnare un profilo di dispositivo al gruppo **Tutti gli utenti aziendali**, ma escludere tutti i membri del gruppo **Dirigenti**.
 
-Quando si escludono gruppi da un'assegnazione, si escludono solo utenti o si escludono solo gruppi di dispositivi (non una combinazione di gruppi), Intune non considera nessuna relazione utente-dispositivo. L'inclusione di gruppi di utenti mentre si escludono i gruppi di dispositivi può non restituire i risultati previsti. Se si usano gruppi misti o esistono altri conflitti, l'inclusione ha la precedenza sull'esclusione.
+Quando si escludono gruppi da un'assegnazione, si escludono solo utenti o si escludono solo gruppi di dispositivi (non una combinazione di gruppi), Intune non considera nessuna relazione utente-dispositivo. L'inclusione di gruppi di utenti mentre si escludono gruppi di dispositivi può non restituire i risultati previsti. Se si usano gruppi misti o esistono altri conflitti, l'inclusione ha la precedenza sull'esclusione.
 
-Ad esempio, si vuole assegnare un profilo di dispositivo a tutti i dispositivi dell'organizzazione, ad eccezione dei dispositivi in modalità tutto schermo. Si include il gruppo **Tutti gli utenti**, ma si esclude il gruppo **Tutti i dispositivi**.
-
-In questo caso, tutti gli utenti e i dispositivi ottengono i criteri, anche se il dispositivo dell'utente è parte del gruppo **Tutti i dispositivi**.
+Ad esempio, si vuole assegnare un profilo di dispositivo a tutti i dispositivi dell'organizzazione, ad eccezione dei dispositivi in modalità tutto schermo. Si include il gruppo **Tutti gli utenti**, ma si esclude il gruppo **Tutti i dispositivi**. In questo caso, tutti gli utenti e i dispositivi ottengono i criteri, anche se il dispositivo dell'utente è parte del gruppo **Tutti i dispositivi**.
 
 L'esclusione valuta solo i membri diretti dei gruppi e non include i dispositivi associati a un utente. Tuttavia i dispositivi che non hanno un utente non ottengono i criteri. Questo si verifica perché i dispositivi non hanno nessuna relazione con il gruppo **Tutti gli utenti**.
 

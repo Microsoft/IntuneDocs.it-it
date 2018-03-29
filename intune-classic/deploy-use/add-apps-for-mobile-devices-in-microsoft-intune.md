@@ -1,25 +1,25 @@
 ---
 title: Aggiungere app per dispositivi registrati
-description: "Prima di distribuire un'app è necessario aggiungerla a Intune. L'app sarà quindi disponibile nella console di Intune, in cui sarà possibile distribuirla e gestirla."
-keywords: 
+description: Prima di distribuire un'app è necessario aggiungerla a Intune. L'app sarà quindi disponibile nella console di Intune, in cui sarà possibile distribuirla e gestirla.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c688bf0912ec1150924743a9211a1268427fb13a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Aggiungere app per dispositivi registrati in Intune
 
@@ -48,14 +48,14 @@ Prima di distribuire o gestire un'app è necessario aggiungerla a Microsoft Intu
   -   **Collegamento esterno**, per le app da creare specificando un collegamento a un App Store:
 
         - **Specificare l'URL**. Specificare l'URL di uno degli elementi seguenti:
-            - L'URL dell'App Store dell'app da distribuire. Ad esempio, per distribuire l'app Desktop remoto Microsoft per Android, specificare **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Per trovare l'URL dell'app, usare un motore di ricerca per individuare la pagina dell'App Store che contiene l'app. Ad esempio, per trovare l'app Desktop remoto, è possibile cercare **Desktop remoto Microsoft Android**.
+            - L'URL dell'App Store dell'app da distribuire. Se, ad esempio, si vuole distribuire l'app Connessione Desktop remoto Microsoft per Android, specificare **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Per trovare l'URL dell'app, usare un motore di ricerca per individuare la pagina dell'App Store che contiene l'app. Ad esempio, per trovare l'app Desktop remoto, è possibile cercare **Desktop remoto Microsoft Android**.
             - Un sito Web. Intune distribuisce un'icona di collegamento al sito nel dispositivo, nota come clip Web.
             - Un'app sul Web. Intune distribuisce un'icona di collegamento all'app nel dispositivo.
         - **Richiedere un browser gestito per aprire questo collegamento (solo Android e iOS)**. Quando si distribuisce un collegamento a un'app Web o a un sito Web, gli utenti potranno aprirlo solo in Intune Managed Browser. Questo browser deve essere installato nel dispositivo.<br>Per informazioni dettagliate su Managed Browser, vedere [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md) (Gestire l'accesso a Internet usando i criteri di Managed Browser con Microsoft Intune).<br>Questo tipo di installazione non usa lo spazio di archiviazione cloud.
 
   -   **App iOS gestita dall'App Store** per app gratuite dell'iTunes store che si vuole gestire con i criteri di gestione di applicazioni mobili (MAM):
 
-        - **Specificare l'URL**. Immettere l'URL dell'App Store dell'app da distribuire. Ad esempio, per distribuire l'app Cartelle di lavoro Microsoft per iOS, specificare **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Questo tipo di installazione non usa lo spazio di archiviazione cloud.
+        - **Specificare l'URL**. Immettere l'URL dell'App Store dell'app da distribuire. Se, ad esempio, si vuole distribuire l'app Cartelle di lavoro Microsoft per iOS, specificare **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Questo tipo di installazione non usa lo spazio di archiviazione cloud.
 
         Se ad esempio si vuole distribuire l'app Microsoft Word dall'iTunes store sui dispositivi, viene visualizzata una pagina simile alla seguente:
 

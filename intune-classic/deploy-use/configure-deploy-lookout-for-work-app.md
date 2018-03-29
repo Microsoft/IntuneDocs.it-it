@@ -3,22 +3,22 @@ title: Distribuire l'app Lookout for Work
 description: Configurare e distribuire l'app Lookout for Work per Android.
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/21/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd0ad36f40463ab56f1a5ab0a11fa9eeb0c35db4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5d56dcf54c4f087dbea0dfcd95a2eebbdf384c00
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Configurare e distribuire l'app Lookout for Work
 
@@ -29,7 +29,7 @@ Questo articolo descrive come configurare e distribuire l'app Lookout for Work i
 ## <a name="android-google-play-store-app"></a>Android (app Google Play Store)
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) passare ad **App** e scegliere **Aggiungi app**.
-2.  Nella pagina **Installazione software** dell'autore scegliere **Collegamento esterno** e specificare l'URL seguente: https://play.google.com/store/apps/details?id=com.lookout.enterprise
+2.  Nella pagina **Installazione software** del server di pubblicazione, scegliere **Collegamento esterno** e specificare l'URL seguente: https://play.google.com/store/apps/details?id=com.lookout.enterprise
   >[!NOTE]
   >Non fare clic sulla casella per richiedere un browser gestito.
 
@@ -41,7 +41,7 @@ Questo articolo descrive come configurare e distribuire l'app Lookout for Work i
 
 4. Al termine viene visualizzato il messaggio **Caricamento dei dati in Microsoft Intune completato**.
 
-  Quando si fa clic su **App** nella console di Intune, l'elenco includerà a questo punto l'app **Lookout for Work** ![screenshot della pagina delle app della console di amministrazione Intune che mostra l'app Lookout for Work nell'elenco](../media/mtp/lookout-app-listed-intune-console.png)
+  Quando si fa clic su **App** nella console di Intune, l'elenco includerà a questo punto l'app **Lookout for Work**![screenshot della pagina delle app della console di amministrazione Intune che mostra l'app Lookout for Work nell'elenco](../media/mtp/lookout-app-listed-intune-console.png)
 
 5. Distribuire l'app agli utenti selezionando l'app Lookout for Work e scegliendo **Gestisci distribuzione**.
 
@@ -64,7 +64,7 @@ Questo articolo descrive come configurare e distribuire l'app Lookout for Work i
   ![screenshot della finestra di dialogo Aggiungi app con l'opzione dell'applicazione client nativa selezionata](../media/mtp/aad-add-app.png)
   3. Sostituire **com.lookout.enterprise.nomesocietà** con l'ID bundle del cliente selezionato durante l'accesso a IPA.
   4.  Aggiungere l'URI di reindirizzamento aggiuntivo: **&lt;portaleaziendale://code/>** seguito da una versione con codifica URL dell'URI di reindirizzamento originale.
-  5.  Aggiungere le **autorizzazioni delegate** all'app.
+  5.  Aggiungere **Autorizzazioni delegate** all'app.
 
   Per altri dettagli, vedere [Configurare un'applicazione client nativa](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application).
 
@@ -86,11 +86,11 @@ Questo articolo descrive come configurare e distribuire l'app Lookout for Work i
   Scegliere l'opzione **Installazione richiesta** per richiedere l'installazione dell'app Lookout nel dispositivo dell'utente.
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Cosa accade quando viene aperta l'app distribuita nel dispositivo
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Quando l'utente apre Lookout for Work nel dispositivo viene richiesto di attivare l'app e di scegliere l'opzione Accedi con Azure Active Directory. Negli argomenti seguenti è disponibile una procedura dettagliata con il flusso per l'utente finale:
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Quando l'utente apre Lookout for Work nel dispositivo, viene richiesto di attivare l'app e di scegliere l'opzione Accedi con Azure Active Directory. Negli argomenti seguenti è disponibile una procedura dettagliata con il flusso per l'utente finale:
 
-* [Viene richiesto di installare Lookout for Work nel dispositivo Android](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
+* [Richiesta di installare Lookout for Work](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 
-* [È necessario risolvere una minaccia rilevata da Lookout for Work nel dispositivo Android](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [È necessario risolvere una minaccia trovata da Lookout for Work](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Passaggi successivi
 * [Creare criteri di conformità dei dispositivi di Lookout in Intune](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
