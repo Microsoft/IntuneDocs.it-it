@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 99b1436fdf718b54f54f7e90835668d4a632b7ce
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>Edizione anticipata per Microsoft Intune - Marzo 2018
 
@@ -51,11 +51,11 @@ Con un On-premises Exchange Connector di Intune è possibile gestire l'accesso d
 I nuovi profili VPN creati per Cisco AnyConnect per IOS funzioneranno con Cisco AnyConnect 4.0.7 e versioni successive. I profili VPN di Cisco AnyConnect per iOS esistenti verranno contrassegnati con la dicitura **Cisco Legacy AnyConnect** e continueranno a funzionare con Cisco AnyConnect 4.0.5x come accade oggi.
 
 > [!NOTE]
-> Questa modifica riguarda solo iOS perché continuerà ad esistere una sola opzione Cisco AnyConnect per Android, Android for Work e macOS. 
+> Questa modifica riguarda solo iOS perché continuerà ad esistere una sola opzione Cisco AnyConnect per Android, Android for Work e macOS.
 
 #### <a name="more-information"></a>Altre informazioni
 
-Per supportare la nuova app è necessario creare un nuovo profilo VPN di Cisco AnyConnect per iOS perché la nuova app Cisco AnyConnect e l'app Cisco Legacy AnyConnect sono due app distinte. Se il client AnyConnect viene gestito nell'ambiente in uso, è necessario distribuire anche la nuova app Cisco AnyConnect. Per completare un aggiornamento, è inoltre necessario eliminare il profilo VPN di Cisco Legacy AnyConnect e rimuovere l'app Cisco Legacy AnyConnect. 
+Per supportare la nuova app è necessario creare un nuovo profilo VPN di Cisco AnyConnect per iOS perché la nuova app Cisco AnyConnect e l'app Cisco Legacy AnyConnect sono due app distinte. Se il client AnyConnect viene gestito nell'ambiente in uso, è necessario distribuire anche la nuova app Cisco AnyConnect. Per completare un aggiornamento, è inoltre necessario eliminare il profilo VPN di Cisco Legacy AnyConnect e rimuovere l'app Cisco Legacy AnyConnect.
 
 Nella versione iniziale, l'integrazione del controllo di accesso alla rete (NAC) per i nuovi client AnyConnect non funziona. È in corso un'operazione congiunta con Cisco per attivare l'integrazione NAC in una futura versione di Intune.
 
@@ -64,7 +64,7 @@ Nella versione iniziale, l'integrazione del controllo di accesso alla rete (NAC)
 Il rilevamento ottimizzato per jailbreak è una nuova impostazione di conformità che migliorerà la valutazione dei dispositivi jailbroken da parte di Intune. L'impostazione usa i servizi di posizione per attivare con maggiore frequenza l'archiviazione del dispositivo con Intune. Ciò può influire sull'utilizzo della batteria.
 
 ### <a name="ability-to-deploy-required-line-of-business-lob-apps-to-all-users-on-windows-10-desktop-devices----1627835-rs4---"></a>Capacità di distribuire le app line-of-business (LOB) necessarie a tutti gli utenti nei dispositivi Windows 10 Desktop <!-- 1627835 RS4 -->
-I clienti saranno in grado di distribuire le app line-of-business di Windows 10 da installare in contesti di dispositivo. In questo modo le app saranno disponibili per tutti gli utenti del dispositivo. Questa opzione è disponibile solo per i dispositivi Windows 10 Desktop. 
+I clienti saranno in grado di distribuire le app line-of-business di Windows 10 da installare in contesti di dispositivo. In questo modo le app saranno disponibili per tutti gli utenti del dispositivo. Questa opzione è disponibile solo per i dispositivi Windows 10 Desktop.
 
 ### <a name="expiring-line-of-business-lob-apps-for-microsoft-intune----748789---"></a>App line-of-business (LOB) in scadenza per Microsoft Intune <!-- 748789 -->
 Intune segnala nel portale di Azure le app line-of-business che stanno per scadere. Dopo che una nuova versione dell'app line-of-business è stata caricata, Intune rimuove la notifica di scadenza dall'elenco delle app.
@@ -73,10 +73,10 @@ Intune segnala nel portale di Azure le app line-of-business che stanno per scade
 Gli utenti che registrano un dispositivo tramite il portale aziendale in Windows 10 build 1703 e successive riusciranno a completare il primo passaggio della registrazione senza uscire dall'app.
 
 ### <a name="new-management-name-column----1333586---"></a>Nuova colonna Nome di gestione <!-- 1333586 -->
-Una nuova colonna denominata **Nome di gestione** verrà aggiunta al pannello Dispositivi. Si tratta di un nome generato automaticamente e non modificabile assegnato a ogni dispositivo, in base alla formula seguente: 
+Una nuova colonna denominata **Nome di gestione** verrà aggiunta al pannello Dispositivi. Si tratta di un nome generato automaticamente e non modificabile assegnato a ogni dispositivo, in base alla formula seguente:
 - Nome predefinito per tutti i dispositivi: <username>_<devicetype>_<enrollmenttimestamp>
-- Per i dispositivi aggiunti in blocco: < PackageId/ProfileId >_<DeviceType>_<EnrollmentTime> 
- 
+- Per i dispositivi aggiunti in blocco: < PackageId/ProfileId >_<DeviceType>_<EnrollmentTime>
+
 Questa colonna è facoltativa nel pannello Dispositivi. Non sarà disponibile per impostazione predefinita e sarà possibile accedervi solo tramite il selettore di colonna. Il nome del dispositivo non è interessato da questa nuova colonna.
 
 ### <a name="new-settings-for-windows-defender-security-center-notifications-device-configuration-profile----1631906---"></a>Nuove impostazioni per il profilo di configurazione del dispositivo di notifiche Windows Defender Security Center (WDSC)<!-- 1631906 -->
@@ -107,19 +107,19 @@ Queste impostazioni sono disponibili in **Configurazione del dispositivo** -> **
 ### <a name="configure-the-mac-application-firewall----1690461---"></a>Configurare il firewall dell'applicazione Mac <!-- 1690461 -->
 
 Sarà possibile configurare il firewall dell'applicazione Mac. Usare questa impostazione per controllare le connessioni in base all'applicazione, anziché in base alla porta. Questo rende più semplice ottenere i vantaggi della protezione con firewall e contribuisce a impedire che app indesiderate assumano il controllo delle porte di rete aperte per app legittime.
- 
+
 Questa funzione è disponibile in **Configurazione del dispositivo** -> **Crea profilo** -> **macOS** -> **Endpoint protection**.
 
 Dopo aver abilitato l'impostazione del firewall, configurare il firewall utilizzando una delle due strategie seguenti:
 
 - Bloccare tutte le connessioni in ingresso
 
-   Vengono bloccate tutte le connessioni in ingresso per i dispositivi di destinazione. Se si sceglie questa opzione, le connessioni in ingresso verranno bloccate per tutte le app. 
+   Vengono bloccate tutte le connessioni in ingresso per i dispositivi di destinazione. Se si sceglie questa opzione, le connessioni in ingresso verranno bloccate per tutte le app.
 
 - Consentire o bloccare app specifiche
 
    È possibile consentire o bloccare la ricezione di connessioni in ingresso per app specifiche. È inoltre possibile abilitare la modalità mascheramento per impedire l'invio di risposte alle richieste di probe.
- 
+
 #### <a name="more-information"></a>Altre informazioni
 
 - Bloccare tutte le connessioni in ingresso
@@ -134,7 +134,7 @@ Dopo aver abilitato l'impostazione del firewall, configurare il firewall utilizz
 - Modalità mascheramento
 
    Abilitare questa modalità per impedire che il computer risponde alle richieste di probe. Il computer risponde comunque alle richieste in ingresso provenienti da app autorizzate. Le richieste impreviste, ad esempio le richieste ICMP (ping), vengono ignorate.
- 
+
 
 ### <a name="updating-the-help-and-feedback-experience-on-company-portal-app-for-android---1631531---"></a>Aggiornamento dell'esperienza Guida e commenti e suggerimenti nell'app Portale aziendale per Android <!--1631531 -->
 
@@ -143,16 +143,16 @@ L'esperienza Guida e commenti e suggerimenti nell'app Portale aziendale per Andr
 ### <a name="custom-book-categories-for-volume-purchase-program-vpp-ebooks----1488911---"></a>Categorie libro personalizzate per eBook di Volume Purchase Program (VPP) <!-- 1488911 -->
 Sarà possibile creare categorie eBook personalizzate a cui assegnare eBook VPP. Gli utenti finali potranno vedere le categorie eBook appena create e i libri a esse assegnati.
 
-#### <a name="company-portal-for-android-visual-updates---976944---"></a>Aggiornamenti di elementi visivi in Portale aziendale per Android <!--976944 -->
+### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868--"></a>HoloLens e Surface Hub vengono ora visualizzati nell'elenco dei dispositivi <!--1725868-->
 
-L'app Portale aziendale per Android verrà aggiornata e resa conforme alle linee guida di Android [Material Design](https://material.io/). Contestualmente al rilascio dell'app verranno pubblicate le immagini delle nuove icone nell'articolo relative alle [novità nell'interfaccia utente dell'app](whats-new-app-ui.md). 
+Viene aggiunto il supporto per la visualizzazione dei dispositivi HoloLens e Surface Hub registrati in Intune nell'app del portale aziendale per Android.
 
 ### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Supporto di Edge in dispositivi mobili per i criteri di protezione delle app di Intune <!-- 1817882 -->
 
 Il browser Microsoft Edge per i dispositivi mobili supporterà i criteri di protezione delle app definiti in Intune.
 
 ### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>Usare il nome distinto completo come soggetto per il certificato SCEP <!--2221763 eeready-->
-Quando si crea un profilo certificato SCEP, immettere il nome del soggetto. Sarà possibile usare il nome distinto completo come soggetto. Per **Nome soggetto**, selezionare **Personalizzato** e immettere `CN={{OnPrem_Distinguished_Name}}`. Usare la variabile `{{OnPrem_Distinguished_Name}}`, assicurarsi di sincronizzare l'attributo utente `onpremisesdistingishedname` usando [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD. 
+Quando si crea un profilo certificato SCEP, immettere il nome del soggetto. Sarà possibile usare il nome distinto completo come soggetto. Per **Nome soggetto**, selezionare **Personalizzato** e immettere `CN={{OnPrem_Distinguished_Name}}`. Usare la variabile `{{OnPrem_Distinguished_Name}}`, assicurarsi di sincronizzare l'attributo utente `onpremisesdistingishedname` usando [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
 
 ### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>Ai dispositivi iOS viene richiesto un codice PIN ogni 15 minuti <!--1550837 eeready-->
 Dopo che i criteri di conformità o di configurazione vengono applicati a un dispositivo iOS, agli utenti viene richiesto ogni 15 minuti di impostare un codice PIN. Tale richiesta verrà visualizzata continuamente fino a quando non verrà impostato un PIN.
@@ -169,11 +169,11 @@ Si applica a: dispositivi di profilo di lavoro Android in sistemi operativi Andr
 
 ### <a name="schedule-your-automatic-updates---1805514---"></a>Pianificare gli aggiornamenti automatici <!--1805514 -->
 
-Intune offre un controllo sull'installazione di aggiornamenti automatici mediante [le impostazioni degli anelli di Windows Update](windows-update-for-business-configure.md). Sarà possibile pianificare gli aggiornamenti ricorrenti, nonché la settimana, il giorno e l'ora. 
+Intune offre un controllo sull'installazione di aggiornamenti automatici mediante [le impostazioni degli anelli di Windows Update](windows-update-for-business-configure.md). Sarà possibile pianificare gli aggiornamenti ricorrenti, nonché la settimana, il giorno e l'ora.
 
 ### <a name="disable-checks-on-device-restart---1805490---"></a>Disabilitare i controlli al riavvio del dispositivo <!--1805490 -->
 
-Intune consente di [gestire gli aggiornamenti software](windows-update-for-business-configure.md). La proprietà **Verifiche al riavvio** verrà aggiunta e abilitata per impostazione predefinita. Per ignorare i controlli che vengono eseguiti generalmente quando si riavvia un dispositivo, come ad esempio gli utenti attivi, i livelli di batteria e così via, selezionare **Ignora**. 
+Intune consente di [gestire gli aggiornamenti software](windows-update-for-business-configure.md). La proprietà **Verifiche al riavvio** verrà aggiunta e abilitata per impostazione predefinita. Per ignorare i controlli che vengono eseguiti generalmente quando si riavvia un dispositivo, come ad esempio gli utenti attivi, i livelli di batteria e così via, selezionare **Ignora**.
 
 <!-- 1802 start -->
 
@@ -183,15 +183,15 @@ Nella pagina della panoramica della registrazione è possibile visualizzare la t
 
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561---"></a>Personalizzare i temi del portale aziendale con codici esadecimali <!--1049561 -->
 
-Sarà possibile personalizzare il colore del tema nelle app Portale aziendale usando codici esadecimali. Quando si immette il codice esadecimale, Intune determina il colore del testo che offre il livello di contrasto massimo tra colore del testo e colore di sfondo in base agli [standard WCAG 2.0](http://www.w3.org/TR/WCAG20). È possibile visualizzare in anteprima un confronto tra il colore del testo e il logo della società e il colore in **App per dispositivi mobili** > **Portale aziendale**. 
+Sarà possibile personalizzare il colore del tema nelle app Portale aziendale usando codici esadecimali. Quando si immette il codice esadecimale, Intune determina il colore del testo che offre il livello di contrasto massimo tra colore del testo e colore di sfondo in base agli [standard WCAG 2.0](http://www.w3.org/TR/WCAG20). È possibile visualizzare in anteprima un confronto tra il colore del testo e il logo della società e il colore in **App per dispositivi mobili** > **Portale aziendale**.
 
-### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Nuove impostazioni di Windows Defender Credential Guard aggiunte alle impostazioni di Endpoint Protection <!--1102252 --> 
+### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Nuove impostazioni di Windows Defender Credential Guard aggiunte alle impostazioni di Endpoint Protection <!--1102252 -->
 
-Nuove impostazioni [Windows Defender Credential Guard] (https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] verranno aggiunte a **Configurazione del dispositivo** > **Profili** > **Endpoint Protection**. Verranno aggiunte le impostazioni seguenti: 
+Nuove impostazioni [Windows Defender Credential Guard] (https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] verranno aggiunte a **Configurazione del dispositivo** > **Profili** > **Endpoint Protection**. Verranno aggiunte le impostazioni seguenti:
 
 - Livello di sicurezza della piattaforma: specificare se abilitare il livello di sicurezza della piattaforma al successivo riavvio. La sicurezza basata sulla virtualizzazione richiede l'avvio protetto. La sicurezza basata sulla virtualizzazione può essere abilitata facoltativamente con l'uso di protezioni di accesso diretto alla memoria (DMA). Le protezioni DMA richiedono supporto hardware e verranno abilitate solo nei dispositivi configurati correttamente.
-- Sicurezza basata sulla virtualizzazione: specificare se abilitare la sicurezza basata sulla virtualizzazione al successivo riavvio. 
-- Windows Defender Credential Guard: attivare Credential Guard con la sicurezza basata sulla virtualizzazione per proteggere le credenziali al successivo riavvio quando sono abilitati il livello di sicurezza della piattaforma con avvio protetto e la sicurezza basata sulla virtualizzazione. Le opzioni disponibili sono **Disabilitato**, **Abilitato con blocco UEFI**, **Abilitato senza blocco** e **Non configurato**. 
+- Sicurezza basata sulla virtualizzazione: specificare se abilitare la sicurezza basata sulla virtualizzazione al successivo riavvio.
+- Windows Defender Credential Guard: attivare Credential Guard con la sicurezza basata sulla virtualizzazione per proteggere le credenziali al successivo riavvio quando sono abilitati il livello di sicurezza della piattaforma con avvio protetto e la sicurezza basata sulla virtualizzazione. Le opzioni disponibili sono **Disabilitato**, **Abilitato con blocco UEFI**, **Abilitato senza blocco** e **Non configurato**.
   - L'opzione "Disabilitato" disattiva Credential Guard in modalità remota se attivato precedentemente tramite l'opzione "Abilitato senza blocco".
 
   - L'opzione "Abilitato con blocco UEFI" garantisce che Credential Guard non possa essere disabilitato con una chiave del Registro di sistema o tramite Criteri di gruppo. Per disabilitare Credential Guard dopo aver usato questa impostazione, è necessario impostare Criteri di gruppo su "Disabilitato" e rimuovere la funzionalità di sicurezza da ogni computer, con un utente fisicamente presente, per cancellare la configurazione mantenuta in UEFI. Credential Guard rimane abilitato fino a quando è presente la configurazione UEFI.
@@ -208,7 +208,7 @@ Sarà possibile abilitare le impostazioni di sicurezza sui dispositivi Windows 1
 
 ### <a name="new-printer-settings-for-education-profiles----1308900---"></a>Nuove impostazioni della stampante per i profili di formazione <!-- 1308900 -->
 
-Per i profili di formazione, le nuove impostazioni saranno disponibili nella categoria **Stampanti**: **Stampanti**, **Stampante predefinita**, **Aggiungi nuove stampanti**. 
+Per i profili di formazione, le nuove impostazioni saranno disponibili nella categoria **Stampanti**: **Stampanti**, **Stampante predefinita**, **Aggiungi nuove stampanti**.
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>Configurazione del provisioning delle app iOS <!-- 1581650 -->
 Sarà possibile assegnare i profili di provisioning delle app iOS per impedire la scadenza delle app includendo o escludendo i gruppi di sicurezza.
@@ -265,5 +265,3 @@ Non sono disponibili notifiche attive.
 
 ### <a name="see-also"></a>Vedere anche
 Per informazioni dettagliate sugli ultimi sviluppi, vedere [Novità di Microsoft Intune](whats-new.md).
-
-

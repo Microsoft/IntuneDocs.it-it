@@ -1,24 +1,24 @@
 ---
 title: Creare profili di dispositivo in Microsoft Intune - Azure | Microsoft Docs
-description: Aggiungere o configurare un profilo di dispositivo in Microsoft Intune eseguendo la selezione del tipo di piattaforma e la configurazione delle impostazioni nel portale di Azure
-keywords: 
+description: Aggiungere o configurare un profilo di dispositivo in Microsoft Intune, incluse la selezione del tipo di piattaforma e la configurazione delle impostazioni nel portale di Azure.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c40fd13a46a61ec0ee05efba7ece7653f5de90ca
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e5070052c0d4cce3cfd81a7bae259bc7dfb22e7f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creare un profilo di dispositivo in Microsoft Intune
 
@@ -27,12 +27,12 @@ ms.lasthandoff: 03/05/2018
 ## <a name="create-the-profile"></a>Creare il profilo
 1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi** e cercare **Microsoft Intune**.
 
-2. In **Microsoft Intune** selezionare **Configurazione del dispositivo**, selezionare **Profili** e quindi fare clic su **Crea profilo**.
+2. In **Microsoft Intune** selezionare **Configurazione del dispositivo** e quindi **Profili**. Selezionare quindi **Crea profilo**.
 
-3. Immettere le seguenti proprietà: 
+3. Immettere le seguenti proprietà:
 
     - **Nome**: immettere un nome descrittivo per il nuovo profilo.
-    - **Descrizione**: facoltativa ma consigliata. Immettere una descrizione del profilo.
+    - **Descrizione:** immettere una descrizione per il profilo. Facoltativa, ma consigliata.
     - **Piattaforma**: selezionare il tipo di piattaforma:  
 
         - **Android**
@@ -57,11 +57,11 @@ ms.lasthandoff: 03/05/2018
         -  [Education settings](education-settings-configure.md) (Impostazioni di Education)
         -  [Custom settings](custom-settings-configure.md) (Impostazioni personalizzate)
 
-    ![Immettere le impostazioni per creare un profilo di dispositivo](./media/create-device-profile.png)
+    ![Screenshot di Crea profilo](./media/create-device-profile.png)
 
-4. Al termine selezionare **Crea**. 
+4. Al termine selezionare **Crea**.
 
-Il profilo viene creato e quindi visualizzato nell'elenco. Per assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
+Il profilo viene creato e quindi visualizzato nell'elenco.
 
 
 ## <a name="next-steps"></a>Passaggi successivi

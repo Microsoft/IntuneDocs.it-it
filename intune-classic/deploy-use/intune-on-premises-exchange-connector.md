@@ -1,25 +1,25 @@
 ---
 title: Exchange Connector per EAS locale
 description: Usare lo strumento Connector per consentire la comunicazione tra la console di amministrazione di Intune ed Exchange Server locale per Exchange ActiveSync MDM.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb627843879a784eb4f597839058f54f9744542f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 96d61ccae4e70a3e99da70a0ef19218ddbd218f3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Installare Intune On-premises Exchange Connector
 
@@ -62,7 +62,7 @@ Nella tabella seguente sono elencati i requisiti per il computer in cui viene in
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Scaricare il pacchetto di installazione di On-premises Exchange Connector
 
-1. In un sistema operativo Windows Server supportato da On-premises Exchange Connector aprire la [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) (https://manage.microsoft.com) con un account utente che è un amministratore nel tenant Exchange e dispone di una licenza per l'uso di Exchange Server.
+1. In un sistema operativo Windows Server supportato per On-premises Exchange Connector aprire la [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) (https://manage.microsoft.com)) con un account utente di un amministratore del tenant di Exchange che abbia una licenza per l'uso di Exchange Server.
 ![Aprire Configura connessione Exchange](../media/ExchangeConnector.gif)
 
 2.  Nel riquadro dei collegamenti alle aree di lavoro scegliere **Amministrazione**>**Gestione dei dispositivi mobili** > **Microsoft Exchange**>**Configura connessione Exchange**.

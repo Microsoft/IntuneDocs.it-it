@@ -1,23 +1,22 @@
 ---
-title: "Creare criteri di conformità per i dispositivi Windows in Microsoft Intune"
-titleSuffix: 
-description: "Creare criteri di conformità per i dispositivi Windows in Microsoft Intune in modo da poter specificare i requisiti che un dispositivo deve soddisfare per essere conforme."
-keywords: 
+title: Creare criteri di conformità per i dispositivi Windows in Microsoft Intune- Azure | Microsoft Docs
+description: Creare criteri di conformità per i dispositivi Windows in Microsoft Intune in modo da poter specificare i requisiti che un dispositivo deve soddisfare per essere conforme.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi Windows in Intune
 
@@ -177,7 +176,7 @@ Per informazioni su come funziona il servizio di attestazione dell'integrità, v
 
 - **Versione minima richiesta del sistema operativo:** supportata in Windows 8.1 e Windows 10.
 
-Qui è necessario specificare il numero major.minor.build. Il numero di versione deve corrispondere alla versione restituita dal comando ```winver```.
+Qui è necessario specificare il numero major.minor.build.CU. Il numero di versione deve corrispondere alla versione restituita dal comando ```winver```.
 
 Quando un dispositivo ha una versione precedente rispetto alla versione del sistema operativo specificata, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e dopo l'aggiornamento potrà accedere alle risorse aziendali.
 

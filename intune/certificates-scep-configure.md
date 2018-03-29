@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: df77b63cbf953df030e5d0e597c0940f083ffb79
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>Configurare e gestire i certificati SCEP con Microsoft Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -153,7 +153,13 @@ Per configurare la CA in modo che consenta al richiedente di specificare il peri
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Passaggio 3: configurare i prerequisiti nel server NDES
 In questa attività sarà possibile:
 
+<<<<<<< HEAD
+
+- Aggiungere NDES a Windows Server e configurare IIS per supportare NDES
+- Aggiungere l'account del servizio NDES al gruppo IIS_IUSR
+- Impostare SPN per l'account del servizio NDES =======
 -   Aggiungere NDES a Windows Server e configurare IIS per supportare NDES
+>>>>>>> elemento padre di 3365d47d4... Unire il ramo 'versione-intune-1803' al master
 
 -   Aggiungere l'account del servizio NDES al gruppo IIS_IUSR
 

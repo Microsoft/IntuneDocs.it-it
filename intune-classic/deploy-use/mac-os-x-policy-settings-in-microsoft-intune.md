@@ -1,25 +1,25 @@
 ---
 title: Impostazioni dei criteri di Mac OS X
-description: "Intune offre una gamma di impostazioni generali predefinite che è possibile configurare nei dispositivi Mac OS X. È anche possibile usare lo strumento Apple Configurator per creare impostazioni personalizzate non disponibili in Intune."
-keywords: 
+description: Intune offre una gamma di impostazioni generali predefinite che è possibile configurare nei dispositivi Mac OS X. È anche possibile usare lo strumento Apple Configurator per creare impostazioni personalizzate non disponibili in Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18f05219d002f0998e25671e39f1e71449b7b6c7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 873b1041ec7f5a993195e4a988580fd88100b282
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di configurazione di Mac OS X in Microsoft Intune
 
@@ -63,7 +63,7 @@ Nell'**Elenco app conformi &amp; non conformi per Mac OS X** abilitare **Imposta
 |----------------|---------------|
 |**Segnala la mancata conformità quando gli utenti installano le app elencate**|Visualizza le app Mac OS X che gli utenti non sono autorizzati a installare. Se gli utenti installano una qualsiasi di queste app, sarà registrata nel **Report app non conformi**.|
 |**Segnala la mancata conformità quando gli utenti installano app non elencate**|Elenca le app Mac OS X che gli utenti sono autorizzati a installare. Se gli utenti installano una qualsiasi altra app, sarà registrata nel **Report app non conformi**.|
-|**Aggiungi**|Aggiungere un'app all'elenco selezionato. Specificare il nome scelto, l'autore dell'app (facoltativo) e l'ID bundle dell'app. **Suggerimento:** per trovare l'ID bundle di un'app, usare i passaggi seguenti in un computer Mac in cui è installata l'app:<ol><li>Aprire la cartella in cui è installata l'app, ad esempio **/Applications**.</li><li>Selezionare il bundle *&lt;Nome app&gt;***.app** e scegliere **Show Package Contents** (Visualizza contenuto pacchetto).</li><li>Aprire il file **Info.plist**.</li><li>Controllare il valore associato alla chiave **CFBundleIdentifier**.</li></ol>Il formato per ID bundle è **com.contoso.nomeapp**.|
+|**Aggiungi**|Aggiungere un'app all'elenco selezionato. Specificare il nome scelto, l'autore dell'app (facoltativo) e l'ID bundle dell'app. **Suggerimento:** per trovare l'ID bundle di un'app, usare i passaggi seguenti in un computer Mac in cui è installata l'app:<ol><li>Aprire la cartella in cui è installata l'app, ad esempio **/Applications**.</li><li>Selezionare il bundle *&lt;Nome app&gt;***.app* e scegliere **Show Package Contents** (Visualizza contenuto pacchetto).</li><li>Aprire il file **Info.plist**.</li><li>Controllare il valore associato alla chiave **CFBundleIdentifier**.</li></ol>Il formato per ID bundle è **com.contoso.nomeapp**.|
 |**Importa app**|Importare un elenco di app specificate in un file con valori separati da virgola. Nel file usare il formato: nome dell'app, autore, ID bundle dell'app.|
 |**Modifica**|Modificare il nome, l'autore e l'ID bundle dell'app selezionata.|
 |**Eliminazione**|Eliminare l'app selezionata dall'elenco.|

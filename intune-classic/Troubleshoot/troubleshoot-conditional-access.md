@@ -1,25 +1,25 @@
 ---
 title: Risolvere i problemi di accesso condizionale
 description: Operazioni da eseguire quando gli utenti non riescono ad accedere alle risorse usando l'accesso condizionale di Intune.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Risolvere i problemi di accesso condizionale
 
@@ -118,7 +118,7 @@ Se le procedure descritte non consentono di risolvere il problema riscontrato, p
 ### <a name="exchange-connector-logs"></a>Log di Exchange Connector
 
 #### <a name="general-log-information"></a>Informazioni generali sui log
-Per visualizzare i log di Exchange Connector, usare lo strumento Visualizzatore di tracce dei servizi (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Per questo strumento è necessario scaricare l'SDK di Windows Server.
+Per visualizzare i log di Exchange Connector, usare lo strumento Visualizzatore di tracce dei servizi (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx). Per questo strumento è necessario scaricare l'SDK di Windows Server.
 
 >[!NOTE]
 >I log si trovano in C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Sono contenuti in una serie di 30 file di log che inizia da *Connector0.log* e termina con *Connector29.log*. Il rollover da un log all'altro avviene nel momento in cui si accumulano 10 MB di dati in un log. Dopo aver generato il log Connector29, il meccanismo riparte dal log Connector0, sovrascrivendo i file di log precedenti.

@@ -1,23 +1,23 @@
 ---
 title: Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
-titleSuffix: 
-description: "Informazioni sulle opzioni di Intune per il controllo di impostazioni e funzionalità nei dispositivi iOS."
-keywords: 
+titleSuffix: ''
+description: Informazioni sulle opzioni di Intune per il controllo di impostazioni e funzionalità nei dispositivi iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
 
@@ -40,7 +40,6 @@ Questa opzione si applica anche alle impostazioni accessibili dall'app delle imp
 - **Uso dell'opzione di cancellazione di tutti i contenuti e tutte le impostazioni sul dispositivo (solo con supervisione)** - Consente all'utente di usare l'opzione di cancellazione di tutti i contenuti e le impostazioni del dispositivo.
 - **Modifica del nome dispositivo (solo con supervisione)** - Consente all'utente di modificare il nome del dispositivo.
 - **Modifica delle impostazioni di notifica (solo con supervisione)** - Consente all'utente di modificare le impostazioni di notifica del dispositivo.
-- **Modifica dello sfondo (solo con supervisione)** - Consente all'utente di cambiare lo sfondo del dispositivo.
 - **Modifica delle impostazioni di attendibilità delle app aziendali (solo con supervisione)** - Consente all'utente di scegliere di considerare attendibili le app che non sono state scaricate dall'App Store.
 - **Modifiche al profilo di configurazione (solo con supervisione)** - Consente all'utente di installare profili di configurazione.
 - **Blocco attivazione (solo con supervisione)** - Abilita il blocco attivazione su dispositivi iOS con supervisione.
@@ -74,7 +73,6 @@ La modalità con supervisione iOS può essere abilitata solo durante l'installaz
 - Tasti di scelta rapida 
 - Modifica del passcode 
 - Modifica di nomi di dispositivo 
-- Modifica dello sfondo 
 - Download automatici delle app 
 - Modifica dell'attendibilità delle applicazioni enterprise 
 - Apple Music 

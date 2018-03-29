@@ -1,22 +1,22 @@
 ---
 title: Informazioni su Android for Work
-description: "Intune gestisce Android for Work per offrire funzionalità di gestione aggiuntive e privacy quando gli utenti usano i dispositivi Android personali per il lavoro."
-keywords: 
+description: Intune gestisce Android for Work per offrire funzionalità di gestione aggiuntive e privacy quando gli utenti usano i dispositivi Android personali per il lavoro.
+keywords: ''
 author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: d7939a20e9729487ce5824ba3f67cd84ec970032
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b6dd287bfd610d5c35f0bfeadb5fcaeae6dddf3c
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-android-for-work-devices-with-intune"></a>Gestire dispositivi Android for Work con Intune
 

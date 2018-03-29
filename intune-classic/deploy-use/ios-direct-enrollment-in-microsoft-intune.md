@@ -1,25 +1,25 @@
 ---
 title: Registrazione diretta per i dispositivi iOS
-description: "Usare lo strumento Apple Configurator per registrare direttamente i dispositivi iOS di proprietà dell'azienda con un criterio predefinito mediante connessione USB a un computer Mac."
-keywords: 
+description: Usare lo strumento Apple Configurator per registrare direttamente i dispositivi iOS di proprietà dell'azienda con un criterio predefinito mediante connessione USB a un computer Mac.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: db07c6c6aa98d880bcc9f32204dffddebe6f45b4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 79f720af293b6062e140fac9341f97a55bf598fe
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>Registrare direttamente i dispositivi iOS con Apple Configurator
 
@@ -88,6 +88,6 @@ Durante la registrazione diretta dei dispositivi iOS, è possibile registrare un
 
     6.  Quando la casella **Profilo installato** conferma che il profilo è **Installato**, scegliere **Fine**.
 
-9.  Nel dispositivo iOS aprire la finestra **Impostazioni** e passare a **Generale** &gt; **Gestione dei dispositivi** &gt; **Profilo di gestione**. Verificare che l'installazione del profilo è inclusa nell'elenco e controllare le restrizioni dei criteri iOS e le app installate. La visualizzazione delle restrizioni dei criteri e delle app nel dispositivo può impiegare fino a 10 minuti.
+9.  Nel dispositivo iOS aprire la finestra **Impostazioni** e passare a **Generale** &gt; **Gestione dei dispositivi** &gt; **Management Profile** (Profilo di gestione). Verificare che l'installazione del profilo è inclusa nell'elenco e controllare le restrizioni dei criteri iOS e le app installate. La visualizzazione delle restrizioni dei criteri e delle app nel dispositivo può impiegare fino a 10 minuti.
 
 10.  Distribuire i dispositivi. Il dispositivo iOS viene ora registrato con Intune e gestito.
