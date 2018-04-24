@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9785078341c8e3469067042a3f3e8588f29c3a3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di iOS in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune offre una gamma di impostazioni generali predefinite che è possibile configurare nei dispositivi iOS. È anche possibile usare lo strumento Apple Configurator per creare impostazioni personalizzate non disponibili in Intune.
 
@@ -45,20 +45,22 @@ Se l'impostazione che si sta cercando non viene visualizzata in questo argomento
 ### <a name="security-settings"></a>Impostazioni di sicurezza
 Tutte le impostazioni si applicano a iOS 8.0 e versioni successive.
 
-|Nome impostazione|Dettagli|
-|----------------|-------|
-|**Richiedi una password per sbloccare i dispositivi mobili**|Specificare se l'utente deve inserire una password per accedere al proprio dispositivo.|
-|**Tipo di password richiesto**|Specificare il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.|
-|**Numero di caratteri complessi richiesti nella password**|Specificare il numero di simboli, ad esempio **#** o **@**, che è necessario includere nella password.|
-|**Lunghezza minima password**|Specificare il numero minimo di caratteri per la password.|
-|**Consenti password semplici**|Consentire l'uso di password semplici come **0000** e **1234**.|
-|**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|Specificare il numero di tentativi di accesso non riusciti prima che questa impostazione cancelli il dispositivo.|
-|**Minuti di inattività prima che venga richiesta la password**<sup>1</sup>|Specificare per quanto tempo il dispositivo può rimanere inattivo prima che l'utente debba immettere di nuovo la password.|
-|**Scadenza password (giorni)**|Specificare il numero di giorni prima che sia necessario modificare la password del dispositivo.|
-|**Ricorda cronologia password**|Specificare se l'utente può scegliere password già usate in precedenza.|
-|**Ricorda cronologia password** – **Impedisci riutilizzo delle password precedenti**|Specificare il numero di password usate in precedenza che il dispositivo deve ricordare.|
-|**Minuti di inattività prima dello spegnimento dello schermo**<sup>1</sup>|Specifica il numero di minuti prima dello spegnimento dello schermo del dispositivo.|
-|**Consenti sblocco tramite impronta digitale**|Consente di sbloccare il dispositivo con un'impronta digitale.|
+
+|                                           Nome impostazione                                            |                                                            Dettagli                                                             |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Richiedi una password per sbloccare i dispositivi mobili</strong>                    |                        Specificare se l'utente deve inserire una password per accedere al proprio dispositivo.                        |
+|                              <strong>Tipo di password richiesto</strong>                              |                   Specificare il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.                    |
+|                <strong>Numero di caratteri complessi richiesti nella password</strong>                 | Specificare il numero di simboli, ad esempio <strong>#</strong> o <strong>@</strong>, che è necessario includere nella password. |
+|                             <strong>Lunghezza minima password</strong>                              |                                   Specificare il numero minimo di caratteri per la password.                                    |
+|                              <strong>Consenti password semplici</strong>                              |                          Consentire l'uso di password semplici come <strong>0000</strong> e <strong>1234</strong>.                          |
+|     <strong>Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo</strong>      |                       Specificare il numero di tentativi di accesso non riusciti prima che questa impostazione cancelli il dispositivo.                        |
+|          <strong>Minuti di inattività prima che venga richiesta la password</strong><sup>1</sup>           |                   Specificare per quanto tempo il dispositivo può rimanere inattivo prima che l'utente debba immettere di nuovo la password.                    |
+|                            <strong>Scadenza password (giorni)</strong>                            |                             Specificare il numero di giorni prima che sia necessario modificare la password del dispositivo.                             |
+|                            <strong>Ricorda cronologia password</strong>                             |                           Specificare se l'utente può scegliere password già usate in precedenza.                           |
+| <strong>Ricorda cronologia password</strong> – <strong>Impedisci riutilizzo delle password precedenti</strong> |                           Specificare il numero di password usate in precedenza che il dispositivo deve ricordare.                           |
+|            <strong>Minuti di inattività prima dello spegnimento dello schermo</strong><sup>1</sup>             |                             Specifica il numero di minuti prima dello spegnimento dello schermo del dispositivo.                             |
+|                             <strong>Consenti sblocco tramite impronta digitale</strong>                             |                                        Consente di sbloccare il dispositivo con un'impronta digitale.                                         |
+
 <sup>1</sup> Nei dispositivi iOS, se le impostazioni **Minuti di inattività prima dello spegnimento dello schermo** e **Minuti di inattività prima che venga richiesta la password** sono configurate, vengono applicate in sequenza. Ad esempio, se si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo 5 minuti e il dispositivo viene bloccato dopo altri 5 minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio, il dispositivo viene bloccato 5 minuti dopo che l'utente spegne lo schermo.
 
 ### <a name="system-settings"></a>Impostazioni di sistema
@@ -180,25 +182,26 @@ I criteri contenenti le impostazioni per le app conformi e non conformi devono e
 
 ### <a name="kiosk-mode-settings"></a>Impostazioni della modalità tutto schermo
 
-|Nome impostazione|Dettagli|
-|----------------|--------------------|
-|**Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo**|Scegliere **Sfoglia**, quindi specificare l'app gestita o un'app di uno Store che potrà essere eseguita quando il dispositivo è in modalità tutto schermo. Non sarà possibile eseguire altre applicazioni nel dispositivo. Per informazioni, vedere "Come specificare gli URL negli App Store" più avanti in questo argomento.|
-|**Consenti tocco**|Abilitare o disabilitare il touchscreen nel dispositivo.|
-|**Consenti rotazione schermo**|Abilitare o disabilitare la modifica dell'orientamento dello schermo quando si ruota il dispositivo.|
-|**Consenti pulsanti volume**|Abilitare o disabilitare l'uso dei pulsanti del volume nel dispositivo.|
-|**Consenti commutatore suoneria**|Abilitare o disabilitare la suoneria nel dispositivo.|
-|**Consenti pulsante riattivazione sospensione schermo**|Abilitare o disabilitare il pulsante di riattivazione sospensione dello schermo del dispositivo.|
-|**Consenti blocco automatico**|Abilitare o disabilitare il blocco automatico del dispositivo.|
-|**Abilita audio mono**|Abilitare o disabilitare l'impostazione di accessibilità **Audio mono**.|
-|**Abilita voice over**|Abilitare o disabilitare l'impostazione di **Voice over** per la lettura a voce alta del testo sullo schermo del dispositivo.|
-|**Abilita regolazioni voice over**|Abilitare o disabilitare le regolazioni di voice over che consentono di modificare la funzione Voice over, ad esempio la velocità con cui viene letto il testo visualizzato sullo schermo.|
-|**Abilita zoom**|Abilitare o disabilitare l'impostazione di accessibilità **Zoom** che consente di usare le funzionalità di tocco per ingrandire la visualizzazione del dispositivo.|
-|**Abilita regolazioni zoom**|Abilitare o disabilitare le regolazioni dello zoom che consentono di modificare la funzione di zoom.|
-|**Abilita inversione colori**|Abilitare o disabilitare l'impostazione di accessibilità **Inverti colori** che consente di regolare la visualizzazione per gli utenti con problemi visivi.|
-|**Abilita regolazioni inversione colori**|Abilitare o disabilitare le regolazioni dell'inversione colori che consentono di modificare la funzione Inverti colori.|
-|**Abilita tocco per l'accesso facilitato**|Abilitare o disabilitare l'impostazione di accessibilità **Tocco per l'accesso facilitato** che aiuta l'utente a eseguire sullo schermo movimenti che altrimenti risulterebbero difficili da eseguire.|
-|**Abilita regolazioni del tocco per l'accesso facilitato**|Abilitare o disabilitare le regolazioni del tocco per l'accesso facilitato che consentono all'utente di modificare la funzione Tocco per l'accesso facilitato.|
-|**Abilita selezione comandi vocali**|Abilitare o disabilitare l'impostazione di accessibilità **Abilita selezione comandi vocali** che consente di leggere a voce alta il testo selezionato.|
+|                                            Nome impostazione                                            |                                                                                                                                      Dettagli                                                                                                                                       |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Selezionare un'app gestita che potrà essere eseguita quando il dispositivo è in modalità tutto schermo</strong> | Scegliere <strong>Sfoglia</strong>, quindi specificare l'app gestita o un'app di uno Store che potrà essere eseguita quando il dispositivo è in modalità tutto schermo. Non sarà possibile eseguire altre applicazioni nel dispositivo. Per informazioni, vedere "Come specificare gli URL negli App Store" più avanti in questo argomento. |
+|                                    <strong>Consenti tocco</strong>                                    |                                                                                                                  Abilitare o disabilitare il touchscreen nel dispositivo.                                                                                                                  |
+|                               <strong>Consenti rotazione schermo</strong>                               |                                                                                                Abilitare o disabilitare la modifica dell'orientamento dello schermo quando si ruota il dispositivo.                                                                                                 |
+|                               <strong>Consenti pulsanti volume</strong>                                |                                                                                                           Abilitare o disabilitare l'uso dei pulsanti del volume nel dispositivo.                                                                                                           |
+|                                <strong>Consenti commutatore suoneria</strong>                                |                                                                                                             Abilitare o disabilitare la suoneria nel dispositivo.                                                                                                              |
+|                          <strong>Consenti pulsante riattivazione sospensione schermo</strong>                           |                                                                                                           Abilitare o disabilitare il pulsante di riattivazione sospensione dello schermo del dispositivo.                                                                                                            |
+|                                  <strong>Consenti blocco automatico</strong>                                  |                                                                                                                 Abilitare o disabilitare il blocco automatico del dispositivo.                                                                                                                 |
+|                                 <strong>Abilita audio mono</strong>                                 |                                                                                                      Abilitare o disabilitare l'impostazione di accessibilità <strong>Audio mono</strong>.                                                                                                      |
+|                                 <strong>Abilita voice over</strong>                                 |                                                                               Abilitare o disabilitare l'impostazione di <strong>Voice over</strong> per la lettura a voce alta del testo sullo schermo del dispositivo.                                                                                |
+|                           <strong>Abilita regolazioni voice over</strong>                           |                                                                  Abilitare o disabilitare le regolazioni di voice over che consentono di modificare la funzione Voice over, ad esempio la velocità con cui viene letto il testo visualizzato sullo schermo.                                                                   |
+|                                    <strong>Abilita zoom</strong>                                    |                                                                         Abilitare o disabilitare l'impostazione di accessibilità <strong>Zoom</strong> che consente di usare le funzionalità di tocco per ingrandire la visualizzazione del dispositivo.                                                                         |
+|                              <strong>Abilita regolazioni zoom</strong>                              |                                                                                                  Abilitare o disabilitare le regolazioni dello zoom che consentono di modificare la funzione di zoom.                                                                                                  |
+|                               <strong>Abilita inversione colori</strong>                                |                                                                    Abilitare o disabilitare l'impostazione di accessibilità <strong>Inverti colori</strong> che consente di regolare la visualizzazione per gli utenti con problemi visivi.                                                                    |
+|                         <strong>Abilita regolazioni inversione colori</strong>                          |                                                                                         Abilitare o disabilitare le regolazioni dell'inversione colori che consentono di modificare la funzione Inverti colori.                                                                                         |
+|                              <strong>Abilita tocco per l'accesso facilitato</strong>                               |                                                     Abilitare o disabilitare l'impostazione di accessibilità <strong>Tocco per l'accesso facilitato</strong> che aiuta l'utente a eseguire sullo schermo movimenti che altrimenti risulterebbero difficili da eseguire.                                                     |
+|                        <strong>Abilita regolazioni del tocco per l'accesso facilitato</strong>                         |                                                                                       Abilitare o disabilitare le regolazioni del tocco per l'accesso facilitato che consentono all'utente di modificare la funzione Tocco per l'accesso facilitato.                                                                                       |
+|                              <strong>Abilita selezione comandi vocali</strong>                              |                                                                        Abilitare o disabilitare l'impostazione di accessibilità <strong>Abilita selezione comandi vocali</strong> che consente di leggere a voce alta il testo selezionato.                                                                         |
+
 > [!NOTE]
 > Le note seguenti sono valide per le impostazioni della modalità tutto schermo per i dispositivi iOS:
 >
@@ -349,8 +352,6 @@ Usare le informazioni riportate in questo elenco per identificare il nome, l'aut
 ,com.apple.Passbook,Wallet,Apple
 ,com.apple.Bridge,Watch,Apple
 ,com.apple.weather,Weather,Apple
-
-
 ```
 
 

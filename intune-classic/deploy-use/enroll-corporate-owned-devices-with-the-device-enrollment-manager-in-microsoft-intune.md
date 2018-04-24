@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0f9ecb8cf16d8c344ea595c53ab91c9b1f00c90e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4973e896109589a91891545bbf6db6ca6df45aad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Registrare i dispositivi di proprietà dell'azienda con il manager di registrazione dispositivi in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Le organizzazioni possono usare Intune per gestire un numero elevato di dispositivi mobili con un singolo account utente. L'account del *manager di registrazione dispositivi* (DEM, Device Enrollment Manager) è un account utente speciale che consente di registrare fino a 1.000 dispositivi. Gli utenti esistenti vengono aggiunti all'account del manager di registrazione dispositivi per rendere disponibili le funzionalità DEM. Ogni dispositivo registrato usa una singola licenza. Si consiglia di usare i dispositivi registrati tramite tale account come dispositivi condivisi, ovvero senza affinità utente, piuttosto che come dispositivi personali ("BYOD").  
 
@@ -67,22 +67,22 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
 
 ## <a name="add-a-device-enrollment-manager"></a>Aggiungere un manager di registrazione dispositivi
 
-1.  Assicurarsi che l'utente che si vuole aggiungere all'account del manager di registrazione dispositivi sia già presente. Se è necessario aggiungere l'utente, accedere al [Portale di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) e seguire la procedura descritta in [Aggiungere utenti singolarmente o in blocco a Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+1. Assicurarsi che l'utente che si vuole aggiungere all'account del manager di registrazione dispositivi sia già presente. Se è necessario aggiungere l'utente, accedere al [Portale di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) e seguire la procedura descritta in [Aggiungere utenti singolarmente o in blocco a Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-2.  Accedere alla [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) con le credenziali di amministratore.
+2. Accedere alla [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) con le credenziali di amministratore.
 
-3.  Nel riquadro di spostamento scegliere **Amministrazione**, passare a **Gestione amministratori** e selezionare **Manager di registrazione dispositivi**. Verrà visualizzata la pagina **Manager di registrazione dispositivi**.
+3. Nel riquadro di spostamento scegliere **Amministrazione**, passare a **Gestione amministratori** e selezionare **Manager di registrazione dispositivi**. Verrà visualizzata la pagina **Manager di registrazione dispositivi**.
 
-4.  Scegliere **Aggiungi...**. Verrà visualizzata la finestra di dialogo **Aggiungi manager di registrazione dispositivi** .
+4. Scegliere **Aggiungi...**. Verrà visualizzata la finestra di dialogo **Aggiungi manager di registrazione dispositivi** .
 
-5.  Immettere l'**ID utente** dell'account Intune e quindi scegliere **OK**.
+5. Immettere l'**ID utente** dell'account Intune e quindi scegliere **OK**.
 
-    L'utente manager di registrazione dispositivi può ora registrare i dispositivi mobili usando la stessa procedura usata da un utente finale per uno scenario BYOD nel portale aziendale. L'utente finale responsabile può installare l'app Portale aziendale e registrare il dispositivo usando le proprie credenziali DEM su un massimo di 1000 dispositivi. Per la procedura di registrazione dell'utente finale per ogni piattaforma, vedere:
+   L'utente manager di registrazione dispositivi può ora registrare i dispositivi mobili usando la stessa procedura usata da un utente finale per uno scenario BYOD nel portale aziendale. L'utente finale responsabile può installare l'app Portale aziendale e registrare il dispositivo usando le proprie credenziali DEM su un massimo di 1000 dispositivi. Per la procedura di registrazione dell'utente finale per ogni piattaforma, vedere:
 
-  - [Registrare il dispositivo iOS in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
-  - [Registrare il dispositivo macOS in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [Registrare il dispositivo Android in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
-  - [Registrare il dispositivo Windows in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+   - [Registrare il dispositivo iOS in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+   - [Registrare il dispositivo macOS in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+   - [Registrare il dispositivo Android in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+   - [Registrare il dispositivo Windows in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Eliminare un manager di registrazione dispositivi da Intune
 

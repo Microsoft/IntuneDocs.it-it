@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e11ae063bc2cc302af238ab9062da82c6b6c30c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 058a44d6ef97cbc35786312461c6077bc2feaf3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>Guida introduttiva: Semplificare la configurazione della posta elettronica nei dispositivi mobili
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune aiuta le aziende a risparmiare tempo e risorse consentendo di distribuire profili di posta elettronica, oltre che VPN e WiFi, ai dispositivi mobili Windows, iOS e Android gestiti dal servizio Intune. La configurazione automatica dei profili di posta elettronica può migliorare notevolmente l'esperienza d'uso e aumentare il livello di soddisfazione riducendo al tempo stesso i costi per il supporto tecnico.
 

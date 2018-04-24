@@ -1,28 +1,28 @@
 ---
 title: Configurare la gestione dei dispositivi Windows con Microsoft Intune
 description: Abilitare la gestione di dispositivi mobili (MDM) per i dispositivi Windows con Microsoft Intune.
-keywords: 
+keywords: ''
 author: NathBarn
 manager: angrobe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 44559572a048a0ad8e79d6fdac837f0c71a42646
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fb2d724cc87ffdc506eda8d5ea2330ab9aacd3e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-windows-device-management"></a>Configurare la gestione dei dispositivi Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Questo argomento offre agli amministratori IT informazioni utili per semplificare la registrazione di Windows per gli utenti.  I dispositivi Windows possono essere registrati senza ulteriori passaggi, ma è possibile semplificare la registrazione per gli utenti.
 
@@ -35,15 +35,15 @@ La semplificazione della registrazione dei dispositivi Windows dipende da due fa
 |**Windows 10**|[Registrazione automatica](#enable-windows-10-automatic-enrollment) |[Registrazione utente](#enable-windows-enrollment-without-automatic-enrollment)|
 |**Versioni precedenti di Windows**|[Registrazione utente](#enable-windows-enrollment-without-automatic-enrollment)|[Registrazione utente](#enable-windows-enrollment-without-automatic-enrollment)|
 
-[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>Abilitare la registrazione di Windows senza la registrazione automatica
-È possibile consentire agli utenti di registrare i propri dispositivi senza la registrazione automatica di Azure AD Premium. Una volta assegnate le licenze, gli utenti possono effettuare la registrazione dopo l'aggiunta dell'account aziendale ai dispositivi personali oppure includendo i loro dispositivi di proprietà dell'azienda in Azure Active Directory. La creazione di un alias DNS (tipo di record CNAME) consente agli utenti di registrare facilmente i propri dispositivi. Se si creano record di risorse DNS CNAME, gli utenti potranno connettersi e registrarsi in Intune senza dover immettere il nome del server Intune.
+È possibile consentire agli utenti di registrare i propri dispositivi senza la registrazione automatica di Azure AD Premium. Una volta assegnate le licenze, gli utenti possono effettuare la registrazione dopo l'aggiunta dell'account aziendale ai dispositivi personali oppure includendo i loro dispositivi di proprietà dell'azienda in Azure Active Directory. La creazione di un alias DNS (tipo di record CNAME) semplifica la registrazione dei dispositivi per gli utenti. Se si creano record di risorse DNS CNAME, gli utenti potranno connettersi e registrarsi in Intune senza dover immettere il nome del server Intune.
 
 **Passaggio 1: Creare CNAME** (facoltativo)<br>
-Creare record di risorse DNS CNAME per il dominio aziendale. Ad esempio, se il sito Web aziendale è contoso.com, si creerà un CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
+Creare record di risorse DNS CNAME per il dominio aziendale. Ad esempio, se il sito Web della società è contoso.com, si creerà un record CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
 
-Anche se la creazione di record CNAME DNS è facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record CNAME, viene richiesto all'utente di immettere manualmente il nome del server MDM, enrollment.manage.microsoft.com.
+Anche se la creazione di record CNAME DNS è facoltativa, i record CNAME semplificano la registrazione per gli utenti. Se non viene trovato alcun record di registrazione CNAME, agli utenti viene richiesto di immettere manualmente il nome del server MDM, enrollment.manage.microsoft.com.
 
 Se è presente più di un dominio verificato, creare un record CNAME per ciascun dominio. Il record di risorse CNAME deve contenere le informazioni seguenti:
 

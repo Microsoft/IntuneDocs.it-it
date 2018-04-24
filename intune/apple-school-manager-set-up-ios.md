@@ -1,29 +1,29 @@
 ---
 title: Configurare la registrazione al programma Apple School Manager per i dispositivi iOS
 titlesuffix: Microsoft Intune
-description: "Informazioni su come configurare la registrazione al programma Apple School Manager per i dispositivi iOS di proprietà dell'azienda con Intune."
-keywords: 
+description: Informazioni su come configurare la registrazione al programma Apple School Manager per i dispositivi iOS di proprietà dell'azienda con Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: afcca0cc1f7786f468856f2aacefc0b8168b4934
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configurare la registrazione di dispositivi iOS con Apple School Manager
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Differenze di interfaccia utente temporanee
@@ -61,7 +61,7 @@ Per registrare i dispositivi iOS di proprietà dell'azienda in Apple School Mana
 **Passaggio 1. Scaricare il certificato di chiave pubblica di Intune necessario per creare un token Apple.**<br>
 1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** e quindi scegliere **Token DEP**.
 
-  ![Riquadro Token DEP nell'area di lavoro dei certificati Apple per scaricare la chiave pubblica](./media/enrollment-program-token-download.png)
+   ![Riquadro Token DEP nell'area di lavoro dei certificati Apple per scaricare la chiave pubblica](./media/enrollment-program-token-download.png)
 
 2. Nel pannello **Token DEP** scegliere **Scarica la chiave pubblica** per scaricare e salvare il file della chiave di crittografia (con estensione pem) in locale. Il file PEM viene usato per richiedere un certificato di relazione di trust dal portale Apple School Manager.
 
@@ -95,20 +95,20 @@ Un profilo di registrazione dispositivi consente di definire le impostazioni app
 4. Nel pannello **Crea un profilo di registrazione** immettere un **nome** e una **descrizione** per il profilo visualizzato in Intune.
 5. Per **Affinità utente**, scegliere se i dispositivi con questo profilo verranno registrati con o senza affinità utente.
 
- - **Registra con affinità utente**: il dispositivo viene affiliato a un utente durante l'installazione.
+   - **Registra con affinità utente**: il dispositivo viene affiliato a un utente durante l'installazione.
 
-  La modalità iPad condiviso di Apple School Manager richiede la registrazione dell'utente senza affinità utente.
+   La modalità iPad condiviso di Apple School Manager richiede la registrazione dell'utente senza affinità utente.
 
- - **Registra senza affinità utente**: scegliere questa opzione per un dispositivo non associato a un singolo utente, come i dispositivi condivisi. Usare questa impostazione per i dispositivi che eseguono attività senza accedere ai dati utente locali. Le app come l'app Portale aziendale non funzionano.
+   - **Registra senza affinità utente**: scegliere questa opzione per un dispositivo non associato a un singolo utente, come i dispositivi condivisi. Usare questa impostazione per i dispositivi che eseguono attività senza accedere ai dati utente locali. Le app come l'app Portale aziendale non funzionano.
 
 6. Scegliere **Impostazioni di gestione dei dispositivi**. Questi elementi vengono impostati durante l'attivazione e richiedono il ripristino delle impostazioni predefinite per la modifica. Configurare le impostazioni del profilo seguenti e quindi scegliere **Salva**:
 
-  ![Scelta della modalità di gestione](./media/enrollment-program-profile-mode.png)
+   ![Scelta della modalità di gestione](./media/enrollment-program-profile-mode.png)
 
-    - **Supervisione eseguita**: modalità di gestione che attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita. Se si lascia vuota la casella di controllo, le funzionalità di gestione saranno limitate.
+   - **Supervisione eseguita**: modalità di gestione che attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita. Se si lascia vuota la casella di controllo, le funzionalità di gestione saranno limitate.
 
      - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disabilita le impostazioni iOS che possono consentire la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni.
-   - **iPad condiviso**: richiede le modalità **Registra senza affinità utente** e Supervisione eseguita. Consente a più utenti di eseguire l'accesso agli iPad registrati usando un ID Apple gestito. Gli ID Apple gestiti sono creati nel portale Apple School Manager. Altre informazioni sull'[iPad condiviso](education-settings-configure-ios-shared.md). Vedere anche i [requisiti per usare l'iPad condiviso di Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+     - **iPad condiviso**: richiede le modalità **Registra senza affinità utente** e Supervisione eseguita. Consente a più utenti di eseguire l'accesso agli iPad registrati usando un ID Apple gestito. Gli ID Apple gestiti sono creati nel portale Apple School Manager. Altre informazioni sull'[iPad condiviso](education-settings-configure-ios-shared.md). Vedere anche i [requisiti per usare l'iPad condiviso di Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
    >[!NOTE]
    >Se **Affinità utente** è impostata su **Con affinità utente** o la modalità **Supervisione eseguita** è impostata su **Disattivato**, la modalità iPad condiviso è disabilitata per il profilo di registrazione.
@@ -151,12 +151,12 @@ Dopo aver assegnato le autorizzazioni per gestire i dispositivi Apple School Man
 
 1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Dispositivi DEP** > **Sincronizza**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
 
-  ![Nodo Dispositivi DEP selezionato e scelta del collegamento Sincronizza](./media/enrollment-program-device-sync.png)
+   ![Nodo Dispositivi DEP selezionato e scelta del collegamento Sincronizza](./media/enrollment-program-device-sync.png)
 2. Nel pannello **Sincronizzazione** scegliere **Richiedi la sincronizzazione**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
 
-  ![Pannello Sincronizza con la scelta del collegamento Richiedi la sincronizzazione](./media/enrollment-program-device-request-sync.png)
+   ![Pannello Sincronizza con la scelta del collegamento Richiedi la sincronizzazione](./media/enrollment-program-device-request-sync.png)
 
-  Per soddisfare i requisiti Apple per il traffico accettabile, Intune impone le seguenti limitazioni:
+   Per soddisfare i requisiti Apple per il traffico accettabile, Intune impone le seguenti limitazioni:
    -    Una sincronizzazione completa può essere eseguita solo una volta ogni sette giorni. Durante una sincronizzazione completa, Intune aggiorna tutti i numeri di serie che Apple ha assegnato a Intune, anche se sono già stati sincronizzati in precedenza. Se si tenta una sincronizzazione completa prima che trascorra il periodo di sette giorni, Intune aggiorna solo i numeri di serie che non sono ancora elencati in Intune.
    -    Il tempo concesso per il completamento di una richiesta di sincronizzazione è pari a 15 minuti. Durante questo tempo o fino al completamento della richiesta, il pulsante **Sincronizza** è disabilitato.
 
@@ -169,15 +169,15 @@ Ai dispositivi Apple School Manager gestiti da Intune deve essere assegnato un p
 1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Apple** e quindi scegliere **Profili DEP**.
 2. Nell'elenco **Profili DEP** scegliere il profilo che si vuole assegnare ai dispositivi e quindi scegliere **Device Assignments** (Assegnazioni dispositivi).
 
- ![Assegnazioni di dispositivo con l'opzione di assegnazione selezionata.](./media/enrollment-program-device-assign.png)
+   ![Assegnazioni di dispositivo con l'opzione di assegnazione selezionata.](./media/enrollment-program-device-assign.png)
 
 3. Scegliere **Assegna** e quindi scegliere i dispositivi Apple School Manager a cui si vuole assegnare il profilo. È possibile applicare un filtro per visualizzare i dispositivi disponibili:
-  - **non assegnato**
-  - **qualsiasi**
-  - **&lt;nome profilo&gt;**
+   - **non assegnato**
+   - **qualsiasi**
+   - **&lt;nome profilo&gt;**
 4. Scegliere i dispositivi che si vuole assegnare. La casella di controllo sopra la colonna consente di selezionare fino a 1000 dispositivi elencati. Fare clic su **Assegna**. Per registrare più di 1000 dispositivi, ripetere i passaggi di assegnazione fino a quando non è stato assegnato un profilo di registrazione a tutti i dispositivi.
 
-  ![Pulsante Assegna per assegnare il profilo DEP in Intune](media/dep-profile-assignment.png)
+   ![Pulsante Assegna per assegnare il profilo DEP in Intune](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices-to-users"></a>Distribuire i dispositivi agli utenti
 

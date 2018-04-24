@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 944c5771e00d8e256944fe5767217f138797bde2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Suggerimenti generali per la risoluzione dei problemi di Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Dopo aver distribuito Microsoft Intune, potrebbero verificarsi problemi relativi alla configurazione o ai dispositivi client. Usare le seguenti risorse per scoprire la causa del problema per poterlo risolvere.
 
@@ -50,13 +50,13 @@ Dopo aver distribuito Microsoft Intune, potrebbero verificarsi problemi relativi
 
 ## <a name="collect-available-data"></a>Raccogliere i dati disponibili
 
--   Le risorse seguenti consentono di imparare a raccogliere i registri del dispositivo:
+- Le risorse seguenti consentono di imparare a raccogliere i registri del dispositivo:
   - [Send Android diagnostic data logs to your IT administrator using a USB cable (Inviare i log dei dati Android di diagnostica all'amministratore IT tramite un cavo USB)](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Send Android diagnostic data logs to your IT administrator using email (Inviare i log dei dati Android di diagnostica all'amministratore IT tramite posta elettronica)](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Send Android enrollment errors to your IT administrator (Inviare gli errori di registrazione Android all'amministratore IT)](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [Send iOS enrollment errors to your IT administrator (Inviare gli errori di registrazione iOS all'amministratore IT)](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   Con i dati della console di amministrazione (ad esempio, per i problemi di implementazione dei criteri) è consigliabile esaminare i criteri previsti e il relativo stato, come descritto in [Usare i gruppi per gestire utenti e dispositivi con Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+- Con i dati della console di amministrazione (ad esempio, per i problemi di implementazione dei criteri) è consigliabile esaminare i criteri previsti e il relativo stato, come descritto in [Usare i gruppi per gestire utenti e dispositivi con Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## <a name="research-the-solution"></a>Cercare la soluzione
 

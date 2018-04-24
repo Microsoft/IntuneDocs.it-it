@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: eb27605108feb3a2db3072d4a8b7a296f0f74cfc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Risolvere i problemi di accesso condizionale
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In genere, un utente che tenta di accedere alla posta elettronica o a SharePoint riceve una richiesta di registrazione. La richiesta indirizza l'utente al portale aziendale.
 
@@ -49,20 +49,20 @@ Queste condizioni possono essere visualizzate per ogni dispositivo nel portale d
 
 ## <a name="compliance-issues"></a>Problemi di conformità
 
- -  Il dispositivo non è conforme ai criteri di Intune. Problemi comuni sono i requisiti di crittografia e password. L'utente verrà reindirizzato al portale aziendale, in cui può configurare il dispositivo in modo che sia conforme.
- -  La registrazione delle informazioni di conformità per un dispositivo può richiedere tempo. Attendere qualche minuto e riprovare.
- -  Per i dispositivi iOS:
-     -   Un profilo di posta elettronica esistente creato dall'utente bloccherà la distribuzione di un profilo creato dall'amministratore di Intune. Si tratta di un problema comune poiché gli utenti di iOS in genere creano un profilo di posta elettronica e poi eseguono la registrazione. Il portale aziendale informerà l'utente che non è conforme perché il profilo di posta elettronica è stato configurato manualmente e richiederà la rimozione del profilo. L'utente deve rimuovere il proprio profilo di posta elettronica per consentire la distribuzione del profilo di Intune. Per evitare il problema, indicare agli utenti di eseguire la registrazione senza installare un profilo di posta elettronica e di consentire a Intune di distribuire il profilo.
-     -   Un dispositivo iOS può restare bloccato in uno stato di controllo della conformità, impedendo all'utente di avviare un altro check-in. Il riavvio del portale aziendale può risolvere il problema e lo stato di conformità sarà riflesso nello stato del dispositivo in Intune. Dopo che tutti i dati sono stati raccolti con una sincronizzazione del dispositivo, il controllo della conformità viene eseguito in modo rapido, mediamente in meno di mezzo secondo.
+- Il dispositivo non è conforme ai criteri di Intune. Problemi comuni sono i requisiti di crittografia e password. L'utente verrà reindirizzato al portale aziendale, in cui può configurare il dispositivo in modo che sia conforme.
+- La registrazione delle informazioni di conformità per un dispositivo può richiedere tempo. Attendere qualche minuto e riprovare.
+- Per i dispositivi iOS:
+  - Un profilo di posta elettronica esistente creato dall'utente bloccherà la distribuzione di un profilo creato dall'amministratore di Intune. Si tratta di un problema comune poiché gli utenti di iOS in genere creano un profilo di posta elettronica e poi eseguono la registrazione. Il portale aziendale informerà l'utente che non è conforme perché il profilo di posta elettronica è stato configurato manualmente e richiederà la rimozione del profilo. L'utente deve rimuovere il proprio profilo di posta elettronica per consentire la distribuzione del profilo di Intune. Per evitare il problema, indicare agli utenti di eseguire la registrazione senza installare un profilo di posta elettronica e di consentire a Intune di distribuire il profilo.
+  - Un dispositivo iOS può restare bloccato in uno stato di controllo della conformità, impedendo all'utente di avviare un altro check-in. Il riavvio del portale aziendale può risolvere il problema e lo stato di conformità sarà riflesso nello stato del dispositivo in Intune. Dopo che tutti i dati sono stati raccolti con una sincronizzazione del dispositivo, il controllo della conformità viene eseguito in modo rapido, mediamente in meno di mezzo secondo.
 
-        In genere, i dispositivi rimangono bloccati in questo stato perché si verificano problemi di connessione al servizio o perché la sincronizzazione richiede molto tempo.  Se il problema persiste con diverse configurazioni di rete (cellulare, Wi-Fi, VPN), con il riavvio del dispositivo e dopo aver verificato l'aggiornamento del provider di servizi condivisi sul dispositivo, contattare il Supporto tecnico Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+    In genere, i dispositivi rimangono bloccati in questo stato perché si verificano problemi di connessione al servizio o perché la sincronizzazione richiede molto tempo.  Se il problema persiste con diverse configurazioni di rete (cellulare, Wi-Fi, VPN), con il riavvio del dispositivo e dopo aver verificato l'aggiornamento del provider di servizi condivisi sul dispositivo, contattare il Supporto tecnico Microsoft come descritto in [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
- - Per dispositivi Android:
-    - È possibile che alcuni dispositivi Android sembrino crittografati, nonostante l'app Portale aziendale non li riconosca come tali. 
+- Per dispositivi Android:
+   - È possibile che alcuni dispositivi Android sembrino crittografati, nonostante l'app Portale aziendale non li riconosca come tali. 
     
-        -   In caso di dispositivi che presentano questo stato, l'utente deve impostare un passcode di avvio sicuro. L'utente visualizzerà una notifica del dispositivo inviata nell'app Portale aziendale in cui viene chiesto di impostare un passcode di avvio per il dispositivo. Dopo aver toccato la notifica del dispositivo e confermato il PIN o la password esistente, scegliere l'opzione **Require PIN to start device** (Richiedi PIN per avviare il dispositivo) nella schermata **Secure start-up** (Avvio sicuro). Toccare poi il pulsante **Controlla conformità** corrispondente al dispositivo nell'app Portale aziendale. Il dispositivo sarà riconosciuto come crittografato.
+       -   In caso di dispositivi che presentano questo stato, l'utente deve impostare un passcode di avvio sicuro. L'utente visualizzerà una notifica del dispositivo inviata nell'app Portale aziendale in cui viene chiesto di impostare un passcode di avvio per il dispositivo. Dopo aver toccato la notifica del dispositivo e confermato il PIN o la password esistente, scegliere l'opzione **Require PIN to start device** (Richiedi PIN per avviare il dispositivo) nella schermata **Secure start-up** (Avvio sicuro). Toccare poi il pulsante **Controlla conformità** corrispondente al dispositivo nell'app Portale aziendale. Il dispositivo sarà riconosciuto come crittografato.
     
-        -   Alcuni produttori di dispositivi eseguono la crittografia dei propri dispositivi usando un PIN predefinito anziché il PIN segreto impostato dall'utente. Intune riconosce la crittografia che usa il PIN predefinito come non sicura poiché questo metodo di crittografia può mettere i dati nel dispositivo a rischio di utenti malintenzionati con accesso fisico al dispositivo. Per questo tipo di problema, usare i [criteri di protezione delle app](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+       -   Alcuni produttori di dispositivi eseguono la crittografia dei propri dispositivi usando un PIN predefinito anziché il PIN segreto impostato dall'utente. Intune riconosce la crittografia che usa il PIN predefinito come non sicura poiché questo metodo di crittografia può mettere i dati nel dispositivo a rischio di utenti malintenzionati con accesso fisico al dispositivo. Per questo tipo di problema, usare i [criteri di protezione delle app](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemi relativi ai criteri
 
@@ -118,22 +118,22 @@ Se le procedure descritte non consentono di risolvere il problema riscontrato, p
 ### <a name="exchange-connector-logs"></a>Log di Exchange Connector
 
 #### <a name="general-log-information"></a>Informazioni generali sui log
-Per visualizzare i log di Exchange Connector, usare lo strumento Visualizzatore di tracce dei servizi (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx). Per questo strumento è necessario scaricare l'SDK di Windows Server.
+Per visualizzare i log di Exchange Connector, usare lo strumento Visualizzatore di tracce dei servizi (<https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx>). Per questo strumento è necessario scaricare l'SDK di Windows Server.
 
 >[!NOTE]
 >I log si trovano in C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Sono contenuti in una serie di 30 file di log che inizia da *Connector0.log* e termina con *Connector29.log*. Il rollover da un log all'altro avviene nel momento in cui si accumulano 10 MB di dati in un log. Dopo aver generato il log Connector29, il meccanismo riparte dal log Connector0, sovrascrivendo i file di log precedenti.
 
 #### <a name="locating-sync-logs"></a>Individuazione dei log di sincronizzazione
 
--    Per individuare una sincronizzazione completa nei log, è necessario cercare **full sync** (sincronizzazione completa). L'inizio di una sincronizzazione completa è contrassegnato dal testo seguente:
+- Per individuare una sincronizzazione completa nei log, è necessario cercare **full sync** (sincronizzazione completa). L'inizio di una sincronizzazione completa è contrassegnato dal testo seguente:
 
-    'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users` ('Gestione comando: recupero dell'elenco di dispositivi mobili senza filtro temporale (sincronizzazione completa) per X utenti')
+  'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users` ('Gestione comando: recupero dell'elenco di dispositivi mobili senza filtro temporale (sincronizzazione completa) per X utenti')
 
-    La parte finale del log relativo a una sincronizzazione completa è simile al seguente:
+  La parte finale del log relativo a una sincronizzazione completa è simile al seguente:
 
-    Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. (Recupero dell'elenco di dispositivi mobili senza filtro temporale (sincronizzazione completa) per 4 utenti eseguito.) Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected',' (Dettagli: risultati comando inventario - Dispositivi sincronizzati: 0 ID comando: commandIDGUID' Integrità Exchange: 'Integrità server 'Nome: 'PowerShellExchangeServer: <Nome=nomeserverposta>' Stato: Connesso',')
+  Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. (Recupero dell'elenco di dispositivi mobili senza filtro temporale (sincronizzazione completa) per 4 utenti eseguito.) Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected',' (Dettagli: risultati comando inventario - Dispositivi sincronizzati: 0 ID comando: commandIDGUID' Integrità Exchange: 'Integrità server 'Nome: 'PowerShellExchangeServer: <Nome=nomeserverposta>' Stato: Connesso',')
 
--   Individuare una sincronizzazione rapida (delta) nei log eseguendo la ricerca di **quick sync** (sincronizzazione rapida).
+- Individuare una sincronizzazione rapida (delta) nei log eseguendo la ricerca di **quick sync** (sincronizzazione rapida).
 
 ##### <a name="exceptions-in-get-next-command"></a>Eccezioni in Get next command (Recupera comando successivo)
 Verificare nei log di Exchange Connector l'eventuale presenza di eccezioni in **Get next command** (Recupera comando successivo) e comunicarne il contenuto al Supporto tecnico Microsoft.

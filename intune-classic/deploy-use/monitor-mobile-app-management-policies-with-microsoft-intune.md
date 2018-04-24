@@ -1,25 +1,25 @@
 ---
 title: Monitorare i criteri MAM con Microsoft Intune
 description: Vedere quanti utenti dispongono di criteri ed eseguire il drill-down per accedere ad altri dettagli.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 02/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4b25c2ebe6fa8edf7ce954f68c22d4086fcaf7c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: de26b7614578b275802ca048ed17bfa5969f0387
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Monitorare i criteri di protezione delle app con Microsoft Intune
 È possibile monitorare lo stato di conformità dei criteri di protezione delle app applicati agli utenti. Sono disponibili informazioni sugli utenti interessati dai criteri di protezione delle app, sullo stato di conformità e su eventuali problemi riscontrati dagli utenti.

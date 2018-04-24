@@ -2,28 +2,28 @@
 title: Panoramica dei cicli di vita del dispositivo e dell'app
 titleSuffix: Microsoft Intune
 description: Panoramica dei cicli di vita del dispositivo e dell'app con Microsoft Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d262d5679ceb802320bd5aa496d91f549ec12952
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c358fff91744335080a10d45c7753293911430ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-device-and-app-lifecycles"></a>Panoramica dei cicli di vita del dispositivo e dell'app
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Anche se le esigenze delle singole organizzazioni possono essere diverse, esistono alcune operazioni comuni che tutte le organizzazioni devono eseguire con regolarità per gestire i dispositivi mobili e le app per dispositivi mobili. Tali operazioni possono essere raggruppate in due categorie principali, denominate **cicli di vita**. Il ciclo di vita di distribuzione seguito dipende dallo scenario che si vuole abilitare. Ad esempio, può essere necessario solo il ciclo di vita del dispositivo o solo il ciclo di vita dell'app, oppure possono essere necessari entrambi.
 

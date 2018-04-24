@@ -1,28 +1,28 @@
 ---
 title: Creare notifiche app per dispositivi iOS - Microsoft Intune - Azure | Microsoft Docs
 description: Aggiungere o creare notifiche app per dispositivi iOS in Microsoft Intune. Scegliere le app a cui inviare notifiche, configurare le impostazioni delle notifiche nella schermata di blocco, abilitare il suono, scegliere il tipo di avviso e aggiungere una notifica.
-keywords: 
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 018a04bd674e4f270ed2e356c08825ab1d5878da
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 43068163c15c0588a8a6ef745d5b191f4547a94d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>Configurare le impostazioni delle notifiche app per i dispositivi iOS in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Configurare la modalità in cui le app installate in un dispositivo iOS devono inviare notifiche. Queste impostazioni supportano dispositivi con supervisione che eseguono iOS 9.3 e versioni successive.
 
@@ -33,18 +33,18 @@ Configurare la modalità in cui le app installate in un dispositivo iOS devono i
 3. Selezionare **Notifiche app (solo con supervisione)** e quindi selezionare **Aggiungi**: ![Aggiungere una notifica app in un profilo iOS o macOS in Intune](./media/ios-macos-app-notifications.png)
 4. Immettere le seguenti proprietà:
 
-  - **ID bundle dell'app**: immettere l'**ID bundle** dell'app che si vuole configurare. Per informazioni, vedere **Guida di riferimento agli ID bundle per le app iOS predefinite** in questo articolo.
-  - **Nome app**: immettere il nome dell'app che si vuole configurare. Questo nome non viene visualizzato nel dispositivo e viene usato per identificare l'app nell'elenco.
-  - **Editore**: immettere l'editore dell'app che si vuole configurare. Il nome dell'editore non viene visualizzato nel dispositivo e viene usato per identificare l'app nell'elenco.
-  - **Notifiche**: abilitare o disabilitare l'invio di notifiche al dispositivo da parte dell'app. Se si disabilita questa impostazione, vengono disabilitate anche le impostazioni seguenti.
-    - **Mostra nel centro notifiche**: abilitare questa impostazione per consentire all'app di visualizzare notifiche nel centro notifiche del dispositivo.
-    - **Mostra nella schermata di blocco**: abilitare questa impostazione per visualizzare le notifiche dall'app nella schermata di blocco del dispositivo.
-    - **Tipo avviso**: selezionare il tipo di notifica che si vuole ricevere quando il dispositivo è sbloccato:
-      - **Nessuno**: non viene visualizzata alcuna notifica.
-      - **Banner**: viene visualizzato brevemente un banner con la notifica.
-      - **Modale**: la notifica viene visualizzata e l'utente deve chiuderla manualmente prima di continuare a usare il dispositivo.
-    - **Badge sull'icona dell'pp**: abilitare questa impostazione per aggiungere un badge all'icona dell'app che indica l'invio di una notifica.
-    - **Suoni**: abilitare questa impostazione per riprodurre un suono quando viene recapitata una notifica.
+   - **ID bundle dell'app**: immettere l'**ID bundle** dell'app che si vuole configurare. Per informazioni, vedere **Guida di riferimento agli ID bundle per le app iOS predefinite** in questo articolo.
+   - **Nome app**: immettere il nome dell'app che si vuole configurare. Questo nome non viene visualizzato nel dispositivo e viene usato per identificare l'app nell'elenco.
+   - **Editore**: immettere l'editore dell'app che si vuole configurare. Il nome dell'editore non viene visualizzato nel dispositivo e viene usato per identificare l'app nell'elenco.
+   - **Notifiche**: abilitare o disabilitare l'invio di notifiche al dispositivo da parte dell'app. Se si disabilita questa impostazione, vengono disabilitate anche le impostazioni seguenti.
+     - **Mostra nel centro notifiche**: abilitare questa impostazione per consentire all'app di visualizzare notifiche nel centro notifiche del dispositivo.
+     - **Mostra nella schermata di blocco**: abilitare questa impostazione per visualizzare le notifiche dall'app nella schermata di blocco del dispositivo.
+     - **Tipo avviso**: selezionare il tipo di notifica che si vuole ricevere quando il dispositivo è sbloccato:
+       - **Nessuno**: non viene visualizzata alcuna notifica.
+       - **Banner**: viene visualizzato brevemente un banner con la notifica.
+       - **Modale**: la notifica viene visualizzata e l'utente deve chiuderla manualmente prima di continuare a usare il dispositivo.
+     - **Badge sull'icona dell'pp**: abilitare questa impostazione per aggiungere un badge all'icona dell'app che indica l'invio di una notifica.
+     - **Suoni**: abilitare questa impostazione per riprodurre un suono quando viene recapitata una notifica.
 
 5. Continuare ad aggiungere tutte le app necessarie. Al termine dell'aggiunta delle app, selezionare **OK**.
 6. Selezionare **Crea** per salvare il profilo.

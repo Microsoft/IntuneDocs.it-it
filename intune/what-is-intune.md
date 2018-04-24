@@ -1,36 +1,36 @@
 ---
 title: Introduzione a Intune nel portale di Azure
-titlesuffix: 
-description: "Microsoft Intune è disponibile nel portale di Azure. Nozioni di base su Intune sono disponibili nel portale di Azure."
-keywords: 
+titlesuffix: ''
+description: Microsoft Intune è disponibile nel portale di Azure. Nozioni di base su Intune sono disponibili nel portale di Azure.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introduzione a Microsoft Intune nel portale di Azure
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Analogamente ad altri servizi di Azure, Microsoft Intune è disponibile nel portale di Azure. Selezionando **Intune** nel portale di Azure, è possibile gestire i dispositivi mobili, i PC e le app dell'organizzazione.
 
->[!NOTE] 
+> [!NOTE]
 > Se è stata usata una versione precedente di Microsoft Intune, le informazioni seguenti possono rivelarsi utili:
-    * [Dove si trovano le funzionalità di Intune in Azure?](ui-changes.md) è un riferimento che descrive i flussi di lavoro specifici e le interfacce utente modificati con lo spostamento in Azure.
-    * [Gruppi di Intune classici nel portale di Azure](groups-get-started.md) descrive le implicazioni dello spostamento nei gruppi di sicurezza di Azure Active Directory per la gestione dei gruppi.
+>     * [Dove si trovano le funzionalità di Intune in Azure?](ui-changes.md) è un riferimento che descrive i flussi di lavoro specifici e le interfacce utente modificati con lo spostamento in Azure.
+>     * [Gruppi di Intune classici nel portale di Azure](groups-get-started.md) descrive le implicazioni dello spostamento nei gruppi di sicurezza di Azure Active Directory per la gestione dei gruppi.
 
 Tra gli elementi in evidenza dell'esperienza di Microsoft Intune nel portale di Azure sono inclusi i seguenti:
 

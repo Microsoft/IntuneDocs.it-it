@@ -1,29 +1,29 @@
 ---
 title: Usare la cancellazione remota per proteggere i dati
-description: "Intune offre funzionalità di cancellazione selettiva e completa per rimuovere i dati aziendali riservati e impedire l'accesso a numerose risorse aziendali."
-keywords: 
+description: Intune offre funzionalità di cancellazione selettiva e completa per rimuovere i dati aziendali riservati e impedire l'accesso a numerose risorse aziendali.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 82c50be9a8def23fadd8d24fc7654312d5c7ca5c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Proteggere i dati con la cancellazione selettiva o completa tramite Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 È possibile cancellare app e dati non più necessari dai dispositivi gestiti da Intune che vengono reimpiegati o sono andati persi. A tale scopo, Intune offre funzionalità di cancellazione completa e selettiva. Gli utenti possono anche inviare un comando di cancellazione remota dei dati del dispositivo dall'app Portale aziendale di Intune nei dispositivi privati registrati in Intune.
 
@@ -40,37 +40,37 @@ La **cancellazione completa** ripristina le impostazioni predefinite di un dispo
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Cancellare un dispositivo in modalità remota dalla console di amministrazione di Intune
 
-1.  Selezionare i dispositivi da cancellare. Possono essere cercati per utente o per dispositivo.
+1. Selezionare i dispositivi da cancellare. Possono essere cercati per utente o per dispositivo.
 
-    -   **Utente:**
+   - **Utente:**
 
-        1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **Gruppi**&gt;**Tutti gli utenti**
+     1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **Gruppi**&gt;**Tutti gli utenti**
 
-        2.  Scegliere il nome dell'utente il cui dispositivo mobile deve essere cancellato. Scegliere **Visualizza proprietà**
+     2.  Scegliere il nome dell'utente il cui dispositivo mobile deve essere cancellato. Scegliere **Visualizza proprietà**
 
-        3.  Nella pagina **Proprietà** relativa all'utente scegliere **Dispositivi**, quindi il nome del dispositivo mobile di cui cancellare i dati. Per selezionare più dispositivi, usare CTRL+clic.
+     3.  Nella pagina **Proprietà** relativa all'utente scegliere **Dispositivi**, quindi il nome del dispositivo mobile di cui cancellare i dati. Per selezionare più dispositivi, usare CTRL+clic.
 
-    -   **Dispositivo:**
+   - **Dispositivo:**
 
-        1.  Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **Gruppi**&gt;**Tutti i dispositivi mobili**
+     1. Nella [console di amministrazione di Intune](https://manage.microsoft.com/) scegliere **Gruppi**&gt;**Tutti i dispositivi mobili**
 
-         ![Avvio di un'operazione di ritiro o di cancellazione](../media/dev-sa-wipe.png)
+        ![Avvio di un'operazione di ritiro o di cancellazione](../media/dev-sa-wipe.png)
 
-        2.  Scegliere **Dispositivi**, quindi il nome del dispositivo mobile di cui cancellare i dati. Per selezionare più dispositivi, usare CTRL+clic.
+     2. Scegliere **Dispositivi**, quindi il nome del dispositivo mobile di cui cancellare i dati. Per selezionare più dispositivi, usare CTRL+clic.
 
-2.  Scegliere **Disattiva/Cancella**.
+2. Scegliere **Disattiva/Cancella**.
 
-3.  Verrà visualizzato un messaggio di conforma che richiede se si vuole ritirare il dispositivo.
+3. Verrà visualizzato un messaggio di conforma che richiede se si vuole ritirare il dispositivo.
 
-    -   Per eseguire una **cancellazione selettiva** che rimuove solo le app e i dati aziendali, scegliere **Sì**.
+   -   Per eseguire una **cancellazione selettiva** che rimuove solo le app e i dati aziendali, scegliere **Sì**.
 
-    -   Per eseguire una **cancellazione completa** che cancella tutte le app e i dati e ripristina le impostazioni predefinite del dispositivo, scegliere **Cancellazione del dispositivo prima della disattivazione**. Questa azione si applica a tutte le piattaforme tranne Windows 8.1. **Non è possibile ripristinare i dati rimossi con una cancellazione completa**.
+   -   Per eseguire una **cancellazione completa** che cancella tutte le app e i dati e ripristina le impostazioni predefinite del dispositivo, scegliere **Cancellazione del dispositivo prima della disattivazione**. Questa azione si applica a tutte le piattaforme tranne Windows 8.1. **Non è possibile ripristinare i dati rimossi con una cancellazione completa**.
 
 Se il dispositivo è acceso e connesso, un comando di cancellazione non richiede più di 15 minuti per propagarsi a tutti i tipi di dispositivo.
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Per eliminare i dispositivi nel portale di Azure Active Directory
 
-1.  Accedere a [http://aka.ms/accessaad](http://aka.ms/accessaad) oppure fare clic su **Amministrazione** &gt; **Azure AD** da [https://portal.office.com](https://portal.office.com).
+1.  Passare a [http://aka.ms/accessaad](http://aka.ms/accessaad) o scegliere **Amministrazione** &gt; **Azure AD** da [https://portal.office.com](https://portal.office.com).
 
 2.  Accedere con l'ID organizzazione usando il collegamento sul lato sinistro della pagina.
 

@@ -1,28 +1,28 @@
 ---
-title: "Novità nell'archivio del portale classico di Microsoft Intune"
-description: "Annunci archiviati delle novità per Microsoft Intune"
-keywords: 
+title: Novità nell'archivio del portale classico di Microsoft Intune
+description: Annunci archiviati delle novità per Microsoft Intune
+keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbb76e0eb4a1157e70a24c47b960ef138a0f876
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 5ba8d7940f9c02a1f01a115e16be331bb4fc2fcd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novità del portale di Intune classico - mesi precedenti
 
-[!INCLUDE[classic-portal](./includes/classic-portal.md)]
+[!INCLUDE [classic-portal](./includes/classic-portal.md)]
 
 Questa pagina elenca le nuove funzionalità e le notifiche annunciate in precedenza nella [pagina delle novità](whats-new.md) per il portale di Intune classico.
 
@@ -359,7 +359,7 @@ __Il componente Xamarin per Intune App SDK attualmente supporta la gestione di a
 
 __Il certificato di firma Symantec non richiede più un'app Portale aziendale di Windows Phone 8 firmata per il caricamento__ Per il caricamento del certificato di firma Symantec non è più necessaria un'app Portale aziendale di Windows Phone 8 firmata. Il certificato può essere caricato in modo indipendente.
 
-###<a name="deprecations"></a>Elementi deprecati
+### <a name="deprecations"></a>Elementi deprecati
 
 __Supporto per l'app Portale aziendale di Windows Phone 8__ Il supporto per il portale aziendale di Windows Phone 8 sarà deprecato. Il supporto per le piattaforme Windows Phone 8 e WinRT è stato deprecato a ottobre 2016. Il supporto per il portale aziendale di Windows 8 è stato deprecato a ottobre 2016.
 

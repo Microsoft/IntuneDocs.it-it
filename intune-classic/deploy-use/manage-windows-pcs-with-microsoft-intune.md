@@ -1,28 +1,28 @@
 ---
 title: Gestire i PC con il software client
 description: Gestire i PC Windows installando il software client di Intune.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 773e4d551a8ea278c60107a279e29b83f0a1596f
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 8790863f4cfb3b0b8fdcf4f7aedbfc338ae64667
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gestire i PC Windows come computer tramite il client software di Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune offre alle organizzazioni una soluzione completa per la gestione dei dispositivi mobili. Intune consente di gestire i PC Windows come dispositivi mobili usando le funzionalità di gestione dei dispositivi moderni integrate nel sistema operativo Windows 10. Per soddisfare le esigenze di gestione dell'organizzazione, Intune consente anche di gestire i PC Windows come computer con il client del software Intune. Questo metodo di gestione usa le funzionalità di gestione dei computer tradizionali nel sistema operativo Windows legacy.
 

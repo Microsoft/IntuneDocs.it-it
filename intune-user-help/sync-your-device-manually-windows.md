@@ -1,27 +1,27 @@
 ---
 title: Sincronizzare manualmente il dispositivo Windows | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6d3b0fb8ea462656602ee9b4e58200d3c2e755a9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizzare il dispositivo Windows manualmente
 
@@ -65,10 +65,10 @@ Esistono più versioni di Windows 10, quindi esistono sono due procedure distint
 
 2. Scegliere l'account aziendale o dell'istituto di istruzione. A seconda della configurazione eseguita dal supporto tecnico dell'azienda, è possibile che vengano visualizzati due account simili all'esempio illustrato di seguito. Accanto a un account è visibile l'icona Sincronia file e accanto all'altro è presente il logo Microsoft.
 
-    - Se è visualizzato l'account con Sincronia file, selezionarlo e cercare il pulsante **Informazioni** sotto di esso.
-    - Se è visualizzato solo l'account con il logo Microsoft, selezionarlo e cercare il pulsante **Informazioni** sotto di esso.
+   - Se è visualizzato l'account con Sincronia file, selezionarlo e cercare il pulsante **Informazioni** sotto di esso.
+   - Se è visualizzato solo l'account con il logo Microsoft, selezionarlo e cercare il pulsante **Informazioni** sotto di esso.
 
-    ![Scegliere il nome dell'account accanto a Sincronia file o al logo Microsoft](./media/win10pc-rs1-sync-info-button.png)
+     ![Scegliere il nome dell'account accanto a Sincronia file o al logo Microsoft](./media/win10pc-rs1-sync-info-button.png)
 
 3. Scegliere il pulsante **Info**. Verrà visualizzata una finestra di dialogo simile all'esempio illustrato di seguito.
 

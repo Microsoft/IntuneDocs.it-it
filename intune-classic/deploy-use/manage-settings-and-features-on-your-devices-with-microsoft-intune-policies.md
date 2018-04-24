@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 12bb3e91b842ffb03e3ad7b181841374c92b3dc4
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 6e639dda2509ab51bfcf6d0976be517e220800e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 I *criteri* di Microsoft Intune sono gruppi di impostazioni che controllano le funzionalità nei dispositivi mobili e nei computer. È possibile creare criteri usando modelli che contengono le impostazioni consigliate o personalizzate, quindi distribuire i criteri a gruppi di dispositivi o utenti.
 

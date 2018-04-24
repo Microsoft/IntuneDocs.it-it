@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0117ef734a8549593992108105192ce1c4de5b0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 85233c06d9cbbc697aecabc75ba538612c0fa5fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>Guida introduttiva: Impedire la divulgazione di dati aziendali da app di Office 365 per dispositivi mobili
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune aiuta a proteggere i dati dell'organizzazione usando criteri di gestione delle applicazioni mobili (MAM) che consentono di impedire la divulgazione di dati aziendali da app di Office 365 per dispositivi mobili o da altre app line-of-business (LOB). È possibile usare i criteri MAM di Intune senza che gli utenti finali debbano registrare i propri dispositivi nel software per la gestione dei dispositivi mobili (MDM) di Intune. Pertanto, se alcuni utenti non vogliono registrare i dispositivi mobili iOS o Android BYOD in una soluzione Microsoft MDM (Intune, Configuration Manager o EAS), se si desidera proteggere i dati aziendali senza gestire i dispositivi degli utenti finali o se si usa già una soluzione non Microsoft MDM, Intune è lo strumento ideale per aumentare la sicurezza dei dati della società.   
 

@@ -1,29 +1,29 @@
 ---
 title: Come aggiungere app di Android Store a Microsoft Intune
-titleSuffix: 
+titleSuffix: ''
 description: Informazioni sull'aggiunta di app di Android Store a Microsoft Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87fea551dea1f80ee071fe6b477b84729e000874
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ece6edee891b147ad2124b987239da6af8e1bc8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Come aggiungere app di Android Store a Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Prima di assegnare un'app a un dispositivo o a un gruppo di utenti, è necessario aggiungere l'app a Microsoft Intune. I passaggi seguenti permettono di aggiungere un app dello store di Android a Intune dal portale di Azure.
 
@@ -52,6 +52,6 @@ Prima di assegnare un'app a un dispositivo o a un gruppo di utenti, è necessari
 
 L'app creata viene visualizzata nell'elenco di app, in cui è possibile assegnarla ai gruppi scelti. 
 
-##<a name="next-steps"></a>Passaggi successivi
+## <a name="next-steps"></a>Passaggi successivi
 
 - [Come assegnare app ai gruppi](apps-deploy.md)

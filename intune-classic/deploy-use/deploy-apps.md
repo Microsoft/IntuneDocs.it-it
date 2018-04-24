@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc2a8cb8fc07f87dd0a4e9d8f3935c04a73fe8fd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Distribuire le app con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Questo argomento illustra alcuni dei concetti che è necessario comprendere prima di iniziare a distribuire le app con Microsoft Intune.
 
@@ -46,18 +46,19 @@ Quando si distribuiscono le app, è possibile scegliere una delle seguenti azion
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Comprendere quali sono le azioni di distribuzione disponibili per ogni tipo di programma di installazione
 
-|Tipo di programma di installazione|Installazione richiesta|Installazione disponibile|Disinstalla|Non applicabile|
-|------------------|--------------------|---------------------|-------------|------------------|
-|Pacchetto app Windows (distribuito in un gruppo di utenti)|Sì|Sì|Sì|Sì|
-|Pacchetto app Windows (distribuito in un gruppo di dispositivi)|Sì|No|Sì|Sì|
-|Pacchetto app per dispositivi mobili (distribuito in un gruppo di utenti)|Sì|Sì|Sì|Sì|
-|Pacchetto app per dispositivi mobili (distribuito in un gruppo di dispositivi)|Sì|No|Sì|Sì|
-|Windows Installer (distribuito in un gruppo di utenti)|No|Sì|No|Sì|
-|Windows Installer (distribuito in un gruppo di dispositivi)|Sì|No|Sì|Sì|
-|Collegamento esterno (distribuito in un gruppo di utenti)|No|Sì|No|Sì|
-|Collegamento esterno (distribuito in un gruppo di dispositivi)|No|No|No|No|
-|App iOS gestita dall'App Store (distribuita in un gruppo di utenti)|Sì|Sì|Sì|Sì|
-|App iOS gestita dall'App Store (distribuita in un gruppo di dispositivi)|Sì|No|Sì|Sì|
+|                         Tipo di programma di installazione                          | Installazione richiesta | Installazione disponibile | Disinstalla | Non applicabile |
+|-----------------------------------------------------------------|------------------|-------------------|-----------|----------------|
+|         Pacchetto app Windows (distribuito in un gruppo di utenti)          |       Sì        |        Sì        |    Sì    |      Sì       |
+|        Pacchetto app Windows (distribuito in un gruppo di dispositivi)         |       Sì        |        No         |    Sì    |      Sì       |
+|    Pacchetto app per dispositivi mobili (distribuito in un gruppo di utenti)    |       Sì        |        Sì        |    Sì    |      Sì       |
+|   Pacchetto app per dispositivi mobili (distribuito in un gruppo di dispositivi)   |       Sì        |        No         |    Sì    |      Sì       |
+|          Windows Installer (distribuito in un gruppo di utenti)           |        No        |        Sì        |    No     |      Sì       |
+|         Windows Installer (distribuito in un gruppo di dispositivi)          |       Sì        |        No         |    Sì    |      Sì       |
+|            Collegamento esterno (distribuito in un gruppo di utenti)             |        No        |        Sì        |    No     |      Sì       |
+|           Collegamento esterno (distribuito in un gruppo di dispositivi)            |        No        |        No         |    No     |       No       |
+|  App iOS gestita dall'App Store (distribuita in un gruppo di utenti)  |       Sì        |        Sì        |    Sì    |      Sì       |
+| App iOS gestita dall'App Store (distribuita in un gruppo di dispositivi) |       Sì        |        No         |    Sì    |      Sì       |
+
 > [!TIP]
 > Quando si distribuiscono le app, se si selezionano gruppi sia di utenti che di dispositivi, è possibile distribuire l'app soltanto come **Installazione disponibile**.
 

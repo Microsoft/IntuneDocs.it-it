@@ -1,37 +1,37 @@
 ---
-title: "Impostazioni dei criteri di conformità per i dispositivi Windows"
-description: "Questo argomento descrive le regole e le impostazioni che è possibile configurare per i criteri di conformità per i dispositivi Windows."
-keywords: 
+title: Impostazioni dei criteri di conformità per i dispositivi Windows
+description: Questo argomento descrive le regole e le impostazioni che è possibile configurare per i criteri di conformità per i dispositivi Windows.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6a54943873a6af158badb92cef4610e54fc8889b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Impostazioni dei criteri di conformità per i dispositivi Windows in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Le impostazioni dei criteri descritte in questo argomento si applicano ai dispositivi che eseguono il sistema operativo Windows. Le sezioni seguenti descrivono le versioni di Windows supportate.
 
 Per informazioni su altre piattaforme, selezionare una delle voci seguenti:
 > [!div class="op_single_selector"]
-- [Impostazioni dei criteri di conformità per i dispositivi iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Impostazioni dei criteri di conformità per i dispositivi Android](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Impostazioni dei criteri di conformità per i dispositivi Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Impostazioni dei criteri di conformità per i dispositivi iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Impostazioni dei criteri di conformità per i dispositivi Android](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Impostazioni dei criteri di conformità per i dispositivi Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Impostazioni dei criteri di conformità per i dispositivi Windows Phone
 Le impostazioni elencate in questa sezione sono supportate in Windows Phone 8.1 e versioni successive.
@@ -80,7 +80,7 @@ Le impostazioni elencate in questa sezione sono supportate in Windows Phone 8.1 
   > I dispositivi Windows non supportano l'installazione di software **antimalware ad esecuzione anticipata** di terze parti come parte dell'attestazione dell'integrità dei dispositivi.
 
   Per informazioni su come funziona il servizio di attestazione dell'integrità, vedere l'articolo relativo al [CSP per l'attestazione dell'integrità](https://msdn.microsoft.com/library/dn934876.aspx).
-###  <a name="device-property-settings"></a>Impostazioni delle proprietà dei dispositivi
+  ###  <a name="device-property-settings"></a>Impostazioni delle proprietà dei dispositivi
 - **Versione minima del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme.
     Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente può scegliere di aggiornare il dispositivo e quindi accedere alle risorse aziendali.
 
@@ -153,4 +153,4 @@ Per trovare la versione del sistema operativo da usare per le impostazioni **Ver
 - I PC Windows 8.1 restituiscono la versione **6.3**. Se la regola della versione del sistema operativo è impostata su Windows 8.1 per Windows, il dispositivo risulta non conforme anche se il sistema operativo installato è Windows 8.1.
 
 - Per i PC che eseguono Windows 10, la versione deve essere impostata come **10.0** più il numero di build del sistema operativo che il comando **winver** restituisce. Ad esempio, potrebbe essere simile a 10.0.10586.
-> ![Versione della build del sistema operativo evidenziata nella finestra di dialogo "Informazioni su Windows"](./media/ca_win10-os-version.png)
+  > ![Versione della build del sistema operativo evidenziata nella finestra di dialogo "Informazioni su Windows"](./media/ca_win10-os-version.png)

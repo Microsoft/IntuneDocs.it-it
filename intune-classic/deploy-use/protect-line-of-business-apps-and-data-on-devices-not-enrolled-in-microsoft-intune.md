@@ -1,29 +1,29 @@
 ---
 title: Proteggere le app line-of-business in dispositivi non registrati
 description: Questo argomento illustra come preparare le app line-of-business in modo da applicare i criteri di gestione delle applicazioni mobili che consentono di evitare la perdita di dati.
-keywords: 
+keywords: ''
 author: mattbriggs
 ms.author: mabriggs
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 447e019dde4781183323f29a35ed569926973351
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 0fbc7ae1937aff60e8e494df06ee2c30e2fe8855
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Proteggere app e dati line-of-business su dispositivi non registrati
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 I criteri di gestione delle applicazioni mobili consentono di proteggere i dati aziendali limitando le azioni che possono causare la perdita dei dati aziendali e applicando i requisiti di accesso ai dati, ad esempio il PIN dell'app. Prima di applicare i criteri di gestione delle applicazioni mobili alle app line-of-business per iOS e Android, è necessario eseguire il wrapping dell'app con lo strumento di wrapping delle app di Microsoft Intune. Il wrapping dell’app è il processo di applicazione di un livello di gestione a un'app per dispositivi mobili senza alcuna modifica dell'applicazione e la sua distribuzione agli utenti.  
 
@@ -42,16 +42,16 @@ Per associare l'app line-of-business ai criteri MAM, è necessario aggiungere i 
 
 1. Nel [portale di Azure](https://portal.azure.com/) passare a **Gestione di applicazioni mobili di Intune**  >  **Impostazioni** e scegliere **App line-of-business**.
 
-  ![Screenshot del pannello delle impostazioni con l'opzione line-of-business](../media/mam-azure-portal-lob-on-settings.png)
+   ![Screenshot del pannello delle impostazioni con l'opzione line-of-business](../media/mam-azure-portal-lob-on-settings.png)
 
 2. Nel pannello **App line-of-business** scegliere **Aggiungi app personalizzata**.
 
-  ![Screenshot del pannello App line-of-business con il pulsante Aggiungi app personalizzata nella parte superiore](../media/mam-azure-portal-add-lob-app-action.png)
-3.  Specificare il nome dell'app, l'identificatore del bundle nel campo Identificatore dell'app e la piattaforma (iOS o Android).
+   ![Screenshot del pannello App line-of-business con il pulsante Aggiungi app personalizzata nella parte superiore](../media/mam-azure-portal-add-lob-app-action.png)
+3. Specificare il nome dell'app, l'identificatore del bundle nel campo Identificatore dell'app e la piattaforma (iOS o Android).
 
-  ![Screenshot del pannello Aggiungi app personalizzata](../media/mam-azure-portal-add-app-details.png)
+   ![Screenshot del pannello Aggiungi app personalizzata](../media/mam-azure-portal-add-app-details.png)
 
-  Questo passaggio crea una voce unica per l'app. L'app viene visualizzata anche nell'elenco App di destinazione di un criterio MAM del tenant, come descritto nel passaggio successivo.
+   Questo passaggio crea una voce unica per l'app. L'app viene visualizzata anche nell'elenco App di destinazione di un criterio MAM del tenant, come descritto nel passaggio successivo.
 
 ## <a name="step-3-apply-mam-policies"></a>Passaggio 3: Applicare i criteri MAM
 Dopo aver caricato nel servizio i metadati dell'app, questa appare nell'elenco delle app. È ora possibile [creare un nuovo criterio o usare un criterio esistente](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) e applicarlo all'app line-of-business aggiunta nel passaggio 2.
@@ -72,12 +72,12 @@ Per la modifica di dettagli dell'app come il nome o l'identificatore bundle è n
 ##  <a name="remove-apps"></a>Rimuovere app
 È possibile rimuovere un'app line-of-business dall'elenco di app. L'app viene rimossa dall'elenco e l'associazione ai criteri MAM viene eliminata. L'app, tuttavia, non viene rimossa o disinstallata dal dispositivo dell'utente.  
 
-1.  Nel [portale di Azure](https://portal.azure.com/) passare a **Gestione di applicazioni mobili di Intune** > **Impostazioni**. Nel pannello **Impostazioni** scegliere **Line-of-business** per aprire l'elenco delle app esistenti.  
-2.  Chiudere l'app da rimuovere e scegliere **(...)**.
+1. Nel [portale di Azure](https://portal.azure.com/) passare a **Gestione di applicazioni mobili di Intune** > **Impostazioni**. Nel pannello **Impostazioni** scegliere **Line-of-business** per aprire l'elenco delle app esistenti.  
+2. Chiudere l'app da rimuovere e scegliere **(...)**.
 
-  ![Screenshot del pannello App line-of-business con il menu con puntini di sospensione](../media/mam-azure-portal-lob-context-menu.png)
-3.  Scegliere **Elimina applicazione** per eliminare l'app.
+   ![Screenshot del pannello App line-of-business con il menu con puntini di sospensione](../media/mam-azure-portal-lob-context-menu.png)
+3. Scegliere **Elimina applicazione** per eliminare l'app.
 
-  ![Screenshot del pannello line-of-business con l'opzione di eliminazione dell'applicazione](../media/mam-azure-portal-delete-app.png)
+   ![Screenshot del pannello line-of-business con l'opzione di eliminazione dell'applicazione](../media/mam-azure-portal-delete-app.png)
 
-  Le app vengono rimosse dall'elenco di app line-of-business e dall'elenco delle app di destinazione nel criterio MAM.
+   Le app vengono rimosse dall'elenco di app line-of-business e dall'elenco delle app di destinazione nel criterio MAM.

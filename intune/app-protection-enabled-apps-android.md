@@ -2,28 +2,28 @@
 title: App Android con criteri di protezione delle app
 titlesuffix: Microsoft Intune
 description: Informazioni su cosa aspettarsi da un'app Android con criteri di protezione.
-keywords: 
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af25dc918907e086441a89f222985a75199bbe95
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 450bcd9c807bdfae16e9c2fa1eb813b00444df65
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Aspettative dalla gestione dell'app per Android con criteri di protezione delle app 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Informazioni su cosa aspettarsi da app Android con criteri di protezione delle app. I criteri di protezione delle app si applicano solo quando le app vengono usate in un contesto professionale, ad esempio quando si accede a un'app con un account aziendale o quando si accede a file archiviati nel percorso OneDrive dell'azienda.
 ##  <a name="accessing-apps"></a>Accesso alle app
@@ -75,9 +75,11 @@ Sono supportati i tipi di file seguenti:
 * **Documenti:** PDF, PPDF
 
 ------------
-|**pfile**|**text**|
-|----|----|
-|Pfile è un formato "wrapper" generico per i file protetti. Incapsula il contenuto crittografato e le licenze di Azure Information Protection. e può essere usato per proteggere qualsiasi tipo di file.|I file di testo, ad esempio i file XML, CSV e così via, possono essere aperti nell'app anche se sono protetti. Tipi di file: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+
+|                                                                                 <strong>pfile</strong>                                                                                 |                                                                      <strong>text</strong>                                                                      |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pfile è un formato "wrapper" generico per i file protetti. Incapsula il contenuto crittografato e le licenze di Azure Information Protection. e può essere usato per proteggere qualsiasi tipo di file. | I file di testo, ad esempio i file XML, CSV e così via, possono essere aperti nell'app anche se sono protetti. Tipi di file: txt, ptxt, csv, pcsv, log, plog, xml, pxml. |
+
 ---------------
 ## <a name="next-steps"></a>Passaggi successivi
 [Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app](app-protection-enabled-apps-ios.md)

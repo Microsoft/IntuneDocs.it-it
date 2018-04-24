@@ -1,29 +1,29 @@
 ---
 title: Proteggere app e dati
-description: "Questo argomento illustra le varie funzionalità e caratteristiche disponibili in Intune per proteggere le app e i dati aziendali."
-keywords: 
+description: Questo argomento illustra le varie funzionalità e caratteristiche disponibili in Intune per proteggere le app e i dati aziendali.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 59168615548d3c7da8dc284476227ed0f01ceffe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2a05444c757b8e99ca0b897acfcd6238d960aeb2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Proteggere app e dati con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune protegge i dati aziendali tra più livelli di tecnologia. A livello di identità, l'accesso condizionale protegge l'accesso ai servizi consentendo solo l'accesso da dispositivi conformi e gestiti. A livello di applicazione client, la gestione di applicazioni per dispositivi mobili (MAM) consente di evitare la perdita dei dati impedendo lo spostamento dei dati in app o percorsi di archiviazione di dati non protetti e cancellando i dati quando un dispositivo viene smarrito o rubato. È consigliabile usare questi due livelli di protezione insieme, in modo da proteggere i dati assicurando al tempo stesso la produttività dei dipendenti mobili.
 

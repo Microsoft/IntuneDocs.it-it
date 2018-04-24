@@ -1,27 +1,27 @@
 ---
 title: Usare dispositivi gestiti per lo svolgimento del lavoro | Microsoft Docs
 description: Informazioni su cosa significa registrare un dispositivo nel sistema di gestione con Intune.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 28e455230213da30fcf371a29b4862982f1a514b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usare dispositivi gestiti per lo svolgimento del lavoro
 Microsoft Intune è un componente software che consente alle organizzazioni di gestire dispositivi (ad esempio smartphone, tablet e PC), app e altre risorse aziendali come la posta elettronica. Questo strumento permette ai dipendenti di accedere alle informazioni di lavoro praticamente da qualsiasi luogo su quasi tutti i dispositivi e, al tempo stesso, contribuisce a proteggere le informazioni aziendali.

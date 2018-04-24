@@ -1,37 +1,37 @@
 ---
 title: Registrare il dispositivo Windows 10 in Intune | Documentazione Microsoft
 description: Registrare un dispositivo Windows 10 1511 in Intune
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ba0535e388ac730ad04cda898c2299f98686ff1d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: bc9a351b24e35359f628a9af9ac906ed0c41a6ff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrare il dispositivo Windows 10 in Intune
 
   > [!NOTE]
   > Windows 10 funziona in tutti i tipi di dispositivi. Su desktop, telefono o tablet, i passaggi da seguire sono gli stessi, anche se sembrano leggermente diversi dalle immagini in questa pagina.
 
-1.  Fare clic su **Start**.
+1. Fare clic su **Start**.
 
-  - Se si usa un dispositivo **Windows 10 Desktop** andare al **menu Start**.
-  - Se si usa un dispositivo **Windows 10 Mobile**, andare alla **schermata Start** e quindi scorrere verso l'elenco **Tutte le app**.
+   - Se si usa un dispositivo **Windows 10 Desktop** andare al **menu Start**.
+   - Se si usa un dispositivo **Windows 10 Mobile**, andare alla **schermata Start** e quindi scorrere verso l'elenco **Tutte le app**.
 
 2. Aprire l'app **Impostazioni** di Windows cercando "impostazioni" nella barra di ricerca.
 

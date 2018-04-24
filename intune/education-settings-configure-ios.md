@@ -3,8 +3,8 @@ title: Impostazioni di Intune per l'app Classroom iOS
 titleSuffix: Microsoft Intune
 description: Informazioni sulle impostazioni di Intune che è possibile usare per controllare le impostazioni per l'app Classroom nei dispositivi iOS.
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 063287ac1bf3441092ff7c9daea5102314384b7d
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Come configurare le impostazioni di Intune per l'app Classroom iOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introduzione
 [Classroom](https://itunes.apple.com/app/id1085319084) è un'app progettata per consentire ai docenti di gestire l'insegnamento e di controllare i dispositivi degli studenti in aula. Con questa app, un docente può ad esempio:

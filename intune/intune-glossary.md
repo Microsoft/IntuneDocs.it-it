@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: f5f413ed050bd5f5620d0e15d5584a7db06eaaff
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2b59ed38329462ad8d8db604979c8eb725f7973a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Glossario di Microsoft Intune
 Informazioni sulle definizioni dei termini comuni usati in Microsoft Intune.
@@ -39,11 +39,13 @@ Informazioni sulle definizioni dei termini comuni usati in Microsoft Intune.
 |Portale di Azure|La nuova console per Intune [Altre informazioni](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[Bring your own device](/intune/device-enrollment). Gli utenti possono installare l'app del portale aziendale di Intune nel dispositivo ed eseguire la registrazione per accedere alle risorse della società come posta elettronica, applicazioni aziendali, dati aziendali e supporto.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Profilo certificato|Usare questo tipo di criteri per [proteggere l'accesso alle risorse aziendali](/intune/certificates-configure) con certificati quando si usano profili Wi-Fi, VPN o di posta elettronica.|
@@ -55,6 +57,7 @@ Informazioni sulle definizioni dei termini comuni usati in Microsoft Intune.
 |Criteri personalizzati|[Questi criteri vengono usati](/intune/custom-settings-configure) quando i criteri di configurazione generali non contengono un'impostazione integrata in grado di soddisfare le proprie esigenze. È possibile usare un criterio personalizzato per creare un'impostazione simile ad Apple Configurator o URI OMA.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Distribuzione|Azione di invio di un'app o un criterio a un dispositivo o a un utente gestito. Questa azione ora è denominata *assegnazione*.|
@@ -62,6 +65,7 @@ Informazioni sulle definizioni dei termini comuni usati in Microsoft Intune.
 |Profili di dispositivo|[Questi profili](/intune/device-profile-create) consentono di configurare una vasta gamma di impostazioni di sicurezza, funzionalità e accesso nei dispositivi gestiti.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |Profilo di posta elettronica|Questi criteri possono essere usati per definire le [impostazioni di accesso alla posta elettronica](/intune/email-settings-configure) nei dispositivi mobili, riducendo al minimo le configurazioni che l'utente finale deve eseguire.|
@@ -70,21 +74,25 @@ Informazioni sulle definizioni dei termini comuni usati in Microsoft Intune.
 |Registrazione|Microsoft Intune usa la [registrazione](/intune/device-enrollment) per gestire i dispositivi e consentire l'accesso alle risorse.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|[Servizio Microsoft](https://technet.microsoft.com/library/mt228265.aspx) per gli utenti di Intune con 150 licenze in un piano idoneo. Con questo servizio, gli esperti Microsoft possono collaborare con l'utente per l'uso e l'esecuzione di Intune.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Gruppi|I gruppi consentono di [raccogliere insieme logicamente gli utenti o i dispositivi](/intune/groups-get-started). Ad esempio, è possibile creare un gruppo di tutti i PC Windows. Sarà quindi possibile assegnare app e profili a questi gruppi.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Strategia ibrida|Configurazione in cui è possibile gestire i dispositivi registrati con Intune tramite la console di System Center Configuration Manager.|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Portale di Azure|Il portale di Azure che viene usato per la maggior parte delle operazioni di gestione di Intune.|
@@ -93,11 +101,13 @@ Informazioni sulle definizioni dei termini comuni usati in Microsoft Intune.
 |Argomento|Consente di visualizzare l'[hardware e il software installato](/intune/device-inventory) nei dispositivi gestiti.|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Modalità tutto schermo|Configurata come parte di un [profilo di restrizione dei dispositivi](/intune/device-restrictions-configure), questa modalità consente di bloccare i dispositivi. È ad esempio possibile configurare un dispositivo di vendita al dettaglio per consentire solo l'esecuzione di alcune app.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Managed Browser|[Applicazione per Web browser](/intune/app-configuration-managed-browser) che è possibile assegnare nell'organizzazione usando Intune. Un criterio di Managed Browser consente di configurare un elenco Consenti o Blocca che limita i siti Web che gli utenti di Managed Browser possono visitare.|
@@ -110,17 +120,20 @@ Informazioni sulle definizioni dei termini comuni usati in Microsoft Intune.
 
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Protocollo di gestione di dispositivi standard di settore usato da molti produttori di hardware per abilitare il controllo delle funzionalità dei dispositivi mobili e dei PC.|
 |URI OMA|Open Mobile Alliance Uniform Resource Identifier. Consente di identificare le impostazioni di singoli dispositivi conformi allo standard OMA-DM. Queste impostazioni possono essere usate nei [profili personalizzati di Intune](/intune/custom-settings-configure) quando non è disponibile alcuna impostazione predefinita in grado di soddisfare le proprie esigenze.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |Reimpostazione del passcode|Funzionalità di Intune che consente di forzare l'utente finale a [reimpostare il passcode](/intune/device-passcode-reset) sui dispositivi supportati.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Blocco remoto|Funzionalità di Intune che consente di [bloccare i dispositivi supportati](/intune/device-remote-lock), anche se non si è in possesso del dispositivo.|
@@ -128,6 +141,7 @@ Informazioni sulle definizioni dei termini comuni usati in Microsoft Intune.
 
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |Cancellazione selettiva|La [cancellazione selettiva](/intune/device-company-data-remove) rimuove solo i dati aziendali protetti dai criteri di protezione delle app, inclusi le impostazioni e i profili di posta elettronica da un dispositivo. La cancellazione selettiva lascia i dati personali dell'utente sul dispositivo.|
@@ -135,6 +149,7 @@ Informazioni sulle definizioni dei termini comuni usati in Microsoft Intune.
 |Sottoscrizione|Il contratto immesso consente di accedere a un tenant di Intune.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Applicazione di terze parti che funziona con Intune per fornire [funzionalità di assistenza remota](/intune/device-profile-android-teamviewer) per il dispositivo Android gestito con Intune.|
@@ -142,12 +157,15 @@ Informazioni sulle definizioni dei termini comuni usati in Microsoft Intune.
 |Termini e condizioni|Tipo di criteri assegnati agli utenti che contengono informazioni che gli utenti devono [leggere e accettare](/intune/terms-and-conditions-create) prima di poter usare il portale aziendale per registrarsi e accedere al proprio lavoro.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |App e libri acquistati con Volume Purchase Program|Alcuni App Store consentono di acquistare più licenze per un'app o un libro da usare nell'azienda. Intune consente di gestire le app e i libri [acquistati tramite questo programma](/intune/vpp-apps). È possibile importare le informazioni sulle licenze dall'App Store, tenere traccia del numero di licenze usate e impedire di installare più copie dell'app rispetto a quelle possedute.|
 |Profilo VPN|Criteri che assegnano le [impostazioni VPN](/intune/vpn-settings-configure) ai dispositivi gestiti, riducendo al minimo le configurazioni da parte dell'utente.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Profilo Wi-Fi|Criteri che assegnano le [impostazioni di rete wireless](/intune/wi-fi-settings-configure) ai dispositivi per consentire agli utenti di connettersi alla rete aziendale senza la necessità di conoscere o configurare le impostazioni.
+
+|               |                                                                                                                                                                                                 |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Profilo Wi-Fi | Criteri che assegnano le [impostazioni di rete wireless](/intune/wi-fi-settings-configure) ai dispositivi per consentire agli utenti di connettersi alla rete aziendale senza la necessità di conoscere o configurare le impostazioni. |
+

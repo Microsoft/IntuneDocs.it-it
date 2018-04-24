@@ -1,27 +1,27 @@
 ---
 title: Come configurare le impostazioni di posta elettronica di Microsoft Intune
-titleSuffix: 
+titleSuffix: ''
 description: Informazioni su come configurare Microsoft Intune per creare connessioni alla posta elettronica aziendale nei dispositivi gestiti.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: f51854bfb198ca65cc5fc82bad0e3b3befbb173a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Come configurare le impostazioni di posta elettronica in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 È possibile usare i profili di posta elettronica per configurare i dispositivi gestiti con le impostazioni necessarie per connettersi e sincronizzarsi con la posta elettronica aziendale. Ciò consente di garantire che le impostazioni siano standard in tutti i dispositivi e anche di ridurre le chiamate al servizio di supporto da parte di utenti finali che non conoscono le impostazioni di posta elettronica corrette.
 

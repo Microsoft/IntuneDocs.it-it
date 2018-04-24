@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a47e1388f640f96c2650e284ae0a5311fd816ba7
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 22018a241664a02aa99b9a3b1a53aa559ab42db5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Usare criteri personalizzati per consentire e bloccare app per dispositivi Samsung KNOX Standard
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Seguire le procedure riportate in questo argomento per creare un criterio Microsoft Intune personalizzato allo scopo di creare uno degli elementi seguenti:
 
@@ -39,21 +39,21 @@ Queste impostazioni possono essere usate solo dai dispositivi che eseguono Samsu
 3. Fornire un nome e una descrizione del criterio (facoltativa) e quindi, nella sezione **Impostazioni URI OMA**, scegliere **Aggiungi**.
 4. Nella finestra di dialogo **Aggiungi o modifica impostazione URI OMA** indicare quanto segue. Per un elenco di app bloccate sul dispositivo, specificare le informazioni seguenti:
     
-    - **Nome dell'impostazione.** Immettere **PreventStartPackages**.
-    - **Descrizione dell'impostazione.** Immettere una descrizione (facoltativa), ad esempio 'Elenco delle app bloccate'.
-    -   **Tipo di dati.** Scegliere **Stringa** dall'elenco a discesa.
-    -   **URI OMA.** Immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -   **Valore.** Immettere l'elenco dei nomi di pacchetti di app che si vuole bloccare. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
+   - **Nome dell'impostazione.** Immettere **PreventStartPackages**.
+   - **Descrizione dell'impostazione.** Immettere una descrizione (facoltativa), ad esempio 'Elenco delle app bloccate'.
+   - **Tipo di dati.** Scegliere **Stringa** dall'elenco a discesa.
+   - **URI OMA.** Immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+   - **Valore.** Immettere l'elenco dei nomi di pacchetti di app che si vuole bloccare. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
 
-    Per un elenco di app che gli utenti del dispositivo sono autorizzati a installare da Google Play Store, escludendo tutte le altre app, specificare le informazioni seguenti:
+     Per un elenco di app che gli utenti del dispositivo sono autorizzati a installare da Google Play Store, escludendo tutte le altre app, specificare le informazioni seguenti:
 
-    - **Nome dell'impostazione.** Immettere **AllowInstallPackages**.
-    - **Descrizione dell'impostazione.** Immettere una descrizione (facoltativa), ad esempio 'Elenco delle app che gli utenti possono installare da Google Play.'
-    - **Tipo di dati.** Scegliere **Stringa** dall'elenco a discesa.
-    - **URI OMA.** Immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
-    - **Valore.** Immettere l'elenco dei nomi di pacchetti che si vuole consentire. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
+   - **Nome dell'impostazione.** Immettere **AllowInstallPackages**.
+   - **Descrizione dell'impostazione.** Immettere una descrizione (facoltativa), ad esempio 'Elenco delle app che gli utenti possono installare da Google Play.'
+   - **Tipo di dati.** Scegliere **Stringa** dall'elenco a discesa.
+   - **URI OMA.** Immettere **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**
+   - **Valore.** Immettere l'elenco dei nomi di pacchetti che si vuole consentire. Come delimitatore è possibile usare **; : ,** o **|**. (Esempio: pacchetto1;pacchetto2;)
 
-4. Fare clic su **OK** e quindi su **Salva criterio**. 
+5. Fare clic su **OK** e quindi su **Salva criterio**. 
 
 >[!TIP]
 > È possibile trovare l'ID pacchetto di un'app selezionando l'app in Google Play Store. L'ID del pacchetto è contenuto nell'URL della pagina dell'app. Ad esempio, l'ID pacchetto dell'app Microsoft Word è **com.microsoft.office.word**.

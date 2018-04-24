@@ -1,25 +1,25 @@
 ---
-title: "Integrare Jamf Pro con Microsoft Intune per la conformità"
-titlesuffix: 
-description: "Usare i criteri di conformità dei dispositivi Microsoft Intune con l'accesso condizionale di Azure Active Directory per proteggere i dispositivi gestiti Jamf."
-keywords: 
+title: Integrare Jamf Pro con Microsoft Intune per la conformità
+titlesuffix: ''
+description: Usare i criteri di conformità dei dispositivi Microsoft Intune con l'accesso condizionale di Azure Active Directory per proteggere i dispositivi gestiti Jamf.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 01/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b040c6aa7001e8ebdd7c05571276428c7ef9bd
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cdeb3a21af2b4cf020d3e5029eeb5b0bc31db062
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrare Jamf Pro con Intune per la conformità
 
@@ -56,20 +56,20 @@ Per connettere Intune a Jamf Pro, è possibile:
 6. Fare clic su **Crea applicazione**.
 7. Salvare il nuovo **ID applicazione**, quindi aprire **Impostazioni** e passare ad **Accesso all'API** > **Chiavi** per creare una nuova chiave dell'applicazione. Immettere una **Descrizione**, il tempo prima della **Scadenza**, quindi salvare la chiave dell'applicazione.
 
-  > [!IMPORTANT]
-  > La chiave dell'applicazione viene visualizzata solo una volta durante questo processo. Assicurarsi quindi di salvarla in una posizione da cui sia possibile recuperarla facilmente.
+   > [!IMPORTANT]
+   > La chiave dell'applicazione viene visualizzata solo una volta durante questo processo. Assicurarsi quindi di salvarla in una posizione da cui sia possibile recuperarla facilmente.
 
 8. Aprire **Impostazioni**, quindi passare ad **Accesso all'API** > **Autorizzazioni necessarie** ed eliminare tutte le autorizzazioni.
 
-  > [!NOTE]
-  > Aggiungere un nuova autorizzazione richiesta. È possibile che l'applicazione funzioni correttamente solo se è dotata dell'unica l'autorizzazione richiesta.
+   > [!NOTE]
+   > Aggiungere un nuova autorizzazione richiesta. È possibile che l'applicazione funzioni correttamente solo se è dotata dell'unica l'autorizzazione richiesta.
 
-9.  Selezionare **API di Microsoft Intune** e fare clic su **Seleziona**.
+9. Selezionare **API di Microsoft Intune** e fare clic su **Seleziona**.
 10. Scegliere **Send device attributes to Microsoft Intune** (Invia gli attributi dei dispositivi a Microsoft Intune) e fare clic su **Seleziona**.
 11. Fare clic sul pulsante **Concedi autorizzazioni** dopo aver salvato le autorizzazioni necessarie per l'applicazione.
 
-  > [!NOTE]
-  > Se la chiave dell'applicazione scade, è necessario creare una nuova chiave dell'applicazione in Microsoft Azure e quindi aggiornare i dati di accesso condizionale in Jamf Pro. Per evitare interruzioni del servizio, Azure consente di mantenere attive sia la chiave precedente sia la nuova chiave.
+    > [!NOTE]
+    > Se la chiave dell'applicazione scade, è necessario creare una nuova chiave dell'applicazione in Microsoft Azure e quindi aggiornare i dati di accesso condizionale in Jamf Pro. Per evitare interruzioni del servizio, Azure consente di mantenere attive sia la chiave precedente sia la nuova chiave.
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Abilitare Intune per l'integrazione con Jamf Pro
 

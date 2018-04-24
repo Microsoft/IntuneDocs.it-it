@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9c3da7d517bd26bf694ea7bfa658ec1a4688d8f8
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 93dece592ce5280b1650303484bd24169814465c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Regole di accesso a Exchange per dispositivi mobili
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Le regole di accesso Exchange per i dispositivi mobili determinano il livello di accesso dei dispositivi a Exchange ActiveSync. Queste impostazioni interessano tutti i dispositivi mobili, inclusi quelli non registrati in Microsoft Intune. È possibile iniziare definendo una **Regola predefinita** che verrà applicata a tutti i dispositivi mobili a cui non è applicata una regola personalizzata.
 
@@ -37,11 +37,13 @@ La tabella seguente descrive i livelli di accesso gestiti da Exchange ActiveSync
 
 Una strategia di accesso è una combinazione di una **Regola predefinita** e di **Eccezioni della piattaforma** che si applicano a tutti i dispositivi mobili connessi a Exchange. La tabella seguente elenca alcune strategie di accesso di esempio.
 
-|Strategia di accesso|Descrizione|
-|-------------------|---------------|
-|Elenco Consenti|È possibile usare un *elenco Consenti* per concedere l'accesso a un elenco di dispositivi noti e limitarlo per tutti gli altri. A tale scopo, è necessario creare regole personalizzate per le piattaforme del dispositivo autorizzate ad accedere alla cassetta postale dell'utente. Non appena si crea tale regola, è necessario impostare la regola di accesso predefinita in modo da bloccare o mettere in quarantena tutti gli altri dispositivi. Per aggiungere un nuovo dispositivo all'elenco Consenti, creare una nuova regola personalizzata.|
-|Elenco Blocca|È possibile usare un *elenco Blocca* per concedere l'accesso a tutti i dispositivi per impostazione predefinita, bloccandolo solo per i dispositivi che non devono accedere all'organizzazione. Per creare un elenco Blocca, è necessario creare regole personalizzate per bloccare le piattaforme del dispositivo che non devono essere sincronizzate con le cassette postali dell'organizzazione. Si consiglia di impostare la regola predefinita in modo da consentire l'accesso a tutti i dispositivi che non siano esplicitamente bloccati dalle regole esistenti. Per aggiungere un nuovo dispositivo o un insieme di dispositivi all'elenco Blocca, creare una nuova regola personalizzata.|
-|Uso combinato di elenchi Consenti e Blocca|Oltre a creare elenchi Consenti e Blocca, è possibile mettere in quarantena nuovi dispositivi mobili quando vengono introdotti nell'organizzazione durante la valutazione. Se ad esempio si dispone di un elenco Blocca per i dispositivi mobili non consentiti e di un elenco Consenti per i dispositivi mobili consentiti nell'organizzazione, è possibile impostare la regola predefinita su Quarantena. Tutti gli altri dispositivi vengono automaticamente messi in quarantena. Ciò consente di rilevare i nuovi dispositivi quando vengono introdotti nell'organizzazione e di decidere se aggiungerli all'elenco Consenti o Blocca.|
+
+|    Strategia di accesso    |                                                                                                                                                                                                                                                                                       Descrizione                                                                                                                                                                                                                                                                                        |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Elenco Consenti       |                                                                                  È possibile usare un <em>elenco Consenti</em> per concedere l'accesso a un elenco di dispositivi noti e limitarlo per tutti gli altri. A tale scopo, è necessario creare regole personalizzate per le piattaforme del dispositivo autorizzate ad accedere alla cassetta postale dell'utente. Non appena si crea tale regola, è necessario impostare la regola di accesso predefinita in modo da bloccare o mettere in quarantena tutti gli altri dispositivi. Per aggiungere un nuovo dispositivo all'elenco Consenti, creare una nuova regola personalizzata.                                                                                  |
+|      Elenco Blocca       |                              È possibile usare un <em>elenco Blocca</em> per concedere l'accesso a tutti i dispositivi per impostazione predefinita, bloccandolo solo per i dispositivi che non devono accedere all'organizzazione. Per creare un elenco Blocca, è necessario creare regole personalizzate per bloccare le piattaforme del dispositivo che non devono essere sincronizzate con le cassette postali dell'organizzazione. Si consiglia di impostare la regola predefinita in modo da consentire l'accesso a tutti i dispositivi che non siano esplicitamente bloccati dalle regole esistenti. Per aggiungere un nuovo dispositivo o un insieme di dispositivi all'elenco Blocca, creare una nuova regola personalizzata.                               |
+| Uso combinato di elenchi Consenti e Blocca | Oltre a creare elenchi Consenti e Blocca, è possibile mettere in quarantena nuovi dispositivi mobili quando vengono introdotti nell'organizzazione durante la valutazione. Se ad esempio si dispone di un elenco Blocca per i dispositivi mobili non consentiti e di un elenco Consenti per i dispositivi mobili consentiti nell'organizzazione, è possibile impostare la regola predefinita su Quarantena. Tutti gli altri dispositivi vengono automaticamente messi in quarantena. Ciò consente di rilevare i nuovi dispositivi quando vengono introdotti nell'organizzazione e di decidere se aggiungerli all'elenco Consenti o Blocca. |
+
 Nella procedura riportata di seguito viene descritto come creare una regola personalizzata.
 
 ## <a name="create-a-default-access-rule"></a>Creare una regola di accesso predefinita

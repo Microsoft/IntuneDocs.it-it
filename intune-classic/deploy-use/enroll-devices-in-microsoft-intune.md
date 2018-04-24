@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99a4273a5f3ef2e1696d2fdc1c2a9b9f251b5b87
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 3cae9bc1b76dba3b896957f60ca08cca53423267
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrare i dispositivi per la gestione in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 È possibile registrare i dispositivi, inclusi i PC Windows, per abilitare la gestione di dispositivi mobili (MDM, Mobile Device Management) con Microsoft Intune. Questo argomento descrive i diversi modi per registrare i dispositivi mobili per la gestione con Intune. Il modo di registrazione dei dispositivi varia a seconda del tipo di dispositivo in uso, della proprietà e del livello di gestione necessario. La registrazione BYOD (Bring Your Own Device) consente agli utenti di registrare i propri telefoni, tablet o PC personali. La registrazione dei dispositivi di proprietà dell'azienda rende possibili scenari di gestione come la registrazione automatica, i dispositivi condivisi o i requisiti di registrazione pre-autorizzati.
 
@@ -124,7 +124,7 @@ I PC gestiti con il software del client di Intune non possono essere completamen
 
 Intune può gestire le piattaforme dei dispositivi seguenti:
 
-[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## <a name="next-steps"></a>Passaggi successivi
 - [Prerequisiti per la registrazione del dispositivo](prerequisites-for-enrollment.md)

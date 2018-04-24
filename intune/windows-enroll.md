@@ -15,15 +15,15 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
-ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
+ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurare la registrazione dei dispositivi Windows
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Questo argomento offre agli amministratori IT informazioni utili per semplificare la registrazione di Windows per gli utenti. Dopo aver [configurato Intune](setup-steps.md) gli utenti registrano i dispositivi Windows [accedendo](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) con l'account aziendale o dell'istituto di istruzione.  
 
@@ -48,7 +48,7 @@ Le organizzazioni che possono usare la registrazione automatica possono anche co
 **Supporto di più utenti**<br>
 I dispositivi, che hanno Windows 10 Creators Update e che sono aggiunti al dominio di Azure Active Directory, sono ora supportati per la gestione multiutente da Intune. Quando gli utenti standard accedono con le proprie credenziali di Azure AD ricevono le app e i criteri assegnati al nome utente. Gli utenti non possono attualmente usare il portale aziendale per scenari self-service, ad esempio l'installazione di app.
 
-[!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Semplificare la registrazione di Windows senza Azure AD Premium
 È possibile semplificare la registrazione per gli utenti creando un alias DNS (Domain Name Server), un tipo di record CNAME che reindirizza automaticamente le richieste di registrazione ai server di Intune. Se non si crea un record di risorse DNS CNAME, gli utenti che provano a connettersi a Intune devono immettere il nome del server Intune durante la registrazione.

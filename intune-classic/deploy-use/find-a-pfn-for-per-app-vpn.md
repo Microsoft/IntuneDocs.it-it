@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de1a5beafae900a21f685cf1daeb2302cbf245b3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c6bbc1bd477cde7eecb78b78c8efa4bfde46976f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Trovare un nome della famiglia di pacchetti (PFN) per la configurazione VPN per app
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 È possibile trovare un PFN per configurare una VPN per app in due modi diversi.
 
@@ -37,7 +37,7 @@ la sintassi di Get-AppxPackage è:
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
 > [!NOTE]
-Può essere necessario eseguire PowerShell come amministratore per recuperare il PFN.
+> Può essere necessario eseguire PowerShell come amministratore per recuperare il PFN.
 
 Ad esempio, per ottenere informazioni su tutte le app universali installate nel computer, usare `Get-AppxPackage`.
 

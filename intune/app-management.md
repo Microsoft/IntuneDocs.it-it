@@ -1,31 +1,30 @@
 ---
 title: Informazioni sulla gestione delle app in Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Nozioni fondamentali sulla gestione delle app con Microsoft Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/09/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 737c2900b2cdd57cb4dfc8373d06111a52e772b2
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 86cb0dfb67e81a7abbdc8f38dcbf5539b9855adb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune consente all'amministratore IT di gestire le app per dispositivi mobili usate dai dipendenti dell'azienda. Questa funzionalità si aggiunge alla gestione dei dispositivi e alla protezione dei dati. Una delle priorità dell'uso di questa funzionalità è fare in modo che gli utenti finali abbiano accesso alle app necessarie per svolgere il proprio lavoro. Non sempre questo compito risulta semplice da svolgere, perché:
 - Esiste una vasta gamma di piattaforme per dispositivi e tipi di applicazione.
@@ -73,11 +72,11 @@ Il carico di lavoro **App per dispositivi mobili** contiene numerose informazion
 Le informazioni riportate di seguito corrispondono alle opzioni disponibili nel pannello **App per dispositivi mobili**.
 
 ### <a name="manage"></a>Gestire
-- **App**: selezionare questa opzione per aggiungere, visualizzare, assegnare e monitorare le app usate dai dipendenti. Per ulteriori informazioni, vedere gli articoli seguenti:
+- **App**: selezionare questa opzione per aggiungere, visualizzare, assegnare e monitorare le app usate dai dipendenti. Per altre informazioni, vedere gli articoli seguenti:
     - [Aggiungere app](apps-add.md)
     - [Assegnare le app](apps-deploy.md)
     - [Monitoraggio le applicazioni](apps-monitor.md)
-- **Criteri di configurazione dell'app**: consentono di specificare le impostazioni che potrebbero essere necessarie quando l'utente esegue un'app. Per ulteriori informazioni, vedere gli articoli seguenti:
+- **Criteri di configurazione dell'app**: consentono di specificare le impostazioni che potrebbero essere necessarie quando l'utente esegue un'app. Per altre informazioni, vedere gli articoli seguenti:
     - [Criteri di configurazione delle app per Intune](app-configuration-policies-overview.md)
         - [Criteri di configurazione delle app iOS](app-configuration-policies-use-ios.md)
         - [Criteri di configurazione delle app Android](app-configuration-policies-use-android.md)
@@ -91,7 +90,7 @@ Le informazioni riportate di seguito corrispondono alle opzioni disponibili nel 
 Per altri dettagli, vedere [Manage apps](app-management.md) (Gestire le app).
 
 ### <a name="monitor"></a>Monitoraggio
-- **Licenze dell'app**: consente di visualizzare, assegnare e monitorare le app acquistate con Volume Purchase Program dagli App Store. Per ulteriori informazioni, vedere gli articoli seguenti:
+- **Licenze dell'app**: consente di visualizzare, assegnare e monitorare le app acquistate con Volume Purchase Program dagli App Store. Per altre informazioni, vedere gli articoli seguenti:
     - [App iOS acquistate tramite Volume Purchase Program ](vpp-apps-ios.md)
     - [App acquistate con Volume Purchase Program da Microsoft Store per le aziende](windows-store-for-business.md)
 - **App individuate**: mostra tutte le app assegnate da Intune e installate in un dispositivo.

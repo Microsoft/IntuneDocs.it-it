@@ -1,26 +1,26 @@
 ---
 title: Usare dispositivi personalizzati in Microsoft Intune - Azure | Microsoft Docs
 description: Aggiungere o creare un profilo per usare le impostazioni personalizzate per i dispositivi Windows, Android e iOS con Microsoft Intune
-keywords: 
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Creare un profilo con impostazioni personalizzate in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 È possibile che Intune non abbia tutte le impostazioni predefinite di cui l'utente necessita. Oppure l'utente vuole usare un'impostazione disponibile in altri profili di dispositivo. Per aggiungere tali impostazioni, creare un profilo di dispositivo e configurarlo con impostazioni personalizzate.
 

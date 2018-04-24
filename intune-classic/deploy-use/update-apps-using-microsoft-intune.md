@@ -1,29 +1,29 @@
 ---
 title: Aggiornare le app
-description: "Usare le informazioni riportate in questo argomento per comprendere come aggiornare le app quando è richiesta una nuova versione."
-keywords: 
+description: Usare le informazioni riportate in questo argomento per comprendere come aggiornare le app quando è richiesta una nuova versione.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b89b087c13847af06187cf3b6a046b9730a07826
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 4ee48f751c181cd12c8e549c5aa4aab0c6252add
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="update-apps-using-microsoft-intune"></a>Aggiornare le app con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune consente di gestire gli aggiornamenti delle app. Usare le informazioni riportate in questo argomento per comprendere come aggiornare le app quando è richiesta una nuova versione.
 

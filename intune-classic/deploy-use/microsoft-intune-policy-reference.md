@@ -1,29 +1,29 @@
 ---
 title: Informazioni di riferimento sui criteri di configurazione
-description: "Usare le informazioni in questo argomento per decidere più facilmente quali criteri di Microsoft Intune è necessario usare per gestire i dispositivi."
-keywords: 
+description: Usare le informazioni in questo argomento per decidere più facilmente quali criteri di Microsoft Intune è necessario usare per gestire i dispositivi.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 46bc3408f861bcd249ca5071abf1ee80733af10d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Informazioni di riferimento sui criteri di configurazione di Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Usare le informazioni in questo argomento per decidere più facilmente quali criteri di configurazione di Microsoft Intune è necessario usare per gestire i dispositivi.
 
@@ -102,12 +102,13 @@ Si applica solo a Windows Phone e ai dispositivi Windows registrati.
 
 ## <a name="common-mobile-device-settings"></a>Impostazioni del dispositivo mobile comuni
 
-|Nome criteri|Quando usarli|
-|---------------|------------------------|
-|**Criteri di Exchange ActiveSync**|Configurare le impostazioni funzionali e di sicurezza del dispositivo mobile per i dispositivi gestiti da Exchange ActiveSync.<br /><br />Per informazioni dettagliate, vedere [Impostazioni dei criteri di Exchange ActiveSync in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md).|
-|**Criteri di sicurezza dei dispositivi mobili**|<ul><li>Configura le impostazioni per i dispositivi mobili (tutte le piattaforme), ad esempio:<br /><br /><ul><li>Sicurezza</li><li>Crittografia</li><li>Sistema</li><li>Posta elettronica</li><li>Applicazioni</li></ul></li></ul>
+|                  Nome criteri                   |                                                                                                                       Quando usarli                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Criteri di Exchange ActiveSync</strong>   | Configurare le impostazioni funzionali e di sicurezza del dispositivo mobile per i dispositivi gestiti da Exchange ActiveSync.<br /><br />Per informazioni dettagliate, vedere [Impostazioni dei criteri di Exchange ActiveSync in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md). |
+| <strong>Criteri di sicurezza dei dispositivi mobili</strong> |                                  <ul><li>Configura le impostazioni per i dispositivi mobili (tutte le piattaforme), ad esempio:<br /><br /><ul><li>Sicurezza</li><li>Crittografia</li><li>Sistema</li><li>Posta elettronica</li><li>Applicazioni</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-Microsoft Intune include ora **criteri di configurazione** distinti per ogni piattaforma del dispositivo e tali criteri includono le impostazioni più aggiornate che è possibile usare. È possibile continuare a usare i criteri di sicurezza del dispositivo mobile. Tutte le distribuzioni esistenti continueranno a funzionare, ma è consigliabile pianificare la migrazione ai nuovi criteri di configurazione non appena possibile.<br />Per informazioni dettagliate, vedere [Impostazioni dei criteri di sicurezza dei dispositivi mobili in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
+> Microsoft Intune include ora **criteri di configurazione** distinti per ogni piattaforma del dispositivo e tali criteri includono le impostazioni più aggiornate che è possibile usare. È possibile continuare a usare i criteri di sicurezza del dispositivo mobile. Tutte le distribuzioni esistenti continueranno a funzionare, ma è consigliabile pianificare la migrazione ai nuovi criteri di configurazione non appena possibile.<br />Per informazioni dettagliate, vedere [Impostazioni dei criteri di sicurezza dei dispositivi mobili in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>Criteri per i computer Windows gestiti dal client software di Intune
 

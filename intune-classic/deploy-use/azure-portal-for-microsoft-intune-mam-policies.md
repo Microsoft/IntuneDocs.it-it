@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>Portale di Azure per i criteri di protezione delle app di Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Il portale di Azure consente di creare e gestire i criteri di protezione delle app per:
 
@@ -32,9 +32,9 @@ Il portale di Azure consente di creare e gestire i criteri di protezione delle a
 - App in esecuzione su dispositivi **non registrati** in qualsiasi soluzione MDM.
 - App in esecuzione in dispositivi **registrati in una soluzione MDM di terze parti**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Il portale di Azure è la nuova console di amministrazione per la creazione di criteri di protezione delle app, ma è anche possibile creare un criterio di protezione delle app che supporta le app per dispositivi registrati in Intune tramite la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) per gli scenari MDM.
-
+> 
 > È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri di protezione delle app disponibili. Inoltre, se si creano criteri di protezione delle app nella console di amministrazione di Intune e nel portale di Azure, i criteri creati nel portale di Azure sostituiranno quelli creati nella console di amministrazione di Intune. In questo scenario, i criteri di protezione delle app del portale di Azure verranno applicati alle app e distribuiti agli utenti.
 
 

@@ -1,24 +1,24 @@
 ---
 title: Criteri
 titlesuffix: Microsoft Intune
-description: "Argomento di riferimento per la categoria Policy delle raccolte di entità nell'API data warehouse di Intune."
+description: Argomento di riferimento per la categoria Policy delle raccolte di entità nell'API data warehouse di Intune.
 keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 0cfeffd4cb466d8bcfc2da072e7e6c028a4e0c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>Informazioni di riferimento per le entità della categoria Policy
 
@@ -157,10 +157,12 @@ PolicyKey|Chiave dei criteri, può essere unita con i criteri per ottenere polic
 
 La tabella seguente elenca il numero di utenti con stato completato, in sospeso, non riuscito o di errore ogni giorno. Il numero riflette i dati per ogni profilo del tipo di criteri. Ad esempio, se un utente è nello stato completato per tutti i relativi criteri assegnati, incrementa di uno il contatore di completamento per tale giorno. Se a un utente sono assegnati due profili, uno con stato completato e l'altro con stato di errore, viene considerato l'utente con lo stato di errore. L'entità PolicyUserActivity elenca il numero di utenti in ogni stato in un giorno specifico negli ultimi 30 giorni.
 
-|Proprietà  |Descrizione  |Esempio  |
-|---------|---------|---------|
-|DateKey|Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse.|20160703|
-|Pending|Numero di dispositivi univoci in sospeso.|123|
-|Operazione completata|Numero di dispositivi univoci in stato completato.|12|
-PolicyKey|Chiave dei criteri, può essere unita con i criteri per ottenere policyName.|Windows 10 baseline|
-|Errore|Numero di dispositivi univoci in stato di errore.|10|
+
+| Proprietà  |                                         Descrizione                                         |       Esempio       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | Chiave data in cui l'archiviazione del profilo di configurazione dispositivo è stata registrata nel data warehouse. |      20160703       |
+|  Pending  |                         Numero di dispositivi univoci in sospeso.                          |         123         |
+| Operazione completata |                         Numero di dispositivi univoci in stato completato.                          |         12          |
+| PolicyKey |                Chiave dei criteri, può essere unita con i criteri per ottenere policyName.                 | Windows 10 baseline |
+|   Errore   |                          Numero di dispositivi univoci in stato di errore.                           |         10          |
+

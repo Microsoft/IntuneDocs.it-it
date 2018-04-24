@@ -1,29 +1,29 @@
 ---
 title: Impostazioni dei criteri di Windows 10
 description: Usare le impostazioni dei criteri indicate nell'argomento per configurare le impostazioni personalizzate integrate per dispositivi registrati Windows 10 Desktop e Windows 10 Mobile.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Impostazioni dei criteri di Intune per i dispositivi Windows 10 in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Questo argomento contiene informazioni che consentono di comprendere le impostazioni dei criteri di Intune che è possibile usare per gestire i dispositivi Windows 10. Leggere questo argomento e le procedure descritte nell'articolo [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 
@@ -192,7 +192,7 @@ Tutte le impostazioni sono solo per Windows 10 Desktop.
 |**Analizza file di archivio**|Consente a Defender di analizzare i file archiviati come i file con estensione zip o cab.|
 |**Analisi dei messaggi di posta elettronica**|Consente a Defender di analizzare i messaggi di posta elettronica non appena arrivano sul dispositivo|
 |**Analizza unità rimovibili**|Consente a Defender di analizzare le unità rimovibili, ad esempio le chiavette USB|
-|**Analizza unità di rete mappate**|Consente a Defender di analizzare i file nelle unità di rete mappate.<br>Se i file sull'unità sono di sola lettura, Defender non sarà in grado di rimuovere il malware che rileva in essi.|
+|**Analizza unità di rete mappate**|Consente a Defender di analizzare i file nelle unità di rete mappate.<br>Se i file presenti nell'unità sono di sola lettura, Defender non sarà in grado di rimuovere eventuali malware in essi contenuti.|
 |**Analizza file aperti da cartelle di rete condivise**|Consente a Defender di analizzare i file sulle unità di rete condivise, ad esempio quelli a cui si accede da un percorso UNC.<br>Se i file sull'unità sono di sola lettura, Defender non sarà in grado di rimuovere il malware che rileva in essi.|
 |**Intervallo di aggiornamento della firma**|Specifica l'intervallo in base a cui Defender controlla la presenza di nuovi file di firma.|
 |**Consenti protezione cloud**|Consente o blocca la ricezione di informazioni sull'attività del malware da parte di Microsoft Active Protection Service dai dispositivi gestiti. Queste informazioni vengono usate per migliorare il servizio in futuro.|
@@ -203,7 +203,7 @@ Tutte le impostazioni sono solo per Windows 10 Desktop.
 |**Processi da escludere durante l'esecuzione di un'analisi o l'utilizzo della protezione in tempo reale**|Aggiunge uno o più processi del tipo **.exe**, **.com** o **.scr** all'elenco di esclusione. Questi processi non sono inclusi nelle analisi in tempo reale o pianificate.|
 
 
-### <a name="updates"></a>Updates
+### <a name="updates"></a>Aggiornamenti
 
 |Nome impostazione|Informazioni aggiuntive (se richieste)|
 |----------------|---------------|

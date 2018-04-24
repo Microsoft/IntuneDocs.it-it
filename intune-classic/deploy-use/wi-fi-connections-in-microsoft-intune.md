@@ -1,35 +1,35 @@
 ---
 title: Connessioni Wi-Fi
 description: Usare i profili Wi-Fi per consentire agli utenti di connettersi alle reti Wi-Fi.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99ac426d2210aa22a7c0151aea59e14b848bbe1f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5eebe251371d466421bfe936a1f991c988e490b0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Configurare i dispositivi per connettersi alle reti Wi-Fi aziendali
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Usare i profili Wi-Fi in di Microsoft Intune per distribuire le impostazioni di rete wireless agli utenti e ai dispositivi dell'organizzazione. Quando si distribuisce un profilo Wi-Fi, gli utenti hanno accesso alla rete Wi-Fi aziendale senza doverla configurare.
 
 Si immagini, ad esempio, di installare una nuova rete Wi-Fi denominata **Contoso Wi-Fi** e di voler configurare tutti i dispositivi iOS in modo che si connettano alla rete. Questa è la procedura:
 
-![Riepilogo del processo del profilo Wi-Fi](..\media\wi-fi-process-diagram.png)
+![Riepilogo del processo del profilo Wi-Fi](../media/wi-fi-process-diagram.png)
 
 1.   Creare un profilo Wi-Fi che contiene le impostazioni necessarie per connettersi alla rete wireless **Contoso Wi-Fi**.
 
@@ -67,23 +67,25 @@ Per i dispositivi che eseguono i sistemi operativi Windows 8.1 o Windows 10 Desk
 
 Non esistono impostazioni consigliate per questo tipo di criteri. È necessario creare un criterio personalizzato.
 
-3.  Specificare un nome e una descrizione per il profilo.
+3. Specificare un nome e una descrizione per il profilo.
 
 4. Specificare i valori delle **connessioni di rete**.
- - **SSID (Service Set Identifier)**: selezionare questa opzione se si vuole che gli utenti visualizzino il nome di rete e non l'identificatore SSID.
- - **Connetti quando la rete non sta trasmettendo il nome (SSID)**: selezionare questa opzione per consentire ai dispositivi di connettersi alla rete quando non è visibile nell'elenco delle reti (perché è nascosta e non sta trasmettendo il nome).
+   - **SSID (Service Set Identifier)**: selezionare questa opzione se si vuole che gli utenti visualizzino il nome di rete e non l'identificatore SSID.
+   - **Connetti quando la rete non sta trasmettendo il nome (SSID)**: selezionare questa opzione per consentire ai dispositivi di connettersi alla rete quando non è visibile nell'elenco delle reti (perché è nascosta e non sta trasmettendo il nome).
 
 5. Configurare le **Impostazioni di sicurezza** per la piattaforma selezionata. Le impostazioni disponibili dipendono dal tipo di sicurezza selezionato. Le opzioni sono descritte in [Impostazioni di sicurezza](#security-settings).
 
 6. Configurare le **impostazioni proxy** (solo iOS e MAC OS X).
 
-    |Nome impostazione|Altre informazioni|Quando utilizzarlo|
-    |----------------|-------------------|-------------|
-    |**Impostazioni proxy per questa connessione Wi-Fi**|Scegliere il tipo di impostazioni proxy:<br /><br />-   **Nessuno** (valore predefinito)<br />-   **Manuale**: consente di specificare manualmente l'URL e il numero di porta del server proxy.<br />-   **Automatico**: consente di usare un file di configurazione per configurare il server proxy.|Sempre|
-    |**Indirizzo server proxy** e **Numero porta**|Specificare l'URL e il numero di porta del server proxy.|Se l'opzione **Impostazioni proxy per questa connessione Wi-Fi** è impostata su **Manuale**.|
-    |**URL server proxy**|Specificare l'URL del file che contiene le impostazioni del server proxy.|Se l'opzione **Impostazioni proxy per questa connessione Wi-Fi** è impostata su **Automatico**.|
 
-7.  Salvare il profilo Wi-Fi
+   |                              Nome impostazione                              |                                                                                                                                Altre informazioni                                                                                                                                 |                                            Quando utilizzarlo                                            |
+   |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+   |       <strong>Impostazioni proxy per questa connessione Wi-Fi</strong>        | Scegliere il tipo di impostazioni proxy:<br /><br />-   <strong>Nessuno</strong> (valore predefinito)<br />-   <strong>Manuale</strong>: consente di specificare manualmente l'URL e il numero di porta del server proxy.<br />-   <strong>Automatico</strong>: consente di usare un file di configurazione per configurare il server proxy. |                                              Sempre                                               |
+   | <strong>Indirizzo server proxy</strong> e <strong>Numero porta</strong> |                                                                                                              Specificare l'URL e il numero di porta del server proxy.                                                                                                               |  Se l'opzione <strong>Impostazioni proxy per questa connessione Wi-Fi</strong> è impostata su <strong>Manuale</strong>.   |
+   |                   <strong>URL server proxy</strong>                    |                                                                                                      Specificare l'URL del file che contiene le impostazioni del server proxy.                                                                                                       | Se l'opzione <strong>Impostazioni proxy per questa connessione Wi-Fi</strong> è impostata su <strong>Automatico</strong>. |
+
+
+7. Salvare il profilo Wi-Fi
 
 Il nuovo criterio viene visualizzato nel nodo **Criteri di configurazione** dell'area di lavoro **Criteri**. Per informazioni sulla distribuzione del profilo, vedere **Passaggi successivi**.
 

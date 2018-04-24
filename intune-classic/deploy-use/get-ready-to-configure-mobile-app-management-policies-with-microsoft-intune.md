@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 52cba4de7d19744e1a011071ac6c9bbb168ffb30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Prepararsi alla configurazione dei criteri di protezione delle app nel portale di Azure
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Questo argomento descrive i prerequisiti e i passaggi da completare **prima** di poter creare criteri di protezione delle app nel portale di Azure.
 
@@ -74,18 +74,18 @@ Per visualizzare l'elenco completo delle app Microsoft supportate, passare alla 
 
 ## <a name="prerequisites"></a>Prerequisiti
 
--   **Sottoscrizione di Microsoft Intune**. Gli utenti devono avere le licenze di Intune per ottenere app con criteri di protezione delle app.
-Si dispone già di una sottoscrizione di Intune se si usa Intune per gestire i dispositivi. Si dispone di una sottoscrizione di Intune anche nel caso in cui sia stata acquistata una licenza di Enterprise Mobility Suite (EMS). Se si sta provando Intune per testare le funzionalità MAM, è possibile ottenere un account di valutazione nella [pagina di Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+- **Sottoscrizione di Microsoft Intune**. Gli utenti devono avere le licenze di Intune per ottenere app con criteri di protezione delle app.
+  Si dispone già di una sottoscrizione di Intune se si usa Intune per gestire i dispositivi. Si dispone di una sottoscrizione di Intune anche nel caso in cui sia stata acquistata una licenza di Enterprise Mobility Suite (EMS). Se si sta provando Intune per testare le funzionalità MAM, è possibile ottenere un account di valutazione nella [pagina di Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
-    Per verificare se si ha già una sottoscrizione di Intune, accedere alla pagina **Fatturazione** nel portale di Office.  Se si ha una sottoscrizione, Intune dovrebbe essere visualizzato come **Attivo** nella sezione delle sottoscrizioni.
+  Per verificare se si ha già una sottoscrizione di Intune, accedere alla pagina **Fatturazione** nel portale di Office.  Se si ha una sottoscrizione, Intune dovrebbe essere visualizzato come **Attivo** nella sezione delle sottoscrizioni.
 
--   Avere un **abbonamento a Office 365**, necessario per le operazioni seguenti:
+- Avere un **abbonamento a Office 365**, necessario per le operazioni seguenti:
 
   - Applicare criteri di protezione delle app alle app con supporto per più identità.
 
   - Creare account aziendali di SharePoint Online ed Exchange Online. Exchange locale e SharePoint locale non sono supportati.
 
--   **Configurazione di Skype for Business Online per l'autenticazione moderna**. Per altre informazioni, vedere [Enable modern authentication (Abilitare l'autenticazione moderna)](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+- **Configurazione di Skype for Business Online per l'autenticazione moderna**. Per altre informazioni, vedere [Enable modern authentication (Abilitare l'autenticazione moderna)](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) per creare utenti. Azure AD esegue l'autenticazione quando gli utenti aprono l'app e immettono le credenziali di lavoro.

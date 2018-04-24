@@ -14,15 +14,15 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5070052c0d4cce3cfd81a7bae259bc7dfb22e7f
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 3d46960e6ea7e2ae9bed6c0016ddc309bd15f572
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creare un profilo di dispositivo in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>Creare il profilo
 1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi** e cercare **Microsoft Intune**.
@@ -31,33 +31,33 @@ ms.lasthandoff: 03/20/2018
 
 3. Immettere le seguenti proprietà:
 
-    - **Nome**: immettere un nome descrittivo per il nuovo profilo.
-    - **Descrizione:** immettere una descrizione per il profilo. Facoltativa, ma consigliata.
-    - **Piattaforma**: selezionare il tipo di piattaforma:  
+   - **Nome**: immettere un nome descrittivo per il nuovo profilo.
+   - **Descrizione:** immettere una descrizione per il profilo. Facoltativa, ma consigliata.
+   - **Piattaforma**: selezionare il tipo di piattaforma:  
 
-        - **Android**
-        - **Android for Work**
-        - **iOS**
-        - **macOS**
-        - **Windows Phone 8.1**
-        - **Windows 8.1 e versioni successive**
-        - **Windows 10 e versioni successive**
+       - **Android**
+       - **Android for Work**
+       - **iOS**
+       - **macOS**
+       - **Windows Phone 8.1**
+       - **Windows 8.1 e versioni successive**
+       - **Windows 10 e versioni successive**
 
-    - **Tipo di profilo**: selezionare il tipo di profilo che si vuole creare. L'elenco dipende dalla piattaforma scelta.
-    - **Impostazioni**: gli argomenti seguenti descrivono le impostazioni per ogni tipo di profilo:
+   - **Tipo di profilo**: selezionare il tipo di profilo che si vuole creare. L'elenco dipende dalla piattaforma scelta.
+   - **Impostazioni**: gli argomenti seguenti descrivono le impostazioni per ogni tipo di profilo:
 
-        -  [Impostazioni delle funzionalità dei dispositivi](device-features-configure.md)
-        -  [Device restriction settings](device-restrictions-configure.md) (Impostazioni relative alle restrizioni dei dispositivi)
-        -  [Email settings](email-settings-configure.md) (Impostazioni di posta elettronica)
-        -  [VPN settings](vpn-settings-configure.md) (Impostazioni VPN)
-        -  [Wi-Fi settings](wi-fi-settings-configure.md) (Impostazioni Wi-Fi)
-        -  [Windows 10 edition upgrade settings](edition-upgrade-configure-windows-10.md) (Impostazioni di aggiornamento edizione di Windows 10)
-        -  [Certificate settings](certificates-configure.md) (Impostazioni dei certificati)
-        -  [Windows Information Protection settings](windows-information-protection-configure.md) (Impostazioni di Windows Information Protection)
-        -  [Education settings](education-settings-configure.md) (Impostazioni di Education)
-        -  [Custom settings](custom-settings-configure.md) (Impostazioni personalizzate)
+       -  [Impostazioni delle funzionalità dei dispositivi](device-features-configure.md)
+       -  [Device restriction settings](device-restrictions-configure.md) (Impostazioni relative alle restrizioni dei dispositivi)
+       -  [Email settings](email-settings-configure.md) (Impostazioni di posta elettronica)
+       -  [VPN settings](vpn-settings-configure.md) (Impostazioni VPN)
+       -  [Wi-Fi settings](wi-fi-settings-configure.md) (Impostazioni Wi-Fi)
+       -  [Windows 10 edition upgrade settings](edition-upgrade-configure-windows-10.md) (Impostazioni di aggiornamento edizione di Windows 10)
+       -  [Certificate settings](certificates-configure.md) (Impostazioni dei certificati)
+       -  [Windows Information Protection settings](windows-information-protection-configure.md) (Impostazioni di Windows Information Protection)
+       -  [Education settings](education-settings-configure.md) (Impostazioni di Education)
+       -  [Custom settings](custom-settings-configure.md) (Impostazioni personalizzate)
 
-    ![Screenshot di Crea profilo](./media/create-device-profile.png)
+     ![Screenshot di Crea profilo](./media/create-device-profile.png)
 
 4. Al termine selezionare **Crea**.
 

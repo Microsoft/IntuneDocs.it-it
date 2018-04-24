@@ -14,11 +14,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc73befb46f1f159d9a8c023bb5604517b9f73f4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="change-the-mdm-authority"></a>Cambiare l'autorità MDM
 A partire dalla versione 1610 di Configuration Manager, è possibile cambiare l'autorità MDM senza contattare il supporto tecnico Microsoft e senza dover annullare e ripetere la registrazione dei dispositivi gestiti esistenti. Questo argomento illustra la procedura da seguire per cambiare un tenant di Microsoft Intune esistente configurato da Intune e con l'autorità MDM impostata su **Microsoft Intune** (autonomo) a **Configuration Manager** (MDM ibrida) senza dover annullare e ripetere la registrazione dei dispositivi gestiti esistenti.
@@ -76,16 +76,16 @@ Quando si usano dispositivi iOS è necessario configurare il certificato APN in 
 
 1. **Scaricare una richiesta di firma del certificato**
 
-    1. Nella console di Configuration Manager passare ad **Amministrazione** &gt; **Servizi cloud** &gt; **Sottoscrizioni a Microsoft Intune** e selezionare **Crea richiesta certificato per servizio APN** per aprire la finestra di dialogo **Richiesta di firma del certificato per il servizio Apple Push Notification**.  
-    2. **Andare** al percorso per salvare il nuovo file di richiesta di firma del certificato (csr). Salvare il file della richiesta di firma del certificato (estensione csr) in locale.  
-    3. Fare clic su **Scarica**. Il nuovo file CSR di Microsoft Intune viene scaricato e salvato da Configuration Manager.   
+   1. Nella console di Configuration Manager passare ad **Amministrazione** &gt; **Servizi cloud** &gt; **Sottoscrizioni a Microsoft Intune** e selezionare **Crea richiesta certificato per servizio APN** per aprire la finestra di dialogo **Richiesta di firma del certificato per il servizio Apple Push Notification**.  
+   2. **Andare** al percorso per salvare il nuovo file di richiesta di firma del certificato (csr). Salvare il file della richiesta di firma del certificato (estensione csr) in locale.  
+   3. Fare clic su **Scarica**. Il nuovo file CSR di Microsoft Intune viene scaricato e salvato da Configuration Manager.   
 
-    > [!IMPORTANT]
-    > È necessario scaricare una nuova richiesta di firma del certificato. Non usare un file esistente. In caso contrario, l'operazione avrà esito negativo.  
+      > [!IMPORTANT]
+      > È necessario scaricare una nuova richiesta di firma del certificato. Non usare un file esistente. In caso contrario, l'operazione avrà esito negativo.  
 
-2.  Passare al [portale Apple Push Certificates](http://go.microsoft.com/fwlink/?LinkId=269844) ed eseguire l'accesso con lo **stesso** ID Apple usato in precedenza per creare e rinnovare il certificato APN impiegato in Intune autonomo.
+2. Passare al [portale Apple Push Certificates](http://go.microsoft.com/fwlink/?LinkId=269844) ed eseguire l'accesso con lo **stesso** ID Apple usato in precedenza per creare e rinnovare il certificato APN impiegato in Intune autonomo.
 
-    ![Pagina di accesso al portale Apple Push Certificates](../media/mdm-change-apns-portal.png)
+   ![Pagina di accesso al portale Apple Push Certificates](../media/mdm-change-apns-portal.png)
 
 3. Selezionare il certificato APN utilizzato in Intune autonomo e quindi fare clic su **Rinnova**.
 

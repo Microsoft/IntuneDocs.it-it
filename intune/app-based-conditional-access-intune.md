@@ -1,28 +1,28 @@
 ---
 title: Accesso condizionale basato su app con Intune
 description: Informazioni su come funziona l'accesso condizionale basato su app con Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 35d7be91201f8cf4fc3016363770b65bcea9ed72
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Accesso condizionale basato su app con Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 I [criteri di protezione delle app di Intune](app-protection-policy.md) consentono di proteggere i dati aziendali sui dispositivi registrati in Intune. I criteri di protezione delle app possono essere usati anche nei dispositivi di proprietà dei dipendenti non registrati per la gestione in Intune. In questo caso, anche se il dispositivo non viene gestito dall'azienda, è comunque necessario assicurarsi che i dati e le risorse aziendali siano protetti.
 
@@ -56,29 +56,29 @@ In questo esempio, l'amministratore ha applicato criteri di protezione delle app
 
 ![Processo di accesso condizionale basato su app illustrato in un diagramma di flusso](./media/ca-intune-common-ways-3.png)
 
-1.  L'utente tenta di eseguire l'autenticazione in Azure AD dall'app Outlook.
+1. L'utente tenta di eseguire l'autenticazione in Azure AD dall'app Outlook.
 
-2.  L'utente viene reindirizzato all'App Store per installare un'app broker quando tenta di eseguire l'autenticazione per la prima volta. L'app broker può essere Microsoft Authenticator per iOS o il Portale aziendale Microsoft per i dispositivi Android.
+2. L'utente viene reindirizzato all'App Store per installare un'app broker quando tenta di eseguire l'autenticazione per la prima volta. L'app broker può essere Microsoft Authenticator per iOS o il Portale aziendale Microsoft per i dispositivi Android.
 
- Se gli utenti tentano di usare un'app di posta elettronica nativa, vengono reindirizzati all'App Store per installare l'app Outlook.
+   Se gli utenti tentano di usare un'app di posta elettronica nativa, vengono reindirizzati all'App Store per installare l'app Outlook.
 
-3.  L'app broker viene installata nel dispositivo.
+3. L'app broker viene installata nel dispositivo.
 
-4.  L'app broker avvia il processo di registrazione di Azure AD, che crea un record di dispositivo in Azure AD. Si tratta di un processo diverso dalla registrazione per la gestione di dispositivi mobili (MDM), ma questo record è necessario per applicare i criteri di accesso condizionale nel dispositivo.
+4. L'app broker avvia il processo di registrazione di Azure AD, che crea un record di dispositivo in Azure AD. Si tratta di un processo diverso dalla registrazione per la gestione di dispositivi mobili (MDM), ma questo record è necessario per applicare i criteri di accesso condizionale nel dispositivo.
 
-5.  L'app broker verifica l'identità dell'app. È presente un livello di sicurezza, in modo che l'app broker possa verificare se l'app è autorizzata per l'uso da parte dell'utente.
+5. L'app broker verifica l'identità dell'app. È presente un livello di sicurezza, in modo che l'app broker possa verificare se l'app è autorizzata per l'uso da parte dell'utente.
 
-6.  L'app broker invia l'ID client dell'app ad Azure AD nell'ambito del processo di autenticazione utente per verificare se è incluso nell'elenco dei criteri approvati.
+6. L'app broker invia l'ID client dell'app ad Azure AD nell'ambito del processo di autenticazione utente per verificare se è incluso nell'elenco dei criteri approvati.
 
-7.  Azure AD consente all'utente di eseguire l'autenticazione e di usare l'app in base all'elenco dei criteri approvati. Se l'app non è presente nell'elenco, Azure AD nega l'accesso all'app.
+7. Azure AD consente all'utente di eseguire l'autenticazione e di usare l'app in base all'elenco dei criteri approvati. Se l'app non è presente nell'elenco, Azure AD nega l'accesso all'app.
 
-8.  L'app Outlook comunica con il servizio cloud di Outlook per avviare la comunicazione con Exchange Online.
+8. L'app Outlook comunica con il servizio cloud di Outlook per avviare la comunicazione con Exchange Online.
 
-9.  Il servizio cloud di Outlook comunica con Azure AD per recuperare i token di accesso del servizio Exchange Online per l'utente.
+9. Il servizio cloud di Outlook comunica con Azure AD per recuperare i token di accesso del servizio Exchange Online per l'utente.
 
-10.  L'app Outlook comunica con Exchange Online per recuperare la posta elettronica aziendale dell'utente.
+10. L'app Outlook comunica con Exchange Online per recuperare la posta elettronica aziendale dell'utente.
 
-11.  La posta elettronica aziendale viene recapitata nella cassetta postale dell'utente.
+11. La posta elettronica aziendale viene recapitata nella cassetta postale dell'utente.
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Creare criteri di accesso condizionale basato su app](app-based-conditional-access-intune-create.md)

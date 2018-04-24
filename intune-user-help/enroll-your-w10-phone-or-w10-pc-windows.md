@@ -1,27 +1,27 @@
 ---
 title: Registrare il dispositivo Windows 10 in Intune | Documentazione Microsoft
 description: Descrive come registrare un dispositivo Windows 10 Mobile o Desktop in Intune
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3debd0177df0aa0bdf5cb3cea8bf18054407b87
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 22d23751aaa3416fb13c7b08451ea91c3ee308e2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Registrare i dispositivi Windows 10 in Intune
 
@@ -35,13 +35,13 @@ Per saperne di più Altre informazioni su cosa accade quando si [registra il dis
 
 2. Digitare la frase "informazioni sul PC" nella __barra di ricerca__ e quindi selezionare __Informazioni sul PC__.
 
- ![impostazioni di ricerca per Informazioni sul PC](media/searching_for_about_your_pc.png)
+   ![impostazioni di ricerca per Informazioni sul PC](media/searching_for_about_your_pc.png)
 
-3.  In __Impostazioni__ verrà visualizzato un elenco di informazioni sulla versione di Windows 10 installata nel PC. In questo elenco individuare la __Versione__.
+3. In __Impostazioni__ verrà visualizzato un elenco di informazioni sulla versione di Windows 10 installata nel PC. In questo elenco individuare la __Versione__.
 
- ![Windows 10 Desktop - Informazioni sul PC](media/settings_about_pc.png)
+   ![Windows 10 Desktop - Informazioni sul PC](media/settings_about_pc.png)
 
-4.  Se la versione è __1607 o successiva__, continuare con [questa procedura](enroll-your-w10-device-access-work-or-school.md). Se la versione è __1511 o precedente__, continuare con [questa procedura](enroll-your-w10-device-your-account.md).
+4. Se la versione è __1607 o successiva__, continuare con [questa procedura](enroll-your-w10-device-access-work-or-school.md). Se la versione è __1511 o precedente__, continuare con [questa procedura](enroll-your-w10-device-your-account.md).
 
 ## <a name="windows-10-mobile-devices"></a>Dispositivi Windows 10 Mobile        
 

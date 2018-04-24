@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f53796e08ee962a23ab02929c4451478480e281
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c69dec5903f25b9e7f09f6a20fc35068f3329d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Questo argomento contiene suggerimenti per la risoluzione dei problemi di registrazione dei dispositivi. Se queste informazioni non consentono di risolvere il problema, vedere [Come ottenere supporto per Microsoft Intune](how-to-get-support-for-microsoft-intune.md) per trovare altri modi per ottenere assistenza.
 
@@ -87,9 +87,9 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 8.  Rimuovere i dispositivi nel modo opportuno, ad esempio quelli che non sono più in uso o quelli con definizioni errate.
 
 > [!NOTE]
-
+> 
 > È possibile evitare il limite di registrazione usando l'account del manager di registrazione dispositivi, come descritto in [Registrare i dispositivi di proprietà dell'azienda con il manager di registrazione dispositivi in Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
->
+> 
 > Un account utente che viene aggiunto all'account Manager di registrazione dispositivi non sarà in grado di completare la registrazione quando vengono applicati i criteri di accesso condizionale per l'accesso utente specifico.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Portale aziendale temporaneamente non disponibile
@@ -154,7 +154,7 @@ Gli amministratori possono eliminare i dispositivi nel portale di Azure Active D
 **Problema:** quando si aggiunge un secondo dominio verificato ad AD FS, gli utenti con il suffisso del nome principale (UPN) dell'utente del secondo dominio potrebbero non essere in grado di accedere ai portali o di registrare dispositivi.
 
 
-**Risoluzione:** i clienti di Microsoft Office 365 che usano l'accesso Single Sign-On (SSO) tramite AD FS 2.0 e dispongono di più domini di primo livello per i suffissi UPN degli utenti all'interno dell'organizzazione (ad esempio, @contoso.com o @fabrikam.com) devono distribuire un'istanza separata del servizio federativo AD FS 2.0 per ogni suffisso. È ora disponibile il [rollup per AD FS 2.0](http://support.microsoft.com/kb/2607496) che interagisce con l'opzione **SupportMultipleDomain** per consentire al server AD FS di supportare questo scenario senza richiedere altri server AD FS 2.0. Per altre informazioni, vedere [questo blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+<strong>Risoluzione:</strong> i clienti di Microsoft Office 365 che usano l'accesso Single Sign-On (SSO) tramite AD FS 2.0 e dispongono di più domini di primo livello per i suffissi UPN degli utenti all'interno dell'organizzazione (ad esempio, @contoso.com o @fabrikam.com) devono distribuire un'istanza separata del servizio federativo AD FS 2.0 per ogni suffisso. È ora disponibile il [rollup per AD FS 2.0](http://support.microsoft.com/kb/2607496) che interagisce con l'opzione <strong>SupportMultipleDomain</strong> per consentire al server AD FS di supportare questo scenario senza richiedere altri server AD FS 2.0. Per altre informazioni, vedere [questo blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Problemi di Android
@@ -195,27 +195,27 @@ Se la soluzione 2 non funziona, chiedere agli utenti di eseguire questa procedur
 
 1. Avviare l'app Smart Manager nel dispositivo.
 
-  ![Selezionare l'icona Smart Manager nel dispositivo](./media/smart-manager-app-icon.png)
+   ![Selezionare l'icona Smart Manager nel dispositivo](./media/smart-manager-app-icon.png)
 
 2. Scegliere il riquadro **Batteria**.
 
-  ![Selezionare il riquadro Batteria](./media/smart-manager-battery-tile.png)
+   ![Selezionare il riquadro Batteria](./media/smart-manager-battery-tile.png)
 
 3. In **Risparmio energetico app** o **Ottimizzazione app** selezionare **Dettaglio**.
 
-  ![Selezionare Dettaglio in Risparmio energetico app o Ottimizzazione app](./media/smart-manager-app-power-saving-detail.png)
+   ![Selezionare Dettaglio in Risparmio energetico app o Ottimizzazione app](./media/smart-manager-app-power-saving-detail.png)
 
 4. Scegliere **Portale aziendale** nell'elenco delle app.
 
-  ![Selezionare Portale aziendale nell'elenco delle app](./media/smart-manager-company-portal.png)
+   ![Selezionare Portale aziendale nell'elenco delle app](./media/smart-manager-company-portal.png)
 
 5. Scegliere **Disattiva**.
 
-  ![Selezionare Disattiva nella finestra di dialogo Ottimizzazione app](./media/smart-manager-app-optimization-turned-off.png)
+   ![Selezionare Disattiva nella finestra di dialogo Ottimizzazione app](./media/smart-manager-app-optimization-turned-off.png)
 
 6. In **Risparmio energetico app** o **Ottimizzazione app** verificare che l'app Portale aziendale sia disattivata.
 
-  ![Verificare che l'app Portale aziendale sia disattivata](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![Verificare che l'app Portale aziendale sia disattivata](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>Installazione profilo non riuscita
