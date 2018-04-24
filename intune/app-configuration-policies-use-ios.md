@@ -2,28 +2,28 @@
 title: Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 titlesuffix: Microsoft Intune
 description: Informazioni su come usare i criteri di configurazione delle app per specificare i dati di configurazione per un'app iOS in fase di esecuzione.
-keywords: 
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee17ceae0af131f683341f2346f92ad5ef03ed16
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni quando gli utenti eseguono un'app iOS. Questi criteri non vengono assegnati direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi assegnata. Le impostazioni dei criteri vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
 

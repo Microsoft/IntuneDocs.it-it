@@ -15,20 +15,22 @@ ms.assetid: 777484A7-09CE-4409-987F-76B3F87DFE93
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de14444376cb2998f17f406f084c428523ef4e4f
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: e78d2c75710b97ec67b64bd745629e7863778bd0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="user-device-association"></a>Associazione utente-dispositivo
 
 L'entità **UserDeviceAssociation** contiene le associazioni utente-dispositivo presenti nell'organizzazione.
 
-| Name               | Descrizione                                                                                      | Esempio                |
+
+|        Name        |                                           Descrizione                                            |        Esempio         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
-| UserKey            | Identificatore univoco dell'utente nel data warehouse (chiave sostitutiva).                              | 123                    |
-| DeviceKey          | Identificatore univoco del dispositivo nel data warehouse.                                            | 123                    |
-| CreatedDateTimeUTC | Data e ora della creazione dell'associazione utente-dispositivo. Viene usato il formato UTC.                                | 23/11/2016 12.00.00 |
-| IsDeleted          | Indica che l'utente ha annullato la registrazione del dispositivo e che l'associazione non è più aggiornata. | True/False             |
-| EndedDateTimeUTC   | Data e ora in formato UTC in cui IsDeleted è stato impostato su **True**.                                              | 23/06/2017 12.00.00 |
+|      UserKey       |              Identificatore univoco dell'utente nel data warehouse (chiave sostitutiva).               |          123           |
+|     DeviceKey      |                      Identificatore univoco del dispositivo nel data warehouse.                      |          123           |
+| CreatedDateTimeUTC |           Data e ora della creazione dell'associazione utente-dispositivo. Viene usato il formato UTC.           | 23/11/2016 12.00.00 |
+|     IsDeleted      | Indica che l'utente ha annullato la registrazione del dispositivo e che l'associazione non è più aggiornata. |       True/False       |
+|  EndedDateTimeUTC  |              Data e ora in formato UTC in cui IsDeleted è stato impostato su <strong>True</strong>.               | 23/06/2017 12.00.00 |
+

@@ -2,26 +2,26 @@
 title: Registrare il dispositivo macOS in Intune con il Portale aziendale | Microsoft Docs
 description: Descrive come registrare un dispositivo macOS in Intune con l'app Portale aziendale
 keywords: Mac OS X, macOS, OS X
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 04/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4f01a5aa9567ea914da2c36756e8c3f12f55c58d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: e3990c0670516de907ac048b844152014db5be57
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrare il dispositivo macOS in Intune con l'app Portale aziendale
 
@@ -30,11 +30,12 @@ La possibilità di accedere alle app, ai dati e alle risorse dell'organizzazione
 > [!NOTE]
 > Vedere [qui](enroll-your-device-in-intune-macos-legacy.md) istruzioni per la registrazione dei dispositivi macOS nelle versioni precedenti di macOS.
 
-1. Trovare __Safari__ nel __Dock__ e aprire una nuova finestra, quindi aprire il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+1. Trovare __Safari__ nel __Dock__ e aprire una nuova finestra, quindi aprire il [sito Web del portale aziendale](https://portal.manage.microsoft.com).
 
 2. Accedere al sito Web del portale aziendale con l'account aziendale o dell'istituto di istruzione.
 
-  [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
+   [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
+
 
 3. Dopo aver eseguito l'accesso, fare clic su **Menu** in alto a sinistra e selezionare **Dispositivi personali**.
 
@@ -54,8 +55,8 @@ La possibilità di accedere alle app, ai dati e alle risorse dell'organizzazione
 
 8. Il computer Mac mostrerà un messaggio che indica che **"CompanyPortal" è un'applicazione scaricata da Internet. Aprirla?** Fare clic su **Apri**.
 
-  > [!NOTE]
-  > Intune deve accedere al computer per assicurarsi che il dispositivo sia sufficientemente sicuro per accedere alle risorse dell'organizzazione. Se il computer rifiuta di aprire l'app Portale aziendale, provare a [disattivare Gatekeeper](https://support.apple.com/HT202491) e quindi ad aprire l'app.
+   > [!NOTE]
+   > Intune deve accedere al computer per assicurarsi che il dispositivo sia sufficientemente sicuro per accedere alle risorse dell'organizzazione. Se il computer rifiuta di aprire l'app Portale aziendale, provare a [disattivare Gatekeeper](https://support.apple.com/HT202491) e quindi ad aprire l'app.
 
 9. La prima schermata visualizzata nell'app Portale aziendale richiede di **accedere** con lo stesso account aziendale o dell'istituto di istruzione usato per accedere al sito Web del Portale aziendale.
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 816a235136d91f2691e6be442036515544c004b2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Questo articolo fornisce risposte ad alcune domande frequenti su Gestione di applicazioni mobili (MAM) di Intune e sulla protezione delle app di Intune.
 
@@ -61,23 +61,23 @@ Questo articolo fornisce risposte ad alcune domande frequenti su Gestione di app
 
 **Quali sono i requisiti aggiuntivi per usare l'[app Outlook per dispositivi mobili](https://www.microsoft.com/outlook-com/mobile/)?**
 
-  1. L'utente finale deve avere l'app Outlook per dispositivi mobili installata nel dispositivo.
+1. L'utente finale deve avere l'app Outlook per dispositivi mobili installata nel dispositivo.
 
-  2. L'utente finale deve avere una licenza e una cassetta postale di [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) collegata al proprio account Azure Active Directory.
+2. L'utente finale deve avere una licenza e una cassetta postale di [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) collegata al proprio account Azure Active Directory.
 
-  >[!NOTE]
-  > L'app Outlook per dispositivi mobili attualmente supporta solo Microsoft Exchange Online e non supporta Exchange locale o Exchange in Office 365 dedicato.
+   >[!NOTE]
+   > L'app Outlook per dispositivi mobili attualmente supporta solo Microsoft Exchange Online e non supporta Exchange locale o Exchange in Office 365 dedicato.
 
 **Quali sono i requisiti aggiuntivi per usare le app [Word, Excel e PowerPoint](https://products.office.com/business/office)?**
 
-  1. L'utente finale deve avere una licenza per [Office 365 Business o Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) collegata all'account Azure Active Directory. La sottoscrizione deve includere le app di Office nei dispositivi mobili e può includere un account di archiviazione cloud con [OneDrive for Business](https://onedrive.live.com/about/business/). È possibile assegnare le licenze di Office 365 nel [portale di Office](http://portal.office.com) seguendo queste [istruzioni](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+1. L'utente finale deve avere una licenza per [Office 365 Business o Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) collegata all'account Azure Active Directory. La sottoscrizione deve includere le app di Office nei dispositivi mobili e può includere un account di archiviazione cloud con [OneDrive for Business](https://onedrive.live.com/about/business/). È possibile assegnare le licenze di Office 365 nel [portale di Office](http://portal.office.com) seguendo queste [istruzioni](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-  2. L'utente finale deve aver configurato un percorso gestito usando la funzionalità Salva con nome granulare nell'impostazione dei criteri di protezione delle applicazioni "Impedisci Salva con nome". Se il percorso gestito è OneDrive, ad esempio, l'app [OneDrive](https://onedrive.live.com/about/) deve essere configurata nell'app Word, Excel o PowerPoint dell'utente finale.
+2. L'utente finale deve aver configurato un percorso gestito usando la funzionalità Salva con nome granulare nell'impostazione dei criteri di protezione delle applicazioni "Impedisci Salva con nome". Se il percorso gestito è OneDrive, ad esempio, l'app [OneDrive](https://onedrive.live.com/about/) deve essere configurata nell'app Word, Excel o PowerPoint dell'utente finale.
 
-  3. Se il percorso gestito è OneDrive, l'app deve essere impostata come destinazione dei criteri di protezione delle app distribuiti all'utente finale.
+3. Se il percorso gestito è OneDrive, l'app deve essere impostata come destinazione dei criteri di protezione delle app distribuiti all'utente finale.
 
-  >[!NOTE]
-  > Le app per dispositivi mobili di Office attualmente supportano solo SharePoint Online e SharePoint locale.
+   >[!NOTE]
+   > Le app per dispositivi mobili di Office attualmente supportano solo SharePoint Online e SharePoint locale.
 
 **Perché è necessario un percorso gestito (ad esempio OneDrive) per Office?** Intune contrassegna tutti i dati nell'app come "aziendali" o "personali". Quando hanno origine da una sede aziendale, i dati vengono considerati "aziendali". Per le app di Office, Intune considera come sedi aziendali la posta elettronica (Exchange) o l'archiviazione cloud (app OneDrive con un account OneDrive for Business).
 
@@ -124,15 +124,15 @@ MAM (in iOS) consente attualmente un PIN a livello di applicazione con caratteri
 
 **In che modo Intune cancella i dati in remoto?** Intune può cancellare i dati delle app in tre modi diversi: cancellazione completa dei dati del dispositivo, cancellazione selettiva per MDM e cancellazione selettiva per MAM. Per altre informazioni sulla cancellazione remota per MDM, vedere [Proteggere i dati con la cancellazione selettiva o completa tramite Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Per altre informazioni sulla cancellazione selettiva con MAM, vedere [Cancellare i dati dell'app aziendale gestita con Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  1. **Che cos'è la cancellazione completa?** La [cancellazione completa](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) rimuove tutti i dati dell'utente e le impostazioni dal **dispositivo** ripristinandolo alle impostazioni predefinite di fabbrica. Il dispositivo verrà rimosso da Intune.
-  >[!NOTE]
-  > La cancellazione completa può essere eseguita solo sui dispositivi registrati con la gestione di dispositivi mobili (MDM) di Intune.
+1. **Che cos'è la cancellazione completa?** La [cancellazione completa](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) rimuove tutti i dati dell'utente e le impostazioni dal **dispositivo** ripristinandolo alle impostazioni predefinite di fabbrica. Il dispositivo verrà rimosso da Intune.
+   >[!NOTE]
+   > La cancellazione completa può essere eseguita solo sui dispositivi registrati con la gestione di dispositivi mobili (MDM) di Intune.
 
-  2. **Che cos'è la cancellazione selettiva per MDM?** Per informazioni sulla cancellazione selettiva, vedere [Proteggere i dati con la cancellazione selettiva o completa tramite Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe).
+2. **Che cos'è la cancellazione selettiva per MDM?** Per informazioni sulla cancellazione selettiva, vedere [Proteggere i dati con la cancellazione selettiva o completa tramite Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe).
 
-  3. **Che cos'è la cancellazione selettiva per MAM?** La cancellazione selettiva per MAM rimuove semplicemente i dati aziendali da un'app. La richiesta viene avviata tramite Intune nel portale di Azure. Per informazioni su come avviare una richiesta di cancellazione, vedere [Cancellare i dati dell'app aziendale gestita con Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md).
+3. **Che cos'è la cancellazione selettiva per MAM?** La cancellazione selettiva per MAM rimuove semplicemente i dati aziendali da un'app. La richiesta viene avviata tramite Intune nel portale di Azure. Per informazioni su come avviare una richiesta di cancellazione, vedere [Cancellare i dati dell'app aziendale gestita con Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md).
 
-  4. **A quale velocità viene eseguita la cancellazione selettiva per MAM?** Se l'utente sta usando l'app quando viene avviata la cancellazione selettiva, Intune App SDK controlla ogni 30 minuti la presenza di una richiesta di cancellazione selettiva dal servizio MAM di Intune. L'SDK verifica inoltre la presenza della cancellazione selettiva quando l'utente avvia l'app per la prima volta e accede con l'account aziendale o dell'istituto di istruzione.
+4. **A quale velocità viene eseguita la cancellazione selettiva per MAM?** Se l'utente sta usando l'app quando viene avviata la cancellazione selettiva, Intune App SDK controlla ogni 30 minuti la presenza di una richiesta di cancellazione selettiva dal servizio MAM di Intune. L'SDK verifica inoltre la presenza della cancellazione selettiva quando l'utente avvia l'app per la prima volta e accede con l'account aziendale o dell'istituto di istruzione.
 
 **Perché i servizi locali non funzionano con le app protette di Intune?** La protezione delle app di Intune dipende dalla coerenza dell'identità dell'utente tra l'applicazione e Intune App SDK. L'unico modo per garantire questo scenario è tramite l'autenticazione moderna. Esistono scenari in cui le app possono funzionare con una configurazione locale, ma non sono garantiti, né coerenti.
 

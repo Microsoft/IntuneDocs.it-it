@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 699d07daa1f16dd7746b531a1687ba97b06973a2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ea1cc3bc2d662a0d74c87fb5616f3626d580a7e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Proteggere i dispositivi con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune offre un set completo di funzionalità per la protezione dei dispositivi gestiti e dei dati archiviati in tali dispositivi. Leggere questo argomento per comprendere le nozioni fondamentali di queste funzionalità e per informazioni aggiuntive.
 

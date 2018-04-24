@@ -1,29 +1,28 @@
 ---
 title: Richiedere e fornire assistenza remota per i PC Windows
 description: Descrive i passaggi che l'utente finale e l'amministratore IT devono eseguire per fornire assistenza remota per i desktop Windows gestiti come PC e per l'avvio remoto di un PC.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bfa7f1dedecd47aeb30a12c5627a137b775d12a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 245d18b89be9b9884df6c7ee41436e747c0557fe
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Richiedere e fornire assistenza remota per i PC Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Le informazioni fornite in questo argomento sono valide solo per i desktop Windows gestiti come PC usando il client software di Intune.
 
@@ -60,7 +59,7 @@ Prima di stabilire la connessione e rispondere alle richieste di assistenza remo
 ## <a name="respond-to-a-remote-assistance-request"></a>Rispondere a una richiesta di assistenza remota
 
 1. Quando un utente invia una richiesta di assistenza remota, è possibile visualizzare quest'ultima nell'area di lavoro **Avvisi**, in **Monitoraggio** > **Assistenza remota**. Ad esempio:
-> ![Screenshot di una richiesta di assistenza remota](./media/team-viewer.png)
+   > ![Screenshot di una richiesta di assistenza remota](./media/team-viewer.png)
 
 <br>Se una richiesta non riceve una risposta per più di 4 ore, viene rimossa.
 2. Per accettare la richiesta, scegliere **Approva la richiesta e apri Assistenza remota**.

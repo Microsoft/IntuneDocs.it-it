@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ef4eac0e0841ba20a966f2ee30ed51659f25afa3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 6e4afa232309572016c3f585ecaf27032cafc7ba
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>Guida introduttiva: Pubblicare app per dispositivi mobili per gli utenti
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune offre agli utenti finali la possibilità di aumentare la produttività permettendo loro di accedere in modo semplice e rapido alle app per dispositivi mobili e desktop di cui hanno bisogno dai dispositivi che preferiscono. La disponibilità immediata di applicazioni consente agli utenti finali di ridurre il tempo e le energie da dedicare alla ricerca e all'installazione delle app corrette e quindi anche il numero di chiamate all'help desk per trovare le app di cui hanno bisogno.   
 

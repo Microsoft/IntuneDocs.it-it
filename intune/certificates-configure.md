@@ -1,28 +1,28 @@
 ---
 title: Creare profili certificato in Microsoft Intune - Azure | Microsoft Docs
 description: Per i dispositivi, aggiungere o creare un profilo certificato configurando l'ambiente di certificato SCEP o PKCS, esportare il certificato pubblico, creare il profilo nel portale di Azure e quindi assegnare SCEP o PKCS ai profili certificato in Microsoft Intune nel portale di Azure
-keywords: 
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurare un profilo certificato per i dispositivi in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Quando si concede agli utenti l'accesso alle risorse aziendali tramite profili VPN, Wi-Fi o di posta elettronica, è possibile autenticare queste connessioni mediante i certificati. Quando si usano i certificati, non è necessario immettere nomi utente e password per l'autenticazione delle connessioni
 

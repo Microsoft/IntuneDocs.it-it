@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: b68c2d93071d545bf25f7810a6908099988fb902
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Iscriversi per una versione di valutazione gratuita di Microsoft Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/17/2018
 Questo articolo descrive la procedura di iscrizione a una versione di valutazione di Intune autonomo per il portale di Azure.
 
 1. Visitare la pagina di [iscrizione a Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) e compilare il modulo per richiedere una sottoscrizione di valutazione.
-* Se si dispone già di un account aziendale o dell'istituto di istruzione e si vuole usare tale account per la versione di valutazione di Intune, seguire [queste istruzioni di iscrizione](/intune/account-sign-up).
+2. Se si dispone già di un account aziendale o dell'istituto di istruzione e si vuole usare tale account per la versione di valutazione di Intune, seguire [queste istruzioni di iscrizione](/intune/account-sign-up).
 
 * Se per la maggior parte delle operazioni IT e degli utenti viene usata una lingua diversa dalla propria, è necessario selezionare la lingua in **Where's your company located?** (Dov'è situata la tua azienda?).
 

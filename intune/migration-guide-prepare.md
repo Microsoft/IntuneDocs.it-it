@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 52af99e79b9c97fc38dc911fb55070180667b7a1
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: f7bf390bd581e3edee1c94f446e89b16163cadee
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparare Microsoft Intune per la gestione dei dispositivi mobili (MDM)
 
@@ -55,23 +55,23 @@ Prima di affrontare nei dettagli la configurazione di Intune, è importante esam
 
 ### <a name="what-is-your-device-security-policy"></a>Quali sono i criteri di sicurezza per i dispositivi esistenti?
 
--   È richiesta la crittografia a livello di dispositivo?
+- È richiesta la crittografia a livello di dispositivo?
 
--   Quali sono le lunghezze correnti per passcode/PIN dei dispositivi?
+- Quali sono le lunghezze correnti per passcode/PIN dei dispositivi?
 
--   È necessario disabilitare funzionalità dei dispositivi o limitare particolari comportamenti? Con i profili di configurazione dei dispositivi è possibile controllare un'ampia gamma di impostazioni specifiche della piattaforma, ad esempio:
-      - Disabilitazione della fotocamera
-      - Blocco del dispositivo in modalità applicazione singola<br/>
+- È necessario disabilitare funzionalità dei dispositivi o limitare particolari comportamenti? Con i profili di configurazione dei dispositivi è possibile controllare un'ampia gamma di impostazioni specifiche della piattaforma, ad esempio:
+    - Disabilitazione della fotocamera
+    - Blocco del dispositivo in modalità applicazione singola<br/>
 
--   Quali tipi di autenticazione è necessario supportare? Se è necessaria l'autenticazione basata su certificati, di quali tipi di certificati è necessario effettuare il provisioning?
+- Quali tipi di autenticazione è necessario supportare? Se è necessaria l'autenticazione basata su certificati, di quali tipi di certificati è necessario effettuare il provisioning?
   - Intune consente di eseguire il provisioning dei certificati con i profili di accesso alle risorse per i dispositivi registrati.
-    -   Quale tipo di infrastruttura a chiave pubblica (PKI) è necessario supportare?
-<br></br>
--   È necessario il supporto di rete privata virtuale (VPN) a livello di dispositivo o app?
+  -   Quale tipo di infrastruttura a chiave pubblica (PKI) è necessario supportare?
+  <br></br>
+- È necessario il supporto di rete privata virtuale (VPN) a livello di dispositivo o app?
 
-    -   Intune consente di eseguire il provisioning di configurazioni VPN per provider VPN di terze parti.
-<br/><br/>
--   Sono accettabili eccezioni temporanee per determinati requisiti per evitare tempi di inattività? Oppure i dispositivi con accesso continuo devono essere conformi a tutti i requisiti di sicurezza?
+  -   Intune consente di eseguire il provisioning di configurazioni VPN per provider VPN di terze parti.
+  <br/><br/>
+- Sono accettabili eccezioni temporanee per determinati requisiti per evitare tempi di inattività? Oppure i dispositivi con accesso continuo devono essere conformi a tutti i requisiti di sicurezza?
 
 ## <a name="next-steps"></a>Passaggi successivi
 Vedere questi [case study](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) relativi a diversi settori per scoprire in che modo le organizzazioni hanno valutato i requisiti per la gestione dei dispositivi mobili.

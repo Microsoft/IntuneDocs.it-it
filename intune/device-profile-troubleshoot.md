@@ -1,28 +1,28 @@
 ---
 title: Risolvere i problemi dei profili di dispositivo in Microsoft Intune - Azure | Microsoft Docs
-description: "Problemi comuni dei profili di dispositivo con Microsoft Intune nel portale Azure, quali mancata applicazione delle modifiche al profilo a determinati utenti o dispositivi, tempo necessario per la distribuzione di nuovi criteri ai dispositivi, impostazioni applicate quando sono presenti più criteri, conseguenze dell'eliminazione di un profilo e altro ancora"
-keywords: 
+description: Problemi comuni dei profili di dispositivo con Microsoft Intune nel portale Azure, quali mancata applicazione delle modifiche al profilo a determinati utenti o dispositivi, tempo necessario per la distribuzione di nuovi criteri ai dispositivi, impostazioni applicate quando sono presenti più criteri, conseguenze dell'eliminazione di un profilo e altro ancora
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 1/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73bac7c139a0dd42734ce6528172aeba2cb7b40c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 8ceebe8b306893f9e6362a1aeb6ec119a650b90b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemi comuni e soluzioni per i profili di dispositivo in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Risolvere i problemi comuni usando i profili di dispositivo Intune.
 

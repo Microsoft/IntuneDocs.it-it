@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5fd86b380a80529ba7f6c431452ae89e22c0de25
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5a346c321147656d748d3abde78575268b20e9ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Classificare i dispositivi con il mapping del gruppo di dispositivi in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Usare il **mapping del gruppo di dispositivi** di Microsoft Intune per aggiungere automaticamente i dispositivi ai gruppi sulla base di categorie specifiche, in modo da renderne più facile la gestione. 
 
@@ -67,10 +67,10 @@ A causa dell'implementazione graduale dei gruppi di sicurezza basati su Azure Ac
 
 ### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>Passaggio 1: creare categorie di dispositivi nella console di amministrazione di Intune
 1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Amministrazione**.
-3. Nell'area di lavoro **Amministrazione** espandere **Gestione dei dispositivi mobili**, quindi scegliere **Categorie di dispositivi**.
-4. Nella pagina **Categorie di dispositivi** un elenco consente di configurare le categorie di dispositivi: 
-- È possibile immettere un nome e fare clic su **Aggiungi** per aggiungerlo come nuova categoria di dispositivi.
-- È anche possibile selezionare una categoria ed eliminarla scegliendo **Elimina**.
+2. Nell'area di lavoro **Amministrazione** espandere **Gestione dei dispositivi mobili**, quindi scegliere **Categorie di dispositivi**.
+3. Nella pagina **Categorie di dispositivi** un elenco consente di configurare le categorie di dispositivi: 
+4. È possibile immettere un nome e fare clic su **Aggiungi** per aggiungerlo come nuova categoria di dispositivi.
+5. È anche possibile selezionare una categoria ed eliminarla scegliendo **Elimina**.
 
 Il nome della categoria di dispositivi verrà usato per la creazione dei gruppi di sicurezza di Azure Active Directory nel passaggio 2.
 

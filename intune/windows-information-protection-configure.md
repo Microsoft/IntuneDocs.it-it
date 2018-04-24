@@ -1,28 +1,28 @@
 ---
 title: Impostazioni di Windows Information Protection in Microsoft Intune
-titleSuffix: 
-description: "Informazioni sulle impostazioni di Microsoft Intune che è possibile usare per gestire Windows Information Protection."
-keywords: 
+titleSuffix: ''
+description: Informazioni sulle impostazioni di Microsoft Intune che è possibile usare per gestire Windows Information Protection.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f2e5090eada373b83c3f8c390b7df6b31f6d1723
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1ec649134d4c3d28c99863aa3f04d2a89d4e029f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Come configurare Windows Information Protection in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Con l'aumento dei dispositivi personali nell'organizzazione, aumenta anche il rischio di perdita accidentale dei dati tramite app e servizi, ad esempio posta elettronica, social media e cloud pubblico, non controllati dall'organizzazione. È il caso, ad esempio, di un dipendente che invia le immagini di progettazione più recenti dall'account di posta elettronica personale, copia e incolla le informazioni su un prodotto in un tweet o salva il report di una vendita in corso nell'area di archiviazione nel cloud pubblico.
 

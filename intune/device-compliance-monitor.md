@@ -1,29 +1,29 @@
 ---
-title: "Monitorare la conformità dei dispositivi"
+title: Monitorare la conformità dei dispositivi
 titlesuffix: Microsoft Intune
-description: "Informazioni su come monitorare la conformità dei dispositivi.\""
-keywords: 
+description: Informazioni su come monitorare la conformità dei dispositivi."
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 708ed5a335d3475c213a536da9072afb1ad32ef9
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b363e074b1b0652a81d56c68e28cf11220adfa56
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-device-compliance-in-intune"></a>Monitorare la conformità dei dispositivi in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 È possibile visualizzare il riepilogo dello stato dei **profili di conformità** nel pannello **Panoramica**.
 È possibile fare clic in modo interattivo nei grafici per eseguire il drill-down e accedere ad altri dettagli. Se sono configurati più profili di conformità è possibile visualizzarne lo stato nel pannello dei criteri in **Gestisci** > **Report**.

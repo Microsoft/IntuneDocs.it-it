@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c27b191f8a0f9fbd298b820114f27acb4c31f966
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Gestire il trasferimento di dati tra app iOS con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="manage-ios-apps"></a>Gestire le app iOS
 La protezione dei dati aziendali prevede anche che ci si assicuri che i trasferimenti di file siano limitati alle app gestite dall'utente.  È possibile gestire le app iOS nei modi seguenti:
@@ -51,17 +51,17 @@ Per assicurarsi che le app distribuite mediante la soluzione MDM di terze parti 
 La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i dispositivi gestiti da una soluzione EMM di terze parti. La procedura descritta di seguito illustra il flusso generale per configurare l'impostazione UPN e l'esperienza dell'utente finale risultante:
 
 
-1.  Nel portale di Azure [configurare un criterio di protezione delle app](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) per la piattaforma iOS. Configurare le impostazioni dei criteri secondo i requisiti aziendali e selezionare le app che devono rispettare questi criteri.
+1. Nel portale di Azure [configurare un criterio di protezione delle app](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) per la piattaforma iOS. Configurare le impostazioni dei criteri secondo i requisiti aziendali e selezionare le app che devono rispettare questi criteri.
 
-2.  Distribuire le app e il profilo di posta elettronica che si vuole gestire **tramite la soluzione MDM di terze parti** usando la procedura generalizzata descritta di seguito. Questa esperienza è illustrata anche dall'esempio 1.
+2. Distribuire le app e il profilo di posta elettronica che si vuole gestire **tramite la soluzione MDM di terze parti** usando la procedura generalizzata descritta di seguito. Questa esperienza è illustrata anche dall'esempio 1.
 
-  1.  Distribuire l'app con le impostazioni di configurazione seguenti:
+   1. Distribuire l'app con le impostazioni di configurazione seguenti:
 
       **key** = IntuneMAMUPN, **value** = <username@company.com>
 
       Esempio: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Distribuire i criteri di gestione Apri in con il provider MDM di terze parti in uso nei dispositivi registrati.
+   2. Distribuire i criteri di gestione Apri in con il provider MDM di terze parti in uso nei dispositivi registrati.
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Esempio 1: Esperienza di amministrazione nella console MDM di terze parti
@@ -70,9 +70,9 @@ La configurazione dell'impostazione UPN dell'utente è **obbligatoria** per i di
 
 2. Immettere l'impostazione seguente nella sezione Configurazione dell'applicazione:
 
-  **key** = IntuneMAMUPN, **value** = <username@company.com>
+   **key** = IntuneMAMUPN, **value** = <username@company.com>
 
-  La sintassi esatta della coppia chiave/valore può variare a seconda del provider MDM di terze parti. La tabella seguente visualizza alcuni esempi di provider MDM di terze parti e i valori esatti che devono essere immessi per la coppia chiave/valore.
+   La sintassi esatta della coppia chiave/valore può variare a seconda del provider MDM di terze parti. La tabella seguente visualizza alcuni esempi di provider MDM di terze parti e i valori esatti che devono essere immessi per la coppia chiave/valore.
 
 |Provider MDM di terze parti| Chiave Configuration | Tipo valore | Valore di configurazione|
 | ------- | ---- | ---- | ---- |

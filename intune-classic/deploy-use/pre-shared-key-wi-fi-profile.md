@@ -1,43 +1,43 @@
 ---
 title: Wi-Fi tramite PSK
 description: Usare la configurazione personalizzata per creare un profilo Wi-Fi con una chiave precondivisa.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e2dff26e6dcbe1db6a9cef58af10901178e432b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a023b6829b33c3b3bff94021ecd3c90d8b41f30f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Usare criteri personalizzati per creare un profilo Wi-Fi con una chiave precondivisa
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Di seguito viene illustrato come usare la **configurazione personalizzata** di Intune per creare un profilo Wi-Fi con una chiave precondivisa. Questo argomento include anche un esempio di come creare un profilo Wi-Fi basato su EAP.
 
 > [!NOTE]
--   Può risultare più semplice copiare il codice da un computer che si connette alla rete, come descritto di seguito.
-- Per Android, è possibile scegliere di usare lo script [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornito da Johnathon Biersack.
--   È possibile aggiungere più reti e chiavi aggiungendo altre impostazioni URI OMA.
--  Per iOS, usare Apple Configurator in una stazione Mac per impostare il profilo. In alternativa, usare lo script [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornito da Johnathon Biersack.
+> -   Può risultare più semplice copiare il codice da un computer che si connette alla rete, come descritto di seguito.
+> - Per Android, è possibile scegliere di usare lo script [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) fornito da Johnathon Biersack.
+> -   È possibile aggiungere più reti e chiavi aggiungendo altre impostazioni URI OMA.
+> -  Per iOS, usare Apple Configurator in una stazione Mac per impostare il profilo. In alternativa, usare lo script [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) fornito da Johnathon Biersack.
 
 
-1.  Per creare un profilo Wi-Fi con una chiave precondivisa per Android o Windows o un profilo Wi-Fi basato su EAP, quando si crea un criterio scegliere **Configurazione personalizzata** per tale piattaforma del dispositivo anziché un profilo Wi-Fi.
+1. Per creare un profilo Wi-Fi con una chiave precondivisa per Android o Windows o un profilo Wi-Fi basato su EAP, quando si crea un criterio scegliere **Configurazione personalizzata** per tale piattaforma del dispositivo anziché un profilo Wi-Fi.
 
-2.  Specificare un nome e una descrizione
-3.  Aggiungere una nuova impostazione URI OMA:
+2. Specificare un nome e una descrizione.
+3. Aggiungere una nuova impostazione URI OMA:
 
    a.   Immettere un nome per questa impostazione di rete Wi-Fi.
 
@@ -47,15 +47,15 @@ Di seguito viene illustrato come usare la **configurazione personalizzata** di I
 
    d.   **OMA-URI**:
 
-    - **Per Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **err Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Per Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **err Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-Assicurarsi di includere il carattere punto (.) all'inizio.
+   > [!NOTE]
+   > Assicurarsi di includere il carattere punto (.) all'inizio.
 
-    SSID è l'identificatore del set di servizi per cui si stanno creando i criteri. Ad esempio `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
+   SSID è l'identificatore del set di servizi per cui si stanno creando i criteri. Ad esempio `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
-  e. **Campo valore** è la posizione in cui si incolla il codice XML. Di seguito è presentato un esempio. Ogni valore deve essere adattato alle impostazioni di rete. Vedere la sezione relativa ai commenti del codice per alcuni puntatori.
+   e. **Campo valore** è la posizione in cui si incolla il codice XML. Di seguito è presentato un esempio. Ogni valore deve essere adattato alle impostazioni di rete. Vedere la sezione relativa ai commenti del codice per alcuni puntatori.
 4. Scegliere **OK**, salvare e distribuire i criteri.
 
     > [!NOTE]
@@ -202,8 +202,8 @@ Di seguito è riportato un esempio di codice XML per un profilo Wi-Fi basato su 
 1. In un computer connesso alla rete wireless o che ha eseguito recentemente la connessione a tale rete, aprire la cartella seguente: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
 
     È consigliabile usare un computer che non si è connesso a molte reti wireless, in quanto sarà necessario eseguire una ricerca in ogni profilo per trovare quella più adatta.
-3.     Cercare nei file XML per individuare quello con il nome corretto.
-4.     Dopo aver individuato il file XML corretto, copiare e incollare il codice XML nel campo Dati della pagina delle impostazioni URI OMA.
+2. Cercare nei file XML per individuare quello con il nome corretto.
+3. Dopo aver individuato il file XML corretto, copiare e incollare il codice XML nel campo Dati della pagina delle impostazioni URI OMA.
 
 ## <a name="deploy-the-policy"></a>Distribuire i criteri
 

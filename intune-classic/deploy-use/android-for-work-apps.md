@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 20d43882895e299b26a4130b1551b17f054c52d6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 54e4355a1253af4338bdcc3e34b651fadfb569dd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>Come distribuire app a dispositivi Android for Work con Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 La distribuzione di app a dispositivi Android for Work avviene in modo diverso rispetto alla distribuzione a dispositivi Android standard. Tutte le app installate per Android for Work provengono da Google Play for Work. Accedere allo store, cercare le app desiderate e approvarle.
 L'app viene quindi visualizzata nel nodo **App acquistate con Volume Purchase Program** della console di Intune. Da qui è possibile gestire la distribuzione dell'app allo stesso modo in cui si distribuiscono le altre app.

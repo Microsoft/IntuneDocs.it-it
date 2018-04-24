@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Configurare i profili certificato di Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Dopo aver configurato l'infrastruttura e i certificati come descritto in [Configurare l'infrastruttura di certificazione per SCEP](configure-certificate-infrastructure-for-scep.md) o [Configurare l'infrastruttura di certificazione per PFX](configure-certificate-infrastructure-for-pfx.md), è possibile creare i profili certificato. Questa è la procedura:
 
@@ -92,39 +92,39 @@ Dopo aver creato un profilo certificato CA attendibile, creare i profili certifi
 
 -  Windows Phone 8.1 e versioni successive
 
-2.  Aggiungere un criterio **Profilo certificato SCEP**
+2. Aggiungere un criterio **Profilo certificato SCEP**
 
-    Altre informazioni: [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+   Altre informazioni: [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Seguire le istruzioni nella pagina di configurazione del profilo per configurare le impostazioni del profilo di certificato SCEP.
-    > [!NOTE]
-    >
-    > In **Formato del nome soggetto** selezionare **Personalizzato** per immettere un formato personalizzato del nome soggetto (solo nei profili iOS).
-    >
-    > Le due variabili attualmente supportate per il nome personalizzato sono `Common Name (CN)` ed `Email (E)`. Usando una combinazione di queste variabili e stringhe statiche, è possibile creare un formato di nome soggetto personalizzato simile al seguente:
+3. Seguire le istruzioni nella pagina di configurazione del profilo per configurare le impostazioni del profilo di certificato SCEP.
+   > [!NOTE]
+   > 
+   > In **Formato del nome soggetto** selezionare **Personalizzato** per immettere un formato personalizzato del nome soggetto (solo nei profili iOS).
+   > 
+   > Le due variabili attualmente supportate per il nome personalizzato sono `Common Name (CN)` ed `Email (E)`. Usando una combinazione di queste variabili e stringhe statiche, è possibile creare un formato di nome soggetto personalizzato simile al seguente:
+   > 
+   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   > 
+   > In questo esempio l'amministratore ha creato un formato di nome soggetto che, oltre alle variabili `CN` ed `E`, usa stringhe per i valori Unità organizzativa, Organizzazione, Località, Stato e Paese. La [funzione CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) elenca le stringhe supportate.
 
-    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-
-    > In questo esempio l'amministratore ha creato un formato di nome soggetto che, oltre alle variabili `CN` ed `E`, usa stringhe per i valori Unità organizzativa, Organizzazione, Località, Stato e Paese. La [funzione CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) elenca le stringhe supportate.
-
-4.  Scegliere **Salva criterio**.
+4. Scegliere **Salva criterio**.
 
 Il nuovo criterio verrà visualizzato nell'area di lavoro **Criteri**. È ora possibile distribuirlo.
 
 ### <a name="to-create-a-pfx-certificate-profile"></a>Per creare un profilo certificato PFX
 
-1.  Nella [Console di amministrazione di Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Aggiungi criterio** e scegliere una piattaforma del dispositivo. I certificati PFX sono supportati per i dispositivi seguenti:
-  - Android 4 e versioni successive
-  - Android for Work
-  - Windows 10 e versioni successive
-  - Windows Phone 10 e versioni successive
-  - iOS 8.0 e versioni successive    
+1. Nella [Console di amministrazione di Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Aggiungi criterio** e scegliere una piattaforma del dispositivo. I certificati PFX sono supportati per i dispositivi seguenti:
+   - Android 4 e versioni successive
+   - Android for Work
+   - Windows 10 e versioni successive
+   - Windows Phone 10 e versioni successive
+   - iOS 8.0 e versioni successive    
 
 
-2.  Aggiungere un criterio **Profilo certificato PFX**.
-      Altre informazioni: [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-3.  Immettere le informazioni richieste nel modulo Criteri.
-4.  Scegliere **Salva criterio**.
+2. Aggiungere un criterio **Profilo certificato PFX**.
+     Altre informazioni: [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+3. Immettere le informazioni richieste nel modulo Criteri.
+4. Scegliere **Salva criterio**.
 
 Il nuovo criterio verrà visualizzato nell'area di lavoro **Criteri**. È ora possibile distribuirlo.
 

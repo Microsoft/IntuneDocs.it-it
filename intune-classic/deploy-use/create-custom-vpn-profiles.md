@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6139b656c69b58bdbdd02e296f8a061dd598a1c6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 512bd38802dbb97a74d3d19d74a7d5086784d327
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Configurazioni personalizzate per i profili VPN di Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="create-a-custom-configuration"></a>Creare una configurazione personalizzata
 È possibile usare configurazioni personalizzate di Intune per creare profili VPN per:
@@ -39,13 +39,13 @@ Questo tipo di criteri può essere utile quando i criteri VPN Intune standard no
 
 ## <a name="to-create-a-custom-configuration-policy"></a>Per creare criteri di configurazione personalizzati:
 
-   1. Nella [console di amministrazione di Intune](https://manage.microsoft.com) scegliere **Criteri** > **Aggiungi criterio** > *espandere la piattaforma* > **Configurazione personalizzata** > **Crea criterio**.
-   2. Immettere un nome per il criterio.
-   3. Per ogni impostazione URI da specificare scegliere **Aggiungi** e specificare le informazioni richieste. Ad esempio:
+1. Nella [console di amministrazione di Intune](https://manage.microsoft.com) scegliere **Criteri** > **Aggiungi criterio** > *espandere la piattaforma* > **Configurazione personalizzata** > **Crea criterio**.
+2. Immettere un nome per il criterio.
+3. Per ogni impostazione URI da specificare scegliere **Aggiungi** e specificare le informazioni richieste. Ad esempio:
 
    ![Finestra di dialogo Configurazione personalizzata per il profilo VPN](./media/Intune_Add_VPN_URI.png)
 
-   4.  Dopo aver immesso tutte le impostazioni URI, scegliere **Salva criterio** e quindi distribuire i criteri.
+4. Dopo aver immesso tutte le impostazioni URI, scegliere **Salva criterio** e quindi distribuire i criteri.
 
 Quindi, [distribuire i criteri](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) come di consueto.
 

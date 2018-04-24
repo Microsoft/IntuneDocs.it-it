@@ -1,30 +1,30 @@
 ---
-title: "Creare criteri di conformità per Android for Work"
+title: Creare criteri di conformità per Android for Work
 titleSuffix: Microsoft Intune
-description: "Creare criteri di conformità per i dispositivi Android for Work in Microsoft Intune in modo da poter specificare i requisiti che un dispositivo deve soddisfare per essere conforme."
-keywords: 
+description: Creare criteri di conformità per i dispositivi Android for Work in Microsoft Intune in modo da poter specificare i requisiti che un dispositivo deve soddisfare per essere conforme.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ca31d4c83ccc6b786933080b96f66953cf1a108
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 00fa4508cdd4e74a20205ce46025b414cc0bb4cf
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Come creare i criteri di conformità per i dispositivi Android for Work in Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 I criteri di conformità di un dispositivo Android for Work in Intune specificano le regole e le impostazioni che i dispositivi Android for Work devono soddisfare per essere considerati conformi. È possibile usare questi criteri con accesso condizionale per consentire o bloccare l'accesso alle risorse aziendali, oltre che ottenere report per dispositivi e intraprendere azioni per la mancata conformità. I criteri di conformità dei dispositivi vengono creati per ogni piattaforma nel portale di Intune in Azure. Per altre informazioni sui criteri di conformità e i prerequisiti che è necessario soddisfare prima di creare i criteri di conformità, vedere [Introduzione ai criteri conformità](device-compliance-get-started.md).
 
@@ -81,7 +81,7 @@ Il criterio è stato applicato agli utenti.  I dispositivi usati dagli utenti a 
 
 - **Richiedi una password per sbloccare i dispositivi mobili:** impostare l'opzione su **Sì** per richiedere agli utenti di immettere una password prima di poter accedere al dispositivo.
 - **Lunghezza minima password**: specificare il numero minimo di cifre o caratteri per la password.
-- **Qualità password**: questa impostazione rileva se i requisiti di password specificati sono configurati nel dispositivo. Abilitare questa impostazione per richiedere agli utenti la configurazione di determinati requisiti di password per i dispositivi Android. È possibile scegliere tra:
+- **Qualità password**: questa impostazione rileva se i requisiti di password specificati sono configurati nel dispositivo. Abilitare questa impostazione per richiedere agli utenti la configurazione di determinati requisiti di password per i dispositivi Android. Scegliere tra:
   - **Protezione biometrica bassa**
   - **Richiesto**
   - **Almeno numerico**

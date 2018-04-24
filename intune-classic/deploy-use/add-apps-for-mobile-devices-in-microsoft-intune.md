@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4e53acad9fb2cf1e6c18b71900c6b671dd031e98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Aggiungere app per dispositivi registrati in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Prima di distribuire o gestire un'app è necessario aggiungerla a Microsoft Intune. In questo argomento viene illustrato come aggiungere app per dispositivi registrati.
 
@@ -34,32 +34,32 @@ Prima di distribuire o gestire un'app è necessario aggiungerla a Microsoft Intu
 ## <a name="add-the-app"></a>Aggiungere l'app
 È possibile usare l'autore del software Intune per configurare le proprietà dell'app e, se opportuno, caricarla nello spazio di archiviazione cloud. Seguire questa procedura:
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **App** &gt; **Aggiungi app** per avviare l'autore del software Intune.
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **App** &gt; **Aggiungi app** per avviare l'autore del software Intune.
 
-    > [!TIP]
-    > Per avviare questa funzionalità, può essere necessario immettere il nome utente e la password di Intune.
+   > [!TIP]
+   > Per avviare questa funzionalità, può essere necessario immettere il nome utente e la password di Intune.
 
-2.  Nella pagina **Installazione software** dell'autore scegliere una delle opzioni seguenti per **Selezionare il modo in cui questo software viene fornito ai dispositivi**:
-    - **Programma di installazione software**, per app con estensione **msi**:
-        - **Selezionare il tipo di file del programma di installazione software**. Indica il tipo di software da distribuire. Ad esempio, per installare un'app iOS scegliere **Pacchetto app iOS (file &#42;.ipa)**.
-        - **Specificare il percorso dei file di installazione software**. Immettere il percorso dei file di installazione o scegliere **Sfoglia** per selezionare il percorso da un elenco.
-        - **Includi sottocartelle e file aggiuntivi dalla stessa cartella**. Questa opzione è disponibile solo per il tipo di file **Windows Installer**.<br>Alcuni programmi software che usano Windows Installer richiedono file di supporto, che in genere si trovano nella stessa cartella dei file di installazione. Selezionare questa opzione se si vogliono distribuire anche questi file.<br>Questo tipo di installazione usa parte dello spazio di archiviazione cloud.
+2. Nella pagina **Installazione software** dell'autore scegliere una delle opzioni seguenti per **Selezionare il modo in cui questo software viene fornito ai dispositivi**:
+   - **Programma di installazione software**, per app con estensione **msi**:
+       - **Selezionare il tipo di file del programma di installazione software**. Indica il tipo di software da distribuire. Ad esempio, per installare un'app iOS scegliere **Pacchetto app iOS (file &#42;.ipa)**.
+       - **Specificare il percorso dei file di installazione software**. Immettere il percorso dei file di installazione o scegliere **Sfoglia** per selezionare il percorso da un elenco.
+       - **Includi sottocartelle e file aggiuntivi dalla stessa cartella**. Questa opzione è disponibile solo per il tipo di file **Windows Installer**.<br>Alcuni programmi software che usano Windows Installer richiedono file di supporto, che in genere si trovano nella stessa cartella dei file di installazione. Selezionare questa opzione se si vogliono distribuire anche questi file.<br>Questo tipo di installazione usa parte dello spazio di archiviazione cloud.
 
-  -   **Collegamento esterno**, per le app da creare specificando un collegamento a un App Store:
+   -   **Collegamento esterno**, per le app da creare specificando un collegamento a un App Store:
 
-        - **Specificare l'URL**. Specificare l'URL di uno degli elementi seguenti:
-            - L'URL dell'App Store dell'app da distribuire. Se, ad esempio, si vuole distribuire l'app Connessione Desktop remoto Microsoft per Android, specificare **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Per trovare l'URL dell'app, usare un motore di ricerca per individuare la pagina dell'App Store che contiene l'app. Ad esempio, per trovare l'app Desktop remoto, è possibile cercare **Desktop remoto Microsoft Android**.
-            - Un sito Web. Intune distribuisce un'icona di collegamento al sito nel dispositivo, nota come clip Web.
-            - Un'app sul Web. Intune distribuisce un'icona di collegamento all'app nel dispositivo.
-        - **Richiedere un browser gestito per aprire questo collegamento (solo Android e iOS)**. Quando si distribuisce un collegamento a un'app Web o a un sito Web, gli utenti potranno aprirlo solo in Intune Managed Browser. Questo browser deve essere installato nel dispositivo.<br>Per informazioni dettagliate su Managed Browser, vedere [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md) (Gestire l'accesso a Internet usando i criteri di Managed Browser con Microsoft Intune).<br>Questo tipo di installazione non usa lo spazio di archiviazione cloud.
+       - **Specificare l'URL**. Specificare l'URL di uno degli elementi seguenti:
+           - L'URL dell'App Store dell'app da distribuire. Se, ad esempio, si vuole distribuire l'app Connessione Desktop remoto Microsoft per Android, specificare **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Per trovare l'URL dell'app, usare un motore di ricerca per individuare la pagina dell'App Store che contiene l'app. Ad esempio, per trovare l'app Desktop remoto, è possibile cercare **Desktop remoto Microsoft Android**.
+           - Un sito Web. Intune distribuisce un'icona di collegamento al sito nel dispositivo, nota come clip Web.
+           - Un'app sul Web. Intune distribuisce un'icona di collegamento all'app nel dispositivo.
+       - **Richiedere un browser gestito per aprire questo collegamento (solo Android e iOS)**. Quando si distribuisce un collegamento a un'app Web o a un sito Web, gli utenti potranno aprirlo solo in Intune Managed Browser. Questo browser deve essere installato nel dispositivo.<br>Per informazioni dettagliate su Managed Browser, vedere [Manage Internet access using managed browser policies with Microsoft Intune](manage-internet-access-using-managed-browser-policies.md) (Gestire l'accesso a Internet usando i criteri di Managed Browser con Microsoft Intune).<br>Questo tipo di installazione non usa lo spazio di archiviazione cloud.
 
-  -   **App iOS gestita dall'App Store** per app gratuite dell'iTunes store che si vuole gestire con i criteri di gestione di applicazioni mobili (MAM):
+   -   **App iOS gestita dall'App Store** per app gratuite dell'iTunes store che si vuole gestire con i criteri di gestione di applicazioni mobili (MAM):
 
-        - **Specificare l'URL**. Immettere l'URL dell'App Store dell'app da distribuire. Se, ad esempio, si vuole distribuire l'app Cartelle di lavoro Microsoft per iOS, specificare **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Questo tipo di installazione non usa lo spazio di archiviazione cloud.
+       - **Specificare l'URL**. Immettere l'URL dell'App Store dell'app da distribuire. Se, ad esempio, si vuole distribuire l'app Cartelle di lavoro Microsoft per iOS, specificare **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Questo tipo di installazione non usa lo spazio di archiviazione cloud.
 
-        Se ad esempio si vuole distribuire l'app Microsoft Word dall'iTunes store sui dispositivi, viene visualizzata una pagina simile alla seguente:
+       Se ad esempio si vuole distribuire l'app Microsoft Word dall'iTunes store sui dispositivi, viene visualizzata una pagina simile alla seguente:
 
-        ![Autore del software Intune](./media/publisher-for-mobile.png)
+       ![Autore del software Intune](./media/publisher-for-mobile.png)
 
 > [!NOTE]
 > Quando si aggiunge e si distribuisce un'app da un archivio, gli utenti finali devono avere un account dell'archivio per poter installare l'app.

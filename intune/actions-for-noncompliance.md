@@ -1,22 +1,22 @@
 ---
 title: Messaggio e azioni per i dispositivi non conformi con Microsoft Intune - Azure | Microsoft Docs
-description: "Creare un messaggio di posta elettronica di notifica da inviare ai dispositivi non conformi. Se un dispositivo viene contrassegnato come non conforme, è possibile aggiungere azioni, ad esempio un periodo di tolleranza al termine del quale il dispositivo deve essere conforme, o creare una pianificazione per bloccare l'accesso finché il dispositivo non è conforme. Queste operazioni possono essere eseguite con Microsoft Intune in Azure."
-keywords: 
+description: Creare un messaggio di posta elettronica di notifica da inviare ai dispositivi non conformi. Se un dispositivo viene contrassegnato come non conforme, è possibile aggiungere azioni, ad esempio un periodo di tolleranza al termine del quale il dispositivo deve essere conforme, o creare una pianificazione per bloccare l'accesso finché il dispositivo non è conforme. Queste operazioni possono essere eseguite con Microsoft Intune in Azure.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi - Intune
 
@@ -54,14 +54,14 @@ Esistono due tipi di azioni:
 3. Selezionare **Conformità del dispositivo**, quindi **Notifiche**. 
 4. Selezionare **Crea la notifica** e quindi immettere le informazioni seguenti:
 
-  - Name
-  - Subject
-  - Messaggio
-  - Intestazione del messaggio di posta elettronica: includere il logo dell'azienda
-  - Piè di pagina del messaggio di posta elettronica: includere il nome dell'azienda
-  - Piè di pagina del messaggio di posta elettronica: includere le informazioni sul contatto
+   - Name
+   - Subject
+   - Messaggio
+   - Intestazione del messaggio di posta elettronica: includere il logo dell'azienda
+   - Piè di pagina del messaggio di posta elettronica: includere il nome dell'azienda
+   - Piè di pagina del messaggio di posta elettronica: includere le informazioni sul contatto
 
-  ![Esempio di messaggio di notifica di Intune relativo alla conformità](./media/actionsfornoncompliance-1.PNG)
+   ![Esempio di messaggio di notifica di Intune relativo alla conformità](./media/actionsfornoncompliance-1.PNG)
 
 Dopo aver aggiunto le informazioni, scegliere **Crea**. Il modello di messaggio di notifica è pronto per l'uso.
 
@@ -77,7 +77,7 @@ Per impostazione predefinita, Intune crea automaticamente un'azione in caso di m
 1. Nel [portale di Azure](https://portal.azure.com) aprire **Microsoft Intune** e selezionare **Conformità del dispositivo**.
 2. Selezionare **Criteri**, scegliere uno dei criteri e quindi selezionare **Proprietà**. 
 
-  Non esiste ancora un criterio? Creare un criterio per [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o un'altra piattaforma.
+   Non esiste ancora un criterio? Creare un criterio per [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o un'altra piattaforma.
 
 3. Selezionare **Azioni per la mancata conformità**, quindi selezionare **Aggiungi** per immettere i parametri dell'azione. È possibile scegliere il modello di messaggio creato in precedenza, aggiungere altri destinatari e aggiornare la pianificazione del periodo di tolleranza. È possibile indicare il numero di giorni (da 0 a 365) nella pianificazione, quindi applicare i criteri di accesso condizionale. Se si immette **0** come numero di giorni, l'accesso condizionale blocca **immediatamente** l'accesso alle risorse aziendali.
 

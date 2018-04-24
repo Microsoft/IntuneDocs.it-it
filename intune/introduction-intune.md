@@ -7,22 +7,22 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: aa28f11a32a35e53c8e135a9f5f738513f416c37
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 25bb5ec1610eb3d3cac02244a43ead6e63d441e5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-intune"></a>Informazioni su Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune è un servizio basato su cloud nel settore di gestione della mobilità aziendale (EMM) che consente alla forza lavoro di essere produttiva, garantendo al tempo stesso la protezione dei dati aziendali. Con Intune, è possibile:
 * Gestire i dispositivi mobili usati dalla forza lavoro per accedere ai dati aziendali.

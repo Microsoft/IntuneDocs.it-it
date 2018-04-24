@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: b4415b7b4b1cd48accae3f0d0d39caedd9cf6b3c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9ddf972795d9ced6aff6dd01da4469d49f11c951
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Glossario di Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="a"></a>A
 
@@ -40,11 +40,13 @@ ms.lasthandoff: 03/22/2018
 |Portale di Azure|La nuova console per Intune che sarà presto disponibile. [Altre informazioni sul nuovo portale](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[Bring your own device](/intune-classic/get-started/choose-how-to-enroll-devices1). Gli utenti possono installare l'app del portale aziendale di Intune nel dispositivo ed eseguire la registrazione per accedere alle risorse della società come posta elettronica, applicazioni aziendali, dati aziendali e supporto.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Profilo certificato|Usare questo tipo di criteri per [proteggere l'accesso alle risorse aziendali](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles) con certificati quando si usano profili Wi-Fi, VPN o di posta elettronica.|
@@ -57,6 +59,7 @@ ms.lasthandoff: 03/22/2018
 |Criteri personalizzati|[Questi criteri vengono usati](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) quando i criteri di configurazione generali non contengono un'impostazione integrata in grado di soddisfare le proprie esigenze. È possibile usare un criterio personalizzato per creare un'impostazione simile ad Apple Configurator o URI OMA.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Distribuzione|Azione di invio di un'app o un criterio a un dispositivo o a un utente gestito.|
@@ -65,6 +68,7 @@ ms.lasthandoff: 03/22/2018
 |Mapping del gruppo di dispositivi|Consente di [aggiungere automaticamente i dispositivi ai gruppi](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) in base a una categoria di dispositivi (ad esempio, "Personale" o "Vendite") che l'utente o l'utente finale può assegnare al dispositivo.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |Profilo di posta elettronica|Questi criteri possono essere usati per definire le [impostazioni di accesso alla posta elettronica](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) per client di posta elettronica specifici nei dispositivi mobili, riducendo al minimo le configurazioni che l'utente finale deve eseguire.|
@@ -73,21 +77,25 @@ ms.lasthandoff: 03/22/2018
 |Registrazione|Microsoft Intune usa la [registrazione](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) per gestire i dispositivi e consentire l'accesso alle risorse.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|[Servizio Microsoft](https://technet.microsoft.com/library/mt228265.aspx) per gli utenti di Intune con 150 licenze in un piano idoneo. Con questo servizio, gli esperti Microsoft collaboreranno con l'utente per l'uso e l'esecuzione di Intune.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Gruppi|I gruppi consentono di [raccogliere insieme logicamente gli utenti o i dispositivi](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune). Ad esempio, è possibile creare un gruppo di tutti i PC Windows. È quindi possibile distribuire le app e i criteri a tali gruppi.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Strategia ibrida|Configurazione in cui è possibile gestire i dispositivi registrati con Intune [tramite la console di System Center Configuration Manager](/intune-classic/get-started/integration-with-cloud-services).|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Console di amministrazione di Intune|Console corrente che viene usata per la maggior parte delle operazioni di gestione di Intune.|
@@ -96,11 +104,13 @@ ms.lasthandoff: 03/22/2018
 |Argomento|Consente di visualizzare l'[hardware e il software installato](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) nei dispositivi gestiti.|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Modalità tutto schermo|Configurata come parte di un [criterio di configurazione generale](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies), questa modalità consente di bloccare i dispositivi. Ad esempio, è possibile configurare un dispositivo di vendita al dettaglio per consentire solo l'esecuzione di un'app.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Managed Browser|[Applicazione per Web browser](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies) che è possibile distribuire nell'organizzazione usando Microsoft Intune. Un criterio di Managed Browser consente di configurare un elenco Consenti o Blocca che limita i siti Web che gli utenti di Managed Browser possono visitare.|
@@ -111,18 +121,21 @@ ms.lasthandoff: 03/22/2018
 |Criteri di configurazione delle app mobili|Criterio di iOS usato per [fornire impostazioni ad app per iOS compatibili](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) quando vengono eseguite, ad esempio, un nome della società o un indirizzo del server.|
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Protocollo di gestione di dispositivi standard di settore usato da molti produttori di hardware per abilitare il controllo delle funzionalità dei dispositivi mobili e dei PC.|
 |URI OMA|Open Mobile Alliance Uniform Resource Identifier. Consente di identificare le impostazioni di singoli dispositivi conformi allo standard OMA-DM. Molte di queste impostazioni possono essere usate nei [criteri personalizzati di Intune](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) quando non è disponibile alcuna impostazione predefinita in grado di soddisfare le proprie esigenze.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |Criteri|[Pacchetto di informazioni](/intune-classic/deploy-use/microsoft-intune-policy-reference) inviato da Intune a un dispositivo. Ad esempio, è possibile distribuire al dispositivo le impostazioni di sicurezza o le informazioni di conformità del dispositivo.|
 |Reimpostazione del passcode|Funzionalità di Intune che consente di forzare l'utente finale a [reimpostare il passcode](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) sui dispositivi supportati.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Blocco remoto|Funzionalità di Intune che consente di [bloccare i dispositivi supportati](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune), anche se non si è in possesso del dispositivo.|
@@ -131,12 +144,14 @@ ms.lasthandoff: 03/22/2018
 |Requisiti|[Operazione di distribuzione dell'app](/intune-classic/deploy-use/add-apps) che consente di selezionare i requisiti che devono essere soddisfatti in un dispositivo prima dell'installazione dell'app. Ad esempio, può essere necessario specificare la versione del sistema operativo iOS da installare prima dell'installazione dell'app.|
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |Cancellazione selettiva|La [cancellazione selettiva](/intune-classic/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune) rimuove solo i dati aziendali, compresi i dati di gestione delle applicazioni mobili, ove applicabile, le impostazioni e i profili di posta elettronica da un dispositivo. La cancellazione selettiva lascia i dati personali dell'utente sul dispositivo.|
 |Sottoscrizione|Il contratto immesso consente di accedere a un tenant di Intune.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Applicazione di terze parti che funziona con Intune per fornire [funzionalità di assistenza remota](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-for-windows-pcs) per i PC Windows gestiti con il client software di Intune.|
@@ -144,12 +159,15 @@ ms.lasthandoff: 03/22/2018
 |Termini e condizioni|Tipo di criteri distribuiti agli utenti che contengono informazioni che gli utenti devono [leggere e accettare](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) prima di poter usare il portale aziendale per registrare e accedere al proprio lavoro.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |App acquistate con Volume Purchase Program|Alcuni App Store consentono di acquistare più licenze per un'app da eseguire nell'azienda. Intune semplifica la gestione delle app [acquistate con questo programma](/intune-classic/deploy-use/manage-volume-purchased-apps-in-microsoft-intune) importando le informazioni di licenza dall'App Store, verificando il numero di licenze usate e impedendo l'installazione di più copie dell'app rispetto a quelle possedute.|
 |Profilo VPN|Criteri che distribuiscono le [impostazioni VPN](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune) ai dispositivi gestiti, riducendo al minimo le configurazioni da parte dell'utente.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Profilo Wi-Fi|Criteri che distribuiscono le [impostazioni di rete wireless](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) ai dispositivi per consentire agli utenti di connettersi alla rete aziendale senza la necessità di conoscere o configurare le impostazioni.
+
+|               |                                                                                                                                                                                                                                 |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Profilo Wi-Fi | Criteri che distribuiscono le [impostazioni di rete wireless](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) ai dispositivi per consentire agli utenti di connettersi alla rete aziendale senza la necessità di conoscere o configurare le impostazioni. |
+

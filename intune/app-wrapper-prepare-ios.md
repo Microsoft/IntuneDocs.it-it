@@ -1,28 +1,28 @@
 ---
 title: Eseguire il wrapping delle app iOS con lo strumento di wrapping delle app di Intune
 description: Informazioni su come eseguire il wrapping delle app iOS senza modificarne il codice. Preparare le app in modo da applicare i criteri di gestione delle app mobili.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9329c25d6211149102c06b44fdb6d6222b13550
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e8e2783be3c515aa742a3adc149304e0a2ae3b99
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app iOS per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Usare lo strumento di wrapping delle app di Microsoft Intune per iOS per abilitare i criteri di protezione delle app di Intune senza modificare il codice dell'app stessa.
 
@@ -98,48 +98,48 @@ Per altre informazioni sulla distribuzione di app iOS internamente per gli utent
 
 4. Fare clic su **Certificates, IDs & Profiles** (Certificati, ID e profili).
 
-  ![Portale per sviluppatori Apple](./media/iOS-signing-cert-1.png)
+   ![Portale per sviluppatori Apple](./media/iOS-signing-cert-1.png)
 
 5. Fare clic su ![segno più nel portale per sviluppatori Apple](./media/iOS-signing-cert-2.png) nell'angolo in alto a destra per aggiungere un certificato iOS.
 
 6. Scegliere di creare un certificato **In-House and Ad Hoc** (Interno e ad hoc) in **Production** (Produzione).
 
-  ![Selezionare il certificato interno e ad hoc](./media/iOS-signing-cert-3.png)
+   ![Selezionare il certificato interno e ad hoc](./media/iOS-signing-cert-3.png)
 
-  >[!NOTE]
-  >Se non si prevede di distribuire l'app e si vuole solo testarla internamente, è possibile usare un certificato per lo sviluppo di app iOS invece di un certificato per la produzione. Se si usa un certificato di sviluppo, assicurarsi che il profilo di provisioning per dispositivi mobili faccia riferimento ai dispositivi in cui verrà installata l'app.
+   >[!NOTE]
+   >Se non si prevede di distribuire l'app e si vuole solo testarla internamente, è possibile usare un certificato per lo sviluppo di app iOS invece di un certificato per la produzione. Se si usa un certificato di sviluppo, assicurarsi che il profilo di provisioning per dispositivi mobili faccia riferimento ai dispositivi in cui verrà installata l'app.
 
 7. Fare clic su **Next** (Avanti) nella parte inferiore della pagina.
 
 8. Leggere le istruzioni per la creazione di una **richiesta di firma del certificato (CSR, Certificate Signing Request)** mediante l'applicazione Accesso Portachiavi nel computer macOS.
 
-  ![Leggere le istruzioni per creare una richiesta CSTR](./media/iOS-signing-cert-4.png)
+   ![Leggere le istruzioni per creare una richiesta CSTR](./media/iOS-signing-cert-4.png)
 
 9. Seguire le istruzioni sopra riportate per creare una richiesta di firma del certificato. Nel computer macOS in uso avviare l'applicazione **Accesso Portachiavi**.
 
 10. Nel menu macOS nella parte superiore della schermata, passare a **Accesso Portachiavi > Assistente Certificato > Richiedi un certificato da una Autorità di Certificazione**.  
 
-  ![Richiedere un certificato a un'Autorità di certificazione in Accesso Portachiavi](./media/iOS-signing-cert-5.png)
+    ![Richiedere un certificato a un'Autorità di certificazione in Accesso Portachiavi](./media/iOS-signing-cert-5.png)
 
 11. Seguire le istruzioni nel sito per sviluppatori Apple sopra indicato su come creare un file CSR. Salvare il file CSR nel computer macOS in uso.
 
-  ![Richiedere un certificato a un'Autorità di certificazione in Accesso Portachiavi](./media/iOS-signing-cert-6.png)
+    ![Richiedere un certificato a un'Autorità di certificazione in Accesso Portachiavi](./media/iOS-signing-cert-6.png)
 
 12. Tornare al sito per sviluppatori Apple. Fare clic su **Continue**. Caricare quindi il file CSR.
 
 13. Il certificato di firma viene generato da Apple. Scaricarlo e salvarlo in un percorso facile da ricordare nel computer macOS.
 
-  ![Scaricare il certificato di firma](./media/iOS-signing-cert-7.png)
+    ![Scaricare il certificato di firma](./media/iOS-signing-cert-7.png)
 
 14. Fare doppio clic sul file di certificato appena scaricato per aggiungere il certificato a un portachiavi.
 
 15. Aprire di nuovo **Accesso Portachiavi**. Individuare il certificato cercandone il nome nella barra di ricerca in alto a destra. Fare clic con il pulsante destro del mouse su un elemento per visualizzare il menu e scegliere **Ottieni informazioni**. Nelle schermate di esempio viene usato un certificato di sviluppo anziché un certificato di produzione.
 
-  ![Aggiungere il certificato a un portachiavi](./media/iOS-signing-cert-8.png)
+    ![Aggiungere il certificato a un portachiavi](./media/iOS-signing-cert-8.png)
 
 16. Viene visualizzata una finestra informativa. Scorrere verso il basso fino alla sezione **Impronte digitali**. Copiare la stringa **SHA1** (sfocata) da usare come argomento per "-c" per lo strumento di wrapping delle app.
 
-  ![Aggiungere il certificato a un portachiavi](./media/iOS-signing-cert-9.png)
+    ![Aggiungere il certificato a un portachiavi](./media/iOS-signing-cert-9.png)
 
 
 
@@ -153,7 +153,7 @@ Per altre informazioni sulla distribuzione di app iOS internamente per gli utent
 
 4. Scegliere **In House** (Interna) in **Distribution** (Distribuzione) per creare un profilo di provisioning interno.
 
-  ![Selezionare un profilo di provisioning interno](./media/iOS-provisioning-profile-1.png)
+   ![Selezionare un profilo di provisioning interno](./media/iOS-provisioning-profile-1.png)
 
 5. Fare clic su **Continue**. Assicurarsi di collegare il certificato di firma generato in precedenza al profilo di provisioning.
 
@@ -414,8 +414,8 @@ Usare questa procedura per ottenere i log per le applicazioni di cui è stato es
 4. Fare clic sul collegamento "Get Started" (Per iniziare).
 5. È ora possibile condividere i log tramite posta elettronica o copiarli in un percorso di OneDrive.
 
->[!NOTE]
-La funzionalità di registrazione è abilitata per le app di cui è stato eseguito il wrapping con la versione 7.1.13 dello strumento di wrapping delle app di Intune, o versione successiva.
+> [!NOTE]
+> La funzionalità di registrazione è abilitata per le app di cui è stato eseguito il wrapping con la versione 7.1.13 dello strumento di wrapping delle app di Intune, o versione successiva.
 
 ### <a name="see-also"></a>Vedere anche
 - [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](apps-prepare-mobile-application-management.md)</br>

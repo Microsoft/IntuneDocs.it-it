@@ -14,16 +14,16 @@ ms.technology: ''
 ms.assetid: 2ea5941c-a69b-4e1c-b42c-a1fc0c3a7de7
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01928439f3a4d9280036b2e1a9576175ef425050
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: 67a5f60e0877ebc8994ed7d3191a81f51d19c40a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>Rimuovere un utente da un dispositivo iOS condiviso
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 L'azione **Rimuovi utente** elimina un utente selezionato dalla cache locale di un dispositivo iPad condiviso. Il dispositivo iPad deve essere configurato in modo da gestire l'app Classroom iOS usando un [profilo Education di iOS](education-settings-configure-ios.md). 
 

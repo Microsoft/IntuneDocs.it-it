@@ -128,7 +128,7 @@
 ### [Reimpostare il dispositivo](reset-erase-your-device-cpwebsite.md)
 ### [Crittografare il dispositivo](encrypt-your-device-windows.md)
 ### [Impostare o modificare la password](set-or-change-your-password-windows.md)
-### [Annullare la registrazione del dispositivo in Intune](unenroll-your-device-from-intune-windows.md)
+### [Rimuovere il dispositivo da Intune](unenroll-your-device-from-intune-windows.md)
 ### [Che cosa accade se si annulla la registrazione del dispositivo?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [Che cosa accade se si reimposta il dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Disattivare la raccolta dati di utilizzo di Microsoft](turn-off-microsoft-usage-data-collection-windows.md)

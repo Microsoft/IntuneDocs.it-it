@@ -1,29 +1,29 @@
 ---
 title: Proteggere Skype for Business Online
 description: Proteggere e controllare l'accesso a Skype for Business Online con accesso condizionale.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 30d1abb3e7411cae73a98be51489cffdfc738e7f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9d912cc0a2d8f815e046d888fc8878a8703c514
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Proteggere l'accesso a Skype for Business Online con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 È possibile usare i criteri di accesso condizionale per **Skype for Business Online** per controllare l'accesso a Skype for Business Online.
 L'accesso condizionale è costituito da due componenti:
@@ -87,23 +87,23 @@ Quando si è pronti, continuare con il **Passaggio 3**.
 ### <a name="step-3-configure-the-skype-for-business-online-policy"></a>Passaggio 3: Configurare i criteri di Skype for Business Online
 A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e conformi possano accedere a Skype for Business Online. Questi criteri verranno archiviati in Azure Active Directory.
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** > **Accesso condizionale** > **Criteri di Skype for Business Online**.
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** > **Accesso condizionale** > **Criteri di Skype for Business Online**.
 
-  ![Schermata della pagine dei criteri di accesso condizionale per Skype for Business Online](./media/conditional_access_SFBPolicy.png)
+   ![Schermata della pagine dei criteri di accesso condizionale per Skype for Business Online](./media/conditional_access_SFBPolicy.png)
 
-2.  Scegliere **Abilitare i criteri di accesso condizionale**.
+2. Scegliere **Abilitare i criteri di accesso condizionale**.
 
-3.  In **Accesso all'applicazione** è possibile scegliere di applicare i criteri di accesso condizionale a:
+3. In **Accesso all'applicazione** è possibile scegliere di applicare i criteri di accesso condizionale a:
 
-    -   **iOS**
+   -   **iOS**
 
-    -   **Android**
+   -   **Android**
 
-4.  In **Gruppi di destinazione** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory ai quali verranno applicati i criteri. È possibile scegliere di applicare questa opzione a tutti gli utenti o solo a un gruppo di utenti selezionato.
+4. In **Gruppi di destinazione** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory ai quali verranno applicati i criteri. È possibile scegliere di applicare questa opzione a tutti gli utenti o solo a un gruppo di utenti selezionato.
 
-5.  Facoltativamente, in **Gruppi esentati** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
+5. Facoltativamente, in **Gruppi esentati** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
 
-6.  Al termine dell'operazione scegliere **Salva**.
+6. Al termine dell'operazione scegliere **Salva**.
 
 L'accesso condizionale per Skype for Business Online è stato configurato. Non è necessario distribuire i criteri di accesso condizionale perché diventano immediatamente effettivi.
 

@@ -331,6 +331,6 @@ __Il componente Xamarin per Intune App SDK attualmente supporta la gestione di a
 
 __Il certificato di firma Symantec non richiede più un'app Portale aziendale di Windows Phone 8 firmata per il caricamento__ Per il caricamento del certificato di firma Symantec non è più necessaria un'app Portale aziendale di Windows Phone 8 firmata. Il certificato può essere caricato in modo indipendente.
 
-###<a name="deprecations"></a>Elementi deprecati
+### <a name="deprecations"></a>Elementi deprecati
 
 __Supporto per l'app Portale aziendale di Windows Phone 8__ Il supporto per il portale aziendale di Windows Phone 8 sarà deprecato. Il supporto per le piattaforme Windows Phone 8 e WinRT è stato deprecato a ottobre 2016. Il supporto per il portale aziendale di Windows 8 è stato deprecato a ottobre 2016.

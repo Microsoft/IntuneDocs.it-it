@@ -1,28 +1,28 @@
 ---
 title: Usare i certificati PKCS con Microsoft Intune - Azure | Microsoft Docs
-description: "Aggiungere o creare certificati PKCS (Public Key Cryptography Standards) con Microsoft Intune, inclusi i passaggi per esportare un certificato radice, configurare il modello di certificato, scaricare e installare il connettore di certificati di Microsoft Intune, creare un profilo di configurazione del dispositivo, creare un profilo certificato PKCS in Azure e nell'autorità di certificazione"
-keywords: 
+description: Aggiungere o creare certificati PKCS (Public Key Cryptography Standards) con Microsoft Intune, inclusi i passaggi per esportare un certificato radice, configurare il modello di certificato, scaricare e installare il connettore di certificati di Microsoft Intune, creare un profilo di configurazione del dispositivo, creare un profilo certificato PKCS in Azure e nell'autorità di certificazione
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c0668921f03b24b319c2c37837dbd2cc053370ca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0dfcaa2e37fecc4c5a075931489c106b78c17b7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurare e usare i certificati PKCS con Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 I certificati vengono usati per autenticare e proteggere l'accesso alle risorse aziendali, ad esempio una rete VPN o Wi-Fi. In questo articolo viene illustrato come esportare un certificato PKCS e quindi aggiungerlo a un profilo di Intune. 
 
@@ -56,7 +56,7 @@ Per l'autenticazione con VPN, Wi-Fi e altre risorse, è necessario un certificat
 
    Ad esempio:
 
-4.  Al termine della procedura guidata, prima di chiuderla, fare clic su **Avvia l'interfaccia utente di Connettore di certificati**.
+4. Al termine della procedura guidata, prima di chiuderla, fare clic su **Avvia l'interfaccia utente di Connettore di certificati**.
 
    `certutil -ca.cert certnew.cer`
 

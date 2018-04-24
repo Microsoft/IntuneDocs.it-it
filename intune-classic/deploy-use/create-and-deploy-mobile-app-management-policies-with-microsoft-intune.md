@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: cc133071f4d6c0d1a3bbb3acc7c0bd5cb45b6cef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Creare e distribuire i criteri di protezione delle app con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Questo argomento descrive il processo di creazione di un criterio di protezione delle app nel **portale di Azure**. Il portale di Azure è la nuova console di amministrazione per la creazione di criteri di protezione delle app. È consigliabile usare questo portale per creare criteri di protezione delle app. Il portale di Azure supporta gli scenari MAM seguenti:
 
@@ -31,23 +31,23 @@ Questo argomento descrive il processo di creazione di un criterio di protezione 
 - Dispositivi gestiti da una soluzione MDM di terze parti.
 - Dispositivi non gestiti da nessuna soluzione MDM (BYOD).
 
->[!IMPORTANT]
-Di seguito sono riportate alcune considerazioni relative all'uso della **console di amministrazione di Intune** per gestire i dispositivi:
-
+> [!IMPORTANT]
+> Di seguito sono riportate alcune considerazioni relative all'uso della **console di amministrazione di Intune** per gestire i dispositivi:
+> 
 > * È possibile creare un criterio di protezione delle app che supporta le app per i dispositivi registrati in Intune mediante la [console di amministrazione di Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 > * I criteri di protezione delle app creati nella console di amministrazione di Intune non possono essere importati nel portale di Azure.  Tali criteri devono essere ricreati nel portale di Azure.
-
+> 
 > * È possibile che nella console di amministrazione di Intune non vengano visualizzate tutte le impostazioni dei criteri di protezione delle app. Il portale di Azure è la nuova console di amministrazione per la creazione dei criteri di protezione delle app.
-
+> 
 > * Per distribuire app gestite, è necessario creare un criterio di protezione delle app nella console di amministrazione di Intune. In questo caso, può essere necessario creare criteri di protezione delle app sia nella console di amministrazione di Intune che nel portale di Azure: nella console di amministrazione di Intune per verificare la possibilità di distribuire app gestite e nel portale di Azure perché è la nuova console di amministrazione contenente tutte le impostazioni dei criteri di protezione delle app.
-
+> 
 > * Se si creano criteri di protezione delle app sia nella console di amministrazione di Intune che nel portale di Azure, alle app vengono applicati i criteri creati in quest'ultimo.
 
 Per visualizzare un elenco di impostazioni dei criteri supportate nelle piattaforme iOS e Android, selezionare una delle seguenti voci:
 
 > [!div class="op_single_selector"]
-- [Criteri iOS](ios-mam-policy-settings.md)
-- [Criteri Android](android-mam-policy-settings.md)
+> - [Criteri iOS](ios-mam-policy-settings.md)
+> - [Criteri Android](android-mam-policy-settings.md)
 
 - Per una descrizione più dettagliata del funzionamento dei criteri di protezione delle app e degli scenari supportati dai criteri di protezione delle app di Intune, vedere [Proteggere i dati delle app usando i criteri di gestione di applicazioni mobili con Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
@@ -129,13 +129,13 @@ A partire da Intune versione 1703, è possibile aggiungere genericamente app LOB
 > [!IMPORTANT]
 > È necessario selezionare Windows 10 dall'elenco a discesa Piattaforma quando si crea un nuovo criterio di protezione delle app.
 
-1.  Nel pannello Aggiungi criteri scegliere **App consentite** o **Exempt apps** (App esenti) per aprire il pannello App consentite o Exempt apps (App esenti).
+1. Nel pannello Aggiungi criteri scegliere **App consentite** o **Exempt apps** (App esenti) per aprire il pannello App consentite o Exempt apps (App esenti).
 
-    > [!NOTE]
-    >
-    - **App consentite**: si tratta delle app che devono essere conformi a questo criterio.
-    - **Exempt apps** (App esenti): queste app sono escluse da questo criterio e possono accedere ai dati aziendali senza restrizioni.
-<br></br>
+   > [!NOTE]
+   > 
+   > - **App consentite**: si tratta delle app che devono essere conformi a questo criterio.
+   > - **Exempt apps** (App esenti): queste app sono escluse da questo criterio e possono accedere ai dati aziendali senza restrizioni.
+   > <br></br>
 2. Nel pannello App consentite o Exempt apps (App esenti) fare clic su **Aggiungi app**. È possibile aggiungere app Microsoft consigliate, app dello Store o app desktop.
 
     a.  **App consigliate**: un elenco già popolato di app (principalmente di Office) che gli amministratori sono autorizzati a importare facilmente nei criteri.
@@ -210,8 +210,8 @@ Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale dovr�
 Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Android, selezionare una delle seguenti voci:
 
 > [!div class="op_single_selector"]
-- [Criteri iOS](ios-mam-policy-settings.md)
-- [Criteri Android](android-mam-policy-settings.md)
+> - [Criteri iOS](ios-mam-policy-settings.md)
+> - [Criteri Android](android-mam-policy-settings.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Monitorare la conformità e lo stato utente](monitor-mobile-app-management-policies-with-microsoft-intune.md)

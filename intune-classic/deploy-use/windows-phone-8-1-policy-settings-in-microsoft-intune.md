@@ -1,29 +1,29 @@
 ---
 title: Impostazioni dei criteri di Windows Phone 8.1
-description: "Intune offre una gamma di impostazioni generali incorporate che è possibile configurare nei dispositivi Windows Phone 8.1. È anche possibile specificare i valori OMA-URI per creare impostazioni personalizzate non disponibili in Intune."
-keywords: 
+description: Intune offre una gamma di impostazioni generali incorporate che è possibile configurare nei dispositivi Windows Phone 8.1. È anche possibile specificare i valori OMA-URI per creare impostazioni personalizzate non disponibili in Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 083ac6c4bbab6cdad9fd07ac68cdd7447f14fe5e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: b44215e301bb712cc4d27722515d2e51b124101b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di Windows Phone 8.1 in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune offre una gamma di impostazioni generali incorporate che è possibile configurare nei dispositivi Windows Phone 8.1. È anche possibile specificare i valori OMA-URI (Open Mobile Alliance Uniform Resource Identifier) per creare impostazioni personalizzate non disponibili in Intune.
 
@@ -43,18 +43,18 @@ Usare i **criteri di configurazione generale per Windows Phone (Windows Phone 8.
 
 ### <a name="password-settings"></a>Impostazioni della password
 
-|Nome impostazione|Dettagli|
-|----------------|------|
-|**Richiedi una password per sbloccare i dispositivi mobili**|Specifica se gli utenti devono inserire una password per accedere ai loro dispositivi.|
-|**Tipo di password richiesto**|Specifica il tipo di password che verrà richiesto, ad esempio alfanumerico o solo numerico.|
-|**Tipo di password richiesto - Numero minimo di set di caratteri**|Specifica quanti set di caratteri diversi è necessario includere nella password. Sono disponibili quattro set di caratteri: lettere minuscole, lettere maiuscole, numeri e simboli. Per i dispositivi iOS specifica invece il numero di simboli che è necessario includere nella password.|
-|**Lunghezza minima password**|Specifica il numero minimo di caratteri complessi richiesti per la password.|
-|**Consenti password semplici**|Specifica la possibilità di usare password semplici, ad esempio '0000' e '1234'.|
-|**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|Specifica il numero di tentativi di immissione di una password errata ripetuti prima che il dispositivo venga cancellato.|
-|**Minuti di inattività prima dello spegnimento dello schermo**|Specifica per quanto tempo un dispositivo deve rimanere inattivo prima che lo schermo venga bloccato automaticamente.|
-|**Scadenza password (giorni)**|Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.|Sì|sì|
-|**Ricorda cronologia password**|Specifica se vengono ricordate le password precedenti per impedire che l'utente le usi di nuovo.|
-|**Ricorda cronologia password** – **Impedisci riutilizzo delle password precedenti**|Specifica quante password utilizzate in precedenza vengono ricordate.|
+|                                           Nome impostazione                                            |                                                                                                                                    Dettagli                                                                                                                                     |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Richiedi una password per sbloccare i dispositivi mobili</strong>                    |                                                                                                     Specifica se gli utenti devono inserire una password per accedere ai loro dispositivi.                                                                                                     |
+|                              <strong>Tipo di password richiesto</strong>                              |                                                                                          Specifica il tipo di password che verrà richiesto, ad esempio alfanumerico o solo numerico.                                                                                           |
+|            <strong>Tipo di password richiesto - Numero minimo di set di caratteri</strong>             | Specifica quanti set di caratteri diversi è necessario includere nella password. Sono disponibili quattro set di caratteri, lettere minuscole, lettere maiuscole, numeri e simboli. Per i dispositivi iOS specifica invece il numero di simboli che è necessario includere nella password. |
+|                             <strong>Lunghezza minima password</strong>                              |                                                                                                 Specifica il numero minimo di caratteri complessi richiesti per la password.                                                                                                  |
+|                              <strong>Consenti password semplici</strong>                              |                                                                                                     Specifica la possibilità di usare password semplici, ad esempio '0000' e '1234'.                                                                                                     |
+|     <strong>Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo</strong>      |                                                                                         Specifica il numero di tentativi di immissione di una password errata ripetuti prima che il dispositivo venga cancellato.                                                                                         |
+|                <strong>Minuti di inattività prima dello spegnimento dello schermo</strong>                 |                                                                                       Specifica per quanto tempo un dispositivo deve rimanere inattivo prima che lo schermo venga bloccato automaticamente.                                                                                        |
+|                            <strong>Scadenza password (giorni)</strong>                            |                                                                                                    Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.                                                                                                    |
+|                            <strong>Ricorda cronologia password</strong>                             |                                                                                     Specifica se vengono ricordate le password precedenti per impedire che l'utente le usi di nuovo.                                                                                      |
+| <strong>Ricorda cronologia password</strong> – <strong>Impedisci riutilizzo delle password precedenti</strong> |                                                                                                          Specifica quante password utilizzate in precedenza vengono ricordate.                                                                                                          |
 
 ### <a name="encryption-settings"></a>Impostazioni di crittografia
 
@@ -119,14 +119,15 @@ In **Elenco app consentite e bloccate** specificare un elenco di app da consenti
 > [!NOTE]
 > Un singolo criterio può contenere solo un elenco di app consentite o bloccate. Non è possibile specificare entrambi nello stesso criterio.
 
-|Nome impostazione|Dettagli|
-|----------------|--------------------|
-|**Impedisci ai dispositivi di aprire le app nell'elenco**|Elenca le app che non sono gestite da Intune e che gli utenti non sono autorizzati a installare ed eseguire.|
-|**Consenti ai dispositivi di installare solo le app nell'elenco**|Elenca le app che gli utenti sono autorizzati a installare. Gli utenti non possono installare nessun altra applicazione. Le app gestite da Intune sono automaticamente consentite.|
-|**Aggiungi**|Aggiunge un'app all'elenco selezionato. Specificare un nome, l'URL dell'app nell'App Store e l'autore dell'app (facoltativo). Per informazioni, vedere Come specificare gli URL negli App Store, più avanti in questo argomento.
-|**Importa app**|Importa un elenco di app specificate in un file con valori separati da virgola. Nel file usare il formato, il nome dell'applicazione, l'autore e l'URL dell'app.|
-|**Modifica**|Consente di modificare il nome, l'autore e l'URL dell'app selezionata.|
-|**Eliminazione**|Elimina l'app selezionata dall'elenco.|
+|                          Nome impostazione                          |                                                                                                      Dettagli                                                                                                      |
+|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Impedisci ai dispositivi di aprire le app nell'elenco</strong>   |                                                        Elenca le app che non sono gestite da Intune e che gli utenti non sono autorizzati a installare ed eseguire.                                                         |
+| <strong>Consenti ai dispositivi di installare solo le app nell'elenco</strong> |                                 Elenca le app che gli utenti sono autorizzati a installare. Gli utenti non possono installare nessun altra applicazione. Le app gestite da Intune sono automaticamente consentite.                                 |
+|                      <strong>Aggiungi</strong>                      | Aggiunge un'app all'elenco selezionato. Specificare un nome, l'URL dell'app nell'App Store e l'autore dell'app (facoltativo). Per informazioni, vedere Come specificare gli URL negli App Store, più avanti in questo argomento. |
+|                  <strong>Importa app</strong>                  |                              Importa un elenco di app specificate in un file con valori separati da virgola. Nel file usare il formato, il nome dell'applicazione, l'autore e l'URL dell'app.                               |
+|                     <strong>Modifica</strong>                      |                                                                          Consente di modificare il nome, l'autore e l'URL dell'app selezionata.                                                                          |
+|                    <strong>Eliminazione</strong>                     |                                                                                      Elimina l'app selezionata dall'elenco.                                                                                      |
+
 > [!IMPORTANT]
 > Se si specifica un elenco di app consentite per i dispositivi Windows Phone 8.1, è necessario aggiungere a tale elenco l'app portale aziendale. In caso contrario, l'elenco verrà bloccato.
 
@@ -156,7 +157,7 @@ Per informazioni sulla creazione di impostazioni di OMA URI per i dispositivi Wi
 |**Nome**|Immettere un nome univoco per il criterio che consenta di identificarlo nella console di Intune.|
 |**Descrizione**|Fornire una descrizione di carattere generale sul criterio di conformità e altre informazioni rilevanti per consentirne l'individuazione.|
 
-### <a name="oma-uri-settings"></a>Impostazioni OMA-URI
+### <a name="oma-uri-settings"></a>Impostazioni URI OMA
 
 Nella sezione **Impostazioni URI OMA** fare clic su **Aggiungi** per aggiungere un'impostazione. È inoltre possibile modificare o eliminare un'impostazione esistente.
 
@@ -166,7 +167,7 @@ Nella finestra di dialogo **Aggiungi o modifica impostazione URI OMA** specifica
     |--------|--------------------|
     |**Nome dell'impostazione**|Immettere un nome univoco per l'impostazione OMA URI per identificarla nell'elenco delle impostazioni.|
     |**Descrizione dell'impostazione**|Fornire una descrizione che offra una panoramica dell'impostazione e altre informazioni rilevanti per individuarla.|
-    |**Tipo di dati**|Selezionare il tipo di dati in cui verrà specificata questa impostazione OMA URI. È possibile scegliere tra:<br /><br />-   **Stringa**<br />-   **Stringa (XML)**<br />-   **Data e ora**<br />-   **Intero**<br />-   **Virgola mobile**<br />-   **Booleano**|
+    |**Tipo di dati**|Selezionare il tipo di dati in cui verrà specificata questa impostazione OMA URI. Scegliere tra:<br /><br />-   **Stringa**<br />-   **Stringa (XML)**<br />-   **Data e ora**<br />-   **Intero**<br />-   **Virgola mobile**<br />-   **Booleano**|
     |**OMA-URI (maiuscole/minuscole)**|Specificare l'opzione OMA-URI per cui si vuole fornire un'impostazione.|
     |**Valore**|Specificare il valore da associare all'impostazione OMA-URI specificata in precedenza.|
 

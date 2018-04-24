@@ -1,29 +1,29 @@
 ---
 title: Impostazioni dei criteri di sicurezza dei dispositivi mobili
-description: "Usare Intune per configurare una vasta gamma di impostazioni che è possibile distribuire in dispositivi gestiti nell'organizzazione."
-keywords: 
+description: Usare Intune per configurare una vasta gamma di impostazioni che è possibile distribuire in dispositivi gestiti nell'organizzazione.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa86e50ebf7e65be0ce8ace65e2cb0bc7e38658e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 83536a4d9858454505a84a2e394ace1119255049
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di sicurezza dei dispositivi mobili in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!IMPORTANT]
 > Microsoft Intune include ora criteri di configurazione distinti per ogni piattaforma del dispositivo. Tali criteri comprendono le impostazioni più aggiornate che è possibile usare. È possibile continuare a usare i criteri di sicurezza del dispositivo mobile. Tutte le distribuzioni esistenti continueranno a funzionare. È tuttavia consigliabile pianificare la migrazione ai nuovi criteri di configurazione non appena possibile, poiché i criteri di sicurezza del dispositivo verranno rimossi in futuro.
@@ -48,32 +48,34 @@ I criteri di sicurezza per i dispositivi mobili di Intune consentono di configur
 
 ## <a name="security-settings"></a>Impostazioni di sicurezza
 
-|Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Richiedi una password per sbloccare i dispositivi mobili**|No|No|Sì|Sì|sì|
-|**Tipo di password richiesto**<br /><br />Questa impostazione specifica il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.|sì|Sì|Sì|Sì|No|
-|**Tipo di password richiesto - Numero minimo di set di caratteri**<br /><br />Sono disponibili quattro set di caratteri, lettere minuscole, lettere maiuscole, numeri e simboli. L'impostazione specifica quanti set di caratteri diversi è necessario includere nella password. Per i dispositivi iOS specifica invece il numero di simboli che è necessario includere nella password.|sì|Sì|Sì|Sì|No|
-|**Lunghezza minima password**|sì|Sì|Sì|Sì|sì|
-|**Consenti password semplici**<br /><br />Le password semplici includono "0000" e "1234".|No|No|Sì|Sì|No|
-|**Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo**|sì|Sì|Sì|Sì|sì|
-|**Minuti di inattività prima dello spegnimento dello schermo**<sup>1</sup>|sì|Sì|Sì|Sì|sì|
-|**Scadenza password (giorni)**|sì|Sì|Sì|Sì|sì|
-|**Ricorda cronologia password**|sì|Sì|Sì|Sì|Sì|
-|**Ricorda cronologia password** – **Impedisci riutilizzo delle password precedenti**|sì|Sì|Sì|Sì|sì|
-|**Qualità password**|No|No|No|No|sì|
-|**Consenti password grafica e PIN**|sì|Sì|No|No|No|
-|**Minuti di inattività prima che venga richiesta la password**|No|No|No|Sì|No|
-|**Consenti sblocco tramite impronta digitale**|No|No|No|iOS 7 e versioni successive|No|
+|                                                                                                                                                                                        Nome impostazione                                                                                                                                                                                         | Windows 8.1 e Windows RT 8.1 | Windows RT | Windows Phone 8 e Windows Phone 8.1 |       iOS       | Android e Samsung KNOX Standard |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|---------------------------------------|-----------------|-----------------------------------|
+|                                                                                                                                                                <strong>Richiedi una password per sbloccare i dispositivi mobili</strong>                                                                                                                                                                 |               No               |     No     |                  Sì                  |       Sì       |                Sì                |
+|                                                                                                                 <strong>Tipo di password richiesto</strong><br /><br />Questa impostazione specifica il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.                                                                                                                 |              Sì               |    Sì     |                  Sì                  |       Sì       |                No                 |
+| <strong>Tipo di password richiesto - Numero minimo di set di caratteri</strong><br /><br />Sono disponibili quattro set di caratteri, lettere minuscole, lettere maiuscole, numeri e simboli. L'impostazione specifica quanti set di caratteri diversi è necessario includere nella password. Per i dispositivi iOS specifica invece il numero di simboli che è necessario includere nella password. |              Sì               |    Sì     |                  Sì                  |       Sì       |                No                 |
+|                                                                                                                                                                          <strong>Lunghezza minima password</strong>                                                                                                                                                                           |              Sì               |    Sì     |                  Sì                  |       Sì       |                Sì                |
+|                                                                                                                                               <strong>Consenti password semplici</strong><br /><br />Le password semplici includono "0000" e "1234".                                                                                                                                                |               No               |     No     |                  Sì                  |       Sì       |                No                 |
+|                                                                                                                                                  <strong>Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo</strong>                                                                                                                                                   |              Sì               |    Sì     |                  Sì                  |       Sì       |                Sì                |
+|                                                                                                                                                         <strong>Minuti di inattività prima dello spegnimento dello schermo</strong><sup>1</sup>                                                                                                                                                          |              Sì               |    Sì     |                  Sì                  |       Sì       |                Sì                |
+|                                                                                                                                                                         <strong>Scadenza password (giorni)</strong>                                                                                                                                                                         |              Sì               |    Sì     |                  Sì                  |       Sì       |                Sì                |
+|                                                                                                                                                                         <strong>Ricorda cronologia password</strong>                                                                                                                                                                          |              Sì               |    Sì     |                  Sì                  |       Sì       |                Sì                |
+|                                                                                                                                              <strong>Ricorda cronologia password</strong> – <strong>Impedisci riutilizzo delle password precedenti</strong>                                                                                                                                              |              Sì               |    Sì     |                  Sì                  |       Sì       |                Sì                |
+|                                                                                                                                                                              <strong>Qualità password</strong>                                                                                                                                                                              |               No               |     No     |                  No                   |       No        |                Sì                |
+|                                                                                                                                                                       <strong>Consenti password grafica e PIN</strong>                                                                                                                                                                       |              Sì               |    Sì     |                  No                   |       No        |                No                 |
+|                                                                                                                                                             <strong>Minuti di inattività prima che venga richiesta la password</strong>                                                                                                                                                              |               No               |     No     |                  No                   |       Sì       |                No                 |
+|                                                                                                                                                                          <strong>Consenti sblocco tramite impronta digitale</strong>                                                                                                                                                                          |               No               |     No     |                  No                   | iOS 7 e versioni successive |                No                 |
+
 <sup>1</sup>Nei dispositivi iOS, se le impostazioni **Minuti di inattività prima dello spegnimento dello schermo** e **Minuti di inattività prima che venga richiesta la password** sono configurate, vengono applicate in sequenza. Ad esempio, se si imposta il valore di entrambe le impostazioni su **5** minuti, lo schermo si spegne automaticamente dopo 5 minuti e il dispositivo viene bloccato dopo altri 5 minuti. Tuttavia, se l'utente spegne manualmente lo schermo, la seconda impostazione viene applicata immediatamente. Nello stesso esempio, il dispositivo viene bloccato 5 minuti dopo che l'utente spegne lo schermo.
 
 Quando si distribuisce un criterio relativo alla lunghezza della password per dispositivi che eseguono Windows RT, gli utenti saranno costretti a reimpostare la password, anche se la password corrente è conforme ai requisiti dei criteri.
 
 ## <a name="encryption-settings"></a>Impostazioni di crittografia
 
-|Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Richiedi crittografia sul dispositivo mobile**<sup>1</sup><br /><br />Per i dispositivi Windows Phone 8, è necessario impostare su **Sì**.<br /><br />Per abilitare la crittografia su dispositivi iOS, abilitare l'impostazione **richiedono una password per sbloccare i dispositivi mobili**.|Sì|No|Sì|No|sì|
-|**Richiedi crittografia sulle schede di memoria**<br /><br />Questa impostazione si applica ai dispositivi che sono gestiti anche da Exchange ActiveSync.|n/d|n/d|n/d <br />Le app e i dati associati vengono crittografati automaticamente.|n/d|sì|
+|                                                                                                                                     Nome impostazione                                                                                                                                     | Windows 8.1 e Windows RT 8.1 | Windows RT |              Windows Phone 8 e Windows Phone 8.1              | iOS | Android e Samsung KNOX Standard |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|-----------------------------------------------------------------|-----|-----------------------------------|
+| <strong>Richiedi crittografia sul dispositivo mobile</strong><sup>1</sup><br /><br />Per i dispositivi Windows Phone 8, è necessario impostare su <strong>Sì</strong>.<br /><br />Per abilitare la crittografia su dispositivi iOS, abilitare l'impostazione <strong>richiedono una password per sbloccare i dispositivi mobili</strong>. |              Sì               |     No     |                               Sì                               | No  |                Sì                |
+|                                                                    <strong>Richiedi crittografia sulle schede di memoria</strong><br /><br />Questa impostazione si applica ai dispositivi che sono gestiti anche da Exchange ActiveSync.                                                                     |              n/d               |    n/d     | n/d <br />Le app e i dati associati vengono crittografati automaticamente. | n/d |                Sì                |
+
 <sup>1</sup>Altre informazioni per i dispositivi che eseguono Windows 8.1:
 
 -   Per applicare la crittografia su dispositivi che eseguono Windows 8.1, è necessario installare il [dicembre 2014 MDM aggiornamento del client per Windows](http://support.microsoft.com/kb/3013816) su ogni dispositivo.
@@ -88,21 +90,21 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Richiedi firewall di rete**|sì|No|No|No|No|
-|**Attiva SmartScreen**|sì|No|No|No|No|
+|**Richiedi firewall di rete**|Sì|No|No|No|No|
+|**Attiva SmartScreen**|Sì|No|No|No|No|
 
 ## <a name="system-settings"></a>Impostazioni di sistema
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Richiedi aggiornamenti automatici**|sì|No|No|No|No|
-|**Richiedi aggiornamenti automatici: classificazione minima degli aggiornamenti per l'installazione automatica**<br /><br />Scegliere la classificazione degli aggiornamenti verrà installato automaticamente:<br /><br />- **Importante**. Installa tutti gli aggiornamenti classificati come importanti.<br /><br />- **Consigliati**. Installa tutti gli aggiornamenti classificati come importanti o consigliati.|sì|No|No|No|No|
-|**Consenti acquisizione schermo**|No|No|Solo Windows Phone 8.1|sì|Sì (solo Samsung KNOX Standard)|
+|**Richiedi aggiornamenti automatici**|Sì|No|No|No|No|
+|**Richiedi aggiornamenti automatici: classificazione minima degli aggiornamenti per l'installazione automatica**<br /><br />Scegliere la classificazione degli aggiornamenti verrà installato automaticamente:<br /><br />- **Importante**. Installa tutti gli aggiornamenti classificati come importanti.<br /><br />- **Consigliati**. Installa tutti gli aggiornamenti classificati come importanti o consigliati.|Sì|No|No|No|No|
+|**Consenti acquisizione schermo**|No|No|Solo Windows Phone 8.1|Sì|Sì (solo Samsung KNOX Standard)|
 |**Consenti centro di controllo nella schermata di blocco**|No|No|No|iOS 7 e versioni successive|No|
 |**Consenti visualizzazione notifiche nella schermata di blocco**|No|No|No|iOS 7 e versioni successive|No|
 |**Consenti visualizzazione Oggi nella schermata di blocco**|No|No|No|iOS 7 e versioni successive|No|
-|**Controllo dell'account utente**|sì|No|No|No|No|
-|**Consenti invio dati di diagnostica**|sì|No|Solo Windows Phone 8.1|sì|Sì (solo Samsung KNOX Standard)|
+|**Controllo dell'account utente**|Sì|No|No|No|No|
+|**Consenti invio dati di diagnostica**|Sì|No|Solo Windows Phone 8.1|Sì|Sì (solo Samsung KNOX Standard)|
 |**Consenti certificati TLS (Transport Layer Security) non attendibili**|No|No|No|Sì|No|
 |**Consenti software di portafoglio personale quando il dispositivo è bloccato**|No|No|No|Sì|No|
 |**Consenti ripristino impostazioni predefinite**|No|No|No|No|Sì (solo Samsung KNOX Standard)|
@@ -116,7 +118,7 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 |**Consenti sincronizzazione documenti in iCloud**|No|No|No|Sì|No|
 |**Consenti sincronizzazione streaming foto in iCloud**|No|No|No|Sì|No|
 |**Richiedi backup crittografato**|No|No|No|Sì|No|
-|**URL cartelle di lavoro**<br /><br />Questa impostazione specifica l'URL della cartella di lavoro per consentire la sincronizzazione dei documenti tra i dispositivi.|sì|No|No|No|No|
+|**URL cartelle di lavoro**<br /><br />Questa impostazione specifica l'URL della cartella di lavoro per consentire la sincronizzazione dei documenti tra i dispositivi.|Sì|No|No|No|No|
 |**Consenti backup di Google**|No|No|No|No|Sì (solo Samsung KNOX Standard)|
 
 ## <a name="cloud-settings--accounts-and-synchronization"></a>Impostazioni cloud - Account e sincronizzazione
@@ -133,35 +135,35 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 |**Consenti agli utenti di eseguire il download degli allegati di posta elettronica**<sup>1</sup>|n/d|n/d|n/d|n/d|n/d|
 |**Periodo di sincronizzazione della posta elettronica** <br /><br />Questa impostazione si applica ai dispositivi che sono gestiti anche da Exchange ActiveSync.|n/d|n/d|n/d|n/d|n/d|
 |**Consente ai dispositivi mobili che non supportano completamente queste impostazioni di eseguire la sincronizzazione con Exchange (Exchange ActiveSync)** <br /><br />Questa impostazione si applica ai dispositivi che sono gestiti anche da Exchange ActiveSync.|n/d|n/d|n/d|n/d|n/d|
-|**Rendi l'account Microsoft facoltativo nell'applicazione Windows Mail**|sì|No|No|No|No|
+|**Rendi l'account Microsoft facoltativo nell'applicazione Windows Mail**|Sì|No|No|No|No|
 |**Consenti account di posta elettronica personalizzati**|No|No|Solo Windows Phone 8.1|No|No|
 
 ## <a name="application-settings---browser"></a>Impostazioni dell'applicazione - Browser
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Consenti Web browser**|No|No|Solo Windows Phone 8.1|sì|Sì (solo Samsung KNOX Standard)|
-|**Consenti riempimento automatico**|sì|No|No|sì|Sì (solo Samsung KNOX Standard)|
-|**Consenti blocco popup**|sì|No|No|sì|Sì (solo Samsung KNOX Standard)|
-|**Consenti cookie**|No|No|No|sì|Sì (solo Samsung KNOX Standard)|
-|**Consenti plug-in**|sì|No|No|No|No|
-|**Consenti scripting**|sì|No|No|sì|Sì (solo Samsung KNOX Standard)|
-|**Consenti avviso illeciti**|sì|No|No|Sì|No|
-|**Consenti immissione di una singola parola nel sito Intranet**<br /><br />Questa impostazione consente l'uso di una singola parola per reindirizzare Internet Explorer e un sito Web, ad esempio "Bing".|sì|No|No|No|No|
-|**Consenti rilevamento automatico della rete Intranet**|sì|No|No|No|No|
-|**Livello di protezione per Internet**|sì|No|No|No|No|
-|**Livello di protezione per Intranet**|sì|No|No|No|No|
-|**Livello di protezione per siti attendibili**|sì|No|No|No|No|
-|**Livello di protezione per siti con restrizioni**|sì|No|No|No|No|
-|**Invia l'intestazione DNT (Do Not Track)**|sì|No|No|No|No|
-|**Consenti l'accesso dal menu di modalità Enterprise**|sì|No|No|No|No|
-|**Posizione elenco siti modalità Enterprise**|sì|No|No|No|No|
+|**Consenti Web browser**|No|No|Solo Windows Phone 8.1|Sì|Sì (solo Samsung KNOX Standard)|
+|**Consenti riempimento automatico**|sì|No|No|Sì|Sì (solo Samsung KNOX Standard)|
+|**Consenti blocco popup**|Sì|No|No|Sì|Sì (solo Samsung KNOX Standard)|
+|**Consenti cookie**|No|No|No|Sì|Sì (solo Samsung KNOX Standard)|
+|**Consenti plug-in**|Sì|No|No|No|No|
+|**Consenti scripting**|Sì|No|No|Sì|Sì (solo Samsung KNOX Standard)|
+|**Consenti avviso illeciti**|Sì|No|No|Sì|No|
+|**Consenti immissione di una singola parola nel sito Intranet**<br /><br />Questa impostazione consente l'uso di una singola parola per reindirizzare Internet Explorer e un sito Web, ad esempio "Bing".|Sì|No|No|No|No|
+|**Consenti rilevamento automatico della rete Intranet**|Sì|No|No|No|No|
+|**Livello di protezione per Internet**|Sì|No|No|No|No|
+|**Livello di protezione per Intranet**|Sì|No|No|No|No|
+|**Livello di protezione per siti attendibili**|Sì|No|No|No|No|
+|**Livello di protezione per siti con restrizioni**|Sì|No|No|No|No|
+|**Invia l'intestazione DNT (Do Not Track)**|Sì|No|No|No|No|
+|**Consenti l'accesso dal menu di modalità Enterprise**|Sì|No|No|No|No|
+|**Posizione elenco siti modalità Enterprise**|Sì|No|No|No|No|
 
 ## <a name="application-settings---apps"></a>Impostazioni dell'applicazione - App
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Consenti archivio applicazioni**|No|No|Solo Windows Phone 8.1|sì|Sì (solo Samsung KNOX Standard)|
+|**Consenti archivio applicazioni**|No|No|Solo Windows Phone 8.1|Sì|Sì (solo Samsung KNOX Standard)|
 |**Richiedi una password per accedere all'archivio applicazioni**|No|No|No|Sì|No|
 |**Consenti acquisti in-app**|No|No|No|Sì|No|
 |**Consenti documenti gestiti in altre app non gestite**|No|No|No|iOS 7 e versioni successive|No|
@@ -181,7 +183,7 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Consenti la fotocamera**|No|No|Solo Windows Phone 8.1|Sì|sì|
+|**Consenti la fotocamera**|No|No|Solo Windows Phone 8.1|Sì|Sì|
 |**Consenti archivi rimovibili**|No|No|Sì|No|Sì (solo Samsung KNOX Standard)|
 |**Consenti Wi-Fi**|No|No|Solo Windows Phone 8.1|No|Sì (solo Samsung KNOX Standard)|
 |**Consenti tethering Wi-Fi**|No|No|Solo Windows Phone 8.1|No|Sì (solo Samsung KNOX Standard)|
@@ -196,8 +198,8 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Consenti roaming vocale**|No|No|No|sì|Sì (solo Samsung KNOX Standard)|
-|**Consenti roaming dei dati**|sì|No|No|sì|Sì (solo Samsung KNOX Standard)|
+|**Consenti roaming vocale**|No|No|No|Sì|Sì (solo Samsung KNOX Standard)|
+|**Consenti roaming dei dati**|Sì|No|No|Sì|Sì (solo Samsung KNOX Standard)|
 |**Consenti sincronizzazione automatica durante il roaming**|No|No|No|Sì|No|
 |**Consenti i messaggi SMS/MMS**|No|No|No|No|Sì (solo Samsung KNOX Standard)|
 
@@ -205,9 +207,9 @@ Quando si distribuisce un criterio relativo alla lunghezza della password per di
 
 |Nome impostazione|Windows 8.1 e Windows RT 8.1|Windows RT|Windows Phone 8 e Windows Phone 8.1|iOS|Android e Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Consenti l'assistente vocale**|No|No|No|sì|Sì (solo Samsung KNOX Standard)|
+|**Consenti l'assistente vocale**|No|No|No|Sì|Sì (solo Samsung KNOX Standard)|
 |**Consenti assistente vocale quando il dispositivo è bloccato**|No|No|No|Sì|No|
-|**Consenti la composizione vocale**|No|No|No|sì|Sì (solo Samsung KNOX Standard)|
+|**Consenti la composizione vocale**|No|No|No|Sì|Sì (solo Samsung KNOX Standard)|
 |**Consenti copia e incolla**|No|No|Solo Windows Phone 8.1|No|Sì (solo Samsung KNOX Standard)|
 |**Consenti la condivisione degli Appunti tra le applicazioni**|No|No|No|No|Sì (solo Samsung KNOX Standard)|
 |**Consenti YouTube**|No|No|No|No|Sì (solo Samsung KNOX Standard)|

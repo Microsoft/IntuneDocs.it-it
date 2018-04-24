@@ -1,27 +1,27 @@
 ---
 title: Configurare le impostazioni Wi-Fi in Microsoft Intune per i dispositivi che eseguono Android
-titleSuffix: 
+titleSuffix: ''
 description: Informazioni sulle impostazioni di configurazione Wi-Fi in Intune per i dispositivi che eseguono Android e Android for Work.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d327c2d3cadf441f74e35af86b19438159225771
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c110121ceb3d7ff871078c39f73b17606e2e7f13
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Configurare le impostazioni Wi-Fi in Microsoft Intune per i dispositivi che eseguono Android e Android for Work  
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Questo articolo illustra tutte le impostazioni Wi-Fi che è possibile configurare nei dispositivi Microsoft Intune che eseguono Android e Android for Work.
 
@@ -58,7 +58,8 @@ Le impostazioni Wi-Fi seguenti sono disponibili sia per i dispositivi Android ch
 #### <a name="client-authentication"></a>Autenticazione client
 
 
-|Nome impostazione|Altre informazioni|Usare quando|
-|----------|--------------|----------|
-|**Certificato client per l'autenticazione client (certificato di identità)**|Scegliere il profilo di certificato SCEP o PKCS usato per autenticare la connessione.|Tipo EAP è impostato su **EAP-TLS**|
-|**Metodo di autenticazione**|Selezionare il metodo di autenticazione per la connessione:<br>- **Certificati** per selezionare il certificato client SCEP o PKCS che corrisponde al certificato di identità presentato al server.<br><br>- **Nome utente e password** per specificare un metodo diverso per l'autenticazione. <br><br>Se si seleziona **Nome utente e password**, configurare:<br><br>-  **Metodo non EAP (identità interna)** e quindi selezionare la modalità di autenticazione della connessione:<br>- **Nessuno**<br>- **Password Authentication Protocol (PAP)**<br>- **Challenge Handshake Authentication Protocol (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP versione 2 (MS-CHAP v2)**<br>Le opzioni disponibili dipendono dal tipo EAP selezionato.<br><br>**e**<br><br>- **Privacy dell'identità (identità esterna)**: specificare il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro.|Tipo EAP è impostato su **EAP-TTLS** o **PEAP**|
+|                                     Nome impostazione                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Altre informazioni                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                            Usare quando                            |
+|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| <strong>Certificato client per l'autenticazione client (certificato di identità)</strong> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Scegliere il profilo di certificato SCEP o PKCS usato per autenticare la connessione.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |              Tipo EAP è impostato su <strong>EAP-TLS</strong>              |
+|                        <strong>Metodo di autenticazione</strong>                        | Selezionare il metodo di autenticazione per la connessione:<br>- <strong>Certificati</strong> per selezionare il certificato client SCEP o PKCS che corrisponde al certificato di identità presentato al server.<br><br>- <strong>Nome utente e password</strong> per specificare un metodo diverso per l'autenticazione. <br><br>Se si seleziona <strong>Nome utente e password</strong>, configurare:<br><br>-  <strong>Metodo non EAP (identità interna)</strong> e quindi selezionare la modalità di autenticazione della connessione:<br>- <strong>Nessuno</strong><br>- <strong>Password Authentication Protocol (PAP)</strong><br>- <strong>Challenge Handshake Authentication Protocol (CHAP)</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP versione 2 (MS-CHAP v2)</strong><br>Le opzioni disponibili dipendono dal tipo EAP selezionato.<br><br><strong>e</strong><br><br>- <strong>Privacy dell'identità (identità esterna)</strong>: specificare il testo inviato in risposta a una richiesta di identità EAP. Questo testo può essere costituito da qualsiasi valore. Durante l'autenticazione, viene inviata inizialmente questa identità anonima, seguita da quella effettiva inviata tramite un tunnel sicuro. | Tipo EAP è impostato su <strong>EAP-TTLS</strong> o <strong>PEAP</strong> |
+

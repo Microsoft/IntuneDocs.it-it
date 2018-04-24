@@ -2,29 +2,29 @@
 title: Che cosa sono i criteri di protezione delle app
 titleSuffix: Microsoft Intune
 description: In questo articolo viene descritto come i criteri di protezione delle app di Microsoft Intune consentono di proteggere i dati aziendali ed evitare la perdita di dati.
-keywords: 
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/19/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 691c7317cda07be292cc2d778b853727124dba8a
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: c4483baa68267b7a7218a4e78fe5275d1ea8d330
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Che cosa sono i criteri di protezione delle app?
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 I criteri di protezione delle app di Microsoft Intune consentono di proteggere i dati aziendali ed evitare la perdita di dati.
 
@@ -37,12 +37,12 @@ I criteri di protezione delle app possono essere configurati per app in esecuzio
 
 - **Registrati in Microsoft Intune:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dell'azienda.
 
--   **Registrati in una soluzione di gestione di dispositivi mobili di terze parti:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dell'azienda.
+- **Registrati in una soluzione di gestione di dispositivi mobili di terze parti:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dell'azienda.
 
   > [!NOTE]
   > I criteri di gestione delle app per dispositivi mobili non devono essere usati con soluzioni di gestione delle app per dispositivi mobili o di contenitore protetto di terze parti.
 
--   **Non registrati in alcuna soluzione di gestione di dispositivi mobili:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dei dipendenti non gestiti o registrati in Intune o altre soluzioni MDM.
+- **Non registrati in alcuna soluzione di gestione di dispositivi mobili:** i dispositivi appartenenti a questa categoria sono in genere dispositivi di proprietà dei dipendenti non gestiti o registrati in Intune o altre soluzioni MDM.
 
 > [!IMPORTANT]
 > È possibile creare criteri di gestione delle app per dispositivi mobili per le app di Office per dispositivi mobili che si connettono ai servizi di Office 365. I criteri di protezione delle app non sono supportati per le app che si connettono ai servizi locali di Exchange o SharePoint.

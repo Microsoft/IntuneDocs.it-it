@@ -2,28 +2,28 @@
 title: Eccezioni dei criteri di trasferimento dei dati per le app
 titleSuffix: Microsoft Intune
 description: Creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1e37e78f7272b0f53f974eccb20c7e02574a9a9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 1910334093a416933912c9cdeedac85e36d66e92
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Come creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In qualità di amministratore, è possibile creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune. Un'eccezione consente di scegliere in modo specifico quali app non gestite possono trasferire i dati da e verso le app gestite. Le app non gestite che sono incluse nell'elenco di eccezioni devono essere considerate attendibili da IT. 
 
@@ -39,6 +39,10 @@ Per i criteri destinati a iOS, è possibile configurare eccezioni per il trasfer
 
 ## <a name="android-data-transfer-exceptions"></a>Eccezioni per il trasferimento dei dati Android
 Per i criteri destinati ad Android, è possibile configurare eccezioni per il trasferimento dei dati tramite il nome del pacchetto dell'app. È possibile accedere alla pagina di **Google Play** Store dell'app a cui si vuole aggiungere un'eccezione per trovare il nome del pacchetto dell'app. Per altre informazioni sulle eccezioni per il trasferimento dei dati Android, vedere [Impostazioni dei criteri di protezione delle app per Android - Esenzioni per il trasferimento dei dati](app-protection-policy-settings-android.md#data-transfer-exemptions).
+
+
+>[!TIP]
+> È possibile trovare l'ID pacchetto di un'app selezionando l'app in Google Play Store. L'ID del pacchetto è contenuto nell'URL della pagina dell'app. Ad esempio, l'ID pacchetto dell'app Microsoft Word è **com.microsoft.office.word**.
 
 ### <a name="example"></a>Esempio
 Aggiungendo il pacchetto **Webex** come un'eccezione per i criteri di trasferimento dei dati MAM, i collegamenti Webex presenti all'interno di un messaggio di posta elettronica di Outlook possono essere aperti direttamente nell'applicazione Webex. Il trasferimento dei dati rimarrà limitato nelle altre applicazioni non gestite.

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 02e821f24c378c15a474adda901699664a9af68a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configurare le app iOS con i criteri di configurazione delle app mobili in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Usare i criteri di configurazione delle app mobili in Microsoft Intune per specificare le impostazioni che possono essere richieste quando gli utenti eseguono un'app iOS. Ad esempio, un'app può richiedere agli utenti di specificare quanto segue:
 
@@ -77,14 +77,14 @@ Il nuovo criterio verrà visualizzato nel nodo **Criteri di configurazione** .
 ## <a name="information-about-the-xml-file-format"></a>Informazioni sul formato di file XML
 
 Intune supporta i tipi di dati seguenti in un elenco di proprietà:
-    
+
 - &lt;integer&gt;
 - &lt;real&gt;
 - &lt;string&gt;
 - &lt;array&gt;
 - &lt;dict&gt;
 - &lt;true /&gt; o &lt;false /&gt;
-     
+
 Per altre informazioni sui tipi di dati, vedere l'articolo relativo agli [elenchi di proprietà](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) nella libreria degli sviluppatori iOS.
 
 Intune supporta anche i tipi di token seguenti nell'elenco di proprietà:
@@ -97,7 +97,7 @@ Intune supporta anche i tipi di token seguenti nell'elenco di proprietà:
 - \{\{username\}\} - (esempio: **Luca Udinesi**)
 - \{\{serialnumber\}\} - (esempio: **F4KN99ZUG5V2**) per dispositivi iOS
 - \{\{serialnumberlast4digits\}\} - (esempio: **G5V2**) per dispositivi iOS
-    
+
 I caratteri \{\{ e \}\} vengono usati solo dai tipi di token e non devono essere usati per altri scopi.
 
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>Associare un criterio di configurazione delle app mobili a un'app
@@ -139,5 +139,4 @@ Quando si crea un file di configurazione di app per dispositivi mobili, è possi
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```

@@ -12,15 +12,15 @@ ms.technology: ''
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: b6dd287bfd610d5c35f0bfeadb5fcaeae6dddf3c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ac83eb71b04e034023d008fa4cdbb960f2c4bedb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-android-for-work-devices-with-intune"></a>Gestire dispositivi Android for Work con Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Android for Work è un set di funzionalità e servizi dei dispositivi Android che separa le app e i dati personali da quelli lavorativi inclusi in un profilo di lavoro. Android for Work offre funzionalità di gestione e privacy aggiuntive quando gli utenti usano i dispositivi Android personali per lavoro. Intune consente la distribuzione di app e risorse aziendali ai dispositivi Android for Work per assicurarsi che le informazioni di lavoro e quelle personali restino separate. Dopo la corretta implementazione, le app e i dati a cui accedono rimangono esclusivamente all'interno dell'ambiente Android for Work nel dispositivo.
 

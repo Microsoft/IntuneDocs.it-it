@@ -1,25 +1,25 @@
 ---
-title: "È necessario installare Symantec Endpoint Protection Mobile sul dispositivo Android | Microsoft Docs"
+title: È necessario installare Symantec Endpoint Protection Mobile sul dispositivo Android | Microsoft Docs
 description: Informazioni su come installare SEP Mobile sul dispositivo Android in uso.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 040b7bad4b62acffa5dad1606d5beb81efc56b68
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7194f63a3d9b34be00753a66b9929c033bd10b86
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Installare Symantec Endpoint Protection Mobile nel dispositivo Android
 
@@ -45,13 +45,13 @@ Se si verificano problemi con l'installazione, seguire la procedura di risoluzio
 
 8. SEP Mobile avvia immediatamente una ricerca delle minacce per la sicurezza nel dispositivo.
 
-  * Se SEP Mobile rileva una minaccia per la sicurezza nel dispositivo vengono visualizzate le istruzioni per la risoluzione del problema.
+   * Se SEP Mobile rileva una minaccia per la sicurezza nel dispositivo vengono visualizzate le istruzioni per la risoluzione del problema.
 
-  * Se non viene trovata alcuna minaccia, tutti e tre i tipi di minacce saranno visualizzati in verde.
+   * Se non viene trovata alcuna minaccia, tutti e tre i tipi di minacce saranno visualizzati in verde.
 
-    * La schermata **Dettagli dispositivo** nell'app Portale aziendale indicherà ora la conformità ai requisiti di sicurezza della società.
+     * La schermata **Dettagli dispositivo** nell'app Portale aziendale indicherà ora la conformità ai requisiti di sicurezza della società.
 
-    ![Il dispositivo è ora conforme ai criteri](./media/mtd-device-now-compliant-android.png)
+     ![Il dispositivo è ora conforme ai criteri](./media/mtd-device-now-compliant-android.png)
 
 ## <a name="if-the-installation-doesnt-work"></a>Se l'installazione non riesce
 

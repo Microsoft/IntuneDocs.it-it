@@ -2,28 +2,28 @@
 title: Assegnare app a dispositivi Android for Work
 titlesuffix: Microsoft Intune
 description: Informazioni su come sincronizzare e assegnare app ai dispositivi Android for Work da Google Play for Work.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4168f78bff8937ca403cdb75b1028954cbbebd6f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Come assegnare app a dispositivi Android for Work con Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android for Work è un programma per i dispositivi Android. Tutte le app installate in dispositivi Android for Work provengono da Google Play for Work. L'assegnazione di app a dispositivi Android for Work avviene in modo diverso rispetto all'assegnazione di app a dispositivi Android standard. Accedere allo store, cercare le app desiderate e approvarle. L'app viene quindi visualizzata nel nodo **App con licenza** del portale di Azure. Da qui è possibile gestire l'assegnazione dell'app allo stesso modo in cui si assegnano le altre app.
 
@@ -43,7 +43,7 @@ Assicurarsi di avere configurato l'uso di Intune con Android for Work nel carico
 
     ![Esempio - Approvare un'app in Google Play for Work](media/approve.png)</br>
     
-  Viene visualizzata una finestra per l'app in cui viene richiesto di concedere le autorizzazioni che consentono all'app di eseguire diverse operazioni. 
+   Viene visualizzata una finestra per l'app in cui viene richiesto di concedere le autorizzazioni che consentono all'app di eseguire diverse operazioni. 
 
 4. Selezionare **Approva** per accettare le autorizzazioni per l'app e continuare.</br>
 
@@ -79,7 +79,7 @@ Quando lo sviluppatore di un'app pubblica una nuova versione dell'app con autori
 
 Visitare periodicamente la console di Google Play gestita per verificare se sono disponibili nuove autorizzazioni. È possibile configurare Google Play per l'invio di un messaggio di posta elettronica quando sono necessarie nuove autorizzazioni per un'app approvata. Se si assegna un'app e si nota che non è installata nei dispositivi, verificare la disponibilità di nuove autorizzazioni seguendo questi passaggi:
 
-1. Visitare il sito Web di Google Play all'indirizzo http://play.google.com/work
+1. Vedere http://play.google.com/work
 2. Accedere con l'account Google usato per pubblicare e approvare le app.
 3. Nella scheda **Aggiornamenti** verificare se sono presenti app che richiedono un aggiornamento.  Le app elencate richiedono nuove autorizzazioni e non vengono assegnate finché non vengono applicate.  
 

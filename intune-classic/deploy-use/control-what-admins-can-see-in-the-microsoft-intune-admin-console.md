@@ -15,58 +15,58 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9baa0325a90e152ffd6cf6a31cdd0a458588758a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: bdc248689f586a44f4c84568b9d9f9c1fa3e059a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>Personalizzare le visualizzazioni della console di Intune in base ai ruoli di amministratore
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 È possibile filtrare la visualizzazione della console di amministrazione di Microsoft Intune per consentire gli amministratori di visualizzare solo gli elementi necessari per il proprio ruolo. Ad esempio, è possibile consentire solo agli operatori della console di amministrazione di aggiornare le definizioni malware o reimpostare il passcode su dispositivi. Questa operazione viene eseguita usando il set di impostazioni **designazioni** che è possibile assegnare a utenti specifici. Quando gli utenti accedono alla console di amministrazione, possono vedere solo gli elementi specifici di loro designazione.
 
 ## <a name="to-create-a-custom-view"></a>Per creare una visualizzazione personalizzata
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Amministrazione**&gt;**Amministratori dei servizi**.
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Amministrazione**&gt;**Amministratori dei servizi**.
 
-2.  Nell'elenco degli amministratori dei servizi scegliere l'utente di cui si vuole modificare la designazione e fare clic su **Gestisci accesso**.
+2. Nell'elenco degli amministratori dei servizi scegliere l'utente di cui si vuole modificare la designazione e fare clic su **Gestisci accesso**.
 
-3.  Nella finestra di dialogo **Gestisci accesso** , scegliere il livello di accesso che si desidera assegnare l'utente selezionato. È possibile scegliere tra:
+3. Nella finestra di dialogo **Gestisci accesso** , scegliere il livello di accesso che si desidera assegnare l'utente selezionato. È possibile scegliere tra:
 
-    -   **Accesso completo**
-    -   **Accesso in sola lettura**
-    -   **Supporto tecnico - Nodo Gruppi**
+   -   **Accesso completo**
+   -   **Accesso in sola lettura**
+   -   **Supporto tecnico - Nodo Gruppi**
 
-    Accesso completo e accesso in sola lettura sono di chiara interpretazione. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
+   Accesso completo e accesso in sola lettura sono di chiara interpretazione. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
-    **Supporto tecnico - Nodo Gruppi** limita le attività che l'amministratore può eseguire a quanto segue:
+   **Supporto tecnico - Nodo Gruppi** limita le attività che l'amministratore può eseguire a quanto segue:
 
-    -   Visualizzare elenchi di utenti e dispositivi. L'amministratore non può usare filtri per modificare la visualizzazione. È possibile tuttavia usare filtri di gruppo per modificare quello che l'amministratore può visualizzare. Per altre informazioni, vedere [Creare gruppi per gestire utenti e dispositivi con Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+   -   Visualizzare elenchi di utenti e dispositivi. L'amministratore non può usare filtri per modificare la visualizzazione. È possibile tuttavia usare filtri di gruppo per modificare quello che l'amministratore può visualizzare. Per altre informazioni, vedere [Creare gruppi per gestire utenti e dispositivi con Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
-    -   Stampare l'elenco di utenti e dispositivi.
+   -   Stampare l'elenco di utenti e dispositivi.
 
-    -   Esportare l'elenco di utenti e dispositivi.
+   -   Esportare l'elenco di utenti e dispositivi.
 
-    -   Visualizzare le proprietà di un utente o dispositivo.
+   -   Visualizzare le proprietà di un utente o dispositivo.
 
-    -   È possibile eseguire le seguenti attività:
+   -   È possibile eseguire le seguenti attività:
 
-        -   Esegui un'analisi completa di malware
+       -   Esegui un'analisi completa di malware
 
-        -   Esegui un'analisi rapida di malware
+       -   Esegui un'analisi rapida di malware
 
-        -   Riavvia il computer
+       -   Riavvia il computer
 
-        -   Aggiorna definizioni malware
+       -   Aggiorna definizioni malware
 
-        -   Aggiornare i criteri
+       -   Aggiornare i criteri
 
-        -   Aggiornare l'inventario
+       -   Aggiornare l'inventario
 
-        -   Bloccare un dispositivo in modalità remota
+       -   Bloccare un dispositivo in modalità remota
 
-        -   Reimpostare un passcode
+       -   Reimpostare un passcode
 
 Il livello di accesso designato viene assegnato all'amministratore configurato quando apre la console di amministrazione di Intune.

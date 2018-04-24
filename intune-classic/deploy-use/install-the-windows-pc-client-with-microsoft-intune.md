@@ -1,27 +1,27 @@
 ---
 title: Installare il software client per PC
 description: Usare questa guida per far gestire i computer Windows dal software client di Microsoft Intune.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9316f78155b38f74765a353186a29dc90afce547
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 56ae374f5b930c55fbe12305f4246c52e6213a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installare il client software di Intune nei PC Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 È possibile registrare i PC Windows installando il software client di Intune. Il software client di Intune può essere installato usando i metodi seguenti:
 
@@ -39,13 +39,13 @@ Una licenza Intune consente l'installazione del software client Intune in cinque
 
 Tutti i metodi, salvo quelli in cui l'utente installa il software client di Intune autonomamente, richiedono che gli amministratori IT scarichino prima di tutto il software per poterlo distribuire successivamente agli utenti finali.
 
-1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) fare clic su **Amministrazione** &gt; **Download software client**.
+1. Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com/) fare clic su **Amministrazione** &gt; **Download software client**.
 
-  ![Scaricare il client PC Intune](../media/pc-sa-client-download.png)
+   ![Scaricare il client PC Intune](../media/pc-sa-client-download.png)
 
 2. Nella pagina **Download software client** fare clic su **Scarica software client**. Salvare il pacchetto **Microsoft_Intune_Setup.zip** contenente il software in un percorso protetto della rete locale.
 
-  Il pacchetto di installazione del software client di Intune contiene informazioni univoche e specifiche sull'account, disponibili tramite un certificato incorporato. Se utenti non autorizzati ottengono l'accesso al pacchetto di installazione, possono registrare PC nell'account rappresentato dal certificato incorporato ed eventualmente ottenere l'accesso alle risorse aziendali.
+   Il pacchetto di installazione del software client di Intune contiene informazioni univoche e specifiche sull'account, disponibili tramite un certificato incorporato. Se utenti non autorizzati ottengono l'accesso al pacchetto di installazione, possono registrare PC nell'account rappresentato dal certificato incorporato ed eventualmente ottenere l'accesso alle risorse aziendali.
 
 3. Estrarre il contenuto del pacchetto di installazione in un percorso sicuro nella rete locale.
 
@@ -244,7 +244,7 @@ Controllare "%ProgramFiles%\Microsoft\OnlineManagement" e verificare che a sinis
 
 - AgentInstaller
 - Logs
-- Updates
+- Aggiornamenti
 - Comune
 
 ### <a name="remove-the-onlinemanagement-folder"></a>Rimuovere la cartella OnlineManagement

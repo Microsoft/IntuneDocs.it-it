@@ -1,29 +1,29 @@
 ---
 title: Requisiti e dettagli della larghezza di banda di rete per Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Requisiti di configurazione e dettagli della larghezza di banda di rete per Intune.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b21c4421914294e84bae637e489065c5e4410839
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c161d1ca120d5a0210cffca01e781f1ae9206fe4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Requisiti di configurazione di rete di Intune e larghezza di banda
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Queste linee guida consentono agli amministratori di Intune di conoscere i requisiti di rete per il servizio Intune. È possibile usare queste informazioni per comprendere i requisiti di larghezza di banda e le impostazioni di porta e indirizzo IP necessarie per le impostazioni proxy.
 
@@ -44,7 +44,7 @@ In questa tabella sono elencate le dimensioni approssimative e la frequenza di c
 |Operazioni quotidiane di client|6 MB|**Ogni giorno**<br /><br />Il client di Intune comunica regolarmente con il servizio Intune per verificare la disponibilità di aggiornamenti e criteri nonché per segnalare lo stato del client al servizio.|
 |Aggiornamenti delle definizioni malware di Endpoint Protection|Varia<br /><br />In genere, da 40 KB a 2 MB|**Ogni giorno**<br /><br />Fino a tre volte al giorno.|
 |Aggiornamento del motore Endpoint Protection|5 MB|**Ogni mese**|
-|Aggiornamenti software|Varia<br /><br />Le dimensioni dipendono dagli aggiornamenti distribuiti.|**Ogni mese**<br /><br />In genere, gli aggiornamenti software vengono rilasciati il secondo martedì di ogni mese.<br /><br />Un computer appena registrato o distribuito potrebbe usare più larghezza di banda di rete durante il download della serie completa di aggiornamenti rilasciati in precedenza.|
+|Aggiornamenti software|Varia<br /><br />Le dimensioni dipendono dagli aggiornamenti distribuiti.|**Monthly** (Mensile)<br /><br />In genere, gli aggiornamenti software vengono rilasciati il secondo martedì di ogni mese.<br /><br />Un computer appena registrato o distribuito potrebbe usare più larghezza di banda di rete durante il download della serie completa di aggiornamenti rilasciati in precedenza.|
 |Service Pack|Varia<br /><br />Le dimensioni variano per ogni Service Pack distribuito.|**Varia**<br /><br />Dipende da quando si distribuiscono i Service Pack.|
 |Distribuzione del software|Varia<br /><br />Le dimensioni dipendono dal software distribuito.|**Varia**<br /><br />Dipende da quando si distribuisce il software.|
 
@@ -58,11 +58,13 @@ Un server proxy di memorizzazione nella cache che riceve le richieste di contenu
 
 Di seguito vengono riportate alcune impostazioni tipiche da usare per un server proxy che memorizza contenuti nella cache per i client di Intune.
 
-|Impostazione|Impostazione consigliata|Dettagli|
-|-----------|---------------------|-----------|
-|Dimensione della cache|da 5 a 30 GB|Il valore varia in base al numero di computer client della rete e alle configurazioni usate. Per evitare che i file vengano eliminati troppo presto, regolare le dimensioni della cache per l'ambiente.|
-|Dimensione del file nella singola cache|950 MB|L'impostazione potrebbe non essere disponibile in tutti i server proxy per la memorizzazione nella cache.|
-|Tipi di oggetto da memorizzare nella cache|HTTP<br /><br />HTTPS<br /><br />BITS|I pacchetti Intune sono file CAB recuperati tramite download del Servizio trasferimento intelligente in Background (BITS) su HTTP.|
+
+|          Impostazione           |           Impostazione consigliata           |                                                                                                  Dettagli                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Dimensione della cache         |             da 5 a 30 GB             | Il valore varia in base al numero di computer client della rete e alle configurazioni usate. Per evitare che i file vengano eliminati troppo presto, regolare le dimensioni della cache per l'ambiente. |
+| Dimensione del file nella singola cache |                950 MB                 |                                                                     L'impostazione potrebbe non essere disponibile in tutti i server proxy per la memorizzazione nella cache.                                                                     |
+|   Tipi di oggetto da memorizzare nella cache    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               I pacchetti Intune sono file CAB recuperati tramite download del Servizio trasferimento intelligente in Background (BITS) su HTTP.                                               |
+
 Per informazioni sull'utilizzo di un server proxy per memorizzare contenuto nella cache, vedere la documentazione per la soluzione server proxy in uso.
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>Usare Servizio trasferimento intelligente in background sui computer
@@ -159,14 +161,16 @@ Nelle tabelle seguenti sono elencati i servizi e le porte a cui accede il client
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Informazioni di rete dei dispositivi Apple
-| Hostname  | URL (indirizzo IP/subnet) | Protocollo | Porta | Dispositivo |
-| --- | --- | --- | --- | --- |
-|  Console di amministrazione  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS e macOS |
-| Console di amministrazione  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS e macOS |
-| Console di amministrazione  | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS e macOS  |
-| Server PI  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | Per messaggi cloud di Apple iOS e macOS. |
-| Servizi per dispositivi  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| Servizi per dispositivi  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| Servizi per dispositivi  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| Dispositivi (Internet/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 e 443 | Solo Apple. &#39;#&#39; è un numero casuale compreso tra 0 e 200. |
-| Dispositivi (Internet/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 o 443 | Solo Apple |
+
+|         Hostname         |                                        URL (indirizzo IP/subnet)                                        |  Protocollo  |     Porta     |                          Dispositivo                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      Console di amministrazione       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS e macOS                    |
+|      Console di amministrazione       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS e macOS                    |
+|      Console di amministrazione       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS e macOS                    |
+|        Server PI         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Per messaggi cloud di Apple iOS e macOS.          |
+|     Servizi per dispositivi      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     Servizi per dispositivi      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     Servizi per dispositivi      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| Dispositivi (Internet/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 e 443 | Solo Apple. &#39;#&#39; è un numero casuale compreso tra 0 e 200. |
+| Dispositivi (Internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 o 443   |                        Solo Apple                         |
+

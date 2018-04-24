@@ -14,15 +14,15 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 73fa5866efe10006a8a3d7de38ec4c552d0df06e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f1d4eb8ea128ba453e555836289fb7d1ce8b34c4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gestire i contratti di licenza del software per PC Windows in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune consente di aggiungere e gestire le informazioni sui contratti di licenza del software acquistato con i contratti multilicenza Microsoft. Queste operazioni possono essere eseguite anche per software Microsoft o non Microsoft acquistato in altri modi. È possibile organizzare le informazioni in gruppi logici.
 
@@ -174,10 +174,12 @@ Viene visualizzato l'elenco **Tutti i contratti** .
 ## <a name="manage-license-agreements"></a>Gestire i contratti di licenza
 È possibile aggiungere contratti di licenza software a gruppi di licenze. È possibile usare i gruppi di licenze per organizzare i contratti di licenza in unità adeguate alle esigenze dell'organizzazione. È anche possibile eliminare i contratti di licenza creati in precedenza.
 
-|||
-|-|-|
-|Attività|Dettagli|
-|Creare un gruppo di licenze|Nella pagina **Panoramica** dell'area di lavoro **Licenze** scegliere **Crea gruppo di licenze** dal menu **Attività**. **Nota:** è possibile creare un massimo di 500 gruppi di licenze.|
-|Rinominare un gruppo di licenze|Nell'area di lavoro **Licenze** scegliere un gruppo di licenze e quindi scegliere **Modifica gruppo di licenze** dal menu **Attività**.|
-|Eliminare un gruppo di licenze|Nell'area di lavoro **Licenze** scegliere un gruppo di licenze e quindi scegliere **Elimina gruppo di licenze** dal menu **Attività**. **Suggerimento:** tutte le licenze nel gruppo eliminato verranno spostate nel gruppo di licenze **Contratti non assegnati**.|
-|Eliminare un contratto di licenza|Nell'area di lavoro **Licenze** scegliere un contratto e quindi fare clic su **Elimina**. **Suggerimento:** dopo aver eliminato i contratti multilicenza, per aggiornare le informazioni sulle licenze fare clic su **Aggiorna** nella pagina **Panoramica licenze** o della scheda **Generale** di un gruppo di licenze specifico.|
+
+|                            |                                                                                                                                                                                                                                                                                                                                                                          |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            Attività            |                                                                                                                                                                                 Dettagli                                                                                                                                                                                  |
+|   Creare un gruppo di licenze   |                                                            Nella pagina <strong>Panoramica</strong> dell'area di lavoro <strong>Licenze</strong> scegliere <strong>Crea gruppo di licenze</strong> dal menu <strong>Attività</strong>. <strong>Nota:</strong> è possibile creare un massimo di 500 gruppi di licenze.                                                             |
+|   Rinominare un gruppo di licenze   |                                                                                                      Nell'area di lavoro <strong>Licenze</strong> scegliere un gruppo di licenze e quindi scegliere <strong>Modifica gruppo di licenze</strong> dal menu <strong>Attività</strong>.                                                                                                       |
+|   Eliminare un gruppo di licenze   |                                 Nell'area di lavoro <strong>Licenze</strong> scegliere un gruppo di licenze e quindi scegliere <strong>Elimina gruppo di licenze</strong> dal menu <strong>Attività</strong>. <strong>Suggerimento:</strong> tutte le licenze nel gruppo eliminato verranno spostate nel gruppo di licenze <strong>Contratti non assegnati</strong>.                                 |
+| Eliminare un contratto di licenza | Nell'area di lavoro <strong>Licenze</strong> scegliere un contratto e quindi fare clic su <strong>Elimina</strong>. <strong>Suggerimento:</strong> dopo aver eliminato i contratti multilicenza, per aggiornare le informazioni sulle licenze fare clic su <strong>Aggiorna</strong> nella pagina <strong>Panoramica licenze</strong> o della scheda <strong>Generale</strong> di un gruppo di licenze specifico. |
+

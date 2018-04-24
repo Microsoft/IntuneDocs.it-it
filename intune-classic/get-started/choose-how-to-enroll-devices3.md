@@ -14,28 +14,28 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: 317661e4a15c95b0045ccaf9760730e99140a95c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 117387c2f3105eab8785c8a228100a1ac3d3988b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>Scegliere come registrare i dispositivi mobili
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Le risposte alla serie di domande seguente consentono di determinare il metodo di registrazione migliore per i dispositivi gestiti.
 
 ## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**I dispositivi di proprietà della società sono condivisi o sono usati da utenti dedicati?**
 
 > [!div class="button"]
-[Condiviso >](choose-how-to-enroll-devices4.md)
+> [Condiviso >](choose-how-to-enroll-devices4.md)
 > [!div class="button"]
-[Dedicato >](choose-how-to-enroll-devices6.md)
+> [Dedicato >](choose-how-to-enroll-devices6.md)
 
 - **Dispositivi di proprietà della società condivisi**: questi dispositivi non hanno un singolo utente e non sono in genere configurati per accedere alla posta elettronica. Gli esempi includono i dispositivi chiosco o orientati alle attività prelevati da un pool in base alle esigenze e quindi restituiti. I metodi di registrazione consigliati dipendono dalla piattaforma dei dispositivi.
 
 - **Utenti dedicati**: i dispositivi di proprietà dell'azienda rilasciati a singoli utenti devono essere registrati come risorse aziendali consentendo allo stesso tempo agli utenti di accedere alla posta elettronica e ai dati come se fossero dispositivi personali. I metodi di registrazione consigliati dipendono dalla piattaforma dei dispositivi.
 
 > [!div class="button"]
-[< Indietro](choose-how-to-enroll-devices1.md)
+> [< Indietro](choose-how-to-enroll-devices1.md)

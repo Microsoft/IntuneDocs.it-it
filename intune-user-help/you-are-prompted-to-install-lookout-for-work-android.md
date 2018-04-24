@@ -1,25 +1,25 @@
 ---
-title: "È necessario installare Lookout for Work nel dispositivo Android | Microsoft Docs"
+title: È necessario installare Lookout for Work nel dispositivo Android | Microsoft Docs
 description: Informazioni su come installare Lookout for Work per Android.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 3c07a84f029ee5b997b3bfe20a73de6335057cbc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6b55faeae5b68da04f1f9e75c984ebb0af2b9deb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-lookout-for-work"></a>Installare Lookout for Work
 
@@ -29,47 +29,47 @@ Se si verificano problemi con l'installazione, seguire la procedura di risoluzio
 
 ## <a name="what-you-need-to-do"></a>Operazione da effettuare
 
-1.  Trascinare verso il basso la parte superiore della schermata per aprire la barra Notifiche e quindi toccare **Applicazione richiesta - Installa Lookout for Work da Play Store**.
+1. Trascinare verso il basso la parte superiore della schermata per aprire la barra Notifiche e quindi toccare **Applicazione richiesta - Installa Lookout for Work da Play Store**.
 
-  ![viene richiesto di installare Lookout for Work](./media/lookout-required-app-install-android.png)
+   ![viene richiesto di installare Lookout for Work](./media/lookout-required-app-install-android.png)
 
-2.  Viene visualizzata la pagina di installazione di Lookout for Work in Play Store. Installare Lookout for Work e quindi toccare **ACCETTA** per consentire a Lookout for Work di accedere al dispositivo.
+2. Viene visualizzata la pagina di installazione di Lookout for Work in Play Store. Installare Lookout for Work e quindi toccare **ACCETTA** per consentire a Lookout for Work di accedere al dispositivo.
 
-  ![toccare Accetta per consentire a Lookout for Work di accedere al dispositivo](./media/lookout-accept-store-permissions-android.png)
+   ![toccare Accetta per consentire a Lookout for Work di accedere al dispositivo](./media/lookout-accept-store-permissions-android.png)
 
 3. Aprire Lookout for Work e toccare **ACTIVATE**.
 
-  ![aprire Lookout for Work e toccare Activate](./media/lookout-activate-button-android.png)
+   ![aprire Lookout for Work e toccare Activate](./media/lookout-activate-button-android.png)
 
 4. Toccare **Sign in with Azure Active Directory** (Accedi con Azure Active Directory) e immettere l'account usato per accedere alla posta elettronica e ai file aziendali o dell'istituto di istruzione.
 
-  ![accedere con l'account di lavoro o scuola](./media/lookout-sign-in-azure-android.png)
+   ![accedere con l'account di lavoro o scuola](./media/lookout-sign-in-azure-android.png)
 
 5. Selezionare l'account usato per accedere all'e-mail e ai file di lavoro o scuola e quindi toccare **ADD ACCOUNT**.
 
-  ![selezionare l'account di lavoro o scuola e toccare Add Account](./media/lookout-pick-account-android.png)
+   ![selezionare l'account di lavoro o scuola e toccare Add Account](./media/lookout-pick-account-android.png)
 
 6. Toccare **Accept** per autorizzare Lookout for Work a eseguire l'accesso e leggere il profilo. Viene visualizzata una schermata che indica che Lookout for Work si sta connettendo a Lookout Security Cloud.
 
-  ![toccare Accept per autorizzare Lookout for Work a leggere il profilo](./media/lookout-needs-permission-to-view-profile-android.png)
+   ![toccare Accept per autorizzare Lookout for Work a leggere il profilo](./media/lookout-needs-permission-to-view-profile-android.png)
 
 7. Rivedere le informazioni sulla protezione del dispositivo offerta da Lookout e quindi toccare **OK**.
 
-  ![rivedere le informazioni sulla protezione del dispositivo offerta da Lookout for Work](./media/lookout-how-it-protects-your-device-android.png)
+   ![rivedere le informazioni sulla protezione del dispositivo offerta da Lookout for Work](./media/lookout-how-it-protects-your-device-android.png)
 
-  Quando viene visualizzata la schermata seguente, significa che Lookout for Work è stato installato ed è connesso.
+   Quando viene visualizzata la schermata seguente, significa che Lookout for Work è stato installato ed è connesso.
 
-  ![si è ora connessi a Lookout for Work](./media/lookout-you-are-now-connected-android.png)
+   ![si è ora connessi a Lookout for Work](./media/lookout-you-are-now-connected-android.png)
 
-  Lookout for Work avvia immediatamente una ricerca delle minacce alla protezione nel dispositivo. Se non viene trovata alcuna minaccia, viene visualizzata la schermata seguente.
+   Lookout for Work avvia immediatamente una ricerca delle minacce alla protezione nel dispositivo. Se non viene trovata alcuna minaccia, viene visualizzata la schermata seguente.
 
-  ![Lookout for Work non ha trovato minacce alla protezione](./media/lookout-scan-no-threats-found-android.png)
+   ![Lookout for Work non ha trovato minacce alla protezione](./media/lookout-scan-no-threats-found-android.png)
 
-  La schermata Dettagli dispositivo nel portale aziendale indicherà ora la conformità ai requisiti di sicurezza della società.
+   La schermata Dettagli dispositivo nel portale aziendale indicherà ora la conformità ai requisiti di sicurezza della società.
 
     ![il dispositivo è ora conforme ai criteri di sicurezza](./media/mtd-device-now-compliant-android.png)
 
-  Se Lookout for Work rileva una minaccia alla protezione nel dispositivo, verranno visualizzate le istruzioni per la risoluzione del problema.
+   Se Lookout for Work rileva una minaccia alla protezione nel dispositivo, verranno visualizzate le istruzioni per la risoluzione del problema.
 
 ## <a name="if-the-installation-doesnt-work"></a>Se l'installazione non riesce
 

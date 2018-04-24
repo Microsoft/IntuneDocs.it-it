@@ -1,29 +1,29 @@
 ---
 title: Proteggere Dynamics CRM Online
 description: Proteggere e controllare l'accesso a Dynamics CRM Online con l'accesso condizionale.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bae29ed7eba164ce19ea5db7d003ab38b4683454
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e2f720c8a6613884397111c2a421fa1cfdc0eb53
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Proteggere l'accesso a Dynamics CRM Online con Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 È possibile controllare l'accesso a Microsoft Dynamics CRM Online dai dispositivi iOS e Android usando l'accesso condizionale di Microsoft Intune.  L'accesso condizionale di Intune è costituito da due componenti:
 * [Criteri di conformità](introduction-to-device-compliance-policies-in-microsoft-intune.md) che il dispositivo deve soddisfare per essere considerato conforme.
@@ -73,17 +73,17 @@ Quando si è pronti, continuare con il Passaggio 3.
 ### <a name="step-3-configure-the-dynamics-crm-policy"></a>Passaggio 3: Configurare i criteri di Dynamics CRM
 A questo punto, configurare i criteri in modo che solo i dispositivi gestiti e conformi possano accedere a Dynamics CRM. Questi criteri verranno archiviati in Azure Active Directory.
 
-1.  Nella console di amministrazione di Intune scegliere **Criteri > Accesso condizionale > Criteri di Dynamics CRM Online**.
+1. Nella console di amministrazione di Intune scegliere **Criteri > Accesso condizionale > Criteri di Dynamics CRM Online**.
 
-  ![Schermata della pagina dei criteri di accesso condizionale per Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
+   ![Schermata della pagina dei criteri di accesso condizionale per Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  Scegliere il criterio **Abilita criteri di accesso condizionale** .
-3.  In **Accesso all'applicazione** è possibile scegliere di applicare i criteri di accesso condizionale a:
-  * **iOS**
-  * **Android**
-4.  In **Gruppi di destinazione** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory ai quali verranno applicati i criteri. È possibile scegliere di applicare questa opzione a tutti gli utenti o solo a un gruppo di utenti selezionato.
-5.  Facoltativamente, in **Gruppi esentati** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
-6.  Al termine, scegliere **Salva**.
+2. Scegliere il criterio **Abilita criteri di accesso condizionale** .
+3. In **Accesso all'applicazione** è possibile scegliere di applicare i criteri di accesso condizionale a:
+   * **iOS**
+   * **Android**
+4. In **Gruppi di destinazione** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory ai quali verranno applicati i criteri. È possibile scegliere di applicare questa opzione a tutti gli utenti o solo a un gruppo di utenti selezionato.
+5. Facoltativamente, in **Gruppi esentati** scegliere **Modifica** per selezionare i gruppi di sicurezza di Azure Active Directory esentati da questi criteri.
+6. Al termine, scegliere **Salva**.
 
 L'accesso condizionale per Dynamics CRM è stato configurato. Non è necessario distribuire i criteri di accesso condizionale perché diventano immediatamente effettivi.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Monitorare i criteri di conformità e di accesso condizionale

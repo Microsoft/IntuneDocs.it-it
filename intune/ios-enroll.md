@@ -2,24 +2,24 @@
 title: Scegliere come registrare i dispositivi iOS in Intune
 titlesuffix: Microsoft Intune
 description: Impostare la registrazione dei dispositivi iOS in Microsoft Intune.
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 602c4c1da553215ad222a7e593531fdd879c996c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 01523dc4c887214794d4600219ce0b77549b4734
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrare i dispositivi iOS in Intune
 
@@ -36,7 +36,7 @@ Prima di abilitare i dispositivi iOS, completare i passaggi seguenti:
 
 È possibile consentire agli utenti di registrare i dispositivi personali per la gestione di Intune, una funzionalità nota come BYOD (Bring Your Own Device, Usa dispositivo personale). Dopo aver completato i prerequisiti e assegnato le licenze, gli utenti possono scaricare l'app Portale aziendale Intune dall'App Store e seguire le istruzioni di registrazione nell'app.
 
-## <a name="company-owned-ios-devices"></a>Dispositivi iOS di proprietà dell'azienda
+## <a name="company-owned-ios-devices"></a>Dispositivi macOS di proprietà dell'azienda
 Per le organizzazioni che acquistano dispositivi per i propri utenti, Intune supporta i seguenti metodi di registrazione dei dispositivi iOS di proprietà dell'azienda:
 
 - Device Enrollment Program (DEP) di Apple
@@ -79,11 +79,11 @@ L'affinità utente è necessaria per supportare quanto segue:
 
 5. Dopo l'accesso, viene chiesto di registrare il dispositivo. Il primo passaggio consiste nell'identificazione del dispositivo. L'app visualizza un elenco di dispositivi iOS già registrati dall'azienda e assegnati all'account di Intune dell'utente. L'utente deve scegliere il dispositivo corrispondente.
 
-  Se il dispositivo non è registrato dall'azienda, è necessario selezionare **nuovo dispositivo** per continuare con il flusso di registrazione standard.
+   Se il dispositivo non è registrato dall'azienda, è necessario selezionare **nuovo dispositivo** per continuare con il flusso di registrazione standard.
 
 6. Nella schermata successiva l'utente deve confermare il numero di serie del nuovo dispositivo. L'utente può toccare il collegamento **confermare il numero di serie** per avviare le istruzioni per l'uso dell'app Impostazioni per verificare il numero di serie. Deve quindi immettere gli ultimi quattro caratteri del numero di serie nell'app del portale aziendale.
 
-  Questo passaggio verifica che il dispositivo sia il dispositivo aziendale registrato in Intune. Se il numero di serie sul dispositivo non corrisponde, è stato selezionato il dispositivo errato. L'utente deve tornare alla schermata precedente e selezionare un dispositivo diverso.
+   Questo passaggio verifica che il dispositivo sia il dispositivo aziendale registrato in Intune. Se il numero di serie sul dispositivo non corrisponde, è stato selezionato il dispositivo errato. L'utente deve tornare alla schermata precedente e selezionare un dispositivo diverso.
 
 7. Dopo aver verificato il numero di serie, l'app del portale aziendale reindirizza al sito Web del portale aziendale per completare la registrazione. A questo punto, il sito Web chiede all'utente di tornare all'app.
 

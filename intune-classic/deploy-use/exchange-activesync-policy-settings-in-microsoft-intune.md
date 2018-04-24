@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25bdc7da543cdc38ccbe70651c145750ba96c082
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di Exchange ActiveSync in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Usare i criteri di **Exchange ActiveSync** di Microsoft Intune per configurare le impostazioni che consentono di controllare diverse funzionalità nei dispositivi gestiti da Exchange ActiveSync.
 
@@ -44,10 +44,11 @@ Usare i criteri di **Exchange ActiveSync** di Microsoft Intune per configurare l
 
 ## <a name="encryption-settings"></a>Impostazioni di crittografia
 
-|Nome impostazione|Dettagli|
-|----------------|---|
-|**Richiedi crittografia sul dispositivo mobile**<sup>1</sup>|Richiede la crittografia dei dati nel dispositivo, quando è supportata.<br><br>Per i dispositivi Windows Phone 8, è necessario impostare su **Sì**.<br /><br />Per abilitare la crittografia nei dispositivi iOS, abilitare l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**.|
-|**Richiedi crittografia sulle schede di memoria**|Richiede la crittografia dei dati presenti nella risorsa di archiviazione esterna, ad esempio una scheda SD (nei dispositivi supportati).
+|                           Nome impostazione                           |                                                                                                                                    Dettagli                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Richiedi crittografia sul dispositivo mobile</strong><sup>1</sup> | Richiede la crittografia dei dati nel dispositivo, quando è supportata.<br><br>Per i dispositivi Windows Phone 8, è necessario impostare su <strong>Sì</strong>.<br /><br />Per abilitare la crittografia nei dispositivi iOS, abilitare l'impostazione <strong>Richiedi una password per sbloccare i dispositivi mobili</strong>. |
+|       <strong>Richiedi crittografia sulle schede di memoria</strong>       |                                                                                  Richiede la crittografia dei dati presenti nella risorsa di archiviazione esterna, ad esempio una scheda SD (nei dispositivi supportati).                                                                                  |
+
 <sup>1</sup> Altre informazioni per i dispositivi che eseguono Windows 8.1
 
 -   Per imporre la crittografia nei dispositivi che eseguono Windows 8.1, è necessario installare l'[Aggiornamento del client MDM di dicembre 2014 in Windows](https://support.microsoft.com/kb/3013816) in ogni dispositivo.
