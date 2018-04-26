@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gestire l'accesso a Internet usando criteri di Managed Browser con Microsoft Intune.
 
@@ -155,10 +155,9 @@ Outlook deve essere configurato con i criteri di protezione di app che consenton
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>Passaggio 2: assegnare i criteri di configurazione dell'app assegnati per Managed Browser.
 Questa procedura configura l'app Managed Browser per usare il reindirizzamento proxy dell'app. Usando la procedura per creare una configurazione per l'app Managed Browser, specificare la coppia di chiave e valore seguente:
 
-|||
-|-|-|
-|Chiave|Valore|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
+| Chiave                                                             | Valore    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
 Per altre informazioni su come Managed Browser e Azure AD Application Proxy possono essere usate insieme per un accesso semplice e protetto alle app Web locali, vedere il post del blog Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Meglio insieme: Intune e Azure Active Directory insieme per migliorare l'accesso utente).
 
@@ -166,10 +165,8 @@ Per altre informazioni su come Managed Browser e Azure AD Application Proxy poss
 
 Questa impostazione consente di configurare la home page visualizzata agli utenti quando viene avviato Managed Browser o viene creata una nuova scheda. Usando la procedura per creare una configurazione per l'app Managed Browser, specificare la coppia di chiave e valore seguente:
 
-
-|                                                                   |                                                                                                                            |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 |                                Chiave                                |                                                           Valore                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Specificare un URL valido. Come misura di sicurezza, gli URL non corretti vengono bloccati.<br>Esempio: <strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Come configurare i segnalibri per Managed Browser
@@ -182,21 +179,17 @@ Questa impostazione consente di configurare un set di segnalibri disponibili per
 
 Usando la procedura per creare una configurazione per l'app Managed Browser, specificare la coppia di chiave e valore seguente:
 
-
-|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                Chiave                                 |                                                                                                                                                                                                                                                         Valore                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Il valore per questa configurazione è un elenco di segnalibri. Ogni segnalibro consiste di un titolo del segnalibro e di un URL. Separare il titolo e l'URL con il carattere <strong>&#124;</strong>.<br><br>Esempio: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>Per configurare più segnalibri, separarli con due caratteri, ovvero <strong>&#124;&#124;</strong><br><br>Esempio: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Come specificare gli URL consentiti e bloccati per Managed Browser
 
 Usando la procedura per creare una configurazione per l'app Managed Browser, specificare la coppia di chiave e valore seguente:
 
-
-|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                               Chiave                                                                                                                                                                |                                                                                                                                                                                    Valore                                                                                                                                                                                    |
-| Scegliere tra:<br><br>- Specificare gli URL consentiti (sono consentiti solo questi URL e nessun altro sito è accessibile): <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- Specificare gli URL bloccati (tutti gli altri siti sono accessibili): <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | Il valore corrispondente per la chiave è un elenco di URL. Tutti gli URL da consentire o bloccare vengono immessi come valore singolo, separati da un carattere barra verticale <strong>&#124;</strong>.<br><br>Esempi:<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
+|Chiave|Valore|
+|-|-|
+|Scegliere tra:<br><br>- Specificare gli URL consentiti (sono consentiti solo questi URL e nessun altro sito è accessibile): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Specificare gli URL bloccati (tutti gli altri siti sono accessibili): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|Il valore corrispondente per la chiave è un elenco di URL. Tutti gli URL da consentire o bloccare vengono immessi come valore singolo, separati da un carattere barra verticale **&#124;**.<br><br>Esempi:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >Non specificare entrambe le chiavi. Se entrambe le chiavi sono destinate allo stesso utente, viene usata la chiave consentita, essendo l'opzione più restrittiva.

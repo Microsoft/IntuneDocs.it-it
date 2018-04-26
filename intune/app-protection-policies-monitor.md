@@ -3,8 +3,8 @@ title: Come monitorare i criteri di protezione delle app
 titleSuffix: Microsoft Intune
 description: Monitorare lo stato di conformità dei criteri di gestione delle app per dispositivi mobili in Intune.
 keywords: ''
-author: erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7db5a9dfe7a7da21a9b59dafb4f95cdb54a59735
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 282666de444e9da0dd5e406cb45cdf1b9e66c1b2
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

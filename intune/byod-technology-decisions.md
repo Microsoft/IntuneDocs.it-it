@@ -3,7 +3,7 @@ title: Decisioni in merito alla tecnologia per BYOD con EMS
 description: Principali decisioni in merito alla tecnologia da prendere per l'abilitazione di BYOD e la protezione dei dati aziendali con Microsoft Enterprise Mobility + Security.
 keywords: ''
 author: dougeby
-ms.author: pfetty
+ms.author: dougeby
 manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7d04abfe7886e4ef42cf168dbb495e987fdba425
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Decisioni in merito alla tecnologia per l'abilitazione di BYOD con Microsoft Enterprise Mobility + Security (EMS)
 
@@ -78,6 +78,6 @@ Molte organizzazioni spesso sono ancora preoccupate per rischi specifici.  La ta
 |Condivisione accidentale dei dati o salvataggio dei dati in posizioni non protette | Disabilita stampa | n/d|
 
 ## <a name="next-steps"></a>Passaggi successivi
-A questo punto è necessario decidere se si intende abilitare BYOD nell'organizzazione con un'implementazione incentrata sulla gestione dei dispositivi, sulla gestione delle app o su una combinazione di questi due aspetti. La scelta del tipo di implementazione è libera, grazie alla possibilità di fare affidamento sulle funzionalità di identità e di sicurezza comunque disponibili in Azure AD.
+A questo punto è necessario decidere se si intende abilitare BYOD nell'organizzazione con un'implementazione incentrata sulla gestione dei dispositivi, sulla gestione delle app o su una combinazione di questi due aspetti. La scelta del tipo di implementazione è libera, grazie alla possibilità di fare affidamento sulle funzionalità di identità e di sicurezza comunque disponibili in Azure AD.  
 
 Usare la [Guida alla pianificazione](planning-guide.md) di Intune per definire il livello successivo della pianificazione.

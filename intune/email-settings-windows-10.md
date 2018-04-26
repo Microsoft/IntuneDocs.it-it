@@ -3,8 +3,8 @@ title: Impostazioni di posta elettronica di Microsoft Intune per dispositivi Win
 titleSuffix: ''
 description: Informazioni sulle impostazioni di Microsoft Intune che è possibile usare per configurare le impostazioni di posta elettronica nei dispositivi che eseguono Windows 10.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a0c3eaf0643ede02b8c084d172b7a51d251b3a3
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a04f2267bd4a232fb687f7f77f66e439e6804099
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>Impostazioni del profilo di posta elettronica in Microsoft Intune per i dispositivi che eseguono Windows 10
 

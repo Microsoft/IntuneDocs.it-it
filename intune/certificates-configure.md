@@ -14,11 +14,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
+ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurare un profilo certificato per i dispositivi in Microsoft Intune
 
@@ -40,7 +40,7 @@ Ognuno di questi tipi di certificato ha prerequisiti e requisiti di infrastruttu
 2. Installare un certificato radice o un certificato dell'autorità di certificazione (CA) intermedio in ogni dispositivo, in modo che il dispositivo riconosca la legittimità dell'autorità di certificazione. A tale scopo, creare e assegnare un **profilo certificato attendibile**. Quando si assegna questo profilo, i dispositivi gestiti con Intune richiedono e ricevono il certificato radice. È necessario creare un profilo separato per ogni piattaforma. I profili certificato attendibili sono disponibili per le piattaforme seguenti:
 
     - iOS 8.0 e versioni successive
-    - macOS 10.9 e versioni successive
+    - macOS 10.11 e versioni successive
     - Android 4.0 e versioni successive
     - Android for Work
     - Windows 8.1 e versioni successive
