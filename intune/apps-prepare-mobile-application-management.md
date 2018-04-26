@@ -2,28 +2,28 @@
 title: Preparare le app line-of-business per i criteri di protezione delle app
 titlesuffix: Microsoft Intune
 description: Usare lo strumento di wrapping delle app e App SDK per abilitare le app line-of-business personalizzate per l'uso dei criteri di protezione delle app in Microsoft Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparare le app line-of-business per i criteri di protezione delle app
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 È possibile consentire alle app di usare i criteri di protezione delle app tramite lo strumento di wrapping delle app di Intune o Intune App SDK. In questo articolo vengono fornite informazioni su questi due metodi e su quando usarli.
 
@@ -70,8 +70,8 @@ Per altre informazioni sull'SDK, vedere la [panoramica](app-sdk.md). Per un'intr
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Sì: usare il [componente Xamarin per Intune App SDK](app-sdk-xamarin.md).|Sì: usare il [plug-in Cordova per Intune App SDK](app-sdk-cordova.md).|
-|**Android**| Sì: usare il [componente Xamarin per Intune App SDK](app-sdk-xamarin.md).|Sì: usare il [plug-in Cordova per Intune App SDK](app-sdk-cordova.md).|
+|**iOS**|Sì: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|Sì: usare il [plug-in Cordova per Intune App SDK](app-sdk-cordova.md).|
+|**Android**| Sì: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|Sì: usare il [plug-in Cordova per Intune App SDK](app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Confronto delle funzionalità
 Questa tabella elenca le impostazioni che è possibile usare per App SDK e per lo strumento di wrapping delle app.
@@ -79,30 +79,30 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 > [!NOTE]
 > Lo strumento di wrapping delle app può essere usato con la versione autonoma di Intune o con Intune con Configuration Manager.
 
-|Funzionalità|App SDK|Strumento di wrapping delle app|
-|-----------|---------------------|-----------|
-|Limitare il contenuto Web per la visualizzazione in Managed Browser dell'azienda|X|X|
-|Impedire backup in Android, iTunes o iCloud|X|X|
-|Consenti all'app di trasferire i dati ad altre app|X|X|
-|Consenti all'app di ricevere i dati da altre app|X|X|
-|Limita le operazioni taglia, copia e incolla con le altre app|X|X|
-|Richiedi PIN semplice per l'accesso|X|X|
-|Sostituire il PIN dell'app predefinita con il PIN di Intune|X||
-|Specificare il numero di tentativi prima della reimpostazione del PIN|X|X|
-|Consenti impronta digitale anziché PIN |X|X|
-|Richiedi credenziali aziendali per l'accesso|X|X|
-|Blocca l'esecuzione delle app gestite nei dispositivi jailbroken o rooted|X|X|
-|Crittografa dati app|X|X|
-|Ricontrollare i requisiti di accesso dopo un numero di minuti specificato|X|X|
-|Specificare il periodo di prova offline|X|X|
-|Bloccare l'acquisizione schermo (solo Android)|X|X|
-|Supportare la gestione delle applicazioni mobili senza registrazione del dispositivo|X|X|
-|Cancellazione completa|X|X|
-|Cancellazione selettiva <br></br>**Nota:** per iOS, quando viene rimosso il profilo di gestione, viene rimossa anche l'app.|X||
-|Impedire "Salva con nome" |X||
-|Configurazione dell'applicazione di destinazione |X||
-|Supportare più identità|X||
-|Stile personalizzabile |X|||
+|                                                         Funzionalità                                                          | App SDK | Strumento di wrapping delle app |
+|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
+|                              Limitare il contenuto Web per la visualizzazione in Managed Browser dell'azienda                              |    X    |         X         |
+|                                        Impedire backup in Android, iTunes o iCloud                                        |    X    |         X         |
+|                                         Consenti all'app di trasferire i dati ad altre app                                         |    X    |         X         |
+|                                        Consenti all'app di ricevere i dati da altre app                                         |    X    |         X         |
+|                                      Limita le operazioni taglia, copia e incolla con le altre app                                       |    X    |         X         |
+|                                              Richiedi PIN semplice per l'accesso                                               |    X    |         X         |
+|                                         Sostituire il PIN dell'app predefinita con il PIN di Intune                                         |    X    |                   |
+|                                     Specificare il numero di tentativi prima della reimpostazione del PIN                                      |    X    |         X         |
+|                                             Consenti impronta digitale anziché PIN                                             |    X    |         X         |
+|                                         Richiedi credenziali aziendali per l'accesso                                         |    X    |         X         |
+|                             Blocca l'esecuzione delle app gestite nei dispositivi jailbroken o rooted                              |    X    |         X         |
+|                                                     Crittografa dati app                                                     |    X    |         X         |
+|                           Ricontrollare i requisiti di accesso dopo un numero di minuti specificato                            |    X    |         X         |
+|                                             Specificare il periodo di prova offline                                             |    X    |         X         |
+|                                           Bloccare l'acquisizione schermo (solo Android)                                            |    X    |         X         |
+|                                        Supportare la gestione delle applicazioni mobili senza registrazione del dispositivo                                         |    X    |         X         |
+|                                                        Cancellazione completa                                                         |    X    |         X         |
+| Cancellazione selettiva <br></br><strong>Nota:</strong> per iOS, quando viene rimosso il profilo di gestione, viene rimossa anche l'app. |    X    |                   |
+|                                                    Impedire "Salva con nome"                                                     |    X    |                   |
+|                                            Configurazione dell'applicazione di destinazione                                            |    X    |                   |
+|                                                Supportare più identità                                                |    X    |                   |
+|                                                    Stile personalizzabile                                                    |    X    |                   |
 
 ## <a name="next-steps"></a>Passaggi successivi
 

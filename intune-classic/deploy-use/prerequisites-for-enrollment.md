@@ -1,29 +1,29 @@
 ---
 title: Prerequisiti per la registrazione dei dispositivi mobili
 description: Configurare i prerequisiti per la gestione di dispositivi mobili (MDM) e prepararsi alla registrazione di diversi sistemi operativi.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Prerequisiti per la gestione dei dispositivi mobili in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 È possibile consentire ai dipendenti di registrare i propri dispositivi mobili con Intune mediante la procedura seguente. Questi stessi passaggi sono necessari per gestire i dispositivi di proprietà dell'azienda.
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 10/10/2017
 
 Si sta cercando Intune con Configuration Manager?
 > [!div class="button"]
-[Visualizzare i documenti SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [Visualizzare i documenti SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>Passaggio 1: Abilitare le connessioni
 
@@ -80,14 +80,15 @@ La personalizzazione del Portale aziendale consente di offrire agli utenti final
 
 Il nome dell'azienda viene visualizzato come titolo del portale aziendale. I dettagli e le informazioni di contatto vengono visualizzati agli utenti nella schermata Contatta l'IT del portale aziendale. L'informativa sulla privacy viene visualizzata quando un utente fa clic sul relativo collegamento.
 
-|Nome campo|Lunghezza massima|Altre informazioni|
-    |----------|------------------------|----------------|
-    |Nome società|40|È il nome che verrà visualizzato come titolo del portale aziendale. **Nota**: solo caratteri alfanumerici. Questo campo non supporta i caratteri speciali.|
-    |Nome contatto del reparto IT|40|Questo nome viene visualizzato nella pagina **Contatta l'IT**.|
-    |Numero di telefono del reparto IT|20|Questo numero di contatto viene visualizzato nella pagina **Contatta l'IT**.|
-    |Indirizzo di posta elettronica del reparto IT|40|Questo indirizzo di contatto viene visualizzato nella pagina **Contatta l'IT**. È necessario immettere un indirizzo di posta elettronica valido nel formato **alias@domainname.com**.|
-    |Informazioni aggiuntive|120|Queste informazioni vengono visualizzate nella pagina **Contatta l'IT**.|
-    |URL dell'informativa sulla privacy dell'azienda|79|È possibile indicare l'informativa sulla privacy della propria azienda che verrà visualizzata quando gli utenti fanno clic sui collegamenti relativi alla privacy dal portale aziendale. Immettere un URL valido nel formato https://www.contoso.com.|
+
+|          Nome del campo           | Lunghezza massima |                                                                                       Altre informazioni                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Nome società          |     40     |                È il nome che verrà visualizzato come titolo del portale aziendale. <strong>Nota</strong>: solo caratteri alfanumerici. Questo campo non supporta i caratteri speciali.                |
+|  Nome contatto del reparto IT   |     40     |                                                                Questo nome viene visualizzato nella pagina <strong>Contatta l'IT</strong>.                                                                |
+|  Numero di telefono del reparto IT   |     20     |                                                           Questo numero di contatto viene visualizzato nella pagina <strong>Contatta l'IT</strong>.                                                           |
+|  Indirizzo di posta elettronica del reparto IT  |     40     |             Questo indirizzo di contatto viene visualizzato nella pagina <strong>Contatta l'IT</strong>. È necessario immettere un indirizzo di posta elettronica valido nel formato <strong>alias@domainname.com</strong>.              |
+|    Informazioni aggiuntive     |    120     |                                                            Queste informazioni vengono visualizzate nella pagina <strong>Contatta l'IT</strong>.                                                             |
+| URL dell'informativa sulla privacy dell'azienda |     79     | È possibile indicare l'informativa sulla privacy della propria azienda che verrà visualizzata quando gli utenti fanno clic sui collegamenti relativi alla privacy dal portale aziendale. Immettere un URL valido nel formato https://www.contoso.com. |
 
 ### <a name="support-contacts"></a>Contatti del supporto tecnico
 Il sito di assistenza viene visualizzato agli utenti nel portale aziendale in modo da consentire l'accesso all'assistenza online.
@@ -102,7 +103,7 @@ Il sito di assistenza viene visualizzato agli utenti nel portale aziendale in mo
 
 È possibile personalizzare il Portale aziendale con il logo aziendale, il nome della società, un colore del tema e uno sfondo.
 
-|Nome campo|Altre informazioni|
+|Nome del campo|Altre informazioni|
     |----------|----------------|
     |Colore del tema|Selezionare un colore del tema da applicare al portale aziendale.|
     |Includere il logo aziendale|Quando si attiva questa opzione, è possibile caricare il logo aziendale da visualizzare nel portale aziendale. È possibile caricare due loghi: uno che verrà visualizzato quando lo sfondo del portale è bianco e uno che verrà visualizzato quando lo sfondo del portale aziendale usa il colore del tema selezionato. Ogni logo deve essere un file con estensione jpg o png, avere una risoluzione massima di 400x100 pixel e una dimensione massima di 750 KB.|

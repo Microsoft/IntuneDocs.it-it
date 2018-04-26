@@ -15,15 +15,15 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05b03502a27c244dd665363741f70a695f8e945b
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 32e61f95a1e6c197b8d732019a19222d437292bc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS usando il programma Device Enrollment Program di Apple
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Differenze di interfaccia utente temporanee
@@ -76,11 +76,11 @@ Per creare un token DEP si usa il portale DEP di Apple. È anche possibile usare
 
 1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Token DEP**.
 
-  ![Riquadro Token DEP nell'area di lavoro dei certificati Apple](./media/enrollment-program-token-add.png)
+   ![Riquadro Token DEP nell'area di lavoro dei certificati Apple](./media/enrollment-program-token-add.png)
 
 2. Scegliere **Download your public key** (Scarica la chiave pubblica) per scaricare e salvare il file della chiave di crittografia (con estensione pem) in locale. Il file PEM viene usato per richiedere un certificato di relazione di trust dal portale del programma di registrazione dispositivi di Apple.
 
-  ![Pannello Token DEP nell'area di lavoro dei certificati Apple per scaricare la chiave pubblica](./media/enrollment-program-token-download.png)
+   ![Pannello Token DEP nell'area di lavoro dei certificati Apple per scaricare la chiave pubblica](./media/enrollment-program-token-download.png)
 
 **Passaggio 2: Creare e scaricare un token DEP Apple.**<br>
 1. Scegliere **Creare un token tramite Apple Device Enrollment Program** per aprire il portale del programma di distribuzione Apple e accedere con l'ID Apple aziendale. Lo stesso ID Apple può essere usato per rinnovare il token DEP.
@@ -120,37 +120,37 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 2. In **Programma di registrazione per Apple** scegliere **Profili DEP** > **Crea**.
 3. In **Crea un profilo di registrazione** immettere un **nome** e una **descrizione** per il profilo per scopi amministrativi. Questi dettagli non vengono visualizzati agli utenti. È possibile usare questo campo **Nome** per creare un gruppo dinamico in Azure Active Directory. Usare il nome del profilo per definire il parametro enrollmentProfileName per assegnare i dispositivi con questo profilo di registrazione. Altre informazioni sui [gruppi dinamici di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
-  Per **Affinità utente**, scegliere se i dispositivi con questo profilo verranno registrati con o senza un utente assegnato.
+   Per **Affinità utente**, scegliere se i dispositivi con questo profilo verranno registrati con o senza un utente assegnato.
 
- - **Registra con affinità utente**: scegliere questa opzione per i dispositivi che appartengono a utenti e che devono usare il portale aziendale per i servizi, come l'installazione di app. Per l'affinità utente è richiesto [endpoint misto/nome utente WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Altre informazioni](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+   - **Registra con affinità utente**: scegliere questa opzione per i dispositivi che appartengono a utenti e che devono usare il portale aziendale per i servizi, come l'installazione di app. Per l'affinità utente è richiesto [endpoint misto/nome utente WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Altre informazioni](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
- - **Registra senza affinità utente**: scegliere questa opzione per un dispositivo non associato a un singolo utente. Usare questa impostazione per i dispositivi che eseguono attività senza accedere ai dati utente locali. Le app come l'app Portale aziendale non funzionano.
+   - **Registra senza affinità utente**: scegliere questa opzione per un dispositivo non associato a un singolo utente. Usare questa impostazione per i dispositivi che eseguono attività senza accedere ai dati utente locali. Le app come l'app Portale aziendale non funzionano.
 
 4. Scegliere **Impostazioni di gestione dei dispositivi** per configurare le impostazioni di profilo seguenti:
 
-  ![Scelta della modalità di gestione](./media/enrollment-program-profile-mode.png)
-  - **Supervisione eseguita**: modalità di gestione che attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita. Se si lascia vuota la casella di controllo, le funzionalità di gestione saranno limitate. È consigliabile usare il programma DEP come meccanismo per l'abilitazione della modalità con supervisione, soprattutto per le organizzazioni che distribuiscono un numero elevato di dispositivi iOS.
+   ![Scelta della modalità di gestione](./media/enrollment-program-profile-mode.png)
+   - **Supervisione eseguita**: modalità di gestione che attiva altre opzioni di gestione e disattiva il blocco attivazione per impostazione predefinita. Se si lascia vuota la casella di controllo, le funzionalità di gestione saranno limitate. È consigliabile usare il programma DEP come meccanismo per l'abilitazione della modalità con supervisione, soprattutto per le organizzazioni che distribuiscono un numero elevato di dispositivi iOS.
 
- > [!NOTE]
- > Dopo che un dispositivo è stato registrato non è possibile configurarlo per la modalità con supervisione tramite Intune. Dopo la registrazione, l'unico modo per abilitare la modalità con supervisione è connettere il dispositivo iOS a un computer Mac con un cavo USB e usare Apple Configurator. In questo modo il dispositivo viene reimpostato e configurato in modalità con supervisione. Per altre informazioni vedere la [documentazione di Apple Configurator](http://help.apple.com/configurator/mac/2.3). Un dispositivo con supervisione visualizza "This iPhone is managed by Contoso." (Questo dispositivo è gestito da Contoso) nella schermata di blocco e "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device." (Questo iPhone è soggetto a supervisione. Contoso può monitorare il traffico Internet e individuare il dispositivo) in **Impostazioni** > **Generali** > **Info**.
+   > [!NOTE]
+   > Dopo che un dispositivo è stato registrato non è possibile configurarlo per la modalità con supervisione tramite Intune. Dopo la registrazione, l'unico modo per abilitare la modalità con supervisione è connettere il dispositivo iOS a un computer Mac con un cavo USB e usare Apple Configurator. In questo modo il dispositivo viene reimpostato e configurato in modalità con supervisione. Per altre informazioni vedere la [documentazione di Apple Configurator](http://help.apple.com/configurator/mac/2.3). Un dispositivo con supervisione visualizza "This iPhone is managed by Contoso." (Questo dispositivo è gestito da Contoso) nella schermata di blocco e "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device." (Questo iPhone è soggetto a supervisione. Contoso può monitorare il traffico Internet e individuare il dispositivo) in **Impostazioni** > **Generali** > **Info**.
 
-  - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disabilita le impostazioni iOS che possono consentire la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni. Dopo la registrazione del dispositivo, non è possibile modificare questa impostazione senza ripristinare le impostazioni predefinite del dispositivo.
+   - **Registrazione bloccata**: richiede Modalità di gestione = Supervisione eseguita. Disabilita le impostazioni iOS che possono consentire la rimozione del profilo di gestione. Lasciando vuota la casella di controllo, si consente la rimozione del profilo di gestione dal menu Impostazioni. Dopo la registrazione del dispositivo, non è possibile modificare questa impostazione senza ripristinare le impostazioni predefinite del dispositivo.
 
-  - **Modalità iPad condiviso abilitata**: il programma Device Enrollment Program di Apple non supporta la modalità iPad condiviso.
+   - **Modalità iPad condiviso abilitata**: il programma Device Enrollment Program di Apple non supporta la modalità iPad condiviso.
 
-  - **Consenti associazione**: specifica se i dispositivi iOS possono sincronizzarsi con i computer. Se si sceglie **Consenti Apple Configurator per certificato**, è necessario scegliere un certificato in **Certificati di Apple Configurator**.
+   - **Consenti associazione**: specifica se i dispositivi iOS possono sincronizzarsi con i computer. Se si sceglie **Consenti Apple Configurator per certificato**, è necessario scegliere un certificato in **Certificati di Apple Configurator**.
 
-  - **Certificati di Apple Configurator**: se si è scelto **Consenti Apple Configurator per certificato**  in **Consenti associazione**, scegliere un certificato di Apple Configurator da importare.
+   - **Certificati di Apple Configurator**: se si è scelto **Consenti Apple Configurator per certificato**  in **Consenti associazione**, scegliere un certificato di Apple Configurator da importare.
 
-  Scegliere **Salva**.
+   Scegliere **Salva**.
 
 5. Scegliere **Impostazioni dell'Assistente configurazione** per configurare le impostazioni di profilo seguenti:
 
-  ![Scelta delle impostazioni di configurazione con le impostazioni disponibili per un nuovo profilo DEP](./media/enrollment-program-profile-settings.png)
-  - **Nome del reparto**: viene visualizzata quando gli utenti toccano **Informazioni configurazione** durante l'attivazione.
+   ![Scelta delle impostazioni di configurazione con le impostazioni disponibili per un nuovo profilo DEP](./media/enrollment-program-profile-settings.png)
+   - **Nome del reparto**: viene visualizzata quando gli utenti toccano **Informazioni configurazione** durante l'attivazione.
 
-  - **Telefono del reparto**: viene visualizzata quando l'utente fa clic sul pulsante **Richiesta di assistenza** durante l'attivazione.
-    - **Opzioni dell'assistente di configurazione**: queste impostazioni facoltative possono essere configurate in un secondo momento nel menu **Impostazioni** di iOS.
+   - **Telefono del reparto**: viene visualizzata quando l'utente fa clic sul pulsante **Richiesta di assistenza** durante l'attivazione.
+     - **Opzioni dell'assistente di configurazione**: queste impostazioni facoltative possono essere configurate in un secondo momento nel menu **Impostazioni** di iOS.
         - **Passcode**
         - **Servizi di posizione**
         - **Recupera**
@@ -162,16 +162,19 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
         - **Siri**
         - **Dati di diagnostica**
 
-    Scegliere **Salva**.
+     Scegliere **Salva**.
 
-9. Per salvare le impostazioni del profilo, scegliere **Crea** nel pannello **Crea un profilo di registrazione**. Il profilo di registrazione viene visualizzato nell'elenco dei profili DEP Apple.
+>[!NOTE]
+>A partire da iOS 11, se si vuole abilitare il ripristino dal backup in iCloud è necessario mostrare "Ripristina" e "ID Apple" nelle opzioni dell'Assistente di configurazione.
+
+6. Per salvare le impostazioni del profilo, scegliere **Crea** nel pannello **Crea un profilo di registrazione**. Il profilo di registrazione viene visualizzato nell'elenco dei profili DEP Apple.
 
 ## <a name="sync-managed-devices"></a>Sincronizzare i dispositivi gestiti
 Adesso che Intune ha le autorizzazioni per gestire i dispositivi, è possibile sincronizzare Intune con Apple per visualizzare i dispositivi gestiti nel portale di Azure in Intune.
 
 1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Dispositivi DEP** > **Sincronizza**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
 
-  ![Nodo Dispositivi DEP selezionato e scelta del collegamento Sincronizza](./media/enrollment-program-device-sync.png)
+   ![Nodo Dispositivi DEP selezionato e scelta del collegamento Sincronizza](./media/enrollment-program-device-sync.png)
 
 2. Nel pannello **Sincronizzazione** scegliere **Richiedi la sincronizzazione**. L'indicatore di stato mostra la quantità di tempo che è necessario attendere prima di richiedere nuovamente la sincronizzazione.
 
@@ -193,15 +196,15 @@ Prima della registrazione è necessario assegnare ai dispositivi un profilo DEP.
 1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Apple** e quindi scegliere **Profili DEP**.
 2. Nell'elenco **Profili DEP** scegliere il profilo che si vuole assegnare ai dispositivi e quindi scegliere **Assegna dispositivi**.
 
- ![Assegnazioni di dispositivo con l'opzione di assegnazione selezionata](./media/enrollment-program-device-assign.png)
+   ![Assegnazioni di dispositivo con l'opzione di assegnazione selezionata](./media/enrollment-program-device-assign.png)
 
 3. Scegliere **Assegna** e quindi selezionare i dispositivi a cui si vuole assegnare il profilo. È possibile applicare un filtro per visualizzare i dispositivi disponibili:
-  - **non assegnato**
-  - **qualsiasi**
-  - **&lt;nome profilo&gt;**
+   - **non assegnato**
+   - **qualsiasi**
+   - **&lt;nome profilo&gt;**
 4. Scegliere i dispositivi che si vuole assegnare. La casella di controllo sopra la colonna consente di selezionare fino a 1000 dispositivi elencati. Fare quindi clic su **Assegna**. Per registrare più di 1000 dispositivi, ripetere i passaggi di assegnazione fino a quando non è stato assegnato un profilo di registrazione a tutti i dispositivi.
 
-  ![Pulsante Assegna per assegnare il profilo DEP in Intune](media/dep-profile-assignment.png)
+   ![Pulsante Assegna per assegnare il profilo DEP in Intune](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices"></a>Distribuire i dispositivi
 Fino a questo punto sono state abilitate la gestione e la sincronizzazione tra Apple e Intune ed è stato assegnato un profilo per consentire la registrazione dei dispositivi DEP. È ora possibile distribuire i dispositivi agli utenti. I dispositivi con affinità utente richiedono che a ogni utente sia assegnata una licenza di Intune. Per i dispositivi senza affinità utente è necessaria una licenza dispositivo. Un dispositivo attivato non può applicare un profilo di registrazione se non vengono ripristinate le impostazioni predefinite del dispositivo.

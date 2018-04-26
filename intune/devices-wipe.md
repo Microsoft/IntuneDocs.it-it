@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4581b59de68c2877b122887fa1ffe86eaa2b92c
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Rimuovere i dispositivi con il ripristino delle impostazioni predefinite o rimuovere i dati aziendali
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 È possibile rimuovere da Intune i dispositivi non più necessari, da reimpiegare o mancanti. Questa operazione può essere eseguita usando l'azione **Rimuovi i dati aziendali** o **Ripristino delle impostazioni di fabbrica**. Gli utenti possono anche inviare un comando remoto dall'app Portale aziendale Intune ai dispositivi privati registrati in Intune.
 
@@ -72,7 +72,7 @@ Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto dell'azion
 |Impostazioni del profilo certificato|Certificati rimossi e revocati.|
 |Agente di gestione|Il profilo di gestione viene rimosso.|
 |Posta elettronica|I profili di posta elettronica di cui viene eseguito il provisioning con Intune vengono rimossi. I messaggi di posta elettronica memorizzati nella cache del dispositivo vengono eliminati.|
-|Outlook|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi.|
+|Outlook|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi. È necessario che l'app Outlook per dispositivi mobili sia prima distribuita come app obbligatoria per gli utenti iOS.|
 |Separazione di Azure AD|Il record di Azure AD viene rimosso.|
 |Contatti |I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Eventuali contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere rimossi. <br /> <br />Attualmente è supportata solo l'app Outlook.
 

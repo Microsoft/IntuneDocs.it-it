@@ -1,29 +1,33 @@
 ---
 title: Creare un profilo Wi-Fi con chiave precondivisa - Microsoft Intune - Azure | Micrososft Docs
 description: Usare un profilo personalizzato per creare un profilo Wi-Fi con una chiave precondivisa e ottenere il codice XML di esempio per i profili Wi-Fi basati su Android, Windows ed EAP in Microsoft Intune
-keywords: 
+keywords: ''
 author: mandia
 ms.author: MandiOhlinger
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 27ced5debc7eb063be03f4e6a1932425717318af
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Usare un profilo di dispositivo personalizzato per la creazione di un profilo Wi-Fi con una chiave precondivisa - Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Le chiavi precondivise (PSK) vengono in genere usate per autenticare gli utenti in reti Wi-Fi o in reti LAN wireless. Con Intune è possibile creare un profilo Wi-Fi con una chiave precondivisa. Per creare il profilo, usare la funzionalità per i **profili di dispositivo personalizzati** all'interno di Intune. Questo articolo include anche alcuni esempi di come creare un profilo Wi-Fi basato su EAP.
+
+> [!IMPORTANT]
+>- L'uso di una chiave precondivisa con Windows 10 determina la visualizzazione di un errore di correzione in Intune. Quando ciò accade, il profilo Wi-Fi viene assegnato correttamente al dispositivo e il profilo funziona come previsto.
+>- Se si esporta un profilo Wi-Fi che include una chiave precondivisa, verificare che il file sia protetto. La chiave è in testo normale ed è quindi necessario proteggerla.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -46,15 +50,15 @@ Le chiavi precondivise (PSK) vengono in genere usate per autenticare gli utenti 
 
    d. **OMA-URI**:
 
-    - **Per Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Per Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Per Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **err Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-    > Assicurarsi di includere il carattere punto (.) all'inizio.
+     > [!NOTE]
+     > Assicurarsi di includere il carattere punto (.) all'inizio.
 
-    SSID è l'identificatore del set di servizi per cui si stanno creando i criteri. Immettere ad esempio `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
+     SSID è l'identificatore del set di servizi per cui si stanno creando i criteri. Immettere ad esempio `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
-  e. **Campo valore** è la posizione in cui si incolla il codice XML. Vedere gli esempi in questo articolo. Aggiornare ogni valore in modo corrispondente alle impostazioni di rete. La sezione relativa ai commenti del codice include alcuni puntatori.
+   e. **Campo valore** è la posizione in cui si incolla il codice XML. Vedere gli esempi in questo articolo. Aggiornare ogni valore in modo corrispondente alle impostazioni di rete. La sezione relativa ai commenti del codice include alcuni puntatori.
 3. Selezionare **OK**, salvare e assegnare i criteri.
 
     > [!NOTE]
@@ -203,7 +207,7 @@ L'esempio seguente include il codice XML per un profilo Wi-Fi basato su EAP:
 
 1. In un computer connesso alla rete wireless, o connesso di recente alla rete, aprire la cartella `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}`.
 
-  È consigliabile usare un computer che non si è connesso a molte reti wireless. In caso contrario, può essere necessario esaminare ogni profilo per trovare quello corretto.
+   È consigliabile usare un computer che non si è connesso a molte reti wireless. In caso contrario, può essere necessario esaminare ogni profilo per trovare quello corretto.
 
 2. Eseguire una ricerca nei file XML per individuare quello con il nome corretto.
 3. Dopo aver individuato il file XML corretto, copiare e incollare il codice XML nel campo **Dati** della pagina delle impostazioni URI OMA.

@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune
 
@@ -26,7 +26,7 @@ RBAC consente di controllare chi esegue varie attività di Intune all'interno de
 
 - **Definizione del ruolo**: nome del ruolo, risorse gestite dal ruolo e autorizzazioni concesse per ogni risorsa.
 - **Membri**: gruppi di utenti a cui vengono concesse le autorizzazioni.
-- **Ambito**: gruppi di utenti o dispositivi che i membri possono gestire.
+- **Ambito**: gruppi di utenti o dispositivi a cui i membri possono destinare la distribuzione di criteri o app o sui quali possono eseguire attività remote.
 - **Assegnazione**: dopo aver configurato la definizione, i membri e l'ambito, il ruolo viene assegnato.
 
 ![Esempio di controllo RBAC di Intune](./media/intune-rbac-1.PNG)
