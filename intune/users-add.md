@@ -15,15 +15,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bbfa42b8ec03cfbe97efdae21f493b68c53d769
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Aggiungere utenti e concedere autorizzazioni amministrative a Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Come amministratore, è possibile aggiungere direttamente o sincronizzare utenti da Active Directory locale. Una volta aggiunti, gli utenti possono registrare i dispositivi e accedere alle risorse aziendali. È anche possibile assegnare agli utenti autorizzazioni aggiuntive, tra cui *amministratore globale* e *amministratore del servizio*.
 
@@ -35,16 +35,16 @@ Come amministratore, è possibile aggiungere direttamente o sincronizzare utenti
 2. Nel menu di Office 365 selezionare **Amministratore**.
 3. Nell'interfaccia di amministrazione selezionare **Aggiungi un utente**.
 
-  ![Screenshot della sezione Aggiungi un utente](media/office-add-user.png)
+   ![Screenshot della sezione Aggiungi un utente](media/office-add-user.png)
 
 4. Specificare i dettagli utente seguenti:
-  - **Nome**
-  - **Cognome**
-  - **Nome visualizzato**
-  - **Nome utente** - Nome dell'entità utente (UPN) archiviato in Azure Active Directory usato per accedere al servizio
-  - **Posizione**
-  - **Informazioni sui contatti** (facoltativo)
-  - **Password**: generata automaticamente oppure specificare
+   - **Nome**
+   - **Cognome**
+   - **Nome visualizzato**
+   - **Nome utente** - Nome dell'entità utente (UPN) archiviato in Azure Active Directory usato per accedere al servizio
+   - **Posizione**
+   - **Informazioni sui contatti** (facoltativo)
+   - **Password**: generata automaticamente oppure specificare
 
      ![Screenshot della sezione Nuovo utente](media/office-add-user-details.png)
 
@@ -55,16 +55,16 @@ Come amministratore, è possibile aggiungere direttamente o sincronizzare utenti
 1. Accedere al [portale di Azure](https://portal.azure.com) e passare a **Tutti i servizi** > **Monitoraggio e gestione** > **Intune**. È anche possibile *cercare risorse* per **Intune**.
 2. Selezionare **Utenti** > **Tutti gli utenti**.
 3. Nell'interfaccia di amministrazione selezionare **Nuovo utente**.
-  ![Screenshot dell'aggiunta di un nuovo utente](media/intune-add-user.png)
+   ![Screenshot dell'aggiunta di un nuovo utente](media/intune-add-user.png)
 4. Specificare i dettagli utente seguenti:
-  - **Nome**
-  - **Nome utente**: il nuovo nome nel portale di Azure Active Directory ![Screenshot di aggiunta di un nome e nome utente](media/intune-add-user-info.png) Scegliere **OK** per continuare.
+   - **Nome**
+   - **Nome utente**: il nuovo nome nel portale di Azure Active Directory ![Screenshot di aggiunta di un nome e nome utente](media/intune-add-user-info.png) Scegliere **OK** per continuare.
 5. Facoltativamente, è possibile specificare le proprietà utente seguenti:
-  - **Profilo**: informazioni di lavoro come **Posizione** e **Reparto**
-  -  **Gruppi**: selezionare i gruppi da aggiungere per l'utente
-  - **Ruolo della directory**: assegnare all'utente le autorizzazioni amministrative incluso un ruolo di amministratore del servizio Intune.
+   - **Profilo**: informazioni di lavoro come **Posizione** e **Reparto**
+   -  **Gruppi**: selezionare i gruppi da aggiungere per l'utente
+   - **Ruolo della directory**: assegnare all'utente le autorizzazioni amministrative incluso un ruolo di amministratore del servizio Intune.
 
-  Selezionare **Crea** per aggiungere il nuovo utente a Intune.
+   Selezionare **Crea** per aggiungere il nuovo utente a Intune.
 6. Selezionare **Profilo** e quindi scegliere una **Località di utilizzo** per il nuovo utente. È necessario specificare la località di utilizzo prima di poter assegnare al nuovo utente una licenza di Intune. Scegliere **Salva** per continuare.
     ![Screenshot di Località di utilizzo](media/intune-add-user-loc.png)
 7. Selezionare **Licenze** e quindi scegliere **Assegna** per assegnare una licenza di Intune per questo utente. Una licenza di Intune è necessaria per registrare i dispositivi o accedere alle risorse aziendali. Selezionare **Prodotti**, scegliere il tipo di licenza, scegliere **Seleziona** e quindi **Assegna**.
@@ -112,7 +112,7 @@ Per accedere al portale di Office 365, per l'account deve essere impostato lo st
 È possibile configurare la sincronizzazione delle directory per importare account utente dall'istanza locale di Active Directory a Microsoft Azure Active Directory (Azure AD) che include gli utenti di Intune. La connessione del servizio locale Active Directory con tutti i servizi basati su Azure Active Directory consente di semplificare notevolmente la gestione delle identità utente. È anche possibile configurare le funzionalità SSO (Single Sign-On) per semplificare ulteriormente l'autenticazione per tutti gli utenti. Collegando lo stesso [tenant di Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) con più servizi, gli account utente già sincronizzati sono disponibili a tutti i servizi basati su cloud.
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>Come sincronizzare gli utenti locali con Azure AD
-L'unico strumento necessario per sincronizzare gli account utente con Azure AD è la [procedura guidata di Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). La procedura guidata di Azure AD Connect offre un'esperienza semplificata e guidata per connettere l'infrastruttura di identità locale al cloud.  Scegliere la topologia e le esigenze (una o più directory, sincronizzazione delle password o federazione). La procedura guidata distribuisce e configura tutti i componenti necessari per stabilire la connessione, inclusi i servizi di sincronizzazione, Active Directory Federation Services (AD FS) e il modulo Azure AD PowerShell.
+L'unico strumento necessario per sincronizzare gli account utente con Azure AD è la [procedura guidata di Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). La procedura guidata di Azure AD Connect offre un'esperienza semplificata e guidata per connettere l'infrastruttura di identità locale al cloud. Scegliere la topologia e le esigenze (una o più directory, sincronizzazione degli hash delle password, autenticazione pass-through o federazione). La procedura guidata distribuisce e configura tutti i componenti necessari per stabilire la connessione, inclusi i servizi di sincronizzazione, Active Directory Federation Services (AD FS) e il modulo Azure AD PowerShell.
 
 > [!TIP]
 > Azure AD Connect include funzionalità disponibili in precedenza con il nome di Dirsync e Azure AD Sync. Altre informazioni sull'[integrazione della directory](http://technet.microsoft.com/library/jj573653.aspx). Per informazioni sulla sincronizzazione degli account utente da una directory locale ad Azure AD, vedere [Analogie tra Active Directory e Azure AD](http://technet.microsoft.com/library/dn518177.aspx).

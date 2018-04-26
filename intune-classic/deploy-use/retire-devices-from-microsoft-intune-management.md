@@ -1,29 +1,29 @@
 ---
 title: Retire devices (Ritirare i dispositivi)
 description: Intune supporta sia la cancellazione selettiva sia quella completa per ritirare il dispositivo dalla gestione di Intune rimuovendo i relativi criteri e il portale aziendale.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d304e0d27b6aa1ee568bc71272781f44efdce121
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9dc8fdd7437c9de49df9ea9a4c9641ac9d590de
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-devices-from-intune-management"></a>Ritirare i dispositivi dalla gestione di Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Indipendentemente dal fatto che un dispositivo sia personale o di proprietà dell'azienda, arriva un momento in cui è necessario rimuoverlo dalla gestione in Intune.
 
@@ -50,7 +50,7 @@ Quando si rimuove una licenza utente, viene annullata la registrazione dei dispo
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Per eliminare i dispositivi nel portale di Azure Active Directory
 
-1.  Accedere con le credenziali dell'organizzazione al sito Web [http://aka.ms/accessaad](http://aka.ms/accessaad) o [https://portal.office.com](https://portal.office.com) e quindi scegliere **Interfacce di amministrazione** &gt; **Azure AD**.
+1.  Accedere con le credenziali dell'organizzazione a [http://aka.ms/accessaad](http://aka.ms/accessaad) o a [https://portal.office.com](https://portal.office.com) e quindi scegliere **Interfacce di amministrazione** &gt; **Azure AD**.
 
 2.  Creare una sottoscrizione di Azure, se non se ne possiede una. Se si dispone di un account a pagamento, non verrà richiesta una carta di credito o un altro tipo di pagamento. Scegliere il collegamento **Register your free Azure Active Directory** (Registra una sottoscrizione Azure Active Directory gratuita).
 

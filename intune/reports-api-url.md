@@ -15,17 +15,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b09622db88288ccc5b4866cb71ba902d969c0487
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 2b25140cb5c3c8c70ff42186352362c57dcf6ee7
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpoint dell'API data warehouse di Intune
 
 È possibile usare l'API data warehouse di Intune con un account con credenziali di Azure AD e controlli di accesso basati sui ruoli specifici. Sarà quindi possibile autorizzare il client REST con Azure AD usando OAuth 2.0. E, infine, si formerà un URL significativo per chiamare una risorsa del data warehouse.
 
-[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+[!INCLUDE [reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>Autorizzazione
 
@@ -38,7 +38,7 @@ Per altre informazioni, vedere [Autorizzare l'accesso alle applicazioni Web tram
 Gli endpoint dell'API data warehouse leggono le entità per ogni set. L'API supporta un verbo HTTP **GET** e un subset di opzioni di query.
 
 L'URL per Intune usa il formato seguente:  
-https://fef.{***location***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{***entity-collection***}?api-version={***api-version***}
+https://fef.{<strong><em>posizione</em></strong>}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{<strong><em>raccolta-entità</em></strong>}?api-version={<strong><em>versione-API</em></strong>}
 
 L'URL contiene gli elementi seguenti:
 

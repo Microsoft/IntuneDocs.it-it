@@ -1,39 +1,45 @@
 ---
-title: Configurare le impostazioni di Windows Update for Business in Microsoft Intune
-titleSuffix: ''
-description: Informazioni su come configurare le impostazioni di Windows Update for Business in Microsoft Intune per controllare gli aggiornamenti ai dispositivi Windows 10.
+title: Configurare Windows Update for Business in Microsoft Intune - Azure | Microsoft Docs
+description: Aggiornare le impostazioni di aggiornamento software in un profilo per la creazione di un anello di aggiornamento, esaminare la conformità e sospendere gli aggiornamenti in Windows Update for Business con Microsoft Intune nei dispositivi Windows 10.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 03/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 58a55c9162076af1e2e763a9799c7c1f756d80ce
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="manage-software-updates"></a>Gestire gli aggiornamenti software
+# <a name="manage-software-updates-in-intune"></a>Gestire gli aggiornamenti software in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Il servizio Windows as a Service consente di aggiornare i dispositivi Windows 10. A partire da Windows 10, i nuovi aggiornamenti qualitativi e delle funzionalità includeranno il contenuto di tutti gli aggiornamenti precedenti. Ciò significa che, una volta installato l'aggiornamento più recente, si ha la sicurezza che i dispositivi Windows 10 sono aggiornati. A differenza di quanto accadeva per le versioni precedenti di Windows, è ora necessario installare l'intero aggiornamento anziché una sola parte.
+Il servizio Windows as a Service consente di aggiornare i dispositivi Windows 10. A partire da Windows 10, i nuovi aggiornamenti qualitativi e delle funzionalità includono il contenuto di tutti gli aggiornamenti precedenti. Se è stato installato l'aggiornamento più recente, si ha la sicurezza che i dispositivi Windows 10 siano aggiornati. A differenza di quanto accadeva per le versioni precedenti di Windows, è ora necessario installare l'intero aggiornamento anziché una sola parte.
 
-Usando Windows Update for Business, è possibile semplificare l'esperienza di gestione degli aggiornamenti in modo da non dover approvare singoli aggiornamenti per gruppi di dispositivi. È comunque possibile gestire i rischi nei propri ambienti configurando una strategia di implementazione degli aggiornamenti. In questo modo, Windows Update verifica che gli aggiornamenti vengano installati al momento opportuno. Microsoft Intune offre la possibilità di configurare le impostazioni di aggiornamento sui dispositivi e di posticipare l'installazione degli aggiornamenti. Intune non archivia gli aggiornamenti, ma solo l'assegnazione dei criteri di aggiornamento. I dispositivi accedono direttamente a Windows Update per gli aggiornamenti. Usare Intune per configurare e gestire gli **anelli di aggiornamento di Windows 10**. Un anello di aggiornamento contiene un gruppo di impostazioni che definiscono quando e come vengono installati gli aggiornamenti di Windows 10. È ad esempio possibile configurare le impostazioni seguenti:
+Tramite Windows Update for Business si semplifica l'esperienza di gestione degli aggiornamenti. Non è necessario approvare gli aggiornamenti singoli per i gruppi di dispositivi. È possibile gestire i rischi negli ambienti configurando una strategia di implementazione degli aggiornamenti. Windows Update verifica che gli aggiornamenti vengano installati al momento giusto. Microsoft Intune offre la possibilità di configurare le impostazioni di aggiornamento sui dispositivi e di posticipare l'installazione degli aggiornamenti. Intune non archivia gli aggiornamenti, ma solo l'assegnazione dei criteri di aggiornamento. I dispositivi accedono direttamente a Windows Update per gli aggiornamenti. Usare Intune per configurare e gestire gli **anelli di aggiornamento di Windows 10**. Un anello di aggiornamento include un gruppo di impostazioni che definiscono quando e come vengono installati gli aggiornamenti di Windows 10. È ad esempio possibile configurare le seguenti impostazioni:
 
-- **Canale di manutenzione di Windows 10**: scegliere se si vuole che i gruppi di dispositivi ricevano aggiornamenti dal canale semestrale (mirato) o dal canale semestrale.  
+- **Canale di manutenzione di Windows 10**: scegliere il canale di manutenzione da cui si vuole che i gruppi di dispositivi ricevano gli aggiornamenti. Sono disponibili i canali seguenti: 
+  - Canale semestrale
+  - Canale semestrale (mirato)
+  - Windows Insider &#8208; Veloce
+  - Windows Insider &#8208; Lenta
+  - Versione di Windows Insider 
+      
+  Per informazioni dettagliate sui canali di manutenzione disponibili, vedere [Panoramica di Windows as a Service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels).
 - **Deferral Settings** (Impostazioni di differimento): configurare queste impostazioni per ritardare l'installazione degli aggiornamenti per gruppi di dispositivi. Usare queste impostazioni per implementare gli aggiornamenti per fasi in modo da poter esaminare lo stato di avanzamento.
 - **Pausing** (Sospensione): posticipare l'installazione degli aggiornamenti se si rileva un problema in un momento qualsiasi durante l'implementazione.
 - **Maintenance window** (Finestra di manutenzione): configurare gli orari in cui possono essere installati gli aggiornamenti.
 - **Update type** (Tipo di aggiornamento): scegliere i tipi di aggiornamento da installare. Ad esempio, gli aggiornamenti qualitativi, quelli delle funzionalità o i driver.
-- **Installation behavior** (Comportamento di installazione): configurare la modalità di installazione dell'aggiornamento. Ad esempio, il dispositivo viene riavviato automaticamente dopo l'installazione?
-- **Peer downloading** (Download peer-to-peer): specificare se configurare il download peer-to-peer. Se è configurata questa modalità di download, quando un dispositivo ha completato il download di un aggiornamento, altri dispositivi possono scaricare l'aggiornamento da tale dispositivo. In questo modo, il processo di download viene completato più velocemente.
+- **Comportamento installazione**: consente di configurare la modalità di installazione dell'aggiornamento. Ad esempio, il dispositivo viene riavviato automaticamente dopo l'installazione?
+- **Peer downloading** (Download peer-to-peer): specificare se configurare il download peer-to-peer. Se è configurata questa modalità di download, quando un dispositivo ha completato il download di un aggiornamento, altri dispositivi possono scaricare l'aggiornamento da tale dispositivo. Con questa impostazione il processo di download viene completato più velocemente.
 
 Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Usando anelli di aggiornamento, è possibile creare una strategia di aggiornamento adatta alle esigenze aziendali. Per altre informazioni, vedere [Gestire gli aggiornamenti con Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -42,60 +48,64 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 - Per aggiornare i PC Windows 10, è necessario che sia in esecuzione almeno Windows 10 Pro con l'aggiornamento dell'anniversario di Windows.
 
 - Windows Update supporta le versioni di Windows 10 seguenti:
-    - Windows 10
-    - Windows 10 Team (per dispositivi Surface Hub)
-    - [Windows Holographic for Business](#windows-holographic-for-business-support)
+  - Windows 10
+  - Windows 10 Team (per dispositivi Surface Hub)
+  - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- I dispositivi che eseguono Windows 10 Mobile non sono supportati.
+  I dispositivi che eseguono Windows 10 Mobile non sono supportati.
 
 - Nei dispositivi Windows, **Feedback e diagnostica** > **Dati di diagnostica e di utilizzo** deve essere impostato almeno su **Di base**.
 
     ![Impostazione di Windows per i dati di diagnostica e di utilizzo](./media/telemetry-basic.png)
 
-    È possibile configurare manualmente questa impostazione oppure usare un profilo di restrizione dei dispositivi di Intune per Windows 10 e versioni successive. A tale scopo, configurare l'impostazione **Generale** > **Invio dati di diagnostica** almeno su **Di base**. Per altre informazioni sui profili di dispositivo, vedere [Come configurare le impostazioni relative alle restrizioni dei dispositivi](device-restrictions-configure.md).
+    È possibile configurare manualmente questa impostazione oppure usare un profilo di restrizione dei dispositivi di Intune per Windows 10 e versioni successive. A tale scopo, configurare l'impostazione **Generale** > **Invio dati di diagnostica** almeno su **Di base**. Per altre informazioni sui profili di dispositivo, vedere la pagina che spiega come [configurare le impostazioni di restrizione dei dispositivi](device-restrictions-configure.md).
 
 - Nella console di amministrazione di Intune sono disponibili quattro impostazioni che controllano il comportamento degli aggiornamenti software. Queste impostazioni fanno parte dei criteri di configurazione generale per dispositivi Windows 10 Desktop e Mobile:
-    - **Consenti aggiornamenti automatici**
-    - **Consenti funzionalità di versioni non definitive**
-    - **Giorno pianificato per l'installazione**
-    - **Ora pianificata per l'installazione**
+  - **Consenti aggiornamenti automatici**
+  - **Consenti funzionalità di versioni non definitive**
+  - **Giorno pianificato per l'installazione**
+  - **Ora pianificata per l'installazione**
 
-  Il portale classico include anche un numero limitato di altre impostazioni per gli aggiornamenti di Windows 10 nel profilo di configurazione del dispositivo. Se una qualsiasi di queste impostazioni è configurata nella console di amministrazione di Intune quando si esegue la migrazione al portale di Azure, è fortemente consigliato procedere nel modo seguente:
+  Il portale di Azure classico include anche un numero limitato di altre impostazioni per gli aggiornamenti di Windows 10 nel profilo di configurazione del dispositivo. Se una qualsiasi di queste impostazioni è configurata quando si esegue la migrazione al portale di Azure, è fortemente consigliato procedere nel modo seguente:
 
 1. Creare gli anelli di aggiornamento di Windows 10 nel portale di Azure con le impostazioni necessarie. L'impostazione **Consenti funzionalità di versioni non definitive** non è supportata nel portale di Azure perché non è più applicabile alle build più recenti di Windows 10. È possibile configurare le altre tre impostazioni, e anche quelle relative agli aggiornamenti di Windows 10, quando si creano gli anelli aggiornamento.
 
-  > [!NOTE]
-  > Le impostazioni relative agli aggiornamenti di Windows 10 configurate nel portale classico non vengono visualizzate nel portale di Azure dopo la migrazione, ma continuano a essere applicate. Se è stata eseguita la migrazione di una qualsiasi di queste impostazioni e si modificano i criteri migrati dal portale di Azure, l'impostazione viene rimossa dai criteri.
+   > [!NOTE]
+   > Le impostazioni relative agli aggiornamenti di Windows 10 configurate nel portale classico non vengono visualizzate nel portale di Azure dopo la migrazione, Queste impostazioni vengono tuttavia applicate. Se si esegue la migrazione di una qualsiasi di queste impostazioni e si modificano i criteri migrati dal portale di Azure, l'impostazione viene rimossa dai criteri.
 
-2. Eliminare le impostazioni di aggiornamento nel portale classico. Dopo avere eseguito la migrazione al portale di Azure e aver aggiunto le stesse impostazioni in un anello di aggiornamento, è necessario eliminare le impostazioni nel portale classico per evitare possibili conflitti di criteri. Ad esempio, quando la stessa impostazione è configurata con valori diversi, si verifica un conflitto che non è facile identificare perché l'impostazione configurata nel portale classico non viene visualizzata nel portale di Azure.
+2. Eliminare le impostazioni di aggiornamento nel portale classico. Dopo aver eseguito la migrazione al portale di Azure e aver aggiunto le stesse impostazioni in un anello di aggiornamento, è necessario eliminare le impostazioni nel portale classico per evitare possibili conflitti di criteri. Quando, ad esempio, la stessa impostazione viene configurata con valori diversi, si verifica un conflitto. Non esiste un modo semplice per scoprire il motivo per cui l'impostazione configurata nel portale classico non viene visualizzata nel portale di Azure.
 
-## <a name="how-to-create-and-assign-update-rings"></a>Come creare e assegnare anelli di aggiornamento
+## <a name="create-and-assign-update-rings"></a>Creare e assegnare anelli di aggiornamento
 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** scegliere **Aggiornamenti software**.
-4. Nel riquadro **Aggiornamenti software** scegliere **Gestisci** > **Anelli di aggiornamento di Windows 10**.
-5. Nel riquadro contenente l'elenco degli anelli di aggiornamento scegliere **Crea**.
-6. Nel riquadro **Crea l'anello di aggiornamento** specificare un nome e una descrizione (facoltativa) per l'anello di aggiornamento e quindi scegliere **Impostazioni - Configura**.
-7. Nel riquadro **Impostazioni** configurare le informazioni seguenti:
-    - **Canale di manutenzione**: impostare il canale per il quale il dispositivo riceve gli aggiornamenti di Windows: semestrale mirato(destinazione) o semestrale.
-    - **Aggiornamenti ai prodotti Microsoft**: scegliere se cercare gli aggiornamenti di app da Microsoft Update.
-    - **Driver di Windows**: scegliere se escludere i driver di Windows Update durante gli aggiornamenti.
-    - **Comportamento di aggiornamento automatico**: scegliere come gestire il comportamento di aggiornamento automatico per cercare, scaricare e installare gli aggiornamenti. Per informazioni dettagliate, vedere [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
-    - **Periodo di differimento dell'aggiornamento qualitativo (giorni)**: specificare il numero di giorni per cui vengono posticipati gli aggiornamenti qualitativi. È possibile posticipare la ricezione di questi aggiornamenti per un periodo massimo di 30 giorni dalla data di rilascio.  
+1. Accedere al [portale di Azure](https://portal.azure.com).
+2. Selezionare **Tutti i servizi**, filtrare per **Intune** e quindi selezionare **Microsoft Intune**.
+3. Selezionare **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10** > **Crea**.
+4. Immettere un nome e una descrizione (facoltativo) e quindi fare clic su **Configura**.
+5. In **Impostazioni** immettere le impostazioni seguenti:
 
-    Gli aggiornamenti qualitativi includono in genere correzioni e miglioramenti alle funzionalità esistenti di Windows e vengono normalmente pubblicati il primo martedì del mese, anche se possono essere rilasciati da Microsoft in qualsiasi momento. È possibile definire se, e per quanto tempo, posticipare la ricezione degli aggiornamenti qualitativi dopo che sono stati resi disponibili.
+   - **Canale di manutenzione**: impostare il canale da cui il dispositivo riceve gli aggiornamenti di Windows.
+   - **Aggiornamenti ai prodotti Microsoft**: scegliere se cercare gli aggiornamenti di app da Microsoft Update.
+   - **Driver di Windows**: scegliere se escludere i driver di Windows Update durante gli aggiornamenti.
+   - **Comportamento di aggiornamento automatico**: scegliere la modalità di installazione degli aggiornamenti automatici e quando riavviare. Per informazioni dettagliate, vedere [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+     - **Frequenza del comportamento automatico**: se si seleziona **Installa e riavvia automaticamente all'ora pianificata** per il comportamento di aggiornamento, viene visualizzata questa impostazione. Usare questa impostazione per pianificare il momento in cui vengono installati gli aggiornamenti, inclusi settimana, data e ora.
 
-    - **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)**: specificare il numero di giorni per cui vengono posticipati gli aggiornamenti delle funzionalità. È possibile posticipare la ricezione di questi aggiornamenti per un periodo massimo di 180 giorni dalla data di rilascio.
+   - **Verifiche al riavvio**: abilitata per impostazione predefinita. Quando si riavvia un dispositivo, vengono eseguite alcune verifiche, ad esempio la ricerca di utenti attivi, i livelli di batteria, eventuali giochi in esecuzione e altro ancora. Per ignorare queste verifiche quando si riavvia un dispositivo, selezionare **Ignora**.
 
-    Gli aggiornamenti delle funzionalità includono in genere nuove funzionalità per Windows. Dopo aver configurato l'impostazione **Canale di manutenzione** (canale semestrale (mirato) o canale semestrale), è possibile definire se, e per quanto tempo, posticipare la ricezione degli aggiornamenti delle funzionalità dopo che sono stati resi disponibili da Microsoft in Windows Update.
+   - **Periodo di differimento dell'aggiornamento qualitativo (giorni)**: immettere il numero di giorni per cui vengono posticipati gli aggiornamenti qualitativi. È possibile posticipare la ricezione di questi aggiornamenti per un massimo di 30 giorni dalla data di rilascio.
 
-    Ad esempio: **Se il Canale di manutenzione è impostato su Canale semestrale (mirato) e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Il dispositivo non riceverà l'aggiornamento fino a febbraio, 30 giorni più tardi.
+     Gli aggiornamenti qualitativi includono in genere correzioni e miglioramenti alle funzionalità esistenti di Windows e vengono pubblicati il primo martedì del mese, anche se possono essere rilasciati da Microsoft in qualsiasi momento. È possibile definire se e per quanto tempo posticipare la ricezione degli aggiornamenti qualitativi dopo che sono stati resi disponibili in Windows Update.
 
-    **Se il Canale di manutenzione è impostato su Canale semestrale e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Quattro mesi dopo, in aprile, l'aggiornamento della funzionalità X sarà rilasciato come Canale semestrale. Il dispositivo riceverà l'aggiornamento 30 giorni dopo il rilascio del canale semestrale e verrà aggiornato nel mese di maggio.
+   - **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)**: immettere il numero di giorni per cui vengono posticipati gli aggiornamenti delle funzionalità. È possibile posticipare la ricezione di questi aggiornamenti per un massimo di 180 giorni dalla data di rilascio.
 
-    - **Modalità di download con ottimizzazione recapito**: scegliere il metodo in base al quale i dispositivi devono scaricare gli aggiornamenti di Windows. Per informazioni dettagliate, vedere [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
-1. Al termine della configurazione, fare clic su **OK** e nel riquadro **Crea l'anello di aggiornamento** fare clic su **Crea**.
+     Gli aggiornamenti delle funzionalità includono in genere nuove funzionalità per Windows. Dopo aver configurato l'impostazione del **Canale di manutenzione**, è possibile definire se e per quanto tempo posticipare la ricezione degli aggiornamenti delle funzionalità dopo che sono stati resi disponibili in Windows Update.
+
+     Ad esempio: **Se il Canale di manutenzione è impostato su Canale semestrale (mirato) e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Il dispositivo non riceve l'aggiornamento fino a febbraio, 30 giorni più tardi.
+
+     **Se il Canale di manutenzione è impostato su Canale semestrale e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Quattro mesi dopo, in aprile, l'aggiornamento della funzionalità X sarà rilasciato come Canale semestrale. Il dispositivo riceve l'aggiornamento 30 giorni dopo il rilascio del canale semestrale e viene aggiornato nel mese di maggio.
+
+   - **Modalità di download con ottimizzazione recapito**: scegliere il metodo in base al quale i dispositivi devono scaricare gli aggiornamenti di Windows. Per informazioni dettagliate, vedere [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+
+6. Al termine, selezionare **OK**. In **Crea l'anello di aggiornamento** selezionare **Crea**.
 
 Il nuovo anello di aggiornamento viene visualizzato nell'elenco degli anelli di aggiornamento.
 
@@ -108,19 +118,19 @@ Il nuovo anello di aggiornamento viene visualizzato nell'elenco degli anelli di 
 
 ### <a name="review-update-compliance-in-intune"></a>Verificare la conformità degli aggiornamenti in Intune 
 <!-- 1352223 -->
-Rivedere un report sui criteri per visualizzare lo stato di distribuzione per gli anelli di aggiornamento di Windows 10 configurati. 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** scegliere **Aggiornamenti software**.
-4. Nel riquadro **Aggiornamenti software** scegliere **Panoramica**. Vengono visualizzate informazioni generali sullo stato di tutte le fasi di aggiornamento assegnate.
-5. Aprire uno dei report seguenti: 
-     
-   **Per tutti gli anelli di distribuzione:**
-   1. Passare al riquadro **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10**. 
+Rivedere un report sui criteri per visualizzare lo stato di distribuzione per gli anelli di aggiornamento di Windows 10 configurati.
+
+1. Accedere al [portale di Azure](https://portal.azure.com).
+2. Scegliere **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+3. Selezionare **Aggiornamenti software** > **Panoramica**. Vengono visualizzate informazioni generali sullo stato di tutti gli anelli di aggiornamento assegnati.
+4. Aprire uno dei report seguenti:
+
+   **Per tutti gli anelli di distribuzione**:  
+   1. In **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10**
    2. Nella sezione **Monitoraggio** scegliere **Stato di distribuzione per ogni anello di aggiornamento**.
-                   
-   **Per anelli di distribuzione specifici:** 
-   1. Nel riquadro **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10** scegliere l'anello di distribuzione da rivedere.
+
+   **Per anelli di distribuzione specifici**:  
+   1. In **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10** scegliere l'anello di distribuzione da rivedere.
    2. Nella sezione **Monitoraggio** scegliere uno dei report seguenti per visualizzare informazioni dettagliate sull'anello di aggiornamento:
       - **Stato del dispositivo**
       - **Stato utente**
@@ -130,28 +140,31 @@ Rivedere un report sui criteri per visualizzare lo stato di distribuzione per gl
 
 Nella console di Intune è possibile usare le impostazioni URI OMA di un criterio personalizzato per configurare l'ID commerciale. Per informazioni dettagliate, vedere [Impostazioni dei criteri di Intune per i dispositivi Windows 10 in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
-Questo è il percorso dell'URI OMA (con distinzione tra maiuscole e minuscole) per configurare l'ID commerciale: ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+Il percorso dell'URI OMA (con distinzione tra maiuscole e minuscole) per configurare l'ID commerciale è: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
 È ad esempio possibile usare i valori seguenti in **Aggiungi o modifica impostazione URI OMA**:
 
 - **Nome dell'impostazione**: ID commerciale di Windows Analytics
 - **Descrizione dell'impostazione**: configurazione dell'ID commerciale per le soluzioni Windows Analytics
-- **URI OMA** (maiuscole/minuscole): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **OMA-URI** (maiuscole/minuscole): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 - **Tipo di dati**: String
 - **Valore**: <*Usare il GUID visualizzato nella scheda Telemetria di Windows nell'area di lavoro OMS*>
 
-![Impostazioni URI OMA - Aggiungi riga](./media/commID.png)
+![Impostazioni URI OMA - Modifica riga](./media/commID-edit.png)
 
-## <a name="how-to-pause-updates"></a>Come sospendere gli aggiornamenti
+> [!NOTE]
+> Per altre informazioni su MS DM Server, vedere [DMClient configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp) (Provider di servizi di configurazione per DMClient).
+
+## <a name="pause-updates"></a>Sospendere gli aggiornamenti
 È possibile sospendere la ricezione degli aggiornamenti qualitativi o delle funzionalità su un dispositivo per un periodo massimo di 35 giorni dall'inizio della sospensione. Dopo che è trascorso il numero massimo di giorni, la funzionalità di sospensione verrà disattivata automaticamente e il dispositivo eseguirà la ricerca degli aggiornamenti applicabili in Windows Updates. Dopo questa ricerca, è possibile sospendere nuovamente gli aggiornamenti.
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** scegliere **Aggiornamenti software**.
-4. Nel riquadro **Aggiornamenti software** scegliere **Gestisci** > **Anelli di aggiornamento di Windows 10**.
-5. Nel riquadro con l'elenco degli anelli di aggiornamento, scegliere l'anello per cui impostare la sospensione e quindi scegliere **...** > **Sospendi l'aggiornamento qualitativo** > o **Sospendi gli aggiornamenti delle funzionalità**, a seconda del tipo di aggiornamenti da sospendere.
+
+1. Accedere al [portale di Azure](https://portal.azure.com).
+2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+3. Selezionare **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10**.
+4. Nell'elenco degli anelli di aggiornamento scegliere l'anello per cui impostare la sospensione e quindi scegliere **...** > **Sospendi l'aggiornamento qualitativo** > o **Sospendi gli aggiornamenti delle funzionalità**, a seconda del tipo di aggiornamenti da sospendere.
 
 > [!IMPORTANT]
-> Quando si esegue un comando di sospensione, i dispositivi ricevono tale comando non appena controllano la disponibilità di aggiornamenti nel servizio. È quindi possibile che, prima di effettuare questo controllo, installino un aggiornamento pianificato.
+> Quando si esegue un comando di sospensione, i dispositivi ricevono tale comando al successivo controllo della disponibilità di aggiornamenti nel servizio. È quindi possibile che, prima di effettuare questo controllo, installino un aggiornamento pianificato.
 > Inoltre, se un dispositivo è spento quando si esegue il comando di sospensione, all'accensione tale dispositivo potrebbe scaricare e installare gli aggiornamenti pianificati prima di controllare la disponibilità di nuovi aggiornamenti con Intune.
 
 ## <a name="windows-holographic-for-business-support"></a>Supporto di Windows Holographic for Business

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5304830c1706ff11bccdaedc9e9efa715e71904a
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 09b94ad2109c41ad02e8da7267690c31ba296bae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="turn-on-ios-supervised-mode"></a>Attivare la modalità di supervisione di iOS
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 La modalità di supervisione di Apple iOS offre agli amministrazioni più opzioni per la gestione dei dispositivi Apple ed è utile per i dispositivi di proprietà dell'azienda distribuiti su vasta scala. Ad esempio, è possibile limitare AirDrop o impedire agli utenti di modificare il nome del dispositivo. Per un elenco di impostazioni che richiedono la modalità di supervisione, vedere [Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune](device-restrictions-ios.md).
 

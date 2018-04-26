@@ -2,28 +2,28 @@
 title: Registrare i dispositivi usando un account del manager di registrazione dispositivi
 titlesuffix: Microsoft Intune
 description: Usare l'account del manager di registrazione dispositivi per registrare i dispositivi in Intune. "
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi usando un account del manager di registrazione dispositivi
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Le organizzazioni possono usare Intune per gestire un numero elevato di dispositivi mobili con un singolo account utente. L'account del *manager di registrazione dispositivi* (DEM, Device Enrollment Manager) è un account utente speciale che consente di registrare fino a 1.000 dispositivi. Gli utenti esistenti vengono aggiunti all'account del manager di registrazione dispositivi per rendere disponibili le funzionalità DEM. Ogni dispositivo registrato usa una singola licenza. Si consiglia di usare i dispositivi registrati tramite tale account come dispositivi condivisi piuttosto che come dispositivi personali ("BYOD").  
 
@@ -49,12 +49,12 @@ L'utente manager di registrazione dispositivi può:
 I dispositivi registrati con un account di manager di registrazione dispositivi presentano le restrizioni seguenti:
 
   - Nessun accesso per singolo utente. Poiché ai dispositivi non è assegnato alcun utente, il dispositivo non ha accesso alla posta elettronica o ai dati aziendali. È comunque possibile usare configurazioni VPN, ad esempio, per fornire l'accesso ai dati alle app dei dispositivi.
-  - Nessun accesso condizionale. Questi infatti sono scenari per utente.
   - L'utente manager di registrazione dispositivi non può annullare la registrazione di dispositivi registrati DEM sul dispositivo tramite il portale aziendale. L'amministratore di Intune può annullare la registrazione.
   - Visualizzazione del solo dispositivo locale nell'app o nel sito Web del portale aziendale.
-  - Gli utenti non possono usare le app Volume Purchase Program di Apple poiché è necessario un ID Apple per utente per la gestione delle app.
+  - Gli utenti non possono usare le app Volume Purchase Program (VPP) di Apple con licenze utente poiché è necessario un ID Apple per utente per la gestione delle app.
   - (Solo iOS) Se si usa un manager di registrazione dispositivi per la registrazione dei dispositivi iOS, non è possibile usare Apple Configurator, Apple Device Enrollment Program (DEP) o Apple School Manager (ASM) per la registrazione dei dispositivi.
   - (Solo Android) È previsto un limite al numero di dispositivi Android for Work che è possibile registrare con un singolo account DEM. Per ogni account DEM è possibile registrare fino a 10 profili di lavoro Android. Questa limitazione non si applica alla registrazione di Android legacy.
+  - I dispositivi possono installare le app VPP se sono dotati delle licenze dispositivo.
   - Ogni dispositivo richiede una licenza dispositivo. Altre informazioni sulle [licenze utente e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 

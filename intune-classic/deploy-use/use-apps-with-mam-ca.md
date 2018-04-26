@@ -1,29 +1,29 @@
 ---
 title: Usare app con accesso condizionale MAM
-description: "Informazioni su come l'accesso condizionale per la gestione delle app per dispositivi mobili può essere usato per controllare le app che hanno accesso ai servizi di Office 365."
-keywords: 
+description: Informazioni su come l'accesso condizionale per la gestione delle app per dispositivi mobili può essere usato per controllare le app che hanno accesso ai servizi di Office 365.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 725783751c13b2301e7fbef4dea1a47bc339c8b7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2f313fcbfa26c8f82708f8f830404da97a3eca25
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>Cosa accade quando viene usata un'app con accesso condizionale basato sulle app
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 L'accesso condizionale basato sulle app verifica l'identità dell'applicazione approvata tramite un'app broker che deve essere presente nel dispositivo:
 *  In **iOS** l'app broker è l'**app Azure Authenticator**.
@@ -40,8 +40,8 @@ L'elenco seguente include le proprietà che derivano direttamente dal dispositiv
 
 > [!NOTE]
 > Su dispositivi Android:
-  * È necessario che l'app Portale aziendale sia installata nel dispositivo, ma non è necessario che l'utente acceda all'app.
-  * La registrazione del dispositivo va eseguita tramite l'app OneDrive o Outlook.
+>   * È necessario che l'app Portale aziendale sia installata nel dispositivo, ma non è necessario che l'utente acceda all'app.
+>   * La registrazione del dispositivo va eseguita tramite l'app OneDrive o Outlook.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Per rimuovere un dispositivo dalla registrazione in Azure AD
 La registrazione del dispositivo può essere rimossa tramite la console di amministrazione di Azure AD, in genere da un amministratore IT.  Questa operazione può essere eseguita anche dall'utente finale nel dispositivo stesso.
@@ -52,7 +52,7 @@ La registrazione del dispositivo può essere rimossa tramite la console di ammin
 
 ## <a name="app-based-ca-with-device-based-ca"></a>Accesso condizionale basato sulle app con accesso condizionale basato sui dispositivi  
 
-È possibile configurare l'[accesso condizionale basato sulla conformità del dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**accesso condizionale per il dispositivo**) nella [console di amministrazione di Intune](https://manage.microsoft.com) o nella [console di gestione di Azure AD Premium] (https://manage.windowsazure.com). L'accesso condizionale per il dispositivo richiede che gli utenti si connettano a Exchange Online solo tramite dispositivi gestiti in Intune conformi ai criteri di conformità dei dispositivi di Intune o tramite PC aggiunti a un dominio.  Se un utente appartiene a uno o più gruppi di sicurezza che soddisfano i criteri di accesso condizionale basato sulle app e per il dispositivo, l'utente deve soddisfare uno dei due requisiti:
+È possibile configurare l'[accesso condizionale basato sulla conformità del dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (<strong>accesso condizionale per il dispositivo</strong>) nella [console di amministrazione di Intune](https://manage.microsoft.com) o nella [console di gestione di Azure AD Premium](https://manage.windowsazure.com). L'accesso condizionale per il dispositivo richiede che gli utenti si connettano a Exchange Online solo tramite dispositivi gestiti in Intune conformi ai criteri di conformità dei dispositivi di Intune o tramite PC aggiunti a un dominio.  Se un utente appartiene a uno o più gruppi di sicurezza che soddisfano i criteri di accesso condizionale basato sulle app e per il dispositivo, l'utente deve soddisfare uno dei due requisiti:
 * L'app usata per accedere al servizio è un'app per dispositivi mobili supportata da 
 * e nel dispositivo su cui viene eseguita l'app è installato il **programma di autenticazione iOS (per i dispositivi iOS)** o l'**app Portale aziendale (per i dispositivi Android)**.
 * Il dispositivo usato per accedere al servizio è **gestito da Intune e conforme** ai criteri di conformità del dispositivo di Intune oppure è un **PC aggiunto a un dominio**.  Di seguito sono riportati alcuni esempi per illustrare quanto descritto:

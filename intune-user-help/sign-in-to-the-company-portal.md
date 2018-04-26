@@ -1,27 +1,27 @@
 ---
 title: Come accedere all'app del portale aziendale | Microsoft Docs
-description: "Informazioni su come accedere all'app Portale aziendale su più piattaforme."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Informazioni su come accedere all'app Portale aziendale su più piattaforme.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 10/25/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bca
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c4ae7373627c914b89629464c53240c8b07a28df
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 84f8e70d8321ca27d689d13472b69007a1d6c186
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>Come accedere all'app del portale aziendale? <!--User Story 1132123-->
 
@@ -36,21 +36,21 @@ Sebbene le immagini seguenti si riferiscano a iOS, il processo è praticamente i
 
 1. Aprire l'app del portale aziendale nel dispositivo e toccare **Accedi**.
 
-  ![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](/intune/media/cp_ios_aad_signin_after_1704_001.png)
+   ![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Il testo "Ottenere l'accesso alle risorse dell'organizzazione e mantenerle sicure" e il pulsante "Accedi" sono visualizzati sotto. Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
 
-  Se l'app del portale aziendale non è disponibile, vedere le istruzioni per installarla e scaricarla per [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) o [Android](install-the-company-portal-app-android.md).
+   Se l'app del portale aziendale non è disponibile, vedere le istruzioni per installarla e scaricarla per [iOS](install-and-sign-in-to-the-intune-company-portal-app-ios.md) o [Android](install-the-company-portal-app-android.md).
 
-2. Immettere l'**Account aziendale o dell'istituto di istruzione**.
+2. Immettere l'**account aziendale o dell'istituto di istruzione** e toccare **Avanti**.
 
-  ![Viene chiesto all'utente di indicare solo l'indirizzo di posta elettronica anziché l'indirizzo di posta elettronica e la password nella stessa schermata.](/intune/media/cp_ios_aad_signin_after_1704_002.png)
+   ![Viene chiesto all'utente di indicare solo l'indirizzo di posta elettronica anziché l'indirizzo di posta elettronica e la password nella stessa schermata.](/intune-user-help/media/cp_ios_aad_signin_after_1804_002.png)
 
-3. Attendere qualche istante che l'indirizzo di posta elettronica venga accettato e quindi immettere la password.
+3. Immettere la password e toccare **Accedi**.
 
-  ![La password verrà richiesta all'utente dopo che l'indirizzo di posta elettronica è stato accettato.](/intune/media/cp_ios_aad_signin_after_1704_003.png)
+   ![La password verrà richiesta all'utente dopo che l'indirizzo di posta elettronica è stato accettato.](/intune-user-help/media/cp_ios_aad_signin_after_1804_003.png)
 
 4. Dopo che il portale aziendale ha accettato l'accesso, viene eseguito l'accesso ed è possibile iniziare ad accedere alle risorse aziendali.   
 
-  ![Terminato il processo di autenticazione, l'app portale aziendale esegue l'accesso, visualizzando una barra di caricamento.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+   ![Terminato il processo di autenticazione, l'app portale aziendale esegue l'accesso, visualizzando una barra di caricamento.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
 ## <a name="signing-in-with-certificate-based-authentication"></a>Accesso con l'autenticazione basata su certificati
 
@@ -68,26 +68,26 @@ Se non si usa una password per accedere alle risorse aziendali, è possibile usa
 
 1. Anziché immettere l'indirizzo di posta elettronica, selezionare il collegamento **Accesso da un altro dispositivo** sotto la casella di testo della posta elettronica.
 
-  ![La pagina di accesso del portale aziendale, con un'icona di una persona davanti a una rappresentazione grafica di un sito Web. Sotto è visibile il pulsante "Accedi". Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+   ![La pagina di accesso del portale aziendale chiede all'utente di immettere l'indirizzo di posta elettronica.  Il pulsante "Avanti" e il collegamento "Accesso da un altro dispositivo" sono visualizzati sotto. È incluso anche il collegamento "Problemi di accesso all'account?" Un collegamento nella parte inferiore porta alle informazioni sulla privacy e sui cookie di Microsoft.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
 
 2. Si riceve un codice univoco e monouso per accedere al portale aziendale.
 
-  ![Viene indicato come passare alla pagina aka.ms/devicelogin con un passcode univoco dal computer di lavoro, quindi come usare il codice per l'accesso.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+   ![Viene indicato come passare alla pagina https://microsoft.com/devicelogin con un passcode univoco dal computer di lavoro, quindi come usare il codice per l'accesso.](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. Nell'altro dispositivo aprire il browser e passare a [https://aka.ms/devicelogin](https://aka.ms/devicelogin) per immettere il codice.
+3. Nell'altro dispositivo aprire il browser e passare a [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) per immettere il codice.
 
-  ![Un'immagine del browser dell'utente nel computer di lavoro anziché nell'app portale aziendale. Nella pagina "Accesso dispositivo" visualizzata viene chiesto all'utente di immettere il codice ricevuto nell'app portale aziendale.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+   ![Un'immagine del browser dell'utente nel computer di lavoro anziché nell'app portale aziendale. Nella pagina "Accesso dispositivo" visualizzata viene chiesto all'utente di immettere il codice ricevuto nell'app portale aziendale.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
 4. Dopo che la pagina **Accesso dispositivo** ha verificato il codice, selezionare __Continua__ per consentire al portale aziendale di accedere all'altro dispositivo.
 
-  ![L'utente ha immesso il codice univoco nel campo e il sito "Accesso dispositivo" ha chiesto di confermare che il portale aziendale di Intune è l'app corretta per la ricezione dell'autorizzazione ad accedere.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+   ![L'utente ha immesso il codice univoco nel campo e il sito "Accesso dispositivo" ha chiesto di confermare che il portale aziendale di Intune è l'app corretta per la ricezione dell'autorizzazione ad accedere.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
 5. Dopo la verifica del codice, è possibile chiudere la finestra.
 
-  ![Una pagina di conferma indica che l'utente ha eseguito l'accesso all'app portale aziendale sul proprio dispositivo e che questa pagina può essere chiusa.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+   ![Una pagina di conferma indica che l'utente ha eseguito l'accesso all'app portale aziendale sul proprio dispositivo e che questa pagina può essere chiusa.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
 
 6. Nel dispositivo originale l'app del portale aziendale inizia l'accesso.
 
-  ![Dopo aver completato il processo di autenticazione, l'app del portale aziendale esegue l'accesso visualizzando una barra di caricamento.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+   ![Dopo aver completato il processo di autenticazione, l'app del portale aziendale esegue l'accesso visualizzando una barra di caricamento.](/intune-user-help/media/cp_ios_aad_signin_after_1804_007.png)
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

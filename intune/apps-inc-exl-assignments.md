@@ -1,25 +1,25 @@
 ---
 title: Includere ed escludere assegnazioni di app in Microsoft Intune
-titlesuffix: 
+titlesuffix: ''
 description: Informazioni su come usare Microsoft Intune per includere ed escludere le assegnazioni di app.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dbe8669dc2bf448e0738147758d90ba6d2d69b06
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 93fd626d580917a3dd5bb20e7696c09c109dcc0b
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Includere ed escludere assegnazioni di app in Microsoft Intune
 
@@ -33,6 +33,8 @@ Quando si escludono i gruppi da un'assegnazione di un'app, è necessario esclude
 >Durante l'impostazione di un'assegnazione di gruppo per un'app, il tipo **Non applicabile** è stato deprecato e sostituito con la funzionalità di esclusione di gruppi. 
 >
 >Intune fornisce per praticità i gruppi **Tutti gli utenti** e **Tutti i dispositivi** creati in precedenza nella console con le ottimizzazioni predefinite. È consigliabile usare questi gruppi per scegliere tutti gli utenti e tutti i dispositivi invece dei gruppi 'Tutti gli utenti' o 'Tutti i dispositivi' che potrebbero essere stati creati manualmente.  
+>
+>Android Enterprise (denominato in precedenza Android for Work) supporta l'inclusione e l'esclusione di gruppi, ma non supporta i gruppi predefiniti **Tutti gli utenti** e **Tutti i dispositivi**.
 
 ## <a name="including-and-excluding-groups-when-assigning-apps"></a>Inclusione ed esclusione di gruppi durante l'assegnazione di app 
 Per assegnare un'app ai gruppi usando l'assegnazione di inclusione ed esclusione:

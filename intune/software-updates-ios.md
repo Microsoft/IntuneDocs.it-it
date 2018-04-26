@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 39432d09bea822c25ca9e11181a11a1e2298dfef
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>Configurare i criteri di aggiornamento per iOS in Microsoft Intune
 
@@ -55,3 +55,4 @@ Il criterio è stato applicato agli utenti. I dispositivi usati dagli utenti a c
 ## <a name="monitor-ios-device-installation-failures"></a>Monitorare gli errori di installazione nei dispositivi iOS
 <!-- 1352223 -->
 Il report **Installation failures for iOS devices** (Errori di installazione per dispositivi iOS) è disponibile nel riquadro **Aggiornamenti software**. Nel report è possibile visualizzare un elenco di dispositivi iOS con supervisione a cui è destinato un criterio di aggiornamento per iOS e che nonostante il tentativo di aggiornamento non è stato possibile aggiornare. Per ogni dispositivo, è possibile visualizzare lo stato del motivo per cui il dispositivo non è stato aggiornato automaticamente. I dispositivi integri e aggiornati non verranno visualizzati nell'elenco. Un dispositivo è aggiornato se possiede l'ultimo aggiornamento che è in grado di supportare.
+

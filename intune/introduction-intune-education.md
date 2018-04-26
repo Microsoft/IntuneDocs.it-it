@@ -1,24 +1,24 @@
 ---
-title: "Che cos'è Intune for Education?"
+title: Che cos'è Intune for Education?
 description: Informazioni sulle differenze di Intune per Education rispetto all'esperienza di gestione completa di .
 keywords: informazioni su Intune
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/21/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f98e9cd82508f4b41d62a61baf06c9add2c3626e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 30195ee56e99754f5ed385291823adef08d6ce01
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Informazioni sulle differenze di Intune per Education rispetto all'esperienza di gestione completa in Intune.
 
@@ -39,6 +39,6 @@ Sia Intune che Intune per Education consentono di:
 * Assicurarsi che i dispositivi e le app siano conformi ai requisiti di sicurezza.
 
 ### <a name="next-steps"></a>Passaggi successivi
-* Acquisire familiarità con il prodotto [con una versione di valutazione per 90 giorni di Intune](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1). Se Intune è già disponibile, passare a (https://intuneeducation.portal.azure.com) per iniziare.
+* Acquisire familiarità con il prodotto [con una versione di valutazione per 90 giorni di Intune](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1). Se le credenziali di accesso sono già disponibili, passare a (https://intuneeducation.portal.azure.com) per iniziare.
 * Scoprire qual è il modo più rapido per [iniziare a usare Intune per Education](/intune-education/what-is-express-configuration).
 * Approfondire i [requisiti tecnici e le funzionalità](/intune/supported-devices-browsers) di Intune.

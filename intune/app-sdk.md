@@ -1,25 +1,25 @@
 ---
 title: Vantaggi di Intune App SDK
 titlesuffix: Microsoft Intune
-description: "Intune App SDK è disponibile per le piattaforme iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune."
-keywords: 
+description: Intune App SDK è disponibile per le piattaforme iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae22d3e718fd01330b81206921b6e9a23313a30f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b34963761e9700d6cb742cb90979be30d5ae6b3e
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Panoramica di Intune App SDK
 Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di protezione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. La maggior parte delle funzionalità dell'SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che ne richiedono la partecipazione.
@@ -64,7 +64,7 @@ Questa funzionalità per il supporto di più identità contribuisce a risolvere 
 ### <a name="app-protection-without-device-enrollment"></a>Protezione delle app senza registrazione del dispositivo
 
 >[!IMPORTANT]
->La protezione delle app di Intune senza la registrazione dei dispositivi è disponibile con gli strumenti di wrapping delle app di Intune, Intune App SDK per Android, Intune App SDK per iOS, il componente Xamarin per SDK e il plug-in Cordova per SDK.
+>La protezione delle app di Intune senza la registrazione dei dispositivi è disponibile con gli strumenti di wrapping delle app di Intune, Intune App SDK per Android, Intune App SDK per iOS, i binding Xamarin per Intune App SDK e il plug-in Cordova per SDK.
 
 Molti utenti con dispositivi personali vogliono accedere ai dati aziendali senza registrare il dispositivo personale in un provider di gestione di dispositivi mobili (MDM). Dato che la registrazione in una soluzione MDM richiede il controllo globale del dispositivo, gli utenti sono spesso riluttanti a fornire tale controllo all'azienda per i propri dispositivi personali.
 

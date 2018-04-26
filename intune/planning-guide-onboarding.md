@@ -1,7 +1,7 @@
 ---
 title: Processo di onboarding di Intune
 titlesuffix: Microsoft Intune
-description: Questo articolo illustra tutti i dettagli che devono essere presi in considerazione durante il caricamento di una soluzione Microsoft Intune in configurazione solo cloud nel proprio ambiente.
+description: Questo articolo illustra tutti i dettagli che devono essere presi in considerazione durante l'onboarding di una soluzione Microsoft Intune in configurazione solo cloud nel proprio ambiente.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -15,11 +15,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c0c88ddf84e7dfd3eed83f846ccfc3ff9c4da2d5
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 871e091af1f2046206dbc94fdc7d199435645190
+ms.sourcegitcommit: e04e1652e121b4b9dbed05d0bbaa569e6d5d09bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementare il piano di Microsoft Intune
 

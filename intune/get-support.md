@@ -2,28 +2,28 @@
 title: Come ottenere supporto per Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Ottenere supporto online e per telefono per Microsoft Intune a pagamento e per le sottoscrizioni di prova.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5cb06625351e67bea8b467f6ab6873d258ee8175
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5a823cfb602b4847e702d54e0d8775700b01c8e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Come ottenere supporto per Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/note-for-both-portals.md)]
+[!INCLUDE [azure_portal](./includes/note-for-both-portals.md)]
 
 Microsoft offre supporto globale tecnico e per la prevendita, la fatturazione e le sottoscrizioni di Microsoft Intune. Il supporto è disponibile sia online che telefonicamente per le sottoscrizioni a pagamento e di valutazione. Il supporto tecnico online è disponibile in inglese e giapponese. Il supporto telefonico e il supporto online per la fatturazione online sono disponibili anche in altre lingue.
 
@@ -34,7 +34,7 @@ Microsoft offre supporto globale tecnico e per la prevendita, la fatturazione e 
 
 Gli amministratori IT possono archiviare un ticket di supporto dal portale di Azure seguendo la procedura seguente:
 
-1. Connettersi al portale di Azure (https://portal.azure.com) con le credenziali di amministratore di Intune, scegliere l'icona **?** nell'angolo superiore destro del portale e scegliere **Guida e supporto** per visualizzare la pagina [Guida e supporto](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview target=_blank) di Azure.
+1. Connettersi al portale di Azure (<https://portal.azure.com>) con le credenziali di amministratore di Intune, scegliere l'icona <strong>?</strong> nell'angolo superiore destro del portale e scegliere <strong>Guida e supporto</strong> per visualizzare la pagina [Guida e supporto](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) di Azure.
 
     ![Screenshot del portale di Azure e del collegamento punto interrogativo del supporto con il collegamento Guida e supporto evidenziato](./media/azure-get-support.png)
 
@@ -43,34 +43,34 @@ Gli amministratori IT possono archiviare un ticket di supporto dal portale di Az
     ![Screenshot della pagina Guida e supporto del portale di Azure con il collegamento Nuova richiesta di supporto evidenziato](./media/azure-support-ticket-link.png)
 
 3. Nel pannello **Informazioni di base** scegliere le opzioni seguenti, per la maggior parte dei problemi di supporto tecnico di Intune:
-    - **Tipo di problema**: **Tecnico**
-    - **Servizio**: **Microsoft Intune**
-    - **Piano di supporto**: **Supporto tecnico - incluso** (per problemi tecnici di Intune, il supporto è gratuito) o **Premier**
+   - **Tipo di problema**: **Tecnico**
+   - **Servizio**: **Microsoft Intune**
+   - **Piano di supporto**: **Supporto tecnico - incluso** (per problemi tecnici di Intune, il supporto è gratuito) o **Premier**
     
-    >[!IMPORTANT]
-    >- Se si è un **cliente Premier** e non viene visualizzato **Piano di supporto: Premier**, contattare il Technical Account Manager per collegare il contratto di assistenza e il tenant.
-    >- Il supporto per Intune e per Intune usato con Configuration Manager è gratuito. Per esaminare i dettagli dell'offerta di supporto tecnico Premier, vedere la documentazione in [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/) (Descrizione dei servizi), sezione 5.3.3 "Advisory Services" (Servizi di consulenza).
+     >[!IMPORTANT]
+     >- Se si è un **cliente Premier** e non viene visualizzato **Piano di supporto: Premier**, contattare il Technical Account Manager per collegare il contratto di assistenza e il tenant.
+     >- Il supporto per Intune e per Intune usato con Configuration Manager è gratuito. Per esaminare i dettagli dell'offerta di supporto tecnico Premier, vedere la documentazione in [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/) (Descrizione dei servizi), sezione 5.3.3 "Advisory Services" (Servizi di consulenza).
 
-    Scegliere **Avanti** per continuare.
+     Scegliere **Avanti** per continuare.
 
 4. Nel pannello **Problema** selezionare le opzioni seguenti per assicurarsi che la richiesta venga analizzata da un esperto in materia:
 
-    - **Gravità**
-    - **Tipo di problema**
-    - **Categoria**
+   - **Gravità**
+   - **Tipo di problema**
+   - **Categoria**
 
-    Questi dettagli rendono disponibile anche la **Guida correlata** che potrebbe risolvere il problema senza la necessità di inviare una richiesta di supporto.
+     Questi dettagli rendono disponibile anche la **Guida correlata** che potrebbe risolvere il problema senza la necessità di inviare una richiesta di supporto.
 
-    ![Screenshot della pagina Guida e supporto del portale di Azure con le voci Problema specificate e la visualizzazione di soluzioni basate sul problema](./media/support-need-solutions.png)
+     ![Screenshot della pagina Guida e supporto del portale di Azure con le voci Problema specificate e la visualizzazione di soluzioni basate sul problema](./media/support-need-solutions.png)
 
-    Per aiutare il team di supporto nell'individuazione e nella risoluzione del problema, immettere le informazioni seguenti:
+     Per aiutare il team di supporto nell'individuazione e nella risoluzione del problema, immettere le informazioni seguenti:
     
-    - **Informazioni dettagliate**
-    - **Data**
-    - **Ora**
-    - **Dati supplementari**
+   - **Informazioni dettagliate**
+   - **Data**
+   - **Ora**
+   - **Dati supplementari**
 
-    Scegliere **Avanti**.
+     Scegliere **Avanti**.
 
 5. Specificare le **Informazioni contatto** per la richiesta di supporto. Il supporto tecnico Microsoft usa queste informazioni per contattare l'utente.
 6. Scegliere **Crea** per inviare la richiesta di supporto tecnico.

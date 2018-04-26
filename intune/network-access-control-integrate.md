@@ -1,25 +1,24 @@
 ---
-title: Integrazione del controllo di accesso alla rete con Microsoft Intune
-titlesuffix: 
-description: Integrazione del controllo di accesso alla rete (NAC) con Intune
-keywords: 
+title: Integrazione del controllo di accesso alla rete con Microsoft Intune - Azure | Microsoft Docs
+description: Le soluzioni di controllo di accesso alla rete (NAC, Network Access Control) consentono di verificare che i dispositivi siano registrati in Intune e che siano conformi. NAC include alcuni comportamenti e funziona con l'accesso condizionale. Vedere i passaggi per l'onboarding e ottenere un elenco di soluzioni partner.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f54f04bc5a63c8a431eddaf4210fcb290942cc3
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bdf6b5b71c71dd8b1a9a5c9154953d1ebc07d0dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integrazione del controllo di accesso alla rete (NAC) con Intune
 
@@ -27,7 +26,7 @@ Intune si integra con i partner di controllo di accesso alla rete per consentire
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Protezione delle risorse aziendali con le soluzioni di Intune e NAC
 
-Le soluzioni NAC sono responsabili del controllo dello stato di conformità e della registrazione del dispositivo con Intune e consentono di scegliere il controllo di accesso più appropriato. Se il dispositivo è o non è registrato, ma non è conforme ai criteri di conformità dei dispositivi Intune, deve essere reindirizzato a Intune per la registrazione e/o per un controllo di conformità.
+Le soluzioni NAC controllano lo stato di registrazione e conformità del dispositivo con Intune e consentono di prendere decisioni relative al controllo dell'accesso. Se il dispositivo non è registrato oppure è registrato ma non è conforme ai criteri di conformità dei dispositivi Intune, deve essere reindirizzato a Intune per la registrazione e/o per un controllo di conformità.
 
 ### <a name="example"></a>Esempio
 
@@ -35,17 +34,17 @@ Se il dispositivo è registrato e conforme con Intune, la soluzione NAC dovrebbe
 
 ## <a name="feature-behaviors"></a>Comportamenti delle funzionalità
 
-Non è possibile modificare lo stato dei dispositivi con sincronizzazione attiva con Intune da **conforme** / **non conforme** a **non sincronizzato** (o **sconosciuto**). Lo stato **sconosciuto** è riservato ai dispositivi appena registrati dei quali non è ancora stata valutata la conformità.
+I dispositivi che stanno eseguendo la sincronizzazione con Intune non possono passare dallo stato **Conforme** / **Non conforme** allo stato **Not Synched** (Non sincronizzato) o **Sconosciuto**. Lo stato **Sconosciuto** è riservato ai dispositivi appena registrati dei quali non è ancora stata valutata la conformità.
 
 Per i dispositivi a cui viene impedito l'accesso alle risorse, il servizio che blocca l'accesso deve reindirizzare tutti gli utenti al [portale di gestione](https://portal.manage.microsoft.com) per determinare i motivi per cui il dispositivo è bloccato.  Se gli utenti visitano questa pagina, viene rivalutata la conformità dei loro dispositivi in modo sincrono.
 
 ## <a name="nac-and-conditional-access"></a>NAC e accesso condizionale
 
-NAC interagisce con l'accesso condizionale per le decisioni relative al controllo di accesso. Per altri dettagli, vedere [Modi comuni per usare l'accesso condizionale con Intune](conditional-access-intune-common-ways-use.md).
+NAC interagisce con l'accesso condizionale per le decisioni relative al controllo di accesso. Per altre informazioni, vedere [Modi comuni per usare l'accesso condizionale con Intune](conditional-access-intune-common-ways-use.md).
 
 ## <a name="how-the-nac-integration-works"></a>Funzionamento dell'integrazione NAC
 
-Di seguito viene fornita una panoramica del funzionamento dell'integrazione di NAC con Intune. I primi tre passaggi, da 1 a 3, illustrano il processo di onboarding. Dopo aver integrato la soluzione NAC con Intune, seguire i passaggi da 4 a 9 che descrivono l'intera operazione.
+L'elenco seguente è una panoramica del funzionamento dell'integrazione di NAC con Intune. I primi tre passaggi, da 1 a 3, illustrano il processo di onboarding. Dopo aver integrato la soluzione NAC con Intune, seguire i passaggi da 4 a 9 che descrivono l'intera operazione.
 
 ![Funzionamento di NAC con Intune](./media/ca-intune-common-ways-2.png)
 
@@ -64,3 +63,4 @@ Di seguito viene fornita una panoramica del funzionamento dell'integrazione di N
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html) (Integrare ISE Cisco con Intune)
 - [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) (Integrare Citrix NetScaler con Intune)
 - [Integrate HP Aruba Clear Pass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757) (Integrare HP Aruba Clear Pass con Intune)
+- [Integrare Squadra security Removable Media Manager (secRMM) con Intune](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

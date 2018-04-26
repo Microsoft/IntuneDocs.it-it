@@ -1,31 +1,31 @@
 ---
-title: Come aggiungere app di Windows Store a Microsoft Intune
-titleSuffix: 
-description: Informazioni sull'aggiunta di app Windows Store a Microsoft Intune.
-keywords: 
+title: Come aggiungere app di Microsoft Store a Microsoft Intune
+titleSuffix: ''
+description: Informazioni sull'aggiunta di app Microsoft Store (Windows Store) a Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e2280ad72bbd353d80af316cde436e8ffc79d1f
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 511cf2e01a2f5db93f0e0db9dbe2a32326c17723
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Come aggiungere app di Windows Store a Microsoft Intune
+# <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Aggiungere app di Microsoft Store a Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Prima di poter assegnare, monitorare, configurare o proteggere le app è necessario aggiungerle a Intune. I passaggi seguenti consentono di aggiungere un'app Windows Store a Microsoft Intune.
+Prima di poter assegnare, monitorare, configurare o proteggere le app è necessario aggiungerle a Intune. I passaggi seguenti consentono di aggiungere un'app di Microsoft Store a Microsoft Intune.
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
@@ -51,5 +51,4 @@ Prima di poter assegnare, monitorare, configurare o proteggere le app è necessa
 L'app creata verrà visualizzata nell'elenco di app da cui è possibile assegnarla ai gruppi selezionati. 
 
 ## <a name="next-steps"></a>Passaggi successivi
-
 - [Come assegnare app ai gruppi](apps-deploy.md)
