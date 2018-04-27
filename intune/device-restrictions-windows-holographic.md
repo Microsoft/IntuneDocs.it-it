@@ -1,27 +1,26 @@
 ---
-title: Impostazioni relative alle restrizioni dei dispositivi di Microsoft Intune per Windows Holographic for Business
-titleSuffix: ''
-description: Informazioni sulle opzioni di Intune per il controllo delle impostazioni e delle funzionalità nei dispositivi che eseguono Windows Holographic for Business.
+title: Restrizioni dei dispositivi per Windows Holographic for Business in Microsoft Intune - Azure | Microsoft Docs
+description: Conoscere e configurare impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune per Windows Holographic for Business, tra cui annullamento della registrazione, georilevazione, password, installazione di app dall'App store, cookie e popup in Edge, Windows Defender, ricerca, cloud e archiviazione, connettività bluetooth, ora di sistema e dati di utilizzo in Azure.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 4/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 694b81434a95f48abc98f5012460523420df58cc
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5b0784aeb1dc1022b4be824c2f858f9525d03918
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="microsoft-intune-windows-holographic-for-business-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi per Windows Holographic for Business
+# <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Impostazioni relative alle restrizioni dei dispositivi per Windows Holographic for Business in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Le impostazioni seguenti relative alle restrizioni dei dispositivi sono supportate nei dispositivi che eseguono Windows Holographic for Business, ad esempio Microsoft Hololens.
 
@@ -31,13 +30,9 @@ Le impostazioni seguenti relative alle restrizioni dei dispositivi sono supporta
 - **Cortana** - Abilita o disabilita l'assistente vocale Cortana.
 - **Georilevazione** - Specifica se il dispositivo può usare le informazioni dei servizi di posizione.
 
-
-
 ## <a name="password"></a>Password
 -   **Password**: richiede all'utente finale di immettere una password per accedere al dispositivo.
     -   **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività**: specifica che l'utente deve inserire una password per sbloccare il dispositivo.
-
-
 
 ## <a name="app-store"></a>App Store
 
@@ -47,7 +42,6 @@ Le impostazioni seguenti relative alle restrizioni dei dispositivi sono supporta
 
 ## <a name="edge-browser"></a>Browser Microsoft Edge
 
--   **Browser Microsoft Edge**: consente l'uso del browser Web Microsoft Edge sul dispositivo.
 -   **Cookie** - Consente al browser di salvare i cookie di Internet per il dispositivo.
 -   **Pop-up**: blocca le finestra popup del browser (si applica solo a Windows 10 Desktop).
 -   **Suggerimenti per la ricerca** - Consente al motore di ricerca di suggerire siti mentre si digita la frase di ricerca.
@@ -61,7 +55,6 @@ Le impostazioni seguenti relative alle restrizioni dei dispositivi sono supporta
 ## <a name="search"></a>Cerca
 - **Cerca la posizione**: specifica se la ricerca può usare le informazioni sulla posizione. Informazioni su
 
-
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
 -   **Account Microsoft** - Consente all'utente di associare un account Microsoft con il dispositivo.
 
@@ -74,6 +67,24 @@ Le impostazioni seguenti relative alle restrizioni dei dispositivi sono supporta
 ## <a name="control-panel-and-settings"></a>Pannello di controllo e impostazioni
 
 - **Modifica dell'ora di sistema**: impedisce all'utente finale di modificare la data e l'ora del dispositivo.
+
+## <a name="kiosk-preview"></a>Modalità tutto schermo (anteprima)
+
+In genere un'app specifica viene eseguita in un dispositivo in modalità tutto schermo. Agli utenti viene impedito l'accesso a qualsiasi funzionalità o funzione del dispositivo all'esterno dell'app in modalità tutto schermo.
+
+- **Modalità tutto schermo**: identifica il tipo di modalità tutto schermo supportata dai criteri. Le opzioni includono:
+
+  - **Non configurata** (impostazione predefinita): il criterio non abilita la modalità tutto schermo. 
+  - **App singola per chiosco multimediale**: il profilo abilita il dispositivo perché esegua solo un'app. Quando l'utente accede, viene avviata un'app specifica. Questa modalità impedisce anche all'utente di aprire nuove app o modificare l'app in esecuzione.
+
+#### <a name="single-app-kiosks"></a>App singole per chioschi multimediali
+Immettere le impostazioni seguenti:
+
+- **Account utente**: immettere l'account utente locale (per il dispositivo) o l'account di accesso di Azure AD associato all'app in modalità tutto schermo. Per gli account aggiunti ai domini di Azure AD, immettere l'account nel formato `domain\username@tenant.org`. 
+
+    Per i chioschi multimediali in ambienti pubblici con accesso automatico abilitato, è necessario usare un tipo di utente con privilegi minimi, ad esempio l'account utente standard locale. Per configurare un account Azure Active Directory (AD) per la modalità tutto schermo, usare il formato `AzureAD\user@contoso.com`.
+
+- **ID modello utente applicazione (AUMID, Application User Model ID) dell'app**: immettere l'ID modello utente applicazione dell'app in modalità tutto schermo. Per altre informazioni, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata).
 
 ## <a name="reporting-and-telemetry"></a>Creazione di report e telemetria
 

@@ -1,48 +1,48 @@
 ---
 title: Inviare i log di Android agli sviluppatori Microsoft | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 04/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 06767d1c-a012-4288-9921-f9dd2eb4eb8d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b03ac31cc51d69e1872954fa4afbce55add8479f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8eaaf103802ad2cf51d18d9fab3947622e9c96c3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Inviare i log agli sviluppatori dell'app Portale aziendale per i dispositivi Android
 
-Talvolta l'app Portale aziendale può chiudersi inaspettatamente. Gli sviluppatori dell'app ricevono volentieri segnalazioni su questo problema poiché le informazioni fornite dagli utenti possono essere utili per rendere più efficiente l'app ed evitare che si verifichino problemi di questo tipo in futuro. Queste informazioni vengono memorizzate nel dispositivo in uno specifico documento definito _log di diagnostica_.
+Talvolta l'app Portale aziendale può chiudersi inaspettatamente. Per gli sviluppatori di app è importante sapere quando si verifica un comportamento imprevisto, in modo da poter individuare la causa radice e impedire che l'errore si ripeta in futuro. I dettagli relativi a questo tipo di errore vengono memorizzati nel dispositivo in uno documento specifico definito _log di diagnostica_. Per eseguire la diagnosi del problema, il team del Portale aziendale ha bisogno dei log specifici del portale.
 
 > [!Note]
-> Per fare in modo che sia più semplice per il personale del supporto tecnico dell'azienda individuare il problema, attivare la _registrazione dettagliata_. La registrazione dettagliata include tutte le informazioni rilevanti nel report. Per informazioni su come attivare la registrazione dettagliata, vedere [qui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Perché il supporto tecnico dell'azienda possa individuare più facilmente la causa del problema, attivare la _registrazione dettagliata_. Nella registrazione dettagliata vengono registrati tutti i dettagli sull'errore. Tali dettagli vengono inclusi nel report. Per informazioni su come attivare la registrazione dettagliata, vedere [qui](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md). 
 
-Se si riscontra questo problema, è necessario inviare i log del portale aziendale al team del portale aziendale affinché possa riprodurlo e diagnosticare la causa principale. Per inviare i log a Microsoft:
+Per inviare i log a Microsoft:
 
 1.  Aprire l'app Portale aziendale.
 
-2.  Toccare **Menu** >  **Guida e commenti**.
+2.  Toccare **Menu** > **?** > **Invia messaggio di posta elettronica al supporto**.
 
     > [!NOTE]
     > **Menu** può essere un pulsante software o hardware, a seconda del dispositivo Android in uso.
 
-3.  In **Commenti e suggerimenti** toccare **Invia suggerimenti**.
+3.  Toccare **Carica solo log**.
 
-4.  Nel messaggio di posta elettronica descrivere brevemente il problema che si verifica e toccare **Invia**.
+4.  Quando il caricamento è completo, l'utente riceverà un ID evento imprevisto. Salvare l'ID per riferimento.
 
-È anche possibile inviare direttamente un messaggio di posta elettronica al team del portale aziendale per Android in <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having."> wintunedroidfbk@microsoft.com </a>. 
+Per contattare direttamente il team del Portale aziendale per Android, è possibile inviare un messaggio di posta elettronica a <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

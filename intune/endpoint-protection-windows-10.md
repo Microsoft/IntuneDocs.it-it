@@ -1,29 +1,28 @@
 ---
-title: Impostazioni di Microsoft Intune Endpoint Protection per Windows 10
-titlesuffix: 
-description: "Informazioni sulle opzioni di Intune che è possibile usare per controllare le impostazioni di Endpoint Protection, ad esempio BitLocker nei dispositivi Windows 10."
-keywords: 
+title: Aggiungere Endpoint Protection su Windows 10 in Microsoft Intune - Azure | Documenti Microsoft
+description: Nei dispositivi Windows 10 usare o configurare le impostazioni di Endpoint Protection per abilitare le funzionalità di Windows Defender, che includono Application Guard, Firewall, SmartScreen, crittografia e Bitlocker, Exploit Guard, Application Control, Centro sicurezza e protezione dei dispositivi locali in Microsoft Intune.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: afe1e737bb5214af76395db91b8aea72cb5d42a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Creare impostazioni di Endpoint Protection per Windows 10 e versioni successive in Microsoft Intune
+# <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Impostazioni di Endpoint Protection per Windows 10 e versioni successive in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Il profilo di Endpoint Protection consente di controllare le funzionalità di sicurezza nei dispositivi Windows 10, ad esempio BitLocker e Windows Defender.
 
@@ -31,21 +30,6 @@ Usare le informazioni di questo articolo per apprendere come creare profili di E
 
 > [!Note]
 > Queste impostazioni non sono supportate nelle edizioni di Windows 10 Home e Professional.
-
-## <a name="create-an-endpoint-protection-profile"></a>Creare un profilo di Endpoint Protection
-
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel pannello **Intune** scegliere **Configurazione del dispositivo**.
-2. Nel pannello **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
-3. Nel pannello dei profili scegliere **Crea profilo**.
-4. Nel pannello **Crea profilo** immettere i valori di **Nome** e **Descrizione** per il profilo delle funzionalità del dispositivo.
-5. Dall'elenco a discesa **Piattaforma** selezionare **Windows 10 e versioni successive**.
-6. Dall'elenco a discesa **Tipo di profilo** scegliere **Endpoint Protection**.
-7. Configurare le impostazioni desiderate. I dettagli in questo articolo consentono di comprendere la funzione di ogni impostazione. Al termine, scegliere **OK**.
-8. Tornare al pannello **Crea profilo** e scegliere **Crea**.
-
-Il profilo viene creato e visualizzato nel pannello dell'elenco dei profili.
 
 ## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard
 
@@ -56,9 +40,9 @@ Application Guard è disponibile solo per i dispositivi Windows 10 a 64 bit. Qua
 - **Contenuto esterno nei siti aziendali**: consente di bloccare il caricamento del contenuto dei siti Web non approvati.
 - **Stampa dal browser virtuale**: consente alle stampanti PDF, XPS, locali e/o di rete di stampare contenuto dal browser virtuale.
 - **Raccogli registri**: consente di raccogliere i registri degli eventi che si verificano in una sessione del browser di Application Guard.
-- **Conserva i dati del browser generati dall'utente**: consente di salvare i dati utente, ad esempio password, Preferiti e cookie, creati durante una sessione del browser virtuale di Application Guard.
-- **Accelerazione grafica**: consente di caricare più rapidamente i siti Web con molti elementi grafici quando si lavora all'interno della sessione del browser virtuale di Application Guard e si consente l'accesso a un'unità di elaborazione grafica virtuale.
-
+- **Conserva i dati del browser generati dall'utente**: salva i dati utente, ad esempio password, Preferiti e cookie, creati durante una sessione del browser virtuale di Application Guard.
+- **Accelerazione grafica**: consente di caricare più rapidamente i siti Web con molti elementi grafici quando si lavora all'interno della sessione del browser virtuale di Application Guard. I siti si caricano più rapidamente quando si abilita l'accesso a un'unità di elaborazione grafica virtuale.
+- **Scarica i file nel file system dell'host**: consente agli utenti di scaricare i file dal browser virtualizzato al sistema operativo host.
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall
 
@@ -81,7 +65,7 @@ Queste impostazioni sono applicabili a tipi di rete specifici, tra cui **Rete di
 #### <a name="general-settings"></a>Impostazioni generali
 
 - **Windows Defender Firewall**: abilitare questa impostazione per bloccare il traffico di rete.
-- **Modalità mascheramento**: consente di bloccare il funzionamento del firewall in modalità mascheramento. Questo tipo di blocco consente di bloccare anche **Esenzione di pacchetti protetti da IPsec**.
+- **Modalità mascheramento**: consente di bloccare il funzionamento del firewall in modalità mascheramento. Il blocco della modalità mascheramento consente di bloccare anche **Esenzione di pacchetti protetti da IPsec**.
 - **Schermata**: l'abilitazione di questa impostazione e di quella relativa al firewall determina il blocco di tutto il traffico in ingresso.
 - **Risposte unicast a broadcast multicast**: consente di bloccare le risposte unicast ai broadcast multicast. In genere, si preferisce non ricevere risposte unicast ai messaggi multicast o broadcast poiché queste risposte possono indicare un attacco Denial of Service o un utente malintenzionato che tenta di rilevare la presenza di un computer attivo noto.
 - **Notifiche in ingresso**: consente di impedire la visualizzazione delle notifiche agli utenti quando un'applicazione non è autorizzata all'ascolto su una porta.
@@ -115,53 +99,52 @@ Le impostazioni di base sono impostazioni BitLocker universali per tutti i tipi 
 
 - **Avviso per la crittografia dischi di altro tipo**: disabilita la richiesta di avviso per la crittografia dischi di altro tipo nei computer degli utenti finali.
 - **Configura i metodi di crittografia**: abilitare questa impostazione per configurare gli algoritmi di crittografia per il sistema operativo, i dati e le unità rimovibili.
-    - **Crittografia per le unità del sistema operativo**: scegliere il metodo di crittografia per le unità del sistema operativo. È consigliabile usare l'algoritmo XTS-AES.
-    - **Crittografia per unità dati fisse**: scegliere il metodo di crittografia per le unità dati fisse (predefinite). È consigliabile usare l'algoritmo XTS-AES.
-    - **Crittografia per unità dati rimovibili**: scegliere il metodo di crittografia per le unità dati rimovibili (predefinite). Se l'unità rimovibile viene usata con dispositivi che non eseguono Windows 10, è consigliabile usare l'algoritmo AES-CBC.
+  - **Crittografia per le unità del sistema operativo**: scegliere il metodo di crittografia per le unità del sistema operativo. È consigliabile usare l'algoritmo XTS-AES.
+  - **Crittografia per unità dati fisse**: scegliere il metodo di crittografia per le unità dati fisse (predefinite). È consigliabile usare l'algoritmo XTS-AES.
+  - **Crittografia per unità dati rimovibili**: scegliere il metodo di crittografia per le unità dati rimovibili (predefinite). Se l'unità rimovibile viene usata con dispositivi che non eseguono Windows 10, è consigliabile usare l'algoritmo AES-CBC.
 
 ### <a name="bitlocker-os-drive-settings"></a>Impostazioni delle unità del sistema operativo di BitLocker
 
 Queste impostazioni si applicano in modo specifico alle unità dati del sistema operativo.
 
 - **Autenticazione aggiuntiva all'avvio**: consente di configurare i requisiti di autenticazione per l'avvio dei computer, incluso l'uso di Trusted Platform Module (TPM).
-    - **BitLocker con chip TPM non compatibile**
-    - **Avvio TPM compatibile**: consente di indicare se il chip TPM è consentito, non consentito o obbligatorio.
-    - **PIN di avvio TPM compatibile**: consente di indicare se l'uso di un PIN di avvio con il chip TPM è consentito, non consentito o obbligatorio.
-    - **Chiave di avvio TPM compatibile**: consente di indicare se l'uso di una chiave di avvio con il chip TPM è consentito, non consentito o obbligatorio.
-    - **Chiave di avvio e PIN TPM compatibile**: consente di indicare se l'uso di una chiave e di un PIN di avvio con il chip TPM è consentito, non consentito o obbligatorio.
+  - **BitLocker con chip TPM non compatibile**
+  - **Avvio TPM compatibile**: consente di indicare se il chip TPM è consentito, non consentito o obbligatorio.
+  - **PIN di avvio TPM compatibile**: consente di indicare se l'uso di un PIN di avvio con il chip TPM è consentito, non consentito o obbligatorio.
+  - **Chiave di avvio TPM compatibile**: consente di indicare se l'uso di una chiave di avvio con il chip TPM è consentito, non consentito o obbligatorio.
+  - **Chiave di avvio e PIN TPM compatibile**: consente di indicare se l'uso di una chiave e di un PIN di avvio con il chip TPM è consentito, non consentito o obbligatorio.
 - **Lunghezza minima del PIN**: abilitare questa impostazione per configurare la lunghezza minima del PIN di avvio del chip TPM.
-    - **Numero minimo di caratteri**: immettere il numero di caratteri obbligatorio per il PIN di avvio, **4**-**20**.
+  - **Numero minimo di caratteri**: immettere il numero di caratteri obbligatorio per il PIN di avvio, **4**-**20**.
 - **Ripristino delle unità del sistema operativo**: abilitare questa impostazione per controllare la modalità di ripristino delle unità del sistema operativo protette da BitLocker se le informazioni necessarie all'avvio non sono disponibili.
-    - **Agente di recupero dati basato su certificati**: abilitare questa impostazione se si vuole che sia possibile usare gli agenti di recupero dati con unità del sistema operativo protette da BitLocker.
-    - **Creazione della password di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una password di ripristino di 48 cifre.
-    - **Creazione della chiave di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una chiave di ripristino a 256 bit.
-    - **Opzioni di ripristino nell'installazione guidata di BitLocker**: abilitare questa impostazione per impedire agli utenti di visualizzare o modificare le opzioni di ripristino se BitLocker è attivato.
-    - **Salva le informazioni di ripristino di BitLocker in AD DS**: consente l'archiviazione delle informazioni di ripristino di BitLocker in Active Directory.
-    - **Informazioni di ripristino di BitLocker archiviate in AD DS**: consente di configurare quali parti delle informazioni di ripristino di BitLocker devono essere archiviate in Active Directory. È possibile scegliere tra:
-        - **Backup delle password di ripristino e dei pacchetti di chiavi**
-        - **Backup solo delle password di ripristino**
-    - **Archivia le informazioni di ripristino in AD DS prima di abilitare BitLocker**: abilitare questa impostazione per consentire agli utenti di attivare BitLocker solo se il dispositivo è stato aggiunto al dominio e le informazioni di ripristino di BitLocker sono state archiviate in Active Directory.
+  - **Agente di recupero dati basato su certificati**: abilitare questa impostazione se si vuole che sia possibile usare gli agenti di recupero dati con unità del sistema operativo protette da BitLocker.
+  - **Creazione della password di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una password di ripristino di 48 cifre.
+  - **Creazione della chiave di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una chiave di ripristino a 256 bit.
+  - **Opzioni di ripristino nell'installazione guidata di BitLocker**: abilitare questa impostazione per impedire agli utenti di visualizzare o modificare le opzioni di ripristino se BitLocker è attivato.
+  - **Salva le informazioni di ripristino di BitLocker in AD DS**: consente l'archiviazione delle informazioni di ripristino di BitLocker in Active Directory.
+  - **Informazioni di ripristino di BitLocker archiviate in AD DS**: consente di configurare quali parti delle informazioni di ripristino di BitLocker devono essere archiviate in Active Directory. Scegliere tra:
+    - **Backup delle password di ripristino e dei pacchetti di chiavi**
+    - **Backup solo delle password di ripristino**
+  - **Archivia le informazioni di ripristino in AD DS prima di abilitare BitLocker**: abilitare questa impostazione per consentire agli utenti di attivare BitLocker solo se il dispositivo è stato aggiunto al dominio e le informazioni di ripristino di BitLocker sono state archiviate in Active Directory.
 - **URL e messaggio di ripristino prima dell'avvio**: abilitare questa impostazione per configurare il messaggio e l'URL visualizzati nella schermata di recupero della chiave prima dell'avvio.
-    - **Messaggio di ripristino prima dell'avvio**: consente di configurare la modalità di visualizzazione del messaggio di ripristino. È possibile scegliere tra:
-        - **Usa URL e messaggio di ripristino predefiniti**
-        - **Usa un messaggio di ripristino e un URL vuoti**
-        - **Usa messaggio di ripristino personalizzato**
-        - **Usa URL di ripristino personalizzato**
-
+  - **Messaggio di ripristino prima dell'avvio**: consente di configurare la modalità di visualizzazione del messaggio di ripristino. Scegliere tra:
+    - **Usa URL e messaggio di ripristino predefiniti**
+    - **Usa un messaggio di ripristino e un URL vuoti**
+    - **Usa messaggio di ripristino personalizzato**
+    - **Usa URL di ripristino personalizzato**
 
 ### <a name="bitlocker-fixed-data-drive-settings"></a>Impostazioni delle unità dati fisse BitLocker
 
 - **Accesso in scrittura alle unità dati fisse non protette da BitLocker**: se questa impostazione è abilitata, è necessario abilitare la protezione BitLocker per tutte le unità dati fisse o predefinite perché sia possibile scrivere all'interno di esse.
 - **Ripristino delle unità fisse**: abilitare questa impostazione per controllare la modalità di ripristino delle unità fisse protette da BitLocker se le informazioni necessarie all'avvio non sono disponibili.
-    - **Agente di recupero dati**: abilitare questa impostazione se si vogliono usare gli agenti di recupero dati con unità fisse protette da BitLocker.
-    - **Creazione della password di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una password di ripristino di 48 cifre.  
-    - **Creazione della chiave di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una chiave di ripristino a 256 bit.
-    - **Opzioni di ripristino nell'installazione guidata di BitLocker**: abilitare questa impostazione per impedire agli utenti di visualizzare o modificare le opzioni di ripristino se BitLocker è attivato.
-    - **Salva le informazioni di ripristino di BitLocker in AD DS**: consente l'archiviazione delle informazioni di ripristino di BitLocker in Active Directory.
-    - **Informazioni di ripristino di BitLocker in AD DS**: consente di configurare quali parti delle informazioni di ripristino di BitLocker devono essere archiviate in Active Directory. È possibile scegliere tra:
-        - **Backup delle password di ripristino e dei pacchetti di chiavi**
-        - **Backup solo delle password di ripristino**
-    - **Archivia le informazioni di ripristino in AD DS prima di abilitare BitLocker**: abilitare questa impostazione per consentire agli utenti di attivare BitLocker solo se il dispositivo è stato aggiunto al dominio e le informazioni di ripristino di BitLocker sono state archiviate in Active Directory.
+  - **Agente di recupero dati**: abilitare questa impostazione se si vogliono usare gli agenti di recupero dati con unità fisse protette da BitLocker.
+  - **Creazione della password di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una password di ripristino di 48 cifre.  
+  - **Creazione della chiave di ripristino da parte dell'utente**: configurare se per gli utenti è consentito, obbligatorio o non consentito generare una chiave di ripristino a 256 bit.
+  - **Opzioni di ripristino nell'installazione guidata di BitLocker**: abilitare questa impostazione per impedire agli utenti di visualizzare o modificare le opzioni di ripristino se BitLocker è attivato.
+  - **Salva le informazioni di ripristino di BitLocker in AD DS**: consente l'archiviazione delle informazioni di ripristino di BitLocker in Active Directory.
+  - **Informazioni di ripristino di BitLocker in AD DS**: consente di configurare quali parti delle informazioni di ripristino di BitLocker devono essere archiviate in Active Directory. Scegliere tra:
+    - **Backup delle password di ripristino e dei pacchetti di chiavi**
+    - **Backup solo delle password di ripristino**
+  - **Archivia le informazioni di ripristino in AD DS prima di abilitare BitLocker**: abilitare questa impostazione per consentire agli utenti di attivare BitLocker solo se il dispositivo è stato aggiunto al dominio e le informazioni di ripristino di BitLocker sono state archiviate in Active Directory.
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>Impostazioni delle unità dati rimovibili BitLocker
 
@@ -173,6 +156,8 @@ Queste impostazioni si applicano in modo specifico alle unità dati del sistema 
 Usare [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) per gestire e ridurre la superficie di attacco delle app usate dai dipendenti.
 
 ### <a name="attack-surface-reduction"></a>Riduzione della superficie di attacco
+
+- **Contrassegna il furto di credenziali dal sottosistema dell'autorità di protezione locale Windows**
 
 [Evitare azioni e app](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) che generalmente vengono usate dal malware per infettare i computer.
 
@@ -187,16 +172,25 @@ Impedire alle app di Office di eseguire le azioni seguenti:
 
 #### <a name="rules-to-prevent-script-threats"></a>Regole per impedire le minacce relative agli script
 
-Bloccare questi elementi per contrastare le minacce basate su script:
+Bloccare i seguenti elementi per contrastare le minacce basate su script:
 
 - **Codice js/vbs/ps/macro offuscato**
 - **Esecuzione in js/vbs di payload scaricato da Internet (nessuna eccezione)**
+- **Creazione di processi da comandi PSExec e WMI**
+- **Processi non attendibili e non firmati eseguiti da USB**
+- **File eseguibili che non rispettano criteri di prevalenza, di validità o dell'elenco di elementi attendibili**
 
 #### <a name="rules-to-prevent-email-threats"></a>Regole per impedire le minacce tramite posta elettronica
 
-Bloccare questa azione per contrastare le minacce tramite posta elettronica:
+Bloccare gli elementi seguenti per contrastare le minacce tramite posta elettronica:
 
 - **Esecuzione del contenuto eseguibile (file con estensione exe, dll, ps, js, vbs e così via) non elaborato dalla posta elettronica (webmail/mail client) (nessuna eccezione)**
+
+#### <a name="rules-to-protect-against-ransomware"></a>Regole per proteggersi dal ransomware
+- **Protezione ransomware avanzata**
+
+> [!TIP]
+> [Ridurre le superfici di attacco con Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) offre più dettagli su queste regole.
 
 #### <a name="attack-surface-reduction-exceptions"></a>Eccezioni della riduzione della superficie di attacco
 
@@ -247,7 +241,7 @@ L'app Windows Defender Security Center funziona come un'app o un processo separa
 
 #### <a name="it-contact-information"></a>Informazioni di contatto del reparto IT
 
-Specificare le informazioni di contatto del reparto IT da visualizzare nell'app Windows Defender Security Center e nelle relative notifiche. È possibile scegliere **Visualizza nell'app e nelle notifiche**, **Visualizza solo nell'app**, **Visualizza solo nelle notifiche** o **Non visualizzare**. È necessario definire il **nome dell'organizzazione IT** e almeno una delle opzioni di contatto seguenti:
+Specificare le informazioni di contatto del reparto IT da visualizzare nell'app Windows Defender Security Center e nelle relative notifiche. È possibile scegliere **Visualizza nell'app e nelle notifiche**, **Visualizza solo nell'app**, **Visualizza solo nelle notifiche** o **Non visualizzare**. È necessario definire il **Nome dell'organizzazione IT** e almeno una delle opzioni di contatto seguenti:
 
 - **Numero di telefono del reparto IT o ID Skype**
 - **Indirizzo di posta elettronica del reparto IT**
@@ -255,4 +249,4 @@ Specificare le informazioni di contatto del reparto IT da visualizzare nell'app 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
+Per assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).

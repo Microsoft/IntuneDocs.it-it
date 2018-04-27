@@ -1,56 +1,74 @@
 ---
-title: Annullare la registrazione del dispositivo iOS da Intune | Microsoft Docs
-description: Descrive come annullare la registrazione di un dispositivo iOS da Intune
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Rimuovere il dispositivo iOS da Intune | Microsoft Docs
+description: Descrive come rimuovere un dispositivo iOS da Intune
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 95258e2b2ef912b0d9c9549306559c6f91099642
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2df474e8b0a5af2ac294715135804ef0713a3015
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
-# <a name="unenroll-your-ios-device-from-intune"></a>Annullare la registrazione del dispositivo iOS da Intune
+# <a name="remove-your-ios-device-from-intune"></a>Rimuovere il dispositivo iOS da Intune
 
-Quando si annulla la registrazione del dispositivo iOS da Intune, il dispositivo non potrà più accedere alle risorse aziendali né verrà più gestito da Intune.
+Quando il dispositivo iOS viene rimosso da Intune, il dispositivo non potrà più accedere alle risorse aziendali né verrà più gestito da Intune.
 
-Per annullare la registrazione del dispositivo da Intune, seguire questa procedura o guardare il video:
 
-> [!VIDEO https://www.youtube.com/embed/6UFtBrBWUUI]
+## <a name="removing-the-device-from-my-devices"></a>Rimozione del dispositivo da Dispositivi personali
 
-1.  Nell'app Portale aziendale, in **Dispositivi personali**, selezionare il dispositivo di cui annullare la registrazione.
+Per rimuovere il dispositivo da Intune, seguire questa procedura o guardare il video:
 
-2.  Toccare **Rimuovi** > **Rimuovi**.
 
-Quando si annulla la registrazione del dispositivo da Intune, si verificano gli eventi seguenti:
+1.  Nell'app Portale aziendale toccare **Dispositivi** e selezionare il dispositivo di cui annullare la registrazione. Se toccando **Dispostivi** viene visualizzato un solo dispositivo, si accede direttamente alla schermata dei dettagli di quel dispositivo.
 
--   Il dispositivo non verrà più visualizzato nel portale aziendale.
+2.  Toccare i puntini di sospensione accanto a **RINOMINA** > **Rimuovi dispositivo** > **Rimuovi**.  
 
--   Non sarà più possibile installare app dal portale aziendale.
+    |![Screenshot della schermata Dispositivi nell'app Portale aziendale, con le opzioni possibili dopo che è stato selezionato Rimuovi. Vengono illustrati i pulsanti "Rimuovi dispositivo", "Ripristino delle impostazioni predefinite" e "Annulla".](/intune-user-help/media/cp_ios_unenroll_after_1804_001.png)|
 
--   Le impostazioni modificate nel dispositivo quando è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza, non sono più valide.
+    |![Screenshot della schermata Dispositivi nell'app Portale aziendale, con le opzioni possibili dopo che è stato selezionato il pulsante Rimuovi dispositivo. Vengono illustrati il pulsante "Rimuovi" evidenziato in rosso e i pulsanti "Altre informazioni" e "Annulla" evidenziati in blu.](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
--   Dal dispositivo potrebbe non essere più possibile accedere ad alcune risorse della società, quali condivisioni di file o siti Web interni.
 
--   Non è più possibile usare app aziendali e dati aziendali sul dispositivo.
+  Quando si annulla la registrazione del dispositivo da Intune, si verificano gli eventi seguenti:
 
--   Potrebbe non essere più possibile connettersi alla rete aziendale usando il Wi-Fi o una rete privata virtuale (VPN).
+  -   Il dispositivo non verrà più visualizzato nel portale aziendale.
 
--   I profili di posta elettronica aziendale vengono rimossi dal dispositivo.
+  -   Non sarà più possibile installare app dal portale aziendale.
 
--   I dispositivi configurati solo per la posta elettronica non verranno più visualizzati nel sito Web o nell'app Portale aziendale.
+  -   Le impostazioni modificate nel dispositivo quando è stato aggiunto, ad esempio la disattivazione della fotocamera o la richiesta di una password di una certa lunghezza, non sono più valide.
+
+  -   Dal dispositivo potrebbe non essere più possibile accedere ad alcune risorse della società, quali condivisioni di file o siti Web interni.
+
+  -   Non è più possibile usare app aziendali e dati aziendali sul dispositivo.
+
+  -   Potrebbe non essere più possibile connettersi alla rete aziendale usando il Wi-Fi o una rete privata virtuale (VPN).
+
+  -   I profili di posta elettronica aziendale vengono rimossi dal dispositivo.
+
+  -   I dispositivi configurati solo per la posta elettronica non verranno più visualizzati nel sito Web o nell'app Portale aziendale.
+
+## <a name="removing-data-collected-by-the-company-portal-app"></a>Rimozione dei dati raccolti dall'app Portale aziendale
+
+Il Portale aziendale archivia i dati locali in tre posizioni del dispositivo.
+
+-   **Log informazioni**: i dati sulle attività dell'app standard raccolti da Microsoft, ad esempio per quanto tempo l'app restava aperta o se si arresta in modo anomalo, vengono automaticamente cancellati quando si rimuove il dispositivo dal Portale aziendale.
+
+-   **Analisi di Apple**: dati sulle attività di arresto anomalo dell'app standard raccolti da Apple. Queste informazioni possono essere rimosse soltanto ripristinando il dispositivo sulle impostazioni predefinite. Questa operazione cancellerà tutte le informazioni personali sul dispositivo. A tale scopo, aprire **Impostazioni** > **Generale** > **Ripristina** > **Erase All Content and Settings** (Cancella tutti i contenuti e tutte le impostazioni).
+
+-   **Keychain**: il dispositivo archivia le password e altre informazioni usate per accedere al keychain. Le app Microsoft condividono le informazioni di accesso con qualsiasi app sviluppata da Microsoft disponibile nel dispositivo, ad esempio Microsoft Outlook e Microsoft Authenticator. Come per Analisi di Apple, queste informazioni possono essere rimosse soltanto ripristinando il dispositivo sulle impostazioni predefinite. Questa operazione cancellerà tutte le informazioni personali sul dispositivo. A tale scopo, aprire **Impostazioni** > **Generale** > **Ripristina** > **Erase All Content and Settings** (Cancella tutti i contenuti e tutte le impostazioni).
+
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

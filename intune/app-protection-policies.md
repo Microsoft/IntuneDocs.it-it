@@ -2,29 +2,28 @@
 title: Creare e distribuire i criteri di protezione delle app
 titleSuffix: Microsoft Intune
 description: Informazioni su come creare e assegnare criteri di protezione delle app di Microsoft Intune.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8ffe409e376ec2d15c537fb6ac258e5b3b71cdf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Informazioni su come creare e assegnare criteri di protezione delle app di Microsoft Intune agli utenti. In questo argomento viene anche descritto come apportare modifiche a criteri esistenti.
 
@@ -37,28 +36,28 @@ I criteri di protezione delle app possono essere applicati in app eseguite su di
 Per un elenco delle app supportate da MAM, vedere [Elenco di app MAM](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Creare un criterio di protezione delle app
-1.  Nel carico di lavoro **App per dispositivi mobili** selezionare **Criteri di protezione delle app** dalla sezione **Gestisci**. Questa selezione determina la visualizzazione dei dettagli dei **Criteri di protezione delle app**, in cui è possibile creare nuovi criteri e modificare i criteri esistenti.
+1. Nel carico di lavoro **App per dispositivi mobili** selezionare **Criteri di protezione delle app** dalla sezione **Gestisci**. Questa selezione determina la visualizzazione dei dettagli dei **Criteri di protezione delle app**, in cui è possibile creare nuovi criteri e modificare i criteri esistenti.
 2. Scegliere **Aggiungi criteri**.
 
-  ![Schermata del pannello "Aggiungi criteri"](./media/app-protection-add-policy.png)
+   ![Schermata del pannello "Aggiungi criteri"](./media/app-protection-add-policy.png)
 
-3.  Digitare un nome per il criterio, aggiungere una breve descrizione e selezionare il tipo di piattaforma per i criteri. È possibile creare più criteri per ogni piattaforma, se necessario.
+3. Digitare un nome per il criterio, aggiungere una breve descrizione e selezionare il tipo di piattaforma per i criteri. È possibile creare più criteri per ogni piattaforma, se necessario.
 
-4.  Scegliere **App** per aprire il pannello **App**, che contiene l'elenco delle app disponibili. Selezionare una o più app dall'elenco che si vuole associare al criterio che si sta creando.
+4. Scegliere **App** per aprire il pannello **App**, che contiene l'elenco delle app disponibili. Selezionare una o più app dall'elenco che si vuole associare al criterio che si sta creando.
 5. Dopo aver selezionato le app, scegliere **Seleziona** per salvare la selezione.
 
     > [!IMPORTANT]
     > È necessario selezionare almeno un'app per creare un criterio.
 
-6.  Scegliere **Configura le impostazioni obbligatorie** nel pannello **Aggiungi criteri** per aprire le **Impostazioni**.
+6. Scegliere **Configura le impostazioni obbligatorie** nel pannello **Aggiungi criteri** per aprire le **Impostazioni**.
 
-    Esistono due categorie di impostazioni dei criteri: **Rilocazione dati** e **Accesso**.  I criteri di rilocazione dei dati sono applicabili allo spostamento dei dati da e verso le app. I criteri di accesso determinano come l'utente finale accede alle applicazioni in un contesto aziendale.
-    In questa introduzione le impostazioni dei criteri hanno valori predefiniti. Non è necessario apportare modifiche se i valori predefiniti soddisfano i requisiti.
+   Esistono due categorie di impostazioni dei criteri: **Rilocazione dati** e **Accesso**.  I criteri di rilocazione dei dati sono applicabili allo spostamento dei dati da e verso le app. I criteri di accesso determinano come l'utente finale accede alle applicazioni in un contesto aziendale.
+   In questa introduzione le impostazioni dei criteri hanno valori predefiniti. Non è necessario apportare modifiche se i valori predefiniti soddisfano i requisiti.
 
-    > [!TIP]
-    > Queste impostazioni dei criteri vengono applicate solo quando si usano le app nel contesto aziendale. Quando gli utenti finali usano l'app per eseguire un'attività personale, questi criteri non hanno effetto.
+   > [!TIP]
+   > Queste impostazioni dei criteri vengono applicate solo quando si usano le app nel contesto aziendale. Quando gli utenti finali usano l'app per eseguire un'attività personale, questi criteri non hanno effetto.
 
-7.  Scegliere **OK** per salvare la configurazione. Viene di nuovo visualizzato il riquadro **Aggiungi criteri**. Scegliere **Crea** per creare i criteri e salvare le impostazioni.
+7. Scegliere **OK** per salvare la configurazione. Viene di nuovo visualizzato il riquadro **Aggiungi criteri**. Scegliere **Crea** per creare i criteri e salvare le impostazioni.
 8. Scegliere **OK** per salvare la configurazione. A questo punto ci si trova di nuovo nel riquadro **Aggiungi criteri**.
 9. Scegliere **Crea** per creare i criteri e salvare le impostazioni.
 
@@ -119,6 +118,16 @@ Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale deve 
 2.  Scegliere **Impostazioni criteri** per aprire il riquadro **Impostazioni criteri**.
 
 3.  Modificare le impostazioni e quindi scegliere l'icona **Salva** per salvare le modifiche.
+
+## <a name="target-app-protection-policies-based-on-device-management-state"></a>Assegnare i criteri di protezione delle app in base allo stato di gestione del dispositivo
+In molte organizzazioni è consuetudine consentire agli utenti finali di usare sia i dispositivi gestiti Intune Mobile Device Management (MDM), ad esempio i dispositivi di proprietà aziendale, sia i dispositivi non gestiti protetti solo con criteri di protezione delle app di Intune, ad esempio i dispositivi BYO.
+
+Poiché i criteri di protezione delle app di Intune sono mirati all'identità di un utente, in genere le impostazioni di protezione per un utente vengono applicate sia ai dispositivi registrati (dispositivi MDM gestiti) sia ai dispositivi non registrati (non MDM). Pertanto, è possibile assegnare un criterio di protezione delle app di Intune sia a dispositivi Intune registrati sia a dispositivi non registrati iOS e Android. È possibile avere criteri di protezione per i dispositivi non gestiti, in cui vengono applicati severi controlli di prevenzione dalla perdita dei dati, e criteri di protezione dati separati per la gestione dei dispositivi MDM gestiti, in cui i controlli DLP possono essere leggermente più morbidi. 
+
+Per creare questi criteri, passare a **App per dispositivi mobili** > **Criteri di protezione delle app** nella console di Intune e fare clic su **Aggiungi criteri**. È anche possibile modificare un criterio di protezione delle app esistente. Se si desidera che il criterio di protezione delle app venga applicato sia ai dispositivi gestiti che non gestiti, verificare che l'opzione **Includi tutti i tipi di app** sia impostata su **Sì**, il valore predefinito. Se si desidera assegnare i criteri in modo granulare sulla base dello stato di gestione, impostare l'opzione **Includi tutti i tipi di app** su **No**. 
+
+> [!NOTE]
+> Per informazioni sul supporto iOS in merito ai criteri di protezione delle app sulla base dello stato di gestione del dispositivo, vedere [Criteri di protezione MAM mirati sulla base dello stato di gestione](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
 
 ## <a name="policy-settings"></a>Impostazioni criteri
 Per visualizzare l'elenco completo delle impostazioni dei criteri per iOS e Android, selezionare uno dei collegamenti seguenti:

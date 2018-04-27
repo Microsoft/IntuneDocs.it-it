@@ -2,30 +2,30 @@
 title: Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti
 titlesuffix: Microsoft Intune
 description: Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni quando gli utenti eseguono un'app Android for Work.
-keywords: 
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a448c33e8324492c68d509a12d5901f41ed4873a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni quando gli utenti eseguono un'app Android for Work. Questi criteri non vengono assegnati direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi assegnata. Le impostazioni dei criteri vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
+Usare i criteri di configurazione dell'app in Microsoft Intune per specificare le impostazioni per le app Android for Work. Lo sviluppatore dell'app deve esporre le impostazioni di configurazione dell'app gestita Android per specificare le impostazioni di configurazione per l'app. Assegnare i criteri di configurazione dell'app al gruppo di utenti al quale devono essere applicate le impostazioni.  Le impostazioni dei criteri vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
 
 > [!Note]  
 > Non tutte le app supportano la configurazione delle app. Contattare lo sviluppatore dell'app per verificare se l'app è stata compilata in modo da supportare i criteri di configurazione delle app.
@@ -50,16 +50,27 @@ Usare i criteri di configurazione delle app in Microsoft Intune per specificare 
 
 ## <a name="use-the-configuration-designer"></a>Usare la finestra di progettazione della configurazione
 
-È possibile usare la finestra di progettazione della configurazione per le app disponibili in dispositivi registrati o non registrati in Intune. La finestra di progettazione consente di configurare chiavi e valori di configurazione specifici. È anche necessario specificare il tipo di dati per ogni valore.
+È possibile usare la progettazione configurazione per le app Android che supportano la configurazione. La configurazione verrà applicata ai dispositivi registrati in Intune. La progettazione consente di configurare i valori di configurazione specifici per le impostazioni esposte da un'app.
 
+Selezionare **Aggiungi** per selezionare l'elenco delle impostazioni di configurazione che si vuole specificare per l'app.  
 Per ogni chiave e valore nella configurazione, impostare:
 
-  - **Chiave di configurazione**  
-     Chiave che identifica in modo univoco la configurazione specifica delle impostazioni.
   - **Tipo di valore**  
-    Il tipo di dati del valore di configurazione. I tipi includono Integer, Real, String o Boolean.
+    Il tipo di dati del valore di configurazione. Per i tipi di valore di stringa, è possibile scegliere facoltativamente tra un profilo di certificato e una variabile come tipo di valore.
   - **Valore di configurazione**  
-    Il valore per la configurazione. 
+    Il valore per la configurazione. Se si seleziona una variabile o un certificato per il tipo di valore, è possibile scegliere da un elenco di variabili o i profili di certificato nell'elenco a discesa dei valori di configurazione.  Se si sceglie un certificato, l'alias del certificato del certificato distribuito nel dispositivo sarà popolato in fase di esecuzione.
+    
+### <a name="supported-variables-for-configuration-values"></a>Variabili supportate per i valori di configurazione
+
+Se si sceglie una variabile come tipo di valore, è possibile scegliere le opzioni seguenti:
+- Nome dell'entità utente, ad esempio **John@contoso.com**
+- Posta elettronica, ad esempio **John@contoso.com**
+- Nome dell'entità utente parziale, ad esempio **John**
+- ID account, ad esempio **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- ID dispositivo, ad esempio **b9841cd9-9843-405f-be28-b2265c59ef97**
+- ID utente, ad esempio **3ec2c00f-b125-4519-acf0-302ac3761822**
+- Nome utente, ad esempio **John Doe**
+
 
 ## <a name="enter-the-json-editor"></a>Usare l'editor JSON
 

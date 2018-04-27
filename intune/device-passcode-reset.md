@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/06/2018
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,30 +13,30 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cca5922f036711093469e71489e267af53f05a9
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 19b30315fa26dd53b5e383bc9e4bef5c65b89962
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Reimpostare o rimuovere il passcode di un dispositivo in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Per creare un nuovo passcode per un dispositivo, usare l'azione **Rimuovi il passcode**.
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
-- Windows Phone 8.1 (non aggiunto ad Azure Active Directory), incluse le versioni fino a Windows 10 Creators Update
-- Windows 10 Creators Update e versioni successive
-- iOS
-- Le versioni di Android precedenti alla 7
+- Dispositivi Android registrati con un profilo di lavoro, versione 7.0 e successive
+- Dispositivi Android versione 6.0 o precedenti
+- iOS 
+     
+## <a name="unsupported-platforms"></a>Piattaforme non supportate
 
-Questa funzionalità non è supportata per i sistemi seguenti:
-
-- Windows
+- Dispositivi Android registrati con un profilo di lavoro, versione 6.0 e precedenti
+- Dispositivi Android versione 7.0 o successive
 - macOS
-- Android for Work
+- Windows
 
 ## <a name="reset-a-passcode"></a>Reimpostare un passcode
 
@@ -44,6 +44,14 @@ Questa funzionalità non è supportata per i sistemi seguenti:
 2. Selezionare **Tutti i servizi**, filtrare per **Intune** e quindi selezionare **Microsoft Intune**.
 3. Selezionare **Dispositivi** e quindi selezionare **Tutti i dispositivi**.
 4. Nell'elenco dei dispositivi gestiti selezionare un dispositivo e scegliere **...Altre informazioni**. Quindi scegliere l'azione remota del dispositivo **Rimuovi il passcode**.
+
+## <a name="resetting-android-for-work-passcodes"></a>Reimpostazione dei passcode di Android for Work
+
+I dispositivi Android for Work supportati ricevono una nuova password per lo sblocco del dispositivo o una richiesta di profilo gestito per l'utente finale. Gli utenti finali di dispositivi Android 7.0 o versioni successive con profili di lavoro ricevono notifiche per attivare il token di reimpostazione passcode immediatamente dopo il completamento della registrazione. La notifica viene visualizzata se la password di un profilo di lavoro è necessaria e impostata. Dopo l'immissione del passcode, la notifica viene chiusa.
+
+## <a name="resetting-ios-passcodes"></a>Reimpostazione dei passcode iOS
+
+I passcode vengono rimossi dai dispositivi iOS. Se è impostato un criterio di conformità passcode, il dispositivo richiederà all'utente di impostare un nuovo passcode nelle impostazioni. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 

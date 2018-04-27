@@ -1,27 +1,27 @@
 ---
 title: Inviare i log al supporto tecnico dell'azienda usando un cavo USB | Microsoft Docs
 description: Inviare i registri di dati tramite un cavo USB
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9fd4ce3548a16837e3f68c81ae08a1e22541e62b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Inviare i log al supporto tecnico dell'azienda usando un cavo USB
 
@@ -30,12 +30,12 @@ Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo A
 > [!Note]
 > Prima di iniziare, verificare di avere l'indirizzo di posta elettronica del supporto tecnico dell'azienda. È possibile trovare l'indirizzo nel [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) o nell'app Portale aziendale.
 
-1.  Nella schermata di errore toccare **Invia informazioni**. Quando viene visualizzato un messaggio in cui viene chiesto di indicare quale metodo si vuole usare per inviare i log, scegliere l'opzione per salvare i file nel dispositivo.
+1. Nella schermata di errore toccare **Invia informazioni**. Quando viene visualizzato un messaggio in cui viene chiesto di indicare quale metodo si vuole usare per inviare i log, scegliere l'opzione per salvare i file nel dispositivo.
 
-2.  Connettere il dispositivo al computer con il cavo USB. Si tratta in genere dello stesso cavo usato per caricare il dispositivo in una presa a muro.
+2. Connettere il dispositivo al computer con il cavo USB. Si tratta in genere dello stesso cavo usato per caricare il dispositivo in una presa a muro.
 
-3.  Nel computer cercare una directory il cui nome è uguale a quello del dispositivo. In tale directory trovare **Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\**.
+3. Nel computer cercare una directory il cui nome è uguale a quello del dispositivo. In tale directory trovare <strong>Dispositivo Android\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong>.
 
-4.  Selezionare i file e allegarli a un messaggio di posta elettronica. Inviare questo messaggio di posta elettronica al supporto tecnico dell'azienda.
+4. Selezionare i file e allegarli a un messaggio di posta elettronica. Inviare questo messaggio di posta elettronica al supporto tecnico dell'azienda.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

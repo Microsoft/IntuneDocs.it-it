@@ -1,28 +1,27 @@
 ---
-title: Impostazioni relative alle restrizioni dei dispositivi per Windows 10 in Microsoft Intune
-titlesuffix: 
-description: "Informazioni sulle opzioni di Microsoft Intune per il controllo di impostazioni e funzionalità nei dispositivi Windows 10."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Impostazioni relative alle restrizioni dei dispositivi per Windows 10 in Microsoft Intune - Azure | Microsoft Docs
+description: Informazioni sulle opzioni di Microsoft Intune per il controllo di impostazioni e funzionalità nei dispositivi Windows 10.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi per Windows 10 e versioni successive in Microsoft Intune
+# <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrizione dei dispositivi per Windows 10 (e versioni successive) in Intune
 Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di Microsoft Intune configurabili per i dispositivi che eseguono Windows 10.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Generale
 - **Acquisizione di schermata (solo dispositivi mobili)**: consente all'utente di acquisire la schermata del dispositivo come immagine.
@@ -51,7 +50,6 @@ Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di
 - **Ink Workspace** (Area Windows Ink): impedisce agli utenti l'accesso all'area di lavoro Windows Ink. Quando questa impostazione non è configurata, l'area di lavoro Windows Ink è abilitata (la funzionalità è attivata), e l'utente è autorizzato a usarla sopra la schermata di blocco.
 - **Ridistribuzione automatica**: consente agli utenti con diritti amministrativi di eliminare tutti i dati utente e tutte le impostazioni utente tramite **CTRL+tasto WINDOWS+R** nella schermata di blocco del dispositivo. Il dispositivo viene automaticamente riconfigurato e registrato di nuovo nella gestione.
 
-
 ## <a name="password"></a>Password
 -   **Password**: richiede all'utente finale di immettere una password per accedere al dispositivo.
     -   **Tipo di password richiesto** - Consente di specificare se la password deve essere solo numerica o alfanumerica.
@@ -75,7 +73,6 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Accettazione automatica delle richieste di associazione e di consenso utente sulla privacy**: consente a Windows di accettare automaticamente messaggi di associazione e consenso sulla privacy durante l'esecuzione di app.
 - **Pubblica le attività utente**: impostare l'opzione su **Blocca** per impedire le esperienze condivise e l'individuazione delle ultime risorse usate nel cambio modalità per l'attività.
 - **Solo attività locali**: impostare l'opzione su **Blocca** per impedire le esperienze condivise e l'individuazione delle ultime risorse usate nel cambio modalità solo per l'attività locale.
-
 
 È possibile definire le informazioni accessibili per tutte le app nel dispositivo. È possibile definire eccezioni per le singole app tramite **Eccezioni alla privacy per app**.
 
@@ -137,8 +134,6 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Notifiche di tipo avviso popup nella schermata di blocco**: blocca la visualizzazione dei messaggi di avviso nella schermata di blocco del dispositivo.
 -   **Timeout dello schermo (solo dispositivi mobili)**: specifica il tempo in secondi tra il blocco e lo spegnimento dello schermo.
 
-
-
 ## <a name="app-store"></a>App Store
 
 -   **App Store (solo dispositivi mobili)** - Consente o blocca l'uso dell'App Store nei dispositivi Windows 10 Mobile.
@@ -152,8 +147,6 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Installa le app nell'unità di sistema**: impedisce alle app di archiviare dati nell'unità di sistema del dispositivo.
 -   **Game DVR (solo desktop)**: configura se la registrazione e la trasmissione dei giochi sono consentite.
 -   **App solo dallo Store**: specifica se gli utenti possono installare le app da posizioni diverse dall'App Store.
-
-
 
 ## <a name="edge-browser"></a>Browser Microsoft Edge
 
@@ -181,7 +174,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Motore di ricerca predefinito**: specifica il motore di ricerca predefinito da usare. Gli utenti finali possono modificare questo valore in qualsiasi momento.
 -   **Cancella i dati di esplorazione all'uscita**: cancella la cronologia e i dati di esplorazione quando l'utente esce da Edge.
 -   **Raccolta di dati per il riquadro animato**: interrompe la raccolta di informazioni dal riquadro animato quando gli utenti aggiungono un sito al menu Start da Microsoft Edge.
--  **Elenco Preferiti**: definisce il percorso del file dei preferiti. Ad esempio, http://contoso.com/favorites.html.
+-  **Elenco Preferiti**: definisce il percorso del file dei preferiti. Ad esempio, http://contoso.com/favorites.html
 -  **Restrict changes to Favorites** (Limita modifiche ai Preferiti): impostare questa proprietà su **Blocca** per impedire agli utenti di eseguire operazioni di aggiunta, importazione, ordinamento o modifica dell'elenco Preferiti. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
@@ -192,6 +185,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
 ## <a name="search"></a>Cerca
 - **Ricerca sicura (solo dispositivi mobili)**: controlla come Cortana filtra il contenuto per adulti nei risultati della ricerca. È possibile selezionare **Strict**, **Moderate** o consentire all'utente finale di scegliere le proprie impostazioni.
+- **Visualizza i risultati Web nella ricerca**: blocca o consente la visualizzazione dei risultati Web nelle ricerche eseguite nel dispositivo.
 
 ## <a name="cloud-and-storage"></a>Cloud e risorse di archiviazione
 -   **Account Microsoft** - Consente all'utente di associare un account Microsoft con il dispositivo.
@@ -215,7 +209,6 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Configurazione Wi-Fi manuale**: controlla se l'utente può configurare le proprie connessioni Wi-Fi o se può usare solo le connessioni configurate da un profilo Wi-Fi (solo Windows 10 Mobile).
 -   **Intervallo di analisi Wi-Fi**: specifica la frequenza con cui i dispositivi ricercano le reti Wi-Fi. Specificare un valore compreso tra 1 (ricerca più frequente) e 500 (ricerca meno frequente).
 -   **Servizi Bluetooth consentiti**: specifica sotto forma di stringhe esadecimali un elenco di profili e servizi Bluetooth consentiti.
-
 
 ## <a name="control-panel-and-settings"></a>Pannello di controllo e impostazioni
 
@@ -258,41 +251,48 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
 ## <a name="kiosk-preview"></a>Modalità tutto schermo (anteprima)
 
--   **Modalità tutto schermo**: identifica il tipo di [modalità tutto schermo](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) supportata dai criteri. Le opzioni includono:
+In genere un'app o una serie specifica di app viene eseguita in un dispositivo in modalità tutto schermo. Agli utenti viene impedito l'accesso a qualsiasi funzionalità o funzione del dispositivo all'esterno delle app in modalità tutto schermo.
 
-      - **Non configurata** (impostazione predefinita): il criterio non abilita la modalità tutto schermo. 
-      - **App singola per chiosco multimediale**: il profilo abilita il dispositivo come app singola per chiosco multimediale.
-      - **App multiple per chiosco multimediale**: il profilo abilita il dispositivo come app multiple per chiosco multimediale.
+- **Modalità tutto schermo**: identifica il tipo di modalità tutto schermo supportata dai criteri. Le opzioni includono:
 
-    Le app singole per chiosco multimediale richiedono le seguenti impostazioni:
+  - **Non configurata** (impostazione predefinita): il criterio non abilita la modalità tutto schermo. 
+  - **App singola per chiosco multimediale**: il profilo abilita il dispositivo perché esegua solo un'app. Quando l'utente accede, viene avviata un'app specifica. Questa modalità impedisce anche all'utente di aprire nuove app o modificare l'app in esecuzione.
+  - **Più app in modalità tutto schermo**: il profilo abilita il dispositivo perché esegua più app. Solo le app aggiunte sono disponibili all'utente. Il vantaggio di avere più app in modalità tutto schermo, o avere un dispositivo predefinito per uno scopo, consiste nel garantire un'esperienza semplice accedendo solo alle app necessarie e rimuovendo dalla visualizzazione le app che non sono necessarie.
 
-      - **Account utente**: specifica l'account utente locale (per il dispositivo) o l'account di accesso di Azure AD associato all'app per chiosco multimediale. Per gli account aggiunti ai domini di Azure AD, specificare l'account nel formato `domain\\username@tenant.org`.
+#### <a name="single-app-kiosks"></a>App singole per chioschi multimediali
+Immettere le impostazioni seguenti:
 
-         Per i dispositivi in ambienti pubblici, usare account con privilegi minimi per evitare attività non autorizzate.  
+- **Account utente**: immettere l'account utente locale (per il dispositivo) o l'account di accesso di Azure AD associato all'app in modalità tutto schermo. Per gli account aggiunti ai domini di Azure AD, immettere l'account nel formato `domain\username@tenant.org`. 
 
-      - **ID modello utente applicazione (AUMID, Application User Model ID) dell'app**: specifica l'AUMID dell'app per chiosco multimediale. Per altre informazioni, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata).
+    Per i chioschi multimediali in ambienti pubblici con accesso automatico abilitato, è necessario usare un tipo di utente con privilegi minimi, ad esempio l'account utente standard locale. Per configurare un account Azure Active Directory (AD) per la modalità tutto schermo, usare il formato `AzureAD\user@contoso.com`.
 
-    I [chioschi multimediali con più app](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) richiedono una configurazione per chiosco multimediale. Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multimediale o selezionarne una esistente.
+- **ID modello utente applicazione (AUMID, Application User Model ID) dell'app**: immettere l'ID modello utente applicazione dell'app in modalità tutto schermo. Per altre informazioni, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata).
 
-    Le configurazioni per chiosco multimediale con più app includono le impostazioni seguenti:
+#### <a name="multi-app-kiosks"></a>Più app in modalità tutto schermo
+In [Più app in modalità tutto schermo](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) si usa una configurazione per chiosco multimediale che elenca le app consentite e altre impostazioni. 
 
-    - **Nome della configurazione per chiosco multimediale**: nome descrittivo usato per identificare una determinata configurazione.
+Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multimediale o selezionarne una esistente. A questo punto, immettere le impostazioni seguenti:
 
-    - Una o più **App chiosco multimediale** costituite da:
+- **Nome della configurazione per chiosco multimediale**: immettere un nome descrittivo usato per identificare la configurazione.
 
-        - **Tipo di app** che specifica il tipo dell'app chiosco multimediale.  I valori supportati includono:   
+- **App chiosco multimediale**: immettere le app disponibili nel menu Start. Le app aggiunte sono le uniche che l'utente può aprire.
 
-            - **App Win32**: app desktop tradizionale. È necessario il nome del percorso completo del file eseguibile, relativo al dispositivo.
+  - **Tipo di app**: scegliere il tipo di app per la modalità tutto schermo:
+    - **App Win32**: app desktop tradizionale. È necessario il nome del percorso completo del file eseguibile, relativo al dispositivo.
+    - **App UWP**: app Windows universale. È necessario l'[AUMID per l'app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-            - **App UWP**: app Windows universale. È necessario l'[AUMID per l'app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+  - **Identificatore**: immettere il nome del percorso completo del file eseguibile (app Win32) o l'[ID modello utente applicazione](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (app UWP).
 
-        - **Identificatore dell'app**: specifica il nome del percorso completo del file eseguibile (app Win32) o l'[AUMID dell'app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (app UWP).
+- **Barra delle applicazioni**: scegliere di **abilitare** (visualizzare) la barra delle applicazioni o di mantenerlo **non configurata** (nascosta) nel chiosco multimediale.
 
-    - **Barra delle applicazioni** indica se la barra delle applicazioni viene visualizzata (**Abilitata**) o nascosta (**Non configurata**) sul chiosco multimediale.
+- **Layout del menu Start**: immettere un file XML che descrive come le app vengono visualizzate nel menu Start. Leggere [Personalizzare ed esportare il layout della schermata Start](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) per conoscere alcune linee guida e XML di esempio.
 
-    - **Layout del menu Start**: specifica un file XML che descrive come le app [vengono visualizzate nel menu Start](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Utenti assegnati**: specifica uno o più account utente associati alla configurazione per chiosco multimediale. L'account può essere locale nel dispositivo o in un account di accesso di Azure AD associato all'app per chiosco multimediale. Specificare gli account appartenenti a un dominio nel formato `domain\\username@tenant.org`.
+  In [Creare un chiosco multimediale Windows 10 che esegue più app](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) sono disponibili altri dettagli sull'uso e la creazione di file XML.
+
+- **Utenti assegnati**: aggiungere uno o più account utente che possa usare le app aggiunte. Quando l'account esegue l'accesso, sono disponibili solo le app definite nella configurazione. L'account può essere locale nel dispositivo o in un account di accesso di Azure AD associato all'app per chiosco multimediale.
+
+    Per i chioschi multimediali in ambienti pubblici con accesso automatico abilitato, è necessario usare un tipo di utente con privilegi minimi, ad esempio l'account utente standard locale. Per configurare un account Azure Active Directory (AD) per la modalità tutto schermo, usare il formato `domain\user@tenant.com`.
 
 ## <a name="windows-defender-antivirus"></a>Windows Defender Antivirus
 
@@ -328,14 +328,11 @@ Se i file sull'unità sono di sola lettura, Defender non può rimuovere il malwa
     -   **Definito dall'utente**
     -   **Bloccato**
 
-
-
 ### <a name="windows-defender-antivirus-exclusions"></a>Esclusioni di Windows Defender Antivirus
 
 -   **File e cartelle da escludere dalle analisi e dalla protezione in tempo reale** - Aggiunge uno o più file e cartelle come **C:\Percorso** o **%ProgramFiles%\Percorso\nomefile.exe** all'elenco delle esclusioni. Questi file e cartelle non sono inclusi nelle analisi in tempo reale o pianificate.
 -   **Estensioni di file da escludere dalle analisi e dalla protezione in tempo reale** - Aggiunge una o più estensioni di file come **.jpg** o **.txt** all'elenco delle esclusioni. I file con queste estensioni non sono inclusi nelle analisi in tempo reale o pianificate.
 -   **Processi da escludere dalle analisi e dalla protezione in tempo reale** - Aggiunge uno o più processi del tipo **.exe**, **. com** o **. scr** all'elenco delle esclusioni. Questi processi non sono inclusi nelle analisi in tempo reale o nelle analisi pianificate.
-
 
 ## <a name="network-proxy"></a>Proxy di rete
 
@@ -348,9 +345,7 @@ Se i file sull'unità sono di sola lettura, Defender non può rimuovere il malwa
     -   **Eccezione del proxy**: immettere gli URL che non devono usare il server proxy. Per separare ogni elemento, usare un punto e virgola.
     -   **Ignora il server proxy per l'indirizzo locale**: abilitare questa opzione se non si vuole usare il server proxy per gli indirizzi locali della rete Intranet.
 
-
 ## <a name="windows-spotlight"></a>Contenuti in evidenza di Windows
-
 
 - **Contenuti in evidenza di Windows**: usare questa impostazione per bloccare tutte le funzionalità di Contenuti in evidenza di Windows nei dispositivi Windows 10. Se si blocca questa impostazione, le impostazioni seguenti non sono disponibili.
     - **Windows Spotlight nella schermata di blocco**: blocca la visualizzazione di Contenuti in evidenza di Windows nella schermata di blocco del dispositivo.
@@ -360,7 +355,6 @@ Se i file sull'unità sono di sola lettura, Defender non può rimuovere il malwa
     - **Centro notifiche di Windows Spotlight**: blocca la visualizzazione di suggerimenti di Contenuti in evidenza di Windows (quali nuove app o contenuti di protezione) nel Centro notifiche di Windows.
     - **Personalizzazione di Windows Spotlight**: impedisce a Contenuti in evidenza di Windows la personalizzazione dei risultati a seconda dell'uso di un dispositivo.
     - **Esperienza di Configurazione e personalizzazione di Windows**: blocca l'Esperienza di Configurazione e personalizzazione di Windows, che visualizza informazioni su funzionalità nuove o aggiornate.
-
 
 ## <a name="projection"></a>Proiezione
 
@@ -394,15 +388,3 @@ Se i file sull'unità sono di sola lettura, Defender non può rimuovere il malwa
 - **Sincronizzazione di messaggi (solo dispositivi mobili)**: disabilitare i messaggi su qualsiasi dispositivo e il backup e il ripristino di SMS.
 - **MMS (solo dispositivi mobili)** - disabilitare la funzionalità di invio/ricezione di MMS nel dispositivo.
 - **RCS (solo dispositivi mobili)** - disabilitare la funzionalità di invio/ricezione di RCS (Rich Communication Services) nel dispositivo.
-
-
-
-
-
-
-
-
-
-
-
-

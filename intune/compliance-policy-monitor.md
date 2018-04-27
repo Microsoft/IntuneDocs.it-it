@@ -1,27 +1,30 @@
 ---
-title: "Monitorare i criteri di conformità dei dispositivi di Microsoft Intune"
-titlesuffix: 
-description: "Usare il dashboard di conformità dei dispositivi per monitorare la conformità generale dei dispositivi, visualizzare i report e visualizzare la conformità dei dispositivi in base ai singoli criteri e alle singole impostazioni."
-keywords: 
+title: Monitorare i criteri di conformità dei dispositivi di Microsoft Intune
+titlesuffix: ''
+description: Usare il dashboard di conformità dei dispositivi per monitorare la conformità generale dei dispositivi, visualizzare i report e visualizzare la conformità dei dispositivi in base ai singoli criteri e alle singole impostazioni.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 557018264da5c21459e47e3e139ddd327a4a5ea6
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
 I report di conformità consentono agli amministratori di analizzare il comportamento di conformità dei dispositivi nell'organizzazione e di risolvere rapidamente i problemi correlati alla conformità riscontrati dagli utenti all'interno dell'organizzazione. È possibile visualizzare le informazioni sullo stato generale di conformità dei dispositivi e sullo stato di conformità per una singola impostazione o un singolo criterio e anche eseguire il drill-down in un singolo dispositivo per visualizzare le impostazioni e i criteri specifici che interessano tale dispositivo.
+
+> [!NOTE]
+> Nel mese di marzo sono stati introdotti alcuni miglioramenti alla sicurezza, suggeriti dai commenti degli utenti, nel servizio Intune. A seconda della configurazione dei criteri di conformità, potrebbe essere necessario intervenire per evitare la perdita di accesso alla posta elettronica per gli utenti finali. Per informazioni dettagliate, vedere [Upcoming security enhancements](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) (Miglioramenti alla sicurezza in arrivo).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -124,6 +127,19 @@ Se si fa clic sul pulsante **Aggiorna**, l'area a comparsa dovrebbe essere chius
 Facendo clic su un dispositivo viene visualizzato il **riquadro Dispositivi** con il dispositivo selezionato, che offre maggiori dettagli sull'impostazione dei criteri di conformità dei dispositivi applicati al dispositivo.
 
 Quando si fa clic sull'impostazione stessa, è possibile visualizzare il nome del criterio di conformità risultante dall'impostazione definita dall'amministratore.
+
+### <a name="devices-without-compliance-policy"></a>Dispositivi senza criteri di conformità
+Questo report identifica i dispositivi a cui non è stato assegnato alcun criterio di conformità. Con l'introduzione dell'impostazione di sicurezza che contrassegna tutti i dispositivi senza criteri di conformità come "non conformi", è importante essere in grado di identificare tali dispositivi. Sarà quindi possibile assegnare loro almeno un criterio di conformità.
+
+> [!NOTE]
+> La nuova impostazione di sicurezza è configurabile nel portale di Intune. Selezionare **Conformità del dispositivo** e in **Installazione** scegliere **Impostazioni dei criteri di conformità**. Quindi usare l'alternanza per impostare **Contrassegna i dispositivi senza criteri di conformità assegnati come** e scegliere tra **Conforme** e **Non conforme**. Leggere altre informazioni su questo [miglioramento alla sicurezza nel servizio Intune](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
+
+![Immagine del report dei dispositivi senza di criteri di conformità](./media/idc-12.png)
+
+Il riquadro **Dispositivi senza criteri di conformità** è disponibile nel dashboard Conformità del dispositivo e mostra tutti i dispositivi senza criteri di conformità, l'utente del dispositivo, lo stato di conformità e il modello di dispositivo.
+
+> [!NOTE]
+> Gli utenti a cui è stato assegnato un criterio di conformità di qualsiasi tipo non verranno visualizzati nel report, indipendentemente dalla piattaforma del dispositivo. Ad esempio, se è stato assegnato involontariamente un criterio di conformità di Windows a un utente con un dispositivo Android, il dispositivo non apparirà nel report. Tuttavia, Intune considererà tale dispositivo Android come non conforme. Per evitare problemi, è consigliabile creare criteri per ogni piattaforma del dispositivo e distribuirli a tutti gli utenti.
 
 ### <a name="per-policy-device-compliance-report"></a>Report di conformità dei dispositivi in base ai criteri
 

@@ -1,12 +1,11 @@
 ---
-title: Gestire i dispositivi con Microsoft Intune
-titleSuffix: ''
-description: Visualizzare i dispositivi gestiti con Intune ed eseguire diverse operazioni su tali dispositivi.
+title: Gestire i dispositivi con Microsoft Intune - Azure | Microsoft Docs
+description: Esaminare i dispositivi gestiti con Microsoft Intune, per operazioni come esportare un elenco di dispositivi in formato CSV, visualizzare i dispositivi aggiunti ad Azure Active Directory, esaminare un log delle modifiche delle azioni sul dispositivo, usare TeamViewer Connector per consentire agli amministratori IT di risolvere i problemi dei dispositivi Android in modalità remota e visualizzare tutte le azioni che si possono eseguire nei dispositivi.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/21/2018
+ms.date: 04/02/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,41 +13,47 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 436eeb306bf4ba343ae4d88a824aeed2077a3426
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9a003b9ec4208bc3449dfb1b3b2ee889a29b742b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Informazioni sulla gestione dei dispositivi in Microsoft Intune
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+Un amministratore IT deve verificare che i dispositivi gestiti offrano agli utenti le risorse necessarie alle loro attività e al tempo stesso che i dati siano protetti da rischi.
 
-Un amministratore IT deve verificare che i dispositivi gestiti offrano agli utenti finali le risorse necessarie alle loro attività e al tempo stesso i dati siano protetti da rischi.
+Il carico di lavoro **Dispositivi** offre informazioni dettagliate sui dispositivi gestiti e consente di eseguire attività remote su tali dispositivi.
 
-Il carico di lavoro **Dispositivi** offre informazioni dettagliate sui dispositivi gestiti e consente di eseguire attività remote su tali dispositivi. Per accedere al carico di lavoro:
+## <a name="get-to-your-devices"></a>Accedere ai dispositivi
 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. In **Intune** scegliere **Dispositivi**.
-4. È possibile visualizzare informazioni sui dispositivi ed eseguire le azioni remote per il dispositivo come descritto di seguito:
-    - **Panoramica**: snapshot dei dispositivi registrati che è possibile gestire.
-    - **Tutti i dispositivi**: elenco dei dispositivi registrati che è possibile gestire. Scegliere **Filtro** o **Colonne** per perfezionare le informazioni visualizzate. Selezionare un dispositivo [per visualizzare l'inventario dei dispositivi](device-inventory.md).
-    - **Dispositivi di Azure AD**: elenco dei dispositivi registrati o aggiunti con Azure Active Directory (AD). Altre informazioni sulla [gestione dei dispositivi in Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
-    - **Azioni del dispositivo**: cronologia delle azioni remote eseguite nei dispositivi, tra cui l'azione, il relativo stato, l'autore e l'ora dell'azione.
+1. Accedere al [portale di Azure](https://portal.azure.com).
+2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+3. Selezionare **Dispositivi**. Questa visualizzazione contiene informazioni dettagliate sui singoli dispositivi e come utilizzarli, tra cui:
 
-        ![Screenshot del monitoraggio delle azioni del dispositivo](./media/monitor-device-actions.png)
+   - **Panoramica** contiene uno snapshot dei dispositivi registrati e indica quanti dispositivi usano le diverse piattaforme, tra cui Android, iOS e altro.
+   - **Tutti i dispositivi** elenca i dispositivi registrati gestiti.
 
-    - **Log di controllo**: i log di controllo offrono una registrazione delle attività che generano una modifica in Microsoft Intune. Altre informazioni sui [log di controllo](monitor-audit-logs.md).
-    - **TeamViewer Connector**: il servizio TeamViewer consente agli utenti dei dispositivi Android gestiti da Intune di ottenere assistenza remota dai rispettivi amministratori IT. Altre informazioni su [TeamViewer](device-profile-android-teamviewer.md).
-    - **Guida e supporto tecnico**: consente di risolvere i problemi, richiedere supporto o visualizzare lo stato di Intune.  
-    
+     Usare la funzione **Esporta** per creare un elenco in formato CSV di tutti i dispositivi, in incrementi di 10.000 (Internet Explorer) o 30.000 (Edge, Chrome).
+
+     Selezionare un qualsiasi dispositivo per [visualizzare ulteriori dettagli su di esso](device-inventory.md), inclusi dettagli sull'hardware, le app installate, lo stato dei criteri di conformità e altro ancora.
+
+   - **Dispositivi di Azure AD** elenca i dispositivi registrati o aggiunti ad Azure Active Directory (Azure AD). Altre informazioni sulla [gestione dei dispositivi in Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+   - **Azioni del dispositivo** include la cronologia delle azioni remote eseguite nei vari dispositivi, tra cui l'azione, il relativo stato, l'autore e l'ora in cui è avvenuta.
+
+     ![Screenshot del monitoraggio delle azioni del dispositivo](./media/monitor-device-actions.png)
+
+   - I **Log di controllo** sono una registrazione delle attività che generano una modifica in Intune. I [Log di controllo](monitor-audit-logs.md) forniscono ulteriori dettagli.
+   - **TeamViewer Connector** è un servizio che consente agli utenti dei dispositivi Android gestiti da Intune di ottenere assistenza remota dal proprio amministratore IT. Altre informazioni su [TeamViewer](device-profile-android-teamviewer.md).
+   - **Guida e supporto tecnico** collega ai suggerimenti per la risoluzione dei problemi, a informazioni per la richiesta di supporto o alla verifica dello stato di Intune.
+
 ## <a name="available-device-actions"></a>Azioni del dispositivo disponibili
 Le azioni disponibili dipendono dalla piattaforma del dispositivo e dalla configurazione del dispositivo.
 
 - [Visualizzare l'inventario dei dispositivi](device-inventory.md)
-- Eseguire azioni remote per i dispositivi:
+- Eseguire azioni remote sui dispositivi:
     - [Rimuovi i dati aziendali](devices-wipe.md#remove-company-data)
     - [Ripristino impostazioni predefinite](devices-wipe.md#factory-reset)
     - [Blocco remoto](device-remote-lock.md)
@@ -62,7 +67,7 @@ Le azioni disponibili dipendono dalla piattaforma del dispositivo e dalla config
     - [Controllo remoto per Android](device-profile-android-teamviewer.md)
     - [Sincronizzare il dispositivo](device-sync.md)
 
-
 ## <a name="next-steps"></a>Passaggi successivi
 
+- In **Tutti i dispositivi** selezionare il dispositivo per cui visualizzare ulteriori dettagli.
 - Scegliere **Azioni del dispositivo** per visualizzare lo stato delle azioni eseguite su dispositivi gestiti.
