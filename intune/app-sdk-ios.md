@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/10/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 74c709790295a971ff9efe7c2cc348d13d471d5a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guida per gli sviluppatori di Microsoft Intune App SDK per iOS
 
@@ -458,6 +458,73 @@ WebViewHandledURLSchemes | Matrice di stringhe | Specifica gli schemi URL gestit
 
 > [!NOTE]
 > Se l'app verrà rilasciata per l'App Store, `MAMPolicyRequired` deve essere impostato su "NO" come previsto dagli standard per App Store.
+
+## <a name="sharing-data-via-uiactivityviewcontroller"></a>Condivisione dei dati tramite UIActivityViewController 
+A partire dalla versione 8.0.2+, Intune APP SDK potrà filtrare le azioni di UIActivityViewController in modo che nessun percorso di condivisione non Intune sia disponibile per la selezione. Questo comportamento verrà controllato dai criteri di trasferimento dei dati dell'applicazione e da una funzionalità APP futura. La funzionalità futura verrà abilitata dopo che alla maggior parte delle applicazioni di Microsoft (ad esempio Word, Excel, PowerPoint) saranno state apportate le modifiche necessarie per supportare la condivisione dei dati tramite UIActivityViewController. 
+ 
+### <a name="copy-to-actions"></a>Azioni "Copy To" (Copia in) 
+Quando si condividono documenti tramite UIActivityViewController e UIDocumentInteractionController, iOS visualizza le azioni "Copy to" (Copia in) per ogni applicazione che supporta l'apertura del documento da condividere. Le applicazioni dichiarano tipi di documenti supportati tramite l'impostazione CFBundleDocumentTypes in Info.plist. Questo tipo di condivisione non sarà più disponibile se i criteri non consentono la condivisione con applicazioni non gestite. In sostituzione, le applicazioni dovranno aggiungere un'estensione per Azione non dell'interfaccia utente alla propria applicazione e collegarla a Intune APP SDK per iOS. L'estensione per Azione funge da stub. L'SDK implementerà tutto il comportamento di condivisione file. Seguire i passaggi precedenti per l'integrazione dell'SDK, oltre ai seguenti: 
+ 
+1. L'applicazione deve avere almeno un elemento schemeURL definito in CFBundleURLTypes di Info.plist. 
+2. L'applicazione e l'estensione per Azione devono condividere almeno un gruppo di app e il gruppo di app deve essere elencato sotto la matrice AppGroupIdentifiers nel dizionario IntuneMAMSettings dell'app e dell'estensione. 
+3. Assegnare all'estensione per Azione il nome "Open in" seguito dal nome dell'applicazione. Localizzare Info.plist in base alle esigenze. 
+4. Progettare un'icona del modello per l'estensione, come illustrato nella [documentazione per gli sviluppatori di Apple](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/). In alternativa, è possibile usare lo strumento IntuneMAMConfigurator per generare queste immagini dalla directory APP dell'applicazione. Eseguire "IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory" 
+5. Sotto IntuneMAMSettings nel file Info.plist dell'estensione aggiungere un'impostazione booleana denominata OpenInActionExtension con il valore YES. 
+6. Configurare NSExtensionActivationRule per supportare un singolo file e tutti i tipi contenuti in CFBundleDocumentTypes dell'applicazione con il prefisso "com.microsoft.intune.mam". Se ad esempio l'applicazione supporta public.text e public.image, la regola di attivazione sarà: 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1 
+).@count == 1 
+```
+
+### <a name="update-existing-share-and-action-extensions"></a>Aggiornare le estensioni per Condivisione e Azione esistenti 
+Se l'applicazione contiene già le estensioni per Condivisione o Azione, NSExtensionActivationRule dovrà essere modificata per consentire i tipi di Intune. Per ogni tipo supportato dall'estensione, inserire un tipo aggiuntivo con il prefisso "com.microsoft.intune.mam". Se ad esempio la regola di attivazione esistente è:  
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+Dovrà essere modificata in: 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+>[!Note] Per aggiungere i tipi di Intune alla regola di attivazione, si può usare lo strumento IntuneMAMConfigurator. Se la regola di attivazione esistente usa le costanti stringa predefinite (ad esempio NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText e così via), la sintassi del predicato può diventare piuttosto complessa. Lo strumento IntuneMAMConfigurator può essere usato anche per convertire la regola di attivazione dalle costanti stringa in una stringa di predicato durante l'aggiunta dei tipi di Intune. IntuneMAMConfigurator è disponibile nel repository di GitHub. 
+
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Abilitazione della configurazione di destinazione MAM per le applicazioni iOS
 La configurazione di destinazione MAM consente a un'app di ricevere i dati di configurazione tramite Intune App SDK. Il proprietario o lo sviluppatore dell'applicazione deve comunicare ai clienti Intune il formato e le varianti di tali dati. Gli amministratori di Intune possono trovare e distribuire i dati di configurazione tramite il portale di Azure di Intune. A partire dalla versione 7.0.1 di Intune App SDK per iOS, le applicazioni incluse nella configurazione di destinazione MAM possono ricevere dati di configurazione MAM tramite il servizio MAM. I dati di configurazione dell'applicazione vengono inviati tramite il servizio MAM direttamente all'app invece che tramite il canale MDM. Intune App SDK include una classe per l'accesso ai dati recuperati da queste console. I seguenti elementi possono essere considerati come prerequisiti: <br>

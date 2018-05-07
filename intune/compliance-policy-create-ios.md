@@ -1,11 +1,11 @@
 ---
 title: Creare criteri di conformità per i dispositivi iOS in Microsoft Intune- Azure | Microsoft Docs
-description: Creare criteri di conformità per i dispositivi in Microsoft Intune per consentire ai dispositivi iOS di connettersi a un account di posta elettronica, controllare dispositivi jailbroken, verificare il sistema operativo minimo e massimo e impostare le restrizioni relative alle password, ad esempio la lunghezza e il periodo di inattività del dispositivo.
+description: Creare o configurare criteri di conformità per i dispositivi in Microsoft Intune per consentire ai dispositivi iOS di connettersi a un account di posta elettronica, controllare dispositivi jailbroken, verificare il sistema operativo minimo e massimo e impostare le restrizioni relative alle password, ad esempio la lunghezza e il periodo di inattività del dispositivo.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 887f45cdc79aa5e45de3e8a1df5d12665d2ed8ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Aggiungere criteri di conformità per i dispositivi iOS in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-I criteri di conformità per i dispositivi iOS in Intune specificano le regole e le impostazioni che i dispositivi iOS devono soddisfare per essere conformi. Tramite i criteri di conformità del dispositivo con accesso condizionale è possibile consentire o bloccare l'accesso alle risorse aziendali. È anche possibile ottenere i report di dispositivo e intraprendere azioni per la mancata conformità. I criteri di conformità dei dispositivi possono essere creati per ogni piattaforma nel portale di Intune in Azure. Per altre informazioni sui criteri di conformità e i prerequisiti da rispettare per creare criteri di conformità, vedere [Introduzione ai criteri di conformità](device-compliance-get-started.md).
+I criteri di conformità per i dispositivi iOS in Intune specificano le regole e le impostazioni che i dispositivi iOS devono soddisfare per essere conformi. Tramite i criteri di conformità del dispositivo con accesso condizionale è possibile consentire o bloccare l'accesso alle risorse aziendali. È anche possibile ottenere i report di dispositivo e intraprendere azioni per la mancata conformità. I criteri di conformità dei dispositivi possono essere creati per ogni piattaforma nel portale di Intune in Azure. Per altre informazioni sui criteri di conformità e sui requisiti, vedere [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
 
 La tabella seguente descrive il modo in cui le impostazioni di non conformità vengono gestite quando i criteri di conformità vengono usati con i criteri di accesso condizionale.
+
+---------------------------
 
 | **Impostazione di criteri** | **iOS 8.0 e versioni successive** |
 | --- | --- |
@@ -38,6 +40,8 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 | **Versione massima del sistema operativo** | In quarantena |
 | **Attestazione dell'integrità di Windows** | Non applicabile |
 
+---------------------------
+
 **Con correzione** = il sistema operativo del dispositivo impone la conformità. (Ad esempio, l'utente è obbligato a impostare un PIN.)
 
 **In quarantena** = il sistema operativo del dispositivo non impone la conformità. (Ad esempio, i dispositivi Android non impongono la crittografia del dispositivo all'utente.) Quando il dispositivo non è compatibile, vengono eseguite le azioni seguenti:
@@ -45,13 +49,10 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 - Il dispositivo viene bloccato se un criterio di accesso condizionale si applica all'utente.
 - Il portale aziendale segnala all'utente eventuali problemi di conformità.
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creare i criteri di conformità nel portale di Azure
+## <a name="create-a-device-compliance-policy"></a>Creare criteri di conformità dei dispositivi
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-3. Selezionare **Conformità del dispositivo** > **Criteri** > **Crea criterio**.
-4. Immettere un nome e una descrizione e scegliere la piattaforma a cui applicare questi criteri.
-5. Scegliere **Impostazioni** per immettere le impostazioni **Posta elettronica**, **Integrità del dispositivo**, **Proprietà del dispositivo** e **Sicurezza del sistema**. Al termine, scegliere **OK**.
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. Per **Piattaforma**, selezionare **iOS**. Scegliere **Impostazioni Configura** e immettere le impostazioni **Posta elettronica**, **Integrità del dispositivo**, **Proprietà del dispositivo** e **Sicurezza del sistema**. Al termine, fare clic su **OK** e su **Crea**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -60,22 +61,14 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
-
-Per assegnare agli utenti i criteri di conformità, scegliere un criterio configurato. I criteri esistenti sono disponibili nel riquadro **Conformità del dispositivo - Criteri**.
-
-1. Scegliere il criterio da assegnare agli utenti, quindi selezionare **Assegnazioni**. Si apre il pannello da cui è possibile selezionare i **gruppi di sicurezza Azure Active Directory** e assegnarli ai criteri.
-2. Scegliere **Gruppi selezionati** per aprire il riquadro che consente di visualizzare i gruppi di sicurezza di Azure AD.  Se si sceglie **Salva** il criterio verrà distribuito agli utenti.
-
-Il criterio è stato applicato agli utenti.  I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità.
-
-<!---## Compliance policy settings--->
-
 ## <a name="email"></a>Posta elettronica
 
-- **L'account di posta elettronica deve essere gestito da Intune**: se questa opzione è impostata su **Sì**, il dispositivo deve usare il profilo di posta elettronica distribuito al dispositivo stesso. Il dispositivo è considerato non conforme nelle seguenti situazioni:
+- **Rendi obbligatorio un profilo di posta elettronica gestito nei dispositivi mobili**: se si imposta questa opzione su Rendi obbligatorio, i dispositivi che non hanno un profilo di posta elettronica gestito da Intune non sono considerati conformi. Un dispositivo potrebbe non avere un profilo di posta elettronica gestito quando non viene specificato correttamente come destinazione oppure se l'utente ha configurato manualmente l'account di posta elettronica nel dispositivo.
+
+  Il dispositivo è considerato non conforme nelle seguenti situazioni:
   - Il profilo di posta elettronica viene distribuito a un gruppo di utenti diverso dal gruppo di utenti a cui sono destinati i criteri di conformità.
   - L'utente ha già configurato un account di posta elettronica nel dispositivo che corrisponde al profilo di posta elettronica di Intune distribuito nel dispositivo. Intune non può sovrascrivere il profilo con provisioning dell'utente, quindi non può gestirlo. Per garantire la conformità, l'utente deve rimuovere le impostazioni di posta elettronica esistenti. Intune potrà quindi installare il profilo di posta elettronica.
+
 - **Selezionare il profilo di posta elettronica che deve essere gestito da Intune**: se è stata selezionata l'impostazione **L'account di posta elettronica deve essere gestito da Intune**, scegliere **Seleziona** per specificare il profilo di posta elettronica di Intune. Il profilo di posta elettronica deve essere presente nel dispositivo.
 
 Per dettagli sul profilo di posta elettronica, vedere [Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
@@ -83,7 +76,11 @@ Per dettagli sul profilo di posta elettronica, vedere [Configurare l'accesso all
 ## <a name="device-health"></a>Device health
 
 - **Dispositivi jailbroken**: se si abilita questa impostazione, i dispositivi jailbroken non sono conformi.
-- **Richiedi che il dispositivo si trovi al massimo al livello di minaccia del dispositivo**: scegliere il livello di minaccia massimo oltre il quale i dispositivi vengono contrassegnati come non conformi. Ad esempio, se si imposta il livello di minaccia su **Medio**, i dispositivi con un livello medio, basso o protetto sono conformi. I dispositivi con un livello di minaccia alto non sono conformi.
+- **Richiedi che il dispositivo si trovi al massimo al livello di minaccia del dispositivo** (iOS 8.0 e versioni successive): scegliere il livello di minaccia massimo oltre il quale i dispositivi vengono contrassegnati come non conformi. I dispositivi che superano questo livello di minaccia vengono contrassegnati come non conformi:
+  - **Protetto**: questa opzione è la più sicura, perché il dispositivo non può avere minacce. Se viene rilevata la presenza di minacce di qualsiasi livello, il dispositivo viene considerato non conforme.
+  - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
+  - **Media**: il dispositivo viene valutato come conforme se le minacce esistenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
+  - **Alta**: questa opzione è la meno sicura e consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
 
 ## <a name="device-properties"></a>Proprietà dispositivo
 
@@ -97,10 +94,10 @@ Per dettagli sul profilo di posta elettronica, vedere [Configurare l'accesso all
 > [!NOTE]
 > Dopo l'applicazione di criteri di conformità o di configurazione a un dispositivo iOS, agli utenti viene richiesto ogni 15 minuti di impostare un passcode. Tale richiesta viene visualizzata finché non viene impostato un passcode.
 
-- **Richiedi una password per sbloccare i dispositivi mobili:** impostare l'opzione su **Sì** per consentire a un utente di immettere una password per poter accedere al dispositivo. I dispositivi iOS che usano una password vengono crittografati.
-- **Password semplici**: impostare questa opzione su **Sì** per consentire la creazione di password come **1234** o **1111**.
+- **Richiedi una password per sbloccare i dispositivi mobili**: **richiedere** agli utenti di immettere una password prima di poter accedere al dispositivo. I dispositivi iOS che usano una password vengono crittografati.
+- **Password semplici**: impostare questa opzione su **Blocca** per impedire agli utenti di creare password semplici, ad esempio **1234** o **1111**. Impostare l'opzione su **Non configurata** per consentire agli utenti di creare password come **1234** o **1111**.
 - **Lunghezza minima password**: immettere il numero minimo di cifre o caratteri per la password.
-- **Tipo di password richiesto**: specificare se è necessario creare una password di tipo **Alfanumerico** o **Numerico**.
+- **Tipo di password richiesto**: scegliere se una password deve avere solo caratteri **numerici** oppure una combinazione di numeri e altri caratteri (**alfanumerici**).
 - **Numero di caratteri non alfanumerici nella password**: immettere il numero minimo di simboli o caratteri speciali (&, #, %, ! e così via), che è necessario includere nella password.
 
     Se si imposta un numero maggiore, l'utente dovrà creare una password più complessa.
@@ -109,6 +106,14 @@ Per dettagli sul profilo di posta elettronica, vedere [Configurare l'accesso all
 - **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
 - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password usate in precedenza che non è possibile usare.
 
-<!--- ## Next steps
+## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
 
-[How to monitor device compliance](device-compliance-monitor.md)--->
+1. Scegliere un criterio configurato. I criteri esistenti sono in **Conformità del dispositivo** > **Criteri**.
+2. Selezionare il criterio e scegliere **Assegnazioni**. È possibile includere o escludere i gruppi di sicurezza di Azure Active Directory (AD).
+3. Scegliere **Gruppi selezionati** per visualizzare i gruppi di sicurezza di Azure AD. Selezionare i gruppi di utenti a cui si vuole applicare questo criterio e scegliere **Salva** per distribuire il criterio agli utenti.
+
+Il criterio è stato applicato agli utenti. I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità.
+
+## <a name="next-steps"></a>Passaggi successivi
+[Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi](actions-for-noncompliance.md)  
+[Monitorare i criteri di conformità dei dispositivi Intune](compliance-policy-monitor.md)

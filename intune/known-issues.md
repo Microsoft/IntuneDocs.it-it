@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/27/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d0a8a189e708ed140c3cda987a20cebb562fdb34
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
+ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemi noti in Microsoft Intune
 
@@ -63,9 +63,11 @@ Non fare clic sul pulsante **Carica** più volte per lo stesso token VPP. Se si 
 Per i dispositivi non registrati in Intune, è possibile specificare solo un dominio primario nel campo **Identità aziendale** nelle impostazioni per criteri di Windows Information Protection.
 Non sarà possibile salvare il criterio se si aggiungono altri domini tramite**Impostazioni avanzate** > **Perimetro di rete** > **Add a protected domain** (Aggiungi dominio protetto). Il messaggio di errore visualizzato verrà sostituito a breve da un messaggio più dettagliato.
 
-### <a name="cisco-anyconnect-vpn-client-support"></a>Supporto del client VPN Cisco AnyConnect
-La versione più recente del client VPN Cisco AnyConnect (4.0.07072) non è attualmente compatibile con Intune. Un aggiornamento futuro di Intune includerà la compatibilità con questa versione del client VPN. Fino ad allora, si consiglia di non aggiornare il client VPN Cisco AnyConnect e di continuare a usare la versione esistente.
+### <a name="cisco-anyconnect-and-cisco-legacy-anyconnect-vpn-client-support---ios"></a>Supporto per i client VPN Cisco AnyConnect e Cisco Legacy AnyConnect - iOS
 
+Nei dispositivi iOS l'integrazione del controllo dell'accesso alla rete non funziona con il nuovo client Cisco AnyConnect. È in corso un'operazione congiunta con Cisco per attivare l'integrazione del controllo dell'accesso alla rete.
+
+In [Creare profili VPN in Intune](vpn-settings-ios.md) sono disponibili informazioni più dettagliate sui client Cisco AnyConnect e Cisco Legacy AnyConnect.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Uso del tipo di password numerica con i dispositivi macOS Sierra
 

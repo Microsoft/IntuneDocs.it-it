@@ -15,18 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Come configurare le impostazioni di Intune per l'app Classroom iOS
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introduzione
-[Classroom](https://itunes.apple.com/app/id1085319084) è un'app progettata per consentire ai docenti di gestire l'insegnamento e di controllare i dispositivi degli studenti in aula. Con questa app, un docente può ad esempio:
+[Classroom](https://itunes.apple.com/app/id1085319084) è un'app progettata per consentire ai docenti di gestire l'insegnamento e di controllare i dispositivi degli studenti in aula. Ad esempio, l'app consente ai docenti di:
 
 - Aprire app nei dispositivi degli studenti
 - Bloccare e sbloccare lo schermo dell'iPad
@@ -34,18 +34,18 @@ ms.lasthandoff: 04/16/2018
 - Impostare gli iPad degli studenti su un segnalibro o il capitolo di un libro
 - Visualizzare lo schermo dell'iPad di uno studente su una TV Apple
 
-Usare il profilo di dispositivo **Istruzione** iOS di Intune e le informazioni in questo argomento per configurare l'app Classroom e i dispositivi in cui viene usata.
+Per configurare Classroom nel dispositivo, sarà necessario creare e configurare un profilo del dispositivo Istruzione per iOS in Intune.
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
 Tenere presenti le considerazioni seguenti prima di iniziare a configurare le impostazioni:
 
-- Sia gli iPad dei docenti che quelli degli studenti devono essere registrati in Intune
+- Sia gli iPad dei docenti che quelli degli studenti devono essere registrati in Intune.
 - Assicurarsi di aver installato l'app [Classroom Apple](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) nel dispositivo del docente. È possibile installare l'app manualmente o usare la [gestione delle app in Intune](app-management.md).
-- È necessario configurare i certificati per autenticare le connessioni tra i dispositivi di docenti e studenti (vedere il passaggio 2)
-- Gli iPad di docenti e studenti devono trovarsi nella stessa rete Wi-Fi e avere abilitato Bluetooth
-- L'app Classroom può essere eseguita su iPad con supervisione che eseguono iOS 9.3 o versione successiva
-- In questa versione, Intune supporta la gestione di scenari 1:1 in cui ogni studente ha un iPad proprio dedicato
+- È necessario configurare i certificati per autenticare le connessioni tra i dispositivi di docenti e studenti (vedere il passaggio 2, Creare e assegnare un profilo Istruzione per iOS in Intune).
+- Gli iPad di docenti e studenti devono trovarsi nella stessa rete Wi-Fi e avere abilitato Bluetooth.
+- L'app Classroom può essere eseguita su iPad con supervisione che eseguono iOS 9.3 o versione successiva.
+- In questa versione, Intune supporta la gestione di scenari 1:1 in cui ogni studente ha un iPad proprio dedicato.
 
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>Passaggio 1: Importare i dati dell'istituto di istruzione in Azure Active Directory
@@ -82,14 +82,14 @@ SDS sincronizza le informazioni dal sistema SIS e le archivia in Azure AD. Azure
 9.  Scegliere **Impostazioni** > **Configura**.
 
 
-Sono quindi necessari i certificati per stabilire una relazione di trust tra gli iPad dei docenti e quelli degli studenti. I certificati vengono usati per autenticare automaticamente le connessioni tra i dispositivi senza dover immettere nomi utente e password.
+Nella sezione successiva si creeranno i certificati per stabilire una relazione di trust tra gli iPad dei docenti e quelli degli studenti. I certificati vengono usati per autenticare automaticamente le connessioni tra i dispositivi senza dover immettere nomi utente e password.
 
 >[!IMPORTANT]
 >I certificati usati per docenti e studenti devono essere rilasciati da Autorità di certificazione (CA) diverse. È necessario creare due nuove CA subordinate connesse all'infrastruttura di certificati esistente: una per i docenti e una per gli studenti.
 
 I profili di formazione iOS supportano solo i certificati PFX. I certificati SCEP non sono supportati.
 
-I certificati creati devono supportare l'autenticazione server oltre all'autenticazione utente.
+I certificati creati devono supportare l'autenticazione server e l'autenticazione utente.
 
 ### <a name="configure-teacher-certificates"></a>Configurare i certificati per i docenti
 
@@ -97,13 +97,15 @@ Nel riquadro **Istruzione** scegliere **Certificati per docenti**.
 
 #### <a name="configure-teacher-root-certificate"></a>Configurare il certificato radice per i docenti
 
-In **Certificato radice per docenti** scegliere il pulsante Sfoglia per selezionare il certificato radice per docenti con estensione cer (DER o codifica Base64) oppure P7B (con o senza catena completa).
+In **Certificato radice per docenti** scegliere il pulsante Sfoglia. Selezionare il certificato radice con:
+- Estensione cer (con codifica DER o Base 64) 
+- Estensione P7B (con o senza catena completa)
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>Configurare il certificato PKCS#12 per i docenti
 
 In **Certificato PKCS#12 per docenti** configurare i valori seguenti:
 
-- **Formato nome soggetto**: Intune aggiunge automaticamente il prefisso **leader** al nome comune del certificato per il certificato per i docenti e il prefisso **member** per il certificato per gli studenti.
+- **Formato nome soggetto**: Intune aggiunge automaticamente il prefisso **leader** ai nomi comuni dei certificati per i docenti. Ai nomi comuni dei certificati per gli studenti viene aggiunto il prefisso **member**.
 - **Autorità di certificazione**: un'autorità di certificazione globale eseguita in un'edizione Enterprise di Windows Server 2008 R2 o versioni successive. L'opzione CA autonoma non è supportata. 
 - **Nome dell'autorità di certificazione**: immettere il nome dell'autorità di certificazione.
 - **Nome modello certificato**: immettere il nome di un modello di certificato aggiunto a una CA emittente. 
@@ -120,13 +122,15 @@ Al termine della configurazione dei certificati, scegliere **OK**.
 
 #### <a name="configure-student-root-certificate"></a>Configurare il certificato radice per gli studenti
 
-In **Certificato radice per studenti** scegliere il pulsante Sfoglia per selezionare il certificato radice per studenti con estensione cer (DER o codifica Base64) oppure P7B (con o senza catena completa).
+In **Certificato radice per studenti** scegliere il pulsante Sfoglia. Selezionare il certificato radice con:
+- Estensione cer (con codifica DER o Base 64) 
+- Estensione P7B (con o senza catena completa)
 
 #### <a name="configure-student-pkcs12-certificate"></a>Configurare il certificato PKCS#12 per gli studenti
 
 In **Certificato PKCS#12 per studenti** configurare i valori seguenti:
 
-- **Formato nome soggetto**: Intune aggiunge automaticamente il prefisso **leader** al nome comune del certificato per il certificato per i docenti e il prefisso **member** per il certificato per gli studenti.
+- **Formato nome soggetto**: Intune aggiunge automaticamente il prefisso **leader** ai nomi comuni dei certificati per i docenti. Ai nomi comuni dei certificati per gli studenti viene aggiunto il prefisso **member**.
 - **Autorità di certificazione**: un'autorità di certificazione globale eseguita in un'edizione Enterprise di Windows Server 2008 R2 o versioni successive. L'opzione CA autonoma non è supportata. 
 - **Nome dell'autorità di certificazione**: immettere il nome dell'autorità di certificazione.
 - **Nome modello certificato**: immettere il nome di un modello di certificato aggiunto a una CA emittente. 

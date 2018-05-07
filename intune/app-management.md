@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/09/2018
+ms.date: 04/11/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,40 +15,40 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 86cb0dfb67e81a7abbdc8f38dcbf5539b9855adb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1bc73c3637fc166bead7fd27b52aea2193995a26
+ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune consente all'amministratore IT di gestire le app per dispositivi mobili usate dai dipendenti dell'azienda. Questa funzionalità si aggiunge alla gestione dei dispositivi e alla protezione dei dati. Una delle priorità dell'uso di questa funzionalità è fare in modo che gli utenti finali abbiano accesso alle app necessarie per svolgere il proprio lavoro. Non sempre questo compito risulta semplice da svolgere, perché:
+Gli amministratori IT possono usare Microsoft Intune per gestire le app per dispositivi mobili usate dai dipendenti dell'azienda. Questa funzionalità si aggiunge alla gestione dei dispositivi e alla protezione dei dati. Una delle priorità di un amministratore è fare in modo che gli utenti finali abbiano accesso alle app necessarie per lavorare. Non sempre questo obiettivo risulta semplice da raggiungere, perché:
 - Esiste una vasta gamma di piattaforme per dispositivi e tipi di applicazione.
 - Potrebbe essere necessario gestire le app sia nei dispositivi aziendali che nei dispositivi personali degli utenti.
 - Occorre assicurarsi che rete e dati rimangano protetti.
 
 In aggiunta, potrebbe essere necessario assegnare e gestire le app su dispositivi non registrati in Intune.
 
-Intune offre un'ampia gamma di funzionalità che consente di usare le app necessarie nei dispositivi desiderati. Nella tabella seguente è disponibile un riepilogo delle funzionalità di gestione delle app. Dopo la tabella inizia a essere spiegato l'uso di Microsoft Intune nel portale di Azure.
+Intune offre un'ampia gamma di funzionalità che consente di usare le app necessarie nei dispositivi in cui le si vuole eseguire. Nella tabella seguente è disponibile un riepilogo delle funzionalità di gestione delle app: 
 
 ## <a name="app-management-capabilities-by-platform"></a>Funzionalità di gestione delle app per piattaforma
 
 ||||||
 |-|-|-|-|-|
-|&nbsp; |Android|iOS|Windows Phone 8.1|Windows 10|
+| |Android|iOS|Windows Phone 8.1|Windows 10|
 |Aggiunta e assegnazione delle applicazioni a utenti e dispositivi|Sì|Sì|Sì|Sì|
 |Assegnazione delle applicazioni a dispositivi non registrati con Intune|Sì|Sì|No|No|
 |Uso dei criteri di configurazione dell'applicazione per controllare il comportamento di avvio delle applicazioni|No|Sì|No|No|
 |Uso dei criteri di provisioning delle app per dispositivi mobili per rinnovare app scadute|No|Sì|No|No|
 |Protezione dei dati aziendali nelle applicazioni con criteri di protezione delle app|Sì|Sì|No|No<sup>1</sup>|
-|Rimozione solo dei dati aziendali da un'applicazione installata (Cancellazione selettiva di app)|Sì|Sì|Sì|Sì|
+|Rimozione solo dei dati aziendali da un'applicazione installata (cancellazione selettiva di app)|Sì|Sì|Sì|Sì|
 |Monitoraggio delle assegnazioni di app|Sì|Sì|Sì|Sì|
 |Assegnazione e monitoraggio delle app acquistate con Volume Purchase Program da un App Store|No|No|No|Sì|
-|Installazione obbligatoria delle applicazioni sui dispositivi (obbligatorio)<sup>2</sup>|Sì|Sì|Sì|Sì|
+|Installazione obbligatoria delle applicazioni nei dispositivi (obbligatorio)<sup>2</sup>|Sì|Sì|Sì|Sì|
 |Installazione facoltativa di dispositivi dal Portale aziendale (installazione disponibile)|Sì|Sì|Sì|Sì|
 |Installazione di un collegamento per un'applicazione sul Web (collegamento Web)|Sì|Sì|Sì|Sì|
 |App interne (line-of-business)|Sì|Sì|No|Sì|
@@ -59,66 +59,67 @@ Intune offre un'ampia gamma di funzionalità che consente di usare le app necess
 
 <sup>2</sup> Si applica solo ai dispositivi gestiti da Intune.
 
-## <a name="how-to-get-started"></a>Come iniziare
+## <a name="get-started"></a>Operazioni preliminari
 
-Il carico di lavoro **App per dispositivi mobili** contiene numerose informazioni sulle app ed è accessibile come indicato di seguito:
+Il carico di lavoro **App per dispositivi mobili** contiene numerose informazioni sulle app ed è accessibile seguendo questa procedura:
 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel pannello **Intune** scegliere **App per dispositivi mobili**.
+1. Accedere al [portale di Azure](https://portal.azure.com).
+2. Selezionare **Tutti i servizi** > **Intune**.  
+    Intune si trova nella sezione **Monitoraggio e gestione**.
+3. Nel riquadro **Microsoft Intune** selezionare **App per dispositivi mobili**.
 
-    ![Carico di lavoro App per dispositivi mobili](./media/apps-workload.png)
+    ![Riquadro del carico di lavoro "App per dispositivi mobili"](./media/apps-workload.png)
 
-Le informazioni riportate di seguito corrispondono alle opzioni disponibili nel pannello **App per dispositivi mobili**.
+Le quattro sezioni successive descrivono le opzioni disponibili nel riquadro **App per dispositivi mobili**.
 
 ### <a name="manage"></a>Gestire
-- **App**: selezionare questa opzione per aggiungere, visualizzare, assegnare e monitorare le app usate dai dipendenti. Per altre informazioni, vedere gli articoli seguenti:
-    - [Aggiungere app](apps-add.md)
-    - [Assegnare le app](apps-deploy.md)
-    - [Monitoraggio le applicazioni](apps-monitor.md)
-- **Criteri di configurazione dell'app**: consentono di specificare le impostazioni che potrebbero essere necessarie quando l'utente esegue un'app. Per altre informazioni, vedere gli articoli seguenti:
-    - [Criteri di configurazione delle app per Intune](app-configuration-policies-overview.md)
-        - [Criteri di configurazione delle app iOS](app-configuration-policies-use-ios.md)
-        - [Criteri di configurazione delle app Android](app-configuration-policies-use-android.md)
-- **Criteri di protezione delle app**: consentono di associare le impostazioni a un'app per proteggere i dati aziendali da essa usati. Ad esempio, si potrebbero limitare le funzionalità di comunicazione di un'applicazione con altre applicazioni o richiedere all'utente di immettere un PIN per accedere a un'app aziendale. Per altre informazioni, vedere l'articolo seguente:
-    - [App protection policies](app-protection-policies.md) (Criteri di protezione delle app)
-- **Cancellazione selettiva di app**: consente di rimuovere solo i dati aziendali da un dispositivo utente selezionato. Per altre informazioni, vedere l'articolo seguente:
-    - [App selective wipe](apps-selective-wipe.md) (Cancellazione selettiva di app)
-- **Profili di provisioning delle app iOS**: le app iOS includono un profilo di provisioning e codice firmato da un certificato. Quando il certificato scade, l'app non può più essere eseguita. Intune offre gli strumenti per assegnare in modo proattivo un nuovo criterio del profilo di provisioning ai dispositivi con app prossime alla scadenza. Per altre informazioni, vedere l'articolo seguente:
-    - [Profili di provisioning delle app iOS](app-provisioning-profile-ios.md)
+- **App**: selezionare questa opzione per aggiungere, visualizzare, assegnare e monitorare le app usate dai dipendenti. Per altre informazioni, vedere:
+    - [Aggiungere app](apps-add.md).
+    - [Assegnare le app](apps-deploy.md).
+    - [Monitorare le app](apps-monitor.md).
+- **Criteri di configurazione dell'app**: selezionare questa opzione per specificare le impostazioni che potrebbero essere necessarie quando un utente esegue un'app. Per altre informazioni, vedere:
+    - [Criteri di configurazione delle app per Intune](app-configuration-policies-overview.md).
+        - [Criteri di configurazione delle app iOS](app-configuration-policies-use-ios.md).
+        - [Criteri di configurazione delle app Android](app-configuration-policies-use-android.md).
+- **Criteri di protezione delle app**: selezionare questa opzione per associare le impostazioni a un'app e proteggere i dati aziendali da essa usati. Ad esempio, si potrebbero limitare le funzionalità di comunicazione di un'applicazione con altre applicazioni o richiedere all'utente di immettere un PIN per accedere a un'app aziendale. Per altre informazioni, vedere:
+    - [Criteri di protezione delle app](app-protection-policies.md).
+- **Cancellazione selettiva di app**: selezionare questa opzione per rimuovere solo i dati aziendali dal dispositivo di un utente selezionato. Per altre informazioni, vedere:
+    - [Cancellazione selettiva di app](apps-selective-wipe.md).
+- **Profili di provisioning delle app iOS**: le app iOS includono un profilo di provisioning e codice firmato da un certificato. Quando il certificato scade, l'app non può più essere eseguita. Intune offre gli strumenti per assegnare in modo proattivo un nuovo criterio del profilo di provisioning ai dispositivi con app prossime alla scadenza. Per altre informazioni, vedere:
+    - [Profili di provisioning delle app iOS](app-provisioning-profile-ios.md).
 
-Per altri dettagli, vedere [Manage apps](app-management.md) (Gestire le app).
+Per altre informazioni su questa sezione, vedere [Gestire le app](app-management.md).
 
 ### <a name="monitor"></a>Monitoraggio
-- **Licenze dell'app**: consente di visualizzare, assegnare e monitorare le app acquistate con Volume Purchase Program dagli App Store. Per altre informazioni, vedere gli articoli seguenti:
-    - [App iOS acquistate tramite Volume Purchase Program ](vpp-apps-ios.md)
-    - [App acquistate con Volume Purchase Program da Microsoft Store per le aziende](windows-store-for-business.md)
-- **App individuate**: mostra tutte le app assegnate da Intune e installate in un dispositivo.
-- **App Install Status** (Stato installazione app): mostra lo stato di un'assegnazione di un'app creata.
-- **Stato protezione app**: mostra lo stato dei criteri di protezione delle app per un utente selezionato.
-- **Log di controllo**: mostra le attività correlate alle app di Intune eseguite da tutti gli amministratori IT.
+- **Licenze dell'app**: consente di visualizzare, assegnare e monitorare le app acquistate con Volume Purchase Program dagli App Store. Per altre informazioni, vedere:
+    - [App iOS acquistate tramite Volume Purchase Program ](vpp-apps-ios.md).
+    - [App acquistate con Volume Purchase Program da Microsoft Store per le aziende](windows-store-for-business.md).
+- **App individuate**: visualizza tutte le app assegnate da Intune e installate in un dispositivo.
+- **Stato di installazione dell'app**: visualizza lo stato di un'assegnazione di app creata.
+- **Stato protezione app**: visualizza lo stato dei criteri di protezione delle app per un utente selezionato.
+- **Log di controllo**: visualizza le attività correlate alle app di Intune di tutti gli amministratori IT.
 
-Per altri dettagli, vedere [Eseguire il monitoraggio delle app](apps-monitor.md).
+Per altre informazioni su questa sezione, vedere [Monitorare le app](apps-monitor.md).
 
-### <a name="setup"></a>Installazione
-- **Token VPP iOS**: applicare e visualizzare le licenze Volume Purchase Program (VPP) di iOS.
+### <a name="set-up"></a>Imposta
+- **Token VPP iOS**: applicare e visualizzare le licenze Volume Purchase Program (VPP) di iOS. Per altre informazioni, vedere:
     - [App iOS acquistate con Volume Purchase Program](vpp-apps-ios.md)
 - **Certificato Windows Enterprise**: applicare o visualizzare lo stato di un certificato di firma del codice usato per distribuire le app line-of-business ai dispositivi Windows gestiti.
-- **Certificato Symantec per Windows**: applicare o visualizzare lo stato di un certificato di firma del codice Symantec necessario per distribuire i file appx XAP e WP8.x ai dispositivi Windows 10 Mobile.
-- **Microsoft Store per le aziende**: consente di configurare l'integrazione di Microsoft Store per le aziende. In seguito è possibile sincronizzare le applicazioni acquistate con Intune, assegnarle e monitorare l'uso delle licenze. Per altre informazioni, vedere l'articolo seguente:
-    - [App acquistate con Volume Purchase Program da Microsoft Store per le aziende](windows-store-for-business.md)
-- **Chiavi di sideload Windows**: è possibile aggiungere una chiave di sideload di Windows che può essere usata per installare un'app direttamente nei dispositivi, anziché pubblicare e scaricare l'app da Windows Store. Per altre informazioni, vedere l'articolo seguente:
-    - [Sideload di un'app di Windows](app-sideload-windows.md)
-- **Personalizzazione del portale aziendale**: consente di personalizzare il portale aziendale con il marchio della società. Per altre informazioni, vedere l'articolo seguente:
-    - [Company portal configuration](company-portal-app.md) (Configurazione del Portale aziendale)
+- **Certificato Symantec per Windows**: applicare o visualizzare lo stato di un certificato di firma del codice Symantec necessario per distribuire i file con estensione appx XAP e WP8.x ai dispositivi Windows 10 Mobile.
+- **Microsoft Store per le aziende**: consente di configurare l'integrazione di Microsoft Store per le aziende. In seguito è possibile sincronizzare le applicazioni acquistate con Intune, assegnarle e monitorare l'uso delle licenze. Per altre informazioni, vedere:
+    - [App acquistate con Volume Purchase Program da Microsoft Store per le aziende](windows-store-for-business.md).
+- **Chiavi di sideload Windows**: aggiungere una chiave di sideload di Windows che può essere usata per installare un'app direttamente nei dispositivi, invece di pubblicare e scaricare l'app da Windows Store. Per altre informazioni, vedere:
+    - [Sideload di un'app di Windows](app-sideload-windows.md).
+- **Personalizzazione del portale aziendale**: consente di personalizzare il portale aziendale con il marchio della società. Per altre informazioni, vedere:
+    - [Configurazione del Portale aziendale](company-portal-app.md).
 - **Categorie di app**: aggiungere ed eliminare nomi di categoria di app.
-- **Android for Work**: approvare e sincronizzare le app approvate per l'organizzazione. Per altre informazioni, vedere l'articolo seguente:
-    - [App Android for Work](apps-add-android-for-work.md)
+- **Android for Work**: approvare e sincronizzare le app approvate per l'organizzazione. Per altre informazioni, vedere:
+    - [App Android for Work](apps-add-android-for-work.md).
 
 ### <a name="help-and-support"></a>Guida e supporto tecnico
-- **Guida e supporto tecnico**: risolvere i problemi, richiedere supporto o visualizzare lo stato di Intune. Per altre informazioni, vedere l'articolo seguente:
-    - [Risoluzione dei problemi](help-desk-operators.md)
+- **Guida e supporto tecnico**: consente di risolvere i problemi, richiedere supporto o visualizzare lo stato di Intune. Per altre informazioni, vedere:
+    - [Risoluzione dei problemi](help-desk-operators.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Come aggiungere un'app a Microsoft Intune](apps-add.md)
+- [Aggiungere un'app a Microsoft Intune](apps-add.md)
