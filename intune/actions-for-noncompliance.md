@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi - Intune
 
@@ -77,7 +77,10 @@ Per impostazione predefinita, Intune crea automaticamente un'azione in caso di m
 1. Nel [portale di Azure](https://portal.azure.com) aprire **Microsoft Intune** e selezionare **Conformità del dispositivo**.
 2. Selezionare **Criteri**, scegliere uno dei criteri e quindi selezionare **Proprietà**. 
 
-   Non esiste ancora un criterio? Creare un criterio per [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o un'altra piattaforma.
+  Non esiste ancora un criterio? Creare un criterio per [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o un'altra piattaforma.
+  
+  > [!NOTE]
+  > Attualmente i dispositivi JAMF e i dispositivi selezionati con i gruppi di dispositivi non possono ricevere le azioni di conformità.
 
 3. Selezionare **Azioni per la mancata conformità**, quindi selezionare **Aggiungi** per immettere i parametri dell'azione. È possibile scegliere il modello di messaggio creato in precedenza, aggiungere altri destinatari e aggiornare la pianificazione del periodo di tolleranza. È possibile indicare il numero di giorni (da 0 a 365) nella pianificazione, quindi applicare i criteri di accesso condizionale. Se si immette **0** come numero di giorni, l'accesso condizionale blocca **immediatamente** l'accesso alle risorse aziendali.
 

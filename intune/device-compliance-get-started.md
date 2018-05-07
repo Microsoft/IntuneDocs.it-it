@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introduzione ai criteri di conformità dei dispositivi in Intune
 
@@ -80,6 +80,8 @@ Per usare i criteri di conformità dei dispositivi, devono essere soddisfatti i 
   - Windows 10
 
 - Per segnalare il proprio stato di conformità, i dispositivi devono essere registrati in Intune
+
+- Sono supportati i dispositivi registrati per un utente o i dispositivi senza utente primario. Più contesti utente non sono supportati.
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Funzionamento dei criteri di conformità Intune con Azure AD
 
@@ -148,9 +150,9 @@ Ai dispositivi conformi alle regole dei criteri è possibile consentire l'access
 È anche possibile usare i criteri di conformità dei dispositivi senza accesso condizionale. In tal caso, i dispositivi vengono valutati e segnalati in base allo stato di conformità. Può ad esempio essere utile segnalare quanti dispositivi non sono crittografati o quali dispositivi sono stati manomessi con jailbreak o root. Quando si usano i criteri di conformità senza accesso condizionale, non vengono applicate limitazioni per l'accesso alle risorse aziendali.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Modi per distribuire i criteri di conformità dei dispositivi
-È possibile distribuire i criteri di conformità ad utenti in gruppi di utenti o a dispositivi in gruppi di dispositivi. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata sui dispositivi dell’utente.
+È possibile distribuire i criteri di conformità a utenti in gruppi di utenti o a dispositivi in gruppi di dispositivi. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata su tutti i dispositivi dell'utente.
 
-Per i dispositivi nei gruppi di dispositivi, le **Impostazioni dei criteri di conformità** (portale di Azure > Conformità del dispositivo) includono
+La sezione **Impostazioni dei criteri di conformità** (portale di Azure > Conformità del dispositivo) include:
 
 - **Contrassegna i dispositivi senza criteri di conformità assegnati come**: questa proprietà ha due valori:
 

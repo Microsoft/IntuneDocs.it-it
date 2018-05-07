@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrizione dei dispositivi per Windows 10 (e versioni successive) in Intune
 Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di Microsoft Intune configurabili per i dispositivi che eseguono Windows 10.
@@ -370,6 +370,11 @@ Se i file sull'unità sono di sola lettura, Defender non può rimuovere il malwa
 - **URI della risorsa del servizio di stampa**: URI della risorsa OAuth per il servizio di stampa come configurato nel portale di Azure.
 - **Numero massimo di stampanti da sottoporre a query (solo dispositivi mobili)**: numero massimo di stampanti da sottoporre a query da un endpoint di individuazione.
 - **URI della risorsa del servizio di individuazione**: URI della risorsa OAuth per il servizio di individuazione delle stampanti come configurato nel portale di Azure.
+
+## <a name="local-printer"></a>Stampante locale
+- **Stampanti**: elenco delle stampanti locali che sono state aggiunte.
+- **Stampante predefinita**: impostare la stampante predefinita.
+- **User access to add new printers** (Accesso utente per l'aggiunta di nuove stampanti): consentire o bloccare l'uso delle stampanti locali.
 
 ## <a name="reporting-and-telemetry"></a>Creazione di report e telemetria
 

@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 67e2630fc2a7ccd75ac86c797e36c389757d908a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 46857dcf24befb0cf552769d48b99020c36e3e5b
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurare una rete privata virtuale (VPN) per app in Intune per dispositivi iOS
 
@@ -27,13 +27,13 @@ ms.lasthandoff: 04/26/2018
 
 VPN per App è attualmente disponibile per i provider seguenti: 
 
- - Pulse Connect Secure
  - Checkpoint Remote Access VPN
  - F5
+ - Pulse Connect Secure
  - SonicWall
 
 
-## <a name="prerequisites-for-the-per-app-vpn"></a>Prerequisiti per VPN per app
+## <a name="prerequisites-for-per-app-vpn"></a>Prerequisiti per VPN per app
 
 Per dimostrare la propria identità, il server VPN presenta il certificato che deve essere accettato senza prompt da parte del dispositivo. Per garantire l'approvazione automatica del certificato, è possibile creare un profilo certificato attendibile con un certificato radice del server VPN emesso dalla CA. 
 
