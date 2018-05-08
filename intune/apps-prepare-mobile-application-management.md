@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparare le app line-of-business per i criteri di protezione delle app
 
@@ -70,8 +70,8 @@ Per altre informazioni sull'SDK, vedere la [panoramica](app-sdk.md). Per un'intr
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Sì: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|Sì: usare il [plug-in Cordova per Intune App SDK](app-sdk-cordova.md).|
-|**Android**| Sì: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|Sì: usare il [plug-in Cordova per Intune App SDK](app-sdk-cordova.md).|
+|**iOS**|Sì: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|No|
+|**Android**| Sì: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|No|
 
 ## <a name="feature-comparison"></a>Confronto delle funzionalità
 Questa tabella elenca le impostazioni che è possibile usare per App SDK e per lo strumento di wrapping delle app.
