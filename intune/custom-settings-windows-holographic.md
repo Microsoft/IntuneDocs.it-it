@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d1825d99243654c9fecac7729153a95234d435ff
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: d15e464ed77499c28bbcaf94289607ced48c140f
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Impostazioni personalizzate per i dispositivi che eseguono Windows Holographic for Business in Intune
 
@@ -31,19 +31,18 @@ Se si sta cercando una determinata impostazione, tenere presente che il [profilo
 2. In **Crea profilo** scegliere **Impostazioni** per aggiungere una o più impostazioni URI OMA.
 3. In **Impostazioni OMA-URI personalizzate** fare clic su **Aggiungi** per aggiungere un nuovo valore. È anche possibile fare clic su **Esporta** per creare un elenco di tutti i valori configurati in un file con valori delimitati da virgole (estensione CSV).
 4. Per ogni impostazione URI OMA che si vuole aggiungere, immettere le informazioni seguenti:
-    - **Nome impostazione**: immettere un nome univoco per l'impostazione URI OMA per identificarla nell'elenco delle impostazioni.
-    - **Descrizione impostazione**: immettere facoltativamente una descrizione per l'impostazione.
-    - **Tipo di dati**: scegliere tra:
-        - **Stringa**
-        - **Stringa (XML)**
-        - **Data e ora**
-        - **Intero**
-        - **A virgola mobile**
-        - **Booleano**
-    - **URI OMA (maiuscole/minuscole)**: specificare l'impostazione URI OMA per cui si vuole fornire un'impostazione.
-    - **Valore**: specificare il valore da associare all'impostazione URI OMA specificata.
-1. Al termine tornare a **Crea profilo** e fare clic su **Crea**.
-Il profilo viene creato e visualizzato nell'elenco dei profili.
+  - **Nome impostazione**: immettere un nome univoco per l'impostazione URI OMA per identificarla nell'elenco delle impostazioni.
+  - **Descrizione impostazione**: immettere facoltativamente una descrizione per l'impostazione.
+  - **Tipo di dati**: scegliere tra:
+    - **Stringa**
+    - **Stringa (XML)**
+    - **Data e ora**
+    - **Intero**
+    - **A virgola mobile**
+    - **Booleano**
+  - **URI OMA (maiuscole/minuscole)**: immettere il valore URI OMA per cui si vuole specificare un'impostazione.
+  - **Valore**: immettere il valore da associare al valore URI OMA immesso.
+5. Al termine tornare a **Crea profilo** e fare clic su **Crea**. Il profilo viene creato e visualizzato nell'elenco dei profili.
 
 ## <a name="recommended-custom-settings"></a>Impostazioni personalizzate consigliate
 
@@ -52,51 +51,51 @@ Le impostazioni seguenti sono utili per i dispositivi che eseguono Windows Holog
 ### <a name="allowfastreconnecthttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-authenticationauthentication-allowfastreconnect"></a>[AllowFastReconnect](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect)
 
 ---
-|URI OMA|Tipo di dati  |
-|---------|---------|
-|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Intero<br>0 - non consentito<br>1 - consentito (impostazione predefinita)|
+|URI OMA|Tipo di dati|
+|---|---|
+|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|Intero<br/>0 - non consentito<br/>1 - consentito (impostazione predefinita)|
 
 ### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
 ---
-|URI OMA|Tipo di dati  |
-|---------|---------|
-|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Intero<br>0 - non consentito<br>1 - consentito (impostazione predefinita)|
+|URI OMA|Tipo di dati|
+|---|---|
+|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|Intero<br/>0 - non consentito<br/>1 - consentito (impostazione predefinita)|
 
 ### <a name="allowupdateservicehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-allowupdateservice"></a>[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
 ---
-|URI OMA|Tipo di dati  |
-|---------|---------|
-|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Intero<br>0 - servizio di aggiornamento non consentito <br>1 - servizio di aggiornamento consentito (impostazione predefinita)|
+|URI OMA|Tipo di dati|
+|---|---|
+|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|Intero<br/>0 - servizio di aggiornamento non consentito <br/>1 - servizio di aggiornamento consentito (impostazione predefinita)|
 
 ### <a name="updateserviceurlhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-updateserviceurl"></a>[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
 
 ---
-|URI OMA|Tipo di dati  |
-|---------|---------|
-|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Stringa<br>URL - il dispositivo verifica la disponibilità di aggiornamenti dal server WSUS all'URL specificato.<br>Non configurato - il dispositivo verifica la disponibilità di aggiornamenti da Microsoft Update.|
+|URI OMA|Tipo di dati|
+|---|---|
+|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Stringa<br/>URL - il dispositivo verifica la disponibilità di aggiornamenti dal server WSUS all'URL specificato.<br/>Non configurato - il dispositivo verifica la disponibilità di aggiornamenti da Microsoft Update.|
 
 ### <a name="requireupdatesapprovalhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-requireupdateapproval"></a>[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 
 ---
-|URI OMA|Tipo di dati  |
-|---------|---------|
-|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Intero<br>0 - non configurato. Il dispositivo installa tutti gli aggiornamenti applicabili.<br>1 - il dispositivo installa solo gli aggiornamenti sia applicabili sia inclusi nell'elenco degli aggiornamenti approvati. Impostare questo criterio su 1 se il personale IT vuole controllare la distribuzione degli aggiornamenti nei dispositivi, ad esempio quando sono necessari test prima della distribuzione.|
+|URI OMA|Tipo di dati|
+|---|---|
+|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|Intero<br/>0 - non configurato. Il dispositivo installa tutti gli aggiornamenti applicabili.<br/>1 - il dispositivo installa solo gli aggiornamenti sia applicabili sia inclusi nell'elenco degli aggiornamenti approvati. Impostare questo criterio su 1 se il personale IT vuole controllare la distribuzione degli aggiornamenti nei dispositivi, ad esempio quando sono necessari test prima della distribuzione.|
 
 ### <a name="approvedupdateshttpsdocsmicrosoftcomwindowsclient-managementmdmupdate-csp"></a>[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
 
 ---
-|URI OMA|Tipo di dati  |
-|---------|---------|
-|./Vendor/MSFT/Update/ApprovedUpdates/*GUID*<br><br>**Importante**<br>È necessario leggere e accettare i contratti di licenza con l'utente finale per conto degli utenti finali. La mancata accettazione rappresenta una violazione degli obblighi legali e contrattuali.|Nodo per le approvazioni degli aggiornamenti e l'accettazione del contratto di licenza con l'utente finale per conto dell'utente finale.<br/><br/>Per altre informazioni, vedere [Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp) (Provider del servizio di configurazione Update).|
+|URI OMA|Tipo di dati|
+|---|---|
+|./Vendor/MSFT/Update/ApprovedUpdates/*GUID*<br/><br/>**Importante**<br/>È necessario leggere e accettare i contratti di licenza con l'utente finale per conto degli utenti finali. La mancata accettazione rappresenta una violazione degli obblighi legali e contrattuali.|Nodo per le approvazioni degli aggiornamenti e l'accettazione del contratto di licenza con l'utente finale per conto dell'utente finale.<br/><br/>Per altre informazioni, vedere [Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp) (Provider del servizio di configurazione Update).|
 
 ### <a name="applicationlaunchrestrictionshttpsdocsmicrosoftcomwindowsclient-managementmdmapplocker-csp"></a>[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)
 
 ---
-|URI OMA|Tipo di dati  |
-|---------|---------|
-|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**Importante**<br>L'articolo dedicato al provider del servizio di crittografia AppLocker usa esempi XML con caratteri di escape. Per configurare le impostazioni con profili personalizzati di Intune, è necessario usare XML semplice.|Stringa<br>Per altre informazioni, vedere [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) (Provider del servizio di configurazione AppLocker).|
+|URI OMA|Tipo di dati|
+|----|---|
+|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**Importante**<br/>L'articolo dedicato al provider del servizio di crittografia AppLocker usa esempi XML con caratteri di escape. Per configurare le impostazioni con profili personalizzati di Intune, è necessario usare XML semplice.|Stringa<br/>Per altre informazioni, vedere [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) (Provider del servizio di configurazione AppLocker).|
 
 ## <a name="find-the-policies-you-can-configure"></a>Individuare i criteri che è possibile configurare
 

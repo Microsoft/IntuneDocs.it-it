@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi Windows in Intune
 
@@ -94,7 +94,7 @@ I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione de
     - Simboli
     - Numeri
 
-    Se si imposta un numero maggiore, l'utente dovrà creare una password più complessa. Per i dispositivi che eseguono Windows e prevedono l'accesso con un account Microsoft, i criteri di conformità non eseguono correttamente la convalida se la lunghezza minima della password è maggiore di otto caratteri e il numero minimo di set di caratteri è maggiore di due.
+    Se si imposta un numero maggiore, l'utente dovrà creare una password più complessa. Per i dispositivi che eseguono Windows e prevedono l'accesso con un account Microsoft, i criteri di conformità non eseguono correttamente la convalida se la lunghezza minima della password è maggiore di otto caratteri o il numero minimo di set di caratteri è maggiore di due.
 
 - **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere di nuovo la password.
 - **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
@@ -121,23 +121,23 @@ Per informazioni su come funziona il servizio di attestazione dell'integrità, v
 
 ### <a name="device-properties"></a>Proprietà dispositivo
 
-- **Versione minima richiesta del sistema operativo**: immettere il numero major.minor.build.CU. Il numero di build.CU deve corrispondere alla versione restituita dal comando `ver` o `winver`.
+- **Versione minima del sistema operativo**: immettere la versione minima ammessa, usando il formato numerico major.minor.build.CU. Il numero di build.CU deve corrispondere alla versione restituita dal comando `ver` o `winver`.
 
   Quando un dispositivo ha una versione precedente rispetto alla versione del sistema operativo specificata, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e dopo l'aggiornamento potrà accedere alle risorse aziendali.
 
-- **Versione massima consentita del sistema operativo**: immettere il numero major.minor.build.CU. Il numero di build.CU deve corrispondere alla versione restituita dal comando `ver` o `winver`.
+- **Versione massima del sistema operativo**: immettere la versione massima consentita, usando il formato numerico major.minor.build.CU. Il numero di build.CU deve corrispondere alla versione restituita dal comando `ver` o `winver`.
 
   Quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali risulterà bloccato e l'utente dovrà contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
 
-- **Versione minima richiesta del sistema operativo per i dispositivi mobili**: immettere il numero major.minor.build.
+- **Versione minima richiesta del sistema operativo per i dispositivi mobili**: immettere la versione minima consentita, usando il formato numerico major.minor.build.
 
   Quando un dispositivo ha una versione precedente rispetto alla versione del sistema operativo specificata, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e dopo l'aggiornamento potrà accedere alle risorse aziendali.
 
-- **Versione massima richiesta del sistema operativo per i dispositivi mobili**: immettere il numero major.minor.build.
+- **Versione massima richiesta del sistema operativo per i dispositivi mobili**: immettere la versione massima consentita, usando il formato numerico major.minor.build.
 
   Quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali risulterà bloccato e l'utente dovrà contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
 
-- **Build valide dei sistemi operativi**: immettere un intervallo per le versioni dei sistemi operativi accettabili, incluse la versione minima e quella massima.
+- **Build valide dei sistemi operativi**: immettere un intervallo per le versioni dei sistemi operativi accettabili, incluse la versione minima e quella massima. È anche possibile **esportare** un elenco di file con valori delimitati da virgole (CSV) dei numeri di build del sistema operativo consentiti.
 
 ### <a name="system-security-settings"></a>Impostazioni di sicurezza del sistema
 
