@@ -1,25 +1,25 @@
 ---
-title: "Creare criteri di conformità dei dispositivi MTD con Microsoft Intune"
-titlesuffix: 
-description: "Creare criteri di conformità dei dispositivi di Intune che usano i livelli di minaccia del partner MTD per determinare se un dispositivo mobile può accedere alle risorse aziendali."
-keywords: 
+title: Creare criteri di conformità dei dispositivi MTD con Microsoft Intune
+titlesuffix: ''
+description: Creare criteri di conformità dei dispositivi di Intune che usano i livelli di minaccia del partner MTD per determinare se un dispositivo mobile può accedere alle risorse aziendali.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1152473206826aa2e3f63c7196a3d0538101a948
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creare criteri di conformità dei dispositivi Mobile Threat Defense (MTD) con Intune
 
@@ -36,7 +36,7 @@ Prerequisiti dei criteri di conformità dei dispositivi con MTD:
 
 -   Configurazione dell'integrazione di MTD con Intune
 
-## <a name="to-create-a-mtd-device-compliance-policy"></a>Per creare criteri di conformità dei dispositivi per MTD
+## <a name="to-create-an-mtd-device-compliance-policy"></a>Per creare criteri di conformità per dispositivi MTD
 
 1.  Andare nel [portale di Azure](https://portal.azure.com/) e accedere con le credenziali di Intune.
 
@@ -65,7 +65,7 @@ Prerequisiti dei criteri di conformità dei dispositivi con MTD:
 > [!IMPORTANT]
 > Se si creano criteri di accesso condizionale per Office 365 o altri servizi, viene eseguita la valutazione della conformità dei dispositivi e per i dispositivi non conformi viene bloccato l'accesso alle risorse aziendali fino alla risoluzione della condizione di minaccia nei dispositivi interessati.
 
-## <a name="to-assign-a-mtd-device-compliance-policy"></a>Per assegnare criteri di conformità dei dispositivi per MTD
+## <a name="to-assign-an-mtd-device-compliance-policy"></a>Per assegnare criteri di conformità per dispositivi MTD
 
 Per assegnare agli utenti criteri di conformità dei dispositivi, scegliere criteri configurati in precedenza. I criteri esistenti sono disponibili nel riquadro **Conformità del dispositivo - criteri**.
 

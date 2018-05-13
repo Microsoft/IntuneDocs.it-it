@@ -1,110 +1,151 @@
 ---
-title: Configurare l'integrazione di Skycure con Microsoft Intune
-titlesuffix: 
-description: Come configurare la soluzione Skycure Mobile Threat Defense (MTD) con Microsoft Intune per controllare l'accesso dei dispositivi mobili alle risorse aziendali.
-keywords: 
+title: Configurare l'integrazione di Symantec con Microsoft Intune
+titlesuffix: ''
+description: Come configurare la soluzione Symantec Endpoint Protection Mobile con Microsoft Intune per controllare l'accesso dei dispositivi mobili alle risorse aziendali.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a09806afae72f60961a94ab27707b4851006cf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: e43e3ff09e30a934e22b2553b8ee7c8691d22bb3
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="set-up-the-skycure-integration-with-intune"></a>Configurare l'integrazione di Skycure con Intune
+# <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Configurare l'integrazione di Symantec Endpoint Protection Mobile con Intune
 
-Per integrare la soluzione Skycure Mobile Threat Defense con Intune, eseguire la procedura seguente. È necessario aggiungere app Skycure in Azure AD per usufruire di funzionalità di accesso Single Sign-On.
+Completare i passaggi seguenti per integrare la soluzione Symantec Endpoint Protection Mobile (SEP Mobile) con Intune. È necessario aggiungere app SEP Mobile in Azure AD per usufruire di funzionalità di accesso Single Sign-On.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-### <a name="azure-ad-account-used-to-integrate-intune-and-skycure"></a>Account di Azure AD usato per l'integrazione di Intune e Skycure
+### <a name="azure-ad-account-used-to-integrate-intune-and-sep-mobile"></a>Account di Azure AD usato per l'integrazione di Intune e SEP Mobile
 
--   Prima di avviare la procedura di configurazione di base di Skycure, verificare che l'account di Azure AD sia configurato correttamente nella [console di gestione di Skycure](https://aad.skycure.com).
+-   Prima di avviare la procedura di configurazione di base di SEP Mobile, verificare che l'account Azure AD sia configurato correttamente nella [console di gestione di Symantec Endpoint Protection Mobile](https://aad.skycure.com).
+- L'account Azure AD deve essere un account amministratore globale per eseguire l'integrazione.
+### <a name="network-setup"></a>Configurazione della rete
+
+Per verificare che la rete sia configurata correttamente per l'integrazione con l'installazione di SEP Mobile, vedere l'articolo di Symantec [Setting up your network configuration](https://portal.skycure.com/articles/Documentation/Setting-up-your-network-configuration-26-8-2016) (Impostazione della configurazione di rete).
 
 ### <a name="full-integration-vs-read-only"></a>Confronto tra integrazione completa e integrazione di sola lettura
 
-Intune supporta due modalità di integrazione con Intune:
+SEP Mobile supporta due modalità di integrazione con Intune:
 
--   **Integrazione di sola lettura (configurazione di base)**: esegue solo l'inventario dei dispositivi da Azure Active Directory e li inserisce nella console di Skycure.
+-   **Integrazione di sola lettura (configurazione di base)**: esegue solo l'inventario dei dispositivi da Azure Active Directory e li inserisce nella console di gestione di Symantec Endpoint Protection Mobile.
 <br>
-    -   Se le caselle **Report the health and risk of devices to Intune** (Segnala l'integrità e i rischi dei dispositivi a Intune) e **Also report security incidents to Intune** (Segnala anche gli eventi imprevisti per la sicurezza a Intune) non sono selezionate nella console di gestione di Skycure, l'integrazione è di sola lettura e pertanto lo stato dei dispositivi (conforme o non conforme) rimarrà sempre invariato in Intune.
+    -   Se le caselle **Report the health and risk of devices to Intune** (Segnala l'integrità e i rischi dei dispositivi a Intune) e **Also report security incidents to Intune** (Segnala anche gli eventi imprevisti per la sicurezza a Intune) non sono selezionate nella console di gestione di Symantec Endpoint Protection Mobile, l'integrazione è di sola lettura e quindi lo stato di un dispositivo (conforme o non conforme) rimarrà sempre invariato in Intune.
 <br></br>
--   **Integrazione completa**: consente a Skycure di segnalare a Intune i dettagli relativi ai rischi e agli eventi imprevisti per la sicurezza, creando così una comunicazione bidirezionale tra i due servizi cloud.
+-   **Integrazione completa**: consente a SEP Mobile di segnalare a Intune i dettagli relativi ai rischi e agli eventi imprevisti per la sicurezza, creando così una comunicazione bidirezionale tra i due servizi cloud.
 
-### <a name="how-the-skycure-apps-are-used-with-azure-ad-and-intune"></a>Come vengono usate le app Skycure con Azure AD e Intune?
+### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>Uso delle app SEP Mobile con Azure AD e Intune
 
 -   **App iOS**: consente agli utenti finali di accedere ad Azure AD usando un'app iOS.
 
 -   **App Android**: consente agli utenti finali di accedere ad Azure AD usando un'app Android.
 
--   **App di gestione**: questa è l'app multi-tenant Azure AD Skycure che consente le comunicazioni da servizio a servizio con Intune.
+-   **App di gestione**: questa è l'app multi-tenant Azure AD SEP Mobile che consente le comunicazioni da servizio a servizio con Intune.
 
-## <a name="to-set-up-the-read-only-integration-between-intune-and-skycure"></a>Per configurare l'integrazione di sola lettura tra Intune e Skycure
+## <a name="to-set-up-the-read-only-integration-between-intune-and-sep-mobile"></a>Per configurare l'integrazione di sola lettura tra Intune e SEP Mobile
 
 > [!IMPORTANT]
-> Le credenziali di amministratore di Skycure sono costituite da un account di posta elettronica che deve corrispondere a un utente valido in Azure Active Directory, altrimenti il tentativo di accesso non riesce. Skycure usa Azure Active Directory per autenticare l'amministratore tramite Single Sign-On (SSO).
+> Le credenziali di amministratore di SEP Mobile devono essere costituite da un account di posta elettronica appartenente a un utente valido in Azure Active Directory, altrimenti il tentativo di accesso non riesce. SEP Mobile usa Azure Active Directory per autenticare l'amministratore con Single Sign-On (SSO).
 
-1.  Passare alla [console di gestione di Skycure](https://aad.skycure.com).
+1.  Andare alla [console di gestione di Symantec Endpoint Protection Mobile](https://aad.skycure.com).
 
-2.  Immettere le **credenziali di amministratore di Skycure** e quindi fare clic su **Continue** (Continua).
+2.  Immettere le **credenziali amministratore SEP Mobile** e quindi scegliere **Continue** (Continua).
 
-3.  Scegliere **Settings** (Impostazioni) e quindi **Basic Setup** (Configurazione di base) in **Intune Integration** (Integrazione di Intune).
+3.  Scegliere **Settings** (Impostazioni) e in **Intune Integration** (Integrazione di Intune) scegliere **Basic Setup** (Configurazione di base).
 
-4.  Nell'etichetta **iOS App** (App iOS) fare clic su **Add to Active Directory** (Aggiungi ad Active Directory).
+4.  Accanto a **iOS App** (App iOS) scegliere **Add to Active Directory** (Aggiungi ad Active Directory).
 
-    ![Immagine dell'app iOS nella console di gestione di Skycure](./media/skycure-setup-1.png)
+    ![Immagine dell'app iOS nella [console di gestione di Symantec Endpoint Protection Mobile]](./media/symantec-portal-basic-add.png)
 
-5.  Verrà visualizzata la pagina di accesso. Immettere le credenziali di Intune e quindi fare clic su **Accept** (Accetto).
+5.  Quando viene visualizzata la pagina di accesso, immettere le credenziali di Intune e quindi scegliere **Accept** (Accetto).
 
-    ![Immagine del prompt di accesso a Intune dell'app iOS](./media/skycure-setup-2.png)
+    ![Immagine del prompt di accesso a Intune dell'app iOS](./media/symantec-portal-basic-accept.png)
 
-6.  Dopo che l'app è stata aggiunta in Azure AD, viene visualizzato un messaggio per indicare il completamento dell'operazione nella console di gestione di Skycure.
+6.  Dopo avere aggiunto l'app in Azure AD, si noterà l'indicazione che l'app è stata aggiunta correttamente.
 
-    ![Immagine della schermata di completamento dell'app iOS](./media/skycure-setup-3.png)
+    ![Immagine della schermata di completamento dell'app iOS](./media/symantec-portal-basic-added.png)
 
-> [!NOTE]
-> Ripetere lo stesso processo per l'**app Android** e l'**app di gestione** di Skycure.
+7. Ripetere questi passaggi per le app **SEP Mobile Android** e **Management** (Gestione).
 
-### <a name="add-an-azure-ad-security-group-into-skycure"></a>Aggiungere un gruppo di sicurezza di Azure AD in Skycure
+### <a name="add-an-azure-ad-security-group-into-sep-mobile"></a>Aggiungere un gruppo di sicurezza di Azure AD in SEP Mobile
 
-È necessario aggiungere un gruppo di sicurezza di Azure AD contenente tutti i dispositivi che eseguono Skycure.
+È necessario aggiungere un gruppo di sicurezza di Azure AD contenente tutti i dispositivi che eseguono SEP Mobile.
 
--  Immettere e selezionare tutti i gruppi di sicurezza dei dispositivi che eseguono Skycure e quindi fare clic su **Apply changes** (Applica modifiche).
+-  Immettere e selezionare tutti i gruppi di sicurezza dei dispositivi che eseguono SEP Mobile e quindi salvare le modifiche.
 
-    ![Immagine che illustra dove configurare la console di gestione di Skycure dei gruppi di sicurezza](./media/skycure-setup-4.png)
+    ![Immagine che mostra i gruppi utenti per le app SEP Mobile](./media/symantec-portal-basic-groups.png)   
 
-Skycure sincronizza i dispositivi che eseguono il servizio Mobile Threat Defense con i gruppi di sicurezza di Azure AD.
+SEP Mobile sincronizza i dispositivi che eseguono il servizio Mobile Threat Defense con i gruppi di sicurezza di Azure AD.
 
-![Immagine che illustra la configurazione dei gruppi di sicurezza completata nella console di gestione di Skycure](./media/skycure-setup-5.png)
+![Immagine che illustra la configurazione dei gruppi di sicurezza completata nella console di gestione di SEP Mobile](./media/symantec-portal-basic-status.png)
 
-## <a name="set-up-the-full-integration-between-intune-and-skycure"></a>Per configurare l'integrazione completa tra Intune e Skycure
+## <a name="to-set-up-the-full-integration-between-intune-and-sep-mobile"></a>Per configurare l'integrazione completa tra Intune e SEP Mobile
 
-1.  Passare alla [console di gestione di Skycure](https://aad.skycure.com).
+### <a name="retrieve-the-directory-id-in-azure-ad"></a>Recuperare l'ID directory in Azure AD
 
-2.  Immettere le **credenziali di amministratore di Skycure** e quindi fare clic su **Continue** (Continua).
+1. Accedere al [portale di Azure](https://portal.azure.com).
 
-3.  Scegliere **Settings** (Impostazioni) e quindi **Full Integration** (Integrazione completa) in **Intune Integration** (Integrazione di Intune).
+2. Digitare "Active Directory" nella casella di ricerca e quindi selezionare **Azure Active Directory**.
 
-4.  Controllare le impostazioni seguenti:
+3. Scegliere **Proprietà**.
 
-    a.  Report the health and risk of device to Intune (Segnala l'integrità e i rischi dei dispositivi a Intune)
+4. Accanto all'**ID directory** scegliere l'icona Copia e quindi incollarlo in una posizione sicura. Questo identificatore sarà necessario in un passaggio successivo.
 
-    b.  Also report security incidents to Intune (Segnala anche gli eventi imprevisti per la sicurezza a Intune)
+    ![Immagine che mostra l'ID directory nel portale di Azure](./media/symantec-azure-portal-directory-ID.png)
 
-5.  Fare clic su **Apply changes** (Applica modifiche).
+### <a name="optional-create-a-dedicated-security-group-for-devices-that-need-to-run-the-sep-mobile-apps"></a>(Facoltativo) Creare un gruppo di sicurezza dedicato per i dispositivi che devono eseguire le app SEP Mobile
+1. Nel [portale di Azure](https://portal.azure.com), in **Gestione** scegliere **Utenti e gruppi** e quindi scegliere **Tutti i gruppi**.
 
-    ![Immagine che illustra l'integrazione completa di Skycure completata](./media/skycure-setup-6.png)
+2. Fare clic sul pulsante **Aggiungi**. Digitare un **nome** di gruppo. Sotto **Tipo di appartenenza** scegliere **Assegnata**.
 
+3. Nel pannello **Membri** selezionare i membri del gruppo e quindi scegliere il pulsante **Seleziona**.
+
+4. Nel pannello **Gruppo** scegliere **Crea**.
+
+### <a name="set-up-the-integration-between-symantec-endpoint-protection-mobile-and-intune"></a>Configurare l'integrazione tra Symantec Endpoint Protection Mobile e Intune
+
+1.  Andare alla [console di gestione di Symantec Endpoint Protection Mobile](https://aad.skycure.com).
+
+2.  Immettere le **credenziali amministratore SEP Mobile**, quindi scegliere **Continue** (Continua).
+
+3.  Andare a **Settings** (Impostazioni) > **Integrations** (Integrazioni) > **Intune** > sezione **EMM Integration Selection** (Selezione integrazione EMM).
+
+4. Nella casella **ID directory** incollare l'ID directory copiato da Azure Active Directory nella sezione precedente e salvare le impostazioni.
+
+    ![Immagine che mostra l'ID directory nel portale di SEP Mobile](./media/symantec-portal-directory-ID.png)     
+
+5. Andare a **Settings** (Impostazioni) > **Integrations** (Integrazioni) > **Intune** > sezione **Basic Setup** (Configurazione di base).
+
+6. Accanto a **iOS App** (App iOS) scegliere il pulsante **Add to Active Directory** (Aggiungi ad Active Directory).
+
+    ![Immagine che illustra l'aggiunta all'app iOS ad Active Directory](./media/symantec-portal-basic-add.png)   
+
+7.  Accedere con le credenziali di Azure Active Directory per l'account Office 365 che gestisce la directory.
+
+8.  Scegliere il pulsante **Accept** (Accetto) per aggiungere l'app SEP Mobile iOS ad Azure Active Directory.
+
+    ![Immagine che mostra il pulsante Accept (Accetto)](./media/symantec-portal-basic-accept.png)     
+
+9.  Ripetere lo stesso processo per l'**app Android** e l'**app di gestione**.
+
+10. Selezionare tutti i gruppi utenti che devono eseguire le app SEP Mobile, ad esempio il gruppo di sicurezza creato in precedenza.
+
+    ![Immagine che mostra i gruppi utenti per le app SEP Mobile](./media/symantec-portal-basic-groups.png)   
+
+11.  SEP Mobile sincronizza i dispositivi nei gruppi selezionati e avvia la segnalazione delle informazioni a Intune. È possibile visualizzare questi dati nella sezione Full Integration (Integrazione completa). Andare a **Settings** (Impostazioni) > **Integrations** (Integrazioni) > **Intune** > sezione **Full Integration** (Integrazione completa).
+
+     ![Immagine che illustra l'integrazione completa di SEP Mobile completata](media/symantec-portal-basic-status.PNG)
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Configurare le app di Skycure](mtd-apps-ios-app-configuration-policy-add-assign.md)
+[Configurare le app SEP Mobile](mtd-apps-ios-app-configuration-policy-add-assign.md)

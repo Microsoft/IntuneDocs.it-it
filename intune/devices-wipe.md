@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Rimuovere i dispositivi con il ripristino delle impostazioni predefinite o rimuovere i dati aziendali
 
@@ -58,7 +58,9 @@ Se il dispositivo è acceso e connesso, l'azione **Ripristino delle impostazioni
 
 ## <a name="remove-company-data"></a>Rimuovere i dati aziendali
 
-L'azione **Rimuovi i dati aziendali** consente di rimuovere i dati delle app (se applicabile), le impostazioni e i profili di posta elettronica assegnati usando Intune. **Rimuovi i dati aziendali** lascia i dati personali dell'utente nel dispositivo. Il dispositivo viene rimosso dalla gestione di Intune. 
+L'azione **Rimuovi i dati aziendali** consente di rimuovere i dati delle app (se applicabile), le impostazioni e i profili di posta elettronica assegnati usando Intune. Il dispositivo viene rimosso dalla gestione di Intune. Questa operazione viene eseguita solo dopo che il dispositivo si è collegato e ha ricevuto l'azione **Rimuovi i dati aziendali** remota.
+
+**Rimuovi i dati aziendali** lascia i dati personali dell'utente nel dispositivo.  
 
 Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto dell'azione **Rimuovi i dati aziendali** sui dati che rimangono nel dispositivo dopo la rimozione dei dati aziendali.
 
@@ -123,13 +125,19 @@ La rimozione dei dati aziendali da un dispositivo Android for Work consente di r
 
 ### <a name="remove-company-data"></a>Rimuovere i dati aziendali
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Dispositivi** selezionare **Tutti i dispositivi**.
-4. Selezionare il nome del dispositivo da cui verranno rimossi i dati aziendali.
-5. Nel riquadro in cui appare il nome del dispositivo selezionare **Rimuovi i dati aziendali**. Selezionare **Sì** per confermare.
+1. Accedere a [Intune nel portale di Azure](https://aka.ms/intuneportal).
+2. Nel riquadro **Dispositivi** selezionare **Tutti i dispositivi**.
+3. Selezionare il nome del dispositivo da cui verranno rimossi i dati aziendali.
+4. Nel riquadro in cui appare il nome del dispositivo selezionare **Rimuovi i dati aziendali**. Selezionare **Sì** per confermare.
 
 Se il dispositivo è acceso e connesso, l'azione **Rimuovi i dati aziendali** si propaga a tutti i tipi di dispositivo in meno di 15 minuti.
+
+## <a name="delete-devices-from-the-intune-portal"></a>Eliminare i dispositivi dal portale di Intune
+
+Per rimuovere i dispositivi dal portale di Intune, è possibile eliminarli dal riquadro del dispositivo specifico. Alla successivo collegamento del dispositivo, tutti i dati aziendali verranno rimossi.
+
+1. Accedere a [Intune nel portale di Azure](https://aka.ms/intuneportal).
+2. Scegliere **Dispositivi** > **Tutti i dispositivi** > scegliere i dispositivi che si vuole eliminare > **Elimina**.
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Eliminare dispositivi dal portale di Azure Active Directory
 

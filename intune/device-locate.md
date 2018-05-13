@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da8bb19db8c2da2d5854c3f991ccce4d124d594c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Individuare dispositivi iOS persi o rubati con Intune
 
@@ -46,6 +46,15 @@ Questa funzionalità non è supportata per i sistemi seguenti:
 
 >[!NOTE]
 >Per motivi di privacy, la distanza di zoom nella mappa è limitata.
+
+## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>Attivare l'avviso sonoro relativo alla modalità di dispositivo perso in un dispositivo iOS
+
+Se un utente perde il dispositivo iOS 9.3 o versione successiva, è possibile attivarlo in remoto per riprodurre un avviso sonoro che permetta all'utente di trovarlo. Il dispositivo deve essere in [modalità di dispositivo perso](device-lost-mode.md).
+
+In [Intune nel portale di Azure](https://aka.ms/intuneportal) scegliere **Dispositivi** > **Tutti i dispositivi** > selezionare un dispositivo iOS > **Panoramica** > **Altri** > **Play Lost mode sound (supervise only)** (Riproduci la suoneria della modalità di dispositivo perso - Solo supervisione).
+
+Il suono continuerà finché l'utente non disabiliterà il suono dal dispositivo o la modalità di dispositivo perso non verrà cambiata.
+
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>Informazioni su privacy e sicurezza per le azioni Modalità di dispositivo perso e Individua il dispositivo
 - Non vengono inviate informazioni sulla posizione del dispositivo a Intune finché non si attiva questa azione.

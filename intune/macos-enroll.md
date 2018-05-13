@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e522708879818f644780904c42fe9e6fb19a402
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurare la registrazione per i dispositivi macOS in Intune
 
@@ -70,3 +70,11 @@ Per informazioni su altre attività dell'utente finale, vedere gli articoli segu
 Per Parallels Desktop, è necessario impostare il tipo di hardware e il numero di serie delle macchine virtuali in modo che Intune possa riconoscerle. Seguire le istruzioni di Parallels per l'[impostazione del tipo di hardware](http://kb.parallels.com/123594) e del [numero di serie](http://kb.parallels.com/123455) per configurare le impostazioni necessarie per i test. È consigliabile che il tipo di hardware del dispositivo che esegue le macchine virtuali corrisponda al tipo di hardware delle macchine virtuali da creare. Il tipo di hardware è indicato in **menu Apple** > **Informazioni su questo Mac** > **Resoconto di sistema** > **Identificatore modello**. 
 
 Per VMware Fusion, è necessario [modificare il file con estensione vmx](https://kb.vmware.com/s/article/1014782) per impostare il modello hardware e il numero di serie della macchina virtuale. È consigliabile che il tipo di hardware del dispositivo che esegue le macchine virtuali corrisponda al tipo di hardware delle macchine virtuali da creare. Il tipo di hardware è indicato in **menu Apple** > **Informazioni su questo Mac** > **Resoconto di sistema** > **Identificatore modello**. 
+
+## <a name="user-approved-enrollment"></a>Registrazione approvata dall'utente
+
+La registrazione MDM approvata dall'utente è un tipo di registrazione macOS che è possibile usare per gestire alcune impostazioni basate sulla sicurezza. Per altre informazioni, vedere la [documentazione del supporto Apple](https://support.apple.com/HT208019).
+
+Per essere approvata dall'utente, dopo la registrazione tramite il portale aziendale di macOS, l'utente finale deve fornire manualmente l'approvazione usando Preferenze di Sistema. Le istruzioni per eseguire questa operazione sono disponibili nel portale aziendale di macOS per gli utenti di macOS 10.13.2 e versioni successive.
+
+Per sapere se un dispositivo è approvato dall'utente, andare al portale di Intune e quindi scegliere **Dispositivi** > **Tutti i dispositivi**> scegliere il dispositivo > **Hardware**. Controllare il campo **User Approved** (Approvato dall'utente).
