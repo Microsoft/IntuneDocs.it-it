@@ -125,6 +125,7 @@
 #### [Registrare il dispositivo Windows 10 tramite "Accedi all'azienda o all'istituto di istruzione"](enroll-your-w10-device-access-work-or-school.md)
 #### [Registrare il dispositivo Windows 8.1 o Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
 #### [Registrare il dispositivo Windows Phone 8.1](enroll-your-wp81-windows.md)
+### [Installare app dall'app Portale aziendale per Windows](install-apps-cpapp-windows.md)
 ### [Reimpostare il dispositivo](reset-erase-your-device-cpwebsite.md)
 ### [Crittografare il dispositivo](encrypt-your-device-windows.md)
 ### [Impostare o modificare la password](set-or-change-your-password-windows.md)
