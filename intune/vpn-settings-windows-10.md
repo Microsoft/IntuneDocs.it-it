@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: b6371da954aa913e1378c065b203fa197f3fc767
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: d41ec494672340a9f5751e6fc40edf1a7b06bb40
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Impostazioni VPN di Windows 10 in Intune
 
@@ -99,17 +99,10 @@ Per altre informazioni sulla creazione di XML EAP personalizzato, vedere [EAP co
 
 ## <a name="apps-and-traffic-rules"></a>App e regole del traffico
 
-<<<<<<< HEAD
 - **Associa WIP o app a questa VPN**: abilitare questa opzione se si vuole che la connessione VPN venga usata solo da alcune app. Le opzioni disponibili sono:
 
   - **Associa WIP a questa connessione**: immettere un **dominio WIP per questa connessione**
   - **Associa le app a questa connessione**: è possibile **limitare la connessione VPN a queste app** e quindi aggiungere le **app associate**. Le app immesse usano automaticamente la connessione VPN. Il tipo di app determina l'identificatore dell'app. Per un'app universale, immettere il nome della famiglia di pacchetti. Per un'app desktop, immettere il percorso del file dell'app.
-=======
-**Limita la connessione VPN a queste app**: abilitare questa opzione se si vuole che la connessione VPN venga usata solo da alcune app.
-
-**App associate**: immettere un elenco delle app che usano automaticamente la connessione VPN. Il tipo di app determina l'identificatore dell'app. Per un'app universale, immettere il nome della famiglia di pacchetti. Per un'app desktop, immettere il percorso del file dell'app.
->>>>>>> b2f641d045b7649f641fb98e07accc745e697d84
-
   >[!IMPORTANT]
   >È consigliabile proteggere tutti gli elenchi di app creati per le reti VPN per singole app. Se un utente non autorizzato modifica l'elenco e l'elenco viene importato nell'elenco delle app della VPN per singole app, si autorizzano potenzialmente le app che non dovrebbero essere autorizzate ad accedere alla VPN. Un modo per proteggere gli elenchi delle app consiste nell'usare un elenco di controllo di accesso (ACL).
 

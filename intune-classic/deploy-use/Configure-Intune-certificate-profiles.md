@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c2b17e1acff965a08245094c57df81c58f44fda
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Configurare i profili certificato di Intune
 
@@ -103,7 +103,7 @@ Dopo aver creato un profilo certificato CA attendibile, creare i profili certifi
    > 
    > Le due variabili attualmente supportate per il nome personalizzato sono `Common Name (CN)` ed `Email (E)`. Usando una combinazione di queste variabili e stringhe statiche, è possibile creare un formato di nome soggetto personalizzato simile al seguente:
    > 
-   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   >     `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`
    > 
    > In questo esempio l'amministratore ha creato un formato di nome soggetto che, oltre alle variabili `CN` ed `E`, usa stringhe per i valori Unità organizzativa, Organizzazione, Località, Stato e Paese. La [funzione CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) elenca le stringhe supportate.
 
