@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e15e1678fa93269eb650f8a5684091b430ebf1cd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f903e9dfe5fb30f45806aac5694171814492f2e
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Impostare l'autorità di gestione dei dispositivi mobili
 
@@ -62,6 +62,19 @@ Per abilitare o semplificare la gestione per le diverse piattaforme, sono previs
 - **Windows** (facoltativo: abilitare la [registrazione automatica](windows-enroll.md) o la [registrazione in blocco](windows-bulk-enroll.md)
 - **macOS** - (obbligatorio) [Ottenere un certificato push MDM Apple](apple-mdm-push-certificate-get.md).
 
+### <a name="workflow-of-intune-administration-ui"></a>Flusso di lavoro dell'interfaccia utente di amministrazione di Intune
+Quando è abilitata la gestione dei dispositivi Android o Apple, Intune invia informazioni sul dispositivo e l'utente da integrare con i servizi di terze parti per la gestione dei rispettivi dispositivi.
+
+Gli scenari con il consenso alla condivisione dei dati vengono inclusi se:
+- Si abilita Android for Work.
+- Si abilitano e caricano i certificati per le notifiche push MDM Apple.
+- Si abilita uno dei servizi Apple, ad esempio Device Enrollment Program, School Manager o Volume Purchasing Program.
+
+In ogni caso, il consenso è strettamente correlato all'esecuzione di un servizio di gestione dei dispositivi mobili, ad esempio per confermare che un amministratore IT ha autorizzato la registrazione di dispositivi Google o Apple. La documentazione da consultare per sapere quali informazioni vengono condivise quando vengono pubblicati i nuovi flussi di lavoro è disponibile nelle posizioni seguenti:
+- [Dati inviati da Intune a Google](https://aka.ms/Data-intune-sends-to-google)
+- [Dati inviati da Intune ad Apple](https://aka.ms/data-intune-sends-to-apple)
+
+Per altre informazioni sulla conformità di Microsoft al Regolamento generale sulla protezione dei dati (GDPR), vedere [Trust Center - Valutare la conformità al regolamento GDPR](https://aka.ms/trust_center_info).
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Pulizia dei dispositivi mobili dopo la scadenza del certificato MDM
 

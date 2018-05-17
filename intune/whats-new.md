@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/27/2018
+ms.date: 05/02/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 68997e16269f7f7a9265fc96d04de2c39c9fefeb
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 9004441a41c5e7458447b5c5f7e1d91e630bd412
+ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -150,9 +150,6 @@ Per visualizzare la nuova esperienza, accedere a Intune e selezionare **Disposit
 
 Se si vuole comunque la conferma di cancellazione/ritiro, è possibile usare il percorso standard del ciclo di vita del dispositivo tramite i comandi **Rimuovi i dati aziendali** e **Ripristino delle impostazioni predefinite** prima di **Elimina**. 
 
-#### <a name="autopilot-profiles-moving-to-group-targeting----1877935---"></a>Spostamento dei profili AutoPilot nei gruppi di destinazione <!-- 1877935 -->
-I profili di distribuzione di AutoPilot possono essere assegnati ai gruppi di Azure AD contenenti dispositivi AutoPilot.
-
 #### <a name="play-sounds-on-ios-when-in-lost-mode----1947769---"></a>Riprodurre suoni in iOS in modalità di dispositivo perso <!-- 1947769 -->
 Quando un dispositivo iOS sotto supervisione si trova in [Modalità di dispositivo perso](device-lost-mode.md) della gestione di dispositivi mobili (MDM), è possibile [riprodurre un suono](device-locate.md#activate-lost-mode-sound-alert-on-an-ios-device) (**Dispositivi** > **Tutti i dispositivi** > selezionare un dispositivo iOS > **Panoramica** > **Altro**). Il suono continua finché la modalità di dispositivo perso non viene cambiata o un utente non disabilita il suono dal dispositivo. Si applica ai dispositivi iOS 9.3 e successivi.
 
@@ -217,12 +214,12 @@ Nella pagina di panoramica delle registrazioni è possibile visualizzare la tend
 
 #### <a name="update-where-to-configure-your-app-protection-policies----2144597---"></a>Aggiornare la posizione di configurazione dei criteri di protezione delle app <!-- 2144597 -->
 
-Nel portale di Azure all'interno del servizio Microsoft Intune verrà eseguito un reindirizzamento temporaneo dal pannello del servizio **Protezione app di Intune** al pannello **App per dispositivi mobili**. Si noti che tutti i criteri di protezione delle app si trovano già nel pannello **App per dispositivi mobili** in Intune in Configurazione dell'app. Anziché passare a Protezione app di Intune, si passerà semplicemente a Intune. In aprile 2018 verrà interrotto il reindirizzamento e verrà rimosso completamente il pannello del servizio **Protezione app di Intune** lasciando un'unica posizione per i criteri di protezione delle app all'interno di Intune. 
+Nel portale di Azure all'interno del servizio Microsoft Intune verrà eseguito un reindirizzamento temporaneo dal pannello del servizio **Protezione app di Intune** al pannello **App per dispositivi mobili**. Si noti che tutti i criteri di protezione delle app sono già nel pannello **App per dispositivi mobili** in Intune sotto la configurazione delle app. Invece di andare a Protezione app di Intune, si passerà a Intune. Ad aprile 2018 il reindirizzamento verrà arrestato e il pannello del servizio **Protezione app di Intune** verrà completamente rimosso. All'interno di Intune sarà quindi disponibile una sola posizione per i criteri di protezione delle app. 
 
 **Quali sono le conseguenze di questa modifica?**
-Questa modifica interesserà sia i clienti Intune autonomi che ibridi (clienti Intune con Configuration Manager). Questa integrazione contribuirà alla semplificazione dell'amministrazione della gestione del cloud.
+Questa modifica avrà effetto sia sui clienti di Intune autonomi che sui clienti ibridi (Intune con Configuration Manager). Questa integrazione consentirà di semplificare l'amministrazione della gestione del cloud.
 
-**Quali operazioni è necessario eseguire per prepararsi alla modifica?**
+**Operazioni di preparazione alla modifica**
 Contrassegnare come preferito **Intune** anziché il pannello del servizio **Protezione app di Intune** e assicurarsi di avere dimestichezza con il flusso di lavoro Criterio di protezione dell'app nel pannello **App per dispositivi mobili** all'interno di Intune. Il reindirizzamento durerà per un breve periodo di tempo e quindi il pannello **Protezione app** verrà rimosso. Tenere presente che tutti i criteri di protezione delle app sono già presenti in Intune ed è possibile modificare tutti i criteri di accesso condizionale. Per altre informazioni sulla modifica dei criteri di accesso condizionale, vedere [Accesso condizionale in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). Per altre informazioni, vedere [Che cosa sono i criteri di protezione delle app?](app-protection-policy.md) 
 
 

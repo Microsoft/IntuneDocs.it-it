@@ -57,7 +57,7 @@ Quando in un'applicazione è presente un account gestito:
 
 Per capire meglio come vengono gestiti gli account utente multipli, leggere lo scenario di esempio seguente.
 
-L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri di protezione delle app. L'**Azienda X** distribuisce i criteri di protezione delle app **prima dell'****Azienda Y**. L'account associato all'**Azienda X** ottiene per primo i criteri di protezione dell'app. Se si vuole che l'account utente associato all'Azienda Y venga gestito dai criteri di protezione delle app, è necessario rimuovere l'account utente associato all'Azienda X e aggiungere l'account utente associato all'Azienda Y.
+L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri di protezione delle app. L'**Azienda X** distribuisce i criteri di protezione delle app **prima dell'** **Azienda Y**. L'account associato all'**Azienda X** ottiene per primo i criteri di protezione dell'app. Se si vuole che l'account utente associato all'Azienda Y venga gestito dai criteri di protezione delle app, è necessario rimuovere l'account utente associato all'Azienda X e aggiungere l'account utente associato all'Azienda Y.
 
 ### <a name="add-a-second-account"></a>Aggiungere un secondo account
 

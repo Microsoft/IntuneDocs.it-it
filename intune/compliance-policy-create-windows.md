@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi Windows in Intune
 
@@ -121,11 +121,11 @@ Per informazioni su come funziona il servizio di attestazione dell'integrità, v
 
 ### <a name="device-properties"></a>Proprietà dispositivo
 
-- **Versione minima del sistema operativo**: immettere la versione minima ammessa, usando il formato numerico major.minor.build.CU. Il numero di build.CU deve corrispondere alla versione restituita dal comando `ver` o `winver`.
+- **Versione minima del sistema operativo**: immettere la versione minima ammessa, usando il formato numerico major.minor.build.revision. Il numero build.revision deve corrispondere alla versione restituita dal comando `ver` o `winver`.
 
   Quando un dispositivo ha una versione precedente rispetto alla versione del sistema operativo specificata, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e dopo l'aggiornamento potrà accedere alle risorse aziendali.
 
-- **Versione massima del sistema operativo**: immettere la versione massima consentita, usando il formato numerico major.minor.build.CU. Il numero di build.CU deve corrispondere alla versione restituita dal comando `ver` o `winver`.
+- **Versione massima del sistema operativo**: immettere la versione massima consentita nel formato numerico major.minor.build.revision. Il numero build.revision deve corrispondere alla versione restituita dal comando `ver` o `winver`.
 
   Quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali risulterà bloccato e l'utente dovrà contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
 

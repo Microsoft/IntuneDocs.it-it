@@ -1,5 +1,5 @@
 ---
-title: Come aggiungere app di Android Store a Microsoft Intune
+title: Aggiungere app di Android Store a Microsoft Intune
 titleSuffix: ''
 description: Informazioni sull'aggiunta di app di Android Store a Microsoft Intune.
 keywords: ''
@@ -15,43 +15,45 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ece6edee891b147ad2124b987239da6af8e1bc8d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 685ddf806bff865930de70b2d1925fb9b463b173
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Come aggiungere app di Android Store a Microsoft Intune
+# <a name="add-android-store-apps-to-microsoft-intune"></a>Aggiungere app di Android Store a Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Prima di assegnare un'app a un dispositivo o a un gruppo di utenti, è necessario aggiungere l'app a Microsoft Intune. I passaggi seguenti permettono di aggiungere un app dello store di Android a Intune dal portale di Azure.
+Prima di assegnare un'app a un dispositivo o a un gruppo di utenti, è necessario aggiungere l'app a Microsoft Intune. Seguire questa procedura per aggiungere un'app di Android Store a Intune dal portale di Azure:
 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** scegliere **App per dispositivi mobili**.
-4. Nel carico di lavoro **App per dispositivi mobili** scegliere **App** nella sezione **Gestisci**.
-5. In alto all'elenco delle applicazioni scegliere **Aggiungi**.
-6. Nel riquadro **Aggiungi app** selezionare **Android** nell'elenco dei tipi disponibili in **App Store**.
-7. Selezionare **Configura** per configurare le informazioni sull'app seguenti. A seconda dell'app scelta, alcuni dei valori in questo riquadro potrebbero essere compilati automaticamente:
-    - **Nome**: immettere il nome dell'app che verrà visualizzato nel portale aziendale. Verificare che tutti i nomi di app usati siano univoci. Se il nome di un'app è usato due volte, solo una delle due app verrà visualizzata agli utenti nel portale aziendale.
-    - **Descrizione**: immettere una descrizione per l'app. La descrizione verrà visualizzata agli utenti nel portale aziendale.
+1. Accedere al [portale di Azure](https://portal.azure.com).
+2. Selezionare **Tutti i servizi** > **Intune**.  
+    Intune si trova nella sezione **Monitoraggio e gestione**.
+1. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
+2. Nel riquadro del carico di lavoro **App per dispositivi mobili**, in **Gestisci** selezionare **App**.
+3. Selezionare **Aggiungi**.
+4. Nel riquadro **Aggiungi app** selezionare **Android** nell'elenco dei tipi disponibili in **App Store**.
+5. Per configurare le informazioni sull'app, selezionare **Configura** e specificare le informazioni seguenti.  
+    A seconda dell'app scelta, è possibile che alcuni valori vengano compilati automaticamente.
+    - **Nome**: immettere il nome dell'app da visualizzare nel portale aziendale. Assicurarsi che il nome dell'app usato sia univoco. Se il nome dell'app è duplicato, nel portale aziendale sarà visualizzato un solo nome.
+    - **Descrizione**: immettere una descrizione per l'app. Questa descrizione viene visualizzata dagli utenti nel portale aziendale.
     - **Autore**: immettere il nome dell'autore dell'app.
     - **URL di App Store**: immettere l'URL dell'App Store per l'app che si vuole creare.
-    - **Sistema operativo minimo**: scegliere nell'elenco la versione minima del sistema operativo in cui è possibile installare l'app. L'installazione non verrà eseguita se si assegna l'app a un dispositivo con un sistema operativo precedente.
-    - **Categoria** (facoltativo): selezionare una o più categorie di app predefinite oppure una categoria creata. Ciò consentirà agli utenti di trovare più facilmente l'app nel portale aziendale.
-    - **Visualizza come app in primo piano nel portale aziendale**: visualizza chiaramente l'app nella pagina principale del portale aziendale quando gli utenti sfogliano le app.
-    - **URL di informazioni**: immettere l'URL di un sito Web che contiene informazioni sull'app (facoltativo). L'URL verrà visualizzato agli utenti nel portale aziendale.
-    - **URL privacy**: immettere l'URL di un sito Web che contiene informazioni sulla privacy per l'app (facoltativo). L'URL verrà visualizzato agli utenti nel portale aziendale.
-    - **Developer**: immettere il nome dello sviluppatore dell'app (facoltativo).
-    - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio **Reparto risorse umane** (facoltativo).
-    - **Note**: immettere tutte le note da associare a questa app (facoltativo).
-    - **Logo**: caricare un'icona che verrà associata all'app (facoltativo). Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
-8. Fare clic su **OK** dopo aver immesso tutte le informazioni sull'app.
-9. Fare clic su **Aggiungi** per aggiungere l'app.
+    - **Sistema operativo minimo**: scegliere nell'elenco la versione meno recente del sistema operativo in cui è possibile installare l'app. L'installazione non verrà eseguita se si assegna l'app a un dispositivo con un sistema operativo precedente.
+    - **Categoria**: facoltativamente, selezionare una o più categorie di app predefinite oppure una categoria creata. Questa operazione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
+    - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
+    - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
+    - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
+    - **Developer**: immettere il nome dello sviluppatore dell'applicazione (facoltativo).
+    - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio, *Reparto risorse umane* (facoltativo).
+    - **Note**: immettere eventuali note da associare a questa app (facoltativo).
+    - **Logo**: caricare un'icona da associare all'app (facoltativo). Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
+1. Selezionare **OK**.
+2. Selezionare **Aggiungi**.
 
-L'app creata viene visualizzata nell'elenco di app, in cui è possibile assegnarla ai gruppi scelti. 
+L'app creata viene visualizzata nell'elenco di app, in cui è possibile assegnarla ai gruppi selezionati. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Come assegnare app ai gruppi](apps-deploy.md)
+- [Assegnare app ai gruppi](apps-deploy.md)

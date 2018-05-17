@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Aggiungere app in Microsoft Intune
 
@@ -155,6 +155,16 @@ Quando si aggiunge un'app in Intune, è possibile selezionare la categoria desid
 ## <a name="apps-that-are-added-automatically-by-intune"></a>App aggiunte automaticamente da Intune
 
 Intune conteneva in precedenza un numero di app predefinite che era possibile assegnare rapidamente. In seguito al feedback dei clienti di Intune, questo elenco è stato rimosso e le app predefinite non vengono più visualizzate. Tuttavia, se sono già state assegnate app predefinite, queste rimangono visibili nell'elenco delle app. È possibile continuare ad assegnare le app in base alle esigenze.
+
+## <a name="installing-updating-or-removing-required-apps"></a>Installazione, aggiornamento o rimozione di app necessarie
+
+Intune reinstallerà, aggiornerà o rimuoverà automaticamente l'app necessaria entro 24 ore invece di attendere il ciclo di rivalutazione di 7 giorni.
+
+Intune reinstallerà, aggiornerà o rimuoverà automaticamente l'app necessaria in base alle condizioni seguenti:
+- Se un utente finale disinstalla un'app che deve essere installata nel suo dispositivo, Intune la reinstallerà automaticamente alla scadenza della pianificazione.
+- Se l'installazione dell'app necessaria ha esito negativo o per qualsiasi altro motivo l'app non è presente nel dispositivo, Intune valuta la conformità e reinstalla l'app alla scadenza della pianificazione.  
+- Un amministratore definisce un'app come disponibile per un gruppo di utenti e un utente finale installa l'app dal portale aziendale nel dispositivo. Dopo di ché l'amministratore aggiorna l'app dalla versione 1 alla versione 2. Intune aggiornerà l'app alla scadenza della pianificazione, a condizione che nel dispositivo sia ancora presente una qualsiasi altra versione precedente.
+- Se l'amministratore distribuisce la finalità di distallazione, ma l'applicazione è presente nel dispositivo e non viene disinstallata, Intune valuta la conformità e disinstalla l'app alla scadenza della pianificazione.   
 
 ## <a name="next-steps"></a>Passaggi successivi
 

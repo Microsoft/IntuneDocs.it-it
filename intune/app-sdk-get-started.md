@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0fcd4b04541593f41abb35be6558be2375a0131
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
@@ -67,10 +67,9 @@ I file di Intune App SDK per iOS e Android nativi sono ospitati in un account Mi
 * [Intune App SDK per iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Intune App SDK per Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-Se l'app è basata su Xamarin o Cordova, usare queste varianti dell'SDK:
+Se l'app è basata su Xamarin, usare questa variante dell'SDK:
 
 * [Binding Xamarin per Intune App SDK](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
-* [Plug-in Cordova per Intune App SDK](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 Si consiglia di registrarsi per un account GitHub utile per eseguire operazioni di biforcazione ed estrazione dal repository. GitHub consente agli sviluppatori di comunicare con il team del prodotto Microsoft, aprire problemi e ricevere risposte rapide, visualizzare le note sulla versione e fornire commenti e suggerimenti a Microsoft. Per domande su Intune App SDK GitHub, contattare msintuneappsdk@microsoft.com.
 
@@ -81,8 +80,6 @@ Per integrare Intune App SDK nelle app, è necessario consultare una delle guide
 * **[Guida per gli sviluppatori di Microsoft Intune App SDK per iOS](app-sdk-ios.md)**: questo documento descrive in dettaglio come abilitare app iOS native con Intune App SDK.
 
 * **[Guida a Microsoft Intune App SDK per sviluppatori di Android](app-sdk-android.md)**: questo documento descrive in dettaglio come abilitare app Android native con Intune App SDK.
-
-* **[Plug-in Cordova per Microsoft Intune App SDK](app-sdk-cordova.md)**: questo documento fornisce informazioni per compilare app per iOS e Android usando Cordova per i criteri di protezione delle app di Intune.
 
 * **[Binding Xamarin per Microsoft Intune App SDK](app-sdk-xamarin.md)**: questo documento contiene informazioni per compilare app per iOS e Android usando Xamarin per i criteri di protezione delle app di Intune.
 

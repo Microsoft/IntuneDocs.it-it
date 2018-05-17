@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0784aeb1dc1022b4be824c2f858f9525d03918
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Impostazioni relative alle restrizioni dei dispositivi per Windows Holographic for Business in Intune
 
@@ -68,7 +68,7 @@ Le impostazioni seguenti relative alle restrizioni dei dispositivi sono supporta
 
 - **Modifica dell'ora di sistema**: impedisce all'utente finale di modificare la data e l'ora del dispositivo.
 
-## <a name="kiosk-preview"></a>Modalità tutto schermo (anteprima)
+## <a name="kiosk"></a>Modalità tutto schermo
 
 In genere un'app specifica viene eseguita in un dispositivo in modalità tutto schermo. Agli utenti viene impedito l'accesso a qualsiasi funzionalità o funzione del dispositivo all'esterno dell'app in modalità tutto schermo.
 
@@ -76,6 +76,9 @@ In genere un'app specifica viene eseguita in un dispositivo in modalità tutto s
 
   - **Non configurata** (impostazione predefinita): il criterio non abilita la modalità tutto schermo. 
   - **App singola per chiosco multimediale**: il profilo abilita il dispositivo perché esegua solo un'app. Quando l'utente accede, viene avviata un'app specifica. Questa modalità impedisce anche all'utente di aprire nuove app o modificare l'app in esecuzione.
+  - **Più app in modalità tutto schermo**: il profilo abilita il dispositivo perché esegua più app. Solo le app aggiunte sono disponibili all'utente. Il vantaggio di avere più app in modalità tutto schermo, o un dispositivo predefinito per uno scopo, consiste nel garantire un'esperienza semplice, consentendo di accedere solo alle app necessarie e rimuovendo dalla visualizzazione le app non necessarie. 
+  
+    Quando si aggiungono app per un'esperienza costituita da più app in modalità a tutto schermo, si aggiunge anche un file di layout per il menu di avvio. Il [file di layout del menu di avvio](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) include codice XML di esempio che è possibile usare in Intune. 
 
 #### <a name="single-app-kiosks"></a>App singole per chioschi multimediali
 Immettere le impostazioni seguenti:

@@ -15,11 +15,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b34963761e9700d6cb742cb90979be30d5ae6b3e
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: bb54772010ef71e7d4bd2252f3886e9a3dd37ef1
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Panoramica di Intune App SDK
 Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di protezione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. La maggior parte delle funzionalità dell'SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che ne richiedono la partecipazione.
@@ -64,7 +64,7 @@ Questa funzionalità per il supporto di più identità contribuisce a risolvere 
 ### <a name="app-protection-without-device-enrollment"></a>Protezione delle app senza registrazione del dispositivo
 
 >[!IMPORTANT]
->La protezione delle app di Intune senza la registrazione dei dispositivi è disponibile con gli strumenti di wrapping delle app di Intune, Intune App SDK per Android, Intune App SDK per iOS, i binding Xamarin per Intune App SDK e il plug-in Cordova per SDK.
+>La protezione delle app di Intune senza la registrazione del dispositivo è disponibile con gli strumenti di wrapping delle app di Intune, Intune App SDK per Android, Intune App SDK per iOS e i binding Xamarin per Intune App SDK.
 
 Molti utenti con dispositivi personali vogliono accedere ai dati aziendali senza registrare il dispositivo personale in un provider di gestione di dispositivi mobili (MDM). Dato che la registrazione in una soluzione MDM richiede il controllo globale del dispositivo, gli utenti sono spesso riluttanti a fornire tale controllo all'azienda per i propri dispositivi personali.
 
