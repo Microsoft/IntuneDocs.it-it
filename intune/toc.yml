@@ -168,6 +168,8 @@
               href: windows-enroll.md
             - name: Registrazione in blocco
               href: windows-bulk-enroll.md
+            - name: Pagina Stato registrazione
+              href: windows-enrollment-status.md
             - name: Programma Windows AutoPilot Deployment
               href: enrollment-autopilot.md
         - name: Configurare la registrazione di Android
