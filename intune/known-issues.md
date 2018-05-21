@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemi noti in Microsoft Intune
 
@@ -61,6 +61,8 @@ Le app iOS acquistate con volume Purchase Program sono visualizzate e possono es
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Vengono caricate più copie dello stesso programma iOS acquistato con volume Purchase Program
 Non fare clic sul pulsante **Carica** più volte per lo stesso token VPP. Se si fa clic più volte verranno caricati token VPP duplicati e le app verranno sincronizzate più volte per lo stesso token VPP.
 
+### <a name="some-managed-browser-traffic-not-routed-through-azure-app-proxy----2463492---"></a>Una parte del traffico di Managed Browser non viene instradata attraverso il proxy app di Azure <!-- 2463492 -->
+Esiste un problema noto con l'integrazione di Managed Browser e del proxy app per cui traffico terziario specifico (ad esempio chiamate javascript o AJAX) non viene instradato attraverso il proxy app di Azure. Si tratta di un problema noto nella versione corrente.  
 
 <!-- ## Groups -->
 

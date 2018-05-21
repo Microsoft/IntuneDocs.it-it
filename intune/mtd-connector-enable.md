@@ -15,11 +15,11 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fec1477cf5f5f7fd6db113c8b87b6eb4068101d
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 5f0dd0d968cde26ed4fcd4a628db5ff98316bee7
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Abilitare il connettore Mobile Threat Defense in Intune
 
@@ -56,6 +56,8 @@ Durante l'installazione di Mobile Threat Defense (MTD), sono stati configurati c
 - **Connetti dispositivi iOS 8.0+ a [nome partner MTD] for Work MTD**: quando si abilita questa opzione è possibile fare in modo che i dispositivi iOS 8.0+ segnalino i rischi di sicurezza in Intune.
     - **Contrassegna come non conforme se non vengono ricevuti dati**: se Intune non riceve dati su un dispositivo in questa piattaforma da un partner MTD, il dispositivo viene considerato non conforme.
 <br></br>
+- **Abilita la sincronizzazione delle app per dispositivi iOS**: consente a questo partner di Mobile Threat Defense di richiedere metadati delle applicazioni iOS da Intune per l'uso per finalità di analisi delle minacce.
+
 - **Blocca le versioni del sistema operativo non supportate**: bloccare un dispositivo che esegue un sistema operativo con un versione precedente a quella minima supportata.
 
 - **Numero di giorni dopo i quali il partner risulta non reattivo**: numero di giorni di inattività prima che Intune consideri il partner non reattivo a causa della perdita della connessione. Intune ignora lo stato di conformità per i partner MTD non reattivi.

@@ -14,11 +14,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc8edb38b667d744bb586d1ed5c82df8ab10f49
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi Android in Intune
 
@@ -100,12 +100,12 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
   - **Almeno numerico**
-  - **Complessa numerica**
+  - **Complessa numerica**: i numeri consecutivi o ripetuti (ad esempio, "1111" o "1234") non sono consentiti.
   - **Almeno alfabetico**
   - **Almeno alfanumerico**
   - **Almeno alfanumerico con simboli**
 - **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere di nuovo la password.
-- **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
+- **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, l'utente deve crearne una nuova.
 - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password recenti che non è possibile riutilizzare. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.
 
 ### <a name="encryption"></a>Crittografia

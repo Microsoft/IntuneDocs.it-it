@@ -1,11 +1,11 @@
 ---
-title: Rimuovere il dispositivo Windows da Intune | Microsoft Docs
+title: Rimuovere il dispositivo Windows da Intune
 description: Descrive come rimuovere un dispositivo Windows da Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,61 +17,68 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 89a69f7d5cda31658cc9faf068a2a37698fdd93c
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
+ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/09/2018
 ---
-# <a name="remove-your-windows-device-from-intune"></a>Rimuovere il dispositivo Windows da Intune
+# <a name="remove-your-windows-device-from-intune-management"></a>Rimuovere il dispositivo Windows dalla gestione di Intune
 
-Se il dispositivo è registrato in Intune, ma non si vuole più usare il dispositivo Windows per accedere alla posta elettronica, alle app o ad altre risorse aziendali o dell'istituto di istruzione, è necessario rimuovere il dispositivo dalla gestione. Dopo aver rimosso il dispositivo da Intune, non sarà più possibile accedere a tali risorse. Per altre informazioni su cosa accade quando il dispositivo viene rimosso dalla gestione, vedere [Che cosa accade se si annulla la registrazione del dispositivo da Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+Un dispositivo Windows registrato può essere rimosso da Intune quando non si vuole (o non è più necessario):  
+* Usare il dispositivo per gestire risorse aziendali o dell'istituto di istruzione. 
+* Accedere a posta, app o altre risorse aziendali o dell'istituto di istruzione.
+
+Dopo la rimozione non sarà possibile accedere alle risorse aziendali o dell'istituto di istruzione dal dispositivo. I dispositivi Windows che possono essere rimossi da Intune includono:  
+* Dispositivi Windows 10 
+* Computer Windows 8.1
+* Dispositivi mobili Windows 8.1
+ 
+Per altre informazioni su cosa accade quando il dispositivo viene rimosso dalla gestione di Intune, vedere [What happens if you remove your device from Intune](what-happens-if-you-unenroll-your-device-from-intune-windows.md) (Che cosa accade se si rimuove il dispositivo da Intune).
 
 ## <a name="remove-your-windows-10-device"></a>Rimuovere il dispositivo Windows 10
+Per rimuovere da Intune un dispositivo Windows 10 seguire questa procedura.
 
-1.  Dall'elenco delle app, toccare l'app **Portale aziendale** .
+### <a name="via-the-company-portal-app"></a>Tramite l'app Portale aziendale
 
-2.  Accedere con le credenziali aziendali o dell'istituto di istruzione.
+1. Aprire l'app Portale aziendale.
+2. Accedere con le credenziali aziendali o dell'istituto di istruzione.
+3. Selezionare il dispositivo da rimuovere in **Dispositivi personali**.
+4. Nell'angolo in alto a destra dell'app selezionare l'icona **Altre informazioni**.
+5. Selezionare **Rimuovi**. 
+6. Selezionare **Rimuovi dispositivo** per confermare la rimozione del dispositivo.
 
-3.  Selezionare il dispositivo di cui annullare la registrazione in **Dispositivi personali**.
-
-4.  Toccare **Rimuovi** &gt; **Rimuovi**.
+### <a name="via-device-settings-app"></a>Tramite l'app Impostazioni del dispositivo
+1. Aprire l'app Impostazioni. 
+2. Passare ad **Account** > **Accedi all'azienda o all'istituto di istruzione**.
+3. Selezionare l'account connesso che si vuole rimuovere > **Disconnetti**.
+4. Per confermare la rimozione del dispositivo selezionare **Sì**.
 
 ## <a name="remove-your-windows-81-computer"></a>Rimuovere il computer Windows 8.1
+Per rimuovere da Intune un computer Windows 8.1 seguire questa procedura.
 
-1.  Passare a **Impostazioni PC** &gt; **Rete** &gt; **Area di lavoro**.
-
+1.  Selezionare **Impostazioni PC** > **Rete** > **Area di lavoro**.
 2.  In **Aggiunta all'area di lavoro** selezionare **Esci**.
-
 3.  In **Turn on device management** (Attiva gestione dei dispositivi) selezionare **Disattiva**.
-
 4.  Nella finestra popup visualizzata selezionare **Disattiva**.
 
-## <a name="remove-your-windows-phone-81-mobile-device"></a>Rimuovere il dispositivo mobile Windows Phone 8.1
+## <a name="remove-your-windows-81-mobile-device"></a>Rimuovere il dispositivo mobile Windows 8.1
+Per rimuovere da Intune un dispositivo mobile Windows 8.1 seguire questa procedura.
 
-1.  Passare a **Impostazioni** &gt; **Area di lavoro**.
-
+1.  Accedere a **Impostazioni** > **Area di lavoro**.
 2.  Toccare l'account aziendale di cui si vuole annullare la registrazione.
-
 3.  Nella parte inferiore della schermata toccare **Elimina**.
-
-4.  Nella finestra di dialogo **Elimina account** toccare **Elimina**.
-
+4.  Nella finestra di dialogo **Elimina account** toccare **Elimina**.  
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Rimozione delle informazioni personali dopo avere rimosso il Portale aziendale
-
 Esistono due tipi di dati archiviati dal Portale aziendale nel dispositivo Windows:
 
--   **Log di diagnostica**: i dati dell'attività dell'app standard raccolti da Microsoft, ad esempio per quanto tempo l'app è rimasta aperta o se si è arrestata in modo anomalo, vengono automaticamente cancellati quando l'app Portale aziendale viene disinstallata.
--   **Cache dell'applicazione**: archiviazione di determinati file di supporto necessari all'app per funzionare, come icone e impostazioni.
+-   **Log di diagnostica**: i dati sulle attività dell'app standard raccolti da Microsoft vengono automaticamente cancellati quando si rimuove il dispositivo dal Portale aziendale. I dati dell'attività dell'app indicano ad esempio per quanto tempo è stata aperta l'app o se ha registrato un arresto anomalo.
+-   **Cache dell'applicazione**: file di supporto necessari per il funzionamento dell'app, come icone e impostazioni.
 
 Per eliminare completamente queste informazioni, è necessario seguire alcuni passaggi.
 
-### <a name="uninstall-the-company-portal"></a>Disinstallare il Portale aziendale  
+1. Disinstallare il Portale aziendale. La [disinstallazione dell'app Portale aziendale](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) rimuoverà alcuni dei dati dell'app archiviati nel dispositivo.  
 
-La [disinstallazione dell'app Portale aziendale](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) rimuoverà alcuni dei dati dell'app archiviati nel dispositivo.  
-
-### <a name="reset-the-company-portal"></a>Ripristinare il Portale aziendale
-
-È possibile ripristinare i dati dell'app Portale aziendale rimanenti ripristinando l'app in Impostazioni. Aprire **Impostazioni** > **App e Funzionalità** > **Portale aziendale** > **Advanced options (Opzioni avanzate** > **Ripristina**.
+2. Reimpostare il Portale aziendale per reimpostare i dati dell'app archiviati. Aprire l'app **Impostazioni** e selezionare **App** > **Portale aziendale** > **Opzioni avanzate** > **Reimposta**. 
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

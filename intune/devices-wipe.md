@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,35 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Rimuovere i dispositivi con il ripristino delle impostazioni predefinite o rimuovere i dati aziendali
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-È possibile rimuovere da Intune i dispositivi non più necessari, da reimpiegare o mancanti. Questa operazione può essere eseguita usando l'azione **Rimuovi i dati aziendali** o **Ripristino delle impostazioni di fabbrica**. Gli utenti possono anche inviare un comando remoto dall'app Portale aziendale Intune ai dispositivi privati registrati in Intune.
+Usando le azioni **Rimuovi i dati aziendali** o **Ripristino delle impostazioni predefinite**, è possibile rimuovere da Intune i dispositivi non più necessari, da reimpiegare o mancanti. Gli utenti possono anche inviare un comando remoto dall'app Portale aziendale Intune ai dispositivi privati registrati in Intune.
 
 > [!NOTE]
 > Prima di rimuovere un utente da Azure Active Directory (Azure AD) usare l'azione **Ripristino delle impostazioni di fabbrica** o **Rimuovi i dati aziendali** per tutti i dispositivi associati all'utente. Se si rimuovono utenti con dispositivi gestiti da Azure AD, Intune non è più in grado di generare un comando di ripristino delle impostazioni di fabbrica o di rimozione dei dati aziendali per tali dispositivi.
 
 ## <a name="factory-reset"></a>Ripristino delle impostazioni di fabbrica
 
-L'azione **Ripristino delle impostazioni di fabbrica** riporta un dispositivo alle impostazioni predefinite di fabbrica. Un ripristino delle impostazioni di fabbrica consente di ripristinare tutti i dati e le impostazioni aziendali e dell'utente. Il dispositivo viene rimosso dalla gestione di Intune. Il ripristino delle impostazioni di fabbrica è utile per reimpostare un dispositivo prima di assegnarlo a un nuovo utente o nel caso in cui il dispositivo sia stato smarrito o rubato. Prestare attenzione quando si seleziona **Ripristino delle impostazioni di fabbrica**. Non sarà possibile recuperare i dati nel dispositivo.
+L'azione **Ripristino delle impostazioni di fabbrica** riporta un dispositivo alle impostazioni predefinite di fabbrica. I dati degli utenti vengono conservati o cancellati a seconda che sia stata selezionata o meno la casella di controllo **Mantieni lo stato della registrazione e l'account utente**.
+
+|Azione Ripristino delle impostazioni predefinite|**Mantieni lo stato della registrazione e l'account utente**|Rimosso dalla gestione di Intune|Descrizione|
+|:-------------:|:------------:|:------------:|------------|
+|**Ripristino impostazioni predefinite**| Non selezionata | Sì | Cancella tutti gli account utente, i dati, i criteri MDM e le impostazioni. Reimposta le impostazioni e lo stato predefiniti del sistema operativo.|
+|**Ripristino impostazioni predefinite**| Selezionato | No | Cancella tutti i criteri MDM. Conserva gli account utente e i dati. Reimposta le impostazioni utente predefinite. Reimposta le impostazioni e lo stato predefiniti del sistema operativo.|
+
+L'opzione **Mantieni lo stato della registrazione e l'account utente** è disponibile solo per Windows 10 versione 1709 o successiva.
+
+I criteri MDM verranno riapplicati alla successiva connessione del dispositivo a Intune.
+
+Il ripristino delle impostazioni di fabbrica è utile per reimpostare un dispositivo prima di assegnarlo a un nuovo utente o nel caso in cui il dispositivo sia stato smarrito o rubato. Prestare attenzione quando si seleziona **Ripristino delle impostazioni di fabbrica**. Non sarà possibile recuperare i dati nel dispositivo.
 
 ### <a name="factory-reset-a-device"></a>Ripristinare le impostazioni di fabbrica di un dispositivo
 

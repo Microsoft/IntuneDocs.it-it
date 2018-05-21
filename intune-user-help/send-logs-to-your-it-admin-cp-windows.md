@@ -17,15 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3948ca1dd68e34997a21444f271ae31407d6508
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Inviare i log al supporto tecnico aziendale dall'app Portale aziendale per Windows 10
 
 Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo Windows 10, è possibile inviare un messaggio di posta elettronica al supporto tecnico aziendale con informazioni utili ai fini della risoluzione del problema. Queste informazioni vengono memorizzate nel dispositivo in uno specifico documento definito _log di diagnostica_.
+
+> [!Note]       
+> Il portale aziendale per Windows 10 invierà i log delle app direttamente a Microsoft quando l'utente avvia il flusso di lavoro per visualizzare la Guida per un problema. In questo modo sarà più semplice risolvere i problemi inoltrati a Microsoft.
 
 1. Aprire l'app **Portale aziendale**.
 2. Selezionare l'icona a forma di ingranaggio **Impostazioni** e quindi **Invia log**.
