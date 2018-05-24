@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 812f73cb0857298f01967cebbb36f0b8220fb9c6
-ms.sourcegitcommit: 179bea63fe52a8cce236b6ca8d82a6bd51bf17a5
+ms.openlocfilehash: b860b68bbf8940a89533159885f471f5337ca0e8
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Come creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune
 
@@ -31,6 +31,9 @@ In qualità di amministratore, è possibile creare eccezioni per i criteri di tr
 > L'utente è responsabile di apportare modifiche ai criteri relativi alle eccezioni per il trasferimento dei dati. Le aggiunte a questi criteri consentono alle app non gestite (app non gestite da Intune) di accedere ai dati protetti dalle applicazioni gestite. L'accesso ai dati protetti può comportare minacce per la protezione dei dati. Aggiungere le eccezioni di trasferimento dei dati solo per le app che l'organizzazione deve usare, ma che non supportano i criteri di protezione delle app di Intune. È anche possibile aggiungere solo le eccezioni per le app che non si considerano a rischio di perdita di dati.
 
 Nei criteri di protezione dell'applicazione di Intune, se si imposta **Consenti all'app di trasferire i dati ad altre app** su **App gestite da criteri**, l'app può trasferire i dati solo alle app gestite da Intune. Se è necessario consentire il trasferimento dei dati ad app specifiche che non supportano i criteri di protezione delle app di Intune, è possibile creare eccezioni a questi criteri usando **Selezionare le app da esentare**. Le esenzioni consentono alle applicazioni gestite da Intune di richiamare le applicazioni non gestite in base al protocollo URL (iOS) o al nome del pacchetto (Android). Per impostazione predefinita, Intune aggiunge le applicazioni native più importanti a questo elenco di eccezioni. 
+
+> [!NOTE]
+> La modifica o l'aggiunta alle eccezioni dei criteri di trasferimento dei dati non influisce su altri criteri di protezione dell'app, ad esempio taglia, copia e incolla restrizioni. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Eccezioni per il trasferimento dei dati iOS
 Per i criteri destinati a iOS, è possibile configurare eccezioni per il trasferimento dei dati tramite il protocollo URL. Per aggiungere un'eccezione, vedere la documentazione offerta dallo sviluppatore dell'app per trovare informazioni sui protocolli URL supportati. Per altre informazioni sulle eccezioni per il trasferimento dei dati iOS, vedere [Impostazioni dei criteri di protezione delle app per iOS - Esenzioni per il trasferimento dei dati](app-protection-policy-settings-ios.md#data-transfer-exemptions).

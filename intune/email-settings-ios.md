@@ -6,18 +6,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 5/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0912ec4fdc77b51903b4febd54f9d16972b867a8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: fe791dce88878fdbde7c62e59452a53ac08ef06b
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-ios"></a>Impostazioni del profilo di posta elettronica in Microsoft Intune per i dispositivi che eseguono iOS 
 
@@ -35,8 +35,7 @@ Questo articolo illustra le impostazioni del profilo di posta elettronica che è
     - Se è stata selezionata l'opzione **Certificato**, selezionare un profilo certificato client SCEP o PKCS creato in precedenza che viene usato per autenticare la connessione di Exchange.
 - **SSL** - Consente di usare la comunicazione Secure Sockets Layer (SSL) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con il server Exchange.
 - **S/MIME**: consente di inviare la posta elettronica in uscita usando la firma S/MIME.
-    - Se è stata selezionata l'opzione **Certificato**, selezionare un profilo certificato client SCEP o PKCS creato in precedenza che viene usato per autenticare la connessione di Exchange.
-    - Se si sceglie un certificato SCEP, assicurarsi che nel dispositivo sia installato un certificato PFX (Personal Information Exchange) valido.
+    - Se è stata selezionata l'opzione **Certificato**, selezionare un profilo certificato PKCS creato in precedenza per autenticare la connessione di Exchange.
 - **Numero di messaggi di posta elettronica da sincronizzare** - Selezionare il numero di giorni di posta elettronica da sincronizzare o selezionare **Illimitata** nell'elenco a discesa per sincronizzare tutti i messaggi di posta elettronica disponibili.
 - **Consentire lo spostamento dei messaggi ad altri account di posta elettronica** - Consente agli utenti di spostare i messaggi di posta elettronica tra diversi account configurati nel dispositivo.
 - **Consenti di inviare i messaggi di posta elettronica dalle applicazioni di terze parti** - Consente all'utente di selezionare questo profilo come account predefinito per l'invio di posta elettronica e consente ad applicazioni di terze parti di aprire la posta elettronica nella relativa app nativa, ad esempio per allegare file ai messaggi.

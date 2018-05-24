@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
-ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
+ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Rimuovere il dispositivo Windows dalla gestione di Intune
 
@@ -72,13 +72,13 @@ Per rimuovere da Intune un dispositivo mobile Windows 8.1 seguire questa procedu
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Rimozione delle informazioni personali dopo avere rimosso il Portale aziendale
 Esistono due tipi di dati archiviati dal Portale aziendale nel dispositivo Windows:
 
--   **Log di diagnostica**: i dati sulle attività dell'app standard raccolti da Microsoft vengono automaticamente cancellati quando si rimuove il dispositivo dal Portale aziendale. I dati dell'attività dell'app indicano ad esempio per quanto tempo è stata aperta l'app o se ha registrato un arresto anomalo.
+-   **Log di diagnostica**: dati di attività standard delle app raccolti da Microsoft. Tali dati vengono cancellati automaticamente quando si disinstalla l'app Portale aziendale. I dati dell'attività dell'app indicano ad esempio per quanto tempo è stata aperta l'app o se ha registrato un arresto anomalo.
 -   **Cache dell'applicazione**: file di supporto necessari per il funzionamento dell'app, come icone e impostazioni.
 
-Per eliminare completamente queste informazioni, è necessario seguire alcuni passaggi.
+Per eliminare i log e la cache memorizzati, completare una delle operazioni seguenti:
 
-1. Disinstallare il Portale aziendale. La [disinstallazione dell'app Portale aziendale](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) rimuoverà alcuni dei dati dell'app archiviati nel dispositivo.  
+* [Disinstallare l'app Portale aziendale](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-2. Reimpostare il Portale aziendale per reimpostare i dati dell'app archiviati. Aprire l'app **Impostazioni** e selezionare **App** > **Portale aziendale** > **Opzioni avanzate** > **Reimposta**. 
+* Ripristinare l'app Portale aziendale. Aprire l'app **Impostazioni** e selezionare > **App** > **Portale aziendale** > **Opzioni avanzate** > **Ripristina**. 
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).

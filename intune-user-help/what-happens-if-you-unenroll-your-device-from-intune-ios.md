@@ -1,11 +1,11 @@
 ---
-title: Che cosa avviene se si annulla la registrazione del dispositivo iOS o macOS | Microsoft Docs
-description: ''
+title: Che cosa avviene se si annulla la registrazione del dispositivo iOS o macOS
+description: Viene descritto cosa accade dopo aver rimosso il dispositivo da Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/03/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5b3af226fa1b92a3e9e3f29f35c1b80ca253568f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8afec4c83e52693aa5789ba3e0ed89cb4d0eea38
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>Che cosa avviene se si annulla la registrazione del dispositivo iOS o macOS da Intune
 

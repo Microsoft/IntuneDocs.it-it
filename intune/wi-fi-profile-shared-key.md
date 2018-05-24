@@ -14,11 +14,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a3b98dad86b7abe5ce330ae99fdf008137cc2b11
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Usare un profilo di dispositivo personalizzato per la creazione di un profilo Wi-Fi con una chiave precondivisa - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ Le chiavi precondivise (PSK) vengono in genere usate per autenticare gli utenti 
 - Per Android, è anche possibile usare [Android PSK Generator](http://intunepskgenerator.johnathonb.com/).
 - È possibile aggiungere più reti e chiavi aggiungendo altre impostazioni URI OMA.
 - Per iOS, usare Apple Configurator in una stazione Mac per impostare il profilo. In alternativa, usare [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/).
+- PSK richiede una stringa di 64 cifre esadecimali o una passphrase tra gli 8 e i 63 caratteri ASCII stampabili. Alcuni caratteri, ad esempio asterisco (*), non sono supportati.
 
 ## <a name="create-a-custom-profile"></a>Creare un profilo personalizzato
 È possibile creare un profilo personalizzato con una chiave precondivisa per Android, Windows o un profilo Wi-Fi basato su EAP. Per creare il profilo mediante il portale di Azure, vedere [Come configurare le impostazioni dispositivo personalizzate in Microsoft Intune](custom-settings-configure.md). Quando si crea il profilo di dispositivo, scegliere **Personalizzato** per la piattaforma del dispositivo. Non selezionare il profilo Wi-Fi. Quando si sceglie Personalizzato, assicurarsi di: 
@@ -42,16 +43,16 @@ Le chiavi precondivise (PSK) vengono in genere usate per autenticare gli utenti 
 1. Immettere un nome e una descrizione del profilo.
 2. Aggiungere una nuova impostazione URI OMA con le proprietà seguenti: 
 
-   a. Immettere un nome per questa impostazione di rete Wi-Fi
+   a. Immettere un nome per questa impostazione di rete Wi-Fi.
 
-   b. (Facoltativo) Immettere una descrizione dell'impostazione URI OMA o lasciare il campo vuoto
+   b. (Facoltativo) Immettere una descrizione dell'impostazione URI OMA o lasciare il campo vuoto.
 
-   c. Impostare **Tipo di dati** su **String**
+   c. Impostare **Tipo di dati** su **String**.
 
    d. **OMA-URI**:
 
-   - **Per Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-   - **err Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Per Android**: ./Vendor/MSFT/WiFi/Profile/SSID/Settings
+   - **Per Windows**: ./Vendor/MSFT/WiFi/Profile/SSID/WlanXml
 
      > [!NOTE]
      > Assicurarsi di includere il carattere punto (.) all'inizio.

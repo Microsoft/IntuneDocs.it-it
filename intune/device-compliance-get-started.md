@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introduzione ai criteri di conformità dei dispositivi in Intune
 
@@ -159,7 +159,7 @@ La sezione **Impostazioni dei criteri di conformità** (portale di Azure > Confo
   - **Conforme**: la funzione di sicurezza non è attiva
   - **Non conforme** (impostazione predefinita): la funzione di sicurezza è attiva
 
-  Un dispositivo a cui non è stato assegnato un criterio di conformità è considerato come non conforme. Per impostazione predefinita, i dispositivi sono contrassegnati come **Non conforme**. Se si utilizza l'accesso condizionale, è consigliabile mantenere l'impostazione predefinita **Non conforme**. Se un utente finale non è conforme perché non è stato assegnato un criterio, nel Portale aziendale viene indicato `No compliance policies have been assigned`.
+  Un dispositivo a cui non è stato assegnato un criterio di conformità è considerato come non conforme. Per impostazione predefinita, i dispositivi sono contrassegnati come **Conforme**. Se si usa l'accesso condizionale, è consigliabile modificare l'impostazione su **Non conforme**. Se un utente finale non è conforme perché non è stato assegnato un criterio, nel Portale aziendale viene indicato `No compliance policies have been assigned`.
 
 - **Rilevamento ottimizzato per jailbreak**: se abilitata, questa impostazione attiva un'archiviazione più frequente dei dispositivi iOS con Intune. L'abilitazione di questa proprietà usa i servizi di posizione del dispositivo e influisce sull'utilizzo della batteria. I dati relativi alla posizione dell'utente non vengono archiviati da Intune.
 

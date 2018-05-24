@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,21 +17,21 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Rimuovere il dispositivo dal Portale aziendale
 
-Se non si vuole più far gestire il dispositivo dalla propria società o organizzazione, è possibile rimuoverlo dal portale aziendale usando il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog). Il sito Web del portale aziendale è una pagina Web che è possibile usare per gestire computer e dispositivi registrati per la gestione con il reparto IT. Se il dispositivo viene rimosso, non verrà più visualizzato nel portale aziendale e si potrebbe perdere anche l'accesso ad app, posta elettronica e dati aziendali o dell'istituto di istruzione.
+Se non si vuole più far gestire il dispositivo dalla propria società o organizzazione, è possibile rimuoverlo dal portale aziendale tramite il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog). Se il dispositivo viene rimosso, non verrà più elencato nel portale aziendale. È anche possibile che l'accesso ai dati, alle app e alla posta elettronica dell'organizzazione vada perso.
 
 Per rimuovere il dispositivo:
 
 1. Nel [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) toccare il pulsante __menu__ ![Piccola immagine del pulsante menu, tre barrette orizzontali parallele.](/Intune/whats-new/media/CP_hamburger_menu.png) e quindi selezionare __Dispositivi personali__.
 
-   ![Immagine del sito Web del portale aziendale con un menu laterale espanso sul lato sinistro della schermata con i pulsanti Home, Tutte le app, Dispositivi personali, Supporto tecnico e Disconnetti.](/media/iwp-expanded-sidebar.png)
+   ![Immagine del sito Web del portale aziendale con un menu laterale espanso sul lato sinistro della schermata con i pulsanti Home page, Tutte le app, Dispositivi personali, Supporto tecnico ed Esci.](/media/iwp-expanded-sidebar.png)
 
 2. Nella pagina __Dispositivi personali__ selezionare il nome del dispositivo da rimuovere.
 

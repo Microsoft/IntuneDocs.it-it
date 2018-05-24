@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi Android e Samsung Knox Standard in Microsoft Intune 
 
@@ -47,6 +47,10 @@ Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di
 ## <a name="password"></a>Password
 
 - **Password**: richiede all'utente finale di immettere una password per accedere al dispositivo.|Sì|Sì|
+
+    > [!NOTE]
+    > I dispositivi Samsung Knox richiedono automaticamente un PIN di 4 cifre durante la registrazione MDM. I dispositivi Android nativi possono richiedere automaticamente un PIN per risultare conformi all'accesso condizionale.
+
 - **Lunghezza minima password** - Immettere la lunghezza minima della password che l'utente deve configurare (da 4 a 16 caratteri).
 - **Numero massimo di minuti di inattività fino al blocco dello schermo** - Specifica il numero di minuti di inattività prima dello spegnimento dello schermo del dispositivo.
 - **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** - Specifica il numero di errori di accesso consentiti prima della cancellazione del dispositivo.
@@ -55,7 +59,7 @@ Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di
     - **Impostazione predefinita dispositivo**
     - **Protezione biometrica bassa**
     - **Almeno numerico**
-    - **Complessa numerica** - Non sono consentiti numeri consecutivi o ripetuti, ad esempio "1111" o "1234"<sup>1</sup>
+    - **Complessa numerica**: i numeri consecutivi o ripetuti (ad esempio, "1111" o "1234") non sono consentiti. <sup>1</sup>
     - **Almeno alfabetico**
     - **Almeno alfanumerico**
     - **Almeno alfanumerico con simboli**
@@ -63,6 +67,9 @@ Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di
 - **Impronta digitale sbloccata (solo Samsung Knox)** - Consente di usare un'impronta digitale per sbloccare i dispositivi supportati.
 - **Smart Lock e altri agenti di attendibilità** - Consente di controllare la funzionalità Smart Lock su dispositivi Android compatibili (Samsung Knox Standard 5.0 e versioni successive). Questa funzionalità del telefono, talvolta nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se il dispositivo si trova in una posizione attendibile, ad esempio quando è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. È possibile usare questa impostazione per impedire agli utenti di configurare Smart Lock.
 - **Crittografia** - Richiede la crittografia dei file nel dispositivo.
+
+    > [!NOTE]
+    > Se viene applicato un criterio di crittografia, i dispositivi Samsung Knox richiedono che gli utenti impostino una password complessa di sei caratteri come passcode del dispositivo.
 
 <sup>1</sup> Prima di assegnare questa impostazione ai dispositivi, assicurarsi di aggiornare l'app Portale aziendale alla versione più recente in tali dispositivi.
 

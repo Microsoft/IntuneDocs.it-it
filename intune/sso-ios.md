@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1aaffb2da1f4ec081b59ff6ca1922d983008f77
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS
 
@@ -59,13 +59,13 @@ Le sezioni seguenti contengono informazioni dettagliate su ognuno dei campi rela
 
 ### <a name="username-attribute-from-aad-and-realm"></a>Attributo nome utente da AAD e Area di autenticazione
 
-- Se si seleziona **Nome dell'entità utente** per questo campo, l'analisi viene eseguita nel modo seguente:
+- Se si seleziona **Nome entità utente** per questo campo, l'analisi viene eseguita nel modo seguente:
 
    ![Attributo nome utente](media/User-name-attribute.png)
 
    È anche possibile scegliere di sovrascrivere l'area di autenticazione con il testo digitato nella casella di testo **Area di autenticazione**.
 
-   Ad esempio, Contoso potrebbe avere varie aree secondarie, ad esempio Europa, Asia e America del Nord. Potrebbe richiedere l'uso del payload SSO agli utenti in Asia e l'UPN dell'app in formato *username@asia.contoso.com*. In questo caso, se si seleziona **Nome dell'entità utente**, per impostazione predefinita l'area di autenticazione per ogni utente viene recuperata da AAD è potrebbe essere semplicemente *contoso.com*. Specificatamente per gli utenti nell'area Asia è quindi possibile creare questo payload e sovrascrivere l'area di autenticazione con il valore *asia.contoso.com*. L'UPN dell'utente finale diventa ora *username@asia.contoso.com* e non *username@contoso.com*.
+   Ad esempio, Contoso potrebbe avere varie aree secondarie, ad esempio Europa, Asia e America del Nord. Potrebbe richiedere l'uso del payload SSO agli utenti in Asia e l'UPN dell'app in formato *username@asia.contoso.com*. In questo caso, se si seleziona **Nome entità utente**, per impostazione predefinita l'area di autenticazione per ogni utente viene recuperata da AAD e potrebbe essere semplicemente *contoso.com*. Specificatamente per gli utenti nell'area Asia è quindi possibile creare questo payload e sovrascrivere l'area di autenticazione con il valore *asia.contoso.com*. L'UPN dell'utente finale diventa ora *username@asia.contoso.com* e non *username@contoso.com*.
 
 - Se si seleziona **ID dispositivo**, Intune seleziona automaticamente l'ID dispositivo di Intune.
 

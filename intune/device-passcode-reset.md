@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 905c51dcbc5b7731be207c25ffd368b339dbec57
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5783558a768e1d58087168f81ad27e5acf9aae09
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Reimpostare o rimuovere il passcode di un dispositivo in Intune
 
@@ -47,7 +47,7 @@ Per creare un nuovo passcode per un dispositivo, usare l'azione **Rimuovi il pas
 
 ## <a name="resetting-android-for-work-passcodes"></a>Reimpostazione dei passcode di Android for Work
 
-I dispositivi Android for Work supportati ricevono una nuova password per lo sblocco del dispositivo o una richiesta di profilo gestito per l'utente finale. Gli utenti finali di dispositivi Android 7.0 o versioni successive con profili di lavoro ricevono notifiche per attivare il token di reimpostazione passcode immediatamente dopo il completamento della registrazione. La notifica viene visualizzata se la password di un profilo di lavoro è necessaria e impostata. Dopo l'immissione del passcode, la notifica viene chiusa.
+I dispositivi Android for Work supportati ricevono una nuova password per lo sblocco del profilo gestito o una richiesta di profilo gestito per l'utente finale. Gli utenti finali di dispositivi Android 7.0 o versioni successive con profili di lavoro ricevono notifiche per attivare il token di reimpostazione passcode immediatamente dopo il completamento della registrazione. La notifica viene visualizzata se la password di un profilo di lavoro è necessaria e impostata. Dopo l'immissione del passcode, la notifica viene chiusa.
 
 ## <a name="resetting-ios-passcodes"></a>Reimpostazione dei passcode iOS
 

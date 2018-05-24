@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/09/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,23 +15,26 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0408ce3a4c2d4224780b4b23b0fb1b7d690471fe
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0cd9db9399eb08c3ed04ff1d8920082aa0c04f06
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune offre alcuni metodi per monitorare le proprietà delle app gestite e per gestire lo stato delle assegnazioni di app.
+Intune offre diversi modi per monitorare le proprietà delle app gestite e per gestire lo stato di assegnazione delle app.
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Dal menu **Intune** scegliere **App per dispositivi mobili**.
 4. Nella sezione **Gestisci** del menu selezionare **App**.
-5. Nell'elenco di app selezionare un'app da monitorare. Viene visualizzato il riquadro delle app con informazioni sullo stato del dispositivo e lo stato dell'utente.
+5. Nell'elenco di app selezionare un'app da monitorare. Verrà quindi visualizzato il riquadro delle app, che include una panoramica dello stato del dispositivo e dello stato dell'utente.
+
+> [!NOTE]
+> Le app di Android Store distribuite come **disponibili** non segnalano lo stato dell'installazione.
 
 ## <a name="app-overview-pane"></a>Riquadro di panoramica delle app
 
