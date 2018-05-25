@@ -36,7 +36,7 @@ Il carico di lavoro **Dispositivi** offre informazioni dettagliate sui dispositi
    - **Panoramica** contiene uno snapshot dei dispositivi registrati e indica quanti dispositivi usano le diverse piattaforme, tra cui Android, iOS e altro.
    - **Tutti i dispositivi** elenca i dispositivi registrati gestiti.
 
-     Usare la funzione **Esporta** per creare un elenco in formato CSV di tutti i dispositivi, in incrementi di 10.000 (Internet Explorer) o 30.000 (Edge, Chrome).
+     Usare la funzione **Esporta** per creare un elenco in formato CSV di tutti i dispositivi, in incrementi di 10.000 (Internet Explorer) o 30.000 (Microsoft Edge, Chrome).
 
      Selezionare un qualsiasi dispositivo per [visualizzare ulteriori dettagli su di esso](device-inventory.md), inclusi dettagli sull'hardware, le app installate, lo stato dei criteri di conformità e altro ancora.
 
