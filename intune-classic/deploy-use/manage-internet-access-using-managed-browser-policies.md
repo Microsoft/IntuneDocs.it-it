@@ -15,13 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1722defcb29c9cd5a15c68e01114f4ffb80e3859
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34456368"
 ---
-# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gestire l'accesso a Internet utilizzando criteri di browser gestiti con Microsoft Intune.
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Gestire l'accesso a Internet utilizzando criteri di browser gestiti con Microsoft Intune
 
 [!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
@@ -47,7 +48,7 @@ Intune Managed Browser supporta l'apertura di contenuti Web di [partner delle ap
 
 1.  Nella [console di amministrazione di Microsoft Intune](https://manage.microsoft.com) scegliere **Criteri** &gt; **Aggiungi criterio**.
 
-2.  Configurare uno dei seguenti **Software** tipi di criteri
+2.  Configurare uno dei seguenti **Software** tipi di criteri:
 
     -   **Managed Browser (Android 4 e versioni successive)**
 
@@ -89,7 +90,7 @@ Per altre informazioni su come distribuire le app, vedere [Distribuire app in Mi
 
 -   Managed Browser può bloccare l'accesso ai siti solo quando vi si accede direttamente. È possibile bloccare l'accesso quando servizi intermedi (ad esempio, un servizio di traduzione) vengono utilizzati per accedere al sito.
 
--   Per consentire l'autenticazione e per assicurarsi di poter accedere alla documentazione di Intune,**&#42;.microsoft.com** è esente dalle impostazioni degli elenchi Blocca o Consenti, perché è sempre consentito.
+-   Per consentire l'autenticazione e per assicurarsi di poter accedere alla documentazione di Intune,**&#42;.microsoft.com** è esente dalle impostazioni degli elenchi Blocca o Consenti. Perché è sempre consentito.
 
 ### <a name="turn-off-usage-data"></a>Disattivare la raccolta dati
 Microsoft raccoglie automaticamente dati anonimi sulle prestazioni e sull'uso di Managed Browser per migliorare prodotti e servizi Microsoft. Gli utenti possono disattivare la raccolta dei dati usando l'impostazione **Dati di utilizzo** nei propri dispositivi. L'utente non ha alcun controllo sulla raccolta di tali dati.
@@ -115,14 +116,14 @@ Usare le informazioni seguenti per saperne di più sui formati e i caratteri jol
 
 |                  URL                  |                     Dettagli                      |                                                Corrispondenze                                                |                                Non corrisponde                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              Corrisponde a una singola pagina               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              Corrisponde a una singola pagina               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>;     | Cerca una corrispondenza con tutti gli URL che iniziano con www.contoso.com |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|        http://www.contoso.com         |              Corrisponde a una singola pagina               |                                            <www.contoso.com>                                           |  host.contoso.com<br /><br /><www.contoso.com/images><br /><br />contoso.com/   |
+|          http://contoso.com           |              Corrisponde a una singola pagina               |                                             contoso.com/                                              | host.contoso.com<br /><br /><www.contoso.com/images><br /><br /><www.contoso.com>  |
+|    <http://www.contoso.com/&#42>;     | Cerca una corrispondenza con tutti gli URL che iniziano con www.contoso.com  |      <www.contoso.com> <br /><br /><www.contoso.com/images><br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
 |    http://&#42;.contoso.com/&#42;     |     Cerca una corrispondenza con tutti i sottodomini in contoso.com     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             Corrisponde a una singola cartella              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|     http://www.contoso.com/images     |             Corrisponde a una singola cartella              |                                        <www.contoso.com/images>                                         |                          <www.contoso.com/images/dogs>                          |
 |       http://www.contoso.com:80       |  Cerca una corrispondenza con una singola pagina usando un numero di porta   |                                       http://www.contoso.com:80                                       |                                                                               |
 |        https://www.contoso.com        |          Corrisponde a una singola pagina protetta           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42>; |    Corrisponde a una singola cartella e a tutte le sottocartelle    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+| <http://www.contoso.com/images/&#42>; |    Corrisponde a una singola cartella e a tutte le sottocartelle    |                 <www.contoso.com/images/dogs><br /><br /><www.contoso.com/images/cats>                   |                            <www.contoso.com/videos>                             |
 
 - Di seguito sono riportati esempi di alcuni input che non è possibile specificare:
 
@@ -130,11 +131,11 @@ Usare le informazioni seguenti per saperne di più sui formati e i caratteri jol
 
   - &#42;.contoso/&#42;
 
-  - www.contoso.com/&#42;images
+  - <www.contoso.com/>&#42;images
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - <www.contoso.com/>&#42;images&#42;pigs
 
-  - www.contoso.com/page&#42;
+  - <www.contoso.com/page>&#42;
 
   - Indirizzi IP
 
@@ -153,6 +154,6 @@ Se distribuiti diversi criteri browser gestito a un dispositivo e si verifica un
 
 -   Se le modalità disponibili in tutti i criteri sono diverse, ma gli elenchi di URL sono uguali,le URL non verranno applicate al dispositivo.
 
--   Se un dispositivo riceve i criteri di browser gestiti per la prima volta ed il conflitto nei due criteri, le URL non verranno applicate al dispositivo Utilizzare il nodo **conflitti tra criteri** dei **criteri** nell’area di lavoro per visualizzare i conflitti.
+-   Se un dispositivo riceve i criteri di browser gestiti per la prima volta ed il conflitto nei due criteri, le URL non verranno applicate al dispositivo. Utilizzare il nodo **conflitti tra criteri** dei **criteri** nell’area di lavoro per visualizzare i conflitti.
 
 -   Se un dispositivo ha già ricevuto un criterio di browser gestiti e un secondo criterio è distribuito con le impostazioni in conflitto, le impostazioni originali rimangono sul dispositivo. Utilizzare il nodo **conflitti tra criteri** dei **criteri** nell’area di lavoro per visualizzare i conflitti.
