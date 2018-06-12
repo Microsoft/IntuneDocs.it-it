@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 06/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,18 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b31c9d2028bcde6926f1bf1169de85d2f09efd82
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bc7f827f121ad93498d22f6b9b246abf15dc76e3
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34717979"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Dopo avere aggiunto un'app a Microsoft Intune, è possibile assegnarla a utenti e dispositivi.
-
-È possibile assegnare un'app a un dispositivo indipendentemente dal fatto che il dispositivo sia gestito da Intune o meno. 
+Dopo avere [aggiunto un'app](apps-add.md) a Microsoft Intune, è possibile assegnarla a utenti e dispositivi. Si noti che è possibile assegnare un'app a un dispositivo indipendentemente dal fatto che il dispositivo sia gestito da Intune o meno. 
 
 La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a utenti e dispositivi:
 
@@ -117,7 +116,8 @@ In alcuni casi, la stessa app viene assegnata a più gruppi, ma con finalità di
 |Disponibile per l'utente senza registrazione|Disinstallazione dal dispositivo|Disinstallazione e disponibile senza registrazione.<br><br>Se l'utente non ha installato l'app dal portale aziendale, la finalità di disinstallazione viene rispettata.<br><br>Se l'utente installa l'app dal portale aziendale, l'installazione ha priorità più alta rispetto alla disinstallazione.|
 
 > [!NOTE]
-> Solo per le app dello Store iOS gestite, quando si aggiungono queste app in Microsoft Intune assegnandole come **obbligatorie**, le app vengono create automaticamente con entrambe le finalità **Obbligatoria** e **Disponibile**.
+> Solo per le app dello Store iOS gestite, quando si aggiungono queste app in Microsoft Intune assegnandole come **obbligatorie**, le app vengono create automaticamente con entrambe le finalità **Obbligatoria** e **Disponibile**.<br><br>
+> Le app dello Store iOS (non le app VPP per iOS) di destinazione con scopo obbligatorio verranno applicate sul dispositivo al momento della connessione di quest'ultimo e verranno visualizzate anche nell'app Portale aziendale.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

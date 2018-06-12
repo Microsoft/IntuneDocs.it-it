@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744704"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi Android in Intune
 
@@ -122,6 +123,17 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 - **Integrità del runtime dell'app Portale aziendale**: consente di verificare che nell'app Portale aziendale sia stato installato l'ambiente di runtime predefinito, che l'app sia firmata correttamente, non sia in modalità debug e sia stata installata da un'origine nota.
 - **Blocca il debug USB nel dispositivo** (Android 4.2 o versione successiva): scegliere di impedire ai dispositivi di usare la funzionalità di debug USB.
 - **Livello minimo di patch di protezione** (Android 6.0 o versione successiva): selezionare il livello di patch di sicurezza meno recente consentito per un dispositivo. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere immessa nel formato `YYYY-MM-DD`.
+
+## <a name="locations"></a>Percorsi
+
+Nei criteri eseguire la scelta da percorsi esistenti. Se non si ha ancora una posizione, vedere l'articolo che spiega come [usare i percorsi (isolamento rete) in Intune](use-network-locations.md) per conoscere alcune linee guida.
+
+1. Scegliere **Seleziona percorsi**.
+2. Selezionare il percorso nell'elenco e scegliere **Seleziona**.
+3. **Salvare** il criterio.
+4. Selezionare **Azioni per la mancata conformità**. L'azione predefinita contrassegna immediatamente il dispositivo come non conforme. Questa azione viene applicata quando si seleziona almeno un percorso e se il dispositivo non è connesso ai percorsi selezionati.
+
+  È possibile modificare questa azione per aggiornare la pianificazione quando il dispositivo è contrassegnato come non conforme, ad esempio dopo un giorno. È anche possibile configurare una seconda azione che invia un messaggio di posta elettronica all'utente quando il dispositivo non è più compatibile con i percorsi.
 
 ## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/30/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,31 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a467983b0d6ce94c32080f4d5cd78683471fb58
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
+ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753893"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurare una rete privata virtuale (VPN) per app in Intune per dispositivi iOS
 
 È possibile specificare quali app gestite possono usare la rete privata virtuale (VPN) nei dispositivi iOS gestiti da Intune. Quando si crea una VPN per app in Intune, l'utente finale si connette automaticamente tramite la VPN durante l'accesso ai documenti aziendali.
 
-VPN per App è attualmente disponibile per i provider seguenti: 
+VPN per App è attualmente disponibile per i provider seguenti:
 
- - Checkpoint Remote Access VPN
+ - Check Point Remote Access VPN
  - Cisco AnyConnect
+ - Citrix
  - F5
  - Pulse Connect Secure
  - SonicWall
-
+ - Palo Alto Networks GlobalProtect
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Prerequisiti per VPN per app
+
+> [!IMPORTANT]
+> Può succedere che il vendor VPN abbia altri requisiti specifici per VPN per app, ad esempio hardware o licenze particolari. Controllare la relativa documentazione e soddisfare tali prerequisiti prima di configurare VPN per app in Intune.
 
 Per dimostrare la propria identità, il server VPN presenta il certificato che deve essere accettato senza prompt da parte del dispositivo. Per garantire l'approvazione automatica del certificato, è possibile creare un profilo certificato attendibile con un certificato radice del server VPN emesso dalla CA. 
 
@@ -162,14 +167,15 @@ Con la VPN per app configurata e associata all'app, verificare da un dispositivo
 
 ### <a name="before-you-attempt-to-connect"></a>Prima di provare a connettersi
 
- - Verificare che sia in esecuzione iOS 7 o una versione successiva.
+ - Verificare che sia in esecuzione iOS 9 o una versione successiva.
  - Verificare di implementare *tutti* i criteri citati allo stesso gruppo di utenti. In caso contrario l'esperienza di VPN per app sarà sicuramente interrotta.  
  - Verificare che sia installata l'app VPN di terze parti supportata. Sono supportate le seguenti VPN:
-    - Pulse Secure
-    - Checkpoint
+    - Check Point Capsule Connect
     - Cisco AnyConnect
-    - F5
-    - SonicWall
+    - Citrix VPN
+    - F5 Access
+    - Pulse Secure
+    - SonicWall Mobile Connect
 
 ### <a name="connect-using-the-per-app-vpn"></a>Connessione mediante VPN per app
 

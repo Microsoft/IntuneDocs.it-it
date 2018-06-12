@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/17/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c2eb08db58940ed575b3dea011395edd6711fc
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744789"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Monitorare i profili di dispositivo in Microsoft Intune
 
@@ -41,19 +42,27 @@ Dopo avere creato il profilo del dispositivo, Intune fornisce i grafici. Questi 
 1. Selezionare un profilo esistente. Selezionare, ad esempio, un profilo macOS.
 2. Selezionare la scheda **Panoramica**.
 
-    Il grafico mostra il numero di dispositivi assegnati al profilo del dispositivo specifico. Se ad esempio il profilo di configurazione si applica ai dispositivi macOS, il grafico elencherà il conteggio dei dispositivi macOS.
+    Il grafico in alto illustra il numero di dispositivi assegnati al profilo del dispositivo specifico. Se ad esempio il profilo di configurazione si applica ai dispositivi macOS, il grafico elencherà il conteggio dei dispositivi macOS.
 
     Visualizza anche il numero di dispositivi per le altre piattaforme a cui è assegnato lo stesso profilo di dispositivo. Visualizza, ad esempio, il conteggio dei dispositivi non macOS.
 
     ![Visualizzare il numero di dispositivi assegnati al profilo di dispositivo](./media/device-configuration-profile-graphical-chart.png)
 
-3. Selezionare il cerchio nel grafico. Si apre **Stato del dispositivo**.
+    Il grafico in basso illustra il numero di utenti assegnati al profilo del dispositivo specifico. Se ad esempio il profilo di configurazione si applica agli utenti macOS, il grafico elencherà il conteggio degli utenti macOS.
+
+3. Selezionare il cerchio nel grafico in alto. Si apre **Stato del dispositivo**.
 
     Sono elencati i dispositivi assegnati al profilo ed è indicato se il profilo è stato distribuito correttamente. Si noti anche che sono elencati solo i dispositivi con la piattaforma specifica (ad esempio, macOS).
 
-    Chiudere i dettagli sullo stato del dispositivo.
+    Chiudere i dettagli sullo **Stato del dispositivo**.
 
-4. Nelle proprietà del profilo (**Profiles** > selezionare un profilo specifico) è anche possibile modificare le proprietà esistenti:
+4. Selezionare il cerchio nel grafico in basso. Si apre la finestra **Stato dell'utente**. 
+
+    Sono elencati gli utenti assegnati al profilo ed è indicato se il profilo è stato distribuito correttamente. Si noti anche che sono elencati solo gli utenti con la piattaforma specifica (ad esempio, macOS).
+
+    Chiudere i dettagli sullo **Stato del dispositivo**.
+
+5. Selezionare un profilo specifico nell'elenco **Profili**. È anche possibile modificare le proprietà esistenti:
   - **Proprietà**: modificare il nome o aggiornare le impostazioni esistenti.
   - **Assegnazioni**: includere o escludere i dispositivi a cui applicare i criteri. Scegliere **Gruppi selezionati** per scegliere gruppi specifici.
   - **Stato del dispositivo**: sono elencati i dispositivi assegnati al profilo ed è indicato se il profilo è stato distribuito correttamente. È possibile selezionare un dispositivo specifico per ottenere altri dettagli, incluse le app installate.

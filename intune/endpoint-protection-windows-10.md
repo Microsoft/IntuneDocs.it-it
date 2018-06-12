@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744942"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Impostazioni di Endpoint Protection per Windows 10 e versioni successive in Intune
 
@@ -300,15 +301,21 @@ Usare queste opzioni per configurare le impostazioni di sicurezza locali nei dis
 
 - **Minuti di inattività della schermata di blocco prima dell'attivazione dello screen saver**: consente di definire il numero massimo di minuti di inattività nella schermata di accesso del desktop interattivo prima dell'attivazione dello screen saver.
 - **Richiedi CTRL+ALT+CANC per accedere**: consente di richiedere la selezione di CTRL+ALT+CANC prima che un utente possa eseguire l'accesso.
-- **Comportamento in caso di rimozione della smart card**: determina le azioni che vengono eseguite quando la smart card per un utente connesso viene rimossa dal lettore di smart card.
-Per informazioni più dettagliate, vedere [LocalPoliciesSecurity options](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) (Opzioni di LocalPoliciesSecurity).
+- **Comportamento in caso di rimozione della smart card**: determina le azioni che vengono eseguite quando la smart card per un utente connesso viene rimossa dal lettore di smart card. Le opzioni disponibili sono:
+
+  - **Blocca workstation**: quando la smart card viene rimossa, la workstation risulta bloccata. Questa opzione consente all'utente di allontanarsi, portare con sé la smart card e mantenere comunque una sessione protetta.
+  - **Imponi disconnessione**: l'utente viene automaticamente disconnesso quando la smart card viene rimossa.
+  - **Disconnetti in caso di sessione dei Servizi Desktop remoto**: la rimozione della smart card determina la disconnessione della sessione senza disconnettere l'utente. Questa opzione consente all'utente di inserire la smart card e riprendere la sessione in un secondo momento oppure in un altro computer dotato di lettore di smart card, senza dover accedere di nuovo. Se la sessione è locale, questo criterio funziona in modo identico all'opzione Blocca workstation.
+
+    Per informazioni più dettagliate, vedere [LocalPoliciesSecurity options](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) (Opzioni di LocalPoliciesSecurity).
 
 #### <a name="display"></a>Schermo
 
 - **Informazioni utente nella schermata di blocco**: Consente di configurare le informazioni utente visualizzate quando la sessione è bloccata. Se questa opzione non viene configurata, vengono mostrati il nome visualizzato dell'utente, il dominio e il nome utente.
+  - **Non configurato**: nome visualizzato dell'utente, dominio e nome utente
+  - **Nome visualizzato dell'utente, dominio e nome utente**
   - **Solo nome visualizzato dell'utente**
   - **Non visualizzare le informazioni utente**
-  - **Non configurato**: nome visualizzato dell'utente, dominio e nome utente
 - **Nascondi l'ultimo utente connesso**: consente di non visualizzare il nome utente dell'ultima persona che ha eseguito l'accesso a questo dispositivo.
 - **Nascondi il nome utente all'accesso**: consente di non visualizzare il nome utente della persona che accede a questo dispositivo dopo l'immissione di credenziali e prima della visualizzazione del desktop del dispositivo.
 - **Titolo del messaggio di accesso**: impostare il titolo del messaggio per gli utenti che tentano l'accesso.
@@ -316,13 +323,13 @@ Per informazioni più dettagliate, vedere [LocalPoliciesSecurity options](https:
 
 ### <a name="network-access-and-security"></a>Accesso alla rete e sicurezza
 
-- **Accesso anonimo alle named pipe e alle condivisioni**: limita l'accesso anonimo alle impostazioni per condivisioni e named pipe. Si applica alle impostazioni a cui è possibile accedere anonimamente.
-- **Enumerazione anonima degli account SAM**: consente agli utenti anonimi di enumerare gli account SAM. Windows consente agli utenti anonimi di enumerare i nomi degli account di dominio e delle condivisioni di rete.
-- **Enumerazione anonima di account e condivisioni SAM**: consente di bloccare l'enumerazione anonima degli account e delle condivisioni SAM. Windows consente agli utenti anonimi di enumerare i nomi degli account di dominio e delle condivisioni di rete.
-- **Valore hash di LAN Manager archiviato alla modifica della password**: alla successiva modifica della password, scegliere se archiviare il valore hash di LAN Manager (LM) per la nuova password. Non viene archiviato per impostazione predefinita.
-- **Richieste di autenticazione PKU2U**: consente di impedire alle richieste di autenticazione PKU2U per questo dispositivo di usare le identità online.
-- **Limita le connessioni RPC remote a SAM**: modificare la stringa SDDL (Security Descriptor Definition Language) per consentire o impedire a utenti e gruppi di effettuare chiamate remote a SAM.
-- **Descrittore di sicurezza**
+- **Accesso anonimo alle named pipe e alle condivisioni**: **Non configurato** (impostazione predefinita) limita l'accesso anonimo alle impostazioni di condivisioni e named pipe. Si applica alle impostazioni a cui è possibile accedere anonimamente.
+- **Enumerazione anonima degli account SAM**: **consente** agli utenti anonimi di enumerare gli account SAM. Windows consente agli utenti anonimi di enumerare i nomi degli account di dominio e delle condivisioni di rete.
+- **Enumerazione anonima di account e condivisioni SAM**: **Non configurato** (impostazione predefinita) determina la possibilità per gli utenti anonimi di enumerare i nomi di account di dominio e condivisioni di rete. Per impedire l'enumerazione anonima di account e condivisioni SAM, impostare l'opzione su **Blocca**.
+- **Valore hash di LAN Manager archiviato alla modifica della password**: alla prossima modifica della password, scegliere di **consentire** a LAN Manager (LM) di archiviare il valore hash per la nuova password. Se impostato su **Non configurato** (impostazione predefinita), il valore hash non viene archiviato.
+- **Richieste di autenticazione PKU2U**: **blocca** l'uso delle identità online da parte delle richieste di autenticazione PKU2U inviate al dispositivo. **Non configurato** (impostazione predefinita) consente queste richieste.
+- **Limita le connessioni RPC remote a SAM**: **consente** la stringa SDDL (Security Descriptor Definition Language) predefinita per impedire a utenti e gruppi di effettuare chiamate remote a SAM. **Non configurato** (impostazione predefinita), stringa SDDL (Security Descriptor Definition Language) predefinita per consentire a utenti e gruppi di effettuare chiamate remote a SAM.
+  - **Descrittore di sicurezza**
 
 ### <a name="recovery-console-and-shutdown"></a>Console di ripristino di emergenza e arresto
 
@@ -359,13 +366,13 @@ Per informazioni più dettagliate, vedere [LocalPoliciesSecurity options](https:
 
 ### <a name="microsoft-network-client"></a>Client di rete Microsoft
 
-- **Firma digitalmente le comunicazioni (se il server lo consente)**: determina se il client SMB può provare a negoziare la firma dei pacchetti SMB. Se abilitato (impostazione predefinita), il client di rete Microsoft richiede al server di eseguire la firma dei pacchetti SMB durante la configurazione della sessione. Se la firma dei pacchetti è stata abilitata sul server, la firma dei pacchetti sarà negoziata. Se questo criterio è disabilitato, il client SMB non negozierà mai la firma dei pacchetti SMB.
+- **Firma digitalmente le comunicazioni (se il server lo consente)**: determina se il client SMB può provare a negoziare la firma dei pacchetti SMB. Se abilitato (Non configurato), il client di rete Microsoft chiede al server di eseguire la firma dei pacchetti SMB al momento della configurazione della sessione. Se la firma dei pacchetti è abilitata nel server, questa verrà negoziata. Se questo criterio è disabilitato, il client SMB non negozierà mai la firma dei pacchetti SMB.
 - **Invia password non crittografate a server SMB di terze parti**: se abilitato, il redirector SMB (Server Message Block) è autorizzato a inviare password in testo non crittografato a server SMB non Microsoft che non supportano la crittografia della password durante l'autenticazione.
 
 ### <a name="microsoft-network-server"></a>Server di rete Microsoft
 
-- **Firma digitalmente le comunicazioni (se il client lo consente)**: determina se il server SMB negozierà la firma dei pacchetti SMB con i client che la richiedono. Se abilitato, il server di rete Microsoft negozierà la firma dei pacchetti SMB in base a quanto richiesto dal client, ovvero se la firma dei pacchetti è abilitata sul client, la firma dei pacchetti sarà negoziata. Se disabilitato (impostazione predefinita), il client SMB non negozierà mai la firma dei pacchetti SMB.
-- **Firma digitalmente le comunicazioni (sempre)**: determina se la firma dei pacchetti è richiesta dal componente server SMB. Se abilitato, il server di rete Microsoft comunica con un client di rete Microsoft solo se tale client accetta l'esecuzione della firma dei pacchetti SMB. Se disabilitato (impostazione predefinita), la firma dei pacchetti SMB viene negoziata tra il client e il server.
+- **Firma digitalmente le comunicazioni (se il client lo consente)**: determina se il server SMB negozierà la firma dei pacchetti SMB con i client che la richiedono. Se abilitato, il server di rete Microsoft negozierà la firma dei pacchetti SMB in base a quanto richiesto dal client, ovvero se la firma dei pacchetti è abilitata sul client, la firma dei pacchetti sarà negoziata. Se **Non configurato** o disabilitato (impostazione predefinita), il client SMB non negozierà mai la firma dei pacchetti SMB.
+- **Firma digitalmente le comunicazioni (sempre)**: determina se la firma dei pacchetti è richiesta dal componente server SMB. Se abilitato, il server di rete Microsoft comunica con un client di rete Microsoft solo se tale client accetta l'esecuzione della firma dei pacchetti SMB. Se **Non configurato** o disabilitato (impostazione predefinita), la firma dei pacchetti SMB viene negoziata tra il client e il server.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

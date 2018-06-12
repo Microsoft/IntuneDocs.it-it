@@ -15,11 +15,12 @@ ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 169d0a32fdc86b5cd3f36421e6057cdeae1a078f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: edd0ec0d717d4303ad2a452c5d60009ac09aa05f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703316"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Aggiungere manualmente l'app Portale aziendale di Windows 10 usando Microsoft Intune
 
@@ -73,7 +74,7 @@ Il percorso di migrazione consigliato consiste nell'eliminare l'assegnazione del
 
 Se è necessario trasferire localmente l'app e si è assegnata l'app Portale aziendale di Windows 8.1 senza firmarla con il certificato Symantec, completare l'aggiornamento seguendo i passaggi riportati nella sezione precedente di questo articolo.
 
-Se è necessario trasferire localmente l'app e si è firmata e assegnata l'app Portale aziendale di Windows 8.1 con il certificato di firma codice Symantec, seguire la procedura descritta nella prossima sezione.  
+Se è necessario trasferire localmente l'app e si è firmata e assegnata l'app Portale aziendale di Windows 8.1 con il certificato di firma codice Symantec, seguire la procedura descritta nella prossima sezione.
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Come aggiornare l'app Portale aziendale di Windows 8.1 o Windows Phone 8.1 firmata e trasferita localmente all'app Portale aziendale di Windows 10?
 Il percorso di migrazione consigliato consiste nell'eliminare l'assegnazione esistente dell'app Portale aziendale di Windows 8.1 o Windows Phone 8.1 impostando l'azione di assegnazione su **Disinstalla**. Dopo aver selezionato questa impostazione, è possibile assegnare l'app Portale aziendale di Windows 10 normalmente.  

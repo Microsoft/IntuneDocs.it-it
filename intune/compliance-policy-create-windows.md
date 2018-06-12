@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/26/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744908"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi Windows in Intune
 
@@ -111,21 +112,20 @@ I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione de
 - **Richiedi BitLocker**: quando Bitlocker è abilitato, il dispositivo può proteggere dall'accesso non autorizzato i dati archiviati nell'unità, quando il sistema viene spento o passa alla modalità di ibernazione. Crittografia unità BitLocker di Windows crittografa tutti i dati archiviati nel volume del sistema operativo Windows. BitLocker usa il TPM per proteggere il sistema operativo Windows e i dati utente Consente inoltre di garantire che un computer non venga manomesso, anche se viene perso, rubato o lasciato incustodito. Se il computer è dotato di un TPM compatibile, BitLocker usa il TPM per bloccare le chiavi di crittografia che proteggono i dati. Di conseguenza, non è possibile accedere alle chiavi finché il TPM non ha verificato lo stato del computer.
 - **Richiedi l'abilitazione dell'avvio sicuro nel dispositivo**: quando è abilitato l'avvio protetto, il sistema viene forzato a eseguire l'avvio in uno stato attendibile predefinito. Inoltre, quando è abilitato l'avvio protetto, i componenti di base usati per avviare il computer devono avere le firme di crittografia corrette considerate attendibili dall'organizzazione che ha prodotto il dispositivo. Il firmware UEFI verifica la firma prima di consentire l'avvio del computer. Se un file è stato manomesso modificandone la firma, il sistema non verrà avviato.
 - **Richiedi l'integrità del codice**: l'integrità del codice è una funzionalità che verifica l'integrità di un driver o di un file di sistema ogni volta che viene caricato in memoria. L'integrità del codice rileva se un driver o un file di sistema non firmato viene caricato nel kernel o se un file di sistema è stato modificato da software dannoso eseguito da un account utente con privilegi di amministratore.
-- **Richiedi che il dispositivo si trovi al massimo al livello di minaccia del dispositivo**: usare questa impostazione per considerare la valutazione del rischio dei servizi Threat Defense come condizione di conformità. Scegliere il livello di minaccia massimo consentito:
-  - **Protetto**: questa opzione è la più sicura, perché il dispositivo non può avere minacce. Se viene rilevata la presenza di minacce di qualsiasi livello, il dispositivo viene considerato non conforme.
-  - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
-  - **Media**: il dispositivo viene valutato come conforme se le minacce esistenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
-  - **Alta**: questa opzione è la meno sicura e consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
 
 Per informazioni su come funziona il servizio di attestazione dell'integrità, vedere l'articolo relativo al [CSP per l'attestazione dell'integrità](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
 
 ### <a name="device-properties"></a>Proprietà dispositivo
 
-- **Versione minima del sistema operativo**: immettere la versione minima ammessa, usando il formato numerico major.minor.build.revision. Il numero build.revision deve corrispondere alla versione restituita dal comando `ver` o `winver`.
+- **Versione minima del sistema operativo**: immettere la versione minima ammessa, usando il formato **numerico major.minor.build.CU**. Per ottenere il valore corretto, aprire un prompt dei comandi e digitare `ver`. Il comando `ver` restituisce la versione nel formato seguente:
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   Quando un dispositivo ha una versione precedente rispetto alla versione del sistema operativo specificata, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e dopo l'aggiornamento potrà accedere alle risorse aziendali.
 
-- **Versione massima del sistema operativo**: immettere la versione massima consentita nel formato numerico major.minor.build.revision. Il numero build.revision deve corrispondere alla versione restituita dal comando `ver` o `winver`.
+- **Versione massima del sistema operativo**: immettere la versione massima consentita nel formato **numerico major.minor.build.revision**. Per ottenere il valore corretto, aprire un prompt dei comandi e digitare `ver`. Il comando `ver` restituisce la versione nel formato seguente:
+
+  `Microsoft Windows [Version 10.0.17134.1]`
 
   Quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali risulterà bloccato e l'utente dovrà contattare l'amministratore IT. Fino a quando la regola non viene modificata in modo da consentire la versione del sistema operativo, non è possibile usare questo dispositivo per accedere alle risorse aziendali.
 
@@ -161,9 +161,17 @@ Per informazioni su come funziona il servizio di attestazione dell'integrità, v
 - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password usate in precedenza che non è possibile usare.
 - **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (Mobile e Holographic)**: imporre agli utenti di immettere la password ogni volta che il dispositivo torna attivo dopo uno stato di inattività.
 
-### <a name="encryption"></a>Crittografia
+#### <a name="encryption"></a>Crittografia
 
 - **Crittografia dell'archivio dati nel dispositivo**: scegliere **Rendi obbligatorio** per crittografare l'archivio dati nei dispositivi.
+
+### <a name="windows-defender-atp"></a>Windows Defender ATP
+
+- **Richiedi che il dispositivo si trovi al massimo al punteggio di rischio del computer**: usare questa impostazione per considerare la valutazione del rischio dei servizi Threat Defense come condizione di conformità. Scegliere il livello di minaccia massimo consentito:
+  - **Cancella**: questa opzione è la più sicura, perché il dispositivo non può avere minacce. Se viene rilevata la presenza di minacce di qualsiasi livello, il dispositivo viene considerato non conforme.
+  - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
+  - **Media**: il dispositivo viene valutato come conforme se le minacce esistenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
+  - **Alta**: questa opzione è la meno sicura e consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 

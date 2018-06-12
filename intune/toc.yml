@@ -372,6 +372,8 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
+        - name: Configurare le impostazioni a tutto schermo
+          href: kiosk-settings.md
         - name: Configurare le impostazioni di posta elettronica
           href: email-settings-configure.md
           items:
@@ -411,12 +413,14 @@
               href: wi-fi-settings-macos.md
             - name: Windows 8.1 e Windows 10
               href: wi-fi-settings-import-windows-8-1.md
+        - name: Istruzione
+          items:
+            - name: Dispositivi iOS condivisi
+              href: education-settings-configure-ios-shared.md
+            - name: Windows 10
+              href: education-settings-configure.md
         - name: Configurare le impostazioni di aggiornamento edizione di Windows 10
           href: edition-upgrade-configure-windows-10.md
-        - name: Configurare le impostazioni di Windows 10 Education
-          href: education-settings-configure.md
-        - name: Configurare i dispositivi condivisi iOS per la formazione
-          href: education-settings-configure-ios-shared.md
         - name: Configurare i criteri di aggiornamento per iOS
           href: software-updates-ios.md
         - name: Configurare i certificati
@@ -455,6 +459,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Creare criteri Windows
           href: compliance-policy-create-windows.md
+        - name: Criteri basati sulla posizione
+          href: use-network-locations.md
         - name: Valutare criteri
           href: policy-evaluate.md
         - name: Azioni per la mancata conformità

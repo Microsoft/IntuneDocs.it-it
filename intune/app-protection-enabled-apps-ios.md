@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703282"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Aspettative dalla gestione dell'app per iOS con criteri di protezione delle app
 
@@ -39,7 +40,7 @@ Per i dispositivi **registrati per la gestione in Intune**, l'utente riceverà i
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Uso di app con supporto di più identità
 
-I criteri di protezione delle app hanno effetto solo quando un utente tenta di accedere a dati relativi al lavoro.  Se l'utente accede all'app per uso personale, si verificano comportamenti diversi. 
+I criteri di protezione delle app hanno effetto solo quando un utente tenta di accedere a dati relativi al lavoro. Se l'utente tenta di accedere all'app per uso personale, i comportamenti possono essere diversi. I criteri non si applicano anche al nuovo contenuto non ancora salvato. Il nuovo contenuto viene considerato informazioni aziendali solo dopo essere stato salvato in un percorso aziendale, ad esempio SharePoint o OneDrive for Business.
 
 Per le app che supportano più identità, Intune applica criteri di protezione delle app solo se un utente accede ai dati di lavoro.  Un utente potrebbe, ad esempio, ricevere una richiesta del PIN.  Nell'**app Outlook** il messaggio di richiesta viene visualizzato quando un utente avvia l'app. Nell'**app OneDrive** il messaggio di richiesta viene visualizzato quando un utente digita l'account aziendale.  In Microsoft **Word**, **PowerPoint** ed **Excel** il messaggio di richiesta viene visualizzato quando un utente accede a documenti di OneDrive aziendale.
 ##  <a name="managing-user-accounts-on-the-device"></a>Gestione degli account utente nel dispositivo
@@ -56,7 +57,7 @@ Intune supporta solo la distribuzione di criteri di protezione delle app a un un
 
 Per informazioni su come Intune gestisce più account utente, vedere l'esempio seguente.
 
-L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri di protezione delle app. L'**Azienda X** distribuisce i criteri di protezione delle app **prima dell'****Azienda Y**. L'account associato all'**Azienda X** otterrà i criteri di protezione delle app, a differenza dell'account associato all'Azienda Y. Per fare in modo che l'account utente associato all'Azienda Y sia gestito con i criteri di protezione delle app, l'utente A deve rimuovere l'account associato all'Azienda X.
+L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri di protezione delle app. L'**Azienda X** distribuisce i criteri di protezione delle app **prima dell'** **Azienda Y**. L'account associato all'**Azienda X** otterrà i criteri di protezione delle app, a differenza dell'account associato all'Azienda Y. Per fare in modo che l'account utente associato all'Azienda Y sia gestito con i criteri di protezione delle app, l'utente A deve rimuovere l'account associato all'Azienda X.
 ### <a name="adding-a-second-account"></a>Aggiunta di un secondo account
 
 Se si usa un dispositivo iOS, quando si prova ad aggiungere un secondo account aziendale nello stesso dispositivo potrebbe essere visualizzato un messaggio di blocco.  Verranno visualizzati gli account e sarà possibile scegliere l'account da rimuovere.

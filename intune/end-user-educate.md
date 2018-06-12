@@ -1,11 +1,11 @@
 ---
 title: Come informare gli utenti finali su Microsoft Intune | Microsoft Intune
-description: Condividere informazioni con gli utenti finali per il successo della distribuzione di Intune.
+description: Condividere informazioni con gli utenti dei dispositivi per il successo della distribuzione di Intune.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/10/2017
+ms.date: 06/01/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,46 +13,51 @@ ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.openlocfilehash: a8b5f44482a55a6bb9e9da9e2aa9a8fb67f0a713
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: dfe17cd582682126c889662dd942117c3c68dd10
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34717996"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Come informare gli utenti finali su Microsoft Intune
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Microsoft Intune consente di offrire agli utenti la possibilità di usare i dispositivi mobili, mantenendo protetti i dati aziendali. Una distribuzione corretta implica numerosi passaggi, tra cui la valutazione di Intune tramite una [versione di valutazione gratuita](app-sdk.md).
+Con Microsoft Intune un'organizzazione può consentire ai dipendenti l'uso dei dispositivi mobili e allo stesso tempo garantire la protezione dei dati aziendali. È possibile provare a implementare Intune nell'organizzazione con una [versione di valutazione gratuita](app-sdk.md).
 
-Nessuna di queste tecnologie garantisce che gli utenti comprendano l'importanza dei motivi per cui l'azienda decide di gestire i loro dispositivi. Infatti, è possibile che molti utenti finali si preoccupino della loro privacy, in particolare se Intune viene distribuito come [soluzione BYOD](/enterprise-mobility-security/solutions/byod-design-considerations-guide).
+Quando si implementa Microsoft Intune è importante che i dipendenti riconoscano l'importanza della gestione dei dispositivi e della mobilità aziendale. Se non vengono informati adeguatamente, gli utenti potrebbero temere una violazione della loro privacy. Le preoccupazioni associate alla privacy possono crescere quando si distribuisce Intune come [soluzione BYOD](/enterprise-mobility-security/solutions/byod-design-considerations-guide).
 
 > [!Important]
-> Per il successo della distribuzione è fondamentale comprendere le preoccupazioni degli utenti finali in relazione all'esigenza dell'azienda di gestire i dispositivi e offrire risposte e informazioni esaurienti per tranquillizzarli.
+> La comprensione e la risoluzione dei dubbi degli utenti in merito alla gestione dei dispositivi da parte dell'azienda è essenziale per la riuscita dell'implementazione.
 
-L'adozione di una tecnologia non può essere limitata alla corretta implementazione e alla sua distribuzione a tutta la forza lavoro. È fondamentale che gli utenti finali apprezzino appieno i vantaggi dell'accesso protetto offerto da Intune. Il concetto di mobilità aziendale può intimidire gli utenti se non vengono spiegati loro gli scopi della mobilità aziendale e cosa può offrire loro (o non offrire) questa opportunità.
+La riuscita di un'implementazione non dipende solo dalla distribuzione di tecnologie innovative e funzionali a tutti i dipendenti. È essenziale che gli utenti riconoscano e adottino le nuove tecnologie. Perciò è importante che gli utenti comprendano e adottino la protezione dei dati offerta da Intune. 
 
-## <a name="things-to-consider-about-your-end-users"></a>Aspetti da considerare in relazione agli utenti finali
+## <a name="things-to-consider-about-your-users"></a>Aspetti da considerare in relazione agli utenti
 
-__Livello di esperienza degli utenti finali__ Gli utenti finali possono avere un'ampia gamma di esperienze con svariate tecnologie. Queste esperienze potrebbero essere sia positive che negative, ad esempio foto memorabili scattate ai figli o la volta in cui il dispositivo è caduto nell'acqua e hanno perso tutti i dati di cui non era disponibile un backup. L'approccio alla tecnologia degli utenti è influenzato anche da queste esperienze e dalla percezione che hanno dell'uso personale e aziendale dei dispositivi.
+__Livello di esperienza tecnologica degli utenti__ Le conoscenze tecnologiche e le esperienze d'uso dei dispositivi da parte degli utenti possono variare. Può trattarsi di esperienze positive, come le foto delle vacanze in famiglia o di esperienze negative, come la caduta e il danneggiamento di un dispositivo. Le esperienze influiscono sull'approccio degli utenti alla tecnologia per uso personale e aziendale.
 
-__Cosa significa gestione della mobilità per un utente__ È possibile che gli utenti non conoscano in dettaglio il tipo di accesso che l'azienda ha (o non ha) ai dispositivi e alle informazioni personali. È probabile che gli utenti siano preoccupati che il personale IT o la dirigenza possa controllare ogni loro mossa. Questi aspetti possono essere fonte di preoccupazione in particolare per gli utenti meno esperti, che potrebbero ritenere che tutte le attività svolte nei propri dispositivi siano private. Gli utenti più esperti potrebbero avere timori più specifici, come quello di essere spiati tramite i dispositivi in scenari di tipo "Grande Fratello", e potrebbero diffondere queste preoccupazioni tra i colleghi.
+__Cosa significa gestione della mobilità per gli utenti?__ Gli utenti potrebbero non comprendere appieno l'accesso di cui l'azienda dispone (o non dispone) ai loro dispositivi e ai dati. Un'altra fonte di preoccupazione è il fatto che i superiori o gli addetti IT possano vedere le azioni eseguite dagli utenti sul dispositivo. Gli utenti meno esperti potrebbero ritenere che tutte le attività eseguite sui loro dispositivi sono private. 
 
-__Quali disagi possono esistere per gli utenti finali__ Serve tempo per installare le app, registrare i dispositivi e mantenere la conformità. Garantire la sicurezza dei dati aziendale è la principale priorità di qualsiasi distribuzione di Intune, ma richiedere un passcode senza motivi validi per un dispositivo personale porterà gli utenti a essere infastiditi dalla gestione dei dispositivi. L'invio di aggiornamenti delle app necessari nel bel mezzo di conferenze telefoniche importanti potrebbe compromettere la produttività degli utenti, vanificando gli scopi dell'uso dei dispositivi mobili al lavoro.
+__Perché Intune può risultare ostico agli utenti?__  È importante riconoscere e rispettare i tempi di cui gli utenti hanno bisogno per installare le app, registrare i dispositivi e mantenere la conformità. La priorità assoluta di tutte le distribuzioni di Intune è la protezione dei dati aziendali. Tuttavia l'atteggiamento degli utenti rispetto alla gestione dei dispositivi può essere influenzato negativamente se si distribuiscono criteri che, ad esempio:  
+* Richiedono passcode eccessivamente complessi su dispositivi personali
+* Inviano aggiornamenti obbligatori delle app mentre è in corso una chiamata di lavoro importante  
+
+I criteri di questo tipo possono anche avere effetti negativi sulla produttività del dipendente. 
 
 ## <a name="things-you-should-do"></a>Cosa fare
 
-Rassicurare gli utenti sarà utile per agevolare la distribuzione. L'elenco seguente include varie proposte per motivare più efficacemente gli utenti finali ad accogliere positivamente il sistema di gestione dei dispositivi.
+Leggere il seguente elenco di suggerimenti per semplificare la distribuzione di Intune nei dispositivi degli utenti dell'organizzazione.
 
-* __Documentazione.__ La documentazione di Intune include un'ampia gamma di contenuti che consentiranno agli utenti finali di scoprire come eseguire specifiche attività, come la registrazione dei dispositivi e la risoluzione dei problemi. Questi contenuti includono articoli a cui gli utenti vengono indirizzati dal portale aziendale, suddivisi in sezioni sull'installazione dell'app Portale aziendale e la registrazione in Intune, sulle attività generali che gli utenti possono eseguire sui propri dispositivi e sulla risoluzione dei problemi. Questa documentazione è disponibile nelle spiegazioni su come [usare i dispositivi gestiti per lo svolgimento del lavoro](/intune-user-help/use-managed-devices-to-get-work-done).
+* __Documentazione.__ La documentazione di Intune aiuta gli utenti a completare attività specifiche di Intune, come la registrazione e la risoluzione dei problemi dei dispositivi. Gli utenti possono fare clic e visualizzare alcuni articoli direttamente dal Portale aziendale. Questi articoli descrivono l'installazione dell'app Portale aziendale, la registrazione in Intune, la risoluzione dei problemi e attività generali che gli utenti possono eseguire sui propri dispositivi. Un elenco di questa documentazione è disponibile anche nell'articolo [Usare dispositivi gestiti per lo svolgimento del lavoro](/intune-user-help/use-managed-devices-to-get-work-done).
 
-* __Accessibilità.__ Gli utenti finali devono sapere dove possono ottenere assistenza per i propri dispositivi. Assicurarsi di includere le informazioni di contatto dell'amministratore IT quando si [personalizza il portale aziendale](company-portal-customize.md) in modo tale che gli utenti possano richiedere l'assistenza necessaria.
+* __Accessibilità.__ Indicare agli utenti dove ricevere supporto in caso di problemi con il dispositivo. Quando si [personalizza il Portale aziendale](company-portal-customize.md) assicurarsi di includere le informazioni di contatto dell'amministratore IT.
 
-* __Personalizzazione.__ Fornire istruzioni non specifiche della distribuzione può indurre gli utenti finali a pensare che non sia stata dedicata la dovuta attenzione alla loro esperienza. È possibile usare questo [modello di registrazione personalizzabile degli utenti finali di Intune per gli amministratori IT](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) per creare istruzioni di registrazione specifiche destinate agli utenti finali.
+* __Personalizzazione.__ Offrire istruzioni specifiche relative alla distribuzione nell'organizzazione. Questa azione dimostra agli utenti che l'organizzazione adotta le misure necessarie per garantire un'esperienza ottimale. Usare questo [modello di registrazione personalizzabile degli utenti di Intune](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) per creare istruzioni di registrazione specifiche destinate agli utenti.
 
-* __Canali di comunicazione diversi.__ Così come hanno [diversi stili di apprendimento](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/), gli utenti hanno modalità preferite per la fruizione delle informazioni. Agli utenti che preferiscono i video alla documentazione, Microsoft offre [versioni video delle procedure per la registrazione di vari tipi di dispositivo](https://channel9.msdn.com/Series/IntuneEnrollment) e altri video su Channel 9. Questi video possono essere incorporati direttamente nel [sito di SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) aziendale o sono disponibili per il download di copie locali, sia del video che solo della traccia audio.
+* __Canali di comunicazione diversi.__ Gli utenti hanno [diversi stili di apprendimento](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) e modalità preferite per la fruizione delle informazioni. Per gli utenti con un approccio visivo, Intune offre [video per la registrazione di vari tipi di dispositivi](https://channel9.msdn.com/Series/IntuneEnrollment) su Channel 9. È possibile incorporare direttamente i video nel proprio [sito SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). È anche possibile scaricare copie locali della traccia video o audio.
 
-* __Conoscenza degli utenti.__ L'esperienza degli utenti finali avrà un impatto sulla produttività e conoscere la loro esperienza faciliterà le attività di risoluzione dei problemi all'occorrenza. Sapere in che modo gli utenti finali si procurano le app può rendere molto più facile la diagnostica dei problemi riscontrati, oltre a permettere di risolverli più velocemente.
+* __Conoscenza degli utenti.__ L'esperienza dell'utente con Intune ha effetto anche sulla produttività aziendale. La comprensione dell'esperienza degli utenti facilita la risoluzione dei problemi dei dispositivi e degli utenti. Ad esempio è possibile ottenere informazioni su come gli utenti acquisiscono le proprie app. Il fatto di avere in anticipo informazioni di questo tipo semplifica e rende più rapida la diagnostica e la risoluzione dei problemi.
 
 * **Android**
   * [Uso di un dispositivo Android con Intune](/intune-user-help/using-your-android-device-with-intune)
@@ -66,9 +71,9 @@ Rassicurare gli utenti sarà utile per agevolare la distribuzione. L'elenco segu
   * [Uso di un dispositivo Windows con Intune](/intune-user-help/using-your-windows-device-with-intune)
   * [Modalità di recupero delle app per gli utenti di Windows](end-user-apps-windows.md)
 
-* __Disponibilità e chiarezza.__ È importante comunicare chiaramente agli utenti cosa si intende gestire nei loro dispositivi. Indicare il tipo di dati che verranno raccolti e i motivi per cui vengono raccolti. Informarli sull'uso previsto di tutti i dati. [Microsoft ritiene che gli utenti abbiano il diritto di ricevere tutte le informazioni possibili su come vengono gestiti i dati dei clienti nel cloud](https://www.microsoft.com/trustcenter/about/transparency) ed è convinta che questa filosofia possa aumentare notevolmente la soddisfazione degli utenti finali per Intune.
+* __Disponibilità e chiarezza.__ Definire in modo chiaro gli elementi che verranno gestiti nei dispositivi degli utenti. Indicare agli utenti il tipo di dati che verranno raccolti e i motivi per cui vengono raccolti. Informarli sull'uso previsto di tutti i dati. [Microsoft ritiene che gli utenti abbiano il diritto di ricevere tutte le informazioni possibili su come vengono gestiti i dati dei clienti nel cloud](https://www.microsoft.com/trustcenter/about/transparency) ed è convinta che questa filosofia incrementi notevolmente la soddisfazione degli utenti finali per Intune.
 
 >[!Note]
 > La trasparenza, laddove possibile, è fondamentale per il successo della distribuzione.
 
-L'obiettivo è trovare la giusta combinazione di fiducia e criteri di conformità accuratamente elaborati per assicurarsi che gli utenti finali sappiano che, anche se l'azienda *può* avere accesso a determinati tipi di dati personali, *non è intenzionata a farlo* e che sappiano che l'azienda è responsabile di tutelare la loro privacy e conoscano gli effetti di eventuali violazioni. La stesura di un'informativa specifica in collaborazione con i reparti legale e delle risorse umane può essere utile per soddisfare dipendenti particolarmente esigenti.
+È importante promuovere la fiducia con criteri di conformità adeguati. Gli utenti devono sapere che, anche se l'organizzazione *potrebbe* esaminare determinati tipi di dati personali, *non intende* necessariamente farlo. Trasmettere il messaggio che l'invasione della privacy degli utenti comporta responsabilità legali. La creazione di un testo con la collaborazione dell'ufficio legale e del settore Risorse umane può contribuire ulteriormente a risolvere i dubbi dei dipendenti in merito alla privacy.
