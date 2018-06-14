@@ -418,7 +418,7 @@ A partire dalla versione 6.1803.x.x, il servizio Intune Connector registra gli e
 > [!NOTE]
 > Per informazioni dettagliate sui codici di diagnostica corrispondenti a ogni evento, vedere la tabella **Codici di diagnostica** in questo articolo.
 
-| ID evento      | Nome evento    | Descrizione evento | Codici di diagnostica correlati |
+| ID dell'evento      | Nome evento    | Descrizione evento | Codici di diagnostica correlati |
 | ------------- | ------------- | -------------     | -------------            |
 | 10010 | StartedConnectorService  | Servizio Connector avviato | 0x00000000, 0x0FFFFFFF |
 | 10020 | StoppedConnectorService  | Servizio Connector arrestato | 0x00000000, 0x0FFFFFFF |
