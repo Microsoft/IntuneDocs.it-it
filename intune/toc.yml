@@ -259,6 +259,8 @@
                   href: lob-apps-windows-phone.md
                 - name: App line-of-business di Windows
                   href: lob-apps-windows.md
+                - name: Trasferire localmente le app LOB di Windows
+                  href: app-sideload-windows.md
                 - name: App line-of-business di macOS
                   href: lob-apps-macos.md
             - name: App Web
@@ -678,8 +680,6 @@
               href: custom-settings-windows-holographic.md
             - name: Android for Work
               href: custom-settings-android-for-work.md
-        - name: Trasferire localmente le App line-of-business di Windows
-          href: app-sideload-windows.md
 - name: Istruzioni per sviluppatori
   items:
     - name: Proteggere le app con Intune App SDK
