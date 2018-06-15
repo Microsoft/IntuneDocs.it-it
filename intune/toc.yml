@@ -189,6 +189,10 @@
               href: apple-configurator-enroll-ios.md
         - name: Configurare la registrazione di macOS
           href: macos-enroll.md
+        - name: Installare il client software di Intune nei PC Windows
+          href: install-the-windows-pc-client-with-microsoft-intune.md
+        - name: Risolvere i problemi di registrazione dei dispositivi
+          href: troubleshoot-device-enrollment-in-intune.md
     - name: Gestire dispositivi
       href: device-management.md
       items:
