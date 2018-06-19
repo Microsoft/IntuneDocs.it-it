@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755063"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Risolvere una minaccia rilevata da Symantec Endpoint Protection Mobile
 

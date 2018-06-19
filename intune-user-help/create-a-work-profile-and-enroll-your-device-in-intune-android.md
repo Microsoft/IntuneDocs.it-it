@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30753924"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Create a work profile and enroll your device in Intune (Creare un profilo di lavoro e registrare il dispositivo in Intune)
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30754349"
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>Risolvere una minaccia rilevata da Zimperium zIPS
 
