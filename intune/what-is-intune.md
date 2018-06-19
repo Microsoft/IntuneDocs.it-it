@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31032643"
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introduzione a Microsoft Intune nel portale di Azure
 

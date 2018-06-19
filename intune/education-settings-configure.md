@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31023309"
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Come configurare le impostazioni di Windows 10 relative alla formazione in Microsoft Intune
 

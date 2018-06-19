@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31019416"
 ---
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Proteggere l'accesso alla posta elettronica con Microsoft Intune: scenari di esempio
 

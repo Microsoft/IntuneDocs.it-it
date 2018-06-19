@@ -22,6 +22,7 @@ ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33927322"
 ---
 # <a name="install-apps-on-your-device"></a>Installare app nel dispositivo
 Installare le app nel dispositivo dall'app Portale aziendale per Windows.

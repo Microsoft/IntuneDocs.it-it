@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021519"
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Monitorare i criteri di protezione delle app con Microsoft Intune
 È possibile monitorare lo stato di conformità dei criteri di protezione delle app applicati agli utenti. Sono disponibili informazioni sugli utenti interessati dai criteri di protezione delle app, sullo stato di conformità e su eventuali problemi riscontrati dagli utenti.

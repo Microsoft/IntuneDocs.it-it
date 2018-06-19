@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327705"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Inviare gli errori al supporto tecnico dell'azienda per i problemi relativi al dispositivo iOS
 È talvolta possibile che si verifichi un errore quando si usa l'app Portale aziendale nel dispositivo iOS. In questo caso, è possibile inviare i dettagli sull'errore al referente per il supporto dell'azienda tramite posta elettronica, con i quali potrà determinare il contesto e risolvere il problema.

@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31833218"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Ridurre i costi dell'help desk tramite la reimpostazione della password self-service
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/16/2018
+ms.locfileid: "34190520"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Inviare gli errori alle persone appropriate per il dispositivo macOS gestito
 

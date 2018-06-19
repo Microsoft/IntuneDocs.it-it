@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31025672"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Ottenere un certificato push MDM di Apple
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014028"
 ---
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Risorse che consentono di risolvere i problemi di distribuzione dell'app in Microsoft Intune
 

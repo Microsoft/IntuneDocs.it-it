@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015371"
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Che cosa avviene se si reimposta un dispositivo iOS con l'app Portale aziendale?
 

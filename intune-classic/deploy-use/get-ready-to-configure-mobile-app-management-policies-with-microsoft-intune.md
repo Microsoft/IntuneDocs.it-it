@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31024074"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Prepararsi alla configurazione dei criteri di protezione delle app nel portale di Azure
 

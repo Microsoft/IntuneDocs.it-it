@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017377"
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Registrare il dispositivo Android nella gestione delle spese per telecomunicazioni
 

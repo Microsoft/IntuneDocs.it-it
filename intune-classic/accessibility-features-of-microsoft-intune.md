@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013059"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Funzionalità di accessibilità di Microsoft Intune
 Oltre alle funzionalità e agli strumenti di accessibilità disponibili in Microsoft Windows, le seguenti funzionalità contribuiscono a rendere Microsoft Intune ancor più accessibile per gli utenti disabili: Utilizzo dei tasti di scelta rapida

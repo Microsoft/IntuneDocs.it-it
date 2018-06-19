@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016578"
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>L'app Portale aziendale per Windows non è aggiornata
 
