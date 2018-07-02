@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09b94ad2109c41ad02e8da7267690c31ba296bae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 183acfc36e77aab85fa086452e00561c521dd830
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34475609"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>Attivare la modalità di supervisione di iOS
 
@@ -33,7 +34,7 @@ Per un elenco di controlli Apple che richiedono la supervisione, vedere le [info
 
 ## <a name="turn-on-supervised-mode-during-enrollment"></a>Attivare la modalità di supervisione durante la registrazione
 
-In Intune è possibile attivare la modalità di supervisione per i dispositivi quando [si crea un profilo di registrazione Apple nel programma DEP](https://docs.microsoft.com/en-us/intune/device-enrollment-program-enroll-ios#create-an-apple-enrollment-profile). In **Impostazioni di gestione dei dispositivi** selezionare la casella **Supervisione eseguita**.
+In Intune è possibile attivare la modalità di supervisione per i dispositivi quando [si crea un profilo di registrazione Apple nel programma DEP](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios#create-an-apple-enrollment-profile). In **Impostazioni di gestione dei dispositivi** selezionare la casella **Supervisione eseguita**.
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>Attivare la modalità di supervisione dopo la registrazione
 

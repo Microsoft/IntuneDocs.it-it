@@ -14,11 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a84e94c16e7c61d1fca83b7774a486f430c9407c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5c467d20a3bf4f2cfb94db5cecfae78b1717993d
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34561974"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Accesso condizionale basato su app con Intune
 
@@ -45,7 +46,7 @@ Per altre informazioni, vedere i [prezzi di Enterprise Mobility](https://www.mic
 
 Un elenco di app che supportano l'accesso condizionale basato su app è disponibile nella [documentazione di riferimento tecnico per l'accesso condizionale di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
 
-L'accesso condizionale basato su app [supporta anche le app line-of-business (LOB)](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication), ma queste app devono usare l'[autenticazione moderna di Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a).
+L'accesso condizionale basato su app [supporta anche le app line-of-business (LOB)](app-modern-authentication-block.md), ma queste app devono usare l'[autenticazione moderna di Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a). 
 
 ## <a name="how-app-based-conditional-access-works"></a>Funzionamento dell'accesso condizionale basato su app
 

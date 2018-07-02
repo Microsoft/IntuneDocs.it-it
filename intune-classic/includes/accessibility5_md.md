@@ -1,1 +1,1 @@
-Per altre informazioni
+Ulteriori informazioni
