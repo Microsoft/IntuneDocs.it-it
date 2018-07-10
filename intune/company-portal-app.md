@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744585"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844981"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Come configurare l'app Portale aziendale di Microsoft Intune
 
@@ -56,7 +56,7 @@ Immettere le informazioni di supporto della società, in modo da garantire al di
 |**Numero di telefono** | 20 | Questo numero di contatto viene visualizzato nella pagina **Contatta l'IT** che consente ai dipendenti di contattare l'organizzazione per ottenere supporto. |
 |**Indirizzo di posta elettronica**| 40 | Questo indirizzo di contatto viene visualizzato nella pagina **Contatta l'IT**. È necessario immettere un indirizzo di posta elettronica valido nel formato `alias@domainname.com`. |
 |**Nome del sito Web**| 40 | Questo è il nome descrittivo visualizzato per l'URL del sito Web del supporto tecnico. Se si specifica solo un URL del sito Web e nessun nome descrittivo, nella pagina **Contatta l'IT** del portale aziendale verrà visualizzato Vai al sito Web IT. |
-|**URL del sito Web**| 150 | Se si dispone di un sito Web di supporto che si desidera venga usato dagli utenti, è necessario specificare qui l'URL. Il formato dell'URL deve essere **https://www.contoso.com**. Se non si specifica un URL, non verrà visualizzato alcun valore nella pagina **Contatta l'IT** del portale aziendale. |
+|**URL del sito Web**| 150 | Se si dispone di un sito Web di supporto che si desidera venga usato dagli utenti, è necessario specificare qui l'URL. Il formato dell'URL deve essere `https://www.contoso.com`. Se non si specifica un URL, non verrà visualizzato alcun valore nella pagina **Contatta l'IT** del portale aziendale. |
 | **Informazioni aggiuntive**| 120 | Visualizzato nella pagina **Contatta l'IT** |
 
 
