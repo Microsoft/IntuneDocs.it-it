@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b810a9dd783f59e778f3ffcb40da8fa52acf70ff
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803823"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
 
@@ -97,7 +98,7 @@ La modalità con supervisione iOS può essere abilitata solo durante l'installaz
     -   **Tipo di password richiesto**: specifica il tipo di password che verrà richiesto, ad esempio solo numerico o alfanumerico.
     -   **Numero di caratteri non alfanumerici nella password** - Specifica il numero di simboli, ad esempio **#** o **@**, che è necessario includere nella password.
     -   **Lunghezza minima password** - Specifica il numero minimo di caratteri per la password.
-    -   **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** - Specifica il numero di tentativi di accesso non riusciti prima che questa impostazione cancelli il dispositivo.
+    -   **Numero di errori di accesso prima della cancellazione dei dati del dispositivo** - Specifica il numero di tentativi univoci di immissione di una password non valida prima che questa impostazione cancelli il dispositivo.
     -   **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta la password**<sup>1</sup>: specifica il tempo per il quale il dispositivo può rimanere inattivo prima che l'utente debba immettere nuovamente la password.
     -   **Numero massimo di minuti dopo il blocco dello schermo prima che venga richiesta una password**<sup>1</sup> - Specifica il numero di minuti prima che la visualizzazione del dispositivo sia disattivata.
     -   **Scadenza password (giorni)** - Specifica il numero di giorni prima che sia necessario modificare la password del dispositivo.

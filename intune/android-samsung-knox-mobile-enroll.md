@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88cb733c688019b2fc5455a0184e968d91e77806
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
+ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915812"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964709"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Registrare automaticamente i dispositivi Android usando Knox Mobile Enrollment di Samsung
 
@@ -120,6 +120,8 @@ Serve ancora assistenza? Vedere il [manuale dell'utente di Knox Mobile Enrollmen
 - **Modalità proprietario del dispositivo di Google:** la registrazione in modalità proprietario del dispositivo di Google con KME non è supportata in questa anteprima. Questo scenario è attualmente sottoposto ad analisi.
 
 - **Il campo "Password" viene ignorato:** se il campo **password** viene popolato in **Device details** (Dettagli dispositivo) nel portale di Knox, viene ignorato dall'app Portale aziendale Intune. L'utente finale deve immettere una password nel dispositivo per completare la registrazione del dispositivo.
+
+- **"Registrazione aziendale Android** Knox Mobile Enrollment (KME) non supporta la registrazione aziendale Android.
 
 ## <a name="getting-support"></a>Richiesta di assistenza
 Sono disponibili altre informazioni su come [ottenere assistenza per Samsung KME](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm).

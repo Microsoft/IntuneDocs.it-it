@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 7e722195ce1b1b34a65cd8e936ad8a702f145691
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: ad949cc9d20e0e46ab986b4646059af733018255
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308875"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232807"
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Quali sono le informazioni visibili per l'azienda quando si registra il dispositivo?
 
-Quando si registra un dispositivo nel sistema di gestione si autorizza l'azienda a visualizzare informazioni specifiche nel dispositivo per proteggere i dati aziendali nel dispositivo.
+L'azienda non può vedere le informazioni personali di un utente quando registra un dispositivo con Microsoft Intune. Quando si registra un dispositivo, si concede all'azienda l'autorizzazione per visualizzare determinati tipi di informazioni nel dispositivo, ad esempio il modello di dispositivo e il numero di serie. L'azienda usa queste informazioni per la protezione dei dati aziendali nel dispositivo.
 
-**Informazioni che l'azienda non può mai visualizzare**
+**Informazioni che l'azienda non può mai visualizzare:**
 
 - Cronologia delle chiamate e delle esplorazioni Web
 - Posta elettronica e messaggi di testo
@@ -36,7 +36,7 @@ Quando si registra un dispositivo nel sistema di gestione si autorizza l'azienda
 -   Password
 - Immagini, incluse quelle nell'app Foto o nel rullino della fotocamera
 
-**Informazioni che l'azienda può sempre visualizzare**
+**Informazioni che l'azienda può sempre visualizzare:**
 
 - Modello del dispositivo, ad esempio Google Pixel
 - Produttore, ad esempio Microsoft
@@ -46,7 +46,7 @@ Quando si registra un dispositivo nel sistema di gestione si autorizza l'azienda
 - Nome dispositivo
 - Numero di serie
 
-**Informazioni che l'azienda potrebbe visualizzare**
+**Informazioni che l'azienda potrebbe visualizzare:**
 
 -  Numero di telefono: per i dispositivi di proprietà dell'**azienda** può essere visualizzato il numero di telefono completo. Per i dispositivi di proprietà **personale** sono visibili all'azienda solo le ultime quattro cifre del numero di telefono. Per visualizzare il **tipo di proprietà** di un singolo dispositivo, aprire la pagina **Dettagli dispositivo** del dispositivo.
 -  Località: l'azienda non può mai visualizzare dove si trova il dispositivo, a meno che non si tratti di un dispositivo iOS supervisionato che è stato perso. [Come scoprirlo?](https://go.microsoft.com/fwlink/?linkid=853816)

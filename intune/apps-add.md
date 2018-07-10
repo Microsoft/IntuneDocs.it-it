@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
+ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744993"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263405"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Aggiungere app in Microsoft Intune
 
@@ -56,8 +56,8 @@ La tabella seguente elenca i tipi di app specifici e descrive come aggiungerli n
 | App di Office 365 per macOS | App Store (Office 365) | Selezionare **macOS** in **Famiglia di prodotti Office 365** come **tipo di app** e quindi selezionare la famiglia di app di Office 365. |
 | App line-of-business Android | App line-of-business | Selezionare **App line-of-business** come **tipo di app**, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione Android con estensione **apk**.  |
 | App line-of-business iOS | App line-of-business | Selezionare **App line-of-business** come **tipo di app**, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione iOS con estensione **ipa**.  |
-| Applicazioni line-of-business di Windows Phone | App line-of-business | Selezionare **App line-of-business** come **tipo di app**, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione iOS con estensione **xap**.  |
-| App line-of-business di Windows | App line-of-business | Selezionare **App line-of-business** come tipo di app, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione iOS con estensione **msi**, **appx** o **appxbundle**. |
+| Applicazioni line-of-business di Windows Phone | App line-of-business | Selezionare **App line-of-business** come **tipo di app**, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione Windows Phone con estensione **xap**.  |
+| App line-of-business di Windows | App line-of-business | Selezionare **App line-of-business** come tipo di app, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione Windows con estensione **msi**, **appx** o **appxbundle**. |
 | App iOS predefinita  | App predefinita | Selezionare **App predefinita** come **tipo di app** e quindi selezionare l'app predefinita nell'elenco delle app fornite.  |
 | App Android predefinita  | App predefinita | Selezionare **App predefinita** come **tipo di app** e quindi selezionare l'app predefinita nell'elenco delle app fornite.  |
 | App Web  | App Web  | Selezionare **Collegamento Web** come **tipo di app** e quindi immettere un URL valido che punta all'app Web.  |

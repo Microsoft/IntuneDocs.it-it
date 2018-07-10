@@ -2,10 +2,10 @@
 title: Controllo degli accessi in base al ruolo con Microsoft Intune
 description: Informazioni su come il controllo degli accessi in base al ruolo (RBAC) consente di controllare gli utenti che possono eseguire le azioni e apportare modifiche in Microsoft Intune.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 02/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8cce5da762c119ec04553d80d717fb586c962566
-ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
+ms.openlocfilehash: 287e644e50b1f6b41f404cfd2102a8efc0fbaad9
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474565"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune
 
@@ -26,7 +27,7 @@ RBAC consente di controllare chi esegue varie attività di Intune all'interno de
 
 - **Definizione del ruolo**: nome del ruolo, risorse gestite dal ruolo e autorizzazioni concesse per ogni risorsa.
 - **Membri**: gruppi di utenti a cui vengono concesse le autorizzazioni.
-- **Ambito**: gruppi di utenti o dispositivi a cui i membri possono destinare la distribuzione di criteri o app o sui quali possono eseguire attività remote.
+- **Ambito**: gruppi di utenti o dispositivi che i membri possono gestire.
 - **Assegnazione**: dopo aver configurato la definizione, i membri e l'ambito, il ruolo viene assegnato.
 
 ![Esempio di controllo RBAC di Intune](./media/intune-rbac-1.PNG)
@@ -59,7 +60,8 @@ I seguenti ruoli sono predefiniti in Intune ed è possibile assegnarli ai gruppi
 - **Help Desk Operator** (Operatore supporto tecnico): consente di eseguire attività remote su utenti e dispositivi e assegnare le applicazioni o i criteri a utenti o dispositivi.
 - **Policy and Profile Manager** (Gestione criteri e profili): consente di gestire i criteri di conformità, i profili di configurazione, la registrazione Apple e gli identificatori dei dispositivi aziendali.
 - **Read Only Operator** (Operatore sola lettura): consente di visualizzare informazioni su utenti, dispositivi, registrazione, configurazione e applicazioni. Non consente di apportare modifiche a Intune.
-- **Application Manager** (Gestione applicazioni): consente di gestire le applicazioni per dispositivi mobili e gestite e di leggere le informazioni sui dispositivi.
+- **Application Manager** (Gestione applicazioni): consente di gestire le applicazioni per dispositivi mobili e gestite, di leggere le informazioni sui dispositivi e di visualizzare i profili di configurazione dei dispositivi.
+- **Intune Role Administrator** (Amministratore dei ruoli di Intune): consentire di gestire i ruoli di Intune personalizzati e di aggiungere assegnazioni per i ruoli di Intune predefiniti. È l'unico ruolo di Intune che può assegnare autorizzazioni agli amministratori.
 - **School Administrator** (Amministratore di istituto di istruzione): consente di gestire i dispositivi Windows 10 in [Intune per Education](introduction-intune-education.md) e di eseguire le azioni seguenti: 
 
 |Autorizzazione|Operazione|
@@ -78,18 +80,20 @@ I seguenti ruoli sono predefiniti in Intune ed è possibile assegnarli ai gruppi
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel riquadro **Intune** scegliere **Ruoli di Intune** e quindi selezionare **Tutti i ruoli**.
-4. Nel riquadro **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo predefinito da assegnare.
+1. Nel riquadro **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo predefinito da assegnare.
 
-5. Nel riquadro <*nome ruolo*> - **Panoramica** scegliere **Assegnazioni** > **Assegna**.
+2. Nel riquadro <*nome ruolo*> - **Panoramica** scegliere **Gestisci** e quindi **Assegnazioni**.
 
     > [!NOTE]
     > Non è possibile eliminare o modificare i ruoli predefiniti
 
-6. Nel riquadro **Assegnazioni di ruolo** immettere un **Nome dell'assegnazione** e una **Descrizione dell'assegnazione** facoltativa e scegliere le opzioni seguenti:
+3. Nel riquadro del ruolo personalizzato scegliere **Assegna**.
+
+4. Nel riquadro **Assegnazioni di ruolo** immettere un **nome** e una **descrizione** (facoltativa) per l'assegnazione e quindi scegliere le opzioni seguenti:
     - **Membri**: selezionare un gruppo contenente l'utente a cui si vuole assegnare le autorizzazioni.
-    - **Ambito**: selezionare un gruppo contenente gli utenti che il membro indicato in precedenza è autorizzato a gestire. È anche possibile scegliere di impostare l'ambito su **Tutti gli utenti**, **Tutti i dispositivi**, o **Tutti gli utenti e i dispositivi**.
+    - **Ambito**: selezionare un gruppo contenente gli utenti che il membro indicato in precedenza è autorizzato a gestire.
 <br></br>
-7. Al termine, fare clic su **OK**. La nuova assegnazione viene visualizzata nell'elenco di assegnazioni.
+5. Al termine, fare clic su **OK**. La nuova assegnazione viene visualizzata nell'elenco di assegnazioni.
 
 ### <a name="intune-rbac-table"></a>Tabella del controllo RBAC di Intune
 
@@ -126,13 +130,13 @@ I seguenti ruoli sono predefiniti in Intune ed è possibile assegnarli ai gruppi
 
 1. Nel riquadro **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo personalizzato da assegnare.
 
-2. Nel riquadro <*nome ruolo*> - **Panoramica** scegliere **Assegnazioni**. In questo riquadro è anche possibile modificare o eliminare ruoli esistenti.
+2. Nel riquadro <*nome ruolo*> - **Panoramica** scegliere **Gestisci** e quindi **Assegnazioni**. In questo riquadro è anche possibile modificare o eliminare ruoli esistenti.
 
 3. Nel riquadro del ruolo personalizzato scegliere **Assegna**.
 
 4. Nel riquadro **Assegnazioni di ruolo** immettere un **nome** e una **descrizione** (facoltativa) per l'assegnazione e quindi scegliere le opzioni seguenti:
     - **Membri**: selezionare un gruppo contenente l'utente a cui si vuole assegnare le autorizzazioni.
-    - **Ambito**: selezionare un gruppo contenente gli utenti che il membro indicato in precedenza è autorizzato a gestire. È anche possibile scegliere di impostare l'ambito su **Tutti gli utenti**, **Tutti i dispositivi**, o **Tutti gli utenti e i dispositivi**.
+    - **Ambito**: selezionare un gruppo contenente gli utenti che il membro indicato in precedenza è autorizzato a gestire.
 <br></br>
 5. Al termine, fare clic su **OK**. La nuova assegnazione viene visualizzata nell'elenco di assegnazioni.
 
@@ -143,5 +147,3 @@ I seguenti ruoli sono predefiniti in Intune ed è possibile assegnarli ai gruppi
 ## <a name="see-also"></a>Vedere anche
 
 [Assegnare i ruoli con Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
-
-

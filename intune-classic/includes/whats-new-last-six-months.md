@@ -20,7 +20,7 @@ Un aggiornamento all'app Portale aziendale Android mostra un indicatore di stato
 
 È ora possibile creare un criterio di accesso condizionale basato su app per impedire alle app a cui non sono stati applicati criteri di protezione delle app di accedere a [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). Nello scenario di accesso condizionale basato su applicazioni è possibile specificare le app che dovranno accedere a SharePoint Online usando il portale di Azure.
 
-#### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Supporto Single Sign-On dal portale aziendale per IOS ad Outlook per iOS <!--834012-->
+#### <a name="single-sign-in-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Supporto Single Sign-On dal portale aziendale per iOS ad Outlook per iOS <!--834012-->
 Gli utenti non devono più eseguire l'accesso all'app di Outlook se sono già connessi all'app Portale aziendale per IOS sullo stesso dispositivo con lo stesso account. Quando gli utenti avviano l'app di Outlook, potranno selezionare il loro account e accedere automaticamente. Si prevede di aggiungere questa funzionalità anche per altre app Microsoft.
 
 #### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>Messaggi di stato migliorati nell'app Portale aziendale per iOS <!--744866-->
@@ -81,7 +81,7 @@ I ruoli di amministrazione di gestione delle applicazioni per dispositivi mobili
 
 Microsoft ha annunciato una modifica che verrà introdotta nei prossimi mesi e consentirà di migliorare l'esperienza di accesso per le app Portale aziendale di Intune per Android, iOS e Windows. Non appena questa modifica viene apportata con Azure AD, la nuova esperienza utente apparirà automaticamente su tutte le piattaforme per l'app del portale aziendale. Ora gli utenti possono anche accedere al portale aziendale da un altro dispositivo con un codice generato monouso. Ciò è particolarmente utile nei casi in cui gli utenti devono accedere senza credenziali.
 
-È possibile trovare le schermate dell'esperienza di accesso precedente, della nuova esperienza di accesso con credenziali e della nuova esperienza di accesso da un altro dispositivo nella pagina delle [novità dell'interfaccia utente dell'app](/intune/whats-new-app-ui).
+È possibile trovare gli screenshot dell'esperienza di accesso precedente, della nuova esperienza di accesso con credenziali e della nuova esperienza di accesso da un altro dispositivo nella pagina delle [novità dell'interfaccia utente dell'app](/intune/whats-new-app-ui).
 
 #### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Modifiche pianificate: Intune ha intenzione di modificare l'esperienza del portale per i partner di Intune <!-- 1050016 -->
 
@@ -89,7 +89,7 @@ A partire dall'aggiornamento del servizio previsto per la metà di maggio 2017, 
 
 Gli amministratori di partner non saranno più in grado di visualizzare e agire per conto dei clienti dalla pagina Intune Partner, ma dovranno invece effettuare l'accesso a uno degli altri due altri portali Microsoft per i partner.
 
-Il [Centro per i partner Microsoft](https://partnercenter.microsoft.com/) e l'[interfaccia di amministrazione partner di Office 365](https://portal.office.com/) consentiranno entrambi di accedere agli account cliente gestiti. Procedendo come partner, usare uno di questi siti per gestire i clienti.
+Il [Centro per i partner Microsoft](https://partnercenter.microsoft.com/) e l'[interfaccia di amministrazione partner di Microsoft Office 365](https://portal.office.com/) consentiranno entrambi di accedere agli account dei clienti gestiti. Procedendo come partner, usare uno di questi siti per gestire i clienti.
 
 
 #### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple richiederà aggiornamenti per Application Transport Security <!--748318-->

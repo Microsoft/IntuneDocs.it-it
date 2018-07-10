@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803840"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrizione dei dispositivi per Windows 10 (e versioni successive) in Intune
 Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di Microsoft Intune configurabili per i dispositivi che eseguono Windows 10.
@@ -151,8 +152,8 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 ## <a name="edge-browser"></a>Browser Microsoft Edge
 
 -   **Browser Microsoft Edge (solo dispositivi mobili)** - Consente l'uso del browser Web Edge sul dispositivo.
--   **Elenco a discesa della barra degli indirizzi (solo desktop)**: usare questa opzione per impedire a Microsoft Edge di visualizzare suggerimenti in un elenco a discesa durante la digitazione. Ciò consente di ridurre al minimo l'uso di larghezza di banda tra Microsoft Edge e i servizi Microsoft.
--   **Sincronizza i Preferiti tra i browser Microsoft (solo desktop)**: consente la sincronizzazione dei Preferiti tra Microsoft Edge e Internet Explorer in Windows.
+-   **Elenco a discesa della barra degli indirizzi (solo desktop)**: usare questa opzione per impedire a Edge di visualizzare suggerimenti in un elenco a discesa durante la digitazione. Ciò consente di ridurre al minimo l'uso di larghezza di banda tra Microsoft Edge e i servizi Microsoft.
+-   **Sincronizza i Preferiti tra i browser Microsoft (solo desktop)**: consente la sincronizzazione dei Preferiti tra Edge e Internet Explorer in Windows.
 -   **Invia intestazioni DNT (Do Not Track)** - Configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.
 -   **Cookie** - Consente al browser di salvare i cookie di Internet per il dispositivo.
 -   **JavaScript** - Consente di eseguire script, ad esempio Javascript, nel browser Microsoft Edge.
@@ -165,14 +166,14 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Strumenti di sviluppo**: impedisce all'utente finale di aprire gli strumenti di sviluppo di Microsoft Edge.
 -   **Estensioni**: consente all'utente finale di installare le estensioni di Microsoft Edge nel dispositivo.
 -   **InPrivate Browsing**: impedisce all'utente finale di aprire sessioni InPrivate Browsing.
--   **Mostra la pagina alla prima esecuzione**: impedisce la visualizzazione della pagina introduttiva quando si esegue Microsoft Edge per la prima volta.
+-   **Mostra la pagina alla prima esecuzione**: impedisce la visualizzazione della pagina introduttiva quando si esegue Edge per la prima volta.
     -   **URL della prima esecuzione**: specifica l'URL della pagina che viene visualizzata quando l'utente esegue Microsoft Edge per la prima volta (solo Windows 10 Mobile).
 -   **Home page**: aggiunge un elenco dei siti da usare come home page nel browser Microsoft Edge (solo desktop).
 -   **Modifiche alla pagina iniziale**: consente agli utenti di modificare la scelta delle pagine iniziali visualizzate all'avvio di Microsoft Edge. Usare l'impostazione Home page per creare la pagina o l'elenco di pagine che viene aperta all'avvio di Microsoft Edge.
 -   **Blocca l'accesso ai flag Informazioni su**: impedisce all'utente finale di accedere alla pagina di "flag Informazioni su" in Microsoft Edge che contiene impostazioni sperimentali e di sviluppo.
 -   **Indirizzo IP localhost WebRtc**: blocca la visualizzazione dell'indirizzo IP localhost IP quando si effettuano telefonate tramite il protocollo RTC Web.
 -   **Motore di ricerca predefinito**: specifica il motore di ricerca predefinito da usare. Gli utenti finali possono modificare questo valore in qualsiasi momento.
--   **Cancella i dati di esplorazione all'uscita**: cancella la cronologia e i dati di esplorazione quando l'utente esce da Microsoft Edge.
+-   **Cancella i dati di esplorazione all'uscita**: cancella la cronologia e i dati di esplorazione quando l'utente esce da Edge.
 -   **Raccolta di dati per il riquadro animato**: interrompe la raccolta di informazioni dal riquadro animato quando gli utenti aggiungono un sito al menu Start da Microsoft Edge.
 -  **Elenco Preferiti**: definisce il percorso del file dei preferiti. Ad esempio, http://contoso.com/favorites.html
 -  **Restrict changes to Favorites** (Limita modifiche ai Preferiti): impostare questa proprietà su **Blocca** per impedire agli utenti di eseguire operazioni di aggiunta, importazione, ordinamento o modifica dell'elenco Preferiti. 
@@ -249,7 +250,9 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
   Il ridimensionamento DPI del programma GDI consente alle app non sensibili ai valori DPI di diventare sensibili ai valori DPI per monitor. Specificare le app legacy con ridimensionamento DPI del programma GDI attivato. Quando il ridimensionamento DPI del programma GDI è configurato sia per l'attivazione che per la disattivazione in un'app, il ridimensionamento è disattivato per l'app.
 
-## <a name="kiosk-preview"></a>Modalità tutto schermo (anteprima)
+## <a name="kiosk-preview---obsolete"></a>Modalità tutto schermo (anteprima) - Obsoleta
+
+Queste impostazioni verranno rimosse in una versione futura. Per usare le nuove impostazioni, vedere [Kiosk settings in Windows 10 and later](kiosk-settings.md) (Impostazioni della modalità tutto schermo in Windows 10 e versioni successive).
 
 In genere un'app o una serie specifica di app viene eseguita in un dispositivo in modalità tutto schermo. Agli utenti viene impedito l'accesso a qualsiasi funzionalità o funzione del dispositivo all'esterno delle app in modalità tutto schermo.
 
@@ -262,9 +265,12 @@ In genere un'app o una serie specifica di app viene eseguita in un dispositivo i
 #### <a name="single-app-kiosks"></a>App singole per chioschi multimediali
 Immettere le impostazioni seguenti:
 
-- **Account utente**: immettere l'account utente locale (per il dispositivo) o l'account di accesso di Azure AD associato all'app in modalità tutto schermo. Per gli account aggiunti ai domini di Azure AD, immettere l'account nel formato `domain\username@tenant.org`. 
+- **Account utente**: immettere l'account utente locale (per il dispositivo), un account di dominio di AD o un account di accesso di Azure AD associato all'app in modalità tutto schermo.
+  - Account locale: immettere come `devicename\accountname`, `.\accountname` o `accountname`
+  - Account di dominio: immettere come `domain\accountname`
+  - Account di Azure AD: immettere come `AzureAD\emailaddress` Assicurarsi di immettere "AzureAD", perché è un nome di dominio fisso. Aggiungere quindi l'indirizzo di posta elettronica di Azure AD. Immettere ad esempio `AzureAD\user@contoso.onmicrosoft.com`.
 
-    Per i chioschi multimediali in ambienti pubblici con accesso automatico abilitato, è necessario usare un tipo di utente con privilegi minimi, ad esempio l'account utente standard locale. Per configurare un account Azure Active Directory (AD) per la modalità tutto schermo, usare il formato `AzureAD\user@contoso.com`.
+    Per i chioschi multimediali in ambienti pubblici con accesso automatico abilitato, è necessario usare un tipo di utente con privilegi minimi, ad esempio l'account utente standard locale. Se usa un account di Azure AD per la modalità tutto schermo, assicurarsi di immettere `AzureAD\user@yourorganization.com`.
 
 - **ID modello utente applicazione (AUMID, Application User Model ID) dell'app**: immettere l'ID modello utente applicazione dell'app in modalità tutto schermo. Per altre informazioni, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata).
 

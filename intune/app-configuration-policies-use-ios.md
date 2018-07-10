@@ -3,10 +3,10 @@ title: Aggiungere criteri di configurazione delle app per i dispositivi iOS gest
 titlesuffix: Microsoft Intune
 description: Informazioni su come usare i criteri di configurazione delle app per specificare i dati di configurazione per un'app iOS in fase di esecuzione.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,25 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
+ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35232234"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Usare i criteri di configurazione delle app in Microsoft Intune per specificare le impostazioni quando gli utenti eseguono un'app iOS. Questi criteri non vengono assegnati direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi assegnata. Le impostazioni dei criteri vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
+Usare i criteri di configurazione delle app in Microsoft Intune per specificare impostazioni di configurazione personalizzate per un'app iOS. Queste impostazioni di configurazione consentono di personalizzare un'app in base alle indicazioni dei fornitori. È necessario ottenere queste impostazioni di configurazione (chiavi e valori) dal fornitore dell'app. Per configurare l'app, specificare le impostazioni come chiavi e valori oppure come file XML contenente le chiavi e valori. Inoltre, questi criteri di configurazione non vengono assegnati direttamente agli utenti e ai dispositivi, ma vengono associati a un'app che viene poi assegnata. Le impostazioni dei criteri di configurazione vengono usate quando l'app ne esegue la ricerca, in genere alla prima esecuzione.
 
-È possibile assegnare un criterio di configurazione dell'applicazione a un gruppo di utenti e dispositivi tramite una combinazione di assegnazioni di inclusione ed esclusione. Dopo aver aggiunto un criterio di configurazione dell'app, è possibile impostare le assegnazioni per i criteri di configurazione dell'app. Quando si impostano le assegnazioni per i criteri, è possibile scegliere di includere ed escludere i gruppi di utenti ai quali vengono applicati i criteri. Quando si sceglie di includere uno o più gruppi, è possibile selezionare i gruppi specifici da includere o selezionare i gruppi predefiniti. I gruppi predefiniti includono **Tutti gli utenti**, **Tutti i dispositivi**, e **Tutti gli utenti + Tutti i dispositivi**. 
+Dopo aver aggiunto un criterio di configurazione dell'app, è possibile impostare le assegnazioni per i criteri di configurazione dell'app. Quando si impostano le assegnazioni per i criteri, è possibile scegliere di includere ed escludere i gruppi di utenti ai quali vengono applicati i criteri. Quando si sceglie di includere uno o più gruppi, è possibile selezionare i gruppi specifici da includere o selezionare i gruppi predefiniti. I gruppi predefiniti includono **Tutti gli utenti**, **Tutti i dispositivi**, e **Tutti gli utenti + Tutti i dispositivi**. 
 
 >[!NOTE]
 >Intune fornisce per praticità i gruppi **Tutti gli utenti** e **Tutti i dispositivi** creati in precedenza nella console con le ottimizzazioni predefinite. È consigliabile usare questi gruppi per scegliere tutti gli utenti e tutti i dispositivi invece dei gruppi 'Tutti gli utenti' o 'Tutti i dispositivi' che potrebbero essere stati creati manualmente.
 
-Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'applicazione, è anche possibile scegliere i gruppi specifici da escludere.
+Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'applicazione, è anche possibile scegliere i gruppi specifici da escludere. Per altre informazioni, vedere [Includere ed escludere assegnazioni di app in Microsoft Intune](apps-inc-exl-assignments.md).
 
 > [!TIP]
 > Questo tipo di criteri è attualmente disponibile solo per i dispositivi che eseguono iOS 8.0 e versioni successive. Supporta i tipi di installazione di app seguenti:
@@ -49,18 +50,16 @@ Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'appl
 3. Scegliere il carico di lavoro delle **app per dispositivi mobili**.
 4. Scegliere **Criteri di configurazione dell'app** nel gruppo **Gestisci** e quindi scegliere **Aggiungi**.
 5. Impostare i dettagli seguenti:
-    - **Nome**<br>
-      Il nome del profilo che viene visualizzato nel portale di Azure.
-    - **Descrizione**<br>
-      La descrizione del profilo che viene visualizzato nel portale di Azure.
-    - **Tipo di registrazione del dispositivo**<br>
-      Scegliere **Dispositivi gestiti**.
+    - **Nome** - Nome del profilo che viene visualizzato nel portale di Azure.
+    - **Descrizione** - Descrizione del profilo che viene visualizzata nel portale di Azure.
+    - **Tipo di registrazione del dispositivo**: scegliere **Dispositivi gestiti**.
 6. Selezionare **iOS** per **Piattaforma**.
 7.  Scegliere **App associata**. Nel riquadro **App associata** scegliere l'app gestita alla quale applicare la configurazione e selezionare **OK**.
 8.  Nel riquadro **Aggiungi i criteri di configurazione** scegliere **Impostazioni di configurazione**.
-9. Selezionare **Formato delle impostazioni di configurazione**. Selezionare una delle opzioni seguenti:
-    - **[Usa progettazione configurazione](#use-configuration-designer)**
-    - **[Immettere i dati XML](#enter-xml-data)**
+9. Selezionare **Formato delle impostazioni di configurazione**. Selezionare una delle opzioni seguenti per aggiungere informazioni XML:
+    - **Usare la finestra di progettazione della configurazione**
+    - **Immettere i dati XML**<br></br>
+    Per informazioni dettagliate sull'uso della finestra di progettazione della configurazione, vedere [Usare Progettazione configurazione](#use-configuration-designer). Per informazioni dettagliate sull'immissione di dati XML, vedere [Immettere i dati XML](#enter-xml-data). 
 10. Dopo aver aggiunto le informazioni XML, scegliere **OK**, quindi scegliere **Aggiungi** per aggiungere i criteri di configurazione. Viene visualizzato il riquadro di panoramica dei criteri di configurazione.
 11. Selezionare **Assegnazioni** per visualizzare le opzioni di inclusione ed esclusione. 
 
@@ -80,17 +79,14 @@ Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'appl
 
 ## <a name="use-configuration-designer"></a>Usare Progettazione configurazione
 
-È possibile usare la finestra di progettazione della configurazione per le app disponibili in dispositivi registrati o non registrati in Intune. La finestra di progettazione consente di configurare chiavi e valori di configurazione specifici. È anche necessario specificare il tipo di dati per ogni valore. Le impostazioni vengono fornite automaticamente alle app durante l'installazione.
+Microsoft Intune fornisce impostazioni di configurazione univoche per un'app. È possibile usare la finestra di progettazione della configurazione per le app disponibili in dispositivi registrati o non registrati in Microsoft Intune. La finestra di progettazione consente di configurare chiavi e valori di configurazione specifici utili per creare il codice XML sottostante. È anche necessario specificare il tipo di dati per ogni valore. Queste impostazioni vengono fornite automaticamente alle app al momento dell'installazione.
 
 ### <a name="add-a-setting"></a>Aggiungere un'impostazione
 
 1. Per ogni chiave e valore nella configurazione, impostare:
-   - **Chiave di configurazione**<br>
-     Chiave che identifica in modo univoco la configurazione specifica delle impostazioni.
-   - **Tipo di valore**<br>
-     Il tipo di dati del valore di configurazione. I tipi includono Integer, Real, String o Boolean.
-   - **Valore di configurazione**<br>
-     Il valore per la configurazione.
+   - **Chiave di configurazione** - Chiave che identifica in modo univoco la configurazione specifica delle impostazioni.
+   - **Tipo di valore** - Il tipo di dati del valore di configurazione. I tipi includono Integer, Real, String o Boolean.
+   - **Valore di configurazione** - Valore per la configurazione.
 2. Scegliere **OK** per specificare le impostazioni di configurazione.
 
 ### <a name="delete-a-setting"></a>Eliminare un'impostazione
@@ -165,4 +161,4 @@ Intune supporta anche i tipi di token seguenti nell'elenco di proprietà:
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Procedere ad [assegnare](apps-deploy.md) e [monitorare](apps-monitor.md) normalmente l'app.
+Procedere con l'[assegnazione](apps-deploy.md) e il [monitoraggio](apps-monitor.md) dell'app.

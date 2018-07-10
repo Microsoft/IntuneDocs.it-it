@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
+ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34178163"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36305434"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
@@ -126,6 +126,8 @@ In molte organizzazioni è consuetudine consentire agli utenti finali di usare s
 Poiché i criteri di protezione delle app di Intune sono mirati all'identità di un utente, in genere le impostazioni di protezione per un utente vengono applicate sia ai dispositivi registrati (dispositivi MDM gestiti) sia ai dispositivi non registrati (non MDM). Pertanto, è possibile assegnare un criterio di protezione delle app di Intune sia a dispositivi Intune registrati sia a dispositivi non registrati iOS e Android. È possibile avere criteri di protezione per i dispositivi non gestiti, in cui vengono applicati severi controlli di prevenzione dalla perdita dei dati, e criteri di protezione dati separati per la gestione dei dispositivi MDM gestiti, in cui i controlli DLP possono essere leggermente più morbidi. 
 
 Per creare questi criteri, passare a **App per dispositivi mobili** > **Criteri di protezione delle app** nella console di Intune e fare clic su **Aggiungi criteri**. È anche possibile modificare un criterio di protezione delle app esistente. Se si desidera che il criterio di protezione delle app venga applicato sia ai dispositivi gestiti che non gestiti, verificare che l'opzione **Includi tutti i tipi di app** sia impostata su **Sì**, il valore predefinito. Se si desidera assegnare i criteri in modo granulare sulla base dello stato di gestione, impostare l'opzione **Includi tutti i tipi di app** su **No**. 
+
+Affinché le app iOS possano essere considerate "gestite", l'impostazione dei criteri di configurazione **IntuneMAMUPN** deve essere distribuita per ogni app. Per altre informazioni, vedere [Come gestire il trasferimento di dati tra app iOS in Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 
 > [!NOTE]
 > Per informazioni sul supporto iOS in merito ai criteri di protezione delle app sulla base dello stato di gestione del dispositivo, vedere [Criteri di protezione MAM mirati sulla base dello stato di gestione](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).

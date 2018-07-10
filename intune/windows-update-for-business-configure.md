@@ -5,19 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 5/20/2018
+ms.date: 6/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fd63fb2023b4712a3ad49838f87f5b7cc8320954
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
+ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744891"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822722"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gestire gli aggiornamenti software in Intune
 
@@ -157,7 +157,7 @@ Il percorso dell'URI OMA (con distinzione tra maiuscole e minuscole) per configu
 > Per altre informazioni su MS DM Server, vedere [DMClient configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp) (Provider di servizi di configurazione per DMClient).
 
 ## <a name="pause-updates"></a>Sospendere gli aggiornamenti
-È possibile sospendere la ricezione degli aggiornamenti qualitativi o delle funzionalità su un dispositivo per un periodo massimo di 35 giorni dall'inizio della sospensione. Dopo che è trascorso il numero massimo di giorni, la funzionalità di sospensione verrà disattivata automaticamente e il dispositivo eseguirà la ricerca degli aggiornamenti applicabili in Windows Updates. Dopo questa ricerca, è possibile sospendere nuovamente gli aggiornamenti.
+È possibile sospendere la ricezione degli aggiornamenti qualitativi o delle funzionalità su un dispositivo per un periodo massimo di 35 giorni dall'inizio della sospensione. Dopo che è trascorso il numero massimo di giorni, la funzionalità di sospensione scade automaticamente e il dispositivo esegue la ricerca degli aggiornamenti applicabili in Windows Update. Dopo questa ricerca, è possibile sospendere nuovamente gli aggiornamenti.
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
@@ -169,10 +169,13 @@ Il percorso dell'URI OMA (con distinzione tra maiuscole e minuscole) per configu
 > Inoltre, se un dispositivo è spento quando si esegue il comando di sospensione, all'accensione tale dispositivo potrebbe scaricare e installare gli aggiornamenti pianificati prima di controllare la disponibilità di nuovi aggiornamenti con Intune.
 
 ### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>Disinstallare gli aggiornamenti più recenti dagli aggiornamenti software di Windows 10 
-Nel caso si riscontrasse un problema rilevante nei computer Windows 10, è possibile scegliere di disinstallare (ripristinare lo stato precedente) l'ultimo aggiornamento delle funzionalità o l'ultimo aggiornamento qualitativo. La disinstallazione di un aggiornamento delle funzionalità o qualitativo è disponibile solo per il canale di manutenzione in cui si trova il dispositivo. La disinstallazione attiverà un criterio per il ripristino dell'aggiornamento precedente nei computer Windows 10. Per gli aggiornamenti delle funzionalità in particolare, è possibile limitare il periodo di tempo da 2 a 60 giorni in cui è possibile applicare la disinstallazione della versione più recente. Per impostare le opzioni di disinstallazione degli aggiornamenti software, selezionare **Aggiornamenti software** nel pannello **Microsoft Intune** all'interno del portale di Azure. Quindi selezionare **Anelli di aggiornamento di Windows 10** nel pannello **Aggiornamenti software**. È quindi possibile scegliere l'opzione di **disinstallazione** nella sezione **Panoramica**.
+Nel caso si riscontrasse un problema rilevante nei computer Windows 10, è possibile scegliere di disinstallare (ripristinare lo stato precedente) l'ultimo aggiornamento delle funzionalità o l'ultimo aggiornamento qualitativo. La disinstallazione di un aggiornamento delle funzionalità o di un aggiornamento qualitativo è disponibile solo per il canale di manutenzione su cui è attivo il dispositivo. La disinstallazione attiva un criterio per il ripristino dell'aggiornamento precedente nei computer Windows 10. In particolare per gli aggiornamenti delle funzionalità, è possibile limitare a un intervallo di giorni compreso tra 2 e 60 la disinstallazione dell'ultima versione. Per impostare le opzioni di disinstallazione degli aggiornamenti software:
+
+1. In Intune selezionare **Aggiornamenti software**.
+2. Select **Anelli di aggiornamento di Windows 10** > selezionare una fase di aggiornamento esistente > **Disinstalla**.
 
 > [!NOTE]
-> Nei computer Windows 10, dopo che è stato eseguito il rollback dell'aggiornamento qualitativo, gli utenti finali saranno ancora in grado di vedere l'aggiornamento selezionando **Impostazioni di Windows** > **Aggiornamenti** > **Cronologia aggiornamenti**.
+> Nei computer Windows 10, al termine del rollback dell'aggiornamento qualitativo, gli utenti finali continuano a vedere l'aggiornamento elencato in **Impostazioni di Windows** > **Aggiornamenti**  >  **Cronologia degli aggiornamenti**.
 
 ## <a name="windows-holographic-for-business-support"></a>Supporto di Windows Holographic for Business
 

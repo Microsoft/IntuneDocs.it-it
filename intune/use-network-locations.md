@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ab5e4de2d3a888d6b3372b75b9a95af54a591a
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745137"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843124"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usare i percorsi (isolamento di rete) in Intune
 
@@ -35,7 +35,7 @@ In una struttura di produzione, alcuni dipendenti usano dispositivi Android. Un 
 2. Creare criteri di conformità che richiedano che i dispositivi siano connessi alla rete aziendale e assegnare tali criteri.
 3. Se il dispositivo viene spostato all'esterno dell'impianto di produzione, viene considerato non conforme e non ha accesso alle risorse aziendali.
 
-Usando criteri di Intune, è possibile inviare una notifica di non conformità e anche bloccare il dispositivo. Quando il dispositivo torna in sede e all'interno del percorso di rete, può essere sbloccato e riottenere l'accesso alle risorse aziendali.
+Inoltre, è possibile aggiungere [azioni per la mancata conformità](#configure-the-actions-for-noncompliance). Quando il dispositivo torna in sede e all'interno del percorso di rete, otterrà di nuovo l'accesso alle risorse aziendali.
 
 ## <a name="prerequisites"></a>Prerequisiti
 

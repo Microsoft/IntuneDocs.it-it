@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 5d924e216dd6d0fe13bc4c7718b5368db1d35f8c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833349"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36329876"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti aziendali
 
@@ -234,6 +234,15 @@ I criteri di protezione app sono disponibili per le app per dispositivi mobili c
 | Tipo di dispositivo | Nome del tipo di dispositivo.                                                       |
 | Criteri    | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
 | Ultima sincronizzazione   | Timestamp dell'ultima sincronizzazione del dispositivo con Intune.                   |
+
+## <a name="collect-available-data-from-mobile-device"></a>Raccogliere i dati disponibili dal dispositivo mobile
+
+Usare le risorse seguenti per raccogliere i dati del dispositivo durante la risoluzione dei problemi dei dispositivi dell'utente:
+  - [Send iOS enrollment errors to your IT administrator (Inviare gli errori di registrazione iOS all'amministratore IT)](/intune-user-help/send-errors-to-your-it-admin-ios)
+  - [Aiutare il supporto tecnico dell'azienda a risolvere i problemi dei dispositivi con la registrazione dettagliata](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+  - [Inviare i log di Android al supporto tecnico dell'azienda usando un cavo USB](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+  - [Send Android diagnostic data logs to your IT administrator using email (Inviare i log dei dati Android di diagnostica all'amministratore IT tramite posta elettronica)](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+  - [Send Android enrollment errors to your IT administrator (Inviare gli errori di registrazione Android all'amministratore IT)](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

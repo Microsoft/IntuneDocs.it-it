@@ -1,25 +1,26 @@
 ---
-title: "Criteri di conformità dei dispositivi per i dispositivi Jamf"
+title: Criteri di conformità dei dispositivi per i dispositivi Jamf
 titlesuffix: Microsoft Intune
-description: "Usare i criteri di conformità dei dispositivi Microsoft Intune con l'accesso condizionale di Azure Active Directory per proteggere i dispositivi gestiti Jamf."
-keywords: 
+description: Usare i criteri di conformità dei dispositivi Microsoft Intune con l'accesso condizionale di Azure Active Directory per proteggere i dispositivi gestiti Jamf.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34482336"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Imporre la conformità nei computer Mac gestiti con Jamf Pro
 
@@ -34,6 +35,9 @@ ms.lasthandoff: 03/08/2018
 
 1. Aprire Microsoft Azure e quindi passare a **Intune** > **Conformità del dispositivo** > **Criteri**. È possibile creare criteri specifici per macOS, tra cui scegliere una serie di azioni (ad esempio, inviare messaggi di posta elettronica di avviso) per gli utenti e i gruppi non conformi.
 2. Cercare i gruppi desiderati e applicare ad essi i criteri.
+
+> [!Note]
+> Per la conformità ai requisiti, Intune richiede la crittografia del disco completa.
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>Distribuire l'app Portale aziendale per macOS in Jamf Pro
 

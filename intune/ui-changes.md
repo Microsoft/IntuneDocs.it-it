@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032592"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232937"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Dove si trovano le funzionalità di Intune in Azure?
-Con lo spostamento di Intune nel portale di Azure, alcune attività sono state riorganizzate in modo più logico. Ma ogni ottimizzazione implica la necessità di abituarsi a una nuova organizzazione. È stata quindi realizzata questa Guida di riferimento, pensata espressamente per chi conosce già Intune nel portale classico e vuole imparare a usarlo nel portale di Azure. Se questo articolo non fornisce informazioni su una funzionalità specifica, lasciare un commento alla fine dell'articolo in modo che possa essere aggiornato.
+Con lo spostamento di Intune nel portale di Azure, alcune attività sono state riorganizzate in modo più logico. Ma ogni ottimizzazione implica la necessità di abituarsi a una nuova organizzazione. Questa guida di riferimento è pensata espressamente per chi conosce già Intune nel portale classico e vuole imparare a usarlo nel portale di Azure. Se questo articolo non fornisce informazioni su una funzionalità specifica, lasciare un commento alla fine dell'articolo in modo che possa essere aggiornato.
 ## <a name="quick-reference-guide"></a>Guida di riferimento rapido
 
 |Funzionalità |Percorso nel portale classico|Percorso in Intune nel portale di Azure|
@@ -45,27 +45,37 @@ Impostazioni del portale aziendale|Amministrazione > Portale aziendale|**Gestisc
 Intune nel portale di Azure usa [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) per gestire i gruppi.
 
 ## <a name="where-did-enrollment-rules-go"></a>Dove si trovano le regole di registrazione?
-Nel portale classico è possibile impostare regole per controllare la registrazione MDM dei dispositivi Windows e macOS mobili e moderni:
+Nel portale classico è possibile impostare regole per controllare la registrazione MDM dei dispositivi Windows e macOS mobili e moderni.
 
 ![Immagine delle regole di registrazione dei dispositivi mobili nella console classica](./media/01-classic-rules.png)
 
-Queste regole vengono applicate a tutti gli utenti nell'account di Intune senza eccezione. Nel portale di Azure queste regole vengono suddivise in due tipi di criteri distinti, ovvero restrizioni sul tipo di dispositivi e restrizioni sul limite di dispositivi:
+Queste regole vengono applicate a tutti gli utenti nell'account di Intune senza eccezione. Nel portale di Azure queste regole vengono suddivise in due tipi di criteri distinti, ovvero restrizioni sul tipo di dispositivi e restrizioni sul limite di dispositivi.
 
 ![Immagine delle restrizioni per la registrazione dei dispositivi mobili in Azure](./media/02-azure-enroll-restrictions.png)
 
-Il valore predefinito di Restrizione sul limite di dispositivi corrisponde al limite di registrazione dei dispositivi nel portale classico:
+Il valore predefinito di restrizione sul limite di dispositivi corrisponde al limite di registrazione dei dispositivi nel portale classico.
 
 ![Immagine delle restrizioni sul limite di dispositivi in Azure](./media/03-azure-device-limit.png)
 
-Il valore predefinito di Restrizione dei tipi di dispositivo corrisponde alle restrizioni della piattaforma nel portale classico:
+Il valore predefinito di restrizione dei tipi di dispositivo corrisponde alle restrizioni della piattaforma nel portale classico.
 
 ![Immagine delle restrizioni sul tipo di dispositivi in Azure](./media/04-azure-platform-restrictions.png)
 
-La possibilità di consentire o bloccare i dispositivi personali è ora gestita nelle configurazioni della piattaforma delle restrizioni sul tipo di dispositivi:
+La possibilità di consentire o bloccare i dispositivi personali è ora gestita nelle configurazioni della piattaforma delle restrizioni sul tipo di dispositivi.
 
 ![Immagine delle impostazioni di blocco dei dispositivi personali in Azure](./media/05-azure-personal-block.png)
 
 Nuove funzionalità di restrizione vengono aggiunte solo al portale di Azure.
+
+## <a name="where-did-my-conditional-access-policies-go"></a>Dove si trovano i criteri di accesso condizionale?
+Dopo la migrazione del tenant al portale di Azure, i criteri di accesso condizionale del tenant continuano a essere applicati. Tuttavia, non è possibile visualizzarli o modificarli da Intune nel portale di Azure.
+
+Per visualizzare e apportare modifiche ai criteri di accesso condizionale dal portale di Azure, sarà necessario rimuovere i criteri precedenti dal portale classico e poi ricrearli nel portale di Azure. Per altre informazioni sulla migrazione dei criteri di accesso condizionale, vedere [Eseguire la migrazione di criteri classici](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration). 
+
+## <a name="where-did-my-compliance-policies-go"></a>Dove si trovano i criteri di conformità?
+Dopo la migrazione del tenant al portale di Azure, i criteri di conformità del tenant continuano a essere applicati. Tuttavia, non è possibile visualizzarli o modificarli da Intune nel portale di Azure.
+
+Per visualizzare e apportare modifiche ai criteri di conformità dal portale di Azure, sarà necessario rimuovere i criteri precedenti dal portale classico e poi ricrearli nel portale di Azure. Per altre informazioni sui criteri di conformità dei dispositivi, vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](https://docs.microsoft.com/en-us/intune/known-issues#compliance). 
 
 ## <a name="where-did-apple-dep-go"></a>Dove si trova il servizio Apple DEP?
 Nel portale classico è possibile impostare Intune in modo da integrarsi con Apple Device Enrollment Program e richiedere manualmente la sincronizzazione con il servizio Apple:
