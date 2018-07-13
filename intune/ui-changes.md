@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232937"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905377"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Dove si trovano le funzionalità di Intune in Azure?
 Con lo spostamento di Intune nel portale di Azure, alcune attività sono state riorganizzate in modo più logico. Ma ogni ottimizzazione implica la necessità di abituarsi a una nuova organizzazione. Questa guida di riferimento è pensata espressamente per chi conosce già Intune nel portale classico e vuole imparare a usarlo nel portale di Azure. Se questo articolo non fornisce informazioni su una funzionalità specifica, lasciare un commento alla fine dell'articolo in modo che possa essere aggiornato.
@@ -36,7 +36,7 @@ Con lo spostamento di Intune nel portale di Azure, alcune attività sono state r
 |Gruppi in base a IMEI (tutte le piattaforme)| Gruppi > Tutti i dispositivi > Dispositivi aziendali preregistrati > Per IMEI (tutte le piattaforme) | [Registrazione del dispositivo > Identificatori dei dispositivi aziendali](#by-imei-all-platforms)|
 | Profilo di registrazione di dispositivo aziendale| Criteri > 	Pre-Approved	Registrazione di dispositivi aziendali | [Registrazione del dispositivo > Registrazione Apple > Profili DEP](#where-did-corporate-pre-enrolled-devices-go) |
 | Profilo di registrazione di dispositivo aziendale | Criteri > 	Pre-Approved	Registrazione di dispositivi aziendali | [Registrazione del dispositivo > Registrazione Apple > Profili AC](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Amministrazione > Gestione dispositivi mobili > Android for Work | Registrazione del dispositivo > Registrazione di Android for Work |
+| Android for Work | Amministrazione > Gestione dispositivi mobili > Android for Work | Registrazione del dispositivo > Registrazione Android |
 | Termini e condizioni | Criteri > Termini e condizioni | Registrazione del dispositivo > Termini e condizioni |
 Impostazioni del portale aziendale|Amministrazione > Portale aziendale|**Gestisci** > App per dispositivi mobili<br> **Installazione** > Personalizzazione del portale aziendale
 

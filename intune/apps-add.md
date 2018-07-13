@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
-ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
+ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263405"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905989"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Aggiungere app in Microsoft Intune
 
@@ -51,7 +51,7 @@ La tabella seguente elenca i tipi di app specifici e descrive come aggiungerli n
 | App di iOS Store  | App Store  | Selezionare **iOS** come **tipo di app**, cercare l'app e selezionarla in Intune. |
 | App di Windows Phone 8.1 Store  | App Store  | Selezionare **Windows Phone 8.1** come **tipo di app** e immettere l'URL di Microsoft Store per l'app. |
 | App di Microsoft Store  | App Store  | Selezionare **Windows** come **tipo di app** e immettere l'URL di Microsoft Store per l'app. |
-| App Android for Work | App Store  | Trovare e approvare l'app Android for Work dallo store Google Play for Work.  |
+| App del profilo di lavoro Android | App Store  | Trovare e approvare l'app del profilo di lavoro Android dalla versione gestita di Google Play Store.  |
 | App di Office 365 per Windows 10  | App Store (Office 365) | Selezionare **Windows 10** in **Famiglia di prodotti Office 365** come **tipo di app** e quindi selezionare l'app di Office 365 che si vuole installare.  |
 | App di Office 365 per macOS | App Store (Office 365) | Selezionare **macOS** in **Famiglia di prodotti Office 365** come **tipo di app** e quindi selezionare la famiglia di app di Office 365. |
 | App line-of-business Android | App line-of-business | Selezionare **App line-of-business** come **tipo di app**, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione Android con estensione **apk**.  |
@@ -117,7 +117,7 @@ Le app gestite da Intune possono anche abilitare la protezione dell'app senza ri
 ### <a name="understanding-licensed-apps"></a>Informazioni sulle app con licenza
 Oltre a conoscere le app Web, le app dello Store e le app line-of-business, è utile conoscere anche la destinazione delle app acquisite tramite Volume Purchase Program e di quelle con licenza, ad esempio: 
 - **Volume Purchase Program di Apple per le imprese (iOS e MacOS)**: l'App Store iOS consente di acquistare più licenze per un'app da usare in azienda. L'acquisto di più copie favorisce una gestione più efficiente delle app presenti in azienda. Per altre informazioni, vedere [Gestire le app iOS acquistate con Volume Purchase Program](vpp-apps-ios.md).
-- **Android for Work (Android)**: l'assegnazione di app a dispositivi Android for Work avviene in modo diverso rispetto all'assegnazione di app a dispositivi Android standard. Tutte le app installate per Android for Work provengono da Google Play for Work. Accedere allo store, cercare le app desiderate e approvarle. L'app viene quindi visualizzata nel nodo **App con licenza** del portale di Azure ed è possibile gestire l'assegnazione dell'app allo stesso modo di qualsiasi altra app.
+- **Profili di lavoro Android**: l'assegnazione di app a dispositivi con profili di lavoro Android avviene in modo diverso rispetto all'assegnazione di app a dispositivi Android standard. Tutte le app installate per i profili di lavoro Android provengono dalla versione gestita di Google Play Store. Accedere allo store, cercare le app desiderate e approvarle. L'app viene quindi visualizzata nel nodo **App con licenza** del portale di Azure ed è possibile gestire l'assegnazione dell'app allo stesso modo di qualsiasi altra app.
 - **Microsoft Store per le aziende (Windows 10)**: in Microsoft Store per le aziende è possibile trovare e acquistare app per l'organizzazione, singolarmente o a volume. Collegando lo Store a Microsoft Intune è possibile gestire nel portale di Azure le app acquistate con Volume Purchase Program. Per altre informazioni, vedere [Gestire le app di Microsoft Store per le aziende](windows-store-for-business.md).
 
 ## <a name="before-you-add-apps"></a>Prima di aggiungere le app

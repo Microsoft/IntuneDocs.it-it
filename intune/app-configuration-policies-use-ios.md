@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/07/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
-ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
+ms.openlocfilehash: 65f249f05f389d8f05395cb46677d5f5fa53835e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232234"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905836"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 
@@ -158,6 +158,9 @@ Intune supporta anche i tipi di token seguenti nell'elenco di proprietà:
 - \{\{username\}\}, ad esempio **John Doe**
 - \{\{serialnumber\}\}, ad esempio **F4KN99ZUG5V2** (per dispositivi iOS)
 - \{\{serialnumberlast4digits\}\}, ad esempio **G5V2** (per dispositivi iOS)
+
+## <a name="monitor-ios--app-configuration-status-per-device"></a>Monitorare lo stato di configurazione delle app iOS per ogni dispositivo 
+Dopo che è stato assegnato un criterio di configurazione, è possibile monitorare lo stato di configurazione delle app iOS per ogni dispositivo gestito. Da **Microsoft Intune** nel portale di Azure selezionare **Dispositivi** > **Tutti i dispositivi**. Dall'elenco dei dispositivi gestiti selezionare un dispositivo specifico per visualizzare il relativo pannello. Nel pannello del dispositivo selezionare **Configurazione dell'app**.  
 
 ## <a name="next-steps"></a>Passaggi successivi
 

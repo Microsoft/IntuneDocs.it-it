@@ -1,6 +1,6 @@
 ---
 title: Rimuovere i dati aziendali nei dispositivi con Microsoft Intune - Azure | Microsoft Docs
-description: È possibile rimuovere i dati aziendali in un dispositivo o eseguire un ripristino delle impostazioni di fabbrica in un dispositivo Android, Android for Work, iOS, macOS o Windows usando Microsoft Intune. È anche possibile eliminare un dispositivo da Azure Active Directory.
+description: È possibile rimuovere i dati aziendali in un dispositivo o eseguire un ripristino delle impostazioni di fabbrica in un dispositivo Android, profilo di lavoro Android, iOS, macOS o Windows usando Microsoft Intune. È anche possibile eliminare un dispositivo da Azure Active Directory.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
-ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
+ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37091728"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906057"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi tramite il ripristino delle impostazioni predefinite, la rimozione dei dati aziendali o l'annullamento manuale della registrazione del dispositivo
 
@@ -29,9 +29,9 @@ Usando le azioni **Rimuovi i dati aziendali** o **Ripristino delle impostazioni 
 > [!NOTE]
 > Prima di rimuovere un utente da Azure Active Directory (Azure AD) usare l'azione **Ripristino delle impostazioni di fabbrica** o **Rimuovi i dati aziendali** per tutti i dispositivi associati all'utente. Se si rimuovono utenti con dispositivi gestiti da Azure AD, Intune non è più in grado di generare un comando di ripristino delle impostazioni di fabbrica o di rimozione dei dati aziendali per tali dispositivi.
 
-## <a name="factory-reset"></a>Ripristino delle impostazioni di fabbrica
+## <a name="factory-reset"></a>Ripristino impostazioni predefinite
 
-L'azione **Ripristino delle impostazioni di fabbrica** riporta un dispositivo alle impostazioni predefinite di fabbrica. I dati degli utenti vengono conservati o cancellati a seconda che sia stata selezionata o meno la casella di controllo **Mantieni lo stato della registrazione e l'account utente**.
+L'azione **Ripristino delle impostazioni di fabbrica** riporta un dispositivo alle impostazioni predefinite di fabbrica. I dati degli utenti vengono mantenuti se si seleziona la casella di controllo **Mantieni lo stato della registrazione e l'account utente**. In caso contrario, l'unità viene cancellata in modo sicuro.
 
 |Azione Ripristino delle impostazioni predefinite|**Mantieni lo stato della registrazione e l'account utente**|Rimosso dalla gestione di Intune|Descrizione|
 |:-------------:|:------------:|:------------:|------------|
@@ -108,9 +108,13 @@ Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto dell'azion
 |Separazione di Azure AD|Il record di Azure AD viene rimosso.|Il record di Azure AD viene rimosso.|
 |Contatti |I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Eventuali contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere rimossi. <br /> <br />Attualmente è supportata solo l'app Outlook.|I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Eventuali contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere rimossi. <br /> <br />Attualmente è supportata solo l'app Outlook.
 
-### <a name="android-for-work"></a>Android for Work
+### <a name="android-work-profile"></a>Profilo di lavoro Android
 
-La rimozione dei dati aziendali da un dispositivo Android for Work consente di rimuovere tutti i dati, le app e le impostazioni nel profilo di lavoro in tale dispositivo. Il dispositivo viene ritirato dalla gestione con Intune. Il ripristino delle impostazioni predefinite non è supportato per Android for Work.
+La rimozione dei dati aziendali da un dispositivo con profilo di lavoro Android consente di rimuovere tutti i dati, le app e le impostazioni nel profilo di lavoro in tale dispositivo. Il dispositivo viene ritirato dalla gestione con Intune. Il ripristino delle impostazioni predefinite non è supportato per i profili di lavoro Android.
+
+### <a name="android-enterprise-kiosk-devices"></a>Dispositivi in modalità tutto schermo di Android Enterprise
+
+Per i dispositivi in modalità tutto schermo di Android è possibile eseguire solo il ripristino delle impostazioni di fabbrica. Non è possibile rimuovere i dati aziendali dai dispositivi in modalità tutto schermo di Android.
 
 
 ### <a name="macos"></a>macOS
@@ -150,6 +154,15 @@ Per rimuovere i dispositivi dal portale di Intune, è possibile eliminarli dal r
 
 1. Accedere a [Intune nel portale di Azure](https://aka.ms/intuneportal).
 2. Scegliere **Dispositivi** > **Tutti i dispositivi** > scegliere i dispositivi che si vuole eliminare > **Elimina**.
+
+### <a name="automatically-delete-devices-with-cleanup-rules"></a>Eliminare automaticamente i dispositivi con le regole di pulizia
+È possibile configurare Intune per eliminare automaticamente i dispositivi che sembrano essere inattivi, non aggiornati o non rispondere. Queste regole di pulizia monitorano continuamente l'inventario dei dispositivi in modo che i record di dispositivo rimangano aggiornati. I dispositivi eliminati in questo modo vengono rimossi dalla gestione di Intune.
+1. Accedere a [Intune nel portale di Azure](https://aka.ms/intuneportal).
+2. Scegliere **Dispositivi** > **Regole di pulizia del dispositivo** > **Sì**.
+3. Nella casella **Elimina i dispositivi non archiviati per il numero di giorni specificato** immettere un numero compreso tra 90 e 270.
+4. Scegliere **Salva**.
+
+
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Eliminare dispositivi dal portale di Azure Active Directory
 

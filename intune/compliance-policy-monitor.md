@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 6/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33e42c821881a5cc7eb9e4be65f6f7e56263480e
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232971"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905360"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -158,9 +158,27 @@ Questo report consente di visualizzare, per ogni singola impostazione di conform
 
 Quando si fa clic sul riquadro Conformità dell'impostazione e quindi su una delle impostazioni dei criteri di conformità dei dispositivi, è possibile vedere lo **stato di conformità**, l'**alias di posta elettronica dell'utente**, il **modello** e la **posizione** per ogni dispositivo interessato dall'impostazione dei criteri di conformità dei dispositivi.
 
+## <a name="view-status-of-device-policies"></a>Visualizzare lo stato dei criteri dei dispositivi
+
+È possibile controllare i diversi stati dei criteri in base alla piattaforma. Si supponga, ad esempio, di avere un criterio di conformità macOS e di voler visualizzare i dispositivi interessati da questo criterio e verificare la presenza di eventuali conflitti o errori.
+
+Questa funzionalità è inclusa nei report di stato del dispositivo:
+
+1. Selezionare **Conformità del dispositivo** > **Criteri**. Viene visualizzato un elenco di criteri con informazioni sulla piattaforma, sull'assegnazione o meno del criterio e altri dettagli.
+2. Selezionare un criterio > **Panoramica**. In questa visualizzazione l'assegnazione del criterio include gli stati seguenti:
+
+  - Operazione completata
+  - Errore
+  - Conflitto
+  - Pending
+  - Non applicabile
+
+3. Per visualizzare i dettagli sui dispositivi usando questo criterio, selezionare uno stato. Selezionare, ad esempio, **Operazione completata**. La finestra successiva conterrà i dettagli di un dispositivo specifico, tra cui il nome e lo stato di distribuzione.
+
 ## <a name="how-intune-resolves-policy-conflicts"></a>Come vengono risolti i conflitti di criteri in Intune
 Possono verificarsi conflitti se vengono applicati più criteri di Intune a un dispositivo. Se le impostazioni dei criteri si sovrappongono, Intune risolve eventuali conflitti in base alle regole seguenti:
 
 - Se le impostazioni in conflitto hanno origine da criteri di configurazione di Intune e da criteri di conformità, le impostazioni nei criteri di conformità hanno la precedenza rispetto a quelle dei criteri di configurazione, anche se queste ultime sono più sicure.
 
-- Se sono stati distribuiti più criteri di conformità, Intune userà quelli più sicuri.
+- Se sono stati distribuiti più criteri di conformità, Intune usa quelli più sicuri.
+
