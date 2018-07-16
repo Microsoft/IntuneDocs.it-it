@@ -15,12 +15,12 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f62cb3a99a9cfd328cc041f095b0980eacc99852
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 4fc64f672a5c488848303f8d5ea5ea1467b0b195
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224698"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869501"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Aggiungere app di Android Store a Microsoft Intune
 
@@ -31,12 +31,11 @@ Prima di assegnare un'app a un dispositivo o a un gruppo di utenti, è necessari
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**.  
     Intune si trova nella sezione **Monitoraggio e gestione**.
-1. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
-2. Nel riquadro del carico di lavoro **App per dispositivi mobili**, in **Gestisci** selezionare **App**.
-3. Selezionare **Aggiungi**.
-4. Nel riquadro **Aggiungi app** selezionare **Android** nell'elenco dei tipi disponibili in **App Store**.
-5. Per configurare le informazioni sull'app, selezionare **Configura** e specificare le informazioni seguenti.  
-    A seconda dell'app scelta, è possibile che alcuni valori vengano compilati automaticamente.
+3. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
+4. Nel riquadro del carico di lavoro **App per dispositivi mobili**, in **Gestisci** selezionare **App**.
+5. Selezionare **Aggiungi**.
+6. Nel riquadro **Aggiungi app** selezionare **Android** nell'elenco dei tipi disponibili in **App Store**.
+7. Per configurare le informazioni sull'app, selezionare **Configura** e specificare le informazioni seguenti. Per le app Android, passare a [Google Play Store](https://play.google.com/store) e cercare l'app da distribuire. Selezionare l'app e annotare i dettagli dell'app. A seconda dell'app scelta, è possibile che alcuni valori vengano compilati automaticamente.
     - **Nome**: immettere il nome dell'app da visualizzare nel portale aziendale. Assicurarsi che il nome dell'app usato sia univoco. Se il nome dell'app è duplicato, nel portale aziendale sarà visualizzato un solo nome.
     - **Descrizione**: immettere una descrizione per l'app. Questa descrizione viene visualizzata dagli utenti nel portale aziendale.
     - **Autore**: immettere il nome dell'autore dell'app.

@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216327"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905224"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi usando un account del manager di registrazione dispositivi
 
@@ -35,7 +35,7 @@ Per poter essere aggiunti come manager di registrazione dispositivi, gli utenti 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Esempio di scenario con manager di registrazione dispositivi
 
-Un ristorante vuole offrire 50 tablet POS al personale di sala e monitor per gli ordini per il personale di cucina. I dipendenti non hanno bisogno di accedere ai dati aziendali o di accedere come utenti. L'amministratore di Intune crea un account del manager di registrazione dispositivi e aggiunge un supervisore del ristorante all'account. Il supervisore ha ora capacità di manager di registrazione dispositivi. Il supervisore potrà quindi registrare 50 tablet usando le credenziali DEM.
+Un ristorante vuole offrire 50 tablet POS al personale di sala e monitor per gli ordini per il personale di cucina. I dipendenti non hanno bisogno di accedere ai dati aziendali o di accedere come utenti. L'amministratore di Intune crea un nuovo account del manager di registrazione dispositivi per il supervisore del ristorante.  Questo account è separato dall'account principale del supervisore e viene usato solo per la registrazione dei dispositivi condivisi con Intune. Il supervisore potrà quindi registrare 50 tablet usando le credenziali DEM.
 
 Solo gli utenti presenti nel [portale di Azure](https://portal.azure.com) possono essere manager di registrazione dispositivi. L'utente manager di registrazione dispositivi non può essere un amministratore di Intune.
 
@@ -54,7 +54,7 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
   - Visualizzazione del solo dispositivo locale nell'app o nel sito Web del portale aziendale.
   - Gli utenti non possono usare le app Volume Purchase Program (VPP) di Apple con licenze utente poiché è necessario un ID Apple per utente per la gestione delle app.
   - (Solo iOS) Se si usa un manager di registrazione dispositivi per la registrazione dei dispositivi iOS, non è possibile usare Apple Configurator, Apple Device Enrollment Program (DEP) o Apple School Manager (ASM) per la registrazione dei dispositivi.
-  - (Solo Android) È previsto un limite al numero di dispositivi Android for Work che è possibile registrare con un singolo account DEM. Per ogni account DEM è possibile registrare fino a 10 profili di lavoro Android. Questa limitazione non si applica alla registrazione di Android legacy.
+  - (Solo Android) È previsto un limite al numero di dispositivi del profilo di lavoro Android che possono essere registrati con un singolo account DEM. Per ogni account DEM è possibile registrare fino a 10 profili di lavoro Android. Questa limitazione non si applica alla registrazione di Android legacy.
   - I dispositivi possono installare le app VPP se sono dotati delle licenze dispositivo.
   - Ogni dispositivo richiede una licenza dispositivo. Altre informazioni sulle [licenze utente e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 

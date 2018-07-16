@@ -15,12 +15,12 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f468ff8115fde79bf92825f06c37ff8affabf125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
+ms.sourcegitcommit: abc3d51923e55e8779a5d84f2fcab60d0a0d8645
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31033375"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37434267"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Sistemi operativi e browser supportati
 
@@ -28,7 +28,7 @@ ms.locfileid: "31033375"
 
 Prima di installare Microsoft Intune, controllare quali sistemi operativi e browser sono supportati.
 
-Per informazioni sull'installazione di Intune sul dispositivo, vedere [Uso di dispositivi gestiti per lo svolgimento del lavoro](/intune-user-help/company-portal-frequently-asked-questions). È anche consigliabile acquisire familiarità con l'[uso della larghezza di banda di rete in Intune](network-bandwidth-use.md) ([portale classico](/intune-classic/get-started/network-bandwidth-use)).
+Per informazioni sull'installazione di Intune nel proprio dispositivo, vedere gli articoli relativi all'[uso di dispositivi gestiti per lo svolgimento del lavoro](/intune-user-help/company-portal-frequently-asked-questions) e all'[uso della larghezza di banda di rete in Intune](network-bandwidth-use.md) ([portale classico](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Sistemi operativi supportati di Intune
 
@@ -38,12 +38,12 @@ Per informazioni sull'installazione di Intune sul dispositivo, vedere [Uso di di
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Dispositivi Samsung Knox Standard supportati
 
-L'app Portale aziendale tenta l'attivazione di Samsung Knox durante la registrazione MDM solo se il dispositivo da attivare è presente nell'[elenco dei dispositivi Knox supportati](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Ciò consente di evitare errori di attivazione Knox che impediscono la registrazione MDM. I dispositivi che non supportano l'attivazione di Samsung Knox vengono registrati come dispositivi Android standard. Tra i dispositivi Samsung, non tutti hanno un numero di modello che supporta Knox. Verificare la compatibilità Knox presso il rivenditore del dispositivo prima dell'acquisto e della distribuzione di dispositivi Samsung.
+Per evitare errori di attivazione Knox che impediscono la registrazione MDM, l'app Portale aziendale tenta l'attivazione di Samsung Knox durante la registrazione MDM solo se il dispositivo da attivare è presente nell'[elenco dei dispositivi Knox supportati](https://www.samsungknox.com/knox-supported-devices/knox-workspace). I dispositivi che non supportano l'attivazione di Samsung Knox vengono registrati come dispositivi Android standard. Tra i dispositivi Samsung, non tutti hanno un numero di modello che supporta Knox. Verificare la compatibilità Knox presso il rivenditore del dispositivo prima dell'acquisto e della distribuzione di dispositivi Samsung.
 
 > [!NOTE]
 > Per la registrazione dei dispositivi Samsung Knox potrebbe essere necessario [abilitare l'accesso ai server Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
 
-I modelli Samsung nell'elenco seguente non supportano Knox e vengono registrati come dispositivi Android nativi dall'app Portale aziendale per Android:
+L'elenco seguente riporta i modelli di dispositivi Samsung che non supportano Knox. L'app Portale aziendale per Android li registra come dispositivi Android nativi:
 
 | **Nome dispositivo** | **Numeri modello dispositivo** |
 | --- | --- |
@@ -103,7 +103,7 @@ Per questi portali sono supportati i browser seguenti:
 - Microsoft Internet Explorer 11
 - Safari (versione più recente, solo Mac)
 - Chrome (versione più recente)
-- Mozilla Firefox con Silverlight abilitato [Altre informazioni (versioni precedenti alla 52)](https://go.microsoft.com/fwlink/?linkid=836872)
+- Firefox (versione più recente)
 
 
 

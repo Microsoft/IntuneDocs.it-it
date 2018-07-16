@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11f1a48b5b2dcff421603dd4538ff054d174fe66
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223408"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869373"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Assegnare le app di Office 365 ai dispositivi Windows 10 con Microsoft Intune
 
@@ -47,7 +47,7 @@ Questo tipo di app semplifica l'assegnazione delle app Office 365 ai dispositivi
 3. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
 4. Nel riquadro del carico di lavoro **App per dispositivi mobili**, in **Gestisci** selezionare **App**.
 5. Selezionare **Aggiungi**.
-6. Nel riquadro **Aggiungi app**, nell'elenco **Tipo di app**, in **Office 365 Office** (Office 365) selezionare **Windows 10**.
+6. Nel riquadro **Aggiungi app**, nell'elenco **Tipo di app**, in **Office 365 Suite** selezionare **Windows 10**.
 
 A questo punto è possibile configurare la suite di app.
 
@@ -71,15 +71,15 @@ In questo passaggio si specificano le informazioni sulla suite di app. Queste in
 2. Nel riquadro **Informazioni sulla suite di app** seguire questa procedura:
     - **Nome della suite**: immettere il nome della suite di app visualizzato nel portale aziendale. Verificare che tutti i nomi di suite usati siano univoci. Se il nome di una suite viene usato due volte, solo una delle due suite viene visualizzata dagli utenti nel portale aziendale.
     - **Descrizione della suite**: immettere una descrizione per la suite di app. Ad esempio, è possibile elencare le app selezionate da includere.
-    - **Autore**: immettere il nome dell'autore dell'app.
+    - **Editore**: Microsoft viene visualizzato come editore.
     - **Categoria**: facoltativamente, selezionare una o più categorie di app predefinite oppure una categoria creata. Questa impostazione consente agli utenti di trovare più facilmente il gruppo di app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
     - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **Developer**: immettere il nome dello sviluppatore dell'applicazione (facoltativo).
-    - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio, *Reparto risorse umane* (facoltativo).
+    - **Sviluppatore**: Microsoft viene visualizzato come sviluppatore.
+    - **Proprietario**: Microsoft viene visualizzato come proprietario.
     - **Note**: immettere eventuali note da associare a questa app.
-    - **Logo**: caricare un'icona visualizzata con l'app dagli utenti nel portale aziendale.
+    - **Logo**: il logo Office 365 è visualizzato insieme all'app quando gli utenti visitano il portale aziendale.
 3. Selezionare **OK**.
 
 ## <a name="configure-app-settings"></a>Configurare le impostazioni dell'app

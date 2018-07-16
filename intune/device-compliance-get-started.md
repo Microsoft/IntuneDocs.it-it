@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190759"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905071"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introduzione ai criteri di conformità dei dispositivi in Intune
 
@@ -140,7 +140,7 @@ Se un dispositivo ha più criteri di conformità e il dispositivo presenta stati
 
 Quando un dispositivo ha più criteri di conformità, viene assegnato il livello di gravità massimo di tutti i criteri per quel dispositivo.
 
-Si osservi ad esempio il caso di un dispositivo con tre criteri di conformità: uno con stato sconosciuto (gravità = 1), uno con stato conforme (gravità = 3) e uno con stato InGracePeriod (gravità = 4). Lo stato InGracePeriod ha il livello di gravità più alto quindi, a tutti e tre i criteri viene assegnato lo stato di conformità InGracePeriod.
+Si osservi ad esempio il caso di un dispositivo con tre criteri di conformità: uno con stato sconosciuto (gravità = 1), uno con stato conforme (gravità = 3) e uno con stato periodo di tolleranza (gravità = 4). Lo stato InGracePeriod ha il livello di gravità più alto quindi, a tutti e tre i criteri viene assegnato lo stato di conformità InGracePeriod.
 
 ## <a name="ways-to-use-device-compliance-policies"></a>Modi per usare i criteri di conformità del dispositivo
 
@@ -202,7 +202,7 @@ Per usare le funzionalità relative alla conformità dei dispositivi nel portale
 - Creare criteri di conformità dei dispositivi per le piattaforme seguenti:
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [Profilo di lavoro Android](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)

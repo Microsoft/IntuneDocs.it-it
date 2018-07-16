@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da85b0087709a719cafaaf893c3188a3bf3148d8
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: a7c961be9789309fdea57d1a97073c4292b20149
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046282"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906074"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni sugli aggiornamenti apportati all'interfaccia utente per le app disponibili per gli utenti finali in questa versione di Microsoft Intune. Le informazioni sugli aggiornamenti sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.
@@ -37,13 +37,13 @@ L'app Portale aziendale Intune per Windows 10 è stata aggiornata con la [visual
 ## <a name="week-of-april-2-2018"></a>Settimana del 2 aprile 2018
 
 #### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Aggiornamento dell'esperienza utente per l'app Portale aziendale per iOS <!-- 1412866 -->
-È stato rilasciato un importante aggiornamento dell'esperienza utente per l'app Portale aziendale per iOS. L'aggiornamento prevede una riprogettazione visiva completa che include un aspetto visivo e una modalità di interazione più moderni. È stata mantenuta la funzionalità dell'app aumentando la facilità di utilizzo e l'accessibilità.  
+È stato rilasciato un aggiornamento dell'esperienza utente principale per l'app Portale aziendale per iOS. L'aggiornamento include una riprogettazione visuale completa con un aspetto modernizzato. La funzionalità dell'app è stata mantenuta, ma migliorandone il livello di usabilità e accessibilità.  
 
-Saranno inoltre disponibili:
+L'aggiornamento include anche:
 - Supporto per iPhone X.
-- Avvio delle app e caricamento più veloci per consentire agli utenti di risparmiare tempo.
-- Indicatori di stato aggiuntivi per offrire agli utenti le informazioni sullo stato più aggiornate.
-- Miglioramenti della modalità di caricamento dei log. Se si verificano problemi, è più semplice segnalarlo.  
+- Tempi di risposta più rapidi per l'avvio e il caricamento dell'app, per consentire agli utenti di risparmiare tempo.
+- Indicatori di stato aggiuntivi per offrire agli utenti informazioni sullo stato più aggiornate.
+- Miglioramenti della modalità di caricamento dei log, in modo che sia possibile segnalare eventuali problemi.  
 
 |Prima|Dopo|
 |---|---|
@@ -86,9 +86,9 @@ Se è stato abilitato il [mapping del gruppo di dispositivi](device-group-mappin
 
 ## <a name="week-of-november-13-2017"></a>Settimana del 13 novembre 2017
 
-### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Miglioramenti al flusso di lavoro di configurazione dei dispositivi in Portale aziendale per iOS (versione 2.9.0) <!---1417174--->
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Miglioramenti al flusso di lavoro di configurazione dei dispositivi in Portale aziendale per iOS (versione 2.9.0) <!-- 1417174 -->
 
-È stato migliorato il flusso di lavoro di configurazione dei dispositivi nell'app Portale aziendale per iOS. Il linguaggio è più semplice e, dove possibile, sono state inserite schermate. Con l'inserimento del nome della società nel testo di configurazione, il linguaggio è stato inoltre reso più specifico per la società di riferimento.
+È stato migliorato il flusso di lavoro di configurazione dei dispositivi nell'app Portale aziendale per iOS. Il linguaggio è più semplice e, dove possibile, sono state inserite schermate. Il linguaggio è stato inoltre reso più specifico per ogni azienda, usandone il nome in tutto il testo del programma di installazione.
 
 > [!NOTE]
 > Viene usato il nome della società impostato nel portale di Azure in **Microsoft Intune** > **App per dispositivi mobili** > **Personalizzazione del portale aziendale** > **Nome società**. Se questo valore non è stato impostato, verrà usato il nome del tenant impostato in **Azure Active Directory** > **Proprietà** > **Nome**. Se nella personalizzazione dell'app Portale aziendale non è stato impostato il nome della società e non si vuole che venga visualizzato il nome del tenant, è consigliabile impostare il nome della società nella scheda Personalizzazione del portale aziendale. Se si preferisce che questa stringa non venga visualizzata nell'intestazione dell'app Portale aziendale, è possibile deselezionare la casella di controllo "Mostra il nome della società accanto al logo".
@@ -145,7 +145,7 @@ In questa versione viene risolto un problema noto di visualizzazione delle icone
 |![02](./media/android_cp_enroll_02_before_1710.png)|![02](./media/android_cp_enroll_02_after_1710.png)|
 |![03](./media/android_cp_enroll_03_before_1710.png)|![03](./media/android_cp_enroll_03_after_1710.png)|
 
-Altri passaggi sono stati migliorati nei dispositivi Android for Work.
+Altri passaggi sono stati migliorati nei dispositivi del profilo di lavoro Android.
 
 |Prima|Dopo|
 |---|---|
@@ -166,7 +166,7 @@ Altri passaggi sono stati migliorati nei dispositivi Android for Work.
 
 ### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Testo più comprensibile per l'app Portale aziendale per Android <!---1396349--->  
 
-Il processo di registrazione per l'app del portale aziendale per Android è ora più semplice per gli utenti finali, grazie all'uso di un nuovo testo più comprensibile. Aggiornare la precedente documentazione relativa alla registrazione personalizzata perché contenga le nuove schermate. Di seguito alcune immagini di esempio:
+Il processo di registrazione per l'app del portale aziendale per Android è ora più semplice per gli utenti finali, grazie all'uso di un nuovo testo più comprensibile. Se si usa una documentazione personalizzata per la registrazione, è consigliabile aggiornarla sulla base delle nuove schermate. Di seguito alcune immagini di esempio:
 
 |Prima|Dopo|
 |---|---|
@@ -275,7 +275,7 @@ L'app portale aziendale avvia la procedura di accesso.
 ## <a name="june-2017"></a>Giugno 2017
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>L'app Portale aziendale per Android ora include una nuova esperienza utente finale per i criteri di protezione delle app
-In base ai suggerimenti dei clienti, l'app Portale aziendale per Android è stata modificata e ora include un pulsante **Accesso al contenuto aziendale**. Con questa funzionalità gli utenti finali possono evitare il processo di registrazione per accedere solo ad app che supportano i criteri di protezione, una funzionalità di gestione delle applicazioni mobili di Intune.
+In base ai suggerimenti dei clienti, l'app Portale aziendale per Android è stata modificata in modo da includere un pulsante **Accesso al contenuto aziendale**. Con questa funzionalità gli utenti finali possono evitare il processo di registrazione per accedere solo ad app che supportano i criteri di protezione, una funzionalità di gestione delle applicazioni mobili di Intune.
 
 L'utente può toccare il pulsante **Accesso al contenuto aziendale** anziché iniziare il processo di registrazione del dispositivo.
 
@@ -291,14 +291,14 @@ Viene visualizzato il sito Web Portale aziendale, dove l'utente può specificare
 
 ### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>Miglioramenti alla sincronizzazione di app con Windows 10 Creators Update <!--676505-->
 
-L'app Portale aziendale per Windows 10 avvierà ora automaticamente una sincronizzazione per le richieste di installazione di app per dispositivi con Windows 10 Creators Update (1703). Ciò consente di limitare il problema di installazione di app quando lo stato è "In attesa di sincronizzazione". Gli utenti potranno inoltre avviare manualmente la sincronizzazione dall'app.
+L'app Portale aziendale per Windows 10 avvierà ora automaticamente una sincronizzazione per le richieste di installazione di app per dispositivi con Windows 10 Creators Update (1703). Ciò riduce il problema del blocco delle installazioni di app durante lo stato "Sincronizzazione in sospeso". Inoltre, gli utenti saranno in grado di avviare manualmente la sincronizzazione all'interno dell'app.
 
 ![Immagine dell'app Portale aziendale per Windows 10 in cui il download di Microsoft Word dall'app store del portale aziendale è in sospeso.](./media/w10_download_pending_after_1706.png)
 
 ![Immagine dell'app Portale aziendale per Windows 10 con il nuovo stato di sincronizzazione automatica e un messaggio di stato indicante che la sincronizzazione del dispositivo e il download dell'app sono in corso.](./media/w10_download_pending_syncing_after_1706.png)
 
 ### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Nuova esperienza guidata per il portale aziendale di Windows 10 <!---1058938--->
-L'app Portale aziendale per Windows 10 includerà un'esperienza guidata di Intune per i dispositivi che non sono stati identificati o registrati. La nuova esperienza fornisce istruzioni dettagliate che guidano l'utente nella procedura di registrazione in Azure Active Directory (obbligatoria per le funzionalità di accesso condizionale) e di registrazione MDM (obbligatoria per le funzionalità di gestione dei dispositivi). L'esperienza guidata sarà accessibile dalla home page del portale aziendale. Gli utenti possono continuare a usare l'app se non completano la registrazione, ma le funzionalità saranno limitate.
+L'app Portale aziendale per Windows 10 includerà un'esperienza guidata di Intune per i dispositivi che non sono stati identificati o registrati. La nuova esperienza fornisce istruzioni dettagliate che guidano l'utente nella fase di registrazione in Azure Active Directory (obbligatoria per le funzionalità di accesso condizionale) e la registrazione in MDM (obbligatoria per le funzionalità di gestione dei dispositivi). L'esperienza interattiva sarà accessibile dalla home page di Portale aziendale. Gli utenti possono continuare a usare l'app se non completano la registrazione, ma le funzionalità saranno limitate.
 
 Questo aggiornamento è visibile solo nei dispositivi che eseguono l'Aggiornamento dell'anniversario di Windows 10 (build 1607) o versione successiva.
 
@@ -320,7 +320,7 @@ In risposta al feedback degli utenti, per l'app Portale aziendale per Android è
 ![Immagine della finestra di dialogo di conferma visualizzata dopo aver selezionato la nuova opzione "Remove company portal" (Rimuovi portale aziendale) dal menu Azione. Questa finestra di dialogo informa l'utente che rimuovendo Portale aziendale, il dispositivo non verrà più gestito dall'amministratore IT e potrebbe essere rimosso l'accesso a dati, app o posta elettronica aziendali. Viene quindi richiesto all'utente di confermare la rimozione dell'app Portale aziendale selezionando "Sì".](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Miglioramenti dei riquadri dell'app Portale aziendale per iOS <!--1230777-->
-È stata aggiornata la progettazione dei riquadri dell'app nella home page in modo che rispecchino il colore personalizzato impostato per Portale aziendale.
+La progettazione dei riquadri dell'app nella home page è stata aggiornata in modo da riflettere il colore della personalizzazione impostato per il Portale aziendale.
 
 **Prima**
 
@@ -339,7 +339,7 @@ Se gli utenti usano l'account aziendale o dell'istituto di istruzione per accede
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nuove icone per Managed Browser e il portale aziendale <!--918433, 918431-->
 
-Managed Browser disporrà di icone aggiornate per le versioni Android e iOS dell'app. La nuova icona conterrà il logo di Intune aggiornato, in modo da renderla più coerente con le altre app in Enterprise Mobility + Security (EM+S).
+Managed Browser disporrà di icone aggiornate per le versioni Android e iOS dell'app. La nuova icona conterrà il badge Intune aggiornato per renderla più coerente con altre app in Enterprise Mobility + Security (EM + S).
 
 <html>
 <body>
@@ -356,11 +356,11 @@ Managed Browser disporrà di icone aggiornate per le versioni Android e iOS dell
 </body>
 </html>
 
-Il portale aziendale disporrà inoltre di icone aggiornate per le versioni Android, iOS e Windows dell'app, per migliorare la coerenza con le altre app in EM+S. Queste icone verranno rilasciate gradualmente tra le piattaforme da aprile a fine maggio.
+Il portale aziendale disporrà inoltre di icone aggiornate per le versioni Android, iOS e Windows dell'app, per migliorare la coerenza con le altre app in EM+S. Queste icone verranno rilasciate gradualmente tra piattaforme da aprile alla fine di maggio.
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicatore di stato dell'accesso nel portale aziendale Android <!--953374-->
 
-Un aggiornamento all'app Portale aziendale Android mostra un indicatore di stato dell'accesso quando l'utente avvia o riprende l'app. L'indicatore indica una progressione attraverso nuovi stati, a partire da "Connessione in corso...", ad "Accesso in corso..." e infine "Verifica dei requisiti di sicurezza in corso..." prima di consentire all'utente di accedere all'app.
+Un aggiornamento per l'app del portale aziendale Android mostra un indicatore dello stato di accesso quando l'utente avvia o riprende l'uso dell'app. L'indicatore attraversa nuovi stati, a partire da "Connessione in corso...", quindi "Accesso in corso..." e infine "Verifica dei requisiti di protezione..." prima di consentire all'utente di accedere all'app.
 
 <html>
 <body>

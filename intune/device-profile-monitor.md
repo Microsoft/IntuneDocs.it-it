@@ -1,11 +1,11 @@
 ---
 title: Visualizzare profili di dispositivo con Microsoft Intune - Azure | Microsoft Docs
-description: Visualizzare e gestire i dettagli dei profili di configurazione dei dispositivi in Microsoft Intune e visualizzare un grafico del numero di dispositivi assegnati a un profilo e i dispositivi con profili assegnati o distribuiti.
+description: Visualizzare e gestire i dettagli dei profili di configurazione dei dispositivi in Microsoft Intune, visualizzare un grafico del numero di dispositivi assegnati a un profilo e visualizzare i dispositivi con profili assegnati o distribuiti. È anche possibile risolvere i problemi di profili con impostazioni che causano conflitto.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/23/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: dda53c7b21a743136bf1b16cc7bcf864c7b900fd
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744789"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905921"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Monitorare i profili di dispositivo in Microsoft Intune
 
@@ -33,7 +33,7 @@ Intune include alcune funzionalità nel portale di Azure, che consentono di moni
 2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
 3. Selezionare **Configurazione del dispositivo** > **Profili**.
 
-Tutti i profili esistenti sono elencati e includono dettagli indicanti, ad esempio, la piattaforma e se il profilo è assegnato a tutti i dispositivi.
+Tutti i profili esistenti sono elencati, includono dettagli come, ad esempio, la piattaforma e nell'elenco viene indicato se il profilo è assegnato a tutti i dispositivi.
 
 ## <a name="view-details-on-a-profile"></a>Visualizzare i dettagli su un profilo
 
@@ -68,6 +68,16 @@ Dopo avere creato il profilo del dispositivo, Intune fornisce i grafici. Questi 
   - **Stato del dispositivo**: sono elencati i dispositivi assegnati al profilo ed è indicato se il profilo è stato distribuito correttamente. È possibile selezionare un dispositivo specifico per ottenere altri dettagli, incluse le app installate.
   - **Stato dell'utente**: elenca i nomi degli utenti con i dispositivi interessati da questo profilo e indica se il profilo è stato distribuito correttamente. È possibile selezionare un utente specifico per ottenere altri dettagli.
   - **Stato per singola impostazione**: filtra l'output visualizzando le singole impostazioni nel profilo e indica se l'impostazione è stata applicata correttamente.
+
+## <a name="view-conflicts"></a>Visualizzare i conflitti
+
+In **Dispositivi** > **Tutti i dispositivi** è possibile visualizzare tutte le impostazioni che causano il conflitto. Quando si verifica un conflitto, vengono visualizzati anche tutti i profili di configurazione che contengono questa impostazione. Gli amministratori possono usare questa funzionalità per agevolare la risoluzione dei problemi e la correzione di eventuali discrepanze con i profili.
+
+1. In Intune selezionare **Dispositivi** > **Tutti i dispositivi** > selezionare un dispositivo esistente nell'elenco. L'utente finale può ottenere il nome del dispositivo dall'app Portale aziendale.
+2. Selezionare **Configurazione del dispositivo**. Vengono elencati tutti i criteri di configurazione che si applicano al dispositivo.
+3. Selezionare il criterio. Vengono visualizzate tutte le impostazioni del criterio che si applicano al dispositivo. Se un dispositivo ha stato **Conflitto**, selezionare la riga. Nella nuova finestra vengono visualizzati tutti i profili e i nomi di profilo che includono l'impostazione che provoca il conflitto.
+
+Ora che si conosce l'impostazione che causa il conflitto e i criteri che includono tale impostazione, dovrebbe essere più semplice risolvere il conflitto. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Assegnare profili utente e profili di dispositivo](device-profile-assign.md)  

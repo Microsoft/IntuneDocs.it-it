@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ce8791eaf72f5fda969401c19e72c6cc8b538d6
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
+ms.openlocfilehash: b514efa27a2a037f2fa0492ae519e6b8c774e369
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291462"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869543"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi
 
@@ -49,7 +49,7 @@ Le app abilitate per Intune App SDK supportano le configurazioni in coppie chiav
 
 Intune può generare token e inviarli all'app gestita. Se ad esempio la configurazione dell'app è in grado di usare un'impostazione di posta elettronica, è possibile aggiungere un indirizzo di posta elettronica dinamico usando un token. Digitare il nome previsto dall'app nel campo **Nome** e quindi digitare `\{\{mail\}\}` nel campo **Valore**.
 
-Intune supporta i tipi di token seguenti nelle impostazioni di configurazione:
+Intune supporta i tipi di token seguenti nelle impostazioni di configurazione. Altre coppie chiave/valore personalizzate non sono supportate.
 
 - \{\{userprincipalname\}\}, ad esempio **John@contoso.com**
 - \{\{mail\}\}, ad esempio **John@contoso.com**

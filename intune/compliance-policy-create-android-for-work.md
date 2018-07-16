@@ -1,6 +1,6 @@
 ---
-title: Creare criteri di conformità per Android for Work in Microsoft Intune - Azure | Microsoft Docs
-description: Creare o configurare i criteri di conformità per i dispositivi Android for Work in Microsoft Intune. Scegliere di consentire i dispositivi jailbroken, impostare il livello di minaccia accettabile, verificare la presenza di Google Play, immettere la versione minima e massima del sistema operativo, scegliere i requisiti delle password e consentire il sideload delle applicazioni.
+title: Creare criteri di conformità del profilo di lavoro Android in Microsoft Intune - Azure | Microsoft Docs
+description: Creare o configurare criteri di conformità Microsoft Intune per dispositivi del profilo di lavoro Android. Scegliere di consentire i dispositivi jailbroken, impostare il livello di minaccia accettabile, verificare la presenza di Google Play, immettere la versione minima e massima del sistema operativo, scegliere i requisiti delle password e consentire il sideload delle applicazioni.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,24 +14,24 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34047986"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905088"
 ---
-# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi Android for Work in Intune
+# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi del profilo di lavoro Android in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-I criteri di conformità di un dispositivo Android for Work in Intune specificano le regole e le impostazioni che questi dispositivi devono soddisfare per essere considerati conformi. Questi criteri con accesso condizionale possono essere usati per consentire o bloccare l'accesso alle risorse aziendali. È anche possibile ottenere i report di dispositivo e intraprendere azioni per la mancata conformità. I criteri di conformità dei dispositivi vengono creati per le piattaforme nel portale di Intune in Azure. Per altre informazioni sui criteri di conformità e sui requisiti, vedere [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
+I criteri di conformità di Intune per i dispositivi del profilo di lavoro Android specificano le regole e le impostazioni che questi dispositivi devono soddisfare per essere considerati conformi. Questi criteri con accesso condizionale possono essere usati per consentire o bloccare l'accesso alle risorse aziendali. È anche possibile ottenere i report di dispositivo e intraprendere azioni per la mancata conformità. I criteri di conformità dei dispositivi vengono creati per le piattaforme nel portale di Intune in Azure. Per altre informazioni sui criteri di conformità e sui requisiti, vedere [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
 
 La tabella seguente descrive il modo in cui le impostazioni di non conformità vengono gestite quando i criteri di conformità vengono usati con i criteri di accesso condizionale.
 
 --------------------------
 
-|**impostazione di criteri**| **Android for Work** |
+|**impostazione di criteri**| **Profilo di lavoro Android** |
 | --- | --- |
 | **Configurazione di PIN o password** |  In quarantena |
 | **Crittografia dispositivo** |  In quarantena |
@@ -51,7 +51,7 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 ## <a name="create-a-device-compliance-policy"></a>Creare criteri di conformità dei dispositivi
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Per **Piattaforma** selezionare **Android for Work**. Scegliere **Impostazioni Configura** e immettere le impostazioni **Integrità del dispositivo**, **Proprietà del dispositivo** e **Sicurezza del sistema**. Al termine, fare clic su **OK** e su **Crea**.
+5. Per **Piattaforma** selezionare **Android Enterprise**. Scegliere **Configura impostazioni** e immettere le impostazioni **Integrità del dispositivo**, **Proprietà del dispositivo** e **Sicurezza del sistema**. Al termine, fare clic su **OK** e su **Crea**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -77,9 +77,9 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 
 #### <a name="threat-scan-on-apps"></a>Analisi delle minacce nelle app
 
-Nei dispositivi con profili di lavoro (Android for Work) l'impostazione **Analisi delle minacce nelle app** è disponibile come impostazione dei criteri di configurazione. Gli amministratori possono abilitare l'impostazione per un dispositivo.
+Nei dispositivi dei profili di lavoro Android l'impostazione **Analisi delle minacce nelle app** è disponibile come impostazione dei criteri di configurazione. Gli amministratori possono abilitare l'impostazione per un dispositivo.
 
-Se l'organizzazione usa i profili di lavoro Android, è possibile abilitare **Analisi delle minacce nelle app** per i dispositivi registrati. Stabilire un profilo del dispositivo e richiedere l'impostazione di sicurezza del sistema. Per altre informazioni, vedere [Impostazioni delle restrizioni dei dispositivi Android for Work in Intune](device-restrictions-android-for-work.md).
+Se l'organizzazione usa i profili di lavoro Android, è possibile abilitare **Analisi delle minacce nelle app** per i dispositivi registrati. Stabilire un profilo del dispositivo e richiedere l'impostazione di sicurezza del sistema. Per altre informazioni, vedere [Impostazioni delle restrizioni dei dispositivi del profilo di lavoro Android in Intune](device-restrictions-android-for-work.md).
 
 ## <a name="device-property-settings"></a>Impostazioni delle proprietà dei dispositivi
 
@@ -106,13 +106,13 @@ Se l'organizzazione usa i profili di lavoro Android, è possibile abilitare **An
 
 ### <a name="encryption"></a>Crittografia
 
-- **Richiedi crittografia sul dispositivo mobile**: non è necessario configurare questa impostazione poiché i dispositivi Android for Work applicano la crittografia.
+- **Richiedi crittografia sul dispositivo mobile**: non è necessario configurare questa impostazione poiché i dispositivi del profilo di lavoro Android applicano la crittografia.
 
 ### <a name="device-security"></a>Sicurezza del dispositivo
 
-- **Blocca app da origini sconosciute**: non è necessario configurare questa impostazione perché i dispositivi Android for Work limitano sempre l'installazione da origini sconosciute.
+- **Blocca app da origini sconosciute**: non è necessario configurare questa impostazione perché i dispositivi del profilo di lavoro Android limitano sempre l'installazione da origini sconosciute.
 - **Integrità del runtime dell'app Portale aziendale**: consente di verificare che nell'app Portale aziendale sia stato installato l'ambiente di runtime predefinito, che l'app sia firmata correttamente, non sia in modalità debug e sia stata installata da un'origine nota.
-- **Blocca il debug USB nel dispositivo**: non è necessario configurare questa impostazione perché l'esecuzione del debug USB è già stata disabilitata nei dispositivi Android for Work.
+- **Blocca il debug USB nel dispositivo**: non è necessario configurare questa impostazione perché il debug USB è già disabilitato nei dispositivi del profilo di lavoro Android.
 - **Livello minimo di patch di protezione**: selezionare il livello di patch di sicurezza meno recente consentito per un dispositivo. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere immessa nel formato `YYYY-MM-DD`.
 
 ## <a name="assign-user-groups"></a>Assegnare gruppi di utenti

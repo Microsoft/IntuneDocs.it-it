@@ -1,7 +1,7 @@
 ---
-title: Impostazioni del profilo personalizzato di Intune per Android for Work
+title: Impostazioni del profilo personalizzato di Intune per i profili di lavoro Android
 titlesuffix: Microsoft Intune
-description: Informazioni su come creare impostazioni di profilo personalizzato di Microsoft Intune per dispositivi Android for Work.
+description: Informazioni su come creare impostazioni di profilo personalizzato di Microsoft Intune per dispositivi del profilo di lavoro Android.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,25 +15,25 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1d7d1512514465b618435b8e699c581534384d2c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 109c50acf194598017aa507a0979ad3b9298de9e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832950"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905292"
 ---
-# <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Creare impostazioni di profilo personalizzato di Intune per dispositivi Android for Work
+# <a name="create-intune-custom-profile-settings-for-android-work-profile-devices"></a>Creare impostazioni del profilo personalizzato di Intune per i dispositivi del profilo di lavoro Android
 
-Usare i criteri di configurazione personalizzati di Android for Work in Intune per assegnare le impostazioni URI OMA che possono essere usate per controllare le funzionalità in dispositivi Android for Work. Si tratta di impostazioni standard che molti produttori di dispositivi mobili usano per controllare le funzionalità del dispositivo.
+Usare i criteri di configurazione personalizzati del profilo di lavoro Android in Intune per assegnare le impostazioni URI OMA che possono essere usate per controllare le funzionalità nei dispositivi del profilo di lavoro Android. Si tratta di impostazioni standard che molti produttori di dispositivi mobili usano per controllare le funzionalità del dispositivo.
 
-Questa funzionalità consente di assegnare le impostazioni Android non configurabili con i criteri di Intune. Intune supporta attualmente un numero limitato di criteri personalizzati Android. Vedere gli esempi in questo argomento per scoprire quali criteri è possibile configurare.
+Questa funzionalità consente di assegnare le impostazioni Android non configurabili con i criteri di Intune. Intune supporta attualmente un numero limitato di criteri personalizzati Android. Vedere gli esempi in questo articolo per scoprire quali criteri è possibile configurare.
 
 ## <a name="create-a-custom-profile"></a>Creare un profilo personalizzato
 
-1. Per iniziare, usare le istruzioni illustrate in [Come configurare le impostazioni dispositivo personalizzate](custom-settings-configure.md).
+1. Per iniziare, usare le istruzioni illustrate in [Come configurare le impostazioni dispositivo personalizzate](custom-settings-configure.md). Per **Piattaforma** scegliere **Android Enterprise** e per **Tipo di profilo** scegliere **Personalizzato**.
 2. Nel pannello **Impostazioni URI OMA personalizzate** scegliere **Aggiungi** per aggiungere una nuova impostazione.
 3. Nel pannello **Aggiungi riga** configurare quanto segue:
-    - **Nome**: immettere un nome univoco per le impostazioni personalizzate di Android for work per poterle identificare nel portale di Azure.
+    - **Nome**: immettere un nome univoco per le impostazioni personalizzate del profilo di lavoro Android per poterle identificare nel portale di Azure.
     - **Descrizione**: immettere una descrizione di carattere generale sui criteri personalizzati Android e altre informazioni rilevanti per consentirne l'individuazione.
     - **URI OMA**: immettere l'URI OMA per cui si vuole specificare un'impostazione.
     - **Tipo di dati**: selezionare il tipo di dati in cui verrà specificata questa impostazione URI OMA. Scegliere tra **Stringa**, **Stringa (file XML)**, **Data e ora**, **Integer**, **Virgola mobile**, **Booleano** o **Base64 (file)**.
@@ -43,14 +43,14 @@ Questa funzionalità consente di assegnare le impostazioni Android non configura
 
 ## <a name="example"></a>Esempio
 
-In questo esempio verrà creato un profilo personalizzato che può essere usato per determinare se le azioni di copia e incolla tra app aziendali e personali sono consentite in dispositivi Android for Work gestiti.
+In questo esempio verrà creato un profilo personalizzato che può essere usato per determinare se le azioni di copia e incolla tra app aziendali e personali sono consentite nei dispositivi del profilo di lavoro Android.
 
-1. Usare la procedura di questo argomento per creare un profilo personalizzato per dispositivi Android for Work con i valori seguenti:
+1. Usare la procedura di questo articolo per creare un profilo personalizzato per i dispositivi del profilo di lavoro Android con i valori seguenti:
     - **Nome**: immettere "Blocca copia e incolla" o testo di propria scelta.
     - **Descrizione**: immettere "Blocca copia e incolla tra app aziendali e personali" o testo di propria scelta.
     - **URI OMA**: immettere **./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste**.
     - **Tipo di dati**: selezionare **Booleano** per indicare che il valore per questo URI OMA è **True** o **False**.
     - **Valore**: Selezionare **True**.
 2. Le impostazioni dovrebbero essere simili a quelle dell'immagine seguente.
-![Blocca copia e incolla per Android for Work.](./media/custom-policy-afw-copy-paste.png)
-3. A questo punto, quando si assegna tale profilo personalizzato ai dispositivi Android for Work gestiti, le azioni di copia e incolla verranno bloccate tra app incluse in profili aziendali e personali.
+![Bloccare copia e incolla per il profilo di lavoro Android.](./media/custom-policy-afw-copy-paste.png)
+3. A questo punto, quando si assegna questo profilo personalizzato ai dispositivi del profilo di lavoro Android, le azioni di copia e incolla verranno bloccate tra app incluse in profili aziendali e personali.

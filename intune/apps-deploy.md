@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc7f827f121ad93498d22f6b9b246abf15dc76e3
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 581d3c9762145a4681b421ededaaf9099e8ceb80
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34717979"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905887"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
@@ -59,7 +59,7 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
 7. Selezionare **Aggiungi gruppo** per aprire il riquadro **Aggiungi gruppo** relativo all'app.
 8. Per l'app specifica, selezionare un **tipo di assegnazione**:
    - **Disponibile per i dispositivi registrati**: gli utenti installano l'app dall'app Portale aziendale o dal relativo sito Web.
-   - **Disponibile con o senza registrazione**: assegnare questa app a gruppi di utenti i cui dispositivi non sono registrati con Intune. Il tipo **App di Android for Work** non supporta questa opzione. 
+   - **Disponibile con o senza registrazione**: assegnare questa app a gruppi di utenti i cui dispositivi non sono registrati con Intune. Le app della versione gestita di Google Play e le app line-of-business macOS non supportano questa opzione. 
    - **Obbligatoria**: l'applicazione è installata nei dispositivi nei gruppi selezionati.
    - **Disinstalla**: l'applicazione è disinstallata dai dispositivi nei gruppi selezionati.
 
@@ -97,7 +97,7 @@ In alcuni casi, la stessa app viene assegnata a più gruppi, ma con finalità di
 |Non disponibile per l'utente|Disinstallazione dal dispositivo|Uninstall|
 |Disinstallazione utente|Obbligatoria per il dispositivo|Entrambe presenti. Risoluzione gateway: obbligatoria|
 |Disinstallazione utente|Disinstallazione dal dispositivo|Entrambe presenti. Risoluzione gateway: disinstallazione|
-|Obbligatoria per il dispositivo|Disinstallazione dal dispositivo|Richiesto|
+|Obbligatoria per il dispositivo|Disinstallazione dal dispositivo|Obbligatoria|
 |Obbligatoria e disponibile per l'utente|Disponibile per l'utente|Richiesto e disponibile|
 |Obbligatoria e disponibile per l'utente|Disinstallazione utente|Richiesto e disponibile|
 |Obbligatoria e disponibile per l'utente|Non disponibile per l'utente|Richiesto e disponibile|
@@ -106,7 +106,7 @@ In alcuni casi, la stessa app viene assegnata a più gruppi, ma con finalità di
 |Obbligatoria e disponibile per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Risoluzione gateway: obbligatoria (obbligatoria e disponibile)
 |Non disponibile per l'utente|Non disponibile per il dispositivo|Non disponibile|
 |Disponibile per l'utente|Non disponibile per il dispositivo|Disponibile|
-|Obbligatoria per l'utente|Non disponibile per il dispositivo|Richiesto|
+|Obbligatoria per l'utente|Non disponibile per il dispositivo|Obbligatoria|
 |Disponibile per l'utente senza registrazione|Obbligatoria e disponibile per l'utente|Richiesto e disponibile
 |Disponibile per l'utente senza registrazione|Obbligatoria per l'utente|Richiesto
 |Disponibile per l'utente senza registrazione|Non disponibile per l'utente|Non disponibile

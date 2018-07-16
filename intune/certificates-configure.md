@@ -14,12 +14,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771806"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905207"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurare un profilo certificato per i dispositivi in Microsoft Intune
 
@@ -43,7 +43,7 @@ Ognuno di questi tipi di certificato ha prerequisiti e requisiti di infrastruttu
     - iOS 8.0 e versioni successive
     - macOS 10.11 e versioni successive
     - Android 4.0 e versioni successive
-    - Android for Work
+    - Profilo di lavoro Android
     - Windows 8.1 e versioni successive
     - Windows Phone 8.1 e versioni successive
     - Windows 10 e versioni successive
@@ -52,7 +52,7 @@ Ognuno di questi tipi di certificato ha prerequisiti e requisiti di infrastruttu
 
    - iOS 8.0 e versioni successive
    - Android 4.0 e versioni successive
-   - Android for Work
+   - Profilo di lavoro Android
    - Windows 10 (per dispositivi desktop e mobili) e versioni successive
 
    È possibile usare un profilo certificato **SCEP** solo per i dispositivi che eseguono le piattaforme seguenti:
@@ -95,7 +95,7 @@ Creare un profilo certificato attendibile prima di creare un profilo certificato
 5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma del dispositivo per questo certificato attendibile. È attualmente possibile scegliere una delle piattaforme seguenti per le impostazioni del certificato:
 
     - **Android**
-    - **Android for Work**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**

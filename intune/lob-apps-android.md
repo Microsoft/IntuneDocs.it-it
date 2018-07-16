@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22470356c921eea17e4d2b3d57f796fe51568ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: baf7ee4f1178b555a0fe311f0e3977941e1491fe
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224484"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905037"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Android a Microsoft Intune
 
@@ -29,7 +29,7 @@ ms.locfileid: "34224484"
 Un'app line-of-business (LOB) è un'app che viene aggiunta in Intune dal file di installazione di un'app. Questo tipo di app viene in genere scritto internamente. Intune installa l'app line-of-business nel dispositivo dell'utente. 
 
 > [!Note]
-> Per altre informazioni sulle app line-of-business dello store Google Play for Work, vedere [Utilizzo di un'app line-of-business dallo store Google Play for Work](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-google-play-for-work-store). 
+> Per altre informazioni sulle app line-of-business della versione gestita di Google Play Store, vedere [Uso di un'app line-of-business dalla versione gestita di Google Play Store](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store). 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Passaggio 1: Specificare il file di installazione del software
 

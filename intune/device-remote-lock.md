@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45ab6434245c0dd412b2e9d23e394f72871a459a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ae114b9aec2794556a8162604a533c24c11bafba
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829765"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905139"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Bloccare in remoto i dispositivi con Intune
 
@@ -31,12 +31,14 @@ L'azione del dispositivo **Blocco remoto** consente di bloccare il dispositivo. 
 Il **Blocco remoto** è supportato nelle piattaforme seguenti:
 
 - Android
+- Dispositivi in modalità tutto schermo di Android Enterprise
+- Dispositivi del profilo di lavoro Android Enterprise
 - iOS
 - macOS
 - Windows 10 Mobile
 - Windows Phone 8.1 e versioni successive
 
-Il **Blocco remoto** *non* è supportato in:
+La funzionalità **Blocco remoto** non è supportata in:
 - Windows 10 Desktop
 
 > [!NOTE]

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 3c8bc523f2796f8af7cb4801cdb13a60b7e2eb5d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32017958"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905734"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatizzare la posta elettronica e aggiungere azioni per i dispositivi non conformi - Intune
 
@@ -39,7 +39,7 @@ Esistono due tipi di azioni:
 - Per configurare le azioni per la mancata conformità è necessario aver creato almeno un criterio di conformità dei dispositivi. Per creare criteri di conformità dei dispositivi, vedere le piattaforme seguenti:
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [Profili di lavoro Android](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
@@ -56,8 +56,8 @@ Esistono due tipi di azioni:
 4. Selezionare **Crea la notifica** e quindi immettere le informazioni seguenti:
 
    - Name
-   - Subject
-   - Messaggio
+   - Oggetto
+   - Message
    - Intestazione del messaggio di posta elettronica: includere il logo dell'azienda
    - Piè di pagina del messaggio di posta elettronica: includere il nome dell'azienda
    - Piè di pagina del messaggio di posta elettronica: includere le informazioni sul contatto

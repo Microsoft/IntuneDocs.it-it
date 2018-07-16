@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d11de1e20f46fb6e13d6d3ef5c9f4a9ee0f98c1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223782"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906108"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
@@ -73,7 +73,7 @@ Il carico di lavoro **App per dispositivi mobili** contiene numerose informazion
 
 Le quattro sezioni successive descrivono le opzioni disponibili nel riquadro **App per dispositivi mobili**.
 
-### <a name="manage"></a>Gestire
+### <a name="manage"></a>Gestisci
 - **App**: selezionare questa opzione per aggiungere, visualizzare, assegnare e monitorare le app usate dai dipendenti. Per altre informazioni, vedere:
     - [Aggiungere app](apps-add.md).
     - [Assegnare le app](apps-deploy.md).
@@ -114,8 +114,8 @@ Per altre informazioni su questa sezione, vedere [Monitorare le app](apps-monito
 - **Personalizzazione del portale aziendale**: consente di personalizzare il portale aziendale con il marchio della società. Per altre informazioni, vedere:
     - [Configurazione del Portale aziendale](company-portal-app.md).
 - **Categorie di app**: aggiungere ed eliminare nomi di categoria di app.
-- **Android for Work**: approvare e sincronizzare le app approvate per l'organizzazione. Per altre informazioni, vedere:
-    - [App Android for Work](apps-add-android-for-work.md).
+- **Profilo di lavoro Android**: approvare e sincronizzare le app approvate per l'organizzazione. Per altre informazioni, vedere:
+    - [App del profilo di lavoro Android](apps-add-android-for-work.md).
 
 ### <a name="help-and-support"></a>Guida e supporto tecnico
 - **Guida e supporto tecnico**: consente di risolvere i problemi, richiedere supporto o visualizzare lo stato di Intune. Per altre informazioni, vedere:

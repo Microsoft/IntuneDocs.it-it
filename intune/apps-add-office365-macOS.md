@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223612"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869500"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Assegnare Office 365 a dispositivi macOS con Microsoft Intune
 
-Il tipo *App Store* consente di assegnare in modo semplice app di Office 365 ai dispositivi macOS. Tramite questo tipo di app è possibile installare Word, Excel, PowerPoint, Outlook e OneNote. Per mantenere più sicure e aggiornate le app, queste includono anche Microsoft AutoUpdate (MAU). Le app desiderate vengono visualizzate come un'unica app nell'elenco delle app nella console di Intune.
+Questo tipo di app semplifica l'assegnazione di app di Office 365 2016 ai dispositivi macOS. Tramite questo tipo di app è possibile installare Word, Excel, PowerPoint, Outlook e OneNote. Per mantenere più sicure e aggiornate le app, queste includono anche Microsoft AutoUpdate (MAU). Le app desiderate vengono visualizzate come un'unica app nell'elenco delle app nella console di Intune.
 
 
 ## <a name="before-you-start"></a>Prima di iniziare
@@ -70,7 +70,7 @@ In questo passaggio configurare le assegnazioni per la suite di app.
 2. Nel riquadro **Office 365** selezionare **Assegnazioni**.
 3. Per aggiungere un gruppo che userà il gruppo di app, selezionare **Aggiungi gruppo**.  
     Verrà visualizzato il riquadro **Aggiungi gruppo**.
-4. Impostare **Tipo di assegnazione** su **Obbligatoria**.
+4. Impostare **Tipo di assegnazione** su **Obbligatoria** o **Disponibile**.
 5. Assegnare la suite ai gruppi selezionati. Per altre informazioni, vedere [Assegnare app ai gruppi con Microsoft Intune](apps-deploy.md).
 
     >[!Note]

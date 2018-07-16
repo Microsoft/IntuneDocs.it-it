@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b71c004a165bd6d38cd1907eadc05ac20f27bd1a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 15710f6115bb23dfe9ba899dfa01b38f315d00f0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834211"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905309"
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Come configurare le impostazioni di posta elettronica in Microsoft Intune
 
@@ -31,7 +31,7 @@ Il client di posta elettronica predefinito è supportato per la maggior parte de
 È possibile usare i profili di posta elettronica per configurare il client di posta elettronica nativo nei tipi di dispositivi seguenti:
 
 - Android Samsung Knox Standard 4.0 e versioni successive
-- Android for Work
+- Dispositivi del profilo di lavoro Android
 - iOS 8.0 e versioni successive
 - Windows Phone 8.1 e versioni successive
 - Windows 10 (Desktop) e Windows 10 Mobile
@@ -48,7 +48,7 @@ Usare le informazioni in questo articolo per apprendere le nozioni di base sulla
 4. Nel riquadro **Crea profilo** immettere un **nome** e una **descrizione** per il profilo di posta elettronica.
 5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma del dispositivo a cui si desiderano applicare le impostazioni di posta elettronica. Attualmente, è possibile scegliere una tra le piattaforme seguenti per le impostazioni del dispositivo di posta elettronica:
     - **Android** (solo Samsung Android Knox Standard)
-    - **Android for Work**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -56,7 +56,7 @@ Usare le informazioni in questo articolo per apprendere le nozioni di base sulla
     - **Windows 10 e versioni successive**
 6. Dall'elenco a discesa dei tipi di **profilo** scegliere **Posta elettronica**.
 7. Le impostazioni configurabili variano in base alla piattaforma scelta. Passare a uno degli argomenti seguenti per il dettaglio delle impostazioni di ogni piattaforma:
-    - [Impostazioni Android for Work e Samsung Knox Standard](email-settings-android.md)
+    - [Impostazioni del profilo di lavoro Android e di Samsung Knox Standard](email-settings-android.md)
     - [Impostazioni iOS](email-settings-ios.md)
     - [Impostazioni Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Impostazioni Windows 10](email-settings-windows-10.md)
@@ -89,7 +89,7 @@ Se l'utente ha già configurato un account di posta elettronica, il risultato de
 - **Windows:** un profilo di posta elettronica esistente duplicato viene individuato in base al nome host e all'indirizzo di posta elettronica. Intune sovrascrive il profilo di posta elettronica esistente creato dall'utente.
 - **Android Samsung Knox Standard**: un profilo di posta elettronica esistente duplicato viene individuato sulla base dell'indirizzo di posta elettronica e viene sovrascritto con il profilo di Intune.
 Poiché Android non usa il nome host per identificare il profilo, si consiglia di non creare diversi profili di posta elettronica da usare con lo stesso indirizzo di posta elettronica su host diversi perché tali profili si sovrascrivono a vicenda.
-- **Android for Work** Intune offre due profili di posta elettronica Android for Work, uno per Gmail e uno per Nine Work. Queste app sono disponibili in Google Play Store e vengono installate nel profilo di lavoro del dispositivo, quindi possono subentrare profili duplicati. Entrambe le app supportano le connessioni a Exchange. Per abilitare la connettività della posta elettronica, distribuire una di queste app nei dispositivi dell'utente. In seguito creare e distribuire il profilo di posta elettronica corrispondente. Le app di posta elettronica, ad esempio Nine Work, potrebbero non essere gratuite. Rivedere i dettagli relativi alla licenza dell'app o contattare l'azienda produttrice per richiedere informazioni.
+- **Profili di lavoro Android** Intune offre due profili di posta elettronica del profilo di lavoro Android, uno per Gmail e uno per Nine Work. Queste app sono disponibili in Google Play Store e vengono installate nel profilo di lavoro del dispositivo, quindi possono subentrare profili duplicati. Entrambe le app supportano le connessioni a Exchange. Per abilitare la connettività della posta elettronica, distribuire una di queste app nei dispositivi dell'utente. In seguito creare e distribuire il profilo di posta elettronica corrispondente. Le app di posta elettronica, ad esempio Nine Work, potrebbero non essere gratuite. Rivedere i dettagli della licenza dell'app o contattare la società produttrice per chiedere chiarimenti.
 
 ### <a name="update-an-email-profile"></a>Aggiornare un profilo di posta elettronica
 

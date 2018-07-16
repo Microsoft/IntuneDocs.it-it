@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09a4d528a95d682bf12e6610480b1aa1bcbdb83
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6b68d7eda57d50c3a1cb55979590e8b07d9daf50
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829326"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904949"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Riavviare i dispositivi in remoto con Intune
 
@@ -31,12 +31,13 @@ L'azione del dispositivo **Riavvia** causa il riavvio del dispositivo scelto. Il
 
 - Windows: funzionalità supportata in Windows 8.1 e versioni successive
 - Windows Phone: funzionalità supportata in Windows Phone 8.1 e versioni successive
+- Dispositivi Android in modalità tutto schermo: funzionalità supportata
 - iOS: funzionalità supportata
 
     > [!Note]  
     > Per eseguire questo comando sono necessari un dispositivo supervisionato e il diritto di accesso **Device Lock** (Blocco dispositivo). Il dispositivo viene riavviato immediatamente. I dispositivi iOS bloccati con passcode non vengono di nuovo aggiunti a una rete Wi-Fi dopo il riavvio. Dopo il riavvio il dispositivo potrebbe non essere in grado di comunicare con il server.
 - macOS: funzionalità non supportata
-- Android: funzionalità non supportata
+- Dispositivi Android e del profilo di lavoro Android: funzionalità non supportata
 
 ## <a name="restart-a-device"></a>Riavviare un dispositivo
 

@@ -1,27 +1,20 @@
----
-title: Vantaggi di Intune App SDK
-titlesuffix: Microsoft Intune
-description: Intune App SDK è disponibile per le piattaforme iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 05/15/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-ms.reviewer: aanavath
-ms.suite: ems
+--
+# <a name="required-metadata"></a>metadati obbligatori
+
+titolo: Vantaggi di Intune App SDK suffissotitolo: Descrizione di Microsoft Intune: Intune App SDK è disponibile per le piattaforme iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune.
+keywords: author: Erikre ms.author: erikre manager: dougeby ms.date: 05/15/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
+
+# <a name="optional-metadata"></a>metadati facoltativi
+
+#<a name="robots"></a>ROBOT:
+#<a name="audience"></a>audience:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: aanavath ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-classic
-ms.openlocfilehash: 33e1cb6953891fa6d62841d10bc8011768938ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223578"
+
 ---
+
 # <a name="intune-app-sdk-overview"></a>Panoramica di Intune App SDK
 Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di protezione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. La maggior parte delle funzionalità dell'SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che ne richiedono la partecipazione.
 
@@ -70,3 +63,8 @@ Questa funzionalità per il supporto di più identità contribuisce a risolvere 
 Molti utenti con dispositivi personali vogliono accedere ai dati aziendali senza registrare il dispositivo personale in un provider di gestione di dispositivi mobili (MDM). Dato che la registrazione in una soluzione MDM richiede il controllo globale del dispositivo, gli utenti sono spesso riluttanti a fornire tale controllo all'azienda per i propri dispositivi personali.
 
 La protezione delle app senza la registrazione del dispositivo consente al servizio Microsoft Intune di distribuire i criteri di protezione delle app a un'app in modo diretto, senza basarsi su un canale di gestione dei dispositivi.
+
+### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Connessioni VPN dell'applicazione su richiesta con Citrix mVPN 
+È possibile gestire i dispositivi e le app usando in combinazione Citrix XenMobile MDX e Microsoft Intune. Grazie a questa combinazione è possibile gestire le app con i criteri di protezione delle app di Intune usando allo stesso tempo la tecnologia mVPN di Citrix. L'integrazione con Citrix è disponibile per Intune App SDK per iOS e Android e con lo strumento di wrapping delle app di Intune per iOS e Android (con il flag -citrix).
+ 
+Per altre informazioni su Citrix MDX, vedere [About the MDX Toolkit](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html) (Informazioni sul toolkit MDX), [Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) (Wrapper di app Citrix MDX per iOS) e [Citrix MDX app wrapper for Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html) (Wrapper di app Citrix MDX per Android).

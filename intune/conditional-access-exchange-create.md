@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744772"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905530"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Creare criteri di accesso condizionale per Exchange locale ed Exchange Online dedicato legacy
 
@@ -54,7 +54,7 @@ Prima di configurare l'accesso condizionale, verificare quanto segue:
 
 - Essere **conforme** ai criteri di conformità dei dispositivi distribuiti a quel dispositivo.
 
-- Se il dispositivo non soddisfa le impostazioni dei criteri di accesso condizionale, all'accesso l'utente visualizzerà uno dei messaggi seguenti:
+- Se il dispositivo non soddisfa le impostazioni dei criteri di accesso condizionale, all'accesso verrà visualizzato uno dei messaggi seguenti:
     - Se il dispositivo non è registrato con Intune oppure non è registrato in Azure Active Directory, viene visualizzato un messaggio contenente istruzioni su come installare l'app Portale aziendale, eseguire la registrazione e attivare la posta elettronica. Questo processo associa anche l'ID Exchange ActiveSync del dispositivo con il record del dispositivo in Azure Active Directory.
     - Se il dispositivo non è conforme, viene visualizzato un messaggio che indirizza l'utente al sito Web del portale aziendale di Intune o all'app Portale aziendale dove sono disponibili informazioni sul problema e su come risolverlo.
 
@@ -63,7 +63,7 @@ Prima di configurare l'accesso condizionale, verificare quanto segue:
 - Windows Phone 8.1 e versioni successive
 - App di posta elettronica nativa in iOS
 - Client di posta EAS, ad esempio Gmail in Android 4 o versione successiva.
-- Client di posta EAS **Dispositivi Android for Work:** nei dispositivi Android for Work sono supportate solo le app **Gmail** e **Nine Work** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni in Android for Work, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work. È anche necessario distribuire tali applicazioni come installazioni obbligatorie.
+- Client di posta EAS - **Dispositivi del profilo di lavoro Android:** nei dispositivi del profilo di lavoro Android sono supportate solo le app **Gmail** e **Nine Work** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni nei profili di lavoro Android, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work. È anche necessario distribuire tali applicazioni come installazioni obbligatorie.
 
 > [!NOTE]
 > L'app Microsoft Outlook per Android e iOS non è supportata. 
@@ -75,9 +75,9 @@ L'applicazione **Mail** nativa in Windows 8.1 e versioni successive (se registra
 
 ## <a name="configure-exchange-on-premises-access"></a>Configurare l'accesso locale a Exchange
 
-1. Andare nel [portale di Azure](https://portal.azure.com/) e accedere con le credenziali di Intune.
+1. Passare al [portale di Azure](https://portal.azure.com/) e accedere con le credenziali di Intune.
 
-1. Dopo l'accesso viene visualizzato il **dashboard di Azure**.
+1. Dopo aver completato l'accesso, viene visualizzato il **dashboard di Azure**.
 
 1. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 

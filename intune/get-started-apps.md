@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d99812c57596e10d0cdfa2c0f4504f8a6ac583c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223799"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869339"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Introduzione all'aggiunta di app in Microsoft Intune
 
@@ -31,6 +31,9 @@ Intune consente di aggiungere e assegnare ai dispositivi aziendali i tipi di app
 - **App scritte internamente (line-of-business)**: programmi in cui si carica un file scaricato nei dispositivi degli utenti.
 - **App predefinite**: per l'assegnazione di app gestite dedicate, ad esempio le app di Office 365, ai dispositivi iOS e Android.
 - **App sul Web**: Intune crea un collegamento all'app Web nella schermata iniziale del dispositivo.
+
+> [!NOTE]
+> La propagazione a tutti i dispositivi inclusi nel gruppo dei nuovi criteri applicati a un gruppo di dispositivi dinamico può richiedere fino a otto ore.
 
 ## <a name="how-do-i-assign-a-public-store-app"></a>Come si assegna un'app di uno store pubblico?
 

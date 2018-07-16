@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6753e0232548d862b46a273f1be0105ad7f16d63
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 7f52c43f8918589c1b66034ad68908f4d5ddba6d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831946"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905122"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Configurare le impostazioni VPN in Microsoft Intune per i dispositivi che eseguono Android 
 
@@ -30,7 +30,7 @@ Questo articolo illustra le impostazioni di Intune che è possibile usare per co
 È possibile configurare le impostazioni VPN per le piattaforme seguenti:
 
 - [Android](#android-vpn-settings)
-- [Android for Work](#android-for-work-vpn-settings)
+- [Dispositivi del profilo di lavoro Android](#android-for-work-vpn-settings)
 
 A seconda delle impostazioni scelte, non tutti i valori seguenti sono configurabili.
 
@@ -51,7 +51,7 @@ A seconda delle impostazioni scelte, non tutti i valori seguenti sono configurab
 - **Impronta digitale** (solo Check Point Capsule VPN): specificare una stringa, ad esempio "Codice impronta digitale Contoso", che viene usata per verificare l'attendibilità del server VPN. È possibile inviare un'impronta digitale al client per indicargli di considerare attendibile qualsiasi server che presenta la stessa impronta digitale durante la connessione. Se il dispositivo non ha ancora l'impronta digitale, viene richiesto all'utente di considerare attendibile il server VPN a cui si sta connettendo e viene visualizzata l'impronta digitale (l'utente verifica manualmente l'impronta digitale e sceglie Attendibilità per connettersi).
 - **Immettere le coppie chiave-valore per gli attributi della VPN Citrix** (solo Citrix): immettere le coppie chiave-valore fornite da Citrix per configurare le proprietà della connessione VPN.
 
-## <a name="android-for-work-vpn-settings"></a>Impostazioni VPN per Android for Work
+## <a name="android-work-profile-device-vpn-settings"></a>Impostazioni VPN dei dispositivi del profilo di lavoro Android
 
 **Nome della connessione**: immettere un nome per la connessione. Questo nome viene visualizzato dagli utenti finali nel momento in cui esplorano l'elenco delle connessioni VPN disponibili nel dispositivo.
 - **Indirizzo IP o FQDN**: specificare l'indirizzo IP o il nome di dominio completo del server VPN a cui si connetteranno i dispositivi. Esempi: **192.168.1.1**, **vpn.contoso.com**.

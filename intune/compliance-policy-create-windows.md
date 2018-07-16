@@ -1,23 +1,23 @@
 ---
 title: Creare criteri di conformità per i dispositivi Windows in Microsoft Intune- Azure | Microsoft Docs
-description: Creare o configurare i criteri di conformità dei dispositivi di Microsoft Intune per dispositivi Windows Phone 8.1, Windows 8.1 e versioni successive e Windows 10 e versioni successive. Verificare la conformità del sistema operativo minimo e massimo, impostare le restrizioni e la lunghezza per la password, richiedere BitLocker, impostare il livello di minaccia accettabile e abilitare la crittografia per l'archiviazione dati, inclusi Surface Hub e Windows Holographic for Business.
+description: Creare o configurare i criteri di conformità dei dispositivi di Microsoft Intune per dispositivi Windows Phone 8.1, Windows 8.1 e versioni successive e Windows 10 e versioni successive. Verificare la conformità nel sistema operativo minimo e massimo, impostare le restrizioni e la lunghezza della password, richiedere BitLocker, verificare la presenza di soluzioni antivirus di terze parti, impostare il livello di minaccia accettabile e abilitare la crittografia per l'archiviazione dati, inclusi Surface Hub e Windows Holographic for Business.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744908"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909338"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi Windows in Intune
 
@@ -101,19 +101,21 @@ I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione de
 - **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
 - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password usate in precedenza che non è possibile usare.
 
-#### <a name="encryption"></a>Crittografia
+#### <a name="encryption"></a>Encryption
 
 - **Richiedi crittografia sui dispositivi mobili**: **richiedere** la crittografia del dispositivo per la connessione alle risorse di archiviazione dati.
 
 ## <a name="windows-10-and-later-policy-settings"></a>Impostazioni dei criteri per Windows 10 e versioni successive
 
-### <a name="device-health"></a>Device health
+### <a name="device-health"></a>Integrità del dispositivo
 
-- **Richiedi BitLocker**: quando Bitlocker è abilitato, il dispositivo può proteggere dall'accesso non autorizzato i dati archiviati nell'unità, quando il sistema viene spento o passa alla modalità di ibernazione. Crittografia unità BitLocker di Windows crittografa tutti i dati archiviati nel volume del sistema operativo Windows. BitLocker usa il TPM per proteggere il sistema operativo Windows e i dati utente Consente inoltre di garantire che un computer non venga manomesso, anche se viene perso, rubato o lasciato incustodito. Se il computer è dotato di un TPM compatibile, BitLocker usa il TPM per bloccare le chiavi di crittografia che proteggono i dati. Di conseguenza, non è possibile accedere alle chiavi finché il TPM non ha verificato lo stato del computer.
-- **Richiedi l'abilitazione dell'avvio sicuro nel dispositivo**: quando è abilitato l'avvio protetto, il sistema viene forzato a eseguire l'avvio in uno stato attendibile predefinito. Inoltre, quando è abilitato l'avvio protetto, i componenti di base usati per avviare il computer devono avere le firme di crittografia corrette considerate attendibili dall'organizzazione che ha prodotto il dispositivo. Il firmware UEFI verifica la firma prima di consentire l'avvio del computer. Se un file è stato manomesso modificandone la firma, il sistema non verrà avviato.
-- **Richiedi l'integrità del codice**: l'integrità del codice è una funzionalità che verifica l'integrità di un driver o di un file di sistema ogni volta che viene caricato in memoria. L'integrità del codice rileva se un driver o un file di sistema non firmato viene caricato nel kernel o se un file di sistema è stato modificato da software dannoso eseguito da un account utente con privilegi di amministratore.
+- **Richiedi BitLocker**: quando Bitlocker è abilitato, il dispositivo può proteggere dall'accesso non autorizzato i dati archiviati nell'unità, quando il sistema viene spento o passa alla modalità di ibernazione. Crittografia unità BitLocker di Windows crittografa tutti i dati archiviati nel volume del sistema operativo Windows. BitLocker usa il TPM per proteggere il sistema operativo Windows e i dati utente. Consente inoltre di garantire che un computer non venga manomesso, anche se viene perso, rubato o lasciato incustodito. Se il computer è dotato di un TPM compatibile, BitLocker usa il TPM per bloccare le chiavi di crittografia che proteggono i dati. Di conseguenza, non è possibile accedere alle chiavi finché il TPM non ha verificato lo stato del computer.
+- **Richiedi l'abilitazione dell'avvio sicuro nel dispositivo**: quando è abilitato l'avvio protetto, il sistema viene forzato a eseguire l'avvio in uno stato attendibile predefinito. Inoltre, i componenti di base usati per avviare il computer devono avere le firme di crittografia corrette ritenute attendibili dall'organizzazione che ha prodotto il dispositivo. Il firmware UEFI verifica la firma prima di consentire l'avvio del computer. Se uno o più file sono stati manomessi, danneggiandone la firma, il sistema non viene avviato.
+- **Richiedi l'integrità del codice**: l'integrità del codice è una funzionalità che verifica l'integrità di un driver o di un file di sistema ogni volta che viene caricato in memoria. L'integrità del codice rileva se un driver o un file di sistema non firmato viene caricato nel kernel. o se un file di sistema è stato modificato da software dannoso eseguito da un account utente con privilegi di amministratore.
 
-Per informazioni su come funziona il servizio di attestazione dell'integrità, vedere l'articolo relativo al [CSP per l'attestazione dell'integrità](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
+Per informazioni su come funziona il servizio di attestazione dell'integrità, vedere [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP di attestazione dell'integrità).
+
+Per configurare Windows Defender ATP (Advanced Threat Protection) come servizio di difesa dalle minacce, vedere [Abilitare Windows Defender ATP con l'accesso condizionale](advanced-threat-protection.md).
 
 ### <a name="device-properties"></a>Proprietà dispositivo
 
@@ -161,9 +163,14 @@ Per informazioni su come funziona il servizio di attestazione dell'integrità, v
 - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password usate in precedenza che non è possibile usare.
 - **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (Mobile e Holographic)**: imporre agli utenti di immettere la password ogni volta che il dispositivo torna attivo dopo uno stato di inattività.
 
-#### <a name="encryption"></a>Crittografia
+#### <a name="encryption"></a>Encryption
 
 - **Crittografia dell'archivio dati nel dispositivo**: scegliere **Rendi obbligatorio** per crittografare l'archivio dati nei dispositivi.
+
+#### <a name="device-security"></a>Sicurezza del dispositivo
+
+- **Antivirus**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando le soluzioni antivirus registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. Se **non configurata**, Intune non verifica la presenza di soluzioni antivirus installate nel dispositivo.
+- **Antispyware**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando le soluzioni antispyware registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. Se **non configurata**, Intune non verifica la presenza di soluzioni antispyware installate nel dispositivo.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 
