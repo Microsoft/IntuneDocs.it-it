@@ -2,8 +2,8 @@
 title: Impostazioni della modalità tutto schermo per Android in Microsoft Intune - Azure | Microsoft Docs
 description: Configurare i dispositivi in modalità tutto schermo Android come singole app o più app in modalità tutto schermo.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 7/5/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9158893b3ae2c2f70b08682a61cbba4d55b43710
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909151"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949544"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Impostazioni della modalità tutto schermo per dispositivi Android in Intune
 
@@ -32,7 +32,7 @@ Se il profilo di restrizione di un dispositivo in modalità tutto schermo è imp
 3. Nel pannello **Crea profilo** impostare i campi seguenti:
      - **Nome**
      - **Piattaforma**: Android Enterprise
-     - **Tipo di profilo**: solo Proprietario dispositivo > Limitazioni del dispositivo
+     - **Tipo di profilo**: Proprietario dispositivo > Limitazioni del dispositivo
 4. Scegliere **Impostazioni** > **Modalità tutto schermo**.
 5. Per **Modalità tutto schermo**, scegliere **Single app kiosk** (App singola in modalità tutto schermo).
 6. Scegliere **Selezionare un'app gestita** e quindi selezionare l'app Google Play gestita che si vuole impostare come unica app disponibile per i dispositivi che usano questo profilo.

@@ -13,17 +13,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08763aa527f24ff7b357603be5e3bd4da5083b45
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e6a71d48e81914808b9af037692a44e4f651bf55
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830434"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224770"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Aggiornare i dispositivi che eseguono Windows Holographic a Windows Holographic for Business
 
 
-Per gestire i dispositivi che eseguono Windows Holographic con Microsoft Intune, è necessario aggiornare i dispositivi da Windows Holographic a Windows Holographic for Business. Per eseguire l'aggiornamento, è possibile creare un profilo di aggiornamento dell'edizione. Per Microsoft HoloLens è possibile acquistare Commercial Suite per ottenere la licenza necessaria per l'aggiornamento. Per altre informazioni, vedere [Sbloccare le funzionalità di Windows Holographic for Business](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise).
+Per gestire i dispositivi che eseguono Windows Holographic con Microsoft Intune, è necessario aggiornare i dispositivi da Windows Holographic a Windows Holographic for Business. Per eseguire l'aggiornamento, è possibile creare un profilo di aggiornamento dell'edizione. Per Microsoft HoloLens è possibile acquistare Commercial Suite per ottenere la licenza necessaria per l'aggiornamento. Per altre informazioni, vedere [Sbloccare le funzionalità di Windows Holographic for Business](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise).
 
 ## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>Per configurare un profilo di configurazione del dispositivo di aggiornamento edizione
 
