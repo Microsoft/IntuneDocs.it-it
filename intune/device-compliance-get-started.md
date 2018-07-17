@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905071"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225443"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introduzione ai criteri di conformità dei dispositivi in Intune
 
@@ -88,7 +88,7 @@ Per usare i criteri di conformità dei dispositivi, devono essere soddisfatti i 
 
 Al momento della registrazione in Intune viene avviato il processo di registrazione di Azure AD durante il quale gli attributi del dispositivo vengono aggiornati in Azure AD. Un'informazione chiave è lo stato di conformità del dispositivo. Lo stato di conformità che viene usato dai criteri di accesso condizionale per bloccare o consentire l'accesso alla posta elettronica e ad altre risorse aziendali.
 
-In [processo di registrazione di AD Azure](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) vengono fornite ulteriori informazioni.
+In [processo di registrazione di AD Azure](https://docs.microsoft.com/azure/active-directory/device-management-introduction) vengono fornite ulteriori informazioni.
 
 ### <a name="assign-a-resulting-device-configuration-profile-status"></a>Assegnare uno stato del profilo di configurazione del dispositivo risultante
 

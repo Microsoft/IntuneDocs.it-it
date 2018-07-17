@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f2d06c879343a0f9701a8531c5543b961d792f
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906006"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993718"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per macOS in Microsoft Intune
 
@@ -32,8 +32,6 @@ Usare le informazioni di questo articolo per aggiungere le app line-of-business 
 >Anche se gli utenti dei dispositivi macOS possono rimuovere alcune delle app macOS predefinite, ad esempio Borsa e Mappe, non è possibile usare Intune per ridistribuire tali app. Se gli utenti finali eliminano queste app, devono accedere all'App Store e reinstallarle manualmente.
 >
 >Per caricare le app LOB per macOS in Microsoft Intune, si possono usare solo file con estensione *pkg*. La conversione di altri formati, ad esempio da *dmg* a *pkg*, non è supportata.
-
-Microsoft Intune consente la distribuzione di app line-of-business per macOS come app **obbligatorie** o **disponibili con registrazione**. Gli utenti finali possono ottenere le app distribuite come app **disponibili** tramite il Portale aziendale per macOS o il [sito Web del Portale aziendale](https://portal.manage.microsoft.com).
 
 ## <a name="step-1---pre-process-your-software-setup-file"></a>Passaggio 1: Eseguire l'analisi preliminare del file di installazione del software
 
