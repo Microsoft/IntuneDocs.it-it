@@ -663,6 +663,8 @@
           href: help-desk-operators.md
         - name: Risorse per risolvere i problemi di accesso alle risorse aziendali con Microsoft Intune
           href: troubleshoot-company-resource-access-problems.md
+        - name: Risolvere i problemi di installazione delle app
+          href: troubleshoot-app-install.md
         - name: Log di controllo per le attività di Intune
           href: monitor-audit-logs.md
         - name: Esaminare i log di protezione delle app
