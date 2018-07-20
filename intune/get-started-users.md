@@ -15,12 +15,12 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 292df171b613ada7a5f8e2cf666ba358ef26df9b
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021561"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949476"
 ---
 # <a name="get-started-managing-users"></a>Introduzione alla gestione degli utenti
 
@@ -31,9 +31,11 @@ In ogni organizzazione lavorano molte persone diverse. Per ogni persona che usa 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Dopo aver aperto il riquadro **Microsoft Intune**, selezionare **Utenti**. Nella pagina **Tutti gli utenti** selezionare **+ Nuovo utente**.
-4. Immettere i dettagli dell'utente, ad esempio **Nome** e **Nome utente**. La parte del nome utente con il nome di dominio deve corrispondere al nome di dominio predefinito iniziale "contoso.onmicrosoft.com" o a un nome di dominio verificato e non federato, ad esempio "contoso.com".
-5. In **Gruppi** scegliere il gruppo di test al quale aggiungere l'utente.
-6. Salvare la password dell'utente generata automaticamente e necessaria per l'accesso a un dispositivo di test. È necessario comunicare questa password agli utenti, che potranno sostituirla con una password normale facile da ricordare.
+4. Immettere i dettagli dell'utente, ad esempio **Nome** e **Nome utente**. La parte del nome di dominio del nome utente deve corrispondere a uno dei domini seguenti:
+    - nome di dominio predefinito iniziale "contoso.onmicrosoft.com";
+    - nome di dominio verificato non federato, ad esempio "contoso.com".
+5. In **Gruppi** scegliere [un gruppo](get-started-groups.md) al quale aggiungere l'utente.
+6. Salvare la password utente generata automaticamente, necessaria per l'accesso a un dispositivo di test. È necessario comunicare questa password agli utenti, che potranno sostituirla con una password normale facile da ricordare.
 7. Nel riquadro **Utente** selezionare **Crea**.
 
 ## <a name="assigning-licenses-to-users"></a>Assegnazione di licenze agli utenti

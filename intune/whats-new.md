@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/05/2018
+ms.date: 07/13/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: e6d3640d63f16b80588860c3c36aba1a81ffbe09
-ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
+ms.openlocfilehash: f2018b5a1ca2a6981b04951bcf8ecd8819eb47e2
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37927030"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039421"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,22 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazio
 ### Role-based access control
 
 -->   
+## <a name="week-of-july-9-2018"></a>Settimana del 9 luglio 2018
+
+### <a name="app-management"></a>Gestione delle app
+
+### <a name="block-app-access-based-on-unapproved-device-vendors-and-models-----1425689----"></a>Bloccare l'accesso dell'app in base ai fornitori e ai modelli non approvati del dispositivo <!-- 1425689 ! -->
+L'amministratore IT di Intune può applicare un elenco specifico di produttori Android e/o di modelli iOS tramite i criteri di Protezione app di Intune. L'amministratore IT può fornire un elenco delimitato da punto e virgola di produttori per i criteri Android e di modelli di dispositivo per i criteri iOS. I criteri di Protezione app di Intune sono solo per Android e iOS. Su questo elenco specifico è possibile eseguire due azioni distinte:
+- Blocco dell'accesso delle app nei dispositivi non specificati.
+- Cancellazione selettiva dei dati aziendali nei dispositivi non specificati. 
+
+L'utente non potrà accedere all'applicazione di destinazione se non vengono soddisfatti i requisiti definiti tramite i criteri. In base alle impostazioni, è possibile che l'utente venga bloccato o che i dati aziendali nell'app vengano cancellati in modo selettivo. Nei dispositivi iOS è necessario integrare Intune APP SDK tramite applicazioni specifiche (ad esempio WXP, Outlook, Managed Browser, Yammer) perché sia possibile applicare questa funzionalità con le applicazioni di destinazione. Questa integrazione avviene progressivamente e dipende dai team delle applicazioni specifiche. In Android questa funzionalità richiede il portale aziendale più recente. 
+
+Nei dispositivi degli utenti finali il client Intune esegue un'azione basata su una semplice corrispondenza delle stringhe specificate nel pannello Intune per i criteri di protezione delle applicazioni. Ciò dipende completamente dal valore segnalato dal dispositivo. Di conseguenza, è opportuno che l'amministratore IT si assicuri che il comportamento previsto sia accurato. A tale scopo, è possibile testare questa impostazione con svariati produttori di dispositivi e modelli destinati a un piccolo gruppo di utenti. In Microsoft Intune selezionare **App per dispositivi mobili** > **Criteri di protezione delle app** per visualizzare e aggiungere i criteri di protezione delle app. Per altre informazioni sui criteri di protezione delle app, vedere [Che cosa sono i criteri di protezione delle app?](app-protection-policy.md) e [Cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Intune](app-protection-policies-access-actions.md).
+
+### <a name="access-to-macos-company-portal-pre-release-build----1734766---"></a>Accesso alla build in versione non definitiva del portale aziendale macOS<!-- 1734766 -->
+Con Microsoft AutoUpdate è possibile iscriversi e ricevere le build anticipatamente partecipando al programma Insider. L'iscrizione consente di usare il portale aziendale aggiornato prima che sia disponibile per gli utenti finali. Per altre informazioni, vedere il [blog su Microsoft Intune](https://blogs.technet.microsoft.com/intunesupport/2018/07/13/use-microsoft-autoupdate-for-early-access-to-the-macos-company-portal-app/).
+
 ## <a name="week-of-july-2-2018"></a>Settimana del 2 luglio 2018
 
 ### <a name="app-management"></a>Gestione delle app
@@ -69,9 +85,6 @@ L'esempio seguente di prima e dopo illustra i miglioramenti per i messaggi che v
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>Revocare la licenza di un'app iOS VPP <!-- 1863797 -->
 L'amministratore può recuperare la licenza di un'app iOS VPP assegnata a un utente o dispositivo. La disinstallazione di un'app iOS VPP consente inoltre di recuperare la licenza dell'app. Prima di disinstallare l'app, è necessario rimuovere l'utente o il dispositivo dal gruppo a cui l'app è destinata. Rimuovere l'utente o il dispositivo dal gruppo per evitare la reinstallazione dell'app. Dopo aver completato questa procedura, è possibile scegliere di assegnare la licenza dell'app a un altro utente o dispositivo. Per altre informazioni sulle licenze delle app iOS VPP, vedere [Procedura per la gestione delle app iOS acquistate tramite Volume Purchase Program con Microsoft Intune](vpp-apps-ios.md).
 
-#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>Supporto di app line-of-business (LOB) per macOS <!-- 1895847 -->
-Microsoft Intune consente la distribuzione di app LOB per macOS come app **obbligatorie** o **disponibili con registrazione**. Gli utenti finali possono ottenere le app distribuite come app **disponibili** tramite il Portale aziendale per macOS o il [sito Web del Portale aziendale](https://portal.manage.microsoft.com).
-
 ### <a name="device-configuration"></a>Configurazione del dispositivo
 
 #### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eenotready---"></a>Selezionare le categorie di dispositivi usando le impostazioni Accedi all'azienda o all'istituto di istruzione <!-- 1058963 eenotready --> 
@@ -92,7 +105,7 @@ Altre informazioni sulla [gestione dei profili di configurazione ](device-profil
 #### <a name="new-status-for-devices-in-device-compliance----2308882---"></a>Nuovo stato per i dispositivi nella conformità del dispositivo <!-- 2308882 -->
 In **Conformità del dispositivo** > **Criteri** > selezionare un criterio > **Panoramica**. Verranno aggiunti i nuovi stati seguenti:
 - riuscito
-- error
+- Errore
 - conflitto
 - in sospeso
 - non applicabile Viene visualizzata anche un'immagine che illustra il conteggio dei dispositivi di un'altra piattaforma. Ad esempio, se si sta consultando un profilo iOS, il nuovo riquadro indica il numero di dispositivi non iOS assegnati a questo profilo. Vedere [Criteri di conformità dei dispositivi](compliance-policy-monitor.md#view-status-of-device-policies).
@@ -100,7 +113,7 @@ In **Conformità del dispositivo** > **Criteri** > selezionare un criterio > **P
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>La conformità del dispositivo supporta soluzioni antivirus di terze parti <!-- 2325484 -->
 Quando si creano criteri di conformità del dispositivo in **Conformità del dispositivo** > **Criteri** > **Crea criterio** > **Piattaforma: Windows 10 e versioni successive** > **Impostazioni** > **Sicurezza del sistema** sono disponibili nuove opzioni in **[Sicurezza del dispositivo](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)**: 
 - **Antivirus**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando soluzioni antivirus registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. 
-- **Antispyware**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando soluzioni antispyware registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. 
+- **Antispyware**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando le soluzioni antispyware registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. 
 
 Si applica a: Windows 10 e versioni successive 
 
@@ -402,13 +415,13 @@ Sono state pubblicate indicazioni per consentire agli amministratori IT di testa
 
 #### <a name="improved-device-tiles-in-the-windows-10-company-portal---2213364---"></a>Sono stati migliorati i riquadri del dispositivo nel portale aziendale di Windows 10 <!--2213364 -->
 
-I riquadri sono stati aggiornati per risultare più accessibili agli utenti con ipovisione e offrire prestazioni migliori per gli strumenti per la lettura su schermo.
+I riquadri sono stati aggiornati per essere più accessibili agli utenti con problemi di ipovisione e per offrire prestazioni migliori per gli strumenti di lettura dello schermo.
 
 #### <a name="send-diagnostic-reports-in-company-portal-app-for-macos----2216677---"></a>Inviare report di diagnostica nell'app Portale aziendale per macOS <!-- 2216677 -->
-L'app Portale aziendale per i dispositivi macOS è stata aggiornata per migliorare il modo in cui gli utenti segnalano gli errori relativi a Intune. Dall'app Portale aziendale gli utenti possono:
+L'app Portale aziendale per i dispositivi macOS è stata aggiornata per migliorare la modalità di segnalazione degli errori correlati a Intune. Dall'app Portale aziendale gli utenti possono:
 
 - Caricare i report di diagnostica direttamente al team di sviluppo Microsoft.
-- Inviare tramite posta elettronica l'ID dell'evento imprevisto al team di supporto IT dell'azienda.
+- Inviare tramite posta elettronica l'ID evento imprevisto al team di supporto IT della società.
 
 Per altre informazioni, vedere [Inviare gli errori per macOS](/intune-user-help/send-errors-macos).
 
@@ -451,7 +464,7 @@ Nel portale di Azure all'interno del servizio Microsoft Intune verrà eseguito u
 Questa modifica avrà effetto sia sui clienti di Intune autonomi che sui clienti ibridi (Intune con Configuration Manager). Questa integrazione consentirà di semplificare l'amministrazione della gestione del cloud.
 
 **Operazioni di preparazione alla modifica**
-Contrassegnare **Intune** come preferito invece del pannello del servizio **Protezione app di Intune** e assicurarsi di avere familiarità con il flusso di lavoro dei criteri di protezione delle app nel pannello del servizio **Dispositivi mobili** in Intune. Per un breve periodo di tempo verrà effettuato il reindirizzamento e quindi il pannello **Protezione app** verrà rimosso. Tenere presente che tutti i criteri di protezione delle app sono già in Intune ed è possibile modificare qualsiasi criterio di accesso condizionale. Per altre informazioni sulla modifica dei criteri di accesso condizionale, vedere [Accesso condizionale in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). Per altre informazioni, vedere [Che cosa sono i criteri di protezione delle app?](app-protection-policy.md) 
+Contrassegnare come preferito **Intune** anziché il pannello del servizio **Protezione app di Intune** e assicurarsi di avere dimestichezza con il flusso di lavoro Criterio di protezione dell'app nel pannello **App per dispositivi mobili** all'interno di Intune. Il reindirizzamento durerà per un breve periodo di tempo e quindi il pannello **Protezione app** verrà rimosso. Tenere presente che tutti i criteri di protezione delle app sono già presenti in Intune ed è possibile modificare tutti i criteri di accesso condizionale. Per altre informazioni sulla modifica dei criteri di accesso condizionale, vedere [Accesso condizionale in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). Per altre informazioni, vedere [Che cosa sono i criteri di protezione delle app?](app-protection-policy.md) 
 
 
 ## <a name="week-of-april-2-2018"></a>Settimana del 2 aprile 2018
@@ -459,12 +472,12 @@ Contrassegnare **Intune** come preferito invece del pannello del servizio **Prot
 ### <a name="intune-apps"></a>App di Intune
 
 #### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866---"></a>Aggiornamento dell'esperienza utente per l'app Portale aziendale per iOS <!--1412866 -->
-È stato rilasciato un aggiornamento dell'esperienza utente principale per l'app Portale aziendale per iOS. L'aggiornamento include una riprogettazione visuale completa con un aspetto modernizzato. La funzionalità dell'app è stata mantenuta, ma migliorandone il livello di usabilità e accessibilità.  
+È stato rilasciato un importante aggiornamento dell'esperienza utente per l'app Portale aziendale per iOS. L'aggiornamento prevede una riprogettazione visiva completa che include un aspetto visivo e una modalità di interazione più moderni. È stata mantenuta la funzionalità dell'app aumentando la facilità di utilizzo e l'accessibilità.  
 
-L'aggiornamento include anche:
+Saranno inoltre disponibili:
 - Supporto per iPhone X.
-- Tempi di risposta più rapidi per l'avvio e il caricamento dell'app, per consentire agli utenti di risparmiare tempo.
-- Indicatori di stato aggiuntivi per offrire agli utenti informazioni sullo stato più aggiornate.
+- Avvio delle app e caricamento più veloci per consentire agli utenti di risparmiare tempo.
+- Indicatori di stato aggiuntivi per offrire agli utenti le informazioni sullo stato più aggiornate.
 - Miglioramenti della modalità di caricamento dei log. Se si verificano problemi, è più semplice segnalarlo.  
 
 Per visualizzare l'aspetto aggiornato, vedere [Novità dell'interfaccia utente dell'app](whats-new-app-ui.md).
@@ -656,7 +669,7 @@ Gli utenti di Edge e Chrome con più di 30.000 dispositivi possono esportare i p
 
 ### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview----710595---"></a>I siti Web di Azure Active Directory possono richiedere l'app Intune Managed Browser e supportano Single Sign-On per Managed Browser (anteprima pubblica) <!-- 710595 -->
 
-Tramite Azure Active Directory (Azure AD) è ora possibile limitare l'accesso ai siti Web nei dispositivi mobili all'app Intune Managed Browser. In Managed Browser i dati dei siti Web rimangono protetti e separati dai dati personali dell'utente finale. Managed Browser supporta inoltre le funzionalità Single Sign-On per i siti protetti da Azure AD. L'accesso a Managed Browser o l'uso di Managed Browser in un dispositivo con un'altra app gestita da Intune consente a Managed Browser di accedere ai siti aziendali protetti da Azure AD senza che l'utente debba immettere le proprie credenziali. Questa funzionalità si applica a siti quali Outlook Web Access (OWA) e SharePoint Online, nonché ad altri siti aziendali, ad esempio le risorse Intranet a cui si accede tramite il proxy app di Azure. Per altre informazioni, vedere [Controlli di accesso nell'accesso condizionale di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-controls).
+Tramite Azure Active Directory (Azure AD) è ora possibile limitare l'accesso ai siti Web nei dispositivi mobili all'app Intune Managed Browser. In Managed Browser i dati dei siti Web rimangono protetti e separati dai dati personali dell'utente finale. Inoltre, Managed Browser supporta le funzionalità Single Sign-On per i siti protetti da Azure AD. L'accesso a Managed Browser o l'uso di Managed Browser in un dispositivo con un'altra app gestita da Intune consente a Managed Browser di accedere ai siti aziendali protetti da Azure AD senza richiedere l'immissione delle credenziali da parte dell'utente. Questa funzionalità si applica a siti come Outlook Web Access (OWA) e SharePoint Online e ad altri siti aziendali come le risorse Intranet a cui si ha accesso tramite il proxy app di Azure. Per altre informazioni, vedere [Controlli di accesso nell'accesso condizionale di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-controls).
 
 #### <a name="company-portal-app-for-android-visual-updates---976944---"></a>Aggiornamenti di elementi visivi nell'app Portale aziendale per Android <!--976944 -->
 
@@ -993,7 +1006,7 @@ L'elenco seguente include le impostazioni configurabili dagli amministratori:
 ### <a name="intune-apps"></a>App di Intune
 
 
-### <a name="role-based-access-control"></a>Controllo dell'accesso basato sui ruoli
+### <a name="role-based-access-control"></a>Controllo di accesso in base ai ruoli
 
 #### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1667026---"></a>Una nuova raccolta di entità denominata Current User è limitata ai dati degli utenti attualmente attivi <!-- 1667026 -->
 
@@ -1086,7 +1099,7 @@ Sarà possibile abilitare le impostazioni di sicurezza sui dispositivi Windows 1
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968--"></a>Nuova esperienza utente per il sito Web del portale aziendale <!--2000968-->
 
-In aprile verrà introdotta una nuova esperienza per il sito Web del portale aziendale, con aggiornamenti dell'interfaccia utente, flussi di lavoro semplificati e miglioramenti all'accessibilità. La nuova esperienza includerà miglioramenti proposti dai clienti, come la condivisione delle app e prestazioni migliorate in generale per offrire un'esperienza più semplice.
+A partire da agosto verrà introdotta una nuova esperienza per il sito Web del portale aziendale, con aggiornamenti dell'interfaccia utente, flussi di lavoro semplificati e miglioramenti all'accessibilità. La nuova esperienza includerà miglioramenti proposti dai clienti, come la condivisione delle app e prestazioni migliorate in generale per offrire un'esperienza più semplice.
 Sono state aggiunte alcune nuove funzionalità, in base ai suggerimenti dei clienti, ad esempio, che miglioreranno significativamente l'usabilità e le funzionalità esistenti:
 
 * Miglioramenti dell'interfaccia utente in tutto il sito Web

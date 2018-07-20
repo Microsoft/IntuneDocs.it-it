@@ -15,12 +15,12 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b860b68bbf8940a89533159885f471f5337ca0e8
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: 34174568570700e0b15d5bce1bb0bf239251b577
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216140"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039155"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Come creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune
 
@@ -38,6 +38,9 @@ Nei criteri di protezione dell'applicazione di Intune, se si imposta **Consenti 
 
 ## <a name="ios-data-transfer-exceptions"></a>Eccezioni per il trasferimento dei dati iOS
 Per i criteri destinati a iOS, è possibile configurare eccezioni per il trasferimento dei dati tramite il protocollo URL. Per aggiungere un'eccezione, vedere la documentazione offerta dallo sviluppatore dell'app per trovare informazioni sui protocolli URL supportati. Per altre informazioni sulle eccezioni per il trasferimento dei dati iOS, vedere [Impostazioni dei criteri di protezione delle app per iOS - Esenzioni per il trasferimento dei dati](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+
+> [!NOTE]
+> Microsoft non offre un metodo che consenta di trovare manualmente il protocollo dell'URL per la creazione di eccezioni delle app per le applicazioni di terze parti. 
 
 ## <a name="android-data-transfer-exceptions"></a>Eccezioni per il trasferimento dei dati Android
 Per i criteri destinati ad Android, è possibile configurare eccezioni per il trasferimento dei dati tramite il nome del pacchetto dell'app. È possibile accedere alla pagina di **Google Play** Store dell'app a cui si vuole aggiungere un'eccezione per trovare il nome del pacchetto dell'app. Per altre informazioni sulle eccezioni per il trasferimento dei dati Android, vedere [Impostazioni dei criteri di protezione delle app per Android - Esenzioni per il trasferimento dei dati](app-protection-policy-settings-android.md#data-transfer-exemptions).

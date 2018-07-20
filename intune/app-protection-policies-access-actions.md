@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2cfd426a0ae7165a7aae60a90d104852fd834db6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909117"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993735"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Intune
 
@@ -36,7 +36,7 @@ Usando queste impostazioni, è possibile scegliere in modo esplicito di cancella
 3. Nel riquadro **Intune** selezionare **App per dispositivi mobili** > **Criteri di protezione delle app**.
 4. Fare clic su **Aggiungi criteri**. È anche possibile modificare criteri esistenti. 
 5. Fare clic su **Configura le impostazioni obbligatorie** per visualizzare l'elenco di impostazioni configurabili per il criterio. 
-6. Scorrendo verso il basso nel riquadro **Impostazioni** verrà visualizzata una sezione denominata **Azioni di accesso** con una tabella modificabile.
+6. Se si scorre verso il basso il riquadro Impostazioni, verrà visualizzata la sezione **Azioni di accesso** con una tabella modificabile.
 
     ![Screenshot delle azioni di accesso per la protezione delle app di Intune](./media/apps-selective-wipe-access-actions01.png)
 
@@ -50,6 +50,7 @@ Usando queste impostazioni, è possibile scegliere in modo esplicito di cancella
 
 La tabella delle impostazioni dei criteri di protezione delle app contiene le colonne **Impostazione**, **Valore** e **Azione**.
 
+### <a name="ios-policy-settings"></a>Impostazioni dei criteri di iOS
 Per iOS è possibile configurare azioni per le impostazioni seguenti usando l'elenco a discesa della colonna **Impostazione**:
 -  Numero massimo di tentativi di PIN
 -  Periodo di prova offline
@@ -58,6 +59,19 @@ Per iOS è possibile configurare azioni per le impostazioni seguenti usando l'el
 -  Versione minima dell'app
 -  Versione minima dell'SDK
 -  Modello/i dispositivo
+
+Per usare l'impostazione **Modello/i dispositivo**, inserire un elenco di identificatori di modello iOS separati da punto e virgola. È possibile trovare un identificatore di modello iOS nella colonna Device Type (Tipo di dispositivo) nella [documentazione di supporto di HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
+Input di esempio: *iPhone5,2; iPhone5,3*
+
+Nei dispositivi degli utenti finali il client Intune eseguirà un'azione in base a una semplice corrispondenza di stringhe relative a modelli di dispositivo specificate in Intune per i criteri di protezione delle applicazioni. La corrispondenza dipende completamente da quanto segnalato dal dispositivo. È consigliabile che l'amministratore IT si assicuri che si verifichi il comportamento previsto, testando questa impostazione con produttori e modelli di dispositivo diversi e usando come destinazione un piccolo gruppo di utenti. Il valore predefinito è **Non configurato**.<br>
+Impostare una delle azioni seguenti: 
+- Consenti specificati (blocca non specificati)
+- Consenti specificati (cancella non specificati)
+
+**Cosa accade se l'amministratore IT inserisce un elenco diverso di identificatori di modello iOS tra i criteri destinati alla stessa app per lo stesso utente di Intune?**<br>
+Quando si verificano conflitti tra due criteri di protezione delle app per i valori configurati, Intune applica in genere l'approccio più restrittivo. Di conseguenza, il criterio risultante inviato all'app di destinazione in corso di apertura da parte dell'utente di Intune corrisponde all'intersezione degli identificatori di modello iOS elencati in *Criterio A* e in *Criterio B* specifica per la combinazione app/utente. Si supponga, ad esempio, che *Criterio A* specifichi "iPhone5,2; iPhone5,3", e *Criterio B* specifichi "iPhone5,3". Il criterio risultante per l'utente di Intune di destinazione di *Criterio A* e di *Criterio B* sarà "iPhone5,3". 
+
+### <a name="android-policy-settings"></a>Impostazione dei criteri di Android
 
 Per Android è possibile configurare azioni per le impostazioni seguenti usando l'elenco a discesa della colonna **Impostazione**:
 -  Numero massimo di tentativi di PIN
@@ -68,6 +82,19 @@ Per Android è possibile configurare azioni per le impostazioni seguenti usando 
 -  Versione minima della patch
 -  Produttore/i dispositivo
 
+Per usare l'impostazione **Produttore/i dispositivo**, inserire un elenco di identificatori di modello separati da punto e virgola. È possibile trovare il produttore di un dispositivo Android tramite le impostazioni del dispositivo.<br>
+Input di esempio: *Produttore A; Produttore B; Google* 
+
+Nei dispositivi degli utenti finali il client Intune eseguirà un'azione in base a una semplice corrispondenza di stringhe relative a modelli di dispositivo specificate in Intune per i criteri di protezione delle applicazioni. La corrispondenza dipende completamente da quanto segnalato dal dispositivo. È consigliabile che l'amministratore IT si assicuri che si verifichi il comportamento previsto, testando questa impostazione con produttori e modelli di dispositivo diversi e usando come destinazione un piccolo gruppo di utenti. Il valore predefinito è **Non configurato**.<br>
+Impostare una delle azioni seguenti: 
+- Consenti specificati (blocca non specificati)
+- Consenti specificati (cancella non specificati)
+
+**Cosa accade se l'amministratore IT inserisce un elenco diverso di produttori Android tra i criteri destinati alla stessa app per lo stesso utente di Intune?**<br>
+Quando si verificano conflitti tra due criteri di protezione delle app per i valori configurati, Intune applica in genere l'approccio più restrittivo. Di conseguenza, il criterio risultante inviato all'app di destinazione in corso di apertura da parte dell'utente di Intune corrisponde all'intersezione dei produttori Android elencati in *Criterio A* e in *Criterio B* specifica per la combinazione app/utente. Si supponga, ad esempio, che *Criterio A* specifichi "Google, Samsung", e *Criterio B* specifichi "Google". Il criterio risultante per l'utente di Intune di destinazione di *Criterio A* e di *Criterio B* sarà "Google". 
+
+### <a name="additional-settings-and-actions"></a>Impostazioni e azioni aggiuntive 
+
 Per impostazione predefinita, la tabella avrà righe popolate come le impostazioni configurate per **Periodo di prova offline** e **Numero massimo di tentativi di PIN**, se l'impostazione **Richiedi PIN per l'accesso** è impostata su **Sì**.
  
 Per configurare un'impostazione, selezionarla dall'elenco a discesa nella colonna **Impostazione**. Dopo aver selezionato un'impostazione, viene abilitata la casella di testo modificabile nella colonna **Valore** sulla stessa riga, se è necessario impostare un valore. L'elenco a discesa viene inoltre abilitato nella colonna **Azione** con il set di azioni di avvio condizionale applicabili all'impostazione. 
@@ -76,8 +103,6 @@ L'elenco seguente riporta le azioni comuni:
 -  **Blocca l'accesso**: blocca l'accesso dell'utente finale all'app aziendale.
 -  **Cancella i dati**: cancella i dati aziendali dal dispositivo dell'utente finale.
 -  **Avvisa**: visualizza una finestra di dialogo per l'utente finale come messaggio di avviso.
-
-### <a name="additional-settings-and-actions"></a>Impostazioni e azioni aggiuntive 
 
 In alcuni casi, ad esempio per l'impostazione **Versione minima del sistema operativo**, è possibile configurare l'impostazione per l'esecuzione di tutte le azioni applicabili in base ai diversi numeri di versione. 
 

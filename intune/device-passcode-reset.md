@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a233c62b76901d9bad00aa6d8b2a8a4dd45dea96
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905156"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039302"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Reimpostare o rimuovere il passcode di un dispositivo in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Per creare un nuovo passcode per un dispositivo, usare l'azione **Rimuovi il passcode**.
+Per creare un nuovo passcode per un dispositivo, usare l'azione **Rimuovi il passcode**. Questa azione richiede la reimpostazione del PIN per il solo profilo di lavoro. Il ripristino del PIN del dispositivo non è supportato per i profili di lavoro Android.
 
-## <a name="supported-platforms"></a>Piattaforme supportate
+## <a name="work-profile-pin-reset-supported-platforms"></a>Piattaforme supportate per la reimpostazione del PIN del profilo di lavoro
 
-- Dispositivi Android registrati con un profilo di lavoro, versione 8.0 e successive
+- Dispositivi Android registrati con un profilo di lavoro, versione 8.0 e successive 
 - Dispositivi Android versione 6.0 o precedenti
 - Dispositivi in modalità tutto schermo di Android Enterprise
 - iOS 
@@ -49,11 +49,13 @@ Per creare un nuovo passcode per un dispositivo, usare l'azione **Rimuovi il pas
 
 ## <a name="resetting-android-work-profile-passcodes"></a>Reimpostazione dei passcode dei profili di lavoro Android
 
-I dispositivi con profili di lavoro Android supportati ricevono una nuova password per lo sblocco del profilo gestito o una richiesta di profilo gestito per l'utente finale. Per i dispositivi con profilo di lavoro Android 8.0, gli utenti finali ricevono una notifica per l'attivazione dei passcode reimpostati subito dopo il completamento della registrazione. La notifica viene visualizzata se la password di un profilo di lavoro è necessaria e impostata. Dopo l'immissione del passcode, la notifica viene chiusa.
+I dispositivi con profili di lavoro Android supportati ricevono una nuova password per lo sblocco del profilo gestito o una richiesta di profilo gestito per l'utente finale. 
+
+Per i dispositivi con profilo di lavoro Android 8.0, gli utenti finali ricevono una notifica per l'attivazione dei passcode reimpostati subito dopo il completamento della registrazione. La notifica viene visualizzata se la password di un profilo di lavoro è necessaria e impostata. Dopo l'immissione del passcode, la notifica viene chiusa.
 
 ## <a name="resetting-ios-passcodes"></a>Reimpostazione dei passcode iOS
 
-I passcode vengono rimossi dai dispositivi iOS. Se è impostato un criterio di conformità passcode, il dispositivo richiede all'utente di impostare un nuovo passcode nelle impostazioni. 
+I passcode vengono rimossi dai dispositivi iOS. Se è impostato un criterio di conformità passcode, il dispositivo richiede all'utente di definire un nuovo passcode nelle impostazioni. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 

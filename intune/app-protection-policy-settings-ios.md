@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d0afd1f1944101b2162d9115e84ea5aaac0abf2
-ms.sourcegitcommit: 3dbd73631dd0042dd013a380f4c15dfe284576c0
+ms.openlocfilehash: 65827fe280535aa48d1d44eda9fd8482002c2c3b
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36882529"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028763"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -75,7 +75,7 @@ Esistono alcune app e servizi della piattaforma esenti, per i quali in determina
 | **Richiedi una versione minima dell'SDK dei criteri di protezione app di Intune** | Scegliere **Sì** per richiedere una versione minima dell'SDK dei criteri di protezione delle app di Intune per l'app da usare. All'utente viene impedito l'accesso se la versione dell'SDK dei criteri di protezione delle app di Intune dell'app non soddisfa il requisito. <br> <br> Per altre informazioni sull'SDK dei criteri di protezione delle app di Intune, vedere [Panoramica di Intune App SDK](app-sdk.md). <br><br> Il formato di questa impostazione dei criteri supporta principale.secondaria, principale.secondaria.build, principale.secondaria.build.revisione. <br><br> **Nota:** è necessario che l'app disponga di Intune SDK versione 7.0.1 o versione successiva. | No |
 
 > [!NOTE]
-> Per altre informazioni su come funzionano in iOS più impostazioni di protezione app di Intune configurate nella sezione Accesso per lo stesso set di app e di utenti, vedere le [domande frequenti su Intune MAM](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios).
+> Per altre informazioni sul funzionamento in iOS di più impostazioni di protezione app di Intune, configurate nella sezione Accesso, per lo stesso set di app e di utenti, vedere [Domande frequenti sulla gestione di applicazioni mobili di Intune](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios) e [Cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Intune](app-protection-policies-access-actions.md).
 
 ##  <a name="add-ins-for-outlook-app"></a>Componenti aggiuntivi per l'app Outlook
 

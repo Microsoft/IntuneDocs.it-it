@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906057"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028746"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi tramite il ripristino delle impostazioni predefinite, la rimozione dei dati aziendali o l'annullamento manuale della registrazione del dispositivo
 
@@ -29,7 +29,7 @@ Usando le azioni **Rimuovi i dati aziendali** o **Ripristino delle impostazioni 
 > [!NOTE]
 > Prima di rimuovere un utente da Azure Active Directory (Azure AD) usare l'azione **Ripristino delle impostazioni di fabbrica** o **Rimuovi i dati aziendali** per tutti i dispositivi associati all'utente. Se si rimuovono utenti con dispositivi gestiti da Azure AD, Intune non è più in grado di generare un comando di ripristino delle impostazioni di fabbrica o di rimozione dei dati aziendali per tali dispositivi.
 
-## <a name="factory-reset"></a>Ripristino impostazioni predefinite
+## <a name="factory-reset"></a>Ripristino delle impostazioni di fabbrica
 
 L'azione **Ripristino delle impostazioni di fabbrica** riporta un dispositivo alle impostazioni predefinite di fabbrica. I dati degli utenti vengono mantenuti se si seleziona la casella di controllo **Mantieni lo stato della registrazione e l'account utente**. In caso contrario, l'unità viene cancellata in modo sicuro.
 
@@ -175,3 +175,24 @@ A causa di problemi di comunicazione o dispositivi mancanti può essere necessar
 5. Selezionare l'utente associato al dispositivo che si vuole eliminare.
 6.  Selezionare **Dispositivi**.
 7.  Rimuovere i dispositivi nel modo appropriato. Ad esempio, si possono rimuovere i dispositivi che non sono più in uso o quelli con definizioni non accurate.
+
+## <a name="retire-an-apple-dep-device-from-intune"></a>Ritirare un dispositivo DEP Apple da Intune
+
+Se si vuole rimuovere completamente un dispositivo DEP Apple dalla gestione con Intune, seguire questa procedura:
+
+1. Accedere a [Intune nel portale di Azure](https://aka.ms/intuneportal).
+2. Scegliere **Dispositivi** > **Tutti i dispositivi** > scegliere il dispositivo > **Rimuovi i dati aziendali**.
+![Screenshot di Rimuovi i dati aziendali](./media/devices-wipe/remove-company-data.png)
+3. Scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Token DEP** > scegliere il token > **Dispositivi** > selezionare la casella di controllo corrispondente al dispositivo > **Elimina** > **Sì**.
+![Screenshot per l'eliminazione di un dispositivo](./media/devices-wipe/delete-device.png)
+4. Visitare il sito Web all'indirizzo [deploy.apple.com](http://deploy.apple.com) e cercare il dispositivo in base al numero di serie.
+5. Nel menu **Assigned to** (Assegnato a) scegliere **Unassigned** (Non assegnato).
+
+6. Scegliere **Reassign** (Riassegna).
+
+    ![Schermata per la riassegnazione di un dispositivo Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Se si vuole registrare di nuovo un dispositivo eliminato, vedere [Opzioni di registrazione](enrollment-options.md).
+
