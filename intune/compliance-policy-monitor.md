@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/25/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 557bdbace1752b8680cd15d7ba190577bec23e24
+ms.sourcegitcommit: 2e849eea920dcd6ef1b78e5aee26434bb7b01bff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905360"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39132460"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -167,11 +167,11 @@ Questa funzionalità è inclusa nei report di stato del dispositivo:
 1. Selezionare **Conformità del dispositivo** > **Criteri**. Viene visualizzato un elenco di criteri con informazioni sulla piattaforma, sull'assegnazione o meno del criterio e altri dettagli.
 2. Selezionare un criterio > **Panoramica**. In questa visualizzazione l'assegnazione del criterio include gli stati seguenti:
 
-  - Operazione completata
-  - Errore
-  - Conflitto
-  - Pending
-  - Non applicabile
+  - Operazione completata: i criteri sono stati applicati
+  - Errore: non è stato possibile applicare i criteri. Viene in genere visualizzato anche un codice di errore collegato a una spiegazione. 
+  - Conflitto: due impostazioni vengono applicate allo stesso dispositivo e Intune non è in grado di risolvere il conflitto. Un amministratore deve esaminare la situazione.
+  - In sospeso: il dispositivo non ha ancora contattato Intune per ricevere i criteri. 
+  - Non applicabile: il dispositivo non può ricevere i criteri. Ad esempio, i criteri aggiornano un'impostazione specifica di iOS 11.1, ma il dispositivo usa iOS 10. 
 
 3. Per visualizzare i dettagli sui dispositivi usando questo criterio, selezionare uno stato. Selezionare, ad esempio, **Operazione completata**. La finestra successiva conterrà i dettagli di un dispositivo specifico, tra cui il nome e lo stato di distribuzione.
 
@@ -181,4 +181,3 @@ Possono verificarsi conflitti se vengono applicati più criteri di Intune a un d
 - Se le impostazioni in conflitto hanno origine da criteri di configurazione di Intune e da criteri di conformità, le impostazioni nei criteri di conformità hanno la precedenza rispetto a quelle dei criteri di configurazione, anche se queste ultime sono più sicure.
 
 - Se sono stati distribuiti più criteri di conformità, Intune usa quelli più sicuri.
-

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
+ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993735"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138697"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Intune
 
@@ -91,7 +91,7 @@ Impostare una delle azioni seguenti:
 - Consenti specificati (cancella non specificati)
 
 **Cosa accade se l'amministratore IT inserisce un elenco diverso di produttori Android tra i criteri destinati alla stessa app per lo stesso utente di Intune?**<br>
-Quando si verificano conflitti tra due criteri di protezione delle app per i valori configurati, Intune applica in genere l'approccio più restrittivo. Di conseguenza, il criterio risultante inviato all'app di destinazione in corso di apertura da parte dell'utente di Intune corrisponde all'intersezione dei produttori Android elencati in *Criterio A* e in *Criterio B* specifica per la combinazione app/utente. Si supponga, ad esempio, che *Criterio A* specifichi "Google, Samsung", e *Criterio B* specifichi "Google". Il criterio risultante per l'utente di Intune di destinazione di *Criterio A* e di *Criterio B* sarà "Google". 
+Quando si verificano conflitti tra due criteri di protezione delle app per i valori configurati, Intune applica in genere l'approccio più restrittivo. Di conseguenza, il criterio risultante inviato all'app di destinazione in corso di apertura da parte dell'utente di Intune corrisponde all'intersezione dei produttori Android elencati in *Criterio A* e in *Criterio B* specifica per la combinazione app/utente. Si supponga, ad esempio, che *Criterio A* specifichi "Google; Samsung", e *Criterio B* specifichi "Google". Il criterio risultante per l'utente di Intune di destinazione di *Criterio A* e di *Criterio B* sarà "Google". 
 
 ### <a name="additional-settings-and-actions"></a>Impostazioni e azioni aggiuntive 
 
