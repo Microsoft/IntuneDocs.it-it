@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
+ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905224"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203221"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi usando un account del manager di registrazione dispositivi
 
@@ -56,7 +56,7 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
   - (Solo iOS) Se si usa un manager di registrazione dispositivi per la registrazione dei dispositivi iOS, non è possibile usare Apple Configurator, Apple Device Enrollment Program (DEP) o Apple School Manager (ASM) per la registrazione dei dispositivi.
   - (Solo Android) È previsto un limite al numero di dispositivi del profilo di lavoro Android che possono essere registrati con un singolo account DEM. Per ogni account DEM è possibile registrare fino a 10 profili di lavoro Android. Questa limitazione non si applica alla registrazione di Android legacy.
   - I dispositivi possono installare le app VPP se sono dotati delle licenze dispositivo.
-  - Ogni dispositivo richiede una licenza dispositivo. Altre informazioni sulle [licenze utente e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
+  - Per usare DEM non è necessaria una licenza dispositivo di Intune. Altre informazioni sulle [licenze utente e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
 > [!NOTE]

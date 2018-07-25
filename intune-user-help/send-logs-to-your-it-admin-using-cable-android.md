@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015609"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117855"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Inviare i log al supporto tecnico dell'azienda usando un cavo USB
 
@@ -35,7 +35,7 @@ Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo A
 
 2. Connettere il dispositivo al computer con il cavo USB. Si tratta in genere dello stesso cavo usato per caricare il dispositivo in una presa a muro.
 
-3. Nel computer cercare una directory il cui nome è uguale a quello del dispositivo. In tale directory trovare <strong>Dispositivo Android\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong>.
+3. Nel computer cercare una directory il cui nome è uguale a quello del dispositivo. In tale directory trovare <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong>.
 
 4. Selezionare i file e allegarli a un messaggio di posta elettronica. Inviare questo messaggio di posta elettronica al supporto tecnico dell'azienda.
 

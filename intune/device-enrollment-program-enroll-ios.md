@@ -15,18 +15,18 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: bfc42775424ac84737af6c713a04295e24859f79
+ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38219901"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203255"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Questo argomento offre informazioni utili per abilitare la registrazione dei dispositivi iOS acquistati tramite [Device Enrollment Program (DEP)](https://deploy.apple.com) di Apple. È possibile abilitare la registrazione DEP per un numero elevato di dispositivi senza interventi diretti. Si possono fornire i dispositivi iPhone e iPad direttamente agli utenti e quando l'utente attiva il dispositivo, l'Assistente configurazione viene eseguito con impostazioni preconfigurate e il dispositivo viene registrato nella gestione.
+Questo articolo include informazioni utili per abilitare la registrazione dei dispositivi iOS acquistati tramite [Device Enrollment Program (DEP)](https://deploy.apple.com) di Apple. È possibile abilitare la registrazione DEP per un numero elevato di dispositivi senza interventi diretti. Si possono fornire i dispositivi iPhone e iPad direttamente agli utenti e quando l'utente attiva il dispositivo, l'Assistente configurazione viene eseguito con impostazioni preconfigurate e il dispositivo viene registrato nella gestione.
 
 Per abilitare la registrazione DEP, si usano i portali di Intune e DEP di Apple. È necessario un elenco di numeri di serie o un numero di ordine di acquisto per poter assegnare i dispositivi a Intune per la gestione. Si creano profili di registrazione DEP contenenti le impostazioni da applicare ai dispositivi durante la registrazione.
 
@@ -115,7 +115,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
     ![Nome e descrizione del profilo.](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. In **Affinità utente** scegliere se i dispositivi con questo profilo devono essere registrati con o senza un utente assegnato.
-    - **Registra con affinità utente**: scegliere questa opzione per i dispositivi che appartengono a utenti e che vogliono usare il portale aziendale per servizi come l'installazione di app. Questa opzione consente anche agli utenti di autenticare i dispositivi tramite il portale aziendale. Per l'affinità utente è richiesto [endpoint misto/nome utente WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Altre informazioni](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    - **Registra con affinità utente**: scegliere questa opzione per i dispositivi che appartengono a utenti e che vogliono usare il portale aziendale per servizi come l'installazione di app. Questa opzione consente anche agli utenti di autenticare i dispositivi tramite il portale aziendale. Se si usa il file system distribuito di Azure, per l'affinità utente è richiesto [endpoint misto/nome utente WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Altre informazioni](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
     - **Registra senza affinità utente**: scegliere questa opzione per un dispositivo non associato a un singolo utente. Usare questa opzione per i dispositivi che eseguono attività senza accedere ai dati utente locali. Le app come l'app Portale aziendale non funzionano.
 
@@ -178,7 +178,7 @@ Adesso che Intune ha le autorizzazioni per gestire i dispositivi, è possibile s
 1. In Intune nel portale di Azure scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Token del programma di registrazione** > scegliere un token nell'elenco > **Dispositivi** > **Sincronizza**. ![Schermata del nodo Enrollment Program Devices selezionato e con il collegamento Sincronizza selezionato.](./media/device-enrollment-program-enroll-ios/image06.png)
 
    Per soddisfare le condizioni Apple per un traffico DEP accettabile, Intune impone le seguenti restrizioni:
-   - Una sincronizzazione completa può essere eseguita solo una volta ogni sette giorni. Durante una sincronizzazione completa, Intune recupera l'elenco aggiornato completo dei numeri di serie assegnati al server MDM di Apple connesso a Intune. Dopo l'eliminazione di un dispositivo del programma di registrazione dal portale di Intune, tale dispositivo non può essere reimportato fino a quando non viene eseguita la sincronizzazione completa.   
+   - Una sincronizzazione completa può essere eseguita solo una volta ogni sette giorni. Durante una sincronizzazione completa, Intune recupera l'elenco aggiornato completo dei numeri di serie assegnati al server MDM di Apple connesso a Intune. Se un dispositivo del Device Enrollment Program viene eliminato dal portale di Intune senza che ne sia stata annullata l'assegnazione dal server Apple MDM nel portale DEP, il dispositivo non potrà essere reimportato in Intune fino a quando non viene eseguita la sincronizzazione completa.   
    - La sincronizzazione viene eseguita automaticamente ogni 24 ore. È anche possibile eseguire la sincronizzazione facendo clic sul pulsante **Sincronizza** (non più di una volta ogni 15 minuti). Il tempo concesso per il completamento di una richiesta di sincronizzazione è pari a 15 minuti. Il pulsante **Sincronizza** rimane disabilitato finché non viene completata la sincronizzazione. La sincronizzazione aggiorna lo stato dei dispositivi esistenti e importa i nuovi dispositivi assegnati al server MDM di Apple.   
 
 

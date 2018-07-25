@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd6aee30a88906c3f6ae078e338732589d88a5f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909134"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212036"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurare la registrazione dei dispositivi in modalità tutto schermo Android Enterprise
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android supporta i dispositivi in modalità tutto schermo tramite il set di soluzioni COSU (Corporate-Owned, Single-Use). Questo tipo di dispositivi vengono usati per un singolo scopo, ad esempio la firma digitale, la stampa di biglietti o la gestione di inventari. Gli amministratori bloccano l'utilizzo di un dispositivo per un set limitato di app e collegamenti Web. Viene anche impedito agli utenti di aggiungere altre app o eseguire altre azioni sul dispositivo.
+Android supporta i dispositivi in modalità tutto schermo tramite il set di soluzioni Corporate-Owned, Single-Use. Questo tipo di dispositivi vengono usati per un singolo scopo, ad esempio la firma digitale, la stampa di biglietti o la gestione di inventari. Gli amministratori bloccano l'utilizzo di un dispositivo per un set limitato di app e collegamenti Web. Viene anche impedito agli utenti di aggiungere altre app o eseguire altre azioni sul dispositivo.
 
 Intune consente di distribuire app e impostazioni nei dispositivi in modalità tutto schermo Android. Per informazioni dettagliate su Android Enterprise, vedere [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) (Requisiti di Android Enterprise).
 

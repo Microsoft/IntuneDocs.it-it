@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: 3aed8fcefd640e5b7df46fe1ef8cd1c973a68044
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949493"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212138"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Edizione anticipata per Microsoft Intune - luglio 2018
 
@@ -79,8 +79,8 @@ Per creare il profilo, aprire **Configurazione del dispositivo** > **Profili** >
 
 Si applica a Windows 10 e versioni successive.
 
-###  <a name="windows-line-of-business-lob-apps-file-extension-rename----1884873---"></a>Ridenominazione delle estensioni file delle app line-of-business (LOB) di Windows <!-- 1884873 -->
-Le estensioni file delle app line-of-business di Windows LOB *appx* e *appxbundle* verranno rinominate in *msix* e *msixbundle*. È possibile aggiungere un'app in Microsoft Intune selezionando **App per dispositivi mobili** > **App** > **Aggiungi**. Viene visualizzato il riquadro **Aggiungi app** che consente di selezionare il **Tipo di app**. Per le app line-of-business di Windows, selezionare il tipo di app **App line-of-business**, selezionare il **File del pacchetto dell'app** e quindi specificare un file di installazione con l'estensione appropriata.
+###  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Estensioni file delle app line-of-business (LOB) di Windows <!-- 1884873 -->
+Le estensioni file delle app line-of-business di Windows ora includono *msi*, *appx*, *appxbundle*, *msix* e *msixbundle*. È possibile aggiungere un'app in Microsoft Intune selezionando **App per dispositivi mobili** > **App** > **Aggiungi**. Viene visualizzato il riquadro **Aggiungi app** che consente di selezionare il **Tipo di app**. Per le app line-of-business di Windows, selezionare il tipo di app **App line-of-business**, selezionare il **File del pacchetto dell'app** e quindi specificare un file di installazione con l'estensione appropriata.
 
 ### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Pacchetto di configurazione Windows Defender ATP aggiunto automaticamente al profilo di configurazione <!-- 2144658 -->
 Quando vengono usati [Advanced Threat Protection e dispositivi onboarding](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) in Intune, viene eseguito il download di un pacchetto di configurazione che viene aggiunto al profilo di configurazione. In un aggiornamento futuro Intune otterrà automaticamente il pacchetto da Windows Defender Security Center e lo aggiungerà al profilo.
