@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e6ffd31e35637cf722fc2af486be4bd9101c1db
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993752"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164570"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
@@ -89,21 +89,21 @@ In alcuni casi, la stessa app viene assegnata a più gruppi, ma con finalità di
 |Disponibile per l'utente|Non disponibile per l'utente|Non disponibile|
 |Disponibile per l'utente|Disinstallazione utente|Uninstall|
 |Non disponibile per l'utente|Disinstallazione utente|Uninstall
-|Obbligatoria per l'utente|Obbligatoria per il dispositivo|Entrambe presenti. Il gateway la considera obbligatoria
-|Obbligatoria per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Risoluzione gateway: obbligatoria
-|Disponibile per l'utente|Obbligatoria per il dispositivo|Entrambe presenti. Risoluzione gateway: obbligatoria (obbligatoria e disponibile)
-|Disponibile per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Risoluzione gateway: disponibile.<br><br>L'app viene visualizzata nel portale aziendale.<br><br>Se l'app è già installata perché la sua finalità precedente era "app obbligatoria", viene disinstallata.<br><br>Se l'utente seleziona **Installa dal portale aziendale**, l'app viene installata e la finalità di disinstallazione non viene rispettata.|
+|Obbligatoria per l'utente|Obbligatoria per il dispositivo|Entrambe presenti. Intune: obbligatoria
+|Obbligatoria per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Intune: obbligatoria
+|Disponibile per l'utente|Obbligatoria per il dispositivo|Entrambe presenti. Intune: obbligatoria (obbligatoria e disponibile)
+|Disponibile per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Intune: disponibile.<br><br>L'app viene visualizzata nel portale aziendale.<br><br>Se l'app è già installata perché la sua finalità precedente era "app obbligatoria", viene disinstallata.<br><br>Se l'utente seleziona **Installa dal portale aziendale**, l'app viene installata e la finalità di disinstallazione non viene rispettata.|
 |Non disponibile per l'utente|Obbligatoria per il dispositivo|Richiesto|
 |Non disponibile per l'utente|Disinstallazione dal dispositivo|Uninstall|
-|Disinstallazione utente|Obbligatoria per il dispositivo|Entrambe presenti. Risoluzione gateway: obbligatoria|
-|Disinstallazione utente|Disinstallazione dal dispositivo|Entrambe presenti. Risoluzione gateway: disinstallazione|
+|Disinstallazione utente|Obbligatoria per il dispositivo|Entrambe presenti. Intune: obbligatoria|
+|Disinstallazione utente|Disinstallazione dal dispositivo|Entrambe presenti. Intune: disinstallazione|
 |Obbligatoria per il dispositivo|Disinstallazione dal dispositivo|Richiesto|
 |Obbligatoria e disponibile per l'utente|Disponibile per l'utente|Richiesto e disponibile|
 |Obbligatoria e disponibile per l'utente|Disinstallazione utente|Richiesto e disponibile|
 |Obbligatoria e disponibile per l'utente|Non disponibile per l'utente|Richiesto e disponibile|
 |Obbligatoria e disponibile per l'utente|Obbligatoria per il dispositivo|Entrambe presenti, obbligatoria e disponibile
 |Obbligatoria e disponibile per l'utente|Non disponibile per il dispositivo|Richiesto e disponibile|
-|Obbligatoria e disponibile per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Risoluzione gateway: obbligatoria (obbligatoria e disponibile)
+|Obbligatoria e disponibile per l'utente|Disinstallazione dal dispositivo|Entrambe presenti. Intune: obbligatoria (obbligatoria e disponibile)
 |Non disponibile per l'utente|Non disponibile per il dispositivo|Non disponibile|
 |Disponibile per l'utente|Non disponibile per il dispositivo|Disponibile|
 |Obbligatoria per l'utente|Non disponibile per il dispositivo|Richiesto|
