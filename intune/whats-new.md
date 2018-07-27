@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: f2018b5a1ca2a6981b04951bcf8ecd8819eb47e2
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 1d56312fdf0e81406587caf352feafd745bd4353
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039421"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212070"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -133,7 +133,7 @@ Intune ha aggiornato la terminologia di "Android for Work" in modo da riflettere
 #### <a name="rules-for-removing-devices----1609459---"></a>Regole di rimozione dei dispositivi <!-- 1609459 -->
 Sono disponibili nuove regole che consentono di rimuovere automaticamente i dispositivi che non si sono connessi per un numero di giorni specificato. Per visualizzare la nuova regola, passare al riquadro **Intune**, selezionare **Dispositivi** e selezionare **Regole di pulizia del dispositivo**.
 
-#### <a name="corporate-owned-single-cosu-use-support-for-android-devices----1630973---"></a>Supporto monouso di proprietà dell'azienda per i dispositivi Android <!-- 1630973 -->
+#### <a name="corporate-owned-single-use-support-for-android-devices----1630973---"></a>Supporto monouso di proprietà dell'azienda per i dispositivi Android <!-- 1630973 -->
 
 Intune ora supporta i dispositivi Android con gestione avanzata, bloccati e in modalità tutto schermo. Questo consente agli amministratori di limitare ulteriormente l'uso di un dispositivo a una sola app o un piccolo gruppo di app e impedire agli utenti di abilitare altre app o eseguire altre azioni nel dispositivo. Per impostare la modalità tutto schermo Android, passare a Intune > **Registrazione del dispositivo** > **Registrazione Android**  > **Registrazioni dei dispositivi per uso in modalità tutto schermo e per attività**. Per altre informazioni, vedere [Set up enrollment of Android enterprise kiosk devices](android-kiosk-enroll.md) (Configurare la registrazione dei dispositivi Android per modalità tutto schermo).
 
