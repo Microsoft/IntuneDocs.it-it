@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869373"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321476"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Assegnare le app di Office 365 ai dispositivi Windows 10 con Microsoft Intune
 
@@ -60,9 +60,6 @@ Selezionare le app di Office che si vuole assegnare ai dispositivi.
     È anche possibile installare app per il client per desktop di Microsoft Project Online e Microsoft Visio Pro for Office 365 se si è proprietari delle relative licenze.
 3. Selezionare **OK**.
 
->[!IMPORTANT]
-> Dopo aver creato la suite di app, non è possibile modificarne le proprietà. Per configurare proprietà diverse, eliminare la suite di app e crearne una nuova.
-
 ## <a name="configure-app-information"></a>Configurare le informazioni sull'app
 
 In questo passaggio si specificano le informazioni sulla suite di app. Queste informazioni consentono di identificare la suite di app in Intune e semplificano la ricerca della suite di app da parte degli utenti nel portale aziendale.
@@ -95,11 +92,8 @@ In questo passaggio configurare le opzioni di installazione per la suite di app.
         - **Semi-Annual** (Semestrale)
         - **Semi-Annual (Targeted)** (Semestrale - mirato)
     - **Accetta automaticamente il contratto di licenza con l'utente finale**: selezionare questa opzione se non si richiede agli utenti finali di accettare il contratto di licenza. Intune accetterà automaticamente il contratto.
-    - **Usa l'attivazione di computer condivisi**: selezionare questa opzione quando più utenti condividono un computer. Per altre informazioni, vedere Panoramica dell'attivazione di computer condivisi per Office 365.
+    - **Usa l'attivazione di computer condivisi**: selezionare questa opzione quando più utenti condividono un computer. Per altre informazioni, vedere [Panoramica dell'attivazione di computer condivisi per Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Lingue**: Office viene installato automaticamente in tutte le lingue supportate installate con Windows nel dispositivo dell'utente finale. Selezionare questa opzione se si vuole installare lingue aggiuntive con la suite di app.
-
->[!IMPORTANT]
-> Dopo aver creato la suite di app, non è possibile modificarne le proprietà. Per configurare proprietà diverse, eliminare la suite di app e crearne una nuova.
 
 ## <a name="finish-up"></a>Terminare
 
@@ -130,14 +124,14 @@ Le tabelle seguenti elencano i codici di errore comuni che possono essere visual
 |||||
 |-|-|-|-|
 |Scenario|Codice restituito|Interfaccia utente|Nota|
-|Disinstallazione senza installazione A porta di clic attiva|-2147418113, 0x8000ffff o 2147549183|Codice di errore: 30088-1008<br>Codice di errore: 30125-1011 (404)|Strumento di distribuzione di Office|
+|Disinstallazione senza installazione A portata di clic attiva|-2147418113, 0x8000ffff o 2147549183|Codice di errore: 30088-1008<br>Codice di errore: 30125-1011 (404)|Strumento di distribuzione di Office|
 |Installazione con la versione MSI installata|1603|-|Strumento di distribuzione di Office|
 |Installazione annullata dall'utente o da un'altra installazione|17002|-|A portata di clic|
 |Tentativo di installazione della versione a 64 bit in un dispositivo in cui è installata la versione a 32 bit.|1603|-|Codice restituito dello strumento di distribuzione di Office|
 |Tentativo di installazione di un codice SKU sconosciuto (caso d'uso non legittimo per Office CSP poiché devono essere passati solo i codici SKU validi)|17004|-|A portata di clic|
 |Mancanza di spazio|17002|-|A portata di clic|
-|Il client a portata di clic non è stato avvisato (imprevisto)|17000|-|A portata di clic|
-|Il client a portata di clic non è stato inserito in coda (imprevisto)|17001|-|A portata di clic|
+|Il client A portata di clic non è stato avviato (imprevisto)|17000|-|A portata di clic|
+|Il client A portata di clic non è stato inserito in coda (imprevisto)|17001|-|A portata di clic|
 
 ## <a name="next-steps"></a>Passaggi successivi
 

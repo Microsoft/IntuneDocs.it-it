@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225443"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268907"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introduzione ai criteri di conformità dei dispositivi in Intune
 
@@ -167,7 +167,7 @@ La sezione **Impostazioni dei criteri di conformità** (portale di Azure > Confo
   Per l'abilitazione di questa impostazione è necessario che:
   - Nei dispositivi siano abilitati i servizi di posizione a livello di sistema operativo
   - I dispositivi consentano al portale aziendale di utilizzare servizi di posizione
-  - I dispositivi valutino e segnalino il proprio stato jailbreak a Intune almeno una volta ogni 72 ore. In caso contrario, il dispositivo è contrassegnato come non conforme.
+  - I dispositivi valutino e segnalino il proprio stato jailbreak a Intune almeno una volta ogni 72 ore. In caso contrario, il dispositivo è contrassegnato come non conforme. La valutazione viene attivata aprendo l'app Portale aziendale o spostando fisicamente il dispositivo di almeno 500 metri.
 
 - **Periodo di validità dello stato di conformità (giorni)**: immettere il periodo di tempo di cui dispongono i dispositivi per segnalare lo stato di tutti i criteri di conformità ricevuti. I dispositivi che non restituiscono lo stato entro il periodo indicato vengono considerati non conformi. Il valore predefinito è 30 giorni.
 

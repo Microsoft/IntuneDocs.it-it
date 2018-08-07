@@ -1,22 +1,23 @@
 ---
 title: Restrizioni dei dispositivi per Windows Holographic for Business in Microsoft Intune - Azure | Microsoft Docs
-description: Conoscere e configurare impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune per Windows Holographic for Business, tra cui annullamento della registrazione, georilevazione, password, installazione di app dall'App store, cookie e popup in Microsoft Edge, Windows Defender, ricerca, cloud e archiviazione, connettività bluetooth, ora di sistema e dati di utilizzo in Azure.
+description: Conoscere e configurare impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune per Windows Holographic for Business, tra cui annullamento della registrazione, georilevazione, password, installazione di app dall'App store, cookie e popup in Edge, Windows Defender, ricerca, cloud e archiviazione, connettività bluetooth, ora di sistema e dati di utilizzo in Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321755"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Impostazioni relative alle restrizioni dei dispositivi per Windows Holographic for Business in Intune
 
@@ -68,7 +69,9 @@ Le impostazioni seguenti relative alle restrizioni dei dispositivi sono supporta
 
 - **Modifica dell'ora di sistema**: impedisce all'utente finale di modificare la data e l'ora del dispositivo.
 
-## <a name="kiosk"></a>Modalità tutto schermo
+## <a name="kiosk---obsolete"></a>Modalità tutto schermo - Obsoleta
+
+Queste impostazioni sono di sola lettura e non possono essere modificate. Per configurare la modalità tutto schermo, vedere [Impostazioni della modalità tutto schermo](kiosk-settings.md#windows-holographic-for-business).
 
 In genere un'app specifica viene eseguita in un dispositivo in modalità tutto schermo. Agli utenti viene impedito l'accesso a qualsiasi funzionalità o funzione del dispositivo all'esterno dell'app in modalità tutto schermo.
 

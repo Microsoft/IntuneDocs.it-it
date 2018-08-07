@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a231adf4e1f5687bc88c8c9b15241d3f89e711d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2d2fc7f697d03c1ffcb952cd30e29f4959f2b7e9
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905340"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321170"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>Impostazioni del profilo di posta elettronica per dispositivi iOS - Intune
 
@@ -44,13 +44,13 @@ Usare le impostazioni del profilo di posta elettronica per configurare i disposi
 - **Email address attribute from AAD** (Attributo indirizzo di posta elettronica da AAD): scegliere la modalità di generazione dell'indirizzo di posta elettronica per l'utente. Selezionare **Nome dell'entità utente** (`user1@contoso.com` o `user1`) per usare il nome completo dell'entità utente come indirizzo di posta elettronica oppure selezionare **Indirizzo SMTP primario** (`user1@contoso.com`)per usare l'indirizzo SMTP primario per accedere a Exchange.
 - **Metodo di autenticazione**: selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione usato dal profilo di posta elettronica. L'autenticazione a più fattori di Azure non è supportata.
   - Se è stata selezionata l'opzione **Certificato**, selezionare un profilo certificato client SCEP o PKCS creato in precedenza che viene usato per autenticare la connessione di Exchange.
-- **SSL**: consente di usare la comunicazione Secure Sockets Layer (SSL) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con il server Exchange.
-- **S/MIME**: inviare la posta elettronica in uscita usando la firma S/MIME.
-  - Se è stata selezionata l'opzione **Certificato**, selezionare un profilo certificato PKCS creato in precedenza per autenticare la connessione di Exchange.
+- **SSL**: selezionare **Abilita** per usare la comunicazione Secure Sockets Layer (SSL) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con il server Exchange.
+- **S/MIME**: selezionare **Abilita S/MIME** per inviare la posta elettronica in uscita usando la firma S/MIME. Quando questa opzione è abilitata, è anche possibile crittografare la posta elettronica per i destinatari che possono ricevere posta elettronica crittografata e decrittografare la posta elettronica ricevuta dai mittenti.
+  - Se è stata selezionata l'opzione **Certificato**, selezionare un profilo certificato PKCS creato in precedenza per autenticare la connessione di Exchange e/o crittografare gli scambi di posta elettronica.
 - **Numero di messaggi di posta elettronica da sincronizzare**: selezionare il numero di giorni di posta elettronica da sincronizzare. In alternativa, selezionare **Illimitata** per sincronizzare tutti i messaggi di posta elettronica disponibili.
-- **Consentire lo spostamento dei messaggi ad altri account di posta elettronica**: consente agli utenti di spostare i messaggi di posta elettronica tra diversi account configurati nel dispositivo.
-- **Consenti di inviare i messaggi di posta elettronica dalle applicazioni di terze parti**: consente all'utente di selezionare questo profilo come account predefinito per l'invio di posta elettronica e consente ad applicazioni di terze parti di aprire la posta elettronica nella relativa app nativa, ad esempio per allegare file ai messaggi.
-- **Sincronizza gli indirizzi di posta elettronica utilizzati di recente**: consente agli utenti di sincronizzare l'elenco di indirizzi di posta elettronica usati di recente sul dispositivo con il server.
+- **Consenti di spostare i messaggi negli altri account di posta elettronica**: selezionare **Abilita** per consentire agli utenti di spostare i messaggi di posta elettronica tra diversi account configurati nel dispositivo.
+- **Consenti l'invio di messaggi di posta elettronica da applicazioni di terze parti**: selezionare **Abilita** per consentire all'utente di selezionare questo profilo come account predefinito per l'invio di posta elettronica e consentire ad applicazioni di terze parti di aprire la posta elettronica nella relativa app nativa, ad esempio per allegare file ai messaggi.
+- **Sincronizza gli indirizzi di posta elettronica usati di recente**: selezionare **Abilita** per consentire agli utenti di sincronizzare con il server l'elenco di indirizzi di posta elettronica usati di recente sul dispositivo.
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Configurare le impostazioni di posta elettronica in Intune](email-settings-configure.md)

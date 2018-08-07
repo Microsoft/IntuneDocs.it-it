@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138697"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254485"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Intune
 
@@ -44,7 +44,7 @@ Usando queste impostazioni, è possibile scegliere in modo esplicito di cancella
 8. Selezionare l'**azione** da intraprendere se gli utenti non soddisfano i requisiti. In alcuni casi è possibile configurare più azioni per una singola impostazione. Per altre informazioni, vedere [Come creare e assegnare criteri di protezione delle app](app-protection-policies.md).
 
 >[!NOTE]
-> Per usare l'impostazione **Modello/i dispositivo**, inserire un elenco di identificatori di modello separati da punto e virgola. 
+> Per usare l'impostazione **Modello/i dispositivo o Produttore/i dispositivo**, inserire un elenco di identificatori di modello separati da punto e virgola. Evitare gli spazi in elenchi di più valori. I valori non fanno distinzione tra maiuscole e minuscole. 
 
 ## <a name="policy-settings"></a>Impostazioni criteri 
 
@@ -83,7 +83,10 @@ Per Android è possibile configurare azioni per le impostazioni seguenti usando 
 -  Produttore/i dispositivo
 
 Per usare l'impostazione **Produttore/i dispositivo**, inserire un elenco di identificatori di modello separati da punto e virgola. È possibile trovare il produttore di un dispositivo Android tramite le impostazioni del dispositivo.<br>
-Input di esempio: *Produttore A; Produttore B; Google* 
+Input di esempio: *Produttore A; Produttore B* 
+
+>[!NOTE]
+> Questi sono alcuni dei produttori più comuni segnalati dai dispositivi che usano Intune e possono essere utilizzati come input: Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
 
 Nei dispositivi degli utenti finali il client Intune eseguirà un'azione in base a una semplice corrispondenza di stringhe relative a modelli di dispositivo specificate in Intune per i criteri di protezione delle applicazioni. La corrispondenza dipende completamente da quanto segnalato dal dispositivo. È consigliabile che l'amministratore IT si assicuri che si verifichi il comportamento previsto, testando questa impostazione con produttori e modelli di dispositivo diversi e usando come destinazione un piccolo gruppo di utenti. Il valore predefinito è **Non configurato**.<br>
 Impostare una delle azioni seguenti: 

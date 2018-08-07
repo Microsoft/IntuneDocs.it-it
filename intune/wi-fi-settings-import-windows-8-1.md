@@ -1,34 +1,39 @@
 ---
-title: Importare le impostazioni Wi-Fi per dispositivi Windows 8.1 e versioni successive
-titleSuffix: Microsoft Intune
-description: Come importare le impostazioni Wi-Fi da Windows a un profilo Wi-Fi di Intune.
+title: Importare le impostazioni Wi-Fi per i dispositivi Windows in Microsoft Intune - Azure | Microsoft Docs
+description: Esportare le impostazioni Wi-Fi da un dispositivo Windows come file XML usando netsh wlan. Quindi importare questo file in Intune per creare un profilo Wi-Fi per i dispositivi che eseguono Windows 8.1, Windows 10 e Windows Holographic for Business.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 157416738e4607d5022f1c3c7ed8251a8e32fe3e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6ce5cdd9509ed3407491714ccfa853613eb43973
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834017"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321136"
 ---
-# <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Importare le impostazioni Wi-Fi per i dispositivi Windows 8.1 e versioni successive in Microsoft Intune
+# <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Importare le impostazioni Wi-Fi per i dispositivi Windows in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Per i dispositivi che eseguono Windows 8.1, Windows 10 Desktop o Mobile o Windows Holographic for Business, è possibile importare un profilo di configurazione Wi-Fi precedentemente esportato in un file.
+Per i dispositivi che eseguono Windows, è possibile importare un profilo di configurazione Wi-Fi precedentemente esportato in un file. **Per i dispositivi Windows 10 e versioni successive è possibile [creare un profilo Wi-Fi](wi-fi-settings-windows.md) direttamente in Intune**.
+
+Si applica a:  
+- Windows 8.1 e versioni successive
+- Windows 10 e versioni successive
+- Windows 10 Desktop o Mobile
+- Windows Holographic for Business
 
 ## <a name="export-wi-fi-settings-from-a-windows-device"></a>Esportare le impostazioni Wi-Fi da un dispositivo Windows
 
-In Windows usare l'utilità **netsh wlan** per esportare un profilo Wi-Fi esistente in un file XML leggibile da Intune. Per usare correttamente il profilo è necessario esportare la chiave in testo normale.
+In Windows usare **netsh wlan** per esportare un profilo Wi-Fi esistente in un file XML leggibile da Intune. Per usare correttamente il profilo è necessario esportare la chiave in testo normale.
 
 In un computer Windows in cui il profilo Wi-Fi necessario è già installato, seguire questa procedura:
 
@@ -42,7 +47,7 @@ In un computer Windows in cui il profilo Wi-Fi necessario è già installato, se
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
 3. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
-4. Immettere un **Nome** e una **Descrizione** per il profilo di restrizione dei dispositivi.
+4. Immettere un **Nome** e una **Descrizione** per il profilo di restrizione del dispositivo.
 
     > [!IMPORTANT]
     > - Il nome **deve** corrispondere all'attributo name nel file XML del profilo Wi-Fi. In caso contrario, si verifica un errore.

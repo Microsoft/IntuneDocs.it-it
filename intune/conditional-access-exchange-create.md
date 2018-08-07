@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
+ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905530"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39323243"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Creare criteri di accesso condizionale per Exchange locale ed Exchange Online dedicato legacy
 
@@ -63,7 +63,7 @@ Prima di configurare l'accesso condizionale, verificare quanto segue:
 - Windows Phone 8.1 e versioni successive
 - App di posta elettronica nativa in iOS
 - Client di posta EAS, ad esempio Gmail in Android 4 o versione successiva.
-- Client di posta EAS - **Dispositivi del profilo di lavoro Android:** nei dispositivi del profilo di lavoro Android sono supportate solo le app **Gmail** e **Nine Work** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni nei profili di lavoro Android, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work. È anche necessario distribuire tali applicazioni come installazioni obbligatorie.
+- Client di posta EAS - **Dispositivi del profilo di lavoro Android:** per i dispositivi del profilo di lavoro Android sono supportati solo **Gmail** e **Nine Work for Android Enterprise** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni nei profili di lavoro Android, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work for Android Enterprise. È anche necessario distribuire tali applicazioni come installazioni obbligatorie.
 
 > [!NOTE]
 > L'app Microsoft Outlook per Android e iOS non è supportata. 
@@ -75,9 +75,9 @@ L'applicazione **Mail** nativa in Windows 8.1 e versioni successive (se registra
 
 ## <a name="configure-exchange-on-premises-access"></a>Configurare l'accesso locale a Exchange
 
-1. Passare al [portale di Azure](https://portal.azure.com/) e accedere con le credenziali di Intune.
+1. Andare nel [portale di Azure](https://portal.azure.com/) e accedere con le credenziali di Intune.
 
-1. Dopo aver completato l'accesso, viene visualizzato il **dashboard di Azure**.
+1. Dopo l'accesso viene visualizzato il **dashboard di Azure**.
 
 1. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 

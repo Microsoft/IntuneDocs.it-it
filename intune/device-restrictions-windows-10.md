@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803840"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321221"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrizione dei dispositivi per Windows 10 (e versioni successive) in Intune
 Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di Microsoft Intune configurabili per i dispositivi che eseguono Windows 10.
@@ -252,7 +252,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
 ## <a name="kiosk-preview---obsolete"></a>Modalità tutto schermo (anteprima) - Obsoleta
 
-Queste impostazioni verranno rimosse in una versione futura. Per usare le nuove impostazioni, vedere [Kiosk settings in Windows 10 and later](kiosk-settings.md) (Impostazioni della modalità tutto schermo in Windows 10 e versioni successive).
+Queste impostazioni sono di sola lettura e non possono essere modificate. Per configurare la modalità tutto schermo, vedere [Kiosk settings in Windows 10 and later](kiosk-settings.md) (Impostazioni della modalità tutto schermo in Windows 10 e versioni successive).
 
 In genere un'app o una serie specifica di app viene eseguita in un dispositivo in modalità tutto schermo. Agli utenti viene impedito l'accesso a qualsiasi funzionalità o funzione del dispositivo all'esterno delle app in modalità tutto schermo.
 

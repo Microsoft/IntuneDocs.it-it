@@ -14,12 +14,12 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d8335f1bac26b1a70c4e9aeaf7c8c6d1b34fc12
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 776cb1e03730bbac1d6e7ed36f411eba0ab94cff
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34718013"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236039"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Informazioni sulle differenze di Intune per Education rispetto all'esperienza di gestione completa in Intune.
 
@@ -27,9 +27,9 @@ Intune per Education consente a docenti e studenti di essere produttivi, mantene
 
 ![Console di Intune per Education a confronto con la console di Intune.](./media/intune-azure-vs-intuneEDU.png)
 
-Intune per Education consente di gestire i dispositivi Windows 10 con le funzionalità MDM complete disponibili in Intune. Intune supporta anche la gestione di altre piattaforme, ad esempio iOS e Android ed è progettato per consentire l'accesso al set completo di criteri dalla stessa console.
+Intune per Education consente di gestire i dispositivi Windows 10 e iOS con le funzionalità MDM complete disponibili in Intune. L'esperienza completa di gestione del dispositivo consente di gestire dispositivi Android, iOS e Windows.  
 
-È possibile usare Intune per Education da solo o in integrazione con l'[esperienza completa di gestione dei dispositivi disponibile in Intune](introduction-intune.md). È anche possibile usare questo servizio insieme al resto degli strumenti disponibili in [Microsoft Education](https://microsoft.com/education), in modo da poter usare facilmente Intune per Education con altri utili strumenti didattici da Microsoft.
+È possibile usare Intune per Education da solo o in integrazione con l'[esperienza completa di gestione dei dispositivi disponibile in Intune](introduction-intune.md). È anche possibile usare questo servizio insieme al resto degli strumenti disponibili in [Microsoft Education](https://microsoft.com/education), in modo da poter usare facilmente Intune per Education con altri utili strumenti didattici da Microsoft.  
 
 > [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 

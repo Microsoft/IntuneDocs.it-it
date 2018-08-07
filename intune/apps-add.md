@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/19/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
-ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
+ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028729"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321289"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Aggiungere app in Microsoft Intune
 
@@ -57,7 +57,7 @@ La tabella seguente elenca i tipi di app specifici e descrive come aggiungerli n
 | App line-of-business Android | App line-of-business | Selezionare **App line-of-business** come **tipo di app**, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione Android con estensione **apk**.  |
 | App line-of-business iOS | App line-of-business | Selezionare **App line-of-business** come **tipo di app**, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione iOS con estensione **ipa**.  |
 | Applicazioni line-of-business di Windows Phone | App line-of-business | Selezionare **App line-of-business** come **tipo di app**, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione Windows Phone con estensione **xap**.  |
-| App line-of-business di Windows | App line-of-business | Selezionare **App line-of-business** come tipo di app, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione Windows con estensione **msi**, **appx** o **appxbundle**. |
+| App line-of-business di Windows | App line-of-business | Selezionare **App line-of-business** come tipo di app, selezionare il **file del pacchetto dell'app** e quindi immettere un file di installazione Windows con estensione **msi**, **appx**, **appxbundle**, **msix** o **msixbundle**. |
 | App iOS predefinita  | App predefinita | Selezionare **App predefinita** come **tipo di app** e quindi selezionare l'app predefinita nell'elenco delle app fornite.  |
 | App Android predefinita  | App predefinita | Selezionare **App predefinita** come **tipo di app** e quindi selezionare l'app predefinita nell'elenco delle app fornite.  |
 | App Web  | App Web  | Selezionare **Collegamento Web** come **tipo di app** e quindi immettere un URL valido che punta all'app Web.  |
@@ -119,6 +119,9 @@ Oltre a conoscere le app Web, le app dello Store e le app line-of-business, è u
 - **Volume Purchase Program di Apple per le imprese (iOS e MacOS)**: l'App Store iOS consente di acquistare più licenze per un'app da usare in azienda. L'acquisto di più copie favorisce una gestione più efficiente delle app presenti in azienda. Per altre informazioni, vedere [Gestire le app iOS acquistate con Volume Purchase Program](vpp-apps-ios.md).
 - **Profili di lavoro Android**: l'assegnazione di app a dispositivi con profili di lavoro Android avviene in modo diverso rispetto all'assegnazione di app a dispositivi Android standard. Tutte le app installate per i profili di lavoro Android provengono dalla versione gestita di Google Play Store. Accedere allo store, cercare le app desiderate e approvarle. L'app viene quindi visualizzata nel nodo **App con licenza** del portale di Azure ed è possibile gestire l'assegnazione dell'app allo stesso modo di qualsiasi altra app.
 - **Microsoft Store per le aziende (Windows 10)**: in Microsoft Store per le aziende è possibile trovare e acquistare app per l'organizzazione, singolarmente o a volume. Collegando lo Store a Microsoft Intune è possibile gestire nel portale di Azure le app acquistate con Volume Purchase Program. Per altre informazioni, vedere [Gestire le app di Microsoft Store per le aziende](windows-store-for-business.md).
+
+    > [!NOTE]
+    > Le estensioni file per le app di Windows ora includono **msi**, **appx**, **appxbundle**, **msix** e **msixbundle**.  
 
 ## <a name="before-you-add-apps"></a>Prima di aggiungere le app
 Prima di iniziare ad aggiungere e assegnare le app, tenere presente quanto segue:

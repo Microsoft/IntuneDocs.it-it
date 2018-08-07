@@ -1,59 +1,68 @@
 ---
-title: Configurare i criteri di aggiornamento software per iOS in Microsoft Intune
-titlesuffix: ''
-description: Configurare i criteri di aggiornamento per iOS per forzare l'installazione automatica dell'aggiornamento software più recente disponibile nei dispositivi iOS con supervisione.
+title: Configurare i criteri di aggiornamento software per iOS in Microsoft Intune - Azure | Microsoft Docs
+description: In Microsoft Intune è possibile creare o aggiungere criteri di configurazione per limitare l'installazione automatica di aggiornamenti software nei dispositivi iOS gestiti da o sotto la supervisione di Intune. È possibile scegliere la data e ora in cui l'installazione degli aggiornamenti non verrà effettuata. È anche possibile assegnare questi criteri a gruppi, utenti o dispositivi e verificare la presenza di eventuali errori di installazione.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/19/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1d4223ae4feb417f77909b320cd0295347b44461
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836589"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268839"
 ---
-# <a name="configure-ios-update-policies-in-microsoft-intune"></a>Configurare i criteri di aggiornamento per iOS in Microsoft Intune
+# <a name="configure-ios-update-policies-in-intune"></a>Configurare i criteri di aggiornamento per iOS in Intune
 
-I criteri di aggiornamento software consentono di forzare l'installazione automatica dell'aggiornamento del sistema operativo più recente disponibile nei dispositivi iOS che eseguono iOS 10.3 e versioni successive con supervisione. Questa funzionalità è disponibile solo per i dispositivi con supervisione. È possibile configurare i giorni e gli orari in cui non si vuole che i dispositivi installino l'aggiornamento. 
+I criteri di aggiornamento software consentono di forzare l'installazione automatica dell'aggiornamento del sistema operativo più recente disponibile nei dispositivi iOS con supervisione. Questa funzionalità è disponibile solo per i dispositivi con supervisione. Quando si configurano criteri, è possibile aggiungere i giorni e gli orari in cui si vuole che i dispositivi non installino aggiornamenti. 
 
-Quando il dispositivo si collega al servizio, se è disponibile un aggiornamento e al di fuori di un intervallo di tempo dotato di restrizioni, ogni 8 ore il dispositivo tenterà di scaricare e installare l'aggiornamento del sistema operativo più recente. Non è necessario alcun intervento dell'utente per aggiornare il dispositivo. Il criterio potrebbe non impedire a un utente di aggiornare il sistema operativo.
+Il dispositivo si collega a Intune ogni 8 ore. Se è disponibile un aggiornamento (al di fuori dell'orario sottoposto a restrizioni), il dispositivo scarica e installa l'aggiornamento più recente del sistema operativo. Non è necessario alcun intervento dell'utente per aggiornare il dispositivo. I criteri non impediscono a un utente di aggiornare manualmente il sistema operativo.
 
-## <a name="configure-the-ios-update-policy"></a>Configurare i criteri di aggiornamento per iOS
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** scegliere **Aggiornamenti software** > **Criteri di aggiornamento per iOS**.
-4. Nel riquadro dei criteri scegliere **Crea** e quindi immettere un nome e una descrizione per il criterio.
-5. Selezionare **Impostazioni** > **Configura** e specificare nel dettaglio quando non viene forzata l'installazione dell'aggiornamento più recente nei dispositivi iOS. È possibile configurare giorni della settimana, fuso orario, ora di inizio e ora di fine.
-6. Scegliere **OK** per salvare la configurazione. Si torna al riquadro **Crea criteri di aggiornamento**. Scegliere **Crea** per creare i criteri e salvare le impostazioni.
+Questa funzionalità è supportata nei dispositivi che eseguono iOS 10.3 e versioni successive.
 
-Il profilo viene creato e visualizzato nel riquadro dell'elenco dei criteri di aggiornamento per iOS. La gestione di dispositivi mobili di Apple non consente di forzare l'installazione dell'aggiornamento sul dispositivo entro una determinata ora o data. 
+## <a name="configure-the-policy"></a>Configurare i criteri
+1. Accedere al [portale di Azure](https://portal.azure.com).
+2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+3. Selezionare **Aggiornamenti software** > **Criteri di aggiornamento per iOS** > **Crea**.
+4. Immettere un nome e una descrizione per i criteri.
+5. Selezionare **Impostazioni**. 
+
+    Specificare nel dettaglio quando non viene imposta l'installazione degli aggiornamenti più recenti nei dispositivi iOS. Queste impostazioni creano un intervallo di tempo limitato. È possibile configurare giorni della settimana, fuso orario, ora di inizio e ora di fine.
+
+6. Selezionare **OK** per salvare le modifiche. Selezionare **Crea** per creare i criteri.
+
+I criteri vengono creati e visualizzati nell'elenco dei criteri. Il software MDM di Apple non consente di imporre a un dispositivo di installare gli aggiornamenti entro un'ora o data determinata. 
 
 ## <a name="change-the-restricted-times-for-the-policy"></a>Modificare gli intervalli di tempo dotati di restrizioni per il criterio
 
-1.  Nel pannello **Aggiornamenti software** scegliere **Criteri di aggiornamento per iOS**.
-2.  Selezionare il criterio di aggiornamento per iOS che si vuole aggiornare.
-3.  Selezionare **Proprietà** e aggiornare le informazioni sugli intervalli di tempo dotati di restrizioni.
-4.  Scegliere i giorni della settimana
-5.  Fuso orario nel quale verrà applicato il criterio
-6.  Ora di inizio e fine per le ore disattivate
+1. In **Aggiornamenti software** selezionare **Criteri di aggiornamento per iOS**.
+2. Scegliere dei criteri esistenti > **Proprietà**.
+3. Aggiornare il periodo con limitazioni:
 
-## <a name="assign-an-ios-update-policy-to-users"></a>Assegnare un criterio di aggiornamento per iOS agli utenti
+    1. Scegliere i giorni della settimana
+    2. Scegliere il fuso orario nel quale verranno applicati i criteri
+    3. Immettere l'ora di inizio e fine della disattivazione
 
-Per assegnare un criterio di aggiornamento per iOS agli utenti, scegliere un criterio configurato. I criteri esistenti sono disponibili nel riquadro **Aggiornamenti software** > **Criteri di aggiornamento per iOS**.
+    > [!NOTE]
+    > Se sia **Ora di inizio** sia **Ora di fine** sono impostate sulle 12:00, il controllo ora di manutenzione è disattivato.
 
-1. Scegliere il criterio da assegnare agli utenti, quindi selezionare **Assegnazioni**. Si apre il riquadro in cui è possibile selezionare i gruppi di sicurezza di Azure Active Directory e assegnarli ai criteri.
-2. Scegliere **Gruppi selezionati** per aprire il riquadro che consente di visualizzare i gruppi di sicurezza di Azure AD. Determinare chi ha accesso al criterio assegnando i gruppi da includere ed escludere.
-3. Scegliere **Salva** per distribuire il criterio agli utenti.
+## <a name="assign-the-policy-to-users"></a>Assegnare i criteri agli utenti
 
-Il criterio è stato applicato agli utenti. I dispositivi usati dagli utenti a cui è destinato il criterio vengono valutati per la conformità degli aggiornamenti. Questo criterio supporta anche i dispositivi senza utente.
+I criteri esistenti vengono assegnati a gruppi, utenti o dispositivi. Dopo l'assegnazione, i criteri vengono applicati.
 
-## <a name="monitor-ios-device-installation-failures"></a>Monitorare gli errori di installazione nei dispositivi iOS
+1. In **Aggiornamenti software** selezionare **Criteri di aggiornamento per iOS**.
+2. Scegliere dei criteri esistenti > **Assegnazioni**. 
+3. Selezionare gruppi, utenti o dispositivi Azure Active Directory da includere o escludere dai criteri.
+4. Scegliere **Salva** per distribuire i criteri agli utenti.
+
+I dispositivi usati dagli utenti a cui sono destinati i criteri vengono valutati per la conformità degli aggiornamenti. Questo criterio supporta anche i dispositivi senza utente.
+
+## <a name="monitor-device-installation-failures"></a>Monitorare gli errori di installazione nei dispositivi
 <!-- 1352223 -->
-Il report **Installation failures for iOS devices** (Errori di installazione per dispositivi iOS) è disponibile nel riquadro **Aggiornamenti software**. Nel report è possibile visualizzare un elenco di dispositivi iOS con supervisione a cui è destinato un criterio di aggiornamento per iOS e che nonostante il tentativo di aggiornamento non è stato possibile aggiornare. Per ogni dispositivo, è possibile visualizzare lo stato del motivo per cui il dispositivo non è stato aggiornato automaticamente. I dispositivi integri e aggiornati non verranno visualizzati nell'elenco. Un dispositivo è aggiornato se possiede l'ultimo aggiornamento che è in grado di supportare.
+**Aggiornamenti software** > **Errori di installazione per dispositivi iOS** include un elenco di dispositivi iOS con supervisione che sono stati oggetto di criteri di aggiornamento e hanno provato a eseguire l'aggiornamento, ma nei quali l'operazione non è riuscita. Per ogni dispositivo, è possibile visualizzare il motivo per cui l'aggiornamento automatico non è riuscito. I dispositivi integri e aggiornati non vengono visualizzati nell'elenco. Un dispositivo è aggiornato se include l'ultimo aggiornamento supportato dal dispositivo stesso.
 

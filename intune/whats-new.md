@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/13/2018
+ms.date: 07/23/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 1d56312fdf0e81406587caf352feafd745bd4353
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212070"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321561"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -33,14 +33,111 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazio
 
 <!-- Common categories:  
 ### App management
+### Device configuration
 ### Device enrollment
 ### Device management
-### Device configuration
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
 
 -->   
+
+## <a name="week-of-july-23-2018"></a>Settimana del 23 luglio 2018
+
+### <a name="app-management"></a>Gestione delle app
+
+####  <a name="windows-apps-file-extensions----1884873---"></a>Estensioni file delle app di Windows <!-- 1884873 -->
+Le estensioni file delle app di Windows ora includono *msi*, *appx*, *appxbundle*, *msix* e *msixbundle*. È possibile aggiungere un'app in Microsoft Intune selezionando **App per dispositivi mobili** > **App** > **Aggiungi**. Viene visualizzato il riquadro **Aggiungi app** che consente di selezionare il **Tipo di app**. Selezionare un tipo di app che consenta di caricare un file di pacchetto dell'app, selezionare il **File del pacchetto dell'app** e quindi specificare un file di installazione con l'estensione appropriata.
+
+#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>Supporto di app line-of-business (LOB) per macOS <!-- 1895847 -->
+Microsoft Intune consente la distribuzione di app line-of-business per macOS come app **obbligatorie** o **disponibili con registrazione**. Gli utenti finali possono ottenere le app distribuite come app **disponibili** tramite il Portale aziendale per macOS o il [sito Web del Portale aziendale](https://portal.manage.microsoft.com).
+
+#### <a name="ios-built-in-app-support-for-kiosk-mode----2051098---"></a>Supporto app integrato di iOS per modalità tutto schermo <!-- 2051098 -->
+Oltre alle App Store e App gestite, è ora possibile selezionare un'App predefinita, ad esempio, Safari, da eseguire in modalità tutto schermo in un dispositivo iOS.
+
+#### <a name="edit-your-office-365-pro-plus-app-deployments----2150145---"></a>Modificare le distribuzioni delle app di Office 365 Pro Plus <!-- 2150145 -->
+Per l'amministratore di Microsoft Intune è più facile modificare le distribuzioni delle app di Office 365 Pro Plus. Inoltre, non è più necessario eliminare le distribuzioni per modificare le proprietà del gruppo. Nel portale di Azure selezionare **Microsoft Intune** > **App per dispositivi mobili** > **App**. Selezionare la famiglia di prodotti Office 365 Pro Plus dall'elenco delle applicazioni.  
+
+
+### <a name="device-configuration"></a>Configurazione del dispositivo
+
+#### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>Usare S/MIME per crittografare e firmare più dispositivi di un utente  <!-- 1333642 -->
+Questo aggiornamento include una crittografia di posta elettronica S/MIME con un nuovo profilo di certificato importato (**Configurazione del dispositivo** > **Profili** > **Crea profilo** > selezionare la piattaforma > tipo di profilo **Certificato PKCS importato**). In Intune è possibile importare i certificati nel formato PFX. Intune può quindi distribuire i certificati a più dispositivi registrati da un singolo utente. Inoltre:
+
+- Il profilo di posta elettronica iOS nativo supporta l'abilitazione della crittografia S/MIME mediante certificati importati in formato PFX.
+- L'app di posta elettronica nativa nei dispositivi Windows Phone 10 usa automaticamente il certificato S/MIME.
+- I certificati privati possono essere recapitati su più piattaforme. Tuttavia, non tutte le app di posta elettronica supportano S/MIME.
+- In altre piattaforme potrebbe essere necessario configurare manualmente l'app di posta elettronica per abilitare S/MIME.  
+- È possibile che le app di posta elettronica che supportano la crittografia S/MIME gestiscano il recupero dei certificati per la crittografia della posta elettronica S/MIME in un modo non supportato dal software MDM, ad esempio basandosi sull'archivio certificati del server di pubblicazione.
+
+Supportato in: Windows, Windows Phone 10, macOS, iOS, Android
+
+#### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>Creare criteri di conformità dei dispositivi usando le impostazioni del firewall nei dispositivi macOS <!-- 1497640 -->
+Quando si creano nuovi criteri di conformità per macOS, in **Conformità del dispositivo** > **Criteri** > **Crea criteri** > **Piattaforma: macOS** > **Protezione del sistema**, sono disponibili alcune nuove impostazioni del **firewall**: 
+
+- **Firewall**: configurare in che modo le connessioni in ingresso devono essere gestite nell'ambiente in uso.
+- **Connessioni in ingresso**: **bloccare** tutte le connessioni in ingresso tranne quelle necessarie per i servizi Internet di base, ad esempio DHCP, Bonjour e IPSec. Questa impostazione consente inoltre di bloccare tutti i servizi di condivisione.
+- **Modalità mascheramento**: **abilitare** questa modalità per impedire che il dispositivo risponda alle richieste di probe. Il dispositivo continua a rispondere alle richieste in ingresso provenienti da applicazioni autorizzate.
+
+Si applica a: macOS 10.12 e versioni successive
+
+#### <a name="new-wi-fi-device-configuration-profile-for-windows-10-and-later----1879077---"></a>Nuovo profilo di configurazione del dispositivo Wi-Fi per Windows 10 e versioni successive <!-- 1879077 -->
+Attualmente, è possibile importare ed esportare i profili Wi-Fi usando i file XML. In questo aggiornamento è possibile creare un profilo di configurazione del dispositivo Wi-Fi direttamente in Intune, come in alcune altre piattaforme.
+
+Per creare il profilo, aprire **Configurazione del dispositivo** > **Profili** > **Crea profilo** > **Windows 10 e versioni successive** > **Wi-Fi**. 
+
+Si applica a Windows 10 e versioni successive.
+
+#### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998-eeready---"></a>Modalità tutto schermo obsoleta appare disattivata e non può essere modificata <!-- 2149998 eeready -->
+La [funzionalità Modalità tutto schermo](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Configurazione del dispositivo** > **Profili** > **Crea profilo** > **Windows 10 e versioni successive** > **Limitazioni del dispositivo**) è obsoleta e sostituita dalle [impostazioni di modalità tutto schermo per Windows 10 e versioni successive](kiosk-settings.md). In questo aggiornamento la funzionalità **Modalità tutto schermo obsoleta** appare disattivata e l'interfaccia utente non potrà essere modificata o aggiornata. 
+
+Per abilitare la modalità tutto schermo, vedere [Impostazioni relative alla modalità tutto schermo per Windows 10 e versioni successive](kiosk-settings.md).
+
+Si applica a Windows 10 e versioni successive, Windows Holographic for Business
+
+#### <a name="apis-to-use-3rd-party-certification-authorities----2184013---"></a>API per l'uso delle autorità di certificazione di terze parti <!-- 2184013 -->
+In questo aggiornamento è disponibile un'API Java che consente l'integrazione delle autorità di certificazione di terze parti con Intune e SCEP. Gli utenti potranno quindi aggiungere il certificato SCEP a un profilo e applicarlo ai dispositivi usando il software MDM.
+
+Attualmente Intune supporta [le richieste SCEP con Servizi certificati Active Directory](certificates-scep-configure.md).
+
+#### <a name="toggle-to-show-or-not-show-the-end-session-button-on-a-kiosk-browser----2455253---"></a>Visualizzare o nascondere il pulsante Termina sessione in un browser in modalità tutto schermo <!-- 2455253 -->
+Ora è possibile specificare se visualizzare o nascondere il pulsante Termina sessione nei browser in modalità tutto schermo. Il controllo è disponibile in **Configurazione del dispositivo** > **Modalità tutto schermo (anteprima)** > **Web browser in modalità tutto schermo**. Se è abilitato, quando un utente fa clic sul pulsante, l'app richiede di confermare se terminare la sessione. Se si conferma, il browser cancella tutti i dati di navigazione e torna all'URL predefinito.
+
+#### <a name="create-an-esim-cellular-configuration-profile----2564077---"></a>Creare un profilo di configurazione cellulare eSIM <!-- 2564077 -->
+In **Configurazione del dispositivo** è possibile creare un profilo cellulare eSIM. È possibile importare un file contenente i codici di attivazione cellulare forniti dall'operatore di telefonia mobile. È quindi possibile distribuire i profili nei dispositivi Windows 10 con eSIM LTE, ad esempio Surface Pro LTE e altri dispositivi che supportano eSIM.
+
+Verificare se i [dispositivi supportano i profili eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data).
+
+Si applica a Windows 10 e versioni successive. 
+
+
+
+
+### <a name="device-enrollment"></a>Registrazione del dispositivo
+
+#### <a name="automatically-mark-android-devices-enrolled-by-using-samsung-knox-mobile-enrollment-as-corporate----2404851---"></a>Contrassegnare automaticamente i dispositivi Android registrati usando Samsung Knox Mobile Enrollment come "aziendali". <!-- 2404851 -->
+Per impostazione predefinita, ora i dispositivi Android registrati usando Samsung Knox Mobile Enrollment vengono contrassegnati come **Aziendale** in **Proprietà del dispositivo**. Non è necessario identificare manualmente i dispositivi aziendali utilizzando i numeri IMEI o seriali prima della registrazione mediante Knox Mobile Enrollment.
+
+### <a name="device-management"></a>Gestione dei dispositivi
+
+#### <a name="bulk-delete-devices-on-devices-blade----1793693---"></a>Eliminare in blocco i dispositivi nel pannello Dispositivi <!-- 1793693 -->
+
+È possibile eliminare più dispositivi contemporaneamente nel pannello Dispositivi. Scegliere **Dispositivi** > **Tutti i dispositivi** > selezionare i dispositivi da eliminare > **Elimina**. Per i dispositivi che non possono essere eliminati, viene visualizzato un avviso.
+
+## <a name="week-of-july-16-2018"></a>Settimana del 16 luglio 2018  
+
+### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Più opportunità di sincronizzazione nell'app Portale aziendale per Windows  
+L'app Portale aziendale per Windows ora consente di avviare la sincronizzazione direttamente dalla barra delle applicazioni Windows e dal menu Start. Questa funzionalità è particolarmente utile se l'unica attività eseguita è sincronizzare i dispositivi e ottenere l'accesso alle risorse aziendali. Per accedere alla nuova funzionalità, fare clic sull'icona del portale aziendale che è stata aggiunta alla barra delle applicazioni o al menu Start. Nelle opzioni di menu, elemento detto anche jump list, selezionare **Sync this device** (Sincronizzare il dispositivo). Verrà aperta la pagina **Impostazioni** del portale aziendale e inizierà la sincronizzazione. Per esaminare le nuove funzionalità, vedere [Novità dell'interfaccia utente](whats-new-app-ui.md).   
+
+### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Nuove esperienze di esplorazione nell'app Portale aziendale per Windows  
+
+Durante l'esplorazione o la ricerca di app nell'app Portale aziendale per Windows, ora è possibile passare dalla visualizzazione **Riquadri** alla nuova visualizzazione **Dettagli** e viceversa. La nuova visualizzazione elenca i dettagli dell'applicazione, ad esempio il nome, l'editore, la data di pubblicazione e lo stato di installazione.  
+
+La visualizzazione **Installata** della pagina **App** consente di visualizzare i dettagli sulle installazioni completate e in corso. Per vedere come appare la nuova vista, vedere [Novità dell'interfaccia utente](whats-new-app-ui.md).  
+### <a name="improved-company-portal-app-experience-for-device-enrollment-managers"></a>Esperienza dell'app Portale aziendale migliorata per gli utenti del manager di registrazione dispositivi  
+Quando un manager di registrazione dispositivi accede all'app Portale aziendale per Windows, ora l'app elenca solo il dispositivo in esecuzione corrente. Questo miglioramento ridurrà i timeout che in precedenza si verificavano quando l'app tentava di mostrare tutti i dispositivi registrati nel manager di registrazione dispositivi.  
+
+
 ## <a name="week-of-july-9-2018"></a>Settimana del 9 luglio 2018
 
 ### <a name="app-management"></a>Gestione delle app
@@ -60,9 +157,6 @@ Con Microsoft AutoUpdate è possibile iscriversi e ricevere le build anticipatam
 ## <a name="week-of-july-2-2018"></a>Settimana del 2 luglio 2018
 
 ### <a name="app-management"></a>Gestione delle app
-
-#### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Impostazioni di protezione aggiuntive per Windows Installer <!-- 2282430 -->
-Gli utenti possono controllare l'installazione delle app. Se l'opzione è abilitata, le installazioni che a causa di una violazione della protezione verrebbero arrestate possono precedere. È possibile indicare a Windows Installer di usare privilegi elevati durante l'installazione di un qualsiasi programma in un sistema. È anche possibile indicizzare gli elementi Windows Information Protection e archiviare i relativi metadati in una posizione non crittografata. Quando i criteri sono disabilitati, gli elementi protetti da WIP non vengono indicizzati e non appaiono nei risultati di Cortana o Esplora file. Le funzionalità per queste opzioni sono disabilitate per impostazione predefinita. 
 
 #### <a name="monitor-ios--app-configuration-status-per-device----880037---"></a>Monitorare lo stato di configurazione delle app iOS per ogni dispositivo <!-- 880037 -->
 L'amministratore di Microsoft Intune può monitorare lo stato di configurazione delle app iOS per ogni dispositivo gestito. Da **Microsoft Intune** nel portale di Azure selezionare **Dispositivi** > **Tutti i dispositivi**. Dall'elenco dei dispositivi gestiti selezionare un dispositivo specifico per visualizzare il relativo pannello. Nel pannello del dispositivo selezionare **Configurazione dell'app**.
@@ -350,7 +444,7 @@ Con questo aggiornamento, [Windows Defender Credential Guard](https://docs.micro
 Quando si configura Credential Guard vengono automaticamente abilitate le tecnologie dipendenti seguenti: 
 
   - **Abilita la sicurezza basata su virtualizzazione**: attiva la sicurezza basata su virtualizzazione al riavvio successivo. La sicurezza basata sulla virtualizzazione usa Windows Hypervisor per offrire il supporto per i servizi di sicurezza e richiede Avvio protetto.
-  - **Avvio protetto con Direct Memory Access (DMA)**: attiva la sicurezza basata sulla virtualizzazione con Avvio protetto e Direct Memory Access. Le protezioni DMA richiedono supporto hardware e vengono abilitate solo nei dispositivi configurati correttamente. 
+  - **Avvio protetto con Direct Memory Access (DMA)**: attiva la sicurezza basata sulla virtualizzazione con Avvio protetto e Direct Memory Access. La protezione DMA richiede supporto hardware e viene abilitata solo nei dispositivi configurati correttamente. 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>Usare un nome oggetto personalizzato sul certificato SCEP <!-- 2064190 -->
 È possibile usare **OnPremisesSamAccountName**, il nome comune in un oggetto personalizzato in un profilo certificato SCEP. È ad esempio possibile usare `CN={OnPremisesSamAccountName})`.
@@ -616,7 +710,7 @@ Gli utenti che registrano un dispositivo tramite il portale aziendale in Windows
 #### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>HoloLens e Surface Hub vengono ora visualizzati nell'elenco dei dispositivi <!--1725868 -->
 È stato aggiunto il supporto per la visualizzazione dei dispositivi HoloLens e Surface Hub registrati in Intune nell'app del portale aziendale per Android.
 
-#### <a name="custom-book-categories-for-volume-purchase-progream-vpp-ebooks----1488911---"></a>Categorie libro personalizzate per eBook di Volume Purchase Program (VPP) <!-- 1488911 -->
+#### <a name="custom-book-categories-for-volume-purchase-program-vpp-ebooks----1488911---"></a>Categorie libro personalizzate per eBook di Volume Purchase Program (VPP) <!-- 1488911 -->
 È possibile creare categorie eBook personalizzate a cui assegnare eBook VPP. Gli utenti finali potranno vedere le categorie eBook appena create e i libri a esse assegnati. Per altre informazioni, vedere [Gestire le app e i libri acquistati con Volume Purchase Program con Microsoft Intune](vpp-apps.md).  
 
 #### <a name="support-changes-for-company-portal-app-for-windows-send-feedback-option----2070166---"></a>Modifiche al supporto per l'app Portale aziendale per l'opzione di invio di commenti e suggerimenti di Windows <!-- 2070166 -->

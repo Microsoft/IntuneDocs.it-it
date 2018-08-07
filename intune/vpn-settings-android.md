@@ -1,67 +1,76 @@
 ---
-title: Impostazioni VPN di Microsoft Intune per dispositivi Android
-titlesuffix: ''
-description: Informazioni sulle impostazioni di Intune che è possibile usare per configurare le connessioni VPN nei dispositivi che eseguono Android
+title: Configurare le impostazioni VPN per dispositivi Android in Microsoft Intune - Azure | Microsoft Docs
+description: Per creare un profilo di configurazione VPN per dispositivi Android e Android for Work, immettere il nome della connessione, l'indirizzo IP o il nome di dominio completo del server VPN, scegliere il metodo di autenticazione degli utenti al server VPN e quindi scegliere i tipi di connessione Citrix, SonicWall, Check Point Capsule, Pulse Secure ed Edge.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 7/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c43f8918589c1b66034ad68908f4d5ddba6d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: f02a76def463c4ef1c3ee24b021df3185d263ecf
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905122"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279322"
 ---
-# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Configurare le impostazioni VPN in Microsoft Intune per i dispositivi che eseguono Android 
+# <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>Configurare le impostazioni VPN per i dispositivi che eseguono Android in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Questo articolo illustra le impostazioni di Intune che è possibile usare per configurare le connessioni VPN nei dispositivi che eseguono Android.
 
-
 È possibile configurare le impostazioni VPN per le piattaforme seguenti:
 
 - [Android](#android-vpn-settings)
-- [Dispositivi del profilo di lavoro Android](#android-for-work-vpn-settings)
+- [Android for Work](#android-for-work-vpn-settings)
 
 A seconda delle impostazioni scelte, non tutti i valori seguenti sono configurabili.
 
 ## <a name="android-vpn-settings"></a>Impostazioni VPN per Android
-**Nome della connessione**: immettere un nome per la connessione. Questo nome viene visualizzato dagli utenti finali nel momento in cui esplorano l'elenco delle connessioni VPN disponibili nel dispositivo.
-- **Indirizzo IP o FQDN**: specificare l'indirizzo IP o il nome di dominio completo del server VPN a cui si connetteranno i dispositivi. Esempi: **192.168.1.1**, **vpn.contoso.com**.
-- **Metodo di autenticazione**: scegliere tra le seguenti modalità di autenticazione dei dispositivi per il server VPN:
-    - **Certificati**: selezionare un profilo di certificato SCEP o PKCS creato in precedenza per autenticare la connessione. Per altre informazioni sui profili di certificato, vedere [How to configure certificates](certificates-configure.md)(Come configurare i certificati).
-    - **Nome utente e password**: gli utenti finali devono fornire un nome utente e una password per accedere al server VPN.
-- **Tipo di connessione**: selezionare il tipo di connessione VPN dall'elenco di fornitori seguente:
-    - **Check Point Capsule VPN**
-    - **Cisco AnyConnect**
-    - **SonicWall Mobile Connect**
-    - **F5 Edge Client**
-    - **Pulse Secure**
-    - **Citrix**
 
-- **Impronta digitale** (solo Check Point Capsule VPN): specificare una stringa, ad esempio "Codice impronta digitale Contoso", che viene usata per verificare l'attendibilità del server VPN. È possibile inviare un'impronta digitale al client per indicargli di considerare attendibile qualsiasi server che presenta la stessa impronta digitale durante la connessione. Se il dispositivo non ha ancora l'impronta digitale, viene richiesto all'utente di considerare attendibile il server VPN a cui si sta connettendo e viene visualizzata l'impronta digitale (l'utente verifica manualmente l'impronta digitale e sceglie Attendibilità per connettersi).
-- **Immettere le coppie chiave-valore per gli attributi della VPN Citrix** (solo Citrix): immettere le coppie chiave-valore fornite da Citrix per configurare le proprietà della connessione VPN.
+- **Nome della connessione**: immettere un nome per la connessione. Questo nome viene visualizzato dagli utenti finali nel momento in cui esplorano le connessioni VPN disponibili nel dispositivo.
+- **Indirizzo IP o FQDN**: immettere l'indirizzo IP o il nome di dominio completo (FQDN) del server VPN a cui si connetteranno i dispositivi. Ad esempio, immettere **192.168.1.1** o **vpn.contoso.com**.
 
-## <a name="android-work-profile-device-vpn-settings"></a>Impostazioni VPN dei dispositivi del profilo di lavoro Android
+  - **Metodo di autenticazione**: scegliere il metodo di autenticazione dei dispositivi al server VPN. Le opzioni disponibili sono:
 
-**Nome della connessione**: immettere un nome per la connessione. Questo nome viene visualizzato dagli utenti finali nel momento in cui esplorano l'elenco delle connessioni VPN disponibili nel dispositivo.
-- **Indirizzo IP o FQDN**: specificare l'indirizzo IP o il nome di dominio completo del server VPN a cui si connetteranno i dispositivi. Esempi: **192.168.1.1**, **vpn.contoso.com**.
-- **Metodo di autenticazione**: scegliere tra le seguenti modalità di autenticazione dei dispositivi per il server VPN:
-    - **Certificati**: selezionare un profilo di certificato SCEP o PKCS creato in precedenza per autenticare la connessione. Per altre informazioni sui profili di certificato, vedere [How to configure certificates](certificates-configure.md)(Come configurare i certificati).
-    - **Nome utente e password**: gli utenti finali devono fornire un nome utente e una password per accedere al server VPN.
-- **Tipo di connessione**: selezionare il tipo di connessione VPN dall'elenco di fornitori seguente:
-    - **Check Point Capsule VPN**
-    - **Cisco AnyConnect**
-    - **SonicWall Mobile Connect**
-    - **F5 Edge Client**
-    - **Pulse Secure**
+    - **Certificati**: selezionare un profilo di certificato SCEP o PKCS esistente per autenticare la connessione. [Configura certificati](certificates-configure.md) elenca i passaggi necessari per creare un profilo di certificato.
+    - **Nome utente e password**: al momento dell'accesso al server VPN, agli utenti finali viene chiesto di immettere un nome utente e una password.
 
+- **Tipo di connessione**: selezionare il tipo di connessione VPN. Le opzioni disponibili sono:
+
+  - **Check Point Capsule VPN**
+  - **Cisco AnyConnect**
+  - **SonicWall Mobile Connect**
+  - **F5 Edge Client**
+  - **Pulse Secure**
+  - **Citrix**
+
+- **Impronta digitale** (solo Check Point Capsule VPN): immettere una stringa, ad esempio **Codice impronta digitale Contoso**, per verificare l'attendibilità del server VPN. È possibile inviare un'impronta digitale al client per indicargli di considerare attendibile qualsiasi server con la stessa impronta digitale durante la connessione. Se il dispositivo non è dotato di impronta digitale, chiederà all'utente di considerare attendibile il server VPN mentre visualizza l'impronta digitale. L'utente verifica manualmente l'impronta digitale e sceglie di considerarlo attendibile per connettersi.
+- **Immettere le coppie chiave-valore per gli attributi della VPN Citrix** (solo Citrix): immettere le coppie chiave-valore fornite da Citrix. Questi valori configurano le proprietà della connessione VPN.
+
+## <a name="android-for-work-vpn-settings"></a>Impostazioni VPN per Android for Work
+
+- **Nome della connessione**: immettere un nome per la connessione. Questo nome viene visualizzato dagli utenti finali nel momento in cui esplorano le connessioni VPN disponibili nel dispositivo.
+- **Indirizzo IP o FQDN**: immettere l'indirizzo IP o il nome di dominio completo (FQDN) del server VPN a cui si connetteranno i dispositivi. Ad esempio, immettere **192.168.1.1** o **vpn.contoso.com**.
+
+  - **Metodo di autenticazione**: scegliere il metodo di autenticazione dei dispositivi al server VPN. Le opzioni disponibili sono:
+  
+    - **Certificati**: selezionare un profilo di certificato SCEP o PKCS esistente per autenticare la connessione. [Configura certificati](certificates-configure.md) elenca i passaggi necessari per creare un profilo di certificato.
+    - **Nome utente e password**: al momento dell'accesso al server VPN, agli utenti finali viene chiesto di immettere un nome utente e una password.
+
+- **Tipo di connessione**: selezionare il tipo di connessione VPN. Le opzioni disponibili sono:
+
+  - **Check Point Capsule VPN**
+  - **Cisco AnyConnect**
+  - **SonicWall Mobile Connect**
+  - **F5 Edge Client**
+  - **Pulse Secure**
+
+## <a name="next-steps"></a>Passaggi successivi
+[Profili VPN in Intune](vpn-settings-configure.md)

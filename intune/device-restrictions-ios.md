@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803823"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321493"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
 
@@ -182,8 +182,8 @@ Esempio: cercare Microsoft Word per iPad. L'URL usato è https://itunes.apple.co
 
 Nell'elenco delle app da mostrare o nascondere è possibile configurare uno degli elenchi seguenti (richiede dispositivi con supervisore che eseguono iOS 9.3 o versione successiva).
 
-Elenco **App nascoste**: specifica un elenco di app nascoste agli utenti. Gli utenti non possono visualizzare o avviare queste app.
-Elenco **App visibili**: specifica un elenco di app che gli utenti possono visualizzare e avviare. Non è possibile visualizzare o avviare altre app.
+- Elenco **App nascoste**: specifica un elenco di app nascoste agli utenti. Gli utenti non possono visualizzare o avviare queste app.
+- Elenco **App visibili**: specifica un elenco di app che gli utenti possono visualizzare e avviare. Non è possibile visualizzare o avviare altre app.
 
 Per configurare un elenco, fare clic su **Aggiungi** e quindi specificare il nome, facoltativamente l'autore dell'app e l'URL dell'app nell'App Store.
 
@@ -259,54 +259,8 @@ Dopo aver specificato il nome di ogni app e ID, scegliere **Aggiungi** per aggiu
 - **Importa**: importa un file di valori delimitati da virgole (CSV) contenente un elenco di nomi di app e di ID bundle associati.
 - **Esporta**: esporta i nomi delle app e gli ID bundle associati configurati in un file con valori delimitati da virgole (CSV).
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Guida di riferimento agli ID bundle per le app iOS predefinite
-
-Questo elenco include l'ID bundle di alcune app comuni iOS predefinite. Per l'ID bundle di altre app rivolgersi al fornitore del software.
-
-```
-,com.apple.AppStore,App Store,Apple
-,com.apple.calculator,Calculator,Apple
-,com.apple.mobilecal,Calendar,Apple
-,com.apple.camera,Camera,Apple
-,com.apple.mobiletimer,Clock,Apple
-,com.apple.compass,Compass,Apple
-,com.apple.MobileAddressBook,Contacts,Apple
-,com.apple.facetime,FaceTime,Apple
-,com.apple.mobileme.fmf1,Find Friends,Apple
-,com.apple.mobileme.fmip1,Find iPhone,Apple
-,com.apple.gamecenter,Game Center,Apple
-,com.apple.mobilegarageband,GarageBand,Apple
-,com.apple.Health,Health,Apple
-,com.apple.iBooks,iBooks,Apple
-,com.apple.MobileStore,iTunes Store,Apple
-,com.apple.itunesu,iTunes U,Apple
-,com.apple.Keynote,Keynote,Apple
-,com.apple.mobilemail,Mail,Apple
-,com.apple.MapsMaps,Apple
-,com.apple.MobileSMS,Messages,Apple
-,com.apple.Music,Music,Apple
-,com.apple.news,News,Apple
-,com.apple.mobilenotes,Notes,Apple
-,com.apple.Numbers,Numbers,Apple
-,com.apple.Pages,Pages,Apple
-,com.apple.Photo-Booth,Photo Booth,Apple
-,com.apple.mobileslideshow,Photos,Apple
-,com.apple.podcasts,Podcasts,Apple
-,com.apple.reminders,Reminders,Apple
-,com.apple.MobileSafari,Safari,Apple
-,com.apple.Preferences,Settings,Apple
-,com.apple.stocks,Stocks,Apple
-,com.apple.tips,Tips,Apple
-,com.apple.videos,Videos,Apple
-,com.apple.VoiceMemos,VoiceMemos,Apple
-,com.apple.Passbook,Wallet,Apple
-,com.apple.Bridge,Watch,Apple
-,com.apple.weather,Weather,Apple
-```
-
-
 ## <a name="kiosk-supervised-only"></a>Modalità tutto schermo (solo con supervisione)
--   **App in esecuzione in modalità tutto schermo** - Scegliere **App gestita** per selezionare un'app che è stata aggiunta a Intune o **App dello Store** per specificare l'URL di un'app dello store. Non sarà possibile eseguire altre app nel dispositivo. Per informazioni, vedere "Come specificare gli URL negli App Store" più avanti in questo argomento.
+-   **App in esecuzione in modalità tutto schermo** - Scegliere **App gestita** per selezionare un'app che è stata aggiunta a Intune, **App dello Store** per specificare l'URL di un'app dello store o **App predefinita** per specificare l'ID bundle dell'app predefinita. Per altre informazioni, vedere [Guida di riferimento agli ID bundle per le app iOS predefinite](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps) e [Come specificare l'URL di un'app nello store](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1).
     -   **Tocco per l'accesso facilitato** - Abilita o disabilita l'impostazione di accessibilità **Tocco per l'accesso facilitato** che aiuta l'utente a eseguire sullo schermo movimenti che altrimenti risulterebbero difficili da eseguire.
     -   **Inverti colori** - Abilita o disabilita l'impostazione di accessibilità Inverti colori che consente di regolare la visualizzazione per gli utenti con problemi visivi.
     -   **Audio mono** - Abilita o disabilita l'impostazione di accessibilità Audio mono.
@@ -327,6 +281,51 @@ Questo elenco include l'ID bundle di alcune app comuni iOS predefinite. Per l'ID
 >[!NOTE]
 > Prima di poter configurare un dispositivo iOS per la modalità tutto schermo, è necessario usare lo strumento Apple Configurator o il programma di registrazione dispositivi di Apple per attivare la modalità con supervisore del dispositivo. Per altre informazioni sullo strumento Apple Configurator, vedere la documentazione di Apple.
 >Se l'app per iOS specificata viene installata dopo aver assegnato il profilo, il dispositivo non passerà alla modalità tutto schermo finché non viene riavviato.
+
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Guida di riferimento agli ID bundle per le app iOS predefinite
+
+Questo elenco include l'ID bundle di alcune app comuni iOS predefinite. Per l'ID bundle di altre app rivolgersi al fornitore del software.
+
+| ID bundle                   | Nome dell'app     | Pubblicazione |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | App Store    | Apple     |
+| com.apple.calculator        | Calcolatrice   | Apple     |
+| com.apple.mobilecal         | Calendario     | Apple     |
+| com.apple.camera            | Fotocamera       | Apple     |
+| com.apple.mobiletimer       | Orologio        | Apple     |
+| com.apple.compass           | Bussola      | Apple     |
+| com.apple.MobileAddressBook | Contatti     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.mobileme.fmf1     | Trova amici | Apple     |
+| com.apple.mobileme.fmip1    | Trova il mio iPhone  | Apple     |
+| com.apple.gamecenter        | Area giochi  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Integrità       | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.MapsMaps          |              | Apple     |
+| com.apple.MobileSMS         | Messaggi     | Apple     |
+| com.apple.Music             | Musica        | Apple     |
+| com.apple.news              | Notizie         | Apple     |
+| com.apple.mobilenotes       | Note        | Apple     |
+| com.apple.Numbers           | Numeri      | Apple     |
+| com.apple.Pages             | .NET        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Foto       | Apple     |
+| com.apple.podcasts          | Podcast     | Apple     |
+| com.apple.reminders         | Reminders    | Apple     |
+| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.Preferences       | Impostazioni     | Apple     |
+| com.apple.stocks            | Stocks       | Apple     |
+| com.apple.tips              | Suggerimenti         | Apple     |
+| com.apple.videos            | Video       | Apple     |
+| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | Video        | Apple     |
+| com.apple.weather           | Weather      | Apple     |
 
 ## <a name="safari"></a>Safari
 -   **Safari (solo con supervisione)** - Specifica se il browser Safari può essere usato nel dispositivo.

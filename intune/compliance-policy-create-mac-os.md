@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442577"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321442"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Aggiungere criteri di conformità per i dispositivi macOS con Intune
 
@@ -83,6 +83,13 @@ La tabella seguente descrive come vengono gestite le impostazioni non conformi q
 ### <a name="encryption"></a>Crittografia
 
 - **Crittografia dell'archivio dati nel dispositivo**: scegliere **Rendi obbligatorio** per crittografare l'archivio dati nei dispositivi.
+
+### <a name="device-security"></a>Sicurezza del dispositivo
+L'impostazione Firewall protegge i dispositivi da accessi alla rete non autorizzati. È possibile usare Firewall per controllare le connessioni applicazione per applicazione. 
+
+- **Firewall**: selezionare **Abilita** per proteggere i dispositivi da accessi non autorizzati. Abilitando questa funzionalità è possibile gestire le connessioni Internet in ingresso e usare la modalità mascheramento. L'opzione **Non configurato** (impostazione predefinita) lascia disattivato il firewall e consente il traffico di rete (non bloccato).
+- **Connessioni in ingresso**: **blocca** tutte le connessioni di rete in ingresso tranne quelle necessarie per i servizi Internet di base, ad esempio DHCP, Bonjour e IPSec. Questa impostazione blocca anche tutti i servizi di condivisione, ad esempio la condivisione dello schermo, l'accesso remoto e il servizio di condivisione di musica di iTunes. L'opzione **Non configurato** (impostazione predefinita) consente le connessioni in ingresso e i servizi di condivisione. 
+- **Modalità mascheramento**: selezionare **Abilita** per impedire che il dispositivo risponda alle richieste di probe, che possono avere origine da utenti malintenzionati. Se l'impostazione è abilitata, il dispositivo continua a rispondere alle richieste in ingresso provenienti da applicazioni autorizzate. L'opzione **Non configurato** (impostazione predefinita) lascia disattivata la modalità mascheramento.
 
 ## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
 

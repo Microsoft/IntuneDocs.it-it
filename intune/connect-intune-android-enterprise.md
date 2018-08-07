@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0152d0cb7af418b500c1ac5991f2356bd2e19965
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909083"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279424"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Connettere l'account di Intune all'account Android Enterprise
 
@@ -51,7 +51,7 @@ Per supportare i dispositivi del profilo di lavoro Android e i dispositivi Andro
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Disconnettere l'account amministrativo di Android Enterprise
 
-È possibile disattivare la registrazione e la gestione di Android Enterprise. Se si sceglie **Disconnetti** nella console di amministrazione di Intune vengono eliminati tutti i dispositivi del profilo di lavoro Android e i dispositivi in modalità schermo tutto schermo registrati. Viene rimossa anche la relazione tra l'account di Android Enterprise e Intune.
+È possibile disattivare la registrazione e la gestione di Android Enterprise. A tale scopo, è prima necessario ritirare tutti i dispositivi del profilo di lavoro Android registrati. Scegliere quindi **Disconnetti** nella console di amministrazione di Intune per annullare la registrazione di tutti i dispositivi del profilo di lavoro Android e dei dispositivi in modalità tutto schermo registrati. L'operazione rimuove anche la relazione tra l'account Android Enterprise e Intune.
 
 1. Come amministratore di Intune, nel [portale di Azure](https://portal.azure.com) scegliere **Tutti i servizi** > **Monitoraggio e gestione** > **Intune**.
 2. Scegliere **Registrazione del dispositivo** > **Registrazione Android** > **Google Play gestito** > **Disconnetti**.

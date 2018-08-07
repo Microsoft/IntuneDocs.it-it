@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 421dede4b0da71fe04649e21bfcf7c15d2270507
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 1cfbaa0cbdcc2263f6e8d1d3fc8562678e410537
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869356"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400318"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Binding Xamarin per Microsoft Intune App SDK
 
@@ -50,20 +50,6 @@ I binding Xamarin per Microsoft Intune App SDK consentono di incorporare i crite
 Le app Xamarin compilate con i binding Xamarin per Intune App SDK possono ora ricevere i criteri di protezione delle app di Intune nei dispositivi registrati in Gestione dei dispositivi mobili di Intune e nei dispositivi non registrati.
 
 ## <a name="prerequisites"></a>Prerequisiti
-
-* **[Solo per Android]** Nel dispositivo deve essere installata l'app Portale aziendale di Microsoft Intune più recente.
-
-## <a name="get-started"></a>Operazioni preliminari
-
-1. Leggere le [condizioni di licenza](https://components.xamarin.com/license/microsoft.intune.mam) per il componente Xamarin per le funzionalità MAM di Microsoft Intune.
-
-2.  Scaricare la cartella del componente Xamarin per Intune App SDK da [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) o [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) ed estrarre i file. Entrambi i file scaricati al passaggio 1 e al passaggio 3 devono essere nello stesso livello di directory.
-
-3.  Nella riga di comando come amministratore eseguire `Xamarin.Component.exe install <.xam> file`.
-
-4.  In Visual Studio fare clic con il pulsante destro del mouse sui **componenti** nel progetto Xamarin creato in precedenza.
-
-5.  Selezionare **Modifica componenti** e aggiungere il componente Intune App SDK scaricato localmente nel computer.
 
 Leggere le [condizioni di licenza](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf). Stampare e conservare una copia delle condizioni di licenza. Scaricando e usando i binding Xamarin per Intune App SDK, l'utente accetta tali condizioni di licenza. Se non vengono accettate, non usare il software.
 

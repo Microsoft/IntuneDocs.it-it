@@ -6,8 +6,8 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
-ms.topic: article
+ms.date: 07/25/2018
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6f99ce2ae7937fe0b90353037e72f453a703dd8c
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 05251e3aeb0c290a51c378f8c67f3d55149b63dc
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34224229"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254502"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpoint dell'API data warehouse di Intune
 
@@ -39,7 +39,10 @@ Per altre informazioni, vedere [Autorizzare l'accesso alle applicazioni Web tram
 Gli endpoint dell'API data warehouse leggono le entità per ogni set. L'API supporta un verbo HTTP **GET** e un subset di opzioni di query.
 
 L'URL per Intune usa il formato seguente:  
-`https://fef.{<strong><em>location</em></strong>}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{<strong><em>entity-collection</em></strong>}?api-version={<strong><em>api-version</em></strong>}`
+`https://fef.{location}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity-collection}?api-version={api-version}`
+
+> [!NOTE]
+> Nell'URL precedente sostituire `{location}`, `{entity-collection}` e `{api-version}` in base ai dettagli specificati nella tabella seguente.
 
 L'URL contiene gli elementi seguenti:
 
@@ -48,7 +51,7 @@ L'URL contiene gli elementi seguenti:
 | location | msua06 | L'URL di base è reperibile visualizzando il pannello dell'API data warehouse nel portale di Azure. |
 | entity-collection | dates | Il nome della raccolta di entità OData. Per altre informazioni sulle raccolte e sulle entità nel modello di dati, vedere [Modello di dati](reports-ref-data-model.md). |
 | api-version | beta | Si intende la versione dell'API a cui accedere. Per altre informazioni, vedere [Versione](#API-version-information). |
-
+| maxhistorydays | 7 | (Facoltativo) Numero massimo di giorni della cronologia di elaborazione da recuperare. Questo parametro può essere aggiunto a qualsiasi raccolta, ma è attivo solo per le raccolte che includono `dateKey` nella proprietà chiave. Per altre informazioni, vedere [Filtri di intervallo DateKey](reports-api-url.md#datekey-range-filters). |
 
 ## <a name="api-version-information"></a>Informazioni sulla versione dell'API
 
@@ -57,3 +60,26 @@ La versione corrente delle API è: `beta`.
 ## <a name="odata-query-options"></a>Opzioni di query OData
 
 La versione corrente supporta i parametri di query OData seguenti: `$filter, $orderby, $select, $skip,` e `$top`.
+
+## <a name="datekey-range-filters"></a>Filtri di intervallo DateKey
+
+I filtri di intervallo `DateKey` possono essere usati per limitare la quantità di dati scaricabili per alcune raccolte che hanno come proprietà chiave `dateKey`. Il filtro `DateKey` può essere usato per ottimizzare le prestazioni del servizio fornendo il parametro di query `$filter` seguente:
+
+1.  `DateKey` da solo in `$filter`, per il supporto degli operatori `lt/le/eq/ge/gt` e il join con l'operatore logico `and`, dove possono essere mappati a una data di inizio e/o una data di fine.
+2.  `maxhistorydays` viene specificato come opzione di query personalizzata.<br>
+
+## <a name="filter-examples"></a>Esempi di filtro
+
+> [!NOTE]
+> Gli esempi di filtro presuppongono che la data odierna sia il 21 febbraio 2018.
+
+|                             Filtra                             |           Ottimizzazione delle prestazioni           |                                          Descrizione                                          |
+|:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
+|    `maxhistorydays=7`                                            |    Tutti                                      |    Restituisce dati con `DateKey` tra 20180214 e 20180221.                                     |
+|    `$filter=DateKey eq 20180214`                                 |    Tutti                                      |    Restituisce dati con `DateKey` uguale a 20180214.                                                    |
+|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Tutti                                      |    Restituisce dati con `DateKey` tra 20180214 e 20180220.                                     |
+|    `maxhistorydays=7&$filter=Id gt 1`                            |    I dati parziali con ID > 1 non vengono ottimizzati    |    Restituisce dati con `DateKey` tra 20180214 e 20180221 e ID maggiore di 1.             |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Tutti                                      |    Restituisce dati con `DateKey` uguale a 20180214. `maxhistorydays` viene ignorato.                            |
+|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    Nessuno                                      |    Non considerato come filtro di intervallo `DateKey`, pertanto nessun miglioramento delle prestazioni.                              |
+|    `$filter=DateKey ne 20180214`                                 |    Nessuno                                      |    Non considerato come filtro di intervallo `DateKey`, pertanto nessun miglioramento delle prestazioni.                              |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    Nessuno                                      |    Non considerato come filtro di intervallo `DateKey`, pertanto nessun miglioramento delle prestazioni. `maxhistorydays` ignorato.    |
