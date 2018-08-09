@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321561"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362059"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1123,6 +1123,16 @@ In questa versione sono state aggiornate alcune delle API Graph per Intune in ve
 
 
 ## <a name="notices"></a>Notifiche
+
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Modifica prevista: cambiare la password quando verrà aggiunta a Intune l'autenticazione successiva<!-- 1873216 -->
+Nella versione del servizio di settembre è prevista l'integrazione di Intune con la recente impostazione **Change Password at Next Auth** (Cambia password all'autenticazione successiva) di Apple per i dispositivi che eseguono macOS versione 10.13 e successive. Prima di questa impostazione, i provider MDM non possono verificare che il passcode del dispositivo sia stato modificato in modo che sia conforme. I criteri di configurazione e conformità di Intune convalidano solo la conformità della password di un dispositivo alla successiva modifica. Quando questa nuova funzionalità di Apple verrà aggiunta, gli utenti di macOS riceveranno una richiesta di aggiornamento della password, anche se la password è conforme.
+
+#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
+Questa modifica influisce sugli ambienti con un criterio del dispositivo macOS che usa Intune o un software MDM ibrido. Ora che Apple ha introdotto questa impostazione **Change Password at New Auth** (Cambia password all'autenticazione successiva), Intune può imporre agli utenti l'aggiornamento della password quando viene eseguito il push dei criteri password. Se si bloccano le risorse aziendali fino a quando il dispositivo viene contrassegnato come conforme, agli utenti finali potrebbe non essere consentito accedere alle risorse aziendali, ad esempio alla posta elettronica o ai siti di SharePoint, fino a quando non reimpostano la password. In futuro, tutti gli aggiornamenti ai criteri password di configurazione e conformità imporranno agli utenti designati l'aggiornamento delle password.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
+Informare il supporto tecnico. Se non si vuole applicare questo criterio del dispositivo macOS, è consigliabile annullare l'assegnazione del criterio macOS esistente o eliminarlo. La ricerca di mercato indica che la maggior parte dei clienti non è interessata da questa modifica. La maggior parte degli utenti finali aggiorna la password dopo aver ricevuto una richiesta di registrazione con una password o reimposta la password per mantenere la conformità.
+
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>Modifiche pianificate: Intune supporterà iOS 10 e versioni successive a settembre <!-- 2454656 -->
 Nel mese di settembre è previsto il rilascio di iOS 12 di Apple. Poco dopo il rilascio, verrà effettuata la transizione del servizio di registrazione di Intune, dell'app Portale aziendale e di Managed Browser per il supporto di iOS 10 e versioni successive.  
