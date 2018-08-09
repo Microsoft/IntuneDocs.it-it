@@ -4,8 +4,8 @@ description: Le informazioni contenute in questo argomento consentono di stabili
 keywords: ''
 author: erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 05/17/2018
+manager: dougeby
+ms.date: 07/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
+ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225189"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39450791"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparare le app line-of-business per i criteri di protezione delle app
 
@@ -48,8 +48,8 @@ Per altre informazioni sullo strumento di wrapping delle app per i criteri di pr
 
 |**Strumento di wrapping delle app** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Sì|Sì|
-|**Android**| In anteprima |Sì|
+|**iOS** |No: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|Sì|
+|**Android**|No: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|Sì|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK è progettato principalmente per i clienti che hanno le app nell'App Store Apple o in Google Play Store e che vogliono poter gestire le app con Intune. Tuttavia, qualsiasi app può sfruttare l'integrazione dell'SDK, anche se si tratta di un'app line-of-business.

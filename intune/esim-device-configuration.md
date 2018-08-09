@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336051"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400284"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurare i profili cellulare eSIM in Intune - Anteprima pubblica
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336051"
 
 ## <a name="introduction"></a>Introduzione
 
-eSIM è un chip SIM incorporato, che consente di accedere a Internet su una connessione alla rete cellulare in un dispositivo che supporta la tecnologia eSIM, ad esempio [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro). Con eSIM non è più necessario richiedere una scheda SIM all'operatore di telefonia mobile ed è possibile cambiare rapidamente operatore o piano dati.
+eSIM è un chip SIM incorporato, che consente di accedere a Internet su una connessione alla rete cellulare in un dispositivo che supporta la tecnologia eSIM, ad esempio [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro). Con un eSIM, non è necessario ottenere una scheda SIM dall'operatore di telefonia mobile. Chi viaggia in tutto il mondo può anche passare da un operatore di telefonia mobile a un altro e da un piano dati a un altro per rimanere sempre connesso.
 
 Ad esempio è possibile avere un piano di rete dati per il lavoro e un altro piano con un altro operatore per uso personale. Mentre si è in viaggio, è possibile ottenere l'accesso a Internet cercando operatori di telefonia mobile con piani dati nell'area in cui ci si trova.
 

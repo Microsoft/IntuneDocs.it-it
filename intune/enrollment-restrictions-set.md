@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
+ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905819"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501150"
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
@@ -77,7 +77,7 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
 4. In **Restrizioni sul tipo di dispositivi** scegliere la restrizione che si vuole impostare.
 5. Sotto il nome della restrizione (**Tutti gli utenti** per la restrizione predefinita) selezionare **Piattaforme**. Scegliere **Consenti** o **Blocca** per ogni piattaforma elencata.
 6. Selezionare **Salva**.
-7. Sotto il nome della restrizione (**Tutti gli utenti** per la restrizione predefinita) selezionare **Configurazioni della piattaforma**. Selezionare quindi le **Versioni** minima e massima per le piattaforme elencate. Versioni supportate:
+7. Sotto il nome della restrizione (**Tutti gli utenti** per la restrizione predefinita) selezionare **Configurazioni della piattaforma**. Selezionare quindi le **Versioni** minima e massima per le piattaforme elencate. I formati delle versioni supportate includono:
     - Il profilo di lavoro Android supporta il formato maggiore.minore.revisione.build.
     - iOS supporta il formato di versione maggiore.minore.revisione.
     - Windows supporta il formato maggiore.minore.revisione.build solo per Windows 10.

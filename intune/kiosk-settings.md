@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
+ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321802"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39481122"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Impostazioni relative alla modalità tutto schermo per Windows 10 e versioni successive in Intune
 
@@ -25,9 +25,18 @@ I profili di modalità tutto schermo vengono usati per configurare i dispositivi
 
 ## <a name="kiosk-settings"></a>Impostazioni della modalità tutto schermo
 
-1. Selezionare **Aggiungi** per creare un ambiente di modalità tutto schermo.
-2. Immettere il **nome di una configurazione di modalità tutto schermo**. Questo nome identifica un gruppo di applicazioni, il layout di queste app nel menu Start e gli utenti assegnati a questa configurazione di modalità tutto schermo.
-3. Selezionare la **modalità tutto schermo**. La **modalità tutto schermo** identifica il tipo di modalità tutto schermo supportata dal criterio. Le opzioni includono:
+1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+3. Immettere le seguenti proprietà:
+
+   - **Nome**: immettere un nome descrittivo per il nuovo profilo.
+   - **Descrizione:** immettere una descrizione per il profilo. Facoltativa, ma consigliata.
+   - **Piattaforma**: selezionare **Windows 10 e versioni successive**
+   - **Tipo di profilo**: selezionare **Modalità tutto schermo (anteprima)**
+   
+4. Selezionare **Modalità tutto schermo** > **Aggiungi**.
+5. Immettere il **nome di una configurazione di modalità tutto schermo**. Questo nome identifica un gruppo di applicazioni, il layout di queste app nel menu Start e gli utenti assegnati a questa configurazione di modalità tutto schermo.
+6. Selezionare la **modalità tutto schermo**. La **modalità tutto schermo** identifica il tipo di modalità tutto schermo supportata dal criterio. Le opzioni includono:
 
     - **Non configurata** (impostazione predefinita): il criterio non abilita la modalità tutto schermo.
     - **App singola per chiosco multimediale a schermo intero**: il profilo abilita il dispositivo per l'esecuzione come singolo account utente e lo blocca su un'unica app UWP (Universal Windows Platform). Pertanto, quando l'utente accede, viene avviata un'app specifica. Questa modalità impedisce anche all'utente di aprire nuove app o modificare l'app in esecuzione.

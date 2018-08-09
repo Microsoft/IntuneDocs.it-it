@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321741"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575050"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Usare le API per aggiungere a Intune autorità di certificazione di terze parti per SCEP
 
@@ -41,11 +41,18 @@ Con Intune gli amministratori creano i profili SCEP e quindi li assegnano ai dis
 - Il certificato radice trusted dell'autorità di certificazione
 - Gli attributi del certificato e altro ancora
 
-Il profilo SCEP viene assegnato ai dispositivi che eseguono l'archiviazione con Intune e sono configurati con questi parametri. In Intune viene creata una password SCEP generata dinamicamente, che viene assegnata al dispositivo.
+Il profilo SCEP viene assegnato ai dispositivi che eseguono l'archiviazione con Intune e sono configurati con questi parametri. In Intune viene creata una password di verifica SCEP generata dinamicamente, che viene assegnata al dispositivo.
 
-La password contiene informazioni dettagliate sui parametri previsti nella richiesta di firma del certificato inviata dal dispositivo al server SCEP. La password include anche l'ora di scadenza della richiesta di verifica. Intune esegue la crittografia delle informazioni, firma il BLOB crittografato e quindi inserisce questi dettagli nella password SCEP.
+Questa verifica contiene:
 
-I dispositivi che contattano il server SCEP per richiedere un certificato specificano questa password SCEP. La password deve superare la convalida affinché il server SCEP invii un certificato al dispositivo. Quando una password SCEP viene convalidata, vengono eseguiti questi controlli:
+- La password di verifica generata dinamicamente
+- Le informazioni dettagliate sui parametri previsti nella richiesta di firma del certificato inviata dal dispositivo al server SCEP
+- L'ora di scadenza della verifica
+
+Intune esegue la crittografia di queste informazioni, firma il BLOB crittografato e quindi inserisce questi dettagli nella password di verifica SCEP.
+
+I dispositivi che contattano il server SCEP per richiedere un certificato specificano questa password di verifica SCEP. Il server SCEP invia a Intune per la convalida la richiesta di firma del certificato e la password di verifica SCEP crittografata.  La password di verifica e la richiesta di firma del certificato devono superare la convalida perché il server SCEP invii un certificato al dispositivo. Quando una verifica SCEP viene convalidata, vengono eseguiti questi controlli:
+
 
 - Convalida la firma del BLOB crittografato
 - Conferma che la richiesta di verifica non è ancora scaduta

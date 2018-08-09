@@ -15,12 +15,12 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f03c60c12bfd759c738de50d320787bf4b85f99d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909185"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400352"
 ---
 # <a name="enroll-android-devices"></a>Registrare dispositivi Android
 
@@ -38,7 +38,7 @@ Per preparare la gestione dei dispositivi mobili è necessario impostare l'autor
 
 ## <a name="set-up-android-enrollment"></a>Configurare la registrazione di Android
 
-Per impostazione predefinita, Intune permette la registrazione di dispositivi Android e Samsung Knox Standard. Dopo aver soddisfatto i prerequisiti, gli amministratori devono semplicemente [indicare agli utenti come registrare i propri dispositivi](/intune-user-help/enroll-your-device-in-intune-android.md).
+Per impostazione predefinita, Intune permette la registrazione di dispositivi Android e Samsung Knox Standard. Dopo aver soddisfatto i prerequisiti, gli amministratori devono semplicemente [indicare agli utenti come registrare i propri dispositivi](/intune-user-help/enroll-your-device-in-intune-android).
 
 Dopo che un utente ha eseguito la registrazione, è possibile iniziare a gestirne i dispositivi in Intune con attività quali, ad esempio, [l'assegnazione dei criteri di conformità](compliance-policy-create-android.md), [la gestione delle app](app-management.md) e così via.
 
