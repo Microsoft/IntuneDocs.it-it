@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
-ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
+ms.openlocfilehash: ff2774b76bceeeeaecec7a4dc74876b11706d574
+ms.sourcegitcommit: 56a8a3c8974f54f0f9ecc1e5b43581502ecc348e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39362059"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39614514"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -57,6 +57,11 @@ Oltre alle App Store e App gestite, è ora possibile selezionare un'App predefin
 
 #### <a name="edit-your-office-365-pro-plus-app-deployments----2150145---"></a>Modificare le distribuzioni delle app di Office 365 Pro Plus <!-- 2150145 -->
 Per l'amministratore di Microsoft Intune è più facile modificare le distribuzioni delle app di Office 365 Pro Plus. Inoltre, non è più necessario eliminare le distribuzioni per modificare le proprietà del gruppo. Nel portale di Azure selezionare **Microsoft Intune** > **App per dispositivi mobili** > **App**. Selezionare la famiglia di prodotti Office 365 Pro Plus dall'elenco delle applicazioni.  
+
+
+#### <a name="updated-intune-app-sdk-for-android-is-now-available----2744271--"></a>È ora disponibile una versione aggiornata di Intune App SDK per Android<!-- 2744271-->
+
+È disponibile una versione aggiornata di Intune App SDK per Android per il supporto della versione Android P. Gli sviluppatori di app che usano Intune SDK per Android devono installare la versione aggiornata di Intune App SDK per garantire che le funzionalità di Intune nelle app Android continuino a funzionare come previsto nei dispositivi Android P. Questa versione di Intune App SDK offre un plug-in predefinito che esegue gli aggiornamenti dell'SDK. Non occorre riscrivere il codice esistente integrato. Per informazioni dettagliate, vedere [Intune SDK per Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android). Se si usa il vecchio stile con lo scudo per Intune, è consigliabile usare l'icona a forma di valigetta. Per informazioni dettagliate sulla personalizzazione, vedere [questo repository GitHub](https://github.com/msintuneappsdk/intune-app-partner-badge).
 
 
 ### <a name="device-configuration"></a>Configurazione del dispositivo
