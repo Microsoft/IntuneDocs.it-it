@@ -757,10 +757,10 @@ Per offrire agli utenti finali un maggior controllo sui dati e sulla privacy, so
 
 ## <a name="week-of-march-19-2018"></a>Settimana del 19 marzo 2018
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Esportare tutti i dispositivi in file CSV in Internet Explorer, Edge o Chrome <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Esportare tutti i dispositivi in file CSV in Internet Explorer, Microsoft Edge o Chrome <!-- 2258071 -->
 In **Dispositivi** > **Tutti i dispositivi** è possibile **esportare** i dispositivi in un elenco in formato CSV. Gli utenti di Internet Explorer (IE) con più di 10.000 dispositivi possono esportare i propri dispositivi in più file. Ogni file include fino a 10.000 dispositivi.
 
-Gli utenti di Edge e Chrome con più di 30.000 dispositivi possono esportare i propri dispositivi in più file. Ogni file include fino a 30.000 dispositivi.
+Gli utenti di Microsoft Edge e Chrome con più di 30.000 dispositivi possono esportare i propri dispositivi in più file. Ogni file include fino a 30.000 dispositivi.
 
 [Gestire dispositivi](device-management.md) offre ulteriori dettagli sulle operazioni eseguibili con i dispositivi gestiti.
 

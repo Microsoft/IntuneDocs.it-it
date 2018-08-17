@@ -98,7 +98,7 @@ Queste impostazioni sono applicabili a tipi di rete specifici, tra cui **Rete di
 
 ## <a name="windows-defender-smartscreen-settings"></a>Impostazioni di Windows Defender SmartScreen
 
-Supportate nelle seguenti edizioni di Windows 10 con Edge installato:
+Supportate nelle seguenti edizioni di Windows 10 con Microsoft Edge installato:
 - Home
 - Professional
 - Business

@@ -1,6 +1,6 @@
 ---
 title: Restrizioni dei dispositivi per Windows Holographic for Business in Microsoft Intune - Azure | Microsoft Docs
-description: Conoscere e configurare impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune per Windows Holographic for Business, tra cui annullamento della registrazione, georilevazione, password, installazione di app dall'App store, cookie e popup in Edge, Windows Defender, ricerca, cloud e archiviazione, connettività bluetooth, ora di sistema e dati di utilizzo in Azure.
+description: Conoscere e configurare impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune per Windows Holographic for Business, tra cui annullamento della registrazione, georilevazione, password, installazione di app dall'App store, cookie e popup in Microsoft Edge, Windows Defender, ricerca, cloud e archiviazione, connettività bluetooth, ora di sistema e dati di utilizzo in Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
