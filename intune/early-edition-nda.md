@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/06/2018
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: e24414d28b8adeae7dfbedb606ca1a7d21497a3f
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001911"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43093198"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>Edizione anticipata per Microsoft Intune - Agosto 2018
 
@@ -172,7 +172,8 @@ Per garantire la coerenza con l'API Graph, nell'interfaccia utente e nella docum
 - **Rimuovere i dati aziendali** verrà cambiato in **ritirare**
 - **Ripristino delle impostazioni predefinite** verrà cambiato in **cancellare**
 
-
+### <a name="delete-jamf-devices----2653306---"></a>Eliminare i dispositivi Jamf <!-- 2653306 -->
+Sarà possibile eliminare i dispositivi gestiti da JAMF tramite **Dispositivi** > scegliere il dispositivo Jamf > **Elimina**.
 
 <!-- 1807 start -->
 
@@ -189,12 +190,6 @@ La pagina **App** introdurrà una visualizzazione **Installata** che consente di
 
 ### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>Esperienza dell'app Portale aziendale migliorata per gli utenti del manager di registrazione dispositivi <!-- 675800 -->
 Quando un manager di registrazione dispositivi accede all'app Portale aziendale per Windows, l'app elenca solo il dispositivo in esecuzione corrente. Questo miglioramento ridurrà i timeout che in precedenza si verificavano quando l'app tentava di caricare tutti i dispositivi registrati nel manager di registrazione dispositivi.  
-
-### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Usare le licenze di dispositivo VPP per effettuare il provisioning anticipato del portale aziendale durante la registrazione DEP <!-- 1608345 -->
-È possibile usare le licenze di dispositivo Volume Purchase Program (VPP) per eseguire il provisioning anticipato del portale aziendale durante le registrazioni DEP (Device Enrollment Program). A tale scopo, quando si crea o si modifica un profilo di registrazione, specificare il token VPP che si vuole usare per installare il portale aziendale. Assicurarsi che il token non abbia una scadenza e di avere un numero sufficiente di licenze per l'app del portale aziendale. Se il token ha una scadenza o se il numero di licenze è insufficiente, Intune esegue il push del portale aziendale dell'App Store (che richiederà l'immissione di un ID Apple).
-
-###  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Estensioni file delle app line-of-business (LOB) di Windows <!-- 1884873 -->
-Le estensioni file delle app line-of-business di Windows ora includono *msi*, *appx*, *appxbundle*, *msix* e *msixbundle*. È possibile aggiungere un'app in Microsoft Intune selezionando **App per dispositivi mobili** > **App** > **Aggiungi**. Viene visualizzato il riquadro **Aggiungi app** che consente di selezionare il **Tipo di app**. Per le app line-of-business di Windows, selezionare il tipo di app **App line-of-business**, selezionare il **File del pacchetto dell'app** e quindi specificare un file di installazione con l'estensione appropriata.
 
 ### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Pacchetto di configurazione Windows Defender ATP aggiunto automaticamente al profilo di configurazione <!-- 2144658 -->
 Quando vengono usati [Advanced Threat Protection e dispositivi onboarding](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) in Intune, viene eseguito il download di un pacchetto di configurazione che viene aggiunto al profilo di configurazione. In un aggiornamento futuro Intune otterrà automaticamente il pacchetto da Windows Defender Security Center e lo aggiungerà al profilo.
