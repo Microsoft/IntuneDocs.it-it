@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909066"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255088"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Configurare la registrazione dei dispositivi del profilo di lavoro Android
 
@@ -34,7 +34,7 @@ Per configurare la gestione del profilo di lavoro Android, seguire questa proced
 2. Configurare la registrazione del profilo di lavoro Android. I profili di lavoro Android sono [supportati solo in alcuni dispositivi Android specifici](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Tutti i dispositivi che supportano i profili di lavoro Android supportano anche la gestione di Android convenzionale. Intune consente di specificare la modalità di gestione dei dispositivi che supportano i profili di lavoro Android nelle [restrizioni di registrazione](enrollment-restrictions-set.md).
     - **Blocca (impostazione predefinita)**: tutti i dispositivi Android, inclusi i dispositivi che supportano i profili di lavoro Android, vengono registrati come dispositivi Android convenzionali.
     - **Consenti**: tutti i dispositivi che supportano i profili di lavoro Android vengono registrati come dispositivi del profilo di lavoro Android. I dispositivi Android che non supportano i profili di lavoro Android vengono registrati come dispositivi Android convenzionali.
-3. [Informare gli utenti su come registrare i loro dispositivi](/intune-user-help/enroll-your-device-in-intune-android.md).
+3. [Informare gli utenti su come registrare i loro dispositivi](/intune-user-help/enroll-your-device-in-intune-android).
 
 
 Per registrare nei profili di lavoro Android dispositivi che sono già stati registrati come dispositivi Android convenzionali, è necessario annullare e quindi rieseguire la registrazione dei dispositivi.

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 08/14/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: ff2774b76bceeeeaecec7a4dc74876b11706d574
-ms.sourcegitcommit: 56a8a3c8974f54f0f9ecc1e5b43581502ecc348e
+ms.openlocfilehash: 41c5af504bb65a661e55d09d735a78df780deb84
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39614514"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092176"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,12 +42,21 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazio
 
 -->   
 
+
+## <a name="week-of-august-27-2018"></a>Settimana del 27 agosto 2018
+
+### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Usare le licenze di dispositivo VPP per effettuare il provisioning anticipato del portale aziendale durante la registrazione DEP <!-- 1608345 -->
+È ora possibile usare le licenze di dispositivo Volume Purchase Program (VPP) per eseguire il provisioning anticipato del portale aziendale durante le registrazioni DEP (Device Enrollment Program). A tale scopo, quando si [crea o si modifica un profilo di registrazione](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), specificare il token VPP che si vuole usare per installare il portale aziendale. Assicurarsi che il token non abbia una scadenza e di avere un numero sufficiente di licenze per l'app del portale aziendale. Se il token ha una scadenza o se il numero di licenze è insufficiente, Intune esegue il push del portale aziendale dell'App Store (che richiederà l'immissione di un ID Apple).
+
+
+## <a name="week-of-august-14-2018"></a>Settimana del 14 agosto 2018
+
+### <a name="macos-support-for-apple-device-enrollment-program----747651---"></a>Supporto macOS per il Device Enrollment Program di Apple<!-- 747651 -->
+Intune supporta ora la registrazione dei dispositivi macOS nel Device Enrollment Program (DEP) di Apple. Per altre informazioni, vedere [Registrare automaticamente i dispositivi macOS nel programma Device Enrollment Program di Apple](device-enrollment-program-enroll-macos.md).
+
 ## <a name="week-of-july-23-2018"></a>Settimana del 23 luglio 2018
 
 ### <a name="app-management"></a>Gestione delle app
-
-####  <a name="windows-apps-file-extensions----1884873---"></a>Estensioni file delle app di Windows <!-- 1884873 -->
-Le estensioni file delle app di Windows ora includono *msi*, *appx*, *appxbundle*, *msix* e *msixbundle*. È possibile aggiungere un'app in Microsoft Intune selezionando **App per dispositivi mobili** > **App** > **Aggiungi**. Viene visualizzato il riquadro **Aggiungi app** che consente di selezionare il **Tipo di app**. Selezionare un tipo di app che consenta di caricare un file di pacchetto dell'app, selezionare il **File del pacchetto dell'app** e quindi specificare un file di installazione con l'estensione appropriata.
 
 #### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>Supporto di app line-of-business (LOB) per macOS <!-- 1895847 -->
 Microsoft Intune consente la distribuzione di app line-of-business per macOS come app **obbligatorie** o **disponibili con registrazione**. Gli utenti finali possono ottenere le app distribuite come app **disponibili** tramite il Portale aziendale per macOS o il [sito Web del Portale aziendale](https://portal.manage.microsoft.com).
@@ -757,10 +766,10 @@ Per offrire agli utenti finali un maggior controllo sui dati e sulla privacy, so
 
 ## <a name="week-of-march-19-2018"></a>Settimana del 19 marzo 2018
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Esportare tutti i dispositivi in file CSV in Internet Explorer, Microsoft Edge o Chrome <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Esportare tutti i dispositivi in file CSV in Internet Explorer, Edge o Chrome <!-- 2258071 -->
 In **Dispositivi** > **Tutti i dispositivi** è possibile **esportare** i dispositivi in un elenco in formato CSV. Gli utenti di Internet Explorer (IE) con più di 10.000 dispositivi possono esportare i propri dispositivi in più file. Ogni file include fino a 10.000 dispositivi.
 
-Gli utenti di Microsoft Edge e Chrome con più di 30.000 dispositivi possono esportare i propri dispositivi in più file. Ogni file include fino a 30.000 dispositivi.
+Gli utenti di Edge e Chrome con più di 30.000 dispositivi possono esportare i propri dispositivi in più file. Ogni file include fino a 30.000 dispositivi.
 
 [Gestire dispositivi](device-management.md) offre ulteriori dettagli sulle operazioni eseguibili con i dispositivi gestiti.
 
@@ -1129,6 +1138,16 @@ In questa versione sono state aggiornate alcune delle API Graph per Intune in ve
 
 ## <a name="notices"></a>Notifiche
 
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Intervenire: aggiornare le impostazioni delle password per i criteri di limitazione o di conformità dei dispositivi Android in Intune
+Intune rimuoverà il tipo di password disponibile "Impostazione predefinita dispositivo" per i dispositivi Android 4.4 e versioni successive. A causa delle differenze tra le piattaforme Android e le impostazioni predefinite dei dispositivi, questo criterio viene spesso considerato facoltativo dal dispositivo. Per evitare confusione per l'applicazione di questa impostazione in Android, questa impostazione verrà rimossa dall'interfaccia utente in una versione futura. 
+#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
+- Se lo scopo è richiedere una password per i dispositivi, invece di usare "Impostazione predefinita dispositivo" è consigliabile modificare i profili di piattaforma Android per specificare chiaramente il tipo di password richiesto.
+- Se lo scopo è consentire all'utente finale di decidere se creare una password, selezionare il pulsante "Non configurato". Quando questa impostazione verrà rimossa dall'interfaccia utente, se è ancora impostata verrà richiesto di scegliere un valore diverso da "Impostazione predefinita dispositivo" in occasione della modifica successiva del profilo.
+Operazioni di preparazione alla modifica
+Rivedere le impostazioni per le password nei criteri di limitazione e di conformità per i dispositivi aziendali Android. Queste impostazioni sono disponibili in Sicurezza di sistema per Criteri di conformità e in Password per il dispositivo o nelle impostazioni del profilo di lavoro per Limitazioni del dispositivo. Nella sezione Informazioni aggiuntive è disponibile un collegamento ad altre informazioni e screenshot per le posizioni in cui vengono configurate queste impostazioni.
+####<a name="additional-information"></a>Informazioni aggiuntive
+https://aka.ms/PasswordSettings 
+
 ### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Modifica prevista: cambiare la password quando verrà aggiunta a Intune l'autenticazione successiva<!-- 1873216 -->
 Nella versione del servizio di settembre è prevista l'integrazione di Intune con la recente impostazione **Change Password at Next Auth** (Cambia password all'autenticazione successiva) di Apple per i dispositivi che eseguono macOS versione 10.13 e successive. Prima di questa impostazione, i provider MDM non possono verificare che il passcode del dispositivo sia stato modificato in modo che sia conforme. I criteri di configurazione e conformità di Intune convalidano solo la conformità della password di un dispositivo alla successiva modifica. Quando questa nuova funzionalità di Apple verrà aggiunta, gli utenti di macOS riceveranno una richiesta di aggiornamento della password, anche se la password è conforme.
 
@@ -1171,22 +1190,6 @@ Dopo il 31 ottobre 2018, se si riscontra un problema relativo all'uso di una ver
 
 **Informazioni aggiuntive**: [Passaggio di Intune a TLS 1.2 per la crittografia](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
-### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>Piano di modifica: Nuova impostazione di Windows 10 per la configurazione della modalità a tutto schermo in Intune <!-- 1560072 -->
-Verrà modificata la modalità e la posizione in cui configurare i desktop Windows 10 versione 1709 e successive (RS3 e successive) nel portale di Azure di Intune.
-
-#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica? 
-I dati registrati indicano che si sta usando l'impostazione Windows 10 > Limitazioni del dispositivo > Modalità tutto schermo (anteprima). In maggio l'impostazione verrà rinominata Windows 10 > Limitazioni del dispositivo > Modalità tutto schermo (obsoleto) nell'interfaccia utente a indicare che non ne è più consigliato l'utilizzo. L'impostazione continuerà tuttavia a funzionare fino all'aggiornamento di luglio di Intune. Quindi, verrà resa obsoleta nel back-end e non funzionerà più. In alternativa, verrà rilasciato in maggio un nuovo profilo di configurazione dei dispositivi: Windows 10 > Modalità tutto schermo contenente le impostazioni per la configurazione delle modalità a tutto schermo in Windows 10 RS4 e versioni successive.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica  
-Quando Intune rilascerà l'aggiornamento del servizio alla fine del mese di maggio, verranno rese disponibili le istruzioni per testare e verificare la possibilità di eseguire la migrazione della configurazione della modalità a tutto schermo da Windows 10 RS3 a Windows 10 RS4. Usare queste istruzioni per configurare i dispositivi usando il nuovo profilo di configurazione dei dispositivi per le modalità a tutto schermo.
-
-#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
-Questa modifica interesserà sia i clienti Intune autonomi che ibridi (clienti Intune con Configuration Manager). Questa integrazione contribuirà alla semplificazione dell'amministrazione della gestione del cloud. Sarà sufficiente un solo pannello in Azure, il pannello Intune, per gestire gruppi, criteri e app, nonché per la gestione di tutti i dispositivi mobili.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
-Contrassegnare come preferito il pannello Intune anziché il pannello del servizio Protezione app di Intune e assicurarsi di avere dimestichezza con il flusso di lavoro Criterio di protezione dell'app nel pannello App per dispositivi mobili all'interno di Intune. Il reindirizzamento durerà per un breve periodo di tempo e quindi il pannello Protezione app verrà rimosso. Tenere presente che tutti i criteri di protezione delle app sono già presenti in Intune ed è possibile modificare tutti i criteri di accesso condizionale seguendo la documentazione disponibile qui: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
-
-**Informazioni aggiuntive**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Modifiche pianificate: modifica del supporto del plug-in Cordova per Microsoft Intune App SDK
 Intune terminerà il supporto per il [plug-in Cordova per Microsoft Intune App SDK](app-sdk-cordova.md) il 1 maggio 2018. È consigliabile usare invece lo strumento di wrapping delle app di Intune per preparare le app basate su Cordova per la gestibilità e la disponibilità in Intune. Quando questa modifica diventerà effettiva, non sarà più eseguita la gestione del plug-in Cordova per Microsoft Intune App SDK né si riceveranno aggiornamenti. Gli sviluppatori di App non potranno usare questo plug-in. Intune intende continuare a supportare le app create con Cordova. Tuttavia, tutte le app create con il plug-in Cordova per Microsoft Intune App SDK subiranno una riduzione delle funzionalità in Intune. Dopo il wrapping con lo strumento di wrapping delle app di Intune, le app possono essere distribuite agli utenti finali nel modo usuale. Per le app Android basate su Cordova rilasciate in Google Play Store:

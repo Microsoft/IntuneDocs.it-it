@@ -1,20 +1,27 @@
---
-# <a name="required-metadata"></a>metadati obbligatori
-
-titolo: Vantaggi di Intune App SDK suffissotitolo: Descrizione di Microsoft Intune: Intune App SDK è disponibile per le piattaforme iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune.
-keywords: author: Erikre ms.author: erikre manager: dougeby ms.date: 05/15/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-
-# <a name="optional-metadata"></a>metadati facoltativi
-
-#<a name="robots"></a>ROBOT:
-#<a name="audience"></a>audience:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: aanavath ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-classic
-
 ---
-
+title: Vantaggi di Intune App SDK
+titlesuffix: Microsoft Intune
+description: Intune App SDK è disponibile per le piattaforme iOS e Android e abilita le funzionalità di gestione di app per dispositivi mobili con Microsoft Intune.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 05/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
+ms.reviewer: aanavath
+ms.suite: ems
+ms.custom: intune-classic
+ms.openlocfilehash: 19a550b9ecdee55f29b9ac9424c009bf68c25ed1
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251649"
+---
 # <a name="intune-app-sdk-overview"></a>Panoramica di Intune App SDK
 Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di protezione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. La maggior parte delle funzionalità dell'SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che ne richiedono la partecipazione.
 
