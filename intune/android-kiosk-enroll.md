@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212036"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903144"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurare la registrazione dei dispositivi in modalità tutto schermo Android Enterprise
 
@@ -56,7 +56,7 @@ Per configurare la gestione della modalità tutto schermo di Android, seguire qu
 1. Passare al [portale di Intune](https://portal.azure.com) e scegliere **Registrazione del dispositivo** > **Registrazione Android** > **Registrazioni dei dispositivi per uso in modalità tutto schermo e per attività**.
 2. Scegliere **Crea** e compilare i campi obbligatori.
     - **Nome**: digitare un nome che verrà usato per l'assegnazione del profilo al gruppo di dispositivi dinamico.
-    - **Data di scadenza del token**: data in cui il token scade. Google impone un massimo di 30 giorni.
+    - **Data di scadenza del token**: data in cui il token scade. Google impone un massimo di 90 giorni.
 3. Scegliere **Crea** per salvare il profilo.
 
 ### <a name="create-a-device-group"></a>Creare un gruppo di dispositivi
@@ -110,7 +110,7 @@ Per i dispositivi Android 5.1 e versioni successive che supportano NFC, è possi
 
 ### <a name="enroll-by-using-a-token"></a>Registrare con un token
 
-Per i dispositivi Android 6 e versioni successive, è possibile usare il token per registrare il dispositivo.
+Per i dispositivi Android 6 e versioni successive, è possibile usare il token per registrare il dispositivo. In Android 6.1 e versioni successive è anche possibile sfruttare la scansione del codice a matrice quando si usa il metodo di registrazione **aft#setup**.
 
 1. Attivare il ripristino delle impostazioni di fabbrica del dispositivo.
 2. Nella schermata **Benvenuto** selezionare la lingua.
@@ -125,6 +125,9 @@ Per i dispositivi Android 6 e versioni successive, è possibile usare il token p
 ### <a name="enroll-by-using-a-qr-code"></a>Registrare con un codice a matrice
 
 Nei dispositivi Android 7 e versioni successive è possibile eseguire la scansione del codice a matrice dal profilo di registrazione per registrare il dispositivo.
+
+> [!Note]
+> Lo zoom del browser può impedire ai dispositivi di eseguire la scansione del codice a matrice. È possibile risolvere il problema aumentando il livello di zoom del browser.
 
 1. Per avviare la lettura del codice a matrice nel dispositivo Android, toccare più volte nella prima schermata visualizzata dopo il ripristino delle impostazioni di fabbrica.
 2. Per i dispositivi Android 7 e 8, verrà richiesto di installare un lettore di codici a matrice. I dispositivi Android 9 e versioni successive includono già un lettore di codici a matrice installato.

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: dc5d9f47a8d950c6c5de9f362bd618d1724055f4
+ms.sourcegitcommit: 3e3e2af98dd92f7ba710f393841cfdb3dbcc4867
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444915"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42912152"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Individuare dispositivi iOS persi o rubati con Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Per ottenere la posizione di un dispositivo iOS perso o rubato su una mappa, usare l'azione **Individua il dispositivo**. Deve essere un dispositivo iOS di proprietà dell'azienda registrato attraverso il programma DEP (Device Enrollment Program) e in modalità con supervisione. Prima di usare questa azione, assicurarsi che il dispositivo sia in [modalità di dispositivo perso](device-lost-mode.md).
+Per ottenere la posizione di un dispositivo iOS perso o rubato su una mappa, usare l'azione **Individua il dispositivo**. Il dispositivo deve essere in modalità con supervisione. Prima di usare questa azione, assicurarsi che il dispositivo sia in [modalità di dispositivo perso](device-lost-mode.md).
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 
