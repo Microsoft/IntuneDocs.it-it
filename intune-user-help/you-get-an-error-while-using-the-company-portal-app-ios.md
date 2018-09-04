@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a3e0ffd583d1709a9127dc346d0271578820a10e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 874007e161f4271fc4faed9d939046c17e52ac7b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014861"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147302"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Si verifica un errore durante l'utilizzo dell'app Portale aziendale
 
@@ -34,4 +34,4 @@ Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo i
 
 -   Agitare il dispositivo mentre è attiva l'app Portale aziendale e toccare **Posta elettronica** quando viene visualizzato l'avviso di diagnostica. Se l'avviso non viene visualizzato quando si agita il dispositivo, aprire **Impostazioni** > **Portale aziendale** e verificare che l'opzione **Movimento di agitazione** sia selezionata.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

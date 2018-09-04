@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327688"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149601"
 ---
 # <a name="email-logs-to-your-company-support"></a>Inviare i log al supporto tecnico dell'azienda tramite posta elettronica
 
@@ -45,4 +45,4 @@ Per inviare i log al supporto tecnico dell'azienda tramite posta elettronica:
 3.  Toccare **Invia messaggio di posta elettronica e Carica i log**.
 4.  Quando il caricamento è completo, toccare l'app di posta elettronica. Si aprirà un messaggio di posta elettronica con l'ID evento imprevisto pre-popolato nel campo Oggetto. Nel corpo del messaggio di posta elettronica descrivere il problema che si è verificato.  
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

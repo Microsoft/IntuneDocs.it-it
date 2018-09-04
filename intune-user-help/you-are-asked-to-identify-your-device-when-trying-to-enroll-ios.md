@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6c4e89524047b99b9c9eb3f0e65fe482a8ae85a2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fb7bf238fab91495a8c9dd498be4918669aa2579
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016646"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150519"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>È necessario identificare il dispositivo durante il tentativo di registrazione
 
@@ -32,4 +32,4 @@ Se si sta provando a registrare un dispositivo iOS in Intune e viene visualizzat
 2. Toccare **Continua**.
 3. Immettere gli ultimi quattro caratteri del numero di serie del dispositivo per verificare che il dispositivo sia stato registrato in Intune. Per trovare il numero di serie, vedere [Come trovare il numero di serie del dispositivo](how-do-i-find-the-serial-number-on-my-device-ios.md).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

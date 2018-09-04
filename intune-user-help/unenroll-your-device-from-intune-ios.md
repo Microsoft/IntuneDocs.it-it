@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: ba0f2675bfd65f60f6f16d6be738cdc1baa3e7e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547489"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148798"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Rimuovere il dispositivo iOS da Intune
 
@@ -74,4 +74,4 @@ Il Portale aziendale archivia i dati locali in tre posizioni del dispositivo.
 -   **Keychain**: il dispositivo archivia le password e altre informazioni usate per accedere al keychain. Le app Microsoft condividono le informazioni di accesso con qualsiasi app sviluppata da Microsoft disponibile nel dispositivo, ad esempio Microsoft Outlook e Microsoft Authenticator. Come per Analisi di Apple, queste informazioni possono essere rimosse soltanto ripristinando il dispositivo sulle impostazioni predefinite. Questa operazione cancellerà tutte le informazioni personali sul dispositivo. A tale scopo, aprire **Impostazioni** > **Generale** > **Ripristina** > **Erase All Content and Settings** (Cancella tutti i contenuti e tutte le impostazioni).
 
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

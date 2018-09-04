@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fcf71015d292ea22be1c818e526bc723b1af7165
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 24aa876b7100f0f802ab3723cedf92a32bc7e9d7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017615"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149708"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>Rimuovere il dispositivo dalla gestione se sono state rifiutate le Condizioni per l'utilizzo
 
@@ -52,4 +52,4 @@ Per rimuovere tutti i dati archiviati dall'app Portale aziendale per Android nel
   - Eliminare la cartella '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal'
 
 
-Serve ancora assistenza? Contattare il supporto tecnico aziendale (accedere al [sito Web Portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) per informazioni sul contatto) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.
+Serve ancora assistenza? Contattare il supporto tecnico aziendale (accedere al [sito Web Portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980) per informazioni sul contatto) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having unenrolling my Android device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.

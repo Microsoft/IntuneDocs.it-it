@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 69a7855dc2df9f74fb529c405cbf02a32cfdea1e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4006f5784115a063eee80c817dc9b99c99dec827
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017955"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149688"
 ---
 # <a name="update-your-windows-10-device"></a>Aggiornare un dispositivo Windows 10
 
@@ -34,4 +34,4 @@ L'azienda o l'istituto di istruzione vuole assicurarsi che i dispositivi che acc
 
 Se la versione di Windows è più recente rispetto a quella supportata dall'azienda, sarà necessario [eseguire passaggi diversi per risolvere il problema](your-windows-version-isnt-yet-supported.md)
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

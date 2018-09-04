@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 663da92e11befeae1f65467e887870a52640cbeb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 33b6199c25e9e36b65dfe2ca819640fa614e68b6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020572"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148224"
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Outlook non sincronizza la posta elettronica gestita quando è attivata l'ottimizzazione della batteria per Android
 
 > [!IMPORTANT]
-> Questo problema è documentato qui perché sono state ricevute numerose segnalazioni dei clienti a questo proposito. Se il problema continua a verificarsi dopo avere eseguito questi passaggi, contattare il [supporto tecnico dell'azienda](https://portal.manage.microsoft.com#HelpDeskDialog) per ulteriore assistenza.
+> Questo problema è documentato qui perché sono state ricevute numerose segnalazioni dei clienti a questo proposito. Se il problema continua a verificarsi dopo avere eseguito questi passaggi, contattare il [supporto tecnico dell'azienda](https://go.microsoft.com/fwlink/?linkid=2010980) per ulteriore assistenza.
 
 La registrazione del dispositivo in Intune consente di ottenere l'accesso alle risorse aziendali. Una delle risorse più comuni è l'accesso alla posta elettronica. È stato rilevato un problema di accesso alla posta elettronica tramite Outlook per i dispositivi Android quando è attivata l'ottimizzazione della batteria. L'ottimizzazione della batteria può essere attivata automaticamente per tentare di mantenere acceso il dispositivo quanto più a lungo possibile. A tale scopo, l'ottimizzazione della batteria tenta di interrompere i download automatici della posta elettronica.
 
@@ -75,4 +75,4 @@ Inoltre, se si usa un dispositivo Samsung con una versione precedente di Android
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

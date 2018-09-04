@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 522a300760fe4446fc6e1ff211763279ba4fc7bf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4cce70abac079ab1761994ba91040c16375e013
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021184"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149756"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Il dispositivo Android è rooted, quindi non è possibile connettersi
 
@@ -34,6 +34,6 @@ Esistono un paio di modi più comuni in cui il dispositivo potrebbe essere diven
 
 - È possibile che sul dispositivo sia stata installata un'app che il software di rilevamento radice ritiene rappresenti un rischio per la sicurezza. Se viene visualizzato questo messaggio immediatamente dopo l'installazione di un'app, provare a disinstallarla.
 
-- È possibile che il produttore del dispositivo abbia installato un prodotto che il software di rilevamento radice ritiene rappresenti un rischio per la sicurezza. In questo caso, sarà necessario contattare il supporto tecnico dell'azienda per assistenza. Per informazioni sul contatto passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+- È possibile che il produttore del dispositivo abbia installato un prodotto che il software di rilevamento radice ritiene rappresenti un rischio per la sicurezza. In questo caso, sarà necessario contattare il supporto tecnico dell'azienda per assistenza. Per informazioni sul contatto passare al [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 Se è stato l'utente a rendere rooted il dispositivo, sarà necessario invertire il processo e ripristinare lo stato unrooted del dispositivo.

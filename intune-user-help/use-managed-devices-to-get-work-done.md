@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755233"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150667"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usare dispositivi gestiti per lo svolgimento del lavoro
 Microsoft Intune è un componente software che consente alle organizzazioni di gestire dispositivi (ad esempio smartphone, tablet e PC), app e altre risorse aziendali come la posta elettronica. Questo strumento permette ai dipendenti di accedere alle informazioni di lavoro praticamente da qualsiasi luogo su quasi tutti i dispositivi e, al tempo stesso, contribuisce a proteggere le informazioni aziendali.
@@ -36,7 +36,7 @@ Il supporto tecnico dell'azienda può vedere le informazioni relative al lavoro,
 È possibile accedere al portale aziendale in due modi diversi:
 
 - Installando l'app Portale aziendale nel dispositivo. In genere è possibile scaricare l'app Portale aziendale dall'App Store del dispositivo, ma anche il supporto tecnico dell'azienda può installare l'app.
-- Visitando il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) impostato dal supporto tecnico dell'azienda.
+- Visitando il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980) impostato dal supporto tecnico dell'azienda.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual è la differenza tra app e sito Web?
 Esistono alcune lievi differenze tra l'app Portale aziendale e il sito Web del portale aziendale, ma la maggior parte delle attività può essere eseguita su entrambi. Ad esempio, è possibile:
@@ -102,4 +102,4 @@ Microsoft consiglia di provare prima di tutto a risolvere il problema autonomame
 - [Risolvere problemi comuni con il dispositivo macOS](troubleshoot-your-device-macos.md)
 - [Risolvere problemi comuni con il dispositivo Windows](troubleshoot-your-device-windows.md)
 
-È possibile aggiungere un commento di seguito per richiedere assistenza, ma ogni organizzazione ha requisiti diversi e non sempre Microsoft è in grado di rispondere alle domande. Rivolgersi al personale di supporto della propria azienda è probabilmente il modo più efficace per ottenere risposte veloci e pertinenti. Le informazioni di contatto dovrebbero essere disponibili nel [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+È possibile aggiungere un commento di seguito per richiedere assistenza, ma ogni organizzazione ha requisiti diversi e non sempre Microsoft è in grado di rispondere alle domande. Rivolgersi al personale di supporto della propria azienda è probabilmente il modo più efficace per ottenere risposte veloci e pertinenti. Le informazioni di contatto dovrebbero essere disponibili nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

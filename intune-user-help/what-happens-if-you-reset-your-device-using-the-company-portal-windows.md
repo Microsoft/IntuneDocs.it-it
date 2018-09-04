@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755488"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149124"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Che cosa avviene se si reimposta un dispositivo Windows con l'app Portale aziendale?
 
@@ -34,4 +34,4 @@ Quando si usa l'app Portale aziendale o il [sito Web del portale aziendale](rese
 |Il dispositivo può accedere solo alla posta elettronica aziendale|**Windows Phone 8.1**<br />Il dispositivo non sarà più visualizzato nel portale aziendale e verranno eliminati l'account di posta elettronica aziendale e i messaggi di posta elettronica non salvati.<br /><br />**Windows 7 o Windows Vista**<br />Non è possibile reimpostare un computer che esegue Windows 7 o versioni precedenti che viene usato solo per la posta elettronica.<br /><br />**Windows 8.1 e Windows 8**<br />Il dispositivo non sarà più visualizzato nel portale aziendale e verranno eliminati l'account di posta elettronica aziendale e i messaggi di posta elettronica non salvati.|
 |PC e portatili|**Windows 8.1 e Windows 8**<br />Non è possibile reimpostare un computer che esegue Windows 8 o Windows 8.1 a meno che non sia usato solo per la posta elettronica.<br /><br />**Windows 7 o Windows Vista**<br />Non è possibile reimpostare un computer che esegue Windows 7 o versioni precedenti.|
 
-Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Per eventuali domande, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

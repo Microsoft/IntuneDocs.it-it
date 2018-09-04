@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 345b62c115525fb3be2a2bcfdffc5388df7417af
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9e6935dd5f25e14a5cef44d899c647d2927ebbbb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751748"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147078"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Operazioni eseguite in un dispositivo macOS gestito da Jamf
 
@@ -34,4 +34,4 @@ __Operazioni da eseguire se viene visualizzato il messaggio "AccountNotOnboarded
 
 Se è stata aperta l'app Portale aziendale e viene visualizzato un messaggio con la dicitura "AccountNotOnboarded", è necessario chiudere l'app Portale aziendale e passare ad **Applicazioni** > **Self-Service**. Per la società sarà disponibile un criterio di registrazione dei dispositivi che deve essere installato. Fare clic sul criterio per installarlo e quindi aprire di nuovo l'app Portale aziendale.
 
-Serve ancora assistenza? Rivolgersi al personale del supporto tecnico dell'azienda. È possibile trovare le informazioni di contatto nel [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Rivolgersi al personale del supporto tecnico dell'azienda. È possibile trovare le informazioni di contatto nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

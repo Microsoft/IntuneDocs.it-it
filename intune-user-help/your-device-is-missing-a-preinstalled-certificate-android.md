@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50864d3af4383a95c037868a9f9b9a61e1eb8172
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d51b141b09090119f7c9711ffd56d6b382f6e3dc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019314"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147952"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>Manca un certificato necessario per il dispositivo Android generalmente installato nel telefono
 
@@ -44,9 +44,9 @@ Se il dispositivo non è registrato in Intune e manca un certificato solitamente
 
 5. Chiudere il browser e l'app Portale aziendale.
 
-6. Aprire nuovamente l'app Portale aziendale. Accedere all'app Portale aziendale. Se non è ancora possibile usare l'app Portale aziendale, richiedere assistenza al supporto tecnico dell'azienda usando le informazioni riportate nel [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+6. Aprire nuovamente l'app Portale aziendale. Accedere all'app Portale aziendale. Se non è ancora possibile usare l'app Portale aziendale, richiedere assistenza al supporto tecnico dell'azienda usando le informazioni riportate nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 >[!NOTE]
 > Se l'installazione di questo certificato non risolve il problema e viene visualizzato un altro messaggio "certificato mancante", è necessario eseguire passaggi aggiuntivi per [installare il certificato mancante](your-device-is-missing-an-IT-required-certificate-android.md).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

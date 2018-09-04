@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fb2f225d47d1589e7bccbafc4a23f3cecec12897
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2bd36a0327472f24a3a99b7975e736c9fa5385eb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018771"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149064"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Aumentare la sicurezza del dispositivo impostando la password corretta
 
@@ -46,4 +46,4 @@ Se il dispositivo Windows non è conforme ai criteri password del supporto tecni
 3. Immettere la nuova password nella casella **Nuova password** e quindi digitarla nuovamente nella casella **Conferma la password**.
 4. Scegliere **fatto**.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

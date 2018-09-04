@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ec853bce004c70b1a833218f2ef9f4c14d6bb2b7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1cf4b5eb051775a289e727ec6bc03c5af8734b6f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032081"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147249"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>È necessario identificare il dispositivo durante il tentativo di registrazione
 
@@ -32,4 +32,4 @@ Se si sta provando a registrare un dispositivo macOS in Intune e viene visualizz
 2. Fare clic su **Continua**.
 3. Immettere gli ultimi quattro caratteri del numero di serie del dispositivo per verificare che il dispositivo sia stato registrato in Intune. Per trovare il numero di serie, vedere [Come trovare il numero di serie del dispositivo](how-do-i-find-the-serial-number-on-my-device-macos.md).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

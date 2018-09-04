@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c61a4807e55c3af5038c67c05157b9ad14002347
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 043b04688630f345be625456fb9cfec586e2f790
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018550"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150753"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>Manca un certificato necessario per il dispositivo
 
@@ -40,4 +40,4 @@ Il primo passaggio da tentare consiste nel verificare se nel dispositivo [è pre
 
 Se il problema persiste, il supporto tecnico dell'azienda può [richiedere di installare un altro certificato per maggiore sicurezza](your-device-is-missing-an-IT-required-certificate-android.md).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

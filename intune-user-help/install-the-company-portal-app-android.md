@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 05d7f1956e4537a3a51871ac3670bfaea5a9696f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 066b412fe1f52e5e7497512d744a35cd5c77f08a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017921"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147590"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Installare l'app Portale aziendale per Android
 
@@ -46,4 +46,4 @@ Portale aziendale è un'app che fornisce accesso alle app, alla posta elettronic
 
 Dopo aver scaricato l'app Portale aziendale, è probabile che si voglia [registrare il dispositivo in Intune](enroll-your-device-in-Intune-android.md) per ottenere accesso completo alle informazioni di lavoro. È anche possibile [eseguire l'accesso usando un altro dispositivo](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

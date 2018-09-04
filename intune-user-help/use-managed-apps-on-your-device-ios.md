@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 506b2e50333be9f284b7709fc2a57693330ff7a4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031652"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147503"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usare le app gestite nel dispositivo iOS
 
@@ -64,4 +64,4 @@ Di seguito sono riportati alcuni esempi di opzioni che il supporto tecnico dell'
 
 -   Requisiti di crittografia dati
 
-Per altre informazioni sulle applicazioni gestite nel dispositivo, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Per altre informazioni sulle applicazioni gestite nel dispositivo, contattare il supporto tecnico dell'azienda. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

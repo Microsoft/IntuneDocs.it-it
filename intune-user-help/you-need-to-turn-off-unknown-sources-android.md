@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 5f2d1359d82b00357a037ef5f96f95ae55cf8ab6
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 74fccc0e34f0aa4466359fef5ef0ef91326c5829
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016136"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150362"
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>È necessario disattivare le origini sconosciute
 
@@ -30,4 +30,4 @@ Se viene visualizzato un messaggio che indica che l'installazione da origini sco
 
 Dopo aver disattivato **Origini sconosciute**, possono trascorrere alcuni minuti prima che sia possibile continuare a usare il dispositivo Android per accedere ai dati dell'azienda o dell'istituto.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

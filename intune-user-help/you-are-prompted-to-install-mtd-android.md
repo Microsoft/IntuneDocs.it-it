@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: e1671c919c530108f8ff4e951f7e13c5d75a623b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 06442f7ab943ed5f96990496b00060e67c122675
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017887"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146464"
 ---
 # <a name="install-mobile-threat-defense-on-your-android-device"></a>Installare Mobile Threat Defense nel dispositivo Android
 
@@ -33,4 +33,4 @@ Prima di poter accedere ai dati aziendali, viene richiesto di installare un'app 
 
 **Se l'installazione non riesce**
 
-Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Talvolta le installazioni possono avere esito negativo a causa di problemi tecnici non prevedibili. In questo caso contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

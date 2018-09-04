@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dced939de37ca9fe7172ac0a8bec3fa391a24ed1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56682656ce9b935bbde595663e4feb0cdc725cb3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017377"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147885"
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Registrare il dispositivo Android nella gestione delle spese per telecomunicazioni
 
@@ -64,4 +64,4 @@ Toccare la freccia __avanti__ nell'angolo in alto a destra della schermata per p
 
 Al termine della registrazione, sarà possibile iniziare a esaminare l'utilizzo dei dati nell'app Datalert.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

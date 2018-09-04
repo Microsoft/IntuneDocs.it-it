@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6a106220a2a51eeed7850ac967594818981afca4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7e63a8578779d6930c2691066cd784a18126b4a2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014946"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150185"
 ---
 # <a name="you-need-to-enable-code-integrity"></a>È necessario abilitare l'integrità del codice
 
@@ -35,4 +35,4 @@ L'integrità del codice viene attivata automaticamente quando il sistema usa in 
 
 Se si pensa di essere in grado di eseguire questa procedura, vedere la sezione "Per riabilitare l'avvio protetto" nella pagina [Disabilitazione dell'avvio protetto](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) per provare ad abilitare l'avvio protetto senza l'aiuto dell'amministratore IT.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

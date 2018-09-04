@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b1d655993643665879b67c47d7c579ddb58b42a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 24064cb3cf02f0ac5c0ef94107d047435dec3ba0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030510"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146923"
 ---
 # <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>Il dispositivo iOS non ha la versione minima richiesta del sistema operativo
 
@@ -30,4 +30,4 @@ ms.locfileid: "31030510"
 
 Per aggiornare il dispositivo iOS, toccare **Impostazioni** > **Generale** > **Aggiornamento software**.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

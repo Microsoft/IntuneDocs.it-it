@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 99431a9720ab0f97f869ea12496912391cce2179
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 32a6ff69bc848bbd0a2174ab4b60de905498d6fa
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019722"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150082"
 ---
 # <a name="you-need-to-enable-secure-boot"></a>È necessario abilitare l'avvio protetto
 
@@ -32,4 +32,4 @@ L'abilitazione dell'avvio protetto è un'attività avanzata. Se si usa un dispos
 
 Se si usa un PC, è possibile contattare il supporto tecnico dell'azienda o vedere la sezione "Per riabilitare l'avvio protetto" nella pagina [Disabilitazione dell'avvio protetto](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) per provare ad abilitare l'avvio protetto senza l'aiuto del personale di assistenza.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

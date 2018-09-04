@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a896e4a86cbeaacc07bdb4a32606a67b0049e3e1
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e31eacb0d106fa7200275fcc369a2ea22cf36219
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30756012"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147268"
 ---
 # <a name="sync-your-ios-device-manually"></a>Sincronizzare il dispositivo manualmente
 
@@ -40,5 +40,5 @@ A volte il download di un'app dal portale aziendale può richiedere troppo tempo
 
    ![Schermata dei dettagli dispositivo che visualizza la barra di caricamento dopo che l'utente ha fatto clic su Verifica le impostazioni.](/intune-user-help/media/ios_sync_3_CP-after_1804.png)
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
 
