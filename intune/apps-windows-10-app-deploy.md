@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0bffb0ab4003cc02ceddcd0199b951113ff1e4fd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321754"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347433"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Distribuzione di app di Windows 10 con Microsoft Intune 
 
 Microsoft Intune attualmente supporta un'ampia gamma di tipi di app e scenari di distribuzione nei dispositivi Windows 10. Dopo avere aggiunto un'app a Intune, è possibile assegnarla a utenti e dispositivi. Le informazioni seguenti forniscono ulteriori dettagli sugli scenari di Windows 10 supportati. Le informazioni seguenti, inoltre, forniscono i dettagli chiave da tenere presenti durante la distribuzione delle app in Windows. 
 
-Le app line-of-business e Microsoft Store per le aziende sono i tipi di app che supportano i dispositivi Windows 10. Le estensioni file per le app di Windows ora includono **msi**, **appx**, **appxbundle**, **msix** e **msixbundle**.  
+Le app line-of-business e Microsoft Store per le aziende sono i tipi di app che supportano i dispositivi Windows 10.
 
 > [!Note]
 > L'aggiornamento di Windows 10 minimo necessario per distribuire le app nel contesto di dispositivo è [23 maggio 2018: KB4100403 (build del sistema operativo 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
