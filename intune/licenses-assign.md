@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225409"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751651"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Assegnare licenze agli utenti in modo che possano registrare i dispositivi in Intune
 
@@ -61,7 +61,7 @@ Per altre informazioni su SDS, vedere questa [panoramica di School Data Sync](ht
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Effetti delle licenze utente e dispositivo sull'accesso ai servizi
 * Ogni **utente** a cui viene assegnata una licenza software utente può accedere ai servizi online e al software correlato e usarli (incluso il software System Center) per gestire le applicazioni e fino a 15 dispositivi.
-* Ogni **dispositivo** a cui viene assegnata una licenza software dispositivo può accedere ai servizi online e al software correlato e usarli (incluso il software System Center) per l'uso da parte di qualsiasi numero di utenti.
+* È possibile acquistare le licenze per i dispositivi separatamente dalle licenze utente. Le licenze dispositivo non devono essere assegnate ai dispositivi. Ogni dispositivo che accede e usa i servizi online e il software correlato (incluso il software System Center) deve avere una licenza dispositivo.
 * Se un dispositivo è usato da più di un utente, per ognuno è richiesta una licenza software dispositivo oppure tutti gli utenti devono avere una licenza software utente.
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>Informazioni sul tipo di licenze acquistate

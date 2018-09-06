@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,20 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0d58cb3199405a8a32d169e74e4f0009841f5d09
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046248"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40253151"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurare la registrazione per i dispositivi macOS in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune consente di gestire i dispositivi macOS. Per abilitare la gestione dei dispositivi, gli utenti devono registrare i dispositivi nel [sito Web del portale aziendale](http://portal.manage.microsoft.com) e seguire le istruzioni. Dopo aver registrato per la gestione i dispositivi macOS, è possibile [creare impostazioni personalizzate per i dispositivi macOS](custom-settings-macos.md). Altre funzionalità saranno disponibili a breve.
+Intune consente di gestire i dispositivi macOS per consentire agli utenti di accedere alle app e alla posta elettronica aziendali.
+
+Gli amministratori di Intune possono configurare la registrazione per i dispositivi macOS di proprietà dell'azienda e per i dispositivi macOS di proprietà personale ("bring your own device" o BYOD). 
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -39,27 +41,25 @@ Completare i prerequisiti seguenti prima di impostare la registrazione di dispos
 - Assegnare licenze utente nel [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Ottenere un certificato push MDM Apple](apple-mdm-push-certificate-get.md)
 
-## <a name="user-owned-ios-devices-byod"></a>Dispositivi iOS di proprietà dell'utente (BYOD)
+## <a name="user-owned-macos-devices-byod"></a>Dispositivi macOS di proprietà dell'utente (BYOD)
 
-È possibile consentire agli utenti di registrare i dispositivi personali per la gestione di Intune, una funzionalità nota come BYOD (Bring Your Own Device, Usa dispositivo personale). Dopo aver completato i prerequisiti e assegnato le licenze, gli utenti possono scaricare l'app Portale aziendale macOS dall'App Store e seguire le istruzioni di registrazione nell'app.
-
-## <a name="company-owned-ios-devices"></a>Dispositivi macOS di proprietà dell'azienda
-Per le organizzazioni che acquistano dispositivi per i propri utenti, Intune supporta la registrazione dei dispositivi macOS di proprietà dell'azienda con un account [Manager di registrazione dispositivi](device-enrollment-manager-enroll.md).
-
-## <a name="set-up-macos-enrollment"></a>Configurare la registrazione di macOS
-
-Per impostazione predefinita, Intune consente già la registrazione dei dispositivi macOS.
-
-Per bloccare la registrazione dei i dispositivi macOS, vedere [Impostare le restrizioni sul tipo di dispositivi](enrollment-restrictions-set.md).
-
-## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Indicare agli utenti come registrare i propri dispositivi per accedere alle risorse aziendali
-
-Richiedere agli utenti di visitare il [sito Web del portale aziendale](https://portal.manage.microsoft.com) e di seguire le istruzioni per registrare i propri dispositivi. È anche possibile inviare agli utenti un collegamento alla procedura di registrazione online: [Registrare il dispositivo macOS in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+È possibile consentire agli utenti di registrare i dispositivi personali per la gestione di Intune, una funzionalità nota come BYOD (Bring Your Own Device, Usa dispositivo personale). Dopo aver completato i prerequisiti e assegnato le licenze agli utenti, gli utenti possono registrare i dispositivi nei modi seguenti:
+- accedendo al [sito Web del portale aziendale](https://portal.manage.microsoft.com) oppure
+- scaricando l'app Portale aziendale.
+È anche possibile inviare agli utenti un collegamento alla procedura di registrazione online: [Registrare il dispositivo macOS in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Per informazioni su altre attività dell'utente finale, vedere gli articoli seguenti:
 
 - [Informazioni sull'uso di Microsoft Intune per gli utenti finali](end-user-educate.md)
 - [Uso del dispositivo macOS con Intune](/intune-user-help/using-your-macos-device-with-intune)
+
+## <a name="company-owned-macos-devices"></a>Dispositivi macOS di proprietà dell'azienda
+Per le organizzazioni che acquistano dispositivi per i propri utenti, Intune supporta i seguenti metodi di registrazione dei dispositivi macOS di proprietà dell'azienda:
+- [Device Enrollment Program (DEP) di Apple](device-enrollment-program-enroll-macos.md): le organizzazioni possono acquistare i dispositivi macOS tramite Device Enrollment Program (DEP) di Apple. DEP consente di distribuire un profilo di registrazione in modalità wireless per portare i dispositivi nella gestione.
+- [Manager di registrazione dispositivi](device-enrollment-manager-enroll.md): è possibile usare un account del manager di registrazione dispositivi per registrare fino a 1.000 dispositivi.
+
+## <a name="block-macos-enrollment"></a>Bloccare la registrazione di macOS
+Per impostazione predefinita, Intune consente la registrazione dei dispositivi macOS. Per bloccare la registrazione dei i dispositivi macOS, vedere [Impostare le restrizioni sul tipo di dispositivi](enrollment-restrictions-set.md).
 
 ## <a name="enroll-virtual-macos-machines-for-testing"></a>Registrare le macchine virtuali macOS per i test
 
@@ -79,3 +79,7 @@ La registrazione MDM approvata dall'utente è un tipo di registrazione macOS che
 Per essere approvata dall'utente, dopo la registrazione tramite il portale aziendale di macOS, l'utente finale deve fornire manualmente l'approvazione usando Preferenze di Sistema. Le istruzioni per eseguire questa operazione sono disponibili nel portale aziendale di macOS per gli utenti di macOS 10.13.2 e versioni successive.
 
 Per sapere se un dispositivo è approvato dall'utente, andare al portale di Intune e quindi scegliere **Dispositivi** > **Tutti i dispositivi**> scegliere il dispositivo > **Hardware**. Controllare il campo **User Approved** (Approvato dall'utente).
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Dopo aver registrato i dispositivi macOS, è possibile [creare impostazioni personalizzate per i dispositivi macOS](custom-settings-macos.md).

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cd9db9399eb08c3ed04ff1d8920082aa0c04f06
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bedd1108ce0c9e173e6e9519a29d3948f1320c3a
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224314"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40251933"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune
 
@@ -62,6 +62,12 @@ I grafici visualizzano il numero di app per gli stati seguenti:
 | **L'installazione è in sospeso**   | Numero di app in corso d'installazione. |
 | **Non applicabile**           | Numero di app per cui lo stato non è applicabile.            |
 
+> [!NOTE]
+> Il numero di app individuate potrebbe non corrispondere al conteggio degli stati di installazione delle app. Le possibilità delle incoerenze includono:
+>    - Una modifica di destinazione di un'app gestita installata può far sì che il conteggio delle installazioni nel pannello di stato diminuisca, mentre rimane segnalato nelle app individuate.
+>    - Più istanze di destinazione della stessa app in un tenant comporterà conteggi diversi a causa della potenziale sovrapposizione di utenti o dispositivi. Ogni istanza dell'app includerà nel conteggio utenti sovrapposti, mentre le app individuate avranno conteggi duplicati.
+>    - Le app individuate e lo stato delle app vengono raccolti con intervalli di tempo diversi causando una discrepanza nei conteggi delle app.
+ 
 ### <a name="device-install-status"></a>Stato dell'installazione del dispositivo
 
 Quando si seleziona **Stato dell'installazione del dispositivo** nella sezione **Monitoraggio** del menu, viene visualizzato un elenco degli stati del dispositivo. La tabella dei dettagli include le colonne seguenti:

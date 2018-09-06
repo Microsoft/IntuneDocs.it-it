@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
-ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
+ms.openlocfilehash: 9d4dbdb3aa07020aa027dc1a4a1b2edcefefb4ca
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39450791"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251525"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparare le app line-of-business per i criteri di protezione delle app
 
@@ -28,7 +28,7 @@ ms.locfileid: "39450791"
 È possibile consentire alle app di usare i criteri di protezione delle app tramite lo strumento di wrapping delle app di Intune o Intune App SDK. In questo articolo vengono fornite informazioni su questi due metodi e su quando usarli.
 
 ## <a name="intune-app-wrapping-tool"></a>Strumento di wrapping delle app di Intune
-Lo strumento di wrapping delle app viene usato principalmente per le app line-of-business (LOB) interne. Lo strumento è un'applicazione della riga di comando che crea un wrapper per l'app, consentendo quindi all'app di essere gestita da un criterio di protezione delle app di Intune.
+Lo strumento di wrapping delle app viene usato principalmente per le app line-of-business (LOB) **interne**. Lo strumento è un'applicazione della riga di comando che crea un wrapper per l'app, consentendo quindi all'app di essere gestita da un criterio di protezione delle app di Intune. Quando si protegge un'app fornita da un fornitore di software indipendenti (ISV), è importante chiarire se l'ISV continuerà a supportare l'app con wrapping.
 
 Non è necessario il codice sorgente per usare lo strumento, ma sono necessarie le credenziali di firma. Per altre informazioni sulle credenziali di firma, vedere il [blog di Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Per la documentazione dello strumento di wrapping delle app, vedere [Prepare Android apps for mobile application management with the Intune App Wrapping Tool](app-wrapper-prepare-android.md) (Preparare le app per Android per la gestione di applicazioni per dispositivi mobili con lo strumento di wrapping delle app di Intune) e [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](app-wrapper-prepare-ios.md) (Preparare le app per iOS per la gestione di applicazioni per dispositivi mobili con lo strumento per di wrapping delle app di Intune).
 
@@ -48,7 +48,7 @@ Per altre informazioni sullo strumento di wrapping delle app per i criteri di pr
 
 |**Strumento di wrapping delle app** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |No: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|Sì|
+|**iOS** |Sì|Sì|
 |**Android**|No: usare i [binding Xamarin per Intune App SDK](app-sdk-xamarin.md).|Sì|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK

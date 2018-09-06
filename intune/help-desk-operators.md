@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329876"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251929"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti aziendali
 
@@ -65,7 +65,7 @@ Nel riquadro Risoluzione dei problemi scegliere **Selezionare l'utente** per vis
 | 2.   | Selezione utente  | Nome dell'utente attualmente selezionato. Fare clic su **Cambia utente** per scegliere un nuovo utente.       |
 | 3.   | Stato utente  | Visualizza lo stato della licenza Intune dell'utente, il numero di dispositivi, la conformità di ciascun dispositivo, il numero di app e la conformità delle app.       |
 | 4.   | Informazioni utente  | Usare l'elenco per selezionare i dettagli da esaminare nel riquadro. <br>È possibile selezionare: <ul><li>App per dispositivi mobili<li>Criteri di protezione delle app<li>Criteri di conformità<li> Criteri di configurazione</ul>      |
-| 5.   | Appartenenza al gruppo  | Yadda       |
+| 5.   | Appartenenza al gruppo  | Mostra i gruppi correnti di cui l'utente selezionato è membro.       |
 
 ## <a name="mobile-apps-reference"></a>Riferimento per le app per dispositivi mobili
 

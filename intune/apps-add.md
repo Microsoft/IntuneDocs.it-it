@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321289"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40251620"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Aggiungere app in Microsoft Intune
 
@@ -129,6 +129,9 @@ Prima di iniziare ad aggiungere e assegnare le app, tenere presente quanto segue
 - Quando si aggiunge e si assegna un'app da uno Store, gli utenti devono avere un account in tale Store per poter installare l'app.
 - Alcune app o elementi assegnati potrebbero dipendere da app iOS predefinite. Ad esempio, se si assegna un libro nell'App Store iOS, è necessario che l'app iBooks sia disponibile nel dispositivo. Se l'app iBooks predefinita è stata rimossa, non è possibile usare Intune per ripristinarla.
 
+> [!IMPORTANT]
+> Se si modifica il nome dell'app tramite il portale di Azure di Intune dopo avere distribuito e installato l'app, l'app non potrà più essere usata come destinazione usando i comandi.
+
 ## <a name="cloud-storage-space"></a>Spazio di archiviazione nel cloud
 Tutte le app create con il tipo di installazione del programma di installazione software, ad esempio un'app line-of-business, vengono compresse e caricate nello spazio di archiviazione cloud di Intune. Una sottoscrizione di valutazione di Intune comprende 2 gigabyte (GB) di archiviazione nel cloud per l'archiviazione delle app gestite e degli aggiornamenti. Una sottoscrizione completa non limita la quantità totale di spazio di archiviazione.
 
@@ -170,6 +173,10 @@ Intune reinstallerà, aggiornerà o rimuoverà automaticamente l'app necessaria 
 - Se l'installazione dell'app necessaria ha esito negativo o per qualsiasi altro motivo l'app non è presente nel dispositivo, Intune valuta la conformità e reinstalla l'app alla scadenza della pianificazione.  
 - Un amministratore definisce un'app come disponibile per un gruppo di utenti e un utente finale installa l'app dal portale aziendale nel dispositivo. Dopo di ché l'amministratore aggiorna l'app dalla versione 1 alla versione 2. Intune aggiornerà l'app alla scadenza della pianificazione, a condizione che nel dispositivo sia ancora presente una qualsiasi altra versione precedente.
 - Se l'amministratore distribuisce la finalità di distallazione, ma l'applicazione è presente nel dispositivo e non viene disinstallata, Intune valuta la conformità e disinstalla l'app alla scadenza della pianificazione.   
+
+## <a name="app-installation-errors"></a>Errori di installazione delle app
+
+Per informazioni dettagliate sugli errori di installazione delle app di Intune, vedere [Errori di installazione delle app](troubleshoot-app-install.md#app-installation-errors).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

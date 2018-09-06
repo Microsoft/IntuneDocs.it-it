@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254536"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251849"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app iOS per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -172,19 +172,14 @@ Per altre informazioni sulla distribuzione di app iOS internamente per gli utent
 
 3. Scegliere **Accetto** per accettare il contratto di licenza e procedere al montaggio del pacchetto nel computer.
 
-4.  Aprire la cartella **IntuneMAMPackager** e salvarne il contenuto nel computer macOS. È ora possibile eseguire lo strumento di wrapping delle app.
-
-> [!NOTE]
-> È possibile che Intune MAM Packager venga montato separatamente nel computer macOS generando l'errore "file non trovato" quando si eseguono i comandi di wrapping. Lo spostamento del contenuto della cartella IntuneMAMPackager consentirà pertanto di trovare il percorso al packager durante l'operazione di wrapping.
-
 ## <a name="run-the-app-wrapping-tool"></a>Eseguire lo strumento di wrapping delle app
 
 ### <a name="use-terminal"></a>Usare il terminale
 
-Aprire il programma Terminale macOS e passare alla cartella in cui sono stati salvati i file dello strumento di wrapping delle app. Lo strumento eseguibile è denominato IntuneMAMPackager e si trova in IntuneMAMPackager/Contents/MacOS. Eseguire il comando come segue:
+Aprire il terminale macOS ed eseguire il comando seguente:
 
 ```
-./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+/Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]
@@ -405,6 +400,29 @@ Quando si usa lo strumento di wrapping delle app, adottare le procedure consigli
 -   Le app iOS che includono una finestra di dialogo per il caricamento dei file possono consentire agli utenti di eludere le restrizioni per le operazioni taglia, copia e incolla applicate all'app. Ad esempio, un utente potrebbe usare la finestra di dialogo per il caricamento dei file per caricare una schermata dei dati dell'app.
 
 -   Quando si monitora la cartella dei documenti nel dispositivo dall'app di cui è stato eseguito il wrapping, potrebbe essere visualizzata una cartella denominata .msftintuneapplauncher. Se questo file viene modificato o eliminato, ciò potrebbe influire sul corretto funzionamento delle app con restrizioni.
+
+## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Strumento di wrapping delle app di Intune per iOS con tecnologia mVPN MDX di Citrix
+Questa funzionalità è un'integrazione con il wrapper di app Citrix MDX per iOS. L'integrazione è semplicemente un flag della riga di comando facoltativo aggiuntivo, `-citrix` per gli strumenti di wrapping delle app di Intune generali.
+
+### <a name="requirements"></a>Requisiti
+
+Per usare il flag `-citrix` è necessario installare anche il [wrapper di app Citrix MDX per iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) nello stesso computer macOS. I download sono disponibili in [Citrix XenMobile Downloads](https://www.citrix.com/downloads/xenmobile/) e sono limitati ai clienti Citrix solo dopo l'accesso. Assicurarsi che questo componente venga installato nel percorso predefinito: `/Applications/Citrix/MDXToolkit`. 
+
+> [!NOTE] 
+> Il supporto per l'integrazione di Intune e Citrix è limitato solo ai dispositivi iOS 10+.
+
+### <a name="use-the--citrix-flag"></a>Usare il flag `-citrix`
+Eseguire semplicemente il comando di wrapping delle app generale con il flag `-citrix` aggiunto. Il flag `-citrix` attualmente non accetta alcun argomento.
+
+**Formato di utilizzo**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
+```
+
+**Comando di esempio**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
+```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>Recupero dei log per le applicazioni di cui è stato eseguito il wrapping
 Usare questa procedura per ottenere i log per le applicazioni di cui è stato eseguito il wrapping durante la risoluzione dei problemi.

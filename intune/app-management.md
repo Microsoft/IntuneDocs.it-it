@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906108"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255371"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
@@ -38,23 +38,22 @@ Intune offre un'ampia gamma di funzionalità che consente di usare le app necess
 
 ## <a name="app-management-capabilities-by-platform"></a>Funzionalità di gestione delle app per piattaforma
 
-||||||
-|-|-|-|-|-|
-| |Android|iOS|Windows Phone 8.1|Windows 10|
-|Aggiunta e assegnazione delle applicazioni a utenti e dispositivi|Sì|Sì|Sì|Sì|
-|Assegnazione delle applicazioni a dispositivi non registrati con Intune|Sì|Sì|No|No|
-|Uso dei criteri di configurazione dell'applicazione per controllare il comportamento di avvio delle applicazioni|No|Sì|No|No|
-|Uso dei criteri di provisioning delle app per dispositivi mobili per rinnovare app scadute|No|Sì|No|No|
-|Protezione dei dati aziendali nelle applicazioni con criteri di protezione delle app|Sì|Sì|No|No<sup>1</sup>|
-|Rimozione solo dei dati aziendali da un'applicazione installata (cancellazione selettiva di app)|Sì|Sì|Sì|Sì|
-|Monitoraggio delle assegnazioni di app|Sì|Sì|Sì|Sì|
-|Assegnazione e monitoraggio delle app acquistate con Volume Purchase Program da un App Store|No|No|No|Sì|
-|Installazione obbligatoria delle applicazioni nei dispositivi (obbligatorio)<sup>2</sup>|Sì|Sì|Sì|Sì|
-|Installazione facoltativa di dispositivi dal Portale aziendale (installazione disponibile)|Sì|Sì|Sì|Sì|
-|Installazione di un collegamento per un'applicazione sul Web (collegamento Web)|Sì|Sì|Sì|Sì|
-|App interne (line-of-business)|Sì|Sì|No|Sì|
-|App da uno Store|Sì|Sì|Sì|Sì|
-|Aggiornare le app|Sì|Sì|Sì|Sì|
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
+| Aggiunta e assegnazione delle app a utenti e dispositivi | Sì | Sì | Sì | Sì | Sì |
+| Assegnazione delle app a dispositivi non registrati con Intune | Sì | Sì | No | No | No |
+| Uso dei criteri di configurazione delle app per controllare il comportamento di avvio delle app | No | Sì | No | No | No |
+| Uso dei criteri di provisioning delle app per dispositivi mobili per rinnovare app scadute | No | Sì | No | No | No |
+| Protezione dei dati aziendali in app con criteri di protezione delle app | Sì | Sì | No | No1 | No |
+| Rimozione solo dei dati aziendali da un'app installata (cancellazione selettiva di app) | Sì | Sì | No | Sì | Sì |
+| Monitoraggio delle assegnazioni di app | Sì | Sì | Sì | Sì | Sì |
+| Assegnazione e monitoraggio delle app acquistate con Volume Purchase Program da un App Store | No | No | No | Sì | No |
+| Installazione obbligatoria delle app nei dispositivi (obbligatorio)2 | Sì | Sì | Sì | Sì | Sì |
+| Installazione facoltativa nei dispositivi dal Portale aziendale (installazione disponibile) | Sì | Sì | Sì | Sì | Sì |
+| Installazione di un collegamento a un'app sul Web (collegamento Web) | Sì | Sì | Sì | Sì | Sì |
+| App interne (line-of-business) | Sì | Sì | Sì | Sì | No |
+| App da uno Store | Sì | Sì | No | Sì | Sì |
+| Aggiornare le app | Sì | Sì | No | Sì | Sì |
 
 <sup>1</sup> Considerare l'uso di [Windows Information Protection](windows-information-protection-configure.md) per proteggere le applicazioni sui dispositivi che eseguono Windows 10.
 
@@ -73,7 +72,7 @@ Il carico di lavoro **App per dispositivi mobili** contiene numerose informazion
 
 Le quattro sezioni successive descrivono le opzioni disponibili nel riquadro **App per dispositivi mobili**.
 
-### <a name="manage"></a>Gestisci
+### <a name="manage"></a>Gestire
 - **App**: selezionare questa opzione per aggiungere, visualizzare, assegnare e monitorare le app usate dai dipendenti. Per altre informazioni, vedere:
     - [Aggiungere app](apps-add.md).
     - [Assegnare le app](apps-deploy.md).
@@ -95,8 +94,8 @@ Per altre informazioni su questa sezione, vedere [Gestire le app](app-management
 - **Licenze dell'app**: consente di visualizzare, assegnare e monitorare le app acquistate con Volume Purchase Program dagli App Store. Per altre informazioni, vedere:
     - [App iOS acquistate tramite Volume Purchase Program ](vpp-apps-ios.md).
     - [App acquistate con Volume Purchase Program da Microsoft Store per le aziende](windows-store-for-business.md).
-- **App individuate**: visualizza tutte le app assegnate da Intune e installate in un dispositivo.
-- **Stato di installazione dell'app**: visualizza lo stato di un'assegnazione di app creata.
+- **App individuate**: visualizza tutte le app assegnate da Intune e installate in un dispositivo. Per altre informazioni, vedere [Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
+- **Stato di installazione dell'app**: visualizza lo stato di un'assegnazione di app creata. Per altre informazioni, vedere [Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
 - **Stato protezione app**: visualizza lo stato dei criteri di protezione delle app per un utente selezionato.
 - **Log di controllo**: visualizza le attività correlate alle app di Intune di tutti gli amministratori IT.
 

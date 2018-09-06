@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
-ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
+ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
+ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753893"
+ms.lasthandoff: 08/15/2018
+ms.locfileid: "40251826"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurare una rete privata virtuale (VPN) per app in Intune per dispositivi iOS
 
@@ -109,9 +109,9 @@ Il profilo del certificato radice attendibile consente a iOS di considerare auto
 
     ![Creare un profilo certificato SCEP](./media/vpn-per-app-create-scep-cert.png)
 
-## <a name="create-a-per-app-vpn-profile"></a>Creare un Profilo VPN per app
+## <a name="create-a-per-app-vpn-profile"></a>Creare un profilo VPN per app
 
-Il profilo VPN contiene il certificato SCEP con le credenziali del client, le informazioni di connessione per la connessione VPN e il flag Per VPN APP per abilitare la funzionalità di VPN Per App per l'utilizzo da parte dell'applicazione iOS.
+Il profilo VPN contiene il certificato SCEP con le credenziali del client, le informazioni di connessione per la connessione VPN e il flag VPN per app per abilitare la funzionalità di VPN per app per l'utilizzo da parte dell'applicazione iOS.
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
@@ -136,7 +136,7 @@ Il profilo VPN contiene il certificato SCEP con le credenziali del client, le in
 6. Fare clic su **OK**.
 7. Scegliere **Crea**.
 
-    ![Creare un Profilo VPN per app](./media/vpn-per-app-create-vpn-profile.png)
+    ![Creare un profilo VPN per app](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Associare un'applicazione con il profilo VPN
@@ -145,21 +145,32 @@ Dopo aver aggiunto il profilo VPN, associare l'app e il gruppo di Azure AD per i
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-2. Scegliere **App per dispositivi mobili**.
-3. Fare clic su **Applicazioni**.
-4. Selezionare l'app dall'elenco delle app.
-5. Fare clic **Assegnazioni.**
-6. Fare clic su **Aggiungi gruppo**.
-7. Nel pannello **Aggiungi gruppo** selezionare **Obbligatorio** in **Tipo di assegnazione**.
-6. Selezionare il gruppo definito in precedenza e selezionare **Make this app required** (Imposta app come obbligatoria).
-8. Selezionare la definizione VPN per la rete **VPN**.
+3. Scegliere **App per dispositivi mobili**.
+4. Fare clic su **Applicazioni**.
+5. Selezionare l'app dall'elenco delle app.
+6. Fare clic **Assegnazioni.**
+7. Fare clic su **Aggiungi gruppo**.
+8. Nel pannello **Aggiungi gruppo** selezionare **Obbligatorio** in **Tipo di assegnazione**.
+9. Selezionare il gruppo definito in precedenza e selezionare **Make this app required** (Imposta app come obbligatoria).
+10. Selezionare la definizione VPN per la rete **VPN**.
  
     > [!NOTE]  
     > In alcuni casi la definizione VPN può richiedere alcuni minuti per recuperare il valore. Attendere 3-5 minuti prima di fare clic su **Salva**.
 
-9. Fare clic su **OK** e su **Salva**.
+11. Fare clic su **OK** e su **Salva**.
 
     ![Associare un'applicazione alla VPN](./media/vpn-per-app-app-to-vpn.png)
+
+L'associazione tra un'app e un profilo verrà rimossa durante la successiva archiviazione del dispositivo, quando si verificano le condizioni seguenti:
+- L'app è con finalità di installazione richiesta.
+- Sia il profilo che l'app sono destinati allo stesso gruppo.
+- È possibile rimuovere la configurazione VPN per app dall'assegnazione di app.
+
+L'associazione tra un'app e un profilo rimarrà fino a quando l'utente finale richiede una reinstallazione dal portale aziendale, quando si verificano le condizioni seguenti:
+- L'app è con finalità di installazione disponibile.
+- Sia il profilo che l'app sono destinati allo stesso gruppo.
+- L'utente finale ha richiesto l'installazione dell'app dal portale aziendale con la conseguente installazione dell'app e del profilo nel dispositivo.
+- È possibile rimuovere la configurazione VPN per app dall'assegnazione di app.
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>Verificare la connessione al dispositivo iOS
 
@@ -191,7 +202,7 @@ Verificare la connessione dei dispositivi iOS.
 2. Toccare **Connetti**.  
 La VPN si connette senza prompt aggiuntivi.
 
-<!-- ## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the per-app VPN
 
 The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 

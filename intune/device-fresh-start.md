@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5658bf2e1ee250ef9fd405b3f7ec1772b166f338
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6b66cd00f734cab3ca85f6d87f056f8c482a377d
+ms.sourcegitcommit: 2811df0f851ca6b08f6ae8c926fb2e6971c41690
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020997"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251707"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Usare Fresh Start per ripristinare i dispositivi Windows 10 con Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-L'azione del dispositivo **Fresh Start** rimuove le eventuali app installate nei PC con Windows 10 Creators Update e quindi aggiorna automaticamente il PC alla versione più recente di Windows.
+L'azione del dispositivo **Fresh Start** rimuove le eventuali app installate nei PC con Windows 10, versione 1703 o successive. Fresh Start consente di rimuovere le app (OEM) preinstallate in genere in un nuovo PC.  
 
-Questa azione consente di rimuovere le app (OEM) preinstallate in genere in un nuovo PC. Per mantenere il contenuto della home directory dell'utente e rimuovere solo le app e le impostazioni, usare l'impostazione `if user data is retained`.
-
-> [!IMPORTANT]
-> Fresh Start annulla la registrazione del dispositivo da Intune, ma il dispositivo è ancora aggiunto ad Azure Active Directory.
-
-## <a name="use-fresh-start"></a>Usare Fresh Start
-
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-3. Selezionare **Dispositivi** e quindi selezionare **Tutti i dispositivi**.
-4. Nell'elenco dei dispositivi gestiti scegliere un dispositivo desktop Windows 10 e quindi selezionare **Fresh Start**.
-
-## <a name="next-steps"></a>Passaggi successivi
-
-Per visualizzare lo stato di questa azione, selezionare **Azioni del dispositivo** (**Microsoft Intune** > **Dispositivi**).
+1. Accedere al [portale di Azure](https://portal.azure.com) e passare a > **Microsoft Intune** > **Dispositivi** > **Tutti i dispositivi**.
+2. Nell'elenco dei dispositivi gestiti scegliere un dispositivo desktop Windows 10.
+3. Fare clic su **Fresh Start**. 
+4. Selezionare **Mantieni i dati utente in questo dispositivo** per:
+   * Mantenere il dispositivo aggiunto ad Azure AD
+    * Mantenere il dispositivo registrato nella gestione di dispositivi mobili 
+    * Mantenere il contenuto della home directory dell'utente del dispositivo e rimuovere le app e le impostazioni  
+  > [!IMPORTANT]
+ > Se non si mantengono i dati dell'utente, verrà ripristinato lo stato predefinito del dispositivo. Verrà annullata la registrazione da Azure AD e dalla gestione di dispositivi mobili. 
+ 
+5. Fare clic su **OK**.   
+6. Per visualizzare lo stato di questa azione, tornare a **Dispositivi** e fare clic su **Azioni del dispositivo**.  

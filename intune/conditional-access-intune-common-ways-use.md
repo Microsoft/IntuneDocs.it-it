@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025913"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251758"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quali sono i modi comuni per usare l'accesso condizionale con Intune?
 
@@ -28,6 +28,9 @@ ms.locfileid: "31025913"
 Esistono due tipi di accesso condizionale con Intune: l'accesso condizionale basato su dispositivo e l'accesso condizionale basato su app. È necessario configurare i criteri di conformità correlati per promuovere la conformità dell'accesso condizionale nell'organizzazione. L'accesso condizionale viene in genere usato per operazioni come consentire o bloccare l'accesso a Exchange in locale e controllare l'accesso alla rete o come integrazione per una soluzione Mobile Threat Defense.
 
 Le informazioni seguenti consentono di comprendere come usare le funzionalità per la conformità dei *dispositivi* mobili di Intune e le funzionalità di gestione delle *applicazioni* per dispositivi mobili (MAM) di Intune. 
+
+> [!NOTE]
+> L'accesso condizionale è una funzionalità di Azure Active Directory inclusa con una licenza di Azure Active Directory Premium. Intune contribuisce a migliorare questa funzionalità aggiungendo la conformità dei dispositivi mobili e la gestione delle app per dispositivi mobili alla soluzione.
 
 ## <a name="device-based-conditional-access"></a>Accesso condizionale basato su dispositivo
 
@@ -106,7 +109,7 @@ Quando gli utenti tentano di accedere alle risorse Wi-Fi o VPN aziendali, l'acce
 
 ### <a name="conditional-access-based-on-device-risk"></a>Accesso condizionale basato sul rischio di dispositivo
 
-Intune ha collaborato con i fornitori di Mobile Threat Defense, che fornisce una soluzione di sicurezza per il rilevamento di malware, trojan horse e altre minacce nei dispositivi mobili.
+Intune collabora con i fornitori di Mobile Threat Defense, che forniscono una soluzione di sicurezza per il rilevamento di malware, trojan horse e altre minacce nei dispositivi mobili.
 
 #### <a name="how-the-intune-and-mobile-threat-defense-integration-works"></a>Funzionamento dell'integrazione tra Intune e Mobile Threat Defense
 
@@ -122,7 +125,7 @@ L'accesso condizionale per i PC offre funzionalità simili a quelle disponibili 
 
 #### <a name="corporate-owned"></a>Dispositivi di proprietà dell'azienda
 
--   **Aggiunta a un dominio AD locale:** questa rappresenta l'opzione di distribuzione più comune per l'accesso condizionale nelle organizzazioni, che hanno già familiarità con la gestione dei PC tramite i criteri di gruppo di Active Directory e/o con System Center Configuration Manager.
+-   **Aggiunta a un dominio AD locale:** questa opzione viene usata generalmente dalle organizzazioni che hanno già familiarità con la gestione dei PC tramite i criteri di gruppo di Active Directory e/o con System Center Configuration Manager.
 
 -   **Aggiunta a un dominio AD e gestione tramite Intune:** questo scenario è generalmente associato agli scenari CYOD (Choose Your Own Device) e con laptop mobili in cui i dispositivi si connettono raramente alla rete aziendale. Il dispositivo viene aggiunto ad Azure AD ed è registrato in Intune, che rimuove qualsiasi dipendenza da Active Directory locale e controller di dominio. Può essere usato come criterio di accesso condizionale durante l'accesso alle risorse aziendali.
 

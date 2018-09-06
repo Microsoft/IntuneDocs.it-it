@@ -15,18 +15,18 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
-ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
+ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203221"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255536"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi usando un account del manager di registrazione dispositivi
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Le organizzazioni possono usare Intune per gestire un numero elevato di dispositivi mobili con un singolo account utente. L'account del *manager di registrazione dispositivi* (DEM, Device Enrollment Manager) è un account utente speciale che consente di registrare fino a 1.000 dispositivi. Gli utenti esistenti vengono aggiunti all'account del manager di registrazione dispositivi per rendere disponibili le funzionalità DEM. Ogni dispositivo registrato usa una singola licenza. Si consiglia di usare i dispositivi registrati tramite tale account come dispositivi condivisi piuttosto che come dispositivi personali ("BYOD").  
+Le organizzazioni possono usare Intune per gestire un numero elevato di dispositivi mobili con un singolo account utente. L'account del *manager di registrazione dispositivi* (DEM, Device Enrollment Manager) è un account utente speciale che consente di registrare fino a 1.000 dispositivi. Gli utenti esistenti vengono aggiunti all'account del manager di registrazione dispositivi per rendere disponibili le opzioni DEM. Ogni dispositivo registrato usa una singola licenza. Si consiglia di usare i dispositivi registrati tramite tale account come dispositivi condivisi piuttosto che come dispositivi personali ("BYOD").  
 
 Per poter essere aggiunti come manager di registrazione dispositivi, gli utenti devono essere presenti nel [portale di Azure](https://portal.azure.com). Per una sicurezza ottimale, l'utente manager di registrazione dispositivi non deve essere anche amministratore di Intune.
 
@@ -74,17 +74,20 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
 
 ## <a name="permissions-for-dem"></a>Autorizzazioni per il manager di registrazione dispositivi
 
-Sono necessari i ruoli di Azure AD Amministratore globale o Amministratore del servizio Intune per l'esecuzione delle attività relative alla registrazione Manager di registrazione dispositivi nel portale di amministrazione. Questi ruoli sono inoltre necessari per visualizzare tutti gli utenti DEM, nonostante il fatto che le autorizzazioni di controllo degli accessi in base al ruolo siano elencate e disponibili nel ruolo utente personalizzato. Un utente a cui non è assegnato il ruolo Amministratore globale o Amministratore del servizio Intune, ma che ha le autorizzazioni di lettura per il ruolo Manager di registrazione dispositivi, può visualizzare solo gli utenti DEM che ha creato. Il supporto del ruolo Controllo degli accessi in base al ruolo per queste funzionalità verrà annunciato in futuro.
+I ruoli di Azure AD Amministratore globale o Amministratore del servizio Intune sono necessari per
+- completare le attività correlate alla registrazione DEM nel portale di amministrazione
+- visualizzare tutti gli utenti DEM, nonostante il fatto che le autorizzazioni di controllo degli accessi in base al ruolo siano elencate e disponibili nel ruolo utente personalizzato.
 
-Se un utente non ha il ruolo Amministratore globale o Amministratore del servizio Intune, ma ha le di autorizzazioni di lettura abilitate per il ruolo Manager di registrazione dispositivi, potrà visualizzare solo gli utenti DEM che ha creato.
+Un utente a cui non è assegnato il ruolo Amministratore globale o Amministratore del servizio Intune, ma che ha le autorizzazioni di lettura per il ruolo Manager di registrazione dispositivi, può visualizzare solo gli utenti DEM che ha creato. Il supporto del ruolo Controllo degli accessi in base al ruolo per queste funzionalità verrà annunciato in futuro.
+
 
 ## <a name="remove-a-device-enrollment-manager"></a>Rimuovere un manager di registrazione dispositivi
 
-La rimozione di un manager di registrazione dispositivi non influisce sui dispositivi registrati. Quando viene rimosso un manager di registrazione dispositivi:
+Quando viene rimosso un manager di registrazione dispositivi:
 
 -   I dispositivi registrati non sono interessati e continuano a essere completamente gestiti.
--   Le credenziali dell'account manager di registrazione dispositivi rimosso restano valide.
--   Il manager di registrazione dispositivi rimosso non può ancora cancellare o disattivare i dispositivi.
+-   Le credenziali dell'account del manager di registrazione dispositivi rimosse sono ancora valide.
+-   Il manager di registrazione dispositivi rimosso non può ancora cancellare o ritirare i dispositivi.
 -   Il manager di registrazione dispositivi rimosso può registrare solo un numero di dispositivi fino al limite per utente configurato dall'amministratore di Intune.
 
 **Per rimuovere un manager di registrazione dispositivi**
@@ -92,7 +95,3 @@ La rimozione di un manager di registrazione dispositivi non influisce sui dispos
 1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** e quindi scegliere **Manager di registrazione dispositivi**.
 2. Nel pannello **Manager di registrazione dispositivi** selezionare l'utente manager di registrazione dispositivi e selezionare **Elimina**.
 
-## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Visualizzare le proprietà di un manager di registrazione dispositivi
-
-1. Nel [portale di Azure](https://portal.azure.com) scegliere **Registrazione del dispositivo** e quindi scegliere **Manager di registrazione dispositivi**.
-2. Nel pannello **Manager di registrazione dispositivi** fare clic con il pulsante destro del mouse sull'utente manager di registrazione dispositivi e selezionare **Proprietà**.

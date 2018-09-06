@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993718"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255481"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per macOS in Microsoft Intune
 
@@ -28,14 +28,15 @@ ms.locfileid: "38993718"
 
 Usare le informazioni di questo articolo per aggiungere le app line-of-business per macOS in Microsoft Intune. È necessario scaricare uno strumento esterno per eseguire l'analisi preliminare dei file con estensione *pkg* prima di poter caricare il file line-of-business in Microsoft Intune. L'analisi preliminare dei file con estensione *pkg* deve essere eseguita in un dispositivo macOS.
 
->[!NOTE]
->Anche se gli utenti dei dispositivi macOS possono rimuovere alcune delle app macOS predefinite, ad esempio Borsa e Mappe, non è possibile usare Intune per ridistribuire tali app. Se gli utenti finali eliminano queste app, devono accedere all'App Store e reinstallarle manualmente.
->
->Per caricare le app LOB per macOS in Microsoft Intune, si possono usare solo file con estensione *pkg*. La conversione di altri formati, ad esempio da *dmg* a *pkg*, non è supportata.
+> [!NOTE]
+> Anche se gli utenti dei dispositivi macOS possono rimuovere alcune delle app macOS predefinite, ad esempio Borsa e Mappe, non è possibile usare Intune per ridistribuire tali app. Se gli utenti finali eliminano queste app, devono accedere all'App Store e reinstallarle manualmente.
 
-## <a name="step-1---pre-process-your-software-setup-file"></a>Passaggio 1: Eseguire l'analisi preliminare del file di installazione del software
+## <a name="before-your-start"></a>Prima di iniziare
 
-Usare lo strumento di wrapping delle app di Intune per Mac per abilitare la gestione delle app Mac con Microsoft Intune.
+È necessario scaricare uno strumento esterno per eseguire l'analisi preliminare dei file con estensione *pkg* prima di poter caricare il file line-of-business in Microsoft Intune. L'analisi preliminare dei file con estensione *pkg* deve essere eseguita in un dispositivo macOS. Usare lo strumento di wrapping delle app di Intune per Mac per abilitare la gestione delle app Mac con Microsoft Intune.
+
+> [!IMPORTANT]
+> Per caricare le app LOB per macOS in Microsoft Intune, si possono usare solo file con estensione *pkg*. La conversione di altri formati, ad esempio da *dmg* a *pkg*, non è supportata.
 
 1. Scaricare ed eseguire lo [strumento di wrapping delle app di Intune per Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac).
 
@@ -55,7 +56,7 @@ Usare lo strumento di wrapping delle app di Intune per Mac per abilitare la gest
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     Questo comando estrarrà i parametri rilevati e la versione per il file con estensione *intunemac* creato.
 
-## <a name="step-2---specify-the-software-setup-file"></a>Passaggio 2: Specificare il file di installazione del software
+## <a name="step-1---specify-the-software-setup-file"></a>Passaggio 1: specificare il file di installazione del software
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
@@ -64,14 +65,14 @@ Usare lo strumento di wrapping delle app di Intune per Mac per abilitare la gest
 5. In alto all'elenco delle applicazioni scegliere **Aggiungi**.
 6. Nel riquadro **Aggiungi app** scegliere **App line-of-business**.
 
-## <a name="step-3---configure-the-app-package-file"></a>Passaggio 3: Configurare il file del pacchetto dell'app
+## <a name="step-2---configure-the-app-package-file"></a>Passaggio 2: configurare il file del pacchetto dell'app
 
 1. Nel riquadro **Aggiungi app** scegliere **File del pacchetto dell'app**.
 2. Nel riquadro **File del pacchetto dell'app** scegliere il pulsante Sfoglia e selezionare un file di installazione macOS con estensione *intunemac*.
 3. Al termine, scegliere **OK**.
 
 
-## <a name="step-4---configure-app-information"></a>Passaggio 4: Configurare le informazioni sull'app
+## <a name="step-3---configure-app-information"></a>Passaggio 3: configurare le informazioni sull'app
 
 1. Nel riquadro **Aggiungi app** scegliere **Informazioni sull'app**.
 2. Nel riquadro **Informazioni sull'app** aggiungere i dettagli relativi all'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente:
@@ -89,7 +90,7 @@ Usare lo strumento di wrapping delle app di Intune per Mac per abilitare la gest
     - **Logo**: caricare un'icona che viene associata all'app. Questa è l'icona visualizzata insieme all'app quando gli utenti visitano il portale aziendale.
 3. Al termine, scegliere **OK**.
 
-## <a name="step-5---finish-up"></a>Passaggio 5: Completare l'operazione
+## <a name="step-4---finish-up"></a>Passaggio 4: completare l'operazione
 
 1. Nel riquadro **Aggiungi app** verificare che i dettagli dell'app siano corretti.
 2. Scegliere **Aggiungi** per caricare l'app in Intune.
@@ -99,7 +100,7 @@ L'app creata compare nell'elenco di app da cui è possibile assegnarla ai gruppi
 > [!NOTE]
 > Se il file con estensione *pkg* contiene più app o programmi di installazione di app, Microsoft Intune segnalerà solo che l'*app* è installata correttamente quando tutte le app installate verranno rilevate nel dispositivo.
 
-## <a name="step-6---update-a-line-of-business-app"></a>Passaggio 6: Aggiornare un'app line-of-business
+## <a name="step-5---update-a-line-of-business-app"></a>Passaggio 5: aggiornare un'app line-of-business
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

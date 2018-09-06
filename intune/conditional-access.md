@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a62166792570c5bb81391d05d1cbc3f8486543a4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7faba9a0bfb6f07a80c4c0af947efbca9b33ae03
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022340"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251736"
 ---
 # <a name="whats-conditional-access"></a>Che cos'è l'accesso condizionale?
 
@@ -38,7 +38,7 @@ L'accesso condizionale di Enterprise Mobility + Security (EMS) non è un prodott
 
 ## <a name="conditional-access-with-intune"></a>Accesso condizionale con Intune
 
-Intune aggiunge criteri per la conformità dei dispositivi mobili e per la gestione delle app a supporto della soluzione di accesso condizionale di EMS.
+L'accesso condizionale è una funzionalità di Azure Active Directory inclusa con una licenza di Azure Active Directory Premium. Intune contribuisce a migliorare questa funzionalità aggiungendo la conformità dei dispositivi mobili e la gestione delle app per dispositivi mobili alla soluzione. 
 
 ![Intune e accesso condizionale quando si usa EMS](./media/intune-with-ca-1.png)
 
