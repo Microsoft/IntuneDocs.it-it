@@ -6,20 +6,20 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 05/30/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: a5440a181961a1ee263b1edb50af5fde450f50a9
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.custom: intune-classic; get-started
+ms.openlocfilehash: 48f15493d25ba431cedc76533c35c7307fd0f848
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34583724"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254140"
 ---
 # <a name="microsoft-intune-service-description"></a>Descrizione del servizio Microsoft Intune
 
@@ -102,7 +102,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 ## <a name="language-support"></a>Supporto delle lingue
 Intune viene eseguito nel portale di Azure, che supporta le lingue seguenti: cinese (semplificato), cinese (tradizionale), ceco, olandese, inglese, tedesco, ungherese, italiano, giapponese, portoghese (Brasile), portoghese (Portogallo), russo, spagnolo, inglese, francese, coreano, polacco, svedese e turco.
 
-La console di amministrazione di Intune e le app mobili per l'utente supportano le lingue seguenti: danese, greco, finlandese, norvegese e romeno, oltre a tutte le lingue supportate dal portale di Azure.
+La console di amministrazione di Intune e le app mobili per l'utente supportano le lingue seguenti: danese, greco, finlandese, norvegese e rumeno, oltre a tutte le lingue supportate dal portale di Azure.
 
 <!--- ## Learn more about Intune
 Use these resources to learn more about Intune:
