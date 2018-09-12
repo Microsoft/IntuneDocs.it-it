@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: f907ddb631c974a9c7626483446600eae149a12c
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255481"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347397"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Come aggiungere app line-of-business (LOB) per macOS in Microsoft Intune
 
@@ -60,8 +60,8 @@ Usare le informazioni di questo articolo per aggiungere le app line-of-business 
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** scegliere **App per dispositivi mobili**.
-4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Gestisci** > **App**.
+3. Nel riquadro **Intune** scegliere **App client**.
+4. Nel carico di lavoro **App client** scegliere **Gestisci** > **App**.
 5. In alto all'elenco delle applicazioni scegliere **Aggiungi**.
 6. Nel riquadro **Aggiungi app** scegliere **App line-of-business**.
 

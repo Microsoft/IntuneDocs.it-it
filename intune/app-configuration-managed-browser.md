@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: d11356c16965e3ba7631275368c9723a2db0ecc9
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251712"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43675016"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Gestire l'accesso a Internet usando i criteri dei browser protetti con Microsoft Intune
 
@@ -108,7 +108,7 @@ Per usare l'accesso SSO in Intune Managed Browser è necessario che il dispositi
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3.  Nel pannello **App mobili** dell'elenco di gestione, scegliere **Criteri di configurazione dell'app**.
+3.  Nel pannello **App mobili** dell'elenco di gestione scegliere **Criteri di configurazione dell'app**.
 4.  Nel pannello **Criteri di configurazione dell'app** scegliere **Aggiungi**.
 5.  Nel pannello **Aggiungi i criteri di configurazione** immettere **Nome** e **Descrizione** facoltativa per le impostazioni di configurazione dell'app.
 6.  Per **Tipo di registrazione del dispositivo** scegliere **App gestite**.
@@ -126,7 +126,7 @@ Per usare l'accesso SSO in Intune Managed Browser è necessario che il dispositi
 
 Le impostazioni vengono assegnate a gruppi di utenti di Azure AD. Se tale utente ha installato l'app dei browser protetti di destinazione, questa verrà gestita dalle impostazioni specificate.
 
-1. Nel pannello **App per dispositivi mobili** del dashboard di gestione delle applicazioni per dispositivi mobili di Intune scegliere **Criteri di configurazione dell'app**.
+1. Nel pannello **App client** del dashboard di gestione delle applicazioni per dispositivi mobili di Intune scegliere **Criteri di configurazione dell'app**.
 2. Nell'elenco di configurazioni di app selezionare quella che si vuole assegnare.
 3. Nel pannello successivo scegliere **Assegnazioni**.
 4. Nel pannello **Assegnazioni** selezionare il gruppo di Azure AD a cui si vuole assegnare la configurazione dell'app e scegliere **OK**.
@@ -185,7 +185,7 @@ Usando la procedura per creare una configurazione per l'app Managed Browser o Mi
 
 |                                Chiave                                 |                                                                                                                                                                                                                                                         Valore                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Il valore per questa configurazione è un elenco di segnalibri. Ogni segnalibro consiste di un titolo del segnalibro e di un URL. Separare il titolo e l'URL con il carattere <strong>&#124;</strong>.<br><br>Esempio:<br> `Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Il valore per questa configurazione è un elenco di segnalibri. Ogni segnalibro consiste di un titolo del segnalibro e di un URL. Separare il titolo e l'URL con il carattere <strong>&#124;</strong>.<br><br>Esempio:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>Per configurare più segnalibri, separarli con due caratteri, ovvero <strong>&#124;&#124;</strong><br><br>Esempio:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>Come specificare gli URL consentiti e bloccati per un browser protetto
 
@@ -193,7 +193,7 @@ Usando la procedura per creare una configurazione per l'app Managed Browser o Mi
 
 |Chiave|Valore|
 |-|-|
-|Scegliere tra:<br><ul><li>Specificare gli URL consentiti. Sono consentiti solo questi URL e nessun altro sito è accessibile:<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Specificare gli URL bloccati (tutti gli altri siti sono accessibili):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|Il valore corrispondente per la chiave è un elenco di URL. Tutti gli URL da consentire o bloccare vengono immessi come valore singolo, separati da un carattere barra verticale **&#124;**.<br><br>Esempi:<br><br>`URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
+|Scegliere tra:<br><ul><li>Specificare gli URL consentiti. Sono consentiti solo questi URL e nessun altro sito è accessibile:<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Specificare gli URL bloccati (tutti gli altri siti sono accessibili):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|Il valore corrispondente per la chiave è un elenco di URL. Tutti gli URL da consentire o bloccare vengono immessi come valore singolo, separati da un carattere barra verticale **&#124;**.<br><br>Esempi:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 
 >[!IMPORTANT]
 >Non specificare entrambe le chiavi. Se entrambe le chiavi sono destinate allo stesso utente, viene usata la chiave consentita, essendo l'opzione più restrittiva.

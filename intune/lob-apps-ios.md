@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ee132a1b1c79e9829e5d28dc33b5cac2e52c8ac
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 1461089beafd6501d6ebc87ab1a89963fa4aac57
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40253156"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347774"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per iOS a Microsoft Intune
 
@@ -35,8 +35,8 @@ Usare le informazioni di questo articolo per aggiungere un'app line-of-business 
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
-4. Nel carico di lavoro **App per dispositivi mobili** selezionare **Gestisci** > **App**.
+3. Nel riquadro **Intune** selezionare **App client**.
+4. Nel carico di lavoro **App client** selezionare **Gestisci** > **App**.
 5. Sopra l'elenco delle app selezionare **Aggiungi**.
 6. Nel riquadro **Aggiungi app** selezionare **App line-of-business**.
 

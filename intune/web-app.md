@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40251928"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347458"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Aggiungere app Web a Microsoft Intune
 
@@ -39,8 +39,8 @@ Per aggiungere un'app a Intune come collegamento a un'app nel Web, eseguire le o
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**.  
     Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
-4. Nel riquadro del carico di lavoro **App per dispositivi mobili**, in **Gestisci** selezionare **App**.
+3. Nel riquadro **Intune** selezionare **App client**.
+4. Nel riquadro del carico di lavoro **App client**, in **Gestisci** selezionare **App**.
 5. Nel riquadro **App** selezionare **Aggiungi**.
 6. Nell'elenco a discesa **Tipo di app** del riquadro **Aggiungi app** selezionare il tipo **Collegamento Web**.
 7. Selezionare **Configura**.

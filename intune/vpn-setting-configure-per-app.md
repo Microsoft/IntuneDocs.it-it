@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
-ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
+ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2018
-ms.locfileid: "40251826"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347475"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurare una rete privata virtuale (VPN) per app in Intune per dispositivi iOS
 
@@ -34,6 +34,7 @@ VPN per App è attualmente disponibile per i provider seguenti:
  - Pulse Connect Secure
  - SonicWall
  - Palo Alto Networks GlobalProtect
+ - Zscaler
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Prerequisiti per VPN per app
 
@@ -145,7 +146,7 @@ Dopo aver aggiunto il profilo VPN, associare l'app e il gruppo di Azure AD per i
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-3. Scegliere **App per dispositivi mobili**.
+3. Scegliere **App client**.
 4. Fare clic su **Applicazioni**.
 5. Selezionare l'app dall'elenco delle app.
 6. Fare clic **Assegnazioni.**
@@ -187,6 +188,10 @@ Con la VPN per app configurata e associata all'app, verificare da un dispositivo
     - F5 Access
     - Pulse Secure
     - SonicWall Mobile Connect
+    - App Zscaler
+
+    > [!NOTE]
+    > Se si usa l'app VPN Pulse Secure, è possibile scegliere di usare il tunnelling di livello app o di livello pacchetto. Impostare il valore **ProviderType** su **app-proxy** per il tunneling di livello app e su **packet-tunnel** per il tunneling di livello pacchetto.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Connessione mediante VPN per app
 

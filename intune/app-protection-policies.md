@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a66ed41442e89ed40850f5b9cd56cbc004a43d0
-ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
+ms.openlocfilehash: 83320c78d461981f1bfff52d2fddf4f121a88b8c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251610"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329666"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
@@ -37,7 +37,7 @@ Per un elenco delle app supportate da MAM, vedere [Elenco di app MAM](https://ww
 Per informazioni sull'aggiunta di app line-of-business (LOB) dell'organizzazione in Microsoft Intune per preparare i criteri di protezione delle app, vedere [Aggiungere app in Microsoft Intune](apps-add.md).
 
 ##  <a name="create-an-app-protection-policy"></a>Creare un criterio di protezione delle app
-1. Nel carico di lavoro **App per dispositivi mobili** selezionare **Criteri di protezione delle app** dalla sezione **Gestisci**. Questa selezione determina la visualizzazione dei dettagli dei **Criteri di protezione delle app**, in cui è possibile creare nuovi criteri e modificare i criteri esistenti.
+1. Nel carico di lavoro **App client** selezionare **Criteri di protezione delle app** dalla sezione **Gestisci**. Questa selezione determina la visualizzazione dei dettagli dei **Criteri di protezione delle app**, in cui è possibile creare nuovi criteri e modificare i criteri esistenti.
 2. Scegliere **Aggiungi criteri**.
 
    ![Schermata del pannello "Aggiungi criteri"](./media/app-protection-add-policy.png)
@@ -125,7 +125,7 @@ In molte organizzazioni è consuetudine consentire agli utenti finali di usare s
 
 Poiché i criteri di protezione delle app di Intune sono mirati all'identità di un utente, in genere le impostazioni di protezione per un utente vengono applicate sia ai dispositivi registrati (dispositivi MDM gestiti) sia ai dispositivi non registrati (non MDM). Pertanto, è possibile assegnare un criterio di protezione delle app di Intune sia a dispositivi Intune registrati sia a dispositivi non registrati iOS e Android. È possibile avere criteri di protezione per i dispositivi non gestiti, in cui vengono applicati severi controlli di prevenzione dalla perdita dei dati, e criteri di protezione dati separati per la gestione dei dispositivi MDM gestiti, in cui i controlli DLP possono essere leggermente più morbidi. 
 
-Per creare questi criteri, passare a **App per dispositivi mobili** > **Criteri di protezione delle app** nella console di Intune e fare clic su **Aggiungi criteri**. È anche possibile modificare un criterio di protezione delle app esistente. Se si desidera che il criterio di protezione delle app venga applicato sia ai dispositivi gestiti che non gestiti, verificare che l'opzione **Includi tutti i tipi di app** sia impostata su **Sì**, il valore predefinito. Se si desidera assegnare i criteri in modo granulare sulla base dello stato di gestione, impostare l'opzione **Includi tutti i tipi di app** su **No**. 
+Per creare questi criteri, passare a **App client** > **Criteri di protezione delle app** nella console di Intune e fare clic su **Aggiungi criteri**. È anche possibile modificare un criterio di protezione delle app esistente. Se si desidera che il criterio di protezione delle app venga applicato sia ai dispositivi gestiti che non gestiti, verificare che l'opzione **Includi tutti i tipi di app** sia impostata su **Sì**, il valore predefinito. Se si desidera assegnare i criteri in modo granulare sulla base dello stato di gestione, impostare l'opzione **Includi tutti i tipi di app** su **No**. 
 
 Affinché le app iOS possano essere considerate "gestite", l'impostazione dei criteri di configurazione **IntuneMAMUPN** deve essere distribuita per ogni app. Per altre informazioni, vedere [Come gestire il trasferimento di dati tra app iOS in Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 

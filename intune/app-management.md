@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255371"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330144"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
@@ -61,16 +61,16 @@ Intune offre un'ampia gamma di funzionalità che consente di usare le app necess
 
 ## <a name="get-started"></a>Operazioni preliminari
 
-Il carico di lavoro **App per dispositivi mobili** contiene numerose informazioni sulle app ed è accessibile seguendo questa procedura:
+Il carico di lavoro **App client** contiene numerose informazioni sulle app ed è accessibile seguendo questa procedura:
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**.  
     Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Microsoft Intune** selezionare **App per dispositivi mobili**.
+3. Nel riquadro **Microsoft Intune** selezionare **App client**.
 
     ![Riquadro del carico di lavoro "App per dispositivi mobili"](./media/apps-workload.png)
 
-Le quattro sezioni successive descrivono le opzioni disponibili nel riquadro **App per dispositivi mobili**.
+Le quattro sezioni successive descrivono le opzioni disponibili nel riquadro **App client**.
 
 ### <a name="manage"></a>Gestire
 - **App**: selezionare questa opzione per aggiungere, visualizzare, assegnare e monitorare le app usate dai dipendenti. Per altre informazioni, vedere:
