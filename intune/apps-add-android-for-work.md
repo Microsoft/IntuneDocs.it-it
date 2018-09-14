@@ -15,12 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b65daa6e098954d88c502114fc7a33ad4cf5efcd
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: faa8918441bd705875fcdc72d3717af001ab2b85
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909287"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329871"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Assegnare app ai dispositivi del profilo di lavoro Android con Intune
 
@@ -59,18 +59,18 @@ Assicurarsi di avere configurato l'uso di Intune con i profili di lavoro Android
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Sincronizzare un'app della versione gestita di Google Play con Intune
 
-Se è stata approvata un'app dallo store e l'app non è ancora visualizzata nel nodo **App con licenza** del carico di lavoro **App per dispositivi mobili**, forzare una sincronizzazione immediata in questo modo:
+Se è stata approvata un'app dallo store e l'app non è ancora visualizzata nel nodo **App con licenza** del carico di lavoro **App client**, forzare una sincronizzazione immediata in questo modo:
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
-4. Nel riquadro del carico di lavoro **App per dispositivi mobili**, in **Configurazione**, selezionare **Google Play gestito**.
+3. Nel riquadro **Intune** selezionare **App client**.
+4. Nel riquadro del carico di lavoro **App client** in **Installazione** selezionare **Google Play gestito**.
 5. Nel riquadro **Google Play gestito** scegliere **Aggiorna**.  
     La pagina aggiorna l'ora e lo stato dell'ultima sincronizzazione.
-6. Nel riquadro del carico di lavoro **App per dispositivi mobili** selezionare **App**.  
+6. Nel riquadro del carico di lavoro **App client** selezionare **App**.  
     L'app della versione gestita di Google Play, appena resa disponibile, viene visualizzata.
 
-Quando l'app viene visualizzata nel nodo **Licenze dell'app** del riquadro del carico di lavoro **App per dispositivi mobili**, è possibile [assegnarla come qualsiasi altra app](/intune-azure/manage-apps/deploy-apps). È possibile assegnare l'app solo a gruppi di utenti.
+Quando l'app viene visualizzata nel nodo **App licenses** (Licenze delle app) del riquadro del carico di lavoro **App client**, è possibile [assegnarla come qualsiasi altra app](/intune-azure/manage-apps/deploy-apps). È possibile assegnare l'app solo a gruppi di utenti.
 
 Dopo aver assegnato l'app, questa viene installata nei dispositivi selezionati come destinazione. All'utente del dispositivo non viene chiesto di approvare l'installazione.
 

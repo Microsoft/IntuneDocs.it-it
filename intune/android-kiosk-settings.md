@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949544"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329384"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Impostazioni della modalità tutto schermo per dispositivi Android in Intune
 
@@ -55,7 +55,7 @@ Per impostare un dispositivo in modalità tutto schermo Android per più app, es
 
 1. Passare alla [pagina della schermata iniziale gestita in Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) e accedere con lo stesso account usato per le altre app Google Play gestite.
 2. Scegliere **Approva**.
-3. Passare al [portale di Intune](https://portal.azure.com) e scegliere **App per dispositivi mobili** > **Google Play gestito** > **Sincronizza**.
+3. Passare al [portale di Intune](https://portal.azure.com) e scegliere **App client** > **Google Play gestito** > **Sincronizza**.
 4. Scegliere **App** > **Schermata iniziale gestita** > **Assegnazioni** > **Aggiungi gruppo**.
 5. In **Tipo di assegnazione** scegliere **Obbligatorio**.
 6. Scegliere **Gruppi inclusi** > **Selezionare i gruppi da includere** > scegliere il gruppo di dispositivi creato per i dispositivi in modalità tutto schermo > **Seleziona** > **OK** > **OK** > **Salva**.
@@ -65,13 +65,13 @@ Per impostare un dispositivo in modalità tutto schermo Android per più app, es
 Per ogni app che si vuole rendere disponibile nei dispositivi in modalità tutto schermo, seguire questa procedura:
 
 1. [Aggiungere l'app in Intune](store-apps-android.md).
-2. Scegliere **App per dispositivi mobili** > **App** > scegliere l'app > **Assegnazioni** > **Aggiungi gruppo**.
+2. Scegliere **App client** > **App** > scegliere l'app > **Assegnazioni** > **Aggiungi gruppo**.
 3. In **Tipo di assegnazione** scegliere **Obbligatorio**.
 4. Scegliere **Gruppi inclusi** > **Selezionare i gruppi da includere** > scegliere il gruppo di dispositivi creato per i dispositivi in modalità tutto schermo > **Seleziona** > **OK** > **OK** > **Salva**.
 
 ### <a name="add-web-links-that-can-be-used-in-kiosk-mode"></a>Aggiungere collegamenti Web che possono essere usati in modalità tutto schermo
 
-1. Passare al [portale di Intune](https://portal.azure.com) e scegliere **App per dispositivi mobili** > **App** > **Aggiungi**.
+1. Passare al [portale di Intune](https://portal.azure.com) e scegliere **App client** > **App** > **Aggiungi**.
 2. In **Tipo di app** scegliere **Collegamento Web**.
 3. Scegliere **Configura** e specificare le informazioni richieste. Non è necessario aggiungere un'immagine del logo poiché verrà recuperata automaticamente dal file favicon.ico del sito Web.
 4. Scegliere **OK** > **Aggiungi**.

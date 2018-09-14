@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321493"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329819"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
 
@@ -81,7 +81,7 @@ La modalità con supervisione iOS può essere abilitata solo durante l'installaz
 - Associazione con Apple Watch 
 
 > [!NOTE]
-> Apple ha confermato che nel 2018 alcune impostazioni passeranno alla modalità solo con supervisione. È consigliabile usare le impostazioni interessate tenendo conto di questo aspetto, anziché attendere che Apple effettui la migrazione alla modalità solo con supervisione:
+> Apple ha confermato che nel 2019 alcune impostazioni passeranno alla modalità solo con supervisione. È consigliabile usare le impostazioni interessate tenendo conto di questo aspetto, anziché attendere che Apple effettui la migrazione alla modalità solo con supervisione:
 > - Installazione di app da parte degli utenti finali
 > - Rimozione di app
 > - FaceTime
@@ -91,6 +91,7 @@ La modalità con supervisione iOS può essere abilitata solo durante l'installaz
 > - Documenti e dati iCloud
 > - Gioco multiplayer
 > - Aggiungi amici dell'area giochi
+> - Siri
 
 ## <a name="password"></a>Password
 -   **Password**: richiede all'utente finale di immettere una password per accedere al dispositivo.

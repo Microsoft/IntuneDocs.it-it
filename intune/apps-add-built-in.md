@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b67b50a5bd372541cf0842696e5012ca991d8b8
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b9520343f3b631fdc2732690b462c6d8fd010c82
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224161"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329496"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Aggiungere app predefinite in Microsoft Intune
 
@@ -36,8 +36,8 @@ Nelle versioni precedenti della console di Intune, Intune forniva diverse app di
 Per aggiungere un'app predefinita alle app disponibili in Microsoft Intune, seguire questa procedura:
 1. Accedere al portale di Azure.
 2. Per visualizzare il riquadro di Microsoft Intune, scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**.
-3. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
-4. Nel riquadro **App per dispositivi mobili**, in **Gestisci** selezionare **App**.
+3. Nel riquadro **Intune** selezionare **App client**.
+4. Nel riquadro **App client** in **Gestisci** selezionare **App**.
 5. Selezionare **Aggiungi**.
 6. Nel riquadro delle app **Aggiungi**, nell'elenco **Tipo di app** selezionare **App predefinita**.
 7. Selezionare **Selezionare l'app**.

@@ -15,12 +15,12 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 859194b364a64854922993d2d798f318b260fc80
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e070e80bb9575154aded12f0992d04bd7a4718f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836337"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329955"
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Guida introduttiva a Microsoft Intune nel portale di Azure
 
@@ -53,7 +53,7 @@ Questa funzionalità sarà più rilevante dopo aver aggiunto altro contenuto a I
 
 ## <a name="using-services"></a>Uso dei servizi
 
-Ogni volta che si apre Intune o qualsiasi altro servizio in Azure, questo verrà visualizzato in un **riquadro**. Alcuni dei primi carichi di lavoro usati in Intune, ad esempio **Utenti**, **Gruppi** e **App per dispositivi mobili**, vengono visualizzati tutti in un riquadro a schermo intero. Quando si seleziona il carico di lavoro, il relativo riquadro viene aperto a pagina intera. Gli altri riquadri, quando vengono aperti, scorrono dal lato destro del riquadro e vengono compressi sotto il riquadro principale da cui provengono.
+Ogni volta che si apre Intune o qualsiasi altro servizio in Azure, questo verrà visualizzato in un **riquadro**. Alcuni dei primi carichi di lavoro usati in Intune, ad esempio **Utenti**, **Gruppi** e **App client**, vengono visualizzati tutti in un riquadro a schermo intero. Quando si seleziona il carico di lavoro, il relativo riquadro viene aperto a pagina intera. Gli altri riquadri, quando vengono aperti, scorrono dal lato destro del riquadro e vengono compressi sotto il riquadro principale da cui provengono.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

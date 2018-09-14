@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
-ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
+ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39587024"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313700"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Impostazioni relative alle restrizioni dei dispositivi Android e Samsung Knox Standard - Intune
 
@@ -35,7 +35,7 @@ Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di
 - **Copia e incolla (solo Samsung Knox)** - Consente le funzioni Copia e Incolla nel dispositivo.
 - **Condivisione degli Appunti tra app (solo Samsung Knox)** - Consente l'uso degli Appunti per copiare e incollare tra app.
 - **Invio dati di diagnostica (solo Samsung Knox)** - Impedisce all'utente di inviare dati di diagnostica dal dispositivo.
-- **Ripristino impostazioni predefinite (solo Samsung Knox)** - Consente all'utente di eseguire il ripristino delle impostazioni predefinite del dispositivo.
+- **Cancellazione (solo Samsung Knox)**: consente all'utente di eseguire la [cancellazione](devices-wipe.md) del dispositivo.
 - **Georilevazione (solo Samsung Knox)** - Consente al dispositivo di usare le informazioni sulla posizione.
 - **Spegnimento (solo Samsung Knox)** - Consente all'utente di spegnere il dispositivo.<br>Se disabilitata, non è possibile impostare **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**.
 - **Acquisizione schermo (solo Samsung Knox)** - Consente all'utente di acquisire il contenuto dello schermo come immagine.

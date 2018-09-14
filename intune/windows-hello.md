@@ -6,19 +6,19 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5220d9c2e1ba98873658631798240af9e7587758
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ff3b482f974641dd7255dc98d3af62542d802de9
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834771"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313735"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrare Windows Hello for Business in Microsoft Intune
 
@@ -31,7 +31,10 @@ ms.locfileid: "31834771"
 
 Intune si integra con Hello for Business in due modi:
 
--   È possibile usare i criteri di Intune per controllare i movimenti che gli utenti possono usare o meno per l'accesso.
+-   È possibile creare criteri Intune in **Registrazione del dispositivo**. Questi criteri hanno come destinazione tutta l'organizzazione, ovvero agiscono a livello di tenant. Supportano la Configurazione guidata di Windows AutoPilot e vengono applicati quando un dispositivo viene registrato. 
+-  È possibile creare un profilo di Identity Protection in **Configurazione del dispositivo**. Il profilo ha come destinazione gli utenti e i dispositivi assegnati e viene applicato durante la registrazione. 
+
+Usare questo articolo per creare criteri di Windows Hello for Business predefiniti che abbiano come destinazione tutta l'organizzazione. Per creare un profilo di Identity Protection che viene applicato per selezionare gruppi di utenti e di dispositivi, vedere [Configure an identity protection profile](identity-protection-configure.md) (Configurare un profilo di Identity Protection).  
 
 <!--- -   You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md). --->
 
@@ -57,7 +60,7 @@ Intune si integra con Hello for Business in due modi:
 
 4. Nel riquadro **Tutti gli utenti** fare clic su **Proprietà** e quindi immettere un **nome** e una **descrizione** facoltativa per le impostazioni di Windows Hello for Business.
 
-5. Nel riquadro **Tutti gli utenti** fare clic su **Impostazioni** e quindi per **Configura Windows Hello for Business** scegliere tra le impostazioni seguenti:
+5. Nel riquadro **Tutti gli utenti** fare clic su **Impostazioni** e scegliere tra le opzioni seguenti per **Configura Windows Hello for Business**:
 
     - **Disabilitato**. Selezionare questa impostazione se non si vuole usare Windows Hello for Business. Tutte le altre impostazioni nella schermata risultano non disponibili.
     - **Attivata**. Selezionare questa impostazione se si vuole configurare le impostazioni di Windows Hello for Business.

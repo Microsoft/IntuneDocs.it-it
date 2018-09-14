@@ -14,12 +14,12 @@ ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bea51227798e239bb74154e4d97e3efd6d55f807
-ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
+ms.openlocfilehash: 8c61040223d964f6ed0eeb85cf08c29bd2880396
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232268"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313599"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Controllare, esportare o eliminare i dati personali in Intune
 
@@ -64,8 +64,8 @@ Il ripristino delle impostazioni predefinite consente di ripristinare tutti i da
 ### <a name="user-self-removal-from-intune-management"></a>Rimozione in autonomia dell'utente dalla gestione di Intune
 Gli utenti possono rimuovere i dispositivi personali [Windows, Android o Apple](https://docs.microsoft.com/en-us/intune-user-help/unenroll-your-device-from-intune-android.md) dalla gestione di Intune senza intervento dell'amministratore.   
 
-### <a name="remove-company-data"></a>Rimuovere i dati aziendali
-La rimozione dei dati aziendali consente di rimuovere i dati di cui è stato eseguito il provisioning da Intune, come le applicazioni aziendali, i dati sulle app gestite in Intune, le impostazioni dei criteri e i profili di posta elettronica di cui viene eseguito il provisioning tramite Intune. Questa azione lascia i dati personali dell'utente nel dispositivo.
+### <a name="retire"></a>Ritiro
+L'azione **Ritira** consente di rimuovere i dati di cui è stato eseguito il provisioning da Intune, ad esempio le applicazioni aziendali, i dati sulle app gestite in Intune, le impostazioni dei criteri e i profili di posta elettronica sottoposti a provisioning con Intune. Questa azione lascia i dati personali dell'utente nel dispositivo.
 
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>Eliminare un tenant da Microsoft Intune
 

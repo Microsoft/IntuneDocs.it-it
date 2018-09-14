@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268839"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313497"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Configurare i criteri di aggiornamento per iOS in Intune
 
@@ -32,7 +32,7 @@ Questa funzionalità è supportata nei dispositivi che eseguono iOS 10.3 e versi
 4. Immettere un nome e una descrizione per i criteri.
 5. Selezionare **Impostazioni**. 
 
-    Specificare nel dettaglio quando non viene imposta l'installazione degli aggiornamenti più recenti nei dispositivi iOS. Queste impostazioni creano un intervallo di tempo limitato. È possibile configurare giorni della settimana, fuso orario, ora di inizio e ora di fine.
+    Specificare nel dettaglio quando non viene imposta l'installazione degli aggiornamenti più recenti nei dispositivi iOS. Queste impostazioni creano un intervallo di tempo limitato. È possibile configurare i **giorni** della settimana, il **fuso orario**, l'**ora di inizio**, l'**ora di fine** e specificare se si vuole **ritardare la visibilità dell'aggiornamento software (in giorni)** per immettere gli utenti. È possibile selezionare un intervallo di ritardo degli aggiornamenti software da 1 a 90 giorni. Per rifiutare esplicitamente l'impostazione di un ritardo degli aggiornamenti software, immettere 0. Queste impostazioni degli aggiornamenti verranno applicate solo ai dispositivi iOS con supervisione.
 
 6. Selezionare **OK** per salvare le modifiche. Selezionare **Crea** per creare i criteri.
 

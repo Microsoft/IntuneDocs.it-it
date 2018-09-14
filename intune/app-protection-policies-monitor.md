@@ -15,12 +15,12 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 282666de444e9da0dd5e406cb45cdf1b9e66c1b2
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b7dea97ef74489e3caae7433e8ebbe2b9ed39aa3
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833155"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330042"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,8 +42,8 @@ Lo stato di conformità può essere monitorato in tre posizioni diverse:
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** scegliere **App per dispositivi mobili**.
-4. Nel carico di lavoro **App per dispositivi mobili** scegliere **Monitoraggio** > **Stato di protezione dell'app** per esaminare la visualizzazione di riepilogo:
+3. Nel riquadro **Intune** scegliere **App client**.
+4. Nel carico di lavoro **App client** scegliere **Monitoraggio** > **Stato di protezione dell'app** per la visualizzazione di riepilogo:
 
 ![Riquadro Riepilogo del riquadro Gestione di applicazioni mobili di Intune](./media/app-protection-user-status-summary.png)
 

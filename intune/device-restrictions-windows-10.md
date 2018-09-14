@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321221"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313854"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrizione dei dispositivi per Windows 10 (e versioni successive) in Intune
 Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di Microsoft Intune configurabili per i dispositivi che eseguono Windows 10.
@@ -37,7 +37,7 @@ Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di
 - **Archivi rimovibili**: specifica se è possibile usare con il dispositivo supporti di archiviazione esterni come le schede SD.
 - **Georilevazione** - Specifica se il dispositivo può usare le informazioni dei servizi di posizione.
 - **Internet condiviso** - Consente l'uso della condivisione della connessione Internet sul dispositivo.
-- **Ripristino del telefono** - Controlla se l'utente può eseguire un ripristino delle impostazioni predefinite nel dispositivo.
+- **Ripristino delle impostazioni predefinite del telefono**: controlla se l'utente può eseguire una cancellazione del dispositivo.
 - **Connessione USB (solo per dispositivi mobili)**: controlla se i dispositivi possono accedere a dispositivi di archiviazione esterni tramite una connessione USB.
 - **Modalità antifurto (solo per dispositivi mobili)**: configura l'attivazione della modalità antifurto di Windows.
 - **Cortana** - Abilita o disabilita l'assistente vocale Cortana.
@@ -50,6 +50,7 @@ Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di
 - **Finestra di dialogo di errore per la scheda SIM (solo dispositivi mobili)**: blocca la visualizzazione di un messaggio di errore nel dispositivo se non viene rilevata alcuna scheda SIM.
 - **Ink Workspace** (Area Windows Ink): impedisce agli utenti l'accesso all'area di lavoro Windows Ink. Quando questa impostazione non è configurata, l'area di lavoro Windows Ink è abilitata (la funzionalità è attivata), e l'utente è autorizzato a usarla sopra la schermata di blocco.
 - **Ridistribuzione automatica**: consente agli utenti con diritti amministrativi di eliminare tutti i dati utente e tutte le impostazioni utente tramite **CTRL+tasto WINDOWS+R** nella schermata di blocco del dispositivo. Il dispositivo viene automaticamente riconfigurato e registrato di nuovo nella gestione.
+- **Require users to connect to network during device setup (solo Windows Insider)** (Richiedi agli utenti di connettersi alla rete durante la configurazione del dispositivo): scegliere **Rendi obbligatorio** per obbligare il dispositivo a connettersi a una rete per poter procedere oltre la pagina Rete durante l'installazione di Windows 10. Quando questa funzionalità è disponibile in anteprima, è necessaria una build 1809 o successiva di Windows Insider per usare questa impostazione.
 
 ## <a name="password"></a>Password
 -   **Password**: richiede all'utente finale di immettere una password per accedere al dispositivo.
@@ -152,7 +153,7 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 ## <a name="edge-browser"></a>Browser Microsoft Edge
 
 -   **Browser Microsoft Edge (solo dispositivi mobili)** - Consente l'uso del browser Web Edge sul dispositivo.
--   **Elenco a discesa della barra degli indirizzi (solo desktop)**: usare questa opzione per impedire a Microsoft Edge di visualizzare suggerimenti in un elenco a discesa durante la digitazione. Ciò consente di ridurre al minimo l'uso di larghezza di banda tra Microsoft Edge e i servizi Microsoft.
+-   **Elenco a discesa della barra degli indirizzi (solo desktop)**: usare questa opzione per impedire a Edge di visualizzare suggerimenti in un elenco a discesa durante la digitazione. Ciò consente di ridurre al minimo l'uso di larghezza di banda tra Microsoft Edge e i servizi Microsoft.
 -   **Sincronizza i Preferiti tra i browser Microsoft (solo desktop)**: consente la sincronizzazione dei Preferiti tra Edge e Internet Explorer in Windows.
 -   **Invia intestazioni DNT (Do Not Track)** - Configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.
 -   **Cookie** - Consente al browser di salvare i cookie di Internet per il dispositivo.
@@ -166,14 +167,14 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Strumenti di sviluppo**: impedisce all'utente finale di aprire gli strumenti di sviluppo di Microsoft Edge.
 -   **Estensioni**: consente all'utente finale di installare le estensioni di Microsoft Edge nel dispositivo.
 -   **InPrivate Browsing**: impedisce all'utente finale di aprire sessioni InPrivate Browsing.
--   **Mostra la pagina alla prima esecuzione**: impedisce la visualizzazione della pagina introduttiva quando si esegue Microsoft Edge per la prima volta.
+-   **Mostra la pagina alla prima esecuzione**: impedisce la visualizzazione della pagina introduttiva quando si esegue Edge per la prima volta.
     -   **URL della prima esecuzione**: specifica l'URL della pagina che viene visualizzata quando l'utente esegue Microsoft Edge per la prima volta (solo Windows 10 Mobile).
 -   **Home page**: aggiunge un elenco dei siti da usare come home page nel browser Microsoft Edge (solo desktop).
 -   **Modifiche alla pagina iniziale**: consente agli utenti di modificare la scelta delle pagine iniziali visualizzate all'avvio di Microsoft Edge. Usare l'impostazione Home page per creare la pagina o l'elenco di pagine che viene aperta all'avvio di Microsoft Edge.
 -   **Blocca l'accesso ai flag Informazioni su**: impedisce all'utente finale di accedere alla pagina di "flag Informazioni su" in Microsoft Edge che contiene impostazioni sperimentali e di sviluppo.
 -   **Indirizzo IP localhost WebRtc**: blocca la visualizzazione dell'indirizzo IP localhost IP quando si effettuano telefonate tramite il protocollo RTC Web.
 -   **Motore di ricerca predefinito**: specifica il motore di ricerca predefinito da usare. Gli utenti finali possono modificare questo valore in qualsiasi momento.
--   **Cancella i dati di esplorazione all'uscita**: cancella la cronologia e i dati di esplorazione quando l'utente esce da Microsoft Edge.
+-   **Cancella i dati di esplorazione all'uscita**: cancella la cronologia e i dati di esplorazione quando l'utente esce da Edge.
 -   **Raccolta di dati per il riquadro animato**: interrompe la raccolta di informazioni dal riquadro animato quando gli utenti aggiungono un sito al menu Start da Microsoft Edge.
 -  **Elenco Preferiti**: definisce il percorso del file dei preferiti. Ad esempio, http://contoso.com/favorites.html
 -  **Restrict changes to Favorites** (Limita modifiche ai Preferiti): impostare questa proprietà su **Blocca** per impedire agli utenti di eseguire operazioni di aggiunta, importazione, ordinamento o modifica dell'elenco Preferiti. 

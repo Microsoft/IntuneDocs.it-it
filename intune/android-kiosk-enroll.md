@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903144"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313462"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurare la registrazione dei dispositivi in modalità tutto schermo Android Enterprise
 
@@ -112,7 +112,7 @@ Per i dispositivi Android 5.1 e versioni successive che supportano NFC, è possi
 
 Per i dispositivi Android 6 e versioni successive, è possibile usare il token per registrare il dispositivo. In Android 6.1 e versioni successive è anche possibile sfruttare la scansione del codice a matrice quando si usa il metodo di registrazione **aft#setup**.
 
-1. Attivare il ripristino delle impostazioni di fabbrica del dispositivo.
+1. Accendere il dispositivo cancellato.
 2. Nella schermata **Benvenuto** selezionare la lingua.
 3. Connettersi al **Wi-Fi** e quindi scegliere **AVANTI**.
 4. Accettare i termini e le condizioni di Google e quindi scegliere **AVANTI**.
@@ -129,7 +129,7 @@ Nei dispositivi Android 7 e versioni successive è possibile eseguire la scansio
 > [!Note]
 > Lo zoom del browser può impedire ai dispositivi di eseguire la scansione del codice a matrice. È possibile risolvere il problema aumentando il livello di zoom del browser.
 
-1. Per avviare la lettura del codice a matrice nel dispositivo Android, toccare più volte nella prima schermata visualizzata dopo il ripristino delle impostazioni di fabbrica.
+1. Per avviare la lettura del codice a matrice nel dispositivo Android, toccare più volte nella prima schermata visualizzata dopo la cancellazione.
 2. Per i dispositivi Android 7 e 8, verrà richiesto di installare un lettore di codici a matrice. I dispositivi Android 9 e versioni successive includono già un lettore di codici a matrice installato.
 3. Usare il lettore di codici a matrice per eseguire la scansione del codice a matrice del profilo di registrazione e quindi seguire le istruzioni visualizzate per effettuare la registrazione.
 

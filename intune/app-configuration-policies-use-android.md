@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ee53dd02fa008a2e885b789439e88c766205d13
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 3596d539319a5a91a1647555a89004683874aa06
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268873"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329462"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti
 
@@ -33,7 +33,7 @@ Usare i criteri di configurazione delle app in Microsoft Intune per specificare 
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Scegliere il carico di lavoro delle **app per dispositivi mobili**.
+3. Scegliere il carico di lavoro **App client**.
 4. Scegliere **Criteri di configurazione dell'app** nel gruppo **Gestisci** e quindi scegliere **Aggiungi**.
 5. Impostare i dettagli seguenti:
     - **Nome**: il nome del profilo che verrà visualizzato nel portale di Azure.
@@ -88,7 +88,7 @@ Quando l'app assegnata viene eseguita in un dispositivo, viene eseguita con le i
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Scegliere **App per dispositivi mobili**.
+3. Scegliere **App client**.
 3. In **Gestisci** scegliere **Criteri di configurazione dell'app** e quindi scegliere **Aggiungi**.
 4. Impostare i dettagli seguenti:
     - **Nome**. Il nome del profilo che verrà visualizzato nel portale di Azure.

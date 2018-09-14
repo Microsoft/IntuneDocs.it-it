@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/28/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335827"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313973"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Informazioni sui profili di dispositivo in Microsoft Intune
 
@@ -54,6 +54,7 @@ Questa funzionalità supporta:
 - iOS 
 - macOS
 
+
 ## <a name="device-restrictions"></a>Limitazioni del dispositivo
 [Limitazioni del dispositivo](device-restrictions-configure.md) consente di gestire la protezione, l'hardware, la condivisione dei dati e altre impostazioni nei dispositivi. Ad esempio è possibile creare un profilo di limitazioni del dispositivo che impedisce agli utenti di dispositivi iOS di usare la fotocamera. 
 
@@ -72,6 +73,13 @@ Per l'onboarding di Windows Defender Advanced Threat Protection (WDATP) in Micro
 
 Questa funzionalità supporta:
 - Windows 10 e versioni successive
+
+## <a name="identity-protection"></a>Protezione dell'identità
+[La protezione dell'identità](identity-protection-configure.md) controlla l'esperienza Windows Hello for Business nei dispositivi Windows 10 e Windows 10 Mobile. Configurare queste impostazioni per rendere Windows Hello for Business disponibile per gli utenti e i dispositivi e per specificare i requisiti per i pin e i gesti dispositivo.  
+
+Questa funzionalità supporta:  
+- Windows 10 e versioni successive
+- Windows Holographic for Business  
 
 ## <a name="kiosk"></a>Modalità tutto schermo
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444881"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313239"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registrazione in blocco per dispositivi Windows
 
@@ -85,10 +85,10 @@ Gli utenti di Azure AD sono utenti standard di questi dispositivi e devono confo
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Risoluzione dei problemi relativi alla registrazione in blocco di Windows
 
 ### <a name="provisioning-issues"></a>Problemi di provisioning
-Il provisioning deve essere usato su nuovi dispositivi Windows. Gli errori di provisioning potrebbero richiedere un ripristino delle impostazioni predefinite del dispositivo o il ripristino dall'immagine di avvio. Gli esempi seguenti descrivono alcuni dei motivi per cui si verificano errori di provisioning:
+Il provisioning deve essere usato su nuovi dispositivi Windows. La correzione degli errori di provisioning potrebbe richiedere una cancellazione del dispositivo o il ripristino dall'immagine di avvio. Gli esempi seguenti descrivono alcuni dei motivi per cui si verificano errori di provisioning:
 
 - Un pacchetto di provisioning che tenta di aggiungere un dominio di Active Directory o un tenant di Azure Active Directory che non crea un account locale potrebbe rendere il dispositivo non raggiungibile, se il processo di aggiunta al dominio ha esito negativo a causa della mancanza di connettività di rete.
-- Gli script eseguiti dal pacchetto di provisioning vengono eseguiti nel contesto del sistema. Gli script possono apportare modifiche arbitrarie al file system e alle configurazioni del dispositivo. Uno script dannoso o errato potrebbe compromettere lo stato del dispositivo al punto che questo possa essere ripristinato solo recuperandone l'immagine o ripristinandone le impostazioni predefinite.
+- Gli script eseguiti dal pacchetto di provisioning vengono eseguiti nel contesto del sistema. Gli script possono apportare modifiche arbitrarie al file system e alle configurazioni del dispositivo. Uno script dannoso o errato potrebbe compromettere lo stato del dispositivo al punto che questo possa essere ripristinato solo recuperandone l'immagine o cancellandolo.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemi della registrazione in blocco e del portale aziendale
 Se un utente tenta di registrare tramite il portale aziendale un dispositivo registrato in precedenza con una registrazione in blocco, un messaggio di avviso comunica che per il dispositivo sono necessarie altre azioni, ovvero la configurazione o la registrazione. Il dispositivo è registrato, ma la registrazione non viene riconosciuta dall'app del portale aziendale o dal sito Web.

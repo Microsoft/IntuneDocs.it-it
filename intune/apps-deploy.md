@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 96b95fcbfdc970976e24553972c5890f35cfddb2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164570"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329479"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
@@ -52,7 +52,7 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Dal menu **Intune** scegliere **App per dispositivi mobili**.
+3. Dal menu **Intune** scegliere **App client**.
 4. Nella sezione **Gestisci** del menu selezionare **App**.
 5. Nel riquadro **App** selezionare l'app che si vuole assegnare.
 6. Nella sezione **Gestisci** del menu selezionare **Assegnazioni**.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5c64b915f240cab2faac84a6a78b213a5fffa0a6
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321119"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347899"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Windows a Microsoft Intune
 
@@ -32,19 +32,15 @@ Un'app line-of-business è un'app che viene aggiunta da un apposito file di inst
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
-4. Nel carico di lavoro **App per dispositivi mobili** selezionare **Gestisci** > **App**.
+3. Nel riquadro **Intune** selezionare **App client**.
+4. Nel carico di lavoro **App client** selezionare **Gestisci** > **App**.
 5. Sopra l'elenco delle app selezionare **Aggiungi**.
 6. Nel riquadro **Aggiungi app** selezionare **App line-of-business**.
 
 ## <a name="step-2-configure-the-app-package-file"></a>Passaggio 2: Configurare il file del pacchetto dell'app
 
 1. Nel riquadro **Aggiungi app** selezionare **File del pacchetto dell'app**.
-2. Nel riquadro **File del pacchetto dell'app** selezionare il pulsante Sfoglia. Selezionare quindi un file di installazione di Windows con l'estensione **msi**, **appx**, **appxbundle**, **msix** o **msixbundle**.
-
-    > [!NOTE]
-    > Le estensioni file per le app di Windows ora includono **msi**, **appx**, **appxbundle**, **msix** e **msixbundle**.  
-
+2. Nel riquadro **File del pacchetto dell'app** selezionare il pulsante Sfoglia. Selezionare quindi un file di installazione di Windows con l'estensione **msi**, **appx** o **appxbundle**.
 3. Al termine, fare clic su **OK**.
 
 

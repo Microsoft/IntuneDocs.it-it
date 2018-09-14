@@ -15,12 +15,12 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fc64f672a5c488848303f8d5ea5ea1467b0b195
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 2677009921a9c498f988bdc674db6342613a05d6
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869501"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347730"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Aggiungere app di Android Store a Microsoft Intune
 
@@ -31,8 +31,8 @@ Prima di assegnare un'app a un dispositivo o a un gruppo di utenti, è necessari
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**.  
     Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
-4. Nel riquadro del carico di lavoro **App per dispositivi mobili**, in **Gestisci** selezionare **App**.
+3. Nel riquadro **Intune** selezionare **App client**.
+4. Nel riquadro del carico di lavoro **App client** in **Gestisci** selezionare **App**.
 5. Selezionare **Aggiungi**.
 6. Nel riquadro **Aggiungi app** selezionare **Android** nell'elenco dei tipi disponibili in **App Store**.
 7. Per configurare le informazioni sull'app, selezionare **Configura** e specificare le informazioni seguenti. Per le app Android, passare a [Google Play Store](https://play.google.com/store) e cercare l'app da distribuire. Selezionare l'app e annotare i dettagli dell'app. A seconda dell'app scelta, è possibile che alcuni valori vengano compilati automaticamente.

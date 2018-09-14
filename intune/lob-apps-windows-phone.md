@@ -15,12 +15,12 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ccc1f25d137675ba8e5f984a16324f4b0771dc9c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: a7d7554cad04dcca0d7f56986aef4c4b30193c18
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224988"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347608"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Windows Phone a Microsoft Intune
 
@@ -32,8 +32,8 @@ Usare le informazioni di questo articolo per aggiungere un'app line-of-business 
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
-4. Nel carico di lavoro **App per dispositivi mobili** selezionare **Gestisci** > **App**.
+3. Nel riquadro **Intune** selezionare **App client**.
+4. Nel carico di lavoro **App client** selezionare **Gestisci** > **App**.
 5. Sopra l'elenco delle app selezionare **Aggiungi**.
 6. Nel riquadro **Aggiungi app** selezionare **App line-of-business**.
 

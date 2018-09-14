@@ -15,12 +15,12 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac96c66dd6f09a7bd7a1b1c8c37f2f0eda24828c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 04d7acb5aa0e1a534fb6ad31519c094123aa90bb
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223510"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347678"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Aggiungere app dello Store iOS a Microsoft Intune
 
@@ -41,8 +41,8 @@ Usare le informazioni di questo articolo per aggiungere le app dello Store iOS a
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**.  
     Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
-4. Nel riquadro del carico di lavoro **App per dispositivi mobili**, in **Gestisci** selezionare **App**.
+3. Nel riquadro **Intune** selezionare **App client**.
+4. Nel riquadro del carico di lavoro **App client** in **Gestisci** selezionare **App**.
 5. Nel riquadro **App** selezionare **Aggiungi**.
 6. Nell'elenco **Tipo di app** selezionare **iOS** dai tipi di **app dello Store** disponibili.
 7. Selezionare **Cerca in App Store**.

@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: baf7ee4f1178b555a0fe311f0e3977941e1491fe
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a49811200cd84882fe9f80708edefde7614e5cee
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905037"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347866"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Android a Microsoft Intune
 
@@ -35,8 +35,8 @@ Un'app line-of-business (LOB) è un'app che viene aggiunta in Intune dal file di
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** selezionare **App per dispositivi mobili**.
-4. Nel carico di lavoro **App per dispositivi mobili** selezionare **Gestisci** > **App**.
+3. Nel riquadro **Intune** selezionare **App client**.
+4. Nel carico di lavoro **App client** selezionare **Gestisci** > **App**.
 5. Sopra l'elenco delle app selezionare **Aggiungi**.
 6. Nel riquadro **Aggiungi app** selezionare **App line-of-business**.
 

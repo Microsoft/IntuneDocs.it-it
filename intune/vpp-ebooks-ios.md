@@ -15,12 +15,12 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c00904097986d1cf70031f1b17171221da64abc0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1b43e7df72e709cfdd929085b1d6718f1afcdf9f
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224801"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347353"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Come gestire gli eBook iOS acquistati tramite Volume Purchase Program con Microsoft Intune
 
@@ -55,8 +55,8 @@ Prima di iniziare, ottenere un token VPP da Apple e caricarlo nell'account di In
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** scegliere **App per dispositivi mobili**.
-1.  Nel carico di lavoro di **App per dispositivi mobili** scegliere **Installazione** > **Token VPP iOS**.
+3. Nel riquadro **Intune** scegliere **App client**.
+1.  Nel carico di lavoro di **App client** scegliere **Installazione** > **Token VPP iOS**.
 2.  Nel riquadro di elenco dei token VPP fare clic su **Crea**.
 3.  Nella pagina **Nuovo token VPP** specificare le informazioni seguenti:
     - **File del token VPP**: assicurarsi di avere completato l'iscrizione a Volume Purchase Program per le aziende o Volume Purchase Program per l'istruzione. Scaricare poi il token VPP di Apple per l'account e selezionarlo qui.

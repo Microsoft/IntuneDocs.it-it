@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61df998dae611eb7350fa144260780b5589afc61
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762247"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347308"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -62,8 +62,8 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**.
-3. Selezionare **App per dispositivi mobili** nel pannello **Microsoft Intune**.
-4. Selezionare **Criteri di protezione delle app** nel pannello **App per dispositivi mobili**.
+3. Selezionare **App client** nel pannello **Microsoft Intune**.
+4. Selezionare **Criteri di protezione delle app** nel pannello **App client**.
 5. Selezionare **Aggiungi criteri** per visualizzare il pannello **Aggiungi criteri**.
 6. Aggiungere i valori seguenti:
     - **Nome:** digitare un nome (obbligatorio) per il nuovo criterio.
@@ -74,8 +74,8 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Per aggiungere app consigliate all'elenco delle app protette
 
-1. Selezionare **App per dispositivi mobili** nel pannello **Microsoft Intune**.
-2. Selezionare **Criteri di protezione delle app** nel pannello **App per dispositivi mobili**.
+1. Selezionare **App client** nel pannello **Microsoft Intune**.
+2. Selezionare **Criteri di protezione delle app** nel pannello **App client**.
 3. Nel pannello **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il pannello **Protezione app di Intune**.
 4. Scegliere **App protette** nel pannello **Protezione app di Intune**. Verrà aperto il pannello **App protette** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
 5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del pannello consente di modificare il filtro dell'elenco.
@@ -86,8 +86,8 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Aggiungere un'app dello Store all'elenco delle app protette
 
 **Per aggiungere un'app dello Store**
-1. Selezionare **App per dispositivi mobili** nel pannello **Microsoft Intune**.
-2. Selezionare **Criteri di protezione delle app** nel pannello **App per dispositivi mobili**.
+1. Selezionare **App client** nel pannello **Microsoft Intune**.
+2. Selezionare **Criteri di protezione delle app** nel pannello **App client**.
 3. Nel pannello **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il pannello **Protezione app di Intune**.
 4. Scegliere **App protette** nel pannello **Protezione app di Intune**. Verrà aperto il pannello **App protette** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
 5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del pannello consente di modificare il filtro dell'elenco.
@@ -99,8 +99,8 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Aggiungere un'app desktop all'elenco delle app protette
 
 **Per aggiungere un'app desktop**
-1. Selezionare **App per dispositivi mobili** nel pannello **Microsoft Intune**.
-2. Selezionare **Criteri di protezione delle app** nel pannello **App per dispositivi mobili**.
+1. Selezionare **App client** nel pannello **Microsoft Intune**.
+2. Selezionare **Criteri di protezione delle app** nel pannello **App client**.
 3. Nel pannello **Criteri di protezione delle app** scegliere i criteri che si vuole modificare. Viene visualizzato il pannello **Protezione app di Intune**.
 4. Scegliere **App protette** nel pannello **Protezione app di Intune**. Verrà aperto il pannello **App protette** che mostra tutte le app già incluse nell'elenco per i criteri di protezione delle app.
 5. Selezionare **Aggiungi app**. Le informazioni per **Aggiungi app** mostrano un elenco filtrato di app. L'elenco nella parte superiore del pannello consente di modificare il filtro dell'elenco.
@@ -116,8 +116,7 @@ Dopo aver aggiunto le app che si vuole proteggere con WIP, è necessario applica
 
 Apprendimento WIP è un report che consente di monitorare le app abilitate per WIP e le app sconosciute WIP. Con app sconosciute si intendono quelle non distribuite dal reparto IT dell'organizzazione. È possibile esportare queste app dal report e quindi aggiungerle ai criteri WIP per evitare disservizi con effetti sulla produttività prima dell'applicazione di WIP in modalità "Blocca".
 
-<!-- 1631908 -->
-Oltre a visualizzare informazioni sulle app abilitate per WIP, è possibile visualizzare un riepilogo dei dispositivi che hanno condiviso dati di lavoro con siti Web. Con queste informazioni, è possibile determinare quali siti Web devono essere aggiunti ai criteri WIP per gruppi e utenti. Il riepilogo mostra gli URL di siti Web a cui hanno accesso le app abilitate per WIP.
+<!-- 1631908 --> Oltre a visualizzare informazioni sulle app abilitate per WIP, è possibile visualizzare un riepilogo dei dispositivi che hanno condiviso dati di lavoro con siti Web. Con queste informazioni, è possibile determinare quali siti Web devono essere aggiunti ai criteri WIP per gruppi e utenti. Il riepilogo mostra gli URL di siti Web a cui hanno accesso le app abilitate per WIP.
 
 Quando si usano app abilitate per WIP e app sconosciute WIP, è consigliabile iniziare con **Invisibile all'utente** o **Consenti sostituzioni** e verificare con un piccolo gruppo di avere incluso le app appropriate nell'elenco delle app protette. Quando si è pronti, è possibile passare al criterio di applicazione finale, ovvero **Blocca**.
 
@@ -149,7 +148,7 @@ Dopo la disattivazione di WIP, viene effettuato un tentativo di decrittografare 
 
 1. Aprire il [portale di Azure](https://portal.azure.com). Scegliere **Tutti i servizi**. Digitare **Intune** nel filtro della casella di testo.
 
-3. Scegliere **Intune** > **App per dispositivi mobili**.
+3. Scegliere **Intune** > **App client**.
 
 4. Scegliere **Stato di protezione dell'App** > **Report** > **Apprendimento Windows Information Protection**.  
 
