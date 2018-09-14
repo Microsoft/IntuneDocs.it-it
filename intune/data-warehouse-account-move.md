@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b34bb7c3f3db9ebb3cdd89b429aaeb530d7ad796
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330297"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141629"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Spostare i dati dell'account del data warehouse di Intune 
 
@@ -63,8 +63,6 @@ Alcuni grafici di tendenza nella visualizzazione del portale di Azure verranno r
 ## <a name="device-enrollment-charts"></a>Grafici di registrazione dei dispositivi
 1. Nel portale di Azure passare a **Microsoft Intune** -> **Registrazione del dispositivo**.
 2. Scaricare i dati sottostanti i grafici usando Microsoft [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-    - Per lo stato della registrazione, vedere 
-    - Per i principali errori di registrazione questa settimana, 
     - Per lo stato di registrazione, copiare questa [query sullo stato della registrazione](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content) e incollarla in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     - Per i principali errori di registrazione questa settimana, copiare questa [query sugli errori di registrazione](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content) e incollarla in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
