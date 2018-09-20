@@ -1,11 +1,11 @@
 ---
-title: Rimuovere i dati aziendali nei dispositivi con Microsoft Intune - Azure | Microsoft Docs
-description: È possibile rimuovere i dati aziendali in un dispositivo o eseguire un ripristino delle impostazioni di fabbrica in un dispositivo Android, profilo di lavoro Android, iOS, macOS o Windows usando Microsoft Intune. È anche possibile eliminare un dispositivo da Azure Active Directory.
+title: Disattivare o cancellare i dispositivi con Microsoft Intune - Azure | Microsoft Docs
+description: Disattivare o cancellare un dispositivo in un dispositivo Android, profilo di lavoro Android, dispositivo iOS, macOS o Windows usando Microsoft Intune. È anche possibile eliminare un dispositivo da Azure Active Directory.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/10/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,47 +13,47 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
-ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
+ms.openlocfilehash: dfefb17a2d8b9b4041846b879297f388156fee54
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028746"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312818"
 ---
-# <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi tramite il ripristino delle impostazioni predefinite, la rimozione dei dati aziendali o l'annullamento manuale della registrazione del dispositivo
+# <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi con la cancellazione, la disattivazione o l'annullamento manuale della registrazione
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Usando le azioni **Rimuovi i dati aziendali** o **Ripristino delle impostazioni predefinite**, è possibile rimuovere da Intune i dispositivi non più necessari, da reimpiegare o mancanti. Gli utenti possono anche inviare un comando remoto dall'app Portale aziendale Intune ai dispositivi privati registrati in Intune.
+Usando le azioni **Disattiva** o **Cancella**, è possibile rimuovere da Intune i dispositivi non più necessari, da reimpiegare o mancanti. Gli utenti possono anche inviare un comando remoto dall'app Portale aziendale Intune ai dispositivi privati registrati in Intune.
 
 > [!NOTE]
-> Prima di rimuovere un utente da Azure Active Directory (Azure AD) usare l'azione **Ripristino delle impostazioni di fabbrica** o **Rimuovi i dati aziendali** per tutti i dispositivi associati all'utente. Se si rimuovono utenti con dispositivi gestiti da Azure AD, Intune non è più in grado di generare un comando di ripristino delle impostazioni di fabbrica o di rimozione dei dati aziendali per tali dispositivi.
+> Prima di rimuovere un utente da Azure Active Directory (Azure AD) usare l'azione **Cancella** o **Disattiva** per tutti i dispositivi associati all'utente. Se si rimuovono utenti con dispositivi gestiti da Azure AD, Intune non potrà più disattivare o cancellare tali dispositivi.
 
-## <a name="factory-reset"></a>Ripristino delle impostazioni di fabbrica
+## <a name="wipe"></a>Cancellazione
 
-L'azione **Ripristino delle impostazioni di fabbrica** riporta un dispositivo alle impostazioni predefinite di fabbrica. I dati degli utenti vengono mantenuti se si seleziona la casella di controllo **Mantieni lo stato della registrazione e l'account utente**. In caso contrario, l'unità viene cancellata in modo sicuro.
+L'azione **Cancella** riporta un dispositivo alle impostazioni predefinite di fabbrica. I dati degli utenti vengono mantenuti se si seleziona la casella di controllo **Mantieni lo stato della registrazione e l'account utente**. In caso contrario, l'unità viene cancellata in modo sicuro.
 
-|Azione Ripristino delle impostazioni predefinite|**Mantieni lo stato della registrazione e l'account utente**|Rimosso dalla gestione di Intune|Descrizione|
+|Azione di cancellazione|**Mantieni lo stato della registrazione e l'account utente**|Rimosso dalla gestione di Intune|Descrizione|
 |:-------------:|:------------:|:------------:|------------|
-|**Ripristino impostazioni predefinite**| Non selezionata | Sì | Cancella tutti gli account utente, i dati, i criteri MDM e le impostazioni. Reimposta le impostazioni e lo stato predefiniti del sistema operativo.|
-|**Ripristino impostazioni predefinite**| Selezionato | No | Cancella tutti i criteri MDM. Conserva gli account utente e i dati. Reimposta le impostazioni utente predefinite. Reimposta le impostazioni e lo stato predefiniti del sistema operativo.|
+|**Cancellazione**| Non selezionata | Sì | Cancella tutti gli account utente, i dati, i criteri MDM e le impostazioni. Reimposta le impostazioni e lo stato predefiniti del sistema operativo.|
+|**Cancellazione**| Selezionato | No | Cancella tutti i criteri MDM. Conserva gli account utente e i dati. Reimposta le impostazioni utente predefinite. Reimposta le impostazioni e lo stato predefiniti del sistema operativo.|
 
 L'opzione **Mantieni lo stato della registrazione e l'account utente** è disponibile solo per Windows 10 versione 1709 o successiva.
 
 I criteri MDM verranno riapplicati alla successiva connessione del dispositivo a Intune.
 
-Il ripristino delle impostazioni di fabbrica è utile per reimpostare un dispositivo prima di assegnarlo a un nuovo utente o nel caso in cui il dispositivo sia stato smarrito o rubato. Prestare attenzione quando si seleziona **Ripristino delle impostazioni di fabbrica**. Non sarà possibile recuperare i dati nel dispositivo.
+La cancellazione è utile per reimpostare un dispositivo prima di assegnarlo a un nuovo utente o nel caso in cui il dispositivo sia stato smarrito o rubato. Scegliere l'azione **Cancella** con cautela. Non sarà possibile recuperare i dati nel dispositivo.
 
-### <a name="factory-reset-a-device"></a>Ripristinare le impostazioni di fabbrica di un dispositivo
+### <a name="wiping-a-device"></a>Cancellazione di un dispositivo
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
 3. Selezionare **Dispositivi** > **Tutti i dispositivi**.
-4. Selezionare il nome del dispositivo di cui si vuole eseguire il ripristino delle impostazioni di fabbrica.
-5. Nel riquadro in cui appare il nome del dispositivo selezionare **Ripristino delle impostazioni di fabbrica**.
+4. Selezionare il nome del dispositivo di cui si vuole eseguire la cancellazione.
+5. Nel riquadro in cui appare il nome del dispositivo selezionare **Cancella**.
 6. Per Windows 10 versione 1709 o successiva è inoltre disponibile l'opzione **Mantieni lo stato della registrazione e l'account utente**. 
     
-    |Mantenuti durante un ripristino delle impostazioni di fabbrica|Non mantenuti|
+    |Mantenuti durante una cancellazione |Non mantenuti|
     | -------------|------------|
     |Account utente associati al dispositivo|File dell'utente|
     |Stato del computer \(aggiunto a un dominio, aggiunto ad AD)| App installate dall'utente \(app dello Store e Win32)|
@@ -64,17 +64,17 @@ Il ripristino delle impostazioni di fabbrica è utile per reimpostare un disposi
     |Accesso automatico dell'utente|| 
     
          
-7. Selezionare **Sì** per confermare il ripristino delle impostazioni di fabbrica.
+7. Per confermare la cancellazione, selezionare **Sì**.
 
-Se il dispositivo è acceso e connesso, l'azione **Ripristino delle impostazioni di fabbrica** si propaga a tutti i tipi di dispositivo in meno di 15 minuti.
+Se il dispositivo è acceso e connesso, l'azione **Cancella** si propaga a tutti i tipi di dispositivo in meno di 15 minuti.
 
-## <a name="remove-company-data"></a>Rimuovere i dati aziendali
+## <a name="retire"></a>Ritiro
 
-L'azione **Rimuovi i dati aziendali** consente di rimuovere i dati delle app (se applicabile), le impostazioni e i profili di posta elettronica assegnati usando Intune. Il dispositivo viene rimosso dalla gestione di Intune. Questa operazione viene eseguita solo dopo che il dispositivo si è collegato e ha ricevuto l'azione **Rimuovi i dati aziendali** remota.
+L'azione **Disattiva** consente di rimuovere i dati delle app gestite, se presenti, le impostazioni e i profili di posta elettronica assegnati usando Intune. Il dispositivo viene rimosso dalla gestione di Intune. Questa operazione viene eseguita solo dopo che il dispositivo si è collegato e ha ricevuto l'azione **Disattiva** remota.
 
-**Rimuovi i dati aziendali** lascia i dati personali dell'utente nel dispositivo.  
+**Disattiva** lascia i dati personali dell'utente nel dispositivo.  
 
-Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto dell'azione **Rimuovi i dati aziendali** sui dati che rimangono nel dispositivo dopo la rimozione dei dati aziendali.
+Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto dell'azione **Disattiva** sui dati che rimangono nel dispositivo dopo la rimozione dei dati aziendali.
 
 ### <a name="ios"></a>iOS
 
@@ -110,11 +110,11 @@ Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto dell'azion
 
 ### <a name="android-work-profile"></a>Profilo di lavoro Android
 
-La rimozione dei dati aziendali da un dispositivo con profilo di lavoro Android consente di rimuovere tutti i dati, le app e le impostazioni nel profilo di lavoro in tale dispositivo. Il dispositivo viene ritirato dalla gestione con Intune. Il ripristino delle impostazioni predefinite non è supportato per i profili di lavoro Android.
+La rimozione dei dati aziendali da un dispositivo con profilo di lavoro Android consente di rimuovere tutti i dati, le app e le impostazioni nel profilo di lavoro in tale dispositivo. Il dispositivo viene ritirato dalla gestione con Intune. La cancellazione non è supportata per i profili di lavoro Android.
 
 ### <a name="android-enterprise-kiosk-devices"></a>Dispositivi in modalità tutto schermo di Android Enterprise
 
-Per i dispositivi in modalità tutto schermo di Android è possibile eseguire solo il ripristino delle impostazioni di fabbrica. Non è possibile rimuovere i dati aziendali dai dispositivi in modalità tutto schermo di Android.
+I dispositivi in modalità tutto schermo possono solo essere cancellati. Non è possibile disattivare i dispositivi Android in modalità tutto schermo.
 
 
 ### <a name="macos"></a>macOS
@@ -137,16 +137,16 @@ Per i dispositivi in modalità tutto schermo di Android è possibile eseguire so
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso.|Rimosso.|Non supportata.|Rimosso.|
 |Impostazioni del profilo certificato|Certificati rimossi e revocati.|Certificati rimossi e revocati.|Non supportata.|Certificati rimossi e revocati.|
 |Posta elettronica|Rimuove i messaggi di posta elettronica abilitati per EFS. Sono inclusi i messaggi e gli allegati di posta elettronica nell'app Mail per Windows.|Non supportata.|I profili di posta elettronica di cui viene eseguito il provisioning con Intune vengono rimossi. I messaggi di posta elettronica memorizzati nella cache del dispositivo vengono eliminati.|Rimuove i messaggi di posta elettronica abilitati per EFS. Sono inclusi i messaggi e gli allegati di posta elettronica nell'app Mail per Windows. Rimuove gli account di posta elettronica di cui Intune ha effettuato il provisioning.|
-|Separazione di Azure AD|No.|No.|Il record di Azure AD viene rimosso.|Non applicabile. In Windows 10 non è possibile rimuovere i dati aziendali per i dispositivi aggiunti ad Azure AD.|
+|Separazione di Azure AD|No.|No.|Il record di Azure AD viene rimosso.|Non applicabile. In Windows 10 non è possibile disattivare i dispositivi aggiunti ad Azure AD.|
 
-### <a name="remove-company-data"></a>Rimuovere i dati aziendali
+### <a name="retire"></a>Ritiro
 
 1. Accedere a [Intune nel portale di Azure](https://aka.ms/intuneportal).
 2. Nel riquadro **Dispositivi** selezionare **Tutti i dispositivi**.
-3. Selezionare il nome del dispositivo da cui verranno rimossi i dati aziendali.
-4. Nel riquadro in cui appare il nome del dispositivo selezionare **Rimuovi i dati aziendali**. Selezionare **Sì** per confermare.
+3. Selezionare il nome del dispositivo da disattivare.
+4. Nel riquadro in cui appare il nome del dispositivo selezionare **Disattiva**. Selezionare **Sì** per confermare.
 
-Se il dispositivo è acceso e connesso, l'azione **Rimuovi i dati aziendali** si propaga a tutti i tipi di dispositivo in meno di 15 minuti.
+Se il dispositivo è acceso e connesso, l'azione **Disattiva** si propaga a tutti i tipi di dispositivo in meno di 15 minuti.
 
 ## <a name="delete-devices-from-the-intune-portal"></a>Eliminare i dispositivi dal portale di Intune
 
@@ -181,8 +181,8 @@ A causa di problemi di comunicazione o dispositivi mancanti può essere necessar
 Se si vuole rimuovere completamente un dispositivo DEP Apple dalla gestione con Intune, seguire questa procedura:
 
 1. Accedere a [Intune nel portale di Azure](https://aka.ms/intuneportal).
-2. Scegliere **Dispositivi** > **Tutti i dispositivi** > scegliere il dispositivo > **Rimuovi i dati aziendali**.
-![Screenshot di Rimuovi i dati aziendali](./media/devices-wipe/remove-company-data.png)
+2. Scegliere **Dispositivi** > **Tutti i dispositivi** > scegliere il dispositivo > **Disattiva**.
+![Screenshot della disattivazione](./media/devices-wipe/retire.png)
 3. Scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Token DEP** > scegliere il token > **Dispositivi** > selezionare la casella di controllo corrispondente al dispositivo > **Elimina** > **Sì**.
 ![Screenshot per l'eliminazione di un dispositivo](./media/devices-wipe/delete-device.png)
 4. Visitare il sito Web all'indirizzo [deploy.apple.com](http://deploy.apple.com) e cercare il dispositivo in base al numero di serie.

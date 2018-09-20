@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f0c35caf841729aae8ce6ccdbf1c9709258a8f5b
-ms.sourcegitcommit: 2e08887c07d29979300e80e6a40372aec6287103
+ms.openlocfilehash: ab88c99694df95eeaf4b5529faec73dacd1a208c
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39249727"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241882"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guida per gli sviluppatori di Microsoft Intune App SDK per iOS
 
@@ -241,7 +241,7 @@ AccentColor | Stringa| Specifica il colore principale della schermata del PIN, a
 MAMTelemetryDisabled| Boolean| Specifica se l'SDK non invierà i dati di telemetria al relativo back-end.| Facoltativo. L'impostazione predefinita è No. |
 MAMTelemetryUsePPE | Boolean | Specifica se MAM SDK invierà dati al back-end dati di telemetria PPE. Usare questa impostazione durante il test delle app con i criteri di Intune in modo che i dati di telemetria di test non vengano confusi con i dati dei clienti. | Facoltativo. L'impostazione predefinita è No. |
 MaxFileProtectionLevel | Stringa | Facoltativo. Consente all'app di specificare il massimo `NSFileProtectionType` che può supportare. Questo valore sostituirà il criterio inviato dal servizio se il livello è superiore rispetto a ciò che l'applicazione può supportare. Valori possibili: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
-OpenInActionExtension | Boolean | Impostare su YES per le estensioni Open-In Action. Vedere la sezione Condividere dati tramite UIActivityViewController per maggiori informazioni. |
+OpenInActionExtension | Boolean | Impostare su YES per le estensioni Open In Action. Vedere la sezione Condividere dati tramite UIActivityViewController per maggiori informazioni. |
 WebViewHandledURLSchemes | Matrice di stringhe | Specifica gli schemi URL gestiti dalla visualizzazione Web dell'app. | Obbligatoria se l'app usa una WebView che gestisce gli URL tramite collegamenti e/o JavaScript. |
 
 ## <a name="receive-app-protection-policy"></a>Ricevere i criteri di protezione delle app
@@ -465,7 +465,7 @@ A partire dalla versione 8.0.2, Intune App SDK consente di filtrare le azioni `U
 
 ### <a name="copy-to-actions"></a>Azioni "Copy To" (Copia in)
 
-Quando si condividono documenti tramite `UIActivityViewController` e `UIDocumentInteractionController`, iOS visualizza le azioni "Copy to" (Copia in) per ogni applicazione che supporta l'apertura del documento da condividere. Le applicazioni dichiarano i tipi di documenti supportati tramite l'impostazione `CFBundleDocumentTypes` in Info.plist. Questo tipo di condivisione non sarà più disponibile se i criteri proibiscono la condivisione con applicazioni non gestite. In sostituzione, le applicazioni dovranno aggiungere un'estensione per Azione non dell'interfaccia utente alla propria applicazione e collegarla a Intune App SDK. L'estensione per Azione è un semplice stub. L'SDK implementerà il comportamento di condivisione file. Seguire la procedura descritta di seguito:
+Quando si condividono documenti tramite `UIActivityViewController` e `UIDocumentInteractionController`, iOS visualizza le azioni "Copy to" (Copia in) per ogni applicazione che supporta l'apertura del documento da condividere. Le applicazioni dichiarano i tipi di documenti supportati tramite l'impostazione `CFBundleDocumentTypes` in Info.plist. Questo tipo di condivisione non sarà più disponibile se i criteri proibiscono la condivisione con applicazioni non gestite. In sostituzione, l'utente dovrà aggiungere un'estensione per Azione non dell'interfaccia utente alla propria applicazione e collegarla a Intune App SDK. L'estensione per Azione è un semplice stub. L'SDK implementerà il comportamento di condivisione file. Seguire la procedura descritta di seguito:
 
 1. Nell'applicazione deve essere stato definito almeno un elemento schemeURL in `CFBundleURLTypes` di Info.plist.
 

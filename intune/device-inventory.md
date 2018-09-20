@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117923"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313179"
 ---
 # <a name="see-device-details-in-intune"></a>Visualizzare i dettagli del dispositivo in Intune
 
@@ -34,11 +34,14 @@ Questo articolo illustra come visualizzare tutti i dispositivi e le relative pro
 2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
 3. Selezionare **Dispositivi** > **Tutti i dispositivi** > selezionare uno dei dispositivi elencati per aprirne i dettagli:
 
-   - **Panoramica** mostra il nome del dispositivo ed elenca alcune delle sue proprietà chiave, ad esempio se è un dispositivo Bring Your Own Device (BYOD), quando è stato registrato e altro ancora. Selezionare **Altro** per:
-     - Rimuovere i dati aziendali
-     - Eliminare il dispositivo
-     - Bloccare in remoto il dispositivo
-     - Cancellazione
+   - **Panoramica** mostra il nome del dispositivo ed elenca alcune delle sue proprietà chiave, ad esempio se è un dispositivo Bring Your Own Device (BYOD), quando è stato registrato e altro ancora. Sul dispositivo si possono eseguire le azioni seguenti:
+      - [Ritira](devices-wipe.md#retire)
+        - [Cancellazione](devices-wipe.md#wipe)
+        - [Blocco remoto](device-remote-lock.md)
+        - [Sincronizzare il dispositivo](device-sync.md)
+        - [Reimposta passcode](device-passcode-reset.md)
+        - [Riavvia](device-restart.md) (solo Windows)
+        - [Fresh Start](device-fresh-start.md) (solo Windows)
      - Avviare una sessione di assistenza remota
    - Usare **Proprietà** per assegnare una [categoria del dispositivo creata](device-group-mapping.md) e modificare la proprietà del dispositivo scegliendo dispositivo personale o dispositivo aziendale.
    - **Hardware** include molte informazioni sul dispositivo, come l'ID del dispositivo, il sistema operativo e la versione, lo spazio di archiviazione, il modello e il produttore, le impostazioni di accesso condizionale e altro.

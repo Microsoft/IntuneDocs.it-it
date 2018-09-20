@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/22/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,53 +17,51 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: feba62cac464af75a0f0d249022edb6bd5d031f3
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 2f8a65d05ecffcf87d7a84ab23ad215256286dd0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225375"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150076"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloccare il dispositivo in modalità remota dal sito Web del portale aziendale
 
-Può succedere che i dispositivi vengano persi. Se il dispositivo è stato smarrito o rubato, la prima preoccupazione potrebbe essere il possibile accesso alle informazioni sul dispositivo da parte di qualsiasi utente, ovunque si trovi il dispositivo.
+Bloccare in remoto un dispositivo smarrito o rubato dal sito Web del portale aziendale. Se supportata dal dispositivo, questa impostazione blocca lo schermo del dispositivo, indipendentemente da dove quest'ultimo si trovi. Un utente dovrà immettere il passcode corretto per sbloccare il dispositivo e utilizzarlo.   
 
-[!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
-
-Per ragioni di sicurezza, è possibile bloccarlo usando l'opzione Blocco remoto sul [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog). L'opzione Blocco remoto funziona per:
+L'impostazione di blocco remoto funziona per:
 
 * Android
 * iOS
 * macOS
 * Windows 10
 * Windows 10 Mobile (se per il dispositivo è già stato impostato un passcode)
-* Windows Phone 8.1 (se per il dispositivo è già stato impostato un passcode)
+* Windows Phone 8.1 (se per il dispositivo è già stato impostato un passcode)  
 
-## <a name="to-use-remote-lock-to-lock-your-device"></a>Per usare Blocco remoto per bloccare il dispositivo
+1. Nel [sito Web del portale aziendale](https://portal.manage.microsoft.com) selezionare il pulsante __Menu__ > __Dispositivi__.  
 
-1. Nel [sito Web Portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) toccare il pulsante __menu__, quindi selezionare __Dispositivi personali__.
+2. Selezionare il dispositivo da bloccare.  
 
-2. Nella pagina __Dispositivi personali__ selezionare il nome del dispositivo da bloccare.
+    ![Screenshot della pagina Dispositivi, con 2 riquadri che mostrano i dispositivi non identificati, denominati in modo generico. Direttamente sotto i dispositivi è presente un banner di colore grigio che richiede all'utente di identificare il dispositivo in uso o aggiungerne uno nuovo.](./media/rename-reset-device-step2-1808.png) 
 
-   ![Screenshot della pagina Dispositivi personali con un paio di dispositivi non identificati sopra il banner con la richiesta di registrare i dispositivi non inclusi nell'elenco o di identificare quelli non identificati.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Selezionare **Blocco remoto**. Se l'opzione Blocca non è visibile nella parte superiore della pagina, selezionare **Altro (...)**  > **Blocco remoto**.  
 
-3. Il dispositivo verrà aperto in una finestra popup. Toccare il pulsante **Blocco remoto**.
+   ![Pagina dei dettagli per un dispositivo selezionato nel sito Web del portale aziendale, con una serie di collegamenti nella parte superiore tra cui Rinomina, Rimuovi, Reimposta dispositivo, Reimposta passcode e Blocco remoto. ](./media/rename-reset-device-1808.png) 
 
-   ![Tutte le opzioni per un dispositivo selezionato nel sito Web del portale aziendale, tra cui Rinomina, Rimuovi, Reimposta dispositivo, Reimposta passcode e Blocco remoto. ](./media/iwp-screen-with-all-options.png)
+    ![Vista ingrandita dell'icona Altro, evidenziata con una freccia rossa.](./media/rename-reset-device-step3-more-1808.png)    
 
-4. Viene visualizzato un avviso che informa che si sta per bloccare il dispositivo. Toccare **Blocco remoto**. Il sito Web del portale aziendale tenterà di bloccare il dispositivo.
+4. Viene visualizzato un messaggio che avvisa che il dispositivo sta per essere bloccato. Toccare **Blocco remoto** per confermare.
 
-   Dopo aver selezionato **Blocco remoto** viene visualizzato il messaggio "Blocco remoto in sospeso".  Quando Blocco remoto ha esito positivo, lo stato passa a "Blocco remoto riuscito."
+Dopo la conferma, il portale aziendale tenta di bloccare il dispositivo. Durante questo periodo viene visualizzato un messaggio "Blocco remoto in sospeso". Quando il dispositivo è bloccato, lo stato diventa "Blocco remoto riuscito".  
 
-   Lo stato del blocco remoto viene visualizzato in tre posizioni:
+Lo stato del blocco remoto viene visualizzato in tre posizioni:
 
    * L'area delle notifiche del sito Web.
    * La pagina **Dettagli** per il dispositivo.
-   * Il riquadro contenente il nome del dispositivo nella sezione **Dispositivi personali** della pagina.
+   * Il riquadro contenente il nome del dispositivo nella sezione **Dispositivi** della pagina.  
 
 > [!Note]
-> Se viene visualizzata la notifica "Blocco remoto non riuscito", attendere qualche minuto e quindi tentare nuovamente di bloccare il dispositivo. Dopo aver iniziato il nuovo tentativo, lo stato diventa nuovamente "Blocco remoto in sospeso". Se il nuovo tentativo non funziona, è necessario contattare il supporto tecnico aziendale.
+> Se una notifica avvisa che il blocco remoto non è riuscito, attendere qualche minuto. Quindi, tentare di bloccare nuovamente il dispositivo. Lo stato diventa nuovamente "Blocco remoto in sospeso". Se il nuovo tentativo non funziona, contattare il supporto tecnico aziendale per assistenza.
 
-Se il dispositivo viene ritrovato e si vuole rimuovere il blocco dopo aver usato Blocco remoto, immettere il passcode.
+Se il dispositivo viene ritrovato e si vuole rimuovere il blocco dopo aver usato Blocco remoto, immettere il passcode.  
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

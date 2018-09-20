@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,28 +17,29 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e31451abd79c17618377598d29c455c4c0637348
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 4afa12cffbf199d271df912bfcfc1aedb4d8b23c
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321374"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150489"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Rinominare il dispositivo dal sito Web del portale aziendale
 
-Informazioni su come rinominare il dispositivo registrato e gestito dal sito Web del portale aziendale. È possibile cambiare il nome generico o il nome di modello predefinito di un dispositivo e impostare un nome che consente di identificarlo rapidamente.  
+Rinominare un dispositivo registrato e gestito dal sito Web del portale aziendale. Modificare il nome generico di un dispositivo o il nome predefinito di un modello con un nome che si possa identificare rapidamente.
 
-1. Nel [sito Web Portale aziendale](https://portal.manage.microsoft.com/HelpDeskDialog) selezionare il pulsante __Menu__ > __Dispositivi personali__.
+1. Aprire il [sito Web Portale aziendale](https://portal.manage.microsoft.com) e selezionare il pulsante __Menu__ > __Dispositivi__.  
 
 2. Selezionare il dispositivo da rinominare.
 
-![Screenshot della pagina Dispositivi personali con un paio di dispositivi non identificati sopra il banner con la richiesta di registrare i dispositivi non inclusi nell'elenco o di identificare quelli non identificati.](./media/macOS_enroll_002_tap_here_banner.png)  
+    ![Screenshot della pagina Dispositivi, con 2 riquadri che mostrano i dispositivi non identificati, denominati in modo generico. Direttamente sotto i dispositivi è presente un banner di colore grigio che richiede all'utente di identificare il dispositivo in uso o aggiungerne uno nuovo.](./media/rename-reset-device-step2-1808.png)   
 
-3. Selezionare **Rinomina**.  
+3. Selezionare **Rinomina**. Se l'opzione Rinomina non è visibile nella parte superiore della pagina, selezionare **Altro (...)**  > **Rinomina**.   
 
-   ![Tutte le opzioni per un dispositivo selezionato nel sito Web del portale aziendale, tra cui Rinomina, Rimuovi, Reimposta dispositivo, Reimposta passcode e Blocco remoto. ](./media/iwp-screen-with-all-options.png)  
-    
+   ![Pagina dei dettagli per un dispositivo selezionato nel sito Web del portale aziendale, con una serie di collegamenti nella parte superiore tra cui Rinomina, Rimuovi, Reimposta dispositivo, Reimposta passcode e Blocco remoto. ](./media/rename-reset-device-1808.png)   
 
-4. Nella casella in cui viene visualizzato il nome del dispositivo, digitare il nuovo nome del dispositivo. Toccare il pulsante **Rinomina**. Il dispositivo viene ora visualizzato con il nuovo nome.
+    ![Vista ingrandita dell'icona Altro, evidenziata con una freccia rossa.](./media/rename-reset-device-step3-more-1808.png)  
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com/HelpDeskDialog).
+4. Nella casella in cui viene visualizzato il nome del dispositivo, digitare il nuovo nome del dispositivo. Toccare il pulsante **Rinomina**. Il dispositivo viene ora visualizzato con il nuovo nome.  
+
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  

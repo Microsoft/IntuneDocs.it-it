@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,26 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fee3f31b4a475ed3def1ee96fcdad2f2a414ab3c
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: f209fa315d5d5c36e661a931c32c70ba5ba93d81
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752394"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150051"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Risolvere una minaccia rilevata da un'app di Mobile Threat Defense
 
-Mobile Threat Defense ha rilevato una potenziale minaccia nel dispositivo iOS ed è necessario risolvere il problema per ottenere di nuovo l'accesso alla posta elettronica, alle app e ai file aziendali o dell'istituto di istruzione. A seconda della configurazione aziendale di Mobile Threat Defense in azienda, sarà usata una delle app seguenti per risolvere questi tipi di problemi.
+Le app Mobile Threat Defense rilevano e segnalano la presenza di potenziali minacce nei dispositivi. Alcune organizzazioni integrano un servizio Mobile Threat Defense con un provider di gestione di dispositivi mobili, ad esempio Intune. Quando è integrato, il servizio Mobile Threat Defense segnala le minacce, ad esempio app, reti sospette e vulnerabilità del sistema operativo, e invia notifiche all'app Portale aziendale. I dettagli della minaccia e la procedura di correzione saranno quindi disponibili nell'app Mobile Threat Defense.  
+
+Le minacce sono indicate nel portale aziendale come problemi di non conformità non risolti. Se le minacce sono classificate con un livello di rischio elevato, l'azienda revocherà l'accesso alle risorse aziendali. La presenza di minacce nel dispositivo può impedire di:  
+
+* Connettersi alla posta elettronica aziendale
+* Connettersi al Wi-Fi aziendale
+* Connettersi a SharePoint Online
+* Sincronizzare i file aziendali con OneDrive
+* Accedere alle app aziendali
+
+Di seguito sono indicati i servizi Mobile Threat Defense specifici per iOS che l'organizzazione può avere configurato. Selezionare un'app per ottenere altre informazioni sul comportamento. 
 
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
@@ -32,13 +42,5 @@ Mobile Threat Defense ha rilevato una potenziale minaccia nel dispositivo iOS ed
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 * [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-Per risolvere il problema, aprire l'app Mobile Threat Defense e seguire le istruzioni visualizzate nell'app.
-
-**Esempio di un'app considerata una minaccia da Mobile Threat Defense**
-
-Se è stata installata un'app considerata una minaccia da Mobile Threat Defense, verrà visualizzata una schermata che indica di quale app si tratta. In questo caso, toccare il nome dell'applicazione visualizzato nella parte superiore dello schermo e seguire le istruzioni per rimuovere la minaccia.
-
-Dopo aver disinstallato l'app, si ottiene nuovamente l'accesso alla posta elettronica e agli altri dati aziendali o dell'istituto di istruzione sin da subito. Se si ignora la richiesta di disinstallare l'app, si perderà l'accesso alla posta elettronica e ai dati aziendali fino a quando l'app non verrà disinstallata.
-
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
 

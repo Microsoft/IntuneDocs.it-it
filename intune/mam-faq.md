@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c3d0e31520aa2f73eabfce5ebc1d55d4df73946
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329927"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312799"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app
 
@@ -112,10 +112,12 @@ Il PIN è un codice di accesso usato per verificare che l'accesso ai dati dell'o
 
     - **Il PIN viene condiviso tra le app dello stesso editore per migliorare l'usabilità:** in iOS, un solo PIN viene condiviso da tutte le app **dello stesso editore**. In Android un solo PIN viene condiviso da tutte le app.
     - **Il comportamento 'Controlla di nuovo i requisiti di accesso dopo (minuti)' dopo un riavvio del dispositivo:** un "timer del PIN" tiene traccia del numero di minuti di inattività che determinano quando visualizzare di nuovo il PIN dell'app di Intune. In iOS, il timer del PIN è indipendente dal riavvio del dispositivo. Di conseguenza, il riavvio del dispositivo non ha effetto sul numero di minuti durante i quali l'utente è rimasto inattivo da un'app iOS con i criteri PIN di Intune. In Android, il timer del PIN viene reimpostato al riavvio del dispositivo. Di conseguenza, le app Android con criteri di Intune richiederanno probabilmente un PIN dell'app indipendentemente dal valore dell'impostazione 'Controlla di nuovo i requisiti di accesso dopo (minuti)' **dopo un riavvio del dispositivo**.  
-    - **Il timer associato al PIN è di natura sequenziale:** quando si immette il PIN per accedere a un'app (app A) e quest'ultima lascia il primo piano (area di input principale) del dispositivo, il timer del PIN immesso viene reimpostato. Le app (ad esempio l'app B) che condividono questo PIN non richiederanno all'utente di immettere il PIN, perché il timer è stato reimpostato. La richiesta di immissione del PIN verrà visualizzata di nuovo quando il valore di 'Controlla di nuovo i requisiti di accesso dopo (minuti)' verrà nuovamente raggiunto. 
+    - **Il timer associato al PIN è di natura sequenziale:** quando si immette il PIN per accedere a un'app (app A) e quest'ultima lascia il primo piano (area di input principale) del dispositivo, il timer del PIN immesso viene reimpostato. Le app (ad esempio l'app B) che condividono questo PIN non richiederanno all'utente di immettere il PIN, perché il timer è stato reimpostato. La richiesta di immissione del PIN verrà visualizzata di nuovo quando il valore di 'Controlla di nuovo i requisiti di accesso dopo (minuti)' verrà nuovamente raggiunto.
+
+Per i dispositivi iOS, anche se il PIN è condiviso tra app di diversi server di pubblicazione, la richiesta verrà nuovamente visualizzata quando il valore di **Controlla di nuovo i requisiti di accesso dopo (minuti)** verrà nuovamente raggiunto per l'app che non è l'area di input principale. Quindi, ad esempio, un utente ha l'app _A_ dal server di pubblicazione _X_ e l'app _B_ dal server di pubblicazione _Y_ e queste due app condividono lo stesso PIN. L'utente è concentrato sull'app _A_ (in primo piano) e l'app _B_ è ridotta a icona. Quando si raggiunge il valore di **Controlla di nuovo i requisiti di accesso dopo (minuti)** e si passa all'app _B_, è necessario il PIN.
 
       >[!NOTE] 
-      > Per verificare più spesso i requisiti di accesso dell'utente (ad esempio tramite la richiesta del PIN), in particolare per le app usate di frequente, è consigliabile ridurre il valore dell'impostazione 'Controlla di nuovo i requisiti di accesso dopo (minuti)'. 
+      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
       
 - **Come funziona il PIN di Intune con i PIN delle app predefiniti per Outlook e OneDrive**<br></br>
 Il funzionamento del PIN di Intune è basato su un timer basato sull'inattività, ovvero il valore di 'Controlla di nuovo i requisiti di accesso dopo (minuti)'. Di conseguenza, le richieste del PIN di Intune vengono visualizzate in modo indipendente dalle richieste dei PIN delle app predefiniti per Outlook e OneDrive spesso associate all'avvio dell'app per impostazione predefinita. Se l'utente riceve entrambe le richieste di PIN contemporaneamente, il comportamento predefinito prevede che il PIN di Intune abbia la precedenza. 
@@ -137,13 +139,13 @@ Gli amministratori IT possono distribuire criteri di protezione che richiedono d
 - **Quali dati vengono crittografati?**<br></br> Vengono crittografati solo i dati contrassegnati come "aziendali" in base ai criteri di protezione delle app dell'amministratore IT. Quando hanno origine da una sede aziendale, i dati vengono considerati "aziendali". Per le app di Office, Intune considera come sedi aziendali la posta elettronica (Exchange) o l'archiviazione cloud (app OneDrive con un account OneDrive for Business). Per le app line-of-business gestite dallo strumento di wrapping delle app di Intune, tutti i dati delle app vengono considerati "aziendali".
 
 **In che modo Intune cancella i dati in remoto?**<br></br>
-Intune può cancellare i dati delle app in tre modi diversi: cancellazione completa dei dati del dispositivo, cancellazione selettiva per MDM e cancellazione selettiva per MAM. Per altre informazioni sulla cancellazione remota per MDM, vedere [Rimuovere i dispositivi con il ripristino delle impostazioni predefinite o rimuovere i dati aziendali](devices-wipe.md#factory-reset). Per altre informazioni sulla cancellazione selettiva usando MAM, vedere [Rimuovere i dati aziendali](devices-wipe.md#remove-company-data) e [Come cancellare solo i dati aziendali dalle app](apps-selective-wipe.md).
+Intune può cancellare i dati delle app in tre modi diversi: cancellazione completa dei dati del dispositivo, cancellazione selettiva per MDM e cancellazione selettiva per MAM. Per altre informazioni sulla cancellazione remota per MDM, vedere [Rimuovere i dispositivi tramite il ripristino delle impostazioni predefinite, la rimozione dei dati aziendali o l'annullamento manuale della registrazione del dispositivo](devices-wipe.md). Per altre informazioni sulla cancellazione selettiva usando MAM, vedere [l'azione Ritira](devices-wipe.md#retire) e [Come cancellare solo i dati aziendali dalle app](apps-selective-wipe.md).
 
-- **Che cos'è il ripristino delle impostazioni predefinite?**<br></br> Il [ripristino delle impostazioni predefinite](devices-wipe.md) rimuove tutti i dati e le impostazioni dell'utente dal **dispositivo** ripristinandolo alle impostazioni predefinite di fabbrica. Il dispositivo verrà rimosso da Intune.
+- **Informazioni sulla cancellazione**<br></br> La [cancellazione](devices-wipe.md) rimuove tutti i dati dell'utente e le impostazioni dal **dispositivo** ripristinando le impostazioni predefinite di fabbrica. Il dispositivo verrà rimosso da Intune.
   >[!NOTE]
-  > Il ripristino delle impostazioni predefinito può essere eseguito solo sui dispositivi registrati con la gestione di dispositivi mobili (MDM) di Intune.
+  > La cancellazione può essere eseguita solo sui dispositivi registrati con la gestione di dispositivi mobili (MDM) di Intune.
 
-- **Che cos'è la cancellazione selettiva per MDM?**<br></br> Vedere [Rimuovere dispositivi -Rimuovere i dati aziendali](devices-wipe.md#remove-company-data) per informazioni sulla rimozione dei dati aziendali.
+- **Che cos'è la cancellazione selettiva per MDM?**<br></br> Vedere [l'azione Ritira nella sezione Rimuovere i dispositivi](devices-wipe.md#retire) per informazioni sulla rimozione dei dati aziendali.
 
 - **Che cos'è la cancellazione selettiva per MAM?**<br></br> La cancellazione selettiva per MAM rimuove semplicemente i dati aziendali da un'app. La richiesta viene avviata tramite Intune nel portale di Azure. Per informazioni su come avviare una richiesta di cancellazione, vedere [Come cancellare solo i dati aziendali dalle app](apps-selective-wipe.md).
 

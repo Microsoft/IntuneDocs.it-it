@@ -15,30 +15,32 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 3176f09a7565a17230aeb7a9f44b14490264b2bd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8a83602d992ff7ea08be84272eee086ea364be0a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016442"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147044"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Come aggiornare l'app Portale aziendale
 
-Se la versione dell'app Portale aziendale non è più supportata o se è disponibile una versione più recente, è necessario aggiornare l'app alla versione più recente. Attenersi alla procedura corrispondente al tipo di dispositivo.
+Questo articolo descrive come aggiornare la versione dell'app Portale aziendale quando:  
+* È disponibile una versione più recente dell'app Portale aziendale.
+* La versione dell'app Portale aziendale in uso non è più supportata.
+
+La procedura seguente descrive come aggiornare l'app nei dispositivi Android, iOS e Windows.    
 
 ## <a name="update-the-intune-company-portal-app-on-your-android-device"></a>Aggiornare l'app Portale aziendale di Intune nel dispositivo Android
 
-Quando è disponibile una nuova versione del Portale aziendale, Play Store invia un avviso. Non verrà visualizzato un messaggio nell'app Portale aziendale. Per aggiornare il dispositivo, seguire le istruzioni riportate nell'avviso.
+Quando è disponibile una nuova versione del Portale aziendale, Play Store invia un avviso. Non verrà visualizzato un messaggio nell'app Portale aziendale. Selezionare l'avviso e attenersi alle istruzioni per aggiornare il dispositivo.  
 
 ## <a name="update-the-intune-company-portal-app-on-your-ios-device"></a>Aggiornare l'app Portale aziendale di Intune nel dispositivo iOS
 
 Quando è disponibile una nuova versione, nell'elenco delle app installate viene visualizzata l'opzione di aggiornamento accanto all'app.  
 
-Per aggiornare l'app Portale aziendale:
-
 1. Aprire l'App Store e cercare **intune**.
 
-2. Quando si trova l'app, toccare il pulsante di **aggiornamento** a destra del nome dell'app.
+2. Quando si trova l'app, toccare **Aggiorna**.
 
 ## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>Aggiornare l'app Portale aziendale di Intune nel dispositivo Windows
 
@@ -50,4 +52,4 @@ Per aggiornare l'app Portale aziendale:
     > Se non si riesce ad accedere a Microsoft Store, contattare il supporto tecnico dell'azienda.
 
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

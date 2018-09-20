@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 8275a1f542badaadc5248826c5d1d3a8f24d56c3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762230"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149496"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Uso del sito Web del portale aziendale
-Il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog) è una pagina Web che gli utenti finali possono usare per gestire computer e dispositivi registrati in Intune.
+Usare il [sito Web del portale aziendale](https://portal.manage.microsoft.com) per visualizzare, modificare, aggiungere e rimuovere i dispositivi gestiti.
 
-Dal sito Web del portale aziendale gli utenti possono eseguire queste attività:
+Dal sito Web del portale aziendale è possibile eseguire queste azioni:
 
 -   [Rinominare il dispositivo](rename-your-device-cpwebsite.md)
 
 -   [Rimuovere il dispositivo](remove-your-device-cpwebsite.md)
 
--   [Reimpostare (cancellare) il dispositivo](reset-erase-your-device-cpwebsite.md)
+-   [Reimpostare il dispositivo](reset-erase-your-device-cpwebsite.md)
 
 -   [Reimpostare il passcode in un dispositivo](reset-your-passcode-cpwebsite.md)
 
@@ -41,8 +41,8 @@ Dal sito Web del portale aziendale gli utenti possono eseguire queste attività:
 
 -   Trovare le informazioni sul contatto del supporto tecnico aziendale, se configurate
 
--   Visualizzare i dettagli sul dispositivo, ad esempio se è conforme ai criteri aziendali o dell'istituto di istruzione
+-   Verificare lo stato di conformità
 
--   Gestire in remoto il PC (opzione disponibile solo per i PC)
+-   Gestire un PC in remoto
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

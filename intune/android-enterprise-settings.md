@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039336"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312897"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Impostazioni della modalità tutto schermo Android Enterprise
 
@@ -33,14 +33,14 @@ I profili della modalità tutto schermo Android supportano le impostazioni di co
     - **Concedi automaticamente**: le autorizzazioni vengono concesse automaticamente.
     - **Nega automaticamente**: le autorizzazioni vengono negate automaticamente.
 - **Modifiche al volume**: scegliere **Blocca** per impedire agli utenti di modificare il volume del dispositivo.
-- **Ripristino delle impostazioni predefinite**: scegliere **Blocca** per impedire agli utenti di ripristinare le impostazioni predefinite del dispositivo.
+- **Cancellazione**: scegliere **Blocca** per impedire agli utenti di cancellare il dispositivo.
 - **Modalità provvisoria**: scegliere **Blocca** per impedire agli utenti di riavviare il dispositivo in modalità provvisoria.
 - **Barra di stato**: scegliere **Blocca** per impedire agli utenti di accedere alla barra di stato, incluse le notifiche e le impostazioni rapide.
 - **Modifiche alle impostazioni Wi-Fi**: scegliere **Blocca** per impedire agli utenti di modificare le configurazioni Wi-Fi create dal proprietario del dispositivo. Gli utenti possono creare configurazioni Wi-Fi personalizzate.
 - **Configurazione del punto di accesso Wi-Fi**: scegliere **Blocca** per impedire agli utenti di creare o modificare le configurazioni Wi-Fi.
 - **Funzionalità di debug**: scegliere **Consenti** per consentire agli utenti di usare le funzionalità di debug.
 - **Regolazione del microfono**: scegliere **Blocca** per impedire agli utenti di regolare il volume o disattivare l'audio del microfono.
-- **Indirizzi di posta elettronica per la protezione dal ripristino delle impostazioni predefinite**: scegliere **Indirizzi di posta elettronica dell'account Google** per definire gli indirizzi di posta elettronica, separati da punto e virgola, in grado di sbloccare il dispositivo dopo un ripristino delle impostazioni predefinite. Se non viene specificato alcun indirizzo di posta elettronica, chiunque può sbloccare il dispositivo dopo un ripristino delle impostazioni predefinite.
+- **Indirizzi di posta elettronica per la protezione dalla cancellazione**: scegliere **Indirizzi di posta elettronica dell'account Google** per definire gli indirizzi di posta elettronica, separati da punto e virgola, in grado di sbloccare il dispositivo dopo una cancellazione. Se non viene specificato alcun indirizzo di posta elettronica, chiunque può sbloccare il dispositivo dopo una cancellazione.
 - **Rete di emergenza**: scegliere **Abilita** per consentire di attivare la funzione di rete di emergenza. Se non è possibile stabilire una connessione di rete all'avvio, la rete di emergenza richiede all'utente di connettersi temporaneamente a una rete per aggiornare i criteri del dispositivo. Dopo aver applicato i criteri, la rete temporanea viene dimenticata e viene ripreso l'avvio del dispositivo. Ciò consente di evitare il caso in cui non sia possibile connettersi a una rete in assenza di una rete idonea nei criteri più recenti e il dispositivo venga avviato in un'app in modalità di attività di blocco oppure l'utente non sia in grado di raggiungere le impostazioni del dispositivo.
 - **Consenti l'installazione da origini sconosciute**: scegliere **Consenti** per consentire agli utenti di eseguire l'installazione da origini sconosciute.
 - **Aggiornamento del sistema**: scegliere un'opzione per definire la modalità di gestione degli aggiornamenti da parte del dispositivo:

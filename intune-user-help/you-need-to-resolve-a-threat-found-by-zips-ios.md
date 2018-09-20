@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,34 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 1ee101fe31b32ccd3d5b1c7cfd361b881e232ae5
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9cb87541e45591ae8c4d1e8151fdb781ebd0b364
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754349"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148141"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>Risolvere una minaccia rilevata da Zimperium zIPS
+# <a name="resolve-a-threat-found-by-zimperium-zips"></a>Risolvere una minaccia rilevata da Zimperium zIPS
 
-Zimperium zIPS ha rilevato una potenziale minaccia nel dispositivo ed è necessario risolvere il problema per ripristinare l'accesso alla posta elettronica, alle app e ai file aziendali o dell'istituto di istruzione. Il messaggio visualizzato dipende dal problema che Zimperium zIPS ha rilevato nel dispositivo.
+Zimperium zIPS è un servizio Mobile Threat Defender che identifica le potenziali minacce nei dispositivi iOS. Le minacce vengono segnalate all'app Portale aziendale e sono indicate come problemi di non conformità non risolti. Se il dispositivo viene identificato come non conforme, si potrebbe non essere in grado di:
 
-Per risolvere il problema, aprire l'app Zimperium zIPS e seguire le istruzioni visualizzate nell'app.
+* Connettersi alla posta elettronica aziendale
+* Connettersi al Wi-Fi aziendale
+* Connettersi a SharePoint Online
+* Sincronizzare i file aziendali con OneDrive
+* Accedere alle app aziendali
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Messaggi visualizzati se l'accesso del dispositivo registrato alla posta elettronica o ai file viene bloccato
+Questo articolo descrive come riconoscere gli avvisi di minaccia di Zimperium zIPS e le azioni da intraprendere per risolverli. 
 
-Se viene rilevato un virus o un'altra minaccia per la sicurezza nel dispositivo registrato e si tenta di accedere alla posta elettronica o ai file aziendali, un messaggio di Zimperium zIPSt avvisa di prendere provvedimenti.
+## <a name="troubleshoot-virus-or-security-threat"></a>Risolvere un virus o una minaccia per la sicurezza  
+Al rilevamento di un virus o una minaccia per la sicurezza, Zimperium zIPS applica restrizioni in base ai criteri di accesso dell'organizzazione. I criteri di accesso aziendali possono impedire l'accesso dal dispositivo alla rete, alle app e alla posta elettronica aziendali.  
 
-Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog), in cui è possibile seguire le istruzioni su come risolvere il problema.
+Zimperium zIPS chiederà all'utente di intervenire per ottenere di nuovo l'accesso. Selezionare la minaccia e seguire le istruzioni disponibili all'interno dell'app per risolvere il problema.  
 
-## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Esempio di un'app considerata una minaccia da Zimperium zIPS
+## <a name="resolve-an-app-threat"></a>Risolvere una minaccia app
 
-Se è stata installata un'app che Zimperium zIPSt considera una minaccia, l'app avvisa che è stata installata un'app non attendibile nel dispositivo.
+Se si installa un'app che viene vista come una minaccia per il dispositivo, si riceverà una notifica all'interno di Zimperium zIPS. Se l'app interessata rimane nel dispositivo, non sarà possibile accedere alle risorse aziendali.  
 
-Quando ciò si verifica, disinstallare l'app per riottenere subito l'accesso alla posta elettronica e ai dati aziendali. Se non si disinstalla l'app, si perderà l'accesso alla posta elettronica e ai dati fino a quando l'app non verrà disinstallata.
+Per risolvere il problema, selezionare l'app dall'elenco di minacce in Zimperium zIPS. Seguire quindi le istruzioni visualizzate sullo schermo per rimuovere e disinstallare l'app.  
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980). 

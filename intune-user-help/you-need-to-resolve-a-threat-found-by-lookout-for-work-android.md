@@ -1,11 +1,11 @@
 ---
 title: Risoluzione delle minacce rilevate da Lookout for Work in Android | Microsoft Docs
-description: Informazioni su come risolvere una minaccia rilevata da Lookout for Work in Android.
+description: Informazioni su come risolvere una minaccia rilevata in un dispositivo Android dall'app Lookout for Work.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,35 +15,43 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: df7055f031fb7661cc0fa3bf2d00b16fc0a082dc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0e8f10bac2c7ffc75f81572da60249842c8f4cc1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015473"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148522"
 ---
-# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Risolvere una minaccia rilevata da Lookout for Work
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Risolvere una minaccia rilevata da Lookout for Work  
 
-Lookout for Work ha rilevato una potenziale minaccia nel dispositivo ed è necessario risolvere il problema per riottenere accesso alla posta elettronica, alle app e ai file aziendali o dell'istituto di istruzione. Il messaggio visualizzato potrebbe essere simile al seguente:
+L'app Lookout for Work è un servizio Mobile Threat Defender che identifica le potenziali minacce nei dispositivi Android. Le minacce vengono segnalate all'app Portale aziendale dove sono indicate come problemi di non conformità non risolti. La presenza di minacce può impedire di:
 
-![Lookout for Work ha rilevato una minaccia nel dispositivo](./media/lookout-threat-found-android.png)
+* Connettersi alla posta elettronica aziendale
+* Connettersi al Wi-Fi aziendale
+* Connettersi a SharePoint Online
+* Sincronizzare i file aziendali con OneDrive
+* Accedere alle app aziendali
 
-Per risolvere il problema, aprire l'app Lookout for Work e seguire le istruzioni visualizzate nell'app.
+Questo articolo descrive come riconoscere gli avvisi di minaccia di Lookout for Work e le azioni da intraprendere per risolverli. 
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Messaggi visualizzati se l'accesso del dispositivo registrato alla posta elettronica o ai file viene bloccato
+## <a name="troubleshoot-virus-or-security-threat"></a>Risolvere un virus o una minaccia per la sicurezza  
+Ottenere di nuovo l'accesso alle risorse aziendali quando l'app Lookout for Work rileva un virus o una minaccia per la sicurezza.  
 
-Se c'è un virus o un'altra minaccia per la protezione nel dispositivo registrato e si tenta di accedere alla posta elettronica e ai file aziendali, è possibile che venga visualizzato un messaggio simile al seguente:
+1. Al rilevamento di un virus o una minaccia per la sicurezza, si riceverà un messaggio simile a quello illustrato in questo screenshot. Toccare il collegamento al **portale di gestione dei dispositivi** per aprire il [sito Web del portale aziendale](https://portal.manage.microsoft.com/devices).  
 
-![Messaggio di errore di Lookout for Work con collegamento al sito Web del portale aziendale](./media/mtd-go-to-device-management-portal-android.png)
+    ![Screenshot di esempio di un messaggio di errore di Lookout for Work con un collegamento al sito Web del portale aziendale e il pulsante blu OK.](./media/mtd-go-to-device-management-portal-android.png)
 
-Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog), in cui verranno visualizzate istruzioni su come risolvere il problema.
+2. Selezionare il dispositivo.  
+3. Leggere l'avviso visualizzato sotto il dispositivo. L'avviso indica di aprire Lookout for Work per risolvere il virus o la minaccia per la sicurezza. 
 
-## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Esempio di un'app che Lookout for Work considera come una minaccia
+    ![Screenshot di esempio della pagina del dispositivo nel portale aziendale con l'avviso di Lookout for Work.](./media/CP-lookout-virus-banner-1808.png)  
 
-Se è stata installata un'app che Lookout for Work considera una minaccia, verrà visualizzata una schermata simile alla seguente:
+## <a name="troubleshoot-an-app-threat"></a>Risolvere una minaccia app  
 
-![Esempio di messaggio di avviso virus di Lookout for Work](./media/lookout-virus-alert-android.png)
+Se si installa un'app che Lookout for Work identifica come una minaccia, si riceverà un messaggio simile a quello illustrato in questo screenshot.  
 
-Dopo aver disinstallato l'app, si riottiene subito accesso alla posta elettronica e ai dati aziendali. Se si ignora la richiesta di disinstallare l'app, si perderà l'accesso alla posta elettronica e ai dati fino a quando l'app non verrà disinstallata.
+![Screenshot di esempio che illustra un messaggio di avviso virus di Lookout sopra l'interfaccia dell'app Lookout for Work. Sono disponibili tre pulsanti: "Close" (Chiudi), "More Info" (Altre informazioni) e "Uninstall" (Disinstalla).](./media/lookout-virus-alert-android.png)  
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Per ottenere di nuovo l'accesso alla posta elettronica e ai dati aziendali, disinstallare l'app sospetta. Se l'app rimane nel dispositivo, non sarà possibile accedere alle risorse aziendali.    
+
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  

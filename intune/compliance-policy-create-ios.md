@@ -14,12 +14,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1ee08c77fe085ad0f238d63481dd682ea15aa5ce
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442645"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313086"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Aggiungere criteri di conformità per i dispositivi iOS in Intune
 
@@ -106,6 +106,11 @@ Per dettagli sul profilo di posta elettronica, vedere [Configurare l'accesso all
 - **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere di nuovo la password.
 - **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
 - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password usate in precedenza che non è possibile usare.
+
+### <a name="restricted-applications"></a>Applicazioni con restrizioni 
+È possibile creare restrizioni per le app aggiungendo i relativi ID bundle ai criteri. Quindi, se in un dispositivo è installata l'app, il dispositivo verrà contrassegnato come non conforme. 
+- **Nome app**: immettere un nome descrittivo per facilitare l'identificazione dell'ID bundle. 
+- **ID bundle dell'app**: immettere l'identificatore univoco del bundle assegnato dal provider dell'app. Per reperire l'ID bundle, vedere le [indicazioni su come trovare l'ID bundle per un'app iOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).  
 
 ## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
 

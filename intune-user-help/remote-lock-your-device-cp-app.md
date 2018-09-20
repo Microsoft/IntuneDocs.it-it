@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4774cdc54a526f25b006c0c3d1a745ab96005c3a
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 5b3fbd677eea9143bf5cb297253303330129ef25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33676631"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148579"
 ---
-# <a name="lock-your-device-from-company-portal-app-for-windows-10"></a>Bloccare il dispositivo dall'app Portale aziendale per Windows 10
+# <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Bloccare il dispositivo dall'app Portale aziendale per Windows 10
 
-Bloccare in modalità remota un dispositivo smarrito o rubato dall'app Portale aziendale per Windows 10. Se l'operazione è supportata dal dispositivo, l'app Portale aziendale blocca lo schermo del dispositivo, indipendentemente da dove quest'ultimo si trova. Per sbloccarlo sarà necessario un passcode.
+Bloccare in modalità remota un dispositivo smarrito o rubato dall'app Portale aziendale per Windows 10. Se supportata dal dispositivo, questa impostazione blocca lo schermo del dispositivo, indipendentemente da dove quest'ultimo si trovi. Un utente dovrà immettere il passcode corretto per sbloccare il dispositivo e utilizzarlo.
 
 Il blocco remoto è supportato nei dispositivi che eseguono:
 
@@ -43,4 +43,4 @@ Il blocco remoto è supportato nei dispositivi che eseguono:
    ![Screenshot dell'app Portale aziendale, pagina Dettagli dispositivo, richiesta di conferma Blocco remoto.](./media/1804_remote_lock_Windows_CPapp_06.png)  
 4. Se si ritrova il dispositivo, immettere il passcode per sbloccarlo.  
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

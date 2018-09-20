@@ -1,11 +1,11 @@
 ---
-title: Risoluzione delle minacce rilevate da SandBlast Mobile Protect in Android | Microsoft Docs
-description: Informazioni su come risolvere una minaccia rilevata da Mobile Protect in Android.
+title: Risoluzione delle minacce rilevate da SandBlast Mobile Protect per Android | Microsoft Docs
+description: Informazioni su come risolvere una minaccia rilevata da SandBlast Mobile Protect per Android.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,40 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 3413ebed27bc11c88616c4c2f07d5cf182ccf1f0
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: be3f728a4f2764a0c2494686c943cdfb43b32bd2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753720"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147556"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Risolvere una minaccia rilevata da SandBlast Mobile Protect
 
-SandBlast Mobile Protect ha rilevato una potenziale minaccia nel dispositivo ed è necessario risolvere il problema per riottenere accesso alla posta elettronica, alle app e ai file aziendali o dell'istituto di istruzione. Il messaggio visualizzato dipende dal problema che SandBlast Mobile Protect ha rilevato nel dispositivo.
+SandBlast Mobile Protect è un servizio Mobile Threat Defender che identifica le potenziali minacce nei dispositivi Android. Il servizio segnala le minacce che è quindi possibile visualizzare nell'app Portale aziendale. Le minacce vengono indicate nell'app come problemi di non conformità non risolti. La presenza di minacce può impedire di:   
 
-Per risolvere il problema, aprire l'app SandBlast Mobile Protect e seguire le istruzioni visualizzate.
+* Connettersi alla posta elettronica aziendale
+* Connettersi al Wi-Fi aziendale
+* Connettersi a SharePoint Online
+* Sincronizzare i file aziendali con OneDrive
+* Accedere alle app aziendali
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Messaggi visualizzati se l'accesso del dispositivo registrato alla posta elettronica o ai file viene bloccato
+Questo articolo descrive come riconoscere gli avvisi di minaccia di Sandblast Mobile Protect e le azioni da intraprendere per risolverli.  
 
-Se c'è un virus o un'altra minaccia per la protezione nel dispositivo registrato e si tenta di accedere alla posta elettronica e ai file aziendali, un messaggio di SandBlast Mobile Protect avvisa di prendere provvedimenti.
+## <a name="troubleshoot-virus-or-security-threat"></a>Risolvere un virus o una minaccia per la sicurezza  
+Al rilevamento di un virus o una minaccia per la sicurezza, l'app SandBlast Mobile Protect agirà in base ai criteri di accesso dell'organizzazione. I criteri di accesso aziendali possono impedire l'accesso alla rete, alle app e alla posta elettronica aziendali.  
 
-Toccare il collegamento **portale di gestione dei dispositivi** per passare al [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog), in cui è possibile seguire le istruzioni su come risolvere il problema.
+![Screenshot di esempio di un messaggio di avviso dell'app SEP Mobile.](./media/skycure-list-of-potential-issues-android.png)  
 
-## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>Esempio di un'app considerata una minaccia da SandBlast Mobile Protect
+SandBlast Mobile Protect chiederà tuttavia all'utente di intervenire per ottenere di nuovo l'accesso. Selezionare la minaccia e seguire le istruzioni disponibili all'interno dell'app per risolvere il problema.
 
-Se è stata installata un'app che SandBlast Mobile Protect considera come una minaccia, l'app avvisa che è stata installata un'app non attendibile nel dispositivo.
+Poiché l'app è integrata con il provider di gestione di dispositivi mobili aziendale, un avviso relativo all'accesso con restrizioni sarà visualizzato anche nell'app Portale aziendale. L'avviso indica di aprire Sandblast Mobile Protect per risolvere il virus o la minaccia per la sicurezza.
 
-Quando ciò si verifica, disinstallare l'app per riottenere subito l'accesso alla posta elettronica e ai dati aziendali. Se non si disinstalla l'app, si perderà l'accesso alla posta elettronica e ai dati fino a quando l'app non verrà disinstallata.
+  ![Screenshot di esempio della pagina del dispositivo nel portale aziendale con l'avviso di SandBlast Mobile Protect.](./media/CP-lookout-virus-banner-1808.png)  
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://portal.manage.microsoft.com#HelpDeskDialog).
+## <a name="troubleshoot-an-app-threat"></a>Risolvere una minaccia app  
+
+Se si installa un'app che viene vista come una minaccia per il dispositivo, si riceverà una notifica all'interno di SandBlast Mobile Protect. Se l'app interessata rimane nel dispositivo, non sarà possibile accedere alle risorse aziendali.  
+
+Per risolvere il problema, selezionare l'app dall'elenco di minacce in SandBlast Mobile Protect. Seguire quindi le istruzioni per rimuovere e disinstallare l'app.     
+
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
