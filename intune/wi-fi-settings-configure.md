@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: df2e2f81008c6dedf5660a8a9eff4bf2cfe2ec6b
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905332"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505734"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Come configurare le impostazioni Wi-Fi in Microsoft Intune
 
@@ -62,8 +62,6 @@ Usare le informazioni in questo argomento per apprendere le nozioni di base sull
     - **Windows 8.1 e versioni successive**
     - **Windows 10 e versioni successive**
 
-   > [!IMPORTANT]
-   > Se si sta creando un profilo per dispositivi che eseguono Windows 10, tra cui Windows Holographic for Business, è necessario scegliere la piattaforma **Windows 8.1 e versioni successive**. La piattaforma **Windows 10 e versioni successive** non include un tipo di profilo Wi-Fi. 
 
 6. Per i dispositivi Apple o Android nell'elenco a discesa **Tipo di Wi-Fi** scegliere **Basic** o **Enterprise**. È possibile usare **Basic** per fornire informazioni di base, come il nome della rete e l'identificatore SSID. **Enterprise** consente di fornire informazioni più avanzate come il protocollo EAP (Extensible Authentication Protocol), se la rete Wi-Fi usa questo protocollo. 
 

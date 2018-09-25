@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 140b19ac64003f9ddf481a33e0cf4d423e106ffd
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905377"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028631"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Dove si trovano le funzionalità di Intune in Azure?
 Con lo spostamento di Intune nel portale di Azure, alcune attività sono state riorganizzate in modo più logico. Ma ogni ottimizzazione implica la necessità di abituarsi a una nuova organizzazione. Questa guida di riferimento è pensata espressamente per chi conosce già Intune nel portale classico e vuole imparare a usarlo nel portale di Azure. Se questo articolo non fornisce informazioni su una funzionalità specifica, lasciare un commento alla fine dell'articolo in modo che possa essere aggiornato.
@@ -70,12 +70,12 @@ Nuove funzionalità di restrizione vengono aggiunte solo al portale di Azure.
 ## <a name="where-did-my-conditional-access-policies-go"></a>Dove si trovano i criteri di accesso condizionale?
 Dopo la migrazione del tenant al portale di Azure, i criteri di accesso condizionale del tenant continuano a essere applicati. Tuttavia, non è possibile visualizzarli o modificarli da Intune nel portale di Azure.
 
-Per visualizzare e apportare modifiche ai criteri di accesso condizionale dal portale di Azure, sarà necessario rimuovere i criteri precedenti dal portale classico e poi ricrearli nel portale di Azure. Per altre informazioni sulla migrazione dei criteri di accesso condizionale, vedere [Eseguire la migrazione di criteri classici](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration). 
+Per visualizzare e apportare modifiche ai criteri di accesso condizionale dal portale di Azure, sarà necessario rimuovere i criteri precedenti dal portale classico e poi ricrearli nel portale di Azure. Per altre informazioni sulla migrazione dei criteri di accesso condizionale, vedere [Eseguire la migrazione di criteri classici](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
 
 ## <a name="where-did-my-compliance-policies-go"></a>Dove si trovano i criteri di conformità?
 Dopo la migrazione del tenant al portale di Azure, i criteri di conformità del tenant continuano a essere applicati. Tuttavia, non è possibile visualizzarli o modificarli da Intune nel portale di Azure.
 
-Per visualizzare e apportare modifiche ai criteri di conformità dal portale di Azure, sarà necessario rimuovere i criteri precedenti dal portale classico e poi ricrearli nel portale di Azure. Per altre informazioni sui criteri di conformità dei dispositivi, vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](https://docs.microsoft.com/en-us/intune/known-issues#compliance). 
+Per visualizzare e apportare modifiche ai criteri di conformità dal portale di Azure, sarà necessario rimuovere i criteri precedenti dal portale classico e poi ricrearli nel portale di Azure. Per altre informazioni sui criteri di conformità dei dispositivi, vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](https://docs.microsoft.com/intune/known-issues#compliance). 
 
 ## <a name="where-did-apple-dep-go"></a>Dove si trova il servizio Apple DEP?
 Nel portale classico è possibile impostare Intune in modo da integrarsi con Apple Device Enrollment Program e richiedere manualmente la sincronizzazione con il servizio Apple:

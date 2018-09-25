@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f1fbe688705940d3e8038affb84268fbaf113e3
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f7565972d37c5df5acb83012bb7cebbdc1fa1cec
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313065"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028648"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Registrare automaticamente i dispositivi Android usando Knox Mobile Enrollment di Samsung
 
@@ -84,7 +84,7 @@ Per i dispositivi registrati in Intune con KME, è possibile configurare la moda
 
 - **Senza associazione del nome utente:** nel portale di Knox, in **Device details** (Dettagli dispositivo) lasciare vuoti i campi **User ID** (ID utente) e **Password** per i dispositivi aggiunti. In questo modo l'utente finale dovrà immettere sia il nome utente che la password durante la registrazione in Intune.
 
-- **Con associazione del nome utente:** nel portale di Knox, in **Device details** (Dettagli dispositivo) immettere un **ID utente** (ad esempio un nome utente per l'utente assegnato o un account [Manager di registrazione dispositivi](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll)) per i dispositivi aggiunti. In questo modo il nome utente verrà prepopolato e l'utente finale dovrà immettere una password durante la registrazione in Intune.
+- **Con associazione del nome utente:** nel portale di Knox, in **Device details** (Dettagli dispositivo) immettere un **ID utente** (ad esempio un nome utente per l'utente assegnato o un account [Manager di registrazione dispositivi](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)) per i dispositivi aggiunti. In questo modo il nome utente verrà prepopolato e l'utente finale dovrà immettere una password durante la registrazione in Intune.
 
 > [!NOTE]
 >
