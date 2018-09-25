@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 7e974a17506be36c725dddfa21329269c8fcebc8
+ms.sourcegitcommit: 572287c3bb0020b6b75e4e2ac27019c20c699159
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347458"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44340270"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Aggiungere app Web a Microsoft Intune
 
@@ -62,6 +62,8 @@ Per aggiungere un'app a Intune come collegamento a un'app nel Web, eseguire le o
 
 > [!Note]
 > Gli utenti devono aggiungere il widget di Intune nella schermata iniziale per visualizzare le app Web che sono state assegnate a dispositivi Android.
+>
+> Attualmente, la distribuzione di app Web di Intune in dispositivi iOS è associata al profilo di gestione e non può essere rimossa manualmente. È possibile modificare il tipo di distribuzione impostando **Disinstalla** nel portale di Intune e in questo modo l'app Web può essere rimossa automaticamente. Tuttavia, se si rimuove la distribuzione prima di modificare la finalità dell'assegnazione di app in **Disinstalla**, l'app Web rimarrà in modo permanente nel dispositivo fino a quando non si annulla la registrazione del dispositivo da Intune.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

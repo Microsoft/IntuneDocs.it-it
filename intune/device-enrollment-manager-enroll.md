@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255536"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141610"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi usando un account del manager di registrazione dispositivi
 
@@ -53,7 +53,7 @@ I dispositivi registrati con un account di manager di registrazione dispositivi 
   - L'utente manager di registrazione dispositivi non può annullare la registrazione di dispositivi registrati DEM sul dispositivo tramite il portale aziendale. L'amministratore di Intune può annullare la registrazione.
   - Visualizzazione del solo dispositivo locale nell'app o nel sito Web del portale aziendale.
   - Gli utenti non possono usare le app Volume Purchase Program (VPP) di Apple con licenze utente poiché è necessario un ID Apple per utente per la gestione delle app.
-  - (Solo iOS) Se si usa un manager di registrazione dispositivi per la registrazione dei dispositivi iOS, non è possibile usare Apple Configurator, Apple Device Enrollment Program (DEP) o Apple School Manager (ASM) per la registrazione dei dispositivi.
+  - (Solo iOS) Se si usa un manager di registrazione dispositivi per la registrazione dei dispositivi iOS, non è possibile usare Apple Configurator, Apple Device Enrollment Program (DEP) o Apple School Manager (ASM) per la registrazione dei dispositivi. Ciò significa che non è possibile attivare la modalità con supervisione per il dispositivo, che quindi non avrà accesso ad alcune opzioni di configurazione.
   - (Solo Android) È previsto un limite al numero di dispositivi del profilo di lavoro Android che possono essere registrati con un singolo account DEM. Per ogni account DEM è possibile registrare fino a 10 profili di lavoro Android. Questa limitazione non si applica alla registrazione di Android legacy.
   - I dispositivi possono installare le app VPP se sono dotati delle licenze dispositivo.
   - Per usare DEM non è necessaria una licenza dispositivo di Intune. Altre informazioni sulle [licenze utente e dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
