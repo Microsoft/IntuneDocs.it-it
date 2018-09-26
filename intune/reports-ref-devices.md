@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05c99d2431e89f96e293bbd9edbee0753c6a26ad
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 00d7f8da28a762b5acbca379d62e0e7880f025a8
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906125"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727629"
 ---
 # <a name="reference-for-devices-entities"></a>Informazioni di riferimento per le entità della categoria Devices
 
@@ -39,7 +39,7 @@ La categoria **Devices** contiene le entità per i dispositivi mobili che tengon
 
 L'entità **DeviceTypes** rappresenta il tipo di dispositivo a cui fanno riferimento altre entità di data warehouse. Il tipo di dispositivo descrive in genere il modello o il produttore del dispositivo oppure una combinazione di entrambi.
 
-| Proprietà  | Description |
+| Proprietà  | Descrizione |
 |---------|------------|
 | DeviceTypeID |Identificatore univoco tipo di dispositivo |
 | DeviceTypeKey |Identificatore univoco del tipo di dispositivo nel data warehouse - chiave surrogata |
@@ -47,7 +47,7 @@ L'entità **DeviceTypes** rappresenta il tipo di dispositivo a cui fanno riferim
 
 ## <a name="example"></a>Esempio
 
-| deviceTypeID  | Name | Description |
+| deviceTypeID  | Name | Descrizione |
 |---------|------------|--------|
 | 0 |Desktop |Dispositivo Windows Desktop |
 | 1 |WindowsRT |Dispositivo WindowsRT |
@@ -68,13 +68,13 @@ L'entità **DeviceTypes** rappresenta il tipo di dispositivo a cui fanno riferim
 | 17 |AndroidForWork |Dispositivo Android gestito con il profilo proprietario Android |
 | 100 |Blackberry |Dispositivo BlackBerry |
 | 101 |Palm |Dispositivo palmare |
-| 255 |Unknown |Tipo di dispositivo sconosciuto |
+| 255 |Sconosciuto |Tipo di dispositivo sconosciuto |
 
 ## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
 
 L'entità **ClientRegistrationStateTypes** rappresenta il tipo di registrazione cui fanno riferimento altre tabelle di data warehouse.
 
-| Proprietà  | Description |
+| Proprietà  | Descrizione |
 |---------|------------|
 | clientRegisterationStateID |Identificatore univoco per lo stato di registrazione |
 | clientRegisterationStateKey |Identificatore univoco dello stato di registrazione nel data warehouse - chiave surrogata |
@@ -82,7 +82,7 @@ L'entità **ClientRegistrationStateTypes** rappresenta il tipo di registrazione 
 
 ## <a name="example"></a>Esempio
 
-| ClientRegisterationStateID  | Name | Description |
+| ClientRegisterationStateID  | Name | Descrizione |
 |---------|------------|--------|
 | 0 |NotRegistered |Non registrato |
 | 1 |SMSIDConflict |Conflitto ID SMS |
@@ -92,13 +92,13 @@ L'entità **ClientRegistrationStateTypes** rappresenta il tipo di registrazione 
 | 5 |ApprovalPending |Approvazione in sospeso |
 | 6 |ResetCert |Reimpostazione certificato |
 | 7 |NotRegisteredPendingEnrollment |Non registrato con registrazione in sospeso |
-| 8 |Unknown |Stato sconosciuto |
+| 8 |Sconosciuto |Stato sconosciuto |
 
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
 L'entità **EnrollmentTypes** indica in che modo è stato registrato un dispositivo. Il tipo di registrazione acquisisce il metodo di registrazione. Gli esempi elencano i diversi tipi di registrazione e il relativo significato.
 
-| Proprietà  | Description |
+| Proprietà  | Descrizione |
 |---------|------------|
 | managementStateID |Identificatore univoco dello stato di gestione. |
 | managementStateKey |Identificatore univoco dello stato di gestione nel data warehouse - chiave surrogata. |
@@ -106,9 +106,9 @@ L'entità **EnrollmentTypes** indica in che modo è stato registrato un disposit
 
 ## <a name="example"></a>Esempio
 
-| enrollmentTypeID  | Name | Description |
+| enrollmentTypeID  | Name | Descrizione |
 |---------|------------|--------|
-| 0 |Unknown |Il tipo di registrazione non è stato raccolto |
+| 0 |Sconosciuto |Il tipo di registrazione non è stato raccolto |
 | 1 |UserEnrollment |Registrazione avviata dall'utente |
 | 2 |DeviceEnrollment |Registrazione del dispositivo con profilo senza utente associato |
 | 3 |DeviceEnrollmentWithUDA |Registrazione del dispositivo con profilo UDA. |
@@ -122,7 +122,7 @@ L'entità **EnrollmentTypes** indica in che modo è stato registrato un disposit
 
 L'entità **EnrollmentTypes** indica se un dispositivo è aziendale, personale o sconosciuto.
 
-| Proprietà  | Description | Esempio |
+| Proprietà  | Descrizione | Esempio |
 |---------|------------|--------|
 | ownerTypeID |Identificatore univoco del tipo di proprietario. | |
 | ownerTypeKey |Identificatore univoco del tipo di proprietario nel data warehouse, chiave surrogata. | |
@@ -132,7 +132,7 @@ L'entità **EnrollmentTypes** indica se un dispositivo è aziendale, personale o
 
 L'entità **MdmStatuses** indica lo stato di conformità del dispositivo.
 
-| Proprietà  | Description |
+| Proprietà  | Descrizione |
 |---------|------------|
 | MdmStatusID |Identificatore univoco dello stato di conformità |
 | MdmStatusKey |Identificatore univoco dello stato di conformità nel data warehouse - chiave surrogata | 
@@ -141,20 +141,20 @@ L'entità **MdmStatuses** indica lo stato di conformità del dispositivo.
 
 ## <a name="example"></a>Esempio
 
-| MdmStatusID  | ComplianceStatus | Description |
+| MdmStatusID  | ComplianceStatus | Descrizione |
 |---------|------------|--------|
-| 0 |Unknown |Lo stato di conformità del dispositivo è sconosciuto. |
+| 0 |Sconosciuto |Lo stato di conformità del dispositivo è sconosciuto. |
 | 1 |Conforme |Il dispositivo è conforme. |
 | 2 |Non conforme |Il dispositivo non è conforme. |
 | 3 |Conflitto |La conformità del dispositivo ha generato un conflitto. |
-| 4 |Errore di |Si è verificato un errore di lettura dello stato di conformità del dispositivo. |
+| 4 |Errore |Si è verificato un errore di lettura dello stato di conformità del dispositivo. |
 
 
 ## <a name="managementstates"></a>ManagementStates
 
 L'entità **ManagementStates** fornisce informazioni dettagliate sullo stato del dispositivo. I dettagli possono rivelarsi utili nei casi in cui vengono applicate azioni remote, il dispositivo è jailbroken o rooted.
 
-| Proprietà  | Description |
+| Proprietà  | Descrizione |
 |---------|------------|
 | managementStateID | Identificatore univoco dello stato di gestione. |
 | managementStateKey | Identificatore univoco dello stato di gestione nel data warehouse - chiave surrogata. |
@@ -162,7 +162,7 @@ L'entità **ManagementStates** fornisce informazioni dettagliate sullo stato del
 
 ## <a name="example"></a>Esempio
 
-| managementStateID  | Name | Description |
+| managementStateID  | Name | Descrizione |
 |---------|------------|--------|
 | 0 |Gestiti | Gestito senza azioni remote in sospeso. |
 | 1 |RetirePending | C'è un comando di disattivazione in sospeso per il dispositivo. |
@@ -181,7 +181,7 @@ L'entità **ManagementStates** fornisce informazioni dettagliate sullo stato del
 
 L'entità **WorkPlaceJoinStateTypes** rappresenta lo stato Workplace Join di Azure Active Directory del dispositivo.  Il flusso di lavoro di registrazione può usare uno o più certificati per eseguire la verifica o l'autenticazione. Quando viene registrato un dispositivo WorkPlace, questi certificati vengono usati per convalidare il dispositivo e l'utente. Il rilascio di certificati viene fornito tramite un server SCEP (Simple Certificate Enrollment Protocol). I valori nell'entità indicano vari stati in cui potrebbe trovarsi un dispositivo durante il processo. Alcuni di questi stati includono l'errore di Workplace Join a causa del mancato rilascio di un certificato richiesto (da un server SCEP). Se un dispositivo non ha mai attraversato questo flusso di lavoro, il valore è impostato su Unknown.
 
-| Proprietà  | Description |
+| Proprietà  | Descrizione |
 |---------|------------|
 | WorkPlaceJoinStateID | Identificatore univoco dello stato di aggiunta all’area di lavoro |
 | WorkPlaceJoinStateKey | Identificatore univoco dello stato di aggiunta all’area di lavoro nel data warehouse - chiave surrogata |
@@ -189,9 +189,9 @@ L'entità **WorkPlaceJoinStateTypes** rappresenta lo stato Workplace Join di Azu
 
 ## <a name="example"></a>Esempio
 
-| workPlaceJoinStateID  | Name | Description |
+| workPlaceJoinStateID  | Name | Descrizione |
 |---------|------------|--------|
-| 0 |Unknown |Se un dispositivo non è stato aggiunto all'area di lavoro, è in stato Unknown |
+| 0 |Sconosciuto |Se un dispositivo non è stato aggiunto all'area di lavoro, è in stato Unknown |
 | 1 |Operazione completata |Aggiunta all'area di lavoro riuscita |
 | 2 |FailureToGetScepMetadata |Impossibile ottenere metadati SCEP |
 | 3 |FailureToGetScepChallenge |Impossibile ottenere challenge SCEP |
@@ -205,7 +205,7 @@ L'entità **WorkPlaceJoinStateTypes** rappresenta lo stato Workplace Join di Azu
 
 L'entità **ManagementAgentTypes** rappresenta gli agenti usati per gestire un dispositivo.
 
-| Proprietà  | Description |
+| Proprietà  | Descrizione |
 |---------|------------|
 | ManagementAgentTypeID | Identificatore univoco del tipo di agente di gestione. |
 | ManagementAgentTypeKey | Identificatore univoco del tipo di agente di gestione nel data warehouse, chiave surrogata. |
@@ -213,7 +213,7 @@ L'entità **ManagementAgentTypes** rappresenta gli agenti usati per gestire un d
 
 ## <a name="example"></a>Esempio
 
-| ManagementAgentTypeID  | Name | Description |
+| ManagementAgentTypeID  | Name | Descrizione |
 |---------|------------|--------|
 | 1 |EAS | Il dispositivo è gestito tramite Exchange Active Sync |
 | 2 |MDM | Il dispositivo è gestito tramite un agente MDM |
@@ -227,7 +227,7 @@ L'entità **ManagementAgentTypes** rappresenta gli agenti usati per gestire un d
 
 L'entità **Devices** elenca tutti i dispositivi registrati in gestione e le proprietà corrispondenti.
 
-| Proprietà  | Description |
+| Proprietà  | Descrizione |
 |---------|------------|
 | DeviceKey | Identificatore univoco del dispositivo nel data warehouse - chiave surrogata. |
 | DeviceId | Identificatore univoco del dispositivo. |
@@ -273,7 +273,7 @@ L'entità **Devices** elenca tutti i dispositivi registrati in gestione e le pro
 
 L'entità **DevicePropertyHistory** ha le stesse proprietà della tabella dei dispositivi e snapshot quotidiani del record di ciascun dispositivo per ognuno degli ultimi 90 giorni. La colonna DateKey indica il giorno per ogni riga.
 
-| Proprietà  | Description |
+| Proprietà  | Descrizione |
 |---------|------------|
 | DateKey |Riferimento alla tabella di data che indica il giorno. |
 | DeviceKey |Identificatore univoco del dispositivo nel data warehouse - chiave surrogata. Si tratta di un riferimento alla tabella Device che contiene l'ID dispositivo Intune. |
@@ -317,7 +317,7 @@ L'entità **DevicePropertyHistory** ha le stesse proprietà della tabella dei di
 
 L'entità **MdmDeviceInventoryHistories** contiene gli snapshot quotidiani dei dati di inventario per i dispositivi gestiti da MDM negli ultimi 90 giorni. La colonna DateKey indica il giorno per la riga. Alcune proprietà potrebbero non essere applicabili o popolate per tutti i dispositivi, quindi consultare questa pagina per ulteriori dettagli. Per altre informazioni, vedere [Informazioni sui dispositivi con inventario in Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
 
-| Proprietà  | Description |
+| Proprietà  | Descrizione |
 |---------|------------|
 | DateKey | Riferimento alla tabella di data che indica il giorno. |
 | DeviceKey |Identificatore univoco del dispositivo nel data warehouse - chiave surrogata. Si tratta di un riferimento alla tabella Device che contiene l'ID dispositivo Intune. |
@@ -341,7 +341,7 @@ L'entità **MdmDeviceInventoryHistories** contiene gli snapshot quotidiani dei d
 | OSManufacturer |Produttore del sistema operativo. |
 | OSProductSuite |Gruppo di prodotti del sistema operativo. |
 | OSProductType |Tipo di prodotto del sistema operativo. |
-| Locale |Impostazioni locali del sistema operativo. |
+| Impostazioni locali |Impostazioni locali del sistema operativo. |
 | PhysicalMemoryCapacity |Capacità di memoria fisica (in byte). |
 | PhysicalMemoryRemovable |Memoria rimovibile fisica (in byte). |
 | SystemEnclosureChassisTypesInnerText |Definisce il tipo di chassis del sistema per questo dispositivo. I numeri indicano i valori seguenti:  <br>0 o vuoto = Sconosciuto   <br>1 = Desktop   <br>2 = Laptop  <br>3 = Workstation  <br>4 = Server aziendale  <br>100 = Telefono  <br>101 = Tablet  <br>102/103 = Tipo di dispositivo mobile sconosciuto |
@@ -385,7 +385,7 @@ L'entità **MdmDeviceInventoryHistories** contiene gli snapshot quotidiani dei d
 | RemovableStorageTotal |Archivi rimovibili totali (in byte) |
 | DeviceMemoryDeviceCapacity |Capacità memoria del dispositivo |
 | DeviceMemoryAvailableDeviceCapacity |Capacità disponibile memoria del dispositivo |
-| DeviceOSVersion |Versione del sistema operativo |
+| DeviceOSVersion |Versione sistema operativo |
 | DeviceOSPlatform |Piattaforma del sistema operativo |
 | DeviceOSLanguage |Lingua del sistema operativo |
 | PasswordMaxAttemptsBeforeWipe |Numero massimo di tentativi di password consentiti prima della cancellazione del dispositivo |
@@ -416,7 +416,7 @@ L'entità **MdmDeviceInventoryHistories** contiene gli snapshot quotidiani dei d
 L'entità **ApplicationInventory** elenca le app trovate nel dispositivo al momento della raccolta inventario.
 
 
-|      Proprietà      |                       Description                        |
+|      Proprietà      |                       Descrizione                        |
 |--------------------|----------------------------------------------------------|
 |     DeviceKey      |              Riferimento alla tabella devices.               |
 |   ApplicationKey   | ? (copiato da ExchangeDeviceService\DeviceApplication). |
