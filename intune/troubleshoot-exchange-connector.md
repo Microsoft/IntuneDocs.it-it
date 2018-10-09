@@ -2,8 +2,8 @@
 title: Risolvere i problemi di Exchange Connector
 description: Risoluzione dei problemi correlati a Intune On-Premises Exchange Connector.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 6/18/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 70428cae999d91e83af43a0be0249ee3554c7dde
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 54e014adbdea3330028be0455fdcf7bd1ade6586
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238171"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231339"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Risolvere i problemi di Intune On-Premises Exchange Connector
 

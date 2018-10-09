@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ffa0207729a6e0855b4534d40aa598bcb04e7847
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5866314c03eff5613b4c0cc5d46d2f2eace29a13
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150202"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828024"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Risolvere una minaccia rilevata da Lookout for Work  
 
@@ -42,7 +42,9 @@ Ottenere di nuovo l'accesso alle risorse aziendali quando l'app Lookout for Work
     ![Screenshot di esempio di un messaggio di errore di Lookout for Work con un collegamento al sito Web del portale aziendale e il pulsante blu OK.](./media/mtd-go-to-device-management-portal-android.png)  
 
 2. Selezionare il dispositivo.  
-3. Leggere l'avviso visualizzato sotto il dispositivo. L'avviso indica di aprire Lookout for Work per risolvere il virus o la minaccia per la sicurezza.   
+3. Leggere l'avviso visualizzato sotto il dispositivo. L'avviso indica di aprire Lookout for Work per risolvere il virus o la minaccia per la sicurezza.     
+
+    ![Screenshot di esempio della pagina del dispositivo nel portale aziendale con l'avviso di Lookout for Work.](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>Risolvere una minaccia app   
 Se si installa un'app che Lookout for Work identifica come una minaccia, si riceverà un messaggio simile a quello illustrato in questo screenshot.  
@@ -50,5 +52,5 @@ Se si installa un'app che Lookout for Work identifica come una minaccia, si rice
 ![Screenshot di esempio che illustra un elenco di minacce app attive e risolte rilevate da Lookout for Work.](./media/ios-lfw-threat-example.png)    
 Selezionare il nome dell'app visualizzato nella parte superiore della schermata. Seguire quindi le istruzioni per rimuovere e disinstallare l'app. Se l'app rimane nel dispositivo, non sarà possibile accedere alle risorse aziendali.    
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Serve ancora assistenza? Rivolgersi al personale del supporto tecnico dell'azienda. È possibile trovare le informazioni di contatto nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).    
 

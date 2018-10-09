@@ -3,8 +3,8 @@ title: Convalidare la configurazione dei criteri di protezione delle app
 titleSuffix: Microsoft Intune
 description: Questo articolo illustra come verificare che i criteri di protezione delle app siano configurati e funzionino correttamente.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ea79a2e177b8a4e85454140c7efb9172defe5b6
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: cac03f35cdec3c1a4815559abc83108bd27d3472
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834034"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231135"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Come convalidare la configurazione dei criteri di protezione delle app
 

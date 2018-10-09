@@ -3,8 +3,8 @@ title: App Android con criteri di protezione delle app
 titlesuffix: Microsoft Intune
 description: Informazioni su cosa aspettarsi da un'app Android con criteri di protezione.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16cef0b3e72c2e7815aada1c45c0e312b84931ab
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e8c606f9b304f91e02ba977c801bd8de18682612
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833018"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231696"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Aspettative dalla gestione dell'app per Android con criteri di protezione delle app 
 
@@ -56,7 +56,7 @@ Intune supporta la distribuzione di criteri di protezione delle app a un unico a
 
 Per informazioni su come Intune gestisce più account utente, vedere l'esempio seguente.
 
-L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri di protezione delle app. L'**Azienda X** distribuisce i criteri di protezione delle app **prima dell'****Azienda Y**. L'account associato all'**Azienda X** otterrà i criteri di protezione delle app, a differenza dell'account associato all'Azienda Y. Per fare in modo che l'account utente associato all'Azienda Y sia gestito con i criteri di protezione delle app, l'utente A deve rimuovere l'account associato all'Azienda X.
+L'utente A lavora per due aziende, l'**Azienda X** e l'**Azienda Y**. L'utente A ha un account aziendale per ognuna delle aziende per cui lavora e, in entrambi i casi, viene usato Intune per la distribuzione dei criteri di protezione delle app. L'**Azienda X** distribuisce i criteri di protezione delle app **prima dell'** **Azienda Y**. L'account associato all'**Azienda X** otterrà i criteri di protezione delle app, a differenza dell'account associato all'Azienda Y. Per fare in modo che l'account utente associato all'Azienda Y sia gestito con i criteri di protezione delle app, l'utente A deve rimuovere l'account associato all'Azienda X.
 ### <a name="adding-a-second-account"></a>Aggiunta di un secondo account
 ####  <a name="android"></a>Android
 Potrebbe essere richiesto di rimuovere l'account esistente e aggiungerne uno nuovo.  Per rimuovere l'account esistente, passare a **Impostazioni &gt; Generali &gt; Gestione applicazioni &gt;Portale aziendale. Selezionare quindi "Cancella dati".**
