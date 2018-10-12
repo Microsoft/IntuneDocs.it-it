@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b540cd2b2751712604c0ae7172015cb109c9c1d8
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
+ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039438"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47237664"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Intune
 
@@ -39,7 +39,7 @@ Prima di iniziare la risoluzione dei problemi, verificare di aver configurato In
 È anche possibile assicurarsi che la data e l'ora nel dispositivo dell'utente siano impostate correttamente:
 
 1. Riavviare il dispositivo.
-2. Assicurarsi che la data e l'ora siano impostate su standard GMT (+ o - 12 ore) rispetto al fuso orario dell'utente finale.
+2. Assicurarsi che la data e l'ora siano impostate su standard GMT (+ o - 12 ore) per il fuso orario dell'utente finale.
 3. Disinstallare e reinstallare il portale aziendale di Intune (se applicabile).
 
 Gli utenti dei dispositivi gestiti possono raccogliere log di registrazione e diagnostica da sottoporre all'analisi dell'amministratore. Le istruzioni per raccogliere i log sono disponibili nell'articolo:
@@ -52,7 +52,7 @@ Gli utenti dei dispositivi gestiti possono raccogliere log di registrazione e di
 Questi problemi possono verificarsi in tutte le piattaforme di dispositivi.
 
 ### <a name="device-cap-reached"></a>Numero massimo dispositivi raggiunto
-**Problema**: durante la registrazione viene visualizzato un errore sul dispositivo, ad esempio **Portale aziendale temporaneamente non disponibile** su un dispositivo iOS, e DMPdownloader.log in Gestione configurazione contiene l'errore **Numero massimo dispositivi raggiunto**.
+**Problema**: durante la registrazione viene visualizzato un errore, ad esempio **Portale aziendale temporaneamente non disponibile**, e DMPdownloader.log in Gestione configurazione contiene l'errore **Numero massimo dispositivi raggiunto**.
 
 **Risoluzione:**
 
@@ -98,7 +98,7 @@ Per evitare di raggiungere i limiti dei dispositivi, assicurarsi di rimuovere i 
 
 1.  Verificare che l'autorità MDM sia stata [impostata in modo appropriato](mdm-authority-set.md).
     
-2.  Verificare che le credenziali dell'utente siano sincronizzate correttamente con Azure Active Directory, controllando che il nome dell'entità utente corrisponda alle informazioni di Active Directory nel portale di Office 365.
+2.  Verificare che le credenziali dell'utente siano sincronizzate correttamente con Azure Active Directory. È possibile verificare che il nome dell'entità utente corrisponda alle informazioni di Active Directory nel portale di Office 365.
     Se il nome dell'entità utente non corrisponde alle informazioni di Active Directory:
 
     1.  Disattivare DirSync sul server locale.
@@ -121,9 +121,9 @@ Per evitare di raggiungere i limiti dei dispositivi, assicurarsi di rimuovere i 
 
         -   Per visualizzare tutti gli utenti: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   Per visualizzare utenti specifici, usare la query seguente, in cui %testuser1% rappresenta username@domain.com per l'utente che si vuole cercare: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        -   Per visualizzare utenti specifici, usare la query seguente, in cui %testuser1% è un segnaposto per username@domain.com per l'utente che si vuole cercare: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        Dopo aver scritto la query, fare clic su **Esegui**.
+        Dopo aver scritto la query, fare clic su **!Execute**.
         Dopo che sono stati restituiti i risultati, cercare l'ID clouduser.  Se non viene trovato alcun ID, l'utente non dispone di una licenza per usare Intune.
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Non è possibile creare criteri o registrare dispositivi se il nome della società contiene caratteri speciali
@@ -132,10 +132,15 @@ Per evitare di raggiungere i limiti dei dispositivi, assicurarsi di rimuovere i 
 **Risoluzione:** nell'[interfaccia di amministrazione di Office 365](https://portal.office.com/) rimuovere i caratteri speciali dal nome della società e salvare le informazioni aziendali.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>Non è possibile accedere o registrare dispositivi quando si hanno più domini verificati
-**Problema:** quando si aggiunge un secondo dominio verificato ad AD FS, gli utenti con il suffisso del nome principale (UPN) dell'utente del secondo dominio potrebbero non essere in grado di accedere ai portali o di registrare dispositivi.
+**Problema:** questo problema può verificarsi quando si aggiunge un secondo dominio verificato ad AD FS. Gli utenti con il suffisso del nome dell'entità utente (UPN) del secondo dominio potrebbero non essere in grado di accedere ai portali o di registrare dispositivi.
 
 
-<strong>Risoluzione:</strong> i clienti di Microsoft Office 365 che usano l'accesso Single Sign-On (SSO) tramite AD FS 2.0 e hanno più domini di primo livello per i suffissi UPN degli utenti all'interno dell'organizzazione (ad esempio, @contoso.com o @fabrikam.com) devono distribuire un'istanza separata del servizio federativo AD FS 2.0 per ogni suffisso. È ora disponibile il [rollup per AD FS 2.0](http://support.microsoft.com/kb/2607496) che interagisce con l'opzione <strong>SupportMultipleDomain</strong> per consentire al server AD FS di supportare questo scenario senza richiedere altri server AD FS 2.0. Per altre informazioni, vedere [questo blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+<strong>Soluzione:</strong> i clienti di Microsoft Office 365 devono distribuire un'istanza separata di AD FS 2.0 Federation Service per ogni suffisso se:
+- Usano l'accesso single sign-on (SSO) tramite AD FS 2.0
+- Hanno più domini di primo livello per i suffissi UPN degli utenti all'interno dell'organizzazione (ad esempio, @contoso.com o @fabrikam.com).
+
+
+Un [rollup per AD FS 2.0](http://support.microsoft.com/kb/2607496) interagisce con l'opzione <strong>SupportMultipleDomain</strong> per consentire al server AD FS di supportare questo scenario senza richiedere la presenza di altri server AD FS 2.0. Per altre informazioni, vedere [questo blog](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Problemi di Android
@@ -146,8 +151,8 @@ La tabella seguente elenca gli errori che potrebbero verificarsi quando gli uten
 
 |Messaggio di errore|Problema|Soluzione|
 |---|---|---|
-|**L'amministratore IT deve assegnare la licenza per l'accesso**<br>L'amministratore IT non ha concesso l'accesso per l'uso di questa app. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|Il dispositivo non può essere registrato perché l'account dell'utente non ha la licenza necessaria.|Per poter registrare i dispositivi, è necessario che agli utenti venga assegnata la licenza necessaria. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili designata. Questo errore di Intune viene visualizzato, ad esempio, se Intune è stato designato come autorità di gestione dei dispositivi mobili e l'utente usa una licenza per System Center 2012 R2 Configuration Manager.<br><br>Per altre informazioni, vedere [Assign Intune licenses to your user accounts](/intune/licenses-assign) (Assegnare licenze di Intune agli account utente).
-|**L'amministratore IT deve impostare l'autorità MDM**<br>L'amministratore IT non ha impostato un'autorità MDM. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|L'autorità di gestione dei dispositivi mobili non è stata definita.|L'autorità di gestione dei dispositivi mobili non è stata designata in Intune. Vedere le informazioni su come [impostare l'autorità di gestione dei dispositivi mobili](/intune/mdm-authority-set).|
+|**L'amministratore IT deve assegnare la licenza per l'accesso**<br>L'amministratore IT non ha concesso l'accesso per l'uso di questa app. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|Il dispositivo non può essere registrato perché l'account dell'utente non ha la licenza necessaria.|Per poter registrare i dispositivi, è necessario che agli utenti venga assegnata la licenza necessaria. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili. Ad esempio, verrà visualizzato questo errore se entrambi gli elementi seguenti sono veri:<ol><li>Intune è stato impostato come l'autorità di gestione dei dispositivi mobili</li><li>Utilizzano la licenza di System Center 2012 R2 Configuration Manager.</li></ol>Per altre informazioni, vedere [Assign Intune licenses to your user accounts](/intune/licenses-assign) (Assegnare licenze di Intune agli account utente).|
+|**L'amministratore IT deve impostare l'autorità MDM**<br>L'amministratore IT non ha impostato un'autorità MDM. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|L'autorità di gestione dei dispositivi mobili non è stata definita.|L'autorità di gestione dei dispositivi mobili non è stata impostata in Intune. Vedere le informazioni su come [impostare l'autorità di gestione dei dispositivi mobili](/intune/mdm-authority-set).|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>I dispositivi non riescono a collegarsi al servizio Intune e vengono visualizzati come "Non integro" nella console di amministrazione di Intune
@@ -157,7 +162,7 @@ La tabella seguente elenca gli errori che potrebbero verificarsi quando gli uten
 - Visualizzano lo stato di gestione **Non integro** nella console di amministrazione.
 - Gli utenti protetti da criteri di accesso condizionale potrebbero perdere l'accesso alle risorse aziendali.
 
-Samsung ha confermato che il software Samsung Smart Manager, fornito in alcuni dispositivi Samsung, può disattivare il portale aziendale di Intune e i relativi componenti. Quando il portale aziendale è in stato disattivato, non può essere eseguito in background e quindi non può contattare il servizio Intune.
+Il software Samsung Smart Manager, fornito in alcuni dispositivi Samsung, può disattivare il Portale aziendale Intune e i relativi componenti. Quando il portale aziendale è in stato disattivato, non può essere eseguito in background e non può contattare il servizio Intune.
 
 **Soluzione 1:**
 
@@ -168,7 +173,7 @@ Comunicare agli utenti di avviare manualmente l'app Portale aziendale. Dopo il r
 
 **Soluzione 2:**
 
-Indicare agli utenti di provare a eseguire l'aggiornamento ad Android 6.0. Il problema della disattivazione non si verifica nei dispositivi Android 6.0. Per controllare se è disponibile un aggiornamento, gli utenti possono passare a **Impostazioni** > **Info sul dispositivo** > **Scarica aggiornamenti manualmente** e quindi seguire le istruzioni nel dispositivo.
+Indicare agli utenti di provare a eseguire l'aggiornamento ad Android 6.0. Il problema della disattivazione non si verifica nei dispositivi Android 6.0. Per controllare se è disponibile un aggiornamento, passare a **Impostazioni** > **Info sul dispositivo** > **Scarica aggiornamenti manualmente** > seguire le istruzioni.
 
 **Soluzione 3:**
 
@@ -204,11 +209,13 @@ Se la soluzione 2 non funziona, chiedere agli utenti di eseguire questa procedur
 
 **Risoluzione:**
 
-1.  Verificare che all'utente sia stata assegnata una licenza appropriata per la versione del servizio Intune in uso.
+1.  Verificare che all'utente sia assegnata una licenza appropriata per la versione del servizio Intune in uso.
 
-2.  Verificare che il dispositivo non sia già registrato con un altro provider MDM o che non sia già installato un profilo di gestione.
+2.  Verificare che il dispositivo non sia già registrato con un altro provider MDM.
 
-3.  Verificare che Chrome per Android sia configurato come browser predefinito e che i cookie siano abilitati.
+3. Verificare che sul dispositivo non sia già installato un profilo di gestione.
+
+4.  Verificare che Chrome per Android sia configurato come browser predefinito e che i cookie siano abilitati.
 
 ### <a name="android-certificate-issues"></a>Problemi relativi ai certificati di Android
 
@@ -220,7 +227,7 @@ L'utente potrebbe essere in grado di recuperare il certificato mancante seguendo
 
 **Soluzione 2**:
 
-Se gli utenti vedono ancora l'errore di certificato mancante dopo aver immesso le credenziali aziendali ed essere stati reindirizzati per l'accesso federato, potrebbe mancare un certificato intermedio nel server Active Directory Federation Services (ADFS).
+Dopo aver immesso le credenziali aziendali ed essere stati reindirizzati per l'accesso federato, gli utenti potrebbero riscontrare l'errore di certificato mancante. In questo caso, l'errore può significare che manca un certificato intermedio nel server Active Directory Federation Services (ADFS)
 
 L'errore di certificato si verifica perché i dispositivi Android richiedono certificati intermedi da includere in un [messaggio Hello del server SSL](https://technet.microsoft.com/library/cc783349.aspx). Attualmente, un'installazione predefinita con server AD FS o server proxy WAP - AD FS invia solo il certificato SSL del servizio AD FS nella risposta Hello del server SSL a un messaggio Hello del client SSL.
 
@@ -256,16 +263,16 @@ Se il certificato del server è installato correttamente, nei risultati vengono 
 La tabella seguente elenca gli errori che potrebbero verificarsi quando gli utenti finali registrano i dispositivi iOS in Intune.
 
 |Messaggio di errore|Problema|Soluzione|
-|-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------------|-----|----------|
 |NoEnrollmentPolicy|Non sono stati trovati criteri di registrazione|Verificare che siano stati configurati tutti i prerequisiti di registrazione, ad esempio il certificato APNS (Apple Push Notification Service), e che sia abilitato "iOS come piattaforma". Per le istruzioni, vedere [Configurare la gestione dei dispositivi iOS e Mac](ios-enroll.md).|
 |DeviceCapReached|Sono già stati registrati troppi dispositivi mobili.|L'utente deve rimuovere dal Portale aziendale uno dei dispositivi mobili attualmente registrati prima di poterne registrare un altro. Vedere le istruzioni relative al tipo di dispositivo in uso: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios) o [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|Si è verificato un problema con il certificato che consente al dispositivo mobile di comunicare con la rete aziendale.<br /><br />|Apple Push Notification Service (APNS) offre un canale per contattare i dispositivi iOS registrati. Se non è stata eseguita la procedura per ottenere un certificato APNS o se il certificato è scaduto, i tentativi di registrazione avranno esito negativo e verrà visualizzato questo messaggio.<br /><br />Esaminare le informazioni sulla configurazione degli utenti in [Sincronizzare Active Directory e aggiungere utenti a Intune](users-add.md) e [Organizzazione di utenti e dispositivi](groups-add.md).|
-|AccountNotOnboarded|Si è verificato un problema con il certificato che consente al dispositivo mobile di comunicare con la rete aziendale.<br /><br />|Apple Push Notification Service (APNS) offre un canale per contattare i dispositivi iOS registrati. Se non è stata eseguita la procedura per ottenere un certificato APNS o se il certificato è scaduto, i tentativi di registrazione avranno esito negativo e verrà visualizzato questo messaggio.<br /><br />Per altre informazioni, vedere [Configurare la gestione dei dispositivi iOS e Mac con Microsoft Intune](ios-enroll.md).|
+|APNSCertificateNotValid|Si è verificato un problema con il certificato che consente al dispositivo mobile di comunicare con la rete aziendale.<br /><br />|Apple Push Notification Service (APNS) offre un canale per contattare i dispositivi iOS registrati. La registrazione avrà esito negativo e verrà visualizzato questo messaggio se:<ul><li>Non sono stati completati i passaggi per ottenere un certificato del servizio APN oppure</li><li>Il certificato del servizio APN è scaduto.</li></ul>Esaminare le informazioni sulla configurazione degli utenti in [Sincronizzare Active Directory e aggiungere utenti a Intune](users-add.md) e [Organizzazione di utenti e dispositivi](groups-add.md).|
+|AccountNotOnboarded|Si è verificato un problema con il certificato che consente al dispositivo mobile di comunicare con la rete aziendale.<br /><br />|Apple Push Notification Service (APNS) offre un canale per contattare i dispositivi iOS registrati. La registrazione avrà esito negativo e verrà visualizzato questo messaggio se:<ul><li>Non sono stati completati i passaggi per ottenere un certificato del servizio APN oppure</li><li>Il certificato del servizio APN è scaduto.</li></ul>Per altre informazioni, vedere [Configurare la gestione dei dispositivi iOS e Mac con Microsoft Intune](ios-enroll.md).|
 |DeviceTypeNotSupported|È possibile che l'utente abbia cercato di eseguire la registrazione con un dispositivo non iOS. Il tipo di dispositivo mobile che si sta provando a registrare non è supportato.<br /><br />Verificare che il dispositivo esegua iOS 8.0 o versione successiva.<br /><br />|Verificare che nel dispositivo dell'utente sia in esecuzione iOS 8.0 o versione successiva.|
-|UserLicenseTypeInvalid|Il dispositivo non può essere registrato perché l'account utente non è ancora membro di un gruppo di utenti richiesto.<br /><br />|Per poter registrare i loro dispositivi, gli utenti devono essere membri del gruppo di utenti appropriato. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili designata. Questo errore di Intune viene visualizzato, ad esempio, se Intune è stato designato come autorità di gestione dei dispositivi mobili e l'utente usa una licenza per System Center 2012 R2 Configuration Manager.<br /><br />Rivedere gli articoli seguenti per altre informazioni:<br /><br />Vedere l'articolo [Configurare la gestione dei dispositivi iOS e Mac con Microsoft Intune](ios-enroll.md) e le informazioni sulla configurazione degli utenti in [Sincronizzare Active Directory e aggiungere utenti a Intune](users-add.md) e [Organizzazione di utenti e dispositivi](groups-add.md).|
-|MdmAuthorityNotDefined|L'autorità di gestione dei dispositivi mobili non è stata definita.<br /><br />|L'autorità di gestione dei dispositivi mobili non è stata designata in Intune.<br /><br />Rivedere il primo punto del "Passaggio 6: Registrare dispositivi mobili e installare un'app" in [Iniziare con una versione di valutazione gratuita di 30 giorni di Microsoft Intune](free-trial-sign-up.md).|
+|UserLicenseTypeInvalid|Il dispositivo non può essere registrato perché l'account utente non è ancora membro di un gruppo di utenti richiesto.<br /><br />|Per poter registrare i loro dispositivi, gli utenti devono essere membri del gruppo di utenti appropriato. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili. Ad esempio, verrà visualizzato questo errore se entrambi gli elementi seguenti sono veri:<ol><li>Intune è stato impostato come l'autorità di gestione dei dispositivi mobili</li><li>Utilizzano la licenza di System Center 2012 R2 Configuration Manager.</li></ol>Rivedere gli articoli seguenti per altre informazioni:<br /><br />Vedere l'articolo [Configurare la gestione dei dispositivi iOS e Mac con Microsoft Intune](ios-enroll.md) e le informazioni sulla configurazione degli utenti in [Sincronizzare Active Directory e aggiungere utenti a Intune](users-add.md) e [Organizzazione di utenti e dispositivi](groups-add.md).|
+|MdmAuthorityNotDefined|L'autorità di gestione dei dispositivi mobili non è stata definita.<br /><br />|L'autorità di gestione dei dispositivi mobili non è stata impostata in Intune.<br /><br />Rivedere il primo punto del "Passaggio 6: Registrare dispositivi mobili e installare un'app" in [Iniziare con una versione di valutazione gratuita di 30 giorni di Microsoft Intune](free-trial-sign-up.md).|
 
-### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>I dispositivi sono inattivi o la console di amministrazione non è in grado di comunicare con i dispositivi
+### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>I dispositivi sono inattivi o la console di amministrazione non è in grado di comunicare con i dispositivi
 **Problema:** i dispositivi iOS non si collegano al servizio Intune. È necessario che i dispositivi si colleghino regolarmente al servizio per mantenere l'accesso alle risorse aziendali protette. Se i dispositivi non si collegano:
 
 - Non possono ricevere criteri, app e comandi remoti dal servizio Intune.
@@ -295,13 +302,15 @@ Dopo aver eseguito la registrazione, vengono ripristinati il corretto funzioname
 ### <a name="verify-ws-trust-13-is-enabled"></a>Verificare che WS-Trust 1.3 sia abilitato
 **Problema** I dispositivi iOS Device Enrollment Program (DEP) non possono essere registrati
 
-Per la registrazione dei dispositivi DEP con affinità utente è necessario che un endpoint Username/Mixed di WS-Trust 1.3 sia abilitato a richiedere token utente. Active Directory abilita questo endpoint per impostazione predefinita. Per ottenere un elenco di endpoint abilitati, usare il cmdlet Get-AdfsEndpoint di PowerShell e cercare l'endpoint trust/13/UsernameMixed. Ad esempio:
+La registrazione dei dispositivi DEP con affinità utente richiede un endpoint WS-Trust 1.3 Username/Mixed per essere abilitato a richiedere token utente. Active Directory abilita questo endpoint per impostazione predefinita. Per ottenere un elenco di endpoint abilitati, usare il cmdlet Get-AdfsEndpoint di PowerShell e cercare l'endpoint trust/13/UsernameMixed. Ad esempio:
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 
 Per altre informazioni, vedere la [documentazione di Get-AdfsEndpoint](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
-Per altre informazioni, vedere [Procedure consigliate per la protezione di Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Se è necessaria assistenza aggiuntiva per determinare se l'endpoint Username/Mixed di WS-Trust 1.3 è abilitato nel provider di identità per la federazione, contattare il supporto tecnico Microsoft, se si usa AD FS, oppure un fornitore di identità di terze parti.
+Per altre informazioni, vedere [Procedure consigliate per la protezione di Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). Per informazioni su come determinare se WS-Trust 1.3 Username/Mixed è abilitato nel provider di identità WS-Federation:
+- Contattare il supporto tecnico Microsoft se si usa AD FS
+- Contattare il fornitore di identità di terze parti.
 
 
 ### <a name="profile-installation-failed"></a>Installazione profilo non riuscita
@@ -309,13 +318,15 @@ Per altre informazioni, vedere [Procedure consigliate per la protezione di Activ
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Risoluzione dell'errore di installazione del profilo
 
-1.  Verificare che all'utente sia stata assegnata una licenza appropriata per la versione del servizio Intune in uso.
+1.  Verificare che all'utente sia assegnata una licenza appropriata per la versione del servizio Intune in uso.
 
-2.  Verificare che il dispositivo non sia già registrato con un altro provider MDM o che non sia già installato un profilo di gestione.
+2.  Verificare che il dispositivo non sia già registrato con un altro provider MDM.
 
-3.  Passare a [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) e provare a installare il profilo quando richiesto.
+3. Verificare che sul dispositivo non sia già installato un profilo di gestione.
 
-4.  Verificare che Safari per iOS sia configurato come browser predefinito e che i cookie siano abilitati.
+4.  Passare a [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) e provare a installare il profilo quando richiesto.
+
+5.  Verificare che Safari per iOS sia configurato come browser predefinito e che i cookie siano abilitati.
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Il dispositivo iOS registrato non viene visualizzato nella console quando si usa System Center Configuration Manager con Intune
 **Problema:** l'utente registra il dispositivo iOS, ma non viene visualizzato nella console di amministrazione di Configuration Manager. Il dispositivo non indica che è stato registrato. Cause possibili:
@@ -334,11 +345,61 @@ Per altre informazioni, vedere [Procedure consigliate per la protezione di Activ
 Presto verranno aggiunti esempi su cosa cercare in questi file di log.
 
 
+### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>Il dispositivo iOS dell'utente è bloccato in una schermata di registrazione da più di 10 minuti
+
+**Problema**: un dispositivo di registrazione potrebbe rimanere bloccato in una delle due schermate seguenti:
+- Attesa della configurazione finale da "Microsoft"
+- App Guided Access non disponibile. Contattare l'amministratore.
+
+Questo problema può verificarsi se:
+- Si verifica un'interruzione temporanea dei servizi Apple oppure
+- La configurazione della registrazione di iOS prevede l'uso di token VPP, come illustrato nella tabella, ma c'è un problema con il token VPP.
+
+| Impostazioni di registrazione | Valore |
+| ---- | ---- |
+| Piattaforma | iOS |
+| Affinità utente | Registra con affinità utente |
+|Autenticazione tramite il portale aziendale anziché con l'assistente alla configurazione di Apple | Sì |
+| Installa il Portale aziendale con VPP | Usare il token: indirizzo del token |
+| Eseguire il portale aziendale nella modalità app singola fino all'autenticazione | Sì |
+
+**Risoluzione**: per risolvere il problema, è necessario:
+1. Determinare se è presente un problema con il token VPP e risolverlo.
+2. Identificare i dispositivi bloccati.
+3. Cancellare i dati dei dispositivi interessati.
+4. Chiedere all'utente di riavviare il processo di registrazione.
+
+#### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>Determinare se è presente un problema con il token VPP
+1. Passare a **Intune** > **Registrazione del dispositivo** > **Registrazione Apple** > **Token DEP** > nome del token > **Profili** > nome del profilo > **Gestisci** > **Proprietà**.
+2. Esaminare le proprietà per controllare se vengono visualizzati errori simili al seguente:
+    - Il token è scaduto.
+    - Il token non rientra tra le licenze di Portale aziendale.
+    - Il token viene utilizzato da un altro servizio.
+    - Il token viene utilizzato da un altro tenant.
+    - Il token è stato eliminato.
+3. Risolvere i problemi del token.
+
+#### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>Identificare i dispositivi bloccati dal token VPP
+1. Passare a **Intune** > **Registrazione del dispositivo** > **Registrazione Apple** > **Token DEP** > nome del token > **Dispositivi**.
+2. Filtrare la colonna dello **stato del profilo** in base a **Bloccato**.
+3. Prendere nota dei numeri di serie dei dispositivi con stato **Bloccato**.
+
+#### <a name="remotely-wipe-the-blocked-devices"></a>Cancellare in remoto i dati dei dispositivi bloccati
+Dopo aver risolto i problemi del token VPP, è necessario cancellare i dati dei dispositivi che sono bloccati.
+1. Passare a **Intune** > **Dispositivi** > **Tutti i dispositivi** > **Colonne**  >  **Numero di serie** > **Applica**. 
+2. Selezionare ogni dispositivo bloccato nell'elenco **Tutti i dispositivi** e quindi scegliere **Cancella** > **Sì**.
+
+#### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Chiedere agli utenti di riavviare il processo di registrazione
+Dopo aver cancellato i dispositivi bloccati, chiedere agli utenti di riavviare il processo di registrazione.
+
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemi durante l'uso di System Center Configuration Manager con Intune
 ### <a name="mobile-devices-disappear"></a>I dispositivi mobili scompaiono
-**Problema:** dopo la registrazione in Configuration Manager, il dispositivo mobile viene eliminato dalla raccolta, ma conserva il profilo di gestione ed è elencato nel gateway CSS.
+**Problema:** dopo la registrazione in Configuration Manager, il dispositivo mobile viene eliminato dalla raccolta. Tuttavia, il dispositivo ha ancora il profilo di gestione ed è elencato nel Gateway CSS.
 
-**Risoluzione**: questo problema può verificarsi perché è presente un processo personalizzato che rimuove i dispositivi non aggiunti a un dominio oppure perché l'utente ha ritirato il dispositivo dalla sottoscrizione. Per convalidare e verificare quale processo o account utente ha rimosso il dispositivo dalla console di Configuration Manager, attenersi alla procedura seguente.
+**Soluzione:** questo problema può verificarsi perché:
+- È presente un processo personalizzato che rimuove i dispositivi non appartenenti a un dominio oppure 
+- L'utente ha ritirato il dispositivo dalla sottoscrizione.
+Per convalidare e verificare quale processo o account utente ha rimosso il dispositivo dalla console di Configuration Manager, attenersi alla procedura seguente.
 
 #### <a name="check-how-device-was-removed"></a>Controllare in che modo è stato rimosso il dispositivo
 
@@ -354,27 +415,24 @@ Presto verranno aggiunti esempi su cosa cercare in questi file di log.
 
 5.  Verificare che in Configuration Manager non sia presente un'attività pianificata, uno script o un altro processo che potrebbe eliminare automaticamente dispositivi mobili o non appartenenti a un dominio oppure dispositivi correlati.
 
-
-
-
 ### <a name="other-ios-enrollment-errors"></a>Altri errori di registrazione di iOS
 Un elenco degli errori di registrazione di iOS è disponibile nella documentazione in [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) (Risoluzione dei problemi di registrazione dei dispositivi iOS in Microsoft Intune).
 
 ## <a name="pc-issues"></a>Problemi relativi al PC
 
-
 |Messaggio di errore|Problema|Soluzione|
 |---|---|---|
-|**L'amministratore IT deve assegnare la licenza per l'accesso**<br>L'amministratore IT non ha concesso l'accesso per l'uso di questa app. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|Il dispositivo non può essere registrato perché l'account dell'utente non ha la licenza necessaria.|Per poter registrare i dispositivi, è necessario che agli utenti venga assegnata la licenza necessaria. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili designata. Questo errore di Intune viene visualizzato, ad esempio, se Intune è stato designato come autorità di gestione dei dispositivi mobili e l'utente usa una licenza per System Center 2012 R2 Configuration Manager.<br>Vedere le informazioni su [come assegnare le licenze di Intune agli account utente](https://docs.microsoft.com/intune/licenses-assign).|
+|**L'amministratore IT deve assegnare la licenza per l'accesso**<br>L'amministratore IT non ha concesso l'accesso per l'uso di questa app. Contattare l'amministratore IT per richiedere assistenza o riprovare più tardi.|Il dispositivo non può essere registrato perché l'account dell'utente non ha la licenza necessaria.|Per poter registrare i dispositivi, è necessario che agli utenti venga assegnata la licenza necessaria. Questo messaggio indica che l'utente ha il tipo di licenza errato per l'autorità di gestione dei dispositivi mobili. Ad esempio, verrà visualizzato questo errore se entrambi gli elementi seguenti sono veri: <ol><li>Intune è stato impostato come l'autorità di gestione dei dispositivi mobili</li><li>Utilizzano la licenza di System Center 2012 R2 Configuration Manager.</li></ol>Vedere le informazioni su [come assegnare le licenze di Intune agli account utente](https://docs.microsoft.com/intune/licenses-assign).|
 
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>The machine is already enrolled (Il computer è già registrato) - Errore hr 0x8007064c
 **Problema:** la registrazione ha esito negativo e genera l'errore **The machine is already enrolled** (Il computer è già registrato). Il log di registrazione visualizza l'errore **hr 0x8007064c**.
 
-È possibile che sia dovuto al fatto che il computer è stato registrato in precedenza oppure è stata registrata l'immagine clonata di un computer. Il certificato dell'account precedente è ancora presente nel computer.
-
-
+Questo errore può verificarsi perché il computer:
+- È stato registrato in precedenza oppure
+- Contiene l'immagine clonata di un computer che era già registrato.
+Il certificato dell'account precedente è ancora presente nel computer.
 
 **Risoluzione:**
 
@@ -385,7 +443,7 @@ Un elenco degli errori di registrazione di iOS è disponibile nella documentazio
 1. Cercare il certificato Intune rilasciato da Sc_Online_Issuing e, se presente, eliminarlo.
 1. Se presente, eliminare la chiave di registro seguente: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** e tutte le sottochiavi.
 1. Provare a eseguire nuovamente la registrazione.
-1. Se il PC non può essere ancora registrato, cercare ed eliminare la chiave seguente se presente: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Se il PC continua a non poter essere registrato, cercare ed eliminare la chiave seguente se presente: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
 1. Provare a eseguire nuovamente la registrazione.
 
     > [!IMPORTANT]
@@ -397,19 +455,19 @@ Un elenco degli errori di registrazione di iOS è disponibile nella documentazio
 |Codice errore|Possibile problema|Soluzione suggerita|
 |--------------|--------------------|----------------------------------------|
 |0x80CF0437 |L'orologio del computer client non è impostato sull'ora corretta.|Assicurarsi che l'orologio e il fuso orario nel computer client siano impostati sull'ora e sul fuso orario corretti.|
-|0x80240438, 0x80CF0438, 0x80CF402C|Impossibile connettersi al servizio Intune. Verificare le impostazioni proxy del client.|Verificare che la configurazione del proxy nel computer client sia supportata da Intune e che il computer client disponga di accesso a Internet.|
-|0x80240438, 0x80CF0438|Non sono configurate impostazioni proxy in Internet Explorer e nel sistema locale.|Impossibile connettersi al servizio Intune. Controllare le impostazioni proxy del client e verificare che la configurazione proxy nel computer client sia supportata da Intune. Verificare anche che il computer client disponga dell'accesso a Internet.|
+|0x80240438, 0x80CF0438, 0x80CF402C|Impossibile connettersi al servizio Intune. Verificare le impostazioni proxy del client.|Verificare che Intune supporti la configurazione del proxy nel computer client. Verificare che il computer sia dotato dell'accesso a Internet.|
+|0x80240438, 0x80CF0438|Non sono configurate impostazioni proxy in Internet Explorer e nel sistema locale.|Impossibile connettersi al servizio Intune. Verificare le impostazioni proxy del client. Verificare che Intune supporti la configurazione del proxy nel computer client. Verificare che il computer sia dotato dell'accesso a Internet.|
 |0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|Il pacchetto di registrazione non è aggiornato.|Scaricare e installare il pacchetto del software client più recente dall'area di lavoro Amministrazione.|
 |0x80043002, 0x80CF3002|L'account è in modalità di manutenzione.|Quando l'account è in modalità di manutenzione, non è possibile registrare nuovi computer client. Per visualizzare le impostazioni dell'account, accedere al proprio account.|
 |0x80043003, 0x80CF3003|L'account è stato eliminato.|Verificare che l'account e la sottoscrizione a Intune siano ancora attivi. Per visualizzare le impostazioni dell'account, accedere al proprio account.|
 |0x80043005, 0x80CF3005|Il computer client è stato rimosso.|Attendere alcune ore, rimuovere le versioni precedenti del software client dal computer, quindi riprovare a installare il software client.|
 |0x80043006, 0x80CF3006|È stato raggiunto il numero massimo di postazioni consentito per l'account.|L'organizzazione deve acquistare ulteriori postazioni prima che sia possibile registrare più computer client nel servizio.|
-|0x80043007, 0x80CF3007|Impossibile trovare il file del certificato nella stessa cartella del programma di installazione.|Estrarre tutti i file prima di avviare l'installazione. Non rinominare o spostare eventuali file estratti: tutti i file devono trovarsi nella stessa cartella altrimenti l'installazione non riuscirà.|
+|0x80043007, 0x80CF3007|Impossibile trovare il file del certificato nella stessa cartella del programma di installazione.|Estrarre tutti i file prima di avviare l'installazione. Non rinominare o spostare alcun file estratto: tutti i file devono trovarsi nella stessa cartella altrimenti l'installazione non riuscirà.|
 |0x8024D015, 0x00240005, 0x80070BC2, 0x80070BC9, 0x80CFD015|È impossibile installare il software perché un riavvio del computer client è in sospeso.|Riavviare il computer, quindi riprovare a installare il software client.|
 |0x80070032|Uno o più prerequisiti per l'installazione del software client non sono stati individuati nel computer client.|Assicurarsi che tutti gli aggiornamenti necessari siano installati nel computer client, quindi riprovare a installare il software client.|
 |0x80043008, 0x80CF3008|Impossibile avviare il servizio Microsoft Online Management Updates.|Contattare il supporto tecnico di Microsoft, come descritto in [Come ottenere supporto per Microsoft Intune](get-support.md).|
 |0x80043009, 0x80CF3009|Il computer client è già registrato al servizio.|È necessario ritirare il computer client prima di potersi registrare nuovamente al servizio.|
-|0x8004300B, 0x80CF300B|Impossibile eseguire l'installazione del software client perché la versione di Windows in esecuzione nel client non è supportata.|Intune non supporta la versione di Windows in esecuzione nel computer client.|
+|0x8004300B, 0x80CF300B|È impossibile eseguire l'installazione del software client perché la versione di Windows in esecuzione nel client non è supportata.|Intune non supporta la versione di Windows in esecuzione nel computer client.|
 |0xAB2|Windows Installer non è in grado di accedere al runtime VBScript per un'azione personalizzata.|L'errore è causato da un'azione personalizzata basata sulle librerie a collegamento dinamico (DLL). Per la risoluzione dei problemi relativi alle DLL potrebbe essere necessario usare gli strumenti descritti in [Supporto tecnico Microsoft KB198038: Strumenti utili per pacchetto e problemi di distribuzione](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|La connessione all'endpoint del servizio è stata terminata.|L'account di valutazione o a pagamento è sospeso. Creare un nuovo account di prova o a pagamento ed eseguire nuovamente la registrazione.|
 

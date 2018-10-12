@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313718"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602147"
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
@@ -83,29 +83,31 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
 8. Scegliere **Consenti** o **Blocca** per i dispositivi **di proprietà personale** per ogni piattaforma elencata.
 9. Scegliere **OK**.
 
-### <a name="android-device-type-restrictions"></a>Restrizioni per il tipo di dispositivi Android
+### <a name="blocking-personal-android-devices"></a>Blocco dei dispositivi Android personali
 - Anche se si blocca la registrazione dei dispositivi personali Android, i dispositivi personali del profilo di lavoro Android possono ancora essere registrati.
 - Per impostazione predefinita, le impostazioni dei dispositivi del profilo di lavoro Android corrispondono alle impostazioni dei dispositivi Android. Dopo la modifica delle impostazioni del profilo di lavoro Android questa corrispondenza andrà persa.
 - Se si blocca la registrazione dei dispositivi del profilo di lavoro Android personali, solo i dispositivi Android aziendali possono essere registrati come profilo di lavoro Android.
 
-### <a name="windows-device-type-restrictions"></a>Restrizioni per il tipo di dispositivi Windows
-Dopo l'impostazione su **Blocca** per il tipo di dispositivi piattaforma Windows, Intune verifica che ogni nuova richiesta di registrazione Windows sia stata autorizzata come registrazione aziendale. Le registrazioni non autorizzate verranno bloccate.
+### <a name="blocking-personal-windows-devices"></a>Blocco dei dispositivi Windows personali
+Se si blocca la registrazione dei dispositivi Windows personali, Intune verifica che ogni nuova richiesta di registrazione Windows sia stata autorizzata come registrazione aziendale. Le registrazioni non autorizzate verranno bloccate.
 
 I metodi seguenti si qualificano per essere autorizzati come registrazione aziendale Windows:
  - L'utente che esegue la registrazione usa un [account del manager di registrazione dispositivi]( device-enrollment-manager-enroll.md).
 - Il dispositivo viene registrato tramite [Windows AutoPilot](enrollment-autopilot.md).
+- Il dispositivo viene registrato con Windows Autopilot ma non è un'opzione solo registrazione al software MDM dalle impostazioni di Windows.
 - Il numero IMEI del dispositivo è indicato in **Registrazione del dispositivo** > **[Identificatori dei dispositivi aziendali](corporate-identifiers-add.md)**. (Funzionalità non supportata per Windows Phone 8.1.)
 - Il dispositivo viene registrato tramite un [pacchetto di provisioning in blocco](windows-bulk-enroll.md).
 - Il dispositivo viene registrato tramite la [registrazione automatica da SCCM per la co-gestione](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
 Le registrazioni seguenti sono contrassegnate come aziendali da Intune, ma dal momento che non offrono all'amministratore di Intune il controllo per ogni dispositivo, verranno bloccate:
- - [Registrazione MDM automatica](windows-enroll.md#enable-windows-10-automatic-enrollment) con l'[aggiunta ad Azure Active Directory durante la configurazione di Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
-- [Registrazione MDM automatica](windows-enroll.md#enable-windows-10-automatic-enrollment) con [aggiunta ad Azure Active Directory dalle impostazioni di Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md).
+ - La [registrazione automatica al software MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) con l'[aggiunta ad Azure Active Directory durante la configurazione di Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*.
+- La [registrazione automatica al software MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) con [aggiunta ad Azure Active Directory dalle impostazioni di Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)*.
  
 Verranno bloccati anche i seguenti metodi di registrazione personale:
-- [Registrazione MDM automatica](windows-enroll.md#enable-windows-10-automatic-enrollment) con [aggiunta dell'account aziendale dalle impostazioni di Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md).
+- La [registrazione automatica al software MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) con [aggiunta dell'account aziendale dalle impostazioni di Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*.
 - Solo l'[opzione di registrazione MDM]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) dalle impostazioni di Windows.
 
+\* Questi elementi non verranno bloccati se la registrazione avviene con Autopilot.
 
 ## <a name="set-device-limit-restrictions"></a>Impostare le restrizioni sul limite dei dispositivi
 

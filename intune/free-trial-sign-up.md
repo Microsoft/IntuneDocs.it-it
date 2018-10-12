@@ -1,61 +1,123 @@
 ---
-title: Iscriversi per una versione di valutazione gratuita di Microsoft Intune valida 30 giorni
-titleSuffix: Microsoft Intune
-description: Informazioni su come registrarsi per una versione di valutazione gratuita di Microsoft Intune valida 30 giorni.
+title: Guida introduttiva - Provare Microsoft Intune gratuitamente
+titlesuffix: ''
+description: In questa guida introduttiva si creerà una sottoscrizione di valutazione gratuita, verranno spiegate le configurazioni supportate e i requisiti di rete e, in via facoltativa, si procederà alla configurazione del nome del dominio.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 03/04/2018
-ms.topic: conceptual
+ms.date: 09/13/2018
+ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
+ms.reviewer: ''
 ms.suite: ems
-ms.custom: get-started
-ms.openlocfilehash: 6492b757376c95c366d45a63b05f2ec60bdd791b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.custom: intune-azure
+ms.openlocfilehash: 37445cb2536e02937cf3002dc1cb56ab4b78f12f
+ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254123"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46581394"
 ---
-# <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Iscriversi per una versione di valutazione gratuita di Microsoft Intune
+# <a name="quickstart-try-microsoft-intune-for-free"></a>Guida introduttiva: provare Microsoft Intune gratuitamente 
 
+Microsoft Intune aiuta a proteggere i dati aziendali del personale tramite la gestione dei dispositivi e delle app. In questa guida introduttiva si creerà una sottoscrizione gratuita per provare Intune in un ambiente di test.
 
-Questo articolo descrive la procedura di iscrizione a una versione di valutazione di Intune autonomo per il portale di Azure.
+Intune offre la gestione dei dispositivi mobili (MDM) e delle app per dispositivi mobili (MAM) con un servizio sicuro e basato sul cloud che viene amministrato tramite il portale di Microsoft Azure. Tramite Intune ci si assicura che la configurazione, l'aggiornamento e l'accesso alle risorse aziendali del personale, cioè i dati, i dispositivi e le app, siano gestiti correttamente e che soddisfino i criteri di conformità e i requisiti aziendali. 
 
-1. Visitare la pagina di [iscrizione a Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) e compilare il modulo per richiedere una sottoscrizione di valutazione.
-2. Se si dispone già di un account aziendale o dell'istituto di istruzione e si vuole usare tale account per la versione di valutazione di Intune, seguire [queste istruzioni di iscrizione](/intune/account-sign-up).
+## <a name="prerequisites"></a>Prerequisiti
+Prima di configurare Microsoft Intune, esaminare i requisiti seguenti:
 
-* Se per la maggior parte delle operazioni IT e degli utenti viene usata una lingua diversa dalla propria, è necessario selezionare la lingua in **Where's your company located?** (Dov'è situata la tua azienda?).
+   - [Sistemi operativi e browser supportati](supported-devices-browsers.md) 
+   - [Requisiti di configurazione di rete e larghezza di banda](network-bandwidth-use.md)
 
-2. Al termine del processo di registrazione, l'utente riceve un messaggio con le informazioni del nuovo account. <br/> 
+## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Iscriversi per una versione di valutazione gratuita di Microsoft Intune
 
-![Immagine delle informazioni sull'account](./media/2-end-of-sign-up-process.png) <br/>
+È possibile provare Intune gratuitamente per 30 giorni. Se si ha già un account aziendale o dell'istituto di istruzione, **eseguire l'accesso** con tale account e aggiungere Intune alla sottoscrizione. In alternativa, è possibile **iscriversi** per ottenere un nuovo account e usare Intune per l'organizzazione.
 
-A questo punto, se si fa clic su **You're ready to go** (Pronto per procedere), si passa all'interfaccia di amministrazione di Office 365, in cui è possibile aggiungere utenti all'ambiente di test. <br/><br/>Tuttavia, se si vuole accedere direttamente al portale di Azure di Intune, aprire una nuova finestra del browser e digitare **https://portal.azure.com** nella barra degli indirizzi. Verrà visualizzata la pagina di accesso ad Azure, a cui è possibile accedere tramite le credenziali assegnate. Usare questo indirizzo per accedere alla versione di valutazione di Intune. <br/> ![Immagine della pagina di accesso al portale di Azure](./media/azure-portal-signin.png)
+> [!IMPORTANT]
+> Non è possibile combinare un account aziendale o dell'istituto di istruzione dopo essersi iscritti per ottenere un nuovo account.
 
-La prima volta che si accede al [portale di Intune di Azure](https://portal.azure.com) è possibile che Intune non sia visibile nel dashboard di Azure. Per aggiungere il servizio Intune al dashboard di Azure:
-1. Scegliere **Tutti i servizi >** nell'elenco dei servizi di Azure a sinistra del dashboard e immettere **Intune** nella casella di ricerca.
-2. Scegliere **Intune** nell'elenco e selezionare la stella per aggiungere il servizio all'elenco dei servizi.<br/> ![Immagine della selezione di Microsoft Intune nel portale di Azure](./media/azure-add-intune1.png)
-3. Scegliere quindi **Intune** nell'elenco dei servizi per aprire il dashboard di Intune.
+1. Andare alla pagina della [versione di valutazione di Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2019088) e compilare il modulo.
+
+    ![Screenshot della pagina Web di iscrizione per l'account di prova Microsoft Intune](./media/account-sign-up-site-full-browser.png)
+
+    Se per la maggior parte delle operazioni IT e degli utenti viene usata un'area geografica diversa dalla propria, è consigliato selezionarla in **Paese o area geografica**. Azure usa le informazioni a livello di area per offrire i servizi corretti. Questa impostazione non può essere modificata in un secondo tempo.
+
+2. Creare un account con il nome della propria società seguito da **.onmicrosoft.com**. 
+
+    ![Screenshot della pagina Web di iscrizione per l'account di prova Microsoft Intune](./media/account-sign-up-site-user-id.png)
+
+    Se l'organizzazione ha il proprio dominio personalizzato che si desidera usare senza **.onmicrosoft.com**, cambiare questa opzione nel portale di amministrazione di Office 365 descritto più avanti in questo articolo.
+
+3. Al termine del processo di iscrizione, l'utente può visualizzare le informazioni del nuovo account.
+
+    ![Immagine delle informazioni sull'account](./media/intune-end-of-sign-up-process.png) 
+
+## <a name="sign-in-to-the-azure-portal"></a>Accedere al portale di Azure
+
+1. Aprire una nuova finestra del browser e immettere **https://portal.azure.com** nella barra degli indirizzi. 
+2. Accedere immettendo le credenziali assegnate nei passaggi precedenti.
+
+    ![Immagine della pagina di accesso al portale di Azure](./media/azure-portal-signin.png)
+
+3. Per visualizzare Microsoft Intune nel portale di Azure, selezionare **Tutti i servizi** nella barra laterale sul lato sinistro della pagina.
+4. Cercare **Microsoft Intune** nella casella filtro e selezionarlo.
+5. Selezionare la **stella** per aggiungere Intune alla fine dell'elenco dei servizi preferiti e aprire il dashboard Intune.
 
 Quando si esegue l'iscrizione per una versione di valutazione, all'indirizzo di posta elettronica specificato in fase di iscrizione verrà anche inviato un messaggio contenente le informazioni sul proprio account. Questo messaggio conferma che la versione di valutazione è attiva.
 
-## <a name="keeping-the-admin-experiences-straight"></a>Esperienze diverse per l'amministrazione
+## <a name="set-the-mdm-authority-to-intune"></a>Impostare l'autorità MDM su Intune
+
+L'impostazione dell'autorità di gestione dei dispositivi mobili (MDM) determina la modalità di gestione dei dispositivi. L'amministratore IT deve impostare un'autorità MDM prima che gli utenti possano registrare i dispositivi per la gestione.
+
+Per impostare l'autorità MDM su Intune, seguire questa procedura.
+
+1. Aprire una nuova finestra del browser e immettere **https://portal.azure.com** nella barra degli indirizzi. 
+2. Scegliere **Tutti i servizi** > **Microsoft Intune**.
+3. Selezionare l'intestazione arancione per aprire l’impostazione **Autorità di gestione dei dispositivi mobili**. 
+
+    > [!NOTE]
+    > L'intestazione arancione viene visualizzata solo se l'autorità MDM non è stata ancora impostata.
+
+4. In **Autorità di gestione dei dispositivi mobili** impostare l'autorità MDM su **Autorità MDM Intune**.
+
+## <a name="configure-your-custom-domain-name-optional"></a>Configurare il nome di dominio personalizzato (facoltativo)
+
+Come accennato in precedenza, se l'organizzazione ha il proprio dominio personalizzato che si desidera usare senza **.onmicrosoft.com**, cambiare questa opzione nel portale di amministrazione di Office 365. Si provvederà ad aggiungere, verificare e configurare il proprio nome di dominio personalizzato.  
+
+> [!IMPORTANT]
+> Non è possibile rinominare o rimuovere il nome di dominio **onmicrosoft.com** iniziale. È possibile aggiungere, verificare o rimuovere i nomi di dominio personalizzati usati con Intune in modo che l'identità aziendale risulti chiara.
+
+1. Passare al [portale di gestione di Office 365](https://portal.office.com/Admin/Default.aspx) e accedere con l'account amministratore.
+
+2. Nel riquadro di spostamento scegliere **Impostazioni** > **Domini** > **Aggiungi dominio**.
+
+3. Immettere il nome di dominio personalizzato. Selezionare **Avanti**.
+
+   ![Screenshot dell'interfaccia di amministrazione di Office 365 con selezione di Impostazioni > Domini e aggiunta di un nuovo nome di dominio](./media/domain-custom-add.png)
+
+4. Verificare di essere il proprietario del dominio immesso in precedenza. 
+    
+    Selezionando **Invia codice per posta elettronica**, il contatto registrato del dominio riceverà un messaggio di posta elettronica. Copiare il codice contenuto nel messaggio di posta elettronica e immetterlo nel campo **Digita qui il codice di verifica**. Se il codice di verifica corrisponde, il dominio verrà aggiunto al tenant. Il messaggio di posta elettronica visualizzato potrebbe non avere un aspetto familiare. Alcuni registrar nascondono l'indirizzo di posta elettronica reale specificato in fase di registrazione del dominio.
+
+   ![Screenshot dell'interfaccia di amministrazione di Office 365 - Verifica del nome di dominio da aggiungere](./media/domain-custom-verify.png)
+
+   > [!NOTE]
+   > Per informazioni dettagliate sulla verifica dei record TXT, vedere [Creare record DNS presso un provider di hosting DNS per Office 365](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
+
+## <a name="admin-experiences"></a>Esperienze di amministrazione
 
 Si possono usare due portali:
-- Il dashboard di Intune in Azure ([portal.azure.com](https://portal.azure.com)) in cui è possibile esplorare le [funzionalità di Intune](what-is-intune.md). In genere le operazioni vengono eseguite nel dashboard di Intune.
-- L'interfaccia di amministrazione di Office 365 ([portal.office.com](https://portal.office.com)) in cui è possibile aggiungere e gestire gli utenti se non si usa Azure Active Directory a tale scopo. È anche possibile gestire altri aspetti del proprio account, incluse la fatturazione e il supporto tecnico.
+- Il dashboard di Intune in Azure ([portal.azure.com](https://portal.azure.com)) è l'elemento da cui è possibile esplorare le [funzionalità di Intune](what-is-intune.md). In genere le operazioni vengono eseguite nel dashboard di Intune.
+- L'interfaccia di amministrazione di Office 365 ([portal.office.com](https://portal.office.com)) è l'elemento in cui è possibile aggiungere e gestire gli utenti se non si usa Azure Active Directory a tale scopo. È anche possibile gestire altri aspetti del proprio account, incluse la fatturazione e il supporto tecnico.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-### <a name="integration-with-other-products"></a>Integrazione con altri prodotti
-Per altre informazioni sull'uso degli account utente di Azure Active Directory con Intune, vedere:
-- [Identity requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview) (Requisiti di identità)
-- [Determinare i requisiti di sincronizzazione delle directory](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [Determinare i requisiti dell'autenticazione a più fattori](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+In questa guida introduttiva è stata creata una sottoscrizione gratuita per provare Intune in un ambiente di test e, in via facoltativa, è stato configurato un nome di dominio personalizzato. Per altre informazioni su Microsoft Intune, passare alla guida introduttiva successiva che spiega come aggiungere utenti e assegnare licenze.
 
-Altre informazioni sull'uso di [Intune con System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
+> [!div class="nextstepaction"]
+> [Creare un utente](get-started-users.md)

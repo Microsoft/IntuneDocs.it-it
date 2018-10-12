@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
+ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312897"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46119104"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Impostazioni della modalità tutto schermo Android Enterprise
 
@@ -45,9 +45,9 @@ I profili della modalità tutto schermo Android supportano le impostazioni di co
 - **Consenti l'installazione da origini sconosciute**: scegliere **Consenti** per consentire agli utenti di eseguire l'installazione da origini sconosciute.
 - **Aggiornamento del sistema**: scegliere un'opzione per definire la modalità di gestione degli aggiornamenti da parte del dispositivo:
     - **Impostazione predefinita dispositivo**: usare l'impostazione predefinita del dispositivo.
-    - **Automatico**: gli aggiornamenti vengono installati automaticamente.
-    - **Posposto**: gli aggiornamenti vengono rimandati a una data successiva.
-    - **Finestra di manutenzione**: in una finestra di manutenzione viene richiesto agli utenti di approvare l'aggiornamento.
+    - **Automatico**: gli aggiornamenti vengono installati automaticamente senza l'intervento dell'utente. L'impostazione del criterio consente di installare immediatamente eventuali aggiornamenti in sospeso.
+    - **Posposto**: gli aggiornamenti vengono rimandati di 30 giorni. Allo scadere dei 30 giorni, l'utente viene sollecitato da Android ad installare l'aggiornamento. Ai produttori di dispositivi e ai gestori telefonici è consentito impedire il posticipo degli aggiornamenti della sicurezza. Un aggiornamento posticipato viene indicato all'utente da una notifica di sistema nel dispositivo. 
+    - **Finestra di manutenzione**: installa automaticamente gli aggiornamenti in una finestra di manutenzione giornaliera impostata in Intune. L'installazione viene provata ogni giorno per 30 giorni e può non riuscire a causa di livelli di batteria o spazio insufficienti. Dopo 30 giorni, Android richiede all'utente di procedere con l'installazione. Questa finestra viene usata anche per installare gli aggiornamenti per le app di Play. Questa opzione è consigliata per i dispositivi dedicati, ad esempio i chioschi multimediali, in quanto consente di aggiornare le app in primo piano dei chioschi multimediali per app singola. 
 
 ## <a name="kiosk-settings"></a>Impostazioni della modalità tutto schermo
 

@@ -3,10 +3,10 @@ title: Come ottenere supporto per Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Ottenere supporto online e per telefono per Microsoft Intune a pagamento e per le sottoscrizioni di prova.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
-ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
+ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843141"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187785"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Come ottenere supporto per Microsoft Intune
 
@@ -30,17 +30,27 @@ Microsoft offre supporto globale tecnico e per la prevendita, la fatturazione e 
 
 >[!IMPORTANT]
 > Per il supporto tecnico dei prodotti di terze parti usati con Intune, come ad esempio Saaswedo, Cisco o Lookout, contattare prima il fornitore del prodotto. Prima di aprire una richiesta di supporto per Intune, verificare che l'altro prodotto sia stato configurato correttamente.
+> 
+> Per informazioni sulla risoluzione dei problemi relativi a Microsoft Intune, vedere la [sezione Risoluzione dei problemi](help-desk-operators.md) della documentazione di Intune.
+
+L'amministratore IT può usare l'opzione **Guida e supporto** per inviare un ticket di supporto online per Intune dal portale di Azure. Per creare un ticket di supporto, all'account deve essere assegnato uno dei seguenti [ruoli di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal): 
+
+- Amministratore di Intune 
+- Amministratore globale 
+- Amministratore dei servizi  
+
+
+## <a name="get-context-sensitive-help"></a>Ottenere la guida sensibile al contesto 
+Dopo aver effettuato l'accesso al portale di Azure e aperto Intune, è possibile selezionare **Guida in linea e supporto** da qualsiasi pannello Intune nel portale di Azure per visualizzare le soluzioni ai problemi più comuni per quell'area di Intune. 
+
+Se le soluzioni comuni non risolvono il problema, è possibile selezionare **Richiesta di supporto** per creare una nuova richiesta di supporto che viene aperta nel pannello **Informazioni di base** della pagina *Guida e supporto* di Azure. Per procedere e creare un ticket di supporto, passare al *passaggio 3* della procedura seguente [Creare un ticket di supporto online](#create-an-online-support-ticket). 
 
 ## <a name="create-an-online-support-ticket"></a>Creare un ticket di supporto online
 
-Gli amministratori IT possono archiviare un ticket di supporto dal portale di Azure seguendo la procedura seguente:
->[!NOTE]
->È necessario essere un amministratore del servizio Intune o un amministratore globale per creare un ticket di supporto online. Per informazioni dettagliate, vedere [Assegnazione di ruoli di amministratore](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
-1. Connettersi al portale di Azure (<https://portal.azure.com>) con le credenziali di amministratore di Intune, scegliere l'icona <strong>?</strong> nell'angolo superiore destro del portale e scegliere <strong>Guida e supporto</strong> per visualizzare la pagina [Guida e supporto](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) di Azure.
-
+1. Accedere al portale di Azure (<https://portal.azure.com>) con le credenziali di amministratore di Intune, scegliere l'icona <strong>?</strong> nell'angolo superiore destro del portale e scegliere <strong>Guida e supporto</strong> per visualizzare la pagina [Guida e supporto](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) di Azure.
     ![Screenshot del portale di Azure e del collegamento punto interrogativo del supporto con il collegamento Guida e supporto evidenziato](./media/azure-get-support.png)
 
-2. Nella pagina Guida e supporto di Azure selezionare **Nuova richiesta di supporto**.
+2. Nella pagina *Guida _+_ supporto* di Azure selezionare **Nuova richiesta di supporto**.
 
     ![Screenshot della pagina Guida e supporto del portale di Azure con il collegamento Nuova richiesta di supporto evidenziato](./media/azure-support-ticket-link.png)
 
@@ -72,7 +82,7 @@ Gli amministratori IT possono archiviare un ticket di supporto dal portale di Az
    - **Ora**
    - **Dati supplementari**
 
-     Scegliere **Avanti**.
+   Scegliere **Avanti**.
 
 5. Specificare le **Informazioni contatto** per la richiesta di supporto. Il supporto tecnico Microsoft usa queste informazioni per contattare l'utente.
 6. Scegliere **Crea** per inviare la richiesta di supporto tecnico.
@@ -80,7 +90,15 @@ Gli amministratori IT possono archiviare un ticket di supporto dal portale di Az
 >[!IMPORTANT]
 >Per domande su fatturazione o abbonamento, è possibile richiedere assistenza dall'[Interfaccia di amministrazione di Office](https://portal.office.com/Support/SupportEntry.aspx).
 
+## <a name="view-support-requests"></a>Visualizzare le richieste di supporto
+È possibile visualizzare una richiesta di supporto dal portale di Azure. A tale scopo, procedere nel seguente modo:
+
+1. Accedere a Azure (<https://portal.azure.com>) con le credenziali di amministratore di Intune, scegliere l'icona <strong>?</strong> nell'angolo superiore destro del portale e scegliere <strong>Guida e supporto</strong> per visualizzare la pagina [Guida e supporto](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) di Azure.
+
+2. Nella pagina **Guida e supporto** è possibile visualizzare l'elenco delle **Richieste di supporto recenti** e selezionarle per visualizzare altri dettagli.
+
 ## <a name="additional-resources"></a>Risorse aggiuntive
 - [Come contattare il supporto telefonico assistito per Microsoft Intune](phone-support-contact.md)
 - [Supporto per la fatturazione e la sottoscrizione](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Volume licensing](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [Risoluzione dei problemi relativi a Intune](help-desk-operators.md)

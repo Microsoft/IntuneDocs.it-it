@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: b92a5c7bcddbecc438aa5e72989ab2302440da7a
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141678"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562885"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Aggiungere app in Microsoft Intune
 
@@ -90,7 +90,7 @@ Per determinare le app necessarie per il personale dell'azienda, è opportuno co
 
 Prima di tutto occorre determinare il gruppo che deve avere accesso all'app in base alla riservatezza dei dati contenuti nell'app. Potrebbe essere necessario includere o escludere alcuni tipi di ruoli all'interno dell'organizzazione. Il gruppo vendite potrebbe ad esempio avere bisogno solo di alcune app line-of-business, mentre i dipendenti dei reparti progettazione, amministrazione, risorse umane o legale potrebbero non avere la necessità di usare le app line-of-business. Per il gruppo vendite potrebbero inoltre essere necessari una protezione dei dati aggiuntiva e l'accesso ai servizi aziendali interni nei dispositivi mobili. È necessario determinare la modalità di connessione di questo gruppo alle risorse tramite l'app. L'app accederà a dati nel cloud oppure a dati locali? E in che modo gli utenti si connetteranno alle risorse usando l'app? 
 
-Intune supporta anche l'abilitazione dell'accesso alle applicazioni per dispositivi mobili che richiedono l'accesso protetto ai dati locali, ad esempio i server app line-of-business. Questo tipo di accesso viene in genere fornito usando [certificati gestiti da Intune](certificates-configure.md) per il controllo di accesso, combinati con un gateway VPN standard o un proxy nel perimetro, ad esempio Azure Active Directory Application Proxy. In Intune sono disponibili lo [strumento di wrapping delle app e App SDK](apps-prepare-mobile-application-management.md) che consentono di contenere i dati a cui si accede all'interno dell'app line-of-business, in modo che non sia possibile passare i dati aziendali alle app o ai servizi consumer.
+Intune supporta anche l'abilitazione dell'accesso alle applicazioni client che richiedono l'accesso protetto ai dati locali, ad esempio i server app line-of-business. Questo tipo di accesso viene in genere fornito usando [certificati gestiti da Intune](certificates-configure.md) per il controllo di accesso, combinati con un gateway VPN standard o un proxy nel perimetro, ad esempio Azure Active Directory Application Proxy. In Intune sono disponibili lo [strumento di wrapping delle app e App SDK](apps-prepare-mobile-application-management.md) che consentono di contenere i dati a cui si accede all'interno dell'app line-of-business, in modo che non sia possibile passare i dati aziendali alle app o ai servizi consumer.
 
 Usare la [Guida alla pianificazione, progettazione e implementazione della distribuzione di Intune](planning-guide.md) per stabilire come identificare i gruppi dell'organizzazione associati a ogni scenario di caso d'uso e di caso d'uso secondario per l'app. Per informazioni sull'assegnazione delle app ai gruppi, vedere [Assegnare app ai gruppi con Microsoft Intune](apps-deploy.md).
 

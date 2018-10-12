@@ -1,11 +1,11 @@
 ---
-title: Uso del dispositivo iOS o macOS con Intune | Documentazione Microsoft
-description: Elenco di collegamenti alle attività che è possibile eseguire sul dispositivo mobile iOS o macOS quando viene registrato in Intune
+title: Uso del dispositivo macOS con Intune | Microsoft Docs
+description: Trovare i collegamenti per risolvere i problemi o gestire il dispositivo mobile macOS dall'app Portale aziendale
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 4/20/2018
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 02ccde8299e4ad5d6aacb2abd120c094f752c5e6
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 887b9355bc68edca314a49743b8d11728ca2361a
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771857"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168914"
 ---
-# <a name="using-your-macos-device-with-intune"></a>Uso del dispositivo macOS con Intune
+# <a name="using-your-macos-device-with-intune-company-portal"></a>Uso del dispositivo macOS con il Portale aziendale di Intune
 
-Esistono una serie di operazioni che è possibile eseguire con Intune per agevolare il lavoro. L'elenco seguente include le operazioni più comuni che potrebbero essere richieste dalla propria azienda.
+Questo articolo elenca le attività e le informazioni del Portale aziendale specifiche per macOS. Usarlo per risolvere i problemi e gestire il dispositivo macOS. Fare clic sui collegamenti per visualizzare ulteriori dettagli, passaggi e screenshot. 
 
 ## <a name="supported-versions"></a>Versioni supportate
 
-Intune supporta attualmente OS X El Capitan 10.11 e versioni successive per i dispositivi macOS.
+Portale aziendale per macOS supporta attualmente OS X El Capitan 10.11 e versioni successive per i dispositivi macOS.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Registrazione in Intune e installazione del portale aziendale
 

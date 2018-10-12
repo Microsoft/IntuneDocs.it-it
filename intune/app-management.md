@@ -15,19 +15,19 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 20e9d4799b9ea4329c8286f0b75ea2a7d555e07b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 9529560fca1fcd30fc479c0eac8bd7bc967fa952
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253766"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562851"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Gli amministratori IT possono usare Microsoft Intune per gestire le app per dispositivi mobili usate dai dipendenti dell'azienda. Questa funzionalità si aggiunge alla gestione dei dispositivi e alla protezione dei dati. Una delle priorità di un amministratore è fare in modo che gli utenti finali abbiano accesso alle app necessarie per lavorare. Non sempre questo obiettivo risulta semplice da raggiungere, perché:
+Gli amministratori IT possono usare Microsoft Intune per gestire le app client usate dai dipendenti dell'azienda. Questa funzionalità si aggiunge alla gestione dei dispositivi e alla protezione dei dati. Una delle priorità di un amministratore è fare in modo che gli utenti finali abbiano accesso alle app necessarie per lavorare. Non sempre questo obiettivo risulta semplice da raggiungere, perché:
 - Esiste una vasta gamma di piattaforme per dispositivi e tipi di applicazione.
 - Potrebbe essere necessario gestire le app sia nei dispositivi aziendali che nei dispositivi personali degli utenti.
 - Occorre assicurarsi che rete e dati rimangano protetti.
@@ -68,7 +68,7 @@ Il carico di lavoro **App client** contiene numerose informazioni sulle app ed �
     Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel riquadro **Microsoft Intune** selezionare **App client**.
 
-    ![Riquadro del carico di lavoro "App per dispositivi mobili"](./media/apps-workload.png)
+    ![Riquadro del carico di lavoro "App client"](./media/apps-workload.png)
 
 Le quattro sezioni successive descrivono le opzioni disponibili nel riquadro **App client**.
 

@@ -14,12 +14,12 @@ ms.assetid: 68921fd6-5f50-456c-a3af-83d7bc4b134b
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 085b6a3a68964a200a5d6c462b3710b9744ac99f
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 5613c1284110e85a910db8f156ff4f62a54af4ad
+ms.sourcegitcommit: dc6979f2b14d522530577cc7f212cc822356acc9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474616"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453545"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Sicurezza dei dati e condivisione in Intune
 
@@ -34,7 +34,7 @@ Per altre informazioni, vedere [Service Trust Portal](https://www.microsoft.com/
 
 Intune usa tecniche di minimizzazione dei dati, ad esempio
 
-- aggregazione
+- aggregation
 - raccolta di dati facoltativi per alcune funzionalità
 - riduzione della precisione o della sensibilità dei dati
 
@@ -66,7 +66,7 @@ Per informazioni sui dati condivisi con alcune terze parti, vedere gli articoli 
 
 ### <a name="system-center-configuration-manager-data-sharing"></a>Condivisione dei dati con System Center Configuration Manager
 
-Microsoft Intune non condivide dati con System Center Configuration Manager. Microsoft Intune è un prodotto locale distribuito, gestito e usato direttamente dal cliente. I dati di diagnostica e utilizzo raccolti da Configuration Manager vengono usati esclusivamente per migliorare l'esperienza, la qualità e la sicurezza di installazione delle versioni future.
+Microsoft Intune non condivide dati con System Center Configuration Manager. System Center Configuration Manager è un prodotto locale distribuito, gestito e usato direttamente dal cliente. I dati di diagnostica e utilizzo raccolti da Configuration Manager vengono usati esclusivamente per migliorare l'esperienza, la qualità e la sicurezza di installazione delle versioni future.
 
 Per altre informazioni, vedere [Dati di diagnostica e di utilizzo per System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md). 
 

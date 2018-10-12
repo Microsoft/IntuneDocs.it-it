@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
+ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40251929"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47229076"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti aziendali
 
@@ -48,7 +48,7 @@ Nel riquadro Risoluzione dei problemi scegliere **Selezionare l'utente** per vis
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel riquadro **Intune** scegliere **Risoluzione dei problemi**.
 4. Fare clic su **Seleziona** per selezionare un utente per risolvere i problemi.
-5. Selezionare un utente digitando il nome o l'indirizzo di posta elettronica. Fare clic su **Seleziona**. Le informazioni di risoluzione dei problemi per l'utente vengono visualizzate nel riquadro Risoluzione dei problemi. Le tabelle seguenti descrivono tali informazioni.
+5. Selezionare un utente digitando il nome o l'indirizzo di posta elettronica. Fare clic su **Seleziona**. Le informazioni di risoluzione dei problemi per l'utente vengono visualizzate nel riquadro Risoluzione dei problemi. La tabella seguente descrive tali informazioni.
 
 > [!Note]  
 > È anche possibile accedere al riquadro **Risoluzione dei problemi** digitando nel browser l'indirizzo seguente: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
@@ -64,16 +64,18 @@ Nel riquadro Risoluzione dei problemi scegliere **Selezionare l'utente** per vis
 | 1.   | Stato dell'account  | Mostra lo stato del tenant di Intune corrente come **Attivo** o **Inattivo**.       |
 | 2.   | Selezione utente  | Nome dell'utente attualmente selezionato. Fare clic su **Cambia utente** per scegliere un nuovo utente.       |
 | 3.   | Stato utente  | Visualizza lo stato della licenza Intune dell'utente, il numero di dispositivi, la conformità di ciascun dispositivo, il numero di app e la conformità delle app.       |
-| 4.   | Informazioni utente  | Usare l'elenco per selezionare i dettagli da esaminare nel riquadro. <br>È possibile selezionare: <ul><li>App per dispositivi mobili<li>Criteri di protezione delle app<li>Criteri di conformità<li> Criteri di configurazione</ul>      |
+| 4.   | Informazioni utente  | Usare l'elenco per selezionare i dettagli da esaminare nel riquadro. <br>È possibile selezionare: <ul><li>App client<li>Criteri di conformità<li> Criteri di configurazione<li>Criteri di protezione delle app <li>Restrizioni di registrazione</ul>      |
 | 5.   | Appartenenza al gruppo  | Mostra i gruppi correnti di cui l'utente selezionato è membro.       |
 
-## <a name="mobile-apps-reference"></a>Riferimento per le app per dispositivi mobili
+## <a name="client-apps-reference"></a>Riferimento per le app client
 
-App in esecuzione nei dispositivi (o dispositivi di proprietà degli utenti) gestiti da Intune e Azure Active Directory (AD).
+Le app che eseguono dispositivi
+- gestiti da Intune e Azure Active Directory (AD) 
+- di proprietà di utenti gestiti da Intune e Azure Active Directory (AD).
 
 ### <a name="properties"></a>Proprietà
 
-Proprietà delle app per dispositivi mobili.
+Proprietà delle app client.
 
 | Proprietà      | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +93,7 @@ Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
 | Nome dispositivo        | Nome del tipo di dispositivo.                                                                                                     |
 | Gestito da         | Timestamp della modifica del criterio.                                                                                              |
 | Tipo di aggiunta ad Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
-| Proprietà          | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Proprietà          | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**).                                               |
 | Conforme con Intune   | Nome del tipo di dispositivo.                                                                                                     |
 | Conforme con Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
 | Sistema operativo                 | Sistema operativo installato nel dispositivo.                                                                                       |
@@ -100,20 +102,20 @@ Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
 
 ### <a name="app-protection-status"></a>Stato protezione app
 
-I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Ciò garantisce un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
 
 | Proprietà    | Descrizione                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Stato      | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Stato      | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**). |
 | Nome app    | Nome dell'applicazione.                                                           |
 | Nome dispositivo | Nome del tipo di dispositivo.                                                       |
 | Tipo di dispositivo | Nome del tipo di dispositivo.                                                       |
-| Criteri    | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Criteri    | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**). |
 | Ultima sincronizzazione   | Timestamp dell'ultima sincronizzazione del dispositivo con Intune.                   |
 
 ## <a name="app-protection-policies-reference"></a>Riferimento dei criteri di protezione app
 
-I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Ciò garantisce un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+Sono disponibili criteri di protezione delle app per dispositivi mobili che si integrano con le tecnologie EMS. Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
 
 ### <a name="properties"></a>Proprietà
 
@@ -123,7 +125,7 @@ La tabella riepiloga lo stato dei criteri di protezione app per i dispositivi ge
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Name        | Nome dell'applicazione.                                                                                                        |
 | Distribuito    | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
-| Piattaforma    | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Piattaforma    | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**).                                               |
 | Registrazione  | Nome del tipo di dispositivo.                                                                                                     |
 | Ultimo aggiornamento | Timestamp della modifica del criterio.                                                                                              |
 
@@ -136,7 +138,7 @@ Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
 | Nome periferica        | Nome del tipo di dispositivo.                                                                                                     |
 | Gestito da         | Timestamp della modifica del criterio.                                                                                              |
 | Tipo di aggiunta ad Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
-| Proprietà          | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Proprietà          | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**).                                               |
 | Conforme con Intune   | Nome del tipo di dispositivo.                                                                                                     |
 | Conforme con Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
 | Conforme con Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
@@ -157,7 +159,7 @@ Proprietà dei criteri di conformità.
 | Assegnazione    | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
 | Name          | Nome dell'applicazione.                                                                                                        |
 | Sistema operativo            | Sistema operativo installato nel dispositivo.                                                                                       |
-| Tipo di criteri   | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Tipo di criteri   | Il tipo di proprietà del dispositivo (**Società**, **Personale** e **Sconosciuto**).                                               |
 | Ultima modifica | Nome del tipo di dispositivo.                                                                                                     |
 
 ### <a name="devices"></a>Dispositivi
@@ -169,7 +171,7 @@ Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
 | Nome dispositivo        | Nome del tipo di dispositivo.                                                                                                     |
 | Gestito da         | Timestamp della modifica del criterio.                                                                                              |
 | Tipo di aggiunta ad Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
-| Proprietà          | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Proprietà          | Il tipo di proprietà del dispositivo (**Società**, **Personale** e **Sconosciuto**).                                               |
 | Conforme con Intune   | Nome del tipo di dispositivo.                                                                                                     |
 | Conforme con Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
 | Sistema operativo                 | Sistema operativo installato nel dispositivo.                                                                                       |
@@ -178,15 +180,15 @@ Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
 
 ### <a name="app-protection-policies"></a>Criteri di protezione delle app
 
-I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Ciò garantisce un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
 
 | Proprietà    | Descrizione                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Stato      | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Stato      | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**). |
 | Nome app    | Nome dell'applicazione.                                                           |
 | Nome dispositivo | Nome del tipo di dispositivo.                                                       |
 | Tipo di dispositivo | Nome del tipo di dispositivo.                                                       |
-| Criteri    | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Criteri    | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**). |
 | Ultima sincronizzazione   | Timestamp dell'ultima sincronizzazione del dispositivo con Intune.                   |
 
 ## <a name="configuration-policies-reference"></a>Riferimento dei criteri di configurazione
@@ -202,7 +204,7 @@ Proprietà dei criteri di configurazione.
 | Assegnazione    | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
 | Name          | Nome dell'applicazione.                                                                                                        |
 | Sistema operativo            | Sistema operativo installato nel dispositivo.                                                                                       |
-| Tipo di criteri   | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Tipo di criteri   | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**).                                               |
 | Ultima modifica | Nome del tipo di dispositivo.                                                                                                     |
 
 ### <a name="devices"></a>Dispositivi
@@ -214,7 +216,7 @@ Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
 | Nome dispositivo        | Nome del tipo di dispositivo.                                                                                                     |
 | Gestito da         | Timestamp della modifica del criterio.                                                                                              |
 | Tipo di aggiunta ad Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
-| Proprietà          | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**.                                               |
+| Proprietà          | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**).                                               |
 | Conforme con Intune   | Nome del tipo di dispositivo.                                                                                                     |
 | Conforme con Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
 | Sistema operativo                 | Sistema operativo installato nel dispositivo.                                                                                       |
@@ -224,16 +226,53 @@ Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
 
 ### <a name="app-protection-policies"></a>Criteri di protezione delle app
 
-I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Ciò garantisce un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
 
 | Proprietà    | Descrizione                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Stato      | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Stato      | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**). |
 | Nome app    | Nome dell'applicazione.                                                           |
 | Nome dispositivo | Nome del tipo di dispositivo.                                                       |
 | Tipo di dispositivo | Nome del tipo di dispositivo.                                                       |
-| Criteri    | Tipo di proprietà del dispositivo. Può essere **Società**, **Personale** o **Sconosciuto**. |
+| Criteri    | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**). |
 | Ultima sincronizzazione   | Timestamp dell'ultima sincronizzazione del dispositivo con Intune.                   |
+
+## <a name="enrollment-failure-reference"></a>Riferimento per gli errori di registrazione
+
+Nella tabella Errori di registrazione sono elencati i tentativi di registrazione non riusciti. Un dispositivo riportato nella tabella seguente potrebbe essere stato registrato successivamente durante un altro tentativo. Alcuni tentativi non riusciti potrebbero non essere presenti. Le informazioni di mitigazione non sono disponibili per tutti gli errori.
+
+| Colonna della tabella | Descrizione |
+|-------------|----------|
+| Avvio della registrazione | L'ora in cui l'utente ha iniziato la registrazione. |
+| Sistema operativo | Sistema operativo del dispositivo. |
+| Versione sistema operativo | Versione del sistema operativo del dispositivo. |
+| Operazioni non riuscite | Motivo dell'errore. |
+
+### <a name="failure-details"></a>Dettagli errore
+
+Quando si sceglie la riga di un errore, vengono forniti ulteriori dettagli.
+
+| Sezione | Descrizione |
+|-------------|----------|
+| Dettagli errore | Una spiegazione più dettagliata dell'errore. |
+| Possibili soluzioni | Passaggi consigliati per risolvere l'errore. Alcuni errori potrebbero non avere soluzione. |
+| Risorse (facoltative) | Collegamenti per altre informazioni o aree del portale in cui intervenire. |
+
+### <a name="enrollment-errors"></a>Errori di registrazione
+
+| Errore | Dettagli |
+|-------------|----------|
+| iOS Timeout or Failure (Timeout o errore iOS) | Si è verificato un timeout tra il dispositivo e Intune perché l'utente ha impiegato troppo tempo a completare la registrazione. |
+| L'utente non è stato trovato o non ha la licenza | L'utente non ha una licenza o è stato rimosso dal servizio. |
+| Il dispositivo è già registrato | Qualcuno ha tentato di registrare un dispositivo usando il Portale aziendale su un dispositivo che risulta ancora registrato da un altro utente. |
+| Nessun onboarding in Intune | È stata tentata una registrazione ma l'autorità di gestione dei dispositivi mobili (MDM) di Intune non era configurata. |
+| Enrollment authorization failed (Autorizzazione di registrazione non riuscita) | È stata tentata una registrazione utilizzando una versione precedente del portale aziendale. |
+| Dispositivo non supportato | Il dispositivo non soddisfa i requisiti minimi per la registrazione in Intune. |
+| Le restrizioni della registrazione non sono state rispettate | Questa registrazione è stata bloccata a causa di una restrizione di registrazione configurata dall'amministratore. |
+| Numero massimo dispositivi raggiunto | Questa registrazione è stata bloccata a causa di una restrizione del limite di dispositivi configurata dall'amministratore. |
+| Onboarding di Apple | La registrazione di tutti i dispositivi iOS è stata bloccata a causa di un certificato push MDM Apple mancante o scaduto in Intune. |
+| Il dispositivo non è preregistrato | Il dispositivo non è stato preregistrato come aziendale e tutte le registrazioni personali sono state bloccate da un amministratore. |
+| La funzionalità non è supportata | L'utente ha probabilmente tentato di eseguire la registrazione con un metodo non compatibile con la configurazione di Intune. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Raccogliere i dati disponibili dal dispositivo mobile
 

@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216259"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864609"
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS
 
@@ -84,7 +84,7 @@ Ad esempio, quando un utente si connette a uno di questi siti, il dispositivo iO
 > [!NOTE]
 > Questi URL devono essere nomi di dominio completi formattati in modo appropriato. Apple richiede che siano nel formato `http://<yourURL.domain>`
 
-I criteri di corrispondenza per gli URL devono iniziare con `http://` o `https://`. Viene eseguita una semplice corrispondenza di stringhe, quindi il prefisso URL `http://www.contoso.com/` non corrisponde a `http://www.contoso.com:80/`. Con iOS 9.0 o versioni successive, tuttavia, è possibile usare un singolo carattere jolly \* per specificare tutti i valori corrispondenti. Ad esempio, `http://*.contoso.com/` corrisponde sia a `http://store.contoso.com/` che a `http://www.contoso.com`.
+I criteri di corrispondenza per gli URL devono iniziare con `http://` o `https://`. Viene eseguita una semplice corrispondenza di stringhe, quindi il prefisso URL `http://www.contoso.com/` non corrisponde a `http://www.contoso.com:80/`. Con iOS 10.0 o versioni successive, tuttavia, è possibile usare un singolo carattere jolly \* per specificare tutti i valori corrispondenti. Ad esempio, `http://*.contoso.com/` corrisponde sia a `http://store.contoso.com/` che a `http://www.contoso.com`.
 I criteri `http://.com` e `https://.com` corrispondono rispettivamente a tutti gli URL HTTP e HTTPS.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>App che useranno l'accesso Single Sign-On

@@ -1,11 +1,11 @@
 ---
 title: Uso del dispositivo Windows con Intune | Documentazione Microsoft
-description: Elenco di collegamenti alle attività che gli utenti possono eseguire nel loro dispositivo Windows quando viene registrato in Intune
+description: Trovare i collegamenti per risolvere i problemi o gestire i dispositivi Windows dal Portale aziendale
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,36 +17,36 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 645e87ef731cf911824ab16673c01e962c91fb70
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4018c73c2160a3db5d5c8b8843e803b56f2caa3
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017258"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168965"
 ---
-# <a name="using-your-windows-device-with-intune"></a>Uso del dispositivo Windows con Intune
+# <a name="using-your-windows-device-with-intune-company-portal"></a>Uso del dispositivo Windows con il Portale aziendale di Intune
 
-Esistono una serie di operazioni che è possibile eseguire con Intune per agevolare il lavoro. L'elenco seguente include le operazioni più comuni che potrebbero essere richieste dalla propria azienda.
+Questo articolo elenca le attività e le informazioni del Portale aziendale specifiche per Windows. Usarlo per risolvere i problemi e gestire i dispositivi Windows. Fare clic sui collegamenti per visualizzare ulteriori dettagli, passaggi e schermate.  
 
 ## <a name="supported-versions"></a>Versioni supportate
 
-Attualmente Intune supporta le versioni seguenti di Windows.
+Attualmente il Portale aziendale supporta le versioni seguenti di Windows.
 
 * Windows 10 (versioni Home, Pro, Education, S e Enterprise)
 * Windows Phone 8.1 e versioni successive
 * Windows 8.1 RT
 * Windows 8.1
 
-Ci sono alcune altre versioni di Windows, come ad esempio [Windows 10 Holographic](https://www.microsoft.com/hololens), che sono supportate da Intune. Queste versioni non sono elencate qui perché sono destinate a usi molto specifici.
+Il Portale aziendale supporta anche altre versioni di Windows, come ad esempio [Windows 10 Holographic](https://www.microsoft.com/hololens). Queste versioni non sono prese in considerazione in questo articolo perché sono destinate a usi molto specifici.
 
-## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Registrazione in Intune e installazione del portale aziendale
+## <a name="enrolling-your-device-and-installing-the-company-portal"></a>Registrazione del dispositivo e installazione del Portale aziendale
 
 - [Registrare il dispositivo Windows in Intune](enroll-your-device-in-intune-windows.md)
 - [Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [Quali sono le informazioni visibili per l'azienda quando si registra il dispositivo in Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [Ripristinare (cancellare) un dispositivo smarrito o rubato](reset-erase-your-device-cpwebsite.md)
 
-## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>Operazioni che è possibile eseguire quando il dispositivo è registrato in Intune
+## <a name="things-you-can-do-after-your-device-is-enrolled-in-management"></a>Operazioni che è possibile eseguire quando il dispositivo è registrato nel servizio di gestione
 
 - [Crittografare il dispositivo](encrypt-your-device-windows.md)
 - [Impostare o modificare la password](set-or-change-your-password-windows.md)

@@ -15,12 +15,12 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fccfcbceecc9aa0667aa9fd6656c2fcc524d363
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 370b02d06276cefa21339d3617068d5777cb8668
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34569358"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168931"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Abilitare il connettore Mobile Threat Defense in Intune
 
@@ -31,13 +31,13 @@ Durante l'installazione di Mobile Threat Defense (MTD), sono stati configurati c
 
 ## <a name="to-enable-the-mtd-connector"></a>Per abilitare il connettore MTD
 
-1. Andare nel [portale di Azure](https://portal.azure.com) e accedere con le credenziali di Intune. Dopo l'accesso viene visualizzato il **dashboard di Azure**.
+1. Andare nel [portale di Azure](https://portal.azure.com) e accedere con le credenziali di Intune. Dopo aver completato l'accesso, viene visualizzato il **dashboard di Azure**.
 
-2. Nel **dashboard di Azure** scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+2. Nel **dashboard di Azure** scegliere **Tutti i servizi** dal menu di sinistra e digitare **Intune** nel filtro della casella di testo.
 
-3. Scegliere **Intune**. Si aprirà il **dashboard di Intune**.
+3. Scegliere **Intune**. Viene aperto il **dashboard di Intune**.
 
-4. Nel **dashboard di Intune** scegliere **Conformità del dispositivo** e quindi scegliere **Mobile Threat Defense** nella sezione **Installazione**.
+4. Nel **dashboard di Intune** scegliere **Conformità del dispositivo** e quindi **Mobile Threat Defense** nella sezione **Installazione**.
 
 5. Nel riquadro **Mobile Threat Defense** scegliere **Aggiungi**.
 
@@ -45,11 +45,11 @@ Durante l'installazione di Mobile Threat Defense (MTD), sono stati configurati c
 
     ![Configurazione di MTD nel portale di Intune di Azure](./media/enable-mtd-connector-1.png)
 
-7. Abilitare le opzioni con interruttore di attivazione/disattivazione in base ai requisiti dell'organizzazione.
+7. Abilitare le opzioni con interruttore di attivazione/disattivazione in base ai requisiti dell'organizzazione. Le opzioni di attivazione/disattivazione visibili variano a seconda del partner MTD.
 
 ## <a name="mtd-toggle-options"></a>Opzioni di attivazione/disattivazione di MTD
 
-È possibile decidere quali opzioni di attivazione/disattivazione di MTD è necessario abilitare in base ai requisiti dell'organizzazione. Ecco ulteriori dettagli:
+È possibile scegliere le opzioni di attivazione/disattivazione MTD da abilitare in base ai requisiti dell'organizzazione. Ecco ulteriori dettagli:
 
 - **Connetti dispositivi Android 4.1+ a [nome partner MTD] for Work MTD**: quando si abilita questa opzione è possibile fare in modo che i dispositivi Android 4.1+ segnalino i rischi di sicurezza in Intune.
     - **Contrassegna come non conforme se non vengono ricevuti dati**: se Intune non riceve dati su un dispositivo in questa piattaforma da un partner MTD, il dispositivo viene considerato non conforme.

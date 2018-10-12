@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 09/25/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 59cba4ead614fe0b5deac535efb9bcb303d5810d
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: ee14a7983451ae37113462e1c8f0aac5785f2f09
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253609"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187870"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quali sono i modi comuni per usare l'accesso condizionale con Intune?
 
@@ -45,6 +45,13 @@ I criteri di accesso condizionale basato su dispositivo per Exchange Online e gl
 -   Altre informazioni sulla [conformità dei dispositivi di Intune](device-compliance.md).
 
 -   Altre informazioni sulla [protezione di posta elettronica, Office 365 e altri servizi che usano l'accesso condizionale con Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+
+> [!NOTE]
+> Quando si abilita l'accesso in base al dispositivo per Sharepoint Online sui dispositivi Android, gli utenti devono abilitare l'opzione **Abilita l'accesso al browser nel dispositivo registrato** seguendo questa procedura:
+> 1. Avviare **l'app Portale aziendale**.
+> 2. Passare alla pagina **Impostazioni** facendo clic sui punti di sospensione (...) o sul tasto di menu.
+> 3. Scegliere il pulsante **Abilita l'accesso al browser** . 
+> 4. Nel browser Chrome disconnettersi da Office 365 e riavviare Chrome.
 
 ### <a name="conditional-access-for-exchange-on-premises"></a>Accesso condizionale per Exchange locale
 

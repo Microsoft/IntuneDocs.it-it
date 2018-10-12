@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 09/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,32 +13,45 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a233c62b76901d9bad00aa6d8b2a8a4dd45dea96
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 3bb891b2a602cde4510953ce00c4e206d1135fce
+ms.sourcegitcommit: a89af1f0dad61320ab3e31cb64708f14514a5081
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039302"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46300460"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Reimpostare o rimuovere il passcode di un dispositivo in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Per creare un nuovo passcode per un dispositivo, usare l'azione **Rimuovi il passcode**. Questa azione richiede la reimpostazione del PIN per il solo profilo di lavoro. Il ripristino del PIN del dispositivo non è supportato per i profili di lavoro Android.
+Questo documento illustra sia la reimpostazione del passcode a livello di dispositivo sia la reimpostazione del passcode del profilo di lavoro nei dispositivi Android Enterprise, denominati in precedenza Android for Work o AfW. È importante tenere presente questa distinzione, perché i requisiti per le due procedure possono variare. Una reimpostazione del passcode a livello di dispositivo reimposta il passcode per l'intero dispositivo. Una reimpostazione del passcode del profilo lavoro reimposta il passcode solo per il profilo di lavoro dell'utente nei dispositivi Android Enterprise.
 
-## <a name="work-profile-pin-reset-supported-platforms"></a>Piattaforme supportate per la reimpostazione del PIN del profilo di lavoro
+## <a name="supported-platforms-for-device-level-passcode-reset"></a>Piattaforme supportate per la reimpostazione del passcode a livello di dispositivo
 
-- Dispositivi Android registrati con un profilo di lavoro, versione 8.0 e successive 
-- Dispositivi Android versione 6.0 o precedenti
-- Dispositivi in modalità tutto schermo di Android Enterprise
-- iOS 
-     
-## <a name="unsupported-platforms"></a>Piattaforme non supportate
+| Piattaforma | Supportata |
+| ---- | ---- |
+| Dispositivi Android versione 6.x o precedenti | Sì |
+| Dispositivi aziendali Android in modalità tutto schermo | Sì |
+| Dispositivi iOS | Sì |
+| Dispositivi Android registrati con un profilo di lavoro, versione 7.0 o precedenti | No |
+| Dispositivi Android versione 7.0 o successive | No |
+| macOS | No |
+| Windows | No |
 
-- Dispositivi Android registrati con un profilo di lavoro, versione 7.0 e precedenti
-- Dispositivi Android versione 7.0 o successive
-- macOS
-- Windows
+Per i dispositivi Android, ciò significa che la reimpostazione del passcode a livello di dispositivo è supportata solo nei dispositivi che eseguono la versione 6.x o precedenti oppure nei dispositivi Android Enterprise in modalità tutto schermo. Questo avviene perché Google ha eliminato il supporto per la reimpostazione di passcode/password di un dispositivo Android 7 all'interno di app concesse da un amministratore di dispositivi e il vincolo si estende a tutti i fornitori di software MDM.
+
+## <a name="supported-platforms-for-android-enterprise-work-profile-passcode-reset"></a>Piattaforme supportate per la reimpostazione del passcode del profilo di lavoro di Android Enterprise
+
+| Piattaforma | Supportata |
+| ---- | ---- |
+| Dispositivi Android Enterprise registrati con un profilo di lavoro e che eseguono la versione 8.0 o successive | Sì |
+| Dispositivi Android Enterprise registrati con un profilo di lavoro e che eseguono la versione 7.x o precedenti | No |
+| Dispositivi Android che eseguono la versione 7.x o precedenti | No |
+| iOS | No |
+| macOS | No |
+| iOS | No |
+
+Per creare un nuovo passcode del profilo di lavoro, usare l'azione di Reimposta passcode. Questa azione richiede una reimpostazione del passcode e crea un nuovo passcode temporaneo riservato al profilo di lavoro. 
 
 ## <a name="reset-a-passcode"></a>Reimpostare un passcode
 
@@ -47,15 +60,16 @@ Per creare un nuovo passcode per un dispositivo, usare l'azione **Rimuovi il pas
 3. Selezionare **Dispositivi** e quindi selezionare **Tutti i dispositivi**.
 4. Nell'elenco dei dispositivi gestiti selezionare un dispositivo e scegliere **...Altre informazioni**. Quindi scegliere l'azione remota del dispositivo **Rimuovi il passcode**.
 
-## <a name="resetting-android-work-profile-passcodes"></a>Reimpostazione dei passcode dei profili di lavoro Android
+## <a name="reset-android-work-profile-passcodes"></a>Reimpostare i passcode dei profili di lavoro Android
 
-I dispositivi con profili di lavoro Android supportati ricevono una nuova password per lo sblocco del profilo gestito o una richiesta di profilo gestito per l'utente finale. 
+I dispositivi Android Enterprise supportati registrati con un profilo di lavoro ricevono una nuova password per lo sblocco del profilo gestito o una richiesta di profilo gestito per l'utente finale.
 
-Per i dispositivi con profilo di lavoro Android 8.0, gli utenti finali ricevono una notifica per l'attivazione dei passcode reimpostati subito dopo il completamento della registrazione. La notifica viene visualizzata se la password di un profilo di lavoro è necessaria e impostata. Dopo l'immissione del passcode, la notifica viene chiusa.
+Nei dispositivi Android Enterprise che eseguono la versione 8. x o successive, e registrati con un profilo di lavoro, gli utenti finali vengono avvisati di attivare la reimpostazione del passcode non appena la registrazione viene completata. La notifica viene visualizzata se la password di un profilo di lavoro è necessaria e impostata. Dopo l'immissione del passcode, la notifica viene chiusa.
 
-## <a name="resetting-ios-passcodes"></a>Reimpostazione dei passcode iOS
 
-I passcode vengono rimossi dai dispositivi iOS. Se è impostato un criterio di conformità passcode, il dispositivo richiede all'utente di definire un nuovo passcode nelle impostazioni. 
+## <a name="remove-ios-passcodes"></a>Rimuovere i passcode iOS
+
+Anziché reimpostati, i passcode vengono rimossi dai dispositivi iOS. Se è impostato un criterio di conformità passcode, il dispositivo richiede all'utente di definire un nuovo passcode nelle impostazioni.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

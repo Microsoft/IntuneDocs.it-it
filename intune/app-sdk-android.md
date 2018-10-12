@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c26d9914173c07096caad428afcbd9174625ef7
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: ca1f34f6a0db6db26f03f62dba69c4cd708b9d65
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031304"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028767"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guida a Microsoft Intune App SDK per sviluppatori di Android
 
@@ -475,8 +475,9 @@ Nel portale di Azure:
 7.  Selezionare **Microsoft Mobile Application Management** nell'elenco delle API e fare clic su Seleziona.
 8.  Selezionare **Read and Write the User’s App Management Data** (Leggere e scrivere i dati di gestione delle app dell'utente).
 9.  Fare clic su **Fine**.
+10. Fare clic su **Concedi autorizzazioni** e su **Sì**. 
 
-Vedere [qui](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) per informazioni sulla registrazione di un'applicazione con Azure AD. 
+Vedere [qui](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) per informazioni sulla registrazione di un'applicazione con Azure AD. 
 
 Vedere anche i requisiti per l'[Accesso condizionale](#conditional-access) di seguito.
 
@@ -1431,7 +1432,7 @@ Di seguito è riportato materiale sussidiario per la richiesta di un prompt uten
 > Uno dei vantaggi della **registrazione predefinita** è il metodo semplificato per ottenere i criteri dal servizio APP-WE per un'app presente nel dispositivo.
 
 ### <a name="general-requirements"></a>Requisiti generali
-* Verificare che l'app sia registrata con il servizio Gestione di applicazioni mobili di Intune seguendo i passaggi descritti in [configurazioni comuni ADAL #2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations).
+* Verificare che l'app sia registrata con il servizio Gestione di applicazioni mobili di Intune seguendo i passaggi descritti in [configurazioni comuni ADAL #2](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations).
 
 ### <a name="working-with-the-intune-sdk"></a>Uso di Intune SDK
 Queste istruzioni sono specifiche per tutti gli sviluppatori di app Android e Xamarin che desiderano richiedere i criteri di protezione delle app Intune per l'uso nelle app nel dispositivo di un utente finale.

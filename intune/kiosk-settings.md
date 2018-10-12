@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481122"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562868"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Impostazioni relative alla modalità tutto schermo per Windows 10 e versioni successive in Intune
 
@@ -45,7 +45,7 @@ I profili di modalità tutto schermo vengono usati per configurare i dispositivi
 #### <a name="single-full-screen-app-kiosks"></a>App singola per chioschi multimediali a schermo intero
 Immettere le impostazioni seguenti:
 
-- **Identificatore dell'app UWP (Universal Windows Platform)**: Immettere l'**ID modello utente applicazione (AUMID, Application User Model ID)** dell'app in modalità tutto schermo. Oppure selezionare un'app gestita esistente aggiunta tramite [App per dispositivi mobili](apps-add.md).
+- **Identificatore dell'app UWP (Universal Windows Platform)**: Immettere l'**ID modello utente applicazione (AUMID, Application User Model ID)** dell'app in modalità tutto schermo. Oppure selezionare un'app gestita esistente aggiunta tramite [App client](apps-add.md).
 
     Vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata).
 
@@ -62,7 +62,7 @@ In [Più app in modalità tutto schermo](https://docs.microsoft.com/windows/conf
 Immettere le impostazioni seguenti:
 
 - **Aggiungi un'app di Win32**: un'app Win32 è un'app desktop tradizionale. Compilare i campi **Nome dell'app** e **Identificatore**. Il campo **Identificatore** deve contenere il nome del percorso completo del file eseguibile, relativo al dispositivo.
-- **Aggiungi app gestite**: selezionare un'app gestita esistente aggiunta tramite [App per dispositivi mobili in Intune](apps-add.md).
+- **Aggiungi app gestite**: selezionare un'app gestita esistente aggiunta tramite [App client in Intune](apps-add.md).
 - **Aggiungi un'app in base all'ID modello utente applicazione**: immettere l'[ID modello utente dell'applicazione](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (app UWP).
 - **Barra delle applicazioni**: scegliere di **abilitare** (visualizzare) la barra delle applicazioni o di mantenerlo **non configurata** (nascosta) nel chiosco multimediale.
 - **Layout del menu Start**: immettere un file XML che descrive come le app vengono visualizzate nel menu Start, incluso il relativo ordine. Leggere [Personalizzare ed esportare il layout della schermata Start](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) per conoscere alcune linee guida e XML di esempio.
@@ -75,7 +75,7 @@ Immettere le impostazioni seguenti:
 
 ## <a name="kiosk-web-browser-settings"></a>Impostazioni del Web browser in modalità tutto schermo
 
-Queste impostazioni controllano un'app Web browser in modalità tutto schermo. Assicurarsi di avere distribuito un'app Web browser ai dispositivi in modalità tutto schermo usando [App per dispositivi mobili](apps-add.md).
+Queste impostazioni controllano un'app Web browser in modalità tutto schermo. Assicurarsi di avere distribuito un'app Web browser ai dispositivi in modalità tutto schermo usando [App client](apps-add.md).
 
 1. Immettere le impostazioni seguenti:
 
@@ -115,7 +115,7 @@ Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app c
 
 Immettere le impostazioni seguenti:
 
-- **Aggiungi app gestite**: selezionare un'app gestita esistente aggiunta tramite [App per dispositivi mobili in Intune](apps-add.md).
+- **Aggiungi app gestite**: selezionare un'app gestita esistente aggiunta tramite [App client in Intune](apps-add.md).
 - **Aggiungi un'app in base all'ID modello utente applicazione**: immettere l'[ID modello utente dell'applicazione](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (app UWP).
 - **Layout del menu Start**: immettere un file XML che descrive come le app vengono visualizzate nel menu Start, incluso il relativo ordine. [Personalizzare ed esportare il layout della schermata Start](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) offre alcune indicazioni e include un file XML specifico per i dispositivi Windows Holographic for Business.
 - **Tipo di account utente**: aggiungere uno o più account utente autorizzati a usare le app aggiunte. Le opzioni supportate includono: 

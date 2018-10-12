@@ -3,9 +3,9 @@ title: Guida per gli sviluppatori di Microsoft Intune App SDK per iOS
 description: Microsoft Intune App SDK per iOS consente di integrare i criteri di protezione delle app di Intune, noti anche come criteri APP o MAM, nell'app iOS nativa.
 keywords: ''
 author: Erikre
-manager: dougeby
 ms.author: erikre
-ms.date: 06/22/2018
+manager: dougeby
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: ab88c99694df95eeaf4b5529faec73dacd1a208c
-ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
+ms.openlocfilehash: 77f6391637b8d6f8f2ed47dd84885c11b8b6f476
+ms.sourcegitcommit: 60297a41a91d32f9a162e01f8aafc9b8369b7b3d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241882"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46466779"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guida per gli sviluppatori di Microsoft Intune App SDK per iOS
 
@@ -32,7 +32,7 @@ Microsoft Intune App SDK per iOS consente di integrare i criteri di protezione d
 
 * È necessario un computer Mac OS che esegua OS X 10.8.5 o versione successiva e in cui sia installato Xcode 9 o versione successiva.
 
-* L'app deve essere destinata a iOS 9.3.5 o versione successiva.
+* L'app deve essere destinata a iOS 10 o versione successiva.
 
 * Rivedere le [Condizioni di licenza di Intune App SDK per iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Stampare e conservare una copia delle condizioni di licenza. Scaricando e usando Intune App SDK per iOS, l'utente accetta tali condizioni di licenza.  Se non vengono accettate, non usare il software.
 
@@ -40,13 +40,13 @@ Microsoft Intune App SDK per iOS consente di integrare i criteri di protezione d
 
 ## <a name="whats-in-the-sdk"></a>Contenuto dell'SDK
 
-Intune App SDK per iOS include una libreria statica, file di risorse, intestazioni API, un file con estensione plist di impostazioni di debug e uno strumento di configurazione. Le app per dispositivi mobili possono includere semplicemente i file di risorse e un collegamento statico alle librerie per l'applicazione della maggior parte dei criteri. Le funzionalità APP di Intune avanzate vengono applicate tramite API.
+Intune App SDK per iOS include una libreria statica, file di risorse, intestazioni API, un file con estensione plist di impostazioni di debug e uno strumento di configurazione. Per l'applicazione della maggior parte dei criteri, le app client possono includere semplicemente i file di risorse e un collegamento statico alle librerie. Le funzionalità APP di Intune avanzate vengono applicate tramite API.
 
 Questa guida illustra l'uso dei componenti seguenti di Intune App SDK per iOS:
 
-* **libIntuneMAM.a**: libreria statica di Intune App SDK. Se l'app non usa le estensioni, collegare la libreria al progetto per abilitare l'app per la gestione delle applicazioni mobili di Intune.
+* **libIntuneMAM.a**: libreria statica di Intune App SDK. Se l'app non usa le estensioni, collegare la libreria al progetto per abilitare l'app per la gestione delle applicazioni client di Intune.
 
-* **IntuneMAM.framework**: framework di Intune App SDK. Collegare questo framework al progetto per abilitare l'app per la gestione delle applicazioni mobili di Intune. Usare il framework anziché la libreria statica se l'app usa estensioni, in modo che il progetto non crei più copie della libreria statica.
+* **IntuneMAM.framework**: framework di Intune App SDK. Collegare questo framework al progetto per abilitare l'app per la gestione delle applicazioni client di Intune. Usare il framework anziché la libreria statica se l'app usa estensioni, in modo che il progetto non crei più copie della libreria statica.
 
 * **IntuneMAMResources.bundle**: bundle di risorse contenente le risorse usate dall'SDK.
 

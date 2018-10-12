@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 3f72747b1a30494304521b23054533b9f360b2fc
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329546"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562749"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Come cancellare solo i dati aziendali dalle app gestite da Intune
 
@@ -44,7 +44,7 @@ Per rimuovere selettivamente i dati delle app aziendali, creare una richiesta di
 
     ![Screenshot del riquadro di Microsoft Intune](./media/apps-selective-wipe01.png)
 
-3.  Nel **riquadro App per dispositivi mobili** scegliere **Cancellazione selettiva di app**.
+3.  Nel **riquadro app client** scegliere **Cancellazione selettiva di app**.
 
 4.  Scegliere **Nuova richiesta di cancellazione dati**. Si apre il riquadro **Nuova richiesta di cancellazione dati**.
 
@@ -62,7 +62,7 @@ Il servizio crea e tiene traccia di una richiesta di cancellazione dati separata
 
 È possibile avere un report di riepilogo che mostra lo stato generale della richiesta di cancellazione dati e indica il numero di richieste in sospeso ed errori. Per ottenere ulteriori dettagli, seguire questa procedura:
 
-1.  Nel riquadro **App per dispositivi mobili - Cancellazione selettiva di app** è possibile visualizzare l'elenco delle richieste raggruppate in base agli utenti. Dal momento che il sistema crea una richiesta di cancellazione dati per ciascuna applicazione protetta in esecuzione nel dispositivo, è possibile visualizzare più richieste per un utente. Lo stato indica se una richiesta di cancellazione dati è **in sospeso**, **non riuscita** o **completata**.
+1.  Nel riquadro **App client - Cancellazione selettiva di app** è possibile visualizzare l'elenco delle richieste raggruppate in base agli utenti. Dal momento che il sistema crea una richiesta di cancellazione dati per ciascuna applicazione protetta in esecuzione nel dispositivo, è possibile visualizzare più richieste per un utente. Lo stato indica se una richiesta di cancellazione dati è **in sospeso**, **non riuscita** o **completata**.
 
     ![Screenshot dello stato della richiesta di cancellazione dati nel pannello Cancellazione selettiva di app](./media/wipe-request-status-1.png)
 
@@ -75,7 +75,7 @@ Sarà anche possibile visualizzare il nome e il tipo del dispositivo, utili dura
 
 Le cancellazioni dati con stato in sospeso rimangono visualizzate fino all'eliminazione manuale. Per eliminare manualmente una richiesta di cancellazione dati:
 
-1.  Nel riquadro **App per dispositivi mobili - Cancellazione selettiva di app**.
+1.  Nel riquadro **App client - Cancellazione selettiva di app**.
 
 2.  Nell'elenco fare clic con il pulsante destro del mouse sulla richiesta di cancellazione dati da eliminare e quindi scegliere **Elimina richiesta di cancellazione dati**.
 

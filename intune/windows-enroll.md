@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 09/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02cc111f8991a855db4f05360e54598af511f28f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 31c3e7b6d255cd99efee134f0276fd4d15dab6b9
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223493"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403562"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurare la registrazione dei dispositivi Windows
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Questo argomento offre agli amministratori IT informazioni utili per semplificare la registrazione di Windows per gli utenti. Dopo aver [configurato Intune](setup-steps.md) gli utenti registrano i dispositivi Windows [accedendo](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) con l'account aziendale o dell'istituto di istruzione.  
+Questo articolo offre agli amministratori IT informazioni utili per semplificare la registrazione dei dispositivi Windows per gli utenti. Dopo aver [configurato Intune](setup-steps.md) gli utenti registrano i dispositivi Windows [accedendo](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) con l'account aziendale o dell'istituto di istruzione.  
 
 L'amministratore di Intune può semplificare la registrazione nei modi seguenti:
 - [Abilitare la registrazione automatica](#enable-windows-10-automatic-enrollment) (richiede Azure AD Premium)
@@ -45,13 +45,14 @@ La semplificazione della registrazione dei dispositivi Windows dipende da due fa
 
 Le organizzazioni che possono usare la registrazione automatica possono anche configurare la [registrazione in blocco di dispositivi](windows-bulk-enroll.md) usando l'app Progettazione configurazione di Windows.
 
-**Supporto di più utenti**<br>
-I dispositivi, che hanno Windows 10 Creators Update e che sono aggiunti al dominio di Azure Active Directory, sono ora supportati per la gestione multiutente da Intune. Quando gli utenti standard accedono con le proprie credenziali di Azure AD ricevono le app e i criteri assegnati al nome utente. Gli utenti non possono attualmente usare il portale aziendale per scenari self-service, ad esempio l'installazione di app.
+## <a name="multi-user-support"></a>Supporto di più utenti
+
+Intune supporta la gestione multiutente per i dispositivi che eseguono Windows 10 Creators Update e sono aggiunti al dominio di Azure Active Directory. Quando gli utenti standard accedono con le proprie credenziali di Azure AD ricevono le app e i criteri assegnati al nome utente. Gli utenti non possono attualmente usare il Portale aziendale per scenari self-service, ad esempio l'installazione di app.
 
 [!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Semplificare la registrazione di Windows senza Azure AD Premium
-È possibile semplificare la registrazione per gli utenti creando un alias DNS (Domain Name Server), un tipo di record CNAME che reindirizza automaticamente le richieste di registrazione ai server di Intune. Se non si crea un record di risorse DNS CNAME, gli utenti che provano a connettersi a Intune devono immettere il nome del server Intune durante la registrazione.
+Per semplificare la registrazione, creare un alias DNS (Domain Name Server), un tipo di record CNAME che reindirizza le richieste di registrazione ai server di Intune. In caso contrario, gli utenti che tentano di connettersi a Intune devono immettere il nome del server Intune durante la registrazione.
 
 **Passaggio 1: Creare CNAME** (facoltativo)<br>
 Creare record di risorse DNS CNAME per il dominio aziendale. Ad esempio, se il sito Web della società è contoso.com, si creerà un record CNAME in DNS che reindirizzi EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
@@ -63,7 +64,13 @@ Anche se la creazione di record CNAME DNS è facoltativa, i record CNAME semplif
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 ora|
 |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 ora|
 
-Se si dispone di più suffissi UPN, è necessario creare un CNAME per ciascun nome di dominio e puntare ciascuno a EnterpriseEnrollment-s.manage.microsoft.com. Se gli utenti di Contoso usano name@contoso.com ma usano anche name@us.contoso.com e name@eu.constoso.com come indirizzo di posta elettronica/UPN, l'amministratore DNS Contoso dovrà creare i CNAME seguenti:
+Se l'azienda usa più suffissi UPN, è necessario creare un CNAME per ciascun nome di dominio e puntare ciascuno a EnterpriseEnrollment-s.manage.microsoft.com. Ad esempio, gli utenti di Contoso usano i formati seguenti come indirizzo di posta elettronica/UPN:
+
+- name@contoso.com
+- name@us.contoso.com
+- name@eu.constoso.com\
+
+L'amministratore DNS di Contoso deve creare i CNAME seguenti:
 
 |Tipo|Nome dell'host|Punta a|TTL|  
 |----------|---------------|---------------|---|
@@ -73,10 +80,11 @@ Se si dispone di più suffissi UPN, è necessario creare un CNAME per ciascun no
 
 `EnterpriseEnrollment-s.manage.microsoft.com`: supporta un reindirizzamento al servizio Intune con riconoscimento del dominio dal nome di dominio del messaggio di posta elettronica
 
-La propagazione delle modifiche ai record DNS potrebbe richiedere fino a 72 ore. È impossibile verificare la modifica DNS in Intune fino a quando il record DNS non sia stato propagato.
+La propagazione delle modifiche ai record DNS potrebbe richiedere fino a 72 ore. È impossibile verificare la modifica DNS in Intune fino a quando il record DNS non è stato propagato.
 
 **Passaggio 2: Verificare CNAME** (facoltativo)<br>
-Nel portale di Azure scegliere **Altri servizi** > **Monitoraggio e gestione** > **Intune**. Nel pannello Intune scegliere **Registra i dispositivi** > **Registrazione Windows**. Immettere l'URL del sito Web della società nella casella **Specificare un nome di dominio verificato** e quindi scegliere **Verifica il rilevamento automatico**.
+1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Convalida di CNAME**.
+2. Nella casella **Dominio**, immettere il sito Web aziendale e quindi scegliere **Test**.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Informare gli utenti sulla modalità di registrazione dei dispositivi Windows
 Informare gli utenti sulla modalità di registrazione dei dispositivi Windows e su cosa accade dopo il loro inserimento nella gestione.

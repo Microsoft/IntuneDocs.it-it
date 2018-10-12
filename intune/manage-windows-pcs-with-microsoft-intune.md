@@ -1,12 +1,11 @@
 ---
-title: Gestire i PC con il software client
-titlesuffix: Microsoft Intune
+title: Gestire i PC con il software client in Microsoft Intune - Azure | Microsoft Docs
 description: Gestire i PC Windows installando il software client di Intune.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +14,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41910625"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978247"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gestire i PC Windows come computer tramite il client software di Intune
 
@@ -57,6 +56,9 @@ Intune supporta la gestione di PC Windows come computer usando il client softwar
 |Autorizzazioni amministrative|L'account che installa il software client deve avere le autorizzazioni di amministratore locale per il dispositivo specificato.|
 |Windows Installer 3.1|Il computer deve avere almeno Windows Installer 3.1.<br /><br />Per visualizzare la versione di Windows Installer in un computer:<br /><br />  Nel PC fare clic con il pulsante destro del mouse su **%windir%\System32\msiexec.exe** e quindi scegliere **Proprietà**.<br /><br />È possibile scaricare la versione più recente di Windows Installer da [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) dal sito Web Microsoft Developer Network.|
 |Rimuovere il software client incompatibile|Prima di installare il software client di Intune, è necessario disinstallare dal PC eventuale software client di Configuration Manager, Operations Manager e Service Manager.|
+
+> [!WARNING]
+> Microsoft ha annunciato che il [supporto di Windows 7 terminerà il 14 gennaio 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). In questa data, terminerà anche il supporto di Intune per i dispositivi che eseguono Windows 7. Microsoft consiglia vivamente di passare a Windows 10 per impedire eventuali interruzioni di servizio o supporto. 
 
 ## <a name="deploying-the-intune-software-client"></a>Distribuzione del client software di Intune
 L'amministratore di Intune può rendere disponibile il client software di Intune agli utenti in diversi modi. Per ulteriori indicazioni, vedere [Installare il client software di Intune nei PC Windows](install-the-windows-pc-client-with-microsoft-intune.md).

@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 08/16/2018
+ms.date: 09/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 4189e9357c7ed135ab219b38f22d34a09ebb5318
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5acdcd0a8c2fcb906f0b40e2c1ab937559c7ae01
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253681"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727578"
 ---
 # <a name="what-are-app-protection-policies"></a>Che cosa sono i criteri di protezione delle app?
 
@@ -103,7 +103,7 @@ La soluzione MDM:
 
 -   Aiutano a proteggere i dati aziendali dalla divulgazione alle app e ai servizi consumer
 
--   Applicano restrizioni (salvataggio con nome, Appunti, PIN e così via) alle app per dispositivi mobili
+-   Applicano restrizioni (salvataggio con nome, appunti, PIN e così via) alle app client
 
 -   Cancellano i dati aziendali dalle app senza rimuoverle dal dispositivo
 
@@ -122,6 +122,18 @@ Esistono tuttavia alcune limitazioni da tenere in considerazione, ad esempio:
 -   Non è possibile eseguire il provisioning dei profili certificato in questi dispositivi.
 
 -   Non è possibile eseguire il provisioning delle impostazioni Wi-FI e VPN aziendali in questi dispositivi.
+
+## <a name="app-protection-global-policy"></a>Criteri globali per la protezione delle app
+
+Un amministratore di OneDrive che passa a **admin.office.com** e seleziona l'accesso **Dispositivo** avrà la possibilità di impostare i controlli **Gestione di applicazioni mobili** sulle app client di OneDrive e SharePoint. 
+
+Tali impostazioni, rese disponibili nella console di amministrazione di OneDrive, configurano uno speciale criterio di protezione delle app Intune denominato **globale**. Questo criterio globale è applicabile a tutti gli utenti del tenant e non è in grado di controllare la sua destinazione. 
+
+Una volta abilitato il criterio, le app OneDrive e SharePoint per iOS e Android saranno protette, per impostazione predefinita, con le impostazioni selezionate. Un professionista IT può modificare questo criterio nella console di Intune dopo la sua creazione e aggiungere più app di destinazione, oltre che modificare qualsiasi impostazione del criterio. 
+
+Per impostazione predefinita, può essere presente un solo criterio **globale** per ogni tenant. Le [API Graph di Intune](intune-graph-apis.md) possono essere utilizzate per creare criteri globali aggiuntivi per ogni tenant tuttavia, questa procedura non è consigliata. La creazione di criteri globali aggiuntivi non è consigliata perché la risoluzione dei problemi di implementazione di tali criteri può diventare complicata.
+
+Il criterio **globale** si applica a tutti gli utenti del tenant, ma qualsiasi criterio standard di protezione delle app di Intune sostituirà tali impostazioni.
 
 
 ## <a name="multi-identity"></a>Supporto per identità multiple

@@ -2,8 +2,8 @@
 title: Controllo degli accessi in base al ruolo con Microsoft Intune
 description: Informazioni su come il controllo degli accessi in base al ruolo (RBAC) consente di controllare gli utenti che possono eseguire le azioni e apportare modifiche in Microsoft Intune.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ad5bf36eeb81c5deabc2c3efd73cddcc3db8a70c
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5c75bd80e848bbd309051a9c6f3e149abd7a46ed
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253698"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028699"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune
 
@@ -42,6 +42,7 @@ A partire dal nuovo portale di Azure, **Azure Active Directory (Azure AD)** offr
 
     > [!IMPORTANT]
     > Il ruolo Amministratore del servizio Intune non offre la possibilità di gestire le impostazioni di accesso condizionale di Azure AD.
+    > I membri dei ruoli di Intune richiedono una licenza di Intune.
 
     > [!TIP]
     > Intune mostra inoltre tre estensioni di Azure AD, **Utenti**, **Gruppi** e **Accesso condizionale**, controllate tramite il controllo degli accessi in base al ruolo di Azure AD. Il ruolo **Amministratore account utente**, inoltre, consente di eseguire solo attività su utenti e gruppi di AAD e non dispone delle autorizzazioni complete per eseguire tutte le attività in Intune. Per altri dettagli, fare riferimento ad [Assegnazione dei ruoli di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).

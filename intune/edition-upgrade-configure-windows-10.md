@@ -1,36 +1,36 @@
 ---
-title: Aggiornare i dispositivi Windows 10 con Microsoft Intune - Azure | Microsoft Docs
-description: Creare un profilo dispositivo in Microsoft Intune per aggiornare i dispositivi Windows 10 a versioni più recenti. Vedere anche i percorsi di aggiornamento supportati per Windows 10 Pro, edizioni N, Education, Cloud, Enterprise, Core, Holographic e Mobile.
+title: Eseguire l'aggiornamento o usare la modalità S sui dispositivi Windows 10 con Microsoft Intune - Azure | Microsoft Docs
+description: Creare un profilo dispositivo in Microsoft Intune per aggiornare i dispositivi Windows 10 alle edizioni più recenti. Ad esempio, è possibile eseguire l'aggiornamento da Windows 10 Professional a Windows 10 Enterprise. Usando il profilo di configurazione è anche possibile attivare o disattivare la modalità S. Vedere anche i percorsi di aggiornamento supportati per Windows 10 Pro, edizioni N, Education, Cloud, Enterprise, Core, Holographic e Mobile.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: coryfe
+ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0e4ba42559a068ebefb453aba18060803dc36e0
+ms.sourcegitcommit: f3974c810e172f345853dacd7f2ca0abc11b1a5b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025434"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44389626"
 ---
-# <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Configurare il profilo di aggiornamento di Windows 10 in Intune
+# <a name="use-a-configuration-profile-to-upgrade-windows-10-or-switch-from-s-mode-in-intune"></a>Usare un profilo di configurazione per aggiornare Windows 10, o disattivare la modalità S in Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Configurare un profilo di aggiornamento in Intune per aggiornare automaticamente a un'altra edizione i dispositivi che eseguono Windows 10. Vedere anche i percorsi di aggiornamento supportati.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
-Prima di aggiornare i dispositivi alla versione più recente, è necessario disporre di uno degli elementi seguenti:
+Prima di aggiornare i dispositivi alla versione più recente, è necessario soddisfare i prerequisiti seguenti:
 
-- Un codice Product Key valido per installare la versione di Windows aggiornata in tutti i dispositivi da usare come destinazione dei criteri, ad esempio le edizioni Windows 10 Desktop. Si possono usare codici Multiple Activation Key (MAK) oppure del server di gestione delle chiavi o un file di licenza di Microsoft che contiene le informazioni sulle licenze per installare la versione aggiornata di Windows in tutti i dispositivi da usare come destinazione dei criteri, ad esempio per le edizioni Windows 10 Mobile e Windows 10 Holographic.
-- I dispositivi Windows 10 a cui vengono assegnati i criteri vengono registrati in Microsoft Intune. Non è possibile usare criteri di aggiornamento dell'edizione con PC che eseguono il software client per PC di Intune.
+- Un codice Product Key valido per installare la versione di Windows aggiornata in tutti i dispositivi da usare come destinazione dei criteri, ad esempio le edizioni Windows 10 Desktop. È possibile usare codici ad attivazione multipla o chiavi del server di gestione delle chiavi. Per le edizioni Windows 10 Mobile e Windows 10 Holographic si può usare un file di licenza di Microsoft che contiene le informazioni sulle licenze per installare la nuova versione di Windows in tutti i dispositivi da usare come destinazione dei criteri.
+- I dispositivi Windows 10 a cui vengono assegnati i criteri vengono registrati in Microsoft Intune. Non è possibile usare i criteri di aggiornamento dell'edizione con i PC che eseguono il software client per PC di Intune.
 
 ## <a name="supported-upgrade-paths"></a>Percorsi di aggiornamento supportati
 La tabella seguente riporta i percorsi di aggiornamento supportati per il profilo di aggiornamento di Windows 10.
@@ -121,25 +121,45 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 |Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Creare un profilo dispositivo contenente le impostazioni relative alle restrizioni del dispositivo
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-3. Selezionare **Configurazione del dispositivo**, selezionare **Profili** e quindi fare clic su **Crea profilo**.
-4. Immettere un **nome** e una **descrizione** per il profilo di aggiornamento dell'edizione.
-5. Dall'elenco a discesa **Piattaforma** scegliere **Windows 10 e versioni successive**.
-6. Dall'elenco a discesa **Tipo di profilo** scegliere **Aggiornamento edizione**.
-7. Nelle proprietà **Aggiornamento edizione** immettere le impostazioni seguenti:
-   - **Edizione a cui eseguire l'aggiornamento**: nell'elenco a discesa selezionare la versione di Windows 10 Desktop, Windows 10 Holographic o Windows 10 Mobile a cui si aggiornano i dispositivi specificati.
-   - **Codice Product Key**: immettere il codice Product Key ricevuto da Microsoft che può essere usato per aggiornare tutti i dispositivi Windows 10 Desktop di destinazione. 
-    Dopo aver creato un criterio che contiene un codice Product Key, la chiave non può essere aggiornata e viene nascosta per motivi di sicurezza. Per modificare il codice Product Key, immettere nuovamente l'intero codice.
-   - **File di licenza**: scegliere **Sfoglia** per selezionare il file di licenza ricevuto da Microsoft. Questo file di licenza contiene informazioni sulle licenze per l'edizione Windows Holographic o Windows 10 Mobile a cui si aggiornano i dispositivi specificati.
-8. Al termine, selezionare **Crea** per salvare le modifiche.
+## <a name="upgrade-the-edition"></a>Aggiornare l'edizione
+
+1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+3. Immettere un **Nome** e una **Descrizione** per il profilo. Ad esempio, immettere un nome come `Windows 10 edition upgrade`
+4. In **Piattaforma** selezionare **Windows 10 e versioni successive**.
+5. Per **Tipo di profilo** selezionare **Aggiornamento edizione**.
+6. Nelle proprietà **Aggiornamento edizione** immettere le impostazioni seguenti:
+
+   - **Edizione a cui eseguire l'aggiornamento**: selezionare l'edizione Windows 10 a cui si esegue l'aggiornamento. I dispositivi a cui è destinato questo criterio vengono aggiornati all'edizione che scelta.
+   - **Codice Product Key**: immettere il codice product key ricevuto da Microsoft. Dopo aver creato il criterio con il codice Product Key, la chiave non può essere aggiornata e viene nascosta per motivi di sicurezza. Per modificare il codice Product Key, immettere nuovamente l'intero codice.
+   - **File di licenza**: per l'edizione **Windows 10 Holographic for Business** o **Windows 10 Mobile**, scegliere **Sfoglia** per selezionare il file di licenza ricevuto da Microsoft. Il file di licenza include le informazioni di licenza delle edizioni a cui si stanno aggiornando i dispositivi specificati.
+
+7. Selezionare **OK** per salvare le modifiche. Selezionare **Crea** per creare il profilo.
+
+## <a name="switch-out-of-s-mode"></a>Disattivare la modalità S
+
+La [modalità S di Windows 10](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) è stata progettata per garantire sicurezza e prestazioni elevate. Se i propri dispositivi eseguono solo app di Microsoft Store, è possibile utilizzare la modalità S per garantire la loro protezione. Se i propri dispositivi richiedono app che non sono disponibili in Microsoft Store, disattivare la modalità S. La disattivazione della modalità S è irreversibile. Una volta disattivata, la modalità S non potrà più essere riattivata in Windows 10.
+
+I passaggi seguenti illustrano come creare un profilo che controlli la modalità S nei dispositivi di Windows 10 (1809 o versione successiva).
+
+1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+3. Immettere un **Nome** e una **Descrizione** per il profilo. Ad esempio, immettere un nome come `Windows 10 switch off S mode`
+4. In **Piattaforma** selezionare **Windows 10 e versioni successive**.
+5. Per **Tipo di profilo** selezionare **Aggiornamento edizione**.
+6. Selezionare **Cambio di modalità (Windows Insider)** e impostare la proprietà **Switch out of S mode** (Disattiva la modalità S). Le opzioni disponibili sono:
+
+    - **Nessuna configurazione**: un dispositivo in modalità S rimane in modalità S. Un utente finale può disattivare la modalità S sul dispositivo.
+    - **Mantieni in modalità S**: impedisce all'utente finale di poter disattivare la modalità S sul dispositivo.
+    - **Switch** (Cambia): disattiva la modalità S sul dispositivo.
+
+7. Selezionare **OK** per salvare le modifiche. Selezionare **Crea** per creare il profilo.
 
 Il profilo viene creato e visualizzato tra i profili.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
+[Assegnare questo profilo](device-profile-assign.md) ai gruppi.
 
 >[!NOTE]
->Se si rimuove l'assegnazione dei criteri in seguito, la versione di Windows nel dispositivo non viene ripristinata e continua a funzionare normalmente.
+>Se in seguito si rimuove l'assegnazione dei criteri, la versione di Windows nel dispositivo non viene ripristinata e continua a funzionare normalmente.

@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4714b0bbe566589d970a5d959f1f361940e5701b
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027469"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187836"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Riassegnare i criteri di accesso condizionale dal portale di Intune classico al portale di Azure
 
@@ -179,6 +179,9 @@ Se sono state configurate le impostazioni di Exchange ActiveSync come parte dei 
 12. Attivare l'opzione **Abilita criteri** nel pannello **Nuovo** dei criteri di accesso condizionale e quindi fare clic su **Crea**.
 
     ![Immagine del confronto dell'interfaccia utente per abilitare i criteri di accesso condizionale tra i portali di Intune e di Azure](./media/reassign-ca-17.png)
+
+> [!NOTE]
+> Se si configurano **Piattaforme del dispositivo**, quando si tenta di salvare i criteri verrà visualizzato l'errore "La configurazione dei criteri non è supportata". Exchange ActiveSync non riesce a identificare la piattaforma in uso dal dispositivo che esegue la connessione. Pertanto, la configurazione di piattaforme del dispositivo specifiche non è supportata per la creazione di criteri per i dispositivi Exchange ActiveSync.
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Disabilitare i criteri di accesso condizionale nel portale di Intune classico
 
