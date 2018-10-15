@@ -1,11 +1,11 @@
 ---
 title: Uso del dispositivo Android con Intune | Documentazione Microsoft
-description: Elenco di collegamenti alle attività che gli utenti finali possono eseguire nel loro dispositivo mobile Android quando viene registrato in Intune
+description: Elenco di collegamenti per la risoluzione dei problemi e la gestione dei dispositivi Android registrati in Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 347757a333bcfd8e649cb621f0a95c83f24cdc88
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 35c76db52db0f037427357eb5f3059a65908ae12
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018669"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168948"
 ---
-# <a name="using-your-android-device-with-intune"></a>Uso del dispositivo Android con Intune
+# <a name="using-your-android-device-with-intune-company-portal"></a>Uso del dispositivo Android con il Portale aziendale di Intune
 
-Esistono una serie di operazioni che è possibile eseguire con Intune per agevolare il lavoro. L'elenco seguente include le operazioni più comuni che potrebbero essere richieste dalla propria azienda.
+Questo articolo elenca le attività e le informazioni del Portale aziendale specifiche per Android. Usarlo per risolvere i problemi e gestire il dispositivo Android. Fare clic sui collegamenti per visualizzare ulteriori dettagli, passaggi e screenshot. 
 
 ## <a name="supported-versions"></a>Versioni supportate
 
-Attualmente Intune supporta Android 4.4 e versioni successive. Sono inclusi i dispositivi Samsung Knox 4.4 e versioni successive.
+Attualmente il Portale aziendale supporta Android 4.4 e versioni successive. È incluso anche il supporto per Samsung Knox 4.4 e versioni successive.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Registrazione in Intune e installazione del portale aziendale
 
