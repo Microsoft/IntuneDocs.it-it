@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/05/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f8b76de6e9b3a584be7ad324391c1c071140488e
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b348d785d12cd044b12dca4cad9d2daaa1baedf4
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329445"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903440"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Assegnare Office 365 a dispositivi macOS con Microsoft Intune
 
@@ -46,7 +46,7 @@ Aggiungere Office 365 dal riquadro **App**.
 6. Nell'elenco **Tipo di app** selezionare **macOS** nel gruppo **Office 365 Suite**.
 7. Per ottenere informazioni sulla suite di app, selezionare **Informazioni sulla suite di app**.  
     Queste informazioni consentono di identificare la suite di app in Intune e semplificano la ricerca della suite di app da parte degli utenti nel portale aziendale.
-8. Immettere le seguenti informazioni:
+8. Immettere le informazioni seguenti:
     - **Nome della suite**: immettere il nome della suite di app visualizzato nel portale aziendale. Verificare che tutti i nomi di suite usati siano univoci. Se il nome di una suite viene usato due volte, solo una delle due suite viene visualizzata dagli utenti nel portale aziendale.
     - **Descrizione della suite**: immettere una descrizione per la suite di app.
     - **Editore**: Microsoft viene visualizzato come editore.
