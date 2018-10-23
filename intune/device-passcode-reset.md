@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb891b2a602cde4510953ce00c4e206d1135fce
-ms.sourcegitcommit: a89af1f0dad61320ab3e31cb64708f14514a5081
+ms.openlocfilehash: 83a231f41f5cf9d4488e86040c2d7e141f71d0a7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46300460"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424918"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Reimpostare o rimuovere il passcode di un dispositivo in Intune
 
@@ -49,7 +49,6 @@ Per i dispositivi Android, ciò significa che la reimpostazione del passcode a l
 | Dispositivi Android che eseguono la versione 7.x o precedenti | No |
 | iOS | No |
 | macOS | No |
-| iOS | No |
 
 Per creare un nuovo passcode del profilo di lavoro, usare l'azione di Reimposta passcode. Questa azione richiede una reimpostazione del passcode e crea un nuovo passcode temporaneo riservato al profilo di lavoro. 
 

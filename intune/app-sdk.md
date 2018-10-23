@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 55df1b152ee32456d577afacedd034583e591e3e
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: fc49d7ba7cdc5b986c06f8a84ececc8339a812a2
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058719"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425105"
 ---
 # <a name="intune-app-sdk-overview"></a>Panoramica di Intune App SDK
 Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di protezione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. La maggior parte delle funzionalità dell'SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che ne richiedono la partecipazione.
@@ -44,7 +44,7 @@ Gli amministratori IT possono applicare un criterio che assicura che i dati salv
 Gli amministratori IT possono cancellare i dati aziendali da remoto mediante un'app gestita da Intune. Questa funzionalità è basata sull'identità ed elimina solo i file associati all'identità aziendale dell'utente finale. A questo scopo, la funzionalità richiede la partecipazione dell'app. L'app può specificare l'identità per cui è necessario cancellare i dati sulla base delle impostazioni utente. Se nell'applicazione non sono presenti queste impostazioni utente specifiche, il comportamento predefinito prevede la cancellazione della directory dell'applicazione e l'invio di una notifica all'utente finale relativa alla rimozione dell'accesso.
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>Imporre l'uso di un browser gestito
-Gli amministratori IT possono imporre l'apertura dei collegamenti Web nell'app con l'[app Intune Managed Browser](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). Questa funzionalità garantisce che i collegamenti visualizzati in un ambiente aziendale si trovino all'interno del dominio delle app gestite da Intune.
+Gli amministratori IT possono imporre l'apertura dei collegamenti Web nell'app con l'[app Intune Managed Browser](app-configuration-managed-browser.md). Questa funzionalità garantisce che i collegamenti visualizzati in un ambiente aziendale si trovino all'interno del dominio delle app gestite da Intune.
 
 ### <a name="enforce-a-pin-policy"></a>Applicare un criterio PIN
 Gli amministratori IT possono richiedere all'utente finale di immettere un PIN prima di accedere ai dati aziendali nell'app. In questo modo, si garantisce che la persona che usa l'app sia la stessa che inizialmente ha eseguito l'accesso con un account aziendale o dell'istituto di istruzione. Quando gli utenti finali configurano il PIN, Intune App SDK usa Azure Active Directory per verificare le credenziali degli utenti finali rispetto all'account di Intune registrato.
