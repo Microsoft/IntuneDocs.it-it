@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f0680f601d59695828355496ef7b817335dc0d4
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ac8b70cd370d0c22a615d0d0bdc215cb3a332520
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827973"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425173"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Impostazioni dei criteri di protezione delle app per iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -78,7 +78,7 @@ Esistono alcune app e servizi della piattaforma esenti, per i quali in determina
 | **Richiedi una versione minima dell'SDK dei criteri di protezione app di Intune** | Selezionare **Sì** per richiedere una versione minima dell'SDK dei criteri di protezione delle app di Intune per l'app da usare. All'utente viene impedito l'accesso se la versione dell'SDK dei criteri di protezione delle app di Intune dell'app non soddisfa il requisito. <br> <br> Per altre informazioni sull'SDK dei criteri di protezione delle app di Intune, vedere [Panoramica di Intune App SDK](app-sdk.md). <br><br> Il formato di questa impostazione dei criteri supporta principale.secondaria, principale.secondaria.build, principale.secondaria.build.revisione. <br><br> ***Nota:** è necessario che l'app disponga di Intune SDK versione 7.0.1 o versione successiva.* <br><br>  Valore predefinito = **No** |
 
 > [!NOTE]
-> Per altre informazioni sul funzionamento in iOS di più impostazioni di protezione app di Intune, configurate nella sezione Accesso, per lo stesso set di app e di utenti, vedere [Domande frequenti sulla gestione di applicazioni mobili di Intune](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios) e [Cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Intune](app-protection-policies-access-actions.md).
+> Per altre informazioni sul funzionamento in iOS di più impostazioni di protezione app di Intune, configurate nella sezione Accesso, per lo stesso set di app e di utenti, vedere [Domande frequenti sulla gestione di applicazioni mobili di Intune](https://docs.microsoft.com/intune/mam-faq#app-experience-on-ios) e [Cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Intune](app-protection-policies-access-actions.md).
 
 ##  <a name="add-ins-for-outlook-app"></a>Componenti aggiuntivi per l'app Outlook
 
@@ -117,9 +117,9 @@ Se un utente autorizza la condivisione dei dati tra gli account, come accade per
 
 |Autorizzazioni per Microsoft Graph  |Descrizione  |
 |---------|---------|
-|Autorizzazioni di lettura per [Persone](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference#people-permissions)     |Consente all'app di leggere un elenco con punteggio delle persone rilevanti per l'utente connesso. L'elenco può includere contatti locali, i contatti dei social network o della directory dell'organizzazione e persone con cui si è comunicato di recente, ad esempio tramite posta elettronica o Skype.         |
-|Autorizzazioni di lettura per [Calendari](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23calendars-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378331622%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=fABkrlIxqggnB%2Bc%2BR%2BbFpuenhSg7OHfBhWcbv3ahmAU%3D&reserved=0)     |Consente all'app di leggere gli eventi nei calendari dell'utente. Include le riunioni nei calendari degli utenti connessi, gli orari, i luoghi e i partecipanti.         |
-|Autorizzazioni di lettura per [Profilo utente](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdeveloper.microsoft.com%2Fen-us%2Fgraph%2Fdocs%2Fconcepts%2Fpermissions_reference%23user-permissions&data=04%7C01%7CCem.Aykan%40microsoft.com%7C59705402acc347cdf0d908d5b1d82d53%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636610464378341626%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwifQ%3D%3D%7C-1&sdata=RcnVIpntjyR4TXafOYTV0SffZuZWpshQQWY0e2VkkXg%3D&reserved=0)     |Consente agli utenti di accedere all'app e a quest'ultima di leggere il profilo degli utenti connessi. Consente inoltre all'app di leggere informazioni di base aziendali per gli utenti connessi.         |
+|Autorizzazioni di lettura per [Persone](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)     |Consente all'app di leggere un elenco con punteggio delle persone rilevanti per l'utente connesso. L'elenco può includere contatti locali, i contatti dei social network o della directory dell'organizzazione e persone con cui si è comunicato di recente, ad esempio tramite posta elettronica o Skype.         |
+|Autorizzazioni di lettura per [Calendari](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions)     |Consente all'app di leggere gli eventi nei calendari dell'utente. Include le riunioni nei calendari degli utenti connessi, gli orari, i luoghi e i partecipanti.         |
+|Autorizzazioni di lettura per [Profilo utente](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions)     |Consente agli utenti di accedere all'app e a quest'ultima di leggere il profilo degli utenti connessi. Consente inoltre all'app di leggere informazioni di base aziendali per gli utenti connessi.         |
 |Subscriptions     |Questo ambito non è disponibile e non è ancora in uso. Include le sottoscrizioni alle app e ai servizi Microsoft, ad esempio Office 365, offerte dall'organizzazione dell'utente.         |
 |Informazioni dettagliate     |Questo ambito non è disponibile e non è ancora in uso. Include gli interessi associati all'account dell'utente connesso in base al suo utilizzo dei servizi Microsoft.         |
 
@@ -127,6 +127,6 @@ Se un utente autorizza la condivisione dei dati tra gli account, come accade per
 
 - Altre informazioni su [LinkedIn information and features in your Microsoft apps](https://go.microsoft.com/fwlink/?linkid=850740) (Informazioni e funzionalità di LinkedIn nelle app Microsoft).
 - Informazioni sul rilascio delle connessioni all'account LinkedIn nella pagina [Roadmap di Office 365](https://products.office.com/en-US/business/office-365-roadmap?filters=%26freeformsearch=linkedin#abc). 
-- Informazioni su [Configuring LinkedIn account connections](https://docs.microsoft.com/en-us/azure/active-directory/linkedin-integration) (Configurazione delle connessioni all'account LinkedIn).
+- Informazioni su [Configuring LinkedIn account connections](https://docs.microsoft.com/azure/active-directory/linkedin-integration) (Configurazione delle connessioni all'account LinkedIn).
 - Per ulteriori informazioni sui dati condivisi tra l'account LinkedIn e l'account Microsoft aziendale o dell'istituto di istruzione, vedere [LinkedIn in Microsoft applications at your work or school](https://www.linkedin.com/help/linkedin/answer/84077) (LinkedIn nelle app Microsoft aziendali o dell'istituto di istruzione).
 

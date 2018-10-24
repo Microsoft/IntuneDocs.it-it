@@ -15,19 +15,16 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4c41d3a4cdfada81b91a3dffeffdfe15e8a470f
-ms.sourcegitcommit: 17094728cfd9eb3f77ca39745fdcde9be0a8dda1
+ms.openlocfilehash: 3b0da7cf77fd7c1b977fcd2ddb86b95eff8804f8
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48812822"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425003"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Imporre la conformità nei computer Mac gestiti con Jamf Pro
 
-|Si applica a: Intune nel Portale di Azure |
-|--|
-|Serve documentazione su Intune nel portale classico? [Fare clic qui](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
+Si applica a: Intune nel Portale di Azure
 
 È possibile usare Azure Active Directory e i criteri di accesso condizionale di Microsoft Intune per verificare che gli utenti finali siano conformi ai requisiti dell'organizzazione. È possibile applicare questi criteri anche a computer Mac [gestiti con Jamf Pro](conditional-access-integrate-jamf.md). A questo scopo, è necessario l'accesso a entrambe le console di Intune e Jamf Pro.
 

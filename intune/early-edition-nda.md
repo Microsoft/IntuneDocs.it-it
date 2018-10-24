@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e37a45122ab4950e2a85cc1c6f6696759d429a3f
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 72585982cd27962981f581a99f0ea361642df0ee
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652139"
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2018"></a>Edizione anticipata per Microsoft Intune - Ottobre 2018
 
@@ -44,9 +44,6 @@ Questa pagina viene aggiornata periodicamente. Consultarla a intervalli regolari
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Usare le impostazioni consigliate da Microsoft con le baseline di sicurezza <!-- 2055484 -->
 Intune si integra con altri servizi specifici per la sicurezza, inclusi Windows Defender ATP e Office 365 ATP. I clienti manifestano l'esigenza di una strategia comune e di un set integrato di flussi di lavoro di sicurezza end-to-end nei servizi di Microsoft 365. L'obiettivo è l'allineamento delle strategie per creare soluzioni in grado di conciliare le operazioni di sicurezza e le comuni attività degli amministratori. Per realizzare questo obiettivo in Intune, è stato pubblicato un set di "baseline di sicurezza" consigliate da Microsoft (**Intune** > **Baseline di sicurezza**).  Un amministratore potrà creare criteri di sicurezza direttamente da queste baseline e quindi distribuirle agli utenti. Può anche personalizzare le indicazioni sulle procedure consigliate per soddisfare le esigenze dell'organizzazione. Intune verifica che i dispositivi rimangano conformi a queste baseline e invia agli amministratori una notifica sugli utenti e i dispositivi non conformi.
 
-### <a name="remove-ability-for-admins-to-wipe-personal-devices-and-reset-passcodes----2934699---"></a>Impedire agli amministratori di cancellare i dati dai dispositivi personali e di reimpostare i passcode <!-- 2934699 -->
-Per alleviare il timore degli utenti che gli amministratori possano cancellare i dati dai dispositivi personali, le azioni remote [Cancella](devices-wipe.md#wipe) e [Reimposta passcode](device-passcode-reset.md) non verranno più applicate ai dispositivi personali. Impostare il tipo di proprietà dei dispositivi su Aziendale per abilitare queste azioni per i dispositivi di proprietà dell'organizzazione.
-
 ### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices----1048100---"></a>Supporto di Autopilot per i dispositivi ibridi aggiunti ad Azure Active Directory <!-- 1048100 -->
 Sarà possibile configurare i dispositivi ibridi aggiunti ad Azure Active Directory usando Autopilot. I dispositivi devono essere aggiunti alla rete dell'organizzazione per usare la funzionalità ibrida di Autopilot.
 
@@ -56,7 +53,7 @@ Per creare un tag di ambito, scegliere **Ruoli di Intune** > **Ambito (tag)** > 
 Per aggiungere un tag di ambito a un'assegnazione di ruolo, scegliere **Ruoli di Intune** > **Tutti i ruoli** > **Policy and Profile Manager (Gestione criteri e profili)** > **Assegnazioni** > **Ambito (tag)**.
 Per aggiungere un tag di ambito a un profilo di configurazione, scegliere **Configurazione del dispositivo** > **Profili** > scegliere un profilo > **Proprietà** > **Ambito (tag)**.
 
-## <a name="tenant-health-dashboard----1124854---"></a>Dashboard sull'integrità del tenant <!-- 1124854 -->
+### <a name="tenant-health-dashboard----1124854---"></a>Dashboard sull'integrità del tenant <!-- 1124854 -->
 La pagina Stato del tenant in Intune fornirà in un'unica posizione le informazioni sullo stato del tenant. La pagina è suddivisa in 4 sezioni:  
 - **Dettagli del tenant**: contiene informazioni, ad esempio l'autorità MDM, il totale dei dispositivi registrati nel tenant e i conteggi delle licenze. Questa sezione indica anche la versione corrente del servizio per il tenant.
 - **Stato del connettore**: contiene informazioni sui connettori configurati, ad esempio Apple VPP, Windows Store for Business e connettori di certificati. In base allo stato corrente, i connettori vengono contrassegnati come *Integro*, *Avviso* o *Non integro*.
