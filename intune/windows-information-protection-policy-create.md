@@ -3,10 +3,10 @@ title: Creare e distribuire criteri di protezione delle app Windows Information 
 titlesuffix: Microsoft Intune
 description: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Microsoft Intune
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: c1d530059d7c5b5f759516e86d4ee3dbf8512aa5
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347308"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799626"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -46,19 +46,27 @@ ms.locfileid: "43347308"
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Configurare il provider MAM prima di creare un criterio di protezione dell'app di WIP. Altre informazioni su [come configurare il provider MAM con Intune](app-protection-policies-configure-windows-10.md).
+Configurare il provider MAM prima di creare un criterio di protezione dell'app di WIP. Altre informazioni su [come configurare il provider MAM con Intune](app-protection-policies-configure-windows-10.md).  
+
+> [!IMPORTANT]
+> WIP non supporta più identità e può essere presente una sola identità gestita alla volta.
 
 È inoltre necessario avere la licenza e l'aggiornamento seguenti:
 
 -   Una licenza di [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> WIP non supporta più identità e può essere presente una sola identità gestita alla volta.
+
+
+
 
 ## <a name="to-add-a-wip-app-protection-policy"></a>Per aggiungere criteri di protezione delle app WIP
 
 Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri specifici di WIP.
+
+> [!TIP]  
+> Per informazioni correlate sulla creazione di criteri WIP per Intune, incluse le impostazioni disponibili e come configurarle, vedere [Creare criteri di Windows Information Protection (WIP) con il software MAM usando il portale di Azure per Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) nella raccolta di documenti sulla sicurezza di Windows. 
+
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**.
@@ -123,7 +131,7 @@ Quando si usano app abilitate per WIP e app sconosciute WIP, è consigliabile in
 ### <a name="what-are-the-protection-modes"></a>Caratteristiche delle modalità di protezione
 
 #### <a name="block"></a>Blocca
-WIP rileva eventuali procedure di condivisione dei dati non appropriate e impedisce all'utente di completare l'azione. Può trattarsi, ad esempio, della condivisione di informazioni tra app non protette dall'azienda e della condivisione di dati aziendali tra altri utenti e dispositivi all'esterno dell'organizzazione.
+WIP rileva eventuali procedure di condivisione dei dati non appropriate e impedisce all'utente di completare l'azione. Le azioni bloccate possono includere la condivisione di informazioni tra app non protette dall'azienda e la condivisione di dati aziendali tra altri utenti e dispositivi all'esterno dell'organizzazione.
 
 #### <a name="allow-overrides"></a>Consenti sostituzioni
 WIP rileva eventuali procedure di condivisione dei dati non appropriate e avvisa gli utenti quando eseguono operazioni considerate potenzialmente non sicure. Questa modalità consente tuttavia all'utente di ignorare il criterio e di condividere i dati, con registrazione dell'azione nel log di controllo.

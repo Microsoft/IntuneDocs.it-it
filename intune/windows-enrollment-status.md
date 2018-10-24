@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 5/17/2017
+ms.date: 10/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +15,38 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c6604c35cebdad4341f27a51db1a4c735f9a9818
-ms.sourcegitcommit: 6bd5867c41fb5288fde114dbfcc127dd206f7148
+ms.openlocfilehash: f5460db2d646d8bd417baa50d8188acbf69a251d
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34235621"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827990"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurare la pagina dello stato della registrazione
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Durante la configurazione dei dispositivi, la pagina dello stato della registrazione consente di visualizzare le informazioni sul dispositivo dell'utente finale. Alcune applicazioni, profili e certificati potrebbero non essere ancora stati installati completamente nel momento in cui l'utente viene registrato. La pagina dello stato consente agli utenti di conoscere lo stato del dispositivo durante e dopo la registrazione. È possibile attivare la pagina dello stato per tutti gli utenti, nonché impedire agli utenti di usare il dispositivo finché tutte le applicazioni e i profili assegnati non sono stati installati.
+Durante la configurazione dei dispositivi, la pagina relativa allo stato della registrazione consente di visualizzare le informazioni sull'installazione nel dispositivo. Alcune applicazioni, profili e certificati potrebbero non essere ancora stati installati completamente nel momento in cui l'utente viene registrato. Una pagina relativa allo stato consente agli utenti di conoscere lo stato del dispositivo durante e dopo la registrazione. È possibile attivare la pagina relativa allo stato per tutti gli utenti o creare profili per impostare come destinatari gruppi utenti specifici.  È possibile impostare i profili per visualizzare lo stato dell'installazione, bloccare l'utilizzo fino al termine dell'installazione, consentire le reimpostazioni e così via.
  
+## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>Attivare la pagina relativa allo stato della registrazione predefinita per tutti gli utenti
+
 Per attivare la pagina dello stato della registrazione per tutti gli utenti finali, seguire la procedura qui riportata.
  
 1.  In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Enrollment Status Page (Preview)** (Pagina stato registrazione (anteprima)).
 2.  Nel pannello **Enrollment Status Page** (Pagina stato registrazione) scegliere **Predefinito** > **Impostazioni**.
 3.  Per **Show app and profile installation progress** (Visualizza stato di avanzamento installazione app e profilo), scegliere **Sì**.
 4.  Scegliere le altre impostazioni che si vuole attivare e selezionare **Salva**.
- 
+
+## <a name="create-enrollment-status-page-profile-to-target-specific-users"></a>Creare il profilo della pagina dello stato della registrazione per impostare come destinatari utenti specifici
+
+1.  In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione (anteprima)** > **Crea profilo**.
+2. Specificare un **nome** e una **descrizione**.
+3. Scegliere **Crea**.
+4. Scegliere il nuovo profilo nell'elenco **Pagina relativa allo stato della registrazione**.
+5. Scegliere **Assegnazioni** > **Selezionare i gruppi** > scegliere i gruppi che devono adottare questo profilo > **Seleziona** > **Salva**.
+6. Scegliere **Impostazioni** > scegliere le impostazioni che si vuole applicare a questo profilo > **Salva**.
+
+
 ## <a name="enrollment-status-page-tracking-information"></a>Informazioni incluse nella pagina dello stato della registrazione
 
 La pagina dello stato della registrazione consente di tenere traccia delle informazioni relative alla preparazione e configurazione del dispositivo e dell'account.
@@ -53,8 +65,8 @@ Per la configurazione del dispositivo, la pagina dello stato della registrazione
     - App line-of-business di identità del servizio gestita per computer.
     - App dello Store line-of-business con contesto di installazione = dispositivo.
     - App dello Store offline e line-of-business con contesto di installazione = dispositivo.
-- I profili di connettività (VPN e Wi-Fi) non vengono ancora tracciati, pertanto indicheranno sempre "0 di 0".
-- I certificati non vengono ancora tracciati, pertanto indicheranno sempre "0 di 0".
+- I profili di connettività (VPN e Wi-Fi) non vengono ancora tracciati, quindi indicano sempre "0 di 0".
+- I certificati non vengono ancora tracciati, quindi indicano sempre "0 di 0".
 
 ### <a name="account-setup"></a>Configurazione dell'account
 Per la configurazione dell'account, la pagina dello stato della registrazione tiene traccia degli elementi seguenti:
@@ -64,9 +76,10 @@ Per la configurazione dell'account, la pagina dello stato della registrazione ti
 - Applicazioni
     - Le app line-of-business di identità del servizio gestita per utente assegnate a tutti i dispositivi, a tutti gli utenti o a un gruppo di utenti di cui l'utente che registra il dispositivo è membro.
     - Le app line-of-business di identità del servizio gestita per computer assegnate a tutti gli utenti o a un gruppo di utenti di cui l'utente che registra il dispositivo è membro.
-    - Le app line-of-business dello Store assegnate a tutti i dispositivi, a tutti gli utenti o a un gruppo di utenti di cui l'utente che registra il dispositivo è membro con contesto di installazione = utente.
-    - Le app dello Store online assegnate a tutti i dispositivi, a tutti gli utenti o a un gruppo di utenti di cui l'utente che registra il dispositivo è membro con contesto di installazione = utente.
-    - Le app dello Store offline assegnate a tutti i dispositivi, a tutti gli utenti o a un gruppo di utenti di cui l'utente che registra il dispositivo è membro con contesto di installazione = utente.
+    - App dello store line-of-business, le app dello store online e le app dello store offline che vengono assegnate a uno degli elementi seguenti:
+        - Tutti i dispositivi
+        - Tutti gli utenti
+        - Un gruppo utenti in cui l'utente che registra il dispositivo è un membro con il contesto di installazione impostato su Utente.
 - Profili di connettività
     - I profili VPN o Wi-Fi assegnati a tutti gli utenti o a un gruppo di utenti di cui l'utente che registra il dispositivo è membro.
 - Certificati

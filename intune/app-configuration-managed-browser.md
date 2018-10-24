@@ -1,42 +1,40 @@
 ---
-title: Gestire l'accesso Web con l'app Managed Browser
+title: Gestire l'accesso Web con un browser protetto da criteri
 titlesuffix: Microsoft Intune
-description: Distribuire l'applicazione Managed Browser per limitare l'esplorazione del Web e il trasferimento dei dati Web ad altre app.
+description: Usare un browser protetto da criteri per limitare l'esplorazione Web e il trasferimento dei dati Web.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
-ms.reviewer: maxles
+ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb4a80a9de03844c6fffa5e56f09c375645f9188
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: cb7eb4b3845b8b5f0eafed95fa081955b99f1af7
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864542"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863162"
 ---
-# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Gestire l'accesso a Internet usando i criteri dei browser protetti con Microsoft Intune
+# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Gestire l'accesso a Internet usando i criteri dei browser protetti con Microsoft Intune  
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-I browser protetti includono Microsoft Edge e Intune Managed Browser. Microsoft Edge e Managed Browser sono app per l'esplorazione Web che è possibile scaricare dagli store di app pubblici e usarle nell'organizzazione. Quando configurati con Intune, i browser protetti possono essere:
-- Usata per accedere ai siti aziendali e alle app SaaS con Single Sign-On tramite il servizio MyApps mantenendo protetti i dati Web.
-- Preconfigurata con un elenco di URL e domini per limitare i siti che gli utenti possono visitare nel contesto aziendale.
-- Pre-configurata con una home page e i segnalibri specificati.
+L'uso di un browser protetto dai criteri di Intune (Microsoft Edge o Intune Managed Browser) garantisce che l'accesso ai siti Web aziendali venga sempre eseguito con misure di sicurezza applicate.  Quando configurati con Intune, i browser protetti possono sfruttare quanto segue:
 
-Poiché Microsoft Edge e Managed Browser includono l'integrazione con Intune SDK, è anche possibile applicare i criteri di protezione delle app, oltre ai seguenti criteri:
-- Controllare l'uso di taglia, copia e incolla
-- Impedire l'acquisizione di immagini dello schermo
-- Assicurarsi che i collegamenti ai contenuti selezionati dagli utenti vengano aperti solo in altre app gestite.
+- Criteri di protezione di applicazioni.
+- Accesso condizionale.
+- Single Sign-On.
+- Impostazioni di configurazione dell'applicazione.
+- Integrazione del proxy di applicazione di Azure.
 
-Per altre informazioni dettagliate, vedere [Che cosa sono i criteri di protezione delle app?](app-protection-policy.md)
+## <a name="getting-started"></a>Guida introduttiva
 
 È possibile applicare queste impostazioni ai dispositivi seguenti:
 
@@ -57,9 +55,7 @@ Managed Browser non supporta il protocollo di crittografia di Secure Sockets Lay
 
 >[!IMPORTANT]
 >Le versioni precedenti di Android e iOS saranno in grado di continuare a usare Managed Browser, ma non sarà possibile installare nuove versioni dell'app e le funzionalità dell'app potrebbero non essere tutte disponibili. Si consiglia di eseguire l'aggiornamento di questi dispositivi a una versione supportata del sistema operativo.
-
-
-Microsoft Edge e Intune Managed Browser supportano l'apertura di contenuti Web di [partner delle applicazioni di Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+    
 
 ## <a name="conditional-access-for-protected-browsers"></a>Accesso condizionale per i browser protetti
 
@@ -94,11 +90,11 @@ Dopo aver configurato i criteri, agli utenti verrà imposto l'uso di Intune Mana
 
 Managed Browser non supporta i criteri di accesso condizionale classici. Per altre informazioni, vedere [Migrare i criteri classici nel portale di Azure](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration).
 
-##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-the-intune-managed-browser"></a>Accesso Single Sign-on alle app Web connesse ad Azure AD in Intune Managed Browser
+##  <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>Accesso Single Sign-on alle app Web connesse ad Azure AD in browser protetti da criteri
 
-L'applicazione Intune Managed Browser in iOS e Android può ora usare l'accesso SSO per tutte le app Web (SaaS e locali) connesse ad Azure AD. Quando è presente l'app Microsoft Authenticator in iOS oppure l'app Portale aziendale Intune in Android, gli utenti di Intune Managed Browser potranno accedere alle app Web connesse ad Azure AD senza dover reimmettere le credenziali.
+Microsoft Edge e Intune Managed Browser in iOS e Android possono usare l'accesso SSO per tutte le app Web (SaaS e locali) connesse ad Azure AD. Quando è presente l'app Microsoft Authenticator in iOS oppure l'app Portale aziendale Intune in Android, gli utenti di un browser protetto da criteri potranno accedere alle app Web connesse ad Azure AD senza dover reimmettere le credenziali.
 
-Per usare l'accesso SSO in Intune Managed Browser è necessario che il dispositivo sia registrato dall'app Microsoft Authenticator in iOS o dall'app Portale aziendale Intune in Android. Se il dispositivo non è già stato registrato da un'altra applicazione, agli utenti con l'app Authenticator o Portale aziendale Intune verrà richiesto di registrare il dispositivo quando accedono a un'app Web connessa ad Azure AD in Intune Managed Browser. Dopo aver registrato il dispositivo con l'account gestito da Intune, per l'account viene abilitato l'accesso SSO per le app Web connesse ad Azure AD. 
+Per usare l'accesso SSO, è necessario che il dispositivo sia registrato dall'app Microsoft Authenticator in iOS o dall'app Portale aziendale Intune in Android. Se il dispositivo non è già stato registrato da un'altra applicazione, agli utenti con l'app Authenticator o Portale aziendale Intune verrà richiesto di registrare il dispositivo quando accedono a un'app Web connessa ad Azure AD in un browser protetto da criteri. Dopo aver registrato il dispositivo con l'account gestito da Intune, per l'account viene abilitato l'accesso SSO per le app Web connesse ad Azure AD. 
 
 > [!NOTE]
 > La registrazione del dispositivo è una semplice procedura di accesso al servizio Azure AD. Non richiede la registrazione del dispositivo completa e non implica la concessione di privilegi aggiuntivi all'IT per il dispositivo.

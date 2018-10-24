@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/31/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 61e2ec9def6ecba265521cf801322d592dd4dac9
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347433"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866355"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Distribuzione di app di Windows 10 con Microsoft Intune 
 
 Microsoft Intune attualmente supporta un'ampia gamma di tipi di app e scenari di distribuzione nei dispositivi Windows 10. Dopo avere aggiunto un'app a Intune, è possibile assegnarla a utenti e dispositivi. Le informazioni seguenti forniscono ulteriori dettagli sugli scenari di Windows 10 supportati. Le informazioni seguenti, inoltre, forniscono i dettagli chiave da tenere presenti durante la distribuzione delle app in Windows. 
 
-Le app line-of-business e Microsoft Store per le aziende sono i tipi di app che supportano i dispositivi Windows 10.
+Le app line-of-business e Microsoft Store per le aziende sono i tipi di app che supportano i dispositivi Windows 10. Le estensioni file per le app di Windows ora includono **msi**, **appx**, **appxbundle**, **msix** e **msixbundle**.  
 
 > [!Note]
 > L'aggiornamento di Windows 10 minimo necessario per distribuire le app nel contesto di dispositivo è [23 maggio 2018: KB4100403 (build del sistema operativo 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
@@ -46,9 +46,6 @@ A seconda del tipo di app, l'app può essere installata in un dispositivo Window
     - Possono essere distribuite nel contesto utente sia le app line-of-business moderne che le app di Microsoft Store per le aziende, sia online che offline, e queste supporteranno sia la finalità obbligatoria che la finalità disponibile.
 - **Contesto di dispositivo**: quando un'app viene distribuita nel contesto di dispositivo, l'app gestita verrà installata direttamente nel dispositivo da Intune.
     - Solo le app line-of-business moderne e le app di Microsoft Store per le aziende con licenza online possono essere distribuite nel contesto di dispositivo e supporteranno solo la finalità obbligatoria.
-
-> [!Note]
-> La distribuzione di MSI su MDM nel contesto di dispositivo non è ancora supportata nei dispositivi Windows 10.
 
 Quando un'app viene distribuita nel contesto di dispositivo, l'installazione verrà completata solo se il dispositivo di destinazione supporta il contesto di dispositivo. Inoltre, la distribuzione nel contesto di dispositivo comporta le condizioni seguenti:
 - Se un'app viene distribuita nel contesto di dispositivo e fa riferimento a un utente, l'installazione avrà esito negativo e nella console di amministrazione verranno visualizzati l'errore e lo stato seguenti:

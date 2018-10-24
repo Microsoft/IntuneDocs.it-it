@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147718"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260250"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrare il dispositivo macOS in Intune con l'app Portale aziendale
 
@@ -80,8 +80,17 @@ Usare la procedura seguente per registrare i dispositivi macOS che eseguono OS X
 
 9. La prima schermata visualizzata nell'app Portale aziendale chiede di eseguire l'**Accesso**. Usare lo stesso account aziendale o dell'istituto di istruzione utilizzato per eseguire l'accesso al sito Web del portale aziendale.
 
-10. Il portale aziendale verifica le informazioni sull'account e visualizza gli stati relativi a **Registrazione del dispositivo** e **Conformità del dispositivo**. Triangoli gialli evidenziano le azioni da eseguire per proteggere il dispositivo macOS per l'istituto di istruzione o il lavoro. Fare clic su **Inizia** per iniziare la registrazione. Informazioni su [ciò che l'organizzazione può vedere](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) quando si registra un dispositivo.
+10. Il portale aziendale verifica le informazioni sull'account e visualizza gli stati relativi a **Registrazione del dispositivo** e **Conformità del dispositivo**. Triangoli gialli evidenziano le azioni da eseguire per proteggere il dispositivo macOS per l'istituto di istruzione o il lavoro. Fare clic su **Inizia** per iniziare la registrazione. 
 
-11. È possibile che venga richiesto di specificare le informazioni di accesso del computer. Potrebbero occorrere alcuni minuti per registrare il dispositivo per la gestione. Durante l'attesa è possibile eseguire altre operazioni sul computer. Al termine della configurazione dell'accesso aziendale viene visualizzato un messaggio relativo al completamento dell'operazione.  
+11. Se richiesto, digitare le informazioni di accesso del computer.  
+
+Potrebbero occorrere alcuni minuti per registrare il dispositivo per la gestione. Durante l'attesa è possibile eseguire altre operazioni sul computer. Al termine della configurazione dell'accesso aziendale viene visualizzato un messaggio relativo al completamento dell'operazione.  
+
+## <a name="unverified-profiles"></a>Profili non verificati
+Quando si visualizzano i profili di gestione di dispositivi mobili (MDM) installati per il dispositivo macOS, alcuni profili potrebbero presentare uno stato **Non verificato**. Purché il **profilo di gestione** non presenti uno stato **Verificato**, non sarà necessario preoccuparsene.  
+
+È il profilo di gestione a definire la connessione al canale MDM. Purché il profilo di gestione sia verificato, tutti gli altri profili distribuiti nel computer tramite tale canale ereditano le caratteristiche di sicurezza del profilo di gestione.
+
+Inoltre, poiché questi altri profili non richiedono verifiche singole, vengono generati e distribuiti più rapidamente nei dispositivi. 
 
 Serve ancora assistenza? Rivolgersi al personale del supporto tecnico dell'azienda. È possibile trovare le informazioni di contatto nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  

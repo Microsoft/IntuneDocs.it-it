@@ -2,10 +2,10 @@
 title: Creare criteri di conformità del profilo di lavoro Android in Microsoft Intune - Azure | Microsoft Docs
 description: Creare o configurare criteri di conformità Microsoft Intune per dispositivi del profilo di lavoro Android. Scegliere di consentire i dispositivi jailbroken, impostare il livello di minaccia accettabile, verificare la presenza di Google Play, immettere la versione minima e massima del sistema operativo, scegliere i requisiti delle password e consentire il sideload delle applicazioni.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905088"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828160"
 ---
 # <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi del profilo di lavoro Android in Intune
 
@@ -113,7 +113,11 @@ Se l'organizzazione usa i profili di lavoro Android, è possibile abilitare **An
 - **Blocca app da origini sconosciute**: non è necessario configurare questa impostazione perché i dispositivi del profilo di lavoro Android limitano sempre l'installazione da origini sconosciute.
 - **Integrità del runtime dell'app Portale aziendale**: consente di verificare che nell'app Portale aziendale sia stato installato l'ambiente di runtime predefinito, che l'app sia firmata correttamente, non sia in modalità debug e sia stata installata da un'origine nota.
 - **Blocca il debug USB nel dispositivo**: non è necessario configurare questa impostazione perché il debug USB è già disabilitato nei dispositivi del profilo di lavoro Android.
-- **Livello minimo di patch di protezione**: selezionare il livello di patch di sicurezza meno recente consentito per un dispositivo. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere immessa nel formato `YYYY-MM-DD`.
+- **Livello minimo di patch di protezione**: selezionare il livello di patch di sicurezza meno recente consentito per un dispositivo. I dispositivi che non presentano almeno questo livello di patch vengono considerati non conformi. La data deve essere immessa nel formato *AAAA-MM-GG*.
+- **App con restrizioni**: è possibile creare restrizioni per le app aggiungendo i relativi ID bundle ai criteri. Quindi, se in un dispositivo è installata l'app, il dispositivo verrà contrassegnato come non conforme. 
+   - **Nome app**: immettere un nome descrittivo per facilitare l'identificazione dell'ID bundle. 
+   - **ID bundle dell'app**: immettere l'identificatore univoco del bundle per il provider dell'app. Per Android, l'ID bundle dell'app viene acquisito dall'URL dello Store per l'app. Se ad esempio l'URL dell'app nello Store è *https://play.google.com/store/apps/details?id=com.Slack*, l'ID bundle dell'app è *com.Slack*.
+
 
 ## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
 

@@ -1,11 +1,11 @@
 ---
-title: Installare e accedere all'app Portale aziendale | Microsoft Docs
+title: Installare e accedere all'app Portale aziendale per iOS | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 984c9212a4aa3221a4de5e02d96f912d800e9490
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146376"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260199"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Installare e accedere all'app Portale aziendale
 
-Portale aziendale è un'app da installare nel proprio dispositivo iOS per avere accesso alle app, alla posta elettronica e alla rete dell'azienda o dell'istituto di istruzione. Prima di ottenere l'accesso, è necessario installare l'app Portale aziendale e quindi usarla per registrare il dispositivo in Microsoft Intune. Per altre informazioni, vedere [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune).
+Installare l'app Portale aziendale nel dispositivo iOS per ottenere l'accesso alle app, alla posta elettronica e alla rete aziendali e dell'istituto di istruzione. Usare l'app per registrare il dispositivo in Microsoft Intune e proteggere l'accesso alle risorse aziendali o dell'istituto di istruzione. Per altre informazioni, vedere [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo in Intune).
 
 1.  Aprire l'**App Store** e cercare **portale aziendale di intune**.
 

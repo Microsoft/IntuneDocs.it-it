@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2018
+ms.date: 10/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 48bf2e6daf05dba6baebbd49be45a17a5a56e820
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028733"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828296"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurare e usare i certificati SCEP con Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Questo articolo illustra come configurare l'infrastruttura e quindi creare e assegnare i profili certificato Simple Certificate Enrollment Protocol (SCEP) con Intune.
 
@@ -168,7 +166,7 @@ In questo passaggio verranno eseguite le operazioni seguenti:
 
    6. **Strumenti di gestione** > **Compatibilità gestione IIS 6** > **Compatibilità metabase IIS 6**
 
-   7. **Strumenti di gestione** > **Compatibilità gestione IIS 6** > **Compatibilità IIS 6 WMI**
+   7. **Strumenti di gestione** > **Compatibilità gestione IIS 6**  > **Compatibilità IIS 6 WMI**
 
    8. Nel server aggiungere l'account del servizio NDES come membro del gruppo **IIS_IUSR**.
 
@@ -350,6 +348,113 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
 5. Nell'elenco a discesa **Tipo di profilo** selezionare **Certificato SCEP**.
 6. Nel riquadro **Certificato SCEP** configurare le impostazioni seguenti:
 
+   - **Tipo di certificato**: scegliere **Utente** per i certificati utente. Scegliere **Dispositivo** per i dispositivi senza utenti, ad esempio i chioschi multimediali. I certificati **dispositivo** sono disponibili per le piattaforme seguenti:  
+     - iOS
+     - Windows 8.1 e versioni successive
+     - Windows 10 e versioni successive
+
+   - **Formato nome soggetto**: selezionare la modalità con la quale Intune crea automaticamente il nome soggetto nella richiesta certificato. Le opzioni sono diverse a seconda che si scelga un tipo di certificato **Utente** o un tipo di certificato **Dispositivo**. 
+
+        **Tipo di certificato utente**  
+
+        È possibile includere nel nome del soggetto l'indirizzo di posta elettronica dell'utente. Scegliere tra:
+
+        - **Non configurato**
+        - **Nome comune**
+        - **Nome comune incluso l'indirizzo di posta elettronica**
+        - **Nome comune come indirizzo di posta elettronica**
+        - **IMEI (International Mobile Equipment Identity)**
+        - **Numero di serie**
+        - **Personalizzato**: quando si seleziona questa opzione, viene visualizzata anche una casella di testo **Personalizzato**. Usare questo campo per immettere un formato di nome soggetto personalizzato, incluse le variabili. Le due variabili supportate per il nome personalizzato sono **CN (Nome comune)** ed **E (Posta elettronica)**. **CN (Nome comune)** può essere impostata su una delle variabili seguenti:
+
+            - **CN={{UserName}}**: nome principale dell'utente, ad esempio janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}**: ID assegnato quando si registra un dispositivo in Azure Active Directory (AD). Questo ID è in genere usato per l'autenticazione con Azure AD.
+            - **CN={{SERIALNUMBER}}**: numero di serie (SN) unico usato in genere dal produttore per identificare un dispositivo
+            - **CN={{IMEINumber}}**: numero unico IMEI (International Mobile Equipment Identity) usato per identificare un telefono cellulare
+            - **CN={{OnPrem_Distinguished_Name}}**: sequenza di nomi distinti relativi separati da virgole, ad esempio `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+
+                Per usare la variabile `{{OnPrem_Distinguished_Name}}`, assicurarsi di sincronizzare l'attributo utente `onpremisesdistingishedname` usando [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
+
+            - **CN={{onPremisesSamAccountName}}**: gli amministratori possono sincronizzare l'attributo samAccountName da Active Directory ad Azure AD usando Azure AD Connect in un attributo denominato `onPremisesSamAccountName`. Intune può sostituire tale variabile come parte di una richiesta di rilascio di certificati nel soggetto di un certificato SCEP.  L'attributo samAccountName è il nome di accesso utente usato per supportare i client e i server da una versione precedente di Windows (precedente a Windows 2000). Il formato del nome di accesso utente è: `DomainName\testUser` o solo `testUser`.
+
+                Per usare la variabile `{{onPremisesSamAccountName}}`, assicurarsi di sincronizzare l'attributo utente `onPremisesSamAccountName` usando [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
+
+            Usando una combinazione di una o più variabili e stringhe statiche, è possibile creare un formato di nome soggetto personalizzato, ad esempio:  
+
+            **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+
+            In questo esempio è stato creato un formato di nome soggetto che, oltre alle variabili CN ed E, usa stringhe per i valori Unità organizzativa, Organizzazione, Località, Stato e Paese. L'argomento [Funzione CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) visualizza questa funzione e le relative stringhe supportate.
+
+        **Tipo di certificato dispositivo**  
+
+        Quando si usa il tipo di certificato **Dispositivo**, per il valore è anche possibile usare le variabili del certificato del dispositivo seguenti:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        Queste variabili possono essere aggiunte con testo statico in una casella di testo del valore personalizzato. Ad esempio, l'attributo DNS può essere aggiunto come `DNS = {{AzureADDeviceId}}.domain.com`.
+
+        > [!IMPORTANT]
+        >  - Nel testo statico del nome alternativo del soggetto le parentesi graffe **{ }**, la barra verticale **|** e il punto e virgola **;** non funzioneranno. 
+        >  - Quando si usa una variabile di un certificato del dispositivo, racchiuderla tra parentesi graffe **{ }**.
+        >  - `{{FullyQualifiedDomainName}}` funziona solo per i dispositivi Windows e aggiunti a un dominio. 
+        >  -  Quando si usano proprietà del dispositivo, ad esempio IMEI, numero di serie e nome di dominio completo, nell'oggetto o nel nome alternativo del soggetto per un certificato del dispositivo, tenere presente che queste proprietà possono essere falsificate da una persona con accesso al dispositivo.
+
+
+   - **Nome alternativo soggetto**: specificare in che modo Intune crea automaticamente i valori per il nome alternativo soggetto (SAN) nella richiesta certificato. Le opzioni sono diverse a seconda che si scelga un tipo di certificato **Utente** o un tipo di certificato **Dispositivo**. 
+
+        **Tipo di certificato utente**  
+
+        Sono disponibili gli attributi seguenti:
+
+        - Indirizzo di posta elettronica
+        - Nome dell'entità utente (UPN)
+
+            Se ad esempio si seleziona un tipo di certificato utente, è possibile includere il nome dell'entità utente (UPN) nel nome alternativo soggetto. Se un certificato client viene usato per eseguire l'autenticazione in un server dei criteri di rete, impostare il nome alternativo del soggetto sul nome dell'entità utente. 
+
+        **Tipo di certificato dispositivo**  
+
+        Casella di testo in formato tabella che è possibile personalizzare. Sono disponibili gli attributi seguenti:
+
+        - DNS
+        - Indirizzo di posta elettronica
+        - Nome dell'entità utente (UPN)
+
+        Con il tipo di certificato **Dispositivo**, per il valore è possibile usare le variabili del certificato del dispositivo seguenti:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        Queste variabili possono essere aggiunte con testo statico nella casella di testo del valore personalizzato. Ad esempio, l'attributo DNS può essere aggiunto come `DNS = {{AzureADDeviceId}}.domain.com`.
+
+        > [!IMPORTANT]
+        >  - Nel testo statico del nome alternativo del soggetto le parentesi graffe **{ }**, la barra verticale **|** e il punto e virgola **;** non funzioneranno. 
+        >  - Quando si usa una variabile di un certificato del dispositivo, racchiuderla tra parentesi graffe **{ }**.
+        >  - `{{FullyQualifiedDomainName}}` funziona solo per i dispositivi Windows e aggiunti a un dominio. 
+        >  -  Quando si usano proprietà del dispositivo, ad esempio IMEI, numero di serie e nome di dominio completo, nell'oggetto o nel nome alternativo del soggetto per un certificato del dispositivo, tenere presente che queste proprietà possono essere falsificate da una persona con accesso al dispositivo.
+
    - **Periodo di validità del certificato**: se nella CA emittente è stato eseguito il comando `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE`, che consente un periodo di validità personalizzato, è possibile specificare la quantità di tempo rimanente prima della scadenza del certificato.<br>È possibile immettere un valore inferiore, ma non superiore, al periodo di validità presente nel modello di certificato. Se ad esempio il periodo di validità del certificato nel modello di certificato è di due anni, è possibile immettere un valore di un anno ma non un valore di cinque anni. Inoltre, il valore deve essere inferiore rispetto al periodo di validità rimanente del certificato della CA emittente. 
    - **Provider di archiviazione chiavi (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): specificare dove viene archiviata la chiave per il certificato. Scegliere tra uno dei seguenti valori:
      - **Registra nel provider di archiviazione chiavi Trusted Platform Module (TPM) se presente, altrimenti nel provider di archiviazione chiavi software**
@@ -357,40 +462,17 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
      - **Registra in Passport oppure genera errore (Windows 10 e versioni successive)**
      - **Registra nel provider di archiviazione chiavi software**
 
-   - **Formato nome soggetto**: selezionare nell'elenco la modalità con la quale Intune crea automaticamente il nome soggetto nella richiesta certificato. Se il certificato è per un utente, è anche possibile includere l'indirizzo di posta elettronica dell'utente nel nome del soggetto. Scegliere tra:
-     - **Non configurato**
-     - **Nome comune**
-     - **Nome comune incluso l'indirizzo di posta elettronica**
-     - **Nome comune come indirizzo di posta elettronica**
-     - **IMEI (International Mobile Equipment Identity)**
-     - **Numero di serie**
-     - **Personalizzato**: quando si seleziona questa opzione, viene visualizzato un altro campo a discesa. Usare questo campo per immettere un formato di nome soggetto personalizzato. Le due variabili supportate per il nome personalizzato sono **CN (Nome comune)** ed **E (Posta elettronica)**. **CN (Nome comune)** può essere impostata su una delle variabili seguenti:
-       - **CN={{UserName}}**: nome principale dell'utente, ad esempio janedoe@contoso.com
-       - **CN={{AAD_Device_ID}}**: ID assegnato quando si registra un dispositivo in Azure Active Directory (AD). Questo ID è in genere usato per l'autenticazione con Azure AD.
-       - **CN={{SERIALNUMBER}}**: numero di serie (SN) unico usato in genere dal produttore per identificare un dispositivo
-       - **CN={{IMEINumber}}**: numero unico IMEI (International Mobile Equipment Identity) usato per identificare un telefono cellulare
-       - **CN={{OnPrem_Distinguished_Name}}**: sequenza di nomi distinti relativi separati da virgole, ad esempio `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
-
-          Per usare la variabile `{{OnPrem_Distinguished_Name}}`, assicurarsi di sincronizzare l'attributo utente `onpremisesdistingishedname` usando [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
-
-       - **CN={{onPremisesSamAccountName}}**: gli amministratori possono sincronizzare l'attributo samAccountName da Active Directory ad Azure AD usando Azure AD Connect in un attributo denominato `onPremisesSamAccountName`. Intune può sostituire tale variabile come parte di una richiesta di rilascio di certificati nel soggetto di un certificato SCEP.  L'attributo samAccountName è il nome di accesso utente usato per supportare i client e i server da una versione precedente di Windows (precedente a Windows 2000). Il formato del nome di accesso utente è: `DomainName\testUser` o solo `testUser`.
-
-          Per usare la variabile `{{onPremisesSamAccountName}}`, assicurarsi di sincronizzare l'attributo utente `onPremisesSamAccountName` usando [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
-
-       Usando una combinazione di una o più di queste variabili e stringhe statiche è possibile creare un formato di nome soggetto personalizzato, ad esempio: **CN={{UserName}},E={{EmailAddress}},OU=Cellulare,O=Settore Finanze,L=Redmond,ST=Washington,C=USA**. <br/> In questo esempio è stato creato un formato di nome soggetto che, oltre alle variabili CN ed E, usa stringhe per i valori Unità organizzativa, Organizzazione, Località, Stato e Paese. L'argomento [Funzione CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) visualizza questa funzione e le relative stringhe supportate.
-
-- **Nome alternativo soggetto**: specificare in che modo Intune crea automaticamente i valori per il nome alternativo soggetto (SAN) nella richiesta certificato. Se ad esempio si seleziona un tipo di certificato utente, è possibile includere il nome dell'entità utente (UPN) nel nome alternativo soggetto. Se il certificato client viene usato per eseguire l'autenticazione in un server dei criteri di rete, è necessario impostare il nome alternativo oggetto sul nome dell'entità utente.
-- **Utilizzo chiavi**: specificare le opzioni d'uso della chiave per il certificato. Le opzioni disponibili sono:
-  - **Crittografia chiave**: consentire lo scambio di chiavi solo quando la chiave viene crittografata.
-  - **Firma digitale**: consentire lo scambio di chiavi soltanto se una firma digitale consente di proteggere la chiave.
-- **Dimensioni chiave (bit)**: selezionare il numero di bit contenuti nella chiave.
-- **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): selezionare uno dei tipi di algoritmo hash disponibili da usare con il certificato. Selezionare il livello di sicurezza più avanzato supportato dai dispositivi che verranno connessi.
-- **Certificato radice**: scegliere un profilo del certificato radice della CA già configurato e assegnato all'utente o al dispositivo. Questo certificato CA deve essere il certificato radice per l'autorità di certificazione che rilascia il certificato che si sta configurando in questo profilo certificato.
-- **Utilizzo chiavi avanzato**: scegliere **Aggiungi** per aggiungere valori per lo scopo designato del certificato. Nella maggior parte dei casi il certificato richiede l' **Autenticazione Client** in modo che l'utente o il dispositivo possa eseguire l'autenticazione in un server. È comunque possibile aggiungere altri utilizzi di chiavi secondo necessità.
-- **Impostazioni di registrazione**
-  - **Soglia di rinnovo (%)**: specificare la percentuale di durata residua del certificato prima che il dispositivo ne richieda il rinnovo.
-  - **URL server SCEP**: specificare uno o più URL per i server NDES che emettono certificati tramite SCEP.
-  - Selezionare **OK**, quindi **Crea** per creare il profilo.
+   - **Utilizzo chiavi**: specificare le opzioni d'uso della chiave per il certificato. Le opzioni disponibili sono:
+     - **Crittografia chiave**: consentire lo scambio di chiavi solo quando la chiave viene crittografata.
+     - **Firma digitale**: consentire lo scambio di chiavi soltanto se una firma digitale consente di proteggere la chiave.
+   - **Dimensioni chiave (bit)**: selezionare il numero di bit contenuti nella chiave.
+   - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): selezionare uno dei tipi di algoritmo hash disponibili da usare con il certificato. Selezionare il livello di sicurezza più avanzato supportato dai dispositivi che verranno connessi.
+   - **Certificato radice**: scegliere un profilo del certificato radice della CA già configurato e assegnato all'utente o al dispositivo. Questo certificato CA deve essere il certificato radice per l'autorità di certificazione che rilascia il certificato che si sta configurando in questo profilo certificato.
+   - **Utilizzo chiavi avanzato**: scegliere **Aggiungi** per aggiungere valori per lo scopo designato del certificato. Nella maggior parte dei casi il certificato richiede l' **Autenticazione Client** in modo che l'utente o il dispositivo possa eseguire l'autenticazione in un server. È comunque possibile aggiungere altri utilizzi di chiavi secondo necessità.
+   - **Impostazioni di registrazione**
+     - **Soglia di rinnovo (%)**: specificare la percentuale di durata residua del certificato prima che il dispositivo ne richieda il rinnovo.
+     - **URL server SCEP**: specificare uno o più URL per i server NDES che emettono certificati tramite SCEP.
+     - Selezionare **OK**, quindi **Crea** per creare il profilo.
 
 Il profilo viene creato e visualizzato nel riquadro dell'elenco dei profili.
 
