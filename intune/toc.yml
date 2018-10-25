@@ -627,41 +627,6 @@ items:
     href: manage-os-versions.md
   - name: Gestire gli aggiornamenti software
     href: windows-update-for-business-configure.md
-  - name: Gestire i PC con l'agente software
-    href: manage-windows-pcs-with-microsoft-intune.md
-    items:
-    - name: Confrontare le modalità di gestione dei PC
-      href: pc-management-comparison.md
-    - name: Installare il client del PC
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: Attività comuni di gestione di PC
-      href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
-      items:
-      - name: Criteri per i PC
-        href: use-policies-to-simplify-windows-pc-management.md
-      - name: Visualizzare l'inventario
-        href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
-      - name: Ritirare i PC
-        href: retire-a-windows-pc-with-microsoft-intune.md
-      - name: Collegare i PC agli utenti
-        href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
-      - name: Assistenza remota
-        href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
-    - name: Policies to protect Windows PCs (Criteri per la protezione dei PC Windows)
-      href: policies-to-protect-windows-pcs-in-microsoft-intune.md
-      items:
-      - name: Aggiornamenti software
-        href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
-      - name: Windows Firewall
-        href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
-      - name: Endpoint Protection
-        href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
-    - name: Aggiungere app per PC client di Intune
-      href: add-apps-for-windows-pcs-in-microsoft-intune.md
-    - name: Gestire i contratti di licenza
-      href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
-    - name: Risolvere i conflitti tra criteri
-      href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Gestire Windows Holographic
     href: windows-holographic-for-business.md
     items:
@@ -704,18 +669,18 @@ items:
           href: android-pulse-secure-per-app-vpn.md
         - name: Consentire o bloccare le app per Samsung KNOX Standard
           href: samsung-knox-apps-allow-block.md
+      - name: Android Enterprise
+        href: custom-settings-android-for-work.md
       - name: iOS
         href: custom-settings-ios.md
       - name: macOS
         href: custom-settings-macos.md
-      - name: Windows Phone 8.1
-        href: custom-settings-windows-phone-8-1.md
       - name: Windows 10
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android Enterprise
-        href: custom-settings-android-for-work.md
+      - name: Windows Phone 8.1
+        href: custom-settings-windows-phone-8-1.md
 - name: Istruzioni per sviluppatori
   items:
   - name: API per aggiungere autorità di certificazione di terze parti
@@ -831,11 +796,46 @@ items:
       href: groups-get-started.md
     - name: Client di Intune per PC legacy
       href: intune-legacy-pc-client.md
+    - name: Gestire i PC con l'agente software
+      href: manage-windows-pcs-with-microsoft-intune.md
+      items:
+      - name: Confrontare le modalità di gestione dei PC
+        href: pc-management-comparison.md
+      - name: Installare il client del PC
+        href: install-the-windows-pc-client-with-microsoft-intune.md
+      - name: Attività comuni di gestione di PC
+        href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
+        items:
+        - name: Criteri per i PC
+          href: use-policies-to-simplify-windows-pc-management.md
+        - name: Visualizzare l'inventario
+          href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+        - name: Ritirare i PC
+          href: retire-a-windows-pc-with-microsoft-intune.md
+        - name: Collegare i PC agli utenti
+          href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+        - name: Assistenza remota
+          href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+      - name: Policies to protect Windows PCs (Criteri per la protezione dei PC Windows)
+        href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+        items:
+        - name: Aggiornamenti software
+          href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+        - name: Windows Firewall
+          href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+        - name: Endpoint Protection
+          href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+      - name: Aggiungere app per PC client di Intune
+        href: add-apps-for-windows-pcs-in-microsoft-intune.md
+      - name: Gestire i contratti di licenza
+        href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+      - name: Risolvere i conflitti tra criteri
+        href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: glossario
     href: intune-glossary.md
-ms.openlocfilehash: ad9fe7c9c344cbbd244515cb9c2025b46e74eddd
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 809323f7e55e5c1fc010528744e4d0c57273f622
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643077"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983228"
