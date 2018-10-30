@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: fdd33ea0b5d8189712c6390861131c684cfaa67d
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313497"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101954"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Configurare i criteri di aggiornamento per iOS in Intune
 
@@ -23,7 +23,7 @@ I criteri di aggiornamento software consentono di forzare l'installazione automa
 
 Il dispositivo si collega a Intune ogni 8 ore. Se è disponibile un aggiornamento (al di fuori dell'orario sottoposto a restrizioni), il dispositivo scarica e installa l'aggiornamento più recente del sistema operativo. Non è necessario alcun intervento dell'utente per aggiornare il dispositivo. I criteri non impediscono a un utente di aggiornare manualmente il sistema operativo.
 
-Questa funzionalità è supportata nei dispositivi che eseguono iOS 10.3 e versioni successive.
+Questa funzionalità supporta i dispositivi che eseguono iOS 10.3 e versioni successive. L'impostazione del ritardo è disponibile in iOS 11.3 e versioni successive.
 
 ## <a name="configure-the-policy"></a>Configurare i criteri
 1. Accedere al [portale di Azure](https://portal.azure.com).

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6a633b73856b5f9f50ffe0b9993713b888b969b
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 2a521eadea2bcf118b4b0c643802fd8478f7ace2
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652105"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Android for Work in Intune
 
@@ -124,6 +124,7 @@ Questo articolo illustra le impostazioni delle restrizioni dei dispositivi Micro
     > [!IMPORTANT]
     >  - Il client VPN scelto deve essere installato nel dispositivo e deve supportare la VPN per app nei profili di lavoro. In caso contrario si verificherà un errore. 
     >  - È necessario approvare l'app client VPN in **Google Play Store gestito**, sincronizzare l'app con Intune e distribuire l'app nel dispositivo. Al termine di queste operazioni, l'app viene installata nel profilo di lavoro dell'utente.
+    >  - Esistono problemi noti quando si usa una VPN per app con F5 Access per Android 3.0.3. Per altre informazioni, vedere le [note sulla versione di F5 per F5 Access per Android 3.0.3](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-3.html#relnotes_known_issues_f5_access_android).
 
 - **Lockdown mode** (Modalità di blocco): **Abilita** forza tutto il traffico di rete a usare il tunnel VPN. Se non viene stabilita una connessione alla VPN, il dispositivo non avrà accesso alla rete.
 

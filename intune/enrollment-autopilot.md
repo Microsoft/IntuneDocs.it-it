@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: b6381a7a5a8032340910d2c8ff2a0f7db91ef2dd
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: aa51cbea1ab1ea5f1bfc903a17638192aca59326
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828126"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075898"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -152,6 +152,16 @@ Se non si è interessati alla gestione di dispositivi mobili, è possibile usare
 - Visualizzare le modifiche apportate alle assegnazioni dei profili eseguite in un altro portale
 - Sincronizzare le assegnazioni dei profili eseguite in un altro portale
 - Visualizzare le modifiche dell'elenco dei dispositivi apportate in un altro portale
+
+## <a name="redeploying-windows-autopilot"></a>Ridistribuzione di Windows AutoPilot
+
+È possibile raggruppare dispositivi Windows in base all'ID correlatore quando vengono registrati usando [AutoPilot per i dispositivi esistenti](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) tramite Configuration Manager. L'ID correlatore è un parametro del file di configurazione di Autopilot. L'[attributo del dispositivo Azure AD enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) viene impostato automaticamente su "OfflineAutopilotprofile-<correlator ID>". In questo modo sarà possibile creare gruppi dinamici di Azure AD arbitrari in base all'ID correlatore tramite l'attributo enrollmentprofileName per le registrazioni di AutoPilot offline.
+
+Se si esegue l'aggiornamento di versioni precedenti di Windows che non supportano la registrazione di AutoPilot, è possibile usare un profilo di AutoPilot offline. AutoPilot può essere utile durante un'installazione pulita di Windows 10 1809 o versioni successive. Come parte del profilo offline, è possibile specificare un ID correlatore. 
+
+AVVISO: dato che l'ID correlatore non è già elencato in Intune, gli utenti possono scegliere di eseguire la registrazione con qualsiasi ID correlatore desiderato. Se l'utente crea un ID correlatore corrispondente a un nome di profilo di AutoPilot o di Apple DEP, il dispositivo verrà aggiunto a un gruppo di dispositivi di Azure AD dinamico in base all'attributo enrollmentProfileName. Per evitare questo conflitto:
+- Creare sempre le regole di gruppo dinamico corrispondenti in base all'*intero* valore di enrollmentProfileName.
+- Non iniziare mai con "OfflineAutopilotprofile-" i nomi di profili AutoPilot o Apple DEP.
 
 ## <a name="next-steps"></a>Passaggi successivi
 Dopo aver configurato Windows AutoPilot per i dispositivi Windows 10 registrati, scoprire come gestire i dispositivi. Per altre informazioni, vedere [Informazioni sulla gestione dei dispositivi in Microsoft Intune](https://docs.microsoft.com/intune/device-management).

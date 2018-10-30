@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2defc433ef39562750c4579f302a9c5367c6464a
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307407"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Come configurare l'app Portale aziendale di Microsoft Intune
 
@@ -61,7 +61,7 @@ Immettere le informazioni di supporto della società, in modo da garantire al di
 
 
 ## <a name="company-branding-customization"></a>Personalizzazione del branding aziendale       
-È possibile personalizzare il portale aziendale con logo, nome dell'azienda, colore del tema e sfondo.     
+È possibile personalizzare il portale aziendale con logo, nome dell'azienda, colore del tema e sfondo. Per visualizzare rapidamente l'anteprima della configurazione di branding senza un dispositivo di test, è possibile passare a [portal.manage.microsoft.com](https://portal.manage.microsoft.com). Si noti che il logo caricato verrà usato per i modelli di posta elettronica.      
 
 ### <a name="theme-color"></a>Colore del tema
 È possibile applicare un colore del tema al portale aziendale. Selezionare un colore standard o immettere un codice esadecimale a sei cifre corrispondente a un colore personalizzato.
@@ -82,3 +82,30 @@ Caricare il logo della società per renderlo visibile nell'intera esperienza ute
 |**Mostra il nome della società accanto al logo**| Selezionare questa opzione per visualizzare il nome della società immesso accanto al logo caricato. |
 
 Dopo aver salvato le modifiche è possibile scegliere **Visualizzare l'anteprima delle impostazioni nel portale Web di Intune** nella parte superiore del pannello per visualizzare come appaiono le configurazioni.
+
+## <a name="windows-company-portal-keyboard-shortcuts"></a>Tasti di scelta rapida del portale aziendale di Windows
+
+Gli utenti finali possono usare tasti di scelta rapida per eseguire azioni di spostamento, sulle app e sui dispositivi nel portale aziendale di Windows.
+
+I tasti di scelta rapida seguenti sono disponibili nell'app Portale aziendale di Windows.
+
+| Area | Descrizione | Tasti di scelta rapida |
+|:------------------:|:--------------:|:-----------------:|
+| Menu di spostamento | Navigazione | ALT+M |
+|  | Home | ALT+H |
+|  | Tutte le app | ALT+A |
+|  | App installate | ALT+I |
+|  | Inviare commenti e suggerimenti | ALT+F |
+|  | Profilo personale | ALT+U |
+|  | Impostazioni | ALT+T |
+| Home - Riquadro dispositivo | Rinomina | F2 |
+|  | Remove | CTRL+D o CANC |
+|  | Verifica l'accesso | CTRL+M o F9 |
+| Dettagli dispositivo | Rinomina | F2 |
+|  | Remove | CTRL+D o CANC |
+|  | Verifica l'accesso | CTRL+M o F9 |
+| Dettagli dell'app | Installare | CTRL+I |
+
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Aggiungere manualmente l'app Portale aziendale di Windows 10 usando Microsoft Intune](store-apps-company-portal-app.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b39afeaf6daf8b08c58becd0b4af07299bd79e7a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330263"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101994"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Aggiungere criteri di configurazione delle app per i dispositivi iOS gestiti
 
@@ -31,7 +31,8 @@ Usare i criteri di configurazione delle app in Microsoft Intune per specificare 
 Dopo aver aggiunto un criterio di configurazione dell'app, è possibile impostare le assegnazioni per i criteri di configurazione dell'app. Quando si impostano le assegnazioni per i criteri, è possibile scegliere di includere ed escludere i gruppi di utenti ai quali vengono applicati i criteri. Quando si sceglie di includere uno o più gruppi, è possibile selezionare i gruppi specifici da includere o selezionare i gruppi predefiniti. I gruppi predefiniti includono **Tutti gli utenti**, **Tutti i dispositivi**, e **Tutti gli utenti + Tutti i dispositivi**. 
 
 >[!NOTE]
->Intune fornisce per praticità i gruppi **Tutti gli utenti** e **Tutti i dispositivi** creati in precedenza nella console con le ottimizzazioni predefinite. È consigliabile usare questi gruppi per scegliere tutti gli utenti e tutti i dispositivi invece dei gruppi 'Tutti gli utenti' o 'Tutti i dispositivi' che potrebbero essere stati creati manualmente.
+>Intune fornisce per praticità i gruppi **Tutti gli utenti** e **Tutti i dispositivi** creati in precedenza nella console con le ottimizzazioni predefinite. È consigliabile usare questi gruppi per scegliere tutti gli utenti e tutti i dispositivi invece dei gruppi 'Tutti gli utenti' o 'Tutti i dispositivi' che potrebbero essere stati creati manualmente.<p></p>
+>L'amministratore di Microsoft Intune può controllare gli account utente che vengono aggiunti alle applicazioni di Microsoft Office nei dispositivi gestiti. Può limitare l'accesso agli account utente consentiti dell'organizzazione e bloccare gli account personali nei dispositivi registrati. Le applicazioni di supporto elaborano la configurazione dell'app e rimuovono e bloccano gli account non approvati.
 
 Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'applicazione, è anche possibile scegliere i gruppi specifici da escludere. Per altre informazioni, vedere [Includere ed escludere assegnazioni di app in Microsoft Intune](apps-inc-exl-assignments.md).
 
@@ -58,7 +59,7 @@ Dopo aver selezionato i gruppi inclusi per i criteri di configurazione dell'appl
 8.  Nel riquadro **Aggiungi i criteri di configurazione** scegliere **Impostazioni di configurazione**.
 9. Selezionare **Formato delle impostazioni di configurazione**. Selezionare una delle opzioni seguenti per aggiungere informazioni XML:
     - **Usare la finestra di progettazione della configurazione**
-    - **Immettere i dati XML**<br></br>
+    - **Immettere i dati XML**<br><br>
     Per informazioni dettagliate sull'uso della finestra di progettazione della configurazione, vedere [Usare Progettazione configurazione](#use-configuration-designer). Per informazioni dettagliate sull'immissione di dati XML, vedere [Immettere i dati XML](#enter-xml-data). 
 10. Dopo aver aggiunto le informazioni XML, scegliere **OK**, quindi scegliere **Aggiungi** per aggiungere i criteri di configurazione. Viene visualizzato il riquadro di panoramica dei criteri di configurazione.
 11. Selezionare **Assegnazioni** per visualizzare le opzioni di inclusione ed esclusione. 
@@ -95,6 +96,17 @@ Microsoft Intune fornisce impostazioni di configurazione univoche per un'app. È
 2. Selezionare **Elimina**.
 
 I caratteri \{\{ e \}\} vengono usati solo dai tipi di token e non devono essere usati per altri scopi.
+
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Consentire solo gli account dell'organizzazione configurati nelle app con identità multiple 
+
+Per i dispositivi Android, usare le coppie chiave/valore seguenti:
+
+| **Key** | IntuneMAMAllowedAccountsOnly |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Valori** | <ul><li>**Enabled**: l'unico account consentito è l'account utente gestito definito dalla chiave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Disabled** (o qualsiasi valore che non corrisponda a **Enabled** senza distinzione di maiuscole/minuscole): è consentito qualsiasi account.</li></ul> |
+
+   > [!NOTE]
+   > È necessario usare OneDrive per iOS 10.34 o versioni successive e Outlook per iOS 2.99.0 o versioni successive quando si consentono solo gli account dell'organizzazione configurati con identità multiple.
 
 ## <a name="enter-xml-data"></a>Immettere i dati XML
 

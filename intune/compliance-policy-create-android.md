@@ -14,12 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85f11e3a9bfd43affde35806d9aeaf40dcbfe03d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: ed2dcda510c455be1ad532228bfbcbeb898d971a
+ms.sourcegitcommit: b7789fd2f34528275c13a717699cf53a289ed04e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906193"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48891030"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi Android in Intune
 
@@ -64,7 +64,7 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 
 <!---##  Compliance policy settings--->
 
-## <a name="device-health"></a>Integrità del dispositivo
+## <a name="device-health"></a>Device health
 
 - **Dispositivi rooted**: se si abilita questa impostazione, i dispositivi jailbroken vengono considerati non conformi.
 - **Richiedi che il dispositivo si trovi al massimo al livello di minaccia del dispositivo**: usare questa impostazione per considerare la valutazione del rischio della soluzione Lookout MTP come condizione di conformità. Scegliere il livello di minaccia massimo consentito:
@@ -77,7 +77,7 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 - **Analisi delle minacce nelle app**: richiede l'abilitazione della funzionalità **Verifica app** Android.
 
   > [!NOTE]
-  > Nella piattaforma Android legacy, questa funzionalità è un'impostazione di conformità. Intune consente solo di verificare se questa impostazione è abilitata a livello di dispositivo. Nei dispositivi con profili di lavoro Android, questa impostazione è disponibile come impostazione dei criteri di configurazione. Ciò consente agli amministratori di abilitare l'impostazione per un dispositivo.
+  > Nella piattaforma Android legacy, questa funzionalità è un'impostazione di conformità. Intune consente solo di verificare se questa impostazione è abilitata a livello di dispositivo. Nei dispositivi con profili di lavoro Android questa impostazione è disponibile come impostazione dei criteri di configurazione. Ciò consente agli amministratori di abilitare l'impostazione per un dispositivo.
 
   Se l'organizzazione usa i profili di lavoro Android, è possibile abilitare **Analisi delle minacce nelle app** per i dispositivi registrati. Stabilire un profilo del dispositivo e richiedere l'impostazione di sicurezza del sistema. Per altre informazioni, vedere [Impostazioni delle restrizioni dei dispositivi del profilo di lavoro Android in Intune](device-restrictions-android-for-work.md).
 
@@ -97,7 +97,7 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 
 - **Richiedi una password per sbloccare i dispositivi mobili**: **richiedere** agli utenti di immettere una password prima di poter accedere al dispositivo.
 - **Lunghezza minima password**: immettere il numero minimo di cifre o caratteri per la password dell'utente.
-- **Tipo di password richiesto**: scegliere se una password deve avere solo caratteri numerici oppure una combinazione di numeri e altri caratteri. È possibile scegliere tra:
+- **Tipo di password richiesto**: scegliere se una password deve avere solo caratteri numerici oppure una combinazione di numeri e altri caratteri. Scegliere tra:
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
   - **Almeno numerico**
@@ -109,7 +109,7 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 - **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, l'utente deve crearne una nuova.
 - **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password recenti che non è possibile riutilizzare. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.
 
-### <a name="encryption"></a>Encryption
+### <a name="encryption"></a>Crittografia
 
 - **Crittografia dell'archivio dati nel dispositivo** (Android 4.0 e versioni successive o KNOX 4.0 e versioni successive): scegliere **Rendi obbligatorio** per crittografare l'archivio dati nei dispositivi. I dispositivi vengono crittografati se si sceglie l'impostazione **Richiedi una password per sbloccare i dispositivi mobili**.
 

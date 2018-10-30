@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb7eb4b3845b8b5f0eafed95fa081955b99f1af7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863162"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357088"
 ---
-# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Gestire l'accesso a Internet usando i criteri dei browser protetti con Microsoft Intune  
+# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>Gestire l'accesso a Internet usando un browser protetto con criteri di Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -36,26 +36,37 @@ L'uso di un browser protetto dai criteri di Intune (Microsoft Edge o Intune Mana
 
 ## <a name="getting-started"></a>Guida introduttiva
 
+Microsoft Edge e Intune Managed Browser sono le app Web browser che amministratori e utenti finali possono scaricare dagli app store pubblici per l'uso nell'organizzazione. 
+
+Requisiti del sistema operativo per i criteri di browser:
+- Android 4 e versioni successive o
+- iOS 8.0 e versioni successive.
+
+Le versioni precedenti di Android e iOS saranno in grado di continuare a usare Managed Browser, ma non sarà possibile installare nuove versioni dell'app e le funzionalità dell'app potrebbero non essere tutte disponibili. Si consiglia di eseguire l'aggiornamento di questi dispositivi a una versione supportata del sistema operativo.
+
+>[!NOTE]
+>Managed Browser non supporta il protocollo di crittografia di Secure Sockets Layer versione 3 (SSLv3).
+
+
+## <a name="application-protection-policies-for-protected-browsers"></a>Criteri di protezione delle applicazioni per i browser protetti
+
+Poiché Microsoft Edge e Managed Browser includono l'integrazione con Intune SDK, è anche possibile applicare i criteri di protezione delle app, oltre ai seguenti criteri:
+- Controllare l'uso di taglia, copia e incolla.
+- Impedire l'acquisizione di schermate.
+- Garantire che i collegamenti aziendali vengano aperti solo all'interno di app e browser gestiti.
+
+Per altre informazioni dettagliate, vedere [Che cosa sono i criteri di protezione delle app?](app-protection-policy.md)
+
 È possibile applicare queste impostazioni ai dispositivi seguenti:
 
 - Dispositivi registrati in Intune
 - Dispositivi registrati in altro prodotto MDM
 - Dispositivi non gestiti
 
-Se gli utenti installano Managed Browser dallo store di app e Intune non lo gestisce, è possibile usare questa app come un Web browser semplice con il supporto di Single Sign-On tramite il sito Microsoft MyApps. Gli utenti vengono indirizzati direttamente al sito MyApps, in cui sono visualizzate tutte le applicazioni SaaS di cui è stato eseguito il provisioning.
+>[!NOTE]
+>Se gli utenti installano Managed Browser dallo store di app e Intune non lo gestisce, è possibile usare questa app come un Web browser semplice con il supporto di Single Sign-On tramite il sito Microsoft MyApps. Gli utenti vengono indirizzati direttamente al sito MyApps, in cui sono visualizzate tutte le applicazioni SaaS di cui è stato eseguito il provisioning.
 Fino a quando Managed Browser o Microsoft Edge non sono gestiti da Intune, non potranno accedere ai dati da altre applicazioni gestite da Intune. 
 
-Managed Browser non supporta il protocollo di crittografia di Secure Sockets Layer versione 3 (SSLv3).
-
-È possibile creare i criteri dei browser protetti per i seguenti tipi di dispositivo:
-
--   Dispositivi che eseguono Android 4 e versioni successive
-
--   Dispositivi che eseguono iOS 10.0 e versione successiva
-
->[!IMPORTANT]
->Le versioni precedenti di Android e iOS saranno in grado di continuare a usare Managed Browser, ma non sarà possibile installare nuove versioni dell'app e le funzionalità dell'app potrebbero non essere tutte disponibili. Si consiglia di eseguire l'aggiornamento di questi dispositivi a una versione supportata del sistema operativo.
-    
 
 ## <a name="conditional-access-for-protected-browsers"></a>Accesso condizionale per i browser protetti
 
@@ -82,7 +93,7 @@ Per fare in modo che le app Web connesse ad Azure AD usino Intune Managed Browse
 8. Nella sezione **Assegnazioni** selezionare **Utenti e gruppi** e quindi scegliere gli utenti o i gruppi a cui si vuole assegnare i criteri. 
 
     > [!NOTE]
-    > È necessario assegnare agli utenti anche i criteri di protezione delle app di Intune. Per altre informazioni sulla creazione dei criteri di Protezione app di Intune, vedere [Che cosa sono i criteri di protezione delle app?](app-protection-policy.md)
+    > Gli utenti devono inoltre essere destinatari dei criteri di Protezione app di Intune per ricevere i criteri di configurazione dell'app. Per altre informazioni sulla creazione dei criteri di Protezione app di Intune, vedere [Che cosa sono i criteri di protezione delle app?](app-protection-policy.md)
 
 9. Nella sezione **Assegnazioni** selezionare **App cloud** per scegliere le app da proteggere con questi criteri.
 
@@ -101,6 +112,9 @@ Per usare l'accesso SSO, è necessario che il dispositivo sia registrato dall'ap
 
 ## <a name="create-a-protected-browser-app-configuration"></a>Creare una configurazione per l'app dei browser protetti
 
+>[!IMPORTANT]
+>Per applicare le configurazioni dell'app, è necessario che il browser protetto dell'utente o un'altra app nel dispositivo sia già gestito dai [criteri di protezione delle app di Intune]( app-protection-policy.md).
+
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3.  Nel pannello **App mobili** dell'elenco di gestione scegliere **Criteri di configurazione dell'app**.
@@ -114,8 +128,6 @@ Per usare l'accesso SSO, è necessario che il dispositivo sia registrato dall'ap
 11. Nel pannello **Aggiungi i criteri di configurazione** scegliere **Aggiungi**.
 12. La nuova configurazione verrà creata e visualizzata nel pannello **Configurazione dell'app**.
 
->[!IMPORTANT]
->Attualmente, Managed Browser si basa sulla registrazione automatica. Per applicare le configurazioni dell'app, è necessario che un'altra applicazione nel dispositivo venga già gestita dai criteri di protezione delle app di Intune.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Assegnare le impostazioni di configurazione create
 
@@ -275,18 +287,7 @@ Per un elenco delle impostazioni archiviate nei log delle app, vedere [Esaminare
 ### <a name="turn-off-usage-data"></a>Disattivare la raccolta dati
 Microsoft raccoglie automaticamente dati anonimi sulle prestazioni e sull'uso di Managed Browser per migliorare prodotti e servizi Microsoft. Gli utenti possono disattivare la raccolta dei dati usando l'impostazione **Dati di utilizzo** nei propri dispositivi. L'utente non ha alcun controllo sulla raccolta di tali dati.
 
-
 -   Nei dispositivi iOS i siti Web visitati dagli utenti che hanno un certificato scaduto o non attendibile non possono essere aperti.
--   Manager Browser non usa le impostazioni create dagli utenti per il browser predefinito nei dispositivi. Managed Browser non può accedere a queste impostazioni.
-
--   Se si configura l'opzione **Richiedi PIN semplice per l'accesso** o **Richiedi credenziali aziendali per l'accesso** nei criteri di protezione dell'app associati a Managed Browser e si seleziona il collegamento alla Guida nella pagina di autenticazione, è possibile esplorare tutti i siti Internet, anche quelli aggiunti a un elenco Blocca nei criteri.
-
--   Managed Browser può bloccare l'accesso ai siti solo quando vi si accede direttamente. Non blocca l'accesso quando i servizi intermedi (ad esempio, un servizio di traduzione) vengono usati per accedere al sito.
-
--   Per consentire l'autenticazione e accedere alla documentazione di Intune, il sito **&#42;.microsoft.com** è esente dalle impostazioni degli elenchi Blocca o Consenti, perché è sempre consentito.
-
-### <a name="turn-off-usage-data"></a>Disattivare la raccolta dati
-Microsoft raccoglie automaticamente dati anonimi sulle prestazioni e sull'uso di Managed Browser per migliorare prodotti e servizi Microsoft. Gli utenti possono disattivare la raccolta dei dati usando l'impostazione **Dati di utilizzo** nei propri dispositivi. L'utente non ha alcun controllo sulla raccolta di tali dati.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/27/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 58b157cfe639651aa65e8dfb510b857d0128589a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313792"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102124"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Abilitare Windows Defender ATP con l'accesso condizionale in Intune
 
@@ -89,6 +89,10 @@ Una volta eseguito l'onboarding di un dispositivo con il pacchetto di configuraz
 6. Configurare le impostazioni:
 
   - **Tipo del pacchetto di configurazione client di Windows Defender ATP**: selezionare **Onboarding** per aggiungere il pacchetto di configurazione al profilo. Selezionare **Offboarding** per rimuovere il pacchetto di configurazione dal profilo.
+  
+    > [!NOTE] 
+    > Se è stata stabilita correttamente una connessione con Windows Defender ATP, Intune eseguirà automaticamente l'**onboarding** del profilo di configurazione.
+  
   - **Condivisione di esempi per tutti i file**: **Abilita** consente di raccogliere gli esempi e di condividerli con Windows Defender ATP. Ad esempio, se viene rilevato un file sospetto, è possibile inviarlo a Windows Defender ATP per un'analisi approfondita. **Non configurato** non condivide alcun esempio con Windows Defender ATP.
   - **Accelera la frequenza di creazione di report di telemetria**: **abilitare** questa impostazione per i dispositivi ad alto rischio, in modo che la telemetria venga segnalata più frequentemente al servizio Windows Defender ATP.
 

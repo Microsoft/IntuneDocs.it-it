@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268907"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102056"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introduzione ai criteri di conformità dei dispositivi in Intune
 
@@ -153,7 +153,7 @@ Ai dispositivi conformi alle regole dei criteri è possibile consentire l'access
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Modi per distribuire i criteri di conformità dei dispositivi
 È possibile distribuire i criteri di conformità a utenti in gruppi di utenti o a dispositivi in gruppi di dispositivi. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata su tutti i dispositivi dell'utente.
 
-La sezione **Impostazioni dei criteri di conformità** (portale di Azure > Conformità del dispositivo) include:
+Le **Impostazioni dei criteri di conformità** predefinite (portale di Azure > Conformità del dispositivo) includono:
 
 - **Contrassegna i dispositivi senza criteri di conformità assegnati come**: questa proprietà ha due valori:
 
