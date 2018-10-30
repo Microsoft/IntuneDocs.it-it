@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3778675366a19eb6ba1774f26bbb3523cdcdf92f
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ae031f601792251f1dcf7b93fb914a740bc36300
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828330"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136982"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune
 Questo articolo descrive le impostazioni dei criteri di protezione delle app per dispositivi Android. Le impostazioni dei criteri descritte possono essere [configurate](app-protection-policies.md) per i criteri di protezione delle app nel pannello **Impostazioni** del portale di Azure.
@@ -61,6 +61,7 @@ Ci sono due categorie di impostazioni dei criteri: impostazioni di rilocazione d
   | com.android.webview |[Webview](https://developer.android.com/reference/android/webkit/WebView.html), necessario per molte app tra cui Outlook.|
   | com.google.android.tts | Sintesi vocale di Google |
   | com.android.providers.settings | Impostazioni di sistema Android |
+  | com.android.settings | Impostazioni di sistema Android |
   | com.azure.authenticator | App Azure Authenticator, necessaria per il completamento dell'autenticazione in molte configurazioni. |
   | com.microsoft.windowsintune.companyportal | Intune Portale aziendale|
 

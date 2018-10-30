@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 85d0df026e49b36e148620ce2d06b4afaaf98ace
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 50fc19410b280e984c8dc3abe620baad7c3267de
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827888"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959537"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurare l'accesso del dispositivo iOS alle risorse aziendali
 
@@ -60,34 +60,34 @@ Per altre informazioni sulla registrazione, vedere [Che cosa avviene quando si i
 
 |Elemento visualizzato|Spiegazione|
 |---|---|
-|![Schermata di accesso dell'app Portale aziendale con il pulsante "Accedi" in basso.](./media/ios-01-cp-enroll-1802.png)|Aprire l'app Portale aziendale e toccare **Accedi**.|
-|![Richiesta di accesso di Azure AD.](./media/ios-02-cp-enroll-1802.png)|Immettere l'indirizzo di posta elettronica della società e toccare **Avanti**.|
-|![Richiesta di password di Azure Active Directory.](./media/ios-03-cp-enroll-1802.png)|Immettere la password e quindi toccare **Accedi**.|
-|![Schermata iniziale di caricamento delle risorse aziendali.](./media/ios-04-cp-enroll-1802.png)|Attendere il caricamento della schermata.|
-|![Pagina di termini e condizioni.](./media/ios-05-cp-enroll-1802.png)|Leggere i termini e le condizioni e fare clic su **Accetta tutto**.|
-|![Schermata di configurazione dell'accesso aziendale. È necessario eseguire determinate azioni sia nella schermata di gestione sia in quella delle impostazioni.](./media/ios-06-cp-enroll-1802.png)|Toccare **Inizio** per iniziare il processo che consentirà al dispositivo di accedere alle risorse aziendali. Se non è possibile eseguire subito questa operazione, fare clic su **Rimanda** per rimandare il processo. In questo caso, tuttavia, non sarà possibile ottenere messaggi di posta elettronica, documenti e altro ancora.|
-|![Schermata relativa agli elementi che può vedere la società.](./media/ios-07-cp-enroll-1802.png)|Toccando il link **Altre informazioni** in fondo alla schermata, è possibile sapere quali informazioni può visualizzare la società. Altrimenti, toccare **Continua**.|
-|![Schermata Passaggi successivi.](./media/ios-08-cp-enroll-1802.png)|Questa schermata illustra cosa accade durante il processo di configurazione. Sarà necessario eseguire alcune operazioni in Safari, nell'app Impostazioni e nell'app Portale aziendale. Toccare **Continua**.|
-|![Caricamento della schermata visualizzata dopo aver toccato Avanti nella schermata Passaggi successivi.](./media/ios-09-cp-enroll-1802.png)|Attendere il caricamento della schermata.|
+|![Schermata di accesso dell'app Portale aziendale con il pulsante "Accedi" in basso.](./media/ios-01-cp-enroll-1802.PNG)|Aprire l'app Portale aziendale e toccare **Accedi**.|
+|![Richiesta di accesso di Azure AD.](./media/ios-02-cp-enroll-1802.PNG)|Immettere l'indirizzo di posta elettronica della società e toccare **Avanti**.|
+|![Richiesta di password di Azure Active Directory.](./media/ios-03-cp-enroll-1802.PNG)|Immettere la password e quindi toccare **Accedi**.|
+|![Schermata iniziale di caricamento delle risorse aziendali.](./media/ios-04-cp-enroll-1802.PNG)|Attendere il caricamento della schermata.|
+|![Pagina di termini e condizioni.](./media/ios-05-cp-enroll-1802.PNG)|Leggere i termini e le condizioni e fare clic su **Accetta tutto**.|
+|![Schermata di configurazione dell'accesso aziendale. È necessario eseguire determinate azioni sia nella schermata di gestione sia in quella delle impostazioni.](./media/ios-06-cp-enroll-1802.PNG)|Toccare **Inizio** per iniziare il processo che consentirà al dispositivo di accedere alle risorse aziendali. Se non è possibile eseguire subito questa operazione, fare clic su **Rimanda** per rimandare il processo. In questo caso, tuttavia, non sarà possibile ottenere messaggi di posta elettronica, documenti e altro ancora.|
+|![Schermata relativa agli elementi che può vedere la società.](./media/ios-07-cp-enroll-1802.PNG)|Toccando il link **Altre informazioni** in fondo alla schermata, è possibile sapere quali informazioni può visualizzare la società. Altrimenti, toccare **Continua**.|
+|![Schermata Passaggi successivi.](./media/ios-08-cp-enroll-1802.PNG)|Questa schermata illustra cosa accade durante il processo di configurazione. Sarà necessario eseguire alcune operazioni in Safari, nell'app Impostazioni e nell'app Portale aziendale. Toccare **Continua**.|
+|![Caricamento della schermata visualizzata dopo aver toccato Avanti nella schermata Passaggi successivi.](./media/ios-09-cp-enroll-1802.PNG)|Attendere il caricamento della schermata.|
 |![Reindirizzamento a Safari per la registrazione.](./media/ios-cp-sent-to-safari-1808.png)|Si viene reindirizzati al browser Safari per ottenere informazioni di gestione sul dispositivo.|
-|![Messaggio di richiesta del sistema per chiedere l'autorizzazione ad aprire l'app Impostazioni.](./media/ios-8-cp-enroll-1711.png)|Toccare **Consenti** per aprire l'app Impostazioni e scaricare il profilo di configurazione. Il profilo viene installato per consentire all'azienda di gestire le informazioni aziendali presenti sul dispositivo.|
-|![Screenshot della schermata Installa profilo nelle impostazioni del dispositivo.](./media/ios-9-cp-enroll-1711.png)|Toccare **Installa**.|
-|![Finestra di dialogo modale di installazione del profilo nella parte inferiore della schermata.](./media/ios-10-cp-enroll-1711.png)|Toccare **Installa**.|
-|![Schermata di caricamento del processo di installazione del profilo.](./media/ios-11-cp-enroll-1711.png)|Attendere il caricamento della schermata.|
-|![Schermata di avviso relativa alla gestione del profilo.](./media/ios-12-cp-enroll-1711.png)|Questo avviso, scritto da Apple, consente di saperne di più sui tipi di azione che possono essere eseguiti su un dispositivo sottoposto a gestione. Per altre informazioni, vedere [Quali sono le informazioni visibili per l'azienda quando si registra il dispositivo?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)|
-|![Messaggio di richiesta del sistema per chiedere l'attendibilità della gestione remota.](./media/ios-13-cp-enroll-1711.png)|Toccare **Attendibilità** per consentire all'azienda di gestire le impostazioni e le informazioni aziendali presenti sul dispositivo.|
-|![Schermata di caricamento della fase di completamento del processo di installazione del profilo.](./media/ios-14-cp-enroll-1711.png)|Attendere il caricamento della schermata.|
-|![Schermata di conferma dell'installazione del profilo.](./media/ios-15-cp-enroll-1711.png)|Il profilo è ora installato e le impostazioni e le informazioni aziendali presenti sul dispositivo sono quasi pronte per essere gestite.|
-|![Reindirizzamento a Safari per la registrazione.](./media/ios-16-cp-enroll-1711.png)|Si viene reindirizzati al browser Safari per completare l'acquisizione delle informazioni di gestione relative al dispositivo. |
-|![Messaggio di richiesta del sistema per chiedere l'apertura dell'app Portale aziendale.](./media/ios-17-cp-enroll-1711.png)|Toccare **Apri**.|
-|![Schermata di caricamento delle risorse aziendali.](./media/ios-21-cp-enroll-1802.png)|Attendere il caricamento della schermata.|
-|![Selezionare una categoria di dispositivi nell'app Portale aziendale.](./media/ios-22-cp-enroll-1802.png)|Scegliere la categoria più idonea per il dispositivo in uso. Questa scelta dipende in genere dal proprietario del dispositivo e dal luogo in cui si trova il dispositivo nella maggior parte dei casi.|
-|![Categoria selezionata.](./media/ios-23-cp-enroll-1802.png)||
-|![Gestione del dispositivo eseguita con esito positivo. Necessità di aggiornare le impostazioni.](./media/ios-24-cp-enroll-1802.png)|Il dispositivo risulta ora correttamente gestito. Probabilmente, tuttavia, esistono ancora alcune impostazioni, ad esempio la lunghezza della password, che l'azienda richiede che vengano aggiornate. Toccare **Continua** per procedere.|
-|![Conferma delle impostazioni del dispositivo.](./media/ios-25-cp-enroll-1802.png)|L'app Portale aziendale verificherà che non siano presenti impostazioni da aggiornare.|
-|![Controllo delle impostazioni completato con versione del sistema operativo non corretta](./media/ios-26-cp-enroll-1802.png)|L'app Portale aziendale fornirà le istruzioni necessarie per correggere eventuali problemi con le impostazioni. Al termine della risoluzione dei problemi, toccare **Verifica le impostazioni**.|
-|![Schermata di caricamento di conferma delle impostazioni del dispositivo](./media/ios-27-cp-enroll-1802.png)|Il dispositivo verificherà che le impostazioni siano sufficientemente sicure per accedere alle risorse aziendali.|
-|![Impostazioni registrate e aggiornate correttamente](./media/ios-28-cp-enroll-1802.png)|A questo punto, il dispositivo è ora registrato in Intune.|
+|![Messaggio di richiesta del sistema per chiedere l'autorizzazione ad aprire l'app Impostazioni.](./media/ios-8-cp-enroll-1711.PNG)|Toccare **Consenti** per aprire l'app Impostazioni e scaricare il profilo di configurazione. Il profilo viene installato per consentire all'azienda di gestire le informazioni aziendali presenti sul dispositivo.|
+|![Screenshot della schermata Installa profilo nelle impostazioni del dispositivo.](./media/ios-9-cp-enroll-1711.PNG)|Toccare **Installa**.|
+|![Finestra di dialogo modale di installazione del profilo nella parte inferiore della schermata.](./media/ios-10-cp-enroll-1711.PNG)|Toccare **Installa**.|
+|![Schermata di caricamento del processo di installazione del profilo.](./media/ios-11-cp-enroll-1711.PNG)|Attendere il caricamento della schermata.|
+|![Schermata di avviso relativa alla gestione del profilo.](./media/ios-12-cp-enroll-1711.PNG)|Questo avviso, scritto da Apple, consente di saperne di più sui tipi di azione che possono essere eseguiti su un dispositivo sottoposto a gestione. Per altre informazioni, vedere [Quali sono le informazioni visibili per l'azienda quando si registra il dispositivo?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)|
+|![Messaggio di richiesta del sistema per chiedere l'attendibilità della gestione remota.](./media/ios-13-cp-enroll-1711.PNG)|Toccare **Attendibilità** per consentire all'azienda di gestire le impostazioni e le informazioni aziendali presenti sul dispositivo.|
+|![Schermata di caricamento della fase di completamento del processo di installazione del profilo.](./media/ios-14-cp-enroll-1711.PNG)|Attendere il caricamento della schermata.|
+|![Schermata di conferma dell'installazione del profilo.](./media/ios-15-cp-enroll-1711.PNG)|Il profilo è ora installato e le impostazioni e le informazioni aziendali presenti sul dispositivo sono quasi pronte per essere gestite.|
+|![Reindirizzamento a Safari per la registrazione.](./media/ios-16-cp-enroll-1711.PNG)|Si viene reindirizzati al browser Safari per completare l'acquisizione delle informazioni di gestione relative al dispositivo. |
+|![Messaggio di richiesta del sistema per chiedere l'apertura dell'app Portale aziendale.](./media/ios-17-cp-enroll-1711.PNG)|Toccare **Apri**.|
+|![Schermata di caricamento delle risorse aziendali.](./media/ios-21-cp-enroll-1802.PNG)|Attendere il caricamento della schermata.|
+|![Selezionare una categoria di dispositivi nell'app Portale aziendale.](./media/ios-22-cp-enroll-1802.PNG)|Scegliere la categoria più idonea per il dispositivo in uso. Questa scelta dipende in genere dal proprietario del dispositivo e dal luogo in cui si trova il dispositivo nella maggior parte dei casi.|
+|![Categoria selezionata.](./media/ios-23-cp-enroll-1802.PNG)||
+|![Gestione del dispositivo eseguita con esito positivo. Necessità di aggiornare le impostazioni.](./media/ios-24-cp-enroll-1802.PNG)|Il dispositivo risulta ora correttamente gestito. Probabilmente, tuttavia, esistono ancora alcune impostazioni, ad esempio la lunghezza della password, che l'azienda richiede che vengano aggiornate. Toccare **Continua** per procedere.|
+|![Conferma delle impostazioni del dispositivo.](./media/ios-25-cp-enroll-1802.PNG)|L'app Portale aziendale verificherà che non siano presenti impostazioni da aggiornare.|
+|![Controllo delle impostazioni completato con versione del sistema operativo non corretta](./media/ios-26-cp-enroll-1802.PNG)|L'app Portale aziendale fornirà le istruzioni necessarie per correggere eventuali problemi con le impostazioni. Al termine della risoluzione dei problemi, toccare **Verifica le impostazioni**.|
+|![Schermata di caricamento di conferma delle impostazioni del dispositivo](./media/ios-27-cp-enroll-1802.PNG)|Il dispositivo verificherà che le impostazioni siano sufficientemente sicure per accedere alle risorse aziendali.|
+|![Impostazioni registrate e aggiornate correttamente](./media/ios-28-cp-enroll-1802.PNG)|A questo punto, il dispositivo è ora registrato in Intune.|
 
 > [!Note]
 > È possibile che sia necessario eseguire ancora alcuni passaggi prima che il dispositivo sia completamente gestito. Vedere altre informazioni sulla [registrazione del dispositivo con la gestione delle spese per le telecomunicazioni](enroll-your-device-with-telecom-expense-management-ios.md). Se l'organizzazione usa Device Enrollment Program di Apple, vedere altre informazioni [qui](enroll-your-device-dep-ios.md).

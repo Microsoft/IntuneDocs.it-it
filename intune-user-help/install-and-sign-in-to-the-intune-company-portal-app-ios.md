@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.openlocfilehash: 870590df70474db02dc4b3e4ba5a8251aeeb2f26
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260199"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959469"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Installare e accedere all'app Portale aziendale
 
@@ -32,7 +32,7 @@ Installare l'app Portale aziendale nel dispositivo iOS per ottenere l'accesso al
 
 2.  Scaricare l'app **Portale aziendale Intune**.
 
-    ![Screenshot di come viene visualizzata l'app Portale aziendale Intune nell'App Store.](./media/cp_iosredesign_after_1803_04.png)
+    ![Screenshot di come viene visualizzata l'app Portale aziendale Intune nell'App Store.](./media/CP_iosRedesign_after_1803_04.PNG)
 
 3.  Aprire l'app Portale aziendale, immettere l'indirizzo di posta elettronica e la password aziendale o dell'istituto di istruzione e toccare **Accedi**.
 
