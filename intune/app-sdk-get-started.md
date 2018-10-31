@@ -13,13 +13,13 @@ ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 8e22c0caf7b99bcb7a81259829369b7671056abe
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.custom: intune
+ms.openlocfilehash: 5cb90b7f1dc72a67f48ba40db8a6ab4ffe598243
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058949"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425037"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
@@ -161,9 +161,9 @@ Dopo aver completato i passaggi necessari per integrare l'app per iOS o Android 
 
     * Se si sta sviluppando un'app line-of-business che non verrà inviata allo store, l'accesso a Microsoft Intune deve essere fornito dall'organizzazione. Si può anche richiedere un mese di valutazione gratuita con [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
 
-* **Criteri di protezione delle app di Intune**: per testare l'app con tutti i criteri di protezione delle app di Intune, è necessario conoscere il comportamento previsto per ogni impostazione dei criteri. Vedere le descrizioni dei [criteri di protezione delle app iOS](/intune-classic/deploy-use/ios-mam-policy-settings) e dei [criteri di protezione delle app Android](/intune-classic/deploy-use/android-mam-policy-settings).
+* **Criteri di protezione delle app di Intune**: per testare l'app con tutti i criteri di protezione delle app di Intune, è necessario conoscere il comportamento previsto per ogni impostazione dei criteri. Vedere le descrizioni dei [criteri di protezione delle app iOS](app-protection-policy-settings-ios.md) e dei [criteri di protezione delle app Android](app-protection-policy-settings-android.md).
 
-* **Risoluzione dei problemi**: se si verificano problemi durante i test manuali dell'esperienza utente per l'app, vedere [Risolvere i problemi relativi alla gestione di applicazioni mobili](/intune-classic/troubleshoot/troubleshoot-mam). Questo articolo offre assistenza per i problemi comuni, le finestre di dialogo e i messaggi di errore che possono presentarsi nelle app gestite da Intune. 
+* **Risoluzione dei problemi**: se si verificano problemi durante i test manuali dell'esperienza utente di installazione dell'app, vedere [Risolvere i problemi di installazione delle app](troubleshoot-app-install.md). 
 
 ### <a name="badge-your-app-optional"></a>Aggiungere il logo all'app (facoltativo)
 

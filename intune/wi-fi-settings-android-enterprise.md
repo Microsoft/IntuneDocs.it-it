@@ -1,7 +1,7 @@
 ---
-title: Configurare le impostazioni Wi-Fi per dispositivi Android in Microsoft Intune - Azure | Microsoft Docs
+title: Configurare le impostazioni Wi-Fi per i dispositivi Android Enterprise e i dispositivi in modalità tutto schermo - Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: Creare o aggiungere un profilo di configurazione Wi-Fi per i dispositivi Android. Vedere le diverse impostazioni, incluse l'aggiunta di certificati, la scelta di un tipo EAP e la selezione di un metodo di autenticazione in Microsoft Intune.
+description: Creare o aggiungere un profilo di configurazione del dispositivo Wi-Fi per dispositivi Android Enterprise e Android in modalità a tutto schermo. Vedere le diverse impostazioni, incluse l'aggiunta di certificati, la scelta di un tipo EAP e la selezione di un metodo di autenticazione in Microsoft Intune. Per i dispositivi in modalità a tutto schermo, immettere anche la chiave precondivisa della rete.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,18 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7c0d11e7670134c6a2cd9ce2eb72714ba64aa03
+ms.openlocfilehash: c2983f2f7b7079f73c857bf7caafe4236373c5dc
 ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424986"
+ms.locfileid: "49431950"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Aggiungere le impostazioni Wi-Fi per i dispositivi che eseguono Android in Microsoft Intune
+# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Aggiungere le impostazioni Wi-Fi per i dispositivi che eseguono Android Enterprise e i dispositivi Android in modalità tutto schermo in Microsoft Intune
 
-È possibile creare un profilo con impostazioni Wi-Fi specifiche e quindi distribuire questo profilo ai dispositivi Android. Microsoft Intune offre numerose funzionalità, tra cui l'autenticazione in rete, l'aggiunta di un certificato PKS o SCEP e altro ancora.
-
-Queste impostazioni Wi-Fi sono divise in due categorie: impostazioni di base e impostazioni di livello enterprise.
+È possibile creare un profilo con impostazioni Wi-Fi specifiche e quindi distribuire questo profilo ai dispositivi Android Enterprise e Android in modalità tutto schermo. Microsoft Intune offre numerose funzionalità, tra cui l'autenticazione nella rete, l'uso di una chiave precondivisa e altro ancora.
 
 Questo articolo descrive queste impostazioni.
 
@@ -32,7 +30,25 @@ Questo articolo descrive queste impostazioni.
 
 [Creare un profilo di dispositivo](device-profile-create.md).
 
-## <a name="basic-profile"></a>Profilo di base
+## <a name="device-owner-only---kiosk"></a>Solo proprietario del dispositivo - Modalità tutto schermo
+
+Selezionare questa opzione se si usa un dispositivo Android Enterprise in modalità tutto schermo.
+
+- **Nome rete**: immettere un nome per questa connessione Wi-Fi. Questo valore è il nome che gli utenti visualizzano quando sfogliano l'elenco delle connessioni disponibili nel dispositivo.
+- **SSID**: acronimo di Service Set Identifier, **identificatore del set di servizi**. Questa impostazione è il nome reale della rete wireless a cui si connettono i dispositivi. Quando scelgono la connessione, gli utenti, tuttavia, visualizzano solo il **nome di rete** configurato in precedenza.
+- **Connetti automaticamente**: scegliere **Abilita** per connettersi automaticamente a questa rete quando il dispositivo è nel campo. Scegliere **Disabilita** per impedire la connessione automatica ai dispositivi.
+- **Rete nascosta**: scegliere **Abilita** per nascondere questa rete dall'elenco delle reti disponibili nel dispositivo. L'identificatore SSID non viene trasmesso. Scegliere **Disabilita** per visualizzare questa rete nell'elenco delle reti disponibili nel dispositivo.
+- **Tipo Wi-Fi**: selezionare il protocollo di sicurezza per l'autenticazione nella rete Wi-Fi. Le opzioni disponibili sono:
+
+  - **Apri (nessuna autenticazione)**: usare questa opzione solo se la rete non è protetta.
+  - **WEP - Chiave precondivisa**: immettere la password in **Chiave precondivisa**. Quando viene configurata la rete dell'organizzazione, viene configurata anche una password o una chiave di rete. Immettere questa password o chiave di rete per il valore di chiave precondivisa.
+  - **WPA - Chiave precondivisa**: immettere la password in **Chiave precondivisa**. Quando viene configurata la rete dell'organizzazione, viene configurata anche una password o una chiave di rete. Immettere questa password o chiave di rete per il valore di chiave precondivisa.
+
+Selezionare **OK** per salvare le modifiche.
+
+## <a name="work-profile-only"></a>Solo profilo di lavoro
+
+### <a name="basic-settings"></a>Impostazioni di base
 
 - **Tipo Wi-Fi**: scegliere **Base**.
 - **SSID**: acronimo di Service Set Identifier, **identificatore del set di servizi**. Questa impostazione è il nome reale della rete wireless a cui si connettono i dispositivi.
@@ -103,6 +119,5 @@ Il profilo viene creato, ma non è ancora operativo. [Assegnare il profilo](devi
 
 ## <a name="more-resources"></a>Altre risorse
 
+- Vedere le impostazioni disponibili per i dispositivi Android in [Configurare le impostazioni Wi-Fi per dispositivi Android in Microsoft Intune](wi-fi-settings-android.md).
 - [Panoramica delle impostazioni Wi-Fi](wi-fi-settings-configure.md), incluse altre piattaforme.
-
-- Se si usano dispositivi Android Enterprise o Android in modalità tutto schermo, vedere le [impostazioni Wi-Fi per i dispositivi che eseguono Android Enterprise e Android in modalità tutto schermo](wi-fi-settings-android-enterprise.md).

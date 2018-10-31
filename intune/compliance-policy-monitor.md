@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/30/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0af5fb071c6abb01a2819a5d9c73f4e01bf7cb7a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3c103049d22c9834ecb01065686e8678144c9cae
+ms.sourcegitcommit: 8a22afcc8c7479c437c8c66da9cb2117890f0ab0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312833"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410364"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -140,6 +140,9 @@ Il report **Conformità del dispositivo** > **Conformità delle impostazioni** c
 ![Visualizzare un elenco di tutte le impostazioni nei vari criteri](./media/compliance-policy-monitor/idc-10.png)
 
 Quando si seleziona un'impostazione specifica, è possibile visualizzare lo **stato di conformità**, l'**alias di posta elettronica dell'utente**, il **modello del dispositivo** e la **posizione** per ogni dispositivo a cui viene applicata tale impostazione.
+
+> [!NOTE]
+> I dispositivi Windows 10 aggiunti ad Azure AD possono visualizzare l'account di sistema come utente non conforme. Si tratta di un comportamento previsto che non influisce sulla conformità complessiva del dispositivo. 
 
 ## <a name="view-status-of-device-policies"></a>Visualizzare lo stato dei criteri dei dispositivi
 

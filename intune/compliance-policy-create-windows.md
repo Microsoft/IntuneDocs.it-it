@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11ccace4ca8e43e09b8aebeb92530629cf50a472
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602317"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642905"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi Windows in Intune
 
@@ -119,8 +119,6 @@ I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione de
 
 Per informazioni su come funziona il servizio di attestazione dell'integrità, vedere [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP di attestazione dell'integrità).
 
-Per configurare Windows Defender ATP (Advanced Threat Protection) come servizio di difesa dalle minacce, vedere [Abilitare Windows Defender ATP con l'accesso condizionale](advanced-threat-protection.md).
-
 ### <a name="device-properties"></a>Proprietà dispositivo
 
 - **Versione minima del sistema operativo**: immettere la versione minima ammessa, usando il formato **numerico major.minor.build.CU**. Per ottenere il valore corretto, aprire un prompt dei comandi e digitare `ver`. Il comando `ver` restituisce la versione nel formato seguente:
@@ -183,6 +181,8 @@ Per configurare Windows Defender ATP (Advanced Threat Protection) come servizio 
   - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
   - **Media**: il dispositivo viene valutato come conforme se le minacce esistenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
   - **Alta**: questa opzione è la meno sicura e consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
+  
+  Per configurare Windows Defender ATP (Advanced Threat Protection) come servizio di difesa dalle minacce, vedere [Abilitare Windows Defender ATP con l'accesso condizionale](advanced-threat-protection.md).
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 

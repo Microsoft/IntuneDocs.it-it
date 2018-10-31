@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/17/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73e1e0a27d128d567a924e6f2b343026b11f1a44
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 9d9169ab353da30e0f7b292cea4f5b9c93e316aa
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581652"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391553"
 ---
 # <a name="quickstart-add-a-device-compliance-policy-for-a-windows-10-device"></a>Guida rapida: aggiungere i criteri di conformità per un dispositivo Windows 10
 I criteri di conformità di un dispositivo Windows in Intune specificano le regole e le impostazioni che i dispositivi Windows devono soddisfare per essere considerati conformi. Questi criteri con [accesso condizionale](https://docs.microsoft.com/intune/conditional-access) possono essere usati per consentire o bloccare l'accesso alle risorse aziendali. È anche possibile ottenere i report di dispositivo e intraprendere azioni per la mancata conformità.
@@ -53,4 +53,4 @@ Quando non è più necessario, eliminare il criterio. A tale scopo, selezionare 
 In questa guida introduttiva è stato creato e assegnato un semplice criterio di conformità del dispositivo. Per registrare un dispositivo Windows 10 affinché riceva il criterio, passare alla guida rapida che spiega come configurare la registrazione automatica. 
  
 > [!div class="nextstepaction"]
-> [Configurare la registrazione automatica ](quickstart-setup-auto-enrollment.md)
+> [Impostare la lunghezza della password per il dispositivo](quickstart-set-password-length-android.md)

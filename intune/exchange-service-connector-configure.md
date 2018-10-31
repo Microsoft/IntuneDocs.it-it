@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/01/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,20 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6be3694a18cd0df09b52b535a0fcd2050bf7a98
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 46d28ba8d9d8c6ec2adf2b41adbb9e7336676811
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231245"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642988"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Configurare il connettore del servizio Exchange per Intune ed Exchange Online
-
 Questo articolo illustra come connettere il servizio Microsoft Intune a Exchange Online oppure al nuovo servizio Exchange Online dedicato. Per determinare se la configurazione dell'ambiente Exchange Online dedicato è la versione **nuova** o **legacy**, contattare l'account manager.
 
+Con **Service to Service Connector** è possibile gestire sia dispositivi Exchange ActiveSync (EAS) che dispositivi gestiti da Intune da un'unica console di amministrazione.  Non è necessario che il connettore abiliti l'accesso condizionale per Exchange Online.
+
 ## <a name="service-to-service-connector-requirements"></a>Requisiti per Service to Service Connector
-**Service to Service Connector** supporta solo Exchange Online o l'ambiente Exchange Online dedicato e non presenta requisiti per un'infrastruttura locale.
+**Service to Service Connector** supporta solo Exchange Online o l'ambiente Exchange Online dedicato e non presenta requisiti per un'infrastruttura locale. 
 
 
 |              Requisito               |                                                                                                            Altre informazioni                                                                                                            |
@@ -68,5 +69,4 @@ Dopo avere correttamente configurato il connettore da servizio a servizio per Ex
 
 È anche possibile verificare lo **stato della connessione** e la data e ora dell'ultimo tentativo di sincronizzazione riuscito.
 
-## <a name="next-steps"></a>Passaggi successivi
-[Monitorare l'accesso condizionale per Exchange in Microsoft Intune](conditional-access-exchange-monitor.md)
+ 

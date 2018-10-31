@@ -5,23 +5,27 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/2/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: 59e2ab4635c8488b99781ac123aacd0854967dc8
+ms.sourcegitcommit: c3ac9e5f6240223cb5dfed8b44c7425066d6ea86
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562868"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49380032"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Impostazioni relative alla modalità tutto schermo per Windows 10 e versioni successive in Intune
 
-I profili di modalità tutto schermo vengono usati per configurare i dispositivi Windows 10 per l'esecuzione di una o più app. Quando si crea un profilo di modalità tutto schermo è anche possibile scegliere se verrà visualizzato un menu Start, se verrà installato un Web browser e altro ancora.
+Nei dispositivi Windows 10 è possibile usare Intune per l'esecuzione di questi dispositivi in modalità tutto schermo. Nella modalità tutto schermo (nota anche come chiosco multimediale) è possibile eseguire un'app o molte app. È anche possibile visualizzare e personalizzare un menu Start, aggiungere app diverse, incluse app Win32, aggiungere una specifica home page per un Web browser e molto altro. 
+
+Usare le procedure descritte in questo articolo per creare un chiosco multimediale con una singola app o con più app in Intune.
+
+Intune supporta un profilo in modalità a tutto schermo per ogni dispositivo. Se servono più profili per la modalità tutto schermo in un singolo dispositivo, è possibile usare un [OMA-URI personalizzato](custom-settings-windows-10.md).
 
 ## <a name="kiosk-settings"></a>Impostazioni della modalità tutto schermo
 
@@ -30,100 +34,161 @@ I profili di modalità tutto schermo vengono usati per configurare i dispositivi
 3. Immettere le seguenti proprietà:
 
    - **Nome**: immettere un nome descrittivo per il nuovo profilo.
-   - **Descrizione:** immettere una descrizione per il profilo. Facoltativa, ma consigliata.
+   - **Descrizione:** immettere una descrizione per il profilo. Questa impostazione è facoltativa ma consigliata.
    - **Piattaforma**: selezionare **Windows 10 e versioni successive**
    - **Tipo di profilo**: selezionare **Modalità tutto schermo (anteprima)**
-   
-4. Selezionare **Modalità tutto schermo** > **Aggiungi**.
-5. Immettere il **nome di una configurazione di modalità tutto schermo**. Questo nome identifica un gruppo di applicazioni, il layout di queste app nel menu Start e gli utenti assegnati a questa configurazione di modalità tutto schermo.
-6. Selezionare la **modalità tutto schermo**. La **modalità tutto schermo** identifica il tipo di modalità tutto schermo supportata dal criterio. Le opzioni includono:
+
+4. Selezionare una **modalità tutto schermo**. La **modalità tutto schermo** identifica il tipo di modalità tutto schermo supportata dal criterio. Le opzioni includono:
 
     - **Non configurata** (impostazione predefinita): il criterio non abilita la modalità tutto schermo.
-    - **App singola per chiosco multimediale a schermo intero**: il profilo abilita il dispositivo per l'esecuzione come singolo account utente e lo blocca su un'unica app UWP (Universal Windows Platform). Pertanto, quando l'utente accede, viene avviata un'app specifica. Questa modalità impedisce anche all'utente di aprire nuove app o modificare l'app in esecuzione.
-    - **Più app in modalità tutto schermo**: il profilo abilita il dispositivo per l'esecuzione di più app UWP (Universal Windows Platform) o app Win32. È anche possibile assegnare app diverse ad account utente diversi. Solo le app aggiunte sono disponibili agli utenti. Il vantaggio di avere più app in modalità tutto schermo, o un dispositivo predefinito per uno scopo, consiste nel garantire un'esperienza semplice, consentendo di accedere solo alle app necessarie e rimuovendo dalla visualizzazione le app non necessarie.
+    - **App singola per chiosco multimediale a schermo intero**: il dispositivo viene eseguito con un singolo account utente e bloccato su una singola app dello Store. Pertanto, quando l'utente accede, viene avviata un'app specifica. Questa modalità impedisce anche all'utente di aprire nuove app o modificare l'app in esecuzione.
+    - **App multiple per chiosco multimediale**: il dispositivo esegue più app dello Store, app Win32 o app predefinite di Windows tramite ID modello utente applicazione (AUMID). Solo le app aggiunte sono disponibili nel dispositivo.
 
-#### <a name="single-full-screen-app-kiosks"></a>App singola per chioschi multimediali a schermo intero
-Immettere le impostazioni seguenti:
+        Il vantaggio di avere più app in modalità tutto schermo, o un dispositivo predefinito per uno scopo, consiste nel garantire un'esperienza semplice, consentendo di accedere solo alle app necessarie e rimuovendo dalla visualizzazione le app non necessarie.
 
-- **Identificatore dell'app UWP (Universal Windows Platform)**: Immettere l'**ID modello utente applicazione (AUMID, Application User Model ID)** dell'app in modalità tutto schermo. Oppure selezionare un'app gestita esistente aggiunta tramite [App client](apps-add.md).
+## <a name="single-full-screen-app-kiosks"></a>App singola per chioschi multimediali a schermo intero
+Quando si sceglie la modalità App singola per chiosco multimediale a schermo intero, immettere le impostazioni seguenti:
 
-    Vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata).
+- **Tipo di accesso utente**: le app aggiunte vengono eseguite con l'account utente immesso. Le opzioni disponibili sono:
 
-- **Tipo di account utente**: le opzioni disponibili sono le seguenti.
+  - **Accesso automatico (Windows 10, versione 1803+)**: per i dispositivi in modalità tutto schermo in ambienti pubblici che non richiedono all'utente di eseguire l'accesso, in modo simile a un account guest. Questa impostazione usa il [provider di servizi di configurazione AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Account utente locale**: immettere l'account utente locale (per il dispositivo). L'account specificato viene usato per accedere al chiosco multimediale.
 
-  - **Accesso automatico**: per i chioschi multimediali in ambienti pubblici con accesso automatico abilitato, è necessario usare un utente con privilegi minimi, ad esempio l'account utente standard locale. Per configurare un account Azure Active Directory (AD) per la modalità tutto schermo, usare il formato `AzureAD\user@contoso.com`.
-  - **Account utente locale**: immettere l'account utente locale (per il dispositivo) o l'account di accesso di Azure AD associato all'app in modalità tutto schermo. Per gli account aggiunti ai domini di Azure AD, immettere l'account nel formato `domain\username@tenant.org`.
+- **Tipo di applicazione**: selezionare **App Store**.
 
-#### <a name="multi-app-kiosks"></a>Più app in modalità tutto schermo
-Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app che l'utente può aprire. 
+- **App da eseguire in modalità tutto schermo**: scegliere **Aggiungi un'app dello Store** e selezionare un'app nell'elenco.
 
-In [Più app in modalità tutto schermo](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) si usa una configurazione per chiosco multimediale che elenca le app consentite e altre impostazioni.
+    Se l'elenco non include app, aggiungerne qualcuna seguendo la procedura in [App client](apps-add.md).
 
-Immettere le impostazioni seguenti:
+    Selezionare **OK** per salvare le modifiche.
 
-- **Aggiungi un'app di Win32**: un'app Win32 è un'app desktop tradizionale. Compilare i campi **Nome dell'app** e **Identificatore**. Il campo **Identificatore** deve contenere il nome del percorso completo del file eseguibile, relativo al dispositivo.
-- **Aggiungi app gestite**: selezionare un'app gestita esistente aggiunta tramite [App client in Intune](apps-add.md).
-- **Aggiungi un'app in base all'ID modello utente applicazione**: immettere l'[ID modello utente dell'applicazione](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (app UWP).
-- **Barra delle applicazioni**: scegliere di **abilitare** (visualizzare) la barra delle applicazioni o di mantenerlo **non configurata** (nascosta) nel chiosco multimediale.
-- **Layout del menu Start**: immettere un file XML che descrive come le app vengono visualizzate nel menu Start, incluso il relativo ordine. Leggere [Personalizzare ed esportare il layout della schermata Start](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) per conoscere alcune linee guida e XML di esempio.
+- **Impostazioni del browser in modalità tutto schermo**: queste impostazioni consentono di controllare un'app Web browser nel dispositivo in modalità tutto schermo. Assicurarsi di ottenere l'[app browser in modalità tutto schermo](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) dallo Store, aggiungerla a Intune come [app client](apps-add.md) e quindi assegnare l'app ai dispositivi in modalità tutto schermo.
 
-  In [Creare un chiosco multimediale Windows 10 che esegue più app](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) sono disponibili altri dettagli sull'uso e la creazione di file XML.
+  Immettere le impostazioni seguenti:
 
-- **Tipo di account utente**: aggiungere uno o più account utente autorizzati a usare le app aggiunte. Quando l'account esegue l'accesso, sono disponibili solo le app definite nella configurazione. L'account può essere locale per il dispositivo o un account di accesso di Azure AD associato all'app in modalità tutto schermo.
+  - **URL della home page predefinita**: immettere l'URL predefinito visualizzato all'apertura o al riavvio del browser in modalità tutto schermo. Ad esempio, immettere `http://bing.com` o `http://www.contoso.com`.
 
-    Per i chioschi multimediali in ambienti pubblici con accesso automatico abilitato, è necessario usare un tipo di utente con privilegi minimi, ad esempio l'account utente standard locale. Per configurare un account Azure Active Directory (AD) per la modalità tutto schermo, usare il formato `domain\user@tenant.com`.
+  - **Pulsante Pagina iniziale**: scegliere **Mostra** o **Nascondi** per il pulsante Pagina iniziale del browser in modalità tutto schermo. Per impostazione predefinita, il pulsante non viene visualizzato.
 
-## <a name="kiosk-web-browser-settings"></a>Impostazioni del Web browser in modalità tutto schermo
+  - **Pulsanti di spostamento**: scegliere **Mostra** o **Nascondi** per i pulsanti Avanti e Indietro. Per impostazione predefinita, i pulsanti di spostamento non sono visualizzati.
 
-Queste impostazioni controllano un'app Web browser in modalità tutto schermo. Assicurarsi di avere distribuito un'app Web browser ai dispositivi in modalità tutto schermo usando [App client](apps-add.md).
+  - **Pulsante Termina sessione**: scegliere **Mostra** o **Nascondi** per il pulsante Termina sessione. Quando visualizzato, l'utente seleziona il pulsante e l'app chiede conferma della chiusura della sessione. Se confermata, il browser cancella tutti i dati di esplorazione (cookie, cache e così via) e quindi apre l'URL predefinito. Per impostazione predefinita, il pulsante non viene visualizzato.
 
-1. Immettere le impostazioni seguenti:
+  - **Aggiorna il browser dopo il tempo di inattività**: immettere la quantità di tempo di inattività (da 1 a 1440 minuti) trascorso il quale il browser in modalità tutto schermo viene riavviato. Il tempo di inattività è il numero di minuti dopo l'ultima interazione dell'utente. Per impostazione predefinita, il valore è vuoto, ovvero non è configurato alcun timeout di inattività.
 
-    - **URL della home page predefinita**: immettere l'URL predefinito che verrà aperto dal browser in modalità tutto schermo all'apertura o al riavvio del browser.
+  - **Siti Web consentiti**: usare questa impostazione per consentire l'apertura di siti Web specifici. In altre parole, usare questa funzionalità per limitare o bloccare siti Web nel dispositivo. Ad esempio, è possibile consentire l'apertura di tutti i siti Web in `http://contoso.com*`. Per impostazione predefinita, sono consentiti tutti i siti Web.
 
-    - **Pulsante Pagina iniziale**: visualizza (**Consenti**) o nasconde (**Non configurato**) il pulsante Pagina iniziale del browser in modalità tutto schermo. Per impostazione predefinita, il pulsante è Non configurato.
+    Per consentire siti Web specifici, caricare un file CSV che include un elenco dei siti Web consentiti. Se non si aggiunge un file CSV, sono consentiti tutti i siti Web. Intune supporta * (asterisco) come carattere jolly.
 
-    - **Pulsante di spostamento**: visualizza (**Consenti**) o nasconde (**Non configurato**) i pulsanti Avanti e Indietro. Per impostazione predefinita, i pulsanti di spostamento sono Non configurati.
+  Selezionare **OK** per salvare le modifiche.
 
-    - **Pulsante Termina sessione**: visualizza (**Consenti**) o nasconde (**Non configurato**) il pulsante Termina sessione. Quando visualizzato, l'utente seleziona il pulsante e l'app chiede conferma della chiusura della sessione. Se confermata, il browser cancella tutti i dati di esplorazione (cookie, cache e così via) e torna all'URL predefinito. Per impostazione predefinita, il pulsante è Non configurato. 
+## <a name="multi-app-kiosks"></a>Più app in modalità tutto schermo
 
-    - **Aggiorna il browser quando un utente supera il limite relativo al tempo di inattività**: specificare il numero di minuti di inattività della sessione prima del riavvio del browser in modalità tutto schermo con uno stato aggiornato. Il valore è un numero intero da 1 a 1440 minuti. Per impostazione predefinita, il valore è vuoto, ovvero non è indicato alcun timeout di inattività.
+Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app che l'utente può aprire.
 
-    - **Siti Web bloccati**: elenco di URL di siti Web bloccati (con supporto di caratteri jolly). Usare questa impostazione per impedire al browser di aprire siti specifici. È anche possibile **importare** un file con estensione csv contenente un elenco. Oppure creare un file con estensione csv (**Esporta**) contenente i siti aggiunti.
+Quando si sceglie la modalità tutto schermo per più app, immettere le impostazioni seguenti:
 
-    - **Eccezioni per i siti Web**: elenco di eccezioni agli URL di siti Web bloccati (con supporto di caratteri jolly). Usare questa impostazione per consentire al browser di aprire siti specifici. Queste eccezioni sono un subset degli URL bloccati. Se un URL è presente nell'elenco dei siti Web bloccati e nell'elenco delle eccezioni dei siti Web, viene applicata l'eccezione.
+- **Specifica Windows 10 come destinazione nei dispositivi in modalità S**: scegliere **Sì** per consentire le app dello Store e le app AUMID (sono escluse le app Win32) nel profilo in modalità tutto schermo. Scegli **No** per consentire le app dello Store, le app Win32 e le app AUMID nel profilo in modalità tutto schermo. Quando si sceglie **No**, questo profilo in modalità tutto schermo non viene distribuito nei dispositivi in modalità S.
 
-    È anche possibile **importare** un file con estensione csv contenente un elenco. Oppure creare un file con estensione csv (**Esporta**) contenente i siti aggiunti.
+- **Tipo di accesso utente**: le app aggiunte vengono eseguite con l'account utente immesso. Le opzioni disponibili sono:
 
-2. Selezionare **OK** per salvare le modifiche.
+  - **Accesso automatico (Windows 10, versione 1803+)**: per i dispositivi in modalità tutto schermo in ambienti pubblici che non richiedono all'utente di eseguire l'accesso, in modo simile a un account guest. Questa impostazione usa il [provider di servizi di configurazione AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Account utente locale**: **aggiungere** l'account utente locale (per il dispositivo). L'account specificato viene usato per accedere al chiosco multimediale.
+  - **Utente o gruppo di Azure AD (Windows 10, versione 1803+)**: selezionare **Aggiungi** per scegliere gli utenti o i gruppi di Azure nell'elenco. È possibile selezionare più utenti e gruppi. Scegliere **OK** per salvare le modifiche.
+  - **Visitatore di HoloLens**: l'account del visitatore è un account Guest che non richiede credenziali utente o autenticazione, come descritto in [Concetti della modalità PC condiviso](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+
+- **Applicazioni**: aggiungere le app da eseguire nel dispositivo in modalità tutto schermo. Ricordarsi che è possibile aggiungere più app.
+
+  - **Aggiungi l'app dello Store**: aggiungere un'app da Microsoft Store per le aziende. Se l'elenco non include alcuna app, è possibile ottenerle e [aggiungerle a Intune](store-apps-windows.md). Ad esempio, è possibile aggiungere un browser in modalità tutto schermo, Excel, OneNote e altro ancora.
+
+  - **Aggiungi un'app di Win32**: un'app Win32 è un'app desktop tradizionale, ad esempio Visual Studio Code o Google Chrome. Immettere le seguenti proprietà:
+
+    - **Nome applicazione**: obbligatorio. Immettere un nome per l'applicazione.
+    - **Percorso locale**: obbligatorio. Immettere il percorso del file eseguibile, ad esempio `C:\Program Files (x86)\Microsoft VS Code\Code.exe` o `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
+    - **ID modello utente applicazione (AUMID)**: facoltativo. Immettere l'ID modello utente applicazione (AUMID) dell'app Win32. Questa impostazione determina il layout iniziale del riquadro sul desktop. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
+    - **Dimensioni del riquadro**: obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
+  
+  - **Aggiungi in base all'ID modello utente applicazione**: usare questa opzione per aggiungere app predefinite di Windows come il Blocco note o la Calcolatrice. Immettere le seguenti proprietà: 
+
+    - **Nome applicazione**: obbligatorio. Immettere un nome per l'applicazione.
+    - **ID modello utente applicazione (AUMID)**: obbligatorio. Immettere l'ID modello utente applicazione (AUMID) dell'app Windows. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
+    - **Dimensioni del riquadro**: obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
+
+  > [!TIP]
+  > Dopo aver aggiunto tutte le app, è possibile modificarne l'ordine di visualizzazione facendo clic e trascinando le app nell'elenco.  
+
+  Selezionare **OK** per salvare le modifiche.
+
+- **Impostazioni del browser in modalità tutto schermo**: queste impostazioni consentono di controllare un'app Web browser nel dispositivo in modalità tutto schermo. Assicurarsi di distribuire un'app Web browser ai dispositivi in modalità tutto schermo usando [App client](apps-add.md).
+
+  Immettere le impostazioni seguenti:
+
+  - **URL della home page predefinita**: immettere l'URL predefinito visualizzato all'apertura o al riavvio del browser in modalità tutto schermo. Ad esempio, immettere `http://bing.com` o `http://www.contoso.com`.
+
+  - **Pulsante Pagina iniziale**: scegliere **Mostra** o **Nascondi** per il pulsante Pagina iniziale del browser in modalità tutto schermo. Per impostazione predefinita, il pulsante non viene visualizzato.
+
+  - **Pulsanti di spostamento**: scegliere **Mostra** o **Nascondi** per i pulsanti Avanti e Indietro. Per impostazione predefinita, i pulsanti di spostamento non sono visualizzati.
+
+  - **Pulsante Termina sessione**: scegliere **Mostra** o **Nascondi** per il pulsante Termina sessione. Quando visualizzato, l'utente seleziona il pulsante e l'app chiede conferma della chiusura della sessione. Se confermata, il browser cancella tutti i dati di esplorazione (cookie, cache e così via) e quindi apre l'URL predefinito. Per impostazione predefinita, il pulsante non viene visualizzato.
+
+  - **Aggiorna il browser dopo il tempo di inattività**: immettere la quantità di tempo di inattività (da 1 a 1440 minuti) trascorso il quale il browser in modalità tutto schermo viene riavviato. Il tempo di inattività è il numero di minuti dopo l'ultima interazione dell'utente. Per impostazione predefinita, il valore è vuoto, ovvero non è configurato alcun timeout di inattività.
+
+  - **Siti Web consentiti**: usare questa impostazione per consentire l'apertura di siti Web specifici. In altre parole, usare questa funzionalità per limitare o bloccare siti Web nel dispositivo. Ad esempio, è possibile consentire l'apertura di tutti i siti Web in `contoso.com*`. Per impostazione predefinita, sono consentiti tutti i siti Web.
+
+    Per consentire siti Web specifici, caricare un file CSV che include un elenco dei siti Web consentiti. Se non si aggiunge un file CSV, sono consentiti tutti i siti Web.
+
+  Selezionare **OK** per salvare le modifiche.
+
+- **Usa un layout Start alternativo**: scegliere **Sì** per immettere un file XML che descrive come le app vengono visualizzate nel menu Start, incluso il relativo ordine. Usare questa opzione se è necessaria una maggiore personalizzazione nel menu Start. Leggere [Personalizzare ed esportare il layout della schermata Start](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) per conoscere alcune linee guida e XML di esempio.
+
+- **Barra delle applicazioni di Windows**: scegliere **Mostra** o **Nascondi** per la barra delle applicazioni. Per impostazione predefinita, la barra delle applicazioni non viene visualizzata.
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 
-È possibile configurare i dispositivi Windows Holographic for Business per l'esecuzione di una o più app in modalità tutto schermo. 
+È possibile configurare i dispositivi Windows Holographic for Business per l'esecuzione di una o più app in modalità tutto schermo. Alcune funzionalità non sono supportate in Windows Holographic for Business.
 
 #### <a name="single-full-screen-app-kiosks"></a>App singola per chioschi multimediali a schermo intero
-Immettere le impostazioni seguenti:
+Quando si sceglie la modalità App singola per chiosco multimediale a schermo intero, immettere le impostazioni seguenti:
 
-- **Identificatore dell'app UWP (Universal Windows Platform)**: Immettere l'**ID modello utente applicazione (AUMID, Application User Model ID)** dell'app in modalità tutto schermo. Oppure selezionare un'app gestita esistente aggiunta tramite [App per dispositivi mobili](apps-add.md).
+- **Tipo di accesso utente**: selezionare **Account utente locale** per immettere l'account utente locale (per il dispositivo) oppure un account Microsoft associato all'app in modalità tutto schermo. I tipi di account utente con **accesso automatico** non sono supportati in Windows Holographic for Business.
 
-    Vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
+- **Tipo di applicazione**: selezionare **App Store**.
 
-- **Tipo di account utente**: selezionare **Account utente locale** per immettere l'account utente locale (per il dispositivo) oppure un accesso con account Microsoft associato all'app in modalità tutto schermo. I tipi di account utente con **accesso automatico** non sono supportati in Windows Holographic for Business.
+- **App da eseguire in modalità tutto schermo**: scegliere **Aggiungi un'app dello Store** e selezionare un'app nell'elenco.
+
+    Se l'elenco non include app, aggiungerne qualcuna seguendo la procedura in [App client](apps-add.md).
+
+    Selezionare **OK** per salvare le modifiche.
 
 #### <a name="multi-app-kiosks"></a>Più app in modalità tutto schermo
-Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app che l'utente può aprire.
+Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app che l'utente può aprire. Quando si sceglie la modalità tutto schermo per più app, immettere le impostazioni seguenti:
 
-Immettere le impostazioni seguenti:
+- **Specifica Windows 10 come destinazione nei dispositivi in modalità S**: scegliere **No**. La modalità S non è supportata in Windows Holographic for Business.
 
-- **Aggiungi app gestite**: selezionare un'app gestita esistente aggiunta tramite [App client in Intune](apps-add.md).
-- **Aggiungi un'app in base all'ID modello utente applicazione**: immettere l'[ID modello utente dell'applicazione](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (app UWP).
-- **Layout del menu Start**: immettere un file XML che descrive come le app vengono visualizzate nel menu Start, incluso il relativo ordine. [Personalizzare ed esportare il layout della schermata Start](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) offre alcune indicazioni e include un file XML specifico per i dispositivi Windows Holographic for Business.
-- **Tipo di account utente**: aggiungere uno o più account utente autorizzati a usare le app aggiunte. Le opzioni supportate includono: 
+- **Tipo di accesso utente**: aggiungere uno o più account utente autorizzati a usare le app aggiunte. Le opzioni disponibili sono: 
+
+  - **Accesso automatico**: opzione non supportata in Windows Holographic for Business.
+  - **Account utente locale**: scegliere **Aggiungi** per aggiungere l'account utente locale (per il dispositivo). L'account specificato viene usato per accedere al chiosco multimediale.
+  - **Utente o gruppo di Azure AD (Windows 10, versione 1803+)**: richiede le credenziali utente per accedere al dispositivo. Selezionare **Aggiungi** per scegliere utenti o gruppi di Azure AD nell'elenco. È possibile selezionare più utenti e gruppi. Scegliere **OK** per salvare le modifiche.
   - **Visitatore di HoloLens**: l'account del visitatore è un account Guest che non richiede credenziali utente o autenticazione, come descritto in [Concetti della modalità PC condiviso](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
-  - **Utenti di Azure AD**: richiede credenziali utente per l'accesso al dispositivo. Usare il formato `domain\user@tenant.com`.
-  - **Account utente locale**: richiede credenziali utente per l'accesso al dispositivo. 
 
-Quando l'account esegue l'accesso, sono disponibili solo le app definite nella configurazione.
+- **Applicazioni**: aggiungere le app da eseguire nel dispositivo in modalità tutto schermo. Ricordarsi che è possibile aggiungere più app.
+
+  - **Aggiungi l'app dello Store**: selezionare un'app esistente aggiunta tramite [App client](apps-add.md). Se l'elenco non include alcuna app, è possibile ottenerle e [aggiungerle a Intune](store-apps-windows.md).
+  - **Aggiungi app di Win32**: opzione non supportata in Windows Holographic for Business.
+  - **Aggiungi in base all'ID modello utente applicazione**: usare questa opzione per aggiungere app predefinite di Windows. Immettere le seguenti proprietà: 
+
+    - **Nome applicazione**: obbligatorio. Immettere un nome per l'applicazione.
+    - **ID modello utente applicazione (AUMID)**: obbligatorio. Immettere l'ID modello utente applicazione (AUMID) dell'app Windows. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
+    - **Dimensioni del riquadro**: obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
+
+- **Impostazioni del browser in modalità tutto schermo**: opzione non supportata in Windows Holographic for Business.
+
+- **Usa un layout Start alternativo**: scegliere **Sì** per immettere un file XML che descrive come le app vengono visualizzate nel menu Start, incluso il relativo ordine. Usare questa opzione se è necessaria una maggiore personalizzazione nel menu Start. [Personalizzare ed esportare il layout della schermata Start](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) offre alcune indicazioni e include un file XML specifico per i dispositivi Windows Holographic for Business.
+
+- **Barra delle applicazioni di Windows**: opzione non supportata in Windows Holographic for Business.
+
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
