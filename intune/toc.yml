@@ -25,7 +25,7 @@ items:
   items:
   - name: Provare Intune gratuitamente
     href: free-trial-sign-up.md
-  - name: Creazione di un utente
+  - name: Creare un utente
     href: quickstart-create-user.md
   - name: Creare un gruppo
     href: quickstart-create-group.md
@@ -109,7 +109,7 @@ items:
     - name: Preparare Intune
       href: migration-guide-prepare.md
       items:
-      - name: Configurazione di base
+      - name: Installazione di base
         href: migration-guide-setup.md
       - name: Configurare i criteri di gestione di dispositivi e app
         href: migration-guide-configure-policies.md
@@ -140,7 +140,7 @@ items:
       href: account-sign-up.md
     - name: Configurare i domini
       href: custom-domain-name-configure.md
-    - name: Aggiungere utenti
+    - name: Aggiunta di utenti
       href: users-add.md
     - name: Aggiungere gruppi
       href: groups-add.md
@@ -182,6 +182,8 @@ items:
         href: windows-enrollment-status.md
       - name: Programma Windows AutoPilot Deployment
         href: enrollment-autopilot.md
+      - name: Azure Active Directory ibrido con Autopilot
+        href: windows-autopilot-hybrid.md
     - name: Configurare la registrazione di Android
       items:
       - name: Configurare la registrazione di Android
@@ -466,7 +468,7 @@ items:
         href: wi-fi-settings-import-windows-8-1.md
     - name: Configurare i profili cellulare eSIM
       href: esim-device-configuration.md
-    - name: Istruzione
+    - name: Education
       items:
       - name: Dispositivi iOS condivisi
         href: education-settings-configure-ios-shared.md
@@ -786,7 +788,7 @@ items:
       href: troubleshoot-conditional-access.md
     - name: Risolvere i problemi di Exchange Connector
       href: troubleshoot-exchange-connector.md
-  - name: Archivia
+  - name: Archivio
     items:
     - name: Archivio delle novità
       items:
@@ -837,9 +839,9 @@ items:
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: glossario
     href: intune-glossary.md
-ms.openlocfilehash: df67b7a497eac9e50a4f9e440a209857e210be09
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 58768bc109a5c0e079779959a7d176565582a138
+ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236697"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50971432"
