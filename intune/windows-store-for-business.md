@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d1fe40b1cb5a496b3111b2630718a3dd17486ab
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: c30d20592a95f7894bb040f9e8fe5a2e3ddd0166
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494014"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915751"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Come gestire le app acquistate in Microsoft Store per le aziende con Microsoft Intune
 
@@ -89,4 +89,15 @@ Quando si assegna un'app di Microsoft Store per le aziende, viene usata una lice
 * Ridurre l'ambito dell'assegnazione corrente agli utenti per i quali si dispone di un numero sufficiente di licenze.
 * Acquistare più copie dell'app da Microsoft Store per le aziende.
 
+## <a name="remove-apps"></a>Rimuovere app
 
+Per rimuovere un'app sincronizzata da Microsoft Store per le aziende, è necessario accedere a Microsoft Store per le aziende e rimborsare l'app.
+
+![Schermata dei dettagli di rimozione dell'app](./media/microsoft-store-for-business-01.png)
+
+> [!NOTE]
+> La rimozione della visibilità di un'app nello store privato non impedisce a Intune di eseguirne la sincronizzazione. È necessario rimborsare l'app.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Gestire le app e i libri acquistati con Volume Purchase Program con Microsoft Intune](vpp-apps.md)

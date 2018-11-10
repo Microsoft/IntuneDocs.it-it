@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 23e18ef2d7870a22699d898ad937febf9e61b804
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 491d2884f73d9178f54b6b2861bfe6f248c41c63
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231659"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236561"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Come gestire il trasferimento di dati tra app iOS in Microsoft Intune
 ## <a name="manage-ios-apps"></a>Gestire le app iOS
@@ -37,7 +37,7 @@ I criteri di protezione delle app possono essere usati con la funzionalità di *
 
 -   **Dispositivi di proprietà dei dipendenti non gestiti da soluzioni MDM:** è possibile impostare i criteri di protezione delle app su **Consenti all'app di trasferire i dati ad altre app: App gestite da criteri**. Il comportamento Apri in un'app gestita da criteri presenterà solo altre app gestite da criteri come opzione per la condivisione. Se un utente tenta di inviare un file protetto da criteri come allegato dalla posta nativa di OneDrive, il file risulterà illeggibile.
 
--   **Dispositivi gestiti da Intune:** per i dispositivi registrati in Intune, il trasferimento dei dati tra app con criteri di protezione delle app e altre app iOS gestite distribuite tramite Intune è consentito automaticamente. Per consentire il trasferimento dei dati tra app con criteri di protezione delle app, abilitare l'impostazione **Allow app to transfer data to only managed apps** (Consenti all'app di trasferire i dati solo alle app gestite). È possibile usare la funzionalità di **gestione Open In** per controllare il trasferimento dei dati tra le app distribuite tramite Intune.   
+-   **Dispositivi gestiti da Intune:** per i dispositivi registrati in Intune, il trasferimento dei dati tra app con criteri di protezione delle app e altre app iOS gestite distribuite tramite Intune è consentito automaticamente. Per specificare come consentire il trasferimento di dati ad altre app, abilitare l'impostazione **Consenti all'app di trasferire dati ad altre app** e scegliere un livello di condivisione. Per specificare come consentire a un'app di ricevere dati da altre app, abilitare l'impostazione **Consenti all'app di ricevere i dati da altre app** e scegliere un livello di ricezione. È possibile usare la funzionalità di **gestione Open In** per controllare il trasferimento dei dati tra le app distribuite tramite Intune. Per altre informazioni su ricezione e condivisione dei dati delle app, vedere [Impostazioni di rilocazione dei dati](app-protection-policy-settings-ios.md#data-relocation-settings).   
 
 -   **Dispositivi gestiti da una soluzione MDM di terze parti:** è possibile limitare il trasferimento dei dati solo alle app gestite usando la funzionalità di **gestione Open In** di iOS.
 Per assicurarsi che le app distribuite mediante la soluzione MDM di terze parti siano associate anche ai criteri di protezione delle app configurati in Intune, è necessario configurare l'impostazione UPN dell'utente come descritto nella procedura dettagliata [Configurare l'impostazione UPN dell'utente](#configure-user-upn-setting-for-third-party-emm).  Quando le app vengono distribuite con l'impostazione UPN dell'utente, all'app verranno applicati i criteri di protezione delle app nel momento in cui l'utente finale esegue l'accesso con il proprio account aziendale.

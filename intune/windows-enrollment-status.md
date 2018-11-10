@@ -15,36 +15,50 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5460db2d646d8bd417baa50d8188acbf69a251d
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 08d76d6b76ee7838633435ae095c171e0a3cdf8e
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827990"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236493"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurare la pagina dello stato della registrazione
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Durante la configurazione dei dispositivi, la pagina relativa allo stato della registrazione consente di visualizzare le informazioni sull'installazione nel dispositivo. Alcune applicazioni, profili e certificati potrebbero non essere ancora stati installati completamente nel momento in cui l'utente viene registrato. Una pagina relativa allo stato consente agli utenti di conoscere lo stato del dispositivo durante e dopo la registrazione. È possibile attivare la pagina relativa allo stato per tutti gli utenti o creare profili per impostare come destinatari gruppi utenti specifici.  È possibile impostare i profili per visualizzare lo stato dell'installazione, bloccare l'utilizzo fino al termine dell'installazione, consentire le reimpostazioni e così via.
+Durante la configurazione dei dispositivi, la pagina relativa allo stato della registrazione visualizza le informazioni sull'installazione nel dispositivo. Alcune applicazioni, profili e certificati potrebbero non essere installati fino a quando l'utente non completa la registrazione guidata del dispositivo. Una pagina relativa allo stato della registrazione consente agli utenti di conoscere lo stato del dispositivo durante l'installazione. È possibile creare più profili di pagina dello stato della registrazione e applicarli a gruppi diversi. I profili possono essere impostati su:
+- Visualizzazione dello stato di installazione.
+- Blocco dell'utilizzo fino al completamento dell'installazione.
+- Specificare le azioni che possono essere eseguite dall'utente se l'installazione non viene eseguita.
+
+È anche possibile impostare l'ordine di priorità di ogni profilo per tenere conto delle assegnazioni dei profili in conflitto per lo stesso utente o dispositivo.
+
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>Attivare la pagina relativa allo stato della registrazione predefinita per tutti gli utenti
 
-Per attivare la pagina dello stato della registrazione per tutti gli utenti finali, seguire la procedura qui riportata.
+Per attivare la pagina dello stato della registrazione, eseguire i passaggi descritti di seguito.
  
-1.  In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Enrollment Status Page (Preview)** (Pagina stato registrazione (anteprima)).
-2.  Nel pannello **Enrollment Status Page** (Pagina stato registrazione) scegliere **Predefinito** > **Impostazioni**.
-3.  Per **Show app and profile installation progress** (Visualizza stato di avanzamento installazione app e profilo), scegliere **Sì**.
-4.  Scegliere le altre impostazioni che si vuole attivare e selezionare **Salva**.
+1. In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Enrollment Status Page (Preview)** (Pagina stato registrazione (anteprima)).
+2. Nel pannello **Enrollment Status Page** (Pagina stato registrazione) scegliere **Predefinito** > **Impostazioni**.
+3. Per **Show app and profile installation progress** (Visualizza stato di avanzamento installazione app e profilo), scegliere **Sì**.
+4. Scegliere le altre impostazioni che si vuole attivare e selezionare **Salva**.
 
-## <a name="create-enrollment-status-page-profile-to-target-specific-users"></a>Creare il profilo della pagina dello stato della registrazione per impostare come destinatari utenti specifici
+## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Creare il profilo della pagina dello stato della registrazione e assegnarlo a un gruppo
 
-1.  In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione (anteprima)** > **Crea profilo**.
+1. In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione (anteprima)** > **Crea profilo**.
 2. Specificare un **nome** e una **descrizione**.
 3. Scegliere **Crea**.
 4. Scegliere il nuovo profilo nell'elenco **Pagina relativa allo stato della registrazione**.
 5. Scegliere **Assegnazioni** > **Selezionare i gruppi** > scegliere i gruppi che devono adottare questo profilo > **Seleziona** > **Salva**.
 6. Scegliere **Impostazioni** > scegliere le impostazioni che si vuole applicare a questo profilo > **Salva**.
+
+## <a name="set-the-enrollment-status-page-priority"></a>Impostare la priorità della pagina dello stato della registrazione
+
+Un dispositivo o un utente può essere incluso in più gruppi e avere più profili della pagina dello stato della registrazione. Per risolvere questi conflitti, è possibile impostare le priorità per ogni profilo. Se un utente ha più di un profilo della pagina dello stato della registrazione, verrà applicato solo il profilo con la priorità più alta.
+
+1. In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Enrollment Status Page (Preview)** (Pagina stato registrazione (anteprima)).
+2. Passare il mouse sul profilo nell'elenco.
+3. Usando i tre punti verticali, trascinare il profilo sulla posizione desiderata nell'elenco.
 
 
 ## <a name="enrollment-status-page-tracking-information"></a>Informazioni incluse nella pagina dello stato della registrazione
@@ -65,8 +79,9 @@ Per la configurazione del dispositivo, la pagina dello stato della registrazione
     - App line-of-business di identità del servizio gestita per computer.
     - App dello Store line-of-business con contesto di installazione = dispositivo.
     - App dello Store offline e line-of-business con contesto di installazione = dispositivo.
-- I profili di connettività (VPN e Wi-Fi) non vengono ancora tracciati, quindi indicano sempre "0 di 0".
-- I certificati non vengono ancora tracciati, quindi indicano sempre "0 di 0".
+- Profili di connettività
+    - I profili VPN o Wi-Fi sono assegnati a **tutti i dispositivi** o un gruppo di dispositivi di cui il dispositivo di registrazione è membro, ma solo per i dispositivi di Autopilot
+- I profili di certificato sono assegnati a **tutti i dispositivi** o un gruppo di dispositivi di cui il dispositivo di registrazione è membro, ma solo per i dispositivi di Autopilot
 
 ### <a name="account-setup"></a>Configurazione dell'account
 Per la configurazione dell'account, la pagina dello stato della registrazione tiene traccia degli elementi seguenti:

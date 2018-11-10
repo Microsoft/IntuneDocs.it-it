@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 47917943188b2b3d0448845b1e356d181ec8f3af
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187785"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410838"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Come ottenere supporto per Microsoft Intune
 
@@ -96,6 +96,64 @@ Se le soluzioni comuni non risolvono il problema, è possibile selezionare **Ric
 1. Accedere a Azure (<https://portal.azure.com>) con le credenziali di amministratore di Intune, scegliere l'icona <strong>?</strong> nell'angolo superiore destro del portale e scegliere <strong>Guida e supporto</strong> per visualizzare la pagina [Guida e supporto](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) di Azure.
 
 2. Nella pagina **Guida e supporto** è possibile visualizzare l'elenco delle **Richieste di supporto recenti** e selezionarle per visualizzare altri dettagli.
+
+
+## <a name="new-help-and-support-experience"></a>Nuova esperienza di Guida e supporto tecnico 
+*Le informazioni seguenti si applicano solo quando si usa il portale di gestione dei dispositivi e fanno parte dell'implementazione della nuova esperienza di Guida e supporto tecnico. I partecipanti a questa implementazione vengono selezionati casualmente tra i tenant di Intune disponibili.*  
+
+L'aggiornamento a Guida e supporto tecnico per Intune è una nuova esperienza disponibile nel [portale di gestione dei dispositivi di Microsoft 365](http://devicemanagement.microsoft.com) per alcuni ma non per tutti i tenant. Questa nuova esperienza è simile a quella offerta dall'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/AdminPortal/Home) e sostituisce l'esperienza di Guida e supporto tecnico precedente quando si accede da alcune posizioni della console di gestione dei dispositivi.  
+
+Nel portale di gestione dei dispositivi si accede alla nuova esperienza quando si seleziona **Help and Support** (Guida e supporto tecnico) da qualsiasi pannello in **Tutti i servizi** > **Gestione dispositivi**, fatta eccezione per **Risoluzione dei problemi**. Quando si accede alla nuova esperienza di Guida e supporto tecnico da altre posizioni, ad esempio **Risoluzione dei problemi**, usando l'opzione **?** in alto a destra nel banner della console o si seleziona **Guida e supporto** dall'elenco dei servizi nel riquadro a sinistra, si accede all'esperienza originale.  
+
+Nella nuova esperienza è possibile accedere alla visualizzazione **Serve assistenza?**, come illustra l'immagine seguente:  
+![Dashboard di gestione dei dispositivi e pagina Serve assistenza?](./media/get-support/help-support-dashboard.png)
+
+In questa visualizzazione è possibile eseguire le operazioni seguenti:
+
+1. [Specificare i dettagli](#specify-details-about-an-issue) relativi al problema specifico per cui si ha bisogno di assistenza  
+2. [Visualizzare la Guida sensibile al contesto](#view-context-sensitive-help) e le relative soluzioni basate sui dettagli specificati  
+3. [Ricevere assistenza](#get-support) usando la posta elettronica o il telefono  
+4. [Visualizzare le richieste di supporto](#view-support-cases) aperte in precedenza usando questo nuovo flusso di lavoro  
+
+### <a name="specify-details-about-an-issue"></a>Specificare i dettagli riguardo a un problema
+Se si accede a Guida e supporto tecnico da una posizione supportata dalla nuova esperienza, la pagina **Serve assistenza?**  viene visualizzata e consente di specificare i dettagli relativi a un problema. Quando si immettono i dettagli, la console offre alcune query comuni basate sulle parole chiave usate dall'utente. È possibile selezionare un'opzione tra quelle offerte o completare la propria descrizione del problema. Se si immette una descrizione, selezionare **Richiesta supporto** per inviarla. Dopo aver inviato una query, la console restituisce informazioni sensibili al contesto che possono essere utili per risolvere il problema.
+
+Di seguito sono riportati esempi di query che si potrebbero inviare:
+  
+- *Non è possibile ripristinare il dispositivo iOS*  
+- *Impossibile creare criteri di accesso condizionale*  
+
+![Specificare il problema nella pagina Serve assistenza?](./media/get-support/describe-the-issue.png)
+
+
+### <a name="view-context-sensitive-help"></a>Visualizzare la guida sensibile al contesto
+Dopo aver selezionato una delle opzioni offerte o inviato una query, i risultati sensibili al contesto appaiono in **Visualizza soluzioni**. Questi risultati includono sia materiale sussidiario self-help specifico di Intune, sia altri risultati restituiti da una ricerca sul Web eseguita in base ai criteri di query.  
+![Visualizzazione risultati](./media/get-support/view-results.png)
+
+### <a name="get-support"></a>Ottenere supporto  
+Se il supporto self-help o le indicazioni basate sul Web non consentono di risolvere il problema, è possibile usare la console per aprire una richiesta di assistenza via posta elettronica o telefono.  
+Selezionare l'opzione che si vuole usare nella pagina **Serve assistenza?**.  
+
+- Nel caso di una richiesta via posta elettronica, indicare il proprio indirizzo di posta elettronica e, se necessario, aggiungere allegati alle informazioni inviate. Selezionare **Invia** per aprire la richiesta.  
+
+  ![Richiesta via posta elettronica](./media/get-support/email-support.png)
+  
+- Per una richiesta telefonica, specificare il proprio numero di telefono. Facoltativamente, è possibile includere il proprio indirizzo di posta elettronica e aggiungere allegati per l'invio. Selezionare Chiama per inviare la richiesta.  
+
+   ![Richiesta via telefono](./media/get-support/phone-support.png)
+
+### <a name="view-support-cases"></a>Visualizzare le richieste di supporto
+Selezionare il pulsante della cronologia per visualizzare le richieste di supporto create.  
+
+![Visualizzare le richieste di supporto](./media/get-support/view-support-tickets.png)
+
+- Solo le richieste di supporto aperte usando il nuovo flusso di lavoro sono visibili dall'interno di questo flusso di lavoro. Per visualizzarle, usare una visualizzazione di Guida e supporto tecnico dalla console di gestione dei dispositivi che fa parte della nuova esperienza. Le richieste hanno numeri di otto cifre. È possibile visualizzarle anche dall'interfaccia di amministrazione di Microsoft 365.  
+
+- Le richieste aperte prima dell'aggiunta dell'account alla nuova esperienza di Guida e supporto tecnico restano invariate. Per visualizzarle, è necessario usare una visualizzazione di Guida e supporto tecnico che non fa parte dell'implementazione della nuova esperienza. Queste richieste hanno numeri di 15 cifre che iniziano con **117** o **118**.  Per visualizzare una richiesta di supporto aperta prima dell'aggiunta dell'account alla nuova esperienza, usare il portale di Azure. A tale scopo, procedere nel seguente modo:
+
+    1. Accedere a Azure (<https://portal.azure.com>) con le credenziali di amministratore di Intune, scegliere l'icona *?* nell'angolo superiore destro del portale e scegliere *Guida e supporto* per visualizzare la pagina [Guida e supporto](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) di Azure.
+
+    2. Nella pagina **Guida e supporto** è possibile visualizzare l'elenco delle **Richieste di supporto recenti** e selezionarle per visualizzare altri dettagli.
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 - [Come contattare il supporto telefonico assistito per Microsoft Intune](phone-support-contact.md)

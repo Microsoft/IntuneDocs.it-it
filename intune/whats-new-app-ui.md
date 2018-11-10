@@ -15,17 +15,24 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb1599085687c258c6853eacf269e2d1b11cbaf1
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 924326de480073d7bca8e6bec2d6f7e9c11d0cc1
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425088"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236646"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni sugli aggiornamenti apportati all'interfaccia utente per le app disponibili per gli utenti finali in questa versione di Microsoft Intune. Le informazioni sugli aggiornamenti sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-october-22-2018"></a>Settimana del 22 ottobre 2018
+
+### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>Aggiungere l'immagine del marchio personalizzata per l'app Portale aziendale <!-- 1916266 -->
+Gli amministratori di Microsoft Intune possono caricare un'immagine del marchio personalizzata da visualizzare come sfondo nella pagina del profilo utente nell'app Portale aziendale di iOS. Per altre informazioni sulla configurazione dell'app Portale aziendale, vedere [Come configurare l'app Portale aziendale di Microsoft Intune](company-portal-app.md).
+
+
 
 ## <a name="week-of-august-27-2018"></a>Settimana del 27 agosto 2018  
 
@@ -163,7 +170,7 @@ Stiamo ancora ottimizzando il modo in cui viene tenuta traccia della rilevanza. 
 ## <a name="week-of-october-16-2017"></a>Settimana del 16 ottobre 2017
 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Migliorare la ricerca per il sito Web Portale aziendale <!-- 1331697 -->
-Stiamo migliorando la funzionalità di ricerca dell'app, a partire dal [sito Web Portale aziendale](https://portal.manage.microsoft.com). Le ricerche verranno ora eseguite sulle categorie di app, oltre ai campi nome e descrizione. I risultati verranno ordinati, per impostazione predefinita, in ordine decrescente di rilevanza. 
+Stiamo migliorando la funzionalità di ricerca dell'app, a partire dal [sito Web Portale aziendale](https://portal.manage.microsoft.com). Le ricerche verranno ora eseguite sulle categorie di app, oltre ai campi nome e descrizione. I risultati verranno ordinati, per impostazione predefinita, in ordine decrescente di rilevanza. 
 
 Gli utenti di iOS riceveranno anche questa modifica, dato che il sito Web Portale aziendale è usato anche come parte dell'app del Portale aziendale per iOS. Le app del Portale aziendale per Android e Windows riceveranno aggiornamenti simili nei prossimi mesi.
 
@@ -177,7 +184,7 @@ In questa versione viene risolto un problema noto di visualizzazione delle icone
 ## <a name="week-of-october-2-2017"></a>Settimana del 2 ottobre 2017
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Miglioramenti del flusso di lavoro di installazione dei dispositivi nel Portale aziendale <!-- 1490692 -->
-È stato migliorato il flusso di lavoro di installazione dei dispositivi nell'app Portale aziendale per Android. Il linguaggio è più semplice e specifico della società e sono state inserite schermate dove possibile. 
+È stato migliorato il flusso di lavoro di installazione dei dispositivi nell'app Portale aziendale per Android. Il linguaggio è più semplice e specifico della società e sono state inserite schermate dove possibile. 
 
 |Prima|Dopo|
 |---|---|
@@ -205,7 +212,7 @@ Altri passaggi sono stati migliorati nei dispositivi del profilo di lavoro Andro
 
 ## <a name="week-of-september-11-2017"></a>Settimana dell'11 settembre 2017
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Testo più comprensibile per l'app Portale aziendale per Android <!-- 1396349 -->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Testo più comprensibile per l'app Portale aziendale per Android <!-- 1396349 -->  
 
 Il processo di registrazione per l'app del portale aziendale per Android è ora più semplice per gli utenti finali, grazie all'uso di un nuovo testo più comprensibile. Aggiornare la precedente documentazione relativa alla registrazione personalizzata perché contenga le nuove schermate. Di seguito alcune immagini di esempio:
 
@@ -222,7 +229,7 @@ Il processo di registrazione per l'app del portale aziendale per Android è ora 
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>L'app di posta elettronica iOS 11 supporta OAuth <!-- 1196951 -->
 
-L'accesso condizionale con Intune supporta un'autenticazione più sicura sui dispositivi iOS con OAuth. Per il supporto di questa funzionalità il flusso di lavoro nell'app Portale aziendale per iOS è stato modificato, per consentire un'autenticazione più sicura. Quando gli utenti finali tentano di accedere a un nuovo account di Exchange nell'app della posta elettronica, appare una richiesta di visualizzazione Web. Al momento della registrazione in Intune gli utenti visualizzano una richiesta per consentire all'app di posta elettronica nativa l'accesso a un certificato. La maggior parte degli utenti finali non visualizza più i messaggi di posta elettronica di quarantena. Gli account di posta elettronica esistenti continuano a usare il protocollo di autenticazione di base, pertanto gli utenti di questi account ricevono comunque i messaggi di posta elettronica di quarantena. Questa esperienza di accesso per gli utenti finali è simile a quella delle app Office per dispositivi mobili.
+L'accesso condizionale con Intune supporta un'autenticazione più sicura sui dispositivi iOS con OAuth. Per il supporto di questa funzionalità il flusso di lavoro nell'app Portale aziendale per iOS è stato modificato, per consentire un'autenticazione più sicura. Quando gli utenti finali tentano di accedere a un nuovo account di Exchange nell'app della posta elettronica, appare una richiesta di visualizzazione Web. Al momento della registrazione in Intune gli utenti visualizzano una richiesta per consentire all'app di posta elettronica nativa l'accesso a un certificato. La maggior parte degli utenti finali non visualizza più i messaggi di posta elettronica di quarantena. Gli account di posta elettronica esistenti continuano a usare il protocollo di autenticazione di base, pertanto gli utenti di questi account ricevono comunque i messaggi di posta elettronica di quarantena. Questa esperienza di accesso per gli utenti finali è simile a quella delle app Office per dispositivi mobili.
 
 ![Selezione del tipo di account nell'app di posta elettronica nativa.](./media/ios-11-ca-email-after-1708-01.png)
 

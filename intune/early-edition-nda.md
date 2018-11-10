@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 10/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 72585982cd27962981f581a99f0ea361642df0ee
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: bacaf8ff4119d4cd40483b65ea45e283d98a51f1
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652139"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025203"
 ---
-# <a name="the-early-edition-for-microsoft-intune---october-2018"></a>Edizione anticipata per Microsoft Intune - Ottobre 2018
+# <a name="the-early-edition-for-microsoft-intune---november-2018"></a>Edizione anticipata per Microsoft Intune - Novembre 2018
 
 > [!Note]
 > Notifica accordo di riservatezza: le seguenti modifiche di Intune sono in fase di sviluppo. Queste informazioni sono condivise con accordo di riservatezza su base estremamente limitata. Non pubblicare queste informazioni nei social network o in siti Web pubblici, come Twitter, UserVoice, Reddit e così via. 
@@ -39,13 +39,51 @@ Questa pagina viene aggiornata periodicamente. Consultarla a intervalli regolari
  
 ## <a name="intune-in-the-azure-portal"></a>Intune nel portale di Azure
 
+<!-- 1811 start -->
+
+### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Disinstallazione di app in dispositivi iOS con supervisione di proprietà dell'azienda <!-- 1281677 -->
+Sarà possibile rimuovere qualsiasi app nei dispositivi iOS con supervisione di proprietà dell'azienda. È possibile rimuovere qualsiasi app specificando come destinazione gruppi di utenti o dispositivi con un tipo di assegnazione **Disinstalla**. Per i dispositivi iOS personali o senza supervisione, sarà ancora possibile rimuovere solo le app installate usando Intune.
+
+### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Supporto per iOS 12 OAuth nei profili di posta elettronica iOS <!--2155106 -->
+I profili di posta elettronica iOS di Intune supporteranno iOS 12 OAuth. Per visualizzare questa funzionalità, scegliere **Intune** > **Configurazione del dispositivo** > **Profili** > **Crea profilo**. Nel pannello Crea profilo è possibile abilitare o disabilitare **OAuth**. Se questa impostazione viene attivata, verranno eseguite due operazioni:
+1. Verrà rilasciato un nuovo profilo ai dispositivi già specificati come destinazione.
+2. Agli utenti verrà chiesto di fornire nuovamente le credenziali.
+
+### <a name="track-installation-of-office-proplus---2620217--"></a>Tenere traccia dell'installazione di Office ProPlus <!--2620217-->
+Sarà possibile tenere traccia dell'avanzamento dell'installazione di [Office ProPlus](apps-add-office365.md) usando la [pagina relativa allo stato della registrazione](windows-enrollment-status.md).
+
+### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133--"></a>Supporto di Device Enrollment Program di macOS per gli account Apple School Manager <!--3006133-->
+Intune supporterà l'uso di Device Enrollment Program nei dispositivi macOS per gli account Apple School Manager.
+
+### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>Sospendere temporaneamente la modalità tutto schermo sui dispositivi Android per apportare modifiche <!-- 3041935 -->
+Quando si usano dispositivi Android in modalità tutto schermo per più app, un amministratore IT potrebbe aver bisogno di apportare modifiche al dispositivo. Una nuova impostazione della modalità tutto schermo per più app consentirà a un amministratore IT di sospendere temporaneamente la modalità tutto schermo tramite un PIN e di ottenere l'accesso all'intero dispositivo.
+Per visualizzare le impostazioni della modalità tutto schermo correnti, vedere [Impostazioni della modalità tutto schermo per Android](android-kiosk-settings.md).
+
+### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>Impostare lo sfondo personalizzato nell'app di schermata iniziale gestita <!-- 3041945 -->
+Verrà aggiunta un'impostazione che consente di personalizzare l'aspetto dello sfondo dell'app di schermata iniziale gestita nei dispositivi in modalità tutto schermo per più app di Android Enterprise.  Per configurare lo **sfondo personalizzato per l'URL**, passare a Intune nel portale di Azure > Configurazione del dispositivo. Selezionare un profilo di configurazione del dispositivo corrente o crearne uno nuovo per modificarne le impostazioni della modalità tutto schermo.
+
+### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>Abilitare il pulsante Pagina iniziale virtuale nei dispositivi in modalità tutto schermo di Android Enterprise <!-- 3042021 -->
+Una nuova impostazione consentirà agli utenti di toccare un pulsante softkey nel dispositivo per passare dall'app di schermata iniziale gestita alle altre app assegnate nel dispositivo in modalità tutto schermo per più app. Questa impostazione è particolarmente utile negli scenari in cui l'app in modalità tutto schermo di un utente non risponde in modo corretto al pulsante "Indietro". Sarà possibile configurare questa impostazione per i dispositivi Android monouso di proprietà dell'azienda. Per abilitare o disabilitare il **pulsante Pagina iniziale virtuale**, passare a Intune nel portale di Azure > Configurazione del dispositivo. Selezionare un profilo di configurazione del dispositivo corrente o crearne uno nuovo per modificarne le impostazioni della modalità tutto schermo.
+
+### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Salvataggio e applicazione dell'assegnazione dei criteri di protezione dell'app <!-- 3104570 -->
+Si avrà maggiore controllo sulle assegnazioni dei criteri di protezione dell'app. Salvando e applicando le assegnazioni dei criteri di protezione dell'app, solo gli utenti desiderati sono direttamente interessati da un criterio di assegnazione di protezione dell'app.
+
+### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Nuove impostazioni del browser Microsoft Edge per Windows 10 e versioni successive <!-- 3174639 -->
+Verrà aggiunta una nuova impostazione per controllare e gestire il browser Microsoft Edge nei dispositivi. Per un elenco delle impostazioni correnti, vedere [Device restriction for Windows 10 (and newer)](device-restrictions-windows-10.md#edge-browser) (Restrizione dei dispositivi per Windows 10 e versioni successive).
+
+### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Selezionare le app registrate nella pagina Stato di registrazione<!-- 2531007 -->
+Sarà possibile scegliere le app di cui tenere traccia nella pagina Stato di registrazione.
+
+### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Aggiornamento dell'interfaccia utente dei criteri di protezione delle app di Intune <!-- 3251427 -->
+
+I criteri di protezione delle app di Intune consentono di configurare varie impostazioni di protezione dei dati per le app protette da Intune, ad esempio Microsoft Outlook e Word. Verranno modificate le etichette delle impostazioni e dei pulsanti per facilitarne la comprensione. I controlli di tipo **sì**/**no** verranno sostituiti principalmente da controlli di tipo **blocca**/**consenti** e **disabilita**/**abilita** e anche le etichette verranno aggiornate per maggiore chiarezza. Le impostazioni verranno anche riformattate, in modo che l'impostazione e la relativa etichetta siano affiancate nel controllo, consentendo una migliore navigazione. Le impostazioni predefinite e il numero di impostazioni non subiranno modifiche, ma questa modifica permetterà all'utente di comprendere, esplorare e utilizzare le impostazioni più facilmente per applicare i criteri di protezione delle app selezionati.
+
+
+
 <!-- 1810 start -->
 
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Usare le impostazioni consigliate da Microsoft con le baseline di sicurezza <!-- 2055484 -->
 Intune si integra con altri servizi specifici per la sicurezza, inclusi Windows Defender ATP e Office 365 ATP. I clienti manifestano l'esigenza di una strategia comune e di un set integrato di flussi di lavoro di sicurezza end-to-end nei servizi di Microsoft 365. L'obiettivo è l'allineamento delle strategie per creare soluzioni in grado di conciliare le operazioni di sicurezza e le comuni attività degli amministratori. Per realizzare questo obiettivo in Intune, è stato pubblicato un set di "baseline di sicurezza" consigliate da Microsoft (**Intune** > **Baseline di sicurezza**).  Un amministratore potrà creare criteri di sicurezza direttamente da queste baseline e quindi distribuirle agli utenti. Può anche personalizzare le indicazioni sulle procedure consigliate per soddisfare le esigenze dell'organizzazione. Intune verifica che i dispositivi rimangano conformi a queste baseline e invia agli amministratori una notifica sugli utenti e i dispositivi non conformi.
-
-### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices----1048100---"></a>Supporto di Autopilot per i dispositivi ibridi aggiunti ad Azure Active Directory <!-- 1048100 -->
-Sarà possibile configurare i dispositivi ibridi aggiunti ad Azure Active Directory usando Autopilot. I dispositivi devono essere aggiunti alla rete dell'organizzazione per usare la funzionalità ibrida di Autopilot.
 
 ### <a name="scope-tags-for-apps---1081941---"></a>Tag di ambito per le app <!--1081941 -->
 Sarà possibile creare tag di ambito per limitare l'accesso alle risorse di Intune. Aggiungere un tag di ambito a un'assegnazione di ruolo e quindi aggiungere il tag di ambito a un profilo di configurazione. Il ruolo potrà accedere solo alle risorse con profili di configurazione con tag di ambito corrispondenti (o nessun tag di ambito).
@@ -60,66 +98,24 @@ La pagina Stato del tenant in Intune fornirà in un'unica posizione le informazi
 - **Integrità del servizio Intune**: contiene gli eventi imprevisti attivi o le interruzioni del tenant. Le informazioni di questa sezione vengono recuperate direttamente dal Centro messaggi di Office ([https://portal.office.com](https://portal.office.com)).
 - **Novità su Intune**: contiene i messaggi attivi sul tenant, ad esempio le notifiche che informano che il tenant ha ricevuto le funzionalità di Intune più recenti. Le informazioni di questa sezione vengono recuperate direttamente dal Centro messaggi di Office ([https://portal.office.com](https://portal.office.com)).
 
-### <a name="enrollment-abandonment-report----1382924---"></a>Report sull'abbandono delle registrazioni <!-- 1382924 -->
-Un nuovo report con i dettagli sulle registrazioni abbandonate sarà disponibile in **Registrazione del dispositivo** > **Monitoraggio**.
 
 ### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Criteri WIP distribuiti senza registrazione dell'utente <!-- 1434452 -->
 I criteri di Windows Information Protection (WIP) potranno essere distribuiti senza richiedere agli utenti MDM di registrare il dispositivo Windows 10. Questa configurazione non solo consente alle società di proteggere i documenti aziendali in base alla configurazione WIP, ma permette anche agli utenti di continuare a gestire i dispositivi Windows. Quando i documenti sono protetti da un criterio WIP, i dati protetti possono essere cancellati in modo selettivo da un amministratore di Intune. Selezionando l'utente e il dispositivo e inviando una richiesta di cancellazione, tutti i dati protetti tramite i criteri WIP non saranno più utilizzabili. Da Intune nel portale di Azure selezionare **App per dispositivi mobili** > **Cancellazione selettiva di app**.
 
 
-### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>Aggiungere l'immagine del marchio personalizzata per l'app Portale aziendale <!-- 1916266 -->
-Gli amministratori di Microsoft Intune potranno caricare un'immagine del marchio personalizzata da visualizzare come sfondo nella pagina del profilo utente nell'app Portale aziendale. Per altre informazioni sulla configurazione dell'app Portale aziendale, vedere [Come configurare l'app Portale aziendale di Microsoft Intune](company-portal-app.md).
-
-### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>Raggruppare i dispositivi registrati con Windows Autopilot per ID correlatore <!-- 2075110 -->
-Intune supporterà il raggruppamento dei dispositivi Windows per ID correlatore quando vengono registrati usando [Autopilot per i dispositivi esistenti](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) tramite Configuration Manager. L'ID correlatore è un parametro del file di configurazione di Autopilot. Intune imposterà automaticamente l'[attributo del dispositivo Azure AD enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) su "OfflineAutopilotprofile-\<ID correlatore\>". In questo modo sarà possibile creare gruppi dinamici di Azure AD arbitrari in base all'ID correlatore tramite l'attributo enrollmentprofileName per le registrazioni di Autopilot offline. 
-
-
-### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Supporto per iOS 12 OAuth nei profili di posta elettronica iOS <!--2155106 -->
-I profili di posta elettronica iOS di Intune supporteranno iOS 12 OAuth. Per visualizzare questa funzionalità, scegliere **Intune** > **Configurazione del dispositivo** > **Profili** > **Crea profilo** > **OAuth**. Se questa impostazione viene attivata, verranno eseguite due operazioni:
-1. Verrà rilasciato un nuovo profilo ai dispositivi già specificati come destinazione.
-2. Agli utenti verrà chiesto di fornire nuovamente le credenziali.
-
-### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Nuova impostazione predefinita "Tipo di password richiesto" per Android, Android Enterprise<!-- 2649963 -->
-Quando si crea un nuovo criterio di conformità (**Intune** > **Conformità del dispositivo** > **Criteri** > **Crea criterio** > **Android** o **Android Enterprise** per Piattaforma > Sicurezza del sistema),il valore predefinito di **Tipo di password richiesto** viene modificato: Valore predefinito corrente: Impostazione predefinita dispositivo Nuovo valore predefinito: Almeno numerico Si applica a: Android, Android Enterprise
-
-### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Assegnare profili di Autopilot al gruppo virtuale Tutti i dispositivi <!--2715522 -->
-Sarà possibile assegnare profili di Autopilot al gruppo virtuale Tutti i dispositivi. A questo scopo, scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Profili di distribuzione** > scegliere un profilo > **Assegnazioni** > in **Assegna a** scegliere **Tutti i dispositivi**.
-
-### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Nuova funzionalità Condizioni per l'utilizzo di Azure Active Directory <!-- 2870393 -->
-Azure Active Directory avrà una funzionalità Condizioni per l'utilizzo che sarà possibile usare al posto delle condizioni di Intune esistenti. La funzionalità Condizioni per l'utilizzo di Azure AD offre maggiore flessibilità sule condizioni da visualizzare e su quando visualizzarle, un migliore supporto della localizzazione, maggiore controllo sul rendering delle condizioni e creazione di report migliorata. La funzionalità Condizioni per l'utilizzo di Azure AD richiede Azure Active Directory Premium P1 che fa parte della suite Enterprise Mobility + Security E3.
-
-
-### <a name="intune-will-maintain-the-office-localized-language-when-updating-office-on-end-users-machines----2971030---"></a>Intune manterrà la lingua localizzata di Office durante gli aggiornamenti di Office nei computer degli utenti finali <!-- 2971030 -->
-Quando Intune installa Office nei computer dell'utente finale, i Language Pack saranno gli stessi usati nelle precedenti installazioni di Office MSI. 
-
 <!-- 1809 start -->  
-
-### <a name="intune-app-data-transfer-settings-on-ios-mdm-enrolled-devices----2244713---"></a>Impostazioni per il trasferimento dei dati delle app di Intune nei dispositivi iOS registrati in MDM <!-- 2244713 -->
-Sarà possibile separare il controllo delle impostazioni per il trasferimento dei dati delle app di Intune nei dispositivi iOS registrati in MDM dall'impostazione dell'identità dell'utente registrato. Gli amministratori che non usano IntuneMAMUPN non noteranno alcuna variazione di comportamento. Quando questa funzionalità è disponibile, gli amministratori che usano IntuneMAMUPN per controllare il trasferimento dei dati nei dispositivi registrati dovranno esaminare le nuove impostazioni e aggiornare le impostazioni dell'app di conseguenza.
-
-### <a name="use-a-pre-shared-key-in-a-windows-10-wi-fi-profile----2662938---"></a>Usare una chiave precondivisa in un profilo Wi-Fi di Windows 10 <!-- 2662938 -->
-Sarà possibile usare una chiave precondivisa con il protocollo di protezione WPA/WPA2-Personal per autenticare un profilo di configurazione Wi-Fi per Windows 10.
-Attualmente, per poter usare una chiave precondivisa è necessario importare un profilo Wi-Fi o creare un profilo personalizzato. In [Impostazioni Wi-Fi per Windows 10](wi-fi-settings-windows.md) sono elencate le impostazioni correnti. 
 
 ### <a name="app-protection-policy-app-settings-for-web-data----2662995---"></a>Impostazioni dei criteri di protezione dell'app per i dati Web <!-- 2662995 -->
 Le impostazioni dei criteri di protezione dell'app per il contenuto Web nei dispositivi iOS e Android verranno aggiornate per gestire meglio i collegamenti Web sia http che https, nonché il trasferimento dei dati tramite i collegamenti universali iOS e i collegamenti delle app Android.  
-
-### <a name="autopilot-device-sync-frequency-increasing-to-every-12-hours----2753673---"></a>Frequenza di sincronizzazione dei dispositivi AutoPilot aumentata a ogni 12 ore <!-- 2753673 -->
-I dispositivi AutoPilot verranno sincronizzati ogni 12 ore anziché ogni 24 ore.
-
-### <a name="intune-landing-page-updates-and-node-rename---2867309---"></a>Aggiornamenti della pagina di intestazione e ridenominazione del nodo in Intune <!--2867309 -->
-Gli aggiornamenti alla pagina di destinazione di Intune includeranno l'aggiunta di nuovi riquadri di monitoraggio e grafici e la modifica di quelli esistenti allo scopo di migliore la visualizzazione dei dati. Il modo **App per dispositivi mobili** diventerà **App client**.
-
-### <a name="increased-end-user-access-using-the-company-portal-app----772203---"></a>Maggiore accesso per gli utenti finali che usano l'app Portale aziendale <!-- 772203 -->
-Gli utenti finali potranno accedere ad azioni chiave per l'account, ad esempio la reimpostazione della password e al proprio profilo AAD, nell'app Portale aziendale.  
 
 <!-- 1808 start -->
 
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>Token VPP Apple usato da un altro software MDM <!-- 1488946 -->
 Intune rileverà e visualizzerà i dettagli se un token VPP (Volume Purchase Program) Apple viene usato sia da Intune che da un altro software MDM.
 
-### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>Vengono visualizzati il numero di versione e il numero di build di iOS <!-- 1892471 -->
-In **Conformità del dispositivo** > **Conformità del dispositivo** viene visualizzata la versione del sistema operativo iOS. In un aggiornamento futuro verrà anche visualizzato il numero di build.
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>Vengono visualizzati i numeri di versione e di build di iOS e macOS <!-- 1892471 -->
+In **Conformità del dispositivo** > **Conformità del dispositivo** viene visualizzata la versione del sistema operativo iOS e macOS. In un aggiornamento futuro verrà anche visualizzato il numero di build per entrambe le piattaforme.
+
 Quando vengono rilasciati aggiornamenti della sicurezza, Apple lascia in genere il numero di versione invariato, ma aggiorna il numero di build. Visualizzando il numero di build, è possibile verificare facilmente se è installato un aggiornamento di una vulnerabilità.
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>Dispositivi ritirati nel dashboard della conformità dei dispositivi <!-- 1981119 -->
@@ -131,9 +127,6 @@ In base al feedback dei clienti, cambierà il modo in cui gli aggiornamenti veng
 
 <!-- 1807 start -->
 
-### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>Esperienza dell'app Portale aziendale migliorata per gli utenti del manager di registrazione dispositivi <!-- 675800 -->
-Quando un manager di registrazione dispositivi accede all'app Portale aziendale per Windows, l'app elenca solo il dispositivo in esecuzione corrente. Questo miglioramento ridurrà i timeout che in precedenza si verificavano quando l'app tentava di caricare tutti i dispositivi registrati nel manager di registrazione dispositivi.  
-
 ### <a name="check-for-configuration-manager-compliance----2192052---"></a>Verificare la conformità di Configuration Manager <!-- 2192052 -->
 Un aggiornamento futuro includerà una nuova impostazione di conformità System Center Configuration Manager (**Conformità del dispositivo** > **Criteri** > **Crea criterio** > **Windows 10**). Configuration Manager invia segnali per la conformità di Intune. Usando l'impostazione di Intune è possibile richiedere che tutti i segnali Configuration Manager restituiscano "conforme".
 
@@ -143,23 +136,6 @@ Si applica a Windows 10 e versioni successive
 
 ### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>Avvisi per i token VPP in scadenza o un numero insufficiente di licenze del portale aziendale <!-- 2237572 -->
 Se si usa Volume Purchase Program (VPP) per eseguire il provisioning anticipato del portale aziendale durante la registrazione DEP, Intune invia un avviso in prossimità della scadenza del token VPP e in caso di un numero insufficiente di licenze per il portale aziendale.
-
-<!-- 1806 start -->
-
-### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>Le tastiere di terze parti possono essere bloccate dalle impostazioni APP in iOS <!-- 1248481 -->
-Nei dispositivi iOS gli amministratori di Intune potranno impedire l'uso di tastiere di terze parti quando si accede ai dati dell'organizzazione nelle app protette da criteri. Quando i criteri di protezione delle applicazioni (APP, Application Protection Policy) sono impostati in modo da bloccare le tastiere di terze parti, l'utente del dispositivo visualizza un messaggio la prima volta che interagisce con i dati aziendali usando una tastiera di terze parti. Tutte le opzioni, eccetto la tastiera nativa, vengono bloccate e non sono visibili agli utenti dei dispositivi. Gli utenti visualizzano la finestra di dialogo del messaggio una sola volta. 
-
-<!-- 1805 start -->
-
-### <a name="require-non-biometric-after-specified-timeout----1506985---"></a>Richiedere un PIN non biometrico dopo il timeout specificato <!-- 1506985 --> 
-
-Se si richiede un PIN non biometrico dopo il timeout specificato dall'amministratore, Intune offre una maggiore protezione per le app abilitate per la gestione delle applicazioni mobili (MAM, Mobile Application Management) limitando l'uso dell'identificazione biometrica per l'accesso ai dati aziendali. Le impostazioni interessano gli utenti che usano Touch ID (iOS), Face ID (iOS), Android Biometric o altri metodi di autenticazione biometrica futuri per accedere alle applicazioni abilitate per APP/MAM. Queste impostazioni offrono agli amministratori di Intune un controllo più granulare sull'accesso degli utenti, eliminando i casi in cui un dispositivo con più impronte digitali o altri metodi di accesso biometrico possono rivelare dati aziendali all'utente sbagliato. Nel portale di Azure aprire **Microsoft Intune**. Selezionare **App per dispositivi mobili** > **Criteri di protezione delle app** > **Aggiungi criterio** > **Impostazioni**. Individuare la sezione di **accesso** per le impostazioni specifiche.
-
-<!-- 1803 start -->
-
-### <a name="updating-the-help-and-feedback-experience-on-company-portal-app-for-android---1631531---"></a>Aggiornamento dell'esperienza Guida e commenti e suggerimenti nell'app Portale aziendale per Android <!--1631531 -->
-
-L'esperienza Guida e commenti e suggerimenti nell'app Portale aziendale per Android verrà aggiornata e adattata alle procedure consigliate per le app Android. L'app Portale aziendale per Android verrà aggiornata nei prossimi mesi in modo da suddividere la voce di menu **Guida e commenti e suggerimenti** in due voci distinte, **Guida** e **Invia commenti e suggerimenti**. La pagina **Guida** conterrà una sezione **Domande frequenti** e il pulsante **Supporto e-mail** per invitare gli utenti a caricare log in Microsoft e a inviare e-mail al supporto aziendale per descrivere i problemi incontrati. **Invia commenti e suggerimenti** guiderà l'utente nella procedura standard Microsoft per l'invio di commenti e suggerimenti che richiederà all'utente di indicare una preferenza, una mancanza di preferenza o un'idea.
 
 
 

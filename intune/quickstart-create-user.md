@@ -5,24 +5,24 @@ services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 10/30/2018
 ms.author: erikje
-ms.openlocfilehash: 6a1d591e635dccd99551d9b8d40e099724a85d77
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: fb88f703048eaa122bb406d8adb1fc9face764c4
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410753"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Guida introduttiva: creare un utente e assegnargli una licenza
 
-In questa guida introduttiva verrà creato un utente a cui verrà assegnata una licenza. In Intune, ogni persona che si desidera possa accedere ai dati aziendali deve disporre di un account utente. Gli amministratori di Intune potranno quindi configurare tali utenti per gestire il controllo dell'accesso.
+In questa guida introduttiva verrà creato un utente a cui verrà assegnata una licenza. In Intune, ogni persona che si desidera possa accedere ai dati aziendali deve disporre di un account utente. Gli amministratori di Intune potranno poi configurare tali utenti per gestire il controllo dell'accesso.
 
 Se non si dispone di una sottoscrizione Intune, è possibile [iscriversi per ottenere un account di prova gratuito](free-trial-sign-up.md).
 
 ## <a name="sign-in-to-intune"></a>Accedere a Intune
 
-Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o come amministratore del servizio Intune.
+Accedere a [Intune](https://aka.ms/intuneportal) come [amministratore globale o come amministratore del servizio Intune](users-add.md#types-of-administrators). Se è stata creata una sottoscrizione della versione di valutazione di Intune, l'account creato con tale sottoscrizione sarà un amministratore globale.
 
 ## <a name="create-a-user"></a>Creazione di un utente
 
@@ -30,11 +30,14 @@ Gli utenti devono disporre di un account utente per registrarsi alla gestione de
 
 1. In Intune, scegliere **Utenti** > **Tutti gli utenti** > **Nuovo utente**.
 ![Browser](media/quickstart-create-user/create-user.png)
-2. Nella casella **Nome** immettere *Dewey Kellum*.
-3. Nella casella **Nome utente** immettere *Dewey@contoso.onmicrosoft.com*.
-4. Scegliere **Gruppi** > **Tutti** > **Seleziona**.
-5. Scegliere **Mostra password** e prendere nota della password generata automaticamente in modo che sia possibile accedere a un dispositivo di test.
-6. Scegliere **Crea**.
+2. Nella casella **Nome** immettere un nome, ad esempio *Dewey Kellum*.
+3. Nella casella **Nome utente** immettere un ID utente, ad esempio Dewey@contoso.onmicrosoft.com.
+
+    > [!NOTE]
+    > Se non è stato configurato il nome di dominio del cliente, usare il nome di dominio verificato usato per creare la sottoscrizione di Intune (o la [versione di valutazione gratuita](free-trial-sign-up.md#sign-up-for-a-microsoft-intune-free-trial)). 
+
+4. Scegliere **Mostra password** e prendere nota della password generata automaticamente in modo che sia possibile accedere a un dispositivo di test.
+5. Scegliere **Crea**.
 
 ## <a name="assign-a-license-to-the-user"></a>Assegnare una licenza a un utente
 
@@ -42,15 +45,19 @@ Dopo aver creato un utente è necessario usare il [portale di Office 365](http:/
 
 1. Accedere al [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) con le stesse credenziali usate per accedere a Intune.
 2. Scegliere **Utenti** > **Utenti attivi** > scegliere l'utente appena creato.
-3. In **Percorso** scegliere un percorso per l'utente.
-3. Scegliere **Licenze di prodotto** e impostare **Enterprise Mobility + Security E3** (o un'altra licenza di cui si dispone che includa Intune) su **Attivato**.
+3. Accanto a **Licenze di prodotto** selezionare **Modifica**.
+4. In **Percorso** scegliere un percorso per l'utente.
+5. Fare clic su **Attivata** accanto alla licenza di Intune (o a un'altra licenza che include Intune). Il [nome del prodotto](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** visualizzato viene usato come piano di servizio nella gestione di Azure 
+
    > [!NOTE]
-   > Questa operazione usa una delle licenze per l'utente. Se si usa l'ambiente in tempo reale è possibile disattivare l'uso di licenza in un secondo momento per riassegnarla a un utente reale.
-5. Scegliere **Salva**.
+   > Questa impostazione usa una delle licenze dell'utente. Se si usa un ambiente di valutazione, sarà necessario riassegnare la licenza a un utente reale in un ambiente live.
+6. Scegliere **Salva** > **Chiudi**.
+
+Sarà visualizzato il nuovo utente Intune attivo che userà una licenza **Intune**.
 
 ## <a name="clean-up-resources"></a>Pulizia delle risorse
 
-Se l'utente non è più necessario, è possibile eliminarlo scegliendo **Utenti** > **Tutti gli utenti** > scegliere l'utente nell'elenco > **Elimina utente** > **Sì**.
+Se l'utente non è più necessario, è possibile eliminarlo. Passare al [portale di Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) e scegliere **Utenti** > **Utenti attivi** > *scegliere l'utente nell'elenco* > **Elimina utente** > **Elimina utente** > **Confirm changes (Conferma modifiche)** > **Chiudi**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

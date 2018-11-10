@@ -1,30 +1,13 @@
 ---
-title: Aggiungere app Win32 a Microsoft Intune
-titlesuffix: ''
-description: Informazioni su come aggiungere e gestire app Win32 in Microsoft Intune.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 10/08/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-ms.reviewer: mghadial
-ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357105"
+title: Aggiungere app Win32 a Microsoft Intune titlesuffix: description: Informazioni su come aggiungere, distribuire e gestire app Win32 con Microsoft Intune. Questo argomento offre una panoramica delle funzionalità di distribuzione e gestione delle app Win32 di Intune, nonché informazioni sulla risoluzione dei problemi delle app Win32. keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
+>>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+
+ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
 ---
+
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune autonomo - Gestione di app Win32 (anteprima pubblica)
 
-Intune autonomo consentirà maggiori funzionalità di gestione delle app Win32. Anche se per i clienti connessi al cloud è possibile usare Configuration Manager per la gestione delle app Win32, i clienti solo di Intune avranno maggiori funzionalità di gestione per le app line-of-business Win32. Questo documento offre una panoramica della funzionalità di gestione delle app Win32 di Intune e informazioni sulla risoluzione dei problemi.
+Intune autonomo consentirà maggiori funzionalità di gestione delle app Win32. Anche se per i clienti connessi al cloud è possibile usare Configuration Manager per la gestione delle app Win32, i clienti solo di Intune avranno maggiori funzionalità di gestione per le app line-of-business Win32. Questo argomento offre una panoramica della funzionalità di gestione delle app Win32 di Intune e informazioni sulla risoluzione dei problemi.
 
 ## <a name="prerequisites-for-public-preview"></a>Prerequisiti per l'anteprima pubblica
 
@@ -32,7 +15,7 @@ Intune autonomo consentirà maggiori funzionalità di gestione delle app Win32. 
 - Il client di Windows 10 deve essere: 
     - aggiunto ad Azure Active Directory (AAD) o ad Azure Active Directory ibrido e
     - registrato in Intune (gestito da MDM)
-- Le dimensioni delle applicazioni Windows prevedono un limite di 2 GB per ogni app nell'anteprima pubblica 
+- Le dimensioni delle applicazioni Windows prevedono un limite di 8 GB per ogni app nell'anteprima pubblica 
 
 > [!NOTE]
 > Le edizioni Pro ed Education di Windows 10 versione 1607 sono attualmente in fase di test ed è possibile inviare commenti e suggerimenti.
@@ -109,6 +92,11 @@ In modo analogo a un'app line-of-business, è possibile aggiungere un'app Win32 
 3.  Aggiungere la riga di comando di disinstallazione completa per disinstallare l'app in base al GUID dell'app. 
 
     ad esempio `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+    > [!NOTE]
+    > È possibile configurare un'app Win32 in modo che venga installata nel contesto **utente** o **di sistema**. Il contesto **utente** si riferisce solo a un determinato utente. Il contesto **di sistema** si riferisce a tutti gli utenti di un dispositivo Windows 10.
+    >
+    > Gli utenti finali non devono eseguire l'accesso al dispositivo per installare le app Win32.
 
 4.  Al termine, fare clic su **OK**.
 
@@ -233,7 +221,6 @@ I log dell'agente nel computer client si trovano in genere in `C:\ProgramData\Mi
 ### <a name="troubleshooting-areas-to-consider"></a>Aree della risoluzione dei problemi da tenere in considerazione
 - Controllare la destinazione per verificare che l'agente sia installato nel dispositivo: l'app Win32 destinata a un gruppo o lo script di PowerShell destinato a un gruppo creerà criteri di installazione dell'agente per il gruppo di sicurezza.
 - Controllare la versione del sistema operativo: Windows 10 1607 e versioni successive.  
-- Controllare se l'utente di AAD è connesso al computer client.
 - Controllare lo SKU di Windows 10: Windows 10 S o le versioni di Windows in esecuzione con la modalità S abilitata non supportano l'installazione MSI.
 
 ## <a name="next-steps"></a>Passaggi successivi

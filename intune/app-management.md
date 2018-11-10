@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075847"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025169"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
@@ -94,7 +94,7 @@ Per altre informazioni su questa sezione, vedere [Gestire le app](app-management
 - **Licenze dell'app**: consente di visualizzare, assegnare e monitorare le app acquistate con Volume Purchase Program dagli App Store. Per altre informazioni, vedere:
     - [App iOS acquistate tramite Volume Purchase Program ](vpp-apps-ios.md).
     - [App acquistate con Volume Purchase Program da Microsoft Store per le aziende](windows-store-for-business.md).
-- **App individuate**: visualizza tutte le app assegnate da Intune e installate in un dispositivo. Per altre informazioni, vedere [Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
+- **App individuate**: visualizza le app assegnate da Intune o installate in un dispositivo. Per altre informazioni, vedere [Visualizzare i dettagli del dispositivo con Microsoft Intune](device-inventory.md).
 - **Stato di installazione dell'app**: visualizza lo stato di un'assegnazione di app creata. Per altre informazioni, vedere [Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
 - **Stato protezione app**: visualizza lo stato dei criteri di protezione delle app per un utente selezionato.
 - **Log di controllo**: visualizza le attività correlate alle app di Intune di tutti gli amministratori IT.

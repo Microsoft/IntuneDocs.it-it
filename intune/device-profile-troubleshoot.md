@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312950"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679305"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemi comuni e soluzioni per i profili di dispositivo in Microsoft Intune
 
@@ -130,9 +130,9 @@ Quando si elimina un profilo o si rimuove un dispositivo da un gruppo che includ
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Dopo aver modificato un profilo di restrizione dei dispositivi, le modifiche non sono state applicate
 I dispositivi Windows Phone non consentono che la sicurezza dei criteri di sicurezza impostati tramite MDM o EAS venga ridotta dopo averli configurati. Ad esempio, si imposta un **numero minimo di caratteri per la password** su 8 e poi si prova a ridurlo a 4. Il profilo più restrittivo è già stato applicato al dispositivo.
 
-A seconda della piattaforma del dispositivo, se si vuole modificare il profilo impostando un valore meno sicuro è necessario reimpostare i criteri di sicurezza. Ad esempio nel desktop di Windows scorrere verso destra e selezionare **Impostazioni** > **Pannello di controllo**. Selezionare l'applet **Account utente** .
+Se si vuole modificare il profilo impostando un valore meno sicuro, è necessario reimpostare i criteri di sicurezza. Ad esempio nel desktop di Windows 8.1 scorrere verso destra e selezionare **Impostazioni** > **Pannello di controllo**. Selezionare l'applet **Account utente** . Nella parte inferiore del menu di spostamento visualizzato a sinistra è disponibile un collegamento **Reimposta criteri di sicurezza**. Selezionarlo e quindi scegliere **Reimposta criteri**.
 
-Nella parte inferiore del menu di spostamento visualizzato a sinistra è disponibile un collegamento **Reimposta criteri di sicurezza**. Selezionarlo e quindi scegliere **Reimposta criteri**. È possibile che altri dispositivi MDM, ad esempio dispositivi Android, Windows Phone 8.1 e versione successiva e iOS, debbano essere ritirati e registrati nuovamente nel servizio per applicare un profilo meno restrittivo.
+È possibile che altri dispositivi MDM, ad esempio dispositivi Android, Windows Phone 8.1 e versione successiva, iOS e Windows 10 debbano essere ritirati e registrati nuovamente nel servizio per applicare un profilo meno restrittivo.
 
 ## <a name="next-steps"></a>Passaggi successivi
 È possibile ottenere altre informazioni. Vedere [Come ottenere supporto per Microsoft Intune](get-support.md).

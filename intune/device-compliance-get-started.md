@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/28/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102056"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915700"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introduzione ai criteri di conformità dei dispositivi in Intune
 
@@ -151,9 +151,9 @@ Ai dispositivi conformi alle regole dei criteri è possibile consentire l'access
 È anche possibile usare i criteri di conformità dei dispositivi senza accesso condizionale. In tal caso, i dispositivi vengono valutati e segnalati in base allo stato di conformità. Può ad esempio essere utile segnalare quanti dispositivi non sono crittografati o quali dispositivi sono stati manomessi con jailbreak o root. Quando si usano i criteri di conformità senza accesso condizionale, non vengono applicate limitazioni per l'accesso alle risorse aziendali.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Modi per distribuire i criteri di conformità dei dispositivi
-È possibile distribuire i criteri di conformità a utenti in gruppi di utenti o a dispositivi in gruppi di dispositivi. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata su tutti i dispositivi dell'utente.
+È possibile distribuire i criteri di conformità a utenti in gruppi di utenti o a dispositivi in gruppi di dispositivi. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata su tutti i dispositivi dell'utente. In Windows 10 versione 1803 e nei dispositivi più recenti è consigliabile eseguire la distribuzione ai gruppi di dispositivi *se* l'utente primario non ha registrato il dispositivo. L'uso di gruppi di dispositivi in questo scenario è utile per la creazione di report di conformità.
 
-Le **Impostazioni dei criteri di conformità** predefinite (portale di Azure > Conformità del dispositivo) includono:
+In tutti i dispositivi registrati in Intune viene valutato un set di **impostazioni dei criteri di conformità** predefinite (portale di Azure > Conformità del dispositivo), tra cui:
 
 - **Contrassegna i dispositivi senza criteri di conformità assegnati come**: questa proprietà ha due valori:
 
@@ -171,7 +171,7 @@ Le **Impostazioni dei criteri di conformità** predefinite (portale di Azure > C
 
 - **Periodo di validità dello stato di conformità (giorni)**: immettere il periodo di tempo di cui dispongono i dispositivi per segnalare lo stato di tutti i criteri di conformità ricevuti. I dispositivi che non restituiscono lo stato entro il periodo indicato vengono considerati non conformi. Il valore predefinito è 30 giorni.
 
-Tutti i dispositivi dispongono di **Criteri di conformità del dispositivo predefiniti** (portale di Azure > Conformità del dispositivo > Conformità dei criteri). Usare questo criterio predefinito per monitorare queste impostazioni.
+Tutti i dispositivi hanno un **criterio di conformità del dispositivo predefinito** (portale di Azure > Conformità del dispositivo > Conformità dei criteri). Usare questo criterio predefinito per monitorare queste impostazioni.
 
 Per informazioni sul tempo necessario ai dispositivi mobili per ottenere un criterio dopo la distribuzione, vedere [Risolvere i problemi relativi ai profili dei dispositivi](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321442"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236408"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Aggiungere criteri di conformità per i dispositivi macOS con Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 I criteri di conformità per i dispositivi macOS in Intune specificano le regole e le impostazioni che i dispositivi macOS devono soddisfare per essere conformi. Tramite i criteri di conformità del dispositivo con accesso condizionale è possibile consentire o bloccare l'accesso alle risorse aziendali. È anche possibile ottenere i report di dispositivo e intraprendere azioni per la mancata conformità. I criteri di conformità dei dispositivi possono essere creati per ogni piattaforma nel portale di Intune in Azure. Per altre informazioni sui criteri di conformità e sui requisiti, vedere [Introduzione alla conformità dei dispositivi](device-compliance-get-started.md).
 
@@ -90,6 +88,17 @@ L'impostazione Firewall protegge i dispositivi da accessi alla rete non autorizz
 - **Firewall**: selezionare **Abilita** per proteggere i dispositivi da accessi non autorizzati. Abilitando questa funzionalità è possibile gestire le connessioni Internet in ingresso e usare la modalità mascheramento. L'opzione **Non configurato** (impostazione predefinita) lascia disattivato il firewall e consente il traffico di rete (non bloccato).
 - **Connessioni in ingresso**: **blocca** tutte le connessioni di rete in ingresso tranne quelle necessarie per i servizi Internet di base, ad esempio DHCP, Bonjour e IPSec. Questa impostazione blocca anche tutti i servizi di condivisione, ad esempio la condivisione dello schermo, l'accesso remoto e il servizio di condivisione di musica di iTunes. L'opzione **Non configurato** (impostazione predefinita) consente le connessioni in ingresso e i servizi di condivisione. 
 - **Modalità mascheramento**: selezionare **Abilita** per impedire che il dispositivo risponda alle richieste di probe, che possono avere origine da utenti malintenzionati. Se l'impostazione è abilitata, il dispositivo continua a rispondere alle richieste in ingresso provenienti da applicazioni autorizzate. L'opzione **Non configurato** (impostazione predefinita) lascia disattivata la modalità mascheramento.
+
+### <a name="gatekeeper"></a>Gatekeeper
+
+**Consenti le app scaricate da queste posizioni**: consente l'installazione nei dispositivi delle applicazioni supportate da posizioni diverse. Opzioni relative alla posizione:
+
+- **Non configurata**: impostazione predefinita. L'opzione Gatekeeper non influisce sulla conformità. 
+- **Mac App Store**: consente di installare app solo da Mac App Store. Non è possibile installare app da terze parti o sviluppatori identificati. Se si imposta Gatekeeper per l'installazione di app al di fuori di Mac App Store, il dispositivo viene considerato non conforme.
+- **Mac App Store e sviluppatori identificati**: consente di installare app da Mac App Store e sviluppatori identificati. macOS controlla l'identità degli sviluppatori ed esegue alcuni altri controlli per verificare l'integrità dell'app. Se si imposta Gatekeeper per l'installazione di app al di fuori di queste opzioni, il dispositivo viene considerato non conforme.
+- **Ovunque**: consente di installare le app da qualsiasi posizione e sviluppatore. Questa opzione è la meno sicura.
+
+Per altri dettagli nella documentazione Apple, vedere [Gatekeeper in macOS](https://support.apple.com/HT202491).
 
 ## <a name="assign-user-groups"></a>Assegnare gruppi di utenti
 

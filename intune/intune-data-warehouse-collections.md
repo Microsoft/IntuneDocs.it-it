@@ -15,12 +15,12 @@ ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 4df55309587ac079cfeaec299d70635b090e300b
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: e54b35d677d34067bfbd0ad6aad86e3dfe17fb90
+ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821632"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50971483"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Raccolte del data warehouse di Intune
 
@@ -499,7 +499,7 @@ L'entità **termsAndConditions** rappresenta i metadati e il contenuto di un cri
 |    description    |    Descrizione di questi termini e condizioni.     |         |
 |    title    |    Titolo per questi termini e condizioni.     |    Criteri aziendali di gestione di dispositivi        |
 |    summaryOfTerms    |    Riepilogo delle condizioni fornite all'utente.     |    Accetto i termini e le condizioni.    |
-|    termsAndConditionsBodyText    |    Il corpo del testo per questi termini e condizioni.       |    * Crittografia del dispositivo * Imposizione del PIN di 6 cifre    |
+|    termsAndConditionsBodyText    |    Il corpo del testo per questi termini e condizioni.       |    *Crittografia del dispositivo* Imposizione del PIN di 6 cifre    |
 |    isDeleted    |    Valore true o false per indicare se questo valore viene eliminato.     |    False    |
 |    startDateInclusiveUTC    |    Data di inizio di questi termini e condizioni.     |    23/08/2018 4:01:34    |
 |    endDateEclusiveUTC    |    Data di fine di questi termini e condizioni.     |    31/12/9999 12:00:00    |

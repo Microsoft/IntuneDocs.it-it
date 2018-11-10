@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 03d52c53b6e3152a5a262ca8bd6d158d5980b2c8
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425292"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236391"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Gestire e usare dispositivi Windows Holographic e HoloLens con Intune
 
@@ -68,6 +68,10 @@ Con Intune è possibile aggiungere le app ai dispositivi che eseguono Windows Ho
 
 Microsoft Intune può distribuire app di Windows universale in dispositivi Microsoft HoloLens che eseguono Windows Holographic for Business. È possibile caricare i pacchetti dell'app direttamente nel portale di Intune di Azure o distribuirle da Microsoft Store per le aziende. Per altre informazioni sulle aree correlate, vedere gli articoli seguenti:
 - Per distribuire app line-of-business usando il portale di Intune di Azure, vedere [Come aggiungere app line-of-business per Windows in Microsoft Intune](lob-apps-windows.md).
+
+    > [!NOTE]
+    > Intune supporta i pacchetti con una dimensione massima di 8 GB. Questa dimensione di pacchetto è disponibile solo per le app LOB caricate in Intune.
+
 - Per distribuire app usando Microsoft Store per le aziende, vedere [Come gestire le app acquistate in Microsoft Store per le aziende con Microsoft Intune](windows-store-for-business.md). 
 - Per informazioni sulla gestione delle app con Microsoft Intune, vedere [Informazioni sulla gestione delle app in Microsoft Intune](app-management.md).
 - Per altre informazioni sullo sviluppo di app per Microsoft HoloLens, vedere [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps) (App di realtà mista per Microsoft HoloLens). 

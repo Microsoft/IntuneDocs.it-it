@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
-ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
+ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307407"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236289"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Come configurare l'app Portale aziendale di Microsoft Intune
 
@@ -60,28 +60,48 @@ Immettere le informazioni di supporto della società, in modo da garantire al di
 | **Informazioni aggiuntive**| 120 | Visualizzato nella pagina **Contatta l'IT** |
 
 
-## <a name="company-branding-customization"></a>Personalizzazione del branding aziendale       
-È possibile personalizzare il portale aziendale con logo, nome dell'azienda, colore del tema e sfondo. Per visualizzare rapidamente l'anteprima della configurazione di branding senza un dispositivo di test, è possibile passare a [portal.manage.microsoft.com](https://portal.manage.microsoft.com). Si noti che il logo caricato verrà usato per i modelli di posta elettronica.      
+## <a name="company-identity-branding-customization"></a>Personalizzazione del branding dell'identità aziendale      
+È possibile personalizzare il portale aziendale con logo, nome dell'azienda, colore del tema e sfondo.     
 
-### <a name="theme-color"></a>Colore del tema
+### <a name="theme-color-and-logo-in-the-company-portal"></a>Colore del tema e logo nel portale aziendale
 È possibile applicare un colore del tema al portale aziendale. Selezionare un colore standard o immettere un codice esadecimale a sei cifre corrispondente a un colore personalizzato.
 
 |Nome del campo|Altre informazioni|
 |---|---|
-|**Tipo di colore**| Selezionare un colore del tema da applicare al portale aziendale. È possibile scegliere un colore standard o immettere un codice esadecimale specifico. |
-|**Scegliere un colore** o **Codice colore in formato esadecimale**| Selezionare un colore del tema da applicare al portale aziendale. È possibile scegliere un colore standard o immettere un codice esadecimale specifico. Queste opzioni sono disponibili in base all'opzione **Tipo di colore** selezionata.  |
+|**Select a standard color or enter a six-digit hex code** (Selezionare un colore standard o immettere un codice esadecimale a sei cifre)| Scegliere **Standard** per selezionare un colore. Scegliere **Personalizzato** per selezionare un colore specifico in base a un valore in formato esadecimale.|
+|**Choose theme color** (Scegliere il colore del tema)| Selezionare un colore del tema da applicare al portale aziendale. È possibile scegliere un colore standard o immettere un codice esadecimale specifico. |
+|**Display** (Schermo)| Specificare se visualizzare il **logo e il nome della società**, **solo il logo della società** o solo il **nome della società**. |
+|**Upload your company logo** (Carica il logo della società)|È possibile caricare il logo della società da visualizzare nel portale aziendale. Si noti che il colore del testo viene selezionato automaticamente per offrire il massimo livello di contrasto. Per assicurare un aspetto ottimale, caricare un logo con uno sfondo trasparente.<p><ul><li>Dimensioni massime immagine: 400 px x 400px</li><li>Dimensioni massime file: 750 KB</li><li>Tipo di file: PNG, JPG o JPEG</li></ul>|
 
-### <a name="company-logo"></a>Logo società
-Caricare il logo della società per renderlo visibile nell'intera esperienza utente di Intune.
+Dopo aver caricato il logo, l'area di anteprima visualizza il logo con il colore del tema. Se si sceglie di visualizzare il nome della società, il nome verrà visualizzato in nero o in bianco nel portale aziendale in modo da offrire il massimo livello di contrasto in base al colore del tema. L'area di anteprima nella schermata non visualizzerà il nome della società. 
+
+### <a name="logo-to-use-on-white-or-light-backgrounds"></a>Logo da usare su sfondi bianchi o chiari
+Scegliere un logo adatto a sfondi bianchi o chiari.
 
 |Nome del campo|Altre informazioni|
 |---|---|
-|**Mostra logo della società**|Quando si attiva questa opzione, è possibile caricare il logo aziendale da visualizzare nel portale aziendale. È possibile caricare due loghi: uno che verrà visualizzato quando lo sfondo del portale è bianco e uno che verrà visualizzato quando lo sfondo del portale aziendale usa il colore del tema selezionato. |
-|**Caricare un logo da usare su sfondi con colore del tema**| Questa opzione è disponibile se si è scelto di visualizzare il logo della società. Il logo deve essere un file con estensione jpg o png e avere una risoluzione massima di 400 x 400 pixel e una dimensione massima di 750 kB. |
-|**Caricare il logo da usare su sfondi chiari**| Questa opzione è disponibile se si è scelto di visualizzare il logo della società. Il logo deve essere un file con estensione jpg o png e avere una risoluzione massima di 400 x 400 pixel e una dimensione massima di 750 kB. |
-|**Mostra il nome della società accanto al logo**| Selezionare questa opzione per visualizzare il nome della società immesso accanto al logo caricato. |
+|**Upload your logo** (Carica il logo)| Questa opzione è disponibile se si è scelto di visualizzare il logo della società. Per assicurare un aspetto ottimale, caricare un logo con uno sfondo trasparente.<p><ul><li>Dimensioni massime immagine: 400 px x 400px</li><li>Dimensioni massime file: 750 KB</li><li>Tipo di file: PNG, JPG o JPEG</li></ul>|
 
-Dopo aver salvato le modifiche è possibile scegliere **Visualizzare l'anteprima delle impostazioni nel portale Web di Intune** nella parte superiore del pannello per visualizzare come appaiono le configurazioni.
+### <a name="brand-image-for-company-portal"></a>Immagine del marchio per il portale aziendale
+
+Visualizzare un'immagine del marchio che rifletta il marchio della società. Il supporto di un'immagine del marchio verrà aggiunto alle app del portale aziendale, ma potrebbe non essere visibile in tutte le piattaforme.
+
+|Nome del campo|Altre informazioni|
+|---|---|
+|**Upload your brand image** (Caricare immagine del marchio)| Questa opzione è disponibile per consentire di visualizzare un'immagine di sfondo nella pagina del profilo dell'utente nell'app del portale aziendale.<p><ul><li>Larghezza immagine consigliata: maggiore di 1125 px, ma non minore di 640 px</li><li>Dimensioni massime immagine: 1,3 MB</li><li>Tipo di file: PNG, JPG o JPEG</li></ul>|
+
+L'immagine del marchio può migliorare la fiducia dell'utente nel portale aziendale presentando un forte senso di marchio della società. Di seguito sono riportati alcuni suggerimenti che è possibile prendere in considerazione per l'acquisizione, la scelta e l'ottimizzazione dell'immagine per il portale aziendale. 
+
+- Rivolgersi al reparto marketing o pubblicità. È possibile che il reparto abbia già a disposizione un set di immagini del marchio approvate. Il reparto può anche aiutare l'utente ad adattare le immagini alle esigenze specifiche. 
+
+- Prendere in considerazione sia la composizione verticale che quella orizzontale. L'immagine deve avere uno sfondo sufficiente che circonda il punto focale. L'immagine può essere ritagliata in diversi modi in base alle dimensioni del dispositivo e all'orientamento. 
+
+- Evitare di usare un'immagine generica. L'immagine deve riflettere il marchio della società ed essere familiare agli utenti. Se non è disponibile alcuna immagine, è preferibile non usare un'immagine generica che non ha alcun significato per l'utente. 
+
+- Rimuovere i metadati non necessari. Il file di immagine può includere i metadati, ad esempio il profilo della fotocamera, la posizione geografica, il titolo, il sottotitolo e così via. Usare uno strumento di ottimizzazione delle immagini per rimuovere queste informazioni per mantenere la qualità e rispettare il limite di dimensione del file. 
+
+Dopo aver salvato le modifiche è possibile scegliere **Visualizzare l'anteprima delle impostazioni nel portale Web di Intune** nella parte superiore del pannello per visualizzare come appaiono le configurazioni. Si noti che l'immagine del marchio può essere visualizzata in anteprima solo in un dispositivo iOS e non nel portale Web di Intune. 
+
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Tasti di scelta rapida del portale aziendale di Windows
 

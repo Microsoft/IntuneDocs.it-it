@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
-ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
+ms.openlocfilehash: 90756da72ecdcbd049b14b45014433bb5843a5ed
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229076"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236663"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti aziendali
 
@@ -96,13 +96,14 @@ Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
 | Proprietà          | Il tipo di proprietà del dispositivo (**Società**, **Personale** o **Sconosciuto**).                                               |
 | Conforme con Intune   | Nome del tipo di dispositivo.                                                                                                     |
 | Conforme con Azure AD | Stato di ogni app di protezione delle app degli utenti I possibili stati per le app sono **Archiviato** e **Non archiviato**. |
+| Installazione dell'app | Indica se nel singolo dispositivo l'installazione dell'app è stata eseguita correttamente o non è riuscita. |
 | Sistema operativo                 | Sistema operativo installato nel dispositivo.                                                                                       |
 | Versione sistema operativo         | Numero di versione del sistema operativo del dispositivo.                                                                                  |
 | Ultima archiviazione      | Nome del tipo di dispositivo.                                                                                                     |
 
 ### <a name="app-protection-status"></a>Stato protezione app
 
-I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
 
 | Proprietà    | Descrizione                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -115,7 +116,7 @@ I criteri di protezione app sono disponibili per le app per dispositivi mobili c
 
 ## <a name="app-protection-policies-reference"></a>Riferimento dei criteri di protezione app
 
-Sono disponibili criteri di protezione delle app per dispositivi mobili che si integrano con le tecnologie EMS. Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+Sono disponibili criteri di protezione delle app per dispositivi mobili che si integrano con le tecnologie EMS. Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
 
 ### <a name="properties"></a>Proprietà
 
@@ -180,7 +181,7 @@ Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
 
 ### <a name="app-protection-policies"></a>Criteri di protezione delle app
 
-I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
 
 | Proprietà    | Descrizione                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -193,7 +194,7 @@ I criteri di protezione app sono disponibili per le app per dispositivi mobili c
 
 ## <a name="configuration-policies-reference"></a>Riferimento dei criteri di configurazione
 
-I criteri di configurazione sono disponibili per app per dispositivi mobili con configurazioni specifiche del fornitore. 
+I criteri di configurazione sono disponibili per app per dispositivi mobili con configurazioni specifiche del fornitore. 
 
 ### <a name="properties"></a>Proprietà
 
@@ -226,7 +227,7 @@ Dispositivi gestiti da Intune o da utenti gestiti da Intune o Azure AD.
 
 ### <a name="app-protection-policies"></a>Criteri di protezione delle app
 
-I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
+I criteri di protezione app sono disponibili per le app per dispositivi mobili che si integrano con le tecnologie Enterprise Mobility + Security (EMS). Questi criteri garantiscono un grado base di protezione per i dati aziendali che vengono scaricati nelle app per dispositivi mobili, tra cui le app Office. 
 
 | Proprietà    | Descrizione                                                                           |
 |-------------|---------------------------------------------------------------------------------------|

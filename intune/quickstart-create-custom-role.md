@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 66426e9e22c2624b9828440906e3b1b947f4b60a
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581668"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410770"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Guida introduttiva: creare e assegnare un ruolo personalizzato
 
@@ -47,7 +47,7 @@ Quando si crea un ruolo personalizzato, è possibile impostare le autorizzazioni
 
 Prima che l'operatore della sicurezza possa usare le nuove autorizzazioni, è indispensabile assegnare il ruolo a un gruppo che contenga l'utente di sicurezza.
 
-1. In Intune scegliere **Ruoli** > **Tutti i ruoli** > **Remote device helpdesk** (Helpdesk dispositivo remoto).
+1. In Intune scegliere **Ruoli** > **Tutti i ruoli** > **Security operations** (Operazioni di sicurezza).
 2. In **Ruoli di Intune** scegliere **Assegnazioni** > **Assegna**.
 3. Nella casella **Nome dell'assegnazione** immettere *Sec ops*.
 4. Scegliere **Membri (gruppi)** > **Aggiungi**.

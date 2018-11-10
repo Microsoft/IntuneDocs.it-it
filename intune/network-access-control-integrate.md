@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/18/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8d78d850d68b8c6eb6e5b1282acddb3b93963ca4
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959520"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236153"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integrazione del controllo di accesso alla rete (NAC) con Intune
 
@@ -27,7 +27,7 @@ Intune si integra con i partner di controllo di accesso alla rete per consentire
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Protezione delle risorse aziendali con le soluzioni di Intune e NAC
 
-Le soluzioni NAC controllano lo stato di registrazione e conformità del dispositivo con Intune e consentono di prendere decisioni relative al controllo dell'accesso. Se il dispositivo non è registrato oppure è registrato ma non è conforme ai criteri di conformità dei dispositivi Intune, deve essere reindirizzato a Intune per la registrazione e/o per un controllo di conformità.
+Le soluzioni NAC controllano lo stato di registrazione e conformità del dispositivo con Intune e consentono di prendere decisioni relative al controllo dell'accesso. Se il dispositivo non è registrato oppure è registrato ma non è conforme ai criteri di conformità dei dispositivi Intune, deve essere reindirizzato a Intune per la registrazione o per un controllo di conformità.
 
 ### <a name="example"></a>Esempio
 
@@ -37,7 +37,7 @@ Se il dispositivo è registrato e conforme con Intune, la soluzione NAC dovrebbe
 
 I dispositivi che stanno eseguendo la sincronizzazione con Intune non possono passare dallo stato **Conforme** / **Non conforme** allo stato **Not Synched** (Non sincronizzato) o **Sconosciuto**. Lo stato **Sconosciuto** è riservato ai dispositivi appena registrati dei quali non è ancora stata valutata la conformità.
 
-Per i dispositivi a cui viene impedito l'accesso alle risorse, il servizio che blocca l'accesso deve reindirizzare tutti gli utenti al [portale di gestione](https://portal.manage.microsoft.com) per determinare i motivi per cui il dispositivo è bloccato.  Se gli utenti visitano questa pagina, viene rivalutata la conformità dei loro dispositivi in modo sincrono.
+Per i dispositivi a cui viene impedito l'accesso alle risorse, il servizio che blocca l'accesso deve reindirizzare tutti gli utenti al [portale di gestione](https://portal.manage.microsoft.com) per determinare i motivi per cui il dispositivo è bloccato.  Se gli utenti visitano questa pagina, viene rivalutata la conformità dei loro dispositivi in modo sincrono.
 
 ## <a name="nac-and-conditional-access"></a>NAC e accesso condizionale
 
@@ -55,9 +55,19 @@ L'elenco seguente è una panoramica del funzionamento dell'integrazione di NAC c
 4. L'utente si connette al punto di accesso WiFi aziendale o esegue una richiesta di connessione VPN.
 5. La soluzione partner NAC inoltra le informazioni sul dispositivo a Intune e chiede a Intune lo stato di conformità e la registrazione del dispositivo.
 6. Se il dispositivo non è conforme o non è registrato, la soluzione partner NAC indica all'utente di registrare o risolvere la conformità del dispositivo.
-7. Il dispositivo prova di nuovo a verificare la conformità e/o lo stato di registrazione.
+7. Il dispositivo prova di nuovo a verificare la conformità e lo stato di registrazione.
 8. Dopo che il dispositivo è registrato e conforme, la soluzione partner NAC Ottiene lo stato da Intune.
 9. La connessione viene stabilita correttamente e consente al dispositivo di accedere alle risorse aziendali.
+
+## <a name="use-nac-on-your-ios-devices"></a>Usare NAC nei dispositivi iOS
+
+Il controllo dell'accesso di rete non è attualmente supportato per i client VPN seguenti in iOS:
+-   Cisco AnyConnect
+-   F5 Access
+-   Citrix SSO  
+
+Stiamo collaborando con i partner per rilasciare una soluzione NAC per i client più recenti. Quando le soluzioni saranno pronte, questo articolo verrà aggiornato con dettagli aggiuntivi. 
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 
