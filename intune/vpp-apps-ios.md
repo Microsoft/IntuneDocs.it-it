@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a5333f4e94db0b41b81dcb2589133956c040725
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: fc7aac337c01db3098be5f699db22c3a81c6eb75
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903506"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236612"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Procedura per la gestione delle app iOS acquistate tramite Volume Purchase Program con Microsoft Intune
 
@@ -71,10 +71,9 @@ Prima di iniziare è necessario ottenere un token VPP da Apple e caricarlo nell'
 * Prima di iniziare a usare VPP di Apple con Intune, rimuovere tutti gli account utente VPP esistenti creati con altri fornitori di soluzioni di gestione di dispositivi mobili (MDM). Intune non sincronizzerà tali account utente in Intune come misura di sicurezza. Intune sincronizza solo i dati del servizio VPP di Apple creati da Intune stesso.
 * Intune supporta l'aggiunta di un numero massimo di 256 token VPP.
 * Il programma DEP di Apple automatizza la registrazione per la gestione di dispositivi mobili (MDM). Con DEP è possibile configurare i dispositivi aziendali senza nemmeno toccarli. È possibile registrarsi al programma DEP con lo stesso account dell'agente del programma usato per VPP di Apple. L'ID del programma di distribuzione di Apple è univoco per i programmi elencati nel sito Web [Deployment Program di Apple](https://deploy.apple.com) e non può essere usato per accedere a servizi Apple quali iTunes store.
-* Quando si assegnano le app VPP usando il modello di licenze utente a utenti o dispositivi (con l'affinità utente), ogni utente di Intune deve essere associato a un ID Apple univoco o a un indirizzo di posta elettronica quando accetta i Termini e condizioni Apple sul proprio dispositivo. Quando si configura un dispositivo per un nuovo utente di Intune, verificare di configurarlo con l'ID Apple univoco o l'indirizzo posta elettronica dell'utente. L'ID Apple o l'indirizzo di posta elettronica e l'utente di Intune formano una coppia di credenziali unica che può essere usata su un massimo di 5 dispositivi.
-* Un token VPP è supportato per l'uso su un solo account Intune alla volta. Evitare di riusare lo stesso token VPP per più tenant Intune.
 * Quando si assegnano le app VPP usando il modello di licenze utente a utenti o dispositivi (con l'affinità utente), ogni utente di Intune deve essere associato a un ID Apple univoco o a un indirizzo di posta elettronica quando accetta i Termini e condizioni Apple sul proprio dispositivo.
-Quando si configura un dispositivo per un nuovo utente di Intune, verificare di configurarlo con l'ID Apple univoco o l'indirizzo posta elettronica necessario. L'ID Apple o l'indirizzo di posta elettronica e l'utente di Intune formano una coppia univoca che può essere usata in un massimo di 5 dispositivi.
+* Quando si configura un dispositivo per un nuovo utente di Intune, verificare di configurarlo con l'ID Apple univoco o l'indirizzo posta elettronica dell'utente. L'ID Apple o l'indirizzo di posta elettronica e l'utente di Intune formano una coppia di credenziali unica che può essere usata su un massimo di 5 dispositivi.
+* Un token VPP è supportato per l'uso su un solo account Intune alla volta. Evitare di riusare lo stesso token VPP per più tenant Intune.
 
 >[!IMPORTANT]
 >Dopo avere importato il token VPP in Intune, non importare lo stesso token in un'altra soluzione di gestione dei dispositivi. Questo potrebbe infatti causare la perdita di record relativi agli utenti e alle assegnazioni di licenze.
@@ -93,7 +92,7 @@ Quando si configura un dispositivo per un nuovo utente di Intune, verificare di 
         > Se si modifica il paese, i metadati delle app e l'URL dello Store saranno aggiornati durante la sincronizzazione successiva usando il servizio Apple per le app create con questo token. L'app non sarà aggiornata se non esiste nel nuovo Store del paese.
 
     - **Tipo di account VPP**: scegliere **Azienda** o **Istruzione**.
-    - **Aggiornamenti automatici delle app**: scegliere da **On** a **Off** per abilitare gli aggiornamenti automatici. Quando è abilitato, Intune rileva gli aggiornamenti delle app VPP nell'App Store e li invia automaticamente al dispositivo quando questo si connette. Gli aggiornamenti automatici delle app per le app VPP di Apple aggiorneranno automaticamente solo le app distribuite con la finalità di installazione **Richiesto**. Per le app distribuite con la finalità di installazione **Disponibile**, l'aggiornamento automatico genera una notifica per l'amministratore per informarlo che è disponibile una nuova versione dell'app. L'utente deve fare clic su Installa per installare la versione più recente dell'app. L'utente vedrà inoltre l'app come non installata nel portale aziendale, anche se è installata una versione precedente dell'app. In questo caso, l'utente può reinstallare l'app.
+    - **Aggiornamenti automatici delle app**: scegliere da **On** o **Off** per abilitare gli aggiornamenti automatici. Quando è abilitato, Intune rileva gli aggiornamenti delle app VPP nell'App Store e li invia automaticamente al dispositivo quando questo si connette. Gli aggiornamenti automatici delle app per le app VPP di Apple aggiorneranno automaticamente solo le app distribuite con la finalità di installazione **Richiesto**. Per le app distribuite con la finalità di installazione **Disponibile**, l'aggiornamento automatico genera una notifica per l'amministratore per informarlo che è disponibile una nuova versione dell'app. L'utente deve fare clic su Installa per installare la versione più recente dell'app. L'utente vedrà inoltre l'app come non installata nel portale aziendale, anche se è installata una versione precedente dell'app. In questo caso, l'utente può reinstallare l'app.
     
         > [!NOTE]
         > Gli aggiornamenti automatici delle app funzionano sia per le app con licenza per dispositivo che per utente per iOS versione 11.0 e versioni successive.

@@ -1,104 +1,93 @@
 ---
-title: Configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS
-titlesuffix: ''
-description: Informazioni su come configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS.
+title: Aggiungere l'accesso Single Sign-On per dispositivi iOS in Microsoft Intune - Azure | Microsoft Docs
+description: In Microsoft Intune, creare, configurare, consentire o abilitare i dispositivi iOS per l'uso dell'accesso Single Sign-On (SSO) invece della password per l'autenticazione con le risorse e i dati dell'organizzazione. Per usare l'accesso SSO, creare un profilo di configurazione del dispositivo e immettere il nome UPN, l'ID dispositivo, le app usate e un certificato per l'autenticazione dell'utente e del dispositivo.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: d1add113222c2aa7eaea10679c329e877b1a136f
+ms.sourcegitcommit: 437eaf364c3b8a38d294397310c770ea4d8a8015
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864609"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49992010"
 ---
-# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurare Microsoft Intune per l'accesso Single Sign-On al dispositivo iOS
+# <a name="use-single-sign-on-ios-device-in-microsoft-intune"></a>Usare l'accesso Single Sign-On con un dispositivo iOS in Microsoft Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+La maggior parte delle app line-of-business (LOB) richiedono un certo livello di autenticazione utente per il supporto della sicurezza. In molti casi, l'autenticazione richiede di immettere le stesse credenziali più volte e ciò può essere frustrante per gli utenti. Per migliorare l'esperienza utente, gli sviluppatori possono creare app che usano l'accesso Single Sign-On (SSO), riducendo così il numero di volte in cui l'utente deve immettere le credenziali.
 
-La maggior parte delle app line-of-business (LOB) richiedono un certo livello di autenticazione utente per il supporto della sicurezza. In molti casi viene richiesto all'utente di digitare le stesse credenziali più volte e ciò può essere frustrante per gli utenti. Per migliorare l'esperienza utente, gli sviluppatori possono creare app che usano Single Sign-On, riducendo così il numero di volte in cui un utente deve fornire le credenziali.
+Questo articolo illustra come attivare l'accesso Single Sign-On per i dispositivi iOS tramite un profilo di configurazione del dispositivo in Microsoft Intune.
 
-Per sfruttare i vantaggi della funzionalità Single Sign-On per i dispositivi iOS, è necessario che siano soddisfatte le condizioni seguenti:
+## <a name="before-you-begin"></a>Prima di iniziare
 
-- Un'app sviluppata in modo da cercare l'archivio delle credenziali utente nel payload Single Sign-On nel dispositivo iOS.
-- Intune configurato per l'accesso Single Sign-On al dispositivo iOS.
+Assicurarsi di avere nel dispositivo iOS un'app che cerchi l'archivio delle credenziali utente nel payload Single Sign-On.
 
-## <a name="to-configure-intune-for-ios-device-single-sign-on"></a>Per configurare Intune per l'accesso Single Sign-On al dispositivo iOS
+## <a name="create-the-sso-profile"></a>Creare il profilo SSO
 
+1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+2. Scegliere **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+3. Immettere le impostazioni seguenti:
 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** scegliere **Configurazione del dispositivo**.
-4. Nel riquadro **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
-5. Nel riquadro dei profili scegliere **Crea profilo**.
-6. Specificare un nome e una descrizione e configurare le impostazioni seguenti:
-   - **Piattaforma**: scegliere **iOS**.
-   - **Tipo di profilo**: scegliere **Funzionalità del dispositivo**.
-7. Nel riquadro **Funzionalità del dispositivo** scegliere **Single Sign On**.
+    - **Nome**: immettere un nome per il profilo, ad esempio `ios sso profile`.
+    - **Descrizione**: immettere una descrizione con termini chiave che consentano di individuare il profilo nell'elenco.
+    - **Piattaforma**: scegliere **iOS**.
+    - **Tipo di profilo**: scegliere **Funzionalità del dispositivo**.
 
-   ![Riquadro Single Sign-On](./media/sso-blade.png)
+4. Scegliere **Single Sign-On**.
 
-8. Fare riferimento alla tabella di riepilogo seguente per la compilazione dei campi nel riquadro **Single Sign-On**. Per informazioni dettagliate, vedere le sezioni dopo la tabella.
+    ![Riquadro Single Sign-On](./media/sso-blade.png)
 
-   |Campo  |Note|
-   |---------|---------|
-   |**Attributo nome utente da AAD**|Attributo esaminato da Intune per ogni utente in AAD e usato per popolare il campo corrispondente (ad esempio UPN) prima di generare il payload XML che viene installato nel dispositivo.|
-   |**Area di autenticazione**|Parte del dominio dell'URL.|
-   |**Prefissi di URL che useranno l'accesso Single Sign-On**|Tutti gli URL all'interno dell'organizzazione che richiedono l'autenticazione Single Sign-On per gli utenti|
-   |**App che useranno l'accesso Single Sign-On**|App nel dispositivo dell'utente finale che usano il payload Single Sign-On.|
-   |**Certificato di rinnovo delle credenziali**|Se si usano i certificati per l'autenticazione, selezionare il certificato SCEP o PFX che viene distribuito all'utente come certificato di autenticazione.|
+5. Immettere le impostazioni seguenti: 
 
-Le sezioni seguenti contengono informazioni dettagliate su ognuno dei campi relativi a Single Sign-On.
+    - **Attributo nome utente da AAD**: Intune cerca questo attributo per ogni utente in Azure AD e quindi popola il campo corrispondente (ad esempio UPN) prima di generare il payload XML da installare nel dispositivo. Le opzioni disponibili sono:
+    
+        - **Nome entità utente**: l'UPN viene analizzato nel modo seguente:
 
-### <a name="username-attribute-from-aad-and-realm"></a>Attributo nome utente da AAD e Area di autenticazione
+            ![Attributo nome utente](media/User-name-attribute.png)
 
-- Se si seleziona **Nome entità utente** per questo campo, l'analisi viene eseguita nel modo seguente:
+            È anche possibile sovrascrivere l'area di autenticazione con il testo immesso nella casella di testo **Area di autenticazione**.
 
-   ![Attributo nome utente](media/User-name-attribute.png)
+            Ad esempio, Contoso potrebbe avere varie aree secondarie, ad esempio Europa, Asia e America del Nord. Potrebbe richiedere l'uso del payload SSO agli utenti in Asia e l'app potrebbe richiedere il formato `username@asia.contoso.com` per l'UPN. In questo caso, se si seleziona **Nome entità utente**, per impostazione predefinita l'area di autenticazione per ogni utente viene recuperata da Azure AD e può corrispondere semplicemente a *contoso.com*. Specificatamente per gli utenti nell'area Asia è quindi possibile creare questo payload e sovrascrivere l'area di autenticazione con il valore *asia.contoso.com*. L'UPN dell'utente finale diventa ora username@asia.contoso.com anziché username@contoso.com.
 
-   È anche possibile scegliere di sovrascrivere l'area di autenticazione con il testo digitato nella casella di testo **Area di autenticazione**.
+        - **ID dispositivo Intune**: Intune seleziona automaticamente l'ID dispositivo di Intune. 
 
-   Ad esempio, Contoso potrebbe avere varie aree secondarie, ad esempio Europa, Asia e America del Nord. Potrebbe richiedere l'uso del payload SSO agli utenti in Asia e l'UPN dell'app in formato *username@asia.contoso.com*. In questo caso, se si seleziona **Nome entità utente**, per impostazione predefinita l'area di autenticazione per ogni utente viene recuperata da AAD e potrebbe essere semplicemente *contoso.com*. Specificatamente per gli utenti nell'area Asia è quindi possibile creare questo payload e sovrascrivere l'area di autenticazione con il valore *asia.contoso.com*. L'UPN dell'utente finale diventa ora *username@asia.contoso.com* e non *username@contoso.com*.
+            Per impostazione predefinita, le app devono usare solo l'ID del dispositivo. Se l'app usa l'area di autenticazione *e* l'ID del dispositivo, tuttavia, è possibile digitare l'area di autenticazione nella casella di testo **Area di autenticazione**.
 
-- Se si seleziona **ID dispositivo**, Intune seleziona automaticamente l'ID dispositivo di Intune.
+            > [!NOTE]
+            > Per impostazione predefinita, mantenere vuoto il campo dell'area di autenticazione se si usa l'ID del dispositivo.
 
-   Per impostazione predefinita, le app devono usare solo l'ID del dispositivo. Se l'app usa l'area di autenticazione oltre all'ID del dispositivo, tuttavia, è possibile digitare l'area di autenticazione nella casella di testo **Area di autenticazione**.
+    - **Area di autenticazione**: parte del dominio dell'URL.
+    
+    - **Prefissi di URL che useranno l'accesso Single Sign-On**: **aggiungere** tutti gli URL dell'organizzazione che richiedono l'autenticazione Single Sign-On. 
 
-   > [!NOTE]
-   > Per impostazione predefinita, mantenere vuoto il campo dell'area di autenticazione se si usa l'ID del dispositivo.
+        Quando un utente si connette a uno di questi siti, ad esempio, il dispositivo iOS usa le credenziali Single Sign-On. L'utente non deve immettere credenziali aggiuntive. Tuttavia, se è abilitata l'autenticazione a più fattori, gli utenti devono immettere la seconda autenticazione.
 
-### <a name="url-prefixes-that-will-use-single-sign-on"></a>Prefissi di URL che useranno l'accesso Single Sign-On
+        > [!NOTE]
+        > Questi URL devono essere nomi di dominio completi formattati in modo appropriato. Apple richiede che gli URL abbiano il formato `http://<yourURL.domain>`.
 
-Digitare gli eventuali URL esistenti all'interno dell'organizzazione che richiedono l'autenticazione utente.
+        I criteri di corrispondenza per gli URL devono iniziare con `http://` o `https://`. Viene eseguito un confronto di stringhe semplice e quindi il prefisso URL `http://www.contoso.com/` non corrisponde a `http://www.contoso.com:80/`. Con iOS 10.0 o versioni successive, tuttavia, è possibile immettere tutti i valori corrispondenti usando un solo carattere jolly \*. Ad esempio, `http://*.contoso.com/` corrisponde sia a `http://store.contoso.com/` che a `http://www.contoso.com`.
 
-Ad esempio, quando un utente si connette a uno di questi siti, il dispositivo iOS usa le credenziali Single Sign-On e l'utente non deve immettere credenziali aggiuntive. Tuttavia, se è abilitata l'autenticazione a più fattori, gli utenti devono immettere la seconda autenticazione.
+        I criteri `http://.com` e `https://.com` corrispondono rispettivamente a tutti gli URL HTTP e HTTPS.
+    
+    - **App che useranno l'accesso Single Sign-On**: **aggiungere** le app dei dispositivi degli utenti finali che potranno usare l'accesso Single Sign-On. 
 
-> [!NOTE]
-> Questi URL devono essere nomi di dominio completi formattati in modo appropriato. Apple richiede che siano nel formato `http://<yourURL.domain>`
+        La matrice `AppIdentifierMatches` deve contenere stringhe corrispondenti agli ID dei bundle dell'app. Queste stringhe possono essere corrispondenze esatte (ad esempio: `com.contoso.myapp`). In alternativa, immettere una corrispondenza di prefisso per l'ID del bundle usando il carattere jolly \*. Il carattere jolly deve essere visualizzato dopo un punto (.) e può comparire una sola volta alla fine della stringa (ad esempio: `com.contoso.*`). Quando si include un carattere jolly, viene concesso all'account l'accesso a qualsiasi app il cui ID di bundle inizia con il prefisso.
 
-I criteri di corrispondenza per gli URL devono iniziare con `http://` o `https://`. Viene eseguita una semplice corrispondenza di stringhe, quindi il prefisso URL `http://www.contoso.com/` non corrisponde a `http://www.contoso.com:80/`. Con iOS 10.0 o versioni successive, tuttavia, è possibile usare un singolo carattere jolly \* per specificare tutti i valori corrispondenti. Ad esempio, `http://*.contoso.com/` corrisponde sia a `http://store.contoso.com/` che a `http://www.contoso.com`.
-I criteri `http://.com` e `https://.com` corrispondono rispettivamente a tutti gli URL HTTP e HTTPS.
+        Usare **Nome app** per immettere un nome descrittivo per facilitare l'identificazione dell'ID bundle.
+    
+    - **Certificato di rinnovo delle credenziali**: se per l'autenticazione si usano certificati (non password), selezionare il certificato SCEP o PFX distribuito all'utente come certificato di autenticazione. In genere, si tratta dello stesso certificato distribuito all'utente per altri profili, ad esempio VPN, Wi-Fi o posta elettronica.
 
-### <a name="apps-that-will-use-single-sign-on"></a>App che useranno l'accesso Single Sign-On
-
-Indicare le app nel dispositivo dell'utente finale che possono usare il payload Single Sign-On.
-
-La matrice `AppIdentifierMatches` deve contenere stringhe corrispondenti agli ID dei bundle dell'app. Queste stringhe potrebbero essere corrispondenze esatte (ad esempio: `com.contoso.myapp`) o specificare una corrispondenza di prefisso per l'ID del bundle usando il carattere jolly \*. Il carattere jolly deve essere visualizzato dopo un punto (.) e può comparire una sola volta alla fine della stringa (ad esempio: `com.contoso.*`). Quando si include un carattere jolly, viene concesso all'account l'accesso a qualsiasi app il cui ID di bundle inizia con il prefisso.
-
-Il campo **Nome app** viene usato per aggiungere un nome descrittivo per facilitare l'identificazione dell'ID del bundle.
-
-### <a name="credential-renewal-certificate"></a>Certificato di rinnovo delle credenziali
-
-Se si autenticano gli utenti finali con i certificati (non password), usare questo campo per selezionare il certificato SCEP o PFX distribuito all'utente come certificato di autenticazione. In genere, si tratta dello stesso certificato distribuito all'utente per altri profili, ad esempio VPN, Wi-Fi o posta elettronica.
+6. Selezionare **OK** > **OK** > **Crea** per salvare le modifiche e creare il profilo. Dopo la creazione, il profilo viene visualizzato nell'elenco **Configurazione del dispositivo - Profili**. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 Per altre informazioni sulla configurazione delle funzionalità dei dispositivi, vedere [Come configurare le impostazioni relative alle funzionalità dei dispositivi in Microsoft Intune](device-features-configure.md).
+
+[Assegnare il profilo](device-profile-assign.md) ai dispositivi iOS.

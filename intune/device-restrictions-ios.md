@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
-ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
+ms.openlocfilehash: 67a1eba8208140306c697b7fe7dddb987e4b75c9
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46329998"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001610"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi iOS in Microsoft Intune
 
@@ -215,8 +215,8 @@ Esempio: cercare Microsoft Word per iPad. L'URL usato è https://itunes.apple.co
 -   **Aggiungi reti Wi-Fi solo tramite profili di configurazione (solo con supervisione)** - Consente al dispositivo di connettersi solo a reti Wi-Fi configurate con un profilo Wi-Fi di Intune.
 
 - **Regole di utilizzo della rete cellulare (solo app gestite)** - Consente di definire i tipi di dati usabili dalle app gestite nelle reti cellulari. Scegliere tra:
-    - **Blocca l'uso della rete dati** - È possibile bloccare l'uso della rete dati per ** Tutte le app gestite* oppure **scegliere app specifiche**.
-    - **Blocca l'uso della rete dati durante il roaming** - È possibile bloccare l'uso della rete dati durante il roaming per ** Tutte le app gestite* oppure **scegliere app specifiche**.
+    - **Blocca l'uso della rete dati**: è possibile bloccare l'uso della rete dati per **Tutte le app gestite** oppure **Scegliere app specifiche**.
+    - **Blocca l'uso della rete dati durante il roaming**: è possibile bloccare l'uso della rete dati durante il roaming per **Tutte le app gestite** oppure **Scegliere app specifiche**.
 
 ## <a name="connected-devices"></a>Dispositivi connessi
 

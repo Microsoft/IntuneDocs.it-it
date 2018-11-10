@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c94357d90f89e77be03df0db9ba9e2d89836623b
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 57de118c2e13182a0d26aa36d1dc5b1f7ea9c4e9
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799524"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136965"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Aggiungere criteri di configurazione delle app per le app gestite senza registrazione dei dispositivi
 
@@ -39,7 +39,7 @@ ms.locfileid: "48799524"
       La descrizione del profilo che verrà visualizzata nel portale di Azure.
     - **Tipo di registrazione del dispositivo**  
       Scegliere **Gestisci le app**.
-6. Selezionare **App associata** per scegliere l'app da configurare. Selezionare l'app dall'elenco di app già approvate e sincronizzate con Intune.
+6. Selezionare  **App associata**  per scegliere l'app da configurare. Selezionare l'app dall'elenco di app già approvate e sincronizzate con Intune.
 7. Per ogni impostazione di configurazione supportata dall'app digitare **Nome** e **Valore** e scegliere i puntini di sospensione (**...**).  
     Per eliminare una configurazione scegliere i puntini di sospensione (**...**) e selezionare **Elimina**.  
     
@@ -51,13 +51,13 @@ Intune può generare token e inviarli all'app gestita. Se ad esempio la configur
 
 Intune supporta i tipi di token seguenti nelle impostazioni di configurazione. Altre coppie chiave/valore personalizzate non sono supportate.
 
-- \{\{userprincipalname\}\}, ad esempio **John@contoso.com**
-- \{\{mail\}\}, ad esempio **John@contoso.com**
-- \{\{partialupn\}\}, ad esempio **John**
-- \{\{accountid\}\}, ad esempio **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- \{\{userid\}\}, ad esempio **3ec2c00f-b125-4519-acf0-302ac3761822**
-- \{\{username\}\}, ad esempio **John Doe**
-- \{\{PrimarySMTPAddress\}\}, ad esempio **testuser@ad.domain.com** 
+- \{\{userprincipalname\}\}, ad esempio John@contoso.com
+- \{\{mail\}\}, ad esempio John@contoso.com
+- \{\{partialupn\}\}, ad esempio John
+- \{\{accountid\}\}, ad esempio fc0dc142-71d8-4b12-bbea-bae2a8514c81
+- \{\{userid\}\}, ad esempio 3ec2c00f-b125-4519-acf0-302ac3761822
+- \{\{username\}\}, ad esempio John Doe
+- \{\{PrimarySMTPAddress\}\}, ad esempio testuser@ad.domain.com
 
 
 > [!Note]  

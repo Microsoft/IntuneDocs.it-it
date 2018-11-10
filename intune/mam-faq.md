@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/12/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 635853cb744395e6ae519985eaed62b53e88578e
-ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
+ms.openlocfilehash: 57c69c1610168aa25d33c8124c38f585eb715251
+ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307424"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50225455"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app
 
@@ -169,7 +169,11 @@ I criteri di protezione delle app di Intune relativi all'accesso vengono applica
 Quando si usano tipi diversi di impostazioni, un requisito di versione app ha la precedenza, seguito dal requisito di versione del sistema operativo Android e dal requisito relativo alla versione della patch di Android. Quindi, vengono controllati tutti gli avvisi per tutti i tipi di impostazioni nello stesso ordine.
 
 ## <a name="app-experience-on-ios"></a>Esperienza dell'app in iOS
-
+**Cosa accade se si aggiunge o si rimuove un'impronta digitale o un viso dal dispositivo?**
+I criteri di Protezione app di Intune consentono l'accesso alle app solo all'utente dotato di licenza per Intune. Uno dei modi per controllare l'accesso alle app consiste nel richiedere Apple Touch ID o Face ID per i dispositivi supportati. Intune implementa un comportamento in base al quale, se viene apportata una modifica al database di biometria del dispositivo e viene raggiunto il valore del timeout di inattività successivo, viene richiesto un PIN. Esempi di modifiche ai dati biometrici sono l'aggiunta o la rimozione di un'impronta digitale o di un viso. Se in Intune non è impostato un PIN, l'utente viene indirizzato alla configurazione di un PIN di Intune.
+ 
+La finalità di questa procedura è di continuare a garantire la protezione e la sicurezza a livello di app dei dati dell'organizzazione all'interno dell'app stessa. Questa funzionalità è disponibile solo per iOS e richiede la partecipazione delle applicazioni che integrano Intune APP SDK per iOS, versione 9.0.1 o successive. L'integrazione dell'SDK è necessaria in modo che il comportamento possa essere applicato nelle applicazioni di destinazione. Questa integrazione avviene progressivamente e dipende dai team delle applicazioni specifiche. Tra le app partecipanti sono inclusi WXP, Outlook, Managed Browser e Yammer. 
+  
 **È possibile usare l'estensione di condivisione per iOS per aprire i dati aziendali o dell'istituto di istruzione nelle app non gestite, anche se i criteri di trasferimento dei dati sono impostati su "solo app gestite" o "nessuna app". Questo scenario non comporta la perdita dei dati?**<br></br>
 I criteri di protezione delle app di Intune non possono controllare l'estensione di condivisione per iOS senza la gestione del dispositivo. Pertanto, Intune _**crittografa i dati "aziendali" prima che vengano condivisi all'esterno dell'app**_. È possibile convalidare questo scenario provando ad aprire il file "aziendale" all'esterno dell'app gestita. Il file deve essere crittografato e non deve poter essere aperto all'esterno dell'app gestita.
 
@@ -177,6 +181,15 @@ I criteri di protezione delle app di Intune non possono controllare l'estensione
 I criteri di protezione delle app di Intune relativi all'accesso vengono applicati in un ordine specifico nei dispositivi degli utenti finali quando cercano di accedere a un'app di destinazione dal proprio account aziendale. In generale, una cancellazione ha la precedenza, seguita da un avviso che può essere ignorato. Ad esempio, se possibile per l'app o l'utente specifici, un'impostazione di versione minima del sistema operativo iOS che avvisa l'utente che può essere eseguito un aggiornamento della versione di iOS verrà applicata dopo l'impostazione di versione minima del sistema operativo iOS che impedisce all'utente di accedere. Quindi, nello scenario in cui l'amministratore IT configura la versione minima del sistema operativo iOS su 11.0.0.0 e la versione minima del sistema operativo iOS (solo avvisi) su 11.1.0.0, se il dispositivo che tenta di accedere all'app usa iOS 10, l'utente finale verrebbe bloccato in base all'impostazione più restrittiva per la versione minima del sistema operativo iOS che comporta il blocco dell'accesso.
 
 Quando si usano tipi diversi di impostazioni, un requisito di versione di Intune App SDK ha la precedenza, seguito dal requisito di versione dell'app e dal requisito relativo alla versione del sistema operativo iOS. Quindi, vengono controllati tutti gli avvisi per tutti i tipi di impostazioni nello stesso ordine. Si consiglia di configurare il requisito di versione di Intune App SDK solo attenendosi alle istruzioni del team del prodotto Intune per gli scenari di blocco essenziali.
+
+## <a name="app-protection-policies---policy-refresh"></a>Criteri di protezione delle app - Aggiornamento dei criteri
+- Le app accedono al servizio APP ogni 30 minuti.
+- La soglia di 30 minuti si basa su un timer.
+    - Se allo scadere dei 30 minuti l'app è attiva, effettua l'accesso.
+    - Se allo scadere dei 30 minuti l'app è inattiva, effettua l'accesso quando torna allo stato attivo.
+- Se a un utente non sono assegnati criteri, l'accesso avviene ogni otto ore.
+- Se non è assegnata alcuna licenza di Intune, l'accesso avviene ogni 24 ore.
+
 
 ## <a name="see-also"></a>Vedere anche
 - [Implementare il piano di Intune](planning-guide-onboarding.md)

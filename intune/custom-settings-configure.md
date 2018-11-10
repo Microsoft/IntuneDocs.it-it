@@ -1,62 +1,56 @@
 ---
 title: Usare dispositivi personalizzati in Microsoft Intune - Azure | Microsoft Docs
-description: Aggiungere o creare un profilo per usare le impostazioni personalizzate per i dispositivi Windows, Android e iOS con Microsoft Intune
+description: Aggiungere o creare un profilo per usare le impostazioni personalizzate per i dispositivi Windows Phone, Windows 8.1, Windows 10 e versioni successive, Android, Android Enterprise, macOS e iOS tramite Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/06/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d917d2449e75b89db00d453b72940a93efb03321
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 3106f71b59019a1cf71680c51be6dfcb4ce10b0d
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905003"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983075"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Creare un profilo con impostazioni personalizzate in Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+## <a name="what-are-custom-profiles"></a>Informazioni sui profili personalizzati
 
-È possibile che Intune non abbia tutte le impostazioni predefinite di cui l'utente necessita. Oppure l'utente vuole usare un'impostazione disponibile in altri profili di dispositivo. Per aggiungere tali impostazioni, creare un profilo di dispositivo e configurarlo con impostazioni personalizzate.
+Microsoft Intune include molte impostazioni predefinite per controllare diverse funzionalità in un dispositivo. È anche possibile creare profili personalizzati. I profili personalizzati sono particolarmente utili quando si vuole usare impostazioni del dispositivo e funzionalità non incluse in Intune. Questi profili includono funzionalità e impostazioni che è possibile controllare nei dispositivi dell'organizzazione. Ad esempio, è possibile creare un profilo personalizzato che imposta la stessa funzionalità per tutti i dispositivi iOS.
 
-In questo articolo vengono elencati i passaggi di base per creare un profilo con impostazioni personalizzate. Sono anche disponibili collegamenti per approfondire la creazione di impostazioni personalizzate con piattaforme diverse.
+Per altre informazioni sui profili di configurazione, vedere [Informazioni sui profili di dispositivo in Microsoft Intune](device-profiles.md). 
 
-## <a name="custom-settings-on-different-platforms"></a>Impostazioni personalizzate su piattaforme diverse
-Le impostazioni personalizzate sono configurate in modo diverso per ogni piattaforma. Ad esempio, per controllare le funzionalità nei dispositivi Android e Windows, è possibile specificare valori Open Mobile Alliance Uniform Resource Identifier (URI OMA). Per i dispositivi Apple è possibile importare un file creato con [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12).
+Questo articolo include i collegamenti per creare profili personalizzati per Android, Android Enterprise, iOS, macOS e Windows.
 
-## <a name="create-the-profile"></a>Creare il profilo
+## <a name="available-platforms"></a>Piattaforme disponibili
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-3. Selezionare **Configurazione del dispositivo**, selezionare **Profili** e fare clic su **Crea profilo**.
-4. Immettere **Nome** e **Descrizione** per il profilo personalizzato.
-5. Dall'elenco a discesa **Piattaforma** selezionare la piattaforma del dispositivo a cui si vogliono applicare le impostazioni personalizzate. È possibile scegliere una delle piattaforme seguenti:
+Le impostazioni personalizzate sono configurate in modo diverso per ogni piattaforma. Ad esempio, per controllare le funzionalità nei dispositivi Android e Windows, è possibile specificare valori Open Mobile Alliance Uniform Resource Identifier (URI OMA). Per i dispositivi Apple è possibile importare un file creato con [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) o [Apple Profile Manager](https://support.apple.com/profile-manager).
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 e versioni successive**
-    - **Windows 10 e versioni successive**
+I profili personalizzati vengono creati allo stesso modo dei profili predefiniti e sono disponibili nelle piattaforme seguenti:
 
-6. Dall'elenco a discesa dei tipi di **profilo** scegliere **Personalizzato**.
-7. Le impostazioni configurabili variano in base alla piattaforma scelta. I collegamenti seguenti specificano altri dettagli sulle impostazioni personalizzate per ogni piattaforma:
+- [Android](custom-settings-android.md)
+- [Android Enterprise](custom-settings-android-for-work.md)
+- [iOS](custom-settings-ios.md)
+- [macOS](custom-settings-macos.md)
+- [Windows 10](custom-settings-windows-10.md)
+- [Windows Holographic for Business](custom-settings-windows-holographic.md)
+- [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
 
-    - [Impostazioni Android](custom-settings-android.md)
-    - [Impostazioni iOS](custom-settings-ios.md)
-    - [Impostazioni macOS](custom-settings-macos.md)
-    - [Impostazioni Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
-    - [Impostazioni Windows 10](custom-settings-windows-10.md)
-    - [Impostazioni di Windows Holographic for Business](custom-settings-windows-holographic.md)
-    - [Impostazioni del profilo di lavoro Android](custom-settings-android-for-work.md)
+## <a name="next-steps"></a>Passaggi successivi
 
-8. Al termine, selezionare **Crea**.
+Scegliere la piattaforma e iniziare a usare:
 
-Il profilo viene creato e visualizzato nell'elenco dei profili. Per assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
+- [Android](custom-settings-android.md)
+- [Android Enterprise](custom-settings-android-for-work.md)
+- [iOS](custom-settings-ios.md)
+- [macOS](custom-settings-macos.md)
+- [Windows 10](custom-settings-windows-10.md)
+- [Windows Holographic for Business](custom-settings-windows-holographic.md)
+- [Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
