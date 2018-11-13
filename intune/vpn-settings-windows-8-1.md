@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30aa56913cc3bda2d1c8b8b67e982c565c44a2a8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2b6ae135f298f4632d35db756f6f2d7e7e6a1730
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834171"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679237"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Configurare le impostazioni VPN in Microsoft Intune per i dispositivi che eseguono Windows 8.1
 
@@ -86,7 +86,7 @@ Per altre informazioni, fare riferimento alla documentazione della VPN del produ
 ## <a name="proxy-settings"></a>Impostazioni proxy
 
 - **Rileva automaticamente impostazioni proxy**: se il server VPN richiede un server proxy per la connessione, specificare se si desidera che i dispositivi rilevino automaticamente le impostazioni di connessione. Per altre informazioni, vedere la documentazione di Windows Server.
-- **Script di configurazione automatica**: consente di usare un file per la configurazione del server proxy. Immettere l'**URL del server proxy**, ad esempio **http://proxy.contoso.com**, contenente il file di configurazione.
+- **Script di configurazione automatica**: consente di usare un file per la configurazione del server proxy. Immettere l'**URL server proxy**, ad esempio `** http://proxy.contoso.com**`, contenente il file di configurazione.
 - **Usa server proxy**: abilitare questa opzione se si desidera immettere manualmente le impostazioni del server proxy.
     - **Indirizzo**: immettere l'indirizzo del server proxy (ad esempio un indirizzo IP).
     - **Numero di porta**: immettere il numero di porta associato al server proxy.

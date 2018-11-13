@@ -14,12 +14,12 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024805"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298072"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Assegnare profili utente e profili di dispositivo in Microsoft Intune
 
@@ -48,9 +48,6 @@ Ad esempio, si vuole assegnare un profilo di dispositivo a tutti i dispositivi d
 L'esclusione valuta solo i membri diretti dei gruppi e non include i dispositivi associati a un utente. Tuttavia i dispositivi che non hanno un utente non ottengono i criteri. Questo si verifica perché i dispositivi non hanno nessuna relazione con il gruppo **Tutti gli utenti**.
 
 Se si includono **tutti i dispositivi** ma si escludono **tutti gli utenti**, tutti i dispositivi ricevono i criteri. In questo caso, lo scopo è l'esclusione dei dispositivi ai quali è associato un utente in base a questi criteri. Tuttavia i dispositivi non vengono esclusi, perché l'esclusione confronta solo i membri diretti del gruppo.
-
->[!TIP]
->Le esclusioni non sono disponibili per i criteri di conformità o l'assegnazione di app. Per escludere membri da un'assegnazione, è possibile usare i tipi di assegnazione **Disponibile** e **Non applicabile**. Ad esempio è possibile assegnare un'app al gruppo **Tutti gli utenti aziendali** con il tipo **Disponibile** e al gruppo **Dirigenti** con il tipo **Non applicabile**. L'app viene assegnata a tutti gli utenti *tranne* agli utenti del gruppo **Dirigenti**. Se si assegna l'app al gruppo **Tutti gli utenti aziendali** con il tipo **Necessario**, vengono inclusi anche gli utenti del gruppo **Dirigenti**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 Per informazioni sul monitoraggio delle assegnazioni dei profili di dispositivo, vedere [Come monitorare i profili di dispositivo](device-profile-monitor.md).
