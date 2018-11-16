@@ -16,12 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c58cc56672409d954c4bf0b2829ea23d1b0a93df
-ms.sourcegitcommit: b01c607fc666254c560f5b60bd8a0def8e48197c
+ms.openlocfilehash: 3348f5e9673de410516cb2e2b774e20a4f17b036
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50132470"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51577005"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novità di Microsoft Intune - mesi precedenti
 
@@ -46,7 +46,7 @@ Android Enterprise (denominato in precedenza Android for Work) supporta l'inclus
 
 ### <a name="device-management"></a>Gestione dei dispositivi
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Esportare tutti i dispositivi in file CSV in Internet Explorer, Microsoft Edge o Chrome <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>Esportare tutti i dispositivi in file CSV in Internet Explorer, Microsoft Edge o Chrome <!-- 2258071 -->
 In **Dispositivi** > **Tutti i dispositivi** è possibile **esportare** i dispositivi in un elenco in formato CSV. Gli utenti di Internet Explorer (IE) con più di 10.000 dispositivi possono esportare i propri dispositivi in più file. Ogni file include fino a 10.000 dispositivi.
 
 Gli utenti di Edge e Chrome con più di 30.000 dispositivi possono esportare i propri dispositivi in più file. Ogni file include fino a 30.000 dispositivi.
@@ -296,8 +296,8 @@ Sono ora disponibili [due nuove impostazioni di privacy](device-restrictions-win
 - **Pubblica le attività utente**: impostare l'opzione su **Blocca** per impedire le esperienze condivise e l'individuazione delle ultime risorse usate nel cambio modalità per l'attività.
 - **Solo attività locali**: impostare l'opzione su **Blocca** per impedire le esperienze condivise e l'individuazione delle ultime risorse usate nel cambio modalità solo per l'attività locale.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nuove impostazioni per il browser Microsoft Edge <!--1469166 -->
-Sono ora disponibili [due nuove impostazioni](device-restrictions-windows-10.md#edge-browser) per il **percorso del file dei Preferiti** e le **modifiche a Preferiti** per i dispositivi con browser Microsoft Edge.
+#### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Nuove impostazioni per il browser Microsoft Edge <!--1469166 -->
+Sono ora disponibili [due nuove impostazioni](device-restrictions-windows-10.md#microsoft-edge-browser) per il **percorso del file dei Preferiti** e le **modifiche a Preferiti** per i dispositivi con browser Microsoft Edge.
 
 ### <a name="app-management"></a>Gestione delle app
 
@@ -1267,7 +1267,7 @@ In questa versione sono stati aggiunte nuove impostazioni per il profilo di rest
 -  Privacy
 -  Cerca
 -  Contenuti in evidenza di Windows
--  Microsoft Edge
+-  Browser Microsoft Edge
 
 Per altre informazioni sulle impostazioni di Windows 10, vedere [Windows 10 and later device restriction settings](device-restrictions-windows-10.md) (Impostazioni di restrizione del dispositivo Windows 10 e versioni successive).
 

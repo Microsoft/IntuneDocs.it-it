@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2018
+ms.date: 11/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bacaf8ff4119d4cd40483b65ea45e283d98a51f1
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 2f21df636ab429969429c6dbdf540daaa67a8f88
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025203"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576767"
 ---
 # <a name="the-early-edition-for-microsoft-intune---november-2018"></a>Edizione anticipata per Microsoft Intune - Novembre 2018
 
@@ -44,11 +44,6 @@ Questa pagina viene aggiornata periodicamente. Consultarla a intervalli regolari
 ### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Disinstallazione di app in dispositivi iOS con supervisione di proprietà dell'azienda <!-- 1281677 -->
 Sarà possibile rimuovere qualsiasi app nei dispositivi iOS con supervisione di proprietà dell'azienda. È possibile rimuovere qualsiasi app specificando come destinazione gruppi di utenti o dispositivi con un tipo di assegnazione **Disinstalla**. Per i dispositivi iOS personali o senza supervisione, sarà ancora possibile rimuovere solo le app installate usando Intune.
 
-### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Supporto per iOS 12 OAuth nei profili di posta elettronica iOS <!--2155106 -->
-I profili di posta elettronica iOS di Intune supporteranno iOS 12 OAuth. Per visualizzare questa funzionalità, scegliere **Intune** > **Configurazione del dispositivo** > **Profili** > **Crea profilo**. Nel pannello Crea profilo è possibile abilitare o disabilitare **OAuth**. Se questa impostazione viene attivata, verranno eseguite due operazioni:
-1. Verrà rilasciato un nuovo profilo ai dispositivi già specificati come destinazione.
-2. Agli utenti verrà chiesto di fornire nuovamente le credenziali.
-
 ### <a name="track-installation-of-office-proplus---2620217--"></a>Tenere traccia dell'installazione di Office ProPlus <!--2620217-->
 Sarà possibile tenere traccia dell'avanzamento dell'installazione di [Office ProPlus](apps-add-office365.md) usando la [pagina relativa allo stato della registrazione](windows-enrollment-status.md).
 
@@ -69,7 +64,7 @@ Una nuova impostazione consentirà agli utenti di toccare un pulsante softkey ne
 Si avrà maggiore controllo sulle assegnazioni dei criteri di protezione dell'app. Salvando e applicando le assegnazioni dei criteri di protezione dell'app, solo gli utenti desiderati sono direttamente interessati da un criterio di assegnazione di protezione dell'app.
 
 ### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Nuove impostazioni del browser Microsoft Edge per Windows 10 e versioni successive <!-- 3174639 -->
-Verrà aggiunta una nuova impostazione per controllare e gestire il browser Microsoft Edge nei dispositivi. Per un elenco delle impostazioni correnti, vedere [Device restriction for Windows 10 (and newer)](device-restrictions-windows-10.md#edge-browser) (Restrizione dei dispositivi per Windows 10 e versioni successive).
+Verrà aggiunta una nuova impostazione per controllare e gestire il browser Microsoft Edge nei dispositivi. Per un elenco delle impostazioni correnti, vedere [Device restriction for Windows 10 (and newer)](device-restrictions-windows-10.md#microsoft-edge-browser) (Restrizione dei dispositivi per Windows 10 e versioni successive).
 
 ### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Selezionare le app registrate nella pagina Stato di registrazione<!-- 2531007 -->
 Sarà possibile scegliere le app di cui tenere traccia nella pagina Stato di registrazione.
@@ -113,10 +108,10 @@ Le impostazioni dei criteri di protezione dell'app per il contenuto Web nei disp
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>Token VPP Apple usato da un altro software MDM <!-- 1488946 -->
 Intune rileverà e visualizzerà i dettagli se un token VPP (Volume Purchase Program) Apple viene usato sia da Intune che da un altro software MDM.
 
-### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>Vengono visualizzati i numeri di versione e di build di iOS e macOS <!-- 1892471 -->
-In **Conformità del dispositivo** > **Conformità del dispositivo** viene visualizzata la versione del sistema operativo iOS e macOS. In un aggiornamento futuro verrà anche visualizzato il numero di build per entrambe le piattaforme.
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-available-in-compliance-policies----1892471---"></a>I numeri di versione e di build di iOS e macOS sono disponibili nei criteri di conformità <!-- 1892471 -->
+In **Conformità del dispositivo** > **Conformità del dispositivo** vengono visualizzate le versioni del sistema operativo iOS e macOS che possono essere usate nei criteri di conformità. In un aggiornamento futuro sarà possibile configurare anche il numero di build per le due piattaforme.
 
-Quando vengono rilasciati aggiornamenti della sicurezza, Apple lascia in genere il numero di versione invariato, ma aggiorna il numero di build. Visualizzando il numero di build, è possibile verificare facilmente se è installato un aggiornamento di una vulnerabilità.
+Quando vengono rilasciati aggiornamenti della sicurezza, Apple lascia in genere il numero di versione invariato, ma aggiorna il numero di build. Il numero di build nei criteri di conformità consente di verificare facilmente se è installato l'aggiornamento di una vulnerabilità.
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>Dispositivi ritirati nel dashboard della conformità dei dispositivi <!-- 1981119 -->
 In un aggiornamento futuro i dispositivi ritirati verranno rimossi dal dashboard della conformità dei dispositivi. Questa operazione modificherà i numeri di conformità.

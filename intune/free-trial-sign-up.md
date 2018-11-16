@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 6b6e270e01102ae05f04253ec57759aad35c26cf
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915683"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510993"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Guida introduttiva: provare Microsoft Intune gratuitamente 
 
@@ -51,7 +51,7 @@ Prima di configurare Microsoft Intune, esaminare i requisiti seguenti:
 
     ![Screenshot della pagina Web di iscrizione per l'account di prova Microsoft Intune](./media/account-sign-up-site-user-id.png)
 
-    Se l'organizzazione ha il proprio dominio personalizzato che si desidera usare senza **.onmicrosoft.com**, cambiare questa opzione nel portale di amministrazione di Office 365 descritto più avanti in questo articolo.
+    Se si vuole usare il dominio personalizzato dell'organizzazione anziché **.onmicrosoft.com**, è possibile cambiare questa opzione nel portale di amministrazione di Office 365 descritto più avanti in questo articolo.
 
 3. Al termine del processo di iscrizione, l'utente può visualizzare le informazioni del nuovo account.
 
@@ -124,7 +124,9 @@ Si possono usare due portali:
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa guida introduttiva è stata creata una sottoscrizione gratuita per provare Intune in un ambiente di test e, in via facoltativa, è stato configurato un nome di dominio personalizzato. Per altre informazioni su Microsoft Intune, passare alla guida introduttiva successiva che spiega come aggiungere utenti e assegnare licenze.
+In questa guida introduttiva è stata creata una sottoscrizione gratuita per provare Intune in un ambiente di test. Per altre informazioni sulla configurazione di Intune, vedere [Configurare Intune](setup-steps.md).
+
+Per seguire questa serie di guide introduttive di Intune, passare alla guida introduttiva che segue.
 
 > [!div class="nextstepaction"]
-> [Creare un utente](quickstart-create-user.md)
+> [Guida introduttiva: Creare un utente e assegnargli una licenza](quickstart-create-user.md)

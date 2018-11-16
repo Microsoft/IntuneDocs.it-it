@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
-ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
+ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237664"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511036"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Risolvere i problemi di registrazione dei dispositivi in Intune
 
@@ -391,6 +391,28 @@ Dopo aver risolto i problemi del token VPP, è necessario cancellare i dati dei 
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Chiedere agli utenti di riavviare il processo di registrazione
 Dopo aver cancellato i dispositivi bloccati, chiedere agli utenti di riavviare il processo di registrazione.
+
+## <a name="macos-issues"></a>Problemi relativi a macOS
+
+### <a name="macos-enrollment-errors"></a>Errori di registrazione per macOS
+**Messaggio di errore 1**: *Si sta usando una macchina virtuale. Assicurarsi che la macchina virtuale sia stata configurata completamente, inclusi il numero di serie e il modello. Se questa non è una macchina virtuale, contattare il supporto tecnico.*  
+
+**Messaggio di errore 2**: *We’re having trouble getting your device managed. This problem could be caused if you're using a virtual machine, have a restricted serial number, or if this device is already assigned to someone else. Learn how to resolve these problems or contact your company support. (Si sono verificati problemi nella configurazione del dispositivo come gestito. Il problema potrebbe essere dovuto all'uso di una macchina virtuale, alla presenza di un numero di serie con restrizioni o al fatto che il dispositivo sia già assegnato a un altro utente. Informazioni su come risolvere questi problemi o contattare il supporto tecnico aziendale.)*
+
+**Problema:** questo messaggio potrebbe essere il risultato di uno qualsiasi dei motivi seguenti:  
+* Una macchina di virtuale macOS non è configurata correttamente  
+* Sono state abilitate restrizioni del dispositivo che richiedono che esso sia di proprietà dell'azienda o abbia un numero di serie registrato in Intune  
+* Il dispositivo è già stato registrato ed è ancora assegnato a un altro utente in Intune  
+
+**Soluzione:** per prima cosa verificare con l'utente quali problemi interessano il dispositivo. Eseguire quindi la più pertinente tra le soluzioni indicate di seguito:
+* Se l'utente sta registrando una macchina virtuale per il test, verificare che sia stata completamente configurata in modo che Intune possa riconoscerne il numero di serie e il modello hardware. Altre informazioni su come [configurare le macchine virtuali](macos-enroll.md#enroll-virtual-macos-machines-for-testing) in Intune.  
+* Se l'organizzazione ha attivato restrizioni di registrazione che bloccano i dispositivi macOS personali, è necessario procedere manualmente per [aggiungere il numero di serie del dispositivo personale](corporate-identifiers-add.md#manually-enter-corporate-identifiers) a Intune.  
+* Se il dispositivo è ancora assegnato a un altro utente in Intune, il proprietario precedente non ha usato l'app Portale aziendale per rimuoverlo o ripristinarlo. Per pulire il record del dispositivo non aggiornato da Intune:  
+
+    1. Andare a [Intune nel portale di Azure](https://portal.manage.microsoft.com) e accedere con le proprie credenziali amministrative.
+    2. Andare a Intune > **Dispositivi** > **Tutti i dispositivi**.  
+    3. Trovare il dispositivo che presenta il problema di registrazione. Eseguire la ricerca in base al nome del dispositivo o all'indirizzo MAC/HW per limitare i risultati.
+    4. Selezionare il dispositivo > **Elimina**. Eliminare tutte le altre voci associate al dispositivo.  
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemi durante l'uso di System Center Configuration Manager con Intune
 ### <a name="mobile-devices-disappear"></a>I dispositivi mobili scompaiono

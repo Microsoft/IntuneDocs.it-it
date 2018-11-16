@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
-ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
+ms.openlocfilehash: 0d749d51f0ae146b68be8abb3a59a0504aea1180
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751644"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298140"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Impostazioni relative alla modalità tutto schermo per Windows 10 e versioni successive in Intune
 
@@ -77,8 +77,15 @@ Quando si sceglie la modalità App singola per chiosco multimediale a schermo in
   - **Aggiorna il browser dopo il tempo di inattività**: immettere la quantità di tempo di inattività (da 1 a 1440 minuti) trascorso il quale il browser in modalità tutto schermo viene riavviato. Il tempo di inattività è il numero di minuti dopo l'ultima interazione dell'utente. Per impostazione predefinita, il valore è vuoto, ovvero non è configurato alcun timeout di inattività.
 
   - **Siti Web consentiti**: usare questa impostazione per consentire l'apertura di siti Web specifici. In altre parole, usare questa funzionalità per limitare o bloccare siti Web nel dispositivo. Ad esempio, è possibile consentire l'apertura di tutti i siti Web in `http://contoso.com*`. Per impostazione predefinita, sono consentiti tutti i siti Web.
+ 
+      Per consentire siti Web specifici, caricare un file che include un elenco dei siti Web consentiti in righe distinte. Se non si aggiunge un file, sono consentiti tutti i siti Web. Intune supporta * (asterisco) come carattere jolly.
 
-    Per consentire siti Web specifici, caricare un file CSV che include un elenco dei siti Web consentiti. Se non si aggiunge un file CSV, sono consentiti tutti i siti Web. Intune supporta * (asterisco) come carattere jolly.
+      Il file di esempio sarà simile all'elenco seguente:
+
+      `http://bing.com`  
+      `https://bing.com`  
+      `http://contoso.com/*`  
+      `https://contoso.com/*`  
 
   Selezionare **OK** per salvare le modifiche.
 

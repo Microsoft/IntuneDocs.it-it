@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b52265bb9b3df800c0e13450a2154e46098a933
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: e85a88b984aaa05423a35f222de9c56d7366d15a
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410821"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511010"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Guida introduttiva: creare un gruppo per gestire gli utenti
 
@@ -57,7 +57,9 @@ Se il gruppo è stato creato correttamente, verrà visualizzato nell'elenco **Tu
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa guida introduttiva è stato utilizzato Intune per creare un gruppo basato su un utente esistente.
+In questa guida introduttiva è stato utilizzato Intune per creare un gruppo basato su un utente esistente. Per altre informazioni sull'aggiunta di gruppi in Intune, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](groups-add.md).
+
+Per seguire questa serie di guide introduttive di Intune, continuare con la guida introduttiva che segue.
 
 > [!div class="nextstepaction"]
-> [Creare criteri di conformità dei dispositivi](quickstart-create-policy.md)
+> [Guida introduttiva: configurare la registrazione automatica per i dispositivi Windows 10](quickstart-setup-auto-enrollment.md)

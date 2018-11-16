@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
+ms.openlocfilehash: 0c2a4ff4654b937449f8e7a36778a67a978bd6db
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357088"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576869"
 ---
-# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>Gestire l'accesso a Internet usando un browser protetto con criteri di Microsoft Intune
+# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gestire l'accesso a Internet usando un browser protetto con criteri di Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -50,7 +50,7 @@ Le versioni precedenti di Android e iOS saranno in grado di continuare a usare M
 
 ## <a name="application-protection-policies-for-protected-browsers"></a>Criteri di protezione delle applicazioni per i browser protetti
 
-Poiché Microsoft Edge e Managed Browser includono l'integrazione con Intune SDK, è anche possibile applicare i criteri di protezione delle app, oltre ai seguenti criteri:
+Poiché Microsoft Edge e Managed Browser includono l'integrazione con Intune SDK, è anche possibile applicare i criteri di protezione delle app, inclusi i seguenti:
 - Controllare l'uso di taglia, copia e incolla.
 - Impedire l'acquisizione di schermate.
 - Garantire che i collegamenti aziendali vengano aperti solo all'interno di app e browser gestiti.
@@ -83,7 +83,7 @@ Per fare in modo che le app Web connesse ad Azure AD usino Intune Managed Browse
 
 5. Nella sezione **Assegnazioni** selezionare **Condizioni** > **App client**. Viene visualizzato il pannello **App client**.
 6. Fare clic su **Sì** in **Configura** per applicare i criteri ad app client specifiche.
-7. Verificare che sia selezionata **Browser** come app client.
+7. Verificare che sia selezionata l'opzione **Browser** come app client.
 
     ![Azure AD - Managed Browser - Selezionare le app client](./media/managed-browser-conditional-access-02.png)
 
@@ -151,7 +151,7 @@ Microsoft Edge, Intune Managed Browser e [Azure AD Application Proxy]( https://d
 - Configurare le applicazioni interne tramite il proxy di applicazione di Azure AD.
     - Per configurare il proxy di applicazione e pubblicare le applicazioni, vedere la [documentazione del programma di installazione](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
 - È necessario usare almeno la versione 1.2.0 dell'app Managed Browser.
-- Gli utenti dell'app Managed Browser o Microsoft Edge hanno i [criteri di protezione delle app di Intune]( app-protection-policy.md) assegnati all'app.
+- Gli utenti dell'app Managed Browser o Microsoft Edge hanno un [criterio di protezione delle app di Intune]( app-protection-policy.md) assegnato all'app.
 
     > [!NOTE]
     > Possono essere necessarie fino a 24 ore perché l'aggiornamento dei dati di reindirizzamento del proxy di applicazione sia visibile in Managed Browser e Microsoft Edge.
@@ -161,7 +161,7 @@ Microsoft Edge, Intune Managed Browser e [Azure AD Application Proxy]( https://d
 Outlook deve essere configurato con i criteri di protezione di app che consentono l'impostazione **Limita il contenuto Web per la visualizzazione in Managed Browser**.
 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Passaggio 2: assegnare i criteri di configurazione dell'app assegnati per il browser protetto.
-Questa procedura configura l'app Managed Browser o Microsoft Edge per usare il reindirizzamento proxy dell'app. Usando la procedura per creare una configurazione per l'app Managed Browser o Microsoft Edge, specificare la coppia di chiave-valore seguente:
+Questa procedura configura l'app Managed Browser o Microsoft Edge per l'uso del reindirizzamento proxy dell'app. Usando la procedura per creare una configurazione per l'app Managed Browser o Microsoft Edge, specificare la coppia di chiave-valore seguente:
 
 | Chiave                                                             | Valore    |
 |-----------------------------------------------------------------|----------|

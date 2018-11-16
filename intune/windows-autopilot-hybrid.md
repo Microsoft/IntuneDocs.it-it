@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 120478644743619dbcfc5e8e36806a1109924331
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50972775"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298089"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Distribuire dispositivi aggiunti ad Azure AD ibrido usando Intune e Windows Autopilot (anteprima)
 È possibile usare Intune e Windows Autopilot per configurare i dispositivi aggiunti ad Active Directory ibrido. A tale scopo, eseguire i passaggi seguenti.
@@ -30,7 +30,7 @@ ms.locfileid: "50972775"
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- Configurare i [dispositivi aggiunti ad Azure Active Directory ibrido](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains).
+- Configurare i [dispositivi aggiunti ad Azure Active Directory ibrido](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan).
     - Assicurarsi di [verificare la registrazione usando il cmdlet Get-MsolDevice]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
 
 I dispositivi da registrare devono anche:
@@ -65,7 +65,7 @@ I dispositivi da registrare devono anche:
 
 ## <a name="increase-the-computer-account-limit-in-the-organizational-unit"></a>Aumentare il limite di account computer nell'unità organizzativa
 
-Intune Connector per Active Directory crea computer di registrazione Autopilot nel dominio Active Directory locale. Il computer che ospita Intune Connector deve avere l'autorizzazione per la creazione di oggetti computer all'interno del dominio. 
+Intune Connector per Active Directory crea computer registrati di Autopilot nel dominio Active Directory locale. Il computer che ospita Intune Connector deve avere l'autorizzazione per la creazione di oggetti computer all'interno del dominio. 
 
 In alcuni domini ai computer non viene assegnata l'autorizzazione per la creazione di computer. Oppure gli amministratori non vogliono aumentare il limite di account computer a livello di dominio. In questi casi, le autorizzazioni possono essere delegate all'unità organizzativa in cui vengono creati i dispositivi aggiunti ad Azure AD ibrido.
 
@@ -110,7 +110,7 @@ L'unità organizzativa a cui viene assegnata l'autorizzazione per la creazione d
 
 Intune Connector per Active Directory deve essere installato in un computer che esegue Windows Server 2016 che ha accesso a Internet e ad Active Directory. Per aumentare la scalabilità e la disponibilità o per supportare più domini di Active Directory, è possibile installare più connettori nell'ambiente. È consigliabile installare il connettore in un server che non esegue altri connettori Intune.
 
-1. In Intune nel portale di Azure scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Intune Connector per Active Directory (anteprima)** > **Aggiungi un connettore**. 
+1. In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Intune Connector per Active Directory (anteprima)** > **Aggiungi un connettore**. 
 2. Seguire le istruzioni per scaricare il connettore.
 3. Aprire il file di installazione del connettore scaricato per installare il connettore (ODJConnectorBootstrapper.exe).
 4. Al termine dell'installazione, scegliere **Configura**.
@@ -124,7 +124,7 @@ Se nell'ambiente di rete è presente un proxy Web, attenersi alle istruzioni ind
 
 
 ## <a name="create-a-device-group"></a>Creare un gruppo di dispositivi
-1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Gruppi** > **Nuovo gruppo**.
+1. In [Intune](https://aka.ms/intuneportal) scegliere **Gruppi** > **Nuovo gruppo**.
 2. Nel pannello **Gruppo**:
     1. In **Tipo gruppo** scegliere **sicurezza**.
     2. Immettere un **Nome gruppo** e una **Descrizione gruppo**.
@@ -175,7 +175,7 @@ Dopo la registrazione dei dispositivi di Autopilot, i nomi dei dispositivi vengo
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Creare e assegnare un profilo di distribuzione AutoPilot
 I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi AutoPilot.
 
-1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Profili di distribuzione** > **Crea profilo**.
+1. In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Profili di distribuzione** > **Crea profilo**.
 2. Specificare un **Nome** e una **Descrizione** facoltativa.
 3. In **Modalità di distribuzione** scegliere **Definita dall'utente**.
 4. Nella casella **Join to Azure AD as** (Aggiungi ad Azure AD come) scegliere **Aggiunto ad Azure AD ibrido (anteprima)**.
@@ -188,21 +188,21 @@ Il passaggio dello stato del profilo del dispositivo da **Non assegnato** ad **A
 
 ## <a name="turn-on-the-enrollment-status-page-optional"></a>Attivare la pagina dello stato della registrazione (facoltativo)
 
-1.  In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Enrollment Status Page (Preview)** (Pagina stato registrazione (anteprima)).
-2.  Nel pannello **Enrollment Status Page** (Pagina stato registrazione) scegliere **Predefinito** > **Impostazioni**.
-3.  Per **Show app and profile installation progress** (Visualizza stato di avanzamento installazione app e profilo), scegliere **Sì**.
+1. In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Enrollment Status Page (Preview)** (Pagina stato registrazione (anteprima)).
+2. Nel pannello **Enrollment Status Page** (Pagina stato registrazione) scegliere **Predefinito** > **Impostazioni**.
+3. Per **Show app and profile installation progress** (Visualizza stato di avanzamento installazione app e profilo), scegliere **Sì**.
 4. Configurare le altre opzioni in base alle proprie esigenze.
-5.  Scegliere **Salva**.
+5. Scegliere **Salva**.
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>Creare e assegnare un profilo di aggiunta al dominio
 
-1. In **Microsoft Intune** scegliere **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+1. In [Intune](https://aka.ms/intuneportal) scegliere **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
 2. Immettere le seguenti proprietà:
    - **Nome**: immettere un nome descrittivo per il nuovo profilo.
    - **Descrizione:** immettere una descrizione per il profilo.
    - **Piattaforma**: scegliere **Windows 10 e versioni successive**.
    - **Tipo profilo**: scegliere **Aggiunta a un dominio (anteprima)**.
-3.  Scegliere **Impostazioni** e specificare un **Prefisso nome computer**, **Nome di dominio** e **Unità organizzativa** (facoltativo). 
+3. Scegliere **Impostazioni** e specificare un **Prefisso nome computer**, **Nome di dominio** e **Unità organizzativa** (facoltativo). 
 4. Scegliere **OK** > **Crea**. Il profilo viene creato e quindi visualizzato nell'elenco.
 5. Per assegnare il profilo, seguire i passaggi indicati in [Assegnare un profilo di dispositivo](device-profile-assign.md#assign-a-device-profile). 
 

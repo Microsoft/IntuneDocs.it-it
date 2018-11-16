@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/26/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a95f68f0a9794047b8adb7f9ab729bb4905f2379
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: ac0348736e5975633776c86dee88555dfceb6919
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679390"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576886"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restrizione dei dispositivi per Windows 10 (e versioni successive) in Intune
 Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di Microsoft Intune configurabili per i dispositivi che eseguono Windows 10.
@@ -31,8 +31,8 @@ Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di
 - **Acquisizione di schermata (solo dispositivi mobili)**: consente all'utente di acquisire la schermata del dispositivo come immagine.
 - **Copia e incolla (solo dispositivi mobili)** - Consente le azioni di copia e incolla tra app sul dispositivo.
 - **Annullamento manuale della registrazione** - Consente all'utente di eliminare manualmente l'account aziendale dal dispositivo.
-   - Questa impostazione di criteri non viene applicata se il computer è stato aggiunto ad Azure Active Directory e la registrazione automatica è abilitata. 
-   - Questa impostazione di criteri non si applica ai computer con Windows 10 Home.
+   - Questa impostazione dei criteri non viene applicata se il computer è stato aggiunto ad Azure AD e la registrazione automatica è abilitata. 
+   - Questa impostazione dei criteri non si applica ai computer con Windows 10 Home.
 - **Installazione manuale del certificato radice (solo per dispositivi mobili)**: impedisce all'utente di installare manualmente i certificati radice e i certificati intermedi CAP.
 
 - **Fotocamera** - Consente o blocca l'uso della fotocamera sul dispositivo.
@@ -51,9 +51,9 @@ Questo articolo illustra tutte le impostazioni di restrizioni dei dispositivi di
 - **Individuazione dei dispositivi**: blocca l'individuazione di un dispositivo da parte di altri dispositivi.
 - **Cambio modalità per l'attività (solo dispositivi mobili)**: blocca il cambio modalità per l'attività nel dispositivo.
 - **Finestra di dialogo di errore per la scheda SIM (solo dispositivi mobili)**: blocca la visualizzazione di un messaggio di errore nel dispositivo se non viene rilevata alcuna scheda SIM.
-- **Ink Workspace** (Area Windows Ink): impedisce agli utenti l'accesso all'area di lavoro Windows Ink. Quando questa impostazione non è configurata, l'area di lavoro Windows Ink è abilitata (la funzionalità è attivata), e l'utente è autorizzato a usarla sopra la schermata di blocco.
+- **Ink Workspace** (Area Windows Ink): impedisce agli utenti l'accesso all'area di lavoro Windows Ink. Quando questa impostazione è **Non configurata**, l'Area Windows Ink è abilitata (la funzionalità è attivata), e l'utente è autorizzato a usarla sopra la schermata di blocco.
 - **Ridistribuzione automatica**: consente agli utenti con diritti amministrativi di eliminare tutti i dati utente e tutte le impostazioni utente tramite **CTRL+tasto WINDOWS+R** nella schermata di blocco del dispositivo. Il dispositivo viene automaticamente riconfigurato e registrato di nuovo nella gestione.
-- **Require users to connect to network during device setup (solo Windows Insider)** (Richiedi agli utenti di connettersi alla rete durante la configurazione del dispositivo): scegliere **Rendi obbligatorio** per obbligare il dispositivo a connettersi a una rete per poter procedere oltre la pagina Rete durante l'installazione di Windows 10. Quando questa funzionalità è disponibile in anteprima, è necessaria una build 1809 o successiva di Windows Insider per usare questa impostazione.
+- **Richiedi agli utenti di connettersi alla rete durante la configurazione del dispositivo** (solo Windows Insider): scegliere **Rendi obbligatorio** per fare in modo che il dispositivo si connetta a una rete prima di poter procedere oltre la pagina Rete durante l'installazione di Windows 10. Quando questa funzionalità è disponibile in anteprima, è necessaria una build 1809 o successiva di Windows Insider per usare questa impostazione.
 
 ## <a name="password"></a>Password
 -   **Password**: richiede all'utente finale di immettere una password per accedere al dispositivo.
@@ -70,14 +70,14 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
 ## <a name="personalization"></a>Personalization
 
-- **URL dell'immagine di sfondo del desktop (solo desktop)**: consente di specificare l'URL di un'immagine in formato JPEG che verrà usata come sfondo del desktop di Windows. Gli utenti non possono modificare questa impostazione.
+- **URL dell'immagine di sfondo del desktop (solo desktop)**: immettere l'URL a un'immagine in formato JPEG che si vuole usare come sfondo del desktop di Windows. Gli utenti non possono modificare l'immagine.
 
 ## <a name="privacy"></a>Privacy
 
 -   **Personalizzazione dell'input**: non consente l'uso di servizi di riconoscimento vocale basati sul cloud per Cortana, app di dettatura o app di Microsoft Store. Se si consentono questi servizi, Microsoft potrebbe raccogliere dati vocali per migliorare il servizio.
 -   **Accettazione automatica delle richieste di associazione e di consenso utente sulla privacy**: consente a Windows di accettare automaticamente messaggi di associazione e consenso sulla privacy durante l'esecuzione di app.
-- **Pubblica le attività utente**: impostare l'opzione su **Blocca** per impedire le esperienze condivise e l'individuazione delle ultime risorse usate nel cambio modalità per l'attività.
-- **Solo attività locali**: impostare l'opzione su **Blocca** per impedire le esperienze condivise e l'individuazione delle ultime risorse usate nel cambio modalità solo per l'attività locale.
+- **Pubblica le attività utente**: selezionare **Blocca** per impedire la condivisione delle esperienze e l'individuazione delle risorse usate di recente nella selezione attività.
+- **Local activities only** (Solo attività locali): impostare l'opzione su **Blocca** per impedire la condivisione delle esperienze e l'individuazione delle risorse usate di recente nella selezione attività solo per le attività locali.
 
 È possibile definire le informazioni accessibili per tutte le app nel dispositivo. È possibile definire eccezioni per le singole app tramite **Eccezioni alla privacy per app**.
 
@@ -98,8 +98,8 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 - **Telefono** - Specificare se l'app può accedere al telefono.
 - **Radio** Alcune app usano le radio nel dispositivo, ad esempio Bluetooth, per inviare e ricevere i dati e devono attivare o disattivare queste radio. Specificare se l'app può controllare queste radio.
 - **Attività** - Specificare se l'app può accedere alle attività personali.
-- **Dispositivi attendibili** - Specificare se l'app può usare dispositivi attendibili, ovvero hardware già connesso o fornito con il PC, il tablet o il telefono in uso. Ad esempio: TV, proiettori e così via.
-- **Commenti e diagnostica** - Specificare se l'app può accedere alle informazioni di diagnostica.
+- **Dispositivi attendibili**: specificare se l'app può usare dispositivi attendibili, ovvero hardware già connesso o disponibile con il PC, il tablet o il telefono in uso. Ad esempio: TV, proiettori e così via.
+- **Feedback and diagnostics** (Commenti e diagnostica): specificare se l'app può accedere alle informazioni di diagnostica.
 - **Sincronizza con i dispositivi** - Specificare se l'app può condividere e sincronizzare automaticamente le informazioni con dispositivi wireless non associati in modo esplicito a questo PC, tablet o telefono.
 
 ## <a name="per-app-privacy-exceptions"></a>Eccezioni alla privacy per app
@@ -146,45 +146,45 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 -   **Installazione di app attendibile**: consente il trasferimento locale delle app con certificato attendibile.
 -   **Sblocco dallo sviluppatore**: consente la modifica delle impostazioni da parte degli sviluppatori Windows, ad esempio consentire all'utente finale di modificare le app trasferite localmente.
 -   **Dati app utente condivisi**: consente alle app di condividere dati tra utenti diversi dello stesso dispositivo.
--   **Usa solo lo Store privato**: consente agli utenti finali di scaricare app da uno Store privato.
+-   **Usa solo lo Store privato**: abilitare questa opzione per consentire agli utenti finali di scaricare app solo da uno Store privato.
 -   **Avvio di app originate dallo Store**: disabilita tutte le app preinstallate nel dispositivo o scaricate da Microsoft Store.
 -   **Installa i dati dell'app nel volume di sistema**: impedisce alle app di archiviare dati nel volume di sistema del dispositivo.
 -   **Installa le app nell'unità di sistema**: impedisce alle app di archiviare dati nell'unità di sistema del dispositivo.
 -   **Game DVR (solo desktop)**: configura se la registrazione e la trasmissione dei giochi sono consentite.
 -   **App solo dallo Store**: specifica se gli utenti possono installare le app da posizioni diverse dall'App Store.
 
-## <a name="edge-browser"></a>Browser Microsoft Edge
+## <a name="microsoft-edge-browser"></a>Browser Microsoft Edge
 
--   **Browser Microsoft Edge (solo dispositivi mobili)** - Consente l'uso del browser Web Edge sul dispositivo.
--   **Elenco a discesa della barra degli indirizzi (solo desktop)**: usare questa opzione per impedire a Edge di visualizzare suggerimenti in un elenco a discesa durante la digitazione. Ciò consente di ridurre al minimo l'uso di larghezza di banda tra Microsoft Edge e i servizi Microsoft.
--   **Sincronizza i Preferiti tra i browser Microsoft (solo desktop)**: consente la sincronizzazione dei Preferiti tra Edge e Internet Explorer in Windows.
--   **Invia intestazioni DNT (Do Not Track)** - Configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.
+-   **Browser Microsoft Edge (solo dispositivi mobili)**: consente l'uso del Web browser Microsoft Edge nel dispositivo.
+-   **Elenco a discesa della barra degli indirizzi (solo desktop)**: impedisce a Microsoft Edge di visualizzare suggerimenti in un elenco a discesa durante la digitazione. Questa opzione consente di ridurre al minimo l'uso di larghezza di banda tra Microsoft Edge e i servizi Microsoft.
+-   **Sincronizza i Preferiti tra i browser Microsoft (solo desktop)**: consente la sincronizzazione dei Preferiti tra Microsoft Edge e Internet Explorer in Windows.
+-   **Invia intestazioni DNT (Do Not Track)**: configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.
 -   **Cookie** - Consente al browser di salvare i cookie di Internet per il dispositivo.
--   **JavaScript** - Consente di eseguire script, ad esempio Javascript, nel browser Microsoft Edge.
+-   **JavaScript**: consente di eseguire script, ad esempio Javascript, nel browser Microsoft Edge.
 -   **Pop-up**: blocca le finestra popup del browser (si applica solo a Windows 10 Desktop).
 -   **Suggerimenti per la ricerca** - Consente al motore di ricerca di suggerire siti mentre si digita la frase di ricerca.
 -   **Invia traffico Intranet a Internet Explorer**: consente agli utenti di aprire siti Web della Intranet in Internet Explorer (solo per Windows 10 Desktop).
 -   **Riempimento automatico**: consente agli utenti di modificare le impostazioni di completamento automatico nel browser (solo per Windows 10 Desktop).
--   **Strumento per la gestione delle password** - Abilita o disabilita la funzione di gestione password di Microsoft Edge.
+-   **Strumento per la gestione delle password**: abilita o disabilita la funzione di gestione password di Microsoft Edge.
 -   **Posizione elenco siti modalità Enterprise** - Specifica dove trovare l'elenco dei siti Web che si aprono in modalità Enterprise. L'elenco non è modificabile dagli utenti.<br>Solo Windows 10 Desktop.
 -   **Strumenti di sviluppo**: impedisce all'utente finale di aprire gli strumenti di sviluppo di Microsoft Edge.
 -   **Estensioni**: consente all'utente finale di installare le estensioni di Microsoft Edge nel dispositivo.
 -   **InPrivate Browsing**: impedisce all'utente finale di aprire sessioni InPrivate Browsing.
--   **Mostra la pagina alla prima esecuzione**: impedisce la visualizzazione della pagina introduttiva quando si esegue Edge per la prima volta.
+-   **Mostra la pagina alla prima esecuzione**: impedisce la visualizzazione della pagina introduttiva quando si esegue Microsoft Edge per la prima volta.
     -   **URL della prima esecuzione**: specifica l'URL della pagina che viene visualizzata quando l'utente esegue Microsoft Edge per la prima volta (solo Windows 10 Mobile).
 -   **Home page**: aggiunge un elenco dei siti da usare come home page nel browser Microsoft Edge (solo desktop).
--   **Modifiche alla pagina iniziale**: consente agli utenti di modificare la scelta delle pagine iniziali visualizzate all'avvio di Microsoft Edge. Usare l'impostazione Home page per creare la pagina o l'elenco di pagine che viene aperta all'avvio di Microsoft Edge.
--   **Blocca l'accesso ai flag Informazioni su**: impedisce all'utente finale di accedere alla pagina di "flag Informazioni su" in Microsoft Edge che contiene impostazioni sperimentali e di sviluppo.
--   **Indirizzo IP localhost WebRtc**: blocca la visualizzazione dell'indirizzo IP localhost IP quando si effettuano telefonate tramite il protocollo RTC Web.
+-   **Modifiche alla pagina iniziale**: consente agli utenti di modificare la scelta delle pagine iniziali visualizzate all'avvio di Microsoft Edge. Usare l'impostazione Home page per creare la pagina, o l'elenco di pagine, che viene aperta all'avvio di Microsoft Edge.
+-   **Blocca l'accesso ai flag Informazioni su**: impedisce all'utente finale di accedere alla pagina "Flag Informazioni su" in Microsoft Edge che contiene impostazioni sperimentali e di sviluppo.
+-   **Indirizzo IP localhost WebRtc**: blocca la visualizzazione dell'indirizzo IP localhost quando si eseguono telefonate tramite il protocollo Web RTC.
 -   **Motore di ricerca predefinito**: specifica il motore di ricerca predefinito da usare. Gli utenti finali possono modificare questo valore in qualsiasi momento.
--   **Cancella i dati di esplorazione all'uscita**: cancella la cronologia e i dati di esplorazione quando l'utente esce da Edge.
+-   **Cancella i dati di esplorazione all'uscita**: cancella la cronologia e i dati di esplorazione quando l'utente esce da Microsoft Edge.
 -   **Raccolta di dati per il riquadro animato**: interrompe la raccolta di informazioni dal riquadro animato quando gli utenti aggiungono un sito al menu Start da Microsoft Edge.
 -  **Elenco Preferiti**: definisce il percorso del file dei preferiti. Ad esempio, http://contoso.com/favorites.html
--  **Restrict changes to Favorites** (Limita modifiche ai Preferiti): impostare questa proprietà su **Blocca** per impedire agli utenti di eseguire operazioni di aggiunta, importazione, ordinamento o modifica dell'elenco Preferiti. 
+-  **Limita le modifiche ai Preferiti** - **Blocca** per impedire agli utenti di eseguire operazioni di aggiunta, importazione, ordinamento o modifica dell'elenco Preferiti. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
-- **SmartScreen per Microsoft Edge**: abilita SmartScreen di Edge per l'accesso al sito e i download di file.
+- **SmartScreen for Microsoft Edge** (SmartScreen per Microsoft Edge): abilita SmartScreen di Microsoft Edge per l'accesso a siti e download di file.
 - **Accesso a siti dannosi**: impedisce agli utenti di ignorare gli avvisi del filtro SmartScreen di Windows Defender e impedisce loro di passare al sito.
 - **Download di file non verificati**: impedisce agli utenti di ignorare gli avvisi del filtro SmartScreen di Windows Defender e impedisce loro di scaricare file non verificati.
 
@@ -235,7 +235,27 @@ Per i dispositivi che eseguono Windows 10 Mobile: se l'accesso ha esito negativo
 
 ## <a name="start"></a>Avvia
 
-- **Rimuovi le app dalla barra della applicazioni**: impedisce all'utente di rimuovere app dal menu Start.
+- **Layout del menu Start**: per personalizzare il menu Start nei dispositivi desktop, è possibile caricare un file XML che include le personalizzazioni, tra cui l'ordine in cui sono elencate le app e altro ancora. Gli utenti non possono modificare il layout del menu Start immesso.
+- **Pin websites to tiles in Start menu** (Aggiungi siti Web ai riquadri nel menu Start): consente di importare immagini da Microsoft Edge che vengono visualizzate come collegamenti nel menu Start di Windows per i dispositivi desktop.
+- **Rimuovi le app dalla barra delle applicazioni**: scegliere **Blocca** per impedire all'utente di rimuovere app dal menu Start.
+- **Cambio rapido utente**: scegliere **Blocca** per impedire il cambio utente tra utenti connessi simultaneamente senza che eseguano la disconnessione.
+- **App più usate**: scegliere **Blocca** per nascondere le app più usate nel menu Start. Questa opzione disabilita anche l'alternanza corrispondente nell'app Impostazioni.
+- **App aggiunte di recente**: scegliere **Blocca** per nascondere le app aggiunte di recente nel menu Start. Questa opzione disabilita anche l'alternanza corrispondente nell'app Impostazioni.
+- **Modalità della schermata Start**: consente di scegliere la modalità di visualizzazione della schermata Start. Le opzioni di visualizzazione disponibili sono **Schermo intero** oppure **Non a schermo intero**.
+- **Elementi aperti di recente nelle jump list**: scegliere **Blocca** per nascondere le jump list recenti nel menu Start e nella barra delle applicazioni. Questa opzione disabilita anche l'alternanza corrispondente nell'app Impostazioni.
+- **Elenco di app**: scegliere la modalità di visualizzazione dell'app Impostazioni. Le opzioni disponibili sono: 
+  - Comprimi
+  - Comprimi e disabilita l'app Impostazioni 
+  - Rimuovi e disabilita l'app Impostazioni
+- **Pulsante di alimentazione**: scegliere **Blocca** per nascondere il pulsante di alimentazione nel menu Start.
+- **Riquadro utente**: scegliere **Blocca** per nascondere il riquadro utente nel menu Start.
+  - **Blocco**: scegliere **Blocca** per nascondere l'opzione `Lock` nel riquadro utente nel menu Start.
+  - **Disconnetti**: scegliere **Blocca** per nascondere l'opzione `Sign out` nel riquadro utente nel menu Start.
+- **Arresta**: scegliere **Blocca** per nascondere le opzioni `Update and shut down` e `Shut down` nel pulsante di alimentazione nel menu Start.
+- **Sospendi**: scegliere **Blocca** per nascondere l'opzione `Sleep` nel pulsante di alimentazione nel menu Start.
+- **Iberna**: scegliere **Blocca** per nascondere l'opzione `Hibernate` nel pulsante di alimentazione nel menu Start.
+- **Cambia account**: scegliere **Blocca** per nascondere l'opzione `Switch account` nel riquadro utente nel menu Start.
+- **Opzioni per il riavvio**: scegliere **Blocca** per nascondere le opzioni `Update and restart` e `Restart` nel pulsante di alimentazione nel menu Start.
 - **Documenti nel menu Start**: nasconde o mostra la cartella Documenti nel menu Start di Windows.
 - **Download nel menu Start**: nasconde o mostra la cartella Download nel menu Start di Windows.
 - **Esplora file nel menu Start**: nasconde o mostra l'app Esplora file nel menu Start di Windows.
@@ -269,7 +289,7 @@ In genere un'app o una serie specifica di app viene eseguita in un dispositivo i
 #### <a name="single-app-kiosks"></a>App singole per chioschi multimediali
 Immettere le impostazioni seguenti:
 
-- **Account utente**: immettere l'account utente locale (per il dispositivo), un account di dominio di AD o un account di accesso di Azure AD associato all'app in modalità tutto schermo.
+- **Account utente**: immettere l'account utente locale per il dispositivo, un account di dominio AD o un account Azure AD associato all'app per chiosco multimediale.
   - Account locale: immettere come `devicename\accountname`, `.\accountname` o `accountname`
   - Account di dominio: immettere come `domain\accountname`
   - Account di Azure AD: immettere come `AzureAD\emailaddress` Assicurarsi di immettere "AzureAD", perché è un nome di dominio fisso. Aggiungere quindi l'indirizzo di posta elettronica di Azure AD. Immettere ad esempio `AzureAD\user@contoso.onmicrosoft.com`.
@@ -300,7 +320,7 @@ Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multime
 
   In [Creare un chiosco multimediale Windows 10 che esegue più app](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) sono disponibili altri dettagli sull'uso e la creazione di file XML.
 
-- **Utenti assegnati**: aggiungere uno o più account utente che possa usare le app aggiunte. Quando l'account esegue l'accesso, sono disponibili solo le app definite nella configurazione. L'account può essere locale nel dispositivo o in un account di accesso di Azure AD associato all'app per chiosco multimediale.
+- **Utenti assegnati**: aggiungere uno o più account utente che possa usare le app aggiunte. Quando l'account esegue l'accesso, sono disponibili solo le app definite nella configurazione. L'account può essere locale nel dispositivo o in un account di Azure AD associato all'app per chiosco multimediale.
 
     Per i chioschi multimediali in ambienti pubblici con accesso automatico abilitato, è necessario usare un tipo di utente con privilegi minimi, ad esempio l'account utente standard locale. Per configurare un account Azure Active Directory (AD) per la modalità tutto schermo, usare il formato `domain\user@tenant.com`.
 
@@ -347,9 +367,9 @@ Se i file sull'unità sono di sola lettura, Defender non può rimuovere il malwa
 ## <a name="network-proxy"></a>Proxy di rete
 
 -   **Rileva automaticamente impostazioni proxy**: se questa opzione è attivata il dispositivo cerca il percorso di uno script PAC.
--   **Usa lo script proxy**: selezionare questa opzione se si vuole specificare un percorso a uno script PAC per configurare il server proxy.
+-   **Usa lo script proxy**: selezionare questa opzione se si vuole immettere un percorso a uno script PAC per configurare il server proxy.
     -   **URL dell'indirizzo dello script di installazione**: immettere l'URL di uno script PAC che si vuole usare per configurare il server proxy.
--   **Usa il server proxy manuale**: selezionare questa opzione se si vogliono specificare manualmente le informazioni del server proxy.
+-   **Usa il server proxy manuale**: selezionare questa opzione se si vogliono immettere manualmente le informazioni del server proxy.
     -   **Indirizzo**: immettere il nome o l'indirizzo IP del server proxy.
     -   **Numero porta**: immettere il numero della porta del server proxy.
     -   **Eccezione del proxy**: immettere gli URL che non devono usare il server proxy. Per separare ogni elemento, usare un punto e virgola.
@@ -374,12 +394,15 @@ Se i file sull'unità sono di sola lettura, Defender non può rimuovere il malwa
 
 ## <a name="cloud-printer"></a>Stampante cloud
 
-- **URL di individuazione stampanti**: endpoint per l'individuazione delle stampanti nel cloud.
-- **URL dell'autorità per l'accesso alle stampanti**: endpoint di autenticazione per l'acquisizione di token OAuth.
-- **GUID dell'app client nativa di Azure**: GUID che identifica l'applicazione client autorizzata a recuperare token OAuth da OAuthAuthority.
-- **URI della risorsa del servizio di stampa**: URI della risorsa OAuth per il servizio di stampa come configurato nel portale di Azure.
-- **Numero massimo di stampanti da sottoporre a query (solo dispositivi mobili)**: numero massimo di stampanti da sottoporre a query da un endpoint di individuazione.
-- **URI della risorsa del servizio di individuazione**: URI della risorsa OAuth per il servizio di individuazione delle stampanti come configurato nel portale di Azure.
+- **URL di individuazione stampanti**: immettere l'URL per l'individuazione delle stampanti nel cloud.
+- **URL dell'autorità per l'accesso alle stampanti**: immettere l'URL dell'endpoint di autenticazione per l'acquisizione di token OAuth. Ad esempio, `https://login.microsoftonline.com/your Azure AD Tenant ID`.
+- **GUID dell'app client nativa di Azure**: immettere l'identificatore univoco globale dell'applicazione client autorizzata a recuperare token OAuth da OAuthAuthority.
+- **URI della risorsa del servizio di stampa**: immettere l'URI della risorsa OAuth per il servizio di stampa configurato nel portale di Azure. Ad esempio, `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
+- **Maximum printers to query (Mobile only)** (Numero massimo di stampanti da sottoporre a query (solo dispositivi mobili)): immettere il numero massimo di stampanti da sottoporre a query. Immettere ad esempio `10`.
+- **URI della risorsa del servizio di individuazione**: immettere l'URI della risorsa OAuth per il servizio di individuazione delle stampanti configurato nel portale di Azure. Ad esempio, `http://MopriaDiscoveryService/CloudPrint`.
+
+> [!TIP]
+> Dopo aver configurato [Hybrid Cloud Print di Windows Server](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), è possibile configurare queste impostazioni e quindi eseguire la distribuzione ai dispositivi Windows.
 
 ## <a name="local-printer"></a>Stampante locale
 - **Stampanti**: elenco delle stampanti locali che sono state aggiunte.

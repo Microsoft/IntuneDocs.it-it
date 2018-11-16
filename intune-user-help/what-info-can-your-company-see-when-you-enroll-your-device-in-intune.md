@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: bdf08ccac21407bc2572f1133b2fe8d45548342f
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: 63295d7e05889f5a8beb44e399f36a4fbe27544d
+ms.sourcegitcommit: 76c7b315b83eb6cb5b996facf1d250fb3e22f1bc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679254"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276116"
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Quali sono le informazioni visibili per l'azienda quando si registra il dispositivo?
+# <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Quali sono le informazioni visibili per l'organizzazione quando si registra il dispositivo?
 
-L'azienda non può vedere le informazioni personali di un utente quando registra un dispositivo con Microsoft Intune. Quando si registra un dispositivo, si concede all'azienda l'autorizzazione per visualizzare determinati tipi di informazioni nel dispositivo, ad esempio il modello di dispositivo e il numero di serie. L'azienda usa queste informazioni per la protezione dei dati aziendali nel dispositivo.
+L'organizzazione non può vedere le informazioni personali di un utente che registra un dispositivo con Microsoft Intune. Quando si registra un dispositivo, si concede all'organizzazione l'autorizzazione per visualizzare determinati tipi di informazioni nel dispositivo, ad esempio il modello di dispositivo e il numero di serie. L'organizzazione usa queste informazioni per la protezione dei dati aziendali nel dispositivo.
 
-**Informazioni che l'azienda non può mai visualizzare:**
+**Informazioni che l'organizzazione non può mai visualizzare:**
 
 - Cronologia delle chiamate e delle esplorazioni Web
 - Posta elettronica e messaggi di testo
@@ -35,20 +35,23 @@ L'azienda non può vedere le informazioni personali di un utente quando registra
 - Calendario
 -   Password
 - Immagini, incluse quelle nell'app Foto o nel rullino della fotocamera
+- File
 
-**Informazioni che l'azienda può sempre visualizzare:**
+**Informazioni che l'organizzazione può sempre visualizzare:**
 
 - Modello del dispositivo, ad esempio Google Pixel
-- Produttore, ad esempio Microsoft
-- Sistema operativo, ad esempio iOS
-- Nomi di app, ad esempio Microsoft Word
+- Produttore del dispositivo, ad esempio Microsoft
+- Sistema operativo e versione, ad esempio iOS 12.0.1
+- I nomi delle app, ad esempio Microsoft Word. Nei dispositivi personali l'organizzazione può visualizzare solo l'inventario delle app gestite. Nei dispositivi di proprietà dell'azienda l'organizzazione può visualizzare l'inventario di tutte le app.
 - Proprietario del dispositivo
 - Nome dispositivo
-- Numero di serie
+- Numero di serie del dispositivo
+- IMEI
 
-**Informazioni che l'azienda potrebbe visualizzare:**
+**Informazioni che l'organizzazione potrebbe visualizzare:**
 
--  Numero di telefono: per i dispositivi di proprietà dell'**azienda** può essere visualizzato il numero di telefono completo. Per i dispositivi di proprietà **personale** sono visibili all'azienda solo le ultime quattro cifre del numero di telefono. Per visualizzare il **tipo di proprietà** di un singolo dispositivo, aprire la pagina **Dettagli dispositivo** del dispositivo.
--  Località: l'azienda non può mai visualizzare dove si trova il dispositivo, a meno che non si tratti di un dispositivo iOS supervisionato che è stato perso. [Come scoprirlo?](https://go.microsoft.com/fwlink/?linkid=853816)
-- Inventario delle app: se l'azienda usa Mobile Threat Defense, può visualizzare dettagli aggiuntivi sulle app presenti nel dispositivo iOS. Altre informazioni su [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
-- Informazioni di rete: alcune informazioni sulle connessioni di rete per dispositivi Android possono essere disponibili per il supporto tecnico dell'azienda. Se l'azienda esigesse, ad esempio, che i dispositivi rimangano all'interno di un determinato edificio, il dispositivo potrebbe identificare la rete a cui è connesso. 
+-  Numero di telefono: per i dispositivi di proprietà dell'**azienda**, può essere visualizzato il numero di telefono completo. Per i dispositivi di proprietà **personale**, l'organizzazione può visualizzare solo le ultime quattro cifre del numero di telefono. Per visualizzare il **tipo di proprietà** di un singolo dispositivo, aprire la pagina **Dettagli dispositivo** del dispositivo.
+- Spazio di archiviazione del dispositivo: se non è possibile installare un'app necessaria, l'organizzazione potrebbe esaminare lo spazio di archiviazione del dispositivo per determinare se lo spazio non è sufficiente.  
+-  Posizione: l'organizzazione non può mai visualizzare dove si trova il dispositivo, a meno che non si tratti di un dispositivo iOS supervisionato che è stato perso. [Come scoprirlo?](https://go.microsoft.com/fwlink/?linkid=853816)
+- Inventario delle app: se l'organizzazione usa Mobile Threat Defense, può visualizzare dettagli aggiuntivi sulle app presenti nel dispositivo iOS. Altre informazioni su [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Informazioni di rete: alcune informazioni sulle connessioni di rete per dispositivi Android possono essere disponibili per il supporto tecnico dell'organizzazione. Se l'organizzazione esigesse, ad esempio, che i dispositivi rimangano all'interno di un determinato edificio, il dispositivo potrebbe identificare la rete a cui è connesso. 

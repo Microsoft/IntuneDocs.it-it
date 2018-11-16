@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 2252c81757b7745ed15ca86a4e7db310f03df19d
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236476"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298157"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Aggiungere le impostazioni Wi-Fi per dispositivi Windows 10 e versioni successive in Intune
 
@@ -57,6 +57,9 @@ Questo articolo descrive queste impostazioni.
   - **WPA/WPA2-Personal**: opzione che offre maggiore protezione in genere usata per la connettività Wi-Fi. Per maggiore sicurezza, è anche possibile immettere una password chiave precondivisa o una chiave di rete. 
 
     - **Chiave precondivisa** (PSK): facoltativa. Visualizzato quando si sceglie **WPA/WPA2-Personal** come tipo di sicurezza. Quando viene configurata la rete dell'organizzazione, viene configurata anche una password o una chiave di rete. Immettere questa password o chiave di rete per il valore di chiave precondivisa. Immettere una stringa con un numero di caratteri compreso tra 8 e 64. Se la password o la chiave di rete è di 64 caratteri, immettere caratteri esadecimali.
+    
+      > [!NOTE]
+      > Quando si salva il profilo Wi-Fi, il valore della chiave precondivisa immesso non viene visualizzato per motivi di sicurezza. Resta visualizzata l'opzione **Non configurata** per la chiave precondivisa anche se è già stata salvata nel profilo. Per modificare la chiave precondivisa, immettere una nuova chiave e salvare il profilo. Se si salva una chiave precondivisa, si modificano i criteri e si lascia vuota la chiave precondivisa, verrà ancora usata la chiave precondivisa esistente.
 
 - **Impostazioni del proxy aziendale**: scegliere questa impostazione per usare le impostazioni proxy all'interno dell'organizzazione. Le opzioni disponibili sono:
   - **Nessuna**: non sono state configurate impostazioni proxy.

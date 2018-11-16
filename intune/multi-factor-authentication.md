@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2c2bb6e76bd6b2da7ee7c12282c0ff22d7d3e3
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
+ms.openlocfilehash: 270f19b6f0babb347b04731ca270a3c5bea18217
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617210"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225670"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Richiedere l'autenticazione a più fattori per le registrazioni di dispositivi Intune
 
@@ -48,24 +48,18 @@ Per richiedere l'autenticazione MFA quando viene registrato un dispositivo, segu
 >Non configurare le **regole di accesso in base al dispositivo** per la registrazione di Microsoft Intune.
 
 1. Accedere al [portale di Microsoft Azure](https://portal.azure.com) con le credenziali personali.
-2. Nel portale scegliere **Azure Active Directory**.
-2. In **Azure Active Directory** scegliere **Gestisci** > **Applicazioni aziendali**.
-3. In **Applicazioni aziendali** scegliere **Gestisci** > **Tutte le applicazioni**. Verrà visualizzato un elenco di tutte le app Azure gestite.
-3. Nell'elenco scegliere **Registrazione di Microsoft Intune**.
-4. In **Registrazione di Microsoft Intune** scegliere **Sicurezza** > **Accesso condizionale**.
-5. Scegliere **Nuovo criterio**.
-6. In **Nuovo** criterio digitare un nome descrittivo per il criterio.
-7. Nella sezione **Assegnazioni** scegliere **Utenti e gruppi**.
-8. In **Utenti e gruppi** scegliere gli utenti e i gruppi a cui verrà applicato il criterio e quindi scegliere **Fine**.
-9. Nella sezione **Assegnazioni** scegliere **App cloud**.
-10. In **App cloud**, nella scheda **Includi** scegliere **Selezionare le app**, quindi **Seleziona** > **Registrazione di Microsoft Intune** e al termine fare clic su **Fine**.
-11. Nella sezione **Assegnazioni** scegliere **Condizioni**.
-12. In **Condizioni** non è necessario configurare alcuna impostazione per MFA.
-13. Nella sezione **Controlli di accesso** scegliere **Concedi**.
-14. In **Concedi** scegliere **Concedi accesso** e quindi selezionare **Richiedi autenticazione a più fattori**.
-    Non selezionare **Richiedi che i dispositivi siano contrassegnati come conformi** perché non è possibile valutare la conformità di un dispositivo fino a quando non è registrato.
-15. Scegliere **Seleziona**.
-16. In **Nuovo criterio** scegliere **Attiva criterio** > **Sì** e quindi scegliere **Crea**.
+2. Nel portale passare ad **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
+3. In **Azure Active Directory** in Sicurezza, scegliere **[Accesso condizionale](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+4. Scegliere **Nuovo criterio**.
+5. In **Nuovo** criterio digitare un nome descrittivo per il criterio.
+6. Nella sezione **Assegnazioni** scegliere **Utenti e gruppi**.
+7. In **Utenti e gruppi** scegliere **Selezionare utenti o gruppi** e selezionare **Utenti e gruppi**. Quindi selezionare gli utenti e/o i gruppi che riceveranno questi criteri e scegliere **Fine**.
+8. Nella sezione **Assegnazioni** scegliere **App cloud**.
+9. In **App cloud**, nella scheda **Includi** scegliere **Selezionare le app**, quindi **Seleziona** > **Registrazione di Microsoft Intune** e al termine fare clic su **Fine**.
+10. Nella sezione **Assegnazioni** in **Condizioni** non è necessario configurare impostazioni per MFA.
+11. Nella sezione **Controlli di accesso** scegliere **Concedi**.
+12. In **Concedi** scegliere **Concedi accesso** e quindi selezionare **Richiedi autenticazione a più fattori**. Non selezionare **Richiedi che i dispositivi siano contrassegnati come conformi** perché non è possibile valutare la conformità di un dispositivo fino a quando non è registrato. Quindi scegliere **Seleziona**.
+13. In **Nuovo criterio** scegliere **Attiva criterio** > **Sì** e quindi scegliere **Crea**.
 
 
 

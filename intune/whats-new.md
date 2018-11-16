@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7fd8c7f6f2c3dd5e6e8af323ccbb41a1ab779df
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025237"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576971"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazioni sulle [modifiche previste](#whats-coming), [notifiche importanti](#notices) sul servizio e informazioni sulle [versioni precedenti](whats-new-archive.md). Alcune funzionalità potrebbero essere implementate nel corso di settimane e potrebbero non essere disponibili a tutti i clienti nella prima settimana.
+Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazioni su modifiche previste, [notifiche importanti](#notices) e informazioni su [versioni precedenti](whats-new-archive.md). Alcune funzionalità potrebbero essere implementate nel corso di settimane e potrebbero non essere disponibili a tutti i clienti nella prima settimana.
 
 > [!Note]
 > Per informazioni sulle nuove funzionalità di gestione dei dispositivi mobili (MDM) ibrida, vedere la [pagina Novità della gestione di dispositivi mobili ibrida](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
@@ -41,6 +41,21 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazio
 ### Role-based access control
 
 -->     
+## <a name="week-of-november-5-2018"></a>Settimana del 05 novembre 2018
+
+### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Supporto per iOS 12 OAuth nei profili di posta elettronica iOS <!--2155106 -->
+
+I profili di posta elettronica iOS di Intune supportano iOS 12 Open Authorization (OAuth). Per visualizzare questa funzionalità, creare un nuovo profilo (**Configurazione del dispositivo** > **Profili** > **Crea profilo** > **iOS** per la piattaforma > **Posta elettronica** per il tipo di profilo), oppure aggiornare un profilo di posta elettronica iOS esistente. Se la funzionalità OAuth viene abilitata in un profilo che è già stato distribuito, agli utenti verrà richiesto di ripetere l'autenticazione e di scaricare nuovamente il messaggio di posta elettronica.
+
+Nella pagina sui [profili di posta elettronica iOS](email-settings-ios.md) sono disponibili altre informazioni sull'uso di OAuth in un profilo di posta elettronica.
+
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>Supporto di Autopilot per i dispositivi ibridi aggiunti ad Azure Active Directory (anteprima) <!-- 1048100-->
+È ora possibile configurare i dispositivi ibridi aggiunti ad Azure Active Directory usando Autopilot. I dispositivi devono essere aggiunti alla rete dell'organizzazione per usare la funzionalità ibrida di Autopilot. Per altre informazioni, vedere [Distribuire dispositivi aggiunti ad Azure AD ibrido con Intune e Windows Autopilot](windows-autopilot-hybrid.md).
+Questa funzionalità verrà implementata nella base di utenti nei prossimi giorni. Di conseguenza, sarà possibile seguire questa procedura solo dopo l'implementazione nel proprio account.
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>Impostazioni dei criteri di protezione dell'app per i dati Web <!-- 2662995  -->
+Le impostazioni dei criteri di protezione dell'app per il contenuto Web nei dispositivi iOS e Android sono state aggiornate per gestire meglio i collegamenti Web sia http che https, nonché il trasferimento dei dati tramite i collegamenti universali iOS e i collegamenti alle app Android.  
+
 ## <a name="week-of-october-29-2018"></a>Settimana del 29 ottobre 2018
 
 
@@ -112,10 +127,6 @@ Sarà possibile assegnare profili di Autopilot al gruppo virtuale Tutti i dispos
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Nuova funzionalità Condizioni per l'utilizzo di Azure Active Directory <!-- 2870393 -->
 Azure Active Directory ha una funzionalità Condizioni per l'utilizzo che è possibile usare al posto delle condizioni di Intune esistenti. La funzionalità Condizioni per l'utilizzo di Azure AD offre maggiore flessibilità sule condizioni da visualizzare e su quando visualizzarle, un migliore supporto della localizzazione, maggiore controllo sul rendering delle condizioni e creazione di report migliorata. La funzionalità Condizioni per l'utilizzo di Azure AD richiede Azure Active Directory Premium P1 che fa parte della suite Enterprise Mobility + Security E3. Per altre informazioni, vedere l'articolo [Gestire termini e condizioni aziendali per l'accesso degli utenti](terms-and-conditions-create.md).
 
-### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>Supporto di Autopilot per i dispositivi ibridi aggiunti ad Azure Active Directory (anteprima) <!-- 1048100-->
-È ora possibile configurare i dispositivi ibridi aggiunti ad Azure Active Directory usando Autopilot. I dispositivi devono essere aggiunti alla rete dell'organizzazione per usare la funzionalità ibrida di Autopilot. Per altre informazioni, vedere [Distribuire dispositivi aggiunti ad Azure AD ibrido con Intune e Windows Autopilot](windows-autopilot-hybrid.md).
-Questa funzionalità verrà implementata nella base di utenti nei prossimi giorni. Di conseguenza, sarà possibile seguire questa procedura solo dopo l'implementazione nel proprio account.
-
 ### <a name="android-device-owner-mode-support---3188762--"></a>Supporto della modalità Proprietario dispositivo Android <!--3188762-->
 Per Samsung Knox Mobile Enrollment, Intune supporta ora la registrazione dei dispositivi nella modalità di gestione Proprietario dispositivo Android. Gli utenti connessi a reti Wi-Fi o cellulari possono eseguire la registrazione con pochi tocchi quando accendono il dispositivo per la prima volta. Per altre informazioni, vedere [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md) (Registrare automaticamente i dispositivi Android usando Samsung Knox Mobile Enrollment).
 
@@ -130,7 +141,10 @@ I criteri di protezione delle app di Intune consentono di configurare varie impo
 - **Requisiti di accesso**: questo gruppo contiene le opzioni PIN per ogni app che determinano in che modo l'utente finale accede alle app in un contesto aziendale.  
 - **Avvio condizionale**: questo gruppo contiene impostazioni come le impostazioni minime del sistema operativo, il rilevamento di jailbreak e dispositivi rooted e i periodi di prova offline.  
   
-La funzionalità delle impostazioni non cambia, ma sarà più semplice trovarle quando si usa il flusso di creazione dei criteri. 
+La funzionalità delle impostazioni non cambia, ma sarà più semplice trovarle quando si usa il flusso di creazione dei criteri.
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>Nuovo SKU per la sottoscrizione del dispositivo Intune: 3312071
+È ora disponibile un nuovo SKU per la sottoscrizione basato sul dispositivo che consente alle organizzazioni di ridurre i costi di gestione dei dispositivi. Questo SKU per dispositivo Intune viene concesso in licenza per ogni dispositivo su base mensile. Il prezzo varia in base al programma di licenza. È disponibile in Direct Channel, Enterprise Agreement (EA), Microsoft Products and Services Program (MPSA)e Open and Cloud Solution Provider (CSP).
 
 ### <a name="intune-apps"></a>App di Intune
 
@@ -619,7 +633,7 @@ Se è stato abilitato il [mapping del gruppo di dispositivi](https://docs.micros
 
 Per usare questa funzionalità, è necessario sincronizzare l'attributo `sAMAccountName` dell'ambiente Active Directory locale con Azure AD.
 
-Si applica a: [Andoid](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 e versioni successive](email-settings-windows-10.md)
+Si applica a: [Android](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 e versioni successive](email-settings-windows-10.md)
 
 #### <a name="see-device-configuration-profiles-in-conflict----1556983---"></a>Visualizzare i profili di configurazione del dispositivo in conflitto <!-- 1556983 -->
 In **Configurazione del dispositivo** viene visualizzato un elenco dei profili esistenti. Con questo aggiornamento viene aggiunta una nuova colonna che fornisce informazioni dettagliate sui profili con un conflitto. È possibile selezionare una riga di conflitto per visualizzare l'impostazione e il profilo che presenta il conflitto. 
@@ -675,7 +689,7 @@ Quando si caricano gli ID aziendali, Intune ora presenta un elenco di tutti i du
 
 ## <a name="week-of-june-18-2018"></a>Settimana del 18 giugno 2018
 
-### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Supporto di Edge in dispositivi mobili per i criteri di protezione delle app di Intune <!-- 1817882 -->
+### <a name="microsoft-edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Supporto di Microsoft Edge in dispositivi mobili per i criteri di protezione delle app di Intune <!-- 1817882 -->
 
 Il browser Microsoft Edge per i dispositivi mobili supporta ora i criteri di protezione delle app definiti in Intune.
 
@@ -784,7 +798,7 @@ Per visualizzare le informazioni UDID (Unique Device Identifier) per i dispositi
 Nei dispositivi gestiti da MDM di Microsoft Intune le installazioni di applicazioni in alcuni casi possono non riuscire. Quando le installazioni di queste app hanno esito negativo, può essere difficile capire il motivo dell'errore o risolvere il problema. È in corso la distribuzione di un'anteprima pubblica delle funzionalità di risoluzione dei problemi delle app. Sotto ogni singolo dispositivo si noterà un nuovo nodo denominato **App gestite**, che elenca le app distribuite tramite MDM di Intune. Nel nodo è visibile un elenco di stati di installazione delle app. Se si seleziona una singola app, si noterà la visualizzazione relativa alla risoluzione dei problemi per l'app specifica. In tale visualizzazione è presente il ciclo di vita end-to-end dell'app, ad esempio quando l'app è stata creata, modificata, specificata come destinazione e distribuita in un dispositivo. Se l'installazione dell'app non è riuscita, saranno anche disponibili il codice di errore e un messaggio sulla causa dell'errore. 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Criteri di protezione delle app di Intune e Microsoft Edge <!-- 1818968 -->
-Il browser Microsoft Edge per dispositivi mobili (iOS e Android) ora supporta i criteri di protezione delle app di Microsoft Intune. Gli utenti di dispositivi iOS e Android che accedono con gli account Azure AD aziendali nell'applicazione Edge saranno protetti da Intune. Nei dispositivi iOS il criterio **Require managed browser for web content** (Richiedi Managed Browser per contenuti Web) consentirà agli utenti di aprire i collegamenti in Edge quando è gestito.
+Il browser Microsoft Edge per dispositivi mobili (iOS e Android) ora supporta i criteri di protezione delle app di Microsoft Intune. Gli utenti di dispositivi iOS e Android che accedono con gli account Azure AD aziendali nell'applicazione Edge saranno protetti da Intune. Nei dispositivi iOS il criterio **Require managed browser for web content** (Richiedi Managed Browser per contenuti Web) consentirà agli utenti di aprire i collegamenti in Microsoft Edge quando è gestito.
 
 ## <a name="week-of-may-14-2018"></a>Settimana del 14 maggio 2018
 
@@ -1010,6 +1024,21 @@ Per visualizzare l'aspetto aggiornato, vedere [Novità dell'interfaccia utente d
 È ora possibile usare i criteri di protezione delle app e l'accesso condizionale di Intune per proteggere l'accesso ai dati di Exchange locali con Outlook Mobile. Per aggiungere o modificare i criteri di protezione delle app nel portale di Azure, selezionare **Microsoft Intune** > **App client** > **Criteri di protezione delle app**. Prima di usare questa funzionalità, assicurarsi che siano soddisfatti i [requisiti di Outlook per iOS e Android](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## <a name="notices"></a>Notifiche
+
+### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Modifica prevista: aggiornamenti delle prestazioni in Microsoft Intune per Education <!--1750215-->
+È in corso l'aggiornamento di Microsoft Intune per Education al fine di incrementare la velocità e l'affidabilità durante l'assegnazione delle impostazioni a utenti o dispositivi. Verso la fine del mese, è anche previsto lo spostamento dei criteri o l'assegnazione delle impostazioni a nuovi gruppi.
+
+#### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
+
+Per i clienti di Microsoft Intune per Education saranno disponibili due gruppi di Azure Active Directory (Azure AD) dinamici, vale a dire "Tutti gli utenti" e "Tutti i dispositivi". In seguito a questi aggiornamenti, i gruppi di Azure AD "Tutti gli utenti" e "Tutti i dispositivi" non saranno visibili nella console di Microsoft Intune per Education. Lo saranno invece in Intune nella console di Azure e verranno rinominati "Tutti gli utenti (obsoleto, non usare)" e "Tutti i dispositivi (obsoleto, non usare)".
+
+Dopo la distribuzione degli aggiornamenti, non sarà più necessario usare i gruppi di Azure AD per assegnare le app e le impostazioni in Intune. Le assegnazioni delle impostazioni verranno invece spostate in nuovi gruppi nella console di Microsoft Intune per Education e verranno creati e visualizzati nuovamente con il nome "Tutti gli utenti" e "Tutti i dispositivi". Queste modifiche vengono eseguite nel back-end. Non si noteranno quindi variazioni nella console di Microsoft Intune per Education. Non è previsto alcun impatto sugli utenti finali o sui dispositivi registrati. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Operazioni di preparazione alla modifica
+Durante lo spostamento delle assegnazioni dei criteri, non è richiesto l'intervento dell'utente. Se attualmente si assegnano i criteri in Microsoft Intune per Education, si può continuare a farlo.
+
+Se attualmente si assegnano i criteri ai gruppi di Azure AD indicati in precedenza in Intune in Azure, ora è invece necessario assegnarli ai gruppi Tutti gli utenti e Tutti i dispositivi nella console di Microsoft Intune per Education. Quando si nota che i gruppi di Azure AD sono stati rinominati e definiti obsoleti nella console, interrompere l'assegnazione dei criteri in Azure AD. Se attualmente non vi sono motivi per usare i gruppi rinominati, eliminarli.
+
 
 ### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Modifica prevista: Intune passerà al supporto di macOS 10.12 e versioni successive nel mese di dicembre <!--2970975--> 
 

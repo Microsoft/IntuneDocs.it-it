@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: 5c83af252b1c728b9e3d4015cdc8bb4fd3668ad1
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410770"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561925"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Guida introduttiva: creare e assegnare un ruolo personalizzato
 
@@ -64,7 +64,9 @@ Se non si desidera usare più il nuovo ruolo personalizzato, è possibile elimin
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa guida introduttiva è stato creato un ruolo operazioni di sicurezza personalizzato e il ruolo è stato assegnato a un gruppo. È possibile ottenere altre informazioni sui problemi di sicurezza nell'articolo seguente.
+In questa guida introduttiva è stato creato un ruolo operazioni di sicurezza personalizzato e il ruolo è stato assegnato a un gruppo. Per altre informazioni sui ruoli in Intune, vedere [Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune](role-based-access-control.md)
+
+Per seguire questa serie di guide introduttive di Intune, continuare con la guida introduttiva che segue.
 
 > [!div class="nextstepaction"]
-> [Introduzione ai criteri di conformità dei dispositivi](device-compliance-get-started.md)
+> [Guida introduttiva: Creare un profilo di posta elettronica del dispositivo per iOS](quickstart-email-profile.md)

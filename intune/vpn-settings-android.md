@@ -1,6 +1,6 @@
 ---
 title: Configurare le impostazioni VPN per dispositivi Android in Microsoft Intune - Azure | Microsoft Docs
-description: Per creare un profilo di configurazione VPN per dispositivi Android e Android for Work, immettere il nome della connessione, l'indirizzo IP o il nome di dominio completo del server VPN, scegliere il metodo di autenticazione degli utenti al server VPN e quindi scegliere i tipi di connessione Citrix, SonicWall, Check Point Capsule, Pulse Secure ed Edge.
+description: Per creare un profilo di configurazione VPN per dispositivi Android e Android for Work, immettere il nome della connessione, l'indirizzo IP o il nome di dominio completo del server VPN, scegliere il metodo di autenticazione degli utenti al server VPN e quindi scegliere i tipi di connessione Citrix, SonicWall, Check Point Capsule, Pulse Secure e Microsoft Edge.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f02a76def463c4ef1c3ee24b021df3185d263ecf
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 113d2e52783f3c7e9f013d2cc239efad45408c87
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279322"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576818"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>Configurare le impostazioni VPN per i dispositivi che eseguono Android in Intune
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b797951c878dd90cbb7bb716b5108f94f48921c5
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 21dda51d2ddde74f07fcc173c5a4dd2a13c9c8b8
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231951"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225748"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Guida introduttiva: creare un profilo di posta elettronica del dispositivo per iOS
 
@@ -69,7 +69,7 @@ Se non si prevede di usare il profilo creato per esercitazioni o test aggiuntivi
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa guida introduttiva è stato creato un profilo di posta elettronica per i dispositivi iOS. Ora è possibile usare questo profilo per determinare se un dispositivo iOS è conforme ai criteri di conformità che contrassegnano come non conformi tutti i dispositivi iOS che non corrispondono al profilo. Per ulteriore protezione, è possibile creare un criterio di accesso condizionale che impedisce ai dispositivi iOS non conformi di accedere alla posta elettronica.
+In questa guida introduttiva è stato creato un profilo di posta elettronica per i dispositivi iOS. Ora è possibile usare questo profilo per determinare se un dispositivo iOS è conforme ai criteri di conformità che contrassegnano come non conformi tutti i dispositivi iOS che non corrispondono al profilo. Per ulteriore protezione, è possibile creare un criterio di accesso condizionale che impedisce ai dispositivi iOS non conformi di accedere alla posta elettronica. Per altre informazioni sui criteri di conformità dei dispositivi, vedere [Introduzione ai criteri di conformità dei dispositivi in Intune](device-compliance-get-started.md).
 
 > [!div class="nextstepaction"]
-> [Introduzione ai criteri di conformità dei dispositivi in Intune](device-compliance-get-started.md)
+> [Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi gestiti](tutorial-protect-email-on-enrolled-devices.md)

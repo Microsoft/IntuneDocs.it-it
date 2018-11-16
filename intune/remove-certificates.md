@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4287322fd494c97cf24feb8cc16435a4405f2af
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50150108"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561942"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Rimuovere i certificati SCEP e PKCS in Microsoft Intune
 
@@ -131,7 +131,7 @@ Questo articolo illustra alcuni scenari comuni e l'impatto sui certificati SCEP 
   - L'amministratore rimuove l'utente o il gruppo da Azure AD
   - L'amministratore modifica o aggiorna il profilo PKCS
 
-## <a name="android--android-enterprise-devices"></a>Dispositivi Android e Android Enterprise
+## <a name="android-knox-devices"></a>Dispositivi Android KNOX
 
 #### <a name="scep-certificates"></a>Certificati SCEP
 
@@ -177,6 +177,10 @@ Questo articolo illustra alcuni scenari comuni e l'impatto sui certificati SCEP 
   - L'amministratore modifica o aggiorna il profilo PKCS
   - Il profilo di configurazione viene rimosso dall'assegnazione del gruppo
   - I criteri di conformità vengono rimossi dall'assegnazione del gruppo 
+  
+  
+> [!NOTE]
+> I dispositivi Android for Work non vengono convalidati per gli scenari precedenti. I dispositivi Android legacy, ovvero i dispositivi non Samsung e i dispositivi con un profilo non Work, non sono abilitati per la rimozione di certificati. 
 
 ## <a name="macos-certificates"></a>Certificati macOS
 

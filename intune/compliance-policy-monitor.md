@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c103049d22c9834ecb01065686e8678144c9cae
-ms.sourcegitcommit: 8a22afcc8c7479c437c8c66da9cb2117890f0ab0
+ms.openlocfilehash: 8711b4c71c3581bde9ed1de8a5cc02f6b1a07ca7
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410364"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576903"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -88,9 +88,7 @@ Vengono visualizzati altri dettagli sui dispositivi in tale stato, tra cui la pi
 
 ![Immagine del dashboard che visualizza altri dettagli sul dispositivo nello stato specifico](./media/compliance-policy-monitor/drill-down-details.png)
 
-Per visualizzare tutti i dispositivi di proprietà di un utente specifico, è possibile filtrare il report grafico digitando l'indirizzo di posta elettronica dell'utente:
-
-![Filtrare in base all'indirizzo di posta elettronica per visualizzare tutti i dispositivi di un utente specifico](./media/compliance-policy-monitor/idc-3.png)
+Per visualizzare tutti i dispositivi di proprietà di un utente specifico, è anche possibile filtrare il report grafico digitando l'indirizzo di posta elettronica dell'utente.
 
 #### <a name="filter-and-columns"></a>Filtro e colonne
 

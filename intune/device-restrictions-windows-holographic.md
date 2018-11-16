@@ -1,6 +1,6 @@
 ---
 title: Restrizioni dei dispositivi per Windows Holographic for Business in Microsoft Intune - Azure | Microsoft Docs
-description: Conoscere e configurare impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune per Windows Holographic for Business, tra cui annullamento della registrazione, georilevazione, password, installazione di app dall'App store, cookie e popup in Microsoft Edge, Windows Defender, ricerca, cloud e archiviazione, connettività bluetooth, ora di sistema e dati di utilizzo in Azure.
+description: Conoscere e configurare impostazioni relative alle restrizioni dei dispositivi in Microsoft Intune per Windows Holographic for Business, tra cui annullamento della registrazione, georilevazione, password, installazione di app dall'App Store, cookie e popup in Microsoft Edge, Windows Defender, ricerca, cloud e archiviazione, connettività bluetooth, orario di sistema e dati di utilizzo in Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321755"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576801"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Impostazioni relative alle restrizioni dei dispositivi per Windows Holographic for Business in Intune
 
@@ -41,17 +41,17 @@ Le impostazioni seguenti relative alle restrizioni dei dispositivi sono supporta
 -   **Installazione di app attendibile**: consente il trasferimento locale delle app con certificato attendibile.
 -   **Sblocco dallo sviluppatore**: consente la modifica delle impostazioni da parte degli sviluppatori Windows, ad esempio consentire all'utente finale di modificare le app trasferite localmente.
 
-## <a name="edge-browser"></a>Browser Microsoft Edge
+## <a name="microsoft-edge-browser"></a>Browser Microsoft Edge
 
 -   **Cookie** - Consente al browser di salvare i cookie di Internet per il dispositivo.
 -   **Pop-up**: blocca le finestra popup del browser (si applica solo a Windows 10 Desktop).
 -   **Suggerimenti per la ricerca** - Consente al motore di ricerca di suggerire siti mentre si digita la frase di ricerca.
--   **Strumento per la gestione delle password** - Abilita o disabilita la funzione di gestione password di Microsoft Edge.
-- **Invia intestazioni DNT (Do Not Track)** - Configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.
+-   **Strumento per la gestione delle password**: abilita o disabilita la funzione di gestione password di Microsoft Edge.
+- **Invia intestazioni DNT (Do Not Track)**: configura il browser Microsoft Edge in modo che invii intestazioni Do Not Track ai siti Web visitati dagli utenti.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
-- **SmartScreen per Microsoft Edge**: abilita SmartScreen di Edge per l'accesso al sito e i download di file.
+- **SmartScreen for Microsoft Edge** (SmartScreen per Microsoft Edge): abilita SmartScreen di Microsoft Edge per l'accesso a siti e download di file.
 
 ## <a name="search"></a>Cerca
 - **Cerca la posizione**: specifica se la ricerca può usare le informazioni sulla posizione. Informazioni su

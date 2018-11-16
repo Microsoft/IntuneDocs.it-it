@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
-ms.openlocfilehash: fb88f703048eaa122bb406d8adb1fc9face764c4
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: ffc1f0140f98b17e060df3308af779ddcb77549e
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410753"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510925"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Guida introduttiva: creare un utente e assegnargli una licenza
 
@@ -61,7 +61,9 @@ Se l'utente non è più necessario, è possibile eliminarlo. Passare al [portale
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa guida introduttiva è stato creato un utente a cui è stata assegnata una licenza. È ora possibile assegnare tale utente a un gruppo.
+In questa guida introduttiva è stato creato un utente a cui è stata assegnata una licenza. Per altre informazioni sull'aggiunta di utenti a Intune, vedere [Aggiungere utenti e concedere autorizzazioni amministrative a Intune](users-add.md).
+
+Per seguire questa serie di guide introduttive di Intune, continuare con la guida introduttiva che segue.
 
 > [!div class="nextstepaction"]
-> [Creare un gruppo](quickstart-create-group.md)
+> [Guida introduttiva: Creare un gruppo per gestire gli utenti](quickstart-create-group.md)

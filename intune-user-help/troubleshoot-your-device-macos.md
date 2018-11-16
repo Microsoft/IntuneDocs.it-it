@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 003bf4046a997e3633105e4dc41c93a82e16ee40
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
+ms.openlocfilehash: 17b99c4a089fc426ecfeea803737fa8704f3b0a6
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505717"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212309"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>Risolvere problemi comuni con il dispositivo macOS
 
@@ -33,3 +33,6 @@ Risolvere problemi comuni di macOS che si verificano durante e dopo la registraz
 - [Il dispositivo gestito da Jamf non è conforme](device-little-different-jamf.md)
 - [Trovare il numero di serie del dispositivo](how-do-i-find-the-serial-number-on-my-device-macos.md)
 - [È necessario identificare il dispositivo](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [Si verifica un errore durante la registrazione di una macchina virtuale macOS](unable-to-get-macOS-device-managed.md)  
+- [Viene visualizzato un messaggio che indica che il numero di serie del dispositivo macOS presenta restrizioni](unable-to-get-macOS-device-managed.md)  
+- [Il dispositivo potrebbe essere già assegnato a un altro utente](unable-to-get-macOS-device-managed.md)  

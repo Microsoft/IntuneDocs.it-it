@@ -14,12 +14,12 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 68cc4bb576f567787e702ccd88026579b6ed5b12
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: d2531cc203c5c2b255378e836099feb0a9216d45
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425309"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298123"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Binding Xamarin per Microsoft Intune App SDK
 
@@ -64,17 +64,22 @@ L'SDK si basa su [ADAL](https://azure.microsoft.com/documentation/articles/activ
       ```csharp
       using Microsoft.Intune.MAM;
       ```
-4. Per iniziare a ricevere i criteri di protezione delle app, è necessario registrare l'app nel servizio MAM di Intune. Se l'app usa già la libreria ADAL (Azure Active Directory Authentication Library) per l'autenticazione degli utenti, l'app deve fornire l'UPN dell'utente al metodo registerAndEnrollAccount di IntuneMAMEnrollmentManager dopo che è stato autenticato:
-      ```csharp
-      IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
-      ```
-      **Importante**: assicurarsi di sostituire le impostazioni predefinite per la libreria ADAL di Intune App SDK con quelle dell'app. È possibile farlo tramite il dizionario IntuneMAMSettings nel file Info.plist dell'app, come indicato nel [Manuale dello sviluppatore di Intune App SDK per iOS](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk) oppure è possibile usare le proprietà di sostituzione AAD dell'istanza IntuneMAMPolicyManager. L'approccio che prevede il file Info.plist è consigliato per applicazioni con impostazioni ADAL statiche, mentre le proprietà di sostituzione sono consigliate per le applicazioni che determinano questi valori in fase di esecuzione. 
-      
-      Se l'app non usa ADAL e si vuole gestire l'autenticazione con Intune SDK, l'app deve chiamare il metodo loginAndEnrollAccount di IntuneMAMEnrollmentManager:
+4. Per iniziare a ricevere i criteri di protezione delle app, è necessario registrare l'app nel servizio MAM di Intune. Se l'app non usa [Azure Active Directory Authentication Library](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) (ADAL) o [Microsoft Authentication Library](https://www.nuget.org/packages/Microsoft.Identity.Client) (MSAL) per l'autenticazione degli utenti e si vuole che l'autenticazione venga gestita da Intune SDK, è necessario che l'app fornisca l'UPN dell'utente al metodo LoginAndEnrollAccount di IntuneMAMEnrollmentManager:
       ```csharp
        IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
       ```
+      Se al momento della chiamata l'UPN dell'utente non è noto, è possibile che le app passino un valore Null. In questo caso verrà richiesto agli utenti di immettere l'indirizzo di posta elettronica e la password.
       
+      Se l'app usa già ADAL o MSAL per l'autenticazione degli utenti, è possibile configurare un accesso Single Sign-On (SSO) tra l'app e Intune SDK. Innanzitutto, sarà necessario configurare ADAL/MSAL per archiviare i token nello stesso gruppo di accesso keychain usato dai binding Intune Xamarin per iOS (com.microsoft.adalcache). Per ADAL, è possibile eseguire questa operazione [impostando la proprietà KeychainSecurityGroup di AuthenticationContext](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Token-cache-serialization#enable-token-cache-sharing-across-ios-applications). Per MSAL, è necessario [impostare la proprietà KeychainSecurityGroup di PublicClientApplication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/msal-net-2-released#you-can-now-enable-sso-between-adal-and-msal-apps-on-xamarinios). Successivamente sarà necessario eseguire l'override delle impostazioni di AAD predefinite usate da Intune SDK con quelle dell'app. È possibile farlo tramite il dizionario IntuneMAMSettings nel file Info.plist dell'app, come indicato nel [Manuale dello sviluppatore di Intune App SDK per iOS](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk) oppure è possibile usare le proprietà di sostituzione AAD dell'istanza IntuneMAMPolicyManager. L'approccio che prevede il file Info.plist è consigliato per applicazioni con impostazioni ADAL statiche, mentre le proprietà di sostituzione sono consigliate per le applicazioni che determinano questi valori in fase di esecuzione. Dopo aver configurato tutte le impostazioni SSO, l'app dovrebbe fornire l'UPN dell'utente al metodo RegisterAndEnrollAccount di IntuneMAMEnrollmentManager dopo essere stata autenticata:
+      ```csharp
+      IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
+      ```
+      Le app possono determinare il risultato di un tentativo di registrazione implementando il metodo EnrollmentRequestWithStatus in una sottoclasse di IntuneMAMEnrollmentDelegate e impostando la proprietà Delegate di IntuneMAMEnrollmentManager su un'istanza della classe. Per un esempio, vedere l'[applicazione Xamarin.iOS di esempio](https://github.com/msintuneappsdk/sample-intune-xamarin-ios).
+
+      Dopo aver eseguito la registrazione, le app possono determinare l'UPN dell'account registrato (se precedentemente sconosciuto) eseguendo una query nella proprietà seguente: 
+      ```csharp
+       string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
+      ```      
 > [!NOTE] 
 > Non è disponibile alcun remapper per iOS. L'integrazione in un'app Xamarin.Forms deve essere identica a quella di un progetto Xamarin.iOS regolare. 
 

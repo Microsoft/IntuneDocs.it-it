@@ -14,12 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cc378a4f484852d84943b4d1094b71df5b7a530d
-ms.sourcegitcommit: 006fa8dd4d605e2873fba6e3a965ef794d6f3764
+ms.openlocfilehash: 1a7c7ebca1c6472b58021a57b1b4a59fc42966b0
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945485"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576954"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Impostazioni di Endpoint Protection per Windows 10 e versioni successive in Intune
 
@@ -98,7 +98,7 @@ Queste impostazioni sono applicabili a tipi di rete specifici, tra cui **Rete di
 
 ## <a name="windows-defender-smartscreen-settings"></a>Impostazioni di Windows Defender SmartScreen
 
-Supportate nelle seguenti edizioni di Windows 10 con Microsoft Edge installato:
+Supportato nelle edizioni di Windows 10 seguenti con Microsoft Edge installato:
 - Home
 - Professional
 - Business
