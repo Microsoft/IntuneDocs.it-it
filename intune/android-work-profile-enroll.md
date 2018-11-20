@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: a38c5db1e608cb5d9a047dc72ee9109e840096e0
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255088"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618991"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Configurare la registrazione dei dispositivi del profilo di lavoro Android
 
@@ -56,5 +56,5 @@ Seguire questa procedura per approvare l'app Portale aziendale Intune:
 5.  Selezionare **Keep approved when app requests new permissions** (Mantieni approvazione quando l'app richiede nuove autorizzazioni) e quindi fare clic su **Salva**.
 
 ## <a name="next-steps-for-android-work-profiles"></a>Passaggi successivi per i profili di lavoro Android
-- [Distribuire app del profilo di lavoro Android](store-apps-android.md)
+- [Distribuire app del profilo di lavoro Android](apps-add-android-for-work.md)
 - [Aggiungere criteri di configurazione del profilo di lavoro Android](device-profiles.md)
