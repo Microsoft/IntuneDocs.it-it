@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 00f660d2ac228fbebe218c53482d00e59f09ce56
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236153"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947327"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integrazione del controllo di accesso alla rete (NAC) con Intune
 
@@ -59,14 +59,23 @@ L'elenco seguente è una panoramica del funzionamento dell'integrazione di NAC c
 8. Dopo che il dispositivo è registrato e conforme, la soluzione partner NAC Ottiene lo stato da Intune.
 9. La connessione viene stabilita correttamente e consente al dispositivo di accedere alle risorse aziendali.
 
-## <a name="use-nac-on-your-ios-devices"></a>Usare NAC nei dispositivi iOS
+## <a name="use-nac-for-vpn-on-your-ios-devices"></a>Usare il controllo accesso alla rete per VPN nei dispositivi iOS  
+Il controllo accesso alla rete per Cisco Legacy AnyConnect, F5 Access Legacy e Citrix VPN è supportato senza che sia necessario abilitare il controllo accesso alla rete nel profilo VPN.
 
-Il controllo dell'accesso di rete non è attualmente supportato per i client VPN seguenti in iOS:
+È supportato anche il controllo accesso alla rete per Citrix SSO. Per abilitare il controllo accesso alla rete per Citrix SSO per iOS:
+- Usare Citrix Gateway 12.0.59 o versione successiva.  
+- Gli utenti devono avere installato Citrix SSO 1.1.6 o versione successiva.
+- [Integrare NetScaler con Intune per il controllo accesso alla rete](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) come descritto nella documentazione del prodotto Citrix.
+- Nella configurazione delle impostazioni VPN di base, per **Abilita il controllo accesso alla rete** selezionare la casella di controllo **Accetto**.
+
+Quando si usa Citrix SSO per iOS, la connessione VPN viene interrotta ogni 24 ore per motivi di sicurezza. La VPN può essere riconnessa immediatamente.
+
+
+**Il controllo accesso alla rete non è attualmente supportato per i client VPN seguenti in iOS**:
 -   Cisco AnyConnect
 -   F5 Access
--   Citrix SSO  
 
-Stiamo collaborando con i partner per rilasciare una soluzione NAC per i client più recenti. Quando le soluzioni saranno pronte, questo articolo verrà aggiornato con dettagli aggiuntivi. 
+Stiamo collaborando con i partner per rilasciare una soluzione di controllo accesso alla rete per i client più recenti. Quando le soluzioni saranno pronte, questo articolo verrà aggiornato con dettagli aggiuntivi. 
 
 
 ## <a name="next-steps"></a>Passaggi successivi

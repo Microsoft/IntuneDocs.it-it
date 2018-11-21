@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d44b7483d65eeb7b2a39783fb113c444184db4f3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: b1e07bd67d4bf8b776500be01571deddb1e5e58f
+ms.sourcegitcommit: 630dfe1413c1819f35aa941ffc888a7084771a55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232223"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51709139"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Creare criteri di accesso condizionale per Exchange locale ed Exchange Online dedicato legacy
 
@@ -66,7 +66,7 @@ Prima di configurare l'accesso condizionale, verificare quanto segue:
 - Client di posta EAS - **Dispositivi del profilo di lavoro Android:** per i dispositivi del profilo di lavoro Android sono supportati solo **Gmail** e **Nine Work for Android Enterprise** nel **profilo di lavoro**. Perché l'accesso condizionale funzioni nei profili di lavoro Android, è necessario distribuire un profilo di posta elettronica per l'app Gmail o Nine Work for Android Enterprise. È anche necessario distribuire tali applicazioni come installazioni obbligatorie.
 
 > [!NOTE]
-> L'app Microsoft Outlook per Android e iOS non è supportata. 
+> Microsoft Outlook per Android e iOS non è supportato tramite il connettore Exchange locale. Se si vogliono usare i criteri di accesso condizionale di Azure Active Directory e i criteri di protezione delle app di Intune con Outlook per iOS e Android per le cassette postali in locale, vedere [Uso dell'autenticazione moderna ibrida con Outlook per iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
 
 ### <a name="support-for-pcs"></a>Supporto per PC
 
@@ -79,9 +79,9 @@ L'applicazione **Mail** nativa in Windows 8.1 e versioni successive (se registra
 
 1. Dopo l'accesso viene visualizzato il **dashboard di Azure**.
 
-1. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+1. Scegliere  **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
-1. Scegliere **Intune**. Verrà visualizzato il **dashboard di Intune**.
+1. Scegliere  **Intune**. Verrà visualizzato il **dashboard di Intune**.
 
 1. Scegliere **Accesso locale**. Il riquadro **Accesso locale** visualizza lo stato dei criteri di accesso condizionale e i dispositivi da esso interessati.
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c9e440aef7f434cbe675506fd6f22a9bd26b2c31
-ms.sourcegitcommit: 528d2bc70bfd25803a2d9f0fe9372c8a5f5e7dad
+ms.openlocfilehash: 457acdc212855767687f97f7d03b731f35afad46
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446821"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811530"
 ---
 # <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Funzionalità per metodo di registrazione per i dispositivi Windows
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "47446821"
 Intune consente di gestire i dispositivi e le app del personale, nonché la modalità di accesso ai dati dell'organizzazione da parte del personale stesso. È necessario che i dispositivi siano registrati nel servizio Intune. Esistono diversi metodi per registrare i dispositivi del personale. Ogni metodo presenta procedure consigliate e funzionalità diverse, come illustrato nelle tabelle seguenti.
 
 ## <a name="best-practices-by-enrollment-method"></a>Procedure consigliate per metodo di registrazione
-| **Procedure consigliate** | **[Aggiunto ad Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Aggiunto ad Azure AD con Autopilot](enrollment-autopilot.md)** |**[Bulk](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **Oggetto Criteri di gruppo** |
+| **Procedure consigliate** | **[Aggiunto ad Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Aggiunto ad Azure AD con Autopilot](enrollment-autopilot.md)** |**[Bulk](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[Oggetto Criteri di gruppo](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Usato comunemente in EDU|![X](media/xmark.png)|![Segno di spunta](media/checkmark.png)|![Segno di spunta](media/checkmark.png)|![Segno di spunta](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |I dispositivi possono essere condivisi|![X](media/xmark.png)|![X](media/xmark.png)|![Segno di spunta](media/checkmark.png)|![Segno di spunta](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
@@ -36,7 +36,7 @@ Intune consente di gestire i dispositivi e le app del personale, nonché la moda
 
 ## <a name="capabilities-by-enrollment-method"></a>Procedure consigliate per metodo di registrazione
 
-| **Funzionalità** | **[Aggiunto ad Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Aggiunto ad Azure AD con Autopilot](enrollment-autopilot.md)** |**[Bulk](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **Oggetto Criteri di gruppo** |
+| **Funzionalità** | **[Aggiunto ad Azure AD](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Aggiunto ad Azure AD con Autopilot](enrollment-autopilot.md)** |**[Bulk](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[Oggetto Criteri di gruppo](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Accesso condizionale                                      |![Segno di spunta](media/checkmark.png)|![Segno di spunta](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Segno di spunta](media/checkmark.png)|![Segno di spunta](media/checkmark.png)|
 |L'utente viene associato al dispositivo                    |![Segno di spunta](media/checkmark.png)|![Segno di spunta](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Segno di spunta](media/checkmark.png)|![Segno di spunta](media/checkmark.png)|
@@ -52,5 +52,5 @@ Intune consente di gestire i dispositivi e le app del personale, nonché la moda
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Opzioni di registrazione](enrollment-options.md)
+[Configurare la registrazione per Windows ](windows-enroll.md)
 

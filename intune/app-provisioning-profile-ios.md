@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fdfa89654df1f62979240f364c2e28b5a15e78f
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 6668848bcb381299417ca7a641e267c41f9a1e79
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058915"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167393"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Usare i profili di provisioning per le app iOS per impedire la scadenza delle app
 
@@ -49,7 +49,7 @@ L'amministratore può includere ed escludere gruppi di sicurezza per assegnare l
 3. Nel riquadro **Crea profilo** configurare i valori seguenti:
     - **Nome**: specificare un nome per il profilo di provisioning per dispositivi mobili.
     - **Descrizione**: (facoltativo) specificare una descrizione per il criterio.
-    - **Carica il file del profilo**: fare clic su **Importa** e quindi scegliere un file del profilo di configurazione per dispositivi mobili Apple, con estensione **mobileprovision**, scaricato dal sito Web Apple Developer.
+    - **Carica il file del profilo**: fare clic su **Importa** e quindi scegliere un file del profilo di configurazione per dispositivi mobili Apple, con estensione `.mobileprovision`, scaricato dal sito Web Apple Developer.
 4. Al termine, scegliere **Crea**.
 
 ## <a name="next-steps"></a>Passaggi successivi

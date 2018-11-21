@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5442b45ed180d10943dfd5d1a1ef1546d693b2b
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903421"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610108"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
@@ -58,7 +58,7 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
 6. Nella sezione **Gestisci** del menu selezionare **Assegnazioni**.
 7. Selezionare **Aggiungi gruppo** per aprire il riquadro **Aggiungi gruppo** relativo all'app.
 8. Per l'app specifica, selezionare un **tipo di assegnazione**:
-   - **Disponibile per i dispositivi registrati**: gli utenti installano l'app dall'app Portale aziendale o dal relativo sito Web.
+   - **Disponibile per i dispositivi registrati**: assegnare l'app ai gruppi di utenti che possono installare l'app dall'app Portale aziendale o dal sito Web.
    - **Disponibile con o senza registrazione**: assegnare questa app a gruppi di utenti i cui dispositivi non sono registrati con Intune. Le app della versione gestita di Google Play non supportano questa opzione. 
    - **Obbligatoria**: l'applicazione è installata nei dispositivi nei gruppi selezionati.
    - **Disinstalla**: l'applicazione è disinstallata dai dispositivi nei gruppi selezionati.

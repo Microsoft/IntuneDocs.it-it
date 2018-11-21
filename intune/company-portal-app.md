@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 6a249962c4ac75e51be082112b884a5825d4ef2a
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236289"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811513"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Come configurare l'app Portale aziendale di Microsoft Intune
 
@@ -29,7 +29,7 @@ ms.locfileid: "50236289"
 Il portale aziendale di Microsoft Intune è il punto in cui gli utenti possono accedere ai dati aziendali ed eseguire attività comuni quali la registrazione dei dispositivi, l'installazione di app e la ricerca delle informazioni di assistenza del reparto IT.        
 
 > [!Tip]        
-> Quando si personalizza il portale aziendale, le configurazioni vengono applicate sia al sito Web che alle app Portale aziendale.       
+> Quando si personalizza il portale aziendale, le configurazioni vengono applicate sia al sito Web che alle app Portale aziendale. Si noti che gli utenti devono avere una licenza di Intune assegnata per accedere al sito Web del portale aziendale.
 
 La personalizzazione del portale aziendale consente di offrire agli utenti finali un'esperienza familiare e utile. A tale scopo, dal carico di lavoro **App client** scegliere **Installazione** > **Personalizzazione del portale aziendale** e configurare le impostazioni richieste.  
 
@@ -48,7 +48,7 @@ I campi contrassegnati con un asterisco (*) sono obbligatori.
 | **URL dell'informativa sulla privacy** |     79     | È possibile indicare l'informativa sulla privacy della propria azienda che verrà visualizzata quando gli utenti fanno clic sui collegamenti relativi alla privacy dal portale aziendale. Immettere un URL valido nel formato `<https://www.contoso.com>`. |
 
 ## <a name="support-information"></a>Informazioni di supporto      
-Immettere le informazioni di supporto della società, in modo da garantire al dipendente un contatto per le domande relative a Intune.       
+Immettere le informazioni di supporto della società, in modo da garantire al dipendente un contatto per le domande relative a Intune.          
 
 |Nome del campo|Lunghezza massima|Altre informazioni|
 |---|---|---|
@@ -68,7 +68,7 @@ Immettere le informazioni di supporto della società, in modo da garantire al di
 
 |Nome del campo|Altre informazioni|
 |---|---|
-|**Select a standard color or enter a six-digit hex code** (Selezionare un colore standard o immettere un codice esadecimale a sei cifre)| Scegliere **Standard** per selezionare un colore. Scegliere **Personalizzato** per selezionare un colore specifico in base a un valore in formato esadecimale.|
+|**Select a standard color or enter a six-digit hex code** (Selezionare un colore standard o immettere un codice esadecimale a sei cifre)| Scegliere **Standard** per selezionare visivamente un colore. Scegliere **Personalizzato** per selezionare un colore specifico in base a un valore in formato esadecimale.|
 |**Choose theme color** (Scegliere il colore del tema)| Selezionare un colore del tema da applicare al portale aziendale. È possibile scegliere un colore standard o immettere un codice esadecimale specifico. |
 |**Display** (Schermo)| Specificare se visualizzare il **logo e il nome della società**, **solo il logo della società** o solo il **nome della società**. |
 |**Upload your company logo** (Carica il logo della società)|È possibile caricare il logo della società da visualizzare nel portale aziendale. Si noti che il colore del testo viene selezionato automaticamente per offrire il massimo livello di contrasto. Per assicurare un aspetto ottimale, caricare un logo con uno sfondo trasparente.<p><ul><li>Dimensioni massime immagine: 400 px x 400px</li><li>Dimensioni massime file: 750 KB</li><li>Tipo di file: PNG, JPG o JPEG</li></ul>|
@@ -84,24 +84,33 @@ Scegliere un logo adatto a sfondi bianchi o chiari.
 
 ### <a name="brand-image-for-company-portal"></a>Immagine del marchio per il portale aziendale
 
-Visualizzare un'immagine del marchio che rifletta il marchio della società. Il supporto di un'immagine del marchio verrà aggiunto alle app del portale aziendale, ma potrebbe non essere visibile in tutte le piattaforme.
+Visualizzare un'immagine del marchio che rifletta il marchio della società. Dopo aver salvato le modifiche è possibile scegliere **Visualizzare l'anteprima delle impostazioni nel portale Web di Intune** nella parte superiore del pannello per visualizzare come appaiono le configurazioni. Si noti che l'immagine del marchio può essere visualizzata in anteprima solo in un dispositivo iOS e non nel portale Web di Intune. 
 
 |Nome del campo|Altre informazioni|
 |---|---|
-|**Upload your brand image** (Caricare immagine del marchio)| Questa opzione è disponibile per consentire di visualizzare un'immagine di sfondo nella pagina del profilo dell'utente nell'app del portale aziendale.<p><ul><li>Larghezza immagine consigliata: maggiore di 1125 px, ma non minore di 640 px</li><li>Dimensioni massime immagine: 1,3 MB</li><li>Tipo di file: PNG, JPG o JPEG</li></ul>|
+|**Upload your brand image** (Caricare immagine del marchio)| Questa opzione è disponibile per consentire di visualizzare un'immagine di sfondo nella pagina del profilo dell'utente nell'app del portale aziendale.<p>*Nota*: l'immagine potrebbe essere visualizzata in modo diverso per piattaforme diverse.<p><ul><li>Larghezza immagine consigliata: maggiore di 1125 px, ma non minore di 640 px</li><li>Dimensioni massime immagine: 1,3 MB</li><li>Tipo di file: PNG, JPG o JPEG</li></ul>|
 
 L'immagine del marchio può migliorare la fiducia dell'utente nel portale aziendale presentando un forte senso di marchio della società. Di seguito sono riportati alcuni suggerimenti che è possibile prendere in considerazione per l'acquisizione, la scelta e l'ottimizzazione dell'immagine per il portale aziendale. 
 
 - Rivolgersi al reparto marketing o pubblicità. È possibile che il reparto abbia già a disposizione un set di immagini del marchio approvate. Il reparto può anche aiutare l'utente ad adattare le immagini alle esigenze specifiche. 
 
-- Prendere in considerazione sia la composizione verticale che quella orizzontale. L'immagine deve avere uno sfondo sufficiente che circonda il punto focale. L'immagine può essere ritagliata in diversi modi in base alle dimensioni del dispositivo e all'orientamento. 
+- Prendere in considerazione sia la composizione verticale che quella orizzontale. L'immagine deve avere uno sfondo sufficiente che circonda il punto focale. L'immagine può essere ritagliata in diversi modi in base alle dimensioni del dispositivo, all'orientamento e alla piattaforma. 
 
 - Evitare di usare un'immagine generica. L'immagine deve riflettere il marchio della società ed essere familiare agli utenti. Se non è disponibile alcuna immagine, è preferibile non usare un'immagine generica che non ha alcun significato per l'utente. 
 
 - Rimuovere i metadati non necessari. Il file di immagine può includere i metadati, ad esempio il profilo della fotocamera, la posizione geografica, il titolo, il sottotitolo e così via. Usare uno strumento di ottimizzazione delle immagini per rimuovere queste informazioni per mantenere la qualità e rispettare il limite di dimensione del file. 
 
-Dopo aver salvato le modifiche è possibile scegliere **Visualizzare l'anteprima delle impostazioni nel portale Web di Intune** nella parte superiore del pannello per visualizzare come appaiono le configurazioni. Si noti che l'immagine del marchio può essere visualizzata in anteprima solo in un dispositivo iOS e non nel portale Web di Intune. 
+Dopo l'aggiunta o la modifica di un'immagine del marchio in Intune, l'utente finale potrebbe non vedere la modifica nei dispositivi iOS fino a quando il portale aziendale non riconosce la modifica all'avvio e viene quindi riavviato per visualizzare l'immagine del marchio. 
 
+### <a name="brand-image-examples"></a>Esempi di immagini di marchio
+
+L'immagine seguente mostra un esempio di immagine del marchio per iPad:
+
+![Screenshot dell'immagine del marchio per iPad di esempio](media/company-portal-app/company-portal-app-03.png)
+
+L'immagine seguente mostra un esempio di immagine del marchio iPhone:
+
+![Screenshot dell'immagine del marchio per iPhone di esempio](media/company-portal-app/company-portal-app-02.png)
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Tasti di scelta rapida del portale aziendale di Windows
 
@@ -125,6 +134,10 @@ I tasti di scelta rapida seguenti sono disponibili nell'app Portale aziendale di
 |  | Remove | CTRL+D o CANC |
 |  | Verifica l'accesso | CTRL+M o F9 |
 | Dettagli dell'app | Installare | CTRL+I |
+
+Gli utenti finali potranno anche visualizzare i tasti di scelta rapida disponibili nell'app Portale aziendale di Windows.
+
+![Schermata dei tasti di scelta rapida disponibili nell'app Portale aziendale di Windows](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

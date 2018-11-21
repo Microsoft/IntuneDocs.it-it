@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d510596f021725292c7221e3056986c2c3fc93c
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: d7ff5a63b6afb619fbbe762d23208c1058e99943
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410787"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610142"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi usando un account del manager di registrazione dispositivi
 
@@ -34,7 +34,7 @@ Gli account utente di tipo manager di registrazione dispositivi e i dispositivi 
   - Visualizzazione del solo dispositivo locale nell'app o nel sito Web del portale aziendale.
   - Gli account utente di manager di registrazione dispositivi non possono usare le app Volume Purchase Program (VPP) di Apple con licenze utente VPP Apple poiché è necessario un ID Apple per utente per la gestione delle app.
   - I dispositivi possono installare le app VPP se sono dotati delle licenze dispositivo VPP Apple.
-  
+  - I dispositivi sono bloccati per l'accesso condizionale ad eccezione di Windows 10 1803+
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Aggiungere un manager di registrazione dispositivi

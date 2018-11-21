@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187802"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610091"
 ---
 # <a name="see-device-details-in-intune"></a>Visualizzare i dettagli del dispositivo in Intune
 
@@ -45,7 +45,7 @@ Questo articolo illustra come visualizzare tutti i dispositivi e le relative pro
      - Avviare una sessione di assistenza remota
    - Usare **Proprietà** per assegnare una [categoria del dispositivo creata](device-group-mapping.md) e modificare la proprietà del dispositivo scegliendo dispositivo personale o dispositivo aziendale.
    - **Hardware** include molte informazioni sul dispositivo, come l'ID del dispositivo, il sistema operativo e la versione, lo spazio di archiviazione, il modello e il produttore, le impostazioni di accesso condizionale e altro.
-   - **App individuate** visualizza un elenco di tutte le app installate nel dispositivo individuate da Intune con relativa versione. È anche possibile **esportare** l'elenco di app in un file CSV.
+   - **App individuate** visualizza un elenco di tutte le app installate nel dispositivo individuate da Intune con relativa versione. È anche possibile **esportare** l'elenco di app in un file CSV. Questo elenco viene aggiornato ogni 7 giorni.
    - **Conformità del dispositivo** elenca tutti i criteri di conformità assegnati e indica se il dispositivo è conforme o non conforme.
    - **Configurazione del dispositivo** riporta tutti i criteri di configurazione assegnati al dispositivo e indica se il criterio è riuscito o meno.
 
@@ -60,8 +60,10 @@ Intune raccoglie un elenco di app solo nei dispositivi di proprietà dell'aziend
 |iOS|Solo le app gestite|Tutte le app installate nel dispositivo|
 |macOS|Tutte le app installate nel dispositivo|Tutte le app installate nel dispositivo|  
 |Android|Solo le app gestite|Tutte le app installate nel dispositivo|  
+|Android Enterprise|Solo le app gestite|Solo le app installate nel profilo di lavoro|  
 
 ## <a name="hardware-device-details"></a>Dettagli dispositivo hardware
+A seconda del gestore telefonico usato dai dispositivi, è possibile che non vengano raccolti tuti i dettagli
 
 |Dettagli|Descrizione|Piattaforma| 
 |--------------|----------------------|----|  

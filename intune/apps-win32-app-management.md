@@ -1,10 +1,27 @@
 ---
-title: Aggiungere app Win32 a Microsoft Intune titlesuffix: description: Informazioni su come aggiungere, distribuire e gestire app Win32 con Microsoft Intune. Questo argomento offre una panoramica delle funzionalità di distribuzione e gestione delle app Win32 di Intune, nonché informazioni sulla risoluzione dei problemi delle app Win32. keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-
-ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
+title: Aggiungere app Win32 a Microsoft Intune
+titlesuffix: ''
+description: Informazioni su come aggiungere, distribuire e gestire app Win32 con Microsoft Intune. Questo argomento offre una panoramica delle funzionalità di distribuzione e gestione delle app Win32 di Intune, nonché informazioni sulla risoluzione dei problemi delle app Win32.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
+ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830118"
 ---
-
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune autonomo - Gestione di app Win32 (anteprima pubblica)
 
 Intune autonomo consentirà maggiori funzionalità di gestione delle app Win32. Anche se per i clienti connessi al cloud è possibile usare Configuration Manager per la gestione delle app Win32, i clienti solo di Intune avranno maggiori funzionalità di gestione per le app line-of-business Win32. Questo argomento offre una panoramica della funzionalità di gestione delle app Win32 di Intune e informazioni sulla risoluzione dei problemi.
@@ -43,6 +60,13 @@ Usare lo [strumento di preparazione per il caricamento delle app Win32 di Micros
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    Questo comando mostrerà le informazioni di utilizzo per lo strumento.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Questo comando genererà il file `.intunewin` dalla cartella di origine e dal file di installazione specificati. Per il file di installazione MSI, questo strumento recupererà le informazioni necessarie per Intune. Se è specificato `-q`, il comando verrà eseguito in modalità non interattiva e se il file di output esiste già, verrà sovrascritto. Inoltre, se la cartella di output non esiste, verrà creata automaticamente.    |
+
+Durante la generazione di un file con estensione *intunewin*, inserire gli eventuali file a cui è necessario fare riferimento in una sottocartella della cartella di installazione. Usare quindi un percorso relativo per fare riferimento al file specifico necessario. Ad esempio:
+
+**Cartella di origine dell'installazione:** *c:\testapp\v1.0*<br>
+**File di licenza:** *c:\testapp\v1.0\licenses\license.txt*
+
+Fare riferimento al file *license.txt* usando il percorso relativo *licenses\license.txt*.
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Creare, assegnare e monitorare un'app Win32
 

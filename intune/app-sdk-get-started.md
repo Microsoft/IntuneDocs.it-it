@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: a8cbe80154e5eac6a48c86101c76faed4602288a
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 3362de6231aa8b045d064d1f3764cb2b13f5be3c
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915717"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167434"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
@@ -106,9 +106,6 @@ Microsoft Intune raccoglie i dati sulle statistiche di utilizzo dell'app.
 
     * Se l'utente finale sceglie di non inviare questi dati, deve disattivare la telemetria in Impostazioni nell'app Portale aziendale. Per altre informazioni, vedere [Disattivare la raccolta dati di utilizzo di Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
-
- Il numero di versione delle app line-of-business iOS e Android è visibile <!-- 1380712 -->
-
 ## <a name="line-of-business-app-version-numbers"></a>Numeri di versione di app line-of-business
 
 Nelle app line-of-business in Intune viene ora visualizzato il numero di versione per le app iOS e Android. Il numero viene visualizzato nel portale di Azure nell'elenco delle app e nel pannello della panoramica dell'app. Gli utenti finali possono visualizzare il numero dell'app nell'app Portale aziendale e nel portale Web.
@@ -164,6 +161,23 @@ Dopo aver completato i passaggi necessari per integrare l'app per iOS o Android 
 * **Criteri di protezione delle app di Intune**: per testare l'app con tutti i criteri di protezione delle app di Intune, è necessario conoscere il comportamento previsto per ogni impostazione dei criteri. Vedere le descrizioni dei [criteri di protezione delle app iOS](app-protection-policy-settings-ios.md) e dei [criteri di protezione delle app Android](app-protection-policy-settings-android.md).
 
 * **Risoluzione dei problemi**: se si verificano problemi durante i test manuali dell'esperienza utente di installazione dell'app, vedere [Risolvere i problemi di installazione delle app](troubleshoot-app-install.md). 
+
+### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Concedere all'app l'accesso al servizio di protezione delle app di Intune (facoltativo)
+
+Se l'app usa impostazioni personalizzate di Azure Active Directory (AAD) per l'autenticazione, è necessario seguire questa procedura sia per le app dello Store pubbliche che per le app LOB interne. La procedura **non è necessaria se l'app usa l'ID client predefinito di Intune SDK**. 
+
+Dopo aver registrato l'app all'interno di un tenant di Azure e quando viene visualizzata in **Tutte le applicazioni**, è necessario assegnare all'app l'accesso al servizio di protezione delle app di Intune (precedentemente noto come servizio MAM). Nel portale di Azure:
+
+1.  Accedere al pannello **Azure Active Directory**.
+2.  Selezionare la voce **Registrazione app** per l'applicazione.
+3.  In **Impostazioni**, sotto l'intestazione **Accesso all'API**, selezionare **Autorizzazioni necessarie**. 
+4.  Fare clic su **+ Aggiungi**.
+5.  Fare clic su **Selezionare un'API**. 
+6.  Nella casella di ricerca immettere **Microsoft Mobile Application Management**.
+7.  Selezionare **Microsoft Mobile Application Management** nell'elenco delle API e fare clic su Seleziona.
+8.  Selezionare **Read and Write the User’s App Management Data** (Leggere e scrivere i dati di gestione delle app dell'utente).
+9.  Fare clic su **Fine**.
+10. Fare clic su **Concedi autorizzazioni** e su **Sì**. 
 
 ### <a name="badge-your-app-optional"></a>Aggiungere il logo all'app (facoltativo)
 
