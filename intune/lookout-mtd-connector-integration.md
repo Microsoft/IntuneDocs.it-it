@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232182"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181048"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurare l'integrazione di Lookout Mobile Threat Defense con Intune
 
@@ -50,11 +51,11 @@ Il tenant di Lookout Mobility Endpoint Security verrà associato alla sottoscriz
 
 Usare la procedura seguente per raccogliere le informazioni che dovranno essere fornite al team di supporto tecnico di Lookout.
 
-1. Accedere al [Portale di Azure](https://portal.azure.com) e selezionare la sottoscrizione. 
+1. Accedere al [Portale di Azure](https://portal.azure.com) e selezionare la sottoscrizione. 
 
-2. Quando si sceglie il nome della sottoscrizione, l'URL risultante include l'ID sottoscrizione.  Se risulta problematico trovare l'ID sottoscrizione, questo [articolo del supporto tecnico Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) include suggerimenti per trovare l'ID sottoscrizione.
+2. Quando si sceglie il nome della sottoscrizione, l'URL risultante include l'ID sottoscrizione.  Se risulta problematico trovare l'ID sottoscrizione, questo [articolo del supporto tecnico Microsoft](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) include suggerimenti per trovare l'ID sottoscrizione.
 
-3. Trovare l'ID gruppo di Azure AD. La console di Lookout supporta 2 livelli di accesso:  
+3. Trovare l'ID gruppo di Azure AD. La console di Lookout supporta 2 livelli di accesso:  
    * **Accesso completo:** l'amministratore di Azure AD può creare un gruppo per gli utenti con accesso completo e, facoltativamente, creare un gruppo per gli utenti con accesso limitato.  Solo gli utenti di questi gruppi saranno in grado di accedere alla **console di Lookout**.
    * **Accesso limitato:** gli utenti in questo gruppo non avranno alcun accesso a diversi moduli correlati alla configurazione e alla registrazione della console di Lookout e avranno accesso in sola lettura al modulo **Security Policy** (Criteri di sicurezza) della console di Lookout.  
 

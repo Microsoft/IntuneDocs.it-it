@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 04834f21e5fd2f6ed0f7454988936397d3249987
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 849e3feed23b46585f9b737cb0ee91ecdf47ecae
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37904969"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186138"
 ---
 # <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>Impostazioni del profilo di posta elettronica per i dispositivi che eseguono Windows 10 - Intune
 
@@ -54,7 +55,7 @@ Usare le impostazioni del profilo di posta elettronica per configurare i disposi
 
 - **Tipo di contenuto da sincronizzare**: selezionare i tipi di contenuto da sincronizzare nei dispositivi da:
   - **Contatti**
-  - **Calendario**
+  - **Calendarioio**
   - **Attività**
 
 ## <a name="next-steps"></a>Passaggi successivi

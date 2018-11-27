@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864592"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186495"
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -34,11 +35,11 @@ La progettazione di Intune è basata sulle informazioni raccolte e sulle decisio
 
 -   Considerazioni sulle piattaforme per i dispositivi
 
--   Requisiti da soddisfare  
+-   Requisiti da soddisfare  
 
 Anche se i requisiti dell'infrastruttura locale sono minimi, definire un piano di progettazione è comunque utile per essere certi di disporre della soluzione di gestione dei dispositivi mobili più adatta per gli scopi, gli obiettivi e i requisiti dell'organizzazione.
 
-Esaminiamo ognuna di queste aree più in dettaglio. 
+Esaminiamo ognuna di queste aree più in dettaglio. 
 
 ## <a name="record-your-current-environment"></a>Registrare l'ambiente corrente
 Inoltre, spesso vengono apportate modifiche di progettazione durante le fasi di implementazione e di test. Usare il piano di progettazione per documentare queste modifiche e le motivazioni corrispondenti.

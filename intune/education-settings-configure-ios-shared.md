@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 932feb064552e05536821d0e75e27059387bcf56
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029809"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181225"
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Come configurare le impostazioni relative all'istruzione di Intune per i dispositivi iPad condivisi
 
@@ -183,7 +184,7 @@ Il dispositivo è ora associato alla categoria del dispositivo. Ripetere questo 
 5. Nel riquadro dei profili scegliere **Crea profilo**.
 6. Nel riquadro **Crea l'associazione** immettere un **Nome** e una **Descrizione**.
 7. Scegliere **Seleziona classi** > **Configura** per associare i gruppi al profilo del carrello.
-8. Scegliere le classi da includere nel profilo del carrello e quindi scegliere **Selezione**. 
+8. Scegliere le classi da includere nel profilo del carrello e quindi scegliere **Selezione**. 
 9. Scegliere **Seleziona carrelli** > **Configura** per associare i gruppi al profilo del carrello.
 10. Scegliere i gruppi da includere nel profilo del carrello e quindi scegliere **Selezione**.
 11. Nel riquadro **Crea l'associazione** scegliere **Salva** per salvare il profilo del carrello.
@@ -198,7 +199,7 @@ Il profilo viene creato e visualizzato nel riquadro dell'elenco dei profili.
 4. Nel riquadro **Configurazione del dispositivo** scegliere **Monitoraggio** > **Stato assegnazione**.
 5. Nel riquadro **Stato assegnazione** selezionare il **Profilo del carrello** creato.
 6. Nel riquadro **Profili del carrello** scegliere **Assegnazioni** e quindi in **Includi** scegliere **Selezionare i gruppi da includere**.
-7. Selezionare le classi da specificare come destinazione del profilo del carrello (non selezionare un gruppo) e quindi scegliere **Selezione**. 
+7. Selezionare le classi da specificare come destinazione del profilo del carrello (non selezionare un gruppo) e quindi scegliere **Selezione**. 
 8. Al termine, scegliere **Salva**.
 
 L'assegnazione viene completata e Intune distribuisce il profilo Classroom ai dispositivi di destinazione in base all'assegnazione della classe.

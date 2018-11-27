@@ -12,20 +12,21 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: c408c19a630daff9ca1b238afcef9bb9193f5c98
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117872"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179504"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizzare i dispositivi per ottenere i criteri e le azioni più recenti con Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-L'azione del dispositivo **Sincronizza** forza il dispositivo selezionato a eseguire immediatamente l'archiviazione in Intune. Quando un dispositivo esegue l'archiviazione, riceve immediatamente le azioni in sospeso o i criteri assegnati. Questa funzionalità consente di convalidare e risolvere i problemi di criteri assegnati immediatamente, senza attendere la successiva archiviazione pianificata.
+L'azione del dispositivo **Sincronizza** forza il dispositivo selezionato a eseguire immediatamente l'archiviazione in Intune. Quando un dispositivo esegue l'archiviazione, riceve immediatamente le azioni in sospeso o i criteri assegnati. Questa funzionalità consente di convalidare e risolvere i problemi di criteri assegnati immediatamente, senza attendere la successiva archiviazione pianificata.
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 

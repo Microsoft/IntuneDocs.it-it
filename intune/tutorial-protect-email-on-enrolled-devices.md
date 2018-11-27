@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5e88108d6c438bf2c192516be44908c4d76dfa9f
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652122"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181871"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi gestiti
 Informazioni sull'uso dei criteri di conformità dei dispositivi con accesso condizionale per assicurarsi che i dispositivi iOS possano accedere alla posta elettronica di Exchange Online solo se vengono gestiti da Intune e con un'app di posta elettronica approvata. 

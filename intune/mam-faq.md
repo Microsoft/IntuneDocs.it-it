@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57c69c1610168aa25d33c8124c38f585eb715251
-ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
+ms.openlocfilehash: 7cb6e5e603b353be5d3c0d3fdaca4f1d8af675ad
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50225455"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181191"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app
 
@@ -172,7 +173,7 @@ Quando si usano tipi diversi di impostazioni, un requisito di versione app ha la
 **Cosa accade se si aggiunge o si rimuove un'impronta digitale o un viso dal dispositivo?**
 I criteri di Protezione app di Intune consentono l'accesso alle app solo all'utente dotato di licenza per Intune. Uno dei modi per controllare l'accesso alle app consiste nel richiedere Apple Touch ID o Face ID per i dispositivi supportati. Intune implementa un comportamento in base al quale, se viene apportata una modifica al database di biometria del dispositivo e viene raggiunto il valore del timeout di inattività successivo, viene richiesto un PIN. Esempi di modifiche ai dati biometrici sono l'aggiunta o la rimozione di un'impronta digitale o di un viso. Se in Intune non è impostato un PIN, l'utente viene indirizzato alla configurazione di un PIN di Intune.
  
-La finalità di questa procedura è di continuare a garantire la protezione e la sicurezza a livello di app dei dati dell'organizzazione all'interno dell'app stessa. Questa funzionalità è disponibile solo per iOS e richiede la partecipazione delle applicazioni che integrano Intune APP SDK per iOS, versione 9.0.1 o successive. L'integrazione dell'SDK è necessaria in modo che il comportamento possa essere applicato nelle applicazioni di destinazione. Questa integrazione avviene progressivamente e dipende dai team delle applicazioni specifiche. Tra le app partecipanti sono inclusi WXP, Outlook, Managed Browser e Yammer. 
+La finalità di questa procedura è di continuare a garantire la protezione e la sicurezza a livello di app dei dati dell'organizzazione all'interno dell'app stessa. Questa funzionalità è disponibile solo per iOS e richiede la partecipazione delle applicazioni che integrano Intune APP SDK per iOS, versione 9.0.1 o successive. L'integrazione dell'SDK è necessaria in modo che il comportamento possa essere applicato nelle applicazioni di destinazione. Questa integrazione avviene sistematicamente e dipende dai team delle applicazioni specifiche. Tra le app partecipanti sono inclusi WXP, Outlook, Managed Browser e Yammer. 
   
 **È possibile usare l'estensione di condivisione per iOS per aprire i dati aziendali o dell'istituto di istruzione nelle app non gestite, anche se i criteri di trasferimento dei dati sono impostati su "solo app gestite" o "nessuna app". Questo scenario non comporta la perdita dei dati?**<br></br>
 I criteri di protezione delle app di Intune non possono controllare l'estensione di condivisione per iOS senza la gestione del dispositivo. Pertanto, Intune _**crittografa i dati "aziendali" prima che vengano condivisi all'esterno dell'app**_. È possibile convalidare questo scenario provando ad aprire il file "aziendale" all'esterno dell'app gestita. Il file deve essere crittografato e non deve poter essere aperto all'esterno dell'app gestita.

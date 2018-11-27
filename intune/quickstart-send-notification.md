@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e76e173bef7a370f89f60f6c9eb4588bb63aefdc
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51510908"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186257"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Guida introduttiva: Inviare notifiche a dispositivi non conformi
 
@@ -100,7 +101,7 @@ La procedura seguente consente di creare un criterio di conformità per i dispos
     > [!NOTE]
     > Durante l'assegnazione dei criteri di conformità è possibile includere ed escludere gruppi.
 
-4. Fare clic su **Salva**.
+4. Fare clic su **Save**.
 
 Dopo averlo creato e salvato, il criterio apparirà nell'elenco **Conformità del dispositivo - Criteri**. Si noti che nell'elenco l'opzione **Assegnato** è impostata su **Sì**.
 

@@ -12,12 +12,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 5fa3079c994a2e0ea2d587185e12c52085133f9c
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune-classic
+ms.openlocfilehash: 2ef7ebf495511e1d5c04aa8a9c459ba48f3dbb42
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025186"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180856"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 39efa1b85bd06b7c1b5e553d0ff6058f6eeeb64e
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576733"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184509"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Guida introduttiva: Aggiungere e assegnare un'app client
 
@@ -91,7 +92,7 @@ L'app è stata assegnata al gruppo **Contoso Testers** (Tester Contoso).
     > [!NOTE]
     > Se non sono state assegnate app all'utente di Intune, viene visualizzato il messaggio seguente: *L'amministratore IT non ha reso disponibile alcuna app.*
 
-5. Fare clic su **Installa**.
+5. Fare clic su **Install** (Installa).
 
 Se per le specifiche esigenze aziendali è richiesta l'assegnazione dell'app Portale aziendale alla forza lavoro, è possibile assegnare manualmente l'app Portale aziendale di Windows 10 direttamente da Intune. Per altre informazioni, vedere [Aggiungere manualmente l'app Portale aziendale di Windows 10 usando Microsoft Intune](store-apps-company-portal-app.md).
 

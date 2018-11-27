@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9749f9b623c418b51b5c3292e72b699ff5cdd75c
-ms.sourcegitcommit: 1e6fee4032c50ab41a5166db39fbea80a731c541
+ms.openlocfilehash: 0d6a798f9f16f4eaa0e882fb7d90203be912051f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51654926"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190031"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Aggiornamenti dell'interfaccia utente per le applicazioni degli utenti finali in Intune
 Informazioni sugli aggiornamenti apportati all'interfaccia utente per le app disponibili per gli utenti finali in questa versione di Microsoft Intune. Le informazioni sugli aggiornamenti sono utili ai fini delle comunicazioni agli utenti e nell'aggiornamento della documentazione a supporto della distribuzione. Possono essere anche di aiuto per capire come risolvere al meglio eventuali problemi che riscontrano gli utenti e indicare loro se richiedere assistenza tramite il portale aziendale.

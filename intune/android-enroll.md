@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 2b2b3ba5443cd95cd81bdca6d386ab95a2c831eb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400352"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190116"
 ---
 # <a name="enroll-android-devices"></a>Registrare dispositivi Android
 
@@ -30,7 +31,7 @@ In qualità di amministratore di Intune, è possibile gestire i dispositivi Andr
 - I dispositivi Android, inclusi i dispositivi Samsung KNOX Standard.
 - I dispositivi Android Enterprise, compresi i [dispositivi del profilo di lavoro Android](#enable-enrollment-of-android-for-work-devices) e i dispositivi Android in modalità tutto schermo.
 
-I dispositivi che eseguono Samsung Knox Standard sono supportati per la gestione multiutente in Intune. Gli utenti finali possono accedere e disconnettersi da un dispositivo con le credenziali di Azure AD. Il dispositivo è gestito a livello centrale indipendentemente dal fatto che sia o meno in uso. Quando gli utenti eseguono l'accesso possono accedere alle app e ai criteri ad essi applicati. Quando gli utenti si disconnettono, tutti i dati delle app vengono cancellati.
+I dispositivi che eseguono Samsung Knox Standard sono supportati per la gestione multiutente in Intune. Gli utenti finali possono accedere e disconnettersi da un dispositivo con le credenziali di Azure AD. Il dispositivo è gestito a livello centrale indipendentemente dal fatto che sia o meno in uso. Quando gli utenti eseguono l'accesso possono accedere alle app e ai criteri ad essi applicati. Quando gli utenti si disconnettono, tutti i dati delle app vengono cancellati.
 
 ## <a name="prerequisite"></a>Prerequisito
 

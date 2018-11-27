@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 31c3e7b6d255cd99efee134f0276fd4d15dab6b9
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: efb850e0f08c94cfee7948f50411220216eb8418
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403562"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188068"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurare la registrazione dei dispositivi Windows
 
@@ -76,7 +77,7 @@ L'amministratore DNS di Contoso deve creare i CNAME seguenti:
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 ora|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 ora|
-|CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 ora|
+|CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 ora|
 
 `EnterpriseEnrollment-s.manage.microsoft.com`: supporta un reindirizzamento al servizio Intune con riconoscimento del dominio dal nome di dominio del messaggio di posta elettronica
 
