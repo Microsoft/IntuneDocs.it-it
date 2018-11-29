@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
+ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610108"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52267255"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
@@ -65,6 +66,8 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
 
      > [!NOTE]
      > **Solo per App iOS**: se è stato creato un profilo VPN iOS contenente le impostazioni VPN per app, è possibile selezionare il profilo VPN in **VPN**. Quando l'app viene eseguita, viene aperta la connessione VPN. Per altre informazioni, vedere [Impostazioni VPN per dispositivi iOS in Microsoft Intune](vpn-settings-ios.md).
+     >
+     > **Solo per le app Android**: se si distribuisce un'app per Android come **Disponibile con o senza registrazione**, la segnalazione dello stato sarà disponibile solo nei dispositivi registrati.
 
 9. Per selezionare i gruppi di utenti che sono interessati da questa assegnazione di app, selezionare **Gruppi inclusi**.
 10. Dopo avere selezionato uno o più gruppi da includere, selezionare **Seleziona**.

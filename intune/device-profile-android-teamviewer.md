@@ -5,20 +5,21 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744636"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186181"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Usare TeamViewer per l'amministrazione remota dei dispositivi di Intune
 
@@ -58,7 +59,10 @@ Dopo la configurazione di Connector è possibile iniziare ad amministrare un dis
 
 ![Usare TeamViewer per amministrare in remoto un dispositivo Android - Esempio](./media/android-teamviewer.png)
 
-Quando si avvia una sessione remota, un utente finale vede un flag di notifica sull'icona dell'app Portale aziendale nel dispositivo in uso. All'apertura dell'app viene visualizzata un'altra notifica. L'utente può quindi accettare la richiesta di assistenza remota.
+Quando si avvia una sessione remota, gli utenti vedono un flag di notifica sull'icona dell'app Portale aziendale nel dispositivo in uso. Viene visualizzata una notifica anche all'apertura dell'app. Gli utenti potranno quindi accettare la richiesta di assistenza remota.
+
+> [!NOTE]
+> Nei dispositivi Windows registrati con metodi "senza utente", come Manager di registrazione dispositivi e WCD, la notifica di TeamViewer non viene visualizzata nell'app Portale aziendale. In questi scenari, è consigliabile generare la sessione usando il portale di TeamViewer.
 
 In TeamViewer è possibile completare una serie di azioni sul dispositivo, inclusa l'acquisizione del controllo del dispositivo. Per informazioni complete sulle operazioni possibili, vedere il [materiale sussidiario per TeamViewer](https://www.teamviewer.com/support/documents/).
 

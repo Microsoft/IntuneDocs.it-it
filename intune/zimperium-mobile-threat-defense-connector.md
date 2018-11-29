@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6deed5de94b72ec3dfb5e8336cc2a58678b4748f
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231475"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187464"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Connettore Zimperium Mobile Threat Defense con Intune
 
@@ -58,7 +59,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile bloc
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete
 
-Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e proteggere l'accesso alle reti Wi-Fi in base al livello di rischio del dispositivo.
+Rilevare minacce nella rete, come attacchi di tipo  **Man-in-the-middle** , e proteggere l'accesso alle reti Wi-Fi in base al livello di rischio del dispositivo.
 
 **Bloccare l'accesso alla rete tramite Wi-Fi:**
 
@@ -70,7 +71,7 @@ Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e prot
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controllare l'accesso a SharePoint Online in base alle minacce alla rete
 
-Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e impedire la sincronizzazione dei file aziendali in base al livello di rischio del dispositivo.
+Rilevare minacce nella rete, come attacchi di tipo  **Man-in-the-middle** , e impedire la sincronizzazione dei file aziendali in base al livello di rischio del dispositivo.
 
 **Bloccare SharePoint Online quando vengono rilevate minacce per la rete:**
 
@@ -94,7 +95,7 @@ Rilevare minacce nella rete, come attacchi di tipo **Man-in-the-middle**, e impe
 
 -   Sottoscrizione di Zimperium Mobile Threat Defense
 
-    -   Per altre informazioni, vedere il [sito Web Zimperium](https://www.zimperium.com/zips-mobile-ips).
+    -   Per altre informazioni, vedere il  [sito Web Zimperium](https://www.zimperium.com/zips-mobile-ips) .
 
 ## <a name="next-steps"></a>Passaggi successivi
 

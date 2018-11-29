@@ -12,13 +12,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425020"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179077"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installare il client software di Intune nei PC Windows
 
@@ -256,7 +257,7 @@ Controllare "%ProgramFiles%\Microsoft\OnlineManagement" e verificare che a sinis
 
 Il processo di annullamento della registrazione non rimuove la cartella OnlineManagement. Attendere 30 minuti dopo la disinstallazione ed eseguire il comando seguente. Se il comando viene eseguito troppo presto, la disinstallazione potrebbe rimanere in uno stato sconosciuto. Per rimuovere la cartella, avviare un prompt con privilegi elevati ed eseguire:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Passaggi successivi
 [Gestire i dispositivi con Microsoft Intune](device-management.md)

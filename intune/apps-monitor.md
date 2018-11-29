@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 09e4cfc314ea21294cd3de62611a089ec724a683
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075628"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181888"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune
 
@@ -67,7 +68,9 @@ I grafici visualizzano il numero di app per gli stati seguenti:
 >    - Una modifica di destinazione di un'app gestita installata può far sì che il conteggio delle installazioni nel pannello di stato diminuisca, mentre rimane segnalato nelle app individuate.
 >    - Più istanze di destinazione della stessa app in un tenant comporterà conteggi diversi a causa della potenziale sovrapposizione di utenti o dispositivi. Ogni istanza dell'app includerà nel conteggio utenti sovrapposti, mentre le app individuate avranno conteggi duplicati.
 >    - Le app individuate e lo stato delle app vengono raccolti con intervalli di tempo diversi causando una discrepanza nei conteggi delle app.
- 
+> 
+> Tenere anche presente che le app per Android distribuite come **Disponibile con o senza registrazione** segnalano solo lo stato di installazione delle app per i dispositivi registrati. Lo stato di installazione delle app non è disponibile per i dispositivi non registrati in Intune.
+
 ### <a name="device-install-status"></a>Stato dell'installazione del dispositivo
 
 Quando si seleziona **Stato dell'installazione del dispositivo** nella sezione **Monitoraggio** del menu, viene visualizzato un elenco degli stati del dispositivo. La tabella dei dettagli include le colonne seguenti:

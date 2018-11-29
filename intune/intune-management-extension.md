@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236340"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179406"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gestire gli script di PowerShell in Intune per i dispositivi Windows 10
 L'estensione di gestione di Intune consente di caricare script di PowerShell in Intune da eseguire in dispositivi Windows 10. L'estensione di gestione integra le funzionalità di gestione di dispositivi mobili (MDM, Mobile Device Management) di Windows 10 e rende più semplice passare a una gestione moderna.
@@ -27,9 +28,9 @@ L'estensione di gestione di Intune consente di caricare script di PowerShell in 
 ## <a name="moving-to-modern-management"></a>Passare alla gestione moderna
 I computer destinati agli utenti finali stanno attraversando una fase di trasformazione digitale. Le attività IT tradizionali e classiche si occupano di piattaforme su singoli dispositivi, di dispositivi di proprietà dell'azienda, di utenti che lavorano in ufficio e di una serie di processi reattivi manuali. Un'area di lavoro moderna, tuttavia, prevede piattaforme su più dispositivi, di proprietà dell'utente finale e dell'azienda, consente di lavorare ovunque ci si trovi e mette a disposizione processi IT automatizzati e proattivi. 
 
-I servizi MDM, ad esempio Microsoft Intune, gestiscono i dispositivi Windows 10 tramite il protocollo MDM. Il client di gestione predefinito in Windows 10 è in grado di comunicare con Intune per eseguire attività di gestione aziendale, promuovendo l'adozione di metodi di gestione moderni nei dispositivi Windows 10. Possono tuttavia rivelarsi necessarie alcune funzionalità, ad esempio la configurazione avanzata dei dispositivi, la risoluzione dei problemi e la gestione di app Win32 legacy, attualmente non disponibili tra le funzioni di gestione MDM di Windows 10. Per avere tali funzionalità, è possibile eseguire il client software Intune nei dispositivi Windows 10. Di conseguenza, non si è in grado di usare le nuove funzionalità offerte dalla gestione MDM di Windows 10. [Esaminare le differenze tra il client software Intune e la funzione di gestione MDM di Windows 10](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison).
+I servizi MDM, ad esempio Microsoft Intune, gestiscono i dispositivi Windows 10 tramite il protocollo MDM. Il client di gestione predefinito in Windows 10 è in grado di comunicare con Intune per eseguire attività di gestione aziendale, promuovendo l'adozione di metodi di gestione moderni nei dispositivi Windows 10. Possono tuttavia rivelarsi necessarie alcune funzionalità, ad esempio la configurazione avanzata dei dispositivi, che non sono disponibili tra le funzioni MDM incorporate di Windows 10.
 
-L'estensione di gestione di Intune integra le funzionalità di gestione MDM disponibili in Windows 10. È possibile creare script di PowerShell da eseguire nei dispositivi Windows 10 per ottenere le funzionalità necessarie. È ad esempio possibile creare uno script di PowerShell che consenta di installare un'app Win32 legacy nei dispositivi Windows 10, caricare lo script in Intune, assegnarlo a un gruppo di Azure Active Directory (AD) ed eseguirlo nei dispositivi Windows 10. È quindi possibile monitorare lo stato dell'esecuzione dello script nei dispositivi Windows 10 dall'inizio alla fine.
+L'estensione di gestione di Intune integra le funzionalità di gestione MDM disponibili in Windows 10. È possibile creare script di PowerShell da eseguire nei dispositivi Windows 10 per ottenere le funzionalità necessarie. È possibile creare uno script di PowerShell che consenta di configurare le impostazioni personalizzate, caricare lo script in Intune, assegnarlo a un gruppo di Azure Active Directory (AD) ed eseguirlo nei dispositivi Windows 10. Lo script può essere monitorato per valutarne lo stato di esecuzione nei dispositivi Windows 10 dall'inizio alla fine.
 
 ## <a name="prerequisites"></a>Prerequisiti
 L'estensione di gestione di Intune ha i prerequisiti seguenti:
@@ -55,7 +56,6 @@ L'estensione di gestione di Intune ha i prerequisiti seguenti:
 3. Selezionare uno o più gruppi contenenti gli utenti i cui dispositivi ricevono lo script. Fare clic su **Seleziona** per assegnare il criterio ai gruppi selezionati.
 
 > [!NOTE]
-> - Gli script di PowerShell non possono essere applicati a gruppi di computer.
 > - Gli utenti finali non devono eseguire l'accesso al dispositivo per eseguire gli script di PowerShell. 
 > - Gli script di PowerShell in Intune possono essere destinati ai gruppi di sicurezza dei dispositivi AAD.
 
