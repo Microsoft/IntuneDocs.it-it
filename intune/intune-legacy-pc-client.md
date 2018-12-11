@@ -15,12 +15,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 27f3a184e355f63d20a79fd92e8326206f6eee15
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9bbf6f30b7a7490608f9896ae8fe54e27341ccae
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185628"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112324"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune nella console di Azure e nel client PC Intune legacy
 
@@ -53,7 +53,7 @@ Per Windows 7, che non può essere gestito tramite MDM, continueranno a essere s
 
 ## <a name="mdm-capabilities"></a>Funzionalità MDM
 
-Per un confronto dettagliato tra il client PC e le funzionalità MDM, vedere [Confrontare la gestione dei PC Windows come computer o come dispositivi mobili](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison). Gli aggiornamenti per MDM continueranno a introdurre nuove funzionalità di gestione per i dispositivi Windows 10 registrati in MDM, incluse opzioni di valutazione per le app Win 32. Vedere le [Novità](https://docs.microsoft.com/intune/whats-new) per informazioni sulle aggiunte nelle versioni più recenti del servizio.
+Per un confronto dettagliato tra il client PC e le funzionalità MDM, vedere [Confrontare la gestione dei PC Windows come computer o come dispositivi mobili](pc-management-comparison.md). Gli aggiornamenti per MDM continueranno a introdurre nuove funzionalità di gestione per i dispositivi Windows 10 registrati in MDM, incluse opzioni di valutazione per le app Win 32. Vedere le [Novità](https://docs.microsoft.com/intune/whats-new) per informazioni sulle aggiunte nelle versioni più recenti del servizio.
 
 ## <a name="switch-from-pc-client-to-mdm"></a>Passare dal client PC a MDM
 
