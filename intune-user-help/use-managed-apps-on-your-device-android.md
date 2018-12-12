@@ -61,7 +61,7 @@ L'elenco seguente descrive le impostazioni che il supporto tecnico dell'azienda 
 
 * Accesso a specifici siti Web  
 
-* Accesso ai siti Web interni dell'azienda usando Edge e il proxy di Azure Active Directory  
+* Accesso ai siti Web interni dell'azienda usando Microsoft Edge e il proxy di Azure Active Directory  
 
 * Versione minima dell'app, versione del sistema operativo
 
