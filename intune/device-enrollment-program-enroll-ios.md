@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 650a358281f89c511bbd56f3807f2ef4a6ba582c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 94e7bc3e3b936489ea34170616d1ab0ad49bafd3
+ms.sourcegitcommit: 8ddd3b0d4636a4516b2a05fa83c60ec111903c6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190354"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52546041"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple
 
@@ -139,7 +139,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
     ![Screenshot dell'installazione del portale aziendale con VPP.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. Se si era scelto un token per **Installa il Portale aziendale con VPP**, è possibile bloccare il dispositivo in modalità applicazione singola, in particolare, l'app Portale aziendale, subito dopo l'Assistente configurazione. Scegliere **Sì** per **Run Company Portal in Single App Mode until authentication** (Esegui il portale aziendale in modalità app singola fino all'autenticazione) per impostare l'opzione. Per poter usare il dispositivo, l'utente deve prima autenticarsi effettuando l'accesso tramite il portale aziendale.
-    Questa funzionalità opera al meglio con iOS 11.3.1 e versioni successive. L'installazione con versioni precedenti potrebbe richiedere molto tempo.
+    Questa funzionalità è supportata solo per iOS 11.3.1 e versioni successive.
 
 8. Scegliere **Impostazioni di gestione dei dispositivi** e specificare se si vogliono includere i dispositivi con questo profilo nella supervisione.
 

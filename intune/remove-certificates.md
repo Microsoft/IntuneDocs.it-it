@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dabd5b6ca2f8bb01421c24cb7c16ab57cf59ef56
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180987"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579167"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Rimuovere i certificati SCEP e PKCS in Microsoft Intune
 
@@ -43,8 +43,7 @@ Questo articolo illustra alcuni scenari comuni e l'impatto sui certificati SCEP 
   - L'amministratore esegue un'azione di [cancellazione](devices-wipe.md#wipe)
   - L'amministratore esegue un'azione di [ritiro](devices-wipe.md#retire)
   - Il dispositivo viene rimosso dal gruppo di Azure Active Directory (AD)
-  - I criteri di conformità vengono rimossi dall'assegnazione del gruppo
-  - Il profilo di configurazione viene rimosso dall'assegnazione del gruppo
+  - Il profilo certificato viene rimosso dall'assegnazione del gruppo
 
 - Un certificato SCEP viene revocato quando:
   - L'amministratore modifica o aggiorna il profilo SCEP
@@ -53,7 +52,6 @@ Questo articolo illustra alcuni scenari comuni e l'impatto sui certificati SCEP 
   - Un utente finale annulla la registrazione
   - L'amministratore esegue un'azione di [cancellazione](devices-wipe.md#wipe)
   - L'amministratore esegue un'azione di [ritiro](devices-wipe.md#retire)
-  - I criteri di conformità vengono rimossi dall'assegnazione del gruppo
 
 - I certificati SCEP **rimangono** nel dispositivo (i certificati non vengono revocati né rimossi) quando:
   - Un utente finale perde la licenza di Intune
@@ -78,8 +76,7 @@ Questo articolo illustra alcuni scenari comuni e l'impatto sui certificati SCEP 
   - L'amministratore ritira la licenza di Intune
   - L'amministratore rimuove l'utente o il gruppo da Azure AD
   - L'amministratore modifica o aggiorna il profilo PKCS
-  - Il profilo di configurazione viene rimosso dall'assegnazione del gruppo
-  - I criteri di conformità vengono rimossi dall'assegnazione del gruppo 
+  - Il profilo certificato viene rimosso dall'assegnazione del gruppo
 
 
 ## <a name="ios-devices"></a>Dispositivi iOS
@@ -92,8 +89,7 @@ Questo articolo illustra alcuni scenari comuni e l'impatto sui certificati SCEP 
   - L'amministratore esegue un'azione di [cancellazione](devices-wipe.md#wipe)
   - L'amministratore esegue un'azione di [ritiro](devices-wipe.md#retire)
   - Il dispositivo viene rimosso dal gruppo di Azure Active Directory (AD)
-  - I criteri di conformità vengono rimossi dall'assegnazione del gruppo
-  - Il profilo di configurazione viene rimosso dall'assegnazione del gruppo
+  - Il profilo certificato viene rimosso dall'assegnazione del gruppo
 
 - Un certificato SCEP viene revocato quando:
   - L'amministratore modifica o aggiorna il profilo SCEP
@@ -102,7 +98,6 @@ Questo articolo illustra alcuni scenari comuni e l'impatto sui certificati SCEP 
   - Un utente finale annulla la registrazione
   - L'amministratore esegue un'azione di [cancellazione](devices-wipe.md#wipe)
   - L'amministratore esegue un'azione di [ritiro](devices-wipe.md#retire)
-  - I criteri di conformità vengono rimossi dall'assegnazione del gruppo
 
 - I certificati SCEP **rimangono** nel dispositivo (i certificati non vengono revocati né rimossi) quando:
   - Un utente finale perde la licenza di Intune
@@ -118,8 +113,7 @@ Questo articolo illustra alcuni scenari comuni e l'impatto sui certificati SCEP 
   - L'amministratore esegue un'azione di [ritiro](devices-wipe.md#retire)
 
 - Un certificato PKCS viene rimosso quando:
-  - I criteri di conformità vengono rimossi dall'assegnazione del gruppo
-  - Il profilo di configurazione viene rimosso dall'assegnazione del gruppo
+  - Il profilo certificato viene rimosso dall'assegnazione del gruppo
   
 - Il certificato radice viene rimosso quando:
   - Un utente finale annulla la registrazione
@@ -143,8 +137,7 @@ Questo articolo illustra alcuni scenari comuni e l'impatto sui certificati SCEP 
 - Un certificato SCEP viene revocato quando:
   - L'amministratore esegue un'azione di [ritiro](devices-wipe.md#retire)
   - Il dispositivo viene rimosso dal gruppo di Azure Active Directory (AD)
-  - I criteri di conformità vengono rimossi dall'assegnazione del gruppo
-  - Il profilo di configurazione viene rimosso dall'assegnazione del gruppo
+  - Il profilo certificato viene rimosso dall'assegnazione del gruppo
   - L'amministratore rimuove l'utente o il gruppo da Azure Active Directory (AD)
   - L'amministratore modifica o aggiorna il profilo SCEP
 
@@ -176,8 +169,7 @@ Questo articolo illustra alcuni scenari comuni e l'impatto sui certificati SCEP 
   - L'amministratore ritira la licenza di Intune
   - L'amministratore rimuove l'utente o il gruppo da Azure AD
   - L'amministratore modifica o aggiorna il profilo PKCS
-  - Il profilo di configurazione viene rimosso dall'assegnazione del gruppo
-  - I criteri di conformità vengono rimossi dall'assegnazione del gruppo 
+  - Il profilo certificato viene rimosso dall'assegnazione del gruppo
   
   
 > [!NOTE]
@@ -191,8 +183,7 @@ Questo articolo illustra alcuni scenari comuni e l'impatto sui certificati SCEP 
   - Un utente finale annulla la registrazione
   - L'amministratore esegue un'azione di [ritiro](devices-wipe.md#retire)
   - Il dispositivo viene rimosso dal gruppo di Azure Active Directory (AD)
-  - I criteri di conformità vengono rimossi dall'assegnazione del gruppo
-  - Il profilo di configurazione viene rimosso dall'assegnazione del gruppo
+  - Il profilo certificato viene rimosso dall'assegnazione del gruppo
 
 - Un certificato SCEP viene revocato quando:
   - L'amministratore modifica o aggiorna il profilo SCEP

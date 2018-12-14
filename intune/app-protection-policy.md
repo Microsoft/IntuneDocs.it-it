@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
+ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179168"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389870"
 ---
 # <a name="what-are-app-protection-policies"></a>Che cosa sono i criteri di protezione delle app?
 
@@ -66,9 +66,9 @@ L'uso di soluzioni MDM con criteri di protezione delle app comporta vantaggi agg
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Piattaforme supportate per i criteri di protezione delle app
-Il supporto della piattaforma dei criteri di protezione delle app di Intune è allineato al supporto della piattaforma delle applicazioni per dispositivi mobili di Office. Per informazioni dettagliate, vedere la sezione **App per dispositivi mobili** in [Requisiti di sistema per Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
+Il supporto della piattaforma dei criteri di protezione delle app di Intune è allineato al supporto della piattaforma delle applicazioni per dispositivi mobili di Office per dispositivi Android e iOS. Per informazioni dettagliate, vedere la sezione **App per dispositivi mobili** in [Requisiti di sistema per Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
-I dispositivi Windows non sono attualmente supportati. Tuttavia, quando si registrano i dispositivi di Windows 10 con Intune, è possibile usare Windows Information Protection, che offre funzionalità simili. Per altre informazioni, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+I dispositivi Windows non sono attualmente supportati. Tuttavia, è possibile usare Windows Information Protection, che offre funzionalità simili. Per altre informazioni, vedere [Proteggere i dati aziendali con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Come i criteri di protezione delle app proteggono i dati dell'app
@@ -146,7 +146,9 @@ Il criterio **globale** si applica a tutti gli utenti del tenant, ma qualsiasi c
 
 Le app che supportano identità multiple consentono di usare account differenti (aziendale e personale) per accedere alle stesse app, mentre i criteri di protezione delle app vengono applicati solo quando le app vengono usate nel contesto aziendale.
 
-Si consideri ad esempio un utente che avvia l'app OneDrive usando l'account aziendale. Nel contesto di lavoro, non può spostare i file in una posizione di archiviazione personale. Quando in seguito tale utente usa OneDrive con il proprio account personale, può copiare e spostare i dati da OneDrive senza restrizioni.
+Per un esempio di contesto personale, si consideri un utente che ha iniziato un nuovo documento di Word. Questo viene considerato di contesto personale e pertanto i criteri di Protezione app di Intune non vengono applicati. Dopo il salvataggio del documento nell'account di OneDrive aziendale, sarà considerato di contesto aziendale e verranno applicati i criteri di Protezione app di Intune.
+
+Per un esempio di contesto aziendale, si consideri ad esempio un utente che avvia l'app OneDrive usando l'account aziendale. Nel contesto di lavoro, non può spostare i file in una posizione di archiviazione personale. Quando in seguito tale utente usa OneDrive con il proprio account personale, può copiare e spostare i dati da OneDrive senza restrizioni.
 
 - Altre informazioni sulle app che supportano [MAM e identità multiple](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) con Intune.
 

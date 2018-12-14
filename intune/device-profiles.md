@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ec3535004dccedb5b0310f4ecc10bb5c93f0ea43
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c9a3146b1ad5f6f7c439d2e49cf534e14d154f76
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186886"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728702"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Informazioni sui profili di dispositivo in Microsoft Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune include impostazioni e funzionalità che è possibile abilitare o disabilitare in dispositivi diversi all'interno dell'organizzazione. Queste impostazioni e funzionalità vengono gestite usando i profili. Di seguito sono riportati alcuni esempi di profili: 
 
@@ -34,6 +32,7 @@ Microsoft Intune include impostazioni e funzionalità che è possibile abilitare
 In questo articolo viene offerta una panoramica dei diversi profili che è possibile creare per i dispositivi. Usare questi profili per autorizzare o bloccare determinate funzionalità nei dispositivi.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
+
 Per visualizzare le funzionalità disponibili, aprire il [portale di Azure](https://portal.azure.com) e quindi aprire la risorsa di Intune. 
 
 **Configurazione del dispositivo** include le opzioni seguenti:
@@ -55,42 +54,61 @@ Questa funzionalità supporta:
 - iOS 
 - macOS
 
-
 ## <a name="device-restrictions"></a>Limitazioni del dispositivo
+
 [Limitazioni del dispositivo](device-restrictions-configure.md) consente di gestire la protezione, l'hardware, la condivisione dei dati e altre impostazioni nei dispositivi. Ad esempio è possibile creare un profilo di limitazioni del dispositivo che impedisce agli utenti di dispositivi iOS di usare la fotocamera. 
 
 Questa funzionalità supporta:
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows 10
 - Windows 10 Team
 
+## <a name="delivery-optimization"></a>Ottimizzazione recapito
+
+[Ottimizzazione recapito](delivery-optimization-windows.md) offre un'esperienza migliore per il recapito degli aggiornamenti software. Queste impostazioni sostituiscono le impostazioni **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10**.
+
+Usare queste impostazioni per controllare la modalità di download degli aggiornamenti software nei dispositivi nell'organizzazione. Ad esempio, è possibile consentire agli utenti di gestire in autonomia gli aggiornamenti oppure di ottenere gli aggiornamenti tramite i servizi cloud di ottimizzazione recapito in un profilo di dispositivo.
+
+Questa funzionalità supporta:
+
+- Windows 10 e versioni successive
+
 ## <a name="endpoint-protection"></a>Endpoint Protection
+
 [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md) (Impostazioni di Endpoint Protection per Windows 10) configura le impostazioni di BitLocker e Windows Defender per i dispositivi Windows 10.
 
 Per l'onboarding di Windows Defender Advanced Threat Protection (WDATP) in Microsoft Intune, vedere [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection) (Configurare endpoint con gli strumenti di gestione dei dispositivi mobili).
 
 Questa funzionalità supporta:
+
 - Windows 10 e versioni successive
 
 ## <a name="identity-protection"></a>Protezione dell'identità
+
 [La protezione dell'identità](identity-protection-configure.md) controlla l'esperienza Windows Hello for Business nei dispositivi Windows 10 e Windows 10 Mobile. Configurare queste impostazioni per rendere Windows Hello for Business disponibile per gli utenti e i dispositivi e per specificare i requisiti per i pin e i gesti dispositivo.  
 
 Questa funzionalità supporta:  
+
 - Windows 10 e versioni successive
 - Windows Holographic for Business  
 
 ## <a name="kiosk"></a>Modalità tutto schermo
 
-Il profilo delle [impostazioni della modalità tutto schermo](kiosk-settings.md) consente di configurare un dispositivo per l'esecuzione di una singola app o di più app. È anche possibile personalizzare altre funzionalità sulla modalità tutto schermo, inclusi un menu di avvio e un Web browser.
+Il profilo delle [impostazioni della modalità tutto schermo](kiosk-settings.md) consente di configurare un dispositivo per l'esecuzione di una singola app o di molte app. È anche possibile personalizzare altre funzionalità sulla modalità tutto schermo, inclusi un menu di avvio e un Web browser.
 
 Questa funzionalità supporta:
+
 - Windows 10 e versioni successive
 
+Impostazioni per la modalità tutto schermo disponibili anche come restrizioni del dispositivo per [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings), e [iOS](device-restrictions-ios.md#kiosk-supervised-only).
+
 ## <a name="email"></a>Posta elettronica
-Il profilo [Impostazioni di posta elettronica](email-settings-configure.md) consente di creare, assegnare e gestire le impostazioni di posta elettronica Exchange ActiveSync nei dispositivi. I profili di posta elettronica garantiscono coerenza e consentono di ridurre le chiamate al supporto. Grazie ad essi gli utenti finali possono accedere alla posta elettronica aziendale dai dispositivi personali senza alcuna configurazione manuale. 
+
+Il profilo [Impostazioni di posta elettronica](email-settings-configure.md) consente di creare, assegnare e gestire le impostazioni di posta elettronica di Exchange ActiveSync nei dispositivi. I profili di posta elettronica garantiscono coerenza e consentono di ridurre le chiamate al supporto. Grazie ad essi gli utenti finali possono accedere alla posta elettronica aziendale dai dispositivi personali senza alcuna configurazione manuale. 
 
 Questa funzionalità supporta: 
 
@@ -100,6 +118,7 @@ Questa funzionalità supporta:
 - Windows 10
 
 ## <a name="vpn"></a>Connessione
+
 [Impostazioni VPN](vpn-settings-configure.md) assegna le impostazioni VPN agli utenti e ai dispositivi dell'organizzazione in modo che possano connettersi in modo facile e sicuro alla rete. 
 
 Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla rete aziendale. I dispositivi usano un profilo di connessione VPN per avviare una connessione con il server VPN. 
@@ -114,6 +133,7 @@ Questa funzionalità supporta:
 - Windows 10
 
 ## <a name="wi-fi"></a>Wi-Fi
+
 [Impostazioni Wi-Fi](wi-fi-settings-configure.md) assegna le impostazioni di rete wireless a utenti e dispositivi. Quando si assegna un profilo Wi-Fi, gli utenti dispongono dell'accesso alla rete Wi-Fi aziendale senza doverlo configurare. 
 
 Questa funzionalità supporta: 
@@ -125,30 +145,34 @@ Questa funzionalità supporta:
 
 ## <a name="esim-cellular---public-preview"></a>Cellulare eSIM - Anteprima pubblica
 
-La funzionalità [Profili cellulare eSIM](esim-device-configuration.md) consente di configurare piani di rete dati nei dispositivi gestiti, per l'accesso a Internet e ai dati.  Dopo aver ottenuto i codici di attivazione dall'operatore di telefonia mobile, è possibile usare Intune per importare questi codici di attivazione e quindi assegnarli ai dispositivi che supportano eSIM.
+La funzionalità [Profili cellulare eSIM](esim-device-configuration.md) consente agli amministratori di configurare piani di rete dati nei dispositivi gestiti, per l'accesso a Internet e ai dati. Dopo aver ottenuto i codici di attivazione dall'operatore di telefonia mobile, usare Intune per importare questi codici di attivazione e quindi assegnarli ai dispositivi che supportano eSIM.
 
 Questa funzionalità supporta:
 - Windows 10 Fall Creators Update e versioni successive
 
 ## <a name="education"></a>Istruzione
+
 Le [impostazioni di Education - Windows 10](education-settings-configure.md) consentono di configurare le opzioni per l'[app Test ed esami di Windows](https://education.microsoft.com/gettrained/win10takeatest). Quando si configurano queste opzioni, nessun'altra app può essere eseguita sul dispositivo finché il test non è completato.
 
-Le [impostazioni di Education - iOS](education-settings-configure-ios-shared.md) usano l'app Classroom iOS, progettata per gestire l'insegnamento e controllare i dispositivi degli studenti in aula. È possibile configurare i dispositivi iPad in modo che più studenti possono condividere un unico dispositivo.
+Le [impostazioni di Education - iOS](education-settings-configure-ios-shared.md) usano l'app Classroom iOS, progettata per gestire l'insegnamento e controllare i dispositivi degli studenti in aula. È possibile configurare i dispositivi iPad in modo che molti studenti possano condividere un unico dispositivo.
 
 ## <a name="edition-upgrade"></a>Aggiornamento dell'edizione
+
 [Aggiornamento edizione di Windows 10](edition-upgrade-configure-windows-10.md) consente di aggiornare automaticamente i dispositivi che eseguono determinate versioni di Windows 10 a un'edizione più recente.
 
 Questa funzionalità supporta: 
 - Windows 10 e versioni successive
 
 ## <a name="update-policies"></a>Criteri di aggiornamento
+
 I [criteri di aggiornamento di iOS](software-updates-ios.md) spiegano come creare e assegnare i criteri di iOS per installare gli aggiornamenti software nei dispositivi iOS. È anche possibile rivedere lo stato dell'installazione.
 
 Questa funzionalità supporta:
 - iOS
 
 ## <a name="certificates"></a>Certificati
-Il profilo [Certificati](certificates-configure.md) consente di configurare certificati attendibili, SCEP e PKCS, da assegnare ai dispositivi e da usare per autenticare i profili Wi-Fi, VPN e di posta elettronica.
+
+Il profilo [Certificati](certificates-configure.md) consente di configurare certificati attendibili, SCEP e PKCS, assegnati ai dispositivi e usati per autenticare i profili Wi-Fi, VPN e di posta elettronica.
 
 Questa funzionalità supporta: 
 
@@ -159,13 +183,15 @@ Questa funzionalità supporta:
 - Windows 10
 
 ## <a name="windows-information-protection-profile"></a>Profilo Windows Information Protection
-[Windows Information Protection](windows-information-protection-configure.md) offre la protezione dalla perdita di dati senza interferire con l'esperienza del dipendente. Consente anche di proteggere le app e i dati aziendali da perdite di dati accidentali su dispositivi di proprietà dell'azienda e dispositivi personali che i dipendenti usano al lavoro. Questa funzionalità non richiede modifiche all'ambiente o ad altre app.
+
+[Windows Information Protection](windows-information-protection-configure.md) offre la protezione dalla perdita di dati senza interferire con l'esperienza del dipendente. Consente anche di proteggere le app e i dati aziendali da perdite di dati accidentali su dispositivi di proprietà dell'azienda e dispositivi personali che i dipendenti usano al lavoro. L'uso di Windows Information Protection non richiede modifiche all'ambiente o ad altre app.
 
 Questa funzionalità supporta:
 - Windows 10 e versioni successive
 
 ## <a name="custom-profile"></a>Profilo personalizzato
-Le [impostazioni personalizzate](custom-settings-configure.md) consentono di assegnare ai dispositivi impostazioni non integrate in Intune. Ad esempio, nei dispositivi Android è possibile immettere valori OMA-URI. Per i dispositivi iOS è possibile importare un file di configurazione creato in Apple Configurator. 
+
+[Impostazioni personalizzate](custom-settings-configure.md) consente agli amministratori di assegnare impostazioni dei dispositivi non incluse in Intune. Ad esempio, nei dispositivi Android è possibile immettere valori OMA-URI. Per i dispositivi iOS è possibile importare un file di configurazione creato in Apple Configurator. 
 
 Questa funzionalità supporta:
 

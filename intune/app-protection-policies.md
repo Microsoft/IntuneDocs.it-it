@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11//28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185960"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728821"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
@@ -74,10 +74,14 @@ I nuovi criteri creati non vengono distribuiti agli utenti finché non si esegue
 
    ![Schermata del riquadro Assegnazioni con l'opzione di menu Selezionare i gruppi da includere evidenziata](./media/app-protection-policy-add-users.png)
 
-3.  Viene visualizzato un elenco di tutti i gruppi di sicurezza in **Azure Active Directory**. Selezionare i gruppi di utenti a cui si vuole applicare questo criterio e quindi scegliere **Seleziona**. Se si sceglie **Seleziona** il criterio verrà distribuito agli utenti.
+3.  Viene visualizzato un elenco di tutti i gruppi di sicurezza in **Azure Active Directory**. Selezionare i gruppi di utenti a cui si vuole applicare questo criterio e quindi scegliere **Seleziona**. 
 
     ![Schermata del riquadro Aggiungi un gruppo di utenti che visualizza l'elenco di utenti di Azure Active Directory](./media/azure-ad-user-group-list.png)
 
+4.  Dopo aver incluso ed escluso gruppi, selezionare **Salva** per salvare la configurazione e distribuire i criteri agli utenti. Se si seleziona **Annulla** prima di salvare la configurazione, verranno eliminate tutte le modifiche apportate nelle schede *Includi* ed *Escludi*.   
+ 
+     ![Screenshot che mostra le opzioni Salva e Annulla](./media/save-assignment.png)
+  
 A questo punto, l'utente ha creato un criterio e lo ha distribuito agli utenti.
 
 Solo gli utenti a cui sono state assegnate licenze di Microsoft Intune sono interessati dai criteri. Gli utenti del gruppo di sicurezza selezionato a cui non è stata assegnata una licenza di Intune non sono interessati.
@@ -109,9 +113,13 @@ Per visualizzare immediatamente l'effetto delle modifiche, l'utente finale deve 
 
 2.  Nel riquadro *Protezione app di Intune* selezionare **Assegnazioni** per aprire il riquadro **Protezione app di Intune - Assegnazioni** che visualizza l'elenco corrente dei gruppi di utenti che hanno questi criteri.
 
-3.  Per aggiungere un nuovo gruppo di utenti ai criteri, nella scheda **Includi** scegliere **Selezionare i gruppi da includere** e selezionare il gruppo di utenti. Scegliere **Seleziona** per distribuire il criterio al gruppo selezionato.
+3.  Per aggiungere un nuovo gruppo di utenti ai criteri, nella scheda *Includi* scegliere **Selezionare i gruppi da includere** e selezionare il gruppo di utenti. Scegliere **Seleziona** per aggiungere il gruppo. 
 
-4.  Per eliminare un gruppo di utenti, nella scheda **Escludi** scegliere **Selezionare i gruppi da escludere** e selezionare il gruppo di utenti. Scegliere **Seleziona** per rimuovere il gruppo di utenti.
+4.  Per escludere un gruppo di utenti, nella scheda *Escludi* scegliere **Selezionare i gruppi da escludere** e selezionare il gruppo di utenti. Scegliere **Seleziona** per rimuovere il gruppo di utenti.  
+
+5.  Per eliminare gruppi aggiunti in precedenza, nella scheda *Includi* o *Escludi* selezionare i puntini di sospensione (...) e selezionare **Elimina**. 
+
+5.  Quando le modifiche delle assegnazioni sono pronte, selezionare **Salva** per salvare la configurazione e distribuire i criteri al nuovo set di utenti. Se si seleziona **Annulla** prima di salvare la configurazione, verranno eliminate tutte le modifiche apportate nelle schede *Includi* ed *Escludi*.
 
 ### <a name="to-change-policy-settings"></a>Per modificare le impostazioni dei criteri
 

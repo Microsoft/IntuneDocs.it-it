@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186080"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729042"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurare la pagina dello stato della registrazione
  
@@ -61,6 +61,16 @@ Un dispositivo o un utente può essere incluso in più gruppi e avere più profi
 2. Passare il mouse sul profilo nell'elenco.
 3. Usando i tre punti verticali, trascinare il profilo sulla posizione desiderata nell'elenco.
 
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>Impedire l'accesso a un dispositivo fino a quando non viene installata un'applicazione specifica
+
+È possibile specificare le app da installare prima che l'utente possa accedere al desktop.
+
+1. In Intune scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Pagina relativa allo stato della registrazione (anteprima)**.
+2. Scegliere un profilo > **Impostazioni**.
+3. Scegliere **Sì** per **Mostra lo stato dell'installazione di app e profili**.
+4. Scegliere **Sì** per **Impedisci l'uso del dispositivo fino al completamento dell'installazione di tutte le app e di tutti i profili**.
+5. Scegli **Selezionate** per **Blocca l'uso del dispositivo fino all'installazione delle app necessarie in caso di assegnazione a un utente/dispositivo**.
+ 6. Scegliere **Selezionare le app** > scegliere le app > **Seleziona** > **Salva**.
 
 ## <a name="enrollment-status-page-tracking-information"></a>Informazioni incluse nella pagina dello stato della registrazione
 

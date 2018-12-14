@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d86df4c38e0d4313dbff6ff2cd9111b2126dbaba
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180936"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630018"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gestire l'accesso a Internet usando un browser protetto con criteri di Microsoft Intune
 
@@ -175,7 +175,12 @@ Per altre informazioni su come Managed Browser, Microsoft Edge e Azure AD Applic
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Come configurare la home page per un browser protetto
 
-Questa impostazione consente di configurare la home page visualizzata agli utenti quando viene avviato un browser protetto o viene creata una nuova scheda. Usando la procedura per creare una configurazione per l'app Managed Browser o Microsoft Edge, specificare la coppia di chiave-valore seguente:
+Questa impostazione consente di configurare la home page visualizzata agli utenti quando viene avviato un browser protetto o viene creata una nuova scheda. 
+- Questa impostazione consentirà di visualizzare la pagina Web in Managed Browser.  Edge visualizzerà invece un collegamento alla home page.
+- Il collegamento alla home page viene visualizzato come icona sotto il controllo di ricerca.  Non può essere modificata o eliminata.
+- Il collegamento alla home page visualizzerà il nome dell'azienda per poterlo distinguere.  Verrà sempre visualizzato come la prima icona.
+
+Usando la procedura per creare una configurazione per l'app Managed Browser o Microsoft Edge, specificare la coppia di chiave-valore seguente:
 
 |                                Chiave                                |                                                           Valore                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
