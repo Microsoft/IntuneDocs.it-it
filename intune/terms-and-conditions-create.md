@@ -15,15 +15,15 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: e407b2059d986841541c969e387d77e71c5e5b4b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181361"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032300"
 ---
-# <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>Gestire termini e condizioni aziendali per l'accesso degli utenti
+# <a name="terms-and-conditions-for-user-access"></a>Termini e condizioni per l'accesso degli utenti
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -56,8 +56,8 @@ Completare i passaggi seguenti per creare i termini e le condizioni. Il nome vis
 
    ![Screenshot della schermata di accettazione di termini e condizioni per l'utente finale con riepilogo dei termini](./media/terms-summary-create.png)
 
-   - **Titolo**: il nome per le condizioni che verrà visualizzato agli utenti nel portale aziendale sopra **Riepilogo**.
-   - **Riepilogo delle condizioni:** testo che spiega il significato dell'accettazione da parte degli utenti. Ad esempio, "Se si registra il dispositivo, si accettano le condizioni per l'utilizzo definite da Contoso. Leggere attentamente le condizioni prima di continuare."
+   - **Titolo**: nome delle condizioni che verrà visualizzato agli utenti nel portale aziendale sopra **Riepilogo**.
+   - **Riepilogo delle condizioni**: testo che spiega il significato dell'accettazione delle condizioni da parte degli utenti. Ad esempio, "Se si registra il dispositivo, si accettano le condizioni per l'utilizzo definite da Contoso. Leggere attentamente le condizioni prima di continuare."
    - **Termini e condizioni**: termini e condizioni visualizzati dagli utenti, che devono accettarli o rifiutarli.
 
 5. Scegliere **OK** > **Crea**.

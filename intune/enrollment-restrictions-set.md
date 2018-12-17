@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187838"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112953"
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
@@ -67,7 +67,7 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
 
 ## <a name="set-device-type-restrictions"></a>Impostare le restrizioni sul tipo di dispositivi
 
-È possibile modificare le impostazioni relative al tipo di dispositivo tramite la procedura seguente. Queste restrizioni non influiscono sui dispositivi già registrati. I dispositivi registrati con l'[agente del computer di Intune](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) non possono essere bloccati con questa funzionalità.
+È possibile modificare le impostazioni relative al tipo di dispositivo tramite la procedura seguente. Queste restrizioni non influiscono sui dispositivi già registrati. I dispositivi registrati con l'[agente del computer di Intune](manage-windows-pcs-with-microsoft-intune.md) non possono essere bloccati con questa funzionalità.
 
 1. Accedere al portale di Azure.
 2. Selezionare **Altri servizi**, cercare **Intune** e quindi scegliere **Intune**.
@@ -123,7 +123,7 @@ Verranno bloccati anche i seguenti metodi di registrazione personale:
 6. Selezionare **Salva**.
 
 
-Verrà visualizzata una notifica che informa gli utenti quando raggiungono il limite di dispositivi registrati. Ad esempio, in iOS la notifica è simile alla seguente:
+Durante le registrazioni BYOD viene visualizzata una notifica che informa gli utenti quando raggiungono il limite di dispositivi registrati. Ad esempio, in iOS la notifica è simile alla seguente:
 
 ![notifica iOS per il limite di dispositivi](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

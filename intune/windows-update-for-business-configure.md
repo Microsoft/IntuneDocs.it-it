@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: a715fe518331d20b9a47d8374a37ce66ec59055d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189288"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112766"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gestire gli aggiornamenti software in Intune
 
@@ -36,12 +36,12 @@ Tramite Windows Update for Business si semplifica l'esperienza di gestione degli
   - Versione di Windows Insider 
       
   Per informazioni dettagliate sui canali di manutenzione disponibili, vedere [Panoramica di Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
-- **Deferral Settings** (Impostazioni di differimento): configurare queste impostazioni per ritardare l'installazione degli aggiornamenti per gruppi di dispositivi. Usare queste impostazioni per implementare gli aggiornamenti per fasi in modo da poter esaminare lo stato di avanzamento.
+- **Impostazioni di differimento**: configurare queste impostazioni per ritardare l'installazione degli aggiornamenti per gruppi di dispositivi. Usare queste impostazioni per implementare gli aggiornamenti per fasi in modo da poter esaminare lo stato di avanzamento.
 - **Sospensione**: se si verifica un problema durante l'implementazione dell'aggiornamento, è possibile posticipare l'installazione dell'aggiornamento. 
-- **Maintenance window** (Finestra di manutenzione): configurare gli orari in cui possono essere installati gli aggiornamenti.
-- **Update type** (Tipo di aggiornamento): scegliere i tipi di aggiornamento da installare. Ad esempio, gli aggiornamenti qualitativi, quelli delle funzionalità o i driver.
+- **Finestra di manutenzione**: configurare gli orari in cui possono essere installati gli aggiornamenti.
+- **Tipo di aggiornamento**: scegliere i tipi di aggiornamento da installare. Ad esempio, gli aggiornamenti qualitativi, quelli delle funzionalità o i driver.
 - **Comportamento installazione**: consente di configurare la modalità di installazione dell'aggiornamento. Ad esempio, il dispositivo viene riavviato automaticamente dopo l'installazione?
-- **Peer downloading** (Download peer-to-peer): specificare se configurare il download peer-to-peer. Se è configurata questa modalità di download, quando un dispositivo ha completato il download di un aggiornamento, altri dispositivi possono scaricare l'aggiornamento da tale dispositivo. Con questa impostazione il processo di download viene completato più velocemente.
+- **Download peer-to-peer**: specificare se configurare il download peer-to-peer. Se è configurata questa modalità di download, quando un dispositivo ha completato il download di un aggiornamento, altri dispositivi possono scaricare l'aggiornamento da tale dispositivo. Con questa impostazione il processo di download viene completato più velocemente.
 
 Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Usando anelli di aggiornamento, è possibile creare una strategia di aggiornamento adatta alle esigenze aziendali. Per altre informazioni, vedere [Gestire gli aggiornamenti con Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -84,21 +84,21 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
    - **Comportamento di aggiornamento automatico**: scegliere la modalità di installazione degli aggiornamenti automatici e quando riavviare. Per informazioni dettagliate, vedere [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
      - **Frequenza del comportamento automatico**: se si seleziona **Installa e riavvia automaticamente all'ora pianificata** per il comportamento di aggiornamento, viene visualizzata questa impostazione. Usare questa impostazione per pianificare il momento in cui vengono installati gli aggiornamenti, inclusi settimana, data e ora.
 
-   - **Verifiche al riavvio**: abilitata per impostazione predefinita. Quando si riavvia un dispositivo, vengono eseguite alcune verifiche, ad esempio la ricerca di utenti attivi, i livelli di batteria, eventuali giochi in esecuzione e altro ancora. Per ignorare queste verifiche quando si riavvia un dispositivo, selezionare **Ignora**.
+   - **Verifiche al riavvio**: Abilitata per impostazione predefinita. Quando si riavvia un dispositivo, vengono eseguite alcune verifiche, ad esempio la ricerca di utenti attivi, i livelli di batteria, eventuali giochi in esecuzione e altro ancora. Per ignorare queste verifiche quando si riavvia un dispositivo, selezionare **Ignora**.
 
-   - **Periodo di differimento dell'aggiornamento qualitativo (giorni)**: immettere il numero di giorni per cui vengono posticipati gli aggiornamenti qualitativi. È possibile posticipare la ricezione di questi aggiornamenti per un massimo di 30 giorni dalla data di rilascio.
+   - **Periodo di differimento dell'aggiornamento qualitativo (giorni)**: immettere il numero di giorni di cui vengono posticipati gli aggiornamenti qualitativi. È possibile posticipare la ricezione di questi aggiornamenti per un massimo di 30 giorni dalla data di rilascio.
 
      Gli aggiornamenti qualitativi includono in genere correzioni e miglioramenti alle funzionalità esistenti di Windows e vengono pubblicati il secondo martedì del mese. Gli aggiornamenti qualitativi tramite Windows Update per le aziende ricevono solo questi aggiornamenti (versione 'B') sebbene Microsoft possa rilasciare altri aggiornamenti in qualsiasi momento. Una volta disponibili in Windows Update, è possibile definire se e per quanto tempo posticipare la ricezione degli aggiornamenti qualitativi. Per altre informazioni, vedere [Distribuire gli aggiornamenti tramite Windows Update per le aziende](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
 
-   - **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)**: immettere il numero di giorni per cui vengono posticipati gli aggiornamenti delle funzionalità. È possibile posticipare la ricezione di questi aggiornamenti per un massimo di 180 giorni dalla data di rilascio.
+   - **Periodo di differimento dell'aggiornamento delle funzionalità (giorni)**: immettere il numero di giorni di cui vengono posticipati gli aggiornamenti delle funzionalità. È possibile posticipare la ricezione di questi aggiornamenti per un massimo di 180 giorni dalla data di rilascio.
 
      Gli aggiornamenti delle funzionalità includono in genere nuove funzionalità per Windows. Dopo aver configurato l'impostazione **Canale di manutenzione**, è possibile definire se e per quanto tempo posticipare la ricezione degli aggiornamenti delle funzionalità dopo che sono stati resi disponibili in Windows Update.
 
-     Ad esempio: **Se il Canale di manutenzione è impostato su Canale semestrale (mirato) e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Il dispositivo non riceve l'aggiornamento fino a febbraio, 30 giorni più tardi.
+     Ad esempio: **Se il canale di manutenzione è impostato su Canale semestrale (mirato) e il periodo di differimento è di 30 giorni**: supponiamo che l'aggiornamento delle funzionalità X venga reso disponibile pubblicamente su Windows Update come Canale semestrale (mirato) in gennaio. Il dispositivo non riceve l'aggiornamento fino a febbraio, 30 giorni più tardi.
 
-     **Se il Canale di manutenzione è impostato su Canale semestrale e il periodo di differimento è di 30 giorni**: si supponga che l'aggiornamento delle funzionalità X sia disponibile pubblicamente su Windows Update come Canale semestrale (mirato) a gennaio. Quattro mesi dopo, in aprile, l'aggiornamento della funzionalità X sarà rilasciato come Canale semestrale. Il dispositivo riceve l'aggiornamento 30 giorni dopo il rilascio del canale semestrale e viene aggiornato nel mese di maggio.
+     **Se il canale di manutenzione è impostato su Canale semestrale e il periodo di differimento è di 30 giorni**: supponiamo che l'aggiornamento delle funzionalità X venga reso disponibile pubblicamente su Windows Update come Canale semestrale (mirato) in gennaio. Quattro mesi dopo, in aprile, l'aggiornamento della funzionalità X sarà rilasciato come Canale semestrale. Il dispositivo riceve l'aggiornamento 30 giorni dopo il rilascio del canale semestrale e viene aggiornato nel mese di maggio.
 
-   - **Modalità di download con ottimizzazione recapito**: scegliere il metodo in base al quale i dispositivi devono scaricare gli aggiornamenti di Windows. Per informazioni dettagliate, vedere [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   - **Modalità di download con ottimizzazione recapito**: scegliere il metodo in base al quale i dispositivi scaricano gli aggiornamenti di Windows. Per informazioni dettagliate, vedere [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 
 5. Al termine, selezionare **OK**. In **Crea l'anello di aggiornamento** selezionare **Crea**.
 
@@ -131,7 +131,7 @@ Il nuovo anello di aggiornamento viene visualizzato nell'elenco degli anelli di 
 ### <a name="review-update-compliance-using-oms"></a>Verificare la conformità degli aggiornamenti usando OMS
 È possibile monitorare le implementazioni degli aggiornamenti di Windows 10 usando la soluzione gratuita Update Compliance. Per informazioni dettagliate, vedere [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Monitorare gli aggiornamenti di Windows con Update Compliance). Quando si usa questa soluzione, è possibile distribuire un ID commerciale a uno qualsiasi dei dispositivi Windows 10 gestiti da Intune per il quale si vuole creare un report di conformità degli aggiornamenti.
 
-In Intune è possibile usare le impostazioni OMA-URI di un criterio personalizzato per configurare l'ID commerciale. Per informazioni dettagliate, vedere [Impostazioni dei criteri di Intune per i dispositivi Windows 10 in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
+In Intune è possibile usare le impostazioni OMA-URI di un criterio personalizzato per configurare l'ID commerciale. Per informazioni dettagliate, vedere [Impostazioni dei criteri di Intune per i dispositivi Windows 10 in Microsoft Intune](custom-settings-windows-10.md).   
 
 Il percorso dell'URI OMA (con distinzione tra maiuscole e minuscole) per configurare l'ID commerciale è: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
@@ -140,7 +140,7 @@ Il percorso dell'URI OMA (con distinzione tra maiuscole e minuscole) per configu
 - **Nome dell'impostazione**: ID commerciale di Windows Analytics
 - **Descrizione dell'impostazione**: configurazione dell'ID commerciale per le soluzioni Windows Analytics
 - **OMA-URI** (maiuscole/minuscole): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- **Tipo di dati**: String
+- **Tipo di dati**: Stringa
 - **Valore**: <*Usare il GUID visualizzato nella scheda Telemetria di Windows nell'area di lavoro OMS*>
 
 ![Impostazioni URI OMA - Modifica riga](./media/commID-edit.png)

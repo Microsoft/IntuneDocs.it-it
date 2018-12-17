@@ -1,7 +1,7 @@
 ---
 title: Registrare i dispositivi usando un account del manager di registrazione dispositivi
 titlesuffix: Microsoft Intune
-description: Usare l'account del manager di registrazione dispositivi per registrare i dispositivi in Intune. "
+description: Usare l'account del manager di registrazione dispositivi per registrare i dispositivi in Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,15 +15,15 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 1d3e01cdbc7c9e30034e83e9609c0df5f031c18a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184914"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031841"
 ---
-# <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi usando un account del manager di registrazione dispositivi
+# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrare i dispositivi in Intune usando un account del manager di registrazione dispositivi
 
 È possibile registrare fino a 1.000 dispositivi mobili con un singolo account di Azure Active Directory usando un account di manager di registrazione dispositivi. Il manager di registrazione dispositivi è un'autorizzazione di Intune che può essere applicata a un account utente AAD e consente all'utente di registrare fino a 1.000 dispositivi. Un account di manager di registrazione dispositivi è utile per gli scenari in cui i dispositivi vengono registrati e preparati prima di essere distribuiti agli utenti.
 

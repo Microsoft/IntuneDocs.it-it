@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 470c3b7ac273e051af047eba95012b36a8ea1deb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185994"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977355"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introduzione ai criteri di conformità dei dispositivi in Intune
 
@@ -40,6 +40,9 @@ I requisiti di conformità sono essenzialmente delle regole, ad esempio richiede
 - Dispositivo non al di sopra del livello di Mobile Threat Defense
 
 È anche possibile usare questi criteri per monitorare lo stato di conformità nei dispositivi.
+
+> [!IMPORTANT]
+> Intune segue la pianificazione in base alla quale il dispositivo contatta il servizio per tutte le valutazioni di conformità sul dispositivo. [Altre informazioni su questa pianificazione](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 <!---### Actions for noncompliance
 
@@ -170,7 +173,7 @@ In tutti i dispositivi registrati in Intune viene valutato un set di **impostazi
   - I dispositivi consentano al portale aziendale di utilizzare servizi di posizione
   - I dispositivi valutino e segnalino il proprio stato jailbreak a Intune almeno una volta ogni 72 ore. In caso contrario, il dispositivo è contrassegnato come non conforme. La valutazione viene attivata aprendo l'app Portale aziendale o spostando fisicamente il dispositivo di almeno 500 metri.
 
-- **Periodo di validità dello stato di conformità (giorni)**: immettere il periodo di tempo di cui dispongono i dispositivi per segnalare lo stato di tutti i criteri di conformità ricevuti. I dispositivi che non restituiscono lo stato entro il periodo indicato vengono considerati non conformi. Il valore predefinito è 30 giorni.
+- **Periodo di validità dello stato di conformità (giorni)**: immettere il periodo di tempo in cui i dispositivi devono segnalare lo stato per tutti i criteri di conformità ricevuti. I dispositivi che non restituiscono lo stato entro il periodo indicato vengono considerati non conformi. Il valore predefinito è 30 giorni.
 
 Tutti i dispositivi hanno un **criterio di conformità del dispositivo predefinito** (portale di Azure > Conformità del dispositivo > Conformità dei criteri). Usare questo criterio predefinito per monitorare queste impostazioni.
 

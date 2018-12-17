@@ -14,18 +14,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180235"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53167995"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Abilitare Windows Defender ATP con l'accesso condizionale in Intune
 
 Windows Defender Advanced Threat Protection (ATP) e Microsoft Intune interagiscono tra loro per impedire violazioni della sicurezza e limitare l'impatto delle violazioni all'interno di un'organizzazione.
 
-Questa funzionalità si applica ai dispositivi Windows 10.
+Questa funzionalità si applica a: Dispositivi Windows 10
 
 Supponiamo ad esempio che qualcuno invii a un utente dell'organizzazione un allegato di Word con codice dannoso incorporato. L'utente apre l'allegato e abilita il contenuto. Viene così avviato un attacco con privilegi elevati, che assegna a un utente malintenzionato che opera da un computer remoto diritti di amministratore sul dispositivo della vittima. L'utente malintenzionato accede quindi in remoto agli altri dispositivi dell'utente.
 
@@ -92,10 +92,10 @@ Una volta eseguito l'onboarding di un dispositivo con il pacchetto di configuraz
   - **Tipo del pacchetto di configurazione client di Windows Defender ATP**: selezionare **Onboarding** per aggiungere il pacchetto di configurazione al profilo. Selezionare **Offboarding** per rimuovere il pacchetto di configurazione dal profilo.
   
     > [!NOTE] 
-    > Se è stata stabilita correttamente una connessione con Windows Defender ATP, Intune eseguirà automaticamente l'**onboarding** del profilo di configurazione.
+    > Se è stata stabilita correttamente una connessione a Windows Defender ATP, Intune esegue automaticamente l'**onboarding** del profilo di configurazione e l'impostazione **Tipo del pacchetto di configurazione client di Windows Defender ATP** non è disponibile.
   
   - **Condivisione di esempi per tutti i file**: **Abilita** consente di raccogliere gli esempi e di condividerli con Windows Defender ATP. Ad esempio, se viene rilevato un file sospetto, è possibile inviarlo a Windows Defender ATP per un'analisi approfondita. **Non configurato** non condivide alcun esempio con Windows Defender ATP.
-  - **Accelera la frequenza di creazione di report di telemetria**: **abilitare** questa impostazione per i dispositivi ad alto rischio, in modo che la telemetria venga segnalata più frequentemente al servizio Windows Defender ATP.
+  - **Accelera la frequenza di creazione di report di telemetria**: **abilitare** questa impostazione per i dispositivi ad alto rischio, in modo che i dati di telemetria vengano segnalati più frequentemente al servizio Windows Defender ATP.
 
     Per informazioni più dettagliate su queste impostazioni di Windows Defender ATP, vedere [Onboard Windows 10 machines using System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) (Eseguire l'onboarding di computer Windows 10 tramite System Center Configuration Manager).
 

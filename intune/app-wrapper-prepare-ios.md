@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182109"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112871"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app iOS per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -28,7 +28,7 @@ ms.locfileid: "52182109"
 
 Usare lo strumento di wrapping delle app di Microsoft Intune per iOS per abilitare i criteri di protezione delle app di Intune senza modificare il codice dell'app stessa.
 
-Lo strumento è un'applicazione da riga di comando di macOS che crea un wrapper intorno a un'app. Dopo l'elaborazione di un'app, è possibile modificarne la funzionalità distribuendo i [criteri di protezione delle app](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) in tale app.
+Lo strumento è un'applicazione da riga di comando di macOS che crea un wrapper intorno a un'app. Dopo l'elaborazione di un'app, è possibile modificarne la funzionalità distribuendo i [criteri di protezione delle app](app-protection-policies.md) in tale app.
 
 Per scaricare lo strumento, vedere [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) (Strumento di wrapping delle app di Microsoft Intune per iOS) in GitHub.
 
@@ -439,5 +439,5 @@ Usare questa procedura per ottenere i log per le applicazioni di cui è stato es
 
 ### <a name="see-also"></a>Vedere anche
 - [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
-- [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
-- [Usare l'SDK per abilitare le app per la gestione delle applicazioni mobili](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Gestire impostazioni e funzionalità nei dispositivi con i criteri di Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [Usare l'SDK per abilitare le app per la gestione delle applicazioni mobili](app-sdk.md)

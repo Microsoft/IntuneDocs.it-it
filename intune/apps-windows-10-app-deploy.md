@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 034919a7ae7d223a30b11b4c3aa1f495e028e89c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184625"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977287"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Distribuzione di app di Windows 10 con Microsoft Intune 
 
@@ -49,7 +49,7 @@ A seconda del tipo di app, l'app può essere installata in un dispositivo Window
     - Possono essere distribuite nel contesto utente sia le app line-of-business moderne che le app di Microsoft Store per le aziende, sia online che offline, e queste supporteranno sia la finalità obbligatoria che la finalità disponibile.
     - Le app Win32 create come app in **modalità utente** o **modalità doppia** possono essere distribuite nel contesto utente e supporteranno sia le finalità **Richiesta** che **Disponibile**. 
 - **Contesto di dispositivo**: quando un'app viene distribuita nel contesto di dispositivo, l'app gestita verrà installata direttamente nel dispositivo da Intune.
-    - Solo le app line-of-business moderne e le app di Microsoft Store per le aziende con licenza online possono essere distribuite nel contesto di dispositivo e supporteranno solo la finalità obbligatoria.
+    - Solo le app line-of-business moderne e le app di Microsoft Store per le aziende con licenza offline possono essere distribuite nel contesto di dispositivo e supporteranno solo la finalità obbligatoria.
     - Le app Win32 compilate come app in **modalità computer** o **modalità doppia** possono essere distribuite nel contesto utente e supporteranno solo la finalità **Richiesta**.
 
 > [!NOTE]
@@ -57,11 +57,11 @@ A seconda del tipo di app, l'app può essere installata in un dispositivo Window
 
 Quando un'app viene distribuita nel contesto di dispositivo, l'installazione verrà completata solo se il dispositivo di destinazione supporta il contesto di dispositivo. Inoltre, la distribuzione nel contesto di dispositivo comporta le condizioni seguenti:
 - Se un'app viene distribuita nel contesto di dispositivo e fa riferimento a un utente, l'installazione avrà esito negativo e nella console di amministrazione verranno visualizzati l'errore e lo stato seguenti:
-    - Stato: Non riuscito.
+    - Stato: Operazione non riuscita.
     - Errore: Un utente non può essere incluso con un'installazione del contesto di dispositivo.
 - Se un'app viene distribuita nel contesto di dispositivo ma fa riferimento a un dispositivo che non supporta il contesto di dispositivo, l'installazione avrà esito negativo e nella console di amministrazione verranno visualizzati l'errore e lo stato seguenti:
-    - Stato: Non riuscito.
-    - Errore: Questa piattaforma non supporta l'installazione del contesto di dispositivo. 
+    - Stato: Operazione non riuscita.
+    - Errore: Questa piattaforma non supporta installazioni del contesto di dispositivo. 
 
 > [!Note]
 > Dopo che l'assegnazione di un'app è stata salvata con una distribuzione specifica, il contesto non può essere modificato per tale assegnazione, fatta eccezione per le app moderne. Nel caso di app moderne, infatti, il contesto può essere modificato da contesto utente a contesto di dispositivo. 

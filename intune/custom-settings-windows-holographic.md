@@ -1,11 +1,11 @@
 ---
-title: Impostazioni personalizzate per dispositivi Windows Holographic for Business in Microsoft Intune - Azure | Microsoft Docs
+title: Impostazioni personalizzate - Dispositivi Windows Holographic for Business - Microsoft Intune
 description: Aggiungere o creare un profilo personalizzato per usare le impostazioni OMA-URI per i dispositivi che eseguono Windows Holographic for Business in Microsoft Intune, incluso Microsoft Hololens. È possibile configurare le impostazioni del provider del servizio di configurazione (CSP) dei criteri AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates e ApplicationLaunchRestrictions.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.topic: article
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b66adc535d51fdaf2e3fc7a4bb1b11d34433db98
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 2c4e6041f00ad55b18f8b20996da8002f5ce0247
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185577"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032198"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Usare le impostazioni personalizzate per i dispositivi Windows Holographic for Business in Intune
 
@@ -40,15 +40,15 @@ Questo articolo descrive come creare un profilo personalizzato per i dispositivi
 3. Immettere le impostazioni seguenti:
 
     - **Nome**: immettere un nome per il profilo, ad esempio `hololens custom profile`.
-    - **Descrizione:** immettere una descrizione per il profilo.
+    - **Description**: Immettere una descrizione del profilo.
     - **Piattaforma**: scegliere **Windows 10 e versioni successive**.
     - **Tipo di profilo**: scegliere **Personalizzato**.
 
 4. In **Impostazioni OMA-URI personalizzate** selezionare **Aggiungi**. Immettere le impostazioni seguenti:
 
-    - **Nome**: immettere un nome univoco per l'impostazione OMA-URI per identificarla nell'elenco delle impostazioni.
-    - **Descrizione**: immettere una descrizione che offra una panoramica dell'impostazione e altri dettagli importanti.
-    - **OMA-URI (maiuscole/minuscole)**: immettere il valore OMA-URI che si vuole usare come impostazione.
+    - **Nome**: Immettere un nome univoco per l'impostazione OMA URI per identificarla nell'elenco delle impostazioni.
+    - **Description**: immettere una descrizione che offra una panoramica dell'impostazione e altri dettagli importanti.
+    - **OMA-URI (maiuscole/minuscole)**: immettere l'OMA-URI da usare come impostazione.
     - **Tipo di dati**: immettere il tipo di dati da usare per l'impostazione OMA-URI. Le opzioni disponibili sono:
 
         - Stringa

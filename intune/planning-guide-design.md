@@ -1,5 +1,5 @@
 ---
-title: Creare una progettazione
+title: Creare una progettazione di Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Questo articolo semplifica la creazione di una progettazione per un'implementazione di Microsoft Intune in configurazione solo cloud.
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186495"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112987"
 ---
 # <a name="create-a-design"></a>Creare una progettazione
 
@@ -211,7 +211,7 @@ Per creare l'elenco dei dispositivi, è possibile [scaricare un modello della ta
 
 Intune supporta sia dispositivi di proprietà dell'azienda che personali. Un dispositivo è considerato di proprietà dell'azienda se viene registrato da un manager di registrazione dispositivi o da un programma di registrazione dispositivi. Ad esempio, un dispositivo viene registrato tramite il programma DEP (Device Enrollment Program) di Apple, contrassegnato come aziendale e inserito in un gruppo di dispositivi che riceve criteri e app aziendali mirati.
 
-Per altre informazioni sui casi d'uso aziendali e BYOD, fare riferimento a [Sezione 3: Determinare i requisiti degli scenari per i casi d'uso](planning-guide-requirements.md).
+Vedere [Sezione 3: Determinare i requisiti degli scenari per i casi d'uso](planning-guide-requirements.md) per altre informazioni sui casi d'uso aziendali e BYOD.
 
 ### <a name="bulk-enrollment"></a>Registrazione in blocco
 
@@ -257,8 +257,8 @@ Usare i criteri di configurazione per gestire le impostazioni di sicurezza e le 
 
 | **Nome criterio** | **Piattaforma per i dispositivi** | **Impostazioni** | **Gruppo di destinazione** |   
 |:---:|:---:|:---:|:---:|
-| Aziendale - iOS | iOS | PIN obbligatorio, lunghezza: 6, limitazione del backup cloud | Dispositivi aziendali |                                                           
-| Aziendale - Android | Android | PIN obbligatorio, lunghezza: 6, limitazione del backup cloud | Dispositivi aziendali |                                                           
+| Aziendale - iOS | iOS | PIN obbligatorio, lunghezza: 6, Limitazione del backup cloud | Dispositivi aziendali |                                                           
+| Aziendale - Android | Android | PIN obbligatorio, lunghezza: 6, Limitazione del backup cloud | Dispositivi aziendali |                                                           
 | BYOD - iOS  | iOS | PIN obbligatorio, lunghezza: 4 | Dispositivi BYOD |
 | BYOD - Android  | Android | PIN obbligatorio, lunghezza: 4 | Dispositivi BYOD |
 
@@ -402,7 +402,7 @@ L'accesso condizionale viene usato per consentire solo ai dispositivi conformi d
 
 Per l'accesso online, decidere le piattaforme e i gruppi di utenti a cui saranno destinati i criteri di accesso condizionale. Stabilire inoltre se è necessario installare o configurare Intune Service to Service Connector per Exchange Online o Exchange locale. Altre informazioni su come installare e configurare i connettori Service to Service Connector di Intune: <!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Exchange locale](exchange-connector-install.md)
 

@@ -1,12 +1,12 @@
 ---
-title: Applicazioni
+title: Informazioni di riferimento per le entità della categoria Application
 titlesuffix: Microsoft Intune
 description: Argomento di riferimento per la categoria Application delle raccolte di entità nell'API data warehouse di Intune.
 keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 32f41e4f299af4802dd270ec4a46c0cf4d467bc9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 1a6019365b03a54e5897bc8788c171ef969e0d1e
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179134"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032379"
 ---
 # <a name="reference-for-application-entities"></a>Informazioni di riferimento per le entità della categoria Application
 

@@ -1,6 +1,6 @@
 ---
-title: Accesso condizionale con Microsoft Intune
-titlesuffix: ''
+title: Scenari di accesso condizionale
+titlesuffix: Microsoft Intune
 description: Informazioni su come l'accesso condizionale di Intune viene usato comunemente per l'accesso condizionale basato su dispositivo e basato su app.
 keywords: ''
 author: brenduns
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7c47e7e82928ea40d0b39dfbb17472441eac4f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; get-started; seodec18
+ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187668"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112477"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quali sono i modi comuni per usare l'accesso condizionale con Intune?
 
@@ -45,7 +45,7 @@ I criteri di accesso condizionale basato su dispositivo per Exchange Online e gl
 
 -   Altre informazioni sulla [conformità dei dispositivi di Intune](device-compliance.md).
 
--   Altre informazioni sulla [protezione di posta elettronica, Office 365 e altri servizi che usano l'accesso condizionale con Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   Altre informazioni sulla [protezione di posta elettronica, Office 365 e altri servizi che usano l'accesso condizionale con Intune](app-based-conditional-access-intune.md).
 
 > [!NOTE]
 > Quando si abilita l'accesso in base al dispositivo per Sharepoint Online sui dispositivi Android, gli utenti devono abilitare l'opzione **Abilita l'accesso al browser nel dispositivo registrato** seguendo questa procedura:
@@ -125,7 +125,7 @@ Quando nei dispositivi mobili è installato l'agente di Mobile Threat Defense, q
 
 L'integrazione tra Intune e Mobile Threat Defense rappresenta un fattore per le decisioni di accesso condizionale in base al rischio del dispositivo.
 
--   Altre informazioni su [Mobile Threat Defense di Intune](https://docs.microsoft.com/intune-classic/deploy-use/mobile-threat-defense).
+-   Altre informazioni su [Mobile Threat Defense di Intune](mobile-threat-defense.md).
 
 ### <a name="conditional-access-for-windows-pcs"></a>Accesso condizionale per i PC Windows
 
@@ -135,7 +135,7 @@ L'accesso condizionale per i PC offre funzionalità simili a quelle disponibili 
 
 -   **Aggiunta a un dominio AD locale:** questa opzione viene usata generalmente dalle organizzazioni che hanno già familiarità con la gestione dei PC tramite i criteri di gruppo di Active Directory e/o con System Center Configuration Manager.
 
--   **Aggiunta a un dominio AD e gestione tramite Intune:** questo scenario è generalmente associato agli scenari CYOD (Choose Your Own Device) e con laptop mobili in cui i dispositivi si connettono raramente alla rete aziendale. Il dispositivo viene aggiunto ad Azure AD ed è registrato in Intune, che rimuove qualsiasi dipendenza da Active Directory locale e controller di dominio. Può essere usato come criterio di accesso condizionale durante l'accesso alle risorse aziendali.
+-   **Aggiunta a un dominio AD e gestione tramite Intune:** questo scenario è generalmente associato agli scenari CYOD (Choose Your Own Device) e con portatili roaming in cui i dispositivi si connettono raramente alla rete aziendale. Il dispositivo viene aggiunto ad Azure AD ed è registrato in Intune, che rimuove qualsiasi dipendenza da Active Directory locale e controller di dominio. Può essere usato come criterio di accesso condizionale durante l'accesso alle risorse aziendali.
 
 -   **Aggiunta a un dominio AD e System Center Configuration Manager:** a partire dalla versione Current Branch, System Center Configuration Manager fornisce funzionalità di accesso condizionale che consentono di valutare specifici criteri di conformità, oltre all'aggiunta di un PC a un dominio:
 

@@ -1,5 +1,5 @@
 ---
-title: Configurare i criteri di conformità del dispositivo e di gestione delle app durante una migrazione a Intune
+title: Configurare i criteri di conformità del dispositivo e delle app durante una migrazione a Intune
 titlesuffix: Microsoft Intune
 description: In questo articolo vengono descritte le procedure necessarie per configurare i criteri di conformità del dispositivo e di gestione delle app durante una migrazione a Microsoft Intune.
 keywords: ''
@@ -15,12 +15,13 @@ ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 651612ac403db01ff2c5b7574216459c7ee2bd16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 99f8f1eb297ac1530f9379dd4f033b72eee0b0f4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183795"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031824"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurare i criteri di conformità del dispositivo e di gestione delle app durante una migrazione a Microsoft Intune
 
@@ -59,13 +60,13 @@ I profili di accesso alle risorse forniscono i certificati e le configurazioni d
 
 ####  <a name="directly-import-ios-configuration-profiles-optional"></a>Importare direttamente i profili di configurazione iOS (facoltativo)
 
--   **Profili iOS di Apple Configurator (iOS 7.1 e versione successiva):** se la soluzione MDM esistente usa profili di Apple Configurator (file con estensione mobileconfig), Intune può importarli direttamente come criteri di configurazione personalizzati.
+-   **Profili iOS di Apple Configurator (iOS 7.1 e versioni successive):** se la soluzione MDM esistente usa profili di Apple Configurator (file con estensione mobileconfig), Intune può importarli direttamente come criteri di configurazione personalizzati.
 
 -   **Criteri di configurazione delle applicazioni per dispositivi mobili iOS:** se la soluzione MDM esistente usa criteri di configurazione delle applicazioni per dispositivi mobili iOS, Intune può importarli direttamente, a condizione che siano conformi al formato XML specificato da Apple per gli elenchi di proprietà.
 
 - Informazioni su come aggiungere criteri personalizzati per [iOS](custom-settings-ios.md).
 
-### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>Attività 4: Creare e distribuire criteri di conformità del dispositivo (facoltativo)
+### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>Attività 4: Creare e distribuire criteri di conformità del dispositivo (facoltativa)
 
 I criteri di conformità del dispositivo valutano le impostazioni relative alle sicurezza e generano report che indicano se i dispositivi sono conformi o meno agli standard aziendali. Queste impostazioni includono:
 

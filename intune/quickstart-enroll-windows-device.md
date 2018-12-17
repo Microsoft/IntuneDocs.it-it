@@ -5,31 +5,31 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
-ms.reviewer: angerobe
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 13ffb9e7091b484c59f44802de675b1ab45b1c77
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183469"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977338"
 ---
-# <a name="quickstart-enroll-your-windows-10-device"></a>Guida introduttiva: Registrare il dispositivo Windows 10
+# <a name="quickstart-enroll-your-windows-10-device"></a>Avvio rapido: Registrare il dispositivo Windows 10
 
 In questa guida introduttiva si assume innanzitutto il ruolo di utente di Intune e si registra il dispositivo Windows 10 in Microsoft Intune. Quindi, si torna a Intune e si verifica il dispositivo registrato.
 
 La registrazione dei dispositivi in Microsoft Intune consente ai dispositivi Windows di 10 accedere ai dati protetti dell'organizzazione, inclusi posta elettronica, file e altre risorse. Questo vale sia per i dispositivi Windows 10 Desktop che per quelli Windows 10 Mobile. La registrazione dei dispositivi contribuisce a proteggere l'accesso per l'utente e per la propria organizzazione e consente di mantenere i dati di lavoro distinti da quelli personali.
 
 > [!TIP]
-> Altre informazioni su cosa accade quando si [registra il dispositivo in Intune](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e cosa significa per le [informazioni sul dispositivo](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+> Altre informazioni su cosa accade quando si [registra il dispositivo in Intune](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows) e cosa significa per le [informazioni sul dispositivo](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 Se non si dispone di una sottoscrizione Intune, è possibile [iscriversi per ottenere un account di prova gratuito](free-trial-sign-up.md).
 
@@ -58,7 +58,7 @@ Prima della registrazione di Windows 10 Desktop, è necessario verificare la ver
 4. Verificare che la **Versione** di Windows 10 sia la **1607 o una versione successiva**.
 
     > [!IMPORTANT]
-    > La procedura descritta in questa guida introduttiva si applica a Windows 10 versione **1607 o successiva**. Se la versione in uso è la versione **1511 o una versione precedente**, continuare con [questa procedura](/intune-user-help/enroll-your-w10-device-your-account.md).
+    > La procedura descritta in questa guida introduttiva si applica a Windows 10 versione **1607 o successiva**. Se la versione in uso è la versione **1511 o una versione precedente**, continuare con [questa procedura](/intune-user-help/enroll-your-w10-device-your-account).
 
 ## <a name="enroll-windows-10-desktop"></a>Registrare Windows 10 Desktop
 
@@ -85,7 +85,7 @@ Prima della registrazione di Windows 10 Desktop, è necessario verificare la ver
 
    ![Screenshot dell'account aggiunto](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
-    Se i passaggi precedenti sono stati seguiti, ma non è ancora possibile accedere ai file e agli account di posta elettronica aziendali o dell'istituto di istruzione, seguire i passaggi in [Passaggi di risoluzione dei problemi da seguire se si visualizza Accedi all'azienda o all'istituto di istruzione](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
+    Se i passaggi precedenti sono stati seguiti, ma non è ancora possibile accedere ai file e agli account di posta elettronica aziendali o dell'istituto di istruzione, seguire i passaggi in [Passaggi di risoluzione dei problemi da seguire se si visualizza Accedi all'azienda o all'istituto di istruzione](/intune-user-help/troubleshoot-your-windows-10-device-windows#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Verificare la registrazione del dispositivo in Intune
 
@@ -97,13 +97,13 @@ Prima della registrazione di Windows 10 Desktop, è necessario verificare la ver
 
 ## <a name="clean-up-resources"></a>Pulizia delle risorse
 
-Per annullare la registrazione del dispositivo Windows, vedere [Rimuovere il dispositivo Windows dalla gestione](/intune-user-help/unenroll-your-device-from-intune-windows.md).
+Per annullare la registrazione del dispositivo Windows, vedere [Rimuovere il dispositivo Windows dalla gestione](/intune-user-help/unenroll-your-device-from-intune-windows).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa guida introduttiva è stato descritto come registrare un dispositivo Windows 10 in Intune. Sono disponibili altri modi per registrare i dispositivi su tutte le piattaforme. Per altre informazioni sull'uso dei dispositivi con Intune, vedere [Usare dispositivi gestiti per lo svolgimento del lavoro](/intune-user-help/use-managed-devices-to-get-work-done.md).
+In questa guida introduttiva è stato descritto come registrare un dispositivo Windows 10 in Intune. Sono disponibili altri modi per registrare i dispositivi su tutte le piattaforme. Per altre informazioni sull'uso dei dispositivi con Intune, vedere [Usare dispositivi gestiti per lo svolgimento del lavoro](/intune-user-help/use-managed-devices-to-get-work-done).
 
 Per seguire questa serie di guide introduttive di Intune, continuare con la guida introduttiva che segue.
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: Impostare una lunghezza della password obbligatoria per i dispositivi Android](quickstart-set-password-length-android.md)
+> [Avvio rapido: Impostare una lunghezza della password obbligatoria per i dispositivi Android](quickstart-set-password-length-android.md)

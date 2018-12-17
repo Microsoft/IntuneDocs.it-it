@@ -1,12 +1,12 @@
 ---
-title: Configurare la registrazione al programma Apple School Manager per i dispositivi iOS
+title: Registrazione al programma Apple School Manager per i dispositivi iOS
 titleSuffix: Microsoft Intune
 description: Informazioni su come configurare la registrazione al programma Apple School Manager per i dispositivi iOS di proprietà dell'azienda con Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: ecd669f534fac9d359b542cbf1f2e6b543ed34f2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: fdda0edd8c7bf67dbfce9d428f1b3ce0266b3726
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190337"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032419"
 ---
-# <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Abilitare la registrazione di dispositivi iOS con Apple School Manager
+# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configurare la registrazione di dispositivi iOS con Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Questo articolo offre informazioni utili per abilitare la registrazione dei dispositivi iOS acquistati tramite il programma [Apple School Manager](https://school.apple.com/). Con Intune e Apple School Manager, è possibile registrare un numero elevato di dispositivi iOS senza interventi diretti. Quando uno studente o un insegnante accende il dispositivo, l'Assistente configurazione viene eseguito con impostazioni preconfigurate e il dispositivo viene registrato nella gestione.
+È possibile configurare Intune per registrare i dispositivi iOS acquistati tramite il programma [Apple School Manager](https://school.apple.com/). Con Intune e Apple School Manager, è possibile registrare un numero elevato di dispositivi iOS senza interventi diretti. Quando uno studente o un insegnante accende il dispositivo, l'Assistente configurazione viene eseguito con impostazioni preconfigurate e il dispositivo viene registrato nella gestione.
 
 Per abilitare la registrazione di Apple School Manager, si usano entrambi i portali di Intune e Apple School Manager. È necessario un elenco di numeri di serie o un numero di ordine di acquisto per poter assegnare i dispositivi a Intune per la gestione. Si creano profili di registrazione DEP contenenti le impostazioni da applicare ai dispositivi durante la registrazione.
 
@@ -108,8 +108,8 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 
     Gli utenti vengono informati che i dispositivi sono inclusi nella supervisione in due modi:
 
-   - Nella schermata di blocco viene visualizzata l'indicazione: "This iPhone is managed by Contoso." (Questo iPhone è gestito da Contoso)
-   - Nella schermata **Impostazioni** > **Generale** > **Informazioni su** viene visualizzata l'indicazione: "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device." (Questo iPhone è soggetto a supervisione. Contoso può monitorare il traffico Internet e individuare il dispositivo)
+   - Nella schermata di blocco viene visualizzata l'indicazione: "This iPhone is managed by Contoso" (Questo iPhone è gestito da Contoso).
+   - Nella schermata **Settings** (Impostazioni)  > **General** (Generale)  > **About** (Informazioni) viene visualizzato l'avviso: "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device." (Questo iPhone è soggetto a supervisione. Contoso può monitorare il traffico Internet e individuare il dispositivo)
 
      > [!NOTE]
      > Per reimpostare un dispositivo registrato senza supervisione in modo da includerlo nella supervisione, è possibile usare solo Apple Configurator. Per reimpostare il dispositivo in questo modo, è necessario connettere un dispositivo iOS a un computer Mac con un cavo USB. Per altre informazioni vedere la [documentazione di Apple Configurator](http://help.apple.com/configurator/mac/2.3).

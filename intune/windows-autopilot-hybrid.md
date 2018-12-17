@@ -1,12 +1,12 @@
 ---
-title: Configurare la registrazione di Intune per i dispositivi aggiunti ad Active Directory ibrido usando Windows Autopilot
-titleSuffix: Microsoft Intune
-description: Usare Windows Autopilot per registrare i dispositivi aggiunti ad Active Directory ibrido in Intune.
+title: Registrazione dei dispositivi aggiunti ad Active Directory ibrido - Windows Autopilot
+titleSuffix: ''
+description: Usare Windows Autopilot per registrare i dispositivi aggiunti ad Active Directory ibrido in Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/2/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 77a0c3f3a2e1ed0ee2dbc652049bb7057c736010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189963"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112443"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Distribuire dispositivi aggiunti ad Azure AD ibrido usando Intune e Windows Autopilot (anteprima)
 È possibile usare Intune e Windows Autopilot per configurare i dispositivi aggiunti ad Active Directory ibrido. A tale scopo, eseguire i passaggi seguenti.
@@ -68,7 +68,7 @@ I dispositivi da registrare devono anche:
 
 Intune Connector per Active Directory crea computer registrati di Autopilot nel dominio Active Directory locale. Il computer che ospita Intune Connector deve avere l'autorizzazione per la creazione di oggetti computer all'interno del dominio. 
 
-In alcuni domini ai computer non viene assegnata l'autorizzazione per la creazione di computer. Oppure gli amministratori non vogliono aumentare il limite di account computer a livello di dominio. In questi casi, le autorizzazioni possono essere delegate all'unità organizzativa in cui vengono creati i dispositivi aggiunti ad Azure AD ibrido.
+In alcuni domini ai computer non viene assegnata l'autorizzazione per la creazione di computer. Inoltre, sui domini è impostato un limite predefinito (pari a 10) che si applica a tutti gli utenti e i computer a cui non sono stati delegati i diritti di creazione di oggetti computer. I diritti devono pertanto essere delegati ai computer che ospitano Intune Connector nell'unità organizzativa in cui vengono creati i dispositivi aggiunti ad Azure AD ibrido.
 
 L'unità organizzativa a cui viene assegnata l'autorizzazione per la creazione di computer deve corrispondere a:
 - l'unità organizzativa specificata nel profilo di aggiunta al dominio
@@ -122,7 +122,7 @@ Intune Connector per Active Directory deve essere installato in un computer che 
 
 ### <a name="configure-web-proxy-settings"></a>Configurare le impostazioni del proxy Web
 
-Se nell'ambiente di rete è presente un proxy Web, attenersi alle istruzioni indicate in [Usare server proxy locali esistenti](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) per garantire il corretto funzionamento di Intune Connector per Active Directory.
+Se nell'ambiente di rete è presente un proxy Web, per garantire il corretto funzionamento di Intune Connector per Active Directory, seguire le istruzioni indicate in: [Usare server proxy locali esistenti](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
 
 
 ## <a name="create-a-device-group"></a>Creare un gruppo di dispositivi
@@ -201,9 +201,9 @@ Il passaggio dello stato del profilo del dispositivo da **Non assegnato** ad **A
 1. In [Intune](https://aka.ms/intuneportal) scegliere **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
 2. Immettere le seguenti proprietà:
    - **Nome**: immettere un nome descrittivo per il nuovo profilo.
-   - **Descrizione:** immettere una descrizione per il profilo.
+   - **Description**: Immettere una descrizione del profilo.
    - **Piattaforma**: scegliere **Windows 10 e versioni successive**.
-   - **Tipo profilo**: scegliere **Aggiunta a un dominio (anteprima)**.
+   - **Tipo di profilo**: scegliere **Aggiunta a un dominio (anteprima)**.
 3. Scegliere **Impostazioni** e specificare un **Prefisso nome computer**, **Nome di dominio** e **Unità organizzativa** (facoltativo). 
 4. Scegliere **OK** > **Crea**. Il profilo viene creato e quindi visualizzato nell'elenco.
 5. Per assegnare il profilo, seguire i passaggi indicati in [Assegnare un profilo di dispositivo](device-profile-assign.md#assign-a-device-profile). 

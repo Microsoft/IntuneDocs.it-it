@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f835f2bd2802454bbcdb27251524dfa4d2400f1a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178373"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977304"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -56,19 +56,22 @@ Se si esaminano in dettaglio questi report, si possono vedere anche tutte le imp
 
 ### <a name="device-compliance-status-report"></a>Report sullo stato di conformità del dispositivo
 
-Il grafico illustra gli stati di conformità per tutti i dispositivi registrati in Intune. Gli stati di conformità dei dispositivi vengono mantenuti in due diversi database, Intune e Azure Active Directory. 
+Il grafico illustra gli stati di conformità per tutti i dispositivi registrati in Intune. Gli stati di conformità dei dispositivi vengono mantenuti in due diversi database: Intune e Azure Active Directory. 
+
+> [!IMPORTANT]
+> Intune segue la pianificazione in base alla quale il dispositivo contatta il servizio per tutte le valutazioni di conformità sul dispositivo. [Altre informazioni su questa pianificazione](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 Descrizioni dei diversi stati dei criteri di conformità dei dispositivi:
 
-- **Conforme**: il dispositivo rispetta una o più impostazioni di criteri di conformità dei dispositivi.
+- **Conforme**: il dispositivo rispetta una o più impostazioni dei criteri di conformità dei dispositivi.
 
-- **Periodo di tolleranza:** per il dispositivo sono state definite una o più impostazioni di criteri di conformità dei dispositivi. Tuttavia, l'utente non ha ancora applicato i criteri. Questo significa che il dispositivo non è conforme, ma si trova nel periodo di tolleranza definito dall'amministratore.
+- **Periodo di tolleranza**: per il dispositivo sono state definite una o più impostazioni dei criteri di conformità dei dispositivi. Tuttavia, l'utente non ha ancora applicato i criteri. Questo significa che il dispositivo non è conforme, ma si trova nel periodo di tolleranza definito dall'amministratore.
 
   - Altre informazioni sulle [azioni per i dispositivi non conformi](actions-for-noncompliance.md).
 
-- **Non valutato**: stato iniziale per i dispositivi appena registrati. Oppure si tratta di dispositivi a cui non sono assegnati criteri di conformità e che non hanno un trigger per verificare la conformità.
+- **Non valutato**: stato iniziale dei dispositivi appena registrati. Oppure si tratta di dispositivi a cui non sono assegnati criteri di conformità e che non hanno un trigger per verificare la conformità.
 
-- **Non conforme**: il dispositivo non rispetta una o più impostazioni di criteri di conformità dei dispositivi. Oppure l'utente non è conforme ai criteri.
+- **Non conforme**: il dispositivo non rispetta una o più impostazioni dei criteri di conformità dei dispositivi. Oppure l'utente non è conforme ai criteri.
 
 - **Dispositivo non sincronizzato**: il dispositivo non è riuscito a segnalare lo stato dei criteri di conformità per uno dei motivi seguenti:
 
@@ -152,9 +155,9 @@ Questa funzionalità è inclusa nei report di stato del dispositivo:
 1. Selezionare **Conformità del dispositivo** > **Criteri**. Viene visualizzato un elenco di criteri con informazioni sulla piattaforma, sull'assegnazione o meno del criterio e altri dettagli.
 2. Selezionare un criterio > **Panoramica**. In questa visualizzazione l'assegnazione del criterio include gli stati seguenti:
 
-    - Operazione completata: i criteri sono stati applicati
+    - Operazione completata: i criteri sono stati applicati.
     - Errore: non è stato possibile applicare i criteri. Il messaggio in genere viene visualizzato con un codice di errore collegato a una spiegazione. 
-    - Conflitto: due impostazioni vengono applicate allo stesso dispositivo e Intune non è in grado di risolvere il conflitto. Un amministratore deve esaminare la situazione.
+    - Conflitto: due impostazioni sono applicate allo stesso dispositivo e Intune non è in grado di risolvere il conflitto. Un amministratore deve esaminare la situazione.
     - In sospeso: il dispositivo non ha ancora contattato Intune per ricevere i criteri. 
     - Non applicabile: il dispositivo non può ricevere i criteri. Ad esempio, i criteri aggiornano un'impostazione specifica di iOS 11.1, ma il dispositivo usa iOS 10. 
 

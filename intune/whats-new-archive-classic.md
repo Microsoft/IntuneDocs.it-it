@@ -15,12 +15,12 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5a76a54de62ead26ec4b3c7a8e34db3cd639b6c1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 56d5d9c773a11b3884b4e72b55fab27e7044f1e9
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181701"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112902"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novità del portale di Intune classico - mesi precedenti
 
@@ -48,7 +48,7 @@ Un aggiornamento all'app Portale aziendale Android mostra un indicatore di stato
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Bloccare l'accesso delle app a SharePoint Online <!-- 679339 -->
 
-È ora possibile creare un criterio di accesso condizionale basato su app per impedire alle app a cui non sono stati applicati criteri di protezione delle app di accedere a [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). Nello scenario di accesso condizionale basato su applicazioni è possibile specificare le app che dovranno accedere a SharePoint Online usando il portale di Azure.
+È ora possibile creare un criterio di accesso condizionale basato su app per impedire alle app a cui non sono stati applicati criteri di protezione delle app di accedere a [SharePoint Online](app-based-conditional-access-intune-create.md). Nello scenario di accesso condizionale basato su applicazioni è possibile specificare le app che dovranno accedere a SharePoint Online usando il portale di Azure.
 
 #### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Supporto Single Sign-On dal portale aziendale per IOS ad Outlook per iOS <!--834012-->
 Gli utenti non devono più eseguire l'accesso all'app di Outlook se sono già connessi all'app Portale aziendale per IOS sullo stesso dispositivo con lo stesso account. Quando gli utenti avviano l'app di Outlook, potranno selezionare il loro account e accedere automaticamente. Si prevede di aggiungere questa funzionalità anche per altre app Microsoft.
@@ -67,7 +67,7 @@ I nuovi miglioramenti per le installazioni di app avviate nell'app Portale azien
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Registrazione in blocco di dispositivi Windows 10 <!-- 747607 -->
 
-È ora possibile aggiungere un numero elevato di dispositivi che eseguono Windows 10 Creators Update ad Azure Active Directory e Intune con Windows Configuration Designer (WCD). Per abilitare la [registrazione MDM in blocco](/intune-classic/deploy-use/bulk-enroll-windows) del tenant di Azure AD, creare un pacchetto di provisioning che aggiunga i dispositivi al tenant di Azure AD usando Windows Configuration Designer e applicare il pacchetto ai dispositivi di proprietà dell'azienda che si vuole registrare e gestire in blocco. Dopo aver applicato il pacchetto, i dispositivi verranno aggiunti ad Azure AD, registrati in Intune e saranno pronti per l'accesso da parte degli utenti di Azure AD.  Gli utenti di Azure AD sono utenti standard di questi dispositivi e ricevono i criteri assegnati e le app necessarie. Al momento non sono supportati scenari self-service o con il portale aziendale.
+È ora possibile aggiungere un numero elevato di dispositivi che eseguono Windows 10 Creators Update ad Azure Active Directory e Intune con Windows Configuration Designer (WCD). Per abilitare la [registrazione MDM in blocco](windows-bulk-enroll.md) del tenant di Azure AD, creare un pacchetto di provisioning che aggiunga i dispositivi al tenant di Azure AD usando Windows Configuration Designer e applicare il pacchetto ai dispositivi di proprietà dell'azienda che si vuole registrare e gestire in blocco. Dopo aver applicato il pacchetto, i dispositivi verranno aggiunti ad Azure AD, registrati in Intune e saranno pronti per l'accesso da parte degli utenti di Azure AD.  Gli utenti di Azure AD sono utenti standard di questi dispositivi e ricevono i criteri assegnati e le app necessarie. Al momento non sono supportati scenari self-service o con il portale aziendale.
 
 ### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Novità dell'anteprima pubblica di Intune nel portale di Azure<!--736542-->
 
@@ -111,9 +111,9 @@ I ruoli di amministrazione per la gestione di applicazioni mobili (MAM) esistent
 
 Microsoft ha annunciato una modifica che verrà introdotta nei prossimi mesi e consentirà di migliorare l'esperienza di accesso per le app Portale aziendale di Intune per Android, iOS e Windows. Non appena questa modifica viene apportata con Azure AD, la nuova esperienza utente apparirà automaticamente su tutte le piattaforme per l'app del portale aziendale. Ora gli utenti possono anche accedere al portale aziendale da un altro dispositivo con un codice generato monouso. Ciò è particolarmente utile nei casi in cui gli utenti devono accedere senza credenziali.
 
-È possibile trovare le schermate dell'esperienza di accesso precedente, della nuova esperienza di accesso con credenziali e della nuova esperienza di accesso da un altro dispositivo nella pagina delle [novità dell'interfaccia utente dell'app](whats-new-app-ui.md).
+È possibile trovare gli screenshot dell'esperienza di accesso precedente, della nuova esperienza di accesso con credenziali e della nuova esperienza di accesso da un altro dispositivo nella pagina delle [novità dell'interfaccia utente dell'app](whats-new-app-ui.md).
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Modifiche pianificate: Intune ha intenzione di modificare l'esperienza del portale per i partner di Intune <!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Piano di modifica: Intune ha intenzione di modificare l'esperienza del portale per i partner di Intune <!-- 1050016 -->
 
 A partire dall'aggiornamento del servizio previsto per la metà di maggio 2017, la pagina Intune Partner verrà rimossa dal sito manage.microsoft.com.  
 
@@ -141,7 +141,7 @@ Microsoft ha reso disponibile una versione dell'app Portale aziendale per iOS tr
 - Difesa delle applicazioni
 - Difesa delle vulnerabilità
 
-È possibile configurare criteri di accesso condizionale EMS basati sulla valutazione dei rischi di Skycure e abilitati tramite i criteri di conformità dei dispositivi di Intune. È possibile usare questi criteri per consentire o negare l'accesso alle risorse aziendali ai dispositivi non conformi in base alle minacce rilevate. Per altre informazioni, vedere [Connettore Skycure Mobile Threat Defense](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+È possibile configurare criteri di accesso condizionale EMS basati sulla valutazione dei rischi di Symantec Endpoint Protection Mobile (Skycure) e abilitati tramite i criteri di conformità dei dispositivi di Intune. È possibile usare questi criteri per consentire o negare l'accesso alle risorse aziendali ai dispositivi non conformi in base alle minacce rilevate. Per altre informazioni, vedere [Connettore Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nuova esperienza utente per l'app Portale aziendale per Android <!--621622-->
 
@@ -170,7 +170,7 @@ Se è necessario scaricare e trasferire localmente l'app Portale aziendale di Wi
 
 La distribuzione della versione 10.3 di iOS è iniziata il 27 marzo 2017 agli utenti di iOS. Tutti gli scenari MDM e MAM di Intune esistenti sono compatibili con la versione più recente del sistema operativo Apple. È previsto che tutte le funzionalità di Intune esistenti attualmente disponibili per la gestione dei dispositivi iOS continueranno a funzionare dopo l'aggiornamento dei dispositivi a iOS 10.3.
 
-Non ci sono attualmente problemi noti da condividere. Se si riscontrano problemi con iOS 10.3, non esitare a contattare il [team di supporto di Intune](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune).
+Non ci sono attualmente problemi noti da condividere. Se si riscontrano problemi con iOS 10.3, non esitare a contattare il [team di supporto di Intune](get-support.md).
 
 #### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Supporto migliorato per gli utenti Android in Cina <!--720444-->
 
@@ -213,7 +213,7 @@ Quando un tenant entra nel processo di migrazione per la creazione del gruppo e 
 Analogamente, se l'amministratore IT modifica il gruppo Intune di destinazione di un profilo Registrazione di dispositivi aziendali, Intune crea un nuovo gruppo dinamico che riflette la nuova assegnazione del profilo ma non rimuove il gruppo dinamico creato per l'assegnazione precedente.
 
 ### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>La gestione dei dispositivi desktop Windows avviene per impostazione predefinita tramite le impostazioni di Windows <!--663050-->
-Il comportamento predefinito per la registrazione dei computer desktop di Windows 10 sta cambiando. Per le nuove registrazioni verrà usato il flusso di registrazione dell'agente MDM tipico anziché tramite l'agente per PC. Il sito Web del portale aziendale fornirà agli utenti di desktop Windows 10 istruzioni per la registrazione, che consentono di eseguire in modo guidato il processo di aggiunta di computer desktop Windows 10 come dispositivi mobili. Ciò non influirà su PC già registrati e l'organizzazione può comunque decidere di gestire i desktop Windows 10 con l'agente per PC, [se preferibile](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune).
+Il comportamento predefinito per la registrazione dei computer desktop di Windows 10 sta cambiando. Per le nuove registrazioni verrà usato il flusso di registrazione dell'agente MDM tipico anziché tramite l'agente per PC. Il sito Web del portale aziendale fornirà agli utenti di desktop Windows 10 istruzioni per la registrazione, che consentono di eseguire in modo guidato il processo di aggiunta di computer desktop Windows 10 come dispositivi mobili. Ciò non influirà su PC già registrati e l'organizzazione può comunque decidere di gestire i desktop Windows 10 con l'agente per PC, [se preferibile](manage-windows-pcs-with-microsoft-intune.md).
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Miglioramento del supporto della gestione delle app per dispositivi mobili per la cancellazione selettiva <!--581242-->
 Gli utenti finali riceveranno ulteriori indicazioni su come riottenere l'accesso ai dati aziendali o dell'istituto di istruzione se i dati vengono rimossi automaticamente a causa del criterio "Intervallo offline (giorni) prima della cancellazione dei dati dell'app".<!--, or the removal of the Intune Company Portal on Android.-->
@@ -235,7 +235,7 @@ A partire da marzo, l'app Portale aziendale per Android seguirà le [linee guida
 Le immagini di prima e dopo sono disponibili nella [pagina degli aggiornamenti dell'interfaccia utente](whats-new-app-ui.md).
 
 ### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>Associare più strumenti di gestione con Microsoft Store per le aziende <!--926135-->
-Se si usa più di uno strumento di gestione per distribuire le app di Microsoft Store per le aziende, in precedenza era possibile associare soltanto un'app a Microsoft Store per le aziende. È ora possibile associare più strumenti di gestione allo Store, ad esempio Intune e Configuration Manager. Per informazioni dettagliate, vedere [Gestire le app acquistate in Microsoft Store per le aziende con Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
+Se si usa più di uno strumento di gestione per distribuire le app di Microsoft Store per le aziende, in precedenza era possibile associare soltanto un'app a Microsoft Store per le aziende. È ora possibile associare più strumenti di gestione allo Store, ad esempio Intune e Configuration Manager. Per informazioni dettagliate, vedere [Gestire le app acquistate in Microsoft Store per le aziende con Microsoft Intune](windows-store-for-business.md).
 
 ## <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal---736542--"></a>Novità dell'anteprima pubblica di Intune nel portale di Azure <!--736542-->
 
@@ -252,20 +252,20 @@ Le novità dell'anteprima di Intune in Azure sono descritte [qui](whats-new.md).
 ### <a name="new-capabilities"></a>Nuove funzionalità
 
 #### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Report nella console per MAM senza registrazione <!--677961-->
-Sono stati aggiunti nuovi report relativi alla protezione delle app, sia per i dispositivi registrati che per quelli non registrati. Per altre informazioni in merito, vedere [Monitorare i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune).
+Sono stati aggiunti nuovi report relativi alla protezione delle app, sia per i dispositivi registrati che per quelli non registrati. Per altre informazioni in merito, vedere [Monitorare i criteri di gestione delle app per dispositivi mobili con Microsoft Intune](app-protection-policies-monitor.md).
 
 #### <a name="android-711-support---694397--"></a>Supporto per Android 7.1.1 <!--694397-->
 Intune ora supporta completamente Android 7.1.1 e la relativa gestione.
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>Risolvere il problema laddove i dispositivi iOS non sono attivi o la console di amministrazione non riesce a comunicare con i dispositivi <!--unknown-->
-Quando i dispositivi degli utenti perdono la connessione con Intune è possibile indicare nuovi passaggi per la risoluzione dei problemi per ripristinare l'accesso alle risorse aziendali. Vedere [I dispositivi sono inattivi o la console di amministrazione non è in grado di comunicare con i dispositivi](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
+Quando i dispositivi degli utenti perdono la connessione con Intune è possibile indicare nuovi passaggi per la risoluzione dei problemi per ripristinare l'accesso alle risorse aziendali. Vedere [I dispositivi sono inattivi o la console di amministrazione non è in grado di comunicare con i dispositivi](troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them).
 
 ### <a name="notices"></a>Notifiche
 
 #### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>La gestione dei dispositivi desktop Windows avviene per impostazione predefinita tramite le impostazioni di Windows <!--663050-->
 Il comportamento predefinito per la registrazione dei computer desktop di Windows 10 sta cambiando. Per le nuove registrazioni verrà usato il flusso di registrazione dell'agente MDM tipico anziché tramite l'agente per PC.
 
-Il sito Web del portale aziendale fornirà agli utenti di desktop Windows 10 istruzioni per la registrazione, che consentono di eseguire in modo guidato il processo di aggiunta di computer desktop Windows 10 come dispositivi mobili. Ciò non influirà su PC già registrati e l'organizzazione può comunque decidere di gestire i desktop Windows 10 con l'agente per PC, [se preferibile](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune).
+Il sito Web del portale aziendale fornirà agli utenti di desktop Windows 10 istruzioni per la registrazione, che consentono di eseguire in modo guidato il processo di aggiunta di computer desktop Windows 10 come dispositivi mobili. Ciò non influirà su PC già registrati e l'organizzazione può comunque decidere di gestire i desktop Windows 10 con l'agente per PC, [se preferibile](manage-windows-pcs-with-microsoft-intune.md).
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Miglioramento del supporto della gestione delle app per dispositivi mobili per la cancellazione selettiva <!--581242-->
 Gli utenti finali riceveranno ulteriori indicazioni su come riottenere l'accesso ai dati aziendali o dell'istituto di istruzione se i dati vengono rimossi automaticamente a causa del criterio "Intervallo offline (giorni) prima della cancellazione dei dati dell'app".<!--, or the removal of the Intune Company Portal on Android.-->
@@ -301,7 +301,7 @@ All'inizio del 2017 è prevista la migrazione dell'intera esperienza di amminist
 
 L'esperienza di amministrazione nel portale di Azure userà la nuova funzionalità di raggruppamento e targeting già annunciata. Dopo la migrazione di un tenant esistente alla nuova esperienza di raggruppamento verrà eseguita anche la migrazione alla versione di anteprima della nuova esperienza di amministrazione. Nel frattempo, per scoprire cosa abbiamo in serbo per Microsoft Intune nel portale di Azure, vedere la [nuova documentazione](/intune/what-is-intune).
 
-__Integrazione con i servizi di gestione delle spese di telecomunicazione nell'anteprima pubblica del portale di Azure__ <!--747605--> Microsoft sta iniziando a presentare in anteprima l'integrazione con i servizi di gestione delle spese di telecomunicazione di terze parti nel portale di Azure. È possibile usare Intune per imporre limiti al consumo dei dati sia nazionale che in roaming. Queste integrazioni iniziano con [Saaswedo](http://www.saaswedo.com/). Per abilitare questa funzionalità nel tenant di prova, [contattare il supporto tecnico Microsoft](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune).
+__Integrazione con i servizi di gestione delle spese di telecomunicazione nell'anteprima pubblica del portale di Azure__ <!--747605--> Microsoft sta iniziando a presentare in anteprima l'integrazione con i servizi di gestione delle spese di telecomunicazione di terze parti nel portale di Azure. È possibile usare Intune per imporre limiti al consumo dei dati sia nazionale che in roaming. Queste integrazioni iniziano con [Saaswedo](http://www.saaswedo.com/). Per abilitare questa funzionalità nel tenant di prova, [contattare il supporto tecnico Microsoft](get-support.md).
 
 ### <a name="new-capabilities"></a>Nuove funzionalità
 
@@ -311,7 +311,7 @@ __Possibilità di limitare la registrazione dei dispositivi mobili__ <!--747596-
 * La limitazione della registrazione di dispositivi mobili non limita la registrazione di client PC.
 * Solo per iOS: è disponibile un'altra opzione che consente di bloccare la registrazione dei dispositivi personali.
 
-Intune contrassegna tutti i nuovi dispositivi come personali, a meno che l'amministratore IT non esegua un'operazione per contrassegnarli come aziendali, come spiegato in [questo articolo](/intune-classic/deploy-use/manage-corporate-owned-devices).
+Intune contrassegna tutti i nuovi dispositivi come personali, a meno che l'amministratore IT non esegua un'operazione per contrassegnarli come aziendali, come spiegato in [questo articolo](device-enrollment.md).
 
 ### <a name="notices"></a>Notifiche
 

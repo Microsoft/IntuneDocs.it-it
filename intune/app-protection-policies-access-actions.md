@@ -1,12 +1,12 @@
 ---
-title: Cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app
+title: Cancellare i dati usando le azioni di accesso per i criteri di protezione delle app
 titleSuffix: Microsoft Intune
 description: Informazioni su come cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: f8173b409eb82a3bb98ef0a30570e489fac1fc49
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189694"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032062"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Intune
 
@@ -84,7 +84,7 @@ Per Android è possibile configurare azioni per le impostazioni seguenti usando 
 -  Produttore/i dispositivo
 
 Per usare l'impostazione **Produttore/i dispositivo**, inserire un elenco di identificatori di modello separati da punto e virgola. È possibile trovare il produttore di un dispositivo Android tramite le impostazioni del dispositivo.<br>
-Input di esempio: *Produttore A;Produttore B* 
+Esempio di input: *Produttore A;Produttore B* 
 
 >[!NOTE]
 > Questi sono alcuni dei produttori più comuni segnalati dai dispositivi che usano Intune e possono essere usati come input: Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk

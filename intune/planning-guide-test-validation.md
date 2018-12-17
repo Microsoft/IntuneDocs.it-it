@@ -15,12 +15,12 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bbcf6e21b9f5dd0474461e88ff54d6dde97590aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ba214e059e9a5ddb17a8b1344d4d30ab1d7b40fa
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179933"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112460"
 ---
 # <a name="intune-testing-and-validation"></a>Test e convalida di Intune
 
@@ -40,7 +40,7 @@ Se un componente di progettazione non è presente in almeno un criterio di test 
 
 -   **Account:** account di test che dispongono delle licenze per EMS e Office 365 per testare tutti gli scenari dei casi d'uso.
 
--   **Dispositivi:** dispositivi di test di cui è possibile eseguire la cancellazione dei dati o il ripristino delle impostazioni di fabbrica.
+-   **Dispositivi:** dispositivi di test di cui è possibile eseguire la cancellazione dei dati o il ripristino delle impostazioni predefinite.
 
 -   **Componenti di integrazione:** tutti i componenti di integrazione (connettore di certificati, Intune Service to Service Connector per Exchange ospitato e Intune On-premises Exchange Connector) devono essere installati e configurati, se necessario.
 
@@ -52,7 +52,7 @@ Durante il processo di test e convalida si potrebbero riscontrare difficoltà o 
 
 -   [Informazioni su come ottenere supporto per Intune](get-support.md)
 
--   [Come contattare il supporto telefonico assistito per Microsoft Intune](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
+-   [Come contattare il supporto telefonico assistito per Microsoft Intune](get-support.md)
 
 ## <a name="functional-validation-testing"></a>Test di convalida funzionale
 

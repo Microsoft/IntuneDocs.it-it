@@ -1,11 +1,12 @@
 ---
-title: Benvenuti in Ignite
+title: Introduzione a Ignite 2018
+titlesuffix: Microsoft Intune
 description: ''
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/08/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,29 +15,33 @@ ms.reviewer: ''
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: ec5127adcb12bc1196604d27ae2ac6501de03d08
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 5735a2059690655a76425b049eff9e26f5ab8179
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187107"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032572"
 ---
-# <a name="microsoft-intune-documentation-40ignite-special-edition41"></a>Documentazione di Microsoft Intune &#40;edizione speciale Ignite&#41;
+# <a name="microsoft-intune-documentation-40ignite-2018-special-edition41"></a>Documentazione di Microsoft Intune &#40;edizione speciale Ignite 2018&#41;
 Benvenuti a Microsoft Ignite 2018 Siamo lieti della vostra partecipazione. Microsoft Ignite 2018 mette a disposizione alcune risorse speciali per Intune.
 
-## <a name="try-our-hands-on-labs-at-ignite"></a>Perché non provare i nostri laboratori pratici in occasione di Ignite?
+## <a name="try-our-hands-on-labs-at-ignite-2018"></a>Perché non provare i nostri laboratori pratici in occasione di Ignite 2018?
 - **HOL3004**: proteggere i dati aziendali nei dispositivi mobili con Microsoft 365 e Microsoft Intune, con l'accesso condizionale e Windows Defender Advanced Threat Protection
-- **WRK3007**: introduzione alla gestione condivisa usando System Center Configuration Manager e Intune
+- **WRK3007**: introduzione alla gestione condivisa con System Center Configuration Manager e Intune
 
 ## <a name="quickstarts"></a>Guida introduttiva
 Sono state create delle nuove guide introduttive e altre sono state aggiornate. Utilizzare le guide introduttive seguenti per iniziare a usare Intune e svolgere alcune attività comuni impiegando una quantità minima di tempo.
 
 - [Provare Intune gratuitamente](free-trial-sign-up.md): creare una sottoscrizione gratuita per provare Intune in un ambiente di test.    
 - [Creare un utente](quickstart-create-user.md): creare un utente a cui verrà assegnata una licenza.
-- [Creare un gruppo](quickstart-create-group.md): utilizzare Intune per creare un gruppo basato su un utente esistente.
-- [Assegnare criteri](get-started-policies.md): creare un criterio di conformità del dispositivo per un dispositivo Windows 10 e assegnare un gruppo al criterio.
+- [Creare un gruppo](quickstart-create-group.md): usare Intune per creare un gruppo basato su un utente esistente.
 - [Configurare la registrazione automatica](quickstart-setup-auto-enrollment.md): configurare Microsoft Intune per registrare automaticamente i dispositivi quando utenti specifici eseguono l'accesso a dispositivi Windows 10.
+- [Registrare il dispositivo Windows 10](quickstart-enroll-windows-device.md): assumendo il ruolo di utente di Intune, registrare il dispositivo Windows 10 in Microsoft Intune, quindi tornare a Intune e verificare il dispositivo registrato.
+- [Creare criteri di conformità dei dispositivi](quickstart-set-password-length-android.md): creare questi criteri per richiedere agli utenti di immettere una password di una lunghezza specifica prima di ottenere l'accesso alle informazioni nei loro dispositivi Android.
+- [Inviare notifiche a dispositivi non conformi](quickstart-send-notification.md): creare un messaggio di notifica, quindi aggiungere e assegnare un criterio di non conformità.
+- [Aggiungere e assegnare un'app client](quickstart-add-assign-app.md): aggiungere e assegnare un'app client alla forza lavoro della società.
+- [Creare e assegnare un criterio di protezione delle app](quickstart-create-assign-app-policy.md): creare e assegnare un criterio di protezione delle app a un'app client nel dispositivo dell'utente finale. 
 - [Creare e assegnare un ruolo personalizzato](quickstart-create-custom-role.md): creare e assegnare un ruolo personalizzato con autorizzazioni specifiche per un reparto di operazioni di sicurezza. 
 - [Creare un profilo di posta elettronica del dispositivo per iOS](quickstart-email-profile.md) - Creare un profilo di posta elettronica del dispositivo per i dispositivi iOS.
 
@@ -46,7 +51,7 @@ Sono state create delle nuove guide introduttive e altre sono state aggiornate. 
 
 ## <a name="contribute-to-docs"></a>Come contribuire alla documentazione
 - [Diventare un collaboratore della documentazione di Intune](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/README.md)  
-- [Principali collaboratori alla documentazione di Intune di questo mese](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-09-01&to=2018-11-30&type=c)  
+- [Principali collaboratori alla documentazione di Intune](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-10-01&to=2019-12-31&type=c)  
 
 ## <a name="start-using-intune"></a>Iniziare a usare Intune
 - [Licenze che includono Intune](licenses.md)
