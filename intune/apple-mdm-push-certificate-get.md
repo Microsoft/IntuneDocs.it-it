@@ -1,7 +1,7 @@
 ---
-title: Ottenere un certificato push MDM di Apple
-titlesuffix: Microsoft Intune
-description: Informazioni sulla procedura per ottenere un certificato push MDM di Apple per gestire i dispositivi iOS con Intune.
+title: Ottenere un certificato push MDM Apple per Intune
+titlesuffix: ''
+description: Come ottenere un certificato push MDM di Apple per gestire i dispositivi iOS con Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 927da6f2e7584cb3b43bede77cfbc19ec91b568a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 053e3f42553268aaeff0502e2cfe05b33b18618b
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189470"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032164"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Ottenere un certificato push MDM di Apple
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune consente la gestione di dispositivi mobili (MDM, Mobile Device Management) per iPad, iPhone e computer Mac e offre agli utenti l'accesso alla posta elettronica e alle app aziendali. Per consentire a Intune di gestire dispositivi iOS e macOS, è necessario un certificato push Apple MDM. Dopo aver aggiunto il certificato a Intune, gli utenti possono registrare i propri dispositivi usando:
+Per consentire a Intune di gestire dispositivi iOS e macOS, è necessario un certificato push Apple MDM. Dopo aver aggiunto il certificato a Intune, gli utenti possono registrare i propri dispositivi usando:
 
 - L'app Portale aziendale.
 

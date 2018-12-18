@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183044"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112375"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemi noti in Microsoft Intune
 
@@ -31,7 +31,7 @@ Usare questo articolo per informazioni sui problemi noti in Microsoft Intune.
 
 Per segnalare un bug non elencato qui, [aprire una richiesta di supporto](get-support.md).
 
-Per richiedere una nuova funzionalità per Intune, è possibile compilare un report nel sito [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
+Per richiedere una nuova funzionalità per Intune, è possibile compilare un [report di feedback su Microsoft Intune](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
 
 ## <a name="migration"></a>Migrazione
 
@@ -44,13 +44,13 @@ I criteri di conformità creati nel portale di Azure classico saranno deprecati.
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Le funzionalità del client PC legacy Intune sono disponibili solo nella console di Silverlight
 
-La possibilità di gestire Windows 10 in Intune nel portale di Azure è disponibile tramite la registrazione MDM di Windows. Per altre informazioni, vedere [Intune nella console di Azure e nel client PC Intune legacy](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
+La possibilità di gestire Windows 10 in Intune nel portale di Azure è disponibile tramite la registrazione MDM di Windows. Per altre informazioni, vedere [Intune nella console di Azure e nel client PC Intune legacy](intune-legacy-pc-client.md).
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>I gruppi creati da Intune durante la migrazione potrebbero influire sulle funzionalità di altri prodotti Microsoft
 
 Quando si esegue la migrazione da Intune al portale di Azure, si potrebbe notare un nuovo gruppo denominato **Tutti gli utenti - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Questo gruppo contiene tutti gli utenti di Azure Active Directory e non solo gli utenti con licenza per Intune. Se si prevede che alcuni utenti nuovi o esistenti non diventino membri di alcun gruppo, ciò potrebbe causare problemi con altri prodotti Microsoft.
 
-### <a name="status-blades-for-migrated-policies-do-not-work"></a>I pannelli di stato per i criteri migrati non funzionano
+### <a name="status-blades-for-migrated-policies-dont-work"></a>I pannelli di stato per i criteri migrati non funzionano
 
 Non è possibile visualizzare informazioni di stato per i criteri di cui è stata eseguita la migrazione dal portale classico di Azure al portale di Azure. È comunque possibile continuare a visualizzare i report per questi criteri nel portale classico. Per visualizzare informazioni di stato per i criteri di configurazione migrati, ricrearli nel portale di Azure.
 
@@ -58,9 +58,9 @@ Non è possibile visualizzare informazioni di stato per i criteri di cui è stat
 
 
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Richieste di app VPP specifiche durante l'installazione di più app
-L'installazione di più app può richiedere app VPP specifiche già installate nei dispositivi degli utenti finali. Questo problema si verifica se l'opzione **Aggiornamenti automatici delle app** è **attivata** per il token VPP caricato nel portale di Intune di Azure.    
+Potrebbero essere visualizzate più richieste di installazione per determinate app VPP che sono già installate nei dispositivi degli utenti finali. Questo problema si verifica se l'opzione **Aggiornamenti automatici delle app** è **attivata** per il token VPP caricato nel portale di Intune di Azure.    
 
-Per aggirare questo problema, è possibile disabilitare l'opzione **Aggiornamenti automatici delle app** per il token VPP. A tale scopo, nel portale di Azure aprire Microsoft Intune. Da Intune selezionare **App client** > **Token VPP iOS**. Selezionare quindi il token VPP che ha distribuito l'app interessate e selezionare **Modifica** > **Aggiornamenti automatici delle app** > **No** >  **Salva**. In alternativa, è possibile interrompere la distribuzione dell'app interessata come app VPP. Questa operazione interrompe la visualizzazione delle richieste.    
+Per ovviare al problema, è possibile disabilitare l'opzione **Aggiornamenti automatici delle app** per il token VPP. A tale scopo, nel portale di Azure aprire Microsoft Intune. Da Intune selezionare **App client** > **Token VPP iOS**. Selezionare quindi il token VPP che ha distribuito l'app interessate e selezionare **Modifica** > **Aggiornamenti automatici delle app** > **No** >  **Salva**. In alternativa, è possibile interrompere la distribuzione dell'app interessata come app VPP. Questa operazione interrompe la visualizzazione delle richieste.    
 
 Si tratta di un problema noto nella versione corrente. Sarà presto disponibile una correzione che risolverà il problema. Dopo l'implementazione della correzione, gli utenti non visualizzeranno più le richieste durante l'installazione di più app.
 
