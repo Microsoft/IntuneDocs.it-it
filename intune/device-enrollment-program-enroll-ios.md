@@ -15,19 +15,19 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 94e7bc3e3b936489ea34170616d1ab0ad49bafd3
-ms.sourcegitcommit: 8ddd3b0d4636a4516b2a05fa83c60ec111903c6c
+ms.custom: seodec18
+ms.openlocfilehash: 9f27d8b2334ff38146949c28898040da6a714e0a
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52546041"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032487"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Questo articolo include informazioni utili per abilitare la registrazione dei dispositivi iOS acquistati tramite [Device Enrollment Program (DEP)](https://deploy.apple.com) di Apple. È possibile abilitare la registrazione DEP per un numero elevato di dispositivi senza interventi diretti. Si possono fornire i dispositivi iPhone e iPad direttamente agli utenti e quando l'utente attiva il dispositivo, l'Assistente configurazione viene eseguito con impostazioni preconfigurate e il dispositivo viene registrato nella gestione.
+È possibile configurare la registrazione di Intune per i dispositivi iOS acquistati tramite [Device Enrollment Program (DEP)](https://deploy.apple.com). È possibile abilitare la registrazione DEP per un numero elevato di dispositivi senza interventi diretti. Si possono fornire i dispositivi iPhone e iPad direttamente agli utenti e quando l'utente attiva il dispositivo, l'Assistente configurazione viene eseguito con impostazioni preconfigurate e il dispositivo viene registrato nella gestione.
 
 Per abilitare la registrazione DEP, si usano i portali di Intune e DEP di Apple. È necessario un elenco di numeri di serie o un numero di ordine di acquisto per poter assegnare i dispositivi a Intune per la gestione. Si creano profili di registrazione DEP contenenti le impostazioni da applicare ai dispositivi durante la registrazione.
 
@@ -108,6 +108,10 @@ Nella casella **Token Apple** passare al file (con estensione pem) del certifica
 
 Ora che è stato installato il token, è possibile creare un profilo di registrazione per i dispositivi DEP. Un profilo di registrazione dispositivi consente di definire le impostazioni applicate a un gruppo di dispositivi durante la registrazione.
 
+> [!NOTE]
+> I dispositivi verranno bloccati se non sono disponibili licenze del portale aziendale sufficienti per un token VPP o se il token è scaduto. Intune visualizza un avviso quando un token sta per scadere o le licenze sono quasi esaurite.
+ 
+
 1. Nel portale di Azure in Intune scegliere **Registrazione del dispositivo** > **Registrazione Apple** > **Token del programma di registrazione**.
 2. Selezionare un token, scegliere **Profili** e quindi scegliere **Crea profilo**.
 
@@ -149,8 +153,8 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 
     Gli utenti vengono informati che i dispositivi sono inclusi nella supervisione in due modi:
 
-   - Nella schermata di blocco viene visualizzata l'indicazione: "This iPhone is managed by Contoso." (Questo iPhone è gestito da Contoso)
-   - Nella schermata **Impostazioni** > **Generale** > **Informazioni su** viene visualizzata l'indicazione: "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device." (Questo iPhone è soggetto a supervisione. Contoso può monitorare il traffico Internet e individuare il dispositivo)
+   - Nella schermata di blocco viene visualizzata l'indicazione: "This iPhone is managed by Contoso" (Questo iPhone è gestito da Contoso).
+   - Nella schermata **Settings** (Impostazioni)  > **General** (Generale)  > **About** (Informazioni) viene visualizzato l'avviso: "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device." (Questo iPhone è soggetto a supervisione. Contoso può monitorare il traffico Internet e individuare il dispositivo)
 
      > [!NOTE]
      > Per reimpostare un dispositivo registrato senza supervisione in modo da includerlo nella supervisione, è possibile usare solo Apple Configurator. Per reimpostare il dispositivo in questo modo, è necessario connettere un dispositivo iOS a un computer Mac con un cavo USB. Per altre informazioni vedere la [documentazione di Apple Configurator](http://help.apple.com/configurator/mac/2.3).
@@ -163,7 +167,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
 
 12. Scegliere **OK**.
 
-13. Scegliere **Personalizzazione dell'Assistente configurazione** per configurare le impostazioni di profilo seguenti: ![Personalizzazione dell'Assistente configurazione](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png).
+13. Scegliere **Personalizzazione di Setup Assistant** per configurare le impostazioni di profilo seguenti: ![Personalizzazione dell'Assistente configurazione.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
     | Impostazioni di reparto | Descrizione |

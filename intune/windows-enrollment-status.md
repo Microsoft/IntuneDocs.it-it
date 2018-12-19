@@ -1,7 +1,7 @@
 ---
 title: Configurare la pagina dello stato della registrazione
 titleSuffix: Microsoft Intune
-description: Dare il benvenuto agli utenti che stanno effettuando la registrazione di dispositivi Windows 10.
+description: Configurare una pagina introduttiva per gli utenti che registrano i dispositivi Windows 10.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729042"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032096"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurare la pagina dello stato della registrazione
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Durante la configurazione dei dispositivi, la pagina relativa allo stato della registrazione visualizza le informazioni sull'installazione nel dispositivo. Alcune applicazioni, profili e certificati potrebbero non essere installati fino a quando l'utente non completa la registrazione guidata del dispositivo. Una pagina relativa allo stato della registrazione consente agli utenti di conoscere lo stato del dispositivo durante l'installazione. È possibile creare più profili di pagina dello stato della registrazione e applicarli a gruppi diversi. I profili possono essere impostati su:
+Durante la configurazione dei dispositivi con Intune, la pagina relativa allo stato della registrazione visualizza le informazioni sull'installazione nel dispositivo. Alcune applicazioni, profili e certificati potrebbero non essere installati fino a quando l'utente non completa la registrazione guidata del dispositivo. Una pagina relativa allo stato della registrazione consente agli utenti di conoscere lo stato del dispositivo durante l'installazione. È possibile creare più profili di pagina dello stato della registrazione e applicarli a gruppi diversi. I profili possono essere impostati su:
 - Visualizzazione dello stato di installazione.
 - Blocco dell'utilizzo fino al completamento dell'installazione.
 - Specificare le azioni che possono essere eseguite dall'utente se l'installazione non viene eseguita.

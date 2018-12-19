@@ -1,6 +1,7 @@
 ---
-title: Edizione anticipata
-description: ''
+title: Edizione anticipata - Microsoft Intune
+titlesuffix: ''
+description: Edizione anticipata di Microsoft Intune
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,18 +16,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: d00c367cdcd0b8172d64c3ebbcd0dec2165407c9
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829131"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112834"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Edizione anticipata per Microsoft Intune - Dicembre 2018
 
 > [!Note]
-> Notifica accordo di riservatezza: le seguenti modifiche di Intune sono in fase di sviluppo. Queste informazioni sono condivise con accordo di riservatezza su base estremamente limitata. Non pubblicare queste informazioni nei social network o in siti Web pubblici, come Twitter, UserVoice, Reddit e così via. 
+> Notifica sull'accordo di riservatezza: Le seguenti modifiche di Intune sono in fase di sviluppo. Queste informazioni sono condivise con accordo di riservatezza su base estremamente limitata. Non pubblicare queste informazioni nei social network o in siti Web pubblici, come Twitter, UserVoice, Reddit e così via. 
 
 L'**edizione anticipata** fornisce un elenco di funzionalità, condivise con accordo di riservatezza, che saranno disponibili nelle prossime versioni di Microsoft Intune. Queste informazioni sono fornite su base limitata e sono soggette a modifiche. Non inviare tweet, pubblicare in UserVoice o condividere in altro modo queste informazioni all'esterno dell'azienda. Alcune funzionalità elencate di seguito potrebbero non essere disponibili entro la data stabilita e potrebbero essere rimandate a una versione futura. Altre funzionalità sono in fase di test in una versione pilota (anteprima) in modo da perfezionarle per l'utente finale. In caso di domande o dubbi, rivolgersi al contatto per il gruppo di prodotti Microsoft.
 
@@ -53,15 +54,23 @@ Nei dispositivi con Windows 10 e versioni successive, sarà possibile creare un 
 
 [Impostazioni VPN di Windows 10](vpn-settings-windows-10.md) descrive l'elenco corrente delle impostazioni. 
 
+### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>Usare S/MIME per crittografare e firmare più dispositivi di un utente  <!-- 1333642 eeready -->
+Sarà supportata la crittografia di posta elettronica S/MIME con un nuovo profilo di certificato importato (**Configurazione del dispositivo** > **Profili** > **Crea profilo** > selezionare la piattaforma > tipo di profilo **Certificato PKCS importato**). In Intune è possibile importare i certificati nel formato PFX. Intune può quindi distribuire i certificati a più dispositivi registrati da un singolo utente. Inoltre:
+
+- Il profilo di posta elettronica iOS nativo supporta l'abilitazione della crittografia S/MIME mediante certificati importati in formato PFX.
+- L'app di posta elettronica nativa nei dispositivi Windows Phone 10 usa automaticamente il certificato S/MIME.
+- I certificati privati possono essere recapitati su più piattaforme. Tuttavia, non tutte le app di posta elettronica supportano S/MIME.
+- In altre piattaforme potrebbe essere necessario configurare manualmente l'app di posta elettronica per abilitare S/MIME.  
+- È possibile che le app di posta elettronica che supportano la crittografia S/MIME gestiscano il recupero dei certificati per la crittografia della posta elettronica S/MIME in un modo non supportato dal software MDM, ad esempio basandosi sull'archivio certificati del server di pubblicazione.
+
+Supportato in: Windows, Windows Phone 10, macOS, iOS, Android
+
 ### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Pagina Guida e supporto tecnico nell'app Portale aziendale di Windows <!-- 1488939 -->
 Verrà aggiunta una nuova pagina all'app Portale aziendale di Windows. La pagina Guida e supporto tecnico includerà informazioni di contatto per l'help desk. Inoltre, gli utenti finali potranno inviare i log del portale aziendale nel caso in cui si verifichino problemi. La pagina include anche una sezione Domande frequenti per offrire assistenza agli utenti finali.
 
 ### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Usare il rilevamento delle reti attendibili per i profili VPN nei dispositivi Windows 10 <!-- 1500165 -->
 Quando si usa il rilevamento delle reti attendibili, sarà possibile impedire ai profili VPN di creare automaticamente una connessione VPN quando l'utente è già in una rete attendibile. Sarà possibile aggiungere suffissi DNS per abilitare il rilevamento delle reti attendibili nei dispositivi che eseguono Windows 10 e versioni successive (**Configurazione del dispositivo** > **Profili** > **Crea profilo** > **Windows 10 e versioni successive** per la piattaforma > **VPN** per il tipo di profilo).
 In [Impostazioni VPN di Windows 10](vpn-settings-windows-10.md) sono elencate le impostazioni VPN correnti.
-
-### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>Supporto per i dispositivi aziendali e completamente gestiti Android <!-- 574342 -->
-Intune supporterà i dispositivi Android completamente gestiti, ovvero uno scenario con dispositivi di proprietà aziendale gestiti rigorosamente dal reparto IT e associati a singoli utenti. Ciò consente agli amministratori di gestire l'intero dispositivo, imporre un'ampia gamma di controlli dei criteri non disponibili per i profili di lavoro e limitare gli utenti all'installazione di app solo da Google Play gestito. Per configurare dispositivi Android completamente gestiti, passare a **Registrazione del dispositivo** > **Registrazione Android** > **Dispositivi utente completamente gestiti di proprietà aziendale**.
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Intune App SDK supporterà le chiavi di crittografia a 256 bit <!-- 1832174 -->
 Intune App SDK per iOS userà le chiavi di crittografia a 256 bit quando la crittografia è abilitata dai criteri di protezione delle app. L'SDK continuerà a supportare le chiavi a 128 bit per garantire la compatibilità con il contenuto e le app che usano versioni precedenti dell'SDK.
@@ -99,11 +108,14 @@ Sarà possibile creare un profilo di posta elettronica che include impostazioni 
 Le impostazioni correnti sono elencate in [Impostazioni del profilo di posta elettronica per dispositivi iOS](email-settings-ios.md).
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Ignorare altre schermate di Assistente configurazione in un dispositivo DEP iOS <!-- 2687509 -->
-Oltre alle schermate che è possibile ignorare attualmente, sarà possibile impostare i dispositivi DEP iOS per ignorare le schermate seguenti nell'Assistente configurazione, quando un utente registra il dispositivo: Segnale schermo, Privacy, Migrazione Android, Pulsante pagina iniziale, iMessage e FaceTime, Onboarding, Migrazione di Watch, Aspetto, Orario schermo, Aggiornamento software, Configurazione SIM.
+Oltre alle schermate che è attualmente possibile ignorare, sarà possibile impostare i dispositivi DEP iOS in modo che ignorino le schermate seguenti nell'Assistente configurazione quando un utente registra il dispositivo: Segnale schermo, Privacy, Migrazione di Android, Pulsante Pagina iniziale, iMessage e FaceTime, Onboarding, Migrazione di Watch, Aspetto, Orario schermo, Aggiornamento software, Configurazione SIM.
 Per scegliere le schermate da ignorare, passare a **Registrazione del dispositivo** > **Registrazione Apple** > **Token DEP** > scegliere un token > **Profili** > scegliere un profilo > **Proprietà** > **Personalizzazione dell'Assistente configurazione** > scegliere **Nascondi** per tutte le schermate che si vuole ignorare > **OK**.
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Alcune impostazioni di BitLocker supportano l'edizione Windows 10 Pro<!-- 2727036 -->
 Sarà possibile creare un profilo di configurazione che imposta le impostazioni di Endpoint Protection nei dispositivi Windows 10, incluso BitLocker. È stato aggiunto il supporto per l'edizione Windows 10 Professional per alcune impostazioni di BitLocker. Per visualizzare le impostazioni correnti per le edizioni di Windows 10, vedere [Impostazioni di Endpoint Protection per Windows 10](endpoint-protection-windows-10.md#windows-encryption).
+Intune offrirà campi aggiuntivi per i report relativi ai dispositivi, tra cui produttore Android, modello e versione della patch di sicurezza, oltre al modello iOS. In Intune, questi campi saranno disponibili selezionando **App client** > **Stato protezione app** e scegliendo **Report sulla protezione dell'app: iOS, Android**. Inoltre, questi parametri consentiranno di configurare l'elenco **Consenti** per il produttore del dispositivo (Android), l'elenco **Consenti** per il modello di dispositivo (Android e iOS) e l'impostazione della versione minima della patch di sicurezza Android. 
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Campi per i report relativi ai dispositivi di Intune <!-- 2748738 -->
 Intune offrirà campi aggiuntivi per i report relativi ai dispositivi, tra cui produttore Android, modello e versione della patch di sicurezza, oltre al modello iOS. In Intune, questi campi saranno disponibili selezionando **App client** > **Stato protezione app** e scegliendo **Report sulla protezione dell'app: iOS, Android**. Inoltre, questi parametri consentiranno di configurare l'elenco **Consenti** per il produttore del dispositivo (Android), l'elenco **Consenti** per il modello di dispositivo (Android e iOS) e l'impostazione della versione minima della patch di sicurezza Android. 
 
 ### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>L'impostazione Configurazione del dispositivo condiviso è stata rinominata Lock Screen Message (Messaggio della schermata di blocco) per i dispositivi iOS nel portale di Azure <!-- 2809362 -->
@@ -136,9 +148,9 @@ Per visualizzare le impostazioni correnti, vedere [Restrizione dei dispositivi p
 Si applica a: Windows 10 e versioni successive
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>I modelli amministrativi sono disponibili in anteprima pubblica e sono stati spostati nel profilo di configurazione corrispondente <!-- 3322847 -->
-I modelli amministrativi in Intune (**Configurazione del dispositivo** > **Modelli amministrativi**) sono attualmente in anteprima privata. Con questo aggiornamento i modelli amministrativi includono circa 300 impostazioni che possono essere gestite in Intune. In precedenza, queste impostazioni erano disponibili solo in Editor Criteri di gruppo.
+I modelli amministrativi in Intune (**Configurazione del dispositivo** > **Modelli amministrativi**) sono attualmente in anteprima privata. Con questo aggiornamento: i modelli amministrativi includono circa 300 impostazioni che possono essere gestite in Intune. In precedenza, queste impostazioni erano disponibili solo in Editor Criteri di gruppo.
 I modelli amministrativi sono disponibili in anteprima pubblica. I modelli amministrativi vengono spostati da **Configurazione del dispositivo** > **Modelli amministrativi** a **Configurazione del dispositivo** > **Profili** >**Crea profilo** > in **Piattaforma** scegliere  **Windows 10 e versioni successive**, in **Tipo di profilo** scegliere **Modelli amministrativi**.
-La creazione di report è abilitata. Si applica a Windows 10 e versioni successive
+La creazione di report è abilitata. Si applica a: Windows 10 e versioni successive
 
 
 <!-- 1810 start -->

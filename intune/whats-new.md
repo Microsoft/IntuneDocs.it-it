@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ed6a79142c2bbe3bd93b02c17e92f4f11f2583f3
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
+ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829199"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53200607"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,14 @@ Informazioni sulle novità di Microsoft Intune ogni settimana, oltre a indicazio
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-december-10-2018"></a>Settimana del 10 dicembre 2018
+
+### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>Microsoft Auto Update versione 4.50 obbligatorio per i dispositivi macOS <!-- 3503442 -->
+Per continuare a ricevere gli aggiornamenti per il portale aziendale e le altre applicazioni di Office, è necessario aggiornare i dispositivi macOS gestiti da Intune a Microsoft Auto Update 4.5.0. Gli utenti potrebbero avere già questa versione per le app di Office.
+
+### <a name="intune-requires-macos-1012-or-later----2827778---"></a>Intune richiede macOS 10.12 o versione successiva <!-- 2827778 -->
+Intune richiede ora macOS versione 10.12 o successiva. I dispositivi che usano versioni precedenti di macOS non possono usare il portale aziendale per la registrazione in Intune. Per ricevere supporto e le nuove funzionalità, gli utenti devono aggiornare il dispositivo a macOS 10.12 o versione successiva e aggiornare il portale aziendale alla versione più recente.
 
 ## <a name="week-of-november-26-2018"></a>Settimana del 26 novembre 2018
 
@@ -114,7 +122,7 @@ Se si usa Volume Purchase Program (VPP) per eseguire il provisioning anticipato 
 Intune supporta ora l'uso di Device Enrollment Program nei dispositivi macOS per gli account Apple School Manager.  Per altre informazioni, vedere [Registrare automaticamente i dispositivi macOS con Device Enrollment Program o Apple School Manager](device-enrollment-program-enroll-macos.md).
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>Nuovo SKU per la sottoscrizione del dispositivo Intune <!--3312071-->
-È ora disponibile un nuovo SKU per la sottoscrizione basato sul dispositivo che consente alle organizzazioni di ridurre i costi di gestione dei dispositivi. Questo SKU per dispositivo Intune viene concesso in licenza per ogni dispositivo su base mensile. Il prezzo varia in base al programma di licenza. È disponibile in Direct Channel, Enterprise Agreement (EA), Microsoft Products and Services Program (MPSA)e Open and Cloud Solution Provider (CSP).
+È ora disponibile un nuovo SKU per la sottoscrizione basato sul dispositivo che consente alle organizzazioni di ridurre i costi di gestione dei dispositivi. Questo SKU per dispositivo Intune viene concesso in licenza per ogni dispositivo su base mensile. Il prezzo varia in base al programma di licenza. È disponibile direttamente tramite il portale di amministrazione di Office e tramite il [Contratto Enterprise](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2), il [Contratto per i Prodotti e i Servizi Microsoft](https://www.microsoft.com/licensing/mpsa/default), i [contratti Microsoft Open](https://partner.microsoft.com/licensing/licensing-agreements) e [Cloud Solution Provider](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
 
 ### <a name="device-management"></a>Gestione dei dispositivi
 
@@ -187,7 +195,7 @@ Gli script di PowerShell in Intune possono essere destinati ai gruppi di sicurez
 #### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Nuova impostazione predefinita "Tipo di password richiesto" per Android, Android Enterprise<!-- 2649963 -->
 Quando si crea un nuovo criterio di conformità (**Intune** > **Conformità del dispositivo** > **Criteri** > **Crea criterio** > **Android** o **Android Enterprise** per Piattaforma > Sicurezza del sistema),il valore predefinito di **Tipo di password richiesto** viene modificato:
 
-Da Impostazione predefinita dispositivo ad Almeno numerico
+Da: Impostazione predefinita dispositivo A: Almeno numerico
 
 Si applica a: Android, Android Enterprise
 
@@ -213,15 +221,18 @@ Un nuovo report con i dettagli sulle registrazioni abbandonate è disponibile in
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Nuova funzionalità Condizioni per l'utilizzo di Azure Active Directory <!-- 2870393 -->
 Azure Active Directory ha una funzionalità Condizioni per l'utilizzo che è possibile usare al posto delle condizioni di Intune esistenti. La funzionalità Condizioni per l'utilizzo di Azure AD offre maggiore flessibilità sule condizioni da visualizzare e su quando visualizzarle, un migliore supporto della localizzazione, maggiore controllo sul rendering delle condizioni e creazione di report migliorata. La funzionalità Condizioni per l'utilizzo di Azure AD richiede Azure Active Directory Premium P1 che fa parte della suite Enterprise Mobility + Security E3. Per altre informazioni, vedere l'articolo [Gestire termini e condizioni aziendali per l'accesso degli utenti](terms-and-conditions-create.md).
 
-### <a name="android-device-owner-mode-support---3188762--"></a>Supporto della modalità Proprietario dispositivo Android <!--3188762-->
+#### <a name="android-device-owner-mode-support---3188762--"></a>Supporto della modalità Proprietario dispositivo Android <!--3188762-->
 Per Samsung Knox Mobile Enrollment, Intune supporta ora la registrazione dei dispositivi nella modalità di gestione Proprietario dispositivo Android. Gli utenti connessi a reti Wi-Fi o cellulari possono eseguire la registrazione con pochi tocchi quando accendono il dispositivo per la prima volta. Per altre informazioni, vedere [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md) (Registrare automaticamente i dispositivi Android usando Samsung Knox Mobile Enrollment).
 
 ### <a name="device-management"></a>Gestione dei dispositivi
+#### <a name="new-settings-for-software-updates------1907869--wnready---"></a>Nuove impostazioni per gli aggiornamenti software   <!-- 1907869  wnready -->  
+- È ora possibile configurare alcune notifiche per avvisare gli utenti finali della necessità di un riavvio per completare l'installazione degli aggiornamenti software più recenti.   
+- È ora possibile configurare una richiesta di avviso per i riavvii che vengono eseguiti al di fuori dell'orario di lavoro. Tali richieste supportano gli scenari BYOD.
 
-### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>Raggruppare i dispositivi registrati con Windows Autopilot per ID correlatore <!-- 2075110 -->
+#### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>Raggruppare i dispositivi registrati con Windows Autopilot per ID correlatore <!-- 2075110 -->
 Intune supporta ora il raggruppamento dei dispositivi Windows per ID correlatore quando vengono registrati usando [Autopilot per i dispositivi esistenti](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) tramite Configuration Manager. L'ID correlatore è un parametro del file di configurazione di Autopilot. Intune imposterà automaticamente l'[attributo del dispositivo Azure AD enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) su "OfflineAutopilotprofile-<correlator ID>. In questo modo sarà possibile creare gruppi dinamici di Azure AD arbitrari in base all'ID correlatore tramite l'attributo enrollmentprofileName per le registrazioni di Autopilot offline. Per altre informazioni, vedere [Windows Autopilot per dispositivi esistenti](enrollment-autopilot.md#windows-autopilot-for-existing-devices).
 
-### <a name="intune-app-protection-policies----2984657---"></a>Criteri di protezione delle app di Intune <!-- 2984657 -->
+#### <a name="intune-app-protection-policies----2984657---"></a>Criteri di protezione delle app di Intune <!-- 2984657 -->
 I criteri di protezione delle app di Intune consentono di configurare varie impostazioni di protezione dei dati per le app protette da Intune, ad esempio Microsoft Outlook e Microsoft Word. È stato modificato l'aspetto di queste impostazioni sia per [iOS](app-protection-policy-settings-ios.md) che per [Android](app-protection-policy-settings-android.md) in modo che sia più facile trovare le singole impostazioni. Sono tre le categorie di impostazioni dei criteri:
 - **Rilocazione dei dati**: questo gruppo include i controlli di prevenzione della perdita dei dati, ad esempio le restrizioni relative alle operazioni Taglia, Copia, Incolla e Salva con nome. Queste impostazioni determinano la modalità con cui gli utenti interagiscono con i dati nelle app.
 - **Requisiti di accesso**: questo gruppo contiene le opzioni PIN per ogni app che determinano in che modo l'utente finale accede alle app in un contesto aziendale.  
@@ -301,7 +312,7 @@ Gli utenti finali possono usare tasti di scelta rapida per eseguire azioni sulle
 #### <a name="create-dns-suffixes-in-vpn-configuration-profiles-on-devices-running-windows-10---1333668---"></a>Creare suffissi DNS nei profili di configurazione VPN per i dispositivi che eseguono Windows 10<!-- 1333668 -->
 Quando si crea un profilo di configurazione del dispositivo VPN (**Configurazione del dispositivo** > **Profili** > **Crea profilo** >  piattaforma**Windows 10 e versioni successive** > tipo di profilo**VPN**) è necessario immettere alcune impostazioni DNS. Con questo aggiornamento, è anche possibile immettere più **suffissi DNS** in Intune. Quando si usano i suffissi DNS, è possibile cercare una risorsa di rete usando il relativo nome breve anziché il nome di dominio completo (FQDN). Questo aggiornamento consente inoltre di modificare l'ordine dei suffissi DNS in Intune.
 In [Impostazioni VPN di Windows 10](vpn-settings-windows-10.md#dns-settings) sono elencate le impostazioni DNS correnti.
-Si applica ai dispositivi Windows 10
+Si applica a: Dispositivi Windows 10
 
 #### <a name="support-for-always-on-vpn-for-android-enterprise-work-profiles----1333705---"></a>Supporto dei profili di lavoro per le connessioni VPN sempre attive in Android Enterprise <!-- 1333705 -->
 In questo aggiornamento è possibile usare le connessioni VPN sempre attive nei dispositivi Android Enterprise con profili di lavoro gestiti. Le connessioni VPN sempre attive rimangono connesse o si riconnettono immediatamente quando l'utente sblocca il dispositivo, quando il dispositivo viene riavviato o quando la rete wireless viene modificata. La modalità "blocco" della connessione consente di bloccare tutto il traffico di rete in attesa che la connessione VPN torni attiva.
@@ -721,9 +732,9 @@ In **Conformità del dispositivo** > **Criteri** > selezionare un criterio > **P
 - non applicabile Viene visualizzata anche un'immagine che illustra il conteggio dei dispositivi di un'altra piattaforma. Ad esempio, se si sta consultando un profilo iOS, il nuovo riquadro indica il numero di dispositivi non iOS assegnati a questo profilo. Vedere [Criteri di conformità dei dispositivi](compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>La conformità del dispositivo supporta soluzioni antivirus di terze parti <!-- 2325484 -->
-Quando si creano criteri di conformità del dispositivo in **Conformità del dispositivo** > **Criteri** > **Crea criterio** > **Piattaforma: Windows 10 e versioni successive** > **Impostazioni** > **Sicurezza del sistema** sono disponibili nuove opzioni in **[Sicurezza del dispositivo](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)**: 
-- **Antivirus**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando soluzioni antivirus registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. 
-- **Antispyware**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando le soluzioni antispyware registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. 
+Quando si crea un criterio di conformità del dispositivo (**Conformità del dispositivo** > **Criteri** > **Crea criterio** > **Piattaforma: Windows 10 e versioni successive** > **Impostazioni** > **Sicurezza del sistema**), sono disponibili nuove opzioni per **[Sicurezza dei dispositivi](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)**: 
+- **Antivirus**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando le soluzioni antivirus registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. 
+- **AntiSpyware**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando le soluzioni antispyware registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. 
 
 Si applica a: Windows 10 e versioni successive 
 
@@ -830,7 +841,7 @@ I profili di distribuzione di AutoPilot possono essere assegnati ai gruppi di Az
 #### <a name="set-compliance-by-device-location----851881----"></a>Impostare la conformità in base al percorso del dispositivo <!-- 851881 ! -->
 In alcuni casi, potrebbe essere necessario limitare l'accesso alle risorse aziendali a un percorso specifico, definito da una connessione di rete. È ora possibile creare un criterio di conformità (**Conformità del dispositivo** > **Percorsi**) basato sull'indirizzo IP del dispositivo. Se il dispositivo non è più compreso nell'intervallo di IP, non può accedere alle risorse aziendali.
 
-Si applica a: dispositivi Android 6.0 e versioni successive, con l'app Portale aziendale aggiornata
+Si applica a: Dispositivi Android 6.0 e versioni successive, con l'app Portale aziendale aggiornata
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Evitare app ed esperienze consumer nei dispositivi Windows 10 Enterprise RS4 AutoPilot<!-- 1621980 -->
 Sarà possibile impedire l'installazione di app ed esperienze consumer nei dispositivi Windows 10 Enterprise RS4 AutoPilot. Per vedere questa funzionalità, passare a **Intune** > **Configurazione del dispositivo** > **Profili** > **Crea profilo** > **Piattaforma** = **Windows 10 o versione successiva** > **Tipo di profilo** = **Limitazioni del dispositivo** > **Configura** > **Windows Spotlight** > **Funzionalità consumer**. 
@@ -844,7 +855,7 @@ Nel pannello Tutti i dispositivi è ora possibile cercare codici IMEI e numeri d
 #### <a name="management-name-field-will-be-editable----1875989---"></a>Il campo Nome di gestione sarà modificabile <!-- 1875989 -->
 È ora possibile modificare il campo Nome di gestione nel pannello **Proprietà** di un dispositivo. Per modificare questo campo, scegliere **Dispositivi** > **Tutti i dispositivi** > scegliere il dispositivo > **Proprietà**. È possibile usare il campo Nome di gestione per identificare in modo univoco un dispositivo.
 
-#### <a name="new-all-devices-filter-device-category----1878520---"></a>Nuovo filtro per Tutti i dispositivi: Categoria del dispositivo <!-- 1878520 -->
+#### <a name="new-all-devices-filter-device-category----1878520---"></a>Nuovo filtro Tutti i dispositivi: Categoria del dispositivo <!-- 1878520 -->
 È ora possibile filtrare l'elenco **Tutti i dispositivi** per categoria di dispositivi. A tale scopo, scegliere **Dispositivi** > **Tutti i dispositivi** > **Filtro** > **Categoria del dispositivo**.
 
 #### <a name="use-teamviewer-to-screen-share-ios-and-macos-devices----1985547---"></a>Usare TeamViewer per condividere lo schermo dei dispositivi iOS e MacOS <!-- 1985547 -->
@@ -953,14 +964,14 @@ Con questo aggiornamento, [Windows Defender Credential Guard](https://docs.micro
 - **Windows Defender Credential Guard**: attiva Credential Guard con la sicurezza basata su virtualizzazione. Questa funzionalità, se abilitata, consente di proteggere le credenziali al riavvio successivo quando il **livello di sicurezza della piattaforma con avvio protetto** e la **sicurezza basata sulla virtualizzazione** sono entrambi abilitati. Le opzioni includono:
   - **Disabilitato**: se Credential Guard è stato attivato in precedenza con l'opzione **Abilitato senza blocco**, disattiva Credential Guard in modalità remota.
 
-  - **Abilita con blocco UEFI**: garantisce che Credential Guard non possa essere disabilitato con una chiave del Registro di sistema o con Criteri di gruppo. Per disabilitare Credential Guard dopo avere usato questa impostazione, è necessario impostare Criteri di gruppo su "Disabilitato", quindi rimuovere la funzionalità di sicurezza da ogni computer, con un utente fisicamente presente. Questi passaggi cancellano la configurazione permanente in UEFI. Credential Guard rimane abilitato fino a quando è presente la configurazione UEFI.
+  - **Abilitato con blocco UEFI**: garantisce che Credential Guard non possa essere disabilitato con una chiave del Registro di sistema o con Criteri di gruppo. Per disabilitare Credential Guard dopo avere usato questa impostazione, è necessario impostare Criteri di gruppo su "Disabilitato", quindi rimuovere la funzionalità di sicurezza da ogni computer, con un utente fisicamente presente. Questi passaggi cancellano la configurazione permanente in UEFI. Credential Guard rimane abilitato fino a quando è presente la configurazione UEFI.
 
-  - **Abilita senza blocco**: consente di rimuovere Credential Guard in modalità remota usando Criteri di gruppo. È necessario che i dispositivi che usano questa impostazione eseguano Windows 10 (versione 1511 o successiva).
+  - **Abilitato senza blocco**: consente di rimuovere Credential Guard in modalità remota usando Criteri di gruppo. È necessario che i dispositivi che usano questa impostazione eseguano Windows 10 (versione 1511 o successiva).
 
 Quando si configura Credential Guard vengono automaticamente abilitate le tecnologie dipendenti seguenti: 
 
   - **Abilita la sicurezza basata su virtualizzazione**: attiva la sicurezza basata su virtualizzazione al riavvio successivo. La sicurezza basata sulla virtualizzazione usa Windows Hypervisor per offrire il supporto per i servizi di sicurezza e richiede Avvio protetto.
-  - **Avvio protetto con Direct Memory Access (DMA)**: attiva la sicurezza basata sulla virtualizzazione con Avvio protetto e Direct Memory Access. La protezione DMA richiede supporto hardware e viene abilitata solo nei dispositivi configurati correttamente. 
+  - **Secure Boot with Direct Memory Access (DMA)** (Avvio protetto con Direct Memory Access): attiva VBS con Avvio protetto e Direct Memory Access. La protezione DMA richiede supporto hardware e viene abilitata solo nei dispositivi configurati correttamente. 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>Usare un nome oggetto personalizzato sul certificato SCEP <!-- 2064190 -->
 È possibile usare **OnPremisesSamAccountName**, il nome comune in un oggetto personalizzato in un profilo certificato SCEP. È ad esempio possibile usare `CN={OnPremisesSamAccountName})`.
@@ -1042,7 +1053,7 @@ L'app Portale aziendale Intune per Windows 10 è stata aggiornata con la [visual
 
 #### <a name="use-cisco-anyconnect-client-for-ios----1333708---"></a>Usare il client Cisco AnyConnect per iOS <!-- 1333708 -->
 
-Quando si crea un nuovo profilo VPN per iOS, ora sono disponibili due opzioni: **Cisco AnyConnect** e **Cisco Legacy AnyConnect**. I profili di Cisco AnyConnect supportano le versioni 4.0.7x e successive. I profili VPN di Cisco AnyConnect per iOS esistenti vengono contrassegnati con la dicitura **Cisco Legacy AnyConnect** e continuano a funzionare con Cisco AnyConnect 4.0.5x e versioni precedenti come accade oggi.
+Quando si crea un nuovo profilo VPN per iOS, sono disponibili ora due opzioni: **Cisco AnyConnect** e **Cisco Legacy AnyConnect**. I profili di Cisco AnyConnect supportano le versioni 4.0.7x e successive. I profili VPN di Cisco AnyConnect per iOS esistenti vengono contrassegnati con la dicitura **Cisco Legacy AnyConnect** e continuano a funzionare con Cisco AnyConnect 4.0.5x e versioni precedenti come accade oggi.
 
 > [!NOTE]
 > Questa modifica si applica solo a iOS. Continua a esistere una sola opzione Cisco AnyConnect per la piattaforma Android, i profili di lavoro di Android Enterprise e per la piattaforma macOS.
@@ -1097,7 +1108,7 @@ Per visualizzare l'aspetto aggiornato, vedere [Novità dell'interfaccia utente d
 
 ## <a name="notices"></a>Notifiche
 
-### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Modifiche pianificate: il connettore di Exchange Online per Intune non sarà disponibile in Intune <!-- 3105122 -->
+### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Modifica prevista: il connettore di Exchange Online per Intune non sarà disponibile in Intune <!-- 3105122 -->
 Per semplificare l'esperienza con Exchange Online e l'accesso condizionale, verrà disabilitato il connettore 'da servizio a servizio' di Exchange Online per Intune. Questa modifica verrà introdotta nell'aggiornamento del servizio di dicembre e completata con l'aggiornamento del servizio di febbraio 2019.
 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
@@ -1123,7 +1134,7 @@ Se è stato configurato il connettore da servizio a servizio e l'ambiente includ
 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
 
-Per i clienti di Microsoft Intune per Education saranno disponibili due gruppi di Azure Active Directory (Azure AD) dinamici, vale a dire "Tutti gli utenti" e "Tutti i dispositivi". In seguito a questi aggiornamenti, i gruppi di Azure AD "Tutti gli utenti" e "Tutti i dispositivi" non saranno visibili nella console di Microsoft Intune per Education. Lo saranno invece in Intune nella console di Azure e verranno rinominati "Tutti gli utenti (obsoleto, non usare)" e "Tutti i dispositivi (obsoleto, non usare)".
+Per i clienti di Microsoft Intune per Education saranno disponibili due gruppi di Azure Active Directory (Azure AD) dinamici: "Tutti gli utenti" e "Tutti i dispositivi". In seguito a questi aggiornamenti, i gruppi di Azure AD "Tutti gli utenti" e "Tutti i dispositivi" non saranno visibili nella console di Microsoft Intune per Education. Lo saranno invece in Intune nella console di Azure e verranno rinominati "Tutti gli utenti (obsoleto, non usare)" e "Tutti i dispositivi (obsoleto, non usare)".
 
 Dopo la distribuzione degli aggiornamenti, non sarà più necessario usare i gruppi di Azure AD per assegnare le app e le impostazioni in Intune. Le assegnazioni delle impostazioni verranno invece spostate in nuovi gruppi nella console di Microsoft Intune per Education e verranno creati e visualizzati nuovamente con il nome "Tutti gli utenti" e "Tutti i dispositivi". Queste modifiche vengono eseguite nel back-end. Non si noteranno quindi variazioni nella console di Microsoft Intune per Education. Non è previsto alcun impatto sugli utenti finali o sui dispositivi registrati. 
 
@@ -1133,7 +1144,7 @@ Durante lo spostamento delle assegnazioni dei criteri, non è richiesto l'interv
 Se attualmente si assegnano i criteri ai gruppi di Azure AD indicati in precedenza in Intune in Azure, ora è invece necessario assegnarli ai gruppi Tutti gli utenti e Tutti i dispositivi nella console di Microsoft Intune per Education. Quando si nota che i gruppi di Azure AD sono stati rinominati e definiti obsoleti nella console, interrompere l'assegnazione dei criteri in Azure AD. Se attualmente non vi sono motivi per usare i gruppi rinominati, eliminarli.
 
 
-### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Modifica prevista: Intune passerà al supporto di macOS 10.12 e versioni successive nel mese di dicembre <!--2970975--> 
+### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Modifica prevista: Intune passerà al supporto di macOS 10.12 e versioni successive a dicembre <!--2970975--> 
 
 Apple ha appena rilasciato macOS 10.14. Di conseguenza, Intune passerà al supporto di macOS 10.12 e versioni successive nel dicembre 2018. 
 
@@ -1162,6 +1173,8 @@ Per altre informazioni, vedere [Registrare il dispositivo macOS in Intune con l'
  
 
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Modifica prevista: nuova esperienza di supporto Intune per i clienti Premier 
+Aggiornamento del 4/12/18: stiamo cercando di migliorare questo processo per l'utente, quindi la creazione della richiesta di supporto in MPO non verrà disabilitata il 3 dicembre, ma in un secondo momento. Si riceverà una notifica tramite il Centro messaggi e questo post verrà aggiornato presto per condividere le tempistiche di questa modifica.
+
 I clienti Microsoft Premier possono attualmente utilizzare il portale Microsoft Premier Online (MPO) (premier.microsoft.com) e Intune in Azure (portal.azure.com) per creare richieste di supporto per Intune. A partire dal 3 dicembre 2018, nell'ottica di migliorare ulteriormente l'esperienza di supporto dei clienti Premier, sarà possibile creare richieste di supporto solo da Intune in Azure.
 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
@@ -1181,7 +1194,7 @@ Si noti che solo gli utenti con ruoli di amministratore globale, amministratore 
 Per altre informazioni, vedere il [post di blog del team di supporto di Microsoft Intune](https://aka.ms/IntuneSupport_MPO_to_Azure).
 
 
-### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Intervenire: aggiornare le impostazioni delle password per i criteri di limitazione o di conformità dei dispositivi Android in Intune
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Intervieni: aggiornare le impostazioni delle password per i criteri di limitazione o di conformità dei dispositivi Android in Intune
 Intune rimuoverà il tipo di password disponibile "Impostazione predefinita dispositivo" per i dispositivi Android 4.4 e versioni successive. A causa delle differenze tra le piattaforme Android e le impostazioni predefinite dei dispositivi, questo criterio viene spesso considerato facoltativo dal dispositivo. Per evitare confusione per l'applicazione di questa impostazione in Android, questa impostazione verrà rimossa dall'interfaccia utente in una versione futura. 
 #### <a name="how-does-this-affect-me"></a>Quali sono le conseguenze di questa modifica?
 - Se lo scopo è richiedere una password per i dispositivi, invece di usare "Impostazione predefinita dispositivo" è consigliabile modificare i profili di piattaforma Android per specificare chiaramente il tipo di password richiesto.

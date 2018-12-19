@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73be6facab5deb8a09462dc03c4683af3d34c027
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 290d60732130a82fb3daf7779142605ebc0bfeaa
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829233"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53113004"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novità di Microsoft Intune - mesi precedenti
 
@@ -148,7 +148,7 @@ Nella configurazione del dispositivo sono disponibili per la visualizzazione pi�
    Abilitare questa modalità per impedire che il computer risponde alle richieste di probe. Il computer risponde comunque alle richieste in ingresso provenienti da app autorizzate. Le richieste impreviste, ad esempio le richieste ICMP (ping), vengono ignorate.
 
 #### <a name="disable-checks-on-device-restart---1805490---"></a>Disabilitare i controlli al riavvio del dispositivo <!--1805490 -->
-Intune consente di controllare [manage software updates]](windows-update-for-business-configure.md). Con questo aggiornamento, la proprietà <strong>Verifiche al riavvio</strong> è disponibile e abilitata per impostazione predefinita. Per ignorare i controlli che vengono eseguiti generalmente quando si riavvia un dispositivo, come ad esempio gli utenti attivi, i livelli di batteria e così via, selezionare <strong>Ignora</strong>.
+Intune consente di [gestire gli aggiornamenti software](windows-update-for-business-configure.md). Con questo aggiornamento, la proprietà <strong>Verifiche al riavvio</strong> è disponibile e abilitata per impostazione predefinita. Per ignorare i controlli che vengono eseguiti generalmente quando si riavvia un dispositivo, come ad esempio gli utenti attivi, i livelli di batteria e così via, selezionare <strong>Ignora</strong>.
 
 #### <a name="new-windows-10-insider-preview-channels-available-for-deployment-rings----1746293---"></a>Nuovi canali Windows 10 Insider Preview disponibili per gli anelli di distribuzione <!-- 1746293 -->
 Durante la creazione di un anello di distribuzione Windows 10 è ora possibile selezionare i canali di servizio Windows 10 Insider Preview seguenti:
@@ -180,7 +180,7 @@ Crea profilo\Endpoint Protection\Windows Defender Exploit Guard.
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Protezione delle cartelle (già implementata) | Non configurato, Abilita, Solo controllo (già implementata)<br><br> <strong>Nuove</strong><br>Blocco della modifica del disco, controllo della modifica del disco |             |
 
-Proteggere file e cartelle da modifiche non autorizzate eseguite da applicazioni non compatibili.<br><br>**Abilitare**: impedire alle app non attendibili di modificare o eliminare file nelle cartelle protette e di scrivere nei settori del disco.<br><br>
+Proteggere file e cartelle da modifiche non autorizzate eseguite da applicazioni non compatibili.<br><br>**Abilita**: impedire alle app non attendibili di modificare o eliminare file nelle cartelle protette e di scrivere nei settori del disco.<br><br>
 **Bloccare solo la modifica del disco**:<br>Impedire alle app non attendibili di scrivere nei settori del disco. Le app non attendibili possono ancora modificare o eliminare i file nelle cartelle protette.|
 
 ### <a name="intune-apps"></a>App di Intune
@@ -213,9 +213,9 @@ Se il dispositivo esegue Windows 10 RS1 o versione successiva, scaricare la vers
 
 #### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Nuove impostazioni di Windows Defender Application Guard <!-- 1631890 -->
 
-- **Abilitare l'accelerazione grafica**: gli amministratori possono attivare un processore di grafica virtuale per Windows Defender Application Guard. Questa impostazione consente alla CPU di passare il rendering della grafica alla vGPU. Ciò può migliorare le prestazioni durante l'uso di siti Web con molta grafica o la riproduzione di video all'interno del contenitore.
+- **Abilitare l'accelerazione grafica**: Gli amministratori possono attivare un processore di grafica virtuale per Windows Defender Application Guard. Questa impostazione consente alla CPU di passare il rendering della grafica alla vGPU. Ciò può migliorare le prestazioni durante l'uso di siti Web con molta grafica o la riproduzione di video all'interno del contenitore.
 
-- **Salvare i file su host**: gli amministratori possono consentire il passaggio dei file da Microsoft Edge in esecuzione nel contenitore al file system dell'host. L'attivazione di questa impostazione consente agli utenti di scaricare i file da Microsoft Edge nel contenitore nel file system dell'host.
+- **Salva file nell'host**: gli amministratori possono consentire il passaggio dei file da Microsoft Edge in esecuzione nel contenitore al file system dell'host. L'attivazione di questa impostazione consente agli utenti di scaricare i file da Microsoft Edge nel contenitore nel file system dell'host.
 
 #### <a name="mam-protection-policies-targeted-based-on-management-state----1665993---"></a>Criteri di protezione MAM assegnati in base allo stato di gestione <!-- 1665993 -->
 È possibile assegnare i criteri MAM in base allo stato di gestione del dispositivo:
@@ -233,10 +233,10 @@ Per altre informazioni, vedere [Target app protection policies based on device m
 #### <a name="new-additions-to-our-docs-about-user-privacy----1440709---"></a>Nuove aggiunte alla documentazione sulla privacy dell'utente <!-- 1440709 -->
 Per offrire agli utenti finali un maggior controllo sui dati e sulla privacy, sono stati pubblicati aggiornamenti alla documentazione che descrivono come visualizzare e rimuovere i dati archiviati in locale dalle app del portale aziendale. Questi aggiornamenti sono disponibili in:
 
-- **Android**: [Come annullare la registrazione del dispositivo Android da Intune](/intune-user-help/unenroll-your-device-from-intune-android.md)
-- **Android, se l'utente ha rifiutato le condizioni per l'utilizzo**: [Annullare la registrazione del dispositivo se sono state rifiutate le Condizioni per l'utilizzo](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
-- **iOS**: [Annullare la registrazione del dispositivo iOS da Intune](/intune-user-help/unenroll-your-device-from-intune-ios.md)
-- **Windows**: [Annullare la registrazione del dispositivo Windows da Intune](/intune-user-help/unenroll-your-device-from-intune-windows.md)
+- **Android**: [Come rimuovere il dispositivo Android da Intune](/intune-user-help/unenroll-your-device-from-intune-android)
+- **Android, se l'utente ha rifiutato le condizioni per l'utilizzo**: [Rimuovere il dispositivo dalla gestione se sono state rifiutate le Condizioni per l'utilizzo](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
+- **iOS**: [Rimuovere il dispositivo iOS da Intune](/intune-user-help/unenroll-your-device-from-intune-ios)
+- **Windows**: [Rimuovere il dispositivo Windows da Intune](/intune-user-help/unenroll-your-device-from-intune-windows)
 
 ## <a name="february-2018"></a>Febbraio 2018
 
@@ -298,7 +298,7 @@ Sono ora disponibili [due nuove impostazioni di privacy](device-restrictions-win
 - **Solo attività locali**: impostare l'opzione su **Blocca** per impedire le esperienze condivise e l'individuazione delle ultime risorse usate nel cambio modalità solo per l'attività locale.
 
 #### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Nuove impostazioni per il browser Microsoft Edge <!--1469166 -->
-Sono ora disponibili [due nuove impostazioni](device-restrictions-windows-10.md#microsoft-edge-browser) per il **percorso del file dei Preferiti** e le **modifiche a Preferiti** per i dispositivi con browser Microsoft Edge.
+Sono ora disponibili [due nuove impostazioni](device-restrictions-windows-10.md#microsoft-edge-browser) per i dispositivi con browser Microsoft Edge: **Path to favorites file** (Percorso del file dei preferiti) e **Changes to Favorites** (Modifiche ai preferiti).
 
 ### <a name="app-management"></a>Gestione delle app
 
@@ -353,7 +353,7 @@ Ad esempio, l'account della risorsa potrebbe essere visualizzato come **Sala riu
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Protezione delle cartelle (già implementata) | Non configurato, Abilita, Solo controllo (già implementata)<br><br> <strong>Nuove</strong><br>Blocco della modifica del disco, controllo della modifica del disco |             |
 
-Proteggere file e cartelle da modifiche non autorizzate eseguite da applicazioni non compatibili.<br><br>**Abilitare**: impedire alle app non attendibili di modificare o eliminare file nelle cartelle protette e di scrivere nei settori del disco.<br><br>
+Proteggere file e cartelle da modifiche non autorizzate eseguite da applicazioni non compatibili.<br><br>**Abilita**: impedire alle app non attendibili di modificare o eliminare file nelle cartelle protette e di scrivere nei settori del disco.<br><br>
 **Bloccare solo la modifica del disco**:<br>Impedire alle app non attendibili di scrivere nei settori del disco. Le app non attendibili possono ancora modificare o eliminare i file nelle cartelle protette.|
 
 #### <a name="additions-to-system-security-settings-for-windows-10-and-later-compliance-policies---1704133--"></a>Nuove impostazioni di sicurezza del sistema per Windows 10 e nuovi criteri di conformità <!--1704133-->
@@ -939,7 +939,7 @@ Ora è possibile eseguire un'**analisi veloce**, un'**analisi completa** e l'**a
 
 **Analisi completa**: l'analisi completa può essere utile nei dispositivi in cui sono state riscontrate minacce malware per identificare se sono presenti componenti inattivi che richiedono una pulizia più approfondita ed è utile per l'esecuzione di analisi su richiesta. L'analisi completa può richiedere un'ora. Al termine dell'analisi, gli utenti visualizzano i risultati sui dispositivi. 
 
-**Aggiornare le firme**: il comando di aggiornamento delle firme aggiorna le definizioni e le firme malware di Windows Defender Antivirus, garantendo l'efficacia nel rilevamento di malware. Questa funzionalità è applicabile solo ai dispositivi Windows 10 con connettività Internet. 
+**Update signatures** (Aggiorna le firme): il comando di aggiornamento delle firme aggiorna le definizioni e le firme malware di Windows Defender Antivirus, garantendo l'efficacia nel rilevamento di malware. Questa funzionalità è applicabile solo ai dispositivi Windows 10 con connettività Internet. 
 
 ### <a name="the-enabledisable-button-is-removed-from-the-intune-certificate-authority-page-of-the-intune-azure-portal-----1400455---"></a>Il pulsante Abilita/Disabilita viene rimosso dalla pagina Autorità di certificazione nel portale di Intune di Azure  <!-- 1400455 -->
  È stato eliminato un passaggio aggiuntivo nella configurazione del Connettore di certificati di Intune. Attualmente è necessario scaricare il Connettore di certificati e quindi abilitarlo nella console di Intune. Se tuttavia si disattiva il connettore nella console di Intune, questo continua a emettere certificati.
@@ -1039,7 +1039,7 @@ Nella modalità di mantenimento, queste app ricevono solo aggiornamenti della si
 
 ### <a name="block-unsupported-samsung-knox-device-enrollment----1490695---"></a>Bloccare la registrazione di dispositivi Samsung Knox non supportati  <!-- 1490695 -->
 
-L'app Portale aziendale tenta di registrare solo i dispositivi Samsung Knox supportati. Per evitare errori di attivazione Knox che impediscono la registrazione MDM, la registrazione del dispositivo viene eseguita solo se il dispositivo viene visualizzato nell'[elenco di dispositivi pubblicato da Samsung](https://www.samsungknox.com/knox-supported-devices/knox-workspace). I dispositivi Samsung possono avere numeri di modello che supportano Knox oppure no. Verificare la compatibilità Knox con il rivenditore del dispositivo prima dell'acquisto e della distribuzione. È possibile trovare l'elenco completo dei dispositivi verificati nelle [impostazioni dei criteri Android e Samsung Knox Standard](/intune/supported-devices-browsers.md#intune-supported-web-browsers).
+L'app Portale aziendale tenta di registrare solo i dispositivi Samsung Knox supportati. Per evitare errori di attivazione Knox che impediscono la registrazione MDM, la registrazione del dispositivo viene eseguita solo se il dispositivo viene visualizzato nell'[elenco di dispositivi pubblicato da Samsung](https://www.samsungknox.com/knox-supported-devices/knox-workspace). I dispositivi Samsung possono avere numeri di modello che supportano Knox oppure no. Verificare la compatibilità Knox con il rivenditore del dispositivo prima dell'acquisto e della distribuzione. È possibile trovare l'elenco completo dei dispositivi verificati nelle [impostazioni dei criteri Android e Samsung Knox Standard](supported-devices-browsers.md#intune-supported-web-browsers).
 
 ### <a name="end-of-support-for-android-43-and-lower----1171126-1326920---"></a>Fine del supporto per Android 4.3 e versioni precedenti <!-- 1171126, 1326920 -->
 Le app gestite e l'app Portale aziendale per Android richiederanno Android 4.4 e versioni successive per l'accesso alle risorse aziendali. A dicembre, a tutti i dispositivi registrati verrà imposto il ritiro, con conseguente perdita dell'accesso alle risorse aziendali. Se si usano criteri di protezione delle app senza MDM, le app non riceveranno gli aggiornamenti e la qualità delle loro prestazioni diminuirà nel tempo.
@@ -1177,13 +1177,13 @@ Con questa versione, gli amministratori possono ora assegnare Microsoft Store pe
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-1--"></a>Aggiornamenti dell'interfaccia utente del sito Web del portale aziendale <!--1313244 part 1-->
 Sono stati introdotti vari aggiornamento all'interfaccia utente del [sito Web portale aziendale](https://portal.manage.microsoft.com) per migliorare l'esperienza per gli utenti finali.
 
-- __Miglioramenti per i riquadri delle app__: le icone delle app verranno ora visualizzate con uno sfondo generato automaticamente in base al colore dominante dell'icona, se rilevabile. Se applicabile, questo sfondo sostituisce il bordo grigio precedentemente visibile nei riquadri delle app.
+- __Miglioramenti apportati ai riquadri delle app__:  le icone delle app verranno ora visualizzate con uno sfondo generato automaticamente in base al colore dominante dell'icona, se rilevabile. Se applicabile, questo sfondo sostituisce il bordo grigio precedentemente visibile nei riquadri delle app.
 
     In una versione futura è previsto che il sito Web del portale aziendale visualizzi le icone grandi ogniqualvolta possibile. È consigliabile che gli amministratori IT pubblichino app con icone ad alta risoluzione di dimensioni minime pari a 120x120 pixel. 
 
 - __Modifiche alla struttura di spostamento__: gli elementi della barra di spostamento sono stati spostati nel menu hamburger in alto a sinistra. La pagina delle categorie è stata rimossa. Gli utenti possono ora filtrare il contenuto in base alla categoria durante l'esplorazione.
 
-- __Aggiornamenti per le app in primo piano__: è stata aggiunta una pagina dedicata nel sito, nella quale gli utenti possono visualizzare le app che hanno scelto di mettere in primo piano e sono state apportate alcune modifiche all'interfaccia utente della sezione In primo piano nella home page.
+- __Aggiornamenti per le app in primo piano__: È stata aggiunta una pagina dedicata nel sito, nella quale gli utenti possono visualizzare le app che hanno scelto di mettere in primo piano e sono state apportate alcune modifiche all'interfaccia utente della sezione In primo piano nella home page.
 
 ### <a name="ibooks-support-for-the-company-portal-website---1231841--"></a>Supporto di iBooks per il sito Web del portale aziendale <!--1231841-->
 È stata aggiunta una pagina dedicata al sito Web del portale aziendale che consente agli utenti di visualizzare e scaricare iBooks. 
@@ -1548,7 +1548,7 @@ Intune aggiunge nuove limitazioni di registrazione che consentono di controllare
 * La limitazione della registrazione di dispositivi mobili non limita la registrazione di client PC.  
 * Solo per iOS e Android è disponibile un'altra opzione che consente di bloccare la registrazione dei dispositivi personali.
 
-Intune contrassegna tutti i nuovi dispositivi come personali, a meno che l'amministratore IT non esegua un'operazione per contrassegnarli come aziendali, come spiegato in [questo articolo](https://docs.microsoft.com/intune-classic/deploy-use/manage-corporate-owned-devices).
+Intune contrassegna tutti i nuovi dispositivi come personali, a meno che l'amministratore IT non esegua un'operazione per contrassegnarli come aziendali, come spiegato in [questo articolo](device-enrollment.md).
 
 ### <a name="view-all-actions-on-managed-devices---677150--"></a>Visualizzare tutte le azioni nei dispositivi gestiti <!--677150-->
 Il nuovo report __Azioni del dispositivo__ mostra gli utenti che hanno eseguito azioni remote come il ripristino delle impostazioni predefinite nei dispositivi e lo stato dell'azione. Vedere [Informazioni sulla gestione dei dispositivi in Microsoft Intune](device-management.md).

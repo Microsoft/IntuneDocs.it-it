@@ -1,28 +1,32 @@
 ---
-title: Restrizioni dei dispositivi del profilo di lavoro Android in Microsoft Intune - Azure | Microsoft Docs
-description: Nei dispositivi con profilo Android Enterprise è possibile limitare alcune impostazioni del dispositivo, tra cui copia e incolla, visualizzazione delle notifiche, autorizzazioni delle app, condivisione dei dati, lunghezza della password, errori di accesso, uso dell'impronta digitale per sbloccare, riutilizzo delle password e abilitazione della condivisione dei contatti di lavoro con Bluetooth.
+title: Impostazioni dei dispositivi Android Enterprise in Microsoft Intune - Azure | Microsoft Docs
+description: Nei dispositivi Android Enterprise o Android for Work limitare le impostazioni del dispositivo, tra cui copia e incolla, visualizzazione delle notifiche, autorizzazioni delle app, condivisione dei dati, lunghezza della password, errori di accesso, uso dell'impronta digitale per sbloccare, riutilizzo delle password e abilitazione della condivisione dei contatti di lavoro con Bluetooth. Configurare i dispositivi come chiosco multimediale per eseguire una sola app o più App.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5f153e738aff28cae6481c0502f0682d10b8f104
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: intune-azure, seodec18
+ms.openlocfilehash: c9e2e0df79625329310171c509327395989f3a7c
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729093"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032538"
 ---
-# <a name="work-device-restriction-settings-in-intune"></a>Impostazioni relative alle restrizioni dei dispositivi Android for Work in Intune
+# <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
-Questo articolo illustra le impostazioni delle restrizioni dei dispositivi Microsoft Intune configurabili per i dispositivi con profilo Android Enterprise.
+Questo articolo descrive le diverse impostazioni che è possibile controllare nei dispositivi Android Enterprise. Usare queste impostazioni nella propria soluzione di gestione di dispositivi mobili (MDM) per abilitare o disabilitare funzionalità, eseguire app in modalità tutto schermo, controllare le impostazioni di sicurezza e altro ancora.
+
+## <a name="before-you-begin"></a>Prima di iniziare
+
+[Creare un profilo di configurazione del dispositivo](device-restrictions-configure.md).
 
 ## <a name="device-owner-only"></a>Solo proprietario del dispositivo
 
@@ -37,7 +41,7 @@ Questo articolo illustra le impostazioni delle restrizioni dei dispositivi Micro
   - **Nega automaticamente**: le autorizzazioni vengono negate automaticamente.
 - **Modifiche a data e ora**: scegliere **Blocca** per impedire agli utenti di impostare manualmente la data e ora. **Non configurata** consente agli utenti di impostare data e ora nel dispositivo.
 - **Modifiche al volume**: scegliere **Blocca** per impedire agli utenti di modificare il volume del dispositivo. **Non configurata** consente l'uso delle impostazioni del volume nel dispositivo.
-- **Ripristino delle impostazioni predefinite**: scegliere **Blocca** per impedire agli utenti di usare l'opzione per il ripristino delle impostazioni predefinite nel dispositivo. **Non configurata** consente agli utenti di usare questa impostazione nel dispositivo.
+- **Ripristino impostazioni predefinite**: scegliere **Blocca** per impedire agli utenti di usare l'opzione per il ripristino delle impostazioni predefinite nel dispositivo. **Non configurata** consente agli utenti di usare questa impostazione nel dispositivo.
 - **Modalità provvisoria**: scegliere **Blocca** per impedire agli utenti di riavviare il dispositivo in modalità provvisoria. **Non configurata** consente agli utenti di riavviare il dispositivo in modalità sicura.
 - **Barra di stato**: scegliere **Blocca** per impedire l'accesso alla barra di stato, incluse le notifiche e le impostazioni rapide. **Non configurata** consente agli utenti di accedere alla barra di stato.
 - **Servizi per dati in roaming**: scegliere **Blocca** per impedire il roaming dei dati nella rete cellulare. **Non configurata** consente il roaming dati quando il dispositivo si trova in una rete cellulare.
@@ -60,7 +64,7 @@ Questo articolo illustra le impostazioni delle restrizioni dei dispositivi Micro
 
   **Non configurata** impedisce agli utenti di attivare la funzionalità di rete di emergenza nel dispositivo.
 
-- **Consenti l'installazione da origini sconosciute**: scegliere **Consenti** in modo che gli utenti possano attivare **Origini sconosciute**. Questa impostazione consente l'installazione di app da origini sconosciute. **Non configurata** impedisce agli utenti di attivare **Origini sconosciute**.
+- **Consenti l'installazione da origini sconosciute**: scegliere **Consenti** per permettere agli utenti di attivare le **origini sconosciute**. Questa impostazione consente l'installazione di app da origini sconosciute. **Non configurata** impedisce agli utenti di attivare **Origini sconosciute**.
 - **Aggiornamento del sistema**: scegliere un'opzione per definire la modalità di gestione degli aggiornamenti in modalità wireless da parte del dispositivo:
   - **Impostazione predefinita dispositivo**: usare l'impostazione predefinita del dispositivo.
   - **Automatico**: gli aggiornamenti vengono installati automaticamente senza l'intervento dell'utente. L'impostazione del criterio consente di installare immediatamente eventuali aggiornamenti in sospeso.
@@ -115,7 +119,7 @@ Questo articolo illustra le impostazioni delle restrizioni dei dispositivi Micro
     
     **Disabilita** non offre la possibilità di sospendere la modalità tutto schermo. Se l'amministratore continua a selezionare il pulsante Indietro e seleziona il pulsante "Exit Kiosk" (Esci da modalità tutto schermo), un messaggio segnala che è richiesto un passcode.
     
-    - **Codice di uscita dalla modalità tutto schermo**: immettere un PIN numerico da 4-6 cifre. L'amministratore usa questo PIN per sospendere temporaneamente la modalità tutto schermo.
+    - **Codice di uscita dalla modalità tutto schermo**: immettere un PIN numerico da 4 a 6 cifre. L'amministratore usa questo PIN per sospendere temporaneamente la modalità tutto schermo.
  
   - **Imposta uno sfondo personalizzato per l'URL**: immettere un URL per personalizzare la schermata di sfondo nel dispositivo in modalità tutto schermo.
 
@@ -128,13 +132,13 @@ Questo articolo illustra le impostazioni delle restrizioni dei dispositivi Micro
   - **Almeno alfabetico**
   - **Almeno alfanumerico**
   - **Almeno alfanumerico con simboli**
-- **Lunghezza minima password**: immettere la lunghezza minima della password che l'utente deve configurare (da 4 a 16 caratteri).
-- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di errori di accesso consentiti prima della cancellazione del dispositivo (da 1 a 11).
+- **Lunghezza minima password**: Immettere la lunghezza minima della password che l'utente deve immettere, da 4 a 16 caratteri.
+- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di accessi non riusciti consentiti prima della cancellazione del dispositivo (da 1 a 11).
 
 ### <a name="power-settings"></a>Impostazioni di risparmio energia
 
-- **Time to lock screen** (Tempo per schermata di blocco): impostare la quantità di tempo di inattività necessaria affinché il dispositivo venga bloccato.
-- **Screen on while device plugged in** (Schermata attiva con dispositivo alimentato): scegliere i tipi di alimentazione che mantengono attiva la schermata del dispositivo alimentato.
+- **Tempo per la schermata di blocco**: impostare l'intervallo di tempo di inattività necessario perché il dispositivo venga bloccato.
+- **Schermata attivata con dispositivo collegato**: scegliere i tipi di alimentazione che mantengono attiva la schermata del dispositivo collegato.
 
 ### <a name="users-and-accounts-settings"></a>Impostazioni di utenti e account
 
@@ -148,14 +152,14 @@ Questo articolo illustra le impostazioni delle restrizioni dei dispositivi Micro
 
 #### <a name="general"></a>Generale
 
-- **Copia e incolla tra il profilo di lavoro e il profilo personale**: scegliere **Blocca** per impedire le operazioni di copia e incolla tra app aziendali e personali. **Non configurata** consente agli utenti di condividere i dati tramite copia e incolla con le app nel profilo personale 
-- **Condivisione dei dati tra i profili di lavoro e personali**: scegliere se le app nel profilo di lavoro possono condividere dati con le app nel profilo personale. Ad esempio, è possibile controllare le azioni di condivisione all'interno delle applicazioni, come l'opzione **Condividi** nell'app browser Chrome. Questa impostazione non si applica al comportamento di copia/incolla degli Appunti. Opzioni per la condivisione:
+- **Copia e incolla tra il profilo di lavoro e il profilo personale**: scegliere **Blocca** per impedire le attività di tipo copia e incolla tra le app di lavoro e quelle personali. **Non configurata** consente agli utenti di condividere i dati tramite copia e incolla con le app nel profilo personale 
+- **Condivisione dei dati tra i profili di lavoro e personali**: scegliere se le app del profilo di lavoro possono condividere i dati con le app del profilo personale. Ad esempio, è possibile controllare le azioni di condivisione all'interno delle applicazioni, come l'opzione **Condividi** nell'app browser Chrome. Questa impostazione non si applica al comportamento di copia/incolla degli Appunti. Opzioni per la condivisione:
   - **Restrizioni predefinite per la condivisione**: comportamento di condivisione predefinito del dispositivo che varia in base alla versione di Android. Per impostazione predefinita, la condivisione dal profilo personale al profilo di lavoro è consentita. Per impostazione predefinita, la condivisione dal profilo di lavoro al profilo personale è bloccata. Questa impostazione impedisce la condivisione di dati dal profilo di lavoro al profilo personale. Nei dispositivi che eseguono la versione 6.0 e successive Google non blocca la condivisione dal profilo personale al profilo di lavoro.
-  - **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**: questa opzione abilita la funzionalità Android predefinita che consente la condivisione dal profilo personale al profilo di lavoro. Quando questa opzione è abilitata, una richiesta di condivisione da un'app nel profilo personale supporta la condivisione con app nel profilo di lavoro. Questa impostazione rappresenta il comportamento predefinito per i dispositivi Android che eseguono versioni precedenti alla 6.0.
+  - **Le app nel profilo di lavoro possono gestire una richiesta di condivisione dal profilo personale**: abilita la funzionalità di Android predefinita che consente la condivisione dal profilo personale a quello di lavoro. Quando questa opzione è abilitata, una richiesta di condivisione da un'app nel profilo personale supporta la condivisione con app nel profilo di lavoro. Questa impostazione rappresenta il comportamento predefinito per i dispositivi Android che eseguono versioni precedenti alla 6.0.
   - **Consenti la condivisione tra limiti**: abilita la condivisione tra i limiti del profilo di lavoro in entrambe le direzioni. Quando si seleziona questa impostazione, le app nel profilo di lavoro possono condividere dati con app senza badge nel profilo personale. Questa impostazione consente la condivisione tra le app gestite nel profilo di lavoro e le app nella parte non gestita del dispositivo. Usare quindi questa impostazione con cautela.
 
 - **Notifiche del profilo di lavoro durante il blocco del dispositivo**: controlla se le app del profilo di lavoro possono visualizzare dati nelle notifiche quando il dispositivo è bloccato. **Blocca** impedisce la visualizzazione dei dati. **Non configurata** consente di visualizzare i dati.
-- **Autorizzazioni delle app predefinite**: imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro. A partire da Android 6, all'utente viene richiesto di concedere alcune autorizzazioni richieste dalle app, all'avvio dell'app. Questa impostazione dei criteri consente di decidere se richiedere agli utenti di concedere autorizzazioni per tutte le app nel profilo di lavoro. Ad esempio, si può assegnare al profilo di lavoro un'app che richiede l'accesso alla posizione. In genere, un'app di questo tipo richiede all'utente di concedere o negare l'accesso alla posizione all'app. Usare questo criterio per concedere o negare automaticamente le autorizzazioni senza richiesta oppure per lasciar decidere all'utente finale. Scegliere tra:
+- **Autorizzazioni delle app predefinite**: Imposta i criteri di autorizzazione predefiniti per tutte le app del profilo di lavoro. A partire da Android 6, all'utente viene richiesto di concedere alcune autorizzazioni richieste dalle app, all'avvio dell'app. Questa impostazione dei criteri consente di decidere se richiedere agli utenti di concedere autorizzazioni per tutte le app nel profilo di lavoro. Ad esempio, si può assegnare al profilo di lavoro un'app che richiede l'accesso alla posizione. In genere, un'app di questo tipo richiede all'utente di concedere o negare l'accesso alla posizione all'app. Usare questo criterio per concedere o negare automaticamente le autorizzazioni senza richiesta oppure per lasciar decidere all'utente finale. Scegliere tra:
   - **Impostazione predefinita dispositivo**
   - **Messaggio di richiesta**
   - **Concedi automaticamente**
@@ -163,13 +167,13 @@ Questo articolo illustra le impostazioni delle restrizioni dei dispositivi Micro
 
   È anche possibile usare un criterio di configurazione dell'app per concedere le autorizzazioni per le singole app (**App client** > **Criteri di configurazione dell'app**).
 
-- **Aggiungi e rimuovi account**: scegliere **Blocca** per impedire agli utenti finali di aggiungere o rimuovere manualmente account nel profilo di lavoro. Ad esempio, quando si distribuisce l'app Gmail in un profilo di lavoro Android, è possibile impedire agli utenti finali di aggiungere o rimuovere account in questo profilo di lavoro. **Non configurata** consente di aggiungere account nel profilo di lavoro.  
+- **Aggiungi o rimuovi account**: scegliere **Blocca** per impedire agli utenti finali di aggiungere o rimuovere manualmente account nel profilo di lavoro. Ad esempio, quando si distribuisce l'app Gmail in un profilo di lavoro Android, è possibile impedire agli utenti finali di aggiungere o rimuovere account in questo profilo di lavoro. **Non configurata** consente di aggiungere account nel profilo di lavoro.  
 
 - **Condivisione dei contatti tramite Bluetooth**: abilita l'accesso ai contatti di lavoro da un altro dispositivo, ad esempio un'automobile, che viene associato tramite Bluetooth. Per impostazione predefinita, questa impostazione non è configurata e i contatti dei profili di lavoro non sono visualizzati. Selezionare **Abilita** per consentire la condivisione e visualizzare i contatti dei profili di lavoro. Questa impostazione si applica ai dispositivi dei profili di lavoro Android in sistemi operativi Android 6.0 e versioni successive. L'abilitazione di questa impostazione può consentire a determinati dispositivi Bluetooth di memorizzare nella cache i contatti di lavoro al momento della prima connessione. Se si disabilita questo criterio dopo un'associazione/sincronizzazione iniziale, i contatti di lavoro potrebbero non essere rimossi da un dispositivo Bluetooth.
 
 - **Acquisizione schermo**: scegliere **Blocca** per impedire screenshot o acquisizioni di schermate nel dispositivo nel profilo di lavoro. Impedisce anche la visualizzazione del contenuto nei dispositivi di visualizzazione privi di output video protetto. **Non configurata** consente l'acquisizione di screenshot.
 
-- **Visualizzare l'ID chiamante del contatto di lavoro nel profilo personale**: se abilitata (**Non configurata**), i dettagli del chiamante del contatto di lavoro vengono visualizzati nel profilo personale. Se impostata su **Blocca**, il numero del chiamante del contatto di lavoro non viene visualizzato nel profilo personale. Si applica ai sistemi operativi Android 6.0 e versioni successive.
+- **Mostra l'ID chiamante del contatto nel profilo personale**: se abilitati (**Non configurata**), i dettagli del chiamante del contatto di lavoro vengono visualizzati nel profilo personale. Se impostata su **Blocca**, il numero del chiamante del contatto di lavoro non viene visualizzato nel profilo personale. Si applica ai sistemi operativi Android 6.0 e versioni successive.
 
 - **Cerca contatti di lavoro dal profilo personale**: scegliere **Blocca** per impedire agli utenti di cercare i contatti di lavoro nelle app nel profilo personale. **Non necessario** consente di cercare i contatti di lavoro nel profilo personale.
 
@@ -179,9 +183,9 @@ Questo articolo illustra le impostazioni delle restrizioni dei dispositivi Micro
 
 - **Richiedi la password del profilo di lavoro**: si applica ad Android 7.0 e versioni successive con il profilo di lavoro abilitato. Scegliere **Rendi obbligatorio** per immettere criteri di passcode validi solo per le app nel profilo di lavoro. Per impostazione predefinita, l'utente finale può usare i due PIN definiti separatamente oppure scegliere di combinarli nel PIN più complesso. **Non configurata** consente all'utente di usare le app di lavoro, senza immettere una password.
 - **Lunghezza minima password**: immettere il numero minimo di caratteri che le password utente devono avere (**4**-**16**).
-- **Numero massimo di minuti di inattività fino al blocco del profilo di lavoro**: selezionare la quantità di tempo che deve trascorrere prima che il profilo di lavoro si blocchi. L'utente deve quindi immettere le credenziali per riottenere l'accesso.
-- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: specificare il numero di tentativi di immissione di una password errata prima che il profilo di lavoro venga cancellato dal dispositivo.
-- **Scadenza password (giorni)**: immettere il numero di giorni di validità della password prima che sia necessario modificarla (da **1**-**255**) .
+- **Numero massimo di minuti di inattività fino al blocco del profilo di lavoro**: selezionare l'intervallo di tempo che deve trascorrere prima che il profilo di lavoro venga bloccato. L'utente deve quindi immettere le credenziali per riottenere l'accesso.
+- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di tentativi di immissione di una password errata ripetuti prima che il profilo di lavoro venga cancellato dal dispositivo.
+- **Scadenza password (giorni)**: immettere il numero di giorni di validità della password prima che sia necessario modificarla (**1**-**255**).
 - **Tipo di password richiesto**: selezionare il tipo di password che deve essere impostato nel dispositivo. Scegliere tra:
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
@@ -191,7 +195,7 @@ Questo articolo illustra le impostazioni delle restrizioni dei dispositivi Micro
   - **Almeno alfabetico**
   - **Almeno alfanumerico**
   - **Almeno alfanumerico con simboli**
-- **Impedisci il riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo (da **1**-**24**).
+- **Impedisci riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo (**1**-**24**).
 - **Sblocco con impronta digitale**: scegliere **Blocca** per impedire agli utenti finali di usare lo scanner di impronta digitale del dispositivo per sbloccarlo. **Non configurata** consente agli utenti di sbloccare i dispositivi con un'impronta digitale nel profilo di lavoro.
 - **Smart Lock e altri agenti di attendibilità**: scegliere **Blocca** per impedire a Smart Lock o altri agenti di attendibilità di modificare le impostazioni della schermata di blocco nei dispositivi compatibili. Questa funzionalità, nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se il dispositivo si trova in una posizione attendibile. Ad esempio, ignorare la password del profilo di lavoro quando il dispositivo è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. Usare questa impostazione per impedire agli utenti di configurare Smart Lock.
 
@@ -200,9 +204,9 @@ Questo articolo illustra le impostazioni delle restrizioni dei dispositivi Micro
 Queste impostazioni per le password si applicano ai profili personali nei dispositivi che usano un profilo di lavoro.
 
 - **Lunghezza minima password**: immettere il numero minimo di caratteri che le password utente devono avere (**4**-**14**).
-- **Numero massimo di minuti di inattività fino al blocco dello schermo**: selezionare il periodo di tempo che deve trascorrere prima che un dispositivo inattivo si blocchi automaticamente
-- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: specificare il numero di tentativi di immissione di una password errata prima che i dati vengano cancellati dal dispositivo
-- **Scadenza password (giorni)**: immettere il numero di giorni di validità della password prima che sia necessario modificarla (da **1**-**255**)
+- **Numero massimo di minuti di inattività fino al blocco dello schermo**: selezionare l'intervallo di tempo prima che un dispositivo inattivo si blocchi automaticamente
+- **Numero di errori di accesso prima della cancellazione dei dati del dispositivo**: immettere il numero di tentativi di immissione di una password errata ripetuti prima che tutti i dati vengano cancellati dal dispositivo
+- **Scadenza password (giorni)**: immettere il numero di giorni di validità della password prima che sia necessario modificarla (**1**-**255**)
 - **Tipo di password richiesto**: selezionare il tipo di password che deve essere impostato nel dispositivo. Scegliere tra:
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
@@ -212,7 +216,7 @@ Queste impostazioni per le password si applicano ai profili personali nei dispos
   - **Almeno alfabetico**
   - **Almeno alfanumerico**
   - **Almeno alfanumerico con simboli**
-- **Impedisci il riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo (da **1**-**24**).
+- **Impedisci riutilizzo delle password precedenti**: immettere il numero di nuove password da usare prima che una password precedente possa essere usata di nuovo (**1**-**24**).
 - **Sblocco con impronta digitale**: scegliere **Blocca** per impedire all'utente finale di usare lo scanner di impronta digitale del dispositivo per sbloccarlo. **Non configurata** consente all'utente di sbloccare il dispositivo tramite impronta digitale.
 - **Smart Lock e altri agenti di attendibilità**: scegliere **Blocca** per impedire a Smart Lock o altri agenti di attendibilità di modificare le impostazioni della schermata di blocco nei dispositivi compatibili. Questa funzionalità, nota anche come agente di attendibilità, consente di disabilitare o ignorare la password della schermata di blocco del dispositivo se il dispositivo si trova in una posizione attendibile. Ad esempio, ignorare la password del profilo di lavoro quando il dispositivo è connesso a un dispositivo Bluetooth specifico oppure quando è nelle vicinanze di un tag NFC. Usare questa impostazione per impedire agli utenti di configurare Smart Lock.
 
@@ -243,7 +247,7 @@ Queste impostazioni per le password si applicano ai profili personali nei dispos
   > [!IMPORTANT]
   >  - Il client VPN scelto deve essere installato nel dispositivo e deve supportare la VPN per app nei profili di lavoro. In caso contrario si verificherà un errore. 
   >  - È necessario approvare l'app client VPN in **Google Play Store gestito**, sincronizzare l'app con Intune e distribuire l'app nel dispositivo. Al termine di queste operazioni, l'app viene installata nel profilo di lavoro dell'utente.
-  >  - Esistono problemi noti quando si usa una VPN per app con F5 Access per Android 3.0.3. Per altre informazioni, vedere le [note sulla versione di F5 per F5 Access per Android 3.0.3](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-3.html#relnotes_known_issues_f5_access_android).
+  >  - Possono esistere problemi noti quando si usa una VPN per app con F5 Access per Android 3.0.4. Per altre informazioni, vedere le [note sulla versione di F5 per F5 Access per Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android).
 
 - **Lockdown mode** (Modalità di blocco): **Abilita** forza tutto il traffico di rete a usare il tunnel VPN. Se non viene stabilita una connessione alla VPN, il dispositivo non avrà accesso alla rete.
 

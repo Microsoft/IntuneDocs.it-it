@@ -5,27 +5,29 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730402"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977270"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Impostazioni di ottimizzazione recapito per Windows 10 (e versioni successive) in Microsoft Intune
 
-Questo articolo elenca e descrive tutte le impostazioni di ottimizzazione recapito che è possibile configurare per i dispositivi Windows 10. Queste impostazioni vengono aggiunte a un profilo di configurazione del dispositivo e quindi assegnate o distribuite ai dispositivi con Microsoft Intune.
+Questo articolo elenca e descrive tutte le impostazioni di ottimizzazione recapito che è possibile configurare per i dispositivi Windows 10. Queste impostazioni vengono aggiunte a un profilo di configurazione del dispositivo e quindi assegnate o distribuite ai dispositivi con Microsoft Intune. 
+
+[Ottimizzazione recapito per gli aggiornamenti](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) è una risorsa eccellente per ottenere informazioni sull'ottimizzazione del recapito in Windows 10.
 
 ## <a name="settings"></a>Impostazioni
 
-**Modalità di download con ottimizzazione recapito**: scegliere la modalità di recapito degli aggiornamenti ai dispositivi. Le opzioni disponibili sono:
+**Modalità di download con ottimizzazione recapito**: scegliere come recapitare gli aggiornamenti ai dispositivi. Le opzioni disponibili sono:
 
 - **Non configurata**: gli utenti finali aggiornano i propri dispositivi usando il metodo prescelto, che può essere usare **Windows Update** o le impostazioni di **Ottimizzazione recapito** disponibili con il sistema operativo.
 - **Solo HTTP, senza peering**: ottenere gli aggiornamenti solo da Internet. Non è consentito ottenere aggiornamenti da altri computer nella rete (operazione nota come peering o peer-to-peer).

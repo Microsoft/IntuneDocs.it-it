@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 12/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829182"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168029"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guida a Microsoft Intune App SDK per sviluppatori di Android
 
@@ -35,14 +35,14 @@ Microsoft Intune App SDK per Android consente di integrare i criteri di protezio
 Intune App SDK è costituito dai file seguenti:
 
 * **Microsoft.Intune.MAM.SDK.aar**: componenti dell'SDK, a eccezione dei file JAR della libreria di supporto.
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: classi necessarie per abilitare MAM nelle app che usano la libreria di supporto Android v4.
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: classi necessarie per abilitare MAM nelle app che usano la libreria di supporto Android v7.
+* **Microsoft.Intune.MAM.SDK.Suppot.v4.jar**: classi necessarie per abilitare MAM nelle app che usano la libreria di supporto Android v4.
+* **Microsoft.Intune.MAM.SDK.Suppot.v7.jar**: classi necessarie per abilitare MAM nelle app che usano la libreria di supporto Android v7.
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**: classi necessarie per abilitare MAM nelle app che usano la libreria di supporto Android v17. 
 * **Microsoft.Intune.MAM.SDK.Support.Text.jar**: classi necessarie per abilitare MAM nelle app che usano le classi della libreria di supporto Android nel pacchetto `android.support.text`.
-* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: questo file con estensione jar contiene gli stub per le classi di sistema Android presenti solo nei dispositivi più recenti ma a cui viene fatto riferimento dai metodi in MAMActivity. I dispositivi più recenti ignorano queste classi stub. Il file con estensione jar è necessario solo se l'app esegue la reflection sulle classi che derivano da MAMActivity e nella maggior parte delle app non è necessario. Se si usa il file con estensione jar, fare attenzione a escludere tutte le classi di ProGuard. Tutte le classi si trovano nel pacchetto radice "android"
-* **com.microsoft.intune.mam.build.jar**: plugin di Gradle [utile per l'integrazione dell'SDK](#build-tooling).
+* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: questo file con estensione jar contiene gli stub per le classi di sistema Android presenti solo nei dispositivi più recenti, ma a cui viene fatto riferimento dai metodi in MAMActivity. I dispositivi più recenti ignorano queste classi stub. Il file con estensione jar è necessario solo se l'app esegue la reflection sulle classi che derivano da MAMActivity e nella maggior parte delle app non è necessario. Se si usa il file con estensione jar, fare attenzione a escludere tutte le classi di ProGuard. Tutte le classi si trovano nel pacchetto radice "android"
+* **com.microsoft.intune.mam.build.jar**: plugin di Gradle che [facilita l'integrazione dell'SDK](#build-tooling).
 * **CHANGELOG.txt**: fornisce un record delle modifiche apportate in ogni versione dell'SDK.
-* **THIRDPARTYNOTICES.TXT**: comunicazione di attribuzione che riconosce la presenza di codice OSS e/o di terze parti che verrà compilato nell'app.
+* **THIRDPARTYNOTICES.TXT**:  avviso di attribuzione che riconosce la presenza di codice OSS e/o di terze parti che verrà compilato nell'app.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -573,11 +573,11 @@ Le notifiche seguenti vengono inviate all'app e alcune possono richiedere la par
 
 * **WIPE_USER_DATA**: questa notifica viene inviata in una classe `MAMUserNotification`. Alla ricezione della notifica, è previsto che l'app elimini tutti i dati associati all'identità "aziendale" passata con `MAMUserNotification`. Questa notifica viene attualmente inviata durante l'annullamento della registrazione del servizio APP-WE. Il nome primario dell'utente viene in genere specificato durante il processo di registrazione. Se si effettua la registrazione per questa notifica, l'app deve garantire che tutti i dati utente siano stati eliminati. Se la registrazione non viene effettuata, verrà usato il comportamento di cancellazione selettiva predefinito.
 
-* **WIPE_USER_AUXILIARY_DATA**: le app possono eseguire la registrazione per questa notifica se vogliono che Intune App SDK usi il comportamento predefinito di cancellazione selettiva, ma vogliono comunque poter rimuovere alcuni dati ausiliari quando viene eseguita la cancellazione. Questa notifica non è disponibile per le app con identità singola e verrà inviata solo alle app con identità multiple.
+* **WIPE_USER_AUXILIARY_DATA**: le app possono effettuare la registrazione per questa notifica se vogliono che Intune App SDK usi il comportamento predefinito di cancellazione selettiva, ma devono comunque rimuovere alcuni dati ausiliari quando viene eseguita la cancellazione. Questa notifica non è disponibile per le app con identità singola e verrà inviata solo alle app con identità multiple.
 
-* **REFRESH_POLICY**: questa notifica viene inviata in un oggetto `MAMUserNotification`. Alla ricezione di questa notifica, qualsiasi criterio di Intune memorizzato nella cache deve essere invalidato e aggiornato. Questa operazione viene gestita dall'SDK, ma deve essere gestita dall'app se i criteri vengono usati in un modo permanente.
+* **REFRESH_POLICY**: questa notifica viene inviata in una classe `MAMUserNotification`. Alla ricezione di questa notifica, qualsiasi criterio di Intune memorizzato nella cache deve essere invalidato e aggiornato. Questa operazione viene gestita dall'SDK, ma deve essere gestita dall'app se i criteri vengono usati in un modo permanente.
 
-* **MANAGEMENT_REMOVED**: questa notifica viene inviata in un oggetto `MAMUserNotification` e informa l'app che sta per diventare non gestita. Quando non è gestita, l'app non può più leggere i file crittografati, leggere i dati crittografati con MAMDataProtectionManager, interagire con gli Appunti crittografati o partecipare in altro modo all'ecosistema di app gestite.
+* **MANAGEMENT_REMOVED**: questa notifica viene inviata in una classe `MAMUserNotification` e informa l'app che sta per diventare non gestita. Quando non è gestita, l'app non può più leggere i file crittografati, leggere i dati crittografati con MAMDataProtectionManager, interagire con gli Appunti crittografati o partecipare in altro modo all'ecosistema di app gestite.
 
 
 > [!NOTE]
@@ -844,7 +844,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 * Il supporto dei cloud sovrani richiede la specifica dell'autorità.
 #### <a name="registration"></a>Registrazione
 
-* Per praticità, i metodi di registrazione sono idempotenti. Ad esempio, `registerAccountForMAM()` registra un account ed esegue un tentativo di registrazione dell'app solo se l'account non è già registrato e `unregisterAccountForMAM()` annulla la registrazione di un account solo se è attualmente registrato. Le chiamate successive non hanno effetto, quindi se i metodi vengono chiamati più di una volta non ci sono problemi. Inoltre, non è garantita la corrispondenza tra le chiamate a questi metodi e le notifiche dei risultati: ad esempio, se viene chiamato il metodo `registerAccountForMAM` per un'identità già registrata, potrebbe non venire inviata di nuovo la notifica per tale identità. È possibile che vengano inviate notifiche che non corrispondono alle chiamate a questi metodi, perché l'SDK può eseguire periodicamente tentativi di registrazione in background e possono essere avviate operazioni di annullamento della registrazione da richieste di cancellazione ricevute dal servizio Intune.
+* Per praticità, i metodi di registrazione sono idempotenti. Ad esempio, `registerAccountForMAM()` registra un account ed esegue un tentativo di registrazione dell'app solo se l'account non è già registrato e `unregisterAccountForMAM()` annulla la registrazione di un account solo se è attualmente registrato. Le chiamate successive non hanno effetto, quindi se i metodi vengono chiamati più di una volta non ci sono problemi. Non è inoltre garantita la corrispondenza tra le chiamate a questi metodi e le notifiche dei risultati: se quindi `registerAccountForMAM` viene chiamato per un'identità già registrata, la notifica potrebbe non essere nuovamente inviata per tale identità. È possibile che vengano inviate notifiche che non corrispondono alle chiamate a questi metodi, perché l'SDK può eseguire periodicamente tentativi di registrazione in background e possono essere avviate operazioni di annullamento della registrazione da richieste di cancellazione ricevute dal servizio Intune.
 
 * I metodi di registrazione possono essere chiamati per un numero qualsiasi di identità diverse, ma attualmente può venire registrato correttamente un solo account utente. Se più account utente con licenza per Intune e interessati dai criteri di protezione delle app vengono registrati contemporaneamente o quasi, non è garantito quale account verrà registrato correttamente.
 
@@ -1616,9 +1616,8 @@ Queste istruzioni sono specifiche per tutti gli sviluppatori di app Android e Xa
 4. Abilitare i criteri MAM richiesti inserendo il valore seguente nel manifesto: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
    > [!NOTE] 
    > In questo modo, l'utente dovrà scaricare il Portale aziendale nel dispositivo e completare le fasi della registrazione predefinita prima dell'uso.
-
-> [!NOTE]
-    > Questa deve essere l'unica integrazione MAM-WE nell'app. Altri tentativi di chiamare le API MAMEnrollmentManager possono determineranno conflitti.
+   >
+   > Questa deve essere l'unica integrazione MAM-WE nell'app. Altri tentativi di chiamare le API MAMEnrollmentManager possono determineranno conflitti.
 
 3. Abilitare i criteri MAM richiesti inserendo il valore seguente nel manifesto:
 ```xml
@@ -1639,7 +1638,7 @@ Per codebase di grandi dimensioni eseguite senza [ProGuard](http://proguard.sour
 
 ### <a name="policy-enforcement-limitations"></a>Limitazioni relative all'applicazione di criteri
 
-* **Acquisizione schermo**: l'SDK non è in grado di applicare un nuovo valore dell'impostazione di acquisizione schermo nelle attività passate attraverso Activity.onCreate. Questo limite può provocare un periodo di tempo in cui l'app è stata configurata per la disabilitazione degli screenshot, ma è comunque possibile acquisire screenshot.
+* **Acquisizione schermo**: l'SDK non riesce ad applicare un nuovo valore dell'impostazione di acquisizione di schermate nelle attività passate attraverso Activity.onCreate. Questo limite può provocare un periodo di tempo in cui l'app è stata configurata per la disabilitazione degli screenshot, ma è comunque possibile acquisire screenshot.
 
 * **Uso di resolver di contenuto**: i criteri di trasferimento o ricezione di Intune possono bloccare interamente o parzialmente l'uso di un resolver di contenuto per accedere al provider di contenuti in un'altra app. Questo comportamento può far sì che i metodi ContentResolver restituiscano null o generino un valore di errore. Ad esempio, `openOutputStream` genera `FileNotFoundException` se è bloccato. L'app può determinare se un errore di scrittura dei dati tramite un resolver di contenuto è stato provocato dai criteri (o verrebbe provocato dai criteri) effettuando questa chiamata:
     ```java
