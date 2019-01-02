@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 38c1d982dc627ccddf2844bf7a6334157e1f0b92
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 83baf13b42cd67e682227d6310b7057bdbd6bf1e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032249"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324860"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificare i dispositivi di proprietà dell'azienda
 
@@ -43,7 +43,7 @@ Dopo la registrazione, è possibile [modificare l'impostazione della proprietà]
 
 Un amministratore di Intune può creare e importare un file con valori delimitati da virgole (con estensione csv) che elenca i numeri IMEI o i numeri di serie. Intune usa questi identificatori per specificare la proprietà aziendale del dispositivo durante la registrazione del dispositivo. È possibile dichiarare i numeri IMEI per tutte le piattaforme supportate. È possibile dichiarare solo il numero di serie per i dispositivi iOS, macOS e Android. Per ogni numero IMEI o numero di serie, nell'elenco possono essere specificati dettagli per scopi amministrativi.
 
-<!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
+<!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
 [Informazioni su come trovare il numero di serie di un dispositivo Apple](https://support.apple.com/HT204308).<br>
 [Informazioni su come trovare il numero di serie di un dispositivo Android](https://support.google.com/store/answer/3333000).

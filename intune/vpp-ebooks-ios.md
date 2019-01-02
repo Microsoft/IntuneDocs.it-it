@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a4d40915cce17846ca2aaab29bb597c6580e8920
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 30155227f68f5b98eb1808cfc255b368f134ce91
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180664"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305914"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Come gestire gli eBook iOS acquistati tramite Volume Purchase Program con Microsoft Intune
 
@@ -35,7 +35,7 @@ Microsoft Intune consente di sincronizzare, gestire e assegnare i libri acquista
 Le procedure per la gestione dei libri sono simili a quelle per la [gestione delle app VPP](vpp-apps-ios.md).
 
 ## <a name="manage-volume-purchased-books-for-ios-devices"></a>Gestire i libri acquistati tramite Volume Purchase Program per dispositivi iOS
-È possibile acquistare più licenze per libri iOS tramite [Apple Volume Purchase Program per le aziende](http://www.apple.com/business/vpp/) o [Apple Volume Purchase Program per l'istruzione](http://volume.itunes.apple.com/us/store). Questo processo comporta la configurazione di un account VPP di Apple dal sito Web Apple e il caricamento del token VPP di Apple in Intune.  È quindi possibile sincronizzare le informazioni relative a Volume Purchase Program con Intune e tenere traccia dell'uso dei libri acquistati con VPP.
+È possibile acquistare più licenze per libri iOS tramite [Apple Volume Purchase Program per le aziende](https://www.apple.com/business/vpp/) o [Apple Volume Purchase Program per l'istruzione](https://volume.itunes.apple.com/us/store). Questo processo comporta la configurazione di un account VPP di Apple dal sito Web Apple e il caricamento del token VPP di Apple in Intune.  È quindi possibile sincronizzare le informazioni relative a Volume Purchase Program con Intune e tenere traccia dell'uso dei libri acquistati con VPP.
 
 ## <a name="before-you-start"></a>Prima di iniziare
 Prima di iniziare, ottenere un token VPP da Apple e caricarlo nell'account di Intune. Inoltre:

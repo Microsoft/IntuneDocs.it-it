@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c7d5d29df0f91a4cff1060cd10a5d2355e196e39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180138"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305931"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Assegnare app ai dispositivi del profilo di lavoro Android con Intune
 
@@ -56,7 +56,7 @@ Assicurarsi di avere configurato l'uso di Intune con i profili di lavoro Android
 
     ![Opzioni per gestire le nuove richieste di autorizzazioni per l'app](media/approve-app-settings.png)
 
-    L'app viene approvata e visualizzata nella console di amministrazione IT. È quindi possibile [sincronizzare l'app del profilo di lavoro Android con Intune](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
+    L'app viene approvata e visualizzata nella console di amministrazione IT. È quindi possibile [sincronizzare l'app del profilo di lavoro Android con Intune](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Sincronizzare un'app della versione gestita di Google Play con Intune
 
@@ -84,7 +84,7 @@ Quando lo sviluppatore di un'app aggiorna le autorizzazioni con una nuova versio
 
 Visitare periodicamente la console di Google Play gestita per verificare se sono disponibili nuove autorizzazioni. È possibile configurare Google Play per l'invio di un messaggio di posta elettronica quando sono necessarie nuove autorizzazioni per un'app approvata. Se si assegna un'app e si nota che non è installata nei dispositivi, verificare la disponibilità di nuove autorizzazioni seguendo questa procedura:
 
-1. Andare a [Google Play](http://play.google.com/work).
+1. Andare a [Google Play](https://play.google.com/work).
 2. Accedere con l'account Google usato per pubblicare e approvare le app.
 3. Selezionare la scheda **Aggiornamenti** e verificare se sono necessari aggiornamenti per le app.  
     Le app elencate richiedono nuove autorizzazioni e non vengono assegnate finché non vengono applicate.

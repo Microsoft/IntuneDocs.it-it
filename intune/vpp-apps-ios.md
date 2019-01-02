@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 175491e53ba9b1fbd41ac8bec8841c600b6916fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b2ec10ec1174e5e689802d2c4f17a21de8312a15
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184557"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305965"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Procedura per la gestione delle app iOS acquistate tramite Volume Purchase Program con Microsoft Intune
 
@@ -56,7 +56,7 @@ Quando si assegna agli utenti un'app acquistata con Volume Purchase Program, ogn
 
 ### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>Supporta le app acquistate con Volume Purchase Program di Apple per i dispositivi iOS
 
-È possibile acquistare più licenze per le app iOS tramite [Volume Purchase Program di Apple per le aziende](http://www.apple.com/business/vpp/) o [Volume Purchase Program di Apple per l'istruzione](http://volume.itunes.apple.com/us/store). Questo processo comporta la configurazione di un account VPP di Apple dal sito Web Apple e il caricamento del token VPP di Apple in Intune.  È quindi possibile sincronizzare le informazioni relative a Volume Purchase Program con Intune e tenere traccia dell'uso delle app acquistate con VPP.
+È possibile acquistare più licenze per le app iOS tramite [Volume Purchase Program di Apple per le aziende](https://www.apple.com/business/vpp/) o [Volume Purchase Program di Apple per l'istruzione](https://volume.itunes.apple.com/us/store). Questo processo comporta la configurazione di un account VPP di Apple dal sito Web Apple e il caricamento del token VPP di Apple in Intune.  È quindi possibile sincronizzare le informazioni relative a Volume Purchase Program con Intune e tenere traccia dell'uso delle app acquistate con VPP.
 
 ### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>Supporta le app acquistate con volume Business-to-Business per dispositivi iOS
 
