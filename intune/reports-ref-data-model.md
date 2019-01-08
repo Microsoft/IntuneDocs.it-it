@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 228b662739d161a4f4d6d145746fc68e7c3b87e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ce4689aaecd40d7d44f0064b1e951823fa0bb2c2
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188110"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738002"
 ---
-# <a name="data-warehouse-data-model"></a>Modello di dati del data warehouse
+# <a name="microsoft-intune-data-warehouse-data-model"></a>Modello di dati del data warehouse di Microsoft Intune
 
 Il data warehouse di Intune esegue il campionamento giornaliero dei dati per fornire una visualizzazione cronologica dell'ambiente dei dispositivi mobili, in continua evoluzione. La visualizzazione è costituita da entità correlate nel tempo.
 
@@ -48,7 +48,7 @@ Queste aree contengono le entità significative per l'ambiente Intune. Informazi
   -  [Current User](reports-ref-current-user.md)
   -  [Associazioni utente-dispositivo](reports-ref-user-device.md)
 
-## <a name="relationships-star-schema-model"></a>Relazione: modello di schema a stella
+## <a name="relationships-star-schema-model"></a>Relazioni: modello di schema a stella
 
 Il warehouse organizza le entità in relazioni significative per il tipo di domande che si vogliono chiedere. È possibile, ad esempio, verificare il numero di installazioni di un'applicazione Android sviluppata internamente. La struttura del data warehouse consente di ottenere informazioni nell'ambiente per dispositivi mobili. A loro volta, gli strumenti di analisi come Microsoft Power BI possono usare il modello di dati del data warehouse per creare visualizzazioni e dashboard dinamici.
 

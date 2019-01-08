@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 02f276c5ddcd77b2800eb7b83a269b47a0ba5233
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5180682489e693e49e8142d7912302bc8ea2f7a8
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180681"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429696"
 ---
-# <a name="intune-app-sdk-overview"></a>Panoramica di Intune App SDK
+# <a name="microsoft-intune-app-sdk-overview"></a>Panoramica di Microsoft Intune App SDK
 Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di protezione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. La maggior parte delle funzionalità dell'SDK possono infatti essere abilitate senza modificare il comportamento dell'app. Per un'esperienza avanzata per utenti finali e amministratori IT, è possibile usare le API per personalizzare il comportamento dell'app per le funzionalità che ne richiedono la partecipazione.
 
 Dopo avere abilitato l'app per i criteri di protezione delle app, gli amministratori IT possono distribuire questi criteri per proteggere i dati aziendali all'interno dell'app.
@@ -75,4 +75,8 @@ La protezione delle app senza la registrazione del dispositivo consente al servi
 ### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Connessioni VPN dell'applicazione su richiesta con Citrix mVPN 
 È possibile gestire i dispositivi e le app usando in combinazione Citrix XenMobile MDX e Microsoft Intune. Grazie a questa combinazione è possibile gestire le app con i criteri di protezione delle app di Intune usando allo stesso tempo la tecnologia mVPN di Citrix. L'integrazione con Citrix è disponibile per Intune App SDK per iOS e Android e con lo strumento di wrapping delle app di Intune per iOS e Android (con il flag -citrix).
  
-Per altre informazioni su Citrix MDX, vedere [About the MDX Toolkit](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html) (Informazioni sul toolkit MDX), [Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) (Wrapper di app Citrix MDX per iOS) e [Citrix MDX app wrapper for Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html) (Wrapper di app Citrix MDX per Android).
+Per altre informazioni su Citrix MDX, vedere [About the MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html) (Informazioni sul toolkit MDX), [Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) (Wrapper di app Citrix MDX per iOS) e [Citrix MDX app wrapper for Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html) (Wrapper di app Citrix MDX per Android).
+
+## <a name="next-steps"></a>Passaggi successivi
+
+- Informazioni sui [criteri di protezione delle app](app-protection-policy.md).

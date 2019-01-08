@@ -1,12 +1,12 @@
 ---
 title: Recuperare dati dall'API data warehouse con un client REST
 titlesuffix: Microsoft Intune
-description: Recuperare i dati dal data warehouse di Intune tramite un'API RESTful.
+description: Questo argomento descrive come recuperare i dati dal data warehouse di Microsoft Intune tramite un'API RESTful.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: bcd4d9177bcefc1e026bc55831e589a5bcb57105
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185988"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642881"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Recuperare dati dall'API data warehouse di Intune con un client REST
 
@@ -67,7 +67,7 @@ Creare un'app nativa in Azure. Questa app nativa è l'app client. Il client in e
     ![Abilitare l'accesso - API Microsoft Intune](./media/reports-get_rest_data_client_access.png)
 
 9.  Selezionare **Seleziona**.
-10.  Seleziona **Chiudi**.
+10.  Selezionare **Chiudi**.
 11.  Selezionare **Concedi autorizzazioni** nel riquadro Autorizzazioni necessarie (facoltativo). In questo modo si concederà l'accesso a tutti gli account nella directory corrente evitando la visualizzazione della finestra di dialogo di consenso per ogni utente nel tenant. Per altre informazioni, vedere [Integrazione di applicazioni con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 12.  Selezionare **Sì**.
 

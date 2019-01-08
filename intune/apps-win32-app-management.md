@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829148"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734290"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune autonomo - Gestione di app Win32 (anteprima pubblica)
 
@@ -76,13 +76,13 @@ In modo analogo a un'app line-of-business, è possibile aggiungere un'app Win32 
 3.  Nel riquadro **Intune** selezionare **App client** > **App** > **Aggiungi**.
 4.  Nel riquadro **Aggiungi app** selezionare **App Windows (Win32) - Anteprima** nell'elenco a discesa.
 
-    ![Screenshot della casella a discesa Aggiungi app - Tipo di app](./media/apps-win32-app-01.png)
+    ![Screenshot del pannello Aggiungi app - elenco a discesa Tipo di app](./media/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Passaggio 2: Caricare il file del pacchetto dell'app
 
 1.  Nel riquadro **Aggiungi app** selezionare **File del pacchetto dell'app** per selezionare un file. Verrà visualizzato il riquadro File del pacchetto dell'app.
 
-    ![Screenshot di File del pacchetto dell'app](./media/apps-win32-app-02.png)
+    ![Screenshot del pannello File del pacchetto dell'app](./media/apps-win32-app-02.png)
 
 2.  Nel riquadro **File del pacchetto dell'app** selezionare il pulsante Sfoglia. Selezionare quindi un file di installazione di Windows con l'estensione *intunewin*.
 3.  Al termine, fare clic su **OK**.
@@ -95,11 +95,11 @@ In modo analogo a un'app line-of-business, è possibile aggiungere un'app Win32 
     - **Descrizione**: immettere una descrizione per l'app. La descrizione viene visualizzata nel portale aziendale.
     - **Autore**: immettere il nome dell'autore dell'app.
     - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. Le categorie consentono agli utenti di trovare più facilmente l'app nel portale aziendale.
-    - **Visualizza come app in primo piano nel portale aziendale**: visualizza chiaramente l'app nella pagina principale del portale aziendale quando gli utenti sfogliano le app.
+    - **Visualizza come app in primo piano nel portale aziendale**: visualizzare chiaramente l'app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
     - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
-    - **Developer**: immettere il nome dello sviluppatore dell'applicazione (facoltativo).
-    - **Proprietario**: immettere un nome per il proprietario di questa app. Un esempio è **Reparto risorse umane**.
+    - **Sviluppatore**: immettere il nome dello sviluppatore dell'app (facoltativo).
+    - **Proprietario**: immettere un nome per il proprietario dell'app (facoltativo). Un esempio è **Reparto risorse umane**.
     - **Note**: immettere eventuali note da associare a questa app.
     - **Logo**: caricare un'icona che viene associata all'app. L'icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
 3.  Al termine, fare clic su **OK**.
@@ -182,15 +182,17 @@ In modo analogo a un'app line-of-business, è possibile aggiungere un'app Win32 
     - **Usa uno script di rilevamento personalizzato**: specificare lo script di PowerShell che verrà usato per rilevare questa app. 
     
         1.  **File di script**: selezionare uno script di PowerShell che rileverà la presenza dell'app nel client. L'app verrà rilevata quando lo script restituirà un codice di uscita con valore 0 e scriverà un valore stringa in STDOUT.
-        2.  **Esegui lo script come processo a 32 bit nei client a 64 bit**: selezionare **Sì** per eseguire lo script usando le credenziali dell'utente finale connesso. Selezionare **No** (impostazione predefinita) per eseguire lo script nel contesto di sistema.
+
+        2.  **Esegui lo script come processo a 32 bit nei client a 64 bit**: selezionare **Sì** per eseguire lo script in un processo a 32 bit su client a 64 bit. Selezionare **No** (impostazione predefinita) per eseguire lo script in un processo a 64 bit su client a 64 bit. I client a 32 bit eseguono lo script in un processo a 32 bit.
+
         3.  **Imponi il controllo della firma degli script**: selezionare **Sì** per verificare che lo script sia firmato da un'entità di pubblicazione attendibile, in modo da consentire l'esecuzione dello script senza la visualizzazione di avvisi o richieste. Lo script verrà eseguito senza essere bloccato. Selezionare **No** (impostazione predefinita) per eseguire lo script con la conferma dell'utente finale senza la verifica della firma.
     
-        Il sidecar di Intune controlla i risultati dello script. Legge i valori scritti dallo script nel flusso di output standard (STDOUT) e nel flusso degli errori standard (STDERR), nonché il codice di uscita. Se il codice di uscita dello script è un valore diverso da zero, lo script non è riuscito e lo stato del rilevamento dell'applicazione è non installato. Se il codice di uscita è pari a zero e STDOUT contiene dati, lo stato di rilevamento dell'applicazione è installato. 
-    
-        > [!NOTE]
-        > Quando lo script viene chiuso con il valore 0, l'esecuzione dello script ha avuto esito positivo. Il secondo canale di output indica che l'app è stata rilevata e i dati di STDOUT indicano che l'app è stata trovata nel client. Non è necessario cercare una determinata stringa di STDOUT.
-    
-3.  Dopo aver aggiunto una o più regole, selezionare **Aggiungi** > **OK**.
+            L'agente di Intune controlla i risultati dello script. Legge i valori scritti dallo script nel flusso di output standard (STDOUT) e nel flusso degli errori standard (STDERR), nonché il codice di uscita. Se il codice di uscita dello script è un valore diverso da zero, lo script non è riuscito e lo stato del rilevamento dell'applicazione è non installato. Se il codice di uscita è pari a zero e STDOUT contiene dati, lo stato di rilevamento dell'applicazione è installato. 
+
+            > [!NOTE]
+            > Quando lo script viene chiuso con il valore 0, l'esecuzione dello script ha avuto esito positivo. Il secondo canale di output indica che l'app è stata rilevata e i dati di STDOUT indicano che l'app è stata trovata nel client. Non è necessario cercare una determinata stringa di STDOUT.
+
+        4.  Dopo aver aggiunto una o più regole, selezionare **Aggiungi** > **OK**.
 
 ### <a name="step-7-configure-app-return-codes"></a>Passaggio 7: Configurare i codici restituiti dell'app
 
@@ -213,9 +215,9 @@ In modo analogo a un'app line-of-business, è possibile aggiungere un'app Win32 
 1.  Nel riquadro dell'app selezionare **Assegnazioni**.
 2.  Selezionare **Aggiungi gruppo** per aprire il riquadro **Aggiungi gruppo** relativo all'app.
 3.  Per l'app specifica, selezionare un **tipo di assegnazione**:
-    - **Disponibile per i dispositivi registrati**: gli utenti installano l'app dall'app Portale aziendale o dal sito Web del portale aziendale.
-    - **Obbligatoria**: l'applicazione è installata nei dispositivi nei gruppi selezionati.
-    - **Disinstalla**: l'applicazione è disinstallata dai dispositivi nei gruppi selezionati.
+    - **Disponibile per i dispositivi registrati**: gli utenti installano l'app dall'app Portale aziendale o dal relativo sito Web.
+    - **Obbligatoria**: l'app viene installata nei dispositivi nei gruppi selezionati.
+    - **Disinstalla**: l'app viene disinstallata dai dispositivi nei gruppi selezionati.
 4.  Selezionare **Gruppi inclusi** e assegnare i gruppi che useranno questa app.
 5.  Nel riquadro **Assegna** fare clic su **OK** per completare la selezione dei gruppi inclusi.
 6.  Per escludere gruppi di utenti da questa assegnazione di app, selezionare **Escludi gruppi**.
@@ -232,16 +234,16 @@ I client Windows 10 RS3 e versioni successive scaricheranno contenuto dell'app W
 
 L'utente finale riceverà le notifiche di tipo avviso popup di Windows per le installazioni delle app obbligatorie e disponibili. L'immagine seguente mostra un esempio di notifica di tipo avviso popup in cui l'installazione dell'app non risulta completa fino al riavvio del dispositivo. 
 
-![Screenshot di esempio di notifiche di tipo avviso popup di Windows per l'installazione di un'app](./media/apps-win32-app-08.png)    
+![Screenshot delle notifiche di tipo avviso popup di Windows per l'installazione di un'app](./media/apps-win32-app-08.png)    
 
 Nell'immagine seguente l'utente finale riceve una notifica indicante che sono in corso modifiche all'app nel dispositivo.
 
-![Screenshot di esempio di notifica all'utente finale, indicante che sono in corso modifiche all'app nel dispositivo](./media/apps-win32-app-09.png)    
+![Screenshot di invio della notifica relativa alle modifiche in corso per l'app](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>Risolvere i problemi delle app Win32
 I log dell'agente nel computer client si trovano in genere in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. È possibile usare `CMTrace.exe` per visualizzare questi file di log. *CMTrace.exe* può essere scaricato da [Strumenti client SCCM](https://docs.microsoft.com/sccm/core/support/tools). 
 
-![Screenshot dei log dell'agente](./media/apps-win32-app-10.png)    
+![Screenshot dei log dell'agente nel computer client](./media/apps-win32-app-10.png)    
 
 ### <a name="troubleshooting-areas-to-consider"></a>Aree della risoluzione dei problemi da tenere in considerazione
 - Controllare la destinazione per verificare che l'agente sia installato nel dispositivo: l'app Win32 destinata a un gruppo o lo script di PowerShell destinato a un gruppo creerà criteri di installazione dell'agente per il gruppo di sicurezza.

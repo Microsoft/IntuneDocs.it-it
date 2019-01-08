@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181888"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325178"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorare le informazioni sulle app e le assegnazioni con Microsoft Intune
 
@@ -36,7 +36,7 @@ Intune offre diversi modi per monitorare le proprietà delle app gestite e per g
 5. Nell'elenco di app selezionare un'app da monitorare. Verrà quindi visualizzato il riquadro delle app, che include una panoramica dello stato del dispositivo e dello stato dell'utente.
 
 > [!NOTE]
-> Le app di Android Store distribuite come **disponibili** non segnalano lo stato dell'installazione.
+> Le app di Android Store distribuite come **Disponibile** e quelle di Android LOB distribuite come **Disponibile con o senza registrazione** non segnalano il rispettivo stato di installazione.
 
 ## <a name="app-overview-pane"></a>Riquadro di panoramica delle app
 

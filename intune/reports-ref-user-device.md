@@ -1,12 +1,12 @@
 ---
 title: Associazione utente-dispositivo nel data warehouse di Intune
 titlesuffix: Microsoft Intune
-description: Elenco delle modifiche nell'API data warehouse di Intune.
+description: L'entità UserDeviceAssociation contiene le associazioni utente-dispositivo presenti nell'organizzazione.
 keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 777484A7-09CE-4409-987F-76B3F87DFE93
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: a207c0f9e7f1890d88ca233df6f4c53a32aed51b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-classic; seodec18
+ms.openlocfilehash: 02c579a7371a59a46cfb0017e6aa1a17af92bd03
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189793"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429560"
 ---
-# <a name="user-device-association"></a>Associazione utente-dispositivo
+# <a name="reference-for-user-device-association-entity"></a>Riferimento per l'entità dell'associazione utente-dispositivo
 
 L'entità **UserDeviceAssociation** contiene le associazioni utente-dispositivo presenti nell'organizzazione.
+
+## <a name="userdeviceassociation"></a>UserDeviceAssociation
 
 
 |        Name        |                                           Descrizione                                            |        Esempio         |
@@ -36,3 +38,6 @@ L'entità **UserDeviceAssociation** contiene le associazioni utente-dispositivo 
 |     IsDeleted      | Indica che l'utente ha annullato la registrazione del dispositivo e che l'associazione non è più aggiornata. |       True/False       |
 |  EndedDateTimeUTC  |              Data e ora in formato UTC in cui IsDeleted è stato impostato su <strong>True</strong>.               | 23/06/2017 12.00.00 |
 
+## <a name="next-steps"></a>Passaggi successivi
+
+- Altre informazioni sul [data warehouse di Intune](reports-nav-create-intune-reports.md).

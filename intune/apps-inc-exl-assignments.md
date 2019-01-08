@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b4a45ac5a73d199ec883e3dda95a97a8f3c09d9a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fee473cd6cb6fa7e8a092ebd70192f2b7f8a8b84
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181514"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737934"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Includere ed escludere assegnazioni di app in Microsoft Intune
 
@@ -50,7 +50,7 @@ Per assegnare un'app ai gruppi usando l'assegnazione di inclusione ed esclusione
 5. Selezionare l'app che si vuole assegnare. Un dashboard visualizza le informazioni sull'app. 
 6. Nella sezione **Gestisci** del menu selezionare **Assegnazioni**. 
 
-    ![Assegnazioni di app in Intune](./media/apps-inc-exl-01.png)
+    ![Includere assegnazioni di app quando si assegnano app](./media/apps-inc-exl-01.png)
 7. Selezionare **Aggiungi gruppo** per aggiungere i gruppi di utenti assegnati all'app. 
 8. Nel riquadro **Aggiungi gruppo** selezionare un **tipo di assegnazione** tra quelli disponibili.
 9. Come tipo di assegnazione, selezionare **Disponibile con o senza registrazione**.

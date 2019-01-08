@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 4ccbdff5eac7fef8d28696d8340eb498bae95176
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187855"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657781"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
@@ -83,7 +83,7 @@ Per integrare Intune App SDK nelle app, è necessario consultare una delle guide
 
 * **[Guida a Microsoft Intune App SDK per sviluppatori di Android](app-sdk-android.md)**: questo documento descrive in dettaglio come abilitare app Android native con Intune App SDK.
 
-* **[Binding Xamarin per Microsoft Intune App SDK](app-sdk-xamarin.md)**: questo documento contiene informazioni per compilare app per iOS e Android usando Xamarin per i criteri di protezione delle app di Intune.
+* **[Binding Xamarin per Microsoft Intune App SDK](app-sdk-xamarin.md)**: questo documento contiene informazioni per creare app per iOS e Android usando Xamarin per i criteri di protezione delle app di Intune.
 
 
 
@@ -188,7 +188,7 @@ Questo logo segnala agli amministratori IT, agli utenti finali e ai potenziali c
 
 Il logo è un'icona a forma di valigetta, come illustrato negli esempi seguenti:
 
-![Esempio di logo 1](./media/badge-example-1.png) ![Esempio di logo 2](./media/badge-example-2.png)
+![Criteri di protezione delle app di Intune - Esempio di logo 1](./media/badge-example-1.png) ![Criteri di protezione delle app di Intune - Esempio di logo 2](./media/badge-example-2.png)
 
 **Cosa serve per aggiungere il logo all'app**:
 

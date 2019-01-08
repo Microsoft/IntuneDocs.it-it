@@ -1,7 +1,7 @@
 ---
 title: Aggiungere un'app line-of-business per Windows a Microsoft Intune
 titlesuffix: ''
-description: Informazioni su come aggiungere un'app line-of-business per Windows a Microsoft Intune.
+description: Informazioni su come aggiungere un'app line-of-business (LOB) per Windows usando Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 15e5eb80008e7365479bfd3a63224818d0c19a73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 551fd188ef22b5bf9516e51604d20d43efca5608
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183197"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642677"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Windows a Microsoft Intune
 
@@ -58,17 +58,17 @@ Un'app line-of-business è un'app che viene aggiunta da un apposito file di inst
     - **Autore**: immettere il nome dell'autore dell'app.
     - **Ignora la versione dell'app**: impostare su **Sì** se lo sviluppatore dell'app aggiorna automaticamente l'app. Questa opzione si applica solo alle app MSI per dispositivi mobili.
     - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. Le categorie consentono agli utenti di trovare più facilmente l'app nel portale aziendale.
-    - **Visualizza come app in primo piano nel portale aziendale**: visualizza chiaramente l'app nella pagina principale del portale aziendale quando gli utenti sfogliano le app.
+    - **Visualizza come app in primo piano nel portale aziendale**: visualizzare chiaramente l'app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
     - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
-    - **Argomenti della riga di comando**: immettere facoltativamente gli argomenti della riga di comando da applicare per l'esecuzione del file con estensione msi. Un esempio è **/q**.
-    - **Developer**: immettere il nome dello sviluppatore dell'applicazione (facoltativo).
-    - **Proprietario**: immettere un nome per il proprietario di questa app. Un esempio è **Reparto risorse umane**.
+    - **Argomenti della riga di comando**: immettere gli argomenti della riga di comando da applicare per l'esecuzione del file con estensione msi (facoltativo). Un esempio è **/q**.
+    - **Sviluppatore**: immettere il nome dello sviluppatore dell'app (facoltativo).
+    - **Proprietario**: immettere un nome per il proprietario dell'app (facoltativo). Un esempio è **Reparto risorse umane**.
     - **Note**: immettere eventuali note da associare a questa app.
     - **Logo**: caricare un'icona che viene associata all'app. L'icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
 3. Al termine, fare clic su **OK**.
 
-## <a name="step-4-finish-up"></a>Passaggio 4: Completare l'operazione
+## <a name="step-4-finish-up"></a>Passaggio 4: Terminare
 
 1. Nel riquadro **Aggiungi app** verificare di aver configurato correttamente le informazioni sull'app.
 2. Selezionare **Aggiungi** per caricare l'app in Intune.

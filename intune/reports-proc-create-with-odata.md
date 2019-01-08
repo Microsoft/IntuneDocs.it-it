@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182993"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429713"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creare un report dal feed OData con Power BI
 
@@ -106,7 +106,7 @@ Un grafico ad albero mostra i dati gerarchici come caselle all'interno di casell
 È possibile aggiungere un filtro alla mappa ad albero per poter rispondere a domande aggiuntive usando l'app.
 
 
-1. Per aggiungere un filtro, selezionare l'area di disegno report e quindi selezionare l'**icona Filtro dei dati** (![Mappa ad albero con dati](media/reports-create-slicer.png)) in **Visualizzazioni**.
+1. Per aggiungere un filtro, selezionare l'area di disegno report e quindi selezionare l'**icona Filtro dei dati** (![Mappa ad albero con dati e relazioni supportate](media/reports-create-slicer.png)) in **Visualizzazioni**.
 2. Cercare la tabella **ownerTypes** e trascinare il campo dati **ownerTypeName** nella sezione **Filtri** nel pannello **Visualizzazioni**.  
 
    Nella tabella devices è incluso un campo dati denominato **OwnerTypeKey** che contiene un codice che indica se il dispositivo è aziendale o personale. Per visualizzare i nomi descrittivi nel filtro, cercare la tabella **ownerTypes** e trascinare **ownerTypeName**. Questo esempio illustra come il modello di dati supporta le relazioni tra le tabelle.

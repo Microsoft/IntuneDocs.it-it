@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977304"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642813"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorare i criteri di conformità dei dispositivi di Intune
 
@@ -69,7 +69,12 @@ Descrizioni dei diversi stati dei criteri di conformità dei dispositivi:
 
   - Altre informazioni sulle [azioni per i dispositivi non conformi](actions-for-noncompliance.md).
 
-- **Non valutato**: stato iniziale dei dispositivi appena registrati. Oppure si tratta di dispositivi a cui non sono assegnati criteri di conformità e che non hanno un trigger per verificare la conformità.
+- **Non valutato**: stato iniziale dei dispositivi appena registrati. Di seguito sono elencate altre possibili cause per questo stato:
+
+  - Dispositivi a cui non sono assegnati criteri di conformità e che non hanno un trigger per verificare la conformità
+  - Dispositivi che non si sono connessi dall'ultimo aggiornamento dei criteri di conformità
+  - Dispositivi non associati a un utente specifico
+  - Dispositivi registrati con un account del manager di registrazione dispositivi
 
 - **Non conforme**: il dispositivo non rispetta una o più impostazioni dei criteri di conformità dei dispositivi. Oppure l'utente non è conforme ai criteri.
 

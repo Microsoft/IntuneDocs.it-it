@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/07/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,32 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f44b281bc8a0edd39e25bf966841a5f458c6677e
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: 3c06bb8efd0d6f7795094f36dcb513c5dca63e77
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903472"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570792"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Account di posta elettronica aziendale già esistente
 
-È già disponibile un account di posta elettronica nell'organizzazione o nella società e si vuole accedere all'account sul dispositivo mobile. È importante collaborare con il supporto tecnico dell'azienda per proteggere l'accesso alla posta elettronica durante il trasferimento dei messaggi dal mittente al dispositivo. L'attuale sistema di posta elettronica può aver funzionato correttamente in precedenza, ma l'esecuzione della procedura seguente garantirà una maggior sicurezza delle informazioni.
+L'utente potrebbe aver ottenuto l'accesso tramite dispositivo mobile al proprio account di posta elettronica aziendale o dell'istituto di istruzione *prima di* aver attivato la gestione del dispositivo. Se ora il dispositivo è gestito, è consigliabile eseguire queste operazioni:
 
-1.  Passare alle **Impostazioni** del dispositivo e rimuovere la connessione alla posta elettronica aziendale impostata in precedenza.  Ad esempio, in un dispositivo iOS toccare **Impostazioni** > **Posta** > **Account**. Selezionare l'account di posta elettronica di lavoro e quindi toccare **Elimina account**.
+* Disconnettere l'account di posta elettronica aziendale esistente dal dispositivo.
+* Sincronizzare di nuovo le impostazioni del dispositivo dall'app Portale aziendale.  
 
-2.  Uscire da **Impostazioni** e aprire l'app Portale aziendale nel dispositivo.  
+Questa procedura consente di assicurarsi che il dispositivo soddisfi i requisiti di sicurezza della propria azienda e che i messaggi di posta elettronica rimangano protetti.
 
-3. Passare a **Dispositivo** e selezionare il dispositivo da aggiornare.
+1.  Nel dispositivo scegliere **Impostazioni** e trovare i propri account connessi. In un dispositivo iOS 11+, ad esempio, selezionare **Account e password**.
+ 
+2. Selezionare e rimuovere il proprio account di posta elettronica aziendale.
 
-4. Selezionare **Verifica le impostazioni**. Dopo alcuni secondi, il dispositivo viene aggiornato con le nuove impostazioni di posta elettronica.
+3. Aprire l'app Portale aziendale nel dispositivo.  
+
+4. Nell'elenco dei dispositivi selezionare quello da aggiornare.
+
+5. Selezionare **Verifica le impostazioni**. Dopo alcuni secondi, il dispositivo sincronizzerà le nuove impostazioni di posta elettronica.
+
+6. Accedere al proprio account di posta elettronica aziendale o dell'istituto di istruzione.
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

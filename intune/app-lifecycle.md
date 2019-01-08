@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/04/2018
+ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
-ms.openlocfilehash: 048b8472be00c544611fe2ea8763b16019cebc0b
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.openlocfilehash: e122f2c0c62fbde04a328b1423416be82dcfa1f9
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887050"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734222"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Panoramica del ciclo di vita dell'app in Microsoft Intune
 
@@ -28,17 +28,17 @@ ms.locfileid: "52887050"
 
 Il ciclo di vita di un'app di Microsoft Intune inizia quando si aggiunge l'app e termina, dopo alcuni passaggi intermedi, quando si rimuove l'app. Grazie alla conoscenza di queste fasi, si avranno a disposizione i dettagli necessari per iniziare a gestire le app in Intune.
 
-![Ciclo di vita dell'app](./media/app-lifecycle.png "Ciclo di vita di un'app di Intune")
+![Ciclo di vita dell'app: aggiunta, distribuzione, configurazione, protezione e ritiro.](./media/app-lifecycle.png "ciclo di vita dell'app in Intune")
 
 ## <a name="add"></a>Aggiunta
 
 Il primo passaggio della distribuzione di app consiste nell'aggiungere a Intune le app da gestire e assegnare. Le procedure di base per i molti tipi di app che possono essere usati sono le stesse. Con Intune è possibile aggiungere diversi tipi di app, incluse le app sviluppate internamente (line-of-business), le app dello Store, le app predefinite e le app sul Web. Per altre informazioni sui ogni tipo di app, vedere [Come aggiungere un'app a Microsoft Intune](apps-add.md). 
 
-## <a name="deploy"></a>Distribuisci
+## <a name="deploy"></a>Distribuzione
 
 Dopo aver aggiunto l'app a Intune è possibile [assegnarla agli utenti e ai dispositivi gestiti](apps-deploy.md). Intune semplifica questo processo e, dopo la distribuzione dell'app, consente di [monitorare il risultato](apps-monitor.md) da Intune nel portale di Azure. In alcuni App Store, ad esempio quelli di [Apple](vpp-apps-ios.md) e [Windows](windows-store-for-business.md), è anche possibile acquistare licenze di app in blocco per l'azienda. Intune consente di sincronizzare i dati con gli App Store per distribuire e monitorare l'uso delle licenze per determinati tipi di app direttamente dalla console di amministrazione di Intune.
 
-## <a name="configure"></a>Configura
+## <a name="configure"></a>Configurazione
 
 Come parte del ciclo di vita, vengono rilasciate regolarmente nuove versioni delle app. Intune offre strumenti con cui è possibile [aggiornare facilmente le app](apps-add.md) distribuite a una versione più recente. Alcune app consentono anche di configurare funzionalità aggiuntive, ad esempio:
 - I [criteri di configurazione delle app iOS](app-configuration-policies-use-ios.md) applicano le impostazioni per le app iOS compatibili usate quando si esegue l'app. Ad esempio, un'app può richiedere impostazioni di personalizzazione specifiche o il nome di un server a cui deve connettersi.

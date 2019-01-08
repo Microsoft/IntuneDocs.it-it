@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a606f63bd22ce2ed543b6c5863ddc4f35d7ea212
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: aab8208865fb072170a670d1da25e7f02448c38f
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186206"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642864"
 ---
 # <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Aggiungere criteri di conformità per dispositivi Android Enterprise in Intune
 
@@ -59,16 +59,16 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
 4. Per **Piattaforma** selezionare **Android Enterprise**. 
 5. Scegliere **Impostazioni Configura**. Immettere le impostazioni **Integrità del dispositivo**, **Proprietà del dispositivo** e **Sicurezza del sistema** come descritto in questo articolo.
 
-## <a name="device-health"></a>Device health
+## <a name="device-health"></a>Integrità del dispositivo
 
 - **Dispositivi rooted**: scegliere **Blocca** per contrassegnare i dispositivi rooted (jailbroken) come non conformi. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
 - **Richiedi che il dispositivo si trovi al massimo al livello di minaccia del dispositivo**: usare questa impostazione per considerare la valutazione del rischio della soluzione Lookout MTP come condizione di conformità. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità. Per usare questa impostazione, scegliere il livello di minaccia consentito:
   - **Protetto**: questa opzione è la più sicura e indica che il dispositivo non può subire alcuna minaccia. Se viene rilevata la presenza di minacce di qualsiasi livello, il dispositivo viene considerato non conforme.
   - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
   - **Medio**: il dispositivo viene valutato come conforme se le minacce presenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
-  - **Alta**: questa opzione è la meno sicura, perché consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
-- **Google Play Services è configurata**: **richiede** che l'app Google Play Services sia installata e abilitata. Google Play Services consente gli aggiornamenti della sicurezza e rappresenta una dipendenza di base per molte funzionalità di sicurezza nei dispositivi Google certificati. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
-- **Provider di sicurezza aggiornato**: **richiede** un provider di sicurezza aggiornato in grado di proteggere un dispositivo dalle vulnerabilità note. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
+  - **Alto**: questa opzione è la meno sicura, perché consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
+- **Google Play Services è configurato**: **richiede** che l'app Google Play Services sia installata e abilitata. Google Play Services consente gli aggiornamenti della sicurezza e rappresenta una dipendenza di base per molte funzionalità di sicurezza nei dispositivi Google certificati. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
+- **Provider di sicurezza aggiornato**: **richiede** un provider di sicurezza aggiornato che può proteggere un dispositivo dalle vulnerabilità note. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
 - **Attestazione del dispositivo SafetyNet**: immettere il livello di [attestazione di SafetyNet](https://developer.android.com/training/safetynet/attestation.html) che deve essere raggiunto. Le opzioni disponibili sono:
   - **Non configurato** (impostazione predefinita): l'impostazione non viene tenuta in considerazione per la valutazione della conformità.
   - **Verifica l'integrità di base**
@@ -87,8 +87,8 @@ Nei dispositivi Android Enterprise, l'impostazione **Analisi delle minacce nelle
 
 ### <a name="password"></a>Password
 
-- **Richiedi una password per sbloccare i dispositivi mobili**: **richiedere** agli utenti di immettere una password prima di poter accedere al dispositivo. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
-- **Lunghezza minima password**: immettere il numero minimo di cifre o caratteri per la password dell'utente.
+- **Richiedi una password per sbloccare i dispositivi mobili**: **richiedere** agli utenti di immettere una password per poter accedere al dispositivo. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità. Questa impostazione viene applicata a livello di dispositivo. Se è sufficiente richiedere una password a livello di profilo di lavoro, usare i criteri di configurazione. Vedere [Impostazioni di configurazione dei dispositivi Android Enterprise](device-restrictions-android-for-work.md).
+- **Lunghezza minima password**: immettere il numero minimo di cifre o caratteri che deve avere la password dell'utente.
 - **Tipo di password richiesto**: scegliere se una password deve essere composta solo da caratteri numerici oppure da una combinazione di numeri e altri caratteri. Le opzioni disponibili sono:
   - **Impostazione predefinita dispositivo**
   - **Protezione biometrica bassa**
@@ -98,9 +98,9 @@ Nei dispositivi Android Enterprise, l'impostazione **Analisi delle minacce nelle
   - **Almeno alfanumerico**
   - **Almeno alfanumerico con simboli**
 
-- **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere di nuovo la password. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
-- **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
-- **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password recenti che non è possibile riutilizzare. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.
+- **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere nuovamente la password. Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
+- **Scadenza password (giorni)**: selezionare il numero di giorni che mancano alla scadenza della password attuale, quando l'utente deve creare una nuova password.
+- **Numero di password precedenti di cui impedire il riutilizzo**: immettere il numero di password recenti che non è possibile riutilizzare. Usare questa impostazione per impedire all'utente di creare password già usate in precedenza.
 
 ### <a name="encryption"></a>Crittografia
 
@@ -110,7 +110,7 @@ Nei dispositivi Android Enterprise, l'impostazione **Analisi delle minacce nelle
 
 ### <a name="device-security"></a>Sicurezza del dispositivo
 
-- **Blocca app da origini sconosciute**: scegliere di **bloccare** i dispositivi con origini abilitate in "Security > Unknown Sources" (Sicurezza > Origini sconosciute) (supportato da Android 4.0 ad Android 7.x, non supportato da Android 8.0 e versioni successive). Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
+- **Blocca app da origini sconosciute**: scegliere di **bloccare** i dispositivi con origini abilitate in "Sicurezza > Origini sconosciute" (supportato da Android 4.0 ad Android 7.x, non supportato da Android 8.0 e versioni successive). Se si sceglie **Non configurato** (impostazione predefinita), questa impostazione non viene tenuta in considerazione per la valutazione della conformità.
 
   Per trasferire localmente le app, devono essere consentite le origini sconosciute. Se non si esegue il sideload di app Android, abilitare questi criteri di conformità impostando questa funzionalità su **Blocca**. 
 
@@ -119,7 +119,7 @@ Nei dispositivi Android Enterprise, l'impostazione **Analisi delle minacce nelle
 
   Non è necessario configurare questa impostazione poiché i dispositivi del profilo di lavoro Android limitano sempre l'installazione da origini sconosciute.
 
-- **Integrità del runtime dell'app Portale aziendale**: scegliere **Richiedi** per confermare che l'app Portale aziendale soddisfa tutti i requisiti seguenti:
+- **Integrità del runtime dell'app Portale aziendale**: scegliere **Rendi obbligatorio** per confermare che l'app Portale aziendale soddisfa tutti i requisiti seguenti:
 
   - Ha l'ambiente di runtime predefinito installato
   - È firmata correttamente

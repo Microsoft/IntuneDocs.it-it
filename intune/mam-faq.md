@@ -15,12 +15,12 @@ ms.reviewer: erikre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb6e5e603b353be5d3c0d3fdaca4f1d8af675ad
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1e2b97970a7ab440a032eb29f5307e4dbeddc3bc
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181191"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53306016"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Domande frequenti sulla gestione di applicazioni mobili e sulla protezione delle app
 
@@ -37,9 +37,9 @@ MAM protegge i dati di un'organizzazione all'interno di un'applicazione. Con MAM
 
 **Quali configurazioni dei dispositivi sono supportate da MAM?**<br></br>
 MAM di Intune supporta due configurazioni:
-- **Intune MDM + MAM**: gli amministratori IT possono gestire le app solo usando MAM e i criteri di protezione delle app nei dispositivi registrati con la gestione di dispositivi mobili (MDM) di Intune. Per gestire le app con MDM + MAM, i clienti devono usare la console di Intune nel portale di Azure all'indirizzo https://portal.azure.com.
+- **MDM + MAM di Intune**: Gli amministratori IT possono gestire le app solo usando MAM e i criteri di protezione delle app nei dispositivi registrati con la gestione di dispositivi mobili (MDM) di Intune. Per gestire le app con MDM + MAM, i clienti devono usare la console di Intune nel portale di Azure all'indirizzo https://portal.azure.com.
 
-- **MAM senza registrazione del dispositivo**: MAM senza registrazione del dispositivo, o MAM-WE, consente agli amministratori IT di gestire le app tramite MAM e i criteri di protezione delle app in dispositivi non registrati con MDM di Intune. Ciò significa che le app possono essere gestite da Intune nei dispositivi registrati con provider EMM di terze parti. Per gestire le app con MAM-WE, i clienti devono usare la console di Intune nel portale di Azure all'indirizzo http://portal.azure.com. Le app possono essere gestite da Intune anche nei dispositivi registrati con provider EMM (Enterprise Mobility Management) di terze parti o non registrati affatto in un sistema MDM.
+- **MAM senza registrazione del dispositivo**: questa configurazione, detta anche MAM-WE, consente agli amministratori IT di gestire le app tramite MAM e i criteri di protezione delle app nei dispositivi non registrati con MDM di Intune. Ciò significa che le app possono essere gestite da Intune nei dispositivi registrati con provider EMM di terze parti. Per gestire le app con MAM-WE, i clienti devono usare la console di Intune nel portale di Azure all'indirizzo https://portal.azure.com. Le app possono essere gestite da Intune anche nei dispositivi registrati con provider EMM (Enterprise Mobility Management) di terze parti o non registrati affatto in un sistema MDM.
 
 
 ## <a name="app-protection-policies"></a>Criteri di protezione delle app
@@ -61,7 +61,7 @@ Qualsiasi app integrata con [Intune App SDK](/intune/app-sdk) o di cui è stato 
 
 - L'utente finale deve avere una licenza per Microsoft Intune assegnata all'account Azure Active Directory. Per informazioni su come assegnare le licenze di Intune agli utenti finali, vedere [Gestire le licenze di Intune](/intune/licenses-assign).
 
-- L'utente finale deve appartenere a un gruppo di sicurezza che è la destinazione dei criteri di protezione dell'app. Gli stessi criteri di protezione devono avere come destinazione l'app specifica in uso. I criteri di protezione delle app possono essere creati e distribuiti nella console di Intune nel [portale di Azure](http://portal.azure.com). È ora possibile creare gruppi di sicurezza nel [portale di Office](http://portal.office.com).
+- L'utente finale deve appartenere a un gruppo di sicurezza che è la destinazione dei criteri di protezione dell'app. Gli stessi criteri di protezione devono avere come destinazione l'app specifica in uso. I criteri di protezione delle app possono essere creati e distribuiti nella console di Intune nel [portale di Azure](https://portal.azure.com). È ora possibile creare gruppi di sicurezza nel [portale di Office](https://portal.office.com).
 
 - L'utente finale deve accedere all'app usando il proprio account AAD.
 
@@ -76,7 +76,7 @@ Qualsiasi app integrata con [Intune App SDK](/intune/app-sdk) o di cui è stato 
 
 **Quali sono i requisiti aggiuntivi per usare le app [Word, Excel e PowerPoint](https://products.office.com/business/office)?**
 
-- L'utente finale deve avere una licenza per [Office 365 Business o Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) collegata all'account Azure Active Directory. La sottoscrizione deve includere le app di Office nei dispositivi mobili e può includere un account di archiviazione cloud con [OneDrive for Business](https://onedrive.live.com/about/business/). È possibile assegnare le licenze di Office 365 nel [portale di Office](http://portal.office.com) seguendo queste [istruzioni](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+- L'utente finale deve avere una licenza per [Office 365 Business o Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) collegata all'account Azure Active Directory. La sottoscrizione deve includere le app di Office nei dispositivi mobili e può includere un account di archiviazione cloud con [OneDrive for Business](https://onedrive.live.com/about/business/). È possibile assegnare le licenze di Office 365 nel [portale di Office](https://portal.office.com) seguendo queste [istruzioni](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 - L'utente finale deve aver configurato un percorso gestito usando la funzionalità Salva con nome granulare nell'impostazione dei criteri di protezione delle applicazioni "Impedisci Salva con nome". Se il percorso gestito è OneDrive, ad esempio, l'app [OneDrive](https://onedrive.live.com/about/) deve essere configurata nell'app Word, Excel o PowerPoint dell'utente finale.
 
@@ -109,9 +109,9 @@ Il PIN è un codice di accesso usato per verificare che l'accesso ai dati dell'o
 
 - **Con quale frequenza viene richiesto il PIN di Intune all'utente?**<br></br> L'amministratore IT può definire l'impostazione dei criteri di protezione delle app di Intune "Controlla di nuovo i requisiti di accesso dopo (minuti)" nella console di amministrazione di Intune. Questa impostazione specifica il periodo di tempo che deve trascorrere prima che i requisiti di accesso vengano controllati nel dispositivo e prima che venga nuovamente visualizzata la schermata del PIN dell'applicazione. Ecco tuttavia alcuni dettagli importanti sul PIN che influiscono sulla frequenza con cui viene richiesto il PIN all'utente: 
 
-    - **Il PIN viene condiviso tra le app dello stesso editore per migliorare l'usabilità:** in iOS, un solo PIN viene condiviso da tutte le app **dello stesso editore**. In Android un solo PIN viene condiviso da tutte le app.
+    - **Il PIN viene condiviso tra le app dello stesso server di pubblicazione per migliorare l'usabilità:** in iOS, un solo PIN viene condiviso da tutte le app **dello stesso server di pubblicazione**. In Android un solo PIN viene condiviso da tutte le app.
     - **Il comportamento "Controlla di nuovo i requisiti di accesso dopo (minuti)" dopo un riavvio del dispositivo:** un "timer del PIN" tiene traccia del numero di minuti di inattività che determinano quando visualizzare di nuovo il PIN dell'app di Intune. In iOS, il timer del PIN è indipendente dal riavvio del dispositivo. Di conseguenza, il riavvio del dispositivo non ha effetto sul numero di minuti durante i quali l'utente è rimasto inattivo da un'app iOS con i criteri PIN di Intune. In Android, il timer del PIN viene reimpostato al riavvio del dispositivo. Di conseguenza, le app Android con criteri di Intune richiederanno probabilmente un PIN dell'app indipendentemente dal valore dell'impostazione 'Controlla di nuovo i requisiti di accesso dopo (minuti)' **dopo un riavvio del dispositivo**.  
-    - **Il timer associato al PIN è di natura sequenziale:** quando si immette il PIN per accedere a un'app (app A) e quest'ultima lascia il primo piano (area di input principale) del dispositivo, il timer del PIN immesso viene reimpostato. Le app (ad esempio l'app B) che condividono questo PIN non richiederanno all'utente di immettere il PIN, perché il timer è stato reimpostato. La richiesta di immissione del PIN verrà visualizzata di nuovo quando il valore di 'Controlla di nuovo i requisiti di accesso dopo (minuti)' verrà nuovamente raggiunto.
+    - **Il timer associato al PIN è di natura sequenziale:** quando si immette il PIN per accedere a un'app (app A) e quest'ultima lascia la posizione in primo piano (area di input principale) nel dispositivo, il timer del PIN immesso viene reimpostato. Le app (ad esempio l'app B) che condividono questo PIN non richiederanno all'utente di immettere il PIN, perché il timer è stato reimpostato. La richiesta di immissione del PIN verrà visualizzata di nuovo quando il valore di 'Controlla di nuovo i requisiti di accesso dopo (minuti)' verrà nuovamente raggiunto.
 
 Per i dispositivi iOS, anche se il PIN è condiviso tra app di diversi server di pubblicazione, la richiesta verrà nuovamente visualizzata quando il valore di **Controlla di nuovo i requisiti di accesso dopo (minuti)** verrà nuovamente raggiunto per l'app che non è l'area di input principale. Quindi, ad esempio, un utente ha l'app _A_ dal server di pubblicazione _X_ e l'app _B_ dal server di pubblicazione _Y_ e queste due app condividono lo stesso PIN. L'utente è concentrato sull'app _A_ (in primo piano) e l'app _B_ è ridotta a icona. Quando si raggiunge il valore di **Controlla di nuovo i requisiti di accesso dopo (minuti)** e si passa all'app _B_, è necessario il PIN.
 

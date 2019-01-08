@@ -1,12 +1,12 @@
 ---
 title: Aggiungere app dello Store per Windows Phone 8.1 in Microsoft Intune
 titleSuffix: ''
-description: Informazioni sull'aggiunta di app dello Store per Windows Phone 8.1 in Microsoft Intune.
+description: Questo argomento descrive come aggiungere app dello Store per Windows Phone 8.1 a Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 47861e95a016338447091e4fcaffdda3e199eee7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5892ffe0369ae7b43489c1ce5c327f88c0d857f3
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182755"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642524"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Aggiungere app dello Store per Windows Phone 8.1 in Microsoft Intune
 
@@ -40,16 +40,16 @@ Seguire questa procedura per aggiungere un'app dello Store per Windows Phone 8.1
 5. Nel riquadro **App** selezionare **Aggiungi**.
 6. Nel riquadro **Aggiungi app** selezionare il **Tipo di app** **Windows Phone 8.1** e scegliere **Informazioni sull'app**.
 7. Nel riquadro **Informazioni sull'app** aggiungere le informazioni sull'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente:
-    - **Nome**: immettere il nome dell'app da visualizzare nel portale aziendale. Assicurarsi che il nome dell'app usato sia univoco. Se il nome dell'app è duplicato, nel portale aziendale sarà visualizzato un solo nome.
+    - **Nome**: immettere il nome dell'app che deve essere visualizzato nel portale aziendale. Assicurarsi che il nome dell'app usato sia univoco. Se il nome dell'app è duplicato, nel portale aziendale sarà visualizzato un solo nome.
     - **Descrizione**: immettere una descrizione per l'app. Questa descrizione viene visualizzata dagli utenti nel portale aziendale.
     - **Autore**: immettere il nome dell'autore dell'app.
-    - **URL di App Store**: digitare l'URL dell'App Store per l'app che si vuole creare.
-    - **Categoria**: facoltativamente, selezionare una o più categorie di app predefinite oppure una categoria creata. Questa operazione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
+    - **URL di App Store**: digitare l'URL dell'App Store per l'app da creare.
+    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente (facoltativo). Questa operazione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
     - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **Developer**: immettere il nome dello sviluppatore dell'applicazione (facoltativo).
-    - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio, *Reparto risorse umane* (facoltativo).
+    - **Sviluppatore**: immettere il nome dello sviluppatore dell'app (facoltativo).
+    - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio *Reparto risorse umane* (facoltativo).
     - **Note**: immettere eventuali note da associare a questa app (facoltativo).
     - **Logo**: caricare un'icona da associare all'app (facoltativo). Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
 8. Selezionare **OK**.

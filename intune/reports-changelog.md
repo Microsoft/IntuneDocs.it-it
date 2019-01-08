@@ -1,7 +1,7 @@
 ---
 title: Registro modifiche per il data warehouse di Intune
 titlesuffix: Microsoft Intune
-description: Elenco delle modifiche nell'API data warehouse di Intune.
+description: Questo argomento presenta un elenco di modifiche per l'API data warehouse di Microsoft Intune.
 keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: dfdbaffeb8872e8b121d138ee0aca0315279e718
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189946"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642762"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registro modifiche per l'API data warehouse di Intune
 
@@ -95,4 +95,4 @@ Ora è possibile creare report e visualizzazioni di dati usando le informazioni 
 
 ## <a name="next-steps"></a>Passaggi successivi
  - Informazioni sulle [novità di Intune ogni settimana](whats-new.md), oltre a indicazioni su modifiche previste, avvisi importanti sul servizio e informazioni sulle versioni precedenti.
- - Leggere il [blog di Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Leggere il [blog di Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).

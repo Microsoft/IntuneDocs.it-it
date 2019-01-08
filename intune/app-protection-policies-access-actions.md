@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032062"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734239"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Cancellare i dati in modo selettivo usando le azioni di accesso per i criteri di protezione delle app in Intune
 
@@ -110,7 +110,7 @@ L'elenco seguente riporta le azioni comuni:
 
 In alcuni casi, ad esempio per l'impostazione **Versione minima del sistema operativo**, è possibile configurare l'impostazione per l'esecuzione di tutte le azioni applicabili in base ai diversi numeri di versione. 
 
-![Screenshot delle azioni di accesso per la protezione delle app di Intune - Versione minima del sistema operativo](./media/apps-selective-wipe-access-actions05.png)
+![Screenshot delle azioni di accesso per la protezione delle app - Versione minima del sistema operativo](./media/apps-selective-wipe-access-actions05.png)
 
 Al termine della configurazione di un'impostazione, la riga sarà posta nella visualizzazione di sola lettura e sarà disponibile per la modifica in qualsiasi momento. La riga avrà anche un elenco a discesa disponibile per la selezione nella colonna **Impostazione**. Le impostazioni già configurate che non consentono azioni multiple non saranno disponibili per la selezione nell'elenco a discesa.
 

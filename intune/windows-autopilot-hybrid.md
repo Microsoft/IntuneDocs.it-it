@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112443"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642558"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Distribuire dispositivi aggiunti ad Azure AD ibrido usando Intune e Windows Autopilot (anteprima)
 È possibile usare Intune e Windows Autopilot per configurare i dispositivi aggiunti ad Active Directory ibrido. A tale scopo, eseguire i passaggi seguenti.
@@ -204,7 +204,7 @@ Il passaggio dello stato del profilo del dispositivo da **Non assegnato** ad **A
    - **Description**: Immettere una descrizione del profilo.
    - **Piattaforma**: scegliere **Windows 10 e versioni successive**.
    - **Tipo di profilo**: scegliere **Aggiunta a un dominio (anteprima)**.
-3. Scegliere **Impostazioni** e specificare un **Prefisso nome computer**, **Nome di dominio** e **Unità organizzativa** (facoltativo). 
+3. Scegliere **Impostazioni** e specificare **Prefisso nome computer**, **Nome di dominio** e **Unità organizzativa** nel formato nome distinto (facoltativo). 
 4. Scegliere **OK** > **Crea**. Il profilo viene creato e quindi visualizzato nell'elenco.
 5. Per assegnare il profilo, seguire i passaggi indicati in [Assegnare un profilo di dispositivo](device-profile-assign.md#assign-a-device-profile). 
 

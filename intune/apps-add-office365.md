@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c98eb7795ca01db9a78b428faf433109928cff76
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e2958b536aa6603fc9cde14e679a05e4a9d5f4dd
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182270"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266971"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Assegnare le app di Office 365 ai dispositivi Windows 10 con Microsoft Intune
 
@@ -71,16 +71,16 @@ In questo passaggio si specificano le informazioni sulla suite di app. Queste in
 1. Nel riquadro **Aggiungi app** selezionare **Informazioni sulla suite di app**.
 2. Nel riquadro **Informazioni sulla suite di app** seguire questa procedura:
     - **Nome della suite**: immettere il nome della suite di app visualizzato nel portale aziendale. Verificare che tutti i nomi di suite usati siano univoci. Se il nome di una suite viene usato due volte, solo una delle due suite viene visualizzata dagli utenti nel portale aziendale.
-    - **Descrizione della suite**: immettere una descrizione per la suite di app. Ad esempio, è possibile elencare le app selezionate da includere.
-    - **Editore**: Microsoft viene visualizzato come editore.
-    - **Categoria**: facoltativamente, selezionare una o più categorie di app predefinite oppure una categoria creata. Questa impostazione consente agli utenti di trovare più facilmente il gruppo di app nel portale aziendale.
+    - **Descrizione della suite** : immettere una descrizione per la suite di app. Ad esempio, è possibile elencare le app selezionate da includere.
+    - **Editore**: come editore viene visualizzato Microsoft.
+    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente (facoltativo). Questa impostazione consente agli utenti di trovare più facilmente il gruppo di app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
     - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **Sviluppatore**: Microsoft viene visualizzato come sviluppatore.
-    - **Proprietario**: Microsoft viene visualizzato come proprietario.
+    - **Sviluppatore**: come sviluppatore viene visualizzato Microsoft.
+    - **Proprietario**: come proprietario viene visualizzato Microsoft.
     - **Note**: immettere eventuali note da associare a questa app.
-    - **Logo**: il logo Office 365 è visualizzato insieme all'app quando gli utenti visitano il portale aziendale.
+    - **Logo**: quando gli utenti visitano il portale aziendale, il logo Office 365 viene visualizzato insieme all'app.
 3. Selezionare **OK**.
 
 ## <a name="configure-app-settings"></a>Configurare le impostazioni dell'app
@@ -105,7 +105,7 @@ In questo passaggio configurare le opzioni di installazione per la suite di app.
         Per altre informazioni, vedere [Panoramica dei canali di aggiornamento per Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
 
     - **Remove MSI from end-user devices** (Rimuovi MSI dai dispositivi degli utenti finali) - Scegliere se si vogliono rimuovere le app MSI di Office preesistenti dai dispositivi degli utenti finali. L'installazione non riesce se sono già presenti app MSI nei dispositivi degli utenti finali. Le app da disinstallare non sono limitate alle app selezionate per l'installazione in **Configura la suite di app**, in quanto verranno rimosse tutte le app di Office (MSI) dal dispositivo dell'utente finale. Per altre informazioni, vedere [Rimuovere le versioni MSI esistenti di Office durante l'aggiornamento a Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version). Quando Intune reinstalla Office nei computer dell'utente finale, i Language Pack saranno gli stessi usati nelle precedenti installazioni di Office MSI. 
-    - **Accetta automaticamente il contratto di licenza con l'utente finale**: selezionare questa opzione se non si richiede agli utenti finali di accettare il contratto di licenza. Intune accetterà automaticamente il contratto.
+    - **Accetta automaticamente il contratto di licenza con l'utente finale** : selezionare questa opzione se non si richiede agli utenti finali di accettare il contratto di licenza. Intune accetterà automaticamente il contratto.
     - **Usa l'attivazione di computer condivisi**: selezionare questa opzione quando più utenti condividono un computer. Per altre informazioni, vedere [Panoramica dell'attivazione di computer condivisi per Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Lingue**: Office viene installato automaticamente in una delle lingue supportate installate con Windows nel dispositivo dell'utente finale. Selezionare questa opzione se si vuole installare lingue aggiuntive con la suite di app. <p></p>
     È possibile distribuire altre lingue per le app di Office 365 Pro Plus gestite con Intune. L'elenco delle lingue disponibili include il **tipo** di Language Pack (core, parziale e correzione). Nel portale di Azure selezionare **Microsoft Intune** > **App client** > **App** > **Aggiungi**. Nell'elenco **Tipo di app** del pannello **Aggiungi app** selezionare **Windows 10** in **Famiglia di prodotti Office 365**. Selezionare **Lingue** nel pannello **Impostazioni della suite di app**. Per altre informazioni, vedere [Panoramica della distribuzione delle lingue in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
@@ -120,33 +120,31 @@ Le tabelle seguenti elencano i codici di errore comuni che possono essere visual
 
 ### <a name="status-for-office-csp"></a>Stato di Office CSP
 
-||||
-|-|-|-|
-|Stato|Fase|Descrizione|
-|1460 (ERROR_TIMEOUT)|Download|Non è stato possibile scaricare lo strumento di distribuzione di Office|    
-|13 (ERROR_INVALID_DATA)|-|Impossibile verificare la firma dello strumento di distribuzione di Office scaricato|
-|Codice di errore da CertVerifyCertificateChainPolicy|-|Controllo del certificato non riuscito per lo strumento di distribuzione di Office scaricato|    
-|997|WIP|Installazione|
-|0|Dopo l'installazione|Installazione completata|    
-|1603 (ERROR_INSTALL_FAILURE)|-|Non sono stati eseguiti tutti i controlli dei prerequisiti, ad esempio:<ul><li>SxS (È stata tentata l'installazione con la versione MSI 2016 installata)</li><li>Versione non corrispondente</li><li>Altri</li></ul>|  
-|0x8000ffff (E_UNEXPECTED)|-|È stata tentata la disinstallazione senza Office a portata di clic disponibile nel computer|     
-|17002|-|Non è stato possibile completare lo scenario (installazione). Motivi possibili:<ul><li>Installazione annullata dall'utente</li><li>Installazione annullata da un'altra installazione</li><li>Spazio su disco non sufficiente durante l'installazione</li><li>ID lingua sconosciuto</li></ul>|
-|17004|-|SKU sconosciuti|   
+| Stato | Fase | Descrizione |
+|--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1460 (ERROR_TIMEOUT) | Download | Non è stato possibile scaricare lo strumento di distribuzione di Office |
+| 13 (ERROR_INVALID_DATA) | - | Impossibile verificare la firma dello strumento di distribuzione di Office scaricato |
+| Codice di errore da CertVerifyCertificateChainPolicy | - | Controllo del certificato non riuscito per lo strumento di distribuzione di Office scaricato |
+| 997 | WIP | Installazione |
+| 0 | Dopo l'installazione | Installazione completata |
+| 1603 (ERROR_INSTALL_FAILURE) | - | I controlli dei prerequisiti hanno avuto esito negativo, ad esempio: SxS (È stata tentata l'installazione con la versione MSI 2016 installata), Versione non corrispondente, Altri |
+| 0x8000ffff (E_UNEXPECTED) | - | È stata tentata la disinstallazione senza Office a portata di clic disponibile nel computer |
+| 17002 | - | Non è stato possibile completare lo scenario (installazione). Motivi possibili: Installazione annullata dall'utente, Installazione annullata da un'altra installazione, Spazio su disco non sufficiente durante l'installazione, ID lingua sconosciuto |
+| 17004 | - | SKU sconosciuti |
 
 
 ### <a name="office-deployment-tool-error-codes"></a>Codici di errore dello strumento di distribuzione di Office
 
-|||||
-|-|-|-|-|
-|Scenario|Codice restituito|Interfaccia utente|Nota|
-|Disinstallazione senza installazione A portata di clic attiva|-2147418113, 0x8000ffff o 2147549183|Codice di errore: 30088-1008<br>Codice di errore: 30125-1011 (404)|Strumento di distribuzione di Office|
-|Installazione con la versione MSI installata|1603|-|Strumento di distribuzione di Office|
-|Installazione annullata dall'utente o da un'altra installazione|17002|-|A portata di clic|
-|Tentativo di installazione della versione a 64 bit in un dispositivo in cui è installata la versione a 32 bit.|1603|-|Codice restituito dello strumento di distribuzione di Office|
-|Tentativo di installazione di un codice SKU sconosciuto (caso d'uso non legittimo per Office CSP poiché devono essere passati solo i codici SKU validi)|17004|-|A portata di clic|
-|Mancanza di spazio|17002|-|A portata di clic|
-|Il client A portata di clic non è stato avviato (imprevisto)|17000|-|A portata di clic|
-|Il client A portata di clic non è stato inserito in coda (imprevisto)|17001|-|A portata di clic|
+| Scenario | Codice restituito | Interfaccia utente | Nota |
+|------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
+| Disinstallazione senza installazione A portata di clic attiva | -2147418113, 0x8000ffff o 2147549183 | Codice di errore: 30088-1008 Codice di errore: 30125-1011 (404) | Strumento di distribuzione di Office |
+| Installazione con la versione MSI installata | 1603 | - | Strumento di distribuzione di Office |
+| Installazione annullata dall'utente o da un'altra installazione | 17002 | - | A portata di clic |
+| Tentativo di installazione della versione a 64 bit in un dispositivo in cui è installata la versione a 32 bit. | 1603 | - | Codice restituito dello strumento di distribuzione di Office |
+| Tentativo di installazione di un codice SKU sconosciuto (caso d'uso non legittimo per Office CSP poiché devono essere passati solo i codici SKU validi) | 17004 | - | A portata di clic |
+| Mancanza di spazio | 17002 | - | A portata di clic |
+| Il client A portata di clic non è stato avviato (imprevisto) | 17000 | - | A portata di clic |
+| Il client A portata di clic non è stato inserito in coda (imprevisto) | 17001 | - | A portata di clic |
 
 ## <a name="next-steps"></a>Passaggi successivi
 

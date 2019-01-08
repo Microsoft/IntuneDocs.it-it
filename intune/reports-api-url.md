@@ -1,7 +1,7 @@
 ---
 title: Endpoint dell'API data warehouse di Intune
 titlesuffix: Microsoft Intune
-description: Argomento di riferimento che descrive la struttura URL dell'API data warehouse di Intune.
+description: Questo argomento di riferimento descrive la struttura dell'URL dell'API data warehouse di Intune. Sono riportati esempi di filtro.
 keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d819656b59f1f1ceffa1e19645bddc0e8427ad8c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 58a78cee51a411c940d4510cd8498994c14129f0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180596"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642745"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpoint dell'API data warehouse di Intune
 

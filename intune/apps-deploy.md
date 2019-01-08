@@ -1,12 +1,12 @@
 ---
 title: Assegnare app ai gruppi con Microsoft Intune
 titlesuffix: ''
-description: Informazioni su come assegnare un'app di Intune ai gruppi di utenti o dispositivi.
+description: Informazioni su come assegnare un'app di Intune ai gruppi di utenti o dispositivi usando Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
-ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
+ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52267255"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734273"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
@@ -29,20 +29,22 @@ ms.locfileid: "52267255"
 
 Dopo avere [aggiunto un'app](apps-add.md) a Microsoft Intune, è possibile assegnarla a utenti e dispositivi. Si noti che è possibile assegnare un'app a un dispositivo indipendentemente dal fatto che il dispositivo sia gestito da Intune o meno. 
 
+> [!NOTE]
+> La finalità della distribuzione in base alla disponibilità non è supportata per i gruppi di dispositivi, ma solo per i gruppi di utenti.
+
 La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a utenti e dispositivi:
 
-||||
-|-|-|-|-|
-|&nbsp;|**Dispositivi registrati con Intune**|**Dispositivi non registrati con Intune**|
-|Assegnazione a utenti|Sì|Sì|
-|Assegnazione a dispositivi|Sì|No|
-|Assegnazione di app sottoposte a wrapping o di app che includono Intune SDK (per i criteri di protezione delle app)|Sì|Sì|
-|Assegnazione di app come Disponibili|Sì|Sì|
-|Assegnazione di app come Obbligatorio|Sì|No|
-|Disinstallazione di app|Sì|No|
-|Ricezione degli aggiornamenti delle app da Intune|Sì|No|
-|Installazione di app disponibili sull'app Portale aziendale da parte degli utenti finali|Sì|No|
-|Installazione di app disponibili sul portale aziendale basato sul Web da parte degli utenti finali|Sì|Sì|
+|   | Dispositivi registrati con Intune | Dispositivi non registrati con Intune |
+|-------------------------------------------------------------------------------------------|------------------------------|----------------------------------|
+| Assegnazione a utenti | Sì | Sì |
+| Assegnazione a dispositivi | Sì | No |
+| Assegnazione di app sottoposte a wrapping o di app che includono Intune SDK (per i criteri di protezione delle app) | Sì | Sì |
+| Assegnazione di app come Disponibili | Sì | Sì |
+| Assegnazione di app come Obbligatorio | Sì | No |
+| Disinstallazione di app | Sì | No |
+| Ricezione degli aggiornamenti delle app da Intune | Sì | No |
+| Installazione di app disponibili sull'app Portale aziendale da parte degli utenti finali | Sì | No |
+| Installazione di app disponibili sul portale aziendale basato sul Web da parte degli utenti finali | Sì | Sì |
 
 > [!NOTE]
 > Attualmente, è possibile assegnare app iOS e Android (app line-of-business e acquistate nello store) a dispositivi non registrati con Intune.
@@ -60,12 +62,12 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
 7. Selezionare **Aggiungi gruppo** per aprire il riquadro **Aggiungi gruppo** relativo all'app.
 8. Per l'app specifica, selezionare un **tipo di assegnazione**:
    - **Disponibile per i dispositivi registrati**: assegnare l'app ai gruppi di utenti che possono installare l'app dall'app Portale aziendale o dal sito Web.
-   - **Disponibile con o senza registrazione**: assegnare questa app a gruppi di utenti i cui dispositivi non sono registrati con Intune. Le app della versione gestita di Google Play non supportano questa opzione. 
-   - **Obbligatoria**: l'applicazione è installata nei dispositivi nei gruppi selezionati.
-   - **Disinstalla**: l'applicazione è disinstallata dai dispositivi nei gruppi selezionati.
+   - **Disponibile con o senza registrazione**: assegnare l'app a gruppi di utenti i cui dispositivi non sono registrati con Intune. Le app della versione gestita di Google Play non supportano questa opzione. Agli utenti deve essere assegnata una licenza di Intune. Vedere [Licenze che includono Intune](licenses.md).
+   - **Obbligatoria**: l'app viene installata nei dispositivi nei gruppi selezionati. In alcune piattaforme potrebbero essere visualizzati messaggi di aggiuntivi per chiedere all'utente finale di confermare l'avvio dell'installazione dell'app.
+   - **Disinstalla**: l'app viene disinstallata dai dispositivi nei gruppi selezionati se Intune ha installato in precedenza l'applicazione nel dispositivo tramite un'assegnazione "Disponibile per i dispositivi registrati" o "Obbligatoria" usando la stessa distribuzione. I collegamenti Web non possono essere rimossi dopo la distribuzione.
 
      > [!NOTE]
-     > **Solo per App iOS**: se è stato creato un profilo VPN iOS contenente le impostazioni VPN per app, è possibile selezionare il profilo VPN in **VPN**. Quando l'app viene eseguita, viene aperta la connessione VPN. Per altre informazioni, vedere [Impostazioni VPN per dispositivi iOS in Microsoft Intune](vpn-settings-ios.md).
+     > **Solo per le app iOS**: se è stato creato un profilo VPN iOS contenente le impostazioni VPN per app, è possibile selezionare il profilo VPN in **VPN**. Quando l'app viene eseguita, viene aperta la connessione VPN. Per altre informazioni, vedere [Impostazioni VPN per dispositivi iOS in Microsoft Intune](vpn-settings-ios.md).
      >
      > **Solo per le app Android**: se si distribuisce un'app per Android come **Disponibile con o senza registrazione**, la segnalazione dello stato sarà disponibile solo nei dispositivi registrati.
 
@@ -83,9 +85,8 @@ L'app è ora assegnata ai gruppi selezionati. Per altre informazioni sull'inclus
 
 In alcuni casi, la stessa app viene assegnata a più gruppi, ma con finalità diverse. Le informazioni nella tabella seguente consentono di conoscere la finalità risultante in casi come questo:
 
-||||
-|-|-|-|
-|**Finalità gruppo 1**|**Finalità gruppo 2**|**Finalità risultante**|
+| Finalità gruppo 1 | Finalità gruppo 2 | Finalità risultante |
+|-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Obbligatoria per l'utente|Disponibile per l'utente|Richiesto e disponibile|
 |Obbligatoria per l'utente|Non disponibile per l'utente|Richiesto|
 |Obbligatoria per l'utente|Disinstallazione utente|Richiesto|

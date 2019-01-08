@@ -1,7 +1,7 @@
 ---
 title: Distribuzione di app di Windows 10 con Microsoft Intune
 titlesuffix: ''
-description: Informazioni sugli scenari di app di Windows 10 disponibili con Microsoft Intune.
+description: Informazioni sugli scenari di distribuzione delle app di Windows 10 disponibili con Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: 0ece7f3d5b7f0d01359a342da5e3dca9b8193a27
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977287"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642609"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Distribuzione di app di Windows 10 con Microsoft Intune 
 

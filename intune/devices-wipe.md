@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861014"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553657"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi con la cancellazione, la disattivazione o l'annullamento manuale della registrazione
 
@@ -81,7 +81,7 @@ Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto dell'azion
 
 |Tipo di dati|iOS|
 |-------------|-------|
-|App aziendali e dati associati installati da Intune|**App installate tramite il portale aziendale:** tutte le app e i relativi dati vengono rimossi. Queste app includono le app inizialmente installate dall'App Store e successivamente gestite come app aziendali. <br /><br /> **App Microsoft che usano Gestione delle app mobili e sono state installate dall'App Store:** i dati delle app personali vengono rimossi. Le app aziendali e i relativi dati non vengono rimossi.|
+|App aziendali e dati associati installati da Intune|**App installate tramite il portale aziendale:** tutte le app e i relativi dati vengono rimossi. Queste app includono le app inizialmente installate dall'App Store e successivamente gestite come app aziendali. <br /><br /> **App Microsoft che usano Gestione delle app mobili e sono state installate dall'App Store:** I dati delle app aziendali vengono rimossi. Le app personali e i relativi dati non vengono rimossi.|
 |Impostazioni|Le configurazioni impostate dai criteri di Intune non vengono più applicate. Gli utenti possono modificare le impostazioni.|
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso.|
 |Impostazioni del profilo certificato|Certificati rimossi e revocati.|

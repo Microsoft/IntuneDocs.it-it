@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/13/2018
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: e677b62c7610739079184bc5ef59e47544f833bb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190218"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570809"
 ---
 # <a name="what-is-device-enrollment"></a>Che cos'è la registrazione dei dispositivi?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -47,6 +47,7 @@ Per impostazione predefinita, i dispositivi di tutte le piattaforme sono autoriz
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | No| Sì | No | [Altre informazioni](./macos-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| No |No |No  | [Altre informazioni](./device-enrollment-manager-enroll.md)|
+|**[DEP](#apple-device-enrollment-program)**|   Sì |   Facoltativo |  Facoltativo|[Altre informazioni](./device-enrollment-program-enroll-macos.md)|
 
 
 ## <a name="windows-enrollment-methods"></a>Metodi di registrazione per Windows
@@ -56,10 +57,10 @@ Per impostazione predefinita, i dispositivi di tutte le piattaforme sono autoriz
 |**[BYOD](#bring-your-own-device)** | No |  Sì |   No | [Altre informazioni](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| No |No |No  |[Altre informazioni](device-enrollment-manager-enroll.md)|
 |**Registrazione automatica** | No |Sì |No | [Altre informazioni](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**AutoPilot** |Sì |Sì |No | [Altre informazioni](enrollment-autopilot.md)]
+|**AutoPilot** |Sì |Sì |No | [Altre informazioni](enrollment-autopilot.md)
 |**Registrazione in blocco** |No |No |No | [Altre informazioni](./windows-bulk-enroll.md) |
-|**Co-gestione** |No |Sì |No | [Altre informazioni](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
-|**Oggetto Criteri di gruppo** |No |Sì |No | [Altre informazioni](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+|**Co-gestione** |No |Sì |No | [Altre informazioni](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**Oggetto Criteri di gruppo** |No |Sì |No | [Altre informazioni](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 
 ## <a name="android-enrollment-methods"></a>Metodi di registrazione per Android
@@ -80,8 +81,8 @@ I [dispositivi di proprietà dell'azienda](corporate-identifiers-add.md) includo
 ### <a name="device-enrollment-manager"></a>Manager di registrazione dispositivi
 Il manager di registrazione dispositivi (DEM, Device Enrollment Manager) è un account utente speciale usato per registrare e gestire più dispositivi di proprietà dell'azienda. I manager possono installare il Portale aziendale e registrare molti dispositivi senza utente associato. Questi tipi di dispositivi sono ideali per app POS o di utilità, ad esempio, ma non sono adatti per gli utenti che devono accedere alla posta elettronica o alle risorse aziendali. Altre informazioni su [DEM](./device-enrollment-manager-enroll.md). 
 
-### <a name="apple-device-enrollment-program"></a>Programma di registrazione del dispositivo mobile di Apple:
-La gestione del programma di registrazione dispositivi (DEP, Device Enrollment Program) di Apple consente di creare e distribuire i criteri in modalità wireless ai dispositivi acquistati e gestiti tramite DEP. Il dispositivo viene registrato quando l'utente accende il dispositivo per la prima volta ed esegue l'Assistente configurazione di iOS. Questo metodo supporta la modalità con supervisione iOS, che abilita la configurazione del dispositivo con funzionalità specifiche.
+### <a name="apple-device-enrollment-program"></a>Apple Device Enrollment Program
+La gestione di Apple Device Enrollment Program (DEP) consente di creare e distribuire i criteri in modalità wireless ai dispositivi iOS e macOS acquistati e gestiti tramite DEP. Il dispositivo viene registrato quando l'utente accende il dispositivo per la prima volta ed esegue l'Assistente configurazione. Questo metodo supporta la modalità con supervisione iOS, che abilita la configurazione del dispositivo con funzionalità specifiche.
 
 Per altre informazioni sulla registrazione DEP iOS, vedere:
 

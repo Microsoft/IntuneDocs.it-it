@@ -1,12 +1,12 @@
 ---
 title: Aggiungere app dello Store iOS a Microsoft Intune
 titlesuffix: ''
-description: Informazioni sull'aggiunta di app dello Store iOS a Microsoft Intune.
+description: Informazioni sull'aggiunta di app dello Store iOS a Microsoft Intune. È possibile assegnare le app con questo metodo se sono gratuite nell'App Store.
 keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 508ddd91a44b3cf0e210c22e48a2de5b0ddd7397
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5f1423b0f2f216f65026d2b1a7bf52dda39c9f88
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181615"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642507"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Aggiungere app dello Store iOS a Microsoft Intune
 
@@ -53,18 +53,18 @@ Usare le informazioni di questo articolo per aggiungere le app dello Store iOS a
 10. Nell'elenco risultati selezionare l'app desiderata e quindi selezionare **Seleziona**.
 11. Nel riquadro **Aggiungi app** selezionare **Informazioni sull'app** per configurare l'app.
 12. Nel riquadro **Informazioni sull'app** aggiungere le informazioni sull'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente:
-    - **Nome**: immettere il nome dell'app da visualizzare nel portale aziendale. Assicurarsi che il nome dell'app usato sia univoco. Se il nome dell'app è duplicato, nel portale aziendale sarà visualizzato un solo nome.
+    - **Nome**: immettere il nome dell'app che deve essere visualizzato nel portale aziendale. Assicurarsi che il nome dell'app usato sia univoco. Se il nome dell'app è duplicato, nel portale aziendale sarà visualizzato un solo nome.
     - **Descrizione**: immettere una descrizione per l'app. Questa descrizione viene visualizzata dagli utenti nel portale aziendale.
     - **Autore**: immettere il nome dell'autore dell'app.
-    - **URL di App Store**: digitare l'URL dell'App Store per l'app che si vuole creare.
-    - **Sistema operativo minimo**: scegliere nell'elenco la versione meno recente del sistema operativo in cui è possibile installare l'app. L'installazione non verrà eseguita se si assegna l'app a un dispositivo con un sistema operativo precedente.
-    - **Tipo di dispositivo applicabile**: nell'elenco selezionare i dispositivi che vengono usati dall'app.
-    - **Categoria**: facoltativamente, selezionare una o più categorie di app predefinite oppure una categoria creata. Questa operazione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
+    - **URL di App Store**: digitare l'URL dell'App Store per l'app da creare.
+    - **Sistema operativo minimo**: selezionare dall'elenco la versione meno recente del sistema operativo in cui è possibile installare l'app. L'installazione non verrà eseguita se si assegna l'app a un dispositivo con un sistema operativo precedente.
+    - **Tipo di dispositivo applicabile**: selezionare dall'elenco i dispositivi che vengono usati dall'app.
+    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente (facoltativo). Questa operazione consente agli utenti di trovare più facilmente l'app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
     - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **Developer**: immettere il nome dello sviluppatore dell'applicazione (facoltativo). Questo campo è visibile solo per gli amministratori e non è visibile per gli utenti.
-    - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio, *Reparto risorse umane* (facoltativo). Questo campo è visibile solo per gli amministratori e non è visibile per gli utenti.
+    - **Sviluppatore**: immettere il nome dello sviluppatore dell'app (facoltativo). Questo campo è visibile solo per gli amministratori e non è visibile per gli utenti.
+    - **Proprietario**: immettere un nome per il proprietario di questa app, ad esempio *Reparto risorse umane* (facoltativo). Questo campo è visibile solo per gli amministratori e non è visibile per gli utenti.
     - **Note**: immettere eventuali note da associare a questa app (facoltativo). Questo campo è visibile solo per gli amministratori e non per gli utenti.
     - **Logo**: caricare un'icona da associare all'app (facoltativo). Questa icona viene visualizzata con l'app quando gli utenti visitano il portale aziendale.
 13. Selezionare **OK**.

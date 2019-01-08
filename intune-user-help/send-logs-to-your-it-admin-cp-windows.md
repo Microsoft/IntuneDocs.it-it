@@ -1,11 +1,11 @@
 ---
 title: Inviare i log al supporto tecnico aziendale per i dispositivi Windows 10 | Microsoft Docs
-description: Registrare un dispositivo Windows 10 1511+ in Intune
+description: Inviare i log di diagnostica per aiutare il supporto tecnico aziendale a risolvere i problemi delle app
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2017
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,29 +14,35 @@ ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: priyar
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e1bf702dcc8f4f1163c26d25e42edf0a00825c81
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: fa6018d4a226303c6ea097a9ee36a043a040038c
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146520"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626068"
 ---
-# <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Inviare i log al supporto tecnico aziendale dall'app Portale aziendale per Windows 10
+# <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>Inviare i log di diagnostica al supporto tecnico aziendale dall'app Portale aziendale per Windows
 
-Se si verifica un errore quando si usa l'app Portale aziendale nel dispositivo Windows 10, è possibile inviare un messaggio di posta elettronica al supporto tecnico aziendale con informazioni utili ai fini della risoluzione del problema. Queste informazioni vengono memorizzate nel dispositivo in uno specifico documento definito _log di diagnostica_.
+È possibile risolvere i problemi direttamente dall'app Portale aziendale per Windows 10. Se si riscontra un problema quando si usa l'app nel proprio dispositivo Windows 10, è possibile inviare un messaggio di posta elettronica al team di supporto per richiedere assistenza. Gli eventi e gli errori che si verificano nell'app Portale aziendale vengono salvati nel dispositivo in un particolare documento denominato _log di diagnostica_. Quando si richiede supporto, l'app apre automaticamente un messaggio di posta elettronica con i dati già inseriti e l'ID di diagnostica per consentire di ottenere rapidamente il supporto desiderato.
 
 > [!Note]       
-> Il portale aziendale per Windows 10 invierà i log delle app direttamente a Microsoft quando l'utente avvia il flusso di lavoro per visualizzare la Guida per un problema. In questo modo sarà più semplice risolvere i problemi inoltrati a Microsoft.
+> Dopo che si è fatto clic sul pulsante **Guida**, l'app Portale aziendale invia automaticamente i log al team di supporto Microsoft. Questo è un passaggio proattivo che consente di risolvere con più facilità i problemi correlati a Microsoft.  
 
 1. Aprire l'app **Portale aziendale**.
-2. Selezionare l'icona a forma di ingranaggio **Impostazioni** e quindi **Invia log**.
-3. Verrà aperta la finestra **Condividi**. Selezionare **Posta**. Verrà creato un messaggio di posta elettronica con i log dell'app Portale aziendale allegati, perché sia possibile inviarli al supporto tecnico aziendale.
+2. Selezionare **Impostazioni** > **Guida**.  
 
-   ![Finestra di dialogo Invia log dalla pagina Impostazioni dell'app Portale aziendale. Il collegamento su cui fare clic è "Invia log - È possibile inviare i log di diagnostica al supporto tecnico aziendale per semplificare la risoluzione dei problemi relativi al portale aziendale."](./media/w10-share-logs-after-1711.png)
+   ![Screenshot della pagina Impostazioni, con l'opzione Impostazioni e la sezione con il pulsante per la richiesta di supporto evidenziate.](./media/1811_Get_Help_Windows_Cpapp.png)    
 
-Può anche essere necessario inviare i [log dall'app Impostazioni](send-logs-to-your-it-admin-settings-windows.md) per mettere a disposizione del supporto tecnico aziendale altri elementi per la risoluzione degli eventuali problemi rilevati.
+3. Quando viene visualizzata la schermata **Condividi**, selezionare **Posta**. L'app **Posta** creerà automaticamente un messaggio di posta elettronica. Digitare una descrizione del problema riscontrato per facilitare il team di supporto nella ricerca delle informazioni appropriate nei log.
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
+   ![Screenshot della schermata Condividi, con l'icona dell'app Posta evidenziata.](./media/1811_Mail_Logs_Windows_CPapp.png)  
+
+
+   ![Screenshot del messaggio di posta elettronica con i dati già inseriti che viene aperto nell'app Posta.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
+
+Se il team di supporto aziendale necessita di altre informazioni sull'attività dell'app o del dispositivo, può anche essere necessario inviare i [log dall'app Impostazioni](send-logs-to-your-it-admin-settings-windows.md).  
+
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  
