@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 3f0283b07c4efd03800f21aadba2cc53beffec68
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: a84683531481410d54f527ddd35400dcfe504fc5
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553691"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996032"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novità di Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -93,13 +93,6 @@ Questo aggiornamento include nuove impostazioni per controllare e gestire il bro
 
 Usare i criteri di protezione delle app per proteggere i dati aziendali e controllare il trasferimento dei dati per queste app, come per le altre app gestite dai criteri di Intune. Nota: se Flow non è ancora visibile nella console, è possibile aggiungere Flow quando si creano o modificano i criteri di protezione delle app. A tale scopo, usare l'opzione **+ Altre app** e quindi specificare l'*ID app* per Flow nel campo di input. Per Android usare *com.microsoft.flow* e per iOS usare *com.microsoft.procsimo*.
 
-#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Aggiornamento dell'interfaccia utente dei criteri di protezione delle app di Intune <!-- 3251427 -->
-Sono state modificate le etichette per le impostazioni e i pulsanti per la protezione delle app di Intune per rendere tutto più comprensibile. Alcune delle modifiche includono:  
-
-- I controlli sono cambiati da **sì** / **no** principalmente a **blocca/consenti** e **disabilita** / **abilita**. Anche le etichette sono state aggiornate.  
-- Le impostazioni sono state riformattate, in modo che l'impostazione e la relativa etichetta siano affiancate nel controllo, consentendo spostamenti più efficienti.   
-
-Le impostazioni predefinite e il numero di impostazioni rimangono uguali, ma questa modifica consente all'utente di comprendere, esplorare e utilizzare le impostazioni più facilmente per applicare i criteri di protezione delle app selezionati.
 
 ### <a name="device-configuration"></a>Configurazione del dispositivo
 
@@ -931,7 +924,7 @@ Quando si usa Intune con Samsung Knox Mobile Enrollment (KME), è possibile regi
 
 #### <a name="requesting-help-in-the-company-portal-for-windows-10----1874137---"></a>Richiesta di assistenza in Portale aziendale per Windows 10 <!-- 1874137 -->
 
-Portale aziendale per Windows 10 invia ora i log delle app direttamente a Microsoft quando l'utente avvia il flusso di lavoro per richiedere assistenza per un problema. In questo modo sarà più semplice risolvere i problemi inoltrati a Microsoft.
+Portale aziendale per Windows 10 invia ora i log delle app direttamente a Microsoft quando l'utente avvia il flusso di lavoro per visualizzare la Guida per un problema. In questo modo sarà più semplice risolvere i problemi inoltrati a Microsoft.
 
 ## <a name="week-of-april-23-2018"></a>Settimana del 23 aprile 2018
 
