@@ -6,19 +6,19 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
-ms.openlocfilehash: 8eeb55ca9e2c698d2d9e1814e9ea17f779326732
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 313c20699c30d20d1bbc9bb6aea9189a83b61f53
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816634"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Connettore Better Mobile Threat Defense con Intune
 
@@ -48,7 +48,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile impe
 
 **Bloccare quando vengono rilevate app dannose:**
 
-![App dannose rilevate](./media/better_mobile_maliciousapps_blocked.png)
+![Immagine che illustra il rilevamento di app dannose](./media/better_mobile_maliciousapps_blocked.png)
 
 **Accesso concesso dopo la correzione:**
 
@@ -64,7 +64,7 @@ Rilevare le minacce per la rete, ad esempio attacchi **Man-in-the-middle** e pro
 
 **Accesso concesso dopo la correzione:**
 
-![Accesso concesso dopo la risoluzione](./media/better_mobile_network_wifi_unblocked.png)
+![Immagine che illustra la concessione dell'accesso dopo la correzione](./media/better_mobile_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controllare l'accesso a SharePoint Online in base alle minacce alla rete
 

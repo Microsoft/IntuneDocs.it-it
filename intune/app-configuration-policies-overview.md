@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 01/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bfde1e935c782643e06030659082907365b1903e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e3d0b47bcb8ecbf3d8f76a83f0247f98c0c698f3
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179987"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006353"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Criteri di configurazione delle app per Microsoft Intune
 
@@ -53,7 +53,7 @@ Sono disponibili due opzioni per l'uso delle configurazioni delle app con Intune
 
 È possibile usare i criteri di configurazione delle app per le app che li supportano. Per supportare la configurazione delle app in Microsoft Intune, le app devono essere scritte in modo da supportare l'uso delle configurazioni delle app. Per maggiori dettagli, consultare il fornitore dell'app.
 
-È possibile preparare un'app line-of-business includendo Intune App SDK nell'app oppure eseguendo il wrapping dell'app dopo che è stata sviluppata. Intune App SDK, disponibile per iOS e Android, consente di abilitare le app per i criteri di configurazione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. Per altre informazioni, vedere [Panoramica di Intune App SDK](app-sdk.md).
+È possibile preparare un'app line-of-business includendo Intune App SDK nell'app oppure eseguendo il wrapping dell'app dopo che è stata sviluppata. Intune App SDK, disponibile per iOS e Android, consente di abilitare per le app i criteri di configurazione delle app di Intune. Mira a ridurre al minimo la quantità di modifiche del codice richieste da uno sviluppatore di app. Per altre informazioni, vedere [Panoramica di Intune App SDK](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Supporto dell'API Graph per la configurazione delle app
 

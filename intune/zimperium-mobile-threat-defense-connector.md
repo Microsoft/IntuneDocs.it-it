@@ -16,18 +16,18 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b94b4228f05abd2e7c815797f2f187efb8b303e4
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817246"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Connettore Zimperium Mobile Threat Defense con Intune
 
 È possibile controllare l'accesso dei dispositivi mobili alle risorse aziendali usando l'accesso condizionale basato sulla valutazione dei rischi condotta da Zimperium, una soluzione MTD (Mobile Threat Defense) integrata in Microsoft Intune. La valutazione dei rischi viene eseguita in base ai dati di telemetria raccolti dai dispositivi che eseguono l'app Zimperium.
 
-È possibile configurare criteri di accesso condizionale basati sulla valutazione dei rischi di Zimperium abilitata con i criteri di conformità dei dispositivi di Intune, che possono essere usati per consentire o impedire ai dispositivi non conformi di accedere alle risorse aziendali a seconda delle minacce rilevate.
+È possibile configurare criteri di accesso condizionale basati sulla valutazione dei rischi di Zimperium e abilitati usando i criteri di conformità dei dispositivi di Intune. I criteri di valutazione dei rischi possono consentire o bloccare l'accesso alle risorse aziendali dai dispositivi non conformi in base alle minacce rilevate.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>In che modo Intune e Zimperium consentono di proteggere le risorse aziendali?
 
@@ -51,11 +51,11 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile bloc
 
 **Bloccare quando vengono rilevate app dannose:**
 
-![App dannose rilevate](./media/Maliciousapps_blocked_Zimperium.png)
+![Immagine concettuale del rilevamento di app dannose](./media/Maliciousapps_blocked_Zimperium.png)
 
 **Accesso concesso dopo la correzione:**
 
-![App dannose rilevate e accesso consentito](./media/maliciousapps_unblocked_Zimperium.png)
+![Immagine concettuale dell'accesso concesso dopo la correzione](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete
 
@@ -95,7 +95,7 @@ Rilevare minacce nella rete, come attacchi di tipo  **Man-in-the-middle** , e 
 
 -   Sottoscrizione di Zimperium Mobile Threat Defense
 
-    -   Per altre informazioni, vedere il  [sito Web Zimperium](https://www.zimperium.com/zips-mobile-ips) .
+    -   Per altre informazioni, vedere il  [sito Web di Zimperium](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

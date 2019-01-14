@@ -1,12 +1,12 @@
 ---
-title: Avvio rapido - Provare Microsoft Intune gratuitamente
+title: Guida introduttiva - Provare Microsoft Intune gratuitamente
 titlesuffix: ''
-description: In questa guida di avvio rapido si creerà una sottoscrizione di valutazione gratuita, verranno spiegate le configurazioni supportate e i requisiti di rete e, in via facoltativa, si procederà alla configurazione del nome del dominio.
+description: In questa guida introduttiva si creerà una sottoscrizione di valutazione gratuita, verranno spiegate le configurazioni supportate e i requisiti di rete e, in via facoltativa, si procederà alla configurazione del nome del dominio.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737917"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067432"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Avvio rapido: Provare Microsoft Intune gratuitamente 
 
-Microsoft Intune aiuta a proteggere i dati aziendali del personale tramite la gestione dei dispositivi e delle app. In questa guida di avvio rapido si creerà una sottoscrizione gratuita per provare Intune in un ambiente di test.
+Microsoft Intune aiuta a proteggere i dati aziendali del personale tramite la gestione dei dispositivi e delle app. In questa guida introduttiva si creerà una sottoscrizione gratuita per provare Intune in un ambiente di test.
 
 Intune offre la gestione dei dispositivi mobili (MDM) e delle app per dispositivi mobili (MAM) con un servizio sicuro e basato sul cloud che viene amministrato tramite il portale di Microsoft Azure. Tramite Intune ci si assicura che la configurazione, l'aggiornamento e l'accesso alle risorse aziendali del personale, cioè i dati, i dispositivi e le app, siano gestiti correttamente e che soddisfino i criteri di conformità e i requisiti aziendali. 
 
@@ -50,7 +50,7 @@ Prima di configurare Microsoft Intune, esaminare i requisiti seguenti:
 
 2. Creare un account con il nome della propria società seguito da **.onmicrosoft.com**. 
 
-    ![Screenshot del processo di definizione delle nuove credenziali per l'account di prova Microsoft Intune](./media/account-sign-up-site-user-id.png)
+    ![Screenshot del processo di definizione delle nuove credenziali per l'account di prova Intune](./media/account-sign-up-site-user-id.png)
 
     Se si vuole usare il dominio personalizzato dell'organizzazione anziché **.onmicrosoft.com**, è possibile cambiare questa opzione nel portale di amministrazione di Office 365 descritto più avanti in questo articolo.
 
@@ -125,9 +125,9 @@ Si possono usare due portali:
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa guida di avvio rapido è stata creata una sottoscrizione gratuita per provare Intune in un ambiente di test. Per altre informazioni sulla configurazione di Intune, vedere [Configurare Intune](setup-steps.md).
+In questa guida introduttiva è stata creata una sottoscrizione gratuita per provare Intune in un ambiente di test. Per altre informazioni sulla configurazione di Intune, vedere [Configurare Intune](setup-steps.md).
 
-Per seguire questa serie di guide di avvio rapido di Intune, continuare con la guida che segue.
+Per seguire questa serie di guide introduttive di Intune, continuare con la guida introduttiva che segue.
 
 > [!div class="nextstepaction"]
 > [Avvio rapido: Creare un utente e assegnargli una licenza](quickstart-create-user.md)

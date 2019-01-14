@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429713"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067449"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creare un report dal feed OData con Power BI
 
@@ -61,7 +61,7 @@ Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power B
 7. Incollare l'URL del feed personalizzato nella casella URL nella finestra **Feed OData**.
 8. Selezionare **Di base**.
 
-    ![Feed OData](media/reports-create-01-odatafeed.png)
+    ![Feed OData del data warehouse di Intune per il tenant](media/reports-create-01-odatafeed.png)
 
 9. Selezionare **OK**.
 10. Selezionare **account aziendale** e quindi accedere con le credenziali di Intune.
@@ -70,7 +70,7 @@ Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power B
 
 11. Selezionare **Connetti**. Viene visualizzato lo strumento di navigazione con l'elenco delle tabelle del data warehouse di Intune.
 
-    ![Strumento di navigazione](media/reports-create-02-loadentities.png)
+    ![Screenshot dello strumento di navigazione: elenco delle tabelle del data warehouse](media/reports-create-02-loadentities.png)
 
 12. Selezionare le tabelle **devices** e **ownerTypes**.  Selezionare **Carica**. Power BI carica i dati nel modello.
 
@@ -78,7 +78,7 @@ Installare l'ultima versione di Power BI Desktop. È possibile scaricare Power B
 
 È possibile importare più tabelle per analizzare i dati correlati di più tabelle anziché i dati di una singola tabella.  PowerBI include una funzionalità denominata **Rilevamento automatico** che rileva e crea le relazioni automaticamente. Le tabelle del data warehouse sono state progettate per essere usate con la funzionalità di rilevamento automatico di PowerBI. Tuttavia, anche nel caso in cui PowerBI non rilevi automaticamente le relazioni, è possibile gestire le relazioni.
 
-![Gestire le relazioni](media/reports-create-03-managerelationships.png)
+![Gestire le relazioni di dati correlati tra tabelle](media/reports-create-03-managerelationships.png)
 
 1. Selezionare **Gestione relazioni**.
 2. Selezionare **Rileva automaticamente...** se PowerBI non ha ancora individuato le relazioni.
@@ -99,7 +99,7 @@ Un grafico ad albero mostra i dati gerarchici come caselle all'interno di casell
 
 È ora disponibile una visualizzazione della distribuzione dei produttori di dispositivi all'interno dell'organizzazione.
 
-![Mappa ad albero con dati](media/reports-create-06-treemapwdata.png)
+![Mappa ad albero con dati: distribuzione dei produttori di dispositivi](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Aggiungere un filtro
 
@@ -111,7 +111,7 @@ Un grafico ad albero mostra i dati gerarchici come caselle all'interno di casell
 
    Nella tabella devices è incluso un campo dati denominato **OwnerTypeKey** che contiene un codice che indica se il dispositivo è aziendale o personale. Per visualizzare i nomi descrittivi nel filtro, cercare la tabella **ownerTypes** e trascinare **ownerTypeName**. Questo esempio illustra come il modello di dati supporta le relazioni tra le tabelle.
 
-![Mappa ad albero con filtro](media/reports-create-08_ownertype.png)
+![Mappa ad albero con filtro: supporto di relazioni tra tabelle](media/reports-create-08_ownertype.png)
 
 È ora disponibile un filtro interattivo che consente di passare dai dispositivi aziendali ai dispositivi personali. Usare questo filtro per vedere in che modo cambia la distribuzione.
 

@@ -1,12 +1,11 @@
 ---
-title: Configurare l'integrazione di Lookout con Microsoft Intune
-titlesuffix: ''
+title: Configurare l'integrazione di Lookout con Microsoft Intune | Microsoft Intune
 description: Informazioni sull'integrazione di Intune con Lookout Mobile Threat Defense per controllare l'accesso dei dispositivi mobili alle risorse aziendali.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 84bc12d568fce0f5cd6e460595eedf0af0d6296e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816872"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurare l'integrazione di Lookout Mobile Threat Defense con Intune
 
@@ -77,11 +76,11 @@ Usare la procedura seguente per raccogliere le informazioni che dovranno essere 
 
 3. Nella [console di Lookout](https://aad.lookout.com), nel modulo **System** (Sistema), scegliere la scheda **Connectors** (Connettori) e quindi selezionare **Intune**.
 
-   ![screeenshot della console di Lookout con la scheda Connectors (Connettori) aperta e l'opzione Intune evidenziata](./media/lookout_mtp_setup-intune-connector.png)
+   ![Immagine della console di Lookout con l'opzione Intune nella scheda dei connettori](./media/lookout_mtp_setup-intune-connector.png)
 
 4. Passare a **Connectors** > **Connection Settings** (Connettori, Impostazioni di connessione) e specificare la frequenza di heartbeat in **Heartbeat Frequency** in minuti.
 
-   ![screenshot della scheda delle impostazioni di connessione che mostra la frequenza di heartbeat configurata](./media/lookout-mtp-connection-settings.png)
+   ![Immagine della scheda delle impostazioni di connessione con la frequenza di heartbeat configurata](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>Configurare i gruppi di registrazione
 1. Come procedura consigliata, creare un gruppo di sicurezza di Azure AD nel [portale di gestione di Azure AD](https://manage.windowsazure.com) con un numero limitato di utenti per verificare l'integrazione di Lookout.
@@ -95,10 +94,10 @@ Usare la procedura seguente per raccogliere le informazioni che dovranno essere 
 
     >[!IMPORTANT]
     > Per il **nome visualizzato** viene fatta distinzione tra maiuscole e minuscole, come indicato nella pagina **Proprietà** del gruppo di sicurezza nel portale di Azure. Come illustrato nell'immagine seguente, il nome indicato in **Display Name** (Nome visualizzato) per il gruppo di sicurezza ha iniziali maiuscole, mentre il titolo è tutto in lettere minuscole. Nella console di Lookout usare la combinazione di maiuscole/minuscole di **Display Name** (Nome visualizzato) per il gruppo di sicurezza.
-    >![screenshot del portale di Azure, servizio Azure Active Directory, pagina delle proprietà](./media/aad-group-display-name.png)
+    >![Immagine del portale di Azure, servizio Azure Active Directory, pagina delle proprietà](./media/aad-group-display-name.png)
 
     >[!NOTE] 
-    >La procedura consigliata prevede l'uso dell'incremento predefinito (5 minuti) per verificare la presenza di nuovi dispositivi. Per limitazioni correnti, **Lookout non è in grado di convalidare i nomi visualizzati dei gruppi:** assicurarsi che il campo **NOME VISUALIZZATO** nel Portale di Azure corrisponda esattamente a quello del gruppo di sicurezza di Azure AD. **La creazione di gruppi annidati non è supportata:** i gruppi di sicurezza di Azure AD usati in Lookout devono contenere solo utenti. e non possono contenere altri gruppi.
+    >La procedura consigliata prevede l'uso dell'incremento predefinito (5 minuti) per verificare la presenza di nuovi dispositivi. Limitazioni correnti, **Lookout non può convalidare i nomi visualizzati dei gruppi:** Assicurarsi che il valore indicato nel campo **NOME VISUALIZZATO** nel portale di Azure sia identico al nome del gruppo di sicurezza di Azure AD. **La creazione di gruppi annidati non è supportata:**  I gruppi di sicurezza di Azure AD usati in Lookout devono contenere solo utenti e non possono contenere altri gruppi.
 
 3.  Dopo aver aggiunto un gruppo, alla successiva apertura dell'app Lookout for Work nel dispositivo supportato, il dispositivo viene attivato in Lookout.
 
@@ -115,7 +114,7 @@ Nella sezione **Error Management** (Gestione degli errori) immettere l'indirizzo
 ## <a name="configure-enrollment-settings"></a>Configurare le impostazioni di registrazione
 Nel modulo **System** (Sistema), nella pagina **Connectors** (Connettori), specificare il numero di giorni dopo i quali un dispositivo deve essere considerato disconnesso.  I dispositivi disconnessi sono considerati non conformi. L'accesso alle applicazioni aziendali tramite questi dispositivi in base ai criteri di accesso condizionale di Intune è bloccato. È possibile specificare un valore compreso tra 1 e 90 giorni.
 
-![Impostazioni di registrazione di Lookout](./media/lookout-console-enrollment-settings.png)
+![Impostazioni di registrazione di Lookout per il modulo di sistema](./media/lookout-console-enrollment-settings.png)
 
 ## <a name="configure-email-notifications"></a>Configurare le notifiche tramite posta elettronica
 Per ricevere avvisi relativi alle minacce tramite posta elettronica, accedere alla [console di Lookout](https://aad.lookout.com) con l'account utente che deve ricevere le notifiche. Nella scheda **Preferences** (Preferenze) del modulo **System** (Sistema) scegliere il livello delle minacce per cui generare le notifiche e impostarle su **ON** (Attivato). Salvare le modifiche.
@@ -123,7 +122,7 @@ Per ricevere avvisi relativi alle minacce tramite posta elettronica, accedere al
 ![screenshot della pagina delle preferenze con l'account utente visualizzato](./media/lookout-mtp-email-notifications.png) Se non si vogliono più ricevere notifiche tramite posta elettronica, impostare le notifiche su **OFF** (Disattivato) e salvare le modifiche.
 
 ### <a name="configure-threat-classification"></a>Configurare la classificazione delle minacce
-Lookout Mobile Threat Defense usa vari tipi di classificazione per le minacce ai dispositivi mobili. Alle [classificazioni delle minacce di Lookout](http://personal.support.lookout.com/hc/articles/114094130693) sono associati livelli di rischio predefiniti. Questi livelli possono essere modificati in qualsiasi momento per adattarli ai requisiti aziendali.
+Lookout Mobile Threat Defense usa vari tipi di classificazione per le minacce ai dispositivi mobili. Alle [classificazioni delle minacce di Lookout](https://personal.support.lookout.com/hc/articles/114094130693) sono associati livelli di rischio predefiniti. Questi livelli possono essere modificati in qualsiasi momento per adattarli ai requisiti aziendali.
 
 ![screenshot della pagina dei criteri con minacce e classificazioni](./media/lookout-mtp-threat-classification.png)
 

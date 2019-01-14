@@ -1,12 +1,11 @@
 ---
-title: Configurare Microsoft Intune On-Premises Exchange Connector
-titleSuffix: ''
+title: Configurare Microsoft Intune On-Premises Exchange Connector | Microsoft Intune
 description: Usare Exchange Connector locale per gestire l'accesso dei dispositivi alle cassette postali di Exchange in base alla registrazione in Intune e a Exchange Active Sync (EAS).
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112562"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817263"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurare Intune On-Premises Exchange Connector in Azure
 
@@ -71,7 +70,7 @@ La tabella seguente elenca i requisiti per il computer in cui viene installato E
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Scaricare il pacchetto di installazione di Exchange Connector locale
 
-1. In un sistema operativo Windows Server supportato da Exchange Connector locale aprire il [portale di Azure](http://portal.azure.com) ed eseguire l'accesso con un account utente che è un amministratore in Exchange Server locale e dispone di una licenza per l'uso di Exchange Server.
+1. In un sistema operativo Windows Server supportato da Exchange Connector locale aprire il [portale di Azure](https://portal.azure.com) ed eseguire l'accesso con un account utente che è un amministratore in Exchange Server locale e dispone di una licenza per l'uso di Exchange Server.
 
 2. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 

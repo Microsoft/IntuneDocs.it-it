@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 6d9d6cb1eccd91e7832a9456504c36cb983b4810
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738019"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817382"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Come configurare l'app Portale aziendale di Microsoft Intune
 
@@ -89,7 +89,7 @@ Visualizzare un'immagine del marchio che rifletta il marchio della società. Dop
 
 |Nome del campo|Altre informazioni|
 |---|---|
-|**Upload your brand image** (Caricare immagine del marchio)| Questa opzione è disponibile per consentire di visualizzare un'immagine di sfondo nella pagina del profilo dell'utente nell'app del portale aziendale.<p>*Nota*: l'immagine potrebbe essere visualizzata in modo diverso per piattaforme diverse.<p><ul><li>Larghezza dell'immagine consigliata: maggiore di 1125 px, ma non minore di 640 px</li><li>Dimensioni massime dell'immagine: 1,3 MB</li><li>Tipo di file: PNG, JPG o JPEG</li></ul>|
+|**Upload your brand image** (Caricare immagine del marchio)| Questa opzione è disponibile per consentire di visualizzare un'immagine di sfondo nella pagina del profilo dell'utente nell'app del portale aziendale.<p>*Nota*: l'immagine potrebbe essere visualizzata in modo diverso per piattaforme diverse.<p><ul><li>Larghezza dell'immagine consigliata: Meno di 1125 px ma non meno di 640 px</li><li>Dimensioni massime dell'immagine: 1,3 MB</li><li>Tipo di file: PNG, JPG o JPEG</li></ul>|
 
 L'immagine del marchio può migliorare la fiducia dell'utente nel portale aziendale presentando un forte senso di marchio della società. Di seguito sono riportati alcuni suggerimenti che è possibile prendere in considerazione per l'acquisizione, la scelta e l'ottimizzazione dell'immagine per il portale aziendale. 
 

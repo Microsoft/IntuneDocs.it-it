@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3da4208b3036b0252e2e5bd26d8361d04642183a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 83371d14215eb9ed2298796279d232ffbc7d129f
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189700"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817042"
 ---
-# <a name="quickstart-create-an-email-device-profile-for-ios"></a>Guida introduttiva: creare un profilo di posta elettronica del dispositivo per iOS
+# <a name="quickstart-create-an-email-device-profile-for-ios"></a>Avvio rapido: Creare un profilo di posta elettronica del dispositivo per iOS
 
 In questa guida introduttiva verrà illustrato come creare un profilo di posta elettronica per i dispositivi iOS. Questo profilo specifica le impostazioni necessarie per l'app di posta elettronica predefinita per consentire al dispositivo iOS di connettersi alla posta elettronica aziendale. I profili di posta elettronica del dispositivo facilitano l'omogeneità delle impostazioni tra i dispositivi e consentono agli utenti finali di accedere alla posta elettronica aziendale dai dispositivi personali senza alcuna configurazione manuale. Per proteggere ulteriormente la posta elettronica, è possibile utilizzare un profilo di posta elettronica per determinare se i dispositivi sono conformi e quindi impostare l'accesso condizionale ai soli dispositivi conformi. Per altre informazioni sui profili di posta elettronica, vedere [Come configurare le impostazioni di posta elettronica in Microsoft Intune](email-settings-configure.md)
 
@@ -45,7 +45,7 @@ Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o c
    - Per **Piattaforma**, selezionare **iOS**.
    - Per **Tipo di profilo** selezionare **Posta elettronica**.
     
-     ![Creare un profilo di posta elettronica per iOS](media/quickstart-email-profile/ios-email-profile-name.png)
+     ![Creare un profilo di posta elettronica per l'uso con iOS](media/quickstart-email-profile/ios-email-profile-name.png)
 
 5. Selezionare **Impostazioni** e immettere le impostazioni seguenti, lasciando i valori predefiniti per le altre:
    - **Server di posta elettronica**: per questa guida introduttiva, immettere **outlook.office365.com**. Questa impostazione specifica la posizione di Exchange (URL) del server di posta elettronica che l'app di posta elettronica iOS userà per connettersi alla posta elettronica.
@@ -54,7 +54,7 @@ Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o c
    - **Attributo indirizzo di posta elettronica da AAD**: questa impostazione è l'indirizzo di posta elettronica di Azure AD che verrà usato per accedere a Exchange. Per questa guida introduttiva, selezionare **Nome dell'entità utente**.
    - **Metodo di autenticazione**: per questa guida introduttiva, selezionare **Nome utente e password**. In alternativa, è possibile scegliere **Certificato** se è già stato impostato un certificato per Intune.
     
-     ![Creare un profilo di posta elettronica per iOS](media/quickstart-email-profile/ios-email-profile.png)
+     ![Creare un profilo di posta elettronica per l'uso con iOS](media/quickstart-email-profile/ios-email-profile.png)
 
 6. Selezionare **OK**.
 7. Selezionare **Crea**. Il nuovo profilo compare nell'elenco dei profili con il dashboard visualizzato così da poter monitorare il modo in cui il profilo è stato assegnato ai dispositivi iOS e agli utenti iOS.

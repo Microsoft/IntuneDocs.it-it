@@ -1,6 +1,5 @@
 ---
-title: Configurare l'integrazione di Symantec con Microsoft Intune
-titlesuffix: ''
+title: Configurare l'integrazione di Symantec con Microsoft Intune | Microsoft Intune
 description: Come configurare la soluzione Symantec Endpoint Protection Mobile con Microsoft Intune per controllare l'accesso dei dispositivi mobili alle risorse aziendali.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: accd8dea2b997a6eb1cfec22a6e822e984ef710d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4b519c30f432a6d8584c2bd5bca94ead95a862b1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180153"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817348"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Configurare l'integrazione di Symantec Endpoint Protection Mobile con Intune
 
@@ -41,19 +40,19 @@ Per verificare che la rete sia configurata correttamente per l'integrazione con 
 
 SEP Mobile supporta due modalità di integrazione con Intune:
 
--   **Integrazione di sola lettura (configurazione di base)**: esegue solo l'inventario dei dispositivi da Azure Active Directory e li inserisce nella console di gestione di Symantec Endpoint Protection Mobile.
+-   **Integrazione di sola lettura (configurazione di base):** esegue solo l'inventario dei dispositivi da Azure Active Directory e li inserisce nella console di gestione di Symantec Endpoint Protection Mobile.
 <br>
     -   Se le caselle **Report the health and risk of devices to Intune** (Segnala l'integrità e i rischi dei dispositivi a Intune) e **Also report security incidents to Intune** (Segnala anche gli eventi imprevisti per la sicurezza a Intune) non sono selezionate nella console di gestione di Symantec Endpoint Protection Mobile, l'integrazione è di sola lettura e quindi lo stato di un dispositivo (conforme o non conforme) rimarrà sempre invariato in Intune.
 <br></br>
--   **Integrazione completa**: consente a SEP Mobile di segnalare a Intune i dettagli relativi ai rischi e agli eventi imprevisti per la sicurezza, creando così una comunicazione bidirezionale tra i due servizi cloud.
+-   **Integrazione completa:** consente a SEP Mobile di segnalare a Intune i dettagli relativi ai rischi e agli eventi imprevisti per la sicurezza, creando così una comunicazione bidirezionale tra i due servizi cloud.
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>Uso delle app SEP Mobile con Azure AD e Intune
 
--   **App iOS**: consente agli utenti finali di accedere ad Azure AD usando un'app iOS.
+-   **App iOS:** consente agli utenti finali di accedere ad Azure AD usando un'app iOS.
 
--   **App Android**: consente agli utenti finali di accedere ad Azure AD usando un'app Android.
+-   **App Android:** consente agli utenti finali di accedere ad Azure AD usando un'app Android.
 
--   **App di gestione**: questa è l'app multi-tenant Azure AD SEP Mobile che consente le comunicazioni da servizio a servizio con Intune.
+-   **App di gestione:** questa è l'app multi-tenant Azure AD SEP Mobile che consente le comunicazioni da servizio a servizio con Intune.
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-sep-mobile"></a>Per configurare l'integrazione di sola lettura tra Intune e SEP Mobile
 
@@ -68,7 +67,7 @@ SEP Mobile supporta due modalità di integrazione con Intune:
 
 4.  Accanto a **iOS App** (App iOS) scegliere **Add to Active Directory** (Aggiungi ad Active Directory).
 
-    ![Immagine dell'app iOS nella [console di gestione di Symantec Endpoint Protection Mobile]](./media/symantec-portal-basic-add.png)
+    ![Immagine della console di gestione di Symantec Endpoint Protection Mobile](./media/symantec-portal-basic-add.png)
 
 5.  Quando viene visualizzata la pagina di accesso, immettere le credenziali di Intune e quindi scegliere **Accept** (Accetto).
 
@@ -90,7 +89,7 @@ SEP Mobile supporta due modalità di integrazione con Intune:
 
 SEP Mobile sincronizza i dispositivi che eseguono il servizio Mobile Threat Defense con i gruppi di sicurezza di Azure AD.
 
-![Immagine che illustra la configurazione dei gruppi di sicurezza completata nella console di gestione di SEP Mobile](./media/symantec-portal-basic-status.png)
+![Immagine della configurazione dei gruppi di sicurezza nella console di gestione di SEP Mobile](./media/symantec-portal-basic-status.png)
 
 ## <a name="to-set-up-the-full-integration-between-intune-and-sep-mobile"></a>Per configurare l'integrazione completa tra Intune e SEP Mobile
 

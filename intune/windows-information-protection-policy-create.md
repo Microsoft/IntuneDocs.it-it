@@ -1,6 +1,5 @@
 ---
-title: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP)
-titlesuffix: Microsoft Intune
+title: Creare e distribuire criteri di protezione delle app Windows Information Protection | Microsoft Intune
 description: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Microsoft Intune
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5599e98b9712d30979c327167b19b159d3ff5dc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57d0aaebd0ed07a78b32eec64a6dc2817bf5e7f5
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181328"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817314"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -35,15 +34,15 @@ ms.locfileid: "52181328"
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Elenco delle app consentite ed escluse
 
--   **App protette:** si tratta delle app che devono essere conformi al criterio.
+-   **App protette:** app che devono essere conformi ai criteri.
 
--   **App escluse**: queste app sono escluse dal criterio e possono accedere ai dati aziendali senza restrizioni.
+-   **App escluse:** app escluse dai criteri. Possono accedere ai dati aziendali senza restrizioni.
 
 ### <a name="types-of-apps"></a>Tipi di app
 
--   **App consigliate**: elenco precompilato di app (principalmente Microsoft Office) che è possibile importare facilmente nei criteri.
--   **App Store**: è possibile aggiungere qualsiasi app da Windows Store al criterio.
--   **Windows desktop apps** (App desktop di Windows): è possibile aggiungere qualsiasi app desktop di Windows tradizionale al criterio (ad esempio, exe e dll)
+-   **App consigliate:** elenco precompilato di app (principalmente Microsoft Office) che è possibile importare facilmente nei criteri.
+-   **App Store:** è possibile aggiungere qualsiasi app da Windows Store ai criteri.
+-   **Windows desktop apps** (App desktop di Windows): è possibile aggiungere qualsiasi app desktop di Windows tradizionale (ad esempio con estensione exe e dll) ai criteri
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -75,10 +74,10 @@ Dopo aver configurato Intune nell'organizzazione, è possibile creare criteri sp
 4. Selezionare **Criteri di protezione delle app** nel pannello **App client**.
 5. Selezionare **Aggiungi criteri** per visualizzare il pannello **Aggiungi criteri**.
 6. Aggiungere i valori seguenti:
-    - **Nome:** digitare un nome (obbligatorio) per il nuovo criterio.
+    - **Nome:** digitare un nome (obbligatorio) per i nuovi criteri.
     - **Descrizione:** (facoltativo) digitare una descrizione.
     - **Piattaforma:** scegliere **Windows 10** come piattaforma supportata per i criteri di protezione delle app.
-    - **Stato della registrazione:** scegliere **Senza registrazione** come stato di registrazione per il criterio.
+    - **Stato registrazione:** scegliere **Senza registrazione** come stato di registrazione per i criteri.
 7.  Scegliere **Crea**. I criteri vengono creati e visualizzati nella tabella nel pannello **Criteri di protezione delle app**.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Per aggiungere app consigliate all'elenco delle app protette
@@ -149,7 +148,7 @@ Dopo la disattivazione di WIP, viene effettuato un tentativo di decrittografare 
 
 1.  Nel pannello **Criteri per le app** scegliere il nome del criterio e quindi scegliere **Impostazioni obbligatorie**.
 
-    ![Screenshot della modalità di protezione](./media/learning-mode-sc1.png)
+    ![Screenshot del riquadro della modalità di apprendimento](./media/learning-mode-sc1.png)
 
 1.  Selezionare un'impostazione e quindi scegliere **Salva**.
 

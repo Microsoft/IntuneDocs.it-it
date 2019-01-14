@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 765fae6f0e860935f5ceccadfdf1d9c3fe45d60e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181905"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816841"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -50,9 +50,9 @@ Lo stato di conformità può essere monitorato in tre posizioni diverse:
 
 -   **Utenti**: numero totale di utenti dell'azienda che usano un'app associata a un criterio in un contesto aziendale.
 
--   **Criteri Gestito da**: numero di utenti che hanno usato un'app e ai quali è associato un criterio in un contesto aziendale.
+-   **CRITERI GESTITO DA**: numero di utenti che hanno usato un'app e ai quali sono associati criteri in un contesto aziendale.
 
--   **Nessun criterio**: numero di utenti che usano un'app non associata ad alcun criterio in un contesto aziendale. È consigliabile aggiungere questi utenti ai criteri.
+-   **NESSUN CRITERIO**: numero di utenti che usano un'app non associata ad alcun criterio in un contesto aziendale. È consigliabile aggiungere questi utenti ai criteri.
     > [!NOTE]
     > Se esistono più criteri per ogni piattaforma, un utente viene considerato gestito da criteri quando ha almeno un criterio assegnato.
 
@@ -70,9 +70,9 @@ Per accedere alla visualizzazione dettagliata del riepilogo, scegliere il riquad
 
 - Stato:
 
-  - **Archiviazione eseguita**: il criterio è stato distribuito all'utente e l'app è stata usata almeno una volta nel contesto aziendale.
+  - **Archiviazione eseguita**: i criteri sono stati distribuiti all'utente e l'app è stata usata almeno una volta nel contesto aziendale.
 
-  - **Archiviazione non eseguita**: il criterio è stato distribuito all'utente, ma l'app non è stata usata nel contesto aziendale da quel momento.
+  - **Archiviazione non eseguita**: i criteri sono stati distribuiti all'utente, ma l'app non è stata usata nel contesto aziendale da quel momento.
 
 >[!NOTE]
 > Se per l'utente cercato non è stato distribuito il criterio MAM, verrà visualizzato un messaggio che informa che all'utente non è applicato alcun criterio MAM.
@@ -81,11 +81,11 @@ Per visualizzare i report generati per un utente, seguire questa procedura:
 
 1.  Per selezionare un utente, scegliere il riquadro **Riepilogo**.
 
-    ![Schermata che evidenzia il riquadro Riepilogo in Gestione di applicazioni mobili di Intune, pannello Impostazioni](./media/MAM-reporting-6.png)
+    ![Schermata del riquadro Riepilogo della funzionalità di gestione di applicazioni mobili di Intune](./media/MAM-reporting-6.png)
 
 2. Nel riquadro **Segnalazione app** che viene aperto scegliere **Selezionare l'utente** per cercare un utente di Azure Active Directory.
 
-    ![Schermata che evidenzia l'opzione che consente di selezionare l'utente nel riquadro Segnalazione app](./media/MAM-reporting-2.png)
+    ![Schermata dell'opzione Selezionare l'utente nel riquadro Segnalazione app](./media/MAM-reporting-2.png)
 
 3. Selezionare un utente nell'elenco. È possibile visualizzare i dettagli dello stato di conformità per l'utente.
 
@@ -98,28 +98,28 @@ Sono visualizzati gli stessi rapporti della visualizzazione dettagliata e ulteri
 
 ![Schermata che evidenzia 2 report disponibili nel riquadro Impostazioni](./media/MAM-reporting-7.png)
 
--   **App protection user report** (Rapporto utente protezione app): offre le stesse informazioni del rapporto **Stato utente** descritte nella sezione precedente relativa alla visualizzazione dettagliata .
+-   **Report protezione app per l'utente:** offre le stesse informazioni del report **Stato utente** descritte nella sezione precedente relativa alla visualizzazione dettagliata.
 
--   **App protection app report** (Rapporto app protezione app): offre due stati di protezione app diversi che gli amministratori possono selezionare prima di generare il rapporto. Lo stato può essere protetto o non protetto.
+-   **Report protezione app per l'app:** offre due stati di protezione dell'app diversi tra cui gli amministratori possono scegliere prima di generare il report. Lo stato può essere protetto o non protetto.
 
-    -   User status for managed MAM activity (Protected) (Stato utente per attività MAM gestita (Protetto)): questo rapporto descrive l'attività di ogni app MAM gestita per ogni utente.
+    -   Stato utente per attività MAM gestita (Protetta): questo report descrive l'attività di ogni app MAM gestita per ogni utente.
 
         -   Visualizza tutte le app di destinazione dei criteri MAM per ogni utente e suddivide lo stato di ogni app archiviata con i criteri MAM o di destinazione di un criterio MAM ma mai archiviata.
 <br></br>
-    -   User status for unmanaged MAM activity (Unprotected) (Stato utente per attività MAM non gestita (Non protetto)): questo rapporto descrive l'attività delle app abilitate per MAM attualmente non gestite per ogni utente. Questa situazione può verificarsi per i motivi seguenti:
+    -   Stato utente per attività MAM non gestita (Non protetta): questo report descrive l'attività delle app abilitate per MAM attualmente non gestite per ogni utente. Questa situazione può verificarsi per i motivi seguenti:
 
         -   Le app sono usate da un utente o un'app che attualmente non è destinazione di un criterio MAM.
 
         -   Tutte le app sono archiviate, ma non ricevono alcun criterio MAM.
 
-![Schermata che illustra il pannello Segnalazione app di un utente con una tabella dei dettagli di 3 app registrate](./media/MAM-reporting-4.png)
+![Screenshot del pannello Segnalazione app di un utente con i dettagli di tre app](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Raggruppamento tabelle
 
 Dopo la visualizzazione dei dati del **report utente sulla protezione delle app**, è possibile aggregare i dati nel modo seguente:
 
-- **Risultato della convalida:** i dati visualizzati sono raggruppati in base allo stato di protezione delle app con indicazione di operazione completata, errore o avviso.
-- **Nome app:** i dati visualizzati sono raggruppati in base alle app (nome effettivo dell'app) con indicazione di operazione completata, errore o avviso.
+- **Risultato convalida:** i dati visualizzati sono raggruppati in base allo stato di protezione dell'app, che può corrispondere a operazione completata, errore o avviso.
+- **Nome app:** i dati visualizzati sono raggruppati in base all'app (identificata dal nome effettivo) con indicazione dello stato, che può corrispondere a operazione completata, errore o avviso.
 
 ## <a name="export-app-protection-activities-to-csv"></a>Esportare le attività di protezione delle app in formato CSV
 
@@ -129,7 +129,7 @@ Seguire questi passaggi per generare il report sulla protezione delle app:
 
 1. Nel pannello Gestione di applicazioni mobili di Intune scegliere **Report protezione app**.
 
-    ![Schermata che evidenzia il collegamento di download per la protezione app nel riquadro Gestione di applicazioni mobili di Intune](./media/app-protection-report-csv-2.png)
+    ![Screenshot del collegamento per il download di Protezione app](./media/app-protection-report-csv-2.png)
 
 2. Scegliere Sì per salvare il report, quindi scegliere Salva con nome e selezionare la cartella in cui eseguire il salvataggio.
 

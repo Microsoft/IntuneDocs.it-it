@@ -1,12 +1,11 @@
 ---
-title: Eseguire la migrazione dell'accesso condizionale al portale di Azure
-titlesuffix: Microsoft Intune
+title: Eseguire la migrazione dell'accesso condizionale al portale di Azure | Microsoft Intune
 description: Riassegnare i criteri di accesso condizionale creati in precedenza nel portale di Intune classico al portale di Azure.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgree
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6dbd7d9079bdb826f83cce76650cacebee056b68
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d319ff39574565c3f326bd6b03b346e989bdc488
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817433"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Riassegnare i criteri di accesso condizionale dal portale di Intune classico al portale di Azure
 
@@ -46,7 +45,7 @@ Quando si è pronti per passare al portale di Azure, seguire la procedura descri
             - Rimuovere gradualmente gli utenti dai gruppi di sicurezza che hanno criteri di accesso condizionale assegnati nel portale di Intune classico.
             - Dopo aver verificato che i nuovi criteri funzionano per tali utenti, è possibile disabilitare i criteri nel portale di Intune classico. 
 <br /><br />
-- Se le impostazioni dei criteri di accesso condizionale erano state configurate per usare Exchange ActiveSync (EAS) nel portale di Intune classico, vedere le [istruzioni in questo argomento](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients) per **riassegnare le impostazioni dei criteri di accesso condizionale EAS nel portale di Azure**.
+- Se le impostazioni dei criteri di accesso condizionale erano state configurate per usare Exchange ActiveSync (EAS) nel portale di Intune classico, vedere le [istruzioni in questo argomento](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) per **riassegnare le impostazioni dei criteri di accesso condizionale EAS nel portale di Azure**.
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Per verificare i criteri di accesso condizionale basati sui dispositivi nel portale di Intune classico
 
@@ -81,7 +80,7 @@ Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amm
 
 4. Scegliere **Utenti e gruppi** nella sezione **Assegnazioni** per assegnare i nuovi criteri di accesso condizionale.
     
-    ![Immagine del confronto dell'interfaccia utente per i gruppi di utenti tra i portali di Intune e di Azure](./media/reassign-ca-1.png)
+    ![Immagine che confronta l'interfaccia utente per i gruppi di utenti tra i portali di Intune e di Azure](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > La selezione eseguita per il portale di Azure deve corrispondere alla selezione eseguita per il portale classico. Ad esempio, se sono selezionati tutti gli utenti nel portale di Intune classico, selezionare **Tutti gli utenti** nel portale di Azure. Inoltre, se è stata scelta l'opzione **Gruppi esenti** nel portale di Intune classico, escludere tali gruppi anche nel portale di Azure.
@@ -107,7 +106,7 @@ Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amm
 
 12. Dopo aver scelto le piattaforme dei dispositivi, fare clic su **Fine** due volte.
 
-    ![Immagine del confronto dell'interfaccia utente della piattaforma dei dispositivi tra i portali di Intune e di Azure](./media/reassign-ca-4.png)
+    ![Immagine che confronta l'interfaccia utente della piattaforma dei dispositivi con i portali di Intune e di Azure](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > Se sono state scelte singole piattaforme nel portale di Intune classico, scegliere le singole piattaforme nel portale di Azure.
@@ -121,7 +120,7 @@ Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amm
 
 15. Dopo aver scelto l'app client, fare clic su **Fine** due volte.
 
-    ![Immagine del confronto dell'interfaccia utente per le app client tra i portali di Intune e di Azure](./media/reassign-ca-6.png)
+    ![Immagine che confronta l'interfaccia utente delle app client tra i portali di Intune e di Azure](./media/reassign-ca-6.png)
 
 16. Se sono state scelte le impostazioni del browser nel portale di Intune classico, selezionare **Browser** e **App per dispositivi mobili e client desktop** nel portale di Azure. Nel caso in cui non siano state scelte le impostazioni del browser nel portale di Intune classico, scegliere solo **App per dispositivi mobili e client desktop**. 
 
@@ -135,7 +134,7 @@ Il pannello **Protezione app di Intune**  nel portale di Azure consente agli amm
 
 21. Attivare l'opzione **Abilita criteri** nel pannello **Nuovo** dei criteri di accesso condizionale e quindi fare clic su **Crea**.
 
-    ![Immagine del confronto dell'interfaccia utente per abilitare i criteri di accesso condizionale tra i portali di Intune e di Azure](./media/reassign-ca-11.png)
+    ![Confrontare l'interfaccia utente dei criteri di accesso condizionale tra Intune e Azure](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>Riassegnare i criteri di accesso condizionale basati su dispositivo di Intune per i client EAS
 
@@ -167,7 +166,7 @@ Se sono state configurate le impostazioni di Exchange ActiveSync come parte dei 
 
 8. Nel pannello **Condizioni** scegliere **App client** e quindi scegliere l'app client applicabile. Se si è scelto di bloccare i client che non sono supportati da Intune, usare l'opzione **Applica i criteri solo alle piattaforme supportate**.
 
-    ![Immagine del confronto dell'interfaccia utente per le app client tra i portali di Intune e di Azure](./media/reassign-ca-15.png)
+    ![Immagine del confronto dell'interfaccia utente delle app client tra i portali di Intune e di Azure](./media/reassign-ca-15.png)
 
 9. Dopo aver scelto l'app client, fare clic su **Fine** due volte.
 
@@ -175,11 +174,11 @@ Se sono state configurate le impostazioni di Exchange ActiveSync come parte dei 
 
 11. Scegliere **Richiedi che i dispositivi siano contrassegnati come conformi** in **Concedi controlli di accesso** e quindi fare clic su **Seleziona**.
 
-    ![Immagine del confronto dell'interfaccia utente per concedere l'accesso tra i portali di Intune e di Azure](./media/reassign-ca-16.png)
+    ![Immagine che confronta l'interfaccia utente per la concessione dell'accesso tra i portali di Intune e di Azure](./media/reassign-ca-16.png)
 
 12. Attivare l'opzione **Abilita criteri** nel pannello **Nuovo** dei criteri di accesso condizionale e quindi fare clic su **Crea**.
 
-    ![Immagine del confronto dell'interfaccia utente per abilitare i criteri di accesso condizionale tra i portali di Intune e di Azure](./media/reassign-ca-17.png)
+    ![Confronto dell'interfaccia utente dei criteri di accesso condizionale tra Intune e Azure](./media/reassign-ca-17.png)
 
 > [!NOTE]
 > Se si configurano **Piattaforme del dispositivo**, quando si tenta di salvare i criteri verrà visualizzato l'errore "La configurazione dei criteri non è supportata". Exchange ActiveSync non riesce a identificare la piattaforma in uso dal dispositivo che esegue la connessione. Pertanto, la configurazione di piattaforme del dispositivo specifiche non è supportata per la creazione di criteri per i dispositivi Exchange ActiveSync.

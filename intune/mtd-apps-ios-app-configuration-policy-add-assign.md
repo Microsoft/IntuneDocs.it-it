@@ -1,12 +1,11 @@
 ---
-title: Aggiungere e assegnare app MTD a Microsoft Intune
-titleSuffix: ''
+title: Aggiungere e assegnare app MTD a Microsoft Intune | Microsoft Intune
 description: Usare Intune per aggiungere app Mobile Threat Defense (MTD), l'app Microsoft Authenticator e criteri di configurazione di iOS nel portale di Azure.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: afc5028e4ed57757832844637298caf1656d610c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d08a7332ba96f552b488ad3f5d00004d0445d7ec
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181174"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53995998"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Aggiungere e assegnare app Mobile Threat Defense (MTD) con Intune
 
 > [!NOTE] 
 > Questo argomento si applica a tutti i partner Mobile Threat Defense.
 
-È possibile usare Intune per aggiungere e distribuire app MTD, consentendo così agli utenti finali di ricevere notifiche quando viene identificata una minaccia nei dispositivi mobili e per ricevere indicazioni per risolvere le minacce.
+È possibile usare Intune per aggiungere e distribuire app Mobile Threat Defense (MTD), consentendo così agli utenti finali di ricevere notifiche quando viene identificata una minaccia nei dispositivi mobili e per ricevere indicazioni per risolvere le minacce.
 
 
 ## <a name="before-you-begin"></a>Prima di iniziare
@@ -38,13 +37,12 @@ La procedura seguente deve essere completata nel [Portale di Azure](https://port
   -   [Aggiunta di un'app in Intune](apps-add.md).
   -   [Aggiunta dei criteri di configurazione delle app iOS in Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
   -   [Assegnazione di un'app con Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
-  -   [ Aggiunta di criteri di configurazione delle app iOS](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 > [!TIP]
-> Nei dispositivi Android i portale aziendale Intune funge da broker per la verifica dell'identità degli utenti da parte di Azure AD.
+> Nei dispositivi Android il portale aziendale Intune funge da broker per la verifica dell'identità degli utenti da parte di Azure AD.
 
 ## <a name="configure-microsoft-authenticator-for-ios"></a>Configurare Microsoft Authenticator per iOS
-Per i dispositivi iOS, perché gli utenti possano eseguire la verifica della propria identità in Azure AD, è necessario [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to). Sono anche necessari i criteri di configurazione delle app iOS, che indicano l'app iOS MTD da usare con Intune.
+Per i dispositivi iOS, perché gli utenti possano eseguire la verifica della propria identità in Azure AD, è necessario [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to). Sono anche necessari i criteri di configurazione delle app iOS, che impostano l'app iOS MTD da usare con Intune.
 
 Vedere le istruzioni per [aggiungere app dello Store iOS a Microsoft Intune](store-apps-ios.md). Usare questo [URL dello Store dell'app Microsoft Authenticator ](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) nel **passaggio 12** nella sezione **Configurare le informazioni sull'app**.
 
@@ -145,11 +143,11 @@ Scegliere la sezione corrispondente al provider MTD:
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Criteri di configurazione delle app Lookout for Work
 
-- Creare i criteri di configurazione delle app iOS come descritto nell'argomento relativo all'[uso di criteri di configurazione delle app per iOS](app-configuration-policies-use-ios.md).
+- Creare i criteri di configurazione delle app iOS come descritto nell'articolo relativo all'[uso dei criteri di configurazione delle app per iOS](app-configuration-policies-use-ios.md).
 
 ### <a name="sep-mobile-app-configuration-policy"></a>Criteri di configurazione delle app SEP Mobile
 
--   Usare lo stesso account di Azure AD configurato in precedenza nella [console di gestione di Symantec Endpoint Protection Management](https://aad.skycure.com) che dovrebbe corrispondere all'account usato per accedere al portale classico di Intune.
+-   Usare lo stesso account di Azure AD configurato in precedenza nella [console di gestione di Symantec Endpoint Protection Management](https://aad.skycure.com) che deve corrispondere all'account usato per accedere al portale classico di Intune.
 
 -   È necessario **scaricare** il file dei criteri di configurazione dell'app iOS: 
     -   Passare alla [console di gestione di Symantec Endpoint Protection Management](https://aad.skycure.com) e accedere con le credenziali di amministratore.

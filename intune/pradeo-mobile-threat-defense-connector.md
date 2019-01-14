@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
-ms.openlocfilehash: bf08796be801e1947fc1b18f2b5d2c49a5db945d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f565697d9c76f8a2990074b072ed43547284c29b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816889"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Connettore Mobile Threat Defense Pradeo con Intune
 
@@ -48,7 +48,7 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile impe
 
 **Bloccare quando vengono rilevate app dannose:**
 
-![App dannose rilevate](./media/pradeo_maliciousapps_blocked.png)
+![Immagine concettuale del rilevamento di app dannose](./media/pradeo_maliciousapps_blocked.png)
 
 **Accesso concesso dopo la correzione:**
 
@@ -64,7 +64,7 @@ Rilevare le minacce per la rete, ad esempio attacchi **Man-in-the-middle** e pro
 
 **Accesso concesso dopo la correzione:**
 
-![Accesso concesso dopo la risoluzione](./media/pradeo_network_wifi_unblocked.png)
+![Immagine concettuale dell'accesso concesso dopo la correzione](./media/pradeo_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controllare l'accesso a SharePoint Online in base alle minacce alla rete
 
@@ -76,7 +76,7 @@ Rilevare le minacce per la rete, ad esempio attacchi **Man-in-the-middle**, e im
 
 **Accesso concesso dopo la correzione:**
 
-![Accesso concesso dopo la risoluzione per l'esempio di SharePoint](./media/pradeo_network_spo_unblocked.png)
+![Immagine concettuale dell'accesso concesso dopo la correzione per l'esempio di SharePoint](./media/pradeo_network_spo_unblocked.png)
 
 ## <a name="supported-platforms"></a>Piattaforme supportate
 

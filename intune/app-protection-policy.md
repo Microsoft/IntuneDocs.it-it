@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389870"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006285"
 ---
 # <a name="what-are-app-protection-policies"></a>Che cosa sono i criteri di protezione delle app?
 
@@ -37,14 +37,14 @@ I dipendenti usano dispositivi mobili per le attività personali e aziendali. Se
 
 I criteri di protezione delle app possono essere configurati per app in esecuzione su dispositivi con le caratteristiche seguenti:
 
-- **Registrati in Microsoft Intune:** questi dispositivi sono in genere di proprietà dell'azienda.
+- **Registrati in Microsoft Intune:** questi dispositivi sono in genere di proprietà aziendale.
 
-- **Registrati in una soluzione di gestione di dispositivi mobili di terze parti:** questi dispositivi sono in genere di proprietà dell'azienda.
+- **Registrati in una soluzione di gestione di dispositivi mobili (MDM) di terze parti:** questi dispositivi sono in genere di proprietà aziendale.
 
   > [!NOTE]
   > I criteri di gestione delle app per dispositivi mobili non devono essere usati con soluzioni di gestione delle app per dispositivi mobili o di contenitore protetto di terze parti.
 
-- **Non registrati in alcuna soluzione di gestione di dispositivi mobili:** questi dispositivi sono in genere dispositivi di proprietà dei dipendenti non gestiti o registrati in Intune o altre soluzioni MDM.
+- **Non registrati in alcuna soluzione di gestione di dispositivi mobili:** questi dispositivi sono in genere dispositivi di proprietà dei dipendenti non gestiti o registrati in Intune o in altre soluzioni MDM.
 
 > [!IMPORTANT]
 > È possibile creare criteri di gestione delle app per dispositivi mobili per le app di Office per dispositivi mobili che si connettono ai servizi di Office 365. È anche possibile proteggere l'accesso alle cassette postali locali di Exchange creando i criteri di protezione delle app di Intune per Outlook per iOS e Android abilitati con l'autenticazione moderna ibrida. Prima di usare questa funzionalità, assicurarsi che siano soddisfatti i [requisiti di Outlook per iOS e Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). I criteri di protezione delle app non sono supportati per le altre app che si connettono ai servizi locali di Exchange o SharePoint.
@@ -75,14 +75,14 @@ I dispositivi Windows non sono attualmente supportati. Tuttavia, è possibile us
 
 #### <a name="apps-without-app-protection-policies"></a>App senza criteri di protezione delle app
 
-![Immagine che mostra lo spostamento dei dati tra le app quando non sono presenti criteri di protezione delle app](./media/apps-without-protection-policies.png)
+![Immagine concettuale dello spostamento dati tra app senza criteri attivi](./media/apps-without-protection-policies.png)
 
 Quando le app vengono usate senza restrizioni, può crearsi una commistione di dati aziendali e personali. I dati aziendali possono finire in percorsi come l'archivio personale o essere trasferiti ad app esterne al proprio ambito, causando la perdita di dati. Le frecce nel diagramma precedente indicano lo spostamento senza restrizioni dei dati tra le app sia aziendali che personali e i percorsi di archiviazione.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>Protezione dei dati con i criteri di protezione delle app
 
-![Immagine che mostra in che modo i dati aziendali vengono protetti tramite l'applicazione di criteri di protezione delle app ](./media/apps-with-protection-policies.png)
+![Immagine concettuale dei dati aziendali protetti da criteri](./media/apps-with-protection-policies.png)
 
 
 È possibile usare i criteri di protezione delle app per impedire il salvataggio dei dati aziendali nello spazio di archiviazione locale del dispositivo. È anche possibile limitare lo spostamento dei dati ad altre app non protette dai criteri di protezione delle app. Le impostazioni dei criteri di protezione delle app includono:
@@ -146,7 +146,7 @@ Il criterio **globale** si applica a tutti gli utenti del tenant, ma qualsiasi c
 
 Le app che supportano identità multiple consentono di usare account differenti (aziendale e personale) per accedere alle stesse app, mentre i criteri di protezione delle app vengono applicati solo quando le app vengono usate nel contesto aziendale.
 
-Per un esempio di contesto personale, si consideri un utente che ha iniziato un nuovo documento di Word. Questo viene considerato di contesto personale e pertanto i criteri di Protezione app di Intune non vengono applicati. Dopo il salvataggio del documento nell'account di OneDrive aziendale, sarà considerato di contesto aziendale e verranno applicati i criteri di Protezione app di Intune.
+Per un esempio di contesto personale, si consideri un utente che ha iniziato un nuovo documento di Word. Questo viene considerato di contesto personale e pertanto i criteri di Protezione app di Intune non vengono applicati. Dopo il salvataggio nell'account di OneDrive aziendale, il documento verrà considerato di contesto aziendale e verranno applicati i criteri di Protezione app di Intune.
 
 Per un esempio di contesto aziendale, si consideri ad esempio un utente che avvia l'app OneDrive usando l'account aziendale. Nel contesto di lavoro, non può spostare i file in una posizione di archiviazione personale. Quando in seguito tale utente usa OneDrive con il proprio account personale, può copiare e spostare i dati da OneDrive senza restrizioni.
 

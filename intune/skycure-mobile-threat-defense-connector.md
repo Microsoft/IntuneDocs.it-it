@@ -1,6 +1,5 @@
 ---
-title: Connettore Symantec con Microsoft Intune
-titlesuffix: ''
+title: Connettore Symantec con Microsoft Intune | Microsoft Intune
 description: Informazioni sull'integrazione di Intune con Symantec Endpoint Protection Mobile per controllare l'accesso dei dispositivi mobili alle risorse aziendali.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1503bdb9b62e7e9fb4b2d5a0482e058d6fed31f7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ba90d47f13ac22465927fc5724a254f121c800e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187694"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817124"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Connettore Symantec Endpoint Protection Mobile
 
@@ -67,11 +66,11 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile bloc
 
 **Bloccare quando vengono rilevate app dannose:**
 
-![App dannose rilevate](./media/symantec-arch-1.png)
+![Immagine concettuale del rilevamento di app dannose](./media/symantec-arch-1.png)
 
 **Accesso concesso dopo la correzione:**
 
-![Accesso concesso in caso di correzione dopo il rilevamento di app dannose](./media/symantec-arch-2.png)
+![Immagine dell'accesso concesso in caso di correzione dopo il rilevamento di app dannose](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete
 

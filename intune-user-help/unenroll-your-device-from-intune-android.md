@@ -1,11 +1,11 @@
 ---
 title: Come rimuovere il dispositivo Android da Intune | Microsoft Docs
-description: Descrive come annullare la registrazione di un dispositivo Android da Intune
+description: Rimuovere il dispositivo Android dal portale aziendale Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d932005c955afed7f16e9766b559b77b2cd43182
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: 75b26e178badbaa7905199eb91490134d2b72ba9
+ms.sourcegitcommit: 61ed365f7f8826451c41bcab5e19bef97b5a3c72
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959486"
+ms.lasthandoff: 01/05/2019
+ms.locfileid: "54057339"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Annullare la registrazione del dispositivo Android dalla gestione  
 
@@ -51,8 +51,23 @@ Per rimuovere tutti i dati archiviati dall'app Portale aziendale per Android nel
 -   Eliminare la cartella '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal'
 
 ## <a name="uninstall-the-company-portal-app"></a>Disinstallare l'app Portale aziendale  
-Portale aziendale è un'app di gestione dei dispositivi, che pertanto non può essere disinstallata finché non si [annulla la registrazione del dispositivo dalla relativa gestione](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management). Dopo aver eseguito questa operazione, toccare e tenere premuta l'icona dell'app Portale aziendale finché non viene visualizzato **Disinstalla**. Toccare **Disinstalla** per rimuovere l'app dal dispositivo.  
+Portale aziendale è un'app per la gestione dei dispositivi. Non può essere disinstallata finché non si [annulla la registrazione del dispositivo dalla relativa gestione](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management). Dopo aver eseguito questa operazione, toccare e tenere premuta l'icona dell'app Portale aziendale finché non viene visualizzato **Disinstalla**. Toccare **Disinstalla** per rimuovere l'app dal dispositivo.  
 
 In alternativa, toccare **Impostazioni** > **App** > **Portale aziendale** > **Disinstalla**.  
+
+### <a name="remove-company-portal-app-as-device-administrator"></a>Rimuovere l'app Portale aziendale come amministratore del dispositivo  
+Come ultima risorsa, è possibile disinstallare l'app dal dispositivo rimuovendola come amministratore del dispositivo.  
+
+Se si usa un dispositivo aziendale, l'organizzazione potrebbe richiedere la disponibilità continua di Portale aziendale nel dispositivo. Se si disinstalla l'app, si potrebbe perdere l'accesso alle risorse aziendali protette, ad esempio la posta elettronica, le app, il Wi-Fi o la rete VPN, finché l'app non viene reinstallata. Per altre informazioni su installazione, aggiornamento o rimozione di app necessarie, vedere [Aggiungere app in Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune).  
+
+Completare la procedura seguente per disabilitare Portale aziendale come amministratore del dispositivo. I nomi reali delle impostazioni possono variare in base al dispositivo Android.  
+
+**Procedura per Android, opzione 1**:  
+1. Selezionare **Impostazioni** > **Sicurezza** > **Impostazioni di protezione aggiuntive** > **Amministratori dei dispositivi** .  
+2. Cancellare la selezione **Portale aziendale**.  
+
+**Procedura per Android, opzione 2**:  
+1. Selezionare **Impostazioni** > **Schermata di blocco e sicurezza** > **Altre impostazioni di sicurezza** > **Device admin apps** (App di amministrazione dispositivi).  
+2. Cancellare la selezione **Portale aziendale**.    
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per le informazioni di contatto, visitare il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980)

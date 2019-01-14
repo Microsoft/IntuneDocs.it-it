@@ -1,6 +1,5 @@
 ---
-title: Connettore Lookout MTD con Microsoft Intune
-titlesuffix: ''
+title: Connettore Lookout MTD con Microsoft Intune | Microsoft Intune
 description: Informazioni sull'integrazione di Intune con Lookout Mobile Threat Defense (MTD) per controllare l'accesso dei dispositivi mobili alle risorse aziendali.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d7a545fe08acc9ab88086fa92be934c860ae4716
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bd61b10ee60e1f9413c22d0d618bc5c270dc76a6
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817076"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Connettore Lookout Mobile Threat Defense con Intune
 
@@ -63,34 +62,34 @@ Se nei dispositivi vengono rilevate app dannose, come malware, è possibile impe
 
 **Bloccare quando vengono rilevate app dannose:**
 
-![diagramma che illustra i criteri di accesso condizionale che bloccano l'accesso quando il dispositivo viene indicato come non conforme a causa della presenza di app dannose su di esso](./media/malicious-apps-blocked.png)
+![Immagine concettuale dei criteri che bloccano l'accesso a causa di app dannose](./media/malicious-apps-blocked.png)
 
 **Accesso concesso dopo la correzione:**
 
-![diagramma che mostra i criteri di accesso condizionale che concedono l'accesso quando il dispositivo risulta conforme dopo la correzione](./media/malicious-apps-unblocked.png)
+![Immagine concettuale in cui l'accesso viene concesso ai dispositivi dopo la correzione](./media/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controllare l'accesso in base alle minacce alla rete
 Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle e proteggere l'accesso a reti Wi-Fi in base al livello di rischio del dispositivo.
 
 **Bloccare l'accesso alla rete tramite Wi-Fi:**
 
-![diagramma che illustra i criteri di accesso condizionale che bloccano l'accesso alla rete Wi-Fi in base alle minacce per la rete](./media/network-wifi-blocked.png)
+![Immagine che illustra il blocco dell'accesso alla rete Wi-Fi in base alle minacce per la rete](./media/network-wifi-blocked.png)
 
 **Accesso concesso dopo la correzione:**
 
-![diagramma che mostra l'accesso condizionale che consente l'accesso dopo la risoluzione della condizione di minaccia](./media/network-wifi-unblocked.png)
+![Immagine concettuale dell'accesso condizionale che consente l'accesso dopo la correzione](./media/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controllare l'accesso a SharePoint Online in base alle minacce alla rete
 
 Rilevare le minacce per la rete, ad esempio attacchi man-in-the-middle, e impedire la sincronizzazione dei file aziendali in base al livello di rischio del dispositivo.
 
 **Bloccare SharePoint Online quando vengono rilevate minacce per la rete:**
 
-![Diagramma che mostra l'accesso condizionale che blocca l'accesso del dispositivo a SharePoint Online in base al rilevamento di minacce](./media/network-spo-blocked.png)
+![Immagine concettuale del blocco dell'accesso a SharePoint Online](./media/network-spo-blocked.png)
 
 
 **Accesso concesso dopo la correzione:**
 
-![Diagramma che mostra l'accesso condizionale che consente l'accesso dopo la risoluzione della condizione di minaccia per la rete](./media/network-spo-unblocked.png)
+![Immagine concettuale della concessione dell'accesso dopo la risoluzione della condizione di minaccia per la rete](./media/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Ecco i passaggi principali per l'implementazione di questa soluzione:

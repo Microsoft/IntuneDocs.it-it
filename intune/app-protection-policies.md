@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11//28/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 35fd4650d5508995f879f4d83030f70fe9c550b8
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817365"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Come creare e assegnare criteri di protezione delle app
 
@@ -72,11 +72,11 @@ I nuovi criteri creati non vengono distribuiti agli utenti finché non si esegue
 
 2. Nel riquadro ***Protezione app di Intune** selezionare **Assegnazioni** per aprire il riquadro **Protezione app di Intune - Assegnazioni**. Nella scheda *Includi* selezionare **Selezionare i gruppi da includere**. 
 
-   ![Schermata del riquadro Assegnazioni con l'opzione di menu Selezionare i gruppi da includere evidenziata](./media/app-protection-policy-add-users.png)
+   ![Schermata del riquadro Assegnazioni con il menu Selezionare i gruppi da includere](./media/app-protection-policy-add-users.png)
 
 3.  Viene visualizzato un elenco di tutti i gruppi di sicurezza in **Azure Active Directory**. Selezionare i gruppi di utenti a cui si vuole applicare questo criterio e quindi scegliere **Seleziona**. 
 
-    ![Schermata del riquadro Aggiungi un gruppo di utenti che visualizza l'elenco di utenti di Azure Active Directory](./media/azure-ad-user-group-list.png)
+    ![Screenshot del riquadro Selezionare i gruppi da includere con un elenco di utenti Azure AD](./media/azure-ad-user-group-list.png)
 
 4.  Dopo aver incluso ed escluso gruppi, selezionare **Salva** per salvare la configurazione e distribuire i criteri agli utenti. Se si seleziona **Annulla** prima di salvare la configurazione, verranno eliminate tutte le modifiche apportate nelle schede *Includi* ed *Escludi*.   
  
@@ -138,7 +138,7 @@ Poiché i criteri di protezione delle app di Intune usano come destinazione l'id
 
 Per creare questi criteri, passare a **App client** > **Criteri di protezione delle app** nella console di Intune e fare clic su **Crea criterio**. È anche possibile modificare un criterio di protezione delle app esistente. Per fare in modo che il criterio di protezione delle app venga applicato sia ai dispositivi gestiti che non gestiti, verificare che l'opzione **Includi tutti i tipi di app** sia impostata su **Sì**, il valore predefinito. Per assegnare i criteri in modo granulare sulla base dello stato di gestione, impostare **Includi tutti i tipi di app** su **No**. 
 
-![Screenshot del pannello Aggiungi criteri con Includi tutti i tipi di app selezionato](./media/app-protection-policies-target-all.png)
+![Screenshot del pannello Aggiungi criteri con Includi tutti i tipi di app](./media/app-protection-policies-target-all.png)
 
 Per iOS, sono necessarie impostazioni di configurazione delle app aggiuntive per assegnare le impostazioni delle app alle app nei dispositivi registrati in Intune:
 - È necessario configurare **IntuneMAMUPN** per tutte le applicazioni gestite da MDM. Per altre informazioni, vedere [Come gestire il trasferimento di dati tra app iOS in Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
