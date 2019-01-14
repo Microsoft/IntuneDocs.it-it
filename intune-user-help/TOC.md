@@ -130,6 +130,7 @@
 ### [Che cosa accade se si reimposta il dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Disattivare la raccolta dati di utilizzo di Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sincronizzare il dispositivo manualmente](sync-your-device-manually-windows.md)
+### [Guida e supporto tecnico](help-support-windows-cpapp.md)
 
 ### [Risolvere i problemi comuni di Windows](troubleshoot-your-device-windows.md)
 #### [Risolvere le limitazioni dei punti di accesso](resolve-access-point-restrictions.md)

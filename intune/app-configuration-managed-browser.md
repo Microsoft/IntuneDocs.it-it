@@ -176,7 +176,7 @@ Per altre informazioni su come Managed Browser, Microsoft Edge e Azure AD Applic
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Come configurare la home page per un browser protetto
 
 Questa impostazione consente di configurare la home page visualizzata agli utenti quando viene avviato un browser protetto o viene creata una nuova scheda. 
-- Questa impostazione consentirà di visualizzare la pagina Web in Managed Browser.  Edge visualizzerà invece un collegamento alla home page.
+- Questa impostazione consentirà di visualizzare la pagina Web in Managed Browser.  Microsoft Edge visualizzerà invece un collegamento alla home page.
 - Il collegamento alla home page viene visualizzato come icona sotto il controllo di ricerca.  Non può essere modificata o eliminata.
 - Il collegamento alla home page visualizzerà il nome dell'azienda per poterlo distinguere.  Verrà sempre visualizzato come la prima icona.
 
@@ -266,12 +266,12 @@ Usare le informazioni seguenti per saperne di più sui formati e i caratteri jol
 Intune Managed Browser e Microsoft Edge sono entrambi considerati browser gestiti da criteri o protetti. Attualmente, i criteri di protezione delle app esistenti fanno sì che i collegamenti Web dalle app gestite da Intune vengano aperti in un browser specifico, che varia a seconda dello scenario e della piattaforma. 
 
 In Android: 
-* Managed Browser se MB ed Edge sono entrambi nel dispositivo, a meno che l'impostazione di configurazione delle app "com.microsoft.intune.useEdge" non sia impostata su "true" per tutte le app gestite da Intune con un browser gestito da criteri obbligatorio.  
+* Managed Browser se MB ed Microsoft Edge sono entrambi nel dispositivo, a meno che l'impostazione di configurazione delle app "com.microsoft.intune.useEdge" non sia impostata su "true" per tutte le app gestite da Intune con un browser gestito da criteri obbligatorio.  
 * Microsoft Edge se nel dispositivo è installato solo Microsoft Edge e a quest'ultimo sono destinati criteri.
 * Managed Browser se nel dispositivo è installato solo Managed Browser e a quest'ultimo sono destinati criteri. 
 
 In iOS, per le app in cui è integrato Intune SDK per iOS versione 9.0.9+: 
-* Managed Browser se MB ed Edge sono entrambi nel dispositivo, a meno che l'impostazione di configurazione delle app "com.microsoft.intune.useEdge" non sia impostata su "true" per tutte le app gestite da Intune con un browser gestito da criteri obbligatorio, **oppure** Microsoft Edge se è installato Microsoft Edge e a quest'ultimo sono assegnati criteri. 
+* Managed Browser se MB ed Microsoft Edge sono entrambi nel dispositivo, a meno che l'impostazione di configurazione delle app "com.microsoft.intune.useEdge" non sia impostata su "true" per tutte le app gestite da Intune con un browser gestito da criteri obbligatorio, **oppure** Microsoft Edge se è installato Microsoft Edge e a quest'ultimo sono assegnati criteri. 
 * Microsoft Edge se nel dispositivo è installato solo Microsoft Edge e a quest'ultimo sono destinati e assegnati criteri. 
 * Managed Browser se nel dispositivo è installato solo Managed Browser e a quest'ultimo sono destinati e assegnati criteri.
 
