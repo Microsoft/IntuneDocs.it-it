@@ -3,8 +3,8 @@ title: Impostazioni dei criteri di protezione delle app di Android | Microsoft I
 titlesuffix: Microsoft Intune
 description: Questo argomento descrive le impostazioni dei criteri di protezione delle app per dispositivi Android.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8505560527a8ea1b5d75eef5f7c3423d6a2d6a7d
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 93c1165b8f385d82219be0882a66d601562385df
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817399"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297452"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Impostazioni dei criteri di protezione delle app di Android in Microsoft Intune
 Questo articolo descrive le impostazioni dei criteri di protezione delle app per dispositivi Android. Le impostazioni dei criteri descritte possono essere [configurate](app-protection-policies.md) per i criteri di protezione delle app nel pannello **Impostazioni** del portale di Azure.

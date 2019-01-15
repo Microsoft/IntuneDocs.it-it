@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 742b4892c4dbe9ee2dfa2bb03eebb2667803c6bf
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112426"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210755"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparare le app line-of-business per i criteri di protezione delle app
 
@@ -98,7 +98,7 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 |Bloccare l'acquisizione schermo (solo Android)|X|X|
 |Supportare la gestione delle applicazioni mobili senza registrazione del dispositivo|X|X|
 |Cancellazione completa|X|X|
-|Cancellazione selettiva <br></br>**Nota:** per iOS, quando viene rimosso il profilo di gestione, viene rimossa anche l'app.|X||
+|Cancellazione selettiva <br><br>**Nota:** per iOS, quando viene rimosso il profilo di gestione, viene rimossa anche l'app.|X||
 |Impedire "Salva con nome"|X||
 |Configurazione dell'applicazione di destinazione|X||
 |Supportare più identità|X||
@@ -115,6 +115,6 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 
 Per altre informazioni sui criteri di protezione delle app e Intune, vedere gli argomenti seguenti:
 
-  - [Strumento di wrapping delle app per Android](app-wrapper-prepare-android.md)</br>
-  - [Strumento di wrapping delle app per iOS](app-wrapper-prepare-ios.md)</br>
+  - [Strumento di wrapping delle app per Android](app-wrapper-prepare-android.md)<br>
+  - [Strumento di wrapping delle app per iOS](app-wrapper-prepare-ios.md)<br>
   - [Usare l'SDK per abilitare le app per la gestione delle applicazioni mobili](app-sdk.md)
