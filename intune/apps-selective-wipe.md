@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57e22c7b999f2f672c67dc623a20bf643e739376
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: cd6ac0b1fdb64897a831c0111f7e0a611c85bede
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642575"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210704"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Come cancellare solo i dati aziendali dalle app gestite da Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "53642575"
 Quando un dispositivo viene smarrito o rubato, o se il dipendente lascia l'azienda, è necessario assicurarsi di rimuovere dal dispositivo i dati delle app aziendali. Ma potrebbe essere necessario mantenere i dati personali sul dispositivo, soprattutto se si tratta di un dispositivo di proprietà del dipendente.
 
 >[!NOTE]
-> Le piattaforme iOS e Android sono le due piattaforme attualmente supportate per la cancellazione dei dati aziendali da app gestite da Intune.
+> Le piattaforme iOS e Android sono le due piattaforme attualmente supportate per la cancellazione dei dati aziendali da app gestite da Intune. Le app gestite da Intune sono applicazioni che includono Intune APP SDK e dispongono di un account utente con licenza per l’organizzazione. La distribuzione dei criteri di protezione dell'applicazione non è necessaria per abilitare la cancellazione selettiva delle app.
 
 Per rimuovere selettivamente i dati delle app aziendali, creare una richiesta di cancellazione attenendosi alla procedura descritta in questo argomento. Al termine della richiesta, i dati aziendali verranno rimossi dall'app alla successiva esecuzione dell'app nel dispositivo. Oltre alla creazione di una richiesta di cancellazione, è possibile configurare una cancellazione selettiva dei dati dell'organizzazione come nuova azione quando non sono soddisfatte le condizioni delle impostazioni di accesso previste dai criteri di protezione delle applicazioni. Questa funzionalità consente di proteggere e rimuovere automaticamente dalle applicazioni i dati sensibili dell'organizzazione in base a criteri configurati in precedenza.
 

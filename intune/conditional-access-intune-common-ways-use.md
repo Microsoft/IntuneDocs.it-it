@@ -14,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a762f14fd93400d76c63d2108a41229bf2ffc34d
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817161"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122588"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quali sono i modi comuni per usare l'accesso condizionale con Intune?
 
@@ -39,15 +39,14 @@ Intune e Azure Active Directory collaborano per assicurarsi che solo i dispositi
 Intune offre funzionalità per i criteri di conformità dei dispositivi che consentono di valutare lo stato di conformità dei dispositivi. Lo stato di conformità viene segnalato ad Azure Active Directory, che lo usa per l'applicazione dei criteri di accesso condizionale creati in Azure Active Directory quando l'utente tenta di accedere alle risorse aziendali.
 
 I criteri di accesso condizionale basato su dispositivo per Exchange Online e gli altri prodotti di Office 365 sono configurati nel [portale di Azure](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
-
--   Altre informazioni sull'[accesso condizionale in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+-   Altre informazioni sulla [richiesta di dispositivi gestiti con accesso condizionale in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices).
 
 -   Altre informazioni sulla [conformità dei dispositivi di Intune](device-compliance.md).
 
--   Altre informazioni sulla [protezione di posta elettronica, Office 365 e altri servizi che usano l'accesso condizionale con Intune](app-based-conditional-access-intune.md).
+-   Altre informazioni sui [browser supportati con accesso condizionale in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/technical-reference#supported-browsers).
 
 > [!NOTE]
-> Quando si abilita l'accesso in base al dispositivo per Sharepoint Online sui dispositivi Android, gli utenti devono abilitare l'opzione **Abilita l'accesso al browser nel dispositivo registrato** seguendo questa procedura:
+> Quando si abilita l'accesso in base al dispositivo per Sharepoint Online o l’accesso in base al browser a Exchange Online sui dispositivi Android, gli utenti devono abilitare l'opzione **Abilita l'accesso al browser nel dispositivo registrato** seguendo questa procedura:
 > 1. Avviare **l'app Portale aziendale**.
 > 2. Passare alla pagina **Impostazioni** facendo clic sui punti di sospensione (...) o sul tasto di menu.
 > 3. Scegliere il pulsante **Abilita l'accesso al browser** . 
@@ -146,7 +145,9 @@ L'accesso condizionale per i PC offre funzionalità simili a quelle disponibili 
 
 #### <a name="bring-your-own-device-byod"></a>Bring Your Own Device (BYOD)
 
--   **Aggiunta alla rete aziendale e gestione di Intune:** qui l'utente può aggiungere i propri dispositivi personali per accedere ai servizi e alle risorse aziendali. È possibile usare l'aggiunta alla rete aziendale e registrare i dispositivi in Intune per ricevere criteri a livello di dispositivo. Questa rappresenta un'altra opzione per la valutazione dei criteri di accesso condizionale.
+-   **Aggiunta alla rete aziendale e gestione di Intune:** qui l'utente può aggiungere i propri dispositivi personali per accedere ai servizi e alle risorse aziendali. È possibile usare l'aggiunta alla rete aziendale e registrare i dispositivi con la funzionalità MDM di Intune per ricevere criteri a livello di dispositivo. Questa rappresenta un'altra opzione per la valutazione dei criteri di accesso condizionale.
+
+Altre informazioni sulla [gestione dei dispositivi in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview).
 
 ## <a name="app-based-conditional-access"></a>Accesso condizionale basato su app
 

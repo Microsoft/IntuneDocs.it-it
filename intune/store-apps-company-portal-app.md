@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ec170727b8846caae3e96cc19be8d1e274c17427
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642592"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210738"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Aggiungere manualmente l'app Portale aziendale di Windows 10 usando Microsoft Intune
 
@@ -47,7 +47,7 @@ Per gestire dispositivi e installare app, gli utenti possono installare l'app Po
 5. Selezionare **Windows 10 all devices** (Windows 10 (tutti i dispositivi)) come **Piattaforma**, quindi scegliere un valore appropriato per **Versione minima**, **Architettura** e **Download app metadata**. 
 6. Fare clic su **Download** per salvare il file nel computer locale.
 
-    ![Dettagli di Windows 10 (tutti i dispositivi) e dell'architettura X86 selezionati per il download](./media/Win10CP-all-devices.png)
+    ![Sono selezionati dispositivi Windows 10 la cui architettura corrisponde a X86](./media/Win10CP-all-devices.png)
 
 7. Scaricare tutti i pacchetti in "Framework richiesti" selezionando **Download**.  
     Questa azione deve essere completata per le architetture x86, x64 e ARM, per un totale di 12 pacchetti.

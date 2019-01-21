@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112953"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122544"
 ---
 # <a name="set-enrollment-restrictions"></a>Impostare le restrizioni di registrazione
 
@@ -81,6 +81,8 @@ Per il tipo e il numero massimo di dispositivi vengono applicate automaticamente
     - Il profilo di lavoro Android supporta il formato maggiore.minore.revisione.build.
     - iOS supporta il formato di versione maggiore.minore.revisione. Le versioni del sistema operativo non si applicano ai dispositivi Apple registrati in Device Enrollment Program, Apple School Manager o nell'app Apple Configurator.
     - Windows supporta il formato maggiore.minore.revisione.build solo per Windows 10.
+> [!Note]
+> Windows 10 non fornisce il numero di build durante la registrazione, quindi se si immette ad esempio 10.0.17134.100 e il dispositivo è 10.0.17134.174, il dispositivo verrà bloccato durante la registrazione.
 8. Scegliere **Consenti** o **Blocca** per i dispositivi **di proprietà personale** per ogni piattaforma elencata.
 9. Scegliere **OK**.
 

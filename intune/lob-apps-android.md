@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2d1bc4762f46062cc80bb584da0a71423140c234
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 8ed3bb57010535806d082f706b317839747fa881
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642779"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210823"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Aggiungere un'app line-of-business per Android a Microsoft Intune
 
@@ -31,6 +31,9 @@ Un'app line-of-business (LOB) è un'app che viene aggiunta in Intune dal file di
 
 > [!Note]
 > Per altre informazioni sulle app line-of-business della versione gestita di Google Play Store, vedere [Uso di un'app line-of-business dalla versione gestita di Google Play Store](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store). 
+
+> [!Note]
+> Per i dispositivi Android for Work, vedere [questo articolo](https://docs.microsoft.com/intune/apps-add-android-for-work). 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Passaggio 1: Specificare il file di installazione del software
 
@@ -53,13 +56,13 @@ Un'app line-of-business (LOB) è un'app che viene aggiunta in Intune dal file di
 1. Nel riquadro **Aggiungi app** selezionare **Informazioni sull'app**.
 2. Nel riquadro **Informazioni sull'app** aggiungere i dettagli relativi all'app. A seconda dell'app scelta, è possibile che alcuni valori nel riquadro vengano compilati automaticamente.
     - **Nome**: immettere il nome dell'app che viene visualizzato nel portale aziendale. Verificare che tutti i nomi di app usati siano univoci. Se il nome di un'app è usato due volte, solo una delle due app viene visualizzata nel portale aziendale.
-    - **Descrizione**: immettere la descrizione dell'app. La descrizione viene visualizzata nel portale aziendale.
-    - **Autore**: immettere il nome dell'autore dell'app.
+    - **Description**: immettere la descrizione dell'app. La descrizione viene visualizzata nel portale aziendale.
+    - **Autore**: Immettere il nome dell'autore dell'app.
     - **Sistema operativo minimo**: selezionare dall'elenco la versione minima del sistema operativo in cui è possibile installare l'app. L'installazione non verrà eseguita se si assegna l'app a un dispositivo con un sistema operativo precedente.
     - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. Le categorie consentono agli utenti di trovare più facilmente l'app nel portale aziendale.
-    - **Visualizza come app in primo piano nel portale aziendale**: visualizzare chiaramente l'app nella pagina principale del portale aziendale quando gli utenti cercano le app.
-    - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
-    - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
+    - **Visualizza come app in primo piano nel portale aziendale**: Visualizzare chiaramente l'app nella pagina principale del portale aziendale quando gli utenti cercano le app.
+    - **URL di informazioni**: Immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
+    - **URL privacy**: Immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
     - **Sviluppatore**: immettere il nome dello sviluppatore dell'app (facoltativo).
     - **Proprietario**: immettere un nome per il proprietario dell'app (facoltativo). Un esempio è **Reparto risorse umane**.
     - **Note**: immettere eventuali note da associare a questa app.

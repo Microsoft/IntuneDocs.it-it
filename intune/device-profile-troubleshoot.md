@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 1/17/2018
+ms.date: 1/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 305799fa21ae7c3464caf8f7019dcf9e8170d3ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 32281ae37b7b36dfbf49503275a8a1e6c35d8f6d
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181480"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210789"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemi comuni e soluzioni per i profili di dispositivo in Microsoft Intune
 
@@ -58,7 +58,7 @@ Se il dispositivo è stato registrato di recente, la frequenza di controllo è m
 - iOS e macOS: ogni 15 minuti per sei ore e successivamente ogni sei ore
 - Android: ogni tre minuti per 15 minuti, quindi ogni 15 minuti per due ore e poi ogni otto ore
 - Windows Phone: ogni cinque minuti per 15 minuti, quindi ogni 15 minuti per due ore e poi ogni otto ore
-- PC Windows registrati come dispositivi: ogni tre minuti per 30 minuti e quindi ogni otto ore
+- PC Windows registrati come dispositivi: ogni tre minuti per 30 minuti e successivamente ogni otto ore
 
 Per controllare immediatamente la disponibilità di criteri gli utenti possono anche aprire in qualsiasi momento l'app Portale aziendale e sincronizzare il dispositivo.
 
@@ -72,11 +72,11 @@ Altre modifiche, ad esempio un aggiornamento delle informazioni di contatto nel 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Se vengono assegnati più criteri allo stesso utente o dispositivo, come si determina quali impostazioni vengono applicate?
 Se allo stesso utente o dispositivo sono assegnati due o più criteri, le impostazioni vengono applicate a livello di singola opzione:
 
--   Le impostazioni dei criteri di conformità hanno sempre la precedenza sulle impostazioni dei criteri di configurazione
+- Le impostazioni dei criteri di conformità hanno sempre la precedenza sulle impostazioni dei criteri di configurazione
 
--   Se i criteri di conformità vengono valutati rispetto alla stessa impostazione in criteri di conformità diversi, vengono applicati i criteri più restrittivi.
+- Se i criteri di conformità vengono valutati rispetto alla stessa impostazione in criteri di conformità diversi, vengono applicati i criteri più restrittivi.
 
--   Se un'impostazione dei criteri di configurazione è in conflitto con un'impostazione di altri criteri di configurazione, il conflitto viene visualizzato nel portale di Azure. In questo scenario è necessario risolvere manualmente i conflitti.
+- Se un'impostazione dei criteri di configurazione è in conflitto con un'impostazione di altri criteri di configurazione, il conflitto viene visualizzato nel portale di Azure. In questo scenario è necessario risolvere manualmente i conflitti.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Che cosa succede quando i criteri di protezione delle app sono in conflitto tra loro? Quale viene applicato all'app?
 I valori in conflitto sono le impostazioni più restrittive disponibili in un criterio di protezione delle app, ad eccezione dei campi di immissione numerici (come il numero di tentativi di immissione del PIN prima della reimpostazione), che vengono impostati sugli stessi valori configurati durante la creazione di un criterio MAM nella console usando l'opzione delle impostazioni consigliate.
@@ -93,40 +93,43 @@ Quando si assegna un profilo personalizzato, verificare che le impostazioni conf
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>Che cosa succede quando un profilo viene eliminato o non è più valido?
 Quando si elimina un profilo o si rimuove un dispositivo da un gruppo che include il profilo, il profilo e le impostazioni vengono rimossi dal dispositivo in base agli elenchi seguenti:
 
-- Profili Wi-Fi, VPN, certificato e posta elettronica: questi profili vengono rimossi da tutti i dispositivi registrati supportati.
+- Profili Wi-Fi, VPN, certificato e di posta elettronica: questi profili vengono rimossi da tutti i dispositivi registrati supportati.
 - Tutti gli altri tipi di profilo:  
-    - **Dispositivi Windows e Android**: le impostazioni non vengono rimosse dal dispositivo.
-    - **Dispositivi Windows Phone 8.1**: vengono rimosse le impostazioni seguenti:  
-        - Richiedi una password per sbloccare i dispositivi mobili
-        - Consenti password semplici
-        - Lunghezza minima password
-        - Tipo di password richiesto
-        - Scadenza password (giorni)
-        - Ricorda cronologia password
-        - Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo
-        - Minuti di inattività prima che venga richiesta la password
-        - Tipo di password richiesto - numero minimo di set di caratteri
-        - Consenti dispositivo foto/video
-        - Richiedi crittografia sui dispositivi mobili
-        - Consenti archivi rimovibili
-        - Consenti browser Web
-        - Consenti archivio applicazioni
-        - Consenti acquisizione schermo
-        - Consenti georilevazione
-        - Consenti account Microsoft
-        - Consenti copia e incolla
-        - Consenti tethering Wi-Fi
-        - Consenti connessione automatica agli hotspot Wi-Fi gratuiti
-        - Consenti creazione report degli hotspot Wi-Fi
-        - Consenti cancellazione
-        - Consenti Bluetooth
-        - Consenti NFC
-        - Consenti Wi-Fi
 
-    - **iOS**: vengono rimosse tutte le impostazioni, ad eccezione di:
-        - Consenti roaming vocale
-        - Consenti dati in roaming
-        - Consenti sincronizzazione automatica durante il roaming
+  - **Dispositivi Windows e Android**: le impostazioni non vengono rimosse dal dispositivo
+  - **Dispositivi Windows Phone 8.1**: Le seguenti impostazioni vengono rimosse:  
+  
+    - Richiedi una password per sbloccare i dispositivi mobili
+    - Consenti password semplici
+    - Lunghezza minima password
+    - Tipo di password richiesto
+    - Scadenza password (giorni)
+    - Ricorda cronologia password
+    - Numero di errori di accesso ripetuti consentiti prima della cancellazione del dispositivo
+    - Minuti di inattività prima che venga richiesta la password
+    - Tipo di password richiesto - numero minimo di set di caratteri
+    - Consenti dispositivo foto/video
+    - Richiedi crittografia sui dispositivi mobili
+    - Consenti archivi rimovibili
+    - Consenti browser Web
+    - Consenti archivio applicazioni
+    - Consenti acquisizione schermo
+    - Consenti georilevazione
+    - Consenti account Microsoft
+    - Consenti copia e incolla
+    - Consenti tethering Wi-Fi
+    - Consenti connessione automatica agli hotspot Wi-Fi gratuiti
+    - Consenti creazione report degli hotspot Wi-Fi
+    - Consenti cancellazione
+    - Consenti Bluetooth
+    - Consenti NFC
+    - Consenti Wi-Fi
+
+  - **iOS**: vengono rimosse tutte le impostazioni, ad eccezione di:
+  
+    - Consenti roaming vocale
+    - Consenti dati in roaming
+    - Consenti sincronizzazione automatica durante il roaming
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Dopo aver modificato un profilo di restrizione dei dispositivi, le modifiche non sono state applicate
 I dispositivi Windows Phone non consentono che la sicurezza dei criteri di sicurezza impostati tramite MDM o EAS venga ridotta dopo averli configurati. Ad esempio, si imposta un **numero minimo di caratteri per la password** su 8 e poi si prova a ridurlo a 4. Il profilo più restrittivo è già stato applicato al dispositivo.
@@ -134,6 +137,14 @@ I dispositivi Windows Phone non consentono che la sicurezza dei criteri di sicur
 Se si vuole modificare il profilo impostando un valore meno sicuro, è necessario reimpostare i criteri di sicurezza. Ad esempio nel desktop di Windows 8.1 scorrere verso destra e selezionare **Impostazioni** > **Pannello di controllo**. Selezionare l'applet **Account utente** . Nella parte inferiore del menu di spostamento visualizzato a sinistra è disponibile un collegamento **Reimposta criteri di sicurezza**. Selezionarlo e quindi scegliere **Reimposta criteri**.
 
 È possibile che altri dispositivi MDM, ad esempio dispositivi Android, Windows Phone 8.1 e versione successiva, iOS e Windows 10 debbano essere ritirati e registrati nuovamente nel servizio per applicare un profilo meno restrittivo.
+
+## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Alcune impostazioni in un profilo Windows 10 restituiscono "Non applicabile"
+Alcune impostazioni nei dispositivi Windows 10 potrebbero risultare "Non applicabili". In questo caso, quell'impostazione specifica non è supportata nella versione o nell'edizione di Windows in esecuzione nel dispositivo. Questo messaggio può essere visualizzato per i motivi seguenti:
+
+- L'impostazione è disponibile solo per le versioni più recenti di Windows e non per la versione del sistema operativo in esecuzione nel dispositivo.
+- L'impostazione è disponibile solo per edizioni specifiche di Windows o per SKU specifici, ad esempio Home, Professional, Enterprise e Education.
+
+Per altre informazioni sui requisiti relativi a versioni e SKU per le diverse impostazioni, vedere [Configuration Service Provider (CSP) reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (Informazioni di riferimento sul provider di servizi di configurazione).
 
 ## <a name="next-steps"></a>Passaggi successivi
 È possibile ottenere altre informazioni. Vedere [Come ottenere supporto per Microsoft Intune](get-support.md).

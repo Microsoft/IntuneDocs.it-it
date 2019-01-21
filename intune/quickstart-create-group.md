@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 01/11/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6c51a2823e95526b76e5e71e35420d1744b70f6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6f7d7ccb4c94300d00f02dcace5c3a089cd9f2a2
+ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178379"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270572"
 ---
-# <a name="quickstart-create-a-group-to-manage-users"></a>Guida introduttiva: creare un gruppo per gestire gli utenti
+# <a name="quickstart-create-a-group-to-manage-users"></a>Avvio rapido: Creare un gruppo per gestire gli utenti
 
 In questa guida introduttiva si utilizzerà Intune per creare un gruppo basato su un utente esistente. I gruppi vengono usati per gestire gli utenti e controllare l'accesso dei dipendenti alle risorse aziendali. Queste risorse possono essere parte dell'intranet aziendale o essere risorse esterne, ad esempio siti SharePoint, app SaaS o app Web.
 
@@ -38,7 +38,7 @@ Se non si dispone di una sottoscrizione Intune, è possibile [iscriversi per ott
 
 ## <a name="sign-in-to-intune"></a>Accedere a Intune
 
-Accedere a [Intune](https://aka.ms/intuneportal) come [amministratore globale o come amministratore del servizio Intune](users-add.md#types-of-administrators). Se è stata creata una sottoscrizione della versione di valutazione di Intune, l'account creato con tale sottoscrizione sarà un amministratore globale.
+Accedere al [portale di Intune](https://aka.ms/intuneportal) come [Amministratore globale o come Amministratore servizio](users-add.md#types-of-administrators) di Intune. Se è stata creata una sottoscrizione della versione di valutazione di Intune, l'account creato con tale sottoscrizione sarà un amministratore globale.
 
 ## <a name="create-a-group"></a>Creare un gruppo
 
@@ -63,4 +63,4 @@ In questa guida introduttiva è stato utilizzato Intune per creare un gruppo bas
 Per seguire questa serie di guide introduttive di Intune, continuare con la guida introduttiva che segue.
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: configurare la registrazione automatica per i dispositivi Windows 10](quickstart-setup-auto-enrollment.md)
+> [Avvio rapido: configurare la registrazione automatica per i dispositivi Windows 10](quickstart-setup-auto-enrollment.md)

@@ -3,10 +3,10 @@ title: Come monitorare i criteri di protezione delle app
 titleSuffix: Microsoft Intune
 description: Monitorare lo stato di conformità dei criteri di gestione delle app per dispositivi mobili in Intune.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: f86ebd91125ec60d2ad0a28b47f5ac01fb62e8e2
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816841"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297299"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Come monitorare i criteri di protezione delle app
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,20 +44,16 @@ Lo stato di conformità può essere monitorato in tre posizioni diverse:
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
 3. Nel riquadro **Intune** scegliere **App client**.
-4. Nel carico di lavoro **App client** scegliere **Monitoraggio** > **Stato di protezione dell'app** per la visualizzazione di riepilogo:
+4. Nel carico di lavoro **App client** scegliere **Stato protezione app** nella sezione **Monitoraggio** per esaminare la visualizzazione di riepilogo:
 
 ![Riquadro Riepilogo del riquadro Gestione di applicazioni mobili di Intune](./media/app-protection-user-status-summary.png)
 
--   **Utenti**: numero totale di utenti dell'azienda che usano un'app associata a un criterio in un contesto aziendale.
+-   **Utenti assegnati**: numero totale di utenti assegnati dell'azienda che usano un'app associata a un criterio in un contesto aziendale. Comprende sia gli utenti protetti e con licenza, sia gli utenti non protetti e senza licenza.
+-   **Utenti contrassegnati**: numero di utenti che riscontrano problemi. Gli utenti con dispositivi jailbroken vengono indicati in **Utenti contrassegnati**.
+-   **Stato utente per iOS** e **Stato utente per Android**: numero di utenti che hanno usato un'app e ai quali è associato un criterio in un contesto aziendale per la relativa piattaforma. Questa informazione mostra il numero di utenti gestiti dal criterio e il numero di utenti che usano un'app non associata ad alcun criterio in un contesto aziendale. È consigliabile aggiungere questi utenti ai criteri.
 
--   **CRITERI GESTITO DA**: numero di utenti che hanno usato un'app e ai quali sono associati criteri in un contesto aziendale.
-
--   **NESSUN CRITERIO**: numero di utenti che usano un'app non associata ad alcun criterio in un contesto aziendale. È consigliabile aggiungere questi utenti ai criteri.
     > [!NOTE]
     > Se esistono più criteri per ogni piattaforma, un utente viene considerato gestito da criteri quando ha almeno un criterio assegnato.
-
-- **Utenti contrassegnati**: numero di utenti che riscontrano problemi. Al momento, in **Utenti contrassegnati** vengono indicati solo gli utenti con dispositivi jailbroken.
-
 
 ## <a name="detailed-view"></a>Visualizzazione dettagliata
 Per accedere alla visualizzazione dettagliata del riepilogo, scegliere il riquadro **Stato utente**, a seconda della piattaforma del sistema operativo del dispositivo, e il riquadro **Utenti contrassegnati**.
@@ -79,7 +75,7 @@ Per accedere alla visualizzazione dettagliata del riepilogo, scegliere il riquad
 
 Per visualizzare i report generati per un utente, seguire questa procedura:
 
-1.  Per selezionare un utente, scegliere il riquadro **Riepilogo**.
+1.  Per selezionare un utente, scegliere il riquadro di riepilogo **Stato utente**.
 
     ![Schermata del riquadro Riepilogo della funzionalità di gestione di applicazioni mobili di Intune](./media/MAM-reporting-6.png)
 
@@ -94,18 +90,24 @@ Nella visualizzazione dettagliata sono indicati il messaggio di errore, l'app a 
 
 ## <a name="reporting-view"></a>Visualizzazione Rapporti
 
-Sono visualizzati gli stessi rapporti della visualizzazione dettagliata e ulteriori rapporti relativi allo stato di conformità dei criteri MAM:
+Sono visualizzati gli stessi report del pannello **Stato protezione app**.
 
-![Schermata che evidenzia 2 report disponibili nel riquadro Impostazioni](./media/MAM-reporting-7.png)
+> [!NOTE]
+> Intune offre campi aggiuntivi per i report relativi ai dispositivi, tra cui ID di registrazione app, produttore Android, modello e versione della patch di sicurezza, oltre al modello iOS. In Intune questi campi sono disponibili selezionando **App client** > **Stato protezione app** e scegliendo **Report sulla protezione dell'app: iOS, Android**. Inoltre, questi parametri consentiranno di configurare l'elenco **Consenti** per il produttore del dispositivo (Android), l'elenco **Consenti** per il modello di dispositivo (Android e iOS) e l'impostazione della versione minima della patch di sicurezza Android. 
 
--   **Report protezione app per l'utente:** offre le stesse informazioni del report **Stato utente** descritte nella sezione precedente relativa alla visualizzazione dettagliata.
+Sono disponibili altri report relativi allo stato di conformità dei criteri MAM. Per visualizzare questi report, selezionare **App client** > **Stato protezione app** > **Report**. 
 
--   **Report protezione app per l'app:** offre due stati di protezione dell'app diversi tra cui gli amministratori possono scegliere prima di generare il report. Lo stato può essere protetto o non protetto.
+Il pannello **Report** fornisce diversi report in base all'utente e all'app, tra cui:
+
+
+-   **Report utenti**: Questo report offre le stesse informazioni del report **Stato utente** descritte nella sezione precedente relativa alla visualizzazione dettagliata.
+
+-   **Report app**: Questo report offre due stati di protezione dell'app diversi tra cui gli amministratori possono scegliere prima di generare il report. Lo stato può essere protetto o non protetto.
 
     -   Stato utente per attività MAM gestita (Protetta): questo report descrive l'attività di ogni app MAM gestita per ogni utente.
 
         -   Visualizza tutte le app di destinazione dei criteri MAM per ogni utente e suddivide lo stato di ogni app archiviata con i criteri MAM o di destinazione di un criterio MAM ma mai archiviata.
-<br></br>
+<br><br>
     -   Stato utente per attività MAM non gestita (Non protetta): questo report descrive l'attività delle app abilitate per MAM attualmente non gestite per ogni utente. Questa situazione può verificarsi per i motivi seguenti:
 
         -   Le app sono usate da un utente o un'app che attualmente non è destinazione di un criterio MAM.

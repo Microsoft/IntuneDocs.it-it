@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032266"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203383"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gestire e usare diverse funzionalità di gestione dei dispositivi nei dispositivi Windows Holographic e HoloLens con Intune
 
@@ -90,7 +90,7 @@ Quando si usano dispositivi che eseguono Windows Holographic for Business, è po
 
 - **[Sincronizzare i dispositivi per ottenere i criteri e le azioni più recenti](device-sync.md)**: l'azione **Sincronizza** forza il dispositivo a contattare immediatamente Intune. Quando un dispositivo esegue l'archiviazione, riceve immediatamente eventuali azioni o criteri in sospeso assegnati. Questa funzionalità consente di convalidare e risolvere i problemi dei criteri assegnati, senza attendere la successiva archiviazione pianificata.
 
-**[Informazioni sulla gestione dei dispositivi in Microsoft Intune](device-management.md)**  è un'ottima risorsa per ottenere informazioni sulla gestione dei dispositivi tramite il portale di Azure. 
+**[Informazioni sulla gestione dei dispositivi in Microsoft Intune](device-management.md) ** è un'ottima risorsa per ottenere informazioni sulla gestione dei dispositivi tramite il portale di Azure. 
 
 ## <a name="device-categories-and-groups"></a>Categorie e gruppi di dispositivi
 **[Raggruppare i dispositivi in categorie](device-group-mapping.md)**
@@ -123,6 +123,11 @@ Le reti private virtuali (VPN) offrono agli utenti accesso remoto sicuro alla re
 #### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Configurare la rete Wi-Fi](wi-fi-settings-configure.md)
 
 È anche possibile creare un profilo Wi-Fi in Intune per assegnare le impostazioni della rete wireless ai dispositivi Windows Holographic for Business. Quando si assegna un profilo Wi-Fi, gli utenti finali ottengono l'accesso alla rete aziendale, senza alcuna configurazione di rete. È ad esempio possibile creare una rete Wi-Fi dedicata esclusivamente ai dispositivi Windows Holographic for Business.
+
+## <a name="shared-multi-user-devices"></a>Dispositivi multiutente condivisi
+[Dispositivi condivisi](shared-user-device-settings-windows-holographic.md)
+
+I dispositivi che eseguono Windows Holographic for Business, ad esempio Microsoft HoloLens, possono avere più utenti. In Intune sono disponibili impostazioni che consentono di controllare varie funzionalità su questi dispositivi, ad esempio il risparmio energia, mediante la gestione dell’archiviazione locale e degli account. I profili di configurazione possono anche essere applicati ai dispositivi con sistemi operativi diversi. Ad esempio, il gruppo di dispositivi può includere dispositivi che eseguono RS2 e RS3 nello stesso gruppo.
 
 ## <a name="software-updates"></a>Aggiornamenti software
 **[Gestire gli aggiornamenti software](windows-update-for-business-configure.md)**

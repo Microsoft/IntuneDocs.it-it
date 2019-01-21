@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.openlocfilehash: e0bb198b078695b567756c6a7db832d00e7a8c5b
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657781"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210840"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introduzione a Microsoft Intune App SDK
 
@@ -158,6 +158,8 @@ Dopo aver completato i passaggi necessari per integrare l'app per iOS o Android 
     * Gli ISV che abilitano le proprie app dello store iOS e Android per i criteri di protezione delle app di Intune, riceveranno un codice promozionale al termine della registrazione in Microsoft Intune, come descritto nel passaggio relativo alla registrazione. Con il codice promozionale sarà possibile richiedere una versione di valutazione di Microsoft Intune per un anno di uso esteso.
 
     * Se si sta sviluppando un'app line-of-business che non verrà inviata allo store, l'accesso a Microsoft Intune deve essere fornito dall'organizzazione. Si può anche richiedere un mese di valutazione gratuita con [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
+    
+    * Se si sta testando l'app su un dispositivo mobile usando l’account di un utente finale, assicurarsi che a tale account sia stata assegnata una licenza di Intune mediante il sito Web del portale di amministrazione di Office dopo l'accesso con un account amministratore; vedere [Assegnare licenze di Microsoft Intune](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
 * **Criteri di protezione delle app di Intune**: per testare l'app con tutti i criteri di protezione delle app di Intune, è necessario conoscere il comportamento previsto per ogni impostazione dei criteri. Vedere le descrizioni dei [criteri di protezione delle app iOS](app-protection-policy-settings-ios.md) e dei [criteri di protezione delle app Android](app-protection-policy-settings-android.md).
 

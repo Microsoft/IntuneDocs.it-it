@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: cc7e61d7b5dd0d7ff16836602b8d959683a971e7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067449"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210721"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creare un report dal feed OData con Power BI
 
@@ -89,7 +89,7 @@ La relazione è visualizzata dalla colonna Da alla colonna A. In questo esempio 
 
 Un grafico ad albero mostra i dati gerarchici come caselle all'interno di caselle. Ogni ramo della gerarchia è una casella contenente caselle più piccole che mostrano rami secondari. È possibile usare Power BI Desktop per creare una mappa ad albero dei dati di Intune.
 
-![Visualizzazioni > Mappa ad albero](media/reports-create-03-treemap.png)
+![Visualizzazioni mappa ad albero di Power BI](media/reports-create-03-treemap.png)
 
 1. Selezionare un tipo di grafico. Selezionare **Mappa ad albero**.
 2. Nel modello di dati cercare la tabella **devices**.

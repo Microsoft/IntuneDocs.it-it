@@ -14,16 +14,16 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 080205e601b857d4765eb6b97eeeeeb8f4e6fc1b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0da6861b6c49fc37691b8c6e464a506670643fa3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187158"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203332"
 ---
 # <a name="use-scope-tags-to-filter-policies"></a>Usare i tag di ambito per filtrare i criteri
 
-I tag di ambito consentono di filtrare i criteri con tag personalizzati creati dall'utente.
+I tag di ambito consentono di filtrare i criteri con tag personalizzati creati dall'utente. È possibile applicare i tag di ambito a ruoli e app.
 
 Ad esempio, creare un tag di ambito denominato "Reparto tecnico" e assegnarlo ai profili di configurazione correlati al reparto tecnico. Assegnare lo stesso tag a un ruolo "Amministratori reparto tecnico". Vedranno solo i criteri con il tag "Reparto tecnico".
 
@@ -38,6 +38,11 @@ Scegliere **Configurazione del dispositivo** > **Profili** > scegliere un profil
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Per assegnare un tag di ambito a un ruolo
 
 Scegliere **Ruoli** > **Tutti i ruoli** > **Policy and Profile Manager (Gestione criteri e profili)** > **Assegnazioni**  >  **Ambito (tag)**.
+
+## <a name="to-assign-a-scope-tag-to-an-app"></a>Per assegnare un tag di ambito a un'app
+
+Scegliere **App client** > **App** > scegliere un'app > **Proprietà** > **Ambito (tag)** > **Aggiungi** > scegliere i tag > **Selezionare** > **OK** > **Salva**.
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 

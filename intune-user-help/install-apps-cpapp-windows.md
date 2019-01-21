@@ -1,11 +1,11 @@
 ---
 title: Installazione di app dall'app Portale aziendale di Intune per Windows
-description: Informazioni su come installare e condividere app sull'app Portale aziendale per Windows
+description: Installare e condividere app sull'app Portale aziendale per Windows
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e2bf5ffd5c913b4e2c51c9efd0aa40ba3d3f0fa7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: 5c57db351aae613d0213e4ef439084ad9577a3fc
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863094"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203230"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Installare e condividere app nel dispositivo
 Installare le app nel dispositivo dall'app Portale aziendale per Windows.
@@ -63,4 +63,16 @@ Consigliare le app e condividerle con i contatti del lavoro e dell'istituto di i
 
 Quando la condivisione è stata confermata, il destinatario riceverà un collegamento e un messaggio per visualizzare i dettagli dell'app. Il collegamento apre la pagina **Dettagli app** dell'app Portale aziendale. 
 
-Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).
+## <a name="available-apps"></a>App disponibili  
+
+L'organizzazione seleziona le app utili e appropriate per l'utente all’interno dell’azienda o dell'istituto di istruzione. Queste app sono le uniche disponibili nel portale aziendale.  
+
+Le app sono inoltre disponibili in base al tipo di dispositivo. Ad esempio, se si usa l'app Portale aziendale per Windows, si avrà accesso alle app per Windows, non alle app per iOS.  
+
+## <a name="request-an-app-for-work-or-school"></a>Richiedere un'app per l'azienda o per l'istituto di istruzione  
+Se un’app necessaria non è disponibile nell’app Portale aziendale, richiederla. Trovare i dettagli di contatto per il **supporto tecnico** nella pagina del supporto tecnico dell'app Portale aziendale. Le stesse informazioni di contatto sono disponibili anche nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).    
+
+  ![App Portale aziendale per Windows 10, pagina Guida e supporto tecnico, con i dettagli del supporto tecnico evidenziati. ](./media/1812_UCP_Help_Support_helpdesk.png)  
+
+
+Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  

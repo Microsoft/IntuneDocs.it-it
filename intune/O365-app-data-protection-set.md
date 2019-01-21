@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: 807bc306848a731e63f7f854a9d4b451264e21a8
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067466"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210806"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Esperienza utente relativa alla protezione base nelle app di Office 365 gestite in Microsoft Intune
 
@@ -89,33 +89,32 @@ Questo articolo usa OneDrive for Business come esempio per dimostrare che l'espe
 
 ## <a name="what-policies-does-this-wizard-set"></a>Quali criteri vengono impostati da questa procedura guidata?
 
-|     |       | |
-|----|--------|-|
-|**Nome**|Gestire le app di Office 365| |
-| **Descrizione**|Creato dalla procedura guidata per la gestione delle app di Office 365| |
-| |  | |
-| **Nome dell'impostazione** |**Valore dei criteri iOS** | **Valore dei criteri Android** |
-|Impedisci backup in iTunes e iCloud| No | N/D |
-|Impedisci backup in Android |N/D | No|
-|Consenti all'app di trasferire i dati ad altre app | Tutte le app | Tutte le app|
-|Consenti all'app di ricevere i dati da altre app| Tutte le app | Tutte le app|
-|Impedisci Salva con nome | No | No|
-|Limita le operazioni taglia, copia e incolla con le altre app | Qualsiasi app | Qualsiasi app |
-|Limitare il contenuto Web per la visualizzazione in Managed Browser dell'azienda | No| No|
-|Crittografa dati app | Quando il dispositivo è bloccato | Sì|
-|Disabilita sincronizzazione contatti | No| No|
-|Disabilita stampa | No | No|
-|Richiedi PIN per l'accesso | No | Sì|
-|Numero di tentativi prima della reimpostazione del PIN | N/D |5|
-|Consenti PIN semplice | N/D |Sì|
-|Lunghezza PIN | N/D | 4|
-|Consenti impronta digitale anziché PIN | N/D | Sì |
-|Richiedi credenziali aziendali per l'accesso | No | No|
-|Blocca l'esecuzione delle app gestite nei dispositivi jailbroken o rooted | No | No|
-|Controlla di nuovo i requisiti di accesso dopo (minuti) - Timeout | 30 | 30|
-|Controlla di nuovo i requisiti di accesso dopo (minuti) - Periodo di prova offline | 720 |720|
-|Intervallo offline (giorni) prima della cancellazione dei dati dell'app | 90 | 90|
-|Blocca acquisizione schermo (solo per dispositivi Android) | N/D | No |
+**Nome**: Gestire le app di Office 365<br>
+**Description**: Creato dalla procedura guidata per la gestione delle app di Office 365
+
+| Nome impostazione | Valore dei criteri iOS | Valore dei criteri Android |
+|------------------------------------------------------------------------|-----------------------|----------------------|
+| Impedisci backup in iTunes e iCloud | No | N/D |
+| Impedisci backup in Android | N/D | No |
+| Consenti all'app di trasferire i dati ad altre app | Tutte le app | Tutte le app |
+| Consenti all'app di ricevere i dati da altre app | Tutte le app | Tutte le app |
+| Impedisci Salva con nome | No | No |
+| Limita le operazioni taglia, copia e incolla con le altre app | Qualsiasi app | Qualsiasi app |
+| Limitare il contenuto Web per la visualizzazione in Managed Browser dell'azienda | No | No |
+| Crittografa dati app | Quando il dispositivo è bloccato | Sì |
+| Disabilita sincronizzazione contatti | No | No |
+| Disabilita stampa | No | No |
+| Richiedi PIN per l'accesso | No | Sì |
+| Numero di tentativi prima della reimpostazione del PIN | N/D | 5 |
+| Consenti PIN semplice | N/D | Sì |
+| Lunghezza PIN | N/D | 4 |
+| Consenti impronta digitale anziché PIN | N/D | Sì |
+| Richiedi credenziali aziendali per l'accesso | No | No |
+| Blocca l'esecuzione delle app gestite nei dispositivi jailbroken o rooted | No | No |
+| Controlla di nuovo i requisiti di accesso dopo (minuti) - Timeout | 30 | 30 |
+| Controlla di nuovo i requisiti di accesso dopo (minuti) - Periodo di prova offline | 720 | 720 |
+| Intervallo offline (giorni) prima della cancellazione dei dati dell'app | 90 | 90 |
+| Blocca acquisizione schermo (solo per dispositivi Android) | N/D | No |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Perché un criterio PIN per le app viene configurato solo per i dispositivi Android?
 La crittografia funziona in modo diverso in iOS e in Android.

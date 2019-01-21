@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: afddf57f93ef2308ce8e8fd8aab8d74c3419a3ea
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642847"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203417"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple
 
@@ -192,7 +192,15 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
     | <strong>Zoom</strong> | Offrirà all'utente la possibilità di ingrandire la visualizzazione durante la configurazione del dispositivo. |
     | <strong>Siri</strong> | Offrirà all'utente la possibilità di configurare Siri. |
     | <strong>Dati di diagnostica</strong> | Visualizzerà la schermata **Diagnostica** all'utente. Questa schermata offre all'utente la possibilità di inviare dati di diagnostica ad Apple. |
-
+    | <strong>Segnale schermo</strong> | Offrirà all'utente la possibilità di attivare il segnale schermo. |
+    | <strong>Privacy</strong> | Visualizzerà la schermata Privacy all'utente. |
+    | <strong>Migrazione Android</strong> | Offrirà all'utente la possibilità di eseguire la migrazione dei dati da un dispositivo Android. |
+    | <strong>iMessage e FaceTime</strong> | Offrirà all'utente la possibilità di configurare iMessage e FaceTime. |
+    | <strong>Onboarding</strong> | Visualizzerà le schermate con le informazioni di onboarding per la formazione dell'utente, ad esempio Copertina e Multitasking e centro di controllo. |
+    | <strong>Migrazione di Watch</strong> | Offrirà all'utente la possibilità di eseguire la migrazione dei dati da un dispositivo Watch. |
+    | <strong>Orario schermo</strong> | Visualizzerà la schermata Orario schermo. |
+    | <strong>Aggiornamento software</strong> | Visualizzerà la schermata degli aggiornamenti software obbligatori. |
+    | <strong>Configurazione SIM</strong> | Offrirà all'utente la possibilità di aggiungere un piano dati cellulare. |
 
 14. Scegliere **OK**.
 

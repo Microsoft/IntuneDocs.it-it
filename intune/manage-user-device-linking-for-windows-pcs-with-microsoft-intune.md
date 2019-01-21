@@ -16,12 +16,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 81f84c2e645a9a6a20ff901239117b562a26b0aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9d6c894e30b050ec6e824e1e77d0c476d4dc15bc
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186648"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149628"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Gestire il collegamento utente-dispositivo per PC Windows
 
@@ -43,7 +43,7 @@ Per collegare un utente a un PC:
 
    - Per lasciare il PC collegato all'utente corrente, se presente, scegliere **Annulla**.
 
-   - Per rimuovere il collegamento all'utente corrente, se presente, scegliere <strong>Rimuovi collegamento **&gt; **OK</strong>.
+   - Per rimuovere il collegamento all'utente corrente, se presente, scegliere <strong>Rimuovi collegamento**&gt;** OK</strong>.
 
    - Per collegare il PC a un nuovo utente, selezionare un utente nell'elenco **Tutti gli utenti** . Verificare che i dati dell'utente siano corretti e quindi scegliere **OK**.
 

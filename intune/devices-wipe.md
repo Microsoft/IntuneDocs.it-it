@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553657"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122639"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi con la cancellazione, la disattivazione o l'annullamento manuale della registrazione
 
@@ -37,7 +37,7 @@ L'azione **Cancella** riporta un dispositivo alle impostazioni predefinite di fa
 |Azione di cancellazione|**Mantieni lo stato della registrazione e l'account utente**|Rimosso dalla gestione di Intune|Descrizione|
 |:-------------:|:------------:|:------------:|------------|
 |**Cancellazione**| Non selezionata | Sì | Cancella tutti gli account utente, i dati, i criteri MDM e le impostazioni. Reimposta le impostazioni e lo stato predefiniti del sistema operativo.|
-|**Cancellazione**| Selezionato | No | Cancella tutti i criteri MDM. Conserva gli account utente e i dati. Reimposta le impostazioni utente predefinite. Reimposta le impostazioni e lo stato predefiniti del sistema operativo.|
+|**Cancellazione**| Selezionata | No | Cancella tutti i criteri MDM. Conserva gli account utente e i dati. Reimposta le impostazioni utente predefinite. Reimposta le impostazioni e lo stato predefiniti del sistema operativo.|
 
 L'opzione **Mantieni lo stato della registrazione e l'account utente** è disponibile solo per Windows 10 versione 1709 o successiva.
 
@@ -81,7 +81,7 @@ Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto dell'azion
 
 |Tipo di dati|iOS|
 |-------------|-------|
-|App aziendali e dati associati installati da Intune|**App installate tramite il portale aziendale:** tutte le app e i relativi dati vengono rimossi. Queste app includono le app inizialmente installate dall'App Store e successivamente gestite come app aziendali. <br /><br /> **App Microsoft che usano Gestione delle app mobili e sono state installate dall'App Store:** I dati delle app aziendali vengono rimossi. Le app personali e i relativi dati non vengono rimossi.|
+|App aziendali e dati associati installati da Intune|**App installate tramite il portale aziendale:** tutte le app e i relativi dati vengono rimossi. Queste app includono le app inizialmente installate dall'App Store e successivamente gestite come app aziendali. <br /><br /> **App Microsoft che usano Gestione delle app mobili e sono state installate dall'App Store:** e vengono rimossi i dati dell'app aziendale. Le app personali e i relativi dati non vengono rimossi.|
 |Impostazioni|Le configurazioni impostate dai criteri di Intune non vengono più applicate. Gli utenti possono modificare le impostazioni.|
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso.|
 |Impostazioni del profilo certificato|Certificati rimossi e revocati.|
@@ -192,6 +192,10 @@ Se si vuole rimuovere completamente un dispositivo DEP Apple dalla gestione con 
 6. Scegliere **Reassign** (Riassegna).
 
     ![Schermata per la riassegnazione di un dispositivo Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="fresh-start"></a>Fresh Start
+
+Applicabile per i dispositivi Windows 10. Altre informazioni su [Fresh Start](https://docs.microsoft.com/intune/device-fresh-start).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

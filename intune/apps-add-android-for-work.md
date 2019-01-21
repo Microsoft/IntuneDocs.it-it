@@ -1,12 +1,12 @@
 ---
-title: Assegnare app ai dispositivi del profilo di lavoro Android
+title: Assegnare app Google Play gestite a dispositivi Android Enterprise
 titlesuffix: Microsoft Intune
-description: Informazioni su come sincronizzare e assegnare app ai dispositivi del profilo di lavoro Android dalla versione gestita di Google Play Store.
+description: Informazioni su come sincronizzare e assegnare app ai dispositivi Android Enterprise dalla versione gestita di Google Play Store.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305931"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239575"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Assegnare app ai dispositivi del profilo di lavoro Android con Intune
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Assegnare app Google Play gestite a dispositivi Android Enterprise con Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android Enterprise è un programma per dispositivi del profilo di lavoro Android e in modalità tutto schermo. Per i dispositivi del profilo di lavoro Android, Android Enterprise è un set di funzionalità e servizi che separa le app e i dati personali da quelli aziendali. Android Enterprise offre opzioni di gestione e privacy aggiuntive quando gli utenti usano i dispositivi Android personali per lavoro. Intune consente la distribuzione di app e impostazioni ai dispositivi del profilo di lavoro Android per assicurarsi che le informazioni di lavoro e quelle personali restino separate. Tutte le app installate nei dispositivi del profilo di lavoro Android provengono dalla versione gestita di Google Play Store. L'assegnazione di app ai dispositivi del profilo di lavoro Android avviene in modo diverso rispetto all'assegnazione di app a dispositivi Android standard. Accedere allo store, cercare le app desiderate e approvarle. L'app viene quindi visualizzata nel nodo **App con licenza** del portale di Azure ed è possibile gestire l'assegnazione dell'app allo stesso modo di qualsiasi altra app.
+Android Enterprise è un programma per dispositivi del profilo di lavoro Android, dispositivi in modalità dedicata/tutto schermo e dispositivi gestiti. Per i dispositivi del profilo di lavoro Android, Android Enterprise è un set di funzionalità e servizi che separa le app e i dati personali da quelli aziendali. Android Enterprise offre opzioni di gestione e privacy aggiuntive quando gli utenti usano i dispositivi Android personali per lavoro. Intune consente la distribuzione di app e impostazioni ai dispositivi del profilo di lavoro Android per assicurarsi che le informazioni di lavoro e quelle personali restino separate. Tutte le app installate nei dispositivi del profilo di lavoro Android provengono dalla versione gestita di Google Play Store. L'assegnazione di app ai dispositivi del profilo di lavoro Android avviene in modo diverso rispetto all'assegnazione di app a dispositivi Android standard. Accedere allo store, cercare le app desiderate e approvarle. L'app viene quindi visualizzata nel nodo **App con licenza** del portale di Azure ed è possibile gestire l'assegnazione dell'app allo stesso modo di qualsiasi altra app.
 
 Inoltre, se sono state create app line-of-business personalizzate, è possibile assegnarle come segue:
 - Registrarsi per ottenere un account Google Developer che consente di pubblicare le app in un'area privata dello store Google Play.

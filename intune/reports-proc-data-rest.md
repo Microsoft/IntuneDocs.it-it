@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f587fdf7c1690dbb0a31388a9c70b780179e541e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642881"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210874"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Recuperare dati dall'API data warehouse di Intune con un client REST
 
@@ -47,7 +47,7 @@ Creare un'app nativa in Azure. Questa app nativa è l'app client. Il client in e
     3.  Digitare l'URL per l'**URL di accesso**. L'URL di accesso dipenderà dallo scenario specifico, tuttavia se si intende usare Postman, digitare `https://www.getpostman.com/oauth2/callback`. Usare il callback per il passaggio di autenticazione client per eseguire l'autenticazione ad Azure AD.
 4.  Selezionare **Crea**.
 
-     ![API data warehouse di Intune](./media/reports-get_rest_data_client_overview.png)
+     ![App client del data warehouse di Intune](./media/reports-get_rest_data_client_overview.png)
 
 5. Prendere nota dell'**ID applicazione** di questa app in quanto verrà usato nella sezione successiva.
 
@@ -67,7 +67,7 @@ Creare un'app nativa in Azure. Questa app nativa è l'app client. Il client in e
     ![Abilitare l'accesso - API Microsoft Intune](./media/reports-get_rest_data_client_access.png)
 
 9.  Selezionare **Seleziona**.
-10.  Selezionare **Chiudi**.
+10.  Seleziona **Chiudi**.
 11.  Selezionare **Concedi autorizzazioni** nel riquadro Autorizzazioni necessarie (facoltativo). In questo modo si concederà l'accesso a tutti gli account nella directory corrente evitando la visualizzazione della finestra di dialogo di consenso per ogni utente nel tenant. Per altre informazioni, vedere [Integrazione di applicazioni con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 12.  Selezionare **Sì**.
 
@@ -134,7 +134,7 @@ Per ottenere un nuovo token di accesso per Postman, è necessario aggiungere l'U
 
 12. Selezionare **Request Token** (Richiedi token).
 
-    ![Informazioni per il token](./media/reports-postman_getnewtoken.png)
+    ![Informazioni per il token di accesso](./media/reports-postman_getnewtoken.png)
 
 13. Digitare le credenziali nella pagina di autorizzazione di Azure AD. L'elenco di token esistenti in Postman contiene ora il token denominato `Bearer`.
 14. Selezionare **Use Token** (Usa token). L'elenco di intestazioni contiene il nuovo valore della chiave di autorizzazione e il valore `Bearer <your-authorization-token>`.
@@ -144,7 +144,7 @@ Per ottenere un nuovo token di accesso per Postman, è necessario aggiungere l'U
 1.  Selezionare**Send** (Invia).
 2.  I dati restituiti vengono visualizzati nel corpo della risposta di Postman.
 
-    ![Postman 200OK](./media/reports-postman_200OK.png)
+    ![Stato del client Postman uguale a 200 OK](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>Creare un client REST (C#) per recuperare dati dal data warehouse di Intune
 
@@ -161,7 +161,7 @@ L'esempio seguente contiene un semplice client REST. Il codice usa la classe **h
 6. Selezionare **Accetto** per accettare la licenza del pacchetto NuGet.
 7. Aprire `Program.cs` da Esplora soluzioni.
 
-    ![Progetto in Visual Studio](./media/reports-get_rest_data_in.png)
+    ![Progam.cs ed Esplora soluzioni in Visual Studio](./media/reports-get_rest_data_in.png)
 
 8. Sostituire il codice in Program.cs con il codice seguente:  
    ```csharp

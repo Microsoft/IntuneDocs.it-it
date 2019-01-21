@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146740"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203315"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Inviare i log al supporto tecnico dell'azienda dall'app Impostazioni per Windows 10
 
-Se si verifica un errore durante l'uso di un dispositivo Windows 10 gestito dall'azienda, è possibile inviare informazioni sull'errore via posta elettronica per consentire al supporto tecnico dell'azienda di risolvere il problema. Queste informazioni vengono memorizzate nel dispositivo in uno specifico documento definito _log di diagnostica_.
+Usare l'app Impostazioni per risolvere i problemi del Portale aziendale per Windows 10. Se si riscontra un problema durante l'uso dell'app nel proprio dispositivo Windows 10, è possibile inviare un messaggio di posta elettronica al team di supporto per richiedere assistenza. Gli eventi e gli errori che si verificano nell'app Portale aziendale vengono salvati nel dispositivo in un particolare documento denominato _log di diagnostica_. Possono contenere informazioni dettagliate aggiuntive sull'errore e, se esportate, sono utili per i team di supporto.
 
-1. Aprire l'app **Impostazioni** di Windows. Passare al **menu Start** e selezionare il pulsante **Impostazioni**. È anche possibile cercare "impostazioni" nella barra di ricerca.
+1. Per aprire l'app**Impostazioni**, fare clic sul menu **Start** > **Impostazioni**. È anche possibile cercare *impostazioni* nella barra di ricerca.
 2. Passare ad **Account** > **Accedi all'azienda o all'istituto di istruzione**.
-3. Selezionare "Esporta i file di log di gestione".
+3. Selezionare **Esporta i file di log di gestione**.
 
    ![Schermata "Accedi all'azienda o all'istituto di istruzione" con l'opzione Esporta sotto l'intestazione "Impostazioni correlate".](./media/w10-export-logs.png)
 

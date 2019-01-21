@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 60df25542e69422e15a2a57473a3fbfa2cc413a5
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: d5b07262dad3eaab76dd4854b82f0e45b3921b26
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959503"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203502"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Usare le app gestite nel dispositivo Android
 Le app gestite sono configurate per soddisfare i requisiti di sicurezza dell'organizzazione e proteggere i dati aziendali e dell'istituto di istruzione. Queste app vengono rese disponibili all'utente nel dispositivo per essere installate o usate automaticamente. 
@@ -56,7 +56,15 @@ In primo luogo, è necessario installare il Portale aziendale e, se richiesta, o
 * L'organizzazione rende disponibili le app gestite all'utente nel Portale aziendale. Passare all'app o al sito Web Portale aziendale per cercare, visualizzare e installare queste app. 
 * Installare un'app da Google Play Store e quindi accedere all'app con il proprio account aziendale o dell'istituto di istruzione.  
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>Che cosa può gestire il supporto tecnico dell'azienda in un'app?
+ ## <a name="available-apps"></a>App disponibili   
+ L'organizzazione seleziona le app utili e appropriate per l'utente all’interno dell’azienda o dell'istituto di istruzione. Queste app sono le uniche disponibili nel portale aziendale.   
+
+ Le app sono inoltre disponibili in base al tipo di dispositivo. Ad esempio, se si usa l'app Portale aziendale per Android, si avrà accesso alle app per Android, non alle app per iOS.   
+
+ ## <a name="request-an-app-for-work-or-school"></a>Richiedere un'app per l'azienda o per l'istituto di istruzione   
+ Se un’app necessaria non è disponibile nell’app Portale aziendale, è possibile richiederla. Trovare i dettagli di contatto per il **supporto tecnico** nella scheda **Contatta IT** dell'app Portale aziendale. Le stesse informazioni di contatto sono disponibili anche nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).   
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>Che cosa può gestire il supporto tecnico dell'azienda in un'app?  
 L'elenco seguente descrive le impostazioni che il supporto tecnico dell'azienda può gestire all'interno di un'app. Queste impostazioni influenzano il modo in cui l'utente apre, visualizza e usa i dati aziendali o dell'istituto di istruzione nel proprio dispositivo:
 
 * Accesso a specifici siti Web  

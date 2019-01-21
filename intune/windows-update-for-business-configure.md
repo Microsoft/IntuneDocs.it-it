@@ -2,10 +2,10 @@
 title: Configurare Windows Update for Business in Microsoft Intune - Azure | Microsoft Docs
 description: Aggiornare le impostazioni di aggiornamento software in un profilo per la creazione di un anello di aggiornamento, esaminare la conformità e sospendere gli aggiornamenti in Windows Update for Business con Microsoft Intune nei dispositivi Windows 10.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112766"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297384"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gestire gli aggiornamenti software in Intune
 
@@ -76,16 +76,12 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e quindi selezionare **Microsoft Intune**.
 2. Selezionare **Aggiornamenti software** > **Anelli di aggiornamento di Windows 10** > **Crea**.
 3. Immettere un nome e una descrizione (facoltativo) e quindi fare clic su **Configura**.
-4. In **Impostazioni** immettere le impostazioni seguenti:
+4. In **Impostazioni** immettere le impostazioni seguenti:  
 
+   **Aggiorna impostazioni**  
    - **Canale di manutenzione**: impostare il canale da cui il dispositivo riceve gli aggiornamenti di Windows.
    - **Aggiornamenti ai prodotti Microsoft**: scegliere se cercare gli aggiornamenti di app da Microsoft Update.
    - **Driver di Windows**: scegliere se escludere i driver di Windows Update durante gli aggiornamenti.
-   - **Comportamento di aggiornamento automatico**: scegliere la modalità di installazione degli aggiornamenti automatici e quando riavviare. Per informazioni dettagliate, vedere [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
-     - **Frequenza del comportamento automatico**: se si seleziona **Installa e riavvia automaticamente all'ora pianificata** per il comportamento di aggiornamento, viene visualizzata questa impostazione. Usare questa impostazione per pianificare il momento in cui vengono installati gli aggiornamenti, inclusi settimana, data e ora.
-
-   - **Verifiche al riavvio**: Abilitata per impostazione predefinita. Quando si riavvia un dispositivo, vengono eseguite alcune verifiche, ad esempio la ricerca di utenti attivi, i livelli di batteria, eventuali giochi in esecuzione e altro ancora. Per ignorare queste verifiche quando si riavvia un dispositivo, selezionare **Ignora**.
-
    - **Periodo di differimento dell'aggiornamento qualitativo (giorni)**: immettere il numero di giorni di cui vengono posticipati gli aggiornamenti qualitativi. È possibile posticipare la ricezione di questi aggiornamenti per un massimo di 30 giorni dalla data di rilascio.
 
      Gli aggiornamenti qualitativi includono in genere correzioni e miglioramenti alle funzionalità esistenti di Windows e vengono pubblicati il secondo martedì del mese. Gli aggiornamenti qualitativi tramite Windows Update per le aziende ricevono solo questi aggiornamenti (versione 'B') sebbene Microsoft possa rilasciare altri aggiornamenti in qualsiasi momento. Una volta disponibili in Windows Update, è possibile definire se e per quanto tempo posticipare la ricezione degli aggiornamenti qualitativi. Per altre informazioni, vedere [Distribuire gli aggiornamenti tramite Windows Update per le aziende](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
@@ -96,9 +92,21 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 
      Ad esempio: **Se il canale di manutenzione è impostato su Canale semestrale (mirato) e il periodo di differimento è di 30 giorni**: supponiamo che l'aggiornamento delle funzionalità X venga reso disponibile pubblicamente su Windows Update come Canale semestrale (mirato) in gennaio. Il dispositivo non riceve l'aggiornamento fino a febbraio, 30 giorni più tardi.
 
-     **Se il canale di manutenzione è impostato su Canale semestrale e il periodo di differimento è di 30 giorni**: supponiamo che l'aggiornamento delle funzionalità X venga reso disponibile pubblicamente su Windows Update come Canale semestrale (mirato) in gennaio. Quattro mesi dopo, in aprile, l'aggiornamento della funzionalità X sarà rilasciato come Canale semestrale. Il dispositivo riceve l'aggiornamento 30 giorni dopo il rilascio del canale semestrale e viene aggiornato nel mese di maggio.
+     **Se il canale di manutenzione è impostato su Canale semestrale e il periodo di differimento è di 30 giorni**: supponiamo che l'aggiornamento delle funzionalità X venga reso disponibile pubblicamente su Windows Update come Canale semestrale (mirato) in gennaio. Quattro mesi dopo, in aprile, l'aggiornamento della funzionalità X sarà rilasciato come Canale semestrale. Il dispositivo riceve l'aggiornamento 30 giorni dopo il rilascio del canale semestrale e viene aggiornato nel mese di maggio.  
 
-   - **Modalità di download con ottimizzazione recapito**: scegliere il metodo in base al quale i dispositivi scaricano gli aggiornamenti di Windows. Per informazioni dettagliate, vedere [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   **Impostazioni dell'esperienza utente**
+   
+   - **Comportamento di aggiornamento automatico**: scegliere la modalità di installazione degli aggiornamenti automatici e quando riavviare. Per informazioni dettagliate, vedere [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+
+     Se si imposta *Ripristina impostazioni predefinite*, verranno ripristinate le impostazioni di aggiornamento automatico originali nei computer Windows 10 che hanno eseguito *Aggiornamento di Windows 10 (ottobre 2018)* o versione successiva.  
+
+     - **Frequenza del comportamento automatico**: se si seleziona **Installa e riavvia automaticamente all'ora pianificata** per il comportamento di aggiornamento, viene visualizzata questa impostazione. Usare questa impostazione per pianificare il momento in cui vengono installati gli aggiornamenti, inclusi settimana, data e ora.
+
+   - **Verifiche al riavvio**: Abilitata per impostazione predefinita. Quando si riavvia un dispositivo, vengono eseguite alcune verifiche, ad esempio la ricerca di utenti attivi, i livelli di batteria, eventuali giochi in esecuzione e altro ancora. Per ignorare queste verifiche quando si riavvia un dispositivo, selezionare **Ignora**.
+
+   - **Impedisci all'utente di sospendere gli aggiornamenti Windows**: abilitata per impostazione predefinita. Usare questa impostazione per impedire o consentire agli utenti di sospendere l'installazione degli aggiornamenti da *Impostazioni* nei loro computer. 
+      
+   - **Modalità di download con ottimizzazione recapito**: L’ottimizzazione del recapito non viene più configurata nell’ambito di un anello di aggiornamento di Windows 10 durante l’esecuzione della funzionalità Aggiornamenti software. L’ottimizzazione del recapito ora viene impostata tramite la configurazione del dispositivo. Tuttavia, le configurazioni precedenti rimangono disponibili nella console. È possibile rimuovere le configurazioni precedenti impostandole su *Non configurato*. Non è tuttavia possibile modificarle in altro modo. Per evitare conflitti tra criteri nuovi e precedenti, vedere [Passare dagli anelli di aggiornamento esistenti a ottimizzazione recapito](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) e quindi spostare le impostazioni in un profilo di ottimizzazione recapito. 
 
 5. Al termine, selezionare **OK**. In **Crea l'anello di aggiornamento** selezionare **Crea**.
 

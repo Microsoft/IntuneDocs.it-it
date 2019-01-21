@@ -1,43 +1,47 @@
 ---
 title: Impostazioni relative alla modalità tutto schermo per Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: Configurare i dispositivi Windows 10 e versioni successive per l'esecuzione di una o più app in modalità tutto schermo. Include la personalizzazione del menu Start, l'aggiunta di app, la barra della applicazioni e la configurazione di un Web browser. Configurare anche i dispositivi Windows Holographic for Business per l'esecuzione di più app in modalità tutto schermo in Microsoft Intune.
+description: Configurare i dispositivi Windows 10 e versioni successive per l'esecuzione di una o più app in modalità tutto schermo, personalizzare il menu Start, aggiungere app, visualizzare la barra della applicazioni e configurare un Web browser. Configurare anche i dispositivi Windows Holographic for Business per l'esecuzione di più app in modalità tutto schermo in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 574bc38fb9ce47d2b051a74f3f931139c0de7224
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: 353c18affa41e56501a76bf695f95cbe95796e99
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728838"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203468"
 ---
-# <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Impostazioni relative alla modalità tutto schermo per Windows 10 e versioni successive in Intune
+# <a name="windows-10-and-later-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per l'esecuzione come chiosco multimediale dedicato tramite Intune
 
-Nei dispositivi Windows 10 è possibile usare Intune per l'esecuzione di questi dispositivi in modalità tutto schermo. Nella modalità tutto schermo (nota anche come chiosco multimediale) è possibile eseguire un'app o molte app. È anche possibile visualizzare e personalizzare un menu Start, aggiungere app diverse, incluse app Win32, aggiungere una specifica home page per un Web browser e molto altro. 
+Nei dispositivi Windows 10 usare Intune per eseguire i dispositivi come chiosco multimediale, talvolta noto anche come dispositivo dedicato. Un dispositivo nella modalità tutto schermo può eseguire un'app o molte app. È possibile visualizzare e personalizzare un menu Start, aggiungere app diverse, incluse app Win32, aggiungere una specifica home page per un Web browser e molto altro. 
 
-Usare le procedure descritte in questo articolo per creare un chiosco multimediale con una singola app o con più app in Intune.
+Questo articolo descrive le diverse impostazioni che è possibile controllare nei dispositivi Windows 10 e versioni successive. Usare queste impostazioni nella propria soluzione di gestione di dispositivi mobili (MDM) per configurare i dispositivi Windows 10 da eseguire in modalità tutto schermo.
 
 Intune supporta un profilo in modalità a tutto schermo per ogni dispositivo. Se servono più profili per la modalità tutto schermo in un singolo dispositivo, è possibile usare un [OMA-URI personalizzato](custom-settings-windows-10.md).
 
+## <a name="before-you-begin"></a>Prima di iniziare
+
+[Creare un profilo di configurazione del dispositivo](device-profile-create.md).
+
 ## <a name="kiosk-settings"></a>Impostazioni della modalità tutto schermo
 
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
+1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi** > filtrare per **Intune** > selezionare **Microsoft Intune**.
 2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
-3. Immettere le seguenti proprietà:
+3. Immettere le proprietà seguenti:
 
    - **Nome**: immettere un nome descrittivo per il nuovo profilo.
-   - **Descrizione:** immettere una descrizione per il profilo. Questa impostazione è facoltativa ma consigliata.
+   - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
    - **Piattaforma**: selezionare **Windows 10 e versioni successive**
-   - **Tipo di profilo**: selezionare **Modalità tutto schermo (anteprima)**
+   - **Tipo di profilo**: selezionare **Modalità tutto schermo**
 
 4. Selezionare una **modalità tutto schermo**. La **modalità tutto schermo** identifica il tipo di modalità tutto schermo supportata dal criterio. Le opzioni includono:
 
@@ -63,7 +67,7 @@ Quando si sceglie la modalità App singola per chiosco multimediale a schermo in
 
     Selezionare **OK** per salvare le modifiche.
 
-- **Impostazioni del browser in modalità tutto schermo**: queste impostazioni consentono di controllare un'app Web browser nel dispositivo in modalità tutto schermo. Assicurarsi di ottenere l'[app browser in modalità tutto schermo](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) dallo Store, aggiungerla a Intune come [app client](apps-add.md) e quindi assegnare l'app ai dispositivi in modalità tutto schermo.
+- **Impostazioni del browser in modalità tutto schermo**: Queste impostazioni controllano un'app Web browser in modalità tutto schermo. Assicurarsi di ottenere l'[app browser in modalità tutto schermo](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) dallo Store, aggiungerla a Intune come [app client](apps-add.md) e quindi assegnare l'app ai dispositivi in modalità tutto schermo.
 
   Immettere le impostazioni seguenti:
 
@@ -96,38 +100,38 @@ Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app c
 
 Quando si sceglie la modalità tutto schermo per più app, immettere le impostazioni seguenti:
 
-- **Specifica Windows 10 come destinazione nei dispositivi in modalità S**: scegliere **Sì** per consentire le app dello Store e le app AUMID (sono escluse le app Win32) nel profilo in modalità tutto schermo. Scegli **No** per consentire le app dello Store, le app Win32 e le app AUMID nel profilo in modalità tutto schermo. Quando si sceglie **No**, questo profilo in modalità tutto schermo non viene distribuito nei dispositivi in modalità S.
+- **Specifica Windows 10 come destinazione nei dispositivi in modalità S**: scegliere **Sì** per consentire le app dello Store e le app AUMID (escluse le app Win32) nel profilo in modalità tutto schermo. Scegli **No** per consentire le app dello Store, le app Win32 e le app AUMID nel profilo in modalità tutto schermo. Quando si sceglie **No**, questo profilo in modalità tutto schermo non viene distribuito nei dispositivi in modalità S.
 
 - **Tipo di accesso utente**: le app aggiunte vengono eseguite con l'account utente immesso. Le opzioni disponibili sono:
 
   - **Accesso automatico (Windows 10, versione 1803+)**: per i dispositivi in modalità tutto schermo in ambienti pubblici che non richiedono all'utente di eseguire l'accesso, in modo simile a un account guest. Questa impostazione usa il [provider di servizi di configurazione AssignedAccess](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
-  - **Account utente locale**: **aggiungere** l'account utente locale (per il dispositivo). L'account specificato viene usato per accedere al chiosco multimediale.
-  - **Utente o gruppo di Azure AD (Windows 10, versione 1803+)**: selezionare **Aggiungi** per scegliere gli utenti o i gruppi di Azure nell'elenco. È possibile selezionare più utenti e gruppi. Scegliere **OK** per salvare le modifiche.
+  - **Account utente locale**: scegliere **Aggiungi** per l'account utente locale (per il dispositivo). L'account specificato viene usato per accedere al chiosco multimediale.
+  - **Utente o gruppo di Azure AD (Windows 10, versione 1803+)**: Selezionare **Aggiungi** per scegliere utenti o gruppi di Azure AD nell'elenco. È possibile selezionare più utenti e gruppi. Scegliere **OK** per salvare le modifiche.
   - **Visitatore di HoloLens**: l'account del visitatore è un account Guest che non richiede credenziali utente o autenticazione, come descritto in [Concetti della modalità PC condiviso](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 - **Applicazioni**: aggiungere le app da eseguire nel dispositivo in modalità tutto schermo. Ricordarsi che è possibile aggiungere più app.
 
   - **Aggiungi l'app dello Store**: aggiungere un'app da Microsoft Store per le aziende. Se l'elenco non include alcuna app, è possibile ottenerle e [aggiungerle a Intune](store-apps-windows.md). Ad esempio, è possibile aggiungere un browser in modalità tutto schermo, Excel, OneNote e altro ancora.
 
-  - **Aggiungi un'app di Win32**: un'app Win32 è un'app desktop tradizionale, ad esempio Visual Studio Code o Google Chrome. Immettere le seguenti proprietà:
+  - **Aggiungi un'app di Win32**: un'app Win32 è un'app desktop tradizionale, ad esempio Visual Studio Code o Google Chrome. Immettere le proprietà seguenti:
 
-    - **Nome applicazione**: obbligatorio. Immettere un nome per l'applicazione.
-    - **Percorso locale**: obbligatorio. Immettere il percorso del file eseguibile, ad esempio `C:\Program Files (x86)\Microsoft VS Code\Code.exe` o `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-    - **ID modello utente applicazione (AUMID)**: immettere l'ID modello utente applicazione dell'app Win32. Questa impostazione determina il layout iniziale del riquadro sul desktop. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
-    - **Dimensioni del riquadro**: obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
+    - **Nome applicazione**: Obbligatorio. Immettere un nome per l'applicazione.
+    - **Percorso locale**: Obbligatorio. Immettere il percorso del file eseguibile, ad esempio `C:\Program Files (x86)\Microsoft VS Code\Code.exe` o `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
+    - **ID modello utente applicazione (AUMID)**: Immettere l'ID modello utente applicazione (AUMID) dell'app Win32. Questa impostazione determina il layout iniziale del riquadro sul desktop. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
+    - **Dimensioni del riquadro**: Obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
   
-  - **Aggiungi in base all'ID modello utente applicazione**: usare questa opzione per aggiungere app predefinite di Windows come il Blocco note o la Calcolatrice. Immettere le seguenti proprietà: 
+  - **Aggiungi in base all'ID modello utente applicazione**: usare questa opzione per aggiungere app predefinite di Windows come il Blocco note o la Calcolatrice. Immettere le proprietà seguenti: 
 
-    - **Nome applicazione**: obbligatorio. Immettere un nome per l'applicazione.
-    - **ID modello utente applicazione (AUMID)**: obbligatorio. Immettere l'ID modello utente applicazione (AUMID) dell'app Windows. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
-    - **Dimensioni del riquadro**: obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
+    - **Nome applicazione**: Obbligatorio. Immettere un nome per l'applicazione.
+    - **ID modello utente applicazione (AUMID)**: Obbligatorio. Immettere l'ID modello utente applicazione (AUMID) dell'app Windows. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
+    - **Dimensioni del riquadro**: Obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
 
   > [!TIP]
   > Dopo aver aggiunto tutte le app, è possibile modificarne l'ordine di visualizzazione facendo clic e trascinando le app nell'elenco.  
 
   Selezionare **OK** per salvare le modifiche.
 
-- **Impostazioni del browser in modalità tutto schermo**: queste impostazioni consentono di controllare un'app Web browser nel dispositivo in modalità tutto schermo. Assicurarsi di distribuire un'app Web browser ai dispositivi in modalità tutto schermo usando [App client](apps-add.md).
+- **Impostazioni del browser in modalità tutto schermo**: Queste impostazioni controllano un'app Web browser in modalità tutto schermo. Assicurarsi di distribuire un'app Web browser ai dispositivi in modalità tutto schermo usando [App client](apps-add.md).
 
   Immettere le impostazioni seguenti:
 
@@ -173,30 +177,28 @@ Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app c
 
 - **Specifica Windows 10 come destinazione nei dispositivi in modalità S**: scegliere **No**. La modalità S non è supportata in Windows Holographic for Business.
 
-- **Tipo di accesso utente**: aggiungere uno o più account utente autorizzati a usare le app aggiunte. Le opzioni disponibili sono: 
+- **Tipo di accesso utente**: aggiungere uno o più account utente che possano usare le app aggiunte. Le opzioni disponibili sono: 
 
-  - **Accesso automatico**: opzione non supportata in Windows Holographic for Business.
-  - **Account utente locale**: scegliere **Aggiungi** per aggiungere l'account utente locale (per il dispositivo). L'account specificato viene usato per accedere al chiosco multimediale.
-  - **Utente o gruppo di Azure AD (Windows 10, versione 1803+)**: richiede le credenziali utente per accedere al dispositivo. Selezionare **Aggiungi** per scegliere utenti o gruppi di Azure AD nell'elenco. È possibile selezionare più utenti e gruppi. Scegliere **OK** per salvare le modifiche.
+  - **Accesso automatico**: non supportato in Windows Holographic for Business.
+  - **Account utente locali**: scegliere **Aggiungi** per l'account utente locale (per il dispositivo). L'account specificato viene usato per accedere al chiosco multimediale.
+  - **Utente o gruppo di Azure AD (Windows 10, versione 1803+)**: richiede credenziali utente per l'accesso al dispositivo. Selezionare **Aggiungi** per scegliere utenti o gruppi di Azure AD nell'elenco. È possibile selezionare più utenti e gruppi. Scegliere **OK** per salvare le modifiche.
   - **Visitatore di HoloLens**: l'account del visitatore è un account Guest che non richiede credenziali utente o autenticazione, come descritto in [Concetti della modalità PC condiviso](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 - **Applicazioni**: aggiungere le app da eseguire nel dispositivo in modalità tutto schermo. Ricordarsi che è possibile aggiungere più app.
 
   - **Aggiungi l'app dello Store**: selezionare un'app esistente aggiunta tramite [App client](apps-add.md). Se l'elenco non include alcuna app, è possibile ottenerle e [aggiungerle a Intune](store-apps-windows.md).
-  - **Aggiungi app di Win32**: opzione non supportata in Windows Holographic for Business.
-  - **Aggiungi in base all'ID modello utente applicazione**: usare questa opzione per aggiungere app predefinite di Windows. Immettere le seguenti proprietà: 
+  - **Aggiungi un'app di Win32**: non supportato in Windows Holographic for Business.
+  - **Aggiungi in base all'ID modello utente applicazione**: usare questa opzione per aggiungere app predefinite di Windows. Immettere le proprietà seguenti: 
 
-    - **Nome applicazione**: obbligatorio. Immettere un nome per l'applicazione.
-    - **ID modello utente applicazione (AUMID)**: obbligatorio. Immettere l'ID modello utente applicazione (AUMID) dell'app Windows. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
-    - **Dimensioni del riquadro**: obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
+    - **Nome applicazione**: Obbligatorio. Immettere un nome per l'applicazione.
+    - **ID modello utente applicazione (AUMID)**: Obbligatorio. Immettere l'ID modello utente applicazione (AUMID) dell'app Windows. Per ottenere questo ID, vedere [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Trovare l'ID modello utente dell'applicazione di un'app installata) per ottenere l'ID.
+    - **Dimensioni del riquadro**: Obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
 
-- **Impostazioni del browser in modalità tutto schermo**: opzione non supportata in Windows Holographic for Business.
+- **Impostazioni del browser in modalità tutto schermo**: non supportato in Windows Holographic for Business.
 
 - **Usa un layout Start alternativo**: scegliere **Sì** per immettere un file XML che descrive come le app vengono visualizzate nel menu Start, incluso il relativo ordine. Usare questa opzione se è necessaria una maggiore personalizzazione nel menu Start. [Personalizzare ed esportare il layout della schermata Start](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) offre alcune indicazioni e include un file XML specifico per i dispositivi Windows Holographic for Business.
 
-- **Barra delle applicazioni di Windows**: opzione non supportata in Windows Holographic for Business.
-
-
+- **Barra delle applicazioni di Windows**: non supportato in Windows Holographic for Business.
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).

@@ -1,41 +1,46 @@
 ---
-title: Firma e crittografia S/MIME della posta elettronica - Azure | Microsoft Docs
-description: Usare o abilitare S/MIME per firmare e crittografare i messaggi di posta elettronica in Microsoft Intune
+title: Firmare e crittografare la posta elettronica usando S/MIME - Microsoft Intune - Azure | Microsoft Docs
+description: Informazioni su come usare i certificati digitali di posta elettronica in Microsoft Intune per firmare e crittografare i messaggi di posta elettronica nei dispositivi. Questi certificati vengono chiamati S/MIME e vengono configurati usando profili di configurazione. I certificati di firma e crittografia usano PKCS o i certificati privati e un connettore per importare i certificati.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/21/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: eaa85870b289bb3b65ce997d8610324f43d69452
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: 0339be98bf045d280912bf88e88b5ba544b0a1f4
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185645"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203128"
 ---
-# <a name="smime-email-signing-and-encryption-in-intune"></a>Firma e crittografia S/MIME della posta elettronica in Intune
+# <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Panoramica di S/MIME per firmare e crittografare la posta elettronica in Intune
 
-> [!IMPORTANT]
-> Sono in corso alcuni miglioramenti alla funzionalità S/MIME descritti in questo articolo. Di conseguenza, la funzionalità S/MIME viene temporaneamente rimossa in Intune. Quando questa funzionalità viene rilasciata, questa nota verrà rimossa.
+I certificati di posta elettronica, noti anche come certificati S/MIME, forniscono sicurezza aggiuntiva per le comunicazioni di posta elettronica tramite la crittografia e la decrittografia. Microsoft Intune può usare i certificati S/MIME per firmare e crittografare i messaggi di posta elettronica destinati a dispositivi mobili che eseguono le piattaforme seguenti:
 
-S/MIME offre un livello di sicurezza aggiuntivo per le comunicazioni via posta elettronica tramite l'impiego della crittografia e della decrittografia. Microsoft Intune può usare S/MIME per firmare e crittografare i messaggi di posta elettronica destinati a dispositivi mobili che eseguono iOS, Windows, Windows Phone, Android e macOS.
+- Android
+- iOS
+- macOS
+- Windows 10 e versioni successive
+- Windows Phone
 
-Nei dispositivi iOS è possibile creare un profilo di posta elettronica gestito da Intune che usa S/MIME e certificati per firmare e crittografare i messaggi di posta elettronica in ingresso e in uscita. Per altre piattaforme, S/MIME può essere supportato o meno. Se è supportato, è possibile installare certificati che usano la firma e la crittografia S/MIME e l'utente finale può abilitare S/MIME nella propria applicazione di posta elettronica.
+Nei dispositivi iOS è possibile creare un profilo di posta elettronica gestito da Intune che usa S/MIME e certificati per firmare e crittografare i messaggi di posta elettronica in ingresso e in uscita. Per altre piattaforme, S/MIME può essere supportato o meno. Se è supportato, installare certificati che usano la firma e la crittografia S/MIME. L'utente finale può quindi abilitare S/MIME nella propria applicazione di posta elettronica.
 
-Per altre informazioni sulla firma e sulla crittografia S/MIME della posta elettronica, vedere [S/MIME per la crittografia e la firma dei messaggi](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+Per ulteriori informazioni sulla firma e la crittografia dei messaggi di posta elettronica tramite S/MIME con Exchange, vedere [S/MIME per la crittografia e firma dei messaggi](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+
+Questo articolo offre una panoramica dell'uso dei certificati S/MIME per firmare e crittografare i messaggi di posta elettronica nei dispositivi.
 
 ## <a name="signing-certificates"></a>Certificati di firma
 
 I certificati usati per la firma consentono all'app client di posta elettronica di comunicare in modo protetto con il server di posta elettronica.
 
-Per usare certificati di firma, creare nell'autorità di certificazione un modello basato sulla firma. Nell'autorità di certificazione di Microsoft Active Directory, [Configurare il modello di certificato del server](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) elenca i passaggi necessari per creare modelli di certificato.
+Per usare certificati di firma, creare nell'autorità di certificazione (CA) un modello basato sulla firma. Nell'autorità di certificazione di Microsoft Active Directory, [Configurare il modello di certificato del server](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) elenca i passaggi necessari per creare modelli di certificato.
 
 I certificati di firma in Intune usano certificati PKCS. [Configurare e usare i certificati PKCS](certficates-pfx-configure.md) descrive come distribuire e usare i certificati PKCS nell'ambiente Intune in uso. Questi passaggi includono:
 
@@ -71,3 +76,10 @@ Per distribuire un certificato PKCS importato in Intune da usare per la crittogr
 ## <a name="smime-email-profiles"></a>Profili di posta elettronica S/MIME
 
 Dopo aver creato profili certificato di firma e crittografia S/MIME, è possibile [abilitare S/MIME per la posta elettronica nativa di iOS](email-settings-ios.md).
+
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Usare i certificati SCEP](certificates-scep-configure.md)
+- [Usare i certificati PKCS](certficates-pfx-configure.md)
+- [Usare un’autorità di certificazione partner](certificate-authority-add-scep-overview.md)
+- [Rilasciare certificati PKCS da un servizio Web di gestione PKI Symantec](certificates-symantec-configure.md)

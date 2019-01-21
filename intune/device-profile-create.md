@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +15,27 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6bc6f5d2f32ff060eb2eec568b0048628ad0e09c
-ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
+ms.openlocfilehash: cb6e3f0a9f62348d55b5dc2284c1007ea7faf088
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303856"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203213"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creare un profilo di dispositivo in Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>Creare il profilo
-1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi** e cercare **Microsoft Intune**.
 
-2. In **Microsoft Intune** selezionare **Configurazione del dispositivo** e quindi **Profili**. Selezionare quindi **Crea profilo**.
+1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
 
-3. Immettere le seguenti proprietà:
+2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+
+3. Immettere le proprietà seguenti:
 
    - **Nome**: immettere un nome descrittivo per il nuovo profilo.
-   - **Descrizione:** immettere una descrizione per il profilo. Facoltativa, ma consigliata.
+   - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
    - **Piattaforma**: selezionare il tipo di piattaforma:  
 
        - **Android**
@@ -46,7 +47,7 @@ ms.locfileid: "52303856"
        - **Windows 10 e versioni successive**
 
    - **Tipo di profilo**: selezionare il tipo di profilo che si vuole creare. L'elenco dipende dalla piattaforma scelta.
-   - **Impostazioni**: gli argomenti seguenti descrivono le impostazioni per ogni tipo di profilo:
+   - **Impostazioni**: Gli articoli seguenti descrivono le impostazioni per ogni tipo di profilo:
 
        -  [Funzionalità dei dispositivi](device-features-configure.md)
        -  [Restrizioni dei dispositivi](device-restrictions-configure.md)

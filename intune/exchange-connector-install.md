@@ -15,12 +15,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 3e66dd3d77cc36a6d311afea82e0f2087b469495
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817263"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239592"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurare Intune On-Premises Exchange Connector in Azure
 
@@ -78,7 +78,7 @@ La tabella seguente elenca i requisiti per il computer in cui viene installato E
 
 4. In **Installazione** scegliere **Connettori per Exchange ActiveSync** e quindi scegliere **Scaricare il connettore locale**.
 
-5.  Exchange Connector locale è contenuto in una cartella compressa ( con estensione zip) che può essere aperta o salvata. Nella finestra di dialogo **Download del file** scegliere **Salva** per archiviare la cartella compressa in una posizione protetta.
+5.  Exchange Connector locale è contenuto in una cartella compressa (con estensione zip) che può essere aperta o salvata. Nella finestra di dialogo **Download del file** scegliere **Salva** per archiviare la cartella compressa in una posizione protetta.
 
     > [!IMPORTANT]
     > Non rinominare o spostare file all'interno della cartella di Exchange Connector locale. Se si sposta o si rinomina il contenuto della cartella, l'installazione di Exchange Connector viene interrotta.
@@ -116,15 +116,15 @@ Per installare Intune On-Premises Exchange Connector seguire questa procedura. S
 
        4. Scegliere **OK**.
 
-   5. Nei campi **Utente (dominio\utente)** e **Password** immettere le credenziali necessarie per la connessione al server Exchange.
+4. Nei campi **Utente (dominio\utente)** e **Password** immettere le credenziali necessarie per la connessione al server Exchange.
 
-   6.  Specificare le credenziali necessarie per inviare le notifiche alla cassetta postale di Exchange Server di un utente. L'utente può essere dedicato solo alle notifiche. Perché l'utente delle notifiche sia in grado di inviare notifiche tramite posta elettronica, deve avere una cassetta postale di Exchange. È possibile configurare queste notifiche con i criteri di accesso condizionale in Intune.  
+5. Specificare le credenziali necessarie per inviare le notifiche alla cassetta postale di Exchange Server di un utente. L'utente può essere dedicato solo alle notifiche. Perché l'utente delle notifiche sia in grado di inviare notifiche tramite posta elettronica, deve avere una cassetta postale di Exchange. È possibile configurare queste notifiche con i criteri di accesso condizionale in Intune.  
 
-       Verificare che il servizio di individuazione automatica e i servizi Web Exchange siano configurati nel server Accesso client di Exchange. Per altre informazioni, vedere [Server Accesso client](https://technet.microsoft.com/library/dd298114.aspx).
+       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
-   7.  Nel campo **Password** specificare la password per questo account, per abilitare Intune all'accesso a Exchange Server.
+6. Nel campo **Password** specificare la password per questo account, per abilitare Intune all'accesso a Exchange Server.
 
-   8. Scegliere **Connetti**.
+7. Scegliere **Connetti**.
 
    > [!NOTE]
    > La configurazione della connessione può richiedere alcuni minuti.
@@ -157,9 +157,9 @@ Dopo aver configurato correttamente Exchange Connector è possibile visualizzare
 
 È inoltre possibile verificare la data e ora dell'ultimo tentativo di sincronizzazione riuscito.
 
-### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) Management Pack
+### <a name="system-center-operations-manager-management-pack"></a>System Center Operations Manager Management Pack
 
-A partire dalla versione 1710 di Intune, è possibile usare [SCOM Management Pack per Exchange Connector e Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True), che consente di eseguire il monitoraggio di Exchange Connector in diversi modi quando è necessario risolvere i problemi.
+A partire dalla versione 1710 di Intune, è possibile usare [Operations Manager Management Pack per Exchange Connector e Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True), che consente di eseguire il monitoraggio di Exchange Connector in diversi modi quando è necessario risolvere i problemi.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Forzare manualmente una sincronizzazione rapida o una sincronizzazione completa
 Exchange Connector locale sincronizza automaticamente EAS e i record dei dispositivi Intune a intervalli regolari. Se viene modificato lo stato di conformità di un dispositivo, il processo di sincronizzazione automatica aggiorna periodicamente i record, in modo che l'accesso al dispositivo possa essere bloccato o consentito di conseguenza.

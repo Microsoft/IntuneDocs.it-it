@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c09a80f97056f7cb08d69d6a8deedc4e421a556
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 37483f0fa33db109510ee537772a7bdead79e4f3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190303"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203553"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti aziendali
 
@@ -248,7 +248,7 @@ Nella tabella Errori di registrazione sono elencati i tentativi di registrazione
 | Avvio della registrazione | L'ora in cui l'utente ha iniziato la registrazione. |
 | Sistema operativo | Sistema operativo del dispositivo. |
 | Versione sistema operativo | Versione del sistema operativo del dispositivo. |
-| Operazioni non riuscite | Motivo dell'errore. |
+| Errore | Motivo dell'errore. |
 
 ### <a name="failure-details"></a>Dettagli errore
 
@@ -271,6 +271,15 @@ Quando si sceglie la riga di un errore, vengono forniti ulteriori dettagli.
 | Enrollment authorization failed (Autorizzazione di registrazione non riuscita) | È stata tentata una registrazione utilizzando una versione precedente del portale aziendale. |
 | Dispositivo non supportato | Il dispositivo non soddisfa i requisiti minimi per la registrazione in Intune. |
 | Le restrizioni della registrazione non sono state rispettate | Questa registrazione è stata bloccata a causa di una restrizione di registrazione configurata dall'amministratore. |
+| Versione del dispositivo troppo bassa | L'amministratore ha configurato una restrizione a livello di registrazione che richiede una versione successiva del dispositivo. |
+| Versione del dispositivo troppo alta | L'amministratore ha configurato una restrizione a livello di registrazione che richiede una versione precedente del dispositivo. |
+| Il dispositivo non può essere registrato come dispositivo personale | L'amministratore ha configurato una restrizione a livello di registrazione che blocca le iscrizioni personali e il dispositivo in errore non è configurato come dispositivo aziendale. |
+| Piattaforma del dispositivo bloccata | L'amministratore ha configurato una restrizione a livello di registrazione che blocca la piattaforma del dispositivo. |
+| Token di massa scaduto | Il token di massa nel pacchetto di provisioning è scaduto. |
+| Non sono stati trovati dettagli o dispositivo di AutoPilot | Quando si tenta di eseguire la registrazione, il dispositivo di Autopilot non viene rilevato. |
+| Profilo di Autopilot non trovato o non assegnato | Il dispositivo non ha un profilo di Autopilot attivo. |
+| Metodo di registrazione di Autopilot imprevisto | Il dispositivo ha cercato di registrarsi con un metodo non consentito. |
+| Dispositivo di AutoPilot rimosso | Il dispositivo che ha eseguito un tentativo di registrazione è stato rimosso da Autopilot per questo account. |
 | Numero massimo dispositivi raggiunto | Questa registrazione è stata bloccata a causa di una restrizione del limite di dispositivi configurata dall'amministratore. |
 | Onboarding di Apple | La registrazione di tutti i dispositivi iOS è stata bloccata a causa di un certificato push MDM Apple mancante o scaduto in Intune. |
 | Il dispositivo non è preregistrato | Il dispositivo non è stato preregistrato come aziendale e tutte le registrazioni personali sono state bloccate da un amministratore. |

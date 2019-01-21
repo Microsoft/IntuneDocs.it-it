@@ -1,12 +1,12 @@
 ---
-title: Impostazioni di configurazione dei dispositivi di Microsoft Intune condivisi per iOS
+title: Personalizzare la schermata di blocco nei dispositivi iOS con Microsoft Intune - Azure | Microsoft Docs
 titlesuffix: ''
-description: Informazioni sulle impostazioni di Microsoft Intune che consentono di visualizzare informazioni nella schermata di blocco del dispositivo iOS.
+description: Informazioni sulle impostazioni di Microsoft Intune che consentono di visualizzare informazioni nella schermata di blocco dei dispositivi iOS tramite le impostazioni di configurazione dei dispositivi condivisi per iOS.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,34 +14,41 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 638b4b3ebc83917faae0d34ec407b8ad47b4a4fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9f4d75d795421c761398f349c324b498fd21ca01
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183384"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203077"
 ---
-# <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>Impostazioni di configurazione del dispositivo condiviso per la visualizzazione di messaggi nella schermata di blocco del dispositivo iOS
+# <a name="add-custom-messages-to-lock-screen-and-login-window-on-ios-devices-using-microsoft-intune"></a>Aggiungere messaggi personalizzati alla schermata di blocco e alla finestra di accesso nei dispositivi iOS con Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-L'articolo illustra le impostazioni di Microsoft Intune che consentono di visualizzare informazioni nella schermata di blocco del dispositivo iOS.
+Questo articolo illustra le impostazioni di Microsoft Intune che consentono di visualizzare informazioni nella schermata di blocco e nella finestra di accesso. 
 
-Le impostazioni di configurazione del dispositivo condiviso consentono di specificare testo facoltativo visualizzabile nella finestra di accesso e nella schermata di blocco. Ad esempio, è possibile immettere il messaggio "In caso di ritrovamento, restituire a" e informazioni sui tag asset. 
+Usare queste impostazioni per visualizzare un messaggio o un testo personalizzato nella finestra di accesso e nella schermata di blocco. È ad esempio possibile immettere il messaggio "In caso di ritrovamento, restituire a" e informazioni sul tag asset.
 
->[!IMPORTANT]
-> Questa funzionalità è supportata sui dispositivi con supervisione che eseguono iOS 9.3 e versioni successive.
+Queste impostazioni supportano dispositivi con supervisione che eseguono iOS 9.3 e versioni successive.
 
-## <a name="create-shared-device-settings"></a>Creare impostazioni per il dispositivo condiviso
+## <a name="create-the-profile"></a>Creare il profilo
 
-1. Da [Intune nel portale di Azure](https://portal.azure.com) passare a [**Funzionalità del dispositivo** nell'area di configurazione del dispositivo](device-features-configure.md). 
-1. Nel riquadro **Funzionalità del dispositivo** scegliere **Configurazione del dispositivo condiviso (solo con supervisione)**.
-2. Nel riquadro **Configurazione del dispositivo condiviso (solo con supervisione)** configurare le impostazioni seguenti:
-    - **Informazioni sui tag asset**: immettere informazioni sul tag asset del dispositivo. Ad esempio: **Proprietà di Contoso Corp**. Le informazioni immesse vengono applicate a tutti i dispositivi ai quali viene assegnato questo profilo.
-    - **Nota a piè di pagina della schermata di blocco**: immettere una nota che può contribuire alla restituzione del dispositivo in caso di furto o smarrimento. Ad esempio: **In caso di ritrovamento, chiamare "numero"**.
-3. Al termine, scegliere **OK** fino a tornare al riquadro **Crea profilo** e scegliere **Crea**. 
+1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
+2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+3. Immettere un **Nome** e una **Descrizione** per il profilo.
+4. In **Piattaforma** selezionare **iOS**. In **Tipo di profilo** selezionare **Funzionalità del dispositivo**.
+5. In **Impostazioni** selezionare **Messaggio della schermata di blocco (solo con supervisione)**. Configurare le seguenti impostazioni:
 
+    - **Informazioni sui tag asset**: immettere informazioni sul tag asset del dispositivo. Immettere ad esempio `123xyz`.
+
+        Il testo immesso viene visualizzato nella finestra di accesso e nella schermata di blocco di accesso del dispositivo.
+
+    - **Nota a piè di pagina della schermata di blocco**: immettere una nota che può contribuire alla restituzione del dispositivo in caso di furto o smarrimento. In questo campo è possibile immettere qualsiasi testo. Ad esempio, `If found, call Contoso at ...`.
+
+    Per aggiungere informazioni specifiche del dispositivo in questi campi è anche possibile usare token di dispositivo. Per visualizzare, ad esempio, il numero di serie, immettere `Serial Number: {{serialnumber}}`. Nella schermata di blocco il testo è simile a `Serial Number 123456789ABC`. Quando si immettono le variabili, assicurarsi di usare le parentesi graffe `{{ }}`. I [token di configurazione delle app](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) includono un elenco delle variabili che è possibile usare. È anche possibile usare `deviceName` o qualsiasi altro valore specifico del dispositivo.
+
+6. Al termine, selezionare **OK** > **OK** > **Crea**. Il profilo viene visualizzato nell'elenco.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-È ora possibile assegnare il profilo del dispositivo ai gruppi selezionati. Per informazioni dettagliate, vedere [How to assign device profiles](device-profile-assign.md) (Come assegnare profili di dispositivo).
+Il profilo è stato creato, ma non è ancora operativo. [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).

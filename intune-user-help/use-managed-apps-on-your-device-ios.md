@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147503"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203264"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usare le app gestite nel dispositivo iOS
 
@@ -34,7 +34,7 @@ Quando si accede ai dati aziendali in un'app gestita, viene visualizzato un mess
 
 ![gestite-apps-messaggio-ios](./media/managed-apps-message.png)
 
-### <a name="how-do-i-get-managed-apps"></a>Come si ottengono le app gestite?
+## <a name="how-do-i-get-managed-apps"></a>Come si ottengono le app gestite?  
 Le app gestite possono essere installate in due modi:
 
 -   Quando il dispositivo viene registrato in Microsoft Intune, è possibile installare l'app dall'app Portale aziendale o dal sito Web del portale aziendale oppure l'installazione nel dispositivo può essere eseguita dal supporto tecnico dell'azienda. Per informazioni sulla registrazione, vedere [Registrare il dispositivo iOS in Intune](enroll-your-device-in-intune-ios.md) o [Registrare il dispositivo macOS in Intune](enroll-your-device-in-intune-macos.md).
@@ -43,7 +43,16 @@ Le app gestite possono essere installate in due modi:
 
 È possibile a volte che il supporto tecnico dell'azienda acquisti più licenze per un'app installata. Se viene visualizzato un messaggio in cui viene richiesto di accettare il contratto di Volume Purchase Program di Apple, accettare il programma. Se non lo si accetta, non sarà possibile installare l'app.
 
-### <a name="what-can-my-company-support-manage-in-an-app"></a>Che cosa può gestire il supporto tecnico dell'azienda in un'app?
+## <a name="available-apps"></a>App disponibili   
+ L'organizzazione seleziona le app utili e appropriate per l'utente all’interno dell’azienda o dell'istituto di istruzione. Queste app sono le uniche disponibili nel portale aziendale.   
+
+ Le app sono inoltre disponibili in base al tipo di dispositivo. Ad esempio, se si usa l'app Portale aziendale per iOS, si avrà accesso alle app per iOS, non alle app per Android.   
+
+## <a name="request-an-app-for-work-or-school"></a>Richiedere un'app per l'azienda o per l'istituto di istruzione   
+ Se un’app necessaria non è disponibile nell’app Portale aziendale, è possibile richiederla. Trovare i dettagli di contatto per il **supporto tecnico** nella scheda **Supporto tecnico** dell'app Portale aziendale. Le stesse informazioni di contatto sono disponibili anche nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).   
+ 
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>Che cosa può gestire il supporto tecnico dell'azienda in un'app?  
 Di seguito sono riportati alcuni esempi di opzioni che il supporto tecnico dell'azienda può gestire in un'app e che possono influire sulle interazioni con i dati aziendali nel dispositivo:
 
 -   Accesso a specifici siti Web

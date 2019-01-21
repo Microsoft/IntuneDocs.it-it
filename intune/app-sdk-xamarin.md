@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: d8e9dd1e38fdc693bd30372f2961244e4e809771
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a698d7a57c59a27dbd39036b1e2607e80570029f
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180341"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210772"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Binding Xamarin per Microsoft Intune App SDK
 
@@ -55,6 +55,8 @@ Le app Xamarin compilate con i binding Xamarin per Intune App SDK possono ora ri
 Leggere le [condizioni di licenza](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf). Stampare e conservare una copia delle condizioni di licenza. Scaricando e usando i binding Xamarin per Intune App SDK, l'utente accetta tali condizioni di licenza. Se non vengono accettate, non usare il software.
 
 L'SDK si basa su [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) per gli scenari di [autenticazione](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) e avvio condizionale, che richiedono la configurazione delle app con [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
+
+Se l’applicazione è già configurata per l’uso di ADAL o MSAL e se per l’autenticazione con Azure Active Directory viene utilizzato il relativo ID client personalizzato, attenersi alla procedura per assegnare le autorizzazioni dell’app Xamarin al servizio Gestione di applicazioni mobili di Intune (MAM). Usare le istruzioni riportate nella sezione [Concedere all'app l'accesso al servizio di protezione delle app di Intune](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional) in [Introduzione a Microsoft Intune SDK](app-sdk-get-started.md).
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>Abilitazione dei criteri di protezione delle app di Intune nell'app per dispositivi mobili iOS
 1. Aggiungere il [pacchetto Microsoft.Intune.MAM.Xamarin.iOS NuGet](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) al progetto Xamarin.iOS.
@@ -121,9 +123,6 @@ Le operazioni principali per la compilazione del componente nell'app sono state 
 ## <a name="requiring-intune-app-protection-policies-in-order-to-use-your-xamarin-based-android-lob-app-optional"></a>Richiesta di criteri di protezione delle app di Intune per l'uso dell'app di Android LOB basata su Xamarin (facoltativo) 
 
 Il materiale sussidiario offerto di seguito consente di verificare che le app di Android LOB basate su Xamarin possano essere usate solo dagli utenti protetti da Intune sul loro dispositivo. 
-
-### <a name="general-requirements"></a>Requisiti generali
-* Assicurarsi di seguire i passaggi per concedere le autorizzazioni delle app Xamarin al servizio dei criteri di protezione delle app. Usare le istruzioni in [Introduzione a Microsoft Intune App SDK](app-sdk-get-started.md#next-steps-after-integration) in "Concedere all'app l'accesso al servizio di protezione delle app di Intune (facoltativo)". 
     
 ### <a name="working-with-the-intune-sdk"></a>Uso di Intune SDK
 Queste istruzioni sono specifiche per tutte le app Android e Xamarin che richiederanno i criteri di protezione delle app Intune per l'uso nel dispositivo di un utente finale.

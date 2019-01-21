@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
+ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626085"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54098318"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Configurare la registrazione in Intune dei dispositivi in modalità tutto schermo Android Enterprise
 
@@ -112,7 +112,7 @@ Per i dispositivi Android 5.1 e versioni successive che supportano NFC, è possi
 
 ### <a name="enroll-by-using-a-token"></a>Registrare con un token
 
-Per i dispositivi Android 6 e versioni successive, è possibile usare il token per registrare il dispositivo. In Android 6.1 e versioni successive è anche possibile sfruttare la scansione del codice a matrice quando si usa il metodo di registrazione **aft#setup**.
+Per i dispositivi Android 6 e versioni successive, è possibile usare il token per registrare il dispositivo. In Android 6.1 e versioni successive è anche possibile sfruttare la scansione del codice a matrice quando si usa il metodo di registrazione **afw#setup**.
 
 1. Accendere il dispositivo cancellato.
 2. Nella schermata **Benvenuto** selezionare la lingua.

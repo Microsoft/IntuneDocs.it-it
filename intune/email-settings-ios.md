@@ -1,38 +1,41 @@
 ---
 title: Impostazioni di posta elettronica per dispositivi iOS in Microsoft Intune - Azure | Microsoft Docs
-description: Creare un profilo di posta elettronica di configurazione del dispositivo che usa server Exchange e recupera gli attributi da Azure Active Directory. È anche possibile abilitare SSL, autenticare gli utenti con certificati o nome utente/password e sincronizzare posta elettronica nei dispositivi iOS con Microsoft Intune.
+description: Vedere l'elenco di tutte le impostazioni di posta elettronica che è possibile configurare e aggiungere ai dispositivi iOS in Microsoft Intune, incluso l'uso dei server Exchange e il recupero degli attributi da Azure Active Directory. È anche possibile abilitare SSL, autenticare gli utenti con certificati o nome utente/password e sincronizzare posta elettronica nei dispositivi iOS usando i profili di configurazione dispositivo in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b3aa3e7a4cd79ab990afe7f02a1d6960bc66494a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: c54ccf5bba53d5d638f011d3bd0d308adf6cb013
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180188"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203366"
 ---
-# <a name="email-profile-settings-for-ios-devices---intune"></a>Impostazioni del profilo di posta elettronica per dispositivi iOS - Intune
+# <a name="email-profile-settings-for-ios-devices-in-intune"></a>Impostazioni del profilo di posta elettronica per dispositivi iOS con Intune
 
-Usare le impostazioni del profilo di posta elettronica per configurare i dispositivi che eseguono iOS.
+In Microsoft Intune è possibile creare e configurare la posta elettronica per connettersi a un server di posta elettronica, scegliere come si autenticano gli utenti, usare S/MIME per la crittografia e altro ancora.
 
-> [!IMPORTANT]
-> Sono in corso alcuni miglioramenti alla funzionalità S/MIME descritti in questo articolo. Di conseguenza, la funzionalità S/MIME viene temporaneamente rimossa in Intune. Quando questa funzionalità viene rilasciata, questa nota verrà rimossa.
+Questo articolo elenca e descrive tutte le impostazioni di posta elettronica disponibili per i dispositivi iOS. È possibile creare un profilo di configurazione del dispositivo per eseguire il push o la distribuzione delle impostazioni di posta elettronica nei dispositivi iOS.
+
+## <a name="before-you-begin"></a>Prima di iniziare
+
+[Creare un profilo di configurazione del dispositivo](email-settings-configure.md#create-a-device-profile).
 
 ## <a name="email-settings"></a>Impostazioni di posta elettronica
 
-- **Server di posta elettronica**: immettere il nome host del server Exchange.
-- **Nome account**: immettere il nome visualizzato per l'account di posta elettronica. Questo nome viene visualizzato nel dispositivo degli utenti.
+- **Server di posta elettronica**: immettere il nome host del server Exchange dell'azienda.
+- **Nome account**: immettere il nome visualizzato dell'account di posta elettronica. Questo nome viene visualizzato nel dispositivo degli utenti.
 - **Attributo nome utente da AAD**: questo nome è l'attributo che Intune ottiene da Azure Active Directory (AAD). Intune genera in modo dinamico il nome utente usato da questo profilo. Le opzioni disponibili sono:
-  - **Nome dell'entità utente**: ottiene il nome, ad esempio `user1` o `user1@contoso.com`
+  - **Nome entità utente**: ottiene il nome, ad esempio `user1` o `user1@contoso.com`
   - **Indirizzo SMTP primario**: ottiene il nome nel formato dell'indirizzo di posta elettronica, ad esempio `user1@contoso.com`
   - **Nome account SAM**: richiede il dominio, ad esempio `domain\user1`.
 
@@ -40,13 +43,13 @@ Usare le impostazioni del profilo di posta elettronica per configurare i disposi
     - **Origine del nome di dominio utente**: scegliere **AAD** (Azure Active Directory) o **Personalizzato**.
 
       Quando si sceglie di ottenere gli attributi da **AAD**, specificare:
-      - **Attributo nome di dominio utente da AAD**: scegliere di ottenere l'attributo **Nome completo** o **Nome NetBIOS** dell'utente
+      - **Attributo nome di dominio utente da AAD**: scegliere di ottenere l'attributo **Nome di dominio completo** o **Nome NetBIOS** dell'utente
 
       Quando si sceglie di usare attributi di tipo **Personalizzato**, specificare:
-      - **Nome di dominio personalizzato da usare**: immettere un valore usato da Intune per il nome dominio, ad esempio `contoso.com` o `contoso`
+      - **Nome di dominio personalizzato da usare**: immettere un valore usato da Intune per il nome di dominio, ad esempio `contoso.com` o `contoso`
 
-- **Email address attribute from AAD** (Attributo indirizzo di posta elettronica da AAD): scegliere la modalità di generazione dell'indirizzo di posta elettronica per l'utente. Selezionare **Nome dell'entità utente** (`user1@contoso.com` o `user1`) per usare il nome dell'entità utente completo come indirizzo di posta elettronica. Selezionare **Indirizzo SMTP primario** (`user1@contoso.com`) per usare l'indirizzo SMTP primario per accedere a Exchange.
-- **Metodo di autenticazione**: selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione usato dal profilo di posta elettronica. L'autenticazione a più fattori di Azure non è supportata.
+- **Attributo indirizzo di posta elettronica da AAD**: scegliere la modalità di generazione dell'indirizzo di posta elettronica per l'utente. Selezionare **Nome dell'entità utente** (`user1@contoso.com` o `user1`) per usare il nome dell'entità utente completo come indirizzo di posta elettronica. Selezionare **Indirizzo SMTP primario** (`user1@contoso.com`) per usare l'indirizzo SMTP primario per accedere a Exchange.
+- **Metodo di autenticazione**: Selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione usato dal profilo di posta elettronica. L'autenticazione a più fattori di Azure non è supportata.
   - Se è stata selezionata l'opzione **Certificato**, selezionare un profilo certificato client SCEP o PKCS creato in precedenza che viene usato per autenticare la connessione di Exchange.
 - **SSL**: selezionare **Abilita** per usare la comunicazione Secure Sockets Layer (SSL) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con il server Exchange.
 - **OAuth**: selezionare **Abilita** per usare la comunicazione Open Authorization (OAuth) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con Exchange. Se il server OAuth usa l'autenticazione del certificato, scegliere **Certificato** come **Metodo di autenticazione** e includere il certificato con il profilo. In caso contrario scegliere **Nome utente e password** come **Metodo di autenticazione**. Quando si usa OAuth, verificare quanto segue.
@@ -66,12 +69,32 @@ Usare le impostazioni del profilo di posta elettronica per configurare i disposi
   > 1. Viene rilasciato un nuovo profilo ai dispositivi già specificati come destinazione.
   > 2. Agli utenti finali viene chiesto di specificare nuovamente le credenziali.
 
-- **S/MIME**: selezionare **Abilita S/MIME** per inviare la posta elettronica in uscita usando la firma S/MIME. Quando questa opzione è abilitata, è anche possibile crittografare la posta elettronica per i destinatari che possono ricevere posta elettronica crittografata e decrittografare la posta elettronica ricevuta dai mittenti.
-  - Se si seleziona l'opzione **Certificato**, scegliere un profilo certificato PKCS esistente per autenticare la connessione di Exchange e/o crittografare gli scambi di posta elettronica.
+- **S/MIME**: selezionare **Abilita S/MIME** per consentire agli utenti di firmare e/o crittografare la posta elettronica nell'applicazione di posta elettronica nativa di iOS. 
+
+  Quando si usa S/MIME con un messaggio di posta elettronica, si conferma l'autenticità del mittente e l'integrità e la riservatezza del messaggio.
+
+  - **Firma S/MIME abilitata**: selezionare **Abilita** per consentire agli utenti di firmare digitalmente i messaggi di posta elettronica in uscita per l'account immesso. La firma consente agli utenti che ricevono i messaggi di essere sicuri che il messaggio proveniva da quell'utente specifico e non da qualcuno che fingeva di essere il mittente. Selezionare **Disabilita** per non consentire agli utenti di firmare digitalmente il messaggio.
+    - **Allow user to change setting** (Consenti all'utente di modificare l'impostazione): selezionare **Abilita** per consentire agli utenti di modificare il comportamento di firma S/MIME. Selezionare **Disabilita** per impedire agli utenti di modificare l'impostazione della firma S/MIME configurata. Disponibile in iOS 12 e versioni successive.
+
+  - **S/MIME Signing Cert** (Certificato di firma S/MIME): Selezionare un profilo esistente del certificato PKCS o SCEP usato per firmare i messaggi di posta elettronica.
+    - **Allow user to change setting** (Consenti all'utente di modificare l'impostazione): selezionare **Abilita** per consentire agli utenti di modificare il certificato di firma. Selezionare **Disabilita** per impedire agli utenti di modificare il certificato di firma e imporre di usare il certificato configurato. Disponibile in iOS 12 e versioni successive.
+
+  - **Encrypt by default** (Crittografa per impostazione predefinita): selezionare **Abilita** per crittografare tutti i messaggi come comportamento predefinito. Selezionare **Disabilita** per non crittografare tutti i messaggi come comportamento predefinito.
+    - **Allow user to change setting** (Consenti all'utente di modificare l'impostazione): selezionare **Abilita** per consentire agli utenti di modificare il comportamento di crittografia predefinito. Selezionare **Disabilita** per impedire agli utenti di modificare il comportamento di crittografia predefinito e imporre agli utenti di usare l'impostazione configurata. Disponibile in iOS 12 e versioni successive.
+
+  - **Force per-message encryption** (Forza crittografia per singoli messaggi): la crittografia per singoli messaggi consente agli utenti di scegliere quali messaggi di posta elettronica crittografare prima dell'invio. Selezionare **Abilita** per mostrare l'opzione di crittografia per singoli messaggi quando si crea un nuovo messaggio di posta elettronica. Gli utenti possono quindi scegliere se usare o non usare la crittografia per singoli messaggi. Selezionare **Disabilita** per impedire agli utenti di visualizzare l'opzione di crittografia per singoli messaggi.
+
+    Se l'impostazione **Encrypt by default** (Crittografa per impostazione predefinita) è abilitata, abilitando la crittografia per singoli messaggi si consente agli utenti di non usare la crittografia per singoli messaggi. Se l'impostazione **Encrypt by default** (Crittografa per impostazione predefinita) è disabilitata, abilitando la crittografia per singoli messaggi si consente agli utenti di usare la crittografia per singoli messaggi.
+
+  - **S/MIME Encryption Cert** (Certificato di crittografia S/MIME): selezionare un profilo esistente del certificato PKCS o SCEP usato per crittografare i messaggi di posta elettronica.
+    - **Allow user to change setting** (Consenti all'utente di modificare l'impostazione): selezionare **Abilita** per consentire agli utenti di modificare il certificato di crittografia. Selezionare **Disabilita** per impedire agli utenti di modificare il certificato di crittografia e imporre agli utenti di usare il certificato configurato. Disponibile in iOS 12 e versioni successive.
 - **Numero di messaggi di posta elettronica da sincronizzare**: selezionare il numero di giorni di posta elettronica da sincronizzare. In alternativa, selezionare **Illimitata** per sincronizzare tutti i messaggi di posta elettronica disponibili.
-- **Consenti di spostare i messaggi negli altri account di posta elettronica**: selezionare **Abilita** per consentire agli utenti di spostare i messaggi di posta elettronica tra diversi account configurati dagli utenti nei dispositivi.
+- **Consenti di spostare i messaggi negli altri account di posta elettronica**: selezionare **Abilita** per consentire agli utenti di spostare i messaggi di posta elettronica tra i diversi account configurati nei dispositivi.
 - **Consenti di inviare i messaggi di posta elettronica dalle applicazioni di terze parti**: selezionare **Abilita** per consentire agli utenti di selezionare questo profilo come account predefinito per l'invio di posta elettronica. Ciò consente alle applicazioni di terze parti di aprire i messaggi di posta elettronica nell'app nativa, ad esempio per allegare file ai messaggi.
-- **Sincronizza gli indirizzi di posta elettronica usati di recente**: selezionare **Abilita** per consentire agli utenti di sincronizzare con il server l'elenco di indirizzi di posta elettronica usati di recente sul dispositivo.
+- **Sincronizza gli indirizzi di posta elettronica utilizzati di recente**: selezionare **Abilita** per consentire agli utenti di sincronizzare con il server l'elenco di indirizzi di posta elettronica usati di recente sul dispositivo.
 
 ## <a name="next-steps"></a>Passaggi successivi
-[Configurare le impostazioni di posta elettronica in Intune](email-settings-configure.md)
+
+Il profilo è stato creato, ma non è ancora operativo. [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
+
+Configurare le impostazioni di posta elettronica nei dispositivi [Android](email-settings-android.md), [Windows 10](email-settings-windows-10.md) e [Windows Phone 8.1](email-settings-windows-phone-8-1.md).

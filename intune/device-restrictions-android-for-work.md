@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: c9e2e0df79625329310171c509327395989f3a7c
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032538"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203604"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -77,6 +77,10 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
   - **Solo Wi-Fi**
   - **Sempre**
 
+- **Finestre di notifica**: Se l'opzione è impostata su **Disabilita**, le notifiche, tra cui avvisi popup, chiamate in ingresso, chiamate in uscita, avvisi di sistema ed errori di sistema, non vengono visualizzate nel dispositivo. Se è impostata su **Non configurata**, vengono usate le impostazioni predefinite del sistema operativo, che potrebbero mostrare le notifiche.
+- **Skip first use hints** (Ignora i suggerimenti al primo utilizzo): selezionare **Abilita** per nascondere o ignorare i suggerimenti delle app che richiedono di eseguire le esercitazioni o leggere i suggerimenti iniziali quando viene avviata l'app. Se l'opzione è impostata su **Non configurata**, vengono usate le impostazioni predefinite del sistema operativo, che potrebbero mostrare questi suggerimenti quando viene avviata l'app.
+
+
 ### <a name="system-security-settings"></a>Impostazioni di sicurezza del sistema
 
 - **Analisi delle minacce nelle app**: specificare **Rendi obbligatorio** per imporre l'abilitazione dell'impostazione **Verifica app** per i profili di lavoro e personali.
@@ -126,6 +130,7 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 ### <a name="device-password-settings"></a>Impostazioni della password del dispositivo mobile
 
 - **Protezione della tastiera**: scegliere **Disabilita** per impedire agli utenti di usare la funzionalità della schermata di blocco di protezione della tastiera nel dispositivo. **Non configurata** consente all'utente di usare le funzionalità di protezione della tastiera.
+- **Disabled keyguard features** (Funzionalità di protezione della tastiera disabilitate): se la protezione della tastiera è abilitata sul dispositivo, scegliere quali funzionalità disabilitare. Ad esempio, se è selezionata l'opzione **Secure camera** (Fotocamera sicura), la funzionalità fotocamera è disabilitata nel dispositivo. Le funzionalità non selezionate sono abilitate nel dispositivo.
 - **Tipo di password richiesto**: definire il tipo di password richiesta per il dispositivo. Le opzioni disponibili sono:
   - **Almeno numerico**
   - **Complessa numerica**: i numeri consecutivi o ripetuti (ad esempio, "1111" o "1234") non sono consentiti.
@@ -145,6 +150,32 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 - **Aggiungi nuovi utenti**: scegliere **Blocca** per impedire agli utenti di aggiungere nuovi utenti. Ogni utente dispone di uno spazio personale nel dispositivo per schermate iniziali, account, app e impostazioni personalizzati. **Non configurata** consente agli utenti di aggiungere altri utenti nel dispositivo.
 - **Rimozione degli utenti**: scegliere **Blocca** per impedire agli utenti di rimuovere gli utenti. **Non configurata** consente agli utenti di rimuovere altri utenti dal dispositivo.
 - **Modifiche all'account**: scegliere **Blocca** per impedire agli utenti di modificare gli account. **Non configurata** consente agli utenti di aggiornare gli account utente nel dispositivo.
+
+### <a name="connectivity"></a>Connettività
+
+- **Always-on VPN** (VPN sempre attiva): scegliere **Abilita** per impostare un client VPN in modo che si connetta e riconnetta automaticamente alla VPN. Le connessioni VPN sempre attive rimangono connesse o si connettono immediatamente quando l'utente blocca il dispositivo, il dispositivo viene riavviato o la rete wireless viene modificata. 
+
+  Scegliere **Non configurata** per disabilitare la VPN sempre attiva per tutti i client VPN.
+
+  > [!IMPORTANT]
+  > Assicurarsi di distribuire una sola policy VPN sempre attiva in un singolo dispositivo. La distribuzione di più policy VPN sempre attiva in un singolo dispositivo non è supportata.
+
+- **VPN client** (Client VPN): scegliere un client VPN che supporta Always On. Le opzioni disponibili sono:
+  - Cisco AnyConnect
+  - F5 Access
+  - Palo Alto Networks GlobalProtect
+  - Pulse Secure
+  - Personalizzato
+    - **ID pacchetto**: immettere l'ID pacchetto dell'app in Google Play Store. Se ad esempio l'URL per l'app in Play Store è `https://play.google.com/store/details?id=com.contosovpn.android.prod`, l'ID pacchetto è `com.contosovpn.android.prod`.
+
+  > [!IMPORTANT]
+  >  - Il client VPN scelto deve essere installato nel dispositivo e deve supportare la VPN per app nei profili di lavoro. In caso contrario si verificherà un errore. 
+  >  - È necessario approvare l'app client VPN in **Google Play Store gestito**, sincronizzare l'app con Intune e distribuire l'app nel dispositivo. Al termine di queste operazioni, l'app viene installata nel profilo di lavoro dell'utente.
+  >  - Possono esistere problemi noti quando si usa una VPN per app con F5 Access per Android 3.0.4. Per altre informazioni, vedere le [note sulla versione di F5 per F5 Access per Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android).
+
+- **Lockdown mode** (Modalità di blocco): scegliere **Abilita** per forzare tutto il traffico di rete a usare il tunnel VPN. Se non viene stabilita una connessione alla VPN, il dispositivo non avrà accesso alla rete.
+
+  Scegliere **Non configurata** per consentire al traffico di passare attraverso il tunnel VPN o la rete per dispositivi mobili.
 
 ## <a name="work-profile-only"></a>Solo profilo di lavoro 
 
@@ -249,7 +280,7 @@ Queste impostazioni per le password si applicano ai profili personali nei dispos
   >  - È necessario approvare l'app client VPN in **Google Play Store gestito**, sincronizzare l'app con Intune e distribuire l'app nel dispositivo. Al termine di queste operazioni, l'app viene installata nel profilo di lavoro dell'utente.
   >  - Possono esistere problemi noti quando si usa una VPN per app con F5 Access per Android 3.0.4. Per altre informazioni, vedere le [note sulla versione di F5 per F5 Access per Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android).
 
-- **Lockdown mode** (Modalità di blocco): **Abilita** forza tutto il traffico di rete a usare il tunnel VPN. Se non viene stabilita una connessione alla VPN, il dispositivo non avrà accesso alla rete.
+- **Lockdown mode** (Modalità di blocco): scegliere **Abilita** per forzare tutto il traffico di rete a usare il tunnel VPN. Se non viene stabilita una connessione alla VPN, il dispositivo non avrà accesso alla rete.
 
   Scegliere **Non configurata** per consentire al traffico di passare attraverso il tunnel VPN o la rete per dispositivi mobili.
 

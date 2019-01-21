@@ -3,10 +3,10 @@ title: Eccezioni dei criteri di trasferimento dei dati per le app
 titleSuffix: Microsoft Intune
 description: Creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,16 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6a2507dc7b920d446b6f7fe78aa7b90f6c31322f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 94798e7745b5802a551c4dda6908ff9f5f803d8f
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178404"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297348"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Come creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-In qualità di amministratore, è possibile creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune. Un'eccezione consente di scegliere in modo specifico quali app non gestite possono trasferire i dati da e verso le app gestite. Le app non gestite che si include nell'elenco di eccezioni devono essere considerate attendibili da IT. 
+In qualità di amministratore, è possibile creare eccezioni per i criteri di trasferimento dei dati di gestione per applicazioni mobili (MAM) di Intune. Un'eccezione consente di scegliere in modo specifico quali app non gestite possono trasferire i dati da e verso le app gestite. IT deve considerare attendibili le app non gestite incluse nell'elenco di eccezioni. 
 
 >[!WARNING] 
 > L'utente è responsabile di apportare modifiche ai criteri relativi alle eccezioni per il trasferimento dei dati. Le aggiunte a questi criteri consentono alle app non gestite (app non gestite da Intune) di accedere ai dati protetti dalle applicazioni gestite. L'accesso ai dati protetti può comportare minacce per la protezione dei dati. Aggiungere le eccezioni di trasferimento dei dati solo per le app che l'organizzazione deve usare, ma che non supportano i criteri di protezione delle app di Intune. È anche possibile aggiungere solo le eccezioni per le app che non si considerano a rischio di perdita di dati.
@@ -53,13 +51,13 @@ Per i criteri destinati ad Android, è possibile configurare eccezioni per il tr
 ### <a name="example"></a>Esempio
 Aggiungendo il pacchetto **Webex** come un'eccezione per i criteri di trasferimento dei dati MAM, i collegamenti Webex presenti all'interno di un messaggio di posta elettronica di Outlook possono essere aperti direttamente nell'applicazione Webex. Il trasferimento dei dati rimarrà limitato nelle altre applicazioni non gestite.
 
-- Esempio **Webex** iOS: per esentare l'app **Webex** in modo che possa essere chiamata dalle app gestite da Intune, è necessario aggiungere un'eccezione per il trasferimento dei dati per la stringa seguente: <code>wbx</code>
+- Esempio **Webex** iOS:   per esentare l'app **Webex** in modo che possa essere chiamata dalle app gestite da Intune, è necessario aggiungere un'eccezione per il trasferimento dei dati per la stringa seguente: <code>wbx</code>
     
- - Esempio **Maps** iOS: per esentare l'app **Maps** nativa in modo che possa essere chiamata dalle app gestite da Intune, è necessario aggiungere un'eccezione per il trasferimento dei dati per la stringa seguente: <code>maps</code>
+ - Esempio **Maps** iOS:  per esentare l'app **Maps** nativa in modo che possa essere chiamata dalle app gestite da Intune, è necessario aggiungere un'eccezione per il trasferimento dei dati per la stringa seguente: <code>maps</code>
 
-- Esempio **Webex** Android: per esentare l'app **Webex** in modo che possa essere chiamata dalle app gestite da Intune, è necessario aggiungere un'eccezione per il trasferimento dei dati per la stringa seguente: <code>com.cisco.webex.meetings</code>
+- Esempio **Webex** Android:   per esentare l'app **Webex** in modo che possa essere chiamata dalle app gestite da Intune, è necessario aggiungere un'eccezione per il trasferimento dei dati per la stringa seguente: <code>com.cisco.webex.meetings</code>
     
-- Esempio **SMS** Android: per esentare l'app **SMS** nativa in modo che possa essere chiamata dalle app gestite da Intune in diverse app di messaggistica e dispositivi Android, è necessario aggiungere le eccezioni per il trasferimento dei dati per le stringhe seguenti: 
+- Esempio **SMS** Android:   per esentare l'app **SMS** nativa in modo che possa essere chiamata dalle app gestite da Intune in diverse app di messaggistica e dispositivi Android, è necessario aggiungere le eccezioni per il trasferimento dei dati per le stringhe seguenti: 
     <code>com.google.android.apps.messaging</code>
     
     <code>com.android.mms</code>
