@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: e7b60ecbf2a9a110b68807f8d1dce4db21f8f61d
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324906"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316917"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app Android per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -147,39 +147,6 @@ Per evitare potenziali attacchi di spoofing, divulgazione di informazioni e l'el
 -   Assicurarsi che l'applicazione provenga da una fonte attendibile.
 
 -   Proteggere la directory di output che contiene l'applicazione di cui è stato eseguito il wrapping. È possibile utilizzare una directory a livello di utente per l'output.
-
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>Richiesta del prompt di accesso utente per la registrazione automatica al servizio APP-WE, richiesta dei criteri di protezione delle app Intune per l'uso di un'app line-of-business per Android di cui è stato eseguito il wrapping e abilitazione di SSO ADAL (facoltativa)
-
-Di seguito è riportato materiale sussidiario per la richiesta di un prompt utente all'avvio dell'app per la registrazione automatica al servizio APP-WE (denominata **registrazione predefinita** in questa sezione) e la richiesta dei criteri di protezione delle app Intune per consentire solo agli utenti protetti da Intune di usare un'app line-of-business per Android di cui è stato eseguito il wrapping. Viene anche illustrato come abilitare SSO per un'app line-of-business per Android di cui è stato eseguito il wrapping. 
-
-> [!NOTE] 
-> Uno dei vantaggi della **registrazione predefinita** è il metodo semplificato per ottenere i criteri dal servizio APP-WE per un'app presente nel dispositivo.
-
-### <a name="general-requirements"></a>Requisiti generali
-* Il team di Intune SDK richiederà l'ID applicazione dell'app. Un modo per trovarlo è tramite il [portale di Azure](https://portal.azure.com/), in **Tutte le applicazioni** nella colonna relativa a **ID applicazione**. Un buon metodo per contattare il team di Intune SDK è tramite l'invio di un messaggio di posta elettronica all'indirizzo msintuneappsdk@microsoft.com.
-     
-### <a name="working-with-the-intune-sdk"></a>Uso di Intune SDK
-Queste istruzioni sono specifiche per tutte le app Android e Xamarin che richiederanno i criteri di protezione delle app Intune per l'uso nel dispositivo di un utente finale.
-
-1. Configurare ADAL usando i passaggi definiti nella [Guida a Intune SDK per Android](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
-
-> [!NOTE]
-> Il termine "ID client" associato all'app equivale al termine "ID applicazione" del portale di Azure associato all'app. 
-> * Per abilitare SSO, vedere il punto 2 della sezione "Configurazioni comuni di ADAL".
-
-2. Abilitare la registrazione predefinita inserendo il valore seguente nel manifesto:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
-   ```
-   > [!NOTE] 
-   > Questa deve essere l'unica integrazione MAM-WE nell'app. Altri tentativi di chiamare le API MAMEnrollmentManager possono determinare conflitti.
-
-3. Abilitare i criteri MAM richiesti inserendo il valore seguente nel manifesto:
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-   > [!NOTE] 
-   > In questo modo, l'utente dovrà scaricare il Portale aziendale nel dispositivo e completare le fasi della registrazione predefinita prima dell'uso.
 
 ### <a name="see-also"></a>Vedere anche
 - [Stabilire come preparare le app per la gestione delle applicazioni mobili con Microsoft Intune](apps-prepare-mobile-application-management.md)
