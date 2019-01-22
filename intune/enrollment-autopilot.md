@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: af767ce47b9382012f01de48ccd280c29ccfc27c
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 17e60e489b024b5f70c0c3c9a1fe564ed227172e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112865"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210857"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrare dispositivi Windows in Intune con Windows AutoPilot  
 Windows AutoPilot semplifica la registrazione dei dispositivi in Intune. La compilazione e la gestione di immagini del sistema operativo personalizzate sono processi che richiedono molto tempo. Richiede tempo anche l'applicazione di queste immagini personalizzate del sistema operativo ai nuovi dispositivi per prepararli per l'uso prima della consegna agli utenti finali. Con Microsoft Intune e AutoPilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare le immagini del sistema operativo personalizzate ai dispositivi. Quando si usa Intune per gestire i dispositivi AutoPilot, è possibile gestire criteri, profili, applicazioni e così via sui dispositivi che sono stati registrati. Per una panoramica di vantaggi, scenari e prerequisiti, vedere [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -79,20 +79,20 @@ I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi
 3. Se si vuole che tutti i dispositivi nei gruppi assegnati vengano automaticamente converti in Autopilot, impostare **Converti tutti i dispositivi interessati in Autopilot** su **Sì**. Tutti i dispositivi non Autopilot nei gruppi assegnati verranno registrati con il servizio di distribuzione di Autopilot. L'elaborazione della registrazione può richiedere fino a 48 ore. Quando la registrazione viene annullata e il dispositivo viene reimpostato, Autopilot eseguirà la registrazione. Dopo che un dispositivo è stato registrato in questo modo, se si disabilita o rimuove l'assegnazione del profilo, il dispositivo non verrà rimosso dal servizio di distribuzione di Autopilot. È invece necessario [rimuovere direttamente il dispositivo](enrollment-autopilot.md#delete-autopilot-devices).
 4. In **Modalità di distribuzione**, scegliere una di queste due opzioni:
     - **Definita dall'utente**: I dispositivi con questo profilo sono associati all'utente che esegue la registrazione del dispositivo. Le credenziali dell'utente sono necessarie per effettuare la registrazione del dispositivo.
-    - **Distribuzione automatica (anteprima)** (richiede la [Windows 10 Insider Preview Build 17672](https://docs.microsoft.com/windows-insider/at-work-pro/) più recente): i dispositivi con questo profilo non sono associati all'utente che esegue la registrazione del dispositivo. Le credenziali dell'utente non sono necessarie per effettuare la registrazione del dispositivo.
+    - **Distribuzione automatica (anteprima)** (richiede Windows 10 versione 1809 o successive): i dispositivi con questo profilo non sono associati all'utente che esegue la registrazione del dispositivo. Le credenziali dell'utente non sono necessarie per effettuare la registrazione del dispositivo.
 5. Nella casella **Join to Azure AD as** (Connetti ad Azure AD come) scegliere **Aggiunto ad Azure AD**.
 6. Scegliere **Out-of-box experience (OOBE)** (Configurazione guidata), configurare le opzioni seguenti e scegliere **Salva**:
     - **Lingua (area geografica)**\*: scegliere la lingua da usare per il dispositivo. Questa opzione è disponibile solo se si è scelta l'opzione **Distribuzione automatica** in **Modalità di distribuzione**.
     - **Configura automaticamente la tastiera**\*: se è selezionata una **Lingua (area geografica)**, scegliere **Sì** per ignorare la pagina di selezione della tastiera. Questa opzione è disponibile solo se si è scelta l'opzione **Distribuzione automatica** in **Modalità di distribuzione**.
     - **Contratto di licenza con l'utente finale**: (Windows 10, versione 1709 o successive): scegliere se si vuole visualizzare il contratto di licenza per gli utenti.
     - **Impostazioni di privacy**: scegliere se si vuole visualizzare le impostazioni di privacy per gli utenti.
-    - **Nascondi le opzioni di cambio di account (solo Windows Insider)**: scegliere **Nascondi** per impedire che le opzioni dell'account vengano visualizzate nella pagina di accesso aziendale e nella pagina degli errori di dominio. Per questa opzione è necessario [configurare le informazioni personalizzate distintive dell'azienda in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
+    - **Nascondi le opzioni di cambio di account (richiede Windows 10 versione 1809 o successiva)**: scegliere **Nascondi** per impedire che le opzioni dell'account vengano visualizzate nella pagina di accesso aziendale e nella pagina degli errori di dominio. Per questa opzione è necessario [configurare le informazioni personalizzate distintive dell'azienda in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo di account utente**: scegliere il tipo di account utente (**Amministratore** o **Standard**).
-    - **Applica il modello di nome computer (solo Windows Insider)**: scegliere **Sì** per creare un modello da usare per assegnare il nome a un dispositivo durante la registrazione. I nomi non devono superare i 15 caratteri e possono contenere lettere, numeri e trattini. I nomi non possono contenere solo numeri. Usare la [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) per aggiungere un numero di serie specifico per l'hardware. In alternativa, usare la [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) per aggiungere una stringa casuale di numeri, dove x corrisponde al numero di cifre da aggiungere. 
+    - **Applica il modello di nome computer (richiede Windows 10 versione 1809 o successiva)**: scegliere **Sì** per creare un modello da usare per assegnare il nome a un dispositivo durante la registrazione. I nomi non devono superare i 15 caratteri e possono contenere lettere, numeri e trattini. I nomi non possono contenere solo numeri. Usare la [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) per aggiungere un numero di serie specifico per l'hardware. In alternativa, usare la [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) per aggiungere una stringa casuale di numeri, dove x corrisponde al numero di cifre da aggiungere. 
 
 6. Scegliere **Crea** per creare il profilo. Il profilo di distribuzione di Autopilot è ora disponibile per l'assegnazione ai dispositivi.
 
-*Sia **Lingua (area geografica)** che **Configura automaticamente la tastiera** sono disponibili solo se è stata scelta l'opzione **Distribuzione automatica (anteprima)** per **Modalità di distribuzione** (richiede la [Windows 10 Insider Preview Build 17672](https://docs.microsoft.com/windows-insider/at-work-pro/) più recente).
+*Sia **Lingua (area geografica)** che **Configura automaticamente la tastiera** sono disponibili solo se è stata scelta l'opzione **Distribuzione automatica (anteprima)** per **Modalità di distribuzione** (richiede Windows 10 versione 1809 o successiva).
 
 
 ## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Assegnare un profilo di distribuzione di Autopilot a un gruppo di dispositivi
@@ -100,6 +100,9 @@ I profili di distribuzione AutoPilot vengono usati per configurare i dispositivi
 1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Profili di distribuzione** > scegliere un profilo.
 2. Nel pannello del profilo specifico, scegliere **Assegnazioni**. 
 3. Scegliere **Selezione gruppi**, quindi nel pannello **Selezione gruppi** scegliere il o i gruppi di utenti ai quali assegnare il profilo e scegliere **Seleziona**.
+
+> [!NOTE]
+> Intune verificherà periodicamente la presenza di nuovi dispositivi nei gruppi assegnati e quindi avvierà il processo di assegnazione dei profili a quei dispositivi. Questo processo può richiedere alcuni minuti. Prima di distribuire un dispositivo, assicurarsi che questo processo sia stato completato.  In **Registrazione del dispositivo** > **Registrazione di Windows ** > **Dispositivi** è possibile verificare che lo stato del profilo passi da "Non assegnato" ad "Assegnazione" e infine ad "Assegnato".
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Modificare un profilo di distribuzione di AutoPilot
 Dopo aver creato un profilo di distribuzione di AutoPilot, è possibile modificare alcune parti del profilo di distribuzione.   
@@ -125,7 +128,7 @@ Per visualizzare gli avvisi per i dispositivi non assegnati, in [Intune nel port
 
 È possibile assegnare un utente a un dispositivo Autopilot specifico. Questa assegnazione precompila un utente di Azure Active Directory nella pagina di accesso [distintiva dell'azienda](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) durante l'installazione di Windows. Consente inoltre di definire il nome di un messaggio di saluto personalizzato. Questa informazione non viene precompilata nella pagina di accesso di Windows né la modifica. Solo gli utenti con licenza di Intune possono essere assegnati con questa procedura.
 
-Prerequisiti: il portale aziendale di Azure Active Directory deve essere configurato e deve essere presente la versione di [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/) più recente.
+Prerequisiti: il portale aziendale di Azure Active Directory deve essere configurato; Windows 10 versione 1809 o successiva.
 
 1. In [Intune nel portale di Azure](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Dispositivi** > scegliere il dispositivo > **Assegna utente**.
 
