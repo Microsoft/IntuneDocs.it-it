@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 12/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 79a1a03f74db8e44dc3ee4d6575e193ce7841e24
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3d86afec4e501533ab0048e866969a5bf73c2c57
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031892"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387054"
 ---
 # <a name="enroll-android-devices"></a>Registrare dispositivi Android
 
@@ -29,9 +29,10 @@ ms.locfileid: "53031892"
 
 In qualità di amministratore di Intune, è possibile gestire i dispositivi Android seguenti:
 - I dispositivi Android, inclusi i dispositivi Samsung KNOX Standard.
-- I dispositivi Android Enterprise, compresi i [dispositivi del profilo di lavoro Android](#enable-enrollment-of-android-for-work-devices) e i dispositivi Android in modalità tutto schermo.
-
-I dispositivi che eseguono Samsung Knox Standard sono supportati per la gestione multiutente in Intune. Gli utenti finali possono accedere e disconnettersi da un dispositivo con le credenziali di Azure AD. Il dispositivo è gestito a livello centrale indipendentemente dal fatto che sia o meno in uso. Quando gli utenti eseguono l'accesso possono accedere alle app e ai criteri ad essi applicati. Quando gli utenti si disconnettono, tutti i dati delle app vengono cancellati.
+- Dispositivi Android Enterprise:
+    - **Dispositivi del profilo di lavoro Android**: Dispositivi personali con autorizzazione ad accedere ai dati aziendali. Gli amministratori possono gestire gli account aziendali, le app e i dati. I dati personali nel dispositivo vengono tenuti separati dai dati di lavoro e gli amministratori non controllano le impostazioni o i dati personali. 
+    - **Dispositivi Android dedicati**: Dispositivi a uso singolo di proprietà dell'azienda, ad esempio per insegna digitale, stampa di biglietti o gestione dell'inventario. Gli amministratori bloccano l'utilizzo di un dispositivo per un set limitato di app e collegamenti Web. Viene anche impedito agli utenti di aggiungere altre app o eseguire altre azioni sul dispositivo.
+    - **Dispositivi Android completamente gestiti**: Dispositivi con utente singolo di proprietà dell'azienda, usati esclusivamente per lavoro e non per uso personale. Gli amministratori possono gestire interamente tali dispositivi e applicare controlli di criteri non disponibili nei profili di lavoro. 
 
 ## <a name="prerequisite"></a>Prerequisito
 
@@ -52,14 +53,16 @@ Per bloccare la registrazione dei dispositivi Android o la registrazione dei sol
 
 ## <a name="set-up-android-enterprise-enrollment"></a>Configurare la registrazione di Android Enterprise
 
-Android Enterprise è un set di funzionalità e servizi dei dispositivi Android che separa le app e i dati personali da quelli lavorativi inclusi in un profilo di lavoro. I dispositivi Android Enterprise includono i dispositivi del profilo di lavoro e i dispositivi in modalità tutto schermo. 
+Android Enterprise è un set di funzionalità e servizi dei dispositivi Android che separa le app e i dati personali da quelli lavorativi inclusi in un profilo di lavoro. I dispositivi Android Enterprise includono dispositivi del profilo di lavoro, dispositivi completamente gestiti e dispositivi dedicati. 
 
-Per configurare la registrazione per i dispositivi Android Enterprise, è necessario prima [connettere Android Enterprise a Intune](connect-intune-android-enterprise.md). Dopo aver completato questo passaggio, è possibile:
-
-[Configurare le registrazioni del profilo di lavoro Android](android-work-profile-enroll.md)
-[Configurare le registrazioni dei dispositivi Android in modalità tutto schermo](android-kiosk-enroll.md)
+- [Configurare le registrazioni dei profili di lavoro Android](android-work-profile-enroll.md)
+- [Configurare le registrazioni di dispositivi dedicati Android](android-kiosk-enroll.md)
+- [Configurare le registrazioni di dispositivi Android completamente gestiti](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Esperienza utente finale durante la registrazione di un dispositivo Samsung Knox
+
+I dispositivi con Samsung Knox Standard sono supportati da Intune per la gestione multiutente. Gli utenti finali possono accedere e disconnettersi da un dispositivo con le credenziali di Azure AD. Il dispositivo è gestito a livello centrale indipendentemente dal fatto che sia o meno in uso. Quando gli utenti eseguono l'accesso possono accedere alle app e ai criteri ad essi applicati. Quando gli utenti si disconnettono, tutti i dati delle app vengono cancellati.
+
 Esistono diversi punti da considerare durante la registrazione di dispositivi Samsung Knox:
 -   Anche se per i criteri non è necessario un PIN, il dispositivo deve avere almeno un PIN di quattro cifre per essere registrato. Se il dispositivo non ha un PIN, l'utente dovrà crearne uno.
 -   Non esiste interazione da parte dell'utente per i certificati Workplace Join (WPJ).
@@ -69,3 +72,9 @@ Esistono diversi punti da considerare durante la registrazione di dispositivi Sa
 -   Non sono richieste conferme aggiuntive da parte dell'utente per installare i certificati inseriti da un servizio per l'accesso alle risorse aziendali.
 - Alcuni dispositivi Knox meno recenti chiederanno all'utente i certificati aggiuntivi usati per l'accesso alle risorse aziendali.
 - Se l'installazione di un dispositivo Samsung Mini non riesce a installare WPJ e vengono visualizzati gli errori **Certificate Not Found** (Certificato non trovato) oppure **Unable to Register Device** (Impossibile registrare il dispositivo), installare gli ultimi aggiornamenti del firmware Samsung.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+- [Configurare le registrazioni dei profili di lavoro Android](android-work-profile-enroll.md)
+- [Configurare le registrazioni di dispositivi dedicati Android](android-kiosk-enroll.md)
+- [Configurare le registrazioni di dispositivi Android completamente gestiti](android-fully-managed-enroll.md)

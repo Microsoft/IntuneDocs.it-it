@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8ce7b6020c9212a0379915e00e361853e2eb3259
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c7e9fe1b0b54d020c3b3a4368922d570c64ae8ee
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184115"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325033"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Sicurezza dei dati e condivisione in Intune
 
@@ -63,7 +63,7 @@ Per informazioni sui dati condivisi con alcune terze parti, vedere gli articoli 
 - [Dati inviati da Intune a Google](data-intune-sends-to-google.md)
 - [Dati inviati da Apple a Intune](data-apple-sends-to-intune.md)
 - [Dati inviati da Google a Intune](data-google-sends-to-intune.md)
-- [Informazioni condivise da Jamf Pro in Intune](conditional-access-integrate-jamf.md#information-shared-from-jamf-pro-to-intune)
+- [Dati inviati da Jamf Pro a Intune](data-jamf-sends-to-intune.md)
 
 ### <a name="system-center-configuration-manager-data-sharing"></a>Condivisione dei dati con System Center Configuration Manager
 

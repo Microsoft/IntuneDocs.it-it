@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: ''
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.openlocfilehash: 1866d658503cb2dcdf482a050d7bbd73a914858b
+ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122639"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54400025"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Rimuovere i dispositivi con la cancellazione, la disattivazione o l'annullamento manuale della registrazione
 
@@ -81,22 +81,20 @@ Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto dell'azion
 
 |Tipo di dati|iOS|
 |-------------|-------|
-|App aziendali e dati associati installati da Intune|**App installate tramite il portale aziendale:** tutte le app e i relativi dati vengono rimossi. Queste app includono le app inizialmente installate dall'App Store e successivamente gestite come app aziendali. <br /><br /> **App Microsoft che usano Gestione delle app mobili e sono state installate dall'App Store:** e vengono rimossi i dati dell'app aziendale. Le app personali e i relativi dati non vengono rimossi.|
+|App aziendali e dati associati installati da Intune|**App installate tramite il Portale aziendale:** Per le app aggiunte al profilo di gestione, vengono rimossi tutti i dati, oltre alle app stesse. Queste app includono le app inizialmente installate dall'App Store e successivamente gestite come app aziendali. <br /><br /> **App Microsoft che usano Gestione delle app mobili e sono state installate dall'App Store:** Per le app non gestite dal Portale aziendale, vengono rimossi i dati delle app aziendali protette da crittografia MAM (Mobile Application Management, gestione di applicazioni mobili) all'interno delle risorse di archiviazione locale delle app. I dati protetti da crittografia MAM all'esterno dell'app restano crittografati e inutilizzabili, ma non vengono rimossi. Le app personali e i relativi dati non vengono rimossi.|
 |Impostazioni|Le configurazioni impostate dai criteri di Intune non vengono più applicate. Gli utenti possono modificare le impostazioni.|
 |Impostazioni del profilo Wi-Fi e VPN|Rimosso.|
 |Impostazioni del profilo certificato|Certificati rimossi e revocati.|
 |Agente di gestione|Il profilo di gestione viene rimosso.|
 |Posta elettronica|I profili di posta elettronica di cui viene eseguito il provisioning con Intune vengono rimossi. I messaggi di posta elettronica memorizzati nella cache del dispositivo vengono eliminati.|
-|Outlook|I messaggi di posta elettronica ricevuti dall'app Microsoft Outlook per iOS vengono rimossi. È necessario che l'app Outlook per dispositivi mobili sia prima distribuita come app obbligatoria per gli utenti iOS.|
 |Separazione di Azure AD|Il record di Azure AD viene rimosso.|
-|Contatti |I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Eventuali contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere rimossi. <br /> <br />Attualmente è supportata solo l'app Outlook.
 
 ### <a name="android"></a>Android
 
 |Tipo di dati|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Collegamenti Web|Rimosso.|Rimosso.|
-|App Google Play non gestite|Le app e i dati rimangono installati.|Le app e i dati rimangono installati.|
+|App Google Play non gestite|Le app e i dati rimangono installati. <br /> <br />Vengono rimossi i dati delle app aziendali protette da crittografia MAM (Mobile Application Management, gestione di applicazioni mobili) all'interno delle risorse di archiviazione locale delle app. I dati protetti da crittografia MAM all'esterno dell'app restano crittografati e inutilizzabili, ma non vengono rimossi. |Le app e i dati rimangono installati. <br /> <br />Vengono rimossi i dati delle app aziendali protette da crittografia MAM (Mobile Application Management, gestione di applicazioni mobili) all'interno delle risorse di archiviazione locale delle app. I dati protetti da crittografia MAM all'esterno dell'app restano crittografati e inutilizzabili, ma non vengono rimossi.|
 |App line-of-business non gestite|Le app e i dati rimangono installati.|Le app vengono disinstallate e i dati locali delle app vengono rimossi. Non vengono rimossi dati esterni all'app, ad esempio quelli in una scheda SD.|
 |App Google Play gestite|I dati dell'app vengono rimossi. L'app non viene rimossa. I dati protetti dalla crittografia MAM (Mobile Application Management, Gestione di applicazioni mobili) all'esterno dell'app, ad esempio in una scheda SD, restano crittografati e sono inutilizzabili, ma non vengono rimossi.|I dati dell'app vengono rimossi. L'app non viene rimossa. I dati protetti dalla crittografia MAM all'esterno dell'app (ad esempio, in una scheda SD) restano crittografati, ma non vengono rimossi.|
 |App line-of-business gestite|I dati dell'app vengono rimossi. L'app non viene rimossa. I dati protetti dalla crittografia MAM all'esterno dell'app (ad esempio, in una scheda SD) restano crittografati e inutilizzabili, ma non vengono rimossi.|I dati dell'app vengono rimossi. L'app non viene rimossa. I dati protetti dalla crittografia MAM all'esterno dell'app (ad esempio, in una scheda SD) restano crittografati e inutilizzabili, ma non vengono rimossi.|
@@ -105,9 +103,7 @@ Le tabelle seguenti descrivono i dati che vengono rimossi e l'effetto dell'azion
 |Impostazioni del profilo certificato|I certificati vengono revocati, ma non rimossi.|Certificati rimossi e revocati.|
 |Agente di gestione|Il privilegio di amministratore del dispositivo viene revocato.|Il privilegio di amministratore del dispositivo viene revocato.|
 |Posta elettronica|N/D (i profili di posta elettronica non sono supportati dai dispositivi Android)|I profili di posta elettronica di cui viene eseguito il provisioning con Intune vengono rimossi. I messaggi di posta elettronica memorizzati nella cache del dispositivo vengono eliminati.|
-|Outlook|I messaggi di posta elettronica ricevuti dall'app Outlook per Android vengono rimossi, ma solo se Outlook è protetto dai criteri MAM. In caso contrario, Outlook non viene cancellato quando si annulla la registrazione del dispositivo.|I messaggi di posta elettronica ricevuti dall'app Outlook per Android vengono rimossi, ma solo se Outlook è protetto dai criteri MAM. In caso contrario, Outlook non viene cancellato quando si annulla la registrazione del dispositivo.|
 |Separazione di Azure AD|Il record di Azure AD viene rimosso.|Il record di Azure AD viene rimosso.|
-|Contatti |I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Eventuali contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere rimossi. <br /> <br />Attualmente è supportata solo l'app Outlook.|I contatti sincronizzati direttamente dall'app alla Rubrica nativa vengono rimossi. Eventuali contatti sincronizzati dalla Rubrica nativa a un'altra origine esterna non possono essere rimossi. <br /> <br />Attualmente è supportata solo l'app Outlook.
 
 ### <a name="android-work-profile"></a>Profilo di lavoro Android
 

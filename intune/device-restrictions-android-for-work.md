@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203604"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387005"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -87,7 +87,7 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 
 ### <a name="kiosk-settings"></a>Impostazioni della modalità tutto schermo
 
-È possibile configurare un dispositivo per eseguire una sola app o molte app. Quando un dispositivo è in modalità tutto schermo, sono disponibili solo le app aggiunte.
+È possibile configurare un dispositivo per eseguire una sola app o molte app. Quando un dispositivo è in modalità tutto schermo, sono disponibili solo le app aggiunte. Queste impostazioni si applicano ai dispositivi Android dedicati, ma non ai dispositivi Android dedicati completamente gestiti.
 
 **Modalità tutto schermo**: scegliere se il dispositivo eseguirà una sola app o più app.
 

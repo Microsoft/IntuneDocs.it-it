@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149662"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380478"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Distribuire dispositivi aggiunti ad Azure AD ibrido usando Intune e Windows Autopilot (anteprima)
 È possibile usare Intune e Windows Autopilot per configurare i dispositivi aggiunti ad Active Directory ibrido. A tale scopo, eseguire i passaggi seguenti.
@@ -116,6 +116,9 @@ Intune Connector per Active Directory deve essere installato in un computer che 
 6. Scegliere **Accedi**.
 7. Immettere le credenziali del ruolo Amministratore globale o Amministratore di Intune dell'utente.
 8. Passare a **Registrazione del dispositivo** > **Registrazione Windows** > **Intune Connector per Active Directory (anteprima)** e verificare che lo stato della connessione sia **Attivo**.
+
+ > [!NOTE]
+ > Dopo l'**accesso** a Connector, la visualizzazione di questo in [Intune](https://aka.ms/intuneportal) può richiedere qualche minuto. Tenere presente che Connector compare solo se è in grado di comunicare con il servizio Intune.
 
 ### <a name="configure-web-proxy-settings"></a>Configurare le impostazioni del proxy Web
 

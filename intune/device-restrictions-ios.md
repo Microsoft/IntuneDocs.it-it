@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6fb1c65199b68f7492b1f397c4f6075e345d3e8
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203672"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380497"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -151,12 +151,12 @@ La modalità con supervisione iOS può essere abilitata solo durante l'installaz
 - **Musica di iTunes, podcast o notizie con contenuti espliciti (solo con supervisione)**: scegliere **Blocca** per bloccare musica di iTunes, podcast o notizie con contenuti espliciti. **Non configurata** consente al dispositivo di accedere ai contenuti classificati come per adulti dallo Store.
 - **Scarica da iBook Store i contenuti contrassegnati come 'Erotici'**: scegliere **Blocca** per impedire agli utenti di scaricare da iBook Store contenuti multimediali contrassegnati come erotici. **Non configurata** consente all'utente di scaricare libri della categoria "Erotici".
 - **Visualizzazione dei documenti aziendali nelle app non gestite**: **Blocca** impedisce la visualizzazione di documenti non aziendali in app non gestite. **Non configurata** consente di visualizzare documenti aziendali in qualsiasi app. Ad esempio, può essere necessario impedire agli utenti il salvataggio di file dall'app OneDrive a Dropbox. Configurare questa impostazione come **Blocca**. Dopo aver ricevuto i criteri, ad esempio dopo un riavvio, il dispositivo non consente più il salvataggio.
-  - **Allow managed apps to write contacts to unmanaged contacts accounts (supervised only)** (Consenti alle app gestite di scrivere contatti in account di contatti non gestiti (solo con supervisione)): quando è impostata su **Consenti**, gli utenti possono aggiungere o sincronizzare le informazioni di contatto di Outlook di qualsiasi persona, inclusi i contatti commerciali e aziendali, nell'app Contatti incorporata nel dispositivo. Quando è impostata su **Non configurata**, gli utenti non possono aggiungere contatti di Outlook all'app Contatti incorporata nel dispositivo.
+  - **Consenti alle app gestite di scrivere contatti in account di contatti non gestiti**: quando è impostata su **Consenti**, gli utenti possono aggiungere o sincronizzare le informazioni di contatto di Outlook di qualsiasi persona, inclusi i contatti commerciali e aziendali, nell'app Contatti incorporata nel dispositivo. Quando è impostata su **Non configurata**, gli utenti non possono aggiungere contatti di Outlook all'app Contatti incorporata nel dispositivo.
   
     Per usare questa impostazione, impostare **Visualizzazione dei documenti aziendali nelle app non gestite** su **Blocca**.
   
 - **Visualizzazione di documenti non aziendali nelle app aziendali**: **Blocca** impedisce la visualizzazione di documenti non aziendali in app aziendali. **Non configurata** consente di visualizzare qualsiasi documento nelle app aziendali gestite.
-  - **Allow unmanaged apps to read from managed contacts accounts (supervised only)** (Consenti alle app non gestite di leggere da account di contatti gestiti (solo con supervisione)): **Consenti** permette agli utenti di aggiungere le informazioni di contatto dell'app iContact di qualsiasi persona in Outlook. **Non configurata** impedisce la lettura, inclusa la rimozione di duplicati, dall'app Contatti incorporata nel dispositivo.
+  - **Consenti alle app gestite di leggere da contatti in account di contatti non gestiti**: **Consenti** permette agli utenti di aggiungere le informazioni di contatto dell'app iContact di qualsiasi persona in Outlook. **Non configurata** impedisce la lettura, inclusa la rimozione di duplicati, dall'app Contatti incorporata nel dispositivo.
   
     Per usare questa impostazione, impostare **Visualizzazione di documenti non aziendali nelle app aziendali** su **Blocca**.
   

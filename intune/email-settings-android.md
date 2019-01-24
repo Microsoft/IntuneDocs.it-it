@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ffe25f7e4870f2ea6969d1261f33c69362d75469
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: b96363d679a6f09327bf9a1b46421e786d1956a8
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032028"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316883"
 ---
 # <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Impostazioni dei dispositivi Android e Android Enterprise per configurare posta elettronica, autenticazione e sincronizzazione in Intune
 
@@ -69,7 +69,9 @@ Come amministratore di Intune, è possibile creare e assegnare le impostazioni d
 
 ### <a name="content-sync-settings"></a>Impostazioni di sincronizzazione del contenuto
 
-- **Tipo di contenuto da sincronizzare**: selezionare i tipi di contenuto da sincronizzare nei dispositivi da:
+- **Tipo di contenuto da sincronizzare**: Selezionare i tipi di contenuto da sincronizzare nei dispositivi. **Non configurato** disabilita questa impostazione. Se l'impostazione è **Non configurato** e un'utente finale abilita la sincronizzazione nel dispositivo, la sincronizzazione viene nuovamente disabilitata quando il dispositivo si sincronizza con Intune, poiché viene di nuovo applicato il criterio. 
+
+  È possibile sincronizzare il contenuto seguente: 
   - **Contatti**
   - **Calendarioio**
   - **Attività**
@@ -84,7 +86,9 @@ Come amministratore di Intune, è possibile creare e assegnare le impostazioni d
   - Se è stata selezionata l'opzione **Certificato**, selezionare un profilo certificato client SCEP o PKCS creato in precedenza per autenticare la connessione di Exchange.
 - **SSL**: Consente di usare la comunicazione Secure Sockets Layer (SSL) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con il server Exchange.
 - **Numero di messaggi di posta elettronica da sincronizzare**: selezionare il numero di giorni di posta elettronica da sincronizzare oppure selezionare **Illimitata** nell'elenco a discesa per sincronizzare tutti i messaggi di posta elettronica disponibili.
-- **Tipo di contenuto da sincronizzare** (solo Nine Work): selezionare i tipi di contenuto da sincronizzare nei dispositivi da:
+- **Tipo di contenuto da sincronizzare** (solo Nine Work): Selezionare i tipi di contenuto da sincronizzare nei dispositivi. **Non configurato** disabilita questa impostazione. Se l'impostazione è **Non configurato** e un'utente finale abilita la sincronizzazione nel dispositivo, la sincronizzazione viene nuovamente disabilitata quando il dispositivo si sincronizza con Intune, poiché viene di nuovo applicato il criterio. 
+
+  È possibile sincronizzare il contenuto seguente: 
   - **Contatti**
   - **Calendarioio**
   - **Attività**
