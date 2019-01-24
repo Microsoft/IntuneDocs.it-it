@@ -1,12 +1,12 @@
 ---
-title: Registrare i dispositivi in modalità tutto schermo Android Enterprise in Intune
+title: Configurare la registrazione in Intune per dispositivi Android Enterprise dedicati
 titlesuffix: Microsoft Intune
-description: Informazioni su come registrare i dispositivi in modalità tutto schermo Android Enterprise in Intune.
+description: Informazioni su come registrare i dispositivi Android Enterprise dedicati in Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 6/21/2018
+ms.date: 1/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,43 +16,43 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
-ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
+ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54098318"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386908"
 ---
-# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Configurare la registrazione in Intune dei dispositivi in modalità tutto schermo Android Enterprise
+# <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurare la registrazione in Intune di dispositivi Android Enterprise dedicati
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android supporta i dispositivi in modalità tutto schermo tramite il set di soluzioni per [dispositivi dedicati](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use). Questo tipo di dispositivi vengono usati per un singolo scopo, ad esempio la firma digitale, la stampa di biglietti o la gestione di inventari. Gli amministratori bloccano l'utilizzo di un dispositivo per un set limitato di app e collegamenti Web. Viene anche impedito agli utenti di aggiungere altre app o eseguire altre azioni sul dispositivo.
+Android supporta dispositivi in modalità tutto schermo di proprietà aziendale a uso singolo tramite un set di soluzioni per dispositivi dedicato. Questo tipo di dispositivi vengono usati per un singolo scopo, ad esempio la firma digitale, la stampa di biglietti o la gestione di inventari. Gli amministratori bloccano l'utilizzo di un dispositivo per un set limitato di app e collegamenti Web. Viene anche impedito agli utenti di aggiungere altre app o eseguire altre azioni sul dispositivo.
 
-Intune consente di distribuire app e impostazioni nei dispositivi in modalità tutto schermo Android. Per informazioni dettagliate su Android Enterprise, vedere [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) (Requisiti di Android Enterprise).
+Intune consente di distribuire app e impostazioni in dispositivi Android dedicati. Per informazioni dettagliate su Android Enterprise, vedere [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) (Requisiti di Android Enterprise).
 
 I dispositivi gestiti in questo modo vengono registrati in Intune senza un account utente e non sono associati ad alcun utente finale. Non sono progettati per le applicazioni o le app a uso personale che richiedono dati di account specifici dell'utente, ad esempio Outlook o Gmail.
 
 ## <a name="device-requirements"></a>Requisiti dei dispositivi
 
-Per essere gestiti come dispositivi in modalità tutto schermo Android Enterprise è necessario che i dispositivi soddisfino i requisiti seguenti:
+Per essere gestiti come dispositivi dedicati Android Enterprise, i dispositivi devono soddisfare i requisiti seguenti:
 
 - Sistema operativo Android versione 5.1 e successive.
 - I dispositivi devono eseguire una distribuzione di Android che include la connettività Google Mobile Services (GMS). I dispositivi devono includere GMS e devono essere in grado di connettersi a GMS.
 
-## <a name="set-up-android-kiosk-management"></a>Configurare la gestione della modalità tutto schermo per Android
+## <a name="set-up-android-dedicated-device-management"></a>Configurare la gestione di dispositivi dedicati Android
 
-Per configurare la gestione della modalità tutto schermo di Android, seguire questa procedura:
+Per configurare la gestione di dispositivi dedicati Android, seguire questa procedura:
 
 1. Per preparare la gestione dei dispositivi mobili è necessario [impostare l'autorità MDM (Mobile Device Management) su **Microsoft Intune**](mdm-authority-set.md). Questa opzione viene impostata una sola volta, ovvero quando si configura per la prima volta Intune per la gestione dei dispositivi mobili.
 2. [Connettere l'account del tenant di Intune all'account Android Enterprise](connect-intune-android-enterprise.md).
 3. [Creare un profilo di registrazione.](#create-an-enrollment-profile)
 4. [Creare un gruppo di dispositivi](#create-a-device-group).
-5. [Registrare i dispositivi in modalità tutto schermo](#enroll-the-kiosk-devices).
+5. [Registrare i dispositivi dedicati](#enroll-the-dedicated-devices).
 
 ### <a name="create-an-enrollment-profile"></a>Creare un profilo di registrazione
 
-È necessario creare un profilo di registrazione per poter registrare i dispositivi in modalità tutto schermo. Il profilo creato fornisce un token di registrazione (stringa casuale) e un codice a matrice (codice QR). A seconda del sistema operativo Android e della versione del dispositivo, è possibile usare il token o il codice a matrice per [registrare il dispositivo in modalità tutto schermo](#enroll-the-kiosk-devices).
+Per poter registrare i dispositivi dedicati, è necessario creare un profilo di registrazione. Il profilo creato fornisce un token di registrazione (stringa casuale) e un codice a matrice (codice QR). A seconda del sistema operativo Android e della versione del dispositivo, per [registrare il dispositivo dedicato](#enroll-the-dedicated-devices) è possibile usare il token o un codice a matrice.
 
 1. Passare al [portale di Intune](https://portal.azure.com) e scegliere **Registrazione del dispositivo** > **Registrazione Android** > **Registrazioni dei dispositivi per uso in modalità tutto schermo e per attività**.
 2. Scegliere **Crea** e compilare i campi obbligatori.
@@ -95,81 +95,20 @@ La sostituzione o la revoca di un token o codice a matrice non avrà alcun effet
 4. Per sostituire il token, scegliere **Sostituisci il token**.
 5. Per revocare il token, scegliere **Revoca il token**.
 
-## <a name="enroll-the-kiosk-devices"></a>Registrare i dispositivi in modalità tutto schermo
+## <a name="enroll-the-dedicated-devices"></a>Registrare i dispositivi dedicati
 
-Dopo aver creato il profilo di registrazione e il gruppo di dispositivi dinamico, è possibile registrare i dispositivi in modalità tutto schermo. La modalità di registrazione dei dispositivi Android varia a seconda del sistema operativo.
+È ora possibile [registrare i dispositivi dedicati](android-dedicated-devices-fully-managed-enroll.md).
 
-| Metodo di registrazione | Versione del sistema operativo Android minima supportata |
-| ----- | ----- |
-| NFC (Near Field Communication) | 5.1 |
-| Token | 6.0 |
-| Codice a matrice | 7.0 |
-| Zero Touch | 8.0, su produttori partecipanti |
+## <a name="managing-apps-on-android-dedicated-devices"></a>Gestione delle app nei dispositivi dedicati Android
 
-### <a name="enroll-by-using-near-field-communication-nfc"></a>Registrare con Near Field Communication (NFC)
-
-Per i dispositivi Android 5.1 e versioni successive che supportano NFC, è possibile eseguire il provisioning dei dispositivi creando un tag NFC con formattazione speciale. È possibile usare l'app o qualsiasi strumento di creazione di tag NFC. Per altre informazioni, vedere la [documentazione relativa ad Android Management API di Google](https://developers.google.com/android/management/provision-device#nfc_method).
-
-### <a name="enroll-by-using-a-token"></a>Registrare con un token
-
-Per i dispositivi Android 6 e versioni successive, è possibile usare il token per registrare il dispositivo. In Android 6.1 e versioni successive è anche possibile sfruttare la scansione del codice a matrice quando si usa il metodo di registrazione **afw#setup**.
-
-1. Accendere il dispositivo cancellato.
-2. Nella schermata **Benvenuto** selezionare la lingua.
-3. Connettersi al **Wi-Fi** e quindi scegliere **AVANTI**.
-4. Accettare i termini e le condizioni di Google e quindi scegliere **AVANTI**.
-5. Nella schermata di accesso di Google immettere **afw#setup** anziché un account Gmail e quindi scegliere **AVANTI**.
-6. Scegliere **INSTALLA** per l'app **Android Device Policy**.
-7. Continuare l'installazione dei criteri.  Per alcuni dispositivi è necessario accettare condizioni aggiuntive. 
-8. Nella schermata **Enroll this device** (Registra questo dispositivo) consentire al dispositivo di eseguire la scansione del codice a matrice oppure scegliere di specificare il token manualmente.
-9. Seguire le istruzioni visualizzate per completare la registrazione. 
-
-### <a name="enroll-by-using-a-qr-code"></a>Registrare con un codice a matrice
-
-Nei dispositivi Android 7 e versioni successive è possibile eseguire la scansione del codice a matrice dal profilo di registrazione per registrare il dispositivo.
-
-> [!Note]
-> Lo zoom del browser può impedire ai dispositivi di eseguire la scansione del codice a matrice. È possibile risolvere il problema aumentando il livello di zoom del browser.
-
-1. Per avviare la lettura del codice a matrice nel dispositivo Android, toccare più volte nella prima schermata visualizzata dopo la cancellazione.
-2. Per i dispositivi Android 7 e 8, verrà richiesto di installare un lettore di codici a matrice. I dispositivi Android 9 e versioni successive includono già un lettore di codici a matrice installato.
-3. Usare il lettore di codici a matrice per eseguire la scansione del codice a matrice del profilo di registrazione e quindi seguire le istruzioni visualizzate per effettuare la registrazione.
-
-### <a name="enroll-by-using-google-zero-touch"></a>Registrare con Zero Touch di Google
-
-Per usare il sistema Zero Touch di Google è necessario che il dispositivo lo supporti e sia associato a un fornitore che partecipa al servizio.  Per altre informazioni, vedere il [sito Web del programma Zero Touch di Google](https://www.android.com/enterprise/management/zero-touch/). 
-
-
-1. Creare una nuova configurazione nella console di Zero Touch.
-2. Scegliere **Microsoft Intune** dall'elenco a discesa EMM DPC.
-3. Nella console di Zero Touch di Google copiare e incollare il codice JSON seguente nel campo degli elementi aggiuntivi DPC. Sostituire la stringa *YourEnrollmentToken* con il token di registrazione creato come parte del profilo di registrazione. Assicurarsi di racchiudere il token di registrazione tra virgolette doppie.
-
-```
-{ 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-
-    "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
-    } 
-} 
-```
-4. Scegliere **Applica**.
-
-## <a name="managing-apps-on-android-kiosk-devices"></a>Gestione delle app nei dispositivi in modalità tutto schermo Android
-
-Nei dispositivi in modalità schermo intero Android è possibile installare soltanto le app con il tipo di assegnazione [impostato su Obbligatorio](apps-deploy.md#to-assign-an-app). Le app vengono installate da Google Play Store gestito allo stesso modo dei dispositivi del profilo di lavoro Android.
+Nei dispositivi dedicati Android è possibile installare soltanto app con il tipo di assegnazione [impostato su Obbligatoria](apps-deploy.md#to-assign-an-app). Le app vengono installate da Google Play Store gestito allo stesso modo dei dispositivi del profilo di lavoro Android.
 
 Le app vengono aggiornate automaticamente sui dispositivi gestiti quando lo sviluppatore pubblica un aggiornamento in Google Play.
 
-Per rimuovere un'app dai dispositivi in modalità tutto schermo Android, è possibile eseguire una delle operazioni seguenti:
+Per rimuovere un'app dai dispositivi dedicati Android, è possibile eseguire una delle operazioni seguenti:
 -   Eliminare la distribuzione dell'app obbligatoria.
 -   Creare una distribuzione di disinstallazione per l'app.
 
-
 ## <a name="next-steps"></a>Passaggi successivi
-- [Distribuire le app in modalità tutto schermo Android](apps-deploy.md)
-- [Aggiungere criteri di configurazione in modalità tutto schermo per Android](device-profiles.md)
+- [Distribuire app Android](apps-deploy.md)
+- [Aggiungere criteri di configurazione di Android](device-profiles.md)

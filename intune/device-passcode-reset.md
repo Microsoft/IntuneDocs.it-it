@@ -14,12 +14,12 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8b5f86a8f0d9beaef9e55d2281e3500e0c298a16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2992dbfef4c51b8550e748bde453c85070b6910b
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182399"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418177"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Reimpostare o rimuovere il passcode di un dispositivo in Intune
 
@@ -55,7 +55,8 @@ Per creare un nuovo passcode del profilo di lavoro, usare l'azione di Reimposta 
 
 ## <a name="reset-a-passcode"></a>Reimpostare un passcode
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
+
+1. Accedere al [portale di Azure](https://portal.azure.com) con uno dei ruoli seguenti: Amministratore globale di Azure Active Directory, amministratore del servizio Intune per Azure Active Directory, operatore del supporto tecnico o amministratore dei ruoli. Per l'elenco completo dei ruoli e delle autorizzazioni, vedere la [tabella di controllo degli accessi in base al ruolo di Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 2. Selezionare **Tutti i servizi**, filtrare per **Intune** e quindi selezionare **Microsoft Intune**.
 3. Selezionare **Dispositivi** e quindi selezionare **Tutti i dispositivi**.
 4. Nell'elenco dei dispositivi gestiti selezionare un dispositivo e scegliere **...Altre informazioni**. Quindi scegliere l'azione remota del dispositivo **Rimuovi il passcode**.
