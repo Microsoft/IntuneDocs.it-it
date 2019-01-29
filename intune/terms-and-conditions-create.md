@@ -16,12 +16,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 7283b728e519eb2ca5a9a0b7516774c8cfc26f9b
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032300"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831514"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Termini e condizioni per l'accesso degli utenti
 
@@ -29,7 +29,7 @@ ms.locfileid: "53032300"
 
 L'amministratore di Intune può richiedere agli utenti di accettare termini e condizioni aziendali prima di usare il Portale aziendale per:
 - registrare dispositivi,
-- accedere a risorse quali app aziendali e posta elettronica.
+- accedere a risorse quali app aziendali e posta elettronica.    
 La configurazione dei termini e delle condizioni è facoltativa.
 
 È possibile creare più set di termini e condizioni e assegnarli a gruppi diversi, ad esempio per supportare lingue diverse.
@@ -50,7 +50,7 @@ Completare i passaggi seguenti per creare i termini e le condizioni. Il nome vis
 
    - **Nome visualizzato**: nome per i termini e le condizioni nel portale di Azure. Questo nome non viene visualizzato agli utenti.
 
-   - **Descrizione**: dettagli facoltativi che permettono di identificare questo set di condizioni nel portale di Azure.
+   - **Description**: dettagli facoltativi che permettono di identificare questo set di condizioni nel portale di Azure.
 
 4. Scegliere la freccia accanto a **Define terms of use** (Definisci le condizioni per l'utilizzo) per aprire il riquadro Termini e condizioni e quindi immettere le informazioni seguenti:
 

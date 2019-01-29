@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4082b845643aae47464e4df14ac6621fcf8f39cf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f3bea9b1678669aa568c44e63f57aebd832cf203
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180252"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751179"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Gestire i dispositivi del profilo di lavoro Android con Intune
 
@@ -67,7 +67,7 @@ I criteri di protezione delle app applicati sono completamente supportati nel pr
 
 Il supporto VPN è simile ai profili VPN Android. Sono disponibili gli stessi provider di VPN e le stesse opzioni di configurazione di base per la gestione di Android Enterprise con due differenze:
 
--  **VPN con ambito profilo di lavoro**: le connessioni VPN si limitano alle app distribuite nel profilo di lavoro. Solo le app gestite da Android Enterprise possono usare la connessione VPN. Le app personali nel dispositivo non possono usare una connessione VPN gestita. Per altre informazioni, vedere [Impostazioni VPN per Android Enterpise](vpn-settings-android.md#android-for-work-vpn-settings).
+-  **VPN con ambito profilo di lavoro**: le connessioni VPN si limitano alle app distribuite nel profilo di lavoro. Solo le app gestite da Android Enterprise possono usare la connessione VPN. Le app personali nel dispositivo non possono usare una connessione VPN gestita. Per altre informazioni, vedere [Impostazioni VPN per Android Enterpise](vpn-settings-android.md#android-enterprise-vpn-settings).
 
 -  **VPN specifica dell'app**: la VPN specifica dell'app può essere configurata in Intune se il provider VPN supporta:
     - la configurazione per la VPN specifica dell'app

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: cdac4623c6c5c9e7258897e1536856e6b24492ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 8479e69d661b163778a4d0b4eb1f68e729436f4e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032011"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831497"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows Holographic for Business per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -28,7 +28,7 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-[Creare un profilo di configurazione del dispositivo](device-restrictions-configure.md).
+[Creare un profilo di configurazione del dispositivo](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="general"></a>Generale
 
@@ -79,7 +79,7 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 
 ## <a name="kiosk---obsolete"></a>Modalità tutto schermo - Obsoleta
 
-Queste impostazioni sono di sola lettura e non possono essere modificate. Per configurare la modalità tutto schermo, vedere [Impostazioni della modalità tutto schermo](kiosk-settings.md#windows-holographic-for-business).
+Queste impostazioni sono di sola lettura e non possono essere modificate. Per configurare la modalità tutto schermo, vedere [Impostazioni della modalità tutto schermo](kiosk-settings-holographic.md).
 
 In genere un'app specifica viene eseguita in un dispositivo in modalità tutto schermo. Agli utenti viene impedito l'accesso a qualsiasi funzionalità o funzione del dispositivo all'esterno dell'app in modalità tutto schermo.
 
@@ -104,3 +104,7 @@ Immettere le impostazioni seguenti:
 ## <a name="reporting-and-telemetry"></a>Creazione di report e telemetria
 
 - **Condividi i dati di utilizzo**: selezionare il livello di invio dei dati diagnostici.
+
+## <a name="next-steps"></a>Passaggi successivi
+
+[Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).

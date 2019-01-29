@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 91f338a768ef67106a9b65de759dd74da2902138
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387005"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072559"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Android Enterprise per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -48,7 +48,6 @@ Questo articolo descrive le diverse impostazioni che è possibile controllare ne
 - **Modifiche alle impostazioni Wi-Fi**: scegliere **Blocca** per impedire agli utenti di modificare le impostazioni Wi-Fi create dal proprietario del dispositivo. Gli utenti possono creare configurazioni Wi-Fi personalizzate. **Non configurata** consente agli utenti di modificare le impostazioni Wi-Fi nel dispositivo.
 - **Configurazione del punto di accesso Wi-Fi**: scegliere **Blocca** per impedire agli utenti di creare o modificare configurazioni Wi-Fi. **Non configurata** consente agli utenti di modificare le impostazioni Wi-Fi nel dispositivo.
 - **Configurazione Bluetooth**: scegliere **Blocca** per impedire agli utenti di configurare Bluetooth nel dispositivo. **Non configurata** consente di usare Bluetooth nel dispositivo.
-- **Condivisione dei contatti tramite Bluetooth**: scegliere **Blocca** per impedire l'accesso ai contatti di lavoro da un altro dispositivo, ad esempio un sistema per auto quando un dispositivo Android viene associato tramite Bluetooth. **Non configurata** consente l'accesso ai contatti di lavoro in un altro dispositivo Bluetooth associato al dispositivo Android.
 - **Tethering e accesso a hotspot**: scegliere **Blocca** per impedire il tethering e l'accesso a hotspot portatili. **Non configurata** consente il tethering e l'accesso a hotspot portatili.
 - **Archiviazione USB**: scegliere **Consenti** per consentire l'accesso all'archiviazione USB nel dispositivo. **Non configurata** impedisce l'accesso all'archiviazione USB.
 - **Trasferimento di file su USB**: scegliere **Blocca** per impedire il trasferimento di file tramite USB. **Non configurata** consente il trasferimento di file.

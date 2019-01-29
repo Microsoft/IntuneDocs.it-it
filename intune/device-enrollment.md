@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
-ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
+ms.openlocfilehash: a94722c4f4a1d199e32f6ba0c56ca4bdb2b3b09b
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53570809"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199456"
 ---
 # <a name="what-is-device-enrollment"></a>Che cos'è la registrazione dei dispositivi?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -81,7 +81,7 @@ I [dispositivi di proprietà dell'azienda](corporate-identifiers-add.md) includo
 ### <a name="device-enrollment-manager"></a>Manager di registrazione dispositivi
 Il manager di registrazione dispositivi (DEM, Device Enrollment Manager) è un account utente speciale usato per registrare e gestire più dispositivi di proprietà dell'azienda. I manager possono installare il Portale aziendale e registrare molti dispositivi senza utente associato. Questi tipi di dispositivi sono ideali per app POS o di utilità, ad esempio, ma non sono adatti per gli utenti che devono accedere alla posta elettronica o alle risorse aziendali. Altre informazioni su [DEM](./device-enrollment-manager-enroll.md). 
 
-### <a name="apple-device-enrollment-program"></a>Apple Device Enrollment Program
+### <a name="apple-device-enrollment-program"></a>Programma di registrazione del dispositivo mobile di Apple
 La gestione di Apple Device Enrollment Program (DEP) consente di creare e distribuire i criteri in modalità wireless ai dispositivi iOS e macOS acquistati e gestiti tramite DEP. Il dispositivo viene registrato quando l'utente accende il dispositivo per la prima volta ed esegue l'Assistente configurazione. Questo metodo supporta la modalità con supervisione iOS, che abilita la configurazione del dispositivo con funzionalità specifiche.
 
 Per altre informazioni sulla registrazione DEP iOS, vedere:
@@ -106,9 +106,6 @@ Per altre informazioni sulla registrazione di iOS, vedere:
 
 - [Stabilire come registrare i dispositivi iOS](enrollment-method-choose-ios.md)
 - [Enroll iOS devices with Configurator and direct enrollment](apple-configurator-direct-enroll-ios.md) (Registrare dispositivi iOS con Configurator e registrazione diretta)
-
-## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Gestione dei dispositivi mobili con Exchange ActiveSync e Intune
-I dispositivi mobili che non sono registrati, ma che sono connessi a Exchange ActiveSync, possono essere gestiti da Intune mediante i criteri MDM di EAS. Intune usa Exchange Connector per comunicare con EAS (Exchange Active Sync), in locale oppure ospitato nel cloud. Maggiori informazioni saranno disponibili a breve.
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Pulizia dei dispositivi mobili dopo la scadenza del certificato MDM
 

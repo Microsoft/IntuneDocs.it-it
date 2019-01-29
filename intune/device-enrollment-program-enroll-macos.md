@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 91d85182ccb51968915511d6d1941a350e3a9695
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032351"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068289"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Registrare automaticamente i dispositivi macOS con Device Enrollment Program o Apple School Manager
 
@@ -150,7 +150,7 @@ Ora che è stato installato il token, è possibile creare un profilo di registra
     | <strong>FileVault</strong> | Offrirà all'utente la possibilità di configurare la crittografia FileVault. |
     | <strong>Diagnostica iCloud</strong> | Offrirà all'utente la possibilità di inviare dati di diagnostica iCloud ad Apple. |
     | <strong>Registrazione</strong>| Richiederà all'utente di registrare il dispositivo. |
-
+    
    
 
 10. Scegliere **OK**.

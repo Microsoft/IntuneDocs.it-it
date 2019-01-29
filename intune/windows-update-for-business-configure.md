@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297384"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831565"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gestire gli aggiornamenti software in Intune
 
@@ -106,7 +106,7 @@ Dopo aver creato anelli di aggiornamento, assegnarli a gruppi di dispositivi. Us
 
    - **Impedisci all'utente di sospendere gli aggiornamenti Windows**: abilitata per impostazione predefinita. Usare questa impostazione per impedire o consentire agli utenti di sospendere l'installazione degli aggiornamenti da *Impostazioni* nei loro computer. 
       
-   - **Modalità di download con ottimizzazione recapito**: L’ottimizzazione del recapito non viene più configurata nell’ambito di un anello di aggiornamento di Windows 10 durante l’esecuzione della funzionalità Aggiornamenti software. L’ottimizzazione del recapito ora viene impostata tramite la configurazione del dispositivo. Tuttavia, le configurazioni precedenti rimangono disponibili nella console. È possibile rimuovere le configurazioni precedenti impostandole su *Non configurato*. Non è tuttavia possibile modificarle in altro modo. Per evitare conflitti tra criteri nuovi e precedenti, vedere [Passare dagli anelli di aggiornamento esistenti a ottimizzazione recapito](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) e quindi spostare le impostazioni in un profilo di ottimizzazione recapito. 
+   - **Modalità di download con ottimizzazione recapito**: L’ottimizzazione del recapito non viene più configurata nell’ambito di un anello di aggiornamento di Windows 10 durante l’esecuzione della funzionalità Aggiornamenti software. L’ottimizzazione del recapito ora viene impostata tramite la configurazione del dispositivo. Tuttavia, le configurazioni precedenti rimangono disponibili nella console. È possibile rimuovere le configurazioni precedenti impostandole su *Non configurato*. Non è tuttavia possibile modificarle in altro modo. Per evitare conflitti tra criteri nuovi e precedenti, vedere [Passare dagli anelli di aggiornamento esistenti a ottimizzazione recapito](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) e quindi spostare le impostazioni in un profilo di ottimizzazione recapito. 
 
 5. Al termine, selezionare **OK**. In **Crea l'anello di aggiornamento** selezionare **Crea**.
 

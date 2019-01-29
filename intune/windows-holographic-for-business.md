@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: df91908f3d3be7be23e3cecfa83e2d92b656b91e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203383"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831599"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gestire e usare diverse funzionalità di gestione dei dispositivi nei dispositivi Windows Holographic e HoloLens con Intune
 
@@ -90,7 +90,7 @@ Quando si usano dispositivi che eseguono Windows Holographic for Business, è po
 
 - **[Sincronizzare i dispositivi per ottenere i criteri e le azioni più recenti](device-sync.md)**: l'azione **Sincronizza** forza il dispositivo a contattare immediatamente Intune. Quando un dispositivo esegue l'archiviazione, riceve immediatamente eventuali azioni o criteri in sospeso assegnati. Questa funzionalità consente di convalidare e risolvere i problemi dei criteri assegnati, senza attendere la successiva archiviazione pianificata.
 
-**[Informazioni sulla gestione dei dispositivi in Microsoft Intune](device-management.md) ** è un'ottima risorsa per ottenere informazioni sulla gestione dei dispositivi tramite il portale di Azure. 
+**[Informazioni sulla gestione dei dispositivi in Microsoft Intune](device-management.md)**  è un'ottima risorsa per ottenere informazioni sulla gestione dei dispositivi tramite il portale di Azure. 
 
 ## <a name="device-categories-and-groups"></a>Categorie e gruppi di dispositivi
 **[Raggruppare i dispositivi in categorie](device-group-mapping.md)**
@@ -108,7 +108,7 @@ Nei profili è possibile usare URI OMA per personalizzare alcune impostazioni, c
 
 Per configurare le impostazioni OMA-URI (Open Mobile Alliance Uniform Resource Identifier), è possibile creare un profilo personalizzato in Intune. Usare le impostazioni URI OMA per controllare diverse funzionalità nei dispositivi Windows Holographic for Business, ad esempio abilitare la rete VPN o controllare gli aggiornamenti su Microsoft Update.
 
-#### <a name="configure-kiosk-modekiosk-settingsmdwindows-holographic-for-business"></a>[Configurare la modalità tutto schermo](kiosk-settings.md#windows-holographic-for-business)
+#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[Configurare la modalità tutto schermo](kiosk-settings-holographic.md)
 
 Grazie alle funzionalità del PC in condivisione o guest disponibili in Intune, è possibile configurare i dispositivi Windows Holographic for Business per l'esecuzione in modalità tutto schermo. Questi dispositivi possono eseguire un'app (modalità tutto schermo per app singola), o più app (modalità tutto schermo per più app).
 
