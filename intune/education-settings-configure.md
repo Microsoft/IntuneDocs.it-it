@@ -1,12 +1,11 @@
 ---
-title: Configurare le impostazioni di Windows 10 relative alla formazione con Intune
-titleSuffix: Microsoft Intune
-description: Informazioni su come usare Intune per configurare le impostazioni di Windows 10 relative alla formazione nei dispositivi gestiti.
+title: Aggiungere o configurare le impostazioni Istruzione in Microsoft Intune - Azure | Microsoft Docs
+description: Usare l'app Test ed esami in un profilo di configurazione del dispositivo in Windows 10 e versioni successive in Microsoft Intune. Creare un profilo di configurazione usando le impostazioni Istruzione e immettere l'URL di un'app di test, scegliere la modalità di accesso degli utenti, monitorare lo schermo durante il test e consentire o impedire i suggerimenti di testo durante il test.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,44 +15,46 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 120aca8dae457748fea322ce164aa663ffa7e748
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1e49e1673e0bebdcdafb8ad7792051c76b80f696
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187379"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831460"
 ---
-# <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Come configurare le impostazioni di Windows 10 relative alla formazione in Microsoft Intune
+# <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Usare l'app Test ed esami nei dispositivi Windows 10 in Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-I profili di formazione consentono di specificare i dettagli per configurare l'app Test ed esami di Windows, inclusi i dettagli dell'account e l'URL di test. Quando si configurano queste opzioni, l'app Test ed esami viene aperta con il test specificato e nessun'altra app può essere eseguita sul dispositivo finché il test non è completato.
+I profili di formazione in Intune hanno lo scopo di consentire agli studenti di eseguire un test o un esame da un dispositivo. Questa funzionalità include l'app **Test ed esami** e le impostazioni per aggiungere un URL di test, scegliere la modalità di accesso degli utenti finali al test e altro ancora. Questa funzionalità supporta la piattaforma seguente:
 
-Per informazioni dettagliate su 	Test ed esami, vedere [Test ed esami in Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
+- Windows 10 e versioni successive
 
-## <a name="create-a-device-profile-containing-education-profile-settings"></a>Creare un profilo di dispositivo contenente le impostazioni del profilo di formazione
+Quando l'utente accede, l'app Test ed esami viene aperta automaticamente con il test da eseguire. Mentre il test è in corso, non è possibile eseguire altre applicazioni nel dispositivo. [Eseguire test in Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10) offre altri dettagli dell'app Test ed esami.
 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** scegliere **Configurazione del dispositivo**.
-2. Nel riquadro **Configurazione del dispositivo** trovare la sezione **Gestisci** e scegliere **Profili**.
-3. Nel riquadro dei profili scegliere **Crea profilo**.
-4. Nella pagina **Crea profilo** immettere **Nome** e **Descrizione** per il profilo di restrizione del dispositivo.
-5. Dall'elenco a discesa **Piattaforma** selezionare **Windows 10 e versioni successive**.
-6. Dall'elenco a discesa **Tipo di profilo** selezionare **Profilo di formazione**. 
-7. Scegliere **Impostazioni > Configura** e nel riquadro **Test ed esami** configurare quanto segue:
-    - **Tipo di account**: selezionare un tipo di account dal campo a discesa.
-    - **Nome dell'account utente**: immettere il nome utente dell'account usato con Test ed esami. Può trattarsi di un account di dominio, un account Azure Active Directory (AAD) o un account computer locale.
-    - **URL della valutazione**: specificare l'URL del test che dovrà essere eseguito dagli utenti. Per altre informazioni, vedere la documentazione relativa a Test ed esami.
-    - **Monitoraggio dello schermo**: specificare se si vuole essere in grado di monitorare l'attività dello schermo mentre gli utenti eseguono un test.
-    - **Suggerimento di testo**: consentire o bloccare i suggerimenti di testo mentre gli utenti eseguono un test.
-8. Al termine tornare al riquadro **Crea profilo** e scegliere **Crea**.
+Questo articolo elenca i passaggi per creare un profilo di configurazione del dispositivo in Microsoft Intune e include anche informazioni da leggere e imparare sulle impostazioni di formazione disponibili per i dispositivi Windows 10.
 
-Il profilo verrà creato e visualizzato nel riquadro dell'elenco dei profili.
+## <a name="create-a-device-profile"></a>Creare un profilo del dispositivo
+
+1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi** > filtrare per **Intune** > selezionare **Microsoft Intune**.
+2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+3. Immettere le proprietà seguenti:
+
+    - **Nome**: immettere un nome descrittivo per il nuovo profilo.
+    - **Description**: Immettere una descrizione del profilo. Questa impostazione è facoltativa ma consigliata.
+    - **Piattaforma**: scegliere **Windows 10 e versioni successive**.
+    - **Profilo**: scegliere **Profilo di formazione**.
+
+4. Immettere le impostazioni da configurare:
+
+    - [Windows 10 e versioni successive](education-settings-windows.md)
+
+5. Selezionare **OK** > **Crea** per salvare le modifiche.
+
+Dopo aver immesso le impostazioni e creato il profilo, il profilo viene visualizzato nell'elenco dei profili. Ora [assegnare il profilo ad alcuni gruppi](device-profile-assign.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Se si desidera proseguire e assegnare il profilo ai gruppi, vedere [Come assegnare i profili di dispositivo](device-profile-assign.md).
+Visualizzare l'elenco delle [ impostazioni di formazione di Windows 10](education-settings-windows.md) e le relative descrizioni.
 
-
-
+[Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).

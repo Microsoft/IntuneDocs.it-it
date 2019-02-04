@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1584344907df168a98f947e187d6f0f0ef4a492a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d6ee36785c4134dd1c346bdc464096e832df3a9c
+ms.sourcegitcommit: f854ed8619ac66fe626198d8e4a8cac2e0c0710a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187920"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460056"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Come gestire le app acquistate in Microsoft Store per le aziende con Microsoft Intune
 
@@ -52,12 +52,12 @@ Inoltre, i set correlati e le app con licenza offline sincronizzate da Microsoft
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Associare l'account Microsoft Store per le aziende a Intune
 Prima di abilitare la sincronizzazione nella console di Intune, è necessario configurare l'account dello Store per usare Intune come strumento di gestione:
-1. Assicurarsi di accedere a Windows Store per le aziende con lo stesso account tenant usato per accedere a Intune.
-2. In Business Store scegliere **Impostazioni** > **Strumenti di gestione**.
-3. Nella pagina Strumenti di gestione scegliere **Aggiungi uno strumento di gestione** e scegliere **Microsoft Intune**.
+1. Assicurarsi di accedere a [Microsoft Store per le aziende](https://www.microsoft.com/business-store) con lo stesso account tenant usato per accedere a Intune.
+2. In Business Store scegliere la scheda **Manage** (Gestione), selezionare **Settings** (Impostazioni) e scegliere la scheda **Distribute** (Distribuire).
+3. Se **Microsoft Intune** non è disponibile come strumento di gestione di dispositivi mobili, scegliere **Add management tool** (Aggiungi strumento di gestione) per aggiungere **Microsoft Intune**. Se **Microsoft Intune** non è attivo come strumento di gestione di dispositivi mobili, fare clic su **Activate** (Attiva) accanto a **Microsoft Intune**. Si noti che è necessario attivare **Microsoft Intune** anziché **Registrazione di Microsoft Intune**.
 
 > [!NOTE]
-> In precedenza era possibile associare a Microsoft Store per le aziende un solo strumento di gestione per l'assegnazione di app. È ora possibile associare più strumenti di gestione allo Store, ad esempio Intune e Configuration Manager.
+> In precedenza era possibile associare a Microsoft Store per le aziende un solo strumento di gestione per l'assegnazione di app. È ora possibile associare più strumenti di gestione allo Store, ad esempio Intune e Configuration Manager. 
 
 È ora possibile continuare con l'impostazione della sincronizzazione nella console di Intune.
 
@@ -92,12 +92,12 @@ Quando si assegna un'app di Microsoft Store per le aziende, viene usata una lice
 
 ## <a name="remove-apps"></a>Rimuovere app
 
-Per rimuovere un'app sincronizzata da Microsoft Store per le aziende, è necessario accedere a Microsoft Store per le aziende e rimborsare l'app.
+Per rimuovere un'app sincronizzata da Microsoft Store per le aziende, è necessario accedere a Microsoft Store per le aziende e rimborsare l'app. Il processo è identico indipendentemente dal fatto che l'app sia gratuita o meno. Per un'app gratuita lo store rimborserà $ 0. L'esempio seguente mostra un rimborso per un'app gratuita. 
 
 ![Schermata dei dettagli di rimozione dell'app](./media/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> La rimozione della visibilità di un'app nello store privato non impedisce a Intune di eseguirne la sincronizzazione. È necessario rimborsare l'app.
+> La rimozione della visibilità di un'app nello store privato non impedisce a Intune di eseguirne la sincronizzazione. È necessario rimborsare l'app per rimuovere completamente l'app.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

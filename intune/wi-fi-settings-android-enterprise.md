@@ -1,12 +1,11 @@
 ---
-title: Impostazioni Wi-Fi per dispositivi Android Enterprise e in modalità tutto schermo
-titleSuffix: Microsoft Intune
+title: Impostazioni Wi-Fi per i dispositivi Android Enterprise e i dispositivi in modalità tutto schermo - Microsoft Intune | Microsoft Docs
 description: Creare o aggiungere un profilo di configurazione del dispositivo Wi-Fi per dispositivi Android Enterprise e Android in modalità a tutto schermo. Vedere le diverse impostazioni, incluse l'aggiunta di certificati, la scelta di un tipo EAP e la selezione di un metodo di autenticazione in Microsoft Intune. Per i dispositivi in modalità a tutto schermo, immettere anche la chiave precondivisa della rete.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,22 +13,22 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1424cd43c6ccde17724a4165fe74def4da291e29
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ea72cda4cb72af9028c52078e2215619bb2bef3c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831480"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Aggiungere le impostazioni Wi-Fi per i dispositivi che eseguono Android Enterprise e i dispositivi Android in modalità tutto schermo in Microsoft Intune
 
 È possibile creare un profilo con impostazioni Wi-Fi specifiche e quindi distribuire questo profilo ai dispositivi Android Enterprise e Android in modalità tutto schermo. Microsoft Intune offre numerose funzionalità, tra cui l'autenticazione nella rete, l'uso di una chiave precondivisa e altro ancora.
 
-Questo articolo descrive queste impostazioni.
+Questo articolo descrive queste impostazioni. [Usare le impostazioni Wi-Fi nei dispositivi](wi-fi-settings-configure.md) contiene altre informazioni sulla funzionalità Wi-Fi in Microsoft Intune.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-[Creare un profilo di dispositivo](device-profile-create.md).
+[Creare un profilo di dispositivo](wi-fi-settings-configure.md#create-a-device-profile).
 
 ## <a name="device-owner-only---kiosk"></a>Solo proprietario del dispositivo - Modalità tutto schermo
 
@@ -116,9 +115,6 @@ Selezionare **OK** > **Crea** per salvare le modifiche. Il profilo verrà creato
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Il profilo viene creato, ma non è ancora operativo. [Assegnare il profilo](device-profile-assign.md).
+Il profilo viene creato, ma non è ancora operativo. [Assegnare il profilo](device-profile-assign.md) e [monitorarne lo stato](device-profile-monitor.md).
 
-## <a name="more-resources"></a>Altre risorse
-
-- Vedere le impostazioni disponibili per i dispositivi Android in [Configurare le impostazioni Wi-Fi per dispositivi Android in Microsoft Intune](wi-fi-settings-android.md).
-- [Panoramica delle impostazioni Wi-Fi](wi-fi-settings-configure.md), incluse altre piattaforme.
+È anche possibile creare profili Wi-Fi per dispositivi [Android](wi-fi-settings-android.md), [iOS](wi-fi-settings-ios.md), [macOS](wi-fi-settings-macos.md), [Windows 10](wi-fi-settings-windows.md) e [Windows 8.1](wi-fi-settings-import-windows-8-1.md).

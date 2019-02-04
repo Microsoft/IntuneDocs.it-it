@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 ms.reviewer: smithre4
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 691029cc7b9fd8880c5440a84b95bbf2462920d6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 433d15d91bc32ef409c9a89c4d71cacb7478e74d
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180324"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068306"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Impostazioni di configurazione di Microsoft Outlook 
 
@@ -29,18 +29,9 @@ Per creare un criterio di configurazione dell'app per i dispositivi iOS gestiti,
 
 ## <a name="configuration-settings"></a>Impostazioni di configurazione
 
-Quando si aggiunge un criterio di configurazione in Intune, è possibile impostare impostazioni specifiche per configurare Microsoft Outlook. Nel riquadro **Impostazioni di configurazione** è possibile impostare la configurazione dell'account di posta elettronica.
+Quando si aggiunge un criterio di configurazione in Intune, è possibile impostare impostazioni specifiche per configurare Microsoft Outlook in iOS e Android. Nel riquadro Impostazioni di configurazione è possibile specificare la configurazione dell'account di posta elettronica e configurare le impostazioni specifiche dell'app. Inoltre è possibile configurare queste impostazioni e/o usare coppie nome-valore.
 
-### <a name="basic-authentication-email-account-settings"></a>Impostazioni dell'account di posta elettronica per l'autenticazione di base
-Outlook per iOS e Android offre agli amministratori di Exchange la possibilità di effettuare il "push" delle configurazioni degli account agli utenti locali che usano l'autenticazione di base con il protocollo ActiveSync. Per altre informazioni, vedere [Configurazione di account in Outlook per iOS e Android utilizzando l'autenticazione di base](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/account-setup). Per abilitare la configurazione degli account, è possibile configurare le impostazioni seguenti:
-
-- **Server di posta elettronica**: immettere il nome host del server Exchange locale (ad esempio mail.contoso.com).
-- **Nome dell'account di posta elettronica**: immettere il nome visualizzato per l'account di posta elettronica. Questo nome viene visualizzato nel dispositivo degli utenti.
-- **Attributo nome utente da AAD**: questo nome è l'attributo che Intune ottiene da Azure Active Directory (Azure AD). Intune genera in modo dinamico il nome utente usato da questo profilo. Alcune delle opzioni possibili sono:
-  - **Nome dell'entità utente**: ottiene il nome, ad esempio `user1` o `user1@contoso.com`
-  - **Indirizzo SMTP primario**: ottiene il nome nel formato dell'indirizzo di posta elettronica, ad esempio `user1@contoso.com`
-- **Email address attribute from AAD** (Attributo indirizzo di posta elettronica da AAD): scegliere la modalità di generazione dell'indirizzo di posta elettronica per l'utente. Selezionare **Nome dell'entità utente** (`user1@contoso.com` o `user1`) per usare il nome completo dell'entità utente come indirizzo di posta elettronica oppure selezionare **Indirizzo SMTP primario** (`user1@contoso.com`)per usare l'indirizzo SMTP primario per accedere a Exchange. Si consiglia di selezionare **Indirizzo SMTP primario**.
-- **Dominio dell'account**: (facoltativo) dominio dell'account.
+Per le informazioni sulla configurazione dell'account di Outlook e per le procedure per i dispositivi iOS e Android in Microsoft Intune, vedere [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) (Distribuzione di Outlook per le impostazioni di configurazione delle app iOS e Android).
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Configurare le impostazioni di posta elettronica in Intune](email-settings-configure.md)

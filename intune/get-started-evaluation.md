@@ -1,12 +1,12 @@
 ---
-title: Introduzione a Microsoft Intune
+title: Che cosa può fare Microsoft Intune per la mia azienda
 titleSuffix: ''
-description: Ecco una serie di guide introduttive pratiche per acquisire informazioni su Intune.
+description: Problemi aziendali comuni che Microsoft Intune contribuisce a risolvere.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8adb038fbd5fa1b4ad2400a215eb228b81433bde
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c8e15675beb97b396c9340e2ab3bfa86a3a43f76
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186903"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831429"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Che cosa può fare Intune per la mia azienda?
 Microsoft Intune è un servizio di gestione della mobilità aziendale (EMM) basato su cloud che consente alla forza lavoro di essere produttiva, garantendo al tempo stesso la protezione dei dati aziendali.

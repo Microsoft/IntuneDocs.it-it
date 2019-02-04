@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068323"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune autonomo - Gestione di app Win32 (anteprima pubblica)
 
@@ -92,10 +92,10 @@ In modo analogo a un'app line-of-business, è possibile aggiungere un'app Win32 
 1.  Nel riquadro **Aggiungi app** selezionare **Informazioni sull'app** per configurare l'app.
 2.  Nel riquadro **Informazioni sull'app** configurare le informazioni seguenti. Alcuni dei valori in questo riquadro potrebbero venire inseriti automaticamente.
     - **Nome**: immettere il nome dell'app che viene visualizzato nel portale aziendale. Se il nome di un'app è usato due volte, ogni app verrà visualizzata nel portale aziendale.
-    - **Descrizione**: immettere una descrizione per l'app. La descrizione viene visualizzata nel portale aziendale.
-    - **Autore**: immettere il nome dell'autore dell'app.
+    - **Description**: Immettere una descrizione per l'app. La descrizione viene visualizzata nel portale aziendale.
+    - **Autore**: Immettere il nome dell'autore dell'app.
     - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. Le categorie consentono agli utenti di trovare più facilmente l'app nel portale aziendale.
-    - **Visualizza come app in primo piano nel portale aziendale**: visualizzare chiaramente l'app nella pagina principale del portale aziendale quando gli utenti cercano le app.
+    - **Visualizza come app in primo piano nel portale aziendale**: Visualizzare chiaramente l'app nella pagina principale del portale aziendale quando gli utenti cercano le app.
     - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
     - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato nel portale aziendale.
     - **Sviluppatore**: immettere il nome dello sviluppatore dell'app (facoltativo).
@@ -239,6 +239,9 @@ L'utente finale riceverà le notifiche di tipo avviso popup di Windows per le in
 Nell'immagine seguente l'utente finale riceve una notifica indicante che sono in corso modifiche all'app nel dispositivo.
 
 ![Screenshot di invio della notifica relativa alle modifiche in corso per l'app](./media/apps-win32-app-09.png)    
+
+## <a name="toast-notifications-for-win32-apps"></a>Notifiche di tipo avviso popup per app Win32 
+Se necessario, è possibile eliminare la visualizzazione delle notifiche di tipo avviso popup degli utenti finali per ogni assegnazione di app. Da Intune, selezionare **App Client** > **App** > selezionare l'app > **Assegnazioni** > **Include Groups** (Includi gruppi). 
 
 ## <a name="troubleshoot-win32-app-issues"></a>Risolvere i problemi delle app Win32
 I log dell'agente nel computer client si trovano in genere in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. È possibile usare `CMTrace.exe` per visualizzare questi file di log. *CMTrace.exe* può essere scaricato da [Strumenti client SCCM](https://docs.microsoft.com/sccm/core/support/tools). 

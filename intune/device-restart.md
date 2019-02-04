@@ -14,12 +14,12 @@ ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aa16e180b016ec142ecca5644b7f93fb088d15f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f814abc4d47517c17e24a188c7efb5da771bc328
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184304"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068272"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Riavviare i dispositivi in remoto con Intune
 
@@ -32,7 +32,7 @@ L'azione del dispositivo **Riavvia** causa il riavvio del dispositivo scelto. Il
 
 - Windows: funzionalità supportata in Windows 8.1 e versioni successive
 - Windows Phone: funzionalità supportata in Windows Phone 8.1 e versioni successive
-- Dispositivi Android in modalità tutto schermo: funzionalità supportata
+- Dispositivi in modalità tutto schermo Android: supportati in Android 7.0 e versioni successive
 - iOS: funzionalità supportata
 
     > [!Note]  

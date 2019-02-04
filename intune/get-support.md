@@ -15,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 11bcf3742270a3f32919b133efdc2ab3f0c4d2d1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 87d25fa76b3d2716099178ca428c8032fd99886c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203349"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831633"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Come ottenere supporto per Microsoft Intune
 
@@ -42,7 +42,7 @@ L'amministratore IT può usare l'opzione **Guida e supporto** per inviare un tic
 
 ## <a name="help-and-support-experience"></a>Esperienza di Guida e supporto tecnico
 > [!TIP]   
-> Nel gennaio 2019 sarà disponibile una nuova esperienza di Guida e supporto tecnico in tutti i tenant. Se il tenant in uso non dispone ancora di questa nuova esperienza, è possibile trovare informazioni relative all'esperienza precedente nella sezione [Esperienza di Guida e supporto tecnico di Azure](#azure-help-+-support-experience) in questo articolo.  
+> È disponibile una nuova esperienza di Guida e supporto tecnico per tutti i tenant. Se non viene visualizzata questa nuova esperienza nel tenant, cancellare la cache del browser e ricaricare la pagina.
 
 L’esperienza di Guida e supporto tecnico per Intune è disponibile nel [portale Gestione dispositivi di Microsoft 365](http://devicemanagement.microsoft.com) e in tutti i pannelli o tutte le pagine di Intune nel portale di Azure. 
 

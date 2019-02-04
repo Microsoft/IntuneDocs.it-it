@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/17/2018
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,32 +14,28 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
-ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
+ms.openlocfilehash: 806df8077045a4ad81cb7e221bd053059461a2fd
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53531329"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199405"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introduzione ai criteri di conformità dei dispositivi in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-I requisiti di conformità sono essenzialmente delle regole, ad esempio richiedere un PIN del dispositivo o richiedere la crittografia. I criteri di conformità dei dispositivi definiscono tali regole e le impostazioni che un dispositivo deve soddisfare per essere considerato conforme. Queste regole includono:
+Molte soluzioni di gestione di dispositivi mobili (MDM, Mobile Device Management) consentono di proteggere i dati dell'organizzazione richiedendo agli utenti e ai dispositivi di soddisfare alcuni requisiti. In Intune, questa funzionalità è detta "criteri di conformità". I criteri di conformità definiscono le regole e le impostazioni che gli utenti e i dispositivi devono soddisfare per adeguarsi ai criteri stessi. Combinando questi criteri con l'accesso condizionale, gli amministratori possono bloccare gli utenti e i dispositivi che non rispettano le regole. Un amministratore di Intune può, ad esempio, richiedere:
 
-- Uso di una password per l'accesso ai dispositivi
+- L'uso di una password da parte degli utenti finali per accedere ai dati dell'organizzazione nei dispositivi mobili
 
-- Crittografia
+- L'uso di un dispositivo non manomesso con jailbreak e senza accesso root
 
-- Dispositivo non manomesso con jailbreak o root
+- Una versione massima o minima del sistema operativo per il dispositivo
 
-- Versione minima richiesta del sistema operativo
+- Un livello di minaccia del dispositivo corrispondente o inferiore a un certo livello
 
-- Versione massima consentita del sistema operativo
-
-- Dispositivo non al di sopra del livello di Mobile Threat Defense
-
-È anche possibile usare questi criteri per monitorare lo stato di conformità nei dispositivi.
+È anche possibile monitorare lo stato di conformità dei dispositivi tramite criteri di conformità.
 
 > [!IMPORTANT]
 > Intune segue la pianificazione in base alla quale il dispositivo contatta il servizio per tutte le valutazioni di conformità sul dispositivo. [Altre informazioni su questa pianificazione](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
@@ -68,7 +64,8 @@ compliance issues on the device. You can also use this time to create your actio
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ## <a name="prerequisites"></a>Prerequisiti
-Per usare i criteri di conformità dei dispositivi, devono essere soddisfatti i requisiti seguenti:
+
+Per usare criteri di conformità del dispositivo, attenersi a quanto segue:
 
 - Uso delle sottoscrizioni seguenti:
 
@@ -84,30 +81,28 @@ Per usare i criteri di conformità dei dispositivi, devono essere soddisfatti i 
   - Windows Phone 8.1
   - Windows 10
 
-- Per segnalare il proprio stato di conformità, i dispositivi devono essere registrati in Intune
+- Registrazione dei dispositivi in Intune per visualizzarne lo stato di conformità
 
-- Sono supportati i dispositivi registrati per un utente o i dispositivi senza utente primario. Più contesti utente non sono supportati.
+- Registrazione dei dispositivi per un solo utente o senza un utente primario. Non sono supportati dispositivi registrati per più utenti.
 
-## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Funzionamento dei criteri di conformità Intune con Azure AD
+## <a name="how-device-compliance-policies-work-with-azure-ad"></a>Funzionamento dei criteri di conformità del dispositivo con Azure AD
 
 Al momento della registrazione in Intune viene avviato il processo di registrazione di Azure AD durante il quale gli attributi del dispositivo vengono aggiornati in Azure AD. Un'informazione chiave è lo stato di conformità del dispositivo. Lo stato di conformità che viene usato dai criteri di accesso condizionale per bloccare o consentire l'accesso alla posta elettronica e ad altre risorse aziendali.
 
 In [processo di registrazione di AD Azure](https://docs.microsoft.com/azure/active-directory/device-management-introduction) vengono fornite ulteriori informazioni.
 
-### <a name="assign-a-resulting-device-configuration-profile-status"></a>Assegnare uno stato del profilo di configurazione del dispositivo risultante
+## <a name="refresh-cycle-times"></a>Frequenza dei cicli di aggiornamento
 
-Se un dispositivo ha più profili di configurazione e il dispositivo presenta stati di conformità diversi per due o più dei profili di configurazione assegnati, sarà necessario assegnare un unico stato di conformità risultante. Questa assegnazione si basa su un livello di gravità concettuale assegnato a ogni stato di conformità. I livelli di gravità di ogni stato di conformità sono i seguenti:
+Durante il controllo della conformità, Intune usa lo stesso ciclo di aggiornamento dei profili di configurazione. In genere, la frequenza è la seguente:
 
-|Stato  |Gravità  |
-|---------|---------|
-|Pending     |1|
-|Operazione completata     |2|
-|Operazione non riuscita     |3|
-|Errore     |4|
+- iOS: ogni sei ore
+- macOS: ogni sei ore
+- Android: ogni otto ore
+- PC Windows 10 registrati come dispositivi: ogni otto ore
+- Windows Phone: ogni otto ore
+- Windows 8.1: ogni otto ore
 
-Quando un dispositivo ha più profili di configurazione, viene assegnato il livello di gravità massimo di tutti i profili per quel dispositivo.
-
-Si osservi ad esempio il caso di un dispositivo con tre profili: uno nello stato in sospeso (gravità = 1), uno nello stato completato (gravità = 2) e uno nello stato di errore (gravità = 4). Lo stato di errore ha il livello di gravità più alto quindi, a tutti e tre i profili viene assegnato Errore come stato di conformità.
+Il controllo di conformità si verifica più di frequente immediatamente dopo che un dispositivo è stato registrato.
 
 ### <a name="assign-an-ingraceperiod-status"></a>Assegnare uno stato InGracePeriod
 
@@ -152,19 +147,19 @@ Si osservi ad esempio il caso di un dispositivo con tre criteri di conformità: 
 Ai dispositivi conformi alle regole dei criteri è possibile consentire l'accesso alla posta elettronica e ad altre risorse aziendali. Se non sono conformi alle regole dei criteri, i dispositivi non ricevono l'accesso alle risorse aziendali. Questo è l'accesso condizionale.
 
 #### <a name="without-conditional-access"></a>Senza l'accesso condizionale
-È anche possibile usare i criteri di conformità dei dispositivi senza accesso condizionale. In tal caso, i dispositivi vengono valutati e segnalati in base allo stato di conformità. Può ad esempio essere utile segnalare quanti dispositivi non sono crittografati o quali dispositivi sono stati manomessi con jailbreak o root. Quando si usano i criteri di conformità senza accesso condizionale, non vengono applicate limitazioni per l'accesso alle risorse aziendali.
+È anche possibile usare i criteri di conformità dei dispositivi senza accesso condizionale. In tal caso, i dispositivi vengono valutati e segnalati in base allo stato di conformità. Può ad esempio essere utile ottenere un report del numero dei dispositivi non crittografati o dei dispositivi manomessi con jailbreak o con accesso root. Quando si usano criteri di conformità senza accesso condizionale, non vengono applicate limitazioni per l'accesso alle risorse dell'organizzazione.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Modi per distribuire i criteri di conformità dei dispositivi
 È possibile distribuire i criteri di conformità a utenti in gruppi di utenti o a dispositivi in gruppi di dispositivi. Quando un criterio di conformità viene distribuito a un utente, la conformità viene controllata su tutti i dispositivi dell'utente. In Windows 10 versione 1803 e nei dispositivi più recenti è consigliabile eseguire la distribuzione ai gruppi di dispositivi *se* l'utente primario non ha registrato il dispositivo. L'uso di gruppi di dispositivi in questo scenario è utile per la creazione di report di conformità.
 
-In tutti i dispositivi registrati in Intune viene valutato un set di **impostazioni dei criteri di conformità** predefinite (portale di Azure > Conformità del dispositivo), tra cui:
+In tutti i dispositivi registrati in Intune viene valutato un set di impostazioni dei criteri di conformità predefinite (**Intune** > **Conformità del dispositivo**), tra cui:
 
 - **Contrassegna i dispositivi senza criteri di conformità assegnati come**: questa proprietà ha due valori:
 
   - **Conforme**: la funzione di sicurezza non è attiva
   - **Non conforme** (impostazione predefinita): la funzione di sicurezza è attiva
 
-  Un dispositivo a cui non è stato assegnato un criterio di conformità è considerato come non conforme. Per impostazione predefinita, i dispositivi sono contrassegnati come **Conforme**. Se si usa l'accesso condizionale, è consigliabile modificare l'impostazione su **Non conforme**. Se un utente finale non è conforme perché non è stato assegnato un criterio, nel Portale aziendale viene indicato `No compliance policies have been assigned`.
+  Un dispositivo a cui non è stato assegnato un criterio di conformità è considerato come non conforme. Per impostazione predefinita, i dispositivi sono contrassegnati come **Non conforme**. Se si usa l'accesso condizionale, è consigliabile cambiare l'impostazione in **Non conforme**. Se un utente finale non è conforme perché non è stato assegnato alcun criterio, il Portale aziendale visualizza `No compliance policies have been assigned`.
 
 - **Rilevamento ottimizzato per jailbreak**: se abilitata, questa impostazione attiva un'archiviazione più frequente dei dispositivi iOS con Intune. L'abilitazione di questa proprietà usa i servizi di posizione del dispositivo e influisce sull'utilizzo della batteria. I dati relativi alla posizione dell'utente non vengono archiviati da Intune.
 

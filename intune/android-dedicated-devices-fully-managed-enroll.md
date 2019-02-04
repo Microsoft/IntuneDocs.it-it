@@ -16,23 +16,23 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f9f95c42be252e0b2be515344e01a1d93e2cc6c
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 0eb12470c20efd8d455f8bb165455ae4266da956
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387218"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146894"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Registrare i dispositivi Android dedicati o completamente gestiti (anteprima)
 
 Dopo aver configurato i [dispositivi Android dedicati](android-kiosk-enroll.md) o [completamente gestiti](android-fully-managed-enroll.md) in Intune, è possibile registrarli. La modalità di registrazione dei dispositivi Android varia a seconda del sistema operativo.
 
-| Metodo di registrazione | Versione minima del sistema operativo Android per i dispositivi dedicati | Versione minima del sistema operativo Android per i dispositivi completamente gestiti |
-| ----- | ----- | ----- |
-| NFC (Near Field Communication) | 5.1 | 6.0 |
-| Token | 6.0 | 6.0 |
-| Codice a matrice | 7.0 | 7.0 |
-| Zero Touch  | 8.0\* | 8.0\* |
+| Metodo di registrazione | Versione minima del sistema operativo Android per i dispositivi dedicati e completamente gestiti |
+| ----- | ----- |
+| NFC (Near Field Communication) | 5.1 |
+| Token | 6.0 |
+| Codice a matrice | 7.0 |
+| Zero Touch  | 8.0\* |
 
 \* Per i produttori partecipanti.
 
@@ -42,7 +42,7 @@ Per i dispositivi che supportano NFC, è possibile effettuarne il provisioning c
 
 ### <a name="enroll-by-using-a-token"></a>Registrare con un token
 
-Per i dispositivi Android 6 e versioni successive, è possibile usare il token per registrare il dispositivo. In Android 6.1 e versioni successive è anche possibile sfruttare la scansione del codice a matrice quando si usa il metodo di registrazione **aft#setup**.
+Per i dispositivi Android 6 e versioni successive, è possibile usare il token per registrare il dispositivo. In Android 6.1 e versioni successive è anche possibile sfruttare la scansione del codice a matrice quando si usa il metodo di registrazione **afw#setup**.
 
 1. Accendere il dispositivo cancellato.
 2. Nella schermata **Benvenuto** selezionare la lingua.

@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
-ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
+ms.openlocfilehash: 171e994be67a24e351b242967c8af934272da356
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380478"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105171"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Distribuire dispositivi aggiunti ad Azure AD ibrido usando Intune e Windows Autopilot (anteprima)
 È possibile usare Intune e Windows Autopilot per configurare i dispositivi aggiunti ad Active Directory ibrido. A tale scopo, eseguire i passaggi seguenti.
@@ -106,7 +106,7 @@ L'unità organizzativa a cui viene assegnata l'autorizzazione per la creazione d
 
 ## <a name="install-the-intune-connector"></a>Installare Intune Connector
 
-Intune Connector per Active Directory deve essere installato in un computer che esegue Windows Server 2016 che ha accesso a Internet e ad Active Directory. Per aumentare la scalabilità e la disponibilità o per supportare più domini di Active Directory, è possibile installare più connettori nell'ambiente. È consigliabile installare il connettore in un server che non esegue altri connettori Intune.
+Intune Connector per Active Directory Domain Services deve essere installato in un computer che esegue Windows Server 2016 o versioni successive che ha accesso a Internet e ad Active Directory Domain Services. Per aumentare la scalabilità e la disponibilità o per supportare più domini di Active Directory, è possibile installare più connettori nell'ambiente. È consigliabile installare il connettore in un server che non esegue altri connettori Intune.
 
 1. Assicurarsi di avere installato e configurato un Language Pack, come descritto in [Requisiti di lingua connettore Intune (anteprima)](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector).
 2. In [Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Intune Connector per Active Directory (anteprima)** > **Aggiungi un connettore**. 
@@ -114,7 +114,7 @@ Intune Connector per Active Directory deve essere installato in un computer che 
 4. Aprire il file di installazione del connettore scaricato per installare il connettore (ODJConnectorBootstrapper.exe).
 5. Al termine dell'installazione, scegliere **Configura**.
 6. Scegliere **Accedi**.
-7. Immettere le credenziali del ruolo Amministratore globale o Amministratore di Intune dell'utente.
+7. Immettere le credenziali del ruolo Amministratore globale o Amministratore di Intune dell'utente. All'account utente deve essere assegnata una licenza di Intune.
 8. Passare a **Registrazione del dispositivo** > **Registrazione Windows** > **Intune Connector per Active Directory (anteprima)** e verificare che lo stato della connessione sia **Attivo**.
 
  > [!NOTE]

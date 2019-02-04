@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203536"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072576"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Impostazioni di Windows 10 (e versioni successive) per la protezione dei dispositivi con Intune
 
@@ -152,6 +152,9 @@ Supportato nelle edizioni di Windows 10 seguenti:
 Le impostazioni di base sono impostazioni BitLocker universali per tutti i tipi di unità dati. Queste impostazioni gestiscono le attività di crittografia delle unità o le opzioni di configurazione che gli utenti finali possono modificare in tutti i tipi di unità dati.
 
 - **Avviso per la crittografia dischi di altro tipo**: selezionare **Blocca** per disabilitare l'avviso se nel dispositivo è presente un altro servizio di crittografia del disco. L'impostazione **Non configurata** (predefinita) consente la visualizzazione di questi avvisi.
+    - **Consenti agli utenti standard di abilitare la crittografia durante un'aggiunta ad Azure AD**: se si sceglie **Consenti**, gli utenti standard/non amministratori possono abilitare la crittografia BitLocker dopo l'accesso. Questa impostazione si applica solo a dispositivi aggiunti ad Azure Active Directory (Azure ADJ). **Non configurato** consente solo agli amministratori di abilitare la crittografia BitLocker nel dispositivo.
+      
+      Questa impostazione si applica solo a dispositivi aggiunti ad Azure Active Directory (Azure ADJ). Richiede anche che l'impostazione **Warning for other disk encryption** (Avviso per altri tipi di crittografia disco) corrisponda a **Blocca**.
 - **Configura i metodi di crittografia**: scegliere **Abilita** per configurare gli algoritmi di crittografia per il sistema operativo, i dati e le unità rimovibili. Con l'impostazione **Non configurata** (predefinita), BitLocker usa il metodo di crittografia predefinito XTS-AES 128 bit o il metodo di crittografia specificato da qualsiasi script di configurazione.
   - **Crittografia per le unità del sistema operativo**: scegliere il metodo di crittografia per le unità del sistema operativo. È consigliabile usare l'algoritmo XTS-AES.
   - **Crittografia per unità dati fisse**: scegliere il metodo di crittografia per le unità dati fisse (predefinite). È consigliabile usare l'algoritmo XTS-AES.
