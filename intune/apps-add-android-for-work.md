@@ -55,7 +55,7 @@ Il tipo di app **Google Play gestito** consentirà di aggiungere in modo specifi
 5. Nel riquadro **App** selezionare **Aggiungi**.
 6. Nella casella a discesa **Tipo di App** selezionare **Google Play gestito**.
 7. Selezionare **Google Play gestito - Approvare app** per cercare le app di Google Play gestite approvate.
-8. Fare clic su ogni app che si vuole includere. Quindi:
+8. Fare clic su ogni app che si vuole includere. Quindi, c
 9. Fare clic su **Approva** per approvare l'app di Google Play gestita e fare clic su **Approva** per accettare le autorizzazioni dell'app. 
 10. Fare clic su **OK** per includere le app.
 11. Fare clic su **Aggiungi** nel riquadro **Aggiungi app** per sincronizzare con il servizio gestito Google Play.

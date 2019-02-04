@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Imposta la conformità dei dispositivi
     items:
-    - name: Panoramica della conformità del dispositivo
+    - name: Panoramica conformità
       href: device-compliance-get-started.md
-    - name: Creare criteri Android
+    - name: Conformità Android
       href: compliance-policy-create-android.md
-    - name: Creare criteri per i profili di Android Enterprise
+    - name: Conformità organizzazione Android
       href: compliance-policy-create-android-for-work.md
-    - name: Creare criteri per abilitare Google Play Protect
+    - name: Abilitare Google Play Protect
       href: compliance-policy-create-google-play-protect.md
-    - name: Creare criteri iOS
+    - name: Conformità iOS
       href: compliance-policy-create-ios.md
-    - name: Creare criteri Windows
+    - name: Conformità Windows
       href: compliance-policy-create-windows.md
-    - name: Criteri basati sulla posizione
+    - name: Conformità basata sulla posizione
       href: use-network-locations.md
     - name: Valutare criteri
       href: policy-evaluate.md
@@ -251,39 +251,39 @@ items:
       href: actions-for-noncompliance.md
     - name: Monitorare la conformità dei dispositivi
       href: compliance-policy-monitor.md
-  - name: Configurare i dispositivi
+  - name: Configura impostazioni dispositivo
     items:
-    - name: Configurare i dispositivi usando i profili
+    - name: Panoramica della configurazione del dispositivo
       href: device-profiles.md
     - name: Profili di dispositivo
       href: device-profile-create.md
     - name: Modelli amministrativi
       href: administrative-templates-windows.md
-    - name: Funzionalità dei dispositivi (iOS e macOS)
+    - name: Funzionalità del dispositivo
       href: device-features-configure.md
-    - name: Limitazioni del dispositivo
+    - name: Limitare le impostazioni del dispositivo e le funzionalità
       href: device-restrictions-configure.md
-    - name: Ottimizzazione recapito
+    - name: Distribuire gli aggiornamenti
       href: delivery-optimization-windows.md
-    - name: Aggiornamento dell'edizione e cambio di modalità
+    - name: Aggiornare le edizioni e la modalità S
       href: edition-upgrade-configure-windows-10.md
-    - name: Impostazioni di posta elettronica
+    - name: Configurare la posta elettronica
       href: email-settings-configure.md
-    - name: Impostazioni della modalità tutto schermo
+    - name: Abilitare la modalità tutto schermo
       href: kiosk-settings.md
-    - name: Impostazioni VPN
+    - name: Aggiungere una connessione VPN
       href: vpn-settings-configure.md
       items:
       - name: VPN per app per Android
         href: android-pulse-secure-per-app-vpn.md
       - name: VPN per app per iOS
         href: vpn-setting-configure-per-app.md
-    - name: Impostazioni Wi-Fi
+    - name: Aggiungere una rete Wi-Fi wireless
       href: wi-fi-settings-configure.md
       items:
       - name: Wi-Fi con chiave precondivisa
         href: wi-fi-profile-shared-key.md
-    - name: Impostazioni di Education
+    - name: App di istruzione Test ed esami
       href: education-settings-configure.md
     - name: Dispositivi multiutente condivisi
       href: shared-user-device-settings.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: Monitorare i profili
       href: device-profile-monitor.md
-    - name: Risolvere i problemi dei profili
+    - name: Domande e risposte comuni
       href: device-profile-troubleshoot.md
   - name: Proteggere i dati del dispositivo
     items:
@@ -854,6 +854,8 @@ items:
       items:
       - name: Informazioni di riferimento sulle API di Intune
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: API Graph usate per configurare i dispositivi
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Risorse
   items:
   - name: Guida della documentazione di Microsoft Intune
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: Evitare perdite di dati nei dispositivi non gestiti
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504545"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645190"
