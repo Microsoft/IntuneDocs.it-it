@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: b3ced7e52de05e98c2f4a7ec9a828972ab60cf71
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386908"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290724"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurare la registrazione in Intune di dispositivi Android Enterprise dedicati
 
@@ -101,7 +101,7 @@ La sostituzione o la revoca di un token o codice a matrice non avrà alcun effet
 
 ## <a name="managing-apps-on-android-dedicated-devices"></a>Gestione delle app nei dispositivi dedicati Android
 
-Nei dispositivi dedicati Android è possibile installare soltanto app con il tipo di assegnazione [impostato su Obbligatoria](apps-deploy.md#to-assign-an-app). Le app vengono installate da Google Play Store gestito allo stesso modo dei dispositivi del profilo di lavoro Android.
+Nei dispositivi dedicati Android è possibile installare soltanto app con il tipo di assegnazione [impostato su Obbligatoria](apps-deploy.md#assign-an-app). Le app vengono installate da Google Play Store gestito allo stesso modo dei dispositivi del profilo di lavoro Android.
 
 Le app vengono aggiornate automaticamente sui dispositivi gestiti quando lo sviluppatore pubblica un aggiornamento in Google Play.
 
