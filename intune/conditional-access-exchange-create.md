@@ -15,12 +15,13 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817059"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840400"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Creare criteri di accesso condizionale per Exchange locale ed Exchange Online dedicato legacy
 
@@ -80,9 +81,9 @@ L'applicazione **Mail** nativa in Windows 8.1 e versioni successive (se registra
 
 1. Dopo l'accesso viene visualizzato il **dashboard di Azure**.
 
-1. Scegliere  **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+1. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
-1. Scegliere  **Intune**. Verrà visualizzato il **dashboard di Intune**.
+1. Scegliere **Intune**. Verrà visualizzato il **dashboard di Intune**.
 
 1. Scegliere **Accesso locale**. Il riquadro **Accesso locale** visualizza lo stato dei criteri di accesso condizionale e i dispositivi da esso interessati.
 

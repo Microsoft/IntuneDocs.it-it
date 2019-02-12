@@ -15,14 +15,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c04dc3169fbf6a60d0c4d7db8358092909e90240
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977338"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841821"
 ---
-# <a name="quickstart-enroll-your-windows-10-device"></a>Avvio rapido: Registrare il dispositivo Windows 10
+# <a name="quickstart-enroll-your-windows-10-device"></a>Guida introduttiva: Registrare il dispositivo Windows 10
 
 In questa guida introduttiva si assume innanzitutto il ruolo di utente di Intune e si registra il dispositivo Windows 10 in Microsoft Intune. Quindi, si torna a Intune e si verifica il dispositivo registrato.
 

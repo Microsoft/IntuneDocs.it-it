@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2f8a65d05ecffcf87d7a84ab23ad215256286dd0
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 85435acffbad3117f6adbbafe60e1993b2d18bdb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150076"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835778"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloccare il dispositivo in modalità remota dal sito Web del portale aziendale
 
@@ -41,7 +42,7 @@ L'impostazione di blocco remoto funziona per:
 
 2. Selezionare il dispositivo da bloccare.  
 
-    ![Screenshot della pagina Dispositivi, con 2 riquadri che mostrano i dispositivi non identificati, denominati in modo generico. Direttamente sotto i dispositivi è presente un banner di colore grigio che richiede all'utente di identificare il dispositivo in uso o aggiungerne uno nuovo.](./media/rename-reset-device-step2-1808.png) 
+    ![Screenshot della pagina Dispositivi, con 2 riquadri che illustrano i dispositivi non identificati, denominati in modo generico. Direttamente sotto i dispositivi è presente un banner di colore grigio che richiede all'utente di identificare il dispositivo in uso o aggiungerne uno nuovo.](./media/rename-reset-device-step2-1808.png) 
 
 3. Selezionare **Blocco remoto**. Se l'opzione Blocca non è visibile nella parte superiore della pagina, selezionare **Altro (...)**  > **Blocco remoto**.  
 

@@ -16,12 +16,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 7ede43a78e762548608149b428d963150ed65e84
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 91ea3aab5cd04624bfa036615b8d7710573bcae1
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642439"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846979"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Quali sono le informazioni visibili per l'organizzazione quando si registra il dispositivo?
 
@@ -52,6 +53,6 @@ L'organizzazione non può vedere le informazioni personali di un utente che regi
 
 -  Numero di telefono: per i dispositivi di proprietà dell'**azienda**, può essere visualizzato il numero di telefono completo. Per i dispositivi di proprietà **personale**, l'organizzazione può visualizzare solo le ultime quattro cifre del numero di telefono. Per visualizzare il **tipo di proprietà** di un singolo dispositivo, aprire la pagina **Dettagli dispositivo** del dispositivo.
 - Spazio di archiviazione del dispositivo: se non è possibile installare un'app necessaria, l'organizzazione può esaminare lo spazio di archiviazione del dispositivo per determinare se lo spazio non è sufficiente.  
--  Posizione: l'organizzazione non può mai visualizzare la posizione del dispositivo, a meno che non sia necessario recuperare un dispositivo iOS supervisionato che è andato perso. Consultare la [documentazione di Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) per altre informazioni sui dispositivi supervisionati.  
+-  Percorso: l'organizzazione non può mai visualizzare la posizione del dispositivo, a meno che non sia necessario recuperare un dispositivo iOS supervisionato che è andato perso. Consultare la [documentazione di Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) per altre informazioni sui dispositivi supervisionati.  
 - Inventario delle app: se la propria organizzazione usa Mobile Threat Defense, può visualizzare dettagli aggiuntivi sulle app presenti nel dispositivo iOS. Altre informazioni su [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
 - Informazioni sulla rete: per il supporto tecnico dell'organizzazione possono essere disponibili alcune informazioni sulle connessioni di rete per dispositivi Android. Se l'organizzazione esigesse, ad esempio, che i dispositivi rimangano all'interno di un determinato edificio, il dispositivo potrebbe identificare la rete a cui è connesso. 

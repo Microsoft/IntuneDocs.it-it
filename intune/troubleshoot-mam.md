@@ -15,12 +15,13 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58ff1bd91a5c95d66d75ad6546137dd2de9feac3
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899094"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086149"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Risolvere i problemi relativi alla gestione di applicazioni mobili
 
@@ -34,9 +35,9 @@ Questi sono i problemi comuni che un amministratore IT può sperimentare durante
 
 | Problema | Descrizione | Soluzione |
 | -- | -- | -- |
-| Criteri non applicati a Skype for Business | I criteri di protezione delle app senza registrazione del dispositivo, eseguita nel portale di Azure, non vengono applicati all'app Skype for Business in dispositivi iOS e Android. | È necessario configurare Skype for Business per l'autenticazione moderna.  Per configurare l'autenticazione moderna per Skype, seguire le istruzioni in [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (Abilitare il tenant per l'autenticazione moderna). |
+| Criteri non applicati a Skype for Business | I criteri di protezione delle app senza registrazione del dispositivo, eseguita nel portale di Azure, non vengono applicati all'app Skype for Business in dispositivi iOS e Android. | È necessario configurare Skype for Business per l'autenticazione moderna.  Per configurare l'autenticazione moderna per Skype, seguire le istruzioni in [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (Abilitare il tenant per l'autenticazione moderna). |
 | Criteri per le app di Office non applicati | I criteri di protezione delle app non vengono applicati ad alcuna [app di Office supportata](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) per qualsiasi utente. | Verificare che l'utente abbia una licenza per Intune e che le app di Office siano la destinazione di un criterio di protezione delle app distribuito. L'applicazione di un criterio di protezione dell'app appena distribuito può richiedere fino a otto ore. |
-| L'amministratore non può configurare criteri di protezione delle app nel portale di Azure | L'utente amministratore IT non riesce a configurare i criteri di protezione delle app nel portale di Azure. | i ruoli utente seguenti hanno accesso al portale di Azure: <ul><li>Amministratore globale, configurabile nel [portale di Office](http://portal.office.com/)</li><li>Proprietario, configurabile nel [portale di Office](https://portal.azure.com/)</li><li>Collaboratore, configurabile nel [portale di Office](https://portal.azure.com/)</li></ul> Fare riferimento a [Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune](role-based-access-control.md) per informazioni sulla configurazione di questi ruoli.|
+| L'amministratore non può configurare criteri di protezione delle app nel portale di Azure | L'utente amministratore IT non riesce a configurare i criteri di protezione delle app nel portale di Azure. | i ruoli utente seguenti hanno accesso al portale di Azure: <ul><li>Amministratore globale, configurabile nel [portale di Office](https://portal.office.com/)</li><li>Proprietario, configurabile nel [portale di Office](https://portal.azure.com/)</li><li>Collaboratore, configurabile nel [portale di Office](https://portal.azure.com/)</li></ul> Fare riferimento a [Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune](role-based-access-control.md) per informazioni sulla configurazione di questi ruoli.|
 |Account utente mancanti nei report dei criteri di protezione delle app | I report della console di amministrazione non mostrano gli account utente a cui sono stati distribuiti di recente criteri di protezione delle app. | Se un utente è stato selezionato di recente come destinazione di criteri di protezione delle app, possono trascorrere fino a 24 ore prima che l'utente compaia nei report come utente di destinazione. |
 | Modifiche dei criteri non funzionanti | Per l'applicazione di modifiche o aggiornamenti dei criteri di protezione delle app possono essere richieste fino a 8 ore. | Se applicabile, l'utente finale può disconnettersi dall'app e rieseguire l'accesso per forzare la sincronizzazione con il servizio. |
 | Criteri di protezione delle app non funzionanti con DEP | I criteri di protezione delle app non vengono applicati ai dispositivi DEP di Apple. | Assicurarsi di usare l'affinità utente con il programma di registrazione dispositivi (DEP, Device Enrollment Program) di Apple. L'affinità utente è obbligatoria per qualsiasi app che richiede l'autenticazione utente nell'ambito del programma DEP. <br><br>Fare riferimento a [Registrare automaticamente i dispositivi iOS nel programma Device Enrollment Program di Apple](device-enrollment-program-enroll-ios.md) per altre informazioni sulla registrazione nel programma DEP iOS.|
