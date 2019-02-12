@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 83371d14215eb9ed2298796279d232ffbc7d129f
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7fbe3371d86d02247922c87680605c9ea3a1f4df
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817042"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845840"
 ---
-# <a name="quickstart-create-an-email-device-profile-for-ios"></a>Avvio rapido: Creare un profilo di posta elettronica del dispositivo per iOS
+# <a name="quickstart-create-an-email-device-profile-for-ios"></a>Guida introduttiva: Creare un profilo di posta elettronica del dispositivo per iOS
 
 In questa guida introduttiva verrà illustrato come creare un profilo di posta elettronica per i dispositivi iOS. Questo profilo specifica le impostazioni necessarie per l'app di posta elettronica predefinita per consentire al dispositivo iOS di connettersi alla posta elettronica aziendale. I profili di posta elettronica del dispositivo facilitano l'omogeneità delle impostazioni tra i dispositivi e consentono agli utenti finali di accedere alla posta elettronica aziendale dai dispositivi personali senza alcuna configurazione manuale. Per proteggere ulteriormente la posta elettronica, è possibile utilizzare un profilo di posta elettronica per determinare se i dispositivi sono conformi e quindi impostare l'accesso condizionale ai soli dispositivi conformi. Per altre informazioni sui profili di posta elettronica, vedere [Come configurare le impostazioni di posta elettronica in Microsoft Intune](email-settings-configure.md)
 

@@ -16,12 +16,13 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4aa5cb24bc153839c6aac193f074128dd46a2e5f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40278904cd3af75451d0323a7665e88f6b526928
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185407"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844259"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Assegnare Office 365 a dispositivi macOS con Microsoft Intune
 
@@ -49,16 +50,16 @@ Aggiungere Office 365 dal riquadro **App**.
     Queste informazioni consentono di identificare la suite di app in Intune e semplificano la ricerca della suite di app da parte degli utenti nel portale aziendale.
 8. Immettere le informazioni seguenti:
     - **Nome della suite**: immettere il nome della suite di app visualizzato nel portale aziendale. Verificare che tutti i nomi di suite usati siano univoci. Se il nome di una suite viene usato due volte, solo una delle due suite viene visualizzata dagli utenti nel portale aziendale.
-    - **Descrizione della suite**: immettere una descrizione per la suite di app.
-    - **Editore**: Microsoft viene visualizzato come editore.
-    - **Categoria**: selezionare una o più categorie di app predefinite o una categoria creata dall'utente. Questa impostazione consente agli utenti di trovare più facilmente il gruppo di app nel portale aziendale.
+    - **Descrizione della suite **: immettere una descrizione per la suite di app.
+    - **Autore**: come editore viene visualizzato Microsoft.
+    - **Categoria**: Selezionare uno o più categorie di app predefinite oppure una categoria creata. Questa impostazione consente agli utenti di trovare più facilmente il gruppo di app nel portale aziendale.
     - **Visualizza come app in primo piano nel portale aziendale**: selezionare questa opzione per visualizzare in primo piano la suite di app nella pagina principale del portale aziendale quando gli utenti cercano le app.
-    - **URL di informazioni**: immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **URL privacy**: immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
-    - **Sviluppatore**: Microsoft viene visualizzato come sviluppatore.
-    - **Proprietario**: Microsoft viene visualizzato come proprietario.
+    - **URL di informazioni**: Immettere l'URL di un sito Web che include informazioni sull'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
+    - **URL privacy**: Immettere l'URL di un sito Web che include informazioni sulla privacy per l'app (facoltativo). L'URL viene visualizzato dagli utenti nel portale aziendale.
+    - **Sviluppatore**: come sviluppatore viene visualizzato Microsoft.
+    - **Proprietario**: come proprietario viene visualizzato Microsoft.
     - **Note**: immettere eventuali note da associare a questa app (facoltativo).
-    - **Logo**: il logo Office 365 è visualizzato insieme all'app quando gli utenti visitano il portale aziendale.
+    - **Logo**: quando gli utenti visitano il portale aziendale, il logo Office 365 viene visualizzato insieme all'app.
 9. Selezionare **OK**.
 10. Selezionare **Aggiungi** nel riquadro **Aggiungi app**.  
     La suite viene visualizzata nell'elenco delle app come singola voce.

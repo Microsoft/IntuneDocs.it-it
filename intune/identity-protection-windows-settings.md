@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5eb25c48e3724fdc9277a790d01908e976c75be
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9bbdb56770c154a482ad004f1f3f980809424caf
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54832358"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848509"
 ---
 # <a name="windows-10-and-newer-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Impostazioni per i dispositivi Windows 10 (e versioni successive) per abilitare Windows Hello for Business in Intune
 
@@ -46,8 +47,8 @@ Per altre informazioni sui profili di Windows Hello for Business in Intune, vede
 - **Lettere maiuscole nel PIN**: è possibile applicare un PIN più efficace richiedendo agli utenti finali di includere lettere maiuscole. Le opzioni disponibili sono:
 
   - **Non consentito** (impostazione predefinita): impedisce agli utenti di usare lettere maiuscole nel PIN. Questo comportamento si verifica anche se l'impostazione non è configurata.
-  - **Consentito**: consente agli utenti di usare lettere maiuscole nel PIN, ma non è obbligatorio.
-  - **Obbligatoria**: gli utenti devono includere almeno una lettera maiuscola nel PIN. Ad esempio, di solito si richiede almeno una lettera maiuscola e un carattere speciale.
+  - **Consentito**: consente agli utenti di usare caratteri speciali nel PIN, ma non è obbligatorio.
+  - **Obbligatoria**: gli utenti devono includere almeno un carattere speciale nel PIN. Ad esempio, di solito si richiede almeno una lettera maiuscola e un carattere speciale.
 
 - **Caratteri speciali nel PIN**: è possibile applicare un PIN più efficace richiedendo agli utenti finali di includere caratteri speciali. Le opzioni disponibili sono:
 

@@ -16,19 +16,20 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: f156accf5b51e7fff51db738c70b0b0840d7e365
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0f2c5da7772ff137e44fead66f00fe34004bb1f4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642830"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850906"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Gli amministratori IT possono usare Microsoft Intune per gestire le app client usate dal personale dell'azienda. Questa funzionalità si aggiunge alla gestione dei dispositivi e alla protezione dei dati. Una delle priorità di un amministratore è fare in modo che gli utenti finali abbiano accesso alle app necessarie per lavorare. Non sempre questo obiettivo risulta semplice da raggiungere, perché:
+Gli amministratori IT possono usare Microsoft Intune per gestire le app client usate dai dipendenti dell'azienda. Questa funzionalità si aggiunge alla gestione dei dispositivi e alla protezione dei dati. Una delle priorità di un amministratore è fare in modo che gli utenti finali abbiano accesso alle app necessarie per lavorare. Non sempre questo obiettivo risulta semplice da raggiungere, perché:
 - Esiste una vasta gamma di piattaforme per dispositivi e tipi di applicazione.
 - Potrebbe essere necessario gestire le app sia nei dispositivi aziendali che nei dispositivi personali degli utenti.
 - Occorre assicurarsi che rete e dati rimangano protetti.
@@ -73,7 +74,7 @@ Il carico di lavoro **App client** contiene numerose informazioni sulle app ed �
 
 Le quattro sezioni successive descrivono le opzioni disponibili nel riquadro **App client**.
 
-### <a name="manage"></a>Gestione
+### <a name="manage"></a>Gestire
 - **App**: selezionare questa opzione per aggiungere, visualizzare, assegnare e monitorare le app usate dal personale. Per altre informazioni, vedere:
     - [Aggiungere app](apps-add.md).
     - [Assegnare le app](apps-deploy.md).
@@ -102,7 +103,7 @@ Per altre informazioni su questa sezione, vedere [Gestire le app](app-management
 
 Per altre informazioni su questa sezione, vedere [Monitorare le app](apps-monitor.md).
 
-### <a name="set-up"></a>Installazione
+### <a name="set-up"></a>Configurare
 - **Token VPP iOS**: consente di applicare e visualizzare le licenze Volume Purchase Program (VPP) di iOS. Per altre informazioni, vedere:
     - [App iOS acquistate con Volume Purchase Program](vpp-apps-ios.md)
 - **Certificato Windows Enterprise**: consente di applicare o visualizzare lo stato di un certificato di firma del codice usato per distribuire le app line-of-business ai dispositivi Windows gestiti.

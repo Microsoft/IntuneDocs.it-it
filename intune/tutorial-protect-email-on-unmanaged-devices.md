@@ -15,12 +15,13 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bcf66037995c6b5cb2b0c5b3f090d3af2e42cd6a
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8339f91468abca548b3923df4d4380aabb88c5a8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53262884"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848713"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi non gestiti
 
@@ -82,7 +83,7 @@ Si definiranno ora due impostazioni di criteri di accesso condizionale in modo d
     1. Nella scheda **Includi** scegliere **Selezionare le app**.
     2. Scegliere **Seleziona**. 
     3. Nell'elenco delle applicazioni selezionare **Office 365 Exchange Online** e quindi scegliere **Seleziona**. 
-    4. Selezionare **Chiudi**.
+    4. Seleziona **Chiudi**.
   
     ![Selezionare l'app Office 365 Exchange Online](media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-cloud-apps.png)
 
@@ -90,7 +91,7 @@ Si definiranno ora due impostazioni di criteri di accesso condizionale in modo d
      
     1. In **Configura** selezionare **Sì**.
     2. Nella scheda **Includi** selezionare **Tutte le piattaforme (incluse quelle non supportate)**. 
-    3. Selezionare **Chiudi**.
+    3. Seleziona **Chiudi**.
    
 6.  Nel riquadro **Condizioni** selezionare **App client**.
      
@@ -129,7 +130,7 @@ La creazione dei criteri di accesso condizionale per i client con autenticazione
     1. Nella scheda **Includi** scegliere **Selezionare le app**.
     2. Scegliere **Seleziona**. 
     3. Nell'elenco delle applicazioni selezionare **Office 365 Exchange Online** e quindi scegliere **Seleziona**. 
-    4. Selezionare **Chiudi**.
+    4. Seleziona **Chiudi**.
 
 5.  In **Assegnazioni** selezionare **Condizioni** > **Piattaforme del dispositivo**.
      

@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6f7d7ccb4c94300d00f02dcace5c3a089cd9f2a2
-ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 95db6ca8cbcb6e4e80b549b26a352c748f20c7f5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270572"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847218"
 ---
-# <a name="quickstart-create-a-group-to-manage-users"></a>Avvio rapido: Creare un gruppo per gestire gli utenti
+# <a name="quickstart-create-a-group-to-manage-users"></a>Guida introduttiva: Creare un gruppo per gestire gli utenti
 
 In questa guida introduttiva si utilizzerà Intune per creare un gruppo basato su un utente esistente. I gruppi vengono usati per gestire gli utenti e controllare l'accesso dei dipendenti alle risorse aziendali. Queste risorse possono essere parte dell'intranet aziendale o essere risorse esterne, ad esempio siti SharePoint, app SaaS o app Web.
 

@@ -2,8 +2,8 @@
 title: Controllare l'esito positivo o negativo delle baseline di sicurezza in Microsoft Intune - Azure | Microsoft Docs
 description: Controllare lo stato di errore, conflitto ed esito positivo quando si distribuiscono le baseline di sicurezza a utenti e dispositivi in Microsoft Intune MDM. Informazioni su come risolvere i problemi mediante i log del client e le funzionalità di report in Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/24/2019
 ms.topic: article
@@ -14,12 +14,13 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28a98a20e5f0b5181628da46ccd662f1f8f503dd
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bfbdad6d98065a691528d4cdada0b6f9377e1109
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55070211"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848237"
 ---
 # <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Monitorare la baseline di sicurezza e il profilo in Microsoft Intune
 

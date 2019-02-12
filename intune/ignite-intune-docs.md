@@ -16,12 +16,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5735a2059690655a76425b049eff9e26f5ab8179
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b68ca31b03bb3274d48b185335f956e38e140ae8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032572"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848560"
 ---
 # <a name="microsoft-intune-documentation-40ignite-2018-special-edition41"></a>Documentazione di Microsoft Intune &#40;edizione speciale Ignite 2018&#41;
 Benvenuti a Microsoft Ignite 2018 Siamo lieti della vostra partecipazione. Microsoft Ignite 2018 mette a disposizione alcune risorse speciali per Intune.
@@ -45,7 +46,7 @@ Sono state create delle nuove guide introduttive e altre sono state aggiornate. 
 - [Creare e assegnare un ruolo personalizzato](quickstart-create-custom-role.md): creare e assegnare un ruolo personalizzato con autorizzazioni specifiche per un reparto di operazioni di sicurezza. 
 - [Creare un profilo di posta elettronica del dispositivo per iOS](quickstart-email-profile.md) - Creare un profilo di posta elettronica del dispositivo per i dispositivi iOS.
 
-## <a name="learn"></a>Altre
+## <a name="learn"></a>Informazioni su
 - [Novità di Intune](whats-new.md)
 - [Libreria della documentazione di Intune](https://docs.microsoft.com/intune/)
 

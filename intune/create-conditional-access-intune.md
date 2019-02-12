@@ -15,12 +15,13 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 320ded06b59b583baf27544249393029f7488b2d
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5c9fc2b2e973fdebfd303382e88630ef9999b517
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267716"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844157"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Creare criteri di accesso condizionale basato su dispositivo
 
@@ -51,7 +52,7 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
      
        > [!TIP]  
        > Testare i criteri su un gruppo di utenti più limitato per assicurarsi che funzionino come previsto.
-4.  Selezionare **Chiudi**.
+4.  Seleziona **Chiudi**.
 5.  In **Assegnazioni** selezionare **App cloud**. 
 6.  Nella scheda **Includi** identificare le app e i servizi da proteggere con questi criteri di accesso condizionale. È quindi possibile usare la scheda **Escludi** per escludere eventuali app o servizi da questi criteri.
     - **Tutte le app cloud**: selezionare questa opzione per applicare i criteri a tutte le app.
@@ -62,7 +63,7 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
     
       ![Creare nuovi criteri di accesso condizionale](media/create-conditional-access-intune/create-ca-select-apps.png)
 
-7.  Selezionare **Chiudi**.
+7.  Seleziona **Chiudi**.
 8.  In **Assegnazioni** selezionare **Condizioni**.
     - **Rischio di accesso**: scegliere Sì per usare il rilevamento del rischio di accesso di Azure AD Identity Protection con questi criteri e quindi scegliere i livelli di rischio di accesso a cui devono essere applicati i criteri.
     - **Piattaforme del dispositivo**: nella scheda **Includi** identificare le piattaforme per dispositivi a cui devono essere applicati i criteri di accesso condizionale. Usare la scheda **Escludi** per escludere eventuali piattaforme da questi criteri.
@@ -75,11 +76,11 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
       > [!TIP]  
       > Se si vogliono proteggere sia i **client con autenticazione moderna** sia i **client Exchange ActiveSync**, creare due criteri di accesso condizionale separati, uno per ogni tipo di client. Anche se Exchange ActiveSync supporta l'autenticazione moderna, l'unica condizione supportata da Exchange ActiveSync è quella relativa alla piattaforma. Non sono supportate altre condizioni, inclusa l'autenticazione a più fattori. Per proteggere in modo efficace l'accesso a Exchange Online da Exchange ActiveSync, creare criteri di accesso condizionale che specificano l'app cloud Office 365 Exchange Online e l'app client Exchange ActiveSync con l'opzione Applica i criteri solo alle piattaforme supportate selezionata.
 
-9.  Selezionare **Chiudi**.
+9.  Seleziona **Chiudi**.
 10. In **Controlli di accesso** selezionare **Concedi**. Specificare cosa accade in base alle condizioni configurate.  È possibile selezionare una delle opzioni seguenti:
     - **Blocca accesso**: agli utenti specificati in questi criteri verrà negato l'accesso alle app in base alle condizioni specificate.
     - **Concedi accesso**: agli utenti specificati in questi criteri verrà concesso l'accesso, ma è possibile richiedere una delle azioni seguenti:
-      - **Richiedi autenticazione a più fattori** : l'utente dovrà soddisfare requisiti di sicurezza aggiuntivi, ad esempio una telefonata o un SMS.
+      - **Richiedi autenticazione a più fattori **: l'utente dovrà soddisfare requisiti di sicurezza aggiuntivi, ad esempio una telefonata o un SMS.
       - **Richiedi che i dispositivi siano contrassegnati come conformi**: il dispositivo deve essere conforme a Intune. Se il dispositivo non è conforme, l'utente avrà la possibilità di registrare il dispositivo in Intune. 
       - **Richiedi dispositivo aggiunto ad Azure AD ibrido**: i dispositivi devono essere aggiunti ad Azure AD ibrido.
       - **Richiedi app client approvata**: il dispositivo deve usare app client approvate. 

@@ -15,12 +15,13 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 619976887a7c523933a9e74233779d188baa2cc1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: da29f4fcdbd694b2817bf4eca953c37d2d3c6b0e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183673"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848186"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usare i percorsi (isolamento di rete) in Intune
 
@@ -50,7 +51,7 @@ Per creare criteri di conformità basati sul percorso:
 
 1. In Intune selezionare **Conformità del dispositivo** > **Percorsi** > **Crea**.
 
-2. Immettere le seguenti proprietà:  
+2. Immettere le proprietà seguenti:  
 
    - Obbligatorio. Immettere un **Nome** per il percorso, ad esempio **Reparto di produzione** o **Edificio 44 protetto**.
    - Facoltativo. Immettere un **Intervallo IPv4** con la notazione CIDR (Classless Interdomain Routing), ad esempio `aaa.bbb.ccc.ddd/n`.
