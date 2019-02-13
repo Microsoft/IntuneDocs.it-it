@@ -2,8 +2,8 @@
 title: Configurare i criteri di aggiornamento software per iOS in Microsoft Intune - Azure | Microsoft Docs
 description: In Microsoft Intune è possibile creare o aggiungere criteri di configurazione per limitare l'installazione automatica di aggiornamenti software nei dispositivi iOS gestiti da o sotto la supervisione di Intune. È possibile scegliere la data e ora in cui l'installazione degli aggiornamenti non verrà effettuata. È anche possibile assegnare questi criteri a gruppi, utenti o dispositivi e verificare la presenza di eventuali errori di installazione.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 10/11/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 search.appverid: MET150
-ms.openlocfilehash: 61bd7d5cf40355536aa7d5c361a771ce2b4f30ec
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d73dc96c966b93f26269cc53527a787824c94d3b
+ms.sourcegitcommit: 00fe2b601e3becbe5d644fcbd35a706da3b43af2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189878"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55652630"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Configurare i criteri di aggiornamento per iOS in Intune
 
@@ -33,7 +33,10 @@ Questa funzionalità supporta i dispositivi che eseguono iOS 10.3 e versioni suc
 4. Immettere un nome e una descrizione per i criteri.
 5. Selezionare **Impostazioni**. 
 
-    Specificare nel dettaglio quando non viene imposta l'installazione degli aggiornamenti più recenti nei dispositivi iOS. Queste impostazioni creano un intervallo di tempo limitato. È possibile configurare i **giorni** della settimana, il **fuso orario**, l'**ora di inizio**, l'**ora di fine** e specificare se si vuole **ritardare la visibilità dell'aggiornamento software (in giorni)** per immettere gli utenti. È possibile selezionare un intervallo di ritardo degli aggiornamenti software da 1 a 90 giorni. Per rifiutare esplicitamente l'impostazione di un ritardo degli aggiornamenti software, immettere 0. Queste impostazioni degli aggiornamenti verranno applicate solo ai dispositivi iOS con supervisione.
+    Specificare nel dettaglio quando non viene imposta l'installazione degli aggiornamenti più recenti nei dispositivi iOS. Queste impostazioni creano un intervallo di tempo limitato. È possibile configurare i **giorni** della settimana, il **fuso orario**, l'**ora di inizio**, l'**ora di fine** e specificare se si vuole **ritardare la visibilità dell'aggiornamento software (in giorni)** per immettere gli utenti. È possibile selezionare un intervallo di ritardo degli aggiornamenti software da 1 a 90 giorni. Quando l'intervallo di ritardo scade, gli utenti ricevono una notifica per l'aggiornamento alla versione del sistema operativo meno recente che era disponibile quando è stato attivato il ritardo. Per rifiutare esplicitamente l'impostazione di un ritardo degli aggiornamenti software, immettere 0. Queste impostazioni degli aggiornamenti verranno applicate solo ai dispositivi iOS con supervisione.
+  
+    Se ad esempio iOS 12.a è disponibile il **1 gennaio** e **Delay OS Updates** (Ritarda aggiornamenti sistema operativo) è impostata su **5 days** (5 giorni), tale versione non appare come aggiornamento disponibile in nessun dispositivo per utenti finali assegnato al profilo. Al **sesto giorno** dopo il rilascio, l'aggiornamento appare come disponibile e tutti gli utenti finali possono avviare l'aggiornamento.
+
 
 6. Selezionare **OK** per salvare le modifiche. Selezionare **Crea** per creare i criteri.
 
@@ -44,7 +47,7 @@ I criteri vengono creati e visualizzati nell'elenco dei criteri. Il software MDM
 1. In **Aggiornamenti software** selezionare **Criteri di aggiornamento per iOS**.
 2. Scegliere dei criteri esistenti > **Proprietà**.
 3. Aggiornare il periodo con limitazioni:
-
+    
     1. Scegliere i giorni della settimana
     2. Scegliere il fuso orario nel quale verranno applicati i criteri
     3. Immettere l'ora di inizio e fine della disattivazione

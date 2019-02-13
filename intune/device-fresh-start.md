@@ -2,8 +2,8 @@
 title: Reimpostare i dispositivi Windows 10 con Microsoft Intune - Azure | Microsoft Docs
 description: Usare Fresh Start per rimuovere o disinstallare app nei PC Windows 10 tramite Microsoft Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd2320e4c3935c4865d785bbb2461bba20afffdb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1eb1e671cc16196974cb15cdc785ba7d99fa8f46
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188739"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303413"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Usare Fresh Start per ripristinare i dispositivi Windows 10 con Intune
 
@@ -33,10 +33,11 @@ L'azione del dispositivo **Fresh Start** rimuove le eventuali app installate nei
 3. Fare clic su **Fresh Start**. 
 4. Selezionare **Mantieni i dati utente in questo dispositivo** per:
    * Mantenere il dispositivo aggiunto ad Azure AD
-    * Mantenere il dispositivo registrato nella gestione di dispositivi mobili 
+    * Il dispositivo viene nuovamente iscritto alla gestione di dispositivi mobili quando un utente abilitato per Azure Active Directory accede al dispositivo stesso.
     * Mantenere il contenuto della home directory dell'utente del dispositivo e rimuovere le app e le impostazioni  
   > [!IMPORTANT]
- > Se non si mantengono i dati dell'utente, verrà ripristinato lo stato predefinito del dispositivo. Verrà annullata la registrazione da Azure AD e dalla gestione di dispositivi mobili. 
+ > Se non si mantengono i dati dell'utente, verrà ripristinato lo stato predefinito del dispositivo. La registrazione dei dispositivi personali (BYOD) in Azure AD e nella gestione di dispositivi mobili verrà annullata.
+ > I dispositivi con accesso ad Azure AD verranno iscritti nuovamente alla gestione di dispositivi mobili quando un utente abilitato per Azure Active Directory accede al dispositivo.
  
 5. Fare clic su **OK**.   
 6. Per visualizzare lo stato di questa azione, tornare a **Dispositivi** e fare clic su **Azioni del dispositivo**.  

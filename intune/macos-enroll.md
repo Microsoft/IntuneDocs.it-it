@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 32055e4370669de15342ab97dc71f91ee57426e4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112409"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850999"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurare la registrazione per i dispositivi macOS in Intune
 
@@ -69,7 +70,7 @@ Per impostazione predefinita, Intune consente la registrazione dei dispositivi m
 
 È possibile registrare le macchine virtuali macOS per i test tramite Parallels Desktop o VMware Fusion. 
 
-Per Parallels Desktop, è necessario impostare il tipo di hardware e il numero di serie delle macchine virtuali in modo che Intune possa riconoscerle. Seguire le istruzioni di Parallels per l'[impostazione del tipo di hardware](http://kb.parallels.com/123594) e del [numero di serie](http://kb.parallels.com/123455) per configurare le impostazioni necessarie per i test. È consigliabile che il tipo di hardware del dispositivo che esegue le macchine virtuali corrisponda al tipo di hardware delle macchine virtuali da creare. Il tipo di hardware è indicato in **menu Apple** > **Informazioni su questo Mac** > **Resoconto di sistema** > **Identificatore modello**. 
+Per Parallels Desktop, è necessario impostare il tipo di hardware e il numero di serie delle macchine virtuali in modo che Intune possa riconoscerle. Seguire le istruzioni di Parallels per impostare il tipo di hardware e il [numero di serie](http://kb.parallels.com/123455) per configurare le impostazioni necessarie per i test. È consigliabile che il tipo di hardware del dispositivo che esegue le macchine virtuali corrisponda al tipo di hardware delle macchine virtuali da creare. Il tipo di hardware è indicato in **menu Apple** > **Informazioni su questo Mac** > **Resoconto di sistema** > **Identificatore modello**. 
 
 Per VMware Fusion, è necessario [modificare il file con estensione vmx](https://kb.vmware.com/s/article/1014782) per impostare il modello hardware e il numero di serie della macchina virtuale. È consigliabile che il tipo di hardware del dispositivo che esegue le macchine virtuali corrisponda al tipo di hardware delle macchine virtuali da creare. Il tipo di hardware è indicato in **menu Apple** > **Informazioni su questo Mac** > **Resoconto di sistema** > **Identificatore modello**. 
 

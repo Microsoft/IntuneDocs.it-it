@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: a5a756cd3fd8b78893cee6a3c4629e49d6ac7c87
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 8656e480c292fc9ed1212f9d2c180b791cb4f94c
+ms.sourcegitcommit: ce76541ceb783eb2e242032ef8579041d2f61532
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072542"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431491"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>Impostazioni relative alle funzionalità dei dispositivi iOS in Intune
 
@@ -55,7 +55,7 @@ Per aggiungere i server AirPrinter, sono necessari l'indirizzo IP della stampant
 
     Prendere nota delle informazioni della stampante. Ad esempio, potrebbe restituire un valore simile a `ipp://myprinter.local.:631/ipp/port1`. La prima parte è il nome della stampante. L'ultima parte (`ipp/port1`) è il percorso della risorsa.
 
-3. Nel terminale digitare `ping myprinter.local` e premere INVIO.
+3. Nel Terminale digitare `ping myprinter.local` e premere INVIO.
 
    Prendere nota dell'indirizzo IP. Ad esempio, potrebbe restituire un valore simile a `PING myprinter.local (10.50.25.21)`.
 
@@ -177,16 +177,23 @@ Scegliere la modalità in cui le app installate nei dispositivi iOS devono invia
 
 Usare queste impostazioni per visualizzare un messaggio o un testo personalizzato nella finestra di accesso e nella schermata di blocco. È ad esempio possibile immettere il messaggio "In caso di ritrovamento, restituire a" e informazioni sul tag asset. 
 
-Queste impostazioni supportano dispositivi con supervisione che eseguono iOS 9.3 e versioni successive.
+Questa funzionalità supporta i dispositivi con supervisione che eseguono:
 
-1. In **Impostazioni** selezionare **Configurazione del dispositivo condiviso (solo con supervisione)**.
+- iOS 9.3 e versioni successive
+
+1. In **Impostazioni** selezionare **Messaggio della schermata di blocco (solo con supervisione)**.
 2. Immettere le impostazioni seguenti:
 
-    - **Informazioni sui tag asset**: immettere informazioni sul tag asset del dispositivo. Immettere ad esempio `Owned by Contoso Corp`. 
+    - **Informazioni sui tag asset**: immettere informazioni sul tag asset del dispositivo. Ad esempio, immettere `Owned by Contoso Corp` o `Serial Number: {{serialnumber}}`. 
 
       Il testo immesso viene visualizzato nella finestra di accesso e nella schermata di blocco di accesso del dispositivo.
 
-    - **Nota a piè di pagina della schermata di blocco**: immettere una nota che può contribuire alla restituzione del dispositivo in caso di furto o smarrimento. Ad esempio, `If found, call Contoso at ...`.
+    - **Nota a piè di pagina della schermata di blocco**: immettere una nota che può contribuire alla restituzione del dispositivo in caso di furto o smarrimento. È possibile immettere qualsiasi testo. Ad esempio, `If found, call Contoso at ...`.
+
+    Per aggiungere informazioni specifiche del dispositivo in questi campi è anche possibile usare token di dispositivo. Per visualizzare, ad esempio, il numero di serie, immettere `Serial Number: {{serialnumber}}`. Nella schermata di blocco il testo è simile a `Serial Number 123456789ABC`. Quando si immettono le variabili, assicurarsi di usare le parentesi graffe `{{ }}`. I [token di configurazione delle app](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) includono un elenco delle variabili che è possibile usare. È anche possibile usare `deviceName` o qualsiasi altro valore specifico del dispositivo.
+
+    > [!NOTE]
+    > Le variabili non vengono convalidate nell'interfaccia utente. Di conseguenza possono essere visualizzati dei profili salvati con input non corretto. Se ad esempio si immette `{{Devicename}}` invece di `{{devicename}}`, viene visualizzata la stringa letterale anziché il nome univoco del dispositivo.
 
 3. Al termine, selezionare **OK** per salvare le modifiche.
 
@@ -279,6 +286,8 @@ Queste impostazioni controllano l'accesso all'URL del browser nei dispositivi iO
 ## <a name="wallpaper-settings"></a>Impostazioni dello sfondo
 
 Aggiungere un'immagine PNG, JPG o JPEG personalizzata ai dispositivi iOS con supervisione. Usare, ad esempio, un logo aziendale nella schermata di blocco.
+
+Può verificarsi un comportamento imprevisto quando un profilo senza immagine viene assegnato a dispositivi con un'immagine esistente. Ad esempio, si crea un profilo senza un'immagine. Il profilo viene assegnato a dispositivi che dispongono già di un'immagine. In questo scenario è possibile che l'immagine assuma il valore predefinito del dispositivo o che l'immagine originale rimanga nel dispositivo. Questo comportamento è controllato e limitato dalla piattaforma MDM di Apple.
 
 - **Posizione di visualizzazione dello sfondo**: Scegliere una posizione nel dispositivo per visualizzare l'immagine. Le opzioni disponibili sono:
   - **Non configurata**: un'immagine personalizzata non viene aggiunta al dispositivo. Il dispositivo usa l'impostazione predefinita del sistema operativo.

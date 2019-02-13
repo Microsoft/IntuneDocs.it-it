@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203638"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230121"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -331,7 +331,7 @@ Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multime
 - **Fotocamera**: consente di definire se l'app può accedere alla fotocamera.
 - **Contatti**: consente di definire se l'app può accedere ai contatti.
 - **Posta elettronica**: consente di definire se l'app può accedere alla posta elettronica e inviare messaggi.
-- **Posizione**: consente di definire se l'app può accedere alle informazioni sulla posizione.
+- **Location** (Percorso): consente di definire se l'app può accedere alle informazioni sulla posizione.
 - **Messaggistica**: consente di definire se l'app può leggere o inviare SMS o MMS.
 - **Microfono**: consente di definire se l'app può usare il microfono.
 - **Movimento**: consente di definire se l'app può accedere alle informazioni sul movimento dei dispositivi.
@@ -343,7 +343,7 @@ Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multime
 - **Commenti e diagnostica**: consente di definire se l'app può accedere alle informazioni di diagnostica.
 - **Sincronizza con i dispositivi**: specificare se l'app può condividere e sincronizzare automaticamente le informazioni con dispositivi wireless non associati in modo esplicito al dispositivo.
 
-## <a name="personalization"></a>Personalizzazione
+## <a name="personalization"></a>Personalization
 
 - **URL dell'immagine di sfondo del desktop (solo desktop)**: immettere l'URL di un'immagine in formato JPEG che si vuole usare come sfondo del desktop di Windows. Gli utenti non possono modificare l'immagine.
 
@@ -371,7 +371,7 @@ Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multime
 - **Fotocamera**: consente di definire se l'app può accedere alla fotocamera.
 - **Contatti**: consente di definire se l'app può accedere ai contatti.
 - **Posta elettronica**: consente di definire se l'app può accedere alla posta elettronica e inviare messaggi.
-- **Posizione**: consente di definire se l'app può accedere alle informazioni sulla posizione.
+- **Location** (Percorso): consente di definire se l'app può accedere alle informazioni sulla posizione.
 - **Messaggistica**: consente di definire se l'app può leggere o inviare SMS o MMS.
 - **Microfono**: consente di definire se l'app può usare il microfono.
 - **Movimento**: consente di definire se l'app può accedere alle informazioni sul movimento dei dispositivi.
@@ -420,7 +420,7 @@ Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multime
 
 - **Layout del menu Start**: per personalizzare il menu Start nei dispositivi desktop, è possibile caricare un file XML che include le personalizzazioni, tra cui l'ordine in cui sono elencate le app e altro ancora. Gli utenti non possono modificare il layout del menu Start immesso.
 - **Aggiungi i siti Web ai riquadri nel menu Start**: consente di importare immagini da Microsoft Edge che vengono visualizzate come collegamenti nel menu Start di Windows per i dispositivi desktop.
-- **Rimuovi le app dalla barra della applicazioni**: scegliere **Blocca** per impedire all'utente di rimuovere app dal menu Start.
+- **Rimuovi le app dalla barra della applicazioni**: scegliere **Blocca** per impedire all'utente di rimuovere app dalla barra delle applicazioni.
 - **Cambio rapido utente**: scegliere **Blocca** per impedire il cambio utente tra utenti connessi simultaneamente senza che eseguano la disconnessione.
 - **App più usate**: scegliere **Blocca** per nascondere le app più usate nel menu Start. Questa opzione disabilita anche l'alternanza corrispondente nell'app Impostazioni.
 - **App aggiunte di recente**: scegliere **Blocca** per nascondere le app aggiunte di recente nel menu Start. Questa opzione disabilita anche l'alternanza corrispondente nell'app Impostazioni.

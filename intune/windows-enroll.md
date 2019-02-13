@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3c100ef3e598bf377f0464bfba161d4ad689ba98
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: bab1656ec141b26cc3e9cb4195da7c1c24e401a1
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626040"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230172"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurare la registrazione dei dispositivi Windows
 
@@ -82,6 +82,12 @@ L'amministratore DNS di Contoso deve creare i CNAME seguenti:
 `EnterpriseEnrollment-s.manage.microsoft.com`: supporta un reindirizzamento al servizio Intune con riconoscimento del dominio dal nome di dominio del messaggio di posta elettronica
 
 La propagazione delle modifiche ai record DNS potrebbe richiedere fino a 72 ore. È impossibile verificare la modifica DNS in Intune fino a quando il record DNS non è stato propagato.
+
+## <a name="additional-endpoints-are-supported-but-not-recommended"></a>Gli endpoint aggiuntivi sono supportati ma non consigliati
+EnterpriseEnrollment-s.manage.microsoft.com è il nome FQDN preferito per la registrazione, ma esistono altri due endpoint che sono stati usati dai clienti in passato e sono supportati. EnterpriseEnrollment.manage.microsoft.com (senza -s) e manage.microsoft.com entrambi funzionano entrambi come destinazione per il server con rilevamento automatico, ma l'utente dovrà toccare OK su un messaggio di conferma. Se si punta a EnterpriseEnrollment-s.manage.microsoft.com, l'utente non dovrà eseguire il passaggio di conferma aggiuntivo, quindi questa è la configurazione consigliata
+
+## <a name="alternate-methods-of-redirection-are-not-supported"></a>I metodi alternativi di reindirizzamento non sono supportati
+L'uso di un metodo diverso dalla configurazione CNAME non è supportato. Ad esempio, l'uso di un server proxy per reindirizzare enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc a enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc o manage.microsoft.com/EnrollmentServer/Discovery.svcnon è supportato.
 
 **Passaggio 2: Verificare CNAME** (facoltativo)<br>
 1. Nel [portale di Azure in Intune](https://aka.ms/intuneportal) scegliere **Registrazione del dispositivo** > **Registrazione Windows** > **Convalida di CNAME**.

@@ -2,10 +2,10 @@
 title: Usare Windows Defender ATP in Microsoft Intune - Azure | Microsoft Docs
 description: Informazioni su come abilitare Windows Defender Advanced Threat Protection (ATP) in uno scenario end-to-end che include l'attivazione di ATP in Intune e in Windows Defender Security Center (portale ATP), l'onboarding dei dispositivi con un profilo di configurazione ATP, la creazione di criteri di conformità dei dispositivi Intune, la creazione di un criterio di accesso condizionale di Azure e il monitoraggio della conformità dei dispositivi.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53167995"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845177"
 ---
-# <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Abilitare Windows Defender ATP con l'accesso condizionale in Intune
+# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Abilitare Windows Defender ATP con l'accesso condizionale in Intune
 
 Windows Defender Advanced Threat Protection (ATP) e Microsoft Intune interagiscono tra loro per impedire violazioni della sicurezza e limitare l'impatto delle violazioni all'interno di un'organizzazione.
 

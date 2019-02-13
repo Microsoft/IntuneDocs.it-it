@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260250"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834722"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrare il dispositivo macOS in Intune con l'app Portale aziendale
 
@@ -57,7 +58,7 @@ Usare la procedura seguente per registrare i dispositivi macOS che eseguono OS X
 
 4. Nella pagina __Dispositivi__ verrà visualizzato l'elenco dei dispositivi gestiti o un banner. Il contenuto della pagina dipende dalla presenza, o meno, di dispositivi gestiti. 
     * Per aggiungere un dispositivo che non è elencato, selezionare il banner con scritto **Tap here to tell us which device you're using or add a new device** (Toccare qui per specificare il dispositivo in uso o aggiungere un nuovo dispositivo).
-    * Se non si hanno dispositivi, verrà visualizzato il banner **You don't have any managed devices. Add this one by tapping here. (Non ci sono dispositivi gestiti. Aggiungere questo toccando qui)** Fare clic sul banner per aggiungere il dispositivo.  
+    * In assenza di dispositivi, viene visualizzato il banner: **You don't have any managed devices. Add this one by tapping here. (Non ci sono dispositivi gestiti. Aggiungere questo toccando qui)** Fare clic sul banner per aggiungere il dispositivo.  
 
      ![Screenshot della pagina dei dispositivi, con un quadrato rosso attorno all'opzione banner per evidenziare dove fare clic.](./media/CP-enroll-MACOS-1808.png)  
 5.  Completare il passaggio seguente che corrisponde al messaggio attualmente visualizzato nel portale aziendale.  
@@ -93,4 +94,11 @@ Quando si visualizzano i profili di gestione di dispositivi mobili (MDM) install
 
 Inoltre, poiché questi altri profili non richiedono verifiche singole, vengono generati e distribuiti più rapidamente nei dispositivi. 
 
-Serve ancora assistenza? Rivolgersi al personale del supporto tecnico dell'azienda. È possibile trovare le informazioni di contatto nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  
+## <a name="updating-the-company-portal-app"></a>Aggiornamento dell'app Portale aziendale
+
+L'aggiornamento dell'app Portale aziendale viene eseguito come quello di qualsiasi altra app di Office, tramite Microsoft AutoUpdate per Mac. Vedere altre informazioni sull'[aggiornamento di app Microsoft per macOS](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
+
+## <a name="next-steps"></a>Passaggi successivi  
+Servono altre informazioni? Rivolgersi al personale del supporto tecnico dell'azienda. È possibile trovare le informazioni di contatto nel [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+

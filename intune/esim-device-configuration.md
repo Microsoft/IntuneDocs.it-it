@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba60df2dcec51e1c45e6a84a8fc9831937f70aef
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0d5abe78389d58043b44ba6e7f31854407019c0d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190065"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834137"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurare i profili cellulare eSIM in Intune - Anteprima pubblica
 
@@ -35,7 +36,7 @@ In Intune è possibile importare un file contenente i codici di attivazione mono
 
 Per distribuire eSIM ai dispositivi mediante Intune sono necessari gli elementi seguenti:
 
-- **Dispositivi che supportano eSIM**, ad esempio Surface LTE: [vedere se il dispositivo supporta eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). In alternativa, vedere un elenco di [dispositivi noti con supporto eSIM](#esim-capable-devices) (in questo articolo).
+- **Dispositivi abilitati per eSIM**, ad esempio Surface LTE: Verificare se [il dispositivo supporta eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). In alternativa, vedere un elenco di [dispositivi noti con supporto eSIM](#esim-capable-devices) (in questo articolo).
 - **Windows 10 Fall Creators Update PC** (versione 1709 o successiva) che viene registrato e gestito da MDM in Intune
 - **Codici di attivazione** resi disponibili dall'operatore di telefonia mobile. Questi codici di attivazione monouso vengono aggiunti a Intune e distribuiti ai dispositivi che supportano eSIM. Contattare l'operatore di telefonia mobile per ottenere i codici di attivazione eSIM.
 
@@ -65,6 +66,9 @@ I dispositivi seguenti sono indicati come provvisti di supporto eSIM o sono attu
 - Lenovo T480
 - Samsung Galaxy Book
 - Surface Pro LTE
+- HP Spectre Folio 13
+- Lenovo Yoga C630
+- Samsung Galaxy Book 2
 
 ## <a name="step-1-add-cellular-activation-codes"></a>Passaggio 1: Aggiungere i codici di attivazione del cellulare
 
@@ -145,9 +149,9 @@ Dopo avere creato il profilo del dispositivo, Intune fornisce i grafici. Questi 
 
     Intune visualizza lo stato di distribuzione e installazione del codice di attivazione destinato ai dispositivi.
 
-    - **Il dispositivo non è sincronizzato**: il dispositivo di destinazione non ha contattato Intune da quando è stata creato il criterio di distribuzione eSIM
+    - **Il dispositivo non è sincronizzato**: il dispositivo di destinazione non ha contattato Intune da quando sono stati creati i criteri di distribuzione eSIM
     - **Attivazione in sospeso**: stato intermedio in cui Intune sta installando il codice di attivazione nel dispositivo
-    - **Attiva**: l'installazione del codice di attivazione è riuscita
+    - **Attivo**: l'installazione del codice di attivazione è riuscita
     - **Attivazione non riuscita**: l'installazione del codice di attivazione non è riuscita. Vedere la Guida alla risoluzione dei problemi.
 
 #### <a name="view-the-detailed-device-status"></a>Visualizzare lo stato dettagliato del dispositivo
@@ -157,12 +161,12 @@ Dopo avere creato il profilo del dispositivo, Intune fornisce i grafici. Questi 
 1. Selezionare **Configurazione del dispositivo** > **Profili cellulare eSIM** > Select an existing subscription (Seleziona sottoscrizione esistente).
 2. Selezionare **Stato del dispositivo**. Intune visualizza dettagli aggiuntivi sul dispositivo:
 
-  - **Nome del dispositivo**: nome del dispositivo di destinazione
+  - **Nome dispositivo**: nome del dispositivo di destinazione
   - **Utente**: utente del dispositivo registrato
   - **ICCID**: codice univoco reso disponibile dall'operatore di telefonia mobile e incluso nel codice di attivazione installato nel dispositivo
   - **Stato attivazione**: stato di distribuzione e installazione Intune del codice di attivazione nel dispositivo
-  - **Stato della rete cellulare**: stato comunicato dall'operatore di telefonia mobile. Per la risoluzione dei problemi, contattare l'operatore di telefonia mobile.
-  - **Ultima archiviazione**: data dell'ultima comunicazione tra il dispositivo e Intune
+  - **Stato della rete cellulare**: stato specificato dall'operatore di telefonia mobile. Per la risoluzione dei problemi, contattare l'operatore di telefonia mobile.
+  - **Ultima sincronizzazione**: data dell'ultima comunicazione tra il dispositivo e Intune
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Monitorare i dettagli del profilo eSIM sul dispositivo
 
@@ -190,8 +194,8 @@ Il profilo di eSIM viene rimosso anche quando il dispositivo viene [disattivato]
 - Assicurarsi che il file con estensione csv sia formattato correttamente. Verificare che il file non includa codici duplicati, più operatori di telefonia mobile o piani dati diversi. Tenere presente che ogni file deve essere univoco per un operatore di telefonia mobile e un piano di rete dati.
 - Creare un gruppo di dispositivi Azure AD statico che includa solo i dispositivi eSIM di destinazione.
 - Se si verifica un problema con lo stato della distribuzione, verificare quanto segue:
-  - **Formato di file non corretto**: vedere **Passaggio 1: Aggiungere i codici di attivazione del cellulare** (in questo articolo) per informazioni su come formattare correttamente il file.
-  - **Cellular activation failure, contact mobile operator** (Errore di attivazione cellulare, contattare l'operatore di telefonia mobile): è possibile che il codice di attivazione non sia abilitato nella rete dell'operatore. In alternativa, è possibile che il download del profilo e l'attivazione del cellulare non sia riuscita.
+  - **File format not proper** (Formato file non corretto): Vedere **Passaggio 1: Aggiungere i codici di attivazione del cellulare** in questo articolo per informazioni su come formattare il file correttamente.
+  - **Cellular activation failure, contact mobile operator** (Errore di attivazione cellulare, contattare l'operatore): È possibile che il codice di attivazione non sia attivato nella rete. In alternativa, è possibile che il download del profilo e l'attivazione del cellulare non sia riuscita.
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Configurare i profili di dispositivo](device-profiles.md)

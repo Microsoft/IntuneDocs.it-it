@@ -2,24 +2,25 @@
 title: Usare i certificati SCEP con Microsoft Intune - Azure | Microsoft Docs
 description: Per usare i certificati SCEP in Microsoft Intune, configurare il dominio AD locale, creare un'autorità di certificazione, configurare il server NDES e installare il connettore di certificati di Intune. Quindi creare un profilo certificato SCEP e assegnare il profilo ai gruppi. Vedere anche i diversi ID evento e le relative descrizioni nonché i codici di diagnostica per il servizio Intune Connector.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597376"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838133"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurare e usare i certificati SCEP con Intune
 
@@ -27,7 +28,7 @@ Questo articolo illustra come configurare l'infrastruttura e quindi creare e ass
 
 ## <a name="configure-on-premises-infrastructure"></a>Configurare l'infrastruttura locale
 
-- **Dominio di Active Directory**: tutti i server elencati in questa sezione (tranne il server proxy applicazione Web) devono essere aggiunti al dominio di Active Directory.
+- **Dominio di Active Directory**: Tutti i server elencati in questa sezione (tranne il server proxy applicazione Web) devono essere aggiunti al dominio di Active Directory.
 
 - **Autorità di certificazione** (CA): deve trattarsi di un'autorità di certificazione globale (enterprise) Microsoft eseguita in un'edizione Enterprise di Windows Server 2008 R2 o versioni successive. L'opzione CA autonoma non è supportata. Per informazioni dettagliate, vedere [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx) (Installare l'autorità di certificazione).
     Se la CA esegue Windows Server 2008 R2, è necessario [installare l'hotfix di KB2483564](http://support.microsoft.com/kb/2483564/).
@@ -67,11 +68,11 @@ Abilitare tutte le porte e i protocolli necessari tra il server del servizio Reg
 |**Modello di certificato**|Configurare questo modello nella CA emittente.|
 |**Certificato di autenticazione client**|Necessario alla CA emittente o alla CA pubblica, questo certificato viene installato nel server NDES.|
 |**Certificato di autenticazione server**|Necessario alla CA emittente o alla CA pubblica, questo certificato SSL viene installato e associato in IIS nel server NDES. Se il certificato ha il set di utilizzi della chiave di autenticazione client e server (**Utilizzi chiave avanzati**), è possibile usare lo stesso certificato.|
-|**Certificato CA radice attendibile**|Esportare questo certificato come file con estensione **cer** dalla CA radice o da qualsiasi dispositivo che consideri attendibile la CA radice. Assegnarlo quindi agli utenti, ai dispositivi o a entrambi usando il profilo certificato CA attendibile.<br /><b>Nota:<b /> in fase di assegnazione di un profilo certificato SCEP, assicurarsi di assegnare il profilo certificato radice attendibile a cui fa riferimento il profilo certificato SCEP allo stesso gruppo di utenti o dispositivi.<br /><br />Viene usato un certificato CA radice attendibile per ogni piattaforma di sistema e lo si associa con ogni profilo del certificato radice attendibile creato.<br /><br />È possibile usare certificati CA radice attendibili aggiuntivi, se necessario. Ad esempio, è possibile farlo per fornire un trust a un'autorità di certificazione che firma i certificati di autenticazione del server per i punti di accesso Wi-Fi.|
+|**Certificato CA radice attendibile**|Esportare questo certificato come file con estensione **cer** dalla CA radice o da qualsiasi dispositivo che consideri attendibile la CA radice. Assegnarlo quindi agli utenti, ai dispositivi o a entrambi usando il profilo certificato della CA attendibile.<br /><b>Nota:<b /> in fase di assegnazione di un profilo certificato SCEP, assicurarsi di assegnare il profilo certificato radice attendibile a cui fa riferimento il profilo certificato SCEP allo stesso gruppo di utenti o dispositivi.<br /><br />Viene usato un certificato CA radice attendibile per ogni piattaforma di sistema e lo si associa con ogni profilo del certificato radice attendibile creato.<br /><br />È possibile usare certificati CA radice attendibili aggiuntivi, se necessario. Ad esempio, è possibile farlo per fornire un trust a un'autorità di certificazione che firma i certificati di autenticazione del server per i punti di accesso Wi-Fi.|
 
 ### <a name="accounts"></a>Account
 
-|Nome|Dettagli|
+|Name|Dettagli|
 |--------|-----------|
 |**Account di servizio NDES**|Specificare un account utente di dominio da usare come account del servizio NDES. |
 
@@ -482,7 +483,7 @@ Per confermare che il servizio sia in esecuzione, aprire un browser e immettere 
      - **Firma digitale**: consentire lo scambio di chiavi solo se viene usata una firma digitale per proteggere la chiave.
    - **Dimensioni chiave (bit)**: selezionare il numero di bit contenuti nella chiave.
    - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): selezionare uno dei tipi di algoritmo hash disponibili da usare con questo certificato. Selezionare il livello di sicurezza più avanzato supportato dai dispositivi che verranno connessi.
-   - **Certificato radice**: scegliere un profilo di certificato radice della CA già configurato e assegnato all'utente e/o al dispositivo. Questo certificato della CA deve essere il certificato radice per l'autorità di certificazione che rilascia il certificato che si sta configurando in questo profilo certificato. Assicurarsi di assegnare il profilo certificato radice attendibile allo stesso gruppo assegnato nel profilo certificato SCEP.
+   - **Certificato radice**: scegliere un profilo di certificato radice della CA già configurato e assegnato all'utente e/o al dispositivo. Questo certificato CA deve essere il certificato radice per l'autorità di certificazione che rilascia il certificato che si sta configurando in questo profilo certificato. Assicurarsi di assegnare il profilo certificato radice attendibile allo stesso gruppo assegnato nel profilo certificato SCEP.
    - **Utilizzo chiavi avanzato**: scegliere **Aggiungi** per aggiungere valori per lo scopo designato del certificato. Nella maggior parte dei casi il certificato richiede l' **Autenticazione Client** in modo che l'utente o il dispositivo possa eseguire l'autenticazione in un server. È comunque possibile aggiungere altri utilizzi di chiavi secondo necessità.
    - **Impostazioni di registrazione**
      - **Soglia di rinnovo (%)**: immettere la percentuale di durata residua del certificato prima che il dispositivo richieda il rinnovo del certificato.
@@ -519,7 +520,7 @@ A partire dalla versione 6.1806.x.x, il servizio Intune Connector registra gli e
 > [!NOTE]
 > Per informazioni dettagliate sui codici di diagnostica corrispondenti a ogni evento, vedere la tabella **Codici di diagnostica** in questo articolo.
 
-| ID dell'evento      | Nome evento    | Descrizione evento | Codici di diagnostica correlati |
+| ID evento      | Nome evento    | Descrizione evento | Codici di diagnostica correlati |
 | ------------- | ------------- | -------------     | -------------            |
 | 10010 | StartedConnectorService  | Servizio Connector avviato | 0x00000000, 0x0FFFFFFF |
 | 10020 | StoppedConnectorService  | Servizio Connector arrestato | 0x00000000, 0x0FFFFFFF |
@@ -560,5 +561,6 @@ A partire dalla versione 6.1806.x.x, il servizio Intune Connector registra gli e
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Usare i certificati PKCS](certficates-pfx-configure.md) o [rilasciare certificati PKCS da un servizio Web di gestione PKI Symantec](certificates-symantec-configure.md)
+- [Usare i certificati PKCS](certficates-pfx-configure.md) o [Rilasciare certificati PKCS da un servizio Web di gestione PKI Symantec](certificates-symantec-configure.md)
 - [Aggiungere un'autorità di certificazione di terze parti per l'uso di SCEP con Intune](certificate-authority-add-scep-overview.md)
+- Per assistenza aggiuntiva, usare la guida [Troubleshooting SCEP certificate profile deployment in Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) (Risoluzione dei problemi di distribuzione del profilo certificato SCEP in Microsoft Intune).

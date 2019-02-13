@@ -5,170 +5,139 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 02/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
-ms.reviewer: karanda
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12131fe0b78814850cfadee15533620dd5813f6c
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: c0177e136d516ba1d4fe44c7301b1534ab1c5e6a
+ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297401"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55737469"
 ---
-# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configurare una rete privata virtuale (VPN) per app in Intune per dispositivi iOS
+# <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configurare una rete privata virtuale (VPN) per app per dispositivi iOS in Intune
 
-È possibile specificare quali app gestite possono usare la rete privata virtuale (VPN) nei dispositivi iOS gestiti da Intune. Quando si crea una VPN per app in Intune, l'utente finale si connette automaticamente tramite la VPN durante l'accesso ai documenti aziendali.
+In Microsoft Intune è possibile creare e usare VPN assegnate a un'app. Questa funzionalità è denominata "VPN per app". È necessario scegliere le app gestite che possono usare la VPN nei dispositivi gestiti da Intune. Quando si usa una VPN per app, gli utenti finali si connettono automaticamente tramite VPN per accedere alle risorse aziendali, ad esempio ai documenti.
 
-VPN per App è attualmente disponibile per i provider seguenti:
+Questa funzionalità si applica a:
 
- - Check Point Remote Access VPN
- - Cisco AnyConnect
- - Citrix
- - F5
- - Pulse Connect Secure
- - Palo Alto Networks
- - SonicWall
- - Zscaler Private Access
+- iOS 9 e versioni successive
+
+Controllare la documentazione del provider della VPN per verificare se la VPN supporta la VPN per app.
+
+Questo articolo illustra come creare un profilo VPN per app e assegnarlo alle app. Seguire questa procedura per creare una semplice esperienza VPN per app per gli utenti finali. Nella maggior parte delle VPN che supportano la VPN per app, l'utente apre un'app e automaticamente si connette alla VPN.
+
+Alcune connessioni VPN prevedono l'autenticazione tramite nome utente e password per la VPN per app. Gli utenti dovranno quindi immettere un nome utente e una password per connettersi alla VPN.
+
+## <a name="per-app-vpn-with-zscaler"></a>VPN per app con Zscaler
+
+Zscaler Private Access (ZPA) si integra con Azure Active Directory (Azure AD) per l'autenticazione. Quando si usa ZPA, non sono necessari né il profilo del [certificato attendibile](#create-a-trusted-certificate-profile) né il profilo del [certificato SCEP o PKCS](#create-a-scep-or-pkcs-certificate-profile) (descritti in questo articolo). Se è stato configurato un profilo VPN per app per Zscaler, l'apertura di una delle app associate non determina la connessione automatica a ZPA. L'utente deve invece accedere prima all'app di Zscaler. L'accesso remoto sarà limitato alle app associate.
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Prerequisiti per VPN per app
 
 > [!IMPORTANT]
-> Può succedere che il vendor VPN abbia altri requisiti specifici per VPN per app, ad esempio hardware o licenze particolari. Controllare la relativa documentazione e soddisfare tali prerequisiti prima di configurare VPN per app in Intune.
+> Può succedere che il vendor VPN abbia altri requisiti per VPN per app, ad esempio hardware o licenze particolari. Controllare la relativa documentazione e soddisfare tali prerequisiti prima di configurare VPN per app in Intune.
 
-Per dimostrare la propria identità, il server VPN presenta il certificato che deve essere accettato senza prompt da parte del dispositivo. Per garantire l'approvazione automatica del certificato, è possibile creare un profilo certificato attendibile con un certificato radice del server VPN emesso dalla CA. 
+Per dimostrare la propria identità, il server VPN presenta il certificato che deve essere accettato senza prompt da parte del dispositivo. Per confermare l'approvazione automatica del certificato, creare un profilo del certificato attendibile che contiene un certificato radice del server VPN emesso dall'Autorità di certificazione (CA). 
 
-Esportare il certificato e aggiungere la CA.
+#### <a name="export-the-certificate-and-add-the-ca"></a>Esportare il certificato e aggiungere la CA
 
-1. Aprire la console di amministrazione nel server VPN.
-2. Verificare che il server VPN utilizzi l'autenticazione basata sui certificati. 
+1. Nel server VPN aprire la console di amministrazione.
+2. Confermare che il server VPN usi l'autenticazione basata sui certificati. 
 3. Esportare il file relativo al certificato radice attendibile. Si tratta di un file CER da aggiungere durante la creazione di un profilo di un certificato attendibile.
 4. Aggiungere il nome della CA che ha emesso il certificato di autenticazione per il server VPN.
-    Se l'autorità di certificazione presentata dal dispositivo corrisponde a una CA presente nell'elenco di CA attendibili del server VPN, allora il server VPN autentica il dispositivo.
+
+    Se l'autorità di certificazione presentata dal dispositivo corrisponde a una CA presente nell'elenco di CA attendibili del server VPN, allora il server VPN autenticherà il dispositivo.
 
 ## <a name="create-a-group-for-your-vpn-users"></a>Creare un gruppo per gli utenti VPN
 
-Creare o scegliere un gruppo esistente in Azure Active Directory (Azure AD) per includere i membri che hanno accesso a VPN per app.
-
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-2. Scegliere **Gruppi** e fare clic su **Nuovo gruppo**.
-3. Selezionare un **Tipo di gruppo** per il gruppo. 
-3. Digitare il **Nome gruppo** del gruppo. 
-4. Digitare la **Descrizione gruppo** del gruppo. 
-5. Selezionare **Assegnato** per **Tipo di appartenenza**.
-7. Cercare gli utenti VPN per nome o indirizzo di posta elettronica nel riquadro **Membri**.
-8. Selezionare ogni utente e fare clic su **Seleziona**.
-9. Fare clic su **Crea**
+Creare o scegliere un gruppo esistente in Azure Active Directory (Azure AD) per gli utenti o i dispositivi che usano la VPN per app. Per creare un nuovo gruppo, vedere [Aggiungere gruppi per organizzare utenti e dispositivi](groups-add.md).
 
 ## <a name="create-a-trusted-certificate-profile"></a>Creare un profilo certificato attendibile
 
 Importare il certificato di radice del server VPN rilasciato dalla CA in un profilo creato in Intune. Il profilo certificato attendibile indica al dispositivo iOS di considerare attendibile automaticamente la CA che il server VPN presenta.
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-2. Scegliere **Configurazione del dispositivo** e poi fare clic su **Profili**.
-3. Fare clic su **Crea profilo**. In **Crea profilo**:
-    1. Immettere il **Nome**.
-    2. Immettere la **Descrizione**.
-    3. Selezionare **iOS** per **Piattaforma**.
-    4. Selezionare **Certificato attendibile** per il **Tipo profilo**.
-4. Fare clic sull'icona della cartella e individuare il certificato VPN (file CER) esportato dalla console di amministrazione di VPN. Fare clic su **OK**.
-5. Scegliere **Crea**.
+1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Intune**.
+2. Selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**.
+3. Immettere le proprietà seguenti:
+    - **Nome**
+    - **Descrizione**
+    - **Piattaforma**: selezionare **iOS**.
+    - **Tipo di profilo**: selezionare **Certificato attendibile**.
+4. Selezionare l'icona della cartella e individuare il certificato VPN (file con estensione cer) esportato dalla console di amministrazione della VPN. 
+5. Selezionare **OK** > **Crea**.
 
-    ![Creare un profilo certificato attendibile](./media/vpn-per-app-create-trusted-cert.png)
+    ![Creare un profilo del certificato attendibile per dispositivi iOS in Microsoft Intune](./media/vpn-per-app-create-trusted-cert.png)
 
-## <a name="create-a-scep-certificate-profile"></a>Creare un profilo certificato SCEP
+## <a name="create-a-scep-or-pkcs-certificate-profile"></a>Creare un profilo del certificato SCEP o PKCS
 
-Il profilo del certificato radice attendibile consente a iOS di considerare automaticamente attendibile il Server VPN. Il certificato SCEP specifica le credenziali dal client VPN iOS al server VPN. Il certificato permette l'autenticazione del dispositivo iOS senza che l'utente debba inserire nome utente e password. 
+Il profilo del certificato radice trusted consente al dispositivo di considerare automaticamente attendibile il server VPN. Il certificato SCEP o PKCS specifica le credenziali dal client VPN iOS al server VPN. Il certificato consente l'autenticazione automatica del dispositivo senza che sia necessario immettere un nome utente o una password. 
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-2. Scegliere **Configurazione del dispositivo** e poi fare clic su **Profili**.
-3. Fare clic su **Crea profilo**. In **Crea profilo**:
-    1. Immettere il **Nome**.
-    2. Immettere la **Descrizione**.
-    3. Selezionare **iOS** per **Piattaforma**.
-    4. Selezionare **Certificato SCEP** per il **Tipo profilo**.
-4. Selezionare **Anni** e tipo `2` per **periodo di validità del certificato**.
-5. Selezionare **Nome comune** per **formato nome soggetto**.
-6. Selezionare **UPN** per **Nome alternativo soggetto**.
-7. Selezionare **Firma digitale** e **Crittografia chiave** per **Utilizzo chiave**.
-8. Selezionare **2048** per **Dimensioni chiave (bit)**.
-9. Selezionare un certificato radice e un certificato SCEP. Fare clic su **OK**.
-10. Immettere `Client Authentication` in **nome** per **Utilizzo chiave avanzato**.
-11. Immettere `1.3.6.1.5.5.7.3.2` in **Identificatore dell'oggetto**.
-12. Fare clic su **Aggiungi**.
-13. Immettere l'***URL del Server*** e fare clic su **Aggiungi**.
-14. Fare clic su **OK**.
-15. Scegliere **Crea**.
+Per configurare e assegnare il certificato di autenticazione client, vedere uno degli articoli seguenti:
 
-    ![Creare un profilo certificato SCEP](./media/vpn-per-app-create-scep-cert.png)
+- [Configurare e gestire i certificati SCEP con Intune](certificates-scep-configure.md)
+- [Configurare e gestire i certificati PKCS con Intune](certficates-pfx-configure.md)
+
+Verificare che il certificato sia configurato per l'autenticazione client. È possibile impostare questa opzione direttamente nei profili del certificato SCEP (elenco **Utilizzo chiavi avanzato** > **Autenticazione client**). Per PKCS, impostare l'autenticazione client nel modello di certificato nella CA.
+
+![Creare un profilo del certificato SCEP in Microsoft Intune che include formato del nome soggetto, utilizzo chiavi, utilizzo chiavi avanzato e così via](./media/vpn-per-app-create-scep-cert.png)
 
 ## <a name="create-a-per-app-vpn-profile"></a>Creare un profilo VPN per app
 
-Il profilo VPN contiene il certificato SCEP con le credenziali del client, le informazioni di connessione per la connessione VPN e il flag VPN per app per abilitare la funzionalità di VPN per app per l'utilizzo da parte dell'applicazione iOS.
+Il profilo VPN contiene il certificato SCEP o PKCS con le credenziali del client, le informazioni di connessione alla VPN e il flag VPN per app per abilitare la funzionalità VPN per app utilizzabile dall'applicazione iOS.
 
-1. Accedere al [portale di Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-2. Scegliere **Configurazione del dispositivo** e poi fare clic su **Profili**.
-3. Fare clic su **Crea profilo**. In **Crea profilo**:
-    1. Immettere il **Nome**.
-    2. Immettere la **Descrizione**.
-    3. Selezionare **iOS** per **Piattaforma**.
-    4. Selezionare **VPN** per il **Tipo profilo**.
-4. Selezionare **VPN di base**. In **VPN di base**:
-    1. Immettere il **Nome connessione**.
-    2. Immettere **Indirizzo IP o FQDN**.
-    3. Selezionare **Certificati** per il **Metodo di autenticazione**.
-    4. Selezionare il certificato SCEP in **Certificato di autenticazione** e fare clic su **OK**.
-    5. Selezionare la rete VPN per **Tipo di connessione**.
-    6. Se necessario, configurare gli attributi per la VPN.
-    7. Selezionare **Disabilita Split tunneling**.
-5. Click **VPN automatica**. In **VPN automatica**:
-    1. Selezionare **VPN Per App** per il **Tipo di VPN automatica**.
-    2. Digitare l'URL per la VPN e fare clic su **Aggiungi**.
-    3. Fare clic su **OK**.
-6. Fare clic su **OK**.
-7. Scegliere **Crea**.
+1. In **Intune** selezionare **Configurazione del dispositivo** > **Profili** > **Crea profilo**. 
+2. Immettere le proprietà seguenti: 
+    - **Nome**
+    - **Descrizione**
+    - **Piattaforma**: selezionare **iOS**.
+    - **Tipo di profilo**: selezionare **VPN**.
+3. In **Tipo di connessione** selezionare l'app client VPN.
+4. Selezionare **VPN di base**. Nella pagina relativa alle [impostazioni VPN iOS](vpn-settings-ios.md) sono elencate e descritte tutte le impostazioni. Quando si usa una VPN per app, assicurarsi che le queste proprietà siano impostate come specificato di seguito: 
+    
+    - **Metodo di autenticazione**: selezionare **Certificati**. 
+    - **Certificato di autenticazione**: selezionare un certificato SCEP o PKCS esistente > **OK**.      
+    - **Split tunneling**: selezionare **Disabilita** affinché tutto il traffico usi il tunnel VNP quando la connessione VPN è attiva. 
 
-    ![Creare un profilo VPN per app](./media/vpn-per-app-create-vpn-profile.png)
+      ![In un profilo VPN per app immettere una connessione, l'indirizzo IP o un FQDN, il metodo di autenticazione e lo split tunneling in Microsoft Intune](./media/vpn-per-app-create-vpn-profile.png)
 
+    Per informazioni su altre impostazioni, vedere la pagina relativa alle [impostazioni VPN iOS](vpn-settings-ios.md).
+
+5. Selezionare **VPN automatico** > **Tipo di VPN automatica** > **VPN per app**
+
+    ![Impostare VPN automatico per VPN per app in dispositivi iOS in Intune](./media/vpn-per-app-automatic.png)
+
+6. Selezionare **OK** > **OK** > **Crea**.
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Associare un'applicazione con il profilo VPN
 
 Dopo aver aggiunto il profilo VPN, associare l'app e il gruppo di Azure AD per il profilo.
 
-1. Accedere al [portale Azure](https://portal.azure.com).
-2. Selezionare **Tutti i servizi**, filtrare per **Intune** e selezionare **Microsoft Intune**.
-3. Scegliere **App client**.
-4. Fare clic su **Applicazioni**.
-5. Selezionare l'app dall'elenco delle app.
-6. Fare clic **Assegnazioni.**
-7. Fare clic su **Aggiungi gruppo**.
-8. Nel pannello **Aggiungi gruppo** selezionare **Obbligatorio** in **Tipo di assegnazione**.
-9. Selezionare il gruppo definito in precedenza e selezionare **Make this app required** (Imposta app come obbligatoria).
-10. Selezionare la definizione VPN per la rete **VPN**.
- 
-    > [!NOTE]  
-    > In alcuni casi la definizione VPN può richiedere alcuni minuti per recuperare il valore. Attendere 3-5 minuti prima di fare clic su **Salva**.
+1. In **Intune** selezionare **App client** > **App**.
+2. Selezionare un'app dall'elenco > **Assegnazioni** > **Aggiungi gruppo**.
+3. In **Tipo di assegnazione** selezionare **Obbligatorio** o **Available for enrolled devices** (Disponibile per i dispositivi registrati).
+4. Selezionare **Gruppi inclusi** > **Selezionare i gruppi da includere** > selezionare il gruppo [creato](#create-a-group-for-your-vpn-users) (in questo articolo) > **Seleziona**.
+5. In **VPN** selezionare il profilo VPN per app [creato](#create-a-per-app-vpn-profile) (in questo articolo).
 
-11. Fare clic su **OK** e su **Salva**.
+    ![Assegnare un'app al profilo VPN per app in Microsoft Intune](./media/vpn-per-app-app-to-vpn.png)
 
-    ![Associare un'applicazione alla VPN](./media/vpn-per-app-app-to-vpn.png)
+6. Selezionare **OK** > **Salva**.
 
-L'associazione tra un'app e un profilo verrà rimossa durante la successiva archiviazione del dispositivo, quando si verificano le condizioni seguenti:
+L'associazione tra un'app e un profilo viene rimossa durante la successiva archiviazione del dispositivo, quando si verificano tutte le condizioni seguenti:
+
 - L'app è con finalità di installazione richiesta.
 - Sia il profilo che l'app sono destinati allo stesso gruppo.
 - È possibile rimuovere la configurazione VPN per app dall'assegnazione di app.
 
-L'associazione tra un'app e un profilo rimarrà fino a quando l'utente finale non richiede una reinstallazione dal portale aziendale, quando si verificano le condizioni seguenti:
+L'associazione tra un'app e un profilo rimane fino a quando l'utente non richiede una reinstallazione dal portale aziendale, quando si verificano tutte le condizioni seguenti:
+
 - L'app è con finalità di installazione disponibile.
 - Sia il profilo che l'app sono destinati allo stesso gruppo.
 - L'utente finale ha richiesto l'installazione dell'app dal portale aziendale con la conseguente installazione dell'app e del profilo nel dispositivo.
@@ -180,35 +149,16 @@ Con la VPN per app configurata e associata all'app, verificare da un dispositivo
 
 ### <a name="before-you-attempt-to-connect"></a>Prima di provare a connettersi
 
- - Verificare che sia in esecuzione iOS 9 o una versione successiva.
- - Verificare di implementare *tutti* i criteri citati allo stesso gruppo di utenti. In caso contrario l'esperienza di VPN per app sarà sicuramente interrotta.  
- - Verificare che sia installata l'app VPN di terze parti supportata. Sono supportate le seguenti VPN:
-    - Check Point Capsule Connect
-    - Cisco AnyConnect
-    - Citrix VPN
-    - Citrix SSO
-    - F5 Access
-    - Palo Alto Networks GlobalProtect
-    - Pulse Secure
-    - SonicWall Mobile Connect
-    - Zscaler
-
-    > [!NOTE]
-    > Se si usa l'app VPN Pulse Secure, è possibile scegliere di usare il tunnelling di livello app o di livello pacchetto. Impostare il valore **ProviderType** su **app-proxy** per il tunneling di livello app e su **packet-tunnel** per il tunneling di livello pacchetto.
+ - Verificare di implementare tutti i criteri specificati allo stesso gruppo di utenti. In caso contrario, l'esperienza VPN per app non funzionerà.
+ - Se si usa l'app VPN Pulse Secure o un'app client VPN personalizzata, è possibile scegliere di usare il tunnelling di livello app o di livello pacchetto. Impostare il valore **ProviderType** su **app-proxy** per il tunneling di livello app e su **packet-tunnel** per il tunneling di livello pacchetto. Controllare la documentazione del provider della VPN per assicurarsi di usare il valore corretto.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Connessione mediante VPN per app
 
 Verificare l'esperienza completamente automatica effettuando la connessione senza dover selezionare la VPN o digitare le credenziali. Con l'esperienza completamente automatica:
 
- - il dispositivo non richiede di considerare attendibile il server VPN. Vale a dire, verrà visualizzata la finestra di dialogo **Dynamic Trust** (Trust dinamico).
- - non è necessario digitare le credenziali.
- - la connessione alla VPN sarà attiva dopo aver fatto clic sul pulsante Connetti.
-
-Verificare la connessione dei dispositivi iOS.
-
-1. Toccare l'app VPN.
-2. Toccare **Connetti**.  
-La VPN si connette senza prompt aggiuntivi.
+ - Il dispositivo non richiede di considerare attendibile il server VPN. Non verrà quindi visualizzata la finestra di dialogo **Dynamic Trust** (Trust dinamico).
+ - Non è necessario digitare le credenziali.
+ - Il dispositivo dell'utente si connette alla VPN all'apertura di una delle app associate.
 
 <!-- ## Troubleshooting the per-app VPN
 
@@ -225,4 +175,4 @@ To review event logs:
 ## <a name="next-steps"></a>Passaggi successivi
 
 - Per le impostazioni iOS, vedere [VPN settings for iOS devices in Microsoft Intune](vpn-settings-ios.md) (Impostazioni VPN per dispositivi iOS in Microsoft Intune).
--  Per altre informazioni sulle impostazioni VPN e Intune, vedere [Come configurare le impostazioni VPN in Microsoft Intune](vpn-settings-configure.md).
+- Per altre informazioni sulle impostazioni VPN e Intune, vedere la pagina relativa alla [configurazione delle impostazioni VPN in Microsoft Intune](vpn-settings-configure.md).

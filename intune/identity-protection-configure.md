@@ -2,10 +2,10 @@
 title: Usare un PIN per accedere ai dispositivi Windows 10 con Microsoft Intune - Azure | Microsoft Docs
 description: Usare Windows Hello for Business per consentire agli utenti di accedere ai dispositivi usando un PIN, un'impronta digitale e altro. Creare un profilo di configurazione di protezione dell'identità in Intune per i dispositivi Windows 10 con queste impostazioni e assegnare il profilo ai gruppi di utenti e ai gruppi di dispositivi.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c917294ac11f8f0a19c0f8f361df8d2910cb461c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831385"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838004"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Usare Windows Hello for Business nei dispositivi Windows 10 con Microsoft Intune
 
@@ -60,7 +61,7 @@ Questo articolo illustra come creare un profilo di configurazione del dispositiv
 
 4. Al termine, selezionare **OK** > **Crea** per salvare le modifiche.
 
-Il profilo viene creato e visualizzato nell'elenco dei profili. Ora [assegnare](device-profile-assign.md) il profilo ai gruppi.
+Il profilo viene creato e visualizzato nell'elenco dei profili. Successivamente [assegnare](device-profile-assign.md) questo profilo ai gruppi di utenti e dispositivi in base alle esigenze.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

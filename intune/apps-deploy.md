@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734273"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838768"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
@@ -51,7 +52,7 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
 >
 > Per ricevere gli aggiornamenti delle app nei dispositivi che non sono registrati con Intune, gli utenti devono accedere al portale aziendale dell'organizzazione e installare manualmente gli aggiornamenti delle app.
 
-## <a name="to-assign-an-app"></a>Per assegnare un'applicazione
+## <a name="assign-an-app"></a>Assegnare un'app
 
 1. Accedere al [portale di Azure](https://portal.azure.com).
 2. Selezionare **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
@@ -62,7 +63,7 @@ La tabella seguente elenca le varie opzioni per l'assegnazione di applicazioni a
 7. Selezionare **Aggiungi gruppo** per aprire il riquadro **Aggiungi gruppo** relativo all'app.
 8. Per l'app specifica, selezionare un **tipo di assegnazione**:
    - **Disponibile per i dispositivi registrati**: assegnare l'app ai gruppi di utenti che possono installare l'app dall'app Portale aziendale o dal sito Web.
-   - **Disponibile con o senza registrazione**: assegnare l'app a gruppi di utenti i cui dispositivi non sono registrati con Intune. Le app della versione gestita di Google Play non supportano questa opzione. Agli utenti deve essere assegnata una licenza di Intune. Vedere [Licenze che includono Intune](licenses.md).
+   - **Disponibile con o senza registrazione**: assegnare l'app a gruppi di utenti i cui dispositivi non sono registrati con Intune. Agli utenti deve essere assegnata una licenza di Intune. Vedere [Licenze che includono Intune](licenses.md).
    - **Obbligatoria**: l'app viene installata nei dispositivi nei gruppi selezionati. In alcune piattaforme potrebbero essere visualizzati messaggi di aggiuntivi per chiedere all'utente finale di confermare l'avvio dell'installazione dell'app.
    - **Disinstalla**: l'app viene disinstallata dai dispositivi nei gruppi selezionati se Intune ha installato in precedenza l'applicazione nel dispositivo tramite un'assegnazione "Disponibile per i dispositivi registrati" o "Obbligatoria" usando la stessa distribuzione. I collegamenti Web non possono essere rimossi dopo la distribuzione.
 
@@ -122,6 +123,9 @@ In alcuni casi, la stessa app viene assegnata a più gruppi, ma con finalità di
 > [!NOTE]
 > Solo per le app dello Store iOS gestite, quando si aggiungono queste app in Microsoft Intune assegnandole come **obbligatorie**, le app vengono create automaticamente con entrambe le finalità **Obbligatoria** e **Disponibile**.<br><br>
 > Le app dello Store iOS (non le app VPP per iOS) di destinazione con scopo obbligatorio verranno applicate sul dispositivo al momento della connessione di quest'ultimo e verranno visualizzate anche nell'app Portale aziendale.
+
+## <a name="android-enterprise-app-we-app-deployment"></a>Distribuzione di app Android Enterprise APP-WE
+Per i dispositivi Android in uno scenario di distribuzione APP-WE (App Protection Policy Without Enrollment) non registrato, è ora possibile usare Google Play gestito per distribuire app dello Store e app line-of-business agli utenti. In particolare, è possibile offrire agli utenti finali un catalogo di app e un'esperienza di installazione che non richiede più agli utenti finali di ridurre il comportamento di sicurezza dei propri dispositivi consentendo installazioni da origini sconosciute. Inoltre, questo scenario di distribuzione fornirà un'esperienza migliorata per gli utenti finali. Per la procedura per assegnare un'app, vedere [Assegnare un'app](apps-deploy.md#assign-an-app).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
