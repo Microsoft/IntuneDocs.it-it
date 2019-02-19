@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 951db22026725c2ec2e9c2be340bcccd44b2528b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 383370aaaca10cb44b614be6e250218106406cb4
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848101"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307754"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Monitorare la conformità dell'accesso condizionale per Exchange locale ed Exchange Online in Intune
 
-A partire dalla versione 1704 di Intune, gli amministratori possono vedere report correlati ai record dei dispositivi Exchange ActiveSync sincronizzati con Intune tramite On-Premises Exchange Connector o il connettore da servizio a servizio di Intune (Exchange Online Connector). I report di conformità dell'accesso condizionale offrono un riepilogo dei dispositivi con stati di sincronizzazione diversi:
+A partire dalla versione 1704 di Intune, gli amministratori possono vedere informazioni di report correlate ai record dei dispositivi Exchange ActiveSync sincronizzati con Intune tramite On-Premises Exchange Connector o il connettore da servizio a servizio di Intune (Exchange Online Connector). Le informazioni di report sulla conformità dell'accesso condizionale offrono un riepilogo dei dispositivi con stati di sincronizzazione diversi:
 
 -   **Consentito**
 
@@ -38,9 +38,9 @@ A partire dalla versione 1704 di Intune, gli amministratori possono vedere repor
 
 2.  Dopo l'accesso viene visualizzato il **dashboard di Azure**.
 
-3.  Scegliere  **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
+3.  Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
-4.  Scegliere  **Intune**. Verrà visualizzato il **dashboard di Intune**.
+4.  Scegliere **Intune**. Verrà visualizzato il **dashboard di Intune**.
 
 5.  Scegliere **Accesso condizionale** e quindi **Panoramica**.
 

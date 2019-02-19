@@ -3,8 +3,8 @@ title: Configurare l'accesso condizionale basato su dispositivo con Intune
 titlesuffix: Microsoft Intune
 description: Informazioni su come creare criteri di accesso condizionale basato su dispositivo usando i criteri di gestione delle app mobili e di conformità dei dispositivi di Microsoft Intune.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/11/2018
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c9fc2b2e973fdebfd303382e88630ef9999b517
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844157"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307788"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Creare criteri di accesso condizionale basato su dispositivo
 
@@ -80,7 +80,7 @@ I criteri di accesso condizionale specificano le app o i servizi da proteggere, 
 10. In **Controlli di accesso** selezionare **Concedi**. Specificare cosa accade in base alle condizioni configurate.  È possibile selezionare una delle opzioni seguenti:
     - **Blocca accesso**: agli utenti specificati in questi criteri verrà negato l'accesso alle app in base alle condizioni specificate.
     - **Concedi accesso**: agli utenti specificati in questi criteri verrà concesso l'accesso, ma è possibile richiedere una delle azioni seguenti:
-      - **Richiedi autenticazione a più fattori **: l'utente dovrà soddisfare requisiti di sicurezza aggiuntivi, ad esempio una telefonata o un SMS.
+      - **Richiedi autenticazione a più fattori** : l'utente dovrà soddisfare requisiti di sicurezza aggiuntivi, ad esempio una telefonata o un SMS.
       - **Richiedi che i dispositivi siano contrassegnati come conformi**: il dispositivo deve essere conforme a Intune. Se il dispositivo non è conforme, l'utente avrà la possibilità di registrare il dispositivo in Intune. 
       - **Richiedi dispositivo aggiunto ad Azure AD ibrido**: i dispositivi devono essere aggiunti ad Azure AD ibrido.
       - **Richiedi app client approvata**: il dispositivo deve usare app client approvate. 
