@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08e6c7657eeba7a41b9927e736fe7f4fc07e25e6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a57dca7f6b817177cbd131e969c1b5aa52a248a8
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848577"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307771"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controllo degli accessi in base al ruolo (RBAC) con Microsoft Intune
 
@@ -29,7 +29,8 @@ RBAC consente di controllare chi esegue varie attività di Intune all'interno de
 
 - **Definizione del ruolo**: nome del ruolo, risorse gestite dal ruolo e autorizzazioni concesse per ogni risorsa.
 - **Membri**: gruppi di utenti a cui vengono concesse le autorizzazioni.
-- **Ambito**: gruppi di utenti o dispositivi che i membri possono gestire.
+- **Ambito (gruppi)**: gruppi di utenti o dispositivi che i membri possono gestire.
+- **[Ambito (tag)](https://docs.microsoft.com/intune/scope-tags)**: tag in cui viene applicata l'assegnazione di ruolo.
 - **Assignment**: dopo aver configurato la definizione, i membri e l'ambito, il ruolo viene assegnato.
 
 ![Esempio di controllo RBAC di Intune](./media/intune-rbac-1.PNG)
@@ -82,20 +83,22 @@ Solo gli utenti **Amministratori del servizio** con autorizzazioni "Completo" ve
 
 1. Accedere al [portale Azure](https://portal.azure.com).
 2. Scegliere **Tutti i servizi** > **Intune**. Intune si trova nella sezione **Monitoraggio e gestione**.
-3. Nel riquadro **Intune** scegliere **Ruoli** > **Tutti i ruoli**.
-4. Nel riquadro **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo predefinito da assegnare.
+3. Nel pannello **Intune** scegliere **Ruoli** > **Tutti i ruoli**.
+4. Nel pannello **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo predefinito da assegnare.
 
-5. Nel riquadro <*nome ruolo*> - **Panoramica** scegliere **Gestisci** e quindi **Assegnazioni**.
+5. Nel pannello <*nome ruolo*> - **Panoramica** scegliere **Gestisci** > **Assegnazioni**.
 
-6. Nel riquadro del ruolo personalizzato scegliere **Assegna**.
+6. Nel pannello del ruolo personalizzato scegliere **Assegna**.
 
-7. Nel riquadro **Assegnazioni di ruolo** immettere un **nome** e una **descrizione** facoltativa per l'assegnazione.
+7. Nel pannello **Assegnazioni di ruolo** immettere un **Nome dell'assegnazione** e una **Descrizione dell'assegnazione** facoltativa per l'assegnazione.
 
-8. Per **Membri** scegliere un gruppo contenente l'utente a cui si vogliono assegnare le autorizzazioni.
+8. Per **Membri (gruppi)** scegliere un gruppo contenente l'utente a cui si vogliono assegnare le autorizzazioni.
 
-9. Per **Ambito** scegliere un gruppo contenente gli utenti che il membro indicato in precedenza è autorizzato a gestire.
-<br></br>
-10. Al termine, scegliere **OK**. La nuova assegnazione viene visualizzata nell'elenco di assegnazioni.
+9. Per **Ambito (gruppi)** scegliere un gruppo contenente gli utenti che il membro indicato in precedenza è autorizzato a gestire.
+
+10. Per **Ambito (tag)** scegliere i tag in cui verrà applicata questa assegnazione di ruolo.
+
+11. Al termine, scegliere **OK**. La nuova assegnazione viene visualizzata nell'elenco di assegnazioni.
 
 ### <a name="intune-rbac-table"></a>Tabella del controllo RBAC di Intune
 
@@ -116,31 +119,21 @@ Solo gli utenti **Amministratori del servizio** con autorizzazioni "Completo" ve
 
 2. Scegliere **Tutti i servizi** dal menu a sinistra e quindi digitare **Intune** nel filtro della casella di testo.
 
-3. Scegliere **Intune** > **Ruoli** > **Tutti i ruoli** > **Aggiungi personalizzato**.
+3. Scegliere **Intune** > **Ruoli** > **Tutti i ruoli** > **Aggiungi**.
 
-4. Nel riquadro **Aggiungi un ruolo personalizzato** immettere un nome e una descrizione per il nuovo ruolo e quindi fare clic su **Autorizzazioni**.
+4. Nel pannello **Aggiungi un ruolo personalizzato** immettere un nome e una descrizione per il nuovo ruolo e quindi fare clic su **Autorizzazioni**.
 
-5. Nel riquadro **Autorizzazioni** scegliere le autorizzazioni da usare con il ruolo. Usare la [tabella del controllo RBAC di Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) per decidere le autorizzazioni da applicare.
+5. Nel pannello **Autorizzazioni** scegliere le autorizzazioni da usare con questo ruolo. Usare la [tabella del controllo RBAC di Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) per decidere le autorizzazioni da applicare.
 
-6. Al termine, scegliere **OK**.
+6. Nel pannello **Ambito (tag)** scegliere i tag in cui verrà applicato questo ruolo personalizzato.
 
-7. Nel riquadro **Aggiungi un ruolo personalizzato** fare clic su **Crea**. Il nuovo ruolo verrà visualizzato nell'elenco del riquadro **Ruoli di Intune- Tutti i ruoli**.
+7. Al termine, scegliere **OK**.
+
+7. Nel pannello **Aggiungi ruolo personalizzato** fare clic su **Crea**. Il nuovo ruolo viene visualizzato nell'elenco del pannello **Ruoli di Intune- Tutti i ruoli**.
 
 ### <a name="to-assign-a-custom-role"></a>Per assegnare un ruolo personalizzato
 
-1. Nel riquadro **Ruoli di Intune - Tutti i ruoli** scegliere il ruolo personalizzato da assegnare.
-
-2. Nel riquadro <*nome ruolo*> - **Panoramica** scegliere **Gestisci** e quindi **Assegnazioni**. In questo riquadro è anche possibile modificare o eliminare ruoli esistenti.
-
-3. Nel riquadro del ruolo personalizzato scegliere **Assegna**.
-
-4. Nel riquadro **Assegnazioni di ruolo** immettere un **nome** e una **descrizione** facoltativa per l'assegnazione.
-
-5. Per **Membri** scegliere un gruppo contenente l'utente a cui si vogliono assegnare le autorizzazioni.
-
-6. Per **Ambito** scegliere un gruppo contenente gli utenti che il membro indicato in precedenza è autorizzato a gestire.
-
-7. Al termine, scegliere **OK**. La nuova assegnazione viene visualizzata nell'elenco di assegnazioni.
+Seguire gli stessi passaggi descritti nella sezione [Per assegnare un ruolo predefinito](https://docs.microsoft.com/intune/role-based-access-control#to-assign-a-built-in-role) e selezionare il ruolo personalizzato.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

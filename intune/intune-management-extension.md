@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303396"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302184"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gestire gli script di PowerShell in Intune per i dispositivi Windows 10
 
@@ -30,9 +31,9 @@ Usare l'estensione di gestione di Intune per caricare script di PowerShell in In
 
 I computer destinati agli utenti finali stanno attraversando una fase di trasformazione digitale. Le attività IT tradizionali e classiche si occupano di piattaforme su singoli dispositivi, di dispositivi di proprietà dell'azienda, di utenti che lavorano in ufficio e di una serie di processi reattivi manuali. Un'area di lavoro moderna usa più piattaforme di proprietà dell'utente e dell'azienda, consente di lavorare ovunque ci si trovi e mette a disposizione processi IT automatizzati e proattivi.
 
-I servizi MDM, ad esempio Microsoft Intune, possono gestire dispositivi mobili e desktop che eseguono Windows 10. Il client di gestione predefinito in Windows 10 comunica con Intune per eseguire attività di gestione aziendale. Possono rivelarsi necessarie alcune attività, ad esempio la configurazione avanzata dei dispositivi, la risoluzione dei problemi e la gestione di app Win32 legacy, attualmente non disponibili tra le funzioni di gestione MDM di Windows 10. Per avere tali funzionalità, è possibile eseguire il client software Intune nei dispositivi Windows 10. [Confrontare la gestione dei PC Windows come computer o come dispositivi mobili](pc-management-comparison.md) è un'utile risorsa.
+I servizi MDM, ad esempio Microsoft Intune, possono gestire dispositivi mobili e desktop che eseguono Windows 10. Il client di gestione predefinito in Windows 10 comunica con Intune per eseguire attività di gestione aziendale. Potrebbe essere necessario eseguire alcune attività come la configurazione avanzata dei dispositivi e la risoluzione dei problemi. Per la gestione delle app Win32, è possibile usare la funzionalità di [gestione delle app Win32](apps-win32-app-management.md) nei dispositivi Windows 10.
 
-L'estensione di gestione di Intune integra le funzionalità di gestione MDM disponibili in Windows 10. È possibile creare script di PowerShell da eseguire nei dispositivi Windows 10. È ad esempio possibile creare uno script di PowerShell che consenta di installare un'app Win32 legacy, caricare lo script in Intune, assegnarlo a un gruppo di Azure Active Directory (AD) ed eseguirlo. È quindi possibile monitorare lo stato dell'esecuzione dello script dall'inizio alla fine.
+L'estensione di gestione di Intune integra le funzionalità di gestione MDM disponibili in Windows 10. È possibile creare script di PowerShell da eseguire nei dispositivi Windows 10. È ad esempio possibile creare uno script di PowerShell che esegue le configurazioni avanzate dei dispositivi, carica lo script in Intune, lo assegna a un gruppo di Azure Active Directory (AD) e lo esegue. È quindi possibile monitorare lo stato dell'esecuzione dello script dall'inizio alla fine.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -46,7 +47,7 @@ L'estensione di gestione di Intune ha i prerequisiti seguenti:
 
 1. Nel [portale di Azure](https://portal.azure.com) selezionare **Tutti i servizi** > filtrare per **Intune** > selezionare **Microsoft Intune**.
 2. Selezionare **Configurazione del dispositivo** > **Script di PowerShell** > **Aggiungi**.
-3. Immettere un **nome** e una **descrizione** per lo script di PowerShell. In **Percorso dello script** selezionare lo script di PowerShell. Lo script deve avere dimensioni inferiori a 200 KB (ASCII) o a 100 KB (Unicode).
+3. Immettere un **nome** e una **descrizione** per lo script di PowerShell. In **Percorso dello script** selezionare lo script di PowerShell. Lo script non deve essere maggiore di 200 kB.
 4. Scegliere **Configura**. Quindi scegliere di eseguire lo script con le credenziali dell'utente del dispositivo (**Sì**) o nel contesto di sistema (**No**). Per impostazione predefinita, lo script viene eseguito nel contesto di sistema. Selezionare **Sì**, a meno che non sia necessario eseguire lo script nel contesto di sistema. 
   ![Riquadro Script di PowerShell](./media/mgmt-extension-add-script.png)
 5. Scegliere se lo script deve essere firmato da un autore attendibile (**Sì**). Per impostazione predefinita, non è necessario che lo script sia firmato. 

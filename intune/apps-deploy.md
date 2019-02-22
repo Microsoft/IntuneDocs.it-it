@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6b0c2bff4051a1adba1a68f38d8f0a9b80b914b4
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838768"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240062"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Assegnare app ai gruppi con Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Dopo avere [aggiunto un'app](apps-add.md) a Microsoft Intune, è possibile assegnarla a utenti e dispositivi. Si noti che è possibile assegnare un'app a un dispositivo indipendentemente dal fatto che il dispositivo sia gestito da Intune o meno. 
+Dopo avere [aggiunto un'app](apps-add.md) a Microsoft Intune, è possibile assegnarla a utenti e dispositivi. Si noti che è possibile assegnare un'app a un dispositivo indipendentemente dal fatto che il dispositivo sia gestito da Intune o meno.
 
 > [!NOTE]
 > La finalità della distribuzione in base alla disponibilità non è supportata per i gruppi di dispositivi, ma solo per i gruppi di utenti.
@@ -124,8 +124,19 @@ In alcuni casi, la stessa app viene assegnata a più gruppi, ma con finalità di
 > Solo per le app dello Store iOS gestite, quando si aggiungono queste app in Microsoft Intune assegnandole come **obbligatorie**, le app vengono create automaticamente con entrambe le finalità **Obbligatoria** e **Disponibile**.<br><br>
 > Le app dello Store iOS (non le app VPP per iOS) di destinazione con scopo obbligatorio verranno applicate sul dispositivo al momento della connessione di quest'ultimo e verranno visualizzate anche nell'app Portale aziendale.
 
-## <a name="android-enterprise-app-we-app-deployment"></a>Distribuzione di app Android Enterprise APP-WE
-Per i dispositivi Android in uno scenario di distribuzione APP-WE (App Protection Policy Without Enrollment) non registrato, è ora possibile usare Google Play gestito per distribuire app dello Store e app line-of-business agli utenti. In particolare, è possibile offrire agli utenti finali un catalogo di app e un'esperienza di installazione che non richiede più agli utenti finali di ridurre il comportamento di sicurezza dei propri dispositivi consentendo installazioni da origini sconosciute. Inoltre, questo scenario di distribuzione fornirà un'esperienza migliorata per gli utenti finali. Per la procedura per assegnare un'app, vedere [Assegnare un'app](apps-deploy.md#assign-an-app).
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Distribuzione di app di Google Play gestito a dispositivi non gestiti
+Per i dispositivi Android in uno scenario di distribuzione APP-WE (App Protection Policy Without Enrollment) non registrato, è possibile usare Google Play gestito per distribuire app dello Store e app line-of-business agli utenti. Le app di Google Play gestito impostate come **disponibili con o senza registrazione** vengono visualizzate nell'app Play Store nel dispositivo dell'utente finale e non nell'app Portale aziendale. Utente finale selezionerà e installerà le app distribuite in questo modo dall'app Play. Poiché le app vengono installate da Google Play gestito, per l'utente finale non è necessario modificare le impostazioni del dispositivo in uso per consentire l'installazione di app da origini sconosciute. In questo modo i dispositivi sono più protetti. Se uno sviluppatore di app pubblica in Play una nuova versione di un'app installata nel dispositivo di un utente, l'app viene aggiornata automaticamente da Play. 
+
+Passaggi per assegnare un'app di Google Play gestito a dispositivi non gestiti:
+
+1. Connettere il tenant di Intune a Google Play gestito. Se questa operazione è già stata eseguita per consentire la gestione di dispositivi del profilo di lavoro Android Enterprise, dedicati o completamente gestiti, non occorre ripeterla.
+2. Aggiungere app da Google Play gestito alla console di Intune.
+3. Assegnare le app di Google Play gestito come **disponibili con o senza registrazione** al gruppo utenti desiderato. Le impostazioni **Obbligatoria** e **Disinstalla** per le app non sono supportate per i dispositivi non registrati.
+4. Assegnare criteri di protezione delle app al gruppo utenti.
+5. La volta successiva in cui l'utente finale aprirà l'app Portale aziendale, un messaggio visualizzato informerà della disponibilità di app nell'app Play Store.  L'utente potrà toccare questa notifica per passare direttamente all'app Play e visualizzare le app aziendali o accedere all'app Play Store separatamente.
+6. L'utente finale può espandere il menu di scelta rapida all'interno dell'app Play Store e passare dal proprio account Google personale (in cui sono visualizzate le app personali) all'account aziendale (in cui sono visualizzate le app line-of-business assegnate) e viceversa. Per installare le app, l'utente finale può toccare Installa nell'app Play Store.
+
+Quando viene eseguita una cancellazione selettiva di app nella console di Intune, l'account aziendale viene rimosso automaticamente dall'app Play Store. Da quel momento l'utente finale non visualizzerà più le app aziendali nel catalogo delle app di Play Store. Quando l'account aziendale viene rimosso da un dispositivo, le app installate da Play Store rimangono installate nel dispositivo e non vengono disinstallate. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 

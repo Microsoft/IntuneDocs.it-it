@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230121"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307890"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi Windows 10 (e versioni successive) per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -70,6 +71,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Account Microsoft**: Consente all'utente di associare un account Microsoft con il dispositivo.
 - **Account non Microsoft**: consente all'utente di aggiungere al dispositivo account di posta elettronica che non sono associati a un account Microsoft.
 - **Sincronizzazione delle impostazioni per l'account Microsoft**: consente che le impostazioni del dispositivo e delle app associate a un account Microsoft vengano sincronizzate fra i dispositivi.
+- **Assistente per l'accesso all'account Microsoft**: Scegliere **Disabilita** per impedire agli utenti finali di controllare il servizio dell'assistente per l'accesso Microsoft (wlidsvc), ad esempio arrestando o avviando manualmente il servizio. Se impostato su **Non configurato**, il servizio NT (wlidsvc) usa l'impostazione predefinita del sistema operativo, che può consentire agli utenti finali di avviare e arrestare il servizio. Questo servizio viene usato dal sistema operativo per consentire agli utenti di accedere al proprio account Microsoft.
 
 ## <a name="cloud-printer"></a>Stampante cloud
 
@@ -136,6 +138,10 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Area Ink**: impedisce agli utenti l'accesso all'area di lavoro Windows Ink. **Non configurata** attiva l'area Ink e l'utente è autorizzato a usarla sopra la schermata di blocco.
 - **Ridistribuzione automatica**: consente agli utenti con diritti amministrativi di eliminare tutti i dati e le impostazioni utente premendo **CTRL+tasto WINDOWS+R** nella schermata di blocco del dispositivo. Il dispositivo viene automaticamente riconfigurato e registrato di nuovo nella gestione.
 - **Richiedi agli utenti di connettersi alla rete durante la configurazione del dispositivo (solo Windows Insider)**: scegliere **Rendi obbligatorio** in modo che il dispositivo si connetta a una rete prima di passare oltre la pagina Rete durante la configurazione di Windows 10. Quando questa funzionalità è disponibile in anteprima, è necessaria una build 1809 o successiva di Windows Insider per usare questa impostazione.
+- **Accesso diretto alla memoria**: **Blocca** consente di impedire l'accesso diretto alla memoria (Direct Memory Access, DMA) per tutte le porte downstream PCI collegabili a un sistema acceso finché un utente non accede a Windows. **Abilitato** (impostazione predefinita) consente l'accesso diretto alla memoria, anche quando un utente non è connesso.
+
+  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+
 - **End processes from Task Manager** (Termina processi da Gestione attività): questa impostazione determina se gli utenti non amministratori possono usare Gestione attività per terminare le attività. **Blocca** impedisce agli utenti standard (non amministratori) di usare Gestione attività per terminare un processo o un'attività nel dispositivo. **Non configurata** (impostazione predefinita) consente agli utenti standard di terminare un processo o un'attività usando Gestione attività.
 
 ## <a name="kiosk-preview---obsolete"></a>Modalità tutto schermo (anteprima) - Obsoleta
@@ -192,7 +198,7 @@ Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multime
 ## <a name="locked-screen-experience"></a>Esperienza della schermata bloccata
 
 - **Notifiche del centro notifiche (solo per dispositivi mobili)**: consente la visualizzazione delle notifiche del centro notifiche nella schermata di blocco del dispositivo (solo Windows 10 Mobile).
-- **URL dell'immagine della schermata bloccata (solo desktop)**: immettere l'URL di un'immagine in formato JPEG da usare come sfondo della schermata di blocco di Windows. Gli utenti non possono modificare questa impostazione.
+- **URL dell'immagine della schermata bloccata (solo desktop)**: immettere l'URL di un'immagine in formato JPEG da usare come sfondo della schermata di blocco di Windows. Questa impostazione blocca l'immagine. L'immagine non potrà essere modificata in seguito.
 - **Timeout dello schermo configurabile dall'utente (solo dispositivi mobili)**: consente all'utente di configurare la quantità di tempo. 
 - **Cortana nella schermata di blocco (solo desktop)**: non consente all'utente di interagire con Cortana quando è attiva la schermata di blocco del dispositivo (solo Windows 10 Desktop).
 - **Notifiche di tipo avviso popup nella schermata di blocco**: blocca la visualizzazione dei messaggi di avviso nella schermata di blocco del dispositivo.
@@ -313,7 +319,6 @@ Usare il pulsante **Aggiungi** per creare una configurazione per chiosco multime
   - **Impedisci riutilizzo delle password precedenti**: Specifica il numero di password usate in precedenza che il dispositivo deve ricordare.
   - **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (solo dispositivi mobili)**: Specifica che l'utente deve inserire una password per sbloccare il dispositivo (solo Windows 10 Mobile).
   - **Password semplici**: consente di autorizzare l'uso di password semplici come 1111 o 1234. Questa impostazione consente o blocca anche l'uso delle password grafiche di Windows.
-- **Crittografia**: Abilita la crittografia sui dispositivi di destinazione.
 
 ## <a name="per-app-privacy-exceptions"></a>Eccezioni alla privacy per app
 

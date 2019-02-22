@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834773"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325436"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparare le app line-of-business per i criteri di protezione delle app
 
@@ -87,7 +87,6 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 |Consenti all'app di ricevere i dati da altre app|X|X|
 |Limita le operazioni taglia, copia e incolla con le altre app|X|X|
 |Richiedi PIN semplice per l'accesso|X|X|
-|Sostituire il PIN dell'app predefinita con il PIN di Intune|X||
 |Specificare il numero di tentativi prima della reimpostazione del PIN|X|X|
 |Consenti impronta digitale anziché PIN|X|X|
 |Consenti il riconoscimento facciale invece del PIN (solo iOS)|X|X|
@@ -98,8 +97,8 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 |Specificare il periodo di prova offline|X|X|
 |Bloccare l'acquisizione schermo (solo Android)|X|X|
 |Supportare la gestione delle applicazioni mobili senza registrazione del dispositivo|X|X|
-|Cancellazione completa|X|X|
-|Cancellazione selettiva <br><br>**Nota:** per iOS, quando viene rimosso il profilo di gestione, viene rimossa anche l'app.|X||
+|Cancellazione completa dei dati delle app|X|X|
+|Cancellazione selettiva di dati aziendali e dell'istituto di istruzione in scenari con identità multiple <br><br>**Nota:** per iOS, quando viene rimosso il profilo di gestione, viene rimossa anche l'app.|X||
 |Impedire "Salva con nome"|X||
 |Configurazione dell'applicazione di destinazione|X||
 |Supportare più identità|X||

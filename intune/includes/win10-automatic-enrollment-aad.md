@@ -32,6 +32,9 @@ La registrazione automatica consente agli utenti di registrare i propri disposit
       >
       > Per i dispositivi aziendali, l'ambito utente MDM ha la precedenza se entrambi gli ambiti sono abilitati. I dispositivi vengono registrati in MDM.
 
+   > [!NOTE]
+   > L'ambito utente MAM deve essere impostato su un gruppo utenti o una raccolta.
+
    ![Schermata del portale di Azure](../media/auto-enroll-scope.png)
 
 5. Usare i valori predefiniti per gli URL seguenti:
