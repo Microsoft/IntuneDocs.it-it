@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: ae8113a603ae4c091005f7c82045708f7e9e3e97
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086149"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655392"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Risolvere i problemi relativi alla gestione di applicazioni mobili
 
@@ -78,7 +78,7 @@ Messaggio o finestra di dialogo di errore | Causa | Soluzione |
 **L'app non è configurata**: questa app non è stata configurata per l'uso da parte dell'utente. Per assistenza contattare l'amministratore IT. | Non è stato rilevato un criterio di protezione dell'app richiesto per questa app. |Verificare che sia stato distribuito un criterio di protezione dell'app iOS al gruppo di sicurezza dell'utente e che questa app rappresenti la destinazione.
 **Introduzione a Intune Managed Browser**: questa app funziona in modo ottimale se gestita da Microsoft Intune. L'app può essere usata per navigare in rete ma, quando è gestita da Microsoft Intune, è possibile accedere ad altre funzionalità di protezione dati. | Non è stato rilevato un criterio di protezione dell'app richiesto per l'app Intune Managed Browser. <br><br>L'utente può ancora usare l'app per esplorare il Web, ma l'app non è gestita da Intune. | Verificare che sia stato distribuito un criterio di protezione dell'app iOS al gruppo di sicurezza dell'utente e che l'app Intune Managed Browser rappresenti la destinazione.
 **L'accesso non è riuscito**: l'accesso non è disponibile al momento. Riprovare più tardi. | Non è stato possibile registrare l'utente con il servizio MAM dopo che l'utente ha provato ad accedere con il proprio account aziendale o dell'istituto di istruzione. | Verificare che sia stato distribuito un criterio di protezione dell'app iOS al gruppo di sicurezza dell'utente e che questa app rappresenti la destinazione.
-**L'account non è configurato**: l'organizzazione non ha configurato l'account per l'accesso ai dati aziendali o dell'istituto di istruzione. Per assistenza, contattare l'amministratore IT. | L'account utente non ha una licenza Intune A Direct. | Verificare che all'account dell'utente sia assegnata una licenza di Intune nel [portale di Office](http://portal.office.com).
+**L'account non è configurato**: l'organizzazione non ha configurato l'account per l'accesso ai dati aziendali o dell'istituto di istruzione. Per assistenza, contattare l'amministratore IT. | L'account utente non ha una licenza Intune A Direct. | Verificare che all'account dell'utente sia assegnata una licenza di Intune nel [portale di Office](https://portal.office.com).
 **Dispositivo non conforme**: questa app non può essere usata perché si sta usando un dispositivo jailbroken. Per assistenza contattare l'amministratore IT. | Intune ha rilevato che l'utente sta usando un dispositivo jailbroken. | Ripristinare le impostazioni predefinite del dispositivo. Seguire [queste istruzioni](https://support.apple.com/HT201274) dal sito di supporto di Apple.
 **Connessione a Internet richiesta**: è necessaria una connessione a Internet per verificare se è possibile usare questa app. | Il dispositivo non è connesso a Internet. | Connettere il dispositivo a una rete Wi-Fi o dati.
 **Errore sconosciuto**: provare a riavviare l'app. Se il problema persiste, contattare l'amministratore IT per assistenza. | Si è verificato un errore sconosciuto. | Attendere qualche minuto e riprovare. Se l'errore persiste, creare un [ticket di supporto](get-support.md#create-an-online-support-ticket) con Intune.
@@ -97,7 +97,7 @@ Finestra di dialogo/Messaggio di errore | Causa | Soluzione |
 **L'accesso non è riuscito**: provare a eseguire nuovamente l'accesso. Se il problema persiste, contattare l'amministratore IT per assistenza. | Non è stato possibile autenticare l'account con cui l'utente ha provato ad accedere. | Assicurarsi che l'utente esegua l'accesso con l'account aziendale o dell'istituto di istruzione che è già registrato con il servizio MAM di Intune (il primo account aziendale o dell'istituto di istruzione con cui è stato effettuato correttamente l'accesso in questa app). <br><br> Cancellare i dati dell'app. <br><br> Assicurarsi che la versione dell'app sia aggiornata. <br><br> Assicurarsi che la versione dell'app Portale aziendale sia aggiornata.
 **Connessione a Internet richiesta**: è necessaria una connessione a Internet per verificare se è possibile usare questa app. | Il dispositivo non è connesso a Internet. | Connettere il dispositivo a una rete Wi-Fi o dati.
 **Dispositivo non conforme**: questa app non può essere usata perché si sta usando un dispositivo rooted. Per assistenza contattare l'amministratore IT. | Intune ha rilevato che l'utente sta usando un dispositivo rooted. | Ripristinare le impostazioni predefinite del dispositivo.
-**L'account non è configurato**: questa app deve essere gestita da Microsoft Intune, ma l'account non è stato configurato. Per assistenza contattare l'amministratore IT. | L'account utente non ha una licenza Intune A Direct. | Verificare che all'account dell'utente sia assegnata una licenza di Intune nel [portale di Office](http://portal.office.com).
+**L'account non è configurato**: questa app deve essere gestita da Microsoft Intune, ma l'account non è stato configurato. Per assistenza contattare l'amministratore IT. | L'account utente non ha una licenza Intune A Direct. | Verificare che all'account dell'utente sia assegnata una licenza di Intune nel [portale di Office](https://portal.office.com).
 **Non è possibile registrare l'applicazione**: questa app deve essere gestita da Microsoft Intune, ma non è possibile effettuare la registrazione in questo momento. Per assistenza contattare l'amministratore IT. | Non è stato possibile registrare automaticamente l'app con il servizio MAM quando i criteri di protezione dell'applicazione sono obbligatori. | Cancellare i dati dell'app. <br><br> Inviare i log a Intune tramite l'app Portale aziendale o creare un ticket di supporto. Per altre informazioni, vedere [Come ottenere supporto per Microsoft Intune](get-support.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
