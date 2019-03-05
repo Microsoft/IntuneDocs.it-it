@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c3425c58b6039c8a1c3b5750f9473c74a78634
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: 28e7109a82a5c083b4be26bc823bb0e06d97a7ca
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325470"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334987"
 ---
 # <a name="windows-update-settings-for-intune"></a>Impostazioni di aggiornamento di Windows per Intune  
 
@@ -236,6 +236,6 @@ Le impostazioni seguenti consentono di specificare quando si verificano le azion
 
 L’ottimizzazione del recapito non viene più configurata nell’ambito di un anello di aggiornamento di Windows 10 durante l’esecuzione della funzionalità Aggiornamenti software. L’ottimizzazione del recapito ora viene impostata tramite la configurazione del dispositivo. Tuttavia, le configurazioni precedenti rimangono disponibili nella console. È possibile rimuovere le configurazioni precedenti impostandole su *Non configurato*. Non è tuttavia possibile modificarle in altro modo. 
 
-Per evitare conflitti tra criteri nuovi e precedenti, vedere [Passare dagli anelli di aggiornamento esistenti a ottimizzazione recapito](https://docs.microsoft.com/en-us/intune/delivery-optimization-windows#move-from-existing-update-rings-to-delivery-optimization) e quindi spostare le impostazioni in un profilo di ottimizzazione recapito.
+Per evitare conflitti tra criteri nuovi e precedenti, vedere [Passare dagli anelli di aggiornamento esistenti a ottimizzazione recapito](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) e quindi spostare le impostazioni in un profilo di ottimizzazione recapito.
 
 

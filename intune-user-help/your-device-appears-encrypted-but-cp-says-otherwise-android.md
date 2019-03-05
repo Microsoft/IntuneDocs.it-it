@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af53739574a5ae7087b59d72bacd866e132a19ac
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 9444a124b9b8a47633f544205940dadb3df0fd8f
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843222"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335004"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Il dispositivo Android sembra essere crittografato, ma il portale aziendale indica il contrario
 
@@ -66,13 +66,13 @@ Alcuni dispositivi Android con la versione 7.0 o successive crittografano i dati
 I proprietari di uno dei dispositivi seguenti potrebbero sperimentare questo problema se il dispositivo non è stato aggiornato alla versione più recente di Android. Per installare gli aggiornamenti per questi dispositivi, passare a **Impostazioni** > **Updater**. 
 
 - [Huawei Honor 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [Huawei P9](http://consumer.huawei.com/en/phones/p9/)
+- [Huawei P9](https://consumer.huawei.com/en/phones/p9/)
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Dispositivi noti che attualmente non possono essere aggiornati per risolvere questo problema
 
 Non è possibile risolvere questo problema per i dispositivi seguenti. Potrebbe essere necessario usare un dispositivo diverso per accedere alle risorse aziendali. 
 
 - [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [Dispositivi OPPO](http://www.oppo.com/en/smartphones)
+- [Dispositivi OPPO](https://www.oppo.com/en/smartphones)
 - [Dispositivi Vivo](https://www.vivo.co.in)
 - [Smartphone Xiaomi Mi](https://xiaomi-mi.com/mi-smartphones/)

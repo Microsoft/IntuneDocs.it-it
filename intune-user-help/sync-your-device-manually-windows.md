@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840213"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335072"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizzare il dispositivo Windows manualmente
 
 Quando la velocità di installazione di un'app non è quella prevista, avviare una sincronizzazione manuale del dispositivo. Le sincronizzazioni manuali forzano la connessione del dispositivo a Intune per trovare gli aggiornamenti e le comunicazioni più recenti. La velocità di installazione può aumentare dopo avere completato la sincronizzazione del dispositivo.
 
-Intune supporta la sincronizzazione manuale dall'app Portale aziendale, dalla barra delle applicazioni o dal menu Start del desktop e dall'app Impostazioni del dispositivo. 
-
-La funzionalità dell'app Portale aziendale è supportata nei dispositivi Windows 10 che eseguono Creators Update (1703) o versione successiva. 
-* [Sincronizzazione dall'app Portale aziendale](#Sync-from-Company-Portal-app-for-Windows)  
+Intune supporta la sincronizzazione manuale dall'app Portale aziendale, dalla barra delle applicazioni o dal menu Start del desktop e dall'app Impostazioni del dispositivo. La funzionalità dell'app Portale aziendale è supportata nei dispositivi Windows 10 che eseguono Creators Update (1703) o versione successiva. 
 
 Tutti i dispositivi Windows possono essere sincronizzati dall'app Impostazioni del dispositivo, inclusi:
 
@@ -75,11 +72,11 @@ Completare questi passaggi per sincronizzare manualmente i dispositivi Microsoft
 
 3. Esistono più versioni di Windows 10 per desktop. Confrontare la schermata con gli screenshot seguenti per determinare quale procedura seguire. 
 
-    * Se nella schermata è visualizzato **Accedi all'azienda o all'istituto di istruzione**, vedere la procedura illustrata in [Accesso all'azienda o all'istituto di istruzione](#access-work-or-school).
+    * Se nella schermata è visualizzato **Accedi all'azienda o all'istituto di istruzione**, vedere la procedura illustrata in [Accesso all'azienda o all'istituto di istruzione](#access-work-or-school-steps).
 
     ![Opzione Accedi all'azienda o all'istituto di istruzione nell'app Impostazioni](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * Se nella schermata è visualizzato **Accesso società**, vedere la procedura illustrata in [Accesso società](#work-access).  
+    * Se nella schermata è visualizzato **Accesso società**, vedere la procedura illustrata in [Accesso società](#work-access-steps).  
 
     ![Scelta di Accesso società come tipo di account](./media/win10pc-sync-3-work-access.png)
 
