@@ -7,20 +7,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 343b15e13a944cb519451a14c299d66444b17569
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: c75923440b8b8147f7ed75a06df2435ed6eb0981
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230364"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565282"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Impostazioni relative alle restrizioni dei dispositivi Windows Phone 8.1 in Microsoft Intune
 
@@ -73,7 +74,7 @@ Nella pagina [Windows Phone Store](https://www.microsoft.com/store/apps/windows-
 
 Aprire la pagina dell'app e copiare l'URL negli Appunti. A questo punto l'URL può essere usato in entrambi gli elenchi di app consentite o bloccate.
 
-Esempio: Cercare per l'app Skype in Store. L'URL usato è `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
+Esempio: cercare per l'app Skype in Store. L'URL usato è `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
 
 
 

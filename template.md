@@ -14,11 +14,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "20283570"
 ---
 # <a name="metadata-and-markdown-template"></a>I metadati e il modello markdown
@@ -34,7 +34,7 @@ Il blocco di metadati completo è riportato qui sopra, suddiviso nei campi obbli
 
 - È **necessario** inserire uno spazio tra i due punti (:) e il valore di un elemento dei metadati.
 - Se un elemento facoltativo dei metadati non ha un valore, impostare come commento il simbolo # (non lasciare vuoto oppure usare "na"); se si aggiunge un valore a un elemento che è stato commentato, assicurarsi di rimuovere il simbolo #.
-- I due punti in un valore (ad esempio, un titolo) interrompono il parser di metadati. Al loro posto, utilizzare la codifica HTML di &#58; (ad esempio, "titolo: Azure Rights Management &#58; nozioni di base | Azure RMS").
+- I due punti in un valore (ad esempio, un titolo) interrompono il parser di metadati. Al loro posto, utilizzare la codifica HTML di & #58; (ad esempio, "titolo: Azure Rights Management & #58; nozioni di base | Azure RMS").
 - **titolo**: questo titolo verrà visualizzato nei risultati dei motori di ricerca. Il titolo deve terminare con una barra verticale (|) seguita dal nome del servizio (ad esempio, vedere sopra). Non è necessario che il titolo debba essere identico al titolo dell'intestazione H1 (e probabilmente non deve esserlo). Deve includere approssimativamente 65 caratteri (compreso | NOME DEL SERVIZIO)
 - **autore**, **manager**, **revisore**: il campo dell'autore deve contenere il **nome utente Github** dell'autore, non il relativo alias.  I campi "manager" e "revisore", al contratio, devono contenere gli alias. ms.reviewer specifica il nome del PM associato all'articolo o servizio.
 - **ms.assetid**: si tratta del GUID dell'articolo da CAPS. Quando si crea un nuovo file markdown, ottenere un GUID da [https://www.guidgenerator.com](https://www.guidgenerator.com). 
@@ -60,7 +60,7 @@ Le intestazioni di secondo livello generano il sommario della pagina che viene v
 ##### <a name="fifth-level-heading"></a>Intestazione di quinto livello
 ###### <a name="sixth-level-heading"></a>Intestazione di sesto livello
 
-## <a name="text-styling"></a>Stile di testo
+## <a name="text-styling"></a>Stile del testo
 
 *Corsivo* 
 
@@ -108,7 +108,7 @@ Se viene visualizzato un URL in un file markdown, questo verrà trasformato in u
 1. qui
 1. viene fornito
 1. un
-1. incorporato
+1. elenco
     1. Miss Scarlett
     1. Professore Plum
 1. ordinato
@@ -147,7 +147,7 @@ Se viene visualizzato un URL in un file markdown, questo verrà trasformato in u
 | Tabelle        | Sono           | Interessanti  |
 | ------------- |:-------------:| -----:|
 | la colonna 3 è      | allineata a destra | $1600 |
-| la colonna 2 è      | centrata      |   $12 |
+| la colonna 2 è      | centrata      |   $ 12 |
 | la colonna 1 è allineata a sinistra | per impostazione predefinita     |    $1 |
 
 
@@ -167,7 +167,7 @@ Questo è un esempio di `in-line code`.
 
 ## <a name="blockquotes"></a>Blockquotes
 
-> La siccità è durata per dieci milioni di anni e il regno dei terribili serpenti è terminato da allora. Qui sull'equatore, nel continente che un giorno sarà noto come Africa, la battaglia per l'esistenza ha raggiunto un nuovo apice di ferocia, e la vittoria è ancora lontana. In questa terra arida e secca, solo gli organismi più piccoli o rapidi o feroci possono progredire, o addirittura sperare di sopravvivere.
+> La siccità si protraeva ormai da dieci milioni di anni, e il regno delle terribili lucertole era finito da molto tempo. Qui sull'equatore, nel continente che un giorno sarà noto come Africa, la battaglia per l'esistenza ha raggiunto un nuovo apice di ferocia, e la vittoria è ancora lontana. In questa terra arida e secca, solo gli organismi più piccoli o rapidi o feroci possono progredire, o addirittura sperare di sopravvivere.
 
 ## <a name="images"></a>Immagini
 

@@ -6,29 +6,30 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9601e8b83a22bb57398afefadd16f3a0e944413
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 3e2b3708b6b0c75a1384a7cdbdb524dff3f0627d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238558"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565435"
 ---
 # <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>Impostazioni del profilo di posta elettronica per i dispositivi che eseguono Windows 10 - Intune
 
 Usare le impostazioni del profilo di posta elettronica per configurare l'app di posta elettronica nei dispositivi che eseguono Windows 10.
 
-- **Server di posta elettronica**: immettere il nome host del server Exchange dell'azienda.
-- **Nome account**: immettere il nome visualizzato dell'account di posta elettronica. Questo nome viene visualizzato nel dispositivo degli utenti.
+- **Server di posta elettronica**: immettere il nome host del server Exchange.
+- **Nome account**: immettere il nome visualizzato per l'account di posta elettronica. Questo nome viene visualizzato nel dispositivo degli utenti.
 - **Attributo nome utente da AAD**: questo nome è l'attributo che Intune ottiene da Azure Active Directory (AAD). Intune genera in modo dinamico il nome utente usato da questo profilo. Le opzioni disponibili sono:
-  - **Nome entità utente**: ottiene il nome, ad esempio `user1` o `user1@contoso.com`
+  - **Nome dell'entità utente**: ottiene il nome, ad esempio `user1` o `user1@contoso.com`
   - **Indirizzo SMTP primario**: ottiene il nome nel formato dell'indirizzo di posta elettronica, ad esempio `user1@contoso.com`
   - **Nome account SAM**: richiede il dominio, ad esempio `domain\user1`.
 
@@ -36,21 +37,21 @@ Usare le impostazioni del profilo di posta elettronica per configurare l'app di 
     - **Origine del nome di dominio utente**: scegliere **AAD** (Azure Active Directory) o **Personalizzato**.
 
       Quando si sceglie di ottenere gli attributi da **AAD**, specificare:
-      - **Attributo nome di dominio utente da AAD**: scegliere di ottenere l'attributo **Nome di dominio completo** o **Nome NetBIOS** dell'utente
+      - **Attributo nome di dominio utente da AAD**: scegliere di ottenere l'attributo **Nome completo** o **Nome NetBIOS** dell'utente
 
       Quando si sceglie di usare attributi di tipo **Personalizzato**, specificare:
-      - **Nome di dominio personalizzato da usare**: immettere un valore usato da Intune per il nome di dominio, ad esempio `contoso.com` o `contoso`
+      - **Nome di dominio personalizzato da usare**: immettere un valore usato da Intune per il nome dominio, ad esempio `contoso.com` o `contoso`
 
-- **Attributo indirizzo di posta elettronica da AAD**: scegliere la modalità di generazione dell'indirizzo di posta elettronica per l'utente. Selezionare **Nome dell'entità utente** (`user1@contoso.com` o `user1`) per usare il nome completo dell'entità utente come indirizzo di posta elettronica oppure selezionare **Indirizzo SMTP primario** (`user1@contoso.com`)per usare l'indirizzo SMTP primario per accedere a Exchange.
+- **Email address attribute from AAD** (Attributo indirizzo di posta elettronica da AAD): scegliere la modalità di generazione dell'indirizzo di posta elettronica per l'utente. Selezionare **Nome dell'entità utente** (`user1@contoso.com` o `user1`) per usare il nome completo dell'entità utente come indirizzo di posta elettronica oppure selezionare **Indirizzo SMTP primario** (`user1@contoso.com`)per usare l'indirizzo SMTP primario per accedere a Exchange.
 
 ## <a name="security-settings"></a>Impostazioni di sicurezza
 
-- **SSL**: Consente di usare la comunicazione Secure Sockets Layer (SSL) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con il server Exchange.
+- **SSL**: consente di usare la comunicazione Secure Sockets Layer (SSL) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con il server Exchange.
 
 ## <a name="synchronization-settings"></a>Impostazioni di sincronizzazione
 
 - **Numero di messaggi di posta elettronica da sincronizzare**: selezionare il numero di giorni di posta elettronica da sincronizzare. In alternativa, selezionare **Illimitata** per sincronizzare tutti i messaggi di posta elettronica disponibili.
-- **Pianificazione sincronizzazione**: selezionare la pianificazione per la sincronizzazione dei dati dei dispositivi dal server Exchange. È anche possibile selezionare **Quando arrivano i messaggi** per sincronizzare i dati non appena arrivano oppure **Manuale** per consentire all'utente del dispositivo di avviare la sincronizzazione.
+- **Pianificazione sincronizzazione**: selezionare la pianificazione per la sincronizzazione dei dati dei dispositivi dal server Exchange È anche possibile selezionare **Quando arrivano i messaggi** per sincronizzare i dati non appena arrivano oppure **Manuale** per consentire all'utente del dispositivo di avviare la sincronizzazione.
 
 ## <a name="content-sync-settings"></a>Impostazioni di sincronizzazione del contenuto
 

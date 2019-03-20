@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 11/14/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da8b68fed8d411e14316744eec44857cd34803a4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 42ce05d2f726147caee198c79db185b87854cffb
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231044"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566149"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Aggiungere criteri di conformità per i dispositivi iOS in Intune
 
@@ -73,23 +74,23 @@ La tabella seguente descrive il modo in cui le impostazioni di non conformità v
   - Il profilo di posta elettronica viene distribuito a un gruppo di utenti diverso dal gruppo di utenti a cui sono destinati i criteri di conformità.
   - L'utente ha già configurato un account di posta elettronica nel dispositivo che corrisponde al profilo di posta elettronica di Intune distribuito nel dispositivo. Intune non può sovrascrivere il profilo con provisioning dell'utente, quindi non può gestirlo. Per garantire la conformità, l'utente deve rimuovere le impostazioni di posta elettronica esistenti. Intune potrà quindi installare il profilo di posta elettronica.
 
-- **Selezionare il profilo di posta elettronica che deve essere gestito da Intune**: se è selezionata l'impostazione **L'account di posta elettronica deve essere gestito da Intune**, scegliere **Seleziona** per specificare il profilo di posta elettronica di Intune. Il profilo di posta elettronica deve essere presente nel dispositivo.
+- **Selezionare il profilo di posta elettronica che deve essere gestito da Intune**: se è stata selezionata l'impostazione **L'account di posta elettronica deve essere gestito da Intune**, scegliere **Seleziona** per specificare il profilo di posta elettronica di Intune. Il profilo di posta elettronica deve essere presente nel dispositivo.
 
 Per dettagli sul profilo di posta elettronica, vedere [Configurare l'accesso alla posta elettronica aziendale usando profili di posta elettronica con Microsoft Intune](email-settings-configure.md).
 
 ## <a name="device-health"></a>Device health
 
 - **Dispositivi jailbroken**: se si abilita questa impostazione, i dispositivi jailbroken non sono conformi.
-- **Richiedi che il dispositivo si trovi al massimo al livello di minaccia del dispositivo** (iOS 8.0 e versioni successive): Scegliere il livello di minaccia massimo oltre il quale contrassegnare i dispositivi come non conformi. I dispositivi che superano questo livello di minaccia vengono contrassegnati come non conformi:
-  - **Protetti**: questa opzione è la più sicura, perché il dispositivo non può avere minacce. Se viene rilevata la presenza di minacce di qualsiasi livello, il dispositivo viene considerato non conforme.
+- **Richiedi che il dispositivo si trovi al massimo al livello di minaccia del dispositivo** (iOS 8.0 e versioni successive): scegliere il livello di minaccia massimo oltre il quale i dispositivi vengono contrassegnati come non conformi. I dispositivi che superano questo livello di minaccia vengono contrassegnati come non conformi:
+  - **Protetto**: questa opzione è la più sicura, perché il dispositivo non può avere minacce. Se viene rilevata la presenza di minacce di qualsiasi livello, il dispositivo viene considerato non conforme.
   - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
-  - **Medio**: il dispositivo viene valutato come conforme se le minacce esistenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
-  - **Alto**: questa opzione è la meno sicura e consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
+  - **Media**: il dispositivo viene valutato come conforme se le minacce esistenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
+  - **Alta**: questa opzione è la meno sicura e consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
 
 ## <a name="device-properties"></a>Proprietà dispositivo
 
-- **Versione minima richiesta del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente può scegliere di aggiornare il dispositivo. In seguito, potrà accedere alle risorse aziendali.
-- **Versione massima consentita del sistema operativo**: quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali viene bloccato. All'utente viene quindi richiesto di contattare l'amministratore IT. Finché la regola non viene modificata in modo da consentire la versione del sistema operativo usata dal dispositivo, quest'ultimo non può accedere alle risorse aziendali.
+- **Versione minima del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente può scegliere di aggiornare il dispositivo. In seguito, potrà accedere alle risorse aziendali.
+- **Versione massima del sistema operativo**: quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali viene bloccato. All'utente viene quindi richiesto di contattare l'amministratore IT. Finché la regola non viene modificata in modo da consentire la versione del sistema operativo usata dal dispositivo, quest'ultimo non può accedere alle risorse aziendali.
 - **Versione minima della build del sistema operativo**: quando Apple pubblica aggiornamenti della sicurezza, in genere viene aggiornato il numero di build e non la versione del sistema operativo. Usare questa funzionalità per immettere un numero di build minimo consentito nel dispositivo. Questo controllo di conformità supporta i dispositivi che eseguono iOS 8.0 e versioni successive. 
 - **Versione massima della build del sistema operativo**: quando Apple pubblica aggiornamenti della sicurezza, in genere viene aggiornato il numero di build e non la versione del sistema operativo. Usare questa funzionalità per immettere un numero di build massimo consentito nel dispositivo. Questo controllo di conformità supporta i dispositivi che eseguono iOS 8.0 e versioni successive.
 
@@ -100,17 +101,17 @@ Per dettagli sul profilo di posta elettronica, vedere [Configurare l'accesso all
 > [!NOTE]
 > Dopo l'applicazione di criteri di conformità o di configurazione a un dispositivo iOS, agli utenti viene richiesto ogni 15 minuti di impostare un passcode. Tale richiesta viene visualizzata finché non viene impostato un passcode.
 
-- **Richiedi una password per sbloccare i dispositivi mobili**: **richiedere** agli utenti di immettere una password per poter accedere al dispositivo. I dispositivi iOS che usano una password vengono crittografati.
+- **Richiedi una password per sbloccare i dispositivi mobili**: **richiedere** agli utenti di immettere una password prima di poter accedere al dispositivo. I dispositivi iOS che usano una password vengono crittografati.
 - **Password semplici**: impostare questa opzione su **Blocca** per impedire agli utenti di creare password semplici, ad esempio **1234** o **1111**. Impostare l'opzione su **Non configurata** per consentire agli utenti di creare password come **1234** o **1111**.
-- **Lunghezza minima password**: immettere il numero minimo di cifre o caratteri che la password deve avere.
+- **Lunghezza minima password**: immettere il numero minimo di cifre o caratteri per la password.
 - **Tipo di password richiesto**: scegliere se una password deve avere solo caratteri **numerici** oppure una combinazione di numeri e altri caratteri (**alfanumerici**).
 - **Numero di caratteri non alfanumerici nella password**: immettere il numero minimo di simboli o caratteri speciali (&, #, %, ! e così via), che è necessario includere nella password.
 
     Se si imposta un numero maggiore, l'utente dovrà creare una password più complessa.
 
-- **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere nuovamente la password.
-- **Scadenza password (giorni)**: selezionare il numero di giorni che mancano alla scadenza della password attuale, quando l'utente deve creare una nuova password.
-- **Numero di password precedenti di cui impedire il riutilizzo**: immettere il numero di password usate in precedenza che non è possibile usare.
+- **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere di nuovo la password.
+- **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
+- **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password usate in precedenza che non è possibile usare.
 
 ### <a name="restricted-applications"></a>Applicazioni con restrizioni 
 È possibile creare restrizioni per le app aggiungendo i relativi ID bundle ai criteri. Quindi, se in un dispositivo è installata l'app, il dispositivo verrà contrassegnato come non conforme. 

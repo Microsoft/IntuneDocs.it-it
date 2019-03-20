@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55834722"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrare il dispositivo macOS in Intune con l'app Portale aziendale
@@ -58,7 +58,7 @@ Usare la procedura seguente per registrare i dispositivi macOS che eseguono OS X
 
 4. Nella pagina __Dispositivi__ verrà visualizzato l'elenco dei dispositivi gestiti o un banner. Il contenuto della pagina dipende dalla presenza, o meno, di dispositivi gestiti. 
     * Per aggiungere un dispositivo che non è elencato, selezionare il banner con scritto **Tap here to tell us which device you're using or add a new device** (Toccare qui per specificare il dispositivo in uso o aggiungere un nuovo dispositivo).
-    * In assenza di dispositivi, viene visualizzato il banner: **You don't have any managed devices. Add this one by tapping here. (Non ci sono dispositivi gestiti. Aggiungere questo toccando qui)** Fare clic sul banner per aggiungere il dispositivo.  
+    * Se non si hanno dispositivi, verrà visualizzato il banner **You don't have any managed devices. Add this one by tapping here. (Non ci sono dispositivi gestiti. Aggiungere questo toccando qui)** Fare clic sul banner per aggiungere il dispositivo.  
 
      ![Screenshot della pagina dei dispositivi, con un quadrato rosso attorno all'opzione banner per evidenziare dove fare clic.](./media/CP-enroll-MACOS-1808.png)  
 5.  Completare il passaggio seguente che corrisponde al messaggio attualmente visualizzato nel portale aziendale.  
