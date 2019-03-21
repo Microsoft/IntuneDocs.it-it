@@ -6,9 +6,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 5fa59501-5f33-46b7-a5f5-75eeae9f1209
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 522e2e8b424c3c8865b29a5503c301b80b3c36ba
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 50c147e13a59df00ce9527a0843784d223afec20
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845408"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460717"
 ---
 # <a name="troubleshoot-conditional-access"></a>Risolvere i problemi di accesso condizionale
 
@@ -74,7 +75,7 @@ Nel caso di un dispositivo che non è conforme ma che continua a disporre dei di
 - Esaminare i gruppi di destinazione e di esclusione. Se un utente non fa parte del gruppo di destinazione corretto o fa parte del gruppo di esclusione, non verrà bloccato. Viene verificata la conformità solo dei dispositivi degli utenti di un gruppo di destinazione.
 - Assicurarsi che il dispositivo venga individuato. Exchange Connector punta a un server Accesso client di Exchange 2010 mentre l'utente è su un server di Exchange 2013? In questo caso, se la regola predefinita di Exchange è Consenti, anche se l'utente è incluso nel gruppo di destinazione, Intune non può riconoscere la connessione del dispositivo a Exchange.
 - Verificare l'esistenza o lo stato di accesso del dispositivo in Exchange:
-  - Usare il cmdlet PowerShell seguente per visualizzare un elenco di tutti i dispositivi mobili relativi a una cassetta postale: "Get-ActiveSyncDeviceStatistics -mailbox mbx". Se il dispositivo non è incluso nell'elenco, non accede a Exchange.
+  - Usare il cmdlet PowerShell seguente per visualizzare un elenco di tutti i dispositivi mobili relativi a una cassetta postale: "Get-ActiveSyncDeviceStatistics -mailbox mbx'. Se il dispositivo non è incluso nell'elenco, non accede a Exchange.
   - Se il dispositivo è incluso nell'elenco, usare il cmdlet Get-CASmailbox -identity:’upn’ | fl per ottenere informazioni dettagliate sullo stato di accesso del dispositivo e passare tali informazioni al Supporto tecnico Microsoft.
 
 ## <a name="next-steps"></a>Passaggi successivi

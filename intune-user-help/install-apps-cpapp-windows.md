@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834654"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56742534"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Installare e condividere app nel dispositivo
 Installare le app nel dispositivo dall'app Portale aziendale per Windows.
@@ -38,6 +38,7 @@ Installare le app nel dispositivo dall'app Portale aziendale per Windows.
     * **Home**: scegliere da un elenco delle app in primo piano dell'organizzazione.  
     * **Mostra tutto**: nella sezione **Home page** > **App** fare clic su **Mostra tutto** per visualizzare tutte le app disponibili.  
     * **Tutte le app**: selezionare questa pagina nel riquadro di spostamento per visualizzare tutte le app disponibili, comprese quelle installate e in primo piano.  
+    * **Categorie di app**: selezionare questa pagina nel riquadro di spostamento scegliere le app basate sul tipo o funzione. Le app vengono ordinate in categorie, ad esempio **in primo piano**, **Education**, e **produttività**.  
     * **Cerca app**: nel riquadro di spostamento dell'app è presente una barra di ricerca statica.  Per trovare le app disponibili, eseguire la ricerca per nome dell'app o dell'editore.  
     * **Tutte le app**: visualizzare, ordinare e filtrare tutte le app disponibili. I risultati della ricerca sono ordinati automaticamente per pertinenza.  
 

@@ -5,9 +5,10 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 ms.date: 07/13/2017
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48079adfd8ff2f635ebf63370da62f7e428dcb40
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: d68f4151dc8b10ef716524f2422f532dec6693f9
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238507"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461244"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installare il client software di Intune nei PC Windows
 
@@ -125,8 +126,8 @@ Se agli utenti è stata assegnata una licenza di Intune e l'autorità MDM dell'o
 
 - Per gli utenti dei PC Windows 8.1 o Windows 10 sono disponibili due opzioni di registrazione:
 
-  -  **Registrare il PC come dispositivo mobile**: gli utenti scelgono il pulsante **Informazioni sulla procedura di registrazione** e visualizzano le istruzioni per registrare il PC come dispositivo mobile. Il pulsante viene visualizzato in primo piano, poiché la registrazione MDM è l'opzione predefinita e preferita per la registrazione. Tuttavia, l'opzione MDM non è pertinente in questo argomento, che riguarda solo l'installazione del software client.
-  - **Registrare il PC usando il software client di Intune**: è necessario indicare agli utenti di selezionare il collegamento **Fare clic qui per scaricare**, da cui possono accedere alla procedura di installazione del software client.
+  -  **Registrare il PC come dispositivo mobile**: gli utenti scelgono il pulsante **Informazioni sull'iscrizione** e visualizzano le istruzioni per registrare il PC come dispositivo mobile. Il pulsante viene visualizzato in primo piano, poiché la registrazione MDM è l'opzione predefinita e preferita per la registrazione. Tuttavia, l'opzione MDM non è pertinente in questo argomento, che riguarda solo l'installazione del software client.
+  - **Registrare il PC usando il software client di Intune**: è necessario indicare agli utenti di selezionare il collegamento **Fare clic qui per scaricare**, che li guida nell'installazione del software client.
 
 Nella tabella seguente sono riepilogate le opzioni.
 

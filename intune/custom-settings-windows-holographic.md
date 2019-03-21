@@ -9,18 +9,19 @@ ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
-ms.topic: conceptual
+ms.localizationpriority: medium
+ms.topic: reference
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c6ec55db072cd02fae2b4eef659f601b63bb850
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: ee2084cd7b5ba2d51311b675c3f31c41cc83fc4f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231690"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566166"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Usare le impostazioni personalizzate per i dispositivi Windows Holographic for Business in Intune
 
@@ -41,15 +42,15 @@ Questo articolo descrive come creare un profilo personalizzato per i dispositivi
 3. Immettere le impostazioni seguenti:
 
     - **Nome**: immettere un nome per il profilo, ad esempio `hololens custom profile`.
-    - **Description**: Immettere una descrizione del profilo.
+    - **Descrizione:** immettere una descrizione per il profilo.
     - **Piattaforma**: scegliere **Windows 10 e versioni successive**.
     - **Tipo di profilo**: scegliere **Personalizzato**.
 
 4. In **Impostazioni OMA-URI personalizzate** selezionare **Aggiungi**. Immettere le impostazioni seguenti:
 
-    - **Nome**: Immettere un nome univoco per l'impostazione OMA URI per identificarla nell'elenco delle impostazioni.
-    - **Description**: immettere una descrizione che offra una panoramica dell'impostazione e altri dettagli importanti.
-    - **OMA-URI (maiuscole/minuscole)**: immettere l'OMA-URI da usare come impostazione.
+    - **Nome**: immettere un nome univoco per l'impostazione OMA-URI per identificarla nell'elenco delle impostazioni.
+    - **Descrizione**: immettere una descrizione che offra una panoramica dell'impostazione e altri dettagli importanti.
+    - **OMA-URI (maiuscole/minuscole)**: immettere il valore OMA-URI che si vuole usare come impostazione.
     - **Tipo di dati**: immettere il tipo di dati da usare per l'impostazione OMA-URI. Le opzioni disponibili sono:
 
         - Stringa

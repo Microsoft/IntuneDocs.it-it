@@ -18,11 +18,11 @@ ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44aad280f0b8714adbb3c8a1e109b68a5af46d4d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: b7b67f1484ed74bd538cad53f02babd542b77fff
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55838836"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>Usare dispositivi gestiti per accedere alle risorse aziendali o dell'istituto di istruzione
@@ -58,7 +58,7 @@ Per informazioni su ciò che l'azienda può e non può visualizzare nei disposit
 - [Installare l'app Portale aziendale per Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [Installazione dell'app Portale aziendale per iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Installazione dell'app Portale aziendale per macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
-- [Installare l'app Portale aziendale per Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+- [Installare l'app Portale aziendale per Windows](about-cp-app-for-windows-10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Quali tipi di computer o dispositivi è possibile aggiungere al Portale aziendale?
 -   Dispositivi Apple con iOS (ad esempio iPhone e iPad) e macOS (ad esempio MacBook e iMac)
