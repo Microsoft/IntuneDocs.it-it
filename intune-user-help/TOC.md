@@ -115,11 +115,11 @@
 #### [Problemi per la gestione della macchina virtuale macOS](unable-to-get-macOS-device-managed.md) 
 
 ## [Uso del dispositivo Windows](using-your-windows-device-with-intune.md)
-### [Cosa accade quando si registra un dispositivo Windows 10?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [Informazioni su Portale aziendale per Windows 10](about-cp-app-for-windows-10.md)
 #### [Cosa accade quando si registrano altre versioni di Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-### [Registrare il dispositivo Windows](enroll-your-device-in-intune-windows.md)
-#### [Registrare il dispositivo Windows 10](enroll-your-w10-phone-or-w10-pc-windows.md)
-#### [Registrare il dispositivo Windows 10 tramite "Accedi all'azienda o all'istituto di istruzione"](enroll-your-w10-device-access-work-or-school.md)
+### Registrare il dispositivo Windows
+#### [Operazioni preliminari per la registrazione di Windows](windows-enrollment-company-portal.md)
+#### [Registrare il dispositivo Windows 10](enroll-windows-10-device.md)
 #### [Registrare il dispositivo Windows 8.1 o Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
 #### [Registrare il dispositivo Windows Phone 8.1](enroll-your-wp81-windows.md)
 ### [Crittografare il dispositivo](encrypt-your-device-windows.md)
@@ -150,13 +150,14 @@
 
 ## Uso dell'app Portale aziendale Intune per Windows 
 ### [Controllare l'accesso dei dispositivi](check-device-access-windows-cpapp.md)
-### [Installare app dall'app Portale aziendale](install-apps-cpapp-windows.md) 
-### [Bloccare in remoto il dispositivo dall'app Portale aziendale](remote-lock-your-device-cp-app.md)   
-### [Rinominare il dispositivo dall'app del portale aziendale](rename-your-device-cpapp.md) 
+### [Installare app](install-apps-cpapp-windows.md) 
+### [Bloccare in remoto un dispositivo](remote-lock-your-device-cp-app.md)   
+### [Rinominare il dispositivo](rename-your-device-cpapp.md) 
+### [Reimpostare il dispositivo](reset-device-cp-app.md)
 
 ## [Uso del sito Web del portale aziendale di Intune](using-the-intune-company-portal-website.md)
-### [Bloccare in remoto il dispositivo](remote-lock-your-device-cpwebsite.md)
-### [Rinominare il dispositivo](rename-your-device-cpwebsite.md)
-### [Rimuovere il dispositivo](remove-your-device-cpwebsite.md)
-### [Reimpostare il passcode in un dispositivo](reset-your-passcode-cpwebsite.md)
-### [Reimpostare e cancellare il dispositivo](reset-erase-your-device-cpwebsite.md)
+### [Bloccare in remoto un dispositivo](remote-lock-your-device-cpwebsite.md)  
+### [Rinominare il dispositivo](rename-your-device-cpwebsite.md)  
+### [Rimuovere il dispositivo](remove-your-device-cpwebsite.md)  
+### [Reimpostare il passcode del dispositivo](reset-your-passcode-cpwebsite.md)  
+### [Reimpostare il dispositivo](reset-erase-your-device-cpwebsite.md)  
