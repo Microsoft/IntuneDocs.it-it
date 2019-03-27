@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34d1cbe969b8e186d9e067660237da9c4ca88fb8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 313e4ccf0e96536b3e99edb968298e4cc3343aa1
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396215"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429734"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Che cosa può fare Intune per la mia azienda?
 Microsoft Intune è un servizio di gestione della mobilità aziendale (EMM) basato su cloud che consente alla forza lavoro di essere produttiva, garantendo al tempo stesso la protezione dei dati aziendali.
@@ -46,17 +46,17 @@ Con Intune, è possibile:
 
 ## <a name="quickstarts"></a>Guida introduttiva
 
-Iniziare a gestire i dispositivi mobili può sembrare un'operazione complessa, dal momento che sarà necessario prendere numerose decisioni per conto dell'azienda. Le guide introduttive seguenti consentono di iniziare ad usare Intune e svolgere alcune attività comuni impiegando una quantità minima di tempo.
+Affrontare la gestione dei dispositivi mobili può essere difficile inizialmente. Sono molte le decisioni da prendere per conto della propria azienda. Gli argomenti di avvio rapido seguenti consentono di iniziare ad usare Intune e svolgere alcune attività comuni impiegando una quantità minima di tempo.
 
-È possibile seguire l'ordine delle **guide introduttive** facendo riferimento al sommario nella parte sinistra della pagina.
+È possibile seguire l'ordine previsto degli argomenti di **avvio rapido** facendo riferimento al sommario nella parte sinistra della pagina.
 
 - [Provare Intune gratuitamente](free-trial-sign-up.md) - Creare una sottoscrizione gratuita per provare Intune in un ambiente di test.    
 - [Creare un utente](quickstart-create-user.md) - Aggiungere un utente a Intune per consentirgli di accedere alle risorse aziendali dai dispositivi mobili.
 - [Creare un gruppo](quickstart-create-group.md) - Organizzare gli utenti in gruppi per semplificare la gestione dei criteri e delle app a cui possono accedere.
-- [Configurare la registrazione automatica](quickstart-setup-auto-enrollment.md): configurare Microsoft Intune per registrare automaticamente i dispositivi quando utenti specifici eseguono l'accesso a dispositivi Windows 10.
-- [Registrare il dispositivo](quickstart-enroll-windows-device.md): assumere il ruolo di un utente di Intune e registrare il dispositivo in Microsoft Intune. Quindi, tornare a Intune e verificare il dispositivo registrato.
+- [Configurare la registrazione automatica](quickstart-setup-auto-enrollment.md) - Configurare Intune per registrare automaticamente i dispositivi quando utenti specifici eseguono l'accesso a dispositivi Windows 10.
+- [Registrare il dispositivo](quickstart-enroll-windows-device.md) - Assumere il ruolo di un utente di Intune e registrare il dispositivo in Intune. Tornare quindi a Intune e verificare che il dispositivo sia registrato correttamente.
 - [Creare un criterio di conformità del dispositivo](quickstart-set-password-length-android.md): creare un criterio di conformità del dispositivo e assegnare un gruppo al criterio.
-- [Inviare notifiche ai dispositivi non conformi](quickstart-send-notification.md): inviare una notifica di posta elettronica ai membri della forza lavoro con dispositivi non conformi creando e assegnando un criterio di conformità.
+- [Inviare notifiche ai dispositivi non conformi](quickstart-send-notification.md) - Inviare una notifica di posta elettronica ai membri della forza lavoro con dispositivi non conformi creando e assegnando un criterio di conformità.
 - [Aggiungere e assegnare un'app](quickstart-add-assign-app.md): aggiungere e assegnare un'app client alla forza lavoro della società.
 - [Creare e assegnare un criterio di protezione delle app](quickstart-create-assign-app-policy.md): creare e assegnare un criterio di protezione delle app a un'app client nel dispositivo dell'utente finale.
 - [Creare e assegnare un ruolo personalizzato](quickstart-create-custom-role.md) - Creare e assegnare un ruolo personalizzato con autorizzazioni specifiche per un reparto di operazioni di sicurezza. 
@@ -70,7 +70,7 @@ Per poter completare tutte le attività dell'introduzione, è anche necessario e
 
 ## <a name="intune-architecture"></a>Architettura di Intune
 
-Intune è il componente di Enterprise Mobility + Security (EMS) che gestisce dispositivi e app per dispositivi mobili. Intune è integrato con altri componenti EMS come Azure Active Directory (Azure AD) per il controllo delle identità e degli accessi e Azure Information Protection per la protezione dei dati. Quando usato con Office 365 consente alla forza lavoro di essere produttiva con tutti i dispositivi, garantendo al tempo stesso la protezione delle informazioni aziendali.
+Intune è il componente di Enterprise Mobility + Security (EMS) che gestisce dispositivi e app per dispositivi mobili. Intune è integrato con altri componenti EMS come Azure Active Directory (Azure AD) per il controllo delle identità e degli accessi e Azure Information Protection per la protezione dei dati. Quando viene usato con Office 365, consente alla forza lavoro di essere produttiva con tutti i dispositivi, garantendo al tempo stesso la protezione delle informazioni dell'organizzazione.
 
 ![Diagramma dell'architettura di alto livello per Microsoft Intune](/intune/media/intunearchitecture.svg)
 
