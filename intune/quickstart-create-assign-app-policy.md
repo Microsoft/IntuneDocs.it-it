@@ -10,18 +10,20 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2586fce0-5dca-4686-b9c4-791778838401
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ae378550a75f756390053e44eb4fbd04f665612
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179078"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57393354"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Guida introduttiva: Creare e assegnare un criterio di protezione delle app
 
@@ -45,9 +47,9 @@ Usare la procedura seguente per creare un criterio di protezione delle app:
 2. Immettere le informazioni seguenti: 
 
     - **Nome**: *Protezione del contenuto Windows 10*
-    - **Descrizione**: *Gli utenti associati a questo criterio non potranno tagliare, copiare o incollare contenuti tra l'app assegnata e altre app non gestite nel dispositivo.*
+    - **Description**: *Gli utenti associati a questo criterio non potranno tagliare, copiare o incollare contenuti tra l'app assegnata e altre app non gestite nel dispositivo.*
     - **Piattaforma**: *Windows 10*
-    - **Stato della registrazione**: *Con registrazione*
+    - **Stato registrazione**: *Con registrazione*
 
 3. Selezionare **App protette** per selezionare le app che devono soddisfare il criterio.
 4. Fare clic su **Aggiungi app**.
@@ -84,4 +86,4 @@ In questa guida introduttiva è stato creato e assegnato un criterio di protezio
 Per seguire questa serie di guide introduttive di Intune, continuare con la guida introduttiva che segue.
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: Creare e assegnare un ruolo personalizzato](quickstart-create-custom-role.md)
+> [Avvio rapido: Creare e assegnare un ruolo personalizzato](quickstart-create-custom-role.md)

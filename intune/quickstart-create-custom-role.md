@@ -4,6 +4,7 @@ description: 'Guida introduttiva: creare e assegnare un ruolo personalizzato per
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
@@ -11,14 +12,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 5de108835254d6a65546b8f1c9e8d0e9c32dbd26
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: be3ef61d3bdce2f1ad74a388a2ec50691313a1d1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189929"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400287"
 ---
-# <a name="quickstart-create-and-assign-a-custom-role"></a>Guida introduttiva: creare e assegnare un ruolo personalizzato
+# <a name="quickstart-create-and-assign-a-custom-role"></a>Guida introduttiva: Creare e assegnare un ruolo personalizzato
 
 In questa guida introduttiva di Intune si creerà un ruolo personalizzato con autorizzazioni specifiche per un reparto di operazioni di sicurezza. Quindi, si assegnerà il ruolo a un gruppo di operatori. Esistono diversi ruoli predefiniti che è possibile utilizzare sin da subito. Ma creando ruoli personalizzati come questo, è possibile esercitare un controllo di accesso preciso su tutti gli elementi del sistema di gestione dei dispositivi mobili.
 
@@ -73,4 +75,4 @@ In questa guida introduttiva è stato creato un ruolo operazioni di sicurezza pe
 Per seguire questa serie di guide introduttive di Intune, continuare con la guida introduttiva che segue.
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: Creare un profilo di posta elettronica del dispositivo per iOS](quickstart-email-profile.md)
+> [Avvio rapido: Creare un profilo di posta elettronica del dispositivo per iOS](quickstart-email-profile.md)

@@ -10,18 +10,20 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186257"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991115"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Guida introduttiva: Inviare notifiche a dispositivi non conformi
 
@@ -48,11 +50,11 @@ Per inviare il messaggio di posta elettronica agli utenti, creare un modello di 
 2. Immettere le informazioni seguenti:
 
    - **Nome**: *Amministratore Contoso*
-   - **Oggetto**: *Conformità del dispositivo*
+   - **Oggetto**: *Conformità dei dispositivi*
    - **Messaggio**: *Il dispositivo attualmente non rispetta i requisiti di conformità delle organizzazioni.*
-   - **Piè di pagina del messaggio di posta elettronica - Includere il logo dell'azienda**: impostare su **Abilitato** per visualizzare il logo dell'organizzazione.
-   - **Piè di pagina del messaggio di posta elettronica - Includere il nome dell'azienda**: impostare su **Abilitato** per visualizzare il nome dell'organizzazione.
-   - **Piè di pagina del messaggio di posta elettronica - Includere le informazioni sul contatto**: impostare su **Abilitato** per visualizzare le informazioni di contatto dell'organizzazione.
+   - **Intestazione del messaggio di posta elettronica: includere il logo dell'azienda**: impostare su **Abilitato** per visualizzare il logo dell'organizzazione.
+   - **Piè di pagina del messaggio di posta elettronica: includere il nome dell'azienda**: impostare su **Abilitato** per visualizzare il nome dell'organizzazione.
+   - **Piè di pagina del messaggio di posta elettronica: includere le informazioni sul contatto**: impostare su **Abilitato** per visualizzare le informazioni sul contatto dell'organizzazione.
 
    ![Esempio di messaggio di notifica di Intune relativo alla conformità](./media/quickstart-send-notification-01.png)
 
@@ -74,7 +76,7 @@ La procedura seguente consente di creare un criterio di conformità per i dispos
 3. Immettere le informazioni seguenti:
 
    - **Nome**: *Conformità di Windows 10*
-   - **Descrizione**: *Criteri di conformità di Windows 10*
+   - **Description**: *Criteri di conformità di Windows 10*
    - **Piattaforma**: Windows 10 e versioni successive
 
 4. Selezionare **Impostazioni** > **Sicurezza del sistema** per visualizzare le impostazioni correlate alla sicurezza dei dispositivi.
@@ -112,4 +114,4 @@ In questa guida introduttiva è stato usato Intune per creare e assegnare un cri
 Per seguire questa serie di guide introduttive di Intune, continuare con la guida introduttiva che segue.
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: Aggiungere e assegnare un'app client](quickstart-add-assign-app.md)
+> [Avvio rapido: Aggiungere e assegnare un'app client](quickstart-add-assign-app.md)

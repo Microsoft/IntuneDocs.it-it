@@ -4,6 +4,7 @@ description: Guida introduttiva - Configurare la registrazione automatica per i 
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 11/05/2018
 ms.author: erikje
@@ -11,14 +12,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0d6f210d055d8395985b4fe64b5a061b2c8a0304
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 810adbf06ddcd0aabb5c758f6a71c898116a9cee
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179655"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57394307"
 ---
-# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Guida introduttiva: configurare la registrazione automatica per i dispositivi Windows 10
+# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Guida introduttiva: Configurare la registrazione automatica per i dispositivi Windows 10
 
 In questa guida introduttiva si configurerà Microsoft Intune per registrare automaticamente i dispositivi quando utenti specifici eseguono l'accesso a dispositivi Windows 10.
 
@@ -74,4 +76,4 @@ In questa guida introduttiva è stato descritto come configurare la registrazion
 Per seguire questa serie di guide introduttive di Intune, continuare con la guida introduttiva che segue.
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: Registrare il dispositivo Windows 10](quickstart-enroll-windows-device.md)
+> [Avvio rapido: Registrare il dispositivo Windows 10](quickstart-enroll-windows-device.md)

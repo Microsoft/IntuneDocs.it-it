@@ -1,6 +1,6 @@
 ---
 title: Informazioni su Microsoft Intune
-description: Informazioni su Intune, il componente per la gestione dei dispositivi mobili (MDM) e per la gestione delle app per dispositivi mobili (MAM) della soluzione Enterprise Mobility + Security che assicura la protezione dei dati aziendali.
+description: Informazioni su Microsoft Intune, il componente per la gestione di dispositivi mobili (MDM) e per la gestione di app per dispositivi mobili (MAM) della soluzione Enterprise Mobility + Security che assicura la protezione dei dati aziendali.
 keywords: informazioni su Intune
 author: dougeby
 ms.author: dougeby
@@ -9,6 +9,7 @@ ms.date: 02/26/2019
 ms.topic: overview
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
@@ -16,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92cd9a5a6c3ee49b2431b43b024c338e06b5dfe2
-ms.sourcegitcommit: 7d694e3cd01623513c2b163946e60a99ab9535d2
+ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56891607"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460581"
 ---
 # <a name="what-is-microsoft-intune"></a>Informazioni su Microsoft Intune
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Intune è un servizio basato su cloud nel settore di gestione della mobilità aziendale (EMM) che consente alla forza lavoro di essere produttiva, garantendo al tempo stesso la protezione dei dati aziendali. Analogamente ad altri servizi di Azure, Microsoft Intune è disponibile nel portale di Azure. Con Intune, è possibile:
+Microsoft Intune è un servizio basato sul cloud nel settore di gestione della mobilità aziendale (EMM) che consente alla forza lavoro di essere produttiva, garantendo al tempo stesso la protezione dei dati aziendali. Analogamente ad altri servizi di Azure, Microsoft Intune è disponibile nel portale di Azure. Con Intune, è possibile:
 * Gestire i dispositivi mobili e i PC usati dalla forza lavoro per accedere ai dati aziendali.
 * Gestire le app per dispositivi mobili usate dalla forza lavoro.
 * Proteggere le informazioni aziendali grazie alla possibilità di controllare le modalità di accesso e condivisione dei dati da parte della forza lavoro.
@@ -44,7 +45,7 @@ Intune è un servizio basato su cloud nel settore di gestione della mobilità az
 
 
 ## <a name="how-does-intune-work"></a>Come funziona Intune?
-Intune è il componente di Enterprise Mobility + Security (EMS) che gestisce dispositivi e app per dispositivi mobili. Intune è integrato con altri componenti EMS come Azure Active Directory (Azure AD) per il controllo delle identità e degli accessi e Azure Information Protection per la protezione dei dati. Quando usato con Office 365 consente alla forza lavoro di essere produttiva con tutti i dispositivi, garantendo al tempo stesso la protezione delle informazioni aziendali.
+Intune è il componente della suite Enterprise Mobility + Security (EMS) di Microsoft che gestisce dispositivi e app per dispositivi mobili. Intune è integrato con altri componenti EMS come Azure Active Directory (Azure AD) per il controllo delle identità e degli accessi e Azure Information Protection per la protezione dei dati. Quando usato con Office 365 consente alla forza lavoro di essere produttiva con tutti i dispositivi, garantendo al tempo stesso la protezione delle informazioni aziendali.
 
 ![Immagine dell'architettura di Intune](./media/intunearch_sm.png)
 
@@ -63,7 +64,7 @@ Le funzionalità di gestione dei dispositivi di Intune si basano sull'uso dei pr
 * Creazione di report e misurazione della conformità dei dispositivi agli standard aziendali
 * Rimozione dei dati aziendali dai dispositivi gestiti  
 
-Spesso gli utenti pensano che il **controllo dell'accesso ai dati aziendali** sia una funzionalità di gestione dei dispositivi. Microsoft non la pensa allo stesso modo dal momento che non è una funzionalità disponibile nei sistemi operativi mobili. Si tratta piuttosto di uno strumento offerto dal provider di identità. In questo caso, il provider di identità è Azure Active Directory (Azure AD), il sistema di gestione dell'accesso e delle identità di Microsoft.  
+Spesso gli utenti pensano che il **controllo di accesso ai dati aziendali** sia una funzionalità di gestione dei dispositivi. Microsoft non la pensa allo stesso modo dal momento che non è una funzionalità disponibile nei sistemi operativi mobili. Si tratta piuttosto di uno strumento offerto dal provider di identità. In questo caso, il provider di identità è Azure Active Directory (Azure AD), il sistema di gestione dell'accesso e delle identità di Microsoft.  
 
 Intune si integra con Azure AD abilitando una vasta gamma di scenari di controllo dell'accesso. Ad esempio, è possibile richiedere che un dispositivo mobile sia conforme agli standard aziendali definiti in Intune prima che il dispositivo possa accedere a un servizio aziendale come Exchange. Analogamente, è possibile bloccare il servizio aziendale a un set specifico di app per dispositivi mobili. Ad esempio, Exchange Online può essere bloccato in modo da essere accessibile solo da Outlook o Outlook Mobile.
 
@@ -77,7 +78,7 @@ Quando si parla di gestione delle app, si intendono le attività seguenti:
 * Creazione di report sull'inventario delle app per dispositivi mobili
 * Monitoraggio dell'uso delle app per dispositivi mobili
 
-Il termine Gestione delle app per dispositivi mobili (MAM) può indicare una di queste attività singolarmente o specifiche combinazioni di operazioni. In particolare, è normale fondere il concetto di configurazione delle app con quello di protezione dei dati aziendali all'interno delle app per dispositivi mobili. Ciò avviene perché alcune app per dispositivi mobili espongono impostazioni che consentono la configurazione delle relative funzionalità di protezione dei dati.
+Il termine Gestione delle app per dispositivi mobili (MAM) può indicare una di queste attività singolarmente o specifiche combinazioni di operazioni. In particolare, è normale combinare il concetto di configurazione delle app con quello di protezione dei dati aziendali all'interno delle app per dispositivi mobili. Ciò avviene perché alcune app per dispositivi mobili espongono impostazioni che consentono la configurazione delle relative funzionalità di protezione dei dati.
 
 Quando si parla di configurazione delle app e di Intune, si fa riferimento in modo specifico a tecnologie come la [configurazione delle app gestite in iOS](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html).
 
@@ -101,14 +102,14 @@ Garantire la sicurezza delle app fa parte della gestione delle app e quando si p
 
 Un modo in cui Intune garantisce la protezione delle app per dispositivi mobili è attraverso la funzionalità dei **criteri di protezione delle app**. I criteri di protezione delle app usano l'identità di Azure AD per isolare i dati aziendali da quelli personali. Ai dati accessibili tramite credenziali aziendali verranno assegnati altri tipi di protezione aziendale.
 
-Ad esempio, quando un utente accede al proprio dispositivo con le sue credenziali aziendali, la relativa identità aziendale consente l'accesso ai dati che non risultano accessibili con l'identità personale. Mano a mano che i dati aziendali vengono usati, i criteri di protezione delle app controllano le modalità di salvataggio e condivisione. Questi stessi livelli di protezione non vengono applicati ai dati che risultano accessibili quando l'utente accede al proprio dispositivo con la sua identità personale. In questo modo, il reparto IT ha il controllo dei dati aziendali, mentre l'utente finale mantiene il controllo e la riservatezza dei dati personali.
+Ad esempio, quando un utente accede al proprio dispositivo con le proprie credenziali aziendali, la relativa identità aziendale gli consente di accedere ai dati che non risultano accessibili con l'identità personale. Mano a mano che i dati aziendali vengono usati, i criteri di protezione delle app controllano le modalità di salvataggio e condivisione. Questi stessi livelli di protezione non vengono applicati ai dati che risultano accessibili quando l'utente accede al proprio dispositivo con la sua identità personale. In questo modo, il reparto IT ha il controllo dei dati aziendali, mentre l'utente finale mantiene il controllo e la riservatezza dei dati personali.
 
 ## <a name="emm-with-and-without-device-enrollment"></a>Gestione della mobilità aziendale con e senza registrazione del dispositivo
 La maggior parte delle soluzioni di gestione della mobilità aziendale supporta tecnologie di base per i dispositivi mobili e per le app per dispositivi mobili, che sono in genere associate al dispositivo che viene registrato nella soluzione di gestione dei dispositivi mobili (MDM) dell'organizzazione. Intune supporta questi scenari, oltre a molti scenari "senza registrazione".  
 
-Le organizzazioni si differenziano a seconda che adottino o meno scenari "senza registrazione". Alcune organizzazioni li adottano come scenari standardizzati. Altre li consentono per i dispositivi complementari, come i tablet personali. Altre non li supportano affatto. Anche in quest'ultimo caso, in cui un'organizzazione richiede che tutti i dispositivi dei dipendenti siano registrati in MDM, queste organizzazioni supportano in genere scenari "senza registrazione" per collaboratori, fornitori e per altri dispositivi che hanno un'esenzione specifica.
+Le organizzazioni si differenziano a seconda che adottino o meno scenari "senza registrazione". Alcune organizzazioni li adottano come scenari standardizzati. Altre li consentono per i dispositivi complementari, come i tablet personali. Altre non li supportano affatto. Anche in quest'ultimo caso, in cui un'organizzazione richiede che tutti i dispositivi dei dipendenti siano registrati in MDM, queste organizzazioni supportano in genere scenari "senza registrazione" per collaboratori, fornitori e altri dispositivi che hanno un'esenzione specifica.
 
-È anche possibile usare la tecnologia "senza registrazione" di Intune in dispositivi registrati. Ad esempio, un dispositivo registrato in MDM può avere livelli di protezione "Open-In" forniti dal sistema operativo mobile. La protezione "Open-In" è una funzionalità di iOS che limita la possibilità di aprire un documento da un'app, come Outlook, in un'altra app, come Word, a meno che entrambe le app non siano gestite dal provider di MDM. Inoltre, il reparto IT può applicare criteri di protezione delle app alle app per dispositivi mobili gestite da EMS per controllare il salvataggio con nome o per fornire l'autenticazione a più fattori.
+È anche possibile usare la tecnologia "senza registrazione" di Intune in dispositivi registrati. Ad esempio, un dispositivo registrato in MDM può avere livelli di protezione "Open-In" forniti dal sistema operativo mobile. La protezione "Open-In" è una funzionalità di iOS di Apple che limita la possibilità di aprire un documento da un'app, come Outlook, in un'altra app, come Word, a meno che entrambe le app non siano gestite dallo stesso provider MDM. Il reparto IT può anche applicare criteri di protezione delle app alle app per dispositivi mobili gestite da EMS per controllare il salvataggio con nome o per fornire l'autenticazione a più fattori.
 
 Indipendentemente dalla posizione dell'organizzazione sulle app e i dispositivi mobili registrati e non registrati, Intune, come parte di EMS, include strumenti che contribuiranno ad aumentare la produttività della forza lavoro proteggendo al tempo stesso i dati aziendali.
 
@@ -133,7 +134,7 @@ Per una guida rapida per personalizzare l'esperienza del portale, vedere [Guida 
 
 ### <a name="before-you-start"></a>Prima di iniziare
 
-Per usare Intune nel portale di Azure, è necessario disporre di un account amministrazione e Intune e di un account tenant. Se non si ha un account, [iscriversi per crearne uno](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
+Per usare Intune nel portale di Azure, è necessario disporre di un account amministrazione e Intune e di un account tenant. Se non si ha un account, [iscriversi per crearne uno](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
 ### <a name="supported-web-browsers-for-the-azure-portal"></a>Web browser supportati per il portale di Azure
 

@@ -10,6 +10,7 @@ ms.date: 10/19/2018
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
@@ -17,14 +18,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187736"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57395973"
 ---
-# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Esercitazione: usare Autopilot per registrare i dispositivi Windows in Intune
+# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Esercitazione: Usare Autopilot per registrare i dispositivi Windows in Intune
 Windows Autopilot semplifica la registrazione dei dispositivi. Con Microsoft Intune e Autopilot è possibile assegnare i nuovi dispositivi agli utenti finali senza la necessità di compilare, gestire e applicare immagini del sistema operativo personalizzate. 
 
 In questa esercitazione si apprenderà come:
@@ -42,14 +44,14 @@ Per una panoramica di vantaggi, scenari e prerequisiti di Autopilot, vedere [Pan
 
 ## <a name="prerequisites"></a>Prerequisiti
 - [Configurare la registrazione automatica di Windows](quickstart-setup-auto-enrollment.md)
-- [sottoscrizione di Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+- [Sottoscrizione di Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 
 ## <a name="add-devices"></a>Aggiungere dispositivi
 
 Il primo passaggio nella configurazione di Windows Autopilot consiste nell'aggiungere i dispositivi Windows in Intune. A tale scopo, è sufficiente creare un file CSV e importarlo in Intune.
 
-1. In qualsiasi editor di testo, creare un elenco di valori delimitati da virgole (CSV) che identificano i dispositivi Windows. Usare il seguente formato:
+1. In qualsiasi editor di testo, creare un elenco di valori delimitati da virgole (CSV) che identificano i dispositivi Windows. Usare il formato seguente:
     
     *numero-di-serie*, *id-prodotto-windows*, *hash-hardware*, *id-ordine-facoltativo*
     
@@ -94,7 +96,7 @@ Dopo aver creato un gruppo di dispositivi, è necessario creare un profilo di di
 5. Nella casella **Join to Azure AD as** (Connetti ad Azure AD come) scegliere **Aggiunto ad Azure AD**.
 6. Scegliere **Configurazione guidata**, configurare le opzioni seguenti e lasciare le altre impostate sui valori predefiniti, quindi scegliere **Salva**:
     - **Contratto di licenza con l'utente finale**: **Nascondi**
-    - **impostazioni privacy**: **Mostra**
+    - **Impostazioni di privacy**: **Mostra**
     - **Tipo di account utente**: **Standard**
 
 6. Scegliere **Crea** per creare il profilo. Il profilo di distribuzione di Autopilot è ora disponibile per l'assegnazione ai dispositivi.
