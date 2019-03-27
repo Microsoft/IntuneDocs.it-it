@@ -45,7 +45,7 @@ Per collegare un utente a un PC:
 
    - Per lasciare il PC collegato all'utente corrente, se presente, scegliere **Annulla**.
 
-   - Per rimuovere il collegamento all'utente corrente, se presente, scegliere <strong>Rimuovi collegamento**&gt;** OK</strong>.
+   - Per rimuovere il collegamento all'utente corrente, se presente, scegliere <strong>Rimuovi collegamento **&gt;** OK</strong>.
 
    - Per collegare il PC a un nuovo utente, selezionare un utente nell'elenco **Tutti gli utenti** . Verificare che i dati dell'utente siano corretti e quindi scegliere **OK**.
 
