@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1e3e510cf1ef7e13e653f7793433045b0610ef
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f3addd79b20c685c5643a2b99fb7120e958cdecb
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565473"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394882"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparare le app line-of-business per i criteri di protezione delle app
 
@@ -87,6 +87,7 @@ Questa tabella elenca le impostazioni che è possibile usare per App SDK e per l
 |Consenti all'app di trasferire i dati ad altre app|X|X|
 |Consenti all'app di ricevere i dati da altre app|X|X|
 |Limita le operazioni taglia, copia e incolla con le altre app|X|X|
+|Specificare il numero di caratteri che possono essere tagliati o copiati da un'app gestita|X|X|
 |Richiedi PIN semplice per l'accesso|X|X|
 |Specificare il numero di tentativi prima della reimpostazione del PIN|X|X|
 |Consenti impronta digitale anziché PIN|X|X|
