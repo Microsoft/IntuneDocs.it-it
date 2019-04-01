@@ -1,11 +1,11 @@
 ---
-title: Come proteggere il dispositivo Android con la crittografia | Microsoft Docs
-description: Proteggere il dispositivo Android
+title: Crittografare il dispositivo Android per il portale aziendale di Intune | Microsoft Docs
+description: Procedura per attivare la crittografia del dispositivo in un dispositivo Android
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,31 +18,47 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 115025d60038daea6f43c97cbdc03a20d5b0bf59
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c9f1e7bbbad243e37f34cb298466adf886be9273
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838173"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490588"
 ---
-# <a name="how-to-protect-your-android-device-using-encryption"></a>Come proteggere il dispositivo Android usando la crittografia
+# <a name="encrypting-your-android-device"></a>Crittografia del dispositivo Android
 
-Quando si crittografa un dispositivo, si esegue il wrapping delle informazioni in esso contenute in un livello di codice protettivo che impedisce l'accesso agli utenti non autorizzati. Come passo aggiuntivo per assicurarsi che le informazioni siano protette, l'organizzazione richiede di crittografare il dispositivo Android prima di accedere a file, posta elettronica o dati aziendali.
+La crittografia del dispositivo consente di proteggere file e cartelle da accesso non autorizzato se il dispositivo viene smarrito o rubato. Dopo avere attivato la crittografia del dispositivo, solo gli utenti con la password corrette o il pin sarà in grado di accedere al dispositivo. 
+
+Prima di poter accedere alle risorse aziendali o dell'istituto di istruzione, l'organizzazione potrebbe essere necessario crittografare il dispositivo Android. Alcuni dispositivi Android più recenti vengono crittografati per impostazione predefinita, out-of-the-box.  
+
+## <a name="turn-on-encryption"></a>Attivare la crittografia
+
+Se si riceve un messaggio nel portale aziendale che si desidera crittografare il dispositivo, completare i passaggi seguenti. 
 
 > [!Note]
-> Alcuni dispositivi Android, inclusi alcuni modelli realizzati da Huawei e tutti i dispositivi Vivo e OPPO, non possono essere crittografati. Per altre informazioni, vedere [qui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
+> Alcuni dispositivi Android da Huawei Vivo e OPPO non possono essere crittografate. Per altre informazioni, vedere [qui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).  
 
-Un telefono di cui si annulla la registrazione rimarrà crittografato.
+1.  Impostare un blocco dello schermo del dispositivo.  
+    a. Passare a **Impostazioni** > **Schermata di blocco e sicurezza** > **Tipo di blocco**.  
+    b. Selezionare uno **PIN**, **Password**, o **Pattern**.  
+    c. Seguire le istruzioni visualizzate per configurare il blocco dello schermo.  
 
-1.  Assicurarsi che per il dispositivo sia stato impostato un PIN o una password per il blocco dello schermo.
+2. Tornare alla **schermata di blocco e sicurezza** e selezionare **Secure startup**.
+3. Scegli **Richiedi PIN quando si attiva dispositivo** > **OK**.
+4. Immettere il PIN per confermare e crittografare il dispositivo.
+5. Aprire l'app Portale aziendale, selezionare il dispositivo e toccare **Controlla le impostazioni del dispositivo**.  
 
-2.  In **Impostazioni** scegliere **Sicurezza** > **Esegui crittografia dispositivo**.
-    In alcuni telefoni è necessario fare clic su **Memoria** > **Crittografia memoria** o **Memoria** > **Schermata di blocco e sicurezza** > **Altre impostazioni di sicurezza** per trovare l'opzione "Crittografia".
+Dispositivi che eseguono Android 4.4 e versioni precedenti potrebbero non avere le **Secure startup** opzione. In tal caso, completare la procedura seguente per crittografare il dispositivo.
 
-3.  Seguire le istruzioni visualizzate. Durante la crittografia il dispositivo potrebbe essere riavviato più volte.
+1. Passare a **le impostazioni** > **sicurezza** > **crittografia dispositivo**. Etichette visualizzate variano tra i dispositivi Android. Se non viene visualizzato il **Esegui crittografia dispositivo** opzione, l'archiviazione:
+    * **Archiviazione** > **crittografia di archiviazione**
+    * **Archiviazione** > **schermata di blocco e sicurezza** > **altre impostazioni di sicurezza** 
 
-### <a name="what-to-do-if-you-have-issues"></a>Operazioni da eseguire in caso di problemi
-**Problema**: il dispositivo è già stato crittografato e si verifica uno dei problemi seguenti:
+2. Seguire le istruzioni visualizzate. Durante la crittografia il dispositivo potrebbe essere riavviato più volte.
+3. Aprire l'app Portale aziendale, selezionare il dispositivo e toccare **Controlla le impostazioni del dispositivo**.  
+
+## <a name="troubleshoot"></a>Risoluzione dei problemi  
+**Problema**: già stato crittografato il dispositivo e
 
 - Il pulsante di crittografia è disabilitato.
 - Un messaggio informa che è necessario crittografare il dispositivo.
@@ -50,20 +66,7 @@ Un telefono di cui si annulla la registrazione rimarrà crittografato.
 
 **Possibili soluzioni**
 
-- Verificare che il dispositivo sia carico e collegato.
-- Assicurarsi di aver impostato un PIN o una password nel dispositivo.
-- Se il PIN o la password sono già impostati nel dispositivo, provare i passaggi seguenti che il personale del supporto potrebbe richiedere per rendere più sicuro il dispositivo. I nomi dei menu visualizzati potrebbero essere leggermente diversi da quelli riportati nelle procedure, a seconda del tipo di dispositivo Android in uso.
+- Verificare che il dispositivo sia carico e collegato.  
+- Assicurarsi di aver impostato un PIN o una password nel dispositivo.  
 
-    1. Passare a **Impostazioni** > **Schermata di blocco e sicurezza** > **Blocco schermo**. Confermare il PIN o la password corrente.
-
-    2. In **Selezione blocco schermo** scegliere il tipo di blocco schermo da usare. 
-
-    3. Dopo aver scelto il blocco dello schermo, tornare a **Schermata di blocco e sicurezza** e selezionare **Avvio protetto**. 
-    
-    4. Nella schermata di **avvio protetto** toccare **Richiedi PIN per avviare il dispositivo**, quindi toccare **Continua**.
-
-    5. Scegliere un PIN, ad esempio quello immesso in precedenza, e toccare **Conferma PIN**.
-
-    6. Aprire l'app Portale aziendale, selezionare il dispositivo e toccare **Controlla conformità**.
-
-Serve ancora assistenza? Contattare il supporto tecnico aziendale (accedere al [sito Web Portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980) per informazioni sul contatto) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.
+Serve ancora assistenza? Contattare il supporto tecnico aziendale (accedere al [sito Web Portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980) per informazioni sul contatto) oppure scrivere al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">team Microsoft Android</a>.  

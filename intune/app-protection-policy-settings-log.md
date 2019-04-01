@@ -6,24 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 03/19/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff80a5911c4bb027cbe2f9289a415ed9797277a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460496"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394794"
 ---
 # <a name="review-client-app-protection-logs"></a>Esaminare i log di protezione delle app client
 
@@ -43,6 +43,7 @@ La tabella seguente mostra il nome e una spiegazione delle impostazioni registra
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x minuti                                                                                                                                                                                                                                                                                                   | [Accesso] Controlla di nuovo i requisiti di accesso - Periodo di prova offline<br>Nota: è il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app se il dispositivo è offline.             |
 | AccessRecheckOnlineTimeout  | _x_ minuti                                                                                                                                                                                                                                                                                                   | [Accesso] Controlla di nuovo i requisiti di accesso - Timeout.<br>Nota: è il periodo di tempo che deve trascorrere prima che vengano controllati di nuovo i requisiti di accesso per l'app dopo l'avvio se il dispositivo è online. |
+| AllowedOutboundClipboardSharingExceptionLength               | x caratteri                                                                                                                                                                                                                                                                                           | [Accesso] Specificare il numero di caratteri che possono essere tagliati o copiati da un'app gestita.  Questa impostazione sostituisce il `AllowedOutboundClipboardSharingLevel` restrizione. Valore predefinito '0' indica che non è consentita alcuna eccezione. 
 | AppPinDisabled              | 0 = No<br>1 = Sì                                                                                                                                                                                                                                                                                           | [Accesso] Disabilita il PIN dell'app quando il PIN del dispositivo è gestito.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Nessuna app<br>1 = App gestite<br>2 = Qualsiasi app                                                                                                                                                                                                                                                              | [Rilocazione dati] Consente all'app di ricevere dati da altre app.                                                                                                                        |
 | AppSharingToLevel           | 0 = Nessuna app<br>1 = App gestite<br>2 = Qualsiasi app                                                                                                                                                                                                                                                              | [Rilocazione dati] Consente all'app di trasferire dati ad altre app.                                                                                                                         |

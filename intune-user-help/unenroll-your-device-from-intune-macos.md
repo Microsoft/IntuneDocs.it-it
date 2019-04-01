@@ -1,11 +1,11 @@
 ---
-title: Annullare la registrazione del dispositivo macOS da Intune | Microsoft Docs
-description: Descrive come annullare la registrazione di un dispositivo macOS da Intune
+title: Annullare la registrazione del dispositivo macOS dal Portale aziendale Intune | Microsoft Docs
+description: Descrive come annullare la registrazione di un dispositivo macOS dal portale aziendale
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,24 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3518707aa90c3866fbf8b24936db6d781712bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55839972"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330399"
 ---
-# <a name="unenroll-your-macos-device-from-intune"></a>Annullare la registrazione del dispositivo macOS da Intune
+# <a name="unenroll-your-macos-device-from-company-portal"></a>Annullare la registrazione del dispositivo macOS dall'App portale aziendale
 
-Dopo aver annullato la registrazione del dispositivo macOS da Intune, il dispositivo non può più accedere alle risorse aziendali.
+Dopo l'annullamento della registrazione del dispositivo macOS in Intune, il dispositivo non potrà più accedere alle risorse aziendali.
 
 Seguire questa procedura per annullare la registrazione del dispositivo macOS dalla gestione:
 
-1.  Nell'app Portale aziendale, in **Dispositivi personali**, selezionare il dispositivo di cui annullare la registrazione.
+1.  Accedere al portale aziendale per macOS.
+2.  Passare a **Dispositivi**  e selezionare il dispositivo di cui si vuole annullare la registrazione.
 
-2.  Fare clic su **Rimuovi** > **Rimuovi**.
+3.  Selezionare l'icona di menu di puntini di sospensione > **rimuovere**.
+4.  Viene visualizzato un messaggio di conferma. Selezionare **rimuovere** annullare la registrazione del dispositivo. 
 
 Quando si annulla la registrazione del dispositivo da Intune, si verificano gli eventi seguenti:
 

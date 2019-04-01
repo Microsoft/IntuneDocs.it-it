@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise include Microsoft Intune. Vedere come Intu
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 03/29/2018
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,16 +16,16 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57231248"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646489"
 ---
 # <a name="what-is-device-management"></a>Che cos'è la gestione dei dispositivi? 
 
-Un'attività chiave che spetta a qualsiasi amministratore è la protezione e messa in sicurezza delle risorse e dei dati di un'organizzazione. Questa attività è la gestione dei dispositivi. Spesso gli utenti dispongono di molti dispositivi che usano per aprire e condividere file personali, visitare siti Web e installare app e giochi. Questi utenti sono anche dipendenti e studenti pertanto desiderano poter usare i propri dispositivi per accedere alle risorse professionali o scolastiche, ad esempio la posta elettronica o OneNote. La *gestione dei dispositivi* consente alle organizzazioni di proteggere e mettere in sicurezza le risorse e i dati. 
+Un'attività chiave che spetta a qualsiasi amministratore è la protezione e messa in sicurezza delle risorse e dei dati di un'organizzazione. Questa attività è la *gestione dei dispositivi*. Spesso gli utenti dispongono di molti dispositivi che usano per aprire e condividere file personali, visitare siti Web e installare app e giochi. Questi utenti sono anche dipendenti e studenti pertanto desiderano poter usare i propri dispositivi per accedere alle risorse professionali o scolastiche, ad esempio la posta elettronica o OneNote. La gestione dei dispositivi consente alle organizzazioni di proteggere e mettere in sicurezza le risorse e i dati. 
 
 Tramite un provider per la gestione dei dispositivi, le organizzazioni possono assicurarsi che solo gli utenti e i dispositivi autorizzati riescano ad accedere alle informazioni proprietarie. Analogamente, gli utenti dei dispositivi possono accedere ai dati di lavoro dal proprio telefono in tutta tranquillità, perché sanno che il dispositivo soddisfa i requisiti di sicurezza dell'organizzazione. Un'organizzazione potrebbe chiedersi **che strumenti usare per proteggere le proprie risorse**.
 
