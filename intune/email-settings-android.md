@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/15/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53f1c95fdbdd9d779fb339e4820a3e7000573e60
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 94f907ee8805c5f0559e8751a7cd69bacf1612ee
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236927"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565504"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Impostazioni dei dispositivi Android per configurare posta elettronica, autenticazione e sincronizzazione in Intune
 
@@ -35,10 +36,10 @@ Per altre informazioni sui profili di posta elettronica in Intune, vedere [Confi
 
 ## <a name="android-samsung-knox"></a>Android (Samsung Knox)
 
-- **Server di posta elettronica**: immettere il nome host del server Exchange dell'azienda. Immettere ad esempio `outlook.office365.com`.
-- **Nome account**: immettere il nome visualizzato dell'account di posta elettronica. Questo nome viene visualizzato nel dispositivo degli utenti.
+- **Server di posta elettronica**: immettere il nome host del server Exchange. Immettere ad esempio `outlook.office365.com`.
+- **Nome account**: immettere il nome visualizzato per l'account di posta elettronica. Questo nome viene visualizzato nel dispositivo degli utenti.
 - **Attributo nome utente da AAD**: questo nome è l'attributo che Intune ottiene da Azure Active Directory (Azure AD). Intune genera in modo dinamico il nome utente usato da questo profilo. Le opzioni disponibili sono:
-  - **Nome entità utente**: ottiene il nome, ad esempio `user1` o `user1@contoso.com`
+  - **Nome dell'entità utente**: ottiene il nome, ad esempio `user1` o `user1@contoso.com`
   - **Nome utente**: ottiene solo il nome, ad esempio `user1`
   - **Nome account SAM**: richiede il dominio, ad esempio `domain\user1`. Il nome account SAM viene usato solo con i dispositivi Android.
 
@@ -46,32 +47,32 @@ Per altre informazioni sui profili di posta elettronica in Intune, vedere [Confi
     - **Origine del nome di dominio utente**: scegliere **AAD** (Azure Active Directory) o **Personalizzato**.
 
       Quando si sceglie di ottenere gli attributi da **AAD**, specificare:
-      - **Attributo nome di dominio utente da AAD**: scegliere di ottenere l'attributo **Nome di dominio completo** o **Nome NetBIOS** dell'utente
+      - **Attributo nome di dominio utente da AAD**: scegliere di ottenere l'attributo **Nome completo** o **Nome NetBIOS** dell'utente
 
       Quando si sceglie di usare attributi di tipo **Personalizzato**, specificare:
-      - **Nome di dominio personalizzato da usare**: immettere un valore usato da Intune per il nome di dominio, ad esempio `contoso.com` o `contoso`
+      - **Nome di dominio personalizzato da usare**: immettere un valore usato da Intune per il nome dominio, ad esempio `contoso.com` o `contoso`
 
-- **Attributo indirizzo di posta elettronica da AAD**: questo nome è l'attributo di posta elettronica che Intune ottiene da AD. Intune genera in modo dinamico l'indirizzo di posta elettronica usato da questo profilo. Le opzioni disponibili sono:
-  - **Nome entità utente**:  usa come indirizzo di posta elettronica il nome dell'entità completo, ad esempio `user1@contoso.com` o `user1`.
-  - **Indirizzo SMTP primario**: usa l'indirizzo SMTP primario, ad esempio `user1@contoso.com`, per accedere a Exchange.
+- **Attributo indirizzo di posta elettronica da AAD**: questo nome è l'attributo di posta elettronica che Intune ottiene da Azure AD. Intune genera in modo dinamico l'indirizzo di posta elettronica usato da questo profilo. Le opzioni disponibili sono:
+  - **Nome dell'entità utente**: usa come indirizzo di posta elettronica il nome dell'entità completo, ad esempio `user1@contoso.com` o `user1`.
+  - **Indirizzo SMTP primario**: Usa l'indirizzo SMTP primario, ad esempio `user1@contoso.com`, per accedere a Exchange.
 
-- **Metodo di autenticazione**: Selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione usato dal profilo di posta elettronica.
+- **Metodo di autenticazione**: selezionare **Nome utente e password** o **Certificati** come metodo di autenticazione usato dal profilo di posta elettronica.
   - Se si seleziona l'opzione **Certificato**, selezionare un profilo certificato client SCEP o PKCS creato in precedenza per autenticare la connessione di Exchange.
 
 ### <a name="security-settings"></a>Impostazioni di sicurezza
 
-- **SSL**: Consente di usare la comunicazione Secure Sockets Layer (SSL) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con il server Exchange.
-- **S/MIME**: Consente di usare la crittografia S/MIME per inviare posta elettronica in uscita.
+- **SSL**: consente di usare la comunicazione Secure Sockets Layer (SSL) durante l'invio e la ricezione di messaggi di posta elettronica e durante la comunicazione con il server Exchange.
+- **S/MIME**: consente di usare la crittografia S/MIME per inviare posta elettronica in uscita.
   - Se si seleziona l'opzione **Certificato**, selezionare un profilo certificato client SCEP o PKCS creato in precedenza per autenticare la connessione di Exchange.
 
 ### <a name="synchronization-settings"></a>Impostazioni di sincronizzazione
 
-- **Numero di messaggi di posta elettronica da sincronizzare**: selezionare il numero di giorni di posta elettronica da sincronizzare oppure selezionare **Illimitata** nell'elenco a discesa per sincronizzare tutti i messaggi di posta elettronica disponibili.
-- **Pianificazione sincronizzazione**: selezionare la pianificazione in base alla quale i dispositivi devono sincronizzare i dati dal server Exchange. È anche possibile selezionare **Quando arrivano i messaggi**, per sincronizzare i dati all'arrivo, oppure **Manuale**, per consentire all'utente del dispositivo di avviare la sincronizzazione.
+- **Numero di messaggi di posta elettronica da sincronizzare**: selezionare il numero di giorni di posta elettronica da sincronizzare o selezionare **Illimitata** nell'elenco a discesa per sincronizzare tutti i messaggi di posta elettronica disponibili.
+- **Pianificazione sincronizzazione**: selezionare la pianificazione in base a cui i dispositivi sincronizzano i dati dal server Exchange. È anche possibile selezionare **Quando arrivano i messaggi**, per sincronizzare i dati all'arrivo, oppure **Manuale**, per consentire all'utente del dispositivo di avviare la sincronizzazione.
 
 ### <a name="content-sync-settings"></a>Impostazioni di sincronizzazione del contenuto
 
-- **Tipo di contenuto da sincronizzare**: Selezionare i tipi di contenuto da sincronizzare nei dispositivi. **Non configurato** disabilita questa impostazione. Se l'impostazione è **Non configurato** e un'utente finale abilita la sincronizzazione nel dispositivo, la sincronizzazione viene nuovamente disabilitata quando il dispositivo si sincronizza con Intune, poiché viene di nuovo applicato il criterio. 
+- **Tipo di contenuto da sincronizzare**: selezionare i tipi di contenuto da sincronizzare nei dispositivi. **Non configurato** disabilita questa impostazione. Se l'impostazione è **Non configurato** e un'utente finale abilita la sincronizzazione nel dispositivo, la sincronizzazione viene nuovamente disabilitata quando il dispositivo si sincronizza con Intune, poiché viene di nuovo applicato il criterio. 
 
   È possibile sincronizzare il contenuto seguente:  
   - **Contatti**: scegliere **Abilita** per consentire agli utenti finali di sincronizzare i contatti nei propri dispositivi.

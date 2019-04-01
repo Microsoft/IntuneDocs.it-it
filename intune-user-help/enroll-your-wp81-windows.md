@@ -18,73 +18,76 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1708066ce0065b58f5d7399862ac157d5647341
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841318"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57335106"
 ---
-# <a name="enroll-your-windows-phone-81-device-in-intune"></a>Registrare il dispositivo Windows Phone 8.1 in Intune
+# <a name="enroll-your-windows-phone-81-device-in-intune"></a>Registrare il dispositivo Windows Phone 8.1 in Intune  
 
-Se l'azienda o l'istituto di istruzione usa Microsoft Intune, è possibile registrare i dispositivi per poter accedere a posta elettronica, file e altre risorse aziendali. La registrazione dei dispositivi consente all'azienda di proteggere i suoi dati. Per altre informazioni sulla registrazione, vedere [Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [Cosa può e cosa non può essere visualizzato dal supporto tecnico aziendale sul dispositivo](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Registrare i dispositivi per accedere al lavoro o dell'istituto di istruzione, file e altre risorse. La registrazione dei dispositivi consente all'azienda di proteggere i suoi dati. Per altre informazioni sulla registrazione, vedere [Che cosa avviene quando si installa l'app Portale aziendale e si registra il dispositivo Windows in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [Cosa può e cosa non può essere visualizzato dal supporto tecnico aziendale sul dispositivo](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
+
+Per registrare il dispositivo in Intune, seguire le istruzioni che soddisfano le autorizzazioni o lo stato dell'account corrente.
+
+## <a name="enroll-through-company-portal"></a>Effettuare l'iscrizione tramite portale aziendale  
+È possibile installare l'app portale aziendale da di Microsoft Store, seguire questa procedura. 
+
+1.  Toccare **Start** > **Store**.  
+
+2.  Toccare **Cerca** e quindi digitare **portale aziendale**.  
+
+3.  Nell'elenco dei risultati toccare **Portale aziendale**.  
 
 
-Per registrare il dispositivo Phone 8.1 in Intune, seguire le istruzioni valide per la società o l'istituto di istruzione:
+    ![Risultati della ricerca del portale aziendale](./media/WP81-1-CP-search-store-v2.png)  
 
--   [Se la società consente di usare l'app Portale aziendale da Microsoft Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+4.  Toccare **Portale aziendale**  &gt; **Installa**.  
 
--   [Se non è consentito accedere a Microsoft Store dal dispositivo Windows Phone o se non si ha un account Microsoft](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>Se la società consente di usare l'app Portale aziendale da Microsoft Store
-Installare l'app Portale aziendale nel dispositivo:
+    ![Installare il portale aziendale](./media/WP81-2-CP-install-v2.png)  
 
-1.  Toccare **Start** &gt; **Store**.
+Registrare il dispositivo:  
 
-2.  Toccare **Cerca** e quindi digitare **portale aziendale**.
+1.  Nel dispositivo aprire l'app **Portale aziendale di Microsoft Intune**.  
 
-3.  Nell'elenco dei risultati toccare **Portale aziendale**.
 
-    ![Risultati della ricerca del portale aziendale](./media/WP81-1-CP-search-store-v2.png)
+2.  Immettere le credenziali. Se necessario, potrebbe essere visualizzata la richiesta di accettare termini e condizioni aziendali.  
 
-4.  Toccare **Portale aziendale**  &gt; **Installa**.
+3.  Passare a **Dispositivi personali**.  
 
-    ![Installare il portale aziendale](./media/WP81-2-CP-install-v2.png)
+4.  Selezionare **Toccare per registrare o identificare questo dispositivo**.  
 
-Registrare il dispositivo:
 
-1.  Nel dispositivo aprire l'app **Portale aziendale di Microsoft Intune**.
+    ![Toccare per registrare o identificare questo dispositivo nella schermata di questo dispositivo](./media/WP81-enroll-1-swipe-my-devices.png)  
 
-2.  Immettere le credenziali. Se necessario, potrebbe essere visualizzata la richiesta di accettare termini e condizioni aziendali.
+5.  Toccare **Registra il dispositivo**.  
 
-3.  Passare a **Dispositivi personali**.
 
-4.  Toccare **Toccare per registrare o identificare questo dispositivo**.
+    ![Schermata di registrazione del dispositivo](./media/WP81-enroll-2-enroll-this-device.png)  
 
-    ![Toccare per registrare o identificare questo dispositivo nella schermata di questo dispositivo](./media/WP81-enroll-1-swipe-my-devices.png)
+6.  Toccare **Aggiungi account**.  
 
-5.  Toccare **Registra il dispositivo**.
 
-    ![Schermata di registrazione del dispositivo](./media/WP81-enroll-2-enroll-this-device.png)
+    ![Schermata delle impostazioni della rete aziendale](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-6.  Toccare **Aggiungi account**.
+7.  Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione. L'account aziendale dovrebbe essere elencati nella pagina **Impostazioni** &gt; **Area di lavoro**.  
 
-    ![Schermata delle impostazioni della rete aziendale](./media/WP81-enroll-3-workplace-add-acct.png)
 
-7.  Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione. L'account aziendale dovrebbe essere elencati nella pagina **Impostazioni** &gt; **Area di lavoro**.
+    ![Schermata di aggiunta account](./media/WP81-enroll-4-account-added.png)  
 
-    ![Schermata di aggiunta account](./media/WP81-enroll-4-account-added.png)
+## <a name="enroll-through-settings-app"></a>Effettuare l'iscrizione tramite l'app impostazioni  
+Se non hai accesso di Microsoft Store dal dispositivo Windows Phone o se non hai un Account Microsoft, seguire questa procedura.
 
-## <a name="if-you-are-not-allowed-to-access-the-microsoft-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Se non è consentito accedere a Microsoft Store dal dispositivo Windows Phone o se non si ha un account Microsoft
+1.  Toccare **Impostazioni** &gt; **area di lavoro**.  
 
-1.  Toccare **Impostazioni** &gt; **area di lavoro**.
+2.  Toccare **aggiungi account** e quindi accedere con l'account aziendale.  
 
-2.  Toccare **aggiungi account** e quindi accedere con l'account aziendale.
+3.  Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione.  
 
-3.  Immettere le altre informazioni richieste e toccare **accedi** per completare la registrazione.
+4.  Se viene richiesto di installare l'app aziendale o Hub, verificare che la casella corrispondente sia selezionata e toccare **fine**.  
 
-4.  Se viene richiesto di installare l'app aziendale o Hub, verificare che la casella corrispondente sia selezionata e toccare **fine**.
-
-Se il supporto tecnico aziendale ha configurato l'app Portale aziendale in modo che venga installata durante la registrazione, l'app verrà visualizzata nell'elenco delle app.
+Se il supporto tecnico aziendale ha configurato l'app Portale aziendale in modo che venga installata durante la registrazione, l'app verrà visualizzata nell'elenco delle app.  
 
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

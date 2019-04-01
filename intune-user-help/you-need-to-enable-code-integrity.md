@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,27 @@ ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: chrisbal
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34bad76c3b6ff00b42eac70bcd870ef4d59ab017
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: d258fcb7f338e4177c31a5c77b92b5941b7db212
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839953"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56426927"
 ---
-# <a name="you-need-to-enable-code-integrity"></a>È necessario abilitare l'integrità del codice
+# <a name="enable-code-integrity"></a>Abilitare l'integrità del codice
 
-Per la gestione delle informazioni aziendali sono necessari vari tipi di sicurezza per evitare diversi tipi di problemi. Un modo per mantenere la sicurezza richiesta prevede l'uso dell'integrità del codice di Windows, che assicura che i programmi che operano a basso livello (driver) e i file di sistema non siano stati modificati.
+L'organizzazione potrebbe richiedere il PC deve essere abilitata con una funzionalità di protezione delle minacce chiamata *integrità del codice*. L'integrità del codice controlla i driver e file di sistema nel dispositivo segni di danneggiamento o di software dannoso. Per l'integrità del codice funzionare nel dispositivo, un'altra funzionalità di sicurezza chiamato [ *Secure Boot* ](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) deve anche essere abilitato. 
 
-L'integrità del codice viene attivata automaticamente quando il sistema usa in modo attivo l'avvio protetto.
+Se il PC non è conforme in quanto l'integrità del codice è disabilitata, è necessario contattare l'organizzazione IT team di supporto. Ti forniranno assistenza per abilitare l'avvio protetto, che verrà attivata l'integrità del codice al successivo che avvio del dispositivo. 
 
-> [!Tip]
-> L'abilitazione dell'avvio protetto è un'attività avanzata. È consigliabile contattare il supporto tecnico dell'azienda per ottenere assistenza per questa attività.
+Se si identificarsi come un utente avanzata dei dispositivi e si vuole provare la procedura per conto proprio, vedere [riabilitare avvio protetto](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
-Se si pensa di essere in grado di eseguire questa procedura, vedere la sezione "Per riabilitare l'avvio protetto" nella pagina [Disabilitazione dell'avvio protetto](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) per provare ad abilitare l'avvio protetto senza l'aiuto dell'amministratore IT.
+## <a name="additional-resources-for-it-administrators"></a>Risorse aggiuntive per gli amministratori IT  
+Se sei un amministratore di Intune e si desidera altre informazioni sulle impostazioni di conformità dell'integrità di dispositivo di Intune, vedere [aggiungere i criteri di conformità per i dispositivi Windows 10 in Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-10-and-later-policy-settings). Per un'analisi approfondita di conformità azioni disponibili in Intune, vedere la [CSP HealthAttestation](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
+## <a name="next-steps"></a>Passaggi successivi  
 Serve ancora assistenza? Contattare l'amministratore IT. Per informazioni sul contatto vedere il [sito Web del portale aziendale](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -7,20 +7,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2176eda7ce54906c6af5b34cc3db49e21ecda274
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 1c6a2f4fc3e3cae171cea96520d075a659d4d1ca
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231962"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566336"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Aggiornare i dispositivi che eseguono Windows Holographic a Windows Holographic for Business
 
@@ -36,8 +37,8 @@ Per altre informazioni su questa funzionalità, vedere [Aggiornare le edizioni d
 
 ## <a name="edition-upgrade"></a>Aggiornamento dell'edizione
 
-- **Edizione a cui eseguire l'aggiornamento**: Selezionare **Windows 10 Holographic for Business**.
-- **File di licenza**: Cercare e selezionare il file di licenza XML fornito.
+- **Edizione di aggiornamento**: selezionare **Windows 10 Holographic for Business**.
+- **File di licenza**: cercare e selezionare il file di licenza XML fornito.
 
   ![Immettere il nome del file XML che include le informazioni sulla licenza Holographic for Business](media/Holographic-edition-upgrade.png)
  

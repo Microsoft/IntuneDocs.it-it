@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9444a124b9b8a47633f544205940dadb3df0fd8f
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
-ms.translationtype: HT
+ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335004"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389476"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Il dispositivo Android sembra essere crittografato, ma il portale aziendale indica il contrario
 
@@ -63,16 +63,15 @@ Alcuni dispositivi Android con la versione 7.0 o successive crittografano i dati
 
 ### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>Dispositivi noti che possono essere aggiornati per risolvere questo problema
 
-I proprietari di uno dei dispositivi seguenti potrebbero sperimentare questo problema se il dispositivo non è stato aggiornato alla versione più recente di Android. Per installare gli aggiornamenti per questi dispositivi, passare a **Impostazioni** > **Updater**. 
+Se il dispositivo non è stato aggiornato alla versione più recente di Android, accedere al tuo dispositivo **le impostazioni** app e selezionare **Update**. Questi dispositivi potrebbero essere visualizzati come non conformi solo dopo aver aggiornato:  
 
-- [Huawei Honor 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [Huawei P9](https://consumer.huawei.com/en/phones/p9/)
+- Huawei Honor 8
+- Huawei P9
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Dispositivi noti che attualmente non possono essere aggiornati per risolvere questo problema
+I dispositivi seguenti verranno sempre visualizzate crittografati e non possono essere utilizzati per accedere alle risorse aziendali. Per accedere alle risorse aziendali, è necessario usare un dispositivo diverso.  
 
-Non è possibile risolvere questo problema per i dispositivi seguenti. Potrebbe essere necessario usare un dispositivo diverso per accedere alle risorse aziendali. 
-
-- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [Dispositivi OPPO](https://www.oppo.com/en/smartphones)
-- [Dispositivi Vivo](https://www.vivo.co.in)
-- [Smartphone Xiaomi Mi](https://xiaomi-mi.com/mi-smartphones/)
+- Huawei Mate 8
+- Dispositivi OPPO
+- Dispositivi Vivo
+- Smartphone Xiaomi Mi

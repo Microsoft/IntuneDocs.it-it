@@ -6,10 +6,11 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2010
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
@@ -17,18 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e10549e05f814975337831e3eb9821d87a3f43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834008"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565639"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registro modifiche per l'API data warehouse di Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Tenersi aggiornati con il data warehouse di Intune.
+
+## <a name="1902"></a>1902 
+_Data di rilascio: febbraio 2019_
+
+### <a name="power-bi-compliance-app"></a>App di conformità di Power BI 
+
+Accedere al Data Warehouse di Intune in Power BI Online usando il [conformità di Intune (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. Con questa app di Power BI, è ora possibile accedere e condividere i report creati in precedenza senza alcuna configurazione e senza uscire dal web browser. 
+
+> [!NOTE]
+> Esistono due filtri aggiuntivi, che è possibile applicare all'app di conformità di Intune.
+
+#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Aggiungere filtri aggiuntivi per l'app di conformità di Intune
+1. Aprire il [conformità di Intune (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) in del browser web app.
+2. Fare clic su **dispositivi Non conformi** e selezionare **Non conforme** nel **complianceStatus** filtro. 
+3. Fare clic su **dispositivi sconosciuto** e selezionare **non è ancora disponibile** nel **complianceStatus** filtro. 
 
 ## <a name="1812"></a>1812 
 _Data di rilascio: dicembre 2018_

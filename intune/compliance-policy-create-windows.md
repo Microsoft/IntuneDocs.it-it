@@ -5,20 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 518bb2ab0f59b5692ff2c2391fe971abba0639c6
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e6e82e24f051e64d07487d915ac6fd0848727ecf
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072525"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566812"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi Windows in Intune
 
@@ -73,8 +75,8 @@ Queste impostazioni dei criteri si applicano ai dispositivi che eseguono le piat
 
 ### <a name="device-properties"></a>Proprietà dispositivo
 
-- **Versione minima richiesta del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e quindi ottenere l'accesso alle risorse aziendali.
-- **Versione massima consentita del sistema operativo**: quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella specificata nella regola, l'accesso alle risorse aziendali viene bloccato. All'utente viene richiesto di contattare l'amministratore IT. Il dispositivo non può accedere alle risorse aziendali finché non viene modificata la regola per consentire la versione del sistema operativo.
+- **Versione minima del sistema operativo**: quando un dispositivo non soddisfa il requisito relativo alla versione minima del sistema operativo, verrà segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo e quindi ottenere l'accesso alle risorse aziendali.
+- **Versione massima consentita del sistema operativo**: quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella immessa nella regola, l'accesso alle risorse aziendali viene bloccato. All'utente viene richiesto di contattare l'amministratore IT. Il dispositivo non può accedere alle risorse aziendali finché non viene modificata la regola per consentire la versione del sistema operativo.
 
 I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione del sistema operativo è impostata su Windows 8.1 per Windows, il dispositivo risulta non conforme anche se il sistema operativo installato è Windows 8.1.
 
@@ -82,9 +84,9 @@ I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione de
 
 #### <a name="password"></a>Password
 
-- **Richiedi una password per sbloccare i dispositivi mobili**: **richiedere** agli utenti di immettere una password per poter accedere al dispositivo.
+- **Richiedi una password per sbloccare i dispositivi mobili**: **richiedere** agli utenti di immettere una password prima di poter accedere al dispositivo.
 - **Password semplici**: impostare questa opzione su **Blocca** per impedire agli utenti di creare password semplici, ad esempio **1234** o **1111**. Impostare l'opzione su **Non configurata** per consentire agli utenti di creare password come **1234** o **1111**.
-- **Lunghezza minima password**: immettere il numero minimo di cifre o caratteri che la password deve avere.
+- **Lunghezza minima password**: immettere il numero minimo di cifre o caratteri per la password.
 
   Per i dispositivi che eseguono Windows e prevedono l'accesso con un account Microsoft, i criteri di conformità non eseguono correttamente la convalida:
   - Se la lunghezza minima della password è maggiore di otto caratteri
@@ -92,7 +94,7 @@ I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione de
 
 - **Tipo di password**: scegliere se una password deve avere solo caratteri **numerici** oppure una combinazione di numeri e altri caratteri (**alfanumerici**).
   
-  - **Numero di caratteri non alfanumerici nella password**: Se **Tipo di password richiesto** è impostato su **Alfanumerico**, questa impostazione specifica il numero minimo di set di caratteri che la password deve contenere. I quattro set di caratteri sono:
+  - **Numero di caratteri non alfanumerici nella password:** se **Tipo di password richiesto** è impostato su **Alfanumerico**, questa impostazione specifica il numero minimo di set di caratteri che la password deve contenere. I quattro set di caratteri sono:
     - Lettere minuscole
     - Lettere maiuscole
     - Simboli
@@ -103,23 +105,23 @@ I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione de
     - Se la lunghezza minima della password è maggiore di otto caratteri
     - Oppure, se il numero minimo di set di caratteri è maggiore di due
 
-- **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere nuovamente la password.
-- **Scadenza password (giorni)**: selezionare il numero di giorni che mancano alla scadenza della password attuale, quando l'utente deve creare una nuova password.
-- **Numero di password precedenti di cui impedire il riutilizzo**: immettere il numero di password usate in precedenza che non è possibile usare.
+- **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere di nuovo la password.
+- **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
+- **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password usate in precedenza che non è possibile usare.
 
 #### <a name="encryption"></a>Crittografia
 
-- **Richiedi crittografia sul dispositivo mobile**: **richiedere** la crittografia del dispositivo per la connessione alle risorse di archiviazione dati.
+- **Richiedi crittografia sui dispositivi mobili**: **richiedere** la crittografia del dispositivo per la connessione alle risorse di archiviazione dati.
 
 ## <a name="windows-10-and-later-policy-settings"></a>Impostazioni dei criteri per Windows 10 e versioni successive
 
 ### <a name="device-health"></a>Device health
 
-- **Richiedi BitLocker**: quando BitLocker è abilitato, il dispositivo può proteggere dall'accesso non autorizzato i dati archiviati nell'unità, quando il sistema viene spento o passa alla modalità di ibernazione. Crittografia unità BitLocker di Windows crittografa tutti i dati archiviati nel volume del sistema operativo Windows. BitLocker usa il TPM per proteggere il sistema operativo Windows e i dati utente Consente anche di assicurarsi che un computer non venga manomesso, anche se viene perso, rubato o lasciato incustodito. Se il computer è dotato di un TPM compatibile, BitLocker usa il TPM per bloccare le chiavi di crittografia che proteggono i dati. Di conseguenza, non è possibile accedere alle chiavi finché il TPM non verifica lo stato del computer.
-- **Richiedi l'abilitazione dell'avvio sicuro nel dispositivo**: Quando è abilitato l'avvio protetto, il sistema viene forzato a eseguire l'avvio in uno stato attendibile predefinito. Inoltre, quando è abilitato l'avvio protetto, i componenti di base usati per avviare il computer devono avere le firme di crittografia corrette considerate attendibili dall'organizzazione che ha prodotto il dispositivo. Il firmware UEFI verifica la firma prima di consentire l'avvio del computer. Se tutti i file vengono manomessi, con conseguente compromissione della firma, il sistema non viene avviato.
+- **Richiedi BitLocker**: quando Bitlocker è abilitato, il dispositivo può proteggere dall'accesso non autorizzato i dati archiviati nell'unità, quando il sistema viene spento o passa alla modalità di ibernazione. Crittografia unità BitLocker di Windows crittografa tutti i dati archiviati nel volume del sistema operativo Windows. BitLocker usa il TPM per proteggere il sistema operativo Windows e i dati utente Consente anche di assicurarsi che un computer non venga manomesso, anche se viene perso, rubato o lasciato incustodito. Se il computer è dotato di un TPM compatibile, BitLocker usa il TPM per bloccare le chiavi di crittografia che proteggono i dati. Di conseguenza, non è possibile accedere alle chiavi finché il TPM non verifica lo stato del computer.
+- **Richiedi l'abilitazione dell'avvio sicuro nel dispositivo**: quando è abilitato l'avvio protetto, il sistema viene forzato a eseguire l'avvio in uno stato attendibile predefinito. Inoltre, quando è abilitato l'avvio protetto, i componenti di base usati per avviare il computer devono avere le firme di crittografia corrette considerate attendibili dall'organizzazione che ha prodotto il dispositivo. Il firmware UEFI verifica la firma prima di consentire l'avvio del computer. Se tutti i file vengono manomessi, con conseguente compromissione della firma, il sistema non viene avviato.
 
   > [!NOTE]
-  > L'impostazione **Richiedi l'abilitazione dell'avvio sicuro nel dispositivo** è supportata nei dispositivi TPM 1.2 e 2.0. Per i dispositivi che non supportano TPM 2.0 o versione successiva, lo stato dei criteri in Intune viene indicato come **Non conforme**. Si tratta di una limitazione del servizio [Attestazione dell'integrità del dispositivo](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation) di Windows 10.
+  > L'impostazione **Richiedi l'abilitazione dell'avvio sicuro nel dispositivo** è supportata in alcuni dispositivi TPM 1.2 e 2.0. Per i dispositivi che non supportano TPM 2.0 o versione successiva, lo stato dei criteri in Intune viene indicato come **Non conforme**. Per altre informazioni sulle versioni supportate, vedere [attestazione dell'integrità del dispositivo](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation).
 
 - **Richiedi l'integrità del codice**: l'integrità del codice è una funzionalità che verifica l'integrità di un driver o di un file di sistema ogni volta che viene caricato in memoria. L'integrità del codice rileva se un driver o un file di sistema non firmato viene caricato nel kernel e anche se un file di sistema viene modificato da software dannoso eseguito da un account utente con privilegi di amministratore.
 
@@ -127,23 +129,23 @@ Per informazioni su come funziona il servizio di attestazione dell'integrità, v
 
 ### <a name="device-properties"></a>Proprietà dispositivo
 
-- **Versione minima del sistema operativo**: immettere la versione minima consentita, usando il formato **principale.secondario.build.numero aggiornamento cumulativo**. Per ottenere il valore corretto, aprire un prompt dei comandi e digitare `ver`. Il comando `ver` restituisce la versione nel formato seguente:
+- **Versione minima del sistema operativo**: immettere la versione minima ammessa, usando il formato **numerico major.minor.build.CU**. Per ottenere il valore corretto, aprire un prompt dei comandi e digitare `ver`. Il comando `ver` restituisce la versione nel formato seguente:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
   Quando un dispositivo ha una versione precedente rispetto alla versione del sistema operativo immessa, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo. Dopo l'aggiornamento, potrà accedere alle risorse aziendali.
 
-- **Versione massima del sistema operativo**: immettere la versione massima consentita, usando il formato **principale.secondario.build.numero revisione**. Per ottenere il valore corretto, aprire un prompt dei comandi e digitare `ver`. Il comando `ver` restituisce la versione nel formato seguente:
+- **Versione massima del sistema operativo**: immettere la versione massima consentita nel formato **numerico major.minor.build.revision**. Per ottenere il valore corretto, aprire un prompt dei comandi e digitare `ver`. Il comando `ver` restituisce la versione nel formato seguente:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
   Quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella immessa nella regola, l'accesso alle risorse aziendali viene bloccato e all'utente viene richiesto di contattare l'amministratore IT. Il dispositivo non può accedere alle risorse aziendali finché la regola non viene modificata in modo da consentire la versione del sistema operativo.
 
-- **Versione minima del sistema operativo per dispositivi mobili**: immettere la versione minima consentita, usando il formato principale.secondario.numero di build.
+- **Versione minima richiesta del sistema operativo per i dispositivi mobili**: immettere la versione minima consentita, usando il formato numerico major.minor.build.
 
   Quando un dispositivo ha una versione precedente rispetto alla versione del sistema operativo immessa, viene segnalato come non conforme. Viene visualizzato un collegamento con informazioni su come eseguire l'aggiornamento. L'utente finale può scegliere di aggiornare il dispositivo. Dopo l'aggiornamento, potrà accedere alle risorse aziendali.
 
-- **Versione massima del sistema operativo per dispositivi mobili**: immettere la versione massima consentita, usando il formato principale.secondario.numero di build.
+- **Versione massima richiesta del sistema operativo per i dispositivi mobili**: immettere la versione massima consentita, usando il formato numerico major.minor.build.
 
   Quando un dispositivo usa una versione del sistema operativo successiva rispetto a quella immessa, l'accesso alle risorse aziendali viene bloccato e all'utente viene richiesto di contattare l'amministratore IT. Il dispositivo non può accedere alle risorse aziendali finché la regola non viene modificata in modo da consentire la versione del sistema operativo.
 
@@ -153,7 +155,7 @@ Per informazioni su come funziona il servizio di attestazione dell'integrità, v
 
 Si applica solo ai dispositivi con co-gestione che eseguono Windows 10 e versioni successive. I dispositivi solo Intune restituiscono uno stato non disponibile.
 
-- **Richiedi la conformità del dispositivo da System Center Configuration Manager**: scegliere **Richiedi** per imporre la conformità di tutte le impostazioni (elementi di configurazione) in System Center Configuration Manager. 
+- **Richiedi conformità del dispositivo da System Center Configuration Manager**: scegliere **richiedono** per forzare in System Center Configuration Manager sia conforme a tutte le impostazioni (elementi di configurazione). 
 
   È possibile ad esempio richiedere che vengano installati nei dispositivi tutti gli aggiornamenti software. In Configuration Manager questo requisito ha lo stato "Installato". Se uno o più programmi nel dispositivo hanno uno stato sconosciuto, il dispositivo non è conforme in Intune.
   
@@ -163,11 +165,11 @@ Si applica solo ai dispositivi con co-gestione che eseguono Windows 10 e version
 
 #### <a name="password"></a>Password
 
-- **Richiedi una password per sbloccare i dispositivi mobili**: **richiedere** agli utenti di immettere una password per poter accedere al dispositivo.
+- **Richiedi una password per sbloccare i dispositivi mobili**: **richiedere** agli utenti di immettere una password prima di poter accedere al dispositivo.
 - **Password semplici**: impostare questa opzione su **Blocca** per impedire agli utenti di creare password semplici, ad esempio **1234** o **1111**. Impostare l'opzione su **Non configurata** per consentire agli utenti di creare password come **1234** o **1111**.
 - **Tipo di password**: scegliere se una password deve avere solo caratteri **numerici** oppure una combinazione di numeri e altri caratteri (**alfanumerici**).
 
-  - **Numero di caratteri non alfanumerici nella password**: Se **Tipo di password richiesto** è impostato su **Alfanumerico**, questa impostazione specifica il numero minimo di set di caratteri che la password deve contenere. I quattro set di caratteri sono:
+  - **Numero di caratteri non alfanumerici nella password:** se **Tipo di password richiesto** è impostato su **Alfanumerico**, questa impostazione specifica il numero minimo di set di caratteri che la password deve contenere. I quattro set di caratteri sono:
     - Lettere minuscole
     - Lettere maiuscole
     - Simboli
@@ -175,11 +177,11 @@ Si applica solo ai dispositivi con co-gestione che eseguono Windows 10 e version
 
     Se si imposta un numero maggiore, l'utente dovrà creare una password più complessa.
 
-- **Lunghezza minima password**: immettere il numero minimo di cifre o caratteri che la password deve avere.
-- **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere nuovamente la password.
-- **Scadenza password (giorni)**: selezionare il numero di giorni che mancano alla scadenza della password attuale, quando l'utente deve creare una nuova password.
-- **Numero di password precedenti di cui impedire il riutilizzo**: immettere il numero di password usate in precedenza che non è possibile usare.
-- **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (Mobile e Holographic)**: forza gli utenti a immettere la password ogni volta che il dispositivo torna attivo dopo uno stato di inattività.
+- **Lunghezza minima password**: immettere il numero minimo di cifre o caratteri per la password.
+- **Numero massimo di minuti di inattività prima che venga richiesta la password**: immettere il tempo di inattività prima che l'utente debba immettere di nuovo la password.
+- **Scadenza password (giorni)**: selezionare la durata in giorni della password. Dopo questo periodo di tempo, gli utenti devono crearne una nuova.
+- **Numero di password precedenti di cui impedire il riutilizzo**: specificare il numero di password usate in precedenza che non è possibile usare.
+- **Richiedi la password quando il dispositivo torna attivo dopo uno stato di inattività (Mobile e Holographic)**: imporre agli utenti di immettere la password ogni volta che il dispositivo torna attivo dopo uno stato di inattività.
 
 #### <a name="encryption"></a>Crittografia
 
@@ -190,16 +192,16 @@ Si applica solo ai dispositivi con co-gestione che eseguono Windows 10 e version
 
 #### <a name="device-security"></a>Sicurezza del dispositivo
 
-- **Antivirus**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando le soluzioni antivirus registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. Se **non configurata**, Intune non verifica la presenza di soluzioni antivirus installate nel dispositivo.
-- **AntiSpyware**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando le soluzioni antispyware registrate nel Centro sicurezza PC Windows, ad esempio Symantec e Windows Defender. Se **non configurata**, Intune non verifica la presenza di soluzioni antispyware installate nel dispositivo.
+- **Antivirus**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando le soluzioni antivirus registrate nel [Centro sicurezza PC Windows](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), ad esempio Symantec e Windows Defender. Se **non configurata**, Intune non verifica la presenza di soluzioni antivirus installate nel dispositivo.
+- **Antispyware**: se impostata come **obbligatoria**, l'opzione consente di verificare la conformità usando le soluzioni antispyware registrate nel [Centro sicurezza PC Windows](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), ad esempio Symantec e Windows Defender. Se **non configurata**, Intune non verifica la presenza di soluzioni antispyware installate nel dispositivo.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 
 - **Richiedi che il dispositivo si trovi al massimo al punteggio di rischio del computer**: usare questa impostazione per considerare la valutazione del rischio dei servizi Threat Defense come condizione di conformità. Scegliere il livello di minaccia massimo consentito:
   - **Cancella**: questa opzione è la più sicura, perché il dispositivo non può avere minacce. Se viene rilevata la presenza di minacce di qualsiasi livello, il dispositivo viene considerato non conforme.
   - **Basso**: il dispositivo viene valutato come conforme se sono presenti solo minacce di livello basso. In presenza di minacce di livello più alto, il dispositivo verrà messo in stato di non conformità.
-  - **Medio**: il dispositivo viene valutato come conforme se le minacce esistenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
-  - **Alto**: questa opzione è la meno sicura e consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
+  - **Media**: il dispositivo viene valutato come conforme se le minacce esistenti nel dispositivo sono di livello basso o medio. Se viene rilevata la presenza di minacce di livello alto, il dispositivo viene considerato come non conforme.
+  - **Alta**: questa opzione è la meno sicura e consente tutti i livelli di minaccia. Potrebbe essere utile usare questa soluzione solo per la creazione di report.
   
   Per configurare Windows Defender ATP (Advanced Threat Protection) come servizio di difesa dalle minacce, vedere [Abilitare Windows Defender ATP con l'accesso condizionale](advanced-threat-protection.md).
 

@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: dagerrit
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38087afa95dc5933b55e6342ad46386cf0185f42
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: c2a8c234c305744c48785763c87913c2635276ad
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228970"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565605"
 ---
 # <a name="windows-10-and-newer-device-settings-to-upgrade-editions-or-enable-s-mode-in-intune"></a>Impostazioni dei dispositivi Windows 10 e versioni successive per l'aggiornamento dell'edizione o per l'abilitazione della modalità S in Intune
 
@@ -37,15 +38,15 @@ Per altre informazioni su questa funzionalità, vedere [Aggiornare le edizioni d
 
 ## <a name="edition-upgrade"></a>Aggiornamento dell'edizione
 
-- **Edizione a cui eseguire l'aggiornamento**: selezionare l'edizione Windows 10 a cui eseguire l'aggiornamento. I dispositivi a cui è destinato questo criterio vengono aggiornati all'edizione che scelta.
-- **Codice Product Key**: immettere il codice Product Key ricevuto da Microsoft. Dopo aver creato il criterio con il codice Product Key, la chiave non può essere aggiornata e viene nascosta per motivi di sicurezza. Per modificare il codice Product Key, immettere nuovamente l'intero codice.
+- **Edizione a cui eseguire l'aggiornamento**: selezionare l'edizione Windows 10 a cui si esegue l'aggiornamento. I dispositivi a cui è destinato questo criterio vengono aggiornati all'edizione che scelta.
+- **Codice Product Key**: immettere il codice product key ricevuto da Microsoft. Dopo aver creato il criterio con il codice Product Key, la chiave non può essere aggiornata e viene nascosta per motivi di sicurezza. Per modificare il codice Product Key, immettere nuovamente l'intero codice.
 - **File di licenza**: per l'edizione **Windows 10 Holographic for Business** o **Windows 10 Mobile**, scegliere **Sfoglia** per selezionare il file di licenza ricevuto da Microsoft. Il file di licenza include le informazioni di licenza delle edizioni a cui si stanno aggiornando i dispositivi.
 
 ## <a name="mode-switch"></a>Cambio di modalità
 
-- **Nessuna configurazione**: un dispositivo in modalità S rimane in modalità S. Un utente finale può disattivare la modalità S sul dispositivo.
-- **Mantieni in modalità S**: impedisce all'utente finale di disattivare la modalità S nel dispositivo.
-- **Switch** (Cambia): disattiva la modalità S nel dispositivo.
+- **Nessuna configurazione**: un dispositivo in modalità S resta in modalità S. Un utente finale può disattivare la modalità S sul dispositivo.
+- **Mantieni in modalità S**: impedisce all'utente finale di poter disattivare la modalità S sul dispositivo.
+- **Switch** (Cambia): disattiva la modalità S sul dispositivo.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

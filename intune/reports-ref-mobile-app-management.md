@@ -6,10 +6,11 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a21194b218cc7df230bf1ef1969b8d4483940d75
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7ea3e2c87055e4f111c8f12c47c468dff2c4e587
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238762"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565690"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Informazioni di riferimento per le entità di gestione delle app mobili (MAM)
 
@@ -83,12 +84,12 @@ L'entità **MamCheckin** rappresenta i dati raccolti quando un'istanza di app Ge
 | Proprietà | Descrizione | Esempio |
 |---------|------------|--------|
 | DateKey |Chiave data in cui l'archiviazione dell'app MAM è stata registrata nel data warehouse. | 20160703 |
-| ApplicationInstanceKey |Chiave dell'istanza dell'app associata all'archiviazione dell'app MAM. |2/5/1900 12.00.00 |
-| UserKey |Chiave dell'utente associata all'archiviazione dell'app MAM. |12/1/1900 12.00.00 |
-| ApplicationKey |Chiave dell'app MAM che è stata archiviata. |10/1/1900 12.00.00 |
-| DeviceHealthKey |Chiave di DeviceHealth associata all'archiviazione dell'app MAM. |2/1/1900 12.00.00 |
-| PlatformKey |Rappresenta la piattaforma del dispositivo associato all'archiviazione dell'app MAM. |1/1/1900 12:00:00 AM |
-| EffectiveAppliedPolicyKey |Rappresenta il criterio valido applicato, associato a questa archiviazione dell'app MAM. Un criterio valido applicato risulta dall'unione di tutti i criteri pertinenti a una particolare app e utente. |2/5/1900 12.00.00 |
+| ApplicationInstanceKey |Chiave dell'istanza dell'app associata all'archiviazione dell'app MAM. | 123 |
+| UserKey |Chiave dell'utente associata all'archiviazione dell'app MAM. | 4323 |
+| ApplicationKey |Chiave dell'app MAM che è stata archiviata. |234 |
+| DeviceHealthKey |Chiave di DeviceHealth associata all'archiviazione dell'app MAM. | 321 |
+| PlatformKey |Rappresenta la piattaforma del dispositivo associato all'archiviazione dell'app MAM. |123 |
+| EffectiveAppliedPolicyKey |Rappresenta il criterio valido applicato, associato a questa archiviazione dell'app MAM. Un criterio valido applicato risulta dall'unione di tutti i criteri pertinenti a una particolare app e utente. | 322 |
 | LastCheckInDate |Data e ora dell'ultima archiviazione di questa app MAM. Il valore può essere Null. |23/11/2016 12.00.00 |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
@@ -97,8 +98,8 @@ L'entità **MamDeviceHealth** rappresenta i dispositivi in cui sono stati distri
 
 | Proprietà | Descrizione | Esempio |
 |---------|------------|--------|
-| DeviceHealthKey |Identificatore univoco del dispositivo e integrità associata nel data warehouse, chiave surrogata. |1/1/1900 12:00:00 AM |
-| DeviceHealth |Identificatore univoco del dispositivo e integrità associata, simile a DeviceHealthKey ma l'identificatore è una chiave naturale. |1/1/1900 12:00:00 AM |
+| DeviceHealthKey |Identificatore univoco del dispositivo e integrità associata nel data warehouse, chiave surrogata. |123 |
+| DeviceHealth |Identificatore univoco del dispositivo e integrità associata, simile a DeviceHealthKey ma l'identificatore è una chiave naturale. |b66bc706-ffff-7777-0340-032819502773 |
 | DeviceHealthName |Rappresenta lo stato del dispositivo. <br>Non disponibile- nessuna informazione su questo dispositivo. <br>Integro - dispositivo non jailbroken. <br>Non integro - dispositivo jailbroken. |Non disponibile Integro Non integro |
 | RowLastModifiedDateTimeUtc |Data e ora in formato UTC dell'ultima modifica apportata all'integrità del dispositivo MAM specifico nel data warehouse. |23/11/2016 12.00.00 |
 

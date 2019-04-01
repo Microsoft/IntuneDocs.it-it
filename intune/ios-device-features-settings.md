@@ -5,26 +5,29 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/30/2019
-ms.topic: conceptual
+ms.date: 03/13/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7176da8bf35265ecf16b72faf987a4dcf5e66e0e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235734"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566625"
 ---
-# <a name="ios-device-feature-settings-in-intune"></a>Impostazioni relative alle funzionalità dei dispositivi iOS in Intune
+# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>impostazioni del dispositivo iOS a usare le funzionalità comuni di iOS in Intune
 
 Intune include alcune impostazioni predefinite per consentire agli utenti di iOS di usare diverse funzionalità di Apple nei dispositivi. Gli amministratori, ad esempio, possono controllare come gli utenti di iOS usano le stampanti AirPrint, aggiungere app e cartelle al dock e alle pagine nella schermata iniziale, visualizzare le notifiche delle app, visualizzare i dettagli dei tag degli asset nella schermata di blocco, usare l'autenticazione Single Sign-On e autenticare gli utenti con i certificati.
+
+Usare queste funzionalità per controllare i dispositivi iOS come parte della soluzione mobile device management (MDM).
 
 L'articolo elenca queste impostazioni e descrive la funzione di ogni impostazione.
 
@@ -38,8 +41,8 @@ Questa funzionalità consente agli utenti di iOS di stampare su stampanti AirPri
 
 1. In **Impostazioni** selezionare **AirPrint**. Immettere le proprietà seguenti del server AirPrint:
 
-    - **Indirizzo IP**: immettere l'indirizzo IPv4 o IPv6 della stampante. Se si usano i nomi host per identificare le stampanti, è possibile ottenere l'indirizzo IP effettuando il ping della stampante nel terminale. Per informazioni più dettagliate, vedere [Ottenere l'indirizzo IP e il percorso](#get-the-ip-address-and-path) (in questo articolo).
-    - **Percorso**: il percorso è in genere `ipp/print` per le stampanti di rete. Per informazioni più dettagliate, vedere [Ottenere l'indirizzo IP e il percorso](#get-the-ip-address-and-path) (in questo articolo).
+    - **Indirizzo IP**: immettere l'indirizzo IPv4 o IPv6 della stampante. Se si usano i nomi host per identificare le stampanti, è possibile ottenere l'indirizzo IP effettuando il ping della stampante nel terminale. Per informazioni più dettagliate, vedere Ottenere l'indirizzo IP e il percorso (in questo articolo).
+    - **Percorso**: il percorso è in genere `ipp/print` per le stampanti di rete. Per informazioni più dettagliate, vedere Ottenere l'indirizzo IP e il percorso (in questo articolo).
     - **Porta**: immettere la porta di ascolto della destinazione AirPrint. Se si omette questa proprietà, AirPrint usa la porta predefinita. Disponibile in iOS 11.0 e versioni successive.
     - **TLS**: scegliere **Abilita** per proteggere le connessioni AirPrint con Transport Layer Security (TLS). Disponibile in iOS 11.0 e versioni successive.
 
@@ -75,8 +78,8 @@ Usare le impostazioni di **Dock** per aggiungere fino a sei elementi o cartelle 
 
     - **Aggiungi un'app**: scegliere questa opzione per aggiungere le app al dock nella schermata. Immettere
 
-      - **Nome app**: Immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-      - **ID bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
+      - **Nome dell'app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+      - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
 
       Selezionare **OK** per salvare le modifiche.
 
@@ -87,9 +90,9 @@ Usare le impostazioni di **Dock** per aggiungere fino a sei elementi o cartelle 
       1. Specificare un **nome di cartella**. Questo nome viene visualizzato nel dispositivo degli utenti.
       2. Scegliere **Aggiungi** e immettere le proprietà seguenti:
 
-          - **Nome della pagina**: Immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-          - **Nome app**: Immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-          - **ID bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
+          - **Nome della pagina**: immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+          - **Nome dell'app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+          - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
 
       3. Scegliere **Aggiungi**. È possibile aggiungere fino a **20** pagine per il dock del dispositivo.
       4. Selezionare **OK** per salvare le modifiche.
@@ -120,8 +123,8 @@ Aggiungere le pagine che verranno visualizzate nella schermata iniziale e le app
 
     - **Aggiungi un'app**: scegliere questa opzione per aggiungere le app a una pagina nella schermata. Immettere
 
-      - **Nome app**: Immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-      - **ID bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
+      - **Nome dell'app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+      - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
 
       Selezionare **OK** per salvare le modifiche.
 
@@ -132,9 +135,9 @@ Aggiungere le pagine che verranno visualizzate nella schermata iniziale e le app
       1. Specificare un **nome di cartella**. Questo nome viene visualizzato nel dispositivo degli utenti.
       2. Scegliere **Aggiungi** e immettere le proprietà seguenti:
 
-          - **Nome della pagina**: Immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-          - **Nome app**: Immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
-          - **ID bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
+          - **Nome della pagina**: immettere un nome per la pagina. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+          - **Nome dell'app**: immettere un nome per l'app. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo iOS.
+          - **ID Bundle dell'app**: immettere l'ID bundle dell'app. Per alcuni esempi, vedere [ID di bundle per le app iOS predefinite](#bundle-ids-for-built-in-ios-apps) (in questo articolo).
 
       3. Scegliere **Aggiungi**.
       4. Selezionare **OK** per salvare le modifiche.
@@ -163,13 +166,13 @@ Scegliere la modalità in cui le app installate nei dispositivi iOS devono invia
     - **Nome app**: immettere il nome dell'app che si vuole aggiungere. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo.
     - **Autore**: immettere l'autore dell'app da aggiungere. Questo nome viene usato come riferimento nel portale di Azure. *Non* verrà visualizzato nel dispositivo.
     - **Notifiche**: **abilitare** o **disabilitare** l'invio di notifiche al dispositivo da parte dell'app.
-       - **Mostra nel centro notifiche**: **Abilita** consente all'app di visualizzare notifiche nel centro notifiche del dispositivo. **Disabilita** impedisce all'app di visualizzare notifiche nel centro notifiche.
+       - **Mostra nel centro notifiche**: **Abilita** consente all'app di visualizzare notifiche nel centro modifiche del dispositivo. **Disabilita** impedisce all'app di visualizzare notifiche nel centro notifiche.
        - **Mostra nella schermata di blocco**: selezionare **Abilita** per visualizzare le notifiche dall'app nella schermata di blocco del dispositivo. **Disabilita** impedisce all'app di visualizzare notifiche nella schermata di blocco.
-       - **Tipo di avviso**: quando il dispositivo è sbloccato, scegliere come visualizzare la notifica. Le opzioni disponibili sono:
-         - **Nessuna**: non vengono visualizzate notifiche.
-         - **Banner**: viene brevemente viene visualizzato un banner con la notifica.
+       - **Tipo avviso**: quando il dispositivo è sbloccato, scegliere come visualizzare la notifica. Le opzioni disponibili sono:
+         - **Nessuno**: non vengono visualizzate notifiche.
+         - **Banner**: viene brevemente visualizzato un banner con la notifica.
          - **Modale**: la notifica viene visualizzata e l'utente deve chiuderla manualmente prima di continuare a usare il dispositivo.
-       - **Badge sull'icona dell'app**: selezionare **Abilita** per aggiungere un badge all'icona dell'app. Il badge indica che l'app ha inviato una notifica.
+       - **Badge sull'icona di app**: selezionare **abilitare** per aggiungere un badge all'icona dell'app. Il badge indica che l'app ha inviato una notifica.
        - **Suoni**: selezionare **Abilita** per riprodurre un suono quando viene recapitata una notifica.
 
 3. Selezionare **OK** per salvare le modifiche. Continuare ad aggiungere le app desiderate. Al termine, selezionare **OK**.
@@ -232,8 +235,8 @@ Per usare l'accesso Single Sign-On, assicurarsi di avere:
 
       - **ID dispositivo di Azure AD**
 
-    - **Area di autenticazione**: immettere la parte del dominio dell'URL. Immettere ad esempio `contoso.com`.
-    - **Prefissi di URL che useranno l'accesso Single Sign-On**: **aggiungere** tutti gli URL all'interno dell'organizzazione che richiedono l'autenticazione Single Sign-On per gli utenti.
+    - **Area autenticazione**: immettere la parte del dominio dell'URL. Immettere ad esempio `contoso.com`.
+    - **Prefissi di URL che useranno l'accesso Single Sign-On**: **aggiungere** tutti gli URL dell'organizzazione che richiedono l'autenticazione Single Sign-On.
 
         Quando un utente si connette a uno di questi siti, ad esempio, il dispositivo iOS usa le credenziali Single Sign-On. L'utente non deve immettere credenziali aggiuntive. Se è abilitata l'autenticazione a più fattori, gli utenti devono immettere la seconda autenticazione.
 
@@ -250,7 +253,7 @@ Per usare l'accesso Single Sign-On, assicurarsi di avere:
 
         Usare **Nome app** per immettere un nome descrittivo per facilitare l'identificazione dell'ID bundle.
 
-    - **Certificato di rinnovo delle credenziali**: Se si usano i certificati per l'autenticazione (non le password), selezionare il certificato SCEP o PFX esistente come certificato di autenticazione. In genere, questo certificato è lo stesso distribuito all'utente per altri profili, ad esempio VPN, Wi-Fi o posta elettronica.
+    - **Certificato di rinnovo delle credenziali**: se si usano i certificati per l'autenticazione (non le password), selezionare il certificato SCEP o PFX esistente come certificato di autenticazione. In genere, questo certificato è lo stesso distribuito all'utente per altri profili, ad esempio VPN, Wi-Fi o posta elettronica.
 
 3. Al termine, selezionare **OK** per salvare le modifiche.
 
@@ -261,9 +264,9 @@ Queste impostazioni controllano l'accesso all'URL del browser nei dispositivi iO
 1. In **Impostazioni** selezionare **Filtro contenuto Web (solo con supervisione)**.
 2. Scegliere il **tipo di filtro**. Le opzioni disponibili sono:
 
-    - **Configurare gli URL**: usare il filtro Web predefinito di Apple che cerca termini per adulti, incluso un linguaggio volgare e sessualmente esplicito. Questa funzionalità valuta ogni pagina Web quando viene caricata e identifica e blocca i contenuti non appropriati. È anche possibile aggiungere gli URL che si preferisce non vengano controllati dal filtro oppure bloccare URL specifici, indipendentemente dalle impostazioni di filtro di Apple.
+    - **Configura gli URL**: usare il filtro Web predefinito di Apple che cerca termini per adulti, incluso un linguaggio volgare e sessualmente esplicito. Questa funzionalità valuta ogni pagina Web quando viene caricata e identifica e blocca i contenuti non appropriati. È anche possibile aggiungere gli URL che si preferisce non vengano controllati dal filtro oppure bloccare URL specifici, indipendentemente dalle impostazioni di filtro di Apple.
 
-      - **URL autorizzati**: **aggiungere** gli URL che si vuole consentire. Questi URL ignorano il filtro Web di Apple.
+      - **URL autorizzati**: **Add** gli URL si vuole consentire. Questi URL ignorano il filtro Web di Apple.
 
         > [!NOTE]
         > Gli URL immessi sono quelli che non devono essere valutati dal filtro Web di Apple. Questi URL non sono un elenco di siti Web consentiti. Per creare un elenco di siti Web consentiti, impostare **Tipo filtro** su **Solo siti Web specifici**.
@@ -274,7 +277,7 @@ Queste impostazioni controllano l'accesso all'URL del browser nei dispositivi iO
 
         Selezionare **OK** per salvare le modifiche.
 
-    - **Solo siti Web specifici** (solo per il Web browser Safari): questi URL vengono aggiunti ai segnalibri del browser Safari. Viene consentito all'utente di visitare **solo** questi siti e non è possibile aprire altri siti. Usare questa opzione solo se si conosce l'elenco esatto degli URL a cui gli utenti possono accedere.
+    - **Specificare solo i siti Web** (solo per il Web browser Safari): questi URL vengono aggiunti ai segnalibri del browser Safari. Viene consentito all'utente di visitare **solo** questi siti e non è possibile aprire altri siti. Usare questa opzione solo se si conosce l'elenco esatto degli URL a cui gli utenti possono accedere.
 
       - **URL**: immettere l'URL del sito Web che si vuole consentire. Immettere ad esempio `https://www.contoso.com`.
       - **Percorso del segnalibro**: immettere il percorso per archiviare il segnalibro. Immettere ad esempio `/Contoso/Business Apps`. Se non si aggiunge un percorso, il segnalibro verrà aggiunto alla cartella dei segnalibri predefiniti nel dispositivo.
@@ -290,11 +293,11 @@ Aggiungere un'immagine PNG, JPG o JPEG personalizzata ai dispositivi iOS con sup
 
 Può verificarsi un comportamento imprevisto quando un profilo senza immagine viene assegnato a dispositivi con un'immagine esistente. Ad esempio, si crea un profilo senza un'immagine. Il profilo viene assegnato a dispositivi che dispongono già di un'immagine. In questo scenario è possibile che l'immagine assuma il valore predefinito del dispositivo o che l'immagine originale rimanga nel dispositivo. Questo comportamento è controllato e limitato dalla piattaforma MDM di Apple.
 
-- **Posizione di visualizzazione dello sfondo**: Scegliere una posizione nel dispositivo per visualizzare l'immagine. Le opzioni disponibili sono:
-  - **Non configurata**: un'immagine personalizzata non viene aggiunta al dispositivo. Il dispositivo usa l'impostazione predefinita del sistema operativo.
-  - **Schermata di blocco**: aggiunge l'immagine alla schermata di blocco.
-  - **Home screen** (Schermata iniziale): aggiunge l'immagine alla schermata iniziale.
-  - **Schermata di blocco e schermata iniziale**: usa la stessa immagine nella schermata di blocco e nella schermata iniziale.
+- **Dello sfondo di visualizzazione Location**: scegliere un percorso nel dispositivo per visualizzare l'immagine. Le opzioni disponibili sono:
+  - **Non configurato**: un'immagine personalizzata non è aggiunto al dispositivo. Il dispositivo usa l'impostazione predefinita del sistema operativo.
+  - **Schermata di blocco**: aggiunge l'immagine nella schermata di blocco.
+  - **Schermata iniziale**: aggiunge l'immagine alla schermata iniziale.
+  - **Schermata di blocco e nella schermata iniziale**: Usa la stessa immagine per la schermata di blocco mentre schermata iniziale.
 - **Immagine di sfondo**: caricare un'immagine PNG, JPG o JPEG esistente che si vuole usare. Assicurarsi che le dimensioni del file siano inferiori a 750 KB. È anche possibile **rimuovere** un'immagine aggiunta.
 
 > [!TIP]
@@ -304,47 +307,52 @@ Può verificarsi un comportamento imprevisto quando un profilo senza immagine vi
 
 L'elenco seguente include l'ID bundle di alcune app comuni iOS predefinite. Per l'ID bundle di altre app rivolgersi al fornitore del software.
 
-|||
-|-|-|
-|Nome app|ID bundle|
-|App Store|com.apple.AppStore|
-|Calcolatrice|com.apple.calculator|
-|Calendario|com.apple.mobilecal|
-|Fotocamera|com.apple.camera|
-|Orologio|com.apple.mobiletimer|
-|Bussola|com.apple.compass|
-|Contatti|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Trova amici|com.apple.mobileme.fmf1|
-|Trova il mio iPhone|com.apple.mobileme.fmip1|
-|Area giochi|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Integrità|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|Maps|com.apple.Maps|
-|Messaggi|com.apple.MobileSMS|
-|Musica|com.apple.Music|
-|News|com.apple.news|
-|Note|com.apple.mobilenotes|
-|Numeri|com.apple.Numbers|
-|.NET|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Foto|com.apple.mobileslideshow|
-|Podcast|com.apple.podcasts|
-|Reminders|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Impostazioni|com.apple.Preferences|
-|Stocks|com.apple.stocks|
-|Suggerimenti|com.apple.tips|
-|Video|com.apple.videos|
-|VoiceMemos|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Video|com.apple.Bridge|
-|Weather|com.apple.weather|
+| ID bundle                   | Nome dell'app     | Pubblicazione |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | App Store    | Apple     |
+| com.apple.calculator        | Calcolatrice   | Apple     |
+| com.apple.mobilecal         | Calendario     | Apple     |
+| com.apple.camera            | Fotocamera       | Apple     |
+| com.apple.mobiletimer       | Orologio        | Apple     |
+| com.apple.compass           | Bussola      | Apple     |
+| com.apple.MobileAddressBook | Contatti     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.DocumentsApp      | File        | Apple     |
+| com.apple.mobileme.fmf1     | Trova amici | Apple     |
+| com.apple.mobileme.fmip1    | Trova il mio iPhone  | Apple     |
+| com.apple.gamecenter        | Area giochi  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Integrità       | Apple     |
+| com.apple.Home              | Home         | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.iMovie            | iMovie       | Apple     |
+| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.Maps              | Maps         | Apple     |
+| com.apple.MobileSMS         | Messaggi     | Apple     |
+| com.apple.Music             | Musica        | Apple     |
+| com.apple.news              | Notizie         | Apple     |
+| com.apple.mobilenotes       | Note        | Apple     |
+| com.apple.Numbers           | Numeri      | Apple     |
+| com.apple.Pages             | .NET        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Foto       | Apple     |
+| com.apple.podcasts          | Podcast     | Apple     |
+| com.apple.reminders         | Reminders    | Apple     |
+| com.apple.mobilesafari      | Safari       | Apple     |
+| com.apple.Preferences       | Impostazioni     | Apple     |
+| com.apple.SiriViewService   | Siri         | Apple     |
+| com.apple.stocks            | Stocks       | Apple     |
+| com.apple.tips              | Suggerimenti         | Apple     |
+| com.apple.TV                | TV           | Apple     |
+| com.apple.videos            | Video       | Apple     |
+| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | Video        | Apple     |
+| com.apple.weather           | Weather      | Apple     |
 
 ## <a name="next-steps"></a>Passaggi successivi
 

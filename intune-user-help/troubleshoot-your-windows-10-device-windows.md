@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,15 +18,15 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dba2401240b19b93318946af0e8760fef121518
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55837578"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Risolvere i problemi di registrazione dei dispositivi Windows 10
-Se è stata seguita la procedura descritta in [Registrare il dispositivo Windows 10 Mobile o Windows 10 Desktop in Intune](enroll-your-w10-phone-or-w10-pc-windows.md), ma non è ancora possibile accedere alla posta elettronica e ai file dell'azienda o dell'istituto di istruzione, provare a eseguire i passaggi di risoluzione dei problemi seguenti.
+Se è stato registrato il dispositivo, ma è ancora possibile accedere alla posta elettronica dell'istituto di istruzione e o file, provare questi passaggi di risoluzione dei problemi.  
 
 1.  Esaminare le due schermate seguenti e trovare quella simile a quanto viene visualizzato sul dispositivo. Seguire i passaggi corrispondenti alla schermata visualizzata sul dispositivo.
 
@@ -48,13 +48,13 @@ Se è stata seguita la procedura descritta in [Registrare il dispositivo Windows
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - Se non si visualizzano le informazioni di connessione illustrate in precedenza o si visualizzano, ma mancano alcune opzioni, toccare **Connetti** e quindi accedere con le credenziali aziendali o dell'istituto di istruzione. A questo punto l'utente è connesso.
+   - Se si non visualizzano le informazioni di connessione illustrate in precedenza, o si visualizzano, ma mancano alcune delle opzioni, toccare **Connect**. Accedere quindi con le credenziali aziendali o dell'istituto di istruzione per connettersi.  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Passaggi di risoluzione dei problemi da seguire se si visualizza "Il tuo account"
 
 Se è stata eseguita la procedura sopra descritta, ma non è tuttavia possibile accedere alla posta elettronica, ai file e ad altri dati dell'azienda o dell'istituto di istruzione, tornare alla schermata **Account** e toccare **Accesso società**.
 
-- Se viene visualizzato l'account aziendale o dell'istituto di istruzione, la connessione è attiva.
+- Se il proprio lavoro o dell'istituto di istruzione elencati, si è connessi.  
 
 - In caso contrario, toccare **Connetti** e quindi accedere con le credenziali aziendali o dell'istituto di istruzione.
 

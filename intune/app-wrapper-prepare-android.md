@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
-ms.topic: conceptual
+ms.date: 03/11/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b554bd4eb6aa5e49354501e69326b6eeb11098ef
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236977"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566047"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparare le app Android per i criteri di protezione delle app con lo strumento di wrapping delle app di Intune
 
@@ -30,7 +31,6 @@ ms.locfileid: "57236977"
 Usare lo strumento di wrapping delle app di Microsoft Intune per Android per modificare il comportamento delle app Android interne, limitandone le funzionalità senza modificare il codice.
 
 Lo strumento è un'applicazione della riga di comando di Windows che viene eseguito in PowerShell e crea un wrapper intorno all'app Android. Dopo aver eseguito il wrapping dell'app, è possibile modificarne le funzionalità configurando i [criteri di gestione delle app mobili](app-protection-policies.md) in Intune.
-
 
 Prima di eseguire lo strumento, vedere [Considerazioni sulla sicurezza per l'esecuzione dello strumento di wrapping delle app](#security-considerations-for-running-the-app-wrapping-tool). Per scaricare lo strumento, visitare la pagina dello [strumento di wrapping delle app di Microsoft Intune per Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) in GitHub.
 
@@ -53,10 +53,12 @@ Prima di eseguire lo strumento, vedere [Considerazioni sulla sicurezza per l'ese
 
 - Android richiede che tutti i pacchetti dell'app (con estensione apk) siano firmati. Per informazioni sul **riutilizzo** di certificati esistenti e linee guida generali per la firma dei certificati, vedere [Riutilizzo dei certificati di protezione ed esecuzione del wrapping delle app](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). L'eseguibile Java keytool.exe consente di generare le **nuove** credenziali necessarie per firmare l'app di output di cui è stato eseguito il wrapping. Qualsiasi password impostata deve essere sicura, ma prenderne nota perché saranno necessarie per eseguire lo strumento di wrapping delle app.
 
-> [!NOTE]
-> Lo strumento di wrapping delle app di Intune non supporta gli schemi di firma v2 e v3 (in arrivo) di Google per la firma delle app. Dopo avere eseguito il wrapping del file con estensione apk usando lo strumento di wrapping delle app di Intune, si consiglia di usare [lo strumento Apksigner fornito di Google]( https://developer.android.com/studio/command-line/apksigner). Ciò garantisce che una volta installata nei dispositivi degli utenti finali, l'app possa essere avviata correttamente secondo gli standard Android. 
+    > [!NOTE]
+    > Lo strumento di wrapping delle app di Intune non supporta gli schemi di firma v2 e v3 (in arrivo) di Google per la firma delle app. Dopo avere eseguito il wrapping del file con estensione apk usando lo strumento di wrapping delle app di Intune, si consiglia di usare [lo strumento Apksigner fornito di Google]( https://developer.android.com/studio/command-line/apksigner). Ciò garantisce che una volta installata nei dispositivi degli utenti finali, l'app possa essere avviata correttamente secondo gli standard Android. 
 
-- (Facoltativo) Abilitare Multidex all'interno dell'app di input. In alcuni casi un'app può raggiungere il limite di dimensioni DEX (Dalvik Executable) a causa delle classi MAM SDK di Intune aggiunte durante il wrapping. I file DEX fanno parte della compilazione di un'app per Android. In questo scenario la procedura consigliata consiste nell'abilitare Multidex all'interno dell'app stessa. In alcune organizzazioni potrebbe essere necessario collaborare con gli utenti che compilano l'app, ad esempio il team di compilazione dell'app. 
+- (Facoltativo) In alcuni casi un'app può raggiungere il limite di dimensioni DEX (Dalvik Executable) a causa delle classi MAM SDK di Intune aggiunte durante il wrapping. I file DEX fanno parte della compilazione di un'app per Android. Lo strumento di wrapping delle App di Intune gestisce automaticamente l'overflow di file DEX durante il ritorno a capo per le app con un'API min a livello di 21 o versione successiva (a partire dal [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Per le app con un livello API 21 < valore min, procedura consigliata, è possibile aumentare il numero minimo di livello API usando il wrapper `-UseMinAPILevelForNativeMultiDex` flag. Per i clienti che non è possibile aumentare il livello API minimo dell'app, sono disponibili soluzioni alternative seguenti DEX overflow. In alcune organizzazioni potrebbe essere necessario collaborare con gli utenti che compilano l'app, ad esempio il team di compilazione dell'app:
+* Usare ProGuard per eliminare i riferimenti a classi inutilizzati dal file DEX principale dell'app.
+* Per i clienti che usano versione 3.1.0 o versioni successive del plug-in Gradle Android, disabilitare il [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 
 ## <a name="install-the-app-wrapping-tool"></a>Installare lo strumento di wrapping delle app
 
@@ -64,7 +66,7 @@ Prima di eseguire lo strumento, vedere [Considerazioni sulla sicurezza per l'ese
 
 2.  Accettare il contratto di licenza e quindi finire l'installazione.
 
-Prendere nota della cartella in cui è installato lo strumento. Il percorso predefinito è: C:\Programmi (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
+Prendere nota della cartella in cui è installato lo strumento. La posizione predefinita è C:\Programmi (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
 
 ## <a name="run-the-app-wrapping-tool"></a>Eseguire lo strumento di wrapping delle app
 
@@ -93,6 +95,7 @@ Prendere nota della cartella in cui è installato lo strumento. Il percorso pred
 |**-KeyAlias**&lt;Stringa&gt;|Nome della chiave da usare per la firma.| |
 |**-KeyPassword**&lt;SecureString&gt;|Password usata per decrittografare la chiave privata da usare per la firma.| |
 |**-SigAlg**&lt;SecureString&gt;| (Facoltativo) Nome dell'algoritmo di firma da usare per la firma. L'algoritmo deve essere compatibile con la chiave privata.|Esempi: SHA256withRSA, SHA1withRSA|
+|**-UseMinAPILevelForNativeMultiDex**| (Facoltativo) Utilizzare questo flag per aumentare il livello API minimo dell'app Android di origine a 21. Questo flag verrà chiesta conferma come verrà limitato che può installare questa app. Gli utenti possono ignorare la finestra di dialogo di conferma aggiungendo il parametro "-confermare: $false" per i comandi di PowerShell. Il flag deve essere utilizzato solo dai clienti per le app con API min < 21 che non è possibile eseguire il wrapping completata a causa di errori di overflow DEX. | |
 | **&lt;Parametri comuni&gt;** | (Facoltativo) Il comando supporta parametri PowerShell comuni, come verbose e debug. |
 
 
