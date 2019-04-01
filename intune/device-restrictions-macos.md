@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fa6a68d1b5a8d2ccf87587ecab36c7807770d48
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565350"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330420"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi macOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -46,7 +46,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
   Questa funzionalità si applica a:  
   - macOS 10.13 e versioni successive
 
-- **Rinvia gli aggiornamenti software (solo con supervisionati)**: se impostata su **non configurata** (impostazione predefinita), gli aggiornamenti software vengono visualizzati nel dispositivo non appena vengono rilasciati da Apple. Ad esempio, se un aggiornamento di macOS Ottiene rilasciato da Apple in una data specifica quindi che l'aggiornamento naturalmente viene visualizzato nel dispositivo attorno alla data di rilascio.
+- **Rinvia gli aggiornamenti software**: se impostata su **non configurata** (impostazione predefinita), gli aggiornamenti software vengono visualizzati nel dispositivo non appena vengono rilasciati da Apple. Ad esempio, se un aggiornamento di macOS Ottiene rilasciato da Apple in una data specifica quindi che l'aggiornamento naturalmente viene visualizzato nel dispositivo attorno alla data di rilascio. Valore di inizializzazione compilazione aggiornamenti consentiti senza ritardo.
 
   **Abilitare** consente all'utente per il ritardo quando vengono visualizzati gli aggiornamenti software nei dispositivi, da 0 a 90 giorni. Questa impostazione non controlla gli aggiornamenti o quando non sono installati. 
 

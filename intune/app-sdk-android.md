@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a7ccc2da5fd99c3c72c8c9beb765f292e896eee
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
-ms.translationtype: HT
+ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069320"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514498"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guida a Microsoft Intune App SDK per sviluppatori di Android
 
@@ -832,7 +832,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     > [!NOTE]
     > Assicurarsi che l'app utilizza il `resourceId` e `aadId` i parametri passati a `acquireToken()` in modo che è necessario acquisire il token corretto.
 
-    ```
+    ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
         return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
@@ -1633,7 +1633,7 @@ Se si registra un'app con identità multiple per la notifica `WIPE_USER_DATA`, �
 
 Se esegue la registrazione per `WIPE_USER_DATA`, un'app non potrà usufruire dei vantaggi del comportamento di cancellazione selettiva predefinito dell'SDK. Per le app che supportano identità multiple, questa perdita può essere più significativa in quanto la cancellazione selettiva predefinita di MAM cancellerà solo i file la cui identità è interessata da una cancellazione. Se un'applicazione che supporta identità multiple vuole che venga eseguita la cancellazione selettiva predefinita di MAM _**e**_ vuole eseguire operazioni personalizzate sulla cancellazione, deve eseguire la registrazione per le notifiche `WIPE_USER_AUXILIARY_DATA`. Questa notifica verrà inviata immediatamente dall'SDK prima di eseguire la cancellazione selettiva predefinita di MAM. Un'app non deve mai registrarsi sia per `WIPE_USER_DATA` che per `WIPE_USER_AUXILIARY_DATA`.
 
-La cancellazione selettiva predefinita l'app verrà chiusa normalmente, completamento dell'attività e terminare il processo dell'app. Se l'app esegue l'override la cancellazione di seletive predefinito, è possibile provare a chiudere l'app manualmente per impedire all'utente di accesso ai dati in memoria dopo che viene eseguita una cancellazione.
+La cancellazione selettiva predefinita l'app verrà chiusa normalmente, completamento dell'attività e terminare il processo dell'app. Se l'app esegue l'override la cancellazione selettiva predefinita, è possibile provare a chiudere l'app manualmente per impedire all'utente di accesso ai dati in memoria dopo che viene eseguita una cancellazione.
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Abilitazione della configurazione di destinazione MAM per le applicazioni Android (facoltativo)
@@ -1785,7 +1785,7 @@ Intune SDK mantiene il contratto fornito dall'API Android, ma è possibile che v
 
 ## <a name="telemetry"></a>Telemetria
 
-Intune App SDK per Android non controlla la raccolta di dati dall'app. Per impostazione predefinita, l'applicazione Portale aziendale registra dati di telemetria. Questi dati vengono inviati a Microsoft Intune. In base ai criteri Microsoft, non vengono raccolte informazioni personali.
+Intune App SDK per Android non controlla la raccolta di dati dall'app. L'applicazione portale aziendale registra dati generati dal sistema per impostazione predefinita. Questi dati vengono inviati a Microsoft Intune. In base alla Microsoft Policy, che non vengano raccolti dati personali.
 
 > [!NOTE]
 > Se l'utente finale sceglie di non inviare questi dati, deve disattivare la telemetria in Impostazioni nell'app Portale aziendale. Per altre informazioni, vedere [Disattivare la raccolta dati di utilizzo di Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 

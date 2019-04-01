@@ -2,8 +2,8 @@
 title: Impostazioni di protezione per dispositivi Windows 10 in Microsoft Intune - Azure | Microsoft Docs
 description: Nei dispositivi Windows 10 usare o configurare le impostazioni di Endpoint Protection per abilitare le funzionalità di Windows Defender, che includono Application Guard, Firewall, SmartScreen, crittografia e Bitlocker, Exploit Guard, Application Control, Centro sicurezza e protezione dei dispositivi locali in Microsoft Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/04/2019
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbbdbbb92c033a99f1c439271c745c1abfbcd562
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 4c2df888e146a7f240530e5cbc6628dbce34cb61
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566693"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58342998"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Impostazioni di Windows 10 (e versioni successive) per la protezione dei dispositivi con Intune
 
@@ -87,8 +87,7 @@ Queste impostazioni sono applicabili a tutti i tipi di rete.
 
 Queste impostazioni sono applicabili a tipi di rete specifici, tra cui **Rete di dominio (aziendale)**, **Rete privata (individuabile)** e **Rete pubblica (non individuabile)**.
 
-#### <a name="general-settings"></a>Impostazioni generali
-
+#### <a name="general-settings"></a>Impostazioni generali  
 - **Windows Defender Firewall**: scegliere **Abilita** per attivare il firewall e la sicurezza avanzata. L'impostazione **Non configurata** (predefinita) consente tutto il traffico di rete, indipendentemente dalle eventuali altre impostazioni dei criteri.
 - **Modalità mascheramento**: **Blocca** per impedire il funzionamento del firewall in modalità mascheramento. Il blocco della modalità mascheramento consente di bloccare anche **Esenzione di pacchetti protetti da IPsec**. L'impostazione **Non configurata** (predefinita) consente il funzionamento del firewall in modalità mascheramento, utile per evitare le risposte alle richieste di probe.
 - **Schermata**: **Blocca** per disattivare questa funzionalità. L'impostazione **Non configurata** (predefinita) abilita questa impostazione. Quando questa impostazione e Windows Defender Firewall sono attivati, tutto il traffico in ingresso viene bloccato, indipendentemente dalle eventuali altre impostazioni dei criteri.

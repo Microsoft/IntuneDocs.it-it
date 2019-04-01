@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78b47decc297c58feadb7cd507a3ff09070d46d4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565741"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429692"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Impostazioni dei dispositivi Windows 10 e versioni successive per l'esecuzione in modalità tutto schermo in Intune
 
@@ -176,6 +176,7 @@ Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app c
 
       Selezionare **OK** per salvare le modifiche.
 
+    - **Avvio automatico di**: facoltativo. Scegliere un'applicazione di avvio automatico quando l'utente esegue l'accesso. È possibile AutoLaunched solo una singola app.
     - **Dimensioni del riquadro**: obbligatorio. Scegliere Piccolo, Medio o Grande per le dimensioni del riquadro.
 
   > [!TIP]
@@ -184,6 +185,8 @@ Le app in questa modalità sono disponibili nel menu Start. Sono le uniche app c
 - **Usa un layout Start alternativo**: scegliere **Sì** per immettere un file XML che descrive come le app vengono visualizzate nel menu Start, incluso il relativo ordine. Usare questa opzione se è necessaria una maggiore personalizzazione nel menu Start. Leggere [Personalizzare ed esportare il layout della schermata Start](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) per conoscere alcune linee guida e XML di esempio.
 
 - **Barra delle applicazioni di Windows**: scegliere **Mostra** o **Nascondi** per la barra delle applicazioni. Per impostazione predefinita, la barra delle applicazioni non viene visualizzata. Vengono visualizzate delle icone, ad esempio l'icona del Wi-Fi, ma le impostazioni non possono essere modificate dagli utenti finali.
+
+- **Consentire l'accesso alla cartella Downloads**: scegliere **Sì** per consentire agli utenti di accedere alla cartella di download in Windows Explorer. Per impostazione predefinita, l'accesso alla cartella di download è disabilitata. Questa funzionalità viene comunemente usata per gli utenti finali per accedere agli elementi scaricati da un browser.
 
 Selezionare **OK** per salvare le modifiche.
 
