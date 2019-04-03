@@ -1,12 +1,12 @@
 ---
 title: 'Guida introduttiva: creare un profilo di posta elettronica del dispositivo per iOS'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Informazioni su come usare Microsoft Intune per creare un profilo di posta elettronica del dispositivo affinché i dispositivi iOS possano connettersi in modo sicuro alla posta elettronica aziendale.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0c96ffdabca3a29b2e0ac5d0a26d5e23b0dabda
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b252c9d3d719847c8c0911b6cbce06c83bb4bf0e
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390444"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799283"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Guida introduttiva: Creare un profilo di posta elettronica del dispositivo per iOS
 
@@ -33,7 +33,7 @@ Se non si dispone di una sottoscrizione Intune, è possibile [iscriversi per ott
 
 ## <a name="sign-in-to-intune"></a>Accedere a Intune
 
-Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o come amministratore del servizio Intune. Si accede a Intune nel portale di Azure scegliendo **Tutti i servizi** > **Intune**.
+Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o come amministratore del servizio Intune. Se è stata creata una sottoscrizione della versione di valutazione di Intune, l'account creato con tale sottoscrizione sarà un amministratore globale.
 
 ## <a name="create-an-ios-email-profile"></a>Creare un profilo di posta elettronica iOS
 1. In Intune selezionare **Configurazione del dispositivo** e quindi **Profili**.
