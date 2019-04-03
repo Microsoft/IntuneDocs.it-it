@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6e82e24f051e64d07487d915ac6fd0848727ecf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: acf14ea6f1b667cb631a424223a40e44a8338edd
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566812"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306843"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Aggiungere i criteri di conformità per i dispositivi Windows in Intune
 
@@ -125,7 +125,10 @@ I PC Windows 8.1 restituiscono la versione **3**. Se la regola della versione de
 
 - **Richiedi l'integrità del codice**: l'integrità del codice è una funzionalità che verifica l'integrità di un driver o di un file di sistema ogni volta che viene caricato in memoria. L'integrità del codice rileva se un driver o un file di sistema non firmato viene caricato nel kernel e anche se un file di sistema viene modificato da software dannoso eseguito da un account utente con privilegi di amministratore.
 
-Per informazioni su come funziona il servizio di attestazione dell'integrità, vedere [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP di attestazione dell'integrità).
+Risorse aggiuntive:
+
+- In [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP di attestazione dell'integrità) sono disponibili informazioni su come funziona il servizio di attestazione dell'integrità.
+- [Suggerimento di supporto: Utilizzando impostazioni di attestazione dell'integrità di dispositivo come parte dei criteri di conformità di Intune ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
 
 ### <a name="device-properties"></a>Proprietà dispositivo
 

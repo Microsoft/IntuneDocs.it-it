@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566710"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490727"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Impostazioni dei dispositivi iOS per consentire o limitare l'uso delle funzionalità tramite Intune
 
@@ -43,7 +43,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
     Questa funzionalità si applica a:  
     - iOS 9.3.2 e versioni successive
 
-- **Acquisizione schermo**: scegliere **Blocca** per impedire screenshot o acquisizioni di schermate nel dispositivo. **Non configurato** (impostazione predefinita) consente all'utente di acquisire il contenuto dello schermo come immagine.
+- **Acquisizione schermo**: scegliere **Blocca** per impedire screenshot o acquisizioni di schermate nel dispositivo. In iOS 9.0 e versioni successive, include anche le registrazioni dello schermo di blocco. **Non configurato** (impostazione predefinita) consente all'utente di acquisire il contenuto dello schermo come immagine o come video.
   - **Osservazione dello schermo remoto da parte dell'app Classroom (solo con supervisione)**: scegliere **Blocca** per impedire all'app Classroom di visualizzare lo schermo del dispositivo da remoto. **Non configurato** (impostazione predefinita) consente all'app Classroom di Apple di visualizzare lo schermo.
 
     Questa funzionalità si applica a:  
@@ -158,7 +158,7 @@ Queste impostazioni vengono aggiunte a un profilo di configurazione del disposit
 - **Acquisti in-app**: scegliere **Blocca** per impedire gli acquisti in-app dallo Store. **Non configurata** consente gli acquisti dallo Store dall'interno di un'app in esecuzione.
 - **Musica di iTunes, podcast o notizie con contenuti espliciti (solo con supervisione)**: scegliere **Blocca** per impedire musica di iTunes, podcast o notizie con contenuti espliciti. **Non configurata** consente al dispositivo di accedere ai contenuti classificati come per adulti dallo Store.
 - **Scarica da iBook Store i contenuti contrassegnati come 'Erotici'**: scegliere **Blocca** per impedire agli utenti di scaricare contenuti multimediali da iBook Store contrassegnati come erotici. **Non configurata** consente all'utente di scaricare libri della categoria "Erotici".
-- **Visualizzazione dei documenti aziendali nelle app non gestite**: **Blocca** impedisce la visualizzazione di documenti non aziendali nelle app non gestite. **Non configurata** consente di visualizzare documenti aziendali in qualsiasi app. Ad esempio, può essere necessario impedire agli utenti il salvataggio di file dall'app OneDrive a Dropbox. Configurare questa impostazione come **Blocca**. Dopo aver ricevuto i criteri, ad esempio dopo un riavvio, il dispositivo non consente più il salvataggio.
+- **Visualizzazione dei documenti aziendali nelle app non gestite**: **Blocca** impedisce la visualizzazione di documenti aziendali nelle app non gestite. **Non configurata** consente di visualizzare documenti aziendali in qualsiasi app. Ad esempio, può essere necessario impedire agli utenti il salvataggio di file dall'app OneDrive a Dropbox. Configurare questa impostazione come **Blocca**. Dopo aver ricevuto i criteri, ad esempio dopo un riavvio, il dispositivo non consente più il salvataggio.
   - **Consentire alle App gestite di scrivere contatti contatti non gestito e account**: se impostata su **Consenti**, gli utenti possono aggiungere o sincronizzare informazioni di contatto Outlook qualsiasi persona, inclusi a business e i contatti aziendali, il app dei contatti predefinite nel dispositivo. Quando è impostata su **Non configurata**, gli utenti non possono aggiungere contatti di Outlook all'app Contatti incorporata nel dispositivo.
   
     Per usare questa impostazione, impostare **Visualizzazione dei documenti aziendali nelle app non gestite** su **Blocca**.
@@ -255,7 +255,7 @@ Per aggiungere app a questi elenchi, è possibile:
   Questa funzionalità si applica a:  
   - iOS 11.0 e versioni successive
 
-- **Hotspot personale**: **Blocca** impedisce che il dispositivo venga usato come hotspot personale. Questa impostazione potrebbe non essere compatibile con alcuni gestori. **Non configurato** (impostazione predefinita) consente a questa funzionalità.
+- **Hotspot personale**: **blocco** consente di disattivare l'hotspot personale nel dispositivo degli utenti con ogni sincronizzazione del dispositivo. Questa impostazione potrebbe non essere compatibile con alcuni gestori. **Non configurato** (impostazione predefinita) mantiene la configurazione hotspot personale come impostazione predefinita impostata dall'utente.
 - **Aggiungi reti Wi-Fi solo tramite profili di configurazione (solo con supervisione)**: **Rendi obbligatorio** impone al dispositivo l'uso esclusivo delle reti Wi-Fi impostate tramite profili di configurazione di Intune. **Non configurato** (impostazione predefinita) consente al dispositivo di usare altre reti Wi-Fi.
 - **Regole di utilizzo della rete cellulare (solo app gestite)**: definire i tipi di dati usabili dalle app gestite nelle reti cellulari. Le opzioni disponibili sono:
   - **Blocca l'uso della rete dati**: bloccare l'uso della rete dati per **Tutte le app gestite** oppure **Scegliere app specifiche**.

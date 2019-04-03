@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400484"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358318"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Raccolte del data warehouse di Intune
 
@@ -281,7 +281,7 @@ L'entità **deviceType** rappresenta il tipo di dispositivo a cui fanno riferime
 | 12           | ISocConsumer      | Dispositivo consumer iSoc                                |
 | 13           | Unix              | Dispositivo UNIX                                         |
 | 14           | MacMDM            | Dispositivo Mac OS X gestito con l'agente MDM incorporato |
-| 15           | HoloLens          | Dispositivo Holo Lens                                    |
+| 15           | HoloLens          | Dispositivo HoloLens                                       |
 | 16           | SurfaceHub        | Dispositivo Surface Hub                                  |
 | 17           | AndroidForWork    | Dispositivo Android gestito con il profilo proprietario Android  |
 | 18           | AndroidEnterprise | Dispositivo Android Enterprise.                          |
@@ -368,8 +368,8 @@ L'entità **EnrollmentFailureCategory** indica perché la registrazione di un di
 | BadRequest                      | Il client ha inviato una richiesta non riconosciuta/supportata dal servizio.                                        |
 | FeatureNotSupported             | Le funzionalità usate da questa registrazione non sono supportate per questo account.                                        |
 | EnrollmentRestrictionsEnforced  | Le restrizioni di registrazione configurate dall'amministratore hanno bloccato questa registrazione.                                          |
-| ClientDisconnected              | Il client ha raggiunto il timeout o la registrazione è stata interrotta dall'utente finale.                                                        |
-| UserAbandonment                 | La registrazione è stata abbandonata dall'utente finale. L'utente finale ha avviato l'onboarding, ma non è riuscito a completarlo in modo tempestivo.  |
+| ClientDisconnected              | Timeout del client o registrazione interrotta dall'utente finale.                                                        |
+| UserAbandonment                 | La registrazione è stata abbandonata dall'utente finale. L'utente finale ha avviato l'onboarding, ma non è riuscito a completarlo in tempo utile.  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
 L'entità **EnrollmentFailureReason** indica un motivo più dettagliato per un errore di registrazione del dispositivo all'interno di una determinata categoria di errore.  
@@ -398,7 +398,7 @@ L'entità **EnrollmentFailureReason** indica un motivo più dettagliato per un e
 | EnrollmentCriteriaNotMet         | Questo dispositivo non è riuscito a eseguire la registrazione a causa di una regola configurata per le restrizioni della registrazione.                                                                                                                          |
 | BulkDeviceNotPreregistered       | Non è stato possibile trovare il valore IMEI (International Mobile Equipment Identifier) o il numero di serie di questo dispositivo.  Senza questo identificatore, i dispositivi vengono riconosciuti come dispositivi di proprietà personale, che sono attualmente bloccati.  |
 | FeatureNotSupported              | L'utente ha provato ad accedere a una funzionalità non ancora rilasciata per tutti i clienti o non compatibile con la configurazione specifica di Intune.                                                            |
-| UserAbandonment                  | La registrazione è stata abbandonata dall'utente finale. L'utente finale ha avviato l'onboarding, ma non è riuscito a completarlo in modo tempestivo.                                                                                           |
+| UserAbandonment                  | La registrazione è stata abbandonata dall'utente finale. L'utente finale ha avviato l'onboarding, ma non è riuscito a completarlo in tempo utile.                                                                                           |
 | APNSCertificateExpired           | Non è possibile gestire i dispositivi Apple con un certificato per le notifiche push MDM Apple scaduto.                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
@@ -448,7 +448,7 @@ L'entità **managementAgentType** rappresenta gli agenti usati per gestire un di
 | 5                     | EasIntuneClient                   | Il dispositivo è gestito da Exchange Active Sync e l'agente PC di Intune |
 | 8                     | ConfigManagerClient               | Il dispositivo è gestito dall'agente System Center Configuration Manager     |
 | 10                    | ConfigurationManagerClientMdm     | Il dispositivo è gestito da Configuration Manager e MDM.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | Il dispositivo è gestito da Configuration Manager, MDM ed Exchange Active Sync.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | Il dispositivo è gestito da Configuration Manager e MDM con Exchange Active Sync.               |
 | 16                    | Sconosciuto                           | Tipo di agente di gestione sconosciuto                                              |
 | 32                    | Jamf                              | Gli attributi del dispositivo vengono recuperati da Jamf.                               |
 | 64                    | GoogleCloudDevicePolicyController |  Il dispositivo è gestito da CloudDPC di Google.                                 |
@@ -617,7 +617,7 @@ La raccolta di entità **user** contiene i dati utente. In questi record sono in
 | UserKey                    | Identificatore univoco dell'utente nel data warehouse - chiave surrogata.                                                                                                                                                         | 123                                  |
 | UserId                     | Identificatore univoco dell'utente, simile a UserKey, ma è una chiave naturale.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | Indirizzo di posta elettronica dell'utente.                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | UPN dell'utente.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | UPN dell'utente.                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | Nome visualizzato dell'utente.                                                                                                                                                                                                      | Luca                                 |
 | IntuneLicensed             | Specifica se l'utente ha una licenza per Intune.                                                                                                                                                                              | True/False                           |
 | IsDeleted                  | Indica se tutte le licenze dell'utente sono scadute e se l'utente è stato pertanto rimosso da Intune. Per un singolo record, questo flag non cambia. Per un nuovo stato utente viene creato invece un nuovo record. | True/False                           |

@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756803"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658550"
 ---
-# <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Usare i tag di ambito e RBAC per distribuite IT
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usare il controllo di accesso basato sui ruoli (RBAC) e i tag di ambito per distribuite IT
 
-È possibile utilizzare il controllo di accesso basato sui ruoli (RBAC) e i tag di ambito per assicurarsi che gli amministratori a destra dispongono dell'accesso a destra e la visibilità agli oggetti di Intune a destra. I ruoli determinano quale accesso degli amministratori hanno a quali oggetti. I tag di ambito determinano quali oggetti gli amministratori possono vedere.
+È possibile usare i tag di controllo e l'ambito di accesso basato sui ruoli per assicurarsi che gli amministratori a destra dispongono dell'accesso a destra e la visibilità agli oggetti di Intune a destra. I ruoli determinano quale accesso degli amministratori hanno a quali oggetti. I tag di ambito determinano quali oggetti gli amministratori possono vedere.
 
 Ad esempio, si supponga che un amministratore di office a livello di area di Seattle viene assegnato il ruolo Gestione profili e criteri. Si desidera che questo amministratore di visualizzare e gestire solo i profili e i criteri che si applicano solo ai dispositivi di Seattle. A tale scopo, è necessario:
 
@@ -83,6 +83,21 @@ Ad esempio, si supponga che un amministratore di office a livello di area di Sea
 3. Sotto **selezionare i tag**, scegliere i tag che si desidera aggiungere al profilo.
 4. Scegli **selezionate** > **OK** > **Salva**.
 
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Per assegnare un tag di ambito per i criteri di configurazione
+Per i dispositivi con **tipo di registrazione del dispositivo** impostata su **i dispositivi gestiti**:
+1. Scegli **App Client** > **i criteri di configurazione App** > scegliere un criterio di configurazione app.
+2. Scegli **delle proprietà** > **ambito (tag)** > scegliere i tag che si desidera assegnare al criterio.
+
+Per i dispositivi con **tipo di registrazione del dispositivo** impostata su **le app gestite**:
+1. Scegli **App Client** > **i criteri di configurazione App** > scegliere un criterio di configurazione app.
+2. Scegli **ambito (tag)** > scegliere i tag che si desidera assegnare al criterio.
+
+
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Per assegnare un tag di ambito a una profilo di provisioning delle app iOS
+1. In Intune, scegliere **App Client** > **app per iOS i profili di provisioning** > scegliere un profilo.
+2. Scegli **delle proprietà** > **ambito (tag)** > scegliere i tag che si desidera assegnare al profilo.
+3. Scegli **selezionate** > **OK** > **Salva**.
+
 ## <a name="scope-tag-details"></a>Dettagli dei tag di ambito
 Quando si lavora con i tag di ambito, tenere presente questi dettagli:
 
@@ -96,20 +111,13 @@ Quando si lavora con i tag di ambito, tenere presente questi dettagli:
     - Criteri di configurazione: i dispositivi gestiti
     - Script PowerShell
     - Token DEP
+    - Profilo di provisioning delle app iOS
 - Quando un amministratore crea un oggetto in Intune, tutti i tag di ambito assegnati a ogni amministratore verranno assegnati automaticamente al nuovo oggetto.
 - Intune RBAC non si applica ai ruoli di Azure Active Directory. Pertanto, i ruoli del servizio Intune e gli amministratori globali hanno accesso amministrativo completo a Intune, indipendentemente dal quale hanno i tag di ambito.
 - Gli amministratori in un'assegnazione di ruolo con i tag di ambito è anche possono visualizzare gli oggetti di Intune senza tag di ambito.
 - È possibile assegnare solo un tag di ambito che si dispone di assegnazioni di ruolo.
 - È possibile solo i gruppi di destinazione che sono elencati nell'ambito (gruppi) dell'assegnazione di ruolo.
 - Se si dispone di un tag di ambito assegnato al ruolo, è possibile eliminare tutti i tag di ambito su un oggetto di Intune. È necessario almeno un ambito tag.
-- Se un utente ha più assegnazioni di ruolo, le autorizzazioni in tali assegnazioni di ruolo si estendono a oggetti diversi come indicato di seguito:
-    - Assegnare le autorizzazioni si applicano solo agli oggetti, come i criteri o App, nell'assegnazione del ruolo ambito (gruppi). Assegnare le autorizzazioni non si applicano agli oggetti nelle altre assegnazioni di ruolo, a meno che l'assegnazione di altre vengono loro concessi specificamente.
-    - Le altre autorizzazioni (ad esempio creazione e lettura), si applicano a tutti gli oggetti dello stesso tipo (ad esempio, tutti i criteri o tutte le App) in una qualsiasi delle assegnazioni dell'utente.
-    - Le autorizzazioni per oggetti di tipi diversi (ad esempio, i criteri o App), non si applicano reciprocamente. Un'autorizzazione di lettura per i criteri, ad esempio, non fornisce un'autorizzazione di lettura per le app nelle assegnazioni dell'utente.
-
-
-
-
 
 ## <a name="next-steps"></a>Passaggi successivi
 
