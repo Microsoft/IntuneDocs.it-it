@@ -1,12 +1,12 @@
 ---
 title: Guida introduttiva - Creare e assegnare un criterio di protezione delle app
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In questa guida introduttiva si userà Microsoft Intune per creare e assegnare un criterio di protezione delle app.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393354"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871362"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Guida introduttiva: Creare e assegnare un criterio di protezione delle app
 
@@ -72,7 +72,7 @@ Usare la procedura seguente per assegnare il criterio di protezione delle app:
 3.  Selezionare **Assegnazioni**.
 4.  Fare clic su **Selezionare i gruppi da includere** nella scheda **Includi**.
 5.  Selezionare **Contoso Testers** (Tester Contoso) come gruppo da includere.
-6.  Fare clic su **Seleziona**. 
+6.  Fare clic su **Seleziona** > **Salva**. 
 
 Il criterio di protezione delle app è stato assegnato.
 

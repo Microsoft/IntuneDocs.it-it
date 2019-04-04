@@ -1,12 +1,12 @@
 ---
 title: Guida introduttiva - Creare un criterio di conformità della password per i dispositivi Android
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In questa guida introduttiva si userà Microsoft Intune per impostare la lunghezza della password obbligatoria per i dispositivi Android.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ae0c7b9a00c3e07bb49261ca1a20bd5ef5db15
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397245"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799659"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Guida introduttiva: Creare un criterio di conformità della password per i dispositivi Android
 
@@ -49,7 +49,8 @@ In questa guida introduttiva si userà Intune per richiedere agli utenti della f
 3. Per **Piattaforma**, selezionare **Android**. 
 4. Selezionare **Impostazioni** > **Sicurezza del sistema** per visualizzare il pannello **Sicurezza del sistema** per Android.
 5. Fare clic su **Rendi obbligatorio** accanto a **Richiedi una password per sbloccare i dispositivi mobili**.
-6. Immettere **6** accanto a **Lunghezza minima password**. 
+6. Selezionare **Almeno numerico** accanto a **Tipo di password richiesto**.
+7. Immettere **6** accanto a **Lunghezza minima password**. 
 
     ![Screenshot della creazione di un gruppo in Microsoft Intune](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 

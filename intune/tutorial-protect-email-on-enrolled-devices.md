@@ -1,12 +1,12 @@
 ---
 title: Esercitazione - Proteggere la posta elettronica di Exchange Online nei dispositivi gestiti con Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Informazioni su come proteggere Exchange Online con criteri di conformità di Intune iOS e l'accesso condizionale di Azure AD per richiedere dispositivi gestiti e l'app Outlook.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a8e873c48ceb59bfb8ac98fec9a29fa51d6cd3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528208"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799769"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi gestiti
 Informazioni sull'uso dei criteri di conformità dei dispositivi con accesso condizionale per assicurarsi che i dispositivi iOS possano accedere alla posta elettronica di Exchange Online solo se vengono gestiti da Intune e con un'app di posta elettronica approvata. 
@@ -43,7 +43,7 @@ Se non si dispone di una sottoscrizione Intune, è possibile [iscriversi per ott
 
 ## <a name="sign-in-to-intune"></a>Accedere a Intune
 
-Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o come amministratore del servizio Intune. Si accede a Intune nel portale di Azure scegliendo **Tutti i servizi** > **Intune**.
+Accedere a [Intune](https://aka.ms/intuneportal) come amministratore globale o come amministratore del servizio Intune. Se è stata creata una sottoscrizione della versione di valutazione di Intune, l'account creato con tale sottoscrizione sarà un amministratore globale.
 
 ## <a name="create-the-ios-device-compliance-policy"></a>Creare i criteri di conformità del dispositivo per iOS
 Configurare i criteri di conformità del dispositivo di Intune per impostare le condizioni che deve soddisfare un dispositivo per essere considerato conforme. Per questa esercitazione verranno creati criteri di conformità per i dispositivi iOS. I criteri di conformità sono specifici della piattaforma, pertanto sono necessari criteri di conformità separati per ogni piattaforma del dispositivo da valutare.
@@ -93,7 +93,7 @@ A questo punto si creeranno criteri di accesso condizionale che richiedono che t
 5.  In **Assegnazioni** selezionare **Condizioni** > **Piattaforme del dispositivo**.
      
     1. In **Configura** selezionare **Sì**.
-    2. Nella scheda **Includi** selezionare **Tutte le piattaforme (incluse quelle non supportate)** e quindi selezionare **Fine**. 
+    2. Nella scheda **Includi** selezionare **Qualsiasi dispositivo** e quindi selezionare **Fine**. 
     3. Selezionare di nuovo **Fine**.
    
     ![Selezionare l'app Office 365 Exchange Online](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)

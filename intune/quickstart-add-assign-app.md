@@ -1,12 +1,12 @@
 ---
 title: Guida introduttiva - Aggiungere e assegnare un'app client
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In questa guida introduttiva si userà Microsoft Intune per aggiungere e assegnare un'app client.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391877"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798744"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Guida introduttiva: Aggiungere e assegnare un'app client
 
@@ -66,7 +66,7 @@ Usare la procedura seguente per aggiungere un'app in Intune:
 Dopo aver aggiunto un'app in Microsoft Intune, è possibile assegnarla a gruppi di utenti o dispositivi.
 
 > [!NOTE]
-> Questa guida introduttiva è basata sulle guide introduttive precedenti della stessa serie. Per informazioni dettagliate, vedere i [prerequisiti](quickstart-add-assign-app.md#prerequisites) in questa guida introduttiva.
+> Questo argomento di avvio rapido è basato sui precedenti della stessa serie. Per informazioni dettagliate, vedere i [prerequisiti](quickstart-add-assign-app.md#prerequisites) in questa guida introduttiva.
 
 Usare la procedura seguente per assegnare un'app a un gruppo:
 1. In [Intune](https://aka.ms/intuneportal) selezionare **App client** > **App**. 

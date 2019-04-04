@@ -1,12 +1,12 @@
 ---
 title: 'Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi non gestiti'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Informazioni su come proteggere Office 365 Exchange Online con i criteri di protezione delle app di Intune e l'accesso condizionale di Azure AD.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528276"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798785"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Esercitazione: Proteggere la posta elettronica di Exchange Online nei dispositivi non gestiti
 
@@ -91,8 +91,8 @@ Si definiranno ora due impostazioni di criteri di accesso condizionale in modo d
 5.  In **Assegnazioni** selezionare **Condizioni** > **Piattaforme del dispositivo**.
      
     1. In **Configura** selezionare **Sì**.
-    2. Nella scheda **Includi** selezionare **Tutte le piattaforme (incluse quelle non supportate)**. 
-    3. Seleziona **Chiudi**.
+    2. Nella scheda **Includi** selezionare **Qualsiasi dispositivo**.
+    1. Seleziona **Chiudi**.
    
 6.  Nel riquadro **Condizioni** selezionare **App client**.
      
@@ -136,7 +136,7 @@ La creazione dei criteri di accesso condizionale per i client con autenticazione
 5.  In **Assegnazioni** selezionare **Condizioni** > **Piattaforme del dispositivo**.
      
     1. In **Configura** selezionare **Sì**.
-    2. Nella scheda **Includi** selezionare **Tutte le piattaforme (incluse quelle non supportate)** e quindi selezionare **Fine**. 
+    2. Nella scheda **Includi** selezionare **Qualsiasi dispositivo** e quindi selezionare **Fine**. 
     3. Selezionare di nuovo **Fine**.
 
 6.  Nel riquadro **Condizioni** selezionare **App client**.

@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 03/27/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6dfdf61159d899a81e1ef53a1aaa649c98833b0e
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389971"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871417"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Guida introduttiva: Registrare il dispositivo Windows 10
 
-In questa guida introduttiva si assume innanzitutto il ruolo di utente di Intune e si registra il dispositivo Windows 10 in Microsoft Intune. Quindi, si torna a Intune e si verifica il dispositivo registrato.
+In questa guida introduttiva si assume innanzitutto il ruolo di utente di Intune e si registra il dispositivo Windows 10 in Microsoft Intune. Quindi, si tornerà a Intune per verificare il dispositivo registrato.
 
 La registrazione dei dispositivi in Microsoft Intune consente ai dispositivi Windows di 10 accedere ai dati protetti dell'organizzazione, inclusi posta elettronica, file e altre risorse. Questo vale sia per i dispositivi Windows 10 Desktop che per quelli Windows 10 Mobile. La registrazione dei dispositivi contribuisce a proteggere l'accesso per l'utente e per la propria organizzazione e consente di mantenere i dati di lavoro distinti da quelli personali.
 
@@ -72,7 +72,7 @@ Prima della registrazione di Windows 10 Desktop, è necessario verificare la ver
 
     ![Selezionare Accedi all'azienda o all'istituto di istruzione](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. Accedere a Intune con l'account aziendale o dell'istituto di istruzione e quindi selezionare **Avanti**. Se è stata eseguita la procedura descritta nella guida introduttiva sulla creazione di un utente e l'assegnazione di una licenza, è possibile accedere con l'account utente creato.
+3. Accedere a Intune con l'account aziendale o dell'istituto di istruzione e quindi selezionare **Avanti**. Se è stata eseguita la procedura descritta nell'articolo di avvio rapido sulla [creazione di un utente e l'assegnazione di una licenza](quickstart-create-user.md), è possibile accedere con l'account utente creato.
 
     > [!NOTE]
     > Se si sta configurando ".onmicrosoft.com", l'account utente includerà **.onmicrosoft.com** nell'indirizzo dell'account. 

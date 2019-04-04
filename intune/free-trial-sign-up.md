@@ -1,6 +1,6 @@
 ---
 title: Guida introduttiva - Provare Microsoft Intune gratuitamente
-titlesuffix: ''
+titleSuffix: ''
 description: In questa guida introduttiva si creerà una sottoscrizione di valutazione gratuita, verranno spiegate le configurazioni supportate e i requisiti di rete e, in via facoltativa, si procederà alla configurazione del nome del dominio.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756854"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871396"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Guida introduttiva: Provare Microsoft Intune gratuitamente 
 
@@ -110,7 +110,7 @@ Come accennato in precedenza, se l'organizzazione ha il proprio dominio personal
 
    ![Screenshot dell'interfaccia di amministrazione di Microsoft 365 - Aggiunta del dominio](./media/domain-custom-add.png)
 
-4. Verificare di essere il proprietario del dominio immesso in precedenza. 
+4. Verificare di essere il proprietario del dominio immesso nel passaggio precedente. 
     
     Selezionando **Invia codice per posta elettronica**, il contatto registrato del dominio riceverà un messaggio di posta elettronica. Copiare il codice contenuto nel messaggio di posta elettronica e immetterlo nel campo **Digita qui il codice di verifica**. Se il codice di verifica corrisponde, il dominio verrà aggiunto al tenant. Il messaggio di posta elettronica visualizzato potrebbe non avere un aspetto familiare. Alcuni registrar nascondono l'indirizzo di posta elettronica reale. L'indirizzo di posta elettronica può anche essere diverso da quello specificato in fase di registrazione del dominio.
 
@@ -123,7 +123,7 @@ Come accennato in precedenza, se l'organizzazione ha il proprio dominio personal
 
 Si possono usare due portali:
 - Il dashboard di Intune in Azure ([portal.azure.com](https://portal.azure.com)) è l'elemento da cui è possibile esplorare le [funzionalità di Intune](what-is-intune.md). In genere le operazioni vengono eseguite nel dashboard di Intune.
-- L'interfaccia di amministrazione di Microsoft 365 ([admin.microsoft.com](https://admin.microsoft.com)) è l'elemento in cui è possibile aggiungere e gestire gli utenti se non si usa Azure Active Directory a tale scopo. È anche possibile gestire altri aspetti del proprio account, incluse la fatturazione e il supporto tecnico.
+- L'interfaccia di amministrazione di Microsoft 365 ([admin.microsoft.com](https://admin.microsoft.com)) è la posizione in cui è possibile aggiungere e gestire gli utenti se non si usa Azure Active Directory a tale scopo. È anche possibile gestire altri aspetti del proprio account, incluse la fatturazione e il supporto tecnico.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

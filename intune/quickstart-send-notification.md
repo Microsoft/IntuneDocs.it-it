@@ -1,12 +1,12 @@
 ---
 title: Guida introduttiva - Inviare notifiche a dispositivi non conformi
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In questa guida introduttiva si userà Microsoft Intune per inviare notifiche tramite posta elettronica ai dispositivi non conformi.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991115"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871434"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Guida introduttiva: Inviare notifiche a dispositivi non conformi
 
@@ -40,7 +40,7 @@ Se non si dispone di una sottoscrizione Intune, è possibile [iscriversi per ott
 
 ## <a name="sign-in-to-intune"></a>Accedere a Intune
 
-Accedere al portale di [Intune](https://aka.ms/intuneportal) come [Amministratore globale](users-add.md#types-of-administrators) o come [Amministratore servizio](users-add.md#types-of-administrators) di Intune. 
+Accedere al portale di [Intune](https://aka.ms/intuneportal) come [Amministratore globale](users-add.md#types-of-administrators) o come [Amministratore servizio](users-add.md#types-of-administrators) di Intune. Se è stata creata una sottoscrizione della versione di valutazione di Intune, l'account creato con tale sottoscrizione sarà un amministratore globale.
 
 ## <a name="create-a-notification-message-template"></a>Creare un modello di messaggio di notifica
 
@@ -51,7 +51,7 @@ Per inviare il messaggio di posta elettronica agli utenti, creare un modello di 
 
    - **Nome**: *Amministratore Contoso*
    - **Oggetto**: *Conformità dei dispositivi*
-   - **Messaggio**: *Il dispositivo attualmente non rispetta i requisiti di conformità delle organizzazioni.*
+   - **Messaggio**: *Il dispositivo attualmente non rispetta i requisiti di conformità dell'organizzazione.*
    - **Intestazione del messaggio di posta elettronica: includere il logo dell'azienda**: impostare su **Abilitato** per visualizzare il logo dell'organizzazione.
    - **Piè di pagina del messaggio di posta elettronica: includere il nome dell'azienda**: impostare su **Abilitato** per visualizzare il nome dell'organizzazione.
    - **Piè di pagina del messaggio di posta elettronica: includere le informazioni sul contatto**: impostare su **Abilitato** per visualizzare le informazioni sul contatto dell'organizzazione.
@@ -83,14 +83,13 @@ La procedura seguente consente di creare un criterio di conformità per i dispos
 5. Impostare **Richiedi una password per sbloccare i dispositivi mobili** su **Rendi obbligatorio**. Questa impostazione specifica se richiedere agli utenti di immettere una password per poter accedere alle informazioni sui dispositivi mobili. 
 6. Impostare **Lunghezza minima password** su **6**. Questa impostazione specifica il numero minimo di cifre e caratteri nella password.
 
-    ![Impostazioni di sicurezza del sistema per un nuovo criterio di conformità](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. Fare clic su **OK**, **OK** e **Crea** per creare il criterio di conformità.
-8. Selezionare il nome del nuovo criterio: **Conformità di Windows 10**.
-9. Selezionare **Proprietà** > **Azioni per la non conformità** > **Aggiungi**.
-10. Nella casella a discesa **Azione** verificare che sia selezionata l'opzione **Invia un messaggio di posta elettronica all'utente finale**.
-11. Selezionare **Modello di messaggio** > **Amministratore Contoso** > **Seleziona** per selezionare il modello di messaggio creato in precedenza in questo argomento.
-12. Selezionare **OK** > **OK** > **Salva** per salvare le modifiche.
+8. Selezionare **Proprietà** > **Azioni per la non conformità** > **Aggiungi**.
+9. Nella casella a discesa **Azione** verificare che sia selezionata l'opzione **Invia un messaggio di posta elettronica all'utente finale**.
+10. Selezionare **Modello di messaggio** > **Amministratore Contoso** > **Seleziona** per selezionare il modello di messaggio creato in precedenza in questo argomento.
+11. Selezionare **Aggiungi** > **OK** > **Salva** per salvare le modifiche.
 
 ## <a name="assign-the-policy"></a>Assegnare i criteri
 
