@@ -1,6 +1,6 @@
 ---
 title: Richiedere e fornire assistenza remota per i PC Windows
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Descrive i passaggi che l'utente finale e l'amministratore IT devono eseguire per fornire assistenza remota per i desktop Windows gestiti come PC e i passaggi per l'avvio remoto di un PC.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b57bae0c0e7a734071be79318286714a97d0fbf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b7004d72328d606f6adc5cd84e79ce4830409059
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460598"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798538"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Richiedere e fornire assistenza remota per i PC Windows
 

@@ -1,6 +1,6 @@
 ---
 title: Associazione utente-dispositivo nel data warehouse di Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: L'entità UserDeviceAssociation contiene le associazioni utente-dispositivo presenti nell'organizzazione.
 keywords: Data warehouse di Intune
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d3473b04a1d015f88d27359864a84227215b62a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 466066faf03cbdf560697a04310eac844d4f1b87
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565299"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798261"
 ---
 # <a name="reference-for-user-device-association-entity"></a>Riferimento per l'entità dell'associazione utente-dispositivo
 

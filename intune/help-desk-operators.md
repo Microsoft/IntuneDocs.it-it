@@ -1,6 +1,6 @@
 ---
 title: Portale del supporto tecnico per la risoluzione dei problemi
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Il personale del supporto tecnico usa questo portale per risolvere i problemi tecnici degli utenti.
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 135e93bf3cfb93b5299dfd005a3ca70bbba84d77
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: df5b20be667159689aaaee9a790c0a4c5b5864fd
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57787135"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798399"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usare il portale per la risoluzione dei problemi per offrire assistenza agli utenti aziendali
 
@@ -67,7 +67,7 @@ Nel riquadro Risoluzione dei problemi scegliere **Selezionare l'utente** per vis
 | 1.   | Stato dell'account  | Mostra lo stato del tenant di Intune corrente come **Attivo** o **Inattivo**.       |
 | 2.   | Selezione utente  | Nome dell'utente attualmente selezionato. Fare clic su **Cambia utente** per scegliere un nuovo utente.       |
 | 3.   | Stato utente  | Visualizza lo stato della licenza Intune dell'utente, il numero di dispositivi, la conformità di ciascun dispositivo, il numero di app e la conformità delle app.       |
-| 4.   | Informazioni utente  | Usare l'elenco per selezionare i dettagli da esaminare nel riquadro. <br>È possibile selezionare: <ul><li>App client<li>Criteri di conformità<li> Criteri di configurazione<li>Criteri di protezione delle app <li>Restrizioni di registrazione</ul>      |
+| 4.   | Informazioni sull'utente  | Usare l'elenco per selezionare i dettagli da esaminare nel riquadro. <br>È possibile selezionare: <ul><li>App client<li>Criteri di conformità<li> Criteri di configurazione<li>Criteri di protezione delle app <li>Restrizioni di registrazione</ul>      |
 | 5.   | Appartenenza al gruppo  | Mostra i gruppi correnti di cui l'utente selezionato è membro.       |
 
 <!-- this section needs to be updated
