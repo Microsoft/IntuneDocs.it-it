@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 03/27/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 4b5e6ac4683284dc71c9171f4367e72d5ec45c59
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871434"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899012"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Guida introduttiva: Inviare notifiche a dispositivi non conformi
 
@@ -85,7 +85,7 @@ La procedura seguente consente di creare un criterio di conformità per i dispos
 
     <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
-7. Fare clic su **OK**, **OK** e **Crea** per creare il criterio di conformità.
+7. Selezionare **OK** > **OK** > **Crea** per creare i criteri di conformità.
 8. Selezionare **Proprietà** > **Azioni per la non conformità** > **Aggiungi**.
 9. Nella casella a discesa **Azione** verificare che sia selezionata l'opzione **Invia un messaggio di posta elettronica all'utente finale**.
 10. Selezionare **Modello di messaggio** > **Amministratore Contoso** > **Seleziona** per selezionare il modello di messaggio creato in precedenza in questo argomento.
