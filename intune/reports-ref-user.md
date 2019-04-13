@@ -6,7 +6,7 @@ keywords: Data warehouse di Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16084e2cd33f6aac9313bb1f8e9fba0467a3ce73
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 4e650f8cb713d76c44d3f3399612ee5fd6d02426
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: MTE75
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58797858"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429145"
 ---
 # <a name="reference-for-user-entity"></a>Informazioni di riferimento per l'entità User
 
@@ -33,18 +33,19 @@ La categoria **User** contiene l'entità **User** che definisce le proprietà ut
 
 L'entità **User** elenca tutti gli utenti di Azure Active Directory (Azure AD) con licenze assegnate nell'organizzazione.
 
-La raccolta di entità **User** contiene i dati utente. In questi record sono inclusi gli stati utente registrati nel periodo di raccolta dei dati, anche se l'utente è stato rimosso. Nel corso dell'ultimo mese, ad esempio, è possibile che un utente sia stato aggiunto e rimosso da Intune. Pertanto, se anche l'utente non è presente al momento del report, l'utente e lo stato sono comunque presenti nei dati del mese precedente. In questo caso, è possibile creare un report che mostri la durata della presenza storica dell'utente nei dati.
+La raccolta di entità **User** contiene i dati utente. In questi record sono inclusi gli stati utente registrati nel periodo di raccolta dei dati, anche se l'utente è stato rimosso. Nel corso dell'ultimo mese, ad esempio, è possibile che un utente sia stato aggiunto e rimosso da Intune. Se anche l'utente non è presente al momento del report, l'utente e lo stato sono comunque presenti nei dati del mese precedente. In questo caso, è possibile creare un report che mostri la durata della presenza storica dell'utente nei dati.
 
-| Proprietà  | Descrizione | Esempio |
-|---------|------------|--------|
-| UserKey |Identificatore univoco dell'utente nel data warehouse, chiave surrogata. |123 |
-| UserId |Identificatore univoco dell'utente, simile a UserKey, ma è una chiave naturale. |b66bc706-ffff-7437-0340-032819502773 |
-| UserEmail |Indirizzo di posta elettronica dell'utente. |John@constoso.com |
-| userPrincipalName | UPN dell'utente. | John@constoso.com |
-| DisplayName |Nome visualizzato dell'utente. |Luca |
-| IntuneLicensed |Specifica se l'utente ha una licenza per Intune. |True/False |
-| IsDeleted | Indica se tutte le licenze dell'utente sono scadute e se l'utente è stato quindi rimosso da Intune. Per un singolo record, questo flag non cambia. Per un nuovo stato utente viene creato invece un nuovo record. |True/False |
-| RowLastModifiedDateTimeUTC |Data e ora in formato UTC dell'ultima modifica del record nel data warehouse  |23/11/2016 12.00.00 |
+|          Proprietà          |                                                                                                           Descrizione                                                                                                          |                Esempio               |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
+| UserKey                    | Identificatore univoco dell'utente nel data warehouse - chiave surrogata.                                                                                                                                                         | 123                                  |
+| UserId                     | Identificatore univoco dell'utente, simile a UserKey, ma è una chiave naturale.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
+| UserEmail                  | Indirizzo di posta elettronica dell'utente.                                                                                                                                                                                                     | John@constoso.com                    |
+| userPrincipalName                        | UPN dell'utente.                                                                                                                                                                                               | John@constoso.com                    |
+| DisplayName                | Nome visualizzato dell'utente.                                                                                                                                                                                                      | Luca                                 |
+| IntuneLicensed             | Specifica se l'utente ha una licenza per Intune.                                                                                                                                                                              | True/False                           |
+| IsDeleted                  | Indica se tutte le licenze dell'utente sono scadute e se l'utente è stato pertanto rimosso da Intune. Per un singolo record, questo flag non cambia. Per un nuovo stato utente viene creato invece un nuovo record. | True/False                           |
+| RowLastModifiedDateTimeUTC | Data e ora in formato UTC dell'ultima modifica del record nel data warehouse                                                                                                                                                 | 23/11/2016 0:00                      |
+
 
 ## <a name="next-steps"></a>Passaggi successivi
  - È possibile usare la raccolta di entità **Current User** per limitare i dati agli utenti attualmente attivi. Per altre informazioni, vedere [Informazioni di riferimento per l'entità Current User](reports-ref-current-user.md).
