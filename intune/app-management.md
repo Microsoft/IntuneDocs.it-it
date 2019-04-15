@@ -1,15 +1,16 @@
 ---
 title: Informazioni sulla gestione delle app in Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Informazioni sulle funzionalità di gestione delle app client per piattaforma in Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f2c5da7772ff137e44fead66f00fe34004bb1f4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 34807edabf99a107c259fdfae5e43db18084fb67
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850906"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59569064"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Informazioni sulla gestione delle app in Microsoft Intune
 
@@ -44,7 +45,7 @@ Intune offre un'ampia gamma di funzionalità che consente di usare le app necess
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Aggiunta e assegnazione delle app a utenti e dispositivi | Sì | Sì | Sì | Sì | Sì |
 | Assegnazione delle app a dispositivi non registrati con Intune | Sì | Sì | No | No | No |
-| Uso dei criteri di configurazione delle app per controllare il comportamento di avvio delle app | No | Sì | No | No | No |
+| Uso dei criteri di configurazione delle app per controllare il comportamento di avvio delle app | Sì | Sì | No | No | No |
 | Uso dei criteri di provisioning delle app per dispositivi mobili per rinnovare app scadute | No | Sì | No | No | No |
 | Protezione dei dati aziendali in app con criteri di protezione delle app | Sì | Sì | No | No1 | No |
 | Rimozione solo dei dati aziendali da un'app installata (cancellazione selettiva di app) | Sì | Sì | No | Sì | Sì |
@@ -103,7 +104,7 @@ Per altre informazioni su questa sezione, vedere [Gestire le app](app-management
 
 Per altre informazioni su questa sezione, vedere [Monitorare le app](apps-monitor.md).
 
-### <a name="set-up"></a>Configurare
+### <a name="set-up"></a>Imposta
 - **Token VPP iOS**: consente di applicare e visualizzare le licenze Volume Purchase Program (VPP) di iOS. Per altre informazioni, vedere:
     - [App iOS acquistate con Volume Purchase Program](vpp-apps-ios.md)
 - **Certificato Windows Enterprise**: consente di applicare o visualizzare lo stato di un certificato di firma del codice usato per distribuire le app line-of-business ai dispositivi Windows gestiti.

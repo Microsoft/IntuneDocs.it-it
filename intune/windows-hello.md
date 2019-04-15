@@ -1,5 +1,6 @@
 ---
-title: Come integrare Windows Hello for Business in Microsoft Intune | Microsoft Intune
+title: Come integrare Windows Hello for Business in Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Informazioni su come creare un criterio per controllare l'uso di Windows Hello for Business nei dispositivi gestiti."
 keywords: ''
 author: brenduns
@@ -9,18 +10,19 @@ ms.date: 08/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 7192c7fa5865a9b9928370d6348218ce0258b659
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: beb2043f2e32435d7e4ada3fcb1bb9918908dff9
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237402"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569467"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrare Windows Hello for Business in Microsoft Intune
 

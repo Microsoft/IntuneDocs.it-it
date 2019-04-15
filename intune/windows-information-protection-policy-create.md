@@ -1,5 +1,6 @@
 ---
-title: Creare e distribuire criteri di protezione delle app Windows Information Protection | Microsoft Intune
+title: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP)
+titleSuffix: Microsoft Intune
 description: Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Microsoft Intune
 keywords: ''
 author: Erikre
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6494bbff9ca1c9d46c4af03ff90340fcca36ec97
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1b8257b315bc18b10e7c2c86e931af005e44730c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231571"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569766"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creare e distribuire criteri di protezione delle app Windows Information Protection (WIP) con Intune
 
@@ -125,7 +127,8 @@ Dopo aver aggiunto le app che si vuole proteggere con WIP, è necessario applica
 
 Apprendimento WIP è un report che consente di monitorare le app abilitate per WIP e le app sconosciute WIP. Con app sconosciute si intendono quelle non distribuite dal reparto IT dell'organizzazione. È possibile esportare queste app dal report e quindi aggiungerle ai criteri WIP per evitare disservizi con effetti sulla produttività prima dell'applicazione di WIP in modalità "Blocca".
 
-<!-- 1631908 --> Oltre a visualizzare informazioni sulle app abilitate per WIP, è possibile visualizzare un riepilogo dei dispositivi che hanno condiviso dati di lavoro con siti Web. Con queste informazioni, è possibile determinare quali siti Web devono essere aggiunti ai criteri WIP per gruppi e utenti. Il riepilogo mostra gli URL di siti Web a cui hanno accesso le app abilitate per WIP.
+<!-- 1631908 -->
+Oltre a visualizzare informazioni sulle app abilitate per WIP, è possibile visualizzare un riepilogo dei dispositivi che hanno condiviso dati di lavoro con siti Web. Con queste informazioni, è possibile determinare quali siti Web devono essere aggiunti ai criteri WIP per gruppi e utenti. Il riepilogo mostra gli URL di siti Web a cui hanno accesso le app abilitate per WIP.
 
 Quando si usano app abilitate per WIP e app sconosciute WIP, è consigliabile iniziare con **Invisibile all'utente** o **Consenti sostituzioni** e verificare con un piccolo gruppo di avere incluso le app appropriate nell'elenco delle app protette. Quando si è pronti, è possibile passare al criterio di applicazione finale, ovvero **Blocca**.
 

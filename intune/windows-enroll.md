@@ -1,6 +1,6 @@
 ---
 title: Configurare la registrazione dei dispositivi Windows con Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Configurare la registrazione dei dispositivi Windows.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 09/27/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2192b6d653bfb51503b006a5045d454c202618f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d7dd4ab5f7cecfa8a765b6dfa038b73015a0c768
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234110"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567296"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurare la registrazione dei dispositivi Windows
 
@@ -42,8 +43,8 @@ La semplificazione della registrazione dei dispositivi Windows dipende da due fa
 
 ||**Azure AD Premium**|**Altro AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[Registrazione automatica](#enable-windows-10-automatic-enrollment) |[Registrazione utente](#enable-windows-enrollment-without-azure-ad-premium)|
-|**Versioni precedenti di Windows**|[Registrazione utente](#enable-windows-enrollment-without-azure-ad-premium)|[Registrazione utente](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Windows 10**|[Registrazione automatica](#enable-windows-10-automatic-enrollment) |Registrazione utenti|
+|**Versioni precedenti di Windows**|Registrazione utenti|Registrazione utenti|
 
 Le organizzazioni che possono usare la registrazione automatica possono anche configurare la [registrazione in blocco di dispositivi](windows-bulk-enroll.md) usando l'app Progettazione configurazione di Windows.
 

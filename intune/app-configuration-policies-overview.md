@@ -1,6 +1,6 @@
 ---
 title: Criteri di configurazione delle app per Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Informazioni su come usare i criteri di configurazione delle app in un dispositivo iOS o Android in Microsoft Intune.
 keywords: ''
 author: Erikre
@@ -10,6 +10,7 @@ ms.date: 01/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d5c9118714288119bd2307ddcfbfeb2ecf1d88a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 844342d0d21110f46ac9a344edbd7409f7d779cb
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232055"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567218"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Criteri di configurazione delle app per Microsoft Intune
 

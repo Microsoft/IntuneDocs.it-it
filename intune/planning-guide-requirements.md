@@ -1,6 +1,6 @@
 ---
 title: Determinare i requisiti degli scenari per i casi d'uso
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Questo articolo aiuta a determinare i requisiti degli scenari dei casi d'uso e dei casi d'uso secondari per un'implementazione di Microsoft Intune in configurazione solo cloud.
 keywords: ''
 author: dougeby
@@ -10,6 +10,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca1e8bce92d089059ab2097095c6a32da4da0f2d
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 6cb081e16767abde4707e7a6c8719b773474fb95
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237521"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568661"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinare i requisiti degli scenari per i casi d'uso
 
